@@ -1,6 +1,6 @@
 {
  "schema_version": "4.1.0",
- "revision_date": "2026-09-18",
+ "revision_date": "2026-10-14",
  "new_id": "PHOTO-26",
  "task_code": "SB3-026-PHO",
  "task_name": "Thornmere Home - Autumn interiors image system",
@@ -14,7 +14,7 @@
   "s3_prefix": "s3://annotationprod/creative-ai-benchmark/v3.1/tasks/SB3-026-PHO__thornmere-home-autumn-interiors-image-system/",
   "public_assets_prefix": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/tasks/SB3-026-PHO__thornmere-home-autumn-interiors-image-system/assets/"
  },
- "client_brief": "Thornmere's autumn wholesale collection\n\nOur ceramics and textiles were photographed under two different lighting rigs. We want the twenty pieces to read as one warm autumn range without changing the indigo, reactive glazes or woven patterns that make the objects recognisable.\n\nPlease create a four-page A4 collection spread. Bring all twenty supplied products into a coherent styled grouping across the spread, preserving the textiles' original patterns and the character of the materials.\n\nWe also need an eight-page landscape wholesale presentation for trade buyers. Open with Thornmere Home as the largest text on page one, then lead buyers through the range in an order that supports a buying conversation. For every featured object, include its correct product name, dimensions, materials, care line and price from thornmere_autumn_skus.csv. Keep the maker's care wording unchanged.\n\nThe spring catalogue is a reference for the earlier work; this delivery is the collection spread and wholesale presentation listed below, not a new twenty-page catalogue or a set of retailer tiles. Use the attached brand identity and the specified page sizes for both PDFs.",
+ "client_brief": "Thornmere's autumn wholesale collection\n\nOur ceramics and textiles were photographed under two different lighting rigs. We want the twenty pieces to read as one warm autumn range without changing the indigo, reactive glazes or woven patterns that make the objects recognisable.\n\nPlease create a four-page A4 collection spread. Bring all twenty supplied products into a coherent styled grouping across the spread, preserving the textiles' original patterns and the character of the materials.\n\nWe also need an eight-page landscape wholesale presentation for trade buyers. Open with Thornmere Home as the largest text on page one, then lead buyers through the range in an order that supports a buying conversation. For every featured object, include its correct product name, dimensions, materials, care line and price from thornmere_autumn_skus.csv. Keep the maker's care wording unchanged.\n\nThe spring catalogue is a reference for the earlier work; this delivery is the collection spread and wholesale presentation listed below, not a new twenty-page catalogue or a set of retailer tiles. Use the attached brand identity and the specified page sizes for both PDFs.\n\nSupplied identity artwork\nUse Thornmere Home as a typeset brand name in the supplied display font. No separate logo artwork or logo redesign is required.\n\nWhat stays fixed\nPreserve all twenty products' geometry, textile patterns and real material colours. Product facts and care wording come from thornmere_autumn_skus.csv. The spring catalogue is reference, not an additional deliverable.\n\nYour design decisions\nCreate styled groupings, scale relationships, crops and a buying sequence. Reconcile the two lighting rigs without turning different glazes or textiles into the same material.\n\nDelivery and fonts\nUse the placement and export instructions listed with each requested file below. The downloadable OFL fonts in Source assets are the current typefaces for this commission; the typography card gives their roles and weights.",
  "brand_identity": {
   "brand_name": "Thornmere Home",
   "tagline": "Made by hand, kept for years.",
@@ -62,80 +62,150 @@
     "usage": "The wholesale band or a solid tile or panel, and a small running foot in tracked capitals on Warm Paper Ground, as on thornmere_spring_catalog_press.pdf. Never a product name, body line, price or care line."
    }
   ],
-  "typography": "Apply these settings to newly typeset text, including headings, supporting copy and fine print. Do not change lettering already inside a photograph or rebuild a supplied logo to match a font. A style listed here does not ask you to add copy or a deliverable that the brief does not request. If a named font is unavailable, ask us before substituting it.\n\nSizes apply at the delivered canvas size, not the browser's zoom level. Tracking is in thousandths of an em: +20 means 0.020 em, not 20 pixels. Leading means the distance between text baselines. It applies only to multiline text. Where a point value is used on a digital canvas, 1 pt = 4/3 px; do not use the image's DPI metadata to change it.\n\nDisplay / H1: Druk Medium, Medium, all caps; 13 pt with 15 pt leading; tracking +200 thousandths. Product names and main headings in the two PDFs. On a single-product page only, leave 40 mm of clear paper below the product heading. On a page showing several products, keep each name beside its own product; the 40 mm gap is not repeated for each item.\n\nSubheading / H2: Druk Medium, Medium, all caps; 11 pt with 13 pt leading; tracking +160 thousandths. Secondary headings, where needed. Do not add headings merely to use this style.\n\nBody: Publico Text Roman, Roman; 10 pt with 15 pt leading; tracking 0, max 65 characters. Descriptive text in both PDFs; at most 65 characters per line.\n\nFine print: Graphik Regular, Regular; 8.5 pt with 12 pt leading; tracking +20 thousandths. Carries prices, dimensions and care lines.\n\nUse these point sizes in collection-spread.pdf and wholesale-presentation.pdf, including when the presentation is viewed on screen.\n\nProduct names use the 13 pt style, not the 11 pt secondary-heading style. Never enlarge a product name above 16 pt.\n\nThe 40 mm clear-space treatment applies only to a single-product page. It does not require extra pages or a separate page for every product.\n\nUse Graphik Regular for prices, dimensions and care lines. Keep the maker's care wording unchanged.",
+  "typography": "Apply these settings to newly typeset text, including headings, supporting copy and fine print. Do not change lettering already inside a photograph or rebuild a supplied logo to match a font. A style listed here does not ask you to add copy or a deliverable that the brief does not request. If a named font is unavailable, ask us before substituting it.\n\nSizes apply at the delivered canvas size, not the browser's zoom level. Tracking is in thousandths of an em: +20 means 0.020 em, not 20 pixels. Leading means the distance between text baselines. It applies only to multiline text. Where a point value is used on a digital canvas, 1 pt = 4/3 px; do not use the image's DPI metadata to change it.\n\nDisplay / H1: Barlow Condensed Medium, Medium, all caps; 13 pt with 15 pt leading; tracking +200 thousandths. Product names and main headings in the two PDFs. On a single-product page only, leave 40 mm of clear paper below the product heading. On a page showing several products, keep each name beside its own product; the 40 mm gap is not repeated for each item.\n\nSubheading / H2: Barlow Condensed Medium, Medium, all caps; 11 pt with 13 pt leading; tracking +160 thousandths. Secondary headings, where needed. Do not add headings merely to use this style.\n\nBody: Source Serif 4 Regular, Roman; 10 pt with 15 pt leading; tracking 0, max 65 characters. Descriptive text in both PDFs; at most 65 characters per line.\n\nFine print: Inter Regular, Regular; 8.5 pt with 12 pt leading; tracking +20 thousandths. Carries prices, dimensions and care lines.\n\nUse these point sizes in collection-spread.pdf and wholesale-presentation.pdf, including when the presentation is viewed on screen.\n\nProduct names use the 13 pt style, not the 11 pt secondary-heading style. Never enlarge a product name above 16 pt.\n\nThe 40 mm clear-space treatment applies only to a single-product page. It does not require extra pages or a separate page for every product.\n\nUse Inter Regular for prices, dimensions and care lines. Keep the maker's care wording unchanged.",
   "voice": "Plain and warm. Short sentences about material and making, not about lifestyle. The maker writes the care lines and they stay in the maker's own words, unreworded.",
-  "brand_assets_status": "The earlier catalogue was built by an outside studio, and only the spring press PDF survives, not its working layout. Use that PDF as a reference alongside the current identity below and the autumn product spreadsheet. The requested deliverables define this commission's two new layouts.",
+  "brand_assets_status": "Use Thornmere Home as a typeset brand name in the supplied display font. No separate logo artwork or logo redesign is required.",
   "values": "Truth to material, longevity over trend, and steady support of the independent stores that carry the range.",
-  "signature_type_move": "Product names are Druk Medium capitals at 13 pt with +200 tracking. A single-product page leaves 40 mm of clear paper below its heading; multi-product pages keep names adjacent to the products.",
-  "display_face": "Druk",
+  "signature_type_move": "Product names are Barlow Condensed Medium capitals at 13 pt with +200 tracking. A single-product page leaves 40 mm of clear paper below its heading; multi-product pages keep names adjacent to the products.",
+  "display_face": "Barlow Condensed",
   "type_system": {
    "brand_name": "Thornmere Home",
    "tagline": "Made by hand, kept for years.",
-   "display_face": "Druk",
-   "text_face": "Publico Text",
+   "display_face": "Barlow Condensed",
+   "text_face": "Source Serif 4",
    "scale": [
     {
      "step": "01",
      "role": "Display / H1",
-     "family": "Druk Medium",
+     "family": "Barlow Condensed Medium",
      "size": "13 pt",
      "leading": "15 pt",
      "weight": "Medium, all caps",
      "tracking": "+200 thousandths",
      "sample": "THORNMERE HOME",
-     "note": "Product names and main headings in the two PDFs. On a single-product page only, leave 40 mm of clear paper below the product heading. On a page showing several products, keep each name beside its own product; the 40 mm gap is not repeated for each item."
+     "note": "Product names and main headings in the two PDFs. On a single-product page only, leave 40 mm of clear paper below the product heading. On a page showing several products, keep each name beside its own product; the 40 mm gap is not repeated for each item.",
+     "font_family": "Barlow Condensed",
+     "font_weight": 500
     },
     {
      "step": "02",
      "role": "Subheading / H2",
-     "family": "Druk Medium",
+     "family": "Barlow Condensed Medium",
      "size": "11 pt",
      "leading": "13 pt",
      "weight": "Medium, all caps",
      "tracking": "+160 thousandths",
      "sample": "THROWN AND WOVEN BY HAND",
-     "note": "Secondary headings, where needed. Do not add headings merely to use this style."
+     "note": "Secondary headings, where needed. Do not add headings merely to use this style.",
+     "font_family": "Barlow Condensed",
+     "font_weight": 500
     },
     {
      "step": "03",
      "role": "Body",
-     "family": "Publico Text Roman",
+     "family": "Source Serif 4 Regular",
      "size": "10 pt",
      "leading": "15 pt",
-     "weight": "Roman",
+     "weight": "Regular 400",
      "tracking": "0, max 65 characters",
      "sample": "Real glaze, real dye, thrown and woven by people who sign for it.",
-     "note": "Descriptive text in both PDFs; at most 65 characters per line."
+     "note": "Descriptive text in both PDFs; at most 65 characters per line.",
+     "font_family": "Source Serif 4",
+     "font_weight": 400
     },
     {
      "step": "04",
      "role": "Fine print",
-     "family": "Graphik Regular",
+     "family": "Inter Regular",
      "size": "8.5 pt",
      "leading": "12 pt",
      "weight": "Regular",
      "tracking": "+20 thousandths",
      "sample": "Care lines, in the maker's own words.",
-     "note": "Carries prices, dimensions and care lines."
+     "note": "Carries prices, dimensions and care lines.",
+     "font_family": "Inter",
+     "font_weight": 400
     }
    ],
-   "signature_move": "Product names are Druk Medium capitals at 13 pt with +200 tracking. A single-product page leaves 40 mm of clear paper below its heading; multi-product pages keep names adjacent to the products.",
+   "signature_move": "Product names are Barlow Condensed Medium capitals at 13 pt with +200 tracking. A single-product page leaves 40 mm of clear paper below its heading; multi-product pages keep names adjacent to the products.",
    "rules": [
     "Use these point sizes in collection-spread.pdf and wholesale-presentation.pdf, including when the presentation is viewed on screen.",
     "Product names use the 13 pt style, not the 11 pt secondary-heading style. Never enlarge a product name above 16 pt.",
     "The 40 mm clear-space treatment applies only to a single-product page. It does not require extra pages or a separate page for every product.",
-    "Use Graphik Regular for prices, dimensions and care lines. Keep the maker's care wording unchanged."
+    "Use Inter Regular for prices, dimensions and care lines. Keep the maker's care wording unchanged."
    ],
    "application": "Apply these settings to newly typeset text, including headings, supporting copy and fine print. Do not change lettering already inside a photograph or rebuild a supplied logo to match a font. A style listed here does not ask you to add copy or a deliverable that the brief does not request. If a named font is unavailable, ask us before substituting it.",
    "measurement_notes": "Sizes apply at the delivered canvas size, not the browser's zoom level. Tracking is in thousandths of an em: +20 means 0.020 em, not 20 pixels. Leading means the distance between text baselines. It applies only to multiline text. Where a point value is used on a digital canvas, 1 pt = 4/3 px; do not use the image's DPI metadata to change it.",
-   "specimen_note": "The samples show the hierarchy, not the licensed font outlines. Use the named fonts and settings below."
+   "specimen_note": "The samples load the supplied font files. Their display size is reduced for this guide; use the stated deliverable settings, not the on-screen sample size. Fonts and their OFL licences are downloadable in Source assets.",
+   "font_access": "Use the attached OFL font files at the named weights. These files replace unavailable commercial fonts for this commission. Do not substitute another family or simulate a missing weight."
   },
   "palette_rules": {
    "distribution": "Mandatory on both documents: Warm Paper Ground as the page ground, as on thornmere_spring_catalog_press.pdf, and Stoneware Charcoal for type, as the dimension, material and care lines on thornmere_spring_catalog_press.pdf. Mandatory on the wholesale presentation: one coloured band, a solid block of Soft Clay or Indigo Dye, the same colour on every page that carries it. Grounds, tiles and panels are Warm Paper Ground, Oatmeal Glaze, Soft Clay or Indigo Dye; Stoneware Charcoal is never a ground, since the brand is never the austere near-black of collectible ceramics. On Warm Paper Ground, Oatmeal Glaze and Soft Clay, all type is Stoneware Charcoal; on Indigo Dye, all type is Warm Paper Ground. The only other type colour is Soft Clay, for a small running foot in tracked capitals on Warm Paper Ground. Photographs aside, Warm Paper Ground is the largest designed area on every page: Oatmeal Glaze, Soft Clay and Indigo Dye tiles, panels and the band together cover less of each page than Warm Paper Ground.",
    "opacity": "Every palette colour is used solid, at 100% opacity. No tint, transparency, gradient, shadow or blend mode is applied to any palette colour, no drop shadow or glow is added under a cut-out piece, and no scrim, gradient or overlay of any colour, black and white included, is laid over a photograph.",
    "forbidden": "No colour outside the five palette hexes for type, grounds, tiles, panels, the band, rules or icons. No pure black and no near-black outside the palette: the brand is never the austere near-black of collectible ceramics and never the crowded, saturated look of discount homeware.",
    "photography": "Photographs keep the true colour of each glaze and dye and are never recoloured toward the palette: no piece is pushed to Indigo Dye, Soft Clay, Oatmeal Glaze or Stoneware Charcoal to match a hex, and no piece takes on the colour of the band, tile or ground behind it."
-  }
+  },
+  "creative_scope": {
+   "fixed": "Preserve all twenty products' geometry, textile patterns and real material colours. Product facts and care wording come from thornmere_autumn_skus.csv. The spring catalogue is reference, not an additional deliverable.",
+   "designer_choices": "Create styled groupings, scale relationships, crops and a buying sequence. Reconcile the two lighting rigs without turning different glazes or textiles into the same material."
+  },
+  "font_files": [
+   {
+    "family": "Barlow Condensed",
+    "filename": "fonts/BarlowCondensed-Medium.ttf",
+    "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/BarlowCondensed-Medium.ttf",
+    "axes": {},
+    "weight_range": [
+     500,
+     500,
+     500
+    ]
+   },
+   {
+    "family": "Source Serif 4",
+    "filename": "fonts/SourceSerif4[opsz,wght].ttf",
+    "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/SourceSerif4%5Bopsz%2Cwght%5D.ttf",
+    "axes": {
+     "wght": [
+      200.0,
+      400.0,
+      900.0
+     ],
+     "opsz": [
+      8.0,
+      20.0,
+      60.0
+     ]
+    },
+    "weight_range": [
+     200.0,
+     400.0,
+     900.0
+    ]
+   },
+   {
+    "family": "Inter",
+    "filename": "fonts/Inter[opsz,wght].ttf",
+    "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/Inter%5Bopsz%2Cwght%5D.ttf",
+    "axes": {
+     "opsz": [
+      14.0,
+      14.0,
+      32.0
+     ],
+     "wght": [
+      100.0,
+      400.0,
+      900.0
+     ]
+    },
+    "weight_range": [
+     100.0,
+     400.0,
+     900.0
+    ]
+   }
+  ]
  },
  "truth_constraints": [
   "Do not invent names, prices, claims, product features, locations, credentials, records, or documentary events that are absent from the approved inputs.",
@@ -465,6 +535,93 @@
    "public_url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/tasks/SB3-026-PHO__thornmere-home-autumn-interiors-image-system/assets/thornmere_spring_catalog_press.pdf",
    "role": "source",
    "state": "retained_pending_visual_review"
+  },
+  {
+   "asset_id": "PHOTO-26-REFRESH-2292a75f7e",
+   "filename": "fonts/BarlowCondensed-Medium.ttf",
+   "bytes": 103360,
+   "sha256": "262bd143292ce479ee0cd09a42b47ab173fca8e9c6eb5ed0b5c8a845bc371d17",
+   "role": "font",
+   "description": "Barlow Condensed font file. See the matching OFL licence.",
+   "state": "supplied",
+   "s3_key": "creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/BarlowCondensed-Medium.ttf",
+   "s3_uri": "s3://annotationprod/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/BarlowCondensed-Medium.ttf",
+   "public_url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/BarlowCondensed-Medium.ttf",
+   "revision": "pilot13_inputs_2026_10_14",
+   "font_family": "Barlow Condensed",
+   "licence": "SIL Open Font License 1.1",
+   "source_url": "https://github.com/google/fonts/tree/main/ofl/barlowcondensed"
+  },
+  {
+   "asset_id": "PHOTO-26-REFRESH-40026eba47",
+   "filename": "fonts/barlowcondensed-OFL.txt",
+   "bytes": 4377,
+   "sha256": "186d750eb496a4c17a76385f82be6aea2ac1cf2de074a811d63786cf374ea73f",
+   "role": "font licence",
+   "description": "Licence and copyright notice for Barlow Condensed",
+   "state": "supplied",
+   "s3_key": "creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/barlowcondensed-OFL.txt",
+   "s3_uri": "s3://annotationprod/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/barlowcondensed-OFL.txt",
+   "public_url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/barlowcondensed-OFL.txt",
+   "revision": "pilot13_inputs_2026_10_14"
+  },
+  {
+   "asset_id": "PHOTO-26-REFRESH-4815697c82",
+   "filename": "fonts/SourceSerif4[opsz,wght].ttf",
+   "bytes": 1209508,
+   "sha256": "97b2d4da6e3cb494b5a1e66ae176914d852ccabef49e0c02c0df25f3e39aca0b",
+   "role": "font",
+   "description": "Source Serif 4 font file. See the matching OFL licence.",
+   "state": "supplied",
+   "s3_key": "creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/SourceSerif4[opsz,wght].ttf",
+   "s3_uri": "s3://annotationprod/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/SourceSerif4[opsz,wght].ttf",
+   "public_url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/SourceSerif4%5Bopsz%2Cwght%5D.ttf",
+   "revision": "pilot13_inputs_2026_10_14",
+   "font_family": "Source Serif 4",
+   "licence": "SIL Open Font License 1.1",
+   "source_url": "https://github.com/google/fonts/tree/main/ofl/sourceserif4"
+  },
+  {
+   "asset_id": "PHOTO-26-REFRESH-94fa8b522b",
+   "filename": "fonts/sourceserif4-OFL.txt",
+   "bytes": 4400,
+   "sha256": "5f94c3fd3a23131a417ab5a0c8452de57e70c3cfb9f604d88241f7065ebf9fd9",
+   "role": "font licence",
+   "description": "Licence and copyright notice for Source Serif 4",
+   "state": "supplied",
+   "s3_key": "creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/sourceserif4-OFL.txt",
+   "s3_uri": "s3://annotationprod/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/sourceserif4-OFL.txt",
+   "public_url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/sourceserif4-OFL.txt",
+   "revision": "pilot13_inputs_2026_10_14"
+  },
+  {
+   "asset_id": "PHOTO-26-REFRESH-15cd9a317d",
+   "filename": "fonts/Inter[opsz,wght].ttf",
+   "bytes": 876576,
+   "sha256": "29160a80ff49ddcab2c97711247e08b1fab27a484a329ce8b813d820dc559031",
+   "role": "font",
+   "description": "Inter font file. See the matching OFL licence.",
+   "state": "supplied",
+   "s3_key": "creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/Inter[opsz,wght].ttf",
+   "s3_uri": "s3://annotationprod/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/Inter[opsz,wght].ttf",
+   "public_url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/Inter%5Bopsz%2Cwght%5D.ttf",
+   "revision": "pilot13_inputs_2026_10_14",
+   "font_family": "Inter",
+   "licence": "SIL Open Font License 1.1",
+   "source_url": "https://github.com/google/fonts/tree/main/ofl/inter"
+  },
+  {
+   "asset_id": "PHOTO-26-REFRESH-c115e75757",
+   "filename": "fonts/inter-OFL.txt",
+   "bytes": 4377,
+   "sha256": "5b9321a4298cfeb6b34354164a1c3afc3db114569984c502b9b35d988fd58c57",
+   "role": "font licence",
+   "description": "Licence and copyright notice for Inter",
+   "state": "supplied",
+   "s3_key": "creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/inter-OFL.txt",
+   "s3_uri": "s3://annotationprod/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/inter-OFL.txt",
+   "public_url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/inter-OFL.txt",
+   "revision": "pilot13_inputs_2026_10_14"
   }
  ],
  "source_reference_files": [
@@ -502,7 +659,19 @@
    ],
    "record_field_policy": "The approved_values in source_record are the scoring target. raw_values are retained only for provenance and may contain known export defects.",
    "status": "not_produced",
-   "review_name": "Thornmere Home / Autumn interiors collection spread"
+   "review_name": "Thornmere Home / Autumn interiors collection spread",
+   "commission": {
+    "purpose": "Show the autumn collection as coordinated interiors groupings.",
+    "channel": "Digital editorial PDF for the wholesale collection email",
+    "audience": "Trade buyers and interiors editors",
+    "content": [
+     "Include all twenty supplied products across four A4 pages, with coherent grouping and preserved textile patterns."
+    ],
+    "export_settings": [
+     "Digital PDF in sRGB with embedded fonts, searchable text where practical, no crop marks and no added bleed; retain the exact page size and page count.",
+     "This file is for screen review/distribution, not a CMYK press master."
+    ]
+   }
   },
   {
    "output_id": "wholesale-presentation",
@@ -535,7 +704,20 @@
    ],
    "record_field_policy": "The approved_values in source_record are the scoring target. raw_values are retained only for provenance and may contain known export defects.",
    "status": "not_produced",
-   "review_name": "Thornmere Home / Interiors wholesale presentation"
+   "review_name": "Thornmere Home / Interiors wholesale presentation",
+   "commission": {
+    "purpose": "Lead a trade buyer through the range in a useful buying order.",
+    "channel": "Eight-page landscape screen presentation PDF",
+    "audience": "Wholesale buyers",
+    "content": [
+     "Open with Thornmere Home as the largest text on page 1.",
+     "For every object shown, include its correct name, dimensions, materials, care line and price from thornmere_autumn_skus.csv; reproduce care wording unchanged."
+    ],
+    "export_settings": [
+     "Digital PDF in sRGB with embedded fonts, searchable text where practical, no crop marks and no added bleed; retain the exact page size and page count.",
+     "This file is for screen review/distribution, not a CMYK press master."
+    ]
+   }
   }
  ],
  "deliverable_groups": [
@@ -908,7 +1090,7 @@
    "answer": null,
    "status": "not_assessed",
    "source_statement": "Every product name on “Interiors wholesale presentation” (wholesale-presentation.pdf) reads word for word as in the product_name column of thornmere_autumn_skus.csv, letter case aside, for example “Indigo Cereal Bowl”.",
-   "evidence_reference": "Brief: each featured object has its correct product name. Acceptance: the featured-object name block matches the approved product register exactly. Product names are set in Druk Medium caps, so case is not compared. thornmere_autumn_skus.csv, product_name column, row 3.",
+   "evidence_reference": "Brief: each featured object has its correct product name. Acceptance: the featured-object name block matches the approved product register exactly. Product names are set in Barlow Condensed Medium caps, so case is not compared. thornmere_autumn_skus.csv, product_name column, row 3.",
    "artifact_name": "Interiors wholesale presentation",
    "artifact_file": "wholesale-presentation.pdf",
    "requirement": "Every product name on “Interiors wholesale presentation” (wholesale-presentation.pdf) reads word for word as in the product_name column of thornmere_autumn_skus.csv, letter case aside, for example “Indigo Cereal Bowl”.",
@@ -917,11 +1099,23 @@
     {
      "filename": "thornmere_autumn_skus.csv",
      "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/tasks/SB3-026-PHO__thornmere-home-autumn-interiors-image-system/assets/thornmere_autumn_skus.csv"
+    },
+    {
+     "filename": "fonts/BarlowCondensed-Medium.ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/BarlowCondensed-Medium.ttf"
+    },
+    {
+     "filename": "fonts/SourceSerif4[opsz,wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/SourceSerif4%5Bopsz%2Cwght%5D.ttf"
+    },
+    {
+     "filename": "fonts/Inter[opsz,wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/Inter%5Bopsz%2Cwght%5D.ttf"
     }
    ],
    "k_id": "K1_Q1",
    "k_label": "Content completeness",
-   "revision": "2026-09-25 review feedback"
+   "revision": "pilot13_inputs_2026_10_14"
   },
   {
    "task_id": "PHOTO-26",
@@ -948,6 +1142,18 @@
     {
      "filename": "thornmere_autumn_skus.csv",
      "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/tasks/SB3-026-PHO__thornmere-home-autumn-interiors-image-system/assets/thornmere_autumn_skus.csv"
+    },
+    {
+     "filename": "fonts/BarlowCondensed-Medium.ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/BarlowCondensed-Medium.ttf"
+    },
+    {
+     "filename": "fonts/SourceSerif4[opsz,wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/SourceSerif4%5Bopsz%2Cwght%5D.ttf"
+    },
+    {
+     "filename": "fonts/Inter[opsz,wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/Inter%5Bopsz%2Cwght%5D.ttf"
     }
    ],
    "k_id": "K1_Q1",
@@ -980,6 +1186,18 @@
     {
      "filename": "thornmere_autumn_skus.csv",
      "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/tasks/SB3-026-PHO__thornmere-home-autumn-interiors-image-system/assets/thornmere_autumn_skus.csv"
+    },
+    {
+     "filename": "fonts/BarlowCondensed-Medium.ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/BarlowCondensed-Medium.ttf"
+    },
+    {
+     "filename": "fonts/SourceSerif4[opsz,wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/SourceSerif4%5Bopsz%2Cwght%5D.ttf"
+    },
+    {
+     "filename": "fonts/Inter[opsz,wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/Inter%5Bopsz%2Cwght%5D.ttf"
     }
    ],
    "k_id": "K1_Q3",
@@ -1012,6 +1230,18 @@
     {
      "filename": "thornmere_autumn_skus.csv",
      "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/tasks/SB3-026-PHO__thornmere-home-autumn-interiors-image-system/assets/thornmere_autumn_skus.csv"
+    },
+    {
+     "filename": "fonts/BarlowCondensed-Medium.ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/BarlowCondensed-Medium.ttf"
+    },
+    {
+     "filename": "fonts/SourceSerif4[opsz,wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/SourceSerif4%5Bopsz%2Cwght%5D.ttf"
+    },
+    {
+     "filename": "fonts/Inter[opsz,wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/Inter%5Bopsz%2Cwght%5D.ttf"
     }
    ],
    "k_id": "K1_Q5",
@@ -1060,6 +1290,18 @@
     {
      "filename": "thornmere_autumn_skus.csv",
      "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/tasks/SB3-026-PHO__thornmere-home-autumn-interiors-image-system/assets/thornmere_autumn_skus.csv"
+    },
+    {
+     "filename": "fonts/BarlowCondensed-Medium.ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/BarlowCondensed-Medium.ttf"
+    },
+    {
+     "filename": "fonts/SourceSerif4[opsz,wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/SourceSerif4%5Bopsz%2Cwght%5D.ttf"
+    },
+    {
+     "filename": "fonts/Inter[opsz,wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/Inter%5Bopsz%2Cwght%5D.ttf"
     }
    ],
    "k_id": "K2_Q1",
@@ -1073,7 +1315,7 @@
    "check_id": "PHOTO-26/wholesale-presentation/H006",
    "type": "human",
    "output_reference": "deliverables/wholesale-presentation.pdf",
-   "check": "Product names, the brand name, every other display heading and every subheading on “Interiors wholesale presentation” (wholesale-presentation.pdf) are Druk Medium capitals tracked visibly open, product names at +200 thousandths, never a serif, Publico Text, Graphik or another Druk weight.",
+   "check": "Product names, the brand name, every other display heading and every subheading on “Interiors wholesale presentation” (wholesale-presentation.pdf) are Barlow Condensed Medium capitals tracked visibly open, product names at +200 thousandths, never a serif, Source Serif 4, Inter or another Barlow Condensed weight.",
    "answer_type": "yes_no",
    "allowed_answers": [
     "Yes",
@@ -1082,22 +1324,34 @@
    "pass_answer": "Yes",
    "answer": null,
    "status": "not_assessed",
-   "source_statement": "Product names, the brand name, every other display heading and every subheading on “Interiors wholesale presentation” (wholesale-presentation.pdf) are Druk Medium capitals tracked visibly open, product names at +200 thousandths, never a serif, Publico Text, Graphik or another Druk weight.",
-   "evidence_reference": "Brand type system rule: The product name is always Druk Medium caps tracked +200 thousandths open; the open tracking is not optional. Type system step 01: Display / H1 is Druk Medium, Medium, all caps, tracked +200 thousandths; sample THORNMERE HOME. Type system step 02: Subheading / H2 is Druk Medium caps, 11 pt on 13 pt, tracked +160 thousandths. thornmere_spring_catalog_press.pdf set the name in Georgia, which the autumn system replaces.",
+   "source_statement": "Product names, the brand name, every other display heading and every subheading on “Interiors wholesale presentation” (wholesale-presentation.pdf) are Barlow Condensed Medium capitals tracked visibly open, product names at +200 thousandths, never a serif, Source Serif 4, Inter or another Barlow Condensed weight.",
+   "evidence_reference": "Brand type system rule: The product name is always Barlow Condensed Medium caps tracked +200 thousandths open; the open tracking is not optional. Type system step 01: Display / H1 is Barlow Condensed Medium, Medium, all caps, tracked +200 thousandths; sample THORNMERE HOME. Type system step 02: Subheading / H2 is Barlow Condensed Medium caps, 11 pt on 13 pt, tracked +160 thousandths. thornmere_spring_catalog_press.pdf set the name in Georgia, which the autumn system replaces.",
    "artifact_name": "Interiors wholesale presentation",
    "artifact_file": "wholesale-presentation.pdf",
-   "requirement": "Product names, the brand name, every other display heading and every subheading on “Interiors wholesale presentation” (wholesale-presentation.pdf) are Druk Medium capitals tracked visibly open, product names at +200 thousandths, never a serif, Publico Text, Graphik or another Druk weight.",
-   "pass_condition": "Product names, the brand name, every other display heading and every subheading on “Interiors wholesale presentation” (wholesale-presentation.pdf) are Druk Medium capitals tracked visibly open, product names at +200 thousandths, never a serif, Publico Text, Graphik or another Druk weight.",
+   "requirement": "Product names, the brand name, every other display heading and every subheading on “Interiors wholesale presentation” (wholesale-presentation.pdf) are Barlow Condensed Medium capitals tracked visibly open, product names at +200 thousandths, never a serif, Source Serif 4, Inter or another Barlow Condensed weight.",
+   "pass_condition": "Product names, the brand name, every other display heading and every subheading on “Interiors wholesale presentation” (wholesale-presentation.pdf) are Barlow Condensed Medium capitals tracked visibly open, product names at +200 thousandths, never a serif, Source Serif 4, Inter or another Barlow Condensed weight.",
    "reference_assets": [
     {
      "filename": "thornmere_spring_catalog_press.pdf",
      "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/tasks/SB3-026-PHO__thornmere-home-autumn-interiors-image-system/assets/thornmere_spring_catalog_press.pdf"
+    },
+    {
+     "filename": "fonts/BarlowCondensed-Medium.ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/BarlowCondensed-Medium.ttf"
+    },
+    {
+     "filename": "fonts/SourceSerif4[opsz,wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/SourceSerif4%5Bopsz%2Cwght%5D.ttf"
+    },
+    {
+     "filename": "fonts/Inter[opsz,wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/Inter%5Bopsz%2Cwght%5D.ttf"
     }
    ],
    "k_id": "K2_Q3",
    "k_label": "Brand-system compliance",
    "origin": "objective_coverage_2026-09-19",
-   "revision": "2026-09-25 review feedback"
+   "revision": "pilot13_inputs_2026_10_14"
   },
   {
    "task_id": "PHOTO-26",
@@ -1120,7 +1374,20 @@
    "artifact_file": "wholesale-presentation.pdf",
    "requirement": "The coloured band behind the products on “Interiors wholesale presentation” (wholesale-presentation.pdf) is one solid block of Soft Clay #C9A98E or Indigo Dye #33455E, the same colour on every page that carries it.",
    "pass_condition": "The coloured band behind the products on “Interiors wholesale presentation” (wholesale-presentation.pdf) is one solid block of Soft Clay #C9A98E or Indigo Dye #33455E, the same colour on every page that carries it.",
-   "reference_assets": [],
+   "reference_assets": [
+    {
+     "filename": "fonts/BarlowCondensed-Medium.ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/BarlowCondensed-Medium.ttf"
+    },
+    {
+     "filename": "fonts/SourceSerif4[opsz,wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/SourceSerif4%5Bopsz%2Cwght%5D.ttf"
+    },
+    {
+     "filename": "fonts/Inter[opsz,wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/Inter%5Bopsz%2Cwght%5D.ttf"
+    }
+   ],
    "k_id": "K2_Q3",
    "k_label": "Brand-system compliance",
    "origin": "objective_coverage_2026-09-19",
@@ -1199,6 +1466,18 @@
     {
      "filename": "autumn_shoot_14.jpg",
      "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/tasks/SB3-026-PHO__thornmere-home-autumn-interiors-image-system/assets/autumn_shoot_14.jpg"
+    },
+    {
+     "filename": "fonts/BarlowCondensed-Medium.ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/BarlowCondensed-Medium.ttf"
+    },
+    {
+     "filename": "fonts/SourceSerif4[opsz,wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/SourceSerif4%5Bopsz%2Cwght%5D.ttf"
+    },
+    {
+     "filename": "fonts/Inter[opsz,wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/Inter%5Bopsz%2Cwght%5D.ttf"
     }
    ],
    "k_id": "K2_Q4",
@@ -1243,6 +1522,18 @@
     {
      "filename": "thornmere_autumn_skus.csv",
      "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/tasks/SB3-026-PHO__thornmere-home-autumn-interiors-image-system/assets/thornmere_autumn_skus.csv"
+    },
+    {
+     "filename": "fonts/BarlowCondensed-Medium.ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/BarlowCondensed-Medium.ttf"
+    },
+    {
+     "filename": "fonts/SourceSerif4[opsz,wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/SourceSerif4%5Bopsz%2Cwght%5D.ttf"
+    },
+    {
+     "filename": "fonts/Inter[opsz,wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/Inter%5Bopsz%2Cwght%5D.ttf"
     }
    ],
    "k_id": "K2_Q4",
@@ -1271,7 +1562,20 @@
    "artifact_file": "wholesale-presentation.pdf",
    "requirement": "The largest text on page 1 of “Interiors wholesale presentation” (wholesale-presentation.pdf) is the brand name “Thornmere Home”.",
    "pass_condition": "The largest text on page 1 of “Interiors wholesale presentation” (wholesale-presentation.pdf) is the brand name “Thornmere Home”.",
-   "reference_assets": [],
+   "reference_assets": [
+    {
+     "filename": "fonts/BarlowCondensed-Medium.ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/BarlowCondensed-Medium.ttf"
+    },
+    {
+     "filename": "fonts/SourceSerif4[opsz,wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/SourceSerif4%5Bopsz%2Cwght%5D.ttf"
+    },
+    {
+     "filename": "fonts/Inter[opsz,wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/Inter%5Bopsz%2Cwght%5D.ttf"
+    }
+   ],
    "k_id": "K5_Q1",
    "k_label": "Primary-message recovery",
    "origin": "objective_coverage_2026-09-19",
@@ -1293,16 +1597,29 @@
    "answer": null,
    "status": "not_assessed",
    "source_statement": "On “Interiors wholesale presentation” (wholesale-presentation.pdf) every product name is set larger than that product's price.",
-   "evidence_reference": "Type system: the product name is step 01, Druk Medium caps at 13 pt; prices are step 04 fine print, Graphik Regular at 8.5 pt.",
+   "evidence_reference": "Type system: the product name is step 01, Barlow Condensed Medium caps at 13 pt; prices are step 04 fine print, Inter Regular at 8.5 pt.",
    "artifact_name": "Interiors wholesale presentation",
    "artifact_file": "wholesale-presentation.pdf",
    "requirement": "On “Interiors wholesale presentation” (wholesale-presentation.pdf) every product name is set larger than that product's price.",
    "pass_condition": "On “Interiors wholesale presentation” (wholesale-presentation.pdf) every product name is set larger than that product's price.",
-   "reference_assets": [],
+   "reference_assets": [
+    {
+     "filename": "fonts/BarlowCondensed-Medium.ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/BarlowCondensed-Medium.ttf"
+    },
+    {
+     "filename": "fonts/SourceSerif4[opsz,wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/SourceSerif4%5Bopsz%2Cwght%5D.ttf"
+    },
+    {
+     "filename": "fonts/Inter[opsz,wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/Inter%5Bopsz%2Cwght%5D.ttf"
+    }
+   ],
    "k_id": "K5_Q2",
    "k_label": "Information hierarchy",
    "origin": "objective_coverage_2026-09-19",
-   "revision": "2026-09-25 review feedback"
+   "revision": "pilot13_inputs_2026_10_14"
   },
   {
    "task_id": "PHOTO-26",
@@ -1333,6 +1650,18 @@
     {
      "filename": "thornmere_spring_catalog_press.pdf",
      "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/tasks/SB3-026-PHO__thornmere-home-autumn-interiors-image-system/assets/thornmere_spring_catalog_press.pdf"
+    },
+    {
+     "filename": "fonts/BarlowCondensed-Medium.ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/BarlowCondensed-Medium.ttf"
+    },
+    {
+     "filename": "fonts/SourceSerif4[opsz,wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/SourceSerif4%5Bopsz%2Cwght%5D.ttf"
+    },
+    {
+     "filename": "fonts/Inter[opsz,wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/Inter%5Bopsz%2Cwght%5D.ttf"
     }
    ],
    "k_id": "K1_Q1",
@@ -1377,6 +1706,18 @@
     {
      "filename": "thornmere_autumn_skus.csv",
      "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/tasks/SB3-026-PHO__thornmere-home-autumn-interiors-image-system/assets/thornmere_autumn_skus.csv"
+    },
+    {
+     "filename": "fonts/BarlowCondensed-Medium.ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/BarlowCondensed-Medium.ttf"
+    },
+    {
+     "filename": "fonts/SourceSerif4[opsz,wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/SourceSerif4%5Bopsz%2Cwght%5D.ttf"
+    },
+    {
+     "filename": "fonts/Inter[opsz,wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/Inter%5Bopsz%2Cwght%5D.ttf"
     }
    ],
    "k_id": "K1_Q5",
@@ -1409,6 +1750,18 @@
     {
      "filename": "thornmere_autumn_skus.csv",
      "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/tasks/SB3-026-PHO__thornmere-home-autumn-interiors-image-system/assets/thornmere_autumn_skus.csv"
+    },
+    {
+     "filename": "fonts/BarlowCondensed-Medium.ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/BarlowCondensed-Medium.ttf"
+    },
+    {
+     "filename": "fonts/SourceSerif4[opsz,wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/SourceSerif4%5Bopsz%2Cwght%5D.ttf"
+    },
+    {
+     "filename": "fonts/Inter[opsz,wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/Inter%5Bopsz%2Cwght%5D.ttf"
     }
    ],
    "k_id": "K1_Q1",
@@ -1457,6 +1810,18 @@
     {
      "filename": "thornmere_autumn_skus.csv",
      "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/tasks/SB3-026-PHO__thornmere-home-autumn-interiors-image-system/assets/thornmere_autumn_skus.csv"
+    },
+    {
+     "filename": "fonts/BarlowCondensed-Medium.ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/BarlowCondensed-Medium.ttf"
+    },
+    {
+     "filename": "fonts/SourceSerif4[opsz,wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/SourceSerif4%5Bopsz%2Cwght%5D.ttf"
+    },
+    {
+     "filename": "fonts/Inter[opsz,wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/Inter%5Bopsz%2Cwght%5D.ttf"
     }
    ],
    "k_id": "K1_Q5",
@@ -1513,6 +1878,18 @@
     {
      "filename": "textile_flatlay_06.jpg",
      "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/tasks/SB3-026-PHO__thornmere-home-autumn-interiors-image-system/assets/textile_flatlay_06.jpg"
+    },
+    {
+     "filename": "fonts/BarlowCondensed-Medium.ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/BarlowCondensed-Medium.ttf"
+    },
+    {
+     "filename": "fonts/SourceSerif4[opsz,wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/SourceSerif4%5Bopsz%2Cwght%5D.ttf"
+    },
+    {
+     "filename": "fonts/Inter[opsz,wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/Inter%5Bopsz%2Cwght%5D.ttf"
     }
    ],
    "k_id": "K2_Q2",
@@ -1569,6 +1946,18 @@
     {
      "filename": "thornmere_colour_note_phone.jpg",
      "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/tasks/SB3-026-PHO__thornmere-home-autumn-interiors-image-system/assets/thornmere_colour_note_phone.jpg"
+    },
+    {
+     "filename": "fonts/BarlowCondensed-Medium.ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/BarlowCondensed-Medium.ttf"
+    },
+    {
+     "filename": "fonts/SourceSerif4[opsz,wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/SourceSerif4%5Bopsz%2Cwght%5D.ttf"
+    },
+    {
+     "filename": "fonts/Inter[opsz,wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/Inter%5Bopsz%2Cwght%5D.ttf"
     }
    ],
    "k_id": "K2_Q1",
@@ -1605,6 +1994,18 @@
     {
      "filename": "autumn_shoot_13.jpg",
      "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/tasks/SB3-026-PHO__thornmere-home-autumn-interiors-image-system/assets/autumn_shoot_13.jpg"
+    },
+    {
+     "filename": "fonts/BarlowCondensed-Medium.ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/BarlowCondensed-Medium.ttf"
+    },
+    {
+     "filename": "fonts/SourceSerif4[opsz,wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/SourceSerif4%5Bopsz%2Cwght%5D.ttf"
+    },
+    {
+     "filename": "fonts/Inter[opsz,wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/Inter%5Bopsz%2Cwght%5D.ttf"
     }
    ],
    "k_id": "K2_Q4",
@@ -1641,6 +2042,18 @@
     {
      "filename": "textile_flatlay_06.jpg",
      "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/tasks/SB3-026-PHO__thornmere-home-autumn-interiors-image-system/assets/textile_flatlay_06.jpg"
+    },
+    {
+     "filename": "fonts/BarlowCondensed-Medium.ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/BarlowCondensed-Medium.ttf"
+    },
+    {
+     "filename": "fonts/SourceSerif4[opsz,wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/SourceSerif4%5Bopsz%2Cwght%5D.ttf"
+    },
+    {
+     "filename": "fonts/Inter[opsz,wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/Inter%5Bopsz%2Cwght%5D.ttf"
     }
    ],
    "k_id": "K2_Q4",
@@ -1681,6 +2094,18 @@
     {
      "filename": "thornmere_colour_note_phone.jpg",
      "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/tasks/SB3-026-PHO__thornmere-home-autumn-interiors-image-system/assets/thornmere_colour_note_phone.jpg"
+    },
+    {
+     "filename": "fonts/BarlowCondensed-Medium.ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/BarlowCondensed-Medium.ttf"
+    },
+    {
+     "filename": "fonts/SourceSerif4[opsz,wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/SourceSerif4%5Bopsz%2Cwght%5D.ttf"
+    },
+    {
+     "filename": "fonts/Inter[opsz,wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/Inter%5Bopsz%2Cwght%5D.ttf"
     }
    ],
    "k_id": "K2_Q4",
@@ -1745,6 +2170,18 @@
     {
      "filename": "thornmere_colour_note_phone.jpg",
      "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/tasks/SB3-026-PHO__thornmere-home-autumn-interiors-image-system/assets/thornmere_colour_note_phone.jpg"
+    },
+    {
+     "filename": "fonts/BarlowCondensed-Medium.ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/BarlowCondensed-Medium.ttf"
+    },
+    {
+     "filename": "fonts/SourceSerif4[opsz,wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/SourceSerif4%5Bopsz%2Cwght%5D.ttf"
+    },
+    {
+     "filename": "fonts/Inter[opsz,wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/Inter%5Bopsz%2Cwght%5D.ttf"
     }
    ],
    "k_id": "K2_Q4",
@@ -1789,6 +2226,18 @@
     {
      "filename": "thornmere_colour_note_phone.jpg",
      "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/tasks/SB3-026-PHO__thornmere-home-autumn-interiors-image-system/assets/thornmere_colour_note_phone.jpg"
+    },
+    {
+     "filename": "fonts/BarlowCondensed-Medium.ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/BarlowCondensed-Medium.ttf"
+    },
+    {
+     "filename": "fonts/SourceSerif4[opsz,wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/SourceSerif4%5Bopsz%2Cwght%5D.ttf"
+    },
+    {
+     "filename": "fonts/Inter[opsz,wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/Inter%5Bopsz%2Cwght%5D.ttf"
     }
    ],
    "k_id": "K2_Q4",
@@ -1837,6 +2286,18 @@
     {
      "filename": "thornmere_colour_note_phone.jpg",
      "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/tasks/SB3-026-PHO__thornmere-home-autumn-interiors-image-system/assets/thornmere_colour_note_phone.jpg"
+    },
+    {
+     "filename": "fonts/BarlowCondensed-Medium.ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/BarlowCondensed-Medium.ttf"
+    },
+    {
+     "filename": "fonts/SourceSerif4[opsz,wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/SourceSerif4%5Bopsz%2Cwght%5D.ttf"
+    },
+    {
+     "filename": "fonts/Inter[opsz,wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/Inter%5Bopsz%2Cwght%5D.ttf"
     }
    ],
    "k_id": "K2_Q4",
@@ -1865,7 +2326,20 @@
    "artifact_file": "wholesale-presentation.pdf",
    "requirement": "No product name on “Interiors wholesale presentation” (wholesale-presentation.pdf) is set larger than 16 pt.",
    "pass_condition": "No product name on “Interiors wholesale presentation” (wholesale-presentation.pdf) is set larger than 16 pt.",
-   "reference_assets": [],
+   "reference_assets": [
+    {
+     "filename": "fonts/BarlowCondensed-Medium.ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/BarlowCondensed-Medium.ttf"
+    },
+    {
+     "filename": "fonts/SourceSerif4[opsz,wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/SourceSerif4%5Bopsz%2Cwght%5D.ttf"
+    },
+    {
+     "filename": "fonts/Inter[opsz,wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/Inter%5Bopsz%2Cwght%5D.ttf"
+    }
+   ],
    "k_id": "K2_Q3",
    "k_label": "Brand-system compliance",
    "origin": "review_feedback_2026_09_25",
@@ -1892,7 +2366,20 @@
    "artifact_file": "wholesale-presentation.pdf",
    "requirement": "The product name heading each single-product page on “Interiors wholesale presentation” (wholesale-presentation.pdf) stands alone at the head of the page above at least forty millimetres of bare paper.",
    "pass_condition": "The product name heading each single-product page on “Interiors wholesale presentation” (wholesale-presentation.pdf) stands alone at the head of the page above at least forty millimetres of bare paper.",
-   "reference_assets": [],
+   "reference_assets": [
+    {
+     "filename": "fonts/BarlowCondensed-Medium.ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/BarlowCondensed-Medium.ttf"
+    },
+    {
+     "filename": "fonts/SourceSerif4[opsz,wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/SourceSerif4%5Bopsz%2Cwght%5D.ttf"
+    },
+    {
+     "filename": "fonts/Inter[opsz,wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/Inter%5Bopsz%2Cwght%5D.ttf"
+    }
+   ],
    "k_id": "K2_Q3",
    "k_label": "Brand-system compliance",
    "origin": "review_feedback_2026_09_25",
@@ -1904,7 +2391,7 @@
    "check_id": "PHOTO-26/wholesale-presentation/H026",
    "type": "human",
    "output_reference": "deliverables/wholesale-presentation.pdf",
-   "check": "The body text on “Interiors wholesale presentation” (wholesale-presentation.pdf) is set in Publico Text Roman, not italic, bold or a sans.",
+   "check": "The body text on “Interiors wholesale presentation” (wholesale-presentation.pdf) is set in Source Serif 4 Regular, not italic, bold or a sans.",
    "answer_type": "yes_no",
    "allowed_answers": [
     "Yes",
@@ -1913,17 +2400,30 @@
    "pass_answer": "Yes",
    "answer": null,
    "status": "not_assessed",
-   "source_statement": "The body text on “Interiors wholesale presentation” (wholesale-presentation.pdf) is set in Publico Text Roman, not italic, bold or a sans.",
-   "evidence_reference": "Type system step 03: Body is Publico Text Roman, 10 pt on 15 pt, tracking 0.",
+   "source_statement": "The body text on “Interiors wholesale presentation” (wholesale-presentation.pdf) is set in Source Serif 4 Regular, not italic, bold or a sans.",
+   "evidence_reference": "Type system step 03: Body is Source Serif 4 Regular, 10 pt on 15 pt, tracking 0.",
    "artifact_name": "Interiors wholesale presentation",
    "artifact_file": "wholesale-presentation.pdf",
-   "requirement": "The body text on “Interiors wholesale presentation” (wholesale-presentation.pdf) is set in Publico Text Roman, not italic, bold or a sans.",
-   "pass_condition": "The body text on “Interiors wholesale presentation” (wholesale-presentation.pdf) is set in Publico Text Roman, not italic, bold or a sans.",
-   "reference_assets": [],
+   "requirement": "The body text on “Interiors wholesale presentation” (wholesale-presentation.pdf) is set in Source Serif 4 Regular, not italic, bold or a sans.",
+   "pass_condition": "The body text on “Interiors wholesale presentation” (wholesale-presentation.pdf) is set in Source Serif 4 Regular, not italic, bold or a sans.",
+   "reference_assets": [
+    {
+     "filename": "fonts/BarlowCondensed-Medium.ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/BarlowCondensed-Medium.ttf"
+    },
+    {
+     "filename": "fonts/SourceSerif4[opsz,wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/SourceSerif4%5Bopsz%2Cwght%5D.ttf"
+    },
+    {
+     "filename": "fonts/Inter[opsz,wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/Inter%5Bopsz%2Cwght%5D.ttf"
+    }
+   ],
    "k_id": "K2_Q3",
    "k_label": "Brand-system compliance",
    "origin": "review_feedback_2026_09_25",
-   "revision": "2026-09-25 review feedback"
+   "revision": "pilot13_inputs_2026_10_14"
   },
   {
    "task_id": "PHOTO-26",
@@ -1946,7 +2446,20 @@
    "artifact_file": "wholesale-presentation.pdf",
    "requirement": "No line of body text on “Interiors wholesale presentation” (wholesale-presentation.pdf) runs longer than 65 characters.",
    "pass_condition": "No line of body text on “Interiors wholesale presentation” (wholesale-presentation.pdf) runs longer than 65 characters.",
-   "reference_assets": [],
+   "reference_assets": [
+    {
+     "filename": "fonts/BarlowCondensed-Medium.ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/BarlowCondensed-Medium.ttf"
+    },
+    {
+     "filename": "fonts/SourceSerif4[opsz,wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/SourceSerif4%5Bopsz%2Cwght%5D.ttf"
+    },
+    {
+     "filename": "fonts/Inter[opsz,wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/Inter%5Bopsz%2Cwght%5D.ttf"
+    }
+   ],
    "k_id": "K2_Q3",
    "k_label": "Brand-system compliance",
    "origin": "review_feedback_2026_09_25",
@@ -1958,7 +2471,7 @@
    "check_id": "PHOTO-26/wholesale-presentation/H028",
    "type": "human",
    "output_reference": "deliverables/wholesale-presentation.pdf",
-   "check": "Every price, dimension and care line on “Interiors wholesale presentation” (wholesale-presentation.pdf) is set in Graphik Regular, not Publico Text and not a bold weight.",
+   "check": "Every price, dimension and care line on “Interiors wholesale presentation” (wholesale-presentation.pdf) is set in Inter Regular, not Source Serif 4 and not a bold weight.",
    "answer_type": "yes_no",
    "allowed_answers": [
     "Yes",
@@ -1967,22 +2480,34 @@
    "pass_answer": "Yes",
    "answer": null,
    "status": "not_assessed",
-   "source_statement": "Every price, dimension and care line on “Interiors wholesale presentation” (wholesale-presentation.pdf) is set in Graphik Regular, not Publico Text and not a bold weight.",
-   "evidence_reference": "Brand type system rule: Graphik Regular, not Publico Text, carries prices, dimensions and care lines. thornmere_spring_catalog_press.pdf set its price in bold Arial.",
+   "source_statement": "Every price, dimension and care line on “Interiors wholesale presentation” (wholesale-presentation.pdf) is set in Inter Regular, not Source Serif 4 and not a bold weight.",
+   "evidence_reference": "Brand type system rule: Inter Regular, not Source Serif 4, carries prices, dimensions and care lines. thornmere_spring_catalog_press.pdf set its price in bold Arial.",
    "artifact_name": "Interiors wholesale presentation",
    "artifact_file": "wholesale-presentation.pdf",
-   "requirement": "Every price, dimension and care line on “Interiors wholesale presentation” (wholesale-presentation.pdf) is set in Graphik Regular, not Publico Text and not a bold weight.",
-   "pass_condition": "Every price, dimension and care line on “Interiors wholesale presentation” (wholesale-presentation.pdf) is set in Graphik Regular, not Publico Text and not a bold weight.",
+   "requirement": "Every price, dimension and care line on “Interiors wholesale presentation” (wholesale-presentation.pdf) is set in Inter Regular, not Source Serif 4 and not a bold weight.",
+   "pass_condition": "Every price, dimension and care line on “Interiors wholesale presentation” (wholesale-presentation.pdf) is set in Inter Regular, not Source Serif 4 and not a bold weight.",
    "reference_assets": [
     {
      "filename": "thornmere_spring_catalog_press.pdf",
      "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/tasks/SB3-026-PHO__thornmere-home-autumn-interiors-image-system/assets/thornmere_spring_catalog_press.pdf"
+    },
+    {
+     "filename": "fonts/BarlowCondensed-Medium.ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/BarlowCondensed-Medium.ttf"
+    },
+    {
+     "filename": "fonts/SourceSerif4[opsz,wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/SourceSerif4%5Bopsz%2Cwght%5D.ttf"
+    },
+    {
+     "filename": "fonts/Inter[opsz,wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/Inter%5Bopsz%2Cwght%5D.ttf"
     }
    ],
    "k_id": "K2_Q3",
    "k_label": "Brand-system compliance",
    "origin": "review_feedback_2026_09_25",
-   "revision": "2026-09-25 review feedback"
+   "revision": "pilot13_inputs_2026_10_14"
   },
   {
    "task_id": "PHOTO-26",
@@ -1990,7 +2515,7 @@
    "check_id": "PHOTO-26/wholesale-presentation/H029",
    "type": "human",
    "output_reference": "deliverables/wholesale-presentation.pdf",
-   "check": "Every line of type on “Interiors wholesale presentation” (wholesale-presentation.pdf) is set in Druk Medium, Publico Text Roman or Graphik Regular, with no other typeface, such as Georgia or Arial.",
+   "check": "Every line of type on “Interiors wholesale presentation” (wholesale-presentation.pdf) is set in Barlow Condensed Medium, Source Serif 4 Regular or Inter Regular, with no other typeface, such as Georgia or Arial.",
    "answer_type": "yes_no",
    "allowed_answers": [
     "Yes",
@@ -1999,22 +2524,34 @@
    "pass_answer": "Yes",
    "answer": null,
    "status": "not_assessed",
-   "source_statement": "Every line of type on “Interiors wholesale presentation” (wholesale-presentation.pdf) is set in Druk Medium, Publico Text Roman or Graphik Regular, with no other typeface, such as Georgia or Arial.",
-   "evidence_reference": "Brand type system rule: every family in this scale is the brand's own: Druk Medium, Publico Text Roman, Graphik Regular. thornmere_spring_catalog_press.pdf sets its caption in Georgia and Arial, which the autumn system replaces.",
+   "source_statement": "Every line of type on “Interiors wholesale presentation” (wholesale-presentation.pdf) is set in Barlow Condensed Medium, Source Serif 4 Regular or Inter Regular, with no other typeface, such as Georgia or Arial.",
+   "evidence_reference": "Brand type system rule: every family in this scale is the brand's own: Barlow Condensed Medium, Source Serif 4 Regular, Inter Regular. thornmere_spring_catalog_press.pdf sets its caption in Georgia and Arial, which the autumn system replaces.",
    "artifact_name": "Interiors wholesale presentation",
    "artifact_file": "wholesale-presentation.pdf",
-   "requirement": "Every line of type on “Interiors wholesale presentation” (wholesale-presentation.pdf) is set in Druk Medium, Publico Text Roman or Graphik Regular, with no other typeface, such as Georgia or Arial.",
-   "pass_condition": "Every line of type on “Interiors wholesale presentation” (wholesale-presentation.pdf) is set in Druk Medium, Publico Text Roman or Graphik Regular, with no other typeface, such as Georgia or Arial.",
+   "requirement": "Every line of type on “Interiors wholesale presentation” (wholesale-presentation.pdf) is set in Barlow Condensed Medium, Source Serif 4 Regular or Inter Regular, with no other typeface, such as Georgia or Arial.",
+   "pass_condition": "Every line of type on “Interiors wholesale presentation” (wholesale-presentation.pdf) is set in Barlow Condensed Medium, Source Serif 4 Regular or Inter Regular, with no other typeface, such as Georgia or Arial.",
    "reference_assets": [
     {
      "filename": "thornmere_spring_catalog_press.pdf",
      "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/tasks/SB3-026-PHO__thornmere-home-autumn-interiors-image-system/assets/thornmere_spring_catalog_press.pdf"
+    },
+    {
+     "filename": "fonts/BarlowCondensed-Medium.ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/BarlowCondensed-Medium.ttf"
+    },
+    {
+     "filename": "fonts/SourceSerif4[opsz,wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/SourceSerif4%5Bopsz%2Cwght%5D.ttf"
+    },
+    {
+     "filename": "fonts/Inter[opsz,wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/Inter%5Bopsz%2Cwght%5D.ttf"
     }
    ],
    "k_id": "K2_Q3",
    "k_label": "Brand-system compliance",
    "origin": "review_feedback_2026_09_25",
-   "revision": "2026-09-25 review feedback"
+   "revision": "pilot13_inputs_2026_10_14"
   },
   {
    "task_id": "PHOTO-26",
@@ -2041,6 +2578,18 @@
     {
      "filename": "thornmere_spring_catalog_press.pdf",
      "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/tasks/SB3-026-PHO__thornmere-home-autumn-interiors-image-system/assets/thornmere_spring_catalog_press.pdf"
+    },
+    {
+     "filename": "fonts/BarlowCondensed-Medium.ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/BarlowCondensed-Medium.ttf"
+    },
+    {
+     "filename": "fonts/SourceSerif4[opsz,wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/SourceSerif4%5Bopsz%2Cwght%5D.ttf"
+    },
+    {
+     "filename": "fonts/Inter[opsz,wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/Inter%5Bopsz%2Cwght%5D.ttf"
     }
    ],
    "k_id": "K2_Q3",
@@ -2073,6 +2622,18 @@
     {
      "filename": "thornmere_spring_catalog_press.pdf",
      "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/tasks/SB3-026-PHO__thornmere-home-autumn-interiors-image-system/assets/thornmere_spring_catalog_press.pdf"
+    },
+    {
+     "filename": "fonts/BarlowCondensed-Medium.ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/BarlowCondensed-Medium.ttf"
+    },
+    {
+     "filename": "fonts/SourceSerif4[opsz,wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/SourceSerif4%5Bopsz%2Cwght%5D.ttf"
+    },
+    {
+     "filename": "fonts/Inter[opsz,wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/Inter%5Bopsz%2Cwght%5D.ttf"
     }
    ],
    "k_id": "K2_Q3",
@@ -2101,7 +2662,20 @@
    "artifact_file": "wholesale-presentation.pdf",
    "requirement": "Every ground, tile, panel and band on “Interiors wholesale presentation” (wholesale-presentation.pdf) is solid at full opacity, with no drop shadow, glow or gradient, and no scrim or overlay of any colour, black and white included, over a photograph.",
    "pass_condition": "Every ground, tile, panel and band on “Interiors wholesale presentation” (wholesale-presentation.pdf) is solid at full opacity, with no drop shadow, glow or gradient, and no scrim or overlay of any colour, black and white included, over a photograph.",
-   "reference_assets": [],
+   "reference_assets": [
+    {
+     "filename": "fonts/BarlowCondensed-Medium.ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/BarlowCondensed-Medium.ttf"
+    },
+    {
+     "filename": "fonts/SourceSerif4[opsz,wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/SourceSerif4%5Bopsz%2Cwght%5D.ttf"
+    },
+    {
+     "filename": "fonts/Inter[opsz,wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/Inter%5Bopsz%2Cwght%5D.ttf"
+    }
+   ],
    "k_id": "K2_Q3",
    "k_label": "Brand-system compliance",
    "origin": "review_feedback_2026_09_25",
@@ -2132,6 +2706,18 @@
     {
      "filename": "thornmere_spring_catalog_press.pdf",
      "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/tasks/SB3-026-PHO__thornmere-home-autumn-interiors-image-system/assets/thornmere_spring_catalog_press.pdf"
+    },
+    {
+     "filename": "fonts/BarlowCondensed-Medium.ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/BarlowCondensed-Medium.ttf"
+    },
+    {
+     "filename": "fonts/SourceSerif4[opsz,wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/SourceSerif4%5Bopsz%2Cwght%5D.ttf"
+    },
+    {
+     "filename": "fonts/Inter[opsz,wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/Inter%5Bopsz%2Cwght%5D.ttf"
     }
    ],
    "k_id": "K2_Q3",
@@ -2164,6 +2750,18 @@
     {
      "filename": "thornmere_spring_catalog_press.pdf",
      "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/tasks/SB3-026-PHO__thornmere-home-autumn-interiors-image-system/assets/thornmere_spring_catalog_press.pdf"
+    },
+    {
+     "filename": "fonts/BarlowCondensed-Medium.ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/BarlowCondensed-Medium.ttf"
+    },
+    {
+     "filename": "fonts/SourceSerif4[opsz,wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/SourceSerif4%5Bopsz%2Cwght%5D.ttf"
+    },
+    {
+     "filename": "fonts/Inter[opsz,wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/Inter%5Bopsz%2Cwght%5D.ttf"
     }
    ],
    "k_id": "K2_Q3",
@@ -2196,6 +2794,18 @@
     {
      "filename": "textile_flatlay_02.jpg",
      "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/tasks/SB3-026-PHO__thornmere-home-autumn-interiors-image-system/assets/textile_flatlay_02.jpg"
+    },
+    {
+     "filename": "fonts/BarlowCondensed-Medium.ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/BarlowCondensed-Medium.ttf"
+    },
+    {
+     "filename": "fonts/SourceSerif4[opsz,wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/SourceSerif4%5Bopsz%2Cwght%5D.ttf"
+    },
+    {
+     "filename": "fonts/Inter[opsz,wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/Inter%5Bopsz%2Cwght%5D.ttf"
     }
    ],
    "k_id": "K2_Q3",
@@ -2427,7 +3037,7 @@
    "answer": null,
    "status": "not_assessed",
    "source_statement": "Any product name on “Autumn interiors collection spread” (collection-spread.pdf) reads word for word as in the product_name column of thornmere_autumn_skus.csv, letter case aside, for example “Indigo Cereal Bowl”.",
-   "evidence_reference": "Brief: use the supplied factual records. Product names are set in Druk Medium caps, so case is not compared. thornmere_autumn_skus.csv, product_name column, row 3.",
+   "evidence_reference": "Brief: use the supplied factual records. Product names are set in Barlow Condensed Medium caps, so case is not compared. thornmere_autumn_skus.csv, product_name column, row 3.",
    "artifact_name": "Autumn interiors collection spread",
    "artifact_file": "collection-spread.pdf",
    "requirement": "Any product name on “Autumn interiors collection spread” (collection-spread.pdf) reads word for word as in the product_name column of thornmere_autumn_skus.csv, letter case aside, for example “Indigo Cereal Bowl”.",
@@ -2441,7 +3051,7 @@
    "k_id": "K1_Q1",
    "k_label": "Content completeness",
    "origin": "review_feedback_2026_09_25",
-   "revision": "2026-09-25 review feedback"
+   "revision": "pilot13_inputs_2026_10_14"
   },
   {
    "task_id": "PHOTO-26",
@@ -3073,7 +3683,7 @@
    "check_id": "PHOTO-26/collection-spread/H020",
    "type": "human",
    "output_reference": "deliverables/collection-spread.pdf",
-   "check": "Product names, every other display heading and every subheading on “Autumn interiors collection spread” (collection-spread.pdf) are Druk Medium capitals tracked visibly open, product names at +200 thousandths, never a serif, Publico Text, Graphik or another Druk weight.",
+   "check": "Product names, every other display heading and every subheading on “Autumn interiors collection spread” (collection-spread.pdf) are Barlow Condensed Medium capitals tracked visibly open, product names at +200 thousandths, never a serif, Source Serif 4, Inter or another Barlow Condensed weight.",
    "answer_type": "yes_no",
    "allowed_answers": [
     "Yes",
@@ -3082,22 +3692,34 @@
    "pass_answer": "Yes",
    "answer": null,
    "status": "not_assessed",
-   "source_statement": "Product names, every other display heading and every subheading on “Autumn interiors collection spread” (collection-spread.pdf) are Druk Medium capitals tracked visibly open, product names at +200 thousandths, never a serif, Publico Text, Graphik or another Druk weight.",
-   "evidence_reference": "Brand type system rule: The product name is always Druk Medium caps tracked +200 thousandths open; the open tracking is not optional. Type system step 01: Display / H1 is Druk Medium, Medium, all caps, tracked +200 thousandths; sample THORNMERE HOME. Type system step 02: Subheading / H2 is Druk Medium caps, 11 pt on 13 pt, tracked +160 thousandths. thornmere_spring_catalog_press.pdf set the name in Georgia, which the autumn system replaces.",
+   "source_statement": "Product names, every other display heading and every subheading on “Autumn interiors collection spread” (collection-spread.pdf) are Barlow Condensed Medium capitals tracked visibly open, product names at +200 thousandths, never a serif, Source Serif 4, Inter or another Barlow Condensed weight.",
+   "evidence_reference": "Brand type system rule: The product name is always Barlow Condensed Medium caps tracked +200 thousandths open; the open tracking is not optional. Type system step 01: Display / H1 is Barlow Condensed Medium, Medium, all caps, tracked +200 thousandths; sample THORNMERE HOME. Type system step 02: Subheading / H2 is Barlow Condensed Medium caps, 11 pt on 13 pt, tracked +160 thousandths. thornmere_spring_catalog_press.pdf set the name in Georgia, which the autumn system replaces.",
    "artifact_name": "Autumn interiors collection spread",
    "artifact_file": "collection-spread.pdf",
-   "requirement": "Product names, every other display heading and every subheading on “Autumn interiors collection spread” (collection-spread.pdf) are Druk Medium capitals tracked visibly open, product names at +200 thousandths, never a serif, Publico Text, Graphik or another Druk weight.",
-   "pass_condition": "Product names, every other display heading and every subheading on “Autumn interiors collection spread” (collection-spread.pdf) are Druk Medium capitals tracked visibly open, product names at +200 thousandths, never a serif, Publico Text, Graphik or another Druk weight.",
+   "requirement": "Product names, every other display heading and every subheading on “Autumn interiors collection spread” (collection-spread.pdf) are Barlow Condensed Medium capitals tracked visibly open, product names at +200 thousandths, never a serif, Source Serif 4, Inter or another Barlow Condensed weight.",
+   "pass_condition": "Product names, every other display heading and every subheading on “Autumn interiors collection spread” (collection-spread.pdf) are Barlow Condensed Medium capitals tracked visibly open, product names at +200 thousandths, never a serif, Source Serif 4, Inter or another Barlow Condensed weight.",
    "reference_assets": [
     {
      "filename": "thornmere_spring_catalog_press.pdf",
      "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/tasks/SB3-026-PHO__thornmere-home-autumn-interiors-image-system/assets/thornmere_spring_catalog_press.pdf"
+    },
+    {
+     "filename": "fonts/BarlowCondensed-Medium.ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/BarlowCondensed-Medium.ttf"
+    },
+    {
+     "filename": "fonts/SourceSerif4[opsz,wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/SourceSerif4%5Bopsz%2Cwght%5D.ttf"
+    },
+    {
+     "filename": "fonts/Inter[opsz,wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/Inter%5Bopsz%2Cwght%5D.ttf"
     }
    ],
    "k_id": "K2_Q3",
    "k_label": "Brand-system compliance",
    "origin": "review_feedback_2026_09_25",
-   "revision": "2026-09-25 review feedback"
+   "revision": "pilot13_inputs_2026_10_14"
   },
   {
    "task_id": "PHOTO-26",
@@ -3159,7 +3781,7 @@
    "check_id": "PHOTO-26/collection-spread/H023",
    "type": "human",
    "output_reference": "deliverables/collection-spread.pdf",
-   "check": "The body text on “Autumn interiors collection spread” (collection-spread.pdf) is set in Publico Text Roman, not italic, bold or a sans.",
+   "check": "The body text on “Autumn interiors collection spread” (collection-spread.pdf) is set in Source Serif 4 Regular, not italic, bold or a sans.",
    "answer_type": "yes_no",
    "allowed_answers": [
     "Yes",
@@ -3168,17 +3790,30 @@
    "pass_answer": "Yes",
    "answer": null,
    "status": "not_assessed",
-   "source_statement": "The body text on “Autumn interiors collection spread” (collection-spread.pdf) is set in Publico Text Roman, not italic, bold or a sans.",
-   "evidence_reference": "Type system step 03: Body is Publico Text Roman, 10 pt on 15 pt, tracking 0.",
+   "source_statement": "The body text on “Autumn interiors collection spread” (collection-spread.pdf) is set in Source Serif 4 Regular, not italic, bold or a sans.",
+   "evidence_reference": "Type system step 03: Body is Source Serif 4 Regular, 10 pt on 15 pt, tracking 0.",
    "artifact_name": "Autumn interiors collection spread",
    "artifact_file": "collection-spread.pdf",
-   "requirement": "The body text on “Autumn interiors collection spread” (collection-spread.pdf) is set in Publico Text Roman, not italic, bold or a sans.",
-   "pass_condition": "The body text on “Autumn interiors collection spread” (collection-spread.pdf) is set in Publico Text Roman, not italic, bold or a sans.",
-   "reference_assets": [],
+   "requirement": "The body text on “Autumn interiors collection spread” (collection-spread.pdf) is set in Source Serif 4 Regular, not italic, bold or a sans.",
+   "pass_condition": "The body text on “Autumn interiors collection spread” (collection-spread.pdf) is set in Source Serif 4 Regular, not italic, bold or a sans.",
+   "reference_assets": [
+    {
+     "filename": "fonts/BarlowCondensed-Medium.ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/BarlowCondensed-Medium.ttf"
+    },
+    {
+     "filename": "fonts/SourceSerif4[opsz,wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/SourceSerif4%5Bopsz%2Cwght%5D.ttf"
+    },
+    {
+     "filename": "fonts/Inter[opsz,wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/Inter%5Bopsz%2Cwght%5D.ttf"
+    }
+   ],
    "k_id": "K2_Q3",
    "k_label": "Brand-system compliance",
    "origin": "review_feedback_2026_09_25",
-   "revision": "2026-09-25 review feedback"
+   "revision": "pilot13_inputs_2026_10_14"
   },
   {
    "task_id": "PHOTO-26",
@@ -3213,7 +3848,7 @@
    "check_id": "PHOTO-26/collection-spread/H025",
    "type": "human",
    "output_reference": "deliverables/collection-spread.pdf",
-   "check": "Every price, dimension and care line on “Autumn interiors collection spread” (collection-spread.pdf) is set in Graphik Regular, not Publico Text and not a bold weight.",
+   "check": "Every price, dimension and care line on “Autumn interiors collection spread” (collection-spread.pdf) is set in Inter Regular, not Source Serif 4 and not a bold weight.",
    "answer_type": "yes_no",
    "allowed_answers": [
     "Yes",
@@ -3222,22 +3857,34 @@
    "pass_answer": "Yes",
    "answer": null,
    "status": "not_assessed",
-   "source_statement": "Every price, dimension and care line on “Autumn interiors collection spread” (collection-spread.pdf) is set in Graphik Regular, not Publico Text and not a bold weight.",
-   "evidence_reference": "Brand type system rule: Graphik Regular, not Publico Text, carries prices, dimensions and care lines. thornmere_spring_catalog_press.pdf set its price in bold Arial.",
+   "source_statement": "Every price, dimension and care line on “Autumn interiors collection spread” (collection-spread.pdf) is set in Inter Regular, not Source Serif 4 and not a bold weight.",
+   "evidence_reference": "Brand type system rule: Inter Regular, not Source Serif 4, carries prices, dimensions and care lines. thornmere_spring_catalog_press.pdf set its price in bold Arial.",
    "artifact_name": "Autumn interiors collection spread",
    "artifact_file": "collection-spread.pdf",
-   "requirement": "Every price, dimension and care line on “Autumn interiors collection spread” (collection-spread.pdf) is set in Graphik Regular, not Publico Text and not a bold weight.",
-   "pass_condition": "Every price, dimension and care line on “Autumn interiors collection spread” (collection-spread.pdf) is set in Graphik Regular, not Publico Text and not a bold weight.",
+   "requirement": "Every price, dimension and care line on “Autumn interiors collection spread” (collection-spread.pdf) is set in Inter Regular, not Source Serif 4 and not a bold weight.",
+   "pass_condition": "Every price, dimension and care line on “Autumn interiors collection spread” (collection-spread.pdf) is set in Inter Regular, not Source Serif 4 and not a bold weight.",
    "reference_assets": [
     {
      "filename": "thornmere_spring_catalog_press.pdf",
      "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/tasks/SB3-026-PHO__thornmere-home-autumn-interiors-image-system/assets/thornmere_spring_catalog_press.pdf"
+    },
+    {
+     "filename": "fonts/BarlowCondensed-Medium.ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/BarlowCondensed-Medium.ttf"
+    },
+    {
+     "filename": "fonts/SourceSerif4[opsz,wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/SourceSerif4%5Bopsz%2Cwght%5D.ttf"
+    },
+    {
+     "filename": "fonts/Inter[opsz,wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/Inter%5Bopsz%2Cwght%5D.ttf"
     }
    ],
    "k_id": "K2_Q3",
    "k_label": "Brand-system compliance",
    "origin": "review_feedback_2026_09_25",
-   "revision": "2026-09-25 review feedback"
+   "revision": "pilot13_inputs_2026_10_14"
   },
   {
    "task_id": "PHOTO-26",
@@ -3245,7 +3892,7 @@
    "check_id": "PHOTO-26/collection-spread/H026",
    "type": "human",
    "output_reference": "deliverables/collection-spread.pdf",
-   "check": "Every line of type on “Autumn interiors collection spread” (collection-spread.pdf) is set in Druk Medium, Publico Text Roman or Graphik Regular, with no other typeface, such as Georgia or Arial.",
+   "check": "Every line of type on “Autumn interiors collection spread” (collection-spread.pdf) is set in Barlow Condensed Medium, Source Serif 4 Regular or Inter Regular, with no other typeface, such as Georgia or Arial.",
    "answer_type": "yes_no",
    "allowed_answers": [
     "Yes",
@@ -3254,22 +3901,34 @@
    "pass_answer": "Yes",
    "answer": null,
    "status": "not_assessed",
-   "source_statement": "Every line of type on “Autumn interiors collection spread” (collection-spread.pdf) is set in Druk Medium, Publico Text Roman or Graphik Regular, with no other typeface, such as Georgia or Arial.",
-   "evidence_reference": "Brand type system rule: every family in this scale is the brand's own: Druk Medium, Publico Text Roman, Graphik Regular. thornmere_spring_catalog_press.pdf sets its caption in Georgia and Arial, which the autumn system replaces.",
+   "source_statement": "Every line of type on “Autumn interiors collection spread” (collection-spread.pdf) is set in Barlow Condensed Medium, Source Serif 4 Regular or Inter Regular, with no other typeface, such as Georgia or Arial.",
+   "evidence_reference": "Brand type system rule: every family in this scale is the brand's own: Barlow Condensed Medium, Source Serif 4 Regular, Inter Regular. thornmere_spring_catalog_press.pdf sets its caption in Georgia and Arial, which the autumn system replaces.",
    "artifact_name": "Autumn interiors collection spread",
    "artifact_file": "collection-spread.pdf",
-   "requirement": "Every line of type on “Autumn interiors collection spread” (collection-spread.pdf) is set in Druk Medium, Publico Text Roman or Graphik Regular, with no other typeface, such as Georgia or Arial.",
-   "pass_condition": "Every line of type on “Autumn interiors collection spread” (collection-spread.pdf) is set in Druk Medium, Publico Text Roman or Graphik Regular, with no other typeface, such as Georgia or Arial.",
+   "requirement": "Every line of type on “Autumn interiors collection spread” (collection-spread.pdf) is set in Barlow Condensed Medium, Source Serif 4 Regular or Inter Regular, with no other typeface, such as Georgia or Arial.",
+   "pass_condition": "Every line of type on “Autumn interiors collection spread” (collection-spread.pdf) is set in Barlow Condensed Medium, Source Serif 4 Regular or Inter Regular, with no other typeface, such as Georgia or Arial.",
    "reference_assets": [
     {
      "filename": "thornmere_spring_catalog_press.pdf",
      "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/tasks/SB3-026-PHO__thornmere-home-autumn-interiors-image-system/assets/thornmere_spring_catalog_press.pdf"
+    },
+    {
+     "filename": "fonts/BarlowCondensed-Medium.ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/BarlowCondensed-Medium.ttf"
+    },
+    {
+     "filename": "fonts/SourceSerif4[opsz,wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/SourceSerif4%5Bopsz%2Cwght%5D.ttf"
+    },
+    {
+     "filename": "fonts/Inter[opsz,wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/Inter%5Bopsz%2Cwght%5D.ttf"
     }
    ],
    "k_id": "K2_Q3",
    "k_label": "Brand-system compliance",
    "origin": "review_feedback_2026_09_25",
-   "revision": "2026-09-25 review feedback"
+   "revision": "pilot13_inputs_2026_10_14"
   },
   {
    "task_id": "PHOTO-26",
@@ -3287,7 +3946,7 @@
    "answer": null,
    "status": "not_assessed",
    "source_statement": "On “Autumn interiors collection spread” (collection-spread.pdf) every product name is set larger than that product's price, wherever both appear.",
-   "evidence_reference": "Type system: the product name is step 01, Druk Medium caps at 13 pt; prices are step 04 fine print, Graphik Regular at 8.5 pt.",
+   "evidence_reference": "Type system: the product name is step 01, Barlow Condensed Medium caps at 13 pt; prices are step 04 fine print, Inter Regular at 8.5 pt.",
    "artifact_name": "Autumn interiors collection spread",
    "artifact_file": "collection-spread.pdf",
    "requirement": "On “Autumn interiors collection spread” (collection-spread.pdf) every product name is set larger than that product's price, wherever both appear.",
@@ -3296,7 +3955,7 @@
    "k_id": "K5_Q2",
    "k_label": "Information hierarchy",
    "origin": "review_feedback_2026_09_25",
-   "revision": "2026-09-25 review feedback"
+   "revision": "pilot13_inputs_2026_10_14"
   },
   {
    "task_id": "PHOTO-26",
@@ -3491,7 +4150,7 @@
    "check_id": "PHOTO-26/collection-spread/H034",
    "type": "human",
    "output_reference": "deliverables/collection-spread.pdf",
-   "check": "collection-spread.pdf: product name/main heading uses Druk Medium capitals (when present).",
+   "check": "collection-spread.pdf: product name/main heading uses Barlow Condensed Medium capitals (when present).",
    "answer_type": "yes_no",
    "allowed_answers": [
     "Yes",
@@ -3500,17 +4159,30 @@
    "pass_answer": "Yes",
    "answer": null,
    "status": "not_assessed",
-   "source_statement": "collection-spread.pdf: product name/main heading uses Druk Medium capitals (when present).",
+   "source_statement": "collection-spread.pdf: product name/main heading uses Barlow Condensed Medium capitals (when present).",
    "evidence_reference": "Current brand typography; use the authored font settings for exact sizes, tracking and variable-font axes. A raster preview alone does not prove those settings. If evidence is unavailable, leave this check unassessed.",
    "artifact_name": "Autumn interiors collection spread",
    "artifact_file": "collection-spread.pdf",
-   "requirement": "collection-spread.pdf: product name/main heading uses Druk Medium capitals (when present).",
-   "pass_condition": "collection-spread.pdf: product name/main heading uses Druk Medium capitals (when present).",
-   "reference_assets": [],
+   "requirement": "collection-spread.pdf: product name/main heading uses Barlow Condensed Medium capitals (when present).",
+   "pass_condition": "collection-spread.pdf: product name/main heading uses Barlow Condensed Medium capitals (when present).",
+   "reference_assets": [
+    {
+     "filename": "fonts/BarlowCondensed-Medium.ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/BarlowCondensed-Medium.ttf"
+    },
+    {
+     "filename": "fonts/SourceSerif4[opsz,wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/SourceSerif4%5Bopsz%2Cwght%5D.ttf"
+    },
+    {
+     "filename": "fonts/Inter[opsz,wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/Inter%5Bopsz%2Cwght%5D.ttf"
+    }
+   ],
    "k_id": "K2_Q3",
    "k_label": "Brand-system compliance",
    "origin": "pilot_typography_2026_09_30",
-   "revision": "pilot_typography_2026_09_30",
+   "revision": "pilot13_inputs_2026_10_14",
    "typography_key": "product name/main heading:face",
    "platform_priority": true
   },
@@ -3535,7 +4207,20 @@
    "artifact_file": "collection-spread.pdf",
    "requirement": "collection-spread.pdf: product name/main heading has font size 13 pt (when present).",
    "pass_condition": "collection-spread.pdf: product name/main heading has font size 13 pt (when present).",
-   "reference_assets": [],
+   "reference_assets": [
+    {
+     "filename": "fonts/BarlowCondensed-Medium.ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/BarlowCondensed-Medium.ttf"
+    },
+    {
+     "filename": "fonts/SourceSerif4[opsz,wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/SourceSerif4%5Bopsz%2Cwght%5D.ttf"
+    },
+    {
+     "filename": "fonts/Inter[opsz,wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/Inter%5Bopsz%2Cwght%5D.ttf"
+    }
+   ],
    "k_id": "K2_Q3",
    "k_label": "Brand-system compliance",
    "origin": "pilot_typography_2026_09_30",
@@ -3564,7 +4249,20 @@
    "artifact_file": "collection-spread.pdf",
    "requirement": "collection-spread.pdf: product name/main heading has 15 pt leading on multiline text (when present).",
    "pass_condition": "collection-spread.pdf: product name/main heading has 15 pt leading on multiline text (when present).",
-   "reference_assets": [],
+   "reference_assets": [
+    {
+     "filename": "fonts/BarlowCondensed-Medium.ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/BarlowCondensed-Medium.ttf"
+    },
+    {
+     "filename": "fonts/SourceSerif4[opsz,wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/SourceSerif4%5Bopsz%2Cwght%5D.ttf"
+    },
+    {
+     "filename": "fonts/Inter[opsz,wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/Inter%5Bopsz%2Cwght%5D.ttf"
+    }
+   ],
    "k_id": "K2_Q3",
    "k_label": "Brand-system compliance",
    "origin": "pilot_typography_2026_09_30",
@@ -3593,7 +4291,20 @@
    "artifact_file": "collection-spread.pdf",
    "requirement": "collection-spread.pdf: product name/main heading uses tracking +200/1000 em (when present).",
    "pass_condition": "collection-spread.pdf: product name/main heading uses tracking +200/1000 em (when present).",
-   "reference_assets": [],
+   "reference_assets": [
+    {
+     "filename": "fonts/BarlowCondensed-Medium.ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/BarlowCondensed-Medium.ttf"
+    },
+    {
+     "filename": "fonts/SourceSerif4[opsz,wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/SourceSerif4%5Bopsz%2Cwght%5D.ttf"
+    },
+    {
+     "filename": "fonts/Inter[opsz,wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/Inter%5Bopsz%2Cwght%5D.ttf"
+    }
+   ],
    "k_id": "K2_Q3",
    "k_label": "Brand-system compliance",
    "origin": "pilot_typography_2026_09_30",
@@ -3607,7 +4318,7 @@
    "check_id": "PHOTO-26/collection-spread/H038",
    "type": "human",
    "output_reference": "deliverables/collection-spread.pdf",
-   "check": "collection-spread.pdf: secondary heading uses Druk Medium capitals (when present).",
+   "check": "collection-spread.pdf: secondary heading uses Barlow Condensed Medium capitals (when present).",
    "answer_type": "yes_no",
    "allowed_answers": [
     "Yes",
@@ -3616,17 +4327,30 @@
    "pass_answer": "Yes",
    "answer": null,
    "status": "not_assessed",
-   "source_statement": "collection-spread.pdf: secondary heading uses Druk Medium capitals (when present).",
+   "source_statement": "collection-spread.pdf: secondary heading uses Barlow Condensed Medium capitals (when present).",
    "evidence_reference": "Current brand typography; use the authored font settings for exact sizes, tracking and variable-font axes. A raster preview alone does not prove those settings. If evidence is unavailable, leave this check unassessed.",
    "artifact_name": "Autumn interiors collection spread",
    "artifact_file": "collection-spread.pdf",
-   "requirement": "collection-spread.pdf: secondary heading uses Druk Medium capitals (when present).",
-   "pass_condition": "collection-spread.pdf: secondary heading uses Druk Medium capitals (when present).",
-   "reference_assets": [],
+   "requirement": "collection-spread.pdf: secondary heading uses Barlow Condensed Medium capitals (when present).",
+   "pass_condition": "collection-spread.pdf: secondary heading uses Barlow Condensed Medium capitals (when present).",
+   "reference_assets": [
+    {
+     "filename": "fonts/BarlowCondensed-Medium.ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/BarlowCondensed-Medium.ttf"
+    },
+    {
+     "filename": "fonts/SourceSerif4[opsz,wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/SourceSerif4%5Bopsz%2Cwght%5D.ttf"
+    },
+    {
+     "filename": "fonts/Inter[opsz,wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/Inter%5Bopsz%2Cwght%5D.ttf"
+    }
+   ],
    "k_id": "K2_Q3",
    "k_label": "Brand-system compliance",
    "origin": "pilot_typography_2026_09_30",
-   "revision": "pilot_typography_2026_09_30",
+   "revision": "pilot13_inputs_2026_10_14",
    "typography_key": "secondary heading:face",
    "platform_priority": true
   },
@@ -3651,7 +4375,20 @@
    "artifact_file": "collection-spread.pdf",
    "requirement": "collection-spread.pdf: secondary heading has font size 11 pt (when present).",
    "pass_condition": "collection-spread.pdf: secondary heading has font size 11 pt (when present).",
-   "reference_assets": [],
+   "reference_assets": [
+    {
+     "filename": "fonts/BarlowCondensed-Medium.ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/BarlowCondensed-Medium.ttf"
+    },
+    {
+     "filename": "fonts/SourceSerif4[opsz,wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/SourceSerif4%5Bopsz%2Cwght%5D.ttf"
+    },
+    {
+     "filename": "fonts/Inter[opsz,wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/Inter%5Bopsz%2Cwght%5D.ttf"
+    }
+   ],
    "k_id": "K2_Q3",
    "k_label": "Brand-system compliance",
    "origin": "pilot_typography_2026_09_30",
@@ -3680,7 +4417,20 @@
    "artifact_file": "collection-spread.pdf",
    "requirement": "collection-spread.pdf: secondary heading has 13 pt leading on multiline text (when present).",
    "pass_condition": "collection-spread.pdf: secondary heading has 13 pt leading on multiline text (when present).",
-   "reference_assets": [],
+   "reference_assets": [
+    {
+     "filename": "fonts/BarlowCondensed-Medium.ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/BarlowCondensed-Medium.ttf"
+    },
+    {
+     "filename": "fonts/SourceSerif4[opsz,wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/SourceSerif4%5Bopsz%2Cwght%5D.ttf"
+    },
+    {
+     "filename": "fonts/Inter[opsz,wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/Inter%5Bopsz%2Cwght%5D.ttf"
+    }
+   ],
    "k_id": "K2_Q3",
    "k_label": "Brand-system compliance",
    "origin": "pilot_typography_2026_09_30",
@@ -3709,7 +4459,20 @@
    "artifact_file": "collection-spread.pdf",
    "requirement": "collection-spread.pdf: secondary heading uses tracking +160/1000 em (when present).",
    "pass_condition": "collection-spread.pdf: secondary heading uses tracking +160/1000 em (when present).",
-   "reference_assets": [],
+   "reference_assets": [
+    {
+     "filename": "fonts/BarlowCondensed-Medium.ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/BarlowCondensed-Medium.ttf"
+    },
+    {
+     "filename": "fonts/SourceSerif4[opsz,wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/SourceSerif4%5Bopsz%2Cwght%5D.ttf"
+    },
+    {
+     "filename": "fonts/Inter[opsz,wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/Inter%5Bopsz%2Cwght%5D.ttf"
+    }
+   ],
    "k_id": "K2_Q3",
    "k_label": "Brand-system compliance",
    "origin": "pilot_typography_2026_09_30",
@@ -3723,7 +4486,7 @@
    "check_id": "PHOTO-26/collection-spread/H042",
    "type": "human",
    "output_reference": "deliverables/collection-spread.pdf",
-   "check": "collection-spread.pdf: body text uses Publico Text Roman (when present).",
+   "check": "collection-spread.pdf: body text uses Source Serif 4 Regular (when present).",
    "answer_type": "yes_no",
    "allowed_answers": [
     "Yes",
@@ -3732,17 +4495,30 @@
    "pass_answer": "Yes",
    "answer": null,
    "status": "not_assessed",
-   "source_statement": "collection-spread.pdf: body text uses Publico Text Roman (when present).",
+   "source_statement": "collection-spread.pdf: body text uses Source Serif 4 Regular (when present).",
    "evidence_reference": "Current brand typography; use the authored font settings for exact sizes, tracking and variable-font axes. A raster preview alone does not prove those settings. If evidence is unavailable, leave this check unassessed.",
    "artifact_name": "Autumn interiors collection spread",
    "artifact_file": "collection-spread.pdf",
-   "requirement": "collection-spread.pdf: body text uses Publico Text Roman (when present).",
-   "pass_condition": "collection-spread.pdf: body text uses Publico Text Roman (when present).",
-   "reference_assets": [],
+   "requirement": "collection-spread.pdf: body text uses Source Serif 4 Regular (when present).",
+   "pass_condition": "collection-spread.pdf: body text uses Source Serif 4 Regular (when present).",
+   "reference_assets": [
+    {
+     "filename": "fonts/BarlowCondensed-Medium.ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/BarlowCondensed-Medium.ttf"
+    },
+    {
+     "filename": "fonts/SourceSerif4[opsz,wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/SourceSerif4%5Bopsz%2Cwght%5D.ttf"
+    },
+    {
+     "filename": "fonts/Inter[opsz,wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/Inter%5Bopsz%2Cwght%5D.ttf"
+    }
+   ],
    "k_id": "K2_Q3",
    "k_label": "Brand-system compliance",
    "origin": "pilot_typography_2026_09_30",
-   "revision": "pilot_typography_2026_09_30",
+   "revision": "pilot13_inputs_2026_10_14",
    "typography_key": "body text:face",
    "platform_priority": true
   },
@@ -3767,7 +4543,20 @@
    "artifact_file": "collection-spread.pdf",
    "requirement": "collection-spread.pdf: body text has font size 10 pt (when present).",
    "pass_condition": "collection-spread.pdf: body text has font size 10 pt (when present).",
-   "reference_assets": [],
+   "reference_assets": [
+    {
+     "filename": "fonts/BarlowCondensed-Medium.ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/BarlowCondensed-Medium.ttf"
+    },
+    {
+     "filename": "fonts/SourceSerif4[opsz,wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/SourceSerif4%5Bopsz%2Cwght%5D.ttf"
+    },
+    {
+     "filename": "fonts/Inter[opsz,wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/Inter%5Bopsz%2Cwght%5D.ttf"
+    }
+   ],
    "k_id": "K2_Q3",
    "k_label": "Brand-system compliance",
    "origin": "pilot_typography_2026_09_30",
@@ -3796,7 +4585,20 @@
    "artifact_file": "collection-spread.pdf",
    "requirement": "collection-spread.pdf: body text has 15 pt leading on multiline text (when present).",
    "pass_condition": "collection-spread.pdf: body text has 15 pt leading on multiline text (when present).",
-   "reference_assets": [],
+   "reference_assets": [
+    {
+     "filename": "fonts/BarlowCondensed-Medium.ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/BarlowCondensed-Medium.ttf"
+    },
+    {
+     "filename": "fonts/SourceSerif4[opsz,wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/SourceSerif4%5Bopsz%2Cwght%5D.ttf"
+    },
+    {
+     "filename": "fonts/Inter[opsz,wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/Inter%5Bopsz%2Cwght%5D.ttf"
+    }
+   ],
    "k_id": "K2_Q3",
    "k_label": "Brand-system compliance",
    "origin": "pilot_typography_2026_09_30",
@@ -3825,7 +4627,20 @@
    "artifact_file": "collection-spread.pdf",
    "requirement": "collection-spread.pdf: body text uses tracking +0/1000 em (when present).",
    "pass_condition": "collection-spread.pdf: body text uses tracking +0/1000 em (when present).",
-   "reference_assets": [],
+   "reference_assets": [
+    {
+     "filename": "fonts/BarlowCondensed-Medium.ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/BarlowCondensed-Medium.ttf"
+    },
+    {
+     "filename": "fonts/SourceSerif4[opsz,wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/SourceSerif4%5Bopsz%2Cwght%5D.ttf"
+    },
+    {
+     "filename": "fonts/Inter[opsz,wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/Inter%5Bopsz%2Cwght%5D.ttf"
+    }
+   ],
    "k_id": "K2_Q3",
    "k_label": "Brand-system compliance",
    "origin": "pilot_typography_2026_09_30",
@@ -3839,7 +4654,7 @@
    "check_id": "PHOTO-26/collection-spread/H046",
    "type": "human",
    "output_reference": "deliverables/collection-spread.pdf",
-   "check": "collection-spread.pdf: price/dimension/care text uses Graphik Regular (when present).",
+   "check": "collection-spread.pdf: price/dimension/care text uses Inter Regular (when present).",
    "answer_type": "yes_no",
    "allowed_answers": [
     "Yes",
@@ -3848,17 +4663,30 @@
    "pass_answer": "Yes",
    "answer": null,
    "status": "not_assessed",
-   "source_statement": "collection-spread.pdf: price/dimension/care text uses Graphik Regular (when present).",
+   "source_statement": "collection-spread.pdf: price/dimension/care text uses Inter Regular (when present).",
    "evidence_reference": "Current brand typography; use the authored font settings for exact sizes, tracking and variable-font axes. A raster preview alone does not prove those settings. If evidence is unavailable, leave this check unassessed.",
    "artifact_name": "Autumn interiors collection spread",
    "artifact_file": "collection-spread.pdf",
-   "requirement": "collection-spread.pdf: price/dimension/care text uses Graphik Regular (when present).",
-   "pass_condition": "collection-spread.pdf: price/dimension/care text uses Graphik Regular (when present).",
-   "reference_assets": [],
+   "requirement": "collection-spread.pdf: price/dimension/care text uses Inter Regular (when present).",
+   "pass_condition": "collection-spread.pdf: price/dimension/care text uses Inter Regular (when present).",
+   "reference_assets": [
+    {
+     "filename": "fonts/BarlowCondensed-Medium.ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/BarlowCondensed-Medium.ttf"
+    },
+    {
+     "filename": "fonts/SourceSerif4[opsz,wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/SourceSerif4%5Bopsz%2Cwght%5D.ttf"
+    },
+    {
+     "filename": "fonts/Inter[opsz,wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/Inter%5Bopsz%2Cwght%5D.ttf"
+    }
+   ],
    "k_id": "K2_Q3",
    "k_label": "Brand-system compliance",
    "origin": "pilot_typography_2026_09_30",
-   "revision": "pilot_typography_2026_09_30",
+   "revision": "pilot13_inputs_2026_10_14",
    "typography_key": "price/dimension/care text:face",
    "platform_priority": true
   },
@@ -3883,7 +4711,20 @@
    "artifact_file": "collection-spread.pdf",
    "requirement": "collection-spread.pdf: price/dimension/care text has font size 8.5 pt (when present).",
    "pass_condition": "collection-spread.pdf: price/dimension/care text has font size 8.5 pt (when present).",
-   "reference_assets": [],
+   "reference_assets": [
+    {
+     "filename": "fonts/BarlowCondensed-Medium.ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/BarlowCondensed-Medium.ttf"
+    },
+    {
+     "filename": "fonts/SourceSerif4[opsz,wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/SourceSerif4%5Bopsz%2Cwght%5D.ttf"
+    },
+    {
+     "filename": "fonts/Inter[opsz,wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/Inter%5Bopsz%2Cwght%5D.ttf"
+    }
+   ],
    "k_id": "K2_Q3",
    "k_label": "Brand-system compliance",
    "origin": "pilot_typography_2026_09_30",
@@ -3912,7 +4753,20 @@
    "artifact_file": "collection-spread.pdf",
    "requirement": "collection-spread.pdf: price/dimension/care text has 12 pt leading on multiline text (when present).",
    "pass_condition": "collection-spread.pdf: price/dimension/care text has 12 pt leading on multiline text (when present).",
-   "reference_assets": [],
+   "reference_assets": [
+    {
+     "filename": "fonts/BarlowCondensed-Medium.ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/BarlowCondensed-Medium.ttf"
+    },
+    {
+     "filename": "fonts/SourceSerif4[opsz,wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/SourceSerif4%5Bopsz%2Cwght%5D.ttf"
+    },
+    {
+     "filename": "fonts/Inter[opsz,wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/Inter%5Bopsz%2Cwght%5D.ttf"
+    }
+   ],
    "k_id": "K2_Q3",
    "k_label": "Brand-system compliance",
    "origin": "pilot_typography_2026_09_30",
@@ -3941,7 +4795,20 @@
    "artifact_file": "collection-spread.pdf",
    "requirement": "collection-spread.pdf: price/dimension/care text uses tracking +20/1000 em (when present).",
    "pass_condition": "collection-spread.pdf: price/dimension/care text uses tracking +20/1000 em (when present).",
-   "reference_assets": [],
+   "reference_assets": [
+    {
+     "filename": "fonts/BarlowCondensed-Medium.ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/BarlowCondensed-Medium.ttf"
+    },
+    {
+     "filename": "fonts/SourceSerif4[opsz,wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/SourceSerif4%5Bopsz%2Cwght%5D.ttf"
+    },
+    {
+     "filename": "fonts/Inter[opsz,wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/Inter%5Bopsz%2Cwght%5D.ttf"
+    }
+   ],
    "k_id": "K2_Q3",
    "k_label": "Brand-system compliance",
    "origin": "pilot_typography_2026_09_30",
@@ -3955,7 +4822,7 @@
    "check_id": "PHOTO-26/wholesale-presentation/H036",
    "type": "human",
    "output_reference": "deliverables/wholesale-presentation.pdf",
-   "check": "wholesale-presentation.pdf: product name/main heading uses Druk Medium capitals (when present).",
+   "check": "wholesale-presentation.pdf: product name/main heading uses Barlow Condensed Medium capitals (when present).",
    "answer_type": "yes_no",
    "allowed_answers": [
     "Yes",
@@ -3964,17 +4831,30 @@
    "pass_answer": "Yes",
    "answer": null,
    "status": "not_assessed",
-   "source_statement": "wholesale-presentation.pdf: product name/main heading uses Druk Medium capitals (when present).",
+   "source_statement": "wholesale-presentation.pdf: product name/main heading uses Barlow Condensed Medium capitals (when present).",
    "evidence_reference": "Current brand typography; use the authored font settings for exact sizes, tracking and variable-font axes. A raster preview alone does not prove those settings. If evidence is unavailable, leave this check unassessed.",
    "artifact_name": "Interiors wholesale presentation",
    "artifact_file": "wholesale-presentation.pdf",
-   "requirement": "wholesale-presentation.pdf: product name/main heading uses Druk Medium capitals (when present).",
-   "pass_condition": "wholesale-presentation.pdf: product name/main heading uses Druk Medium capitals (when present).",
-   "reference_assets": [],
+   "requirement": "wholesale-presentation.pdf: product name/main heading uses Barlow Condensed Medium capitals (when present).",
+   "pass_condition": "wholesale-presentation.pdf: product name/main heading uses Barlow Condensed Medium capitals (when present).",
+   "reference_assets": [
+    {
+     "filename": "fonts/BarlowCondensed-Medium.ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/BarlowCondensed-Medium.ttf"
+    },
+    {
+     "filename": "fonts/SourceSerif4[opsz,wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/SourceSerif4%5Bopsz%2Cwght%5D.ttf"
+    },
+    {
+     "filename": "fonts/Inter[opsz,wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/Inter%5Bopsz%2Cwght%5D.ttf"
+    }
+   ],
    "k_id": "K2_Q3",
    "k_label": "Brand-system compliance",
    "origin": "pilot_typography_2026_09_30",
-   "revision": "pilot_typography_2026_09_30",
+   "revision": "pilot13_inputs_2026_10_14",
    "typography_key": "product name/main heading:face",
    "platform_priority": true
   },
@@ -3999,7 +4879,20 @@
    "artifact_file": "wholesale-presentation.pdf",
    "requirement": "wholesale-presentation.pdf: product name/main heading has font size 13 pt (when present).",
    "pass_condition": "wholesale-presentation.pdf: product name/main heading has font size 13 pt (when present).",
-   "reference_assets": [],
+   "reference_assets": [
+    {
+     "filename": "fonts/BarlowCondensed-Medium.ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/BarlowCondensed-Medium.ttf"
+    },
+    {
+     "filename": "fonts/SourceSerif4[opsz,wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/SourceSerif4%5Bopsz%2Cwght%5D.ttf"
+    },
+    {
+     "filename": "fonts/Inter[opsz,wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/Inter%5Bopsz%2Cwght%5D.ttf"
+    }
+   ],
    "k_id": "K2_Q3",
    "k_label": "Brand-system compliance",
    "origin": "pilot_typography_2026_09_30",
@@ -4028,7 +4921,20 @@
    "artifact_file": "wholesale-presentation.pdf",
    "requirement": "wholesale-presentation.pdf: product name/main heading has 15 pt leading on multiline text (when present).",
    "pass_condition": "wholesale-presentation.pdf: product name/main heading has 15 pt leading on multiline text (when present).",
-   "reference_assets": [],
+   "reference_assets": [
+    {
+     "filename": "fonts/BarlowCondensed-Medium.ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/BarlowCondensed-Medium.ttf"
+    },
+    {
+     "filename": "fonts/SourceSerif4[opsz,wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/SourceSerif4%5Bopsz%2Cwght%5D.ttf"
+    },
+    {
+     "filename": "fonts/Inter[opsz,wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/Inter%5Bopsz%2Cwght%5D.ttf"
+    }
+   ],
    "k_id": "K2_Q3",
    "k_label": "Brand-system compliance",
    "origin": "pilot_typography_2026_09_30",
@@ -4057,7 +4963,20 @@
    "artifact_file": "wholesale-presentation.pdf",
    "requirement": "wholesale-presentation.pdf: product name/main heading uses tracking +200/1000 em (when present).",
    "pass_condition": "wholesale-presentation.pdf: product name/main heading uses tracking +200/1000 em (when present).",
-   "reference_assets": [],
+   "reference_assets": [
+    {
+     "filename": "fonts/BarlowCondensed-Medium.ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/BarlowCondensed-Medium.ttf"
+    },
+    {
+     "filename": "fonts/SourceSerif4[opsz,wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/SourceSerif4%5Bopsz%2Cwght%5D.ttf"
+    },
+    {
+     "filename": "fonts/Inter[opsz,wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/Inter%5Bopsz%2Cwght%5D.ttf"
+    }
+   ],
    "k_id": "K2_Q3",
    "k_label": "Brand-system compliance",
    "origin": "pilot_typography_2026_09_30",
@@ -4071,7 +4990,7 @@
    "check_id": "PHOTO-26/wholesale-presentation/H040",
    "type": "human",
    "output_reference": "deliverables/wholesale-presentation.pdf",
-   "check": "wholesale-presentation.pdf: secondary heading uses Druk Medium capitals (when present).",
+   "check": "wholesale-presentation.pdf: secondary heading uses Barlow Condensed Medium capitals (when present).",
    "answer_type": "yes_no",
    "allowed_answers": [
     "Yes",
@@ -4080,17 +4999,30 @@
    "pass_answer": "Yes",
    "answer": null,
    "status": "not_assessed",
-   "source_statement": "wholesale-presentation.pdf: secondary heading uses Druk Medium capitals (when present).",
+   "source_statement": "wholesale-presentation.pdf: secondary heading uses Barlow Condensed Medium capitals (when present).",
    "evidence_reference": "Current brand typography; use the authored font settings for exact sizes, tracking and variable-font axes. A raster preview alone does not prove those settings. If evidence is unavailable, leave this check unassessed.",
    "artifact_name": "Interiors wholesale presentation",
    "artifact_file": "wholesale-presentation.pdf",
-   "requirement": "wholesale-presentation.pdf: secondary heading uses Druk Medium capitals (when present).",
-   "pass_condition": "wholesale-presentation.pdf: secondary heading uses Druk Medium capitals (when present).",
-   "reference_assets": [],
+   "requirement": "wholesale-presentation.pdf: secondary heading uses Barlow Condensed Medium capitals (when present).",
+   "pass_condition": "wholesale-presentation.pdf: secondary heading uses Barlow Condensed Medium capitals (when present).",
+   "reference_assets": [
+    {
+     "filename": "fonts/BarlowCondensed-Medium.ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/BarlowCondensed-Medium.ttf"
+    },
+    {
+     "filename": "fonts/SourceSerif4[opsz,wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/SourceSerif4%5Bopsz%2Cwght%5D.ttf"
+    },
+    {
+     "filename": "fonts/Inter[opsz,wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/Inter%5Bopsz%2Cwght%5D.ttf"
+    }
+   ],
    "k_id": "K2_Q3",
    "k_label": "Brand-system compliance",
    "origin": "pilot_typography_2026_09_30",
-   "revision": "pilot_typography_2026_09_30",
+   "revision": "pilot13_inputs_2026_10_14",
    "typography_key": "secondary heading:face",
    "platform_priority": true
   },
@@ -4115,7 +5047,20 @@
    "artifact_file": "wholesale-presentation.pdf",
    "requirement": "wholesale-presentation.pdf: secondary heading has font size 11 pt (when present).",
    "pass_condition": "wholesale-presentation.pdf: secondary heading has font size 11 pt (when present).",
-   "reference_assets": [],
+   "reference_assets": [
+    {
+     "filename": "fonts/BarlowCondensed-Medium.ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/BarlowCondensed-Medium.ttf"
+    },
+    {
+     "filename": "fonts/SourceSerif4[opsz,wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/SourceSerif4%5Bopsz%2Cwght%5D.ttf"
+    },
+    {
+     "filename": "fonts/Inter[opsz,wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/Inter%5Bopsz%2Cwght%5D.ttf"
+    }
+   ],
    "k_id": "K2_Q3",
    "k_label": "Brand-system compliance",
    "origin": "pilot_typography_2026_09_30",
@@ -4144,7 +5089,20 @@
    "artifact_file": "wholesale-presentation.pdf",
    "requirement": "wholesale-presentation.pdf: secondary heading has 13 pt leading on multiline text (when present).",
    "pass_condition": "wholesale-presentation.pdf: secondary heading has 13 pt leading on multiline text (when present).",
-   "reference_assets": [],
+   "reference_assets": [
+    {
+     "filename": "fonts/BarlowCondensed-Medium.ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/BarlowCondensed-Medium.ttf"
+    },
+    {
+     "filename": "fonts/SourceSerif4[opsz,wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/SourceSerif4%5Bopsz%2Cwght%5D.ttf"
+    },
+    {
+     "filename": "fonts/Inter[opsz,wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/Inter%5Bopsz%2Cwght%5D.ttf"
+    }
+   ],
    "k_id": "K2_Q3",
    "k_label": "Brand-system compliance",
    "origin": "pilot_typography_2026_09_30",
@@ -4173,7 +5131,20 @@
    "artifact_file": "wholesale-presentation.pdf",
    "requirement": "wholesale-presentation.pdf: secondary heading uses tracking +160/1000 em (when present).",
    "pass_condition": "wholesale-presentation.pdf: secondary heading uses tracking +160/1000 em (when present).",
-   "reference_assets": [],
+   "reference_assets": [
+    {
+     "filename": "fonts/BarlowCondensed-Medium.ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/BarlowCondensed-Medium.ttf"
+    },
+    {
+     "filename": "fonts/SourceSerif4[opsz,wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/SourceSerif4%5Bopsz%2Cwght%5D.ttf"
+    },
+    {
+     "filename": "fonts/Inter[opsz,wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/Inter%5Bopsz%2Cwght%5D.ttf"
+    }
+   ],
    "k_id": "K2_Q3",
    "k_label": "Brand-system compliance",
    "origin": "pilot_typography_2026_09_30",
@@ -4187,7 +5158,7 @@
    "check_id": "PHOTO-26/wholesale-presentation/H044",
    "type": "human",
    "output_reference": "deliverables/wholesale-presentation.pdf",
-   "check": "wholesale-presentation.pdf: body text uses Publico Text Roman (when present).",
+   "check": "wholesale-presentation.pdf: body text uses Source Serif 4 Regular (when present).",
    "answer_type": "yes_no",
    "allowed_answers": [
     "Yes",
@@ -4196,17 +5167,30 @@
    "pass_answer": "Yes",
    "answer": null,
    "status": "not_assessed",
-   "source_statement": "wholesale-presentation.pdf: body text uses Publico Text Roman (when present).",
+   "source_statement": "wholesale-presentation.pdf: body text uses Source Serif 4 Regular (when present).",
    "evidence_reference": "Current brand typography; use the authored font settings for exact sizes, tracking and variable-font axes. A raster preview alone does not prove those settings. If evidence is unavailable, leave this check unassessed.",
    "artifact_name": "Interiors wholesale presentation",
    "artifact_file": "wholesale-presentation.pdf",
-   "requirement": "wholesale-presentation.pdf: body text uses Publico Text Roman (when present).",
-   "pass_condition": "wholesale-presentation.pdf: body text uses Publico Text Roman (when present).",
-   "reference_assets": [],
+   "requirement": "wholesale-presentation.pdf: body text uses Source Serif 4 Regular (when present).",
+   "pass_condition": "wholesale-presentation.pdf: body text uses Source Serif 4 Regular (when present).",
+   "reference_assets": [
+    {
+     "filename": "fonts/BarlowCondensed-Medium.ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/BarlowCondensed-Medium.ttf"
+    },
+    {
+     "filename": "fonts/SourceSerif4[opsz,wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/SourceSerif4%5Bopsz%2Cwght%5D.ttf"
+    },
+    {
+     "filename": "fonts/Inter[opsz,wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/Inter%5Bopsz%2Cwght%5D.ttf"
+    }
+   ],
    "k_id": "K2_Q3",
    "k_label": "Brand-system compliance",
    "origin": "pilot_typography_2026_09_30",
-   "revision": "pilot_typography_2026_09_30",
+   "revision": "pilot13_inputs_2026_10_14",
    "typography_key": "body text:face",
    "platform_priority": true
   },
@@ -4231,7 +5215,20 @@
    "artifact_file": "wholesale-presentation.pdf",
    "requirement": "wholesale-presentation.pdf: body text has font size 10 pt (when present).",
    "pass_condition": "wholesale-presentation.pdf: body text has font size 10 pt (when present).",
-   "reference_assets": [],
+   "reference_assets": [
+    {
+     "filename": "fonts/BarlowCondensed-Medium.ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/BarlowCondensed-Medium.ttf"
+    },
+    {
+     "filename": "fonts/SourceSerif4[opsz,wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/SourceSerif4%5Bopsz%2Cwght%5D.ttf"
+    },
+    {
+     "filename": "fonts/Inter[opsz,wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/Inter%5Bopsz%2Cwght%5D.ttf"
+    }
+   ],
    "k_id": "K2_Q3",
    "k_label": "Brand-system compliance",
    "origin": "pilot_typography_2026_09_30",
@@ -4260,7 +5257,20 @@
    "artifact_file": "wholesale-presentation.pdf",
    "requirement": "wholesale-presentation.pdf: body text has 15 pt leading on multiline text (when present).",
    "pass_condition": "wholesale-presentation.pdf: body text has 15 pt leading on multiline text (when present).",
-   "reference_assets": [],
+   "reference_assets": [
+    {
+     "filename": "fonts/BarlowCondensed-Medium.ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/BarlowCondensed-Medium.ttf"
+    },
+    {
+     "filename": "fonts/SourceSerif4[opsz,wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/SourceSerif4%5Bopsz%2Cwght%5D.ttf"
+    },
+    {
+     "filename": "fonts/Inter[opsz,wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/Inter%5Bopsz%2Cwght%5D.ttf"
+    }
+   ],
    "k_id": "K2_Q3",
    "k_label": "Brand-system compliance",
    "origin": "pilot_typography_2026_09_30",
@@ -4289,7 +5299,20 @@
    "artifact_file": "wholesale-presentation.pdf",
    "requirement": "wholesale-presentation.pdf: body text uses tracking +0/1000 em (when present).",
    "pass_condition": "wholesale-presentation.pdf: body text uses tracking +0/1000 em (when present).",
-   "reference_assets": [],
+   "reference_assets": [
+    {
+     "filename": "fonts/BarlowCondensed-Medium.ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/BarlowCondensed-Medium.ttf"
+    },
+    {
+     "filename": "fonts/SourceSerif4[opsz,wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/SourceSerif4%5Bopsz%2Cwght%5D.ttf"
+    },
+    {
+     "filename": "fonts/Inter[opsz,wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/Inter%5Bopsz%2Cwght%5D.ttf"
+    }
+   ],
    "k_id": "K2_Q3",
    "k_label": "Brand-system compliance",
    "origin": "pilot_typography_2026_09_30",
@@ -4303,7 +5326,7 @@
    "check_id": "PHOTO-26/wholesale-presentation/H048",
    "type": "human",
    "output_reference": "deliverables/wholesale-presentation.pdf",
-   "check": "wholesale-presentation.pdf: price/dimension/care text uses Graphik Regular (when present).",
+   "check": "wholesale-presentation.pdf: price/dimension/care text uses Inter Regular (when present).",
    "answer_type": "yes_no",
    "allowed_answers": [
     "Yes",
@@ -4312,17 +5335,30 @@
    "pass_answer": "Yes",
    "answer": null,
    "status": "not_assessed",
-   "source_statement": "wholesale-presentation.pdf: price/dimension/care text uses Graphik Regular (when present).",
+   "source_statement": "wholesale-presentation.pdf: price/dimension/care text uses Inter Regular (when present).",
    "evidence_reference": "Current brand typography; use the authored font settings for exact sizes, tracking and variable-font axes. A raster preview alone does not prove those settings. If evidence is unavailable, leave this check unassessed.",
    "artifact_name": "Interiors wholesale presentation",
    "artifact_file": "wholesale-presentation.pdf",
-   "requirement": "wholesale-presentation.pdf: price/dimension/care text uses Graphik Regular (when present).",
-   "pass_condition": "wholesale-presentation.pdf: price/dimension/care text uses Graphik Regular (when present).",
-   "reference_assets": [],
+   "requirement": "wholesale-presentation.pdf: price/dimension/care text uses Inter Regular (when present).",
+   "pass_condition": "wholesale-presentation.pdf: price/dimension/care text uses Inter Regular (when present).",
+   "reference_assets": [
+    {
+     "filename": "fonts/BarlowCondensed-Medium.ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/BarlowCondensed-Medium.ttf"
+    },
+    {
+     "filename": "fonts/SourceSerif4[opsz,wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/SourceSerif4%5Bopsz%2Cwght%5D.ttf"
+    },
+    {
+     "filename": "fonts/Inter[opsz,wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/Inter%5Bopsz%2Cwght%5D.ttf"
+    }
+   ],
    "k_id": "K2_Q3",
    "k_label": "Brand-system compliance",
    "origin": "pilot_typography_2026_09_30",
-   "revision": "pilot_typography_2026_09_30",
+   "revision": "pilot13_inputs_2026_10_14",
    "typography_key": "price/dimension/care text:face",
    "platform_priority": true
   },
@@ -4347,7 +5383,20 @@
    "artifact_file": "wholesale-presentation.pdf",
    "requirement": "wholesale-presentation.pdf: price/dimension/care text has font size 8.5 pt (when present).",
    "pass_condition": "wholesale-presentation.pdf: price/dimension/care text has font size 8.5 pt (when present).",
-   "reference_assets": [],
+   "reference_assets": [
+    {
+     "filename": "fonts/BarlowCondensed-Medium.ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/BarlowCondensed-Medium.ttf"
+    },
+    {
+     "filename": "fonts/SourceSerif4[opsz,wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/SourceSerif4%5Bopsz%2Cwght%5D.ttf"
+    },
+    {
+     "filename": "fonts/Inter[opsz,wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/Inter%5Bopsz%2Cwght%5D.ttf"
+    }
+   ],
    "k_id": "K2_Q3",
    "k_label": "Brand-system compliance",
    "origin": "pilot_typography_2026_09_30",
@@ -4376,7 +5425,20 @@
    "artifact_file": "wholesale-presentation.pdf",
    "requirement": "wholesale-presentation.pdf: price/dimension/care text has 12 pt leading on multiline text (when present).",
    "pass_condition": "wholesale-presentation.pdf: price/dimension/care text has 12 pt leading on multiline text (when present).",
-   "reference_assets": [],
+   "reference_assets": [
+    {
+     "filename": "fonts/BarlowCondensed-Medium.ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/BarlowCondensed-Medium.ttf"
+    },
+    {
+     "filename": "fonts/SourceSerif4[opsz,wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/SourceSerif4%5Bopsz%2Cwght%5D.ttf"
+    },
+    {
+     "filename": "fonts/Inter[opsz,wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/Inter%5Bopsz%2Cwght%5D.ttf"
+    }
+   ],
    "k_id": "K2_Q3",
    "k_label": "Brand-system compliance",
    "origin": "pilot_typography_2026_09_30",
@@ -4405,13 +5467,164 @@
    "artifact_file": "wholesale-presentation.pdf",
    "requirement": "wholesale-presentation.pdf: price/dimension/care text uses tracking +20/1000 em (when present).",
    "pass_condition": "wholesale-presentation.pdf: price/dimension/care text uses tracking +20/1000 em (when present).",
-   "reference_assets": [],
+   "reference_assets": [
+    {
+     "filename": "fonts/BarlowCondensed-Medium.ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/BarlowCondensed-Medium.ttf"
+    },
+    {
+     "filename": "fonts/SourceSerif4[opsz,wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/SourceSerif4%5Bopsz%2Cwght%5D.ttf"
+    },
+    {
+     "filename": "fonts/Inter[opsz,wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/Inter%5Bopsz%2Cwght%5D.ttf"
+    }
+   ],
    "k_id": "K2_Q3",
    "k_label": "Brand-system compliance",
    "origin": "pilot_typography_2026_09_30",
    "revision": "pilot_typography_2026_09_30",
    "typography_key": "price/dimension/care text:tracking",
    "platform_priority": false
+  },
+  {
+   "task_id": "PHOTO-26",
+   "output_id": "collection-spread",
+   "check_id": "PHOTO-26/collection-spread/R13-pdf-profile",
+   "type": "human",
+   "output_reference": "deliverables/collection-spread.pdf",
+   "artifact_name": "Autumn interiors collection spread",
+   "artifact_file": "collection-spread.pdf",
+   "check": "collection-spread.pdf: is exported for sRGB screen viewing, not as a CMYK press master.",
+   "source_statement": "collection-spread.pdf: is exported for sRGB screen viewing, not as a CMYK press master.",
+   "requirement": "collection-spread.pdf: is exported for sRGB screen viewing, not as a CMYK press master.",
+   "pass_condition": "collection-spread.pdf: is exported for sRGB screen viewing, not as a CMYK press master.",
+   "answer_type": "yes_no",
+   "allowed_answers": [
+    "Yes",
+    "No"
+   ],
+   "pass_answer": "Yes",
+   "answer": null,
+   "status": "not_assessed",
+   "reference_assets": [],
+   "revision": "pilot13_inputs_2026_10_14",
+   "origin": "pilot13_inputs_2026_10_14",
+   "k_id": "K1_Q2",
+   "k_label": "Export specification",
+   "evidence_reference": "Current brief and supplied assets. Exact font settings require authored-source or embedded-font evidence; do not infer them from a raster preview.",
+   "platform_priority": true
+  },
+  {
+   "task_id": "PHOTO-26",
+   "output_id": "collection-spread",
+   "check_id": "PHOTO-26/collection-spread/R13-pdf-fonts",
+   "type": "human",
+   "output_reference": "deliverables/collection-spread.pdf",
+   "artifact_name": "Autumn interiors collection spread",
+   "artifact_file": "collection-spread.pdf",
+   "check": "collection-spread.pdf: has no unembedded font dependency.",
+   "source_statement": "collection-spread.pdf: has no unembedded font dependency.",
+   "requirement": "collection-spread.pdf: has no unembedded font dependency.",
+   "pass_condition": "collection-spread.pdf: has no unembedded font dependency.",
+   "answer_type": "yes_no",
+   "allowed_answers": [
+    "Yes",
+    "No"
+   ],
+   "pass_answer": "Yes",
+   "answer": null,
+   "status": "not_assessed",
+   "reference_assets": [
+    {
+     "filename": "fonts/BarlowCondensed-Medium.ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/BarlowCondensed-Medium.ttf"
+    },
+    {
+     "filename": "fonts/SourceSerif4[opsz,wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/SourceSerif4%5Bopsz%2Cwght%5D.ttf"
+    },
+    {
+     "filename": "fonts/Inter[opsz,wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/Inter%5Bopsz%2Cwght%5D.ttf"
+    }
+   ],
+   "revision": "pilot13_inputs_2026_10_14",
+   "origin": "pilot13_inputs_2026_10_14",
+   "k_id": "K1_Q2",
+   "k_label": "Export specification",
+   "evidence_reference": "Current brief and supplied assets. Exact font settings require authored-source or embedded-font evidence; do not infer them from a raster preview.",
+   "platform_priority": true
+  },
+  {
+   "task_id": "PHOTO-26",
+   "output_id": "wholesale-presentation",
+   "check_id": "PHOTO-26/wholesale-presentation/R13-pdf-profile",
+   "type": "human",
+   "output_reference": "deliverables/wholesale-presentation.pdf",
+   "artifact_name": "Interiors wholesale presentation",
+   "artifact_file": "wholesale-presentation.pdf",
+   "check": "wholesale-presentation.pdf: is exported for sRGB screen viewing, not as a CMYK press master.",
+   "source_statement": "wholesale-presentation.pdf: is exported for sRGB screen viewing, not as a CMYK press master.",
+   "requirement": "wholesale-presentation.pdf: is exported for sRGB screen viewing, not as a CMYK press master.",
+   "pass_condition": "wholesale-presentation.pdf: is exported for sRGB screen viewing, not as a CMYK press master.",
+   "answer_type": "yes_no",
+   "allowed_answers": [
+    "Yes",
+    "No"
+   ],
+   "pass_answer": "Yes",
+   "answer": null,
+   "status": "not_assessed",
+   "reference_assets": [],
+   "revision": "pilot13_inputs_2026_10_14",
+   "origin": "pilot13_inputs_2026_10_14",
+   "k_id": "K1_Q2",
+   "k_label": "Export specification",
+   "evidence_reference": "Current brief and supplied assets. Exact font settings require authored-source or embedded-font evidence; do not infer them from a raster preview.",
+   "platform_priority": true
+  },
+  {
+   "task_id": "PHOTO-26",
+   "output_id": "wholesale-presentation",
+   "check_id": "PHOTO-26/wholesale-presentation/R13-pdf-fonts",
+   "type": "human",
+   "output_reference": "deliverables/wholesale-presentation.pdf",
+   "artifact_name": "Interiors wholesale presentation",
+   "artifact_file": "wholesale-presentation.pdf",
+   "check": "wholesale-presentation.pdf: has no unembedded font dependency.",
+   "source_statement": "wholesale-presentation.pdf: has no unembedded font dependency.",
+   "requirement": "wholesale-presentation.pdf: has no unembedded font dependency.",
+   "pass_condition": "wholesale-presentation.pdf: has no unembedded font dependency.",
+   "answer_type": "yes_no",
+   "allowed_answers": [
+    "Yes",
+    "No"
+   ],
+   "pass_answer": "Yes",
+   "answer": null,
+   "status": "not_assessed",
+   "reference_assets": [
+    {
+     "filename": "fonts/BarlowCondensed-Medium.ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/BarlowCondensed-Medium.ttf"
+    },
+    {
+     "filename": "fonts/SourceSerif4[opsz,wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/SourceSerif4%5Bopsz%2Cwght%5D.ttf"
+    },
+    {
+     "filename": "fonts/Inter[opsz,wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/Inter%5Bopsz%2Cwght%5D.ttf"
+    }
+   ],
+   "revision": "pilot13_inputs_2026_10_14",
+   "origin": "pilot13_inputs_2026_10_14",
+   "k_id": "K1_Q2",
+   "k_label": "Export specification",
+   "evidence_reference": "Current brief and supplied assets. Exact font settings require authored-source or embedded-font evidence; do not infer them from a raster preview.",
+   "platform_priority": true
   }
  ],
  "evaluation": {
@@ -4440,5 +5653,16 @@
   "previous_deliverables_archived": true,
   "brand_amendments": []
  },
- "record_exclusions": []
+ "record_exclusions": [],
+ "input_revision": {
+  "id": "pilot13_inputs_2026_10_14",
+  "previous_run_results": "Historical runs are preserved and have not been re-evaluated against these revised inputs.",
+  "changes": [
+   "Deliverable purposes and export settings",
+   "Downloadable licensed fonts",
+   "Explicit logo scope",
+   "Fixed requirements and creative choices",
+   "Task-level Decision Quality evaluation"
+  ]
+ }
 }

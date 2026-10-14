@@ -7,17 +7,20 @@ import html
 import json
 import re
 import subprocess
+import shutil
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 TASKS = ROOT / "docs/gatsby-v7/tasks"
 OUT = ROOT / "docs/gatsby-v7/annotation-pilot"
 RUN_SOURCES = ROOT.parents[1] / "benchmark_runs/pilot_v7_hybrid_2026-09-28"
-SHEET_EXPORT = ROOT.parents[1] / "benchmark_runs/annotation_pilot_2026-09-29/sheet_rows.json"
+REFRESH = ROOT.parents[1] / "reviews/pilot13-refresh-2026-10-14"
+SHEET_EXPORT = REFRESH / "sheet_rows.json"
 BASE_URL = "https://dhigdec.github.io/creative-ai-benchmark/gatsby-v7/annotation-pilot/"
 TASK_IDS = [
     "PHOTO-04", "PHOTO-06", "PHOTO-08", "PHOTO-10", "PHOTO-19",
     "PHOTO-20", "PHOTO-24", "PHOTO-26", "PHOTO-28", "LAYOUT-15",
+    "LAYOUT-12", "VECTOR-04", "MOTION-11",
 ]
 RUBRICS = [
     "1. Completeness", "2. Feasibility Integrity", "3. Realism / Difficulty",
@@ -64,16 +67,28 @@ def type_is_serif(face: str) -> bool:
     )) and not bool(re.search(r"sans", face, re.IGNORECASE))
 
 
+def font_css(brand: dict) -> str:
+    return "\n".join(
+        '@font-face{font-family:"brand-' + font['family'] + '";src:url("' + font['url'] + '") format("truetype");font-weight:'
+        + str(int(font['weight_range'][0])) + ' ' + str(int(font['weight_range'][-1])) + ';font-style:normal;font-display:swap;}'
+        for font in brand.get('font_files', [])
+    )
+
+
+def font_style(row: dict) -> str:
+    return esc('font-family:"brand-' + row.get('font_family', 'Inter') + '",sans-serif;font-weight:' + str(row.get('font_weight', 400)) + ';font-synthesis:none;')
+
+
 def render_type_system(brand: dict) -> str:
     system = brand["type_system"]
     sizes = [float(match.group()) for row in system["scale"]
              if (match := re.search(r"\d+(?:\.\d+)?", str(row.get("size", ""))))]
     largest = max(sizes, default=1)
-    faces = list(dict.fromkeys(filter(None, (system.get("display_face"), system.get("text_face")))))
+    faces = list(dict.fromkeys(f['family'] for f in brand.get('font_files', [])))
     parts = [
         '<div class="tsys"><p class="tsys-eyebrow">// Type system</p>',
         '<div class="tsys-head"><div>',
-        f'<p class="tsys-name{" serif" if type_is_serif(system.get("display_face", "")) else ""}">'
+        f'<p class="tsys-name" style="{font_style(system["scale"][0])}">'
         f'{esc(system.get("brand_name") or brand["brand_name"])}</p>',
         f'<p class="tsys-tag">{esc(system.get("tagline", ""))}</p>',
         '</div><div class="tsys-faces">',
@@ -81,11 +96,11 @@ def render_type_system(brand: dict) -> str:
     for face in faces:
         serif = " serif" if type_is_serif(face) else ""
         parts.append(
-            f'<div><div class="tsys-aa{serif}">Aa</div>'
+            f'<div><div class="tsys-aa{serif}" style="{font_style({"font_family": face})}">Aa</div>'
             f'<div class="tsys-facename">{esc(face)}</div></div>'
         )
     parts.append('</div></div>')
-    for key in ("specimen_note", "application", "measurement_notes"):
+    for key in ("specimen_note", "application", "measurement_notes", "font_access"):
         if system.get(key):
             parts.append(f'<p class="tsys-note">{esc(system[key])}</p>')
     for row in system["scale"]:
@@ -102,7 +117,7 @@ def render_type_system(brand: dict) -> str:
             f'<div class="tsys-meta">{esc(row.get("family", ""))} · '
             f'{esc(row.get("size", ""))}{leading}<br>'
             f'{esc(row.get("weight", ""))}{tracking}</div></div>'
-            f'<div><div class="tsys-sample{serif}" style="font-size:{preview_size:.1f}px">'
+            f'<div><div class="tsys-sample{serif}" style="font-size:{preview_size:.1f}px;{font_style(row)}">'
             f'{esc(row.get("sample", ""))}</div>'
             f'<div class="tsys-note">{esc(row.get("note", ""))}</div></div></div>'
         )
@@ -161,12 +176,16 @@ def source_preview(task_id: str, asset: dict) -> str:
     if suffix in {".jpg", ".jpeg", ".png", ".webp", ".gif", ".svg"}:
         return f'<img loading="lazy" src="{url}" alt="Preview of {esc(name)}">'
     local_file = RUN_SOURCES / task_id / "source" / name
+    for candidate in (REFRESH / 'upload' / task_id / name, REFRESH / 'sources' / task_id / name):
+        if candidate.is_file():
+            local_file = candidate
+            break
     if suffix == ".pdf" and local_file.is_file():
         preview = OUT / "previews" / f"{task_id}-{Path(name).stem}.png"
         if not preview.exists():
             preview.parent.mkdir(parents=True, exist_ok=True)
             subprocess.run(
-                ["pdftoppm", "-f", "1", "-singlefile", "-scale-to", "480",
+                [shutil.which('pdftoppm') or str(Path.home()/'.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override/pdftoppm'), "-f", "1", "-singlefile", "-scale-to", "480",
                  "-png", str(local_file), str(preview.with_suffix(""))],
                 check=True, stdout=subprocess.DEVNULL,
             )
@@ -174,6 +193,12 @@ def source_preview(task_id: str, asset: dict) -> str:
     if suffix in {".csv", ".txt"} and local_file.is_file():
         sample = "\n".join(local_file.read_text(encoding="utf-8-sig", errors="replace").splitlines()[:6])
         return f'<pre class="file-excerpt">{esc(sample[:500])}</pre>'
+    if suffix == '.ttf':
+        return f'<span class="font-preview" style="{font_style(asset)}">Aa 0123</span>'
+    if suffix in {'.mp4','.mov','.webm'}:
+        return f'<video controls preload="metadata" src="{url}" aria-label="{esc(name)}"></video>'
+    if suffix in {'.wav','.mp3','.m4a'}:
+        return f'<audio controls preload="metadata" src="{url}" aria-label="{esc(name)}"></audio>'
     return f'<span class="file-icon">{esc(suffix.lstrip(".").upper())}</span>'
 
 
@@ -188,13 +213,16 @@ def render_assets(task_id: str, assets: list[dict]) -> str:
         role = asset["role"].replace("_", " ").capitalize()
         details = f"PDF · {role} · {size}" if is_pdf else f"{role} · {size}"
         view_label = "View full PDF" if is_pdf else "Open"
+        media = Path(name).suffix.lower() in {'.mp4','.mov','.webm','.wav','.mp3','.m4a'}
+        preview = (f'<div class="asset-preview">{source_preview(task_id, asset)}</div>' if media else
+                   f'<a class="asset-preview" href="{url}" target="_blank" rel="noopener noreferrer" aria-label="Open {esc(name)} in a new tab">{source_preview(task_id, asset)}</a>')
         parts.append(
             '<article class="asset-card">'
-            f'<a class="asset-preview" href="{url}" target="_blank" rel="noopener noreferrer" '
-            f'aria-label="Open {esc(name)} in a new tab">{source_preview(task_id, asset)}</a>'
+            + preview +
             '<div class="asset-info">'
             f'<strong title="{esc(name)}">{esc(name)}</strong>'
             f'<p>{esc(details)}</p>'
+            f'<p>{esc(asset.get("description", ""))}</p>'
             '<div class="asset-actions">'
             f'<a href="{url}" target="_blank" rel="noopener noreferrer">{view_label}</a>'
             f'<a href="{url}" download="{esc(name)}" data-download>Download</a>'
@@ -220,8 +248,18 @@ def output_spec_text(spec: dict) -> str:
         parts.append(f"Keep the booking action inside these margins: {insets}")
     if "template_reference" in spec:
         parts.append(f'Template: {spec["template_reference"]}')
+    extra = {'duration_seconds':'Duration (seconds)', 'ratio':'Aspect ratio', 'audio':'Audio',
+             'frame_rate':'Frames per second', 'video_codec':'Video codec', 'pixel_format':'Pixel format',
+             'transparent':'Transparent background', 'closed_paths':'Closed vector paths'}
+    for key, title in extra.items():
+        if key in spec:
+            value = spec[key]
+            if isinstance(value, dict): value = ' to '.join(str(v) for v in value.values())
+            if isinstance(value, list): value = ' to '.join(str(v) for v in value)
+            if isinstance(value, bool): value = 'Yes' if value else 'No'
+            parts.append(f'{title}: {value}')
     handled = {"format", "width", "height", "width_mm", "height_mm", "pages",
-               "long_edge", "source_dimensions", "safe_area", "template_reference"}
+               "long_edge", "source_dimensions", "safe_area", "template_reference", *extra}
     unknown = set(spec) - handled
     if unknown:
         raise ValueError(f"Unformatted output specifications: {sorted(unknown)}")
@@ -253,6 +291,14 @@ def render_outputs(outputs: list[dict], groups: list[dict]) -> str:
         )
         if source_parts:
             parts.append(f'<p class="output-source"><strong>Source:</strong> {esc(" · ".join(source_parts))}</p>')
+        commission = output.get('commission', {})
+        if commission:
+            bullets = [f'<strong>Purpose:</strong> {esc(commission["purpose"])}',
+                       f'<strong>Placement:</strong> {esc(commission["channel"])}',
+                       f'<strong>Audience:</strong> {esc(commission["audience"])}']
+            bullets += [esc(v) for v in commission['content']]
+            bullets += [f'<strong>Export:</strong> {esc(v)}' for v in commission['export_settings']]
+            parts.append('<ul class="output-requirements">' + ''.join(f'<li>{v}</li>' for v in bullets) + '</ul>')
         parts.append("</article>")
     parts.append("</div>")
     return "".join(parts)
@@ -263,6 +309,7 @@ CSS = """
 *{box-sizing:border-box}body{margin:0}.page{max-width:1050px;margin:auto;padding:28px 32px 56px}h1,h2,h3,p{margin-top:0}h1{font-size:27px;line-height:1.2;margin:8px 0 9px}h2{font-size:20px;line-height:1.3;margin-bottom:18px}h3{font-size:16px;line-height:1.35;margin:28px 0 12px}.eyebrow{color:#59645f;font-weight:700;font-size:12px;text-transform:uppercase;letter-spacing:.08em}.subline{color:#59645f;margin-bottom:28px}.section{border-top:1px solid #dce3df;padding-top:25px;margin-top:27px}.brief-text{white-space:pre-wrap;overflow-wrap:anywhere;max-width:83ch}.brand-name{font-size:20px;font-weight:700;margin-bottom:2px}.tagline{font-style:italic;color:#51605a}.brand-facts,.detail-list{margin:0}.brand-facts>div,.detail-list>div{display:grid;grid-template-columns:minmax(150px,23%) 1fr;gap:12px;padding:10px 0;border-bottom:1px solid #edf0ed}.brand-facts dt,.detail-list dt{font-weight:700;color:#52605a}.brand-facts dd,.detail-list dd{margin:0;min-width:0}.brand-facts dd p,.detail-list dd p{margin:0}.data-list{margin:0;padding-left:18px}.palette-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.palette-item{display:flex;gap:12px;border:1px solid #e0e6e1;border-radius:6px;padding:10px;min-width:0}.palette-item .swatch{width:55px;min-width:55px;height:55px;border-radius:3px;border:1px solid #0002}.palette-item strong{display:inline-block;margin-right:6px}.palette-item code{font-size:12px;color:#57645e}.palette-item small{display:block;text-transform:uppercase;color:#66726d;font-size:11px;font-weight:700;letter-spacing:.04em}.palette-item p{font-size:13px;margin:5px 0 0}.type-system>.detail-list>div{grid-template-columns:minmax(150px,23%) 1fr}.type-system .data-list li{margin-bottom:8px}.asset-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px}.asset-card{border:1px solid #dce3df;border-radius:6px;overflow:hidden;min-width:0;background:#fff}.asset-preview{display:flex;height:190px;align-items:center;justify-content:center;background:#f2f5f3;border-bottom:1px solid #e3e8e4;overflow:hidden;color:#386951}.asset-preview img{display:block;width:100%;height:100%;object-fit:contain}.asset-info{padding:11px 12px}.asset-info strong{display:block;font-size:13px;overflow-wrap:anywhere;line-height:1.35}.asset-info p{font-size:12px;color:#65716a;margin:4px 0 9px}.asset-actions{display:flex;gap:14px}.asset-actions a{font-size:12px;color:#176348;text-decoration:underline;text-underline-offset:2px}.file-excerpt{font-size:10px;line-height:1.35;white-space:pre-wrap;overflow-wrap:anywhere;margin:0;padding:12px;width:100%;height:100%;color:#364a3e}.file-icon{font-size:24px;font-weight:700;color:#6d8577}.output-row{border:1px solid #e0e6e1;border-radius:6px;padding:13px 15px;margin-bottom:9px}.output-row>div:first-child{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 14px}.output-row strong{font-size:14px}.output-row code{font-size:12px;color:#375d4d;overflow-wrap:anywhere}.output-row small{display:block;width:100%;font-size:12px;color:#5b6760}.output-requirements{font-size:13px;padding-left:20px;margin:8px 0 0}.output-requirements li{margin:3px 0}a:focus-visible{outline:2px solid #146344;outline-offset:2px}@media(max-width:720px){.page{padding:20px 18px 40px}.asset-grid,.palette-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.brand-facts>div,.detail-list>div,.type-system>.detail-list>div{display:block}.brand-facts dt,.detail-list dt{margin-bottom:3px}.asset-preview{height:150px}}@media(max-width:470px){.asset-grid,.palette-grid{grid-template-columns:1fr}.asset-preview{height:220px}h1{font-size:23px}}
 """
 CSS += ".output-source{font-size:12px;color:#5b6760;margin:7px 0 0}"
+CSS += '.asset-preview video{width:100%;height:100%;object-fit:contain}.asset-preview audio{width:95%}.font-preview{font-size:38px}.asset-card{display:flex;flex-direction:column}.asset-info{flex:1}*{letter-spacing:0!important}'
 CSS += """
 .brief-text{line-height:1.68;color:#303b35}.brief-text::first-line{font-weight:700;font-size:17px;color:#202724}
 .page{max-width:1500px}.asset-grid{grid-template-columns:repeat(auto-fill,minmax(240px,1fr))}
@@ -335,7 +382,7 @@ def write_page(task_id: str, spec: dict, assets: list[dict], outputs: list[dict]
     brand = spec["brand_identity"]
     content = f"""<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>{esc(task_id)} · {esc(title)}</title><style>{CSS}</style></head><body>
+<title>{esc(task_id)} · {esc(title)}</title><style>{CSS}\n{font_css(brand)}</style></head><body>
 <main class="page">
 <header><h1>{esc(title)}</h1></header>
 <section class="section" aria-labelledby="brief-title"><h2 id="brief-title">Client brief</h2><div class="brief-text">{esc(spec["client_brief"])}</div></section>
@@ -382,9 +429,10 @@ def write_review_verifiers(task_id: str, verifiers: list[dict]) -> None:
 
 
 def sheet_row(index: int, task_id: str, assets: list[dict], verifiers: list[dict], outputs: list[dict]) -> list[object]:
-    asset_names = ["Brief", "Brand identity"] + [a["filename"] for a in assets]
+    asset_names = ["Brief", "Brand identity", "Typography: supplied families, weights and access"] + [a["filename"] for a in assets]
     rubrics = []
     for heading in RUBRICS:
+        scoped = ["Brief", "Brand identity"] if heading.startswith(('3.', '7.')) else asset_names
         rubrics.append({
             "side_headers": heading,
             "AcceptRejectRadio": "",
@@ -392,7 +440,7 @@ def sheet_row(index: int, task_id: str, assets: list[dict], verifiers: list[dict
                 "placeholder_assest_comment": f"What is wrong with the {name}?",
                 "asset_options": [{"label": name}],
                 "Assest_comment": "",
-            } for name in asset_names],
+            } for name in scoped],
         })
     review_checks = platform_verifiers(verifiers, outputs)
     row = [
@@ -434,6 +482,8 @@ def main() -> None:
         print(f"{task_id}: {len(assets)} assets, {len(outputs)} outputs, {row[12]}/{row[13]} platform/full checks; sheet cells {len(row[1])}/{len(row[2])} chars")
     SHEET_EXPORT.parent.mkdir(parents=True, exist_ok=True)
     SHEET_EXPORT.write_text(json.dumps(rows, ensure_ascii=False), encoding="utf-8")
+    links = ''.join(f'<li><a href="{tid}.html">{tid} - {esc(json.loads((TASKS/tid/"TASK_SPEC.json").read_text())["task_name"])}</a></li>' for tid in TASK_IDS)
+    (OUT/'index.html').write_text(f'<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Pilot task briefs</title><style>{CSS}</style><main class="page"><h1>Pilot task briefs</h1><ul>{links}</ul></main></html>')
     print(f"Sheet payload: {SHEET_EXPORT}")
 
 

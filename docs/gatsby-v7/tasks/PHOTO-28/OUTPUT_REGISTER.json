@@ -1,106 +1,142 @@
 [
- {
-  "output_id": "studio-launch",
-  "group_id": "studio-launch",
-  "name": "Studio launch-page composition",
-  "path": "deliverables/studio-launch.png",
-  "kind": "web",
-  "spec": {
-   "format": "png",
-   "width": 1440,
-   "height": 2400
+  {
+    "output_id": "studio-launch",
+    "group_id": "studio-launch",
+    "name": "Studio launch-page composition",
+    "path": "deliverables/studio-launch.png",
+    "kind": "web",
+    "spec": {
+      "format": "png",
+      "width": 1440,
+      "height": 2400
+    },
+    "source_record": null,
+    "source_image": null,
+    "required_content": [
+      "The studio location is accurate.",
+      "The class offer is clear: every class we teach, each with its price from roster_2027.csv.",
+      "The booking action is visible."
+    ],
+    "acceptance_requirements": [
+      "The studio location matches the approved source exactly.",
+      "The complete approved class offer is present as one unobscured content element.",
+      "The booking action remains inside the output boundaries."
+    ],
+    "expert_review_criteria": [
+      "The finishing looks polished at the delivered size.",
+      "The visual character feels like Verda Reformer Studio.",
+      "The intended reading order is clear.",
+      "The creative treatment suits the audience described in the brand brief.",
+      "The composition feels native to its stated delivery format."
+    ],
+    "record_field_policy": "The approved_values in source_record are the scoring target. raw_values are retained only for provenance and may contain known export defects.",
+    "status": "not_produced",
+    "review_name": "Verda Reformer Studio / Studio launch-page composition",
+    "commission": {
+      "purpose": "Help prospective members understand the new location, classes and booking offer.",
+      "channel": "Static website launch-page design, not coded HTML",
+      "audience": "Prospective local studio members",
+      "content": [
+        "Use at least one actual room photograph, the Calloway Row location, approved classes and prices, and a booking action.",
+        "Place the supplied Verda wordmark above the headline as a separate lockup."
+      ],
+      "export_settings": [
+        "Lossless PNG; sRGB; exact pixel dimensions."
+      ]
+    }
   },
-  "source_record": null,
-  "source_image": null,
-  "required_content": [
-   "The studio location is accurate.",
-   "The class offer is clear: every class we teach, each with its price from roster_2027.csv.",
-   "The booking action is visible."
-  ],
-  "acceptance_requirements": [
-   "The studio location matches the approved source exactly.",
-   "The complete approved class offer is present as one unobscured content element.",
-   "The booking action remains inside the output boundaries."
-  ],
-  "expert_review_criteria": [
-   "The finishing looks polished at the delivered size.",
-   "The visual character feels like Verda Reformer Studio.",
-   "The intended reading order is clear.",
-   "The creative treatment suits the audience described in the brand brief.",
-   "The composition feels native to its stated delivery format."
-  ],
-  "record_field_policy": "The approved_values in source_record are the scoring target. raw_values are retained only for provenance and may contain known export defects.",
-  "status": "not_produced",
-  "review_name": "Verda Reformer Studio / Studio launch-page composition"
- },
- {
-  "output_id": "class-feed",
-  "group_id": "class-feed",
-  "name": "Class announcement",
-  "path": "deliverables/class-feed.png",
-  "kind": "feed",
-  "spec": {
-   "format": "png",
-   "width": 1080,
-   "height": 1350
+  {
+    "output_id": "class-feed",
+    "group_id": "class-feed",
+    "name": "Class announcement",
+    "path": "deliverables/class-feed.png",
+    "kind": "feed",
+    "spec": {
+      "format": "png",
+      "width": 1080,
+      "height": 1350
+    },
+    "source_record": null,
+    "source_image": null,
+    "required_content": [
+      "The class details match the approved roster: the pictured instructor's own class, its price and its validity.",
+      "The pictured instructor is identified accurately, by the full name the roster gives for that portrait, and is cut out onto a solid Warm Off White or Sage ground."
+    ],
+    "acceptance_requirements": [
+      "The class details match the approved roster: the pictured instructor's own class, its price and its validity.",
+      "The pictured instructor identifier matches the approved source exactly."
+    ],
+    "expert_review_criteria": [
+      "The finishing looks polished at the delivered size.",
+      "The visual character feels like Verda Reformer Studio.",
+      "The intended reading order is clear.",
+      "The creative treatment suits the audience described in the brand brief.",
+      "The composition feels native to its stated delivery format."
+    ],
+    "record_field_policy": "The approved_values in source_record are the scoring target. raw_values are retained only for provenance and may contain known export defects.",
+    "status": "not_produced",
+    "review_name": "Verda Reformer Studio / Class announcement",
+    "commission": {
+      "purpose": "Promote the named instructor's class with accurate price and validity.",
+      "channel": "Instagram portrait feed",
+      "audience": "Prospective class attendees",
+      "content": [
+        "Match the pictured instructor to their full name, class, price and validity in the approved roster.",
+        "Place the instructor cutout on solid Warm Off White or Sage and include the supplied wordmark."
+      ],
+      "export_settings": [
+        "Lossless PNG; sRGB; exact pixel dimensions."
+      ]
+    }
   },
-  "source_record": null,
-  "source_image": null,
-  "required_content": [
-   "The class details match the approved roster: the pictured instructor's own class, its price and its validity.",
-   "The pictured instructor is identified accurately, by the full name the roster gives for that portrait, and is cut out onto a solid Warm Off White or Sage ground."
-  ],
-  "acceptance_requirements": [
-   "The class details match the approved roster: the pictured instructor's own class, its price and its validity.",
-   "The pictured instructor identifier matches the approved source exactly."
-  ],
-  "expert_review_criteria": [
-   "The finishing looks polished at the delivered size.",
-   "The visual character feels like Verda Reformer Studio.",
-   "The intended reading order is clear.",
-   "The creative treatment suits the audience described in the brand brief.",
-   "The composition feels native to its stated delivery format."
-  ],
-  "record_field_policy": "The approved_values in source_record are the scoring target. raw_values are retained only for provenance and may contain known export defects.",
-  "status": "not_produced",
-  "review_name": "Verda Reformer Studio / Class announcement"
- },
- {
-  "output_id": "booking-story",
-  "group_id": "booking-story",
-  "name": "Studio booking story",
-  "path": "deliverables/booking-story.png",
-  "kind": "story",
-  "spec": {
-   "format": "png",
-   "width": 1080,
-   "height": 1920,
-   "safe_area": {
-    "top": 250,
-    "bottom": 320,
-    "left": 60,
-    "right": 60
-   }
-  },
-  "source_record": null,
-  "source_image": null,
-  "required_content": [
-   "The booking action is inside the safe area.",
-   "The studio identity is readable."
-  ],
-  "acceptance_requirements": [
-   "The booking action is inside the safe area.",
-   "At the delivered dimensions, the studio identity text has no clipped characters."
-  ],
-  "expert_review_criteria": [
-   "The finishing looks polished at the delivered size.",
-   "The visual character feels like Verda Reformer Studio.",
-   "The intended reading order is clear.",
-   "The creative treatment suits the audience described in the brand brief.",
-   "The composition feels native to its stated delivery format."
-  ],
-  "record_field_policy": "The approved_values in source_record are the scoring target. raw_values are retained only for provenance and may contain known export defects.",
-  "status": "not_produced",
-  "review_name": "Verda Reformer Studio / Studio booking story"
- }
+  {
+    "output_id": "booking-story",
+    "group_id": "booking-story",
+    "name": "Studio booking story",
+    "path": "deliverables/booking-story.png",
+    "kind": "story",
+    "spec": {
+      "format": "png",
+      "width": 1080,
+      "height": 1920,
+      "safe_area": {
+        "top": 250,
+        "bottom": 320,
+        "left": 60,
+        "right": 60
+      }
+    },
+    "source_record": null,
+    "source_image": null,
+    "required_content": [
+      "The booking action is inside the safe area.",
+      "The studio identity is readable."
+    ],
+    "acceptance_requirements": [
+      "The booking action is inside the safe area.",
+      "At the delivered dimensions, the studio identity text has no clipped characters."
+    ],
+    "expert_review_criteria": [
+      "The finishing looks polished at the delivered size.",
+      "The visual character feels like Verda Reformer Studio.",
+      "The intended reading order is clear.",
+      "The creative treatment suits the audience described in the brand brief.",
+      "The composition feels native to its stated delivery format."
+    ],
+    "record_field_policy": "The approved_values in source_record are the scoring target. raw_values are retained only for provenance and may contain known export defects.",
+    "status": "not_produced",
+    "review_name": "Verda Reformer Studio / Studio booking story",
+    "commission": {
+      "purpose": "Invite prospective members to book at the new studio.",
+      "channel": "Instagram Story, static image",
+      "audience": "Prospective studio members",
+      "content": [
+        "Include the supplied studio wordmark and a clear booking action.",
+        "Keep the booking action within the exact safe-area margins listed for this file."
+      ],
+      "export_settings": [
+        "Lossless PNG; sRGB; exact pixel dimensions."
+      ]
+    }
+  }
 ]

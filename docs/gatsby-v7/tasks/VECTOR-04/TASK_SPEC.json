@@ -1,6 +1,6 @@
 {
  "schema_version": "4.1.0",
- "revision_date": "2026-09-18",
+ "revision_date": "2026-10-14",
  "new_id": "VECTOR-04",
  "task_code": "SB3-034-VEC",
  "task_name": "Meridian and Ash - Sticker artwork production masters",
@@ -14,7 +14,7 @@
   "s3_prefix": "s3://annotationprod/creative-ai-benchmark/v3.1/tasks/SB3-034-VEC__meridian-and-ash-sticker-artwork-production-masters/",
   "public_assets_prefix": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/tasks/SB3-034-VEC__meridian-and-ash-sticker-artwork-production-masters/assets/"
  },
- "client_brief": "Coffee sticker collection: recover four designs, add two, prepare the cutting sheet\n\nFour recovered designs + two new designs = one six-sticker collection for Meridian and Ash.\n\nPlease prepare\n- Recovered sticker artwork: 4 named exports. The design preserves its photographed original: meridian_window_mark.jpg for the window mark, with its painted lettering traced as painted rather than reset in a typeface, and meridian_bag_moth.jpg, meridian_bag_pourover.jpg and meridian_bag_ridgeline.jpg for bag designs 1, 2 and 3 respectively. Interior negative space remains open at 55 mm.\n- Original companion sticker: 2 named exports. The drawing belongs stylistically beside the recovered collection. Interior negative space remains open at 55 mm.\n- Separate sticker cut contour: 6 named exports. The contour is offset 2.5 mm from the artwork edge. The minimum corner radius is 3 mm. This file contains one cutting contour.\n- Transparent sticker proof: 6 named exports. The proof corresponds to its named vector artwork.\n- Sticker imposed production sheet: 1 named export. The cut contours leave at least 10 mm clear from the sheet edge. Adjacent cut contours have at least 6 mm gutter. The CutContour layer can be selected separately from the artwork.\n\nUse the supplied approved copy and factual records. Permission restrictions in the owner's notes take precedence over inclusion in a source table.\n\nUse the attached brand identity and the source files listed in the asset manifest. The brand type system's arch, ampersand and Cirka Bold rules govern newly set lettering only; the recovered window mark keeps its painted arc and ampersand exactly as painted. The output register defines exact filenames, pages, sizes and record bindings. Supporting previews are welcome but cannot replace those files.",
+ "client_brief": "Coffee sticker collection: recover four designs, add two, prepare the cutting sheet\n\nFour recovered designs + two new designs = one six-sticker collection for Meridian and Ash.\n\nPlease prepare\n- Recovered sticker artwork: 4 files. The design preserves its photographed original: meridian_window_mark.jpg for the window mark, with its painted lettering traced as painted rather than reset in a typeface, and meridian_bag_moth.jpg, meridian_bag_pourover.jpg and meridian_bag_ridgeline.jpg for bag designs 1, 2 and 3 respectively. Interior negative space remains open at 55 mm.\n- Original companion sticker: 2 files. The drawing belongs stylistically beside the recovered collection. Interior negative space remains open at 55 mm.\n- Separate sticker cut contour: 6 files. The contour is offset 2.5 mm from the artwork edge. The minimum corner radius is 3 mm. This file contains one cutting contour.\n- Transparent sticker proof: 6 files. The proof corresponds to its named vector artwork.\n- Sticker imposed production sheet: 1 file. The cut contours leave at least 10 mm clear from the sheet edge. Adjacent cut contours have at least 6 mm gutter. The CutContour layer can be selected separately from the artwork.\n\nThis commission includes reconstruction of the four photographed originals. The two companion illustrations are new designs. Set every artwork SVG to 55 mm on its long edge; the cut contour adds its 2.5 mm outward offset. The PNG proofs use a 1600 x 1600 px viewing canvas and are not a substitute for the physical-scale SVGs.\n\nSupplied identity artwork\nThis commission explicitly includes paid reconstruction of the window mark and three bag illustrations from the supplied photographs. Those photographs are tracing references, not ready-to-place logos. They are intentionally retained: supplying finished vectors would remove the central work requested. No redesign of the four originals is authorised; the two companion stickers are the original-design portion.\n\nWhat stays fixed\nRecover the four supplied painted/printed designs faithfully as vector paths. Preserve photographed lettering rather than retyping it. Follow the 55 mm artwork scale, 2.5 mm contour offset, 3 mm minimum corner radius and printer sheet spacing.\n\nYour design decisions\nDraw two original companion illustrations with subject matter and visual rhythm that fit the coffee collection. Choose imposition within the printer's clearances. Newly set lettering follows the supplied type system; photographed lettering retains its original shape.\n\nDelivery and fonts\nUse the placement and export instructions listed with each requested file below. The downloadable OFL fonts in Source assets are the current typefaces for this commission; the typography card gives their roles and weights.",
  "brand_identity": {
   "brand_name": "Meridian and Ash",
   "tagline": "Roasted in the machine shop",
@@ -69,61 +69,69 @@
     "usage": "Fine detail inside a drawing only, no more than 5% of a sticker's inked area. Never the main ink, a backing shape, type or the wordmark; no supplied brand file uses it."
    }
   ],
-  "typography": "Meridian and Ash runs on Cirka Bold for display and Brandon Text for everything else. Step 01, display, is Cirka Bold capitals at 18 pt on 20 pt leading tracked 0.030 em on the arc, the 55 mm sticker setting at near 150 px cap height in a 1600 px proof, with MERIDIAN and ASH arched on a fixed 40 degree curve and the ampersand between them at 1.6 times their cap height, hanging below the arc into the artwork. Step 02, subheading, is Cirka Bold capitals at 11 pt on 13 pt leading tracked 0.020 em for counter card and four pack headers, set flat and off the arc. Step 03, body, is Brandon Text Regular 400 at 7 pt on 10.5 pt leading, tracking zero, set to a maximum of 65 characters, carrying the supporting line under the wordmark and all sticker copy. Step 04, fine print, is Brandon Text Bold 700 capitals at 6 pt on 8.5 pt leading tracked 0.040 em for gang sheet labels and die line notes. The ampersand is never set at cap height.",
+  "typography": "Meridian and Ash runs on DM Serif Display Regular for display and Libre Franklin for everything else. Step 01, display, is DM Serif Display Regular capitals at 18 pt on 20 pt leading tracked 0.030 em on the arc, the 55 mm sticker setting at near 150 px cap height in a 1600 px proof, with MERIDIAN and ASH arched on a fixed 40 degree curve and the ampersand between them at 1.6 times their cap height, hanging below the arc into the artwork. Step 02, subheading, is DM Serif Display Regular capitals at 11 pt on 13 pt leading tracked 0.020 em for counter card and four pack headers, set flat and off the arc. Step 03, body, is Libre Franklin Regular 400 at 7 pt on 10.5 pt leading, tracking zero, set to a maximum of 65 characters, carrying the supporting line under the wordmark and all sticker copy. Step 04, fine print, is Libre Franklin Bold 700 capitals at 6 pt on 8.5 pt leading tracked 0.040 em for gang sheet labels and die line notes. The ampersand is never set at cap height.",
   "voice": "Plain, warm, a little wry, never precious. Example line: Pull one off the sheet, stick it on your laptop, come back for the other three.",
-  "brand_assets_status": "No usable source files exist. The window mark was hand painted on the shop glass in 2018 by a sign painter who never handed over a file. The three current illustrations survive only printed on the coffee bags, and the printer still holds last season's counter card artwork.",
+  "brand_assets_status": "This commission explicitly includes paid reconstruction of the window mark and three bag illustrations from the supplied photographs. Those photographs are tracing references, not ready-to-place logos. They are intentionally retained: supplying finished vectors would remove the central work requested. No redesign of the four originals is authorised; the two companion stickers are the original-design portion.",
   "values": "Consistency people can trust, so the artwork stops being redrawn slightly differently every batch, and a hand made feel that reads as a real roastery rather than a franchise.",
-  "signature_type_move": "A single oversized ampersand set at 1.6 times the cap height of MERIDIAN and ASH, hanging below the arc of the wordmark into the artwork.",
-  "display_face": "Cirka Bold",
+  "signature_type_move": "A single oversized ampersand set at 1.6 times the cap height of MERIDIAN and ASH, hanging below the arc of the wordmark into the artwork, with the two words arched on a fixed 40 degree curve. At arm's length the ampersand is seen first.",
+  "display_face": "DM Serif Display Regular",
   "type_system": {
    "brand_name": "Meridian and Ash",
    "tagline": "Roasted in the machine shop",
-   "display_face": "Cirka Bold",
-   "text_face": "Brandon Text Regular 400 (Brandon Text Bold 700 for gang sheet capitals)",
+   "display_face": "DM Serif Display Regular",
+   "text_face": "Libre Franklin Regular 400 (Libre Franklin Bold 700 for gang sheet capitals)",
    "scale": [
     {
      "step": "01",
      "role": "Display / H1 · arched wordmark",
-     "family": "Cirka Bold, capitals only",
+     "family": "DM Serif Display Regular, capitals only",
      "size": "18 pt",
      "leading": "20 pt",
-     "weight": "Bold",
+     "weight": "Regular 400",
      "tracking": "plus 0.030 em on the arc",
      "sample": "MERIDIAN & ASH",
-     "note": "The 55 mm sticker setting, near 150 px cap height in a 1600 px proof. MERIDIAN and ASH arch on a fixed 40 degree curve and the ampersand between them is set at 1.6 times their cap height, hanging below the arc into the artwork. Tracking opens slightly on the curve only so the letters stay evenly spaced around it."
+     "note": "The 55 mm sticker setting, near 150 px cap height in a 1600 px proof. MERIDIAN and ASH arch on a fixed 40 degree curve and the ampersand between them is set at 1.6 times their cap height, hanging below the arc into the artwork. Tracking opens slightly on the curve only so the letters stay evenly spaced around it.",
+     "font_family": "DM Serif Display",
+     "font_weight": 400
     },
     {
      "step": "02",
      "role": "Subheading / H2 · counter card and four pack headers",
-     "family": "Cirka Bold, capitals only",
+     "family": "DM Serif Display Regular, capitals only",
      "size": "11 pt",
      "leading": "13 pt",
-     "weight": "Bold",
+     "weight": "Regular 400",
      "tracking": "plus 0.020 em",
      "sample": "SINGLES AND FOUR PACKS",
-     "note": "Set flat, off the arc. Where an ampersand appears here it still runs at 1.6 times cap height, hanging below the baseline."
+     "note": "Set flat, off the arc. Where an ampersand appears here it still runs at 1.6 times cap height, hanging below the baseline.",
+     "font_family": "DM Serif Display",
+     "font_weight": 400
     },
     {
      "step": "03",
      "role": "Body · sticker and supporting copy",
-     "family": "Brandon Text Regular",
+     "family": "Libre Franklin Regular",
      "size": "7 pt",
      "leading": "10.5 pt",
      "weight": "Regular 400",
      "tracking": "0, max 65 characters",
      "sample": "Pull one off the sheet and come back for the other three.",
-     "note": "The supporting line under the wordmark and every line of sticker and counter copy. Plain, warm, a little wry, never precious."
+     "note": "The supporting line under the wordmark and every line of sticker and counter copy. Plain, warm, a little wry, never precious.",
+     "font_family": "Libre Franklin",
+     "font_weight": 400
     },
     {
      "step": "04",
      "role": "Fine print · slug labels",
-     "family": "Brandon Text Bold, capitals only",
+     "family": "Libre Franklin Bold, capitals only",
      "size": "6 pt",
      "leading": "8.5 pt",
      "weight": "Bold 700",
      "tracking": "plus 0.040 em",
      "sample": "GANG SHEET · 55 MM · CUT CONTOUR",
-     "note": "Gang sheet capitals, die line notes and slug labels in the artwork margin. Brandon Text Bold 700 only, never Cirka."
+     "note": "Gang sheet capitals, die line notes and slug labels in the artwork margin. Libre Franklin Bold 700 only, never DM Serif Display.",
+     "font_family": "Libre Franklin",
+     "font_weight": 700
     }
    ],
    "signature_move": "A single oversized ampersand set at 1.6 times the cap height of MERIDIAN and ASH, hanging below the arc of the wordmark into the artwork, with the two words arched on a fixed 40 degree curve. At arm's length the ampersand is seen first.",
@@ -131,17 +139,55 @@
     "Never set the ampersand at cap height. It is always 1.6 times the cap height of MERIDIAN and ASH.",
     "The ampersand always hangs below the arc, into the artwork, never sitting on the baseline.",
     "MERIDIAN and ASH always arch on a fixed 40 degree curve, at every size.",
-    "Cirka Bold is display only; Brandon Text Regular 400 sets sticker copy and Brandon Text Bold 700 the gang sheet capitals.",
+    "DM Serif Display Regular is display only; Libre Franklin Regular 400 sets sticker copy and Libre Franklin Bold 700 the gang sheet capitals.",
     "Keep the range reading abundant rather than precious: it is priced to be handed out by the fistful.",
     "Hand made, not franchise: the artwork is drawn once and reused, never redrawn slightly differently each batch."
-   ]
+   ],
+   "specimen_note": "The samples load the supplied font files. Their display size is reduced for this guide; use the stated deliverable settings, not the on-screen sample size. Fonts and their OFL licences are downloadable in Source assets.",
+   "measurement_notes": "Tracking in units means thousandths of an em; 1 pt is 1/72 inch. Pixel settings apply at final exported size. Font size is not cap height.",
+   "application": "Apply these roles to newly set text in the requested deliverables. Preserve supplied logo artwork rather than retyping it. Recovered artwork retains its photographed lettering.",
+   "font_access": "Use the attached OFL font files at the named weights. These files replace unavailable commercial fonts for this commission. Do not substitute another family or simulate a missing weight."
   },
   "palette_rules": {
-   "distribution": "Each recovered design keeps the ink it was painted or printed in: Roast Brown for the wordmark in meridian_window_mark.jpg and the moth on meridian_bag_moth.jpg, Ash Green for the roundel in meridian_window_mark.jpg and the pour-over on meridian_bag_pourover.jpg, Warm Cream for the leaf and hairline ring in meridian_window_mark.jpg, Brick Red for the ridge line on meridian_bag_ridgeline.jpg. Each companion takes its main ink from Roast Brown, Ash Green and Brick Red. Kraft and Warm Cream are secondary: backing shapes, detail reversed out of an ink, or fine lines such as a hairline ring, never the main ink. Ink Black is fine detail only, no more than 5% of a sticker's inked area. Type on a light ground is Roast Brown, or Ash Green for a secondary line; type on Roast Brown or Ash Green is Warm Cream, as on meridian_shelfcard_2025.pdf. Sticker backgrounds stay transparent.",
+   "distribution": "Each recovered design keeps the ink it was painted or printed in: Roast Brown for the wordmark in meridian_window_mark.jpg and the moth on meridian_bag_moth.jpg, Ash Green for the roundel in meridian_window_mark.jpg and the pour-over on meridian_bag_pourover.jpg, Warm Cream for the leaf and hairline ring in meridian_window_mark.jpg, Brick Red for the ridge line on meridian_bag_ridgeline.jpg. Each companion takes its main ink from Roast Brown, Ash Green and Brick Red. Kraft and Warm Cream are secondary: backing shapes, detail reversed out of an ink, or fine lines such as a hairline ring, never the main ink. Ink Black is fine detail only, no more than 5% of a sticker's inked area. Type on a light ground is Roast Brown, or Ash Green for a secondary line; type on Roast Brown or Ash Green is Warm Cream, as on meridian_shelfcard_2025.pdf. Sticker backgrounds stay transparent. Palette hex values define sRGB source colours. In the print PDF, convert them with PSOcoated_v3.icc; evaluate the colour-managed proof, not literal RGB hex values inside the CMYK file.",
    "opacity": "Every palette colour on the stickers, proofs and gang sheet is used solid, at 100% opacity; no tint, transparency, gradient, shadow or blend mode. A proof is transparent only outside the artwork and in its open, uninked negative space; every inked area is fully opaque, and partial transparency occurs only as anti-aliasing along edges, with no white or coloured rectangle behind it.",
    "forbidden": "No colour outside the six palette hexes for any artwork, type, backing shape, label or mark. The cut paths on the CutContour layer are production lines, not artwork, and are exempt. No colour is sampled from a photograph.",
    "photography": "No photograph appears in any deliverable. meridian_window_mark.jpg, meridian_bag_moth.jpg, meridian_bag_pourover.jpg and meridian_bag_ridgeline.jpg are tracing references only: each ink is matched to its palette hex rather than sampled."
-  }
+  },
+  "creative_scope": {
+   "fixed": "Recover the four supplied painted/printed designs faithfully as vector paths. Preserve photographed lettering rather than retyping it. Follow the 55 mm artwork scale, 2.5 mm contour offset, 3 mm minimum corner radius and printer sheet spacing.",
+   "designer_choices": "Draw two original companion illustrations with subject matter and visual rhythm that fit the coffee collection. Choose imposition within the printer's clearances. Newly set lettering follows the supplied type system; photographed lettering retains its original shape."
+  },
+  "font_files": [
+   {
+    "family": "DM Serif Display",
+    "filename": "fonts/DMSerifDisplay-Regular.ttf",
+    "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/VECTOR-04/fonts/DMSerifDisplay-Regular.ttf",
+    "axes": {},
+    "weight_range": [
+     400,
+     400,
+     400
+    ]
+   },
+   {
+    "family": "Libre Franklin",
+    "filename": "fonts/LibreFranklin[wght].ttf",
+    "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/VECTOR-04/fonts/LibreFranklin%5Bwght%5D.ttf",
+    "axes": {
+     "wght": [
+      100.0,
+      100.0,
+      900.0
+     ]
+    },
+    "weight_range": [
+     100.0,
+     100.0,
+     900.0
+    ]
+   }
+  ]
  },
  "truth_constraints": [
   "Do not invent names, prices, claims, product features, locations, credentials, records, or documentary events that are absent from the approved inputs.",
@@ -244,6 +290,92 @@
    "public_url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/tasks/SB3-034-VEC__meridian-and-ash-sticker-artwork-production-masters/assets/meridian_window_mark.jpg",
    "role": "logo_text",
    "state": "retained_pending_visual_review"
+  },
+  {
+   "asset_id": "VECTOR-04-REFRESH-9e621067f9",
+   "filename": "fonts/DMSerifDisplay-Regular.ttf",
+   "bytes": 76580,
+   "sha256": "8cc3643535edf039aa5d95440a8542735e9197e4f4b8d9303e980fefbf5ab616",
+   "role": "font",
+   "description": "DM Serif Display font file. See the matching OFL licence.",
+   "state": "supplied",
+   "s3_key": "creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/VECTOR-04/fonts/DMSerifDisplay-Regular.ttf",
+   "s3_uri": "s3://annotationprod/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/VECTOR-04/fonts/DMSerifDisplay-Regular.ttf",
+   "public_url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/VECTOR-04/fonts/DMSerifDisplay-Regular.ttf",
+   "revision": "pilot13_inputs_2026_10_14",
+   "font_family": "DM Serif Display",
+   "licence": "SIL Open Font License 1.1",
+   "source_url": "https://github.com/google/fonts/tree/main/ofl/dmserifdisplay"
+  },
+  {
+   "asset_id": "VECTOR-04-REFRESH-9e78243c39",
+   "filename": "fonts/dmserifdisplay-OFL.txt",
+   "bytes": 4605,
+   "sha256": "a3e5cdd67d4571dd0a24fcc968de0efde7ae97ef752daf0906e4767619dd7231",
+   "role": "font licence",
+   "description": "Licence and copyright notice for DM Serif Display",
+   "state": "supplied",
+   "s3_key": "creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/VECTOR-04/fonts/dmserifdisplay-OFL.txt",
+   "s3_uri": "s3://annotationprod/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/VECTOR-04/fonts/dmserifdisplay-OFL.txt",
+   "public_url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/VECTOR-04/fonts/dmserifdisplay-OFL.txt",
+   "revision": "pilot13_inputs_2026_10_14"
+  },
+  {
+   "asset_id": "VECTOR-04-REFRESH-dfdf54c2c1",
+   "filename": "fonts/LibreFranklin[wght].ttf",
+   "bytes": 187436,
+   "sha256": "2329f394b10ed1c71107df20fddc11e2bb1b68c1ecbb385f975b36fd64a971f8",
+   "role": "font",
+   "description": "Libre Franklin font file. See the matching OFL licence.",
+   "state": "supplied",
+   "s3_key": "creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/VECTOR-04/fonts/LibreFranklin[wght].ttf",
+   "s3_uri": "s3://annotationprod/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/VECTOR-04/fonts/LibreFranklin[wght].ttf",
+   "public_url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/VECTOR-04/fonts/LibreFranklin%5Bwght%5D.ttf",
+   "revision": "pilot13_inputs_2026_10_14",
+   "font_family": "Libre Franklin",
+   "licence": "SIL Open Font License 1.1",
+   "source_url": "https://github.com/google/fonts/tree/main/ofl/librefranklin"
+  },
+  {
+   "asset_id": "VECTOR-04-REFRESH-1278aae98a",
+   "filename": "fonts/librefranklin-OFL.txt",
+   "bytes": 4495,
+   "sha256": "2710268527181a27b8e938617551bae29e714e6525247be6679bf897a9942a60",
+   "role": "font licence",
+   "description": "Licence and copyright notice for Libre Franklin",
+   "state": "supplied",
+   "s3_key": "creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/VECTOR-04/fonts/librefranklin-OFL.txt",
+   "s3_uri": "s3://annotationprod/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/VECTOR-04/fonts/librefranklin-OFL.txt",
+   "public_url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/VECTOR-04/fonts/librefranklin-OFL.txt",
+   "revision": "pilot13_inputs_2026_10_14"
+  },
+  {
+   "asset_id": "VECTOR-04-REFRESH-2a096ab1bf",
+   "filename": "PSOcoated_v3.icc",
+   "bytes": 2195228,
+   "sha256": "c30ad2c01e8f93135ec7682c535e0a81bc2d177c301e196376c5f5838b5c8e86",
+   "role": "print colour profile",
+   "description": "ECI PSO Coated v3 profile for the commissioned print PDF.",
+   "state": "supplied",
+   "s3_key": "creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/VECTOR-04/PSOcoated_v3.icc",
+   "s3_uri": "s3://annotationprod/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/VECTOR-04/PSOcoated_v3.icc",
+   "public_url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/VECTOR-04/PSOcoated_v3.icc",
+   "revision": "pilot13_inputs_2026_10_14",
+   "source_url": "https://eci.org/lib/exe/pso-coated_v3.zip"
+  },
+  {
+   "asset_id": "VECTOR-04-REFRESH-deb8b8cd6f",
+   "filename": "PSOcoated_v3_info.pdf",
+   "bytes": 36013,
+   "sha256": "d35b36a8976f362ba983067b601c05d076ba25ceb52657d86d93f20a1675721f",
+   "role": "print profile documentation",
+   "description": "ECI PSO Coated v3 profile for the commissioned print PDF.",
+   "state": "supplied",
+   "s3_key": "creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/VECTOR-04/PSOcoated_v3_info.pdf",
+   "s3_uri": "s3://annotationprod/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/VECTOR-04/PSOcoated_v3_info.pdf",
+   "public_url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/VECTOR-04/PSOcoated_v3_info.pdf",
+   "revision": "pilot13_inputs_2026_10_14",
+   "source_url": "https://eci.org/lib/exe/pso-coated_v3.zip"
   }
  ],
  "source_reference_files": [
@@ -277,7 +409,20 @@
    ],
    "record_field_policy": "The approved_values in source_record are the scoring target. raw_values are retained only for provenance and may contain known export defects.",
    "status": "not_produced",
-   "review_name": "Meridian and Ash / Recovered sticker artwork - Window mark"
+   "review_name": "Meridian and Ash / Recovered sticker artwork - Window mark",
+   "commission": {
+    "purpose": "Recover this existing design as reusable production vector artwork.",
+    "channel": "55 mm merchandise sticker artwork",
+    "audience": "Coffee customers and the sticker printer",
+    "content": [
+     "Trace the single photograph assigned to this sticker, preserving its distinctive painted or printed shapes.",
+     "Use editable vector paths, an explicit viewBox and physical long edge of 55 mm; no embedded raster image or opaque background rectangle."
+    ],
+    "export_settings": [
+     "SVG with editable vector paths and an explicit viewBox; no embedded raster image; transparent uninked areas.",
+     "Set physical units in millimetres; artwork long edge is 55 mm. Cut-contour dimensions include the 2.5 mm outward offset."
+    ]
+   }
   },
   {
    "output_id": "recovered-sticker-bag-design-1",
@@ -305,7 +450,20 @@
    ],
    "record_field_policy": "The approved_values in source_record are the scoring target. raw_values are retained only for provenance and may contain known export defects.",
    "status": "not_produced",
-   "review_name": "Meridian and Ash / Recovered sticker artwork - Bag design 1"
+   "review_name": "Meridian and Ash / Recovered sticker artwork - Bag design 1",
+   "commission": {
+    "purpose": "Recover this existing design as reusable production vector artwork.",
+    "channel": "55 mm merchandise sticker artwork",
+    "audience": "Coffee customers and the sticker printer",
+    "content": [
+     "Trace the single photograph assigned to this sticker, preserving its distinctive painted or printed shapes.",
+     "Use editable vector paths, an explicit viewBox and physical long edge of 55 mm; no embedded raster image or opaque background rectangle."
+    ],
+    "export_settings": [
+     "SVG with editable vector paths and an explicit viewBox; no embedded raster image; transparent uninked areas.",
+     "Set physical units in millimetres; artwork long edge is 55 mm. Cut-contour dimensions include the 2.5 mm outward offset."
+    ]
+   }
   },
   {
    "output_id": "recovered-sticker-bag-design-2",
@@ -333,7 +491,20 @@
    ],
    "record_field_policy": "The approved_values in source_record are the scoring target. raw_values are retained only for provenance and may contain known export defects.",
    "status": "not_produced",
-   "review_name": "Meridian and Ash / Recovered sticker artwork - Bag design 2"
+   "review_name": "Meridian and Ash / Recovered sticker artwork - Bag design 2",
+   "commission": {
+    "purpose": "Recover this existing design as reusable production vector artwork.",
+    "channel": "55 mm merchandise sticker artwork",
+    "audience": "Coffee customers and the sticker printer",
+    "content": [
+     "Trace the single photograph assigned to this sticker, preserving its distinctive painted or printed shapes.",
+     "Use editable vector paths, an explicit viewBox and physical long edge of 55 mm; no embedded raster image or opaque background rectangle."
+    ],
+    "export_settings": [
+     "SVG with editable vector paths and an explicit viewBox; no embedded raster image; transparent uninked areas.",
+     "Set physical units in millimetres; artwork long edge is 55 mm. Cut-contour dimensions include the 2.5 mm outward offset."
+    ]
+   }
   },
   {
    "output_id": "recovered-sticker-bag-design-3",
@@ -361,7 +532,20 @@
    ],
    "record_field_policy": "The approved_values in source_record are the scoring target. raw_values are retained only for provenance and may contain known export defects.",
    "status": "not_produced",
-   "review_name": "Meridian and Ash / Recovered sticker artwork - Bag design 3"
+   "review_name": "Meridian and Ash / Recovered sticker artwork - Bag design 3",
+   "commission": {
+    "purpose": "Recover this existing design as reusable production vector artwork.",
+    "channel": "55 mm merchandise sticker artwork",
+    "audience": "Coffee customers and the sticker printer",
+    "content": [
+     "Trace the single photograph assigned to this sticker, preserving its distinctive painted or printed shapes.",
+     "Use editable vector paths, an explicit viewBox and physical long edge of 55 mm; no embedded raster image or opaque background rectangle."
+    ],
+    "export_settings": [
+     "SVG with editable vector paths and an explicit viewBox; no embedded raster image; transparent uninked areas.",
+     "Set physical units in millimetres; artwork long edge is 55 mm. Cut-contour dimensions include the 2.5 mm outward offset."
+    ]
+   }
   },
   {
    "output_id": "new-sticker-companion-1",
@@ -389,7 +573,20 @@
    ],
    "record_field_policy": "The approved_values in source_record are the scoring target. raw_values are retained only for provenance and may contain known export defects.",
    "status": "not_produced",
-   "review_name": "Meridian and Ash / Original companion sticker - Companion 1"
+   "review_name": "Meridian and Ash / Original companion sticker - Companion 1",
+   "commission": {
+    "purpose": "Extend the established collection with one original companion design.",
+    "channel": "55 mm merchandise sticker artwork",
+    "audience": "Coffee customers",
+    "content": [
+     "Create one original illustration that belongs beside the recovered designs.",
+     "Supply editable vector paths at 55 mm long edge with open negative space, using the specified palette."
+    ],
+    "export_settings": [
+     "SVG with editable vector paths and an explicit viewBox; no embedded raster image; transparent uninked areas.",
+     "Set physical units in millimetres; artwork long edge is 55 mm. Cut-contour dimensions include the 2.5 mm outward offset."
+    ]
+   }
   },
   {
    "output_id": "new-sticker-companion-2",
@@ -417,7 +614,20 @@
    ],
    "record_field_policy": "The approved_values in source_record are the scoring target. raw_values are retained only for provenance and may contain known export defects.",
    "status": "not_produced",
-   "review_name": "Meridian and Ash / Original companion sticker - Companion 2"
+   "review_name": "Meridian and Ash / Original companion sticker - Companion 2",
+   "commission": {
+    "purpose": "Extend the established collection with one original companion design.",
+    "channel": "55 mm merchandise sticker artwork",
+    "audience": "Coffee customers",
+    "content": [
+     "Create one original illustration that belongs beside the recovered designs.",
+     "Supply editable vector paths at 55 mm long edge with open negative space, using the specified palette."
+    ],
+    "export_settings": [
+     "SVG with editable vector paths and an explicit viewBox; no embedded raster image; transparent uninked areas.",
+     "Set physical units in millimetres; artwork long edge is 55 mm. Cut-contour dimensions include the 2.5 mm outward offset."
+    ]
+   }
   },
   {
    "output_id": "sticker-cut-window-mark",
@@ -445,7 +655,20 @@
    "expert_review_criteria": [],
    "record_field_policy": "The approved_values in source_record are the scoring target. raw_values are retained only for provenance and may contain known export defects.",
    "status": "not_produced",
-   "review_name": "Meridian and Ash / Separate sticker cut contour - Window mark"
+   "review_name": "Meridian and Ash / Separate sticker cut contour - Window mark",
+   "commission": {
+    "purpose": "Give the cutter a separable outline for this named sticker.",
+    "channel": "Production kiss-cut path",
+    "audience": "Sticker print and cutting operator",
+    "content": [
+     "Provide exactly one closed outer contour for the corresponding artwork, offset 2.5 mm outward with corners at least 3 mm radius.",
+     "Keep this contour separate from the illustration; no interior cut-outs are requested."
+    ],
+    "export_settings": [
+     "SVG with editable vector paths and an explicit viewBox; no embedded raster image; transparent uninked areas.",
+     "Set physical units in millimetres; artwork long edge is 55 mm. Cut-contour dimensions include the 2.5 mm outward offset."
+    ]
+   }
   },
   {
    "output_id": "sticker-cut-bag-design-1",
@@ -473,7 +696,20 @@
    "expert_review_criteria": [],
    "record_field_policy": "The approved_values in source_record are the scoring target. raw_values are retained only for provenance and may contain known export defects.",
    "status": "not_produced",
-   "review_name": "Meridian and Ash / Separate sticker cut contour - Bag design 1"
+   "review_name": "Meridian and Ash / Separate sticker cut contour - Bag design 1",
+   "commission": {
+    "purpose": "Give the cutter a separable outline for this named sticker.",
+    "channel": "Production kiss-cut path",
+    "audience": "Sticker print and cutting operator",
+    "content": [
+     "Provide exactly one closed outer contour for the corresponding artwork, offset 2.5 mm outward with corners at least 3 mm radius.",
+     "Keep this contour separate from the illustration; no interior cut-outs are requested."
+    ],
+    "export_settings": [
+     "SVG with editable vector paths and an explicit viewBox; no embedded raster image; transparent uninked areas.",
+     "Set physical units in millimetres; artwork long edge is 55 mm. Cut-contour dimensions include the 2.5 mm outward offset."
+    ]
+   }
   },
   {
    "output_id": "sticker-cut-bag-design-2",
@@ -501,7 +737,20 @@
    "expert_review_criteria": [],
    "record_field_policy": "The approved_values in source_record are the scoring target. raw_values are retained only for provenance and may contain known export defects.",
    "status": "not_produced",
-   "review_name": "Meridian and Ash / Separate sticker cut contour - Bag design 2"
+   "review_name": "Meridian and Ash / Separate sticker cut contour - Bag design 2",
+   "commission": {
+    "purpose": "Give the cutter a separable outline for this named sticker.",
+    "channel": "Production kiss-cut path",
+    "audience": "Sticker print and cutting operator",
+    "content": [
+     "Provide exactly one closed outer contour for the corresponding artwork, offset 2.5 mm outward with corners at least 3 mm radius.",
+     "Keep this contour separate from the illustration; no interior cut-outs are requested."
+    ],
+    "export_settings": [
+     "SVG with editable vector paths and an explicit viewBox; no embedded raster image; transparent uninked areas.",
+     "Set physical units in millimetres; artwork long edge is 55 mm. Cut-contour dimensions include the 2.5 mm outward offset."
+    ]
+   }
   },
   {
    "output_id": "sticker-cut-bag-design-3",
@@ -529,7 +778,20 @@
    "expert_review_criteria": [],
    "record_field_policy": "The approved_values in source_record are the scoring target. raw_values are retained only for provenance and may contain known export defects.",
    "status": "not_produced",
-   "review_name": "Meridian and Ash / Separate sticker cut contour - Bag design 3"
+   "review_name": "Meridian and Ash / Separate sticker cut contour - Bag design 3",
+   "commission": {
+    "purpose": "Give the cutter a separable outline for this named sticker.",
+    "channel": "Production kiss-cut path",
+    "audience": "Sticker print and cutting operator",
+    "content": [
+     "Provide exactly one closed outer contour for the corresponding artwork, offset 2.5 mm outward with corners at least 3 mm radius.",
+     "Keep this contour separate from the illustration; no interior cut-outs are requested."
+    ],
+    "export_settings": [
+     "SVG with editable vector paths and an explicit viewBox; no embedded raster image; transparent uninked areas.",
+     "Set physical units in millimetres; artwork long edge is 55 mm. Cut-contour dimensions include the 2.5 mm outward offset."
+    ]
+   }
   },
   {
    "output_id": "sticker-cut-companion-1",
@@ -557,7 +819,20 @@
    "expert_review_criteria": [],
    "record_field_policy": "The approved_values in source_record are the scoring target. raw_values are retained only for provenance and may contain known export defects.",
    "status": "not_produced",
-   "review_name": "Meridian and Ash / Separate sticker cut contour - Companion 1"
+   "review_name": "Meridian and Ash / Separate sticker cut contour - Companion 1",
+   "commission": {
+    "purpose": "Give the cutter a separable outline for this named sticker.",
+    "channel": "Production kiss-cut path",
+    "audience": "Sticker print and cutting operator",
+    "content": [
+     "Provide exactly one closed outer contour for the corresponding artwork, offset 2.5 mm outward with corners at least 3 mm radius.",
+     "Keep this contour separate from the illustration; no interior cut-outs are requested."
+    ],
+    "export_settings": [
+     "SVG with editable vector paths and an explicit viewBox; no embedded raster image; transparent uninked areas.",
+     "Set physical units in millimetres; artwork long edge is 55 mm. Cut-contour dimensions include the 2.5 mm outward offset."
+    ]
+   }
   },
   {
    "output_id": "sticker-cut-companion-2",
@@ -585,7 +860,20 @@
    "expert_review_criteria": [],
    "record_field_policy": "The approved_values in source_record are the scoring target. raw_values are retained only for provenance and may contain known export defects.",
    "status": "not_produced",
-   "review_name": "Meridian and Ash / Separate sticker cut contour - Companion 2"
+   "review_name": "Meridian and Ash / Separate sticker cut contour - Companion 2",
+   "commission": {
+    "purpose": "Give the cutter a separable outline for this named sticker.",
+    "channel": "Production kiss-cut path",
+    "audience": "Sticker print and cutting operator",
+    "content": [
+     "Provide exactly one closed outer contour for the corresponding artwork, offset 2.5 mm outward with corners at least 3 mm radius.",
+     "Keep this contour separate from the illustration; no interior cut-outs are requested."
+    ],
+    "export_settings": [
+     "SVG with editable vector paths and an explicit viewBox; no embedded raster image; transparent uninked areas.",
+     "Set physical units in millimetres; artwork long edge is 55 mm. Cut-contour dimensions include the 2.5 mm outward offset."
+    ]
+   }
   },
   {
    "output_id": "sticker-proof-window-mark",
@@ -612,7 +900,19 @@
    ],
    "record_field_policy": "The approved_values in source_record are the scoring target. raw_values are retained only for provenance and may contain known export defects.",
    "status": "not_produced",
-   "review_name": "Meridian and Ash / Transparent sticker proof - Window mark"
+   "review_name": "Meridian and Ash / Transparent sticker proof - Window mark",
+   "commission": {
+    "purpose": "Let the client and printer inspect this sticker without a background box.",
+    "channel": "Digital transparent artwork proof, not a production raster replacement",
+    "audience": "Client and sticker printer",
+    "content": [
+     "Render the corresponding named SVG only, with genuine alpha transparency outside the artwork and inside uninked negative space.",
+     "Use the required 1600 x 1600 px canvas; the corresponding SVG remains the 55 mm physical-size master."
+    ],
+    "export_settings": [
+     "PNG with genuine alpha transparency; sRGB; exact pixel dimensions."
+    ]
+   }
   },
   {
    "output_id": "sticker-proof-bag-design-1",
@@ -639,7 +939,19 @@
    ],
    "record_field_policy": "The approved_values in source_record are the scoring target. raw_values are retained only for provenance and may contain known export defects.",
    "status": "not_produced",
-   "review_name": "Meridian and Ash / Transparent sticker proof - Bag design 1"
+   "review_name": "Meridian and Ash / Transparent sticker proof - Bag design 1",
+   "commission": {
+    "purpose": "Let the client and printer inspect this sticker without a background box.",
+    "channel": "Digital transparent artwork proof, not a production raster replacement",
+    "audience": "Client and sticker printer",
+    "content": [
+     "Render the corresponding named SVG only, with genuine alpha transparency outside the artwork and inside uninked negative space.",
+     "Use the required 1600 x 1600 px canvas; the corresponding SVG remains the 55 mm physical-size master."
+    ],
+    "export_settings": [
+     "PNG with genuine alpha transparency; sRGB; exact pixel dimensions."
+    ]
+   }
   },
   {
    "output_id": "sticker-proof-bag-design-2",
@@ -666,7 +978,19 @@
    ],
    "record_field_policy": "The approved_values in source_record are the scoring target. raw_values are retained only for provenance and may contain known export defects.",
    "status": "not_produced",
-   "review_name": "Meridian and Ash / Transparent sticker proof - Bag design 2"
+   "review_name": "Meridian and Ash / Transparent sticker proof - Bag design 2",
+   "commission": {
+    "purpose": "Let the client and printer inspect this sticker without a background box.",
+    "channel": "Digital transparent artwork proof, not a production raster replacement",
+    "audience": "Client and sticker printer",
+    "content": [
+     "Render the corresponding named SVG only, with genuine alpha transparency outside the artwork and inside uninked negative space.",
+     "Use the required 1600 x 1600 px canvas; the corresponding SVG remains the 55 mm physical-size master."
+    ],
+    "export_settings": [
+     "PNG with genuine alpha transparency; sRGB; exact pixel dimensions."
+    ]
+   }
   },
   {
    "output_id": "sticker-proof-bag-design-3",
@@ -693,7 +1017,19 @@
    ],
    "record_field_policy": "The approved_values in source_record are the scoring target. raw_values are retained only for provenance and may contain known export defects.",
    "status": "not_produced",
-   "review_name": "Meridian and Ash / Transparent sticker proof - Bag design 3"
+   "review_name": "Meridian and Ash / Transparent sticker proof - Bag design 3",
+   "commission": {
+    "purpose": "Let the client and printer inspect this sticker without a background box.",
+    "channel": "Digital transparent artwork proof, not a production raster replacement",
+    "audience": "Client and sticker printer",
+    "content": [
+     "Render the corresponding named SVG only, with genuine alpha transparency outside the artwork and inside uninked negative space.",
+     "Use the required 1600 x 1600 px canvas; the corresponding SVG remains the 55 mm physical-size master."
+    ],
+    "export_settings": [
+     "PNG with genuine alpha transparency; sRGB; exact pixel dimensions."
+    ]
+   }
   },
   {
    "output_id": "sticker-proof-companion-1",
@@ -720,7 +1056,19 @@
    ],
    "record_field_policy": "The approved_values in source_record are the scoring target. raw_values are retained only for provenance and may contain known export defects.",
    "status": "not_produced",
-   "review_name": "Meridian and Ash / Transparent sticker proof - Companion 1"
+   "review_name": "Meridian and Ash / Transparent sticker proof - Companion 1",
+   "commission": {
+    "purpose": "Let the client and printer inspect this sticker without a background box.",
+    "channel": "Digital transparent artwork proof, not a production raster replacement",
+    "audience": "Client and sticker printer",
+    "content": [
+     "Render the corresponding named SVG only, with genuine alpha transparency outside the artwork and inside uninked negative space.",
+     "Use the required 1600 x 1600 px canvas; the corresponding SVG remains the 55 mm physical-size master."
+    ],
+    "export_settings": [
+     "PNG with genuine alpha transparency; sRGB; exact pixel dimensions."
+    ]
+   }
   },
   {
    "output_id": "sticker-proof-companion-2",
@@ -747,7 +1095,19 @@
    ],
    "record_field_policy": "The approved_values in source_record are the scoring target. raw_values are retained only for provenance and may contain known export defects.",
    "status": "not_produced",
-   "review_name": "Meridian and Ash / Transparent sticker proof - Companion 2"
+   "review_name": "Meridian and Ash / Transparent sticker proof - Companion 2",
+   "commission": {
+    "purpose": "Let the client and printer inspect this sticker without a background box.",
+    "channel": "Digital transparent artwork proof, not a production raster replacement",
+    "audience": "Client and sticker printer",
+    "content": [
+     "Render the corresponding named SVG only, with genuine alpha transparency outside the artwork and inside uninked negative space.",
+     "Use the required 1600 x 1600 px canvas; the corresponding SVG remains the 55 mm physical-size master."
+    ],
+    "export_settings": [
+     "PNG with genuine alpha transparency; sRGB; exact pixel dimensions."
+    ]
+   }
   },
   {
    "output_id": "gang-sheet",
@@ -782,7 +1142,20 @@
    ],
    "record_field_policy": "The approved_values in source_record are the scoring target. raw_values are retained only for provenance and may contain known export defects.",
    "status": "not_produced",
-   "review_name": "Meridian and Ash / Sticker imposed production sheet"
+   "review_name": "Meridian and Ash / Sticker imposed production sheet",
+   "commission": {
+    "purpose": "Supply one sheet the printer can separate into artwork and cutting paths.",
+    "channel": "305 x 457 mm white-gloss-vinyl production sheet",
+    "audience": "Sticker printer",
+    "content": [
+     "Place the six designs with their corresponding cut paths on a separable CutContour layer.",
+     "Keep cut contours at least 10 mm from the sheet edge and 6 mm apart; preserve the 55 mm artwork scale."
+    ],
+    "export_settings": [
+     "Production PDF/X-4 with embedded fonts or outlined lettering, CMYK artwork and the supplied PSO Coated v3 output intent. Convert palette colours from sRGB using this profile; preserve named spot cut lines separately.",
+     "305 x 457 mm page, 55 mm artwork scale, 10 mm sheet clearance and 6 mm contour gutters; CutContour remains a separate named layer and spot colour. PSO Coated v3 is the agreed CMYK exchange space, not a solvent/vinyl device profile: the printer handles the final RIP conversion and physical proof for white gloss vinyl."
+    ]
+   }
   }
  ],
  "deliverable_groups": [
@@ -6256,7 +6629,7 @@
    "check_id": "VECTOR-04/sticker-proof-companion-1/H007",
    "type": "human",
    "output_reference": "deliverables/sticker-proof-companion-1.png",
-   "check": "On “Transparent sticker proof - Companion 1” (sticker-proof-companion-1.png), any MERIDIAN & ASH wordmark, heading or subheading is Cirka Bold capitals, or the painted wordmark reused unchanged from recovered-sticker-window-mark.svg; all other copy is Brandon Text Regular 400.",
+   "check": "On “Transparent sticker proof - Companion 1” (sticker-proof-companion-1.png), any MERIDIAN & ASH wordmark, heading or subheading is DM Serif Display Regular capitals, or the painted wordmark reused unchanged from recovered-sticker-window-mark.svg; all other copy is Libre Franklin Regular 400.",
    "answer_type": "yes_no",
    "allowed_answers": [
     "Yes",
@@ -6265,17 +6638,26 @@
    "pass_answer": "Yes",
    "answer": null,
    "status": "not_assessed",
-   "source_statement": "On “Transparent sticker proof - Companion 1” (sticker-proof-companion-1.png), any MERIDIAN & ASH wordmark, heading or subheading is Cirka Bold capitals, or the painted wordmark reused unchanged from recovered-sticker-window-mark.svg; all other copy is Brandon Text Regular 400.",
-   "evidence_reference": "Brand typography: Meridian and Ash runs on Cirka Bold for display and Brandon Text for everything else. Brief: the brand type system's arch, ampersand and Cirka Bold rules govern newly set lettering only; the recovered window mark keeps its painted arc and ampersand exactly as painted. Brand type system rule: Hand made, not franchise: the artwork is drawn once and reused, never redrawn slightly differently each batch. Brand type system rule: Cirka Bold is display only; Brandon Text Regular 400 sets sticker copy and Brandon Text Bold 700 the gang sheet capitals. Type system steps 01 (wordmark) and 02 (subheading and headers): Cirka Bold, capitals only. Step 03: Brandon Text Regular 400 for the supporting line and every line of sticker copy.",
+   "source_statement": "On “Transparent sticker proof - Companion 1” (sticker-proof-companion-1.png), any MERIDIAN & ASH wordmark, heading or subheading is DM Serif Display Regular capitals, or the painted wordmark reused unchanged from recovered-sticker-window-mark.svg; all other copy is Libre Franklin Regular 400.",
+   "evidence_reference": "Brand typography: Meridian and Ash runs on DM Serif Display Regular for display and Libre Franklin for everything else. Brief: the brand type system's arch, ampersand and DM Serif Display Regular rules govern newly set lettering only; the recovered window mark keeps its painted arc and ampersand exactly as painted. Brand type system rule: Hand made, not franchise: the artwork is drawn once and reused, never redrawn slightly differently each batch. Brand type system rule: DM Serif Display Regular is display only; Libre Franklin Regular 400 sets sticker copy and Libre Franklin Bold 700 the gang sheet capitals. Type system steps 01 (wordmark) and 02 (subheading and headers): DM Serif Display Regular, capitals only. Step 03: Libre Franklin Regular 400 for the supporting line and every line of sticker copy.",
    "artifact_name": "Transparent sticker proof - Companion 1",
    "artifact_file": "sticker-proof-companion-1.png",
-   "requirement": "On “Transparent sticker proof - Companion 1” (sticker-proof-companion-1.png), any MERIDIAN & ASH wordmark, heading or subheading is Cirka Bold capitals, or the painted wordmark reused unchanged from recovered-sticker-window-mark.svg; all other copy is Brandon Text Regular 400.",
-   "pass_condition": "On “Transparent sticker proof - Companion 1” (sticker-proof-companion-1.png), any MERIDIAN & ASH wordmark, heading or subheading is Cirka Bold capitals, or the painted wordmark reused unchanged from recovered-sticker-window-mark.svg; all other copy is Brandon Text Regular 400.",
-   "reference_assets": [],
+   "requirement": "On “Transparent sticker proof - Companion 1” (sticker-proof-companion-1.png), any MERIDIAN & ASH wordmark, heading or subheading is DM Serif Display Regular capitals, or the painted wordmark reused unchanged from recovered-sticker-window-mark.svg; all other copy is Libre Franklin Regular 400.",
+   "pass_condition": "On “Transparent sticker proof - Companion 1” (sticker-proof-companion-1.png), any MERIDIAN & ASH wordmark, heading or subheading is DM Serif Display Regular capitals, or the painted wordmark reused unchanged from recovered-sticker-window-mark.svg; all other copy is Libre Franklin Regular 400.",
+   "reference_assets": [
+    {
+     "filename": "fonts/DMSerifDisplay-Regular.ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/VECTOR-04/fonts/DMSerifDisplay-Regular.ttf"
+    },
+    {
+     "filename": "fonts/LibreFranklin[wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/VECTOR-04/fonts/LibreFranklin%5Bwght%5D.ttf"
+    }
+   ],
    "k_id": "K2_Q3",
    "k_label": "Brand-system compliance",
    "origin": "review_feedback_2026_09_25",
-   "revision": "2026-09-25 review feedback"
+   "revision": "pilot13_inputs_2026_10_14"
   },
   {
    "task_id": "VECTOR-04",
@@ -6283,7 +6665,7 @@
    "check_id": "VECTOR-04/sticker-proof-companion-1/H008",
    "type": "human",
    "output_reference": "deliverables/sticker-proof-companion-1.png",
-   "check": "Any MERIDIAN & ASH wordmark set in Cirka Bold on “Transparent sticker proof - Companion 1” (sticker-proof-companion-1.png) arches on a fixed 40 degree curve.",
+   "check": "Any MERIDIAN & ASH wordmark set in DM Serif Display Regular on “Transparent sticker proof - Companion 1” (sticker-proof-companion-1.png) arches on a fixed 40 degree curve.",
    "answer_type": "yes_no",
    "allowed_answers": [
     "Yes",
@@ -6292,17 +6674,26 @@
    "pass_answer": "Yes",
    "answer": null,
    "status": "not_assessed",
-   "source_statement": "Any MERIDIAN & ASH wordmark set in Cirka Bold on “Transparent sticker proof - Companion 1” (sticker-proof-companion-1.png) arches on a fixed 40 degree curve.",
+   "source_statement": "Any MERIDIAN & ASH wordmark set in DM Serif Display Regular on “Transparent sticker proof - Companion 1” (sticker-proof-companion-1.png) arches on a fixed 40 degree curve.",
    "evidence_reference": "Brand type system rule: MERIDIAN and ASH always arch on a fixed 40 degree curve, at every size.",
    "artifact_name": "Transparent sticker proof - Companion 1",
    "artifact_file": "sticker-proof-companion-1.png",
-   "requirement": "Any MERIDIAN & ASH wordmark set in Cirka Bold on “Transparent sticker proof - Companion 1” (sticker-proof-companion-1.png) arches on a fixed 40 degree curve.",
-   "pass_condition": "Any MERIDIAN & ASH wordmark set in Cirka Bold on “Transparent sticker proof - Companion 1” (sticker-proof-companion-1.png) arches on a fixed 40 degree curve.",
-   "reference_assets": [],
+   "requirement": "Any MERIDIAN & ASH wordmark set in DM Serif Display Regular on “Transparent sticker proof - Companion 1” (sticker-proof-companion-1.png) arches on a fixed 40 degree curve.",
+   "pass_condition": "Any MERIDIAN & ASH wordmark set in DM Serif Display Regular on “Transparent sticker proof - Companion 1” (sticker-proof-companion-1.png) arches on a fixed 40 degree curve.",
+   "reference_assets": [
+    {
+     "filename": "fonts/DMSerifDisplay-Regular.ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/VECTOR-04/fonts/DMSerifDisplay-Regular.ttf"
+    },
+    {
+     "filename": "fonts/LibreFranklin[wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/VECTOR-04/fonts/LibreFranklin%5Bwght%5D.ttf"
+    }
+   ],
    "k_id": "K2_Q3",
    "k_label": "Brand-system compliance",
    "origin": "review_feedback_2026_09_25",
-   "revision": "2026-09-25 review feedback"
+   "revision": "pilot13_inputs_2026_10_14"
   },
   {
    "task_id": "VECTOR-04",
@@ -6310,7 +6701,7 @@
    "check_id": "VECTOR-04/sticker-proof-companion-1/H009",
    "type": "human",
    "output_reference": "deliverables/sticker-proof-companion-1.png",
-   "check": "Any ampersand set in Cirka Bold on “Transparent sticker proof - Companion 1” (sticker-proof-companion-1.png) is 1.6 times the cap height of the capitals beside it, never at cap height.",
+   "check": "Any ampersand set in DM Serif Display Regular on “Transparent sticker proof - Companion 1” (sticker-proof-companion-1.png) is 1.6 times the cap height of the capitals beside it, never at cap height.",
    "answer_type": "yes_no",
    "allowed_answers": [
     "Yes",
@@ -6319,17 +6710,26 @@
    "pass_answer": "Yes",
    "answer": null,
    "status": "not_assessed",
-   "source_statement": "Any ampersand set in Cirka Bold on “Transparent sticker proof - Companion 1” (sticker-proof-companion-1.png) is 1.6 times the cap height of the capitals beside it, never at cap height.",
+   "source_statement": "Any ampersand set in DM Serif Display Regular on “Transparent sticker proof - Companion 1” (sticker-proof-companion-1.png) is 1.6 times the cap height of the capitals beside it, never at cap height.",
    "evidence_reference": "Brand type system rule: Never set the ampersand at cap height. It is always 1.6 times the cap height of MERIDIAN and ASH.",
    "artifact_name": "Transparent sticker proof - Companion 1",
    "artifact_file": "sticker-proof-companion-1.png",
-   "requirement": "Any ampersand set in Cirka Bold on “Transparent sticker proof - Companion 1” (sticker-proof-companion-1.png) is 1.6 times the cap height of the capitals beside it, never at cap height.",
-   "pass_condition": "Any ampersand set in Cirka Bold on “Transparent sticker proof - Companion 1” (sticker-proof-companion-1.png) is 1.6 times the cap height of the capitals beside it, never at cap height.",
-   "reference_assets": [],
+   "requirement": "Any ampersand set in DM Serif Display Regular on “Transparent sticker proof - Companion 1” (sticker-proof-companion-1.png) is 1.6 times the cap height of the capitals beside it, never at cap height.",
+   "pass_condition": "Any ampersand set in DM Serif Display Regular on “Transparent sticker proof - Companion 1” (sticker-proof-companion-1.png) is 1.6 times the cap height of the capitals beside it, never at cap height.",
+   "reference_assets": [
+    {
+     "filename": "fonts/DMSerifDisplay-Regular.ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/VECTOR-04/fonts/DMSerifDisplay-Regular.ttf"
+    },
+    {
+     "filename": "fonts/LibreFranklin[wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/VECTOR-04/fonts/LibreFranklin%5Bwght%5D.ttf"
+    }
+   ],
    "k_id": "K2_Q3",
    "k_label": "Brand-system compliance",
    "origin": "review_feedback_2026_09_25",
-   "revision": "2026-09-25 review feedback"
+   "revision": "pilot13_inputs_2026_10_14"
   },
   {
    "task_id": "VECTOR-04",
@@ -6337,7 +6737,7 @@
    "check_id": "VECTOR-04/sticker-proof-companion-1/H010",
    "type": "human",
    "output_reference": "deliverables/sticker-proof-companion-1.png",
-   "check": "Any ampersand set in Cirka Bold on “Transparent sticker proof - Companion 1” (sticker-proof-companion-1.png) hangs below the arc or baseline into the artwork, never sitting on the baseline.",
+   "check": "Any ampersand set in DM Serif Display Regular on “Transparent sticker proof - Companion 1” (sticker-proof-companion-1.png) hangs below the arc or baseline into the artwork, never sitting on the baseline.",
    "answer_type": "yes_no",
    "allowed_answers": [
     "Yes",
@@ -6346,17 +6746,26 @@
    "pass_answer": "Yes",
    "answer": null,
    "status": "not_assessed",
-   "source_statement": "Any ampersand set in Cirka Bold on “Transparent sticker proof - Companion 1” (sticker-proof-companion-1.png) hangs below the arc or baseline into the artwork, never sitting on the baseline.",
+   "source_statement": "Any ampersand set in DM Serif Display Regular on “Transparent sticker proof - Companion 1” (sticker-proof-companion-1.png) hangs below the arc or baseline into the artwork, never sitting on the baseline.",
    "evidence_reference": "Brand type system rule: The ampersand always hangs below the arc, into the artwork, never sitting on the baseline.",
    "artifact_name": "Transparent sticker proof - Companion 1",
    "artifact_file": "sticker-proof-companion-1.png",
-   "requirement": "Any ampersand set in Cirka Bold on “Transparent sticker proof - Companion 1” (sticker-proof-companion-1.png) hangs below the arc or baseline into the artwork, never sitting on the baseline.",
-   "pass_condition": "Any ampersand set in Cirka Bold on “Transparent sticker proof - Companion 1” (sticker-proof-companion-1.png) hangs below the arc or baseline into the artwork, never sitting on the baseline.",
-   "reference_assets": [],
+   "requirement": "Any ampersand set in DM Serif Display Regular on “Transparent sticker proof - Companion 1” (sticker-proof-companion-1.png) hangs below the arc or baseline into the artwork, never sitting on the baseline.",
+   "pass_condition": "Any ampersand set in DM Serif Display Regular on “Transparent sticker proof - Companion 1” (sticker-proof-companion-1.png) hangs below the arc or baseline into the artwork, never sitting on the baseline.",
+   "reference_assets": [
+    {
+     "filename": "fonts/DMSerifDisplay-Regular.ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/VECTOR-04/fonts/DMSerifDisplay-Regular.ttf"
+    },
+    {
+     "filename": "fonts/LibreFranklin[wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/VECTOR-04/fonts/LibreFranklin%5Bwght%5D.ttf"
+    }
+   ],
    "k_id": "K2_Q3",
    "k_label": "Brand-system compliance",
    "origin": "review_feedback_2026_09_25",
-   "revision": "2026-09-25 review feedback"
+   "revision": "pilot13_inputs_2026_10_14"
   },
   {
    "task_id": "VECTOR-04",
@@ -6374,7 +6783,7 @@
    "answer": null,
    "status": "not_assessed",
    "source_statement": "No line of copy on “Transparent sticker proof - Companion 1” (sticker-proof-companion-1.png) runs longer than 65 characters.",
-   "evidence_reference": "Type system step 03: Brandon Text Regular 400, tracking 0, max 65 characters, for every line of sticker copy.",
+   "evidence_reference": "Type system step 03: Libre Franklin Regular 400, tracking 0, max 65 characters, for every line of sticker copy.",
    "artifact_name": "Transparent sticker proof - Companion 1",
    "artifact_file": "sticker-proof-companion-1.png",
    "requirement": "No line of copy on “Transparent sticker proof - Companion 1” (sticker-proof-companion-1.png) runs longer than 65 characters.",
@@ -6383,7 +6792,7 @@
    "k_id": "K2_Q3",
    "k_label": "Brand-system compliance",
    "origin": "review_feedback_2026_09_25",
-   "revision": "2026-09-25 review feedback"
+   "revision": "pilot13_inputs_2026_10_14"
   },
   {
    "task_id": "VECTOR-04",
@@ -6693,7 +7102,7 @@
    "check_id": "VECTOR-04/sticker-proof-companion-2/H007",
    "type": "human",
    "output_reference": "deliverables/sticker-proof-companion-2.png",
-   "check": "On “Transparent sticker proof - Companion 2” (sticker-proof-companion-2.png), any MERIDIAN & ASH wordmark, heading or subheading is Cirka Bold capitals, or the painted wordmark reused unchanged from recovered-sticker-window-mark.svg; all other copy is Brandon Text Regular 400.",
+   "check": "On “Transparent sticker proof - Companion 2” (sticker-proof-companion-2.png), any MERIDIAN & ASH wordmark, heading or subheading is DM Serif Display Regular capitals, or the painted wordmark reused unchanged from recovered-sticker-window-mark.svg; all other copy is Libre Franklin Regular 400.",
    "answer_type": "yes_no",
    "allowed_answers": [
     "Yes",
@@ -6702,17 +7111,26 @@
    "pass_answer": "Yes",
    "answer": null,
    "status": "not_assessed",
-   "source_statement": "On “Transparent sticker proof - Companion 2” (sticker-proof-companion-2.png), any MERIDIAN & ASH wordmark, heading or subheading is Cirka Bold capitals, or the painted wordmark reused unchanged from recovered-sticker-window-mark.svg; all other copy is Brandon Text Regular 400.",
-   "evidence_reference": "Brand typography: Meridian and Ash runs on Cirka Bold for display and Brandon Text for everything else. Brief: the brand type system's arch, ampersand and Cirka Bold rules govern newly set lettering only; the recovered window mark keeps its painted arc and ampersand exactly as painted. Brand type system rule: Hand made, not franchise: the artwork is drawn once and reused, never redrawn slightly differently each batch. Brand type system rule: Cirka Bold is display only; Brandon Text Regular 400 sets sticker copy and Brandon Text Bold 700 the gang sheet capitals. Type system steps 01 (wordmark) and 02 (subheading and headers): Cirka Bold, capitals only. Step 03: Brandon Text Regular 400 for the supporting line and every line of sticker copy.",
+   "source_statement": "On “Transparent sticker proof - Companion 2” (sticker-proof-companion-2.png), any MERIDIAN & ASH wordmark, heading or subheading is DM Serif Display Regular capitals, or the painted wordmark reused unchanged from recovered-sticker-window-mark.svg; all other copy is Libre Franklin Regular 400.",
+   "evidence_reference": "Brand typography: Meridian and Ash runs on DM Serif Display Regular for display and Libre Franklin for everything else. Brief: the brand type system's arch, ampersand and DM Serif Display Regular rules govern newly set lettering only; the recovered window mark keeps its painted arc and ampersand exactly as painted. Brand type system rule: Hand made, not franchise: the artwork is drawn once and reused, never redrawn slightly differently each batch. Brand type system rule: DM Serif Display Regular is display only; Libre Franklin Regular 400 sets sticker copy and Libre Franklin Bold 700 the gang sheet capitals. Type system steps 01 (wordmark) and 02 (subheading and headers): DM Serif Display Regular, capitals only. Step 03: Libre Franklin Regular 400 for the supporting line and every line of sticker copy.",
    "artifact_name": "Transparent sticker proof - Companion 2",
    "artifact_file": "sticker-proof-companion-2.png",
-   "requirement": "On “Transparent sticker proof - Companion 2” (sticker-proof-companion-2.png), any MERIDIAN & ASH wordmark, heading or subheading is Cirka Bold capitals, or the painted wordmark reused unchanged from recovered-sticker-window-mark.svg; all other copy is Brandon Text Regular 400.",
-   "pass_condition": "On “Transparent sticker proof - Companion 2” (sticker-proof-companion-2.png), any MERIDIAN & ASH wordmark, heading or subheading is Cirka Bold capitals, or the painted wordmark reused unchanged from recovered-sticker-window-mark.svg; all other copy is Brandon Text Regular 400.",
-   "reference_assets": [],
+   "requirement": "On “Transparent sticker proof - Companion 2” (sticker-proof-companion-2.png), any MERIDIAN & ASH wordmark, heading or subheading is DM Serif Display Regular capitals, or the painted wordmark reused unchanged from recovered-sticker-window-mark.svg; all other copy is Libre Franklin Regular 400.",
+   "pass_condition": "On “Transparent sticker proof - Companion 2” (sticker-proof-companion-2.png), any MERIDIAN & ASH wordmark, heading or subheading is DM Serif Display Regular capitals, or the painted wordmark reused unchanged from recovered-sticker-window-mark.svg; all other copy is Libre Franklin Regular 400.",
+   "reference_assets": [
+    {
+     "filename": "fonts/DMSerifDisplay-Regular.ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/VECTOR-04/fonts/DMSerifDisplay-Regular.ttf"
+    },
+    {
+     "filename": "fonts/LibreFranklin[wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/VECTOR-04/fonts/LibreFranklin%5Bwght%5D.ttf"
+    }
+   ],
    "k_id": "K2_Q3",
    "k_label": "Brand-system compliance",
    "origin": "review_feedback_2026_09_25",
-   "revision": "2026-09-25 review feedback"
+   "revision": "pilot13_inputs_2026_10_14"
   },
   {
    "task_id": "VECTOR-04",
@@ -6720,7 +7138,7 @@
    "check_id": "VECTOR-04/sticker-proof-companion-2/H008",
    "type": "human",
    "output_reference": "deliverables/sticker-proof-companion-2.png",
-   "check": "Any MERIDIAN & ASH wordmark set in Cirka Bold on “Transparent sticker proof - Companion 2” (sticker-proof-companion-2.png) arches on a fixed 40 degree curve.",
+   "check": "Any MERIDIAN & ASH wordmark set in DM Serif Display Regular on “Transparent sticker proof - Companion 2” (sticker-proof-companion-2.png) arches on a fixed 40 degree curve.",
    "answer_type": "yes_no",
    "allowed_answers": [
     "Yes",
@@ -6729,17 +7147,26 @@
    "pass_answer": "Yes",
    "answer": null,
    "status": "not_assessed",
-   "source_statement": "Any MERIDIAN & ASH wordmark set in Cirka Bold on “Transparent sticker proof - Companion 2” (sticker-proof-companion-2.png) arches on a fixed 40 degree curve.",
+   "source_statement": "Any MERIDIAN & ASH wordmark set in DM Serif Display Regular on “Transparent sticker proof - Companion 2” (sticker-proof-companion-2.png) arches on a fixed 40 degree curve.",
    "evidence_reference": "Brand type system rule: MERIDIAN and ASH always arch on a fixed 40 degree curve, at every size.",
    "artifact_name": "Transparent sticker proof - Companion 2",
    "artifact_file": "sticker-proof-companion-2.png",
-   "requirement": "Any MERIDIAN & ASH wordmark set in Cirka Bold on “Transparent sticker proof - Companion 2” (sticker-proof-companion-2.png) arches on a fixed 40 degree curve.",
-   "pass_condition": "Any MERIDIAN & ASH wordmark set in Cirka Bold on “Transparent sticker proof - Companion 2” (sticker-proof-companion-2.png) arches on a fixed 40 degree curve.",
-   "reference_assets": [],
+   "requirement": "Any MERIDIAN & ASH wordmark set in DM Serif Display Regular on “Transparent sticker proof - Companion 2” (sticker-proof-companion-2.png) arches on a fixed 40 degree curve.",
+   "pass_condition": "Any MERIDIAN & ASH wordmark set in DM Serif Display Regular on “Transparent sticker proof - Companion 2” (sticker-proof-companion-2.png) arches on a fixed 40 degree curve.",
+   "reference_assets": [
+    {
+     "filename": "fonts/DMSerifDisplay-Regular.ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/VECTOR-04/fonts/DMSerifDisplay-Regular.ttf"
+    },
+    {
+     "filename": "fonts/LibreFranklin[wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/VECTOR-04/fonts/LibreFranklin%5Bwght%5D.ttf"
+    }
+   ],
    "k_id": "K2_Q3",
    "k_label": "Brand-system compliance",
    "origin": "review_feedback_2026_09_25",
-   "revision": "2026-09-25 review feedback"
+   "revision": "pilot13_inputs_2026_10_14"
   },
   {
    "task_id": "VECTOR-04",
@@ -6747,7 +7174,7 @@
    "check_id": "VECTOR-04/sticker-proof-companion-2/H009",
    "type": "human",
    "output_reference": "deliverables/sticker-proof-companion-2.png",
-   "check": "Any ampersand set in Cirka Bold on “Transparent sticker proof - Companion 2” (sticker-proof-companion-2.png) is 1.6 times the cap height of the capitals beside it, never at cap height.",
+   "check": "Any ampersand set in DM Serif Display Regular on “Transparent sticker proof - Companion 2” (sticker-proof-companion-2.png) is 1.6 times the cap height of the capitals beside it, never at cap height.",
    "answer_type": "yes_no",
    "allowed_answers": [
     "Yes",
@@ -6756,17 +7183,26 @@
    "pass_answer": "Yes",
    "answer": null,
    "status": "not_assessed",
-   "source_statement": "Any ampersand set in Cirka Bold on “Transparent sticker proof - Companion 2” (sticker-proof-companion-2.png) is 1.6 times the cap height of the capitals beside it, never at cap height.",
+   "source_statement": "Any ampersand set in DM Serif Display Regular on “Transparent sticker proof - Companion 2” (sticker-proof-companion-2.png) is 1.6 times the cap height of the capitals beside it, never at cap height.",
    "evidence_reference": "Brand type system rule: Never set the ampersand at cap height. It is always 1.6 times the cap height of MERIDIAN and ASH.",
    "artifact_name": "Transparent sticker proof - Companion 2",
    "artifact_file": "sticker-proof-companion-2.png",
-   "requirement": "Any ampersand set in Cirka Bold on “Transparent sticker proof - Companion 2” (sticker-proof-companion-2.png) is 1.6 times the cap height of the capitals beside it, never at cap height.",
-   "pass_condition": "Any ampersand set in Cirka Bold on “Transparent sticker proof - Companion 2” (sticker-proof-companion-2.png) is 1.6 times the cap height of the capitals beside it, never at cap height.",
-   "reference_assets": [],
+   "requirement": "Any ampersand set in DM Serif Display Regular on “Transparent sticker proof - Companion 2” (sticker-proof-companion-2.png) is 1.6 times the cap height of the capitals beside it, never at cap height.",
+   "pass_condition": "Any ampersand set in DM Serif Display Regular on “Transparent sticker proof - Companion 2” (sticker-proof-companion-2.png) is 1.6 times the cap height of the capitals beside it, never at cap height.",
+   "reference_assets": [
+    {
+     "filename": "fonts/DMSerifDisplay-Regular.ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/VECTOR-04/fonts/DMSerifDisplay-Regular.ttf"
+    },
+    {
+     "filename": "fonts/LibreFranklin[wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/VECTOR-04/fonts/LibreFranklin%5Bwght%5D.ttf"
+    }
+   ],
    "k_id": "K2_Q3",
    "k_label": "Brand-system compliance",
    "origin": "review_feedback_2026_09_25",
-   "revision": "2026-09-25 review feedback"
+   "revision": "pilot13_inputs_2026_10_14"
   },
   {
    "task_id": "VECTOR-04",
@@ -6774,7 +7210,7 @@
    "check_id": "VECTOR-04/sticker-proof-companion-2/H010",
    "type": "human",
    "output_reference": "deliverables/sticker-proof-companion-2.png",
-   "check": "Any ampersand set in Cirka Bold on “Transparent sticker proof - Companion 2” (sticker-proof-companion-2.png) hangs below the arc or baseline into the artwork, never sitting on the baseline.",
+   "check": "Any ampersand set in DM Serif Display Regular on “Transparent sticker proof - Companion 2” (sticker-proof-companion-2.png) hangs below the arc or baseline into the artwork, never sitting on the baseline.",
    "answer_type": "yes_no",
    "allowed_answers": [
     "Yes",
@@ -6783,17 +7219,26 @@
    "pass_answer": "Yes",
    "answer": null,
    "status": "not_assessed",
-   "source_statement": "Any ampersand set in Cirka Bold on “Transparent sticker proof - Companion 2” (sticker-proof-companion-2.png) hangs below the arc or baseline into the artwork, never sitting on the baseline.",
+   "source_statement": "Any ampersand set in DM Serif Display Regular on “Transparent sticker proof - Companion 2” (sticker-proof-companion-2.png) hangs below the arc or baseline into the artwork, never sitting on the baseline.",
    "evidence_reference": "Brand type system rule: The ampersand always hangs below the arc, into the artwork, never sitting on the baseline.",
    "artifact_name": "Transparent sticker proof - Companion 2",
    "artifact_file": "sticker-proof-companion-2.png",
-   "requirement": "Any ampersand set in Cirka Bold on “Transparent sticker proof - Companion 2” (sticker-proof-companion-2.png) hangs below the arc or baseline into the artwork, never sitting on the baseline.",
-   "pass_condition": "Any ampersand set in Cirka Bold on “Transparent sticker proof - Companion 2” (sticker-proof-companion-2.png) hangs below the arc or baseline into the artwork, never sitting on the baseline.",
-   "reference_assets": [],
+   "requirement": "Any ampersand set in DM Serif Display Regular on “Transparent sticker proof - Companion 2” (sticker-proof-companion-2.png) hangs below the arc or baseline into the artwork, never sitting on the baseline.",
+   "pass_condition": "Any ampersand set in DM Serif Display Regular on “Transparent sticker proof - Companion 2” (sticker-proof-companion-2.png) hangs below the arc or baseline into the artwork, never sitting on the baseline.",
+   "reference_assets": [
+    {
+     "filename": "fonts/DMSerifDisplay-Regular.ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/VECTOR-04/fonts/DMSerifDisplay-Regular.ttf"
+    },
+    {
+     "filename": "fonts/LibreFranklin[wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/VECTOR-04/fonts/LibreFranklin%5Bwght%5D.ttf"
+    }
+   ],
    "k_id": "K2_Q3",
    "k_label": "Brand-system compliance",
    "origin": "review_feedback_2026_09_25",
-   "revision": "2026-09-25 review feedback"
+   "revision": "pilot13_inputs_2026_10_14"
   },
   {
    "task_id": "VECTOR-04",
@@ -6811,7 +7256,7 @@
    "answer": null,
    "status": "not_assessed",
    "source_statement": "No line of copy on “Transparent sticker proof - Companion 2” (sticker-proof-companion-2.png) runs longer than 65 characters.",
-   "evidence_reference": "Type system step 03: Brandon Text Regular 400, tracking 0, max 65 characters, for every line of sticker copy.",
+   "evidence_reference": "Type system step 03: Libre Franklin Regular 400, tracking 0, max 65 characters, for every line of sticker copy.",
    "artifact_name": "Transparent sticker proof - Companion 2",
    "artifact_file": "sticker-proof-companion-2.png",
    "requirement": "No line of copy on “Transparent sticker proof - Companion 2” (sticker-proof-companion-2.png) runs longer than 65 characters.",
@@ -6820,7 +7265,7 @@
    "k_id": "K2_Q3",
    "k_label": "Brand-system compliance",
    "origin": "review_feedback_2026_09_25",
-   "revision": "2026-09-25 review feedback"
+   "revision": "pilot13_inputs_2026_10_14"
   },
   {
    "task_id": "VECTOR-04",
@@ -7551,7 +7996,7 @@
    "check_id": "VECTOR-04/gang-sheet/H021",
    "type": "human",
    "output_reference": "deliverables/gang-sheet.pdf",
-   "check": "Any label, slug or die line note on “Sticker imposed production sheet” (gang-sheet.pdf) is set in Brandon Text Bold 700 capitals, not Cirka Bold and not a regular weight.",
+   "check": "Any label, slug or die line note on “Sticker imposed production sheet” (gang-sheet.pdf) is set in Libre Franklin Bold 700 capitals, not DM Serif Display Regular and not a regular weight.",
    "answer_type": "yes_no",
    "allowed_answers": [
     "Yes",
@@ -7560,17 +8005,26 @@
    "pass_answer": "Yes",
    "answer": null,
    "status": "not_assessed",
-   "source_statement": "Any label, slug or die line note on “Sticker imposed production sheet” (gang-sheet.pdf) is set in Brandon Text Bold 700 capitals, not Cirka Bold and not a regular weight.",
-   "evidence_reference": "Type system step 04: fine print is Brandon Text Bold, capitals only, Bold 700. Gang sheet capitals, die line notes and slug labels in the artwork margin. Brandon Text Bold 700 only, never Cirka. Brand type system rule: Cirka Bold is display only; Brandon Text Regular 400 sets sticker copy and Brandon Text Bold 700 the gang sheet capitals.",
+   "source_statement": "Any label, slug or die line note on “Sticker imposed production sheet” (gang-sheet.pdf) is set in Libre Franklin Bold 700 capitals, not DM Serif Display Regular and not a regular weight.",
+   "evidence_reference": "Type system step 04: fine print is Libre Franklin Bold, capitals only, Bold 700. Gang sheet capitals, die line notes and slug labels in the artwork margin. Libre Franklin Bold 700 only, never DM Serif Display. Brand type system rule: DM Serif Display Regular is display only; Libre Franklin Regular 400 sets sticker copy and Libre Franklin Bold 700 the gang sheet capitals.",
    "artifact_name": "Sticker imposed production sheet",
    "artifact_file": "gang-sheet.pdf",
-   "requirement": "Any label, slug or die line note on “Sticker imposed production sheet” (gang-sheet.pdf) is set in Brandon Text Bold 700 capitals, not Cirka Bold and not a regular weight.",
-   "pass_condition": "Any label, slug or die line note on “Sticker imposed production sheet” (gang-sheet.pdf) is set in Brandon Text Bold 700 capitals, not Cirka Bold and not a regular weight.",
-   "reference_assets": [],
+   "requirement": "Any label, slug or die line note on “Sticker imposed production sheet” (gang-sheet.pdf) is set in Libre Franklin Bold 700 capitals, not DM Serif Display Regular and not a regular weight.",
+   "pass_condition": "Any label, slug or die line note on “Sticker imposed production sheet” (gang-sheet.pdf) is set in Libre Franklin Bold 700 capitals, not DM Serif Display Regular and not a regular weight.",
+   "reference_assets": [
+    {
+     "filename": "fonts/DMSerifDisplay-Regular.ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/VECTOR-04/fonts/DMSerifDisplay-Regular.ttf"
+    },
+    {
+     "filename": "fonts/LibreFranklin[wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/VECTOR-04/fonts/LibreFranklin%5Bwght%5D.ttf"
+    }
+   ],
    "k_id": "K2_Q3",
    "k_label": "Brand-system compliance",
    "origin": "review_feedback_2026_09_25",
-   "revision": "2026-09-25 review feedback"
+   "revision": "pilot13_inputs_2026_10_14"
   },
   {
    "task_id": "VECTOR-04",
@@ -7588,7 +8042,7 @@
    "answer": null,
    "status": "not_assessed",
    "source_statement": "Any label, slug or die line note on “Sticker imposed production sheet” (gang-sheet.pdf) is tracked plus 0.040 em.",
-   "evidence_reference": "Type system step 04: Brandon Text Bold 700 capitals, tracking plus 0.040 em.",
+   "evidence_reference": "Type system step 04: Libre Franklin Bold 700 capitals, tracking plus 0.040 em.",
    "artifact_name": "Sticker imposed production sheet",
    "artifact_file": "gang-sheet.pdf",
    "requirement": "Any label, slug or die line note on “Sticker imposed production sheet” (gang-sheet.pdf) is tracked plus 0.040 em.",
@@ -7597,7 +8051,7 @@
    "k_id": "K2_Q3",
    "k_label": "Brand-system compliance",
    "origin": "review_feedback_2026_09_25",
-   "revision": "2026-09-25 review feedback"
+   "revision": "pilot13_inputs_2026_10_14"
   },
   {
    "task_id": "VECTOR-04",
@@ -7833,7 +8287,7 @@
    "check_id": "VECTOR-04/sticker-proof-window-mark/H008",
    "type": "human",
    "output_reference": "deliverables/sticker-proof-window-mark.png",
-   "check": "The MERIDIAN & ASH lettering on “Transparent sticker proof - Window mark” (sticker-proof-window-mark.png) keeps the letterforms, arc and ampersand painted in meridian_window_mark.jpg, not reset in Cirka Bold or another typeface.",
+   "check": "The MERIDIAN & ASH lettering on “Transparent sticker proof - Window mark” (sticker-proof-window-mark.png) keeps the letterforms, arc and ampersand painted in meridian_window_mark.jpg, not reset in DM Serif Display Regular or another typeface.",
    "answer_type": "yes_no",
    "allowed_answers": [
     "Yes",
@@ -7842,22 +8296,30 @@
    "pass_answer": "Yes",
    "answer": null,
    "status": "not_assessed",
-   "source_statement": "The MERIDIAN & ASH lettering on “Transparent sticker proof - Window mark” (sticker-proof-window-mark.png) keeps the letterforms, arc and ampersand painted in meridian_window_mark.jpg, not reset in Cirka Bold or another typeface.",
-   "evidence_reference": "Brief, pinned: the window mark's painted lettering is traced as painted rather than reset in a typeface. Brief: the brand type system's arch, ampersand and Cirka Bold rules govern newly set lettering only; the recovered window mark keeps its painted arc and ampersand exactly as painted. Supplied photo meridian_window_mark.jpg shows the painted lettering. Brand assets status: The window mark was hand painted on the shop glass in 2018 by a sign painter who never handed over a file. Truth constraint: Recover only features supported by the references; do not describe an automatic trace as engraving, cutting, embroidery, or press ready without inspectable path evidence.",
+   "source_statement": "The MERIDIAN & ASH lettering on “Transparent sticker proof - Window mark” (sticker-proof-window-mark.png) keeps the letterforms, arc and ampersand painted in meridian_window_mark.jpg, not reset in DM Serif Display Regular or another typeface.",
+   "evidence_reference": "Brief, pinned: the window mark's painted lettering is traced as painted rather than reset in a typeface. Brief: the brand type system's arch, ampersand and DM Serif Display Regular rules govern newly set lettering only; the recovered window mark keeps its painted arc and ampersand exactly as painted. Supplied photo meridian_window_mark.jpg shows the painted lettering. Brand assets status: The window mark was hand painted on the shop glass in 2018 by a sign painter who never handed over a file. Truth constraint: Recover only features supported by the references; do not describe an automatic trace as engraving, cutting, embroidery, or press ready without inspectable path evidence.",
    "artifact_name": "Transparent sticker proof - Window mark",
    "artifact_file": "sticker-proof-window-mark.png",
-   "requirement": "The MERIDIAN & ASH lettering on “Transparent sticker proof - Window mark” (sticker-proof-window-mark.png) keeps the letterforms, arc and ampersand painted in meridian_window_mark.jpg, not reset in Cirka Bold or another typeface.",
-   "pass_condition": "The MERIDIAN & ASH lettering on “Transparent sticker proof - Window mark” (sticker-proof-window-mark.png) keeps the letterforms, arc and ampersand painted in meridian_window_mark.jpg, not reset in Cirka Bold or another typeface.",
+   "requirement": "The MERIDIAN & ASH lettering on “Transparent sticker proof - Window mark” (sticker-proof-window-mark.png) keeps the letterforms, arc and ampersand painted in meridian_window_mark.jpg, not reset in DM Serif Display Regular or another typeface.",
+   "pass_condition": "The MERIDIAN & ASH lettering on “Transparent sticker proof - Window mark” (sticker-proof-window-mark.png) keeps the letterforms, arc and ampersand painted in meridian_window_mark.jpg, not reset in DM Serif Display Regular or another typeface.",
    "reference_assets": [
     {
      "filename": "meridian_window_mark.jpg",
      "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/tasks/SB3-034-VEC__meridian-and-ash-sticker-artwork-production-masters/assets/meridian_window_mark.jpg"
+    },
+    {
+     "filename": "fonts/DMSerifDisplay-Regular.ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/VECTOR-04/fonts/DMSerifDisplay-Regular.ttf"
+    },
+    {
+     "filename": "fonts/LibreFranklin[wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/VECTOR-04/fonts/LibreFranklin%5Bwght%5D.ttf"
     }
    ],
    "k_id": "K2_Q4",
    "k_label": "Identity fidelity",
    "origin": "review_feedback_2026_09_25",
-   "revision": "2026-09-25 review feedback"
+   "revision": "pilot13_inputs_2026_10_14"
   },
   {
    "task_id": "VECTOR-04",
@@ -7907,7 +8369,7 @@
    "answer": null,
    "status": "not_assessed",
    "source_statement": "The MERIDIAN & ASH wordmark is the largest lettering in “Transparent sticker proof - Window mark” (sticker-proof-window-mark.png).",
-   "evidence_reference": "Brief, pinned: the window mark's painted lettering is traced as painted rather than reset in a typeface. Brief: the brand type system's arch, ampersand and Cirka Bold rules govern newly set lettering only; the recovered window mark keeps its painted arc and ampersand exactly as painted. Supplied photo meridian_window_mark.jpg shows the arched MERIDIAN & ASH wordmark over the filled roundel as the only lettering.",
+   "evidence_reference": "Brief, pinned: the window mark's painted lettering is traced as painted rather than reset in a typeface. Brief: the brand type system's arch, ampersand and DM Serif Display Regular rules govern newly set lettering only; the recovered window mark keeps its painted arc and ampersand exactly as painted. Supplied photo meridian_window_mark.jpg shows the arched MERIDIAN & ASH wordmark over the filled roundel as the only lettering.",
    "artifact_name": "Transparent sticker proof - Window mark",
    "artifact_file": "sticker-proof-window-mark.png",
    "requirement": "The MERIDIAN & ASH wordmark is the largest lettering in “Transparent sticker proof - Window mark” (sticker-proof-window-mark.png).",
@@ -7921,7 +8383,7 @@
    "k_id": "K5_Q1",
    "k_label": "Primary-message recovery",
    "origin": "review_feedback_2026_09_25",
-   "revision": "2026-09-25 review feedback"
+   "revision": "pilot13_inputs_2026_10_14"
   },
   {
    "task_id": "VECTOR-04",
@@ -7939,7 +8401,7 @@
    "answer": null,
    "status": "not_assessed",
    "source_statement": "In “Transparent sticker proof - Window mark” (sticker-proof-window-mark.png) the MERIDIAN & ASH wordmark arches above the filled roundel, as painted in meridian_window_mark.jpg, not below or beside it.",
-   "evidence_reference": "Brief, pinned: the window mark's painted lettering is traced as painted rather than reset in a typeface. Brief: the brand type system's arch, ampersand and Cirka Bold rules govern newly set lettering only; the recovered window mark keeps its painted arc and ampersand exactly as painted. Supplied photo meridian_window_mark.jpg shows the MERIDIAN & ASH wordmark arched over the filled roundel.",
+   "evidence_reference": "Brief, pinned: the window mark's painted lettering is traced as painted rather than reset in a typeface. Brief: the brand type system's arch, ampersand and DM Serif Display Regular rules govern newly set lettering only; the recovered window mark keeps its painted arc and ampersand exactly as painted. Supplied photo meridian_window_mark.jpg shows the MERIDIAN & ASH wordmark arched over the filled roundel.",
    "artifact_name": "Transparent sticker proof - Window mark",
    "artifact_file": "sticker-proof-window-mark.png",
    "requirement": "In “Transparent sticker proof - Window mark” (sticker-proof-window-mark.png) the MERIDIAN & ASH wordmark arches above the filled roundel, as painted in meridian_window_mark.jpg, not below or beside it.",
@@ -7953,7 +8415,7 @@
    "k_id": "K5_Q2",
    "k_label": "Information hierarchy",
    "origin": "review_feedback_2026_09_25",
-   "revision": "2026-09-25 review feedback"
+   "revision": "pilot13_inputs_2026_10_14"
   },
   {
    "task_id": "VECTOR-04",
@@ -8220,7 +8682,7 @@
    "answer": null,
    "status": "not_assessed",
    "source_statement": "The MERIDIAN & ASH wordmark is the largest lettering in “Recovered sticker artwork - Window mark” (recovered-sticker-window-mark.svg).",
-   "evidence_reference": "Brief, pinned: the window mark's painted lettering is traced as painted rather than reset in a typeface. Brief: the brand type system's arch, ampersand and Cirka Bold rules govern newly set lettering only; the recovered window mark keeps its painted arc and ampersand exactly as painted. Supplied photo meridian_window_mark.jpg shows the arched MERIDIAN & ASH wordmark over the filled roundel as the only lettering.",
+   "evidence_reference": "Brief, pinned: the window mark's painted lettering is traced as painted rather than reset in a typeface. Brief: the brand type system's arch, ampersand and DM Serif Display Regular rules govern newly set lettering only; the recovered window mark keeps its painted arc and ampersand exactly as painted. Supplied photo meridian_window_mark.jpg shows the arched MERIDIAN & ASH wordmark over the filled roundel as the only lettering.",
    "artifact_name": "Recovered sticker artwork - Window mark",
    "artifact_file": "recovered-sticker-window-mark.svg",
    "requirement": "The MERIDIAN & ASH wordmark is the largest lettering in “Recovered sticker artwork - Window mark” (recovered-sticker-window-mark.svg).",
@@ -8234,7 +8696,7 @@
    "k_id": "K5_Q1",
    "k_label": "Primary-message recovery",
    "origin": "objective_coverage_2026-09-19",
-   "revision": "2026-09-25 review feedback"
+   "revision": "pilot13_inputs_2026_10_14"
   },
   {
    "task_id": "VECTOR-04",
@@ -8252,7 +8714,7 @@
    "answer": null,
    "status": "not_assessed",
    "source_statement": "In “Recovered sticker artwork - Window mark” (recovered-sticker-window-mark.svg) the MERIDIAN & ASH wordmark arches above the filled roundel, as painted in meridian_window_mark.jpg, not below or beside it.",
-   "evidence_reference": "Brief, pinned: the window mark's painted lettering is traced as painted rather than reset in a typeface. Brief: the brand type system's arch, ampersand and Cirka Bold rules govern newly set lettering only; the recovered window mark keeps its painted arc and ampersand exactly as painted. Supplied photo meridian_window_mark.jpg shows the MERIDIAN & ASH wordmark arched over the filled roundel.",
+   "evidence_reference": "Brief, pinned: the window mark's painted lettering is traced as painted rather than reset in a typeface. Brief: the brand type system's arch, ampersand and DM Serif Display Regular rules govern newly set lettering only; the recovered window mark keeps its painted arc and ampersand exactly as painted. Supplied photo meridian_window_mark.jpg shows the MERIDIAN & ASH wordmark arched over the filled roundel.",
    "artifact_name": "Recovered sticker artwork - Window mark",
    "artifact_file": "recovered-sticker-window-mark.svg",
    "requirement": "In “Recovered sticker artwork - Window mark” (recovered-sticker-window-mark.svg) the MERIDIAN & ASH wordmark arches above the filled roundel, as painted in meridian_window_mark.jpg, not below or beside it.",
@@ -8266,7 +8728,7 @@
    "k_id": "K5_Q2",
    "k_label": "Information hierarchy",
    "origin": "objective_coverage_2026-09-19",
-   "revision": "2026-09-25 review feedback"
+   "revision": "pilot13_inputs_2026_10_14"
   },
   {
    "task_id": "VECTOR-04",
@@ -8402,7 +8864,7 @@
    "check_id": "VECTOR-04/recovered-sticker-window-mark/H010",
    "type": "human",
    "output_reference": "deliverables/recovered-sticker-window-mark.svg",
-   "check": "The MERIDIAN & ASH lettering on “Recovered sticker artwork - Window mark” (recovered-sticker-window-mark.svg) keeps the letterforms, arc and ampersand painted in meridian_window_mark.jpg, not reset in Cirka Bold or another typeface.",
+   "check": "The MERIDIAN & ASH lettering on “Recovered sticker artwork - Window mark” (recovered-sticker-window-mark.svg) keeps the letterforms, arc and ampersand painted in meridian_window_mark.jpg, not reset in DM Serif Display Regular or another typeface.",
    "answer_type": "yes_no",
    "allowed_answers": [
     "Yes",
@@ -8411,22 +8873,30 @@
    "pass_answer": "Yes",
    "answer": null,
    "status": "not_assessed",
-   "source_statement": "The MERIDIAN & ASH lettering on “Recovered sticker artwork - Window mark” (recovered-sticker-window-mark.svg) keeps the letterforms, arc and ampersand painted in meridian_window_mark.jpg, not reset in Cirka Bold or another typeface.",
-   "evidence_reference": "Brief, pinned: the window mark's painted lettering is traced as painted rather than reset in a typeface. Brief: the brand type system's arch, ampersand and Cirka Bold rules govern newly set lettering only; the recovered window mark keeps its painted arc and ampersand exactly as painted. Supplied photo meridian_window_mark.jpg shows the painted lettering. Brand assets status: The window mark was hand painted on the shop glass in 2018 by a sign painter who never handed over a file. Truth constraint: Recover only features supported by the references; do not describe an automatic trace as engraving, cutting, embroidery, or press ready without inspectable path evidence.",
+   "source_statement": "The MERIDIAN & ASH lettering on “Recovered sticker artwork - Window mark” (recovered-sticker-window-mark.svg) keeps the letterforms, arc and ampersand painted in meridian_window_mark.jpg, not reset in DM Serif Display Regular or another typeface.",
+   "evidence_reference": "Brief, pinned: the window mark's painted lettering is traced as painted rather than reset in a typeface. Brief: the brand type system's arch, ampersand and DM Serif Display Regular rules govern newly set lettering only; the recovered window mark keeps its painted arc and ampersand exactly as painted. Supplied photo meridian_window_mark.jpg shows the painted lettering. Brand assets status: The window mark was hand painted on the shop glass in 2018 by a sign painter who never handed over a file. Truth constraint: Recover only features supported by the references; do not describe an automatic trace as engraving, cutting, embroidery, or press ready without inspectable path evidence.",
    "artifact_name": "Recovered sticker artwork - Window mark",
    "artifact_file": "recovered-sticker-window-mark.svg",
-   "requirement": "The MERIDIAN & ASH lettering on “Recovered sticker artwork - Window mark” (recovered-sticker-window-mark.svg) keeps the letterforms, arc and ampersand painted in meridian_window_mark.jpg, not reset in Cirka Bold or another typeface.",
-   "pass_condition": "The MERIDIAN & ASH lettering on “Recovered sticker artwork - Window mark” (recovered-sticker-window-mark.svg) keeps the letterforms, arc and ampersand painted in meridian_window_mark.jpg, not reset in Cirka Bold or another typeface.",
+   "requirement": "The MERIDIAN & ASH lettering on “Recovered sticker artwork - Window mark” (recovered-sticker-window-mark.svg) keeps the letterforms, arc and ampersand painted in meridian_window_mark.jpg, not reset in DM Serif Display Regular or another typeface.",
+   "pass_condition": "The MERIDIAN & ASH lettering on “Recovered sticker artwork - Window mark” (recovered-sticker-window-mark.svg) keeps the letterforms, arc and ampersand painted in meridian_window_mark.jpg, not reset in DM Serif Display Regular or another typeface.",
    "reference_assets": [
     {
      "filename": "meridian_window_mark.jpg",
      "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/tasks/SB3-034-VEC__meridian-and-ash-sticker-artwork-production-masters/assets/meridian_window_mark.jpg"
+    },
+    {
+     "filename": "fonts/DMSerifDisplay-Regular.ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/VECTOR-04/fonts/DMSerifDisplay-Regular.ttf"
+    },
+    {
+     "filename": "fonts/LibreFranklin[wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/VECTOR-04/fonts/LibreFranklin%5Bwght%5D.ttf"
     }
    ],
    "k_id": "K2_Q4",
    "k_label": "Identity fidelity",
    "origin": "review_feedback_2026_09_25",
-   "revision": "2026-09-25 review feedback"
+   "revision": "pilot13_inputs_2026_10_14"
   },
   {
    "task_id": "VECTOR-04",
@@ -9090,7 +9560,7 @@
    "check_id": "VECTOR-04/new-sticker-companion-1/H008",
    "type": "human",
    "output_reference": "deliverables/new-sticker-companion-1.svg",
-   "check": "On “Original companion sticker - Companion 1” (new-sticker-companion-1.svg), any MERIDIAN & ASH wordmark, heading or subheading is Cirka Bold capitals, or the painted wordmark reused unchanged from recovered-sticker-window-mark.svg; all other copy is Brandon Text Regular 400.",
+   "check": "On “Original companion sticker - Companion 1” (new-sticker-companion-1.svg), any MERIDIAN & ASH wordmark, heading or subheading is DM Serif Display Regular capitals, or the painted wordmark reused unchanged from recovered-sticker-window-mark.svg; all other copy is Libre Franklin Regular 400.",
    "answer_type": "yes_no",
    "allowed_answers": [
     "Yes",
@@ -9099,17 +9569,26 @@
    "pass_answer": "Yes",
    "answer": null,
    "status": "not_assessed",
-   "source_statement": "On “Original companion sticker - Companion 1” (new-sticker-companion-1.svg), any MERIDIAN & ASH wordmark, heading or subheading is Cirka Bold capitals, or the painted wordmark reused unchanged from recovered-sticker-window-mark.svg; all other copy is Brandon Text Regular 400.",
-   "evidence_reference": "Brand typography: Meridian and Ash runs on Cirka Bold for display and Brandon Text for everything else. Brief: the brand type system's arch, ampersand and Cirka Bold rules govern newly set lettering only; the recovered window mark keeps its painted arc and ampersand exactly as painted. Brand type system rule: Hand made, not franchise: the artwork is drawn once and reused, never redrawn slightly differently each batch. Brand type system rule: Cirka Bold is display only; Brandon Text Regular 400 sets sticker copy and Brandon Text Bold 700 the gang sheet capitals. Type system steps 01 (wordmark) and 02 (subheading and headers): Cirka Bold, capitals only. Step 03: Brandon Text Regular 400 for the supporting line and every line of sticker copy.",
+   "source_statement": "On “Original companion sticker - Companion 1” (new-sticker-companion-1.svg), any MERIDIAN & ASH wordmark, heading or subheading is DM Serif Display Regular capitals, or the painted wordmark reused unchanged from recovered-sticker-window-mark.svg; all other copy is Libre Franklin Regular 400.",
+   "evidence_reference": "Brand typography: Meridian and Ash runs on DM Serif Display Regular for display and Libre Franklin for everything else. Brief: the brand type system's arch, ampersand and DM Serif Display Regular rules govern newly set lettering only; the recovered window mark keeps its painted arc and ampersand exactly as painted. Brand type system rule: Hand made, not franchise: the artwork is drawn once and reused, never redrawn slightly differently each batch. Brand type system rule: DM Serif Display Regular is display only; Libre Franklin Regular 400 sets sticker copy and Libre Franklin Bold 700 the gang sheet capitals. Type system steps 01 (wordmark) and 02 (subheading and headers): DM Serif Display Regular, capitals only. Step 03: Libre Franklin Regular 400 for the supporting line and every line of sticker copy.",
    "artifact_name": "Original companion sticker - Companion 1",
    "artifact_file": "new-sticker-companion-1.svg",
-   "requirement": "On “Original companion sticker - Companion 1” (new-sticker-companion-1.svg), any MERIDIAN & ASH wordmark, heading or subheading is Cirka Bold capitals, or the painted wordmark reused unchanged from recovered-sticker-window-mark.svg; all other copy is Brandon Text Regular 400.",
-   "pass_condition": "On “Original companion sticker - Companion 1” (new-sticker-companion-1.svg), any MERIDIAN & ASH wordmark, heading or subheading is Cirka Bold capitals, or the painted wordmark reused unchanged from recovered-sticker-window-mark.svg; all other copy is Brandon Text Regular 400.",
-   "reference_assets": [],
+   "requirement": "On “Original companion sticker - Companion 1” (new-sticker-companion-1.svg), any MERIDIAN & ASH wordmark, heading or subheading is DM Serif Display Regular capitals, or the painted wordmark reused unchanged from recovered-sticker-window-mark.svg; all other copy is Libre Franklin Regular 400.",
+   "pass_condition": "On “Original companion sticker - Companion 1” (new-sticker-companion-1.svg), any MERIDIAN & ASH wordmark, heading or subheading is DM Serif Display Regular capitals, or the painted wordmark reused unchanged from recovered-sticker-window-mark.svg; all other copy is Libre Franklin Regular 400.",
+   "reference_assets": [
+    {
+     "filename": "fonts/DMSerifDisplay-Regular.ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/VECTOR-04/fonts/DMSerifDisplay-Regular.ttf"
+    },
+    {
+     "filename": "fonts/LibreFranklin[wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/VECTOR-04/fonts/LibreFranklin%5Bwght%5D.ttf"
+    }
+   ],
    "k_id": "K2_Q3",
    "k_label": "Brand-system compliance",
    "origin": "review_feedback_2026_09_25",
-   "revision": "2026-09-25 review feedback"
+   "revision": "pilot13_inputs_2026_10_14"
   },
   {
    "task_id": "VECTOR-04",
@@ -9117,7 +9596,7 @@
    "check_id": "VECTOR-04/new-sticker-companion-1/H009",
    "type": "human",
    "output_reference": "deliverables/new-sticker-companion-1.svg",
-   "check": "Any MERIDIAN & ASH wordmark set in Cirka Bold on “Original companion sticker - Companion 1” (new-sticker-companion-1.svg) arches on a fixed 40 degree curve.",
+   "check": "Any MERIDIAN & ASH wordmark set in DM Serif Display Regular on “Original companion sticker - Companion 1” (new-sticker-companion-1.svg) arches on a fixed 40 degree curve.",
    "answer_type": "yes_no",
    "allowed_answers": [
     "Yes",
@@ -9126,17 +9605,26 @@
    "pass_answer": "Yes",
    "answer": null,
    "status": "not_assessed",
-   "source_statement": "Any MERIDIAN & ASH wordmark set in Cirka Bold on “Original companion sticker - Companion 1” (new-sticker-companion-1.svg) arches on a fixed 40 degree curve.",
+   "source_statement": "Any MERIDIAN & ASH wordmark set in DM Serif Display Regular on “Original companion sticker - Companion 1” (new-sticker-companion-1.svg) arches on a fixed 40 degree curve.",
    "evidence_reference": "Brand type system rule: MERIDIAN and ASH always arch on a fixed 40 degree curve, at every size.",
    "artifact_name": "Original companion sticker - Companion 1",
    "artifact_file": "new-sticker-companion-1.svg",
-   "requirement": "Any MERIDIAN & ASH wordmark set in Cirka Bold on “Original companion sticker - Companion 1” (new-sticker-companion-1.svg) arches on a fixed 40 degree curve.",
-   "pass_condition": "Any MERIDIAN & ASH wordmark set in Cirka Bold on “Original companion sticker - Companion 1” (new-sticker-companion-1.svg) arches on a fixed 40 degree curve.",
-   "reference_assets": [],
+   "requirement": "Any MERIDIAN & ASH wordmark set in DM Serif Display Regular on “Original companion sticker - Companion 1” (new-sticker-companion-1.svg) arches on a fixed 40 degree curve.",
+   "pass_condition": "Any MERIDIAN & ASH wordmark set in DM Serif Display Regular on “Original companion sticker - Companion 1” (new-sticker-companion-1.svg) arches on a fixed 40 degree curve.",
+   "reference_assets": [
+    {
+     "filename": "fonts/DMSerifDisplay-Regular.ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/VECTOR-04/fonts/DMSerifDisplay-Regular.ttf"
+    },
+    {
+     "filename": "fonts/LibreFranklin[wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/VECTOR-04/fonts/LibreFranklin%5Bwght%5D.ttf"
+    }
+   ],
    "k_id": "K2_Q3",
    "k_label": "Brand-system compliance",
    "origin": "review_feedback_2026_09_25",
-   "revision": "2026-09-25 review feedback"
+   "revision": "pilot13_inputs_2026_10_14"
   },
   {
    "task_id": "VECTOR-04",
@@ -9144,7 +9632,7 @@
    "check_id": "VECTOR-04/new-sticker-companion-1/H010",
    "type": "human",
    "output_reference": "deliverables/new-sticker-companion-1.svg",
-   "check": "Any ampersand set in Cirka Bold on “Original companion sticker - Companion 1” (new-sticker-companion-1.svg) is 1.6 times the cap height of the capitals beside it, never at cap height.",
+   "check": "Any ampersand set in DM Serif Display Regular on “Original companion sticker - Companion 1” (new-sticker-companion-1.svg) is 1.6 times the cap height of the capitals beside it, never at cap height.",
    "answer_type": "yes_no",
    "allowed_answers": [
     "Yes",
@@ -9153,17 +9641,26 @@
    "pass_answer": "Yes",
    "answer": null,
    "status": "not_assessed",
-   "source_statement": "Any ampersand set in Cirka Bold on “Original companion sticker - Companion 1” (new-sticker-companion-1.svg) is 1.6 times the cap height of the capitals beside it, never at cap height.",
+   "source_statement": "Any ampersand set in DM Serif Display Regular on “Original companion sticker - Companion 1” (new-sticker-companion-1.svg) is 1.6 times the cap height of the capitals beside it, never at cap height.",
    "evidence_reference": "Brand type system rule: Never set the ampersand at cap height. It is always 1.6 times the cap height of MERIDIAN and ASH.",
    "artifact_name": "Original companion sticker - Companion 1",
    "artifact_file": "new-sticker-companion-1.svg",
-   "requirement": "Any ampersand set in Cirka Bold on “Original companion sticker - Companion 1” (new-sticker-companion-1.svg) is 1.6 times the cap height of the capitals beside it, never at cap height.",
-   "pass_condition": "Any ampersand set in Cirka Bold on “Original companion sticker - Companion 1” (new-sticker-companion-1.svg) is 1.6 times the cap height of the capitals beside it, never at cap height.",
-   "reference_assets": [],
+   "requirement": "Any ampersand set in DM Serif Display Regular on “Original companion sticker - Companion 1” (new-sticker-companion-1.svg) is 1.6 times the cap height of the capitals beside it, never at cap height.",
+   "pass_condition": "Any ampersand set in DM Serif Display Regular on “Original companion sticker - Companion 1” (new-sticker-companion-1.svg) is 1.6 times the cap height of the capitals beside it, never at cap height.",
+   "reference_assets": [
+    {
+     "filename": "fonts/DMSerifDisplay-Regular.ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/VECTOR-04/fonts/DMSerifDisplay-Regular.ttf"
+    },
+    {
+     "filename": "fonts/LibreFranklin[wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/VECTOR-04/fonts/LibreFranklin%5Bwght%5D.ttf"
+    }
+   ],
    "k_id": "K2_Q3",
    "k_label": "Brand-system compliance",
    "origin": "review_feedback_2026_09_25",
-   "revision": "2026-09-25 review feedback"
+   "revision": "pilot13_inputs_2026_10_14"
   },
   {
    "task_id": "VECTOR-04",
@@ -9171,7 +9668,7 @@
    "check_id": "VECTOR-04/new-sticker-companion-1/H011",
    "type": "human",
    "output_reference": "deliverables/new-sticker-companion-1.svg",
-   "check": "Any ampersand set in Cirka Bold on “Original companion sticker - Companion 1” (new-sticker-companion-1.svg) hangs below the arc or baseline into the artwork, never sitting on the baseline.",
+   "check": "Any ampersand set in DM Serif Display Regular on “Original companion sticker - Companion 1” (new-sticker-companion-1.svg) hangs below the arc or baseline into the artwork, never sitting on the baseline.",
    "answer_type": "yes_no",
    "allowed_answers": [
     "Yes",
@@ -9180,17 +9677,26 @@
    "pass_answer": "Yes",
    "answer": null,
    "status": "not_assessed",
-   "source_statement": "Any ampersand set in Cirka Bold on “Original companion sticker - Companion 1” (new-sticker-companion-1.svg) hangs below the arc or baseline into the artwork, never sitting on the baseline.",
+   "source_statement": "Any ampersand set in DM Serif Display Regular on “Original companion sticker - Companion 1” (new-sticker-companion-1.svg) hangs below the arc or baseline into the artwork, never sitting on the baseline.",
    "evidence_reference": "Brand type system rule: The ampersand always hangs below the arc, into the artwork, never sitting on the baseline.",
    "artifact_name": "Original companion sticker - Companion 1",
    "artifact_file": "new-sticker-companion-1.svg",
-   "requirement": "Any ampersand set in Cirka Bold on “Original companion sticker - Companion 1” (new-sticker-companion-1.svg) hangs below the arc or baseline into the artwork, never sitting on the baseline.",
-   "pass_condition": "Any ampersand set in Cirka Bold on “Original companion sticker - Companion 1” (new-sticker-companion-1.svg) hangs below the arc or baseline into the artwork, never sitting on the baseline.",
-   "reference_assets": [],
+   "requirement": "Any ampersand set in DM Serif Display Regular on “Original companion sticker - Companion 1” (new-sticker-companion-1.svg) hangs below the arc or baseline into the artwork, never sitting on the baseline.",
+   "pass_condition": "Any ampersand set in DM Serif Display Regular on “Original companion sticker - Companion 1” (new-sticker-companion-1.svg) hangs below the arc or baseline into the artwork, never sitting on the baseline.",
+   "reference_assets": [
+    {
+     "filename": "fonts/DMSerifDisplay-Regular.ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/VECTOR-04/fonts/DMSerifDisplay-Regular.ttf"
+    },
+    {
+     "filename": "fonts/LibreFranklin[wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/VECTOR-04/fonts/LibreFranklin%5Bwght%5D.ttf"
+    }
+   ],
    "k_id": "K2_Q3",
    "k_label": "Brand-system compliance",
    "origin": "review_feedback_2026_09_25",
-   "revision": "2026-09-25 review feedback"
+   "revision": "pilot13_inputs_2026_10_14"
   },
   {
    "task_id": "VECTOR-04",
@@ -9208,7 +9714,7 @@
    "answer": null,
    "status": "not_assessed",
    "source_statement": "No line of copy on “Original companion sticker - Companion 1” (new-sticker-companion-1.svg) runs longer than 65 characters.",
-   "evidence_reference": "Type system step 03: Brandon Text Regular 400, tracking 0, max 65 characters, for every line of sticker copy.",
+   "evidence_reference": "Type system step 03: Libre Franklin Regular 400, tracking 0, max 65 characters, for every line of sticker copy.",
    "artifact_name": "Original companion sticker - Companion 1",
    "artifact_file": "new-sticker-companion-1.svg",
    "requirement": "No line of copy on “Original companion sticker - Companion 1” (new-sticker-companion-1.svg) runs longer than 65 characters.",
@@ -9217,7 +9723,7 @@
    "k_id": "K2_Q3",
    "k_label": "Brand-system compliance",
    "origin": "review_feedback_2026_09_25",
-   "revision": "2026-09-25 review feedback"
+   "revision": "pilot13_inputs_2026_10_14"
   },
   {
    "task_id": "VECTOR-04",
@@ -9257,7 +9763,7 @@
    "check_id": "VECTOR-04/new-sticker-companion-1/H014",
    "type": "human",
    "output_reference": "deliverables/new-sticker-companion-1.svg",
-   "check": "On “Original companion sticker - Companion 1” (new-sticker-companion-1.svg), any Cirka Bold MERIDIAN & ASH wordmark is tracked plus 0.030 em on the arc, any Cirka Bold heading or subheading plus 0.020 em, and Brandon Text copy at zero.",
+   "check": "On “Original companion sticker - Companion 1” (new-sticker-companion-1.svg), any DM Serif Display Regular MERIDIAN & ASH wordmark is tracked plus 0.030 em on the arc, any DM Serif Display Regular heading or subheading plus 0.020 em, and Libre Franklin copy at zero.",
    "answer_type": "yes_no",
    "allowed_answers": [
     "Yes",
@@ -9266,17 +9772,26 @@
    "pass_answer": "Yes",
    "answer": null,
    "status": "not_assessed",
-   "source_statement": "On “Original companion sticker - Companion 1” (new-sticker-companion-1.svg), any Cirka Bold MERIDIAN & ASH wordmark is tracked plus 0.030 em on the arc, any Cirka Bold heading or subheading plus 0.020 em, and Brandon Text copy at zero.",
-   "evidence_reference": "Type system steps 01, 02 and 03: Cirka Bold wordmark tracked plus 0.030 em on the arc; Cirka Bold subheading and header, set flat off the arc, tracked plus 0.020 em; Brandon Text Regular 400 copy tracked 0.",
+   "source_statement": "On “Original companion sticker - Companion 1” (new-sticker-companion-1.svg), any DM Serif Display Regular MERIDIAN & ASH wordmark is tracked plus 0.030 em on the arc, any DM Serif Display Regular heading or subheading plus 0.020 em, and Libre Franklin copy at zero.",
+   "evidence_reference": "Type system steps 01, 02 and 03: DM Serif Display Regular wordmark tracked plus 0.030 em on the arc; DM Serif Display Regular subheading and header, set flat off the arc, tracked plus 0.020 em; Libre Franklin Regular 400 copy tracked 0.",
    "artifact_name": "Original companion sticker - Companion 1",
    "artifact_file": "new-sticker-companion-1.svg",
-   "requirement": "On “Original companion sticker - Companion 1” (new-sticker-companion-1.svg), any Cirka Bold MERIDIAN & ASH wordmark is tracked plus 0.030 em on the arc, any Cirka Bold heading or subheading plus 0.020 em, and Brandon Text copy at zero.",
-   "pass_condition": "On “Original companion sticker - Companion 1” (new-sticker-companion-1.svg), any Cirka Bold MERIDIAN & ASH wordmark is tracked plus 0.030 em on the arc, any Cirka Bold heading or subheading plus 0.020 em, and Brandon Text copy at zero.",
-   "reference_assets": [],
+   "requirement": "On “Original companion sticker - Companion 1” (new-sticker-companion-1.svg), any DM Serif Display Regular MERIDIAN & ASH wordmark is tracked plus 0.030 em on the arc, any DM Serif Display Regular heading or subheading plus 0.020 em, and Libre Franklin copy at zero.",
+   "pass_condition": "On “Original companion sticker - Companion 1” (new-sticker-companion-1.svg), any DM Serif Display Regular MERIDIAN & ASH wordmark is tracked plus 0.030 em on the arc, any DM Serif Display Regular heading or subheading plus 0.020 em, and Libre Franklin copy at zero.",
+   "reference_assets": [
+    {
+     "filename": "fonts/DMSerifDisplay-Regular.ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/VECTOR-04/fonts/DMSerifDisplay-Regular.ttf"
+    },
+    {
+     "filename": "fonts/LibreFranklin[wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/VECTOR-04/fonts/LibreFranklin%5Bwght%5D.ttf"
+    }
+   ],
    "k_id": "K2_Q3",
    "k_label": "Brand-system compliance",
    "origin": "review_feedback_2026_09_25",
-   "revision": "2026-09-25 review feedback"
+   "revision": "pilot13_inputs_2026_10_14"
   },
   {
    "task_id": "VECTOR-04",
@@ -9577,7 +10092,7 @@
    "check_id": "VECTOR-04/new-sticker-companion-2/H008",
    "type": "human",
    "output_reference": "deliverables/new-sticker-companion-2.svg",
-   "check": "On “Original companion sticker - Companion 2” (new-sticker-companion-2.svg), any MERIDIAN & ASH wordmark, heading or subheading is Cirka Bold capitals, or the painted wordmark reused unchanged from recovered-sticker-window-mark.svg; all other copy is Brandon Text Regular 400.",
+   "check": "On “Original companion sticker - Companion 2” (new-sticker-companion-2.svg), any MERIDIAN & ASH wordmark, heading or subheading is DM Serif Display Regular capitals, or the painted wordmark reused unchanged from recovered-sticker-window-mark.svg; all other copy is Libre Franklin Regular 400.",
    "answer_type": "yes_no",
    "allowed_answers": [
     "Yes",
@@ -9586,17 +10101,26 @@
    "pass_answer": "Yes",
    "answer": null,
    "status": "not_assessed",
-   "source_statement": "On “Original companion sticker - Companion 2” (new-sticker-companion-2.svg), any MERIDIAN & ASH wordmark, heading or subheading is Cirka Bold capitals, or the painted wordmark reused unchanged from recovered-sticker-window-mark.svg; all other copy is Brandon Text Regular 400.",
-   "evidence_reference": "Brand typography: Meridian and Ash runs on Cirka Bold for display and Brandon Text for everything else. Brief: the brand type system's arch, ampersand and Cirka Bold rules govern newly set lettering only; the recovered window mark keeps its painted arc and ampersand exactly as painted. Brand type system rule: Hand made, not franchise: the artwork is drawn once and reused, never redrawn slightly differently each batch. Brand type system rule: Cirka Bold is display only; Brandon Text Regular 400 sets sticker copy and Brandon Text Bold 700 the gang sheet capitals. Type system steps 01 (wordmark) and 02 (subheading and headers): Cirka Bold, capitals only. Step 03: Brandon Text Regular 400 for the supporting line and every line of sticker copy.",
+   "source_statement": "On “Original companion sticker - Companion 2” (new-sticker-companion-2.svg), any MERIDIAN & ASH wordmark, heading or subheading is DM Serif Display Regular capitals, or the painted wordmark reused unchanged from recovered-sticker-window-mark.svg; all other copy is Libre Franklin Regular 400.",
+   "evidence_reference": "Brand typography: Meridian and Ash runs on DM Serif Display Regular for display and Libre Franklin for everything else. Brief: the brand type system's arch, ampersand and DM Serif Display Regular rules govern newly set lettering only; the recovered window mark keeps its painted arc and ampersand exactly as painted. Brand type system rule: Hand made, not franchise: the artwork is drawn once and reused, never redrawn slightly differently each batch. Brand type system rule: DM Serif Display Regular is display only; Libre Franklin Regular 400 sets sticker copy and Libre Franklin Bold 700 the gang sheet capitals. Type system steps 01 (wordmark) and 02 (subheading and headers): DM Serif Display Regular, capitals only. Step 03: Libre Franklin Regular 400 for the supporting line and every line of sticker copy.",
    "artifact_name": "Original companion sticker - Companion 2",
    "artifact_file": "new-sticker-companion-2.svg",
-   "requirement": "On “Original companion sticker - Companion 2” (new-sticker-companion-2.svg), any MERIDIAN & ASH wordmark, heading or subheading is Cirka Bold capitals, or the painted wordmark reused unchanged from recovered-sticker-window-mark.svg; all other copy is Brandon Text Regular 400.",
-   "pass_condition": "On “Original companion sticker - Companion 2” (new-sticker-companion-2.svg), any MERIDIAN & ASH wordmark, heading or subheading is Cirka Bold capitals, or the painted wordmark reused unchanged from recovered-sticker-window-mark.svg; all other copy is Brandon Text Regular 400.",
-   "reference_assets": [],
+   "requirement": "On “Original companion sticker - Companion 2” (new-sticker-companion-2.svg), any MERIDIAN & ASH wordmark, heading or subheading is DM Serif Display Regular capitals, or the painted wordmark reused unchanged from recovered-sticker-window-mark.svg; all other copy is Libre Franklin Regular 400.",
+   "pass_condition": "On “Original companion sticker - Companion 2” (new-sticker-companion-2.svg), any MERIDIAN & ASH wordmark, heading or subheading is DM Serif Display Regular capitals, or the painted wordmark reused unchanged from recovered-sticker-window-mark.svg; all other copy is Libre Franklin Regular 400.",
+   "reference_assets": [
+    {
+     "filename": "fonts/DMSerifDisplay-Regular.ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/VECTOR-04/fonts/DMSerifDisplay-Regular.ttf"
+    },
+    {
+     "filename": "fonts/LibreFranklin[wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/VECTOR-04/fonts/LibreFranklin%5Bwght%5D.ttf"
+    }
+   ],
    "k_id": "K2_Q3",
    "k_label": "Brand-system compliance",
    "origin": "review_feedback_2026_09_25",
-   "revision": "2026-09-25 review feedback"
+   "revision": "pilot13_inputs_2026_10_14"
   },
   {
    "task_id": "VECTOR-04",
@@ -9604,7 +10128,7 @@
    "check_id": "VECTOR-04/new-sticker-companion-2/H009",
    "type": "human",
    "output_reference": "deliverables/new-sticker-companion-2.svg",
-   "check": "Any MERIDIAN & ASH wordmark set in Cirka Bold on “Original companion sticker - Companion 2” (new-sticker-companion-2.svg) arches on a fixed 40 degree curve.",
+   "check": "Any MERIDIAN & ASH wordmark set in DM Serif Display Regular on “Original companion sticker - Companion 2” (new-sticker-companion-2.svg) arches on a fixed 40 degree curve.",
    "answer_type": "yes_no",
    "allowed_answers": [
     "Yes",
@@ -9613,17 +10137,26 @@
    "pass_answer": "Yes",
    "answer": null,
    "status": "not_assessed",
-   "source_statement": "Any MERIDIAN & ASH wordmark set in Cirka Bold on “Original companion sticker - Companion 2” (new-sticker-companion-2.svg) arches on a fixed 40 degree curve.",
+   "source_statement": "Any MERIDIAN & ASH wordmark set in DM Serif Display Regular on “Original companion sticker - Companion 2” (new-sticker-companion-2.svg) arches on a fixed 40 degree curve.",
    "evidence_reference": "Brand type system rule: MERIDIAN and ASH always arch on a fixed 40 degree curve, at every size.",
    "artifact_name": "Original companion sticker - Companion 2",
    "artifact_file": "new-sticker-companion-2.svg",
-   "requirement": "Any MERIDIAN & ASH wordmark set in Cirka Bold on “Original companion sticker - Companion 2” (new-sticker-companion-2.svg) arches on a fixed 40 degree curve.",
-   "pass_condition": "Any MERIDIAN & ASH wordmark set in Cirka Bold on “Original companion sticker - Companion 2” (new-sticker-companion-2.svg) arches on a fixed 40 degree curve.",
-   "reference_assets": [],
+   "requirement": "Any MERIDIAN & ASH wordmark set in DM Serif Display Regular on “Original companion sticker - Companion 2” (new-sticker-companion-2.svg) arches on a fixed 40 degree curve.",
+   "pass_condition": "Any MERIDIAN & ASH wordmark set in DM Serif Display Regular on “Original companion sticker - Companion 2” (new-sticker-companion-2.svg) arches on a fixed 40 degree curve.",
+   "reference_assets": [
+    {
+     "filename": "fonts/DMSerifDisplay-Regular.ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/VECTOR-04/fonts/DMSerifDisplay-Regular.ttf"
+    },
+    {
+     "filename": "fonts/LibreFranklin[wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/VECTOR-04/fonts/LibreFranklin%5Bwght%5D.ttf"
+    }
+   ],
    "k_id": "K2_Q3",
    "k_label": "Brand-system compliance",
    "origin": "review_feedback_2026_09_25",
-   "revision": "2026-09-25 review feedback"
+   "revision": "pilot13_inputs_2026_10_14"
   },
   {
    "task_id": "VECTOR-04",
@@ -9631,7 +10164,7 @@
    "check_id": "VECTOR-04/new-sticker-companion-2/H010",
    "type": "human",
    "output_reference": "deliverables/new-sticker-companion-2.svg",
-   "check": "Any ampersand set in Cirka Bold on “Original companion sticker - Companion 2” (new-sticker-companion-2.svg) is 1.6 times the cap height of the capitals beside it, never at cap height.",
+   "check": "Any ampersand set in DM Serif Display Regular on “Original companion sticker - Companion 2” (new-sticker-companion-2.svg) is 1.6 times the cap height of the capitals beside it, never at cap height.",
    "answer_type": "yes_no",
    "allowed_answers": [
     "Yes",
@@ -9640,17 +10173,26 @@
    "pass_answer": "Yes",
    "answer": null,
    "status": "not_assessed",
-   "source_statement": "Any ampersand set in Cirka Bold on “Original companion sticker - Companion 2” (new-sticker-companion-2.svg) is 1.6 times the cap height of the capitals beside it, never at cap height.",
+   "source_statement": "Any ampersand set in DM Serif Display Regular on “Original companion sticker - Companion 2” (new-sticker-companion-2.svg) is 1.6 times the cap height of the capitals beside it, never at cap height.",
    "evidence_reference": "Brand type system rule: Never set the ampersand at cap height. It is always 1.6 times the cap height of MERIDIAN and ASH.",
    "artifact_name": "Original companion sticker - Companion 2",
    "artifact_file": "new-sticker-companion-2.svg",
-   "requirement": "Any ampersand set in Cirka Bold on “Original companion sticker - Companion 2” (new-sticker-companion-2.svg) is 1.6 times the cap height of the capitals beside it, never at cap height.",
-   "pass_condition": "Any ampersand set in Cirka Bold on “Original companion sticker - Companion 2” (new-sticker-companion-2.svg) is 1.6 times the cap height of the capitals beside it, never at cap height.",
-   "reference_assets": [],
+   "requirement": "Any ampersand set in DM Serif Display Regular on “Original companion sticker - Companion 2” (new-sticker-companion-2.svg) is 1.6 times the cap height of the capitals beside it, never at cap height.",
+   "pass_condition": "Any ampersand set in DM Serif Display Regular on “Original companion sticker - Companion 2” (new-sticker-companion-2.svg) is 1.6 times the cap height of the capitals beside it, never at cap height.",
+   "reference_assets": [
+    {
+     "filename": "fonts/DMSerifDisplay-Regular.ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/VECTOR-04/fonts/DMSerifDisplay-Regular.ttf"
+    },
+    {
+     "filename": "fonts/LibreFranklin[wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/VECTOR-04/fonts/LibreFranklin%5Bwght%5D.ttf"
+    }
+   ],
    "k_id": "K2_Q3",
    "k_label": "Brand-system compliance",
    "origin": "review_feedback_2026_09_25",
-   "revision": "2026-09-25 review feedback"
+   "revision": "pilot13_inputs_2026_10_14"
   },
   {
    "task_id": "VECTOR-04",
@@ -9658,7 +10200,7 @@
    "check_id": "VECTOR-04/new-sticker-companion-2/H011",
    "type": "human",
    "output_reference": "deliverables/new-sticker-companion-2.svg",
-   "check": "Any ampersand set in Cirka Bold on “Original companion sticker - Companion 2” (new-sticker-companion-2.svg) hangs below the arc or baseline into the artwork, never sitting on the baseline.",
+   "check": "Any ampersand set in DM Serif Display Regular on “Original companion sticker - Companion 2” (new-sticker-companion-2.svg) hangs below the arc or baseline into the artwork, never sitting on the baseline.",
    "answer_type": "yes_no",
    "allowed_answers": [
     "Yes",
@@ -9667,17 +10209,26 @@
    "pass_answer": "Yes",
    "answer": null,
    "status": "not_assessed",
-   "source_statement": "Any ampersand set in Cirka Bold on “Original companion sticker - Companion 2” (new-sticker-companion-2.svg) hangs below the arc or baseline into the artwork, never sitting on the baseline.",
+   "source_statement": "Any ampersand set in DM Serif Display Regular on “Original companion sticker - Companion 2” (new-sticker-companion-2.svg) hangs below the arc or baseline into the artwork, never sitting on the baseline.",
    "evidence_reference": "Brand type system rule: The ampersand always hangs below the arc, into the artwork, never sitting on the baseline.",
    "artifact_name": "Original companion sticker - Companion 2",
    "artifact_file": "new-sticker-companion-2.svg",
-   "requirement": "Any ampersand set in Cirka Bold on “Original companion sticker - Companion 2” (new-sticker-companion-2.svg) hangs below the arc or baseline into the artwork, never sitting on the baseline.",
-   "pass_condition": "Any ampersand set in Cirka Bold on “Original companion sticker - Companion 2” (new-sticker-companion-2.svg) hangs below the arc or baseline into the artwork, never sitting on the baseline.",
-   "reference_assets": [],
+   "requirement": "Any ampersand set in DM Serif Display Regular on “Original companion sticker - Companion 2” (new-sticker-companion-2.svg) hangs below the arc or baseline into the artwork, never sitting on the baseline.",
+   "pass_condition": "Any ampersand set in DM Serif Display Regular on “Original companion sticker - Companion 2” (new-sticker-companion-2.svg) hangs below the arc or baseline into the artwork, never sitting on the baseline.",
+   "reference_assets": [
+    {
+     "filename": "fonts/DMSerifDisplay-Regular.ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/VECTOR-04/fonts/DMSerifDisplay-Regular.ttf"
+    },
+    {
+     "filename": "fonts/LibreFranklin[wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/VECTOR-04/fonts/LibreFranklin%5Bwght%5D.ttf"
+    }
+   ],
    "k_id": "K2_Q3",
    "k_label": "Brand-system compliance",
    "origin": "review_feedback_2026_09_25",
-   "revision": "2026-09-25 review feedback"
+   "revision": "pilot13_inputs_2026_10_14"
   },
   {
    "task_id": "VECTOR-04",
@@ -9695,7 +10246,7 @@
    "answer": null,
    "status": "not_assessed",
    "source_statement": "No line of copy on “Original companion sticker - Companion 2” (new-sticker-companion-2.svg) runs longer than 65 characters.",
-   "evidence_reference": "Type system step 03: Brandon Text Regular 400, tracking 0, max 65 characters, for every line of sticker copy.",
+   "evidence_reference": "Type system step 03: Libre Franklin Regular 400, tracking 0, max 65 characters, for every line of sticker copy.",
    "artifact_name": "Original companion sticker - Companion 2",
    "artifact_file": "new-sticker-companion-2.svg",
    "requirement": "No line of copy on “Original companion sticker - Companion 2” (new-sticker-companion-2.svg) runs longer than 65 characters.",
@@ -9704,7 +10255,7 @@
    "k_id": "K2_Q3",
    "k_label": "Brand-system compliance",
    "origin": "review_feedback_2026_09_25",
-   "revision": "2026-09-25 review feedback"
+   "revision": "pilot13_inputs_2026_10_14"
   },
   {
    "task_id": "VECTOR-04",
@@ -9744,7 +10295,7 @@
    "check_id": "VECTOR-04/new-sticker-companion-2/H014",
    "type": "human",
    "output_reference": "deliverables/new-sticker-companion-2.svg",
-   "check": "On “Original companion sticker - Companion 2” (new-sticker-companion-2.svg), any Cirka Bold MERIDIAN & ASH wordmark is tracked plus 0.030 em on the arc, any Cirka Bold heading or subheading plus 0.020 em, and Brandon Text copy at zero.",
+   "check": "On “Original companion sticker - Companion 2” (new-sticker-companion-2.svg), any DM Serif Display Regular MERIDIAN & ASH wordmark is tracked plus 0.030 em on the arc, any DM Serif Display Regular heading or subheading plus 0.020 em, and Libre Franklin copy at zero.",
    "answer_type": "yes_no",
    "allowed_answers": [
     "Yes",
@@ -9753,17 +10304,26 @@
    "pass_answer": "Yes",
    "answer": null,
    "status": "not_assessed",
-   "source_statement": "On “Original companion sticker - Companion 2” (new-sticker-companion-2.svg), any Cirka Bold MERIDIAN & ASH wordmark is tracked plus 0.030 em on the arc, any Cirka Bold heading or subheading plus 0.020 em, and Brandon Text copy at zero.",
-   "evidence_reference": "Type system steps 01, 02 and 03: Cirka Bold wordmark tracked plus 0.030 em on the arc; Cirka Bold subheading and header, set flat off the arc, tracked plus 0.020 em; Brandon Text Regular 400 copy tracked 0.",
+   "source_statement": "On “Original companion sticker - Companion 2” (new-sticker-companion-2.svg), any DM Serif Display Regular MERIDIAN & ASH wordmark is tracked plus 0.030 em on the arc, any DM Serif Display Regular heading or subheading plus 0.020 em, and Libre Franklin copy at zero.",
+   "evidence_reference": "Type system steps 01, 02 and 03: DM Serif Display Regular wordmark tracked plus 0.030 em on the arc; DM Serif Display Regular subheading and header, set flat off the arc, tracked plus 0.020 em; Libre Franklin Regular 400 copy tracked 0.",
    "artifact_name": "Original companion sticker - Companion 2",
    "artifact_file": "new-sticker-companion-2.svg",
-   "requirement": "On “Original companion sticker - Companion 2” (new-sticker-companion-2.svg), any Cirka Bold MERIDIAN & ASH wordmark is tracked plus 0.030 em on the arc, any Cirka Bold heading or subheading plus 0.020 em, and Brandon Text copy at zero.",
-   "pass_condition": "On “Original companion sticker - Companion 2” (new-sticker-companion-2.svg), any Cirka Bold MERIDIAN & ASH wordmark is tracked plus 0.030 em on the arc, any Cirka Bold heading or subheading plus 0.020 em, and Brandon Text copy at zero.",
-   "reference_assets": [],
+   "requirement": "On “Original companion sticker - Companion 2” (new-sticker-companion-2.svg), any DM Serif Display Regular MERIDIAN & ASH wordmark is tracked plus 0.030 em on the arc, any DM Serif Display Regular heading or subheading plus 0.020 em, and Libre Franklin copy at zero.",
+   "pass_condition": "On “Original companion sticker - Companion 2” (new-sticker-companion-2.svg), any DM Serif Display Regular MERIDIAN & ASH wordmark is tracked plus 0.030 em on the arc, any DM Serif Display Regular heading or subheading plus 0.020 em, and Libre Franklin copy at zero.",
+   "reference_assets": [
+    {
+     "filename": "fonts/DMSerifDisplay-Regular.ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/VECTOR-04/fonts/DMSerifDisplay-Regular.ttf"
+    },
+    {
+     "filename": "fonts/LibreFranklin[wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/VECTOR-04/fonts/LibreFranklin%5Bwght%5D.ttf"
+    }
+   ],
    "k_id": "K2_Q3",
    "k_label": "Brand-system compliance",
    "origin": "review_feedback_2026_09_25",
-   "revision": "2026-09-25 review feedback"
+   "revision": "pilot13_inputs_2026_10_14"
   },
   {
    "task_id": "VECTOR-04",
@@ -9895,6 +10455,239 @@
    "k_label": "Constraint compliance",
    "origin": "review_feedback_2026_09_25",
    "revision": "2026-09-25 review feedback"
+  },
+  {
+   "task_id": "VECTOR-04",
+   "output_id": "sticker-proof-window-mark",
+   "check_id": "VECTOR-04/sticker-proof-window-mark/R13-colour-profile",
+   "type": "human",
+   "output_reference": "deliverables/sticker-proof-window-mark.png",
+   "artifact_name": "Transparent sticker proof - Window mark",
+   "artifact_file": "sticker-proof-window-mark.png",
+   "check": "sticker-proof-window-mark.png: uses an sRGB colour profile.",
+   "source_statement": "sticker-proof-window-mark.png: uses an sRGB colour profile.",
+   "requirement": "sticker-proof-window-mark.png: uses an sRGB colour profile.",
+   "pass_condition": "sticker-proof-window-mark.png: uses an sRGB colour profile.",
+   "answer_type": "yes_no",
+   "allowed_answers": [
+    "Yes",
+    "No"
+   ],
+   "pass_answer": "Yes",
+   "answer": null,
+   "status": "not_assessed",
+   "reference_assets": [],
+   "revision": "pilot13_inputs_2026_10_14",
+   "origin": "pilot13_inputs_2026_10_14",
+   "k_id": "K1_Q2",
+   "k_label": "Export specification",
+   "evidence_reference": "Current brief and supplied assets. Exact font settings require authored-source or embedded-font evidence; do not infer them from a raster preview.",
+   "platform_priority": true
+  },
+  {
+   "task_id": "VECTOR-04",
+   "output_id": "sticker-proof-bag-design-1",
+   "check_id": "VECTOR-04/sticker-proof-bag-design-1/R13-colour-profile",
+   "type": "human",
+   "output_reference": "deliverables/sticker-proof-bag-design-1.png",
+   "artifact_name": "Transparent sticker proof - Bag design 1",
+   "artifact_file": "sticker-proof-bag-design-1.png",
+   "check": "sticker-proof-bag-design-1.png: uses an sRGB colour profile.",
+   "source_statement": "sticker-proof-bag-design-1.png: uses an sRGB colour profile.",
+   "requirement": "sticker-proof-bag-design-1.png: uses an sRGB colour profile.",
+   "pass_condition": "sticker-proof-bag-design-1.png: uses an sRGB colour profile.",
+   "answer_type": "yes_no",
+   "allowed_answers": [
+    "Yes",
+    "No"
+   ],
+   "pass_answer": "Yes",
+   "answer": null,
+   "status": "not_assessed",
+   "reference_assets": [],
+   "revision": "pilot13_inputs_2026_10_14",
+   "origin": "pilot13_inputs_2026_10_14",
+   "k_id": "K1_Q2",
+   "k_label": "Export specification",
+   "evidence_reference": "Current brief and supplied assets. Exact font settings require authored-source or embedded-font evidence; do not infer them from a raster preview.",
+   "platform_priority": true
+  },
+  {
+   "task_id": "VECTOR-04",
+   "output_id": "sticker-proof-bag-design-2",
+   "check_id": "VECTOR-04/sticker-proof-bag-design-2/R13-colour-profile",
+   "type": "human",
+   "output_reference": "deliverables/sticker-proof-bag-design-2.png",
+   "artifact_name": "Transparent sticker proof - Bag design 2",
+   "artifact_file": "sticker-proof-bag-design-2.png",
+   "check": "sticker-proof-bag-design-2.png: uses an sRGB colour profile.",
+   "source_statement": "sticker-proof-bag-design-2.png: uses an sRGB colour profile.",
+   "requirement": "sticker-proof-bag-design-2.png: uses an sRGB colour profile.",
+   "pass_condition": "sticker-proof-bag-design-2.png: uses an sRGB colour profile.",
+   "answer_type": "yes_no",
+   "allowed_answers": [
+    "Yes",
+    "No"
+   ],
+   "pass_answer": "Yes",
+   "answer": null,
+   "status": "not_assessed",
+   "reference_assets": [],
+   "revision": "pilot13_inputs_2026_10_14",
+   "origin": "pilot13_inputs_2026_10_14",
+   "k_id": "K1_Q2",
+   "k_label": "Export specification",
+   "evidence_reference": "Current brief and supplied assets. Exact font settings require authored-source or embedded-font evidence; do not infer them from a raster preview.",
+   "platform_priority": true
+  },
+  {
+   "task_id": "VECTOR-04",
+   "output_id": "sticker-proof-bag-design-3",
+   "check_id": "VECTOR-04/sticker-proof-bag-design-3/R13-colour-profile",
+   "type": "human",
+   "output_reference": "deliverables/sticker-proof-bag-design-3.png",
+   "artifact_name": "Transparent sticker proof - Bag design 3",
+   "artifact_file": "sticker-proof-bag-design-3.png",
+   "check": "sticker-proof-bag-design-3.png: uses an sRGB colour profile.",
+   "source_statement": "sticker-proof-bag-design-3.png: uses an sRGB colour profile.",
+   "requirement": "sticker-proof-bag-design-3.png: uses an sRGB colour profile.",
+   "pass_condition": "sticker-proof-bag-design-3.png: uses an sRGB colour profile.",
+   "answer_type": "yes_no",
+   "allowed_answers": [
+    "Yes",
+    "No"
+   ],
+   "pass_answer": "Yes",
+   "answer": null,
+   "status": "not_assessed",
+   "reference_assets": [],
+   "revision": "pilot13_inputs_2026_10_14",
+   "origin": "pilot13_inputs_2026_10_14",
+   "k_id": "K1_Q2",
+   "k_label": "Export specification",
+   "evidence_reference": "Current brief and supplied assets. Exact font settings require authored-source or embedded-font evidence; do not infer them from a raster preview.",
+   "platform_priority": true
+  },
+  {
+   "task_id": "VECTOR-04",
+   "output_id": "sticker-proof-companion-1",
+   "check_id": "VECTOR-04/sticker-proof-companion-1/R13-colour-profile",
+   "type": "human",
+   "output_reference": "deliverables/sticker-proof-companion-1.png",
+   "artifact_name": "Transparent sticker proof - Companion 1",
+   "artifact_file": "sticker-proof-companion-1.png",
+   "check": "sticker-proof-companion-1.png: uses an sRGB colour profile.",
+   "source_statement": "sticker-proof-companion-1.png: uses an sRGB colour profile.",
+   "requirement": "sticker-proof-companion-1.png: uses an sRGB colour profile.",
+   "pass_condition": "sticker-proof-companion-1.png: uses an sRGB colour profile.",
+   "answer_type": "yes_no",
+   "allowed_answers": [
+    "Yes",
+    "No"
+   ],
+   "pass_answer": "Yes",
+   "answer": null,
+   "status": "not_assessed",
+   "reference_assets": [],
+   "revision": "pilot13_inputs_2026_10_14",
+   "origin": "pilot13_inputs_2026_10_14",
+   "k_id": "K1_Q2",
+   "k_label": "Export specification",
+   "evidence_reference": "Current brief and supplied assets. Exact font settings require authored-source or embedded-font evidence; do not infer them from a raster preview.",
+   "platform_priority": true
+  },
+  {
+   "task_id": "VECTOR-04",
+   "output_id": "sticker-proof-companion-2",
+   "check_id": "VECTOR-04/sticker-proof-companion-2/R13-colour-profile",
+   "type": "human",
+   "output_reference": "deliverables/sticker-proof-companion-2.png",
+   "artifact_name": "Transparent sticker proof - Companion 2",
+   "artifact_file": "sticker-proof-companion-2.png",
+   "check": "sticker-proof-companion-2.png: uses an sRGB colour profile.",
+   "source_statement": "sticker-proof-companion-2.png: uses an sRGB colour profile.",
+   "requirement": "sticker-proof-companion-2.png: uses an sRGB colour profile.",
+   "pass_condition": "sticker-proof-companion-2.png: uses an sRGB colour profile.",
+   "answer_type": "yes_no",
+   "allowed_answers": [
+    "Yes",
+    "No"
+   ],
+   "pass_answer": "Yes",
+   "answer": null,
+   "status": "not_assessed",
+   "reference_assets": [],
+   "revision": "pilot13_inputs_2026_10_14",
+   "origin": "pilot13_inputs_2026_10_14",
+   "k_id": "K1_Q2",
+   "k_label": "Export specification",
+   "evidence_reference": "Current brief and supplied assets. Exact font settings require authored-source or embedded-font evidence; do not infer them from a raster preview.",
+   "platform_priority": true
+  },
+  {
+   "task_id": "VECTOR-04",
+   "output_id": "gang-sheet",
+   "check_id": "VECTOR-04/gang-sheet/R13-pdf-profile",
+   "type": "human",
+   "output_reference": "deliverables/gang-sheet.pdf",
+   "artifact_name": "Sticker imposed production sheet",
+   "artifact_file": "gang-sheet.pdf",
+   "check": "gang-sheet.pdf: contains the supplied PSO Coated v3 output intent.",
+   "source_statement": "gang-sheet.pdf: contains the supplied PSO Coated v3 output intent.",
+   "requirement": "gang-sheet.pdf: contains the supplied PSO Coated v3 output intent.",
+   "pass_condition": "gang-sheet.pdf: contains the supplied PSO Coated v3 output intent.",
+   "answer_type": "yes_no",
+   "allowed_answers": [
+    "Yes",
+    "No"
+   ],
+   "pass_answer": "Yes",
+   "answer": null,
+   "status": "not_assessed",
+   "reference_assets": [],
+   "revision": "pilot13_inputs_2026_10_14",
+   "origin": "pilot13_inputs_2026_10_14",
+   "k_id": "K1_Q2",
+   "k_label": "Export specification",
+   "evidence_reference": "Current brief and supplied assets. Exact font settings require authored-source or embedded-font evidence; do not infer them from a raster preview.",
+   "platform_priority": true
+  },
+  {
+   "task_id": "VECTOR-04",
+   "output_id": "gang-sheet",
+   "check_id": "VECTOR-04/gang-sheet/R13-pdf-fonts",
+   "type": "human",
+   "output_reference": "deliverables/gang-sheet.pdf",
+   "artifact_name": "Sticker imposed production sheet",
+   "artifact_file": "gang-sheet.pdf",
+   "check": "gang-sheet.pdf: has no unembedded font dependency.",
+   "source_statement": "gang-sheet.pdf: has no unembedded font dependency.",
+   "requirement": "gang-sheet.pdf: has no unembedded font dependency.",
+   "pass_condition": "gang-sheet.pdf: has no unembedded font dependency.",
+   "answer_type": "yes_no",
+   "allowed_answers": [
+    "Yes",
+    "No"
+   ],
+   "pass_answer": "Yes",
+   "answer": null,
+   "status": "not_assessed",
+   "reference_assets": [
+    {
+     "filename": "fonts/DMSerifDisplay-Regular.ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/VECTOR-04/fonts/DMSerifDisplay-Regular.ttf"
+    },
+    {
+     "filename": "fonts/LibreFranklin[wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/VECTOR-04/fonts/LibreFranklin%5Bwght%5D.ttf"
+    }
+   ],
+   "revision": "pilot13_inputs_2026_10_14",
+   "origin": "pilot13_inputs_2026_10_14",
+   "k_id": "K1_Q2",
+   "k_label": "Export specification",
+   "evidence_reference": "Current brief and supplied assets. Exact font settings require authored-source or embedded-font evidence; do not infer them from a raster preview.",
+   "platform_priority": true
   }
  ],
  "evaluation": {
@@ -9923,5 +10716,16 @@
   "previous_deliverables_archived": true,
   "brand_amendments": []
  },
- "record_exclusions": []
+ "record_exclusions": [],
+ "input_revision": {
+  "id": "pilot13_inputs_2026_10_14",
+  "previous_run_results": "Historical runs are preserved and have not been re-evaluated against these revised inputs.",
+  "changes": [
+   "Deliverable purposes and export settings",
+   "Downloadable licensed fonts",
+   "Explicit logo scope",
+   "Fixed requirements and creative choices",
+   "Task-level Decision Quality evaluation"
+  ]
+ }
 }

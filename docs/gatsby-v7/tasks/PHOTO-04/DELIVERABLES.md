@@ -1,3 +1,57 @@
+# Verranza Coastal Retreats - Villa collection image system: requested deliverables
+
+Current input revision: pilot13_inputs_2026_10_14. Prior outputs have not been reassessed against these revised inputs.
+
+## Villa booking hero - Oliveto
+File: `deliverables/booking-hero-oliveto.png`
+
+- Purpose: Help prospective guests choose and book this specific villa.
+- Placement: Website booking-page hero
+- Audience: Whole-house holiday guests
+- Specification: {"format": "png", "width": 1920, "height": 1080}
+- Use a photograph belonging to the villa named in this file, not another property.
+- Include the villa name, its lowest 2027 nightly rate as a from price, the corresponding season and a booking action.
+- Export: Lossless PNG; sRGB; exact pixel dimensions.
+
+## Villa booking hero - Scogliera
+File: `deliverables/booking-hero-scogliera.png`
+
+- Purpose: Help prospective guests choose and book this specific villa.
+- Placement: Website booking-page hero
+- Audience: Whole-house holiday guests
+- Specification: {"format": "png", "width": 1920, "height": 1080}
+- Use a photograph belonging to the villa named in this file, not another property.
+- Include the villa name, its lowest 2027 nightly rate as a from price, the corresponding season and a booking action.
+- Export: Lossless PNG; sRGB; exact pixel dimensions.
+
+## Villa booking hero - Verranza
+File: `deliverables/booking-hero-verranza.png`
+
+- Purpose: Help prospective guests choose and book this specific villa.
+- Placement: Website booking-page hero
+- Audience: Whole-house holiday guests
+- Specification: {"format": "png", "width": 1920, "height": 1080}
+- Use a photograph belonging to the villa named in this file, not another property.
+- Include the villa name, its lowest 2027 nightly rate as a from price, the corresponding season and a booking action.
+- Export: Lossless PNG; sRGB; exact pixel dimensions.
+
+## Villa comparison brochure
+File: `deliverables/villa-collection.pdf`
+
+- Purpose: Help guests and travel agents compare the three houses before enquiring.
+- Placement: Digital brochure for email and on-screen reading; not a press-ready print file
+- Audience: Guests and travel agents
+- Specification: {"format": "pdf", "width_mm": 210, "height_mm": 297, "pages": 6}
+- Include Oliveto, Scogliera and Verranza with photographs labelled by villa.
+- For each named villa include sleeping capacity and the minimum stay and nightly rate for all three seasons in rates_2027.csv.
+- Use the supplied monogram at least once; organise six pages so the three properties can be compared.
+- Export: Digital PDF in sRGB with embedded fonts, searchable text where practical, no crop marks and no added bleed; retain the exact page size and page count.
+- Export: This file is for screen review/distribution, not a CMYK press master.
+
+## Historical delivery record
+
+The following record belongs to the earlier input pack; it is not approval of the current requirements.
+
 # Verranza Coastal Retreats - Villa collection image system: completed output register
 
 Completed 2026-09-21. All contracted export files below passed the automatic file, decode, dimension, page-count, and trim checks applicable to their formats.

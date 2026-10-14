@@ -1,68 +1,93 @@
 [
- {
-  "output_id": "collection-spread",
-  "group_id": "collection-spread",
-  "name": "Autumn interiors collection spread",
-  "path": "deliverables/collection-spread.pdf",
-  "kind": "brochure",
-  "spec": {
-   "format": "pdf",
-   "width_mm": 210,
-   "height_mm": 297,
-   "pages": 4
+  {
+    "output_id": "collection-spread",
+    "group_id": "collection-spread",
+    "name": "Autumn interiors collection spread",
+    "path": "deliverables/collection-spread.pdf",
+    "kind": "brochure",
+    "spec": {
+      "format": "pdf",
+      "width_mm": 210,
+      "height_mm": 297,
+      "pages": 4
+    },
+    "source_record": null,
+    "source_image": null,
+    "required_content": [
+      "The textiles preserve their source patterns.",
+      "The styled grouping shows every piece in the twenty product photographs as one range and feels coherent."
+    ],
+    "acceptance_requirements": [
+      "The textiles preserve their source patterns."
+    ],
+    "expert_review_criteria": [
+      "The styled grouping feels coherent.",
+      "The finishing looks polished at the delivered size.",
+      "The visual character feels like Thornmere Home.",
+      "The intended reading order is clear.",
+      "The creative treatment suits the audience described in the brand brief.",
+      "The composition feels native to its stated delivery format."
+    ],
+    "record_field_policy": "The approved_values in source_record are the scoring target. raw_values are retained only for provenance and may contain known export defects.",
+    "status": "not_produced",
+    "review_name": "Thornmere Home / Autumn interiors collection spread",
+    "commission": {
+      "purpose": "Show the autumn collection as coordinated interiors groupings.",
+      "channel": "Digital editorial PDF for the wholesale collection email",
+      "audience": "Trade buyers and interiors editors",
+      "content": [
+        "Include all twenty supplied products across four A4 pages, with coherent grouping and preserved textile patterns."
+      ],
+      "export_settings": [
+        "Digital PDF in sRGB with embedded fonts, searchable text where practical, no crop marks and no added bleed; retain the exact page size and page count.",
+        "This file is for screen review/distribution, not a CMYK press master."
+      ]
+    }
   },
-  "source_record": null,
-  "source_image": null,
-  "required_content": [
-   "The textiles preserve their source patterns.",
-   "The styled grouping shows every piece in the twenty product photographs as one range and feels coherent."
-  ],
-  "acceptance_requirements": [
-   "The textiles preserve their source patterns."
-  ],
-  "expert_review_criteria": [
-   "The styled grouping feels coherent.",
-   "The finishing looks polished at the delivered size.",
-   "The visual character feels like Thornmere Home.",
-   "The intended reading order is clear.",
-   "The creative treatment suits the audience described in the brand brief.",
-   "The composition feels native to its stated delivery format."
-  ],
-  "record_field_policy": "The approved_values in source_record are the scoring target. raw_values are retained only for provenance and may contain known export defects.",
-  "status": "not_produced",
-  "review_name": "Thornmere Home / Autumn interiors collection spread"
- },
- {
-  "output_id": "wholesale-presentation",
-  "group_id": "wholesale-presentation",
-  "name": "Interiors wholesale presentation",
-  "path": "deliverables/wholesale-presentation.pdf",
-  "kind": "deck",
-  "spec": {
-   "format": "pdf",
-   "width_mm": 338.667,
-   "height_mm": 190.5,
-   "pages": 8
-  },
-  "source_record": null,
-  "source_image": null,
-  "required_content": [
-   "Each featured object has its correct product name, with its dimensions, materials, care line and price from thornmere_autumn_skus.csv.",
-   "The page sequence supports a trade buying conversation, opening on page 1 with the brand name Thornmere Home as its largest text."
-  ],
-  "acceptance_requirements": [
-   "The featured-object name block matches the approved product register exactly."
-  ],
-  "expert_review_criteria": [
-   "The page sequence supports a trade buying conversation.",
-   "The finishing looks polished at the delivered size.",
-   "The visual character feels like Thornmere Home.",
-   "The intended reading order is clear.",
-   "The creative treatment suits the audience described in the brand brief.",
-   "The composition feels native to its stated delivery format."
-  ],
-  "record_field_policy": "The approved_values in source_record are the scoring target. raw_values are retained only for provenance and may contain known export defects.",
-  "status": "not_produced",
-  "review_name": "Thornmere Home / Interiors wholesale presentation"
- }
+  {
+    "output_id": "wholesale-presentation",
+    "group_id": "wholesale-presentation",
+    "name": "Interiors wholesale presentation",
+    "path": "deliverables/wholesale-presentation.pdf",
+    "kind": "deck",
+    "spec": {
+      "format": "pdf",
+      "width_mm": 338.667,
+      "height_mm": 190.5,
+      "pages": 8
+    },
+    "source_record": null,
+    "source_image": null,
+    "required_content": [
+      "Each featured object has its correct product name, with its dimensions, materials, care line and price from thornmere_autumn_skus.csv.",
+      "The page sequence supports a trade buying conversation, opening on page 1 with the brand name Thornmere Home as its largest text."
+    ],
+    "acceptance_requirements": [
+      "The featured-object name block matches the approved product register exactly."
+    ],
+    "expert_review_criteria": [
+      "The page sequence supports a trade buying conversation.",
+      "The finishing looks polished at the delivered size.",
+      "The visual character feels like Thornmere Home.",
+      "The intended reading order is clear.",
+      "The creative treatment suits the audience described in the brand brief.",
+      "The composition feels native to its stated delivery format."
+    ],
+    "record_field_policy": "The approved_values in source_record are the scoring target. raw_values are retained only for provenance and may contain known export defects.",
+    "status": "not_produced",
+    "review_name": "Thornmere Home / Interiors wholesale presentation",
+    "commission": {
+      "purpose": "Lead a trade buyer through the range in a useful buying order.",
+      "channel": "Eight-page landscape screen presentation PDF",
+      "audience": "Wholesale buyers",
+      "content": [
+        "Open with Thornmere Home as the largest text on page 1.",
+        "For every object shown, include its correct name, dimensions, materials, care line and price from thornmere_autumn_skus.csv; reproduce care wording unchanged."
+      ],
+      "export_settings": [
+        "Digital PDF in sRGB with embedded fonts, searchable text where practical, no crop marks and no added bleed; retain the exact page size and page count.",
+        "This file is for screen review/distribution, not a CMYK press master."
+      ]
+    }
+  }
 ]

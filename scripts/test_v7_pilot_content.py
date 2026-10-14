@@ -54,7 +54,7 @@ class PilotContentTests(unittest.TestCase):
 
     def test_pilot_pages(self):
         totals = [0, 0]
-        expected_counts = [4, 18, 7, 12, 19, 16, 7, 2, 3, 14]
+        expected_counts = [4, 18, 7, 12, 19, 16, 7, 2, 3, 14, 13, 19, 9]
         for task_id, output_count in zip(TASK_IDS, expected_counts):
             with self.subTest(task=task_id):
                 spec = json.loads((TASKS / task_id / "TASK_SPEC.json").read_text())
@@ -68,8 +68,9 @@ class PilotContentTests(unittest.TestCase):
                 self.assertEqual(page.sections, ["brief-title", "brand-title", "assets-title", "outputs-title"])
                 self.assertEqual(page.outputs, output_count)
                 self.assertEqual(page.scripts, ["https://cdn.jsdelivr.net/npm/@iframe-resizer/child@5"])
-                self.assertEqual([a["href"] for a in page.assets], [a["public_url"] for a in assets])
-                self.assertTrue(all(a["target"] == "_blank" for a in page.assets))
+                self.assertEqual(len(page.assets),len(assets))
+                self.assertEqual([a["href"] for a in page.assets if 'href' in a], [a["public_url"] for a in assets if not a['filename'].endswith(('.mp4','.mov','.webm','.wav','.mp3','.m4a'))])
+                self.assertTrue(all(a["target"] == "_blank" for a in page.assets if 'href' in a))
                 for image in page.images:
                     if not image.startswith("https://"):
                         self.assertTrue((OUT / image).is_file(), image)
@@ -82,7 +83,7 @@ class PilotContentTests(unittest.TestCase):
                     self.assertNotIn(forbidden, html)
                 totals[0] += len(assets)
                 totals[1] += page.outputs
-        self.assertEqual(totals, [183, 102])
+        self.assertEqual(totals, [288, 143])
 
     def test_file_count_clarifications(self):
         expected = {

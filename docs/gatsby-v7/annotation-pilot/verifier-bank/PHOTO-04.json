@@ -359,11 +359,11 @@
     "output_id": "villa-collection",
     "type": "human",
     "output_reference": "deliverables/villa-collection.pdf",
-    "check": "The monogram in “Villa comparison brochure” (villa-collection.pdf) keeps every part of the gate_plate.jpg mark: the interlocked “V” and “C”, the oval rule and the small anchor.",
+    "check": "The monogram in “Villa comparison brochure” (villa-collection.pdf) keeps every part of the verranza_monogram_transparent.png mark: the interlocked “V” and “C”, the oval rule and the small anchor.",
     "reference_assets": [
       {
-        "filename": "gate_plate.jpg",
-        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/tasks/SB3-004-PHO__verranza-coastal-retreats-villa-collection-image-system/assets/gate_plate.jpg"
+        "filename": "verranza_monogram_transparent.png",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/verranza_monogram_transparent.png"
       },
       {
         "filename": "owner_note.txt",
@@ -828,11 +828,11 @@
     "output_id": "villa-collection",
     "type": "human",
     "output_reference": "deliverables/villa-collection.pdf",
-    "check": "The gate_plate.jpg monogram appears at least once in “Villa comparison brochure” (villa-collection.pdf) reversed out in Lime Wash #EFE9DC on Verranza Blue #24425A.",
+    "check": "villa-collection.pdf: the supplied monogram is Blue on Lime Wash, or its ink is recoloured Lime Wash on a Blue panel.",
     "reference_assets": [
       {
-        "filename": "gate_plate.jpg",
-        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/tasks/SB3-004-PHO__verranza-coastal-retreats-villa-collection-image-system/assets/gate_plate.jpg"
+        "filename": "verranza_monogram_transparent.png",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/verranza_monogram_transparent.png"
       },
       {
         "filename": "owner_note.txt",
@@ -890,16 +890,34 @@
     "output_id": "villa-collection",
     "type": "human",
     "output_reference": "deliverables/villa-collection.pdf",
-    "check": "Every heading, subheading and standfirst in “Villa comparison brochure” (villa-collection.pdf) is set in Canela Deck Light, with no heavier weight.",
-    "reference_assets": []
+    "check": "Every heading, subheading and standfirst in “Villa comparison brochure” (villa-collection.pdf) is set in Cormorant Garamond Light, with no heavier weight.",
+    "reference_assets": [
+      {
+        "filename": "fonts/CormorantGaramond[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/CormorantGaramond%5Bwght%5D.ttf"
+      },
+      {
+        "filename": "fonts/SourceSans3[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/SourceSans3%5Bwght%5D.ttf"
+      }
+    ]
   },
   {
     "check_id": "PHOTO-04/villa-collection/H036",
     "output_id": "villa-collection",
     "type": "human",
     "output_reference": "deliverables/villa-collection.pdf",
-    "check": "Body text, rates, captions and the sleeps and minimum-stay lines in “Villa comparison brochure” (villa-collection.pdf) are Untitled Sans Regular, never the serif and never a bolder weight.",
-    "reference_assets": []
+    "check": "Body text, rates, captions and the sleeps and minimum-stay lines in “Villa comparison brochure” (villa-collection.pdf) are Source Sans 3 Regular, never the serif and never a bolder weight.",
+    "reference_assets": [
+      {
+        "filename": "fonts/CormorantGaramond[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/CormorantGaramond%5Bwght%5D.ttf"
+      },
+      {
+        "filename": "fonts/SourceSans3[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/SourceSans3%5Bwght%5D.ttf"
+      }
+    ]
   },
   {
     "check_id": "PHOTO-04/villa-collection/H037",
@@ -914,8 +932,17 @@
     "output_id": "villa-collection",
     "type": "human",
     "output_reference": "deliverables/villa-collection.pdf",
-    "check": "No numeral in “Villa comparison brochure” (villa-collection.pdf) is set in the serif; every rate, sleeps figure and minimum stay is in Untitled Sans Regular tabular lining figures.",
-    "reference_assets": []
+    "check": "No numeral in “Villa comparison brochure” (villa-collection.pdf) is set in the serif; every rate, sleeps figure and minimum stay is in Source Sans 3 Regular tabular lining figures.",
+    "reference_assets": [
+      {
+        "filename": "fonts/CormorantGaramond[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/CormorantGaramond%5Bwght%5D.ttf"
+      },
+      {
+        "filename": "fonts/SourceSans3[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/SourceSans3%5Bwght%5D.ttf"
+      }
+    ]
   },
   {
     "check_id": "PHOTO-04/villa-collection/H039",
@@ -1125,16 +1152,34 @@
     "output_id": "booking-hero-oliveto",
     "type": "human",
     "output_reference": "deliverables/booking-hero-oliveto.png",
-    "check": "Every line set in Canela Deck on “Villa booking hero - Oliveto” (booking-hero-oliveto.png), the house name and any standfirst, is Canela Deck Light, with no heavier weight.",
-    "reference_assets": []
+    "check": "Every line set in Cormorant Garamond on “Villa booking hero - Oliveto” (booking-hero-oliveto.png), the house name and any standfirst, is Cormorant Garamond Light, with no heavier weight.",
+    "reference_assets": [
+      {
+        "filename": "fonts/CormorantGaramond[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/CormorantGaramond%5Bwght%5D.ttf"
+      },
+      {
+        "filename": "fonts/SourceSans3[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/SourceSans3%5Bwght%5D.ttf"
+      }
+    ]
   },
   {
     "check_id": "PHOTO-04/booking-hero-oliveto/H019",
     "output_id": "booking-hero-oliveto",
     "type": "human",
     "output_reference": "deliverables/booking-hero-oliveto.png",
-    "check": "Body text, the booking line, rates, captions and any sleeps or minimum-stay line on “Villa booking hero - Oliveto” (booking-hero-oliveto.png) are Untitled Sans Regular, never the serif and never a bolder weight.",
-    "reference_assets": []
+    "check": "Body text, the booking line, rates, captions and any sleeps or minimum-stay line on “Villa booking hero - Oliveto” (booking-hero-oliveto.png) are Source Sans 3 Regular, never the serif and never a bolder weight.",
+    "reference_assets": [
+      {
+        "filename": "fonts/CormorantGaramond[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/CormorantGaramond%5Bwght%5D.ttf"
+      },
+      {
+        "filename": "fonts/SourceSans3[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/SourceSans3%5Bwght%5D.ttf"
+      }
+    ]
   },
   {
     "check_id": "PHOTO-04/booking-hero-oliveto/H020",
@@ -1149,8 +1194,17 @@
     "output_id": "booking-hero-oliveto",
     "type": "human",
     "output_reference": "deliverables/booking-hero-oliveto.png",
-    "check": "No numeral on “Villa booking hero - Oliveto” (booking-hero-oliveto.png) is set in the serif; every figure is in Untitled Sans Regular tabular lining figures.",
-    "reference_assets": []
+    "check": "No numeral on “Villa booking hero - Oliveto” (booking-hero-oliveto.png) is set in the serif; every figure is in Source Sans 3 Regular tabular lining figures.",
+    "reference_assets": [
+      {
+        "filename": "fonts/CormorantGaramond[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/CormorantGaramond%5Bwght%5D.ttf"
+      },
+      {
+        "filename": "fonts/SourceSans3[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/SourceSans3%5Bwght%5D.ttf"
+      }
+    ]
   },
   {
     "check_id": "PHOTO-04/booking-hero-oliveto/H022",
@@ -1360,16 +1414,34 @@
     "output_id": "booking-hero-verranza",
     "type": "human",
     "output_reference": "deliverables/booking-hero-verranza.png",
-    "check": "Every line set in Canela Deck on “Villa booking hero - Verranza” (booking-hero-verranza.png), the house name and any standfirst, is Canela Deck Light, with no heavier weight.",
-    "reference_assets": []
+    "check": "Every line set in Cormorant Garamond on “Villa booking hero - Verranza” (booking-hero-verranza.png), the house name and any standfirst, is Cormorant Garamond Light, with no heavier weight.",
+    "reference_assets": [
+      {
+        "filename": "fonts/CormorantGaramond[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/CormorantGaramond%5Bwght%5D.ttf"
+      },
+      {
+        "filename": "fonts/SourceSans3[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/SourceSans3%5Bwght%5D.ttf"
+      }
+    ]
   },
   {
     "check_id": "PHOTO-04/booking-hero-verranza/H018",
     "output_id": "booking-hero-verranza",
     "type": "human",
     "output_reference": "deliverables/booking-hero-verranza.png",
-    "check": "Body text, the booking line, rates, captions and any sleeps or minimum-stay line on “Villa booking hero - Verranza” (booking-hero-verranza.png) are Untitled Sans Regular, never the serif and never a bolder weight.",
-    "reference_assets": []
+    "check": "Body text, the booking line, rates, captions and any sleeps or minimum-stay line on “Villa booking hero - Verranza” (booking-hero-verranza.png) are Source Sans 3 Regular, never the serif and never a bolder weight.",
+    "reference_assets": [
+      {
+        "filename": "fonts/CormorantGaramond[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/CormorantGaramond%5Bwght%5D.ttf"
+      },
+      {
+        "filename": "fonts/SourceSans3[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/SourceSans3%5Bwght%5D.ttf"
+      }
+    ]
   },
   {
     "check_id": "PHOTO-04/booking-hero-verranza/H019",
@@ -1384,8 +1456,17 @@
     "output_id": "booking-hero-verranza",
     "type": "human",
     "output_reference": "deliverables/booking-hero-verranza.png",
-    "check": "No numeral on “Villa booking hero - Verranza” (booking-hero-verranza.png) is set in the serif; every figure is in Untitled Sans Regular tabular lining figures.",
-    "reference_assets": []
+    "check": "No numeral on “Villa booking hero - Verranza” (booking-hero-verranza.png) is set in the serif; every figure is in Source Sans 3 Regular tabular lining figures.",
+    "reference_assets": [
+      {
+        "filename": "fonts/CormorantGaramond[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/CormorantGaramond%5Bwght%5D.ttf"
+      },
+      {
+        "filename": "fonts/SourceSans3[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/SourceSans3%5Bwght%5D.ttf"
+      }
+    ]
   },
   {
     "check_id": "PHOTO-04/booking-hero-verranza/H021",
@@ -1611,16 +1692,34 @@
     "output_id": "booking-hero-scogliera",
     "type": "human",
     "output_reference": "deliverables/booking-hero-scogliera.png",
-    "check": "Every line set in Canela Deck on “Villa booking hero - Scogliera” (booking-hero-scogliera.png), the house name and any standfirst, is Canela Deck Light, with no heavier weight.",
-    "reference_assets": []
+    "check": "Every line set in Cormorant Garamond on “Villa booking hero - Scogliera” (booking-hero-scogliera.png), the house name and any standfirst, is Cormorant Garamond Light, with no heavier weight.",
+    "reference_assets": [
+      {
+        "filename": "fonts/CormorantGaramond[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/CormorantGaramond%5Bwght%5D.ttf"
+      },
+      {
+        "filename": "fonts/SourceSans3[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/SourceSans3%5Bwght%5D.ttf"
+      }
+    ]
   },
   {
     "check_id": "PHOTO-04/booking-hero-scogliera/H019",
     "output_id": "booking-hero-scogliera",
     "type": "human",
     "output_reference": "deliverables/booking-hero-scogliera.png",
-    "check": "Body text, the booking line, rates, captions and any sleeps or minimum-stay line on “Villa booking hero - Scogliera” (booking-hero-scogliera.png) are Untitled Sans Regular, never the serif and never a bolder weight.",
-    "reference_assets": []
+    "check": "Body text, the booking line, rates, captions and any sleeps or minimum-stay line on “Villa booking hero - Scogliera” (booking-hero-scogliera.png) are Source Sans 3 Regular, never the serif and never a bolder weight.",
+    "reference_assets": [
+      {
+        "filename": "fonts/CormorantGaramond[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/CormorantGaramond%5Bwght%5D.ttf"
+      },
+      {
+        "filename": "fonts/SourceSans3[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/SourceSans3%5Bwght%5D.ttf"
+      }
+    ]
   },
   {
     "check_id": "PHOTO-04/booking-hero-scogliera/H020",
@@ -1635,8 +1734,17 @@
     "output_id": "booking-hero-scogliera",
     "type": "human",
     "output_reference": "deliverables/booking-hero-scogliera.png",
-    "check": "No numeral on “Villa booking hero - Scogliera” (booking-hero-scogliera.png) is set in the serif; every figure is in Untitled Sans Regular tabular lining figures.",
-    "reference_assets": []
+    "check": "No numeral on “Villa booking hero - Scogliera” (booking-hero-scogliera.png) is set in the serif; every figure is in Source Sans 3 Regular tabular lining figures.",
+    "reference_assets": [
+      {
+        "filename": "fonts/CormorantGaramond[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/CormorantGaramond%5Bwght%5D.ttf"
+      },
+      {
+        "filename": "fonts/SourceSans3[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/SourceSans3%5Bwght%5D.ttf"
+      }
+    ]
   },
   {
     "check_id": "PHOTO-04/booking-hero-scogliera/H022",
@@ -1667,8 +1775,17 @@
     "output_id": "booking-hero-oliveto",
     "type": "human",
     "output_reference": "deliverables/booking-hero-oliveto.png",
-    "check": "booking-hero-oliveto.png: house-name letters other than the enlarged initial uses Canela Deck Light (when present).",
-    "reference_assets": []
+    "check": "booking-hero-oliveto.png: house-name letters other than the enlarged initial uses Cormorant Garamond Light (when present).",
+    "reference_assets": [
+      {
+        "filename": "fonts/CormorantGaramond[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/CormorantGaramond%5Bwght%5D.ttf"
+      },
+      {
+        "filename": "fonts/SourceSans3[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/SourceSans3%5Bwght%5D.ttf"
+      }
+    ]
   },
   {
     "check_id": "PHOTO-04/booking-hero-oliveto/H026",
@@ -1676,7 +1793,16 @@
     "type": "human",
     "output_reference": "deliverables/booking-hero-oliveto.png",
     "check": "booking-hero-oliveto.png: house-name letters other than the enlarged initial has font size 72 px (when present).",
-    "reference_assets": []
+    "reference_assets": [
+      {
+        "filename": "fonts/CormorantGaramond[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/CormorantGaramond%5Bwght%5D.ttf"
+      },
+      {
+        "filename": "fonts/SourceSans3[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/SourceSans3%5Bwght%5D.ttf"
+      }
+    ]
   },
   {
     "check_id": "PHOTO-04/booking-hero-oliveto/H027",
@@ -1684,7 +1810,16 @@
     "type": "human",
     "output_reference": "deliverables/booking-hero-oliveto.png",
     "check": "booking-hero-oliveto.png: house-name letters other than the enlarged initial has 78 px leading on multiline text (when present).",
-    "reference_assets": []
+    "reference_assets": [
+      {
+        "filename": "fonts/CormorantGaramond[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/CormorantGaramond%5Bwght%5D.ttf"
+      },
+      {
+        "filename": "fonts/SourceSans3[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/SourceSans3%5Bwght%5D.ttf"
+      }
+    ]
   },
   {
     "check_id": "PHOTO-04/booking-hero-oliveto/H028",
@@ -1692,15 +1827,33 @@
     "type": "human",
     "output_reference": "deliverables/booking-hero-oliveto.png",
     "check": "booking-hero-oliveto.png: house-name letters other than the enlarged initial uses tracking -10/1000 em (when present).",
-    "reference_assets": []
+    "reference_assets": [
+      {
+        "filename": "fonts/CormorantGaramond[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/CormorantGaramond%5Bwght%5D.ttf"
+      },
+      {
+        "filename": "fonts/SourceSans3[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/SourceSans3%5Bwght%5D.ttf"
+      }
+    ]
   },
   {
     "check_id": "PHOTO-04/booking-hero-oliveto/H029",
     "output_id": "booking-hero-oliveto",
     "type": "human",
     "output_reference": "deliverables/booking-hero-oliveto.png",
-    "check": "booking-hero-oliveto.png: standfirst uses Canela Deck Light (when present).",
-    "reference_assets": []
+    "check": "booking-hero-oliveto.png: standfirst uses Cormorant Garamond Light (when present).",
+    "reference_assets": [
+      {
+        "filename": "fonts/CormorantGaramond[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/CormorantGaramond%5Bwght%5D.ttf"
+      },
+      {
+        "filename": "fonts/SourceSans3[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/SourceSans3%5Bwght%5D.ttf"
+      }
+    ]
   },
   {
     "check_id": "PHOTO-04/booking-hero-oliveto/H030",
@@ -1708,7 +1861,16 @@
     "type": "human",
     "output_reference": "deliverables/booking-hero-oliveto.png",
     "check": "booking-hero-oliveto.png: standfirst has font size 26 px (when present).",
-    "reference_assets": []
+    "reference_assets": [
+      {
+        "filename": "fonts/CormorantGaramond[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/CormorantGaramond%5Bwght%5D.ttf"
+      },
+      {
+        "filename": "fonts/SourceSans3[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/SourceSans3%5Bwght%5D.ttf"
+      }
+    ]
   },
   {
     "check_id": "PHOTO-04/booking-hero-oliveto/H031",
@@ -1716,7 +1878,16 @@
     "type": "human",
     "output_reference": "deliverables/booking-hero-oliveto.png",
     "check": "booking-hero-oliveto.png: standfirst has 30 px leading on multiline text (when present).",
-    "reference_assets": []
+    "reference_assets": [
+      {
+        "filename": "fonts/CormorantGaramond[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/CormorantGaramond%5Bwght%5D.ttf"
+      },
+      {
+        "filename": "fonts/SourceSans3[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/SourceSans3%5Bwght%5D.ttf"
+      }
+    ]
   },
   {
     "check_id": "PHOTO-04/booking-hero-oliveto/H032",
@@ -1724,15 +1895,33 @@
     "type": "human",
     "output_reference": "deliverables/booking-hero-oliveto.png",
     "check": "booking-hero-oliveto.png: standfirst uses tracking -4/1000 em (when present).",
-    "reference_assets": []
+    "reference_assets": [
+      {
+        "filename": "fonts/CormorantGaramond[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/CormorantGaramond%5Bwght%5D.ttf"
+      },
+      {
+        "filename": "fonts/SourceSans3[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/SourceSans3%5Bwght%5D.ttf"
+      }
+    ]
   },
   {
     "check_id": "PHOTO-04/booking-hero-oliveto/H033",
     "output_id": "booking-hero-oliveto",
     "type": "human",
     "output_reference": "deliverables/booking-hero-oliveto.png",
-    "check": "booking-hero-oliveto.png: body text uses Untitled Sans Regular (when present).",
-    "reference_assets": []
+    "check": "booking-hero-oliveto.png: body text uses Source Sans 3 Regular (when present).",
+    "reference_assets": [
+      {
+        "filename": "fonts/CormorantGaramond[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/CormorantGaramond%5Bwght%5D.ttf"
+      },
+      {
+        "filename": "fonts/SourceSans3[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/SourceSans3%5Bwght%5D.ttf"
+      }
+    ]
   },
   {
     "check_id": "PHOTO-04/booking-hero-oliveto/H034",
@@ -1740,7 +1929,16 @@
     "type": "human",
     "output_reference": "deliverables/booking-hero-oliveto.png",
     "check": "booking-hero-oliveto.png: body text has font size 20 px (when present).",
-    "reference_assets": []
+    "reference_assets": [
+      {
+        "filename": "fonts/CormorantGaramond[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/CormorantGaramond%5Bwght%5D.ttf"
+      },
+      {
+        "filename": "fonts/SourceSans3[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/SourceSans3%5Bwght%5D.ttf"
+      }
+    ]
   },
   {
     "check_id": "PHOTO-04/booking-hero-oliveto/H035",
@@ -1748,7 +1946,16 @@
     "type": "human",
     "output_reference": "deliverables/booking-hero-oliveto.png",
     "check": "booking-hero-oliveto.png: body text has 30 px leading on multiline text (when present).",
-    "reference_assets": []
+    "reference_assets": [
+      {
+        "filename": "fonts/CormorantGaramond[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/CormorantGaramond%5Bwght%5D.ttf"
+      },
+      {
+        "filename": "fonts/SourceSans3[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/SourceSans3%5Bwght%5D.ttf"
+      }
+    ]
   },
   {
     "check_id": "PHOTO-04/booking-hero-oliveto/H036",
@@ -1756,15 +1963,33 @@
     "type": "human",
     "output_reference": "deliverables/booking-hero-oliveto.png",
     "check": "booking-hero-oliveto.png: body text uses tracking +0/1000 em (when present).",
-    "reference_assets": []
+    "reference_assets": [
+      {
+        "filename": "fonts/CormorantGaramond[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/CormorantGaramond%5Bwght%5D.ttf"
+      },
+      {
+        "filename": "fonts/SourceSans3[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/SourceSans3%5Bwght%5D.ttf"
+      }
+    ]
   },
   {
     "check_id": "PHOTO-04/booking-hero-oliveto/H037",
     "output_id": "booking-hero-oliveto",
     "type": "human",
     "output_reference": "deliverables/booking-hero-oliveto.png",
-    "check": "booking-hero-oliveto.png: rates uses Untitled Sans Regular (when present).",
-    "reference_assets": []
+    "check": "booking-hero-oliveto.png: rates uses Source Sans 3 Regular (when present).",
+    "reference_assets": [
+      {
+        "filename": "fonts/CormorantGaramond[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/CormorantGaramond%5Bwght%5D.ttf"
+      },
+      {
+        "filename": "fonts/SourceSans3[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/SourceSans3%5Bwght%5D.ttf"
+      }
+    ]
   },
   {
     "check_id": "PHOTO-04/booking-hero-oliveto/H038",
@@ -1772,7 +1997,16 @@
     "type": "human",
     "output_reference": "deliverables/booking-hero-oliveto.png",
     "check": "booking-hero-oliveto.png: rates has font size 15 px (when present).",
-    "reference_assets": []
+    "reference_assets": [
+      {
+        "filename": "fonts/CormorantGaramond[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/CormorantGaramond%5Bwght%5D.ttf"
+      },
+      {
+        "filename": "fonts/SourceSans3[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/SourceSans3%5Bwght%5D.ttf"
+      }
+    ]
   },
   {
     "check_id": "PHOTO-04/booking-hero-oliveto/H039",
@@ -1780,7 +2014,16 @@
     "type": "human",
     "output_reference": "deliverables/booking-hero-oliveto.png",
     "check": "booking-hero-oliveto.png: rates has 22 px leading on multiline text (when present).",
-    "reference_assets": []
+    "reference_assets": [
+      {
+        "filename": "fonts/CormorantGaramond[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/CormorantGaramond%5Bwght%5D.ttf"
+      },
+      {
+        "filename": "fonts/SourceSans3[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/SourceSans3%5Bwght%5D.ttf"
+      }
+    ]
   },
   {
     "check_id": "PHOTO-04/booking-hero-oliveto/H040",
@@ -1788,15 +2031,33 @@
     "type": "human",
     "output_reference": "deliverables/booking-hero-oliveto.png",
     "check": "booking-hero-oliveto.png: rates uses tracking +8/1000 em (when present).",
-    "reference_assets": []
+    "reference_assets": [
+      {
+        "filename": "fonts/CormorantGaramond[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/CormorantGaramond%5Bwght%5D.ttf"
+      },
+      {
+        "filename": "fonts/SourceSans3[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/SourceSans3%5Bwght%5D.ttf"
+      }
+    ]
   },
   {
     "check_id": "PHOTO-04/booking-hero-oliveto/H041",
     "output_id": "booking-hero-oliveto",
     "type": "human",
     "output_reference": "deliverables/booking-hero-oliveto.png",
-    "check": "booking-hero-oliveto.png: captions uses Untitled Sans Regular (when present).",
-    "reference_assets": []
+    "check": "booking-hero-oliveto.png: captions uses Source Sans 3 Regular (when present).",
+    "reference_assets": [
+      {
+        "filename": "fonts/CormorantGaramond[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/CormorantGaramond%5Bwght%5D.ttf"
+      },
+      {
+        "filename": "fonts/SourceSans3[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/SourceSans3%5Bwght%5D.ttf"
+      }
+    ]
   },
   {
     "check_id": "PHOTO-04/booking-hero-oliveto/H042",
@@ -1804,7 +2065,16 @@
     "type": "human",
     "output_reference": "deliverables/booking-hero-oliveto.png",
     "check": "booking-hero-oliveto.png: captions has font size 15 px (when present).",
-    "reference_assets": []
+    "reference_assets": [
+      {
+        "filename": "fonts/CormorantGaramond[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/CormorantGaramond%5Bwght%5D.ttf"
+      },
+      {
+        "filename": "fonts/SourceSans3[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/SourceSans3%5Bwght%5D.ttf"
+      }
+    ]
   },
   {
     "check_id": "PHOTO-04/booking-hero-oliveto/H043",
@@ -1812,7 +2082,16 @@
     "type": "human",
     "output_reference": "deliverables/booking-hero-oliveto.png",
     "check": "booking-hero-oliveto.png: captions has 22 px leading on multiline text (when present).",
-    "reference_assets": []
+    "reference_assets": [
+      {
+        "filename": "fonts/CormorantGaramond[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/CormorantGaramond%5Bwght%5D.ttf"
+      },
+      {
+        "filename": "fonts/SourceSans3[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/SourceSans3%5Bwght%5D.ttf"
+      }
+    ]
   },
   {
     "check_id": "PHOTO-04/booking-hero-oliveto/H044",
@@ -1820,15 +2099,33 @@
     "type": "human",
     "output_reference": "deliverables/booking-hero-oliveto.png",
     "check": "booking-hero-oliveto.png: captions uses tracking +8/1000 em (when present).",
-    "reference_assets": []
+    "reference_assets": [
+      {
+        "filename": "fonts/CormorantGaramond[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/CormorantGaramond%5Bwght%5D.ttf"
+      },
+      {
+        "filename": "fonts/SourceSans3[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/SourceSans3%5Bwght%5D.ttf"
+      }
+    ]
   },
   {
     "check_id": "PHOTO-04/booking-hero-oliveto/H045",
     "output_id": "booking-hero-oliveto",
     "type": "human",
     "output_reference": "deliverables/booking-hero-oliveto.png",
-    "check": "booking-hero-oliveto.png: booking-action text uses Untitled Sans Regular (when present).",
-    "reference_assets": []
+    "check": "booking-hero-oliveto.png: booking-action text uses Source Sans 3 Regular (when present).",
+    "reference_assets": [
+      {
+        "filename": "fonts/CormorantGaramond[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/CormorantGaramond%5Bwght%5D.ttf"
+      },
+      {
+        "filename": "fonts/SourceSans3[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/SourceSans3%5Bwght%5D.ttf"
+      }
+    ]
   },
   {
     "check_id": "PHOTO-04/booking-hero-oliveto/H046",
@@ -1836,7 +2133,16 @@
     "type": "human",
     "output_reference": "deliverables/booking-hero-oliveto.png",
     "check": "booking-hero-oliveto.png: booking-action text has font size 20 px (when present).",
-    "reference_assets": []
+    "reference_assets": [
+      {
+        "filename": "fonts/CormorantGaramond[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/CormorantGaramond%5Bwght%5D.ttf"
+      },
+      {
+        "filename": "fonts/SourceSans3[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/SourceSans3%5Bwght%5D.ttf"
+      }
+    ]
   },
   {
     "check_id": "PHOTO-04/booking-hero-oliveto/H047",
@@ -1844,7 +2150,16 @@
     "type": "human",
     "output_reference": "deliverables/booking-hero-oliveto.png",
     "check": "booking-hero-oliveto.png: booking-action text has 30 px leading on multiline text (when present).",
-    "reference_assets": []
+    "reference_assets": [
+      {
+        "filename": "fonts/CormorantGaramond[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/CormorantGaramond%5Bwght%5D.ttf"
+      },
+      {
+        "filename": "fonts/SourceSans3[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/SourceSans3%5Bwght%5D.ttf"
+      }
+    ]
   },
   {
     "check_id": "PHOTO-04/booking-hero-oliveto/H048",
@@ -1852,15 +2167,33 @@
     "type": "human",
     "output_reference": "deliverables/booking-hero-oliveto.png",
     "check": "booking-hero-oliveto.png: booking-action text uses tracking +0/1000 em (when present).",
-    "reference_assets": []
+    "reference_assets": [
+      {
+        "filename": "fonts/CormorantGaramond[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/CormorantGaramond%5Bwght%5D.ttf"
+      },
+      {
+        "filename": "fonts/SourceSans3[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/SourceSans3%5Bwght%5D.ttf"
+      }
+    ]
   },
   {
     "check_id": "PHOTO-04/booking-hero-scogliera/H025",
     "output_id": "booking-hero-scogliera",
     "type": "human",
     "output_reference": "deliverables/booking-hero-scogliera.png",
-    "check": "booking-hero-scogliera.png: house-name letters other than the enlarged initial uses Canela Deck Light (when present).",
-    "reference_assets": []
+    "check": "booking-hero-scogliera.png: house-name letters other than the enlarged initial uses Cormorant Garamond Light (when present).",
+    "reference_assets": [
+      {
+        "filename": "fonts/CormorantGaramond[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/CormorantGaramond%5Bwght%5D.ttf"
+      },
+      {
+        "filename": "fonts/SourceSans3[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/SourceSans3%5Bwght%5D.ttf"
+      }
+    ]
   },
   {
     "check_id": "PHOTO-04/booking-hero-scogliera/H026",
@@ -1868,7 +2201,16 @@
     "type": "human",
     "output_reference": "deliverables/booking-hero-scogliera.png",
     "check": "booking-hero-scogliera.png: house-name letters other than the enlarged initial has font size 72 px (when present).",
-    "reference_assets": []
+    "reference_assets": [
+      {
+        "filename": "fonts/CormorantGaramond[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/CormorantGaramond%5Bwght%5D.ttf"
+      },
+      {
+        "filename": "fonts/SourceSans3[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/SourceSans3%5Bwght%5D.ttf"
+      }
+    ]
   },
   {
     "check_id": "PHOTO-04/booking-hero-scogliera/H027",
@@ -1876,7 +2218,16 @@
     "type": "human",
     "output_reference": "deliverables/booking-hero-scogliera.png",
     "check": "booking-hero-scogliera.png: house-name letters other than the enlarged initial has 78 px leading on multiline text (when present).",
-    "reference_assets": []
+    "reference_assets": [
+      {
+        "filename": "fonts/CormorantGaramond[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/CormorantGaramond%5Bwght%5D.ttf"
+      },
+      {
+        "filename": "fonts/SourceSans3[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/SourceSans3%5Bwght%5D.ttf"
+      }
+    ]
   },
   {
     "check_id": "PHOTO-04/booking-hero-scogliera/H028",
@@ -1884,15 +2235,33 @@
     "type": "human",
     "output_reference": "deliverables/booking-hero-scogliera.png",
     "check": "booking-hero-scogliera.png: house-name letters other than the enlarged initial uses tracking -10/1000 em (when present).",
-    "reference_assets": []
+    "reference_assets": [
+      {
+        "filename": "fonts/CormorantGaramond[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/CormorantGaramond%5Bwght%5D.ttf"
+      },
+      {
+        "filename": "fonts/SourceSans3[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/SourceSans3%5Bwght%5D.ttf"
+      }
+    ]
   },
   {
     "check_id": "PHOTO-04/booking-hero-scogliera/H029",
     "output_id": "booking-hero-scogliera",
     "type": "human",
     "output_reference": "deliverables/booking-hero-scogliera.png",
-    "check": "booking-hero-scogliera.png: standfirst uses Canela Deck Light (when present).",
-    "reference_assets": []
+    "check": "booking-hero-scogliera.png: standfirst uses Cormorant Garamond Light (when present).",
+    "reference_assets": [
+      {
+        "filename": "fonts/CormorantGaramond[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/CormorantGaramond%5Bwght%5D.ttf"
+      },
+      {
+        "filename": "fonts/SourceSans3[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/SourceSans3%5Bwght%5D.ttf"
+      }
+    ]
   },
   {
     "check_id": "PHOTO-04/booking-hero-scogliera/H030",
@@ -1900,7 +2269,16 @@
     "type": "human",
     "output_reference": "deliverables/booking-hero-scogliera.png",
     "check": "booking-hero-scogliera.png: standfirst has font size 26 px (when present).",
-    "reference_assets": []
+    "reference_assets": [
+      {
+        "filename": "fonts/CormorantGaramond[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/CormorantGaramond%5Bwght%5D.ttf"
+      },
+      {
+        "filename": "fonts/SourceSans3[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/SourceSans3%5Bwght%5D.ttf"
+      }
+    ]
   },
   {
     "check_id": "PHOTO-04/booking-hero-scogliera/H031",
@@ -1908,7 +2286,16 @@
     "type": "human",
     "output_reference": "deliverables/booking-hero-scogliera.png",
     "check": "booking-hero-scogliera.png: standfirst has 30 px leading on multiline text (when present).",
-    "reference_assets": []
+    "reference_assets": [
+      {
+        "filename": "fonts/CormorantGaramond[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/CormorantGaramond%5Bwght%5D.ttf"
+      },
+      {
+        "filename": "fonts/SourceSans3[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/SourceSans3%5Bwght%5D.ttf"
+      }
+    ]
   },
   {
     "check_id": "PHOTO-04/booking-hero-scogliera/H032",
@@ -1916,15 +2303,33 @@
     "type": "human",
     "output_reference": "deliverables/booking-hero-scogliera.png",
     "check": "booking-hero-scogliera.png: standfirst uses tracking -4/1000 em (when present).",
-    "reference_assets": []
+    "reference_assets": [
+      {
+        "filename": "fonts/CormorantGaramond[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/CormorantGaramond%5Bwght%5D.ttf"
+      },
+      {
+        "filename": "fonts/SourceSans3[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/SourceSans3%5Bwght%5D.ttf"
+      }
+    ]
   },
   {
     "check_id": "PHOTO-04/booking-hero-scogliera/H033",
     "output_id": "booking-hero-scogliera",
     "type": "human",
     "output_reference": "deliverables/booking-hero-scogliera.png",
-    "check": "booking-hero-scogliera.png: body text uses Untitled Sans Regular (when present).",
-    "reference_assets": []
+    "check": "booking-hero-scogliera.png: body text uses Source Sans 3 Regular (when present).",
+    "reference_assets": [
+      {
+        "filename": "fonts/CormorantGaramond[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/CormorantGaramond%5Bwght%5D.ttf"
+      },
+      {
+        "filename": "fonts/SourceSans3[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/SourceSans3%5Bwght%5D.ttf"
+      }
+    ]
   },
   {
     "check_id": "PHOTO-04/booking-hero-scogliera/H034",
@@ -1932,7 +2337,16 @@
     "type": "human",
     "output_reference": "deliverables/booking-hero-scogliera.png",
     "check": "booking-hero-scogliera.png: body text has font size 20 px (when present).",
-    "reference_assets": []
+    "reference_assets": [
+      {
+        "filename": "fonts/CormorantGaramond[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/CormorantGaramond%5Bwght%5D.ttf"
+      },
+      {
+        "filename": "fonts/SourceSans3[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/SourceSans3%5Bwght%5D.ttf"
+      }
+    ]
   },
   {
     "check_id": "PHOTO-04/booking-hero-scogliera/H035",
@@ -1940,7 +2354,16 @@
     "type": "human",
     "output_reference": "deliverables/booking-hero-scogliera.png",
     "check": "booking-hero-scogliera.png: body text has 30 px leading on multiline text (when present).",
-    "reference_assets": []
+    "reference_assets": [
+      {
+        "filename": "fonts/CormorantGaramond[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/CormorantGaramond%5Bwght%5D.ttf"
+      },
+      {
+        "filename": "fonts/SourceSans3[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/SourceSans3%5Bwght%5D.ttf"
+      }
+    ]
   },
   {
     "check_id": "PHOTO-04/booking-hero-scogliera/H036",
@@ -1948,15 +2371,33 @@
     "type": "human",
     "output_reference": "deliverables/booking-hero-scogliera.png",
     "check": "booking-hero-scogliera.png: body text uses tracking +0/1000 em (when present).",
-    "reference_assets": []
+    "reference_assets": [
+      {
+        "filename": "fonts/CormorantGaramond[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/CormorantGaramond%5Bwght%5D.ttf"
+      },
+      {
+        "filename": "fonts/SourceSans3[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/SourceSans3%5Bwght%5D.ttf"
+      }
+    ]
   },
   {
     "check_id": "PHOTO-04/booking-hero-scogliera/H037",
     "output_id": "booking-hero-scogliera",
     "type": "human",
     "output_reference": "deliverables/booking-hero-scogliera.png",
-    "check": "booking-hero-scogliera.png: rates uses Untitled Sans Regular (when present).",
-    "reference_assets": []
+    "check": "booking-hero-scogliera.png: rates uses Source Sans 3 Regular (when present).",
+    "reference_assets": [
+      {
+        "filename": "fonts/CormorantGaramond[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/CormorantGaramond%5Bwght%5D.ttf"
+      },
+      {
+        "filename": "fonts/SourceSans3[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/SourceSans3%5Bwght%5D.ttf"
+      }
+    ]
   },
   {
     "check_id": "PHOTO-04/booking-hero-scogliera/H038",
@@ -1964,7 +2405,16 @@
     "type": "human",
     "output_reference": "deliverables/booking-hero-scogliera.png",
     "check": "booking-hero-scogliera.png: rates has font size 15 px (when present).",
-    "reference_assets": []
+    "reference_assets": [
+      {
+        "filename": "fonts/CormorantGaramond[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/CormorantGaramond%5Bwght%5D.ttf"
+      },
+      {
+        "filename": "fonts/SourceSans3[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/SourceSans3%5Bwght%5D.ttf"
+      }
+    ]
   },
   {
     "check_id": "PHOTO-04/booking-hero-scogliera/H039",
@@ -1972,7 +2422,16 @@
     "type": "human",
     "output_reference": "deliverables/booking-hero-scogliera.png",
     "check": "booking-hero-scogliera.png: rates has 22 px leading on multiline text (when present).",
-    "reference_assets": []
+    "reference_assets": [
+      {
+        "filename": "fonts/CormorantGaramond[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/CormorantGaramond%5Bwght%5D.ttf"
+      },
+      {
+        "filename": "fonts/SourceSans3[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/SourceSans3%5Bwght%5D.ttf"
+      }
+    ]
   },
   {
     "check_id": "PHOTO-04/booking-hero-scogliera/H040",
@@ -1980,15 +2439,33 @@
     "type": "human",
     "output_reference": "deliverables/booking-hero-scogliera.png",
     "check": "booking-hero-scogliera.png: rates uses tracking +8/1000 em (when present).",
-    "reference_assets": []
+    "reference_assets": [
+      {
+        "filename": "fonts/CormorantGaramond[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/CormorantGaramond%5Bwght%5D.ttf"
+      },
+      {
+        "filename": "fonts/SourceSans3[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/SourceSans3%5Bwght%5D.ttf"
+      }
+    ]
   },
   {
     "check_id": "PHOTO-04/booking-hero-scogliera/H041",
     "output_id": "booking-hero-scogliera",
     "type": "human",
     "output_reference": "deliverables/booking-hero-scogliera.png",
-    "check": "booking-hero-scogliera.png: captions uses Untitled Sans Regular (when present).",
-    "reference_assets": []
+    "check": "booking-hero-scogliera.png: captions uses Source Sans 3 Regular (when present).",
+    "reference_assets": [
+      {
+        "filename": "fonts/CormorantGaramond[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/CormorantGaramond%5Bwght%5D.ttf"
+      },
+      {
+        "filename": "fonts/SourceSans3[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/SourceSans3%5Bwght%5D.ttf"
+      }
+    ]
   },
   {
     "check_id": "PHOTO-04/booking-hero-scogliera/H042",
@@ -1996,7 +2473,16 @@
     "type": "human",
     "output_reference": "deliverables/booking-hero-scogliera.png",
     "check": "booking-hero-scogliera.png: captions has font size 15 px (when present).",
-    "reference_assets": []
+    "reference_assets": [
+      {
+        "filename": "fonts/CormorantGaramond[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/CormorantGaramond%5Bwght%5D.ttf"
+      },
+      {
+        "filename": "fonts/SourceSans3[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/SourceSans3%5Bwght%5D.ttf"
+      }
+    ]
   },
   {
     "check_id": "PHOTO-04/booking-hero-scogliera/H043",
@@ -2004,7 +2490,16 @@
     "type": "human",
     "output_reference": "deliverables/booking-hero-scogliera.png",
     "check": "booking-hero-scogliera.png: captions has 22 px leading on multiline text (when present).",
-    "reference_assets": []
+    "reference_assets": [
+      {
+        "filename": "fonts/CormorantGaramond[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/CormorantGaramond%5Bwght%5D.ttf"
+      },
+      {
+        "filename": "fonts/SourceSans3[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/SourceSans3%5Bwght%5D.ttf"
+      }
+    ]
   },
   {
     "check_id": "PHOTO-04/booking-hero-scogliera/H044",
@@ -2012,15 +2507,33 @@
     "type": "human",
     "output_reference": "deliverables/booking-hero-scogliera.png",
     "check": "booking-hero-scogliera.png: captions uses tracking +8/1000 em (when present).",
-    "reference_assets": []
+    "reference_assets": [
+      {
+        "filename": "fonts/CormorantGaramond[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/CormorantGaramond%5Bwght%5D.ttf"
+      },
+      {
+        "filename": "fonts/SourceSans3[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/SourceSans3%5Bwght%5D.ttf"
+      }
+    ]
   },
   {
     "check_id": "PHOTO-04/booking-hero-scogliera/H045",
     "output_id": "booking-hero-scogliera",
     "type": "human",
     "output_reference": "deliverables/booking-hero-scogliera.png",
-    "check": "booking-hero-scogliera.png: booking-action text uses Untitled Sans Regular (when present).",
-    "reference_assets": []
+    "check": "booking-hero-scogliera.png: booking-action text uses Source Sans 3 Regular (when present).",
+    "reference_assets": [
+      {
+        "filename": "fonts/CormorantGaramond[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/CormorantGaramond%5Bwght%5D.ttf"
+      },
+      {
+        "filename": "fonts/SourceSans3[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/SourceSans3%5Bwght%5D.ttf"
+      }
+    ]
   },
   {
     "check_id": "PHOTO-04/booking-hero-scogliera/H046",
@@ -2028,7 +2541,16 @@
     "type": "human",
     "output_reference": "deliverables/booking-hero-scogliera.png",
     "check": "booking-hero-scogliera.png: booking-action text has font size 20 px (when present).",
-    "reference_assets": []
+    "reference_assets": [
+      {
+        "filename": "fonts/CormorantGaramond[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/CormorantGaramond%5Bwght%5D.ttf"
+      },
+      {
+        "filename": "fonts/SourceSans3[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/SourceSans3%5Bwght%5D.ttf"
+      }
+    ]
   },
   {
     "check_id": "PHOTO-04/booking-hero-scogliera/H047",
@@ -2036,7 +2558,16 @@
     "type": "human",
     "output_reference": "deliverables/booking-hero-scogliera.png",
     "check": "booking-hero-scogliera.png: booking-action text has 30 px leading on multiline text (when present).",
-    "reference_assets": []
+    "reference_assets": [
+      {
+        "filename": "fonts/CormorantGaramond[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/CormorantGaramond%5Bwght%5D.ttf"
+      },
+      {
+        "filename": "fonts/SourceSans3[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/SourceSans3%5Bwght%5D.ttf"
+      }
+    ]
   },
   {
     "check_id": "PHOTO-04/booking-hero-scogliera/H048",
@@ -2044,15 +2575,33 @@
     "type": "human",
     "output_reference": "deliverables/booking-hero-scogliera.png",
     "check": "booking-hero-scogliera.png: booking-action text uses tracking +0/1000 em (when present).",
-    "reference_assets": []
+    "reference_assets": [
+      {
+        "filename": "fonts/CormorantGaramond[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/CormorantGaramond%5Bwght%5D.ttf"
+      },
+      {
+        "filename": "fonts/SourceSans3[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/SourceSans3%5Bwght%5D.ttf"
+      }
+    ]
   },
   {
     "check_id": "PHOTO-04/booking-hero-verranza/H025",
     "output_id": "booking-hero-verranza",
     "type": "human",
     "output_reference": "deliverables/booking-hero-verranza.png",
-    "check": "booking-hero-verranza.png: house-name letters other than the enlarged initial uses Canela Deck Light (when present).",
-    "reference_assets": []
+    "check": "booking-hero-verranza.png: house-name letters other than the enlarged initial uses Cormorant Garamond Light (when present).",
+    "reference_assets": [
+      {
+        "filename": "fonts/CormorantGaramond[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/CormorantGaramond%5Bwght%5D.ttf"
+      },
+      {
+        "filename": "fonts/SourceSans3[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/SourceSans3%5Bwght%5D.ttf"
+      }
+    ]
   },
   {
     "check_id": "PHOTO-04/booking-hero-verranza/H026",
@@ -2060,7 +2609,16 @@
     "type": "human",
     "output_reference": "deliverables/booking-hero-verranza.png",
     "check": "booking-hero-verranza.png: house-name letters other than the enlarged initial has font size 72 px (when present).",
-    "reference_assets": []
+    "reference_assets": [
+      {
+        "filename": "fonts/CormorantGaramond[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/CormorantGaramond%5Bwght%5D.ttf"
+      },
+      {
+        "filename": "fonts/SourceSans3[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/SourceSans3%5Bwght%5D.ttf"
+      }
+    ]
   },
   {
     "check_id": "PHOTO-04/booking-hero-verranza/H027",
@@ -2068,7 +2626,16 @@
     "type": "human",
     "output_reference": "deliverables/booking-hero-verranza.png",
     "check": "booking-hero-verranza.png: house-name letters other than the enlarged initial has 78 px leading on multiline text (when present).",
-    "reference_assets": []
+    "reference_assets": [
+      {
+        "filename": "fonts/CormorantGaramond[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/CormorantGaramond%5Bwght%5D.ttf"
+      },
+      {
+        "filename": "fonts/SourceSans3[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/SourceSans3%5Bwght%5D.ttf"
+      }
+    ]
   },
   {
     "check_id": "PHOTO-04/booking-hero-verranza/H028",
@@ -2076,15 +2643,33 @@
     "type": "human",
     "output_reference": "deliverables/booking-hero-verranza.png",
     "check": "booking-hero-verranza.png: house-name letters other than the enlarged initial uses tracking -10/1000 em (when present).",
-    "reference_assets": []
+    "reference_assets": [
+      {
+        "filename": "fonts/CormorantGaramond[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/CormorantGaramond%5Bwght%5D.ttf"
+      },
+      {
+        "filename": "fonts/SourceSans3[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/SourceSans3%5Bwght%5D.ttf"
+      }
+    ]
   },
   {
     "check_id": "PHOTO-04/booking-hero-verranza/H029",
     "output_id": "booking-hero-verranza",
     "type": "human",
     "output_reference": "deliverables/booking-hero-verranza.png",
-    "check": "booking-hero-verranza.png: standfirst uses Canela Deck Light (when present).",
-    "reference_assets": []
+    "check": "booking-hero-verranza.png: standfirst uses Cormorant Garamond Light (when present).",
+    "reference_assets": [
+      {
+        "filename": "fonts/CormorantGaramond[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/CormorantGaramond%5Bwght%5D.ttf"
+      },
+      {
+        "filename": "fonts/SourceSans3[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/SourceSans3%5Bwght%5D.ttf"
+      }
+    ]
   },
   {
     "check_id": "PHOTO-04/booking-hero-verranza/H030",
@@ -2092,7 +2677,16 @@
     "type": "human",
     "output_reference": "deliverables/booking-hero-verranza.png",
     "check": "booking-hero-verranza.png: standfirst has font size 26 px (when present).",
-    "reference_assets": []
+    "reference_assets": [
+      {
+        "filename": "fonts/CormorantGaramond[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/CormorantGaramond%5Bwght%5D.ttf"
+      },
+      {
+        "filename": "fonts/SourceSans3[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/SourceSans3%5Bwght%5D.ttf"
+      }
+    ]
   },
   {
     "check_id": "PHOTO-04/booking-hero-verranza/H031",
@@ -2100,7 +2694,16 @@
     "type": "human",
     "output_reference": "deliverables/booking-hero-verranza.png",
     "check": "booking-hero-verranza.png: standfirst has 30 px leading on multiline text (when present).",
-    "reference_assets": []
+    "reference_assets": [
+      {
+        "filename": "fonts/CormorantGaramond[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/CormorantGaramond%5Bwght%5D.ttf"
+      },
+      {
+        "filename": "fonts/SourceSans3[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/SourceSans3%5Bwght%5D.ttf"
+      }
+    ]
   },
   {
     "check_id": "PHOTO-04/booking-hero-verranza/H032",
@@ -2108,15 +2711,33 @@
     "type": "human",
     "output_reference": "deliverables/booking-hero-verranza.png",
     "check": "booking-hero-verranza.png: standfirst uses tracking -4/1000 em (when present).",
-    "reference_assets": []
+    "reference_assets": [
+      {
+        "filename": "fonts/CormorantGaramond[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/CormorantGaramond%5Bwght%5D.ttf"
+      },
+      {
+        "filename": "fonts/SourceSans3[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/SourceSans3%5Bwght%5D.ttf"
+      }
+    ]
   },
   {
     "check_id": "PHOTO-04/booking-hero-verranza/H033",
     "output_id": "booking-hero-verranza",
     "type": "human",
     "output_reference": "deliverables/booking-hero-verranza.png",
-    "check": "booking-hero-verranza.png: body text uses Untitled Sans Regular (when present).",
-    "reference_assets": []
+    "check": "booking-hero-verranza.png: body text uses Source Sans 3 Regular (when present).",
+    "reference_assets": [
+      {
+        "filename": "fonts/CormorantGaramond[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/CormorantGaramond%5Bwght%5D.ttf"
+      },
+      {
+        "filename": "fonts/SourceSans3[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/SourceSans3%5Bwght%5D.ttf"
+      }
+    ]
   },
   {
     "check_id": "PHOTO-04/booking-hero-verranza/H034",
@@ -2124,7 +2745,16 @@
     "type": "human",
     "output_reference": "deliverables/booking-hero-verranza.png",
     "check": "booking-hero-verranza.png: body text has font size 20 px (when present).",
-    "reference_assets": []
+    "reference_assets": [
+      {
+        "filename": "fonts/CormorantGaramond[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/CormorantGaramond%5Bwght%5D.ttf"
+      },
+      {
+        "filename": "fonts/SourceSans3[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/SourceSans3%5Bwght%5D.ttf"
+      }
+    ]
   },
   {
     "check_id": "PHOTO-04/booking-hero-verranza/H035",
@@ -2132,7 +2762,16 @@
     "type": "human",
     "output_reference": "deliverables/booking-hero-verranza.png",
     "check": "booking-hero-verranza.png: body text has 30 px leading on multiline text (when present).",
-    "reference_assets": []
+    "reference_assets": [
+      {
+        "filename": "fonts/CormorantGaramond[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/CormorantGaramond%5Bwght%5D.ttf"
+      },
+      {
+        "filename": "fonts/SourceSans3[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/SourceSans3%5Bwght%5D.ttf"
+      }
+    ]
   },
   {
     "check_id": "PHOTO-04/booking-hero-verranza/H036",
@@ -2140,15 +2779,33 @@
     "type": "human",
     "output_reference": "deliverables/booking-hero-verranza.png",
     "check": "booking-hero-verranza.png: body text uses tracking +0/1000 em (when present).",
-    "reference_assets": []
+    "reference_assets": [
+      {
+        "filename": "fonts/CormorantGaramond[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/CormorantGaramond%5Bwght%5D.ttf"
+      },
+      {
+        "filename": "fonts/SourceSans3[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/SourceSans3%5Bwght%5D.ttf"
+      }
+    ]
   },
   {
     "check_id": "PHOTO-04/booking-hero-verranza/H037",
     "output_id": "booking-hero-verranza",
     "type": "human",
     "output_reference": "deliverables/booking-hero-verranza.png",
-    "check": "booking-hero-verranza.png: rates uses Untitled Sans Regular (when present).",
-    "reference_assets": []
+    "check": "booking-hero-verranza.png: rates uses Source Sans 3 Regular (when present).",
+    "reference_assets": [
+      {
+        "filename": "fonts/CormorantGaramond[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/CormorantGaramond%5Bwght%5D.ttf"
+      },
+      {
+        "filename": "fonts/SourceSans3[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/SourceSans3%5Bwght%5D.ttf"
+      }
+    ]
   },
   {
     "check_id": "PHOTO-04/booking-hero-verranza/H038",
@@ -2156,7 +2813,16 @@
     "type": "human",
     "output_reference": "deliverables/booking-hero-verranza.png",
     "check": "booking-hero-verranza.png: rates has font size 15 px (when present).",
-    "reference_assets": []
+    "reference_assets": [
+      {
+        "filename": "fonts/CormorantGaramond[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/CormorantGaramond%5Bwght%5D.ttf"
+      },
+      {
+        "filename": "fonts/SourceSans3[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/SourceSans3%5Bwght%5D.ttf"
+      }
+    ]
   },
   {
     "check_id": "PHOTO-04/booking-hero-verranza/H039",
@@ -2164,7 +2830,16 @@
     "type": "human",
     "output_reference": "deliverables/booking-hero-verranza.png",
     "check": "booking-hero-verranza.png: rates has 22 px leading on multiline text (when present).",
-    "reference_assets": []
+    "reference_assets": [
+      {
+        "filename": "fonts/CormorantGaramond[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/CormorantGaramond%5Bwght%5D.ttf"
+      },
+      {
+        "filename": "fonts/SourceSans3[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/SourceSans3%5Bwght%5D.ttf"
+      }
+    ]
   },
   {
     "check_id": "PHOTO-04/booking-hero-verranza/H040",
@@ -2172,15 +2847,33 @@
     "type": "human",
     "output_reference": "deliverables/booking-hero-verranza.png",
     "check": "booking-hero-verranza.png: rates uses tracking +8/1000 em (when present).",
-    "reference_assets": []
+    "reference_assets": [
+      {
+        "filename": "fonts/CormorantGaramond[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/CormorantGaramond%5Bwght%5D.ttf"
+      },
+      {
+        "filename": "fonts/SourceSans3[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/SourceSans3%5Bwght%5D.ttf"
+      }
+    ]
   },
   {
     "check_id": "PHOTO-04/booking-hero-verranza/H041",
     "output_id": "booking-hero-verranza",
     "type": "human",
     "output_reference": "deliverables/booking-hero-verranza.png",
-    "check": "booking-hero-verranza.png: captions uses Untitled Sans Regular (when present).",
-    "reference_assets": []
+    "check": "booking-hero-verranza.png: captions uses Source Sans 3 Regular (when present).",
+    "reference_assets": [
+      {
+        "filename": "fonts/CormorantGaramond[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/CormorantGaramond%5Bwght%5D.ttf"
+      },
+      {
+        "filename": "fonts/SourceSans3[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/SourceSans3%5Bwght%5D.ttf"
+      }
+    ]
   },
   {
     "check_id": "PHOTO-04/booking-hero-verranza/H042",
@@ -2188,7 +2881,16 @@
     "type": "human",
     "output_reference": "deliverables/booking-hero-verranza.png",
     "check": "booking-hero-verranza.png: captions has font size 15 px (when present).",
-    "reference_assets": []
+    "reference_assets": [
+      {
+        "filename": "fonts/CormorantGaramond[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/CormorantGaramond%5Bwght%5D.ttf"
+      },
+      {
+        "filename": "fonts/SourceSans3[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/SourceSans3%5Bwght%5D.ttf"
+      }
+    ]
   },
   {
     "check_id": "PHOTO-04/booking-hero-verranza/H043",
@@ -2196,7 +2898,16 @@
     "type": "human",
     "output_reference": "deliverables/booking-hero-verranza.png",
     "check": "booking-hero-verranza.png: captions has 22 px leading on multiline text (when present).",
-    "reference_assets": []
+    "reference_assets": [
+      {
+        "filename": "fonts/CormorantGaramond[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/CormorantGaramond%5Bwght%5D.ttf"
+      },
+      {
+        "filename": "fonts/SourceSans3[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/SourceSans3%5Bwght%5D.ttf"
+      }
+    ]
   },
   {
     "check_id": "PHOTO-04/booking-hero-verranza/H044",
@@ -2204,15 +2915,33 @@
     "type": "human",
     "output_reference": "deliverables/booking-hero-verranza.png",
     "check": "booking-hero-verranza.png: captions uses tracking +8/1000 em (when present).",
-    "reference_assets": []
+    "reference_assets": [
+      {
+        "filename": "fonts/CormorantGaramond[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/CormorantGaramond%5Bwght%5D.ttf"
+      },
+      {
+        "filename": "fonts/SourceSans3[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/SourceSans3%5Bwght%5D.ttf"
+      }
+    ]
   },
   {
     "check_id": "PHOTO-04/booking-hero-verranza/H045",
     "output_id": "booking-hero-verranza",
     "type": "human",
     "output_reference": "deliverables/booking-hero-verranza.png",
-    "check": "booking-hero-verranza.png: booking-action text uses Untitled Sans Regular (when present).",
-    "reference_assets": []
+    "check": "booking-hero-verranza.png: booking-action text uses Source Sans 3 Regular (when present).",
+    "reference_assets": [
+      {
+        "filename": "fonts/CormorantGaramond[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/CormorantGaramond%5Bwght%5D.ttf"
+      },
+      {
+        "filename": "fonts/SourceSans3[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/SourceSans3%5Bwght%5D.ttf"
+      }
+    ]
   },
   {
     "check_id": "PHOTO-04/booking-hero-verranza/H046",
@@ -2220,7 +2949,16 @@
     "type": "human",
     "output_reference": "deliverables/booking-hero-verranza.png",
     "check": "booking-hero-verranza.png: booking-action text has font size 20 px (when present).",
-    "reference_assets": []
+    "reference_assets": [
+      {
+        "filename": "fonts/CormorantGaramond[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/CormorantGaramond%5Bwght%5D.ttf"
+      },
+      {
+        "filename": "fonts/SourceSans3[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/SourceSans3%5Bwght%5D.ttf"
+      }
+    ]
   },
   {
     "check_id": "PHOTO-04/booking-hero-verranza/H047",
@@ -2228,7 +2966,16 @@
     "type": "human",
     "output_reference": "deliverables/booking-hero-verranza.png",
     "check": "booking-hero-verranza.png: booking-action text has 30 px leading on multiline text (when present).",
-    "reference_assets": []
+    "reference_assets": [
+      {
+        "filename": "fonts/CormorantGaramond[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/CormorantGaramond%5Bwght%5D.ttf"
+      },
+      {
+        "filename": "fonts/SourceSans3[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/SourceSans3%5Bwght%5D.ttf"
+      }
+    ]
   },
   {
     "check_id": "PHOTO-04/booking-hero-verranza/H048",
@@ -2236,15 +2983,33 @@
     "type": "human",
     "output_reference": "deliverables/booking-hero-verranza.png",
     "check": "booking-hero-verranza.png: booking-action text uses tracking +0/1000 em (when present).",
-    "reference_assets": []
+    "reference_assets": [
+      {
+        "filename": "fonts/CormorantGaramond[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/CormorantGaramond%5Bwght%5D.ttf"
+      },
+      {
+        "filename": "fonts/SourceSans3[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/SourceSans3%5Bwght%5D.ttf"
+      }
+    ]
   },
   {
     "check_id": "PHOTO-04/villa-collection/H041",
     "output_id": "villa-collection",
     "type": "human",
     "output_reference": "deliverables/villa-collection.pdf",
-    "check": "villa-collection.pdf: house-name letters other than the enlarged initial uses Canela Deck Light (when present).",
-    "reference_assets": []
+    "check": "villa-collection.pdf: house-name letters other than the enlarged initial uses Cormorant Garamond Light (when present).",
+    "reference_assets": [
+      {
+        "filename": "fonts/CormorantGaramond[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/CormorantGaramond%5Bwght%5D.ttf"
+      },
+      {
+        "filename": "fonts/SourceSans3[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/SourceSans3%5Bwght%5D.ttf"
+      }
+    ]
   },
   {
     "check_id": "PHOTO-04/villa-collection/H042",
@@ -2252,7 +3017,16 @@
     "type": "human",
     "output_reference": "deliverables/villa-collection.pdf",
     "check": "villa-collection.pdf: house-name letters other than the enlarged initial has font size 34 pt (when present).",
-    "reference_assets": []
+    "reference_assets": [
+      {
+        "filename": "fonts/CormorantGaramond[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/CormorantGaramond%5Bwght%5D.ttf"
+      },
+      {
+        "filename": "fonts/SourceSans3[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/SourceSans3%5Bwght%5D.ttf"
+      }
+    ]
   },
   {
     "check_id": "PHOTO-04/villa-collection/H043",
@@ -2260,15 +3034,33 @@
     "type": "human",
     "output_reference": "deliverables/villa-collection.pdf",
     "check": "villa-collection.pdf: house-name letters other than the enlarged initial uses tracking -10/1000 em (when present).",
-    "reference_assets": []
+    "reference_assets": [
+      {
+        "filename": "fonts/CormorantGaramond[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/CormorantGaramond%5Bwght%5D.ttf"
+      },
+      {
+        "filename": "fonts/SourceSans3[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/SourceSans3%5Bwght%5D.ttf"
+      }
+    ]
   },
   {
     "check_id": "PHOTO-04/villa-collection/H044",
     "output_id": "villa-collection",
     "type": "human",
     "output_reference": "deliverables/villa-collection.pdf",
-    "check": "villa-collection.pdf: standfirst uses Canela Deck Light (when present).",
-    "reference_assets": []
+    "check": "villa-collection.pdf: standfirst uses Cormorant Garamond Light (when present).",
+    "reference_assets": [
+      {
+        "filename": "fonts/CormorantGaramond[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/CormorantGaramond%5Bwght%5D.ttf"
+      },
+      {
+        "filename": "fonts/SourceSans3[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/SourceSans3%5Bwght%5D.ttf"
+      }
+    ]
   },
   {
     "check_id": "PHOTO-04/villa-collection/H045",
@@ -2276,15 +3068,33 @@
     "type": "human",
     "output_reference": "deliverables/villa-collection.pdf",
     "check": "villa-collection.pdf: standfirst uses tracking -4/1000 em (when present).",
-    "reference_assets": []
+    "reference_assets": [
+      {
+        "filename": "fonts/CormorantGaramond[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/CormorantGaramond%5Bwght%5D.ttf"
+      },
+      {
+        "filename": "fonts/SourceSans3[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/SourceSans3%5Bwght%5D.ttf"
+      }
+    ]
   },
   {
     "check_id": "PHOTO-04/villa-collection/H046",
     "output_id": "villa-collection",
     "type": "human",
     "output_reference": "deliverables/villa-collection.pdf",
-    "check": "villa-collection.pdf: body text uses Untitled Sans Regular (when present).",
-    "reference_assets": []
+    "check": "villa-collection.pdf: body text uses Source Sans 3 Regular (when present).",
+    "reference_assets": [
+      {
+        "filename": "fonts/CormorantGaramond[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/CormorantGaramond%5Bwght%5D.ttf"
+      },
+      {
+        "filename": "fonts/SourceSans3[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/SourceSans3%5Bwght%5D.ttf"
+      }
+    ]
   },
   {
     "check_id": "PHOTO-04/villa-collection/H047",
@@ -2292,7 +3102,16 @@
     "type": "human",
     "output_reference": "deliverables/villa-collection.pdf",
     "check": "villa-collection.pdf: body text has font size 10 pt (when present).",
-    "reference_assets": []
+    "reference_assets": [
+      {
+        "filename": "fonts/CormorantGaramond[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/CormorantGaramond%5Bwght%5D.ttf"
+      },
+      {
+        "filename": "fonts/SourceSans3[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/SourceSans3%5Bwght%5D.ttf"
+      }
+    ]
   },
   {
     "check_id": "PHOTO-04/villa-collection/H048",
@@ -2300,7 +3119,16 @@
     "type": "human",
     "output_reference": "deliverables/villa-collection.pdf",
     "check": "villa-collection.pdf: body text has 15 pt leading on multiline text (when present).",
-    "reference_assets": []
+    "reference_assets": [
+      {
+        "filename": "fonts/CormorantGaramond[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/CormorantGaramond%5Bwght%5D.ttf"
+      },
+      {
+        "filename": "fonts/SourceSans3[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/SourceSans3%5Bwght%5D.ttf"
+      }
+    ]
   },
   {
     "check_id": "PHOTO-04/villa-collection/H049",
@@ -2308,15 +3136,33 @@
     "type": "human",
     "output_reference": "deliverables/villa-collection.pdf",
     "check": "villa-collection.pdf: body text uses tracking +0/1000 em (when present).",
-    "reference_assets": []
+    "reference_assets": [
+      {
+        "filename": "fonts/CormorantGaramond[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/CormorantGaramond%5Bwght%5D.ttf"
+      },
+      {
+        "filename": "fonts/SourceSans3[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/SourceSans3%5Bwght%5D.ttf"
+      }
+    ]
   },
   {
     "check_id": "PHOTO-04/villa-collection/H050",
     "output_id": "villa-collection",
     "type": "human",
     "output_reference": "deliverables/villa-collection.pdf",
-    "check": "villa-collection.pdf: rates uses Untitled Sans Regular (when present).",
-    "reference_assets": []
+    "check": "villa-collection.pdf: rates uses Source Sans 3 Regular (when present).",
+    "reference_assets": [
+      {
+        "filename": "fonts/CormorantGaramond[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/CormorantGaramond%5Bwght%5D.ttf"
+      },
+      {
+        "filename": "fonts/SourceSans3[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/SourceSans3%5Bwght%5D.ttf"
+      }
+    ]
   },
   {
     "check_id": "PHOTO-04/villa-collection/H051",
@@ -2324,7 +3170,16 @@
     "type": "human",
     "output_reference": "deliverables/villa-collection.pdf",
     "check": "villa-collection.pdf: rates has font size 9 pt (when present).",
-    "reference_assets": []
+    "reference_assets": [
+      {
+        "filename": "fonts/CormorantGaramond[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/CormorantGaramond%5Bwght%5D.ttf"
+      },
+      {
+        "filename": "fonts/SourceSans3[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/SourceSans3%5Bwght%5D.ttf"
+      }
+    ]
   },
   {
     "check_id": "PHOTO-04/villa-collection/H052",
@@ -2332,15 +3187,33 @@
     "type": "human",
     "output_reference": "deliverables/villa-collection.pdf",
     "check": "villa-collection.pdf: rates uses tracking +8/1000 em (when present).",
-    "reference_assets": []
+    "reference_assets": [
+      {
+        "filename": "fonts/CormorantGaramond[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/CormorantGaramond%5Bwght%5D.ttf"
+      },
+      {
+        "filename": "fonts/SourceSans3[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/SourceSans3%5Bwght%5D.ttf"
+      }
+    ]
   },
   {
     "check_id": "PHOTO-04/villa-collection/H053",
     "output_id": "villa-collection",
     "type": "human",
     "output_reference": "deliverables/villa-collection.pdf",
-    "check": "villa-collection.pdf: captions uses Untitled Sans Regular (when present).",
-    "reference_assets": []
+    "check": "villa-collection.pdf: captions uses Source Sans 3 Regular (when present).",
+    "reference_assets": [
+      {
+        "filename": "fonts/CormorantGaramond[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/CormorantGaramond%5Bwght%5D.ttf"
+      },
+      {
+        "filename": "fonts/SourceSans3[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/SourceSans3%5Bwght%5D.ttf"
+      }
+    ]
   },
   {
     "check_id": "PHOTO-04/villa-collection/H054",
@@ -2348,6 +3221,64 @@
     "type": "human",
     "output_reference": "deliverables/villa-collection.pdf",
     "check": "villa-collection.pdf: captions uses tracking +8/1000 em (when present).",
+    "reference_assets": [
+      {
+        "filename": "fonts/CormorantGaramond[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/CormorantGaramond%5Bwght%5D.ttf"
+      },
+      {
+        "filename": "fonts/SourceSans3[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/SourceSans3%5Bwght%5D.ttf"
+      }
+    ]
+  },
+  {
+    "check_id": "PHOTO-04/booking-hero-oliveto/R13-colour-profile",
+    "output_id": "booking-hero-oliveto",
+    "type": "human",
+    "output_reference": "deliverables/booking-hero-oliveto.png",
+    "check": "booking-hero-oliveto.png: uses an sRGB colour profile.",
     "reference_assets": []
+  },
+  {
+    "check_id": "PHOTO-04/booking-hero-scogliera/R13-colour-profile",
+    "output_id": "booking-hero-scogliera",
+    "type": "human",
+    "output_reference": "deliverables/booking-hero-scogliera.png",
+    "check": "booking-hero-scogliera.png: uses an sRGB colour profile.",
+    "reference_assets": []
+  },
+  {
+    "check_id": "PHOTO-04/booking-hero-verranza/R13-colour-profile",
+    "output_id": "booking-hero-verranza",
+    "type": "human",
+    "output_reference": "deliverables/booking-hero-verranza.png",
+    "check": "booking-hero-verranza.png: uses an sRGB colour profile.",
+    "reference_assets": []
+  },
+  {
+    "check_id": "PHOTO-04/villa-collection/R13-pdf-profile",
+    "output_id": "villa-collection",
+    "type": "human",
+    "output_reference": "deliverables/villa-collection.pdf",
+    "check": "villa-collection.pdf: is exported for sRGB screen viewing, not as a CMYK press master.",
+    "reference_assets": []
+  },
+  {
+    "check_id": "PHOTO-04/villa-collection/R13-pdf-fonts",
+    "output_id": "villa-collection",
+    "type": "human",
+    "output_reference": "deliverables/villa-collection.pdf",
+    "check": "villa-collection.pdf: has no unembedded font dependency.",
+    "reference_assets": [
+      {
+        "filename": "fonts/CormorantGaramond[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/CormorantGaramond%5Bwght%5D.ttf"
+      },
+      {
+        "filename": "fonts/SourceSans3[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/SourceSans3%5Bwght%5D.ttf"
+      }
+    ]
   }
 ]

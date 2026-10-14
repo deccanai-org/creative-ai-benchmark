@@ -10,8 +10,9 @@ import json
 import re
 from copy import deepcopy
 from pathlib import Path
+from urllib.parse import quote
 
-from build_v7_annotation_pilot import ROOT, TASKS, TASK_IDS
+from build_v7_annotation_pilot import ROOT, TASKS, TASK_IDS, REFRESH, render_outputs, render_type_system, font_css
 
 
 PAGE = ROOT / "docs/gatsby-v7"
@@ -31,7 +32,7 @@ def merge_checks(existing: list, canonical: list) -> list:
 
 
 def reconcile(path: Path, content: str, check: bool) -> None:
-    if path.read_bytes().decode("utf-8") == content:
+    if path.exists() and path.read_bytes().decode("utf-8") == content:
         return
     if check:
         raise ValueError(f"Stale content: {path.relative_to(ROOT)}")
@@ -63,6 +64,10 @@ def sync_csv(path: Path, specs: dict, check: bool) -> None:
                 row["Client brief"] = spec["client_brief"]
             if "Review page" in row:
                 row["Review page"] = "https://dhigdec.github.io/creative-ai-benchmark/gatsby-v7/#" + spec["new_id"]
+            if 'Assets' in row: row['Assets']=str(len(spec['assets']))
+            if 'Deliverables' in row:
+                row['Deliverables']='\n'.join(g['name']+': '+str(sum(o['group_id']==g['id'] for o in spec['deliverables']))+' files' for g in spec['deliverable_groups'])
+            if 'Palette rules' in row: row['Palette rules']=json.dumps(spec['brand_identity']['palette_rules'],ensure_ascii=False)
             for column, field in brand_fields.items():
                 if column in row:
                     row[column] = spec["brand_identity"][field]
@@ -80,6 +85,29 @@ def sync_csv(path: Path, specs: dict, check: bool) -> None:
     reconcile(path, "".join(result), check)
 
 
+def sync_detail_csv(path: Path, specs: dict, kind: str, check: bool) -> None:
+    text=path.read_text(); reader=csv.DictReader(io.StringIO(text)); headers=reader.fieldnames
+    by_code={s['task_code']:s for s in specs.values()}; emitted=set(); rows=[]
+    for row in reader:
+        spec=by_code.get(row['Task code'])
+        if not spec: rows.append(row); continue
+        code=spec['task_code']
+        if code in emitted: continue
+        emitted.add(code)
+        common={'Task code':code,'Task name':spec['task_name'],'Family':spec['family']}
+        if kind=='assets':
+            for i,a in enumerate(spec['assets'],1):
+                rows.append({**common,'Asset #':i,'Filename':a['filename'],'Role':a['role'],'Type':Path(a['filename']).suffix.lstrip('.'),'Bytes':a.get('bytes',''),'SHA-256':a.get('sha256',''),'State':a.get('state',''),'S3 URI':a.get('s3_uri',''),'HTTPS object':a['public_url'],'S3 console':'https://ap-south-1.console.aws.amazon.com/s3/object/annotationprod?region=ap-south-1&prefix='+quote(a.get('s3_key',''),safe=''),'Upload status':'uploaded; public access pending policy approval' if a.get('revision')=='pilot13_inputs_2026_10_14' else 'verified public access 2026-10-14'})
+        elif kind=='verifiers':
+            for c in spec['verifiers_auto']+spec['verifiers_human']:
+                rows.append({**common,'Verifier type':c['type'].capitalize(),'Verifier ID':c['check_id'],'Output ID':c['output_id'],'Deliverable':c.get('artifact_name',''),'Output file':c.get('artifact_file',c['output_reference']),'Pass condition':c['check'],'Evidence':c.get('evidence_reference',''),'K question':c.get('k_id',''),'Answer (Yes/No)':''})
+        else:
+            for i,o in enumerate(spec['deliverables'],1):
+                rows.append({**common,'Sequence':i,'Output ID':o['output_id'],'Deliverable':o['name'],'Output file':o['path'],'Kind':o['kind'],'Specification':json.dumps({'spec':o['spec'],'commission':o['commission']},ensure_ascii=False),'Status':'revised inputs; earlier delivery is historical' if o.get('artifact_url') else 'not_produced'})
+    stream=io.StringIO(newline='');writer=csv.DictWriter(stream,headers,lineterminator='\n');writer.writeheader();writer.writerows(rows)
+    reconcile(path,stream.getvalue(),check)
+
+
 def typography_markdown(brand: dict) -> str:
     ts = brand["type_system"]
     lines = ["## Typography", f'Display face: {ts["display_face"]}. Text face: {ts["text_face"]}.', ""]
@@ -93,6 +121,22 @@ def typography_markdown(brand: dict) -> str:
     return "\n".join(lines) + "\n\n"
 
 
+def brand_markdown(brand: dict) -> str:
+    lines=['# '+brand['brand_name'], '']
+    for key,value in brand.items():
+        if key == 'type_system':
+            lines.append(typography_markdown(brand))
+            continue
+        lines += ['## '+key.replace('_',' ').capitalize(), '']
+        if isinstance(value,str): lines.append(value)
+        elif isinstance(value,list):
+            lines.extend('- '+(json.dumps(v,ensure_ascii=False) if isinstance(v,dict) else str(v)) for v in value)
+        elif isinstance(value,dict):
+            lines.extend('- '+k.replace('_',' ').capitalize()+': '+str(v) for k,v in value.items())
+        lines.append('')
+    return '\n'.join(lines).rstrip()+'\n'
+
+
 def sync(check: bool = False) -> None:
     specs = {task_id: json.loads((TASKS / task_id / "TASK_SPEC.json").read_text()) for task_id in TASK_IDS}
     for task_id, spec in specs.items():
@@ -100,27 +144,37 @@ def sync(check: bool = False) -> None:
         brief = f'# {spec["task_code"]} | {spec["task_name"]}\n\n{spec["client_brief"]}\n'
         reconcile(folder / "BRIEF.md", brief, check)
         brand_path = folder / "BRAND_IDENTITY.json"
-        old_brand = json.loads(brand_path.read_text())
         brand = spec["brand_identity"]
-        markdown = (folder / "BRAND_IDENTITY.md").read_text()
-        for key, old_value in old_brand.items():
-            if isinstance(old_value, str) and old_value != brand[key]:
-                markdown = markdown.replace(old_value, brand[key])
-        markdown = re.sub(r"## Typography\n.*?(?=## Voice\n)", lambda _: typography_markdown(brand), markdown, flags=re.S)
+        markdown = brand_markdown(brand)
         reconcile(folder / "BRAND_IDENTITY.md", markdown, check)
         reconcile(brand_path, json.dumps(brand, ensure_ascii=False, indent=2) + "\n", check)
         verifier_path = folder / "VERIFIERS.json"
         old_verifier_text = verifier_path.read_text()
         verifier_data = merge_checks(json.loads(old_verifier_text), spec["verifiers_auto"] + spec["verifiers_human"])
         reconcile(verifier_path, json.dumps(verifier_data, ensure_ascii=False, indent=1) + ("\n" if old_verifier_text.endswith("\n") else ""), check)
+        verifier_md=['# '+spec['task_name']+' - current verifiers', '', 'Revised input pack. Previous execution results are historical, not current ratings.', '']
+        for kind in ['auto','human']:
+            verifier_md+=['## '+kind.capitalize()+' verifiers','']
+            for c in verifier_data:
+                if c['type']==kind: verifier_md += ['- `'+c['check_id']+'` '+c['check']]
+            verifier_md.append('')
+        reconcile(folder/'VERIFIERS.md','\n'.join(verifier_md).rstrip()+'\n',check)
+        lines=[f'# {spec["task_name"]}: requested deliverables', '', 'Current input revision: pilot13_inputs_2026_10_14. Prior outputs have not been reassessed against these revised inputs.', '']
+        for output in spec['deliverables']:
+            c=output['commission']
+            lines += [f'## {output["name"]}', f'File: `{output["path"]}`', '', f'- Purpose: {c["purpose"]}', f'- Placement: {c["channel"]}', f'- Audience: {c["audience"]}', '- Specification: '+json.dumps(output['spec']), *['- '+s for s in c['content']], *['- Export: '+s for s in c['export_settings']], '']
+        old=(REFRESH/'before'/task_id/'DELIVERABLES.md').read_text()
+        if 'completed output register' in old:
+            lines += ['## Historical delivery record', '', 'The following record belongs to the earlier input pack; it is not approval of the current requirements.', '', old]
+        reconcile(folder/'DELIVERABLES.md','\n'.join(lines).rstrip()+'\n',check)
 
     aggregate_path = PAGE / "TASKS_V5_ALL100.json"
     tasks = json.loads(aggregate_path.read_text())
     for task in tasks:
         if task["new_id"] in specs:
             spec = specs[task["new_id"]]
-            task["client_brief"] = spec["client_brief"]
-            task["brand_identity"] = deepcopy(spec["brand_identity"])
+            for key in ('client_brief','brand_identity','assets','deliverable_groups','deliverables','input_revision','revision_date'):
+                task[key]=deepcopy(spec[key])
             for key in ("verifiers_auto", "verifiers_human"):
                 task[key] = merge_checks(task[key], spec[key])
     reconcile(aggregate_path, json.dumps(tasks, ensure_ascii=False, indent=1), check)
@@ -142,12 +196,78 @@ def sync(check: bool = False) -> None:
             task["brief"] = spec["client_brief"]
             task["brand"] = deepcopy(spec["brand_identity"])
             task["checks"] = merge_checks(task["checks"], spec["verifiers_auto"] + spec["verifiers_human"])
+            task['assets']=deepcopy(spec['assets'])
+            task['groups']=deepcopy(spec['deliverable_groups'])
+            by_id={o['output_id']:o for o in spec['deliverables']}
+            for o in task['outputs']:
+                if o['output_id'] in by_id:
+                    current=by_id[o['output_id']]
+                    for key in ('commission','spec','required_content','acceptance_requirements'):
+                        o[key]=deepcopy(current[key])
+                    o['verification_scope']='historical_before_input_refresh'
+            task['input_revision']=spec['input_revision']
+            task['current_type_html']='<style>'+font_css(spec['brand_identity'])+'</style>'+render_type_system(spec['brand_identity'])
+            task['current_deliverables_html']='<style>.output-row{padding:16px 0;border-bottom:1px solid #ddd}.output-row code,.output-row small{display:block}.output-requirements{padding-left:20px}.output-requirements li{margin:5px 0}</style>'+render_outputs(spec['deliverables'],spec['deliverable_groups'])
     serialized = json.dumps(data, ensure_ascii=False, separators=(",", ":"))
-    reconcile(index_path, document[:match.start(2)] + serialized + document[match.end(2):], check)
+    document=document[:match.start(2)] + serialized + document[match.end(2):]
+    document=document.replace('${typeSystem(b)}','${t.current_type_html||typeSystem(b)}')
+    document=document.replace('const summary=t.run?', 'const summary=t.input_revision?`${rows.length} current checks: not assessed` :t.run?')
+    hook="document.getElementById('content').innerHTML=html;}"
+    replacement="""if(t.input_revision){const note='<p class="verifier-note"><strong>Revised input pack:</strong> '+esc(t.input_revision.previous_run_results)+'</p>';if(section==='Outputs')html=note+'<h2>Current requested deliverables</h2>'+t.current_deliverables_html+'<h2>Historical pilot outputs</h2>'+html;if(section==='Auto verifiers'||section==='Human verifiers')html=note+html;}document.getElementById('content').innerHTML=html;}"""
+    if 'Current requested deliverables</h2>' not in document:
+        document=document.replace(hook,replacement)
+    reconcile(index_path,document,check)
 
-    for name in ("photo-tasks.csv", "layout-tasks.csv", "task-register.csv", "brand-identity.csv"):
+    for name in ("photo-tasks.csv", "layout-tasks.csv", "vector-tasks.csv", "motion-tasks.csv", "task-register.csv", "brand-identity.csv"):
         sync_csv(PAGE / "data" / name, specs, check)
-    print("All ten pilot brief/brand/verifier specifications are synchronized.")
+    for name in ['assets','verifiers','deliverables']:
+        sync_detail_csv(PAGE/'data'/(name+'.csv'),specs,name,check)
+    for filename,field in [('OUTPUT_REGISTER_ALL100.json','deliverables'),('ATOMIC_VERIFIERS_ALL100.json',None)]:
+        path=PAGE/filename
+        existing=json.loads(path.read_text())
+        result=[]; emitted=set()
+        for row in existing:
+            tid=row['task_id']
+            if tid not in specs: result.append(row); continue
+            if tid in emitted: continue
+            emitted.add(tid)
+            items=specs[tid][field] if field else specs[tid]['verifiers_auto']+specs[tid]['verifiers_human']
+            result.extend({'task_id':tid,**item} for item in items)
+        reconcile(path,json.dumps(result,ensure_ascii=False,indent=1),check)
+    path=PAGE/'PUBLIC_ASSET_INDEX.json'
+    index=json.loads(path.read_text()); result=[]; emitted=set()
+    for a in index['assets']:
+        tid=a['task_id']
+        if tid not in specs: result.append(a); continue
+        if tid in emitted: continue
+        emitted.add(tid); spec=specs[tid]
+        result.extend({'task_id':tid,'task_code':spec['task_code'],'task_name':spec['task_name'],'family':spec['family'],**a} for a in spec['assets'])
+    index.update(assets=result,asset_count=len(result),total_bytes=sum(a.get('bytes',0) for a in result),pilot_input_revision='pilot13_inputs_2026_10_14')
+    reconcile(path,json.dumps(index,ensure_ascii=False,indent=2)+'\n',check)
+    manifest_path = PAGE / 'PUBLICATION_MANIFEST.json'
+    manifest = json.loads(manifest_path.read_text())
+    manifest.update(
+        generated_at='2026-10-14', title='Gatsby V7 task review',
+        task_count=len(tasks), asset_count=len(result),
+        public_asset_links=len(result), public_path='/creative-ai-benchmark/gatsby-v7/',
+        pilot_input_revision='pilot13_inputs_2026_10_14',
+        refreshed_pilot_tasks=TASK_IDS,
+        refreshed_assets_uploaded=73,
+        refreshed_assets_public_access='pending bucket policy approval; public GET returns 403',
+    )
+    reconcile(manifest_path, json.dumps(manifest, ensure_ascii=False, indent=2) + '\n', check)
+    release_path = PAGE / 'RELEASE_STATUS.json'
+    release = json.loads(release_path.read_text())
+    release.update(
+        asset_count=len(result), exports=sum(len(t['deliverables']) for t in tasks),
+        auto=sum(len(t['verifiers_auto']) for t in tasks),
+        human=sum(len(t['verifiers_human']) for t in tasks),
+        pilot_input_revision='pilot13_inputs_2026_10_14',
+        refreshed_asset_access_pending=73,
+    )
+    release['atomic_verifiers'] = release['auto'] + release['human']
+    reconcile(release_path, json.dumps(release, ensure_ascii=False, indent=2) + '\n', check)
+    print("All 13 pilot brief/brand/verifier specifications are synchronized.")
 
 
 if __name__ == "__main__":

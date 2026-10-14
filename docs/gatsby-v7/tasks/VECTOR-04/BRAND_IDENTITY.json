@@ -52,59 +52,69 @@
       "usage": "Fine detail inside a drawing only, no more than 5% of a sticker's inked area. Never the main ink, a backing shape, type or the wordmark; no supplied brand file uses it."
     }
   ],
-  "typography": "Meridian and Ash runs on Cirka Bold for display and Brandon Text for everything else. Step 01, display, is Cirka Bold capitals at 18 pt on 20 pt leading tracked 0.030 em on the arc, the 55 mm sticker setting at near 150 px cap height in a 1600 px proof, with MERIDIAN and ASH arched on a fixed 40 degree curve and the ampersand between them at 1.6 times their cap height, hanging below the arc into the artwork. Step 02, subheading, is Cirka Bold capitals at 11 pt on 13 pt leading tracked 0.020 em for counter card and four pack headers, set flat and off the arc. Step 03, body, is Brandon Text Regular 400 at 7 pt on 10.5 pt leading, tracking zero, set to a maximum of 65 characters, carrying the supporting line under the wordmark and all sticker copy. Step 04, fine print, is Brandon Text Bold 700 capitals at 6 pt on 8.5 pt leading tracked 0.040 em for gang sheet labels and die line notes. The ampersand is never set at cap height.",
+  "typography": "Meridian and Ash runs on DM Serif Display Regular for display and Libre Franklin for everything else. Step 01, display, is DM Serif Display Regular capitals at 18 pt on 20 pt leading tracked 0.030 em on the arc, the 55 mm sticker setting at near 150 px cap height in a 1600 px proof, with MERIDIAN and ASH arched on a fixed 40 degree curve and the ampersand between them at 1.6 times their cap height, hanging below the arc into the artwork. Step 02, subheading, is DM Serif Display Regular capitals at 11 pt on 13 pt leading tracked 0.020 em for counter card and four pack headers, set flat and off the arc. Step 03, body, is Libre Franklin Regular 400 at 7 pt on 10.5 pt leading, tracking zero, set to a maximum of 65 characters, carrying the supporting line under the wordmark and all sticker copy. Step 04, fine print, is Libre Franklin Bold 700 capitals at 6 pt on 8.5 pt leading tracked 0.040 em for gang sheet labels and die line notes. The ampersand is never set at cap height.",
   "voice": "Plain, warm, a little wry, never precious. Example line: Pull one off the sheet, stick it on your laptop, come back for the other three.",
-  "brand_assets_status": "No usable source files exist. The window mark was hand painted on the shop glass in 2018 by a sign painter who never handed over a file. The three current illustrations survive only printed on the coffee bags, and the printer still holds last season's counter card artwork.",
+  "brand_assets_status": "This commission explicitly includes paid reconstruction of the window mark and three bag illustrations from the supplied photographs. Those photographs are tracing references, not ready-to-place logos. They are intentionally retained: supplying finished vectors would remove the central work requested. No redesign of the four originals is authorised; the two companion stickers are the original-design portion.",
   "values": "Consistency people can trust, so the artwork stops being redrawn slightly differently every batch, and a hand made feel that reads as a real roastery rather than a franchise.",
+  "signature_type_move": "A single oversized ampersand set at 1.6 times the cap height of MERIDIAN and ASH, hanging below the arc of the wordmark into the artwork, with the two words arched on a fixed 40 degree curve. At arm's length the ampersand is seen first.",
+  "display_face": "DM Serif Display Regular",
   "type_system": {
     "brand_name": "Meridian and Ash",
     "tagline": "Roasted in the machine shop",
-    "display_face": "Cirka Bold",
-    "text_face": "Brandon Text Regular 400 (Brandon Text Bold 700 for gang sheet capitals)",
+    "display_face": "DM Serif Display Regular",
+    "text_face": "Libre Franklin Regular 400 (Libre Franklin Bold 700 for gang sheet capitals)",
     "scale": [
       {
         "step": "01",
         "role": "Display / H1 · arched wordmark",
-        "family": "Cirka Bold, capitals only",
+        "family": "DM Serif Display Regular, capitals only",
         "size": "18 pt",
         "leading": "20 pt",
-        "weight": "Bold",
+        "weight": "Regular 400",
         "tracking": "plus 0.030 em on the arc",
         "sample": "MERIDIAN & ASH",
-        "note": "The 55 mm sticker setting, near 150 px cap height in a 1600 px proof. MERIDIAN and ASH arch on a fixed 40 degree curve and the ampersand between them is set at 1.6 times their cap height, hanging below the arc into the artwork. Tracking opens slightly on the curve only so the letters stay evenly spaced around it."
+        "note": "The 55 mm sticker setting, near 150 px cap height in a 1600 px proof. MERIDIAN and ASH arch on a fixed 40 degree curve and the ampersand between them is set at 1.6 times their cap height, hanging below the arc into the artwork. Tracking opens slightly on the curve only so the letters stay evenly spaced around it.",
+        "font_family": "DM Serif Display",
+        "font_weight": 400
       },
       {
         "step": "02",
         "role": "Subheading / H2 · counter card and four pack headers",
-        "family": "Cirka Bold, capitals only",
+        "family": "DM Serif Display Regular, capitals only",
         "size": "11 pt",
         "leading": "13 pt",
-        "weight": "Bold",
+        "weight": "Regular 400",
         "tracking": "plus 0.020 em",
         "sample": "SINGLES AND FOUR PACKS",
-        "note": "Set flat, off the arc. Where an ampersand appears here it still runs at 1.6 times cap height, hanging below the baseline."
+        "note": "Set flat, off the arc. Where an ampersand appears here it still runs at 1.6 times cap height, hanging below the baseline.",
+        "font_family": "DM Serif Display",
+        "font_weight": 400
       },
       {
         "step": "03",
         "role": "Body · sticker and supporting copy",
-        "family": "Brandon Text Regular",
+        "family": "Libre Franklin Regular",
         "size": "7 pt",
         "leading": "10.5 pt",
         "weight": "Regular 400",
         "tracking": "0, max 65 characters",
         "sample": "Pull one off the sheet and come back for the other three.",
-        "note": "The supporting line under the wordmark and every line of sticker and counter copy. Plain, warm, a little wry, never precious."
+        "note": "The supporting line under the wordmark and every line of sticker and counter copy. Plain, warm, a little wry, never precious.",
+        "font_family": "Libre Franklin",
+        "font_weight": 400
       },
       {
         "step": "04",
         "role": "Fine print · slug labels",
-        "family": "Brandon Text Bold, capitals only",
+        "family": "Libre Franklin Bold, capitals only",
         "size": "6 pt",
         "leading": "8.5 pt",
         "weight": "Bold 700",
         "tracking": "plus 0.040 em",
         "sample": "GANG SHEET · 55 MM · CUT CONTOUR",
-        "note": "Gang sheet capitals, die line notes and slug labels in the artwork margin. Brandon Text Bold 700 only, never Cirka."
+        "note": "Gang sheet capitals, die line notes and slug labels in the artwork margin. Libre Franklin Bold 700 only, never DM Serif Display.",
+        "font_family": "Libre Franklin",
+        "font_weight": 700
       }
     ],
     "signature_move": "A single oversized ampersand set at 1.6 times the cap height of MERIDIAN and ASH, hanging below the arc of the wordmark into the artwork, with the two words arched on a fixed 40 degree curve. At arm's length the ampersand is seen first.",
@@ -112,15 +122,53 @@
       "Never set the ampersand at cap height. It is always 1.6 times the cap height of MERIDIAN and ASH.",
       "The ampersand always hangs below the arc, into the artwork, never sitting on the baseline.",
       "MERIDIAN and ASH always arch on a fixed 40 degree curve, at every size.",
-      "Cirka Bold is display only; Brandon Text Regular 400 sets sticker copy and Brandon Text Bold 700 the gang sheet capitals.",
+      "DM Serif Display Regular is display only; Libre Franklin Regular 400 sets sticker copy and Libre Franklin Bold 700 the gang sheet capitals.",
       "Keep the range reading abundant rather than precious: it is priced to be handed out by the fistful.",
       "Hand made, not franchise: the artwork is drawn once and reused, never redrawn slightly differently each batch."
-    ]
+    ],
+    "specimen_note": "The samples load the supplied font files. Their display size is reduced for this guide; use the stated deliverable settings, not the on-screen sample size. Fonts and their OFL licences are downloadable in Source assets.",
+    "measurement_notes": "Tracking in units means thousandths of an em; 1 pt is 1/72 inch. Pixel settings apply at final exported size. Font size is not cap height.",
+    "application": "Apply these roles to newly set text in the requested deliverables. Preserve supplied logo artwork rather than retyping it. Recovered artwork retains its photographed lettering.",
+    "font_access": "Use the attached OFL font files at the named weights. These files replace unavailable commercial fonts for this commission. Do not substitute another family or simulate a missing weight."
   },
   "palette_rules": {
-    "distribution": "Each recovered design keeps the ink it was painted or printed in: Roast Brown for the wordmark in meridian_window_mark.jpg and the moth on meridian_bag_moth.jpg, Ash Green for the roundel in meridian_window_mark.jpg and the pour-over on meridian_bag_pourover.jpg, Warm Cream for the leaf and hairline ring in meridian_window_mark.jpg, Brick Red for the ridge line on meridian_bag_ridgeline.jpg. Each companion takes its main ink from Roast Brown, Ash Green and Brick Red. Kraft and Warm Cream are secondary: backing shapes, detail reversed out of an ink, or fine lines such as a hairline ring, never the main ink. Ink Black is fine detail only, no more than 5% of a sticker's inked area. Type on a light ground is Roast Brown, or Ash Green for a secondary line; type on Roast Brown or Ash Green is Warm Cream, as on meridian_shelfcard_2025.pdf. Sticker backgrounds stay transparent.",
+    "distribution": "Each recovered design keeps the ink it was painted or printed in: Roast Brown for the wordmark in meridian_window_mark.jpg and the moth on meridian_bag_moth.jpg, Ash Green for the roundel in meridian_window_mark.jpg and the pour-over on meridian_bag_pourover.jpg, Warm Cream for the leaf and hairline ring in meridian_window_mark.jpg, Brick Red for the ridge line on meridian_bag_ridgeline.jpg. Each companion takes its main ink from Roast Brown, Ash Green and Brick Red. Kraft and Warm Cream are secondary: backing shapes, detail reversed out of an ink, or fine lines such as a hairline ring, never the main ink. Ink Black is fine detail only, no more than 5% of a sticker's inked area. Type on a light ground is Roast Brown, or Ash Green for a secondary line; type on Roast Brown or Ash Green is Warm Cream, as on meridian_shelfcard_2025.pdf. Sticker backgrounds stay transparent. Palette hex values define sRGB source colours. In the print PDF, convert them with PSOcoated_v3.icc; evaluate the colour-managed proof, not literal RGB hex values inside the CMYK file.",
     "opacity": "Every palette colour on the stickers, proofs and gang sheet is used solid, at 100% opacity; no tint, transparency, gradient, shadow or blend mode. A proof is transparent only outside the artwork and in its open, uninked negative space; every inked area is fully opaque, and partial transparency occurs only as anti-aliasing along edges, with no white or coloured rectangle behind it.",
     "forbidden": "No colour outside the six palette hexes for any artwork, type, backing shape, label or mark. The cut paths on the CutContour layer are production lines, not artwork, and are exempt. No colour is sampled from a photograph.",
     "photography": "No photograph appears in any deliverable. meridian_window_mark.jpg, meridian_bag_moth.jpg, meridian_bag_pourover.jpg and meridian_bag_ridgeline.jpg are tracing references only: each ink is matched to its palette hex rather than sampled."
-  }
+  },
+  "creative_scope": {
+    "fixed": "Recover the four supplied painted/printed designs faithfully as vector paths. Preserve photographed lettering rather than retyping it. Follow the 55 mm artwork scale, 2.5 mm contour offset, 3 mm minimum corner radius and printer sheet spacing.",
+    "designer_choices": "Draw two original companion illustrations with subject matter and visual rhythm that fit the coffee collection. Choose imposition within the printer's clearances. Newly set lettering follows the supplied type system; photographed lettering retains its original shape."
+  },
+  "font_files": [
+    {
+      "family": "DM Serif Display",
+      "filename": "fonts/DMSerifDisplay-Regular.ttf",
+      "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/VECTOR-04/fonts/DMSerifDisplay-Regular.ttf",
+      "axes": {},
+      "weight_range": [
+        400,
+        400,
+        400
+      ]
+    },
+    {
+      "family": "Libre Franklin",
+      "filename": "fonts/LibreFranklin[wght].ttf",
+      "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/VECTOR-04/fonts/LibreFranklin%5Bwght%5D.ttf",
+      "axes": {
+        "wght": [
+          100.0,
+          100.0,
+          900.0
+        ]
+      },
+      "weight_range": [
+        100.0,
+        100.0,
+        900.0
+      ]
+    }
+  ]
 }

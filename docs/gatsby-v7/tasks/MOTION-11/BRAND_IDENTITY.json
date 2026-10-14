@@ -46,37 +46,43 @@
       "usage": "Title-word fills, Inter type on Jet Black or Static Purple, and light grounds or panels."
     }
   ],
-  "typography": "STATIC FOX runs two faces. Step 01, Display / H1, is Univers 59 Ultra Condensed capitals at 190 px on 200 px leading, tracking -0.01 em, carrying the setup words, for example WE HAD ONE JOB, and dropping to 96 px on long copy. Step 02, Subheading / H2, is the payoff word in Univers 83 Extra Black Extended at 150 px on 165 px leading, tracking -0.015 em, for example NOPE, set as the last row of that same stack and never condensed. Step 03, Body, is Inter SemiBold 600 at 54 px on 62 px leading, tracking 0, max 65 characters, for tags and the end card. Step 04, Fine print, is Inter SemiBold 600 at 40 px on 52 px leading, tracking +0.03 em, for credits, with merch at 14 pt on 18 pt. Every word of the title carries a hard black outline.",
+  "typography": "STATIC FOX runs two faces. Step 01, Display / H1, is Anton Regular capitals at 190 px on 200 px leading, tracking -0.01 em, carrying the setup words, for example WE HAD ONE JOB, and dropping to 96 px on long copy. Step 02, Subheading / H2, is the payoff word in Archivo Black Regular at 150 px on 165 px leading, tracking -0.015 em, for example NOPE, set as the last row of that same stack and never condensed. Step 03, Body, is Inter SemiBold 600 at 54 px on 62 px leading, tracking 0, max 65 characters, for tags and the end card. Step 04, Fine print, is Inter SemiBold 600 at 40 px on 52 px leading, tracking +0.03 em, for credits, with merch at 14 pt on 18 pt. Every word of the title carries a hard black outline.",
   "voice": "Fast, funny, self deprecating and a bit chaotic, always in on the joke. Example line the brand would write: \"We had one job. We did not do the job. New one up now.\"",
-  "brand_assets_status": "The mascot, Scrap the fox in a headset, was drawn two years ago and survives only as a flat shaded render on a dark panel, with no clean cutout. The merch fox head emblem's original file is long gone and exists only as a photo of the embroidered patch on the creator's hoodie. There is no brand kit; titles and catchphrases live in a text file.",
+  "brand_assets_status": "staticfox_scrap_transparent.png is the supplied reusable mascot cutout. staticfox_scrap_render.png and staticfox_patch.jpg are historical references only; mascot extraction and patch reconstruction are not additional deliverables. Preserve the cutout's orange fur, purple headset and silhouette.",
   "values": "Repeatability and independence. The creator wants a set that looks like one channel and a file they can keep editing themselves, so they never have to pay for a new one when a title changes.",
+  "signature_type_move": "A width flip between two supplied faces: step 01 runs the setup capitals in Anton Regular at 190 px and step 02 jumps the final payoff word to Archivo Black Regular at 150 px on the same stack, so a narrow column of capitals fattens hard on the last word. Every word carries the black outline.",
+  "display_face": "Anton / Archivo Black",
   "type_system": {
     "brand_name": "STATIC FOX",
     "tagline": "Co op disasters and bad decisions.",
-    "display_face": "Univers",
+    "display_face": "Anton Regular / Archivo Black Regular",
     "text_face": "Inter",
     "scale": [
       {
         "step": "01",
         "role": "Display / H1",
-        "family": "Univers",
+        "family": "Anton",
         "size": "190 px",
         "leading": "200 px",
-        "weight": "59 Ultra Condensed",
+        "weight": "Regular 400",
         "tracking": "-0.01 em",
         "sample": "WE HAD ONE JOB",
-        "note": "Setup words only, all capitals, hard black outline. The whole stack drops to 96 px on long copy."
+        "note": "Setup words only, all capitals, hard black outline. The whole stack drops to 96 px on long copy.",
+        "font_family": "Anton",
+        "font_weight": 400
       },
       {
         "step": "02",
         "role": "Subheading / H2",
-        "family": "Univers",
+        "family": "Archivo Black",
         "size": "150 px",
         "leading": "165 px",
-        "weight": "83 Extra Black Extended",
+        "weight": "Regular 400",
         "tracking": "-0.015 em",
         "sample": "NOPE",
-        "note": "The payoff word, set as the last row of the same capital stack so the narrow setup suddenly fattens. Never condensed."
+        "note": "The payoff word, set as the last row of the same capital stack so the narrow setup suddenly fattens. Never condensed.",
+        "font_family": "Archivo Black",
+        "font_weight": 400
       },
       {
         "step": "03",
@@ -87,7 +93,9 @@
         "weight": "SemiBold 600",
         "tracking": "0, max 65 characters",
         "sample": "We did not do the job. New one up now.",
-        "note": "Tags and end card."
+        "note": "Tags and end card.",
+        "font_family": "Inter",
+        "font_weight": 600
       },
       {
         "step": "04",
@@ -98,22 +106,78 @@
         "weight": "SemiBold 600",
         "tracking": "+0.03 em",
         "sample": "Credits · Scrap the fox · Manchester, 2019",
-        "note": "Merch prints the same face at 14 pt on 18 pt."
+        "note": "Merch prints the same face at 14 pt on 18 pt.",
+        "font_family": "Inter",
+        "font_weight": 600
       }
     ],
-    "signature_move": "A width flip inside one family: step 01 runs the setup capitals in Univers 59 Ultra Condensed at 190 px and step 02 jumps the final payoff word to Univers 83 Extra Black Extended at 150 px on the same stack, so a narrow column of capitals fattens hard on the last word. Every word carries the black outline.",
+    "signature_move": "A width flip between two supplied faces: step 01 runs the setup capitals in Anton Regular at 190 px and step 02 jumps the final payoff word to Archivo Black Regular at 150 px on the same stack, so a narrow column of capitals fattens hard on the last word. Every word carries the black outline.",
     "rules": [
       "Never set the payoff word condensed.",
       "Titles are capitals only.",
       "Every word in the title carries a hard black outline.",
       "On long copy the title stack drops to 96 px rather than breaking the flip.",
       "Loud and coherent is the line: saturated and heavy, but still one channel."
-    ]
+    ],
+    "specimen_note": "The samples load the supplied font files. Their display size is reduced for this guide; use the stated deliverable settings, not the on-screen sample size. Fonts and their OFL licences are downloadable in Source assets.",
+    "measurement_notes": "Tracking in units means thousandths of an em; 1 pt is 1/72 inch. Pixel settings apply at final exported size. Font size is not cap height.",
+    "application": "Apply these roles to newly set text in the requested deliverables. Preserve supplied logo artwork rather than retyping it. Recovered artwork retains its photographed lettering.",
+    "font_access": "Use the attached OFL font files at the named weights. These files replace unavailable commercial fonts for this commission. Do not substitute another family or simulate a missing weight."
   },
   "palette_rules": {
-    "distribution": "Grounds and panels are solid Jet Black, Static Purple, Fox Orange or Signal White, and so are shapes, apart from small Acid Signal highlight shapes. Title words (Univers) are filled Signal White, Acid Signal or Fox Orange, the palette colours that reach 4.5:1 against the hard Jet Black outline every title word carries. Inter lines are Signal White, Acid Signal or Fox Orange on Jet Black; Signal White or Acid Signal on Static Purple; Jet Black or Static Purple on Signal White; Jet Black on Fox Orange, the pairs that reach 4.5:1. Fox Orange appears in the type, panels, shapes or background of every design, not only inside Scrap. Acid Signal is an accent: title fills, Inter lines and small highlight shapes only, never a ground or panel; leaving title-word fills aside, it covers no more than 10% of the designed, non-footage area.",
-    "opacity": "Every palette colour is used solid, at 100% opacity: no tint, partial transparency, blur, gradient or blend mode on type, outlines, panels or shapes, and no scrim or colour wash of any colour, black and white included, over a capture frame. A hard, unblurred offset shadow or second stroke in a solid palette colour is allowed. In the films, elements may animate position, scale or opacity, with motion blur, while they move; every held frame, and the final end card, is solid and unblurred. A cut or plain fade between shots is a transition, not a tint.",
+    "distribution": "Grounds and panels are solid Jet Black, Static Purple, Fox Orange or Signal White, and so are shapes, apart from small Acid Signal highlight shapes. Title words (Anton / Archivo Black) are filled Signal White, Acid Signal or Fox Orange, the palette colours that reach 4.5:1 against the hard Jet Black outline every title word carries. Inter lines are Signal White, Acid Signal or Fox Orange on Jet Black; Signal White or Acid Signal on Static Purple; Jet Black or Static Purple on Signal White; Jet Black on Fox Orange, the pairs that reach 4.5:1. Fox Orange appears in the type, panels, shapes or background of every design, not only inside Scrap. Acid Signal is an accent: title fills, Inter lines and small highlight shapes only, never a ground or panel; leaving title-word fills aside, it covers no more than 10% of the designed, non-footage area.",
+    "opacity": "Every palette colour is used solid, at 100% opacity: no tint, partial transparency, blur, gradient or blend mode on type, outlines, panels or shapes, and no scrim or colour wash of any colour, black and white included, over a capture frame. A hard, unblurred offset shadow or second stroke in a solid palette colour is allowed. In the films, elements may animate position, scale or opacity, with motion blur, while they move; every held frame, and the final end card, is solid and unblurred. A cut or plain fade between shots is a transition, not a tint. Supplied raster identity artwork retains its edge anti-aliasing. Place it at 100% layer opacity; colour rules apply to any intentional recolouring.",
     "forbidden": "No colour outside the five palette hexes for type, outlines, panels, shapes, icons or backgrounds.",
     "photography": "Capture frames keep their own corrected colour and are never recoloured or washed toward the palette; no capture is pushed toward Static Purple #7A2FF2 or any other palette hex. Scrap keeps the orange fur and purple headset drawn in staticfox_scrap_render.png."
-  }
+  },
+  "creative_scope": {
+    "fixed": "Use the exact titles and end-card copy in staticfox_titles.txt. Match thumbnail titles 1-6 to captures 01-06. Use the supplied Scrap cutout without redesign or stretching. Capture footage keeps its own game colours.",
+    "designer_choices": "Choose compelling capture moments, thumbnail composition, reveal timing, motion paths, transitions and the music edit. Build the title animation from identity elements; do not substitute a gameplay montage for it."
+  },
+  "font_files": [
+    {
+      "family": "Anton",
+      "filename": "fonts/Anton-Regular.ttf",
+      "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/MOTION-11/fonts/Anton-Regular.ttf",
+      "axes": {},
+      "weight_range": [
+        400,
+        400,
+        400
+      ]
+    },
+    {
+      "family": "Archivo Black",
+      "filename": "fonts/ArchivoBlack-Regular.ttf",
+      "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/MOTION-11/fonts/ArchivoBlack-Regular.ttf",
+      "axes": {},
+      "weight_range": [
+        400,
+        400,
+        400
+      ]
+    },
+    {
+      "family": "Inter",
+      "filename": "fonts/Inter[opsz,wght].ttf",
+      "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/MOTION-11/fonts/Inter%5Bopsz%2Cwght%5D.ttf",
+      "axes": {
+        "opsz": [
+          14.0,
+          14.0,
+          32.0
+        ],
+        "wght": [
+          100.0,
+          400.0,
+          900.0
+        ]
+      },
+      "weight_range": [
+        100.0,
+        400.0,
+        900.0
+      ]
+    }
+  ]
 }

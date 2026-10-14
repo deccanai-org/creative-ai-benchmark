@@ -11,3 +11,15 @@ Please make five product-page features at 1440 x 1800 px, one per watch in lunar
 The dealer launch sheet is a two-page A4 PDF covering all five references. Pair each watch photograph with its reference, dial finish and caliber. Include the fixed timing line from lunara_notes.txt word for word, and give the layout the restraint appropriate to our price position.
 
 Use the certificate as a visual reference, not a typography template: the current brand type rules govern the new files. The older square-store and transparent-image placements in the notes are not additional exports for this job. The seven files named in the requested deliverables are the delivery scope.
+
+Supplied identity artwork
+No separate logo reconstruction is commissioned. Where a Lunara Chronometry wordmark is included, set Lunara above Chronometry using the supplied current display font and tracking; do not copy the old certificate's typeface.
+
+What stays fixed
+Keep the watch's reference, case geometry, dial appearance and finish accurate. Product features and dealer information use the exact register wording. The certificate is a historical visual reference, not the current type standard.
+
+Your design decisions
+Choose one supplied watch for the campaign, its crop and a warm treatment that does not change its dial identity. Choose product-page and dealer-sheet hierarchy within the current identity.
+
+Delivery and fonts
+Use the placement and export instructions listed with each requested file below. The downloadable OFL fonts in Source assets are the current typefaces for this commission; the typography card gives their roles and weights.

@@ -157,7 +157,8 @@ def build() -> None:
     for (const result of item.auto_checks) {
       const target = task.checks.find(candidate => candidate.check_id === result.check_id && candidate.type === 'auto');
       if (!target) throw new Error(`Missing V7 verifier ${result.check_id}`);
-      Object.assign(target, result);
+      if (task.input_revision) target.historical_result = {...target.historical_result, ...result};
+      else Object.assign(target, result);
     }
     task.run = {
       completed_at: item.completed_at,

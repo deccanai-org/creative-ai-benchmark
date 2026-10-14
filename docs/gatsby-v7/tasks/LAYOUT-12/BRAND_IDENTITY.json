@@ -54,8 +54,10 @@
   ],
   "typography": "Umbra Loft runs four steps. Step 01, display, is Sora ExtraBold caps at 180 pt on 148 pt leading with -10 tracking, that leading being 0.82 of the size, and every act name is broken onto exactly two lines whatever its length so the block closes into one solid mass of caps, Bone White on Pitch; the post size is 150 px on 123 px by the same 0.82 rule. Step 02, subheading, is Sora ExtraBold caps at 46 pt on 50 pt with +20 tracking for the date line, set in Sodium directly above the act block. Step 03, body, is Archivo Narrow Regular at 11 pt on 15 pt, tracking 0, to a maximum of 65 characters, and billing and tables take the same setting. Step 04, fine print, is Archivo Narrow SemiBold caps at 9 pt on 13 pt with +30 tracking, reserved for the door line.",
   "voice": "Terse, atmospheric, unvarnished. It names the act, the night and the door and gets out of the way. Example line the brand would write: \"Doors 8. Downstairs. Two sets, one room, cash on the night.\"",
-  "brand_assets_status": "We build the look from our own archive, six photographs shot on six nights under six touring rigs, no two matching. Three headline acts sent their wordmarks only as photographs of tour shirts and a tote, which their managers say is all that survives. There is no defined palette, type or treatment yet, and last season's printed card exists only as the press PDF our printer returned.",
+  "brand_assets_status": "umbra_sable_wordmark_transparent.png and umbra_meridian_wordmark_transparent.png are refreshed production artwork. Use these supplied shapes; recolour their ink to Bone White for Pitch grounds. Merchandise photos are historical references only. The file named umbra_wordmark_nightferry.jpg actually shows Sable Quartet: it must not represent Night Ferry. Night Ferry is billed in the series type only, with no invented wordmark.",
   "values": "Everything comes from this room, on these nights, and it should never look like a bank's jazz sponsorship.",
+  "signature_type_move": "A compact series-title stack in Sora ExtraBold; Bone White act blocks on Pitch with the date immediately above in Sodium. Billing sizes follow the placement-specific notes.",
+  "display_face": "Sora ExtraBold",
   "type_system": {
     "brand_name": "Umbra Loft",
     "tagline": "Downstairs, after dark.",
@@ -64,36 +66,42 @@
     "scale": [
       {
         "step": "01",
-        "role": "Display / H1",
+        "role": "Series title / headline",
         "family": "Sora",
         "size": "180 pt",
         "leading": "148 pt",
         "weight": "ExtraBold",
         "tracking": "-10 units, all caps",
         "sample": "UMBRA / LOFT",
-        "note": "Act names, always caps and always broken onto exactly two lines whatever the length, shown here with the break marked by a slash. Leading is 0.82 of the size, so 148 pt at A2 and 123 px at the 150 px post size, closing the two lines into one solid block, Bone White on Pitch."
+        "note": "A2 series title only, not every act in the schedule. Use 96 px on a release post; act names are 48 pt on posters and 76 px on posts. Act names may occupy one or two lines; keep the one-word name KOA on one line.",
+        "font_family": "Sora",
+        "font_weight": 800
       },
       {
         "step": "02",
-        "role": "Subheading / H2",
+        "role": "Date line",
         "family": "Sora",
-        "size": "46 pt",
-        "leading": "50 pt",
+        "size": "18 pt",
+        "leading": "22 pt",
         "weight": "ExtraBold",
         "tracking": "+20 units, all caps",
         "sample": "DOWNSTAIRS, AFTER DARK.",
-        "note": "The date line, set in Sodium and always sitting directly above the act block. One line only, so the 0.82 leading of step 01 does not apply."
+        "note": "A2 poster date line above its act. On release posts use 30 px / 36 px.",
+        "font_family": "Sora",
+        "font_weight": 800
       },
       {
         "step": "03",
         "role": "Body",
         "family": "Archivo Narrow",
-        "size": "11 pt",
-        "leading": "15 pt",
+        "size": "14 pt",
+        "leading": "19 pt",
         "weight": "Regular",
         "tracking": "0, max 65 characters",
         "sample": "Nine nights, one series, downstairs under the mill.",
-        "note": "Billing and tables take the same setting, with figures aligned in their columns."
+        "note": "A2 supporting billing uses 14 pt / 19 pt. Release-post supporting copy uses 28 px / 38 px. Deck body uses 18 pt / 25 pt.",
+        "font_family": "Archivo Narrow",
+        "font_weight": 400
       },
       {
         "step": "04",
@@ -104,23 +112,68 @@
         "weight": "SemiBold",
         "tracking": "+30 units, all caps",
         "sample": "DOORS 8 · CASH ON THE NIGHT",
-        "note": "SemiBold is reserved for the door line. Everything else at this size stays Regular."
+        "note": "9 pt / 13 pt for poster licence and access lines. Release posts use at least 22 px / 30 px. SemiBold is reserved for door-time information; other fine print is Regular.",
+        "font_family": "Archivo Narrow",
+        "font_weight": 600
       }
     ],
-    "signature_move": "The two line stack. Every act name is Sora ExtraBold caps broken onto exactly two lines whatever its length, with leading closed to 0.82 of the size, 148 pt at the A2 size of 180 pt and 123 px at the 150 px post size, so the lines almost collide into one solid block of squared caps with no air inside it, Bone White on Pitch with the date above in Sodium.",
+    "signature_move": "A compact series-title stack in Sora ExtraBold; Bone White act blocks on Pitch with the date immediately above in Sodium. Billing sizes follow the placement-specific notes.",
     "rules": [
-      "Never set an act name on one line.",
-      "Every act name is caps, broken onto exactly two lines whatever its length, with leading closed to 0.82 of the size.",
+      "Act names use one or two lines as needed; KOA stays on one line. Do not apply the 180 pt series-title size to the full billing list.",
       "The act block is Bone White on Pitch, with the date directly above it in Sodium.",
       "Archivo Narrow Regular sets billing and tables. SemiBold is reserved for the door line and sets nothing else.",
       "Sora ExtraBold is display only. It never sets billing, tables or body.",
       "Everything comes from this room, on these nights. It must never read as corporate or sponsored programming."
-    ]
+    ],
+    "specimen_note": "The samples load the supplied font files. Their display size is reduced for this guide; use the stated deliverable settings, not the on-screen sample size. Fonts and their OFL licences are downloadable in Source assets.",
+    "measurement_notes": "Tracking in units means thousandths of an em; 1 pt is 1/72 inch. Pixel settings apply at final exported size. Font size is not cap height.",
+    "application": "Apply these roles to newly set text in the requested deliverables. Preserve supplied logo artwork rather than retyping it. Recovered artwork retains its photographed lettering.",
+    "font_access": "Use the attached OFL font files at the named weights. These files replace unavailable commercial fonts for this commission. Do not substitute another family or simulate a missing weight."
   },
   "palette_rules": {
-    "distribution": "Grounds and panels are Pitch or Ash and nothing else; Pitch is the main ground and always the ground under an act block. Every act name is Bone White on Pitch with its date line directly above it in Sodium, as the type rules require. Every other line of type, titles, headings, support, door, set, body, billing, table and fine-print lines included, is Bone White; the advance price may be Sodium, as on umbra_seasoncard_autumn.pdf. Pitch and Ash are never type. Cold Signal and Blood are accents for hairline rules, dividers and chart marks only, together no more than 5% of the designed, non-photographic area, never type, a ground or a panel. Any palette colour may be one of the two colours of a photograph's treatment.",
-    "opacity": "Every palette colour is used solid, at 100% opacity, for type, grounds, panels, rules, chart marks and recovered act wordmarks: no tint, transparency, gradient, shadow, glow or blend mode, and no scrim, gradient or overlay of any colour, black and white included, laid over a photograph. The translucent type and rule of last season's umbra_seasoncard_autumn.pdf (printed at 86%, 78%, 70% and 55% opacity) are not carried over. The one place two palette colours mix is inside a photograph, in its two-colour treatment.",
+    "distribution": "Grounds and panels are Pitch or Ash and nothing else; Pitch is the main ground and always the ground under an act block. Every act name is Bone White on Pitch with its date line directly above it in Sodium, as the type rules require. Every other line of type, titles, headings, support, door, set, body, billing, table and fine-print lines included, is Bone White; the advance price may be Sodium, as on umbra_seasoncard_autumn.pdf. Pitch and Ash are never type. Cold Signal and Blood are accents for hairline rules, dividers and chart marks only, together no more than 5% of the designed, non-photographic area, never type, a ground or a panel. Any palette colour may be one of the two colours of a photograph's treatment. Supplied production act wordmarks are recoloured to Bone White on Pitch; their letter shapes remain unchanged.",
+    "opacity": "Every palette colour is used solid, at 100% opacity, for type, grounds, panels, rules, chart marks and recovered act wordmarks: no tint, transparency, gradient, shadow, glow or blend mode, and no scrim, gradient or overlay of any colour, black and white included, laid over a photograph. The translucent type and rule of last season's umbra_seasoncard_autumn.pdf (printed at 86%, 78%, 70% and 55% opacity) are not carried over. The one place two palette colours mix is inside a photograph, in its two-colour treatment. Supplied raster identity artwork retains its edge anti-aliasing. Place it at 100% layer opacity; colour rules apply to any intentional recolouring.",
     "forbidden": "No colour outside the six palette hexes for type, grounds, panels, rules, chart marks, icons or recovered act wordmarks; a recovered act wordmark takes one solid palette colour. No sponsor logo or corporate partner mark, since the type rules forbid anything that reads as corporate or sponsored programming.",
     "photography": "Every photograph carries the series two-colour and grain treatment: rendered in two palette colours with visible grain, never in full colour, and the nine night release posts share one pair so six different rigs read as one series. Photographs are used as shot, with nothing generated, extended, added or painted in."
-  }
+  },
+  "creative_scope": {
+    "fixed": "Keep the approved billing order, all nine dates, support acts, times and CSV prices. Use the current palette and supplied fonts. Sable Quartet and Meridian Brass have supplied production wordmarks; Night Ferry and the remaining acts are type-only.",
+    "designer_choices": "Develop three genuinely different type-led, image-led and graphic-led poster directions. Choose the two-colour photographic pair and grain treatment within the palette, then choose one direction to adapt consistently to the nine release posts. Explain that choice in the deck."
+  },
+  "font_files": [
+    {
+      "family": "Sora",
+      "filename": "fonts/Sora[wght].ttf",
+      "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/LAYOUT-12/fonts/Sora%5Bwght%5D.ttf",
+      "axes": {
+        "wght": [
+          100.0,
+          400.0,
+          800.0
+        ]
+      },
+      "weight_range": [
+        100.0,
+        400.0,
+        800.0
+      ]
+    },
+    {
+      "family": "Archivo Narrow",
+      "filename": "fonts/ArchivoNarrow[wght].ttf",
+      "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/LAYOUT-12/fonts/ArchivoNarrow%5Bwght%5D.ttf",
+      "axes": {
+        "wght": [
+          400.0,
+          400.0,
+          700.0
+        ]
+      },
+      "weight_range": [
+        400.0,
+        400.0,
+        700.0
+      ]
+    }
+  ]
 }

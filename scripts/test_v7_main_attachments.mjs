@@ -52,8 +52,9 @@ for (const [id, [outputCount, passed, total]] of expected) {
 
   vm.runInContext(`section='Auto verifiers';render();`, context);
   const auto = document.getElementById('content').innerHTML;
-  assert.ok(auto.includes(`${passed}/${total} run-recorded passes`), id);
-  if (passed === 0) assert.ok(auto.includes('not assessed') || auto.includes('not run'), id);
+  assert.ok(auto.includes(`${total} current checks: not assessed`), id);
+  assert.equal(vm.runInContext('current.run.verifier_summary.automatic_passed',context),passed);
+  assert.equal(vm.runInContext('current.checks.filter(c=>c.type==="auto"&&c.status==="passed").length',context),0);
 
   vm.runInContext(`section='Trajectory verifiers';render();`, context);
   const trajectory = document.getElementById('content').innerHTML;
