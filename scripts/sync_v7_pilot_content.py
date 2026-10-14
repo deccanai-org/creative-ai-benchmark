@@ -19,6 +19,16 @@ PAGE = ROOT / "docs/gatsby-v7"
 DATA_SCRIPT = re.compile(r'(<script\b[^>]*\bid=[\"\']data[\"\'][^>]*>)(.*?)(</script>)', re.S)
 
 
+def refreshed_assets_verified() -> bool:
+    path = PAGE / 'annotation-pilot/asset-access-status.json'
+    if not path.exists():
+        return False
+    audit = json.loads(path.read_text())
+    return (audit.get('revision') == 'pilot13_inputs_2026_10_14'
+            and audit.get('failures') == 0
+            and audit.get('refreshed_assets_hash_verified') == 73)
+
+
 def merge_checks(existing: list, canonical: list) -> list:
     """Keep mirror order/field order stable while updating the check specifications."""
     by_id = {c["check_id"]: c for c in canonical}
@@ -97,7 +107,8 @@ def sync_detail_csv(path: Path, specs: dict, kind: str, check: bool) -> None:
         common={'Task code':code,'Task name':spec['task_name'],'Family':spec['family']}
         if kind=='assets':
             for i,a in enumerate(spec['assets'],1):
-                rows.append({**common,'Asset #':i,'Filename':a['filename'],'Role':a['role'],'Type':Path(a['filename']).suffix.lstrip('.'),'Bytes':a.get('bytes',''),'SHA-256':a.get('sha256',''),'State':a.get('state',''),'S3 URI':a.get('s3_uri',''),'HTTPS object':a['public_url'],'S3 console':'https://ap-south-1.console.aws.amazon.com/s3/object/annotationprod?region=ap-south-1&prefix='+quote(a.get('s3_key',''),safe=''),'Upload status':'uploaded; public access pending policy approval' if a.get('revision')=='pilot13_inputs_2026_10_14' else 'verified public access 2026-10-14'})
+                pending = a.get('revision') == 'pilot13_inputs_2026_10_14' and not refreshed_assets_verified()
+                rows.append({**common,'Asset #':i,'Filename':a['filename'],'Role':a['role'],'Type':Path(a['filename']).suffix.lstrip('.'),'Bytes':a.get('bytes',''),'SHA-256':a.get('sha256',''),'State':a.get('state',''),'S3 URI':a.get('s3_uri',''),'HTTPS object':a['public_url'],'S3 console':'https://ap-south-1.console.aws.amazon.com/s3/object/annotationprod?region=ap-south-1&prefix='+quote(a.get('s3_key',''),safe=''),'Upload status':'uploaded; public access pending policy approval' if pending else 'verified public access 2026-10-14'})
         elif kind=='verifiers':
             for c in spec['verifiers_auto']+spec['verifiers_human']:
                 rows.append({**common,'Verifier type':c['type'].capitalize(),'Verifier ID':c['check_id'],'Output ID':c['output_id'],'Deliverable':c.get('artifact_name',''),'Output file':c.get('artifact_file',c['output_reference']),'Pass condition':c['check'],'Evidence':c.get('evidence_reference',''),'K question':c.get('k_id',''),'Answer (Yes/No)':''})
@@ -253,7 +264,8 @@ def sync(check: bool = False) -> None:
         pilot_input_revision='pilot13_inputs_2026_10_14',
         refreshed_pilot_tasks=TASK_IDS,
         refreshed_assets_uploaded=73,
-        refreshed_assets_public_access='pending bucket policy approval; public GET returns 403',
+        refreshed_assets_public_access=('verified anonymous access and browser CORS; 73 new files match local SHA-256 hashes'
+                                       if refreshed_assets_verified() else 'pending bucket policy approval; public GET returns 403'),
     )
     reconcile(manifest_path, json.dumps(manifest, ensure_ascii=False, indent=2) + '\n', check)
     release_path = PAGE / 'RELEASE_STATUS.json'
@@ -263,7 +275,7 @@ def sync(check: bool = False) -> None:
         auto=sum(len(t['verifiers_auto']) for t in tasks),
         human=sum(len(t['verifiers_human']) for t in tasks),
         pilot_input_revision='pilot13_inputs_2026_10_14',
-        refreshed_asset_access_pending=73,
+        refreshed_asset_access_pending=0 if refreshed_assets_verified() else 73,
     )
     release['atomic_verifiers'] = release['auto'] + release['human']
     reconcile(release_path, json.dumps(release, ensure_ascii=False, indent=2) + '\n', check)
