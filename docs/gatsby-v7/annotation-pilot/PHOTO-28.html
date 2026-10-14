@@ -99,7 +99,7 @@ document.addEventListener('click', async (event) => {
   const original = link.textContent;
   link.textContent = 'Downloading...';
   try {
-    const response = await fetch(link.href, {mode: 'cors'});
+    const response = await fetch(link.href, {mode: 'cors', cache: 'no-store'});
     if (!response.ok) throw new Error(`Asset returned ${response.status}`);
     const objectUrl = URL.createObjectURL(await response.blob());
     const saveLink = document.createElement('a');
