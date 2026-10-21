@@ -7,7 +7,7 @@ import unittest
 from pathlib import Path
 
 from build_v7_annotation_pilot import TASKS, TASK_IDS, OUT, SHEET_EXPORT, platform_verifiers
-from fix_v7_pilot_typography import REVISION, roles_for
+from fix_v7_pilot_typography import REVISION
 
 
 class TypographyTests(unittest.TestCase):
@@ -29,11 +29,9 @@ class TypographyTests(unittest.TestCase):
                 for output in spec["deliverables"]:
                     cs = by_output[output["output_id"]]
                     filename = Path(output["path"]).name
-                    actual = {c.get("typography_key") for c in cs}
-                    for role in roles_for(tid, output):
-                        for prop, value in role.items():
-                            if prop != "role" and value is not None:
-                                self.assertIn(f'{role["role"]}:{prop}', actual)
+                    # 2026-10-21: exact size/leading/tracking checks per role were retired on raster outputs
+                    # (not judgeable by eye) or moved to automatic pdf_text_style checks on PDFs. Role coverage is
+                    # now enforced by the coverage tables in scripts/test_pilot13_ab.py.
                     for c in cs:
                         if c.get("typography_key"):
                             self.assertTrue(c["check"].startswith(filename + ":"))

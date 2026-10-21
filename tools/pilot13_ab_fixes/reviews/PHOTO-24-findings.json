@@ -1,0 +1,229 @@
+{
+ "LANGUAGE, ATOMICITY AND OBSERVABILITY": [
+  {
+   "severity": "major",
+   "check_ids": [
+    "PHOTO-24/watch-keyvisual/H019",
+    "PHOTO-24/watch-feature-r002/H025",
+    "PHOTO-24/watch-feature-r003/H024",
+    "PHOTO-24/watch-feature-r004/H023",
+    "PHOTO-24/watch-feature-r005/H024",
+    "PHOTO-24/watch-feature-r006/H023",
+    "PHOTO-24/dealer-launch/H041"
+   ],
+   "problem": "These checks hold two facts, tabular spacing and lining figures. Tabular spacing cannot be seen on a PNG unless figures are stacked in a column, and none of the five product features or the key visual needs a column. The reason given, \"so any column of figures aligns\", has nothing to judge when there is no column.",
+   "fix": "On the 6 PNGs, keep only the part a person can see, e.g. r002 H025: \"Every figure on “Watch product-page feature - LC-25-0101” (watch-feature-r002.png) is a lining figure at full capital height, with no old-style figure dropping below the line.\" On dealer H041, use the same lining wording, and only if the brand team wants tabular checked, add: \"Where figures are stacked in a column on “Watch dealer launch sheet” (dealer-launch.pdf), their digits line up vertically.\""
+  },
+  {
+   "severity": "major",
+   "check_ids": [
+    "PHOTO-24/watch-keyvisual/H018",
+    "PHOTO-24/watch-feature-r002/H024",
+    "PHOTO-24/watch-feature-r003/H023",
+    "PHOTO-24/watch-feature-r004/H022",
+    "PHOTO-24/watch-feature-r005/H023",
+    "PHOTO-24/watch-feature-r006/H022",
+    "PHOTO-24/dealer-launch/H040"
+   ],
+   "problem": "These are compound checks: (1) figures are in Inter, not Cormorant Garamond, and (2) they are \"at the surrounding size\". On a PNG nobody can confirm by eye that Inter digits share the point size of Cormorant capitals, because the two faces have different cap heights, so same-size Inter digits look taller. \"Inside a heading too\" is also awkward to read.",
+   "fix": "Keep the family fact in the existing id, e.g. kv H018: \"Every figure on “Autumn watch key visual” (watch-keyvisual.png), including any inside a Cormorant Garamond heading, is set in Inter, not Cormorant Garamond.\" Drop the size clause on the 6 PNGs. On dealer H040 only, add it as its own check, since the PDF size can be inspected: \"Any figure inside a heading on “Watch dealer launch sheet” (dealer-launch.pdf) is set at the same point size as the heading capitals around it.\""
+  },
+  {
+   "severity": "major",
+   "check_ids": [
+    "PHOTO-24/watch-keyvisual/H027",
+    "PHOTO-24/watch-keyvisual/H031",
+    "PHOTO-24/watch-feature-r002/H034",
+    "PHOTO-24/watch-feature-r002/H038",
+    "PHOTO-24/watch-feature-r003/H033",
+    "PHOTO-24/watch-feature-r003/H037",
+    "PHOTO-24/watch-feature-r004/H032",
+    "PHOTO-24/watch-feature-r004/H036",
+    "PHOTO-24/watch-feature-r005/H033",
+    "PHOTO-24/watch-feature-r005/H037",
+    "PHOTO-24/watch-feature-r006/H032",
+    "PHOTO-24/watch-feature-r006/H036",
+    "PHOTO-24/dealer-launch/H048",
+    "PHOTO-24/dealer-launch/H052"
+   ],
+   "problem": "Each check joins two facts: family and weight (Cormorant Garamond Medium capitals), and letterspacing. \"Widely letterspaced\" is vague and states no standard. The brand fixes +180 tracking (0.18 em), but an annotator has no way to tell \"wide\" from normal.",
+   "fix": "Keep family and weight in the existing id, e.g. r002 H038: \"The reference name “Meridian” on “Watch product-page feature - LC-25-0101” (watch-feature-r002.png) is set in Cormorant Garamond Medium capitals.\" Add one tracking check per role and output with a stated standard, e.g. \"The capitals of “Meridian” on “Watch product-page feature - LC-25-0101” (watch-feature-r002.png) are tracked open, about one fifth of the letter height apart, not set tight.\""
+  },
+  {
+   "severity": "major",
+   "check_ids": [
+    "PHOTO-24/dealer-launch/H048"
+   ],
+   "problem": "This compound check covers two elements, the main heading and the wordmark, plus a comparison with the certificate. It also uses the vague \"widely letterspaced\".",
+   "fix": "Modify H048 to: \"If a main heading appears on “Watch dealer launch sheet” (dealer-launch.pdf), it is set in Cormorant Garamond Medium capitals, not the bold serif capitals of lunara_certificate_2025.pdf.\" This keeps the certificate trap. Add: \"If a wordmark appears on “Watch dealer launch sheet” (dealer-launch.pdf), it is set in Cormorant Garamond Medium capitals, not the bold serif capitals of lunara_certificate_2025.pdf.\" Add tracking checks as in the finding above."
+  },
+  {
+   "severity": "major",
+   "check_ids": [
+    "PHOTO-24/watch-keyvisual/H050"
+   ],
+   "problem": "On the key visual a warm single-tone grade is allowed (H007). A uniform full-frame warm overlay looks the same as a grade in the delivered PNG, so \"no overlay of any colour\" cannot be judged on the full frame by looking at the file, and it reads as if it contradicts H007. What a person can see is a local scrim, band, vignette or tinted box behind the type.",
+   "fix": "Rewrite to: \"No dark or light band, vignette, gradient or tinted box is laid over part of the photograph on “Autumn watch key visual” (watch-keyvisual.png); type sits on a clear area of the photograph or on a solid panel.\""
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "PHOTO-24/dealer-launch/H049"
+   ],
+   "problem": "Wrong k_id. This is a size-hierarchy check (heading larger than body). The matching checks (kv H013, feature H010/H018/H019, dealer H038) use K5_Q2, but this one is K2_Q3.",
+   "fix": "Change k_id to K5_Q2 and keep the text: \"If a main heading appears on “Watch dealer launch sheet” (dealer-launch.pdf), it is set larger than the body and specification text.\""
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "PHOTO-24/dealer-launch/H010",
+    "PHOTO-24/dealer-launch/H018"
+   ],
+   "problem": "\"Gives Selene caliber LM-02 alone, not LM-03\" is cryptic for a designer: \"alone\" is unclear, and nothing says why LM-03 is mentioned. These checks also drop the register row that the sibling checks (H006, H014, H022) cite.",
+   "fix": "H010: \"On “Watch dealer launch sheet” (dealer-launch.pdf), Selene is given one caliber only, LM-02, as in lunara_register.csv row 3.\" H018: \"On “Watch dealer launch sheet” (dealer-launch.pdf), Halcyon is given one caliber only, LM-03, as in lunara_register.csv row 5.\" Both keep K1_Q5 and the same fact."
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "PHOTO-24/dealer-launch/H025",
+    "PHOTO-24/dealer-launch/H027",
+    "PHOTO-24/dealer-launch/H017",
+    "PHOTO-24/dealer-launch/H070",
+    "PHOTO-24/dealer-launch/H009",
+    "PHOTO-24/dealer-launch/H013",
+    "PHOTO-24/dealer-launch/H021"
+   ],
+   "problem": "There are near-duplicates on the same output. H025 (keeps the deep blue sunray dial) overlaps H027 (the Vesper dial reads deep blue, true to colour). H017 (the lacquered oxblood dial and oxblood strap) overlaps H070 (the Ardent dial and strap keep their colour). The pictured-watch checks also mix dial colour with geometry and \"nothing generated\", and they use \"&\".",
+   "fix": "Make the pictured-watch checks about parts only, leaving colour to H027 and H070. For example, H025: \"The Vesper on “Watch dealer launch sheet” (dealer-launch.pdf) shows the dial, case and strap of lunara_pdp_vesper.jpg, with nothing generated or redrawn.\" H017: \"The Ardent on “Watch dealer launch sheet” (dealer-launch.pdf) shows the dial, case and strap of lunara_pdp_ardent.jpg, with nothing generated or redrawn.\" Word H009, H013 and H021 the same way, with \"case and bracelet\" and no \"&\"."
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "PHOTO-24/watch-feature-r004/H056",
+    "PHOTO-24/dealer-launch/H070"
+   ],
+   "problem": "\"Not pushed toward the palette Oxblood\" is brand-doc jargon, and a drift toward one hex is hard to see. The k_id is K1_Q2, but this enforces brand_identity.photography, and the guide says brand rules are K2_Q3 (K2_Q2 asset preservation would also fit).",
+   "fix": "r004 H056: \"The strap on “Watch product-page feature - LC-25-0103” (watch-feature-r004.png) matches the strap colour in lunara_pdp_ardent.jpg, with no recolouring.\" Set k_id to K2_Q3. Dealer H070: \"The Ardent dial and strap on “Watch dealer launch sheet” (dealer-launch.pdf) match their colour in lunara_pdp_ardent.jpg, with no recolouring.\" Set k_id to K2_Q3."
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "PHOTO-24/watch-feature-r002/H001",
+    "PHOTO-24/watch-feature-r003/H001",
+    "PHOTO-24/watch-feature-r004/H001",
+    "PHOTO-24/watch-feature-r005/H001",
+    "PHOTO-24/watch-feature-r006/H001"
+   ],
+   "problem": "\"The case shape matches the case shown in lunara_pdp_*.jpg\" is close to H007/H015/H016 (the photo is that supplied frame) and to H020 (the parts match). What the brief actually asks to guard is geometry: the image must not be stretched or warped. The current wording does not say that.",
+   "fix": "r002 H001: \"The watch on “Watch product-page feature - LC-25-0101” (watch-feature-r002.png) keeps the case proportions of lunara_pdp_meridian.jpg, not stretched, squashed or warped.\" Use the same pattern for r003 to r006 with their own pdp file."
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "PHOTO-24/watch-keyvisual/H001"
+   ],
+   "problem": "The wording is unclear: \"The reference named ... is the watch it shows: allowing for ..., its dial has the finish ...\". It reads as two facts joined by a colon, and the finish the annotator should look for is never stated.",
+   "fix": "\"Allowing for the warm tone, the dial on “Autumn watch key visual” (watch-keyvisual.png) shows the finish lunara_notes.txt gives the named reference, e.g. silver sunburst for Meridian, deep blue sunray for Vesper.\""
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "PHOTO-24/watch-keyvisual/H007"
+   ],
+   "problem": "\"Warm\" is said twice (\"one warm single-tone treatment ... warm and not blue\").",
+   "fix": "\"The photograph on “Autumn watch key visual” (watch-keyvisual.png) has one warm single-tone grade, with no blue cast, applied evenly across the whole frame.\""
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "PHOTO-24/watch-keyvisual/H005"
+   ],
+   "problem": "The annotator has to chain three lookups (named reference, then its caliber, then the notes) when the values are short and fixed. The feature checks state them.",
+   "fix": "\"Any movement description on “Autumn watch key visual” (watch-keyvisual.png) matches lunara_notes.txt for its caliber: LM-01 hand-wound, 42h reserve; LM-02 automatic, 48h reserve; LM-03 hand-wound, small seconds.\""
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "PHOTO-24/watch-keyvisual/H016",
+    "PHOTO-24/watch-feature-r002/H018",
+    "PHOTO-24/watch-feature-r003/H013",
+    "PHOTO-24/watch-feature-r004/H014",
+    "PHOTO-24/watch-feature-r005/H013",
+    "PHOTO-24/watch-feature-r006/H013"
+   ],
+   "problem": "\"Reads word for word as lunara_notes.txt fixes it\" is awkward, and the notes file contains other text, so it does not say which line to compare.",
+   "fix": "\"Any timing line on “Watch product-page feature - LC-25-0101” (watch-feature-r002.png) matches the certificate wording in lunara_notes.txt word for word, with nothing reworded, shortened or added.\" Use the same pattern on each output."
+  }
+ ],
+ "FIDELITY AND COVERAGE": [
+  {
+   "severity": "major",
+   "check_ids": [
+    "PHOTO-24/watch-keyvisual/H011",
+    "PHOTO-24/watch-feature-r002/H008",
+    "PHOTO-24/watch-feature-r003/H016",
+    "PHOTO-24/watch-feature-r004/H017",
+    "PHOTO-24/watch-feature-r005/H016",
+    "PHOTO-24/watch-feature-r006/H016",
+    "PHOTO-24/dealer-launch/H036"
+   ],
+   "problem": "Seven retired checks said every Cormorant Garamond line, 'any heading included', must be Medium capitals, letterspaced, and never italic, another weight or lowercase. Their covered_by checks (wordmark H027/H034/H033/H032/H048, reference name H031/H038/H037/H036/H052, two-families H017/H023/H022/H021/H039) only test the wordmark, the reference name or the main heading, and the 'Cormorant or Inter' check. Any other Cormorant line is now unchecked, such as a campaign headline or the tagline on the key visual, a 'Meridian, caliber LM-01' style subhead on a feature (the H2 sample), or section subheads on the dealer sheet. An italic or Light Cormorant headline would now pass. The coverage rule T02 was also narrowed to 'reference names', but the type scale's Subheading / H2 role is not limited to reference names.",
+   "fix": "Do not retire these seven. Modify each to one fact, for example: 'Every line set in Cormorant Garamond on “Autumn watch key visual” (watch-keyvisual.png) is Medium capitals, widely letterspaced, never italic, another weight or lowercase.' Do the same for each feature and for “Watch dealer launch sheet” (dealer-launch.pdf). Then widen T02 to 'Subheading / H2 and any other Cormorant line' and cite these ids next to the reference-name checks on all 7 outputs."
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "PHOTO-24/dealer-launch/H063",
+    "PHOTO-24/dealer-launch/H055",
+    "PHOTO-24/dealer-launch/A008"
+   ],
+   "problem": "Retired H063 (fine print for price, serial and timing result at 10 pt) lists new:dl-timing-style (A008) in covered_by. A008 only tests the fixed timing-line sentence, which the palette rules treat as a role separate from fine print. A price, serial or timing result could be set at any size and A008 would still pass. H055 (body copy at 10 pt) has the same problem: A008 tests the timing line, not body copy. The covered_by does not test the same fact.",
+   "fix": "Remove new:dl-timing-style from the covered_by of H063 and H055, so each cites only its family check (H062 and H054). Reword the why to 'fine-print and body text are not fixed on the sheet, so no pdf_text_style can target them; the exact size is not judgeable by eye'. That keeps the record honest that no 10 pt check exists for these roles."
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "PHOTO-24/watch-keyvisual/H001"
+   ],
+   "problem": "In the coverage table, rule B10 (photographs keep their corrected colour and are not recoloured toward the palette) marks watch-keyvisual as na, and the na reason itself says the dial identity 'is checked by H001'. The rule does apply to the key visual: only the warm single-tone treatment is exempt, and the brief requires 'a warm treatment that does not change its dial identity'. A cell with a real covering check should cite it, not be na.",
+   "fix": "In coverage/PHOTO-24.json change B10.cells.watch-keyvisual to {\"checks\": [\"PHOTO-24/watch-keyvisual/H001\"]}."
+  }
+ ],
+ "repair": {
+  "fixed": [
+   "F1-1 (major): Un-retired the 7 'every Cormorant line' checks (kv H011, r002 H008, r003 H016, r004 H017, r005 H016, r006 H016, dealer H036). Each now holds one fact, e.g. 'Any Cormorant Garamond line on ... other than the wordmark and reference name, such as a subhead, is Medium capitals, never italic, lowercase or another weight.' Coverage T02 widened to 'Subheading / H2 and any other Cormorant line', and these ids are cited on all 7 outputs.",
+   "L3 (major): Removed 'widely letterspaced' from the 14 wordmark and reference-name checks, so they now test family and weight only. Added one tracking check per output (7 new, kv H053, r002 H058, r003-r005 H057, r006 H056, dealer H072) with a stated standard: 'tracked open at +180, clearly wider than the supplied font's default spacing'. Retired exact-tracking checks (kv H030/H034, feature H037/H041 and siblings, dealer H051/H053) now name these new checks in covered_by. Cited in T01 and T02.",
+   "L4 (major): Dealer H048 now covers only the main heading and keeps the lunara_certificate_2025.pdf trap. New H071 covers the wordmark with the same certificate contrast and is cited in T01.",
+   "L1 (major): The 7 tabular+lining checks now test only lining figures ('lining figure at full capital height, no old-style figure dropping below the line'). New dealer H073: 'Where figures are stacked in a column ... their digits line up vertically'. Cited in T09, whose rule text now notes tabular spacing is judged only where figures stand in a column.",
+   "L2 (major): The 7 figure-family checks now test only that every figure, including any inside a Cormorant heading, is set in Inter. The size clause is gone from the PNGs. New dealer H074 checks that a figure inside a heading is the same point size as the heading capitals. Cited in T08.",
+   "L5 (major): kv H050 rewritten to 'No dark or light band, vignette, gradient or tinted box is laid over part of the photograph', so it no longer clashes with the permitted warm grade.",
+   "L6: dealer H049 k_id changed K2_Q3 -> K5_Q2.",
+   "L7: dealer H010 and H018 (K1_Q5) reworded to 'is given one caliber only, LM-02/LM-03, as in lunara_register.csv row 3/row 5'. Same fact; register rows checked (row 3 Selene LM-02, row 5 Halcyon LM-03).",
+   "L8: dealer H009/H013/H017/H021/H025 now test parts only ('shows the dial, case and bracelet/strap of lunara_pdp_X.jpg, with nothing generated or redrawn'), with no '&'. Dial and strap colour stay with H027/H070.",
+   "L9: r004 H056 and dealer H070 reworded to 'matches ... colour in lunara_pdp_ardent.jpg, with no recolouring'. k_id changed K1_Q2 -> K2_Q3.",
+   "L10: feature H001 x5 now read 'keeps the case proportions of lunara_pdp_X.jpg, not stretched, squashed or warped'.",
+   "L11: kv H001 states the finishes from lunara_notes.txt (Meridian silver sunburst ... Vesper deep blue sunray) as one fact.",
+   "L12: kv H007 no longer repeats 'warm': 'one warm single-tone grade, with no blue cast, applied evenly across the whole frame'.",
+   "L13: kv H005 now lists the movement values per reference inline.",
+   "L14: The 6 PNG timing-line checks and dealer H002 now say 'matches the certificate wording in lunara_notes.txt word for word'.",
+   "F1-2: dealer H055 and H063 retirements no longer list new:dl-timing-style (A008) in covered_by; each cites only its family check (H054/H062). The why now says the text is not fixed on the sheet, so no pdf_text_style can target it, and the exact size is not judgeable by eye.",
+   "F1-3: coverage B10 watch-keyvisual changed from na to checks [PHOTO-24/watch-keyvisual/H001].",
+   "Known issue verified: all 5 features have a dial-colour check (r004 uses H006, the others H019), so none was added."
+  ],
+  "rejected": [
+   {
+    "finding": "L3 asked for one tracking check per role per output, and gave the standard as 'about one fifth of the letter height apart'.",
+    "why": "Partial deviation, not a full rejection. The brand states tracking as a single rule for both steps: signature_move says 'Steps 01 and 02 hold the Cormorant Garamond capitals tracked 180 units'. So one check per output ('Every line of Cormorant Garamond capitals ... is tracked open at +180') is one fact and avoids 7 more checks. I did not use the 'one fifth of the letter height' standard: 0.18 em is roughly 0.28 of Cormorant's cap height, so that figure would be wrong. The stated standard instead compares against the supplied font's default spacing, which annotators can do with the supplied font files."
+   },
+   {
+    "finding": "L5 suggested adding 'type sits on a clear area of the photograph or on a solid panel' to kv H050.",
+    "why": "Dropped this clause to keep H050 to one fact. The no-overlay fact is kept."
+   }
+  ],
+  "unresolved": [
+   "Tabular figure spacing is no longer checked on the 6 PNGs (only lining figures are). It is checked only on the dealer PDF, where figures in a column make it visible.",
+   "The signature-move rule that figures inside a heading are set 'at the same size' is checked only on dealer-launch.pdf (H074). On the PNGs it cannot be judged by eye, because Inter digits stand taller than Cormorant capitals at the same point size.",
+   "7 warnings remain for checks of 31-33 words (kv H001 and the 7 Cormorant-line checks). All are under the 40-word limit; they were not shortened further so the examples and finish list stay in."
+  ]
+ }
+}

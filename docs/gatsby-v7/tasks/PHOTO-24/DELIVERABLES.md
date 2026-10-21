@@ -72,5 +72,4 @@ File: `deliverables/dealer-launch.pdf`
 - Specification: {"format": "pdf", "width_mm": 210, "height_mm": 297, "pages": 2}
 - Cover all five references across two pages, pairing each watch with reference, dial finish and caliber.
 - Include the fixed timing line from lunara_notes.txt verbatim.
-- Export: Digital PDF in sRGB with embedded fonts, searchable text where practical, no crop marks and no added bleed; retain the exact page size and page count.
-- Export: This file is for screen review/distribution, not a CMYK press master.
+- Export: Digital PDF in sRGB with embedded fonts, searchable text where practical, no crop marks and no added bleed; retain the exact page size and page count. This file is for screen review/distribution, not a CMYK press master.

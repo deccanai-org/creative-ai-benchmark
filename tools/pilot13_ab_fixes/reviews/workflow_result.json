@@ -1,0 +1,1105 @@
+[
+ {
+  "task": "PHOTO-19",
+  "author": {
+   "task": "PHOTO-19",
+   "validator_errors": 0,
+   "validator_warnings": 0,
+   "human_before": 783,
+   "human_after": 629,
+   "rules": 43,
+   "retired": 336,
+   "modified": 215,
+   "added_human": 182,
+   "auto_added": 0,
+   "holes_filled": 160,
+   "unresolved": [
+    "Head scale (summit_brand_notes.txt: one scale of head across all eighteen) has no stated value, so 17 cards now compare against one fixed reference card, speaker-card-r002.png, as the guide allows. r002's own head-scale check was retired (marked na in coverage). An annotator still has to open r002 alongside each card.",
+    "The 'same house ground behind every sitter' rule cannot be stated as a single value. Each card now checks the stated range (#D9DDDE to #F2EEE7, original background removed) plus a soft, even, neutral tone with no cast, gradient or vignette. Exact cross-card sameness of tone is no longer checked directly.",
+    "The CFS mark artwork check now points at cfs_mark_transparent.svg (the brief and commission name it) instead of summit_badge_2025_PRINTER.pdf, which is now only a layout reference. The Fog Grey on Cascadia Slate colour check is separate, because the supplied SVG is drawn in #23303A and has to be recoloured.",
+    "There is no pdf_text_style auto check: all 19 outputs are PNGs.",
+    "On r003 and r010, H016 (no extra smoothing beyond the source) sits next to H017 (the source's retouch toned down). The two overlap, but both were kept because H017 guards the planned retouch trap."
+   ],
+   "notes": "Patch: /Users/dhiren/Documents/ChatGPT/Adobe_Gpt/reviews/pilot13-ab-fixes-2026-10-21/patches/PHOTO-19.json. Coverage: /Users/dhiren/Documents/ChatGPT/Adobe_Gpt/reviews/pilot13-ab-fixes-2026-10-21/coverage/PHOTO-19.json (43 rules: 14 brand, 13 type, 12 brief, 4 deliverable; 817 cells, 174 na). Generator: work/PHOTO-19/build.py. Post-patch view: work/PHOTO-19/patched_view.txt. The validator reports 0 errors and 0 warnings. Human checks went from 783 to 629; the 95 auto checks are unchanged.\n\nCross-output checks: 39 were rewritten.\n- 18 ground-tone checks now state the house-ground value (one soft, even, neutral tone with no cast, gradient or vignette).\n- 17 head-scale checks now compare against the single fixed reference card r002; r002's own check was retired.\n- 2 retouch checks (r003 and r010) now compare with the card's own source photo (speaker_portrait_02.jpg and speaker_portrait_08.jpg). The planned trap is kept.\n- The announcement's portrait-ground check now states the range instead of comparing with the speaker cards.\n\nTypography:\n- 231 exact size, leading and tracking checks on the PNGs were retired. Each points to the name-is-largest check, the headline-is-largest check, or one new relative check per card ('the role line is set larger than the affiliation and the session').\n- 76 session-time checks were retired: no times are supplied anywhere, so the IBM Plex Mono time role is marked na.\n- 18 name-hierarchy checks were retired as duplicates of the largest-text check on each card. Old r002 and r021 duplicates (name face, the compound role and affiliation face, Piazzolla weight, card opsz) were retired with covered_by.\n- The 2026-09-30 face checks were reworded into full sentences with the record values and no '(when present)'. On the four host cards, the affiliation 'Cascadia Founders Summit' is now required in Inter Regular, not Piazzolla (the Piazzolla issue from the audit).\n- Piazzolla is now checked only on the announcement headline. The opsz-8 signature move is restated as a visible difference judged against the supplied font: wider letters and looser spacing than the default display cut, which I confirmed by rendering the font at both settings.\n- Announcement affiliation and session checks are now plain 'If ... appears' conditionals.\n\nHoles filled (sampling): rules that were only on r002 and r021 are now on all 18 cards. These are the allowed faces, the 65-character line limit, forbidden effects (now including metallic), the six hexes, opacity, mandatory Slate and Paper, grounds and panels, type colours and accents: 9 rules x 16 cards = 144 checks. The 65-character rule now also guards the Karin Voss 68-character role-line trap on r017.\n\nCompound splits: the CFS mark being Fog Grey on Cascadia Slate is now its own check on every card and on the announcement (19). The announcement's K1_Q5 registration check is split into the no-invention guard (still K1_Q5) and a new K1_Q1 check that a register invitation is present. The headline Piazzolla check is split from the other-lines fact.\n\nLong checks were shortened to 30 words or fewer. Host cards now say 'host name' in the largest-text check. Trap guards (duplicate CSV rows on r003 and r011, the retouched PR frames, regenerated pixels, the venue render, the date and registration K1_Q5 checks) are kept with their facts intact."
+  },
+  "reviews": [
+   {
+    "lens": "FIDELITY AND COVERAGE",
+    "verdict": "I reviewed the PHOTO-19 patch and found 7 problems (1 major, 6 minor); it should not ship until the major one is fixed. The validator passes (0 errors, 0 warnings; human checks go from 783 to 629), and the core content holds. The record values are unchanged, including Northwater Capital and Colonnade Partners. The two K1_Q5 checks are kept. Both retouch-trap checks (r003 and r010) and the venue-render trap check (1400 x 933, which I confirmed) are kept. All 18 cards now carry every palette rule, which fixes the old sampling on r002 and r021. Retiring the exact size, leading and tracking checks is correct for PNG outputs, and no pdf_text_style check applies because every output is a PNG. I looked at about 120 coverage cells, including all 174 na cells. The major problem: the 'same house ground behind every sitter' rule was weakened into a plain range-and-evenness check on all 18 cards and the announcement, while the coverage table still marks it covered (BR04). The fix is a single reference card, the same way the patch handled head scale. The minor problems: the optical-size and 'summit title in Piazzolla' checks were retired onto checks that do not test them; 'additional ticket offer' has no check; the invitation-to-register fact dropped from K1_Q5 to K1_Q1; a CFS mark on the announcement is not checked against the supplied artwork; the 5% accent cap is not tested; and the coverage table omits the type rule 'same settings on all 18 cards'.",
+    "counts": {
+     "critical": 0,
+     "major": 1,
+     "minor": 6
+    }
+   },
+   {
+    "lens": "LANGUAGE, ATOMICITY AND OBSERVABILITY",
+    "verdict": "NEEDS REVISION. Validator: 0 errors, 0 warnings. 783 human checks before, 629 after. Every check names its output as \"Name\" (file.ext), none runs past 32 words, and the 56 px, leading, tracking and \"(when present)\" checks are cleanly retired. Remaining problems under this lens: (1) 17 head-scale checks still compare each card with another output, speaker-card-r002.png, which has no head-scale check of its own, so one bad card can fail 17 others. (2) Four templated rules on every output are compound or hard to parse: the type-colour check, the ground check with \"no background left\", the accent-colour check, and the opacity check with \"no scrim\". (3) A few announcement checks can't be judged in the PNG or use jargon: the 1400 x 933 px enlargement test, \"neutral skin colour\", and the optical-size \"cut\". (4) About 56 brand photography checks carry K1_Q3 instead of K2_Q3. I wrote no notes file.",
+    "counts": {
+     "critical": 0,
+     "major": 3,
+     "minor": 10
+    }
+   }
+  ],
+  "repair": {
+   "task": "PHOTO-19",
+   "validator_errors": 0,
+   "human_after": 750,
+   "fixed": [
+    "Same house ground was dropped (L1 major). Brand source: palette_rules.photography 'the same behind every sitter' and summit_brand_notes.txt 'Everyone should sit on the SAME house ground'. Added a K2_Q3 same-tone check on 17 cards (new:rNNN-ground-same) against one named reference, “Summit speaker card - Ines Moreau” (speaker-card-r005.png). Added a conditional same-tone check on the announcement (new:ann-ground-same). BR04 now cites these checks. The r005 cell is na because r005 is the reference.",
+    "Head scale (L2 major): the reference moved from the editorial outlier r002 (speaker_portrait_01.jpg, 'a different starting point from the rest') to r005, a typical untouched office frame. The reference is now named as “Name” (file). The wording is now 'neither visibly larger nor smaller in frame than'. r002/H018 is back on (modified, no longer retired). r005/H015 is retired as the self-reference. The B11 cell for r005 is na.",
+    "Ground range check split on all 18 cards (L2 major). The existing id keeps the tone between Fog Grey #D9DDDE and Warm Paper #F2EEE7. A new check per card says no part of the original background of <photo> remains (new:rNNN-bg-gone). The announcement gets the same split: H011 for the range, plus new:ann-bg-gone.",
+    "Evenness check (H014 type, all 18 cards, and the new announcement check) now reads 'one flat, even tone, with no gradient, vignette, pattern or texture'. 'Soft', 'neutral' and 'no colour cast' were removed because they conflicted with Warm Paper.",
+    "Card retirements of Piazzolla opsz (r002/H025, r021/H023) and of 'Any line set in Piazzolla' (r002/H024, r021/H022) had a wrong covered_by. Added one conditional summit-title check on each of the 18 cards: 'If a separate summit title appears on X, it is Piazzolla Medium in its small-text design (axis 8: wider, lower contrast), not the default design'. An Inter title, or a title at the default size-30 design, fails it. The retirements now point to it. Card cells T01 and T11 cite it instead of na. The font's fvar was checked: opsz runs 8 to 30 and the default is 30.",
+    "Faces check on every card now says 'apart from the CFS mark and any separate summit title'. On the 4 host cards it also says 'the affiliation included', so the 'Cascadia Founders Summit' affiliation cannot pass as a Piazzolla title (L2 host-card finding).",
+    "D04 'additional ticket offer' had no check: added new:ann-no-offer (K1_Q5), 'invents no ticket offer: no discount, early-bird, group or bundle pass'. Cited in the D04 announcement cell with H005.",
+    "The invitation check split out of the old K1_Q5 check (ann-register-line, now H054) is retagged from K1_Q1 to K1_Q5, so neither half of the old critical check is weakened.",
+    "BR07 and BR07b on the announcement were na. Added two conditional checks: the mark is the supplied cfs_mark_transparent.svg artwork, unchanged (K2_Q2), and it stays fully inside the image (K1_Q1). Both cells now cite them.",
+    "The B07 5% cap had no check. Added on all 19 outputs: 'Signal Copper and Evergreen together cover no more than about 5% of the area outside the photograph'.",
+    "Accent check split on all 19 outputs. The existing id now says Signal Copper appears only in the affiliation line or as thin rules. A new check per output says Evergreen, if used, appears only as thin rules or dividers.",
+    "Type-colour check split on all 19 outputs. The existing id now covers type on Warm Paper: Near Black, except the affiliation line, which may be Signal Copper. A new check per output says type on Cascadia Slate is Warm Paper or Fog Grey.",
+    "Opacity check on all 19 outputs now states only the visible fact: 'No scrim, tint or overlay of any colour, black or white included, is laid over the portrait/any photograph'. The B03 cells also cite the six-hex check, which catches tints.",
+    "Mandatory-colour check on all 19 outputs now says 'outside the photograph' instead of 'designed parts'.",
+    "Retouch trap checks split. On r003 and r010 the existing id now covers the eyes against the card's own source photo, and new:rNNN-retouch-skin covers the skin sheen or finish. On the announcement, H016/H017 keep the eyes and new conditional checks cover skin for portraits 02 and 08. The trap facts are unchanged.",
+    "Announcement H014 now reads 'shows natural skin colour, with no green, warm or cool light cast left from its source photo and no warm filter added'. The word 'neutral' is gone.",
+    "Announcement H021 opsz now names the headline and reads 'matches Piazzolla Medium's small-text design (axis 8: wider, sturdier letters, less thick-thin contrast), not its default display design'. The validator forbids the words 'optical size' on raster outputs, so this wording avoids them.",
+    "Coverage: added T12 (type_system.rules[0], the same settings on 14 speaker and 4 host cards). Each card cites its name, role, affiliation and session face checks plus the role-larger check; the announcement is na. Added T13 ('Do not add a 96 px summit headline to a portrait card'), citing the name-largest check on each card; the announcement is na.",
+    "k_id: the ground range, evenness, background-removed, same-tone, head-scale and direct-flash checks on all cards and on the announcement are now K2_Q3 instead of K1_Q3. They come from palette_rules and summit_brand_notes.txt."
+   ],
+   "rejected": [
+    {
+     "finding": "L1 major fix detail: use speaker-card-r002.png as the fixed house-ground reference and mark r002 BR04 na",
+     "why": "Not adopted as written. L2 points out that r002's source is the planned outlier: the asset plan says speaker_portrait_01.jpg is 'a different starting point from the rest'. So the reference for both ground and head is r005 (speaker_portrait_03.jpg, 'office frame, window daylight ... untouched'). The intent of the L1 fix, a single named same-tone reference, is fully applied."
+    },
+    {
+     "finding": "L2 venue_render H018: 'not enlarged beyond its native 1400 x 933 pixels cannot be measured by eye'; replace with softness/pixelation only",
+     "why": "Partly rejected. Guarding the native size is the planned trap ('only 1400px so it could not carry a programme opener anyway'), and the guide says not to weaken trap checks. The reworded check keeps that fact and names the visible sign: 'is not scaled up beyond its native 1400 x 933 pixels, so it shows no upscaling softness or pixelation'. The stretch fact was split into a new check, new:ann-venue-proportions."
+    },
+    {
+     "finding": "L1 summit-title fix: separate conditional Piazzolla-face check and opsz check (two per card)",
+     "why": "Merged into one conditional check per card, to keep the volume down (18 checks instead of 36). One target appearance, Piazzolla Medium in its axis-8 small-text design, fails both an Inter title and a title at the default design, so a separate face check would be redundant."
+    }
+   ],
+   "unresolved": [
+    "The announcement H021 and the 18 card summit-title checks would be easier to judge with a two-line specimen of Piazzolla Medium at opsz 8 and opsz 30. reference_assets may only list existing task assets, so they point to fonts/Piazzolla[opsz,wght].ttf. A specimen asset would need to be added to the task's assets upstream.",
+    "All 17 same-tone checks and 17 head-scale checks, plus the announcement same-tone check, are anchored on speaker-card-r005.png. If r005 is itself off, every comparison fails while r005 passes. This is inherent to the guide's 'one named reference' allowance. The only alternative is to retire the sameness rule as not atomically checkable.",
+    "The 5% accent cap is a rough visual estimate ('no more than about 5%'). The reviewers accepted this, but annotators may disagree on borderline cases.",
+    "Volume: human checks are 750 after the repair (629 before it, 783 originally). The increase comes from the atomic splits and holes the reviewers asked for. 18 warnings remain for 31-word summit-title checks, below the 40-word limit.",
+    "Files: patch at /Users/dhiren/Documents/ChatGPT/Adobe_Gpt/reviews/pilot13-ab-fixes-2026-10-21/patches/PHOTO-19.json; coverage at .../coverage/PHOTO-19.json; generator at .../work/PHOTO-19/build.py; pre-repair backups at .../work/PHOTO-19/build_v1_before_repair.py, patch_v1_before_repair.json and coverage_v1_before_repair.json; post-patch view at .../work/PHOTO-19/patched_view.txt."
+   ]
+  }
+ },
+ {
+  "task": "PHOTO-20",
+  "author": {
+   "task": "PHOTO-20",
+   "validator_errors": 0,
+   "validator_warnings": 162,
+   "human_before": 766,
+   "human_after": 664,
+   "rules": 41,
+   "retired": 152,
+   "modified": 470,
+   "added_human": 50,
+   "auto_added": 48,
+   "holes_filled": 15,
+   "unresolved": [
+    "One-pager name size (34 pt) stays a human check (speaker-onepager/H037). “Astrid Vellacourt” also starts the biography and the booking contact, and pdf_text_style matches the first occurrence of the text, so an auto check could read the wrong line.",
+    "PDF tracking (+30 name, -5 title, +15 event/date, 0 body) and leading (13 pt, and 38 pt only if the name wraps) stay as human checks on the one-pager and the 8 cards. pdf_text_style cannot check them and the guide does not say to retire them on PDFs. A reviewer needs PDF inspection tools to answer these.",
+    "talk-card-r007 format auto check uses the short text “Talk”. It matches the first “Talk” substring on the page, so a stray label could give a false result.",
+    "162 warnings remain. 150 are checks of 31 to 39 words, mostly because the required output reference alone is 10 to 15 words (for example “Confirmed-talk speaker announcement - Continuum Product Days - What survives contact with a factory”). The check text itself is already about 15 to 23 words. The other 12 are pixel values a person can measure: the monogram is at least 69 px wide, and the workshop snap is not enlarged past its native 1300 x 975 px.",
+    "The relayed user request was “Give me the link”. This authoring task produces local files only, so there is no artifact link to return."
+   ],
+   "notes": "I wrote both files and the validator now reports 0 errors and 162 warnings for PHOTO-20. I read every check after the patch: the full one-pager, one announcement and one banner of each kind, talk cards r002 and r007, the combined file, a comparison of every distinct old and new wording, the retired list and the coverage table. 0 errors, 162 warnings. Human checks went from 766 to 664; auto checks went from 138 to 186.\n\nFiles:\n- Patch: /Users/dhiren/Documents/ChatGPT/Adobe_Gpt/reviews/pilot13-ab-fixes-2026-10-21/patches/PHOTO-20.json\n- Coverage: /Users/dhiren/Documents/ChatGPT/Adobe_Gpt/reviews/pilot13-ab-fixes-2026-10-21/coverage/PHOTO-20.json\n- Rebuild scripts: /Users/dhiren/Documents/ChatGPT/Adobe_Gpt/reviews/pilot13-ab-fixes-2026-10-21/work/PHOTO-20/build.py and cov.py\n\n**Holes filled (15 human checks):**\n- Monogram at least 69 px wide on the 3 announcements and 3 banners.\n- Talk title set smaller than her name on the 8 cards (the PDF title size is free but must sit below the 34 pt name).\n- A no-other-talk's-text check on talk-card-r002, the only card that lacked one.\n\n**Compound checks split (35 new checks):**\n- Monogram at least 18 mm wide, split out of \"appears once\" (one-pager and 8 cards).\n- No scrim over photographs, split out of the solid-colour check (15 outputs).\n- Panel colours, split out of the Warm Neutral ground check (8 cards).\n- On the one-pager: dark-ground type colour, \"no email, phone or web address\" in the booking contact (K1_Q5 kept), and the seed-round biography fact.\n\n**Retired (152):**\n- 72 exact size, leading and tracking checks on the 6 PNGs. Each points to a relative check: name larger than date, title is the largest text, or the matching family check.\n- 36 duplicates: the 2026-09-30 typography family checks against the older family checks, plus repeated date and title checks on the announcements and banners.\n- 24 running-copy setting checks on the cards. A card carries no running copy, so a conditional family check stays.\n- 3 event/date setting checks on the one-pager, which has no event or date line.\n- 17 exact-size checks that new pdf_text_style auto checks now cover.\n\n**PDF conversions (48 pdf_text_style auto checks):**\n- Each card: name in Instrument Serif Regular 34 pt; talk title in Inter Medium (no size, since the trim decides it); event, date and format in Inter Regular 9.5 pt. All text comes from the record.\n- One-pager: the 3 talk titles in Inter Medium; one biography line, the booking contact and the 3 talk subjects in Inter Regular 9.5 pt.\n\n**Other changes:**\n- Removed every \"(when present)\". Roles that are genuinely optional (a separate title line on an announcement, running text on a banner or card, an event line on the one-pager) are now written as \"If ... appears on ...\".\n- The monogram colour check on the digital PDFs is tightened to solid Ochre, per the rule \"solid Ochre in digital exports\".\n- Shortened wording throughout; that pass is most of the 470 modifications.\n- The combined file's two cross-page checks now compare against fixed references: page 1 for layout, and vellacourt_session_01.jpg for colour balance.\n\n**Guards kept:** every trap guard is kept: the blue cast on vellacourt_session_03.jpg, the hair rim on the frames shot after the light moved (K1_Q5 on r006 and r009), grey studio paper, the workshop snap, the template's Georgia Bold AV and Helvetica Neue, the blank portrait on r007 (placeholder check plus \"not generated, composited or stock\"), and leftover template sample text. The date-drop trap stays covered by the existing pdf_text_contains auto checks.\n\n**Coverage:** 41 rules (15 brand, 10 type, 9 brief, 7 deliverable) across all 16 outputs, with 180 na cells. The combined file's brand and type rules are marked na because auto checks A004 to A011 confirm each of its pages renders identical to the matching single card.\n\n**Not resolved / judgement calls:** see the unresolved list. In short: the one-pager's 34 pt name check stays human, PDF tracking and leading stay human, the r007 \"Talk\" auto check has a small false-match risk, and the remaining warnings are mostly long output names."
+  },
+  "reviews": [
+   {
+    "lens": "FIDELITY AND COVERAGE",
+    "verdict": "Mostly sound, with one major fix needed. Every check on a planned trap, record value and K1_Q5 guard survives with its fact intact. Every split is real, and the added checks are grounded in the brief, brand identity or supplied files. The pdf_text_style checks use the correct family, weight and size: name Instrument Serif Regular 34 pt; PDF talk titles Inter Medium with no size; event, date and format 9.5 pt; bio, subjects and booking contact Inter Regular 9.5 pt. The record values match vellacourt_talks.csv, including r004 \\\"21/03/26\\\" and r005 \\\"21 March 2026\\\". Leaving the one-pager name as a human 34 pt check is right, because the first-match search would otherwise hit \\\"Astrid Vellacourt\\\" in the bio or contact line. I opened more than 60 cells, including every na cell. The combined-PDF na cells hold: pdf_page_matches_output renders both pages at 150 dpi, so a different page size or any pixel difference fails the check. The rule list covers every palette rule, the four type roles, the type rules and all seven commission bullets. Major: the B11 na reasons for r006 and r009 misdescribe session_08 and session_09, which are cooler frames shot after the key light moved, and the warm-balance fact is checked only on combined H002 when it belongs on those single cards. Minor: announcements have no relative talk-title size check and a covered_by that does not cover the retired size check; B04 is cited for the announcements but H035 omits the event and date colour clause; the R07 na reason on the talk cards is wrong, and r007 has no workshop-snap guard; the r004 and r005 cross-talk guards name the wrong trap; and A014's apostrophe will stop it running. Fix these and re-run the validator.",
+    "counts": {
+     "critical": 0,
+     "major": 1,
+     "minor": 5
+    }
+   },
+   {
+    "lens": "LANGUAGE, ATOMICITY AND OBSERVABILITY",
+    "verdict": "Needs revision. The patch validates with 0 errors and every output is named in the “Name” (file.ext) form, but human checks that cannot be judged by eye are still in place. There are 45 exact tracking and leading checks on the PDFs, six \"at least 69 px\" monogram checks on the PNGs, and seven native-resolution checks for the workshop photo (a planned trap, so they need rewording, not removal). About 40 human family checks repeat the new pdf_text_style auto checks. The colour checks on the banners and talk cards (banner H033, talk card H031) and the template-layout check on the talk cards (r002 H006, other cards H005) are compound. The combined-PDF check H001 compares pages with page 1. Fix the major items. The minor items are wording and near-duplicate cleanups that shrink the set without losing any trap fact.",
+    "counts": {
+     "critical": 0,
+     "major": 6,
+     "minor": 10
+    }
+   }
+  ],
+  "repair": {
+   "task": "PHOTO-20",
+   "validator_errors": 0,
+   "human_after": 630,
+   "fixed": [
+    "F1 colour balance: measured mean R minus B is 11.0 for session_01, 4.4 for session_08 and 5.7 for session_09, and the original combined H002 evidence says 08 and 09 were 'shot after the key light moved'. Added K2_Q4 warm-balance checks on talk-card-r006 (H056) and talk-card-r009, with refs session_01 plus 08 or 09, and cited them in B11. On r007, H019 is now one fact: 'If ... carries a portrait, it keeps the warm colour balance of vellacourt_session_01.jpg, with no blue or grey cast', which covers the session_03 trap and page 6 of the old H002. Retired combined H002, covered by the r006, r009 and r007 checks plus A008, A009 and A011. Set combined B11 to na. Rewrote the other B11 na reasons as '...first-half warm frame, not the cool vellacourt_session_03.jpg; natural colour is checked by H0xx', citing each output's real id.",
+    "F2: added a K5_Q2 check on each announcement: 'The talk title ... is set larger than the date' (H057). Retired H045 now points to H044 plus the new check, and H053 to H052 plus the name-larger-than-date check (H011, or H008 on r003). The new check is cited in T02.",
+    "F3: added a conditional event/date colour check (Ink #262524 or Studio Slate #4C5560) on all 3 announcements and cited it in B04.",
+    "F4: on talk-card-r007, added 'If vellacourt_workshop_snap.jpg appears ..., it shows no blur, softness or blocky pixels from being enlarged, viewed at 100% zoom' and cited it in R07. The other 7 cards' R07 na reason now reads: 'The card layout from vellacourt_speakercard_template.pdf has one picture frame, filled by the assigned portrait (H0xx).'",
+    "F5: K1_Q5 stray-text guards on r003 and r006 to r009 restore the template cue: 'No other talk's text, such as the template sample “Designing the thing before the deck” or “Northlight Design Forum”, appears on ...'. On r004 the examples are 'The room after the round' plus the template sample, and on r005 'On staying small on purpose' plus the template sample. reference_assets are the template and talks.csv.",
+    "F6: the onepager style-subject-2 pdf_text_style text is now 'craft as it grows', so a curly apostrophe no longer breaks the match. The check text was updated to match.",
+    "L1: retired 40 exact tracking and leading checks on the 8 talk cards (name leading and tracking, title tracking, event leading and tracking) and 6 on the onepager (H037 34 pt, H038, H039, H041, H044, H045). Card checks are covered by the new style autos and title-below-name. Onepager H037 to H039 are covered by H005 and H007, H041 by the title autos, and H044 and H045 by the bio, contact and subject autos.",
+    "L2: removed the six '69 px' adds on the PNGs. T08 PNG cells are now na: 'A 69 px minimum width cannot be judged by eye on a PNG; exact raster sizes are not checked.'",
+    "L3: the snap checks on the 6 PNGs and onepager H021 now describe the visible result (no blur, softness or blocky pixels from being enlarged). The trap guard is kept.",
+    "L5: split the name/title colour check from the event/date colour check on the 8 cards (H031) and 3 banners (H033), with hexes. The new event/date checks are cited in B04.",
+    "L6: the card template compound (H006 on r002, H005 elsewhere) is now K1_Q2 'The talk title, event and date ... sit together in one text block below the portrait'. Added a K1_Q1 'carries exactly one portrait' check on 7 cards and cited it in R03. r007 gets the text-block-only wording, since it has no assigned portrait.",
+    "L7: on all 15 outputs the heading check now reads 'Apart from her name and the AV monogram, no text on ... is set in a serif.'",
+    "L8: announcement H044 is now unconditional ('The talk title “X” ... is set in Inter Medium'). H031 is now 'Apart from the talk title, the body line and sign-off ... are set in Inter Regular.'",
+    "L9: retired combined H001, covered by A004 to A011. T10 now cites A004 to A011 only.",
+    "L10: onepager H020 is now the single session_03 trap fact. For r007 see F1.",
+    "L11: onepager H012 is now 'grouped in one talk-offer block'. Added K1_Q1 'No image, panel or text covers any part of the talk offer' and cited it in D01.",
+    "L12: the monogram Ochre check is 'solid Ochre #B98A4B.' on the 6 PNGs, and 'solid Ochre #B98A4B, not grey and not embossed.' on the 9 PDFs.",
+    "L13: 'solid colour, with no transparency or gradient' on all 15 outputs.",
+    "L14: the K2_Q2 near-duplicates on the PNGs and 7 cards now read 'The face in the portrait on ... is the original photograph, not regenerated or repainted.'",
+    "L15: card H010 now names 'the template's Georgia Bold “AV” or any retyped AV'. Retired H012 (H013 on r006), covered by H010.",
+    "L16: the card panels check now gives hexes. Onepager H004 now points to vellacourt_bio_copy.txt, and onepager H011 is shortened (see rejected for the part kept)."
+   ],
+   "rejected": [
+    {
+     "finding": "L4: retire the speaker-name presence checks (r002 H005, r003-r009 H003), covered by the A012 pdf_text_style check",
+     "why": "pdf_text_style does not fail when the text is missing. verify_outputs.py raises VerifierUnavailable('The exact text was not found as live text; the matching content check covers its presence'), so A012 cannot prove the name is present and the human presence check must stay."
+    },
+    {
+     "finding": "L4: retire the human family checks covered by the style autos (card H020, H040, H027; onepager H040; onepager H028 reduced to 'whole biography')",
+     "why": "Section B of GUIDE_AB says to 'Keep ONE check per text role per output for family and weight' and to retire only 'the human exact-size checks' once an auto check is added. The export setting allows outlined text ('searchable text where practical'), and the verifier then reports 'outlined lettering needs the matching human check'. Every role still has exactly one human family check, so there is no duplication within human checks. The retired H046 pointers to H027 are left as they are."
+    },
+    {
+     "finding": "L16 (partial): reduce onepager H011 to a generic 'followed by its own subject line' and rely on A013-A015 for the subject strings",
+     "why": "A013 to A015 are style checks that go unavailable when the text is absent, so they do not test presence. D01 requires the subjects 'verbatim from vellacourt_bio_copy.txt'. H011 was shortened to '...followed by its own one-line subject, word for word as in vellacourt_bio_copy.txt' so the verbatim requirement stays."
+    },
+    {
+     "finding": "L6 k_id suggestion K2_Q3 for the split template-layout check",
+     "why": "The check was split as asked, but K1_Q2 (Specification accuracy) was used instead. A text block layout taken from the supplied template is not a brand-system rule."
+    },
+    {
+     "finding": "L10 for talk-card-r007 H019: use the session_03-only conditional",
+     "why": "On r007 that wording would lose the after-key-light frames (session_06 to 09, R-B 4.4 to 6.2) that the retired combined H002 guarded for page 6. One warm-balance fact against session_01 covers both traps without adding a second, overlapping check."
+    }
+   ],
+   "unresolved": [
+    "155 length warnings remain (31 to 38 words, none over 40). Most of the length is the long deliverable names in the “Name” (file) reference, which the guide requires.",
+    "The tracking and leading rules (name +30 units, title -5, event/date +15, 38/13 pt leading) and the signature move's '34 pt' on the onepager no longer have any human or auto check, because nobody can judge them by eye and pdf_text_style does not measure them. Onepager 34 pt has no auto check either: a text-match on 'Astrid Vellacourt' could hit the bio or contact line first.",
+    "build.py and cov.py in work/PHOTO-20 would regenerate the pre-repair patch. The authoritative regeneration is work/PHOTO-20/repair.py, which runs from patch_before_repair.json and coverage_before_repair.json."
+   ]
+  }
+ },
+ {
+  "task": "PHOTO-10",
+  "author": {
+   "task": "PHOTO-10",
+   "validator_errors": 0,
+   "validator_warnings": 31,
+   "human_before": 649,
+   "human_after": 505,
+   "rules": 39,
+   "retired": 187,
+   "modified": 239,
+   "added_human": 43,
+   "auto_added": 0,
+   "holes_filled": 13,
+   "unresolved": [
+    "No link to give: the relayed user request was 'Give me the link', but this task only writes local patch and coverage files. Nothing was published and no URL exists. Files: /Users/dhiren/Documents/ChatGPT/Adobe_Gpt/reviews/pilot13-ab-fixes-2026-10-21/patches/PHOTO-10.json and /Users/dhiren/Documents/ChatGPT/Adobe_Gpt/reviews/pilot13-ab-fixes-2026-10-21/coverage/PHOTO-10.json",
+    "Judgement call: retired the 6 carousel checks 'the headline sits above the photograph' (origin review_feedback_2026_09_25) with no covered_by. Their evidence cites a reading-order rule that is not in the current brand identity, and the brief leaves the six-slide layout to the designer. Restore them if that 09-25 feedback came from the client.",
+    "Judgement call: retired p01/H003 'the largest text names Northgrove'. It rested on an obsolete signature move where the wordmark was set as the headline. The current identity places the logo as artwork, so a 96 px headline may be larger. Covered by p01/H001 and the mark-lettering check.",
+    "Kept as written but worth a client look: p06/H002 says the tall post line is the largest text on page 6, and PDP-02/H002 limits the tee's colourway to Moss or Fern.",
+    "The 31 warnings are all checks of 31 to 33 words. The long deliverable names plus single-rule lists (six hexes, the two fabric lines) make them hard to shorten without losing a fact."
+   ],
+   "notes": "PHOTO-10 patch and coverage written; validator shows 0 errors and 31 warnings, all length warnings at 31 to 33 words. Human checks go from 649 to 505 (187 retired, 239 modified, 43 added, no auto checks added). The coverage table has 39 rules (16 brand, 9 type, 9 brief, 5 deliverable bullets) with every cell filled for all 12 outputs. 35 cells are marked na, each with a reason.\n\nOutputs: /Users/dhiren/Documents/ChatGPT/Adobe_Gpt/reviews/pilot13-ab-fixes-2026-10-21/patches/PHOTO-10.json and /Users/dhiren/Documents/ChatGPT/Adobe_Gpt/reviews/pilot13-ab-fixes-2026-10-21/coverage/PHOTO-10.json. The scripts that rebuild them are build.py and cov.py in work/PHOTO-10/; view.txt there holds the post-patch view. Nothing was published, so there is no URL for the 'give me the link' request.\n\nMark checks: I opened the rebuilt mark file to verify them, and three of the five check types on each output were wrong against it.\n- The leaf check said the supplied files have no leaf and must be answered No. It now just says any mark includes the olive leaf beside NORTHGROVE (12 outputs).\n- The leaf-position check described a leaf about one leaf width to the left of the wordmark. The rebuilt artwork has a gap of about a fifth of a leaf width, so the check could not pass. It now compares the leaf's size and spacing with northgrove_mark_transparent.svg (12).\n- The halo check referred to a traced strip that the rebuilt files no longer have. It now names only the photograph edge of northgrove_mark.png (12).\n- The '<file>: logo keeps lettering' typography check is rewritten in full wording: NORTHGROVE not retyped, stretched or closed up, compared with northgrove_mark_transparent.svg (12).\n- Mark-colour checks are unchanged in fact; their evidence now cites the current palette instead of an obsolete rule.\n\nTypography: on every PNG, exact size, leading and tracking checks for the style name, body, fine print and carousel headline are retired. Each is covered by a relative check (style name is the largest text on a module; headline about five times the body; style name smaller than the headline and larger than body; fine print smaller than body) or by the face check for that role. Each output now has one family-and-weight check per role. The duplicate typography face checks are retired; where they were platform priority, the priority passes to the check that covers them. The two price-style checks per output are retired and covered by the existing no-price check (K1_Q5), since no supplied file gives a price. All \"(when present)\" wording is gone, as is the doubled \"other than prices other than prices\".\n\nCompound checks split into separate checks:\n- Ground colour and type colour (12 new checks).\n- Solid panels and no overlay on photographs (12 new).\n- PDP cut-out edges: paper rim and bitten seams/cuffs/hem (6 new). For the Loopback Crew, intact seam and cuffs is kept separate from no pale rim, so the pale-on-pale trap is still guarded.\n\nHoles filled: a 'no stretched or condensed type' check on all 12 outputs, and a check that page 1 carries the supplied mark.\n\nRewordings:\n- The carousel 'not blank' placeholder (pages 2 to 5) now checks that the page shows at least one of the six supplied styles.\n- The carousel comparison between garments now checks every garment against neutral daylight with no after-weather cast.\n- The headline-to-body ratio check drops its pixel values.\n- 12 checks now name their output by the deliverable name instead of the older 'image' / 'Northgrove /' names.\n- Long lists of six filenames are shortened to 'the six supplied style photographs'.\n\nAll checks that guard planned traps keep their facts: knockout rim and cuffs, after-weather light, filled counters in the mark, colourway carrier styles, csv fabric versus copy fabric, RA crest, and supporters' crew on navy."
+  },
+  "reviews": [
+   {
+    "lens": "FIDELITY AND COVERAGE",
+    "verdict": "The patch is mostly faithful and validates with 0 errors (649 human checks before, 505 after; 39 rules, 468 cells, 35 na). I opened about 70 cells, including all 35 na cells. The na reasons are sound: the RA-crest rule (R09) on PDP 01-05, the commission bullets D01/D02 on carousel pages, and D03/D04/D05 on PDPs. These planned traps are kept: the Oat fabric conflict between northgrove_colourways.csv and northgrove_copy.txt (K1_Q5), the colourways approved only for the two carrier styles, the pale-crew cut-out bite and rim, open counters in the mark, and the RA crest. The mark-file updates match the rebuilt olive-leaf SVGs. No pdf_text_style checks were added, which is correct for an all-PNG task. Two real weakenings need fixing before apply: the carousel within-page light-consistency check for the shoot-halves trap was turned into a loose absolute, and the body-type family check was narrowed so body text other than cloth notes and colourway names lost its font check. The remaining items are small coverage gaps (Olive 5% cap, fine print on navy, rule colour) and wrong or over-reaching cells and checks on the middle carousel slides.",
+    "counts": {
+     "critical": 0,
+     "major": 2,
+     "minor": 5
+    }
+   },
+   {
+    "lens": "LANGUAGE, ATOMICITY AND OBSERVABILITY",
+    "verdict": "The patch validates with 0 errors. The rewritten text names each output as “Name” (file.ext) and includes no exact px or leading checks. Language and atomicity problems remain in templated families that repeat on every page. Most serious is the carousel's 'headline about five times the body' check (6 checks), which cannot be judged on a PNG. The crew/tee colourway check on the carousel holds two facts (6 checks). The generated/extended/enlarged check mixes two failures and uses jargon (12 checks). The navy clause on the five non-supporters PDP ground checks is confusing. Near-duplicates remain on the same output: PDP colourway spelling vs H002, carousel H015 vs H021, and carousel H024 vs H022. Minor fixes: remove the 'after-weather' jargon, shorten the over-30-word checks by moving rationale to evidence, and make the k_id for logo-fidelity checks consistent. No problems found with check facts or file naming.",
+    "counts": {
+     "critical": 0,
+     "major": 6,
+     "minor": 9
+    }
+   }
+  ],
+  "repair": {
+   "task": "PHOTO-10",
+   "validator_errors": 0,
+   "human_after": 562,
+   "fixed": [
+    "F1/L7 (major) car_cast: restored the within-page comparison on all 6 carousel pages (p01 H025, p02-p05 H022, p06 H023), using plain style names: 'On “…”, no Heavyweight Tee, Hoodie or Supporters' Crew shows a warmer or greyer cast than a Loopback Crew, Raglan or Henley on the same page.' Added a separate absolute check per page (new *-daylight, K2_Q4): 'Every garment … shows neutral daylight colour, with no warm or grey cast.' R08 and B08 now cite both checks.",
+    "L7 PDP 02/05/06 daylight checks (H015/H013/H012): removed the 'after-weather' jargon. They now read '… shows neutral daylight colour, with the warmer, greyer light of <source>.jpg corrected.'",
+    "F2 (major) + L14: the body-role check on all 12 outputs reads again 'Any body text, cloth note or colourway name … is set in Libre Franklin Regular, not Source Serif 4 or a heavier weight.' T03 now reads 'Body: Libre Franklin Regular (Book) for body copy, cloth notes and colourway names'. Fine-print size check reworded to '… smaller than the body text, cloth notes and colourway names on it.'",
+    "F3: added the Olive 5% cap check on all 12 outputs (new *-olive-cap). B03 text now includes the cap and cites the olive and olive-cap checks.",
+    "F4 + L6: type colour split. The typecol check now covers light grounds only and includes fine print. New per-output check that all type on Club Navy is Off White (pdp-06 and the 6 carousel pages; new coverage rule B17, na on PDP 01-05 with a reason). New rule (line) colour check on all 12 outputs (rule B18). PDP 01-05 ground checks reworded to 'Off White #F5F2EC, not Club Navy, Oat or Warm Grey Paper', with the confusing navy exception removed. pdp-06 and the carousel pages keep the navy clause.",
+    "F5 coverage: D04 on p02-p05 no longer cites only leaf presence. It now cites the supplied-mark integrity checks (leaf plus lettering) because the 'supplied mark' part applies to any mark placed there. D03 on p02-p05 now cites the auto file_exists A001, since the file name fixes the slide position, instead of H001. D03 on p01 now cites the new mark-present check.",
+    "F6: p02-p05 H001 now reads '… shows a supplied Northgrove style or approved copy from northgrove_copy.txt.'",
+    "F7/L1: carousel ratio check ('about five times') replaced on p01-p05 with '… Where … carries a headline, it is the largest text on the page other than the Northgrove mark.' (K5_Q2). Retired p06/H034, covered by p06 H002 and H041. Retirements that pointed at retired checks were re-pointed (for example p06 headline-size retirements now point to H002, and p01/H003 to the new mark-present check). T06 text updated to match.",
+    "L2: car colourway-label check split on all 6 pages: crew = Oat (existing id), plus a new check that the tee = Moss or Fern (K1_Q1).",
+    "L3: generated/extended split from upscaling on all 12 outputs. The existing ids keep 'generated or extended beyond …'. New K2_Q2 check: 'At 100% zoom, … not blurred or softened by upscaling.' R06 cites both.",
+    "L4: car_photo_src no longer repeats the generation clause.",
+    "L5 + L11: retired pdp-01/H007 and pdp-02/H004 (spelling duplicates). H002 now reads 'If a colourway is named on …, it reads exactly “Oat”' (or “Moss” or “Fern”), with the rationale moved to evidence_reference. pdp-01 H011 and pdp-02 H009 fabric checks and all 6 keep-colour checks shortened to the plain fact.",
+    "L8: the general carousel edge check is narrowed to garments cut out on Off White, Oat or Warm Grey Paper. The Club Navy edge check stays as the trap guard.",
+    "L9 (partly): voice check shortened on all 12 outputs to '… uses no luxury, bargain or superlative words, such as luxury, exclusive, cheap or sale.' I checked northgrove_copy.txt and it contains none of these words.",
+    "L10: carousel fabric lookup split into two K1_Q5 checks per page (crew/raglan/hoodie loopback; tee/henley jersey). R05 cites both.",
+    "L12: Supporters' Crew no-fabric check reworded to 'No fabric line is given for the Supporters' Crew on …'.",
+    "L13: p01 new mark check now reads '… shows the Northgrove mark, matching northgrove_mark_transparent.svg or northgrove_mark_reversed.svg.' Retired p01/H001 ('names Northgrove') with covered_by new:p01-mark-present, because the commission reads 'Slide 1 introduces Northgrove with the supplied mark' and does not ask for typeset text.",
+    "L15: the leaf-position and lettering-not-retyped checks moved to K2_Q4 on all 12 outputs, to match the other logo-integrity checks.",
+    "Coverage bug found while fixing: R03 had cited a non-existent family 'car_story' on the carousel pages. It now cites the carousel colourway-story checks."
+   ],
+   "rejected": [
+    {
+     "finding": "L9 part: change the voice check's k_id from K2_Q3 to K1_Q3",
+     "why": "GUIDE_AB.md says 'brand rules are K2_Q3'. The rule comes from brand_identity.voice / price_positioning ('nothing may read as cheaper or as more luxury than the parcel actually is'), so it is a brand rule. I shortened the wording but kept K2_Q3."
+    },
+    {
+     "finding": "F5 part: mark D03/D04 cells on p02-p05 as na",
+     "why": "validate_patch.py makes every commission bullet need checks on every output that carries it ('deliverable requirement for capsule-carousel-p02 has no checks'), so an na cell fails validation. D03 now cites A001, the reviewer's alternative. D04 cites the supplied-mark integrity checks instead of na."
+    }
+   ],
+   "unresolved": [
+    "30 validator warnings remain for checks of 31-34 words. Most come from the long deliverable names (for example the palette-hex list check and the colourway-story check with its quoted example). All are under the 40-word limit.",
+    "The rebuild runs in /Users/dhiren/Documents/ChatGPT/Adobe_Gpt/reviews/pilot13-ab-fixes-2026-10-21/work/PHOTO-10/: build.py now execs the new repair.py before writing the patch, and cov.py holds the coverage changes. Outputs: patches/PHOTO-10.json (191 retire / 290 modify / 104 add) and coverage/PHOTO-10.json (41 rules, 492 cells, 40 na). Human checks went from 649 to 562."
+   ]
+  }
+ },
+ {
+  "task": "LAYOUT-15",
+  "author": {
+   "task": "LAYOUT-15",
+   "validator_errors": 0,
+   "validator_warnings": 0,
+   "human_before": 585,
+   "human_after": 439,
+   "rules": 32,
+   "retired": 255,
+   "modified": 165,
+   "added_human": 109,
+   "auto_added": 0,
+   "holes_filled": 31,
+   "unresolved": [
+    "Signature move says 'keep both rules in the same position across the producer run'. No position value is stated, and the brief says the old press PDF is not the rule-position standard, so this can't be written as an atomic check. Left uncovered; only the existence and placement of both rules is checked on each card.",
+    "Heritage Green + Mist Grey <= 5% of the designed area has no check of its own. Coverage rule B05 relies on the 'Green only as the two rules' and 'Mist only as thin divider/keyline' checks, which imply it.",
+    "r011 (Sean Donnelly): the asset plan says he sent two frames ('use whichever', producer_headshot_14.jpg). That permission is not in any supplied file, so H012 still requires producer_headshot_10.jpg per the roster. Someone should confirm.",
+    "The relayed user request was 'Give me the link'. This author task produces local patch and coverage files only. No artifact or URL was published."
+   ],
+   "notes": "Wrote /Users/dhiren/Documents/ChatGPT/Adobe_Gpt/reviews/pilot13-ab-fixes-2026-10-21/patches/LAYOUT-15.json and /Users/dhiren/Documents/ChatGPT/Adobe_Gpt/reviews/pilot13-ab-fixes-2026-10-21/coverage/LAYOUT-15.json. The generator is /Users/dhiren/Documents/ChatGPT/Adobe_Gpt/reviews/pilot13-ab-fixes-2026-10-21/work/LAYOUT-15/build.py and the post-patch view is work/LAYOUT-15/show.txt. The validator reports 0 errors and 0 warnings. I read every resulting check.\n\nTypography: these are PDF/X-4 cards that allow outlined lettering, so no pdf_text_style auto checks were added. I kept one human family/weight check per role on every card: producer name in Lexend SemiBold, licence/office in Source Serif 4 Regular, Disclosure Text in Source Serif 4 Regular, every figure in IBM Plex Sans Regular. All 2026-09-30 '(when present)' checks were retired, about 19 per card: exact pt, leading and tracking checks plus duplicates. The relative checks stay ('name is the largest text', 'Disclosure Text is the smallest text'), and a visible 'no added letterspacing' check replaces tracking -5.\n\nSplits: compound checks were split atomically.\n- Colour distribution became three checks: ground, Ink Navy, Slate.\n- Accent became two: Heritage Green, Mist Grey.\n- Opacity became two: palette solid, no scrim over photo.\n- The signature rules became two: rule under the name, rule above the disclosure.\n- Sentence case and letterspacing became two.\n- Figures and premium styling became two.\n- The 41-word Source Serif check was cut down to the licence/office family check; the Disclosure family moved to its own modified check.\n\nHoles filled: r007 and r012 had no 2026-09 brand or type block, so they got 15 new checks each. Their '(when present)' family checks were reworded into full checks. r015 got the honest-stock-image check that every other card has.\n\nCombined file: H001 (thirteen single files delivered) was retired, covered by A003 and the page-match checks A004 to A016. It guards no trap: the lapsed-producer trap is held by H002. H002 was split into 'no page for Maureen Alcott' and a new K1_Q5 check that producer_headshot_03.jpg appears on no page. Brand, type and brief cells on the combined file are marked na, citing A004 to A016.\n\nTraps kept: all planned-trap checks remain, some reworded only to shorten them with the same fact.\n- r005 and r010: long-disclosure trim checks.\n- r003, r005, r008, r011, r013: low-contrast shoulder-bite checks.\n- r006 and r014: undersized-frame checks.\n- r009: PINEBROOK sign check.\n- r015: H008, H012 (now the range producer_headshot_01.jpg to producer_headshot_14.jpg) and H013.\n- Combined: the Maureen Alcott checks.\n\nThe K1_Q5 premium-basis checks were kept. Coverage deliverable bullet 3 ('combined PDF contains the thirteen cards in roster order') is covered on each single card by its A001 file_exists check, because the validator needs a check on every card. All checks over 40 words were fixed; the longest is now 30 words or fewer."
+  },
+  "reviews": [
+   {
+    "lens": "FIDELITY AND COVERAGE",
+    "verdict": "The patch is not ready. Two major problems need fixing first: the r015 missing-headshot trap was weakened when H008 was split, and no check tests the commission's \\\"leave the portrait area empty\\\"; and retiring the 6.5 pt checks leaves the long disclosures on r005 and r010 free to be shrunk to fit. The rest of the patch is faithful. Every card now carries the full set of per-card brand and type checks, including the filled holes on r007 and r012. All K1_Q5 checks and the other planned-trap checks are kept with the same facts. No pdf_text_style auto check was added, which is correct for these production cards. No check is over 40 words or contains a dash. The combined/H001 retirement is acceptable. The minor findings are coverage-table errors (D03 cells, the 5% claim in B05, na scope on the combined file) and a few remaining holes: rule position across the run, no new logo, figure size, combined-page scaling, and 300 ppi on the undersized frames.",
+    "counts": {
+     "critical": 0,
+     "major": 2,
+     "minor": 5
+    }
+   },
+   {
+    "lens": "LANGUAGE, ATOMICITY AND OBSERVABILITY",
+    "verdict": "Mostly sound. I read all 439 human checks after the patch. None is over 30 words, none has a dash, none says \\\"(when present)\\\", every check names its output as “Name” (file.pdf), and no check compares one output with another. The k_ids are consistent, including K1_Q5 on the overflow traps r005 and r010. The planned traps are kept: r015 missing headshot (H008, H012), the lapsed producer on the combined file (H002, H003), signage on r009, low-contrast cutouts, undersized frames. One real problem: the colour-split rewrites dropped the original \\\"photographs do not count\\\" exclusion. The Heritage Green and Mist Grey checks now fail cards whose headshots contain green or a pale grey wall. Put \\\"Outside the headshot\\\" back on all 13 cards. The rest is wording: the ungrammatical \\\"the Office/Photo File ... row N gives X\\\" clause, \\\"No line of the license line\\\", \\\"slightly tight\\\", \\\"its own colour\\\", \\\"bitten away\\\", \\\"every palette colour\\\". There are also three remaining two-fact checks: the Ink Navy name + disclosure check, the card-ground check that also says \\\"only ground or panel colour\\\", and the r015 H008/H013 duplicate. The exact \\\"1 pt\\\" rule weight is judged by a different standard from the type sizes the patch retired. I wrote no notes file.",
+    "counts": {
+     "critical": 0,
+     "major": 1,
+     "minor": 13
+    }
+   }
+  ],
+  "repair": {
+   "task": "LAYOUT-15",
+   "validator_errors": 0,
+   "human_after": 492,
+   "fixed": [
+    "r015 missing-headshot trap: added new:r015-portrait-empty (K1_Q5) 'The portrait area ... is left empty, with no photograph, illustration or stand-in image.' and cited it in D02, F04 and F05 for r015. Reworded r015-stock-honest to 'Any photograph outside the portrait area ...'.",
+    "r015 H008/H013 near-duplicates: H008 now reads 'shows no photograph, generated face or illustration presented as Priya Nandakumar; nandakumar_headshot.jpg was never supplied.' H013 is retired with covered_by H008 and portrait-empty. H012 (no reused headshot) and the stock-honest check are kept.",
+    "Long-disclosure shrink trap: added new:r005-disc-size and new:r010-disc-size (K2_Q3), each 'set no smaller than the Disclosure Text on Raymond Hollis (producer-card-r002.pdf)'. They are added to the covered_by of r005/H036 and r010/H035 and to the T05 cells.",
+    "Signature move 'same position across the run': added rule T10 and a rule-position check on each of r003 and r005 to r015, with r002 named as the fixed reference. r002's cell is na and says it is the reference.",
+    "Logo rule: added B12 and a no-logo check (K2_Q3) on all 13 cards.",
+    "T06 numerals: every figure check on every card now ends 'is IBM Plex Sans Regular, the same size as the words around it.'",
+    "combined/H001 retirement: covered_by now also lists all 13 per-card A001 ids plus H002 and comb-no-headshot03, and the why is reworded as the reviewer suggested.",
+    "B05: took out the 5% clause. It is now its own rule B13, which says plainly that it is not tested separately and is bounded by the green check and the Mist Grey check.",
+    "Combined-file brief rules F01 to F07 and F09 now cite page-match checks A004 to A016 instead of na. Added a check that the combined pages are unscaled at 148 x 210 mm (new:comb-trim, K1_Q2) and a matching rule T11. Removed the unproven 'unscaled' wording from the na text for the combined file.",
+    "300 ppi export setting: added a ppi check (K2_Q2) to all 12 cards that have a headshot, not only r006 and r014, plus rule E01. On r015 the cell is na because no portrait was supplied.",
+    "Put back the 'photographs do not count' exclusion that was lost in the split. The Heritage Green check now starts 'Outside the headshot', and so does the Mist Grey check. On r015 both start 'Outside any photograph'. Applied on all 13 cards.",
+    "Office and headshot checks rewritten on all cards: 'The office line on ... reads “X”, the Office field in producer_roster_northern.csv row N.' and 'The headshot on ... is <file>, the Photo File in producer_roster_northern.csv row N.'",
+    "Line-length wording on all cards: 'Each line of the license text and the office text on ... has 65 characters or fewer.'",
+    "Ground check on all cards: 'Document Paper #F4F2EC is the only colour used for the card ground and for any panel on ...'",
+    "Opacity check on all cards now names the elements: 'All type, panels, rules, dividers and the card ground on ... are solid at full opacity, with no tint, transparency, gradient or shadow.'",
+    "Split the Ink Navy check on all 13 cards: 'The producer name ... is Ink Navy #1E2A3A' plus a new 'The Disclosure Text ... is Ink Navy #1E2A3A'.",
+    "Name spacing on all cards: 'is not letterspaced: the gaps between letters are no wider than normal Lexend SemiBold spacing.'",
+    "Premium style on all cards: 'If a premium appears ..., it is neither italic nor bold, and it is Ink Navy #1E2A3A or Slate #4A5560.'",
+    "Disclosure word-for-word check on all cards now names the field: 'matches the Disclosure Text field of producer_roster_northern.csv row N word for word, with nothing added, dropped or reworded.'",
+    "Cutout-trap checks on r003, r005, r008, r011 and r013 reworded: 'the <colour> jacket's shoulder and collar from <file> are complete, with no part cut away where they meet the mid-grey wall.' Enlargement-trap checks on r006 and r014 reworded: 'shows no hair, skin or fabric detail that is not in the small 720 x 960 px / 675 x 900 px <file>.' The pixel sizes were checked against the source files with sips.",
+    "Sales-language check on all cards now uses the compliance_note.txt wording 'implied guarantee of a return or of approval'.",
+    "Shortened the 41 checks that the validator warned were over 30 words. The validator now reports 0 errors and 0 warnings."
+   ],
+   "rejected": [
+    {
+     "finding": "FIDELITY minor (a): set D03 to na on all 13 single cards ('This bullet is about the combined PDF's page set and order, not a single card').",
+     "why": "I tried this and validate_patch.py refused it with 13 errors, for example 'ERROR COVERAGE: deliverable requirement for producer-card-r002 has no checks: \"The combined PDF contains the thirteen assigned cards in roster order.\"' The validator requires every commission bullet to have checks on each output. So each single card's A001 file_exists stays, as that card's part of the bullet. The combined cell keeps A003 plus the A004 to A016 page-match checks."
+    },
+    {
+     "finding": "LANGUAGE minor: replace '1 pt' in the two rule checks with 'as thin as the hairlines on countercard_2026_print.pdf'.",
+     "why": "The brief says the old press file 'is not the typeface, type-size, colour or rule-position standard for this run', so using it as the standard for the rules is risky. The stroke weight of a vector rule in a PDF can still be read in Acrobat or Illustrator. Exact type sizes were retired only because the export settings allow 'embedded fonts or outlined lettering', which hides font sizes but does not affect a rule's stroke. The '1 pt' brand value is kept."
+    }
+   ],
+   "unresolved": [
+    "Retiring combined/H001 removes the task's only K1_Q4 check, so K1_Q4 no longer appears in LAYOUT-15. The owner needs to confirm this is acceptable.",
+    "Atomic checks cannot block a 14th single card file for Maureen Alcott. Her exclusion is guarded only on the combined run (H002 and comb-no-headshot03).",
+    "Human checks went from 439 to 492. The new ones are the 300 ppi checks (12), the logo checks (13), the rule-position checks (12), the Ink Navy split (13), the two disclosure-size checks, portrait-empty and comb-trim, minus retired H013.",
+    "Files: /Users/dhiren/Documents/ChatGPT/Adobe_Gpt/reviews/pilot13-ab-fixes-2026-10-21/patches/LAYOUT-15.json and /Users/dhiren/Documents/ChatGPT/Adobe_Gpt/reviews/pilot13-ab-fixes-2026-10-21/coverage/LAYOUT-15.json. The generator is work/LAYOUT-15/build.py; the previous version is saved as build_v1.py, patch_v1.json and coverage_v1.json in the same folder."
+   ]
+  }
+ },
+ {
+  "task": "PHOTO-06",
+  "author": {
+   "task": "PHOTO-06",
+   "validator_errors": 0,
+   "validator_warnings": 0,
+   "human_before": 462,
+   "human_after": 493,
+   "rules": 38,
+   "retired": 145,
+   "modified": 100,
+   "added_human": 176,
+   "auto_added": 0,
+   "holes_filled": 91,
+   "unresolved": [
+    "The asset-plan trap where scans 01 to 03 sit about 1.5 to 2 degrees off level inside a square album mount has no straightening check. The brief never asks for levelling, so I did not invent one. The existing whole-print and deckled-edge checks still guard against cropping.",
+    "share-hollis-scan-07/H012 (K1_Q5) is reworded to state the year 1971 and Brattleboro plainly. The note that the catalogue row sits under the old filename IMG_2214.jpg moved to evidence_reference. The fact being checked is unchanged.",
+    "Volume is up slightly (462 to 493). Atomic splits and the newly covered commission rules (damage repaired, caption not clipped, grain on share images, no accession code) add checks. Retiring 108 exact-size, leading and tracking checks takes checks away."
+   ],
+   "notes": "Wrote /Users/dhiren/Documents/ChatGPT/Adobe_Gpt/reviews/pilot13-ab-fixes-2026-10-21/patches/PHOTO-06.json and coverage/PHOTO-06.json. The coverage table has 38 rules (13 brand, 8 type, 12 brief, 5 deliverable) and 684 cells, 274 of them na with specific reasons. Scripts are in work/PHOTO-06/ (classify.py, gen.py, cov.py), with the patched view in show.txt and scan thumbnails in thumbs/. The validator reports 0 errors and 0 warnings, after shortening deckled-edge, scar, Paper White margin, plate numeral and 1955 caption wording to 30 words or fewer.\n\nKnown issues, confirmed and fixed:\n- Restoration masters: the no-wash, frame/ornament, metallic and sepia/Linen/Paper White wash rules existed on only 01, 07 and 09. They are now on all 9 (24 fills).\n- Share images 02, 04, 06 and 08 were missing more than the gold/metallic rule. They also lacked opacity, no-wash, ornament, sepia wash, palette-only hexes, name colour, accent roles, never-italic, 65-character lines, plate numeral and name rule. 04 and 08 also lacked name-larger, caption-smaller and paper texture, and 04, 06 and 08 lacked the Paper White margin. All are filled (57 fills on shares, plus 10 more for split facts).\n- Mono for scans 01 to 05 and colour for 06 to 09 are complementary rules (B06/B07) with na cells, not holes. Deckled edge (02, 04, 06), scar (07), pencil retouching (02) and fade casts (06, 07) are scan-specific, checked against the scans by eye.\n\nTypography (all outputs are raster):\n- Retired 108 exact size, leading and tracking checks, plus 9 checks for the 48 pt plate numeral and 9 for the 0.25 pt rule.\n- Family checks now use full wording without \"(when present)\". Body text and the plate numeral are phrased as \"If ... appears\".\n- Retired 5 compound three-font checks and 5 duplicate small-caps checks.\n- Replaced 9 accession-code font checks with \"No accession code appears\". No codes are supplied in the catalogue, the family notes or the mount card.\n- Relative check kept: the name is larger than the place and date line.\n\nAtomic splits (share images):\n- Opacity is split from the wash laid over the picture.\n- The colour-role check is split into the name in Archive Black and the other caption text in Ink Charcoal.\n- The plate numeral is split into typeface and placement.\n- The name rule is split into hairline colour and picture width.\n- The name hierarchy is split into larger and placed above.\n\nNew checks for commission rules that had none:\n- Masters: no caption, text, plate numeral or rule added; visible damage repaired.\n- Share images: shows the repaired print; film grain kept; every caption line shown whole. The last one guards the mount card's fixed caption frame trap and the 1600 px fit requirement.\n\nTrap and K1_Q5 checks are kept with the same facts: the 1936 wedding date, 1955 Putney, the scar, and 1971 for the renamed IMG_2214 file. platform_priority moves to the checks that cover retired ones."
+  },
+  "reviews": [
+   {
+    "lens": "FIDELITY AND COVERAGE",
+    "verdict": "The patch is mostly sound: it validates with 0 errors and 0 warnings (462 human checks before, 493 after), and it fills every hole the audit named. All 9 restoration masters now have the no-wash, no-frame or ornament, no-metallic, no-sepia and no-added-text checks, and share images 02, 04, 06 and 08 have the gold/metallic check plus the full set of palette and type checks. I compared every check family across the outputs: each rule appears on every output it applies to, apart from the per-scan facts (the scar, the pencil retouching, deckled edges, the fades and the caption facts). I looked at the source scans to confirm the deckled-edge \"na\" cells: only 02, 04 and 06 have deckled edges. All 5 K1_Q5 checks are kept with the same facts (1936 not 1938, 1955 not 1956, 1971 Brattleboro, the scar on both 07 outputs). All 145 retired checks are type checks on share images. The exact-size, leading and tracking retirements point to relative or family checks that really cover them. No pdf_text_style auto checks were needed, because there are no PDF outputs. Every coverage cell I opened (all \"na\" cells and more than 40 check cells) points to a check that tests that rule on that output. One real fidelity loss: the \"no other face or weight appears\" clause went with the retired compound type checks, and the supplied mount card uses Georgia, so this hole matters. The other findings are smaller: the caption could sit on a kept album page, the table claims the 5% accent limit is checked when it is not, the Ink Charcoal wording could fail a correct Museum Grey provenance line, the signature rule under the name is still optional, and the off-level trap has no check.",
+    "counts": {
+     "critical": 0,
+     "major": 1,
+     "minor": 5
+    }
+   },
+   {
+    "lens": "LANGUAGE, ATOMICITY AND OBSERVABILITY",
+    "verdict": "The patch passes the validator with 0 errors and 0 warnings (462 human checks before, 493 after), and the requested gaps are filled: no-overlay, no-ornament, no-metallic and no-sepia checks on all 9 masters, and no-gold/metallic on shares 02, 04, 06 and 08. Every human check names its output as “Name” (file.ext), and no \"(when present)\" is left. The wording still has repeated problems in every share-image family. (1) Hex-exact colour checks cannot be judged in a 1600 px JPEG: the 1/3 px hairline, telling #191613 from #33302B on Light serif text, and the \"uses only five hexes\" palette list. (2) Several checks are compound: year plus place, including inside the K1_Q5 trap checks on S03, S05 and S07; the three-part plate-numeral check; Museum Grey plus Linen; name plus place italic; and fade lifted plus no opposite cast, where the second half is the trap. (3) The new damage-repair checks on 02 and 07 do not exclude the pencil retouching or the scar that must stay. (4) Wash and overlay checks overlap on every file. (5) The share colour-mode checks use K1_Q2 where the masters use K1_Q3. Each finding gives a concrete rewrite; none of them requires dropping a trap or critical fact.",
+    "counts": {
+     "critical": 0,
+     "major": 7,
+     "minor": 9
+    }
+   }
+  ],
+  "repair": {
+   "task": "PHOTO-06",
+   "validator_errors": 0,
+   "human_after": 570,
+   "fixed": [
+    "FID-1 (major): Added a no-substitute-typeface check to all 9 share images (sNN-only-fonts): 'All caption text on ... is set in Cormorant Garamond, Source Serif 4 or Source Sans 3; no other typeface appears.' Evidence cites type_system.font_access. I confirmed mountcard_2019_print.pdf embeds only Georgia, Georgia-Italic and a third Georgia face. Added the new key to covered_by on the 5 compound font retirements (S01/H004, S03/H015, S05/H015, S07/H018, S09/H015). Added coverage rule T09, with NA on the masters.",
+    "FID-2: Added 'The caption on ... sits on the added Paper White margin, not on a kept album page or scanner bed.' (sNN-on-pw) to all 9 share images. It is cited in B09 (rule text now includes 'Type sits only on Paper White') and in D04.",
+    "FID-3: Added a 5% cap check to all 9 share images (sNN-accent-area): 'Museum Grey and Linen together cover no more than 5% of the added margin and caption area on ...'. It is cited in B13.",
+    "FID-4 + LANG-3: Rewrote the place and date colour check to a relative one: 'dark charcoal (Ink Charcoal #33302B), not grey and not a colour'. Split the body role into a new check: 'If body text, such as a names line, appears ... it is dark charcoal (Ink Charcoal #33302B); a provenance line may be grey.' The name colour check now reads 'the darkest text in the caption, a near-black (Archive Black #191613)'. B12 cites both charcoal checks.",
+    "FID-5 + LANG-2 + LANG-12: The signature_type_move and type-scale step 02 ('below the name rule') state the rule without any condition, so I made it required. The rule check now reads 'A single fine dark hairline rule sits beneath the sitter's name on ..., not a heavy bar, a coloured line or a double line.' The Archive Black hex and 0.25 pt moved to evidence. The width check now reads 'starts and ends in line with the picture's left and right edges' with no 'If' and no 'exactly'. T07 rule text updated to say the rule is required.",
+    "LANG-1: Split year and place on all 9 caption checks. The existing id keeps the year with its k_id: K1_Q5 on S03 (1936, not the catalogue's 1938), S05 (1955, not cousin Dale's 1956) and S07 (1971, evidence keeps the IMG_2214.jpg record source), and K1_Q1 on the others. Added a new K1_Q1 place check on each (Newfane, Putney, Brattleboro). F11 and D04 cite both.",
+    "LANG-4: The hex-list palette check now reads 'Caption type, rules and keylines on ... use only the neutral archive tones of the palette; no colour or gold appears.' The five hexes are in evidence_reference.",
+    "LANG-5: Split the plate numeral check into three: left margin (existing id), larger than the sitter's name (new), and top lines up with the top of the capitals in the name (new). The typeface check is unchanged. 'Stands alone' and the ambiguous 'its cap line' are gone. The exact 48 pt retirements are now covered_by the larger-than check. T06 cites all four.",
+    "LANG-6: Split the cast trap checks on R06/H007, S06/H007, R07/H009 and S07/H008. Each existing id keeps the trap fact ('white border and skin show no magenta or red cast' on 06, 'no green or cyan cast' on 07). New fade checks were added: on 06, the yellow-orange fade is removed; on 07, the washed-out fade is lifted. The 07 fade check tests the washed-out look, so it does not repeat the cast check. B08 cites both.",
+    "LANG-7: The damage-repair checks on R02, S02, R07 and S07 now carry the exceptions '; the pencil retouching on Ada's cheek is not damage' and '; the scar on Ada's left hand is not damage'. All damage checks were shortened to 'The scratches, creases and other damage in ... are repaired on / gone from the picture on ...'.",
+    "LANG-8: The sepia check on scans 01 to 05 (masters and shares) is narrowed to 'The picture on ... is not toned sepia unless hollis_scan_0N.jpg already is.' On colour scans 06 to 09, the existing sepia checks (R07/H016, R09/H013, S07/H017, S09/H014) are retired, covered_by the stays-in-colour check plus the no-wash check, and no new sepia check is added there. The share overlay check now reads 'No colour overlay, scrim or wash is laid over the picture...'. B05 cells updated.",
+    "LANG-9: The share opacity check now reads 'The margin, caption type, rules and keylines on ... are flat solid colours, with no see-through areas, tints or gradients.'",
+    "LANG-10: Split the accent check into Museum Grey only for the provenance line (existing id where present) and Linen only for a hairline keyline around the photograph (new).",
+    "LANG-11: Split the italic check into the name line (existing id) and the place and date line (new). T05 cites both.",
+    "LANG-13: The Paper White margin check now reads 'The added margin on ... is Paper White #F5F1E9, not pure white. Ignore any kept album page or scanner bed.'",
+    "LANG-14: Set k_id to K1_Q3 on all 9 share colour-mode checks, wording unchanged.",
+    "LANG-15: Moved the justification out of the check text. The accession check now reads 'No accession code appears on ...', and the 'none supplied' note stays in evidence. The scar K1_Q5 checks (R07/H005, S07/H002) now end at 'is still present on ...', and k_id K1_Q5 is kept.",
+    "LANG-16: On all 9 masters, the person-crop check now reads 'No part of any person visible in hollis_scan_0N.jpg is cropped away or hidden on ...'.",
+    "FID-6 (partial): Added coverage rule F13. It records the off-level trap on scans 01, 02, 03 and 06 against the existing whole-print checks (H001), with NA reasons for level prints and for masters. No new check was added; see rejected.",
+    "Shortened the checks that ran over 30 words. The validator now reports 0 errors and 0 warnings: 462 human checks before, 570 after, auto checks unchanged at 81, and 40 coverage rules. Generators are work/PHOTO-06/gen2.py and cov2.py. Pre-repair copies are saved as work/PHOTO-06/patch_before_repair.json and coverage_before_repair.json."
+   ],
+   "rejected": [
+    {
+     "finding": "FID-6: add a 'print sits level, edges parallel to the image edges' check to share images 01, 02, 03 and 06",
+     "why": "No source requires the print to be level. The brief says only 'keep the whole print edge to edge, including its own border. Trim only the album page or scanner bed around it.' The existing deckled check says 'levelling the print is allowed', which permits levelling but does not require it. The trap's real consequence is that auto-level locks to the mount, so a rectangular trim can clip the tilted print's corners. The existing whole-print check H001 already guards that: 'shows the whole print ... edge to edge, its own border included; no part of the print is cropped away'. A level requirement would be invented. Instead I added coverage rule F13, which maps the trap to H001 on those four share images."
+    }
+   ],
+   "unresolved": [
+    "I made the name rule required on all 9 share images, based on signature_type_move and type-scale step 02. The palette role 'wherever a caption carries them' and the rule-less mount card leave room to read it as optional. If the team rules it optional, reword sNN rule and rule-width back to 'If a rule appears ...' and update the T07 rule text.",
+    "The 5% accent-area check (FID-3) needs an area estimate by eye. It was added for full coverage. If the team finds it unanswerable, retire it and drop the 5% clause from B13.",
+    "The 'darkest text in the caption' wording for Archive Black assumes no other caption text is darker. That holds under the palette, but it is a relative stand-in for an exact hex the JPG cannot show."
+   ]
+  }
+ },
+ {
+  "task": "LAYOUT-12",
+  "author": {
+   "task": "LAYOUT-12",
+   "validator_errors": 0,
+   "validator_warnings": 19,
+   "human_before": 428,
+   "human_after": 532,
+   "rules": 40,
+   "retired": 51,
+   "modified": 168,
+   "added_human": 155,
+   "auto_added": 12,
+   "holes_filled": 33,
+   "unresolved": [
+    "Act-name pdf_text_style auto checks use the billing credit 'SABLE QUARTET' (caps). If the PDF stores mixed-case text and caps it with styling, the check reports not assessable rather than fail. The human Sora ExtraBold check still covers the role.",
+    "No pdf_text_style auto check was added for the deck: the brief and records fix no exact deck copy whose size the type scale states.",
+    "Act-name size_pt was left out on the posters. The type scale says act names are 48 pt on posters, but the billing file and H005 require headline acts to be larger than the remaining acts, so one size cannot apply to all of them.",
+    "The pair checks on the nine posts depend on promoter-deck.pdf naming the photographic pair. The new deck check H043 makes that a requirement, following the audit's reading that 'explain that choice' covers the pair.",
+    "The 19 remaining warnings are all list or quote checks of 31 to 40 words: billing order, dates, weekdays, supports, licence and accessibility quotes, and the r005/r006/r007 trap checks. Shortening them further would drop listed values."
+   ],
+   "notes": "The user's relayed request was \"Give me the link\". This run has no link to give. It wrote only local files and published nothing:\n- /Users/dhiren/Documents/ChatGPT/Adobe_Gpt/reviews/pilot13-ab-fixes-2026-10-21/patches/LAYOUT-12.json\n- /Users/dhiren/Documents/ChatGPT/Adobe_Gpt/reviews/pilot13-ab-fixes-2026-10-21/coverage/LAYOUT-12.json\n- Generator: /Users/dhiren/Documents/ChatGPT/Adobe_Gpt/reviews/pilot13-ab-fixes-2026-10-21/work/LAYOUT-12/build_patch.py\n- Post-patch view: work/LAYOUT-12/show.txt\n\n**Known issues, checked and fixed**\n- **Missing palette and act checks on r003, r008, r009.** Each post was missing 8 checks that the other six posts carry (palette list, mandatory colours, opacity, accents, two-colour treatment, act colour, date letterspacing, grounds). That makes 24 adds. A further 9 adds cover the date-line position, door letterspacing and type colour checks that the split rules below create on these three posts. Total: 33 holes filled.\n- **Six \"same two as on the other eight\" checks** (r002 H018; r004, r005, r006, r007 and r010 H015). Each is now a plain treatment check: two palette colours with visible grain. A new check on every post (9) says the pair is \"the pair that promoter-deck.pdf names for the release posts\". A new deck check, H043, requires the deck to name that pair.\n- **Deck H007** compared the deck with three poster files at once. It is now three checks, each naming one poster file.\n\n**Other changes**\n- **Typography:** R13 family and weight checks are merged into one plain check per role, and the 39 weight checks are retired. The door-time check is conditional on posters and the deck. R13-koa-line is plain on the posters and r009, conditional on the deck, and retired on the 8 posts without Koa. R13-logo-meridian is retired as a duplicate of the knitted-lettering check (4). R13-logo-sable is reworded.\n- **New type checks on all 13 outputs:**\n  - Date line in Sora ExtraBold capitals.\n  - Conditional series-title check (Sora ExtraBold).\n- **New type checks on some outputs:**\n  - Licence and access lines in Archivo Narrow Regular (posters).\n  - 65-character limit (posts).\n- **Compound checks split:** act colour versus date line in Sodium, date versus door letterspacing, and grounds versus type colour. Act name was dropped from the type-colour list so it is not checked twice.\n- **Wordmarks:** the posters require them, so the \"Where the wordmark appears\" checks are now plain statements on the posters, r002 and r003, and \"If\" checks on the deck. New checks cover wordmark-with-typeset-name and Bone White ink on the posters, r002 and r003, plus a conditional ink check on the deck.\n- **Commission bullets that had no check:**\n  - Each poster is visibly type-led, image-led or graphic-led (3).\n  - The deck names the direction used for the posts.\n  - The deck gives a reason for that choice.\n  - The draw chart has a truthful scale.\n  - Type-only billing on r005 to r010 (6).\n- **Brief truth constraint:** a new \"no caption identifies a pictured performer as a billed act\" check on all 13 outputs.\n- **Largest-text checks on posts** now read \"Apart from any series title\", because the type_system sets a 96 px series title against 76 px act names on posts.\n- **Auto checks:** 12 pdf_text_style checks on the three posters (SABLE QUARTET; Odette Lang at 14 pt; licence and access text at 9 pt).\n- **Coverage:** 40 rules (15 brand, 6 brief, 12 type, 7 deliverable) across all 13 outputs, with specific reasons on every NA cell.\n- **Trap checks** (clipped whites, motion smear, the nightferry.jpg mislabel, Koa's Friday, residency dates, &nbsp;) are all kept or reworded with the same fact."
+  },
+  "reviews": [
+   {
+    "lens": "FIDELITY AND COVERAGE",
+    "verdict": "The patch is mostly faithful. All 16 K1_Q5 checks are kept, none retired, and their facts are unchanged. Every planned trap in asset_plan.json still has a guard: blown frames 02 and 05, motion smear on 06 (posters), the mislabelled Night Ferry wordmark, the identical residency rows r005/r006, the 8:00&nbsp;PM door time on r007, the seasoncard_img identifiers and the knit and cloth wordmarks. The three issues named in the audit are fixed. r003, r008 and r009 now have the full palette, distribution, opacity, accent, treatment, act-colour, spacing and pair checks. The six \"same two as on the other eight\" checks are rewritten against promoter-deck.pdf, with a separate pair check added to each post. All retirements are real merges or KOA not-applicable cases with correct covered_by. All 121 na cells have specific, valid reasons except the F06 cells. I opened about 120 check cells and they cite the right ids on the right outputs. On the auto checks: the poster act name A008 rightly has no size, the support line A009 at 14 pt matches the A2 supporting-billing note, but the licence and access lines A010/A011 will not match fine print set in capitals (step 04 is all caps), so they error on a compliant poster. Remaining coverage holes: Pitch as the main ground (all 13 outputs), NIGHT FERRY as two words on r004, the 'with' prefix on posters, capitals for act names and door lines, the family of the set time and price on posts, and some type and brand-asset rules missing from the rule list. Fixes are given per finding. Needs a revision pass before applying; no blocking fidelity loss.",
+    "counts": {
+     "critical": 0,
+     "major": 4,
+     "minor": 5
+    }
+   },
+   {
+    "lens": "LANGUAGE, ATOMICITY AND OBSERVABILITY",
+    "verdict": "The patch passes the validator (0 errors). Every one of the 532 human checks names its output as “Name” (file.ext). No banned wording is left ('the other eight', 'the same', 'consistent', 'appropriate', 'when present'). The six 'same two as on the other eight posts' checks are now anchored to promoter-deck.pdf, which the brief allows, and r003, r008 and r009 now have the full palette and act-name colour set. The real problems left are on this lens: (1) four templated compound checks that need splitting: the date line (position, single line and Sodium, with 'single line' unsourced), the accent colours (role restriction plus the 5% area limit), the photo treatment (two colours plus grain), and r007 H006 (door time plus no &nbsp;, a trap); (2) the unclear phrase 'Koa's aside' in four weekday checks; (3) near-duplicates on the same output: 'larger than the support line' next to 'largest text' on nine posts, poster H054/H053 against the A010/A011 auto checks, and Sodium in B02 against B05; (4) the wrong k_id K2_Q3 on R13-logo-sable, which should be K2_Q4 to match the Meridian checks; (5) smaller wording fixes: a rationale clause in the poster spelling check, vague 'event information text', 'term figure' in deck H006, 'cloth' in the Sable letter checks, the uneven graphic-led dominance standard, and the run-on opacity list. None of these breaks a trap guard; each fix keeps the same fact. Recommend fixing the major findings before applying the patch.",
+    "counts": {
+     "critical": 0,
+     "major": 4,
+     "minor": 11
+    }
+   }
+  ],
+  "repair": {
+   "task": "LAYOUT-12 repair: I applied both reviewers' findings to /Users/dhiren/Documents/ChatGPT/Adobe_Gpt/reviews/pilot13-ab-fixes-2026-10-21/patches/LAYOUT-12.json and coverage/LAYOUT-12.json. I regenerated both from work/LAYOUT-12/build_patch.py; the previous versions are backed up in the same folder as *_v1_backup.*. The validator reports 0 errors and 18 warnings. Human checks went from 428 to 601 (532 before this repair). Auto checks went from 73 to 82. Coverage has 45 rules and 585 cells.",
+   "validator_errors": 0,
+   "human_after": 601,
+   "fixed": [
+    "Case-sensitive pdf_text_style (verify_outputs.py uses ''.join(normal).find(wanted)), while step 04 is 'all caps'. On all 3 posters A010 now matches the case-invariant 'PVD-2021-0846' (Archivo Narrow Regular, 9 pt). The access-line auto check A011 is dropped; the human fine-print check covers that line.",
+    "Pitch main ground: added brand rule B16 and one K2_Q3 check per output (13). The deck uses 'every page of'.",
+    "Night Ferry credit: added the K1_Q3 'two words, NIGHT FERRY' check to r004. Added a K1_Q1 act-name spelling check to the other 8 posts. Added rule F08 'credited exactly as written', which cites poster spelling and Night Ferry checks, deck H008 and the post checks.",
+    "Rule F05 text fixed to \"prefixed 'with'\". Added a per-poster K1_Q1 'every support act is prefixed with' check. The post cells now cite H005 plus the largest-text check.",
+    "Rule F06 split into F06 'Keep all nine dates' and F07 'Koa 16 Oct is Friday'. F06 cites the date, year and weekday checks on the posts, the date and weekday checks on the posters, and deck H006, H009 and H010. F07 is na only on the non-Koa posts.",
+    "Caps: act-name family checks now read 'Sora ExtraBold capitals' and door-line family checks 'Archivo Narrow SemiBold capitals'. The door checks stay conditional on the posters and the deck. Rules T02 and T05 updated.",
+    "Added a K2_Q3 check per post that the set time and advance price are set in Archivo Narrow Regular, cited under T04.",
+    "Added rule T13 (no 180 pt series-title size on the billing list) with a per-poster K5_Q2 check that every act name is smaller than the series title. Added rule B17 (merchandise photos are references only) with a K2_Q1 check on all 13 outputs. T12 now carries the full signature move. The series-title stack is now required on posters and posts, which drops the 'If ... appears' wording; it stays conditional on the deck. The largest-text checks now say 'Apart from the series title'.",
+    "Shared pair: r002 checks against promoter-deck.pdf only. r003 to r010 now say 'match the pair promoter-deck.pdf names for the posts or, if it names none, the pair on release-post-r002.png'. Deck H043 kept.",
+    "Date-line check split into 'is Sodium #E4863B' and 'sits directly above its act name' on all 13 outputs. Dropped 'on a single line', which has no source. B05 and T12 cite both checks.",
+    "Accent check split on all 13 outputs: the existing check keeps 'appear only as hairlines, dividers (chart marks on the deck) or photo treatment'. A new check holds the '5% of the non-photographic area' limit. B07 cites both.",
+    "Weekday checks on the 3 posters and the deck rewritten as 'Any weekday shown on ... matches 2026: ...'. The confusing 'Koa's aside' clause is gone; Koa keeps its own check.",
+    "r007 H006 split: H006 (K1_Q5 trap) now reads 'The text “&nbsp;” does not appear anywhere on ...'. A new K1_Q1 check holds the door time 8:00 PM, row 7.",
+    "Retired the 9 post checks 'act name is set larger than the support line' (r002 H014, r003 H013, r004 to r010 H012), covered_by each post's largest-text check.",
+    "Sable Quartet wordmark R13-logo-sable checks (3 posters and r002) set to K2_Q4, to match the Meridian Brass lettering checks.",
+    "Removed the rationale clause from the poster spelling checks (type-led H004, image-led H004, graphic-led H003). They stay K1_Q5.",
+    "Graphic-led led check now reads 'solid panels, shapes or rules are the dominant visual element, more prominent than any type block or photograph'.",
+    "Poster H002 now names the lines: 'no letter of an act name, support act, date, licence line or accessibility line ... is cut off'.",
+    "Deck H006 rewritten in positive form: 'Every draw, capacity, stage, price, date or deal figure ... appears in umbra_room_specs.txt, umbra_billing_autumn.txt, umbra_nights_autumn.csv or the brand identity'.",
+    "Photo treatment split on all 13 outputs: 'reproduced in two palette colours, not in full colour' plus a new 'shows visible grain' check. B11 and D06 cite both.",
+    "Sable Quartet letters check reworded to 'clearly visible ..., none missing or broken up', with no mention of cloth. This is the same trap fact (asset_plan: knockout keeps only 2 or 3 letters).",
+    "Mandatory-colour check: instead of narrowing it, retired it on the posters and the posts that had it (12 checks). covered_by is the act-name 'Bone White on solid Pitch' check plus the new Sodium date-line check, which together imply all three colours appear. r003, r008 and r009 no longer get the added copy. Deck H032 kept, because deck act names are conditional. B02 cites act-colour, date-colour and deck H032.",
+    "Opacity wording reads 'solid at 100% opacity, with no tint, transparency, gradient, glow or shadow, and no scrim or overlay on a/the photograph' on all 13 outputs.",
+    "Known issues from the audit verified as already fixed: r003, r008 and r009 have the palette and act-name colour checks; there are no 'same two as on the other eight' comparisons left."
+   ],
+   "rejected": [
+    {
+     "finding": "LANGUAGE lens: retire poster H054/H053/H053 (licence and accessibility lines in Archivo Narrow Regular) as duplicates of A010/A011.",
+     "why": "I dropped A011 because of the FIDELITY finding: pdf_text_style is case-sensitive and the scale gives step 04 as '+30 units, all caps'. A010 now matches only 'PVD-2021-0846'. That leaves the access line, and most of the licence line, with no auto check, so the human check (now H060 type-led, H059 image-led, H060 graphic-led) is the only family check for them. Act names follow the same pattern: human R13-act-name-text-family alongside auto A008. Coverage T06 cites both the human check and A010."
+    },
+    {
+     "finding": "FIDELITY lens: add separate per-output 'act name is in capitals' and 'door line is in capitals' checks.",
+     "why": "Partly applied. I put 'capitals' into the existing family checks ('set in Sora ExtraBold capitals', 'Archivo Narrow SemiBold capitals') instead of adding 26 more checks. This matches the existing date-line check 'set in Sora ExtraBold capitals', which describes one type setting from the scale row ('ExtraBold', '-10 units, all caps')."
+    },
+    {
+     "finding": "LANGUAGE lens: narrow 'Pitch, Bone White and Sodium all appear' to 'Pitch and Bone White both appear'.",
+     "why": "Replaced with a stronger fix. On posters and posts the act name is required, so 'Bone White on a solid Pitch ground' already proves Pitch and Bone White appear, and the Sodium date-line check proves Sodium. The narrowed check would still be a duplicate, so I retired it (covered_by those two checks). Deck H032 kept, because deck act names are conditional ('Any act name typeset in')."
+    }
+   ],
+   "unresolved": [
+    "Team decision: the series-title stack is now required on the 3 posters and 9 posts. Grounds: the signature move 'A compact series-title stack in Sora ExtraBold' and the step 01 note 'A2 series title only ... Use 96 px on a release post'. If the team treats it as optional, change the series checks back to 'If a series title ... appears', and drop poster H057/H056/H056 (series-size) with them.",
+    "Team decision: B17 reads 'Merchandise photos are historical references only' as 'never placed in a deliverable', which includes a deck history slide.",
+    "Shared-pair checks on r003 to r010 now use promoter-deck.pdf with a fallback to release-post-r002.png. That makes two named references. The brief's 'Explain that choice in the deck' may refer only to the chosen direction, so deck H043 (deck names the pair) could fail on a valid deck.",
+    "18 validator warnings remain: checks of 31 to 37 words that hold one rule as a list. These are the billing order, the remaining-night dates and supports, the 2026 weekday list on the posters and deck, the poster opacity check, and the r005/r006 residency K1_Q5 date trap. All are under the 40-word limit.",
+    "Volume grew by 69 human checks (532 to 601), almost all of them per-output fills for brand and brief rules that had no checks before.",
+    "The user's request 'Give me the link' is not answered here. This repair produced local JSON files (patches/LAYOUT-12.json, coverage/LAYOUT-12.json), not a published page, so there is no link."
+   ]
+  }
+ },
+ {
+  "task": "PHOTO-08",
+  "author": {
+   "task": "PHOTO-08",
+   "validator_errors": 0,
+   "validator_warnings": 0,
+   "human_before": 409,
+   "human_after": 378,
+   "rules": 37,
+   "retired": 110,
+   "modified": 87,
+   "added_human": 79,
+   "auto_added": 0,
+   "holes_filled": 15,
+   "unresolved": [
+    "inventory-campaign/H005 ('Meridian Motors sits above every vehicle caption') is an existing positional hierarchy check that the brief only implies through 'make the dealership name clear'. I kept it unchanged; reviewers may want to retire it.",
+    "The 'Teal + Steel Grey together no more than 5% of the designed area' quota has no check because nobody can judge a percentage by eye. 'Only as rules, keylines, seal detail or one small muted line' (H037-family, H083) covers the intent.",
+    "Exact 22 px / +40 tracking on the roundel label was dropped. Only the Source Serif 4 Bold family/weight check remains, because the label is optional and its size relation is not fixed against a required element."
+   ],
+   "notes": "I wrote two files: /Users/dhiren/Documents/ChatGPT/Adobe_Gpt/reviews/pilot13-ab-fixes-2026-10-21/patches/PHOTO-08.json and /Users/dhiren/Documents/ChatGPT/Adobe_Gpt/reviews/pilot13-ab-fixes-2026-10-21/coverage/PHOTO-08.json. The builder script is work/PHOTO-08/build.py and the post-patch view is work/PHOTO-08/patched.txt. The repo was not touched. These are local files only; nothing was published, so there is no link to give.\n\nValidator: 0 errors, 0 warnings. Every live check is 30 words or fewer, has no dashes and names its output as \"Name\" (file.png). Human checks went from 409 to 378 (110 retired, 87 modified, 79 added). The 35 auto checks are unchanged, and no pdf_text_style checks were added because all 7 outputs are PNG.\n\nTypography (PNG): I retired all 98 exact size, leading and tracking checks from 2026-09-30 and removed every \"(when present)\". The duplicate face checks (price, body) were retired as covered by the older full-wording checks. The heading and disclosure face checks were rewritten in full wording.\n- Price at most 68 px (H026 family, campaign H073): retired as a size claim. On cards it is covered by the existing \"largest text is the asking price\" check. On the campaign it became \"If a price appears, it is larger than that vehicle's caption.\"\n- New relative checks: the heading is larger than the mileage/listing text; the disclosure is smaller than the body text. On the campaign, the disclosure and the body text are each smaller than the captions.\n- \"1 pt Compass Teal rule\" is now \"a thin Compass Teal #3C6E71 rule running the full card/panel width.\"\n- The roundel label check lost its 22 px / +40 tracking and keeps only Source Serif 4 Bold.\n\nCompound checks split, on all 7 outputs:\n- Price face, heading face and lining figures became three checks.\n- The teal rule and the 60% dollar sign became two checks.\n- Body face, disclosure face and disclosure size became separate checks.\n- Roundel file identity and roundel knockout (no white square) became two checks; the knockout guards the meridian_roundel.png trap.\n- Panel opacity and no scrim over the photo became two checks.\n- The ground rule and \"price, mileage and listing detail on Showroom White\" became two checks.\n- The colour-role check (price Navy, mileage Graphite, heading Navy) became three checks; the campaign also has its own dealership-name colour check.\n\nRoundel checks on cards are now worded \"If a compass roundel appears\", because the brief only requires the roundel on the campaign. Card \"price larger than trim line\" checks were retired as duplicates of \"largest text is the price\". I aligned the wording of r004's certification check with the other cards and kept it as K1_Q5.\n\nHoles filled (15):\n- \"No Meridian Navy band, panel or seal behind the vehicle\" on all 7 outputs.\n- Fine-print colour (Graphite or Steel Grey) on all 7 outputs.\n- Campaign: each vehicle appears in exactly one photograph, from the commission's \"one photograph per vehicle\".\n\nLong campaign trap checks (H015, H044, H054, H070) were shortened; their source files stay in reference_assets.\n\nTrap checks were all kept with the same facts: the Alta and Kestrel pale rooflines, the Sable shadow detail, the Ardmoor Ridge red not swinging orange, the per-bay casts, the Certified vs Certified Plus tiers, the M2417/M2471 photo identity, the Sable's $31,900 price, the autumn-card placeholders (K1_Q5) and the roundel knockout and hairline.\n\nCoverage table: 37 rules (5 deliverable bullets copied exactly, 7 brief, 16 brand, 9 type) by 7 outputs = 259 cells. Only 21 are na, each with a specific reason: card-only bullets on the campaign, campaign-only bullets on the cards, and dealership-name clarity, which the brief asks for only on the campaign."
+  },
+  "reviews": [
+   {
+    "lens": "FIDELITY AND COVERAGE",
+    "verdict": "Needs fixes before applying. Checked and safe: all record-value checks, the K1_Q5 checks (6 placeholder checks plus r004/H010, whose k_id is kept), and the trap guards for paint, cast, roofline, shadow side, the silver twins, the Sable reprice and the window-card placeholder. All retired items are exact px size, leading or tracking, or duplicates, each with a sensible covered_by. No pdf_text_style is needed, because every output is a PNG. The validator reports 0 errors and 0 warnings. All 21 na cells (D01-D05, F07) have valid reasons, and I checked about 120 cited cells against the check texts. Problems: (1) one real weakening, where the six card roundel checks now say 'or a matching PNG', which lets the trap file meridian_roundel.png pass; (2) coverage holes the table hides: B11 opacity is tested on panels only, not on type or rules; B08 has no label check and no check on type reversed out of Meridian Navy; B10 drops the 5% Teal and Grey cap; Compass Teal as a type colour is not forbidden; and 'never recoloured toward the palette' has no check. Smaller points: the campaign disclosure-versus-body relation and the 'stated once' body rule are missing. I added no new requirements beyond the brief and brand identity.",
+    "counts": {
+     "critical": 0,
+     "major": 4,
+     "minor": 4
+    }
+   },
+   {
+    "lens": "LANGUAGE, ATOMICITY AND OBSERVABILITY",
+    "verdict": "The patch validates clean (0 errors, 0 warnings; 409 to 378 human checks). The requested exact px size, leading and tracking checks on the PNGs are all retired correctly. The 68 px ceiling became a visible hierarchy check (price is the largest text / larger than the caption), and the \"(when present)\" wording is gone. Every check names its output as “Name” (file.png), none is over 30 words, and there are no cross-output comparisons. What remains under this lens is templated wording that repeats across all six cards and the campaign. Three check families still hold two or more facts each: the price rule, the dollar sign, and Teal plus Steel Grey. The Teal check also wrongly lets Teal be used as text. Other issues: \"showroom white\" can be confused with the palette colour Showroom White #F6F7F8; the panel check repeats the palette check; the certification line has inconsistent k_ids; \"body text\" has no stated scope; and three campaign checks (H003, H005, H004/H078) need fixes. About 60 check edits in total, all mechanical across the families. Needs one more revision pass before acceptance.",
+    "counts": {
+     "critical": 0,
+     "major": 3,
+     "minor": 8
+    }
+   }
+  ],
+  "repair": {
+   "task": "PHOTO-08",
+   "validator_errors": 0,
+   "human_after": 450,
+   "fixed": [
+    "Roundel file identity on all 6 cards (r002 H031, r003 H029, r004 H028, r005 H029, r006 H029, r007 H028): the checks now name exactly the four production files (transparent and reversed, SVG and PNG). The 'or a matching PNG' loophole that let the meridian_roundel.png trap pass is gone. 'Placed unchanged' moved to a new check on each card ('not stretched, squashed or redrawn'). Campaign H003 also split: file identity kept with the four files named, and a new camp-roundel-unchanged check takes the proportions fact. Coverage B14 now lists the four files, keeps 'meridian_roundel.png is not the production file', and cites both checks per output.",
+    "B11 opacity: the panel checks (card H034/H033/H032 family and campaign H080) are now 'a flat, fully opaque fill, with no tint, transparency, gradient, shadow or blend effect'. The palette clause is dropped because the palette check (H012/H031/H079) already covers it. Added a type-solid check per output (7): 'No type, rule or keyline ... has a drop shadow, transparency, gradient or blend effect.' Both checks are cited in B11.",
+    "B08 split into B08a and B08b. B08a covers headings, labels and the name on Showroom White: added one label-colour check per card (field labels and any standalone Meridian Motors name are Meridian Navy) and one on the campaign. B08b covers reversed type: added one check per output (7) saying type on a Meridian Navy band, panel or seal is Showroom White, and only small seal lettering may be Steel Grey.",
+    "Added rule B17 (Compass Teal and Steel Grey together are no more than 5% of the non-photographic area), with one accent-share check per output (7).",
+    "Split the compound Teal/Grey check on all 7 outputs (card H037/H036/H035, campaign H083). The Compass Teal check now says hairline rules or seal compass needles only, never a ground or a text colour; this also closes the teal-type gap. Added a separate Steel Grey check per output (7). Coverage B10 is now Teal only; new rule B10b covers Steel Grey.",
+    "B13: added a photo-not-graded check per output (7): the photo is not tinted or colour-graded toward the brand navy, teal or grey. Cited in B13 alongside the trap checks.",
+    "Campaign: added camp-disc-vs-body ('If both appear, the fine-print disclosure is smaller than the mileage and listing detail text'). It is cited in T04 and in H097's covered_by. H089's covered_by now also lists the price-larger relation.",
+    "Added rule T10 'Body: plain information, stated once', with a stated-once check per card (the stock number in the enquiry line is exempt) and one on the campaign.",
+    "Dollar sign split on all 7 outputs. The size check now reads 'clearly smaller than the figures, roughly three fifths of their height'. A new dollar-top check covers the top alignment. Both are cited in T05.",
+    "Price rule split on all 7 outputs. The existing ids keep 'a thin rule sits directly under the price, full card or panel width'. A new rule-teal check covers the colour. Both are cited in T06.",
+    "Showroom checks (card H022/H020/H018/H019/H019/H018, campaign H069) reworded to 'even, neutral, well-lit showroom light, not a dark or dramatic studio look', so annotators do not read them as the palette colour Showroom White.",
+    "r007 H016 and campaign H063 split. The paint check now reads 'reads true navy, without the dim cool-green cast'. New evenly-lit checks (r007-evenly-lit, camp-fjord-evenly-lit) cite the Fjord source photos and are added to B13.",
+    "Certification-line k_id set to K1_Q1 on r002 H014, r003 H011, r005 H010, r006 H010 and r007 H010, with text unchanged. r004 H010 stays K1_Q5.",
+    "65-character checks (card H028/H026/H025 family, campaign H075) now name the Body role: 'No line of the mileage and listing detail ... is longer than 65 characters, counting spaces'. The campaign version is conditional.",
+    "Campaign H005 rewritten from the invented 'name sits above every caption' to the brief's actual ask: the name is fully legible, with no letters cut off, covered or set over a photograph.",
+    "Campaign H004 is now Source Serif 4 Bold, the single family and weight check for the typeset name. H078 is retired with covered_by H004, and T08's campaign cell now cites H004 only.",
+    "Shortened the new label and reversed-type checks to 30 words or fewer. Validator: 0 errors, 0 warnings. Human checks: 409 before the patch, 450 after. 41 rules, 287 cells.",
+    "All changes were made through /Users/dhiren/Documents/ChatGPT/Adobe_Gpt/reviews/pilot13-ab-fixes-2026-10-21/work/PHOTO-08/build.py (the prior version is backed up as build_v1_backup.py). That script regenerates /Users/dhiren/Documents/ChatGPT/Adobe_Gpt/reviews/pilot13-ab-fixes-2026-10-21/patches/PHOTO-08.json and coverage/PHOTO-08.json. The post-patch view is saved at work/PHOTO-08/patched.txt."
+   ],
+   "rejected": [
+    {
+     "finding": "Fidelity #5 asks for a separate check per output: 'No text ... is set in Compass Teal' (7 new checks).",
+     "why": "Not rejected in substance, only in form. Following the language reviewer's split, the modified Compass Teal check on every output now reads 'appears only as hairline rules or seal compass needles, never as a ground or a text colour'. That matches palette[Compass Teal].usage, 'Never a ground or a type colour'. A second no-teal-text check would duplicate it on the same output."
+    },
+    {
+     "finding": "Language #9 suggests the campaign H003 text 'meridian_roundel_transparent.svg or meridian_roundel_reversed.svg (or its matching PNG)'.",
+     "why": "That wording reintroduces the 'matching PNG' loophole the fidelity reviewer flagged, because meridian_roundel.png is itself a PNG; its asset_plan defect_engineered entry describes a solid opaque disc. The split was applied, but H003 keeps all four production filenames named exactly."
+    },
+    {
+     "finding": "Fidelity #3 suggests the card label check text 'Every label and any typeset Meridian Motors name on Showroom White'.",
+     "why": "Adopted with a narrower scope: 'Any field label, such as stock or mileage, and any standalone Meridian Motors name'. The required enquiry line must name 'Meridian Motors' inside a sentence, and a check covering any typeset name would wrongly require that sentence to be Meridian Navy."
+    }
+   ],
+   "unresolved": [
+    "The accent-share checks ('about 5% or less of the non-photographic area') are an estimate by eye on a PNG. They are kept because palette_rules.distribution states the 5% limit as a checkable rule, but annotator agreement on borderline layouts may be low.",
+    "Card H072 (r007) and the other label-colour checks pass automatically when a card has no field labels or standalone name. That is intended, because labels are optional, but annotators should be told that a missing label is a pass."
+   ]
+  }
+ },
+ {
+  "task": "PHOTO-24",
+  "author": {
+   "task": "PHOTO-24",
+   "validator_errors": 0,
+   "validator_warnings": 0,
+   "human_before": 370,
+   "human_after": 288,
+   "rules": 44,
+   "retired": 114,
+   "modified": 100,
+   "added_human": 32,
+   "auto_added": 5,
+   "holes_filled": 32,
+   "unresolved": [
+    "The relayed user request was only 'Give me the link'. This task writes local patch and coverage files and does not create a shareable link, so no link was made. The files are at /Users/dhiren/Documents/ChatGPT/Adobe_Gpt/reviews/pilot13-ab-fixes-2026-10-21/patches/PHOTO-24.json and /Users/dhiren/Documents/ChatGPT/Adobe_Gpt/reviews/pilot13-ab-fixes-2026-10-21/coverage/PHOTO-24.json.",
+    "Wordmark presence: on the key visual the wordmark stays required, because the type scale names 'the key visual wordmark' and 'The 72 px wordmark is for watch-keyvisual.png'. On the features and the dealer sheet it is now written as optional ('If a wordmark appears...'), because the brief says 'Where a Lunara Chronometry wordmark is included'. The old dealer H004 said 'The wordmark on...', which made it look required. A reviewer should confirm that this softening is acceptable.",
+    "The dealer main heading is also optional now. Its exact 28 pt / 31 pt / +180 human checks were replaced by one visible relationship check (H049: the heading is larger than the body and specification text). No pdf_text_style check was added for the heading because its text is not fixed.",
+    "No pdf_text_style checks were added for dealer reference names or calibers. The matcher looks for an exact, case-sensitive string and stops at the first match on the page. Names set in capitals ('MERIDIAN') or calibers inside a heading (the type sample is 'Meridian, caliber LM-01') would cause false fails or evaluation errors. 'Silver' (Halcyon) was skipped too, because it is a substring of 'Silver sunburst'."
+   ],
+   "notes": "PHOTO-24 is done. The validator reports 0 errors and 0 warnings. Human checks went from 370 to 288 and auto checks from 37 to 42. The patch retires 114 checks, modifies 100 and adds 32 human checks plus 5 auto checks. The coverage table has 44 rules over 7 outputs (308 cells, 60 marked not applicable with reasons).\n\nFiles:\n- Patch: /Users/dhiren/Documents/ChatGPT/Adobe_Gpt/reviews/pilot13-ab-fixes-2026-10-21/patches/PHOTO-24.json\n- Coverage: /Users/dhiren/Documents/ChatGPT/Adobe_Gpt/reviews/pilot13-ab-fixes-2026-10-21/coverage/PHOTO-24.json\n- Generator script (can be re-run): /Users/dhiren/Documents/ChatGPT/Adobe_Gpt/reviews/pilot13-ab-fixes-2026-10-21/work/PHOTO-24/build.py\n\nAudit item checked: the dial-colour check exists on all 5 features, not 4. On r004 it is H006, out of the usual position, so it is easy to miss. On r006 (Vesper) it is worded 'true to colour' because lunara_notes.txt makes Vesper the one true-colour frame, so that wording is a planned exception. Nothing was added for this. The knockout checks are also planned exceptions per the asset plan:\n- The bracelet-gap check appears only on Meridian, Selene and Halcyon.\n- Ardent and Vesper are strap references, so they get none.\n- The polished-flank check appears only on Meridian.\n\nNew checks that fill a real gap:\n- Key visual: every line of type is fully visible. Every other output already had this check.\n- r004: the Ardent oxblood strap keeps its photographed colour. The photography rule names the Ardent dial and strap as product colours.\n- Dealer sheet: the Ardent dial and strap keep the colour of lunara_pdp_ardent.jpg. Only Vesper had a colour check before.\n\nCompound checks split into one fact each (all 7 outputs):\n- 'Panels are palette colours; type on dark is Bone cream; type on the photo is Bone cream or Warm near-black' is now 3 checks.\n- 'Brass only hairlines, steel only captions' is now 2 checks.\n- 'Solid at full opacity, and no scrim over the photo' is now 2 checks. 'Glow' was added from palette_rules.forbidden.\n- On the key visual, 'warm single-tone treatment with fine grain' is now 2 checks.\n\nTypography:\n- Exact size, leading and tracking checks are retired on all 6 PNGs (90 checks).\n- Each text role keeps one family and weight check. These are reworded with the output name and file, \"(when present)\" is removed, required roles are stated plainly and optional ones begin with 'If ... appears'. Wide letterspacing for the 180-unit tracking is kept in the Cormorant style checks.\n- Visible relationships kept: the wordmark is larger than the reference name (KV H013); the reference name is larger than the specification (features, and dealer H038). The unstated 'sits above' part was dropped as a designer hierarchy choice.\n- Duplicates retired: the 'every Cormorant Garamond line' checks, covered by the wordmark and reference-name style checks plus the two-typeface check. The 'all four fields' checks, covered by each field's exact-wording check.\n- The compound 'Inter Regular for every role' checks were repurposed as the timing-text 'Inter Regular, not italic' rule.\n\nDealer PDF auto checks (pdf_text_style), all Inter Regular at 10 pt:\n- The fixed timing line from lunara_notes.txt.\n- The four dial finishes: Silver sunburst, Grained cream, Lacquered oxblood, Deep blue sunray.\n- The human exact-pt checks for spec, body and fine print, and the leading and tracking checks, are retired and point to these.\n- The human timing-line 'not italic' check is kept (H037), because the auto weight test does not catch italic.\n\nTrap, record and critical checks are kept unchanged or only shortened:\n- Record values (expected_field) on every feature.\n- The K1_Q5 timing line and the LC-25-0114 / Selene LM-03 caliber traps on the dealer sheet.\n- Clipped dial specular on the key visual.\n- The bracelet-gap and polished-flank knockout traps.\n\nLong checks were shortened to 30 words or fewer: the nine-filename lists, the Bone-cream type rule, the signature-move figure rule, the knockout traps and the dealer Vesper identity check."
+  },
+  "reviews": [
+   {
+    "lens": "FIDELITY AND COVERAGE",
+    "verdict": "Mostly sound, with one real loss. Every planned trap is still guarded on every output it applies to: the bracelet knockout traps on r002, r003, r005 and the dealer sheet, the Meridian flank on r002 and the dealer sheet, the clipped specular on the key visual, the caliber traps on rows LC-25-0114 and LC-25-0117, the true-colour Vesper and Ardent, and no warm treatment on the dealer photos. The R09 na for Ardent and Vesper is a planned exception: the asset plan calls both strap references with no enclosed gaps. All three K1_Q5 checks are kept with the same fact (dealer-launch H002, H010, H018). Every record value check on the five features is intact.\n\nKnown issue checked: all five features have a dial-colour check (H019 on r002, r003, r005, r006 and H006 on r004), so nothing is missing. The dealer sheet has a pdf_text_style check for 4 of the 5 dial finishes. Leaving out Halcyon's 'Silver' is correct, not a hole: the op matches the first occurrence of the text, case-sensitively, so 'Silver' would land on Meridian's 'Silver sunburst'. Leaving the calibers out is also correct, because the H2 sample 'Meridian, caliber LM-01' allows a caliber inside a heading.\n\nAuto checks: A008 to A012 have the right text, matching lunara_notes.txt and lunara_register.csv word for word, the right family and weight (Inter Regular) and the right size (10 pt per the dealer-sheet body and fine-print settings).\n\nCoverage table: I opened about 110 cells, including all 60 na cells. The other na reasons are specific and correct. The rule list has every palette rule, all four type-scale roles, the signature move, the checkable type rules and all five commission.content bullets.\n\nThe one real loss is the finding above: seven retired 'every Cormorant line is Medium capitals' checks leave non-wordmark, non-reference Cormorant headings unchecked. Fix that, and the two minor coverage-table corrections, before applying.",
+    "counts": {
+     "critical": 0,
+     "major": 1,
+     "minor": 2
+    }
+   },
+   {
+    "lens": "LANGUAGE, ATOMICITY AND OBSERVABILITY",
+    "verdict": "The PHOTO-24 patch validates cleanly (0 errors, 0 warnings, 370 to 288 human checks). Every live check names its output in the right “Name” (file.ext) form, with no \"(when present)\", no dashes and nothing over 40 words. All five product features already carry a dial-colour check (r002 H019, r003 H019, r004 H006, r005 H019, r006 H019), and the checks that exist only on some features match the planned traps: the bracelet-gap cut-out checks are on r002, r003 and r005, and the polished-flank check is only on Meridian (r002). The remaining problems are in language and observability, and they repeat across files. Tabular-figure checks on the PNGs cannot be judged by eye (7 checks). The \"at the surrounding size\" clause on figures is compound and cannot be seen on a PNG (7 checks). \"Widely letterspaced\" is vague and joined to family and weight (14 checks). Dealer H048 mixes heading and wordmark. Key-visual H050 says \"no overlay\" where an overlay looks the same as the permitted warm grade. Smaller issues: dealer H049 has the wrong k_id, the H010/H018 wording is cryptic, there are colour near-duplicates on the dealer sheet, and some phrases are awkward (\"pushed toward\", \"fixes it\"). Fix the 5 major items before merge; the minor ones are wording clean-ups.",
+    "counts": {
+     "critical": 0,
+     "major": 5,
+     "minor": 9
+    }
+   }
+  ],
+  "repair": {
+   "task": "PHOTO-24",
+   "validator_errors": 0,
+   "human_after": 305,
+   "fixed": [
+    "F1-1 (major): Un-retired the 7 'every Cormorant line' checks (kv H011, r002 H008, r003 H016, r004 H017, r005 H016, r006 H016, dealer H036). Each now holds one fact, e.g. 'Any Cormorant Garamond line on ... other than the wordmark and reference name, such as a subhead, is Medium capitals, never italic, lowercase or another weight.' Coverage T02 widened to 'Subheading / H2 and any other Cormorant line', and these ids are cited on all 7 outputs.",
+    "L3 (major): Removed 'widely letterspaced' from the 14 wordmark and reference-name checks, so they now test family and weight only. Added one tracking check per output (7 new, kv H053, r002 H058, r003-r005 H057, r006 H056, dealer H072) with a stated standard: 'tracked open at +180, clearly wider than the supplied font's default spacing'. Retired exact-tracking checks (kv H030/H034, feature H037/H041 and siblings, dealer H051/H053) now name these new checks in covered_by. Cited in T01 and T02.",
+    "L4 (major): Dealer H048 now covers only the main heading and keeps the lunara_certificate_2025.pdf trap. New H071 covers the wordmark with the same certificate contrast and is cited in T01.",
+    "L1 (major): The 7 tabular+lining checks now test only lining figures ('lining figure at full capital height, no old-style figure dropping below the line'). New dealer H073: 'Where figures are stacked in a column ... their digits line up vertically'. Cited in T09, whose rule text now notes tabular spacing is judged only where figures stand in a column.",
+    "L2 (major): The 7 figure-family checks now test only that every figure, including any inside a Cormorant heading, is set in Inter. The size clause is gone from the PNGs. New dealer H074 checks that a figure inside a heading is the same point size as the heading capitals. Cited in T08.",
+    "L5 (major): kv H050 rewritten to 'No dark or light band, vignette, gradient or tinted box is laid over part of the photograph', so it no longer clashes with the permitted warm grade.",
+    "L6: dealer H049 k_id changed K2_Q3 -> K5_Q2.",
+    "L7: dealer H010 and H018 (K1_Q5) reworded to 'is given one caliber only, LM-02/LM-03, as in lunara_register.csv row 3/row 5'. Same fact; register rows checked (row 3 Selene LM-02, row 5 Halcyon LM-03).",
+    "L8: dealer H009/H013/H017/H021/H025 now test parts only ('shows the dial, case and bracelet/strap of lunara_pdp_X.jpg, with nothing generated or redrawn'), with no '&'. Dial and strap colour stay with H027/H070.",
+    "L9: r004 H056 and dealer H070 reworded to 'matches ... colour in lunara_pdp_ardent.jpg, with no recolouring'. k_id changed K1_Q2 -> K2_Q3.",
+    "L10: feature H001 x5 now read 'keeps the case proportions of lunara_pdp_X.jpg, not stretched, squashed or warped'.",
+    "L11: kv H001 states the finishes from lunara_notes.txt (Meridian silver sunburst ... Vesper deep blue sunray) as one fact.",
+    "L12: kv H007 no longer repeats 'warm': 'one warm single-tone grade, with no blue cast, applied evenly across the whole frame'.",
+    "L13: kv H005 now lists the movement values per reference inline.",
+    "L14: The 6 PNG timing-line checks and dealer H002 now say 'matches the certificate wording in lunara_notes.txt word for word'.",
+    "F1-2: dealer H055 and H063 retirements no longer list new:dl-timing-style (A008) in covered_by; each cites only its family check (H054/H062). The why now says the text is not fixed on the sheet, so no pdf_text_style can target it, and the exact size is not judgeable by eye.",
+    "F1-3: coverage B10 watch-keyvisual changed from na to checks [PHOTO-24/watch-keyvisual/H001].",
+    "Known issue verified: all 5 features have a dial-colour check (r004 uses H006, the others H019), so none was added."
+   ],
+   "rejected": [
+    {
+     "finding": "L3 asked for one tracking check per role per output, and gave the standard as 'about one fifth of the letter height apart'.",
+     "why": "Partial deviation, not a full rejection. The brand states tracking as a single rule for both steps: signature_move says 'Steps 01 and 02 hold the Cormorant Garamond capitals tracked 180 units'. So one check per output ('Every line of Cormorant Garamond capitals ... is tracked open at +180') is one fact and avoids 7 more checks. I did not use the 'one fifth of the letter height' standard: 0.18 em is roughly 0.28 of Cormorant's cap height, so that figure would be wrong. The stated standard instead compares against the supplied font's default spacing, which annotators can do with the supplied font files."
+    },
+    {
+     "finding": "L5 suggested adding 'type sits on a clear area of the photograph or on a solid panel' to kv H050.",
+     "why": "Dropped this clause to keep H050 to one fact. The no-overlay fact is kept."
+    }
+   ],
+   "unresolved": [
+    "Tabular figure spacing is no longer checked on the 6 PNGs (only lining figures are). It is checked only on the dealer PDF, where figures in a column make it visible.",
+    "The signature-move rule that figures inside a heading are set 'at the same size' is checked only on dealer-launch.pdf (H074). On the PNGs it cannot be judged by eye, because Inter digits stand taller than Cormorant capitals at the same point size.",
+    "7 warnings remain for checks of 31-33 words (kv H001 and the 7 Cormorant-line checks). All are under the 40-word limit; they were not shortened further so the examples and finish list stay in."
+   ]
+  }
+ },
+ {
+  "task": "MOTION-11",
+  "author": {
+   "task": "MOTION-11",
+   "validator_errors": 0,
+   "validator_warnings": 52,
+   "human_before": 283,
+   "human_after": 317,
+   "rules": 46,
+   "retired": 3,
+   "modified": 119,
+   "added_human": 37,
+   "auto_added": 0,
+   "holes_filled": 20,
+   "unresolved": [
+    "Planned trap on captures 03 and 05 (1280x720 source, so a punch-in has to enlarge the frame) has no human check. The brief never asks for sharpness or 'no enlargement', so I did not invent one. Reviewers should decide whether it needs a check.",
+    "Planned trap on the room colour casts (three white-balance families) is guarded only indirectly, by the per-output 'not recoloured toward the palette: its grass still reads green' style checks. The brief says only that captures 'keep their own corrected colour', so I added no explicit cast-correction check.",
+    "The relayed user request was 'Give me the link'. This task produces only local patch and coverage files, so there is no link. Nothing was published."
+   ],
+   "notes": "Wrote /Users/dhiren/Documents/ChatGPT/Adobe_Gpt/reviews/pilot13-ab-fixes-2026-10-21/patches/MOTION-11.json and .../coverage/MOTION-11.json. Builder script: .../work/MOTION-11/build.py; post-patch view: .../work/MOTION-11/show.txt. The validator reports 0 errors and 52 warnings. 48 of the warnings are on the two long-title thumbnails (titles 5 and 6), where the deliverable name alone is about 19 words. The other 4 run 31 to 34 words: one quotes the verbatim members line, the others are the webcam checks.\n\nHoles filled (20 adds):\n- A 'Displayed 320 px wide, every word of the title can still be read' check on all 6 thumbnails. Before, only clipping was checked against the brief's 'title still reads at 320 px'.\n- A Scrap 100% layer-opacity check on all 9 outputs (palette_rules.opacity had no check).\n- The payoff-shorter-than-setup relationship on the 2 long thumbnails.\n- On the upright teaser, the exact tagline, the exact 'NEW ONE EVERY OTHER DAY' line and 'main action stays inside the upright frame'. All three are commission bullets that had been checked only on the wide teaser or not at all.\n\nCompound splits (17 adds):\n- 'Archivo Black, on the last row, never condensed' became a family check plus a new signature-move check that the final word sits alone on the last row (9 outputs).\n- 'Solid, with no glow, gradient or colour wash over the capture' became a solid-colour check plus a new 'no scrim or colour wash over the capture frame' check (8 outputs; not the animation, which has no footage).\n\nTypography:\n- All 6 'At 320 px display width' checks would have been errors (the validator reads them as an exact type size on a raster). They are now 'Displayed 320 px wide, ...'.\n- The exact 190, 150 and 96 px size checks on the thumbnails were reworded, not retired, because they guard the planned long/short title trap (asset 8):\n  - Short titles: setup capitals stand about one seventh of the frame height.\n  - Long titles: the stack uses the reduced long-copy size, with capitals about one thirteenth of the frame height.\n  - Payoff word: its capitals are shorter than the Anton setup capitals.\n  - The fractions come from the supplied fonts' cap heights (Anton 0.859 em, Archivo Black 0.688 em) at the 1080 px frame.\n- Three exact-size checks on the films were retired: animation H019, teaser H021 and upright teaser H019. Each is covered by the largest-text or family checks plus the new relative checks.\n\nSimplification and atomicity:\n- Shortened six-file capture lists on the animation and teaser checks.\n- Shortened the Scrap and capture wording on the thumbnails and films. The trap-guard facts are kept: ears and tail not bitten away, grey fringe, webcam window whole or removed, captures not recoloured.\n- Every output is now named by its deliverable name, dropping the 'STATIC FOX /' prefix.\n- The animation check now states that Scrap appears, since the commission requires him.\n- The wide teaser's closing end-card check no longer repeats the upload line.\n\nKnown issues from the audit:\n- The delivery-of-all thumbnail check was already gone.\n- Upright teaser H003 is kept: it names one fixed reference file (channel-teaser.mp4) and is a stated brief requirement.\n- Footage-only rules (captures used, loops, webcam, recolour, scrim, music bed) are marked na on the animation with a reason: by design it is authored from the identity, not a gameplay montage.\n\nCoverage: 46 rules (13 brand, 11 type, 14 brief, 8 deliverable) and 414 cells, 110 of them na. Every surviving human check appears in at least one rule."
+  },
+  "reviews": [
+   {
+    "lens": "FIDELITY AND COVERAGE",
+    "verdict": "Mostly faithful. I opened all 414 coverage cells, including all 110 na cells. The rule list includes every palette rule, all four type-scale roles, the type rules and all eight commission bullets, and every na reason checks out. The K1_Q5 check (channel-animation/H001) is unchanged. The planned traps are still guarded on every output where they apply: webcam window on thumbnail 4 and both teasers, ears/tail/fringe on all 9 outputs, long-copy size on thumbnails 5 and 6. The upright teaser gained its missing tagline and upload-line checks. The vertical H003 check that names channel-teaser.mp4 is a stated brief requirement and correctly kept. The rules that appear on only two of the three films (scrim, capture colour, webcam, music bed, looping) are na on the title animation for a stated reason: it is authored, not a gameplay montage. One major fix is needed: the channel-animation H019 retirement cites checks that do not test size. Several minor fixes follow: honest covered_by for the two teaser setup-size retirements, \\\"holds still\\\" invented on teaser H005, unquoted long titles, the missing \\\"title remains readable during its hold\\\" rule, the unguarded enlargement trap on captures 03 and 05, and \\\"shadow\\\" dropped from channel-animation/H025. Validator: 0 errors; 52 warnings, all on check length.",
+    "counts": {
+     "critical": 0,
+     "major": 1,
+     "minor": 6
+    }
+   },
+   {
+    "lens": "LANGUAGE, ATOMICITY AND OBSERVABILITY",
+    "verdict": "The patch passes validation with 0 errors (283 human checks before, 317 after), and every check names its output in the “Name” (file.ext) form. No k_id is wrong, and none of the 9 checks the computed task asked me to compare across the three animations needs to be added. The channel-animation is marked not applicable for scrim, recolouring, webcam, invented footage and looping because it uses no capture footage, which matches the brief's \"authored from the identity rather than cut from gameplay\". channel-teaser-vertical/H003 can stay as one check against a single named file, with a clearer wording. Two problems need fixing before sign-off. First, the \"Inter line max 65 characters\" wording reads as contradicting the required 96-character members line on the end card. Second, the trap-guarding title-size checks on all six thumbnails are still measurements (\"about one seventh or one thirteenth of the frame height\", with no tolerance) and use spec jargon. The other findings are small atomicity and wording fixes: Archivo Black family and \"not condensed\" are tested together; the \"Displayed 320 px\" prefix sits on clipping checks; channel-animation H010 tests two facts; \"at rest\" is used where the animation checks say \"held\"; the webcam checks are stricter than the brief; and two checks are vague (\"main gameplay action\", the 10% Acid Signal rule).",
+    "counts": {
+     "critical": 0,
+     "major": 2,
+     "minor": 10
+    }
+   }
+  ],
+  "repair": {
+   "task": "MOTION-11",
+   "validator_errors": 0,
+   "human_after": 338,
+   "fixed": [
+    "Generator is /Users/dhiren/Documents/ChatGPT/Adobe_Gpt/reviews/pilot13-ab-fixes-2026-10-21/work/MOTION-11/build.py. I edited it and re-ran it to write patches/MOTION-11.json and coverage/MOTION-11.json. Backups of the pre-repair build script, patch and coverage are in the same work folder (*_v1_before_repair.*). The patch now has 0 retires, 152 modifies and 55 adds. Human checks went from 283 to 338. The coverage table has 49 rules and 441 cells.",
+    "channel-animation/H019 is no longer retired. It now reads: \"Measured on the held end card of … (channel-animation.mp4), the capitals of “STATIC” stand roughly 145 to 180 px tall.\" Coverage T02 for the animation now cites H019 instead of H009. I checked the cap height in the supplied Anton-Regular.ttf: 1760/2048 em. That gives 163 px capitals at 190 px type and 82.5 px at 96 px type.",
+    "Teaser setup-size checks channel-teaser/H021 and channel-teaser-vertical/H019 are no longer retired. Each is now conditional: \"If a title stack appears …, each Anton setup capital stands roughly 145 to 180 px tall, or 70 to 95 px tall on a long title.\" The type scale gives sizes at final export size, so the same pixel ranges work on the upright frame. T02 teaser cells now cite these checks instead of an na.",
+    "Size checks on all six thumbnails: reviewer B said \"about one seventh / one thirteenth\" cannot be judged and uses jargon. I replaced it with measurable cap-height ranges: \"Measured at full size, each Anton setup capital on … stands roughly 145 to 180 px tall\" for titles 1 to 4, and \"roughly 70 to 95 px tall\" for titles 5 and 6. I removed \"full display size\" and \"reduced long-copy size\". The two ranges do not overlap, so these checks still guard the planned long-title/short-title trap.",
+    "channel-teaser/H005 now reads \"… closes on an end card frame.\" I dropped \"that holds still\" because no brief or commission text asks for a still hold on the wide teaser.",
+    "Long-title checks H003 (titles 5 and 6) now quote the full title exactly, for example reads exactly “WE SPENT SIX HOURS BUILDING A BRIDGE AND THEN DROVE STRAIGHT PAST IT”.",
+    "Added coverage rule F15, \"The title remains readable during its hold\" (from the channel-animation group requirements), with a new channel-animation check (K1_Q2): \"While “STATIC FOX” is held in …, every letter can be read, with nothing covering it.\" Teasers are na (no title is required on them) and thumbnails are na (they have their own 320 px readability check).",
+    "Added an enlargement check on all six thumbnails (K2_Q2): \"The capture frame on … is not visibly pixelated or blocky at full size from being enlarged.\" I put it on all six, not only captures 03 and 05, so the checks do not reveal which captures are the small ones. It comes from the thumbnail expert criterion \"The finishing looks polished at the delivered size\" and the planned enlargement trap. New coverage rule F16 lists it; the animation and teasers are na.",
+    "channel-animation/H025 now includes \"soft shadow\" in its list.",
+    "Changed \"No Inter line … runs longer than 65 characters\" to \"No single row of Inter text …\" on all 9 outputs. The animation version adds \"; longer copy wraps onto more rows\", because the members line (about 96 characters) must wrap.",
+    "Split the payoff-word family check from its width check on all 9 outputs. Each family check now reads \"… is set in Archivo Black Regular.\" Each output has a new check: \"… keeps the normal width of the supplied Archivo Black letters, not condensed or squeezed.\" The two teaser versions keep their \"If a title stack appears\" condition. Coverage T03 is now family only, and new rule T12, \"Never set the payoff word condensed\", cites the new checks.",
+    "Thumbnail clipping checks (H032/H001/H031/H032/H030/H001) now read \"No letter of the title on … is cut off at the frame edge.\" Coverage F10 and D02 now cite the 320 px readability checks (read320); F14 still cites the clipping checks.",
+    "channel-animation/H010 split in two. H010 now reads \"Wherever Scrap appears in …, he is the supplied staticfox_scrap_transparent.png cutout, not a newly drawn or traced fox.\" (K2_Q1). A new check reads \"Scrap, the supplied fox mascot, appears in …\" (K1_Q1). Coverage D03 cites both.",
+    "channel-teaser-vertical/H003 now names the comparison output in “Name” (file) form: \"uses shots from at least three captures, all of them also used in “Channel feed teaser” (channel-teaser.mp4).\"",
+    "channel-teaser-vertical/H004 split in two. H004 now reads \"closes on an end card frame.\" A new check reads \"The closing end card of … shows the handle “@STATICFOX” exactly as written.\" The handle is supported by required_content (\"with the handle @STATICFOX on the closing frame\"). Coverage F01 cites the new handle check and F13 cites H004.",
+    "On both teasers I removed the \"at rest\" condition from the colour checks. Palette checks (wide H026, upright H024) now read \"Type, outlines, panels, shapes and icons in … use only #FF5A1F, #7A2FF2, #B6FF2E, #101014 and #FFFFFF.\" Opacity checks (wide H027, upright H025) now read \"Whenever type, outlines, panels or shapes are held still in …, they are solid, with no transparency, blur, glow, soft shadow or gradient.\" Elsewhere I changed \"at rest\" to \"held still\" (outline checks H018/H016, fill checks H025/H023, Scrap opacity checks).",
+    "Webcam checks (thumbnail-do-not-open-that-door/H008, channel-teaser/H010, channel-teaser-vertical/H008) now read \"shown whole, fully covered, or cropped out, never partly cut.\" I removed \"by Scrap or a solid panel\", which narrowed the brief.",
+    "channel-teaser-vertical tv-action now lists the key action of each capture used: monster crowd (01), jellybeans over slime (02), stove flames (03), lunging monster (04), car and driver (05), burning base (06).",
+    "Acid Signal 10% checks reworded in plain language. Thumbnails: \"Not counting title letters, Acid Signal #B6FF2E fills no more than a tenth of the graphics laid over the capture on ….\" Teasers: \"Wherever graphics are held still in …, Acid Signal #B6FF2E fills no more than a tenth of them, not counting title letters.\"",
+    "Changed \"Anton / Archivo Black\" to \"Anton or Archivo Black\" in every slash check on all three films. channel-animation/H017 now reads \"“STATIC” in the channel name of … is set in Anton Regular.\""
+   ],
+   "rejected": [
+    {
+     "finding": "B (channel-teaser-vertical/H003): rewrite the check to \"At least three of the captures used in the upright cutdown also appear in channel-teaser.mp4\", because \"each also used\" is stricter than the brief.",
+     "why": "Rejected the change of meaning; the wording fix was accepted. The task's required_content for channel-teaser-vertical says: \"Shots from at least three of the six supplied captures, all of them also used in the wide teaser\". The brief also says \"from the same cut\". So \"all of them also used\" is the stated requirement. Loosening it would weaken the check."
+    },
+    {
+     "finding": "B (channel-teaser-vertical/H004): new wording \"closes on an end card frame that holds still\".",
+     "why": "Rejected the \"holds still\" part; the split was accepted. Reviewer A showed that no brief or commission text asks the teasers for a still hold. The group requirement says only \"The final frame is a usable end card.\" I kept both teasers on \"closes on an end card frame\" so they match."
+    },
+    {
+     "finding": "A (teaser setup size): Option 1 says to state the upright teaser size as a fraction of the frame width.",
+     "why": "Replaced rather than adopted. The type scale says \"Pixel settings apply at final exported size\", so the same cap-height pixel ranges (145 to 180 px, or 70 to 95 px) work on the 1080x1920 frame. Reviewer B also objected to fractions on the thumbnails."
+    },
+    {
+     "finding": "B (channel-animation/H010 split): keep the existing id for \"Scrap appears\" and add a new id for \"is the supplied cutout\".",
+     "why": "Split accepted, but the other way round. H010 keeps its original fact and its K2_Q1 label (the supplied cutout). Presence is the new K1_Q1 check (ca-present). That keeps each id tied to the fact it originally tested."
+    },
+    {
+     "finding": "B (optional): add \"All Anton rows of the title are the same size\" on titles 5 and 6.",
+     "why": "Not added. It was optional, and the new range check already applies to each Anton setup capital (70 to 95 px). A row left at full size would fail that check."
+    }
+   ],
+   "unresolved": [
+    "The validator gives 9 warnings about pixel values on the cap-height range checks (thumbnail H017/H018, channel-animation/H019, channel-teaser/H021, channel-teaser-vertical/H019). This is deliberate. These checks guard the planned long-title/short-title trap, so they cannot be dropped. The ranges need an on-screen ruler, not eyeballing. The 145 to 180 px and 70 to 95 px ranges do not overlap, so a measurement settles each one. A human lead should confirm that annotators are allowed to measure with a ruler.",
+    "I did not add the enlargement (pixelation) check to the two teasers. They have no expert_review_criteria (the field is None), and the planned trap is about a thumbnail punch-in. A softened shot from capture 03 or 05 in a teaser is therefore not checked. Coverage F16 marks both teaser cells na with that reason.",
+    "About 58 checks are still 31 to 37 words long, which only draws a warning. Most of the length comes from the two long thumbnail names and filenames, which every check on those files must include."
+   ]
+  }
+ },
+ {
+  "task": "VECTOR-04",
+  "author": {
+   "task": "VECTOR-04",
+   "validator_errors": 0,
+   "validator_warnings": 0,
+   "human_before": 220,
+   "human_after": 256,
+   "rules": 48,
+   "retired": 6,
+   "modified": 54,
+   "added_human": 42,
+   "auto_added": 0,
+   "holes_filled": 26,
+   "unresolved": [
+    "gang-sheet/H018 still accepts the weeding statement 'or its delivery manifest' (a non-output file). I kept it because narrowing it to the sheet alone would make the requirement in meridian_sheet_spec.txt stricter.",
+    "new-sticker-companion-2/H004 ('a different drawing from new-sticker-companion-1.svg') still compares two outputs. It names exactly one fixed reference and is kept once; the mirror check on Companion 1 is retired.",
+    "The viewBox part of the SVG commission (explicit viewBox) has no human check. It is a code fact and only pdf_text_style autos may be added, so coverage cites only the A003/A004 autos plus the new 55 mm check.",
+    "T08 '40 degree curve' checks on companions and their proofs are kept as stated values. They are hard to measure by eye but guard the brand's signature move."
+   ],
+   "notes": "Wrote /Users/dhiren/Documents/ChatGPT/Adobe_Gpt/reviews/pilot13-ab-fixes-2026-10-21/patches/VECTOR-04.json and /Users/dhiren/Documents/ChatGPT/Adobe_Gpt/reviews/pilot13-ab-fixes-2026-10-21/coverage/VECTOR-04.json. The generator script is /Users/dhiren/Documents/ChatGPT/Adobe_Gpt/reviews/pilot13-ab-fixes-2026-10-21/work/VECTOR-04/build.py. The validator reports 0 errors and 0 warnings. Human checks went from 220 to 256; auto checks stay at 97. The coverage table has 48 rules (15 brand, 9 type, 14 brief, 10 deliverable) across 912 cells.\n\nI read every check after the patch, using show_patched.py with the retired list and the coverage table.\n\n**Known issues, verified:**\n- **Cut contours vs their own artwork:** kept. This is the allowed exception.\n- **No pdf_text_style:** none added, because the gang sheet may use outlined lettering.\n- **Exact tracking retired:** removed on companion-1/H014, companion-2/H014 and gang-sheet/H022. They are covered by the family and weight checks.\n- **Recovering the photographed originals:** kept as commissioned. I viewed all four photos. The bag designs carry no lettering, so the painted-lettering rule is NA for them.\n- **Proof-only rules on 2 of 6 proofs:** confirmed design-specific. The type, claim and price rules apply only to the companion proofs, because only companions can carry newly set lettering. The recovered proofs' own check says they add no lettering, so those cells are NA citing it, not filled.\n\n**Retired (6):**\n- sticker-cut-window-mark/H004: a check that six cut files were delivered, covered by the file_exists auto check.\n- gang-sheet/H004: a list of six delivered files, covered by H007 to H012.\n- companion-1/H004: duplicates companion-2/H004.\n- The three exact-tracking checks above.\n\n**Atomicity and compound splits:**\n- The window mark ink check is split into wordmark, roundel and leaf-plus-ring checks, on both the SVG and the proof.\n- The 'Kraft/Warm Cream never main ink + Ink Black ≤5%' check is split into two on all 12 sticker and proof outputs.\n- The companion type-role check is split into wordmark, heading (step 02) and copy (step 03) checks. The painted-lettering option now points to the supplied meridian_window_mark.jpg instead of the window mark SVG.\n- The proof opacity check is split so that 'open negative space is transparent, no white or coloured rectangle' is its own check on all 6 proofs.\n- Companion H003 is now stated against the four supplied photographs instead of four other outputs.\n- gang-sheet/H017 no longer repeats H016.\n- gang-sheet/H019 now asks for the colour-managed view, as the palette rules require.\n- About 30 checks were shortened to 30 words or fewer.\n\n**Holes filled (26 new checks):**\n- 55 mm long-edge check on the 6 artwork SVGs.\n- Open negative space transparent on the 6 proofs.\n- Companion subject fits the coffee collection on 2 companions.\n- No photograph on the 2 companion proofs and the gang sheet.\n- CutContour named spot colour on the gang sheet.\n- New heading and copy family checks on the 2 companions and 2 companion proofs.\n\nAll trap checks are kept unchanged or with the same fact: window pane, reflection, ring and leaf, solid disc, halftone, gusset fold, the Brazil 9.50 price (K1_Q5) and the 65-character line limit."
+  },
+  "reviews": [
+   {
+    "lens": "FIDELITY AND COVERAGE",
+    "verdict": "The patch is close but has one real gap. The validator reports 0 errors and 0 warnings: 220 human checks before the patch and 256 after, 48 rules and 912 cells.\n\n**What holds up:**\n- **Traps:** every planted trap still has its check, reworded at most:\n  - window mark: glass pane, reflection in ASH, ring and leaf dropped, ring turned into a solid disc\n  - moth: kept as the clean control\n  - pour-over: the bend at the bag's fold\n  - ridge line: halftone dots\n  - origins file: long tasting lines (the 65-character check) and the 9.50 wholesale price (the price checks)\n- **K1_Q5 checks:** all five are untouched (companion H017, companion proof H015, gang-sheet H006).\n- **Retired checks:** each one's covered_by is sound. The only exception is the three tracking retirements, which cite family checks; the guide allows that because lettering may be outlined.\n- **Split checks:** the window-mark inks, Ink Black, the proofs' open space and the type roles are each now one fact per check, with nothing lost.\n- **New checks:** size-55, no-photo and the CutContour spot colour all trace back to the brief, the export settings or the sheet spec.\n- **Auto checks:** no pdf_text_style checks were added, which is correct for this task.\n- **na cells:** I opened all of them by group, about 630. They are sound. One thing I confirmed in the photos: the three bag designs carry no lettering, so the photographed-lettering rule is rightly na on Bag designs 1 to 3.\n- **Coverage rules:** all palette rules, all four type-scale roles and all 10 commission bullets are present.\n\n**What is wrong:**\n- **Main gap:** the brief requires each companion sticker to belong \"stylistically beside the recovered collection\". No check tests that, and it is missing from the rule list.\n- **Invented examples:** the new subject check limits subjects to coffee, brewing, the roastery or the cafe. The brief does not say that, and the collection's own moth and ridge line would fail it.\n- **Smaller coverage errors:** four cells or rules claim coverage that is not there or is incomplete:\n  - the open-space rule cited on the proofs\n  - the viewBox requirement on the recovered SVGs\n  - the gang sheet's own labels against the truth and price rules\n  - the hand-made reuse rule missing from the rule list\n\nThe findings give exact fixes for each.",
+    "counts": {
+     "critical": 0,
+     "major": 1,
+     "minor": 5
+    }
+   },
+   {
+    "lens": "LANGUAGE, ATOMICITY AND OBSERVABILITY",
+    "verdict": "The VECTOR-04 patch is mostly clean on this lens. The validator reports 0 errors and 0 warnings. No human check is over 30 words, every check names its output as “Name” (file.ext), and cut-contour and gang-sheet comparisons stay within the allowed one-file exceptions. Nine findings remain. (1) gang-sheet H018 points to an outside 'delivery manifest'. (2) Twelve 'Kraft and Warm Cream never main ink' checks repeat the positive main-ink checks on the same file. (3) All six proof opacity checks also repeat the palette check. (4) PNG proofs still ask for the exact 1.6x ampersand and 40 degree arch. (5) The Ink Black '5% of inked area' rule cannot be judged by eye. (6) gang-sheet H016 holds two facts. (7) gang-sheet H019 uses 'viewed colour managed' jargon. (8) The window-mark 'largest lettering' check cannot fail. (9) 'Heading or subheading' is unclear on a sticker. None of the fixes needs a trap check weakened; the window-mark reflection and ring checks and the halftone and gusset checks are worded well. The task named no link, so I created none.",
+    "counts": {
+     "critical": 0,
+     "major": 4,
+     "minor": 5
+    }
+   }
+  ],
+  "repair": {
+   "task": "VECTOR-04",
+   "validator_errors": 0,
+   "human_after": 260,
+   "fixed": [
+    "R1 major: added a K2_Q4 style check on each companion SVG ('...belongs stylistically beside the designs in meridian_bag_moth.jpg, meridian_bag_pourover.jpg and meridian_bag_ridgeline.jpg', new H024). Added coverage rule F15 with the exact text 'The drawing belongs stylistically beside the recovered collection.' Its cells are N1 and N2 checked; PN1 and PN2 na via their H001; G na via H011 and H012. D03 now also cites the style checks.",
+    "R1 minor: reworded the companion subject check to 'The subject of the drawing on ... fits the Meridian and Ash coffee sticker collection.' The invented 'such as' list is gone.",
+    "R1 minor: F05 is now na on all six proofs ('Openness at 55 mm is judged on the SVG master; the proof matches it per its H001.'). open-space-clear stays cited only under B03 and D07.",
+    "R1 minor: added 'The SVG code of ... declares an explicit viewBox.' (K1_Q2) to the 4 recovered SVGs (cited in D02). Because the same export_settings line requires a viewBox, the same check also went on the 2 companion SVGs and the 6 cut SVGs. Added coverage rule F16 for that export setting.",
+    "R1 minor: added three gang-sheet checks: no-claims K1_Q3 (H025), price K1_Q5 $3/$9 never a per-origin price from meridian_origins.csv (H026), and no-premium K2_Q3 (H027). They are cited in the G cells of F08, F09 and F10 in place of the old na.",
+    "R1 minor: added rule T10 'Hand made, not franchise...' with cells: proofs use H001; G uses H007 to H012; artwork SVGs and cut files are na.",
+    "R2 major: H018 now reads 'carries a note for each sticker saying whether its interior islands are weeded or left on the sheet.' The delivery manifest is no longer mentioned.",
+    "R2 major: retired the 'Kraft/Cream never main ink' checks on all 12 artwork SVGs and proofs, keeping the existing check ids. Each covered_by points to the positive main-ink check (bag SVG and proof H010, companion SVG H006, companion proof H005, window mark H014 plus the new roundel and leaf-ring ink checks) and to the new Ink Black check. Coverage B12 was re-pointed to match.",
+    "R2 major: dropped the palette clause from the six proof opacity checks: 'Apart from anti-aliased edges, every inked area on ... is flat and fully opaque, with no tint, gradient or shadow.'",
+    "R2 major: changed companion proof H009 to 'clearly taller than the capitals beside it, never the same height' and H008 to 'is set on an arch, not on a flat line'. The SVG H009 is now worded '...arches on a curve that spans 40 degrees.'",
+    "R2 minor: removed the unjudgeable 5% figure from all 12 Ink Black checks. They now read 'If Ink Black #201914 appears on ..., it is only fine detail, never a main shape, backing shape, type or the wordmark' (palette usage text). The B13 rule text was updated to match.",
+    "R2 minor: split gang-sheet H016. It is now 'each of the six placed stickers has exactly one closed cut path around it on the CutContour layer', and a new H024 says the layer holds no other paths. H024 is cited in F07 and D09.",
+    "R2 minor (partly): reworded gang-sheet H019 to 'With colour management on, every colour on ... except the CutContour paths matches one of #3E2A20...'. This replaces the jargon 'Viewed colour managed'.",
+    "R2 minor: retired window mark SVG H004 (covered_by H005, H011) and proof H010 (covered_by H011, H009) because neither check can fail. I checked meridian_window_mark.jpg: the only painted lettering is the wordmark.",
+    "R2 minor: companion SVG and proof heading checks now read 'If a flat title line other than the MERIDIAN & ASH wordmark appears on ..., it is set in DM Serif Display Regular capitals.' The copy-face checks were changed to say 'title line' to match."
+   ],
+   "rejected": [
+    {
+     "finding": "R2 gang-sheet H019 fix: drop the colour-management instruction and require a literal palette-hex match",
+     "why": "I reworded the jargon but kept the colour-managed instruction. brand_identity.palette_rules.distribution says 'In the print PDF, convert them with PSOcoated_v3.icc; evaluate the colour-managed proof, not literal RGB hex values inside the CMYK file.' The reviewer's version would have annotators compare literal values, which contradicts that rule. I also left out the palette colour names so the check stays under the word warning."
+    },
+    {
+     "finding": "R2 Ink Black: add '(sample with an eyedropper)' on the PNG proofs",
+     "why": "The reviewer marked this optional. I left it out to keep the checks short: the reworded check no longer needs an area measurement, and the hex is already stated."
+    }
+   ],
+   "unresolved": [
+    "The patch and coverage are generated by /Users/dhiren/Documents/ChatGPT/Adobe_Gpt/reviews/pilot13-ab-fixes-2026-10-21/work/VECTOR-04/build.py, which I edited and reran. The previous versions are saved as build_v1.py, patch_v1.json and coverage_v1.json in the same folder. The post-patch view is in work/VECTOR-04/show2.txt. The validator reports 0 errors and 0 warnings: 220 human checks before, 260 after; 97 auto checks, unchanged; 51 rules."
+   ]
+  }
+ },
+ {
+  "task": "PHOTO-04",
+  "author": {
+   "task": "PHOTO-04",
+   "validator_errors": 0,
+   "validator_warnings": 0,
+   "human_before": 198,
+   "human_after": 159,
+   "rules": 44,
+   "retired": 84,
+   "modified": 39,
+   "added_human": 45,
+   "auto_added": 12,
+   "holes_filled": 45,
+   "unresolved": [
+    "pdf_text_style takes the first match in page order. If a model puts a small mention of a house name (for example a cover list) before the 34 pt heading, the house-name auto check (text 'asa Oliveto' and so on) will false-fail. The rate checks (9 pt) have the same first-match risk if a rate value first shows up in a larger display line.",
+    "Brochure body size (10 pt, H047) and leading (15 pt, H048) stay as human checks done with a PDF reader, because no body copy is fixed for a code check to find. PHOTO-20 kept PDF pt checks the same way; PHOTO-24 retired them instead.",
+    "There is no separate check for the 'accents together no more than 5% of designed area' limit, since a person cannot measure that by eye. The accent checks (hero H017/H017/H016, brochure H034) now say accents appear only as hairline rules, dividers or small labels.",
+    "The relayed user request was 'Give me the link'. This task produces patch and coverage files only, not a published artifact, so there is no link. Outputs are /Users/dhiren/Documents/ChatGPT/Adobe_Gpt/reviews/pilot13-ab-fixes-2026-10-21/patches/PHOTO-04.json and /Users/dhiren/Documents/ChatGPT/Adobe_Gpt/reviews/pilot13-ab-fixes-2026-10-21/coverage/PHOTO-04.json."
+   ],
+   "notes": "Validator result: 0 errors, 0 warnings. Human checks went from 198 to 159 and auto checks from 22 to 34. The coverage table has 44 rules (18 brand, 6 type, 15 brief, 5 deliverable) × 4 outputs = 176 cells, of which 21 are marked na with specific reasons. The build script is /Users/dhiren/Documents/ChatGPT/Adobe_Gpt/reviews/pilot13-ab-fixes-2026-10-21/work/PHOTO-04/build.py and the patched view is work/PHOTO-04/show.txt; I read every resulting check there.\n\nRetired (84):\n- Heroes (72): all 24 typography checks per hero from 2026-09/30. The family checks duplicated H018/H019 (H017/H018 on Verranza). The exact px size, leading and tracking checks cannot be judged on a PNG. They are covered by the family checks, the largest-text check, and a new 'rate set smaller than the booking-action text' check.\n- Brochure (12): house-name 34 pt and rates 9 pt are now checked by code. The duplicate family checks were folded into H035/H036. The five tracking checks were retired because tracking cannot be judged by eye and the code does not measure it.\n\nConverted to code (12 pdf_text_style checks on villa-collection.pdf):\n- 3 house-name checks: 'asa Oliveto', 'asa Scogliera' and 'asa Verranza' in Cormorant Garamond Light at 34 pt. The text leaves out the enlarged initial, which is twice the cap height, so its larger size cannot fail the 34 pt test.\n- 9 rate checks: 520, 680, 560, 590, 740, 620, 640, 780 and 690 from rates_2027.csv, in Source Sans 3 Regular at 9 pt. All nine values are unique.\n- I ran pdf_text_style against the historical run's PDF. It executes, finds the text (house names on pages 2 to 4, rates on page 2) and correctly fails it, because that old run used Didot and Helvetica Neue.\n\nSplit or reworded (39 modified): checks with two or more facts were split, and 'Any' was reworded as 'If ... appears' (no '(when present)' remains):\n- Opacity: solid panels/marks is one check; no scrim or overlay on the photo is now its own check.\n- Colour distribution: three checks (type on Blue is Lime Wash; house name, display lines and button label on Lime Wash are Blue; body, rates and captions on Lime Wash are Ink Charcoal).\n- Voice: naming stone, water and light is one check; no superlative claims is now its own check.\n- Brochure H028 now checks only that the house name sits above its rates; the 'larger' half is covered by the code size checks.\n- The accent rule is now stated positively.\n- Monogram H029 now names the output file and the exact colours.\n\nHoles filled (45 new human checks):\n- On every output: grounds and panels only Lime Wash or Verranza Blue; photograph not recoloured toward the palette; the owner's do-not-want items (no fake evening glow, no crushed blacks); the split colour-distribution and overlay checks.\n- On each hero: if the gate monogram appears, it uses the right colours and is the supplied artwork intact.\n- On the brochure: the supplied monogram appears at least once and is not redrawn; the houses' facts are given in the same order and form so they can be compared; photographs are labelled by villa; secondary headings are smaller than the house names.\n\nKept unchanged in substance: all trap and critical checks. These are the Oliveto green cast, the Verranza orange cast, Scogliera's neutral daylight, the pale-turquoise Scogliera pool versus the deep-blue pools, no generated or extended frames (the portrait terrace trap), Scogliera sleeps 10 (K1_Q5 on the Scogliera hero and on the brochure), no Casa Fienile (K1_Q5), season words not S1/S2/S3, and every rate, minimum stay and sleeps value. The signature-initial check (twice the cap height) is kept on all four outputs."
+  },
+  "reviews": [
+   {
+    "lens": "FIDELITY AND COVERAGE",
+    "verdict": "The patch passes the validator (0 errors, 0 warnings; 198 to 159 human checks, 22 to 34 auto checks). Fidelity is good. All 84 retirements are typography-only (size, leading, tracking or duplicate family checks). Every check guarding a trap or record value is kept with the same fact: the casts, pool colours, extended portrait frames, Fienile, Scogliera sleeping 10, season words and every rate and minimum stay. That includes the K1_Q5 checks H004 and H005 and the hero H007. The signature initial checks (H020, H020, H019, H037) are kept. The rate auto values and families match rates_2027.csv and the type scale (Source Sans 3 Regular, 9 pt). I opened all 21 \"na\" cells and more than 60 cited cells; every cited id exists and tests its rule on that output. Five problems remain. 1 (major): the three house-name pdf_text_style autos match only the first occurrence of the name, so they can grade a caption or table entry and wrongly fail; H042 should come back as a human check. 2: the brochure's house-name-larger-than-rates fact was split out of H028 and now relies only on autos that can be skipped. 3: the 5% accent-area rule is missing from the table and from every output. 4: the owner's \"computer's idea of stone\" do-not-want item has no check. 5: the opacity check wording, which can fail a correctly anti-aliased monogram and omits blend mode.",
+    "counts": {
+     "critical": 0,
+     "major": 1,
+     "minor": 4
+    }
+   },
+   {
+    "lens": "LANGUAGE, ATOMICITY AND OBSERVABILITY",
+    "verdict": "Not ready yet. The patch validates cleanly (0 errors, 0 warnings; human checks 198 to 159, auto checks 22 to 34) and its coverage is sound. The pdf_text_style changes are correct: house names at 34 pt matched by their letters after the enlarged initial, all nine rates at 9 pt, and the matching exact-size checks retired. Every check names its output as “Name” (file.ext), and the k_ids I checked are valid. Three problems should be fixed before apply. First, villa-collection H035 contradicts the brand rule (and H038) by requiring Cormorant Garamond for numerals inside headings. Second, the numeral checks (hero H021/H020 and brochure H038) are compound and include tabular figures, which cannot be seen on a PNG with one price. Third, brochure H040 packs nine facts into one check. The remaining findings are wording and near-duplicate cleanups: the twice-cap-height signature checks need a concrete reference letter but should stay, \\\"rate\\\" vs \\\"offer price\\\" on H059, and the accent checks repeat the panel and text-colour checks.",
+    "counts": {
+     "critical": 0,
+     "major": 3,
+     "minor": 11
+    }
+   }
+  ],
+  "repair": {
+   "task": "PHOTO-04",
+   "validator_errors": 0,
+   "human_after": 191,
+   "fixed": [
+    "F1 (major, confirmed): verify_outputs.py pdf_text_style returns on the first page with a match and reads the first match there. On the 2026-09-28 pilot brochure the house names also appear on p5, in the comparison table. Removed the 3 autos bro-style-oliveto, bro-style-scogliera and bro-style-verranza. Un-retired villa-collection/H042 and reworded it: \"In Acrobat's text properties, each house name heading in “Villa comparison brochure” (villa-collection.pdf) is 34 pt, not counting its enlarged initial.\" T01 for the brochure now cites H035, H042 and the new H067. Removed the code reference from H041's retire reason. Kept the 9 rate autos, now A008-A016.",
+    "F2: H028 keeps only the position fact. Added H067 (K5_Q2), which says the house name is set larger than that house's rates. BR11 and T01 cite it.",
+    "F3: added coverage rule B19 for the 5% accent cap, with one K2_Q3 check per output: H061 on each hero and H069 on the brochure.",
+    "F4: owner_note.txt says \"No stone turned into a computer's idea of stone\". Added rule B20 with one K2_Q4 texture check per output: H062 on each hero and H070 on the brochure.",
+    "F5: the opacity checks (oliveto/scogliera H014, verranza H013, brochure H032) now cover panels and buttons (page grounds and panels on the brochure) and add 'blend mode'. I split the monogram 100% opacity into its own check: heroes H060, conditional, and brochure H068. That way anti-aliased artwork is never judged as 'solid colour'. B15 now cites these.",
+    "F6: H035 now excludes numerals ('apart from any numerals in them'), so it no longer contradicts H038.",
+    "F7: hero numeral checks (H021/H021/H020) now say only that no numeral is in Cormorant and every figure is in Source Sans 3. The tabular claim is dropped on the PNGs. Brochure H038 says no serif numerals, including in headings. Added H071 for tabular alignment where figures are stacked. Coverage T06 rule and cells updated.",
+    "F8: H040 now covers Casa Verranza only, with examples that set the pass standard. Added H072 for Oliveto and H073 for Scogliera. BR09 updated.",
+    "F9: the hero voice checks (H023/H023/H022) keep the requirement and now give examples: walls, pool or cove, daylight.",
+    "F10: the signature checks now compare against a visible capital, for example the “C” of “Casa Oliveto” against the capital “O”, with S and V on the other heroes. Brochure H037 compares the “C” with the capital starting the second word.",
+    "F11: hero H059 now says 'The offer price ... is set smaller than the booking-action text'.",
+    "F12: the accent checks (hero H017/H017/H016, brochure H034) now only say 'used only for hairline rules, dividers or small labels'. The duplicated ground, panel and body-text clauses are gone. B05 rule text updated.",
+    "F13: reworded hero H051/H052 as suggested, and the brochure H057/H058 the same way.",
+    "F14: hero H057 now names the monogram's parts (interlocked V and C, oval rule, anchor). The fact that it must be the supplied artwork and not redrawn is a new conditional check, H063, on each hero. BR15 is now 'artwork, not a typeface to recreate', and the hero cells cite H063 instead of na.",
+    "F15: brochure H002 now says every rate is 'labelled with the season it belongs to in rates_2027.csv'.",
+    "F16: split the 6 three-value record checks per season. H009/H010/H016/H017/H023/H024 keep Spring. New H074-H085 cover High Summer and Autumn, with values from rates_2027.csv. BR05, BR07 and D04 cite them.",
+    "F17: H047 now reads 'In Acrobat's text properties ... body text is 10 pt' and H048 'Measured in Acrobat, wrapped body text ... has 15 pt between baselines'. Both state the method.",
+    "F18: the mandatory-colour checks (hero H013/H013/H012, brochure H031) now say 'in the type, panels or buttons ..., not only in the photograph'.",
+    "F19: brochure H064 now reads 'appear in the same order and with the same labels for all three houses'."
+   ],
+   "rejected": [],
+   "unresolved": [
+    "The 9 rate autos (A008-A016) have the same first-match behaviour. If a rate also appears in 10 pt body copy before its 9 pt rate placement, the auto fails a brochure that may comply. I kept them as reviewer 1 advised, because the type scale makes every rate 9 pt.",
+    "F5 departs from the reviewer's single-sentence wording: I split monogram opacity into separate checks (heroes H060, brochure H068) to keep each check atomic. This adds 4 human checks.",
+    "Check volume: human checks went from 159 after the first patch to 191, still below the original 198. Most of the increase comes from the per-season record split (+12) and the new B19/B20 checks (+8).",
+    "H042 and H047 assume live text that Acrobat can read. The export setting allows outlined lettering ('searchable text where practical'), so the annotator would have to measure by hand.",
+    "Files: /Users/dhiren/Documents/ChatGPT/Adobe_Gpt/reviews/pilot13-ab-fixes-2026-10-21/patches/PHOTO-04.json, /Users/dhiren/Documents/ChatGPT/Adobe_Gpt/reviews/pilot13-ab-fixes-2026-10-21/coverage/PHOTO-04.json, repair script and pre-repair backups in /Users/dhiren/Documents/ChatGPT/Adobe_Gpt/reviews/pilot13-ab-fixes-2026-10-21/work/PHOTO-04/"
+   ]
+  }
+ },
+ {
+  "task": "PHOTO-28",
+  "author": {
+   "task": "PHOTO-28",
+   "validator_errors": 0,
+   "validator_warnings": 10,
+   "human_before": 164,
+   "human_after": 152,
+   "rules": 57,
+   "retired": 37,
+   "modified": 40,
+   "added_human": 25,
+   "auto_added": 0,
+   "holes_filled": 12,
+   "unresolved": [
+    "10 warnings left on purpose. 7 are checks of 31 to 35 words that list all six instructor/class, instructor/price or portrait/name pairs (launch H014, H024; feed H001, H011; story H013, H023), plus one more at the same length. Cutting them would drop the record values.",
+    "4 pixel-value warnings left on purpose: the 34 px wordmark limit (launch H031, feed H032, story H029) and the story safe-area margins of 250/320/60 px (story H001). The brief states these as hard limits, and an annotator can measure them with a ruler."
+   ],
+   "notes": "PHOTO-28 is done: the validator reports 0 errors and 10 warnings. The relayed user request was only \"Give me the link\". This task makes local patch and coverage files and publishes nothing, so there is no link to give. The files are:\n- /Users/dhiren/Documents/ChatGPT/Adobe_Gpt/reviews/pilot13-ab-fixes-2026-10-21/patches/PHOTO-28.json\n- /Users/dhiren/Documents/ChatGPT/Adobe_Gpt/reviews/pilot13-ab-fixes-2026-10-21/coverage/PHOTO-28.json\n\nWork scripts are build.py and cov.py in work/PHOTO-28/.\n\nKnown issue confirmed: the task has three PNG outputs (studio-launch 56 human checks, class-feed 55, booking-story 53). Each carried 12 old typography checks marked \"(when present)\": 3 repeated an existing font check and 9 asked for exact size, leading or tracking, which cannot be judged on a PNG.\n\nRetired (37):\n- 36 typography checks across the three PNGs, each pointed at the matching font-family check or the relative-size check.\n- Launch H005, \"class offer sits above booking action\". The brief makes booking-action placement and page hierarchy the designer's choice. Now covered by H003 and the new booking-action check.\n\nChanged (40):\n- **Split compound checks.** The opacity check on each output is now three checks: solid at full opacity, no type on a photo, no scrim. The type-colour check is now two: type on Warm Off White, and a new check for type on Sage. Room-photo upholstery and floor are now separate checks, because they are the planned opposite white-balance trap. On the feed, H005 is now the general ground-colour check and the cutout ground has its own new check.\n- **One check per text role.** Launch H004 now covers the headline only; secondary headings got a new conditional check. Feed H038 and story H036 now cover the headline only.\n- **Unstated hierarchy replaced.** Feed H008 was \"class name larger than instructor name\" and story H004 was \"booking line is the largest text\". Neither is in the brief, and the story one conflicts with the type scale. Both now say the headline is larger than body and fine print, which the type scale fixes.\n- **Wordmark trap checks reworded.** The white box and grey fringe checks named verda_wordmark_transparent.png as the source of those defects. The defects belong to the old verda_logo_web.png. The facts stay the same and the old file is now listed as the reference asset.\n- **Other fixes.**\n  - The 34 px wordmark check now says it is measured on the visible letterforms, as the brief says.\n  - Launch \"own lock\" now reads \"own lockup\".\n  - The instructor_04 check no longer quotes the 825 x 1100 px source size in its wording; the size stays in the evidence.\n  - Prices, font-family, pairing and story-identity checks were shortened.\n\nCoverage holes filled (12):\n- On every output:\n  - The room is lit by one soft daylight (the mixed-light trap).\n  - The room is brighter than the dusky source (the brief's \"improve them\").\n  - Every studio interior comes from the two supplied frames.\n- A plain \"a booking action is shown\" check on the launch page and the story.\n- The secondary-heading check on the launch page.\n\nThe other 13 added checks are the splits above.\n\nCoverage table: 57 rules (19 brand, 10 type, 22 brief, 6 deliverable bullets copied exactly), 171 cells, 22 marked not applicable with specific reasons.\n\nLeft alone: K1_Q5 checks, planned-trap checks (window, instructor_04 resolution, the instructor_02 and instructor_05 cutouts, roster and owner-note reconciliation, Erin), and auto checks. No pdf_text_style checks were added because all outputs are PNG.\n\nOne inconsistency in the source spec: the typography section and signature move still name verda_logo_web.png, while the brief says verda_wordmark_transparent.png replaces it. The checks follow the brief."
+  },
+  "reviews": [
+   {
+    "lens": "FIDELITY AND COVERAGE",
+    "verdict": "The patch is mostly faithful. All six K1_Q5 checks (Erin, opening date) are untouched. The planned traps are kept: wordmark box, fringe and counters; the clipped window; instructor_04 enlargement; the pale-top and hair cutouts (feed); class codes and roster prices. Retiring the exact size, leading and tracking checks on the PNGs is correct. The splits of opacity, distribution and upholstery/floor are clean, and the new one-daylight, not-dusky and own-room checks trace to the brief, palette rules and asset plan. There are 57 rules, all three commission.content pairs (6 bullets) are copied exactly, and all 4 type-scale roles are present. I opened all 22 na cells and about 50 check cells. One real hole: the photography rule that photos are \\\"never recoloured toward the palette\\\" or pushed to the Sage/Oak hexes has no rule row and no check on any output. Smaller issues: the fringe wording conflicts with permitted anti-aliasing, the T08 and R20 na reasons are questionable, the launch offer has no guard against a repeated Foundations row, and H005's covered_by is misleading. Fix the major item before applying.",
+    "counts": {
+     "critical": 0,
+     "major": 1,
+     "minor": 5
+    }
+   },
+   {
+    "lens": "LANGUAGE, ATOMICITY AND OBSERVABILITY",
+    "verdict": "The patch validates with 0 errors and its coverage is complete, but it needs a language and atomicity pass before it is accepted. There are 13 findings, 4 of them major. Several template families tested on all three PNGs still pack two facts into one check: Oak hairline-only plus the 5% cap, no exclamation mark plus no discount wording, the drawing not retyped plus not stretched, and the cut-out bite plus halo. Some wording asks for things a viewer cannot see in a PNG (opacity, blend mode, a 5% area share) or states no standard (\\\"small labels\\\", \\\"clearer\\\"). The pixel caps (34 px wordmark, story safe area) are fixed brief rules, so they should be reworded to tell the annotator to measure, not retired. Two k_id fixes: the headline-largest checks should be K5_Q2, and the room-frame photography checks should be K2_Q3. One near-duplicate (class-feed H063 vs H005) should be trimmed. All human checks name their output correctly as “Name” (file.png), and none is still a comparison with other outputs.",
+    "counts": {
+     "critical": 0,
+     "major": 4,
+     "minor": 9
+    }
+   }
+  ],
+  "repair": {
+   "task": "PHOTO-28",
+   "validator_errors": 0,
+   "human_after": 169,
+   "fixed": [
+    "L1-F1: Added B20 (palette_rules.photography: 'never recoloured toward the palette') with new K2_Q3 checks l/f/s-no-palette-wash (studio-launch H066, class-feed H064, booking-story H062), reference_assets verda_studio_frame_01/02.jpg.",
+    "L1-F2: Reworded the fringe checks (studio-launch H029, class-feed H030, booking-story H027) to end with 'normal edge anti-aliasing is fine'. Shortened the palette-only colour checks (H033/H033/H030) and added 'anti-aliased edges aside', per palette_rules.opacity 'Supplied raster identity artwork retains its edge anti-aliasing'. B17 now cites both sources.",
+    "L1-F3: Split T08. T08 is now the brand-wide signature move ('wordmark sits above the headline') with new f/s-mark-above-headline checks (class-feed H065, booking-story H063). The new brief rule R23 holds the launch-only 'separate lockup' (H032); its na reasons quote the brief.",
+    "L1-F4: R20 is now the planned-trap bite rule on all three outputs. Added conditional l/s-cutout-bite checks (studio-launch H067, booking-story H064). Added R24 for the halo, with class-feed H013 and conditional l/s-cutout-halo checks (H068, H065).",
+    "L1-F5: studio-launch H006 now lists 'exactly six classes, each once' to catch the trap row (Erin Coyle RF-FND $34).",
+    "L1-F6: The H005 retirement now has an empty covered_by. Its why now says the ordering rule is dropped because the brief makes it a designer choice, and that no other check tests it.",
+    "L2-F1: Rewrote the Oak checks (H038/H037/H035) as one fact: hairline rules or dividers only, never a ground, panel, button, text or fill. The why says this covers the 5% cap. B06 text updated.",
+    "L2-F2: The voice checks (H043/H043/H041) now cover discount and urgency wording only. Added l/f/s-no-exclaim checks (H069/H066/H066) and new rule B21. B19 text narrowed to match.",
+    "L2-F3: Rewrote the opacity checks (H035/H035/H032) as the visible result: flat, solid colour, with nothing showing through and no gradient or drop shadow. B07 text updated.",
+    "L2-F4: studio-launch H002 now says only that nothing covers the class list. Added l-offer-one-block (H070, K1_Q1) and rule R25 for the acceptance requirement.",
+    "L2-F5: class-feed H013 now covers the halo only. Added f-cutout-bite (H067) for the bite.",
+    "L2-F6: H026/H028/H003 now say only 'not retyped'. Added l/f/s-mark-proportion checks (H071/H068/H067) and rule B22. B15 text narrowed.",
+    "L2-F7: The 34 px checks (H031/H032/H029) and booking-story H001 now start with 'Measured in an image editor'.",
+    "L2-F8: H037/H036/H034 now name the passcard_2025_print.pdf field labels as the Sage label standard, with passcard_2025_print.pdf in reference_assets.",
+    "L2-F9: Set k_id to K5_Q2 on studio-launch H044, class-feed H008 and booking-story H004.",
+    "L2-F10: Set k_id to K2_Q3 on the upholstery checks (H020/H024/H019) and on the floor-oak and one-daylight adds for all three outputs (9 checks).",
+    "L2-F11: f-cutout-ground (class-feed H063) now holds only the new fact: none of the portrait's original wall or background shows behind the cut-out. H005 keeps the ground colour. D04 cites H063, H005 and H028.",
+    "L2-F12: Shortened the portrait-file lists to the range 'verda_instructor_01.jpg to verda_instructor_06.jpg' in studio-launch H023, booking-story H022, class-feed H006 and H009. The H024/H023/H002 name-to-file maps are kept as they are because each name must match its own file.",
+    "L2-F13: The not-dusky checks (l/f/s-not-dusky) drop 'and clearer' and now test only that the room is visibly brighter."
+   ],
+   "rejected": [],
+   "unresolved": [
+    "Validator: 0 errors, 11 warnings. Four warnings are intended pixel values in the measure-in-editor checks (34 px wordmark ×3, 250/320/60 px safe area on booking-story H001). They are fixed brief rules and cannot be retired. Seven are word-count warnings (31 to 37 words, all under the 40 limit), mostly the instructor-to-class and name-to-portrait maps (class-feed H001, H011; studio-launch H014, H024; booking-story H013, H023) plus booking-story H001. These maps must list every pairing to guard the roster trap.",
+    "Judgement call: T08 now applies the brand signature move (wordmark above the headline) to class-feed and booking-story. It follows type_system.signature_move ('Place ... above the headline'). The brief's 'on the launch page ... as a separate lockup' is read as narrowing only the separate-lockup part. If the author reads the brief as limiting the whole move to the launch page, retire class-feed H065 and booking-story H063.",
+    "Volume: human checks go from 164 in the spec to 169 after the patch (152 before this repair; +17 adds). Backups and the repair script are in /Users/dhiren/Documents/ChatGPT/Adobe_Gpt/reviews/pilot13-ab-fixes-2026-10-21/work/PHOTO-28/ (patch_before_repair.json, coverage_before_repair.json, repair.py, show_after_repair.txt)."
+   ]
+  }
+ },
+ {
+  "task": "PHOTO-26",
+  "author": {
+   "task": "PHOTO-26",
+   "validator_errors": 0,
+   "validator_warnings": 0,
+   "human_before": 100,
+   "human_after": 107,
+   "rules": 31,
+   "retired": 6,
+   "modified": 67,
+   "added_human": 13,
+   "auto_added": 1,
+   "holes_filled": 13,
+   "unresolved": [
+    "Only one pdf_text_style check could be added (the page 1 \"THORNMERE HOME\" on wholesale-presentation.pdf). Neither PDF has a fixed list of which products, care lines or prices appear, so the exact-size, leading and tracking checks for every type role stay as human checks on the live PDF text, reworded.",
+    "The auto check looks for the uppercase \"THORNMERE HOME\", because the display style is all caps and the type-scale sample spells it that way. A deck whose page 1 live text is literally \"Thornmere Home\" would fail it.",
+    "The brand name sits under the 13 pt main-heading size check (H037). It must also be the largest text on page 1 (H010). The brief gives no size for the brand name, so annotators judge whether the cover brand name counts as a main heading.",
+    "No link was produced. This workflow writes local patch and coverage files only and publishes no artifact."
+   ],
+   "notes": "PHOTO-26 is finished: the patch and coverage files validate with 0 errors and 0 warnings. Human checks went from 100 to 107 and auto checks from 14 to 15. The collection spread went from 49 to 52 human checks and the wholesale presentation from 51 to 55. You asked for the link: there isn't one. This run only writes two local files and publishes nothing. They are /Users/dhiren/Documents/ChatGPT/Adobe_Gpt/reviews/pilot13-ab-fixes-2026-10-21/patches/PHOTO-26.json and /Users/dhiren/Documents/ChatGPT/Adobe_Gpt/reviews/pilot13-ab-fixes-2026-10-21/coverage/PHOTO-26.json. They are built by /Users/dhiren/Documents/ChatGPT/Adobe_Gpt/reviews/pilot13-ab-fixes-2026-10-21/work/PHOTO-26/build.py.\n\nBoth known issues were real:\n- **Live text in both A4 screen PDFs:** handled as described below.\n- **Long checks:** 14 checks were over 40 words, with the longest at 42. I shortened every one. All checks are now 30 words or fewer, mostly by writing file runs as \"textile_flatlay_01.jpg to textile_flatlay_06.jpg\".\n\n**Retired (6):** the six old 2026-09-30 \"(when present)\" font checks, three per PDF (display, body and fine print). Each repeated an existing font check and points to it with covered_by.\n\n**Modified (67):**\n- **Typography, both PDFs:**\n  - The remaining \"(when present)\" size, leading and tracking checks now read \"Any subheading ... is set at 11 pt\" or \"Every price, dimension and care line ... is set at 8.5 pt\".\n  - Leading is phrased as \"pt between baselines\".\n  - The display font check was split: it now covers family, weight and capitals only. Tracking (+200) and subheadings have their own checks.\n  - The 40 mm check now follows the current type-scale note (\"40 mm of bare paper below the heading on a single-product page\"). The old \"stands alone at the head of the page\" wording is gone.\n- **Compound palette checks:** split into one fact each:\n  - page ground\n  - Charcoal never a ground\n  - Soft Clay type only as a running foot\n  - solid colour at full opacity\n  - one palette-list check for type, grounds, panels and other elements, which also bans black and #211E1A\n  - band colour, wholesale presentation only\n- **Trap checks:** all kept with the same facts and K1_Q5 critical status, only shorter. These cover:\n  - handle loops\n  - pairs shown whole\n  - mislabelled photos (\"Oatmeal Teapot\" on the jug in autumn_shoot_06.jpg)\n  - the violet throw in textile_flatlay_02.jpg\n  - the warm phone colour note\n  - oatmeal, soft clay and charcoal colours staying true\n  - picture_filename mismatches\n  - price and care wording\n\n**Added (14), filling 13 coverage holes plus one auto check:**\n- Per PDF (6 each):\n  - Stoneware Charcoal type on light grounds, apart from a Soft Clay running foot\n  - Warm Paper Ground type on Indigo Dye\n  - Warm Paper Ground is the largest designed area on every page\n  - no drop shadow or glow under cut-out pieces\n  - no scrim or overlay on photographs\n  - on pages showing several products, each name sits beside its own product\n- Wholesale presentation only:\n  - the band is the same colour on every page that carries it\n  - one pdf_text_style auto check: \"THORNMERE HOME\" on page 1 in Barlow Condensed Medium, with no size because the brief states none\n\n**Coverage table (31 rules × 2 outputs = 62 cells, 5 marked not applicable):**\n- 13 brand rules covering distribution, opacity, forbidden colours and photography\n- 9 type rules: one per type-scale role, plus the 16 pt cap, 40 mm, names beside products, font families, and name larger than price\n- 6 brief rules: brand name in the display font, geometry, textile patterns, material colours, facts from the CSV, and photo labelling\n- 3 deliverable rules, one per commission.content bullet\n\nThe 5 not-applicable cells are 2 band rules on the collection spread and 3 commission bullets that belong to the other output."
+  },
+  "reviews": [
+   {
+    "lens": "FIDELITY AND COVERAGE",
+    "verdict": "The patch holds up on fidelity. I found no weakened traps or critical checks, and every coverage cell I opened is correct.\n\n- **Planned traps:** every one is still guarded on both PDFs. That covers the pierced-pitcher loops (03/08), the mug and teapot loops (01/13), the styled pairs (04/07/10/13 on the spread; 04/07/10 on the deck, as before), the violet flatlay_02, the phone colour note, the bold-Arial price and #211E1A near-black from the spring catalogue, and the CSV picture mismatches.\n- **K1_Q5 checks:** all six are kept with the same fact and examples (spread H004, H009, H011; deck H004, H013, H015).\n- **Splits and retirements:** the compound palette and opacity checks were split correctly into H050–H058, with no fact lost. The six duplicate typography checks retired correctly into the family checks.\n- **Word counts:** the longest check after the patch is 30 words, so the audit's \"over 40 words\" issue is resolved.\n- **Coverage table:** it has 31 rules. It lists all palette rules, all four type-scale roles, the signature move and name-adjacency rule, the type rules, and all three commission bullets copied exactly. I confirmed all 62 cells, including the 5 \"na\" cells (band rules B07 and B08 on the spread, D01 on the deck, D02 and D03 on the spread); every \"na\" reason is correct.\n- **Auto checks:** only one `pdf_text_style` check was added (A008), and that is right. The only fixed text the brief gives is \"Thornmere Home\"; which products appear on each PDF is open. Keeping the human exact-size checks on these live-text PDFs is allowed.\n- **Audit wording:** the audit called both files A4 PDFs, but only the spread is A4. The presentation is 338.667 x 190.5 mm.\n\nFive small problems remain:\n1. The Soft Clay running foot is never required to sit on Warm Paper Ground (H032/H034).\n2. H029 and H031 now fail a full-bleed photo page, which the brand allows.\n3. It is unclear whether the brand name counts as a 13 pt main heading: A008 omits a size while H037 demands 13 pt. A008 can also skip mixed-case text or test a running foot instead of the title.\n4. No check covers \"no crop marks and no added bleed\" on either PDF.\n5. The truth constraint against invented claims has no check on either output.",
+    "counts": {
+     "critical": 0,
+     "major": 0,
+     "minor": 5
+    }
+   },
+   {
+    "lens": "LANGUAGE, ATOMICITY AND OBSERVABILITY",
+    "verdict": "The patch validates clean (0 errors, 0 warnings; 107 human checks). The audit's \"over 40 words\" issue is fixed: no human check is now over 30 words. All checks name their output as “Name” (file.pdf), every k_id is valid, and none compare with another output. Two problems remain. First, 16 exact leading and tracking checks are still human checks on the two live-text PDFs, and a reviewer cannot judge them by looking. Retire them, keeping the signature wide tracking as a visible check. Second, each output has three overlapping \"name labels its own product\" checks (H010/H011/H055 and H005/H015/H057). Smaller fixes: the redundant 16 pt cap (H021/H024), unclear \"its frame's\" wording (H018/H019, H022/H023), a compound Soft Clay foot check, the brand name repeated in wholesale H006 after A008, and wholesale H013 leaving out pair frame autumn_shoot_13.jpg. I wrote no notes file; findings are returned here.",
+    "counts": {
+     "critical": 0,
+     "major": 2,
+     "minor": 7
+    }
+   }
+  ],
+  "repair": {
+   "task": "PHOTO-26",
+   "validator_errors": 0,
+   "human_after": 97,
+   "fixed": [
+    "B05 gap (Soft Clay foot not tied to Warm Paper Ground): H032/H034 now say Soft Clay type 'appears only in a running foot set on Warm Paper Ground #F6F1E8' (palette usage: 'a small running foot in tracked capitals on Warm Paper Ground'). The foot styling became its own optional checks, new H056 (spread) and H059 (presentation): 'If a Soft Clay running foot appears ..., it is small capitals with open letter spacing.' This also fixes the compound-check finding. Coverage B05 rule text and cells updated.",
+    "H029/H031 were stricter than the brand: both now read 'Photographs aside, the page ground of every page of ... is Warm Paper Ground #F6F1E8.' Coverage B01 rule text updated.",
+    "Brand-name size ambiguity: chose reading (a). Type scale step 01 (13 pt) has the sample 'THORNMERE HOME', and the rules say 'Use these point sizes ... including when the presentation is viewed on screen'. Added size_pt 13 to wholesale A008, and its check now ends 'at 13 pt'. Its evidence_reference records that the match is case-sensitive and takes the first occurrence on page 1, so the brand name must be live uppercase text. H037 is reworded to say where the size is read.",
+    "Export settings ('no crop marks and no added bleed') had no check, and I confirmed verify_outputs.py measures only the TrimBox. Added K1_Q2 checks H057 (spread, 210 x 297 mm) and H060 (presentation, 338.667 x 190.5 mm), plus coverage rule E01.",
+    "Truth constraint truth_constraints[0] had no check. Added K1_Q3 checks H058 (spread) and H061 (presentation): 'No product feature, material, use or care claim ... goes beyond what thornmere_autumn_skus.csv or the brief states.' Added coverage rule F07.",
+    "Retired 12 leading and plain tracking checks that cannot be judged by eye. Spread: H036, H040, H044, H045, H048, H049. Presentation: H038, H042, H046, H047, H050, H051. Each is covered_by its role's family check and size check.",
+    "Kept the signature tracking as one visible fact. Spread H037 and presentation H039 now read 'Product names on ... have wide, open letter spacing, clearly looser than ordinary text.' Subheading tracking (spread H041, presentation H043) is now 'visibly open letter spacing'.",
+    "Retired the near-duplicates spread H010 and presentation H005. They are covered_by H011/H055 and H015/H057, and the picture_filename trap stays in the K1_Q5 checks H011/H015. Removed both from coverage F06 and D03.",
+    "Retired spread H021 and presentation H024 (the 16 pt cap), which are implied by the 13 pt product-name checks H035/H037. Coverage T05 now points at H035/H037.",
+    "Size checks (spread H035, H039, H043, H047; presentation H037, H041, H045, H049) now end 'as shown in the PDF's text properties'.",
+    "Reworded spread H018/H019 and presentation H022/H023 to say 'keeps its source photo's ... colour' instead of 'frame', and fixed the garbled glaze list. The trap facts are unchanged.",
+    "Presentation H006 no longer names the brand name, which now rests on A008. Coverage F01 for the presentation points at A008.",
+    "Presentation H012 is now a presence check only: 'Every product shown ... has its name, dimensions, materials, care line and price printed with it.'",
+    "Presentation H013 (K1_Q5) now includes autumn_shoot_13.jpg. The asset plan calls it 'STYLED PAIR/STACK #4 — a teapot and a separate cup', which matches spread H004.",
+    "Removed the unobservable rationale clause from spread H009 and presentation H004. The K1_Q5 price fact is unchanged.",
+    "Updated coverage T01 to T04 to drop the retired ids."
+   ],
+   "rejected": [],
+   "unresolved": [
+    "A008 (pdf_text_style) searches case-sensitively and stops at the first 'THORNMERE HOME' on page 1, and that code cannot be changed. Two cases matter. A name typed in mixed case and set in caps by a style returns evaluation_error (unavailable), so the page 1 brand-name font and size then get no check. A running foot in Barlow Condensed reading 'THORNMERE HOME' that comes earlier on page 1 than the title could fail on size_pt 13. Both caveats are recorded in A008's evidence_reference.",
+    "Choosing reading (a), the 13 pt brand name, means a large cover title fails A008 and H037. This follows type scale step 01 and the rule 'Use these point sizes ... including when the presentation is viewed on screen', but the task author should confirm it is the intended reading.",
+    "Backups of the files before this repair, and the repair script, are in /Users/dhiren/Documents/ChatGPT/Adobe_Gpt/reviews/pilot13-ab-fixes-2026-10-21/work/PHOTO-26/. The patched files are /Users/dhiren/Documents/ChatGPT/Adobe_Gpt/reviews/pilot13-ab-fixes-2026-10-21/patches/PHOTO-26.json and coverage/PHOTO-26.json. Validator: 0 errors, 0 warnings, human checks 100 -> 97, auto checks 14 -> 15, 33 coverage rules. No human check is over 30 words."
+   ]
+  }
+ }
+]

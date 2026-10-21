@@ -46,7 +46,7 @@ Buyers aged 30 to 55 replacing a ten year old family car, deciding on trust befo
 
 ## Typography
 
-Apply these settings to newly typeset text, including headings, supporting copy and fine print. Do not change lettering already inside a photograph or rebuild a supplied logo to match a font. A style listed here does not ask you to add copy or a deliverable that the brief does not request. If a named font is unavailable, ask us before substituting it.
+Apply these settings to newly typeset text, including headings, supporting copy and fine print. Do not change lettering already inside a photograph or rebuild a supplied logo to match a font. A style listed here does not ask you to add copy or a deliverable that the brief does not request.
 
 Sizes apply at the delivered canvas size, not the browser's zoom level. Tracking is in thousandths of an em: +20 means 0.020 em, not 20 pixels. Leading means the distance between text baselines. It applies only to multiline text. Where a point value is used on a digital canvas, 1 pt = 4/3 px; do not use the image's DPI metadata to change it.
 
@@ -95,7 +95,7 @@ Display face: Source Serif 4. Text face: Source Sans 3.
 
 The samples load the supplied font files. Their display size is reduced for this guide; use the stated deliverable settings, not the on-screen sample size. Fonts and their OFL licences are downloadable in Source assets.
 
-Apply these settings to newly typeset text, including headings, supporting copy and fine print. Do not change lettering already inside a photograph or rebuild a supplied logo to match a font. A style listed here does not ask you to add copy or a deliverable that the brief does not request. If a named font is unavailable, ask us before substituting it.
+Apply these settings to newly typeset text, including headings, supporting copy and fine print. Do not change lettering already inside a photograph or rebuild a supplied logo to match a font. A style listed here does not ask you to add copy or a deliverable that the brief does not request.
 
 Sizes apply at the delivered canvas size, not the browser's zoom level. Tracking is in thousandths of an em: +20 means 0.020 em, not 20 pixels. Leading means the distance between text baselines. It applies only to multiline text. Where a point value is used on a digital canvas, 1 pt = 4/3 px; do not use the image's DPI metadata to change it.
 

@@ -1,7 +1,13 @@
-# Open work (priority order, as of 2026-10-09)
+# Open work (priority order; 2026-10-21 update at the top)
 
-1. **Expert-feedback plan for the pilot** (`EXPERT_FEEDBACK_2026-10-07.md`). Blocked on 3 decisions from Dhiren
-   (fonts, logos, scope). Output: `docs/gatsby-v7/annotation-pilot-v2/`, later Gatsby V8 for all 100.
+0. **2026-10-21:** pilot-13 fixes A+B done (`PILOT13_AB_FIXES_2026-10-21.md`). Next: confirm its judgement calls; share a
+   Brand Identity question set and move Decision Quality there; re-import the annotation sheet; check the 12 other marks
+   produced by `benchmark_v4/clean_adobe_vectors.py` for dropped coloured elements; roll the same fixes to the other 87 tasks.
+
+
+1. ~~Expert-feedback plan for the pilot~~ DONE: implemented in place by the 2026-10-14 refresh (OFL font swap, supplied
+   clean logos, purpose/export per deliverable, fixed vs open decisions) and the 2026-10-21 fixes. Remaining: roll out to
+   the other 87 tasks as Gatsby V8.
 2. **MOTION fixes** (all 20 MOTION tasks):
    - consolidation to "one check per rule per deliverable" was never run on MOTION (or LAYOUT-24..35);
    - MOTION-15..19 never independently reviewed;

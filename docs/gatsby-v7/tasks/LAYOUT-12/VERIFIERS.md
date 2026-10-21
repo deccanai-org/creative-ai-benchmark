@@ -60,23 +60,52 @@ Revised input pack. Previous execution results are historical, not current ratin
 - `LAYOUT-12/release-post-r010/A002` “Night release post - 2026-10-17” (release-post-r010.png) opens as a valid PNG file with no errors or corruption.
 - `LAYOUT-12/release-post-r010/A003` “Night release post - 2026-10-17” (release-post-r010.png) is exactly 1080 pixels wide.
 - `LAYOUT-12/release-post-r010/A004` “Night release post - 2026-10-17” (release-post-r010.png) is exactly 1350 pixels tall.
+- `LAYOUT-12/poster-direction-type-led/A006` “After Dark poster direction - Type-led” (poster-direction-type-led.pdf) uses RGB colour only, with no CMYK colour and no CMYK output intent.
+- `LAYOUT-12/poster-direction-type-led/A007` “After Dark poster direction - Type-led” (poster-direction-type-led.pdf) embeds every font it uses.
+- `LAYOUT-12/poster-direction-image-led/A006` “After Dark poster direction - Image-led” (poster-direction-image-led.pdf) uses RGB colour only, with no CMYK colour and no CMYK output intent.
+- `LAYOUT-12/poster-direction-image-led/A007` “After Dark poster direction - Image-led” (poster-direction-image-led.pdf) embeds every font it uses.
+- `LAYOUT-12/poster-direction-graphic-led/A006` “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf) uses RGB colour only, with no CMYK colour and no CMYK output intent.
+- `LAYOUT-12/poster-direction-graphic-led/A007` “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf) embeds every font it uses.
+- `LAYOUT-12/promoter-deck/A006` “Promoter pitch deck” (promoter-deck.pdf) uses RGB colour only, with no CMYK colour and no CMYK output intent.
+- `LAYOUT-12/promoter-deck/A007` “Promoter pitch deck” (promoter-deck.pdf) embeds every font it uses.
+- `LAYOUT-12/release-post-r002/A005` “Night release post - 2026-09-25” (release-post-r002.png) is in sRGB colour: it carries an sRGB profile or no colour profile.
+- `LAYOUT-12/release-post-r003/A005` “Night release post - 2026-09-26” (release-post-r003.png) is in sRGB colour: it carries an sRGB profile or no colour profile.
+- `LAYOUT-12/release-post-r004/A005` “Night release post - 2026-10-02” (release-post-r004.png) is in sRGB colour: it carries an sRGB profile or no colour profile.
+- `LAYOUT-12/release-post-r005/A005` “Night release post - 2026-10-03” (release-post-r005.png) is in sRGB colour: it carries an sRGB profile or no colour profile.
+- `LAYOUT-12/release-post-r006/A005` “Night release post - 2026-10-04” (release-post-r006.png) is in sRGB colour: it carries an sRGB profile or no colour profile.
+- `LAYOUT-12/release-post-r007/A005` “Night release post - 2026-10-09” (release-post-r007.png) is in sRGB colour: it carries an sRGB profile or no colour profile.
+- `LAYOUT-12/release-post-r008/A005` “Night release post - 2026-10-10” (release-post-r008.png) is in sRGB colour: it carries an sRGB profile or no colour profile.
+- `LAYOUT-12/release-post-r009/A005` “Night release post - 2026-10-16” (release-post-r009.png) is in sRGB colour: it carries an sRGB profile or no colour profile.
+- `LAYOUT-12/release-post-r010/A005` “Night release post - 2026-10-17” (release-post-r010.png) is in sRGB colour: it carries an sRGB profile or no colour profile.
+- `LAYOUT-12/poster-direction-type-led/A008` “After Dark poster direction - Type-led” (poster-direction-type-led.pdf) sets the act name “SABLE QUARTET” in Sora ExtraBold.
+- `LAYOUT-12/poster-direction-type-led/A009` “After Dark poster direction - Type-led” (poster-direction-type-led.pdf) sets the support act “Odette Lang” in Archivo Narrow Regular at 14 pt.
+- `LAYOUT-12/poster-direction-type-led/A010` “After Dark poster direction - Type-led” (poster-direction-type-led.pdf) sets the licence number “PVD-2021-0846” in Archivo Narrow Regular at 9 pt.
+- `LAYOUT-12/poster-direction-image-led/A008` “After Dark poster direction - Image-led” (poster-direction-image-led.pdf) sets the act name “SABLE QUARTET” in Sora ExtraBold.
+- `LAYOUT-12/poster-direction-image-led/A009` “After Dark poster direction - Image-led” (poster-direction-image-led.pdf) sets the support act “Odette Lang” in Archivo Narrow Regular at 14 pt.
+- `LAYOUT-12/poster-direction-image-led/A010` “After Dark poster direction - Image-led” (poster-direction-image-led.pdf) sets the licence number “PVD-2021-0846” in Archivo Narrow Regular at 9 pt.
+- `LAYOUT-12/poster-direction-graphic-led/A008` “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf) sets the act name “SABLE QUARTET” in Sora ExtraBold.
+- `LAYOUT-12/poster-direction-graphic-led/A009` “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf) sets the support act “Odette Lang” in Archivo Narrow Regular at 14 pt.
+- `LAYOUT-12/poster-direction-graphic-led/A010` “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf) sets the licence number “PVD-2021-0846” in Archivo Narrow Regular at 9 pt.
+- `LAYOUT-12/poster-direction-type-led/A011` “After Dark poster direction - Type-led” (poster-direction-type-led.pdf) sets the accessibility line, starting “Step-free access to the main room”, in Archivo Narrow Regular at 9 pt.
+- `LAYOUT-12/poster-direction-image-led/A011` “After Dark poster direction - Image-led” (poster-direction-image-led.pdf) sets the accessibility line, starting “Step-free access to the main room”, in Archivo Narrow Regular at 9 pt.
+- `LAYOUT-12/poster-direction-graphic-led/A011` “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf) sets the accessibility line, starting “Step-free access to the main room”, in Archivo Narrow Regular at 9 pt.
 
 ## Human verifiers
 
-- `LAYOUT-12/poster-direction-type-led/H001` On “After Dark poster direction - Type-led” (poster-direction-type-led.pdf), the acts are billed in the order of umbra_billing_autumn.txt: Sable Quartet, Meridian Brass, Night Ferry, The Blue Hour, Vespertine, The Eastons, Koa, Laurel and the Dive.
-- `LAYOUT-12/poster-direction-type-led/H002` At full A2 size, the event information text on “After Dark poster direction - Type-led” (poster-direction-type-led.pdf) is fully visible, with no letters cut off at an edge.
-- `LAYOUT-12/poster-direction-image-led/H001` On “After Dark poster direction - Image-led” (poster-direction-image-led.pdf), the acts are billed in the order of umbra_billing_autumn.txt: Sable Quartet, Meridian Brass, Night Ferry, The Blue Hour, Vespertine, The Eastons, Koa, Laurel and the Dive.
-- `LAYOUT-12/poster-direction-image-led/H002` At full A2 size, the event information text on “After Dark poster direction - Image-led” (poster-direction-image-led.pdf) is fully visible, with no letters cut off at an edge.
-- `LAYOUT-12/poster-direction-graphic-led/H001` On “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf), the acts are billed in the order of umbra_billing_autumn.txt: Sable Quartet, Meridian Brass, Night Ferry, The Blue Hour, Vespertine, The Eastons, Koa, Laurel and the Dive.
-- `LAYOUT-12/poster-direction-graphic-led/H002` At full A2 size, the event information text on “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf) is fully visible, with no letters cut off at an edge.
-- `LAYOUT-12/poster-direction-graphic-led/H003` Every act name on “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf), support acts excepted, is spelled as credited in umbra_billing_autumn.txt; a misspelled act makes the poster unusable.
+- `LAYOUT-12/poster-direction-type-led/H001` Acts on “After Dark poster direction - Type-led” (poster-direction-type-led.pdf) follow the umbra_billing_autumn.txt order: Sable Quartet, Meridian Brass, Night Ferry, The Blue Hour, Vespertine, The Eastons, Koa, Laurel and the Dive.
+- `LAYOUT-12/poster-direction-type-led/H002` At full A2 size, no letter of an act name, support act, date, licence line or accessibility line on “After Dark poster direction - Type-led” (poster-direction-type-led.pdf) is cut off.
+- `LAYOUT-12/poster-direction-image-led/H001` Acts on “After Dark poster direction - Image-led” (poster-direction-image-led.pdf) follow the umbra_billing_autumn.txt order: Sable Quartet, Meridian Brass, Night Ferry, The Blue Hour, Vespertine, The Eastons, Koa, Laurel and the Dive.
+- `LAYOUT-12/poster-direction-image-led/H002` At full A2 size, no letter of an act name, support act, date, licence line or accessibility line on “After Dark poster direction - Image-led” (poster-direction-image-led.pdf) is cut off.
+- `LAYOUT-12/poster-direction-graphic-led/H001` Acts on “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf) follow the umbra_billing_autumn.txt order: Sable Quartet, Meridian Brass, Night Ferry, The Blue Hour, Vespertine, The Eastons, Koa, Laurel and the Dive.
+- `LAYOUT-12/poster-direction-graphic-led/H002` At full A2 size, no letter of an act name, support act, date, licence line or accessibility line on “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf) is cut off.
+- `LAYOUT-12/poster-direction-graphic-led/H003` Every act name on “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf), support acts excepted, is spelled exactly as credited in umbra_billing_autumn.txt.
 - `LAYOUT-12/poster-direction-graphic-led/H004` Night Ferry is credited on “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf) as two words, “NIGHT FERRY”, never run together.
 - `LAYOUT-12/poster-direction-graphic-led/H005` On “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf), each headline act carries its night: Sable Quartet 25 Sep, Meridian Brass 26 Sep, Night Ferry 2 Oct.
-- `LAYOUT-12/poster-direction-graphic-led/H006` On “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf), the remaining nights carry their dates: The Blue Hour 3 Oct and 4 Oct, Vespertine 9 Oct, The Eastons 10 Oct, Koa 16 Oct, Laurel and the Dive 17 Oct.
+- `LAYOUT-12/poster-direction-graphic-led/H006` On “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf), The Blue Hour is dated 3 and 4 Oct, Vespertine 9 Oct, The Eastons 10 Oct, Koa 16 Oct and Laurel and the Dive 17 Oct.
 - `LAYOUT-12/poster-direction-graphic-led/H007` Any weekday shown with Koa's 16 Oct date on “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf) is Friday (FRI), not Saturday as umbra_billing_autumn.txt prints it.
-- `LAYOUT-12/poster-direction-graphic-led/H008` Apart from Koa's, weekdays on “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf) match their 2026 dates: Fri 25 Sep, Sat 26 Sep, Fri 2 Oct, Sat 3 Oct, Sun 4 Oct, Fri 9 Oct, Sat 10 Oct, Sat 17 Oct.
-- `LAYOUT-12/poster-direction-graphic-led/H009` On “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf), the headline acts are billed with their supports: Sable Quartet with Odette Lang, Meridian Brass with The Tin Ravens, Night Ferry with Junior Vale.
-- `LAYOUT-12/poster-direction-graphic-led/H010` On “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf), remaining acts carry their supports: The Blue Hour with Coral Sound, Vespertine with Marlow Reyes, The Eastons with Half Light, Koa with The Undertow, Laurel and the Dive with Ferro.
+- `LAYOUT-12/poster-direction-graphic-led/H008` Any weekday shown on “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf) matches 2026: Fri 25 Sep, Sat 26 Sep, Fri 2 Oct, Sat 3 Oct, Sun 4 Oct, Fri 9 Oct, Sat 10 Oct, Sat 17 Oct.
+- `LAYOUT-12/poster-direction-graphic-led/H009` On “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf), Sable Quartet is billed with Odette Lang, Meridian Brass with The Tin Ravens, Night Ferry with Junior Vale.
+- `LAYOUT-12/poster-direction-graphic-led/H010` On “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf), The Blue Hour is billed with Coral Sound, Vespertine with Marlow Reyes, The Eastons with Half Light, Koa with The Undertow, Laurel and the Dive with Ferro.
 - `LAYOUT-12/poster-direction-graphic-led/H011` Every support act on “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf) is set smaller than the act name it supports.
 - `LAYOUT-12/poster-direction-graphic-led/H012` On “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf), each headline act, Sable Quartet, Meridian Brass and Night Ferry, is set larger than every act of the remaining nights.
 - `LAYOUT-12/poster-direction-graphic-led/H013` “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf) carries the licence line word for word: “Umbra Loft, 14 Foundry Court (basement), Providence RI. Licensed under City of Providence Entertainment Licence PVD-2021-0846.”
@@ -84,25 +113,24 @@ Revised input pack. Previous execution results are historical, not current ratin
 - `LAYOUT-12/poster-direction-graphic-led/H015` No SABLE QUARTET lettering, such as the shirt print in umbra_wordmark_nightferry.jpg, stands for Night Ferry on “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf).
 - `LAYOUT-12/poster-direction-graphic-led/H016` No wordmark, stencil or distressed lettering drawn, generated or otherwise made for Night Ferry appears on “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf).
 - `LAYOUT-12/poster-direction-graphic-led/H017` On “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf), The Blue Hour, Vespertine, The Eastons, Koa and Laurel and the Dive are billed in type only, with no wordmark.
-- `LAYOUT-12/poster-direction-graphic-led/H020` Where the Sable Quartet wordmark appears on “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf), every letter of “SABLE QUARTET” in its source photograph, umbra_sable_wordmark_transparent.png or umbra_wordmark_nightferry.jpg, is present, none lost to the cloth or the cracked print.
-- `LAYOUT-12/poster-direction-graphic-led/H021` Where the Sable Quartet wordmark appears on “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf), it keeps the letter proportions of its source photograph, umbra_sable_wordmark_transparent.png or umbra_wordmark_nightferry.jpg, without stretching.
-- `LAYOUT-12/poster-direction-graphic-led/H022` Where the Meridian Brass wordmark appears on “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf), its lettering is the knitted MERIDIAN BRASS lettering of umbra_meridian_wordmark_transparent.png, not retyped in a font.
-- `LAYOUT-12/poster-direction-graphic-led/H023` Where the Meridian Brass wordmark appears on “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf), it keeps the letter proportions of umbra_meridian_wordmark_transparent.png without stretching.
-- `LAYOUT-12/poster-direction-graphic-led/H024` Where the Meridian Brass wordmark appears on “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf), no charcoal knit from the sweater in umbra_meridian_wordmark_transparent.png shows around or between its letters.
-- `LAYOUT-12/poster-direction-graphic-led/H025` Any performance photograph on “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf) is one of umbra_archive_night_01.jpg, umbra_archive_night_02.jpg, umbra_archive_night_03.jpg, umbra_archive_night_04.jpg, umbra_archive_night_05.jpg or umbra_archive_night_06.jpg, not stock or generated.
+- `LAYOUT-12/poster-direction-graphic-led/H020` Every letter of SABLE QUARTET in the Sable Quartet wordmark on “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf) is complete, as in umbra_sable_wordmark_transparent.png, with none missing or partly erased.
+- `LAYOUT-12/poster-direction-graphic-led/H021` The Sable Quartet wordmark on “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf) keeps the letter proportions of umbra_sable_wordmark_transparent.png, without stretching.
+- `LAYOUT-12/poster-direction-graphic-led/H022` The Meridian Brass wordmark on “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf) uses the MERIDIAN BRASS letter shapes of umbra_meridian_wordmark_transparent.png, not lettering retyped in a font.
+- `LAYOUT-12/poster-direction-graphic-led/H023` The Meridian Brass wordmark on “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf) keeps the letter proportions of umbra_meridian_wordmark_transparent.png, without stretching.
+- `LAYOUT-12/poster-direction-graphic-led/H024` No knit texture, like the sweater weave in umbra_wordmark_meridian.jpg, shows around or between the letters of the Meridian Brass wordmark on “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf).
+- `LAYOUT-12/poster-direction-graphic-led/H025` Any performance photograph on “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf) is one of the six supplied archive frames, umbra_archive_night_01.jpg to umbra_archive_night_06.jpg, not stock or generated.
 - `LAYOUT-12/poster-direction-graphic-led/H026` Every performance photograph on “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf) is used as shot, with nothing generated, extended, added or removed in it.
-- `LAYOUT-12/poster-direction-graphic-led/H027` Any performance photograph on “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf) is reproduced in two brand palette colours with visible grain, not in full colour.
+- `LAYOUT-12/poster-direction-graphic-led/H027` Any performance photograph on “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf) is reproduced in two palette colours, not in full colour.
 - `LAYOUT-12/poster-direction-graphic-led/H028` Wherever umbra_archive_night_02.jpg or umbra_archive_night_05.jpg appears on “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf), its clipped white areas stay flat, with no face, clothing or instrument detail invented in them.
 - `LAYOUT-12/poster-direction-graphic-led/H029` Viewed at 100% on “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf), no performance photograph shows motion smear such as the streaked trumpet bell and right hand of umbra_archive_night_06.jpg.
 - `LAYOUT-12/poster-direction-graphic-led/H030` “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf) shows no sponsor logo or corporate partner mark anywhere on the poster.
-- `LAYOUT-12/poster-direction-graphic-led/H035` Every act name on “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf), support acts excepted, is Bone White #E9E4D8 on a solid Pitch #0E0E10 ground, with its date directly above it on a single line in Sodium #E4863B.
-- `LAYOUT-12/poster-direction-graphic-led/H036` On “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf), every date line is letterspaced more open than the act names, and any door line more open than the support acts.
+- `LAYOUT-12/poster-direction-graphic-led/H035` Every act name on “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf), support acts excepted, is Bone White #E9E4D8 on a solid Pitch #0E0E10 ground.
+- `LAYOUT-12/poster-direction-graphic-led/H036` On “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf), every date line is letterspaced more open than the act names.
 - `LAYOUT-12/poster-direction-graphic-led/H037` No line of body or billing text on “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf) runs longer than 65 characters.
 - `LAYOUT-12/poster-direction-graphic-led/H038` Apart from photographs, every type, ground, panel, rule and wordmark colour on “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf) is one of #0E0E10, #2A2A2E, #E4863B, #3F7C8C, #E9E4D8 or #8E2B24.
-- `LAYOUT-12/poster-direction-graphic-led/H039` Pitch #0E0E10, Bone White #E9E4D8 and Sodium #E4863B all appear in the designed parts of “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf).
-- `LAYOUT-12/poster-direction-graphic-led/H040` On “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf), every non-photographic ground and panel is Pitch #0E0E10 or Ash #2A2A2E, and every title, act name, support, door, set, body, billing and fine-print line is Bone White #E9E4D8.
-- `LAYOUT-12/poster-direction-graphic-led/H041` Every type, ground, panel, rule and wordmark colour on “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf) is solid at full opacity, with no tint, transparency, gradient, glow or shadow, and no scrim or overlay sits over a photograph.
-- `LAYOUT-12/poster-direction-graphic-led/H042` On “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf), Cold Signal #3F7C8C and Blood #8E2B24 appear, if at all, only as hairline rules, dividers or a photograph's treatment colour, together covering no more than 5% of the designed, non-photographic area.
+- `LAYOUT-12/poster-direction-graphic-led/H040` Every non-photographic ground and panel on “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf) is Pitch #0E0E10 or Ash #2A2A2E.
+- `LAYOUT-12/poster-direction-graphic-led/H041` All colour on “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf) is solid at 100% opacity, with no tint, transparency, gradient, glow or shadow, and no scrim or overlay on a photograph.
+- `LAYOUT-12/poster-direction-graphic-led/H042` On “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf), Cold Signal #3F7C8C and Blood #8E2B24 appear only as hairlines, dividers or photo treatment.
 - `LAYOUT-12/promoter-deck/H001` “Promoter pitch deck” (promoter-deck.pdf) has no blank page anywhere in the PDF.
 - `LAYOUT-12/release-post-r002/H001` The date on “Night release post - 2026-09-25” (release-post-r002.png) is 25 Sep (2026-09-25, umbra_nights_autumn.csv row 2), in any clear form such as “25 SEP”.
 - `LAYOUT-12/release-post-r002/H002` At full export size, the advance price text on “Night release post - 2026-09-25” (release-post-r002.png) is fully visible, no letters cut off at the edge.
@@ -127,22 +155,20 @@ Revised input pack. Previous execution results are historical, not current ratin
 - `LAYOUT-12/release-post-r004/H008` The advance price on “Night release post - 2026-10-02” (release-post-r004.png) reads “$26”, as in umbra_nights_autumn.csv row 4.
 - `LAYOUT-12/release-post-r004/H009` Any weekday shown with the date on “Night release post - 2026-10-02” (release-post-r004.png) is Friday (FRI).
 - `LAYOUT-12/release-post-r004/H010` At full 1080 x 1350 size, every letter of the act name on “Night release post - 2026-10-02” (release-post-r004.png) is inside the frame, none clipped.
-- `LAYOUT-12/release-post-r004/H011` The largest text on “Night release post - 2026-10-02” (release-post-r004.png) is the act name “Night Ferry”.
-- `LAYOUT-12/release-post-r004/H012` On “Night release post - 2026-10-02” (release-post-r004.png) the act name “Night Ferry” is set larger than the support line “with Junior Vale”.
-- `LAYOUT-12/release-post-r004/H013` The photograph on “Night release post - 2026-10-02” (release-post-r004.png) is one of umbra_archive_night_01.jpg, umbra_archive_night_02.jpg, umbra_archive_night_03.jpg, umbra_archive_night_04.jpg, umbra_archive_night_05.jpg or umbra_archive_night_06.jpg, not stock or generated.
+- `LAYOUT-12/release-post-r004/H011` Apart from the series title, the largest text on “Night release post - 2026-10-02” (release-post-r004.png) is the act name “Night Ferry”.
+- `LAYOUT-12/release-post-r004/H013` The photograph on “Night release post - 2026-10-02” (release-post-r004.png) is one of the six supplied archive frames, umbra_archive_night_01.jpg to umbra_archive_night_06.jpg, not stock or generated.
 - `LAYOUT-12/release-post-r004/H014` The photograph on “Night release post - 2026-10-02” (release-post-r004.png) is used as shot, with nothing generated, extended, added or removed in it.
-- `LAYOUT-12/release-post-r004/H015` The photograph on “Night release post - 2026-10-02” (release-post-r004.png) is reproduced in two brand palette colours with visible grain, not in full colour, the same two as on the other eight night release posts.
+- `LAYOUT-12/release-post-r004/H015` The photograph on “Night release post - 2026-10-02” (release-post-r004.png) is reproduced in two palette colours, not in full colour.
 - `LAYOUT-12/release-post-r004/H016` Wherever umbra_archive_night_02.jpg or umbra_archive_night_05.jpg appears on “Night release post - 2026-10-02” (release-post-r004.png), its clipped white areas stay flat, with no face, clothing or instrument detail invented in them.
 - `LAYOUT-12/release-post-r004/H017` No SABLE QUARTET lettering, such as the shirt print in umbra_wordmark_nightferry.jpg, stands for Night Ferry on “Night release post - 2026-10-02” (release-post-r004.png).
 - `LAYOUT-12/release-post-r004/H018` No wordmark, stencil or distressed lettering drawn, generated or otherwise made for Night Ferry appears on “Night release post - 2026-10-02” (release-post-r004.png).
-- `LAYOUT-12/release-post-r004/H022` The act name on “Night release post - 2026-10-02” (release-post-r004.png) is Bone White #E9E4D8 on a solid Pitch #0E0E10 ground, with the date directly above it on a single line in Sodium #E4863B.
-- `LAYOUT-12/release-post-r004/H023` On “Night release post - 2026-10-02” (release-post-r004.png), the date line is letterspaced more open than the act name, and the door line more open than the support line.
+- `LAYOUT-12/release-post-r004/H022` The act name “Night Ferry” on “Night release post - 2026-10-02” (release-post-r004.png) is Bone White #E9E4D8 on a solid Pitch #0E0E10 ground.
+- `LAYOUT-12/release-post-r004/H023` On “Night release post - 2026-10-02” (release-post-r004.png), the date line is letterspaced more open than the act name.
 - `LAYOUT-12/release-post-r004/H025` “Night release post - 2026-10-02” (release-post-r004.png) shows no sponsor logo or corporate partner mark anywhere.
 - `LAYOUT-12/release-post-r004/H026` Apart from the photograph, every type, ground, panel, rule and wordmark colour on “Night release post - 2026-10-02” (release-post-r004.png) is one of #0E0E10, #2A2A2E, #E4863B, #3F7C8C, #E9E4D8 or #8E2B24.
-- `LAYOUT-12/release-post-r004/H027` Pitch #0E0E10, Bone White #E9E4D8 and Sodium #E4863B all appear in the designed parts of “Night release post - 2026-10-02” (release-post-r004.png).
-- `LAYOUT-12/release-post-r004/H028` On “Night release post - 2026-10-02” (release-post-r004.png), every non-photographic ground and panel is Pitch #0E0E10 or Ash #2A2A2E, and every title, act name, support, door, set, body and fine-print line is Bone White #E9E4D8.
-- `LAYOUT-12/release-post-r004/H029` Every type, ground, panel, rule and wordmark colour on “Night release post - 2026-10-02” (release-post-r004.png) is solid at full opacity, with no tint, transparency, gradient, glow or shadow, and no scrim or overlay sits over the photograph.
-- `LAYOUT-12/release-post-r004/H030` On “Night release post - 2026-10-02” (release-post-r004.png), Cold Signal #3F7C8C and Blood #8E2B24 appear, if at all, only as hairline rules, dividers or a photograph's treatment colour, together covering no more than 5% of the designed, non-photographic area.
+- `LAYOUT-12/release-post-r004/H028` Every non-photographic ground and panel on “Night release post - 2026-10-02” (release-post-r004.png) is Pitch #0E0E10 or Ash #2A2A2E.
+- `LAYOUT-12/release-post-r004/H029` All colour on “Night release post - 2026-10-02” (release-post-r004.png) is solid at 100% opacity, with no tint, transparency, gradient, glow or shadow, and no scrim or overlay on the photograph.
+- `LAYOUT-12/release-post-r004/H030` On “Night release post - 2026-10-02” (release-post-r004.png), Cold Signal #3F7C8C and Blood #8E2B24 appear only as hairlines, dividers or photo treatment.
 - `LAYOUT-12/release-post-r005/H001` The date on “Night release post - 2026-10-03” (release-post-r005.png) is 3 Oct (2026-10-03, umbra_nights_autumn.csv row 5), not 4 Oct, the residency's other night, in any clear form such as “3 OCT”.
 - `LAYOUT-12/release-post-r005/H002` At full export size, the advance price text on “Night release post - 2026-10-03” (release-post-r005.png) is fully visible, no letters cut off at the edge.
 - `LAYOUT-12/release-post-r005/H003` Any year shown with the date on “Night release post - 2026-10-03” (release-post-r005.png) is 2026, as in umbra_nights_autumn.csv row 5.
@@ -152,20 +178,18 @@ Revised input pack. Previous execution results are historical, not current ratin
 - `LAYOUT-12/release-post-r005/H008` The advance price on “Night release post - 2026-10-03” (release-post-r005.png) reads “$24”, as in umbra_nights_autumn.csv row 5.
 - `LAYOUT-12/release-post-r005/H009` Any weekday shown with the date on “Night release post - 2026-10-03” (release-post-r005.png) is Saturday (SAT).
 - `LAYOUT-12/release-post-r005/H010` At full 1080 x 1350 size, every letter of the act name on “Night release post - 2026-10-03” (release-post-r005.png) is inside the frame, none clipped.
-- `LAYOUT-12/release-post-r005/H011` The largest text on “Night release post - 2026-10-03” (release-post-r005.png) is the act name “The Blue Hour”.
-- `LAYOUT-12/release-post-r005/H012` On “Night release post - 2026-10-03” (release-post-r005.png) the act name “The Blue Hour” is set larger than the support line “with Coral Sound”.
-- `LAYOUT-12/release-post-r005/H013` The photograph on “Night release post - 2026-10-03” (release-post-r005.png) is one of umbra_archive_night_01.jpg, umbra_archive_night_02.jpg, umbra_archive_night_03.jpg, umbra_archive_night_04.jpg, umbra_archive_night_05.jpg or umbra_archive_night_06.jpg, not stock or generated.
+- `LAYOUT-12/release-post-r005/H011` Apart from the series title, the largest text on “Night release post - 2026-10-03” (release-post-r005.png) is the act name “The Blue Hour”.
+- `LAYOUT-12/release-post-r005/H013` The photograph on “Night release post - 2026-10-03” (release-post-r005.png) is one of the six supplied archive frames, umbra_archive_night_01.jpg to umbra_archive_night_06.jpg, not stock or generated.
 - `LAYOUT-12/release-post-r005/H014` The photograph on “Night release post - 2026-10-03” (release-post-r005.png) is used as shot, with nothing generated, extended, added or removed in it.
-- `LAYOUT-12/release-post-r005/H015` The photograph on “Night release post - 2026-10-03” (release-post-r005.png) is reproduced in two brand palette colours with visible grain, not in full colour, the same two as on the other eight night release posts.
+- `LAYOUT-12/release-post-r005/H015` The photograph on “Night release post - 2026-10-03” (release-post-r005.png) is reproduced in two palette colours, not in full colour.
 - `LAYOUT-12/release-post-r005/H016` Wherever umbra_archive_night_02.jpg or umbra_archive_night_05.jpg appears on “Night release post - 2026-10-03” (release-post-r005.png), its clipped white areas stay flat, with no face, clothing or instrument detail invented in them.
-- `LAYOUT-12/release-post-r005/H021` The act name on “Night release post - 2026-10-03” (release-post-r005.png) is Bone White #E9E4D8 on a solid Pitch #0E0E10 ground, with the date directly above it on a single line in Sodium #E4863B.
-- `LAYOUT-12/release-post-r005/H022` On “Night release post - 2026-10-03” (release-post-r005.png), the date line is letterspaced more open than the act name, and the door line more open than the support line.
+- `LAYOUT-12/release-post-r005/H021` The act name “The Blue Hour” on “Night release post - 2026-10-03” (release-post-r005.png) is Bone White #E9E4D8 on a solid Pitch #0E0E10 ground.
+- `LAYOUT-12/release-post-r005/H022` On “Night release post - 2026-10-03” (release-post-r005.png), the date line is letterspaced more open than the act name.
 - `LAYOUT-12/release-post-r005/H024` “Night release post - 2026-10-03” (release-post-r005.png) shows no sponsor logo or corporate partner mark anywhere.
 - `LAYOUT-12/release-post-r005/H025` Apart from the photograph, every type, ground, panel, rule and wordmark colour on “Night release post - 2026-10-03” (release-post-r005.png) is one of #0E0E10, #2A2A2E, #E4863B, #3F7C8C, #E9E4D8 or #8E2B24.
-- `LAYOUT-12/release-post-r005/H026` Pitch #0E0E10, Bone White #E9E4D8 and Sodium #E4863B all appear in the designed parts of “Night release post - 2026-10-03” (release-post-r005.png).
-- `LAYOUT-12/release-post-r005/H027` On “Night release post - 2026-10-03” (release-post-r005.png), every non-photographic ground and panel is Pitch #0E0E10 or Ash #2A2A2E, and every title, act name, support, door, set, body and fine-print line is Bone White #E9E4D8.
-- `LAYOUT-12/release-post-r005/H028` Every type, ground, panel, rule and wordmark colour on “Night release post - 2026-10-03” (release-post-r005.png) is solid at full opacity, with no tint, transparency, gradient, glow or shadow, and no scrim or overlay sits over the photograph.
-- `LAYOUT-12/release-post-r005/H029` On “Night release post - 2026-10-03” (release-post-r005.png), Cold Signal #3F7C8C and Blood #8E2B24 appear, if at all, only as hairline rules, dividers or a photograph's treatment colour, together covering no more than 5% of the designed, non-photographic area.
+- `LAYOUT-12/release-post-r005/H027` Every non-photographic ground and panel on “Night release post - 2026-10-03” (release-post-r005.png) is Pitch #0E0E10 or Ash #2A2A2E.
+- `LAYOUT-12/release-post-r005/H028` All colour on “Night release post - 2026-10-03” (release-post-r005.png) is solid at 100% opacity, with no tint, transparency, gradient, glow or shadow, and no scrim or overlay on the photograph.
+- `LAYOUT-12/release-post-r005/H029` On “Night release post - 2026-10-03” (release-post-r005.png), Cold Signal #3F7C8C and Blood #8E2B24 appear only as hairlines, dividers or photo treatment.
 - `LAYOUT-12/release-post-r006/H001` The date on “Night release post - 2026-10-04” (release-post-r006.png) is 4 Oct (2026-10-04, umbra_nights_autumn.csv row 6), not 3 Oct, the residency's other night, in any clear form such as “4 OCT”.
 - `LAYOUT-12/release-post-r006/H002` At full export size, the advance price text on “Night release post - 2026-10-04” (release-post-r006.png) is fully visible, no letters cut off at the edge.
 - `LAYOUT-12/release-post-r006/H003` Any year shown with the date on “Night release post - 2026-10-04” (release-post-r006.png) is 2026, as in umbra_nights_autumn.csv row 6.
@@ -175,43 +199,39 @@ Revised input pack. Previous execution results are historical, not current ratin
 - `LAYOUT-12/release-post-r006/H008` The advance price on “Night release post - 2026-10-04” (release-post-r006.png) reads “$24”, as in umbra_nights_autumn.csv row 6.
 - `LAYOUT-12/release-post-r006/H009` Any weekday shown with the date on “Night release post - 2026-10-04” (release-post-r006.png) is Sunday (SUN).
 - `LAYOUT-12/release-post-r006/H010` At full 1080 x 1350 size, every letter of the act name on “Night release post - 2026-10-04” (release-post-r006.png) is inside the frame, none clipped.
-- `LAYOUT-12/release-post-r006/H011` The largest text on “Night release post - 2026-10-04” (release-post-r006.png) is the act name “The Blue Hour”.
-- `LAYOUT-12/release-post-r006/H012` On “Night release post - 2026-10-04” (release-post-r006.png) the act name “The Blue Hour” is set larger than the support line “with Coral Sound”.
-- `LAYOUT-12/release-post-r006/H013` The photograph on “Night release post - 2026-10-04” (release-post-r006.png) is one of umbra_archive_night_01.jpg, umbra_archive_night_02.jpg, umbra_archive_night_03.jpg, umbra_archive_night_04.jpg, umbra_archive_night_05.jpg or umbra_archive_night_06.jpg, not stock or generated.
+- `LAYOUT-12/release-post-r006/H011` Apart from the series title, the largest text on “Night release post - 2026-10-04” (release-post-r006.png) is the act name “The Blue Hour”.
+- `LAYOUT-12/release-post-r006/H013` The photograph on “Night release post - 2026-10-04” (release-post-r006.png) is one of the six supplied archive frames, umbra_archive_night_01.jpg to umbra_archive_night_06.jpg, not stock or generated.
 - `LAYOUT-12/release-post-r006/H014` The photograph on “Night release post - 2026-10-04” (release-post-r006.png) is used as shot, with nothing generated, extended, added or removed in it.
-- `LAYOUT-12/release-post-r006/H015` The photograph on “Night release post - 2026-10-04” (release-post-r006.png) is reproduced in two brand palette colours with visible grain, not in full colour, the same two as on the other eight night release posts.
+- `LAYOUT-12/release-post-r006/H015` The photograph on “Night release post - 2026-10-04” (release-post-r006.png) is reproduced in two palette colours, not in full colour.
 - `LAYOUT-12/release-post-r006/H016` Wherever umbra_archive_night_02.jpg or umbra_archive_night_05.jpg appears on “Night release post - 2026-10-04” (release-post-r006.png), its clipped white areas stay flat, with no face, clothing or instrument detail invented in them.
-- `LAYOUT-12/release-post-r006/H021` The act name on “Night release post - 2026-10-04” (release-post-r006.png) is Bone White #E9E4D8 on a solid Pitch #0E0E10 ground, with the date directly above it on a single line in Sodium #E4863B.
-- `LAYOUT-12/release-post-r006/H022` On “Night release post - 2026-10-04” (release-post-r006.png), the date line is letterspaced more open than the act name, and the door line more open than the support line.
+- `LAYOUT-12/release-post-r006/H021` The act name “The Blue Hour” on “Night release post - 2026-10-04” (release-post-r006.png) is Bone White #E9E4D8 on a solid Pitch #0E0E10 ground.
+- `LAYOUT-12/release-post-r006/H022` On “Night release post - 2026-10-04” (release-post-r006.png), the date line is letterspaced more open than the act name.
 - `LAYOUT-12/release-post-r006/H024` “Night release post - 2026-10-04” (release-post-r006.png) shows no sponsor logo or corporate partner mark anywhere.
 - `LAYOUT-12/release-post-r006/H025` Apart from the photograph, every type, ground, panel, rule and wordmark colour on “Night release post - 2026-10-04” (release-post-r006.png) is one of #0E0E10, #2A2A2E, #E4863B, #3F7C8C, #E9E4D8 or #8E2B24.
-- `LAYOUT-12/release-post-r006/H026` Pitch #0E0E10, Bone White #E9E4D8 and Sodium #E4863B all appear in the designed parts of “Night release post - 2026-10-04” (release-post-r006.png).
-- `LAYOUT-12/release-post-r006/H027` On “Night release post - 2026-10-04” (release-post-r006.png), every non-photographic ground and panel is Pitch #0E0E10 or Ash #2A2A2E, and every title, act name, support, door, set, body and fine-print line is Bone White #E9E4D8.
-- `LAYOUT-12/release-post-r006/H028` Every type, ground, panel, rule and wordmark colour on “Night release post - 2026-10-04” (release-post-r006.png) is solid at full opacity, with no tint, transparency, gradient, glow or shadow, and no scrim or overlay sits over the photograph.
-- `LAYOUT-12/release-post-r006/H029` On “Night release post - 2026-10-04” (release-post-r006.png), Cold Signal #3F7C8C and Blood #8E2B24 appear, if at all, only as hairline rules, dividers or a photograph's treatment colour, together covering no more than 5% of the designed, non-photographic area.
+- `LAYOUT-12/release-post-r006/H027` Every non-photographic ground and panel on “Night release post - 2026-10-04” (release-post-r006.png) is Pitch #0E0E10 or Ash #2A2A2E.
+- `LAYOUT-12/release-post-r006/H028` All colour on “Night release post - 2026-10-04” (release-post-r006.png) is solid at 100% opacity, with no tint, transparency, gradient, glow or shadow, and no scrim or overlay on the photograph.
+- `LAYOUT-12/release-post-r006/H029` On “Night release post - 2026-10-04” (release-post-r006.png), Cold Signal #3F7C8C and Blood #8E2B24 appear only as hairlines, dividers or photo treatment.
 - `LAYOUT-12/release-post-r007/H001` The date on “Night release post - 2026-10-09” (release-post-r007.png) is 9 Oct (2026-10-09, umbra_nights_autumn.csv row 7), in any clear form such as “9 OCT”.
 - `LAYOUT-12/release-post-r007/H002` At full export size, the advance price text on “Night release post - 2026-10-09” (release-post-r007.png) is fully visible, no letters cut off at the edge.
 - `LAYOUT-12/release-post-r007/H003` Any year shown with the date on “Night release post - 2026-10-09” (release-post-r007.png) is 2026, as in umbra_nights_autumn.csv row 7.
 - `LAYOUT-12/release-post-r007/H005` The support line on “Night release post - 2026-10-09” (release-post-r007.png) reads “with Marlow Reyes”, spelled as in umbra_nights_autumn.csv row 7, in any letter case.
-- `LAYOUT-12/release-post-r007/H006` The door time on “Night release post - 2026-10-09” (release-post-r007.png) is 8:00 PM in any clear form, such as “DOORS 8”, and the export text “&nbsp;” from umbra_nights_autumn.csv row 7 does not appear.
+- `LAYOUT-12/release-post-r007/H006` The text “&nbsp;” does not appear anywhere on “Night release post - 2026-10-09” (release-post-r007.png).
 - `LAYOUT-12/release-post-r007/H007` The set time on “Night release post - 2026-10-09” (release-post-r007.png) is 9:00 PM (umbra_nights_autumn.csv row 7), in any clear form such as “SETS 9:00 PM”.
 - `LAYOUT-12/release-post-r007/H008` The advance price on “Night release post - 2026-10-09” (release-post-r007.png) reads “$22”, as in umbra_nights_autumn.csv row 7.
 - `LAYOUT-12/release-post-r007/H009` Any weekday shown with the date on “Night release post - 2026-10-09” (release-post-r007.png) is Friday (FRI).
 - `LAYOUT-12/release-post-r007/H010` At full 1080 x 1350 size, every letter of the act name on “Night release post - 2026-10-09” (release-post-r007.png) is inside the frame, none clipped.
-- `LAYOUT-12/release-post-r007/H011` The largest text on “Night release post - 2026-10-09” (release-post-r007.png) is the act name “Vespertine”.
-- `LAYOUT-12/release-post-r007/H012` On “Night release post - 2026-10-09” (release-post-r007.png) the act name “Vespertine” is set larger than the support line “with Marlow Reyes”.
-- `LAYOUT-12/release-post-r007/H013` The photograph on “Night release post - 2026-10-09” (release-post-r007.png) is one of umbra_archive_night_01.jpg, umbra_archive_night_02.jpg, umbra_archive_night_03.jpg, umbra_archive_night_04.jpg, umbra_archive_night_05.jpg or umbra_archive_night_06.jpg, not stock or generated.
+- `LAYOUT-12/release-post-r007/H011` Apart from the series title, the largest text on “Night release post - 2026-10-09” (release-post-r007.png) is the act name “Vespertine”.
+- `LAYOUT-12/release-post-r007/H013` The photograph on “Night release post - 2026-10-09” (release-post-r007.png) is one of the six supplied archive frames, umbra_archive_night_01.jpg to umbra_archive_night_06.jpg, not stock or generated.
 - `LAYOUT-12/release-post-r007/H014` The photograph on “Night release post - 2026-10-09” (release-post-r007.png) is used as shot, with nothing generated, extended, added or removed in it.
-- `LAYOUT-12/release-post-r007/H015` The photograph on “Night release post - 2026-10-09” (release-post-r007.png) is reproduced in two brand palette colours with visible grain, not in full colour, the same two as on the other eight night release posts.
+- `LAYOUT-12/release-post-r007/H015` The photograph on “Night release post - 2026-10-09” (release-post-r007.png) is reproduced in two palette colours, not in full colour.
 - `LAYOUT-12/release-post-r007/H016` Wherever umbra_archive_night_02.jpg or umbra_archive_night_05.jpg appears on “Night release post - 2026-10-09” (release-post-r007.png), its clipped white areas stay flat, with no face, clothing or instrument detail invented in them.
-- `LAYOUT-12/release-post-r007/H021` The act name on “Night release post - 2026-10-09” (release-post-r007.png) is Bone White #E9E4D8 on a solid Pitch #0E0E10 ground, with the date directly above it on a single line in Sodium #E4863B.
-- `LAYOUT-12/release-post-r007/H022` On “Night release post - 2026-10-09” (release-post-r007.png), the date line is letterspaced more open than the act name, and the door line more open than the support line.
+- `LAYOUT-12/release-post-r007/H021` The act name “Vespertine” on “Night release post - 2026-10-09” (release-post-r007.png) is Bone White #E9E4D8 on a solid Pitch #0E0E10 ground.
+- `LAYOUT-12/release-post-r007/H022` On “Night release post - 2026-10-09” (release-post-r007.png), the date line is letterspaced more open than the act name.
 - `LAYOUT-12/release-post-r007/H024` “Night release post - 2026-10-09” (release-post-r007.png) shows no sponsor logo or corporate partner mark anywhere.
 - `LAYOUT-12/release-post-r007/H025` Apart from the photograph, every type, ground, panel, rule and wordmark colour on “Night release post - 2026-10-09” (release-post-r007.png) is one of #0E0E10, #2A2A2E, #E4863B, #3F7C8C, #E9E4D8 or #8E2B24.
-- `LAYOUT-12/release-post-r007/H026` Pitch #0E0E10, Bone White #E9E4D8 and Sodium #E4863B all appear in the designed parts of “Night release post - 2026-10-09” (release-post-r007.png).
-- `LAYOUT-12/release-post-r007/H027` On “Night release post - 2026-10-09” (release-post-r007.png), every non-photographic ground and panel is Pitch #0E0E10 or Ash #2A2A2E, and every title, act name, support, door, set, body and fine-print line is Bone White #E9E4D8.
-- `LAYOUT-12/release-post-r007/H028` Every type, ground, panel, rule and wordmark colour on “Night release post - 2026-10-09” (release-post-r007.png) is solid at full opacity, with no tint, transparency, gradient, glow or shadow, and no scrim or overlay sits over the photograph.
-- `LAYOUT-12/release-post-r007/H029` On “Night release post - 2026-10-09” (release-post-r007.png), Cold Signal #3F7C8C and Blood #8E2B24 appear, if at all, only as hairline rules, dividers or a photograph's treatment colour, together covering no more than 5% of the designed, non-photographic area.
+- `LAYOUT-12/release-post-r007/H027` Every non-photographic ground and panel on “Night release post - 2026-10-09” (release-post-r007.png) is Pitch #0E0E10 or Ash #2A2A2E.
+- `LAYOUT-12/release-post-r007/H028` All colour on “Night release post - 2026-10-09” (release-post-r007.png) is solid at 100% opacity, with no tint, transparency, gradient, glow or shadow, and no scrim or overlay on the photograph.
+- `LAYOUT-12/release-post-r007/H029` On “Night release post - 2026-10-09” (release-post-r007.png), Cold Signal #3F7C8C and Blood #8E2B24 appear only as hairlines, dividers or photo treatment.
 - `LAYOUT-12/release-post-r008/H001` The date on “Night release post - 2026-10-10” (release-post-r008.png) is 10 Oct (2026-10-10, umbra_nights_autumn.csv row 8), in any clear form such as “10 OCT”.
 - `LAYOUT-12/release-post-r008/H002` At full export size, the advance price text on “Night release post - 2026-10-10” (release-post-r008.png) is fully visible, no letters cut off at the edge.
 - `LAYOUT-12/release-post-r008/H003` Any year shown with the date on “Night release post - 2026-10-10” (release-post-r008.png) is 2026, as in umbra_nights_autumn.csv row 8.
@@ -221,9 +241,8 @@ Revised input pack. Previous execution results are historical, not current ratin
 - `LAYOUT-12/release-post-r008/H008` The advance price on “Night release post - 2026-10-10” (release-post-r008.png) reads “$28”, as in umbra_nights_autumn.csv row 8.
 - `LAYOUT-12/release-post-r008/H009` Any weekday shown with the date on “Night release post - 2026-10-10” (release-post-r008.png) is Saturday (SAT).
 - `LAYOUT-12/release-post-r008/H010` At full 1080 x 1350 size, every letter of the act name on “Night release post - 2026-10-10” (release-post-r008.png) is inside the frame, none clipped.
-- `LAYOUT-12/release-post-r008/H011` The largest text on “Night release post - 2026-10-10” (release-post-r008.png) is the act name “The Eastons”.
-- `LAYOUT-12/release-post-r008/H012` On “Night release post - 2026-10-10” (release-post-r008.png) the act name “The Eastons” is set larger than the support line “with Half Light”.
-- `LAYOUT-12/release-post-r008/H013` The photograph on “Night release post - 2026-10-10” (release-post-r008.png) is one of umbra_archive_night_01.jpg, umbra_archive_night_02.jpg, umbra_archive_night_03.jpg, umbra_archive_night_04.jpg, umbra_archive_night_05.jpg or umbra_archive_night_06.jpg, not stock or generated.
+- `LAYOUT-12/release-post-r008/H011` Apart from the series title, the largest text on “Night release post - 2026-10-10” (release-post-r008.png) is the act name “The Eastons”.
+- `LAYOUT-12/release-post-r008/H013` The photograph on “Night release post - 2026-10-10” (release-post-r008.png) is one of the six supplied archive frames, umbra_archive_night_01.jpg to umbra_archive_night_06.jpg, not stock or generated.
 - `LAYOUT-12/release-post-r008/H014` The photograph on “Night release post - 2026-10-10” (release-post-r008.png) is used as shot, with nothing generated, extended, added or removed in it.
 - `LAYOUT-12/release-post-r008/H015` Wherever umbra_archive_night_02.jpg or umbra_archive_night_05.jpg appears on “Night release post - 2026-10-10” (release-post-r008.png), its clipped white areas stay flat, with no face, clothing or instrument detail invented in them.
 - `LAYOUT-12/release-post-r008/H017` “Night release post - 2026-10-10” (release-post-r008.png) shows no sponsor logo or corporate partner mark anywhere.
@@ -236,9 +255,8 @@ Revised input pack. Previous execution results are historical, not current ratin
 - `LAYOUT-12/release-post-r009/H008` The advance price on “Night release post - 2026-10-16” (release-post-r009.png) reads “$24”, as in umbra_nights_autumn.csv row 9.
 - `LAYOUT-12/release-post-r009/H009` Any weekday shown with Koa's 16 Oct date on “Night release post - 2026-10-16” (release-post-r009.png) is Friday (FRI), not Saturday as umbra_billing_autumn.txt prints it.
 - `LAYOUT-12/release-post-r009/H010` At full 1080 x 1350 size, every letter of the act name on “Night release post - 2026-10-16” (release-post-r009.png) is inside the frame, none clipped.
-- `LAYOUT-12/release-post-r009/H011` The largest text on “Night release post - 2026-10-16” (release-post-r009.png) is the act name “Koa”.
-- `LAYOUT-12/release-post-r009/H012` On “Night release post - 2026-10-16” (release-post-r009.png) the act name “Koa” is set larger than the support line “with The Undertow”.
-- `LAYOUT-12/release-post-r009/H013` The photograph on “Night release post - 2026-10-16” (release-post-r009.png) is one of umbra_archive_night_01.jpg, umbra_archive_night_02.jpg, umbra_archive_night_03.jpg, umbra_archive_night_04.jpg, umbra_archive_night_05.jpg or umbra_archive_night_06.jpg, not stock or generated.
+- `LAYOUT-12/release-post-r009/H011` Apart from the series title, the largest text on “Night release post - 2026-10-16” (release-post-r009.png) is the act name “Koa”.
+- `LAYOUT-12/release-post-r009/H013` The photograph on “Night release post - 2026-10-16” (release-post-r009.png) is one of the six supplied archive frames, umbra_archive_night_01.jpg to umbra_archive_night_06.jpg, not stock or generated.
 - `LAYOUT-12/release-post-r009/H014` The photograph on “Night release post - 2026-10-16” (release-post-r009.png) is used as shot, with nothing generated, extended, added or removed in it.
 - `LAYOUT-12/release-post-r009/H015` Wherever umbra_archive_night_02.jpg or umbra_archive_night_05.jpg appears on “Night release post - 2026-10-16” (release-post-r009.png), its clipped white areas stay flat, with no face, clothing or instrument detail invented in them.
 - `LAYOUT-12/release-post-r009/H017` “Night release post - 2026-10-16” (release-post-r009.png) shows no sponsor logo or corporate partner mark anywhere.
@@ -251,78 +269,72 @@ Revised input pack. Previous execution results are historical, not current ratin
 - `LAYOUT-12/release-post-r010/H008` The advance price on “Night release post - 2026-10-17” (release-post-r010.png) reads “$26”, as in umbra_nights_autumn.csv row 10.
 - `LAYOUT-12/release-post-r010/H009` Any weekday shown with the date on “Night release post - 2026-10-17” (release-post-r010.png) is Saturday (SAT).
 - `LAYOUT-12/release-post-r010/H010` At full 1080 x 1350 size, every letter of the act name on “Night release post - 2026-10-17” (release-post-r010.png) is inside the frame, none clipped.
-- `LAYOUT-12/release-post-r010/H011` The largest text on “Night release post - 2026-10-17” (release-post-r010.png) is the act name “Laurel and the Dive”.
-- `LAYOUT-12/release-post-r010/H012` On “Night release post - 2026-10-17” (release-post-r010.png) the act name “Laurel and the Dive” is set larger than the support line “with Ferro”.
-- `LAYOUT-12/release-post-r010/H013` The photograph on “Night release post - 2026-10-17” (release-post-r010.png) is one of umbra_archive_night_01.jpg, umbra_archive_night_02.jpg, umbra_archive_night_03.jpg, umbra_archive_night_04.jpg, umbra_archive_night_05.jpg or umbra_archive_night_06.jpg, not stock or generated.
+- `LAYOUT-12/release-post-r010/H011` Apart from the series title, the largest text on “Night release post - 2026-10-17” (release-post-r010.png) is the act name “Laurel and the Dive”.
+- `LAYOUT-12/release-post-r010/H013` The photograph on “Night release post - 2026-10-17” (release-post-r010.png) is one of the six supplied archive frames, umbra_archive_night_01.jpg to umbra_archive_night_06.jpg, not stock or generated.
 - `LAYOUT-12/release-post-r010/H014` The photograph on “Night release post - 2026-10-17” (release-post-r010.png) is used as shot, with nothing generated, extended, added or removed in it.
-- `LAYOUT-12/release-post-r010/H015` The photograph on “Night release post - 2026-10-17” (release-post-r010.png) is reproduced in two brand palette colours with visible grain, not in full colour, the same two as on the other eight night release posts.
+- `LAYOUT-12/release-post-r010/H015` The photograph on “Night release post - 2026-10-17” (release-post-r010.png) is reproduced in two palette colours, not in full colour.
 - `LAYOUT-12/release-post-r010/H016` Wherever umbra_archive_night_02.jpg or umbra_archive_night_05.jpg appears on “Night release post - 2026-10-17” (release-post-r010.png), its clipped white areas stay flat, with no face, clothing or instrument detail invented in them.
-- `LAYOUT-12/release-post-r010/H021` The act name on “Night release post - 2026-10-17” (release-post-r010.png) is Bone White #E9E4D8 on a solid Pitch #0E0E10 ground, with the date directly above it on a single line in Sodium #E4863B.
-- `LAYOUT-12/release-post-r010/H022` On “Night release post - 2026-10-17” (release-post-r010.png), the date line is letterspaced more open than the act name, and the door line more open than the support line.
+- `LAYOUT-12/release-post-r010/H021` The act name “Laurel and the Dive” on “Night release post - 2026-10-17” (release-post-r010.png) is Bone White #E9E4D8 on a solid Pitch #0E0E10 ground.
+- `LAYOUT-12/release-post-r010/H022` On “Night release post - 2026-10-17” (release-post-r010.png), the date line is letterspaced more open than the act name.
 - `LAYOUT-12/release-post-r010/H024` “Night release post - 2026-10-17” (release-post-r010.png) shows no sponsor logo or corporate partner mark anywhere.
 - `LAYOUT-12/release-post-r010/H025` Apart from the photograph, every type, ground, panel, rule and wordmark colour on “Night release post - 2026-10-17” (release-post-r010.png) is one of #0E0E10, #2A2A2E, #E4863B, #3F7C8C, #E9E4D8 or #8E2B24.
-- `LAYOUT-12/release-post-r010/H026` Pitch #0E0E10, Bone White #E9E4D8 and Sodium #E4863B all appear in the designed parts of “Night release post - 2026-10-17” (release-post-r010.png).
-- `LAYOUT-12/release-post-r010/H027` On “Night release post - 2026-10-17” (release-post-r010.png), every non-photographic ground and panel is Pitch #0E0E10 or Ash #2A2A2E, and every title, act name, support, door, set, body and fine-print line is Bone White #E9E4D8.
-- `LAYOUT-12/release-post-r010/H028` Every type, ground, panel, rule and wordmark colour on “Night release post - 2026-10-17” (release-post-r010.png) is solid at full opacity, with no tint, transparency, gradient, glow or shadow, and no scrim or overlay sits over the photograph.
-- `LAYOUT-12/release-post-r010/H029` On “Night release post - 2026-10-17” (release-post-r010.png), Cold Signal #3F7C8C and Blood #8E2B24 appear, if at all, only as hairline rules, dividers or a photograph's treatment colour, together covering no more than 5% of the designed, non-photographic area.
-- `LAYOUT-12/release-post-r002/H009` “Night release post - 2026-09-25” (release-post-r002.png) is delivered together with the other eight posts, release-post-r003.png through release-post-r010.png, as separate files.
-- `LAYOUT-12/release-post-r002/H010` The photograph on “Night release post - 2026-09-25” (release-post-r002.png) is one of umbra_archive_night_01.jpg, umbra_archive_night_02.jpg, umbra_archive_night_03.jpg, umbra_archive_night_04.jpg, umbra_archive_night_05.jpg or umbra_archive_night_06.jpg, not stock or generated.
-- `LAYOUT-12/release-post-r002/H011` On “Night release post - 2026-09-25” (release-post-r002.png), every non-photographic ground and panel is Pitch #0E0E10 or Ash #2A2A2E, and every title, act name, support, door, set, body and fine-print line is Bone White #E9E4D8.
-- `LAYOUT-12/release-post-r002/H013` The largest text on “Night release post - 2026-09-25” (release-post-r002.png) is the act name “Sable Quartet”.
-- `LAYOUT-12/release-post-r002/H014` On “Night release post - 2026-09-25” (release-post-r002.png) the act name “Sable Quartet” is set larger than the support line “with Odette Lang”.
-- `LAYOUT-12/poster-direction-type-led/H003` “After Dark poster direction - Type-led” (poster-direction-type-led.pdf) is delivered with its two sibling directions, poster-direction-image-led.pdf and poster-direction-graphic-led.pdf, as three separate files.
-- `LAYOUT-12/poster-direction-type-led/H004` Every act name on “After Dark poster direction - Type-led” (poster-direction-type-led.pdf), support acts excepted, is spelled as credited in umbra_billing_autumn.txt; a misspelled act makes the poster unusable.
+- `LAYOUT-12/release-post-r010/H027` Every non-photographic ground and panel on “Night release post - 2026-10-17” (release-post-r010.png) is Pitch #0E0E10 or Ash #2A2A2E.
+- `LAYOUT-12/release-post-r010/H028` All colour on “Night release post - 2026-10-17” (release-post-r010.png) is solid at 100% opacity, with no tint, transparency, gradient, glow or shadow, and no scrim or overlay on the photograph.
+- `LAYOUT-12/release-post-r010/H029` On “Night release post - 2026-10-17” (release-post-r010.png), Cold Signal #3F7C8C and Blood #8E2B24 appear only as hairlines, dividers or photo treatment.
+- `LAYOUT-12/release-post-r002/H010` The photograph on “Night release post - 2026-09-25” (release-post-r002.png) is one of the six supplied archive frames, umbra_archive_night_01.jpg to umbra_archive_night_06.jpg, not stock or generated.
+- `LAYOUT-12/release-post-r002/H011` Every non-photographic ground and panel on “Night release post - 2026-09-25” (release-post-r002.png) is Pitch #0E0E10 or Ash #2A2A2E.
+- `LAYOUT-12/release-post-r002/H013` Apart from the series title, the largest text on “Night release post - 2026-09-25” (release-post-r002.png) is the act name “Sable Quartet”.
+- `LAYOUT-12/poster-direction-type-led/H004` Every act name on “After Dark poster direction - Type-led” (poster-direction-type-led.pdf), support acts excepted, is spelled exactly as credited in umbra_billing_autumn.txt.
 - `LAYOUT-12/poster-direction-type-led/H005` On “After Dark poster direction - Type-led” (poster-direction-type-led.pdf), each headline act, Sable Quartet, Meridian Brass and Night Ferry, is set larger than every act of the remaining nights.
 - `LAYOUT-12/promoter-deck/H002` “Promoter pitch deck” (promoter-deck.pdf) shows all three poster directions by name: Type-led, Image-led and Graphic-led.
 - `LAYOUT-12/promoter-deck/H003` The draw chart in “Promoter pitch deck” (promoter-deck.pdf) gives last season's average draw by month: Sep 168, Oct 201, Nov 187, Dec 224, Jan 142 and Feb 176.
 - `LAYOUT-12/promoter-deck/H004` Any capacity figure in “Promoter pitch deck” (promoter-deck.pdf) reads 250 standing or 120 seated cabaret, as in umbra_room_specs.txt.
 - `LAYOUT-12/promoter-deck/H005` Any season-average draw in “Promoter pitch deck” (promoter-deck.pdf) reads 183 of 250, 73 percent, as in umbra_room_specs.txt.
-- `LAYOUT-12/promoter-deck/H006` “Promoter pitch deck” (promoter-deck.pdf) states no draw, capacity, stage, price, date or term figure absent from umbra_room_specs.txt, umbra_billing_autumn.txt, umbra_nights_autumn.csv and the brand identity.
-- `LAYOUT-12/promoter-deck/H007` The Type-led, Image-led and Graphic-led designs shown in “Promoter pitch deck” (promoter-deck.pdf) are those delivered as poster-direction-type-led.pdf, poster-direction-image-led.pdf and poster-direction-graphic-led.pdf.
+- `LAYOUT-12/promoter-deck/H006` Every draw, capacity, stage, price, date or deal figure in “Promoter pitch deck” (promoter-deck.pdf) appears in umbra_room_specs.txt, umbra_billing_autumn.txt, umbra_nights_autumn.csv or the brand identity.
+- `LAYOUT-12/promoter-deck/H007` The Type-led design shown in “Promoter pitch deck” (promoter-deck.pdf) is the one delivered as poster-direction-type-led.pdf.
 - `LAYOUT-12/promoter-deck/H008` Every act name in “Promoter pitch deck” (promoter-deck.pdf), support acts excepted, is spelled as credited in umbra_billing_autumn.txt.
 - `LAYOUT-12/promoter-deck/H009` Any weekday shown with Koa's 16 Oct date in “Promoter pitch deck” (promoter-deck.pdf) is Friday (FRI), not Saturday as umbra_billing_autumn.txt prints it.
-- `LAYOUT-12/promoter-deck/H010` Apart from Koa's, weekdays in “Promoter pitch deck” (promoter-deck.pdf) match their 2026 dates: Fri 25 Sep, Sat 26 Sep, Fri 2 Oct, Sat 3 Oct, Sun 4 Oct, Fri 9 Oct, Sat 10 Oct, Sat 17 Oct.
+- `LAYOUT-12/promoter-deck/H010` Any weekday shown in “Promoter pitch deck” (promoter-deck.pdf) matches 2026: Fri 25 Sep, Sat 26 Sep, Fri 2 Oct, Sat 3 Oct, Sun 4 Oct, Fri 9 Oct, Sat 10 Oct, Sat 17 Oct.
 - `LAYOUT-12/promoter-deck/H011` No SABLE QUARTET lettering, such as the shirt print in umbra_wordmark_nightferry.jpg, stands for Night Ferry in “Promoter pitch deck” (promoter-deck.pdf).
 - `LAYOUT-12/promoter-deck/H012` No wordmark, stencil or distressed lettering drawn, generated or otherwise made for Night Ferry appears in “Promoter pitch deck” (promoter-deck.pdf).
 - `LAYOUT-12/promoter-deck/H013` In “Promoter pitch deck” (promoter-deck.pdf), The Blue Hour, Vespertine, The Eastons, Koa and Laurel and the Dive are billed in type only, with no wordmark.
-- `LAYOUT-12/promoter-deck/H015` Where the Sable Quartet wordmark appears in “Promoter pitch deck” (promoter-deck.pdf), every letter of “SABLE QUARTET” in its source photograph, umbra_sable_wordmark_transparent.png or umbra_wordmark_nightferry.jpg, is present, none lost to the cloth or the cracked print.
-- `LAYOUT-12/promoter-deck/H016` Where the Sable Quartet wordmark appears in “Promoter pitch deck” (promoter-deck.pdf), it keeps the letter proportions of its source photograph, umbra_sable_wordmark_transparent.png or umbra_wordmark_nightferry.jpg, without stretching.
-- `LAYOUT-12/promoter-deck/H017` Where the Meridian Brass wordmark appears in “Promoter pitch deck” (promoter-deck.pdf), its lettering is the knitted MERIDIAN BRASS lettering of umbra_meridian_wordmark_transparent.png, not retyped in a font.
-- `LAYOUT-12/promoter-deck/H018` Where the Meridian Brass wordmark appears in “Promoter pitch deck” (promoter-deck.pdf), it keeps the letter proportions of umbra_meridian_wordmark_transparent.png without stretching.
-- `LAYOUT-12/promoter-deck/H019` Where the Meridian Brass wordmark appears in “Promoter pitch deck” (promoter-deck.pdf), no charcoal knit from the sweater in umbra_meridian_wordmark_transparent.png shows around or between its letters.
-- `LAYOUT-12/promoter-deck/H020` Every performance photograph in “Promoter pitch deck” (promoter-deck.pdf) is one of umbra_archive_night_01.jpg, umbra_archive_night_02.jpg, umbra_archive_night_03.jpg, umbra_archive_night_04.jpg, umbra_archive_night_05.jpg or umbra_archive_night_06.jpg, not stock or generated.
-- `LAYOUT-12/promoter-deck/H021` Every performance photograph in “Promoter pitch deck” (promoter-deck.pdf) is shown in two brand palette colours with visible grain, not in full colour.
+- `LAYOUT-12/promoter-deck/H015` If a Sable Quartet wordmark appears in “Promoter pitch deck” (promoter-deck.pdf), every letter of SABLE QUARTET in it is complete, as in umbra_sable_wordmark_transparent.png, with none missing or partly erased.
+- `LAYOUT-12/promoter-deck/H016` If a Sable Quartet wordmark appears in “Promoter pitch deck” (promoter-deck.pdf), it keeps the letter proportions of umbra_sable_wordmark_transparent.png, without stretching.
+- `LAYOUT-12/promoter-deck/H017` If a Meridian Brass wordmark appears in “Promoter pitch deck” (promoter-deck.pdf), it uses the letter shapes of umbra_meridian_wordmark_transparent.png, not lettering retyped in a font.
+- `LAYOUT-12/promoter-deck/H018` If a Meridian Brass wordmark appears in “Promoter pitch deck” (promoter-deck.pdf), it keeps the letter proportions of umbra_meridian_wordmark_transparent.png, without stretching.
+- `LAYOUT-12/promoter-deck/H019` If a Meridian Brass wordmark appears in “Promoter pitch deck” (promoter-deck.pdf), no knit texture like the sweater weave in umbra_wordmark_meridian.jpg shows around or between its letters.
+- `LAYOUT-12/promoter-deck/H020` Every performance photograph in “Promoter pitch deck” (promoter-deck.pdf) is one of the six supplied archive frames, umbra_archive_night_01.jpg to umbra_archive_night_06.jpg, not stock or generated.
+- `LAYOUT-12/promoter-deck/H021` Every performance photograph in “Promoter pitch deck” (promoter-deck.pdf) is reproduced in two palette colours, not in full colour.
 - `LAYOUT-12/promoter-deck/H022` Every performance photograph in “Promoter pitch deck” (promoter-deck.pdf) is used as shot, with nothing generated, extended, added or removed in it.
 - `LAYOUT-12/promoter-deck/H023` Wherever umbra_archive_night_02.jpg or umbra_archive_night_05.jpg appears in “Promoter pitch deck” (promoter-deck.pdf), its clipped white areas stay flat, with no face, clothing or instrument detail invented in them.
-- `LAYOUT-12/promoter-deck/H027` Any act name typeset in “Promoter pitch deck” (promoter-deck.pdf), outside the poster images and support acts excepted, is Bone White #E9E4D8 on solid Pitch #0E0E10; any date line sits directly above its act name, on one line, in Sodium #E4863B.
-- `LAYOUT-12/promoter-deck/H028` In “Promoter pitch deck” (promoter-deck.pdf), any date line is letterspaced more open than its act name, and any door line more open than the body text.
+- `LAYOUT-12/promoter-deck/H027` Any act name typeset in “Promoter pitch deck” (promoter-deck.pdf) outside the poster images, support acts excepted, is Bone White #E9E4D8 on solid Pitch #0E0E10.
+- `LAYOUT-12/promoter-deck/H028` Any date line in “Promoter pitch deck” (promoter-deck.pdf) is letterspaced more open than its act name.
 - `LAYOUT-12/promoter-deck/H029` No line of body text in “Promoter pitch deck” (promoter-deck.pdf) runs longer than 65 characters.
 - `LAYOUT-12/promoter-deck/H030` “Promoter pitch deck” (promoter-deck.pdf) shows no sponsor logo or corporate partner mark on any page.
 - `LAYOUT-12/promoter-deck/H031` Apart from photographs and poster images, every type, ground, panel, rule, chart and wordmark colour in “Promoter pitch deck” (promoter-deck.pdf) is one of #0E0E10, #2A2A2E, #E4863B, #3F7C8C, #E9E4D8 or #8E2B24.
 - `LAYOUT-12/promoter-deck/H032` Pitch #0E0E10 and Bone White #E9E4D8 both appear in the designed parts of “Promoter pitch deck” (promoter-deck.pdf).
-- `LAYOUT-12/promoter-deck/H033` In “Promoter pitch deck” (promoter-deck.pdf), outside the poster images, every non-photographic ground and panel is Pitch #0E0E10 or Ash #2A2A2E, and every heading, act name, support, billing, body, table, chart-label, door, set and fine-print line is Bone White #E9E4D8.
-- `LAYOUT-12/promoter-deck/H034` Every type, ground, panel, rule, chart and wordmark colour in “Promoter pitch deck” (promoter-deck.pdf) is solid at full opacity, with no tint, transparency, gradient, glow or shadow, and no scrim or overlay sits over a photograph.
-- `LAYOUT-12/promoter-deck/H035` In “Promoter pitch deck” (promoter-deck.pdf), Cold Signal #3F7C8C and Blood #8E2B24 appear, if at all, only as hairline rules, dividers, chart marks or a photograph's treatment colour, together covering no more than 5% of the designed, non-photographic area.
-- `LAYOUT-12/release-post-r003/H009` Where the Meridian Brass wordmark appears on “Night release post - 2026-09-26” (release-post-r003.png), it keeps the letter proportions of the supplied umbra_meridian_wordmark_transparent.png without stretching.
+- `LAYOUT-12/promoter-deck/H033` Outside the poster images, every non-photographic ground and panel in “Promoter pitch deck” (promoter-deck.pdf) is Pitch #0E0E10 or Ash #2A2A2E.
+- `LAYOUT-12/promoter-deck/H034` All colour in “Promoter pitch deck” (promoter-deck.pdf) is solid at 100% opacity, with no tint, transparency, gradient, glow or shadow, and no scrim or overlay on a photograph.
+- `LAYOUT-12/promoter-deck/H035` In “Promoter pitch deck” (promoter-deck.pdf), Cold Signal #3F7C8C and Blood #8E2B24 appear only as hairlines, dividers, chart marks or photo treatment.
+- `LAYOUT-12/release-post-r003/H009` The Meridian Brass wordmark on “Night release post - 2026-09-26” (release-post-r003.png) keeps the letter proportions of umbra_meridian_wordmark_transparent.png, without stretching.
 - `LAYOUT-12/release-post-r003/H010` Any weekday shown with the date on “Night release post - 2026-09-26” (release-post-r003.png) is Saturday (SAT).
 - `LAYOUT-12/release-post-r003/H011` At full 1080 x 1350 size, every letter of the act name on “Night release post - 2026-09-26” (release-post-r003.png) is inside the frame, none clipped.
-- `LAYOUT-12/release-post-r003/H012` The largest text on “Night release post - 2026-09-26” (release-post-r003.png) is the act name “Meridian Brass”.
-- `LAYOUT-12/release-post-r003/H013` On “Night release post - 2026-09-26” (release-post-r003.png) the act name “Meridian Brass” is set larger than the support line “with The Tin Ravens”.
-- `LAYOUT-12/release-post-r003/H014` The photograph on “Night release post - 2026-09-26” (release-post-r003.png) is one of umbra_archive_night_01.jpg, umbra_archive_night_02.jpg, umbra_archive_night_03.jpg, umbra_archive_night_04.jpg, umbra_archive_night_05.jpg or umbra_archive_night_06.jpg, not stock or generated.
+- `LAYOUT-12/release-post-r003/H012` Apart from the series title, the largest text on “Night release post - 2026-09-26” (release-post-r003.png) is the act name “Meridian Brass”.
+- `LAYOUT-12/release-post-r003/H014` The photograph on “Night release post - 2026-09-26” (release-post-r003.png) is one of the six supplied archive frames, umbra_archive_night_01.jpg to umbra_archive_night_06.jpg, not stock or generated.
 - `LAYOUT-12/release-post-r003/H015` The photograph on “Night release post - 2026-09-26” (release-post-r003.png) is used as shot, with nothing generated, extended, added or removed in it.
 - `LAYOUT-12/release-post-r003/H016` Wherever umbra_archive_night_02.jpg or umbra_archive_night_05.jpg appears on “Night release post - 2026-09-26” (release-post-r003.png), its clipped white areas stay flat, with no face, clothing or instrument detail invented in them.
-- `LAYOUT-12/release-post-r003/H018` Where the Meridian Brass wordmark appears on “Night release post - 2026-09-26” (release-post-r003.png), its lettering is the knitted MERIDIAN BRASS lettering of umbra_meridian_wordmark_transparent.png, not retyped in a font.
-- `LAYOUT-12/release-post-r003/H019` Where the Meridian Brass wordmark appears on “Night release post - 2026-09-26” (release-post-r003.png), no charcoal knit from the sweater in umbra_meridian_wordmark_transparent.png shows around or between its letters.
+- `LAYOUT-12/release-post-r003/H018` The Meridian Brass wordmark on “Night release post - 2026-09-26” (release-post-r003.png) uses the MERIDIAN BRASS letter shapes of umbra_meridian_wordmark_transparent.png, not lettering retyped in a font.
+- `LAYOUT-12/release-post-r003/H019` No knit texture, like the sweater weave in umbra_wordmark_meridian.jpg, shows around or between the letters of the Meridian Brass wordmark on “Night release post - 2026-09-26” (release-post-r003.png).
 - `LAYOUT-12/release-post-r003/H020` “Night release post - 2026-09-26” (release-post-r003.png) shows no sponsor logo or corporate partner mark anywhere.
-- `LAYOUT-12/poster-direction-image-led/H003` The photograph on “After Dark poster direction - Image-led” (poster-direction-image-led.pdf) is reproduced in two brand palette colours with visible grain, not in full colour.
-- `LAYOUT-12/poster-direction-image-led/H004` Every act name on “After Dark poster direction - Image-led” (poster-direction-image-led.pdf), support acts excepted, is spelled as credited in umbra_billing_autumn.txt; a misspelled act makes the poster unusable.
+- `LAYOUT-12/poster-direction-image-led/H003` The photograph on “After Dark poster direction - Image-led” (poster-direction-image-led.pdf) is reproduced in two palette colours, not in full colour.
+- `LAYOUT-12/poster-direction-image-led/H004` Every act name on “After Dark poster direction - Image-led” (poster-direction-image-led.pdf), support acts excepted, is spelled exactly as credited in umbra_billing_autumn.txt.
 - `LAYOUT-12/poster-direction-image-led/H005` Night Ferry is credited on “After Dark poster direction - Image-led” (poster-direction-image-led.pdf) as two words, “NIGHT FERRY”, never run together.
 - `LAYOUT-12/poster-direction-image-led/H006` On “After Dark poster direction - Image-led” (poster-direction-image-led.pdf), each headline act carries its night: Sable Quartet 25 Sep, Meridian Brass 26 Sep, Night Ferry 2 Oct.
-- `LAYOUT-12/poster-direction-image-led/H007` On “After Dark poster direction - Image-led” (poster-direction-image-led.pdf), the remaining nights carry their dates: The Blue Hour 3 Oct and 4 Oct, Vespertine 9 Oct, The Eastons 10 Oct, Koa 16 Oct, Laurel and the Dive 17 Oct.
+- `LAYOUT-12/poster-direction-image-led/H007` On “After Dark poster direction - Image-led” (poster-direction-image-led.pdf), The Blue Hour is dated 3 and 4 Oct, Vespertine 9 Oct, The Eastons 10 Oct, Koa 16 Oct and Laurel and the Dive 17 Oct.
 - `LAYOUT-12/poster-direction-image-led/H008` Any weekday shown with Koa's 16 Oct date on “After Dark poster direction - Image-led” (poster-direction-image-led.pdf) is Friday (FRI), not Saturday as umbra_billing_autumn.txt prints it.
-- `LAYOUT-12/poster-direction-image-led/H009` Apart from Koa's, weekdays on “After Dark poster direction - Image-led” (poster-direction-image-led.pdf) match their 2026 dates: Fri 25 Sep, Sat 26 Sep, Fri 2 Oct, Sat 3 Oct, Sun 4 Oct, Fri 9 Oct, Sat 10 Oct, Sat 17 Oct.
-- `LAYOUT-12/poster-direction-image-led/H010` On “After Dark poster direction - Image-led” (poster-direction-image-led.pdf), the headline acts are billed with their supports: Sable Quartet with Odette Lang, Meridian Brass with The Tin Ravens, Night Ferry with Junior Vale.
-- `LAYOUT-12/poster-direction-image-led/H011` On “After Dark poster direction - Image-led” (poster-direction-image-led.pdf), remaining acts carry their supports: The Blue Hour with Coral Sound, Vespertine with Marlow Reyes, The Eastons with Half Light, Koa with The Undertow, Laurel and the Dive with Ferro.
+- `LAYOUT-12/poster-direction-image-led/H009` Any weekday shown on “After Dark poster direction - Image-led” (poster-direction-image-led.pdf) matches 2026: Fri 25 Sep, Sat 26 Sep, Fri 2 Oct, Sat 3 Oct, Sun 4 Oct, Fri 9 Oct, Sat 10 Oct, Sat 17 Oct.
+- `LAYOUT-12/poster-direction-image-led/H010` On “After Dark poster direction - Image-led” (poster-direction-image-led.pdf), Sable Quartet is billed with Odette Lang, Meridian Brass with The Tin Ravens, Night Ferry with Junior Vale.
+- `LAYOUT-12/poster-direction-image-led/H011` On “After Dark poster direction - Image-led” (poster-direction-image-led.pdf), The Blue Hour is billed with Coral Sound, Vespertine with Marlow Reyes, The Eastons with Half Light, Koa with The Undertow, Laurel and the Dive with Ferro.
 - `LAYOUT-12/poster-direction-image-led/H012` Every support act on “After Dark poster direction - Image-led” (poster-direction-image-led.pdf) is set smaller than the act name it supports.
 - `LAYOUT-12/poster-direction-image-led/H013` On “After Dark poster direction - Image-led” (poster-direction-image-led.pdf), each headline act, Sable Quartet, Meridian Brass and Night Ferry, is set larger than every act of the remaining nights.
 - `LAYOUT-12/poster-direction-image-led/H014` “After Dark poster direction - Image-led” (poster-direction-image-led.pdf) carries the licence line word for word: “Umbra Loft, 14 Foundry Court (basement), Providence RI. Licensed under City of Providence Entertainment Licence PVD-2021-0846.”
@@ -330,183 +342,370 @@ Revised input pack. Previous execution results are historical, not current ratin
 - `LAYOUT-12/poster-direction-image-led/H016` No SABLE QUARTET lettering, such as the shirt print in umbra_wordmark_nightferry.jpg, stands for Night Ferry on “After Dark poster direction - Image-led” (poster-direction-image-led.pdf).
 - `LAYOUT-12/poster-direction-image-led/H017` No wordmark, stencil or distressed lettering drawn, generated or otherwise made for Night Ferry appears on “After Dark poster direction - Image-led” (poster-direction-image-led.pdf).
 - `LAYOUT-12/poster-direction-image-led/H018` On “After Dark poster direction - Image-led” (poster-direction-image-led.pdf), The Blue Hour, Vespertine, The Eastons, Koa and Laurel and the Dive are billed in type only, with no wordmark.
-- `LAYOUT-12/poster-direction-image-led/H021` Where the Sable Quartet wordmark appears on “After Dark poster direction - Image-led” (poster-direction-image-led.pdf), every letter of “SABLE QUARTET” in its source photograph, umbra_sable_wordmark_transparent.png or umbra_wordmark_nightferry.jpg, is present, none lost to the cloth or the cracked print.
-- `LAYOUT-12/poster-direction-image-led/H022` Where the Sable Quartet wordmark appears on “After Dark poster direction - Image-led” (poster-direction-image-led.pdf), it keeps the letter proportions of its source photograph, umbra_sable_wordmark_transparent.png or umbra_wordmark_nightferry.jpg, without stretching.
-- `LAYOUT-12/poster-direction-image-led/H023` Where the Meridian Brass wordmark appears on “After Dark poster direction - Image-led” (poster-direction-image-led.pdf), its lettering is the knitted MERIDIAN BRASS lettering of umbra_meridian_wordmark_transparent.png, not retyped in a font.
-- `LAYOUT-12/poster-direction-image-led/H024` Where the Meridian Brass wordmark appears on “After Dark poster direction - Image-led” (poster-direction-image-led.pdf), it keeps the letter proportions of umbra_meridian_wordmark_transparent.png without stretching.
-- `LAYOUT-12/poster-direction-image-led/H025` Where the Meridian Brass wordmark appears on “After Dark poster direction - Image-led” (poster-direction-image-led.pdf), no charcoal knit from the sweater in umbra_meridian_wordmark_transparent.png shows around or between its letters.
-- `LAYOUT-12/poster-direction-image-led/H026` The photograph on “After Dark poster direction - Image-led” (poster-direction-image-led.pdf) is one of umbra_archive_night_01.jpg, umbra_archive_night_02.jpg, umbra_archive_night_03.jpg, umbra_archive_night_04.jpg, umbra_archive_night_05.jpg or umbra_archive_night_06.jpg, not stock or generated.
+- `LAYOUT-12/poster-direction-image-led/H021` Every letter of SABLE QUARTET in the Sable Quartet wordmark on “After Dark poster direction - Image-led” (poster-direction-image-led.pdf) is complete, as in umbra_sable_wordmark_transparent.png, with none missing or partly erased.
+- `LAYOUT-12/poster-direction-image-led/H022` The Sable Quartet wordmark on “After Dark poster direction - Image-led” (poster-direction-image-led.pdf) keeps the letter proportions of umbra_sable_wordmark_transparent.png, without stretching.
+- `LAYOUT-12/poster-direction-image-led/H023` The Meridian Brass wordmark on “After Dark poster direction - Image-led” (poster-direction-image-led.pdf) uses the MERIDIAN BRASS letter shapes of umbra_meridian_wordmark_transparent.png, not lettering retyped in a font.
+- `LAYOUT-12/poster-direction-image-led/H024` The Meridian Brass wordmark on “After Dark poster direction - Image-led” (poster-direction-image-led.pdf) keeps the letter proportions of umbra_meridian_wordmark_transparent.png, without stretching.
+- `LAYOUT-12/poster-direction-image-led/H025` No knit texture, like the sweater weave in umbra_wordmark_meridian.jpg, shows around or between the letters of the Meridian Brass wordmark on “After Dark poster direction - Image-led” (poster-direction-image-led.pdf).
+- `LAYOUT-12/poster-direction-image-led/H026` The photograph on “After Dark poster direction - Image-led” (poster-direction-image-led.pdf) is one of the six supplied archive frames, umbra_archive_night_01.jpg to umbra_archive_night_06.jpg, not stock or generated.
 - `LAYOUT-12/poster-direction-image-led/H027` The photograph on “After Dark poster direction - Image-led” (poster-direction-image-led.pdf) is used as shot, with nothing generated, extended, added or removed in it.
 - `LAYOUT-12/poster-direction-image-led/H028` Wherever umbra_archive_night_02.jpg or umbra_archive_night_05.jpg appears on “After Dark poster direction - Image-led” (poster-direction-image-led.pdf), its clipped white areas stay flat, with no face, clothing or instrument detail invented in them.
 - `LAYOUT-12/poster-direction-image-led/H029` Viewed at 100% on “After Dark poster direction - Image-led” (poster-direction-image-led.pdf), no performance photograph shows motion smear such as the streaked trumpet bell and right hand of umbra_archive_night_06.jpg.
 - `LAYOUT-12/poster-direction-image-led/H030` “After Dark poster direction - Image-led” (poster-direction-image-led.pdf) shows no sponsor logo or corporate partner mark anywhere on the poster.
-- `LAYOUT-12/poster-direction-image-led/H035` Every act name on “After Dark poster direction - Image-led” (poster-direction-image-led.pdf), support acts excepted, is Bone White #E9E4D8 on a solid Pitch #0E0E10 ground, with its date directly above it on a single line in Sodium #E4863B.
-- `LAYOUT-12/poster-direction-image-led/H036` On “After Dark poster direction - Image-led” (poster-direction-image-led.pdf), every date line is letterspaced more open than the act names, and any door line more open than the support acts.
+- `LAYOUT-12/poster-direction-image-led/H035` Every act name on “After Dark poster direction - Image-led” (poster-direction-image-led.pdf), support acts excepted, is Bone White #E9E4D8 on a solid Pitch #0E0E10 ground.
+- `LAYOUT-12/poster-direction-image-led/H036` On “After Dark poster direction - Image-led” (poster-direction-image-led.pdf), every date line is letterspaced more open than the act names.
 - `LAYOUT-12/poster-direction-image-led/H037` No line of body or billing text on “After Dark poster direction - Image-led” (poster-direction-image-led.pdf) runs longer than 65 characters.
 - `LAYOUT-12/poster-direction-image-led/H038` Apart from photographs, every type, ground, panel, rule and wordmark colour on “After Dark poster direction - Image-led” (poster-direction-image-led.pdf) is one of #0E0E10, #2A2A2E, #E4863B, #3F7C8C, #E9E4D8 or #8E2B24.
-- `LAYOUT-12/poster-direction-image-led/H039` Pitch #0E0E10, Bone White #E9E4D8 and Sodium #E4863B all appear in the designed parts of “After Dark poster direction - Image-led” (poster-direction-image-led.pdf).
-- `LAYOUT-12/poster-direction-image-led/H040` On “After Dark poster direction - Image-led” (poster-direction-image-led.pdf), every non-photographic ground and panel is Pitch #0E0E10 or Ash #2A2A2E, and every title, act name, support, door, set, body, billing and fine-print line is Bone White #E9E4D8.
-- `LAYOUT-12/poster-direction-image-led/H041` Every type, ground, panel, rule and wordmark colour on “After Dark poster direction - Image-led” (poster-direction-image-led.pdf) is solid at full opacity, with no tint, transparency, gradient, glow or shadow, and no scrim or overlay sits over a photograph.
-- `LAYOUT-12/poster-direction-image-led/H042` On “After Dark poster direction - Image-led” (poster-direction-image-led.pdf), Cold Signal #3F7C8C and Blood #8E2B24 appear, if at all, only as hairline rules, dividers or a photograph's treatment colour, together covering no more than 5% of the designed, non-photographic area.
+- `LAYOUT-12/poster-direction-image-led/H040` Every non-photographic ground and panel on “After Dark poster direction - Image-led” (poster-direction-image-led.pdf) is Pitch #0E0E10 or Ash #2A2A2E.
+- `LAYOUT-12/poster-direction-image-led/H041` All colour on “After Dark poster direction - Image-led” (poster-direction-image-led.pdf) is solid at 100% opacity, with no tint, transparency, gradient, glow or shadow, and no scrim or overlay on a photograph.
+- `LAYOUT-12/poster-direction-image-led/H042` On “After Dark poster direction - Image-led” (poster-direction-image-led.pdf), Cold Signal #3F7C8C and Blood #8E2B24 appear only as hairlines, dividers or photo treatment.
 - `LAYOUT-12/poster-direction-type-led/H006` “After Dark poster direction - Type-led” (poster-direction-type-led.pdf) shows no sponsor logo or corporate partner mark anywhere on the poster.
 - `LAYOUT-12/poster-direction-type-led/H007` Night Ferry is credited on “After Dark poster direction - Type-led” (poster-direction-type-led.pdf) as two words, “NIGHT FERRY”, never run together.
 - `LAYOUT-12/poster-direction-type-led/H008` On “After Dark poster direction - Type-led” (poster-direction-type-led.pdf), each headline act carries its night: Sable Quartet 25 Sep, Meridian Brass 26 Sep, Night Ferry 2 Oct.
-- `LAYOUT-12/poster-direction-type-led/H009` On “After Dark poster direction - Type-led” (poster-direction-type-led.pdf), the remaining nights carry their dates: The Blue Hour 3 Oct and 4 Oct, Vespertine 9 Oct, The Eastons 10 Oct, Koa 16 Oct, Laurel and the Dive 17 Oct.
+- `LAYOUT-12/poster-direction-type-led/H009` On “After Dark poster direction - Type-led” (poster-direction-type-led.pdf), The Blue Hour is dated 3 and 4 Oct, Vespertine 9 Oct, The Eastons 10 Oct, Koa 16 Oct and Laurel and the Dive 17 Oct.
 - `LAYOUT-12/poster-direction-type-led/H010` Any weekday shown with Koa's 16 Oct date on “After Dark poster direction - Type-led” (poster-direction-type-led.pdf) is Friday (FRI), not Saturday as umbra_billing_autumn.txt prints it.
-- `LAYOUT-12/poster-direction-type-led/H011` Apart from Koa's, weekdays on “After Dark poster direction - Type-led” (poster-direction-type-led.pdf) match their 2026 dates: Fri 25 Sep, Sat 26 Sep, Fri 2 Oct, Sat 3 Oct, Sun 4 Oct, Fri 9 Oct, Sat 10 Oct, Sat 17 Oct.
-- `LAYOUT-12/poster-direction-type-led/H012` On “After Dark poster direction - Type-led” (poster-direction-type-led.pdf), the headline acts are billed with their supports: Sable Quartet with Odette Lang, Meridian Brass with The Tin Ravens, Night Ferry with Junior Vale.
-- `LAYOUT-12/poster-direction-type-led/H013` On “After Dark poster direction - Type-led” (poster-direction-type-led.pdf), remaining acts carry their supports: The Blue Hour with Coral Sound, Vespertine with Marlow Reyes, The Eastons with Half Light, Koa with The Undertow, Laurel and the Dive with Ferro.
+- `LAYOUT-12/poster-direction-type-led/H011` Any weekday shown on “After Dark poster direction - Type-led” (poster-direction-type-led.pdf) matches 2026: Fri 25 Sep, Sat 26 Sep, Fri 2 Oct, Sat 3 Oct, Sun 4 Oct, Fri 9 Oct, Sat 10 Oct, Sat 17 Oct.
+- `LAYOUT-12/poster-direction-type-led/H012` On “After Dark poster direction - Type-led” (poster-direction-type-led.pdf), Sable Quartet is billed with Odette Lang, Meridian Brass with The Tin Ravens, Night Ferry with Junior Vale.
+- `LAYOUT-12/poster-direction-type-led/H013` On “After Dark poster direction - Type-led” (poster-direction-type-led.pdf), The Blue Hour is billed with Coral Sound, Vespertine with Marlow Reyes, The Eastons with Half Light, Koa with The Undertow, Laurel and the Dive with Ferro.
 - `LAYOUT-12/poster-direction-type-led/H014` Every support act on “After Dark poster direction - Type-led” (poster-direction-type-led.pdf) is set smaller than the act name it supports.
 - `LAYOUT-12/poster-direction-type-led/H015` “After Dark poster direction - Type-led” (poster-direction-type-led.pdf) carries the licence line word for word: “Umbra Loft, 14 Foundry Court (basement), Providence RI. Licensed under City of Providence Entertainment Licence PVD-2021-0846.”
 - `LAYOUT-12/poster-direction-type-led/H016` “After Dark poster direction - Type-led” (poster-direction-type-led.pdf) carries the accessibility line word for word: “Step-free access to the main room is via the mill loading entrance on request; please contact the venue in advance.”
 - `LAYOUT-12/poster-direction-type-led/H017` No SABLE QUARTET lettering, such as the shirt print in umbra_wordmark_nightferry.jpg, stands for Night Ferry on “After Dark poster direction - Type-led” (poster-direction-type-led.pdf).
 - `LAYOUT-12/poster-direction-type-led/H018` No wordmark, stencil or distressed lettering drawn, generated or otherwise made for Night Ferry appears on “After Dark poster direction - Type-led” (poster-direction-type-led.pdf).
 - `LAYOUT-12/poster-direction-type-led/H019` On “After Dark poster direction - Type-led” (poster-direction-type-led.pdf), The Blue Hour, Vespertine, The Eastons, Koa and Laurel and the Dive are billed in type only, with no wordmark.
-- `LAYOUT-12/poster-direction-type-led/H022` Where the Sable Quartet wordmark appears on “After Dark poster direction - Type-led” (poster-direction-type-led.pdf), every letter of “SABLE QUARTET” in its source photograph, umbra_sable_wordmark_transparent.png or umbra_wordmark_nightferry.jpg, is present, none lost to the cloth or the cracked print.
-- `LAYOUT-12/poster-direction-type-led/H023` Where the Sable Quartet wordmark appears on “After Dark poster direction - Type-led” (poster-direction-type-led.pdf), it keeps the letter proportions of its source photograph, umbra_sable_wordmark_transparent.png or umbra_wordmark_nightferry.jpg, without stretching.
-- `LAYOUT-12/poster-direction-type-led/H024` Where the Meridian Brass wordmark appears on “After Dark poster direction - Type-led” (poster-direction-type-led.pdf), its lettering is the knitted MERIDIAN BRASS lettering of umbra_meridian_wordmark_transparent.png, not retyped in a font.
-- `LAYOUT-12/poster-direction-type-led/H025` Where the Meridian Brass wordmark appears on “After Dark poster direction - Type-led” (poster-direction-type-led.pdf), it keeps the letter proportions of umbra_meridian_wordmark_transparent.png without stretching.
-- `LAYOUT-12/poster-direction-type-led/H026` Where the Meridian Brass wordmark appears on “After Dark poster direction - Type-led” (poster-direction-type-led.pdf), no charcoal knit from the sweater in umbra_meridian_wordmark_transparent.png shows around or between its letters.
-- `LAYOUT-12/poster-direction-type-led/H027` Any performance photograph on “After Dark poster direction - Type-led” (poster-direction-type-led.pdf) is one of umbra_archive_night_01.jpg, umbra_archive_night_02.jpg, umbra_archive_night_03.jpg, umbra_archive_night_04.jpg, umbra_archive_night_05.jpg or umbra_archive_night_06.jpg, not stock or generated.
+- `LAYOUT-12/poster-direction-type-led/H022` Every letter of SABLE QUARTET in the Sable Quartet wordmark on “After Dark poster direction - Type-led” (poster-direction-type-led.pdf) is complete, as in umbra_sable_wordmark_transparent.png, with none missing or partly erased.
+- `LAYOUT-12/poster-direction-type-led/H023` The Sable Quartet wordmark on “After Dark poster direction - Type-led” (poster-direction-type-led.pdf) keeps the letter proportions of umbra_sable_wordmark_transparent.png, without stretching.
+- `LAYOUT-12/poster-direction-type-led/H024` The Meridian Brass wordmark on “After Dark poster direction - Type-led” (poster-direction-type-led.pdf) uses the MERIDIAN BRASS letter shapes of umbra_meridian_wordmark_transparent.png, not lettering retyped in a font.
+- `LAYOUT-12/poster-direction-type-led/H025` The Meridian Brass wordmark on “After Dark poster direction - Type-led” (poster-direction-type-led.pdf) keeps the letter proportions of umbra_meridian_wordmark_transparent.png, without stretching.
+- `LAYOUT-12/poster-direction-type-led/H026` No knit texture, like the sweater weave in umbra_wordmark_meridian.jpg, shows around or between the letters of the Meridian Brass wordmark on “After Dark poster direction - Type-led” (poster-direction-type-led.pdf).
+- `LAYOUT-12/poster-direction-type-led/H027` Any performance photograph on “After Dark poster direction - Type-led” (poster-direction-type-led.pdf) is one of the six supplied archive frames, umbra_archive_night_01.jpg to umbra_archive_night_06.jpg, not stock or generated.
 - `LAYOUT-12/poster-direction-type-led/H028` Every performance photograph on “After Dark poster direction - Type-led” (poster-direction-type-led.pdf) is used as shot, with nothing generated, extended, added or removed in it.
-- `LAYOUT-12/poster-direction-type-led/H029` Any performance photograph on “After Dark poster direction - Type-led” (poster-direction-type-led.pdf) is reproduced in two brand palette colours with visible grain, not in full colour.
+- `LAYOUT-12/poster-direction-type-led/H029` Any performance photograph on “After Dark poster direction - Type-led” (poster-direction-type-led.pdf) is reproduced in two palette colours, not in full colour.
 - `LAYOUT-12/poster-direction-type-led/H030` Wherever umbra_archive_night_02.jpg or umbra_archive_night_05.jpg appears on “After Dark poster direction - Type-led” (poster-direction-type-led.pdf), its clipped white areas stay flat, with no face, clothing or instrument detail invented in them.
 - `LAYOUT-12/poster-direction-type-led/H031` Viewed at 100% on “After Dark poster direction - Type-led” (poster-direction-type-led.pdf), no performance photograph shows motion smear such as the streaked trumpet bell and right hand of umbra_archive_night_06.jpg.
-- `LAYOUT-12/poster-direction-type-led/H036` Every act name on “After Dark poster direction - Type-led” (poster-direction-type-led.pdf), support acts excepted, is Bone White #E9E4D8 on a solid Pitch #0E0E10 ground, with its date directly above it on a single line in Sodium #E4863B.
-- `LAYOUT-12/poster-direction-type-led/H037` On “After Dark poster direction - Type-led” (poster-direction-type-led.pdf), every date line is letterspaced more open than the act names, and any door line more open than the support acts.
+- `LAYOUT-12/poster-direction-type-led/H036` Every act name on “After Dark poster direction - Type-led” (poster-direction-type-led.pdf), support acts excepted, is Bone White #E9E4D8 on a solid Pitch #0E0E10 ground.
+- `LAYOUT-12/poster-direction-type-led/H037` On “After Dark poster direction - Type-led” (poster-direction-type-led.pdf), every date line is letterspaced more open than the act names.
 - `LAYOUT-12/poster-direction-type-led/H038` No line of body or billing text on “After Dark poster direction - Type-led” (poster-direction-type-led.pdf) runs longer than 65 characters.
 - `LAYOUT-12/poster-direction-type-led/H039` Apart from photographs, every type, ground, panel, rule and wordmark colour on “After Dark poster direction - Type-led” (poster-direction-type-led.pdf) is one of #0E0E10, #2A2A2E, #E4863B, #3F7C8C, #E9E4D8 or #8E2B24.
-- `LAYOUT-12/poster-direction-type-led/H040` Pitch #0E0E10, Bone White #E9E4D8 and Sodium #E4863B all appear in the designed parts of “After Dark poster direction - Type-led” (poster-direction-type-led.pdf).
-- `LAYOUT-12/poster-direction-type-led/H041` On “After Dark poster direction - Type-led” (poster-direction-type-led.pdf), every non-photographic ground and panel is Pitch #0E0E10 or Ash #2A2A2E, and every title, act name, support, door, set, body, billing and fine-print line is Bone White #E9E4D8.
-- `LAYOUT-12/poster-direction-type-led/H042` Every type, ground, panel, rule and wordmark colour on “After Dark poster direction - Type-led” (poster-direction-type-led.pdf) is solid at full opacity, with no tint, transparency, gradient, glow or shadow, and no scrim or overlay sits over a photograph.
-- `LAYOUT-12/poster-direction-type-led/H043` On “After Dark poster direction - Type-led” (poster-direction-type-led.pdf), Cold Signal #3F7C8C and Blood #8E2B24 appear, if at all, only as hairline rules, dividers or a photograph's treatment colour, together covering no more than 5% of the designed, non-photographic area.
+- `LAYOUT-12/poster-direction-type-led/H041` Every non-photographic ground and panel on “After Dark poster direction - Type-led” (poster-direction-type-led.pdf) is Pitch #0E0E10 or Ash #2A2A2E.
+- `LAYOUT-12/poster-direction-type-led/H042` All colour on “After Dark poster direction - Type-led” (poster-direction-type-led.pdf) is solid at 100% opacity, with no tint, transparency, gradient, glow or shadow, and no scrim or overlay on a photograph.
+- `LAYOUT-12/poster-direction-type-led/H043` On “After Dark poster direction - Type-led” (poster-direction-type-led.pdf), Cold Signal #3F7C8C and Blood #8E2B24 appear only as hairlines, dividers or photo treatment.
 - `LAYOUT-12/release-post-r002/H015` The photograph on “Night release post - 2026-09-25” (release-post-r002.png) is used as shot, with nothing generated, extended, added or removed in it.
 - `LAYOUT-12/release-post-r002/H016` Any weekday shown with the date on “Night release post - 2026-09-25” (release-post-r002.png) is Friday (FRI).
 - `LAYOUT-12/release-post-r002/H017` At full 1080 x 1350 size, every letter of the act name on “Night release post - 2026-09-25” (release-post-r002.png) is inside the frame, none clipped.
-- `LAYOUT-12/release-post-r002/H018` The photograph on “Night release post - 2026-09-25” (release-post-r002.png) is reproduced in two brand palette colours with visible grain, not in full colour, the same two as on the other eight night release posts.
+- `LAYOUT-12/release-post-r002/H018` The photograph on “Night release post - 2026-09-25” (release-post-r002.png) is reproduced in two palette colours, not in full colour.
 - `LAYOUT-12/release-post-r002/H019` Wherever umbra_archive_night_02.jpg or umbra_archive_night_05.jpg appears on “Night release post - 2026-09-25” (release-post-r002.png), its clipped white areas stay flat, with no face, clothing or instrument detail invented in them.
-- `LAYOUT-12/release-post-r002/H021` Where the Sable Quartet wordmark appears on “Night release post - 2026-09-25” (release-post-r002.png), every letter of “SABLE QUARTET” in its source photograph, umbra_sable_wordmark_transparent.png or umbra_wordmark_nightferry.jpg, is present, none lost to the cloth or the cracked print.
-- `LAYOUT-12/release-post-r002/H022` Where the Sable Quartet wordmark appears on “Night release post - 2026-09-25” (release-post-r002.png), it keeps the letter proportions of its source photograph, umbra_sable_wordmark_transparent.png or umbra_wordmark_nightferry.jpg, without stretching.
-- `LAYOUT-12/release-post-r002/H026` The act name on “Night release post - 2026-09-25” (release-post-r002.png) is Bone White #E9E4D8 on a solid Pitch #0E0E10 ground, with the date directly above it on a single line in Sodium #E4863B.
-- `LAYOUT-12/release-post-r002/H027` On “Night release post - 2026-09-25” (release-post-r002.png), the date line is letterspaced more open than the act name, and the door line more open than the support line.
+- `LAYOUT-12/release-post-r002/H021` Every letter of SABLE QUARTET in the Sable Quartet wordmark on “Night release post - 2026-09-25” (release-post-r002.png) is complete, as in umbra_sable_wordmark_transparent.png, with none missing or partly erased.
+- `LAYOUT-12/release-post-r002/H022` The Sable Quartet wordmark on “Night release post - 2026-09-25” (release-post-r002.png) keeps the letter proportions of umbra_sable_wordmark_transparent.png, without stretching.
+- `LAYOUT-12/release-post-r002/H026` The act name “Sable Quartet” on “Night release post - 2026-09-25” (release-post-r002.png) is Bone White #E9E4D8 on a solid Pitch #0E0E10 ground.
+- `LAYOUT-12/release-post-r002/H027` On “Night release post - 2026-09-25” (release-post-r002.png), the date line is letterspaced more open than the act name.
 - `LAYOUT-12/release-post-r002/H029` “Night release post - 2026-09-25” (release-post-r002.png) shows no sponsor logo or corporate partner mark anywhere.
 - `LAYOUT-12/release-post-r002/H030` Apart from the photograph, every type, ground, panel, rule and wordmark colour on “Night release post - 2026-09-25” (release-post-r002.png) is one of #0E0E10, #2A2A2E, #E4863B, #3F7C8C, #E9E4D8 or #8E2B24.
-- `LAYOUT-12/release-post-r002/H031` Pitch #0E0E10, Bone White #E9E4D8 and Sodium #E4863B all appear in the designed parts of “Night release post - 2026-09-25” (release-post-r002.png).
-- `LAYOUT-12/release-post-r002/H032` Every type, ground, panel, rule and wordmark colour on “Night release post - 2026-09-25” (release-post-r002.png) is solid at full opacity, with no tint, transparency, gradient, glow or shadow, and no scrim or overlay sits over the photograph.
-- `LAYOUT-12/release-post-r002/H033` On “Night release post - 2026-09-25” (release-post-r002.png), Cold Signal #3F7C8C and Blood #8E2B24 appear, if at all, only as hairline rules, dividers or a photograph's treatment colour, together covering no more than 5% of the designed, non-photographic area.
-- `LAYOUT-12/poster-direction-type-led/R13-pdf-profile` poster-direction-type-led.pdf: is exported for sRGB screen viewing, not as a CMYK press master.
-- `LAYOUT-12/poster-direction-type-led/R13-pdf-fonts` poster-direction-type-led.pdf: has no unembedded font dependency.
-- `LAYOUT-12/poster-direction-type-led/R13-supporting-billing-family` poster-direction-type-led.pdf: the supporting billing uses font family Archivo Narrow wherever that text appears.
-- `LAYOUT-12/poster-direction-type-led/R13-supporting-billing-weight` poster-direction-type-led.pdf: the supporting billing uses font weight 400 wherever that text appears.
-- `LAYOUT-12/poster-direction-type-led/R13-door-time-information-family` poster-direction-type-led.pdf: the door-time information uses font family Archivo Narrow wherever that text appears.
-- `LAYOUT-12/poster-direction-type-led/R13-door-time-information-weight` poster-direction-type-led.pdf: the door-time information uses font weight 600 wherever that text appears.
-- `LAYOUT-12/poster-direction-type-led/R13-koa-line` poster-direction-type-led.pdf: keeps the name KOA on one line when that act is included.
-- `LAYOUT-12/poster-direction-type-led/R13-logo-sable` poster-direction-type-led.pdf: the Sable Quartet wordmark uses the shapes in umbra_sable_wordmark_transparent.png.
-- `LAYOUT-12/poster-direction-type-led/R13-logo-meridian` poster-direction-type-led.pdf: the Meridian Brass wordmark uses the shapes in umbra_meridian_wordmark_transparent.png.
-- `LAYOUT-12/poster-direction-image-led/R13-pdf-profile` poster-direction-image-led.pdf: is exported for sRGB screen viewing, not as a CMYK press master.
-- `LAYOUT-12/poster-direction-image-led/R13-pdf-fonts` poster-direction-image-led.pdf: has no unembedded font dependency.
-- `LAYOUT-12/poster-direction-image-led/R13-supporting-billing-family` poster-direction-image-led.pdf: the supporting billing uses font family Archivo Narrow wherever that text appears.
-- `LAYOUT-12/poster-direction-image-led/R13-supporting-billing-weight` poster-direction-image-led.pdf: the supporting billing uses font weight 400 wherever that text appears.
-- `LAYOUT-12/poster-direction-image-led/R13-door-time-information-family` poster-direction-image-led.pdf: the door-time information uses font family Archivo Narrow wherever that text appears.
-- `LAYOUT-12/poster-direction-image-led/R13-door-time-information-weight` poster-direction-image-led.pdf: the door-time information uses font weight 600 wherever that text appears.
-- `LAYOUT-12/poster-direction-image-led/R13-koa-line` poster-direction-image-led.pdf: keeps the name KOA on one line when that act is included.
-- `LAYOUT-12/poster-direction-image-led/R13-logo-sable` poster-direction-image-led.pdf: the Sable Quartet wordmark uses the shapes in umbra_sable_wordmark_transparent.png.
-- `LAYOUT-12/poster-direction-image-led/R13-logo-meridian` poster-direction-image-led.pdf: the Meridian Brass wordmark uses the shapes in umbra_meridian_wordmark_transparent.png.
-- `LAYOUT-12/poster-direction-graphic-led/R13-pdf-profile` poster-direction-graphic-led.pdf: is exported for sRGB screen viewing, not as a CMYK press master.
-- `LAYOUT-12/poster-direction-graphic-led/R13-pdf-fonts` poster-direction-graphic-led.pdf: has no unembedded font dependency.
-- `LAYOUT-12/poster-direction-graphic-led/R13-supporting-billing-family` poster-direction-graphic-led.pdf: the supporting billing uses font family Archivo Narrow wherever that text appears.
-- `LAYOUT-12/poster-direction-graphic-led/R13-supporting-billing-weight` poster-direction-graphic-led.pdf: the supporting billing uses font weight 400 wherever that text appears.
-- `LAYOUT-12/poster-direction-graphic-led/R13-door-time-information-family` poster-direction-graphic-led.pdf: the door-time information uses font family Archivo Narrow wherever that text appears.
-- `LAYOUT-12/poster-direction-graphic-led/R13-door-time-information-weight` poster-direction-graphic-led.pdf: the door-time information uses font weight 600 wherever that text appears.
-- `LAYOUT-12/poster-direction-graphic-led/R13-koa-line` poster-direction-graphic-led.pdf: keeps the name KOA on one line when that act is included.
-- `LAYOUT-12/poster-direction-graphic-led/R13-logo-sable` poster-direction-graphic-led.pdf: the Sable Quartet wordmark uses the shapes in umbra_sable_wordmark_transparent.png.
-- `LAYOUT-12/poster-direction-graphic-led/R13-logo-meridian` poster-direction-graphic-led.pdf: the Meridian Brass wordmark uses the shapes in umbra_meridian_wordmark_transparent.png.
-- `LAYOUT-12/promoter-deck/R13-pdf-profile` promoter-deck.pdf: is exported for sRGB screen viewing, not as a CMYK press master.
-- `LAYOUT-12/promoter-deck/R13-pdf-fonts` promoter-deck.pdf: has no unembedded font dependency.
-- `LAYOUT-12/promoter-deck/R13-supporting-billing-family` promoter-deck.pdf: the supporting billing uses font family Archivo Narrow wherever that text appears.
-- `LAYOUT-12/promoter-deck/R13-supporting-billing-weight` promoter-deck.pdf: the supporting billing uses font weight 400 wherever that text appears.
-- `LAYOUT-12/promoter-deck/R13-door-time-information-family` promoter-deck.pdf: the door-time information uses font family Archivo Narrow wherever that text appears.
-- `LAYOUT-12/promoter-deck/R13-door-time-information-weight` promoter-deck.pdf: the door-time information uses font weight 600 wherever that text appears.
-- `LAYOUT-12/promoter-deck/R13-koa-line` promoter-deck.pdf: keeps the name KOA on one line when that act is included.
-- `LAYOUT-12/release-post-r002/R13-colour-profile` release-post-r002.png: uses an sRGB colour profile.
-- `LAYOUT-12/release-post-r002/R13-supporting-billing-family` release-post-r002.png: the supporting billing uses font family Archivo Narrow wherever that text appears.
-- `LAYOUT-12/release-post-r002/R13-supporting-billing-weight` release-post-r002.png: the supporting billing uses font weight 400 wherever that text appears.
-- `LAYOUT-12/release-post-r002/R13-door-time-information-family` release-post-r002.png: the door-time information uses font family Archivo Narrow wherever that text appears.
-- `LAYOUT-12/release-post-r002/R13-door-time-information-weight` release-post-r002.png: the door-time information uses font weight 600 wherever that text appears.
-- `LAYOUT-12/release-post-r002/R13-koa-line` release-post-r002.png: keeps the name KOA on one line when that act is included.
-- `LAYOUT-12/release-post-r002/R13-logo-sable` release-post-r002.png: the Sable Quartet wordmark uses the shapes in umbra_sable_wordmark_transparent.png.
-- `LAYOUT-12/release-post-r003/R13-colour-profile` release-post-r003.png: uses an sRGB colour profile.
-- `LAYOUT-12/release-post-r003/R13-supporting-billing-family` release-post-r003.png: the supporting billing uses font family Archivo Narrow wherever that text appears.
-- `LAYOUT-12/release-post-r003/R13-supporting-billing-weight` release-post-r003.png: the supporting billing uses font weight 400 wherever that text appears.
-- `LAYOUT-12/release-post-r003/R13-door-time-information-family` release-post-r003.png: the door-time information uses font family Archivo Narrow wherever that text appears.
-- `LAYOUT-12/release-post-r003/R13-door-time-information-weight` release-post-r003.png: the door-time information uses font weight 600 wherever that text appears.
-- `LAYOUT-12/release-post-r003/R13-koa-line` release-post-r003.png: keeps the name KOA on one line when that act is included.
-- `LAYOUT-12/release-post-r003/R13-logo-meridian` release-post-r003.png: the Meridian Brass wordmark uses the shapes in umbra_meridian_wordmark_transparent.png.
-- `LAYOUT-12/release-post-r004/R13-colour-profile` release-post-r004.png: uses an sRGB colour profile.
-- `LAYOUT-12/release-post-r004/R13-supporting-billing-family` release-post-r004.png: the supporting billing uses font family Archivo Narrow wherever that text appears.
-- `LAYOUT-12/release-post-r004/R13-supporting-billing-weight` release-post-r004.png: the supporting billing uses font weight 400 wherever that text appears.
-- `LAYOUT-12/release-post-r004/R13-door-time-information-family` release-post-r004.png: the door-time information uses font family Archivo Narrow wherever that text appears.
-- `LAYOUT-12/release-post-r004/R13-door-time-information-weight` release-post-r004.png: the door-time information uses font weight 600 wherever that text appears.
-- `LAYOUT-12/release-post-r004/R13-koa-line` release-post-r004.png: keeps the name KOA on one line when that act is included.
-- `LAYOUT-12/release-post-r005/R13-colour-profile` release-post-r005.png: uses an sRGB colour profile.
-- `LAYOUT-12/release-post-r005/R13-supporting-billing-family` release-post-r005.png: the supporting billing uses font family Archivo Narrow wherever that text appears.
-- `LAYOUT-12/release-post-r005/R13-supporting-billing-weight` release-post-r005.png: the supporting billing uses font weight 400 wherever that text appears.
-- `LAYOUT-12/release-post-r005/R13-door-time-information-family` release-post-r005.png: the door-time information uses font family Archivo Narrow wherever that text appears.
-- `LAYOUT-12/release-post-r005/R13-door-time-information-weight` release-post-r005.png: the door-time information uses font weight 600 wherever that text appears.
-- `LAYOUT-12/release-post-r005/R13-koa-line` release-post-r005.png: keeps the name KOA on one line when that act is included.
-- `LAYOUT-12/release-post-r006/R13-colour-profile` release-post-r006.png: uses an sRGB colour profile.
-- `LAYOUT-12/release-post-r006/R13-supporting-billing-family` release-post-r006.png: the supporting billing uses font family Archivo Narrow wherever that text appears.
-- `LAYOUT-12/release-post-r006/R13-supporting-billing-weight` release-post-r006.png: the supporting billing uses font weight 400 wherever that text appears.
-- `LAYOUT-12/release-post-r006/R13-door-time-information-family` release-post-r006.png: the door-time information uses font family Archivo Narrow wherever that text appears.
-- `LAYOUT-12/release-post-r006/R13-door-time-information-weight` release-post-r006.png: the door-time information uses font weight 600 wherever that text appears.
-- `LAYOUT-12/release-post-r006/R13-koa-line` release-post-r006.png: keeps the name KOA on one line when that act is included.
-- `LAYOUT-12/release-post-r007/R13-colour-profile` release-post-r007.png: uses an sRGB colour profile.
-- `LAYOUT-12/release-post-r007/R13-supporting-billing-family` release-post-r007.png: the supporting billing uses font family Archivo Narrow wherever that text appears.
-- `LAYOUT-12/release-post-r007/R13-supporting-billing-weight` release-post-r007.png: the supporting billing uses font weight 400 wherever that text appears.
-- `LAYOUT-12/release-post-r007/R13-door-time-information-family` release-post-r007.png: the door-time information uses font family Archivo Narrow wherever that text appears.
-- `LAYOUT-12/release-post-r007/R13-door-time-information-weight` release-post-r007.png: the door-time information uses font weight 600 wherever that text appears.
-- `LAYOUT-12/release-post-r007/R13-koa-line` release-post-r007.png: keeps the name KOA on one line when that act is included.
-- `LAYOUT-12/release-post-r008/R13-colour-profile` release-post-r008.png: uses an sRGB colour profile.
-- `LAYOUT-12/release-post-r008/R13-supporting-billing-family` release-post-r008.png: the supporting billing uses font family Archivo Narrow wherever that text appears.
-- `LAYOUT-12/release-post-r008/R13-supporting-billing-weight` release-post-r008.png: the supporting billing uses font weight 400 wherever that text appears.
-- `LAYOUT-12/release-post-r008/R13-door-time-information-family` release-post-r008.png: the door-time information uses font family Archivo Narrow wherever that text appears.
-- `LAYOUT-12/release-post-r008/R13-door-time-information-weight` release-post-r008.png: the door-time information uses font weight 600 wherever that text appears.
-- `LAYOUT-12/release-post-r008/R13-koa-line` release-post-r008.png: keeps the name KOA on one line when that act is included.
-- `LAYOUT-12/release-post-r009/R13-colour-profile` release-post-r009.png: uses an sRGB colour profile.
-- `LAYOUT-12/release-post-r009/R13-supporting-billing-family` release-post-r009.png: the supporting billing uses font family Archivo Narrow wherever that text appears.
-- `LAYOUT-12/release-post-r009/R13-supporting-billing-weight` release-post-r009.png: the supporting billing uses font weight 400 wherever that text appears.
-- `LAYOUT-12/release-post-r009/R13-door-time-information-family` release-post-r009.png: the door-time information uses font family Archivo Narrow wherever that text appears.
-- `LAYOUT-12/release-post-r009/R13-door-time-information-weight` release-post-r009.png: the door-time information uses font weight 600 wherever that text appears.
-- `LAYOUT-12/release-post-r009/R13-koa-line` release-post-r009.png: keeps the name KOA on one line when that act is included.
-- `LAYOUT-12/release-post-r010/R13-colour-profile` release-post-r010.png: uses an sRGB colour profile.
-- `LAYOUT-12/release-post-r010/R13-supporting-billing-family` release-post-r010.png: the supporting billing uses font family Archivo Narrow wherever that text appears.
-- `LAYOUT-12/release-post-r010/R13-supporting-billing-weight` release-post-r010.png: the supporting billing uses font weight 400 wherever that text appears.
-- `LAYOUT-12/release-post-r010/R13-door-time-information-family` release-post-r010.png: the door-time information uses font family Archivo Narrow wherever that text appears.
-- `LAYOUT-12/release-post-r010/R13-door-time-information-weight` release-post-r010.png: the door-time information uses font weight 600 wherever that text appears.
-- `LAYOUT-12/release-post-r010/R13-koa-line` release-post-r010.png: keeps the name KOA on one line when that act is included.
-- `LAYOUT-12/poster-direction-type-led/R13-act-name-text-family` poster-direction-type-led.pdf: the act-name text uses font family Sora wherever that text appears.
-- `LAYOUT-12/poster-direction-type-led/R13-act-name-text-weight` poster-direction-type-led.pdf: the act-name text uses font weight 800 wherever that text appears.
-- `LAYOUT-12/poster-direction-image-led/R13-act-name-text-family` poster-direction-image-led.pdf: the act-name text uses font family Sora wherever that text appears.
-- `LAYOUT-12/poster-direction-image-led/R13-act-name-text-weight` poster-direction-image-led.pdf: the act-name text uses font weight 800 wherever that text appears.
-- `LAYOUT-12/poster-direction-graphic-led/R13-act-name-text-family` poster-direction-graphic-led.pdf: the act-name text uses font family Sora wherever that text appears.
-- `LAYOUT-12/poster-direction-graphic-led/R13-act-name-text-weight` poster-direction-graphic-led.pdf: the act-name text uses font weight 800 wherever that text appears.
-- `LAYOUT-12/promoter-deck/R13-act-name-text-family` promoter-deck.pdf: the act-name text uses font family Sora wherever that text appears.
-- `LAYOUT-12/promoter-deck/R13-act-name-text-weight` promoter-deck.pdf: the act-name text uses font weight 800 wherever that text appears.
-- `LAYOUT-12/release-post-r002/R13-act-name-text-family` release-post-r002.png: the act-name text uses font family Sora wherever that text appears.
-- `LAYOUT-12/release-post-r002/R13-act-name-text-weight` release-post-r002.png: the act-name text uses font weight 800 wherever that text appears.
-- `LAYOUT-12/release-post-r003/R13-act-name-text-family` release-post-r003.png: the act-name text uses font family Sora wherever that text appears.
-- `LAYOUT-12/release-post-r003/R13-act-name-text-weight` release-post-r003.png: the act-name text uses font weight 800 wherever that text appears.
-- `LAYOUT-12/release-post-r004/R13-act-name-text-family` release-post-r004.png: the act-name text uses font family Sora wherever that text appears.
-- `LAYOUT-12/release-post-r004/R13-act-name-text-weight` release-post-r004.png: the act-name text uses font weight 800 wherever that text appears.
-- `LAYOUT-12/release-post-r005/R13-act-name-text-family` release-post-r005.png: the act-name text uses font family Sora wherever that text appears.
-- `LAYOUT-12/release-post-r005/R13-act-name-text-weight` release-post-r005.png: the act-name text uses font weight 800 wherever that text appears.
-- `LAYOUT-12/release-post-r006/R13-act-name-text-family` release-post-r006.png: the act-name text uses font family Sora wherever that text appears.
-- `LAYOUT-12/release-post-r006/R13-act-name-text-weight` release-post-r006.png: the act-name text uses font weight 800 wherever that text appears.
-- `LAYOUT-12/release-post-r007/R13-act-name-text-family` release-post-r007.png: the act-name text uses font family Sora wherever that text appears.
-- `LAYOUT-12/release-post-r007/R13-act-name-text-weight` release-post-r007.png: the act-name text uses font weight 800 wherever that text appears.
-- `LAYOUT-12/release-post-r008/R13-act-name-text-family` release-post-r008.png: the act-name text uses font family Sora wherever that text appears.
-- `LAYOUT-12/release-post-r008/R13-act-name-text-weight` release-post-r008.png: the act-name text uses font weight 800 wherever that text appears.
-- `LAYOUT-12/release-post-r009/R13-act-name-text-family` release-post-r009.png: the act-name text uses font family Sora wherever that text appears.
-- `LAYOUT-12/release-post-r009/R13-act-name-text-weight` release-post-r009.png: the act-name text uses font weight 800 wherever that text appears.
-- `LAYOUT-12/release-post-r010/R13-act-name-text-family` release-post-r010.png: the act-name text uses font family Sora wherever that text appears.
-- `LAYOUT-12/release-post-r010/R13-act-name-text-weight` release-post-r010.png: the act-name text uses font weight 800 wherever that text appears.
+- `LAYOUT-12/release-post-r002/H032` All colour on “Night release post - 2026-09-25” (release-post-r002.png) is solid at 100% opacity, with no tint, transparency, gradient, glow or shadow, and no scrim or overlay on the photograph.
+- `LAYOUT-12/release-post-r002/H033` On “Night release post - 2026-09-25” (release-post-r002.png), Cold Signal #3F7C8C and Blood #8E2B24 appear only as hairlines, dividers or photo treatment.
+- `LAYOUT-12/poster-direction-type-led/R13-supporting-billing-family` Every support act and billing line on “After Dark poster direction - Type-led” (poster-direction-type-led.pdf) is set in Archivo Narrow Regular.
+- `LAYOUT-12/poster-direction-type-led/R13-door-time-information-family` If a door time appears on “After Dark poster direction - Type-led” (poster-direction-type-led.pdf), it is set in Archivo Narrow SemiBold capitals.
+- `LAYOUT-12/poster-direction-type-led/R13-koa-line` The act name KOA is set on one line on “After Dark poster direction - Type-led” (poster-direction-type-led.pdf).
+- `LAYOUT-12/poster-direction-type-led/R13-logo-sable` The Sable Quartet wordmark on “After Dark poster direction - Type-led” (poster-direction-type-led.pdf) uses the letter shapes of umbra_sable_wordmark_transparent.png, not lettering retyped in a font.
+- `LAYOUT-12/poster-direction-image-led/R13-supporting-billing-family` Every support act and billing line on “After Dark poster direction - Image-led” (poster-direction-image-led.pdf) is set in Archivo Narrow Regular.
+- `LAYOUT-12/poster-direction-image-led/R13-door-time-information-family` If a door time appears on “After Dark poster direction - Image-led” (poster-direction-image-led.pdf), it is set in Archivo Narrow SemiBold capitals.
+- `LAYOUT-12/poster-direction-image-led/R13-koa-line` The act name KOA is set on one line on “After Dark poster direction - Image-led” (poster-direction-image-led.pdf).
+- `LAYOUT-12/poster-direction-image-led/R13-logo-sable` The Sable Quartet wordmark on “After Dark poster direction - Image-led” (poster-direction-image-led.pdf) uses the letter shapes of umbra_sable_wordmark_transparent.png, not lettering retyped in a font.
+- `LAYOUT-12/poster-direction-graphic-led/R13-supporting-billing-family` Every support act and billing line on “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf) is set in Archivo Narrow Regular.
+- `LAYOUT-12/poster-direction-graphic-led/R13-door-time-information-family` If a door time appears on “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf), it is set in Archivo Narrow SemiBold capitals.
+- `LAYOUT-12/poster-direction-graphic-led/R13-koa-line` The act name KOA is set on one line on “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf).
+- `LAYOUT-12/poster-direction-graphic-led/R13-logo-sable` The Sable Quartet wordmark on “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf) uses the letter shapes of umbra_sable_wordmark_transparent.png, not lettering retyped in a font.
+- `LAYOUT-12/promoter-deck/R13-supporting-billing-family` Body, billing and table text in “Promoter pitch deck” (promoter-deck.pdf) is set in Archivo Narrow Regular.
+- `LAYOUT-12/promoter-deck/R13-door-time-information-family` If a door time appears in “Promoter pitch deck” (promoter-deck.pdf), it is set in Archivo Narrow SemiBold capitals.
+- `LAYOUT-12/promoter-deck/R13-koa-line` If KOA is typeset in “Promoter pitch deck” (promoter-deck.pdf), it is set on one line.
+- `LAYOUT-12/release-post-r002/R13-supporting-billing-family` The support line “with Odette Lang” on “Night release post - 2026-09-25” (release-post-r002.png) is set in Archivo Narrow Regular.
+- `LAYOUT-12/release-post-r002/R13-door-time-information-family` The door line on “Night release post - 2026-09-25” (release-post-r002.png) is set in Archivo Narrow SemiBold capitals.
+- `LAYOUT-12/release-post-r002/R13-logo-sable` The Sable Quartet wordmark on “Night release post - 2026-09-25” (release-post-r002.png) uses the letter shapes of umbra_sable_wordmark_transparent.png, not lettering retyped in a font.
+- `LAYOUT-12/release-post-r003/R13-supporting-billing-family` The support line “with The Tin Ravens” on “Night release post - 2026-09-26” (release-post-r003.png) is set in Archivo Narrow Regular.
+- `LAYOUT-12/release-post-r003/R13-door-time-information-family` The door line on “Night release post - 2026-09-26” (release-post-r003.png) is set in Archivo Narrow SemiBold capitals.
+- `LAYOUT-12/release-post-r004/R13-supporting-billing-family` The support line “with Junior Vale” on “Night release post - 2026-10-02” (release-post-r004.png) is set in Archivo Narrow Regular.
+- `LAYOUT-12/release-post-r004/R13-door-time-information-family` The door line on “Night release post - 2026-10-02” (release-post-r004.png) is set in Archivo Narrow SemiBold capitals.
+- `LAYOUT-12/release-post-r005/R13-supporting-billing-family` The support line “with Coral Sound” on “Night release post - 2026-10-03” (release-post-r005.png) is set in Archivo Narrow Regular.
+- `LAYOUT-12/release-post-r005/R13-door-time-information-family` The door line on “Night release post - 2026-10-03” (release-post-r005.png) is set in Archivo Narrow SemiBold capitals.
+- `LAYOUT-12/release-post-r006/R13-supporting-billing-family` The support line “with Coral Sound” on “Night release post - 2026-10-04” (release-post-r006.png) is set in Archivo Narrow Regular.
+- `LAYOUT-12/release-post-r006/R13-door-time-information-family` The door line on “Night release post - 2026-10-04” (release-post-r006.png) is set in Archivo Narrow SemiBold capitals.
+- `LAYOUT-12/release-post-r007/R13-supporting-billing-family` The support line “with Marlow Reyes” on “Night release post - 2026-10-09” (release-post-r007.png) is set in Archivo Narrow Regular.
+- `LAYOUT-12/release-post-r007/R13-door-time-information-family` The door line on “Night release post - 2026-10-09” (release-post-r007.png) is set in Archivo Narrow SemiBold capitals.
+- `LAYOUT-12/release-post-r008/R13-supporting-billing-family` The support line “with Half Light” on “Night release post - 2026-10-10” (release-post-r008.png) is set in Archivo Narrow Regular.
+- `LAYOUT-12/release-post-r008/R13-door-time-information-family` The door line on “Night release post - 2026-10-10” (release-post-r008.png) is set in Archivo Narrow SemiBold capitals.
+- `LAYOUT-12/release-post-r009/R13-supporting-billing-family` The support line “with The Undertow” on “Night release post - 2026-10-16” (release-post-r009.png) is set in Archivo Narrow Regular.
+- `LAYOUT-12/release-post-r009/R13-door-time-information-family` The door line on “Night release post - 2026-10-16” (release-post-r009.png) is set in Archivo Narrow SemiBold capitals.
+- `LAYOUT-12/release-post-r009/R13-koa-line` The act name KOA is set on one line on “Night release post - 2026-10-16” (release-post-r009.png).
+- `LAYOUT-12/release-post-r010/R13-supporting-billing-family` The support line “with Ferro” on “Night release post - 2026-10-17” (release-post-r010.png) is set in Archivo Narrow Regular.
+- `LAYOUT-12/release-post-r010/R13-door-time-information-family` The door line on “Night release post - 2026-10-17” (release-post-r010.png) is set in Archivo Narrow SemiBold capitals.
+- `LAYOUT-12/poster-direction-type-led/R13-act-name-text-family` Every act name on “After Dark poster direction - Type-led” (poster-direction-type-led.pdf), support acts excepted, is set in Sora ExtraBold capitals.
+- `LAYOUT-12/poster-direction-image-led/R13-act-name-text-family` Every act name on “After Dark poster direction - Image-led” (poster-direction-image-led.pdf), support acts excepted, is set in Sora ExtraBold capitals.
+- `LAYOUT-12/poster-direction-graphic-led/R13-act-name-text-family` Every act name on “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf), support acts excepted, is set in Sora ExtraBold capitals.
+- `LAYOUT-12/promoter-deck/R13-act-name-text-family` Any act name typeset in “Promoter pitch deck” (promoter-deck.pdf) is set in Sora ExtraBold capitals.
+- `LAYOUT-12/release-post-r002/R13-act-name-text-family` The act name “Sable Quartet” on “Night release post - 2026-09-25” (release-post-r002.png) is set in Sora ExtraBold capitals.
+- `LAYOUT-12/release-post-r003/R13-act-name-text-family` The act name “Meridian Brass” on “Night release post - 2026-09-26” (release-post-r003.png) is set in Sora ExtraBold capitals.
+- `LAYOUT-12/release-post-r004/R13-act-name-text-family` The act name “Night Ferry” on “Night release post - 2026-10-02” (release-post-r004.png) is set in Sora ExtraBold capitals.
+- `LAYOUT-12/release-post-r005/R13-act-name-text-family` The act name “The Blue Hour” on “Night release post - 2026-10-03” (release-post-r005.png) is set in Sora ExtraBold capitals.
+- `LAYOUT-12/release-post-r006/R13-act-name-text-family` The act name “The Blue Hour” on “Night release post - 2026-10-04” (release-post-r006.png) is set in Sora ExtraBold capitals.
+- `LAYOUT-12/release-post-r007/R13-act-name-text-family` The act name “Vespertine” on “Night release post - 2026-10-09” (release-post-r007.png) is set in Sora ExtraBold capitals.
+- `LAYOUT-12/release-post-r008/R13-act-name-text-family` The act name “The Eastons” on “Night release post - 2026-10-10” (release-post-r008.png) is set in Sora ExtraBold capitals.
+- `LAYOUT-12/release-post-r009/R13-act-name-text-family` The act name “Koa” on “Night release post - 2026-10-16” (release-post-r009.png) is set in Sora ExtraBold capitals.
+- `LAYOUT-12/release-post-r010/R13-act-name-text-family` The act name “Laurel and the Dive” on “Night release post - 2026-10-17” (release-post-r010.png) is set in Sora ExtraBold capitals.
+- `LAYOUT-12/poster-direction-type-led/H044` Every date line on “After Dark poster direction - Type-led” (poster-direction-type-led.pdf) is Sodium #E4863B.
+- `LAYOUT-12/poster-direction-type-led/H045` On “After Dark poster direction - Type-led” (poster-direction-type-led.pdf), each date line sits directly above its act name.
+- `LAYOUT-12/poster-direction-type-led/H046` If a door line appears on “After Dark poster direction - Type-led” (poster-direction-type-led.pdf), it is letterspaced more open than the support acts.
+- `LAYOUT-12/poster-direction-type-led/H047` Every title, support, door, set, body, billing and fine-print line on “After Dark poster direction - Type-led” (poster-direction-type-led.pdf) is Bone White #E9E4D8.
+- `LAYOUT-12/poster-direction-type-led/H048` Cold Signal #3F7C8C and Blood #8E2B24 together cover no more than 5% of the non-photographic area of “After Dark poster direction - Type-led” (poster-direction-type-led.pdf).
+- `LAYOUT-12/poster-direction-type-led/H049` Any performance photograph on “After Dark poster direction - Type-led” (poster-direction-type-led.pdf) shows visible grain.
+- `LAYOUT-12/poster-direction-type-led/H050` On “After Dark poster direction - Type-led” (poster-direction-type-led.pdf), typography is the dominant visual element, more prominent than any photograph or graphic shape.
+- `LAYOUT-12/poster-direction-type-led/H051` The Sable Quartet wordmark appears on “After Dark poster direction - Type-led” (poster-direction-type-led.pdf) alongside the typeset act name SABLE QUARTET, not in place of it.
+- `LAYOUT-12/poster-direction-type-led/H052` The Sable Quartet wordmark on “After Dark poster direction - Type-led” (poster-direction-type-led.pdf) is inked in solid Bone White #E9E4D8 on a Pitch #0E0E10 ground.
+- `LAYOUT-12/poster-direction-type-led/H053` The Meridian Brass wordmark appears on “After Dark poster direction - Type-led” (poster-direction-type-led.pdf) alongside the typeset act name MERIDIAN BRASS, not in place of it.
+- `LAYOUT-12/poster-direction-type-led/H054` The Meridian Brass wordmark on “After Dark poster direction - Type-led” (poster-direction-type-led.pdf) is inked in solid Bone White #E9E4D8 on a Pitch #0E0E10 ground.
+- `LAYOUT-12/poster-direction-type-led/H055` Every date line on “After Dark poster direction - Type-led” (poster-direction-type-led.pdf) is set in Sora ExtraBold capitals.
+- `LAYOUT-12/poster-direction-type-led/H056` “After Dark poster direction - Type-led” (poster-direction-type-led.pdf) carries a compact series-title stack, such as “UMBRA / LOFT”, set in Sora ExtraBold capitals.
+- `LAYOUT-12/poster-direction-type-led/H057` On “After Dark poster direction - Type-led” (poster-direction-type-led.pdf), every act name is set smaller than the series title.
+- `LAYOUT-12/poster-direction-type-led/H058` Every support act on “After Dark poster direction - Type-led” (poster-direction-type-led.pdf) is prefixed “with”, as in “with Odette Lang”.
+- `LAYOUT-12/poster-direction-type-led/H059` Pitch #0E0E10 is the main ground of “After Dark poster direction - Type-led” (poster-direction-type-led.pdf).
+- `LAYOUT-12/poster-direction-type-led/H060` No merchandise photo (umbra_wordmark_sable.jpg, umbra_wordmark_meridian.jpg or umbra_wordmark_nightferry.jpg) is placed as an image on “After Dark poster direction - Type-led” (poster-direction-type-led.pdf).
+- `LAYOUT-12/poster-direction-type-led/H061` The licence and accessibility lines on “After Dark poster direction - Type-led” (poster-direction-type-led.pdf) are set in Archivo Narrow Regular.
+- `LAYOUT-12/poster-direction-type-led/H062` No caption or credit on “After Dark poster direction - Type-led” (poster-direction-type-led.pdf) identifies a pictured performer as one of the billed acts.
+- `LAYOUT-12/poster-direction-image-led/H043` Every date line on “After Dark poster direction - Image-led” (poster-direction-image-led.pdf) is Sodium #E4863B.
+- `LAYOUT-12/poster-direction-image-led/H044` On “After Dark poster direction - Image-led” (poster-direction-image-led.pdf), each date line sits directly above its act name.
+- `LAYOUT-12/poster-direction-image-led/H045` If a door line appears on “After Dark poster direction - Image-led” (poster-direction-image-led.pdf), it is letterspaced more open than the support acts.
+- `LAYOUT-12/poster-direction-image-led/H046` Every title, support, door, set, body, billing and fine-print line on “After Dark poster direction - Image-led” (poster-direction-image-led.pdf) is Bone White #E9E4D8.
+- `LAYOUT-12/poster-direction-image-led/H047` Cold Signal #3F7C8C and Blood #8E2B24 together cover no more than 5% of the non-photographic area of “After Dark poster direction - Image-led” (poster-direction-image-led.pdf).
+- `LAYOUT-12/poster-direction-image-led/H048` The photograph on “After Dark poster direction - Image-led” (poster-direction-image-led.pdf) shows visible grain.
+- `LAYOUT-12/poster-direction-image-led/H049` On “After Dark poster direction - Image-led” (poster-direction-image-led.pdf), a treated archive photograph is the dominant visual element, more prominent than any type block or graphic shape.
+- `LAYOUT-12/poster-direction-image-led/H050` The Sable Quartet wordmark appears on “After Dark poster direction - Image-led” (poster-direction-image-led.pdf) alongside the typeset act name SABLE QUARTET, not in place of it.
+- `LAYOUT-12/poster-direction-image-led/H051` The Sable Quartet wordmark on “After Dark poster direction - Image-led” (poster-direction-image-led.pdf) is inked in solid Bone White #E9E4D8 on a Pitch #0E0E10 ground.
+- `LAYOUT-12/poster-direction-image-led/H052` The Meridian Brass wordmark appears on “After Dark poster direction - Image-led” (poster-direction-image-led.pdf) alongside the typeset act name MERIDIAN BRASS, not in place of it.
+- `LAYOUT-12/poster-direction-image-led/H053` The Meridian Brass wordmark on “After Dark poster direction - Image-led” (poster-direction-image-led.pdf) is inked in solid Bone White #E9E4D8 on a Pitch #0E0E10 ground.
+- `LAYOUT-12/poster-direction-image-led/H054` Every date line on “After Dark poster direction - Image-led” (poster-direction-image-led.pdf) is set in Sora ExtraBold capitals.
+- `LAYOUT-12/poster-direction-image-led/H055` “After Dark poster direction - Image-led” (poster-direction-image-led.pdf) carries a compact series-title stack, such as “UMBRA / LOFT”, set in Sora ExtraBold capitals.
+- `LAYOUT-12/poster-direction-image-led/H056` On “After Dark poster direction - Image-led” (poster-direction-image-led.pdf), every act name is set smaller than the series title.
+- `LAYOUT-12/poster-direction-image-led/H057` Every support act on “After Dark poster direction - Image-led” (poster-direction-image-led.pdf) is prefixed “with”, as in “with Odette Lang”.
+- `LAYOUT-12/poster-direction-image-led/H058` Pitch #0E0E10 is the main ground of “After Dark poster direction - Image-led” (poster-direction-image-led.pdf).
+- `LAYOUT-12/poster-direction-image-led/H059` No merchandise photo (umbra_wordmark_sable.jpg, umbra_wordmark_meridian.jpg or umbra_wordmark_nightferry.jpg) is placed as an image on “After Dark poster direction - Image-led” (poster-direction-image-led.pdf).
+- `LAYOUT-12/poster-direction-image-led/H060` The licence and accessibility lines on “After Dark poster direction - Image-led” (poster-direction-image-led.pdf) are set in Archivo Narrow Regular.
+- `LAYOUT-12/poster-direction-image-led/H061` No caption or credit on “After Dark poster direction - Image-led” (poster-direction-image-led.pdf) identifies a pictured performer as one of the billed acts.
+- `LAYOUT-12/poster-direction-graphic-led/H043` Every date line on “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf) is Sodium #E4863B.
+- `LAYOUT-12/poster-direction-graphic-led/H044` On “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf), each date line sits directly above its act name.
+- `LAYOUT-12/poster-direction-graphic-led/H045` If a door line appears on “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf), it is letterspaced more open than the support acts.
+- `LAYOUT-12/poster-direction-graphic-led/H046` Every title, support, door, set, body, billing and fine-print line on “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf) is Bone White #E9E4D8.
+- `LAYOUT-12/poster-direction-graphic-led/H047` Cold Signal #3F7C8C and Blood #8E2B24 together cover no more than 5% of the non-photographic area of “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf).
+- `LAYOUT-12/poster-direction-graphic-led/H048` Any performance photograph on “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf) shows visible grain.
+- `LAYOUT-12/poster-direction-graphic-led/H049` On “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf), solid panels, shapes or rules are the dominant visual element, more prominent than any type block or photograph.
+- `LAYOUT-12/poster-direction-graphic-led/H050` The Sable Quartet wordmark appears on “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf) alongside the typeset act name SABLE QUARTET, not in place of it.
+- `LAYOUT-12/poster-direction-graphic-led/H051` The Sable Quartet wordmark on “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf) is inked in solid Bone White #E9E4D8 on a Pitch #0E0E10 ground.
+- `LAYOUT-12/poster-direction-graphic-led/H052` The Meridian Brass wordmark appears on “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf) alongside the typeset act name MERIDIAN BRASS, not in place of it.
+- `LAYOUT-12/poster-direction-graphic-led/H053` The Meridian Brass wordmark on “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf) is inked in solid Bone White #E9E4D8 on a Pitch #0E0E10 ground.
+- `LAYOUT-12/poster-direction-graphic-led/H054` Every date line on “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf) is set in Sora ExtraBold capitals.
+- `LAYOUT-12/poster-direction-graphic-led/H055` “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf) carries a compact series-title stack, such as “UMBRA / LOFT”, set in Sora ExtraBold capitals.
+- `LAYOUT-12/poster-direction-graphic-led/H056` On “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf), every act name is set smaller than the series title.
+- `LAYOUT-12/poster-direction-graphic-led/H057` Every support act on “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf) is prefixed “with”, as in “with Odette Lang”.
+- `LAYOUT-12/poster-direction-graphic-led/H058` Pitch #0E0E10 is the main ground of “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf).
+- `LAYOUT-12/poster-direction-graphic-led/H059` No merchandise photo (umbra_wordmark_sable.jpg, umbra_wordmark_meridian.jpg or umbra_wordmark_nightferry.jpg) is placed as an image on “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf).
+- `LAYOUT-12/poster-direction-graphic-led/H060` The licence and accessibility lines on “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf) are set in Archivo Narrow Regular.
+- `LAYOUT-12/poster-direction-graphic-led/H061` No caption or credit on “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf) identifies a pictured performer as one of the billed acts.
+- `LAYOUT-12/promoter-deck/H036` The Image-led design shown in “Promoter pitch deck” (promoter-deck.pdf) is the one delivered as poster-direction-image-led.pdf.
+- `LAYOUT-12/promoter-deck/H037` The Graphic-led design shown in “Promoter pitch deck” (promoter-deck.pdf) is the one delivered as poster-direction-graphic-led.pdf.
+- `LAYOUT-12/promoter-deck/H038` Any date line typeset in “Promoter pitch deck” (promoter-deck.pdf) outside the poster images is Sodium #E4863B.
+- `LAYOUT-12/promoter-deck/H039` Any date line typeset in “Promoter pitch deck” (promoter-deck.pdf) outside the poster images sits directly above its act name.
+- `LAYOUT-12/promoter-deck/H040` Any door line in “Promoter pitch deck” (promoter-deck.pdf) is letterspaced more open than the body text.
+- `LAYOUT-12/promoter-deck/H041` Outside the poster images, every heading, support, billing, body, table, chart-label, door, set and fine-print line in “Promoter pitch deck” (promoter-deck.pdf) is Bone White #E9E4D8.
+- `LAYOUT-12/promoter-deck/H042` Cold Signal #3F7C8C and Blood #8E2B24 together cover no more than 5% of the non-photographic area of “Promoter pitch deck” (promoter-deck.pdf).
+- `LAYOUT-12/promoter-deck/H043` Every performance photograph in “Promoter pitch deck” (promoter-deck.pdf) shows visible grain.
+- `LAYOUT-12/promoter-deck/H044` Pitch #0E0E10 is the main ground of every page of “Promoter pitch deck” (promoter-deck.pdf).
+- `LAYOUT-12/promoter-deck/H045` No merchandise photo (umbra_wordmark_sable.jpg, umbra_wordmark_meridian.jpg or umbra_wordmark_nightferry.jpg) is placed as an image in “Promoter pitch deck” (promoter-deck.pdf).
+- `LAYOUT-12/promoter-deck/H046` “Promoter pitch deck” (promoter-deck.pdf) states which of the three poster directions is adapted for the nine release posts.
+- `LAYOUT-12/promoter-deck/H047` “Promoter pitch deck” (promoter-deck.pdf) gives a reason for choosing the direction adapted for the release posts.
+- `LAYOUT-12/promoter-deck/H048` The draw chart in “Promoter pitch deck” (promoter-deck.pdf) has a truthful scale: bar or point positions are in proportion to the six draw values.
+- `LAYOUT-12/promoter-deck/H049` Any date line in “Promoter pitch deck” (promoter-deck.pdf) is set in Sora ExtraBold capitals.
+- `LAYOUT-12/promoter-deck/H050` If a series title such as “UMBRA / LOFT” appears in “Promoter pitch deck” (promoter-deck.pdf), it is set in Sora ExtraBold.
+- `LAYOUT-12/promoter-deck/H051` No caption or credit in “Promoter pitch deck” (promoter-deck.pdf) identifies a pictured performer as one of the billed acts.
+- `LAYOUT-12/promoter-deck/H052` Any Sable Quartet or Meridian Brass wordmark placed in “Promoter pitch deck” (promoter-deck.pdf) outside the poster images is inked in solid Bone White #E9E4D8 on Pitch #0E0E10.
+- `LAYOUT-12/release-post-r002/H034` Cold Signal #3F7C8C and Blood #8E2B24 together cover no more than 5% of the non-photographic area of “Night release post - 2026-09-25” (release-post-r002.png).
+- `LAYOUT-12/release-post-r002/H035` The photograph on “Night release post - 2026-09-25” (release-post-r002.png) shows visible grain.
+- `LAYOUT-12/release-post-r002/H036` The date line on “Night release post - 2026-09-25” (release-post-r002.png) is Sodium #E4863B.
+- `LAYOUT-12/release-post-r002/H037` The date line on “Night release post - 2026-09-25” (release-post-r002.png) sits directly above the act name.
+- `LAYOUT-12/release-post-r002/H038` On “Night release post - 2026-09-25” (release-post-r002.png), the door line is letterspaced more open than the support line.
+- `LAYOUT-12/release-post-r002/H039` Every title, support, door, set, body and fine-print line on “Night release post - 2026-09-25” (release-post-r002.png) is Bone White #E9E4D8.
+- `LAYOUT-12/release-post-r002/H040` Pitch #0E0E10 is the main ground of “Night release post - 2026-09-25” (release-post-r002.png).
+- `LAYOUT-12/release-post-r002/H041` The date line on “Night release post - 2026-09-25” (release-post-r002.png) is set in Sora ExtraBold capitals.
+- `LAYOUT-12/release-post-r002/H042` “Night release post - 2026-09-25” (release-post-r002.png) carries a compact series-title stack, such as “UMBRA / LOFT”, set in Sora ExtraBold capitals.
+- `LAYOUT-12/release-post-r002/H043` The advance price on “Night release post - 2026-09-25” (release-post-r002.png) is set in Archivo Narrow Regular.
+- `LAYOUT-12/release-post-r002/H044` If the set time on “Night release post - 2026-09-25” (release-post-r002.png) sits apart from the door line, it is set in Archivo Narrow Regular.
+- `LAYOUT-12/release-post-r002/H045` No line of body text on “Night release post - 2026-09-25” (release-post-r002.png) runs longer than 65 characters.
+- `LAYOUT-12/release-post-r002/H046` No merchandise photo (umbra_wordmark_sable.jpg, umbra_wordmark_meridian.jpg or umbra_wordmark_nightferry.jpg) is placed as an image on “Night release post - 2026-09-25” (release-post-r002.png).
+- `LAYOUT-12/release-post-r002/H047` No caption or credit on “Night release post - 2026-09-25” (release-post-r002.png) identifies the pictured performer as Sable Quartet or any other billed act.
+- `LAYOUT-12/release-post-r002/H048` The act name on “Night release post - 2026-09-25” (release-post-r002.png) is spelled “SABLE QUARTET”, as credited in umbra_billing_autumn.txt, in any letter case.
+- `LAYOUT-12/release-post-r002/H049` The Sable Quartet wordmark appears on “Night release post - 2026-09-25” (release-post-r002.png) alongside the typeset act name “Sable Quartet”, not in place of it.
+- `LAYOUT-12/release-post-r002/H050` The Sable Quartet wordmark on “Night release post - 2026-09-25” (release-post-r002.png) is inked in solid Bone White #E9E4D8 on a Pitch #0E0E10 ground.
+- `LAYOUT-12/release-post-r003/H021` Apart from the photograph, every type, ground, panel, rule and wordmark colour on “Night release post - 2026-09-26” (release-post-r003.png) is one of #0E0E10, #2A2A2E, #E4863B, #3F7C8C, #E9E4D8 or #8E2B24.
+- `LAYOUT-12/release-post-r003/H022` All colour on “Night release post - 2026-09-26” (release-post-r003.png) is solid at 100% opacity, with no tint, transparency, gradient, glow or shadow, and no scrim or overlay on the photograph.
+- `LAYOUT-12/release-post-r003/H023` On “Night release post - 2026-09-26” (release-post-r003.png), Cold Signal #3F7C8C and Blood #8E2B24 appear only as hairlines, dividers or photo treatment.
+- `LAYOUT-12/release-post-r003/H024` The photograph on “Night release post - 2026-09-26” (release-post-r003.png) is reproduced in two palette colours, not in full colour.
+- `LAYOUT-12/release-post-r003/H025` The act name “Meridian Brass” on “Night release post - 2026-09-26” (release-post-r003.png) is Bone White #E9E4D8 on a solid Pitch #0E0E10 ground.
+- `LAYOUT-12/release-post-r003/H026` On “Night release post - 2026-09-26” (release-post-r003.png), the date line is letterspaced more open than the act name.
+- `LAYOUT-12/release-post-r003/H027` Every non-photographic ground and panel on “Night release post - 2026-09-26” (release-post-r003.png) is Pitch #0E0E10 or Ash #2A2A2E.
+- `LAYOUT-12/release-post-r003/H028` Cold Signal #3F7C8C and Blood #8E2B24 together cover no more than 5% of the non-photographic area of “Night release post - 2026-09-26” (release-post-r003.png).
+- `LAYOUT-12/release-post-r003/H029` The photograph on “Night release post - 2026-09-26” (release-post-r003.png) shows visible grain.
+- `LAYOUT-12/release-post-r003/H030` The photograph's two colours on “Night release post - 2026-09-26” (release-post-r003.png) are the same pair as on release-post-r002.png.
+- `LAYOUT-12/release-post-r003/H031` The date line on “Night release post - 2026-09-26” (release-post-r003.png) is Sodium #E4863B.
+- `LAYOUT-12/release-post-r003/H032` The date line on “Night release post - 2026-09-26” (release-post-r003.png) sits directly above the act name.
+- `LAYOUT-12/release-post-r003/H033` On “Night release post - 2026-09-26” (release-post-r003.png), the door line is letterspaced more open than the support line.
+- `LAYOUT-12/release-post-r003/H034` Every title, support, door, set, body and fine-print line on “Night release post - 2026-09-26” (release-post-r003.png) is Bone White #E9E4D8.
+- `LAYOUT-12/release-post-r003/H035` Pitch #0E0E10 is the main ground of “Night release post - 2026-09-26” (release-post-r003.png).
+- `LAYOUT-12/release-post-r003/H036` The date line on “Night release post - 2026-09-26” (release-post-r003.png) is set in Sora ExtraBold capitals.
+- `LAYOUT-12/release-post-r003/H037` “Night release post - 2026-09-26” (release-post-r003.png) carries a compact series-title stack, such as “UMBRA / LOFT”, set in Sora ExtraBold capitals.
+- `LAYOUT-12/release-post-r003/H038` The advance price on “Night release post - 2026-09-26” (release-post-r003.png) is set in Archivo Narrow Regular.
+- `LAYOUT-12/release-post-r003/H039` If the set time on “Night release post - 2026-09-26” (release-post-r003.png) sits apart from the door line, it is set in Archivo Narrow Regular.
+- `LAYOUT-12/release-post-r003/H040` No line of body text on “Night release post - 2026-09-26” (release-post-r003.png) runs longer than 65 characters.
+- `LAYOUT-12/release-post-r003/H041` No merchandise photo (umbra_wordmark_sable.jpg, umbra_wordmark_meridian.jpg or umbra_wordmark_nightferry.jpg) is placed as an image on “Night release post - 2026-09-26” (release-post-r003.png).
+- `LAYOUT-12/release-post-r003/H042` No caption or credit on “Night release post - 2026-09-26” (release-post-r003.png) identifies the pictured performer as Meridian Brass or any other billed act.
+- `LAYOUT-12/release-post-r003/H043` The act name on “Night release post - 2026-09-26” (release-post-r003.png) is spelled “MERIDIAN BRASS”, as credited in umbra_billing_autumn.txt, in any letter case.
+- `LAYOUT-12/release-post-r003/H044` The Meridian Brass wordmark appears on “Night release post - 2026-09-26” (release-post-r003.png) alongside the typeset act name “Meridian Brass”, not in place of it.
+- `LAYOUT-12/release-post-r004/H031` Cold Signal #3F7C8C and Blood #8E2B24 together cover no more than 5% of the non-photographic area of “Night release post - 2026-10-02” (release-post-r004.png).
+- `LAYOUT-12/release-post-r004/H032` The photograph on “Night release post - 2026-10-02” (release-post-r004.png) shows visible grain.
+- `LAYOUT-12/release-post-r004/H033` The photograph's two colours on “Night release post - 2026-10-02” (release-post-r004.png) are the same pair as on release-post-r002.png.
+- `LAYOUT-12/release-post-r004/H034` The date line on “Night release post - 2026-10-02” (release-post-r004.png) is Sodium #E4863B.
+- `LAYOUT-12/release-post-r004/H035` The date line on “Night release post - 2026-10-02” (release-post-r004.png) sits directly above the act name.
+- `LAYOUT-12/release-post-r004/H036` On “Night release post - 2026-10-02” (release-post-r004.png), the door line is letterspaced more open than the support line.
+- `LAYOUT-12/release-post-r004/H037` Every title, support, door, set, body and fine-print line on “Night release post - 2026-10-02” (release-post-r004.png) is Bone White #E9E4D8.
+- `LAYOUT-12/release-post-r004/H038` Pitch #0E0E10 is the main ground of “Night release post - 2026-10-02” (release-post-r004.png).
+- `LAYOUT-12/release-post-r004/H039` The date line on “Night release post - 2026-10-02” (release-post-r004.png) is set in Sora ExtraBold capitals.
+- `LAYOUT-12/release-post-r004/H040` “Night release post - 2026-10-02” (release-post-r004.png) carries a compact series-title stack, such as “UMBRA / LOFT”, set in Sora ExtraBold capitals.
+- `LAYOUT-12/release-post-r004/H041` The advance price on “Night release post - 2026-10-02” (release-post-r004.png) is set in Archivo Narrow Regular.
+- `LAYOUT-12/release-post-r004/H042` If the set time on “Night release post - 2026-10-02” (release-post-r004.png) sits apart from the door line, it is set in Archivo Narrow Regular.
+- `LAYOUT-12/release-post-r004/H043` No line of body text on “Night release post - 2026-10-02” (release-post-r004.png) runs longer than 65 characters.
+- `LAYOUT-12/release-post-r004/H044` No merchandise photo (umbra_wordmark_sable.jpg, umbra_wordmark_meridian.jpg or umbra_wordmark_nightferry.jpg) is placed as an image on “Night release post - 2026-10-02” (release-post-r004.png).
+- `LAYOUT-12/release-post-r004/H045` No caption or credit on “Night release post - 2026-10-02” (release-post-r004.png) identifies the pictured performer as Night Ferry or any other billed act.
+- `LAYOUT-12/release-post-r005/H030` Cold Signal #3F7C8C and Blood #8E2B24 together cover no more than 5% of the non-photographic area of “Night release post - 2026-10-03” (release-post-r005.png).
+- `LAYOUT-12/release-post-r005/H031` The photograph on “Night release post - 2026-10-03” (release-post-r005.png) shows visible grain.
+- `LAYOUT-12/release-post-r005/H032` The photograph's two colours on “Night release post - 2026-10-03” (release-post-r005.png) are the same pair as on release-post-r002.png.
+- `LAYOUT-12/release-post-r005/H033` The date line on “Night release post - 2026-10-03” (release-post-r005.png) is Sodium #E4863B.
+- `LAYOUT-12/release-post-r005/H034` The date line on “Night release post - 2026-10-03” (release-post-r005.png) sits directly above the act name.
+- `LAYOUT-12/release-post-r005/H035` On “Night release post - 2026-10-03” (release-post-r005.png), the door line is letterspaced more open than the support line.
+- `LAYOUT-12/release-post-r005/H036` Every title, support, door, set, body and fine-print line on “Night release post - 2026-10-03” (release-post-r005.png) is Bone White #E9E4D8.
+- `LAYOUT-12/release-post-r005/H037` Pitch #0E0E10 is the main ground of “Night release post - 2026-10-03” (release-post-r005.png).
+- `LAYOUT-12/release-post-r005/H038` The date line on “Night release post - 2026-10-03” (release-post-r005.png) is set in Sora ExtraBold capitals.
+- `LAYOUT-12/release-post-r005/H039` “Night release post - 2026-10-03” (release-post-r005.png) carries a compact series-title stack, such as “UMBRA / LOFT”, set in Sora ExtraBold capitals.
+- `LAYOUT-12/release-post-r005/H040` The advance price on “Night release post - 2026-10-03” (release-post-r005.png) is set in Archivo Narrow Regular.
+- `LAYOUT-12/release-post-r005/H041` If the set time on “Night release post - 2026-10-03” (release-post-r005.png) sits apart from the door line, it is set in Archivo Narrow Regular.
+- `LAYOUT-12/release-post-r005/H042` No line of body text on “Night release post - 2026-10-03” (release-post-r005.png) runs longer than 65 characters.
+- `LAYOUT-12/release-post-r005/H043` No merchandise photo (umbra_wordmark_sable.jpg, umbra_wordmark_meridian.jpg or umbra_wordmark_nightferry.jpg) is placed as an image on “Night release post - 2026-10-03” (release-post-r005.png).
+- `LAYOUT-12/release-post-r005/H044` No caption or credit on “Night release post - 2026-10-03” (release-post-r005.png) identifies the pictured performer as The Blue Hour or any other billed act.
+- `LAYOUT-12/release-post-r005/H045` The act name on “Night release post - 2026-10-03” (release-post-r005.png) is spelled “THE BLUE HOUR”, as credited in umbra_billing_autumn.txt, in any letter case.
+- `LAYOUT-12/release-post-r006/H030` Cold Signal #3F7C8C and Blood #8E2B24 together cover no more than 5% of the non-photographic area of “Night release post - 2026-10-04” (release-post-r006.png).
+- `LAYOUT-12/release-post-r006/H031` The photograph on “Night release post - 2026-10-04” (release-post-r006.png) shows visible grain.
+- `LAYOUT-12/release-post-r006/H032` The photograph's two colours on “Night release post - 2026-10-04” (release-post-r006.png) are the same pair as on release-post-r002.png.
+- `LAYOUT-12/release-post-r006/H033` The date line on “Night release post - 2026-10-04” (release-post-r006.png) is Sodium #E4863B.
+- `LAYOUT-12/release-post-r006/H034` The date line on “Night release post - 2026-10-04” (release-post-r006.png) sits directly above the act name.
+- `LAYOUT-12/release-post-r006/H035` On “Night release post - 2026-10-04” (release-post-r006.png), the door line is letterspaced more open than the support line.
+- `LAYOUT-12/release-post-r006/H036` Every title, support, door, set, body and fine-print line on “Night release post - 2026-10-04” (release-post-r006.png) is Bone White #E9E4D8.
+- `LAYOUT-12/release-post-r006/H037` Pitch #0E0E10 is the main ground of “Night release post - 2026-10-04” (release-post-r006.png).
+- `LAYOUT-12/release-post-r006/H038` The date line on “Night release post - 2026-10-04” (release-post-r006.png) is set in Sora ExtraBold capitals.
+- `LAYOUT-12/release-post-r006/H039` “Night release post - 2026-10-04” (release-post-r006.png) carries a compact series-title stack, such as “UMBRA / LOFT”, set in Sora ExtraBold capitals.
+- `LAYOUT-12/release-post-r006/H040` The advance price on “Night release post - 2026-10-04” (release-post-r006.png) is set in Archivo Narrow Regular.
+- `LAYOUT-12/release-post-r006/H041` If the set time on “Night release post - 2026-10-04” (release-post-r006.png) sits apart from the door line, it is set in Archivo Narrow Regular.
+- `LAYOUT-12/release-post-r006/H042` No line of body text on “Night release post - 2026-10-04” (release-post-r006.png) runs longer than 65 characters.
+- `LAYOUT-12/release-post-r006/H043` No merchandise photo (umbra_wordmark_sable.jpg, umbra_wordmark_meridian.jpg or umbra_wordmark_nightferry.jpg) is placed as an image on “Night release post - 2026-10-04” (release-post-r006.png).
+- `LAYOUT-12/release-post-r006/H044` No caption or credit on “Night release post - 2026-10-04” (release-post-r006.png) identifies the pictured performer as The Blue Hour or any other billed act.
+- `LAYOUT-12/release-post-r006/H045` The act name on “Night release post - 2026-10-04” (release-post-r006.png) is spelled “THE BLUE HOUR”, as credited in umbra_billing_autumn.txt, in any letter case.
+- `LAYOUT-12/release-post-r007/H030` Cold Signal #3F7C8C and Blood #8E2B24 together cover no more than 5% of the non-photographic area of “Night release post - 2026-10-09” (release-post-r007.png).
+- `LAYOUT-12/release-post-r007/H031` The photograph on “Night release post - 2026-10-09” (release-post-r007.png) shows visible grain.
+- `LAYOUT-12/release-post-r007/H032` The photograph's two colours on “Night release post - 2026-10-09” (release-post-r007.png) are the same pair as on release-post-r002.png.
+- `LAYOUT-12/release-post-r007/H033` The date line on “Night release post - 2026-10-09” (release-post-r007.png) is Sodium #E4863B.
+- `LAYOUT-12/release-post-r007/H034` The date line on “Night release post - 2026-10-09” (release-post-r007.png) sits directly above the act name.
+- `LAYOUT-12/release-post-r007/H035` On “Night release post - 2026-10-09” (release-post-r007.png), the door line is letterspaced more open than the support line.
+- `LAYOUT-12/release-post-r007/H036` Every title, support, door, set, body and fine-print line on “Night release post - 2026-10-09” (release-post-r007.png) is Bone White #E9E4D8.
+- `LAYOUT-12/release-post-r007/H037` Pitch #0E0E10 is the main ground of “Night release post - 2026-10-09” (release-post-r007.png).
+- `LAYOUT-12/release-post-r007/H038` The date line on “Night release post - 2026-10-09” (release-post-r007.png) is set in Sora ExtraBold capitals.
+- `LAYOUT-12/release-post-r007/H039` “Night release post - 2026-10-09” (release-post-r007.png) carries a compact series-title stack, such as “UMBRA / LOFT”, set in Sora ExtraBold capitals.
+- `LAYOUT-12/release-post-r007/H040` The advance price on “Night release post - 2026-10-09” (release-post-r007.png) is set in Archivo Narrow Regular.
+- `LAYOUT-12/release-post-r007/H041` If the set time on “Night release post - 2026-10-09” (release-post-r007.png) sits apart from the door line, it is set in Archivo Narrow Regular.
+- `LAYOUT-12/release-post-r007/H042` No line of body text on “Night release post - 2026-10-09” (release-post-r007.png) runs longer than 65 characters.
+- `LAYOUT-12/release-post-r007/H043` No merchandise photo (umbra_wordmark_sable.jpg, umbra_wordmark_meridian.jpg or umbra_wordmark_nightferry.jpg) is placed as an image on “Night release post - 2026-10-09” (release-post-r007.png).
+- `LAYOUT-12/release-post-r007/H044` No caption or credit on “Night release post - 2026-10-09” (release-post-r007.png) identifies the pictured performer as Vespertine or any other billed act.
+- `LAYOUT-12/release-post-r007/H045` The act name on “Night release post - 2026-10-09” (release-post-r007.png) is spelled “VESPERTINE”, as credited in umbra_billing_autumn.txt, in any letter case.
+- `LAYOUT-12/release-post-r007/H046` The door time on “Night release post - 2026-10-09” (release-post-r007.png) is 8:00 PM (umbra_nights_autumn.csv row 7), in any clear form such as “DOORS 8”.
+- `LAYOUT-12/release-post-r008/H018` Apart from the photograph, every type, ground, panel, rule and wordmark colour on “Night release post - 2026-10-10” (release-post-r008.png) is one of #0E0E10, #2A2A2E, #E4863B, #3F7C8C, #E9E4D8 or #8E2B24.
+- `LAYOUT-12/release-post-r008/H019` All colour on “Night release post - 2026-10-10” (release-post-r008.png) is solid at 100% opacity, with no tint, transparency, gradient, glow or shadow, and no scrim or overlay on the photograph.
+- `LAYOUT-12/release-post-r008/H020` On “Night release post - 2026-10-10” (release-post-r008.png), Cold Signal #3F7C8C and Blood #8E2B24 appear only as hairlines, dividers or photo treatment.
+- `LAYOUT-12/release-post-r008/H021` The photograph on “Night release post - 2026-10-10” (release-post-r008.png) is reproduced in two palette colours, not in full colour.
+- `LAYOUT-12/release-post-r008/H022` The act name “The Eastons” on “Night release post - 2026-10-10” (release-post-r008.png) is Bone White #E9E4D8 on a solid Pitch #0E0E10 ground.
+- `LAYOUT-12/release-post-r008/H023` On “Night release post - 2026-10-10” (release-post-r008.png), the date line is letterspaced more open than the act name.
+- `LAYOUT-12/release-post-r008/H024` Every non-photographic ground and panel on “Night release post - 2026-10-10” (release-post-r008.png) is Pitch #0E0E10 or Ash #2A2A2E.
+- `LAYOUT-12/release-post-r008/H025` Cold Signal #3F7C8C and Blood #8E2B24 together cover no more than 5% of the non-photographic area of “Night release post - 2026-10-10” (release-post-r008.png).
+- `LAYOUT-12/release-post-r008/H026` The photograph on “Night release post - 2026-10-10” (release-post-r008.png) shows visible grain.
+- `LAYOUT-12/release-post-r008/H027` The photograph's two colours on “Night release post - 2026-10-10” (release-post-r008.png) are the same pair as on release-post-r002.png.
+- `LAYOUT-12/release-post-r008/H028` The date line on “Night release post - 2026-10-10” (release-post-r008.png) is Sodium #E4863B.
+- `LAYOUT-12/release-post-r008/H029` The date line on “Night release post - 2026-10-10” (release-post-r008.png) sits directly above the act name.
+- `LAYOUT-12/release-post-r008/H030` On “Night release post - 2026-10-10” (release-post-r008.png), the door line is letterspaced more open than the support line.
+- `LAYOUT-12/release-post-r008/H031` Every title, support, door, set, body and fine-print line on “Night release post - 2026-10-10” (release-post-r008.png) is Bone White #E9E4D8.
+- `LAYOUT-12/release-post-r008/H032` Pitch #0E0E10 is the main ground of “Night release post - 2026-10-10” (release-post-r008.png).
+- `LAYOUT-12/release-post-r008/H033` The date line on “Night release post - 2026-10-10” (release-post-r008.png) is set in Sora ExtraBold capitals.
+- `LAYOUT-12/release-post-r008/H034` “Night release post - 2026-10-10” (release-post-r008.png) carries a compact series-title stack, such as “UMBRA / LOFT”, set in Sora ExtraBold capitals.
+- `LAYOUT-12/release-post-r008/H035` The advance price on “Night release post - 2026-10-10” (release-post-r008.png) is set in Archivo Narrow Regular.
+- `LAYOUT-12/release-post-r008/H036` If the set time on “Night release post - 2026-10-10” (release-post-r008.png) sits apart from the door line, it is set in Archivo Narrow Regular.
+- `LAYOUT-12/release-post-r008/H037` No line of body text on “Night release post - 2026-10-10” (release-post-r008.png) runs longer than 65 characters.
+- `LAYOUT-12/release-post-r008/H038` No merchandise photo (umbra_wordmark_sable.jpg, umbra_wordmark_meridian.jpg or umbra_wordmark_nightferry.jpg) is placed as an image on “Night release post - 2026-10-10” (release-post-r008.png).
+- `LAYOUT-12/release-post-r008/H039` No caption or credit on “Night release post - 2026-10-10” (release-post-r008.png) identifies the pictured performer as The Eastons or any other billed act.
+- `LAYOUT-12/release-post-r008/H040` The act name on “Night release post - 2026-10-10” (release-post-r008.png) is spelled “THE EASTONS”, as credited in umbra_billing_autumn.txt, in any letter case.
+- `LAYOUT-12/release-post-r009/H018` Apart from the photograph, every type, ground, panel, rule and wordmark colour on “Night release post - 2026-10-16” (release-post-r009.png) is one of #0E0E10, #2A2A2E, #E4863B, #3F7C8C, #E9E4D8 or #8E2B24.
+- `LAYOUT-12/release-post-r009/H019` All colour on “Night release post - 2026-10-16” (release-post-r009.png) is solid at 100% opacity, with no tint, transparency, gradient, glow or shadow, and no scrim or overlay on the photograph.
+- `LAYOUT-12/release-post-r009/H020` On “Night release post - 2026-10-16” (release-post-r009.png), Cold Signal #3F7C8C and Blood #8E2B24 appear only as hairlines, dividers or photo treatment.
+- `LAYOUT-12/release-post-r009/H021` The photograph on “Night release post - 2026-10-16” (release-post-r009.png) is reproduced in two palette colours, not in full colour.
+- `LAYOUT-12/release-post-r009/H022` The act name “Koa” on “Night release post - 2026-10-16” (release-post-r009.png) is Bone White #E9E4D8 on a solid Pitch #0E0E10 ground.
+- `LAYOUT-12/release-post-r009/H023` On “Night release post - 2026-10-16” (release-post-r009.png), the date line is letterspaced more open than the act name.
+- `LAYOUT-12/release-post-r009/H024` Every non-photographic ground and panel on “Night release post - 2026-10-16” (release-post-r009.png) is Pitch #0E0E10 or Ash #2A2A2E.
+- `LAYOUT-12/release-post-r009/H025` Cold Signal #3F7C8C and Blood #8E2B24 together cover no more than 5% of the non-photographic area of “Night release post - 2026-10-16” (release-post-r009.png).
+- `LAYOUT-12/release-post-r009/H026` The photograph on “Night release post - 2026-10-16” (release-post-r009.png) shows visible grain.
+- `LAYOUT-12/release-post-r009/H027` The photograph's two colours on “Night release post - 2026-10-16” (release-post-r009.png) are the same pair as on release-post-r002.png.
+- `LAYOUT-12/release-post-r009/H028` The date line on “Night release post - 2026-10-16” (release-post-r009.png) is Sodium #E4863B.
+- `LAYOUT-12/release-post-r009/H029` The date line on “Night release post - 2026-10-16” (release-post-r009.png) sits directly above the act name.
+- `LAYOUT-12/release-post-r009/H030` On “Night release post - 2026-10-16” (release-post-r009.png), the door line is letterspaced more open than the support line.
+- `LAYOUT-12/release-post-r009/H031` Every title, support, door, set, body and fine-print line on “Night release post - 2026-10-16” (release-post-r009.png) is Bone White #E9E4D8.
+- `LAYOUT-12/release-post-r009/H032` Pitch #0E0E10 is the main ground of “Night release post - 2026-10-16” (release-post-r009.png).
+- `LAYOUT-12/release-post-r009/H033` The date line on “Night release post - 2026-10-16” (release-post-r009.png) is set in Sora ExtraBold capitals.
+- `LAYOUT-12/release-post-r009/H034` “Night release post - 2026-10-16” (release-post-r009.png) carries a compact series-title stack, such as “UMBRA / LOFT”, set in Sora ExtraBold capitals.
+- `LAYOUT-12/release-post-r009/H035` The advance price on “Night release post - 2026-10-16” (release-post-r009.png) is set in Archivo Narrow Regular.
+- `LAYOUT-12/release-post-r009/H036` If the set time on “Night release post - 2026-10-16” (release-post-r009.png) sits apart from the door line, it is set in Archivo Narrow Regular.
+- `LAYOUT-12/release-post-r009/H037` No line of body text on “Night release post - 2026-10-16” (release-post-r009.png) runs longer than 65 characters.
+- `LAYOUT-12/release-post-r009/H038` No merchandise photo (umbra_wordmark_sable.jpg, umbra_wordmark_meridian.jpg or umbra_wordmark_nightferry.jpg) is placed as an image on “Night release post - 2026-10-16” (release-post-r009.png).
+- `LAYOUT-12/release-post-r009/H039` No caption or credit on “Night release post - 2026-10-16” (release-post-r009.png) identifies the pictured performer as Koa or any other billed act.
+- `LAYOUT-12/release-post-r009/H040` The act name on “Night release post - 2026-10-16” (release-post-r009.png) is spelled “KOA”, as credited in umbra_billing_autumn.txt, in any letter case.
+- `LAYOUT-12/release-post-r010/H030` Cold Signal #3F7C8C and Blood #8E2B24 together cover no more than 5% of the non-photographic area of “Night release post - 2026-10-17” (release-post-r010.png).
+- `LAYOUT-12/release-post-r010/H031` The photograph on “Night release post - 2026-10-17” (release-post-r010.png) shows visible grain.
+- `LAYOUT-12/release-post-r010/H032` The photograph's two colours on “Night release post - 2026-10-17” (release-post-r010.png) are the same pair as on release-post-r002.png.
+- `LAYOUT-12/release-post-r010/H033` The date line on “Night release post - 2026-10-17” (release-post-r010.png) is Sodium #E4863B.
+- `LAYOUT-12/release-post-r010/H034` The date line on “Night release post - 2026-10-17” (release-post-r010.png) sits directly above the act name.
+- `LAYOUT-12/release-post-r010/H035` On “Night release post - 2026-10-17” (release-post-r010.png), the door line is letterspaced more open than the support line.
+- `LAYOUT-12/release-post-r010/H036` Every title, support, door, set, body and fine-print line on “Night release post - 2026-10-17” (release-post-r010.png) is Bone White #E9E4D8.
+- `LAYOUT-12/release-post-r010/H037` Pitch #0E0E10 is the main ground of “Night release post - 2026-10-17” (release-post-r010.png).
+- `LAYOUT-12/release-post-r010/H038` The date line on “Night release post - 2026-10-17” (release-post-r010.png) is set in Sora ExtraBold capitals.
+- `LAYOUT-12/release-post-r010/H039` “Night release post - 2026-10-17” (release-post-r010.png) carries a compact series-title stack, such as “UMBRA / LOFT”, set in Sora ExtraBold capitals.
+- `LAYOUT-12/release-post-r010/H040` The advance price on “Night release post - 2026-10-17” (release-post-r010.png) is set in Archivo Narrow Regular.
+- `LAYOUT-12/release-post-r010/H041` If the set time on “Night release post - 2026-10-17” (release-post-r010.png) sits apart from the door line, it is set in Archivo Narrow Regular.
+- `LAYOUT-12/release-post-r010/H042` No line of body text on “Night release post - 2026-10-17” (release-post-r010.png) runs longer than 65 characters.
+- `LAYOUT-12/release-post-r010/H043` No merchandise photo (umbra_wordmark_sable.jpg, umbra_wordmark_meridian.jpg or umbra_wordmark_nightferry.jpg) is placed as an image on “Night release post - 2026-10-17” (release-post-r010.png).
+- `LAYOUT-12/release-post-r010/H044` No caption or credit on “Night release post - 2026-10-17” (release-post-r010.png) identifies the pictured performer as Laurel and the Dive or any other billed act.
+- `LAYOUT-12/release-post-r010/H045` The act name on “Night release post - 2026-10-17” (release-post-r010.png) is spelled “LAUREL AND THE DIVE”, as credited in umbra_billing_autumn.txt, in any letter case.
+- `LAYOUT-12/release-post-r003/H045` The Meridian Brass wordmark on “Night release post - 2026-09-26” (release-post-r003.png) is inked in solid Bone White #E9E4D8 on a Pitch #0E0E10 ground.
+- `LAYOUT-12/release-post-r004/H046` Night Ferry is credited on “Night release post - 2026-10-02” (release-post-r004.png) as two words, “NIGHT FERRY”, never run together.
+- `LAYOUT-12/release-post-r005/H046` “The Blue Hour” is billed on “Night release post - 2026-10-03” (release-post-r005.png) in type only, with no wordmark or logo artwork.
+- `LAYOUT-12/release-post-r006/H046` “The Blue Hour” is billed on “Night release post - 2026-10-04” (release-post-r006.png) in type only, with no wordmark or logo artwork.
+- `LAYOUT-12/release-post-r007/H047` “Vespertine” is billed on “Night release post - 2026-10-09” (release-post-r007.png) in type only, with no wordmark or logo artwork.
+- `LAYOUT-12/release-post-r008/H041` “The Eastons” is billed on “Night release post - 2026-10-10” (release-post-r008.png) in type only, with no wordmark or logo artwork.
+- `LAYOUT-12/release-post-r009/H041` “Koa” is billed on “Night release post - 2026-10-16” (release-post-r009.png) in type only, with no wordmark or logo artwork.
+- `LAYOUT-12/release-post-r010/H046` “Laurel and the Dive” is billed on “Night release post - 2026-10-17” (release-post-r010.png) in type only, with no wordmark or logo artwork.
+- `LAYOUT-12/release-post-r002/H051` “Night release post - 2026-09-25” (release-post-r002.png) follows the poster direction that promoter-deck.pdf names for the release posts.
+- `LAYOUT-12/release-post-r003/H046` “Night release post - 2026-09-26” (release-post-r003.png) follows the poster direction that promoter-deck.pdf names for the release posts.
+- `LAYOUT-12/release-post-r004/H047` “Night release post - 2026-10-02” (release-post-r004.png) follows the poster direction that promoter-deck.pdf names for the release posts.
+- `LAYOUT-12/release-post-r005/H047` “Night release post - 2026-10-03” (release-post-r005.png) follows the poster direction that promoter-deck.pdf names for the release posts.
+- `LAYOUT-12/release-post-r006/H047` “Night release post - 2026-10-04” (release-post-r006.png) follows the poster direction that promoter-deck.pdf names for the release posts.
+- `LAYOUT-12/release-post-r007/H048` “Night release post - 2026-10-09” (release-post-r007.png) follows the poster direction that promoter-deck.pdf names for the release posts.
+- `LAYOUT-12/release-post-r008/H042` “Night release post - 2026-10-10” (release-post-r008.png) follows the poster direction that promoter-deck.pdf names for the release posts.
+- `LAYOUT-12/release-post-r009/H042` “Night release post - 2026-10-16” (release-post-r009.png) follows the poster direction that promoter-deck.pdf names for the release posts.
+- `LAYOUT-12/release-post-r010/H047` “Night release post - 2026-10-17” (release-post-r010.png) follows the poster direction that promoter-deck.pdf names for the release posts.

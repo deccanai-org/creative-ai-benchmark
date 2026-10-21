@@ -1,0 +1,366 @@
+{
+ "LANGUAGE, ATOMICITY AND OBSERVABILITY": [
+  {
+   "severity": "major",
+   "check_ids": [
+    "PHOTO-19/speaker-card-r003/H015",
+    "r005/H015",
+    "r006/H015",
+    "r007/H015",
+    "r008/H015",
+    "r009/H015",
+    "r010/H015",
+    "r011/H015",
+    "r013/H015",
+    "r014/H015",
+    "r015/H015",
+    "r016/H015",
+    "r017/H015",
+    "r018/H015",
+    "r019/H015",
+    "r020/H015",
+    "r021/H015"
+   ],
+   "problem": "17 head-scale checks still compare one model output with another: \"the same size in frame as the head on the fixed reference card speaker-card-r002.png\". (1) It is still a cross-output comparison, and the audit asked for a stated value or the card's own source photo. (2) It names r002 by file only, not as \"Name\" (file.ext). (3) \"Fixed reference card\" is jargon, and \"the same size\" is a stricter standard than anyone can judge by eye. (4) Failures cascade: r002/H018 was retired with covered_by [] and r002 has no head-scale check of its own. If r002 is the odd one out, all 17 other cards fail and r002 passes. r002 is also the worst anchor, because its source (speaker_portrait_01.jpg) is the asset plan's \"different starting point from the rest\" magazine frame.",
+   "fix": "Preferred: keep one reference, but name it properly and give a tolerance a person can judge. Template: \"The head on “Summit speaker card - Peter Vance” (speaker-card-r003.png) is neither visibly larger nor smaller in frame than the head on “Summit speaker card - Ines Moreau” (speaker-card-r005.png).\" Use a reference built from a typical office frame (r005, from speaker_portrait_03.jpg) instead of the editorial r002. Then turn r002/H018 back on as the same check against r005, and drop the r005 self-check. If the team will not allow output-to-output anchors at all, retire all 17 as \"no stated value in summit_brand_notes.txt ('One scale of head in frame across all eighteen')\" and record the rule in coverage as not atomically checkable."
+  },
+  {
+   "severity": "major",
+   "check_ids": [
+    "r002/H031",
+    "r003/H050",
+    "r005/H049",
+    "r006/H049",
+    "r007/H049",
+    "r008/H049",
+    "r009/H049",
+    "r010/H050",
+    "r011/H049",
+    "r013/H049",
+    "r014/H049",
+    "r015/H049",
+    "r016/H049",
+    "r017/H049",
+    "r018/H049",
+    "r019/H049",
+    "r020/H049",
+    "r021/H030",
+    "summit-announcement/H028"
+   ],
+   "problem": "The type-colour check packs two independent rules into one hard-to-parse sentence: \"Type ... is Near Black #1A1F24 on Warm Paper, except a Copper affiliation line, and Warm Paper or Fog Grey on Cascadia Slate.\" A designer has to untangle which exception goes with which ground. The two halves can fail separately.",
+   "fix": "Split each into two checks. Keep the existing id for the first: \"On “Summit speaker card - Peter Vance” (speaker-card-r003.png), all type on Warm Paper is Near Black #1A1F24, except the affiliation line, which may be Signal Copper #B06B3E.\" Add a new check: \"On “Summit speaker card - Peter Vance” (speaker-card-r003.png), all type on Cascadia Slate is Warm Paper #F2EEE7 or Fog Grey #D9DDDE.\" On the announcement, drop the affiliation exception unless an affiliation appears: \"...all type on Warm Paper, the headline included, is Near Black #1A1F24.\""
+  },
+  {
+   "severity": "major",
+   "check_ids": [
+    "r002/H016",
+    "r003/H010",
+    "r005/H013",
+    "r006/H013",
+    "r007/H013",
+    "r008/H013",
+    "r009/H013",
+    "r010/H013",
+    "r011/H013",
+    "r013/H013",
+    "r014/H013",
+    "r015/H013",
+    "r016/H013",
+    "r017/H013",
+    "r018/H013",
+    "r019/H013",
+    "r020/H013",
+    "r021/H013"
+   ],
+   "problem": "Compound check: \"The sitter's ground ... is within the Fog Grey #D9DDDE to Warm Paper #F2EEE7 range, with no background from <photo> left.\" Removing the original background and the tone of the new ground are independent facts. A card can fail one and pass the other.",
+   "fix": "Keep the existing id for the tone: \"The ground behind the sitter on “Summit speaker card - Peter Vance” (speaker-card-r003.png) is a tone between Fog Grey #D9DDDE and Warm Paper #F2EEE7.\" Add a new check: \"No part of the original background of speaker_portrait_02.jpg remains behind the sitter on “Summit speaker card - Peter Vance” (speaker-card-r003.png).\""
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "r002/H017",
+    "r003/H014",
+    "r005/H014",
+    "r006/H014",
+    "r007/H014",
+    "r008/H014",
+    "r009/H014",
+    "r010/H014",
+    "r011/H014",
+    "r013/H014",
+    "r014/H014",
+    "r015/H014",
+    "r016/H014",
+    "r017/H014",
+    "r018/H014",
+    "r019/H014",
+    "r020/H014",
+    "r021/H014"
+   ],
+   "problem": "\"One soft, even, neutral tone, with no colour cast, gradient, vignette or busy texture\" has two problems. \"Soft\" is vague. \"Neutral\" and \"no colour cast\" conflict with the permitted Warm Paper #F2EEE7 end of the range, which is a warm off-white, so an annotator could fail a compliant Warm Paper ground as \"cast\". Colour is already judged by the range check, so this check repeats it.",
+   "fix": "Limit it to evenness: \"The ground behind the sitter on “Summit speaker card - Peter Vance” (speaker-card-r003.png) is one flat, even tone, with no gradient, vignette, pattern or texture.\""
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "r002/H028",
+    "r003/H046",
+    "r005/H045",
+    "r006/H045",
+    "r007/H045",
+    "r008/H045",
+    "r009/H045",
+    "r010/H046",
+    "r011/H045",
+    "r013/H045",
+    "r014/H045",
+    "r015/H045",
+    "r016/H045",
+    "r017/H045",
+    "r018/H045",
+    "r019/H045",
+    "r020/H045",
+    "r021/H027",
+    "summit-announcement/H025"
+   ],
+   "problem": "Compound, and the first half cannot be seen. \"Every palette colour ... is solid at full opacity\" cannot be read from a flattened PNG: a 60% Slate tint just shows as another colour, which the hex-only check (H027 type) already catches. The useful, visible fact is the second half: no scrim or overlay on the photo. \"Gradient\" also repeats the no-effects check (H011 type).",
+   "fix": "Rewrite to the visible fact only: \"No scrim, tint or overlay of any colour, black or white included, is laid over the portrait on “Summit speaker card - Peter Vance” (speaker-card-r003.png).\" Announcement: \"...over any photograph on “Summit announcement” (summit-announcement.png).\" Leave opacity and tints to the six-hex check."
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "r002/H032",
+    "r003/H051",
+    "r005/H050",
+    "r006/H050",
+    "r007/H050",
+    "r008/H050",
+    "r009/H050",
+    "r010/H051",
+    "r011/H050",
+    "r013/H050",
+    "r014/H050",
+    "r015/H050",
+    "r016/H050",
+    "r017/H050",
+    "r018/H050",
+    "r019/H050",
+    "r020/H050",
+    "r021/H031",
+    "summit-announcement/H029"
+   ],
+   "problem": "\"Signal Copper #B06B3E and Evergreen #2C4A3B appear only as thin rules, dividers or a Copper affiliation line\" mixes two colours with different allowed uses in one sentence, and reads as if Evergreen could be \"a Copper affiliation line\". Two independent facts.",
+   "fix": "Split. Keep the existing id for Copper: \"On “Summit speaker card - Peter Vance” (speaker-card-r003.png), Signal Copper #B06B3E appears only in the affiliation line or as thin rules.\" Add a new check for Evergreen: \"On “Summit speaker card - Peter Vance” (speaker-card-r003.png), Evergreen #2C4A3B, if used, appears only as thin rules or dividers.\""
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "r003/H017",
+    "r010/H017",
+    "summit-announcement/H016",
+    "summit-announcement/H017"
+   ],
+   "problem": "The trap checks on the over-retouched PR frames combine two independent fixes (\"whitened eyes\" and \"glossy plastic skin sheen ... are toned down\") and end on the vague \"so the face reads as naturally photographed\" / \"does not read retouched\". A card can fix the skin and leave the eyes. This rewording keeps the trap fact.",
+   "fix": "Split into two checks per output. Keep the existing id for the eyes: \"Compared with speaker_portrait_02.jpg, the whites of the eyes on “Summit speaker card - Peter Vance” (speaker-card-r003.png) are less bright and whitened.\" Add a new check for the skin: \"Compared with speaker_portrait_02.jpg, the glossy plastic sheen on the skin on “Summit speaker card - Peter Vance” (speaker-card-r003.png) is reduced.\" Do the same for r010 (speaker_portrait_08.jpg, \"brightened eyes\" / \"glossy skin finish\") and for the two conditional announcement checks, keeping their \"If speaker_portrait_0X.jpg ... appears on\" lead-in."
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "summit-announcement/H018"
+   ],
+   "problem": "\"Not enlarged beyond its native 1400 x 933 pixels\" cannot be measured by eye inside a flattened 1920 x 1080 composite. The check also adds a second fact (not stretched).",
+   "fix": "Make it two observable checks. \"If venue_render.jpg appears on “Summit announcement” (summit-announcement.png), it shows no softness, blockiness or pixelation from being enlarged.\" and \"If venue_render.jpg appears on “Summit announcement” (summit-announcement.png), it is not stretched or squashed out of its own proportions.\""
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "summit-announcement/H014"
+   ],
+   "problem": "\"Reads natural and neutral in skin colour\": skin is not \"neutral\", so the word is confusing. The check also bundles \"no mixed-light cast left\" with \"no warm filter added\".",
+   "fix": "\"Any portrait on “Summit announcement” (summit-announcement.png) shows natural skin colour, with no green, warm or cool light cast left from its source photo and no warm filter added.\" Or split off the warm-filter half as its own check, to match the cards."
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "summit-announcement/H021"
+   ],
+   "problem": "\"Piazzolla's pinned small-text cut (axis at 8): wider letters and looser spacing than the font's default display cut\" uses font-engineering jargon (\"cut\", \"axis\"). With no reference rendering an annotator cannot judge it from the PNG.",
+   "fix": "\"The headline “Cascadia Founders Summit” on “Summit announcement” (summit-announcement.png) matches Piazzolla Medium at optical size 8 (wider, sturdier letters with less thick-thin contrast), not optical size 30.\" Attach a two-line specimen rendered from fonts/Piazzolla[opsz,wght].ttf at opsz 8 and opsz 30 as a reference asset (it can be built from the supplied font file)."
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "r018/H040",
+    "r019/H040",
+    "r020/H040",
+    "r021/H021"
+   ],
+   "problem": "On the four host cards the affiliation text is literally \"Cascadia Founders Summit\". The font-list exception \"apart from the CFS mark and any Piazzolla Medium summit title\" lets an annotator pass a Piazzolla affiliation as a \"summit title\", which contradicts the card's own \"affiliation ... set in Inter Regular, not Piazzolla\" check.",
+   "fix": "On host cards, word it as: \"Apart from the CFS mark and any separate summit title line, all text on “Summit host card - Jonah Pryce” (speaker-card-r021.png), the affiliation “Cascadia Founders Summit” included, is Inter Regular, Inter Medium or IBM Plex Mono.\" Same pattern for r018, r019 and r020."
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "r002/H029",
+    "r003/H047",
+    "r005/H046",
+    "r006/H046",
+    "r007/H046",
+    "r008/H046",
+    "r009/H046",
+    "r010/H047",
+    "r011/H046",
+    "r013/H046",
+    "r014/H046",
+    "r015/H046",
+    "r016/H046",
+    "r017/H046",
+    "r018/H046",
+    "r019/H046",
+    "r020/H046",
+    "r021/H028",
+    "summit-announcement/H026"
+   ],
+   "problem": "\"Both appear in the designed parts of\" uses \"designed parts\", in-house jargon a designer may not read as \"outside the photograph\".",
+   "fix": "\"Cascadia Slate #23303A and Warm Paper #F2EEE7 both appear outside the photograph on “Summit speaker card - Peter Vance” (speaker-card-r003.png).\""
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "r002/H016",
+    "r002/H017",
+    "r002/H021",
+    "r003/H010",
+    "r003/H014",
+    "r003/H019",
+    "...H013/H014/H018 on r005-r021 (see ground_range, ground_even and flash lists)",
+    "summit-announcement/H011",
+    "summit-announcement/H015"
+   ],
+   "problem": "These are wrong k_ids: about 56 checks for the sitter's ground range, the evenness of the ground and the no-direct-flash look are tagged K1_Q3. These rules come from brand_identity.palette_rules (forbidden, photography) and summit_brand_notes.txt, and the guide says brand rules are K2_Q3.",
+   "fix": "Re-tag all ground-range, ground-evenness and direct-flash checks (and the new \"original background removed\" checks) as K2_Q3 (Brand-system compliance)."
+  }
+ ],
+ "FIDELITY AND COVERAGE": [
+  {
+   "severity": "major",
+   "check_ids": [
+    "PHOTO-19/speaker-card-r002/H017",
+    "PHOTO-19/speaker-card-r003/H014",
+    "PHOTO-19/speaker-card-r005/H014",
+    "PHOTO-19/speaker-card-r006/H014",
+    "PHOTO-19/speaker-card-r007/H014",
+    "PHOTO-19/speaker-card-r008/H014",
+    "PHOTO-19/speaker-card-r009/H014",
+    "PHOTO-19/speaker-card-r010/H014",
+    "PHOTO-19/speaker-card-r011/H014",
+    "PHOTO-19/speaker-card-r013/H014",
+    "PHOTO-19/speaker-card-r014/H014",
+    "PHOTO-19/speaker-card-r015/H014",
+    "PHOTO-19/speaker-card-r016/H014",
+    "PHOTO-19/speaker-card-r017/H014",
+    "PHOTO-19/speaker-card-r018/H014",
+    "PHOTO-19/speaker-card-r019/H014",
+    "PHOTO-19/speaker-card-r020/H014",
+    "PHOTO-19/speaker-card-r021/H014",
+    "PHOTO-19/summit-announcement/H011"
+   ],
+   "problem": "The rule that every sitter has the same house ground was dropped. The 18 checks that said 'the same tone as behind the sitters on the other speaker cards' were changed to 'one soft, even, neutral tone, with no colour cast, gradient, vignette or busy texture'. That new wording only repeats the range and evenness facts already covered by B09 and B10. It no longer tests that every card uses the same tone. The source requires it twice: brand_identity.palette_rules.photography says 'the same behind every sitter', and summit_brand_notes.txt says 'Everyone should sit on the SAME house ground'. The 'why' text says the patch 'states the house-ground value', but the brand gives a range (#D9DDDE to #F2EEE7), not one value. So 18 cards could each use a different tone inside that range and every check would pass. The announcement check H011 lost 'the same ... house ground as the speaker cards' in the same way. In the coverage table, rule BR04 ('the same house ground behind every sitter') cites only these range and evenness checks on all 19 outputs, so it claims coverage that does not exist. The patch fixed head scale with a single reference card (speaker-card-r002.png) but did not do the same for the ground.",
+   "fix": "Use the head-scale approach. On the 17 cards other than r002, add (or split out of the H014 check) a K1_Q3 check: 'The ground behind the sitter on “<Name>” (speaker-card-rNNN.png) is the same tone as the ground on the fixed reference card speaker-card-r002.png.' Evidence: palette_rules.photography 'the same behind every sitter'; summit_brand_notes.txt house ground. On r002, keep H017 as the evenness check and mark the BR04 cell na ('This card is the fixed house-ground reference named in every other card check'). On summit-announcement H011, add 'and is the same tone as the ground on speaker-card-r002.png'. Point the BR04 cells at the new checks."
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "PHOTO-19/speaker-card-r002/H025",
+    "PHOTO-19/speaker-card-r021/H023",
+    "PHOTO-19/speaker-card-r002/H023",
+    "PHOTO-19/speaker-card-r021/H021"
+   ],
+   "problem": "Two retirements list covered_by H023 or H021, but those checks do not test the retired fact. The retired checks said 'any Piazzolla text has its optical-size axis set to 8'. The covering checks only say text is Inter or IBM Plex Mono 'apart from the CFS mark and any Piazzolla Medium summit title'. They allow a Piazzolla summit title on a card but never test its optical size. They also never require that a typeset summit title be Piazzolla at all, so an Inter title would pass. The retirement reason 'an axis setting cannot be read from a card PNG' contradicts summit-announcement/H021, which keeps exactly that visual opsz-8 judgement on a PNG. On the cards, the coverage cells T01 and T11 are na with the reason 'portrait cards carry no headline'. But type-scale step 01 also covers a 'summit title', and H023 itself allows one. The signature move says every summit title uses Piazzolla Medium pinned to 8.",
+   "fix": "Add a conditional K2_Q3 check on each of the 18 cards: 'If a summit title is typeset on “<Name>” (speaker-card-rNNN.png), apart from the CFS mark and the host affiliation line, it is Piazzolla Medium with the pinned small-text cut (axis at 8).' Change the covered_by on r002/H025 and r021/H023 to this new check. Cite it in the T01 and T11 cells for the cards instead of na. Alternatively, keep the cards na and cite the name-largest check (it rules out a 96 px headline), but then reword H023 so it does not allow a Piazzolla title."
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "PHOTO-19/summit-announcement/H005"
+   ],
+   "problem": "Rule D04 is the commission bullet 'Do not invent a registration URL, deadline or additional ticket offer'. Its coverage cell cites only H005, which forbids a web address, a deadline and 'a price beyond the 600 to 1,200 dollar pass range'. An invented offer inside that range would pass, for example 'Early-bird 2-for-1' or 'Group passes $900'. The 'additional ticket offer' part of the bullet has no check.",
+   "fix": "Add a K1_Q5 check: '“Summit announcement” (summit-announcement.png) offers no discount, early-bird, group or other ticket offer that is not in the brand identity.' Evidence: the commission.content bullet D04. Cite it in the D04 summit-announcement cell next to H005."
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "PHOTO-19/summit-announcement/H005",
+    "PHOTO-19/summit-announcement/H054"
+   ],
+   "problem": "The original K1_Q5 check H005 tested two things: that the line invites readers to register, and that it gives no URL, deadline or price beyond the range. The split was correct, but the invitation half moved into the new check H054 at K1_Q1. That lowers a K1_Q5 critical fact to an ordinary check.",
+   "fix": "Set H054 (key ann-register-line) to k_id K1_Q5, so both halves of the original critical check stay critical."
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "PHOTO-19/summit-announcement/H055"
+   ],
+   "problem": "Rule BR07 ('Use cfs_mark_transparent.svg for the CFS mark') is na on the announcement because 'the CFS mark is not required'. The colour of the mark is checked conditionally (H055), but nothing checks that a CFS mark used there is the supplied artwork, unchanged and inside the frame. The brief's 'Use cfs_mark_transparent.svg for the CFS mark' applies wherever the mark appears. BR07b is na on the announcement for the same reason.",
+   "fix": "Add a K2_Q2 check: 'If a CFS mark appears on “Summit announcement” (summit-announcement.png), it is the supplied cfs_mark_transparent.svg artwork, unchanged and fully inside the image.' Cite it in the BR07 and BR07b summit-announcement cells instead of na."
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "PHOTO-19/speaker-card-r002/H032"
+   ],
+   "problem": "Rule B07 includes the cap 'together no more than 5% of the designed, non-photographic area'. All 19 cited checks, such as the accents check H032 on r002 and its counterparts on the other outputs, test only where Signal Copper and Evergreen appear (as thin rules, dividers or a Copper affiliation line), not how much of the area they take. The cap is part of the rule's text but has no test.",
+   "fix": "Add 'and together cover no more than about 5% of the designed, non-photo area' to the accents check on all 19 outputs. If annotators cannot judge that, remove the 5% clause from the B07 rule text and note why."
+  },
+  {
+   "severity": "minor",
+   "check_ids": [],
+   "problem": "The coverage rule list is missing a checkable type rule: type_system.rules[0] 'Use the same name, role, affiliation and session settings on the fourteen speaker cards and four host cards.' It is also missing the scale-01 note 'Do not add a 96 px summit headline to a portrait card'. The per-card checks do enforce both: each role's family and weight check, and the name-largest check. But the coverage table does not show this.",
+   "fix": "Add a type rule (e.g. T12) with the exact text of rules[0]. On each card, cite the name, role, affiliation and session family checks (e.g. r018: H019, H023, H027, H031). Mark the announcement na ('No portrait-card text set appears on the announcement'). Add the 96 px note to T02b or as its own rule, citing the name-largest check on each card."
+  }
+ ],
+ "repair": {
+  "fixed": [
+   "Same house ground was dropped (L1 major). Brand source: palette_rules.photography 'the same behind every sitter' and summit_brand_notes.txt 'Everyone should sit on the SAME house ground'. Added a K2_Q3 same-tone check on 17 cards (new:rNNN-ground-same) against one named reference, “Summit speaker card - Ines Moreau” (speaker-card-r005.png). Added a conditional same-tone check on the announcement (new:ann-ground-same). BR04 now cites these checks. The r005 cell is na because r005 is the reference.",
+   "Head scale (L2 major): the reference moved from the editorial outlier r002 (speaker_portrait_01.jpg, 'a different starting point from the rest') to r005, a typical untouched office frame. The reference is now named as “Name” (file). The wording is now 'neither visibly larger nor smaller in frame than'. r002/H018 is back on (modified, no longer retired). r005/H015 is retired as the self-reference. The B11 cell for r005 is na.",
+   "Ground range check split on all 18 cards (L2 major). The existing id keeps the tone between Fog Grey #D9DDDE and Warm Paper #F2EEE7. A new check per card says no part of the original background of <photo> remains (new:rNNN-bg-gone). The announcement gets the same split: H011 for the range, plus new:ann-bg-gone.",
+   "Evenness check (H014 type, all 18 cards, and the new announcement check) now reads 'one flat, even tone, with no gradient, vignette, pattern or texture'. 'Soft', 'neutral' and 'no colour cast' were removed because they conflicted with Warm Paper.",
+   "Card retirements of Piazzolla opsz (r002/H025, r021/H023) and of 'Any line set in Piazzolla' (r002/H024, r021/H022) had a wrong covered_by. Added one conditional summit-title check on each of the 18 cards: 'If a separate summit title appears on X, it is Piazzolla Medium in its small-text design (axis 8: wider, lower contrast), not the default design'. An Inter title, or a title at the default size-30 design, fails it. The retirements now point to it. Card cells T01 and T11 cite it instead of na. The font's fvar was checked: opsz runs 8 to 30 and the default is 30.",
+   "Faces check on every card now says 'apart from the CFS mark and any separate summit title'. On the 4 host cards it also says 'the affiliation included', so the 'Cascadia Founders Summit' affiliation cannot pass as a Piazzolla title (L2 host-card finding).",
+   "D04 'additional ticket offer' had no check: added new:ann-no-offer (K1_Q5), 'invents no ticket offer: no discount, early-bird, group or bundle pass'. Cited in the D04 announcement cell with H005.",
+   "The invitation check split out of the old K1_Q5 check (ann-register-line, now H054) is retagged from K1_Q1 to K1_Q5, so neither half of the old critical check is weakened.",
+   "BR07 and BR07b on the announcement were na. Added two conditional checks: the mark is the supplied cfs_mark_transparent.svg artwork, unchanged (K2_Q2), and it stays fully inside the image (K1_Q1). Both cells now cite them.",
+   "The B07 5% cap had no check. Added on all 19 outputs: 'Signal Copper and Evergreen together cover no more than about 5% of the area outside the photograph'.",
+   "Accent check split on all 19 outputs. The existing id now says Signal Copper appears only in the affiliation line or as thin rules. A new check per output says Evergreen, if used, appears only as thin rules or dividers.",
+   "Type-colour check split on all 19 outputs. The existing id now covers type on Warm Paper: Near Black, except the affiliation line, which may be Signal Copper. A new check per output says type on Cascadia Slate is Warm Paper or Fog Grey.",
+   "Opacity check on all 19 outputs now states only the visible fact: 'No scrim, tint or overlay of any colour, black or white included, is laid over the portrait/any photograph'. The B03 cells also cite the six-hex check, which catches tints.",
+   "Mandatory-colour check on all 19 outputs now says 'outside the photograph' instead of 'designed parts'.",
+   "Retouch trap checks split. On r003 and r010 the existing id now covers the eyes against the card's own source photo, and new:rNNN-retouch-skin covers the skin sheen or finish. On the announcement, H016/H017 keep the eyes and new conditional checks cover skin for portraits 02 and 08. The trap facts are unchanged.",
+   "Announcement H014 now reads 'shows natural skin colour, with no green, warm or cool light cast left from its source photo and no warm filter added'. The word 'neutral' is gone.",
+   "Announcement H021 opsz now names the headline and reads 'matches Piazzolla Medium's small-text design (axis 8: wider, sturdier letters, less thick-thin contrast), not its default display design'. The validator forbids the words 'optical size' on raster outputs, so this wording avoids them.",
+   "Coverage: added T12 (type_system.rules[0], the same settings on 14 speaker and 4 host cards). Each card cites its name, role, affiliation and session face checks plus the role-larger check; the announcement is na. Added T13 ('Do not add a 96 px summit headline to a portrait card'), citing the name-largest check on each card; the announcement is na.",
+   "k_id: the ground range, evenness, background-removed, same-tone, head-scale and direct-flash checks on all cards and on the announcement are now K2_Q3 instead of K1_Q3. They come from palette_rules and summit_brand_notes.txt."
+  ],
+  "rejected": [
+   {
+    "finding": "L1 major fix detail: use speaker-card-r002.png as the fixed house-ground reference and mark r002 BR04 na",
+    "why": "Not adopted as written. L2 points out that r002's source is the planned outlier: the asset plan says speaker_portrait_01.jpg is 'a different starting point from the rest'. So the reference for both ground and head is r005 (speaker_portrait_03.jpg, 'office frame, window daylight ... untouched'). The intent of the L1 fix, a single named same-tone reference, is fully applied."
+   },
+   {
+    "finding": "L2 venue_render H018: 'not enlarged beyond its native 1400 x 933 pixels cannot be measured by eye'; replace with softness/pixelation only",
+    "why": "Partly rejected. Guarding the native size is the planned trap ('only 1400px so it could not carry a programme opener anyway'), and the guide says not to weaken trap checks. The reworded check keeps that fact and names the visible sign: 'is not scaled up beyond its native 1400 x 933 pixels, so it shows no upscaling softness or pixelation'. The stretch fact was split into a new check, new:ann-venue-proportions."
+   },
+   {
+    "finding": "L1 summit-title fix: separate conditional Piazzolla-face check and opsz check (two per card)",
+    "why": "Merged into one conditional check per card, to keep the volume down (18 checks instead of 36). One target appearance, Piazzolla Medium in its axis-8 small-text design, fails both an Inter title and a title at the default design, so a separate face check would be redundant."
+   }
+  ],
+  "unresolved": [
+   "The announcement H021 and the 18 card summit-title checks would be easier to judge with a two-line specimen of Piazzolla Medium at opsz 8 and opsz 30. reference_assets may only list existing task assets, so they point to fonts/Piazzolla[opsz,wght].ttf. A specimen asset would need to be added to the task's assets upstream.",
+   "All 17 same-tone checks and 17 head-scale checks, plus the announcement same-tone check, are anchored on speaker-card-r005.png. If r005 is itself off, every comparison fails while r005 passes. This is inherent to the guide's 'one named reference' allowance. The only alternative is to retire the sameness rule as not atomically checkable.",
+   "The 5% accent cap is a rough visual estimate ('no more than about 5%'). The reviewers accepted this, but annotators may disagree on borderline cases.",
+   "Volume: human checks are 750 after the repair (629 before it, 783 originally). The increase comes from the atomic splits and holes the reviewers asked for. 18 warnings remain for 31-word summit-title checks, below the 40-word limit.",
+   "Files: patch at /Users/dhiren/Documents/ChatGPT/Adobe_Gpt/reviews/pilot13-ab-fixes-2026-10-21/patches/PHOTO-19.json; coverage at .../coverage/PHOTO-19.json; generator at .../work/PHOTO-19/build.py; pre-repair backups at .../work/PHOTO-19/build_v1_before_repair.py, patch_v1_before_repair.json and coverage_v1_before_repair.json; post-patch view at .../work/PHOTO-19/patched_view.txt."
+  ]
+ }
+}

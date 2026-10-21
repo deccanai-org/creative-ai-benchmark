@@ -11,8 +11,7 @@ File: `deliverables/speaker-onepager.pdf`
 - Specification: {"format": "pdf", "width_mm": 210, "height_mm": 297, "pages": 1}
 - Include the approved factual biography and talk titles with their one-line subjects verbatim from vellacourt_bio_copy.txt.
 - Show the supplied booking sign-off Astrid Vellacourt - Vellacourt & Sund clearly.
-- Export: Digital PDF in sRGB with embedded fonts, searchable text where practical, no crop marks and no added bleed; retain the exact page size and page count.
-- Export: This file is for screen review/distribution, not a CMYK press master.
+- Export: Digital PDF in sRGB with embedded fonts, searchable text where practical, no crop marks and no added bleed; retain the exact page size and page count. This file is for screen review/distribution, not a CMYK press master.
 
 ## Confirmed-talk speaker announcement - Northlight Design Forum - Designing the thing before the deck
 File: `deliverables/event-announcement-r002.png`
@@ -86,8 +85,7 @@ File: `deliverables/talk-card-r002.pdf`
 - Specification: {"format": "pdf", "width_mm": 105.156, "height_mm": 148.167, "pages": 1, "template_reference": "vellacourt_speakercard_template.pdf"}
 - Include the talk title, event, date and format from the assigned record.
 - The combined PDF contains the eight individual cards in roster order; individual files contain only their assigned card.
-- Export: Digital PDF in sRGB with embedded fonts, searchable text where practical, no crop marks and no added bleed; retain the exact page size and page count.
-- Export: This file is for screen review/distribution, not a CMYK press master.
+- Export: Digital PDF in sRGB with embedded fonts, searchable text where practical, no crop marks and no added bleed; retain the exact page size and page count. This file is for screen review/distribution, not a CMYK press master.
 
 ## Speaker talk card - Made & Kept - Six people, one hand
 File: `deliverables/talk-card-r003.pdf`
@@ -98,8 +96,7 @@ File: `deliverables/talk-card-r003.pdf`
 - Specification: {"format": "pdf", "width_mm": 105.156, "height_mm": 148.167, "pages": 1, "template_reference": "vellacourt_speakercard_template.pdf"}
 - Include the talk title, event, date and format from the assigned record.
 - The combined PDF contains the eight individual cards in roster order; individual files contain only their assigned card.
-- Export: Digital PDF in sRGB with embedded fonts, searchable text where practical, no crop marks and no added bleed; retain the exact page size and page count.
-- Export: This file is for screen review/distribution, not a CMYK press master.
+- Export: Digital PDF in sRGB with embedded fonts, searchable text where practical, no crop marks and no added bleed; retain the exact page size and page count. This file is for screen review/distribution, not a CMYK press master.
 
 ## Speaker talk card - Fjordworks Summit - On staying small on purpose
 File: `deliverables/talk-card-r004.pdf`
@@ -110,8 +107,7 @@ File: `deliverables/talk-card-r004.pdf`
 - Specification: {"format": "pdf", "width_mm": 105.156, "height_mm": 148.167, "pages": 1, "template_reference": "vellacourt_speakercard_template.pdf"}
 - Include the talk title, event, date and format from the assigned record.
 - The combined PDF contains the eight individual cards in roster order; individual files contain only their assigned card.
-- Export: Digital PDF in sRGB with embedded fonts, searchable text where practical, no crop marks and no added bleed; retain the exact page size and page count.
-- Export: This file is for screen review/distribution, not a CMYK press master.
+- Export: Digital PDF in sRGB with embedded fonts, searchable text where practical, no crop marks and no added bleed; retain the exact page size and page count. This file is for screen review/distribution, not a CMYK press master.
 
 ## Speaker talk card - Fjordworks Summit - The room after the round
 File: `deliverables/talk-card-r005.pdf`
@@ -122,8 +118,7 @@ File: `deliverables/talk-card-r005.pdf`
 - Specification: {"format": "pdf", "width_mm": 105.156, "height_mm": 148.167, "pages": 1, "template_reference": "vellacourt_speakercard_template.pdf"}
 - Include the talk title, event, date and format from the assigned record.
 - The combined PDF contains the eight individual cards in roster order; individual files contain only their assigned card.
-- Export: Digital PDF in sRGB with embedded fonts, searchable text where practical, no crop marks and no added bleed; retain the exact page size and page count.
-- Export: This file is for screen review/distribution, not a CMYK press master.
+- Export: Digital PDF in sRGB with embedded fonts, searchable text where practical, no crop marks and no added bleed; retain the exact page size and page count. This file is for screen review/distribution, not a CMYK press master.
 
 ## Speaker talk card - Halden Design Days - From sketch to tooling
 File: `deliverables/talk-card-r006.pdf`
@@ -134,8 +129,7 @@ File: `deliverables/talk-card-r006.pdf`
 - Specification: {"format": "pdf", "width_mm": 105.156, "height_mm": 148.167, "pages": 1, "template_reference": "vellacourt_speakercard_template.pdf"}
 - Include the talk title, event, date and format from the assigned record.
 - The combined PDF contains the eight individual cards in roster order; individual files contain only their assigned card.
-- Export: Digital PDF in sRGB with embedded fonts, searchable text where practical, no crop marks and no added bleed; retain the exact page size and page count.
-- Export: This file is for screen review/distribution, not a CMYK press master.
+- Export: Digital PDF in sRGB with embedded fonts, searchable text where practical, no crop marks and no added bleed; retain the exact page size and page count. This file is for screen review/distribution, not a CMYK press master.
 
 ## Speaker talk card - The Bench Sessions - Designing for the next hands
 File: `deliverables/talk-card-r007.pdf`
@@ -146,8 +140,7 @@ File: `deliverables/talk-card-r007.pdf`
 - Specification: {"format": "pdf", "width_mm": 105.156, "height_mm": 148.167, "pages": 1, "template_reference": "vellacourt_speakercard_template.pdf"}
 - Include the talk title, event, date and format from the assigned record.
 - The combined PDF contains the eight individual cards in roster order; individual files contain only their assigned card.
-- Export: Digital PDF in sRGB with embedded fonts, searchable text where practical, no crop marks and no added bleed; retain the exact page size and page count.
-- Export: This file is for screen review/distribution, not a CMYK press master.
+- Export: Digital PDF in sRGB with embedded fonts, searchable text where practical, no crop marks and no added bleed; retain the exact page size and page count. This file is for screen review/distribution, not a CMYK press master.
 
 ## Speaker talk card - Continuum Product Days - What survives contact with a factory
 File: `deliverables/talk-card-r008.pdf`
@@ -158,8 +151,7 @@ File: `deliverables/talk-card-r008.pdf`
 - Specification: {"format": "pdf", "width_mm": 105.156, "height_mm": 148.167, "pages": 1, "template_reference": "vellacourt_speakercard_template.pdf"}
 - Include the talk title, event, date and format from the assigned record.
 - The combined PDF contains the eight individual cards in roster order; individual files contain only their assigned card.
-- Export: Digital PDF in sRGB with embedded fonts, searchable text where practical, no crop marks and no added bleed; retain the exact page size and page count.
-- Export: This file is for screen review/distribution, not a CMYK press master.
+- Export: Digital PDF in sRGB with embedded fonts, searchable text where practical, no crop marks and no added bleed; retain the exact page size and page count. This file is for screen review/distribution, not a CMYK press master.
 
 ## Speaker talk card - Grain & Frame Forum - What a small studio can promise
 File: `deliverables/talk-card-r009.pdf`
@@ -170,8 +162,7 @@ File: `deliverables/talk-card-r009.pdf`
 - Specification: {"format": "pdf", "width_mm": 105.156, "height_mm": 148.167, "pages": 1, "template_reference": "vellacourt_speakercard_template.pdf"}
 - Include the talk title, event, date and format from the assigned record.
 - The combined PDF contains the eight individual cards in roster order; individual files contain only their assigned card.
-- Export: Digital PDF in sRGB with embedded fonts, searchable text where practical, no crop marks and no added bleed; retain the exact page size and page count.
-- Export: This file is for screen review/distribution, not a CMYK press master.
+- Export: Digital PDF in sRGB with embedded fonts, searchable text where practical, no crop marks and no added bleed; retain the exact page size and page count. This file is for screen review/distribution, not a CMYK press master.
 
 ## Speaker talk card - combined production run
 File: `deliverables/talk-card-combined.pdf`
@@ -182,5 +173,4 @@ File: `deliverables/talk-card-combined.pdf`
 - Specification: {"format": "pdf", "pages": 8, "width_mm": 105.156, "height_mm": 148.167}
 - Include the talk title, event, date and format from the assigned record.
 - The combined PDF contains the eight individual cards in roster order; individual files contain only their assigned card.
-- Export: Digital PDF in sRGB with embedded fonts, searchable text where practical, no crop marks and no added bleed; retain the exact page size and page count.
-- Export: This file is for screen review/distribution, not a CMYK press master.
+- Export: Digital PDF in sRGB with embedded fonts, searchable text where practical, no crop marks and no added bleed; retain the exact page size and page count. This file is for screen review/distribution, not a CMYK press master.

@@ -1,0 +1,312 @@
+{
+ "LANGUAGE, ATOMICITY AND OBSERVABILITY": [
+  {
+   "severity": "major",
+   "check_ids": [
+    "PHOTO-20/talk-card-r002/H038",
+    "PHOTO-20/talk-card-r002/H039",
+    "PHOTO-20/talk-card-r002/H041",
+    "PHOTO-20/talk-card-r002/H048",
+    "PHOTO-20/talk-card-r002/H049",
+    "PHOTO-20/talk-card-r003..r009/H038,H039,H041,H048,H049",
+    "PHOTO-20/speaker-onepager/H038",
+    "PHOTO-20/speaker-onepager/H039",
+    "PHOTO-20/speaker-onepager/H041",
+    "PHOTO-20/speaker-onepager/H044",
+    "PHOTO-20/speaker-onepager/H045",
+    "PHOTO-20/speaker-onepager/H037"
+   ],
+   "problem": "45 human checks still ask for exact leading and tracking on the live-text PDFs, for example 'tracked +30 units (0.030 em)', 'tracked -5 units', 'sit 13 pt apart, baseline to baseline' and 'carry no added tracking (0 units)'. You cannot see a tracking value in thousandths of an em, or a baseline gap in points, just by looking at the PDF, and pdf_text_style cannot test either one. The patch removed the same kind of check from the PNGs but left them on the PDFs. Onepager H037 ('set at 34 pt') is also an exact size that a person has to judge without help. It was kept on purpose because a text-match auto check could hit the wrong 'Astrid Vellacourt' line.",
+   "fix": "Retire each one with why 'exact tracking/leading cannot be judged by eye on a PDF; family and size are checked by code'. Talk cards: H038 and H039 covered_by new A012 (talk-card-rNNN-style-name); H041 covered_by A013 and H052; H048 and H049 covered_by A014, A015 and A016. Onepager: H038 and H039 covered_by H005 and H007; H041 covered_by A008, A009 and A010; H044 and H045 covered_by A011 to A015. For onepager H037, either keep it and note that annotators need Acrobat's text inspector, or retire it covered_by H005 and H007, where H007 states the visible relationship that the name is the largest text."
+  },
+  {
+   "severity": "major",
+   "check_ids": [
+    "PHOTO-20/event-announcement-r002/H056",
+    "PHOTO-20/event-announcement-r003/H056",
+    "PHOTO-20/event-announcement-r008/H056",
+    "PHOTO-20/event-banner-r002/H054",
+    "PHOTO-20/event-banner-r003/H054",
+    "PHOTO-20/event-banner-r008/H054"
+   ],
+   "problem": "These are new human checks that say 'The AV monogram ... is at least 69 px wide.' This is an exact pixel measurement on a PNG, which the guide says a person cannot judge by eye, and the validator warns on all six. The type scale gives no visible relationship that could stand in for it.",
+   "fix": "Do not add these six checks. In coverage, mark the minimum-size rule cell for each PNG as na: 'Minimum pixel width on a PNG cannot be judged by eye; the rule is stated in mm for the PDFs.' If the team wants a visible guard, use one fact such as: 'The AV monogram on “…” (event-banner-r002.png) is large enough that its shared hairline diagonal is clearly visible.' Flag that wording as a judgement call."
+  },
+  {
+   "severity": "major",
+   "check_ids": [
+    "PHOTO-20/event-announcement-r002/H020",
+    "PHOTO-20/event-announcement-r003/H020",
+    "PHOTO-20/event-announcement-r008/H020",
+    "PHOTO-20/event-banner-r002/H018",
+    "PHOTO-20/event-banner-r003/H018",
+    "PHOTO-20/event-banner-r008/H018",
+    "PHOTO-20/speaker-onepager/H021"
+   ],
+   "problem": "'Not enlarged beyond its native 1300 x 975 px' (on the PNGs) and 'embedded at no more than its native 1300 x 975 px' (on the PDF) ask for a resolution comparison that nobody can make by looking at the output. These checks guard the vellacourt_workshop_snap.jpg low-resolution trap, so they must stay, but they need to be stated as something a person can see.",
+   "fix": "Keep the same fact and write it as its visible result. PNGs: 'If vellacourt_workshop_snap.jpg appears on “…” (event-banner-r002.png), it shows no blur, softness or blocky pixels from being enlarged.' Onepager H021: 'If vellacourt_workshop_snap.jpg appears on “Speaker booking one-pager” (speaker-onepager.pdf), it shows no blur, softness or blocky pixels at 100% zoom.'"
+  },
+  {
+   "severity": "major",
+   "check_ids": [
+    "PHOTO-20/talk-card-r002..r009/H020",
+    "PHOTO-20/talk-card-r002..r009/H040",
+    "PHOTO-20/talk-card-r002..r009/H027",
+    "PHOTO-20/talk-card-r002/H005",
+    "PHOTO-20/talk-card-r003..r009/H003",
+    "PHOTO-20/speaker-onepager/H040",
+    "PHOTO-20/speaker-onepager/H028"
+   ],
+   "problem": "Some human family checks repeat the new pdf_text_style auto checks on the same file. Talk-card H020 ('name ... Instrument Serif Regular') repeats A012. H040 ('talk title ... Inter Medium') repeats A013. H027 ('event name, date and format ... Inter Regular, not Helvetica Neue') repeats A014, A015 and A016. The 'speaker name appears' check (r002 H005, r003 to r009 H003) is implied by A012, which matches the text 'Astrid Vellacourt'. On the onepager, H040 repeats A008 to A010, and H028 repeats A012 to A015 for the contact and subjects. That is 40 or more redundant human checks, against the 'one check per role per output' rule.",
+   "fix": "Retire talk-card H020 covered_by A012, H040 covered_by A013, H027 covered_by A014, A015 and A016, and the speaker-name presence check covered_by A012. Move the retired H046 entries that point to H027 so they point to A014 to A016. Retire onepager H040 covered_by A008, A009 and A010. Change onepager H028 to: 'The whole biography on “Speaker booking one-pager” (speaker-onepager.pdf) is set in Inter Regular.'"
+  },
+  {
+   "severity": "major",
+   "check_ids": [
+    "PHOTO-20/event-banner-r002/H033",
+    "PHOTO-20/event-banner-r003/H033",
+    "PHOTO-20/event-banner-r008/H033",
+    "PHOTO-20/talk-card-r002..r009/H031"
+   ],
+   "problem": "Each of these is a compound check with two independent colour facts joined by a semicolon: '...her name and talk title ... are Vellacourt Ink; the event and date are Ink or Studio Slate.' It also uses short names ('Ink') with no hex, while the other colour checks give hexes.",
+   "fix": "Change to: 'On Warm Neutral or Bone, her name and the talk title on “…” (talk-card-r002.pdf) are Vellacourt Ink #262524.' Add as a separate check (K2_Q3): 'On Warm Neutral or Bone, the event name and date on “…” (talk-card-r002.pdf) are Vellacourt Ink #262524 or Studio Slate #4C5560.' Use the same split on the three banners."
+  },
+  {
+   "severity": "major",
+   "check_ids": [
+    "PHOTO-20/talk-card-r002/H006",
+    "PHOTO-20/talk-card-r003/H005",
+    "PHOTO-20/talk-card-r004/H005",
+    "PHOTO-20/talk-card-r005/H005",
+    "PHOTO-20/talk-card-r006/H005",
+    "PHOTO-20/talk-card-r008/H005",
+    "PHOTO-20/talk-card-r009/H005"
+   ],
+   "problem": "This compound check is phrased as 'follows the template'. '“…” follows vellacourt_speakercard_template.pdf: one portrait, with the talk title, event and date in one text block below it' holds two facts: a single portrait, and one text block below it. It is also 31 to 32 words long. Its k_id is K2_Q2 (Asset preservation), but this is a layout fact. r007 H005 is already the one-fact form.",
+   "fix": "Change to (K2_Q3): 'The talk title, event and date on “…” (talk-card-r003.pdf) sit together in one text block below the portrait.' Add (K1_Q1): '“…” (talk-card-r003.pdf) carries exactly one portrait.' Keep vellacourt_speakercard_template.pdf in reference_assets and leave it out of the check text."
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "PHOTO-20/speaker-onepager/H027",
+    "PHOTO-20/event-announcement-r002/H030",
+    "PHOTO-20/event-announcement-r003/H030",
+    "PHOTO-20/event-announcement-r008/H030",
+    "PHOTO-20/event-banner-r002/H028",
+    "PHOTO-20/event-banner-r003/H028",
+    "PHOTO-20/event-banner-r008/H028",
+    "PHOTO-20/talk-card-r002..r009/H026"
+   ],
+   "problem": "'Apart from her name, every heading ... is Inter Regular or Medium, not a serif' is vague. These outputs have no defined 'heading' role, and on the talk cards the only other heading is the talk title, which already has its own check. The brand rule is stated differently: Instrument Serif is for her name and the AV monogram only.",
+   "fix": "Change to: 'Apart from her name and the AV monogram, no text on “…” (talk-card-r002.pdf) is set in a serif.' Use the same wording on all 15 outputs."
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "PHOTO-20/event-announcement-r002/H031",
+    "PHOTO-20/event-announcement-r002/H044",
+    "PHOTO-20/event-announcement-r003/H031",
+    "PHOTO-20/event-announcement-r003/H044",
+    "PHOTO-20/event-announcement-r008/H031",
+    "PHOTO-20/event-announcement-r008/H044"
+   ],
+   "problem": "Two checks can contradict each other here. The approved body line contains the talk title ('I'm speaking at ... Designing the thing before the deck.'). H031 says the body line is Inter Regular. H044 says 'If the talk title has its own line ... it is Inter Medium'. A designer cannot tell which weight applies when the title appears only inside the body line, even though the type scale says the talk title on the six PNGs is Inter Medium.",
+   "fix": "Change H044 to: 'The talk title “Designing the thing before the deck” on “…” (event-announcement-r002.png) is set in Inter Medium.' Change H031 to: 'Apart from the talk title, the body line and sign-off on “…” (event-announcement-r002.png) are set in Inter Regular.'"
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "PHOTO-20/talk-card-combined/H001"
+   ],
+   "problem": "This check compares every page with page 1. It also packs four elements (monogram, name, text block, portrait) and two properties (position, size) into one check. A004 to A011 already confirm by code that each page looks identical to its own single card, so the check is redundant as well as compound.",
+   "fix": "Retire it covered_by A004, A005, A006, A007, A008, A009, A010 and A011, with why 'each page is matched by code to its own single card; cross-page comparison removed'. Leave the T10 coverage cell on A004 to A011."
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "PHOTO-20/speaker-onepager/H020",
+    "PHOTO-20/talk-card-r007/H019"
+   ],
+   "problem": "This is a compound conditional with a semicolon or colon: 'shows no blue cast: if vellacourt_session_03.jpg is used, its cool cast is corrected to the warmer balance of vellacourt_session_01.jpg'. It states the general fact and the session_03 trap fact as two clauses.",
+   "fix": "Use one fact and keep the trap guard: 'If vellacourt_session_03.jpg is used on “…” (talk-card-r007.pdf), its blue cast is corrected so her skin looks as warm as in vellacourt_session_01.jpg.' The general colour fact is already covered by H019 (onepager) and H017 (r007)."
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "PHOTO-20/speaker-onepager/H012"
+   ],
+   "problem": "Two facts in one check: 'set together as one block' and 'with nothing covering or blocking it'.",
+   "fix": "Change to: 'The three talks on “Speaker booking one-pager” (speaker-onepager.pdf) are grouped in one talk-offer block.' Add (K1_Q1): 'No image, panel or text covers any part of the talk offer on “Speaker booking one-pager” (speaker-onepager.pdf).'"
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "PHOTO-20/event-announcement-r00x/H028",
+    "PHOTO-20/event-banner-r00x/H026",
+    "PHOTO-20/talk-card-r002..r009/H024",
+    "PHOTO-20/speaker-onepager/H025"
+   ],
+   "problem": "On the PNGs, 'solid Ochre #B98A4B, with no foil, emboss, bevel or shadow' joins a colour fact to an effects list that the H039/H037 check on the same file already covers ('No gold foil, metallic, gloss, bevel, glow or drop shadow ... on the monogram'). On the PDFs, 'not a grey or embossed imitation of a blind press' is jargon a designer may not follow.",
+   "fix": "Announcements H028 and banners H026: 'The AV monogram on “…” (event-banner-r002.png) is solid Ochre #B98A4B.' Talk cards H024 and onepager H025: 'The AV monogram on “…” (talk-card-r002.pdf) is solid Ochre #B98A4B, not grey and not embossed.'"
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "PHOTO-20/speaker-onepager/H034",
+    "PHOTO-20/event-announcement-r00x/H038",
+    "PHOTO-20/event-banner-r00x/H036",
+    "PHOTO-20/talk-card-r002..r009/H034"
+   ],
+   "problem": "'Solid colour, not translucent or graded' is unclear. In this check set, 'graded' already means a photo colour grade (H019: 'no heavy filter, colour grade'), so a reader may not take it as 'gradient'.",
+   "fix": "Change to: 'All type, grounds and panels on “…” (talk-card-r002.pdf) are solid colour, with no transparency or gradient.'"
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "PHOTO-20/event-announcement-r00x/H013+H014",
+    "PHOTO-20/event-banner-r002/H002+H012",
+    "PHOTO-20/event-banner-r003/H002+H006",
+    "PHOTO-20/event-banner-r008/H002+H013",
+    "PHOTO-20/talk-card-r002..r005,r008,r009/H013+H014",
+    "PHOTO-20/talk-card-r006/H014+H015"
+   ],
+   "problem": "Near-duplicates on the same output. The K2_Q1 check ('built from vellacourt_session_02.jpg, the frame row 2 assigns') and the K2_Q2 check ('is the photograph vellacourt_session_02.jpg, not a regenerated or repainted face') both state which file is the source.",
+   "fix": "Keep the K2_Q1 check as it is. Change the K2_Q2 check so it holds only the preservation fact: 'The face in the portrait on “…” (talk-card-r002.pdf) is the original photograph, not regenerated or repainted.'"
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "PHOTO-20/talk-card-r002..r009/H010",
+    "PHOTO-20/talk-card-r002..r009/H012"
+   ],
+   "problem": "Near-duplicates. H010 says the mark is the 'supplied mark ..., not a retyped or redrawn AV', and H012 says it is 'not the side-by-side Georgia Bold “AV” lettering of vellacourt_speakercard_template.pdf'. If H010 passes, H012 passes too.",
+   "fix": "Change H010 to: 'The AV monogram on “…” (talk-card-r002.pdf) is the supplied mark from vellacourt_av_transparent.png, not the template's Georgia Bold “AV” or any retyped AV.' Retire H012 covered_by H010; the template trap fact is kept."
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "PHOTO-20/talk-card-r002..r009/H053",
+    "PHOTO-20/speaker-onepager/H011",
+    "PHOTO-20/speaker-onepager/H004"
+   ],
+   "problem": "Wording issues. H053 names colours without hexes ('Warm Neutral, Bone, Deep Ground or Vellacourt Ink, not Studio Slate, Ochre or white'), while the other colour checks on the same file give hexes. Onepager H011 is 32 words and repeats the subject strings that A013 to A015 already check. Onepager H004 points to 'as her sign-off gives it' rather than to a supplied file.",
+   "fix": "H053: 'Every panel on “…” (talk-card-r002.pdf) is Warm Neutral #E8E1D6, Bone #F4EFE7, Deep Ground #16171A or Vellacourt Ink #262524.' H011: 'Each talk title on “Speaker booking one-pager” (speaker-onepager.pdf) is followed by its own subject line from vellacourt_bio_copy.txt.' H004: '...reads “Astrid Vellacourt - Vellacourt & Sund”, as in vellacourt_bio_copy.txt.'"
+  }
+ ],
+ "FIDELITY AND COVERAGE": [
+  {
+   "severity": "major",
+   "check_ids": [
+    "PHOTO-20/talk-card-combined/H002",
+    "coverage B11: talk-card-r006, talk-card-r009"
+   ],
+   "problem": "The coverage table marks B11 as na on talk-card-r006 and talk-card-r009 because \"vellacourt_session_08.jpg / vellacourt_session_09.jpg is a warm first-half frame with no cool cast\". That is false. asset_plan.json lists session_06 to 09 as frames shot AFTER the key light was moved. Measured mean R minus B is 4.4 for 08 and 5.7 for 09, against 11.0 for the session_01 house-look frame, so both are cooler and darker. The only check for warm, consistent colour balance is the modified combined H002 (\"keeps the warm colour balance of vellacourt_session_01.jpg; none reads cooler, bluer or greyer\"), and it now fails on pages 5 and 8. A005 to A011 prove those pages are pixel-identical to talk-card-r006.pdf and talk-card-r009.pdf, yet the single files have no matching check. The fact lives on the combined file only, which reverses the per-file rule and leaves two cell reasons factually wrong.",
+   "fix": "Add a K2_Q4 check to r006 and to r009: \"The portrait on “Speaker talk card - Halden Design Days - From sketch to tooling” (talk-card-r006.pdf) keeps the warm colour balance of vellacourt_session_01.jpg; it does not read cooler, bluer or greyer.\" Use the same wording for “Speaker talk card - Grain & Frame Forum - What a small studio can promise” (talk-card-r009.pdf), with reference_assets vellacourt_session_01.jpg and session_08 or session_09. Cite the new checks in B11 for r006 and r009. For the remaining na cells (r002 to r005, r008, banners, announcements), change the reason to \"The assigned frame vellacourt_session_0X.jpg is a first-half warm frame, not the cool vellacourt_session_03.jpg; natural colour is checked by H019.\" You may then retire combined H002 with covered_by the per-card checks, since A008 and A011 carry the fact across."
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "PHOTO-20/event-announcement-r002/H044",
+    "PHOTO-20/event-announcement-r003/H044",
+    "PHOTO-20/event-announcement-r008/H044",
+    "retired PHOTO-20/event-announcement-r00X/H045",
+    "retired PHOTO-20/event-announcement-r00X/H053"
+   ],
+   "problem": "On the announcements, the 64 px talk-title size (H045) is retired with covered_by H044. H044 is a conditional family check (\"If the talk title has its own line... it is Inter Medium\") and says nothing about size, so covered_by does not cover the fact. The guide asks for one relative check where the scale implies a visible relationship. The scale gives a 64 px title against a 28 px event and date line on all six PNGs, and the banners got one (H010/H011, title is the largest text), but the announcements did not. As a result, T02 on all three announcements is covered only by a conditional family check. In the same way, the event/date size check H053 is retired with covered_by the family check H052, when the relative check H011 or H008 (name larger than date) is the real cover.",
+   "fix": "Add one check per announcement, K5_Q2: \"If the talk title has its own line on “Confirmed-talk speaker announcement - Northlight Design Forum - Designing the thing before the deck” (event-announcement-r002.png), it is set larger than the date “14 Feb 2026”.\" Do the same for r003 (date “2026-03-03”) and r008 (date “May 9”). Point retired H045 covered_by to H044 plus the new check, and H053 covered_by to H052 plus H011 (r003: H008). Cite the new check in T02 for each announcement."
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "PHOTO-20/event-announcement-r002/H035",
+    "PHOTO-20/event-announcement-r003/H035",
+    "PHOTO-20/event-announcement-r008/H035",
+    "coverage B04 announcements"
+   ],
+   "problem": "B04 includes \"the event and date line is Vellacourt Ink or Studio Slate\", and the coverage table cites H035 for it on the three announcements. H035 only says \"her name, talk titles and running text are Vellacourt Ink\". The banners (H033) and the talk cards (H031) carry the event and date colour clause, but the announcements do not. An event and date line set in Deep Ground #16171A on Warm Neutral would pass every check (H033 accepts any palette hex).",
+   "fix": "Add one check per announcement: \"If a separate event and date line sits on Warm Neutral or Bone on “Confirmed-talk speaker announcement - … ” (event-announcement-r00X.png), it is Vellacourt Ink #262524 or Studio Slate #4C5560.\" Cite it in B04 alongside H035."
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "coverage R07: talk-card-r002..r009"
+   ],
+   "problem": "The R07 na reason on all eight talk cards (\"At 105 mm wide a card cannot show the 1300 px snap above its native size\") is wrong. A PDF can embed vellacourt_workshop_snap.jpg upsampled to any pixel size, which is exactly what the one-pager H021 guards against (\"embedded at no more than its native 1300 x 975 px\"). The risk is real on talk-card-r007. Its record has a blank Portrait cell (a planned trap), so the snap is the obvious stand-in. The only guard there is H013 (any portrait is a session frame), which does not cover the snap used as a non-portrait image.",
+   "fix": "On talk-card-r007, add: \"If vellacourt_workshop_snap.jpg appears on “Speaker talk card - The Bench Sessions - Designing for the next hands” (talk-card-r007.pdf), it is embedded at no more than its native 1300 x 975 px.\" (K2_Q2, reference vellacourt_workshop_snap.jpg), and cite it in R07. For the other seven cards, change the reason to one that is true, e.g. \"The card's single picture frame carries the assigned session portrait (H013), leaving no place for the workshop snap.\""
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "PHOTO-20/talk-card-r004/H009",
+    "PHOTO-20/talk-card-r005/H009",
+    "PHOTO-20/talk-card-r003/H009",
+    "PHOTO-20/talk-card-r006/H010",
+    "PHOTO-20/talk-card-r007/H009",
+    "PHOTO-20/talk-card-r008/H009",
+    "PHOTO-20/talk-card-r009/H009"
+   ],
+   "problem": "These K1_Q5 guards lost the pointer to where the stray text comes from (\"from the sample on vellacourt_speakercard_template.pdf\"). The checks keep the same fact, but the trap cue is gone. On r004 and r005 the examples point at the wrong trap. The planned defect in vellacourt_talks.csv is that the two rows share the Event Name 'Fjordworks Summit', so naming cards by event collides and one card silently overwrites the other. The likely leak on r004 is the sibling talk's text, not r002's.",
+   "fix": "Restore \"from the sample on vellacourt_speakercard_template.pdf\" on r003 and r006 to r009. On r004 use: \"No text from another talk, such as “The room after the round”, “Fireside” or “21 March 2026”, appears on “Speaker talk card - Fjordworks Summit - On staying small on purpose” (talk-card-r004.pdf).\" On r005 use: \"…such as “On staying small on purpose”, “Panel” or “21/03/26”…\"."
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "PHOTO-20/speaker-onepager/A014 (new:speaker-onepager-style-subject-2)"
+   ],
+   "problem": "The text of this pdf_text_style check copies the straight apostrophe from the copy file (\"on keeping a small studio's craft as it grows\"). pdf_text_style finds the string with str.find, so a correctly typeset curly apostrophe (studio’s) never matches. The check then goes VerifierUnavailable and the 9.5 pt Inter Regular test is silently lost for that subject.",
+   "fix": "Change the assertion text to a fragment without punctuation that is still unique on the page, e.g. \"craft as it grows\", and reword the check: \"“Speaker booking one-pager” (speaker-onepager.pdf) sets the talk subject words “craft as it grows” in Inter Regular at 9.5 pt.\""
+  }
+ ],
+ "repair": {
+  "fixed": [
+   "F1 colour balance: measured mean R minus B is 11.0 for session_01, 4.4 for session_08 and 5.7 for session_09, and the original combined H002 evidence says 08 and 09 were 'shot after the key light moved'. Added K2_Q4 warm-balance checks on talk-card-r006 (H056) and talk-card-r009, with refs session_01 plus 08 or 09, and cited them in B11. On r007, H019 is now one fact: 'If ... carries a portrait, it keeps the warm colour balance of vellacourt_session_01.jpg, with no blue or grey cast', which covers the session_03 trap and page 6 of the old H002. Retired combined H002, covered by the r006, r009 and r007 checks plus A008, A009 and A011. Set combined B11 to na. Rewrote the other B11 na reasons as '...first-half warm frame, not the cool vellacourt_session_03.jpg; natural colour is checked by H0xx', citing each output's real id.",
+   "F2: added a K5_Q2 check on each announcement: 'The talk title ... is set larger than the date' (H057). Retired H045 now points to H044 plus the new check, and H053 to H052 plus the name-larger-than-date check (H011, or H008 on r003). The new check is cited in T02.",
+   "F3: added a conditional event/date colour check (Ink #262524 or Studio Slate #4C5560) on all 3 announcements and cited it in B04.",
+   "F4: on talk-card-r007, added 'If vellacourt_workshop_snap.jpg appears ..., it shows no blur, softness or blocky pixels from being enlarged, viewed at 100% zoom' and cited it in R07. The other 7 cards' R07 na reason now reads: 'The card layout from vellacourt_speakercard_template.pdf has one picture frame, filled by the assigned portrait (H0xx).'",
+   "F5: K1_Q5 stray-text guards on r003 and r006 to r009 restore the template cue: 'No other talk's text, such as the template sample “Designing the thing before the deck” or “Northlight Design Forum”, appears on ...'. On r004 the examples are 'The room after the round' plus the template sample, and on r005 'On staying small on purpose' plus the template sample. reference_assets are the template and talks.csv.",
+   "F6: the onepager style-subject-2 pdf_text_style text is now 'craft as it grows', so a curly apostrophe no longer breaks the match. The check text was updated to match.",
+   "L1: retired 40 exact tracking and leading checks on the 8 talk cards (name leading and tracking, title tracking, event leading and tracking) and 6 on the onepager (H037 34 pt, H038, H039, H041, H044, H045). Card checks are covered by the new style autos and title-below-name. Onepager H037 to H039 are covered by H005 and H007, H041 by the title autos, and H044 and H045 by the bio, contact and subject autos.",
+   "L2: removed the six '69 px' adds on the PNGs. T08 PNG cells are now na: 'A 69 px minimum width cannot be judged by eye on a PNG; exact raster sizes are not checked.'",
+   "L3: the snap checks on the 6 PNGs and onepager H021 now describe the visible result (no blur, softness or blocky pixels from being enlarged). The trap guard is kept.",
+   "L5: split the name/title colour check from the event/date colour check on the 8 cards (H031) and 3 banners (H033), with hexes. The new event/date checks are cited in B04.",
+   "L6: the card template compound (H006 on r002, H005 elsewhere) is now K1_Q2 'The talk title, event and date ... sit together in one text block below the portrait'. Added a K1_Q1 'carries exactly one portrait' check on 7 cards and cited it in R03. r007 gets the text-block-only wording, since it has no assigned portrait.",
+   "L7: on all 15 outputs the heading check now reads 'Apart from her name and the AV monogram, no text on ... is set in a serif.'",
+   "L8: announcement H044 is now unconditional ('The talk title “X” ... is set in Inter Medium'). H031 is now 'Apart from the talk title, the body line and sign-off ... are set in Inter Regular.'",
+   "L9: retired combined H001, covered by A004 to A011. T10 now cites A004 to A011 only.",
+   "L10: onepager H020 is now the single session_03 trap fact. For r007 see F1.",
+   "L11: onepager H012 is now 'grouped in one talk-offer block'. Added K1_Q1 'No image, panel or text covers any part of the talk offer' and cited it in D01.",
+   "L12: the monogram Ochre check is 'solid Ochre #B98A4B.' on the 6 PNGs, and 'solid Ochre #B98A4B, not grey and not embossed.' on the 9 PDFs.",
+   "L13: 'solid colour, with no transparency or gradient' on all 15 outputs.",
+   "L14: the K2_Q2 near-duplicates on the PNGs and 7 cards now read 'The face in the portrait on ... is the original photograph, not regenerated or repainted.'",
+   "L15: card H010 now names 'the template's Georgia Bold “AV” or any retyped AV'. Retired H012 (H013 on r006), covered by H010.",
+   "L16: the card panels check now gives hexes. Onepager H004 now points to vellacourt_bio_copy.txt, and onepager H011 is shortened (see rejected for the part kept)."
+  ],
+  "rejected": [
+   {
+    "finding": "L4: retire the speaker-name presence checks (r002 H005, r003-r009 H003), covered by the A012 pdf_text_style check",
+    "why": "pdf_text_style does not fail when the text is missing. verify_outputs.py raises VerifierUnavailable('The exact text was not found as live text; the matching content check covers its presence'), so A012 cannot prove the name is present and the human presence check must stay."
+   },
+   {
+    "finding": "L4: retire the human family checks covered by the style autos (card H020, H040, H027; onepager H040; onepager H028 reduced to 'whole biography')",
+    "why": "Section B of GUIDE_AB says to 'Keep ONE check per text role per output for family and weight' and to retire only 'the human exact-size checks' once an auto check is added. The export setting allows outlined text ('searchable text where practical'), and the verifier then reports 'outlined lettering needs the matching human check'. Every role still has exactly one human family check, so there is no duplication within human checks. The retired H046 pointers to H027 are left as they are."
+   },
+   {
+    "finding": "L16 (partial): reduce onepager H011 to a generic 'followed by its own subject line' and rely on A013-A015 for the subject strings",
+    "why": "A013 to A015 are style checks that go unavailable when the text is absent, so they do not test presence. D01 requires the subjects 'verbatim from vellacourt_bio_copy.txt'. H011 was shortened to '...followed by its own one-line subject, word for word as in vellacourt_bio_copy.txt' so the verbatim requirement stays."
+   },
+   {
+    "finding": "L6 k_id suggestion K2_Q3 for the split template-layout check",
+    "why": "The check was split as asked, but K1_Q2 (Specification accuracy) was used instead. A text block layout taken from the supplied template is not a brand-system rule."
+   },
+   {
+    "finding": "L10 for talk-card-r007 H019: use the session_03-only conditional",
+    "why": "On r007 that wording would lose the after-key-light frames (session_06 to 09, R-B 4.4 to 6.2) that the retired combined H002 guarded for page 6. One warm-balance fact against session_01 covers both traps without adding a second, overlapping check."
+   }
+  ],
+  "unresolved": [
+   "155 length warnings remain (31 to 38 words, none over 40). Most of the length is the long deliverable names in the “Name” (file) reference, which the guide requires.",
+   "The tracking and leading rules (name +30 units, title -5, event/date +15, 38/13 pt leading) and the signature move's '34 pt' on the onepager no longer have any human or auto check, because nobody can judge them by eye and pdf_text_style does not measure them. Onepager 34 pt has no auto check either: a text-match on 'Astrid Vellacourt' could hit the bio or contact line first.",
+   "build.py and cov.py in work/PHOTO-20 would regenerate the pre-repair patch. The authoritative regeneration is work/PHOTO-20/repair.py, which runs from patch_before_repair.json and coverage_before_repair.json."
+  ]
+ }
+}

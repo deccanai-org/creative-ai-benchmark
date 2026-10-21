@@ -1,0 +1,3608 @@
+{
+  "task_id": "PHOTO-20",
+  "rules": [
+    {
+      "rule_id": "B01",
+      "kind": "brand",
+      "rule": "No colour outside the six palette hexes (#262524, #E8E1D6, #4C5560, #B98A4B, #16171A, #F4EFE7) for type, grounds, panels, rules, buttons or icons.",
+      "source": "brand_identity.palette_rules.forbidden",
+      "cells": {
+        "speaker-onepager": {
+          "checks": [
+            "PHOTO-20/speaker-onepager/H030"
+          ]
+        },
+        "event-announcement-r002": {
+          "checks": [
+            "PHOTO-20/event-announcement-r002/H033"
+          ]
+        },
+        "event-announcement-r003": {
+          "checks": [
+            "PHOTO-20/event-announcement-r003/H033"
+          ]
+        },
+        "event-announcement-r008": {
+          "checks": [
+            "PHOTO-20/event-announcement-r008/H033"
+          ]
+        },
+        "event-banner-r002": {
+          "checks": [
+            "PHOTO-20/event-banner-r002/H031"
+          ]
+        },
+        "event-banner-r003": {
+          "checks": [
+            "PHOTO-20/event-banner-r003/H031"
+          ]
+        },
+        "event-banner-r008": {
+          "checks": [
+            "PHOTO-20/event-banner-r008/H031"
+          ]
+        },
+        "talk-card-r002": {
+          "checks": [
+            "PHOTO-20/talk-card-r002/H029"
+          ]
+        },
+        "talk-card-r003": {
+          "checks": [
+            "PHOTO-20/talk-card-r003/H029"
+          ]
+        },
+        "talk-card-r004": {
+          "checks": [
+            "PHOTO-20/talk-card-r004/H029"
+          ]
+        },
+        "talk-card-r005": {
+          "checks": [
+            "PHOTO-20/talk-card-r005/H029"
+          ]
+        },
+        "talk-card-r006": {
+          "checks": [
+            "PHOTO-20/talk-card-r006/H029"
+          ]
+        },
+        "talk-card-r007": {
+          "checks": [
+            "PHOTO-20/talk-card-r007/H029"
+          ]
+        },
+        "talk-card-r008": {
+          "checks": [
+            "PHOTO-20/talk-card-r008/H029"
+          ]
+        },
+        "talk-card-r009": {
+          "checks": [
+            "PHOTO-20/talk-card-r009/H029"
+          ]
+        },
+        "talk-card-combined": {
+          "na": "Each page is checked by code to look identical to its single card file (A004 to A011), so the single-card checks cover this rule."
+        }
+      }
+    },
+    {
+      "rule_id": "B02",
+      "kind": "brand",
+      "rule": "Grounds and panels are Warm Neutral, Bone, Deep Ground or Vellacourt Ink and nothing else; Studio Slate and Ochre are never a ground or panel; no pure white ground.",
+      "source": "brand_identity.palette_rules.distribution; brand_identity.palette_rules.forbidden",
+      "cells": {
+        "speaker-onepager": {
+          "checks": [
+            "PHOTO-20/speaker-onepager/H031"
+          ]
+        },
+        "event-announcement-r002": {
+          "checks": [
+            "PHOTO-20/event-announcement-r002/H034"
+          ]
+        },
+        "event-announcement-r003": {
+          "checks": [
+            "PHOTO-20/event-announcement-r003/H034"
+          ]
+        },
+        "event-announcement-r008": {
+          "checks": [
+            "PHOTO-20/event-announcement-r008/H034"
+          ]
+        },
+        "event-banner-r002": {
+          "checks": [
+            "PHOTO-20/event-banner-r002/H032"
+          ]
+        },
+        "event-banner-r003": {
+          "checks": [
+            "PHOTO-20/event-banner-r003/H032"
+          ]
+        },
+        "event-banner-r008": {
+          "checks": [
+            "PHOTO-20/event-banner-r008/H032"
+          ]
+        },
+        "talk-card-r002": {
+          "checks": [
+            "PHOTO-20/talk-card-r002/H030",
+            "PHOTO-20/talk-card-r002/H053"
+          ]
+        },
+        "talk-card-r003": {
+          "checks": [
+            "PHOTO-20/talk-card-r003/H030",
+            "PHOTO-20/talk-card-r003/H053"
+          ]
+        },
+        "talk-card-r004": {
+          "checks": [
+            "PHOTO-20/talk-card-r004/H030",
+            "PHOTO-20/talk-card-r004/H053"
+          ]
+        },
+        "talk-card-r005": {
+          "checks": [
+            "PHOTO-20/talk-card-r005/H030",
+            "PHOTO-20/talk-card-r005/H053"
+          ]
+        },
+        "talk-card-r006": {
+          "checks": [
+            "PHOTO-20/talk-card-r006/H030",
+            "PHOTO-20/talk-card-r006/H053"
+          ]
+        },
+        "talk-card-r007": {
+          "checks": [
+            "PHOTO-20/talk-card-r007/H030",
+            "PHOTO-20/talk-card-r007/H053"
+          ]
+        },
+        "talk-card-r008": {
+          "checks": [
+            "PHOTO-20/talk-card-r008/H030",
+            "PHOTO-20/talk-card-r008/H053"
+          ]
+        },
+        "talk-card-r009": {
+          "checks": [
+            "PHOTO-20/talk-card-r009/H030",
+            "PHOTO-20/talk-card-r009/H053"
+          ]
+        },
+        "talk-card-combined": {
+          "na": "Each page is checked by code to look identical to its single card file (A004 to A011), so the single-card checks cover this rule."
+        }
+      }
+    },
+    {
+      "rule_id": "B03",
+      "kind": "brand",
+      "rule": "Every talk card keeps the Warm Neutral ground of vellacourt_speakercard_template.pdf.",
+      "source": "brand_identity.palette_rules.distribution",
+      "cells": {
+        "speaker-onepager": {
+          "na": "The Warm Neutral ground rule names the talk cards only; the one-pager may use any of the four grounds."
+        },
+        "event-announcement-r002": {
+          "na": "The Warm Neutral ground rule names the talk cards only; announcements may use any of the four grounds."
+        },
+        "event-announcement-r003": {
+          "na": "The Warm Neutral ground rule names the talk cards only; announcements may use any of the four grounds."
+        },
+        "event-announcement-r008": {
+          "na": "The Warm Neutral ground rule names the talk cards only; announcements may use any of the four grounds."
+        },
+        "event-banner-r002": {
+          "na": "The Warm Neutral ground rule names the talk cards only; banners may use any of the four grounds."
+        },
+        "event-banner-r003": {
+          "na": "The Warm Neutral ground rule names the talk cards only; banners may use any of the four grounds."
+        },
+        "event-banner-r008": {
+          "na": "The Warm Neutral ground rule names the talk cards only; banners may use any of the four grounds."
+        },
+        "talk-card-r002": {
+          "checks": [
+            "PHOTO-20/talk-card-r002/H030"
+          ]
+        },
+        "talk-card-r003": {
+          "checks": [
+            "PHOTO-20/talk-card-r003/H030"
+          ]
+        },
+        "talk-card-r004": {
+          "checks": [
+            "PHOTO-20/talk-card-r004/H030"
+          ]
+        },
+        "talk-card-r005": {
+          "checks": [
+            "PHOTO-20/talk-card-r005/H030"
+          ]
+        },
+        "talk-card-r006": {
+          "checks": [
+            "PHOTO-20/talk-card-r006/H030"
+          ]
+        },
+        "talk-card-r007": {
+          "checks": [
+            "PHOTO-20/talk-card-r007/H030"
+          ]
+        },
+        "talk-card-r008": {
+          "checks": [
+            "PHOTO-20/talk-card-r008/H030"
+          ]
+        },
+        "talk-card-r009": {
+          "checks": [
+            "PHOTO-20/talk-card-r009/H030"
+          ]
+        },
+        "talk-card-combined": {
+          "na": "Each page is checked by code to look identical to its single card file (A004 to A011), so the single-card checks cover this rule."
+        }
+      }
+    },
+    {
+      "rule_id": "B04",
+      "kind": "brand",
+      "rule": "On Warm Neutral or Bone, her name, talk titles and running text are Vellacourt Ink, and the event and date line is Vellacourt Ink or Studio Slate.",
+      "source": "brand_identity.palette_rules.distribution",
+      "cells": {
+        "speaker-onepager": {
+          "checks": [
+            "PHOTO-20/speaker-onepager/H032"
+          ]
+        },
+        "event-announcement-r002": {
+          "checks": [
+            "PHOTO-20/event-announcement-r002/H035",
+            "PHOTO-20/event-announcement-r002/H058"
+          ]
+        },
+        "event-announcement-r003": {
+          "checks": [
+            "PHOTO-20/event-announcement-r003/H035",
+            "PHOTO-20/event-announcement-r003/H058"
+          ]
+        },
+        "event-announcement-r008": {
+          "checks": [
+            "PHOTO-20/event-announcement-r008/H035",
+            "PHOTO-20/event-announcement-r008/H058"
+          ]
+        },
+        "event-banner-r002": {
+          "checks": [
+            "PHOTO-20/event-banner-r002/H033",
+            "PHOTO-20/event-banner-r002/H055"
+          ]
+        },
+        "event-banner-r003": {
+          "checks": [
+            "PHOTO-20/event-banner-r003/H033",
+            "PHOTO-20/event-banner-r003/H055"
+          ]
+        },
+        "event-banner-r008": {
+          "checks": [
+            "PHOTO-20/event-banner-r008/H033",
+            "PHOTO-20/event-banner-r008/H055"
+          ]
+        },
+        "talk-card-r002": {
+          "checks": [
+            "PHOTO-20/talk-card-r002/H031",
+            "PHOTO-20/talk-card-r002/H055"
+          ]
+        },
+        "talk-card-r003": {
+          "checks": [
+            "PHOTO-20/talk-card-r003/H031",
+            "PHOTO-20/talk-card-r003/H054"
+          ]
+        },
+        "talk-card-r004": {
+          "checks": [
+            "PHOTO-20/talk-card-r004/H031",
+            "PHOTO-20/talk-card-r004/H054"
+          ]
+        },
+        "talk-card-r005": {
+          "checks": [
+            "PHOTO-20/talk-card-r005/H031",
+            "PHOTO-20/talk-card-r005/H054"
+          ]
+        },
+        "talk-card-r006": {
+          "checks": [
+            "PHOTO-20/talk-card-r006/H031",
+            "PHOTO-20/talk-card-r006/H054"
+          ]
+        },
+        "talk-card-r007": {
+          "checks": [
+            "PHOTO-20/talk-card-r007/H031",
+            "PHOTO-20/talk-card-r007/H054"
+          ]
+        },
+        "talk-card-r008": {
+          "checks": [
+            "PHOTO-20/talk-card-r008/H031",
+            "PHOTO-20/talk-card-r008/H054"
+          ]
+        },
+        "talk-card-r009": {
+          "checks": [
+            "PHOTO-20/talk-card-r009/H031",
+            "PHOTO-20/talk-card-r009/H054"
+          ]
+        },
+        "talk-card-combined": {
+          "na": "Each page is checked by code to look identical to its single card file (A004 to A011), so the single-card checks cover this rule."
+        }
+      }
+    },
+    {
+      "rule_id": "B05",
+      "kind": "brand",
+      "rule": "On Deep Ground or Vellacourt Ink, all type is Warm Neutral or Bone.",
+      "source": "brand_identity.palette_rules.distribution",
+      "cells": {
+        "speaker-onepager": {
+          "checks": [
+            "PHOTO-20/speaker-onepager/H054"
+          ]
+        },
+        "event-announcement-r002": {
+          "checks": [
+            "PHOTO-20/event-announcement-r002/H036"
+          ]
+        },
+        "event-announcement-r003": {
+          "checks": [
+            "PHOTO-20/event-announcement-r003/H036"
+          ]
+        },
+        "event-announcement-r008": {
+          "checks": [
+            "PHOTO-20/event-announcement-r008/H036"
+          ]
+        },
+        "event-banner-r002": {
+          "checks": [
+            "PHOTO-20/event-banner-r002/H034"
+          ]
+        },
+        "event-banner-r003": {
+          "checks": [
+            "PHOTO-20/event-banner-r003/H034"
+          ]
+        },
+        "event-banner-r008": {
+          "checks": [
+            "PHOTO-20/event-banner-r008/H034"
+          ]
+        },
+        "talk-card-r002": {
+          "checks": [
+            "PHOTO-20/talk-card-r002/H032"
+          ]
+        },
+        "talk-card-r003": {
+          "checks": [
+            "PHOTO-20/talk-card-r003/H032"
+          ]
+        },
+        "talk-card-r004": {
+          "checks": [
+            "PHOTO-20/talk-card-r004/H032"
+          ]
+        },
+        "talk-card-r005": {
+          "checks": [
+            "PHOTO-20/talk-card-r005/H032"
+          ]
+        },
+        "talk-card-r006": {
+          "checks": [
+            "PHOTO-20/talk-card-r006/H032"
+          ]
+        },
+        "talk-card-r007": {
+          "checks": [
+            "PHOTO-20/talk-card-r007/H032"
+          ]
+        },
+        "talk-card-r008": {
+          "checks": [
+            "PHOTO-20/talk-card-r008/H032"
+          ]
+        },
+        "talk-card-r009": {
+          "checks": [
+            "PHOTO-20/talk-card-r009/H032"
+          ]
+        },
+        "talk-card-combined": {
+          "na": "Each page is checked by code to look identical to its single card file (A004 to A011), so the single-card checks cover this rule."
+        }
+      }
+    },
+    {
+      "rule_id": "B06",
+      "kind": "brand",
+      "rule": "Ochre is for the AV monogram alone.",
+      "source": "brand_identity.palette_rules.distribution",
+      "cells": {
+        "speaker-onepager": {
+          "checks": [
+            "PHOTO-20/speaker-onepager/H033"
+          ]
+        },
+        "event-announcement-r002": {
+          "checks": [
+            "PHOTO-20/event-announcement-r002/H037"
+          ]
+        },
+        "event-announcement-r003": {
+          "checks": [
+            "PHOTO-20/event-announcement-r003/H037"
+          ]
+        },
+        "event-announcement-r008": {
+          "checks": [
+            "PHOTO-20/event-announcement-r008/H037"
+          ]
+        },
+        "event-banner-r002": {
+          "checks": [
+            "PHOTO-20/event-banner-r002/H035"
+          ]
+        },
+        "event-banner-r003": {
+          "checks": [
+            "PHOTO-20/event-banner-r003/H035"
+          ]
+        },
+        "event-banner-r008": {
+          "checks": [
+            "PHOTO-20/event-banner-r008/H035"
+          ]
+        },
+        "talk-card-r002": {
+          "checks": [
+            "PHOTO-20/talk-card-r002/H033"
+          ]
+        },
+        "talk-card-r003": {
+          "checks": [
+            "PHOTO-20/talk-card-r003/H033"
+          ]
+        },
+        "talk-card-r004": {
+          "checks": [
+            "PHOTO-20/talk-card-r004/H033"
+          ]
+        },
+        "talk-card-r005": {
+          "checks": [
+            "PHOTO-20/talk-card-r005/H033"
+          ]
+        },
+        "talk-card-r006": {
+          "checks": [
+            "PHOTO-20/talk-card-r006/H033"
+          ]
+        },
+        "talk-card-r007": {
+          "checks": [
+            "PHOTO-20/talk-card-r007/H033"
+          ]
+        },
+        "talk-card-r008": {
+          "checks": [
+            "PHOTO-20/talk-card-r008/H033"
+          ]
+        },
+        "talk-card-r009": {
+          "checks": [
+            "PHOTO-20/talk-card-r009/H033"
+          ]
+        },
+        "talk-card-combined": {
+          "na": "Each page is checked by code to look identical to its single card file (A004 to A011), so the single-card checks cover this rule."
+        }
+      }
+    },
+    {
+      "rule_id": "B07",
+      "kind": "brand",
+      "rule": "Every palette colour is used solid, at 100% opacity, with no tint, transparency, gradient, shadow, glow, bevel or blend mode.",
+      "source": "brand_identity.palette_rules.opacity",
+      "cells": {
+        "speaker-onepager": {
+          "checks": [
+            "PHOTO-20/speaker-onepager/H034"
+          ]
+        },
+        "event-announcement-r002": {
+          "checks": [
+            "PHOTO-20/event-announcement-r002/H038"
+          ]
+        },
+        "event-announcement-r003": {
+          "checks": [
+            "PHOTO-20/event-announcement-r003/H038"
+          ]
+        },
+        "event-announcement-r008": {
+          "checks": [
+            "PHOTO-20/event-announcement-r008/H038"
+          ]
+        },
+        "event-banner-r002": {
+          "checks": [
+            "PHOTO-20/event-banner-r002/H036"
+          ]
+        },
+        "event-banner-r003": {
+          "checks": [
+            "PHOTO-20/event-banner-r003/H036"
+          ]
+        },
+        "event-banner-r008": {
+          "checks": [
+            "PHOTO-20/event-banner-r008/H036"
+          ]
+        },
+        "talk-card-r002": {
+          "checks": [
+            "PHOTO-20/talk-card-r002/H034"
+          ]
+        },
+        "talk-card-r003": {
+          "checks": [
+            "PHOTO-20/talk-card-r003/H034"
+          ]
+        },
+        "talk-card-r004": {
+          "checks": [
+            "PHOTO-20/talk-card-r004/H034"
+          ]
+        },
+        "talk-card-r005": {
+          "checks": [
+            "PHOTO-20/talk-card-r005/H034"
+          ]
+        },
+        "talk-card-r006": {
+          "checks": [
+            "PHOTO-20/talk-card-r006/H034"
+          ]
+        },
+        "talk-card-r007": {
+          "checks": [
+            "PHOTO-20/talk-card-r007/H034"
+          ]
+        },
+        "talk-card-r008": {
+          "checks": [
+            "PHOTO-20/talk-card-r008/H034"
+          ]
+        },
+        "talk-card-r009": {
+          "checks": [
+            "PHOTO-20/talk-card-r009/H034"
+          ]
+        },
+        "talk-card-combined": {
+          "na": "Each page is checked by code to look identical to its single card file (A004 to A011), so the single-card checks cover this rule."
+        }
+      }
+    },
+    {
+      "rule_id": "B08",
+      "kind": "brand",
+      "rule": "No scrim, gradient or overlay of any colour, black and white included, is laid over a photograph.",
+      "source": "brand_identity.palette_rules.opacity",
+      "cells": {
+        "speaker-onepager": {
+          "checks": [
+            "PHOTO-20/speaker-onepager/H051"
+          ]
+        },
+        "event-announcement-r002": {
+          "checks": [
+            "PHOTO-20/event-announcement-r002/H056"
+          ]
+        },
+        "event-announcement-r003": {
+          "checks": [
+            "PHOTO-20/event-announcement-r003/H056"
+          ]
+        },
+        "event-announcement-r008": {
+          "checks": [
+            "PHOTO-20/event-announcement-r008/H056"
+          ]
+        },
+        "event-banner-r002": {
+          "checks": [
+            "PHOTO-20/event-banner-r002/H054"
+          ]
+        },
+        "event-banner-r003": {
+          "checks": [
+            "PHOTO-20/event-banner-r003/H054"
+          ]
+        },
+        "event-banner-r008": {
+          "checks": [
+            "PHOTO-20/event-banner-r008/H054"
+          ]
+        },
+        "talk-card-r002": {
+          "checks": [
+            "PHOTO-20/talk-card-r002/H051"
+          ]
+        },
+        "talk-card-r003": {
+          "checks": [
+            "PHOTO-20/talk-card-r003/H051"
+          ]
+        },
+        "talk-card-r004": {
+          "checks": [
+            "PHOTO-20/talk-card-r004/H051"
+          ]
+        },
+        "talk-card-r005": {
+          "checks": [
+            "PHOTO-20/talk-card-r005/H051"
+          ]
+        },
+        "talk-card-r006": {
+          "checks": [
+            "PHOTO-20/talk-card-r006/H051"
+          ]
+        },
+        "talk-card-r007": {
+          "checks": [
+            "PHOTO-20/talk-card-r007/H051"
+          ]
+        },
+        "talk-card-r008": {
+          "checks": [
+            "PHOTO-20/talk-card-r008/H051"
+          ]
+        },
+        "talk-card-r009": {
+          "checks": [
+            "PHOTO-20/talk-card-r009/H051"
+          ]
+        },
+        "talk-card-combined": {
+          "na": "Each page is checked by code to look identical to its single card file (A004 to A011), so the single-card checks cover this rule."
+        }
+      }
+    },
+    {
+      "rule_id": "B09",
+      "kind": "brand",
+      "rule": "No gold foil, metallic, gloss, bevel, glow or drop-shadow effect on the monogram or on any type, rule, panel or icon.",
+      "source": "brand_identity.palette_rules.forbidden",
+      "cells": {
+        "speaker-onepager": {
+          "checks": [
+            "PHOTO-20/speaker-onepager/H035"
+          ]
+        },
+        "event-announcement-r002": {
+          "checks": [
+            "PHOTO-20/event-announcement-r002/H039"
+          ]
+        },
+        "event-announcement-r003": {
+          "checks": [
+            "PHOTO-20/event-announcement-r003/H039"
+          ]
+        },
+        "event-announcement-r008": {
+          "checks": [
+            "PHOTO-20/event-announcement-r008/H039"
+          ]
+        },
+        "event-banner-r002": {
+          "checks": [
+            "PHOTO-20/event-banner-r002/H037"
+          ]
+        },
+        "event-banner-r003": {
+          "checks": [
+            "PHOTO-20/event-banner-r003/H037"
+          ]
+        },
+        "event-banner-r008": {
+          "checks": [
+            "PHOTO-20/event-banner-r008/H037"
+          ]
+        },
+        "talk-card-r002": {
+          "checks": [
+            "PHOTO-20/talk-card-r002/H035"
+          ]
+        },
+        "talk-card-r003": {
+          "checks": [
+            "PHOTO-20/talk-card-r003/H035"
+          ]
+        },
+        "talk-card-r004": {
+          "checks": [
+            "PHOTO-20/talk-card-r004/H035"
+          ]
+        },
+        "talk-card-r005": {
+          "checks": [
+            "PHOTO-20/talk-card-r005/H035"
+          ]
+        },
+        "talk-card-r006": {
+          "checks": [
+            "PHOTO-20/talk-card-r006/H035"
+          ]
+        },
+        "talk-card-r007": {
+          "checks": [
+            "PHOTO-20/talk-card-r007/H035"
+          ]
+        },
+        "talk-card-r008": {
+          "checks": [
+            "PHOTO-20/talk-card-r008/H035"
+          ]
+        },
+        "talk-card-r009": {
+          "checks": [
+            "PHOTO-20/talk-card-r009/H035"
+          ]
+        },
+        "talk-card-combined": {
+          "na": "Each page is checked by code to look identical to its single card file (A004 to A011), so the single-card checks cover this rule."
+        }
+      }
+    },
+    {
+      "rule_id": "B10",
+      "kind": "brand",
+      "rule": "Photographs keep their own corrected colour: no heavy filter, colour grade or skin smoothing, never recoloured toward the palette.",
+      "source": "brand_identity.palette_rules.photography",
+      "cells": {
+        "speaker-onepager": {
+          "checks": [
+            "PHOTO-20/speaker-onepager/H019"
+          ]
+        },
+        "event-announcement-r002": {
+          "checks": [
+            "PHOTO-20/event-announcement-r002/H019"
+          ]
+        },
+        "event-announcement-r003": {
+          "checks": [
+            "PHOTO-20/event-announcement-r003/H019"
+          ]
+        },
+        "event-announcement-r008": {
+          "checks": [
+            "PHOTO-20/event-announcement-r008/H019"
+          ]
+        },
+        "event-banner-r002": {
+          "checks": [
+            "PHOTO-20/event-banner-r002/H017"
+          ]
+        },
+        "event-banner-r003": {
+          "checks": [
+            "PHOTO-20/event-banner-r003/H017"
+          ]
+        },
+        "event-banner-r008": {
+          "checks": [
+            "PHOTO-20/event-banner-r008/H017"
+          ]
+        },
+        "talk-card-r002": {
+          "checks": [
+            "PHOTO-20/talk-card-r002/H019"
+          ]
+        },
+        "talk-card-r003": {
+          "checks": [
+            "PHOTO-20/talk-card-r003/H019"
+          ]
+        },
+        "talk-card-r004": {
+          "checks": [
+            "PHOTO-20/talk-card-r004/H019"
+          ]
+        },
+        "talk-card-r005": {
+          "checks": [
+            "PHOTO-20/talk-card-r005/H019"
+          ]
+        },
+        "talk-card-r006": {
+          "checks": [
+            "PHOTO-20/talk-card-r006/H020"
+          ]
+        },
+        "talk-card-r007": {
+          "checks": [
+            "PHOTO-20/talk-card-r007/H017"
+          ]
+        },
+        "talk-card-r008": {
+          "checks": [
+            "PHOTO-20/talk-card-r008/H019"
+          ]
+        },
+        "talk-card-r009": {
+          "checks": [
+            "PHOTO-20/talk-card-r009/H019"
+          ]
+        },
+        "talk-card-combined": {
+          "na": "Each page is checked by code to look identical to its single card file (A004 to A011), so the single-card checks cover this rule."
+        }
+      }
+    },
+    {
+      "rule_id": "B11",
+      "kind": "brand",
+      "rule": "A cast or exposure may be corrected so the set reads as one session (the cool vellacourt_session_03.jpg is brought to the warm house look).",
+      "source": "brand_identity.palette_rules.photography",
+      "cells": {
+        "speaker-onepager": {
+          "checks": [
+            "PHOTO-20/speaker-onepager/H020"
+          ]
+        },
+        "event-announcement-r002": {
+          "na": "The assigned frame vellacourt_session_02.jpg is a first-half warm frame, not the cool vellacourt_session_03.jpg; natural colour is checked by H019."
+        },
+        "event-announcement-r003": {
+          "na": "The assigned frame vellacourt_session_05.jpg is a first-half warm frame, not the cool vellacourt_session_03.jpg; natural colour is checked by H019."
+        },
+        "event-announcement-r008": {
+          "na": "The assigned frame vellacourt_session_01.jpg is a first-half warm frame, not the cool vellacourt_session_03.jpg; natural colour is checked by H019."
+        },
+        "event-banner-r002": {
+          "na": "The assigned frame vellacourt_session_02.jpg is a first-half warm frame, not the cool vellacourt_session_03.jpg; natural colour is checked by H017."
+        },
+        "event-banner-r003": {
+          "na": "The assigned frame vellacourt_session_05.jpg is a first-half warm frame, not the cool vellacourt_session_03.jpg; natural colour is checked by H017."
+        },
+        "event-banner-r008": {
+          "na": "The assigned frame vellacourt_session_01.jpg is a first-half warm frame, not the cool vellacourt_session_03.jpg; natural colour is checked by H017."
+        },
+        "talk-card-r002": {
+          "na": "The assigned frame vellacourt_session_02.jpg is a first-half warm frame, not the cool vellacourt_session_03.jpg; natural colour is checked by H019."
+        },
+        "talk-card-r003": {
+          "na": "The assigned frame vellacourt_session_05.jpg is a first-half warm frame, not the cool vellacourt_session_03.jpg; natural colour is checked by H019."
+        },
+        "talk-card-r004": {
+          "na": "The assigned frame vellacourt_session_04.jpg is a first-half warm frame, not the cool vellacourt_session_03.jpg; natural colour is checked by H019."
+        },
+        "talk-card-r005": {
+          "na": "The assigned frame vellacourt_session_04.jpg is a first-half warm frame, not the cool vellacourt_session_03.jpg; natural colour is checked by H019."
+        },
+        "talk-card-r006": {
+          "checks": [
+            "PHOTO-20/talk-card-r006/H056"
+          ]
+        },
+        "talk-card-r007": {
+          "checks": [
+            "PHOTO-20/talk-card-r007/H019"
+          ]
+        },
+        "talk-card-r008": {
+          "na": "The assigned frame vellacourt_session_01.jpg is a first-half warm frame, not the cool vellacourt_session_03.jpg; natural colour is checked by H019."
+        },
+        "talk-card-r009": {
+          "checks": [
+            "PHOTO-20/talk-card-r009/H056"
+          ]
+        },
+        "talk-card-combined": {
+          "na": "Each page is checked by code to look identical to its single card file (A004 to A011), so the per-card warm-balance checks cover this rule."
+        }
+      }
+    },
+    {
+      "rule_id": "B12",
+      "kind": "brand",
+      "rule": "vellacourt_av_transparent.png is the AV monogram for this commission; keep the supplied artwork, not a font reconstruction.",
+      "source": "brand_identity.brand_assets_status",
+      "cells": {
+        "speaker-onepager": {
+          "checks": [
+            "PHOTO-20/speaker-onepager/H006"
+          ]
+        },
+        "event-announcement-r002": {
+          "checks": [
+            "PHOTO-20/event-announcement-r002/H021"
+          ]
+        },
+        "event-announcement-r003": {
+          "checks": [
+            "PHOTO-20/event-announcement-r003/H021"
+          ]
+        },
+        "event-announcement-r008": {
+          "checks": [
+            "PHOTO-20/event-announcement-r008/H021"
+          ]
+        },
+        "event-banner-r002": {
+          "checks": [
+            "PHOTO-20/event-banner-r002/H019"
+          ]
+        },
+        "event-banner-r003": {
+          "checks": [
+            "PHOTO-20/event-banner-r003/H019"
+          ]
+        },
+        "event-banner-r008": {
+          "checks": [
+            "PHOTO-20/event-banner-r008/H019"
+          ]
+        },
+        "talk-card-r002": {
+          "checks": [
+            "PHOTO-20/talk-card-r002/H010"
+          ]
+        },
+        "talk-card-r003": {
+          "checks": [
+            "PHOTO-20/talk-card-r003/H010"
+          ]
+        },
+        "talk-card-r004": {
+          "checks": [
+            "PHOTO-20/talk-card-r004/H010"
+          ]
+        },
+        "talk-card-r005": {
+          "checks": [
+            "PHOTO-20/talk-card-r005/H010"
+          ]
+        },
+        "talk-card-r006": {
+          "checks": [
+            "PHOTO-20/talk-card-r006/H011"
+          ]
+        },
+        "talk-card-r007": {
+          "checks": [
+            "PHOTO-20/talk-card-r007/H010"
+          ]
+        },
+        "talk-card-r008": {
+          "checks": [
+            "PHOTO-20/talk-card-r008/H010"
+          ]
+        },
+        "talk-card-r009": {
+          "checks": [
+            "PHOTO-20/talk-card-r009/H010"
+          ]
+        },
+        "talk-card-combined": {
+          "na": "Each page is checked by code to look identical to its single card file (A004 to A011), so the single-card checks cover this rule."
+        }
+      }
+    },
+    {
+      "rule_id": "B13",
+      "kind": "brand",
+      "rule": "The monogram is clean supplied artwork, not traced from the deboss texture of vellacourt_deboss_card.jpg.",
+      "source": "brand_identity.brand_assets_status",
+      "cells": {
+        "speaker-onepager": {
+          "checks": [
+            "PHOTO-20/speaker-onepager/H013"
+          ]
+        },
+        "event-announcement-r002": {
+          "checks": [
+            "PHOTO-20/event-announcement-r002/H022"
+          ]
+        },
+        "event-announcement-r003": {
+          "checks": [
+            "PHOTO-20/event-announcement-r003/H022"
+          ]
+        },
+        "event-announcement-r008": {
+          "checks": [
+            "PHOTO-20/event-announcement-r008/H022"
+          ]
+        },
+        "event-banner-r002": {
+          "checks": [
+            "PHOTO-20/event-banner-r002/H020"
+          ]
+        },
+        "event-banner-r003": {
+          "checks": [
+            "PHOTO-20/event-banner-r003/H020"
+          ]
+        },
+        "event-banner-r008": {
+          "checks": [
+            "PHOTO-20/event-banner-r008/H020"
+          ]
+        },
+        "talk-card-r002": {
+          "checks": [
+            "PHOTO-20/talk-card-r002/H011"
+          ]
+        },
+        "talk-card-r003": {
+          "checks": [
+            "PHOTO-20/talk-card-r003/H011"
+          ]
+        },
+        "talk-card-r004": {
+          "checks": [
+            "PHOTO-20/talk-card-r004/H011"
+          ]
+        },
+        "talk-card-r005": {
+          "checks": [
+            "PHOTO-20/talk-card-r005/H011"
+          ]
+        },
+        "talk-card-r006": {
+          "checks": [
+            "PHOTO-20/talk-card-r006/H012"
+          ]
+        },
+        "talk-card-r007": {
+          "checks": [
+            "PHOTO-20/talk-card-r007/H011"
+          ]
+        },
+        "talk-card-r008": {
+          "checks": [
+            "PHOTO-20/talk-card-r008/H011"
+          ]
+        },
+        "talk-card-r009": {
+          "checks": [
+            "PHOTO-20/talk-card-r009/H011"
+          ]
+        },
+        "talk-card-combined": {
+          "na": "Each page is checked by code to look identical to its single card file (A004 to A011), so the single-card checks cover this rule."
+        }
+      }
+    },
+    {
+      "rule_id": "B14",
+      "kind": "brand",
+      "rule": "Use solid Ochre for the monogram in digital exports; a blind impression is a print finish, never a grey digital simulation.",
+      "source": "brand_identity.type_system.rules[3]",
+      "cells": {
+        "speaker-onepager": {
+          "checks": [
+            "PHOTO-20/speaker-onepager/H025"
+          ]
+        },
+        "event-announcement-r002": {
+          "checks": [
+            "PHOTO-20/event-announcement-r002/H028"
+          ]
+        },
+        "event-announcement-r003": {
+          "checks": [
+            "PHOTO-20/event-announcement-r003/H028"
+          ]
+        },
+        "event-announcement-r008": {
+          "checks": [
+            "PHOTO-20/event-announcement-r008/H028"
+          ]
+        },
+        "event-banner-r002": {
+          "checks": [
+            "PHOTO-20/event-banner-r002/H026"
+          ]
+        },
+        "event-banner-r003": {
+          "checks": [
+            "PHOTO-20/event-banner-r003/H026"
+          ]
+        },
+        "event-banner-r008": {
+          "checks": [
+            "PHOTO-20/event-banner-r008/H026"
+          ]
+        },
+        "talk-card-r002": {
+          "checks": [
+            "PHOTO-20/talk-card-r002/H024"
+          ]
+        },
+        "talk-card-r003": {
+          "checks": [
+            "PHOTO-20/talk-card-r003/H024"
+          ]
+        },
+        "talk-card-r004": {
+          "checks": [
+            "PHOTO-20/talk-card-r004/H024"
+          ]
+        },
+        "talk-card-r005": {
+          "checks": [
+            "PHOTO-20/talk-card-r005/H024"
+          ]
+        },
+        "talk-card-r006": {
+          "checks": [
+            "PHOTO-20/talk-card-r006/H025"
+          ]
+        },
+        "talk-card-r007": {
+          "checks": [
+            "PHOTO-20/talk-card-r007/H024"
+          ]
+        },
+        "talk-card-r008": {
+          "checks": [
+            "PHOTO-20/talk-card-r008/H024"
+          ]
+        },
+        "talk-card-r009": {
+          "checks": [
+            "PHOTO-20/talk-card-r009/H024"
+          ]
+        },
+        "talk-card-combined": {
+          "na": "Each page is checked by code to look identical to its single card file (A004 to A011), so the single-card checks cover this rule."
+        }
+      }
+    },
+    {
+      "rule_id": "B15",
+      "kind": "brand",
+      "rule": "It reads as a person who runs a company, never as an influencer or an account.",
+      "source": "brand_identity.about",
+      "cells": {
+        "speaker-onepager": {
+          "checks": [
+            "PHOTO-20/speaker-onepager/H008"
+          ]
+        },
+        "event-announcement-r002": {
+          "checks": [
+            "PHOTO-20/event-announcement-r002/H012"
+          ]
+        },
+        "event-announcement-r003": {
+          "checks": [
+            "PHOTO-20/event-announcement-r003/H012"
+          ]
+        },
+        "event-announcement-r008": {
+          "checks": [
+            "PHOTO-20/event-announcement-r008/H012"
+          ]
+        },
+        "event-banner-r002": {
+          "checks": [
+            "PHOTO-20/event-banner-r002/H011"
+          ]
+        },
+        "event-banner-r003": {
+          "checks": [
+            "PHOTO-20/event-banner-r003/H012"
+          ]
+        },
+        "event-banner-r008": {
+          "checks": [
+            "PHOTO-20/event-banner-r008/H012"
+          ]
+        },
+        "talk-card-r002": {
+          "checks": [
+            "PHOTO-20/talk-card-r002/H009"
+          ]
+        },
+        "talk-card-r003": {
+          "checks": [
+            "PHOTO-20/talk-card-r003/H008"
+          ]
+        },
+        "talk-card-r004": {
+          "checks": [
+            "PHOTO-20/talk-card-r004/H008"
+          ]
+        },
+        "talk-card-r005": {
+          "checks": [
+            "PHOTO-20/talk-card-r005/H008"
+          ]
+        },
+        "talk-card-r006": {
+          "checks": [
+            "PHOTO-20/talk-card-r006/H009"
+          ]
+        },
+        "talk-card-r007": {
+          "checks": [
+            "PHOTO-20/talk-card-r007/H008"
+          ]
+        },
+        "talk-card-r008": {
+          "checks": [
+            "PHOTO-20/talk-card-r008/H008"
+          ]
+        },
+        "talk-card-r009": {
+          "checks": [
+            "PHOTO-20/talk-card-r009/H008"
+          ]
+        },
+        "talk-card-combined": {
+          "na": "Each page is checked by code to look identical to its single card file (A004 to A011), so the single-card checks cover this rule."
+        }
+      }
+    },
+    {
+      "rule_id": "T01",
+      "kind": "type",
+      "rule": "Astrid's name: Instrument Serif Regular, 34 pt with 38 pt leading, tracking +30 units, below the AV monogram (PNG: same point setting, judged relatively).",
+      "source": "brand_identity.type_system.scale[01]",
+      "cells": {
+        "speaker-onepager": {
+          "checks": [
+            "PHOTO-20/speaker-onepager/H005",
+            "PHOTO-20/speaker-onepager/H022",
+            "PHOTO-20/speaker-onepager/H007",
+            "PHOTO-20/speaker-onepager/A008"
+          ]
+        },
+        "event-announcement-r002": {
+          "checks": [
+            "PHOTO-20/event-announcement-r002/H011",
+            "PHOTO-20/event-announcement-r002/H024",
+            "PHOTO-20/event-announcement-r002/H025"
+          ]
+        },
+        "event-announcement-r003": {
+          "checks": [
+            "PHOTO-20/event-announcement-r003/H008",
+            "PHOTO-20/event-announcement-r003/H024",
+            "PHOTO-20/event-announcement-r003/H025"
+          ]
+        },
+        "event-announcement-r008": {
+          "checks": [
+            "PHOTO-20/event-announcement-r008/H011",
+            "PHOTO-20/event-announcement-r008/H024",
+            "PHOTO-20/event-announcement-r008/H025"
+          ]
+        },
+        "event-banner-r002": {
+          "checks": [
+            "PHOTO-20/event-banner-r002/H009",
+            "PHOTO-20/event-banner-r002/H022",
+            "PHOTO-20/event-banner-r002/H023"
+          ]
+        },
+        "event-banner-r003": {
+          "checks": [
+            "PHOTO-20/event-banner-r003/H010",
+            "PHOTO-20/event-banner-r003/H022",
+            "PHOTO-20/event-banner-r003/H023"
+          ]
+        },
+        "event-banner-r008": {
+          "checks": [
+            "PHOTO-20/event-banner-r008/H010",
+            "PHOTO-20/event-banner-r008/H022",
+            "PHOTO-20/event-banner-r008/H023"
+          ]
+        },
+        "talk-card-r002": {
+          "checks": [
+            "PHOTO-20/talk-card-r002/A012",
+            "PHOTO-20/talk-card-r002/H008",
+            "PHOTO-20/talk-card-r002/H020",
+            "PHOTO-20/talk-card-r002/H021"
+          ]
+        },
+        "talk-card-r003": {
+          "checks": [
+            "PHOTO-20/talk-card-r003/A012",
+            "PHOTO-20/talk-card-r003/H007",
+            "PHOTO-20/talk-card-r003/H020",
+            "PHOTO-20/talk-card-r003/H021"
+          ]
+        },
+        "talk-card-r004": {
+          "checks": [
+            "PHOTO-20/talk-card-r004/A012",
+            "PHOTO-20/talk-card-r004/H007",
+            "PHOTO-20/talk-card-r004/H020",
+            "PHOTO-20/talk-card-r004/H021"
+          ]
+        },
+        "talk-card-r005": {
+          "checks": [
+            "PHOTO-20/talk-card-r005/A012",
+            "PHOTO-20/talk-card-r005/H007",
+            "PHOTO-20/talk-card-r005/H020",
+            "PHOTO-20/talk-card-r005/H021"
+          ]
+        },
+        "talk-card-r006": {
+          "checks": [
+            "PHOTO-20/talk-card-r006/A012",
+            "PHOTO-20/talk-card-r006/H008",
+            "PHOTO-20/talk-card-r006/H021",
+            "PHOTO-20/talk-card-r006/H022"
+          ]
+        },
+        "talk-card-r007": {
+          "checks": [
+            "PHOTO-20/talk-card-r007/A012",
+            "PHOTO-20/talk-card-r007/H007",
+            "PHOTO-20/talk-card-r007/H020",
+            "PHOTO-20/talk-card-r007/H021"
+          ]
+        },
+        "talk-card-r008": {
+          "checks": [
+            "PHOTO-20/talk-card-r008/A012",
+            "PHOTO-20/talk-card-r008/H007",
+            "PHOTO-20/talk-card-r008/H020",
+            "PHOTO-20/talk-card-r008/H021"
+          ]
+        },
+        "talk-card-r009": {
+          "checks": [
+            "PHOTO-20/talk-card-r009/A012",
+            "PHOTO-20/talk-card-r009/H007",
+            "PHOTO-20/talk-card-r009/H020",
+            "PHOTO-20/talk-card-r009/H021"
+          ]
+        },
+        "talk-card-combined": {
+          "na": "Each page is checked by code to look identical to its single card file (A004 to A011), so the single-card checks cover this rule."
+        }
+      }
+    },
+    {
+      "rule_id": "T02",
+      "kind": "type",
+      "rule": "Talk title: Inter Medium, tracking -5 units; 64 px with 70 px leading on PNGs; PDF size chosen to fit, below the 34 pt name.",
+      "source": "brand_identity.type_system.scale[02]",
+      "cells": {
+        "speaker-onepager": {
+          "checks": [
+            "PHOTO-20/speaker-onepager/A009",
+            "PHOTO-20/speaker-onepager/A010",
+            "PHOTO-20/speaker-onepager/A011",
+            "PHOTO-20/speaker-onepager/H007",
+            "PHOTO-20/speaker-onepager/H040"
+          ]
+        },
+        "event-announcement-r002": {
+          "checks": [
+            "PHOTO-20/event-announcement-r002/H044",
+            "PHOTO-20/event-announcement-r002/H057"
+          ]
+        },
+        "event-announcement-r003": {
+          "checks": [
+            "PHOTO-20/event-announcement-r003/H044",
+            "PHOTO-20/event-announcement-r003/H057"
+          ]
+        },
+        "event-announcement-r008": {
+          "checks": [
+            "PHOTO-20/event-announcement-r008/H044",
+            "PHOTO-20/event-announcement-r008/H057"
+          ]
+        },
+        "event-banner-r002": {
+          "checks": [
+            "PHOTO-20/event-banner-r002/H010",
+            "PHOTO-20/event-banner-r002/H042"
+          ]
+        },
+        "event-banner-r003": {
+          "checks": [
+            "PHOTO-20/event-banner-r003/H011",
+            "PHOTO-20/event-banner-r003/H042"
+          ]
+        },
+        "event-banner-r008": {
+          "checks": [
+            "PHOTO-20/event-banner-r008/H011",
+            "PHOTO-20/event-banner-r008/H042"
+          ]
+        },
+        "talk-card-r002": {
+          "checks": [
+            "PHOTO-20/talk-card-r002/A013",
+            "PHOTO-20/talk-card-r002/H007",
+            "PHOTO-20/talk-card-r002/H040",
+            "PHOTO-20/talk-card-r002/H052"
+          ]
+        },
+        "talk-card-r003": {
+          "checks": [
+            "PHOTO-20/talk-card-r003/A013",
+            "PHOTO-20/talk-card-r003/H006",
+            "PHOTO-20/talk-card-r003/H040",
+            "PHOTO-20/talk-card-r003/H052"
+          ]
+        },
+        "talk-card-r004": {
+          "checks": [
+            "PHOTO-20/talk-card-r004/A013",
+            "PHOTO-20/talk-card-r004/H006",
+            "PHOTO-20/talk-card-r004/H040",
+            "PHOTO-20/talk-card-r004/H052"
+          ]
+        },
+        "talk-card-r005": {
+          "checks": [
+            "PHOTO-20/talk-card-r005/A013",
+            "PHOTO-20/talk-card-r005/H006",
+            "PHOTO-20/talk-card-r005/H040",
+            "PHOTO-20/talk-card-r005/H052"
+          ]
+        },
+        "talk-card-r006": {
+          "checks": [
+            "PHOTO-20/talk-card-r006/A013",
+            "PHOTO-20/talk-card-r006/H005",
+            "PHOTO-20/talk-card-r006/H040",
+            "PHOTO-20/talk-card-r006/H052"
+          ]
+        },
+        "talk-card-r007": {
+          "checks": [
+            "PHOTO-20/talk-card-r007/A013",
+            "PHOTO-20/talk-card-r007/H006",
+            "PHOTO-20/talk-card-r007/H040",
+            "PHOTO-20/talk-card-r007/H052"
+          ]
+        },
+        "talk-card-r008": {
+          "checks": [
+            "PHOTO-20/talk-card-r008/A013",
+            "PHOTO-20/talk-card-r008/H006",
+            "PHOTO-20/talk-card-r008/H040",
+            "PHOTO-20/talk-card-r008/H052"
+          ]
+        },
+        "talk-card-r009": {
+          "checks": [
+            "PHOTO-20/talk-card-r009/A013",
+            "PHOTO-20/talk-card-r009/H006",
+            "PHOTO-20/talk-card-r009/H040",
+            "PHOTO-20/talk-card-r009/H052"
+          ]
+        },
+        "talk-card-combined": {
+          "na": "Each page is checked by code to look identical to its single card file (A004 to A011), so the single-card checks cover this rule."
+        }
+      }
+    },
+    {
+      "rule_id": "T03",
+      "kind": "type",
+      "rule": "Body, bio and running text: Inter Regular, 9.5 pt with 13 pt leading, tracking 0, at most 65 characters per line.",
+      "source": "brand_identity.type_system.scale[03]",
+      "cells": {
+        "speaker-onepager": {
+          "checks": [
+            "PHOTO-20/speaker-onepager/A012",
+            "PHOTO-20/speaker-onepager/A013",
+            "PHOTO-20/speaker-onepager/A014",
+            "PHOTO-20/speaker-onepager/A015",
+            "PHOTO-20/speaker-onepager/A016",
+            "PHOTO-20/speaker-onepager/H028",
+            "PHOTO-20/speaker-onepager/H029"
+          ]
+        },
+        "event-announcement-r002": {
+          "checks": [
+            "PHOTO-20/event-announcement-r002/H031",
+            "PHOTO-20/event-announcement-r002/H032"
+          ]
+        },
+        "event-announcement-r003": {
+          "checks": [
+            "PHOTO-20/event-announcement-r003/H031",
+            "PHOTO-20/event-announcement-r003/H032"
+          ]
+        },
+        "event-announcement-r008": {
+          "checks": [
+            "PHOTO-20/event-announcement-r008/H031",
+            "PHOTO-20/event-announcement-r008/H032"
+          ]
+        },
+        "event-banner-r002": {
+          "checks": [
+            "PHOTO-20/event-banner-r002/H030",
+            "PHOTO-20/event-banner-r002/H046"
+          ]
+        },
+        "event-banner-r003": {
+          "checks": [
+            "PHOTO-20/event-banner-r003/H030",
+            "PHOTO-20/event-banner-r003/H046"
+          ]
+        },
+        "event-banner-r008": {
+          "checks": [
+            "PHOTO-20/event-banner-r008/H030",
+            "PHOTO-20/event-banner-r008/H046"
+          ]
+        },
+        "talk-card-r002": {
+          "checks": [
+            "PHOTO-20/talk-card-r002/H028",
+            "PHOTO-20/talk-card-r002/H042"
+          ]
+        },
+        "talk-card-r003": {
+          "checks": [
+            "PHOTO-20/talk-card-r003/H028",
+            "PHOTO-20/talk-card-r003/H042"
+          ]
+        },
+        "talk-card-r004": {
+          "checks": [
+            "PHOTO-20/talk-card-r004/H028",
+            "PHOTO-20/talk-card-r004/H042"
+          ]
+        },
+        "talk-card-r005": {
+          "checks": [
+            "PHOTO-20/talk-card-r005/H028",
+            "PHOTO-20/talk-card-r005/H042"
+          ]
+        },
+        "talk-card-r006": {
+          "checks": [
+            "PHOTO-20/talk-card-r006/H028",
+            "PHOTO-20/talk-card-r006/H042"
+          ]
+        },
+        "talk-card-r007": {
+          "checks": [
+            "PHOTO-20/talk-card-r007/H028",
+            "PHOTO-20/talk-card-r007/H042"
+          ]
+        },
+        "talk-card-r008": {
+          "checks": [
+            "PHOTO-20/talk-card-r008/H028",
+            "PHOTO-20/talk-card-r008/H042"
+          ]
+        },
+        "talk-card-r009": {
+          "checks": [
+            "PHOTO-20/talk-card-r009/H028",
+            "PHOTO-20/talk-card-r009/H042"
+          ]
+        },
+        "talk-card-combined": {
+          "na": "Each page is checked by code to look identical to its single card file (A004 to A011), so the single-card checks cover this rule."
+        }
+      }
+    },
+    {
+      "rule_id": "T04",
+      "kind": "type",
+      "rule": "Fine print, event and date line: Inter Regular, 28 px with 36 px leading on PNGs, 9.5 pt with 13 pt on talk-card PDFs; tracking +15 units.",
+      "source": "brand_identity.type_system.scale[04]",
+      "cells": {
+        "speaker-onepager": {
+          "checks": [
+            "PHOTO-20/speaker-onepager/H046"
+          ]
+        },
+        "event-announcement-r002": {
+          "checks": [
+            "PHOTO-20/event-announcement-r002/H052"
+          ]
+        },
+        "event-announcement-r003": {
+          "checks": [
+            "PHOTO-20/event-announcement-r003/H052"
+          ]
+        },
+        "event-announcement-r008": {
+          "checks": [
+            "PHOTO-20/event-announcement-r008/H052"
+          ]
+        },
+        "event-banner-r002": {
+          "checks": [
+            "PHOTO-20/event-banner-r002/H029"
+          ]
+        },
+        "event-banner-r003": {
+          "checks": [
+            "PHOTO-20/event-banner-r003/H029"
+          ]
+        },
+        "event-banner-r008": {
+          "checks": [
+            "PHOTO-20/event-banner-r008/H029"
+          ]
+        },
+        "talk-card-r002": {
+          "checks": [
+            "PHOTO-20/talk-card-r002/A014",
+            "PHOTO-20/talk-card-r002/A015",
+            "PHOTO-20/talk-card-r002/A016",
+            "PHOTO-20/talk-card-r002/H027"
+          ]
+        },
+        "talk-card-r003": {
+          "checks": [
+            "PHOTO-20/talk-card-r003/A014",
+            "PHOTO-20/talk-card-r003/A015",
+            "PHOTO-20/talk-card-r003/A016",
+            "PHOTO-20/talk-card-r003/H027"
+          ]
+        },
+        "talk-card-r004": {
+          "checks": [
+            "PHOTO-20/talk-card-r004/A014",
+            "PHOTO-20/talk-card-r004/A015",
+            "PHOTO-20/talk-card-r004/A016",
+            "PHOTO-20/talk-card-r004/H027"
+          ]
+        },
+        "talk-card-r005": {
+          "checks": [
+            "PHOTO-20/talk-card-r005/A014",
+            "PHOTO-20/talk-card-r005/A015",
+            "PHOTO-20/talk-card-r005/A016",
+            "PHOTO-20/talk-card-r005/H027"
+          ]
+        },
+        "talk-card-r006": {
+          "checks": [
+            "PHOTO-20/talk-card-r006/A014",
+            "PHOTO-20/talk-card-r006/A015",
+            "PHOTO-20/talk-card-r006/A016",
+            "PHOTO-20/talk-card-r006/H004"
+          ]
+        },
+        "talk-card-r007": {
+          "checks": [
+            "PHOTO-20/talk-card-r007/A014",
+            "PHOTO-20/talk-card-r007/A015",
+            "PHOTO-20/talk-card-r007/A016",
+            "PHOTO-20/talk-card-r007/H027"
+          ]
+        },
+        "talk-card-r008": {
+          "checks": [
+            "PHOTO-20/talk-card-r008/A014",
+            "PHOTO-20/talk-card-r008/A015",
+            "PHOTO-20/talk-card-r008/A016",
+            "PHOTO-20/talk-card-r008/H027"
+          ]
+        },
+        "talk-card-r009": {
+          "checks": [
+            "PHOTO-20/talk-card-r009/A014",
+            "PHOTO-20/talk-card-r009/A015",
+            "PHOTO-20/talk-card-r009/A016",
+            "PHOTO-20/talk-card-r009/H027"
+          ]
+        },
+        "talk-card-combined": {
+          "na": "Each page is checked by code to look identical to its single card file (A004 to A011), so the single-card checks cover this rule."
+        }
+      }
+    },
+    {
+      "rule_id": "T05",
+      "kind": "type",
+      "rule": "Instrument Serif Regular is for Astrid's name and the AV monogram only; talk titles are Inter Medium, running copy and fine print Roman.",
+      "source": "brand_identity.type_system.rules[1]",
+      "cells": {
+        "speaker-onepager": {
+          "checks": [
+            "PHOTO-20/speaker-onepager/H027"
+          ]
+        },
+        "event-announcement-r002": {
+          "checks": [
+            "PHOTO-20/event-announcement-r002/H030"
+          ]
+        },
+        "event-announcement-r003": {
+          "checks": [
+            "PHOTO-20/event-announcement-r003/H030"
+          ]
+        },
+        "event-announcement-r008": {
+          "checks": [
+            "PHOTO-20/event-announcement-r008/H030"
+          ]
+        },
+        "event-banner-r002": {
+          "checks": [
+            "PHOTO-20/event-banner-r002/H028"
+          ]
+        },
+        "event-banner-r003": {
+          "checks": [
+            "PHOTO-20/event-banner-r003/H028"
+          ]
+        },
+        "event-banner-r008": {
+          "checks": [
+            "PHOTO-20/event-banner-r008/H028"
+          ]
+        },
+        "talk-card-r002": {
+          "checks": [
+            "PHOTO-20/talk-card-r002/H026"
+          ]
+        },
+        "talk-card-r003": {
+          "checks": [
+            "PHOTO-20/talk-card-r003/H026"
+          ]
+        },
+        "talk-card-r004": {
+          "checks": [
+            "PHOTO-20/talk-card-r004/H026"
+          ]
+        },
+        "talk-card-r005": {
+          "checks": [
+            "PHOTO-20/talk-card-r005/H026"
+          ]
+        },
+        "talk-card-r006": {
+          "checks": [
+            "PHOTO-20/talk-card-r006/H027"
+          ]
+        },
+        "talk-card-r007": {
+          "checks": [
+            "PHOTO-20/talk-card-r007/H026"
+          ]
+        },
+        "talk-card-r008": {
+          "checks": [
+            "PHOTO-20/talk-card-r008/H026"
+          ]
+        },
+        "talk-card-r009": {
+          "checks": [
+            "PHOTO-20/talk-card-r009/H026"
+          ]
+        },
+        "talk-card-combined": {
+          "na": "Each page is checked by code to look identical to its single card file (A004 to A011), so the single-card checks cover this rule."
+        }
+      }
+    },
+    {
+      "rule_id": "T06",
+      "kind": "type",
+      "rule": "The AV monogram appears once per surface, with its interlocking A and V retained.",
+      "source": "brand_identity.type_system.rules[2]",
+      "cells": {
+        "speaker-onepager": {
+          "checks": [
+            "PHOTO-20/speaker-onepager/H023"
+          ]
+        },
+        "event-announcement-r002": {
+          "checks": [
+            "PHOTO-20/event-announcement-r002/H026"
+          ]
+        },
+        "event-announcement-r003": {
+          "checks": [
+            "PHOTO-20/event-announcement-r003/H026"
+          ]
+        },
+        "event-announcement-r008": {
+          "checks": [
+            "PHOTO-20/event-announcement-r008/H026"
+          ]
+        },
+        "event-banner-r002": {
+          "checks": [
+            "PHOTO-20/event-banner-r002/H024"
+          ]
+        },
+        "event-banner-r003": {
+          "checks": [
+            "PHOTO-20/event-banner-r003/H024"
+          ]
+        },
+        "event-banner-r008": {
+          "checks": [
+            "PHOTO-20/event-banner-r008/H024"
+          ]
+        },
+        "talk-card-r002": {
+          "checks": [
+            "PHOTO-20/talk-card-r002/H022"
+          ]
+        },
+        "talk-card-r003": {
+          "checks": [
+            "PHOTO-20/talk-card-r003/H022"
+          ]
+        },
+        "talk-card-r004": {
+          "checks": [
+            "PHOTO-20/talk-card-r004/H022"
+          ]
+        },
+        "talk-card-r005": {
+          "checks": [
+            "PHOTO-20/talk-card-r005/H022"
+          ]
+        },
+        "talk-card-r006": {
+          "checks": [
+            "PHOTO-20/talk-card-r006/H023"
+          ]
+        },
+        "talk-card-r007": {
+          "checks": [
+            "PHOTO-20/talk-card-r007/H022"
+          ]
+        },
+        "talk-card-r008": {
+          "checks": [
+            "PHOTO-20/talk-card-r008/H022"
+          ]
+        },
+        "talk-card-r009": {
+          "checks": [
+            "PHOTO-20/talk-card-r009/H022"
+          ]
+        },
+        "talk-card-combined": {
+          "na": "Each page is checked by code to look identical to its single card file (A004 to A011), so the single-card checks cover this rule."
+        }
+      }
+    },
+    {
+      "rule_id": "T07",
+      "kind": "type",
+      "rule": "The monogram sits above Astrid's name and before the portrait in reading order.",
+      "source": "brand_identity.type_system.rules[2]",
+      "cells": {
+        "speaker-onepager": {
+          "checks": [
+            "PHOTO-20/speaker-onepager/H022",
+            "PHOTO-20/speaker-onepager/H026"
+          ]
+        },
+        "event-announcement-r002": {
+          "checks": [
+            "PHOTO-20/event-announcement-r002/H025",
+            "PHOTO-20/event-announcement-r002/H029"
+          ]
+        },
+        "event-announcement-r003": {
+          "checks": [
+            "PHOTO-20/event-announcement-r003/H025",
+            "PHOTO-20/event-announcement-r003/H029"
+          ]
+        },
+        "event-announcement-r008": {
+          "checks": [
+            "PHOTO-20/event-announcement-r008/H025",
+            "PHOTO-20/event-announcement-r008/H029"
+          ]
+        },
+        "event-banner-r002": {
+          "checks": [
+            "PHOTO-20/event-banner-r002/H023",
+            "PHOTO-20/event-banner-r002/H027"
+          ]
+        },
+        "event-banner-r003": {
+          "checks": [
+            "PHOTO-20/event-banner-r003/H023",
+            "PHOTO-20/event-banner-r003/H027"
+          ]
+        },
+        "event-banner-r008": {
+          "checks": [
+            "PHOTO-20/event-banner-r008/H023",
+            "PHOTO-20/event-banner-r008/H027"
+          ]
+        },
+        "talk-card-r002": {
+          "checks": [
+            "PHOTO-20/talk-card-r002/H021",
+            "PHOTO-20/talk-card-r002/H025"
+          ]
+        },
+        "talk-card-r003": {
+          "checks": [
+            "PHOTO-20/talk-card-r003/H021",
+            "PHOTO-20/talk-card-r003/H025"
+          ]
+        },
+        "talk-card-r004": {
+          "checks": [
+            "PHOTO-20/talk-card-r004/H021",
+            "PHOTO-20/talk-card-r004/H025"
+          ]
+        },
+        "talk-card-r005": {
+          "checks": [
+            "PHOTO-20/talk-card-r005/H021",
+            "PHOTO-20/talk-card-r005/H025"
+          ]
+        },
+        "talk-card-r006": {
+          "checks": [
+            "PHOTO-20/talk-card-r006/H022",
+            "PHOTO-20/talk-card-r006/H026"
+          ]
+        },
+        "talk-card-r007": {
+          "checks": [
+            "PHOTO-20/talk-card-r007/H021",
+            "PHOTO-20/talk-card-r007/H025"
+          ]
+        },
+        "talk-card-r008": {
+          "checks": [
+            "PHOTO-20/talk-card-r008/H021",
+            "PHOTO-20/talk-card-r008/H025"
+          ]
+        },
+        "talk-card-r009": {
+          "checks": [
+            "PHOTO-20/talk-card-r009/H021",
+            "PHOTO-20/talk-card-r009/H025"
+          ]
+        },
+        "talk-card-combined": {
+          "na": "Each page is checked by code to look identical to its single card file (A004 to A011), so the single-card checks cover this rule."
+        }
+      }
+    },
+    {
+      "rule_id": "T08",
+      "kind": "type",
+      "rule": "The AV monogram is at least 18 mm wide in a PDF and 69 px wide on a PNG.",
+      "source": "brand_identity.type_system.rules[3]",
+      "cells": {
+        "speaker-onepager": {
+          "checks": [
+            "PHOTO-20/speaker-onepager/H050"
+          ]
+        },
+        "event-announcement-r002": {
+          "na": "A 69 px minimum width cannot be judged by eye on a PNG; exact raster sizes are not checked."
+        },
+        "event-announcement-r003": {
+          "na": "A 69 px minimum width cannot be judged by eye on a PNG; exact raster sizes are not checked."
+        },
+        "event-announcement-r008": {
+          "na": "A 69 px minimum width cannot be judged by eye on a PNG; exact raster sizes are not checked."
+        },
+        "event-banner-r002": {
+          "na": "A 69 px minimum width cannot be judged by eye on a PNG; exact raster sizes are not checked."
+        },
+        "event-banner-r003": {
+          "na": "A 69 px minimum width cannot be judged by eye on a PNG; exact raster sizes are not checked."
+        },
+        "event-banner-r008": {
+          "na": "A 69 px minimum width cannot be judged by eye on a PNG; exact raster sizes are not checked."
+        },
+        "talk-card-r002": {
+          "checks": [
+            "PHOTO-20/talk-card-r002/H050"
+          ]
+        },
+        "talk-card-r003": {
+          "checks": [
+            "PHOTO-20/talk-card-r003/H050"
+          ]
+        },
+        "talk-card-r004": {
+          "checks": [
+            "PHOTO-20/talk-card-r004/H050"
+          ]
+        },
+        "talk-card-r005": {
+          "checks": [
+            "PHOTO-20/talk-card-r005/H050"
+          ]
+        },
+        "talk-card-r006": {
+          "checks": [
+            "PHOTO-20/talk-card-r006/H050"
+          ]
+        },
+        "talk-card-r007": {
+          "checks": [
+            "PHOTO-20/talk-card-r007/H050"
+          ]
+        },
+        "talk-card-r008": {
+          "checks": [
+            "PHOTO-20/talk-card-r008/H050"
+          ]
+        },
+        "talk-card-r009": {
+          "checks": [
+            "PHOTO-20/talk-card-r009/H050"
+          ]
+        },
+        "talk-card-combined": {
+          "na": "Each page is checked by code to look identical to its single card file (A004 to A011), so the single-card checks cover this rule."
+        }
+      }
+    },
+    {
+      "rule_id": "T09",
+      "kind": "type",
+      "rule": "Signature move, the shared stroke: the two inner diagonals of the interlocked A and V read as one hairline.",
+      "source": "brand_identity.type_system.signature_move",
+      "cells": {
+        "speaker-onepager": {
+          "checks": [
+            "PHOTO-20/speaker-onepager/H024"
+          ]
+        },
+        "event-announcement-r002": {
+          "checks": [
+            "PHOTO-20/event-announcement-r002/H027"
+          ]
+        },
+        "event-announcement-r003": {
+          "checks": [
+            "PHOTO-20/event-announcement-r003/H027"
+          ]
+        },
+        "event-announcement-r008": {
+          "checks": [
+            "PHOTO-20/event-announcement-r008/H027"
+          ]
+        },
+        "event-banner-r002": {
+          "checks": [
+            "PHOTO-20/event-banner-r002/H025"
+          ]
+        },
+        "event-banner-r003": {
+          "checks": [
+            "PHOTO-20/event-banner-r003/H025"
+          ]
+        },
+        "event-banner-r008": {
+          "checks": [
+            "PHOTO-20/event-banner-r008/H025"
+          ]
+        },
+        "talk-card-r002": {
+          "checks": [
+            "PHOTO-20/talk-card-r002/H023"
+          ]
+        },
+        "talk-card-r003": {
+          "checks": [
+            "PHOTO-20/talk-card-r003/H023"
+          ]
+        },
+        "talk-card-r004": {
+          "checks": [
+            "PHOTO-20/talk-card-r004/H023"
+          ]
+        },
+        "talk-card-r005": {
+          "checks": [
+            "PHOTO-20/talk-card-r005/H023"
+          ]
+        },
+        "talk-card-r006": {
+          "checks": [
+            "PHOTO-20/talk-card-r006/H024"
+          ]
+        },
+        "talk-card-r007": {
+          "checks": [
+            "PHOTO-20/talk-card-r007/H023"
+          ]
+        },
+        "talk-card-r008": {
+          "checks": [
+            "PHOTO-20/talk-card-r008/H023"
+          ]
+        },
+        "talk-card-r009": {
+          "checks": [
+            "PHOTO-20/talk-card-r009/H023"
+          ]
+        },
+        "talk-card-combined": {
+          "na": "Each page is checked by code to look identical to its single card file (A004 to A011), so the single-card checks cover this rule."
+        }
+      }
+    },
+    {
+      "rule_id": "T10",
+      "kind": "type",
+      "rule": "The combined talk-card PDF retains the type settings of its eight individual cards without scaling the pages.",
+      "source": "brand_identity.type_system.rules[4]",
+      "cells": {
+        "speaker-onepager": {
+          "na": "This rule governs the combined talk-card PDF only, not single files."
+        },
+        "event-announcement-r002": {
+          "na": "This rule governs the combined talk-card PDF only, not single files."
+        },
+        "event-announcement-r003": {
+          "na": "This rule governs the combined talk-card PDF only, not single files."
+        },
+        "event-announcement-r008": {
+          "na": "This rule governs the combined talk-card PDF only, not single files."
+        },
+        "event-banner-r002": {
+          "na": "This rule governs the combined talk-card PDF only, not single files."
+        },
+        "event-banner-r003": {
+          "na": "This rule governs the combined talk-card PDF only, not single files."
+        },
+        "event-banner-r008": {
+          "na": "This rule governs the combined talk-card PDF only, not single files."
+        },
+        "talk-card-r002": {
+          "na": "This rule governs the combined talk-card PDF only, not single files."
+        },
+        "talk-card-r003": {
+          "na": "This rule governs the combined talk-card PDF only, not single files."
+        },
+        "talk-card-r004": {
+          "na": "This rule governs the combined talk-card PDF only, not single files."
+        },
+        "talk-card-r005": {
+          "na": "This rule governs the combined talk-card PDF only, not single files."
+        },
+        "talk-card-r006": {
+          "na": "This rule governs the combined talk-card PDF only, not single files."
+        },
+        "talk-card-r007": {
+          "na": "This rule governs the combined talk-card PDF only, not single files."
+        },
+        "talk-card-r008": {
+          "na": "This rule governs the combined talk-card PDF only, not single files."
+        },
+        "talk-card-r009": {
+          "na": "This rule governs the combined talk-card PDF only, not single files."
+        },
+        "talk-card-combined": {
+          "checks": [
+            "PHOTO-20/talk-card-combined/A004",
+            "PHOTO-20/talk-card-combined/A005",
+            "PHOTO-20/talk-card-combined/A006",
+            "PHOTO-20/talk-card-combined/A007",
+            "PHOTO-20/talk-card-combined/A008",
+            "PHOTO-20/talk-card-combined/A009",
+            "PHOTO-20/talk-card-combined/A010",
+            "PHOTO-20/talk-card-combined/A011"
+          ]
+        }
+      }
+    },
+    {
+      "rule_id": "R01",
+      "kind": "brief",
+      "rule": "What stays fixed: Astrid's identity, approved biography, exact talk titles, dates and event assignments.",
+      "source": "client_brief: What stays fixed",
+      "cells": {
+        "speaker-onepager": {
+          "checks": [
+            "PHOTO-20/speaker-onepager/H002"
+          ]
+        },
+        "event-announcement-r002": {
+          "checks": [
+            "PHOTO-20/event-announcement-r002/H004",
+            "PHOTO-20/event-announcement-r002/H005",
+            "PHOTO-20/event-announcement-r002/H006"
+          ]
+        },
+        "event-announcement-r003": {
+          "checks": [
+            "PHOTO-20/event-announcement-r003/H004",
+            "PHOTO-20/event-announcement-r003/H005",
+            "PHOTO-20/event-announcement-r003/H006"
+          ]
+        },
+        "event-announcement-r008": {
+          "checks": [
+            "PHOTO-20/event-announcement-r008/H004",
+            "PHOTO-20/event-announcement-r008/H005",
+            "PHOTO-20/event-announcement-r008/H006"
+          ]
+        },
+        "event-banner-r002": {
+          "checks": [
+            "PHOTO-20/event-banner-r002/H003",
+            "PHOTO-20/event-banner-r002/H004",
+            "PHOTO-20/event-banner-r002/H005"
+          ]
+        },
+        "event-banner-r003": {
+          "checks": [
+            "PHOTO-20/event-banner-r003/H003",
+            "PHOTO-20/event-banner-r003/H004",
+            "PHOTO-20/event-banner-r003/H005"
+          ]
+        },
+        "event-banner-r008": {
+          "checks": [
+            "PHOTO-20/event-banner-r008/H003",
+            "PHOTO-20/event-banner-r008/H004",
+            "PHOTO-20/event-banner-r008/H005"
+          ]
+        },
+        "talk-card-r002": {
+          "checks": [
+            "PHOTO-20/talk-card-r002/A006",
+            "PHOTO-20/talk-card-r002/A007",
+            "PHOTO-20/talk-card-r002/A008",
+            "PHOTO-20/talk-card-r002/A009",
+            "PHOTO-20/talk-card-r002/H001"
+          ]
+        },
+        "talk-card-r003": {
+          "checks": [
+            "PHOTO-20/talk-card-r003/A006",
+            "PHOTO-20/talk-card-r003/A007",
+            "PHOTO-20/talk-card-r003/A008",
+            "PHOTO-20/talk-card-r003/A009",
+            "PHOTO-20/talk-card-r003/H001"
+          ]
+        },
+        "talk-card-r004": {
+          "checks": [
+            "PHOTO-20/talk-card-r004/A006",
+            "PHOTO-20/talk-card-r004/A007",
+            "PHOTO-20/talk-card-r004/A008",
+            "PHOTO-20/talk-card-r004/A009",
+            "PHOTO-20/talk-card-r004/H001"
+          ]
+        },
+        "talk-card-r005": {
+          "checks": [
+            "PHOTO-20/talk-card-r005/A006",
+            "PHOTO-20/talk-card-r005/A007",
+            "PHOTO-20/talk-card-r005/A008",
+            "PHOTO-20/talk-card-r005/A009",
+            "PHOTO-20/talk-card-r005/H001"
+          ]
+        },
+        "talk-card-r006": {
+          "checks": [
+            "PHOTO-20/talk-card-r006/A006",
+            "PHOTO-20/talk-card-r006/A007",
+            "PHOTO-20/talk-card-r006/A008",
+            "PHOTO-20/talk-card-r006/A009",
+            "PHOTO-20/talk-card-r006/H001"
+          ]
+        },
+        "talk-card-r007": {
+          "checks": [
+            "PHOTO-20/talk-card-r007/A006",
+            "PHOTO-20/talk-card-r007/A007",
+            "PHOTO-20/talk-card-r007/A008",
+            "PHOTO-20/talk-card-r007/A009",
+            "PHOTO-20/talk-card-r007/H001"
+          ]
+        },
+        "talk-card-r008": {
+          "checks": [
+            "PHOTO-20/talk-card-r008/A006",
+            "PHOTO-20/talk-card-r008/A007",
+            "PHOTO-20/talk-card-r008/A008",
+            "PHOTO-20/talk-card-r008/A009",
+            "PHOTO-20/talk-card-r008/H001"
+          ]
+        },
+        "talk-card-r009": {
+          "checks": [
+            "PHOTO-20/talk-card-r009/A006",
+            "PHOTO-20/talk-card-r009/A007",
+            "PHOTO-20/talk-card-r009/A008",
+            "PHOTO-20/talk-card-r009/A009",
+            "PHOTO-20/talk-card-r009/H001"
+          ]
+        },
+        "talk-card-combined": {
+          "checks": [
+            "PHOTO-20/talk-card-combined/A004",
+            "PHOTO-20/talk-card-combined/A005",
+            "PHOTO-20/talk-card-combined/A006",
+            "PHOTO-20/talk-card-combined/A007",
+            "PHOTO-20/talk-card-combined/A008",
+            "PHOTO-20/talk-card-combined/A009",
+            "PHOTO-20/talk-card-combined/A010",
+            "PHOTO-20/talk-card-combined/A011"
+          ]
+        }
+      }
+    },
+    {
+      "rule_id": "R02",
+      "kind": "brief",
+      "rule": "Keep the biography factual and include only approved facts.",
+      "source": "client_brief; truth_constraints[0]",
+      "cells": {
+        "speaker-onepager": {
+          "checks": [
+            "PHOTO-20/speaker-onepager/H001",
+            "PHOTO-20/speaker-onepager/H009",
+            "PHOTO-20/speaker-onepager/H010",
+            "PHOTO-20/speaker-onepager/H053"
+          ]
+        },
+        "event-announcement-r002": {
+          "na": "Only the one-pager carries the approved biography by commission."
+        },
+        "event-announcement-r003": {
+          "na": "Only the one-pager carries the approved biography by commission."
+        },
+        "event-announcement-r008": {
+          "na": "Only the one-pager carries the approved biography by commission."
+        },
+        "event-banner-r002": {
+          "na": "Only the one-pager carries the approved biography by commission."
+        },
+        "event-banner-r003": {
+          "na": "Only the one-pager carries the approved biography by commission."
+        },
+        "event-banner-r008": {
+          "na": "Only the one-pager carries the approved biography by commission."
+        },
+        "talk-card-r002": {
+          "na": "Only the one-pager carries the approved biography by commission."
+        },
+        "talk-card-r003": {
+          "na": "Only the one-pager carries the approved biography by commission."
+        },
+        "talk-card-r004": {
+          "na": "Only the one-pager carries the approved biography by commission."
+        },
+        "talk-card-r005": {
+          "na": "Only the one-pager carries the approved biography by commission."
+        },
+        "talk-card-r006": {
+          "na": "Only the one-pager carries the approved biography by commission."
+        },
+        "talk-card-r007": {
+          "na": "Only the one-pager carries the approved biography by commission."
+        },
+        "talk-card-r008": {
+          "na": "Only the one-pager carries the approved biography by commission."
+        },
+        "talk-card-r009": {
+          "na": "Only the one-pager carries the approved biography by commission."
+        },
+        "talk-card-combined": {
+          "na": "Only the one-pager carries the approved biography by commission."
+        }
+      }
+    },
+    {
+      "rule_id": "R03",
+      "kind": "brief",
+      "rule": "Each surface uses its record's assigned portrait from the supplied session frames, never a generated or stock face.",
+      "source": "client_brief; deliverables[].source_image",
+      "cells": {
+        "speaker-onepager": {
+          "checks": [
+            "PHOTO-20/speaker-onepager/H015"
+          ]
+        },
+        "event-announcement-r002": {
+          "checks": [
+            "PHOTO-20/event-announcement-r002/H013",
+            "PHOTO-20/event-announcement-r002/H014"
+          ]
+        },
+        "event-announcement-r003": {
+          "checks": [
+            "PHOTO-20/event-announcement-r003/H013",
+            "PHOTO-20/event-announcement-r003/H014"
+          ]
+        },
+        "event-announcement-r008": {
+          "checks": [
+            "PHOTO-20/event-announcement-r008/H013",
+            "PHOTO-20/event-announcement-r008/H014"
+          ]
+        },
+        "event-banner-r002": {
+          "checks": [
+            "PHOTO-20/event-banner-r002/H002",
+            "PHOTO-20/event-banner-r002/H012"
+          ]
+        },
+        "event-banner-r003": {
+          "checks": [
+            "PHOTO-20/event-banner-r003/H002",
+            "PHOTO-20/event-banner-r003/H006"
+          ]
+        },
+        "event-banner-r008": {
+          "checks": [
+            "PHOTO-20/event-banner-r008/H002",
+            "PHOTO-20/event-banner-r008/H013"
+          ]
+        },
+        "talk-card-r002": {
+          "checks": [
+            "PHOTO-20/talk-card-r002/H013",
+            "PHOTO-20/talk-card-r002/H014",
+            "PHOTO-20/talk-card-r002/H056"
+          ]
+        },
+        "talk-card-r003": {
+          "checks": [
+            "PHOTO-20/talk-card-r003/H013",
+            "PHOTO-20/talk-card-r003/H014",
+            "PHOTO-20/talk-card-r003/H055"
+          ]
+        },
+        "talk-card-r004": {
+          "checks": [
+            "PHOTO-20/talk-card-r004/H013",
+            "PHOTO-20/talk-card-r004/H014",
+            "PHOTO-20/talk-card-r004/H055"
+          ]
+        },
+        "talk-card-r005": {
+          "checks": [
+            "PHOTO-20/talk-card-r005/H013",
+            "PHOTO-20/talk-card-r005/H014",
+            "PHOTO-20/talk-card-r005/H055"
+          ]
+        },
+        "talk-card-r006": {
+          "checks": [
+            "PHOTO-20/talk-card-r006/H014",
+            "PHOTO-20/talk-card-r006/H015",
+            "PHOTO-20/talk-card-r006/H055"
+          ]
+        },
+        "talk-card-r007": {
+          "checks": [
+            "PHOTO-20/talk-card-r007/H013",
+            "PHOTO-20/talk-card-r007/H014"
+          ]
+        },
+        "talk-card-r008": {
+          "checks": [
+            "PHOTO-20/talk-card-r008/H013",
+            "PHOTO-20/talk-card-r008/H014",
+            "PHOTO-20/talk-card-r008/H055"
+          ]
+        },
+        "talk-card-r009": {
+          "checks": [
+            "PHOTO-20/talk-card-r009/H013",
+            "PHOTO-20/talk-card-r009/H014",
+            "PHOTO-20/talk-card-r009/H055"
+          ]
+        },
+        "talk-card-combined": {
+          "na": "Each page is checked by code to look identical to its single card file (A004 to A011), so the single-card checks cover this rule."
+        }
+      }
+    },
+    {
+      "rule_id": "R04",
+      "kind": "brief",
+      "rule": "Preserve identity: retouching may not change what the subject is.",
+      "source": "truth_constraints[3]",
+      "cells": {
+        "speaker-onepager": {
+          "checks": [
+            "PHOTO-20/speaker-onepager/H018"
+          ]
+        },
+        "event-announcement-r002": {
+          "checks": [
+            "PHOTO-20/event-announcement-r002/H015",
+            "PHOTO-20/event-announcement-r002/H016"
+          ]
+        },
+        "event-announcement-r003": {
+          "checks": [
+            "PHOTO-20/event-announcement-r003/H015",
+            "PHOTO-20/event-announcement-r003/H016"
+          ]
+        },
+        "event-announcement-r008": {
+          "checks": [
+            "PHOTO-20/event-announcement-r008/H015",
+            "PHOTO-20/event-announcement-r008/H016"
+          ]
+        },
+        "event-banner-r002": {
+          "checks": [
+            "PHOTO-20/event-banner-r002/H013",
+            "PHOTO-20/event-banner-r002/H014"
+          ]
+        },
+        "event-banner-r003": {
+          "checks": [
+            "PHOTO-20/event-banner-r003/H013",
+            "PHOTO-20/event-banner-r003/H014"
+          ]
+        },
+        "event-banner-r008": {
+          "checks": [
+            "PHOTO-20/event-banner-r008/H006",
+            "PHOTO-20/event-banner-r008/H014"
+          ]
+        },
+        "talk-card-r002": {
+          "checks": [
+            "PHOTO-20/talk-card-r002/H015",
+            "PHOTO-20/talk-card-r002/H016"
+          ]
+        },
+        "talk-card-r003": {
+          "checks": [
+            "PHOTO-20/talk-card-r003/H015",
+            "PHOTO-20/talk-card-r003/H016"
+          ]
+        },
+        "talk-card-r004": {
+          "checks": [
+            "PHOTO-20/talk-card-r004/H015",
+            "PHOTO-20/talk-card-r004/H016"
+          ]
+        },
+        "talk-card-r005": {
+          "checks": [
+            "PHOTO-20/talk-card-r005/H015",
+            "PHOTO-20/talk-card-r005/H016"
+          ]
+        },
+        "talk-card-r006": {
+          "checks": [
+            "PHOTO-20/talk-card-r006/H016",
+            "PHOTO-20/talk-card-r006/H017"
+          ]
+        },
+        "talk-card-r007": {
+          "checks": [
+            "PHOTO-20/talk-card-r007/H018"
+          ]
+        },
+        "talk-card-r008": {
+          "checks": [
+            "PHOTO-20/talk-card-r008/H015",
+            "PHOTO-20/talk-card-r008/H016"
+          ]
+        },
+        "talk-card-r009": {
+          "checks": [
+            "PHOTO-20/talk-card-r009/H015",
+            "PHOTO-20/talk-card-r009/H016"
+          ]
+        },
+        "talk-card-combined": {
+          "na": "Each page is checked by code to look identical to its single card file (A004 to A011), so the single-card checks cover this rule."
+        }
+      }
+    },
+    {
+      "rule_id": "R05",
+      "kind": "brief",
+      "rule": "The session was shot on grey paper and she does not want grey behind her.",
+      "source": "vellacourt_placements.txt, Grounds",
+      "cells": {
+        "speaker-onepager": {
+          "checks": [
+            "PHOTO-20/speaker-onepager/H016"
+          ]
+        },
+        "event-announcement-r002": {
+          "checks": [
+            "PHOTO-20/event-announcement-r002/H017"
+          ]
+        },
+        "event-announcement-r003": {
+          "checks": [
+            "PHOTO-20/event-announcement-r003/H017"
+          ]
+        },
+        "event-announcement-r008": {
+          "checks": [
+            "PHOTO-20/event-announcement-r008/H017"
+          ]
+        },
+        "event-banner-r002": {
+          "checks": [
+            "PHOTO-20/event-banner-r002/H015"
+          ]
+        },
+        "event-banner-r003": {
+          "checks": [
+            "PHOTO-20/event-banner-r003/H015"
+          ]
+        },
+        "event-banner-r008": {
+          "checks": [
+            "PHOTO-20/event-banner-r008/H015"
+          ]
+        },
+        "talk-card-r002": {
+          "checks": [
+            "PHOTO-20/talk-card-r002/H017"
+          ]
+        },
+        "talk-card-r003": {
+          "checks": [
+            "PHOTO-20/talk-card-r003/H017"
+          ]
+        },
+        "talk-card-r004": {
+          "checks": [
+            "PHOTO-20/talk-card-r004/H017"
+          ]
+        },
+        "talk-card-r005": {
+          "checks": [
+            "PHOTO-20/talk-card-r005/H017"
+          ]
+        },
+        "talk-card-r006": {
+          "checks": [
+            "PHOTO-20/talk-card-r006/H018"
+          ]
+        },
+        "talk-card-r007": {
+          "checks": [
+            "PHOTO-20/talk-card-r007/H015"
+          ]
+        },
+        "talk-card-r008": {
+          "checks": [
+            "PHOTO-20/talk-card-r008/H017"
+          ]
+        },
+        "talk-card-r009": {
+          "checks": [
+            "PHOTO-20/talk-card-r009/H017"
+          ]
+        },
+        "talk-card-combined": {
+          "na": "Each page is checked by code to look identical to its single card file (A004 to A011), so the single-card checks cover this rule."
+        }
+      }
+    },
+    {
+      "rule_id": "R06",
+      "kind": "brief",
+      "rule": "No pale outline round her hair and no clipped curls where the subject is cut from the grey ground.",
+      "source": "vellacourt_placements.txt, Grounds",
+      "cells": {
+        "speaker-onepager": {
+          "checks": [
+            "PHOTO-20/speaker-onepager/H017"
+          ]
+        },
+        "event-announcement-r002": {
+          "checks": [
+            "PHOTO-20/event-announcement-r002/H018"
+          ]
+        },
+        "event-announcement-r003": {
+          "checks": [
+            "PHOTO-20/event-announcement-r003/H018"
+          ]
+        },
+        "event-announcement-r008": {
+          "checks": [
+            "PHOTO-20/event-announcement-r008/H018"
+          ]
+        },
+        "event-banner-r002": {
+          "checks": [
+            "PHOTO-20/event-banner-r002/H016"
+          ]
+        },
+        "event-banner-r003": {
+          "checks": [
+            "PHOTO-20/event-banner-r003/H016"
+          ]
+        },
+        "event-banner-r008": {
+          "checks": [
+            "PHOTO-20/event-banner-r008/H016"
+          ]
+        },
+        "talk-card-r002": {
+          "checks": [
+            "PHOTO-20/talk-card-r002/H018"
+          ]
+        },
+        "talk-card-r003": {
+          "checks": [
+            "PHOTO-20/talk-card-r003/H018"
+          ]
+        },
+        "talk-card-r004": {
+          "checks": [
+            "PHOTO-20/talk-card-r004/H018"
+          ]
+        },
+        "talk-card-r005": {
+          "checks": [
+            "PHOTO-20/talk-card-r005/H018"
+          ]
+        },
+        "talk-card-r006": {
+          "checks": [
+            "PHOTO-20/talk-card-r006/H019"
+          ]
+        },
+        "talk-card-r007": {
+          "checks": [
+            "PHOTO-20/talk-card-r007/H016"
+          ]
+        },
+        "talk-card-r008": {
+          "checks": [
+            "PHOTO-20/talk-card-r008/H018"
+          ]
+        },
+        "talk-card-r009": {
+          "checks": [
+            "PHOTO-20/talk-card-r009/H018"
+          ]
+        },
+        "talk-card-combined": {
+          "na": "Each page is checked by code to look identical to its single card file (A004 to A011), so the single-card checks cover this rule."
+        }
+      }
+    },
+    {
+      "rule_id": "R07",
+      "kind": "brief",
+      "rule": "vellacourt_workshop_snap.jpg (1300 x 975 px) is not enlarged beyond its native size.",
+      "source": "assets: vellacourt_workshop_snap.jpg; truth_constraints[1]",
+      "cells": {
+        "speaker-onepager": {
+          "checks": [
+            "PHOTO-20/speaker-onepager/H021"
+          ]
+        },
+        "event-announcement-r002": {
+          "checks": [
+            "PHOTO-20/event-announcement-r002/H020"
+          ]
+        },
+        "event-announcement-r003": {
+          "checks": [
+            "PHOTO-20/event-announcement-r003/H020"
+          ]
+        },
+        "event-announcement-r008": {
+          "checks": [
+            "PHOTO-20/event-announcement-r008/H020"
+          ]
+        },
+        "event-banner-r002": {
+          "checks": [
+            "PHOTO-20/event-banner-r002/H018"
+          ]
+        },
+        "event-banner-r003": {
+          "checks": [
+            "PHOTO-20/event-banner-r003/H018"
+          ]
+        },
+        "event-banner-r008": {
+          "checks": [
+            "PHOTO-20/event-banner-r008/H018"
+          ]
+        },
+        "talk-card-r002": {
+          "na": "The card layout from vellacourt_speakercard_template.pdf has one picture frame, filled by the assigned portrait (H013)."
+        },
+        "talk-card-r003": {
+          "na": "The card layout from vellacourt_speakercard_template.pdf has one picture frame, filled by the assigned portrait (H013)."
+        },
+        "talk-card-r004": {
+          "na": "The card layout from vellacourt_speakercard_template.pdf has one picture frame, filled by the assigned portrait (H013)."
+        },
+        "talk-card-r005": {
+          "na": "The card layout from vellacourt_speakercard_template.pdf has one picture frame, filled by the assigned portrait (H013)."
+        },
+        "talk-card-r006": {
+          "na": "The card layout from vellacourt_speakercard_template.pdf has one picture frame, filled by the assigned portrait (H014)."
+        },
+        "talk-card-r007": {
+          "checks": [
+            "PHOTO-20/talk-card-r007/H055"
+          ]
+        },
+        "talk-card-r008": {
+          "na": "The card layout from vellacourt_speakercard_template.pdf has one picture frame, filled by the assigned portrait (H013)."
+        },
+        "talk-card-r009": {
+          "na": "The card layout from vellacourt_speakercard_template.pdf has one picture frame, filled by the assigned portrait (H013)."
+        },
+        "talk-card-combined": {
+          "na": "Each page is checked by code to look identical to its single card file (A004 to A011), so the single-card checks cover this rule."
+        }
+      }
+    },
+    {
+      "rule_id": "R08",
+      "kind": "brief",
+      "rule": "Announcements are 1080 x 1350 px, 4:5, not square; banners are 1920 x 1080 px.",
+      "source": "client_brief; What stays fixed",
+      "cells": {
+        "speaker-onepager": {
+          "na": "Pixel canvas sizes apply to the announcement and banner PNGs only."
+        },
+        "event-announcement-r002": {
+          "checks": [
+            "PHOTO-20/event-announcement-r002/A003",
+            "PHOTO-20/event-announcement-r002/A004"
+          ]
+        },
+        "event-announcement-r003": {
+          "checks": [
+            "PHOTO-20/event-announcement-r003/A003",
+            "PHOTO-20/event-announcement-r003/A004"
+          ]
+        },
+        "event-announcement-r008": {
+          "checks": [
+            "PHOTO-20/event-announcement-r008/A003",
+            "PHOTO-20/event-announcement-r008/A004"
+          ]
+        },
+        "event-banner-r002": {
+          "checks": [
+            "PHOTO-20/event-banner-r002/A003",
+            "PHOTO-20/event-banner-r002/A004"
+          ]
+        },
+        "event-banner-r003": {
+          "checks": [
+            "PHOTO-20/event-banner-r003/A003",
+            "PHOTO-20/event-banner-r003/A004"
+          ]
+        },
+        "event-banner-r008": {
+          "checks": [
+            "PHOTO-20/event-banner-r008/A003",
+            "PHOTO-20/event-banner-r008/A004"
+          ]
+        },
+        "talk-card-r002": {
+          "na": "Pixel canvas sizes apply to the announcement and banner PNGs only."
+        },
+        "talk-card-r003": {
+          "na": "Pixel canvas sizes apply to the announcement and banner PNGs only."
+        },
+        "talk-card-r004": {
+          "na": "Pixel canvas sizes apply to the announcement and banner PNGs only."
+        },
+        "talk-card-r005": {
+          "na": "Pixel canvas sizes apply to the announcement and banner PNGs only."
+        },
+        "talk-card-r006": {
+          "na": "Pixel canvas sizes apply to the announcement and banner PNGs only."
+        },
+        "talk-card-r007": {
+          "na": "Pixel canvas sizes apply to the announcement and banner PNGs only."
+        },
+        "talk-card-r008": {
+          "na": "Pixel canvas sizes apply to the announcement and banner PNGs only."
+        },
+        "talk-card-r009": {
+          "na": "Pixel canvas sizes apply to the announcement and banner PNGs only."
+        },
+        "talk-card-combined": {
+          "na": "Pixel canvas sizes apply to the announcement and banner PNGs only."
+        }
+      }
+    },
+    {
+      "rule_id": "R09",
+      "kind": "brief",
+      "rule": "Do not invent names, claims, credentials, contact details or records absent from the approved inputs.",
+      "source": "truth_constraints[0]",
+      "cells": {
+        "speaker-onepager": {
+          "checks": [
+            "PHOTO-20/speaker-onepager/H010",
+            "PHOTO-20/speaker-onepager/H052"
+          ]
+        },
+        "event-announcement-r002": {
+          "checks": [
+            "PHOTO-20/event-announcement-r002/H007"
+          ]
+        },
+        "event-announcement-r003": {
+          "checks": [
+            "PHOTO-20/event-announcement-r003/H007"
+          ]
+        },
+        "event-announcement-r008": {
+          "checks": [
+            "PHOTO-20/event-announcement-r008/H007"
+          ]
+        },
+        "event-banner-r002": {
+          "checks": [
+            "PHOTO-20/event-banner-r002/H006"
+          ]
+        },
+        "event-banner-r003": {
+          "checks": [
+            "PHOTO-20/event-banner-r003/H007"
+          ]
+        },
+        "event-banner-r008": {
+          "checks": [
+            "PHOTO-20/event-banner-r008/H007"
+          ]
+        },
+        "talk-card-r002": {
+          "checks": [
+            "PHOTO-20/talk-card-r002/H054"
+          ]
+        },
+        "talk-card-r003": {
+          "checks": [
+            "PHOTO-20/talk-card-r003/H009"
+          ]
+        },
+        "talk-card-r004": {
+          "checks": [
+            "PHOTO-20/talk-card-r004/H009"
+          ]
+        },
+        "talk-card-r005": {
+          "checks": [
+            "PHOTO-20/talk-card-r005/H009"
+          ]
+        },
+        "talk-card-r006": {
+          "checks": [
+            "PHOTO-20/talk-card-r006/H010"
+          ]
+        },
+        "talk-card-r007": {
+          "checks": [
+            "PHOTO-20/talk-card-r007/H009"
+          ]
+        },
+        "talk-card-r008": {
+          "checks": [
+            "PHOTO-20/talk-card-r008/H009"
+          ]
+        },
+        "talk-card-r009": {
+          "checks": [
+            "PHOTO-20/talk-card-r009/H009"
+          ]
+        },
+        "talk-card-combined": {
+          "na": "Each page is checked by code to look identical to its single card file (A004 to A011), so the single-card checks cover this rule."
+        }
+      }
+    },
+    {
+      "rule_id": "D01",
+      "kind": "deliverable",
+      "rule": "Include the approved factual biography and talk titles with their one-line subjects verbatim from vellacourt_bio_copy.txt.",
+      "source": "deliverables[].commission.content",
+      "cells": {
+        "speaker-onepager": {
+          "checks": [
+            "PHOTO-20/speaker-onepager/H001",
+            "PHOTO-20/speaker-onepager/H002",
+            "PHOTO-20/speaker-onepager/H009",
+            "PHOTO-20/speaker-onepager/H010",
+            "PHOTO-20/speaker-onepager/H011",
+            "PHOTO-20/speaker-onepager/H012",
+            "PHOTO-20/speaker-onepager/H053",
+            "PHOTO-20/speaker-onepager/H055"
+          ]
+        },
+        "event-announcement-r002": {
+          "na": "This content bullet belongs to the booking one-pager commission only."
+        },
+        "event-announcement-r003": {
+          "na": "This content bullet belongs to the booking one-pager commission only."
+        },
+        "event-announcement-r008": {
+          "na": "This content bullet belongs to the booking one-pager commission only."
+        },
+        "event-banner-r002": {
+          "na": "This content bullet belongs to the booking one-pager commission only."
+        },
+        "event-banner-r003": {
+          "na": "This content bullet belongs to the booking one-pager commission only."
+        },
+        "event-banner-r008": {
+          "na": "This content bullet belongs to the booking one-pager commission only."
+        },
+        "talk-card-r002": {
+          "na": "This content bullet belongs to the booking one-pager commission only."
+        },
+        "talk-card-r003": {
+          "na": "This content bullet belongs to the booking one-pager commission only."
+        },
+        "talk-card-r004": {
+          "na": "This content bullet belongs to the booking one-pager commission only."
+        },
+        "talk-card-r005": {
+          "na": "This content bullet belongs to the booking one-pager commission only."
+        },
+        "talk-card-r006": {
+          "na": "This content bullet belongs to the booking one-pager commission only."
+        },
+        "talk-card-r007": {
+          "na": "This content bullet belongs to the booking one-pager commission only."
+        },
+        "talk-card-r008": {
+          "na": "This content bullet belongs to the booking one-pager commission only."
+        },
+        "talk-card-r009": {
+          "na": "This content bullet belongs to the booking one-pager commission only."
+        },
+        "talk-card-combined": {
+          "na": "This content bullet belongs to the booking one-pager commission only."
+        }
+      }
+    },
+    {
+      "rule_id": "D02",
+      "kind": "deliverable",
+      "rule": "Show the supplied booking sign-off Astrid Vellacourt - Vellacourt & Sund clearly.",
+      "source": "deliverables[].commission.content",
+      "cells": {
+        "speaker-onepager": {
+          "checks": [
+            "PHOTO-20/speaker-onepager/H003",
+            "PHOTO-20/speaker-onepager/H004"
+          ]
+        },
+        "event-announcement-r002": {
+          "na": "This content bullet belongs to the booking one-pager commission only."
+        },
+        "event-announcement-r003": {
+          "na": "This content bullet belongs to the booking one-pager commission only."
+        },
+        "event-announcement-r008": {
+          "na": "This content bullet belongs to the booking one-pager commission only."
+        },
+        "event-banner-r002": {
+          "na": "This content bullet belongs to the booking one-pager commission only."
+        },
+        "event-banner-r003": {
+          "na": "This content bullet belongs to the booking one-pager commission only."
+        },
+        "event-banner-r008": {
+          "na": "This content bullet belongs to the booking one-pager commission only."
+        },
+        "talk-card-r002": {
+          "na": "This content bullet belongs to the booking one-pager commission only."
+        },
+        "talk-card-r003": {
+          "na": "This content bullet belongs to the booking one-pager commission only."
+        },
+        "talk-card-r004": {
+          "na": "This content bullet belongs to the booking one-pager commission only."
+        },
+        "talk-card-r005": {
+          "na": "This content bullet belongs to the booking one-pager commission only."
+        },
+        "talk-card-r006": {
+          "na": "This content bullet belongs to the booking one-pager commission only."
+        },
+        "talk-card-r007": {
+          "na": "This content bullet belongs to the booking one-pager commission only."
+        },
+        "talk-card-r008": {
+          "na": "This content bullet belongs to the booking one-pager commission only."
+        },
+        "talk-card-r009": {
+          "na": "This content bullet belongs to the booking one-pager commission only."
+        },
+        "talk-card-combined": {
+          "na": "This content bullet belongs to the booking one-pager commission only."
+        }
+      }
+    },
+    {
+      "rule_id": "D03",
+      "kind": "deliverable",
+      "rule": "Use this confirmed talk's approved announcement wording, event name, date, talk title and assigned portrait.",
+      "source": "deliverables[].commission.content",
+      "cells": {
+        "speaker-onepager": {
+          "na": "This content bullet belongs to the three announcement commissions only."
+        },
+        "event-announcement-r002": {
+          "checks": [
+            "PHOTO-20/event-announcement-r002/H004",
+            "PHOTO-20/event-announcement-r002/H005",
+            "PHOTO-20/event-announcement-r002/H006",
+            "PHOTO-20/event-announcement-r002/H008",
+            "PHOTO-20/event-announcement-r002/H009",
+            "PHOTO-20/event-announcement-r002/H010",
+            "PHOTO-20/event-announcement-r002/H013"
+          ]
+        },
+        "event-announcement-r003": {
+          "checks": [
+            "PHOTO-20/event-announcement-r003/H004",
+            "PHOTO-20/event-announcement-r003/H005",
+            "PHOTO-20/event-announcement-r003/H006",
+            "PHOTO-20/event-announcement-r003/H009",
+            "PHOTO-20/event-announcement-r003/H010",
+            "PHOTO-20/event-announcement-r003/H011",
+            "PHOTO-20/event-announcement-r003/H013"
+          ]
+        },
+        "event-announcement-r008": {
+          "checks": [
+            "PHOTO-20/event-announcement-r008/H004",
+            "PHOTO-20/event-announcement-r008/H005",
+            "PHOTO-20/event-announcement-r008/H006",
+            "PHOTO-20/event-announcement-r008/H008",
+            "PHOTO-20/event-announcement-r008/H009",
+            "PHOTO-20/event-announcement-r008/H010",
+            "PHOTO-20/event-announcement-r008/H013"
+          ]
+        },
+        "event-banner-r002": {
+          "na": "This content bullet belongs to the three announcement commissions only."
+        },
+        "event-banner-r003": {
+          "na": "This content bullet belongs to the three announcement commissions only."
+        },
+        "event-banner-r008": {
+          "na": "This content bullet belongs to the three announcement commissions only."
+        },
+        "talk-card-r002": {
+          "na": "This content bullet belongs to the three announcement commissions only."
+        },
+        "talk-card-r003": {
+          "na": "This content bullet belongs to the three announcement commissions only."
+        },
+        "talk-card-r004": {
+          "na": "This content bullet belongs to the three announcement commissions only."
+        },
+        "talk-card-r005": {
+          "na": "This content bullet belongs to the three announcement commissions only."
+        },
+        "talk-card-r006": {
+          "na": "This content bullet belongs to the three announcement commissions only."
+        },
+        "talk-card-r007": {
+          "na": "This content bullet belongs to the three announcement commissions only."
+        },
+        "talk-card-r008": {
+          "na": "This content bullet belongs to the three announcement commissions only."
+        },
+        "talk-card-r009": {
+          "na": "This content bullet belongs to the three announcement commissions only."
+        },
+        "talk-card-combined": {
+          "na": "This content bullet belongs to the three announcement commissions only."
+        }
+      }
+    },
+    {
+      "rule_id": "D04",
+      "kind": "deliverable",
+      "rule": "Place the supplied AV mark with Astrid's name beneath it; her name is more prominent than the date.",
+      "source": "deliverables[].commission.content",
+      "cells": {
+        "speaker-onepager": {
+          "na": "This content bullet belongs to the three announcement commissions only."
+        },
+        "event-announcement-r002": {
+          "checks": [
+            "PHOTO-20/event-announcement-r002/H011",
+            "PHOTO-20/event-announcement-r002/H021",
+            "PHOTO-20/event-announcement-r002/H025"
+          ]
+        },
+        "event-announcement-r003": {
+          "checks": [
+            "PHOTO-20/event-announcement-r003/H008",
+            "PHOTO-20/event-announcement-r003/H021",
+            "PHOTO-20/event-announcement-r003/H025"
+          ]
+        },
+        "event-announcement-r008": {
+          "checks": [
+            "PHOTO-20/event-announcement-r008/H011",
+            "PHOTO-20/event-announcement-r008/H021",
+            "PHOTO-20/event-announcement-r008/H025"
+          ]
+        },
+        "event-banner-r002": {
+          "na": "This content bullet belongs to the three announcement commissions only."
+        },
+        "event-banner-r003": {
+          "na": "This content bullet belongs to the three announcement commissions only."
+        },
+        "event-banner-r008": {
+          "na": "This content bullet belongs to the three announcement commissions only."
+        },
+        "talk-card-r002": {
+          "na": "This content bullet belongs to the three announcement commissions only."
+        },
+        "talk-card-r003": {
+          "na": "This content bullet belongs to the three announcement commissions only."
+        },
+        "talk-card-r004": {
+          "na": "This content bullet belongs to the three announcement commissions only."
+        },
+        "talk-card-r005": {
+          "na": "This content bullet belongs to the three announcement commissions only."
+        },
+        "talk-card-r006": {
+          "na": "This content bullet belongs to the three announcement commissions only."
+        },
+        "talk-card-r007": {
+          "na": "This content bullet belongs to the three announcement commissions only."
+        },
+        "talk-card-r008": {
+          "na": "This content bullet belongs to the three announcement commissions only."
+        },
+        "talk-card-r009": {
+          "na": "This content bullet belongs to the three announcement commissions only."
+        },
+        "talk-card-combined": {
+          "na": "This content bullet belongs to the three announcement commissions only."
+        }
+      }
+    },
+    {
+      "rule_id": "D05",
+      "kind": "deliverable",
+      "rule": "Use the assigned portrait with this record's talk title, event name and date exactly as supplied.",
+      "source": "deliverables[].commission.content",
+      "cells": {
+        "speaker-onepager": {
+          "na": "This content bullet belongs to the three banner commissions only."
+        },
+        "event-announcement-r002": {
+          "na": "This content bullet belongs to the three banner commissions only."
+        },
+        "event-announcement-r003": {
+          "na": "This content bullet belongs to the three banner commissions only."
+        },
+        "event-announcement-r008": {
+          "na": "This content bullet belongs to the three banner commissions only."
+        },
+        "event-banner-r002": {
+          "checks": [
+            "PHOTO-20/event-banner-r002/H002",
+            "PHOTO-20/event-banner-r002/H003",
+            "PHOTO-20/event-banner-r002/H004",
+            "PHOTO-20/event-banner-r002/H005",
+            "PHOTO-20/event-banner-r002/H008"
+          ]
+        },
+        "event-banner-r003": {
+          "checks": [
+            "PHOTO-20/event-banner-r003/H002",
+            "PHOTO-20/event-banner-r003/H003",
+            "PHOTO-20/event-banner-r003/H004",
+            "PHOTO-20/event-banner-r003/H005",
+            "PHOTO-20/event-banner-r003/H009"
+          ]
+        },
+        "event-banner-r008": {
+          "checks": [
+            "PHOTO-20/event-banner-r008/H002",
+            "PHOTO-20/event-banner-r008/H003",
+            "PHOTO-20/event-banner-r008/H004",
+            "PHOTO-20/event-banner-r008/H005",
+            "PHOTO-20/event-banner-r008/H009"
+          ]
+        },
+        "talk-card-r002": {
+          "na": "This content bullet belongs to the three banner commissions only."
+        },
+        "talk-card-r003": {
+          "na": "This content bullet belongs to the three banner commissions only."
+        },
+        "talk-card-r004": {
+          "na": "This content bullet belongs to the three banner commissions only."
+        },
+        "talk-card-r005": {
+          "na": "This content bullet belongs to the three banner commissions only."
+        },
+        "talk-card-r006": {
+          "na": "This content bullet belongs to the three banner commissions only."
+        },
+        "talk-card-r007": {
+          "na": "This content bullet belongs to the three banner commissions only."
+        },
+        "talk-card-r008": {
+          "na": "This content bullet belongs to the three banner commissions only."
+        },
+        "talk-card-r009": {
+          "na": "This content bullet belongs to the three banner commissions only."
+        },
+        "talk-card-combined": {
+          "na": "This content bullet belongs to the three banner commissions only."
+        }
+      }
+    },
+    {
+      "rule_id": "D06",
+      "kind": "deliverable",
+      "rule": "Include the talk title, event, date and format from the assigned record.",
+      "source": "deliverables[].commission.content",
+      "cells": {
+        "speaker-onepager": {
+          "na": "This content bullet belongs to the talk-card commissions only."
+        },
+        "event-announcement-r002": {
+          "na": "This content bullet belongs to the talk-card commissions only."
+        },
+        "event-announcement-r003": {
+          "na": "This content bullet belongs to the talk-card commissions only."
+        },
+        "event-announcement-r008": {
+          "na": "This content bullet belongs to the talk-card commissions only."
+        },
+        "event-banner-r002": {
+          "na": "This content bullet belongs to the talk-card commissions only."
+        },
+        "event-banner-r003": {
+          "na": "This content bullet belongs to the talk-card commissions only."
+        },
+        "event-banner-r008": {
+          "na": "This content bullet belongs to the talk-card commissions only."
+        },
+        "talk-card-r002": {
+          "checks": [
+            "PHOTO-20/talk-card-r002/A006",
+            "PHOTO-20/talk-card-r002/A007",
+            "PHOTO-20/talk-card-r002/A008",
+            "PHOTO-20/talk-card-r002/A009",
+            "PHOTO-20/talk-card-r002/H001",
+            "PHOTO-20/talk-card-r002/H002"
+          ]
+        },
+        "talk-card-r003": {
+          "checks": [
+            "PHOTO-20/talk-card-r003/A006",
+            "PHOTO-20/talk-card-r003/A007",
+            "PHOTO-20/talk-card-r003/A008",
+            "PHOTO-20/talk-card-r003/A009",
+            "PHOTO-20/talk-card-r003/H001",
+            "PHOTO-20/talk-card-r003/H002"
+          ]
+        },
+        "talk-card-r004": {
+          "checks": [
+            "PHOTO-20/talk-card-r004/A006",
+            "PHOTO-20/talk-card-r004/A007",
+            "PHOTO-20/talk-card-r004/A008",
+            "PHOTO-20/talk-card-r004/A009",
+            "PHOTO-20/talk-card-r004/H001",
+            "PHOTO-20/talk-card-r004/H002"
+          ]
+        },
+        "talk-card-r005": {
+          "checks": [
+            "PHOTO-20/talk-card-r005/A006",
+            "PHOTO-20/talk-card-r005/A007",
+            "PHOTO-20/talk-card-r005/A008",
+            "PHOTO-20/talk-card-r005/A009",
+            "PHOTO-20/talk-card-r005/H001",
+            "PHOTO-20/talk-card-r005/H002"
+          ]
+        },
+        "talk-card-r006": {
+          "checks": [
+            "PHOTO-20/talk-card-r006/A006",
+            "PHOTO-20/talk-card-r006/A007",
+            "PHOTO-20/talk-card-r006/A008",
+            "PHOTO-20/talk-card-r006/A009",
+            "PHOTO-20/talk-card-r006/H001",
+            "PHOTO-20/talk-card-r006/H002"
+          ]
+        },
+        "talk-card-r007": {
+          "checks": [
+            "PHOTO-20/talk-card-r007/A006",
+            "PHOTO-20/talk-card-r007/A007",
+            "PHOTO-20/talk-card-r007/A008",
+            "PHOTO-20/talk-card-r007/A009",
+            "PHOTO-20/talk-card-r007/H001",
+            "PHOTO-20/talk-card-r007/H002"
+          ]
+        },
+        "talk-card-r008": {
+          "checks": [
+            "PHOTO-20/talk-card-r008/A006",
+            "PHOTO-20/talk-card-r008/A007",
+            "PHOTO-20/talk-card-r008/A008",
+            "PHOTO-20/talk-card-r008/A009",
+            "PHOTO-20/talk-card-r008/H001",
+            "PHOTO-20/talk-card-r008/H002"
+          ]
+        },
+        "talk-card-r009": {
+          "checks": [
+            "PHOTO-20/talk-card-r009/A006",
+            "PHOTO-20/talk-card-r009/A007",
+            "PHOTO-20/talk-card-r009/A008",
+            "PHOTO-20/talk-card-r009/A009",
+            "PHOTO-20/talk-card-r009/H001",
+            "PHOTO-20/talk-card-r009/H002"
+          ]
+        },
+        "talk-card-combined": {
+          "checks": [
+            "PHOTO-20/talk-card-combined/A004",
+            "PHOTO-20/talk-card-combined/A005",
+            "PHOTO-20/talk-card-combined/A006",
+            "PHOTO-20/talk-card-combined/A007",
+            "PHOTO-20/talk-card-combined/A008",
+            "PHOTO-20/talk-card-combined/A009",
+            "PHOTO-20/talk-card-combined/A010",
+            "PHOTO-20/talk-card-combined/A011"
+          ]
+        }
+      }
+    },
+    {
+      "rule_id": "D07",
+      "kind": "deliverable",
+      "rule": "The combined PDF contains the eight individual cards in roster order; individual files contain only their assigned card.",
+      "source": "deliverables[].commission.content",
+      "cells": {
+        "speaker-onepager": {
+          "na": "This content bullet belongs to the talk-card commissions only."
+        },
+        "event-announcement-r002": {
+          "na": "This content bullet belongs to the talk-card commissions only."
+        },
+        "event-announcement-r003": {
+          "na": "This content bullet belongs to the talk-card commissions only."
+        },
+        "event-announcement-r008": {
+          "na": "This content bullet belongs to the talk-card commissions only."
+        },
+        "event-banner-r002": {
+          "na": "This content bullet belongs to the talk-card commissions only."
+        },
+        "event-banner-r003": {
+          "na": "This content bullet belongs to the talk-card commissions only."
+        },
+        "event-banner-r008": {
+          "na": "This content bullet belongs to the talk-card commissions only."
+        },
+        "talk-card-r002": {
+          "checks": [
+            "PHOTO-20/talk-card-r002/A003",
+            "PHOTO-20/talk-card-r002/H054"
+          ]
+        },
+        "talk-card-r003": {
+          "checks": [
+            "PHOTO-20/talk-card-r003/A003",
+            "PHOTO-20/talk-card-r003/H009"
+          ]
+        },
+        "talk-card-r004": {
+          "checks": [
+            "PHOTO-20/talk-card-r004/A003",
+            "PHOTO-20/talk-card-r004/H009"
+          ]
+        },
+        "talk-card-r005": {
+          "checks": [
+            "PHOTO-20/talk-card-r005/A003",
+            "PHOTO-20/talk-card-r005/H009"
+          ]
+        },
+        "talk-card-r006": {
+          "checks": [
+            "PHOTO-20/talk-card-r006/A003",
+            "PHOTO-20/talk-card-r006/H010"
+          ]
+        },
+        "talk-card-r007": {
+          "checks": [
+            "PHOTO-20/talk-card-r007/A003",
+            "PHOTO-20/talk-card-r007/H009"
+          ]
+        },
+        "talk-card-r008": {
+          "checks": [
+            "PHOTO-20/talk-card-r008/A003",
+            "PHOTO-20/talk-card-r008/H009"
+          ]
+        },
+        "talk-card-r009": {
+          "checks": [
+            "PHOTO-20/talk-card-r009/A003",
+            "PHOTO-20/talk-card-r009/H009"
+          ]
+        },
+        "talk-card-combined": {
+          "checks": [
+            "PHOTO-20/talk-card-combined/A003",
+            "PHOTO-20/talk-card-combined/A004",
+            "PHOTO-20/talk-card-combined/A005",
+            "PHOTO-20/talk-card-combined/A006",
+            "PHOTO-20/talk-card-combined/A007",
+            "PHOTO-20/talk-card-combined/A008",
+            "PHOTO-20/talk-card-combined/A009",
+            "PHOTO-20/talk-card-combined/A010",
+            "PHOTO-20/talk-card-combined/A011"
+          ]
+        }
+      }
+    }
+  ]
+}

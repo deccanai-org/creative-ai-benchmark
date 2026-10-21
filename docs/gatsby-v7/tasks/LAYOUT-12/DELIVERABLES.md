@@ -11,8 +11,7 @@ File: `deliverables/poster-direction-type-led.pdf`
 - Specification: {"format": "pdf", "width_mm": 420, "height_mm": 594, "pages": 1}
 - Show all nine nights and dates in approved billing order, with support acts and the printed-matter accessibility and licence lines.
 - Make this file's named direction visibly type-led, image-led or graphic-led. Use the supplied Sable Quartet and Meridian Brass wordmarks alongside their typeset names.
-- Export: Digital PDF in sRGB with embedded fonts, searchable text where practical, no crop marks and no added bleed; retain the exact page size and page count.
-- Export: This file is for screen review/distribution, not a CMYK press master.
+- Export: Digital PDF in sRGB with embedded fonts, searchable text where practical, no crop marks and no added bleed; retain the exact page size and page count. This file is for screen review/distribution, not a CMYK press master.
 
 ## After Dark poster direction - Image-led
 File: `deliverables/poster-direction-image-led.pdf`
@@ -23,8 +22,7 @@ File: `deliverables/poster-direction-image-led.pdf`
 - Specification: {"format": "pdf", "width_mm": 420, "height_mm": 594, "pages": 1}
 - Show all nine nights and dates in approved billing order, with support acts and the printed-matter accessibility and licence lines.
 - Make this file's named direction visibly type-led, image-led or graphic-led. Use the supplied Sable Quartet and Meridian Brass wordmarks alongside their typeset names.
-- Export: Digital PDF in sRGB with embedded fonts, searchable text where practical, no crop marks and no added bleed; retain the exact page size and page count.
-- Export: This file is for screen review/distribution, not a CMYK press master.
+- Export: Digital PDF in sRGB with embedded fonts, searchable text where practical, no crop marks and no added bleed; retain the exact page size and page count. This file is for screen review/distribution, not a CMYK press master.
 
 ## After Dark poster direction - Graphic-led
 File: `deliverables/poster-direction-graphic-led.pdf`
@@ -35,8 +33,7 @@ File: `deliverables/poster-direction-graphic-led.pdf`
 - Specification: {"format": "pdf", "width_mm": 420, "height_mm": 594, "pages": 1}
 - Show all nine nights and dates in approved billing order, with support acts and the printed-matter accessibility and licence lines.
 - Make this file's named direction visibly type-led, image-led or graphic-led. Use the supplied Sable Quartet and Meridian Brass wordmarks alongside their typeset names.
-- Export: Digital PDF in sRGB with embedded fonts, searchable text where practical, no crop marks and no added bleed; retain the exact page size and page count.
-- Export: This file is for screen review/distribution, not a CMYK press master.
+- Export: Digital PDF in sRGB with embedded fonts, searchable text where practical, no crop marks and no added bleed; retain the exact page size and page count. This file is for screen review/distribution, not a CMYK press master.
 
 ## Promoter pitch deck
 File: `deliverables/promoter-deck.pdf`
@@ -47,8 +44,7 @@ File: `deliverables/promoter-deck.pdf`
 - Specification: {"format": "pdf", "width_mm": 338.667, "height_mm": 190.5, "pages": 6}
 - Present all three directions and identify which one is used for the release posts.
 - Chart the six monthly average-draw values from umbra_room_specs.txt, with clear month labels and a truthful numerical scale.
-- Export: Digital PDF in sRGB with embedded fonts, searchable text where practical, no crop marks and no added bleed; retain the exact page size and page count.
-- Export: This file is for screen review/distribution, not a CMYK press master.
+- Export: Digital PDF in sRGB with embedded fonts, searchable text where practical, no crop marks and no added bleed; retain the exact page size and page count. This file is for screen review/distribution, not a CMYK press master.
 
 ## Night release post - 2026-09-25
 File: `deliverables/release-post-r002.png`

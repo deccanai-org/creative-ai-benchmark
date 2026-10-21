@@ -1,0 +1,270 @@
+{
+ "LANGUAGE, ATOMICITY AND OBSERVABILITY": [
+  {
+   "severity": "major",
+   "check_ids": [
+    "MOTION-11/channel-animation/H022",
+    "MOTION-11/thumbnail-we-broke-the-map/H021",
+    "MOTION-11/thumbnail-everyone-off-the-platform/H021",
+    "MOTION-11/thumbnail-kitchen-gone/H020",
+    "MOTION-11/thumbnail-do-not-open-that-door/H021",
+    "MOTION-11/thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas/H019",
+    "MOTION-11/thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi/H020",
+    "MOTION-11/channel-teaser/H024",
+    "MOTION-11/channel-teaser-vertical/H022"
+   ],
+   "problem": "\"No Inter line runs longer than 65 characters\" uses \"line\" for a typeset row. The brief and the checks themselves use \"line\" for a piece of copy (\"the members line\", \"all three lines of the end card copy\"). On the animation this makes H022 look like it contradicts H002: the members line is about 96 characters, and its first sentence alone is about 71, so it can only pass if it wraps. An annotator who reads \"line\" as the copy line will fail every correct end card.",
+   "fix": "channel-animation/H022: \"No single row of Inter text on the end card of “Animated channel title and end card” (channel-animation.mp4) is longer than 65 characters; longer copy wraps onto more rows.\" On the other eight checks, write \"No single row of Inter text on “Name” (file) is longer than 65 characters.\""
+  },
+  {
+   "severity": "major",
+   "check_ids": [
+    "MOTION-11/thumbnail-we-broke-the-map/H018",
+    "MOTION-11/thumbnail-everyone-off-the-platform/H018",
+    "MOTION-11/thumbnail-kitchen-gone/H017",
+    "MOTION-11/thumbnail-do-not-open-that-door/H018",
+    "MOTION-11/thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas/H017",
+    "MOTION-11/thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi/H018"
+   ],
+   "problem": "These checks guard the planned long-title/short-title trap in staticfox_titles.txt. The retired exact pixel sizes came back as \"about one seventh\" or \"about one thirteenth of the frame height\". That is still a measurement, and \"about\" gives no tolerance, so nobody can tell 1/7 from 1/6 by eye. The checks also use spec jargon a designer will not know (\"the full display size\", \"the reduced long-copy size\"). On the long titles the check also packs two ideas into one: a named size mode and a fraction. The fractions themselves are correct: in the supplied Anton-Regular.ttf, cap height is 1760/2048 em, so 190 px type gives capitals about 163 px tall (about 1/6.6 of the frame) and 96 px type gives about 82 px (about 1/13).",
+   "fix": "Short titles (01 to 04): \"On “Name” (file.png), each Anton setup capital measures roughly 145 to 180 px tall on the 1080 px frame.\" Long titles (05, 06): \"On “Name” (file.png), each Anton setup capital measures roughly 70 to 95 px tall on the 1080 px frame.\" Remove the phrases \"full display size\" and \"reduced long-copy size\". Optionally add one visible check on 05 and 06 for the rule \"the whole stack drops\": \"All Anton rows of the title on “Name” (file.png) are the same size.\""
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "MOTION-11/thumbnail-we-broke-the-map/H017",
+    "MOTION-11/thumbnail-everyone-off-the-platform/H017",
+    "MOTION-11/thumbnail-kitchen-gone/H016",
+    "MOTION-11/thumbnail-do-not-open-that-door/H017",
+    "MOTION-11/thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas/H016",
+    "MOTION-11/thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi/H017",
+    "MOTION-11/channel-animation/H018",
+    "MOTION-11/channel-teaser/H020",
+    "MOTION-11/channel-teaser-vertical/H018"
+   ],
+   "problem": "Compound check: the font family (Archivo Black Regular) and \"at its normal width, not condensed\" are independent facts. Archivo Black squeezed narrower by horizontal scaling passes the family test and fails the width test. The type-system rule \"Never set the payoff word condensed\" is its own rule, separate from the scale role.",
+   "fix": "Keep the family in the existing id: \"The final word “MAP” on “Channel thumbnail - WE BROKE THE MAP” (thumbnail-we-broke-the-map.png) is set in Archivo Black Regular.\" Add one new check per output: \"The final word “MAP” on “…” (thumbnail-we-broke-the-map.png) is not squeezed narrower than the supplied Archivo Black letters.\" Use the same pattern on the other eight checks, and keep the \"If a title stack appears\" condition on the two teasers."
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "MOTION-11/thumbnail-we-broke-the-map/H032",
+    "MOTION-11/thumbnail-everyone-off-the-platform/H001",
+    "MOTION-11/thumbnail-kitchen-gone/H031",
+    "MOTION-11/thumbnail-do-not-open-that-door/H032",
+    "MOTION-11/thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas/H030",
+    "MOTION-11/thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi/H001"
+   ],
+   "problem": "\"Displayed 320 px wide, the title ... is fully visible, with no letters cut off at an edge\" ties a clipping check to a display size. Scaling the image down cannot crop letters, so the 320 px condition means nothing here and suggests a resize step that is not needed. It also makes the check read like a near-duplicate of the new 320 px readability check (H033/H032/H031) on the same file. The coverage table already uses these ids for F14 (no clipped characters), not for the 320 px test.",
+   "fix": "\"No letter of the title on “Channel thumbnail - WE BROKE THE MAP” (thumbnail-we-broke-the-map.png) is cut off at the frame edge.\" Do the same on the other five thumbnails. Leave the 320 px wording only on the readability check."
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "MOTION-11/channel-animation/H010"
+   ],
+   "problem": "Compound check introduced by the patch: \"Scrap appears in ... as the supplied staticfox_scrap_transparent.png cutout, not a newly drawn or traced fox\". It tests both that Scrap is present (the commission says to animate the supplied mascot) and that he is the supplied artwork. If Scrap is missing, the annotator cannot tell which fact failed.",
+   "fix": "Keep the existing id as: \"Scrap appears in “Animated channel title and end card” (channel-animation.mp4).\" (K1_Q1). Add: \"Scrap in “Animated channel title and end card” (channel-animation.mp4) is the supplied staticfox_scrap_transparent.png cutout, not a newly drawn or traced fox.\" (K2_Q1)."
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "MOTION-11/channel-teaser-vertical/H003"
+   ],
+   "problem": "\"uses shots from at least three different captures, each of which is also used in channel-teaser.mp4\" can be read as \"every capture it uses must also be in the wide teaser\", which is stricter than the brief (\"at least three of the captures used in the wide teaser\"). It also names the comparison output by filename only, not as “Name” (file.ext). Keeping the single named reference is fine: it is a stated brief requirement against one fixed deliverable.",
+   "fix": "\"At least three of the captures used in “Channel feed teaser upright cutdown” (channel-teaser-vertical.mp4) also appear in “Channel feed teaser” (channel-teaser.mp4).\""
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "MOTION-11/channel-teaser-vertical/H004"
+   ],
+   "problem": "Compound and out of step with its sibling. It tests a closing end card and the handle “@STATICFOX”. On the wide teaser the patch split the same idea down to \"closes on an end card frame that holds still\" (channel-teaser/H005), but the vertical keeps a content requirement (the handle) that no commission bullet for this file states, and it leaves out the \"holds still\" fact.",
+   "fix": "\"“Channel feed teaser upright cutdown” (channel-teaser-vertical.mp4) closes on an end card frame that holds still.\" If the handle is kept, make it its own check, and confirm that the brief's \"from the same cut\" supports requiring it."
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "MOTION-11/channel-teaser/H026",
+    "MOTION-11/channel-teaser/H027",
+    "MOTION-11/channel-teaser-vertical/H024",
+    "MOTION-11/channel-teaser-vertical/H025"
+   ],
+   "problem": "\"Wherever on-screen type is at rest ..., the type, outline, panel, shape and icon colours ...\" makes the colour of panels and shapes depend on whether the type is still, which is confusing. It also uses different words from the animation checks (\"every held frame\") for the same brand idea (\"every held frame ... is solid and unblurred\").",
+   "fix": "channel-teaser/H026: \"In every held frame of “Channel feed teaser” (channel-teaser.mp4), type, outlines, panels, shapes and icons use only #FF5A1F, #7A2FF2, #B6FF2E, #101014 and #FFFFFF.\" H027: \"In every held frame of “Channel feed teaser” (channel-teaser.mp4), type, outlines, panels and shapes are solid, with no transparency, blur, glow, soft shadow or gradient.\" Use the same wording on vertical H024 and H025. Use \"held\" rather than \"at rest\" throughout (also teaser H018/H025/H037 and vertical H016/H023/H035)."
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "MOTION-11/thumbnail-do-not-open-that-door/H008",
+    "MOTION-11/channel-teaser/H010",
+    "MOTION-11/channel-teaser-vertical/H008"
+   ],
+   "problem": "\"fully covered by Scrap or a solid panel\" narrows the brief's \"cover it fully\". A webcam window fully covered by the title stack or another solid design element would fail, although the brief allows it. These checks guard the planned webcam trap, so the fact must stay. Only the narrowing should go.",
+   "fix": "\"On “Channel thumbnail - DO NOT OPEN THAT DOOR” (thumbnail-do-not-open-that-door.png), the capture's webcam window is shown whole, fully covered, or cropped out, never partly cut.\" Use the same pattern on the two teasers, keeping their \"If capture 04 is used\" condition."
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "MOTION-11/channel-teaser-vertical/H038"
+   ],
+   "problem": "\"the main gameplay action stays inside the upright frame\" leaves \"main gameplay action\" undefined. The thumbnail checks already name each capture's key action, so a stated standard exists and should be used here.",
+   "fix": "\"In “Channel feed teaser upright cutdown” (channel-teaser-vertical.mp4), the reframe keeps each shot's key action in frame: monster crowd (01), jellybeans over slime (02), stove flames (03), lunging monster (04), car and driver (05), burning base (06).\""
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "MOTION-11/thumbnail-we-broke-the-map/H031",
+    "MOTION-11/thumbnail-everyone-off-the-platform/H031",
+    "MOTION-11/thumbnail-kitchen-gone/H030",
+    "MOTION-11/thumbnail-do-not-open-that-door/H031",
+    "MOTION-11/thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas/H029",
+    "MOTION-11/thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi/H030",
+    "MOTION-11/channel-teaser/H034",
+    "MOTION-11/channel-teaser-vertical/H032"
+   ],
+   "problem": "\"Leaving title-word fills aside, Acid Signal #B6FF2E covers no more than 10% of the designed, non-footage area\" is the brand sentence copied word for word and is hard to parse at a glance. \"Designed, non-footage area\" is not plain language. On the teasers, \"of any frame\" asks for a judgement on every frame of a moving video.",
+   "fix": "Thumbnails: \"Not counting title letters, Acid Signal #B6FF2E fills no more than a tenth of the graphics (everything that is not capture footage) on “Name” (file.png).\" Teasers: \"In every held frame of “Name” (file.mp4), not counting title letters, Acid Signal #B6FF2E fills no more than a tenth of the graphics laid over the footage.\""
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "MOTION-11/channel-teaser/H015",
+    "MOTION-11/channel-teaser/H017",
+    "MOTION-11/channel-teaser/H018",
+    "MOTION-11/channel-teaser/H019",
+    "MOTION-11/channel-teaser/H023",
+    "MOTION-11/channel-teaser/H025",
+    "MOTION-11/channel-teaser-vertical/H015",
+    "MOTION-11/channel-teaser-vertical/H016",
+    "MOTION-11/channel-teaser-vertical/H017",
+    "MOTION-11/channel-teaser-vertical/H021",
+    "MOTION-11/channel-teaser-vertical/H023",
+    "MOTION-11/channel-animation/H015",
+    "MOTION-11/channel-animation/H017"
+   ],
+   "problem": "\"set in Anton / Archivo Black\" reads like a single font named \"Anton / Archivo Black\". Separately, channel-animation/H017 says \"In the channel name in ...\", which is awkward to read. (MOTION-11/channel-teaser/H015 has no slash: it is the Scrap cutout check and was included here by mistake.)",
+   "fix": "Use \"set in Anton or Archivo Black\" in every slash check. channel-animation/H017: \"“STATIC” in the channel name of “Animated channel title and end card” (channel-animation.mp4) is set in Anton Regular.\""
+  }
+ ],
+ "FIDELITY AND COVERAGE": [
+  {
+   "severity": "major",
+   "check_ids": [
+    "MOTION-11/channel-animation/H019",
+    "MOTION-11/channel-animation/H009",
+    "MOTION-11/channel-animation/H017",
+    "coverage T02/channel-animation"
+   ],
+   "problem": "channel-animation/H019 (\"STATIC\" at the 190 px display size, not the 96 px long-copy size) is retired with covered_by H009 (STATIC FOX is the largest text) and H017 (STATIC is Anton Regular). Neither one tests size. Coverage row T02 cites H009 for the animation cell, so that cell is wrong. On the thumbnails the patch kept the same fact as a visible proportion (H018: \"setup capitals stand about one seventh of the frame height, the full display size\"). The animation is also 1920x1080, so the same conversion works there, and dropping it is inconsistent. I checked the figure: Anton's cap height is 0.86 em, so at 190 px the capitals are about 163 px, roughly 1/6.6 of 1080.",
+   "fix": "Do not retire H019. Modify it to: \"On the held end card of “Animated channel title and end card” (channel-animation.mp4), the capitals of “STATIC” stand about one seventh of the frame height, the full display size.\" (K2_Q3, evidence: type scale step 01, 190 px). In coverage, replace H009 with H019 in the T02 channel-animation cell."
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "MOTION-11/channel-teaser/H021",
+    "MOTION-11/channel-teaser-vertical/H019",
+    "MOTION-11/channel-teaser/H019",
+    "MOTION-11/channel-teaser/H022",
+    "MOTION-11/channel-teaser-vertical/H017",
+    "MOTION-11/channel-teaser-vertical/H020"
+   ],
+   "problem": "The two teaser setup-size checks (190 px, or 96 px on long copy) are retired with covered_by the Anton-family check and the payoff-shorter-than-setup check. Neither one covers the setup size, so a title stack at rest in either teaser can now be any size with no check failing. The coverage T02 na reason (\"exact sizes cannot be judged on video\") does not match what the patch did on the thumbnails, where size became a frame-proportion check.",
+   "fix": "Option 1: keep a conditional proportion check. Wide teaser: \"If a title stack appears in “Channel feed teaser” (channel-teaser.mp4), its Anton setup capitals stand about one seventh of the frame height, or about one thirteenth on long copy.\" Upright 1080x1920: use frame width (163/1080 and 82.5/1080 of the width, so about one seventh or one thirteenth of the frame width). Option 2: keep the retirements but change covered_by and the T02 na reason to say plainly that the exact size was dropped as not judgeable, rather than citing checks that test other facts."
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "MOTION-11/channel-teaser/H005"
+   ],
+   "problem": "H005 was a check that the closing end card carries \"NEW ONE EVERY OTHER DAY\". It now reads \"closes on an end card frame that holds still\". The brief and commission for the wide teaser never ask for a still hold. The group requirement only says \"The final frame is a usable end card\", and the opacity rule only asks that the final end card be solid and unblurred. \"Holds still\" is therefore a new requirement. The upload line itself is still covered by H004, so no planned fact is lost.",
+   "fix": "Reword to: \"“Channel feed teaser” (channel-teaser.mp4) closes on an end card frame.\" Optionally add \"solid and unblurred\" from the opacity rule. Drop \"that holds still\"."
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "MOTION-11/thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas/H003",
+    "MOTION-11/thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi/H003"
+   ],
+   "problem": "For the two long titles (the planned titles-file trap, 65 to 67 characters), the patch removed \"with every word present\" and still does not quote the title. The four short-title checks quote their titles exactly. The long titles are exactly where a word is most likely to be dropped or rewrapped away. The guide asks for values to be quoted exactly, and the full quoted check stays under 40 words.",
+   "fix": "H003 (title 5): \"The title on “Channel thumbnail - WE SPENT SIX HOURS BUILDING A BRIDGE AND THEN DROVE STRAIGHT PAST IT” (thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas.png) reads exactly “WE SPENT SIX HOURS BUILDING A BRIDGE AND THEN DROVE STRAIGHT PAST IT”.\" Do the same for title 6 with “I GAVE MY TEAM ONE SIMPLE JOB AND THEY SET THE ENTIRE BASE ON FIRE”."
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "coverage rule list",
+    "MOTION-11/channel-animation/H008"
+   ],
+   "problem": "The coverage table pulls in two group requirements (F10 from the thumbnail group, F13 from the channel-animation group). It leaves out the third channel-animation group requirement, \"The title remains readable during its hold.\" On channel-animation, H008 tests only that no letter is cut off at the frame edge on the end card. Nothing tests that STATIC FOX stays legible while held, with nothing covering it, for example Scrap.",
+   "fix": "Add rule F15 \"The title remains readable during its hold\" (source: deliverable_groups[channel-animation].requirements) with a new check on channel-animation: \"While “STATIC FOX” is held in “Animated channel title and end card” (channel-animation.mp4), every letter can be read, with nothing covering it.\" (K1_Q2). Mark both teasers na because no title is required on them."
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "MOTION-11/thumbnail-kitchen-gone",
+    "MOTION-11/thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas"
+   ],
+   "problem": "Remaining hole on a planned trap. The asset plan says captures 03 and 05 are smaller 1280x720 frames, so a punch-in on them cannot be reached without enlarging. No human check on thumbnail-kitchen-gone, thumbnail-we-spent-six-hours or either teaser guards against a visibly enlarged, soft frame. This gap was in the original spec, not caused by the patch. Each thumbnail's expert_review_criteria says \"The finishing looks polished at the delivered size\", which supports an observable check that does not reveal the trap.",
+   "fix": "Add on thumbnail-kitchen-gone: \"The capture frame on “Channel thumbnail - KITCHEN. GONE.” (thumbnail-kitchen-gone.png) is crisp at full size, with no visible blockiness or blur from enlargement.\" (K2_Q2, reference staticfox_captures/staticfox_capture_03.mp4). Add the same on the WE SPENT SIX HOURS thumbnail with capture_05. If this is accepted, add a matching brand or brief rule row in coverage."
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "MOTION-11/channel-animation/H025"
+   ],
+   "problem": "The original channel-animation/H025 forbade a \"translucent or blurred glow or shadow\". The modified text (\"no transparency, blur, glow or gradient\") drops the word shadow. The parallel thumbnail and teaser checks (H024, H027, H025) all name \"soft shadow\" explicitly. This is a small loss of wording parity: a soft drop shadow on the end card type is now only implied by \"blur\".",
+   "fix": "Change to \"...type, outlines, panels and background are solid, with no transparency, blur, glow, soft shadow or gradient.\""
+  }
+ ],
+ "repair": {
+  "fixed": [
+   "Generator is /Users/dhiren/Documents/ChatGPT/Adobe_Gpt/reviews/pilot13-ab-fixes-2026-10-21/work/MOTION-11/build.py. I edited it and re-ran it to write patches/MOTION-11.json and coverage/MOTION-11.json. Backups of the pre-repair build script, patch and coverage are in the same work folder (*_v1_before_repair.*). The patch now has 0 retires, 152 modifies and 55 adds. Human checks went from 283 to 338. The coverage table has 49 rules and 441 cells.",
+   "channel-animation/H019 is no longer retired. It now reads: \"Measured on the held end card of … (channel-animation.mp4), the capitals of “STATIC” stand roughly 145 to 180 px tall.\" Coverage T02 for the animation now cites H019 instead of H009. I checked the cap height in the supplied Anton-Regular.ttf: 1760/2048 em. That gives 163 px capitals at 190 px type and 82.5 px at 96 px type.",
+   "Teaser setup-size checks channel-teaser/H021 and channel-teaser-vertical/H019 are no longer retired. Each is now conditional: \"If a title stack appears …, each Anton setup capital stands roughly 145 to 180 px tall, or 70 to 95 px tall on a long title.\" The type scale gives sizes at final export size, so the same pixel ranges work on the upright frame. T02 teaser cells now cite these checks instead of an na.",
+   "Size checks on all six thumbnails: reviewer B said \"about one seventh / one thirteenth\" cannot be judged and uses jargon. I replaced it with measurable cap-height ranges: \"Measured at full size, each Anton setup capital on … stands roughly 145 to 180 px tall\" for titles 1 to 4, and \"roughly 70 to 95 px tall\" for titles 5 and 6. I removed \"full display size\" and \"reduced long-copy size\". The two ranges do not overlap, so these checks still guard the planned long-title/short-title trap.",
+   "channel-teaser/H005 now reads \"… closes on an end card frame.\" I dropped \"that holds still\" because no brief or commission text asks for a still hold on the wide teaser.",
+   "Long-title checks H003 (titles 5 and 6) now quote the full title exactly, for example reads exactly “WE SPENT SIX HOURS BUILDING A BRIDGE AND THEN DROVE STRAIGHT PAST IT”.",
+   "Added coverage rule F15, \"The title remains readable during its hold\" (from the channel-animation group requirements), with a new channel-animation check (K1_Q2): \"While “STATIC FOX” is held in …, every letter can be read, with nothing covering it.\" Teasers are na (no title is required on them) and thumbnails are na (they have their own 320 px readability check).",
+   "Added an enlargement check on all six thumbnails (K2_Q2): \"The capture frame on … is not visibly pixelated or blocky at full size from being enlarged.\" I put it on all six, not only captures 03 and 05, so the checks do not reveal which captures are the small ones. It comes from the thumbnail expert criterion \"The finishing looks polished at the delivered size\" and the planned enlargement trap. New coverage rule F16 lists it; the animation and teasers are na.",
+   "channel-animation/H025 now includes \"soft shadow\" in its list.",
+   "Changed \"No Inter line … runs longer than 65 characters\" to \"No single row of Inter text …\" on all 9 outputs. The animation version adds \"; longer copy wraps onto more rows\", because the members line (about 96 characters) must wrap.",
+   "Split the payoff-word family check from its width check on all 9 outputs. Each family check now reads \"… is set in Archivo Black Regular.\" Each output has a new check: \"… keeps the normal width of the supplied Archivo Black letters, not condensed or squeezed.\" The two teaser versions keep their \"If a title stack appears\" condition. Coverage T03 is now family only, and new rule T12, \"Never set the payoff word condensed\", cites the new checks.",
+   "Thumbnail clipping checks (H032/H001/H031/H032/H030/H001) now read \"No letter of the title on … is cut off at the frame edge.\" Coverage F10 and D02 now cite the 320 px readability checks (read320); F14 still cites the clipping checks.",
+   "channel-animation/H010 split in two. H010 now reads \"Wherever Scrap appears in …, he is the supplied staticfox_scrap_transparent.png cutout, not a newly drawn or traced fox.\" (K2_Q1). A new check reads \"Scrap, the supplied fox mascot, appears in …\" (K1_Q1). Coverage D03 cites both.",
+   "channel-teaser-vertical/H003 now names the comparison output in “Name” (file) form: \"uses shots from at least three captures, all of them also used in “Channel feed teaser” (channel-teaser.mp4).\"",
+   "channel-teaser-vertical/H004 split in two. H004 now reads \"closes on an end card frame.\" A new check reads \"The closing end card of … shows the handle “@STATICFOX” exactly as written.\" The handle is supported by required_content (\"with the handle @STATICFOX on the closing frame\"). Coverage F01 cites the new handle check and F13 cites H004.",
+   "On both teasers I removed the \"at rest\" condition from the colour checks. Palette checks (wide H026, upright H024) now read \"Type, outlines, panels, shapes and icons in … use only #FF5A1F, #7A2FF2, #B6FF2E, #101014 and #FFFFFF.\" Opacity checks (wide H027, upright H025) now read \"Whenever type, outlines, panels or shapes are held still in …, they are solid, with no transparency, blur, glow, soft shadow or gradient.\" Elsewhere I changed \"at rest\" to \"held still\" (outline checks H018/H016, fill checks H025/H023, Scrap opacity checks).",
+   "Webcam checks (thumbnail-do-not-open-that-door/H008, channel-teaser/H010, channel-teaser-vertical/H008) now read \"shown whole, fully covered, or cropped out, never partly cut.\" I removed \"by Scrap or a solid panel\", which narrowed the brief.",
+   "channel-teaser-vertical tv-action now lists the key action of each capture used: monster crowd (01), jellybeans over slime (02), stove flames (03), lunging monster (04), car and driver (05), burning base (06).",
+   "Acid Signal 10% checks reworded in plain language. Thumbnails: \"Not counting title letters, Acid Signal #B6FF2E fills no more than a tenth of the graphics laid over the capture on ….\" Teasers: \"Wherever graphics are held still in …, Acid Signal #B6FF2E fills no more than a tenth of them, not counting title letters.\"",
+   "Changed \"Anton / Archivo Black\" to \"Anton or Archivo Black\" in every slash check on all three films. channel-animation/H017 now reads \"“STATIC” in the channel name of … is set in Anton Regular.\""
+  ],
+  "rejected": [
+   {
+    "finding": "B (channel-teaser-vertical/H003): rewrite the check to \"At least three of the captures used in the upright cutdown also appear in channel-teaser.mp4\", because \"each also used\" is stricter than the brief.",
+    "why": "Rejected the change of meaning; the wording fix was accepted. The task's required_content for channel-teaser-vertical says: \"Shots from at least three of the six supplied captures, all of them also used in the wide teaser\". The brief also says \"from the same cut\". So \"all of them also used\" is the stated requirement. Loosening it would weaken the check."
+   },
+   {
+    "finding": "B (channel-teaser-vertical/H004): new wording \"closes on an end card frame that holds still\".",
+    "why": "Rejected the \"holds still\" part; the split was accepted. Reviewer A showed that no brief or commission text asks the teasers for a still hold. The group requirement says only \"The final frame is a usable end card.\" I kept both teasers on \"closes on an end card frame\" so they match."
+   },
+   {
+    "finding": "A (teaser setup size): Option 1 says to state the upright teaser size as a fraction of the frame width.",
+    "why": "Replaced rather than adopted. The type scale says \"Pixel settings apply at final exported size\", so the same cap-height pixel ranges (145 to 180 px, or 70 to 95 px) work on the 1080x1920 frame. Reviewer B also objected to fractions on the thumbnails."
+   },
+   {
+    "finding": "B (channel-animation/H010 split): keep the existing id for \"Scrap appears\" and add a new id for \"is the supplied cutout\".",
+    "why": "Split accepted, but the other way round. H010 keeps its original fact and its K2_Q1 label (the supplied cutout). Presence is the new K1_Q1 check (ca-present). That keeps each id tied to the fact it originally tested."
+   },
+   {
+    "finding": "B (optional): add \"All Anton rows of the title are the same size\" on titles 5 and 6.",
+    "why": "Not added. It was optional, and the new range check already applies to each Anton setup capital (70 to 95 px). A row left at full size would fail that check."
+   }
+  ],
+  "unresolved": [
+   "The validator gives 9 warnings about pixel values on the cap-height range checks (thumbnail H017/H018, channel-animation/H019, channel-teaser/H021, channel-teaser-vertical/H019). This is deliberate. These checks guard the planned long-title/short-title trap, so they cannot be dropped. The ranges need an on-screen ruler, not eyeballing. The 145 to 180 px and 70 to 95 px ranges do not overlap, so a measurement settles each one. A human lead should confirm that annotators are allowed to measure with a ruler.",
+   "I did not add the enlargement (pixelation) check to the two teasers. They have no expert_review_criteria (the field is None), and the planned trap is about a thumbnail punch-in. A softened shot from capture 03 or 05 in a teaser is therefore not checked. Coverage F16 marks both teaser cells na with that reason.",
+   "About 58 checks are still 31 to 37 words long, which only draws a warning. Most of the length comes from the two long thumbnail names and filenames, which every check on those files must include."
+  ]
+ }
+}

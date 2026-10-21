@@ -1,0 +1,182 @@
+{
+ "LANGUAGE, ATOMICITY AND OBSERVABILITY": [
+  {
+   "severity": "major",
+   "check_ids": [
+    "PHOTO-26/collection-spread/H036",
+    "PHOTO-26/collection-spread/H037",
+    "PHOTO-26/collection-spread/H040",
+    "PHOTO-26/collection-spread/H041",
+    "PHOTO-26/collection-spread/H044",
+    "PHOTO-26/collection-spread/H045",
+    "PHOTO-26/collection-spread/H048",
+    "PHOTO-26/collection-spread/H049",
+    "PHOTO-26/wholesale-presentation/H038",
+    "PHOTO-26/wholesale-presentation/H039",
+    "PHOTO-26/wholesale-presentation/H042",
+    "PHOTO-26/wholesale-presentation/H043",
+    "PHOTO-26/wholesale-presentation/H046",
+    "PHOTO-26/wholesale-presentation/H047",
+    "PHOTO-26/wholesale-presentation/H050",
+    "PHOTO-26/wholesale-presentation/H051"
+   ],
+   "problem": "16 leading and tracking checks remain as human checks, e.g. collection H037 \"tracked +200 (0.200 em)\", H044 \"15 pt between baselines\", H045 \"no added tracking (0)\". A reviewer cannot read thousandths-of-an-em tracking or the pt distance between baselines by looking at the PDF, and Acrobat's edit panel shows line spacing as a multiplier and character spacing in its own unit. The patch only removed \"(when present)\" and kept the exact values. The pdf_text_style op takes no leading or tracking field, so no auto check covers them either.",
+   "fix": "Retire the 12 leading and plain tracking checks (spread H036, H040, H041, H044, H045, H048, H049; wholesale H038, H042, H043, H046, H047, H050, H051, adjusting to the 12 that are not the signature) with why \"exact leading/tracking not judgeable by eye\", covered_by the role family check (H020/H038/H023/H025 and H006/H040/H026/H028). Keep the signature tracking as one visible check: modify collection H037 to \"Product names on “Autumn interiors collection spread” (collection-spread.pdf) are capitals with wide, open letter spacing, clearly looser than the body text.\" Make the same change to wholesale H039. Optionally modify H041/H043 to \"Any subheading on “…” (…pdf) has visibly open letter spacing.\" instead of retiring them."
+  },
+  {
+   "severity": "major",
+   "check_ids": [
+    "PHOTO-26/collection-spread/H010",
+    "PHOTO-26/collection-spread/H011",
+    "PHOTO-26/collection-spread/H055",
+    "PHOTO-26/wholesale-presentation/H005",
+    "PHOTO-26/wholesale-presentation/H015",
+    "PHOTO-26/wholesale-presentation/H057"
+   ],
+   "problem": "Three near-duplicate checks sit on each output. H010/H005 (\"sits with a photo of that product in its named colour and form\") repeats H011/H015 (no name labels a different piece's photo) and also H055/H057 (name sits beside its own product). H010/H005 also bundles two facts, placement and correct product. Its parenthetical \"(its thornmere_autumn_skus.csv picture_filename, where that shows it)\" is unclear to a designer.",
+   "fix": "Retire collection H010 with covered_by [\"PHOTO-26/collection-spread/H011\",\"PHOTO-26/collection-spread/H055\"]. Retire wholesale H005 with covered_by [\"PHOTO-26/wholesale-presentation/H015\",\"PHOTO-26/wholesale-presentation/H057\"]. The truth fact stays in the K1_Q5 checks H011/H015. If you keep H010/H005, rewrite it as one fact: \"Each product name on “Autumn interiors collection spread” (collection-spread.pdf) labels a photo showing that product's own colour and shape as named in thornmere_autumn_skus.csv.\" Then remove the placement fact from it."
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "PHOTO-26/collection-spread/H021",
+    "PHOTO-26/collection-spread/H035",
+    "PHOTO-26/wholesale-presentation/H024",
+    "PHOTO-26/wholesale-presentation/H037"
+   ],
+   "problem": "Near-duplicate on the same output. H035/H037 require product names at exactly 13 pt, so H021/H024 (\"no product name larger than 16 pt\") can never fail on its own. Both are exact pt readings a reviewer can only take from PDF text properties, not by eye.",
+   "fix": "Retire collection H021 with covered_by [\"PHOTO-26/collection-spread/H035\"]. Retire wholesale H024 with covered_by [\"PHOTO-26/wholesale-presentation/H037\"]. Point coverage rule T05 at H035/H037. Reword H035 to \"Every product name and main heading on “Autumn interiors collection spread” (collection-spread.pdf) is 13 pt in the PDF's text properties.\" so the reviewer knows where to look. Use the same wording for wholesale H037, and the same pattern for H039/H043/H047 and H041/H045/H049."
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "PHOTO-26/collection-spread/H018",
+    "PHOTO-26/collection-spread/H019",
+    "PHOTO-26/wholesale-presentation/H022",
+    "PHOTO-26/wholesale-presentation/H023"
+   ],
+   "problem": "Unclear wording. \"reads soft clay as in its frame\" and \"keeps its frame's charcoal or stoneware glaze or wool\" use \"frame\" for the source photo, and a designer will read it as a picture frame. \"stoneware glaze or wool\" is also a garbled list.",
+   "fix": "H018/H022: \"On “Autumn interiors collection spread” (collection-spread.pdf), every soft clay glaze or cloth from autumn_shoot_05.jpg, autumn_shoot_11.jpg or textile_flatlay_03.jpg keeps its source photo's soft clay colour, not pushed orange like thornmere_colour_note_phone.jpg.\" H019/H023: \"On “Autumn interiors collection spread” (collection-spread.pdf), every piece from autumn_shoot_04.jpg, autumn_shoot_06.jpg, autumn_shoot_10.jpg or textile_flatlay_04.jpg keeps its source photo's charcoal colour, not pushed orange like thornmere_colour_note_phone.jpg.\" Swap in the wholesale name and file for H022/H023."
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "PHOTO-26/collection-spread/H032",
+    "PHOTO-26/wholesale-presentation/H034"
+   ],
+   "problem": "Compound check. It tests (a) Soft Clay type is used only as a running foot and (b) that foot is small tracked capitals. The \"never a product name, body line, price or care line\" tail just restates (a).",
+   "fix": "Modify to \"Soft Clay #C9A98E is used for type only in a running foot on “Autumn interiors collection spread” (collection-spread.pdf).\" Add \"If a Soft Clay running foot appears on “Autumn interiors collection spread” (collection-spread.pdf), it is small capitals with open letter spacing.\" as K2_Q3. Make the same change for wholesale H034."
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "PHOTO-26/wholesale-presentation/H006",
+    "PHOTO-26/wholesale-presentation/A008"
+   ],
+   "problem": "Partial duplicate. New auto A008 already checks \"THORNMERE HOME\" on page 1 in Barlow Condensed Medium, yet human H006 still lists \"the brand name Thornmere Home\" next to product names and main headings.",
+   "fix": "Modify H006 to \"Every product name and main heading on “Interiors wholesale presentation” (wholesale-presentation.pdf) is Barlow Condensed Medium capitals, never a serif, Inter or another weight.\" The brand name then rests on A008, which coverage F01 already cites."
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "PHOTO-26/wholesale-presentation/H012"
+   ],
+   "problem": "\"Each featured object carries its dimensions, materials, care line and price from thornmere_autumn_skus.csv\" mixes a presence test with an accuracy test that H002/H003/H004/H014 already make. \"featured object\" is vaguer than the commission's \"every object shown\".",
+   "fix": "Make it presence only: \"Every product shown on “Interiors wholesale presentation” (wholesale-presentation.pdf) has its name, dimensions, materials, care line and price printed with it.\""
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "PHOTO-26/wholesale-presentation/H013",
+    "PHOTO-26/wholesale-presentation/H018"
+   ],
+   "problem": "Inconsistent trap list on the same output. H018 covers the teapot from autumn_shoot_13.jpg \"wherever cut out\". The asset plan marks shoot_13 as styled pair #4 (teapot plus separate cup). Yet H013 lists only shoot_04/07/10, so a dropped cup goes unchecked if that frame is used. Collection H004 includes shoot_13.",
+   "fix": "Modify H013: \"Wherever autumn_shoot_04.jpg, autumn_shoot_07.jpg, autumn_shoot_10.jpg or autumn_shoot_13.jpg is used on “Interiors wholesale presentation” (wholesale-presentation.pdf), both pieces in that photograph appear whole.\""
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "PHOTO-26/collection-spread/H009",
+    "PHOTO-26/wholesale-presentation/H004"
+   ],
+   "problem": "The trailing rationale (\"; a wrong price makes the spread/trade deck unusable\") is not observable and adds words without adding a fact.",
+   "fix": "\"No price on “Autumn interiors collection spread” (collection-spread.pdf) differs from the price column of thornmere_autumn_skus.csv for its product.\" Make the same change for wholesale H004. Keep K1_Q5."
+  }
+ ],
+ "FIDELITY AND COVERAGE": [
+  {
+   "severity": "minor",
+   "check_ids": [
+    "PHOTO-26/collection-spread/H032",
+    "PHOTO-26/wholesale-presentation/H034",
+    "PHOTO-26/collection-spread/H050",
+    "PHOTO-26/wholesale-presentation/H052"
+   ],
+   "problem": "Rule B05 is only partly covered. The brand allows Soft Clay type only as \"a small running foot in tracked capitals on Warm Paper Ground\" (palette Soft Clay usage and palette_rules.distribution). H032 and H034 drop the \"on Warm Paper Ground\" condition, and the new H050 and H052 exempt any Soft Clay running foot. So a Soft Clay foot set on an Oatmeal Glaze tile or on the Soft Clay band passes every check. The gap existed before the patch, but the split into H050/H052 was the chance to close it.",
+   "fix": "Modify H032 (collection-spread) to: \"Soft Clay #C9A98E type on “Autumn interiors collection spread” (collection-spread.pdf) appears only as a small running foot in tracked capitals on Warm Paper Ground, never a product name, body line, price or care line.\" Make the same change to wholesale-presentation H034 with that output's name and file."
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "PHOTO-26/collection-spread/H029",
+    "PHOTO-26/wholesale-presentation/H031"
+   ],
+   "problem": "H029 and H031 were made stricter than the brand rule. The originals said Warm Paper Ground appears as the page ground of the document. The new wording, \"The page ground of every page ... is Warm Paper Ground #F6F1E8\", fails a page that is a full-bleed styled photograph. The brand does not forbid that: palette_rules.distribution says \"Photographs aside, Warm Paper Ground is the largest designed area on every page\", and the paired new checks H052/H054 already keep that \"Photographs aside\" carve-out. A full-bleed grouping page on the collection spread would get a No that the brief does not support.",
+   "fix": "Reword both checks to \"Photographs aside, the page ground of every page of “…” (….pdf) is Warm Paper Ground #F6F1E8.\" Or keep the original document-level wording: \"Warm Paper Ground #F6F1E8 is the page ground of “…” (….pdf).\""
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "PHOTO-26/wholesale-presentation/A008",
+    "PHOTO-26/wholesale-presentation/H037",
+    "PHOTO-26/collection-spread/H035"
+   ],
+   "problem": "It is unclear whether the brand name is a \"main heading\" at 13 pt. Type scale step 01 (13 pt) gives \"THORNMERE HOME\" as its sample and covers \"Product names and main headings\". H037 says \"Every product name and main heading ... is set at 13 pt\", yet the new A008 leaves out size_pt for that same text. Annotators will split on a large cover title: H037 fails it and A008 passes it. A008 also matches case-sensitively and stops at the first \"THORNMERE HOME\" on page 1. If the name is typed in mixed case and set in caps by a style, A008 returns unavailable. If a running foot carrying the brand name comes earlier in the content stream, A008 tests the foot instead of the title.",
+   "fix": "Choose one reading and make the checks agree. (a) If the brand name is the 13 pt main heading the type scale sample shows, add \"size_pt\": 13 to A008, reword its check to \"... in Barlow Condensed Medium at 13 pt\", and note that H037 covers the brand name. (b) Otherwise reword H037 (and collection-spread H035) to \"Every product name and section heading, apart from the brand name, ... is set at 13 pt\". Either way, record in A008's evidence_reference that the brand name must be live uppercase text for the auto check to run."
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "PHOTO-26/collection-spread/A004",
+    "PHOTO-26/wholesale-presentation/A004"
+   ],
+   "problem": "Both commissions say in export_settings: \"no crop marks and no added bleed\". Neither PDF has a check for this. A004/A005 measure the TrimBox (verify_outputs.py line 141), so a file exported with bleed and printer marks outside a correct TrimBox still passes. This is a hole on both outputs. The coverage table does not show it because export settings are not in its rule list.",
+   "fix": "Add one human K1_Q2 check per output. For example: \"“Autumn interiors collection spread” (collection-spread.pdf) shows no crop marks, registration marks or bleed area beyond the 210 x 297 mm page.\" For the presentation: \"“Interiors wholesale presentation” (wholesale-presentation.pdf) shows no crop marks, registration marks or bleed area beyond the 338.667 x 190.5 mm page.\" Evidence for both: commission.export_settings[0]."
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "PHOTO-26/wholesale-presentation/H001",
+    "PHOTO-26/collection-spread/H005"
+   ],
+   "problem": "The truth constraint \"Do not invent names, prices, claims, product features\" is not a rule in the coverage table and has no check on either output. H001/H005 and H009/H004 only test that names and prices which appear match the CSV. An invented feature or claim in the body copy passes everything, for example \"oven safe\", \"limited edition\" or \"organic wool\" (the CSV has no such facts). Both PDFs carry body text, so this applies to both outputs.",
+   "fix": "Add rule F07 (kind brief, source truth_constraints[0]) and one K1_Q3 check per output. For example: \"No product feature, material or care claim on “Interiors wholesale presentation” (wholesale-presentation.pdf) goes beyond thornmere_autumn_skus.csv or the brief.\" Add the same check for “Autumn interiors collection spread” (collection-spread.pdf). Use reference_assets [\"thornmere_autumn_skus.csv\"]."
+  }
+ ],
+ "repair": {
+  "fixed": [
+   "B05 gap (Soft Clay foot not tied to Warm Paper Ground): H032/H034 now say Soft Clay type 'appears only in a running foot set on Warm Paper Ground #F6F1E8' (palette usage: 'a small running foot in tracked capitals on Warm Paper Ground'). The foot styling became its own optional checks, new H056 (spread) and H059 (presentation): 'If a Soft Clay running foot appears ..., it is small capitals with open letter spacing.' This also fixes the compound-check finding. Coverage B05 rule text and cells updated.",
+   "H029/H031 were stricter than the brand: both now read 'Photographs aside, the page ground of every page of ... is Warm Paper Ground #F6F1E8.' Coverage B01 rule text updated.",
+   "Brand-name size ambiguity: chose reading (a). Type scale step 01 (13 pt) has the sample 'THORNMERE HOME', and the rules say 'Use these point sizes ... including when the presentation is viewed on screen'. Added size_pt 13 to wholesale A008, and its check now ends 'at 13 pt'. Its evidence_reference records that the match is case-sensitive and takes the first occurrence on page 1, so the brand name must be live uppercase text. H037 is reworded to say where the size is read.",
+   "Export settings ('no crop marks and no added bleed') had no check, and I confirmed verify_outputs.py measures only the TrimBox. Added K1_Q2 checks H057 (spread, 210 x 297 mm) and H060 (presentation, 338.667 x 190.5 mm), plus coverage rule E01.",
+   "Truth constraint truth_constraints[0] had no check. Added K1_Q3 checks H058 (spread) and H061 (presentation): 'No product feature, material, use or care claim ... goes beyond what thornmere_autumn_skus.csv or the brief states.' Added coverage rule F07.",
+   "Retired 12 leading and plain tracking checks that cannot be judged by eye. Spread: H036, H040, H044, H045, H048, H049. Presentation: H038, H042, H046, H047, H050, H051. Each is covered_by its role's family check and size check.",
+   "Kept the signature tracking as one visible fact. Spread H037 and presentation H039 now read 'Product names on ... have wide, open letter spacing, clearly looser than ordinary text.' Subheading tracking (spread H041, presentation H043) is now 'visibly open letter spacing'.",
+   "Retired the near-duplicates spread H010 and presentation H005. They are covered_by H011/H055 and H015/H057, and the picture_filename trap stays in the K1_Q5 checks H011/H015. Removed both from coverage F06 and D03.",
+   "Retired spread H021 and presentation H024 (the 16 pt cap), which are implied by the 13 pt product-name checks H035/H037. Coverage T05 now points at H035/H037.",
+   "Size checks (spread H035, H039, H043, H047; presentation H037, H041, H045, H049) now end 'as shown in the PDF's text properties'.",
+   "Reworded spread H018/H019 and presentation H022/H023 to say 'keeps its source photo's ... colour' instead of 'frame', and fixed the garbled glaze list. The trap facts are unchanged.",
+   "Presentation H006 no longer names the brand name, which now rests on A008. Coverage F01 for the presentation points at A008.",
+   "Presentation H012 is now a presence check only: 'Every product shown ... has its name, dimensions, materials, care line and price printed with it.'",
+   "Presentation H013 (K1_Q5) now includes autumn_shoot_13.jpg. The asset plan calls it 'STYLED PAIR/STACK #4 — a teapot and a separate cup', which matches spread H004.",
+   "Removed the unobservable rationale clause from spread H009 and presentation H004. The K1_Q5 price fact is unchanged.",
+   "Updated coverage T01 to T04 to drop the retired ids."
+  ],
+  "rejected": [],
+  "unresolved": [
+   "A008 (pdf_text_style) searches case-sensitively and stops at the first 'THORNMERE HOME' on page 1, and that code cannot be changed. Two cases matter. A name typed in mixed case and set in caps by a style returns evaluation_error (unavailable), so the page 1 brand-name font and size then get no check. A running foot in Barlow Condensed reading 'THORNMERE HOME' that comes earlier on page 1 than the title could fail on size_pt 13. Both caveats are recorded in A008's evidence_reference.",
+   "Choosing reading (a), the 13 pt brand name, means a large cover title fails A008 and H037. This follows type scale step 01 and the rule 'Use these point sizes ... including when the presentation is viewed on screen', but the task author should confirm it is the intended reading.",
+   "Backups of the files before this repair, and the repair script, are in /Users/dhiren/Documents/ChatGPT/Adobe_Gpt/reviews/pilot13-ab-fixes-2026-10-21/work/PHOTO-26/. The patched files are /Users/dhiren/Documents/ChatGPT/Adobe_Gpt/reviews/pilot13-ab-fixes-2026-10-21/patches/PHOTO-26.json and coverage/PHOTO-26.json. Validator: 0 errors, 0 warnings, human checks 100 -> 97, auto checks 14 -> 15, 33 coverage rules. No human check is over 30 words."
+  ]
+ }
+}

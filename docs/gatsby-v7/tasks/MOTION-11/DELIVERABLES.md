@@ -77,8 +77,7 @@ File: `deliverables/channel-animation.mp4`
 - Specification: {"format": "mp4", "width": 1920, "height": 1080, "ratio": "16:9", "duration_seconds": {"min": 6, "max": 8}, "audio": "silent", "frame_rate": 24, "video_codec": "h264", "pixel_format": "yuv420p"}
 - Animate the supplied mascot and channel typography, not a gameplay montage.
 - Hold a final end card containing the full members line and all three END CARD COPY lines from staticfox_titles.txt.
-- Export: H.264 MP4; 24 fps; yuv420p; Rec.709 colour; exact dimensions and duration shown above.
-- Export: No audio track.
+- Export: H.264 MP4; 24 fps; yuv420p; Rec.709 colour; exact dimensions and duration shown above. No audio track.
 
 ## Channel feed teaser
 File: `deliverables/channel-teaser.mp4`
@@ -89,8 +88,7 @@ File: `deliverables/channel-teaser.mp4`
 - Specification: {"format": "mp4", "width": 1920, "height": 1080, "ratio": "16:9", "duration_seconds": {"min": 12, "max": 15}, "audio": "music", "frame_rate": 24, "video_codec": "h264", "pixel_format": "yuv420p"}
 - Use at least four of captures 01-06; no invented footage or looping to fill duration.
 - Show the exact tagline and NEW ONE EVERY OTHER DAY line from staticfox_titles.txt.
-- Export: H.264 MP4; 24 fps; yuv420p; Rec.709 colour; exact dimensions and duration shown above.
-- Export: Use staticfox_bed.wav only; AAC stereo at 48 kHz, no speech or capture audio; avoid clipping.
+- Export: H.264 MP4; 24 fps; yuv420p; Rec.709 colour; exact dimensions and duration shown above. Use staticfox_bed.wav only; AAC stereo at 48 kHz, no speech or capture audio; avoid clipping.
 
 ## Channel feed teaser upright cutdown
 File: `deliverables/channel-teaser-vertical.mp4`
@@ -101,5 +99,4 @@ File: `deliverables/channel-teaser-vertical.mp4`
 - Specification: {"format": "mp4", "width": 1080, "height": 1920, "ratio": "9:16", "duration_seconds": {"min": 6, "max": 8}, "audio": "music", "frame_rate": 24, "video_codec": "h264", "pixel_format": "yuv420p"}
 - Use at least three captures also used in channel-teaser.mp4.
 - Reframe the action and type for the vertical canvas; keep the exact tagline and upload line.
-- Export: H.264 MP4; 24 fps; yuv420p; Rec.709 colour; exact dimensions and duration shown above.
-- Export: Use staticfox_bed.wav only; AAC stereo at 48 kHz, no speech or capture audio; avoid clipping.
+- Export: H.264 MP4; 24 fps; yuv420p; Rec.709 colour; exact dimensions and duration shown above. Use staticfox_bed.wav only; AAC stereo at 48 kHz, no speech or capture audio; avoid clipping.

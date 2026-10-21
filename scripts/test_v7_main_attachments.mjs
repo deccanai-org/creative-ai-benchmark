@@ -52,7 +52,11 @@ for (const [id, [outputCount, passed, total]] of expected) {
 
   vm.runInContext(`section='Auto verifiers';render();`, context);
   const auto = document.getElementById('content').innerHTML;
-  assert.ok(auto.includes(`${total} current checks: not assessed`), id);
+  // The run's historical totals stay fixed; the current auto-check count grew on 2026-10-21 when machine facts
+  // (sRGB, embedded fonts, PDF colour) moved from human to automatic checks, so read it from the data.
+  const current = vm.runInContext('current.checks.filter(c=>c.type==="auto").length', context);
+  assert.ok(current >= total, id);
+  assert.ok(auto.includes(`${current} current checks: not assessed`), id);
   assert.equal(vm.runInContext('current.run.verifier_summary.automatic_passed',context),passed);
   assert.equal(vm.runInContext('current.checks.filter(c=>c.type==="auto"&&c.status==="passed").length',context),0);
 

@@ -32,6 +32,13 @@ Revised input pack. Previous execution results are historical, not current ratin
 - `PHOTO-08/inventory-campaign/A002` “Meridian Motors / Forecourt inventory campaign” (inventory-campaign.png) opens as a valid PNG file with no errors or corruption.
 - `PHOTO-08/inventory-campaign/A003` “Meridian Motors / Forecourt inventory campaign” (inventory-campaign.png) is exactly 1920 pixels wide.
 - `PHOTO-08/inventory-campaign/A004` “Meridian Motors / Forecourt inventory campaign” (inventory-campaign.png) is exactly 1080 pixels tall.
+- `PHOTO-08/vehicle-card-r002/A005` “Vehicle sales card - M3082” (vehicle-card-r002.png) is in sRGB colour: it carries an sRGB profile or no colour profile.
+- `PHOTO-08/vehicle-card-r003/A005` “Vehicle sales card - M3091” (vehicle-card-r003.png) is in sRGB colour: it carries an sRGB profile or no colour profile.
+- `PHOTO-08/vehicle-card-r004/A005` “Vehicle sales card - M2417” (vehicle-card-r004.png) is in sRGB colour: it carries an sRGB profile or no colour profile.
+- `PHOTO-08/vehicle-card-r005/A005` “Vehicle sales card - M3105” (vehicle-card-r005.png) is in sRGB colour: it carries an sRGB profile or no colour profile.
+- `PHOTO-08/vehicle-card-r006/A005` “Vehicle sales card - M2471” (vehicle-card-r006.png) is in sRGB colour: it carries an sRGB profile or no colour profile.
+- `PHOTO-08/vehicle-card-r007/A005` “Vehicle sales card - M3119” (vehicle-card-r007.png) is in sRGB colour: it carries an sRGB profile or no colour profile.
+- `PHOTO-08/inventory-campaign/A005` “Forecourt inventory campaign” (inventory-campaign.png) is in sRGB colour: it carries an sRGB profile or no colour profile.
 
 ## Human verifiers
 
@@ -80,24 +87,22 @@ Revised input pack. Previous execution results are historical, not current ratin
 - `PHOTO-08/vehicle-card-r005/H016` The shadow side of the black Brookmere Sable on “Vehicle sales card - M3105” (vehicle-card-r005.png) keeps the panel and wheel detail of M3105_brookmere_sable_front34.jpg, not blocked up to solid black.
 - `PHOTO-08/vehicle-card-r005/H017` The black paint of the Brookmere Sable on “Vehicle sales card - M3105” (vehicle-card-r005.png) reads neutral black, without the warm wash-bay cast of M3105_brookmere_sable_front34.jpg.
 - `PHOTO-08/vehicle-card-r005/H018` The whole Brookmere Sable on “Vehicle sales card - M3105” (vehicle-card-r005.png) is inside the frame, with no bumper, wheel or roofline cropped off.
-- `PHOTO-08/vehicle-card-r005/H019` The Brookmere Sable on “Vehicle sales card - M3105” (vehicle-card-r005.png) sits in an even, neutral showroom white, with no dark or dramatic studio treatment behind it.
+- `PHOTO-08/vehicle-card-r005/H019` The Brookmere Sable on “Vehicle sales card - M3105” (vehicle-card-r005.png) is shown in even, neutral, well-lit showroom light, not a dark or dramatic studio look.
 - `PHOTO-08/vehicle-card-r005/H020` The largest text on “Vehicle sales card - M3105” (vehicle-card-r005.png) is the asking price “$31,900”.
-- `PHOTO-08/vehicle-card-r005/H021` On “Vehicle sales card - M3105” (vehicle-card-r005.png) the asking price ($31,900) is larger than the trim line “Touring”.
-- `PHOTO-08/vehicle-card-r005/H022` The price and the year, make and model line “2020 Brookmere Sable” on “Vehicle sales card - M3105” (vehicle-card-r005.png) are set in Source Serif 4 Bold, the price in lining figures of one height.
-- `PHOTO-08/vehicle-card-r005/H023` The price on “Vehicle sales card - M3105” (vehicle-card-r005.png) seats on a 1 pt Compass Teal #3C6E71 rule running the full card width, its dollar sign sixty percent of figure height and aligned to the figure tops.
-- `PHOTO-08/vehicle-card-r005/H024` The price on “Vehicle sales card - M3105” (vehicle-card-r005.png) is set at 68 px or smaller, the ceiling of the brand type scale.
-- `PHOTO-08/vehicle-card-r005/H025` The mileage, listing detail and fine-print disclosure on “Vehicle sales card - M3105” (vehicle-card-r005.png) are set in Source Sans 3 Regular, not a bolder weight, the disclosure at 20 px, smaller than the body text.
-- `PHOTO-08/vehicle-card-r005/H026` No line of body text on “Vehicle sales card - M3105” (vehicle-card-r005.png) runs longer than 65 characters.
+- `PHOTO-08/vehicle-card-r005/H022` The price “$31,900” on “Vehicle sales card - M3105” (vehicle-card-r005.png) is set in Source Serif 4 Bold.
+- `PHOTO-08/vehicle-card-r005/H023` A thin rule sits directly under the price on “Vehicle sales card - M3105” (vehicle-card-r005.png) and runs the full width of the card.
+- `PHOTO-08/vehicle-card-r005/H025` The mileage and listing detail on “Vehicle sales card - M3105” (vehicle-card-r005.png) are set in Source Sans 3 Regular, not a bolder weight.
+- `PHOTO-08/vehicle-card-r005/H026` No line of the mileage and listing detail on “Vehicle sales card - M3105” (vehicle-card-r005.png) is longer than 65 characters, counting spaces.
 - `PHOTO-08/vehicle-card-r005/H027` All type on “Vehicle sales card - M3105” (vehicle-card-r005.png), outside the roundel artwork, is set in Source Serif 4 or Source Sans 3; no other typeface appears.
 - `PHOTO-08/vehicle-card-r005/H028` “Vehicle sales card - M3105” (vehicle-card-r005.png) has no starburst and no slashed or struck-through price.
-- `PHOTO-08/vehicle-card-r005/H029` Any compass roundel on “Vehicle sales card - M3105” (vehicle-card-r005.png) is meridian_roundel_transparent.svg, meridian_roundel_reversed.svg, meridian_roundel_transparent.png or meridian_roundel_reversed.png, with no white square around it and the ground showing through its knocked-out rings, rose and lettering.
-- `PHOTO-08/vehicle-card-r005/H030` Any compass roundel on “Vehicle sales card - M3105” (vehicle-card-r005.png) keeps its hairline inner ring and MERIDIAN MOTORS lettering open and legible, not closed up.
-- `PHOTO-08/vehicle-card-r005/H031` Any small Meridian Motors wordmark set as type and locked up with the compass roundel on “Vehicle sales card - M3105” (vehicle-card-r005.png), other than a headline dealership name, is Source Serif 4 Bold at 22 px with +40 tracking.
+- `PHOTO-08/vehicle-card-r005/H029` If a compass roundel appears on “Vehicle sales card - M3105” (vehicle-card-r005.png), it is meridian_roundel_transparent.svg, meridian_roundel_reversed.svg, meridian_roundel_transparent.png or meridian_roundel_reversed.png.
+- `PHOTO-08/vehicle-card-r005/H030` If a compass roundel appears on “Vehicle sales card - M3105” (vehicle-card-r005.png), its hairline inner ring and MERIDIAN MOTORS lettering stay open and legible, not closed up.
+- `PHOTO-08/vehicle-card-r005/H031` If a typeset Meridian Motors label sits beside the compass roundel on “Vehicle sales card - M3105” (vehicle-card-r005.png), it is set in Source Serif 4 Bold.
 - `PHOTO-08/vehicle-card-r005/H032` Every solid colour on “Vehicle sales card - M3105” (vehicle-card-r005.png), outside the photograph and any roundel artwork, is a brand palette colour: #1F2A3A, #F6F7F8, #2E3237, #3C6E71 or #9AA1A8.
-- `PHOTO-08/vehicle-card-r005/H033` Every panel and band on “Vehicle sales card - M3105” (vehicle-card-r005.png) is solid at full opacity, and no scrim, gradient or overlay of any colour, black and white included, sits over the photograph.
-- `PHOTO-08/vehicle-card-r005/H034` Every ground behind type on “Vehicle sales card - M3105” (vehicle-card-r005.png) is Showroom White #F6F7F8, apart from any Meridian Navy #1F2A3A band, panel or seal carrying reversed type; the price, mileage and listing detail sit on Showroom White.
-- `PHOTO-08/vehicle-card-r005/H035` On “Vehicle sales card - M3105” (vehicle-card-r005.png), the price is Meridian Navy #1F2A3A, the mileage and listing detail Graphite #2E3237, and “2020 Brookmere Sable” Meridian Navy on Showroom White or Showroom White on a Meridian Navy band.
-- `PHOTO-08/vehicle-card-r005/H036` Compass Teal #3C6E71 and Steel Grey #9AA1A8 appear on “Vehicle sales card - M3105” (vehicle-card-r005.png) only as rules, keylines, seal detail or one small muted line, never as a ground or panel.
+- `PHOTO-08/vehicle-card-r005/H033` Every panel and band on “Vehicle sales card - M3105” (vehicle-card-r005.png) is a flat, fully opaque fill, with no tint, transparency, gradient, shadow or blend effect.
+- `PHOTO-08/vehicle-card-r005/H034` Every ground behind type on “Vehicle sales card - M3105” (vehicle-card-r005.png) is Showroom White #F6F7F8 or a solid Meridian Navy #1F2A3A band, panel or seal.
+- `PHOTO-08/vehicle-card-r005/H035` The price “$31,900” on “Vehicle sales card - M3105” (vehicle-card-r005.png) is Meridian Navy #1F2A3A.
+- `PHOTO-08/vehicle-card-r005/H036` Compass Teal #3C6E71 on “Vehicle sales card - M3105” (vehicle-card-r005.png) appears only as hairline rules or seal compass needles, never as a ground or a text colour.
 - `PHOTO-08/vehicle-card-r006/H001` The photo on “Vehicle sales card - M2471” (vehicle-card-r006.png) shows stock “M2471” (Calder Kestrel), taken from the supplied photo M2471_calder_kestrel_front34.jpg.
 - `PHOTO-08/vehicle-card-r006/H002` The Calder Kestrel on “Vehicle sales card - M2471” (vehicle-card-r006.png) keeps the body panels, wheels and glass shown in M2471_calder_kestrel_front34.jpg, with no dent, scratch, wear or part added or removed.
 - `PHOTO-08/vehicle-card-r006/H003` At full export size, the enquiry action text on “Vehicle sales card - M2471” (vehicle-card-r006.png) is fully visible, no letters cut off at the edge.
@@ -122,26 +127,24 @@ Revised input pack. Previous execution results are historical, not current ratin
 - `PHOTO-08/vehicle-card-r007/H013` “Vehicle sales card - M3119” (vehicle-card-r007.png) shows no phone number, email address or web address, since none is supplied in the task files.
 - `PHOTO-08/vehicle-card-r007/H014` No last-season placeholder value from meridian_window_card_autumn.pdf (M2290, 2016 Calder Vireo, 71,300 mi, $22,900) appears on “Vehicle sales card - M3119” (vehicle-card-r007.png).
 - `PHOTO-08/vehicle-card-r007/H015` “Vehicle sales card - M3119” (vehicle-card-r007.png) carries a fine-print disclosure stating that the price excludes tax, title and registration.
-- `PHOTO-08/vehicle-card-r007/H016` The Norsted Fjord on “Vehicle sales card - M3119” (vehicle-card-r007.png) is evenly lit and its navy-blue paint reads true, without the dim cool-green cast of M3119_norsted_fjord_front34.jpg.
+- `PHOTO-08/vehicle-card-r007/H016` The navy-blue paint of the Norsted Fjord on “Vehicle sales card - M3119” (vehicle-card-r007.png) reads true navy, without the dim cool-green cast of M3119_norsted_fjord_front34.jpg.
 - `PHOTO-08/vehicle-card-r007/H017` The whole Norsted Fjord on “Vehicle sales card - M3119” (vehicle-card-r007.png) is inside the frame, with no bumper, wheel or roofline cropped off.
-- `PHOTO-08/vehicle-card-r007/H018` The Norsted Fjord on “Vehicle sales card - M3119” (vehicle-card-r007.png) sits in an even, neutral showroom white, with no dark or dramatic studio treatment behind it.
+- `PHOTO-08/vehicle-card-r007/H018` The Norsted Fjord on “Vehicle sales card - M3119” (vehicle-card-r007.png) is shown in even, neutral, well-lit showroom light, not a dark or dramatic studio look.
 - `PHOTO-08/vehicle-card-r007/H019` The largest text on “Vehicle sales card - M3119” (vehicle-card-r007.png) is the asking price “$29,900”.
-- `PHOTO-08/vehicle-card-r007/H020` On “Vehicle sales card - M3119” (vehicle-card-r007.png) the asking price ($29,900) is larger than the trim line “Adventure AWD”.
-- `PHOTO-08/vehicle-card-r007/H021` The price and the year, make and model line “2019 Norsted Fjord” on “Vehicle sales card - M3119” (vehicle-card-r007.png) are set in Source Serif 4 Bold, the price in lining figures of one height.
-- `PHOTO-08/vehicle-card-r007/H022` The price on “Vehicle sales card - M3119” (vehicle-card-r007.png) seats on a 1 pt Compass Teal #3C6E71 rule running the full card width, its dollar sign sixty percent of figure height and aligned to the figure tops.
-- `PHOTO-08/vehicle-card-r007/H023` The price on “Vehicle sales card - M3119” (vehicle-card-r007.png) is set at 68 px or smaller, the ceiling of the brand type scale.
-- `PHOTO-08/vehicle-card-r007/H024` The mileage, listing detail and fine-print disclosure on “Vehicle sales card - M3119” (vehicle-card-r007.png) are set in Source Sans 3 Regular, not a bolder weight, the disclosure at 20 px, smaller than the body text.
-- `PHOTO-08/vehicle-card-r007/H025` No line of body text on “Vehicle sales card - M3119” (vehicle-card-r007.png) runs longer than 65 characters.
+- `PHOTO-08/vehicle-card-r007/H021` The price “$29,900” on “Vehicle sales card - M3119” (vehicle-card-r007.png) is set in Source Serif 4 Bold.
+- `PHOTO-08/vehicle-card-r007/H022` A thin rule sits directly under the price on “Vehicle sales card - M3119” (vehicle-card-r007.png) and runs the full width of the card.
+- `PHOTO-08/vehicle-card-r007/H024` The mileage and listing detail on “Vehicle sales card - M3119” (vehicle-card-r007.png) are set in Source Sans 3 Regular, not a bolder weight.
+- `PHOTO-08/vehicle-card-r007/H025` No line of the mileage and listing detail on “Vehicle sales card - M3119” (vehicle-card-r007.png) is longer than 65 characters, counting spaces.
 - `PHOTO-08/vehicle-card-r007/H026` All type on “Vehicle sales card - M3119” (vehicle-card-r007.png), outside the roundel artwork, is set in Source Serif 4 or Source Sans 3; no other typeface appears.
 - `PHOTO-08/vehicle-card-r007/H027` “Vehicle sales card - M3119” (vehicle-card-r007.png) has no starburst and no slashed or struck-through price.
-- `PHOTO-08/vehicle-card-r007/H028` Any compass roundel on “Vehicle sales card - M3119” (vehicle-card-r007.png) is meridian_roundel_transparent.svg, meridian_roundel_reversed.svg, meridian_roundel_transparent.png or meridian_roundel_reversed.png, with no white square around it and the ground showing through its knocked-out rings, rose and lettering.
-- `PHOTO-08/vehicle-card-r007/H029` Any compass roundel on “Vehicle sales card - M3119” (vehicle-card-r007.png) keeps its hairline inner ring and MERIDIAN MOTORS lettering open and legible, not closed up.
-- `PHOTO-08/vehicle-card-r007/H030` Any small Meridian Motors wordmark set as type and locked up with the compass roundel on “Vehicle sales card - M3119” (vehicle-card-r007.png), other than a headline dealership name, is Source Serif 4 Bold at 22 px with +40 tracking.
+- `PHOTO-08/vehicle-card-r007/H028` If a compass roundel appears on “Vehicle sales card - M3119” (vehicle-card-r007.png), it is meridian_roundel_transparent.svg, meridian_roundel_reversed.svg, meridian_roundel_transparent.png or meridian_roundel_reversed.png.
+- `PHOTO-08/vehicle-card-r007/H029` If a compass roundel appears on “Vehicle sales card - M3119” (vehicle-card-r007.png), its hairline inner ring and MERIDIAN MOTORS lettering stay open and legible, not closed up.
+- `PHOTO-08/vehicle-card-r007/H030` If a typeset Meridian Motors label sits beside the compass roundel on “Vehicle sales card - M3119” (vehicle-card-r007.png), it is set in Source Serif 4 Bold.
 - `PHOTO-08/vehicle-card-r007/H031` Every solid colour on “Vehicle sales card - M3119” (vehicle-card-r007.png), outside the photograph and any roundel artwork, is a brand palette colour: #1F2A3A, #F6F7F8, #2E3237, #3C6E71 or #9AA1A8.
-- `PHOTO-08/vehicle-card-r007/H032` Every panel and band on “Vehicle sales card - M3119” (vehicle-card-r007.png) is solid at full opacity, and no scrim, gradient or overlay of any colour, black and white included, sits over the photograph.
-- `PHOTO-08/vehicle-card-r007/H033` Every ground behind type on “Vehicle sales card - M3119” (vehicle-card-r007.png) is Showroom White #F6F7F8, apart from any Meridian Navy #1F2A3A band, panel or seal carrying reversed type; the price, mileage and listing detail sit on Showroom White.
-- `PHOTO-08/vehicle-card-r007/H034` On “Vehicle sales card - M3119” (vehicle-card-r007.png), the price is Meridian Navy #1F2A3A, the mileage and listing detail Graphite #2E3237, and “2019 Norsted Fjord” Meridian Navy on Showroom White or Showroom White on a Meridian Navy band.
-- `PHOTO-08/vehicle-card-r007/H035` Compass Teal #3C6E71 and Steel Grey #9AA1A8 appear on “Vehicle sales card - M3119” (vehicle-card-r007.png) only as rules, keylines, seal detail or one small muted line, never as a ground or panel.
+- `PHOTO-08/vehicle-card-r007/H032` Every panel and band on “Vehicle sales card - M3119” (vehicle-card-r007.png) is a flat, fully opaque fill, with no tint, transparency, gradient, shadow or blend effect.
+- `PHOTO-08/vehicle-card-r007/H033` Every ground behind type on “Vehicle sales card - M3119” (vehicle-card-r007.png) is Showroom White #F6F7F8 or a solid Meridian Navy #1F2A3A band, panel or seal.
+- `PHOTO-08/vehicle-card-r007/H034` The price “$29,900” on “Vehicle sales card - M3119” (vehicle-card-r007.png) is Meridian Navy #1F2A3A.
+- `PHOTO-08/vehicle-card-r007/H035` Compass Teal #3C6E71 on “Vehicle sales card - M3119” (vehicle-card-r007.png) appears only as hairline rules or seal compass needles, never as a ground or a text colour.
 - `PHOTO-08/inventory-campaign/H001` The dealership name “Meridian Motors” appears on “Forecourt inventory campaign” (inventory-campaign.png).
 - `PHOTO-08/inventory-campaign/H002` Every vehicle on “Forecourt inventory campaign” (inventory-campaign.png) is one of the stock records in meridian_intake_week.csv, and no other vehicle appears.
 - `PHOTO-08/vehicle-card-r002/H010` “Vehicle sales card - M3082” (vehicle-card-r002.png) carries no vehicle feature, condition or history claim beyond the values in meridian_intake_week.csv, row 2.
@@ -155,22 +158,20 @@ Revised input pack. Previous execution results are historical, not current ratin
 - `PHOTO-08/vehicle-card-r002/H019` On “Vehicle sales card - M3082” (vehicle-card-r002.png), the white roofline and upper shoulder of the Norsted Alta from M3082_norsted_alta_front34.jpg are intact, not clipped away or blended into the background.
 - `PHOTO-08/vehicle-card-r002/H020` The white paint of the Norsted Alta on “Vehicle sales card - M3082” (vehicle-card-r002.png) stays neutral white, as in M3082_norsted_alta_front34.jpg, with no warm or green cast added.
 - `PHOTO-08/vehicle-card-r002/H021` The whole Norsted Alta on “Vehicle sales card - M3082” (vehicle-card-r002.png) is inside the frame, with no bumper, wheel or roofline cropped off.
-- `PHOTO-08/vehicle-card-r002/H022` The Norsted Alta on “Vehicle sales card - M3082” (vehicle-card-r002.png) sits in an even, neutral showroom white, with no dark or dramatic studio treatment behind it.
-- `PHOTO-08/vehicle-card-r002/H023` On “Vehicle sales card - M3082” (vehicle-card-r002.png) the asking price ($26,900) is larger than the trim line “SE AWD”.
-- `PHOTO-08/vehicle-card-r002/H024` The price and the year, make and model line “2019 Norsted Alta” on “Vehicle sales card - M3082” (vehicle-card-r002.png) are set in Source Serif 4 Bold, the price in lining figures of one height.
-- `PHOTO-08/vehicle-card-r002/H025` The price on “Vehicle sales card - M3082” (vehicle-card-r002.png) seats on a 1 pt Compass Teal #3C6E71 rule running the full card width, its dollar sign sixty percent of figure height and aligned to the figure tops.
-- `PHOTO-08/vehicle-card-r002/H026` The price on “Vehicle sales card - M3082” (vehicle-card-r002.png) is set at 68 px or smaller, the ceiling of the brand type scale.
-- `PHOTO-08/vehicle-card-r002/H027` The mileage, listing detail and fine-print disclosure on “Vehicle sales card - M3082” (vehicle-card-r002.png) are set in Source Sans 3 Regular, not a bolder weight, the disclosure at 20 px, smaller than the body text.
-- `PHOTO-08/vehicle-card-r002/H028` No line of body text on “Vehicle sales card - M3082” (vehicle-card-r002.png) runs longer than 65 characters.
+- `PHOTO-08/vehicle-card-r002/H022` The Norsted Alta on “Vehicle sales card - M3082” (vehicle-card-r002.png) is shown in even, neutral, well-lit showroom light, not a dark or dramatic studio look.
+- `PHOTO-08/vehicle-card-r002/H024` The price “$26,900” on “Vehicle sales card - M3082” (vehicle-card-r002.png) is set in Source Serif 4 Bold.
+- `PHOTO-08/vehicle-card-r002/H025` A thin rule sits directly under the price on “Vehicle sales card - M3082” (vehicle-card-r002.png) and runs the full width of the card.
+- `PHOTO-08/vehicle-card-r002/H027` The mileage and listing detail on “Vehicle sales card - M3082” (vehicle-card-r002.png) are set in Source Sans 3 Regular, not a bolder weight.
+- `PHOTO-08/vehicle-card-r002/H028` No line of the mileage and listing detail on “Vehicle sales card - M3082” (vehicle-card-r002.png) is longer than 65 characters, counting spaces.
 - `PHOTO-08/vehicle-card-r002/H029` All type on “Vehicle sales card - M3082” (vehicle-card-r002.png), outside the roundel artwork, is set in Source Serif 4 or Source Sans 3; no other typeface appears.
 - `PHOTO-08/vehicle-card-r002/H030` “Vehicle sales card - M3082” (vehicle-card-r002.png) has no starburst and no slashed or struck-through price.
-- `PHOTO-08/vehicle-card-r002/H031` Any compass roundel on “Vehicle sales card - M3082” (vehicle-card-r002.png) is meridian_roundel_transparent.svg, meridian_roundel_reversed.svg, meridian_roundel_transparent.png or meridian_roundel_reversed.png, with no white square around it and the ground showing through its knocked-out rings, rose and lettering.
-- `PHOTO-08/vehicle-card-r002/H032` Any compass roundel on “Vehicle sales card - M3082” (vehicle-card-r002.png) keeps its hairline inner ring and MERIDIAN MOTORS lettering open and legible, not closed up.
-- `PHOTO-08/vehicle-card-r002/H033` Any small Meridian Motors wordmark set as type and locked up with the compass roundel on “Vehicle sales card - M3082” (vehicle-card-r002.png), other than a headline dealership name, is Source Serif 4 Bold at 22 px with +40 tracking.
-- `PHOTO-08/vehicle-card-r002/H034` Every panel and band on “Vehicle sales card - M3082” (vehicle-card-r002.png) is solid at full opacity, and no scrim, gradient or overlay of any colour, black and white included, sits over the photograph.
-- `PHOTO-08/vehicle-card-r002/H035` Every ground behind type on “Vehicle sales card - M3082” (vehicle-card-r002.png) is Showroom White #F6F7F8, apart from any Meridian Navy #1F2A3A band, panel or seal carrying reversed type; the price, mileage and listing detail sit on Showroom White.
-- `PHOTO-08/vehicle-card-r002/H036` On “Vehicle sales card - M3082” (vehicle-card-r002.png), the price is Meridian Navy #1F2A3A, the mileage and listing detail Graphite #2E3237, and “2019 Norsted Alta” Meridian Navy on Showroom White or Showroom White on a Meridian Navy band.
-- `PHOTO-08/vehicle-card-r002/H037` Compass Teal #3C6E71 and Steel Grey #9AA1A8 appear on “Vehicle sales card - M3082” (vehicle-card-r002.png) only as rules, keylines, seal detail or one small muted line, never as a ground or panel.
+- `PHOTO-08/vehicle-card-r002/H031` If a compass roundel appears on “Vehicle sales card - M3082” (vehicle-card-r002.png), it is meridian_roundel_transparent.svg, meridian_roundel_reversed.svg, meridian_roundel_transparent.png or meridian_roundel_reversed.png.
+- `PHOTO-08/vehicle-card-r002/H032` If a compass roundel appears on “Vehicle sales card - M3082” (vehicle-card-r002.png), its hairline inner ring and MERIDIAN MOTORS lettering stay open and legible, not closed up.
+- `PHOTO-08/vehicle-card-r002/H033` If a typeset Meridian Motors label sits beside the compass roundel on “Vehicle sales card - M3082” (vehicle-card-r002.png), it is set in Source Serif 4 Bold.
+- `PHOTO-08/vehicle-card-r002/H034` Every panel and band on “Vehicle sales card - M3082” (vehicle-card-r002.png) is a flat, fully opaque fill, with no tint, transparency, gradient, shadow or blend effect.
+- `PHOTO-08/vehicle-card-r002/H035` Every ground behind type on “Vehicle sales card - M3082” (vehicle-card-r002.png) is Showroom White #F6F7F8 or a solid Meridian Navy #1F2A3A band, panel or seal.
+- `PHOTO-08/vehicle-card-r002/H036` The price “$26,900” on “Vehicle sales card - M3082” (vehicle-card-r002.png) is Meridian Navy #1F2A3A.
+- `PHOTO-08/vehicle-card-r002/H037` Compass Teal #3C6E71 on “Vehicle sales card - M3082” (vehicle-card-r002.png) appears only as hairline rules or seal compass needles, never as a ground or a text colour.
 - `PHOTO-08/vehicle-card-r006/H010` The certification line on “Vehicle sales card - M2471” (vehicle-card-r006.png) reads exactly “Meridian Certified”, not “Meridian Certified Plus”, as in meridian_intake_week.csv, row 6.
 - `PHOTO-08/vehicle-card-r006/H011` “Vehicle sales card - M2471” (vehicle-card-r006.png) carries no vehicle feature, condition or history claim beyond the values in meridian_intake_week.csv, row 6.
 - `PHOTO-08/vehicle-card-r006/H012` The enquiry action on “Vehicle sales card - M2471” (vehicle-card-r006.png) asks the buyer to enquire about stock M2471 at Meridian Motors in Portland, Maine.
@@ -180,25 +181,23 @@ Revised input pack. Previous execution results are historical, not current ratin
 - `PHOTO-08/vehicle-card-r006/H016` On “Vehicle sales card - M2471” (vehicle-card-r006.png), the silver roofline and upper shoulder of the Calder Kestrel from M2471_calder_kestrel_front34.jpg are intact, not clipped away or blended into the background.
 - `PHOTO-08/vehicle-card-r006/H017` The silver paint of the Calder Kestrel on “Vehicle sales card - M2471” (vehicle-card-r006.png) reads neutral silver, without the dim cool-green cast of M2471_calder_kestrel_front34.jpg.
 - `PHOTO-08/vehicle-card-r006/H018` The whole Calder Kestrel on “Vehicle sales card - M2471” (vehicle-card-r006.png) is inside the frame, with no bumper, wheel or roofline cropped off.
-- `PHOTO-08/vehicle-card-r006/H019` The Calder Kestrel on “Vehicle sales card - M2471” (vehicle-card-r006.png) sits in an even, neutral showroom white, with no dark or dramatic studio treatment behind it.
+- `PHOTO-08/vehicle-card-r006/H019` The Calder Kestrel on “Vehicle sales card - M2471” (vehicle-card-r006.png) is shown in even, neutral, well-lit showroom light, not a dark or dramatic studio look.
 - `PHOTO-08/vehicle-card-r006/H020` The largest text on “Vehicle sales card - M2471” (vehicle-card-r006.png) is the asking price “$24,900”.
-- `PHOTO-08/vehicle-card-r006/H021` On “Vehicle sales card - M2471” (vehicle-card-r006.png) the asking price ($24,900) is larger than the trim line “SEL Technology Package AWD”.
-- `PHOTO-08/vehicle-card-r006/H022` The price and the year, make and model line “2017 Calder Kestrel” on “Vehicle sales card - M2471” (vehicle-card-r006.png) are set in Source Serif 4 Bold, the price in lining figures of one height.
-- `PHOTO-08/vehicle-card-r006/H023` The price on “Vehicle sales card - M2471” (vehicle-card-r006.png) seats on a 1 pt Compass Teal #3C6E71 rule running the full card width, its dollar sign sixty percent of figure height and aligned to the figure tops.
-- `PHOTO-08/vehicle-card-r006/H024` The price on “Vehicle sales card - M2471” (vehicle-card-r006.png) is set at 68 px or smaller, the ceiling of the brand type scale.
-- `PHOTO-08/vehicle-card-r006/H025` The mileage, listing detail and fine-print disclosure on “Vehicle sales card - M2471” (vehicle-card-r006.png) are set in Source Sans 3 Regular, not a bolder weight, the disclosure at 20 px, smaller than the body text.
-- `PHOTO-08/vehicle-card-r006/H026` No line of body text on “Vehicle sales card - M2471” (vehicle-card-r006.png) runs longer than 65 characters.
+- `PHOTO-08/vehicle-card-r006/H022` The price “$24,900” on “Vehicle sales card - M2471” (vehicle-card-r006.png) is set in Source Serif 4 Bold.
+- `PHOTO-08/vehicle-card-r006/H023` A thin rule sits directly under the price on “Vehicle sales card - M2471” (vehicle-card-r006.png) and runs the full width of the card.
+- `PHOTO-08/vehicle-card-r006/H025` The mileage and listing detail on “Vehicle sales card - M2471” (vehicle-card-r006.png) are set in Source Sans 3 Regular, not a bolder weight.
+- `PHOTO-08/vehicle-card-r006/H026` No line of the mileage and listing detail on “Vehicle sales card - M2471” (vehicle-card-r006.png) is longer than 65 characters, counting spaces.
 - `PHOTO-08/vehicle-card-r006/H027` All type on “Vehicle sales card - M2471” (vehicle-card-r006.png), outside the roundel artwork, is set in Source Serif 4 or Source Sans 3; no other typeface appears.
 - `PHOTO-08/vehicle-card-r006/H028` “Vehicle sales card - M2471” (vehicle-card-r006.png) has no starburst and no slashed or struck-through price.
-- `PHOTO-08/vehicle-card-r006/H029` Any compass roundel on “Vehicle sales card - M2471” (vehicle-card-r006.png) is meridian_roundel_transparent.svg, meridian_roundel_reversed.svg, meridian_roundel_transparent.png or meridian_roundel_reversed.png, with no white square around it and the ground showing through its knocked-out rings, rose and lettering.
-- `PHOTO-08/vehicle-card-r006/H030` Any compass roundel on “Vehicle sales card - M2471” (vehicle-card-r006.png) keeps its hairline inner ring and MERIDIAN MOTORS lettering open and legible, not closed up.
-- `PHOTO-08/vehicle-card-r006/H031` Any small Meridian Motors wordmark set as type and locked up with the compass roundel on “Vehicle sales card - M2471” (vehicle-card-r006.png), other than a headline dealership name, is Source Serif 4 Bold at 22 px with +40 tracking.
+- `PHOTO-08/vehicle-card-r006/H029` If a compass roundel appears on “Vehicle sales card - M2471” (vehicle-card-r006.png), it is meridian_roundel_transparent.svg, meridian_roundel_reversed.svg, meridian_roundel_transparent.png or meridian_roundel_reversed.png.
+- `PHOTO-08/vehicle-card-r006/H030` If a compass roundel appears on “Vehicle sales card - M2471” (vehicle-card-r006.png), its hairline inner ring and MERIDIAN MOTORS lettering stay open and legible, not closed up.
+- `PHOTO-08/vehicle-card-r006/H031` If a typeset Meridian Motors label sits beside the compass roundel on “Vehicle sales card - M2471” (vehicle-card-r006.png), it is set in Source Serif 4 Bold.
 - `PHOTO-08/vehicle-card-r006/H032` Every solid colour on “Vehicle sales card - M2471” (vehicle-card-r006.png), outside the photograph and any roundel artwork, is a brand palette colour: #1F2A3A, #F6F7F8, #2E3237, #3C6E71 or #9AA1A8.
-- `PHOTO-08/vehicle-card-r006/H033` Every panel and band on “Vehicle sales card - M2471” (vehicle-card-r006.png) is solid at full opacity, and no scrim, gradient or overlay of any colour, black and white included, sits over the photograph.
-- `PHOTO-08/vehicle-card-r006/H034` Every ground behind type on “Vehicle sales card - M2471” (vehicle-card-r006.png) is Showroom White #F6F7F8, apart from any Meridian Navy #1F2A3A band, panel or seal carrying reversed type; the price, mileage and listing detail sit on Showroom White.
-- `PHOTO-08/vehicle-card-r006/H035` On “Vehicle sales card - M2471” (vehicle-card-r006.png), the price is Meridian Navy #1F2A3A, the mileage and listing detail Graphite #2E3237, and “2017 Calder Kestrel” Meridian Navy on Showroom White or Showroom White on a Meridian Navy band.
-- `PHOTO-08/vehicle-card-r006/H036` Compass Teal #3C6E71 and Steel Grey #9AA1A8 appear on “Vehicle sales card - M2471” (vehicle-card-r006.png) only as rules, keylines, seal detail or one small muted line, never as a ground or panel.
-- `PHOTO-08/vehicle-card-r004/H010` The certification line on “Vehicle sales card - M2417” (vehicle-card-r004.png) reads exactly “Meridian Certified Plus”; a wrong certification tier makes the card unusable.
+- `PHOTO-08/vehicle-card-r006/H033` Every panel and band on “Vehicle sales card - M2471” (vehicle-card-r006.png) is a flat, fully opaque fill, with no tint, transparency, gradient, shadow or blend effect.
+- `PHOTO-08/vehicle-card-r006/H034` Every ground behind type on “Vehicle sales card - M2471” (vehicle-card-r006.png) is Showroom White #F6F7F8 or a solid Meridian Navy #1F2A3A band, panel or seal.
+- `PHOTO-08/vehicle-card-r006/H035` The price “$24,900” on “Vehicle sales card - M2471” (vehicle-card-r006.png) is Meridian Navy #1F2A3A.
+- `PHOTO-08/vehicle-card-r006/H036` Compass Teal #3C6E71 on “Vehicle sales card - M2471” (vehicle-card-r006.png) appears only as hairline rules or seal compass needles, never as a ground or a text colour.
+- `PHOTO-08/vehicle-card-r004/H010` The certification line on “Vehicle sales card - M2417” (vehicle-card-r004.png) reads exactly “Meridian Certified Plus”, not “Meridian Certified”, as in meridian_intake_week.csv, row 4.
 - `PHOTO-08/vehicle-card-r004/H011` “Vehicle sales card - M2417” (vehicle-card-r004.png) carries no vehicle feature, condition or history claim beyond the values in meridian_intake_week.csv, row 4.
 - `PHOTO-08/vehicle-card-r004/H012` The enquiry action on “Vehicle sales card - M2417” (vehicle-card-r004.png) asks the buyer to enquire about stock M2417 at Meridian Motors in Portland, Maine.
 - `PHOTO-08/vehicle-card-r004/H013` “Vehicle sales card - M2417” (vehicle-card-r004.png) shows no phone number, email address or web address, since none is supplied in the task files.
@@ -206,27 +205,25 @@ Revised input pack. Previous execution results are historical, not current ratin
 - `PHOTO-08/vehicle-card-r004/H015` “Vehicle sales card - M2417” (vehicle-card-r004.png) carries a fine-print disclosure stating that the price excludes tax, title and registration.
 - `PHOTO-08/vehicle-card-r004/H016` The silver paint of the Calder Vireo on “Vehicle sales card - M2417” (vehicle-card-r004.png) reads neutral silver, without the yellow-orange wash-bay cast of M2417_calder_vireo_front34.jpg.
 - `PHOTO-08/vehicle-card-r004/H017` The whole Calder Vireo on “Vehicle sales card - M2417” (vehicle-card-r004.png) is inside the frame, with no bumper, wheel or roofline cropped off.
-- `PHOTO-08/vehicle-card-r004/H018` The Calder Vireo on “Vehicle sales card - M2417” (vehicle-card-r004.png) sits in an even, neutral showroom white, with no dark or dramatic studio treatment behind it.
+- `PHOTO-08/vehicle-card-r004/H018` The Calder Vireo on “Vehicle sales card - M2417” (vehicle-card-r004.png) is shown in even, neutral, well-lit showroom light, not a dark or dramatic studio look.
 - `PHOTO-08/vehicle-card-r004/H019` The largest text on “Vehicle sales card - M2417” (vehicle-card-r004.png) is the asking price “$23,900”.
-- `PHOTO-08/vehicle-card-r004/H020` On “Vehicle sales card - M2417” (vehicle-card-r004.png) the asking price ($23,900) is larger than the trim line “SEL”.
-- `PHOTO-08/vehicle-card-r004/H021` The price and the year, make and model line “2017 Calder Vireo” on “Vehicle sales card - M2417” (vehicle-card-r004.png) are set in Source Serif 4 Bold, the price in lining figures of one height.
-- `PHOTO-08/vehicle-card-r004/H022` The price on “Vehicle sales card - M2417” (vehicle-card-r004.png) seats on a 1 pt Compass Teal #3C6E71 rule running the full card width, its dollar sign sixty percent of figure height and aligned to the figure tops.
-- `PHOTO-08/vehicle-card-r004/H023` The price on “Vehicle sales card - M2417” (vehicle-card-r004.png) is set at 68 px or smaller, the ceiling of the brand type scale.
-- `PHOTO-08/vehicle-card-r004/H024` The mileage, listing detail and fine-print disclosure on “Vehicle sales card - M2417” (vehicle-card-r004.png) are set in Source Sans 3 Regular, not a bolder weight, the disclosure at 20 px, smaller than the body text.
-- `PHOTO-08/vehicle-card-r004/H025` No line of body text on “Vehicle sales card - M2417” (vehicle-card-r004.png) runs longer than 65 characters.
+- `PHOTO-08/vehicle-card-r004/H021` The price “$23,900” on “Vehicle sales card - M2417” (vehicle-card-r004.png) is set in Source Serif 4 Bold.
+- `PHOTO-08/vehicle-card-r004/H022` A thin rule sits directly under the price on “Vehicle sales card - M2417” (vehicle-card-r004.png) and runs the full width of the card.
+- `PHOTO-08/vehicle-card-r004/H024` The mileage and listing detail on “Vehicle sales card - M2417” (vehicle-card-r004.png) are set in Source Sans 3 Regular, not a bolder weight.
+- `PHOTO-08/vehicle-card-r004/H025` No line of the mileage and listing detail on “Vehicle sales card - M2417” (vehicle-card-r004.png) is longer than 65 characters, counting spaces.
 - `PHOTO-08/vehicle-card-r004/H026` All type on “Vehicle sales card - M2417” (vehicle-card-r004.png), outside the roundel artwork, is set in Source Serif 4 or Source Sans 3; no other typeface appears.
 - `PHOTO-08/vehicle-card-r004/H027` “Vehicle sales card - M2417” (vehicle-card-r004.png) has no starburst and no slashed or struck-through price.
-- `PHOTO-08/vehicle-card-r004/H028` Any compass roundel on “Vehicle sales card - M2417” (vehicle-card-r004.png) is meridian_roundel_transparent.svg, meridian_roundel_reversed.svg, meridian_roundel_transparent.png or meridian_roundel_reversed.png, with no white square around it and the ground showing through its knocked-out rings, rose and lettering.
-- `PHOTO-08/vehicle-card-r004/H029` Any compass roundel on “Vehicle sales card - M2417” (vehicle-card-r004.png) keeps its hairline inner ring and MERIDIAN MOTORS lettering open and legible, not closed up.
-- `PHOTO-08/vehicle-card-r004/H030` Any small Meridian Motors wordmark set as type and locked up with the compass roundel on “Vehicle sales card - M2417” (vehicle-card-r004.png), other than a headline dealership name, is Source Serif 4 Bold at 22 px with +40 tracking.
+- `PHOTO-08/vehicle-card-r004/H028` If a compass roundel appears on “Vehicle sales card - M2417” (vehicle-card-r004.png), it is meridian_roundel_transparent.svg, meridian_roundel_reversed.svg, meridian_roundel_transparent.png or meridian_roundel_reversed.png.
+- `PHOTO-08/vehicle-card-r004/H029` If a compass roundel appears on “Vehicle sales card - M2417” (vehicle-card-r004.png), its hairline inner ring and MERIDIAN MOTORS lettering stay open and legible, not closed up.
+- `PHOTO-08/vehicle-card-r004/H030` If a typeset Meridian Motors label sits beside the compass roundel on “Vehicle sales card - M2417” (vehicle-card-r004.png), it is set in Source Serif 4 Bold.
 - `PHOTO-08/vehicle-card-r004/H031` Every solid colour on “Vehicle sales card - M2417” (vehicle-card-r004.png), outside the photograph and any roundel artwork, is a brand palette colour: #1F2A3A, #F6F7F8, #2E3237, #3C6E71 or #9AA1A8.
-- `PHOTO-08/vehicle-card-r004/H032` Every panel and band on “Vehicle sales card - M2417” (vehicle-card-r004.png) is solid at full opacity, and no scrim, gradient or overlay of any colour, black and white included, sits over the photograph.
-- `PHOTO-08/vehicle-card-r004/H033` Every ground behind type on “Vehicle sales card - M2417” (vehicle-card-r004.png) is Showroom White #F6F7F8, apart from any Meridian Navy #1F2A3A band, panel or seal carrying reversed type; the price, mileage and listing detail sit on Showroom White.
-- `PHOTO-08/vehicle-card-r004/H034` On “Vehicle sales card - M2417” (vehicle-card-r004.png), the price is Meridian Navy #1F2A3A, the mileage and listing detail Graphite #2E3237, and “2017 Calder Vireo” Meridian Navy on Showroom White or Showroom White on a Meridian Navy band.
-- `PHOTO-08/vehicle-card-r004/H035` Compass Teal #3C6E71 and Steel Grey #9AA1A8 appear on “Vehicle sales card - M2417” (vehicle-card-r004.png) only as rules, keylines, seal detail or one small muted line, never as a ground or panel.
-- `PHOTO-08/inventory-campaign/H003` The compass roundel on “Forecourt inventory campaign” (inventory-campaign.png) is meridian_roundel_transparent.svg, meridian_roundel_reversed.svg, meridian_roundel_transparent.png or meridian_roundel_reversed.png, with its proportions unchanged.
-- `PHOTO-08/inventory-campaign/H004` On “Forecourt inventory campaign” (inventory-campaign.png), outside the roundel artwork, the dealership name “Meridian Motors” is Source Serif 4, and every year, make and model caption and any price are Source Serif 4 Bold, any price in lining figures of one height.
-- `PHOTO-08/inventory-campaign/H005` On “Forecourt inventory campaign” (inventory-campaign.png) the dealership name “Meridian Motors” sits above every vehicle caption.
+- `PHOTO-08/vehicle-card-r004/H032` Every panel and band on “Vehicle sales card - M2417” (vehicle-card-r004.png) is a flat, fully opaque fill, with no tint, transparency, gradient, shadow or blend effect.
+- `PHOTO-08/vehicle-card-r004/H033` Every ground behind type on “Vehicle sales card - M2417” (vehicle-card-r004.png) is Showroom White #F6F7F8 or a solid Meridian Navy #1F2A3A band, panel or seal.
+- `PHOTO-08/vehicle-card-r004/H034` The price “$23,900” on “Vehicle sales card - M2417” (vehicle-card-r004.png) is Meridian Navy #1F2A3A.
+- `PHOTO-08/vehicle-card-r004/H035` Compass Teal #3C6E71 on “Vehicle sales card - M2417” (vehicle-card-r004.png) appears only as hairline rules or seal compass needles, never as a ground or a text colour.
+- `PHOTO-08/inventory-campaign/H003` The compass roundel on “Forecourt inventory campaign” (inventory-campaign.png) is meridian_roundel_transparent.svg, meridian_roundel_reversed.svg, meridian_roundel_transparent.png or meridian_roundel_reversed.png.
+- `PHOTO-08/inventory-campaign/H004` Outside the roundel artwork, the typeset dealership name “Meridian Motors” on “Forecourt inventory campaign” (inventory-campaign.png) is set in Source Serif 4 Bold.
+- `PHOTO-08/inventory-campaign/H005` The dealership name “Meridian Motors” on “Forecourt inventory campaign” (inventory-campaign.png) is fully legible at full size, with no letters cut off, covered or set over a photograph.
 - `PHOTO-08/inventory-campaign/H006` “Forecourt inventory campaign” (inventory-campaign.png) shows stock M3082, the 2019 Norsted Alta, from one of M3082_norsted_alta_front34.jpg, M3082_norsted_alta_side.jpg or M3082_norsted_alta_rear34.jpg.
 - `PHOTO-08/inventory-campaign/H007` On “Forecourt inventory campaign” (inventory-campaign.png), the car photographed in M3082_norsted_alta_front34.jpg, M3082_norsted_alta_side.jpg or M3082_norsted_alta_rear34.jpg is captioned “2019 Norsted Alta”.
 - `PHOTO-08/inventory-campaign/H008` Any price shown for the 2019 Norsted Alta on “Forecourt inventory campaign” (inventory-campaign.png) is $26,900, its asking_price in meridian_intake_week.csv, row 2.
@@ -236,7 +233,7 @@ Revised input pack. Previous execution results are historical, not current ratin
 - `PHOTO-08/inventory-campaign/H012` Any trim shown for the 2019 Norsted Alta on “Forecourt inventory campaign” (inventory-campaign.png) is “SE AWD”, its trim in meridian_intake_week.csv, row 2.
 - `PHOTO-08/inventory-campaign/H013` The Norsted Alta on “Forecourt inventory campaign” (inventory-campaign.png) keeps the body panels, wheels and glass of whichever of M3082_norsted_alta_front34.jpg, M3082_norsted_alta_side.jpg or M3082_norsted_alta_rear34.jpg it comes from, with nothing added or removed.
 - `PHOTO-08/inventory-campaign/H014` The white Norsted Alta on “Forecourt inventory campaign” (inventory-campaign.png) stays neutral white, as in M3082_norsted_alta_front34.jpg, M3082_norsted_alta_side.jpg and M3082_norsted_alta_rear34.jpg, with no warm or green cast added.
-- `PHOTO-08/inventory-campaign/H015` On “Forecourt inventory campaign” (inventory-campaign.png), the white roofline and upper shoulder of the Norsted Alta, from whichever of M3082_norsted_alta_front34.jpg, M3082_norsted_alta_side.jpg or M3082_norsted_alta_rear34.jpg is used, are intact, not clipped or blended away.
+- `PHOTO-08/inventory-campaign/H015` The white roofline and upper shoulder of the Norsted Alta on “Forecourt inventory campaign” (inventory-campaign.png) are intact, not clipped or blended into the background.
 - `PHOTO-08/inventory-campaign/H016` “Forecourt inventory campaign” (inventory-campaign.png) shows stock M3091, the 2018 Ardmoor Ridge, from one of M3091_ardmoor_ridge_front34.jpg, M3091_ardmoor_ridge_side.jpg or M3091_ardmoor_ridge_rear34.jpg.
 - `PHOTO-08/inventory-campaign/H017` On “Forecourt inventory campaign” (inventory-campaign.png), the car photographed in M3091_ardmoor_ridge_front34.jpg, M3091_ardmoor_ridge_side.jpg or M3091_ardmoor_ridge_rear34.jpg is captioned “2018 Ardmoor Ridge”.
 - `PHOTO-08/inventory-campaign/H018` Any price shown for the 2018 Ardmoor Ridge on “Forecourt inventory campaign” (inventory-campaign.png) is $24,500, its asking_price in meridian_intake_week.csv, row 3.
@@ -265,7 +262,7 @@ Revised input pack. Previous execution results are historical, not current ratin
 - `PHOTO-08/inventory-campaign/H041` Any trim shown for the 2020 Brookmere Sable on “Forecourt inventory campaign” (inventory-campaign.png) is “Touring”, its trim in meridian_intake_week.csv, row 5.
 - `PHOTO-08/inventory-campaign/H042` The Brookmere Sable on “Forecourt inventory campaign” (inventory-campaign.png) keeps the body panels, wheels and glass of whichever of M3105_brookmere_sable_front34.jpg, M3105_brookmere_sable_side.jpg or M3105_brookmere_sable_rear34.jpg it comes from, with nothing added or removed.
 - `PHOTO-08/inventory-campaign/H043` The black paint of the Brookmere Sable on “Forecourt inventory campaign” (inventory-campaign.png) reads neutral black, without the warm wash-bay cast of M3105_brookmere_sable_front34.jpg, M3105_brookmere_sable_side.jpg and M3105_brookmere_sable_rear34.jpg.
-- `PHOTO-08/inventory-campaign/H044` The shadow side of the black Brookmere Sable on “Forecourt inventory campaign” (inventory-campaign.png) keeps the panel and wheel detail of whichever of M3105_brookmere_sable_front34.jpg, M3105_brookmere_sable_side.jpg or M3105_brookmere_sable_rear34.jpg is used, not blocked up.
+- `PHOTO-08/inventory-campaign/H044` The shadow side of the black Brookmere Sable on “Forecourt inventory campaign” (inventory-campaign.png) keeps its panel and wheel detail, not blocked up to solid black.
 - `PHOTO-08/inventory-campaign/H045` “Forecourt inventory campaign” (inventory-campaign.png) shows stock M2471, the 2017 Calder Kestrel, from one of M2471_calder_kestrel_front34.jpg, M2471_calder_kestrel_side.jpg or M2471_calder_kestrel_rear34.jpg.
 - `PHOTO-08/inventory-campaign/H046` On “Forecourt inventory campaign” (inventory-campaign.png), the car photographed in M2471_calder_kestrel_front34.jpg, M2471_calder_kestrel_side.jpg or M2471_calder_kestrel_rear34.jpg is captioned “2017 Calder Kestrel”.
 - `PHOTO-08/inventory-campaign/H047` Any price shown for the 2017 Calder Kestrel on “Forecourt inventory campaign” (inventory-campaign.png) is $24,900, its asking_price in meridian_intake_week.csv, row 6.
@@ -275,7 +272,7 @@ Revised input pack. Previous execution results are historical, not current ratin
 - `PHOTO-08/inventory-campaign/H051` Any trim shown for the 2017 Calder Kestrel on “Forecourt inventory campaign” (inventory-campaign.png) is “SEL Technology Package AWD”, its trim in meridian_intake_week.csv, row 6.
 - `PHOTO-08/inventory-campaign/H052` The Calder Kestrel on “Forecourt inventory campaign” (inventory-campaign.png) keeps the body panels, wheels and glass of whichever of M2471_calder_kestrel_front34.jpg, M2471_calder_kestrel_side.jpg or M2471_calder_kestrel_rear34.jpg it comes from, with nothing added or removed.
 - `PHOTO-08/inventory-campaign/H053` The silver paint of the Calder Kestrel on “Forecourt inventory campaign” (inventory-campaign.png) reads neutral silver, without the dim cool-green cast of M2471_calder_kestrel_front34.jpg, M2471_calder_kestrel_side.jpg and M2471_calder_kestrel_rear34.jpg.
-- `PHOTO-08/inventory-campaign/H054` On “Forecourt inventory campaign” (inventory-campaign.png), the silver roofline and upper shoulder of the Calder Kestrel, from whichever of M2471_calder_kestrel_front34.jpg, M2471_calder_kestrel_side.jpg or M2471_calder_kestrel_rear34.jpg is used, are intact, not clipped or blended away.
+- `PHOTO-08/inventory-campaign/H054` The silver roofline and upper shoulder of the Calder Kestrel on “Forecourt inventory campaign” (inventory-campaign.png) are intact, not clipped or blended into the background.
 - `PHOTO-08/inventory-campaign/H055` “Forecourt inventory campaign” (inventory-campaign.png) shows stock M3119, the 2019 Norsted Fjord, from one of M3119_norsted_fjord_front34.jpg, M3119_norsted_fjord_side.jpg or M3119_norsted_fjord_rear34.jpg.
 - `PHOTO-08/inventory-campaign/H056` On “Forecourt inventory campaign” (inventory-campaign.png), the car photographed in M3119_norsted_fjord_front34.jpg, M3119_norsted_fjord_side.jpg or M3119_norsted_fjord_rear34.jpg is captioned “2019 Norsted Fjord”.
 - `PHOTO-08/inventory-campaign/H057` Any price shown for the 2019 Norsted Fjord on “Forecourt inventory campaign” (inventory-campaign.png) is $29,900, its asking_price in meridian_intake_week.csv, row 7.
@@ -284,28 +281,25 @@ Revised input pack. Previous execution results are historical, not current ratin
 - `PHOTO-08/inventory-campaign/H060` Any certification tier shown for the 2019 Norsted Fjord on “Forecourt inventory campaign” (inventory-campaign.png) is “Meridian Certified”, its cert_tier in meridian_intake_week.csv, row 7.
 - `PHOTO-08/inventory-campaign/H061` Any trim shown for the 2019 Norsted Fjord on “Forecourt inventory campaign” (inventory-campaign.png) is “Adventure AWD”, its trim in meridian_intake_week.csv, row 7.
 - `PHOTO-08/inventory-campaign/H062` The Norsted Fjord on “Forecourt inventory campaign” (inventory-campaign.png) keeps the body panels, wheels and glass of whichever of M3119_norsted_fjord_front34.jpg, M3119_norsted_fjord_side.jpg or M3119_norsted_fjord_rear34.jpg it comes from, with nothing added or removed.
-- `PHOTO-08/inventory-campaign/H063` The Norsted Fjord on “Forecourt inventory campaign” (inventory-campaign.png) is evenly lit and its navy-blue paint reads true, without the dim cool-green cast of M3119_norsted_fjord_front34.jpg, M3119_norsted_fjord_side.jpg and M3119_norsted_fjord_rear34.jpg.
+- `PHOTO-08/inventory-campaign/H063` The navy-blue paint of the Norsted Fjord on “Forecourt inventory campaign” (inventory-campaign.png) reads true navy, without the dim cool-green cast of M3119_norsted_fjord_front34.jpg, M3119_norsted_fjord_side.jpg and M3119_norsted_fjord_rear34.jpg.
 - `PHOTO-08/inventory-campaign/H064` “Forecourt inventory campaign” (inventory-campaign.png) carries no vehicle feature, condition or history claim beyond the values in meridian_intake_week.csv.
 - `PHOTO-08/inventory-campaign/H065` No last-season placeholder value from meridian_window_card_autumn.pdf (M2290, 2016 Calder Vireo, 71,300 mi, $22,900) appears on “Forecourt inventory campaign” (inventory-campaign.png).
 - `PHOTO-08/inventory-campaign/H066` “Forecourt inventory campaign” (inventory-campaign.png) shows no phone number, email address or web address, since none is supplied in the task files.
 - `PHOTO-08/inventory-campaign/H067` If any price appears on “Forecourt inventory campaign” (inventory-campaign.png), the campaign also carries a fine-print disclosure that the price excludes tax, title and registration.
 - `PHOTO-08/inventory-campaign/H068` Every vehicle on “Forecourt inventory campaign” (inventory-campaign.png) is shown whole, with no bumper, wheel or roofline cropped off.
-- `PHOTO-08/inventory-campaign/H069` Every vehicle on “Forecourt inventory campaign” (inventory-campaign.png) sits in an even, neutral showroom white, with no dark or dramatic studio treatment behind it.
-- `PHOTO-08/inventory-campaign/H070` The compass roundel on “Forecourt inventory campaign” (inventory-campaign.png) has no white square around it, and the ground shows through its knocked-out rings, compass rose and lettering, as in meridian_roundel_transparent.svg and meridian_roundel_reversed.svg.
+- `PHOTO-08/inventory-campaign/H069` Every vehicle on “Forecourt inventory campaign” (inventory-campaign.png) is shown in even, neutral, well-lit showroom light, not a dark or dramatic studio look.
+- `PHOTO-08/inventory-campaign/H070` The compass roundel on “Forecourt inventory campaign” (inventory-campaign.png) has no white square, and the ground shows through its knocked-out rings, compass rose and lettering.
 - `PHOTO-08/inventory-campaign/H071` The hairline inner ring and the MERIDIAN MOTORS lettering of the compass roundel on “Forecourt inventory campaign” (inventory-campaign.png) stay open and legible, not closed up.
-- `PHOTO-08/inventory-campaign/H072` Any price on “Forecourt inventory campaign” (inventory-campaign.png) seats on a 1 pt Compass Teal #3C6E71 rule running the full width of its card or panel, its dollar sign sixty percent of figure height and aligned to the figure tops.
-- `PHOTO-08/inventory-campaign/H073` Any price on “Forecourt inventory campaign” (inventory-campaign.png) is set at 68 px or smaller, the ceiling of the brand type scale.
-- `PHOTO-08/inventory-campaign/H074` Any body text, such as mileage and listing detail, and any fine-print disclosure on “Forecourt inventory campaign” (inventory-campaign.png) is set in Source Sans 3 Regular, not a bolder weight, the disclosure at 20 px, smaller than the body text.
-- `PHOTO-08/inventory-campaign/H075` No line of body text on “Forecourt inventory campaign” (inventory-campaign.png) runs longer than 65 characters.
+- `PHOTO-08/inventory-campaign/H072` If a price appears on “Forecourt inventory campaign” (inventory-campaign.png), a thin rule sits directly under it across that vehicle's full panel width.
+- `PHOTO-08/inventory-campaign/H074` If mileage or listing detail appears on “Forecourt inventory campaign” (inventory-campaign.png), it is set in Source Sans 3 Regular, not a bolder weight.
+- `PHOTO-08/inventory-campaign/H075` If mileage or listing detail appears on “Forecourt inventory campaign” (inventory-campaign.png), no line of it is longer than 65 characters, counting spaces.
 - `PHOTO-08/inventory-campaign/H076` All type on “Forecourt inventory campaign” (inventory-campaign.png), outside the roundel artwork, is set in Source Serif 4 or Source Sans 3; no other typeface appears.
 - `PHOTO-08/inventory-campaign/H077` “Forecourt inventory campaign” (inventory-campaign.png) has no starburst and no slashed or struck-through price.
-- `PHOTO-08/inventory-campaign/H078` Any small Meridian Motors wordmark set as type and locked up with the compass roundel on “Forecourt inventory campaign” (inventory-campaign.png), other than the headline dealership name, is Source Serif 4 Bold at 22 px with +40 tracking.
 - `PHOTO-08/inventory-campaign/H079` Every solid colour on “Forecourt inventory campaign” (inventory-campaign.png), outside the photographs and the roundel artwork, is a brand palette colour: #1F2A3A, #F6F7F8, #2E3237, #3C6E71 or #9AA1A8.
-- `PHOTO-08/inventory-campaign/H080` Every panel and band on “Forecourt inventory campaign” (inventory-campaign.png) is solid at full opacity, and no scrim, gradient or overlay of any colour, black and white included, sits over a photograph.
-- `PHOTO-08/inventory-campaign/H081` Every ground behind type on “Forecourt inventory campaign” (inventory-campaign.png) is Showroom White #F6F7F8, apart from any Meridian Navy #1F2A3A band, panel or seal carrying reversed type; any price, mileage or listing detail sits on Showroom White.
-- `PHOTO-08/inventory-campaign/H082` On “Forecourt inventory campaign” (inventory-campaign.png), any price is Meridian Navy, any mileage or listing detail Graphite #2E3237, and the headline dealership name and each vehicle caption Meridian Navy on Showroom White or Showroom White on Meridian Navy.
-- `PHOTO-08/inventory-campaign/H083` Compass Teal #3C6E71 and Steel Grey #9AA1A8 appear on “Forecourt inventory campaign” (inventory-campaign.png) only as rules, keylines, seal detail or one small muted line, never as a ground or panel.
-- `PHOTO-08/vehicle-card-r003/H010` On “Vehicle sales card - M3091” (vehicle-card-r003.png) the asking price ($24,500) is larger than the trim line “Premium AWD”.
+- `PHOTO-08/inventory-campaign/H080` Every panel and band on “Forecourt inventory campaign” (inventory-campaign.png) is a flat, fully opaque fill, with no tint, transparency, gradient, shadow or blend effect.
+- `PHOTO-08/inventory-campaign/H081` Every ground behind type on “Forecourt inventory campaign” (inventory-campaign.png) is Showroom White #F6F7F8 or a solid Meridian Navy #1F2A3A band, panel or seal.
+- `PHOTO-08/inventory-campaign/H082` If a price appears on “Forecourt inventory campaign” (inventory-campaign.png), it is Meridian Navy #1F2A3A.
+- `PHOTO-08/inventory-campaign/H083` Compass Teal #3C6E71 on “Forecourt inventory campaign” (inventory-campaign.png) appears only as hairline rules or seal compass needles, never as a ground or a text colour.
 - `PHOTO-08/vehicle-card-r003/H011` The certification line on “Vehicle sales card - M3091” (vehicle-card-r003.png) reads exactly “Meridian Certified”, not “Meridian Certified Plus”, as in meridian_intake_week.csv, row 3.
 - `PHOTO-08/vehicle-card-r003/H012` “Vehicle sales card - M3091” (vehicle-card-r003.png) carries no vehicle feature, condition or history claim beyond the values in meridian_intake_week.csv, row 3.
 - `PHOTO-08/vehicle-card-r003/H013` The enquiry action on “Vehicle sales card - M3091” (vehicle-card-r003.png) asks the buyer to enquire about stock M3091 at Meridian Motors in Portland, Maine.
@@ -315,139 +309,186 @@ Revised input pack. Previous execution results are historical, not current ratin
 - `PHOTO-08/vehicle-card-r003/H017` The paint of the Ardmoor Ridge on “Vehicle sales card - M3091” (vehicle-card-r003.png) still reads the deep red of M3091_ardmoor_ridge_front34.jpg, not orange.
 - `PHOTO-08/vehicle-card-r003/H018` The Ardmoor Ridge on “Vehicle sales card - M3091” (vehicle-card-r003.png) reads in neutral light, without the warm apron cast of M3091_ardmoor_ridge_front34.jpg.
 - `PHOTO-08/vehicle-card-r003/H019` The whole Ardmoor Ridge on “Vehicle sales card - M3091” (vehicle-card-r003.png) is inside the frame, with no bumper, wheel or roofline cropped off.
-- `PHOTO-08/vehicle-card-r003/H020` The Ardmoor Ridge on “Vehicle sales card - M3091” (vehicle-card-r003.png) sits in an even, neutral showroom white, with no dark or dramatic studio treatment behind it.
+- `PHOTO-08/vehicle-card-r003/H020` The Ardmoor Ridge on “Vehicle sales card - M3091” (vehicle-card-r003.png) is shown in even, neutral, well-lit showroom light, not a dark or dramatic studio look.
 - `PHOTO-08/vehicle-card-r003/H021` The largest text on “Vehicle sales card - M3091” (vehicle-card-r003.png) is the asking price “$24,500”.
-- `PHOTO-08/vehicle-card-r003/H022` The price and the year, make and model line “2018 Ardmoor Ridge” on “Vehicle sales card - M3091” (vehicle-card-r003.png) are set in Source Serif 4 Bold, the price in lining figures of one height.
-- `PHOTO-08/vehicle-card-r003/H023` The price on “Vehicle sales card - M3091” (vehicle-card-r003.png) seats on a 1 pt Compass Teal #3C6E71 rule running the full card width, its dollar sign sixty percent of figure height and aligned to the figure tops.
-- `PHOTO-08/vehicle-card-r003/H024` The price on “Vehicle sales card - M3091” (vehicle-card-r003.png) is set at 68 px or smaller, the ceiling of the brand type scale.
-- `PHOTO-08/vehicle-card-r003/H025` The mileage, listing detail and fine-print disclosure on “Vehicle sales card - M3091” (vehicle-card-r003.png) are set in Source Sans 3 Regular, not a bolder weight, the disclosure at 20 px, smaller than the body text.
-- `PHOTO-08/vehicle-card-r003/H026` No line of body text on “Vehicle sales card - M3091” (vehicle-card-r003.png) runs longer than 65 characters.
+- `PHOTO-08/vehicle-card-r003/H022` The price “$24,500” on “Vehicle sales card - M3091” (vehicle-card-r003.png) is set in Source Serif 4 Bold.
+- `PHOTO-08/vehicle-card-r003/H023` A thin rule sits directly under the price on “Vehicle sales card - M3091” (vehicle-card-r003.png) and runs the full width of the card.
+- `PHOTO-08/vehicle-card-r003/H025` The mileage and listing detail on “Vehicle sales card - M3091” (vehicle-card-r003.png) are set in Source Sans 3 Regular, not a bolder weight.
+- `PHOTO-08/vehicle-card-r003/H026` No line of the mileage and listing detail on “Vehicle sales card - M3091” (vehicle-card-r003.png) is longer than 65 characters, counting spaces.
 - `PHOTO-08/vehicle-card-r003/H027` All type on “Vehicle sales card - M3091” (vehicle-card-r003.png), outside the roundel artwork, is set in Source Serif 4 or Source Sans 3; no other typeface appears.
 - `PHOTO-08/vehicle-card-r003/H028` “Vehicle sales card - M3091” (vehicle-card-r003.png) has no starburst and no slashed or struck-through price.
-- `PHOTO-08/vehicle-card-r003/H029` Any compass roundel on “Vehicle sales card - M3091” (vehicle-card-r003.png) is meridian_roundel_transparent.svg, meridian_roundel_reversed.svg, meridian_roundel_transparent.png or meridian_roundel_reversed.png, with no white square around it and the ground showing through its knocked-out rings, rose and lettering.
-- `PHOTO-08/vehicle-card-r003/H030` Any compass roundel on “Vehicle sales card - M3091” (vehicle-card-r003.png) keeps its hairline inner ring and MERIDIAN MOTORS lettering open and legible, not closed up.
-- `PHOTO-08/vehicle-card-r003/H031` Any small Meridian Motors wordmark set as type and locked up with the compass roundel on “Vehicle sales card - M3091” (vehicle-card-r003.png), other than a headline dealership name, is Source Serif 4 Bold at 22 px with +40 tracking.
+- `PHOTO-08/vehicle-card-r003/H029` If a compass roundel appears on “Vehicle sales card - M3091” (vehicle-card-r003.png), it is meridian_roundel_transparent.svg, meridian_roundel_reversed.svg, meridian_roundel_transparent.png or meridian_roundel_reversed.png.
+- `PHOTO-08/vehicle-card-r003/H030` If a compass roundel appears on “Vehicle sales card - M3091” (vehicle-card-r003.png), its hairline inner ring and MERIDIAN MOTORS lettering stay open and legible, not closed up.
+- `PHOTO-08/vehicle-card-r003/H031` If a typeset Meridian Motors label sits beside the compass roundel on “Vehicle sales card - M3091” (vehicle-card-r003.png), it is set in Source Serif 4 Bold.
 - `PHOTO-08/vehicle-card-r003/H032` Every solid colour on “Vehicle sales card - M3091” (vehicle-card-r003.png), outside the photograph and any roundel artwork, is a brand palette colour: #1F2A3A, #F6F7F8, #2E3237, #3C6E71 or #9AA1A8.
-- `PHOTO-08/vehicle-card-r003/H033` Every panel and band on “Vehicle sales card - M3091” (vehicle-card-r003.png) is solid at full opacity, and no scrim, gradient or overlay of any colour, black and white included, sits over the photograph.
-- `PHOTO-08/vehicle-card-r003/H034` Every ground behind type on “Vehicle sales card - M3091” (vehicle-card-r003.png) is Showroom White #F6F7F8, apart from any Meridian Navy #1F2A3A band, panel or seal carrying reversed type; the price, mileage and listing detail sit on Showroom White.
-- `PHOTO-08/vehicle-card-r003/H035` On “Vehicle sales card - M3091” (vehicle-card-r003.png), the price is Meridian Navy #1F2A3A, the mileage and listing detail Graphite #2E3237, and “2018 Ardmoor Ridge” Meridian Navy on Showroom White or Showroom White on a Meridian Navy band.
-- `PHOTO-08/vehicle-card-r003/H036` Compass Teal #3C6E71 and Steel Grey #9AA1A8 appear on “Vehicle sales card - M3091” (vehicle-card-r003.png) only as rules, keylines, seal detail or one small muted line, never as a ground or panel.
-- `PHOTO-08/vehicle-card-r002/H038` vehicle-card-r002.png: price uses Source Serif 4 Bold (when present).
-- `PHOTO-08/vehicle-card-r002/H039` vehicle-card-r002.png: price has font size at most 68 px (when present).
-- `PHOTO-08/vehicle-card-r002/H040` vehicle-card-r002.png: price has 72 px leading on multiline text (when present).
-- `PHOTO-08/vehicle-card-r002/H041` vehicle-card-r002.png: price uses tracking -10/1000 em (when present).
-- `PHOTO-08/vehicle-card-r002/H042` vehicle-card-r002.png: year/make/model caption uses Source Serif 4 Bold (when present).
-- `PHOTO-08/vehicle-card-r002/H043` vehicle-card-r002.png: year/make/model caption has font size 44 px (when present).
-- `PHOTO-08/vehicle-card-r002/H044` vehicle-card-r002.png: year/make/model caption has 50 px leading on multiline text (when present).
-- `PHOTO-08/vehicle-card-r002/H045` vehicle-card-r002.png: year/make/model caption uses tracking -5/1000 em (when present).
-- `PHOTO-08/vehicle-card-r002/H046` vehicle-card-r002.png: mileage/listing text uses Source Sans 3 Regular (when present).
-- `PHOTO-08/vehicle-card-r002/H047` vehicle-card-r002.png: mileage/listing text has font size 26 px (when present).
-- `PHOTO-08/vehicle-card-r002/H048` vehicle-card-r002.png: mileage/listing text has 38 px leading on multiline text (when present).
-- `PHOTO-08/vehicle-card-r002/H049` vehicle-card-r002.png: mileage/listing text uses tracking +0/1000 em (when present).
-- `PHOTO-08/vehicle-card-r002/H050` vehicle-card-r002.png: disclosure uses Source Sans 3 Regular (when present).
-- `PHOTO-08/vehicle-card-r002/H051` vehicle-card-r002.png: disclosure has font size 20 px (when present).
-- `PHOTO-08/vehicle-card-r002/H052` vehicle-card-r002.png: disclosure has 30 px leading on multiline text (when present).
-- `PHOTO-08/vehicle-card-r002/H053` vehicle-card-r002.png: disclosure uses tracking +20/1000 em (when present).
-- `PHOTO-08/vehicle-card-r003/H037` vehicle-card-r003.png: price uses Source Serif 4 Bold (when present).
-- `PHOTO-08/vehicle-card-r003/H038` vehicle-card-r003.png: price has font size at most 68 px (when present).
-- `PHOTO-08/vehicle-card-r003/H039` vehicle-card-r003.png: price has 72 px leading on multiline text (when present).
-- `PHOTO-08/vehicle-card-r003/H040` vehicle-card-r003.png: price uses tracking -10/1000 em (when present).
-- `PHOTO-08/vehicle-card-r003/H041` vehicle-card-r003.png: year/make/model caption uses Source Serif 4 Bold (when present).
-- `PHOTO-08/vehicle-card-r003/H042` vehicle-card-r003.png: year/make/model caption has font size 44 px (when present).
-- `PHOTO-08/vehicle-card-r003/H043` vehicle-card-r003.png: year/make/model caption has 50 px leading on multiline text (when present).
-- `PHOTO-08/vehicle-card-r003/H044` vehicle-card-r003.png: year/make/model caption uses tracking -5/1000 em (when present).
-- `PHOTO-08/vehicle-card-r003/H045` vehicle-card-r003.png: mileage/listing text uses Source Sans 3 Regular (when present).
-- `PHOTO-08/vehicle-card-r003/H046` vehicle-card-r003.png: mileage/listing text has font size 26 px (when present).
-- `PHOTO-08/vehicle-card-r003/H047` vehicle-card-r003.png: mileage/listing text has 38 px leading on multiline text (when present).
-- `PHOTO-08/vehicle-card-r003/H048` vehicle-card-r003.png: mileage/listing text uses tracking +0/1000 em (when present).
-- `PHOTO-08/vehicle-card-r003/H049` vehicle-card-r003.png: disclosure uses Source Sans 3 Regular (when present).
-- `PHOTO-08/vehicle-card-r003/H050` vehicle-card-r003.png: disclosure has font size 20 px (when present).
-- `PHOTO-08/vehicle-card-r003/H051` vehicle-card-r003.png: disclosure has 30 px leading on multiline text (when present).
-- `PHOTO-08/vehicle-card-r003/H052` vehicle-card-r003.png: disclosure uses tracking +20/1000 em (when present).
-- `PHOTO-08/vehicle-card-r004/H036` vehicle-card-r004.png: price uses Source Serif 4 Bold (when present).
-- `PHOTO-08/vehicle-card-r004/H037` vehicle-card-r004.png: price has font size at most 68 px (when present).
-- `PHOTO-08/vehicle-card-r004/H038` vehicle-card-r004.png: price has 72 px leading on multiline text (when present).
-- `PHOTO-08/vehicle-card-r004/H039` vehicle-card-r004.png: price uses tracking -10/1000 em (when present).
-- `PHOTO-08/vehicle-card-r004/H040` vehicle-card-r004.png: year/make/model caption uses Source Serif 4 Bold (when present).
-- `PHOTO-08/vehicle-card-r004/H041` vehicle-card-r004.png: year/make/model caption has font size 44 px (when present).
-- `PHOTO-08/vehicle-card-r004/H042` vehicle-card-r004.png: year/make/model caption has 50 px leading on multiline text (when present).
-- `PHOTO-08/vehicle-card-r004/H043` vehicle-card-r004.png: year/make/model caption uses tracking -5/1000 em (when present).
-- `PHOTO-08/vehicle-card-r004/H044` vehicle-card-r004.png: mileage/listing text uses Source Sans 3 Regular (when present).
-- `PHOTO-08/vehicle-card-r004/H045` vehicle-card-r004.png: mileage/listing text has font size 26 px (when present).
-- `PHOTO-08/vehicle-card-r004/H046` vehicle-card-r004.png: mileage/listing text has 38 px leading on multiline text (when present).
-- `PHOTO-08/vehicle-card-r004/H047` vehicle-card-r004.png: mileage/listing text uses tracking +0/1000 em (when present).
-- `PHOTO-08/vehicle-card-r004/H048` vehicle-card-r004.png: disclosure uses Source Sans 3 Regular (when present).
-- `PHOTO-08/vehicle-card-r004/H049` vehicle-card-r004.png: disclosure has font size 20 px (when present).
-- `PHOTO-08/vehicle-card-r004/H050` vehicle-card-r004.png: disclosure has 30 px leading on multiline text (when present).
-- `PHOTO-08/vehicle-card-r004/H051` vehicle-card-r004.png: disclosure uses tracking +20/1000 em (when present).
-- `PHOTO-08/vehicle-card-r005/H037` vehicle-card-r005.png: price uses Source Serif 4 Bold (when present).
-- `PHOTO-08/vehicle-card-r005/H038` vehicle-card-r005.png: price has font size at most 68 px (when present).
-- `PHOTO-08/vehicle-card-r005/H039` vehicle-card-r005.png: price has 72 px leading on multiline text (when present).
-- `PHOTO-08/vehicle-card-r005/H040` vehicle-card-r005.png: price uses tracking -10/1000 em (when present).
-- `PHOTO-08/vehicle-card-r005/H041` vehicle-card-r005.png: year/make/model caption uses Source Serif 4 Bold (when present).
-- `PHOTO-08/vehicle-card-r005/H042` vehicle-card-r005.png: year/make/model caption has font size 44 px (when present).
-- `PHOTO-08/vehicle-card-r005/H043` vehicle-card-r005.png: year/make/model caption has 50 px leading on multiline text (when present).
-- `PHOTO-08/vehicle-card-r005/H044` vehicle-card-r005.png: year/make/model caption uses tracking -5/1000 em (when present).
-- `PHOTO-08/vehicle-card-r005/H045` vehicle-card-r005.png: mileage/listing text uses Source Sans 3 Regular (when present).
-- `PHOTO-08/vehicle-card-r005/H046` vehicle-card-r005.png: mileage/listing text has font size 26 px (when present).
-- `PHOTO-08/vehicle-card-r005/H047` vehicle-card-r005.png: mileage/listing text has 38 px leading on multiline text (when present).
-- `PHOTO-08/vehicle-card-r005/H048` vehicle-card-r005.png: mileage/listing text uses tracking +0/1000 em (when present).
-- `PHOTO-08/vehicle-card-r005/H049` vehicle-card-r005.png: disclosure uses Source Sans 3 Regular (when present).
-- `PHOTO-08/vehicle-card-r005/H050` vehicle-card-r005.png: disclosure has font size 20 px (when present).
-- `PHOTO-08/vehicle-card-r005/H051` vehicle-card-r005.png: disclosure has 30 px leading on multiline text (when present).
-- `PHOTO-08/vehicle-card-r005/H052` vehicle-card-r005.png: disclosure uses tracking +20/1000 em (when present).
-- `PHOTO-08/vehicle-card-r006/H037` vehicle-card-r006.png: price uses Source Serif 4 Bold (when present).
-- `PHOTO-08/vehicle-card-r006/H038` vehicle-card-r006.png: price has font size at most 68 px (when present).
-- `PHOTO-08/vehicle-card-r006/H039` vehicle-card-r006.png: price has 72 px leading on multiline text (when present).
-- `PHOTO-08/vehicle-card-r006/H040` vehicle-card-r006.png: price uses tracking -10/1000 em (when present).
-- `PHOTO-08/vehicle-card-r006/H041` vehicle-card-r006.png: year/make/model caption uses Source Serif 4 Bold (when present).
-- `PHOTO-08/vehicle-card-r006/H042` vehicle-card-r006.png: year/make/model caption has font size 44 px (when present).
-- `PHOTO-08/vehicle-card-r006/H043` vehicle-card-r006.png: year/make/model caption has 50 px leading on multiline text (when present).
-- `PHOTO-08/vehicle-card-r006/H044` vehicle-card-r006.png: year/make/model caption uses tracking -5/1000 em (when present).
-- `PHOTO-08/vehicle-card-r006/H045` vehicle-card-r006.png: mileage/listing text uses Source Sans 3 Regular (when present).
-- `PHOTO-08/vehicle-card-r006/H046` vehicle-card-r006.png: mileage/listing text has font size 26 px (when present).
-- `PHOTO-08/vehicle-card-r006/H047` vehicle-card-r006.png: mileage/listing text has 38 px leading on multiline text (when present).
-- `PHOTO-08/vehicle-card-r006/H048` vehicle-card-r006.png: mileage/listing text uses tracking +0/1000 em (when present).
-- `PHOTO-08/vehicle-card-r006/H049` vehicle-card-r006.png: disclosure uses Source Sans 3 Regular (when present).
-- `PHOTO-08/vehicle-card-r006/H050` vehicle-card-r006.png: disclosure has font size 20 px (when present).
-- `PHOTO-08/vehicle-card-r006/H051` vehicle-card-r006.png: disclosure has 30 px leading on multiline text (when present).
-- `PHOTO-08/vehicle-card-r006/H052` vehicle-card-r006.png: disclosure uses tracking +20/1000 em (when present).
-- `PHOTO-08/vehicle-card-r007/H036` vehicle-card-r007.png: price uses Source Serif 4 Bold (when present).
-- `PHOTO-08/vehicle-card-r007/H037` vehicle-card-r007.png: price has font size at most 68 px (when present).
-- `PHOTO-08/vehicle-card-r007/H038` vehicle-card-r007.png: price has 72 px leading on multiline text (when present).
-- `PHOTO-08/vehicle-card-r007/H039` vehicle-card-r007.png: price uses tracking -10/1000 em (when present).
-- `PHOTO-08/vehicle-card-r007/H040` vehicle-card-r007.png: year/make/model caption uses Source Serif 4 Bold (when present).
-- `PHOTO-08/vehicle-card-r007/H041` vehicle-card-r007.png: year/make/model caption has font size 44 px (when present).
-- `PHOTO-08/vehicle-card-r007/H042` vehicle-card-r007.png: year/make/model caption has 50 px leading on multiline text (when present).
-- `PHOTO-08/vehicle-card-r007/H043` vehicle-card-r007.png: year/make/model caption uses tracking -5/1000 em (when present).
-- `PHOTO-08/vehicle-card-r007/H044` vehicle-card-r007.png: mileage/listing text uses Source Sans 3 Regular (when present).
-- `PHOTO-08/vehicle-card-r007/H045` vehicle-card-r007.png: mileage/listing text has font size 26 px (when present).
-- `PHOTO-08/vehicle-card-r007/H046` vehicle-card-r007.png: mileage/listing text has 38 px leading on multiline text (when present).
-- `PHOTO-08/vehicle-card-r007/H047` vehicle-card-r007.png: mileage/listing text uses tracking +0/1000 em (when present).
-- `PHOTO-08/vehicle-card-r007/H048` vehicle-card-r007.png: disclosure uses Source Sans 3 Regular (when present).
-- `PHOTO-08/vehicle-card-r007/H049` vehicle-card-r007.png: disclosure has font size 20 px (when present).
-- `PHOTO-08/vehicle-card-r007/H050` vehicle-card-r007.png: disclosure has 30 px leading on multiline text (when present).
-- `PHOTO-08/vehicle-card-r007/H051` vehicle-card-r007.png: disclosure uses tracking +20/1000 em (when present).
-- `PHOTO-08/inventory-campaign/H084` inventory-campaign.png: price uses Source Serif 4 Bold (when present).
-- `PHOTO-08/inventory-campaign/H085` inventory-campaign.png: price has font size at most 68 px (when present).
-- `PHOTO-08/inventory-campaign/H086` inventory-campaign.png: price has 72 px leading on multiline text (when present).
-- `PHOTO-08/inventory-campaign/H087` inventory-campaign.png: price uses tracking -10/1000 em (when present).
-- `PHOTO-08/inventory-campaign/H088` inventory-campaign.png: year/make/model caption uses Source Serif 4 Bold (when present).
-- `PHOTO-08/inventory-campaign/H089` inventory-campaign.png: year/make/model caption has font size 44 px (when present).
-- `PHOTO-08/inventory-campaign/H090` inventory-campaign.png: year/make/model caption has 50 px leading on multiline text (when present).
-- `PHOTO-08/inventory-campaign/H091` inventory-campaign.png: year/make/model caption uses tracking -5/1000 em (when present).
-- `PHOTO-08/inventory-campaign/H092` inventory-campaign.png: mileage/listing text uses Source Sans 3 Regular (when present).
-- `PHOTO-08/inventory-campaign/H093` inventory-campaign.png: mileage/listing text has font size 26 px (when present).
-- `PHOTO-08/inventory-campaign/H094` inventory-campaign.png: mileage/listing text has 38 px leading on multiline text (when present).
-- `PHOTO-08/inventory-campaign/H095` inventory-campaign.png: mileage/listing text uses tracking +0/1000 em (when present).
-- `PHOTO-08/inventory-campaign/H096` inventory-campaign.png: disclosure uses Source Sans 3 Regular (when present).
-- `PHOTO-08/inventory-campaign/H097` inventory-campaign.png: disclosure has font size 20 px (when present).
-- `PHOTO-08/inventory-campaign/H098` inventory-campaign.png: disclosure has 30 px leading on multiline text (when present).
-- `PHOTO-08/inventory-campaign/H099` inventory-campaign.png: disclosure uses tracking +20/1000 em (when present).
-- `PHOTO-08/vehicle-card-r002/R13-colour-profile` vehicle-card-r002.png: uses an sRGB colour profile.
-- `PHOTO-08/vehicle-card-r003/R13-colour-profile` vehicle-card-r003.png: uses an sRGB colour profile.
-- `PHOTO-08/vehicle-card-r004/R13-colour-profile` vehicle-card-r004.png: uses an sRGB colour profile.
-- `PHOTO-08/vehicle-card-r005/R13-colour-profile` vehicle-card-r005.png: uses an sRGB colour profile.
-- `PHOTO-08/vehicle-card-r006/R13-colour-profile` vehicle-card-r006.png: uses an sRGB colour profile.
-- `PHOTO-08/vehicle-card-r007/R13-colour-profile` vehicle-card-r007.png: uses an sRGB colour profile.
-- `PHOTO-08/inventory-campaign/R13-colour-profile` inventory-campaign.png: uses an sRGB colour profile.
+- `PHOTO-08/vehicle-card-r003/H033` Every panel and band on “Vehicle sales card - M3091” (vehicle-card-r003.png) is a flat, fully opaque fill, with no tint, transparency, gradient, shadow or blend effect.
+- `PHOTO-08/vehicle-card-r003/H034` Every ground behind type on “Vehicle sales card - M3091” (vehicle-card-r003.png) is Showroom White #F6F7F8 or a solid Meridian Navy #1F2A3A band, panel or seal.
+- `PHOTO-08/vehicle-card-r003/H035` The price “$24,500” on “Vehicle sales card - M3091” (vehicle-card-r003.png) is Meridian Navy #1F2A3A.
+- `PHOTO-08/vehicle-card-r003/H036` Compass Teal #3C6E71 on “Vehicle sales card - M3091” (vehicle-card-r003.png) appears only as hairline rules or seal compass needles, never as a ground or a text colour.
+- `PHOTO-08/vehicle-card-r002/H042` The year, make and model line “2019 Norsted Alta” on “Vehicle sales card - M3082” (vehicle-card-r002.png) is set in Source Serif 4 Bold.
+- `PHOTO-08/vehicle-card-r002/H050` The fine-print disclosure on “Vehicle sales card - M3082” (vehicle-card-r002.png) is set in Source Sans 3 Regular.
+- `PHOTO-08/vehicle-card-r003/H041` The year, make and model line “2018 Ardmoor Ridge” on “Vehicle sales card - M3091” (vehicle-card-r003.png) is set in Source Serif 4 Bold.
+- `PHOTO-08/vehicle-card-r003/H049` The fine-print disclosure on “Vehicle sales card - M3091” (vehicle-card-r003.png) is set in Source Sans 3 Regular.
+- `PHOTO-08/vehicle-card-r004/H040` The year, make and model line “2017 Calder Vireo” on “Vehicle sales card - M2417” (vehicle-card-r004.png) is set in Source Serif 4 Bold.
+- `PHOTO-08/vehicle-card-r004/H048` The fine-print disclosure on “Vehicle sales card - M2417” (vehicle-card-r004.png) is set in Source Sans 3 Regular.
+- `PHOTO-08/vehicle-card-r005/H041` The year, make and model line “2020 Brookmere Sable” on “Vehicle sales card - M3105” (vehicle-card-r005.png) is set in Source Serif 4 Bold.
+- `PHOTO-08/vehicle-card-r005/H049` The fine-print disclosure on “Vehicle sales card - M3105” (vehicle-card-r005.png) is set in Source Sans 3 Regular.
+- `PHOTO-08/vehicle-card-r006/H041` The year, make and model line “2017 Calder Kestrel” on “Vehicle sales card - M2471” (vehicle-card-r006.png) is set in Source Serif 4 Bold.
+- `PHOTO-08/vehicle-card-r006/H049` The fine-print disclosure on “Vehicle sales card - M2471” (vehicle-card-r006.png) is set in Source Sans 3 Regular.
+- `PHOTO-08/vehicle-card-r007/H040` The year, make and model line “2019 Norsted Fjord” on “Vehicle sales card - M3119” (vehicle-card-r007.png) is set in Source Serif 4 Bold.
+- `PHOTO-08/vehicle-card-r007/H048` The fine-print disclosure on “Vehicle sales card - M3119” (vehicle-card-r007.png) is set in Source Sans 3 Regular.
+- `PHOTO-08/inventory-campaign/H084` If a price appears on “Forecourt inventory campaign” (inventory-campaign.png), it is set in Source Serif 4 Bold.
+- `PHOTO-08/inventory-campaign/H088` Every year, make and model caption on “Forecourt inventory campaign” (inventory-campaign.png) is set in Source Serif 4 Bold.
+- `PHOTO-08/inventory-campaign/H096` If a fine-print disclosure appears on “Forecourt inventory campaign” (inventory-campaign.png), it is set in Source Sans 3 Regular.
+- `PHOTO-08/vehicle-card-r002/H054` The price figures on “Vehicle sales card - M3082” (vehicle-card-r002.png) are lining figures of one height, with no figure dropping below the baseline.
+- `PHOTO-08/vehicle-card-r002/H055` The rule under the price on “Vehicle sales card - M3082” (vehicle-card-r002.png) is Compass Teal #3C6E71.
+- `PHOTO-08/vehicle-card-r002/H056` The dollar sign in the price on “Vehicle sales card - M3082” (vehicle-card-r002.png) is clearly smaller than the figures, roughly three fifths of their height.
+- `PHOTO-08/vehicle-card-r002/H057` The top of the dollar sign in the price on “Vehicle sales card - M3082” (vehicle-card-r002.png) lines up with the tops of the figures.
+- `PHOTO-08/vehicle-card-r002/H058` The fine-print disclosure on “Vehicle sales card - M3082” (vehicle-card-r002.png) is smaller than the mileage and listing detail text.
+- `PHOTO-08/vehicle-card-r002/H059` The year, make and model line “2019 Norsted Alta” on “Vehicle sales card - M3082” (vehicle-card-r002.png) is larger than the mileage and listing detail text.
+- `PHOTO-08/vehicle-card-r002/H060` If a compass roundel appears on “Vehicle sales card - M3082” (vehicle-card-r002.png), it is not stretched, squashed or redrawn.
+- `PHOTO-08/vehicle-card-r002/H061` If a compass roundel appears on “Vehicle sales card - M3082” (vehicle-card-r002.png), it has no white square, and the ground shows through its knocked-out rings, rose and lettering.
+- `PHOTO-08/vehicle-card-r002/H062` No type, rule or keyline on “Vehicle sales card - M3082” (vehicle-card-r002.png) has a drop shadow, transparency, gradient or blend effect.
+- `PHOTO-08/vehicle-card-r002/H063` No scrim, gradient or overlay of any colour, black and white included, is laid over the photograph on “Vehicle sales card - M3082” (vehicle-card-r002.png).
+- `PHOTO-08/vehicle-card-r002/H064` The price, mileage and listing detail on “Vehicle sales card - M3082” (vehicle-card-r002.png) sit on Showroom White #F6F7F8, not on a Meridian Navy band.
+- `PHOTO-08/vehicle-card-r002/H065` No Meridian Navy #1F2A3A band, panel or seal sits behind the vehicle on “Vehicle sales card - M3082” (vehicle-card-r002.png).
+- `PHOTO-08/vehicle-card-r002/H066` The mileage and listing detail on “Vehicle sales card - M3082” (vehicle-card-r002.png) are Graphite #2E3237.
+- `PHOTO-08/vehicle-card-r002/H067` The year, make and model line “2019 Norsted Alta” on “Vehicle sales card - M3082” (vehicle-card-r002.png) is Meridian Navy on Showroom White, or Showroom White on a Meridian Navy band.
+- `PHOTO-08/vehicle-card-r002/H068` The fine-print disclosure on “Vehicle sales card - M3082” (vehicle-card-r002.png) is Graphite #2E3237 or Steel Grey #9AA1A8.
+- `PHOTO-08/vehicle-card-r002/H069` Steel Grey #9AA1A8 on “Vehicle sales card - M3082” (vehicle-card-r002.png) appears only as keylines, box rules, the photo-well border, one small muted line or seal lettering, never as a ground.
+- `PHOTO-08/vehicle-card-r002/H070` Compass Teal #3C6E71 and Steel Grey #9AA1A8 together fill only a small share, about 5% or less, of the non-photographic area of “Vehicle sales card - M3082” (vehicle-card-r002.png).
+- `PHOTO-08/vehicle-card-r002/H071` Any field label, such as stock or mileage, and any standalone Meridian Motors name on Showroom White on “Vehicle sales card - M3082” (vehicle-card-r002.png) is Meridian Navy #1F2A3A.
+- `PHOTO-08/vehicle-card-r002/H072` All type on a Meridian Navy band, panel or seal on “Vehicle sales card - M3082” (vehicle-card-r002.png) is Showroom White #F6F7F8; only small seal lettering may be Steel Grey #9AA1A8.
+- `PHOTO-08/vehicle-card-r002/H073` The photograph on “Vehicle sales card - M3082” (vehicle-card-r002.png) is not tinted or colour-graded toward the brand navy, teal or grey.
+- `PHOTO-08/vehicle-card-r002/H074` Apart from the stock number in the enquiry line, no listing value on “Vehicle sales card - M3082” (vehicle-card-r002.png) is stated twice.
+- `PHOTO-08/vehicle-card-r003/H053` The price figures on “Vehicle sales card - M3091” (vehicle-card-r003.png) are lining figures of one height, with no figure dropping below the baseline.
+- `PHOTO-08/vehicle-card-r003/H054` The rule under the price on “Vehicle sales card - M3091” (vehicle-card-r003.png) is Compass Teal #3C6E71.
+- `PHOTO-08/vehicle-card-r003/H055` The dollar sign in the price on “Vehicle sales card - M3091” (vehicle-card-r003.png) is clearly smaller than the figures, roughly three fifths of their height.
+- `PHOTO-08/vehicle-card-r003/H056` The top of the dollar sign in the price on “Vehicle sales card - M3091” (vehicle-card-r003.png) lines up with the tops of the figures.
+- `PHOTO-08/vehicle-card-r003/H057` The fine-print disclosure on “Vehicle sales card - M3091” (vehicle-card-r003.png) is smaller than the mileage and listing detail text.
+- `PHOTO-08/vehicle-card-r003/H058` The year, make and model line “2018 Ardmoor Ridge” on “Vehicle sales card - M3091” (vehicle-card-r003.png) is larger than the mileage and listing detail text.
+- `PHOTO-08/vehicle-card-r003/H059` If a compass roundel appears on “Vehicle sales card - M3091” (vehicle-card-r003.png), it is not stretched, squashed or redrawn.
+- `PHOTO-08/vehicle-card-r003/H060` If a compass roundel appears on “Vehicle sales card - M3091” (vehicle-card-r003.png), it has no white square, and the ground shows through its knocked-out rings, rose and lettering.
+- `PHOTO-08/vehicle-card-r003/H061` No type, rule or keyline on “Vehicle sales card - M3091” (vehicle-card-r003.png) has a drop shadow, transparency, gradient or blend effect.
+- `PHOTO-08/vehicle-card-r003/H062` No scrim, gradient or overlay of any colour, black and white included, is laid over the photograph on “Vehicle sales card - M3091” (vehicle-card-r003.png).
+- `PHOTO-08/vehicle-card-r003/H063` The price, mileage and listing detail on “Vehicle sales card - M3091” (vehicle-card-r003.png) sit on Showroom White #F6F7F8, not on a Meridian Navy band.
+- `PHOTO-08/vehicle-card-r003/H064` No Meridian Navy #1F2A3A band, panel or seal sits behind the vehicle on “Vehicle sales card - M3091” (vehicle-card-r003.png).
+- `PHOTO-08/vehicle-card-r003/H065` The mileage and listing detail on “Vehicle sales card - M3091” (vehicle-card-r003.png) are Graphite #2E3237.
+- `PHOTO-08/vehicle-card-r003/H066` The year, make and model line “2018 Ardmoor Ridge” on “Vehicle sales card - M3091” (vehicle-card-r003.png) is Meridian Navy on Showroom White, or Showroom White on a Meridian Navy band.
+- `PHOTO-08/vehicle-card-r003/H067` The fine-print disclosure on “Vehicle sales card - M3091” (vehicle-card-r003.png) is Graphite #2E3237 or Steel Grey #9AA1A8.
+- `PHOTO-08/vehicle-card-r003/H068` Steel Grey #9AA1A8 on “Vehicle sales card - M3091” (vehicle-card-r003.png) appears only as keylines, box rules, the photo-well border, one small muted line or seal lettering, never as a ground.
+- `PHOTO-08/vehicle-card-r003/H069` Compass Teal #3C6E71 and Steel Grey #9AA1A8 together fill only a small share, about 5% or less, of the non-photographic area of “Vehicle sales card - M3091” (vehicle-card-r003.png).
+- `PHOTO-08/vehicle-card-r003/H070` Any field label, such as stock or mileage, and any standalone Meridian Motors name on Showroom White on “Vehicle sales card - M3091” (vehicle-card-r003.png) is Meridian Navy #1F2A3A.
+- `PHOTO-08/vehicle-card-r003/H071` All type on a Meridian Navy band, panel or seal on “Vehicle sales card - M3091” (vehicle-card-r003.png) is Showroom White #F6F7F8; only small seal lettering may be Steel Grey #9AA1A8.
+- `PHOTO-08/vehicle-card-r003/H072` The photograph on “Vehicle sales card - M3091” (vehicle-card-r003.png) is not tinted or colour-graded toward the brand navy, teal or grey.
+- `PHOTO-08/vehicle-card-r003/H073` Apart from the stock number in the enquiry line, no listing value on “Vehicle sales card - M3091” (vehicle-card-r003.png) is stated twice.
+- `PHOTO-08/vehicle-card-r004/H052` The price figures on “Vehicle sales card - M2417” (vehicle-card-r004.png) are lining figures of one height, with no figure dropping below the baseline.
+- `PHOTO-08/vehicle-card-r004/H053` The rule under the price on “Vehicle sales card - M2417” (vehicle-card-r004.png) is Compass Teal #3C6E71.
+- `PHOTO-08/vehicle-card-r004/H054` The dollar sign in the price on “Vehicle sales card - M2417” (vehicle-card-r004.png) is clearly smaller than the figures, roughly three fifths of their height.
+- `PHOTO-08/vehicle-card-r004/H055` The top of the dollar sign in the price on “Vehicle sales card - M2417” (vehicle-card-r004.png) lines up with the tops of the figures.
+- `PHOTO-08/vehicle-card-r004/H056` The fine-print disclosure on “Vehicle sales card - M2417” (vehicle-card-r004.png) is smaller than the mileage and listing detail text.
+- `PHOTO-08/vehicle-card-r004/H057` The year, make and model line “2017 Calder Vireo” on “Vehicle sales card - M2417” (vehicle-card-r004.png) is larger than the mileage and listing detail text.
+- `PHOTO-08/vehicle-card-r004/H058` If a compass roundel appears on “Vehicle sales card - M2417” (vehicle-card-r004.png), it is not stretched, squashed or redrawn.
+- `PHOTO-08/vehicle-card-r004/H059` If a compass roundel appears on “Vehicle sales card - M2417” (vehicle-card-r004.png), it has no white square, and the ground shows through its knocked-out rings, rose and lettering.
+- `PHOTO-08/vehicle-card-r004/H060` No type, rule or keyline on “Vehicle sales card - M2417” (vehicle-card-r004.png) has a drop shadow, transparency, gradient or blend effect.
+- `PHOTO-08/vehicle-card-r004/H061` No scrim, gradient or overlay of any colour, black and white included, is laid over the photograph on “Vehicle sales card - M2417” (vehicle-card-r004.png).
+- `PHOTO-08/vehicle-card-r004/H062` The price, mileage and listing detail on “Vehicle sales card - M2417” (vehicle-card-r004.png) sit on Showroom White #F6F7F8, not on a Meridian Navy band.
+- `PHOTO-08/vehicle-card-r004/H063` No Meridian Navy #1F2A3A band, panel or seal sits behind the vehicle on “Vehicle sales card - M2417” (vehicle-card-r004.png).
+- `PHOTO-08/vehicle-card-r004/H064` The mileage and listing detail on “Vehicle sales card - M2417” (vehicle-card-r004.png) are Graphite #2E3237.
+- `PHOTO-08/vehicle-card-r004/H065` The year, make and model line “2017 Calder Vireo” on “Vehicle sales card - M2417” (vehicle-card-r004.png) is Meridian Navy on Showroom White, or Showroom White on a Meridian Navy band.
+- `PHOTO-08/vehicle-card-r004/H066` The fine-print disclosure on “Vehicle sales card - M2417” (vehicle-card-r004.png) is Graphite #2E3237 or Steel Grey #9AA1A8.
+- `PHOTO-08/vehicle-card-r004/H067` Steel Grey #9AA1A8 on “Vehicle sales card - M2417” (vehicle-card-r004.png) appears only as keylines, box rules, the photo-well border, one small muted line or seal lettering, never as a ground.
+- `PHOTO-08/vehicle-card-r004/H068` Compass Teal #3C6E71 and Steel Grey #9AA1A8 together fill only a small share, about 5% or less, of the non-photographic area of “Vehicle sales card - M2417” (vehicle-card-r004.png).
+- `PHOTO-08/vehicle-card-r004/H069` Any field label, such as stock or mileage, and any standalone Meridian Motors name on Showroom White on “Vehicle sales card - M2417” (vehicle-card-r004.png) is Meridian Navy #1F2A3A.
+- `PHOTO-08/vehicle-card-r004/H070` All type on a Meridian Navy band, panel or seal on “Vehicle sales card - M2417” (vehicle-card-r004.png) is Showroom White #F6F7F8; only small seal lettering may be Steel Grey #9AA1A8.
+- `PHOTO-08/vehicle-card-r004/H071` The photograph on “Vehicle sales card - M2417” (vehicle-card-r004.png) is not tinted or colour-graded toward the brand navy, teal or grey.
+- `PHOTO-08/vehicle-card-r004/H072` Apart from the stock number in the enquiry line, no listing value on “Vehicle sales card - M2417” (vehicle-card-r004.png) is stated twice.
+- `PHOTO-08/vehicle-card-r005/H053` The price figures on “Vehicle sales card - M3105” (vehicle-card-r005.png) are lining figures of one height, with no figure dropping below the baseline.
+- `PHOTO-08/vehicle-card-r005/H054` The rule under the price on “Vehicle sales card - M3105” (vehicle-card-r005.png) is Compass Teal #3C6E71.
+- `PHOTO-08/vehicle-card-r005/H055` The dollar sign in the price on “Vehicle sales card - M3105” (vehicle-card-r005.png) is clearly smaller than the figures, roughly three fifths of their height.
+- `PHOTO-08/vehicle-card-r005/H056` The top of the dollar sign in the price on “Vehicle sales card - M3105” (vehicle-card-r005.png) lines up with the tops of the figures.
+- `PHOTO-08/vehicle-card-r005/H057` The fine-print disclosure on “Vehicle sales card - M3105” (vehicle-card-r005.png) is smaller than the mileage and listing detail text.
+- `PHOTO-08/vehicle-card-r005/H058` The year, make and model line “2020 Brookmere Sable” on “Vehicle sales card - M3105” (vehicle-card-r005.png) is larger than the mileage and listing detail text.
+- `PHOTO-08/vehicle-card-r005/H059` If a compass roundel appears on “Vehicle sales card - M3105” (vehicle-card-r005.png), it is not stretched, squashed or redrawn.
+- `PHOTO-08/vehicle-card-r005/H060` If a compass roundel appears on “Vehicle sales card - M3105” (vehicle-card-r005.png), it has no white square, and the ground shows through its knocked-out rings, rose and lettering.
+- `PHOTO-08/vehicle-card-r005/H061` No type, rule or keyline on “Vehicle sales card - M3105” (vehicle-card-r005.png) has a drop shadow, transparency, gradient or blend effect.
+- `PHOTO-08/vehicle-card-r005/H062` No scrim, gradient or overlay of any colour, black and white included, is laid over the photograph on “Vehicle sales card - M3105” (vehicle-card-r005.png).
+- `PHOTO-08/vehicle-card-r005/H063` The price, mileage and listing detail on “Vehicle sales card - M3105” (vehicle-card-r005.png) sit on Showroom White #F6F7F8, not on a Meridian Navy band.
+- `PHOTO-08/vehicle-card-r005/H064` No Meridian Navy #1F2A3A band, panel or seal sits behind the vehicle on “Vehicle sales card - M3105” (vehicle-card-r005.png).
+- `PHOTO-08/vehicle-card-r005/H065` The mileage and listing detail on “Vehicle sales card - M3105” (vehicle-card-r005.png) are Graphite #2E3237.
+- `PHOTO-08/vehicle-card-r005/H066` The year, make and model line “2020 Brookmere Sable” on “Vehicle sales card - M3105” (vehicle-card-r005.png) is Meridian Navy on Showroom White, or Showroom White on a Meridian Navy band.
+- `PHOTO-08/vehicle-card-r005/H067` The fine-print disclosure on “Vehicle sales card - M3105” (vehicle-card-r005.png) is Graphite #2E3237 or Steel Grey #9AA1A8.
+- `PHOTO-08/vehicle-card-r005/H068` Steel Grey #9AA1A8 on “Vehicle sales card - M3105” (vehicle-card-r005.png) appears only as keylines, box rules, the photo-well border, one small muted line or seal lettering, never as a ground.
+- `PHOTO-08/vehicle-card-r005/H069` Compass Teal #3C6E71 and Steel Grey #9AA1A8 together fill only a small share, about 5% or less, of the non-photographic area of “Vehicle sales card - M3105” (vehicle-card-r005.png).
+- `PHOTO-08/vehicle-card-r005/H070` Any field label, such as stock or mileage, and any standalone Meridian Motors name on Showroom White on “Vehicle sales card - M3105” (vehicle-card-r005.png) is Meridian Navy #1F2A3A.
+- `PHOTO-08/vehicle-card-r005/H071` All type on a Meridian Navy band, panel or seal on “Vehicle sales card - M3105” (vehicle-card-r005.png) is Showroom White #F6F7F8; only small seal lettering may be Steel Grey #9AA1A8.
+- `PHOTO-08/vehicle-card-r005/H072` The photograph on “Vehicle sales card - M3105” (vehicle-card-r005.png) is not tinted or colour-graded toward the brand navy, teal or grey.
+- `PHOTO-08/vehicle-card-r005/H073` Apart from the stock number in the enquiry line, no listing value on “Vehicle sales card - M3105” (vehicle-card-r005.png) is stated twice.
+- `PHOTO-08/vehicle-card-r006/H053` The price figures on “Vehicle sales card - M2471” (vehicle-card-r006.png) are lining figures of one height, with no figure dropping below the baseline.
+- `PHOTO-08/vehicle-card-r006/H054` The rule under the price on “Vehicle sales card - M2471” (vehicle-card-r006.png) is Compass Teal #3C6E71.
+- `PHOTO-08/vehicle-card-r006/H055` The dollar sign in the price on “Vehicle sales card - M2471” (vehicle-card-r006.png) is clearly smaller than the figures, roughly three fifths of their height.
+- `PHOTO-08/vehicle-card-r006/H056` The top of the dollar sign in the price on “Vehicle sales card - M2471” (vehicle-card-r006.png) lines up with the tops of the figures.
+- `PHOTO-08/vehicle-card-r006/H057` The fine-print disclosure on “Vehicle sales card - M2471” (vehicle-card-r006.png) is smaller than the mileage and listing detail text.
+- `PHOTO-08/vehicle-card-r006/H058` The year, make and model line “2017 Calder Kestrel” on “Vehicle sales card - M2471” (vehicle-card-r006.png) is larger than the mileage and listing detail text.
+- `PHOTO-08/vehicle-card-r006/H059` If a compass roundel appears on “Vehicle sales card - M2471” (vehicle-card-r006.png), it is not stretched, squashed or redrawn.
+- `PHOTO-08/vehicle-card-r006/H060` If a compass roundel appears on “Vehicle sales card - M2471” (vehicle-card-r006.png), it has no white square, and the ground shows through its knocked-out rings, rose and lettering.
+- `PHOTO-08/vehicle-card-r006/H061` No type, rule or keyline on “Vehicle sales card - M2471” (vehicle-card-r006.png) has a drop shadow, transparency, gradient or blend effect.
+- `PHOTO-08/vehicle-card-r006/H062` No scrim, gradient or overlay of any colour, black and white included, is laid over the photograph on “Vehicle sales card - M2471” (vehicle-card-r006.png).
+- `PHOTO-08/vehicle-card-r006/H063` The price, mileage and listing detail on “Vehicle sales card - M2471” (vehicle-card-r006.png) sit on Showroom White #F6F7F8, not on a Meridian Navy band.
+- `PHOTO-08/vehicle-card-r006/H064` No Meridian Navy #1F2A3A band, panel or seal sits behind the vehicle on “Vehicle sales card - M2471” (vehicle-card-r006.png).
+- `PHOTO-08/vehicle-card-r006/H065` The mileage and listing detail on “Vehicle sales card - M2471” (vehicle-card-r006.png) are Graphite #2E3237.
+- `PHOTO-08/vehicle-card-r006/H066` The year, make and model line “2017 Calder Kestrel” on “Vehicle sales card - M2471” (vehicle-card-r006.png) is Meridian Navy on Showroom White, or Showroom White on a Meridian Navy band.
+- `PHOTO-08/vehicle-card-r006/H067` The fine-print disclosure on “Vehicle sales card - M2471” (vehicle-card-r006.png) is Graphite #2E3237 or Steel Grey #9AA1A8.
+- `PHOTO-08/vehicle-card-r006/H068` Steel Grey #9AA1A8 on “Vehicle sales card - M2471” (vehicle-card-r006.png) appears only as keylines, box rules, the photo-well border, one small muted line or seal lettering, never as a ground.
+- `PHOTO-08/vehicle-card-r006/H069` Compass Teal #3C6E71 and Steel Grey #9AA1A8 together fill only a small share, about 5% or less, of the non-photographic area of “Vehicle sales card - M2471” (vehicle-card-r006.png).
+- `PHOTO-08/vehicle-card-r006/H070` Any field label, such as stock or mileage, and any standalone Meridian Motors name on Showroom White on “Vehicle sales card - M2471” (vehicle-card-r006.png) is Meridian Navy #1F2A3A.
+- `PHOTO-08/vehicle-card-r006/H071` All type on a Meridian Navy band, panel or seal on “Vehicle sales card - M2471” (vehicle-card-r006.png) is Showroom White #F6F7F8; only small seal lettering may be Steel Grey #9AA1A8.
+- `PHOTO-08/vehicle-card-r006/H072` The photograph on “Vehicle sales card - M2471” (vehicle-card-r006.png) is not tinted or colour-graded toward the brand navy, teal or grey.
+- `PHOTO-08/vehicle-card-r006/H073` Apart from the stock number in the enquiry line, no listing value on “Vehicle sales card - M2471” (vehicle-card-r006.png) is stated twice.
+- `PHOTO-08/vehicle-card-r007/H052` The price figures on “Vehicle sales card - M3119” (vehicle-card-r007.png) are lining figures of one height, with no figure dropping below the baseline.
+- `PHOTO-08/vehicle-card-r007/H053` The rule under the price on “Vehicle sales card - M3119” (vehicle-card-r007.png) is Compass Teal #3C6E71.
+- `PHOTO-08/vehicle-card-r007/H054` The dollar sign in the price on “Vehicle sales card - M3119” (vehicle-card-r007.png) is clearly smaller than the figures, roughly three fifths of their height.
+- `PHOTO-08/vehicle-card-r007/H055` The top of the dollar sign in the price on “Vehicle sales card - M3119” (vehicle-card-r007.png) lines up with the tops of the figures.
+- `PHOTO-08/vehicle-card-r007/H056` The fine-print disclosure on “Vehicle sales card - M3119” (vehicle-card-r007.png) is smaller than the mileage and listing detail text.
+- `PHOTO-08/vehicle-card-r007/H057` The year, make and model line “2019 Norsted Fjord” on “Vehicle sales card - M3119” (vehicle-card-r007.png) is larger than the mileage and listing detail text.
+- `PHOTO-08/vehicle-card-r007/H058` If a compass roundel appears on “Vehicle sales card - M3119” (vehicle-card-r007.png), it is not stretched, squashed or redrawn.
+- `PHOTO-08/vehicle-card-r007/H059` If a compass roundel appears on “Vehicle sales card - M3119” (vehicle-card-r007.png), it has no white square, and the ground shows through its knocked-out rings, rose and lettering.
+- `PHOTO-08/vehicle-card-r007/H060` No type, rule or keyline on “Vehicle sales card - M3119” (vehicle-card-r007.png) has a drop shadow, transparency, gradient or blend effect.
+- `PHOTO-08/vehicle-card-r007/H061` No scrim, gradient or overlay of any colour, black and white included, is laid over the photograph on “Vehicle sales card - M3119” (vehicle-card-r007.png).
+- `PHOTO-08/vehicle-card-r007/H062` The price, mileage and listing detail on “Vehicle sales card - M3119” (vehicle-card-r007.png) sit on Showroom White #F6F7F8, not on a Meridian Navy band.
+- `PHOTO-08/vehicle-card-r007/H063` No Meridian Navy #1F2A3A band, panel or seal sits behind the vehicle on “Vehicle sales card - M3119” (vehicle-card-r007.png).
+- `PHOTO-08/vehicle-card-r007/H064` The mileage and listing detail on “Vehicle sales card - M3119” (vehicle-card-r007.png) are Graphite #2E3237.
+- `PHOTO-08/vehicle-card-r007/H065` The year, make and model line “2019 Norsted Fjord” on “Vehicle sales card - M3119” (vehicle-card-r007.png) is Meridian Navy on Showroom White, or Showroom White on a Meridian Navy band.
+- `PHOTO-08/vehicle-card-r007/H066` The fine-print disclosure on “Vehicle sales card - M3119” (vehicle-card-r007.png) is Graphite #2E3237 or Steel Grey #9AA1A8.
+- `PHOTO-08/vehicle-card-r007/H067` Steel Grey #9AA1A8 on “Vehicle sales card - M3119” (vehicle-card-r007.png) appears only as keylines, box rules, the photo-well border, one small muted line or seal lettering, never as a ground.
+- `PHOTO-08/vehicle-card-r007/H068` Compass Teal #3C6E71 and Steel Grey #9AA1A8 together fill only a small share, about 5% or less, of the non-photographic area of “Vehicle sales card - M3119” (vehicle-card-r007.png).
+- `PHOTO-08/vehicle-card-r007/H069` Any field label, such as stock or mileage, and any standalone Meridian Motors name on Showroom White on “Vehicle sales card - M3119” (vehicle-card-r007.png) is Meridian Navy #1F2A3A.
+- `PHOTO-08/vehicle-card-r007/H070` All type on a Meridian Navy band, panel or seal on “Vehicle sales card - M3119” (vehicle-card-r007.png) is Showroom White #F6F7F8; only small seal lettering may be Steel Grey #9AA1A8.
+- `PHOTO-08/vehicle-card-r007/H071` The photograph on “Vehicle sales card - M3119” (vehicle-card-r007.png) is not tinted or colour-graded toward the brand navy, teal or grey.
+- `PHOTO-08/vehicle-card-r007/H072` Apart from the stock number in the enquiry line, no listing value on “Vehicle sales card - M3119” (vehicle-card-r007.png) is stated twice.
+- `PHOTO-08/vehicle-card-r007/H073` The Norsted Fjord on “Vehicle sales card - M3119” (vehicle-card-r007.png) is evenly lit, without the dim light of M3119_norsted_fjord_front34.jpg.
+- `PHOTO-08/inventory-campaign/H100` The compass roundel on “Forecourt inventory campaign” (inventory-campaign.png) is not stretched, squashed or redrawn.
+- `PHOTO-08/inventory-campaign/H101` If a price appears on “Forecourt inventory campaign” (inventory-campaign.png), its figures are lining figures of one height, with no figure dropping below the baseline.
+- `PHOTO-08/inventory-campaign/H102` If a price appears on “Forecourt inventory campaign” (inventory-campaign.png), the rule under it is Compass Teal #3C6E71.
+- `PHOTO-08/inventory-campaign/H103` If a price appears on “Forecourt inventory campaign” (inventory-campaign.png), its dollar sign is clearly smaller than the figures, roughly three fifths of their height.
+- `PHOTO-08/inventory-campaign/H104` If a price appears on “Forecourt inventory campaign” (inventory-campaign.png), the top of its dollar sign lines up with the tops of the figures.
+- `PHOTO-08/inventory-campaign/H105` If a price appears on “Forecourt inventory campaign” (inventory-campaign.png), it is larger than that vehicle's year, make and model caption.
+- `PHOTO-08/inventory-campaign/H106` If a fine-print disclosure appears on “Forecourt inventory campaign” (inventory-campaign.png), it is smaller than the year, make and model captions.
+- `PHOTO-08/inventory-campaign/H107` If both appear on “Forecourt inventory campaign” (inventory-campaign.png), the fine-print disclosure is smaller than the mileage and listing detail text.
+- `PHOTO-08/inventory-campaign/H108` If mileage or listing detail appears on “Forecourt inventory campaign” (inventory-campaign.png), it is smaller than the year, make and model captions.
+- `PHOTO-08/inventory-campaign/H109` No type, rule or keyline on “Forecourt inventory campaign” (inventory-campaign.png) has a drop shadow, transparency, gradient or blend effect.
+- `PHOTO-08/inventory-campaign/H110` Steel Grey #9AA1A8 on “Forecourt inventory campaign” (inventory-campaign.png) appears only as keylines, box rules, photo borders, one small muted line or seal lettering, never as a ground.
+- `PHOTO-08/inventory-campaign/H111` Compass Teal #3C6E71 and Steel Grey #9AA1A8 together fill only a small share, about 5% or less, of the non-photographic area of “Forecourt inventory campaign” (inventory-campaign.png).
+- `PHOTO-08/inventory-campaign/H112` Any field label, such as stock or mileage, set on Showroom White on “Forecourt inventory campaign” (inventory-campaign.png) is Meridian Navy #1F2A3A.
+- `PHOTO-08/inventory-campaign/H113` All type on a Meridian Navy band, panel or seal on “Forecourt inventory campaign” (inventory-campaign.png) is Showroom White #F6F7F8; only small seal lettering may be Steel Grey #9AA1A8.
+- `PHOTO-08/inventory-campaign/H114` No photograph on “Forecourt inventory campaign” (inventory-campaign.png) is tinted or colour-graded toward the brand navy, teal or grey.
+- `PHOTO-08/inventory-campaign/H115` No listing value for any one vehicle on “Forecourt inventory campaign” (inventory-campaign.png), such as its price, mileage or trim, is stated twice.
+- `PHOTO-08/inventory-campaign/H116` The Norsted Fjord on “Forecourt inventory campaign” (inventory-campaign.png) is evenly lit, without the dim light of M3119_norsted_fjord_front34.jpg, M3119_norsted_fjord_side.jpg and M3119_norsted_fjord_rear34.jpg.
+- `PHOTO-08/inventory-campaign/H117` No scrim, gradient or overlay of any colour, black and white included, is laid over any photograph on “Forecourt inventory campaign” (inventory-campaign.png).
+- `PHOTO-08/inventory-campaign/H118` Any price, mileage or listing detail on “Forecourt inventory campaign” (inventory-campaign.png) sits on Showroom White #F6F7F8, not on a Meridian Navy band.
+- `PHOTO-08/inventory-campaign/H119` No Meridian Navy #1F2A3A band, panel or seal sits behind any vehicle on “Forecourt inventory campaign” (inventory-campaign.png).
+- `PHOTO-08/inventory-campaign/H120` If mileage or listing detail appears on “Forecourt inventory campaign” (inventory-campaign.png), it is Graphite #2E3237.
+- `PHOTO-08/inventory-campaign/H121` Outside the roundel artwork, the dealership name “Meridian Motors” on “Forecourt inventory campaign” (inventory-campaign.png) is Meridian Navy on Showroom White, or Showroom White on Meridian Navy.
+- `PHOTO-08/inventory-campaign/H122` Every year, make and model caption on “Forecourt inventory campaign” (inventory-campaign.png) is Meridian Navy on Showroom White, or Showroom White on a Meridian Navy band.
+- `PHOTO-08/inventory-campaign/H123` If a fine-print disclosure appears on “Forecourt inventory campaign” (inventory-campaign.png), it is Graphite #2E3237 or Steel Grey #9AA1A8.
+- `PHOTO-08/inventory-campaign/H124` Each of the six vehicles appears in exactly one photograph on “Forecourt inventory campaign” (inventory-campaign.png); no vehicle is shown twice.

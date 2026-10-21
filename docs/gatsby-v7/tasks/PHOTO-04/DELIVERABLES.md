@@ -45,8 +45,7 @@ File: `deliverables/villa-collection.pdf`
 - Include Oliveto, Scogliera and Verranza with photographs labelled by villa.
 - For each named villa include sleeping capacity and the minimum stay and nightly rate for all three seasons in rates_2027.csv.
 - Use the supplied monogram at least once; organise six pages so the three properties can be compared.
-- Export: Digital PDF in sRGB with embedded fonts, searchable text where practical, no crop marks and no added bleed; retain the exact page size and page count.
-- Export: This file is for screen review/distribution, not a CMYK press master.
+- Export: Digital PDF in sRGB with embedded fonts, searchable text where practical, no crop marks and no added bleed; retain the exact page size and page count. This file is for screen review/distribution, not a CMYK press master.
 
 ## Historical delivery record
 

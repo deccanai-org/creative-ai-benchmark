@@ -1,0 +1,335 @@
+{
+ "LANGUAGE, ATOMICITY AND OBSERVABILITY": [
+  {
+   "severity": "major",
+   "check_ids": [
+    "capsule-carousel-p01/H036",
+    "capsule-carousel-p02/H033",
+    "capsule-carousel-p03/H033",
+    "capsule-carousel-p04/H033",
+    "capsule-carousel-p05/H033",
+    "capsule-carousel-p06/H034"
+   ],
+   "problem": "Nobody can judge by eye whether the headline is 'about five times the size of the body text' on a PNG. It is the old 96 px vs 20 px measurement with the numbers taken out, and 'about' gives no standard to check against. H042 (headline larger than style name) and H043 (style name larger than colourway/cloth note) already set the order, so this ratio check adds nothing a person can verify.",
+   "fix": "Rewrite as a relative check that pages p01 to p05 are missing. Set k_id K5_Q2 and use the text: 'Where “Capsule launch carousel - Page 1” (capsule-carousel-p01.png) carries a headline, it is the largest text on the page other than the NORTHGROVE wordmark.' Repeat per page with its own name and file. On p06, H002 already sets the largest text, so retire p06/H034 with covered_by [p06/H002, p06/H041, p06/H042]."
+  },
+  {
+   "severity": "major",
+   "check_ids": [
+    "capsule-carousel-p01/H009",
+    "capsule-carousel-p02/H006",
+    "capsule-carousel-p03/H006",
+    "capsule-carousel-p04/H006",
+    "capsule-carousel-p05/H006",
+    "capsule-carousel-p06/H007"
+   ],
+   "problem": "Compound check: it tests two independent facts, the crew's colourway (Oat) and the tee's colourway (Moss or Fern). A page can pass one and fail the other.",
+   "fix": "Modify to: 'Any colourway name labelling the Loopback Crew on “Capsule launch carousel - Page 1” (capsule-carousel-p01.png) is Oat.' Add on the same output with K1_Q1: 'Any colourway name labelling the Heavyweight Tee on “Capsule launch carousel - Page 1” (capsule-carousel-p01.png) is Moss or Fern.' Repeat on p02 to p06."
+  },
+  {
+   "severity": "major",
+   "check_ids": [
+    "style-pdp-northgrove-style-01-loopback-crew/H017",
+    "style-pdp-northgrove-style-02-heavy-tee/H017",
+    "style-pdp-northgrove-style-03-raglan/H014",
+    "style-pdp-northgrove-style-04-henley/H014",
+    "style-pdp-northgrove-style-05-zip-hoodie/H015",
+    "style-pdp-northgrove-style-06-supporters-crew/H014",
+    "capsule-carousel-p01/H021",
+    "capsule-carousel-p02/H018",
+    "capsule-carousel-p03/H018",
+    "capsule-carousel-p04/H018",
+    "capsule-carousel-p05/H018",
+    "capsule-carousel-p06/H019"
+   ],
+   "problem": "Compound and unclear. 'Generated or extended' (made-up content) and 'enlarged past the pixels' (upscaled) are separate failures. 'Enlarged past the pixels' is studio jargon from northgrove_placements.txt, and the only way to judge it is to measure the garment in both files.",
+   "fix": "Modify to: 'No part of the garment on “Apparel style product-page module - northgrove_style_01_loopback_crew” (style-pdp-northgrove-style-01-loopback-crew.png) is generated or extended beyond what northgrove_style_01_loopback_crew.jpg shows.' Add (K2_Q2): 'At 100% zoom, the garment on “…” (style-pdp-northgrove-style-01-loopback-crew.png) is not blurred or softened by upscaling.' On the carousel pages use 'No garment on “Capsule launch carousel - Page N” (capsule-carousel-p0N.png) is generated or extended beyond its supplied style photograph', plus the same upscaling check."
+  },
+  {
+   "severity": "major",
+   "check_ids": [
+    "capsule-carousel-p01/H015",
+    "capsule-carousel-p02/H012",
+    "capsule-carousel-p03/H012",
+    "capsule-carousel-p04/H012",
+    "capsule-carousel-p05/H012",
+    "capsule-carousel-p06/H013"
+   ],
+   "problem": "Near-duplicate on the same output: the clause 'with no generated garment' repeats the generation fact in H021/H018/H019 on that page.",
+   "fix": "Modify to: 'Every garment photograph on “Capsule launch carousel - Page 1” (capsule-carousel-p01.png) is one of the six supplied style photographs, northgrove_style_01 to northgrove_style_06.' Leave generation to the H021-family check."
+  },
+  {
+   "severity": "major",
+   "check_ids": [
+    "style-pdp-northgrove-style-01-loopback-crew/H007",
+    "style-pdp-northgrove-style-02-heavy-tee/H004"
+   ],
+   "problem": "Near-duplicate on the same output. H002 already says any colourway named is Oat (style 01) or Moss/Fern (style 02), and H008/H006 forbid any other colour name. A spelling check against the full list of seven names therefore tests nothing extra and conflicts in tone ('any of seven' vs 'only Oat').",
+   "fix": "Retire style-01/H007 covered_by [style-01/H002, style-01/H008] and style-02/H004 covered_by [style-02/H002, style-02/H006]. Make H002 carry the spelling, e.g. 'If a colourway is named on “Apparel style product-page module - northgrove_style_01_loopback_crew” (style-pdp-northgrove-style-01-loopback-crew.png), it reads exactly “Oat”.'"
+  },
+  {
+   "severity": "major",
+   "check_ids": [
+    "style-pdp-northgrove-style-01-loopback-crew/H019",
+    "style-pdp-northgrove-style-02-heavy-tee/H005",
+    "style-pdp-northgrove-style-03-raglan/H016",
+    "style-pdp-northgrove-style-04-henley/H016",
+    "style-pdp-northgrove-style-05-zip-hoodie/H004"
+   ],
+   "problem": "Confusing on these five modules. None of them carries supporters' crew content, so 'with Club Navy #1B2A44 only behind supporters' crew content' leaves annotators wondering whether navy is allowed. Pairing it with the ground fact also makes two facts in one check.",
+   "fix": "Modify each to: 'The ground of “Apparel style product-page module - northgrove_style_01_loopback_crew” (style-pdp-northgrove-style-01-loopback-crew.png) is Off White #F5F2EC, with no Club Navy, Oat or Warm Grey Paper ground.' Keep the navy clause only on style-06/H017 and the carousel pages."
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "style-pdp-northgrove-style-02-heavy-tee/H015",
+    "style-pdp-northgrove-style-05-zip-hoodie/H013",
+    "style-pdp-northgrove-style-06-supporters-crew/H012",
+    "capsule-carousel-p01/H025",
+    "capsule-carousel-p02/H022",
+    "capsule-carousel-p03/H022",
+    "capsule-carousel-p04/H022",
+    "capsule-carousel-p05/H022",
+    "capsule-carousel-p06/H023"
+   ],
+   "problem": "'After-weather cast' is internal trap jargon from the asset plan, and a designer will not know what it means. On the carousel pages the modified text also lost its reference and now reads as an undefined cast.",
+   "fix": "PDP: 'The garment on “Apparel style product-page module - northgrove_style_02_heavy_tee” (style-pdp-northgrove-style-02-heavy-tee.png) shows neutral daylight colour; the warm grey cast in northgrove_style_02_heavy_tee.jpg is corrected.' Carousel: 'Every garment on “Capsule launch carousel - Page 1” (capsule-carousel-p01.png) shows neutral daylight colour, with no warm or grey cast.'"
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "capsule-carousel-p01/H024",
+    "capsule-carousel-p02/H021",
+    "capsule-carousel-p03/H021",
+    "capsule-carousel-p04/H021",
+    "capsule-carousel-p05/H021",
+    "capsule-carousel-p06/H022"
+   ],
+   "problem": "Near-duplicate of H022/H019/H020 on the same page ('Any garment cut out ... has a clean edge, with no pale rim or grey paper fringe'), which already covers the supporters' crew on navy.",
+   "fix": "Either retire it with covered_by the clean-edge check, or keep it as the navy trap guard and narrow the general check: 'Any garment cut out on an Off White ground on “Capsule launch carousel - Page 1” (capsule-carousel-p01.png) has a clean edge, with no pale rim or grey paper fringe.'"
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "style-pdp-northgrove-style-01-loopback-crew/H028",
+    "style-pdp-northgrove-style-02-heavy-tee/H027",
+    "style-pdp-northgrove-style-03-raglan/H025",
+    "style-pdp-northgrove-style-04-henley/H025",
+    "style-pdp-northgrove-style-05-zip-hoodie/H025",
+    "style-pdp-northgrove-style-06-supporters-crew/H026",
+    "capsule-carousel-p01/H035",
+    "capsule-carousel-p02/H032",
+    "capsule-carousel-p03/H032",
+    "capsule-carousel-p04/H032",
+    "capsule-carousel-p05/H032",
+    "capsule-carousel-p06/H033"
+   ],
+   "problem": "Too long (32-33 words) and partly overlaps the 'every claim/line comes from northgrove_copy.txt' check on the same output. It is a wording rule but carries K2_Q3, while the task guide maps wording and label rules to K1_Q3.",
+   "fix": "Shorten to: 'The copy on “Capsule launch carousel - Page 1” (capsule-carousel-p01.png) uses no luxury, bargain or superlative words, such as luxury, exclusive, cheap or sale.' Set k_id K1_Q3."
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "capsule-carousel-p01/H012",
+    "capsule-carousel-p02/H009",
+    "capsule-carousel-p03/H009",
+    "capsule-carousel-p04/H009",
+    "capsule-carousel-p05/H009",
+    "capsule-carousel-p06/H010"
+   ],
+   "problem": "A 33-word lookup table packed into one sentence with semicolons. It is hard to read at a glance and goes past the 30-word limit.",
+   "fix": "Split into two K1_Q5 checks. 'Any fabric line for the Loopback Crew, Raglan or Hoodie on “Capsule launch carousel - Page 1” (capsule-carousel-p01.png) reads “80/20 loopback cotton, 340 gsm”.' and 'Any fabric line for the Heavyweight Tee or Henley on “Capsule launch carousel - Page 1” (capsule-carousel-p01.png) reads “100% combed cotton jersey, 180 gsm”.'"
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "style-pdp-northgrove-style-01-loopback-crew/H002",
+    "style-pdp-northgrove-style-02-heavy-tee/H002",
+    "style-pdp-northgrove-style-01-loopback-crew/H011",
+    "style-pdp-northgrove-style-02-heavy-tee/H009",
+    "style-pdp-northgrove-style-01-loopback-crew/H004",
+    "style-pdp-northgrove-style-02-heavy-tee/H013",
+    "style-pdp-northgrove-style-03-raglan/H011",
+    "style-pdp-northgrove-style-04-henley/H004",
+    "style-pdp-northgrove-style-05-zip-hoodie/H011",
+    "style-pdp-northgrove-style-06-supporters-crew/H010"
+   ],
+   "problem": "Rationale written into the check makes it long (31-32 words) and convoluted, e.g. 'approved for the Loopback Crew in northgrove_colourways.csv, whose northgrove_copy.txt line fits the pale crew', 'even where northgrove_colourways.csv lists another fabric', 'never moving it toward another colourway or palette hex'.",
+   "fix": "Move the reasons to evidence_reference and keep the fact. H002: 'If a colourway is named on “…” (style-pdp-northgrove-style-01-loopback-crew.png), it is Oat.' (style 02: 'Moss or Fern'). H011/H009: 'Any fabric line on “…” reads “80/20 loopback cotton, 340 gsm”, as in northgrove_copy.txt.' Colour check: 'The garment on “…” keeps its colour from northgrove_style_01_loopback_crew.jpg; only the light cast is corrected, never a shift toward another colourway or palette colour.'"
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "capsule-carousel-p01/H013",
+    "capsule-carousel-p02/H010",
+    "capsule-carousel-p03/H010",
+    "capsule-carousel-p04/H010",
+    "capsule-carousel-p05/H010",
+    "capsule-carousel-p06/H011"
+   ],
+   "problem": "The phrase 'is set with the Supporters' Crew' is unclear: it could mean typeset next to the garment or attributed to it.",
+   "fix": "'No fabric line is given for the Supporters' Crew on “Capsule launch carousel - Page 1” (capsule-carousel-p01.png); northgrove_copy.txt gives it no cloth.'"
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "capsule-carousel-p01/H065",
+    "capsule-carousel-p01/H001"
+   ],
+   "problem": "In H065, 'placed as artwork from ... svg or ... svg or their PNGs' describes the working process, which cannot be seen in the PNG; what can be seen is that the mark matches the supplied artwork. H001 'names Northgrove' is ambiguous: annotators cannot tell whether the NORTHGROVE wordmark in the mark counts. If it does, H001 duplicates H065.",
+   "fix": "H065: '“Capsule launch carousel - Page 1” (capsule-carousel-p01.png) shows the Northgrove mark, matching northgrove_mark_transparent.svg or northgrove_mark_reversed.svg.' H001: 'The name Northgrove appears on “Capsule launch carousel - Page 1” (capsule-carousel-p01.png) in typeset text, not only inside the mark.' If the brief is read as allowing the mark alone, retire H001 instead, with covered_by [new H065]."
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "style-pdp-northgrove-style-01-loopback-crew/H026",
+    "style-pdp-northgrove-style-01-loopback-crew/H025",
+    "capsule-carousel-p01/H033",
+    "capsule-carousel-p01/H032"
+   ],
+   "problem": "Vague role references (same family on every PDP and carousel page). 'Smaller than its body text' leaves the reference undefined, since body text here means the cloth notes and colourway names. 'Not the display face' is jargon.",
+   "fix": "Use 'Any fine print on “…” (…png) is set smaller than its cloth notes and colourway names.' and 'Any cloth note or colourway name on “…” (…png) is set in Libre Franklin Regular, not Source Serif 4 and not a heavier weight.' Apply to every PDP and carousel page (ids in the families listed)."
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "style-pdp-northgrove-style-01-loopback-crew/H030",
+    "style-pdp-northgrove-style-01-loopback-crew/H034",
+    "style-pdp-northgrove-style-01-loopback-crew/H029",
+    "style-pdp-northgrove-style-01-loopback-crew/H033",
+    "capsule-carousel-p01/H037",
+    "capsule-carousel-p01/H041",
+    "capsule-carousel-p01/H002",
+    "capsule-carousel-p01/H040"
+   ],
+   "problem": "k_id is inconsistent within the mark-integrity family on every output. Leaf presence (H029/H002) and lettering/counters (H033/H040) are K2_Q4 'Identity fidelity', while leaf position (H030/H037) and lettering not retyped (H034/H041) are K2_Q3. These are the same kind of logo-fidelity fact, so annotators will score them under different K buckets.",
+   "fix": "Move the leaf position/spacing check and the lettering not retyped/stretched check to K2_Q4 on all 12 outputs, to match leaf presence and counters. Keep the mark colour check (H031 family) at K2_Q3 as a palette rule."
+  }
+ ],
+ "FIDELITY AND COVERAGE": [
+  {
+   "severity": "major",
+   "check_ids": [
+    "PHOTO-10/capsule-carousel-p01/H025",
+    "PHOTO-10/capsule-carousel-p02/H022",
+    "PHOTO-10/capsule-carousel-p03/H022",
+    "PHOTO-10/capsule-carousel-p04/H022",
+    "PHOTO-10/capsule-carousel-p05/H022",
+    "PHOTO-10/capsule-carousel-p06/H023"
+   ],
+   "problem": "This check guards a planned trap and the patch weakened it. asset_plan says style_02, 05 and 06 were shot in the after-weather half and must be brought to one look with the bright-morning frames (style_01, 03, 04). The old check compared garments on the same page: after-weather garments show no warmer or greyer cast than bright-morning ones. That comparison is inside one file, so it is atomic. The guide bans comparisons across outputs, not between elements of one file, so the 'was a comparison between garments' rewrite misapplies the rule. The new wording ('every garment reads in neutral daylight') is a loose absolute: two garments that each look roughly neutral but do not match would now pass. The cell for the 'garments look consistent' rule (R08) on each carousel page now rests only on this weaker check.",
+   "fix": "Restore the within-page fact on each page, e.g. for p01 H025: “On “Capsule launch carousel - Page 1” (capsule-carousel-p01.png), garments from the after-weather frames (styles 02, 05, 06) show no warmer or greyer cast than those from styles 01, 03, 04.” Keep the neutral-daylight wording as a separate added check if you want it. Do the same for p02-p05 H022 and p06 H023."
+  },
+  {
+   "severity": "major",
+   "check_ids": [
+    "PHOTO-10/style-pdp-northgrove-style-01-loopback-crew/H025",
+    "PHOTO-10/style-pdp-northgrove-style-02-heavy-tee/H024",
+    "PHOTO-10/style-pdp-northgrove-style-03-raglan/H022",
+    "PHOTO-10/style-pdp-northgrove-style-04-henley/H022",
+    "PHOTO-10/style-pdp-northgrove-style-05-zip-hoodie/H022",
+    "PHOTO-10/style-pdp-northgrove-style-06-supporters-crew/H023",
+    "PHOTO-10/capsule-carousel-p01/H032",
+    "PHOTO-10/capsule-carousel-p02/H029",
+    "PHOTO-10/capsule-carousel-p03/H029",
+    "PHOTO-10/capsule-carousel-p04/H029",
+    "PHOTO-10/capsule-carousel-p05/H029",
+    "PHOTO-10/capsule-carousel-p06/H030"
+   ],
+   "problem": "The body-type check was narrowed. The old wording was 'Any body text, colourway name, cloth note or fine print ... is set in Libre Franklin Regular'. The new one covers only 'cloth note or colourway name'. Fine print moved to its own check, but general body text was dropped. A colourway story (e.g. “a soft grey-green, dyed in small lots.”), a size run or the “Made with Rowanfield Athletic.” line set in Source Serif 4, or in a heavier Libre Franklin, now passes on all 12 outputs. The brand typography applies to all newly set 'supporting copy', and the retired 2026-09 duplicates (H040/H038/H052/H051) were equally narrow, so no other check holds this fact. The patch is also inconsistent: H026/H027 and their siblings still refer to 'body text'.",
+   "fix": "Reword each one as: “Any body text, cloth note or colourway name on “…” (file.png) is set in Libre Franklin Regular, not the display face and not a heavier weight.” Update the coverage rule T03 text to match: 'Body: Libre Franklin Regular (Book) for body copy, cloth notes and colourway names'."
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "PHOTO-10/style-pdp-northgrove-style-01-loopback-crew/H022",
+    "PHOTO-10/capsule-carousel-p01/H029"
+   ],
+   "problem": "There is a gap in the palette rules. palette_rules.distribution caps Olive #6B7248 at 'no more than 5% of the designed, non-photographic area'. Coverage rule B03 leaves this cap out of its text, and no check on any of the 12 outputs tests it. The Olive checks (pdp H022/H021/H019/H019/H019/H020, carousel H029/H026 x4/H027) cover only where Olive is used, not how much.",
+   "fix": "Add the cap to the B03 rule text. Extend each Olive check by one clause, e.g. “Olive #6B7248 on “…” (file.png) appears only in the mark's leaf and small labels, never as a ground, panel or body text, and covers only a small accent (well under 5%) of the designed area.” Or add one check per output stating that Olive covers no more than about 5% of the non-photographic area."
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "PHOTO-10/style-pdp-northgrove-style-01-loopback-crew/H050",
+    "PHOTO-10/capsule-carousel-p01/H062"
+   ],
+   "problem": "The new type-colour checks (the *-type-colour adds, H049-H062 per output) cover only 'headings, style names and body text'. The palette says everything on Club Navy, 'type and the whole reversed mark', is Off White, so fine print or a small label on navy can be Olive or Charcoal and still pass. The palette also makes Charcoal the colour of 'All type, rules and the NORTHGROVE wordmark' on light grounds, but no check on any output tests rule (line) colour. B06 only limits rules to the six hexes. Coverage rule B02 hides both gaps.",
+   "fix": "Add one check per output: “All type on any Club Navy #1B2A44 area of “…” (file.png), fine print and labels included, is Off White #F5F2EC.” Add one more: “Every rule (line) on “…” (file.png) is Charcoal #2E2E2C, or Off White #F5F2EC on Club Navy.” Cite both in B02, or split B02 into B02a (type) and B02b (rules)."
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "PHOTO-10/capsule-carousel-p02/H034",
+    "PHOTO-10/capsule-carousel-p03/H034",
+    "PHOTO-10/capsule-carousel-p04/H034",
+    "PHOTO-10/capsule-carousel-p05/H034",
+    "PHOTO-10/capsule-carousel-p02/H001",
+    "PHOTO-10/capsule-carousel-p05/H001"
+   ],
+   "problem": "Two coverage cells are wrong. Rule D04 ('Slide 1 introduces Northgrove with the supplied mark; slide 6 uses the exact Tall post line') cites H034 ('Any Northgrove mark includes the olive leaf') on p02-p05. That check does not test the slide-1 or slide-6 requirement, which does not apply to middle slides. Rule D03 ('Use the assigned slide position') cites H001 ('shows at least one supplied style') on p02-p05, which does not test slide position either.",
+   "fix": "D04 for p02, p03, p04, p05: use na with the reason “Only slide 1 and slide 6 carry this requirement; this is a middle slide.” D03 for p02-p05: cite the auto file_exists check A001, since the file name fixes the slide position, or use na with the reason “Middle-slide position is fixed by the file name; no content is assigned to it.”"
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "PHOTO-10/capsule-carousel-p02/H001",
+    "PHOTO-10/capsule-carousel-p03/H001",
+    "PHOTO-10/capsule-carousel-p04/H001",
+    "PHOTO-10/capsule-carousel-p05/H001"
+   ],
+   "problem": "These checks were changed from 'is not blank' (K1_Q4) to 'shows at least one of the six supplied Northgrove styles' (K1_Q1). That goes further than the commission. 'Develop the middle slides from supplied styles and approved copy' allows a middle slide built from approved copy alone, such as the colourway stories, and the brief leaves the six-slide story to the designer. A copy-only middle slide would now fail.",
+   "fix": "Reword to: “Capsule launch carousel - Page 2” (capsule-carousel-p02.png) shows a supplied Northgrove style or approved copy from northgrove_copy.txt. Apply the same wording to p03-p05. Invented products or colourways are already caught by H012 (garments come only from the supplied photographs) and H002 (copy only from approved files)."
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "PHOTO-10/capsule-carousel-p01/H036",
+    "PHOTO-10/capsule-carousel-p02/H033",
+    "PHOTO-10/capsule-carousel-p03/H033",
+    "PHOTO-10/capsule-carousel-p04/H033",
+    "PHOTO-10/capsule-carousel-p05/H033",
+    "PHOTO-10/capsule-carousel-p06/H034"
+   ],
+   "problem": "These are now the only checks covering the retired 96 px headline size, but 'the headline is about five times the size of the body text' is the 96/20 px ratio (4.8) in different words. An annotator cannot judge it by eye on a PNG, which is the reason the guide gives for retiring exact sizes.",
+   "fix": "Make it a plain relative check: “Where “…” (capsule-carousel-p0N.png) carries a headline and body text, the headline is clearly the largest newly set text, much larger than the body text.” Keep the existing H042/H040/H041 style-name-between relationship."
+  }
+ ],
+ "repair": {
+  "fixed": [
+   "F1/L7 (major) car_cast: restored the within-page comparison on all 6 carousel pages (p01 H025, p02-p05 H022, p06 H023), using plain style names: 'On “…”, no Heavyweight Tee, Hoodie or Supporters' Crew shows a warmer or greyer cast than a Loopback Crew, Raglan or Henley on the same page.' Added a separate absolute check per page (new *-daylight, K2_Q4): 'Every garment … shows neutral daylight colour, with no warm or grey cast.' R08 and B08 now cite both checks.",
+   "L7 PDP 02/05/06 daylight checks (H015/H013/H012): removed the 'after-weather' jargon. They now read '… shows neutral daylight colour, with the warmer, greyer light of <source>.jpg corrected.'",
+   "F2 (major) + L14: the body-role check on all 12 outputs reads again 'Any body text, cloth note or colourway name … is set in Libre Franklin Regular, not Source Serif 4 or a heavier weight.' T03 now reads 'Body: Libre Franklin Regular (Book) for body copy, cloth notes and colourway names'. Fine-print size check reworded to '… smaller than the body text, cloth notes and colourway names on it.'",
+   "F3: added the Olive 5% cap check on all 12 outputs (new *-olive-cap). B03 text now includes the cap and cites the olive and olive-cap checks.",
+   "F4 + L6: type colour split. The typecol check now covers light grounds only and includes fine print. New per-output check that all type on Club Navy is Off White (pdp-06 and the 6 carousel pages; new coverage rule B17, na on PDP 01-05 with a reason). New rule (line) colour check on all 12 outputs (rule B18). PDP 01-05 ground checks reworded to 'Off White #F5F2EC, not Club Navy, Oat or Warm Grey Paper', with the confusing navy exception removed. pdp-06 and the carousel pages keep the navy clause.",
+   "F5 coverage: D04 on p02-p05 no longer cites only leaf presence. It now cites the supplied-mark integrity checks (leaf plus lettering) because the 'supplied mark' part applies to any mark placed there. D03 on p02-p05 now cites the auto file_exists A001, since the file name fixes the slide position, instead of H001. D03 on p01 now cites the new mark-present check.",
+   "F6: p02-p05 H001 now reads '… shows a supplied Northgrove style or approved copy from northgrove_copy.txt.'",
+   "F7/L1: carousel ratio check ('about five times') replaced on p01-p05 with '… Where … carries a headline, it is the largest text on the page other than the Northgrove mark.' (K5_Q2). Retired p06/H034, covered by p06 H002 and H041. Retirements that pointed at retired checks were re-pointed (for example p06 headline-size retirements now point to H002, and p01/H003 to the new mark-present check). T06 text updated to match.",
+   "L2: car colourway-label check split on all 6 pages: crew = Oat (existing id), plus a new check that the tee = Moss or Fern (K1_Q1).",
+   "L3: generated/extended split from upscaling on all 12 outputs. The existing ids keep 'generated or extended beyond …'. New K2_Q2 check: 'At 100% zoom, … not blurred or softened by upscaling.' R06 cites both.",
+   "L4: car_photo_src no longer repeats the generation clause.",
+   "L5 + L11: retired pdp-01/H007 and pdp-02/H004 (spelling duplicates). H002 now reads 'If a colourway is named on …, it reads exactly “Oat”' (or “Moss” or “Fern”), with the rationale moved to evidence_reference. pdp-01 H011 and pdp-02 H009 fabric checks and all 6 keep-colour checks shortened to the plain fact.",
+   "L8: the general carousel edge check is narrowed to garments cut out on Off White, Oat or Warm Grey Paper. The Club Navy edge check stays as the trap guard.",
+   "L9 (partly): voice check shortened on all 12 outputs to '… uses no luxury, bargain or superlative words, such as luxury, exclusive, cheap or sale.' I checked northgrove_copy.txt and it contains none of these words.",
+   "L10: carousel fabric lookup split into two K1_Q5 checks per page (crew/raglan/hoodie loopback; tee/henley jersey). R05 cites both.",
+   "L12: Supporters' Crew no-fabric check reworded to 'No fabric line is given for the Supporters' Crew on …'.",
+   "L13: p01 new mark check now reads '… shows the Northgrove mark, matching northgrove_mark_transparent.svg or northgrove_mark_reversed.svg.' Retired p01/H001 ('names Northgrove') with covered_by new:p01-mark-present, because the commission reads 'Slide 1 introduces Northgrove with the supplied mark' and does not ask for typeset text.",
+   "L15: the leaf-position and lettering-not-retyped checks moved to K2_Q4 on all 12 outputs, to match the other logo-integrity checks.",
+   "Coverage bug found while fixing: R03 had cited a non-existent family 'car_story' on the carousel pages. It now cites the carousel colourway-story checks."
+  ],
+  "rejected": [
+   {
+    "finding": "L9 part: change the voice check's k_id from K2_Q3 to K1_Q3",
+    "why": "GUIDE_AB.md says 'brand rules are K2_Q3'. The rule comes from brand_identity.voice / price_positioning ('nothing may read as cheaper or as more luxury than the parcel actually is'), so it is a brand rule. I shortened the wording but kept K2_Q3."
+   },
+   {
+    "finding": "F5 part: mark D03/D04 cells on p02-p05 as na",
+    "why": "validate_patch.py makes every commission bullet need checks on every output that carries it ('deliverable requirement for capsule-carousel-p02 has no checks'), so an na cell fails validation. D03 now cites A001, the reviewer's alternative. D04 cites the supplied-mark integrity checks instead of na."
+   }
+  ],
+  "unresolved": [
+   "30 validator warnings remain for checks of 31-34 words. Most come from the long deliverable names (for example the palette-hex list check and the colourway-story check with its quoted example). All are under the 40-word limit.",
+   "The rebuild runs in /Users/dhiren/Documents/ChatGPT/Adobe_Gpt/reviews/pilot13-ab-fixes-2026-10-21/work/PHOTO-10/: build.py now execs the new repair.py before writing the patch, and cov.py holds the coverage changes. Outputs: patches/PHOTO-10.json (191 retire / 290 modify / 104 add) and coverage/PHOTO-10.json (41 rules, 492 cells, 40 na). Human checks went from 649 to 562."
+  ]
+ }
+}

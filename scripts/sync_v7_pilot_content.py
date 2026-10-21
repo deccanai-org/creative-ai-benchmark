@@ -173,7 +173,7 @@ def sync(check: bool = False) -> None:
         lines=[f'# {spec["task_name"]}: requested deliverables', '', 'Current input revision: pilot13_inputs_2026_10_14. Prior outputs have not been reassessed against these revised inputs.', '']
         for output in spec['deliverables']:
             c=output['commission']
-            lines += [f'## {output["name"]}', f'File: `{output["path"]}`', '', f'- Purpose: {c["purpose"]}', f'- Placement: {c["channel"]}', f'- Audience: {c["audience"]}', '- Specification: '+json.dumps(output['spec']), *['- '+s for s in c['content']], *['- Export: '+s for s in c['export_settings']], '']
+            lines += [f'## {output["name"]}', f'File: `{output["path"]}`', '', f'- Purpose: {c["purpose"]}', f'- Placement: {c["channel"]}', f'- Audience: {c["audience"]}', '- Specification: '+json.dumps(output['spec']), *['- '+s for s in c['content']], '- Export: '+' '.join(c['export_settings']), '']
         old=(REFRESH/'before'/task_id/'DELIVERABLES.md').read_text()
         if 'completed output register' in old:
             lines += ['## Historical delivery record', '', 'The following record belongs to the earlier input pack; it is not approval of the current requirements.', '', old]

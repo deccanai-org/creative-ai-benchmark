@@ -1,0 +1,352 @@
+{
+ "LANGUAGE, ATOMICITY AND OBSERVABILITY": [
+  {
+   "severity": "major",
+   "check_ids": [
+    "PHOTO-06/share-hollis-scan-03/H009",
+    "PHOTO-06/share-hollis-scan-05/H009",
+    "PHOTO-06/share-hollis-scan-07/H012",
+    "PHOTO-06/share-hollis-scan-01/H012",
+    "PHOTO-06/share-hollis-scan-02/H013",
+    "PHOTO-06/share-hollis-scan-04/H010",
+    "PHOTO-06/share-hollis-scan-06/H011",
+    "PHOTO-06/share-hollis-scan-08/H009",
+    "PHOTO-06/share-hollis-scan-09/H009"
+   ],
+   "problem": "Each caption-record check holds two independent facts, the year and the place. On the three K1_Q5 critical checks (S03, S05, S07) this matters most: a wrong place fails the critical trap check even when the date trap was handled correctly, which mixes up what the trap is measuring. The brief lists year, place and people separately, and people already have their own checks (H010/H013 and similar).",
+   "fix": "Keep the year in the existing id with its k_id, for example S03/H009 (K1_Q5): The caption on “Family archive share image - hollis_scan_03” (share-hollis-scan-03.jpg) gives the year 1936, not the catalogue's 1938. Add a new K1_Q1 check for the place: The caption on “Family archive share image - hollis_scan_03” (share-hollis-scan-03.jpg) names the place Newfane, with or without Vermont or VT. Do the same for S05 (1955, not cousin Dale's 1956 / Putney), S07 (1971 / Brattleboro), and the K1_Q1 pairs on S01 (1912/Brattleboro), S02 (1931/Brattleboro), S04 (1948/Brattleboro), S06 (1967/Brattleboro), S08 (1969/Brattleboro) and S09 (1974/Brattleboro)."
+  },
+  {
+   "severity": "major",
+   "check_ids": [
+    "PHOTO-06/share-hollis-scan-01/H022",
+    "PHOTO-06/share-hollis-scan-02/H050",
+    "PHOTO-06/share-hollis-scan-03/H020",
+    "PHOTO-06/share-hollis-scan-04/H046",
+    "PHOTO-06/share-hollis-scan-05/H020",
+    "PHOTO-06/share-hollis-scan-06/H050",
+    "PHOTO-06/share-hollis-scan-07/H023",
+    "PHOTO-06/share-hollis-scan-08/H045",
+    "PHOTO-06/share-hollis-scan-09/H020"
+   ],
+   "problem": "The brand sets the rule at 0.25 pt, which is 1/3 px. In a 1600 px JPEG that line is antialiased into a faint grey stroke, so no pixel will sample as #191613. The 'Archive Black #191613' part of the check cannot be judged by looking at the file. 'Thin ... hairline' also says the same thing twice.",
+   "fix": "Rewrite as one visible fact: If a rule appears beneath the sitter's name on “Family archive share image - hollis_scan_01” (share-hollis-scan-01.jpg), it is a single fine dark neutral hairline, not a heavy bar, a coloured line or a double line. Keep the Archive Black hex in evidence_reference only. Apply the same pattern to all nine files."
+  },
+  {
+   "severity": "major",
+   "check_ids": [
+    "PHOTO-06/share-hollis-scan-01/H026",
+    "PHOTO-06/share-hollis-scan-01/H049",
+    "PHOTO-06/share-hollis-scan-02/H042",
+    "PHOTO-06/share-hollis-scan-02/H043",
+    "PHOTO-06/share-hollis-scan-03/H025",
+    "PHOTO-06/share-hollis-scan-03/H048",
+    "PHOTO-06/share-hollis-scan-04/H038",
+    "PHOTO-06/share-hollis-scan-04/H039",
+    "PHOTO-06/share-hollis-scan-05/H025",
+    "PHOTO-06/share-hollis-scan-05/H048",
+    "PHOTO-06/share-hollis-scan-06/H042",
+    "PHOTO-06/share-hollis-scan-06/H043",
+    "PHOTO-06/share-hollis-scan-07/H028",
+    "PHOTO-06/share-hollis-scan-07/H051",
+    "PHOTO-06/share-hollis-scan-08/H037",
+    "PHOTO-06/share-hollis-scan-08/H038",
+    "PHOTO-06/share-hollis-scan-09/H025",
+    "PHOTO-06/share-hollis-scan-09/H048"
+   ],
+   "problem": "These checks ask the annotator to tell Archive Black #191613 from Ink Charcoal #33302B on Light-weight serif text in a JPEG. The place line is about 24 px and body text is about 12.7 px, with strokes 1 to 2 px wide. Antialiasing and JPEG compression move sampled values by more than the gap between the two colours, so an exact hex answer cannot be read from the pixels. The Ink Charcoal check (H049 and its equivalents) also combines two roles: the place and date line, plus any names or body line.",
+   "fix": "Use a relative check that can be seen, with the hex as the named reference. Name line: The sitter's name line on “…” (share-hollis-scan-01.jpg) is the darkest text in the caption, a near-black (Archive Black #191613). Place line: The place and date line on “…” (share-hollis-scan-01.jpg) is dark charcoal (Ink Charcoal #33302B), not grey and not a colour. Split the body role into a new check: If a names line or other caption body appears on “…” (share-hollis-scan-01.jpg), it is dark charcoal (Ink Charcoal #33302B), not grey."
+  },
+  {
+   "severity": "major",
+   "check_ids": [
+    "PHOTO-06/share-hollis-scan-01/H025",
+    "PHOTO-06/share-hollis-scan-02/H041",
+    "PHOTO-06/share-hollis-scan-03/H024",
+    "PHOTO-06/share-hollis-scan-04/H037",
+    "PHOTO-06/share-hollis-scan-05/H024",
+    "PHOTO-06/share-hollis-scan-06/H041",
+    "PHOTO-06/share-hollis-scan-07/H027",
+    "PHOTO-06/share-hollis-scan-08/H036",
+    "PHOTO-06/share-hollis-scan-09/H024"
+   ],
+   "problem": "'Uses only #F5F1E9, #191613, #6F6B64, #D9D0C1 or #33302B' fails on every antialiased glyph edge in a JPEG, because edge pixels are blends of two colours, so read literally the check can never pass. A bare hex list is also hard for a designer to take in at a glance.",
+   "fix": "Rewrite as: Caption type, rules and keylines on “Family archive share image - hollis_scan_01” (share-hollis-scan-01.jpg) use only the archive neutrals (Paper White, Archive Black, Museum Grey, Linen, Ink Charcoal); no other hue, such as a colour or gold, appears. Keep the five hexes in evidence_reference."
+  },
+  {
+   "severity": "major",
+   "check_ids": [
+    "PHOTO-06/share-hollis-scan-01/H021",
+    "PHOTO-06/share-hollis-scan-02/H048",
+    "PHOTO-06/share-hollis-scan-03/H019",
+    "PHOTO-06/share-hollis-scan-04/H044",
+    "PHOTO-06/share-hollis-scan-05/H019",
+    "PHOTO-06/share-hollis-scan-06/H048",
+    "PHOTO-06/share-hollis-scan-07/H022",
+    "PHOTO-06/share-hollis-scan-08/H043",
+    "PHOTO-06/share-hollis-scan-09/H019"
+   ],
+   "problem": "Each check holds three independent facts: the numeral is in the left margin, it is larger than the name, and it is level with the cap line. 'Level with its cap line' is unclear because 'its' could mean the numeral's own cap line, while the brand means the name's cap line. 'Stands alone' is not in the brand text.",
+   "fix": "Split into three checks. (1) If a plate numeral appears on “…” (share-hollis-scan-01.jpg), it sits in the left margin. (2) If a plate numeral appears on “…” (share-hollis-scan-01.jpg), it is larger than the sitter's name. (3) If a plate numeral appears on “…” (share-hollis-scan-01.jpg), its top lines up with the top of the capital letters in the sitter's name. Keep the existing id for (1) and add (2) and (3) as new checks."
+  },
+  {
+   "severity": "major",
+   "check_ids": [
+    "PHOTO-06/restoration-hollis-scan-06/H007",
+    "PHOTO-06/restoration-hollis-scan-07/H009",
+    "PHOTO-06/share-hollis-scan-06/H007",
+    "PHOTO-06/share-hollis-scan-07/H008"
+   ],
+   "problem": "Each check combines two facts: the fade is lifted, and no opposite cast is introduced. The second fact is the planted trap (the magenta/red cast on 06 and the green/cyan cast on 07), so a model can fail one half and pass the other, and the single answer hides which one happened. 'Lifted' is also a vague word for a designer.",
+   "fix": "Keep the trap fact in the existing id: The print's white border and the skin on “Archival restoration master - hollis_scan_06” (restoration-hollis-scan-06.png) show no magenta or red cast. Add a new check for the fade: The yellow-orange fade of hollis_scan_06.jpg is removed on “…” (restoration-hollis-scan-06.png): whites and skin no longer look yellow-orange. Do the same for 07 with green-cyan fade and no green or cyan cast, on both the master and the share image."
+  },
+  {
+   "severity": "major",
+   "check_ids": [
+    "PHOTO-06/restoration-hollis-scan-02/H017",
+    "PHOTO-06/restoration-hollis-scan-07/H018",
+    "PHOTO-06/share-hollis-scan-02/H054",
+    "PHOTO-06/share-hollis-scan-07/H057"
+   ],
+   "problem": "The new damage-repair checks tell the annotator that all visible damage 'such as scratches, creases, stains or spots' is repaired or gone. On scan 02, the studio pencil retouching on the cheek must stay (S02/H010, R02/H004). On scan 07, the scar on the left hand is a K1_Q5 keep (R07/H005, S07/H002). Read alone, these damage checks invite an annotator to count the kept marks as unrepaired damage, which pulls them against the critical checks.",
+   "fix": "Add the exception to these four checks, for example: The visible damage in hollis_scan_07.jpg, such as scratches, creases, stains or spots, is repaired on “Archival restoration master - hollis_scan_07” (restoration-hollis-scan-07.png); the scar on Ada's left hand is not damage. For 02, use: ...; the pencil retouching on Ada's cheek is not damage."
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "PHOTO-06/restoration-hollis-scan-01/H014",
+    "PHOTO-06/restoration-hollis-scan-01/H011",
+    "PHOTO-06/share-hollis-scan-01/H017",
+    "PHOTO-06/share-hollis-scan-01/H048",
+    "PHOTO-06/share-hollis-scan-01/H014"
+   ],
+   "problem": "There are near-duplicates on every output. On masters, H011 ('No palette colour, tint, scrim or wash ... over the picture') already forbids Linen and Paper White washes, because both are palette colours, and the sepia-wash check repeats that. On shares, H048 ('No colour, scrim or wash ... over the picture'), the sepia check H017 and the opacity check H014 ('no tint ...') overlap in the same way. 'No colour ... is laid over the picture' is also unclear on a colour photograph, where colour correction is expected. The same pattern applies to R02/H012+H015, R03/H010+H013, R04/H011+H014, R05/H010+H013, R06/H012+H015, R07/H013+H016, R08/H010+H013, R09/H010+H013 and to S02/H037+H040, S03/H047+H014, S04/H032+H035, S05/H047+H014, S06/H036+H039, S07/H050+H017, S08/H031+H034, S09/H047+H014.",
+   "fix": "Narrow the sepia check to the one fact nothing else covers: The picture on “…” (restoration-hollis-scan-01.png) is not toned sepia unless hollis_scan_01.jpg already is. Keep H011 (master) and H048 (share) for overlays, and on shares reword to: No colour overlay, scrim or wash is laid over the picture from hollis_scan_01.jpg on “…” (share-hollis-scan-01.jpg). On the colour scans 06 to 09, the sepia-tone check largely repeats 'not converted to monochrome or sepia' (H006/H008), so retire the sepia check there, covered_by the colour-mode check."
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "PHOTO-06/share-hollis-scan-01/H014",
+    "PHOTO-06/share-hollis-scan-02/H036",
+    "PHOTO-06/share-hollis-scan-03/H011",
+    "PHOTO-06/share-hollis-scan-04/H031",
+    "PHOTO-06/share-hollis-scan-05/H011",
+    "PHOTO-06/share-hollis-scan-06/H035",
+    "PHOTO-06/share-hollis-scan-07/H014",
+    "PHOTO-06/share-hollis-scan-08/H030",
+    "PHOTO-06/share-hollis-scan-09/H011"
+   ],
+   "problem": "'Solid at 100% opacity ... no ... blend mode' describes layer settings that cannot be seen in a flattened JPEG. 'Shadow' also repeats the drop-shadow ban in the ornament check on the same file (for example S01/H015).",
+   "fix": "Rewrite to what can be seen: The margin, caption type, rules and keylines on “Family archive share image - hollis_scan_01” (share-hollis-scan-01.jpg) are flat solid colours, with no see-through areas, tints or gradients."
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "PHOTO-06/share-hollis-scan-01/H027",
+    "PHOTO-06/share-hollis-scan-02/H044",
+    "PHOTO-06/share-hollis-scan-03/H026",
+    "PHOTO-06/share-hollis-scan-04/H040",
+    "PHOTO-06/share-hollis-scan-05/H026",
+    "PHOTO-06/share-hollis-scan-06/H044",
+    "PHOTO-06/share-hollis-scan-07/H029",
+    "PHOTO-06/share-hollis-scan-08/H039",
+    "PHOTO-06/share-hollis-scan-09/H026"
+   ],
+   "problem": "Each check joins two independent conditional rules with a semicolon: Museum Grey only on the provenance line, and Linen only as a keyline.",
+   "fix": "Split into: (1) If Museum Grey #6F6B64 appears on “…” (share-hollis-scan-01.jpg), it is used only for the provenance line. (2) If Linen #D9D0C1 appears on “…” (share-hollis-scan-01.jpg), it is used only for a hairline keyline around the photograph."
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "PHOTO-06/share-hollis-scan-01/H019",
+    "PHOTO-06/share-hollis-scan-02/H046",
+    "PHOTO-06/share-hollis-scan-03/H017",
+    "PHOTO-06/share-hollis-scan-04/H042",
+    "PHOTO-06/share-hollis-scan-05/H017",
+    "PHOTO-06/share-hollis-scan-06/H046",
+    "PHOTO-06/share-hollis-scan-07/H020",
+    "PHOTO-06/share-hollis-scan-08/H041",
+    "PHOTO-06/share-hollis-scan-09/H017"
+   ],
+   "problem": "Each check tests two text roles at once (name line and place/date line). The brand states these as two separate rules (names 'never italic'; place and date 'Upright Light, never italic'), and the italic provenance line is allowed, so the check cannot be simplified to 'no italic'.",
+   "fix": "Split into: The sitter's name or title line on “…” (share-hollis-scan-01.jpg) is upright, not italic. Add a new check: The place and date line on “…” (share-hollis-scan-01.jpg) is upright, not italic."
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "PHOTO-06/share-hollis-scan-01/H052",
+    "PHOTO-06/share-hollis-scan-02/H051",
+    "PHOTO-06/share-hollis-scan-03/H051",
+    "PHOTO-06/share-hollis-scan-04/H047",
+    "PHOTO-06/share-hollis-scan-05/H051",
+    "PHOTO-06/share-hollis-scan-06/H051",
+    "PHOTO-06/share-hollis-scan-07/H054",
+    "PHOTO-06/share-hollis-scan-08/H046",
+    "PHOTO-06/share-hollis-scan-09/H051"
+   ],
+   "problem": "'Exactly as wide as the picture' asks for a pixel measurement, and the rule is antialiased at 1/3 px, so 'exactly' cannot be answered by eye.",
+   "fix": "Rewrite as: If a rule appears beneath the sitter's name on “…” (share-hollis-scan-01.jpg), it runs the full width of the picture, starting and ending in line with the picture's left and right edges."
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "PHOTO-06/share-hollis-scan-01/H024",
+    "PHOTO-06/share-hollis-scan-02/H002",
+    "PHOTO-06/share-hollis-scan-03/H023",
+    "PHOTO-06/share-hollis-scan-04/H036",
+    "PHOTO-06/share-hollis-scan-05/H023",
+    "PHOTO-06/share-hollis-scan-06/H040",
+    "PHOTO-06/share-hollis-scan-07/H026",
+    "PHOTO-06/share-hollis-scan-08/H035",
+    "PHOTO-06/share-hollis-scan-09/H023"
+   ],
+   "problem": "The tail 'a kept album page or scanner bed is not judged' reads awkwardly. It is also confusing, because the brief tells the share image to trim the album page and scanner bed.",
+   "fix": "Rewrite as: The margin added around the print on “Family archive share image - hollis_scan_01” (share-hollis-scan-01.jpg) is Paper White #F5F1E9, not pure white. Ignore any album page left from the scan."
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "PHOTO-06/share-hollis-scan-01/H002",
+    "PHOTO-06/share-hollis-scan-02/H008",
+    "PHOTO-06/share-hollis-scan-03/H006",
+    "PHOTO-06/share-hollis-scan-04/H006",
+    "PHOTO-06/share-hollis-scan-05/H006",
+    "PHOTO-06/share-hollis-scan-06/H006",
+    "PHOTO-06/share-hollis-scan-07/H007",
+    "PHOTO-06/share-hollis-scan-08/H006",
+    "PHOTO-06/share-hollis-scan-09/H006"
+   ],
+   "problem": "Wrong or inconsistent k_id. The share images file the 'stays monochrome / stays in colour' check under K1_Q2 (specification accuracy). The same fact on the restoration masters (R01/H008, R03/H006 and the rest) is K1_Q3. The brief lists it under 'What stays fixed', which makes it a preservation constraint.",
+   "fix": "Set k_id to K1_Q3 on all nine share colour-mode checks so they match the masters. The wording is unchanged."
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "PHOTO-06/share-hollis-scan-01/H050",
+    "PHOTO-06/share-hollis-scan-02/H045",
+    "PHOTO-06/share-hollis-scan-03/H049",
+    "PHOTO-06/share-hollis-scan-04/H041",
+    "PHOTO-06/share-hollis-scan-05/H049",
+    "PHOTO-06/share-hollis-scan-06/H045",
+    "PHOTO-06/share-hollis-scan-07/H052",
+    "PHOTO-06/share-hollis-scan-08/H040",
+    "PHOTO-06/share-hollis-scan-09/H049",
+    "PHOTO-06/restoration-hollis-scan-07/H005",
+    "PHOTO-06/share-hollis-scan-07/H002"
+   ],
+   "problem": "The check text carries justification that cannot be judged from the output file: '; none is supplied in photo_catalogue.csv or family_notes.txt' on the accession checks, and '; a removed scar makes the commission unusable' on the two K1_Q5 scar checks. An annotator cannot verify these clauses by looking at the image, and they make the checks longer.",
+   "fix": "Move the justification to evidence_reference. For example: No accession code appears on “Family archive share image - hollis_scan_01” (share-hollis-scan-01.jpg). And: The scar on Ada Hollis's left hand in hollis_scan_07.jpg is still present on “Archival restoration master - hollis_scan_07” (restoration-hollis-scan-07.png). Keep k_id K1_Q5."
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "PHOTO-06/restoration-hollis-scan-01/H005",
+    "PHOTO-06/restoration-hollis-scan-02/H005",
+    "PHOTO-06/restoration-hollis-scan-03/H009",
+    "PHOTO-06/restoration-hollis-scan-04/H010",
+    "PHOTO-06/restoration-hollis-scan-05/H009",
+    "PHOTO-06/restoration-hollis-scan-06/H011",
+    "PHOTO-06/restoration-hollis-scan-07/H012",
+    "PHOTO-06/restoration-hollis-scan-08/H009",
+    "PHOTO-06/restoration-hollis-scan-09/H009"
+   ],
+   "problem": "On the restoration masters, 'No crop, caption or added graphic ... cuts off or covers any part of a person' refers to captions and graphics that are already banned on that file by the no-text check (for example R01/H015) and the no-frame check (for example R01/H012). Mentioning a caption on a master confuses the reader, and the check is a near-duplicate of those two.",
+   "fix": "Reword to the one fact left on a master: No part of any person visible in hollis_scan_01.jpg is cropped away or hidden on “Archival restoration master - hollis_scan_01” (restoration-hollis-scan-01.png)."
+  }
+ ],
+ "FIDELITY AND COVERAGE": [
+  {
+   "severity": "major",
+   "check_ids": [
+    "PHOTO-06/share-hollis-scan-01/H004",
+    "PHOTO-06/share-hollis-scan-03/H015",
+    "PHOTO-06/share-hollis-scan-05/H015",
+    "PHOTO-06/share-hollis-scan-07/H018",
+    "PHOTO-06/share-hollis-scan-09/H015"
+   ],
+   "problem": "These five compound type checks were retired with covered_by pointing to the three per-role checks (name, place and date, body). The old checks also said \"and no other face or weight appears\", and none of the role checks covers that. Nothing now catches a non-brand typeface on caption text that falls outside those roles, such as the provenance line. This is a live risk: the supplied mountcard_2019_print.pdf sets every run in Georgia, including the italic provenance line. A share image that copies the framer's card would pass every remaining type check. Share images 02, 04, 06 and 08 never had this clause, so the hole is on all 9 share images.",
+   "fix": "Add one check to each of the 9 share images, for example: \"All caption text on “Family archive share image - hollis_scan_01” (share-hollis-scan-01.jpg) is set in Cormorant Garamond, Source Serif 4 or Source Sans 3; no other typeface appears.\" (K2_Q3; evidence: type_system.font_access \"Do not substitute another family\"; reference_assets mountcard_2019_print.pdf). Add the new key to covered_by on the five retirements above. Add a type rule to the coverage table (for example T09 \"Only the three supplied families; no substitute face\") that cites the new checks on every share image, with NA on the masters."
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "PHOTO-06/share-hollis-scan-01/H011",
+    "PHOTO-06/share-hollis-scan-01/H024",
+    "PHOTO-06/share-hollis-scan-02/H012",
+    "PHOTO-06/share-hollis-scan-03/H008"
+   ],
+   "problem": "The distribution rule \"Type sits only on Paper White\" and the commission's \"on an external Paper White margin\" are not checked anywhere. The caption-placement checks (H011 on 01, H012 on 02, H008 on 03, 05, 08 and 09, H009 on 04, H010 on 06, H011 on 07) only ask that the caption sits on a margin outside the print. The Paper White checks (H024 on 01 and its counterparts) explicitly say \"a kept album page or scanner bed is not judged\". So a caption set on the kept black album page of scans 01 to 03 passes both. The coverage table's D04 and B09 cells cite these two checks as if they covered the rule.",
+   "fix": "Add one check per share image, for example: \"The caption on “Family archive share image - hollis_scan_01” (share-hollis-scan-01.jpg) sits on the added Paper White margin, not on a kept album page or scanner bed.\" (K2_Q3; evidence palette_rules.distribution). Cite it in the D04 and B09 cells."
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "PHOTO-06/share-hollis-scan-01/H027",
+    "PHOTO-06/share-hollis-scan-03/H026",
+    "PHOTO-06/share-hollis-scan-07/H029"
+   ],
+   "problem": "Coverage rule B13 includes \"together no more than 5% of the designed area\". None of the cited checks (H027 on 01, H026 on 03, 05 and 09, H029 on 07, and new s02, s04, s06 and s08 accents) tests the 5% cap. They only test where Museum Grey and Linen may appear, so the table claims coverage it does not have.",
+   "fix": "Either add one check per share image: \"Museum Grey #6F6B64 and Linen #D9D0C1 together cover no more than 5% of the added margin and caption on “Family archive share image - hollis_scan_0N” (share-hollis-scan-0N.jpg).\" Or remove the 5% clause from the B13 rule text so the table matches what the cited checks test."
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "PHOTO-06/share-hollis-scan-01/H049",
+    "PHOTO-06/share-hollis-scan-02/H043"
+   ],
+   "problem": "The new Ink Charcoal checks say \"The place and date line ... and any names line or caption body, is Ink Charcoal #33302B\" (s01 to s09 body-charcoal). The supplied caption card has a fourth run, an italic provenance line in Museum Grey, which the palette allows. An annotator who reads the provenance line as caption body will fail a correct output.",
+   "fix": "Reword all nine to: \"The place and date line and any names line on “…” (share-hollis-scan-0N.jpg) are Ink Charcoal #33302B; a provenance line may be Museum Grey.\" Or drop \"caption body\" and keep the two named roles."
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "PHOTO-06/share-hollis-scan-01/H022",
+    "PHOTO-06/share-hollis-scan-01/H052",
+    "PHOTO-06/share-hollis-scan-03/H020"
+   ],
+   "problem": "The T07 and B11 checks for the rule beneath the name all say \"If a rule appears\" (H022 and H052 on 01, H020 and H051 on 03, 05 and 09, H023 and H054 on 07, new s02, s04, s06 and s08 rule and rule-width). The signature_type_move states without condition that the name sits above a 0.25 pt Archive Black rule as wide as the photograph, and type-scale step 02 places the place and date line \"below the name rule\". As written, a share image with no rule passes every T07 check. This carries over the old \"Any rule\" wording rather than weakening it, and the palette's \"wherever a caption carries them\" and the rule-less mount card leave room for reading it as optional.",
+   "fix": "If the team treats the signature rule as required, change the 18 checks to state it plainly, for example: \"A thin Archive Black #191613 rule sits beneath the sitter's name on “…” (share-hollis-scan-0N.jpg).\" and \"The rule beneath the sitter's name on “…” is exactly as wide as the picture from hollis_scan_0N.jpg.\" If not, add a note to coverage rule T07 that the rule is optional, so the table does not imply its presence is checked."
+  },
+  {
+   "severity": "minor",
+   "check_ids": [],
+   "problem": "A planned trap has no check on any output. asset_plan.json defect_engineered says scans 01, 02, 03 and 06 sit off level (by about 1.5 to 2 degrees) inside a square mount, so auto-level locks to the mount edge. The only trace is the clause \"levelling the print is allowed\" in the deckled-edge checks. This hole predates the patch, but the coverage table has no rule for it.",
+   "fix": "If the team accepts that the trap follows from \"keep the whole print edge to edge ... trim only the album page or scanner bed\", add to share-hollis-scan-01, 02, 03 and 06 (and optionally the matching masters): \"The print from hollis_scan_0N.jpg sits level on “…” (share-hollis-scan-0N.jpg): its edges run parallel to the image edges.\" (K2_Q2). Add a brief rule to the coverage table, with NA for 04, 05, 07, 08 and 09 because those prints are level per the asset plan."
+  }
+ ],
+ "repair": {
+  "fixed": [
+   "FID-1 (major): Added a no-substitute-typeface check to all 9 share images (sNN-only-fonts): 'All caption text on ... is set in Cormorant Garamond, Source Serif 4 or Source Sans 3; no other typeface appears.' Evidence cites type_system.font_access. I confirmed mountcard_2019_print.pdf embeds only Georgia, Georgia-Italic and a third Georgia face. Added the new key to covered_by on the 5 compound font retirements (S01/H004, S03/H015, S05/H015, S07/H018, S09/H015). Added coverage rule T09, with NA on the masters.",
+   "FID-2: Added 'The caption on ... sits on the added Paper White margin, not on a kept album page or scanner bed.' (sNN-on-pw) to all 9 share images. It is cited in B09 (rule text now includes 'Type sits only on Paper White') and in D04.",
+   "FID-3: Added a 5% cap check to all 9 share images (sNN-accent-area): 'Museum Grey and Linen together cover no more than 5% of the added margin and caption area on ...'. It is cited in B13.",
+   "FID-4 + LANG-3: Rewrote the place and date colour check to a relative one: 'dark charcoal (Ink Charcoal #33302B), not grey and not a colour'. Split the body role into a new check: 'If body text, such as a names line, appears ... it is dark charcoal (Ink Charcoal #33302B); a provenance line may be grey.' The name colour check now reads 'the darkest text in the caption, a near-black (Archive Black #191613)'. B12 cites both charcoal checks.",
+   "FID-5 + LANG-2 + LANG-12: The signature_type_move and type-scale step 02 ('below the name rule') state the rule without any condition, so I made it required. The rule check now reads 'A single fine dark hairline rule sits beneath the sitter's name on ..., not a heavy bar, a coloured line or a double line.' The Archive Black hex and 0.25 pt moved to evidence. The width check now reads 'starts and ends in line with the picture's left and right edges' with no 'If' and no 'exactly'. T07 rule text updated to say the rule is required.",
+   "LANG-1: Split year and place on all 9 caption checks. The existing id keeps the year with its k_id: K1_Q5 on S03 (1936, not the catalogue's 1938), S05 (1955, not cousin Dale's 1956) and S07 (1971, evidence keeps the IMG_2214.jpg record source), and K1_Q1 on the others. Added a new K1_Q1 place check on each (Newfane, Putney, Brattleboro). F11 and D04 cite both.",
+   "LANG-4: The hex-list palette check now reads 'Caption type, rules and keylines on ... use only the neutral archive tones of the palette; no colour or gold appears.' The five hexes are in evidence_reference.",
+   "LANG-5: Split the plate numeral check into three: left margin (existing id), larger than the sitter's name (new), and top lines up with the top of the capitals in the name (new). The typeface check is unchanged. 'Stands alone' and the ambiguous 'its cap line' are gone. The exact 48 pt retirements are now covered_by the larger-than check. T06 cites all four.",
+   "LANG-6: Split the cast trap checks on R06/H007, S06/H007, R07/H009 and S07/H008. Each existing id keeps the trap fact ('white border and skin show no magenta or red cast' on 06, 'no green or cyan cast' on 07). New fade checks were added: on 06, the yellow-orange fade is removed; on 07, the washed-out fade is lifted. The 07 fade check tests the washed-out look, so it does not repeat the cast check. B08 cites both.",
+   "LANG-7: The damage-repair checks on R02, S02, R07 and S07 now carry the exceptions '; the pencil retouching on Ada's cheek is not damage' and '; the scar on Ada's left hand is not damage'. All damage checks were shortened to 'The scratches, creases and other damage in ... are repaired on / gone from the picture on ...'.",
+   "LANG-8: The sepia check on scans 01 to 05 (masters and shares) is narrowed to 'The picture on ... is not toned sepia unless hollis_scan_0N.jpg already is.' On colour scans 06 to 09, the existing sepia checks (R07/H016, R09/H013, S07/H017, S09/H014) are retired, covered_by the stays-in-colour check plus the no-wash check, and no new sepia check is added there. The share overlay check now reads 'No colour overlay, scrim or wash is laid over the picture...'. B05 cells updated.",
+   "LANG-9: The share opacity check now reads 'The margin, caption type, rules and keylines on ... are flat solid colours, with no see-through areas, tints or gradients.'",
+   "LANG-10: Split the accent check into Museum Grey only for the provenance line (existing id where present) and Linen only for a hairline keyline around the photograph (new).",
+   "LANG-11: Split the italic check into the name line (existing id) and the place and date line (new). T05 cites both.",
+   "LANG-13: The Paper White margin check now reads 'The added margin on ... is Paper White #F5F1E9, not pure white. Ignore any kept album page or scanner bed.'",
+   "LANG-14: Set k_id to K1_Q3 on all 9 share colour-mode checks, wording unchanged.",
+   "LANG-15: Moved the justification out of the check text. The accession check now reads 'No accession code appears on ...', and the 'none supplied' note stays in evidence. The scar K1_Q5 checks (R07/H005, S07/H002) now end at 'is still present on ...', and k_id K1_Q5 is kept.",
+   "LANG-16: On all 9 masters, the person-crop check now reads 'No part of any person visible in hollis_scan_0N.jpg is cropped away or hidden on ...'.",
+   "FID-6 (partial): Added coverage rule F13. It records the off-level trap on scans 01, 02, 03 and 06 against the existing whole-print checks (H001), with NA reasons for level prints and for masters. No new check was added; see rejected.",
+   "Shortened the checks that ran over 30 words. The validator now reports 0 errors and 0 warnings: 462 human checks before, 570 after, auto checks unchanged at 81, and 40 coverage rules. Generators are work/PHOTO-06/gen2.py and cov2.py. Pre-repair copies are saved as work/PHOTO-06/patch_before_repair.json and coverage_before_repair.json."
+  ],
+  "rejected": [
+   {
+    "finding": "FID-6: add a 'print sits level, edges parallel to the image edges' check to share images 01, 02, 03 and 06",
+    "why": "No source requires the print to be level. The brief says only 'keep the whole print edge to edge, including its own border. Trim only the album page or scanner bed around it.' The existing deckled check says 'levelling the print is allowed', which permits levelling but does not require it. The trap's real consequence is that auto-level locks to the mount, so a rectangular trim can clip the tilted print's corners. The existing whole-print check H001 already guards that: 'shows the whole print ... edge to edge, its own border included; no part of the print is cropped away'. A level requirement would be invented. Instead I added coverage rule F13, which maps the trap to H001 on those four share images."
+   }
+  ],
+  "unresolved": [
+   "I made the name rule required on all 9 share images, based on signature_type_move and type-scale step 02. The palette role 'wherever a caption carries them' and the rule-less mount card leave room to read it as optional. If the team rules it optional, reword sNN rule and rule-width back to 'If a rule appears ...' and update the T07 rule text.",
+   "The 5% accent-area check (FID-3) needs an area estimate by eye. It was added for full coverage. If the team finds it unanswerable, retire it and drop the 5% clause from B13.",
+   "The 'darkest text in the caption' wording for Archive Black assumes no other caption text is darker. That holds under the palette, but it is a relative stand-in for an exact hex the JPG cannot show."
+  ]
+ }
+}

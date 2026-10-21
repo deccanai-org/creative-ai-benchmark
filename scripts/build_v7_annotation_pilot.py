@@ -297,7 +297,8 @@ def render_outputs(outputs: list[dict], groups: list[dict]) -> str:
                        f'<strong>Placement:</strong> {esc(commission["channel"])}',
                        f'<strong>Audience:</strong> {esc(commission["audience"])}']
             bullets += [esc(v) for v in commission['content']]
-            bullets += [f'<strong>Export:</strong> {esc(v)}' for v in commission['export_settings']]
+            # One export line per deliverable; settings are sentences, so join them.
+            bullets.append('<strong>Export:</strong> ' + ' '.join(esc(v) for v in commission['export_settings']))
             parts.append('<ul class="output-requirements">' + ''.join(f'<li>{v}</li>' for v in bullets) + '</ul>')
         parts.append("</article>")
     parts.append("</div>")
@@ -403,7 +404,7 @@ def platform_verifiers(verifiers: list[dict], outputs: list[dict]) -> list[dict]
         human = [v for v in output_checks if v["type"] == "human"]
         # The platform's Phase 2 review should stay usable, while the full bank
         # remains available through the canonical verifier JSON linked in the sheet.
-        chosen.extend(auto[:1])
+        # Auto checks are run by code, never asked of annotators (2026-10-21).
         chosen.extend(human[:4 if len(outputs) <= 7 else 2])
         chosen.extend(v for v in human if v.get("platform_priority"))
         if output_id == "producer-card-r015":
@@ -483,7 +484,10 @@ def main() -> None:
     SHEET_EXPORT.parent.mkdir(parents=True, exist_ok=True)
     SHEET_EXPORT.write_text(json.dumps(rows, ensure_ascii=False), encoding="utf-8")
     links = ''.join(f'<li><a href="{tid}.html">{tid} - {esc(json.loads((TASKS/tid/"TASK_SPEC.json").read_text())["task_name"])}</a></li>' for tid in TASK_IDS)
-    (OUT/'index.html').write_text(f'<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Pilot task briefs</title><style>{CSS}</style><main class="page"><h1>Pilot task briefs</h1><ul>{links}</ul></main></html>')
+    coverage = ''
+    if (OUT/'coverage'/'index.html').is_file():
+        coverage = '<h2>Verifier coverage</h2><p>For each task: every brief and brand-identity constraint against every deliverable, with the verifier that checks it. <a href="coverage/index.html">Open the coverage tables</a>.</p>'
+    (OUT/'index.html').write_text(f'<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Pilot task briefs</title><style>{CSS}</style><main class="page"><h1>Pilot task briefs</h1><ul>{links}</ul>{coverage}</main></html>')
     print(f"Sheet payload: {SHEET_EXPORT}")
 
 

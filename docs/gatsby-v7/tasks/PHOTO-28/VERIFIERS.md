@@ -16,173 +16,178 @@ Revised input pack. Previous execution results are historical, not current ratin
 - `PHOTO-28/booking-story/A002` “Verda Reformer Studio / Studio booking story” (booking-story.png) opens as a valid PNG file with no errors or corruption.
 - `PHOTO-28/booking-story/A003` “Verda Reformer Studio / Studio booking story” (booking-story.png) is exactly 1080 pixels wide.
 - `PHOTO-28/booking-story/A004` “Verda Reformer Studio / Studio booking story” (booking-story.png) is exactly 1920 pixels tall.
+- `PHOTO-28/studio-launch/A005` “Studio launch-page composition” (studio-launch.png) is in sRGB colour: it carries an sRGB profile or no colour profile.
+- `PHOTO-28/class-feed/A005` “Class announcement” (class-feed.png) is in sRGB colour: it carries an sRGB profile or no colour profile.
+- `PHOTO-28/booking-story/A005` “Studio booking story” (booking-story.png) is in sRGB colour: it carries an sRGB profile or no colour profile.
 
 ## Human verifiers
 
 - `PHOTO-28/studio-launch/H001` The studio location on “Studio launch-page composition” (studio-launch.png) reads “Calloway Row”, with no invented street number, city or postcode added.
-- `PHOTO-28/studio-launch/H002` On “Studio launch-page composition” (studio-launch.png), the class offer is one content element with nothing covering or blocking any part of it.
+- `PHOTO-28/studio-launch/H002` No photo, button, panel or other element covers any part of the class list on “Studio launch-page composition” (studio-launch.png).
 - `PHOTO-28/studio-launch/H003` The booking action on “Studio launch-page composition” (studio-launch.png) stays fully inside the 1440 x 2400 image edges and does not run off any edge.
-- `PHOTO-28/class-feed/H001` The class on “Class announcement” (class-feed.png) is the pictured instructor's own class: Priya Anand (Foundations), Dana Osei (Flow), Lena Brandt (Core & Restore), Tomas Reyes (Strength), Yuki Sato (Prenatal) or Nadia Haddad (Slow & Deep).
+- `PHOTO-28/class-feed/H001` The class on “Class announcement” (class-feed.png) is the pictured instructor's own: Priya Anand (Foundations), Dana Osei (Flow), Lena Brandt (Core & Restore), Tomas Reyes (Strength), Yuki Sato (Prenatal), Nadia Haddad (Slow & Deep).
 - `PHOTO-28/class-feed/H002` The name on “Class announcement” (class-feed.png) matches the portrait pictured, per roster_2027.csv: verda_instructor_01.jpg Priya Anand, verda_instructor_02.jpg Dana Osei, verda_instructor_03.jpg Lena Brandt, verda_instructor_04.jpg Tomas Reyes, verda_instructor_05.jpg Yuki Sato, verda_instructor_06.jpg Nadia Haddad.
-- `PHOTO-28/booking-story/H001` The booking action on “Studio booking story” (booking-story.png) sits inside the safe area, at least 250 px from top, 320 px from bottom, and 60 px from each side.
-- `PHOTO-28/booking-story/H002` At full 1080 x 1920 size, the studio identity on “Studio booking story” (booking-story.png), the studio wordmark and any “Verda Reformer Studio” text, is fully visible, with no letters cut off at an edge.
+- `PHOTO-28/booking-story/H001` Measured in an image editor, every part of the booking action on “Studio booking story” (booking-story.png) is at least 250 px below the top edge, 320 px above the bottom edge and 60 px from each side.
+- `PHOTO-28/booking-story/H002` The studio wordmark and any “Verda Reformer Studio” text on “Studio booking story” (booking-story.png) are fully visible at 1080 x 1920, with no letters cut off at an edge.
 - `PHOTO-28/class-feed/H003` The class on “Class announcement” (class-feed.png) is written with its client-facing name, for example “Core & Restore”, not an internal code such as “RF-COR”.
 - `PHOTO-28/class-feed/H004` “Class announcement” (class-feed.png) does not name “Erin Coyle” or give erin@verdastudio.example; she has left the studio, and naming her makes it unusable.
-- `PHOTO-28/class-feed/H005` Every ground, panel and button on “Class announcement” (class-feed.png), the flat ground the instructor is cut out onto included, is solid Warm Off White #F4F0E8 or Sage #9CA98F, with no gradient, texture or original wall showing.
-- `PHOTO-28/class-feed/H006` The instructor's face on “Class announcement” (class-feed.png) keeps the features of its source portrait, one of verda_instructor_01.jpg, verda_instructor_02.jpg, verda_instructor_03.jpg, verda_instructor_04.jpg, verda_instructor_05.jpg or verda_instructor_06.jpg, with nothing reshaped or regenerated.
+- `PHOTO-28/class-feed/H005` Every ground, panel and button on “Class announcement” (class-feed.png) is Warm Off White #F4F0E8 or Sage #9CA98F, never Soft Ink or Oak.
+- `PHOTO-28/class-feed/H006` The instructor's face on “Class announcement” (class-feed.png) keeps the features of its source portrait (verda_instructor_01.jpg to verda_instructor_06.jpg), with nothing reshaped or regenerated.
 - `PHOTO-28/class-feed/H007` The studio wordmark on “Class announcement” (class-feed.png) keeps the e, d and a counters of verda_wordmark_transparent.png open; none is filled in.
-- `PHOTO-28/class-feed/H008` On “Class announcement” (class-feed.png) the class name is set larger than the instructor's name.
-- `PHOTO-28/class-feed/H009` The instructor on “Class announcement” (class-feed.png) is pictured from one of the supplied portraits, verda_instructor_01.jpg, verda_instructor_02.jpg, verda_instructor_03.jpg, verda_instructor_04.jpg, verda_instructor_05.jpg or verda_instructor_06.jpg, not a stock or generated person.
+- `PHOTO-28/class-feed/H008` The headline on “Class announcement” (class-feed.png) is set larger than any body text, price or validity line.
+- `PHOTO-28/class-feed/H009` The instructor on “Class announcement” (class-feed.png) is pictured from a supplied portrait (verda_instructor_01.jpg to verda_instructor_06.jpg), not a stock or generated person.
 - `PHOTO-28/class-feed/H010` The pictured instructor on “Class announcement” (class-feed.png) is named in full, first and last name, spelled exactly as in owner_note.txt.
 - `PHOTO-28/class-feed/H011` The class price on “Class announcement” (class-feed.png) is the pictured instructor's roster_2027.csv price: Priya Anand $34, Dana Osei $36, Lena Brandt $34, Tomas Reyes $38, Yuki Sato $36 or Nadia Haddad $34.
 - `PHOTO-28/class-feed/H012` The validity on “Class announcement” (class-feed.png) is through Dec 2027, as in roster_2027.csv, not last year's through Dec 2025.
-- `PHOTO-28/class-feed/H013` The cut-out edge around the instructor on “Class announcement” (class-feed.png) follows the hair, shoulders and arms cleanly, with no bite into the figure and no halo.
+- `PHOTO-28/class-feed/H013` The cut-out edge around the instructor on “Class announcement” (class-feed.png) shows no halo or fringe of the original wall.
 - `PHOTO-28/class-feed/H014` If “Class announcement” (class-feed.png) pictures Dana Osei from verda_instructor_02.jpg, the cut-out keeps the full shoulder and upper-arm line, with no bite into the pale top.
 - `PHOTO-28/class-feed/H015` If “Class announcement” (class-feed.png) pictures Yuki Sato from verda_instructor_05.jpg, the cut-out keeps the loose hair on both sides of the head, with neither side eaten away.
 - `PHOTO-28/class-feed/H016` The instructor's skin on “Class announcement” (class-feed.png) reads natural, with no orange cast.
 - `PHOTO-28/class-feed/H017` “Class announcement” (class-feed.png) states no opening date or month: September and October have both slipped, and no new date is fixed.
 - `PHOTO-28/class-feed/H018` “Class announcement” (class-feed.png) gives no class day, time or timetable, since no supplied file states one.
-- `PHOTO-28/class-feed/H019` Every price on “Class announcement” (class-feed.png) is a supplied figure: a roster_2027.csv class price of $34, $36 or $38, the 180 dollar intro pack or the 220 dollar monthly membership.
+- `PHOTO-28/class-feed/H019` Every price on “Class announcement” (class-feed.png) is a supplied figure: $34, $36 or $38 from roster_2027.csv, the 180 dollar intro pack or the 220 dollar membership.
 - `PHOTO-28/class-feed/H020` Any studio location given on “Class announcement” (class-feed.png) reads “Calloway Row”, with no invented street number, city or postcode added.
 - `PHOTO-28/class-feed/H021` “Class announcement” (class-feed.png) invents no web address, phone number or social handle; any contact it gives is a supplied verdastudio.example address.
 - `PHOTO-28/class-feed/H022` No photograph on “Class announcement” (class-feed.png) shows a black rubber floor.
 - `PHOTO-28/class-feed/H023` No photograph on “Class announcement” (class-feed.png) shows a group class or more than one person exercising.
-- `PHOTO-28/class-feed/H024` Wherever verda_studio_frame_01.jpg or verda_studio_frame_02.jpg appears on “Class announcement” (class-feed.png), the reformer upholstery reads sage green, not blue or grey, and the floor natural oak, not orange.
+- `PHOTO-28/class-feed/H024` Wherever verda_studio_frame_01.jpg or verda_studio_frame_02.jpg appears on “Class announcement” (class-feed.png), the reformer upholstery reads sage green, not blue or grey.
 - `PHOTO-28/class-feed/H025` Wherever verda_studio_frame_01.jpg or verda_studio_frame_02.jpg appears on “Class announcement” (class-feed.png), it keeps what the source frame shows of the room, with nothing generated, added or removed beyond a crop.
 - `PHOTO-28/class-feed/H026` If verda_studio_frame_01.jpg is used on “Class announcement” (class-feed.png), its blown-out front window shows no invented sky, street or scenery: it stays plain or is cropped out.
-- `PHOTO-28/class-feed/H027` If verda_instructor_04.jpg appears on “Class announcement” (class-feed.png), it shows no pixelation, softness or generated detail from being enlarged beyond its 825 x 1100 px source.
-- `PHOTO-28/class-feed/H028` The studio wordmark on “Class announcement” (class-feed.png) is the verda_wordmark_transparent.png drawing, its letterforms and proportions unchanged, not retyped in another font.
-- `PHOTO-28/class-feed/H029` No white square, box or halo from verda_wordmark_transparent.png shows around the studio wordmark on “Class announcement” (class-feed.png); the ground meets the letters directly.
-- `PHOTO-28/class-feed/H030` The studio wordmark on “Class announcement” (class-feed.png) has clean letter edges, with no grey fringe or blocky compression ring carried over from verda_wordmark_transparent.png.
+- `PHOTO-28/class-feed/H027` If verda_instructor_04.jpg appears on “Class announcement” (class-feed.png), it shows no pixelation, softness or generated detail from being enlarged.
+- `PHOTO-28/class-feed/H028` The studio wordmark on “Class announcement” (class-feed.png) is the verda_wordmark_transparent.png drawing, not retyped in another font.
+- `PHOTO-28/class-feed/H029` No white square, box or halo shows around the studio wordmark on “Class announcement” (class-feed.png); the ground meets the letters directly.
+- `PHOTO-28/class-feed/H030` The studio wordmark on “Class announcement” (class-feed.png) has clean letter edges, with no grey fringe or blocky compression ring; normal edge anti-aliasing is fine.
 - `PHOTO-28/class-feed/H031` The studio wordmark on “Class announcement” (class-feed.png) sits on one line, never stacked onto two.
-- `PHOTO-28/class-feed/H032` The studio wordmark on “Class announcement” (class-feed.png) is no larger than 34 px tall at the delivered size.
-- `PHOTO-28/class-feed/H033` The type, wordmark, panel, rule, button and icon colours on “Class announcement” (class-feed.png) come only from Sage #9CA98F, Oak #C7A97A, Warm Off White #F4F0E8 and Soft Ink #33352E.
+- `PHOTO-28/class-feed/H032` Measured in an image editor, the studio wordmark's visible letterforms on “Class announcement” (class-feed.png) are no more than 34 px tall.
+- `PHOTO-28/class-feed/H033` Type, wordmark, panel, rule, button and icon colours on “Class announcement” (class-feed.png) are only Sage #9CA98F, Oak #C7A97A, Warm Off White #F4F0E8 or Soft Ink #33352E, anti-aliased edges aside.
 - `PHOTO-28/class-feed/H034` Warm Off White #F4F0E8 and Soft Ink #33352E both appear in the designed parts of “Class announcement” (class-feed.png).
-- `PHOTO-28/class-feed/H035` On “Class announcement” (class-feed.png), all type, the wordmark, grounds, panels and buttons are solid at full opacity; neither type nor wordmark sits directly on a photograph; no scrim, gradient or overlay, black or white included, covers a photograph.
-- `PHOTO-28/class-feed/H036` On “Class announcement” (class-feed.png), headlines, subheadings, body text, prices, fine print, labels and wordmark are Soft Ink #33352E on Warm Off White #F4F0E8, where small labels may be Sage #9CA98F, and Soft Ink or Warm Off White on Sage.
-- `PHOTO-28/class-feed/H037` Oak #C7A97A appears on “Class announcement” (class-feed.png) only as hairline rules or dividers, together no more than 5% of the designed, non-photographic area.
-- `PHOTO-28/class-feed/H038` The headline and every subheading on “Class announcement” (class-feed.png) are set in Archivo Regular, with no bold, condensed or serif face.
+- `PHOTO-28/class-feed/H035` All type, the wordmark and every ground, panel and button on “Class announcement” (class-feed.png) are flat, solid colour, with nothing showing through and no gradient or drop shadow.
+- `PHOTO-28/class-feed/H036` On “Class announcement” (class-feed.png), all type and the wordmark on Warm Off White #F4F0E8 are Soft Ink #33352E; only short labels like the passcard_2025_print.pdf field labels may be Sage.
+- `PHOTO-28/class-feed/H037` Oak #C7A97A on “Class announcement” (class-feed.png) appears only as thin hairline rules or dividers, never as a ground, panel, button, text or fill.
+- `PHOTO-28/class-feed/H038` The headline on “Class announcement” (class-feed.png) is set in Archivo Regular, not bold, condensed or a serif.
 - `PHOTO-28/class-feed/H039` Any body text on “Class announcement” (class-feed.png) is set in Inter Regular, not a serif and not a bolder weight.
 - `PHOTO-28/class-feed/H040` The class price, the validity and every other fine-print line on “Class announcement” (class-feed.png) are set in Inter Medium, not Regular.
-- `PHOTO-28/class-feed/H041` Every line of designed type on “Class announcement” (class-feed.png), labels and any button included, is Archivo Regular, Inter Regular or Inter Medium; the placed wordmark drawing is the only other lettering.
+- `PHOTO-28/class-feed/H041` Every line of designed type on “Class announcement” (class-feed.png), labels and buttons included, is Archivo Regular, Inter Regular or Inter Medium; only the wordmark drawing differs.
 - `PHOTO-28/class-feed/H042` No line of body text on “Class announcement” (class-feed.png) runs longer than 65 characters.
-- `PHOTO-28/class-feed/H043` The copy on “Class announcement” (class-feed.png) has no exclamation mark and no discount or urgency wording, such as sale, % off, limited time or hurry.
-- `PHOTO-28/booking-story/H003` The studio wordmark on “Studio booking story” (booking-story.png) is the verda_wordmark_transparent.png drawing, its letterforms and proportions unchanged, not retyped in another font.
-- `PHOTO-28/booking-story/H004` The largest text on “Studio booking story” (booking-story.png) is the booking action line, the words that tell the viewer how to book.
-- `PHOTO-28/booking-story/H005` Any class shown with a price on “Studio booking story” (booking-story.png) carries its roster_2027.csv price: Foundations $34, Flow $36, Core & Restore $34, Strength $38, Prenatal $36 and Slow & Deep $34.
+- `PHOTO-28/class-feed/H043` The copy on “Class announcement” (class-feed.png) has no discount or urgency wording, such as sale, % off, limited time or hurry.
+- `PHOTO-28/booking-story/H003` The studio wordmark on “Studio booking story” (booking-story.png) is the verda_wordmark_transparent.png drawing, not retyped in another font.
+- `PHOTO-28/booking-story/H004` The headline on “Studio booking story” (booking-story.png) is set larger than any body text or fine print.
+- `PHOTO-28/booking-story/H005` Any class with a price on “Studio booking story” (booking-story.png) carries its roster_2027.csv price: Foundations $34, Flow $36, Core & Restore $34, Strength $38, Prenatal $36, Slow & Deep $34.
 - `PHOTO-28/booking-story/H006` Any class named on “Studio booking story” (booking-story.png) is written with its client-facing name, such as “Core & Restore”, never an internal code such as “RF-COR”.
 - `PHOTO-28/booking-story/H007` “Studio booking story” (booking-story.png) does not name “Erin Coyle” or give erin@verdastudio.example; she has left the studio, and naming her makes it unusable.
 - `PHOTO-28/booking-story/H008` “Studio booking story” (booking-story.png) states no opening date or month: September and October have both slipped, and no new date is fixed.
 - `PHOTO-28/booking-story/H009` “Studio booking story” (booking-story.png) gives no class day, time or timetable, since no supplied file states one.
-- `PHOTO-28/booking-story/H010` Every price on “Studio booking story” (booking-story.png) is a supplied figure: a roster_2027.csv class price of $34, $36 or $38, the 180 dollar intro pack or the 220 dollar monthly membership.
+- `PHOTO-28/booking-story/H010` Every price on “Studio booking story” (booking-story.png) is a supplied figure: $34, $36 or $38 from roster_2027.csv, the 180 dollar intro pack or the 220 dollar membership.
 - `PHOTO-28/booking-story/H011` Any validity given on “Studio booking story” (booking-story.png) reads through Dec 2027, as in roster_2027.csv, never last year's through Dec 2025.
 - `PHOTO-28/booking-story/H012` Any instructor named on “Studio booking story” (booking-story.png) is named in full, first and last name, spelled exactly as in owner_note.txt.
-- `PHOTO-28/booking-story/H013` Any class shown beside an instructor on “Studio booking story” (booking-story.png) is that instructor's own: Priya Anand (Foundations), Dana Osei (Flow), Lena Brandt (Core & Restore), Tomas Reyes (Strength), Yuki Sato (Prenatal) or Nadia Haddad (Slow & Deep).
+- `PHOTO-28/booking-story/H013` Any class beside an instructor on “Studio booking story” (booking-story.png) is their own: Priya Anand (Foundations), Dana Osei (Flow), Lena Brandt (Core & Restore), Tomas Reyes (Strength), Yuki Sato (Prenatal), Nadia Haddad (Slow & Deep).
 - `PHOTO-28/booking-story/H014` Any studio location given on “Studio booking story” (booking-story.png) reads “Calloway Row”, with no invented street number, city or postcode added.
 - `PHOTO-28/booking-story/H015` The booking action on “Studio booking story” (booking-story.png) invents no web address, phone number or social handle; any contact it gives is a supplied verdastudio.example address.
 - `PHOTO-28/booking-story/H016` Any person pictured on “Studio booking story” (booking-story.png) has natural skin, with no orange cast.
 - `PHOTO-28/booking-story/H017` No photograph on “Studio booking story” (booking-story.png) shows a black rubber floor.
 - `PHOTO-28/booking-story/H018` No photograph on “Studio booking story” (booking-story.png) shows a group class or more than one person exercising.
-- `PHOTO-28/booking-story/H019` Wherever verda_studio_frame_01.jpg or verda_studio_frame_02.jpg appears on “Studio booking story” (booking-story.png), the reformer upholstery reads sage green, not blue or grey, and the floor natural oak, not orange.
+- `PHOTO-28/booking-story/H019` Wherever verda_studio_frame_01.jpg or verda_studio_frame_02.jpg appears on “Studio booking story” (booking-story.png), the reformer upholstery reads sage green, not blue or grey.
 - `PHOTO-28/booking-story/H020` Wherever verda_studio_frame_01.jpg or verda_studio_frame_02.jpg appears on “Studio booking story” (booking-story.png), it keeps what the source frame shows of the room, with nothing generated, added or removed beyond a crop.
 - `PHOTO-28/booking-story/H021` If verda_studio_frame_01.jpg is used on “Studio booking story” (booking-story.png), its blown-out front window shows no invented sky, street or scenery: it stays plain or is cropped out.
-- `PHOTO-28/booking-story/H022` If any of verda_instructor_01.jpg, verda_instructor_02.jpg, verda_instructor_03.jpg, verda_instructor_04.jpg, verda_instructor_05.jpg or verda_instructor_06.jpg appears on “Studio booking story” (booking-story.png), the face keeps that source portrait's features, with nothing reshaped or regenerated.
+- `PHOTO-28/booking-story/H022` If a supplied instructor portrait (verda_instructor_01.jpg to verda_instructor_06.jpg) appears on “Studio booking story” (booking-story.png), the face keeps that portrait's features, with nothing reshaped or regenerated.
 - `PHOTO-28/booking-story/H023` Any name beside a supplied portrait on “Studio booking story” (booking-story.png) matches it per roster_2027.csv: verda_instructor_01.jpg Priya Anand, verda_instructor_02.jpg Dana Osei, verda_instructor_03.jpg Lena Brandt, verda_instructor_04.jpg Tomas Reyes, verda_instructor_05.jpg Yuki Sato, verda_instructor_06.jpg Nadia Haddad.
-- `PHOTO-28/booking-story/H024` If verda_instructor_04.jpg appears on “Studio booking story” (booking-story.png), it shows no pixelation, softness or generated detail from being enlarged beyond its 825 x 1100 px source.
+- `PHOTO-28/booking-story/H024` If verda_instructor_04.jpg appears on “Studio booking story” (booking-story.png), it shows no pixelation, softness or generated detail from being enlarged.
 - `PHOTO-28/booking-story/H025` The studio wordmark on “Studio booking story” (booking-story.png) keeps the e, d and a counters of verda_wordmark_transparent.png open; none is filled in.
-- `PHOTO-28/booking-story/H026` No white square, box or halo from verda_wordmark_transparent.png shows around the studio wordmark on “Studio booking story” (booking-story.png); the ground meets the letters directly.
-- `PHOTO-28/booking-story/H027` The studio wordmark on “Studio booking story” (booking-story.png) has clean letter edges, with no grey fringe or blocky compression ring carried over from verda_wordmark_transparent.png.
+- `PHOTO-28/booking-story/H026` No white square, box or halo shows around the studio wordmark on “Studio booking story” (booking-story.png); the ground meets the letters directly.
+- `PHOTO-28/booking-story/H027` The studio wordmark on “Studio booking story” (booking-story.png) has clean letter edges, with no grey fringe or blocky compression ring; normal edge anti-aliasing is fine.
 - `PHOTO-28/booking-story/H028` The studio wordmark on “Studio booking story” (booking-story.png) sits on one line, never stacked onto two.
-- `PHOTO-28/booking-story/H029` The studio wordmark on “Studio booking story” (booking-story.png) is no larger than 34 px tall at the delivered size.
-- `PHOTO-28/booking-story/H030` The type, wordmark, panel, rule, button and icon colours on “Studio booking story” (booking-story.png) come only from Sage #9CA98F, Oak #C7A97A, Warm Off White #F4F0E8 and Soft Ink #33352E.
+- `PHOTO-28/booking-story/H029` Measured in an image editor, the studio wordmark's visible letterforms on “Studio booking story” (booking-story.png) are no more than 34 px tall.
+- `PHOTO-28/booking-story/H030` Type, wordmark, panel, rule, button and icon colours on “Studio booking story” (booking-story.png) are only Sage #9CA98F, Oak #C7A97A, Warm Off White #F4F0E8 or Soft Ink #33352E, anti-aliased edges aside.
 - `PHOTO-28/booking-story/H031` Warm Off White #F4F0E8 and Soft Ink #33352E both appear in the designed parts of “Studio booking story” (booking-story.png).
-- `PHOTO-28/booking-story/H032` On “Studio booking story” (booking-story.png), all type, the wordmark, grounds, panels and buttons are solid at full opacity; neither type nor wordmark sits directly on a photograph; no scrim, gradient or overlay, black or white included, covers a photograph.
+- `PHOTO-28/booking-story/H032` All type, the wordmark and every ground, panel and button on “Studio booking story” (booking-story.png) are flat, solid colour, with nothing showing through and no gradient or drop shadow.
 - `PHOTO-28/booking-story/H033` Every ground, panel and button on “Studio booking story” (booking-story.png) is Warm Off White #F4F0E8 or Sage #9CA98F, never Soft Ink or Oak.
-- `PHOTO-28/booking-story/H034` On “Studio booking story” (booking-story.png), headlines, subheadings, body text, prices, fine print, labels and wordmark are Soft Ink #33352E on Warm Off White #F4F0E8, where small labels may be Sage #9CA98F, and Soft Ink or Warm Off White on Sage.
-- `PHOTO-28/booking-story/H035` Oak #C7A97A appears on “Studio booking story” (booking-story.png) only as hairline rules or dividers, together no more than 5% of the designed, non-photographic area.
-- `PHOTO-28/booking-story/H036` The headline and every subheading on “Studio booking story” (booking-story.png) are set in Archivo Regular, with no bold, condensed or serif face.
+- `PHOTO-28/booking-story/H034` On “Studio booking story” (booking-story.png), all type and the wordmark on Warm Off White #F4F0E8 are Soft Ink #33352E; only short labels like the passcard_2025_print.pdf field labels may be Sage.
+- `PHOTO-28/booking-story/H035` Oak #C7A97A on “Studio booking story” (booking-story.png) appears only as thin hairline rules or dividers, never as a ground, panel, button, text or fill.
+- `PHOTO-28/booking-story/H036` The headline on “Studio booking story” (booking-story.png) is set in Archivo Regular, not bold, condensed or a serif.
 - `PHOTO-28/booking-story/H037` Any body text on “Studio booking story” (booking-story.png) is set in Inter Regular, not a serif and not a bolder weight.
 - `PHOTO-28/booking-story/H038` Any price or fine-print line on “Studio booking story” (booking-story.png) is set in Inter Medium, not Regular.
-- `PHOTO-28/booking-story/H039` Every line of designed type on “Studio booking story” (booking-story.png), labels and any button included, is Archivo Regular, Inter Regular or Inter Medium; the placed wordmark drawing is the only other lettering.
+- `PHOTO-28/booking-story/H039` Every line of designed type on “Studio booking story” (booking-story.png), labels and buttons included, is Archivo Regular, Inter Regular or Inter Medium; only the wordmark drawing differs.
 - `PHOTO-28/booking-story/H040` No line of body text on “Studio booking story” (booking-story.png) runs longer than 65 characters.
-- `PHOTO-28/booking-story/H041` The copy on “Studio booking story” (booking-story.png) has no exclamation mark and no discount or urgency wording, such as sale, % off, limited time or hurry.
-- `PHOTO-28/studio-launch/H004` The launch headline and every subheading on “Studio launch-page composition” (studio-launch.png) are set in Archivo Regular, with no bold, condensed or serif face.
-- `PHOTO-28/studio-launch/H005` On “Studio launch-page composition” (studio-launch.png) the class offer (class names and prices) sits above the booking action.
-- `PHOTO-28/studio-launch/H006` The class offer on “Studio launch-page composition” (studio-launch.png) lists Foundations $34, Flow $36, Core & Restore $34, Strength $38, Prenatal $36 and Slow & Deep $34, as in roster_2027.csv.
+- `PHOTO-28/booking-story/H041` The copy on “Studio booking story” (booking-story.png) has no discount or urgency wording, such as sale, % off, limited time or hurry.
+- `PHOTO-28/studio-launch/H004` The launch headline on “Studio launch-page composition” (studio-launch.png) is set in Archivo Regular, not bold, condensed or a serif.
+- `PHOTO-28/studio-launch/H006` “Studio launch-page composition” (studio-launch.png) lists exactly six classes, each once: Foundations $34, Flow $36, Core & Restore $34, Strength $38, Prenatal $36, Slow & Deep $34.
 - `PHOTO-28/studio-launch/H007` Every class in the class offer on “Studio launch-page composition” (studio-launch.png) is written with its client-facing name, such as “Core & Restore”, never an internal code such as “RF-COR”.
 - `PHOTO-28/studio-launch/H008` “Studio launch-page composition” (studio-launch.png) does not name “Erin Coyle” or give erin@verdastudio.example; she has left the studio, and naming her makes it unusable.
 - `PHOTO-28/studio-launch/H009` “Studio launch-page composition” (studio-launch.png) states no opening date or month: September and October have both slipped, and no new date is fixed.
 - `PHOTO-28/studio-launch/H010` “Studio launch-page composition” (studio-launch.png) gives no class day, time or timetable, since no supplied file states one.
-- `PHOTO-28/studio-launch/H011` Every price on “Studio launch-page composition” (studio-launch.png) is a supplied figure: a roster_2027.csv class price of $34, $36 or $38, the 180 dollar intro pack or the 220 dollar monthly membership.
+- `PHOTO-28/studio-launch/H011` Every price on “Studio launch-page composition” (studio-launch.png) is a supplied figure: $34, $36 or $38 from roster_2027.csv, the 180 dollar intro pack or the 220 dollar membership.
 - `PHOTO-28/studio-launch/H012` Any validity given on “Studio launch-page composition” (studio-launch.png) reads through Dec 2027, as in roster_2027.csv, never last year's through Dec 2025.
 - `PHOTO-28/studio-launch/H013` Any instructor named on “Studio launch-page composition” (studio-launch.png) is named in full, first and last name, spelled exactly as in owner_note.txt.
-- `PHOTO-28/studio-launch/H014` Any class shown beside an instructor on “Studio launch-page composition” (studio-launch.png) is that instructor's own: Priya Anand (Foundations), Dana Osei (Flow), Lena Brandt (Core & Restore), Tomas Reyes (Strength), Yuki Sato (Prenatal) or Nadia Haddad (Slow & Deep).
+- `PHOTO-28/studio-launch/H014` Any class beside an instructor on “Studio launch-page composition” (studio-launch.png) is their own: Priya Anand (Foundations), Dana Osei (Flow), Lena Brandt (Core & Restore), Tomas Reyes (Strength), Yuki Sato (Prenatal), Nadia Haddad (Slow & Deep).
 - `PHOTO-28/studio-launch/H015` The booking action on “Studio launch-page composition” (studio-launch.png) invents no web address, phone number or social handle; any contact it gives is a supplied verdastudio.example address.
 - `PHOTO-28/studio-launch/H016` Any person pictured on “Studio launch-page composition” (studio-launch.png) has natural skin, with no orange cast.
 - `PHOTO-28/studio-launch/H017` No photograph on “Studio launch-page composition” (studio-launch.png) shows a black rubber floor.
 - `PHOTO-28/studio-launch/H018` No photograph on “Studio launch-page composition” (studio-launch.png) shows a group class or more than one person exercising.
 - `PHOTO-28/studio-launch/H019` “Studio launch-page composition” (studio-launch.png) shows the studio's own room in at least one photograph built from verda_studio_frame_01.jpg or verda_studio_frame_02.jpg.
-- `PHOTO-28/studio-launch/H020` Wherever verda_studio_frame_01.jpg or verda_studio_frame_02.jpg appears on “Studio launch-page composition” (studio-launch.png), the reformer upholstery reads sage green, not blue or grey, and the floor natural oak, not orange.
+- `PHOTO-28/studio-launch/H020` Wherever verda_studio_frame_01.jpg or verda_studio_frame_02.jpg appears on “Studio launch-page composition” (studio-launch.png), the reformer upholstery reads sage green, not blue or grey.
 - `PHOTO-28/studio-launch/H021` Wherever verda_studio_frame_01.jpg or verda_studio_frame_02.jpg appears on “Studio launch-page composition” (studio-launch.png), it keeps what the source frame shows of the room, with nothing generated, added or removed beyond a crop.
 - `PHOTO-28/studio-launch/H022` If verda_studio_frame_01.jpg is used on “Studio launch-page composition” (studio-launch.png), its blown-out front window shows no invented sky, street or scenery: it stays plain or is cropped out.
-- `PHOTO-28/studio-launch/H023` If any of verda_instructor_01.jpg, verda_instructor_02.jpg, verda_instructor_03.jpg, verda_instructor_04.jpg, verda_instructor_05.jpg or verda_instructor_06.jpg appears on “Studio launch-page composition” (studio-launch.png), the face keeps that source portrait's features, with nothing reshaped or regenerated.
+- `PHOTO-28/studio-launch/H023` If a supplied instructor portrait (verda_instructor_01.jpg to verda_instructor_06.jpg) appears on “Studio launch-page composition” (studio-launch.png), the face keeps that portrait's features, with nothing reshaped or regenerated.
 - `PHOTO-28/studio-launch/H024` Any name beside a supplied portrait on “Studio launch-page composition” (studio-launch.png) matches it per roster_2027.csv: verda_instructor_01.jpg Priya Anand, verda_instructor_02.jpg Dana Osei, verda_instructor_03.jpg Lena Brandt, verda_instructor_04.jpg Tomas Reyes, verda_instructor_05.jpg Yuki Sato, verda_instructor_06.jpg Nadia Haddad.
-- `PHOTO-28/studio-launch/H025` If verda_instructor_04.jpg appears on “Studio launch-page composition” (studio-launch.png), it shows no pixelation, softness or generated detail from being enlarged beyond its 825 x 1100 px source.
-- `PHOTO-28/studio-launch/H026` The studio wordmark on “Studio launch-page composition” (studio-launch.png) is the verda_wordmark_transparent.png drawing, its letterforms and proportions unchanged, not retyped in another font.
+- `PHOTO-28/studio-launch/H025` If verda_instructor_04.jpg appears on “Studio launch-page composition” (studio-launch.png), it shows no pixelation, softness or generated detail from being enlarged.
+- `PHOTO-28/studio-launch/H026` The studio wordmark on “Studio launch-page composition” (studio-launch.png) is the verda_wordmark_transparent.png drawing, not retyped in another font.
 - `PHOTO-28/studio-launch/H027` The studio wordmark on “Studio launch-page composition” (studio-launch.png) keeps the e, d and a counters of verda_wordmark_transparent.png open; none is filled in.
-- `PHOTO-28/studio-launch/H028` No white square, box or halo from verda_wordmark_transparent.png shows around the studio wordmark on “Studio launch-page composition” (studio-launch.png); the ground meets the letters directly.
-- `PHOTO-28/studio-launch/H029` The studio wordmark on “Studio launch-page composition” (studio-launch.png) has clean letter edges, with no grey fringe or blocky compression ring carried over from verda_wordmark_transparent.png.
+- `PHOTO-28/studio-launch/H028` No white square, box or halo shows around the studio wordmark on “Studio launch-page composition” (studio-launch.png); the ground meets the letters directly.
+- `PHOTO-28/studio-launch/H029` The studio wordmark on “Studio launch-page composition” (studio-launch.png) has clean letter edges, with no grey fringe or blocky compression ring; normal edge anti-aliasing is fine.
 - `PHOTO-28/studio-launch/H030` The studio wordmark on “Studio launch-page composition” (studio-launch.png) sits on one line, never stacked onto two.
-- `PHOTO-28/studio-launch/H031` The studio wordmark on “Studio launch-page composition” (studio-launch.png) is no larger than 34 px tall at the delivered size.
-- `PHOTO-28/studio-launch/H032` The studio wordmark on “Studio launch-page composition” (studio-launch.png) sits above the launch headline as its own lock, separate from it.
-- `PHOTO-28/studio-launch/H033` The type, wordmark, panel, rule, button and icon colours on “Studio launch-page composition” (studio-launch.png) come only from Sage #9CA98F, Oak #C7A97A, Warm Off White #F4F0E8 and Soft Ink #33352E.
+- `PHOTO-28/studio-launch/H031` Measured in an image editor, the studio wordmark's visible letterforms on “Studio launch-page composition” (studio-launch.png) are no more than 34 px tall.
+- `PHOTO-28/studio-launch/H032` The studio wordmark on “Studio launch-page composition” (studio-launch.png) sits above the launch headline as its own lockup, separate from it.
+- `PHOTO-28/studio-launch/H033` Type, wordmark, panel, rule, button and icon colours on “Studio launch-page composition” (studio-launch.png) are only Sage #9CA98F, Oak #C7A97A, Warm Off White #F4F0E8 or Soft Ink #33352E, anti-aliased edges aside.
 - `PHOTO-28/studio-launch/H034` Warm Off White #F4F0E8 and Soft Ink #33352E both appear in the designed parts of “Studio launch-page composition” (studio-launch.png).
-- `PHOTO-28/studio-launch/H035` On “Studio launch-page composition” (studio-launch.png), all type, the wordmark, grounds, panels and buttons are solid at full opacity; neither type nor wordmark sits directly on a photograph; no scrim, gradient or overlay, black or white included, covers a photograph.
+- `PHOTO-28/studio-launch/H035` All type, the wordmark and every ground, panel and button on “Studio launch-page composition” (studio-launch.png) are flat, solid colour, with nothing showing through and no gradient or drop shadow.
 - `PHOTO-28/studio-launch/H036` Every ground, panel and button on “Studio launch-page composition” (studio-launch.png) is Warm Off White #F4F0E8 or Sage #9CA98F, never Soft Ink or Oak.
-- `PHOTO-28/studio-launch/H037` On “Studio launch-page composition” (studio-launch.png), headlines, subheadings, body text, prices, fine print, labels and wordmark are Soft Ink #33352E on Warm Off White #F4F0E8, where small labels may be Sage #9CA98F, and Soft Ink or Warm Off White on Sage.
-- `PHOTO-28/studio-launch/H038` Oak #C7A97A appears on “Studio launch-page composition” (studio-launch.png) only as hairline rules or dividers, together no more than 5% of the designed, non-photographic area.
-- `PHOTO-28/studio-launch/H039` The body text on “Studio launch-page composition” (studio-launch.png) is set in Inter Regular, not a serif and not a bolder weight.
+- `PHOTO-28/studio-launch/H037` On “Studio launch-page composition” (studio-launch.png), all type and the wordmark on Warm Off White #F4F0E8 are Soft Ink #33352E; only short labels like the passcard_2025_print.pdf field labels may be Sage.
+- `PHOTO-28/studio-launch/H038` Oak #C7A97A on “Studio launch-page composition” (studio-launch.png) appears only as thin hairline rules or dividers, never as a ground, panel, button, text or fill.
+- `PHOTO-28/studio-launch/H039` Any body text on “Studio launch-page composition” (studio-launch.png) is set in Inter Regular, not a serif and not a bolder weight.
 - `PHOTO-28/studio-launch/H040` Every class price and every other fine-print line on “Studio launch-page composition” (studio-launch.png) is set in Inter Medium, not Regular.
-- `PHOTO-28/studio-launch/H041` Every line of designed type on “Studio launch-page composition” (studio-launch.png), labels and any button included, is Archivo Regular, Inter Regular or Inter Medium; the placed wordmark drawing is the only other lettering.
+- `PHOTO-28/studio-launch/H041` Every line of designed type on “Studio launch-page composition” (studio-launch.png), labels and buttons included, is Archivo Regular, Inter Regular or Inter Medium; only the wordmark drawing differs.
 - `PHOTO-28/studio-launch/H042` No line of body text on “Studio launch-page composition” (studio-launch.png) runs longer than 65 characters.
-- `PHOTO-28/studio-launch/H043` The copy on “Studio launch-page composition” (studio-launch.png) has no exclamation mark and no discount or urgency wording, such as sale, % off, limited time or hurry.
+- `PHOTO-28/studio-launch/H043` The copy on “Studio launch-page composition” (studio-launch.png) has no discount or urgency wording, such as sale, % off, limited time or hurry.
 - `PHOTO-28/studio-launch/H044` The largest text on “Studio launch-page composition” (studio-launch.png) is the launch headline.
-- `PHOTO-28/studio-launch/H045` studio-launch.png: headline uses Archivo Regular (when present).
-- `PHOTO-28/studio-launch/H046` studio-launch.png: headline has font size 88 px (when present).
-- `PHOTO-28/studio-launch/H047` studio-launch.png: headline has 104 px leading on multiline text (when present).
-- `PHOTO-28/studio-launch/H048` studio-launch.png: headline uses tracking -10/1000 em (when present).
-- `PHOTO-28/studio-launch/H049` studio-launch.png: body text uses Inter Regular (when present).
-- `PHOTO-28/studio-launch/H050` studio-launch.png: body text has font size 22 px (when present).
-- `PHOTO-28/studio-launch/H051` studio-launch.png: body text has 34 px leading on multiline text (when present).
-- `PHOTO-28/studio-launch/H052` studio-launch.png: body text uses tracking +0/1000 em (when present).
-- `PHOTO-28/studio-launch/H053` studio-launch.png: class-time/price text uses Inter Medium (when present).
-- `PHOTO-28/studio-launch/H054` studio-launch.png: class-time/price text has font size 16 px (when present).
-- `PHOTO-28/studio-launch/H055` studio-launch.png: class-time/price text has 24 px leading on multiline text (when present).
-- `PHOTO-28/studio-launch/H056` studio-launch.png: class-time/price text uses tracking +15/1000 em (when present).
-- `PHOTO-28/class-feed/H044` class-feed.png: headline uses Archivo Regular (when present).
-- `PHOTO-28/class-feed/H045` class-feed.png: headline has font size 56 px (when present).
-- `PHOTO-28/class-feed/H046` class-feed.png: headline has 68 px leading on multiline text (when present).
-- `PHOTO-28/class-feed/H047` class-feed.png: headline uses tracking -5/1000 em (when present).
-- `PHOTO-28/class-feed/H048` class-feed.png: body text uses Inter Regular (when present).
-- `PHOTO-28/class-feed/H049` class-feed.png: body text has font size 22 px (when present).
-- `PHOTO-28/class-feed/H050` class-feed.png: body text has 34 px leading on multiline text (when present).
-- `PHOTO-28/class-feed/H051` class-feed.png: body text uses tracking +0/1000 em (when present).
-- `PHOTO-28/class-feed/H052` class-feed.png: class-time/price text uses Inter Medium (when present).
-- `PHOTO-28/class-feed/H053` class-feed.png: class-time/price text has font size 16 px (when present).
-- `PHOTO-28/class-feed/H054` class-feed.png: class-time/price text has 24 px leading on multiline text (when present).
-- `PHOTO-28/class-feed/H055` class-feed.png: class-time/price text uses tracking +15/1000 em (when present).
-- `PHOTO-28/booking-story/H042` booking-story.png: headline uses Archivo Regular (when present).
-- `PHOTO-28/booking-story/H043` booking-story.png: headline has font size 56 px (when present).
-- `PHOTO-28/booking-story/H044` booking-story.png: headline has 68 px leading on multiline text (when present).
-- `PHOTO-28/booking-story/H045` booking-story.png: headline uses tracking -5/1000 em (when present).
-- `PHOTO-28/booking-story/H046` booking-story.png: body text uses Inter Regular (when present).
-- `PHOTO-28/booking-story/H047` booking-story.png: body text has font size 22 px (when present).
-- `PHOTO-28/booking-story/H048` booking-story.png: body text has 34 px leading on multiline text (when present).
-- `PHOTO-28/booking-story/H049` booking-story.png: body text uses tracking +0/1000 em (when present).
-- `PHOTO-28/booking-story/H050` booking-story.png: class-time/price text uses Inter Medium (when present).
-- `PHOTO-28/booking-story/H051` booking-story.png: class-time/price text has font size 16 px (when present).
-- `PHOTO-28/booking-story/H052` booking-story.png: class-time/price text has 24 px leading on multiline text (when present).
-- `PHOTO-28/booking-story/H053` booking-story.png: class-time/price text uses tracking +15/1000 em (when present).
-- `PHOTO-28/studio-launch/R13-colour-profile` studio-launch.png: uses an sRGB colour profile.
-- `PHOTO-28/class-feed/R13-colour-profile` class-feed.png: uses an sRGB colour profile.
-- `PHOTO-28/booking-story/R13-colour-profile` booking-story.png: uses an sRGB colour profile.
+- `PHOTO-28/studio-launch/H057` No type or wordmark on “Studio launch-page composition” (studio-launch.png) sits directly on a photograph; it sits on a solid Warm Off White or Sage panel.
+- `PHOTO-28/studio-launch/H058` No scrim, gradient or overlay of any colour, black or white included, is laid over a photograph on “Studio launch-page composition” (studio-launch.png).
+- `PHOTO-28/studio-launch/H059` Any type or wordmark on a Sage #9CA98F ground or panel on “Studio launch-page composition” (studio-launch.png) is Soft Ink #33352E or Warm Off White #F4F0E8.
+- `PHOTO-28/studio-launch/H060` Wherever verda_studio_frame_01.jpg or verda_studio_frame_02.jpg appears on “Studio launch-page composition” (studio-launch.png), the floor reads natural oak, not orange.
+- `PHOTO-28/studio-launch/H061` Wherever verda_studio_frame_01.jpg or verda_studio_frame_02.jpg appears on “Studio launch-page composition” (studio-launch.png), the room reads lit by one soft daylight, with no cool blue and warm orange areas side by side.
+- `PHOTO-28/studio-launch/H062` Wherever verda_studio_frame_01.jpg or verda_studio_frame_02.jpg appears on “Studio launch-page composition” (studio-launch.png), the room is visibly brighter than the dusky source frame, not left dark.
+- `PHOTO-28/studio-launch/H063` Every studio interior shown on “Studio launch-page composition” (studio-launch.png) comes from verda_studio_frame_01.jpg or verda_studio_frame_02.jpg, not a stock or generated room.
+- `PHOTO-28/class-feed/H056` No type or wordmark on “Class announcement” (class-feed.png) sits directly on a photograph; it sits on a solid Warm Off White or Sage panel.
+- `PHOTO-28/class-feed/H057` No scrim, gradient or overlay of any colour, black or white included, is laid over a photograph on “Class announcement” (class-feed.png).
+- `PHOTO-28/class-feed/H058` Any type or wordmark on a Sage #9CA98F ground or panel on “Class announcement” (class-feed.png) is Soft Ink #33352E or Warm Off White #F4F0E8.
+- `PHOTO-28/class-feed/H059` Wherever verda_studio_frame_01.jpg or verda_studio_frame_02.jpg appears on “Class announcement” (class-feed.png), the floor reads natural oak, not orange.
+- `PHOTO-28/class-feed/H060` Wherever verda_studio_frame_01.jpg or verda_studio_frame_02.jpg appears on “Class announcement” (class-feed.png), the room reads lit by one soft daylight, with no cool blue and warm orange areas side by side.
+- `PHOTO-28/class-feed/H061` Wherever verda_studio_frame_01.jpg or verda_studio_frame_02.jpg appears on “Class announcement” (class-feed.png), the room is visibly brighter than the dusky source frame, not left dark.
+- `PHOTO-28/class-feed/H062` Every studio interior shown on “Class announcement” (class-feed.png) comes from verda_studio_frame_01.jpg or verda_studio_frame_02.jpg, not a stock or generated room.
+- `PHOTO-28/booking-story/H054` No type or wordmark on “Studio booking story” (booking-story.png) sits directly on a photograph; it sits on a solid Warm Off White or Sage panel.
+- `PHOTO-28/booking-story/H055` No scrim, gradient or overlay of any colour, black or white included, is laid over a photograph on “Studio booking story” (booking-story.png).
+- `PHOTO-28/booking-story/H056` Any type or wordmark on a Sage #9CA98F ground or panel on “Studio booking story” (booking-story.png) is Soft Ink #33352E or Warm Off White #F4F0E8.
+- `PHOTO-28/booking-story/H057` Wherever verda_studio_frame_01.jpg or verda_studio_frame_02.jpg appears on “Studio booking story” (booking-story.png), the floor reads natural oak, not orange.
+- `PHOTO-28/booking-story/H058` Wherever verda_studio_frame_01.jpg or verda_studio_frame_02.jpg appears on “Studio booking story” (booking-story.png), the room reads lit by one soft daylight, with no cool blue and warm orange areas side by side.
+- `PHOTO-28/booking-story/H059` Wherever verda_studio_frame_01.jpg or verda_studio_frame_02.jpg appears on “Studio booking story” (booking-story.png), the room is visibly brighter than the dusky source frame, not left dark.
+- `PHOTO-28/booking-story/H060` Every studio interior shown on “Studio booking story” (booking-story.png) comes from verda_studio_frame_01.jpg or verda_studio_frame_02.jpg, not a stock or generated room.
+- `PHOTO-28/studio-launch/H064` If a secondary heading appears on “Studio launch-page composition” (studio-launch.png), it is set in Archivo Regular, not bold, condensed or a serif.
+- `PHOTO-28/studio-launch/H065` “Studio launch-page composition” (studio-launch.png) shows a booking action: a button or line telling the viewer how to book.
+- `PHOTO-28/class-feed/H063` No part of the source portrait's original wall or background shows behind the cut-out instructor on “Class announcement” (class-feed.png).
+- `PHOTO-28/booking-story/H061` “Studio booking story” (booking-story.png) shows a booking action: a button or line telling the viewer how to book.
+- `PHOTO-28/studio-launch/H066` Wherever verda_studio_frame_01.jpg or verda_studio_frame_02.jpg appears on “Studio launch-page composition” (studio-launch.png), the photo is not tinted toward the palette; upholstery and floor are not flattened to Sage #9CA98F or Oak #C7A97A.
+- `PHOTO-28/class-feed/H064` Wherever verda_studio_frame_01.jpg or verda_studio_frame_02.jpg appears on “Class announcement” (class-feed.png), the photo is not tinted toward the palette; upholstery and floor are not flattened to Sage #9CA98F or Oak #C7A97A.
+- `PHOTO-28/booking-story/H062` Wherever verda_studio_frame_01.jpg or verda_studio_frame_02.jpg appears on “Studio booking story” (booking-story.png), the photo is not tinted toward the palette; upholstery and floor are not flattened to Sage #9CA98F or Oak #C7A97A.
+- `PHOTO-28/class-feed/H065` The studio wordmark on “Class announcement” (class-feed.png) sits above the headline.
+- `PHOTO-28/booking-story/H063` The studio wordmark on “Studio booking story” (booking-story.png) sits above the headline.
+- `PHOTO-28/studio-launch/H067` If an instructor cut-out appears on “Studio launch-page composition” (studio-launch.png), no part of the figure's hair, shoulders or arms is cut away along its edge.
+- `PHOTO-28/studio-launch/H068` If an instructor cut-out appears on “Studio launch-page composition” (studio-launch.png), its edge shows no halo or fringe of the original wall.
+- `PHOTO-28/booking-story/H064` If an instructor cut-out appears on “Studio booking story” (booking-story.png), no part of the figure's hair, shoulders or arms is cut away along its edge.
+- `PHOTO-28/booking-story/H065` If an instructor cut-out appears on “Studio booking story” (booking-story.png), its edge shows no halo or fringe of the original wall.
+- `PHOTO-28/studio-launch/H069` The copy on “Studio launch-page composition” (studio-launch.png) has no exclamation mark.
+- `PHOTO-28/class-feed/H066` The copy on “Class announcement” (class-feed.png) has no exclamation mark.
+- `PHOTO-28/booking-story/H066` The copy on “Studio booking story” (booking-story.png) has no exclamation mark.
+- `PHOTO-28/studio-launch/H070` The six classes and their prices on “Studio launch-page composition” (studio-launch.png) sit together in one block, not split across separate parts of the page.
+- `PHOTO-28/class-feed/H067` No part of the instructor's hair, shoulders or arms is cut away along the cut-out edge on “Class announcement” (class-feed.png).
+- `PHOTO-28/studio-launch/H071` The studio wordmark on “Studio launch-page composition” (studio-launch.png) is not stretched or squashed; its width-to-height ratio matches verda_wordmark_transparent.png.
+- `PHOTO-28/class-feed/H068` The studio wordmark on “Class announcement” (class-feed.png) is not stretched or squashed; its width-to-height ratio matches verda_wordmark_transparent.png.
+- `PHOTO-28/booking-story/H067` The studio wordmark on “Studio booking story” (booking-story.png) is not stretched or squashed; its width-to-height ratio matches verda_wordmark_transparent.png.

@@ -21,6 +21,20 @@ Revised input pack. Previous execution results are historical, not current ratin
 - `PHOTO-04/villa-collection/A003` “Verranza Coastal Retreats / Villa comparison brochure” (villa-collection.pdf) contains exactly 6 pages.
 - `PHOTO-04/villa-collection/A004` The finished printed width of “Verranza Coastal Retreats / Villa comparison brochure” (villa-collection.pdf) is 210 mm (within 0.2 mm).
 - `PHOTO-04/villa-collection/A005` The finished printed height of “Verranza Coastal Retreats / Villa comparison brochure” (villa-collection.pdf) is 297 mm (within 0.2 mm).
+- `PHOTO-04/booking-hero-oliveto/A005` “Villa booking hero - Oliveto” (booking-hero-oliveto.png) is in sRGB colour: it carries an sRGB profile or no colour profile.
+- `PHOTO-04/booking-hero-scogliera/A005` “Villa booking hero - Scogliera” (booking-hero-scogliera.png) is in sRGB colour: it carries an sRGB profile or no colour profile.
+- `PHOTO-04/booking-hero-verranza/A005` “Villa booking hero - Verranza” (booking-hero-verranza.png) is in sRGB colour: it carries an sRGB profile or no colour profile.
+- `PHOTO-04/villa-collection/A006` “Villa comparison brochure” (villa-collection.pdf) uses RGB colour only, with no CMYK colour and no CMYK output intent.
+- `PHOTO-04/villa-collection/A007` “Villa comparison brochure” (villa-collection.pdf) embeds every font it uses.
+- `PHOTO-04/villa-collection/A008` “Villa comparison brochure” (villa-collection.pdf) sets the Casa Verranza Spring rate “520” in Source Sans 3 Regular at 9 pt.
+- `PHOTO-04/villa-collection/A009` “Villa comparison brochure” (villa-collection.pdf) sets the Casa Verranza High Summer rate “680” in Source Sans 3 Regular at 9 pt.
+- `PHOTO-04/villa-collection/A010` “Villa comparison brochure” (villa-collection.pdf) sets the Casa Verranza Autumn rate “560” in Source Sans 3 Regular at 9 pt.
+- `PHOTO-04/villa-collection/A011` “Villa comparison brochure” (villa-collection.pdf) sets the Casa Oliveto Spring rate “590” in Source Sans 3 Regular at 9 pt.
+- `PHOTO-04/villa-collection/A012` “Villa comparison brochure” (villa-collection.pdf) sets the Casa Oliveto High Summer rate “740” in Source Sans 3 Regular at 9 pt.
+- `PHOTO-04/villa-collection/A013` “Villa comparison brochure” (villa-collection.pdf) sets the Casa Oliveto Autumn rate “620” in Source Sans 3 Regular at 9 pt.
+- `PHOTO-04/villa-collection/A014` “Villa comparison brochure” (villa-collection.pdf) sets the Casa Scogliera Spring rate “640” in Source Sans 3 Regular at 9 pt.
+- `PHOTO-04/villa-collection/A015` “Villa comparison brochure” (villa-collection.pdf) sets the Casa Scogliera High Summer rate “780” in Source Sans 3 Regular at 9 pt.
+- `PHOTO-04/villa-collection/A016` “Villa comparison brochure” (villa-collection.pdf) sets the Casa Scogliera Autumn rate “690” in Source Sans 3 Regular at 9 pt.
 
 ## Human verifiers
 
@@ -34,196 +48,184 @@ Revised input pack. Previous execution results are historical, not current ratin
 - `PHOTO-04/booking-hero-verranza/H002` The offer price on “Villa booking hero - Verranza” (booking-hero-verranza.png) is 520, the lowest 2027 nightly rate for Casa Verranza in rates_2027.csv.
 - `PHOTO-04/booking-hero-verranza/H003` At full 1920 x 1080 size, the booking action text on “Villa booking hero - Verranza” (booking-hero-verranza.png) is fully visible, with no letters cut off at an edge.
 - `PHOTO-04/villa-collection/H001` Casa Verranza, Casa Oliveto and Casa Scogliera are each named in full in “Villa comparison brochure” (villa-collection.pdf), spelled as in owner_note.txt.
-- `PHOTO-04/villa-collection/H002` Every rate in “Villa comparison brochure” (villa-collection.pdf) sits under the season it carries in rates_2027.csv, and no rate is shown under a different season.
+- `PHOTO-04/villa-collection/H002` Every rate in “Villa comparison brochure” (villa-collection.pdf) is labelled with the season it belongs to in rates_2027.csv.
 - `PHOTO-04/villa-collection/H003` The season labels in “Villa comparison brochure” (villa-collection.pdf) read “Spring”, “High Summer” and “Autumn”, not the codes “S1”, “S2” and “S3”.
 - `PHOTO-04/villa-collection/H004` “Villa comparison brochure” (villa-collection.pdf) contains no entry for the sold house “Casa Fienile”; offering it makes the brochure unusable.
 - `PHOTO-04/villa-collection/H005` The sleeps figure for Casa Scogliera in “Villa comparison brochure” (villa-collection.pdf) reads “10”, as the owner states, not the sheet's “9”.
 - `PHOTO-04/villa-collection/H006` The monogram in “Villa comparison brochure” (villa-collection.pdf) keeps every part of the verranza_monogram_transparent.png mark: the interlocked “V” and “C”, the oval rule and the small anchor.
 - `PHOTO-04/villa-collection/H007` Wherever scogliera_pool.jpg appears in “Villa comparison brochure” (villa-collection.pdf), its water reads pale turquoise as in the source frame, not a deeper blue, grey or green.
 - `PHOTO-04/villa-collection/H008` No gold or metallic colour is used for any type, panel, rule, button or icon in “Villa comparison brochure” (villa-collection.pdf).
-- `PHOTO-04/villa-collection/H009` “Villa comparison brochure” (villa-collection.pdf) gives Casa Verranza nightly rates of 520 in Spring, 680 in High Summer and 560 in Autumn.
-- `PHOTO-04/villa-collection/H010` “Villa comparison brochure” (villa-collection.pdf) gives Casa Verranza a minimum stay of 3 nights in Spring, 7 in High Summer and 5 in Autumn.
+- `PHOTO-04/villa-collection/H009` “Villa comparison brochure” (villa-collection.pdf) gives Casa Verranza a Spring nightly rate of 520.
+- `PHOTO-04/villa-collection/H010` “Villa comparison brochure” (villa-collection.pdf) gives Casa Verranza a Spring minimum stay of 3 nights.
 - `PHOTO-04/villa-collection/H011` The sleeps figure for Casa Verranza in “Villa comparison brochure” (villa-collection.pdf) reads 6.
 - `PHOTO-04/villa-collection/H012` The Casa Verranza section of “Villa comparison brochure” (villa-collection.pdf) uses only verranza_pool.jpg, verranza_terrace.jpg, verranza_bedroom.jpg or verranza_living.jpg.
 - `PHOTO-04/villa-collection/H013` Every Casa Verranza photograph in “Villa comparison brochure” (villa-collection.pdf) reads neutral, without the orange afternoon cast found in every Casa Verranza frame.
 - `PHOTO-04/villa-collection/H014` Every Casa Verranza photograph in “Villa comparison brochure” (villa-collection.pdf) keeps the walls, openings and features of its source frame, with nothing generated, extended, added or removed.
 - `PHOTO-04/villa-collection/H015` Wherever verranza_pool.jpg appears in “Villa comparison brochure” (villa-collection.pdf), its water reads deep Mediterranean blue as in the source frame, not pale turquoise, grey or green.
-- `PHOTO-04/villa-collection/H016` “Villa comparison brochure” (villa-collection.pdf) gives Casa Oliveto nightly rates of 590 in Spring, 740 in High Summer and 620 in Autumn.
-- `PHOTO-04/villa-collection/H017` “Villa comparison brochure” (villa-collection.pdf) gives Casa Oliveto a minimum stay of 3 nights in Spring, 7 in High Summer and 5 in Autumn.
+- `PHOTO-04/villa-collection/H016` “Villa comparison brochure” (villa-collection.pdf) gives Casa Oliveto a Spring nightly rate of 590.
+- `PHOTO-04/villa-collection/H017` “Villa comparison brochure” (villa-collection.pdf) gives Casa Oliveto a Spring minimum stay of 3 nights.
 - `PHOTO-04/villa-collection/H018` The sleeps figure for Casa Oliveto in “Villa comparison brochure” (villa-collection.pdf) reads 8.
 - `PHOTO-04/villa-collection/H019` The Casa Oliveto section of “Villa comparison brochure” (villa-collection.pdf) uses only oliveto_pool.jpg, oliveto_terrace.jpg, oliveto_bedroom.jpg or oliveto_living.jpg.
 - `PHOTO-04/villa-collection/H020` Every Casa Oliveto photograph in “Villa comparison brochure” (villa-collection.pdf) reads neutral, without the green shade-sail cast found in every Casa Oliveto frame.
 - `PHOTO-04/villa-collection/H021` Every Casa Oliveto photograph in “Villa comparison brochure” (villa-collection.pdf) keeps the walls, openings and features of its source frame, with nothing generated, extended, added or removed.
 - `PHOTO-04/villa-collection/H022` Wherever oliveto_pool.jpg appears in “Villa comparison brochure” (villa-collection.pdf), its water reads deep blue as in the source frame, not pale turquoise, grey or green.
-- `PHOTO-04/villa-collection/H023` “Villa comparison brochure” (villa-collection.pdf) gives Casa Scogliera nightly rates of 640 in Spring, 780 in High Summer and 690 in Autumn.
-- `PHOTO-04/villa-collection/H024` “Villa comparison brochure” (villa-collection.pdf) gives Casa Scogliera a minimum stay of 4 nights in Spring, 7 in High Summer and 5 in Autumn.
+- `PHOTO-04/villa-collection/H023` “Villa comparison brochure” (villa-collection.pdf) gives Casa Scogliera a Spring nightly rate of 640.
+- `PHOTO-04/villa-collection/H024` “Villa comparison brochure” (villa-collection.pdf) gives Casa Scogliera a Spring minimum stay of 4 nights.
 - `PHOTO-04/villa-collection/H025` The Casa Scogliera section of “Villa comparison brochure” (villa-collection.pdf) uses only scogliera_pool.jpg, scogliera_terrace.jpg, scogliera_bedroom.jpg or scogliera_living.jpg.
-- `PHOTO-04/villa-collection/H026` Every Casa Scogliera photograph in “Villa comparison brochure” (villa-collection.pdf) reads in neutral daylight, with no warm or green cast added.
+- `PHOTO-04/villa-collection/H026` Every Casa Scogliera photograph in “Villa comparison brochure” (villa-collection.pdf) keeps the neutral daylight of its source frame, with no warm or green cast added.
 - `PHOTO-04/villa-collection/H027` Every Casa Scogliera photograph in “Villa comparison brochure” (villa-collection.pdf) keeps the walls, openings and features of its source frame, with nothing generated, extended, added or removed.
-- `PHOTO-04/villa-collection/H028` In each house section of “Villa comparison brochure” (villa-collection.pdf), the house name sits above that house's rates and is set larger than them.
-- `PHOTO-04/villa-collection/H029` villa-collection.pdf: the supplied monogram is Blue on Lime Wash, or its ink is recoloured Lime Wash on a Blue panel.
+- `PHOTO-04/villa-collection/H028` In each house section of “Villa comparison brochure” (villa-collection.pdf), the house name sits above that house's rates.
+- `PHOTO-04/villa-collection/H029` The monogram in “Villa comparison brochure” (villa-collection.pdf) is Verranza Blue on Lime Wash, or its ink is recoloured Lime Wash on a Verranza Blue panel.
 - `PHOTO-04/villa-collection/H030` The type, panel, rule, button and icon colours in “Villa comparison brochure” (villa-collection.pdf) come only from #24425A, #EFE9DC, #C4B5A0, #6E7355, #4C7A8C and #2A2925.
-- `PHOTO-04/villa-collection/H031` Verranza Blue #24425A and Lime Wash #EFE9DC both appear in the designed parts of “Villa comparison brochure” (villa-collection.pdf).
-- `PHOTO-04/villa-collection/H032` Every panel and ground in “Villa comparison brochure” (villa-collection.pdf) is solid at full opacity, and no scrim, gradient or overlay of any colour, black and white included, sits over a photograph.
-- `PHOTO-04/villa-collection/H033` In “Villa comparison brochure” (villa-collection.pdf), type on Verranza Blue #24425A is Lime Wash #EFE9DC; on Lime Wash, house name headings and display lines are Verranza Blue, and body text, rates and captions are Ink Charcoal #2A2925.
-- `PHOTO-04/villa-collection/H034` No accent colour (#C4B5A0, #6E7355 and #4C7A8C) is used as a ground, a panel or body text in “Villa comparison brochure” (villa-collection.pdf).
-- `PHOTO-04/villa-collection/H035` Every heading, subheading and standfirst in “Villa comparison brochure” (villa-collection.pdf) is set in Cormorant Garamond Light, with no heavier weight.
-- `PHOTO-04/villa-collection/H036` Body text, rates, captions and the sleeps and minimum-stay lines in “Villa comparison brochure” (villa-collection.pdf) are Source Sans 3 Regular, never the serif and never a bolder weight.
-- `PHOTO-04/villa-collection/H037` Each house name heading in “Villa comparison brochure” (villa-collection.pdf) opens with its “C” drawn at twice the cap height of the rest of the word.
-- `PHOTO-04/villa-collection/H038` No numeral in “Villa comparison brochure” (villa-collection.pdf) is set in the serif; every rate, sleeps figure and minimum stay is in Source Sans 3 Regular tabular lining figures.
+- `PHOTO-04/villa-collection/H031` Verranza Blue #24425A and Lime Wash #EFE9DC both appear in the type, grounds or panels of “Villa comparison brochure” (villa-collection.pdf), not only in the photographs.
+- `PHOTO-04/villa-collection/H032` Every page ground and panel in “Villa comparison brochure” (villa-collection.pdf) is solid colour at full opacity, with no tint, transparency, gradient, shadow or blend mode.
+- `PHOTO-04/villa-collection/H033` All type on Verranza Blue #24425A grounds and panels in “Villa comparison brochure” (villa-collection.pdf) is Lime Wash #EFE9DC.
+- `PHOTO-04/villa-collection/H034` In “Villa comparison brochure” (villa-collection.pdf), the accents #C4B5A0, #6E7355 and #4C7A8C are used only for hairline rules, dividers or small labels.
+- `PHOTO-04/villa-collection/H035` Every house name, heading, subheading and standfirst in “Villa comparison brochure” (villa-collection.pdf) is set in Cormorant Garamond Light, with no heavier weight, apart from any numerals in them.
+- `PHOTO-04/villa-collection/H036` Body text, rates, captions and the sleeps and minimum-stay lines in “Villa comparison brochure” (villa-collection.pdf) are Source Sans 3 Regular.
+- `PHOTO-04/villa-collection/H037` Each house name heading in “Villa comparison brochure” (villa-collection.pdf) opens with a “C” twice as tall as the capital starting the second word.
+- `PHOTO-04/villa-collection/H038` No numeral in “Villa comparison brochure” (villa-collection.pdf) is set in Cormorant Garamond, including numerals inside headings.
 - `PHOTO-04/villa-collection/H039` No line of body text in “Villa comparison brochure” (villa-collection.pdf) runs longer than 65 characters.
-- `PHOTO-04/villa-collection/H040` In “Villa comparison brochure” (villa-collection.pdf), the Casa Verranza, Casa Oliveto and Casa Scogliera sections each name their house's stone, water and light, and no copy makes a luxury or superlative claim, such as stunning or exclusive.
+- `PHOTO-04/villa-collection/H040` The Casa Verranza section of “Villa comparison brochure” (villa-collection.pdf) names the house's stone, its water and its light, for example its walls, its pool or cove, and its daylight.
 - `PHOTO-04/booking-hero-oliveto/H004` The type, panel, rule, button and icon colours on “Villa booking hero - Oliveto” (booking-hero-oliveto.png) come only from #24425A, #EFE9DC, #C4B5A0, #6E7355, #4C7A8C and #2A2925.
 - `PHOTO-04/booking-hero-oliveto/H005` The lime-washed walls on “Villa booking hero - Oliveto” (booking-hero-oliveto.png) read neutral off-white, without the green shade-sail cast found in every Casa Oliveto frame.
 - `PHOTO-04/booking-hero-oliveto/H006` The largest text on “Villa booking hero - Oliveto” (booking-hero-oliveto.png) is the house name “Casa Oliveto”.
 - `PHOTO-04/booking-hero-oliveto/H007` The offer price on “Villa booking hero - Oliveto” (booking-hero-oliveto.png) is presented as a from price, for example “from 590”.
 - `PHOTO-04/booking-hero-oliveto/H008` The season on “Villa booking hero - Oliveto” (booking-hero-oliveto.png) is written “Spring”, not the code “S1”.
-- `PHOTO-04/booking-hero-oliveto/H009` Any sleeps figure on “Villa booking hero - Oliveto” (booking-hero-oliveto.png) reads 8.
-- `PHOTO-04/booking-hero-oliveto/H010` Any minimum stay on “Villa booking hero - Oliveto” (booking-hero-oliveto.png) reads 3 nights, the Casa Oliveto Spring minimum in rates_2027.csv.
-- `PHOTO-04/booking-hero-oliveto/H011` The photograph on “Villa booking hero - Oliveto” (booking-hero-oliveto.png) keeps the walls, openings and features of the Casa Oliveto frame it is built from, with nothing generated, extended, added or removed.
+- `PHOTO-04/booking-hero-oliveto/H009` If a sleeps figure appears on “Villa booking hero - Oliveto” (booking-hero-oliveto.png), it reads 8.
+- `PHOTO-04/booking-hero-oliveto/H010` If a minimum stay appears on “Villa booking hero - Oliveto” (booking-hero-oliveto.png), it reads 3 nights, the Casa Oliveto Spring minimum in rates_2027.csv.
+- `PHOTO-04/booking-hero-oliveto/H011` The photograph on “Villa booking hero - Oliveto” (booking-hero-oliveto.png) keeps the walls, openings and features of its Casa Oliveto frame, with nothing generated, extended, added or removed.
 - `PHOTO-04/booking-hero-oliveto/H012` Where pool water appears on “Villa booking hero - Oliveto” (booking-hero-oliveto.png), it reads deep blue as in oliveto_pool.jpg, not pale turquoise, grey or green.
-- `PHOTO-04/booking-hero-oliveto/H013` Verranza Blue #24425A and Lime Wash #EFE9DC both appear in the designed parts of “Villa booking hero - Oliveto” (booking-hero-oliveto.png).
-- `PHOTO-04/booking-hero-oliveto/H014` Every panel and button on “Villa booking hero - Oliveto” (booking-hero-oliveto.png) is solid at full opacity, and no scrim, gradient or overlay of any colour, black and white included, sits over the photograph.
+- `PHOTO-04/booking-hero-oliveto/H013` Verranza Blue #24425A and Lime Wash #EFE9DC both appear in the type, panels or buttons on “Villa booking hero - Oliveto” (booking-hero-oliveto.png), not only in the photograph.
+- `PHOTO-04/booking-hero-oliveto/H014` Every panel and button on “Villa booking hero - Oliveto” (booking-hero-oliveto.png) is solid colour at full opacity, with no tint, transparency, gradient, shadow or blend mode.
 - `PHOTO-04/booking-hero-oliveto/H015` No gold or metallic colour is used for any type, panel, rule, button or icon on “Villa booking hero - Oliveto” (booking-hero-oliveto.png).
-- `PHOTO-04/booking-hero-oliveto/H016` On “Villa booking hero - Oliveto” (booking-hero-oliveto.png), type on Verranza Blue #24425A is Lime Wash #EFE9DC; on Lime Wash, house name, display lines and booking-button label are Verranza Blue, and body text, rates and captions are Ink Charcoal #2A2925.
-- `PHOTO-04/booking-hero-oliveto/H017` No accent colour (#C4B5A0, #6E7355 and #4C7A8C) is used as a ground, a panel or body text on “Villa booking hero - Oliveto” (booking-hero-oliveto.png).
-- `PHOTO-04/booking-hero-oliveto/H018` Every line set in Cormorant Garamond on “Villa booking hero - Oliveto” (booking-hero-oliveto.png), the house name and any standfirst, is Cormorant Garamond Light, with no heavier weight.
-- `PHOTO-04/booking-hero-oliveto/H019` Body text, the booking line, rates, captions and any sleeps or minimum-stay line on “Villa booking hero - Oliveto” (booking-hero-oliveto.png) are Source Sans 3 Regular, never the serif and never a bolder weight.
-- `PHOTO-04/booking-hero-oliveto/H020` The “C” opening “Casa Oliveto” on “Villa booking hero - Oliveto” (booking-hero-oliveto.png) is drawn at twice the cap height of the rest of the word.
-- `PHOTO-04/booking-hero-oliveto/H021` No numeral on “Villa booking hero - Oliveto” (booking-hero-oliveto.png) is set in the serif; every figure is in Source Sans 3 Regular tabular lining figures.
+- `PHOTO-04/booking-hero-oliveto/H016` All type on a Verranza Blue #24425A panel or button on “Villa booking hero - Oliveto” (booking-hero-oliveto.png) is Lime Wash #EFE9DC.
+- `PHOTO-04/booking-hero-oliveto/H017` On “Villa booking hero - Oliveto” (booking-hero-oliveto.png), the accents #C4B5A0, #6E7355 and #4C7A8C are used only for hairline rules, dividers or small labels.
+- `PHOTO-04/booking-hero-oliveto/H018` The house name and any standfirst on “Villa booking hero - Oliveto” (booking-hero-oliveto.png) are set in Cormorant Garamond Light, with no heavier weight.
+- `PHOTO-04/booking-hero-oliveto/H019` Body text, the booking action, rates, captions and any sleeps or minimum-stay line on “Villa booking hero - Oliveto” (booking-hero-oliveto.png) are Source Sans 3 Regular.
+- `PHOTO-04/booking-hero-oliveto/H020` The opening “C” of “Casa Oliveto” on “Villa booking hero - Oliveto” (booking-hero-oliveto.png) stands twice as tall as the capital “O” of “Oliveto”.
+- `PHOTO-04/booking-hero-oliveto/H021` No numeral on “Villa booking hero - Oliveto” (booking-hero-oliveto.png) is set in Cormorant Garamond; every figure, including any in the house name line, is in Source Sans 3.
 - `PHOTO-04/booking-hero-oliveto/H022` No line of body or booking text on “Villa booking hero - Oliveto” (booking-hero-oliveto.png) runs longer than 65 characters.
-- `PHOTO-04/booking-hero-oliveto/H023` The copy on “Villa booking hero - Oliveto” (booking-hero-oliveto.png) names Casa Oliveto's stone, its water and its light, and makes no luxury or superlative claim, such as luxury, stunning, breathtaking or exclusive.
+- `PHOTO-04/booking-hero-oliveto/H023` The copy on “Villa booking hero - Oliveto” (booking-hero-oliveto.png) names Casa Oliveto's stone, its water and its light, for example its walls, its pool or cove, and its daylight.
 - `PHOTO-04/booking-hero-oliveto/H024` On “Villa booking hero - Oliveto” (booking-hero-oliveto.png) the house name “Casa Oliveto” sits above the nightly rate.
-- `PHOTO-04/booking-hero-verranza/H004` The photograph on “Villa booking hero - Verranza” (booking-hero-verranza.png) keeps the walls, openings and features of the Casa Verranza frame it is built from, with nothing generated, extended, added or removed.
+- `PHOTO-04/booking-hero-verranza/H004` The photograph on “Villa booking hero - Verranza” (booking-hero-verranza.png) keeps the walls, openings and features of its Casa Verranza frame, with nothing generated, extended, added or removed.
 - `PHOTO-04/booking-hero-verranza/H005` The offer price on “Villa booking hero - Verranza” (booking-hero-verranza.png) is presented as a from price, for example “from 520”.
 - `PHOTO-04/booking-hero-verranza/H006` The season on “Villa booking hero - Verranza” (booking-hero-verranza.png) is written “Spring”, not the code “S1”.
-- `PHOTO-04/booking-hero-verranza/H007` Any sleeps figure on “Villa booking hero - Verranza” (booking-hero-verranza.png) reads 6.
-- `PHOTO-04/booking-hero-verranza/H008` Any minimum stay on “Villa booking hero - Verranza” (booking-hero-verranza.png) reads 3 nights, the Casa Verranza Spring minimum in rates_2027.csv.
+- `PHOTO-04/booking-hero-verranza/H007` If a sleeps figure appears on “Villa booking hero - Verranza” (booking-hero-verranza.png), it reads 6.
+- `PHOTO-04/booking-hero-verranza/H008` If a minimum stay appears on “Villa booking hero - Verranza” (booking-hero-verranza.png), it reads 3 nights, the Casa Verranza Spring minimum in rates_2027.csv.
 - `PHOTO-04/booking-hero-verranza/H009` The walls and stone on “Villa booking hero - Verranza” (booking-hero-verranza.png) read neutral, without the orange afternoon cast found in every Casa Verranza frame.
 - `PHOTO-04/booking-hero-verranza/H010` Where pool water appears on “Villa booking hero - Verranza” (booking-hero-verranza.png), it reads deep Mediterranean blue as in verranza_pool.jpg, not pale turquoise, grey or green.
 - `PHOTO-04/booking-hero-verranza/H011` The type, panel, rule, button and icon colours on “Villa booking hero - Verranza” (booking-hero-verranza.png) come only from #24425A, #EFE9DC, #C4B5A0, #6E7355, #4C7A8C and #2A2925.
-- `PHOTO-04/booking-hero-verranza/H012` Verranza Blue #24425A and Lime Wash #EFE9DC both appear in the designed parts of “Villa booking hero - Verranza” (booking-hero-verranza.png).
-- `PHOTO-04/booking-hero-verranza/H013` Every panel and button on “Villa booking hero - Verranza” (booking-hero-verranza.png) is solid at full opacity, and no scrim, gradient or overlay of any colour, black and white included, sits over the photograph.
+- `PHOTO-04/booking-hero-verranza/H012` Verranza Blue #24425A and Lime Wash #EFE9DC both appear in the type, panels or buttons on “Villa booking hero - Verranza” (booking-hero-verranza.png), not only in the photograph.
+- `PHOTO-04/booking-hero-verranza/H013` Every panel and button on “Villa booking hero - Verranza” (booking-hero-verranza.png) is solid colour at full opacity, with no tint, transparency, gradient, shadow or blend mode.
 - `PHOTO-04/booking-hero-verranza/H014` No gold or metallic colour is used for any type, panel, rule, button or icon on “Villa booking hero - Verranza” (booking-hero-verranza.png).
-- `PHOTO-04/booking-hero-verranza/H015` On “Villa booking hero - Verranza” (booking-hero-verranza.png), type on Verranza Blue #24425A is Lime Wash #EFE9DC; on Lime Wash, house name, display lines and booking-button label are Verranza Blue, and body text, rates and captions are Ink Charcoal #2A2925.
-- `PHOTO-04/booking-hero-verranza/H016` No accent colour (#C4B5A0, #6E7355 and #4C7A8C) is used as a ground, a panel or body text on “Villa booking hero - Verranza” (booking-hero-verranza.png).
-- `PHOTO-04/booking-hero-verranza/H017` Every line set in Cormorant Garamond on “Villa booking hero - Verranza” (booking-hero-verranza.png), the house name and any standfirst, is Cormorant Garamond Light, with no heavier weight.
-- `PHOTO-04/booking-hero-verranza/H018` Body text, the booking line, rates, captions and any sleeps or minimum-stay line on “Villa booking hero - Verranza” (booking-hero-verranza.png) are Source Sans 3 Regular, never the serif and never a bolder weight.
-- `PHOTO-04/booking-hero-verranza/H019` The “C” opening “Casa Verranza” on “Villa booking hero - Verranza” (booking-hero-verranza.png) is drawn at twice the cap height of the rest of the word.
-- `PHOTO-04/booking-hero-verranza/H020` No numeral on “Villa booking hero - Verranza” (booking-hero-verranza.png) is set in the serif; every figure is in Source Sans 3 Regular tabular lining figures.
+- `PHOTO-04/booking-hero-verranza/H015` All type on a Verranza Blue #24425A panel or button on “Villa booking hero - Verranza” (booking-hero-verranza.png) is Lime Wash #EFE9DC.
+- `PHOTO-04/booking-hero-verranza/H016` On “Villa booking hero - Verranza” (booking-hero-verranza.png), the accents #C4B5A0, #6E7355 and #4C7A8C are used only for hairline rules, dividers or small labels.
+- `PHOTO-04/booking-hero-verranza/H017` The house name and any standfirst on “Villa booking hero - Verranza” (booking-hero-verranza.png) are set in Cormorant Garamond Light, with no heavier weight.
+- `PHOTO-04/booking-hero-verranza/H018` Body text, the booking action, rates, captions and any sleeps or minimum-stay line on “Villa booking hero - Verranza” (booking-hero-verranza.png) are Source Sans 3 Regular.
+- `PHOTO-04/booking-hero-verranza/H019` The opening “C” of “Casa Verranza” on “Villa booking hero - Verranza” (booking-hero-verranza.png) stands twice as tall as the capital “V” of “Verranza”.
+- `PHOTO-04/booking-hero-verranza/H020` No numeral on “Villa booking hero - Verranza” (booking-hero-verranza.png) is set in Cormorant Garamond; every figure, including any in the house name line, is in Source Sans 3.
 - `PHOTO-04/booking-hero-verranza/H021` No line of body or booking text on “Villa booking hero - Verranza” (booking-hero-verranza.png) runs longer than 65 characters.
-- `PHOTO-04/booking-hero-verranza/H022` The copy on “Villa booking hero - Verranza” (booking-hero-verranza.png) names Casa Verranza's stone, its water and its light, and makes no luxury or superlative claim, such as luxury, stunning, breathtaking or exclusive.
+- `PHOTO-04/booking-hero-verranza/H022` The copy on “Villa booking hero - Verranza” (booking-hero-verranza.png) names Casa Verranza's stone, its water and its light, for example its walls, its pool or cove, and its daylight.
 - `PHOTO-04/booking-hero-verranza/H023` The largest text on “Villa booking hero - Verranza” (booking-hero-verranza.png) is the house name “Casa Verranza”.
 - `PHOTO-04/booking-hero-verranza/H024` On “Villa booking hero - Verranza” (booking-hero-verranza.png) the house name “Casa Verranza” sits above the nightly rate.
 - `PHOTO-04/booking-hero-scogliera/H004` On “Villa booking hero - Scogliera” (booking-hero-scogliera.png) the house name “Casa Scogliera” sits above the nightly rate.
 - `PHOTO-04/booking-hero-scogliera/H005` The offer price on “Villa booking hero - Scogliera” (booking-hero-scogliera.png) is presented as a from price, for example “from 640”.
 - `PHOTO-04/booking-hero-scogliera/H006` The season on “Villa booking hero - Scogliera” (booking-hero-scogliera.png) is written “Spring”, not the code “S1”.
-- `PHOTO-04/booking-hero-scogliera/H007` Any sleeps figure on “Villa booking hero - Scogliera” (booking-hero-scogliera.png) reads 10, as the owner states, never the sheet's 9.
-- `PHOTO-04/booking-hero-scogliera/H008` Any minimum stay on “Villa booking hero - Scogliera” (booking-hero-scogliera.png) reads 4 nights, the Casa Scogliera Spring minimum in rates_2027.csv.
-- `PHOTO-04/booking-hero-scogliera/H009` The photograph on “Villa booking hero - Scogliera” (booking-hero-scogliera.png) keeps the walls, openings and features of the Casa Scogliera frame it is built from, with nothing generated, extended, added or removed.
-- `PHOTO-04/booking-hero-scogliera/H010` “Villa booking hero - Scogliera” (booking-hero-scogliera.png) reads in neutral daylight, keeping the neutral daylight of the Casa Scogliera frames, with no warm or green cast added.
+- `PHOTO-04/booking-hero-scogliera/H007` If a sleeps figure appears on “Villa booking hero - Scogliera” (booking-hero-scogliera.png), it reads 10, as the owner states, never the sheet's 9.
+- `PHOTO-04/booking-hero-scogliera/H008` If a minimum stay appears on “Villa booking hero - Scogliera” (booking-hero-scogliera.png), it reads 4 nights, the Casa Scogliera Spring minimum in rates_2027.csv.
+- `PHOTO-04/booking-hero-scogliera/H009` The photograph on “Villa booking hero - Scogliera” (booking-hero-scogliera.png) keeps the walls, openings and features of its Casa Scogliera frame, with nothing generated, extended, added or removed.
+- `PHOTO-04/booking-hero-scogliera/H010` The photograph on “Villa booking hero - Scogliera” (booking-hero-scogliera.png) keeps the neutral daylight of the Casa Scogliera frames, with no warm or green cast added.
 - `PHOTO-04/booking-hero-scogliera/H011` Where pool water appears on “Villa booking hero - Scogliera” (booking-hero-scogliera.png), it reads pale turquoise as in scogliera_pool.jpg, not a deeper blue, grey or green.
 - `PHOTO-04/booking-hero-scogliera/H012` The type, panel, rule, button and icon colours on “Villa booking hero - Scogliera” (booking-hero-scogliera.png) come only from #24425A, #EFE9DC, #C4B5A0, #6E7355, #4C7A8C and #2A2925.
-- `PHOTO-04/booking-hero-scogliera/H013` Verranza Blue #24425A and Lime Wash #EFE9DC both appear in the designed parts of “Villa booking hero - Scogliera” (booking-hero-scogliera.png).
-- `PHOTO-04/booking-hero-scogliera/H014` Every panel and button on “Villa booking hero - Scogliera” (booking-hero-scogliera.png) is solid at full opacity, and no scrim, gradient or overlay of any colour, black and white included, sits over the photograph.
+- `PHOTO-04/booking-hero-scogliera/H013` Verranza Blue #24425A and Lime Wash #EFE9DC both appear in the type, panels or buttons on “Villa booking hero - Scogliera” (booking-hero-scogliera.png), not only in the photograph.
+- `PHOTO-04/booking-hero-scogliera/H014` Every panel and button on “Villa booking hero - Scogliera” (booking-hero-scogliera.png) is solid colour at full opacity, with no tint, transparency, gradient, shadow or blend mode.
 - `PHOTO-04/booking-hero-scogliera/H015` No gold or metallic colour is used for any type, panel, rule, button or icon on “Villa booking hero - Scogliera” (booking-hero-scogliera.png).
-- `PHOTO-04/booking-hero-scogliera/H016` On “Villa booking hero - Scogliera” (booking-hero-scogliera.png), type on Verranza Blue #24425A is Lime Wash #EFE9DC; on Lime Wash, house name, display lines and booking-button label are Verranza Blue, and body text, rates and captions are Ink Charcoal #2A2925.
-- `PHOTO-04/booking-hero-scogliera/H017` No accent colour (#C4B5A0, #6E7355 and #4C7A8C) is used as a ground, a panel or body text on “Villa booking hero - Scogliera” (booking-hero-scogliera.png).
-- `PHOTO-04/booking-hero-scogliera/H018` Every line set in Cormorant Garamond on “Villa booking hero - Scogliera” (booking-hero-scogliera.png), the house name and any standfirst, is Cormorant Garamond Light, with no heavier weight.
-- `PHOTO-04/booking-hero-scogliera/H019` Body text, the booking line, rates, captions and any sleeps or minimum-stay line on “Villa booking hero - Scogliera” (booking-hero-scogliera.png) are Source Sans 3 Regular, never the serif and never a bolder weight.
-- `PHOTO-04/booking-hero-scogliera/H020` The “C” opening “Casa Scogliera” on “Villa booking hero - Scogliera” (booking-hero-scogliera.png) is drawn at twice the cap height of the rest of the word.
-- `PHOTO-04/booking-hero-scogliera/H021` No numeral on “Villa booking hero - Scogliera” (booking-hero-scogliera.png) is set in the serif; every figure is in Source Sans 3 Regular tabular lining figures.
+- `PHOTO-04/booking-hero-scogliera/H016` All type on a Verranza Blue #24425A panel or button on “Villa booking hero - Scogliera” (booking-hero-scogliera.png) is Lime Wash #EFE9DC.
+- `PHOTO-04/booking-hero-scogliera/H017` On “Villa booking hero - Scogliera” (booking-hero-scogliera.png), the accents #C4B5A0, #6E7355 and #4C7A8C are used only for hairline rules, dividers or small labels.
+- `PHOTO-04/booking-hero-scogliera/H018` The house name and any standfirst on “Villa booking hero - Scogliera” (booking-hero-scogliera.png) are set in Cormorant Garamond Light, with no heavier weight.
+- `PHOTO-04/booking-hero-scogliera/H019` Body text, the booking action, rates, captions and any sleeps or minimum-stay line on “Villa booking hero - Scogliera” (booking-hero-scogliera.png) are Source Sans 3 Regular.
+- `PHOTO-04/booking-hero-scogliera/H020` The opening “C” of “Casa Scogliera” on “Villa booking hero - Scogliera” (booking-hero-scogliera.png) stands twice as tall as the capital “S” of “Scogliera”.
+- `PHOTO-04/booking-hero-scogliera/H021` No numeral on “Villa booking hero - Scogliera” (booking-hero-scogliera.png) is set in Cormorant Garamond; every figure, including any in the house name line, is in Source Sans 3.
 - `PHOTO-04/booking-hero-scogliera/H022` No line of body or booking text on “Villa booking hero - Scogliera” (booking-hero-scogliera.png) runs longer than 65 characters.
-- `PHOTO-04/booking-hero-scogliera/H023` The copy on “Villa booking hero - Scogliera” (booking-hero-scogliera.png) names Casa Scogliera's stone, its water and its light, and makes no luxury or superlative claim, such as luxury, stunning, breathtaking or exclusive.
+- `PHOTO-04/booking-hero-scogliera/H023` The copy on “Villa booking hero - Scogliera” (booking-hero-scogliera.png) names Casa Scogliera's stone, its water and its light, for example its walls, its pool or cove, and its daylight.
 - `PHOTO-04/booking-hero-scogliera/H024` The largest text on “Villa booking hero - Scogliera” (booking-hero-scogliera.png) is the house name “Casa Scogliera”.
-- `PHOTO-04/booking-hero-oliveto/H025` booking-hero-oliveto.png: house-name letters other than the enlarged initial uses Cormorant Garamond Light (when present).
-- `PHOTO-04/booking-hero-oliveto/H026` booking-hero-oliveto.png: house-name letters other than the enlarged initial has font size 72 px (when present).
-- `PHOTO-04/booking-hero-oliveto/H027` booking-hero-oliveto.png: house-name letters other than the enlarged initial has 78 px leading on multiline text (when present).
-- `PHOTO-04/booking-hero-oliveto/H028` booking-hero-oliveto.png: house-name letters other than the enlarged initial uses tracking -10/1000 em (when present).
-- `PHOTO-04/booking-hero-oliveto/H029` booking-hero-oliveto.png: standfirst uses Cormorant Garamond Light (when present).
-- `PHOTO-04/booking-hero-oliveto/H030` booking-hero-oliveto.png: standfirst has font size 26 px (when present).
-- `PHOTO-04/booking-hero-oliveto/H031` booking-hero-oliveto.png: standfirst has 30 px leading on multiline text (when present).
-- `PHOTO-04/booking-hero-oliveto/H032` booking-hero-oliveto.png: standfirst uses tracking -4/1000 em (when present).
-- `PHOTO-04/booking-hero-oliveto/H033` booking-hero-oliveto.png: body text uses Source Sans 3 Regular (when present).
-- `PHOTO-04/booking-hero-oliveto/H034` booking-hero-oliveto.png: body text has font size 20 px (when present).
-- `PHOTO-04/booking-hero-oliveto/H035` booking-hero-oliveto.png: body text has 30 px leading on multiline text (when present).
-- `PHOTO-04/booking-hero-oliveto/H036` booking-hero-oliveto.png: body text uses tracking +0/1000 em (when present).
-- `PHOTO-04/booking-hero-oliveto/H037` booking-hero-oliveto.png: rates uses Source Sans 3 Regular (when present).
-- `PHOTO-04/booking-hero-oliveto/H038` booking-hero-oliveto.png: rates has font size 15 px (when present).
-- `PHOTO-04/booking-hero-oliveto/H039` booking-hero-oliveto.png: rates has 22 px leading on multiline text (when present).
-- `PHOTO-04/booking-hero-oliveto/H040` booking-hero-oliveto.png: rates uses tracking +8/1000 em (when present).
-- `PHOTO-04/booking-hero-oliveto/H041` booking-hero-oliveto.png: captions uses Source Sans 3 Regular (when present).
-- `PHOTO-04/booking-hero-oliveto/H042` booking-hero-oliveto.png: captions has font size 15 px (when present).
-- `PHOTO-04/booking-hero-oliveto/H043` booking-hero-oliveto.png: captions has 22 px leading on multiline text (when present).
-- `PHOTO-04/booking-hero-oliveto/H044` booking-hero-oliveto.png: captions uses tracking +8/1000 em (when present).
-- `PHOTO-04/booking-hero-oliveto/H045` booking-hero-oliveto.png: booking-action text uses Source Sans 3 Regular (when present).
-- `PHOTO-04/booking-hero-oliveto/H046` booking-hero-oliveto.png: booking-action text has font size 20 px (when present).
-- `PHOTO-04/booking-hero-oliveto/H047` booking-hero-oliveto.png: booking-action text has 30 px leading on multiline text (when present).
-- `PHOTO-04/booking-hero-oliveto/H048` booking-hero-oliveto.png: booking-action text uses tracking +0/1000 em (when present).
-- `PHOTO-04/booking-hero-scogliera/H025` booking-hero-scogliera.png: house-name letters other than the enlarged initial uses Cormorant Garamond Light (when present).
-- `PHOTO-04/booking-hero-scogliera/H026` booking-hero-scogliera.png: house-name letters other than the enlarged initial has font size 72 px (when present).
-- `PHOTO-04/booking-hero-scogliera/H027` booking-hero-scogliera.png: house-name letters other than the enlarged initial has 78 px leading on multiline text (when present).
-- `PHOTO-04/booking-hero-scogliera/H028` booking-hero-scogliera.png: house-name letters other than the enlarged initial uses tracking -10/1000 em (when present).
-- `PHOTO-04/booking-hero-scogliera/H029` booking-hero-scogliera.png: standfirst uses Cormorant Garamond Light (when present).
-- `PHOTO-04/booking-hero-scogliera/H030` booking-hero-scogliera.png: standfirst has font size 26 px (when present).
-- `PHOTO-04/booking-hero-scogliera/H031` booking-hero-scogliera.png: standfirst has 30 px leading on multiline text (when present).
-- `PHOTO-04/booking-hero-scogliera/H032` booking-hero-scogliera.png: standfirst uses tracking -4/1000 em (when present).
-- `PHOTO-04/booking-hero-scogliera/H033` booking-hero-scogliera.png: body text uses Source Sans 3 Regular (when present).
-- `PHOTO-04/booking-hero-scogliera/H034` booking-hero-scogliera.png: body text has font size 20 px (when present).
-- `PHOTO-04/booking-hero-scogliera/H035` booking-hero-scogliera.png: body text has 30 px leading on multiline text (when present).
-- `PHOTO-04/booking-hero-scogliera/H036` booking-hero-scogliera.png: body text uses tracking +0/1000 em (when present).
-- `PHOTO-04/booking-hero-scogliera/H037` booking-hero-scogliera.png: rates uses Source Sans 3 Regular (when present).
-- `PHOTO-04/booking-hero-scogliera/H038` booking-hero-scogliera.png: rates has font size 15 px (when present).
-- `PHOTO-04/booking-hero-scogliera/H039` booking-hero-scogliera.png: rates has 22 px leading on multiline text (when present).
-- `PHOTO-04/booking-hero-scogliera/H040` booking-hero-scogliera.png: rates uses tracking +8/1000 em (when present).
-- `PHOTO-04/booking-hero-scogliera/H041` booking-hero-scogliera.png: captions uses Source Sans 3 Regular (when present).
-- `PHOTO-04/booking-hero-scogliera/H042` booking-hero-scogliera.png: captions has font size 15 px (when present).
-- `PHOTO-04/booking-hero-scogliera/H043` booking-hero-scogliera.png: captions has 22 px leading on multiline text (when present).
-- `PHOTO-04/booking-hero-scogliera/H044` booking-hero-scogliera.png: captions uses tracking +8/1000 em (when present).
-- `PHOTO-04/booking-hero-scogliera/H045` booking-hero-scogliera.png: booking-action text uses Source Sans 3 Regular (when present).
-- `PHOTO-04/booking-hero-scogliera/H046` booking-hero-scogliera.png: booking-action text has font size 20 px (when present).
-- `PHOTO-04/booking-hero-scogliera/H047` booking-hero-scogliera.png: booking-action text has 30 px leading on multiline text (when present).
-- `PHOTO-04/booking-hero-scogliera/H048` booking-hero-scogliera.png: booking-action text uses tracking +0/1000 em (when present).
-- `PHOTO-04/booking-hero-verranza/H025` booking-hero-verranza.png: house-name letters other than the enlarged initial uses Cormorant Garamond Light (when present).
-- `PHOTO-04/booking-hero-verranza/H026` booking-hero-verranza.png: house-name letters other than the enlarged initial has font size 72 px (when present).
-- `PHOTO-04/booking-hero-verranza/H027` booking-hero-verranza.png: house-name letters other than the enlarged initial has 78 px leading on multiline text (when present).
-- `PHOTO-04/booking-hero-verranza/H028` booking-hero-verranza.png: house-name letters other than the enlarged initial uses tracking -10/1000 em (when present).
-- `PHOTO-04/booking-hero-verranza/H029` booking-hero-verranza.png: standfirst uses Cormorant Garamond Light (when present).
-- `PHOTO-04/booking-hero-verranza/H030` booking-hero-verranza.png: standfirst has font size 26 px (when present).
-- `PHOTO-04/booking-hero-verranza/H031` booking-hero-verranza.png: standfirst has 30 px leading on multiline text (when present).
-- `PHOTO-04/booking-hero-verranza/H032` booking-hero-verranza.png: standfirst uses tracking -4/1000 em (when present).
-- `PHOTO-04/booking-hero-verranza/H033` booking-hero-verranza.png: body text uses Source Sans 3 Regular (when present).
-- `PHOTO-04/booking-hero-verranza/H034` booking-hero-verranza.png: body text has font size 20 px (when present).
-- `PHOTO-04/booking-hero-verranza/H035` booking-hero-verranza.png: body text has 30 px leading on multiline text (when present).
-- `PHOTO-04/booking-hero-verranza/H036` booking-hero-verranza.png: body text uses tracking +0/1000 em (when present).
-- `PHOTO-04/booking-hero-verranza/H037` booking-hero-verranza.png: rates uses Source Sans 3 Regular (when present).
-- `PHOTO-04/booking-hero-verranza/H038` booking-hero-verranza.png: rates has font size 15 px (when present).
-- `PHOTO-04/booking-hero-verranza/H039` booking-hero-verranza.png: rates has 22 px leading on multiline text (when present).
-- `PHOTO-04/booking-hero-verranza/H040` booking-hero-verranza.png: rates uses tracking +8/1000 em (when present).
-- `PHOTO-04/booking-hero-verranza/H041` booking-hero-verranza.png: captions uses Source Sans 3 Regular (when present).
-- `PHOTO-04/booking-hero-verranza/H042` booking-hero-verranza.png: captions has font size 15 px (when present).
-- `PHOTO-04/booking-hero-verranza/H043` booking-hero-verranza.png: captions has 22 px leading on multiline text (when present).
-- `PHOTO-04/booking-hero-verranza/H044` booking-hero-verranza.png: captions uses tracking +8/1000 em (when present).
-- `PHOTO-04/booking-hero-verranza/H045` booking-hero-verranza.png: booking-action text uses Source Sans 3 Regular (when present).
-- `PHOTO-04/booking-hero-verranza/H046` booking-hero-verranza.png: booking-action text has font size 20 px (when present).
-- `PHOTO-04/booking-hero-verranza/H047` booking-hero-verranza.png: booking-action text has 30 px leading on multiline text (when present).
-- `PHOTO-04/booking-hero-verranza/H048` booking-hero-verranza.png: booking-action text uses tracking +0/1000 em (when present).
-- `PHOTO-04/villa-collection/H041` villa-collection.pdf: house-name letters other than the enlarged initial uses Cormorant Garamond Light (when present).
-- `PHOTO-04/villa-collection/H042` villa-collection.pdf: house-name letters other than the enlarged initial has font size 34 pt (when present).
-- `PHOTO-04/villa-collection/H043` villa-collection.pdf: house-name letters other than the enlarged initial uses tracking -10/1000 em (when present).
-- `PHOTO-04/villa-collection/H044` villa-collection.pdf: standfirst uses Cormorant Garamond Light (when present).
-- `PHOTO-04/villa-collection/H045` villa-collection.pdf: standfirst uses tracking -4/1000 em (when present).
-- `PHOTO-04/villa-collection/H046` villa-collection.pdf: body text uses Source Sans 3 Regular (when present).
-- `PHOTO-04/villa-collection/H047` villa-collection.pdf: body text has font size 10 pt (when present).
-- `PHOTO-04/villa-collection/H048` villa-collection.pdf: body text has 15 pt leading on multiline text (when present).
-- `PHOTO-04/villa-collection/H049` villa-collection.pdf: body text uses tracking +0/1000 em (when present).
-- `PHOTO-04/villa-collection/H050` villa-collection.pdf: rates uses Source Sans 3 Regular (when present).
-- `PHOTO-04/villa-collection/H051` villa-collection.pdf: rates has font size 9 pt (when present).
-- `PHOTO-04/villa-collection/H052` villa-collection.pdf: rates uses tracking +8/1000 em (when present).
-- `PHOTO-04/villa-collection/H053` villa-collection.pdf: captions uses Source Sans 3 Regular (when present).
-- `PHOTO-04/villa-collection/H054` villa-collection.pdf: captions uses tracking +8/1000 em (when present).
-- `PHOTO-04/booking-hero-oliveto/R13-colour-profile` booking-hero-oliveto.png: uses an sRGB colour profile.
-- `PHOTO-04/booking-hero-scogliera/R13-colour-profile` booking-hero-scogliera.png: uses an sRGB colour profile.
-- `PHOTO-04/booking-hero-verranza/R13-colour-profile` booking-hero-verranza.png: uses an sRGB colour profile.
-- `PHOTO-04/villa-collection/R13-pdf-profile` villa-collection.pdf: is exported for sRGB screen viewing, not as a CMYK press master.
-- `PHOTO-04/villa-collection/R13-pdf-fonts` villa-collection.pdf: has no unembedded font dependency.
+- `PHOTO-04/villa-collection/H042` In Acrobat's text properties, each house name heading in “Villa comparison brochure” (villa-collection.pdf) is 34 pt, not counting its enlarged initial.
+- `PHOTO-04/villa-collection/H047` In Acrobat's text properties, body text in “Villa comparison brochure” (villa-collection.pdf) is 10 pt.
+- `PHOTO-04/villa-collection/H048` Measured in Acrobat, wrapped body text in “Villa comparison brochure” (villa-collection.pdf) has 15 pt between baselines.
+- `PHOTO-04/booking-hero-oliveto/H049` No scrim, gradient or overlay of any colour, black and white included, is laid over the photograph on “Villa booking hero - Oliveto” (booking-hero-oliveto.png).
+- `PHOTO-04/booking-hero-oliveto/H050` Every panel and button on “Villa booking hero - Oliveto” (booking-hero-oliveto.png) is Lime Wash #EFE9DC or Verranza Blue #24425A.
+- `PHOTO-04/booking-hero-oliveto/H051` Where the house name, a display line or a booking-button label sits on Lime Wash on “Villa booking hero - Oliveto” (booking-hero-oliveto.png), it is Verranza Blue #24425A.
+- `PHOTO-04/booking-hero-oliveto/H052` Body text, rates and captions sitting on Lime Wash on “Villa booking hero - Oliveto” (booking-hero-oliveto.png) are Ink Charcoal #2A2925.
+- `PHOTO-04/booking-hero-oliveto/H053` The photograph on “Villa booking hero - Oliveto” (booking-hero-oliveto.png) keeps its own natural colour and is not tinted toward Verranza Blue or any other palette colour.
+- `PHOTO-04/booking-hero-oliveto/H054` No fake evening glow or warm sunset grade is added to the photograph on “Villa booking hero - Oliveto” (booking-hero-oliveto.png).
+- `PHOTO-04/booking-hero-oliveto/H055` The shadows in the photograph on “Villa booking hero - Oliveto” (booking-hero-oliveto.png) keep visible detail, with no crushed blacks.
+- `PHOTO-04/booking-hero-oliveto/H056` If the gate monogram appears on “Villa booking hero - Oliveto” (booking-hero-oliveto.png), it is Verranza Blue on Lime Wash, or Lime Wash on a Verranza Blue panel.
+- `PHOTO-04/booking-hero-oliveto/H057` If the gate monogram appears on “Villa booking hero - Oliveto” (booking-hero-oliveto.png), it keeps every part of verranza_monogram_transparent.png: the interlocked “V” and “C”, the oval rule and the small anchor.
+- `PHOTO-04/booking-hero-oliveto/H058` No copy on “Villa booking hero - Oliveto” (booking-hero-oliveto.png) makes a luxury or superlative claim, such as luxury, stunning, breathtaking or exclusive.
+- `PHOTO-04/booking-hero-oliveto/H059` The offer price on “Villa booking hero - Oliveto” (booking-hero-oliveto.png) is set smaller than the booking-action text.
+- `PHOTO-04/booking-hero-scogliera/H049` No scrim, gradient or overlay of any colour, black and white included, is laid over the photograph on “Villa booking hero - Scogliera” (booking-hero-scogliera.png).
+- `PHOTO-04/booking-hero-scogliera/H050` Every panel and button on “Villa booking hero - Scogliera” (booking-hero-scogliera.png) is Lime Wash #EFE9DC or Verranza Blue #24425A.
+- `PHOTO-04/booking-hero-scogliera/H051` Where the house name, a display line or a booking-button label sits on Lime Wash on “Villa booking hero - Scogliera” (booking-hero-scogliera.png), it is Verranza Blue #24425A.
+- `PHOTO-04/booking-hero-scogliera/H052` Body text, rates and captions sitting on Lime Wash on “Villa booking hero - Scogliera” (booking-hero-scogliera.png) are Ink Charcoal #2A2925.
+- `PHOTO-04/booking-hero-scogliera/H053` The photograph on “Villa booking hero - Scogliera” (booking-hero-scogliera.png) keeps its own natural colour and is not tinted toward Verranza Blue or any other palette colour.
+- `PHOTO-04/booking-hero-scogliera/H054` No fake evening glow or warm sunset grade is added to the photograph on “Villa booking hero - Scogliera” (booking-hero-scogliera.png).
+- `PHOTO-04/booking-hero-scogliera/H055` The shadows in the photograph on “Villa booking hero - Scogliera” (booking-hero-scogliera.png) keep visible detail, with no crushed blacks.
+- `PHOTO-04/booking-hero-scogliera/H056` If the gate monogram appears on “Villa booking hero - Scogliera” (booking-hero-scogliera.png), it is Verranza Blue on Lime Wash, or Lime Wash on a Verranza Blue panel.
+- `PHOTO-04/booking-hero-scogliera/H057` If the gate monogram appears on “Villa booking hero - Scogliera” (booking-hero-scogliera.png), it keeps every part of verranza_monogram_transparent.png: the interlocked “V” and “C”, the oval rule and the small anchor.
+- `PHOTO-04/booking-hero-scogliera/H058` No copy on “Villa booking hero - Scogliera” (booking-hero-scogliera.png) makes a luxury or superlative claim, such as luxury, stunning, breathtaking or exclusive.
+- `PHOTO-04/booking-hero-scogliera/H059` The offer price on “Villa booking hero - Scogliera” (booking-hero-scogliera.png) is set smaller than the booking-action text.
+- `PHOTO-04/booking-hero-verranza/H049` No scrim, gradient or overlay of any colour, black and white included, is laid over the photograph on “Villa booking hero - Verranza” (booking-hero-verranza.png).
+- `PHOTO-04/booking-hero-verranza/H050` Every panel and button on “Villa booking hero - Verranza” (booking-hero-verranza.png) is Lime Wash #EFE9DC or Verranza Blue #24425A.
+- `PHOTO-04/booking-hero-verranza/H051` Where the house name, a display line or a booking-button label sits on Lime Wash on “Villa booking hero - Verranza” (booking-hero-verranza.png), it is Verranza Blue #24425A.
+- `PHOTO-04/booking-hero-verranza/H052` Body text, rates and captions sitting on Lime Wash on “Villa booking hero - Verranza” (booking-hero-verranza.png) are Ink Charcoal #2A2925.
+- `PHOTO-04/booking-hero-verranza/H053` The photograph on “Villa booking hero - Verranza” (booking-hero-verranza.png) keeps its own natural colour and is not tinted toward Verranza Blue or any other palette colour.
+- `PHOTO-04/booking-hero-verranza/H054` No fake evening glow or warm sunset grade is added to the photograph on “Villa booking hero - Verranza” (booking-hero-verranza.png).
+- `PHOTO-04/booking-hero-verranza/H055` The shadows in the photograph on “Villa booking hero - Verranza” (booking-hero-verranza.png) keep visible detail, with no crushed blacks.
+- `PHOTO-04/booking-hero-verranza/H056` If the gate monogram appears on “Villa booking hero - Verranza” (booking-hero-verranza.png), it is Verranza Blue on Lime Wash, or Lime Wash on a Verranza Blue panel.
+- `PHOTO-04/booking-hero-verranza/H057` If the gate monogram appears on “Villa booking hero - Verranza” (booking-hero-verranza.png), it keeps every part of verranza_monogram_transparent.png: the interlocked “V” and “C”, the oval rule and the small anchor.
+- `PHOTO-04/booking-hero-verranza/H058` No copy on “Villa booking hero - Verranza” (booking-hero-verranza.png) makes a luxury or superlative claim, such as luxury, stunning, breathtaking or exclusive.
+- `PHOTO-04/booking-hero-verranza/H059` The offer price on “Villa booking hero - Verranza” (booking-hero-verranza.png) is set smaller than the booking-action text.
+- `PHOTO-04/villa-collection/H055` No scrim, gradient or overlay of any colour, black and white included, is laid over any photograph in “Villa comparison brochure” (villa-collection.pdf).
+- `PHOTO-04/villa-collection/H056` Every page ground and panel in “Villa comparison brochure” (villa-collection.pdf) is Lime Wash #EFE9DC or Verranza Blue #24425A.
+- `PHOTO-04/villa-collection/H057` Where house names or display lines sit on Lime Wash in “Villa comparison brochure” (villa-collection.pdf), they are Verranza Blue #24425A.
+- `PHOTO-04/villa-collection/H058` Body text, rates and captions sitting on Lime Wash in “Villa comparison brochure” (villa-collection.pdf) are Ink Charcoal #2A2925.
+- `PHOTO-04/villa-collection/H059` Every photograph in “Villa comparison brochure” (villa-collection.pdf) keeps its own natural colour and is not tinted toward Verranza Blue or any other palette colour.
+- `PHOTO-04/villa-collection/H060` No fake evening glow or warm sunset grade is added to any photograph in “Villa comparison brochure” (villa-collection.pdf).
+- `PHOTO-04/villa-collection/H061` The shadows in every photograph in “Villa comparison brochure” (villa-collection.pdf) keep visible detail, with no crushed blacks.
+- `PHOTO-04/villa-collection/H062` No copy in “Villa comparison brochure” (villa-collection.pdf) makes a luxury or superlative claim, such as luxury, stunning, breathtaking or exclusive.
+- `PHOTO-04/villa-collection/H063` “Villa comparison brochure” (villa-collection.pdf) carries the supplied gate monogram artwork, verranza_monogram_transparent.png, on at least one page, not a retyped or redrawn version.
+- `PHOTO-04/villa-collection/H064` In “Villa comparison brochure” (villa-collection.pdf), sleeps, minimum stays and the three seasonal rates appear in the same order and with the same labels for all three houses.
+- `PHOTO-04/villa-collection/H065` Every photograph in “Villa comparison brochure” (villa-collection.pdf) is labelled with the villa it shows, by a caption or by its house section heading.
+- `PHOTO-04/villa-collection/H066` Every secondary heading in “Villa comparison brochure” (villa-collection.pdf) is set smaller than the house names.
+- `PHOTO-04/booking-hero-oliveto/H060` If the gate monogram appears on “Villa booking hero - Oliveto” (booking-hero-oliveto.png), it is placed at 100% opacity, with no transparency or blend mode.
+- `PHOTO-04/booking-hero-oliveto/H061` Accent colours #C4B5A0, #6E7355 and #4C7A8C together cover no more than about 5% of the designed, non-photographic area of “Villa booking hero - Oliveto” (booking-hero-oliveto.png).
+- `PHOTO-04/booking-hero-oliveto/H062` The stone and limewash in the photograph on “Villa booking hero - Oliveto” (booking-hero-oliveto.png) keep their photographed texture, with no smoothed, painted or computer-rendered look.
+- `PHOTO-04/booking-hero-oliveto/H063` If the gate monogram appears on “Villa booking hero - Oliveto” (booking-hero-oliveto.png), it is the supplied verranza_monogram_transparent.png artwork, not a retyped or redrawn version.
+- `PHOTO-04/booking-hero-scogliera/H060` If the gate monogram appears on “Villa booking hero - Scogliera” (booking-hero-scogliera.png), it is placed at 100% opacity, with no transparency or blend mode.
+- `PHOTO-04/booking-hero-scogliera/H061` Accent colours #C4B5A0, #6E7355 and #4C7A8C together cover no more than about 5% of the designed, non-photographic area of “Villa booking hero - Scogliera” (booking-hero-scogliera.png).
+- `PHOTO-04/booking-hero-scogliera/H062` The stone and limewash in the photograph on “Villa booking hero - Scogliera” (booking-hero-scogliera.png) keep their photographed texture, with no smoothed, painted or computer-rendered look.
+- `PHOTO-04/booking-hero-scogliera/H063` If the gate monogram appears on “Villa booking hero - Scogliera” (booking-hero-scogliera.png), it is the supplied verranza_monogram_transparent.png artwork, not a retyped or redrawn version.
+- `PHOTO-04/booking-hero-verranza/H060` If the gate monogram appears on “Villa booking hero - Verranza” (booking-hero-verranza.png), it is placed at 100% opacity, with no transparency or blend mode.
+- `PHOTO-04/booking-hero-verranza/H061` Accent colours #C4B5A0, #6E7355 and #4C7A8C together cover no more than about 5% of the designed, non-photographic area of “Villa booking hero - Verranza” (booking-hero-verranza.png).
+- `PHOTO-04/booking-hero-verranza/H062` The stone and limewash in the photograph on “Villa booking hero - Verranza” (booking-hero-verranza.png) keep their photographed texture, with no smoothed, painted or computer-rendered look.
+- `PHOTO-04/booking-hero-verranza/H063` If the gate monogram appears on “Villa booking hero - Verranza” (booking-hero-verranza.png), it is the supplied verranza_monogram_transparent.png artwork, not a retyped or redrawn version.
+- `PHOTO-04/villa-collection/H067` In each house section of “Villa comparison brochure” (villa-collection.pdf), the house name is set larger than that house's rates.
+- `PHOTO-04/villa-collection/H068` The gate monogram in “Villa comparison brochure” (villa-collection.pdf) is placed at 100% opacity, with no transparency or blend mode.
+- `PHOTO-04/villa-collection/H069` Accent colours #C4B5A0, #6E7355 and #4C7A8C together cover no more than about 5% of the designed, non-photographic area of “Villa comparison brochure” (villa-collection.pdf).
+- `PHOTO-04/villa-collection/H070` The stone and limewash in every photograph in “Villa comparison brochure” (villa-collection.pdf) keep their photographed texture, with no smoothed, painted or computer-rendered look.
+- `PHOTO-04/villa-collection/H071` Where rates or figures are stacked in a column in “Villa comparison brochure” (villa-collection.pdf), their digits line up vertically (tabular figures).
+- `PHOTO-04/villa-collection/H072` The Casa Oliveto section of “Villa comparison brochure” (villa-collection.pdf) names the house's stone, its water and its light, for example its walls, its pool or cove, and its daylight.
+- `PHOTO-04/villa-collection/H073` The Casa Scogliera section of “Villa comparison brochure” (villa-collection.pdf) names the house's stone, its water and its light, for example its walls, its pool or cove, and its daylight.
+- `PHOTO-04/villa-collection/H074` “Villa comparison brochure” (villa-collection.pdf) gives Casa Verranza a High Summer nightly rate of 680.
+- `PHOTO-04/villa-collection/H075` “Villa comparison brochure” (villa-collection.pdf) gives Casa Verranza a High Summer minimum stay of 7 nights.
+- `PHOTO-04/villa-collection/H076` “Villa comparison brochure” (villa-collection.pdf) gives Casa Verranza an Autumn nightly rate of 560.
+- `PHOTO-04/villa-collection/H077` “Villa comparison brochure” (villa-collection.pdf) gives Casa Verranza an Autumn minimum stay of 5 nights.
+- `PHOTO-04/villa-collection/H078` “Villa comparison brochure” (villa-collection.pdf) gives Casa Oliveto a High Summer nightly rate of 740.
+- `PHOTO-04/villa-collection/H079` “Villa comparison brochure” (villa-collection.pdf) gives Casa Oliveto a High Summer minimum stay of 7 nights.
+- `PHOTO-04/villa-collection/H080` “Villa comparison brochure” (villa-collection.pdf) gives Casa Oliveto an Autumn nightly rate of 620.
+- `PHOTO-04/villa-collection/H081` “Villa comparison brochure” (villa-collection.pdf) gives Casa Oliveto an Autumn minimum stay of 5 nights.
+- `PHOTO-04/villa-collection/H082` “Villa comparison brochure” (villa-collection.pdf) gives Casa Scogliera a High Summer nightly rate of 780.
+- `PHOTO-04/villa-collection/H083` “Villa comparison brochure” (villa-collection.pdf) gives Casa Scogliera a High Summer minimum stay of 7 nights.
+- `PHOTO-04/villa-collection/H084` “Villa comparison brochure” (villa-collection.pdf) gives Casa Scogliera an Autumn nightly rate of 690.
+- `PHOTO-04/villa-collection/H085` “Villa comparison brochure” (villa-collection.pdf) gives Casa Scogliera an Autumn minimum stay of 5 nights.

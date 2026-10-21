@@ -1,0 +1,226 @@
+{
+ "LANGUAGE, ATOMICITY AND OBSERVABILITY": [
+  {
+   "severity": "major",
+   "check_ids": [
+    "PHOTO-04/villa-collection/H035"
+   ],
+   "problem": "H035 says every heading, subheading and standfirst is set in Cormorant Garamond Light. The brand rule says numerals inside a heading must be Source Sans 3 Regular, and H038 checks exactly that. A heading that correctly sets a figure such as \"Sleeps 10\" in Source Sans therefore fails H035, so the two checks contradict each other.",
+   "fix": "Every house name, heading, subheading and standfirst in “Villa comparison brochure” (villa-collection.pdf) is set in Cormorant Garamond Light, with no heavier weight, apart from any numerals in them."
+  },
+  {
+   "severity": "major",
+   "check_ids": [
+    "PHOTO-04/booking-hero-oliveto/H021",
+    "PHOTO-04/booking-hero-scogliera/H021",
+    "PHOTO-04/booking-hero-verranza/H020",
+    "PHOTO-04/villa-collection/H038"
+   ],
+   "problem": "Each check holds two facts: (a) no numeral is in the serif, and (b) every figure is in tabular lining figures. The 'Source Sans 3 Regular' part repeats the family check (H019, H018 on Verranza, and H036). Tabular versus proportional figures cannot be seen on a PNG hero that shows one price. Only figures stacked in a column show it.",
+   "fix": "Heroes: \"No numeral on “Villa booking hero - Oliveto” (booking-hero-oliveto.png) is set in Cormorant Garamond; every figure, including any in the house name line, is in Source Sans 3.\" Drop 'tabular' on the PNGs and change the house name per hero. Brochure H038: \"No numeral in “Villa comparison brochure” (villa-collection.pdf) is set in Cormorant Garamond, including numerals inside headings.\" Then add a new brochure check (K2_Q3): \"Where rates or figures are stacked in a column in “Villa comparison brochure” (villa-collection.pdf), their digits line up vertically (tabular figures).\""
+  },
+  {
+   "severity": "major",
+   "check_ids": [
+    "PHOTO-04/villa-collection/H040"
+   ],
+   "problem": "One check covers nine facts: three house sections, each naming stone, water and light. It has no stated pass standard, so an annotator cannot tell whether \"the cove\" counts as water or whether one missing item fails the whole brochure.",
+   "fix": "Split it into one check per house, keeping H040 for Verranza: \"The Casa Verranza pages of “Villa comparison brochure” (villa-collection.pdf) name the house's stone, its water and its light, for example its walls, its pool or cove, and its daylight.\" Add matching new checks for Casa Oliveto and Casa Scogliera (K2_Q3)."
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "PHOTO-04/booking-hero-oliveto/H023",
+    "PHOTO-04/booking-hero-scogliera/H023",
+    "PHOTO-04/booking-hero-verranza/H022"
+   ],
+   "problem": "\"The copy ... names Casa Oliveto's stone, its water and its light\" gives no standard. The commission only requires the name, price, season and booking action, so it is unclear whether a hero with no descriptive line passes. It is also unclear what counts as 'names its light'.",
+   "fix": "\"The descriptive line on “Villa booking hero - Oliveto” (booking-hero-oliveto.png) names Casa Oliveto's stone, its water and its light, for example its walls, its pool or cove, and its daylight.\" Repeat per hero with that house's name."
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "PHOTO-04/booking-hero-oliveto/H020",
+    "PHOTO-04/booking-hero-scogliera/H020",
+    "PHOTO-04/booking-hero-verranza/H019",
+    "PHOTO-04/villa-collection/H037"
+   ],
+   "problem": "Keep the signature rule, but fix the wording. \"Twice the cap height of the rest of the word\" is unclear for a two-word name: the rest of \"Casa\" is all lowercase, so it has no capital to measure against. Naming a visible capital gives the annotator something concrete to compare.",
+   "fix": "\"The opening “C” of “Casa Oliveto” on “Villa booking hero - Oliveto” (booking-hero-oliveto.png) stands twice as tall as the capital “O” of “Oliveto”.\" Use “S” for Scogliera and “V” for Verranza. Brochure H037: \"Each house name heading in “Villa comparison brochure” (villa-collection.pdf) opens with a “C” twice as tall as the capital starting the second word.\""
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "PHOTO-04/booking-hero-oliveto/H059",
+    "PHOTO-04/booking-hero-scogliera/H059",
+    "PHOTO-04/booking-hero-verranza/H059"
+   ],
+   "problem": "H059 says \"The rate\", but H002 and H007 on the same hero call it \"the offer price\". An annotator may wonder whether \"the rate\" means the from price or some other rate line.",
+   "fix": "\"The offer price “from 590” on “Villa booking hero - Oliveto” (booking-hero-oliveto.png) is set smaller than the booking-action text.\" Use 640 for Scogliera and 520 for Verranza."
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "PHOTO-04/booking-hero-oliveto/H017",
+    "PHOTO-04/booking-hero-scogliera/H017",
+    "PHOTO-04/booking-hero-verranza/H016",
+    "PHOTO-04/villa-collection/H034"
+   ],
+   "problem": "These are near-duplicates. The 'never as a ground, panel' clause is already checked by H050 (panels and buttons only Lime Wash or Blue) and brochure H056. The 'never body text' clause is already checked by H052/H016 (brochure H058/H033). The same fact gets scored twice on each output.",
+   "fix": "\"On “Villa booking hero - Oliveto” (booking-hero-oliveto.png), the accents #C4B5A0, #6E7355 and #4C7A8C are used only for hairline rules, dividers or small labels.\" Make the same change on each hero and in villa-collection.pdf."
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "PHOTO-04/booking-hero-oliveto/H051",
+    "PHOTO-04/booking-hero-oliveto/H052",
+    "PHOTO-04/booking-hero-scogliera/H051",
+    "PHOTO-04/booking-hero-scogliera/H052",
+    "PHOTO-04/booking-hero-verranza/H051",
+    "PHOTO-04/booking-hero-verranza/H052"
+   ],
+   "problem": "\"On Lime Wash grounds on “…” (…png), the house name ...\" stacks two 'on' phrases and reads awkwardly.",
+   "fix": "H051: \"Where the house name, a display line or a booking-button label sits on Lime Wash on “Villa booking hero - Oliveto” (booking-hero-oliveto.png), it is Verranza Blue #24425A.\" H052: \"Body text, rates and captions sitting on Lime Wash on “Villa booking hero - Oliveto” (booking-hero-oliveto.png) are Ink Charcoal #2A2925.\""
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "PHOTO-04/booking-hero-oliveto/H057",
+    "PHOTO-04/booking-hero-scogliera/H057",
+    "PHOTO-04/booking-hero-verranza/H057"
+   ],
+   "problem": "Each check combines two facts (the artwork is the supplied file, and its shape is intact) and uses the jargon 'open spaces'. The brochure already splits these into H063 and H006, and H006 names the visible parts, which is much clearer.",
+   "fix": "\"If the gate monogram appears on “Villa booking hero - Oliveto” (booking-hero-oliveto.png), it keeps every part of verranza_monogram_transparent.png: the interlocked “V” and “C”, the oval rule and the small anchor.\""
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "PHOTO-04/villa-collection/H002"
+   ],
+   "problem": "\"Sits under the season\" assumes a column layout; a table with seasons as row labels would confuse the annotator. The second clause only repeats the first.",
+   "fix": "\"Every rate in “Villa comparison brochure” (villa-collection.pdf) is labelled with the season it belongs to in rates_2027.csv.\""
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "PHOTO-04/villa-collection/H009",
+    "PHOTO-04/villa-collection/H010",
+    "PHOTO-04/villa-collection/H016",
+    "PHOTO-04/villa-collection/H017",
+    "PHOTO-04/villa-collection/H023",
+    "PHOTO-04/villa-collection/H024"
+   ],
+   "problem": "Each check holds three independent record values, one per season. A single wrong rate fails the check, but the annotator's answer does not show which season was wrong. The auto style checks A011 to A019 already split these values per season.",
+   "fix": "Split each into one check per season, for example H009: \"“Villa comparison brochure” (villa-collection.pdf) gives Casa Verranza a Spring nightly rate of 520.\" Add new checks for High Summer 680 and Autumn 560, and do the same for the minimum stays and the other houses. If volume is a concern, record a deliberate decision to treat one house-row as one record."
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "PHOTO-04/villa-collection/H048",
+    "PHOTO-04/villa-collection/H047"
+   ],
+   "problem": "Body leading of \"15 pt apart, baseline to baseline\" cannot be judged by looking; it needs a measuring tool. The same patch retired the brochure tracking checks on exactly these grounds, so the treatment is inconsistent. H047's 10 pt can be checked, but only through font properties, not by eye.",
+   "fix": "Either retire H048 with covered_by H036, with the same reason given for H049, or state the method: \"Measured in Acrobat, wrapped body text in “Villa comparison brochure” (villa-collection.pdf) has 15 pt between baselines.\" H047: \"In Acrobat's text properties, body text in “Villa comparison brochure” (villa-collection.pdf) is 10 pt.\""
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "PHOTO-04/booking-hero-oliveto/H013",
+    "PHOTO-04/booking-hero-scogliera/H013",
+    "PHOTO-04/booking-hero-verranza/H012",
+    "PHOTO-04/villa-collection/H031"
+   ],
+   "problem": "\"The designed parts\" is vague: it does not say whether a blue sky or the water in the photograph counts.",
+   "fix": "\"Verranza Blue #24425A and Lime Wash #EFE9DC both appear in the type, panels or buttons on “Villa booking hero - Oliveto” (booking-hero-oliveto.png), not only in the photograph.\""
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "PHOTO-04/villa-collection/H064"
+   ],
+   "problem": "\"In the same order and form\" is vague: 'form' gives no stated standard.",
+   "fix": "\"In “Villa comparison brochure” (villa-collection.pdf), sleeps, minimum stays and the three seasonal rates appear in the same order and with the same labels for all three houses.\""
+  }
+ ],
+ "FIDELITY AND COVERAGE": [
+  {
+   "severity": "major",
+   "check_ids": [
+    "new:bro-style-oliveto",
+    "new:bro-style-scogliera",
+    "new:bro-style-verranza",
+    "PHOTO-04/villa-collection/H042"
+   ],
+   "problem": "The three house-name pdf_text_style checks will often test the wrong placement. In verify_outputs.py, pdf_text_style returns on the FIRST page where the text appears, and on that page it reads the first match in content-stream order. The brochure has to name each house in several places: section headings, the photo captions the commission requires (\"photographs labelled by villa\"), and usually a comparison table or summary. The page order is left to the designer (\"the brochure's comparison sequence\"). Any of those mentions can come before the heading. I ran the checks on the 2026-09-28 run brochure: \"Casa Oliveto\" also appears on p5 (comparison table) and p6 (summary), in smaller sizes. If the comparison page or a captioned photo comes first, a compliant brochure fails the 34 pt check. With H042 retired, nothing reliably tests the 34 pt house-name heading.",
+   "fix": "Remove bro-style-oliveto, bro-style-scogliera and bro-style-verranza: the text is fixed, but the placement is ambiguous inside one file. Un-retire H042 and change its wording to: \"Each house name heading in “Villa comparison brochure” (villa-collection.pdf) is set at 34 pt, not counting its enlarged initial.\" Point T01's villa-collection cell to H035 and H042. If you keep the autos, add a \"page\" field, but page order is a designer choice, so this does not work as a general fix. The nine rate autos (bro-rate-*) are safer, because every rate in the brochure is meant to be 9 pt. Keep them."
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "PHOTO-04/villa-collection/H028"
+   ],
+   "problem": "H028 was modified to drop \"and is set larger than them\" because code now checks the sizes. That size relationship was the only visible-hierarchy fact on the brochure. It now depends entirely on the 34 pt and 9 pt autos. Those raise not-assessable when the text is outlined: the export setting says only \"searchable text where practical\", so outlined lettering is allowed. The house-name autos are also unreliable (finding 1). So the fact can quietly disappear.",
+   "fix": "Add a human K5_Q2 check: \"In each house section of “Villa comparison brochure” (villa-collection.pdf), the house name is set larger than that house's rates.\" Cite it in BR11 and T01 for villa-collection."
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "B05"
+   ],
+   "problem": "The palette distribution rule says the three accents together cover \"no more than 5% of the designed, non-photographic area\". This rule is missing from the coverage rule list. B05 only covers \"hairline rules, dividers and small labels only\", and no output has a check for the 5% cap. The guide requires every palette rule to be in the table.",
+   "fix": "Add rule B19, \"The three accents together cover no more than 5% of the designed, non-photographic area\" (source: palette_rules.distribution). Add one human K2_Q3 check per output, e.g. \"Accent colours #C4B5A0, #6E7355 and #4C7A8C together take up only a small share, no more than about 5%, of the designed non-photo area of “Villa booking hero - Oliveto” (booking-hero-oliveto.png).\" Use the same wording for the Scogliera and Verranza heroes and the brochure. Alternatively, list the rule in the table with an explicit justification that it cannot be judged by eye."
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "B16",
+    "B17",
+    "BR02"
+   ],
+   "problem": "The patch took two items from the owner_note.txt do-not-want list and added checks on all four outputs: no fake evening glow (B16) and no crushed blacks (B17). It left out the item about stone: \"No stone turned into a computer's idea of stone\". BR02's checks (H011, H009, H004, H014, H021, H027) test walls, openings and features, meaning geometry. They do not test whether the surface texture was smoothed, painted or re-rendered. So one do-not-want item has no check on any output, while its two siblings got checks.",
+   "fix": "Add rule B20 (source: owner_note.txt do-not-want list) with one K2_Q4 check per output, e.g. \"The stone and limewash in the photograph on “Villa booking hero - Verranza” (booking-hero-verranza.png) keep their photographed texture, with no smoothed, painted or computer-rendered look.\" Use the same wording for the other two heroes and the brochure (\"every photograph in …\")."
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "PHOTO-04/booking-hero-oliveto/H014",
+    "PHOTO-04/booking-hero-scogliera/H014",
+    "PHOTO-04/booking-hero-verranza/H013",
+    "PHOTO-04/villa-collection/H032"
+   ],
+   "problem": "The modified opacity checks now say every \"panel, button and mark\" is \"solid colour at full opacity, with no tint, transparency, gradient or shadow\". Two gaps against the brand rule. First, the brand rule explicitly lets supplied raster artwork keep its edge anti-aliasing, and a strict reader could fail an anti-aliased monogram as not \"solid colour\". Second, B07 lists \"blend mode\" but no cited check mentions it. These checks are also the evidence for B15 (artwork at 100% layer opacity).",
+   "fix": "Use this wording: \"Every panel and button on “…” (file) is solid colour at full opacity, with no tint, transparency, gradient, shadow or blend mode; any monogram is placed at 100% opacity.\" Apply it to the same four ids."
+  }
+ ],
+ "repair": {
+  "fixed": [
+   "F1 (major, confirmed): verify_outputs.py pdf_text_style returns on the first page with a match and reads the first match there. On the 2026-09-28 pilot brochure the house names also appear on p5, in the comparison table. Removed the 3 autos bro-style-oliveto, bro-style-scogliera and bro-style-verranza. Un-retired villa-collection/H042 and reworded it: \"In Acrobat's text properties, each house name heading in “Villa comparison brochure” (villa-collection.pdf) is 34 pt, not counting its enlarged initial.\" T01 for the brochure now cites H035, H042 and the new H067. Removed the code reference from H041's retire reason. Kept the 9 rate autos, now A008-A016.",
+   "F2: H028 keeps only the position fact. Added H067 (K5_Q2), which says the house name is set larger than that house's rates. BR11 and T01 cite it.",
+   "F3: added coverage rule B19 for the 5% accent cap, with one K2_Q3 check per output: H061 on each hero and H069 on the brochure.",
+   "F4: owner_note.txt says \"No stone turned into a computer's idea of stone\". Added rule B20 with one K2_Q4 texture check per output: H062 on each hero and H070 on the brochure.",
+   "F5: the opacity checks (oliveto/scogliera H014, verranza H013, brochure H032) now cover panels and buttons (page grounds and panels on the brochure) and add 'blend mode'. I split the monogram 100% opacity into its own check: heroes H060, conditional, and brochure H068. That way anti-aliased artwork is never judged as 'solid colour'. B15 now cites these.",
+   "F6: H035 now excludes numerals ('apart from any numerals in them'), so it no longer contradicts H038.",
+   "F7: hero numeral checks (H021/H021/H020) now say only that no numeral is in Cormorant and every figure is in Source Sans 3. The tabular claim is dropped on the PNGs. Brochure H038 says no serif numerals, including in headings. Added H071 for tabular alignment where figures are stacked. Coverage T06 rule and cells updated.",
+   "F8: H040 now covers Casa Verranza only, with examples that set the pass standard. Added H072 for Oliveto and H073 for Scogliera. BR09 updated.",
+   "F9: the hero voice checks (H023/H023/H022) keep the requirement and now give examples: walls, pool or cove, daylight.",
+   "F10: the signature checks now compare against a visible capital, for example the “C” of “Casa Oliveto” against the capital “O”, with S and V on the other heroes. Brochure H037 compares the “C” with the capital starting the second word.",
+   "F11: hero H059 now says 'The offer price ... is set smaller than the booking-action text'.",
+   "F12: the accent checks (hero H017/H017/H016, brochure H034) now only say 'used only for hairline rules, dividers or small labels'. The duplicated ground, panel and body-text clauses are gone. B05 rule text updated.",
+   "F13: reworded hero H051/H052 as suggested, and the brochure H057/H058 the same way.",
+   "F14: hero H057 now names the monogram's parts (interlocked V and C, oval rule, anchor). The fact that it must be the supplied artwork and not redrawn is a new conditional check, H063, on each hero. BR15 is now 'artwork, not a typeface to recreate', and the hero cells cite H063 instead of na.",
+   "F15: brochure H002 now says every rate is 'labelled with the season it belongs to in rates_2027.csv'.",
+   "F16: split the 6 three-value record checks per season. H009/H010/H016/H017/H023/H024 keep Spring. New H074-H085 cover High Summer and Autumn, with values from rates_2027.csv. BR05, BR07 and D04 cite them.",
+   "F17: H047 now reads 'In Acrobat's text properties ... body text is 10 pt' and H048 'Measured in Acrobat, wrapped body text ... has 15 pt between baselines'. Both state the method.",
+   "F18: the mandatory-colour checks (hero H013/H013/H012, brochure H031) now say 'in the type, panels or buttons ..., not only in the photograph'.",
+   "F19: brochure H064 now reads 'appear in the same order and with the same labels for all three houses'."
+  ],
+  "rejected": [],
+  "unresolved": [
+   "The 9 rate autos (A008-A016) have the same first-match behaviour. If a rate also appears in 10 pt body copy before its 9 pt rate placement, the auto fails a brochure that may comply. I kept them as reviewer 1 advised, because the type scale makes every rate 9 pt.",
+   "F5 departs from the reviewer's single-sentence wording: I split monogram opacity into separate checks (heroes H060, brochure H068) to keep each check atomic. This adds 4 human checks.",
+   "Check volume: human checks went from 159 after the first patch to 191, still below the original 198. Most of the increase comes from the per-season record split (+12) and the new B19/B20 checks (+8).",
+   "H042 and H047 assume live text that Acrobat can read. The export setting allows outlined lettering ('searchable text where practical'), so the annotator would have to measure by hand.",
+   "Files: /Users/dhiren/Documents/ChatGPT/Adobe_Gpt/reviews/pilot13-ab-fixes-2026-10-21/patches/PHOTO-04.json, /Users/dhiren/Documents/ChatGPT/Adobe_Gpt/reviews/pilot13-ab-fixes-2026-10-21/coverage/PHOTO-04.json, repair script and pre-repair backups in /Users/dhiren/Documents/ChatGPT/Adobe_Gpt/reviews/pilot13-ab-fixes-2026-10-21/work/PHOTO-04/"
+  ]
+ }
+}

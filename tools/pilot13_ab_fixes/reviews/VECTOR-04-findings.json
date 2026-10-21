@@ -1,0 +1,205 @@
+{
+ "LANGUAGE, ATOMICITY AND OBSERVABILITY": [
+  {
+   "severity": "major",
+   "check_ids": [
+    "VECTOR-04/gang-sheet/H018"
+   ],
+   "problem": "The check reaches outside the output file: \"...(gang-sheet.pdf) or its delivery manifest states...\". An annotator judging gang-sheet.pdf cannot judge a separate manifest, and the check has two possible places to look. The source rule (meridian_sheet_spec.txt: interior negative space 'resolve deliberately ... unless you say so') can be judged from the sheet alone.",
+   "fix": "Modify H018 to: \"“Sticker imposed production sheet” (gang-sheet.pdf) carries a note for each sticker saying whether its interior islands are weeded or left on the sheet.\" Keep k_id K1_Q3."
+  },
+  {
+   "severity": "major",
+   "check_ids": [
+    "VECTOR-04/recovered-sticker-window-mark/H015",
+    "VECTOR-04/recovered-sticker-bag-design-1/H011",
+    "VECTOR-04/recovered-sticker-bag-design-2/H011",
+    "VECTOR-04/recovered-sticker-bag-design-3/H011",
+    "VECTOR-04/new-sticker-companion-1/H007",
+    "VECTOR-04/new-sticker-companion-2/H007",
+    "VECTOR-04/sticker-proof-window-mark/H015",
+    "VECTOR-04/sticker-proof-bag-design-1/H011",
+    "VECTOR-04/sticker-proof-bag-design-2/H011",
+    "VECTOR-04/sticker-proof-bag-design-3/H011",
+    "VECTOR-04/sticker-proof-companion-1/H006",
+    "VECTOR-04/sticker-proof-companion-2/H006"
+   ],
+   "problem": "These checks are near-duplicates on the same output. \"Kraft #C8A97E and Warm Cream #F3E7D3 are never the main ink\" follows from a stronger check already on each file. On the bag SVGs and proofs, H010 says the main ink is solid Roast Brown, Ash Green or Brick Red. On the companions, H006 (SVG) and H005 (proof) say the main ink is Roast Brown, Ash Green or Brick Red. On the window mark, H014, H019 and H020 (SVG) and H014, H018 and H019 (proof) assign an ink to every part. Any file that passes the positive check must also pass the negative one, so these checks score the same fact twice.",
+   "fix": "Retire each one, with covered_by pointing to the positive main-ink check on the same output: bag SVG and proof H010; companion SVG H006; companion proof H005; window mark SVG H014, H019 and H020; window mark proof H014, H018 and H019. Point the coverage cells for the Kraft and Cream 'never main ink' rule to those ids."
+  },
+  {
+   "severity": "major",
+   "check_ids": [
+    "VECTOR-04/sticker-proof-window-mark/H013",
+    "VECTOR-04/sticker-proof-bag-design-1/H009",
+    "VECTOR-04/sticker-proof-bag-design-2/H009",
+    "VECTOR-04/sticker-proof-bag-design-3/H009",
+    "VECTOR-04/sticker-proof-companion-1/H004",
+    "VECTOR-04/sticker-proof-companion-2/H004"
+   ],
+   "problem": "The opacity check also says each area is a \"palette colour\". That repeats the palette-hex check on the same proof (window H012, bag H008, companion H003). It makes the opacity check two facts and partly duplicates another check.",
+   "fix": "Remove the palette clause, for example for the window mark proof: \"Apart from anti-aliased edges, every inked area on “Transparent sticker proof - Window mark” (sticker-proof-window-mark.png) is flat and fully opaque, with no tint, gradient or shadow.\" Apply the same wording to all six proofs."
+  },
+  {
+   "severity": "major",
+   "check_ids": [
+    "VECTOR-04/sticker-proof-companion-1/H009",
+    "VECTOR-04/sticker-proof-companion-2/H009",
+    "VECTOR-04/sticker-proof-companion-1/H008",
+    "VECTOR-04/sticker-proof-companion-2/H008"
+   ],
+   "problem": "Exact type geometry cannot be judged by eye on a PNG proof. H009 asks for an ampersand at exactly 1.6 times the cap height. H008 asks for a \"fixed 40 degree curve\", which is also jargon a designer cannot measure on pixels. The SVG versions (H010 and H009 on new-sticker-companion-1/2) can be measured, so keep them there.",
+   "fix": "On the proofs, change to relative checks. H009: \"Any DM Serif Display ampersand on “Transparent sticker proof - Companion 1” (sticker-proof-companion-1.png) is clearly taller than the capitals beside it, never the same height.\" H008: \"Any DM Serif Display MERIDIAN & ASH wordmark on “Transparent sticker proof - Companion 1” (sticker-proof-companion-1.png) is set on a gentle upward arch, not flat.\" Do the same for Companion 2. For the SVG H009, use plainer wording: \"...arches on a curve that spans 40 degrees.\""
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "VECTOR-04/recovered-sticker-window-mark/H017",
+    "VECTOR-04/recovered-sticker-bag-design-1/H013",
+    "VECTOR-04/recovered-sticker-bag-design-2/H013",
+    "VECTOR-04/recovered-sticker-bag-design-3/H013",
+    "VECTOR-04/new-sticker-companion-1/H019",
+    "VECTOR-04/new-sticker-companion-2/H019",
+    "VECTOR-04/sticker-proof-window-mark/H017",
+    "VECTOR-04/sticker-proof-bag-design-1/H013",
+    "VECTOR-04/sticker-proof-bag-design-2/H013",
+    "VECTOR-04/sticker-proof-bag-design-3/H013",
+    "VECTOR-04/sticker-proof-companion-1/H017",
+    "VECTOR-04/sticker-proof-companion-2/H017"
+   ],
+   "problem": "\"covering no more than 5% of the inked area\" is an area measurement nobody can make by eye, least of all on the PNG proofs. There, Ink Black #201914 and Roast Brown #3E2A20 also look almost the same without an eyedropper.",
+   "fix": "Use an observable form of the same brand rule: \"If Ink Black #201914 appears on “…” (file), it is used only for small fine details inside the drawing, never for a main shape, backing shape, type or the wordmark.\" On the PNG proofs, add \"(sample with an eyedropper)\" after #201914 if annotators need it."
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "VECTOR-04/gang-sheet/H016"
+   ],
+   "problem": "This is a compound check. \"Every placed sticker has exactly one closed cut path around it on the CutContour layer\" and \"the layer holds no other paths\" are separate facts. The second also overlaps H017 (no cut line drawn into the artwork) and H025 (spot colour).",
+   "fix": "Modify H016 to: \"On “Sticker imposed production sheet” (gang-sheet.pdf) each of the six placed stickers has exactly one closed cut path around it on the CutContour layer.\" Add a new K1_Q3 check: \"The CutContour layer on “Sticker imposed production sheet” (gang-sheet.pdf) holds no paths other than the six sticker outlines.\""
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "VECTOR-04/gang-sheet/H019"
+   ],
+   "problem": "\"Viewed colour managed\" is prepress jargon and does not say what the annotator should do. The sheet is CMYK (PSO Coated v3), so an exact sRGB hex match is also not what a person will see.",
+   "fix": "\"Apart from the CutContour paths, every colour on “Sticker imposed production sheet” (gang-sheet.pdf) is one of the six palette colours: Roast Brown #3E2A20, Kraft #C8A97E, Ash Green #5B6B54, Warm Cream #F3E7D3, Brick Red #A8442E or Ink Black #201914.\""
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "VECTOR-04/recovered-sticker-window-mark/H004",
+    "VECTOR-04/sticker-proof-window-mark/H010"
+   ],
+   "problem": "The check \"The MERIDIAN & ASH wordmark is the largest lettering\" passes automatically. meridian_window_mark.jpg contains no lettering other than the wordmark, and H011 (SVG) and H009 (proof) forbid adding any. So the check cannot fail and does not measure hierarchy.",
+   "fix": "Retire both. Set covered_by to H005 and H011 on the SVG, and to H011 and H009 on the proof (arch placement plus no added lettering). If a K5_Q1 check is still needed, use: \"On “Recovered sticker artwork - Window mark” (recovered-sticker-window-mark.svg) the arched wordmark spans wider than the roundel, as painted in meridian_window_mark.jpg.\""
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "VECTOR-04/new-sticker-companion-1/H020",
+    "VECTOR-04/new-sticker-companion-2/H020",
+    "VECTOR-04/sticker-proof-companion-1/H018",
+    "VECTOR-04/sticker-proof-companion-2/H018"
+   ],
+   "problem": "\"heading or subheading\" is unclear on a sticker. In the type scale, step 02 is for counter card and four-pack headers, so a designer will not know what counts as a heading on a 55 mm sticker.",
+   "fix": "\"If a flat title line other than the MERIDIAN & ASH wordmark appears on “Original companion sticker - Companion 1” (new-sticker-companion-1.svg), it is set in DM Serif Display Regular capitals.\" Use the same wording on Companion 2 and on both companion proofs."
+  }
+ ],
+ "FIDELITY AND COVERAGE": [
+  {
+   "severity": "major",
+   "check_ids": [
+    "new:new-sticker-companion-1-subject",
+    "new:new-sticker-companion-2-subject",
+    "VECTOR-04/new-sticker-companion-1/H003",
+    "VECTOR-04/new-sticker-companion-2/H003",
+    "coverage D03"
+   ],
+   "problem": "The brief's companion bullet 'The drawing belongs stylistically beside the recovered collection.' (deliverable_groups new-sticker, and 'subject matter and visual rhythm' in Your design decisions) has no check. It is also missing from the coverage rule list. Coverage D03 ('belongs beside the recovered designs') cites H003, which tests originality, and the new subject check, which tests subject only. Neither tests style or rhythm, so a sticker with the right subject in a clashing style (gradient-free but photoreal, thin-line clip art, and so on) passes every check.",
+   "fix": "Add one check per companion SVG (K2_Q4 or K1_Q1), for example: 'The drawing on “Original companion sticker - Companion 1” (new-sticker-companion-1.svg) belongs stylistically beside the designs in meridian_bag_moth.jpg, meridian_bag_pourover.jpg and meridian_bag_ridgeline.jpg.' Add the same for Companion 2, with reference_assets set to the three bag photos. Add a brief rule F15 with that exact text: cells N1 and N2 get the new checks. PN1 and PN2 are na via their H001 (proof matches its SVG), and G is na via gang-sheet H011 and H012. Cite the new checks in D03 as well."
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "new:new-sticker-companion-1-subject",
+    "new:new-sticker-companion-2-subject"
+   ],
+   "problem": "The added subject check narrows the brief with invented examples: 'such as coffee, brewing, the roastery or the cafe'. The brief only says 'subject matter ... that fit the coffee collection'. The collection itself includes a moth and a mountain ridge line, and neither fits those examples, so annotators may fail a valid companion such as a bird or an origin landscape.",
+   "fix": "Reword to: 'The subject of the drawing on “Original companion sticker - Companion 1” (new-sticker-companion-1.svg) fits the Meridian and Ash coffee sticker collection.' Do the same for Companion 2. Or drop the 'such as' list."
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "new:sticker-proof-*-open-space-clear",
+    "coverage F05"
+   ],
+   "problem": "Coverage F05 ('Interior negative space remains open at 55 mm') cites the new open-space-clear checks for all six proofs (PW, P1, P2, P3, PN1, PN2). Those checks test that the negative space is transparent, not that interior gaps stay open instead of filling in. A proof whose gaps filled with ink would still pass them. The proof is also a 1600 px viewing render, not the 55 mm master.",
+   "fix": "Mark F05 na on the six proof cells, for example: 'Openness at 55 mm is judged on the SVG master; the proof matches it per its H001.' Keep open-space-clear cited only under B03 and D07."
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "coverage D02",
+    "VECTOR-04/recovered-sticker-*/A003",
+    "VECTOR-04/recovered-sticker-*/A004",
+    "new:recovered-sticker-*-size-55"
+   ],
+   "problem": "The D02 commission bullet requires 'an explicit viewBox'. None of the cited checks (size-55, A003 no_raster_image, A004 transparent_background) tests for a viewBox, so the cell claims coverage that does not exist. The companion export_settings carry the same requirement.",
+   "fix": "Add one human check per recovered SVG, for example: 'The SVG code of “Recovered sticker artwork - Window mark” (recovered-sticker-window-mark.svg) declares an explicit viewBox.' Cite these in D02. Alternatively, drop the viewBox claim from the D02 cells and record it as uncovered."
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "coverage F08",
+    "coverage F09",
+    "coverage F10",
+    "VECTOR-04/gang-sheet/H021",
+    "VECTOR-04/gang-sheet/H023"
+   ],
+   "problem": "The gang-sheet cells for F08 (no invented origin or claim), F09 (price is $3 or $9, never the wholesale 9.50 trap) and F10 (no premium claim) are na with the reason 'Sticker copy on the sheet repeats the single files, confirmed by gang-sheet H011 and H012'. The sheet carries its own new text, which H021 and H023 explicitly allow for: labels, slugs and die line notes. Nothing checks that text against the truth constraints or the price trap.",
+   "fix": "Add gang-sheet checks: 'Any label or slug on “Sticker imposed production sheet” (gang-sheet.pdf) states no origin, tasting note or claim absent from meridian_origins.csv, meridian_sheet_spec.txt and the brand identity.' (K1_Q3). Add 'Any price on “Sticker imposed production sheet” (gang-sheet.pdf) is the $3 single or $9 four-pack from meridian_sheet_spec.txt.' (K1_Q5). Cite them in F08 and F09. Keep F10 na only with a reason that names the labels, or add a matching no-luxury-claim check."
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "coverage rule list"
+   ],
+   "problem": "The rule list leaves out the checkable type rule 'Hand made, not franchise: the artwork is drawn once and reused, never redrawn slightly differently each batch.' (type_system.rules[5]). Checks for it already exist: proof H001 (proof matches its SVG) and gang-sheet H007 to H012 (placed sticker unchanged). The table therefore does not show this rule is covered on every output.",
+   "fix": "Add rule T10 with that exact text. Cells: PW, P1, P2, P3, PN1 and PN2 get their H001. G gets H007 to H012. The six artwork SVGs are na ('the master drawing itself; reuse is checked on the proof and sheet'), and the cut files are na with the existing cut-only reason."
+  }
+ ],
+ "repair": {
+  "fixed": [
+   "R1 major: added a K2_Q4 style check on each companion SVG ('...belongs stylistically beside the designs in meridian_bag_moth.jpg, meridian_bag_pourover.jpg and meridian_bag_ridgeline.jpg', new H024). Added coverage rule F15 with the exact text 'The drawing belongs stylistically beside the recovered collection.' Its cells are N1 and N2 checked; PN1 and PN2 na via their H001; G na via H011 and H012. D03 now also cites the style checks.",
+   "R1 minor: reworded the companion subject check to 'The subject of the drawing on ... fits the Meridian and Ash coffee sticker collection.' The invented 'such as' list is gone.",
+   "R1 minor: F05 is now na on all six proofs ('Openness at 55 mm is judged on the SVG master; the proof matches it per its H001.'). open-space-clear stays cited only under B03 and D07.",
+   "R1 minor: added 'The SVG code of ... declares an explicit viewBox.' (K1_Q2) to the 4 recovered SVGs (cited in D02). Because the same export_settings line requires a viewBox, the same check also went on the 2 companion SVGs and the 6 cut SVGs. Added coverage rule F16 for that export setting.",
+   "R1 minor: added three gang-sheet checks: no-claims K1_Q3 (H025), price K1_Q5 $3/$9 never a per-origin price from meridian_origins.csv (H026), and no-premium K2_Q3 (H027). They are cited in the G cells of F08, F09 and F10 in place of the old na.",
+   "R1 minor: added rule T10 'Hand made, not franchise...' with cells: proofs use H001; G uses H007 to H012; artwork SVGs and cut files are na.",
+   "R2 major: H018 now reads 'carries a note for each sticker saying whether its interior islands are weeded or left on the sheet.' The delivery manifest is no longer mentioned.",
+   "R2 major: retired the 'Kraft/Cream never main ink' checks on all 12 artwork SVGs and proofs, keeping the existing check ids. Each covered_by points to the positive main-ink check (bag SVG and proof H010, companion SVG H006, companion proof H005, window mark H014 plus the new roundel and leaf-ring ink checks) and to the new Ink Black check. Coverage B12 was re-pointed to match.",
+   "R2 major: dropped the palette clause from the six proof opacity checks: 'Apart from anti-aliased edges, every inked area on ... is flat and fully opaque, with no tint, gradient or shadow.'",
+   "R2 major: changed companion proof H009 to 'clearly taller than the capitals beside it, never the same height' and H008 to 'is set on an arch, not on a flat line'. The SVG H009 is now worded '...arches on a curve that spans 40 degrees.'",
+   "R2 minor: removed the unjudgeable 5% figure from all 12 Ink Black checks. They now read 'If Ink Black #201914 appears on ..., it is only fine detail, never a main shape, backing shape, type or the wordmark' (palette usage text). The B13 rule text was updated to match.",
+   "R2 minor: split gang-sheet H016. It is now 'each of the six placed stickers has exactly one closed cut path around it on the CutContour layer', and a new H024 says the layer holds no other paths. H024 is cited in F07 and D09.",
+   "R2 minor (partly): reworded gang-sheet H019 to 'With colour management on, every colour on ... except the CutContour paths matches one of #3E2A20...'. This replaces the jargon 'Viewed colour managed'.",
+   "R2 minor: retired window mark SVG H004 (covered_by H005, H011) and proof H010 (covered_by H011, H009) because neither check can fail. I checked meridian_window_mark.jpg: the only painted lettering is the wordmark.",
+   "R2 minor: companion SVG and proof heading checks now read 'If a flat title line other than the MERIDIAN & ASH wordmark appears on ..., it is set in DM Serif Display Regular capitals.' The copy-face checks were changed to say 'title line' to match."
+  ],
+  "rejected": [
+   {
+    "finding": "R2 gang-sheet H019 fix: drop the colour-management instruction and require a literal palette-hex match",
+    "why": "I reworded the jargon but kept the colour-managed instruction. brand_identity.palette_rules.distribution says 'In the print PDF, convert them with PSOcoated_v3.icc; evaluate the colour-managed proof, not literal RGB hex values inside the CMYK file.' The reviewer's version would have annotators compare literal values, which contradicts that rule. I also left out the palette colour names so the check stays under the word warning."
+   },
+   {
+    "finding": "R2 Ink Black: add '(sample with an eyedropper)' on the PNG proofs",
+    "why": "The reviewer marked this optional. I left it out to keep the checks short: the reworded check no longer needs an area measurement, and the hex is already stated."
+   }
+  ],
+  "unresolved": [
+   "The patch and coverage are generated by /Users/dhiren/Documents/ChatGPT/Adobe_Gpt/reviews/pilot13-ab-fixes-2026-10-21/work/VECTOR-04/build.py, which I edited and reran. The previous versions are saved as build_v1.py, patch_v1.json and coverage_v1.json in the same folder. The post-patch view is in work/VECTOR-04/show2.txt. The validator reports 0 errors and 0 warnings: 220 human checks before, 260 after; 97 auto checks, unchanged; 51 rules."
+  ]
+ }
+}

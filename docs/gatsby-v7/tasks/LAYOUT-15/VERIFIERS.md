@@ -163,619 +163,526 @@ Revised input pack. Previous execution results are historical, not current ratin
 - `LAYOUT-15/producer-card-combined/A014` Page 11 of “Aldervale Mutual / District insurance counter card - combined production run” (producer-card-combined.pdf) looks identical to page 1 of producer-card-r013.pdf.
 - `LAYOUT-15/producer-card-combined/A015` Page 12 of “Aldervale Mutual / District insurance counter card - combined production run” (producer-card-combined.pdf) looks identical to page 1 of producer-card-r014.pdf.
 - `LAYOUT-15/producer-card-combined/A016` Page 13 of “Aldervale Mutual / District insurance counter card - combined production run” (producer-card-combined.pdf) looks identical to page 1 of producer-card-r015.pdf.
+- `LAYOUT-15/producer-card-r002/A012` “District insurance counter card - Raymond Hollis” (producer-card-r002.pdf) carries the PSO Coated v3 output intent.
+- `LAYOUT-15/producer-card-r002/A013` “District insurance counter card - Raymond Hollis” (producer-card-r002.pdf) embeds every font it uses.
+- `LAYOUT-15/producer-card-r003/A012` “District insurance counter card - Susan Grady” (producer-card-r003.pdf) carries the PSO Coated v3 output intent.
+- `LAYOUT-15/producer-card-r003/A013` “District insurance counter card - Susan Grady” (producer-card-r003.pdf) embeds every font it uses.
+- `LAYOUT-15/producer-card-r005/A012` “District insurance counter card - Paul Devoe” (producer-card-r005.pdf) carries the PSO Coated v3 output intent.
+- `LAYOUT-15/producer-card-r005/A013` “District insurance counter card - Paul Devoe” (producer-card-r005.pdf) embeds every font it uses.
+- `LAYOUT-15/producer-card-r006/A012` “District insurance counter card - Karen Marsh” (producer-card-r006.pdf) carries the PSO Coated v3 output intent.
+- `LAYOUT-15/producer-card-r006/A013` “District insurance counter card - Karen Marsh” (producer-card-r006.pdf) embeds every font it uses.
+- `LAYOUT-15/producer-card-r007/A012` “District insurance counter card - Daniel Okafor” (producer-card-r007.pdf) carries the PSO Coated v3 output intent.
+- `LAYOUT-15/producer-card-r007/A013` “District insurance counter card - Daniel Okafor” (producer-card-r007.pdf) embeds every font it uses.
+- `LAYOUT-15/producer-card-r008/A012` “District insurance counter card - Gina Bianchi” (producer-card-r008.pdf) carries the PSO Coated v3 output intent.
+- `LAYOUT-15/producer-card-r008/A013` “District insurance counter card - Gina Bianchi” (producer-card-r008.pdf) embeds every font it uses.
+- `LAYOUT-15/producer-card-r009/A012` “District insurance counter card - Miguel Reyes” (producer-card-r009.pdf) carries the PSO Coated v3 output intent.
+- `LAYOUT-15/producer-card-r009/A013` “District insurance counter card - Miguel Reyes” (producer-card-r009.pdf) embeds every font it uses.
+- `LAYOUT-15/producer-card-r010/A012` “District insurance counter card - Linh Tran” (producer-card-r010.pdf) carries the PSO Coated v3 output intent.
+- `LAYOUT-15/producer-card-r010/A013` “District insurance counter card - Linh Tran” (producer-card-r010.pdf) embeds every font it uses.
+- `LAYOUT-15/producer-card-r011/A012` “District insurance counter card - Sean Donnelly” (producer-card-r011.pdf) carries the PSO Coated v3 output intent.
+- `LAYOUT-15/producer-card-r011/A013` “District insurance counter card - Sean Donnelly” (producer-card-r011.pdf) embeds every font it uses.
+- `LAYOUT-15/producer-card-r012/A012` “District insurance counter card - Rosa Castellano” (producer-card-r012.pdf) carries the PSO Coated v3 output intent.
+- `LAYOUT-15/producer-card-r012/A013` “District insurance counter card - Rosa Castellano” (producer-card-r012.pdf) embeds every font it uses.
+- `LAYOUT-15/producer-card-r013/A012` “District insurance counter card - Walter Pruitt” (producer-card-r013.pdf) carries the PSO Coated v3 output intent.
+- `LAYOUT-15/producer-card-r013/A013` “District insurance counter card - Walter Pruitt” (producer-card-r013.pdf) embeds every font it uses.
+- `LAYOUT-15/producer-card-r014/A012` “District insurance counter card - Dana Whitfield” (producer-card-r014.pdf) carries the PSO Coated v3 output intent.
+- `LAYOUT-15/producer-card-r014/A013` “District insurance counter card - Dana Whitfield” (producer-card-r014.pdf) embeds every font it uses.
+- `LAYOUT-15/producer-card-r015/A012` “District insurance counter card - Priya Nandakumar” (producer-card-r015.pdf) carries the PSO Coated v3 output intent.
+- `LAYOUT-15/producer-card-r015/A013` “District insurance counter card - Priya Nandakumar” (producer-card-r015.pdf) embeds every font it uses.
+- `LAYOUT-15/producer-card-combined/A017` “District insurance counter card - combined production run” (producer-card-combined.pdf) carries the PSO Coated v3 output intent.
+- `LAYOUT-15/producer-card-combined/A018` “District insurance counter card - combined production run” (producer-card-combined.pdf) embeds every font it uses.
 
 ## Human verifiers
 
-- `LAYOUT-15/producer-card-r002/H001` The Disclosure Text on “District insurance counter card - Raymond Hollis” (producer-card-r002.pdf) reproduces producer_roster_northern.csv row 2 word for word, with nothing added, dropped or reworded.
-- `LAYOUT-15/producer-card-r002/H002` The office on “District insurance counter card - Raymond Hollis” (producer-card-r002.pdf) is “Concord Branch, 212 North Main St, Concord NH 03301”, the Office producer_roster_northern.csv row 2 gives Raymond Hollis, not another producer's.
-- `LAYOUT-15/producer-card-r002/H003` On “District insurance counter card - Raymond Hollis” (producer-card-r002.pdf) the whole Disclosure Text of producer_roster_northern.csv row 2 is visible inside the trim, none cut off at a frame edge, ending “claims-paying ability of the company.”
-- `LAYOUT-15/producer-card-r003/H001` The Disclosure Text on “District insurance counter card - Susan Grady” (producer-card-r003.pdf) reproduces producer_roster_northern.csv row 3 word for word, with nothing added, dropped or reworded.
-- `LAYOUT-15/producer-card-r003/H002` The office on “District insurance counter card - Susan Grady” (producer-card-r003.pdf) is “Manchester Branch, 88 Elm St, Manchester NH 03101”, the Office producer_roster_northern.csv row 3 gives Susan Grady, not another producer's.
-- `LAYOUT-15/producer-card-r003/H003` On “District insurance counter card - Susan Grady” (producer-card-r003.pdf) the whole Disclosure Text of producer_roster_northern.csv row 3 is visible inside the trim, none cut off at a frame edge, ending “claims-paying ability of the company.”
-- `LAYOUT-15/producer-card-r005/H001` The Disclosure Text on “District insurance counter card - Paul Devoe” (producer-card-r005.pdf) reproduces producer_roster_northern.csv row 5 word for word, with nothing added, dropped or reworded.
-- `LAYOUT-15/producer-card-r005/H002` The office on “District insurance counter card - Paul Devoe” (producer-card-r005.pdf) is “Upper Valley Office, 30 Bridge St, Lebanon NH 03766”, the Office producer_roster_northern.csv row 5 gives Paul Devoe, not another producer's.
-- `LAYOUT-15/producer-card-r005/H003` On “District insurance counter card - Paul Devoe” (producer-card-r005.pdf) the whole Disclosure Text of producer_roster_northern.csv row 5 is visible inside the trim, none cut off at a frame edge, ending “by Vermont Insurance Division regulation.”
+- `LAYOUT-15/producer-card-r002/H001` The Disclosure Text on “District insurance counter card - Raymond Hollis” (producer-card-r002.pdf) matches the Disclosure Text field of producer_roster_northern.csv row 2 word for word, with nothing added, dropped or reworded.
+- `LAYOUT-15/producer-card-r002/H002` The office line on “District insurance counter card - Raymond Hollis” (producer-card-r002.pdf) reads “Concord Branch, 212 North Main St, Concord NH 03301”, the Office field in producer_roster_northern.csv row 2.
+- `LAYOUT-15/producer-card-r002/H003` The whole Disclosure Text on “District insurance counter card - Raymond Hollis” (producer-card-r002.pdf) sits inside the trim, none of it cut off, ending “claims-paying ability of the company.”
+- `LAYOUT-15/producer-card-r003/H001` The Disclosure Text on “District insurance counter card - Susan Grady” (producer-card-r003.pdf) matches the Disclosure Text field of producer_roster_northern.csv row 3 word for word, with nothing added, dropped or reworded.
+- `LAYOUT-15/producer-card-r003/H002` The office line on “District insurance counter card - Susan Grady” (producer-card-r003.pdf) reads “Manchester Branch, 88 Elm St, Manchester NH 03101”, the Office field in producer_roster_northern.csv row 3.
+- `LAYOUT-15/producer-card-r003/H003` The whole Disclosure Text on “District insurance counter card - Susan Grady” (producer-card-r003.pdf) sits inside the trim, none of it cut off, ending “claims-paying ability of the company.”
+- `LAYOUT-15/producer-card-r005/H001` The Disclosure Text on “District insurance counter card - Paul Devoe” (producer-card-r005.pdf) matches the Disclosure Text field of producer_roster_northern.csv row 5 word for word, with nothing added, dropped or reworded.
+- `LAYOUT-15/producer-card-r005/H002` The office line on “District insurance counter card - Paul Devoe” (producer-card-r005.pdf) reads “Upper Valley Office, 30 Bridge St, Lebanon NH 03766”, the Office field in producer_roster_northern.csv row 5.
+- `LAYOUT-15/producer-card-r005/H003` The whole Disclosure Text on “District insurance counter card - Paul Devoe” (producer-card-r005.pdf) sits inside the trim, none of it cut off, ending “by Vermont Insurance Division regulation.”
 - `LAYOUT-15/producer-card-r005/H004` Any premium figure on “District insurance counter card - Paul Devoe” (producer-card-r005.pdf) is the plan_rates_2027.csv value for the plan and issue age band it is shown against.
-- `LAYOUT-15/producer-card-r005/H005` If “District insurance counter card - Paul Devoe” (producer-card-r005.pdf) shows premiums for more than one of the three plans in plan_rates_2027.csv, a plain note says they are not quoted on the same basis.
+- `LAYOUT-15/producer-card-r005/H005` If “District insurance counter card - Paul Devoe” (producer-card-r005.pdf) shows premiums for more than one plan in plan_rates_2027.csv, a plain note says they are not quoted on the same basis.
 - `LAYOUT-15/producer-card-r005/H006` “District insurance counter card - Paul Devoe” (producer-card-r005.pdf) shows no phone number, email or web address; producer_roster_northern.csv row 5 gives none.
-- `LAYOUT-15/producer-card-r005/H007` “District insurance counter card - Paul Devoe” (producer-card-r005.pdf) carries no superlative, urgency, exclamation mark, burst or starburst callout, promise of a return or approval, or comparison with a competitor.
+- `LAYOUT-15/producer-card-r005/H007` “District insurance counter card - Paul Devoe” (producer-card-r005.pdf) has no superlative, urgency, exclamation mark, burst or starburst callout, implied guarantee of a return or of approval, or competitor comparison.
 - `LAYOUT-15/producer-card-r005/H008` Any photograph on “District insurance counter card - Paul Devoe” (producer-card-r005.pdf) other than producer_headshot_04.jpg is honestly labelled stock or illustration, never a family, client or policyholder presented as real.
 - `LAYOUT-15/producer-card-r005/H009` “District insurance counter card - Paul Devoe” (producer-card-r005.pdf) carries no district line, neither “Central Vermont district” nor any other district name; the office line does not count.
 - `LAYOUT-15/producer-card-r005/H010` The largest text on “District insurance counter card - Paul Devoe” (producer-card-r005.pdf) is the producer name “Paul Devoe”.
 - `LAYOUT-15/producer-card-r005/H011` On “District insurance counter card - Paul Devoe” (producer-card-r005.pdf) the Disclosure Text is the smallest text on the card.
-- `LAYOUT-15/producer-card-r005/H012` The headshot on “District insurance counter card - Paul Devoe” (producer-card-r005.pdf) is producer_headshot_04.jpg, the Photo File producer_roster_northern.csv row 5 gives Paul Devoe.
+- `LAYOUT-15/producer-card-r005/H012` The headshot on “District insurance counter card - Paul Devoe” (producer-card-r005.pdf) is producer_headshot_04.jpg, the Photo File in producer_roster_northern.csv row 5.
 - `LAYOUT-15/producer-card-r005/H013` The headshot on “District insurance counter card - Paul Devoe” (producer-card-r005.pdf) keeps the proportions of producer_headshot_04.jpg, not stretched or squashed.
 - `LAYOUT-15/producer-card-r005/H014` The person in the headshot on “District insurance counter card - Paul Devoe” (producer-card-r005.pdf) is recognizably the same person as in producer_headshot_04.jpg, with the face unaltered.
-- `LAYOUT-15/producer-card-r005/H015` On “District insurance counter card - Paul Devoe” (producer-card-r005.pdf), no part of the navy jacket's shoulder or collar from producer_headshot_04.jpg is bitten away where it meets the mid-grey wall behind it.
-- `LAYOUT-15/producer-card-r005/H016` The producer name “Paul Devoe” on “District insurance counter card - Paul Devoe” (producer-card-r005.pdf) is set in Lexend SemiBold at 20 pt, not a serif and not another weight.
-- `LAYOUT-15/producer-card-r005/H017` The producer name on “District insurance counter card - Paul Devoe” (producer-card-r005.pdf) reads “Paul Devoe” in sentence case, not in capitals and not letterspaced.
-- `LAYOUT-15/producer-card-r005/H018` On “District insurance counter card - Paul Devoe” (producer-card-r005.pdf) the producer name sits directly on a 1 pt Heritage Green #3C6B54 rule running the full card width, and an identical rule runs directly above the Disclosure Text.
-- `LAYOUT-15/producer-card-r005/H019` On “District insurance counter card - Paul Devoe” (producer-card-r005.pdf) the license line and office, figures aside, are Source Serif 4 Regular 9 pt, the Disclosure Text is Source Serif 4 Regular 6.5 pt, and no Source Serif 4 exceeds 9 pt.
-- `LAYOUT-15/producer-card-r005/H020` Every figure on “District insurance counter card - Paul Devoe” (producer-card-r005.pdf), the license line's “05012” included, is IBM Plex Sans Regular; any premium is 10 pt tabular figures in a column, never italic, bold or picked out in colour.
-- `LAYOUT-15/producer-card-r005/H021` No line of body text on “District insurance counter card - Paul Devoe” (producer-card-r005.pdf), the license line and office included and the Disclosure Text excluded, runs longer than 65 characters.
+- `LAYOUT-15/producer-card-r005/H015` On “District insurance counter card - Paul Devoe” (producer-card-r005.pdf), the navy jacket's shoulder and collar from producer_headshot_04.jpg are complete, with no part cut away where they meet the mid-grey wall.
+- `LAYOUT-15/producer-card-r005/H016` The producer name “Paul Devoe” on “District insurance counter card - Paul Devoe” (producer-card-r005.pdf) is set in Lexend SemiBold, not a serif and not another weight.
+- `LAYOUT-15/producer-card-r005/H017` The producer name on “District insurance counter card - Paul Devoe” (producer-card-r005.pdf) reads “Paul Devoe” in sentence case, not in capitals.
+- `LAYOUT-15/producer-card-r005/H018` On “District insurance counter card - Paul Devoe” (producer-card-r005.pdf) the producer name sits directly on a 1 pt Heritage Green #3C6B54 rule running the full card width.
+- `LAYOUT-15/producer-card-r005/H019` The license line and office on “District insurance counter card - Paul Devoe” (producer-card-r005.pdf), figures aside, are set in Source Serif 4 Regular.
+- `LAYOUT-15/producer-card-r005/H020` Every figure on “District insurance counter card - Paul Devoe” (producer-card-r005.pdf), including “05012” in the license line, is IBM Plex Sans Regular, the same size as the words around it.
+- `LAYOUT-15/producer-card-r005/H021` Each line of the license text and the office text on “District insurance counter card - Paul Devoe” (producer-card-r005.pdf) has 65 characters or fewer.
 - `LAYOUT-15/producer-card-r005/H022` The type, panel and rule colours on “District insurance counter card - Paul Devoe” (producer-card-r005.pdf) come only from #1E2A3A, #4A5560, #F4F2EC, #C7CBC8 and #3C6B54.
-- `LAYOUT-15/producer-card-r005/H023` On “District insurance counter card - Paul Devoe” (producer-card-r005.pdf) the card ground is Document Paper #F4F2EC, the producer name and Disclosure Text are Ink Navy #1E2A3A, and the license line and office are Slate #4A5560.
-- `LAYOUT-15/producer-card-r005/H024` Type, panels and rules on “District insurance counter card - Paul Devoe” (producer-card-r005.pdf) use Heritage Green #3C6B54 only as the two 1 pt rules and Mist Grey #C7CBC8 only as a thin divider or keyline; photographs do not count.
-- `LAYOUT-15/producer-card-r005/H025` All type, panels, rules and dividers on “District insurance counter card - Paul Devoe” (producer-card-r005.pdf) are solid at full opacity, and no scrim, gradient, shadow or overlay of any colour sits over a photograph.
+- `LAYOUT-15/producer-card-r005/H023` Document Paper #F4F2EC is the only colour used for the card ground and for any panel on “District insurance counter card - Paul Devoe” (producer-card-r005.pdf).
+- `LAYOUT-15/producer-card-r005/H024` Outside the headshot, Heritage Green #3C6B54 appears on “District insurance counter card - Paul Devoe” (producer-card-r005.pdf) only as the two full-width rules.
+- `LAYOUT-15/producer-card-r005/H025` All type, panels, rules, dividers and the card ground on “District insurance counter card - Paul Devoe” (producer-card-r005.pdf) are solid at full opacity, with no tint, transparency, gradient or shadow.
 - `LAYOUT-15/producer-card-r005/H026` The headshot on “District insurance counter card - Paul Devoe” (producer-card-r005.pdf) shows producer_headshot_04.jpg in natural colour and skin tones, not tinted, duotoned or recoloured toward the palette.
-- `LAYOUT-15/producer-card-r006/H001` The Disclosure Text on “District insurance counter card - Karen Marsh” (producer-card-r006.pdf) reproduces producer_roster_northern.csv row 6 word for word, with nothing added, dropped or reworded.
-- `LAYOUT-15/producer-card-r006/H002` The office on “District insurance counter card - Karen Marsh” (producer-card-r006.pdf) is “Portsmouth Branch, 150 Congress St, Portsmouth NH 03801”, the Office producer_roster_northern.csv row 6 gives Karen Marsh, not another producer's.
-- `LAYOUT-15/producer-card-r006/H003` On “District insurance counter card - Karen Marsh” (producer-card-r006.pdf) the whole Disclosure Text of producer_roster_northern.csv row 6 is visible inside the trim, none cut off at a frame edge, ending “claims-paying ability of the company.”
+- `LAYOUT-15/producer-card-r006/H001` The Disclosure Text on “District insurance counter card - Karen Marsh” (producer-card-r006.pdf) matches the Disclosure Text field of producer_roster_northern.csv row 6 word for word, with nothing added, dropped or reworded.
+- `LAYOUT-15/producer-card-r006/H002` The office line on “District insurance counter card - Karen Marsh” (producer-card-r006.pdf) reads “Portsmouth Branch, 150 Congress St, Portsmouth NH 03801”, the Office field in producer_roster_northern.csv row 6.
+- `LAYOUT-15/producer-card-r006/H003` The whole Disclosure Text on “District insurance counter card - Karen Marsh” (producer-card-r006.pdf) sits inside the trim, none of it cut off, ending “claims-paying ability of the company.”
 - `LAYOUT-15/producer-card-r006/H004` Any premium figure on “District insurance counter card - Karen Marsh” (producer-card-r006.pdf) is the plan_rates_2027.csv value for the plan and issue age band it is shown against.
-- `LAYOUT-15/producer-card-r006/H005` If “District insurance counter card - Karen Marsh” (producer-card-r006.pdf) shows premiums for more than one of the three plans in plan_rates_2027.csv, a plain note says they are not quoted on the same basis.
+- `LAYOUT-15/producer-card-r006/H005` If “District insurance counter card - Karen Marsh” (producer-card-r006.pdf) shows premiums for more than one plan in plan_rates_2027.csv, a plain note says they are not quoted on the same basis.
 - `LAYOUT-15/producer-card-r006/H006` “District insurance counter card - Karen Marsh” (producer-card-r006.pdf) shows no phone number, email or web address; producer_roster_northern.csv row 6 gives none.
-- `LAYOUT-15/producer-card-r006/H007` “District insurance counter card - Karen Marsh” (producer-card-r006.pdf) carries no superlative, urgency, exclamation mark, burst or starburst callout, promise of a return or approval, or comparison with a competitor.
+- `LAYOUT-15/producer-card-r006/H007` “District insurance counter card - Karen Marsh” (producer-card-r006.pdf) has no superlative, urgency, exclamation mark, burst or starburst callout, implied guarantee of a return or of approval, or competitor comparison.
 - `LAYOUT-15/producer-card-r006/H008` Any photograph on “District insurance counter card - Karen Marsh” (producer-card-r006.pdf) other than producer_headshot_05.jpg is honestly labelled stock or illustration, never a family, client or policyholder presented as real.
 - `LAYOUT-15/producer-card-r006/H009` “District insurance counter card - Karen Marsh” (producer-card-r006.pdf) carries no district line, neither “Central Vermont district” nor any other district name; the office line does not count.
 - `LAYOUT-15/producer-card-r006/H010` The largest text on “District insurance counter card - Karen Marsh” (producer-card-r006.pdf) is the producer name “Karen Marsh”.
 - `LAYOUT-15/producer-card-r006/H011` On “District insurance counter card - Karen Marsh” (producer-card-r006.pdf) the Disclosure Text is the smallest text on the card.
-- `LAYOUT-15/producer-card-r006/H012` The headshot on “District insurance counter card - Karen Marsh” (producer-card-r006.pdf) is producer_headshot_05.jpg, the Photo File producer_roster_northern.csv row 6 gives Karen Marsh.
+- `LAYOUT-15/producer-card-r006/H012` The headshot on “District insurance counter card - Karen Marsh” (producer-card-r006.pdf) is producer_headshot_05.jpg, the Photo File in producer_roster_northern.csv row 6.
 - `LAYOUT-15/producer-card-r006/H013` The headshot on “District insurance counter card - Karen Marsh” (producer-card-r006.pdf) keeps the proportions of producer_headshot_05.jpg, not stretched or squashed.
 - `LAYOUT-15/producer-card-r006/H014` The person in the headshot on “District insurance counter card - Karen Marsh” (producer-card-r006.pdf) is recognizably the same person as in producer_headshot_05.jpg, with the face unaltered.
-- `LAYOUT-15/producer-card-r006/H015` The headshot on “District insurance counter card - Karen Marsh” (producer-card-r006.pdf) adds no hair, skin or fabric detail that the small 720 x 960 px producer_headshot_05.jpg does not hold.
-- `LAYOUT-15/producer-card-r006/H016` The producer name “Karen Marsh” on “District insurance counter card - Karen Marsh” (producer-card-r006.pdf) is set in Lexend SemiBold at 20 pt, not a serif and not another weight.
-- `LAYOUT-15/producer-card-r006/H017` The producer name on “District insurance counter card - Karen Marsh” (producer-card-r006.pdf) reads “Karen Marsh” in sentence case, not in capitals and not letterspaced.
-- `LAYOUT-15/producer-card-r006/H018` On “District insurance counter card - Karen Marsh” (producer-card-r006.pdf) the producer name sits directly on a 1 pt Heritage Green #3C6B54 rule running the full card width, and an identical rule runs directly above the Disclosure Text.
-- `LAYOUT-15/producer-card-r006/H019` On “District insurance counter card - Karen Marsh” (producer-card-r006.pdf) the license line and office, figures aside, are Source Serif 4 Regular 9 pt, the Disclosure Text is Source Serif 4 Regular 6.5 pt, and no Source Serif 4 exceeds 9 pt.
-- `LAYOUT-15/producer-card-r006/H020` Every figure on “District insurance counter card - Karen Marsh” (producer-card-r006.pdf), the license line's “05077” included, is IBM Plex Sans Regular; any premium is 10 pt tabular figures in a column, never italic, bold or picked out in colour.
-- `LAYOUT-15/producer-card-r006/H021` No line of body text on “District insurance counter card - Karen Marsh” (producer-card-r006.pdf), the license line and office included and the Disclosure Text excluded, runs longer than 65 characters.
+- `LAYOUT-15/producer-card-r006/H015` The headshot on “District insurance counter card - Karen Marsh” (producer-card-r006.pdf) shows no hair, skin or fabric detail that is not in the small 720 x 960 px producer_headshot_05.jpg.
+- `LAYOUT-15/producer-card-r006/H016` The producer name “Karen Marsh” on “District insurance counter card - Karen Marsh” (producer-card-r006.pdf) is set in Lexend SemiBold, not a serif and not another weight.
+- `LAYOUT-15/producer-card-r006/H017` The producer name on “District insurance counter card - Karen Marsh” (producer-card-r006.pdf) reads “Karen Marsh” in sentence case, not in capitals.
+- `LAYOUT-15/producer-card-r006/H018` On “District insurance counter card - Karen Marsh” (producer-card-r006.pdf) the producer name sits directly on a 1 pt Heritage Green #3C6B54 rule running the full card width.
+- `LAYOUT-15/producer-card-r006/H019` The license line and office on “District insurance counter card - Karen Marsh” (producer-card-r006.pdf), figures aside, are set in Source Serif 4 Regular.
+- `LAYOUT-15/producer-card-r006/H020` Every figure on “District insurance counter card - Karen Marsh” (producer-card-r006.pdf), including “05077” in the license line, is IBM Plex Sans Regular, the same size as the words around it.
+- `LAYOUT-15/producer-card-r006/H021` Each line of the license text and the office text on “District insurance counter card - Karen Marsh” (producer-card-r006.pdf) has 65 characters or fewer.
 - `LAYOUT-15/producer-card-r006/H022` The type, panel and rule colours on “District insurance counter card - Karen Marsh” (producer-card-r006.pdf) come only from #1E2A3A, #4A5560, #F4F2EC, #C7CBC8 and #3C6B54.
-- `LAYOUT-15/producer-card-r006/H023` On “District insurance counter card - Karen Marsh” (producer-card-r006.pdf) the card ground is Document Paper #F4F2EC, the producer name and Disclosure Text are Ink Navy #1E2A3A, and the license line and office are Slate #4A5560.
-- `LAYOUT-15/producer-card-r006/H024` Type, panels and rules on “District insurance counter card - Karen Marsh” (producer-card-r006.pdf) use Heritage Green #3C6B54 only as the two 1 pt rules and Mist Grey #C7CBC8 only as a thin divider or keyline; photographs do not count.
-- `LAYOUT-15/producer-card-r006/H025` All type, panels, rules and dividers on “District insurance counter card - Karen Marsh” (producer-card-r006.pdf) are solid at full opacity, and no scrim, gradient, shadow or overlay of any colour sits over a photograph.
+- `LAYOUT-15/producer-card-r006/H023` Document Paper #F4F2EC is the only colour used for the card ground and for any panel on “District insurance counter card - Karen Marsh” (producer-card-r006.pdf).
+- `LAYOUT-15/producer-card-r006/H024` Outside the headshot, Heritage Green #3C6B54 appears on “District insurance counter card - Karen Marsh” (producer-card-r006.pdf) only as the two full-width rules.
+- `LAYOUT-15/producer-card-r006/H025` All type, panels, rules, dividers and the card ground on “District insurance counter card - Karen Marsh” (producer-card-r006.pdf) are solid at full opacity, with no tint, transparency, gradient or shadow.
 - `LAYOUT-15/producer-card-r006/H026` The headshot on “District insurance counter card - Karen Marsh” (producer-card-r006.pdf) shows producer_headshot_05.jpg in natural colour and skin tones, not tinted, duotoned or recoloured toward the palette.
-- `LAYOUT-15/producer-card-r007/H001` The Disclosure Text on “District insurance counter card - Daniel Okafor” (producer-card-r007.pdf) reproduces producer_roster_northern.csv row 7 word for word, with nothing added, dropped or reworded.
-- `LAYOUT-15/producer-card-r007/H002` The office on “District insurance counter card - Daniel Okafor” (producer-card-r007.pdf) is “Dover Branch, 7 Central Ave, Dover NH 03820”, the Office producer_roster_northern.csv row 7 gives Daniel Okafor, not another producer's.
-- `LAYOUT-15/producer-card-r007/H003` On “District insurance counter card - Daniel Okafor” (producer-card-r007.pdf) the whole Disclosure Text of producer_roster_northern.csv row 7 is visible inside the trim, none cut off at a frame edge, ending “claims-paying ability of the company.”
+- `LAYOUT-15/producer-card-r007/H001` The Disclosure Text on “District insurance counter card - Daniel Okafor” (producer-card-r007.pdf) matches the Disclosure Text field of producer_roster_northern.csv row 7 word for word, with nothing added, dropped or reworded.
+- `LAYOUT-15/producer-card-r007/H002` The office line on “District insurance counter card - Daniel Okafor” (producer-card-r007.pdf) reads “Dover Branch, 7 Central Ave, Dover NH 03820”, the Office field in producer_roster_northern.csv row 7.
+- `LAYOUT-15/producer-card-r007/H003` The whole Disclosure Text on “District insurance counter card - Daniel Okafor” (producer-card-r007.pdf) sits inside the trim, none of it cut off, ending “claims-paying ability of the company.”
 - `LAYOUT-15/producer-card-r007/H004` Any premium figure on “District insurance counter card - Daniel Okafor” (producer-card-r007.pdf) is the plan_rates_2027.csv value for the plan and issue age band it is shown against.
-- `LAYOUT-15/producer-card-r007/H005` If “District insurance counter card - Daniel Okafor” (producer-card-r007.pdf) shows premiums for more than one of the three plans in plan_rates_2027.csv, a plain note says they are not quoted on the same basis.
+- `LAYOUT-15/producer-card-r007/H005` If “District insurance counter card - Daniel Okafor” (producer-card-r007.pdf) shows premiums for more than one plan in plan_rates_2027.csv, a plain note says they are not quoted on the same basis.
 - `LAYOUT-15/producer-card-r007/H006` “District insurance counter card - Daniel Okafor” (producer-card-r007.pdf) shows no phone number, email or web address; producer_roster_northern.csv row 7 gives none.
-- `LAYOUT-15/producer-card-r007/H007` “District insurance counter card - Daniel Okafor” (producer-card-r007.pdf) carries no superlative, urgency, exclamation mark, burst or starburst callout, promise of a return or approval, or comparison with a competitor.
+- `LAYOUT-15/producer-card-r007/H007` “District insurance counter card - Daniel Okafor” (producer-card-r007.pdf) has no superlative, urgency, exclamation mark, burst or starburst callout, implied guarantee of a return or of approval, or competitor comparison.
 - `LAYOUT-15/producer-card-r007/H008` Any photograph on “District insurance counter card - Daniel Okafor” (producer-card-r007.pdf) other than producer_headshot_06.jpg is honestly labelled stock or illustration, never a family, client or policyholder presented as real.
 - `LAYOUT-15/producer-card-r007/H009` “District insurance counter card - Daniel Okafor” (producer-card-r007.pdf) carries no district line, neither “Central Vermont district” nor any other district name; the office line does not count.
 - `LAYOUT-15/producer-card-r007/H010` The largest text on “District insurance counter card - Daniel Okafor” (producer-card-r007.pdf) is the producer name “Daniel Okafor”.
 - `LAYOUT-15/producer-card-r007/H011` On “District insurance counter card - Daniel Okafor” (producer-card-r007.pdf) the Disclosure Text is the smallest text on the card.
-- `LAYOUT-15/producer-card-r007/H012` The headshot on “District insurance counter card - Daniel Okafor” (producer-card-r007.pdf) is producer_headshot_06.jpg, the Photo File producer_roster_northern.csv row 7 gives Daniel Okafor.
+- `LAYOUT-15/producer-card-r007/H012` The headshot on “District insurance counter card - Daniel Okafor” (producer-card-r007.pdf) is producer_headshot_06.jpg, the Photo File in producer_roster_northern.csv row 7.
 - `LAYOUT-15/producer-card-r007/H013` The headshot on “District insurance counter card - Daniel Okafor” (producer-card-r007.pdf) keeps the proportions of producer_headshot_06.jpg, not stretched or squashed.
 - `LAYOUT-15/producer-card-r007/H014` The person in the headshot on “District insurance counter card - Daniel Okafor” (producer-card-r007.pdf) is recognizably the same person as in producer_headshot_06.jpg, with the face unaltered.
-- `LAYOUT-15/producer-card-r008/H001` The Disclosure Text on “District insurance counter card - Gina Bianchi” (producer-card-r008.pdf) reproduces producer_roster_northern.csv row 8 word for word, with nothing added, dropped or reworded.
-- `LAYOUT-15/producer-card-r008/H002` The office on “District insurance counter card - Gina Bianchi” (producer-card-r008.pdf) is “Keene Branch, 19 Main St, Keene NH 03431”, the Office producer_roster_northern.csv row 8 gives Gina Bianchi, not another producer's.
-- `LAYOUT-15/producer-card-r008/H003` On “District insurance counter card - Gina Bianchi” (producer-card-r008.pdf) the whole Disclosure Text of producer_roster_northern.csv row 8 is visible inside the trim, none cut off at a frame edge, ending “claims-paying ability of the company.”
+- `LAYOUT-15/producer-card-r008/H001` The Disclosure Text on “District insurance counter card - Gina Bianchi” (producer-card-r008.pdf) matches the Disclosure Text field of producer_roster_northern.csv row 8 word for word, with nothing added, dropped or reworded.
+- `LAYOUT-15/producer-card-r008/H002` The office line on “District insurance counter card - Gina Bianchi” (producer-card-r008.pdf) reads “Keene Branch, 19 Main St, Keene NH 03431”, the Office field in producer_roster_northern.csv row 8.
+- `LAYOUT-15/producer-card-r008/H003` The whole Disclosure Text on “District insurance counter card - Gina Bianchi” (producer-card-r008.pdf) sits inside the trim, none of it cut off, ending “claims-paying ability of the company.”
 - `LAYOUT-15/producer-card-r008/H004` Any premium figure on “District insurance counter card - Gina Bianchi” (producer-card-r008.pdf) is the plan_rates_2027.csv value for the plan and issue age band it is shown against.
-- `LAYOUT-15/producer-card-r008/H005` If “District insurance counter card - Gina Bianchi” (producer-card-r008.pdf) shows premiums for more than one of the three plans in plan_rates_2027.csv, a plain note says they are not quoted on the same basis.
+- `LAYOUT-15/producer-card-r008/H005` If “District insurance counter card - Gina Bianchi” (producer-card-r008.pdf) shows premiums for more than one plan in plan_rates_2027.csv, a plain note says they are not quoted on the same basis.
 - `LAYOUT-15/producer-card-r008/H006` “District insurance counter card - Gina Bianchi” (producer-card-r008.pdf) shows no phone number, email or web address; producer_roster_northern.csv row 8 gives none.
-- `LAYOUT-15/producer-card-r008/H007` “District insurance counter card - Gina Bianchi” (producer-card-r008.pdf) carries no superlative, urgency, exclamation mark, burst or starburst callout, promise of a return or approval, or comparison with a competitor.
+- `LAYOUT-15/producer-card-r008/H007` “District insurance counter card - Gina Bianchi” (producer-card-r008.pdf) has no superlative, urgency, exclamation mark, burst or starburst callout, implied guarantee of a return or of approval, or competitor comparison.
 - `LAYOUT-15/producer-card-r008/H008` Any photograph on “District insurance counter card - Gina Bianchi” (producer-card-r008.pdf) other than producer_headshot_07.jpg is honestly labelled stock or illustration, never a family, client or policyholder presented as real.
 - `LAYOUT-15/producer-card-r008/H009` “District insurance counter card - Gina Bianchi” (producer-card-r008.pdf) carries no district line, neither “Central Vermont district” nor any other district name; the office line does not count.
 - `LAYOUT-15/producer-card-r008/H010` The largest text on “District insurance counter card - Gina Bianchi” (producer-card-r008.pdf) is the producer name “Gina Bianchi”.
 - `LAYOUT-15/producer-card-r008/H011` On “District insurance counter card - Gina Bianchi” (producer-card-r008.pdf) the Disclosure Text is the smallest text on the card.
-- `LAYOUT-15/producer-card-r008/H012` The headshot on “District insurance counter card - Gina Bianchi” (producer-card-r008.pdf) is producer_headshot_07.jpg, the Photo File producer_roster_northern.csv row 8 gives Gina Bianchi.
+- `LAYOUT-15/producer-card-r008/H012` The headshot on “District insurance counter card - Gina Bianchi” (producer-card-r008.pdf) is producer_headshot_07.jpg, the Photo File in producer_roster_northern.csv row 8.
 - `LAYOUT-15/producer-card-r008/H013` The headshot on “District insurance counter card - Gina Bianchi” (producer-card-r008.pdf) keeps the proportions of producer_headshot_07.jpg, not stretched or squashed.
 - `LAYOUT-15/producer-card-r008/H014` The person in the headshot on “District insurance counter card - Gina Bianchi” (producer-card-r008.pdf) is recognizably the same person as in producer_headshot_07.jpg, with the face unaltered.
-- `LAYOUT-15/producer-card-r008/H015` On “District insurance counter card - Gina Bianchi” (producer-card-r008.pdf), no part of the charcoal jacket's shoulder or collar from producer_headshot_07.jpg is bitten away where it meets the mid-grey wall behind it.
-- `LAYOUT-15/producer-card-r008/H016` The producer name “Gina Bianchi” on “District insurance counter card - Gina Bianchi” (producer-card-r008.pdf) is set in Lexend SemiBold at 20 pt, not a serif and not another weight.
-- `LAYOUT-15/producer-card-r008/H017` The producer name on “District insurance counter card - Gina Bianchi” (producer-card-r008.pdf) reads “Gina Bianchi” in sentence case, not in capitals and not letterspaced.
-- `LAYOUT-15/producer-card-r008/H018` On “District insurance counter card - Gina Bianchi” (producer-card-r008.pdf) the producer name sits directly on a 1 pt Heritage Green #3C6B54 rule running the full card width, and an identical rule runs directly above the Disclosure Text.
-- `LAYOUT-15/producer-card-r008/H019` On “District insurance counter card - Gina Bianchi” (producer-card-r008.pdf) the license line and office, figures aside, are Source Serif 4 Regular 9 pt, the Disclosure Text is Source Serif 4 Regular 6.5 pt, and no Source Serif 4 exceeds 9 pt.
-- `LAYOUT-15/producer-card-r008/H020` Every figure on “District insurance counter card - Gina Bianchi” (producer-card-r008.pdf), the license line's “05104” included, is IBM Plex Sans Regular; any premium is 10 pt tabular figures in a column, never italic, bold or picked out in colour.
-- `LAYOUT-15/producer-card-r008/H021` No line of body text on “District insurance counter card - Gina Bianchi” (producer-card-r008.pdf), the license line and office included and the Disclosure Text excluded, runs longer than 65 characters.
+- `LAYOUT-15/producer-card-r008/H015` On “District insurance counter card - Gina Bianchi” (producer-card-r008.pdf), the charcoal jacket's shoulder and collar from producer_headshot_07.jpg are complete, with no part cut away where they meet the mid-grey wall.
+- `LAYOUT-15/producer-card-r008/H016` The producer name “Gina Bianchi” on “District insurance counter card - Gina Bianchi” (producer-card-r008.pdf) is set in Lexend SemiBold, not a serif and not another weight.
+- `LAYOUT-15/producer-card-r008/H017` The producer name on “District insurance counter card - Gina Bianchi” (producer-card-r008.pdf) reads “Gina Bianchi” in sentence case, not in capitals.
+- `LAYOUT-15/producer-card-r008/H018` On “District insurance counter card - Gina Bianchi” (producer-card-r008.pdf) the producer name sits directly on a 1 pt Heritage Green #3C6B54 rule running the full card width.
+- `LAYOUT-15/producer-card-r008/H019` The license line and office on “District insurance counter card - Gina Bianchi” (producer-card-r008.pdf), figures aside, are set in Source Serif 4 Regular.
+- `LAYOUT-15/producer-card-r008/H020` Every figure on “District insurance counter card - Gina Bianchi” (producer-card-r008.pdf), including “05104” in the license line, is IBM Plex Sans Regular, the same size as the words around it.
+- `LAYOUT-15/producer-card-r008/H021` Each line of the license text and the office text on “District insurance counter card - Gina Bianchi” (producer-card-r008.pdf) has 65 characters or fewer.
 - `LAYOUT-15/producer-card-r008/H022` The type, panel and rule colours on “District insurance counter card - Gina Bianchi” (producer-card-r008.pdf) come only from #1E2A3A, #4A5560, #F4F2EC, #C7CBC8 and #3C6B54.
-- `LAYOUT-15/producer-card-r008/H023` On “District insurance counter card - Gina Bianchi” (producer-card-r008.pdf) the card ground is Document Paper #F4F2EC, the producer name and Disclosure Text are Ink Navy #1E2A3A, and the license line and office are Slate #4A5560.
-- `LAYOUT-15/producer-card-r008/H024` Type, panels and rules on “District insurance counter card - Gina Bianchi” (producer-card-r008.pdf) use Heritage Green #3C6B54 only as the two 1 pt rules and Mist Grey #C7CBC8 only as a thin divider or keyline; photographs do not count.
-- `LAYOUT-15/producer-card-r008/H025` All type, panels, rules and dividers on “District insurance counter card - Gina Bianchi” (producer-card-r008.pdf) are solid at full opacity, and no scrim, gradient, shadow or overlay of any colour sits over a photograph.
+- `LAYOUT-15/producer-card-r008/H023` Document Paper #F4F2EC is the only colour used for the card ground and for any panel on “District insurance counter card - Gina Bianchi” (producer-card-r008.pdf).
+- `LAYOUT-15/producer-card-r008/H024` Outside the headshot, Heritage Green #3C6B54 appears on “District insurance counter card - Gina Bianchi” (producer-card-r008.pdf) only as the two full-width rules.
+- `LAYOUT-15/producer-card-r008/H025` All type, panels, rules, dividers and the card ground on “District insurance counter card - Gina Bianchi” (producer-card-r008.pdf) are solid at full opacity, with no tint, transparency, gradient or shadow.
 - `LAYOUT-15/producer-card-r008/H026` The headshot on “District insurance counter card - Gina Bianchi” (producer-card-r008.pdf) shows producer_headshot_07.jpg in natural colour and skin tones, not tinted, duotoned or recoloured toward the palette.
-- `LAYOUT-15/producer-card-r009/H001` The Disclosure Text on “District insurance counter card - Miguel Reyes” (producer-card-r009.pdf) reproduces producer_roster_northern.csv row 9 word for word, with nothing added, dropped or reworded.
-- `LAYOUT-15/producer-card-r009/H002` The office on “District insurance counter card - Miguel Reyes” (producer-card-r009.pdf) is “Claremont Desk, 58 Opera House Sq, Claremont NH 03743”, the Office producer_roster_northern.csv row 9 gives Miguel Reyes, not another producer's.
-- `LAYOUT-15/producer-card-r009/H003` On “District insurance counter card - Miguel Reyes” (producer-card-r009.pdf) the whole Disclosure Text of producer_roster_northern.csv row 9 is visible inside the trim, none cut off at a frame edge, ending “claims-paying ability of the company.”
+- `LAYOUT-15/producer-card-r009/H001` The Disclosure Text on “District insurance counter card - Miguel Reyes” (producer-card-r009.pdf) matches the Disclosure Text field of producer_roster_northern.csv row 9 word for word, with nothing added, dropped or reworded.
+- `LAYOUT-15/producer-card-r009/H002` The office line on “District insurance counter card - Miguel Reyes” (producer-card-r009.pdf) reads “Claremont Desk, 58 Opera House Sq, Claremont NH 03743”, the Office field in producer_roster_northern.csv row 9.
+- `LAYOUT-15/producer-card-r009/H003` The whole Disclosure Text on “District insurance counter card - Miguel Reyes” (producer-card-r009.pdf) sits inside the trim, none of it cut off, ending “claims-paying ability of the company.”
 - `LAYOUT-15/producer-card-r009/H004` Any premium figure on “District insurance counter card - Miguel Reyes” (producer-card-r009.pdf) is the plan_rates_2027.csv value for the plan and issue age band it is shown against.
-- `LAYOUT-15/producer-card-r009/H005` If “District insurance counter card - Miguel Reyes” (producer-card-r009.pdf) shows premiums for more than one of the three plans in plan_rates_2027.csv, a plain note says they are not quoted on the same basis.
+- `LAYOUT-15/producer-card-r009/H005` If “District insurance counter card - Miguel Reyes” (producer-card-r009.pdf) shows premiums for more than one plan in plan_rates_2027.csv, a plain note says they are not quoted on the same basis.
 - `LAYOUT-15/producer-card-r009/H006` “District insurance counter card - Miguel Reyes” (producer-card-r009.pdf) shows no phone number, email or web address; producer_roster_northern.csv row 9 gives none.
-- `LAYOUT-15/producer-card-r009/H007` “District insurance counter card - Miguel Reyes” (producer-card-r009.pdf) carries no superlative, urgency, exclamation mark, burst or starburst callout, promise of a return or approval, or comparison with a competitor.
+- `LAYOUT-15/producer-card-r009/H007` “District insurance counter card - Miguel Reyes” (producer-card-r009.pdf) has no superlative, urgency, exclamation mark, burst or starburst callout, implied guarantee of a return or of approval, or competitor comparison.
 - `LAYOUT-15/producer-card-r009/H008` Any photograph on “District insurance counter card - Miguel Reyes” (producer-card-r009.pdf) other than producer_headshot_08.jpg is honestly labelled stock or illustration, never a family, client or policyholder presented as real.
 - `LAYOUT-15/producer-card-r009/H009` “District insurance counter card - Miguel Reyes” (producer-card-r009.pdf) carries no district line, neither “Central Vermont district” nor any other district name; the office line does not count.
 - `LAYOUT-15/producer-card-r009/H010` The largest text on “District insurance counter card - Miguel Reyes” (producer-card-r009.pdf) is the producer name “Miguel Reyes”.
 - `LAYOUT-15/producer-card-r009/H011` On “District insurance counter card - Miguel Reyes” (producer-card-r009.pdf) the Disclosure Text is the smallest text on the card.
-- `LAYOUT-15/producer-card-r009/H012` The headshot on “District insurance counter card - Miguel Reyes” (producer-card-r009.pdf) is producer_headshot_08.jpg, the Photo File producer_roster_northern.csv row 9 gives Miguel Reyes.
+- `LAYOUT-15/producer-card-r009/H012` The headshot on “District insurance counter card - Miguel Reyes” (producer-card-r009.pdf) is producer_headshot_08.jpg, the Photo File in producer_roster_northern.csv row 9.
 - `LAYOUT-15/producer-card-r009/H013` The headshot on “District insurance counter card - Miguel Reyes” (producer-card-r009.pdf) keeps the proportions of producer_headshot_08.jpg, not stretched or squashed.
 - `LAYOUT-15/producer-card-r009/H014` The person in the headshot on “District insurance counter card - Miguel Reyes” (producer-card-r009.pdf) is recognizably the same person as in producer_headshot_08.jpg, with the face unaltered.
 - `LAYOUT-15/producer-card-r009/H015` The wall behind Miguel Reyes on “District insurance counter card - Miguel Reyes” (producer-card-r009.pdf) is not painted, cloned or generated over to hide the PINEBROOK SAVINGS counter sign in producer_headshot_08.jpg.
-- `LAYOUT-15/producer-card-r009/H016` The producer name “Miguel Reyes” on “District insurance counter card - Miguel Reyes” (producer-card-r009.pdf) is set in Lexend SemiBold at 20 pt, not a serif and not another weight.
-- `LAYOUT-15/producer-card-r009/H017` The producer name on “District insurance counter card - Miguel Reyes” (producer-card-r009.pdf) reads “Miguel Reyes” in sentence case, not in capitals and not letterspaced.
-- `LAYOUT-15/producer-card-r009/H018` On “District insurance counter card - Miguel Reyes” (producer-card-r009.pdf) the producer name sits directly on a 1 pt Heritage Green #3C6B54 rule running the full card width, and an identical rule runs directly above the Disclosure Text.
-- `LAYOUT-15/producer-card-r009/H019` On “District insurance counter card - Miguel Reyes” (producer-card-r009.pdf) the license line and office, figures aside, are Source Serif 4 Regular 9 pt, the Disclosure Text is Source Serif 4 Regular 6.5 pt, and no Source Serif 4 exceeds 9 pt.
-- `LAYOUT-15/producer-card-r009/H020` Every figure on “District insurance counter card - Miguel Reyes” (producer-card-r009.pdf), the license line's “05118” included, is IBM Plex Sans Regular; any premium is 10 pt tabular figures in a column, never italic, bold or picked out in colour.
-- `LAYOUT-15/producer-card-r009/H021` No line of body text on “District insurance counter card - Miguel Reyes” (producer-card-r009.pdf), the license line and office included and the Disclosure Text excluded, runs longer than 65 characters.
+- `LAYOUT-15/producer-card-r009/H016` The producer name “Miguel Reyes” on “District insurance counter card - Miguel Reyes” (producer-card-r009.pdf) is set in Lexend SemiBold, not a serif and not another weight.
+- `LAYOUT-15/producer-card-r009/H017` The producer name on “District insurance counter card - Miguel Reyes” (producer-card-r009.pdf) reads “Miguel Reyes” in sentence case, not in capitals.
+- `LAYOUT-15/producer-card-r009/H018` On “District insurance counter card - Miguel Reyes” (producer-card-r009.pdf) the producer name sits directly on a 1 pt Heritage Green #3C6B54 rule running the full card width.
+- `LAYOUT-15/producer-card-r009/H019` The license line and office on “District insurance counter card - Miguel Reyes” (producer-card-r009.pdf), figures aside, are set in Source Serif 4 Regular.
+- `LAYOUT-15/producer-card-r009/H020` Every figure on “District insurance counter card - Miguel Reyes” (producer-card-r009.pdf), including “05118” in the license line, is IBM Plex Sans Regular, the same size as the words around it.
+- `LAYOUT-15/producer-card-r009/H021` Each line of the license text and the office text on “District insurance counter card - Miguel Reyes” (producer-card-r009.pdf) has 65 characters or fewer.
 - `LAYOUT-15/producer-card-r009/H022` The type, panel and rule colours on “District insurance counter card - Miguel Reyes” (producer-card-r009.pdf) come only from #1E2A3A, #4A5560, #F4F2EC, #C7CBC8 and #3C6B54.
-- `LAYOUT-15/producer-card-r009/H023` On “District insurance counter card - Miguel Reyes” (producer-card-r009.pdf) the card ground is Document Paper #F4F2EC, the producer name and Disclosure Text are Ink Navy #1E2A3A, and the license line and office are Slate #4A5560.
-- `LAYOUT-15/producer-card-r009/H024` Type, panels and rules on “District insurance counter card - Miguel Reyes” (producer-card-r009.pdf) use Heritage Green #3C6B54 only as the two 1 pt rules and Mist Grey #C7CBC8 only as a thin divider or keyline; photographs do not count.
-- `LAYOUT-15/producer-card-r009/H025` All type, panels, rules and dividers on “District insurance counter card - Miguel Reyes” (producer-card-r009.pdf) are solid at full opacity, and no scrim, gradient, shadow or overlay of any colour sits over a photograph.
+- `LAYOUT-15/producer-card-r009/H023` Document Paper #F4F2EC is the only colour used for the card ground and for any panel on “District insurance counter card - Miguel Reyes” (producer-card-r009.pdf).
+- `LAYOUT-15/producer-card-r009/H024` Outside the headshot, Heritage Green #3C6B54 appears on “District insurance counter card - Miguel Reyes” (producer-card-r009.pdf) only as the two full-width rules.
+- `LAYOUT-15/producer-card-r009/H025` All type, panels, rules, dividers and the card ground on “District insurance counter card - Miguel Reyes” (producer-card-r009.pdf) are solid at full opacity, with no tint, transparency, gradient or shadow.
 - `LAYOUT-15/producer-card-r009/H026` The headshot on “District insurance counter card - Miguel Reyes” (producer-card-r009.pdf) shows producer_headshot_08.jpg in natural colour and skin tones, not tinted, duotoned or recoloured toward the palette.
-- `LAYOUT-15/producer-card-r010/H001` The Disclosure Text on “District insurance counter card - Linh Tran” (producer-card-r010.pdf) reproduces producer_roster_northern.csv row 10 word for word, with nothing added, dropped or reworded.
-- `LAYOUT-15/producer-card-r010/H002` The office on “District insurance counter card - Linh Tran” (producer-card-r010.pdf) is “Seacoast Office, 5 Market Sq, Portsmouth NH 03801”, the Office producer_roster_northern.csv row 10 gives Linh Tran, not another producer's.
-- `LAYOUT-15/producer-card-r010/H003` On “District insurance counter card - Linh Tran” (producer-card-r010.pdf) the whole Disclosure Text of producer_roster_northern.csv row 10 is visible inside the trim, none cut off at a frame edge, ending “producer represents Aldervale Mutual only.”
+- `LAYOUT-15/producer-card-r010/H001` The Disclosure Text on “District insurance counter card - Linh Tran” (producer-card-r010.pdf) matches the Disclosure Text field of producer_roster_northern.csv row 10 word for word, with nothing added, dropped or reworded.
+- `LAYOUT-15/producer-card-r010/H002` The office line on “District insurance counter card - Linh Tran” (producer-card-r010.pdf) reads “Seacoast Office, 5 Market Sq, Portsmouth NH 03801”, the Office field in producer_roster_northern.csv row 10.
+- `LAYOUT-15/producer-card-r010/H003` The whole Disclosure Text on “District insurance counter card - Linh Tran” (producer-card-r010.pdf) sits inside the trim, none of it cut off, ending “producer represents Aldervale Mutual only.”
 - `LAYOUT-15/producer-card-r010/H004` Any premium figure on “District insurance counter card - Linh Tran” (producer-card-r010.pdf) is the plan_rates_2027.csv value for the plan and issue age band it is shown against.
-- `LAYOUT-15/producer-card-r010/H005` If “District insurance counter card - Linh Tran” (producer-card-r010.pdf) shows premiums for more than one of the three plans in plan_rates_2027.csv, a plain note says they are not quoted on the same basis.
+- `LAYOUT-15/producer-card-r010/H005` If “District insurance counter card - Linh Tran” (producer-card-r010.pdf) shows premiums for more than one plan in plan_rates_2027.csv, a plain note says they are not quoted on the same basis.
 - `LAYOUT-15/producer-card-r010/H006` “District insurance counter card - Linh Tran” (producer-card-r010.pdf) shows no phone number, email or web address; producer_roster_northern.csv row 10 gives none.
-- `LAYOUT-15/producer-card-r010/H007` “District insurance counter card - Linh Tran” (producer-card-r010.pdf) carries no superlative, urgency, exclamation mark, burst or starburst callout, promise of a return or approval, or comparison with a competitor.
+- `LAYOUT-15/producer-card-r010/H007` “District insurance counter card - Linh Tran” (producer-card-r010.pdf) has no superlative, urgency, exclamation mark, burst or starburst callout, implied guarantee of a return or of approval, or competitor comparison.
 - `LAYOUT-15/producer-card-r010/H008` Any photograph on “District insurance counter card - Linh Tran” (producer-card-r010.pdf) other than producer_headshot_09.jpg is honestly labelled stock or illustration, never a family, client or policyholder presented as real.
 - `LAYOUT-15/producer-card-r010/H009` “District insurance counter card - Linh Tran” (producer-card-r010.pdf) carries no district line, neither “Central Vermont district” nor any other district name; the office line does not count.
 - `LAYOUT-15/producer-card-r010/H010` The largest text on “District insurance counter card - Linh Tran” (producer-card-r010.pdf) is the producer name “Linh Tran”.
 - `LAYOUT-15/producer-card-r010/H011` On “District insurance counter card - Linh Tran” (producer-card-r010.pdf) the Disclosure Text is the smallest text on the card.
-- `LAYOUT-15/producer-card-r010/H012` The headshot on “District insurance counter card - Linh Tran” (producer-card-r010.pdf) is producer_headshot_09.jpg, the Photo File producer_roster_northern.csv row 10 gives Linh Tran.
+- `LAYOUT-15/producer-card-r010/H012` The headshot on “District insurance counter card - Linh Tran” (producer-card-r010.pdf) is producer_headshot_09.jpg, the Photo File in producer_roster_northern.csv row 10.
 - `LAYOUT-15/producer-card-r010/H013` The headshot on “District insurance counter card - Linh Tran” (producer-card-r010.pdf) keeps the proportions of producer_headshot_09.jpg, not stretched or squashed.
 - `LAYOUT-15/producer-card-r010/H014` The person in the headshot on “District insurance counter card - Linh Tran” (producer-card-r010.pdf) is recognizably the same person as in producer_headshot_09.jpg, with the face unaltered.
-- `LAYOUT-15/producer-card-r010/H015` The producer name “Linh Tran” on “District insurance counter card - Linh Tran” (producer-card-r010.pdf) is set in Lexend SemiBold at 20 pt, not a serif and not another weight.
-- `LAYOUT-15/producer-card-r010/H016` The producer name on “District insurance counter card - Linh Tran” (producer-card-r010.pdf) reads “Linh Tran” in sentence case, not in capitals and not letterspaced.
-- `LAYOUT-15/producer-card-r010/H017` On “District insurance counter card - Linh Tran” (producer-card-r010.pdf) the producer name sits directly on a 1 pt Heritage Green #3C6B54 rule running the full card width, and an identical rule runs directly above the Disclosure Text.
-- `LAYOUT-15/producer-card-r010/H018` On “District insurance counter card - Linh Tran” (producer-card-r010.pdf) the license line and office, figures aside, are Source Serif 4 Regular 9 pt, the Disclosure Text is Source Serif 4 Regular 6.5 pt, and no Source Serif 4 exceeds 9 pt.
-- `LAYOUT-15/producer-card-r010/H019` Every figure on “District insurance counter card - Linh Tran” (producer-card-r010.pdf), the license line's “05131” included, is IBM Plex Sans Regular; any premium is 10 pt tabular figures in a column, never italic, bold or picked out in colour.
-- `LAYOUT-15/producer-card-r010/H020` No line of body text on “District insurance counter card - Linh Tran” (producer-card-r010.pdf), the license line and office included and the Disclosure Text excluded, runs longer than 65 characters.
+- `LAYOUT-15/producer-card-r010/H015` The producer name “Linh Tran” on “District insurance counter card - Linh Tran” (producer-card-r010.pdf) is set in Lexend SemiBold, not a serif and not another weight.
+- `LAYOUT-15/producer-card-r010/H016` The producer name on “District insurance counter card - Linh Tran” (producer-card-r010.pdf) reads “Linh Tran” in sentence case, not in capitals.
+- `LAYOUT-15/producer-card-r010/H017` On “District insurance counter card - Linh Tran” (producer-card-r010.pdf) the producer name sits directly on a 1 pt Heritage Green #3C6B54 rule running the full card width.
+- `LAYOUT-15/producer-card-r010/H018` The license line and office on “District insurance counter card - Linh Tran” (producer-card-r010.pdf), figures aside, are set in Source Serif 4 Regular.
+- `LAYOUT-15/producer-card-r010/H019` Every figure on “District insurance counter card - Linh Tran” (producer-card-r010.pdf), including “05131” in the license line, is IBM Plex Sans Regular, the same size as the words around it.
+- `LAYOUT-15/producer-card-r010/H020` Each line of the license text and the office text on “District insurance counter card - Linh Tran” (producer-card-r010.pdf) has 65 characters or fewer.
 - `LAYOUT-15/producer-card-r010/H021` The type, panel and rule colours on “District insurance counter card - Linh Tran” (producer-card-r010.pdf) come only from #1E2A3A, #4A5560, #F4F2EC, #C7CBC8 and #3C6B54.
-- `LAYOUT-15/producer-card-r010/H022` On “District insurance counter card - Linh Tran” (producer-card-r010.pdf) the card ground is Document Paper #F4F2EC, the producer name and Disclosure Text are Ink Navy #1E2A3A, and the license line and office are Slate #4A5560.
-- `LAYOUT-15/producer-card-r010/H023` Type, panels and rules on “District insurance counter card - Linh Tran” (producer-card-r010.pdf) use Heritage Green #3C6B54 only as the two 1 pt rules and Mist Grey #C7CBC8 only as a thin divider or keyline; photographs do not count.
-- `LAYOUT-15/producer-card-r010/H024` All type, panels, rules and dividers on “District insurance counter card - Linh Tran” (producer-card-r010.pdf) are solid at full opacity, and no scrim, gradient, shadow or overlay of any colour sits over a photograph.
+- `LAYOUT-15/producer-card-r010/H022` Document Paper #F4F2EC is the only colour used for the card ground and for any panel on “District insurance counter card - Linh Tran” (producer-card-r010.pdf).
+- `LAYOUT-15/producer-card-r010/H023` Outside the headshot, Heritage Green #3C6B54 appears on “District insurance counter card - Linh Tran” (producer-card-r010.pdf) only as the two full-width rules.
+- `LAYOUT-15/producer-card-r010/H024` All type, panels, rules, dividers and the card ground on “District insurance counter card - Linh Tran” (producer-card-r010.pdf) are solid at full opacity, with no tint, transparency, gradient or shadow.
 - `LAYOUT-15/producer-card-r010/H025` The headshot on “District insurance counter card - Linh Tran” (producer-card-r010.pdf) shows producer_headshot_09.jpg in natural colour and skin tones, not tinted, duotoned or recoloured toward the palette.
-- `LAYOUT-15/producer-card-r011/H001` The Disclosure Text on “District insurance counter card - Sean Donnelly” (producer-card-r011.pdf) reproduces producer_roster_northern.csv row 11 word for word, with nothing added, dropped or reworded.
-- `LAYOUT-15/producer-card-r011/H002` The office on “District insurance counter card - Sean Donnelly” (producer-card-r011.pdf) is “Laconia Branch, 431 Union Ave, Laconia NH 03246”, the Office producer_roster_northern.csv row 11 gives Sean Donnelly, not another producer's.
-- `LAYOUT-15/producer-card-r011/H003` On “District insurance counter card - Sean Donnelly” (producer-card-r011.pdf) the whole Disclosure Text of producer_roster_northern.csv row 11 is visible inside the trim, none cut off at a frame edge, ending “claims-paying ability of the company.”
+- `LAYOUT-15/producer-card-r011/H001` The Disclosure Text on “District insurance counter card - Sean Donnelly” (producer-card-r011.pdf) matches the Disclosure Text field of producer_roster_northern.csv row 11 word for word, with nothing added, dropped or reworded.
+- `LAYOUT-15/producer-card-r011/H002` The office line on “District insurance counter card - Sean Donnelly” (producer-card-r011.pdf) reads “Laconia Branch, 431 Union Ave, Laconia NH 03246”, the Office field in producer_roster_northern.csv row 11.
+- `LAYOUT-15/producer-card-r011/H003` The whole Disclosure Text on “District insurance counter card - Sean Donnelly” (producer-card-r011.pdf) sits inside the trim, none of it cut off, ending “claims-paying ability of the company.”
 - `LAYOUT-15/producer-card-r011/H004` Any premium figure on “District insurance counter card - Sean Donnelly” (producer-card-r011.pdf) is the plan_rates_2027.csv value for the plan and issue age band it is shown against.
-- `LAYOUT-15/producer-card-r011/H005` If “District insurance counter card - Sean Donnelly” (producer-card-r011.pdf) shows premiums for more than one of the three plans in plan_rates_2027.csv, a plain note says they are not quoted on the same basis.
+- `LAYOUT-15/producer-card-r011/H005` If “District insurance counter card - Sean Donnelly” (producer-card-r011.pdf) shows premiums for more than one plan in plan_rates_2027.csv, a plain note says they are not quoted on the same basis.
 - `LAYOUT-15/producer-card-r011/H006` “District insurance counter card - Sean Donnelly” (producer-card-r011.pdf) shows no phone number, email or web address; producer_roster_northern.csv row 11 gives none.
-- `LAYOUT-15/producer-card-r011/H007` “District insurance counter card - Sean Donnelly” (producer-card-r011.pdf) carries no superlative, urgency, exclamation mark, burst or starburst callout, promise of a return or approval, or comparison with a competitor.
+- `LAYOUT-15/producer-card-r011/H007` “District insurance counter card - Sean Donnelly” (producer-card-r011.pdf) has no superlative, urgency, exclamation mark, burst or starburst callout, implied guarantee of a return or of approval, or competitor comparison.
 - `LAYOUT-15/producer-card-r011/H008` Any photograph on “District insurance counter card - Sean Donnelly” (producer-card-r011.pdf) other than producer_headshot_10.jpg is honestly labelled stock or illustration, never a family, client or policyholder presented as real.
 - `LAYOUT-15/producer-card-r011/H009` “District insurance counter card - Sean Donnelly” (producer-card-r011.pdf) carries no district line, neither “Central Vermont district” nor any other district name; the office line does not count.
 - `LAYOUT-15/producer-card-r011/H010` The largest text on “District insurance counter card - Sean Donnelly” (producer-card-r011.pdf) is the producer name “Sean Donnelly”.
 - `LAYOUT-15/producer-card-r011/H011` On “District insurance counter card - Sean Donnelly” (producer-card-r011.pdf) the Disclosure Text is the smallest text on the card.
-- `LAYOUT-15/producer-card-r011/H012` The headshot on “District insurance counter card - Sean Donnelly” (producer-card-r011.pdf) is producer_headshot_10.jpg, the Photo File producer_roster_northern.csv row 11 gives Sean Donnelly.
+- `LAYOUT-15/producer-card-r011/H012` The headshot on “District insurance counter card - Sean Donnelly” (producer-card-r011.pdf) is producer_headshot_10.jpg, the Photo File in producer_roster_northern.csv row 11.
 - `LAYOUT-15/producer-card-r011/H013` The headshot on “District insurance counter card - Sean Donnelly” (producer-card-r011.pdf) keeps the proportions of producer_headshot_10.jpg, not stretched or squashed.
 - `LAYOUT-15/producer-card-r011/H014` The person in the headshot on “District insurance counter card - Sean Donnelly” (producer-card-r011.pdf) is recognizably the same person as in producer_headshot_10.jpg, with the face unaltered.
-- `LAYOUT-15/producer-card-r011/H015` On “District insurance counter card - Sean Donnelly” (producer-card-r011.pdf), no part of the navy jacket's shoulder or collar from producer_headshot_10.jpg is bitten away where it meets the mid-grey wall behind it.
-- `LAYOUT-15/producer-card-r011/H016` The producer name “Sean Donnelly” on “District insurance counter card - Sean Donnelly” (producer-card-r011.pdf) is set in Lexend SemiBold at 20 pt, not a serif and not another weight.
-- `LAYOUT-15/producer-card-r011/H017` The producer name on “District insurance counter card - Sean Donnelly” (producer-card-r011.pdf) reads “Sean Donnelly” in sentence case, not in capitals and not letterspaced.
-- `LAYOUT-15/producer-card-r011/H018` On “District insurance counter card - Sean Donnelly” (producer-card-r011.pdf) the producer name sits directly on a 1 pt Heritage Green #3C6B54 rule running the full card width, and an identical rule runs directly above the Disclosure Text.
-- `LAYOUT-15/producer-card-r011/H019` On “District insurance counter card - Sean Donnelly” (producer-card-r011.pdf) the license line and office, figures aside, are Source Serif 4 Regular 9 pt, the Disclosure Text is Source Serif 4 Regular 6.5 pt, and no Source Serif 4 exceeds 9 pt.
-- `LAYOUT-15/producer-card-r011/H020` Every figure on “District insurance counter card - Sean Donnelly” (producer-card-r011.pdf), the license line's “05145” included, is IBM Plex Sans Regular; any premium is 10 pt tabular figures in a column, never italic, bold or picked out in colour.
-- `LAYOUT-15/producer-card-r011/H021` No line of body text on “District insurance counter card - Sean Donnelly” (producer-card-r011.pdf), the license line and office included and the Disclosure Text excluded, runs longer than 65 characters.
+- `LAYOUT-15/producer-card-r011/H015` On “District insurance counter card - Sean Donnelly” (producer-card-r011.pdf), the navy jacket's shoulder and collar from producer_headshot_10.jpg are complete, with no part cut away where they meet the mid-grey wall.
+- `LAYOUT-15/producer-card-r011/H016` The producer name “Sean Donnelly” on “District insurance counter card - Sean Donnelly” (producer-card-r011.pdf) is set in Lexend SemiBold, not a serif and not another weight.
+- `LAYOUT-15/producer-card-r011/H017` The producer name on “District insurance counter card - Sean Donnelly” (producer-card-r011.pdf) reads “Sean Donnelly” in sentence case, not in capitals.
+- `LAYOUT-15/producer-card-r011/H018` On “District insurance counter card - Sean Donnelly” (producer-card-r011.pdf) the producer name sits directly on a 1 pt Heritage Green #3C6B54 rule running the full card width.
+- `LAYOUT-15/producer-card-r011/H019` The license line and office on “District insurance counter card - Sean Donnelly” (producer-card-r011.pdf), figures aside, are set in Source Serif 4 Regular.
+- `LAYOUT-15/producer-card-r011/H020` Every figure on “District insurance counter card - Sean Donnelly” (producer-card-r011.pdf), including “05145” in the license line, is IBM Plex Sans Regular, the same size as the words around it.
+- `LAYOUT-15/producer-card-r011/H021` Each line of the license text and the office text on “District insurance counter card - Sean Donnelly” (producer-card-r011.pdf) has 65 characters or fewer.
 - `LAYOUT-15/producer-card-r011/H022` The type, panel and rule colours on “District insurance counter card - Sean Donnelly” (producer-card-r011.pdf) come only from #1E2A3A, #4A5560, #F4F2EC, #C7CBC8 and #3C6B54.
-- `LAYOUT-15/producer-card-r011/H023` On “District insurance counter card - Sean Donnelly” (producer-card-r011.pdf) the card ground is Document Paper #F4F2EC, the producer name and Disclosure Text are Ink Navy #1E2A3A, and the license line and office are Slate #4A5560.
-- `LAYOUT-15/producer-card-r011/H024` Type, panels and rules on “District insurance counter card - Sean Donnelly” (producer-card-r011.pdf) use Heritage Green #3C6B54 only as the two 1 pt rules and Mist Grey #C7CBC8 only as a thin divider or keyline; photographs do not count.
-- `LAYOUT-15/producer-card-r011/H025` All type, panels, rules and dividers on “District insurance counter card - Sean Donnelly” (producer-card-r011.pdf) are solid at full opacity, and no scrim, gradient, shadow or overlay of any colour sits over a photograph.
+- `LAYOUT-15/producer-card-r011/H023` Document Paper #F4F2EC is the only colour used for the card ground and for any panel on “District insurance counter card - Sean Donnelly” (producer-card-r011.pdf).
+- `LAYOUT-15/producer-card-r011/H024` Outside the headshot, Heritage Green #3C6B54 appears on “District insurance counter card - Sean Donnelly” (producer-card-r011.pdf) only as the two full-width rules.
+- `LAYOUT-15/producer-card-r011/H025` All type, panels, rules, dividers and the card ground on “District insurance counter card - Sean Donnelly” (producer-card-r011.pdf) are solid at full opacity, with no tint, transparency, gradient or shadow.
 - `LAYOUT-15/producer-card-r011/H026` The headshot on “District insurance counter card - Sean Donnelly” (producer-card-r011.pdf) shows producer_headshot_10.jpg in natural colour and skin tones, not tinted, duotoned or recoloured toward the palette.
-- `LAYOUT-15/producer-card-r012/H001` The Disclosure Text on “District insurance counter card - Rosa Castellano” (producer-card-r012.pdf) reproduces producer_roster_northern.csv row 12 word for word, with nothing added, dropped or reworded.
-- `LAYOUT-15/producer-card-r012/H002` The office on “District insurance counter card - Rosa Castellano” (producer-card-r012.pdf) is “Rochester Branch, 22 South Main St, Rochester NH 03867”, the Office producer_roster_northern.csv row 12 gives Rosa Castellano, not another producer's.
-- `LAYOUT-15/producer-card-r012/H003` On “District insurance counter card - Rosa Castellano” (producer-card-r012.pdf) the whole Disclosure Text of producer_roster_northern.csv row 12 is visible inside the trim, none cut off at a frame edge, ending “claims-paying ability of the company.”
+- `LAYOUT-15/producer-card-r012/H001` The Disclosure Text on “District insurance counter card - Rosa Castellano” (producer-card-r012.pdf) matches the Disclosure Text field of producer_roster_northern.csv row 12 word for word, with nothing added, dropped or reworded.
+- `LAYOUT-15/producer-card-r012/H002` The office line on “District insurance counter card - Rosa Castellano” (producer-card-r012.pdf) reads “Rochester Branch, 22 South Main St, Rochester NH 03867”, the Office field in producer_roster_northern.csv row 12.
+- `LAYOUT-15/producer-card-r012/H003` The whole Disclosure Text on “District insurance counter card - Rosa Castellano” (producer-card-r012.pdf) sits inside the trim, none of it cut off, ending “claims-paying ability of the company.”
 - `LAYOUT-15/producer-card-r012/H004` Any premium figure on “District insurance counter card - Rosa Castellano” (producer-card-r012.pdf) is the plan_rates_2027.csv value for the plan and issue age band it is shown against.
-- `LAYOUT-15/producer-card-r012/H005` If “District insurance counter card - Rosa Castellano” (producer-card-r012.pdf) shows premiums for more than one of the three plans in plan_rates_2027.csv, a plain note says they are not quoted on the same basis.
+- `LAYOUT-15/producer-card-r012/H005` If “District insurance counter card - Rosa Castellano” (producer-card-r012.pdf) shows premiums for more than one plan in plan_rates_2027.csv, a plain note says they are not quoted on the same basis.
 - `LAYOUT-15/producer-card-r012/H006` “District insurance counter card - Rosa Castellano” (producer-card-r012.pdf) shows no phone number, email or web address; producer_roster_northern.csv row 12 gives none.
-- `LAYOUT-15/producer-card-r012/H007` “District insurance counter card - Rosa Castellano” (producer-card-r012.pdf) carries no superlative, urgency, exclamation mark, burst or starburst callout, promise of a return or approval, or comparison with a competitor.
+- `LAYOUT-15/producer-card-r012/H007` “District insurance counter card - Rosa Castellano” (producer-card-r012.pdf) has no superlative, urgency, exclamation mark, burst or starburst callout, implied guarantee of a return or of approval, or competitor comparison.
 - `LAYOUT-15/producer-card-r012/H008` Any photograph on “District insurance counter card - Rosa Castellano” (producer-card-r012.pdf) other than producer_headshot_11.jpg is honestly labelled stock or illustration, never a family, client or policyholder presented as real.
 - `LAYOUT-15/producer-card-r012/H009` “District insurance counter card - Rosa Castellano” (producer-card-r012.pdf) carries no district line, neither “Central Vermont district” nor any other district name; the office line does not count.
 - `LAYOUT-15/producer-card-r012/H010` The largest text on “District insurance counter card - Rosa Castellano” (producer-card-r012.pdf) is the producer name “Rosa Castellano”.
 - `LAYOUT-15/producer-card-r012/H011` On “District insurance counter card - Rosa Castellano” (producer-card-r012.pdf) the Disclosure Text is the smallest text on the card.
-- `LAYOUT-15/producer-card-r012/H012` The headshot on “District insurance counter card - Rosa Castellano” (producer-card-r012.pdf) is producer_headshot_11.jpg, the Photo File producer_roster_northern.csv row 12 gives Rosa Castellano.
+- `LAYOUT-15/producer-card-r012/H012` The headshot on “District insurance counter card - Rosa Castellano” (producer-card-r012.pdf) is producer_headshot_11.jpg, the Photo File in producer_roster_northern.csv row 12.
 - `LAYOUT-15/producer-card-r012/H013` The headshot on “District insurance counter card - Rosa Castellano” (producer-card-r012.pdf) keeps the proportions of producer_headshot_11.jpg, not stretched or squashed.
 - `LAYOUT-15/producer-card-r012/H014` The person in the headshot on “District insurance counter card - Rosa Castellano” (producer-card-r012.pdf) is recognizably the same person as in producer_headshot_11.jpg, with the face unaltered.
-- `LAYOUT-15/producer-card-r013/H001` The Disclosure Text on “District insurance counter card - Walter Pruitt” (producer-card-r013.pdf) reproduces producer_roster_northern.csv row 13 word for word, with nothing added, dropped or reworded.
-- `LAYOUT-15/producer-card-r013/H002` The office on “District insurance counter card - Walter Pruitt” (producer-card-r013.pdf) is “Claremont Branch, 14 Tremont Sq, Claremont NH 03743”, the Office producer_roster_northern.csv row 13 gives Walter Pruitt, not another producer's.
-- `LAYOUT-15/producer-card-r013/H003` On “District insurance counter card - Walter Pruitt” (producer-card-r013.pdf) the whole Disclosure Text of producer_roster_northern.csv row 13 is visible inside the trim, none cut off at a frame edge, ending “claims-paying ability of the company.”
+- `LAYOUT-15/producer-card-r013/H001` The Disclosure Text on “District insurance counter card - Walter Pruitt” (producer-card-r013.pdf) matches the Disclosure Text field of producer_roster_northern.csv row 13 word for word, with nothing added, dropped or reworded.
+- `LAYOUT-15/producer-card-r013/H002` The office line on “District insurance counter card - Walter Pruitt” (producer-card-r013.pdf) reads “Claremont Branch, 14 Tremont Sq, Claremont NH 03743”, the Office field in producer_roster_northern.csv row 13.
+- `LAYOUT-15/producer-card-r013/H003` The whole Disclosure Text on “District insurance counter card - Walter Pruitt” (producer-card-r013.pdf) sits inside the trim, none of it cut off, ending “claims-paying ability of the company.”
 - `LAYOUT-15/producer-card-r013/H004` Any premium figure on “District insurance counter card - Walter Pruitt” (producer-card-r013.pdf) is the plan_rates_2027.csv value for the plan and issue age band it is shown against.
-- `LAYOUT-15/producer-card-r013/H005` If “District insurance counter card - Walter Pruitt” (producer-card-r013.pdf) shows premiums for more than one of the three plans in plan_rates_2027.csv, a plain note says they are not quoted on the same basis.
+- `LAYOUT-15/producer-card-r013/H005` If “District insurance counter card - Walter Pruitt” (producer-card-r013.pdf) shows premiums for more than one plan in plan_rates_2027.csv, a plain note says they are not quoted on the same basis.
 - `LAYOUT-15/producer-card-r013/H006` “District insurance counter card - Walter Pruitt” (producer-card-r013.pdf) shows no phone number, email or web address; producer_roster_northern.csv row 13 gives none.
-- `LAYOUT-15/producer-card-r013/H007` “District insurance counter card - Walter Pruitt” (producer-card-r013.pdf) carries no superlative, urgency, exclamation mark, burst or starburst callout, promise of a return or approval, or comparison with a competitor.
+- `LAYOUT-15/producer-card-r013/H007` “District insurance counter card - Walter Pruitt” (producer-card-r013.pdf) has no superlative, urgency, exclamation mark, burst or starburst callout, implied guarantee of a return or of approval, or competitor comparison.
 - `LAYOUT-15/producer-card-r013/H008` Any photograph on “District insurance counter card - Walter Pruitt” (producer-card-r013.pdf) other than producer_headshot_12.jpg is honestly labelled stock or illustration, never a family, client or policyholder presented as real.
 - `LAYOUT-15/producer-card-r013/H009` “District insurance counter card - Walter Pruitt” (producer-card-r013.pdf) carries no district line, neither “Central Vermont district” nor any other district name; the office line does not count.
 - `LAYOUT-15/producer-card-r013/H010` The largest text on “District insurance counter card - Walter Pruitt” (producer-card-r013.pdf) is the producer name “Walter Pruitt”.
 - `LAYOUT-15/producer-card-r013/H011` On “District insurance counter card - Walter Pruitt” (producer-card-r013.pdf) the Disclosure Text is the smallest text on the card.
-- `LAYOUT-15/producer-card-r013/H012` The headshot on “District insurance counter card - Walter Pruitt” (producer-card-r013.pdf) is producer_headshot_12.jpg, the Photo File producer_roster_northern.csv row 13 gives Walter Pruitt.
+- `LAYOUT-15/producer-card-r013/H012` The headshot on “District insurance counter card - Walter Pruitt” (producer-card-r013.pdf) is producer_headshot_12.jpg, the Photo File in producer_roster_northern.csv row 13.
 - `LAYOUT-15/producer-card-r013/H013` The headshot on “District insurance counter card - Walter Pruitt” (producer-card-r013.pdf) keeps the proportions of producer_headshot_12.jpg, not stretched or squashed.
 - `LAYOUT-15/producer-card-r013/H014` The person in the headshot on “District insurance counter card - Walter Pruitt” (producer-card-r013.pdf) is recognizably the same person as in producer_headshot_12.jpg, with the face unaltered.
-- `LAYOUT-15/producer-card-r013/H015` On “District insurance counter card - Walter Pruitt” (producer-card-r013.pdf), no part of the charcoal jacket's shoulder or collar from producer_headshot_12.jpg is bitten away where it meets the mid-grey wall behind it.
-- `LAYOUT-15/producer-card-r013/H016` The producer name “Walter Pruitt” on “District insurance counter card - Walter Pruitt” (producer-card-r013.pdf) is set in Lexend SemiBold at 20 pt, not a serif and not another weight.
-- `LAYOUT-15/producer-card-r013/H017` The producer name on “District insurance counter card - Walter Pruitt” (producer-card-r013.pdf) reads “Walter Pruitt” in sentence case, not in capitals and not letterspaced.
-- `LAYOUT-15/producer-card-r013/H018` On “District insurance counter card - Walter Pruitt” (producer-card-r013.pdf) the producer name sits directly on a 1 pt Heritage Green #3C6B54 rule running the full card width, and an identical rule runs directly above the Disclosure Text.
-- `LAYOUT-15/producer-card-r013/H019` On “District insurance counter card - Walter Pruitt” (producer-card-r013.pdf) the license line and office, figures aside, are Source Serif 4 Regular 9 pt, the Disclosure Text is Source Serif 4 Regular 6.5 pt, and no Source Serif 4 exceeds 9 pt.
-- `LAYOUT-15/producer-card-r013/H020` Every figure on “District insurance counter card - Walter Pruitt” (producer-card-r013.pdf), the license line's “05170” included, is IBM Plex Sans Regular; any premium is 10 pt tabular figures in a column, never italic, bold or picked out in colour.
-- `LAYOUT-15/producer-card-r013/H021` No line of body text on “District insurance counter card - Walter Pruitt” (producer-card-r013.pdf), the license line and office included and the Disclosure Text excluded, runs longer than 65 characters.
+- `LAYOUT-15/producer-card-r013/H015` On “District insurance counter card - Walter Pruitt” (producer-card-r013.pdf), the charcoal jacket's shoulder and collar from producer_headshot_12.jpg are complete, with no part cut away where they meet the mid-grey wall.
+- `LAYOUT-15/producer-card-r013/H016` The producer name “Walter Pruitt” on “District insurance counter card - Walter Pruitt” (producer-card-r013.pdf) is set in Lexend SemiBold, not a serif and not another weight.
+- `LAYOUT-15/producer-card-r013/H017` The producer name on “District insurance counter card - Walter Pruitt” (producer-card-r013.pdf) reads “Walter Pruitt” in sentence case, not in capitals.
+- `LAYOUT-15/producer-card-r013/H018` On “District insurance counter card - Walter Pruitt” (producer-card-r013.pdf) the producer name sits directly on a 1 pt Heritage Green #3C6B54 rule running the full card width.
+- `LAYOUT-15/producer-card-r013/H019` The license line and office on “District insurance counter card - Walter Pruitt” (producer-card-r013.pdf), figures aside, are set in Source Serif 4 Regular.
+- `LAYOUT-15/producer-card-r013/H020` Every figure on “District insurance counter card - Walter Pruitt” (producer-card-r013.pdf), including “05170” in the license line, is IBM Plex Sans Regular, the same size as the words around it.
+- `LAYOUT-15/producer-card-r013/H021` Each line of the license text and the office text on “District insurance counter card - Walter Pruitt” (producer-card-r013.pdf) has 65 characters or fewer.
 - `LAYOUT-15/producer-card-r013/H022` The type, panel and rule colours on “District insurance counter card - Walter Pruitt” (producer-card-r013.pdf) come only from #1E2A3A, #4A5560, #F4F2EC, #C7CBC8 and #3C6B54.
-- `LAYOUT-15/producer-card-r013/H023` On “District insurance counter card - Walter Pruitt” (producer-card-r013.pdf) the card ground is Document Paper #F4F2EC, the producer name and Disclosure Text are Ink Navy #1E2A3A, and the license line and office are Slate #4A5560.
-- `LAYOUT-15/producer-card-r013/H024` Type, panels and rules on “District insurance counter card - Walter Pruitt” (producer-card-r013.pdf) use Heritage Green #3C6B54 only as the two 1 pt rules and Mist Grey #C7CBC8 only as a thin divider or keyline; photographs do not count.
-- `LAYOUT-15/producer-card-r013/H025` All type, panels, rules and dividers on “District insurance counter card - Walter Pruitt” (producer-card-r013.pdf) are solid at full opacity, and no scrim, gradient, shadow or overlay of any colour sits over a photograph.
+- `LAYOUT-15/producer-card-r013/H023` Document Paper #F4F2EC is the only colour used for the card ground and for any panel on “District insurance counter card - Walter Pruitt” (producer-card-r013.pdf).
+- `LAYOUT-15/producer-card-r013/H024` Outside the headshot, Heritage Green #3C6B54 appears on “District insurance counter card - Walter Pruitt” (producer-card-r013.pdf) only as the two full-width rules.
+- `LAYOUT-15/producer-card-r013/H025` All type, panels, rules, dividers and the card ground on “District insurance counter card - Walter Pruitt” (producer-card-r013.pdf) are solid at full opacity, with no tint, transparency, gradient or shadow.
 - `LAYOUT-15/producer-card-r013/H026` The headshot on “District insurance counter card - Walter Pruitt” (producer-card-r013.pdf) shows producer_headshot_12.jpg in natural colour and skin tones, not tinted, duotoned or recoloured toward the palette.
-- `LAYOUT-15/producer-card-r014/H001` The Disclosure Text on “District insurance counter card - Dana Whitfield” (producer-card-r014.pdf) reproduces producer_roster_northern.csv row 14 word for word, with nothing added, dropped or reworded.
-- `LAYOUT-15/producer-card-r014/H002` The office on “District insurance counter card - Dana Whitfield” (producer-card-r014.pdf) is “Berlin Branch, 165 Main St, Berlin NH 03570”, the Office producer_roster_northern.csv row 14 gives Dana Whitfield, not another producer's.
-- `LAYOUT-15/producer-card-r014/H003` On “District insurance counter card - Dana Whitfield” (producer-card-r014.pdf) the whole Disclosure Text of producer_roster_northern.csv row 14 is visible inside the trim, none cut off at a frame edge, ending “claims-paying ability of the company.”
+- `LAYOUT-15/producer-card-r014/H001` The Disclosure Text on “District insurance counter card - Dana Whitfield” (producer-card-r014.pdf) matches the Disclosure Text field of producer_roster_northern.csv row 14 word for word, with nothing added, dropped or reworded.
+- `LAYOUT-15/producer-card-r014/H002` The office line on “District insurance counter card - Dana Whitfield” (producer-card-r014.pdf) reads “Berlin Branch, 165 Main St, Berlin NH 03570”, the Office field in producer_roster_northern.csv row 14.
+- `LAYOUT-15/producer-card-r014/H003` The whole Disclosure Text on “District insurance counter card - Dana Whitfield” (producer-card-r014.pdf) sits inside the trim, none of it cut off, ending “claims-paying ability of the company.”
 - `LAYOUT-15/producer-card-r014/H004` Any premium figure on “District insurance counter card - Dana Whitfield” (producer-card-r014.pdf) is the plan_rates_2027.csv value for the plan and issue age band it is shown against.
-- `LAYOUT-15/producer-card-r014/H005` If “District insurance counter card - Dana Whitfield” (producer-card-r014.pdf) shows premiums for more than one of the three plans in plan_rates_2027.csv, a plain note says they are not quoted on the same basis.
+- `LAYOUT-15/producer-card-r014/H005` If “District insurance counter card - Dana Whitfield” (producer-card-r014.pdf) shows premiums for more than one plan in plan_rates_2027.csv, a plain note says they are not quoted on the same basis.
 - `LAYOUT-15/producer-card-r014/H006` “District insurance counter card - Dana Whitfield” (producer-card-r014.pdf) shows no phone number, email or web address; producer_roster_northern.csv row 14 gives none.
-- `LAYOUT-15/producer-card-r014/H007` “District insurance counter card - Dana Whitfield” (producer-card-r014.pdf) carries no superlative, urgency, exclamation mark, burst or starburst callout, promise of a return or approval, or comparison with a competitor.
+- `LAYOUT-15/producer-card-r014/H007` “District insurance counter card - Dana Whitfield” (producer-card-r014.pdf) has no superlative, urgency, exclamation mark, burst or starburst callout, implied guarantee of a return or of approval, or competitor comparison.
 - `LAYOUT-15/producer-card-r014/H008` Any photograph on “District insurance counter card - Dana Whitfield” (producer-card-r014.pdf) other than producer_headshot_13.jpg is honestly labelled stock or illustration, never a family, client or policyholder presented as real.
 - `LAYOUT-15/producer-card-r014/H009` “District insurance counter card - Dana Whitfield” (producer-card-r014.pdf) carries no district line, neither “Central Vermont district” nor any other district name; the office line does not count.
 - `LAYOUT-15/producer-card-r014/H010` The largest text on “District insurance counter card - Dana Whitfield” (producer-card-r014.pdf) is the producer name “Dana Whitfield”.
 - `LAYOUT-15/producer-card-r014/H011` On “District insurance counter card - Dana Whitfield” (producer-card-r014.pdf) the Disclosure Text is the smallest text on the card.
-- `LAYOUT-15/producer-card-r014/H012` The headshot on “District insurance counter card - Dana Whitfield” (producer-card-r014.pdf) is producer_headshot_13.jpg, the Photo File producer_roster_northern.csv row 14 gives Dana Whitfield.
+- `LAYOUT-15/producer-card-r014/H012` The headshot on “District insurance counter card - Dana Whitfield” (producer-card-r014.pdf) is producer_headshot_13.jpg, the Photo File in producer_roster_northern.csv row 14.
 - `LAYOUT-15/producer-card-r014/H013` The headshot on “District insurance counter card - Dana Whitfield” (producer-card-r014.pdf) keeps the proportions of producer_headshot_13.jpg, not stretched or squashed.
 - `LAYOUT-15/producer-card-r014/H014` The person in the headshot on “District insurance counter card - Dana Whitfield” (producer-card-r014.pdf) is recognizably the same person as in producer_headshot_13.jpg, with the face unaltered.
-- `LAYOUT-15/producer-card-r014/H015` The headshot on “District insurance counter card - Dana Whitfield” (producer-card-r014.pdf) adds no hair, skin or fabric detail that the small 675 x 900 px producer_headshot_13.jpg does not hold.
-- `LAYOUT-15/producer-card-r014/H016` The producer name “Dana Whitfield” on “District insurance counter card - Dana Whitfield” (producer-card-r014.pdf) is set in Lexend SemiBold at 20 pt, not a serif and not another weight.
-- `LAYOUT-15/producer-card-r014/H017` The producer name on “District insurance counter card - Dana Whitfield” (producer-card-r014.pdf) reads “Dana Whitfield” in sentence case, not in capitals and not letterspaced.
-- `LAYOUT-15/producer-card-r014/H018` On “District insurance counter card - Dana Whitfield” (producer-card-r014.pdf) the producer name sits directly on a 1 pt Heritage Green #3C6B54 rule running the full card width, and an identical rule runs directly above the Disclosure Text.
-- `LAYOUT-15/producer-card-r014/H019` On “District insurance counter card - Dana Whitfield” (producer-card-r014.pdf) the license line and office, figures aside, are Source Serif 4 Regular 9 pt, the Disclosure Text is Source Serif 4 Regular 6.5 pt, and no Source Serif 4 exceeds 9 pt.
-- `LAYOUT-15/producer-card-r014/H020` Every figure on “District insurance counter card - Dana Whitfield” (producer-card-r014.pdf), the license line's “05182” included, is IBM Plex Sans Regular; any premium is 10 pt tabular figures in a column, never italic, bold or picked out in colour.
-- `LAYOUT-15/producer-card-r014/H021` No line of body text on “District insurance counter card - Dana Whitfield” (producer-card-r014.pdf), the license line and office included and the Disclosure Text excluded, runs longer than 65 characters.
+- `LAYOUT-15/producer-card-r014/H015` The headshot on “District insurance counter card - Dana Whitfield” (producer-card-r014.pdf) shows no hair, skin or fabric detail that is not in the small 675 x 900 px producer_headshot_13.jpg.
+- `LAYOUT-15/producer-card-r014/H016` The producer name “Dana Whitfield” on “District insurance counter card - Dana Whitfield” (producer-card-r014.pdf) is set in Lexend SemiBold, not a serif and not another weight.
+- `LAYOUT-15/producer-card-r014/H017` The producer name on “District insurance counter card - Dana Whitfield” (producer-card-r014.pdf) reads “Dana Whitfield” in sentence case, not in capitals.
+- `LAYOUT-15/producer-card-r014/H018` On “District insurance counter card - Dana Whitfield” (producer-card-r014.pdf) the producer name sits directly on a 1 pt Heritage Green #3C6B54 rule running the full card width.
+- `LAYOUT-15/producer-card-r014/H019` The license line and office on “District insurance counter card - Dana Whitfield” (producer-card-r014.pdf), figures aside, are set in Source Serif 4 Regular.
+- `LAYOUT-15/producer-card-r014/H020` Every figure on “District insurance counter card - Dana Whitfield” (producer-card-r014.pdf), including “05182” in the license line, is IBM Plex Sans Regular, the same size as the words around it.
+- `LAYOUT-15/producer-card-r014/H021` Each line of the license text and the office text on “District insurance counter card - Dana Whitfield” (producer-card-r014.pdf) has 65 characters or fewer.
 - `LAYOUT-15/producer-card-r014/H022` The type, panel and rule colours on “District insurance counter card - Dana Whitfield” (producer-card-r014.pdf) come only from #1E2A3A, #4A5560, #F4F2EC, #C7CBC8 and #3C6B54.
-- `LAYOUT-15/producer-card-r014/H023` On “District insurance counter card - Dana Whitfield” (producer-card-r014.pdf) the card ground is Document Paper #F4F2EC, the producer name and Disclosure Text are Ink Navy #1E2A3A, and the license line and office are Slate #4A5560.
-- `LAYOUT-15/producer-card-r014/H024` Type, panels and rules on “District insurance counter card - Dana Whitfield” (producer-card-r014.pdf) use Heritage Green #3C6B54 only as the two 1 pt rules and Mist Grey #C7CBC8 only as a thin divider or keyline; photographs do not count.
-- `LAYOUT-15/producer-card-r014/H025` All type, panels, rules and dividers on “District insurance counter card - Dana Whitfield” (producer-card-r014.pdf) are solid at full opacity, and no scrim, gradient, shadow or overlay of any colour sits over a photograph.
+- `LAYOUT-15/producer-card-r014/H023` Document Paper #F4F2EC is the only colour used for the card ground and for any panel on “District insurance counter card - Dana Whitfield” (producer-card-r014.pdf).
+- `LAYOUT-15/producer-card-r014/H024` Outside the headshot, Heritage Green #3C6B54 appears on “District insurance counter card - Dana Whitfield” (producer-card-r014.pdf) only as the two full-width rules.
+- `LAYOUT-15/producer-card-r014/H025` All type, panels, rules, dividers and the card ground on “District insurance counter card - Dana Whitfield” (producer-card-r014.pdf) are solid at full opacity, with no tint, transparency, gradient or shadow.
 - `LAYOUT-15/producer-card-r014/H026` The headshot on “District insurance counter card - Dana Whitfield” (producer-card-r014.pdf) shows producer_headshot_13.jpg in natural colour and skin tones, not tinted, duotoned or recoloured toward the palette.
-- `LAYOUT-15/producer-card-r015/H001` The Disclosure Text on “District insurance counter card - Priya Nandakumar” (producer-card-r015.pdf) reproduces producer_roster_northern.csv row 15 word for word, with nothing added, dropped or reworded.
-- `LAYOUT-15/producer-card-r015/H002` The office on “District insurance counter card - Priya Nandakumar” (producer-card-r015.pdf) is “Salem Branch, 200 Main St, Salem NH 03079”, the Office producer_roster_northern.csv row 15 gives Priya Nandakumar, not another producer's.
-- `LAYOUT-15/producer-card-r015/H003` On “District insurance counter card - Priya Nandakumar” (producer-card-r015.pdf) the whole Disclosure Text of producer_roster_northern.csv row 15 is visible inside the trim, none cut off at a frame edge, ending “claims-paying ability of the company.”
+- `LAYOUT-15/producer-card-r015/H001` The Disclosure Text on “District insurance counter card - Priya Nandakumar” (producer-card-r015.pdf) matches the Disclosure Text field of producer_roster_northern.csv row 15 word for word, with nothing added, dropped or reworded.
+- `LAYOUT-15/producer-card-r015/H002` The office line on “District insurance counter card - Priya Nandakumar” (producer-card-r015.pdf) reads “Salem Branch, 200 Main St, Salem NH 03079”, the Office field in producer_roster_northern.csv row 15.
+- `LAYOUT-15/producer-card-r015/H003` The whole Disclosure Text on “District insurance counter card - Priya Nandakumar” (producer-card-r015.pdf) sits inside the trim, none of it cut off, ending “claims-paying ability of the company.”
 - `LAYOUT-15/producer-card-r015/H004` Any premium figure on “District insurance counter card - Priya Nandakumar” (producer-card-r015.pdf) is the plan_rates_2027.csv value for the plan and issue age band it is shown against.
-- `LAYOUT-15/producer-card-r015/H005` If “District insurance counter card - Priya Nandakumar” (producer-card-r015.pdf) shows premiums for more than one of the three plans in plan_rates_2027.csv, a plain note says they are not quoted on the same basis.
+- `LAYOUT-15/producer-card-r015/H005` If “District insurance counter card - Priya Nandakumar” (producer-card-r015.pdf) shows premiums for more than one plan in plan_rates_2027.csv, a plain note says they are not quoted on the same basis.
 - `LAYOUT-15/producer-card-r015/H006` “District insurance counter card - Priya Nandakumar” (producer-card-r015.pdf) shows no phone number, email or web address; producer_roster_northern.csv row 15 gives none.
-- `LAYOUT-15/producer-card-r015/H007` “District insurance counter card - Priya Nandakumar” (producer-card-r015.pdf) carries no superlative, urgency, exclamation mark, burst or starburst callout, promise of a return or approval, or comparison with a competitor.
-- `LAYOUT-15/producer-card-r015/H008` “District insurance counter card - Priya Nandakumar” (producer-card-r015.pdf) carries no photograph presented as Priya Nandakumar, because nandakumar_headshot.jpg was never supplied, and no stock, family, client or policyholder image stands in for her.
+- `LAYOUT-15/producer-card-r015/H007` “District insurance counter card - Priya Nandakumar” (producer-card-r015.pdf) has no superlative, urgency, exclamation mark, burst or starburst callout, implied guarantee of a return or of approval, or competitor comparison.
+- `LAYOUT-15/producer-card-r015/H008` “District insurance counter card - Priya Nandakumar” (producer-card-r015.pdf) shows no photograph, generated face or illustration presented as Priya Nandakumar; nandakumar_headshot.jpg was never supplied.
 - `LAYOUT-15/producer-card-r015/H009` “District insurance counter card - Priya Nandakumar” (producer-card-r015.pdf) carries no district line, neither “Central Vermont district” nor any other district name; the office line does not count.
 - `LAYOUT-15/producer-card-r015/H010` The largest text on “District insurance counter card - Priya Nandakumar” (producer-card-r015.pdf) is the producer name “Priya Nandakumar”.
 - `LAYOUT-15/producer-card-r015/H011` On “District insurance counter card - Priya Nandakumar” (producer-card-r015.pdf) the Disclosure Text is the smallest text on the card.
-- `LAYOUT-15/producer-card-r015/H012` No photograph on “District insurance counter card - Priya Nandakumar” (producer-card-r015.pdf) is producer_headshot_01.jpg, producer_headshot_02.jpg, producer_headshot_03.jpg, producer_headshot_04.jpg, producer_headshot_05.jpg, producer_headshot_06.jpg, producer_headshot_07.jpg, producer_headshot_08.jpg, producer_headshot_09.jpg, producer_headshot_10.jpg, producer_headshot_11.jpg, producer_headshot_12.jpg, producer_headshot_13.jpg or producer_headshot_14.jpg.
-- `LAYOUT-15/producer-card-r015/H013` “District insurance counter card - Priya Nandakumar” (producer-card-r015.pdf) carries no generated, stock or illustrated face presented as Priya Nandakumar.
-- `LAYOUT-15/producer-card-r015/H014` The producer name “Priya Nandakumar” on “District insurance counter card - Priya Nandakumar” (producer-card-r015.pdf) is set in Lexend SemiBold at 20 pt, not a serif and not another weight.
-- `LAYOUT-15/producer-card-r015/H015` The producer name on “District insurance counter card - Priya Nandakumar” (producer-card-r015.pdf) reads “Priya Nandakumar” in sentence case, not in capitals and not letterspaced.
-- `LAYOUT-15/producer-card-r015/H016` On “District insurance counter card - Priya Nandakumar” (producer-card-r015.pdf) the producer name sits directly on a 1 pt Heritage Green #3C6B54 rule running the full card width, and an identical rule runs directly above the Disclosure Text.
-- `LAYOUT-15/producer-card-r015/H017` On “District insurance counter card - Priya Nandakumar” (producer-card-r015.pdf) the license line and office, figures aside, are Source Serif 4 Regular 9 pt, the Disclosure Text is Source Serif 4 Regular 6.5 pt, and no Source Serif 4 exceeds 9 pt.
-- `LAYOUT-15/producer-card-r015/H018` Every figure on “District insurance counter card - Priya Nandakumar” (producer-card-r015.pdf), the license line's “05188” included, is IBM Plex Sans Regular; any premium is 10 pt tabular figures in a column, never italic, bold or picked out in colour.
-- `LAYOUT-15/producer-card-r015/H019` No line of body text on “District insurance counter card - Priya Nandakumar” (producer-card-r015.pdf), the license line and office included and the Disclosure Text excluded, runs longer than 65 characters.
+- `LAYOUT-15/producer-card-r015/H012` No photograph on “District insurance counter card - Priya Nandakumar” (producer-card-r015.pdf) is any of the supplied headshots producer_headshot_01.jpg to producer_headshot_14.jpg.
+- `LAYOUT-15/producer-card-r015/H014` The producer name “Priya Nandakumar” on “District insurance counter card - Priya Nandakumar” (producer-card-r015.pdf) is set in Lexend SemiBold, not a serif and not another weight.
+- `LAYOUT-15/producer-card-r015/H015` The producer name on “District insurance counter card - Priya Nandakumar” (producer-card-r015.pdf) reads “Priya Nandakumar” in sentence case, not in capitals.
+- `LAYOUT-15/producer-card-r015/H016` On “District insurance counter card - Priya Nandakumar” (producer-card-r015.pdf) the producer name sits directly on a 1 pt Heritage Green #3C6B54 rule running the full card width.
+- `LAYOUT-15/producer-card-r015/H017` The license line and office on “District insurance counter card - Priya Nandakumar” (producer-card-r015.pdf), figures aside, are set in Source Serif 4 Regular.
+- `LAYOUT-15/producer-card-r015/H018` Every figure on “District insurance counter card - Priya Nandakumar” (producer-card-r015.pdf), including “05188” in the license line, is IBM Plex Sans Regular, the same size as the words around it.
+- `LAYOUT-15/producer-card-r015/H019` Each line of the license text and the office text on “District insurance counter card - Priya Nandakumar” (producer-card-r015.pdf) has 65 characters or fewer.
 - `LAYOUT-15/producer-card-r015/H020` The type, panel and rule colours on “District insurance counter card - Priya Nandakumar” (producer-card-r015.pdf) come only from #1E2A3A, #4A5560, #F4F2EC, #C7CBC8 and #3C6B54.
-- `LAYOUT-15/producer-card-r015/H021` On “District insurance counter card - Priya Nandakumar” (producer-card-r015.pdf) the card ground is Document Paper #F4F2EC, the producer name and Disclosure Text are Ink Navy #1E2A3A, and the license line and office are Slate #4A5560.
-- `LAYOUT-15/producer-card-r015/H022` Type, panels and rules on “District insurance counter card - Priya Nandakumar” (producer-card-r015.pdf) use Heritage Green #3C6B54 only as the two 1 pt rules and Mist Grey #C7CBC8 only as a thin divider or keyline; photographs do not count.
-- `LAYOUT-15/producer-card-r015/H023` All type, panels, rules and dividers on “District insurance counter card - Priya Nandakumar” (producer-card-r015.pdf) are solid at full opacity, and no scrim, gradient, shadow or overlay of any colour sits over a photograph.
+- `LAYOUT-15/producer-card-r015/H021` Document Paper #F4F2EC is the only colour used for the card ground and for any panel on “District insurance counter card - Priya Nandakumar” (producer-card-r015.pdf).
+- `LAYOUT-15/producer-card-r015/H022` Outside any photograph, Heritage Green #3C6B54 appears on “District insurance counter card - Priya Nandakumar” (producer-card-r015.pdf) only as the two full-width rules.
+- `LAYOUT-15/producer-card-r015/H023` All type, panels, rules, dividers and the card ground on “District insurance counter card - Priya Nandakumar” (producer-card-r015.pdf) are solid at full opacity, with no tint, transparency, gradient or shadow.
 - `LAYOUT-15/producer-card-r015/H024` Any photograph on “District insurance counter card - Priya Nandakumar” (producer-card-r015.pdf) keeps its natural colour and skin tones, not tinted, duotoned or recoloured toward the palette.
-- `LAYOUT-15/producer-card-combined/H001` The delivery contains thirteen single counter card files, one per named producer, beside “District insurance counter card - combined production run” (producer-card-combined.pdf).
-- `LAYOUT-15/producer-card-combined/H002` “District insurance counter card - combined production run” (producer-card-combined.pdf) has no page for Maureen Alcott, and producer_headshot_03.jpg appears on none of its pages.
-- `LAYOUT-15/producer-card-r002/H004` If “District insurance counter card - Raymond Hollis” (producer-card-r002.pdf) shows premiums for more than one of the three plans in plan_rates_2027.csv, a plain note says they are not quoted on the same basis.
-- `LAYOUT-15/producer-card-r002/H005` The headshot on “District insurance counter card - Raymond Hollis” (producer-card-r002.pdf) is producer_headshot_01.jpg, the Photo File producer_roster_northern.csv row 2 gives Raymond Hollis.
+- `LAYOUT-15/producer-card-combined/H002` “District insurance counter card - combined production run” (producer-card-combined.pdf) has no page for Maureen Alcott.
+- `LAYOUT-15/producer-card-r002/H004` If “District insurance counter card - Raymond Hollis” (producer-card-r002.pdf) shows premiums for more than one plan in plan_rates_2027.csv, a plain note says they are not quoted on the same basis.
+- `LAYOUT-15/producer-card-r002/H005` The headshot on “District insurance counter card - Raymond Hollis” (producer-card-r002.pdf) is producer_headshot_01.jpg, the Photo File in producer_roster_northern.csv row 2.
 - `LAYOUT-15/producer-card-r002/H006` The headshot on “District insurance counter card - Raymond Hollis” (producer-card-r002.pdf) keeps the proportions of producer_headshot_01.jpg, not stretched or squashed.
-- `LAYOUT-15/producer-card-r002/H007` On “District insurance counter card - Raymond Hollis” (producer-card-r002.pdf) the license line and office, figures aside, are Source Serif 4 Regular 9 pt, the Disclosure Text is Source Serif 4 Regular 6.5 pt, and no Source Serif 4 exceeds 9 pt.
-- `LAYOUT-15/producer-card-r002/H008` Type, panels and rules on “District insurance counter card - Raymond Hollis” (producer-card-r002.pdf) use Heritage Green #3C6B54 only as the two 1 pt rules and Mist Grey #C7CBC8 only as a thin divider or keyline; photographs do not count.
+- `LAYOUT-15/producer-card-r002/H007` The license line and office on “District insurance counter card - Raymond Hollis” (producer-card-r002.pdf), figures aside, are set in Source Serif 4 Regular.
+- `LAYOUT-15/producer-card-r002/H008` Outside the headshot, Heritage Green #3C6B54 appears on “District insurance counter card - Raymond Hollis” (producer-card-r002.pdf) only as the two full-width rules.
 - `LAYOUT-15/producer-card-r002/H009` The person in the headshot on “District insurance counter card - Raymond Hollis” (producer-card-r002.pdf) is recognizably the same person as in producer_headshot_01.jpg, with the face unaltered.
 - `LAYOUT-15/producer-card-r002/H010` The largest text on “District insurance counter card - Raymond Hollis” (producer-card-r002.pdf) is the producer name “Raymond Hollis”.
 - `LAYOUT-15/producer-card-r002/H011` On “District insurance counter card - Raymond Hollis” (producer-card-r002.pdf) the Disclosure Text is the smallest text on the card.
 - `LAYOUT-15/producer-card-r002/H012` Any premium figure on “District insurance counter card - Raymond Hollis” (producer-card-r002.pdf) is the plan_rates_2027.csv value for the plan and issue age band it is shown against.
 - `LAYOUT-15/producer-card-r002/H013` “District insurance counter card - Raymond Hollis” (producer-card-r002.pdf) shows no phone number, email or web address; producer_roster_northern.csv row 2 gives none.
-- `LAYOUT-15/producer-card-r002/H014` “District insurance counter card - Raymond Hollis” (producer-card-r002.pdf) carries no superlative, urgency, exclamation mark, burst or starburst callout, promise of a return or approval, or comparison with a competitor.
+- `LAYOUT-15/producer-card-r002/H014` “District insurance counter card - Raymond Hollis” (producer-card-r002.pdf) has no superlative, urgency, exclamation mark, burst or starburst callout, implied guarantee of a return or of approval, or competitor comparison.
 - `LAYOUT-15/producer-card-r002/H015` Any photograph on “District insurance counter card - Raymond Hollis” (producer-card-r002.pdf) other than producer_headshot_01.jpg is honestly labelled stock or illustration, never a family, client or policyholder presented as real.
 - `LAYOUT-15/producer-card-r002/H016` “District insurance counter card - Raymond Hollis” (producer-card-r002.pdf) carries no district line, neither “Central Vermont district” nor any other district name; the office line does not count.
-- `LAYOUT-15/producer-card-r002/H017` The producer name “Raymond Hollis” on “District insurance counter card - Raymond Hollis” (producer-card-r002.pdf) is set in Lexend SemiBold at 20 pt, not a serif and not another weight.
-- `LAYOUT-15/producer-card-r002/H018` The producer name on “District insurance counter card - Raymond Hollis” (producer-card-r002.pdf) reads “Raymond Hollis” in sentence case, not in capitals and not letterspaced.
-- `LAYOUT-15/producer-card-r002/H019` On “District insurance counter card - Raymond Hollis” (producer-card-r002.pdf) the producer name sits directly on a 1 pt Heritage Green #3C6B54 rule running the full card width, and an identical rule runs directly above the Disclosure Text.
-- `LAYOUT-15/producer-card-r002/H020` Every figure on “District insurance counter card - Raymond Hollis” (producer-card-r002.pdf), the license line's “04821” included, is IBM Plex Sans Regular; any premium is 10 pt tabular figures in a column, never italic, bold or picked out in colour.
-- `LAYOUT-15/producer-card-r002/H021` No line of body text on “District insurance counter card - Raymond Hollis” (producer-card-r002.pdf), the license line and office included and the Disclosure Text excluded, runs longer than 65 characters.
+- `LAYOUT-15/producer-card-r002/H017` The producer name “Raymond Hollis” on “District insurance counter card - Raymond Hollis” (producer-card-r002.pdf) is set in Lexend SemiBold, not a serif and not another weight.
+- `LAYOUT-15/producer-card-r002/H018` The producer name on “District insurance counter card - Raymond Hollis” (producer-card-r002.pdf) reads “Raymond Hollis” in sentence case, not in capitals.
+- `LAYOUT-15/producer-card-r002/H019` On “District insurance counter card - Raymond Hollis” (producer-card-r002.pdf) the producer name sits directly on a 1 pt Heritage Green #3C6B54 rule running the full card width.
+- `LAYOUT-15/producer-card-r002/H020` Every figure on “District insurance counter card - Raymond Hollis” (producer-card-r002.pdf), including “04821” in the license line, is IBM Plex Sans Regular, the same size as the words around it.
+- `LAYOUT-15/producer-card-r002/H021` Each line of the license text and the office text on “District insurance counter card - Raymond Hollis” (producer-card-r002.pdf) has 65 characters or fewer.
 - `LAYOUT-15/producer-card-r002/H022` The type, panel and rule colours on “District insurance counter card - Raymond Hollis” (producer-card-r002.pdf) come only from #1E2A3A, #4A5560, #F4F2EC, #C7CBC8 and #3C6B54.
-- `LAYOUT-15/producer-card-r002/H023` On “District insurance counter card - Raymond Hollis” (producer-card-r002.pdf) the card ground is Document Paper #F4F2EC, the producer name and Disclosure Text are Ink Navy #1E2A3A, and the license line and office are Slate #4A5560.
-- `LAYOUT-15/producer-card-r002/H024` All type, panels, rules and dividers on “District insurance counter card - Raymond Hollis” (producer-card-r002.pdf) are solid at full opacity, and no scrim, gradient, shadow or overlay of any colour sits over a photograph.
+- `LAYOUT-15/producer-card-r002/H023` Document Paper #F4F2EC is the only colour used for the card ground and for any panel on “District insurance counter card - Raymond Hollis” (producer-card-r002.pdf).
+- `LAYOUT-15/producer-card-r002/H024` All type, panels, rules, dividers and the card ground on “District insurance counter card - Raymond Hollis” (producer-card-r002.pdf) are solid at full opacity, with no tint, transparency, gradient or shadow.
 - `LAYOUT-15/producer-card-r002/H025` The headshot on “District insurance counter card - Raymond Hollis” (producer-card-r002.pdf) shows producer_headshot_01.jpg in natural colour and skin tones, not tinted, duotoned or recoloured toward the palette.
 - `LAYOUT-15/producer-card-r003/H004` Any premium figure on “District insurance counter card - Susan Grady” (producer-card-r003.pdf) is the plan_rates_2027.csv value for the plan and issue age band it is shown against.
-- `LAYOUT-15/producer-card-r003/H005` The headshot on “District insurance counter card - Susan Grady” (producer-card-r003.pdf) is producer_headshot_02.jpg, the Photo File producer_roster_northern.csv row 3 gives Susan Grady.
+- `LAYOUT-15/producer-card-r003/H005` The headshot on “District insurance counter card - Susan Grady” (producer-card-r003.pdf) is producer_headshot_02.jpg, the Photo File in producer_roster_northern.csv row 3.
 - `LAYOUT-15/producer-card-r003/H006` On “District insurance counter card - Susan Grady” (producer-card-r003.pdf) the Disclosure Text is the smallest text on the card.
-- `LAYOUT-15/producer-card-r003/H007` If “District insurance counter card - Susan Grady” (producer-card-r003.pdf) shows premiums for more than one of the three plans in plan_rates_2027.csv, a plain note says they are not quoted on the same basis.
+- `LAYOUT-15/producer-card-r003/H007` If “District insurance counter card - Susan Grady” (producer-card-r003.pdf) shows premiums for more than one plan in plan_rates_2027.csv, a plain note says they are not quoted on the same basis.
 - `LAYOUT-15/producer-card-r003/H008` “District insurance counter card - Susan Grady” (producer-card-r003.pdf) shows no phone number, email or web address; producer_roster_northern.csv row 3 gives none.
-- `LAYOUT-15/producer-card-r003/H009` “District insurance counter card - Susan Grady” (producer-card-r003.pdf) carries no superlative, urgency, exclamation mark, burst or starburst callout, promise of a return or approval, or comparison with a competitor.
+- `LAYOUT-15/producer-card-r003/H009` “District insurance counter card - Susan Grady” (producer-card-r003.pdf) has no superlative, urgency, exclamation mark, burst or starburst callout, implied guarantee of a return or of approval, or competitor comparison.
 - `LAYOUT-15/producer-card-r003/H010` Any photograph on “District insurance counter card - Susan Grady” (producer-card-r003.pdf) other than producer_headshot_02.jpg is honestly labelled stock or illustration, never a family, client or policyholder presented as real.
 - `LAYOUT-15/producer-card-r003/H011` “District insurance counter card - Susan Grady” (producer-card-r003.pdf) carries no district line, neither “Central Vermont district” nor any other district name; the office line does not count.
 - `LAYOUT-15/producer-card-r003/H012` The largest text on “District insurance counter card - Susan Grady” (producer-card-r003.pdf) is the producer name “Susan Grady”.
 - `LAYOUT-15/producer-card-r003/H013` The headshot on “District insurance counter card - Susan Grady” (producer-card-r003.pdf) keeps the proportions of producer_headshot_02.jpg, not stretched or squashed.
 - `LAYOUT-15/producer-card-r003/H014` The person in the headshot on “District insurance counter card - Susan Grady” (producer-card-r003.pdf) is recognizably the same person as in producer_headshot_02.jpg, with the face unaltered.
-- `LAYOUT-15/producer-card-r003/H015` On “District insurance counter card - Susan Grady” (producer-card-r003.pdf), no part of the charcoal jacket's shoulder or collar from producer_headshot_02.jpg is bitten away where it meets the mid-grey wall behind it.
-- `LAYOUT-15/producer-card-r003/H016` The producer name “Susan Grady” on “District insurance counter card - Susan Grady” (producer-card-r003.pdf) is set in Lexend SemiBold at 20 pt, not a serif and not another weight.
-- `LAYOUT-15/producer-card-r003/H017` The producer name on “District insurance counter card - Susan Grady” (producer-card-r003.pdf) reads “Susan Grady” in sentence case, not in capitals and not letterspaced.
-- `LAYOUT-15/producer-card-r003/H018` On “District insurance counter card - Susan Grady” (producer-card-r003.pdf) the producer name sits directly on a 1 pt Heritage Green #3C6B54 rule running the full card width, and an identical rule runs directly above the Disclosure Text.
-- `LAYOUT-15/producer-card-r003/H019` On “District insurance counter card - Susan Grady” (producer-card-r003.pdf) the license line and office, figures aside, are Source Serif 4 Regular 9 pt, the Disclosure Text is Source Serif 4 Regular 6.5 pt, and no Source Serif 4 exceeds 9 pt.
-- `LAYOUT-15/producer-card-r003/H020` Every figure on “District insurance counter card - Susan Grady” (producer-card-r003.pdf), the license line's “04833” included, is IBM Plex Sans Regular; any premium is 10 pt tabular figures in a column, never italic, bold or picked out in colour.
-- `LAYOUT-15/producer-card-r003/H021` No line of body text on “District insurance counter card - Susan Grady” (producer-card-r003.pdf), the license line and office included and the Disclosure Text excluded, runs longer than 65 characters.
+- `LAYOUT-15/producer-card-r003/H015` On “District insurance counter card - Susan Grady” (producer-card-r003.pdf), the charcoal jacket's shoulder and collar from producer_headshot_02.jpg are complete, with no part cut away where they meet the mid-grey wall.
+- `LAYOUT-15/producer-card-r003/H016` The producer name “Susan Grady” on “District insurance counter card - Susan Grady” (producer-card-r003.pdf) is set in Lexend SemiBold, not a serif and not another weight.
+- `LAYOUT-15/producer-card-r003/H017` The producer name on “District insurance counter card - Susan Grady” (producer-card-r003.pdf) reads “Susan Grady” in sentence case, not in capitals.
+- `LAYOUT-15/producer-card-r003/H018` On “District insurance counter card - Susan Grady” (producer-card-r003.pdf) the producer name sits directly on a 1 pt Heritage Green #3C6B54 rule running the full card width.
+- `LAYOUT-15/producer-card-r003/H019` The license line and office on “District insurance counter card - Susan Grady” (producer-card-r003.pdf), figures aside, are set in Source Serif 4 Regular.
+- `LAYOUT-15/producer-card-r003/H020` Every figure on “District insurance counter card - Susan Grady” (producer-card-r003.pdf), including “04833” in the license line, is IBM Plex Sans Regular, the same size as the words around it.
+- `LAYOUT-15/producer-card-r003/H021` Each line of the license text and the office text on “District insurance counter card - Susan Grady” (producer-card-r003.pdf) has 65 characters or fewer.
 - `LAYOUT-15/producer-card-r003/H022` The type, panel and rule colours on “District insurance counter card - Susan Grady” (producer-card-r003.pdf) come only from #1E2A3A, #4A5560, #F4F2EC, #C7CBC8 and #3C6B54.
-- `LAYOUT-15/producer-card-r003/H023` On “District insurance counter card - Susan Grady” (producer-card-r003.pdf) the card ground is Document Paper #F4F2EC, the producer name and Disclosure Text are Ink Navy #1E2A3A, and the license line and office are Slate #4A5560.
-- `LAYOUT-15/producer-card-r003/H024` Type, panels and rules on “District insurance counter card - Susan Grady” (producer-card-r003.pdf) use Heritage Green #3C6B54 only as the two 1 pt rules and Mist Grey #C7CBC8 only as a thin divider or keyline; photographs do not count.
-- `LAYOUT-15/producer-card-r003/H025` All type, panels, rules and dividers on “District insurance counter card - Susan Grady” (producer-card-r003.pdf) are solid at full opacity, and no scrim, gradient, shadow or overlay of any colour sits over a photograph.
+- `LAYOUT-15/producer-card-r003/H023` Document Paper #F4F2EC is the only colour used for the card ground and for any panel on “District insurance counter card - Susan Grady” (producer-card-r003.pdf).
+- `LAYOUT-15/producer-card-r003/H024` Outside the headshot, Heritage Green #3C6B54 appears on “District insurance counter card - Susan Grady” (producer-card-r003.pdf) only as the two full-width rules.
+- `LAYOUT-15/producer-card-r003/H025` All type, panels, rules, dividers and the card ground on “District insurance counter card - Susan Grady” (producer-card-r003.pdf) are solid at full opacity, with no tint, transparency, gradient or shadow.
 - `LAYOUT-15/producer-card-r003/H026` The headshot on “District insurance counter card - Susan Grady” (producer-card-r003.pdf) shows producer_headshot_02.jpg in natural colour and skin tones, not tinted, duotoned or recoloured toward the palette.
-- `LAYOUT-15/producer-card-r002/H026` producer-card-r002.pdf: producer name uses Lexend SemiBold (when present).
-- `LAYOUT-15/producer-card-r002/H027` producer-card-r002.pdf: producer name has font size 20 pt (when present).
-- `LAYOUT-15/producer-card-r002/H028` producer-card-r002.pdf: producer name has 23 pt leading on multiline text (when present).
-- `LAYOUT-15/producer-card-r002/H029` producer-card-r002.pdf: producer name uses tracking -5/1000 em (when present).
-- `LAYOUT-15/producer-card-r002/H030` producer-card-r002.pdf: licence/office letters uses Source Serif 4 Regular (when present).
-- `LAYOUT-15/producer-card-r002/H031` producer-card-r002.pdf: licence/office letters has font size 9 pt (when present).
-- `LAYOUT-15/producer-card-r002/H032` producer-card-r002.pdf: licence/office letters has 13 pt leading on multiline text (when present).
-- `LAYOUT-15/producer-card-r002/H033` producer-card-r002.pdf: licence/office letters uses tracking +0/1000 em (when present).
-- `LAYOUT-15/producer-card-r002/H034` producer-card-r002.pdf: disclosure letters uses Source Serif 4 Regular (when present).
-- `LAYOUT-15/producer-card-r002/H035` producer-card-r002.pdf: disclosure letters has font size 6.5 pt (when present).
-- `LAYOUT-15/producer-card-r002/H036` producer-card-r002.pdf: disclosure letters has 9 pt leading on multiline text (when present).
-- `LAYOUT-15/producer-card-r002/H037` producer-card-r002.pdf: disclosure letters uses tracking +15/1000 em (when present).
-- `LAYOUT-15/producer-card-r002/H038` producer-card-r002.pdf: licence/office numerals uses IBM Plex Sans Regular (when present).
-- `LAYOUT-15/producer-card-r002/H039` producer-card-r002.pdf: licence/office numerals has font size 9 pt (when present).
-- `LAYOUT-15/producer-card-r002/H040` producer-card-r002.pdf: licence/office numerals has 13 pt leading on multiline text (when present).
-- `LAYOUT-15/producer-card-r002/H041` producer-card-r002.pdf: licence/office numerals uses tracking +0/1000 em (when present).
-- `LAYOUT-15/producer-card-r002/H042` producer-card-r002.pdf: disclosure numerals uses IBM Plex Sans Regular (when present).
-- `LAYOUT-15/producer-card-r002/H043` producer-card-r002.pdf: disclosure numerals has font size 6.5 pt (when present).
-- `LAYOUT-15/producer-card-r002/H044` producer-card-r002.pdf: disclosure numerals has 9 pt leading on multiline text (when present).
-- `LAYOUT-15/producer-card-r002/H045` producer-card-r002.pdf: disclosure numerals uses tracking +15/1000 em (when present).
-- `LAYOUT-15/producer-card-r002/H046` producer-card-r002.pdf: no district line has been added.
-- `LAYOUT-15/producer-card-r003/H027` producer-card-r003.pdf: producer name uses Lexend SemiBold (when present).
-- `LAYOUT-15/producer-card-r003/H028` producer-card-r003.pdf: producer name has font size 20 pt (when present).
-- `LAYOUT-15/producer-card-r003/H029` producer-card-r003.pdf: producer name has 23 pt leading on multiline text (when present).
-- `LAYOUT-15/producer-card-r003/H030` producer-card-r003.pdf: producer name uses tracking -5/1000 em (when present).
-- `LAYOUT-15/producer-card-r003/H031` producer-card-r003.pdf: licence/office letters uses Source Serif 4 Regular (when present).
-- `LAYOUT-15/producer-card-r003/H032` producer-card-r003.pdf: licence/office letters has font size 9 pt (when present).
-- `LAYOUT-15/producer-card-r003/H033` producer-card-r003.pdf: licence/office letters has 13 pt leading on multiline text (when present).
-- `LAYOUT-15/producer-card-r003/H034` producer-card-r003.pdf: licence/office letters uses tracking +0/1000 em (when present).
-- `LAYOUT-15/producer-card-r003/H035` producer-card-r003.pdf: disclosure letters uses Source Serif 4 Regular (when present).
-- `LAYOUT-15/producer-card-r003/H036` producer-card-r003.pdf: disclosure letters has font size 6.5 pt (when present).
-- `LAYOUT-15/producer-card-r003/H037` producer-card-r003.pdf: disclosure letters has 9 pt leading on multiline text (when present).
-- `LAYOUT-15/producer-card-r003/H038` producer-card-r003.pdf: disclosure letters uses tracking +15/1000 em (when present).
-- `LAYOUT-15/producer-card-r003/H039` producer-card-r003.pdf: licence/office numerals uses IBM Plex Sans Regular (when present).
-- `LAYOUT-15/producer-card-r003/H040` producer-card-r003.pdf: licence/office numerals has font size 9 pt (when present).
-- `LAYOUT-15/producer-card-r003/H041` producer-card-r003.pdf: licence/office numerals has 13 pt leading on multiline text (when present).
-- `LAYOUT-15/producer-card-r003/H042` producer-card-r003.pdf: licence/office numerals uses tracking +0/1000 em (when present).
-- `LAYOUT-15/producer-card-r003/H043` producer-card-r003.pdf: disclosure numerals uses IBM Plex Sans Regular (when present).
-- `LAYOUT-15/producer-card-r003/H044` producer-card-r003.pdf: disclosure numerals has font size 6.5 pt (when present).
-- `LAYOUT-15/producer-card-r003/H045` producer-card-r003.pdf: disclosure numerals has 9 pt leading on multiline text (when present).
-- `LAYOUT-15/producer-card-r003/H046` producer-card-r003.pdf: disclosure numerals uses tracking +15/1000 em (when present).
-- `LAYOUT-15/producer-card-r003/H047` producer-card-r003.pdf: no district line has been added.
-- `LAYOUT-15/producer-card-r005/H027` producer-card-r005.pdf: producer name uses Lexend SemiBold (when present).
-- `LAYOUT-15/producer-card-r005/H028` producer-card-r005.pdf: producer name has font size 20 pt (when present).
-- `LAYOUT-15/producer-card-r005/H029` producer-card-r005.pdf: producer name has 23 pt leading on multiline text (when present).
-- `LAYOUT-15/producer-card-r005/H030` producer-card-r005.pdf: producer name uses tracking -5/1000 em (when present).
-- `LAYOUT-15/producer-card-r005/H031` producer-card-r005.pdf: licence/office letters uses Source Serif 4 Regular (when present).
-- `LAYOUT-15/producer-card-r005/H032` producer-card-r005.pdf: licence/office letters has font size 9 pt (when present).
-- `LAYOUT-15/producer-card-r005/H033` producer-card-r005.pdf: licence/office letters has 13 pt leading on multiline text (when present).
-- `LAYOUT-15/producer-card-r005/H034` producer-card-r005.pdf: licence/office letters uses tracking +0/1000 em (when present).
-- `LAYOUT-15/producer-card-r005/H035` producer-card-r005.pdf: disclosure letters uses Source Serif 4 Regular (when present).
-- `LAYOUT-15/producer-card-r005/H036` producer-card-r005.pdf: disclosure letters has font size 6.5 pt (when present).
-- `LAYOUT-15/producer-card-r005/H037` producer-card-r005.pdf: disclosure letters has 9 pt leading on multiline text (when present).
-- `LAYOUT-15/producer-card-r005/H038` producer-card-r005.pdf: disclosure letters uses tracking +15/1000 em (when present).
-- `LAYOUT-15/producer-card-r005/H039` producer-card-r005.pdf: licence/office numerals uses IBM Plex Sans Regular (when present).
-- `LAYOUT-15/producer-card-r005/H040` producer-card-r005.pdf: licence/office numerals has font size 9 pt (when present).
-- `LAYOUT-15/producer-card-r005/H041` producer-card-r005.pdf: licence/office numerals has 13 pt leading on multiline text (when present).
-- `LAYOUT-15/producer-card-r005/H042` producer-card-r005.pdf: licence/office numerals uses tracking +0/1000 em (when present).
-- `LAYOUT-15/producer-card-r005/H043` producer-card-r005.pdf: disclosure numerals uses IBM Plex Sans Regular (when present).
-- `LAYOUT-15/producer-card-r005/H044` producer-card-r005.pdf: disclosure numerals has font size 6.5 pt (when present).
-- `LAYOUT-15/producer-card-r005/H045` producer-card-r005.pdf: disclosure numerals has 9 pt leading on multiline text (when present).
-- `LAYOUT-15/producer-card-r005/H046` producer-card-r005.pdf: disclosure numerals uses tracking +15/1000 em (when present).
-- `LAYOUT-15/producer-card-r005/H047` producer-card-r005.pdf: no district line has been added.
-- `LAYOUT-15/producer-card-r006/H027` producer-card-r006.pdf: producer name uses Lexend SemiBold (when present).
-- `LAYOUT-15/producer-card-r006/H028` producer-card-r006.pdf: producer name has font size 20 pt (when present).
-- `LAYOUT-15/producer-card-r006/H029` producer-card-r006.pdf: producer name has 23 pt leading on multiline text (when present).
-- `LAYOUT-15/producer-card-r006/H030` producer-card-r006.pdf: producer name uses tracking -5/1000 em (when present).
-- `LAYOUT-15/producer-card-r006/H031` producer-card-r006.pdf: licence/office letters uses Source Serif 4 Regular (when present).
-- `LAYOUT-15/producer-card-r006/H032` producer-card-r006.pdf: licence/office letters has font size 9 pt (when present).
-- `LAYOUT-15/producer-card-r006/H033` producer-card-r006.pdf: licence/office letters has 13 pt leading on multiline text (when present).
-- `LAYOUT-15/producer-card-r006/H034` producer-card-r006.pdf: licence/office letters uses tracking +0/1000 em (when present).
-- `LAYOUT-15/producer-card-r006/H035` producer-card-r006.pdf: disclosure letters uses Source Serif 4 Regular (when present).
-- `LAYOUT-15/producer-card-r006/H036` producer-card-r006.pdf: disclosure letters has font size 6.5 pt (when present).
-- `LAYOUT-15/producer-card-r006/H037` producer-card-r006.pdf: disclosure letters has 9 pt leading on multiline text (when present).
-- `LAYOUT-15/producer-card-r006/H038` producer-card-r006.pdf: disclosure letters uses tracking +15/1000 em (when present).
-- `LAYOUT-15/producer-card-r006/H039` producer-card-r006.pdf: licence/office numerals uses IBM Plex Sans Regular (when present).
-- `LAYOUT-15/producer-card-r006/H040` producer-card-r006.pdf: licence/office numerals has font size 9 pt (when present).
-- `LAYOUT-15/producer-card-r006/H041` producer-card-r006.pdf: licence/office numerals has 13 pt leading on multiline text (when present).
-- `LAYOUT-15/producer-card-r006/H042` producer-card-r006.pdf: licence/office numerals uses tracking +0/1000 em (when present).
-- `LAYOUT-15/producer-card-r006/H043` producer-card-r006.pdf: disclosure numerals uses IBM Plex Sans Regular (when present).
-- `LAYOUT-15/producer-card-r006/H044` producer-card-r006.pdf: disclosure numerals has font size 6.5 pt (when present).
-- `LAYOUT-15/producer-card-r006/H045` producer-card-r006.pdf: disclosure numerals has 9 pt leading on multiline text (when present).
-- `LAYOUT-15/producer-card-r006/H046` producer-card-r006.pdf: disclosure numerals uses tracking +15/1000 em (when present).
-- `LAYOUT-15/producer-card-r006/H047` producer-card-r006.pdf: no district line has been added.
-- `LAYOUT-15/producer-card-r007/H015` producer-card-r007.pdf: producer name uses Lexend SemiBold (when present).
-- `LAYOUT-15/producer-card-r007/H016` producer-card-r007.pdf: producer name has font size 20 pt (when present).
-- `LAYOUT-15/producer-card-r007/H017` producer-card-r007.pdf: producer name has 23 pt leading on multiline text (when present).
-- `LAYOUT-15/producer-card-r007/H018` producer-card-r007.pdf: producer name uses tracking -5/1000 em (when present).
-- `LAYOUT-15/producer-card-r007/H019` producer-card-r007.pdf: licence/office letters uses Source Serif 4 Regular (when present).
-- `LAYOUT-15/producer-card-r007/H020` producer-card-r007.pdf: licence/office letters has font size 9 pt (when present).
-- `LAYOUT-15/producer-card-r007/H021` producer-card-r007.pdf: licence/office letters has 13 pt leading on multiline text (when present).
-- `LAYOUT-15/producer-card-r007/H022` producer-card-r007.pdf: licence/office letters uses tracking +0/1000 em (when present).
-- `LAYOUT-15/producer-card-r007/H023` producer-card-r007.pdf: disclosure letters uses Source Serif 4 Regular (when present).
-- `LAYOUT-15/producer-card-r007/H024` producer-card-r007.pdf: disclosure letters has font size 6.5 pt (when present).
-- `LAYOUT-15/producer-card-r007/H025` producer-card-r007.pdf: disclosure letters has 9 pt leading on multiline text (when present).
-- `LAYOUT-15/producer-card-r007/H026` producer-card-r007.pdf: disclosure letters uses tracking +15/1000 em (when present).
-- `LAYOUT-15/producer-card-r007/H027` producer-card-r007.pdf: licence/office numerals uses IBM Plex Sans Regular (when present).
-- `LAYOUT-15/producer-card-r007/H028` producer-card-r007.pdf: licence/office numerals has font size 9 pt (when present).
-- `LAYOUT-15/producer-card-r007/H029` producer-card-r007.pdf: licence/office numerals has 13 pt leading on multiline text (when present).
-- `LAYOUT-15/producer-card-r007/H030` producer-card-r007.pdf: licence/office numerals uses tracking +0/1000 em (when present).
-- `LAYOUT-15/producer-card-r007/H031` producer-card-r007.pdf: disclosure numerals uses IBM Plex Sans Regular (when present).
-- `LAYOUT-15/producer-card-r007/H032` producer-card-r007.pdf: disclosure numerals has font size 6.5 pt (when present).
-- `LAYOUT-15/producer-card-r007/H033` producer-card-r007.pdf: disclosure numerals has 9 pt leading on multiline text (when present).
-- `LAYOUT-15/producer-card-r007/H034` producer-card-r007.pdf: disclosure numerals uses tracking +15/1000 em (when present).
-- `LAYOUT-15/producer-card-r007/H035` producer-card-r007.pdf: no district line has been added.
-- `LAYOUT-15/producer-card-r008/H027` producer-card-r008.pdf: producer name uses Lexend SemiBold (when present).
-- `LAYOUT-15/producer-card-r008/H028` producer-card-r008.pdf: producer name has font size 20 pt (when present).
-- `LAYOUT-15/producer-card-r008/H029` producer-card-r008.pdf: producer name has 23 pt leading on multiline text (when present).
-- `LAYOUT-15/producer-card-r008/H030` producer-card-r008.pdf: producer name uses tracking -5/1000 em (when present).
-- `LAYOUT-15/producer-card-r008/H031` producer-card-r008.pdf: licence/office letters uses Source Serif 4 Regular (when present).
-- `LAYOUT-15/producer-card-r008/H032` producer-card-r008.pdf: licence/office letters has font size 9 pt (when present).
-- `LAYOUT-15/producer-card-r008/H033` producer-card-r008.pdf: licence/office letters has 13 pt leading on multiline text (when present).
-- `LAYOUT-15/producer-card-r008/H034` producer-card-r008.pdf: licence/office letters uses tracking +0/1000 em (when present).
-- `LAYOUT-15/producer-card-r008/H035` producer-card-r008.pdf: disclosure letters uses Source Serif 4 Regular (when present).
-- `LAYOUT-15/producer-card-r008/H036` producer-card-r008.pdf: disclosure letters has font size 6.5 pt (when present).
-- `LAYOUT-15/producer-card-r008/H037` producer-card-r008.pdf: disclosure letters has 9 pt leading on multiline text (when present).
-- `LAYOUT-15/producer-card-r008/H038` producer-card-r008.pdf: disclosure letters uses tracking +15/1000 em (when present).
-- `LAYOUT-15/producer-card-r008/H039` producer-card-r008.pdf: licence/office numerals uses IBM Plex Sans Regular (when present).
-- `LAYOUT-15/producer-card-r008/H040` producer-card-r008.pdf: licence/office numerals has font size 9 pt (when present).
-- `LAYOUT-15/producer-card-r008/H041` producer-card-r008.pdf: licence/office numerals has 13 pt leading on multiline text (when present).
-- `LAYOUT-15/producer-card-r008/H042` producer-card-r008.pdf: licence/office numerals uses tracking +0/1000 em (when present).
-- `LAYOUT-15/producer-card-r008/H043` producer-card-r008.pdf: disclosure numerals uses IBM Plex Sans Regular (when present).
-- `LAYOUT-15/producer-card-r008/H044` producer-card-r008.pdf: disclosure numerals has font size 6.5 pt (when present).
-- `LAYOUT-15/producer-card-r008/H045` producer-card-r008.pdf: disclosure numerals has 9 pt leading on multiline text (when present).
-- `LAYOUT-15/producer-card-r008/H046` producer-card-r008.pdf: disclosure numerals uses tracking +15/1000 em (when present).
-- `LAYOUT-15/producer-card-r008/H047` producer-card-r008.pdf: no district line has been added.
-- `LAYOUT-15/producer-card-r009/H027` producer-card-r009.pdf: producer name uses Lexend SemiBold (when present).
-- `LAYOUT-15/producer-card-r009/H028` producer-card-r009.pdf: producer name has font size 20 pt (when present).
-- `LAYOUT-15/producer-card-r009/H029` producer-card-r009.pdf: producer name has 23 pt leading on multiline text (when present).
-- `LAYOUT-15/producer-card-r009/H030` producer-card-r009.pdf: producer name uses tracking -5/1000 em (when present).
-- `LAYOUT-15/producer-card-r009/H031` producer-card-r009.pdf: licence/office letters uses Source Serif 4 Regular (when present).
-- `LAYOUT-15/producer-card-r009/H032` producer-card-r009.pdf: licence/office letters has font size 9 pt (when present).
-- `LAYOUT-15/producer-card-r009/H033` producer-card-r009.pdf: licence/office letters has 13 pt leading on multiline text (when present).
-- `LAYOUT-15/producer-card-r009/H034` producer-card-r009.pdf: licence/office letters uses tracking +0/1000 em (when present).
-- `LAYOUT-15/producer-card-r009/H035` producer-card-r009.pdf: disclosure letters uses Source Serif 4 Regular (when present).
-- `LAYOUT-15/producer-card-r009/H036` producer-card-r009.pdf: disclosure letters has font size 6.5 pt (when present).
-- `LAYOUT-15/producer-card-r009/H037` producer-card-r009.pdf: disclosure letters has 9 pt leading on multiline text (when present).
-- `LAYOUT-15/producer-card-r009/H038` producer-card-r009.pdf: disclosure letters uses tracking +15/1000 em (when present).
-- `LAYOUT-15/producer-card-r009/H039` producer-card-r009.pdf: licence/office numerals uses IBM Plex Sans Regular (when present).
-- `LAYOUT-15/producer-card-r009/H040` producer-card-r009.pdf: licence/office numerals has font size 9 pt (when present).
-- `LAYOUT-15/producer-card-r009/H041` producer-card-r009.pdf: licence/office numerals has 13 pt leading on multiline text (when present).
-- `LAYOUT-15/producer-card-r009/H042` producer-card-r009.pdf: licence/office numerals uses tracking +0/1000 em (when present).
-- `LAYOUT-15/producer-card-r009/H043` producer-card-r009.pdf: disclosure numerals uses IBM Plex Sans Regular (when present).
-- `LAYOUT-15/producer-card-r009/H044` producer-card-r009.pdf: disclosure numerals has font size 6.5 pt (when present).
-- `LAYOUT-15/producer-card-r009/H045` producer-card-r009.pdf: disclosure numerals has 9 pt leading on multiline text (when present).
-- `LAYOUT-15/producer-card-r009/H046` producer-card-r009.pdf: disclosure numerals uses tracking +15/1000 em (when present).
-- `LAYOUT-15/producer-card-r009/H047` producer-card-r009.pdf: no district line has been added.
-- `LAYOUT-15/producer-card-r010/H026` producer-card-r010.pdf: producer name uses Lexend SemiBold (when present).
-- `LAYOUT-15/producer-card-r010/H027` producer-card-r010.pdf: producer name has font size 20 pt (when present).
-- `LAYOUT-15/producer-card-r010/H028` producer-card-r010.pdf: producer name has 23 pt leading on multiline text (when present).
-- `LAYOUT-15/producer-card-r010/H029` producer-card-r010.pdf: producer name uses tracking -5/1000 em (when present).
-- `LAYOUT-15/producer-card-r010/H030` producer-card-r010.pdf: licence/office letters uses Source Serif 4 Regular (when present).
-- `LAYOUT-15/producer-card-r010/H031` producer-card-r010.pdf: licence/office letters has font size 9 pt (when present).
-- `LAYOUT-15/producer-card-r010/H032` producer-card-r010.pdf: licence/office letters has 13 pt leading on multiline text (when present).
-- `LAYOUT-15/producer-card-r010/H033` producer-card-r010.pdf: licence/office letters uses tracking +0/1000 em (when present).
-- `LAYOUT-15/producer-card-r010/H034` producer-card-r010.pdf: disclosure letters uses Source Serif 4 Regular (when present).
-- `LAYOUT-15/producer-card-r010/H035` producer-card-r010.pdf: disclosure letters has font size 6.5 pt (when present).
-- `LAYOUT-15/producer-card-r010/H036` producer-card-r010.pdf: disclosure letters has 9 pt leading on multiline text (when present).
-- `LAYOUT-15/producer-card-r010/H037` producer-card-r010.pdf: disclosure letters uses tracking +15/1000 em (when present).
-- `LAYOUT-15/producer-card-r010/H038` producer-card-r010.pdf: licence/office numerals uses IBM Plex Sans Regular (when present).
-- `LAYOUT-15/producer-card-r010/H039` producer-card-r010.pdf: licence/office numerals has font size 9 pt (when present).
-- `LAYOUT-15/producer-card-r010/H040` producer-card-r010.pdf: licence/office numerals has 13 pt leading on multiline text (when present).
-- `LAYOUT-15/producer-card-r010/H041` producer-card-r010.pdf: licence/office numerals uses tracking +0/1000 em (when present).
-- `LAYOUT-15/producer-card-r010/H042` producer-card-r010.pdf: disclosure numerals uses IBM Plex Sans Regular (when present).
-- `LAYOUT-15/producer-card-r010/H043` producer-card-r010.pdf: disclosure numerals has font size 6.5 pt (when present).
-- `LAYOUT-15/producer-card-r010/H044` producer-card-r010.pdf: disclosure numerals has 9 pt leading on multiline text (when present).
-- `LAYOUT-15/producer-card-r010/H045` producer-card-r010.pdf: disclosure numerals uses tracking +15/1000 em (when present).
-- `LAYOUT-15/producer-card-r010/H046` producer-card-r010.pdf: no district line has been added.
-- `LAYOUT-15/producer-card-r011/H027` producer-card-r011.pdf: producer name uses Lexend SemiBold (when present).
-- `LAYOUT-15/producer-card-r011/H028` producer-card-r011.pdf: producer name has font size 20 pt (when present).
-- `LAYOUT-15/producer-card-r011/H029` producer-card-r011.pdf: producer name has 23 pt leading on multiline text (when present).
-- `LAYOUT-15/producer-card-r011/H030` producer-card-r011.pdf: producer name uses tracking -5/1000 em (when present).
-- `LAYOUT-15/producer-card-r011/H031` producer-card-r011.pdf: licence/office letters uses Source Serif 4 Regular (when present).
-- `LAYOUT-15/producer-card-r011/H032` producer-card-r011.pdf: licence/office letters has font size 9 pt (when present).
-- `LAYOUT-15/producer-card-r011/H033` producer-card-r011.pdf: licence/office letters has 13 pt leading on multiline text (when present).
-- `LAYOUT-15/producer-card-r011/H034` producer-card-r011.pdf: licence/office letters uses tracking +0/1000 em (when present).
-- `LAYOUT-15/producer-card-r011/H035` producer-card-r011.pdf: disclosure letters uses Source Serif 4 Regular (when present).
-- `LAYOUT-15/producer-card-r011/H036` producer-card-r011.pdf: disclosure letters has font size 6.5 pt (when present).
-- `LAYOUT-15/producer-card-r011/H037` producer-card-r011.pdf: disclosure letters has 9 pt leading on multiline text (when present).
-- `LAYOUT-15/producer-card-r011/H038` producer-card-r011.pdf: disclosure letters uses tracking +15/1000 em (when present).
-- `LAYOUT-15/producer-card-r011/H039` producer-card-r011.pdf: licence/office numerals uses IBM Plex Sans Regular (when present).
-- `LAYOUT-15/producer-card-r011/H040` producer-card-r011.pdf: licence/office numerals has font size 9 pt (when present).
-- `LAYOUT-15/producer-card-r011/H041` producer-card-r011.pdf: licence/office numerals has 13 pt leading on multiline text (when present).
-- `LAYOUT-15/producer-card-r011/H042` producer-card-r011.pdf: licence/office numerals uses tracking +0/1000 em (when present).
-- `LAYOUT-15/producer-card-r011/H043` producer-card-r011.pdf: disclosure numerals uses IBM Plex Sans Regular (when present).
-- `LAYOUT-15/producer-card-r011/H044` producer-card-r011.pdf: disclosure numerals has font size 6.5 pt (when present).
-- `LAYOUT-15/producer-card-r011/H045` producer-card-r011.pdf: disclosure numerals has 9 pt leading on multiline text (when present).
-- `LAYOUT-15/producer-card-r011/H046` producer-card-r011.pdf: disclosure numerals uses tracking +15/1000 em (when present).
-- `LAYOUT-15/producer-card-r011/H047` producer-card-r011.pdf: no district line has been added.
-- `LAYOUT-15/producer-card-r012/H015` producer-card-r012.pdf: producer name uses Lexend SemiBold (when present).
-- `LAYOUT-15/producer-card-r012/H016` producer-card-r012.pdf: producer name has font size 20 pt (when present).
-- `LAYOUT-15/producer-card-r012/H017` producer-card-r012.pdf: producer name has 23 pt leading on multiline text (when present).
-- `LAYOUT-15/producer-card-r012/H018` producer-card-r012.pdf: producer name uses tracking -5/1000 em (when present).
-- `LAYOUT-15/producer-card-r012/H019` producer-card-r012.pdf: licence/office letters uses Source Serif 4 Regular (when present).
-- `LAYOUT-15/producer-card-r012/H020` producer-card-r012.pdf: licence/office letters has font size 9 pt (when present).
-- `LAYOUT-15/producer-card-r012/H021` producer-card-r012.pdf: licence/office letters has 13 pt leading on multiline text (when present).
-- `LAYOUT-15/producer-card-r012/H022` producer-card-r012.pdf: licence/office letters uses tracking +0/1000 em (when present).
-- `LAYOUT-15/producer-card-r012/H023` producer-card-r012.pdf: disclosure letters uses Source Serif 4 Regular (when present).
-- `LAYOUT-15/producer-card-r012/H024` producer-card-r012.pdf: disclosure letters has font size 6.5 pt (when present).
-- `LAYOUT-15/producer-card-r012/H025` producer-card-r012.pdf: disclosure letters has 9 pt leading on multiline text (when present).
-- `LAYOUT-15/producer-card-r012/H026` producer-card-r012.pdf: disclosure letters uses tracking +15/1000 em (when present).
-- `LAYOUT-15/producer-card-r012/H027` producer-card-r012.pdf: licence/office numerals uses IBM Plex Sans Regular (when present).
-- `LAYOUT-15/producer-card-r012/H028` producer-card-r012.pdf: licence/office numerals has font size 9 pt (when present).
-- `LAYOUT-15/producer-card-r012/H029` producer-card-r012.pdf: licence/office numerals has 13 pt leading on multiline text (when present).
-- `LAYOUT-15/producer-card-r012/H030` producer-card-r012.pdf: licence/office numerals uses tracking +0/1000 em (when present).
-- `LAYOUT-15/producer-card-r012/H031` producer-card-r012.pdf: disclosure numerals uses IBM Plex Sans Regular (when present).
-- `LAYOUT-15/producer-card-r012/H032` producer-card-r012.pdf: disclosure numerals has font size 6.5 pt (when present).
-- `LAYOUT-15/producer-card-r012/H033` producer-card-r012.pdf: disclosure numerals has 9 pt leading on multiline text (when present).
-- `LAYOUT-15/producer-card-r012/H034` producer-card-r012.pdf: disclosure numerals uses tracking +15/1000 em (when present).
-- `LAYOUT-15/producer-card-r012/H035` producer-card-r012.pdf: no district line has been added.
-- `LAYOUT-15/producer-card-r013/H027` producer-card-r013.pdf: producer name uses Lexend SemiBold (when present).
-- `LAYOUT-15/producer-card-r013/H028` producer-card-r013.pdf: producer name has font size 20 pt (when present).
-- `LAYOUT-15/producer-card-r013/H029` producer-card-r013.pdf: producer name has 23 pt leading on multiline text (when present).
-- `LAYOUT-15/producer-card-r013/H030` producer-card-r013.pdf: producer name uses tracking -5/1000 em (when present).
-- `LAYOUT-15/producer-card-r013/H031` producer-card-r013.pdf: licence/office letters uses Source Serif 4 Regular (when present).
-- `LAYOUT-15/producer-card-r013/H032` producer-card-r013.pdf: licence/office letters has font size 9 pt (when present).
-- `LAYOUT-15/producer-card-r013/H033` producer-card-r013.pdf: licence/office letters has 13 pt leading on multiline text (when present).
-- `LAYOUT-15/producer-card-r013/H034` producer-card-r013.pdf: licence/office letters uses tracking +0/1000 em (when present).
-- `LAYOUT-15/producer-card-r013/H035` producer-card-r013.pdf: disclosure letters uses Source Serif 4 Regular (when present).
-- `LAYOUT-15/producer-card-r013/H036` producer-card-r013.pdf: disclosure letters has font size 6.5 pt (when present).
-- `LAYOUT-15/producer-card-r013/H037` producer-card-r013.pdf: disclosure letters has 9 pt leading on multiline text (when present).
-- `LAYOUT-15/producer-card-r013/H038` producer-card-r013.pdf: disclosure letters uses tracking +15/1000 em (when present).
-- `LAYOUT-15/producer-card-r013/H039` producer-card-r013.pdf: licence/office numerals uses IBM Plex Sans Regular (when present).
-- `LAYOUT-15/producer-card-r013/H040` producer-card-r013.pdf: licence/office numerals has font size 9 pt (when present).
-- `LAYOUT-15/producer-card-r013/H041` producer-card-r013.pdf: licence/office numerals has 13 pt leading on multiline text (when present).
-- `LAYOUT-15/producer-card-r013/H042` producer-card-r013.pdf: licence/office numerals uses tracking +0/1000 em (when present).
-- `LAYOUT-15/producer-card-r013/H043` producer-card-r013.pdf: disclosure numerals uses IBM Plex Sans Regular (when present).
-- `LAYOUT-15/producer-card-r013/H044` producer-card-r013.pdf: disclosure numerals has font size 6.5 pt (when present).
-- `LAYOUT-15/producer-card-r013/H045` producer-card-r013.pdf: disclosure numerals has 9 pt leading on multiline text (when present).
-- `LAYOUT-15/producer-card-r013/H046` producer-card-r013.pdf: disclosure numerals uses tracking +15/1000 em (when present).
-- `LAYOUT-15/producer-card-r013/H047` producer-card-r013.pdf: no district line has been added.
-- `LAYOUT-15/producer-card-r014/H027` producer-card-r014.pdf: producer name uses Lexend SemiBold (when present).
-- `LAYOUT-15/producer-card-r014/H028` producer-card-r014.pdf: producer name has font size 20 pt (when present).
-- `LAYOUT-15/producer-card-r014/H029` producer-card-r014.pdf: producer name has 23 pt leading on multiline text (when present).
-- `LAYOUT-15/producer-card-r014/H030` producer-card-r014.pdf: producer name uses tracking -5/1000 em (when present).
-- `LAYOUT-15/producer-card-r014/H031` producer-card-r014.pdf: licence/office letters uses Source Serif 4 Regular (when present).
-- `LAYOUT-15/producer-card-r014/H032` producer-card-r014.pdf: licence/office letters has font size 9 pt (when present).
-- `LAYOUT-15/producer-card-r014/H033` producer-card-r014.pdf: licence/office letters has 13 pt leading on multiline text (when present).
-- `LAYOUT-15/producer-card-r014/H034` producer-card-r014.pdf: licence/office letters uses tracking +0/1000 em (when present).
-- `LAYOUT-15/producer-card-r014/H035` producer-card-r014.pdf: disclosure letters uses Source Serif 4 Regular (when present).
-- `LAYOUT-15/producer-card-r014/H036` producer-card-r014.pdf: disclosure letters has font size 6.5 pt (when present).
-- `LAYOUT-15/producer-card-r014/H037` producer-card-r014.pdf: disclosure letters has 9 pt leading on multiline text (when present).
-- `LAYOUT-15/producer-card-r014/H038` producer-card-r014.pdf: disclosure letters uses tracking +15/1000 em (when present).
-- `LAYOUT-15/producer-card-r014/H039` producer-card-r014.pdf: licence/office numerals uses IBM Plex Sans Regular (when present).
-- `LAYOUT-15/producer-card-r014/H040` producer-card-r014.pdf: licence/office numerals has font size 9 pt (when present).
-- `LAYOUT-15/producer-card-r014/H041` producer-card-r014.pdf: licence/office numerals has 13 pt leading on multiline text (when present).
-- `LAYOUT-15/producer-card-r014/H042` producer-card-r014.pdf: licence/office numerals uses tracking +0/1000 em (when present).
-- `LAYOUT-15/producer-card-r014/H043` producer-card-r014.pdf: disclosure numerals uses IBM Plex Sans Regular (when present).
-- `LAYOUT-15/producer-card-r014/H044` producer-card-r014.pdf: disclosure numerals has font size 6.5 pt (when present).
-- `LAYOUT-15/producer-card-r014/H045` producer-card-r014.pdf: disclosure numerals has 9 pt leading on multiline text (when present).
-- `LAYOUT-15/producer-card-r014/H046` producer-card-r014.pdf: disclosure numerals uses tracking +15/1000 em (when present).
-- `LAYOUT-15/producer-card-r014/H047` producer-card-r014.pdf: no district line has been added.
-- `LAYOUT-15/producer-card-r015/H025` producer-card-r015.pdf: producer name uses Lexend SemiBold (when present).
-- `LAYOUT-15/producer-card-r015/H026` producer-card-r015.pdf: producer name has font size 20 pt (when present).
-- `LAYOUT-15/producer-card-r015/H027` producer-card-r015.pdf: producer name has 23 pt leading on multiline text (when present).
-- `LAYOUT-15/producer-card-r015/H028` producer-card-r015.pdf: producer name uses tracking -5/1000 em (when present).
-- `LAYOUT-15/producer-card-r015/H029` producer-card-r015.pdf: licence/office letters uses Source Serif 4 Regular (when present).
-- `LAYOUT-15/producer-card-r015/H030` producer-card-r015.pdf: licence/office letters has font size 9 pt (when present).
-- `LAYOUT-15/producer-card-r015/H031` producer-card-r015.pdf: licence/office letters has 13 pt leading on multiline text (when present).
-- `LAYOUT-15/producer-card-r015/H032` producer-card-r015.pdf: licence/office letters uses tracking +0/1000 em (when present).
-- `LAYOUT-15/producer-card-r015/H033` producer-card-r015.pdf: disclosure letters uses Source Serif 4 Regular (when present).
-- `LAYOUT-15/producer-card-r015/H034` producer-card-r015.pdf: disclosure letters has font size 6.5 pt (when present).
-- `LAYOUT-15/producer-card-r015/H035` producer-card-r015.pdf: disclosure letters has 9 pt leading on multiline text (when present).
-- `LAYOUT-15/producer-card-r015/H036` producer-card-r015.pdf: disclosure letters uses tracking +15/1000 em (when present).
-- `LAYOUT-15/producer-card-r015/H037` producer-card-r015.pdf: licence/office numerals uses IBM Plex Sans Regular (when present).
-- `LAYOUT-15/producer-card-r015/H038` producer-card-r015.pdf: licence/office numerals has font size 9 pt (when present).
-- `LAYOUT-15/producer-card-r015/H039` producer-card-r015.pdf: licence/office numerals has 13 pt leading on multiline text (when present).
-- `LAYOUT-15/producer-card-r015/H040` producer-card-r015.pdf: licence/office numerals uses tracking +0/1000 em (when present).
-- `LAYOUT-15/producer-card-r015/H041` producer-card-r015.pdf: disclosure numerals uses IBM Plex Sans Regular (when present).
-- `LAYOUT-15/producer-card-r015/H042` producer-card-r015.pdf: disclosure numerals has font size 6.5 pt (when present).
-- `LAYOUT-15/producer-card-r015/H043` producer-card-r015.pdf: disclosure numerals has 9 pt leading on multiline text (when present).
-- `LAYOUT-15/producer-card-r015/H044` producer-card-r015.pdf: disclosure numerals uses tracking +15/1000 em (when present).
-- `LAYOUT-15/producer-card-r015/H045` producer-card-r015.pdf: no district line has been added.
-- `LAYOUT-15/producer-card-r002/R13-pdf-profile` producer-card-r002.pdf: contains the supplied PSO Coated v3 output intent.
-- `LAYOUT-15/producer-card-r002/R13-pdf-fonts` producer-card-r002.pdf: has no unembedded font dependency.
-- `LAYOUT-15/producer-card-r003/R13-pdf-profile` producer-card-r003.pdf: contains the supplied PSO Coated v3 output intent.
-- `LAYOUT-15/producer-card-r003/R13-pdf-fonts` producer-card-r003.pdf: has no unembedded font dependency.
-- `LAYOUT-15/producer-card-r005/R13-pdf-profile` producer-card-r005.pdf: contains the supplied PSO Coated v3 output intent.
-- `LAYOUT-15/producer-card-r005/R13-pdf-fonts` producer-card-r005.pdf: has no unembedded font dependency.
-- `LAYOUT-15/producer-card-r006/R13-pdf-profile` producer-card-r006.pdf: contains the supplied PSO Coated v3 output intent.
-- `LAYOUT-15/producer-card-r006/R13-pdf-fonts` producer-card-r006.pdf: has no unembedded font dependency.
-- `LAYOUT-15/producer-card-r007/R13-pdf-profile` producer-card-r007.pdf: contains the supplied PSO Coated v3 output intent.
-- `LAYOUT-15/producer-card-r007/R13-pdf-fonts` producer-card-r007.pdf: has no unembedded font dependency.
-- `LAYOUT-15/producer-card-r008/R13-pdf-profile` producer-card-r008.pdf: contains the supplied PSO Coated v3 output intent.
-- `LAYOUT-15/producer-card-r008/R13-pdf-fonts` producer-card-r008.pdf: has no unembedded font dependency.
-- `LAYOUT-15/producer-card-r009/R13-pdf-profile` producer-card-r009.pdf: contains the supplied PSO Coated v3 output intent.
-- `LAYOUT-15/producer-card-r009/R13-pdf-fonts` producer-card-r009.pdf: has no unembedded font dependency.
-- `LAYOUT-15/producer-card-r010/R13-pdf-profile` producer-card-r010.pdf: contains the supplied PSO Coated v3 output intent.
-- `LAYOUT-15/producer-card-r010/R13-pdf-fonts` producer-card-r010.pdf: has no unembedded font dependency.
-- `LAYOUT-15/producer-card-r011/R13-pdf-profile` producer-card-r011.pdf: contains the supplied PSO Coated v3 output intent.
-- `LAYOUT-15/producer-card-r011/R13-pdf-fonts` producer-card-r011.pdf: has no unembedded font dependency.
-- `LAYOUT-15/producer-card-r012/R13-pdf-profile` producer-card-r012.pdf: contains the supplied PSO Coated v3 output intent.
-- `LAYOUT-15/producer-card-r012/R13-pdf-fonts` producer-card-r012.pdf: has no unembedded font dependency.
-- `LAYOUT-15/producer-card-r013/R13-pdf-profile` producer-card-r013.pdf: contains the supplied PSO Coated v3 output intent.
-- `LAYOUT-15/producer-card-r013/R13-pdf-fonts` producer-card-r013.pdf: has no unembedded font dependency.
-- `LAYOUT-15/producer-card-r014/R13-pdf-profile` producer-card-r014.pdf: contains the supplied PSO Coated v3 output intent.
-- `LAYOUT-15/producer-card-r014/R13-pdf-fonts` producer-card-r014.pdf: has no unembedded font dependency.
-- `LAYOUT-15/producer-card-r015/R13-pdf-profile` producer-card-r015.pdf: contains the supplied PSO Coated v3 output intent.
-- `LAYOUT-15/producer-card-r015/R13-pdf-fonts` producer-card-r015.pdf: has no unembedded font dependency.
-- `LAYOUT-15/producer-card-combined/R13-pdf-profile` producer-card-combined.pdf: contains the supplied PSO Coated v3 output intent.
-- `LAYOUT-15/producer-card-combined/R13-pdf-fonts` producer-card-combined.pdf: has no unembedded font dependency.
+- `LAYOUT-15/producer-card-r002/H034` The Disclosure Text on “District insurance counter card - Raymond Hollis” (producer-card-r002.pdf) is set in Source Serif 4 Regular.
+- `LAYOUT-15/producer-card-r003/H035` The Disclosure Text on “District insurance counter card - Susan Grady” (producer-card-r003.pdf) is set in Source Serif 4 Regular.
+- `LAYOUT-15/producer-card-r005/H035` The Disclosure Text on “District insurance counter card - Paul Devoe” (producer-card-r005.pdf) is set in Source Serif 4 Regular.
+- `LAYOUT-15/producer-card-r006/H035` The Disclosure Text on “District insurance counter card - Karen Marsh” (producer-card-r006.pdf) is set in Source Serif 4 Regular.
+- `LAYOUT-15/producer-card-r007/H015` The producer name “Daniel Okafor” on “District insurance counter card - Daniel Okafor” (producer-card-r007.pdf) is set in Lexend SemiBold, not a serif and not another weight.
+- `LAYOUT-15/producer-card-r007/H019` The license line and office on “District insurance counter card - Daniel Okafor” (producer-card-r007.pdf), figures aside, are set in Source Serif 4 Regular.
+- `LAYOUT-15/producer-card-r007/H023` The Disclosure Text on “District insurance counter card - Daniel Okafor” (producer-card-r007.pdf) is set in Source Serif 4 Regular.
+- `LAYOUT-15/producer-card-r007/H027` Every figure on “District insurance counter card - Daniel Okafor” (producer-card-r007.pdf), including “05090” in the license line, is IBM Plex Sans Regular, the same size as the words around it.
+- `LAYOUT-15/producer-card-r008/H035` The Disclosure Text on “District insurance counter card - Gina Bianchi” (producer-card-r008.pdf) is set in Source Serif 4 Regular.
+- `LAYOUT-15/producer-card-r009/H035` The Disclosure Text on “District insurance counter card - Miguel Reyes” (producer-card-r009.pdf) is set in Source Serif 4 Regular.
+- `LAYOUT-15/producer-card-r010/H034` The Disclosure Text on “District insurance counter card - Linh Tran” (producer-card-r010.pdf) is set in Source Serif 4 Regular.
+- `LAYOUT-15/producer-card-r011/H035` The Disclosure Text on “District insurance counter card - Sean Donnelly” (producer-card-r011.pdf) is set in Source Serif 4 Regular.
+- `LAYOUT-15/producer-card-r012/H015` The producer name “Rosa Castellano” on “District insurance counter card - Rosa Castellano” (producer-card-r012.pdf) is set in Lexend SemiBold, not a serif and not another weight.
+- `LAYOUT-15/producer-card-r012/H019` The license line and office on “District insurance counter card - Rosa Castellano” (producer-card-r012.pdf), figures aside, are set in Source Serif 4 Regular.
+- `LAYOUT-15/producer-card-r012/H023` The Disclosure Text on “District insurance counter card - Rosa Castellano” (producer-card-r012.pdf) is set in Source Serif 4 Regular.
+- `LAYOUT-15/producer-card-r012/H027` Every figure on “District insurance counter card - Rosa Castellano” (producer-card-r012.pdf), including “05159” in the license line, is IBM Plex Sans Regular, the same size as the words around it.
+- `LAYOUT-15/producer-card-r013/H035` The Disclosure Text on “District insurance counter card - Walter Pruitt” (producer-card-r013.pdf) is set in Source Serif 4 Regular.
+- `LAYOUT-15/producer-card-r014/H035` The Disclosure Text on “District insurance counter card - Dana Whitfield” (producer-card-r014.pdf) is set in Source Serif 4 Regular.
+- `LAYOUT-15/producer-card-r015/H033` The Disclosure Text on “District insurance counter card - Priya Nandakumar” (producer-card-r015.pdf) is set in Source Serif 4 Regular.
+- `LAYOUT-15/producer-card-r002/H047` The headshot on “District insurance counter card - Raymond Hollis” (producer-card-r002.pdf) is placed at 300 ppi or more at its printed size.
+- `LAYOUT-15/producer-card-r002/H048` The producer name on “District insurance counter card - Raymond Hollis” (producer-card-r002.pdf) is not letterspaced: the gaps between letters are no wider than normal Lexend SemiBold spacing.
+- `LAYOUT-15/producer-card-r002/H049` On “District insurance counter card - Raymond Hollis” (producer-card-r002.pdf) a 1 pt Heritage Green #3C6B54 rule running the full card width sits directly above the Disclosure Text.
+- `LAYOUT-15/producer-card-r002/H050` If a premium appears on “District insurance counter card - Raymond Hollis” (producer-card-r002.pdf), it is neither italic nor bold, and it is Ink Navy #1E2A3A or Slate #4A5560.
+- `LAYOUT-15/producer-card-r002/H051` The producer name on “District insurance counter card - Raymond Hollis” (producer-card-r002.pdf) is Ink Navy #1E2A3A.
+- `LAYOUT-15/producer-card-r002/H052` The Disclosure Text on “District insurance counter card - Raymond Hollis” (producer-card-r002.pdf) is Ink Navy #1E2A3A.
+- `LAYOUT-15/producer-card-r002/H053` The license line and office on “District insurance counter card - Raymond Hollis” (producer-card-r002.pdf) are Slate #4A5560.
+- `LAYOUT-15/producer-card-r002/H054` Outside the headshot, any Mist Grey #C7CBC8 on “District insurance counter card - Raymond Hollis” (producer-card-r002.pdf) is only a thin divider or keyline, never type, a panel or the ground.
+- `LAYOUT-15/producer-card-r002/H055` No scrim, gradient or overlay of any colour sits over a photograph on “District insurance counter card - Raymond Hollis” (producer-card-r002.pdf).
+- `LAYOUT-15/producer-card-r002/H056` “District insurance counter card - Raymond Hollis” (producer-card-r002.pdf) carries no newly drawn Aldervale Mutual logo, monogram or symbol.
+- `LAYOUT-15/producer-card-r003/H048` The headshot on “District insurance counter card - Susan Grady” (producer-card-r003.pdf) is placed at 300 ppi or more at its printed size.
+- `LAYOUT-15/producer-card-r003/H049` The producer name on “District insurance counter card - Susan Grady” (producer-card-r003.pdf) is not letterspaced: the gaps between letters are no wider than normal Lexend SemiBold spacing.
+- `LAYOUT-15/producer-card-r003/H050` On “District insurance counter card - Susan Grady” (producer-card-r003.pdf) a 1 pt Heritage Green #3C6B54 rule running the full card width sits directly above the Disclosure Text.
+- `LAYOUT-15/producer-card-r003/H051` If a premium appears on “District insurance counter card - Susan Grady” (producer-card-r003.pdf), it is neither italic nor bold, and it is Ink Navy #1E2A3A or Slate #4A5560.
+- `LAYOUT-15/producer-card-r003/H052` The producer name on “District insurance counter card - Susan Grady” (producer-card-r003.pdf) is Ink Navy #1E2A3A.
+- `LAYOUT-15/producer-card-r003/H053` The Disclosure Text on “District insurance counter card - Susan Grady” (producer-card-r003.pdf) is Ink Navy #1E2A3A.
+- `LAYOUT-15/producer-card-r003/H054` The license line and office on “District insurance counter card - Susan Grady” (producer-card-r003.pdf) are Slate #4A5560.
+- `LAYOUT-15/producer-card-r003/H055` Outside the headshot, any Mist Grey #C7CBC8 on “District insurance counter card - Susan Grady” (producer-card-r003.pdf) is only a thin divider or keyline, never type, a panel or the ground.
+- `LAYOUT-15/producer-card-r003/H056` No scrim, gradient or overlay of any colour sits over a photograph on “District insurance counter card - Susan Grady” (producer-card-r003.pdf).
+- `LAYOUT-15/producer-card-r003/H057` The two Heritage Green rules on “District insurance counter card - Susan Grady” (producer-card-r003.pdf) sit at the same heights as on “District insurance counter card - Raymond Hollis” (producer-card-r002.pdf).
+- `LAYOUT-15/producer-card-r003/H058` “District insurance counter card - Susan Grady” (producer-card-r003.pdf) carries no newly drawn Aldervale Mutual logo, monogram or symbol.
+- `LAYOUT-15/producer-card-r005/H048` The headshot on “District insurance counter card - Paul Devoe” (producer-card-r005.pdf) is placed at 300 ppi or more at its printed size.
+- `LAYOUT-15/producer-card-r005/H049` The producer name on “District insurance counter card - Paul Devoe” (producer-card-r005.pdf) is not letterspaced: the gaps between letters are no wider than normal Lexend SemiBold spacing.
+- `LAYOUT-15/producer-card-r005/H050` On “District insurance counter card - Paul Devoe” (producer-card-r005.pdf) a 1 pt Heritage Green #3C6B54 rule running the full card width sits directly above the Disclosure Text.
+- `LAYOUT-15/producer-card-r005/H051` The Disclosure Text on “District insurance counter card - Paul Devoe” (producer-card-r005.pdf) is set no smaller than the Disclosure Text on “District insurance counter card - Raymond Hollis” (producer-card-r002.pdf).
+- `LAYOUT-15/producer-card-r005/H052` If a premium appears on “District insurance counter card - Paul Devoe” (producer-card-r005.pdf), it is neither italic nor bold, and it is Ink Navy #1E2A3A or Slate #4A5560.
+- `LAYOUT-15/producer-card-r005/H053` The producer name on “District insurance counter card - Paul Devoe” (producer-card-r005.pdf) is Ink Navy #1E2A3A.
+- `LAYOUT-15/producer-card-r005/H054` The Disclosure Text on “District insurance counter card - Paul Devoe” (producer-card-r005.pdf) is Ink Navy #1E2A3A.
+- `LAYOUT-15/producer-card-r005/H055` The license line and office on “District insurance counter card - Paul Devoe” (producer-card-r005.pdf) are Slate #4A5560.
+- `LAYOUT-15/producer-card-r005/H056` Outside the headshot, any Mist Grey #C7CBC8 on “District insurance counter card - Paul Devoe” (producer-card-r005.pdf) is only a thin divider or keyline, never type, a panel or the ground.
+- `LAYOUT-15/producer-card-r005/H057` No scrim, gradient or overlay of any colour sits over a photograph on “District insurance counter card - Paul Devoe” (producer-card-r005.pdf).
+- `LAYOUT-15/producer-card-r005/H058` The two Heritage Green rules on “District insurance counter card - Paul Devoe” (producer-card-r005.pdf) sit at the same heights as on “District insurance counter card - Raymond Hollis” (producer-card-r002.pdf).
+- `LAYOUT-15/producer-card-r005/H059` “District insurance counter card - Paul Devoe” (producer-card-r005.pdf) carries no newly drawn Aldervale Mutual logo, monogram or symbol.
+- `LAYOUT-15/producer-card-r006/H048` The headshot on “District insurance counter card - Karen Marsh” (producer-card-r006.pdf) is placed at 300 ppi or more at its printed size.
+- `LAYOUT-15/producer-card-r006/H049` The producer name on “District insurance counter card - Karen Marsh” (producer-card-r006.pdf) is not letterspaced: the gaps between letters are no wider than normal Lexend SemiBold spacing.
+- `LAYOUT-15/producer-card-r006/H050` On “District insurance counter card - Karen Marsh” (producer-card-r006.pdf) a 1 pt Heritage Green #3C6B54 rule running the full card width sits directly above the Disclosure Text.
+- `LAYOUT-15/producer-card-r006/H051` If a premium appears on “District insurance counter card - Karen Marsh” (producer-card-r006.pdf), it is neither italic nor bold, and it is Ink Navy #1E2A3A or Slate #4A5560.
+- `LAYOUT-15/producer-card-r006/H052` The producer name on “District insurance counter card - Karen Marsh” (producer-card-r006.pdf) is Ink Navy #1E2A3A.
+- `LAYOUT-15/producer-card-r006/H053` The Disclosure Text on “District insurance counter card - Karen Marsh” (producer-card-r006.pdf) is Ink Navy #1E2A3A.
+- `LAYOUT-15/producer-card-r006/H054` The license line and office on “District insurance counter card - Karen Marsh” (producer-card-r006.pdf) are Slate #4A5560.
+- `LAYOUT-15/producer-card-r006/H055` Outside the headshot, any Mist Grey #C7CBC8 on “District insurance counter card - Karen Marsh” (producer-card-r006.pdf) is only a thin divider or keyline, never type, a panel or the ground.
+- `LAYOUT-15/producer-card-r006/H056` No scrim, gradient or overlay of any colour sits over a photograph on “District insurance counter card - Karen Marsh” (producer-card-r006.pdf).
+- `LAYOUT-15/producer-card-r006/H057` The two Heritage Green rules on “District insurance counter card - Karen Marsh” (producer-card-r006.pdf) sit at the same heights as on “District insurance counter card - Raymond Hollis” (producer-card-r002.pdf).
+- `LAYOUT-15/producer-card-r006/H058` “District insurance counter card - Karen Marsh” (producer-card-r006.pdf) carries no newly drawn Aldervale Mutual logo, monogram or symbol.
+- `LAYOUT-15/producer-card-r007/H036` The headshot on “District insurance counter card - Daniel Okafor” (producer-card-r007.pdf) is placed at 300 ppi or more at its printed size.
+- `LAYOUT-15/producer-card-r007/H037` The producer name on “District insurance counter card - Daniel Okafor” (producer-card-r007.pdf) reads “Daniel Okafor” in sentence case, not in capitals.
+- `LAYOUT-15/producer-card-r007/H038` The producer name on “District insurance counter card - Daniel Okafor” (producer-card-r007.pdf) is not letterspaced: the gaps between letters are no wider than normal Lexend SemiBold spacing.
+- `LAYOUT-15/producer-card-r007/H039` On “District insurance counter card - Daniel Okafor” (producer-card-r007.pdf) the producer name sits directly on a 1 pt Heritage Green #3C6B54 rule running the full card width.
+- `LAYOUT-15/producer-card-r007/H040` On “District insurance counter card - Daniel Okafor” (producer-card-r007.pdf) a 1 pt Heritage Green #3C6B54 rule running the full card width sits directly above the Disclosure Text.
+- `LAYOUT-15/producer-card-r007/H041` If a premium appears on “District insurance counter card - Daniel Okafor” (producer-card-r007.pdf), it is neither italic nor bold, and it is Ink Navy #1E2A3A or Slate #4A5560.
+- `LAYOUT-15/producer-card-r007/H042` Each line of the license text and the office text on “District insurance counter card - Daniel Okafor” (producer-card-r007.pdf) has 65 characters or fewer.
+- `LAYOUT-15/producer-card-r007/H043` The type, panel and rule colours on “District insurance counter card - Daniel Okafor” (producer-card-r007.pdf) come only from #1E2A3A, #4A5560, #F4F2EC, #C7CBC8 and #3C6B54.
+- `LAYOUT-15/producer-card-r007/H044` Document Paper #F4F2EC is the only colour used for the card ground and for any panel on “District insurance counter card - Daniel Okafor” (producer-card-r007.pdf).
+- `LAYOUT-15/producer-card-r007/H045` The producer name on “District insurance counter card - Daniel Okafor” (producer-card-r007.pdf) is Ink Navy #1E2A3A.
+- `LAYOUT-15/producer-card-r007/H046` The Disclosure Text on “District insurance counter card - Daniel Okafor” (producer-card-r007.pdf) is Ink Navy #1E2A3A.
+- `LAYOUT-15/producer-card-r007/H047` The license line and office on “District insurance counter card - Daniel Okafor” (producer-card-r007.pdf) are Slate #4A5560.
+- `LAYOUT-15/producer-card-r007/H048` Outside the headshot, Heritage Green #3C6B54 appears on “District insurance counter card - Daniel Okafor” (producer-card-r007.pdf) only as the two full-width rules.
+- `LAYOUT-15/producer-card-r007/H049` Outside the headshot, any Mist Grey #C7CBC8 on “District insurance counter card - Daniel Okafor” (producer-card-r007.pdf) is only a thin divider or keyline, never type, a panel or the ground.
+- `LAYOUT-15/producer-card-r007/H050` All type, panels, rules, dividers and the card ground on “District insurance counter card - Daniel Okafor” (producer-card-r007.pdf) are solid at full opacity, with no tint, transparency, gradient or shadow.
+- `LAYOUT-15/producer-card-r007/H051` No scrim, gradient or overlay of any colour sits over a photograph on “District insurance counter card - Daniel Okafor” (producer-card-r007.pdf).
+- `LAYOUT-15/producer-card-r007/H052` The headshot on “District insurance counter card - Daniel Okafor” (producer-card-r007.pdf) shows producer_headshot_06.jpg in natural colour and skin tones, not tinted, duotoned or recoloured toward the palette.
+- `LAYOUT-15/producer-card-r007/H053` The two Heritage Green rules on “District insurance counter card - Daniel Okafor” (producer-card-r007.pdf) sit at the same heights as on “District insurance counter card - Raymond Hollis” (producer-card-r002.pdf).
+- `LAYOUT-15/producer-card-r007/H054` “District insurance counter card - Daniel Okafor” (producer-card-r007.pdf) carries no newly drawn Aldervale Mutual logo, monogram or symbol.
+- `LAYOUT-15/producer-card-r008/H048` The headshot on “District insurance counter card - Gina Bianchi” (producer-card-r008.pdf) is placed at 300 ppi or more at its printed size.
+- `LAYOUT-15/producer-card-r008/H049` The producer name on “District insurance counter card - Gina Bianchi” (producer-card-r008.pdf) is not letterspaced: the gaps between letters are no wider than normal Lexend SemiBold spacing.
+- `LAYOUT-15/producer-card-r008/H050` On “District insurance counter card - Gina Bianchi” (producer-card-r008.pdf) a 1 pt Heritage Green #3C6B54 rule running the full card width sits directly above the Disclosure Text.
+- `LAYOUT-15/producer-card-r008/H051` If a premium appears on “District insurance counter card - Gina Bianchi” (producer-card-r008.pdf), it is neither italic nor bold, and it is Ink Navy #1E2A3A or Slate #4A5560.
+- `LAYOUT-15/producer-card-r008/H052` The producer name on “District insurance counter card - Gina Bianchi” (producer-card-r008.pdf) is Ink Navy #1E2A3A.
+- `LAYOUT-15/producer-card-r008/H053` The Disclosure Text on “District insurance counter card - Gina Bianchi” (producer-card-r008.pdf) is Ink Navy #1E2A3A.
+- `LAYOUT-15/producer-card-r008/H054` The license line and office on “District insurance counter card - Gina Bianchi” (producer-card-r008.pdf) are Slate #4A5560.
+- `LAYOUT-15/producer-card-r008/H055` Outside the headshot, any Mist Grey #C7CBC8 on “District insurance counter card - Gina Bianchi” (producer-card-r008.pdf) is only a thin divider or keyline, never type, a panel or the ground.
+- `LAYOUT-15/producer-card-r008/H056` No scrim, gradient or overlay of any colour sits over a photograph on “District insurance counter card - Gina Bianchi” (producer-card-r008.pdf).
+- `LAYOUT-15/producer-card-r008/H057` The two Heritage Green rules on “District insurance counter card - Gina Bianchi” (producer-card-r008.pdf) sit at the same heights as on “District insurance counter card - Raymond Hollis” (producer-card-r002.pdf).
+- `LAYOUT-15/producer-card-r008/H058` “District insurance counter card - Gina Bianchi” (producer-card-r008.pdf) carries no newly drawn Aldervale Mutual logo, monogram or symbol.
+- `LAYOUT-15/producer-card-r009/H048` The headshot on “District insurance counter card - Miguel Reyes” (producer-card-r009.pdf) is placed at 300 ppi or more at its printed size.
+- `LAYOUT-15/producer-card-r009/H049` The producer name on “District insurance counter card - Miguel Reyes” (producer-card-r009.pdf) is not letterspaced: the gaps between letters are no wider than normal Lexend SemiBold spacing.
+- `LAYOUT-15/producer-card-r009/H050` On “District insurance counter card - Miguel Reyes” (producer-card-r009.pdf) a 1 pt Heritage Green #3C6B54 rule running the full card width sits directly above the Disclosure Text.
+- `LAYOUT-15/producer-card-r009/H051` If a premium appears on “District insurance counter card - Miguel Reyes” (producer-card-r009.pdf), it is neither italic nor bold, and it is Ink Navy #1E2A3A or Slate #4A5560.
+- `LAYOUT-15/producer-card-r009/H052` The producer name on “District insurance counter card - Miguel Reyes” (producer-card-r009.pdf) is Ink Navy #1E2A3A.
+- `LAYOUT-15/producer-card-r009/H053` The Disclosure Text on “District insurance counter card - Miguel Reyes” (producer-card-r009.pdf) is Ink Navy #1E2A3A.
+- `LAYOUT-15/producer-card-r009/H054` The license line and office on “District insurance counter card - Miguel Reyes” (producer-card-r009.pdf) are Slate #4A5560.
+- `LAYOUT-15/producer-card-r009/H055` Outside the headshot, any Mist Grey #C7CBC8 on “District insurance counter card - Miguel Reyes” (producer-card-r009.pdf) is only a thin divider or keyline, never type, a panel or the ground.
+- `LAYOUT-15/producer-card-r009/H056` No scrim, gradient or overlay of any colour sits over a photograph on “District insurance counter card - Miguel Reyes” (producer-card-r009.pdf).
+- `LAYOUT-15/producer-card-r009/H057` The two Heritage Green rules on “District insurance counter card - Miguel Reyes” (producer-card-r009.pdf) sit at the same heights as on “District insurance counter card - Raymond Hollis” (producer-card-r002.pdf).
+- `LAYOUT-15/producer-card-r009/H058` “District insurance counter card - Miguel Reyes” (producer-card-r009.pdf) carries no newly drawn Aldervale Mutual logo, monogram or symbol.
+- `LAYOUT-15/producer-card-r010/H047` The headshot on “District insurance counter card - Linh Tran” (producer-card-r010.pdf) is placed at 300 ppi or more at its printed size.
+- `LAYOUT-15/producer-card-r010/H048` The producer name on “District insurance counter card - Linh Tran” (producer-card-r010.pdf) is not letterspaced: the gaps between letters are no wider than normal Lexend SemiBold spacing.
+- `LAYOUT-15/producer-card-r010/H049` On “District insurance counter card - Linh Tran” (producer-card-r010.pdf) a 1 pt Heritage Green #3C6B54 rule running the full card width sits directly above the Disclosure Text.
+- `LAYOUT-15/producer-card-r010/H050` The Disclosure Text on “District insurance counter card - Linh Tran” (producer-card-r010.pdf) is set no smaller than the Disclosure Text on “District insurance counter card - Raymond Hollis” (producer-card-r002.pdf).
+- `LAYOUT-15/producer-card-r010/H051` If a premium appears on “District insurance counter card - Linh Tran” (producer-card-r010.pdf), it is neither italic nor bold, and it is Ink Navy #1E2A3A or Slate #4A5560.
+- `LAYOUT-15/producer-card-r010/H052` The producer name on “District insurance counter card - Linh Tran” (producer-card-r010.pdf) is Ink Navy #1E2A3A.
+- `LAYOUT-15/producer-card-r010/H053` The Disclosure Text on “District insurance counter card - Linh Tran” (producer-card-r010.pdf) is Ink Navy #1E2A3A.
+- `LAYOUT-15/producer-card-r010/H054` The license line and office on “District insurance counter card - Linh Tran” (producer-card-r010.pdf) are Slate #4A5560.
+- `LAYOUT-15/producer-card-r010/H055` Outside the headshot, any Mist Grey #C7CBC8 on “District insurance counter card - Linh Tran” (producer-card-r010.pdf) is only a thin divider or keyline, never type, a panel or the ground.
+- `LAYOUT-15/producer-card-r010/H056` No scrim, gradient or overlay of any colour sits over a photograph on “District insurance counter card - Linh Tran” (producer-card-r010.pdf).
+- `LAYOUT-15/producer-card-r010/H057` The two Heritage Green rules on “District insurance counter card - Linh Tran” (producer-card-r010.pdf) sit at the same heights as on “District insurance counter card - Raymond Hollis” (producer-card-r002.pdf).
+- `LAYOUT-15/producer-card-r010/H058` “District insurance counter card - Linh Tran” (producer-card-r010.pdf) carries no newly drawn Aldervale Mutual logo, monogram or symbol.
+- `LAYOUT-15/producer-card-r011/H048` The headshot on “District insurance counter card - Sean Donnelly” (producer-card-r011.pdf) is placed at 300 ppi or more at its printed size.
+- `LAYOUT-15/producer-card-r011/H049` The producer name on “District insurance counter card - Sean Donnelly” (producer-card-r011.pdf) is not letterspaced: the gaps between letters are no wider than normal Lexend SemiBold spacing.
+- `LAYOUT-15/producer-card-r011/H050` On “District insurance counter card - Sean Donnelly” (producer-card-r011.pdf) a 1 pt Heritage Green #3C6B54 rule running the full card width sits directly above the Disclosure Text.
+- `LAYOUT-15/producer-card-r011/H051` If a premium appears on “District insurance counter card - Sean Donnelly” (producer-card-r011.pdf), it is neither italic nor bold, and it is Ink Navy #1E2A3A or Slate #4A5560.
+- `LAYOUT-15/producer-card-r011/H052` The producer name on “District insurance counter card - Sean Donnelly” (producer-card-r011.pdf) is Ink Navy #1E2A3A.
+- `LAYOUT-15/producer-card-r011/H053` The Disclosure Text on “District insurance counter card - Sean Donnelly” (producer-card-r011.pdf) is Ink Navy #1E2A3A.
+- `LAYOUT-15/producer-card-r011/H054` The license line and office on “District insurance counter card - Sean Donnelly” (producer-card-r011.pdf) are Slate #4A5560.
+- `LAYOUT-15/producer-card-r011/H055` Outside the headshot, any Mist Grey #C7CBC8 on “District insurance counter card - Sean Donnelly” (producer-card-r011.pdf) is only a thin divider or keyline, never type, a panel or the ground.
+- `LAYOUT-15/producer-card-r011/H056` No scrim, gradient or overlay of any colour sits over a photograph on “District insurance counter card - Sean Donnelly” (producer-card-r011.pdf).
+- `LAYOUT-15/producer-card-r011/H057` The two Heritage Green rules on “District insurance counter card - Sean Donnelly” (producer-card-r011.pdf) sit at the same heights as on “District insurance counter card - Raymond Hollis” (producer-card-r002.pdf).
+- `LAYOUT-15/producer-card-r011/H058` “District insurance counter card - Sean Donnelly” (producer-card-r011.pdf) carries no newly drawn Aldervale Mutual logo, monogram or symbol.
+- `LAYOUT-15/producer-card-r012/H036` The headshot on “District insurance counter card - Rosa Castellano” (producer-card-r012.pdf) is placed at 300 ppi or more at its printed size.
+- `LAYOUT-15/producer-card-r012/H037` The producer name on “District insurance counter card - Rosa Castellano” (producer-card-r012.pdf) reads “Rosa Castellano” in sentence case, not in capitals.
+- `LAYOUT-15/producer-card-r012/H038` The producer name on “District insurance counter card - Rosa Castellano” (producer-card-r012.pdf) is not letterspaced: the gaps between letters are no wider than normal Lexend SemiBold spacing.
+- `LAYOUT-15/producer-card-r012/H039` On “District insurance counter card - Rosa Castellano” (producer-card-r012.pdf) the producer name sits directly on a 1 pt Heritage Green #3C6B54 rule running the full card width.
+- `LAYOUT-15/producer-card-r012/H040` On “District insurance counter card - Rosa Castellano” (producer-card-r012.pdf) a 1 pt Heritage Green #3C6B54 rule running the full card width sits directly above the Disclosure Text.
+- `LAYOUT-15/producer-card-r012/H041` If a premium appears on “District insurance counter card - Rosa Castellano” (producer-card-r012.pdf), it is neither italic nor bold, and it is Ink Navy #1E2A3A or Slate #4A5560.
+- `LAYOUT-15/producer-card-r012/H042` Each line of the license text and the office text on “District insurance counter card - Rosa Castellano” (producer-card-r012.pdf) has 65 characters or fewer.
+- `LAYOUT-15/producer-card-r012/H043` The type, panel and rule colours on “District insurance counter card - Rosa Castellano” (producer-card-r012.pdf) come only from #1E2A3A, #4A5560, #F4F2EC, #C7CBC8 and #3C6B54.
+- `LAYOUT-15/producer-card-r012/H044` Document Paper #F4F2EC is the only colour used for the card ground and for any panel on “District insurance counter card - Rosa Castellano” (producer-card-r012.pdf).
+- `LAYOUT-15/producer-card-r012/H045` The producer name on “District insurance counter card - Rosa Castellano” (producer-card-r012.pdf) is Ink Navy #1E2A3A.
+- `LAYOUT-15/producer-card-r012/H046` The Disclosure Text on “District insurance counter card - Rosa Castellano” (producer-card-r012.pdf) is Ink Navy #1E2A3A.
+- `LAYOUT-15/producer-card-r012/H047` The license line and office on “District insurance counter card - Rosa Castellano” (producer-card-r012.pdf) are Slate #4A5560.
+- `LAYOUT-15/producer-card-r012/H048` Outside the headshot, Heritage Green #3C6B54 appears on “District insurance counter card - Rosa Castellano” (producer-card-r012.pdf) only as the two full-width rules.
+- `LAYOUT-15/producer-card-r012/H049` Outside the headshot, any Mist Grey #C7CBC8 on “District insurance counter card - Rosa Castellano” (producer-card-r012.pdf) is only a thin divider or keyline, never type, a panel or the ground.
+- `LAYOUT-15/producer-card-r012/H050` All type, panels, rules, dividers and the card ground on “District insurance counter card - Rosa Castellano” (producer-card-r012.pdf) are solid at full opacity, with no tint, transparency, gradient or shadow.
+- `LAYOUT-15/producer-card-r012/H051` No scrim, gradient or overlay of any colour sits over a photograph on “District insurance counter card - Rosa Castellano” (producer-card-r012.pdf).
+- `LAYOUT-15/producer-card-r012/H052` The headshot on “District insurance counter card - Rosa Castellano” (producer-card-r012.pdf) shows producer_headshot_11.jpg in natural colour and skin tones, not tinted, duotoned or recoloured toward the palette.
+- `LAYOUT-15/producer-card-r012/H053` The two Heritage Green rules on “District insurance counter card - Rosa Castellano” (producer-card-r012.pdf) sit at the same heights as on “District insurance counter card - Raymond Hollis” (producer-card-r002.pdf).
+- `LAYOUT-15/producer-card-r012/H054` “District insurance counter card - Rosa Castellano” (producer-card-r012.pdf) carries no newly drawn Aldervale Mutual logo, monogram or symbol.
+- `LAYOUT-15/producer-card-r013/H048` The headshot on “District insurance counter card - Walter Pruitt” (producer-card-r013.pdf) is placed at 300 ppi or more at its printed size.
+- `LAYOUT-15/producer-card-r013/H049` The producer name on “District insurance counter card - Walter Pruitt” (producer-card-r013.pdf) is not letterspaced: the gaps between letters are no wider than normal Lexend SemiBold spacing.
+- `LAYOUT-15/producer-card-r013/H050` On “District insurance counter card - Walter Pruitt” (producer-card-r013.pdf) a 1 pt Heritage Green #3C6B54 rule running the full card width sits directly above the Disclosure Text.
+- `LAYOUT-15/producer-card-r013/H051` If a premium appears on “District insurance counter card - Walter Pruitt” (producer-card-r013.pdf), it is neither italic nor bold, and it is Ink Navy #1E2A3A or Slate #4A5560.
+- `LAYOUT-15/producer-card-r013/H052` The producer name on “District insurance counter card - Walter Pruitt” (producer-card-r013.pdf) is Ink Navy #1E2A3A.
+- `LAYOUT-15/producer-card-r013/H053` The Disclosure Text on “District insurance counter card - Walter Pruitt” (producer-card-r013.pdf) is Ink Navy #1E2A3A.
+- `LAYOUT-15/producer-card-r013/H054` The license line and office on “District insurance counter card - Walter Pruitt” (producer-card-r013.pdf) are Slate #4A5560.
+- `LAYOUT-15/producer-card-r013/H055` Outside the headshot, any Mist Grey #C7CBC8 on “District insurance counter card - Walter Pruitt” (producer-card-r013.pdf) is only a thin divider or keyline, never type, a panel or the ground.
+- `LAYOUT-15/producer-card-r013/H056` No scrim, gradient or overlay of any colour sits over a photograph on “District insurance counter card - Walter Pruitt” (producer-card-r013.pdf).
+- `LAYOUT-15/producer-card-r013/H057` The two Heritage Green rules on “District insurance counter card - Walter Pruitt” (producer-card-r013.pdf) sit at the same heights as on “District insurance counter card - Raymond Hollis” (producer-card-r002.pdf).
+- `LAYOUT-15/producer-card-r013/H058` “District insurance counter card - Walter Pruitt” (producer-card-r013.pdf) carries no newly drawn Aldervale Mutual logo, monogram or symbol.
+- `LAYOUT-15/producer-card-r014/H048` The headshot on “District insurance counter card - Dana Whitfield” (producer-card-r014.pdf) is placed at 300 ppi or more at its printed size.
+- `LAYOUT-15/producer-card-r014/H049` The producer name on “District insurance counter card - Dana Whitfield” (producer-card-r014.pdf) is not letterspaced: the gaps between letters are no wider than normal Lexend SemiBold spacing.
+- `LAYOUT-15/producer-card-r014/H050` On “District insurance counter card - Dana Whitfield” (producer-card-r014.pdf) a 1 pt Heritage Green #3C6B54 rule running the full card width sits directly above the Disclosure Text.
+- `LAYOUT-15/producer-card-r014/H051` If a premium appears on “District insurance counter card - Dana Whitfield” (producer-card-r014.pdf), it is neither italic nor bold, and it is Ink Navy #1E2A3A or Slate #4A5560.
+- `LAYOUT-15/producer-card-r014/H052` The producer name on “District insurance counter card - Dana Whitfield” (producer-card-r014.pdf) is Ink Navy #1E2A3A.
+- `LAYOUT-15/producer-card-r014/H053` The Disclosure Text on “District insurance counter card - Dana Whitfield” (producer-card-r014.pdf) is Ink Navy #1E2A3A.
+- `LAYOUT-15/producer-card-r014/H054` The license line and office on “District insurance counter card - Dana Whitfield” (producer-card-r014.pdf) are Slate #4A5560.
+- `LAYOUT-15/producer-card-r014/H055` Outside the headshot, any Mist Grey #C7CBC8 on “District insurance counter card - Dana Whitfield” (producer-card-r014.pdf) is only a thin divider or keyline, never type, a panel or the ground.
+- `LAYOUT-15/producer-card-r014/H056` No scrim, gradient or overlay of any colour sits over a photograph on “District insurance counter card - Dana Whitfield” (producer-card-r014.pdf).
+- `LAYOUT-15/producer-card-r014/H057` The two Heritage Green rules on “District insurance counter card - Dana Whitfield” (producer-card-r014.pdf) sit at the same heights as on “District insurance counter card - Raymond Hollis” (producer-card-r002.pdf).
+- `LAYOUT-15/producer-card-r014/H058` “District insurance counter card - Dana Whitfield” (producer-card-r014.pdf) carries no newly drawn Aldervale Mutual logo, monogram or symbol.
+- `LAYOUT-15/producer-card-r015/H046` The portrait area on “District insurance counter card - Priya Nandakumar” (producer-card-r015.pdf) is left empty, with no photograph, illustration or stand-in image.
+- `LAYOUT-15/producer-card-r015/H047` Any photograph outside the portrait area on “District insurance counter card - Priya Nandakumar” (producer-card-r015.pdf) is honestly labelled stock or illustration, never a family, client or policyholder presented as real.
+- `LAYOUT-15/producer-card-r015/H048` The producer name on “District insurance counter card - Priya Nandakumar” (producer-card-r015.pdf) is not letterspaced: the gaps between letters are no wider than normal Lexend SemiBold spacing.
+- `LAYOUT-15/producer-card-r015/H049` On “District insurance counter card - Priya Nandakumar” (producer-card-r015.pdf) a 1 pt Heritage Green #3C6B54 rule running the full card width sits directly above the Disclosure Text.
+- `LAYOUT-15/producer-card-r015/H050` If a premium appears on “District insurance counter card - Priya Nandakumar” (producer-card-r015.pdf), it is neither italic nor bold, and it is Ink Navy #1E2A3A or Slate #4A5560.
+- `LAYOUT-15/producer-card-r015/H051` The producer name on “District insurance counter card - Priya Nandakumar” (producer-card-r015.pdf) is Ink Navy #1E2A3A.
+- `LAYOUT-15/producer-card-r015/H052` The Disclosure Text on “District insurance counter card - Priya Nandakumar” (producer-card-r015.pdf) is Ink Navy #1E2A3A.
+- `LAYOUT-15/producer-card-r015/H053` The license line and office on “District insurance counter card - Priya Nandakumar” (producer-card-r015.pdf) are Slate #4A5560.
+- `LAYOUT-15/producer-card-r015/H054` Outside any photograph, any Mist Grey #C7CBC8 on “District insurance counter card - Priya Nandakumar” (producer-card-r015.pdf) is only a thin divider or keyline, never type, a panel or the ground.
+- `LAYOUT-15/producer-card-r015/H055` No scrim, gradient or overlay of any colour sits over a photograph on “District insurance counter card - Priya Nandakumar” (producer-card-r015.pdf).
+- `LAYOUT-15/producer-card-r015/H056` The two Heritage Green rules on “District insurance counter card - Priya Nandakumar” (producer-card-r015.pdf) sit at the same heights as on “District insurance counter card - Raymond Hollis” (producer-card-r002.pdf).
+- `LAYOUT-15/producer-card-r015/H057` “District insurance counter card - Priya Nandakumar” (producer-card-r015.pdf) carries no newly drawn Aldervale Mutual logo, monogram or symbol.
+- `LAYOUT-15/producer-card-combined/H003` producer_headshot_03.jpg appears on no page of “District insurance counter card - combined production run” (producer-card-combined.pdf).
+- `LAYOUT-15/producer-card-combined/H004` Every page of “District insurance counter card - combined production run” (producer-card-combined.pdf) has a 148 x 210 mm trim, not scaled.

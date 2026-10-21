@@ -1,0 +1,274 @@
+{
+ "LANGUAGE, ATOMICITY AND OBSERVABILITY": [
+  {
+   "severity": "major",
+   "check_ids": [
+    "PHOTO-08/vehicle-card-r002/H037",
+    "PHOTO-08/vehicle-card-r003/H036",
+    "PHOTO-08/vehicle-card-r004/H035",
+    "PHOTO-08/vehicle-card-r005/H036",
+    "PHOTO-08/vehicle-card-r006/H036",
+    "PHOTO-08/vehicle-card-r007/H035",
+    "PHOTO-08/inventory-campaign/H083"
+   ],
+   "problem": "Compound check that puts two colours with different rules into one check. It also lets Compass Teal be used as \"one small muted line\" (text), but the brand identity says Compass Teal is \"Never a ground or a type colour\". Only Steel Grey may be used for the one small muted dealer line.",
+   "fix": "Split into two checks per output. Modify the existing id to: \"Compass Teal #3C6E71 on “Vehicle sales card - M3082” (vehicle-card-r002.png) appears only as rules or seal compass needles, never as a ground or as text colour.\" Add: \"Steel Grey #9AA1A8 on “Vehicle sales card - M3082” (vehicle-card-r002.png) appears only as keylines, the photo-well border, one small muted line or seal lettering, never as a ground.\" Use the same pair on each card and on the campaign (\"Forecourt inventory campaign” (inventory-campaign.png)\")."
+  },
+  {
+   "severity": "major",
+   "check_ids": [
+    "PHOTO-08/vehicle-card-r002/H055",
+    "PHOTO-08/vehicle-card-r003/H054",
+    "PHOTO-08/vehicle-card-r004/H053",
+    "PHOTO-08/vehicle-card-r005/H054",
+    "PHOTO-08/vehicle-card-r006/H054",
+    "PHOTO-08/vehicle-card-r007/H053",
+    "PHOTO-08/inventory-campaign/H101"
+   ],
+   "problem": "Compound check with two independent facts: the dollar sign's size and its top alignment. \"About sixty percent of figure height\" also reads as a measurement on a PNG, which an annotator would have to estimate.",
+   "fix": "Modify the existing id to a visible relation: \"The dollar sign in the price on “Vehicle sales card - M3082” (vehicle-card-r002.png) is clearly smaller than the figures, roughly three fifths of their height.\" Add: \"The top of the dollar sign in the price on “Vehicle sales card - M3082” (vehicle-card-r002.png) lines up with the tops of the figures.\" For the campaign, start both with \"If a price appears on “Forecourt inventory campaign” (inventory-campaign.png), ...\"."
+  },
+  {
+   "severity": "major",
+   "check_ids": [
+    "PHOTO-08/vehicle-card-r002/H025",
+    "PHOTO-08/vehicle-card-r003/H023",
+    "PHOTO-08/vehicle-card-r004/H022",
+    "PHOTO-08/vehicle-card-r005/H023",
+    "PHOTO-08/vehicle-card-r006/H023",
+    "PHOTO-08/vehicle-card-r007/H022",
+    "PHOTO-08/inventory-campaign/H072"
+   ],
+   "problem": "Compound check: (a) a thin rule sits under the price and runs the full width, and (b) that rule is Compass Teal #3C6E71. A rule can be placed right but in the wrong colour, or the other way round, so one pass or fail mixes two facts.",
+   "fix": "Modify the existing id to: \"A thin rule sits directly under the price on “Vehicle sales card - M3082” (vehicle-card-r002.png) and runs the full width of the card.\" Add: \"The rule under the price on “Vehicle sales card - M3082” (vehicle-card-r002.png) is Compass Teal #3C6E71.\" Campaign: \"If a price appears on “Forecourt inventory campaign” (inventory-campaign.png), a thin rule sits directly under it across that vehicle's full panel width.\" plus \"If a price appears on ..., the rule under it is Compass Teal #3C6E71.\""
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "PHOTO-08/vehicle-card-r002/H022",
+    "PHOTO-08/vehicle-card-r003/H020",
+    "PHOTO-08/vehicle-card-r004/H018",
+    "PHOTO-08/vehicle-card-r005/H019",
+    "PHOTO-08/vehicle-card-r006/H019",
+    "PHOTO-08/vehicle-card-r007/H018",
+    "PHOTO-08/inventory-campaign/H069"
+   ],
+   "problem": "Unclear wording: \"sits in an even, neutral showroom white\" uses the phrase \"showroom white\", which is also the name of the palette colour Showroom White #F6F7F8 (H035, H060). An annotator could read this lighting check as requiring the photo background to be #F6F7F8.",
+   "fix": "Reword as a lighting look: \"The Norsted Alta on “Vehicle sales card - M3082” (vehicle-card-r002.png) is shown in even, neutral, well-lit showroom light, not a dark or dramatic studio look.\" Use the same wording for each card's vehicle. Campaign: \"Every vehicle on “Forecourt inventory campaign” (inventory-campaign.png) is shown in even, neutral, well-lit showroom light, not a dark or dramatic studio look.\""
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "PHOTO-08/vehicle-card-r007/H016",
+    "PHOTO-08/inventory-campaign/H063"
+   ],
+   "problem": "Compound check: \"is evenly lit and its navy-blue paint reads true, without the dim cool-green cast\" combines lighting evenness with paint colour fidelity. These can fail independently.",
+   "fix": "Modify to the paint fact: \"The navy-blue paint of the Norsted Fjord on “Vehicle sales card - M3119” (vehicle-card-r007.png) reads true navy, without the dim cool-green cast of M3119_norsted_fjord_front34.jpg.\" Add: \"The Norsted Fjord on “Vehicle sales card - M3119” (vehicle-card-r007.png) is evenly lit, without the dim back-row look of M3119_norsted_fjord_front34.jpg.\" Do the same on the campaign, citing the Fjord's three photos."
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "PHOTO-08/vehicle-card-r002/H034",
+    "PHOTO-08/vehicle-card-r003/H033",
+    "PHOTO-08/vehicle-card-r004/H032",
+    "PHOTO-08/vehicle-card-r005/H033",
+    "PHOTO-08/vehicle-card-r006/H033",
+    "PHOTO-08/vehicle-card-r007/H032",
+    "PHOTO-08/inventory-campaign/H080"
+   ],
+   "problem": "Near-duplicate on the same output. \"Is a solid palette colour\" repeats the palette fact already tested by H012/H032/H031/H079 (\"Every solid colour ... is a brand palette colour\"). The only new fact here is flat, full-opacity fill.",
+   "fix": "Drop the palette clause: \"Every panel and band on “Vehicle sales card - M3082” (vehicle-card-r002.png) is a flat, fully opaque fill, with no tint, transparency or gradient.\" Make the same change on each card and the campaign."
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "PHOTO-08/vehicle-card-r002/H014",
+    "PHOTO-08/vehicle-card-r003/H011",
+    "PHOTO-08/vehicle-card-r005/H010",
+    "PHOTO-08/vehicle-card-r006/H010",
+    "PHOTO-08/vehicle-card-r007/H010",
+    "PHOTO-08/vehicle-card-r004/H010"
+   ],
+   "problem": "The same check type gets three different k_ids. The certification-line check is K1_Q3 on five cards, K1_Q5 on r004, and K1_Q1 on the campaign tier checks (H011/H021/H031/H040/H050/H060). It is a record value from meridian_intake_week.csv, like stock, year, trim, mileage and price (H004 to H009, all K1_Q1).",
+   "fix": "Set k_id K1_Q1 on r002 H014, r003 H011, r005 H010, r006 H010 and r007 H010, keeping the text unchanged. Leave r004 H010 at K1_Q5, because a critical check must not be demoted."
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "PHOTO-08/vehicle-card-r002/H028",
+    "PHOTO-08/vehicle-card-r003/H026",
+    "PHOTO-08/vehicle-card-r004/H025",
+    "PHOTO-08/vehicle-card-r005/H026",
+    "PHOTO-08/vehicle-card-r006/H026",
+    "PHOTO-08/vehicle-card-r007/H025",
+    "PHOTO-08/inventory-campaign/H075"
+   ],
+   "problem": "Vague scope: \"body text\" is not defined on the card. The brand limits only the Body role (mileage and listing detail) to 65 characters a line. An annotator cannot tell whether the enquiry line or the fine print counts.",
+   "fix": "Name the role: \"No line of the mileage and listing detail on “Vehicle sales card - M3082” (vehicle-card-r002.png) is longer than 65 characters, counting spaces.\" Campaign: \"If mileage or listing detail appears on “Forecourt inventory campaign” (inventory-campaign.png), no line of it is longer than 65 characters, counting spaces.\""
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "PHOTO-08/inventory-campaign/H003"
+   ],
+   "problem": "Compound check: (a) the roundel is one of the four production files, not the older meridian_roundel.png, and (b) its proportions are unchanged. A correct file that has been stretched and a wrong file placed undistorted fail for different reasons.",
+   "fix": "Modify: \"The compass roundel on “Forecourt inventory campaign” (inventory-campaign.png) matches meridian_roundel_transparent.svg or meridian_roundel_reversed.svg (or its matching PNG), not the older meridian_roundel.png.\" Add: \"The compass roundel on “Forecourt inventory campaign” (inventory-campaign.png) is not stretched, squashed or redrawn.\""
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "PHOTO-08/inventory-campaign/H005"
+   ],
+   "problem": "Unstated standard: \"sits above every vehicle caption\" is a placement rule found in neither the brief (\"Make the dealership name clear\") nor the brand identity. A valid layout with the roundel and label at the bottom would fail. The type scale even sets the label beside the roundel at 22 px, smaller than the captions.",
+   "fix": "Rewrite against the brief's actual ask: \"The dealership name “Meridian Motors” on “Forecourt inventory campaign” (inventory-campaign.png) is fully legible at full size, with no letters cut off, covered or set over a photograph.\" Or retire it, covered_by PHOTO-08/inventory-campaign/H001."
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "PHOTO-08/inventory-campaign/H004",
+    "PHOTO-08/inventory-campaign/H078"
+   ],
+   "problem": "Near-duplicates on the same role. When the dealership name is the label beside the roundel, both checks apply. H004 gives the family only (Source Serif 4, no weight) and H078 gives Source Serif 4 Bold. That breaks the one family and weight check per role rule.",
+   "fix": "Modify H004 to: \"Outside the roundel artwork, the typeset dealership name “Meridian Motors” on “Forecourt inventory campaign” (inventory-campaign.png) is set in Source Serif 4 Bold.\" Then retire H078 with covered_by [\"PHOTO-08/inventory-campaign/H004\"]."
+  }
+ ],
+ "FIDELITY AND COVERAGE": [
+  {
+   "severity": "major",
+   "check_ids": [
+    "PHOTO-08/vehicle-card-r002/H031",
+    "PHOTO-08/vehicle-card-r003/H029",
+    "PHOTO-08/vehicle-card-r004/H028",
+    "PHOTO-08/vehicle-card-r005/H029",
+    "PHOTO-08/vehicle-card-r006/H029",
+    "PHOTO-08/vehicle-card-r007/H028",
+    "coverage B14"
+   ],
+   "problem": "The six card roundel-identity modifies weaken a planned-trap guard. The original check named exactly the four allowed files: meridian_roundel_transparent.svg, meridian_roundel_reversed.svg, meridian_roundel_transparent.png and meridian_roundel_reversed.png. The new text says \"meridian_roundel_transparent.svg, meridian_roundel_reversed.svg or a matching PNG\". The trap asset meridian_roundel.png (defect_engineered: solid disc, closing hairlines, tiny size; the brief calls it 'an older reference, not the production file') is itself a PNG that matches, and it still sits in these checks' reference_assets. So an annotator can pass a card that uses it. The campaign version (inventory-campaign/H003) still lists all four files, so the cards are now weaker than the campaign. The B14 rule text in the coverage file has the same 'or matching PNG' wording.",
+   "fix": "Modify each of the six to name the four files exactly, e.g. for r002: \"If a compass roundel appears on “Vehicle sales card - M3082” (vehicle-card-r002.png), it is meridian_roundel_transparent.svg, meridian_roundel_reversed.svg, meridian_roundel_transparent.png or meridian_roundel_reversed.png, placed unchanged.\" (r003 H029, r004 H028, r005 H029, r006 H029, r007 H028 the same way). In the coverage file, rewrite the B14 rule text to list the four files and keep 'meridian_roundel.png is not the production file'."
+  },
+  {
+   "severity": "major",
+   "check_ids": [
+    "coverage B11",
+    "PHOTO-08/vehicle-card-r002/H034",
+    "PHOTO-08/vehicle-card-r003/H033",
+    "PHOTO-08/vehicle-card-r004/H032",
+    "PHOTO-08/vehicle-card-r005/H033",
+    "PHOTO-08/vehicle-card-r006/H033",
+    "PHOTO-08/vehicle-card-r007/H032",
+    "PHOTO-08/inventory-campaign/H080"
+   ],
+   "problem": "Rule B11 (palette_rules.opacity: every palette colour solid at 100%, with no tint, transparency, gradient, shadow or blend mode) cites only the panel checks. The modified H034/H033/H032/H080 text covers only 'Every panel and band', and lists 'tint, transparency or gradient' with no shadow or blend mode. Nothing on any of the 7 outputs tests a drop shadow, glow, transparency or blend on the type (price, heading, body), the Compass Teal price rule or the keylines. So the table claims coverage that the cited checks do not give.",
+   "fix": "Add one check per output (7 checks), e.g. key r002-type-solid: \"No type, rule or keyline on “Vehicle sales card - M3082” (vehicle-card-r002.png) has a drop shadow, glow, transparency, gradient or blend effect.\" Give camp-type-solid the same wording for “Forecourt inventory campaign” (inventory-campaign.png). Evidence: palette_rules.opacity. Cite each new check in its B11 cell next to the panel check."
+  },
+  {
+   "severity": "major",
+   "check_ids": [
+    "coverage B08",
+    "new:r002-heading-colour",
+    "new:r003-heading-colour",
+    "new:r004-heading-colour",
+    "new:r005-heading-colour",
+    "new:r006-heading-colour",
+    "new:r007-heading-colour",
+    "new:camp-name-colour",
+    "new:camp-caption-colour"
+   ],
+   "problem": "B08 reads 'Headings, labels and the dealership name are Meridian Navy on Showroom White; on Meridian Navy, type is Showroom White'. On each card the only check cited is rN-heading-colour, which tests only the year, make and model line. Two things are untested on all six cards: (1) labels (such as stock or mileage labels) and any typeset Meridian Motors name or label being Meridian Navy, which palette[Meridian Navy].usage requires; (2) any other type on a Meridian Navy band or seal (cert tier, stock number, label) being Showroom White, with only small seal lettering allowed in Steel Grey. On the campaign, labels and other reversed type are also untested. The source of the original H036 named labels, but the split dropped them.",
+   "fix": "Add per card (6 checks): \"Every label and any typeset Meridian Motors name on Showroom White on “Vehicle sales card - M3082” (vehicle-card-r002.png) is Meridian Navy #1F2A3A.\" Add per output (7 checks): \"All type on any Meridian Navy band, panel or seal on “Vehicle sales card - M3082” (vehicle-card-r002.png) is Showroom White #F6F7F8, except small seal lettering in Steel Grey #9AA1A8.\" For the campaign, add the label check as \"Every label on “Forecourt inventory campaign” (inventory-campaign.png) set on Showroom White is Meridian Navy #1F2A3A.\" Split B08 into B08a (labels and name) and B08b (reversed type) and cite the new checks."
+  },
+  {
+   "severity": "major",
+   "check_ids": [
+    "coverage B10",
+    "PHOTO-08/vehicle-card-r002/H037",
+    "PHOTO-08/inventory-campaign/H083"
+   ],
+   "problem": "The rule list leaves out a palette rule. palette_rules.distribution ends: 'together no more than 5% of the designed, non-photographic area' for Compass Teal and Steel Grey. B10 drops this clause, and no check on any output tests the share. The 'never as grounds' wording of H037/H036/H035/H083 does not stop wide teal rules or many grey boxes from taking a large share.",
+   "fix": "Add rule B17 'Compass Teal and Steel Grey together are no more than 5% of the designed, non-photographic area' (source palette_rules.distribution). Add one check per output (7 checks), e.g. \"Compass Teal #3C6E71 and Steel Grey #9AA1A8 together fill only a small share, about 5% or less, of the non-photographic area of “Vehicle sales card - M3082” (vehicle-card-r002.png).\""
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "PHOTO-08/vehicle-card-r002/H037",
+    "PHOTO-08/vehicle-card-r003/H036",
+    "PHOTO-08/vehicle-card-r004/H035",
+    "PHOTO-08/vehicle-card-r005/H036",
+    "PHOTO-08/vehicle-card-r006/H036",
+    "PHOTO-08/vehicle-card-r007/H035",
+    "PHOTO-08/inventory-campaign/H083"
+   ],
+   "problem": "palette[Compass Teal].usage says 'Never a ground or a type colour'. The 'one small muted line' allowance belongs to Steel Grey only (palette[Steel Grey].usage). The current wording ('Compass Teal and Steel Grey ... appear only as rules, keylines, seal detail or one small muted line') lets a line of text set in Compass Teal pass. No check forbids teal type.",
+   "fix": "Add one check per output (7 checks): \"No text on “Vehicle sales card - M3082” (vehicle-card-r002.png) is set in Compass Teal #3C6E71.\" Evidence: palette Compass Teal usage. Cite in B10, or in a new rule 'Compass Teal is never a type colour'."
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "coverage B13",
+    "PHOTO-08/vehicle-card-r004/H016",
+    "PHOTO-08/vehicle-card-r007/H016"
+   ],
+   "problem": "B13 opens with 'Photographs keep their own corrected colour and are never recoloured toward the palette'. No check on any output tests this. The cited checks test cast removal and paint truth for each car. The no-scrim checks catch overlays but not a navy or teal colour grade on the photo. On r004 and r007 the single cited check is about the bay cast only.",
+   "fix": "Add one check per output (7 checks): \"The photograph on “Vehicle sales card - M2417” (vehicle-card-r004.png) is not tinted or colour-graded toward the brand navy, teal or grey.\" For the campaign, say \"No photograph on “Forecourt inventory campaign” (inventory-campaign.png) ...\". Cite in B13."
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "new:camp-disc-smaller",
+    "PHOTO-08/inventory-campaign/H089",
+    "PHOTO-08/inventory-campaign/H097"
+   ],
+   "problem": "On the campaign, the exact disclosure size (H097) was retired in favour of camp-disc-smaller. That check compares the disclosure with the captions, while the type scale puts fine print (20 px) below body (26 px). So if mileage or listing detail appears, disclosure-versus-body is never tested. The cards test it (rN-disc-smaller). Also, the caption size (H089, 44 px) is covered only by two conditional checks. If no body text and no disclosure appear, caption size has no relative check.",
+   "fix": "Add: \"If both appear on “Forecourt inventory campaign” (inventory-campaign.png), the fine-print disclosure is smaller than the mileage and listing detail text.\" Cite it in the T04 campaign cell and add it to H097's covered_by."
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "coverage T03"
+   ],
+   "problem": "The body role note in type_system.scale[03] says 'Plain information, stated once'. This is a checkable rule, but it is missing from the rule list, and no output checks that listing values are not repeated.",
+   "fix": "Add rule T10 'Plain information, stated once' and one check per card, e.g. \"Apart from the stock number in the enquiry line, no listing value on “Vehicle sales card - M3082” (vehicle-card-r002.png) is stated twice.\" Add the matching conditional check for the campaign, or mark the campaign cell na with a reason if you consider captions-only panels exempt."
+  }
+ ],
+ "repair": {
+  "fixed": [
+   "Roundel file identity on all 6 cards (r002 H031, r003 H029, r004 H028, r005 H029, r006 H029, r007 H028): the checks now name exactly the four production files (transparent and reversed, SVG and PNG). The 'or a matching PNG' loophole that let the meridian_roundel.png trap pass is gone. 'Placed unchanged' moved to a new check on each card ('not stretched, squashed or redrawn'). Campaign H003 also split: file identity kept with the four files named, and a new camp-roundel-unchanged check takes the proportions fact. Coverage B14 now lists the four files, keeps 'meridian_roundel.png is not the production file', and cites both checks per output.",
+   "B11 opacity: the panel checks (card H034/H033/H032 family and campaign H080) are now 'a flat, fully opaque fill, with no tint, transparency, gradient, shadow or blend effect'. The palette clause is dropped because the palette check (H012/H031/H079) already covers it. Added a type-solid check per output (7): 'No type, rule or keyline ... has a drop shadow, transparency, gradient or blend effect.' Both checks are cited in B11.",
+   "B08 split into B08a and B08b. B08a covers headings, labels and the name on Showroom White: added one label-colour check per card (field labels and any standalone Meridian Motors name are Meridian Navy) and one on the campaign. B08b covers reversed type: added one check per output (7) saying type on a Meridian Navy band, panel or seal is Showroom White, and only small seal lettering may be Steel Grey.",
+   "Added rule B17 (Compass Teal and Steel Grey together are no more than 5% of the non-photographic area), with one accent-share check per output (7).",
+   "Split the compound Teal/Grey check on all 7 outputs (card H037/H036/H035, campaign H083). The Compass Teal check now says hairline rules or seal compass needles only, never a ground or a text colour; this also closes the teal-type gap. Added a separate Steel Grey check per output (7). Coverage B10 is now Teal only; new rule B10b covers Steel Grey.",
+   "B13: added a photo-not-graded check per output (7): the photo is not tinted or colour-graded toward the brand navy, teal or grey. Cited in B13 alongside the trap checks.",
+   "Campaign: added camp-disc-vs-body ('If both appear, the fine-print disclosure is smaller than the mileage and listing detail text'). It is cited in T04 and in H097's covered_by. H089's covered_by now also lists the price-larger relation.",
+   "Added rule T10 'Body: plain information, stated once', with a stated-once check per card (the stock number in the enquiry line is exempt) and one on the campaign.",
+   "Dollar sign split on all 7 outputs. The size check now reads 'clearly smaller than the figures, roughly three fifths of their height'. A new dollar-top check covers the top alignment. Both are cited in T05.",
+   "Price rule split on all 7 outputs. The existing ids keep 'a thin rule sits directly under the price, full card or panel width'. A new rule-teal check covers the colour. Both are cited in T06.",
+   "Showroom checks (card H022/H020/H018/H019/H019/H018, campaign H069) reworded to 'even, neutral, well-lit showroom light, not a dark or dramatic studio look', so annotators do not read them as the palette colour Showroom White.",
+   "r007 H016 and campaign H063 split. The paint check now reads 'reads true navy, without the dim cool-green cast'. New evenly-lit checks (r007-evenly-lit, camp-fjord-evenly-lit) cite the Fjord source photos and are added to B13.",
+   "Certification-line k_id set to K1_Q1 on r002 H014, r003 H011, r005 H010, r006 H010 and r007 H010, with text unchanged. r004 H010 stays K1_Q5.",
+   "65-character checks (card H028/H026/H025 family, campaign H075) now name the Body role: 'No line of the mileage and listing detail ... is longer than 65 characters, counting spaces'. The campaign version is conditional.",
+   "Campaign H005 rewritten from the invented 'name sits above every caption' to the brief's actual ask: the name is fully legible, with no letters cut off, covered or set over a photograph.",
+   "Campaign H004 is now Source Serif 4 Bold, the single family and weight check for the typeset name. H078 is retired with covered_by H004, and T08's campaign cell now cites H004 only.",
+   "Shortened the new label and reversed-type checks to 30 words or fewer. Validator: 0 errors, 0 warnings. Human checks: 409 before the patch, 450 after. 41 rules, 287 cells.",
+   "All changes were made through /Users/dhiren/Documents/ChatGPT/Adobe_Gpt/reviews/pilot13-ab-fixes-2026-10-21/work/PHOTO-08/build.py (the prior version is backed up as build_v1_backup.py). That script regenerates /Users/dhiren/Documents/ChatGPT/Adobe_Gpt/reviews/pilot13-ab-fixes-2026-10-21/patches/PHOTO-08.json and coverage/PHOTO-08.json. The post-patch view is saved at work/PHOTO-08/patched.txt."
+  ],
+  "rejected": [
+   {
+    "finding": "Fidelity #5 asks for a separate check per output: 'No text ... is set in Compass Teal' (7 new checks).",
+    "why": "Not rejected in substance, only in form. Following the language reviewer's split, the modified Compass Teal check on every output now reads 'appears only as hairline rules or seal compass needles, never as a ground or a text colour'. That matches palette[Compass Teal].usage, 'Never a ground or a type colour'. A second no-teal-text check would duplicate it on the same output."
+   },
+   {
+    "finding": "Language #9 suggests the campaign H003 text 'meridian_roundel_transparent.svg or meridian_roundel_reversed.svg (or its matching PNG)'.",
+    "why": "That wording reintroduces the 'matching PNG' loophole the fidelity reviewer flagged, because meridian_roundel.png is itself a PNG; its asset_plan defect_engineered entry describes a solid opaque disc. The split was applied, but H003 keeps all four production filenames named exactly."
+   },
+   {
+    "finding": "Fidelity #3 suggests the card label check text 'Every label and any typeset Meridian Motors name on Showroom White'.",
+    "why": "Adopted with a narrower scope: 'Any field label, such as stock or mileage, and any standalone Meridian Motors name'. The required enquiry line must name 'Meridian Motors' inside a sentence, and a check covering any typeset name would wrongly require that sentence to be Meridian Navy."
+   }
+  ],
+  "unresolved": [
+   "The accent-share checks ('about 5% or less of the non-photographic area') are an estimate by eye on a PNG. They are kept because palette_rules.distribution states the 5% limit as a checkable rule, but annotator agreement on borderline layouts may be low.",
+   "Card H072 (r007) and the other label-colour checks pass automatically when a card has no field labels or standalone name. That is intended, because labels are optional, but annotators should be told that a missing label is a pass."
+  ]
+ }
+}

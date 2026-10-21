@@ -1,0 +1,266 @@
+{
+ "LANGUAGE, ATOMICITY AND OBSERVABILITY": [
+  {
+   "severity": "major",
+   "check_ids": [
+    "producer-card-r002/H008",
+    "producer-card-r003/H024",
+    "producer-card-r005/H024",
+    "producer-card-r006/H024",
+    "producer-card-r007..r014 Heritage Green check (H023/H024)",
+    "producer-card-r015/H022",
+    "producer-card-r002/H052",
+    "producer-card-r003..r015 Mist Grey check (H052/H053)"
+   ],
+   "problem": "The patch dropped the original exclusion \"photographs do not count\" when it split the Heritage Green / Mist Grey check. The rewrites now say Heritage Green \"appears ... only as the two full-width rules\" and Mist Grey, if it appears, is \"only a thin divider or keyline, never ... a ground\". Every headshot sits on a mid-grey wall, and some show suits, ties or plants. An annotator who finds a #C7CBC8-like grey or a green inside the photo has to answer No even though the layout is correct. That is a false fail.",
+   "fix": "Put the exclusion back in each split check. Heritage Green: \"Outside the headshot, Heritage Green #3C6B54 appears on “District insurance counter card - Raymond Hollis” (producer-card-r002.pdf) only as the two full-width rules.\" Mist Grey: \"Outside the headshot, any Mist Grey #C7CBC8 on “District insurance counter card - Raymond Hollis” (producer-card-r002.pdf) is only a thin divider or keyline, never type or a panel.\" On r015 use \"Outside any photograph\". Apply to all 13 cards."
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "producer-card-r002/H002",
+    "producer-card-r003/H002",
+    "all 13 cards H002 (office)",
+    "producer-card-r002/H005",
+    "producer-card-r003/H005",
+    "producer-card-r005/H012",
+    "r006..r014 H012 (headshot = Photo File)"
+   ],
+   "problem": "The reason clause is ungrammatical and hard to parse: \"..., the Office producer_roster_northern.csv row 2 gives Raymond Hollis.\" and \"..., the Photo File producer_roster_northern.csv row 2 gives Raymond Hollis.\" Also, \"The office\" could mean the room or the office line.",
+   "fix": "\"The office line on “District insurance counter card - Raymond Hollis” (producer-card-r002.pdf) reads “Concord Branch, 212 North Main St, Concord NH 03301”, as in the Office field of producer_roster_northern.csv row 2.\" Headshot: \"The headshot on “District insurance counter card - Raymond Hollis” (producer-card-r002.pdf) is producer_headshot_01.jpg, the Photo File in producer_roster_northern.csv row 2.\" Use the same template on every card."
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "producer-card-r002/H021",
+    "producer-card-r003/H021",
+    "r005..r014 H021",
+    "producer-card-r015/H019"
+   ],
+   "problem": "\"No line of the license line or office ... runs longer than 65 characters\" puts \"line\" in two senses next to each other, which is confusing.",
+   "fix": "\"Each line of the license text and the office text on “District insurance counter card - Raymond Hollis” (producer-card-r002.pdf) has 65 characters or fewer.\""
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "producer-card-r002/H023",
+    "producer-card-r003/H023",
+    "r005..r014 card-ground check (H023/H021)",
+    "producer-card-r015/H021"
+   ],
+   "problem": "Two facts in one check: the ground is #F4F2EC, and that colour is \"the only ground or panel colour\" (no Slate or Navy panels). The second clause carries weight, because no other check bans a Slate or Ink Navy panel, but the wording \"..., the only ground or panel colour\" reads like an aside.",
+   "fix": "Restate it as one rule: \"Document Paper #F4F2EC is the only colour used for the card ground and for any panel on “District insurance counter card - Raymond Hollis” (producer-card-r002.pdf).\""
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "producer-card-r002/H024",
+    "producer-card-r003/H025",
+    "r005..r014 opacity check (H025/H024)",
+    "producer-card-r015/H023"
+   ],
+   "problem": "\"Every palette colour ... is solid at full opacity\" does not say what to look at. The original named the elements (type, panels, rules, dividers), and a designer checks objects, not \"palette colours\".",
+   "fix": "\"All type, rules, dividers and the card ground on “District insurance counter card - Raymond Hollis” (producer-card-r002.pdf) are solid colour at full opacity, with no tint, transparency, gradient or shadow.\""
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "producer-card-r002/H050",
+    "producer-card-r003/H051",
+    "r005..r015 Ink Navy check (H050/H051)"
+   ],
+   "problem": "Two independent facts on two different type roles (Display name and Fine-print disclosure) in one check. A card with a navy name but Slate disclosure gets a single No that does not say which one failed.",
+   "fix": "Split it. Keep: \"The producer name on “District insurance counter card - Raymond Hollis” (producer-card-r002.pdf) is Ink Navy #1E2A3A.\" Add: \"The Disclosure Text on “District insurance counter card - Raymond Hollis” (producer-card-r002.pdf) is Ink Navy #1E2A3A.\" The license-line + office Slate check (H051) can stay as one, since the palette treats those two as one Body role."
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "producer-card-r002/H047",
+    "producer-card-r003/H048",
+    "r005..r015 name-spacing check (H048/H047)"
+   ],
+   "problem": "\"its letters sit at normal or slightly tight spacing\" uses \"slightly tight\" without a standard. The -5 unit tracking it stands for cannot be seen, so the clause adds vagueness and no fact.",
+   "fix": "\"The producer name on “District insurance counter card - Raymond Hollis” (producer-card-r002.pdf) is not letterspaced: the gaps between letters are no wider than normal Lexend SemiBold spacing.\""
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "producer-card-r002/H019",
+    "producer-card-r002/H048",
+    "all 13 cards: name-rule check (H018/H019/H016) and disclosure-rule check (H048/H049)"
+   ],
+   "problem": "\"1 pt\" is an exact stroke weight. The patch retired exact type sizes on these cards because a person cannot judge them by eye, and a 0.75 pt vs 1 pt vs 1.5 pt hairline cannot be told apart by eye either. So the two checks are judged inconsistently.",
+   "fix": "Use the supplied file as the standard instead of a number: \"On “District insurance counter card - Raymond Hollis” (producer-card-r002.pdf) the producer name sits directly on a Heritage Green #3C6B54 hairline running the full card width, as thin as the hairlines on countercard_2026_print.pdf.\" Do the same for the rule above the Disclosure Text."
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "producer-card-r002/H049",
+    "producer-card-r003/H050",
+    "r005..r015 premium-style check (H050/H049)"
+   ],
+   "problem": "\"not picked out in ... its own colour\" is vague. The palette states the allowed premium colours exactly (Ink Navy, or optionally Slate).",
+   "fix": "\"If a premium appears on “District insurance counter card - Raymond Hollis” (producer-card-r002.pdf), it is neither italic nor bold, and it is Ink Navy #1E2A3A or Slate #4A5560.\" This is one rule from the brand: the premium is not highlighted."
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "producer-card-r015/H008",
+    "producer-card-r015/H013"
+   ],
+   "problem": "Near-duplicates on the same output. H008 says \"no photograph presented as Priya Nandakumar\" and H013 says \"no generated, stock or illustrated face presented as Priya Nandakumar\". A generated or stock photo fails both, so the trap is double-counted. H046 (any photograph is labelled stock/illustration) also overlaps.",
+   "fix": "Merge into H008 and keep the trap fact: \"“District insurance counter card - Priya Nandakumar” (producer-card-r015.pdf) shows no photograph, generated face or illustration presented as Priya Nandakumar; nandakumar_headshot.jpg was never supplied.\" Retire H013 with covered_by H008. Keep H012 (no reused headshot) and H046."
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "producer-card-r002/H001",
+    "producer-card-r003/H001",
+    "all 13 cards H001"
+   ],
+   "problem": "\"reproduces producer_roster_northern.csv row 2 word for word\" does not say which field. The row has name, license, office, photo and disclosure fields.",
+   "fix": "\"The Disclosure Text on “District insurance counter card - Raymond Hollis” (producer-card-r002.pdf) matches the Disclosure Text field of producer_roster_northern.csv row 2 word for word.\""
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "producer-card-r003/H015",
+    "producer-card-r005/H015",
+    "producer-card-r008/H015",
+    "producer-card-r011/H015",
+    "producer-card-r013/H015"
+   ],
+   "problem": "\"bitten away against the mid-grey wall\" is retouching jargon, and \"against\" is ambiguous.",
+   "fix": "\"On “District insurance counter card - Susan Grady” (producer-card-r003.pdf), the charcoal jacket's shoulder and collar from producer_headshot_02.jpg are complete, with no part cut away where they meet the mid-grey wall.\" Same pattern with the jacket colour and file on r005/r008/r011/r013."
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "producer-card-r006/H015",
+    "producer-card-r014/H015"
+   ],
+   "problem": "\"detail that the small ... producer_headshot_05.jpg does not hold\" reads awkwardly (\"hold\").",
+   "fix": "\"The headshot on “District insurance counter card - Karen Marsh” (producer-card-r006.pdf) shows no hair, skin or fabric detail that is not in the small 720 x 960 px producer_headshot_05.jpg.\" Same for r014 with producer_headshot_13.jpg (675 x 900 px)."
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "producer-card-r002/H014",
+    "producer-card-r003/H009",
+    "r005..r015 sales-language check (H007/H009)"
+   ],
+   "problem": "\"promise of a return or approval\" is unclear: approval of what? The rest of the list is one rule (no sales-pitch devices) and can stay.",
+   "fix": "\"“District insurance counter card - Raymond Hollis” (producer-card-r002.pdf) has no superlative, urgency, exclamation mark, starburst callout, promise of returns or guaranteed approval, or competitor comparison.\""
+  }
+ ],
+ "FIDELITY AND COVERAGE": [
+  {
+   "severity": "major",
+   "check_ids": [
+    "LAYOUT-15/producer-card-r015/H008",
+    "new:r015-stock-honest",
+    "LAYOUT-15/producer-card-r015/H013"
+   ],
+   "problem": "Splitting r015/H008 weakened the planned missing-headshot trap. Planned trap: producer_roster_northern.csv names nandakumar_headshot.jpg, which was never sent. The old H008 also failed \"no stock, family, client or policyholder image stands in for her\". After the split, a labelled stock photo of a family or a person in the portrait well passes every check: H008 (it is not presented as Priya), H012 (it is not one of the 14 headshots), H013 (it is not a face presented as Priya) and the new r015-stock-honest (it is labelled stock). The new r015-stock-honest even reads as allowing a stock image on this card. Commission bullet D02 says \"leave the portrait area empty ... do not use stock or generated identity imagery\", and no check tests that the portrait area is empty. The D02 cell for r015 therefore does not cover the bullet.",
+   "fix": "Add r015-portrait-empty (K1_Q5): \"The portrait area on “District insurance counter card - Priya Nandakumar” (producer-card-r015.pdf) is left empty, with no photograph, illustration or stand-in image.\" Cite it in D02, F04 and F05 for r015. Either drop new:r015-stock-honest (it is covered by the new check plus H013) or reword it: \"Any photograph outside the portrait area on “…” (producer-card-r015.pdf) is honestly labelled stock or illustration, never a family, client or policyholder presented as real.\""
+  },
+  {
+   "severity": "major",
+   "check_ids": [
+    "LAYOUT-15/producer-card-r005/H036",
+    "LAYOUT-15/producer-card-r010/H035",
+    "LAYOUT-15/producer-card-r005/H011",
+    "LAYOUT-15/producer-card-r010/H011"
+   ],
+   "problem": "Retiring the 6.5 pt disclosure-size checks removes the only guard against shrinking the disclosure to fit on the two cards with the long-disclosure trap. Planned trap (asset plan): Paul Devoe (NH+VT) and Linh Tran (NH+ME) carry long paragraphs that overflow the old fixed frame. The brand says the disclosure \"is set as supplied and never edited to fit\" at Source Serif 4 Regular 6.5 pt. The covered_by check H011 only asks that the disclosure be the smallest text, so a disclosure squeezed to 4 or 5 pt passes H001, H003 and H011. The old compound H007 (\"Disclosure Text is Source Serif 4 Regular 6.5 pt\") was also cut down to family only. Here a relative check clearly matters, so the guide's \"keep relative checks if they matter\" applies.",
+   "fix": "Add one relative check on each long-disclosure card, using a single named card as the reference: r005-disc-size (K2_Q3): \"The Disclosure Text on “District insurance counter card - Paul Devoe” (producer-card-r005.pdf) is set no smaller than the Disclosure Text on “District insurance counter card - Raymond Hollis” (producer-card-r002.pdf).\" Add the same for r010 (Linh Tran). Add these ids to the covered_by of r005/H036 and r010/H035 and to the T05 cells for r005 and r010."
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "LAYOUT-15/producer-card-r003/H018",
+    "LAYOUT-15/producer-card-r005/new:r005-rule-disclosure"
+   ],
+   "problem": "Holes in the rule list. (1) The third sentence of the signature move, \"Keep both rules in the same position across the producer run\" (signature_type_move), is missing. No check tests it on any card, even though the long-disclosure cards (r005, r010) are exactly where a rule is likely to drift. (2) The brand_assets_status rule (\"Use the Aldervale Mutual name as text ... creating a new logo is not\" included) is missing. No card has a check against a newly drawn logo or mark. The guide lists logo use as a brand rule kind.",
+   "fix": "Add rule T10 \"Both Heritage Green rules keep the same position across the run\". Mark r002 as the fixed reference and add one check for each of r003 and r005 to r015: \"The two Heritage Green rules on “…” (producer-card-r0NN.pdf) sit at the same heights on the card as on “District insurance counter card - Raymond Hollis” (producer-card-r002.pdf).\" For r002, give an na reason or a self-check stating it is the reference. Add rule B12 and one K2_Q3 check per card: \"“…” (producer-card-r0NN.pdf) carries no newly drawn Aldervale Mutual logo, monogram or symbol.\""
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "LAYOUT-15/producer-card-r002/H020",
+    "LAYOUT-15/producer-card-r002/H039",
+    "LAYOUT-15/producer-card-r002/H043"
+   ],
+   "problem": "Coverage rule T06 (\"Numerals switch to IBM Plex Sans Regular at the surrounding text size\") is only half covered. The figure-size checks (for example r002 H039 and H043, and the same checks on every card) were retired with covered_by H020, but H020 tests the family only. The visible relationship (figures neither larger nor smaller than the words around them) is now untested on all 13 cards.",
+   "fix": "Modify the every-figure check on each card (r002 H020, r007 H027, r010 H019, r015 H018, and so on) to: \"Every figure on “…” (producer-card-r0NN.pdf), including “04821” in the license line, is set in IBM Plex Sans Regular at the same size as the words around it.\""
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "LAYOUT-15/producer-card-combined/H001"
+   ],
+   "problem": "Retiring combined/H001 is acceptable, but its covered_by cites only combined A003 to A016. H001 was about the thirteen single files, which the per-card file_exists checks (producer-card-r002/A001 ... r015/A001) cover directly. H001 was also the task's only K1_Q4 check, so K1_Q4 now vanishes from the task. The excluded producer is guarded only on the combined file (H002, comb-no-headshot03); nothing stops a 14th single card for Maureen Alcott. This is unavoidable with atomic checks, but the retirement's why should not claim full coverage.",
+   "fix": "Add the thirteen producer-card-r0NN/A001 ids to H001's covered_by. Reword the why: \"delivery of several files; per-card file_exists and combined pages/page-match cover it; Maureen Alcott exclusion guarded on the combined run by H002 and comb-no-headshot03\". Confirm with the owner that losing the task's only K1_Q4 is acceptable."
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "LAYOUT-15/producer-card-r002/A001"
+   ],
+   "problem": "Coverage table errors. (a) D03 (\"The combined PDF contains the thirteen assigned cards in roster order\") cites each single card's A001 file_exists, but a single card's existence does not test the combined PDF's contents or order. Those 13 cells should be na. (b) B05 includes \"Green and Mist Grey together stay under 5% of the designed area\", but the cited checks (for example r002 H008 and r007 new:r007-green) do not test area share. (c) The combined file's na covers brief rules F01 to F07 and F09 as well as brand/type rules. The guide allows that na only for brand/type rules.",
+   "fix": "(a) Set D03 on all 13 single cards to na: \"This bullet is about the combined PDF's page set and order, not a single card.\" (b) Either remove the 5% clause from B05 and record it as its own rule with a check, or say in the rule that it is not separately tested. (c) For F01 to F07 and F09 on producer-card-combined, cite A004 to A016 as checks instead of na, or add a short reason why page-match counts as coverage."
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "LAYOUT-15/producer-card-combined/A003",
+    "LAYOUT-15/producer-card-r006/H015",
+    "LAYOUT-15/producer-card-r014/H015"
+   ],
+   "problem": "Brief and commission constraints with no check on any output. (1) Typography: \"Do not scale pages when combining them.\" The combined file has no trim checks (only r002 to r015 have A004/A005), and its na reasons assume the pages are \"unscaled\" without any check proving it. (2) Export setting: \"photographs at least 300 ppi at placed size\". This is the observable result of the undersized-frame traps on r006 (producer_headshot_05.jpg) and r014 (producer_headshot_13.jpg). H015 on those cards only tests for invented detail, not enlargement below 300 ppi.",
+   "fix": "Add combined-trim (K1_Q2): \"Every page of “District insurance counter card - combined production run” (producer-card-combined.pdf) has a 148 x 210 mm trim, not scaled.\" Add r006-ppi and r014-ppi (K2_Q2): \"The headshot on “District insurance counter card - Karen Marsh” (producer-card-r006.pdf) is placed at 300 ppi or more at its printed size.\" Do the same for Dana Whitfield (producer-card-r014.pdf). Add the matching rules to the coverage table."
+  }
+ ],
+ "repair": {
+  "fixed": [
+   "r015 missing-headshot trap: added new:r015-portrait-empty (K1_Q5) 'The portrait area ... is left empty, with no photograph, illustration or stand-in image.' and cited it in D02, F04 and F05 for r015. Reworded r015-stock-honest to 'Any photograph outside the portrait area ...'.",
+   "r015 H008/H013 near-duplicates: H008 now reads 'shows no photograph, generated face or illustration presented as Priya Nandakumar; nandakumar_headshot.jpg was never supplied.' H013 is retired with covered_by H008 and portrait-empty. H012 (no reused headshot) and the stock-honest check are kept.",
+   "Long-disclosure shrink trap: added new:r005-disc-size and new:r010-disc-size (K2_Q3), each 'set no smaller than the Disclosure Text on Raymond Hollis (producer-card-r002.pdf)'. They are added to the covered_by of r005/H036 and r010/H035 and to the T05 cells.",
+   "Signature move 'same position across the run': added rule T10 and a rule-position check on each of r003 and r005 to r015, with r002 named as the fixed reference. r002's cell is na and says it is the reference.",
+   "Logo rule: added B12 and a no-logo check (K2_Q3) on all 13 cards.",
+   "T06 numerals: every figure check on every card now ends 'is IBM Plex Sans Regular, the same size as the words around it.'",
+   "combined/H001 retirement: covered_by now also lists all 13 per-card A001 ids plus H002 and comb-no-headshot03, and the why is reworded as the reviewer suggested.",
+   "B05: took out the 5% clause. It is now its own rule B13, which says plainly that it is not tested separately and is bounded by the green check and the Mist Grey check.",
+   "Combined-file brief rules F01 to F07 and F09 now cite page-match checks A004 to A016 instead of na. Added a check that the combined pages are unscaled at 148 x 210 mm (new:comb-trim, K1_Q2) and a matching rule T11. Removed the unproven 'unscaled' wording from the na text for the combined file.",
+   "300 ppi export setting: added a ppi check (K2_Q2) to all 12 cards that have a headshot, not only r006 and r014, plus rule E01. On r015 the cell is na because no portrait was supplied.",
+   "Put back the 'photographs do not count' exclusion that was lost in the split. The Heritage Green check now starts 'Outside the headshot', and so does the Mist Grey check. On r015 both start 'Outside any photograph'. Applied on all 13 cards.",
+   "Office and headshot checks rewritten on all cards: 'The office line on ... reads “X”, the Office field in producer_roster_northern.csv row N.' and 'The headshot on ... is <file>, the Photo File in producer_roster_northern.csv row N.'",
+   "Line-length wording on all cards: 'Each line of the license text and the office text on ... has 65 characters or fewer.'",
+   "Ground check on all cards: 'Document Paper #F4F2EC is the only colour used for the card ground and for any panel on ...'",
+   "Opacity check on all cards now names the elements: 'All type, panels, rules, dividers and the card ground on ... are solid at full opacity, with no tint, transparency, gradient or shadow.'",
+   "Split the Ink Navy check on all 13 cards: 'The producer name ... is Ink Navy #1E2A3A' plus a new 'The Disclosure Text ... is Ink Navy #1E2A3A'.",
+   "Name spacing on all cards: 'is not letterspaced: the gaps between letters are no wider than normal Lexend SemiBold spacing.'",
+   "Premium style on all cards: 'If a premium appears ..., it is neither italic nor bold, and it is Ink Navy #1E2A3A or Slate #4A5560.'",
+   "Disclosure word-for-word check on all cards now names the field: 'matches the Disclosure Text field of producer_roster_northern.csv row N word for word, with nothing added, dropped or reworded.'",
+   "Cutout-trap checks on r003, r005, r008, r011 and r013 reworded: 'the <colour> jacket's shoulder and collar from <file> are complete, with no part cut away where they meet the mid-grey wall.' Enlargement-trap checks on r006 and r014 reworded: 'shows no hair, skin or fabric detail that is not in the small 720 x 960 px / 675 x 900 px <file>.' The pixel sizes were checked against the source files with sips.",
+   "Sales-language check on all cards now uses the compliance_note.txt wording 'implied guarantee of a return or of approval'.",
+   "Shortened the 41 checks that the validator warned were over 30 words. The validator now reports 0 errors and 0 warnings."
+  ],
+  "rejected": [
+   {
+    "finding": "FIDELITY minor (a): set D03 to na on all 13 single cards ('This bullet is about the combined PDF's page set and order, not a single card').",
+    "why": "I tried this and validate_patch.py refused it with 13 errors, for example 'ERROR COVERAGE: deliverable requirement for producer-card-r002 has no checks: \"The combined PDF contains the thirteen assigned cards in roster order.\"' The validator requires every commission bullet to have checks on each output. So each single card's A001 file_exists stays, as that card's part of the bullet. The combined cell keeps A003 plus the A004 to A016 page-match checks."
+   },
+   {
+    "finding": "LANGUAGE minor: replace '1 pt' in the two rule checks with 'as thin as the hairlines on countercard_2026_print.pdf'.",
+    "why": "The brief says the old press file 'is not the typeface, type-size, colour or rule-position standard for this run', so using it as the standard for the rules is risky. The stroke weight of a vector rule in a PDF can still be read in Acrobat or Illustrator. Exact type sizes were retired only because the export settings allow 'embedded fonts or outlined lettering', which hides font sizes but does not affect a rule's stroke. The '1 pt' brand value is kept."
+   }
+  ],
+  "unresolved": [
+   "Retiring combined/H001 removes the task's only K1_Q4 check, so K1_Q4 no longer appears in LAYOUT-15. The owner needs to confirm this is acceptable.",
+   "Atomic checks cannot block a 14th single card file for Maureen Alcott. Her exclusion is guarded only on the combined run (H002 and comb-no-headshot03).",
+   "Human checks went from 439 to 492. The new ones are the 300 ppi checks (12), the logo checks (13), the rule-position checks (12), the Ink Navy split (13), the two disclosure-size checks, portrait-empty and comb-trim, minus retired H013.",
+   "Files: /Users/dhiren/Documents/ChatGPT/Adobe_Gpt/reviews/pilot13-ab-fixes-2026-10-21/patches/LAYOUT-15.json and /Users/dhiren/Documents/ChatGPT/Adobe_Gpt/reviews/pilot13-ab-fixes-2026-10-21/coverage/LAYOUT-15.json. The generator is work/LAYOUT-15/build.py; the previous version is saved as build_v1.py, patch_v1.json and coverage_v1.json in the same folder."
+  ]
+ }
+}

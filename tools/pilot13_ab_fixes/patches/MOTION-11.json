@@ -1,0 +1,1885 @@
+{
+ "task_id": "MOTION-11",
+ "retire": [],
+ "modify": [
+  {
+   "check_id": "MOTION-11/thumbnail-we-broke-the-map/H032",
+   "check": "No letter of the title on “Channel thumbnail - WE BROKE THE MAP” (thumbnail-we-broke-the-map.png) is cut off at the frame edge.",
+   "why": "output named by its deliverable name; the 320 px display condition dropped because scaling cannot crop letters; readability at 320 px has its own check",
+   "evidence_reference": "Acceptance requirement: at 320 px display width, the title text has no clipped characters.",
+   "reference_assets": [
+    "staticfox_titles.txt"
+   ]
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-we-broke-the-map/H017",
+   "check": "The final word “MAP” on “Channel thumbnail - WE BROKE THE MAP” (thumbnail-we-broke-the-map.png) is set in Archivo Black Regular.",
+   "why": "compound split: payoff family kept here; its width and its last-row position moved to their own checks",
+   "evidence_reference": "Type scale step 02: the payoff word in Archivo Black Regular.",
+   "reference_assets": [
+    "fonts/Anton-Regular.ttf",
+    "fonts/ArchivoBlack-Regular.ttf"
+   ]
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-we-broke-the-map/H024",
+   "check": "Type, outlines, panels and shapes on “Channel thumbnail - WE BROKE THE MAP” (thumbnail-we-broke-the-map.png) are solid colour, with no transparency, blur, glow, soft shadow or gradient.",
+   "why": "compound split: solid-colour rule kept here; the scrim over the capture moved to its own check",
+   "evidence_reference": "Brand identity, palette_rules.opacity: every palette colour is used solid, at 100% opacity: no tint, partial transparency, blur, gradient or blend mode on type, outlines, panels or shapes. A hard, unblurred offset shadow is allowed."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-we-broke-the-map/H018",
+   "check": "Measured at full size, each Anton setup capital on “Channel thumbnail - WE BROKE THE MAP” (thumbnail-we-broke-the-map.png) stands roughly 145 to 180 px tall.",
+   "why": "exact 190 px font size not judgeable on a PNG; restated as a measurable cap-height range (guards the long/short title trap)",
+   "evidence_reference": "Type scale step 01: setup capitals in Anton Regular at 190 px, dropping to 96 px only on long copy. In the supplied Anton-Regular.ttf cap height is 1760/2048 em, so 190 px type gives capitals about 163 px tall (range 145 to 180 px); 96 px type gives about 82 px (range 70 to 95 px). Planned trap: short titles must not be underset to match the long ones.",
+   "reference_assets": [
+    "fonts/Anton-Regular.ttf",
+    "fonts/ArchivoBlack-Regular.ttf"
+   ]
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-we-broke-the-map/H019",
+   "check": "The capitals of the final word “MAP” on “Channel thumbnail - WE BROKE THE MAP” (thumbnail-we-broke-the-map.png) are shorter than the Anton setup capitals above it.",
+   "why": "exact 150 px size not judgeable on a PNG; restated as the visible step 01 to step 02 relationship",
+   "evidence_reference": "Type scale: step 01 setup capitals in Anton at 190 px, step 02 payoff in Archivo Black at 150 px; on long copy the whole stack drops to 96 px. Anton capitals are 0.86 em tall and Archivo Black capitals 0.69 em, so the payoff capitals are always visibly shorter than the setup capitals.",
+   "reference_assets": [
+    "fonts/Anton-Regular.ttf",
+    "fonts/ArchivoBlack-Regular.ttf"
+   ]
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-everyone-off-the-platform/H001",
+   "check": "No letter of the title on “Channel thumbnail - EVERYONE OFF THE PLATFORM” (thumbnail-everyone-off-the-platform.png) is cut off at the frame edge.",
+   "why": "output named by its deliverable name; the 320 px display condition dropped because scaling cannot crop letters; readability at 320 px has its own check",
+   "evidence_reference": "Acceptance requirement: at 320 px display width, the title text has no clipped characters.",
+   "reference_assets": [
+    "staticfox_titles.txt"
+   ]
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-everyone-off-the-platform/H017",
+   "check": "The final word “PLATFORM” on “Channel thumbnail - EVERYONE OFF THE PLATFORM” (thumbnail-everyone-off-the-platform.png) is set in Archivo Black Regular.",
+   "why": "compound split: payoff family kept here; its width and its last-row position moved to their own checks",
+   "evidence_reference": "Type scale step 02: the payoff word in Archivo Black Regular.",
+   "reference_assets": [
+    "fonts/Anton-Regular.ttf",
+    "fonts/ArchivoBlack-Regular.ttf"
+   ]
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-everyone-off-the-platform/H024",
+   "check": "Type, outlines, panels and shapes on “Channel thumbnail - EVERYONE OFF THE PLATFORM” (thumbnail-everyone-off-the-platform.png) are solid colour, with no transparency, blur, glow, soft shadow or gradient.",
+   "why": "compound split: solid-colour rule kept here; the scrim over the capture moved to its own check",
+   "evidence_reference": "Brand identity, palette_rules.opacity: every palette colour is used solid, at 100% opacity: no tint, partial transparency, blur, gradient or blend mode on type, outlines, panels or shapes. A hard, unblurred offset shadow is allowed."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-everyone-off-the-platform/H018",
+   "check": "Measured at full size, each Anton setup capital on “Channel thumbnail - EVERYONE OFF THE PLATFORM” (thumbnail-everyone-off-the-platform.png) stands roughly 145 to 180 px tall.",
+   "why": "exact 190 px font size not judgeable on a PNG; restated as a measurable cap-height range (guards the long/short title trap)",
+   "evidence_reference": "Type scale step 01: setup capitals in Anton Regular at 190 px, dropping to 96 px only on long copy. In the supplied Anton-Regular.ttf cap height is 1760/2048 em, so 190 px type gives capitals about 163 px tall (range 145 to 180 px); 96 px type gives about 82 px (range 70 to 95 px). Planned trap: short titles must not be underset to match the long ones.",
+   "reference_assets": [
+    "fonts/Anton-Regular.ttf",
+    "fonts/ArchivoBlack-Regular.ttf"
+   ]
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-everyone-off-the-platform/H019",
+   "check": "The capitals of the final word “PLATFORM” on “Channel thumbnail - EVERYONE OFF THE PLATFORM” (thumbnail-everyone-off-the-platform.png) are shorter than the Anton setup capitals above it.",
+   "why": "exact 150 px size not judgeable on a PNG; restated as the visible step 01 to step 02 relationship",
+   "evidence_reference": "Type scale: step 01 setup capitals in Anton at 190 px, step 02 payoff in Archivo Black at 150 px; on long copy the whole stack drops to 96 px. Anton capitals are 0.86 em tall and Archivo Black capitals 0.69 em, so the payoff capitals are always visibly shorter than the setup capitals.",
+   "reference_assets": [
+    "fonts/Anton-Regular.ttf",
+    "fonts/ArchivoBlack-Regular.ttf"
+   ]
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-kitchen-gone/H031",
+   "check": "No letter of the title on “Channel thumbnail - KITCHEN. GONE.” (thumbnail-kitchen-gone.png) is cut off at the frame edge.",
+   "why": "output named by its deliverable name; the 320 px display condition dropped because scaling cannot crop letters; readability at 320 px has its own check",
+   "evidence_reference": "Acceptance requirement: at 320 px display width, the title text has no clipped characters.",
+   "reference_assets": [
+    "staticfox_titles.txt"
+   ]
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-kitchen-gone/H016",
+   "check": "The final word “GONE.” on “Channel thumbnail - KITCHEN. GONE.” (thumbnail-kitchen-gone.png) is set in Archivo Black Regular.",
+   "why": "compound split: payoff family kept here; its width and its last-row position moved to their own checks",
+   "evidence_reference": "Type scale step 02: the payoff word in Archivo Black Regular.",
+   "reference_assets": [
+    "fonts/Anton-Regular.ttf",
+    "fonts/ArchivoBlack-Regular.ttf"
+   ]
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-kitchen-gone/H023",
+   "check": "Type, outlines, panels and shapes on “Channel thumbnail - KITCHEN. GONE.” (thumbnail-kitchen-gone.png) are solid colour, with no transparency, blur, glow, soft shadow or gradient.",
+   "why": "compound split: solid-colour rule kept here; the scrim over the capture moved to its own check",
+   "evidence_reference": "Brand identity, palette_rules.opacity: every palette colour is used solid, at 100% opacity: no tint, partial transparency, blur, gradient or blend mode on type, outlines, panels or shapes. A hard, unblurred offset shadow is allowed."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-kitchen-gone/H017",
+   "check": "Measured at full size, each Anton setup capital on “Channel thumbnail - KITCHEN. GONE.” (thumbnail-kitchen-gone.png) stands roughly 145 to 180 px tall.",
+   "why": "exact 190 px font size not judgeable on a PNG; restated as a measurable cap-height range (guards the long/short title trap)",
+   "evidence_reference": "Type scale step 01: setup capitals in Anton Regular at 190 px, dropping to 96 px only on long copy. In the supplied Anton-Regular.ttf cap height is 1760/2048 em, so 190 px type gives capitals about 163 px tall (range 145 to 180 px); 96 px type gives about 82 px (range 70 to 95 px). Planned trap: short titles must not be underset to match the long ones.",
+   "reference_assets": [
+    "fonts/Anton-Regular.ttf",
+    "fonts/ArchivoBlack-Regular.ttf"
+   ]
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-kitchen-gone/H018",
+   "check": "The capitals of the final word “GONE.” on “Channel thumbnail - KITCHEN. GONE.” (thumbnail-kitchen-gone.png) are shorter than the Anton setup capitals above it.",
+   "why": "exact 150 px size not judgeable on a PNG; restated as the visible step 01 to step 02 relationship",
+   "evidence_reference": "Type scale: step 01 setup capitals in Anton at 190 px, step 02 payoff in Archivo Black at 150 px; on long copy the whole stack drops to 96 px. Anton capitals are 0.86 em tall and Archivo Black capitals 0.69 em, so the payoff capitals are always visibly shorter than the setup capitals.",
+   "reference_assets": [
+    "fonts/Anton-Regular.ttf",
+    "fonts/ArchivoBlack-Regular.ttf"
+   ]
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-do-not-open-that-door/H032",
+   "check": "No letter of the title on “Channel thumbnail - DO NOT OPEN THAT DOOR” (thumbnail-do-not-open-that-door.png) is cut off at the frame edge.",
+   "why": "output named by its deliverable name; the 320 px display condition dropped because scaling cannot crop letters; readability at 320 px has its own check",
+   "evidence_reference": "Acceptance requirement: at 320 px display width, the title text has no clipped characters.",
+   "reference_assets": [
+    "staticfox_titles.txt"
+   ]
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-do-not-open-that-door/H017",
+   "check": "The final word “DOOR” on “Channel thumbnail - DO NOT OPEN THAT DOOR” (thumbnail-do-not-open-that-door.png) is set in Archivo Black Regular.",
+   "why": "compound split: payoff family kept here; its width and its last-row position moved to their own checks",
+   "evidence_reference": "Type scale step 02: the payoff word in Archivo Black Regular.",
+   "reference_assets": [
+    "fonts/Anton-Regular.ttf",
+    "fonts/ArchivoBlack-Regular.ttf"
+   ]
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-do-not-open-that-door/H024",
+   "check": "Type, outlines, panels and shapes on “Channel thumbnail - DO NOT OPEN THAT DOOR” (thumbnail-do-not-open-that-door.png) are solid colour, with no transparency, blur, glow, soft shadow or gradient.",
+   "why": "compound split: solid-colour rule kept here; the scrim over the capture moved to its own check",
+   "evidence_reference": "Brand identity, palette_rules.opacity: every palette colour is used solid, at 100% opacity: no tint, partial transparency, blur, gradient or blend mode on type, outlines, panels or shapes. A hard, unblurred offset shadow is allowed."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-do-not-open-that-door/H018",
+   "check": "Measured at full size, each Anton setup capital on “Channel thumbnail - DO NOT OPEN THAT DOOR” (thumbnail-do-not-open-that-door.png) stands roughly 145 to 180 px tall.",
+   "why": "exact 190 px font size not judgeable on a PNG; restated as a measurable cap-height range (guards the long/short title trap)",
+   "evidence_reference": "Type scale step 01: setup capitals in Anton Regular at 190 px, dropping to 96 px only on long copy. In the supplied Anton-Regular.ttf cap height is 1760/2048 em, so 190 px type gives capitals about 163 px tall (range 145 to 180 px); 96 px type gives about 82 px (range 70 to 95 px). Planned trap: short titles must not be underset to match the long ones.",
+   "reference_assets": [
+    "fonts/Anton-Regular.ttf",
+    "fonts/ArchivoBlack-Regular.ttf"
+   ]
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-do-not-open-that-door/H019",
+   "check": "The capitals of the final word “DOOR” on “Channel thumbnail - DO NOT OPEN THAT DOOR” (thumbnail-do-not-open-that-door.png) are shorter than the Anton setup capitals above it.",
+   "why": "exact 150 px size not judgeable on a PNG; restated as the visible step 01 to step 02 relationship",
+   "evidence_reference": "Type scale: step 01 setup capitals in Anton at 190 px, step 02 payoff in Archivo Black at 150 px; on long copy the whole stack drops to 96 px. Anton capitals are 0.86 em tall and Archivo Black capitals 0.69 em, so the payoff capitals are always visibly shorter than the setup capitals.",
+   "reference_assets": [
+    "fonts/Anton-Regular.ttf",
+    "fonts/ArchivoBlack-Regular.ttf"
+   ]
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas/H030",
+   "check": "No letter of the title on “Channel thumbnail - WE SPENT SIX HOURS BUILDING A BRIDGE AND THEN DROVE STRAIGHT PAST IT” (thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas.png) is cut off at the frame edge.",
+   "why": "output named by its deliverable name; the 320 px display condition dropped because scaling cannot crop letters; readability at 320 px has its own check",
+   "evidence_reference": "Acceptance requirement: at 320 px display width, the title text has no clipped characters.",
+   "reference_assets": [
+    "staticfox_titles.txt"
+   ]
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas/H016",
+   "check": "The final word “IT” on “Channel thumbnail - WE SPENT SIX HOURS BUILDING A BRIDGE AND THEN DROVE STRAIGHT PAST IT” (thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas.png) is set in Archivo Black Regular.",
+   "why": "compound split: payoff family kept here; its width and its last-row position moved to their own checks",
+   "evidence_reference": "Type scale step 02: the payoff word in Archivo Black Regular.",
+   "reference_assets": [
+    "fonts/Anton-Regular.ttf",
+    "fonts/ArchivoBlack-Regular.ttf"
+   ]
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas/H022",
+   "check": "Type, outlines, panels and shapes on “Channel thumbnail - WE SPENT SIX HOURS BUILDING A BRIDGE AND THEN DROVE STRAIGHT PAST IT” (thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas.png) are solid colour, with no transparency, blur, glow, soft shadow or gradient.",
+   "why": "compound split: solid-colour rule kept here; the scrim over the capture moved to its own check",
+   "evidence_reference": "Brand identity, palette_rules.opacity: every palette colour is used solid, at 100% opacity: no tint, partial transparency, blur, gradient or blend mode on type, outlines, panels or shapes. A hard, unblurred offset shadow is allowed."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas/H017",
+   "check": "Measured at full size, each Anton setup capital on “Channel thumbnail - WE SPENT SIX HOURS BUILDING A BRIDGE AND THEN DROVE STRAIGHT PAST IT” (thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas.png) stands roughly 70 to 95 px tall.",
+   "why": "exact 96 px font size not judgeable on a PNG; restated as a measurable cap-height range (guards the long-title trap)",
+   "evidence_reference": "Type scale step 01 note: the whole stack drops to 96 px on long copy rather than breaking the flip. In the supplied Anton-Regular.ttf cap height is 1760/2048 em, so 96 px setup capitals stand about 82 px tall (range 70 to 95 px). Planned trap: titles 5 and 6 run more than twice the length of the short ones.",
+   "reference_assets": [
+    "fonts/Anton-Regular.ttf",
+    "fonts/ArchivoBlack-Regular.ttf"
+   ]
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi/H001",
+   "check": "No letter of the title on “Channel thumbnail - I GAVE MY TEAM ONE SIMPLE JOB AND THEY SET THE ENTIRE BASE ON FIRE” (thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi.png) is cut off at the frame edge.",
+   "why": "output named by its deliverable name; the 320 px display condition dropped because scaling cannot crop letters; readability at 320 px has its own check",
+   "evidence_reference": "Acceptance requirement: at 320 px display width, the title text has no clipped characters.",
+   "reference_assets": [
+    "staticfox_titles.txt"
+   ]
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi/H017",
+   "check": "The final word “FIRE” on “Channel thumbnail - I GAVE MY TEAM ONE SIMPLE JOB AND THEY SET THE ENTIRE BASE ON FIRE” (thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi.png) is set in Archivo Black Regular.",
+   "why": "compound split: payoff family kept here; its width and its last-row position moved to their own checks",
+   "evidence_reference": "Type scale step 02: the payoff word in Archivo Black Regular.",
+   "reference_assets": [
+    "fonts/Anton-Regular.ttf",
+    "fonts/ArchivoBlack-Regular.ttf"
+   ]
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi/H023",
+   "check": "Type, outlines, panels and shapes on “Channel thumbnail - I GAVE MY TEAM ONE SIMPLE JOB AND THEY SET THE ENTIRE BASE ON FIRE” (thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi.png) are solid colour, with no transparency, blur, glow, soft shadow or gradient.",
+   "why": "compound split: solid-colour rule kept here; the scrim over the capture moved to its own check",
+   "evidence_reference": "Brand identity, palette_rules.opacity: every palette colour is used solid, at 100% opacity: no tint, partial transparency, blur, gradient or blend mode on type, outlines, panels or shapes. A hard, unblurred offset shadow is allowed."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi/H018",
+   "check": "Measured at full size, each Anton setup capital on “Channel thumbnail - I GAVE MY TEAM ONE SIMPLE JOB AND THEY SET THE ENTIRE BASE ON FIRE” (thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi.png) stands roughly 70 to 95 px tall.",
+   "why": "exact 96 px font size not judgeable on a PNG; restated as a measurable cap-height range (guards the long-title trap)",
+   "evidence_reference": "Type scale step 01 note: the whole stack drops to 96 px on long copy rather than breaking the flip. In the supplied Anton-Regular.ttf cap height is 1760/2048 em, so 96 px setup capitals stand about 82 px tall (range 70 to 95 px). Planned trap: titles 5 and 6 run more than twice the length of the short ones.",
+   "reference_assets": [
+    "fonts/Anton-Regular.ttf",
+    "fonts/ArchivoBlack-Regular.ttf"
+   ]
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-we-broke-the-map/H002",
+   "check": "Scrap on “Channel thumbnail - WE BROKE THE MAP” (thumbnail-we-broke-the-map.png) keeps both ears, the headset and the tail tip of the supplied cutout, none bitten away.",
+   "why": "shortened for a quick read; same fact (guards the planned knockout trap)",
+   "reference_assets": [
+    "staticfox_scrap_transparent.png"
+   ]
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-we-broke-the-map/H007",
+   "check": "“Channel thumbnail - WE BROKE THE MAP” (thumbnail-we-broke-the-map.png) is built on a frame from staticfox_captures/staticfox_capture_01.mp4, the capture for upload title 1.",
+   "why": "shortened for a quick read; same fact",
+   "reference_assets": [
+    "staticfox_captures/staticfox_capture_01.mp4",
+    "staticfox_titles.txt"
+   ]
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-we-broke-the-map/H008",
+   "check": "The capture frame on “Channel thumbnail - WE BROKE THE MAP” (thumbnail-we-broke-the-map.png) is used as recorded, with nothing generated, extended or painted into it.",
+   "why": "shortened for a quick read; same fact; the source capture is named in the pairing check",
+   "reference_assets": [
+    "staticfox_captures/staticfox_capture_01.mp4"
+   ]
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-we-broke-the-map/H009",
+   "check": "On “Channel thumbnail - WE BROKE THE MAP” (thumbnail-we-broke-the-map.png), neither the title nor Scrap hides the crowd of blocky monsters at the low block walls.",
+   "why": "shortened for a quick read; same fact",
+   "reference_assets": [
+    "staticfox_captures/staticfox_capture_01.mp4"
+   ]
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-we-broke-the-map/H001",
+   "check": "The capture frame on “Channel thumbnail - WE BROKE THE MAP” (thumbnail-we-broke-the-map.png) is not recoloured toward the palette: its grass still reads green.",
+   "why": "shortened for a quick read; same fact (guards the planned room-cast trap)",
+   "reference_assets": [
+    "staticfox_captures/staticfox_capture_01.mp4"
+   ]
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-we-broke-the-map/H012",
+   "check": "Scrap on “Channel thumbnail - WE BROKE THE MAP” (thumbnail-we-broke-the-map.png) keeps his supplied proportions, not stretched or squashed.",
+   "why": "shortened for a quick read; same fact",
+   "reference_assets": [
+    "staticfox_scrap_transparent.png"
+   ]
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-we-broke-the-map/H013",
+   "check": "Scrap on “Channel thumbnail - WE BROKE THE MAP” (thumbnail-we-broke-the-map.png) shows no leftover panel, white margin or grey fringe around his outline.",
+   "why": "shortened for a quick read; same fact (guards the planned glow-fringe trap)",
+   "reference_assets": [
+    "staticfox_scrap_transparent.png"
+   ]
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-we-broke-the-map/H014",
+   "check": "Scrap on “Channel thumbnail - WE BROKE THE MAP” (thumbnail-we-broke-the-map.png) keeps the orange fur and purple headset of the supplied cutout, not recoloured.",
+   "why": "shortened for a quick read; same fact",
+   "reference_assets": [
+    "staticfox_scrap_transparent.png"
+   ]
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-we-broke-the-map/H022",
+   "check": "Every title word on “Channel thumbnail - WE BROKE THE MAP” (thumbnail-we-broke-the-map.png) is filled Signal White, Acid Signal or Fox Orange, not left transparent.",
+   "why": "shortened for a quick read; same fact"
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-we-broke-the-map/H021",
+   "check": "No single row of Inter text on “Channel thumbnail - WE BROKE THE MAP” (thumbnail-we-broke-the-map.png) is longer than 65 characters.",
+   "why": "\"line\" could be read as a whole piece of copy; the limit applies to a typeset row",
+   "evidence_reference": "Type scale step 03 Body: Inter SemiBold 600, max 65 characters."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-we-broke-the-map/H031",
+   "check": "Not counting title letters, Acid Signal #B6FF2E fills no more than a tenth of the graphics laid over the capture on “Channel thumbnail - WE BROKE THE MAP” (thumbnail-we-broke-the-map.png).",
+   "why": "plain-language rewording of the brand sentence; same fact",
+   "evidence_reference": "Brand identity, palette_rules.distribution: Acid Signal is an accent; leaving title-word fills aside, it covers no more than 10% of the designed, non-footage area."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-everyone-off-the-platform/H002",
+   "check": "Scrap on “Channel thumbnail - EVERYONE OFF THE PLATFORM” (thumbnail-everyone-off-the-platform.png) keeps both ears, the headset and the tail tip of the supplied cutout, none bitten away.",
+   "why": "shortened for a quick read; same fact (guards the planned knockout trap)",
+   "reference_assets": [
+    "staticfox_scrap_transparent.png"
+   ]
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-everyone-off-the-platform/H006",
+   "check": "“Channel thumbnail - EVERYONE OFF THE PLATFORM” (thumbnail-everyone-off-the-platform.png) is built on a frame from staticfox_captures/staticfox_capture_02.mp4, the capture for upload title 2.",
+   "why": "shortened for a quick read; same fact",
+   "reference_assets": [
+    "staticfox_captures/staticfox_capture_02.mp4",
+    "staticfox_titles.txt"
+   ]
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-everyone-off-the-platform/H007",
+   "check": "The capture frame on “Channel thumbnail - EVERYONE OFF THE PLATFORM” (thumbnail-everyone-off-the-platform.png) is used as recorded, with nothing generated, extended or painted into it.",
+   "why": "shortened for a quick read; same fact; the source capture is named in the pairing check",
+   "reference_assets": [
+    "staticfox_captures/staticfox_capture_02.mp4"
+   ]
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-everyone-off-the-platform/H008",
+   "check": "On “Channel thumbnail - EVERYONE OFF THE PLATFORM” (thumbnail-everyone-off-the-platform.png), neither the title nor Scrap hides the jellybean characters over the pool of hot-pink slime.",
+   "why": "shortened for a quick read; same fact",
+   "reference_assets": [
+    "staticfox_captures/staticfox_capture_02.mp4"
+   ]
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-everyone-off-the-platform/H009",
+   "check": "The capture frame on “Channel thumbnail - EVERYONE OFF THE PLATFORM” (thumbnail-everyone-off-the-platform.png) is not recoloured toward the palette: its slime pool still reads hot pink.",
+   "why": "shortened for a quick read; same fact (guards the planned room-cast trap)",
+   "reference_assets": [
+    "staticfox_captures/staticfox_capture_02.mp4"
+   ]
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-everyone-off-the-platform/H003",
+   "check": "Scrap on “Channel thumbnail - EVERYONE OFF THE PLATFORM” (thumbnail-everyone-off-the-platform.png) keeps his supplied proportions, not stretched or squashed.",
+   "why": "shortened for a quick read; same fact",
+   "reference_assets": [
+    "staticfox_scrap_transparent.png"
+   ]
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-everyone-off-the-platform/H012",
+   "check": "Scrap on “Channel thumbnail - EVERYONE OFF THE PLATFORM” (thumbnail-everyone-off-the-platform.png) shows no leftover panel, white margin or grey fringe around his outline.",
+   "why": "shortened for a quick read; same fact (guards the planned glow-fringe trap)",
+   "reference_assets": [
+    "staticfox_scrap_transparent.png"
+   ]
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-everyone-off-the-platform/H013",
+   "check": "Scrap on “Channel thumbnail - EVERYONE OFF THE PLATFORM” (thumbnail-everyone-off-the-platform.png) keeps the orange fur and purple headset of the supplied cutout, not recoloured.",
+   "why": "shortened for a quick read; same fact",
+   "reference_assets": [
+    "staticfox_scrap_transparent.png"
+   ]
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-everyone-off-the-platform/H022",
+   "check": "Every title word on “Channel thumbnail - EVERYONE OFF THE PLATFORM” (thumbnail-everyone-off-the-platform.png) is filled Signal White, Acid Signal or Fox Orange, not left transparent.",
+   "why": "shortened for a quick read; same fact"
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-everyone-off-the-platform/H021",
+   "check": "No single row of Inter text on “Channel thumbnail - EVERYONE OFF THE PLATFORM” (thumbnail-everyone-off-the-platform.png) is longer than 65 characters.",
+   "why": "\"line\" could be read as a whole piece of copy; the limit applies to a typeset row",
+   "evidence_reference": "Type scale step 03 Body: Inter SemiBold 600, max 65 characters."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-everyone-off-the-platform/H031",
+   "check": "Not counting title letters, Acid Signal #B6FF2E fills no more than a tenth of the graphics laid over the capture on “Channel thumbnail - EVERYONE OFF THE PLATFORM” (thumbnail-everyone-off-the-platform.png).",
+   "why": "plain-language rewording of the brand sentence; same fact",
+   "evidence_reference": "Brand identity, palette_rules.distribution: Acid Signal is an accent; leaving title-word fills aside, it covers no more than 10% of the designed, non-footage area."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-kitchen-gone/H002",
+   "check": "Scrap on “Channel thumbnail - KITCHEN. GONE.” (thumbnail-kitchen-gone.png) keeps both ears, the headset and the tail tip of the supplied cutout, none bitten away.",
+   "why": "shortened for a quick read; same fact (guards the planned knockout trap)",
+   "reference_assets": [
+    "staticfox_scrap_transparent.png"
+   ]
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-kitchen-gone/H004",
+   "check": "“Channel thumbnail - KITCHEN. GONE.” (thumbnail-kitchen-gone.png) is built on a frame from staticfox_captures/staticfox_capture_03.mp4, the capture for upload title 3.",
+   "why": "shortened for a quick read; same fact",
+   "reference_assets": [
+    "staticfox_captures/staticfox_capture_03.mp4",
+    "staticfox_titles.txt"
+   ]
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-kitchen-gone/H005",
+   "check": "The capture frame on “Channel thumbnail - KITCHEN. GONE.” (thumbnail-kitchen-gone.png) is used as recorded, with nothing generated, extended or painted into it.",
+   "why": "shortened for a quick read; same fact; the source capture is named in the pairing check",
+   "reference_assets": [
+    "staticfox_captures/staticfox_capture_03.mp4"
+   ]
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-kitchen-gone/H006",
+   "check": "On “Channel thumbnail - KITCHEN. GONE.” (thumbnail-kitchen-gone.png), neither the title nor Scrap hides the flames climbing a stove.",
+   "why": "shortened for a quick read; same fact",
+   "reference_assets": [
+    "staticfox_captures/staticfox_capture_03.mp4"
+   ]
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-kitchen-gone/H001",
+   "check": "The capture frame on “Channel thumbnail - KITCHEN. GONE.” (thumbnail-kitchen-gone.png) is not recoloured toward the palette: its kitchen walls still read warm beige.",
+   "why": "shortened for a quick read; same fact (guards the planned room-cast trap)",
+   "reference_assets": [
+    "staticfox_captures/staticfox_capture_03.mp4"
+   ]
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-kitchen-gone/H010",
+   "check": "Scrap on “Channel thumbnail - KITCHEN. GONE.” (thumbnail-kitchen-gone.png) keeps his supplied proportions, not stretched or squashed.",
+   "why": "shortened for a quick read; same fact",
+   "reference_assets": [
+    "staticfox_scrap_transparent.png"
+   ]
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-kitchen-gone/H011",
+   "check": "Scrap on “Channel thumbnail - KITCHEN. GONE.” (thumbnail-kitchen-gone.png) shows no leftover panel, white margin or grey fringe around his outline.",
+   "why": "shortened for a quick read; same fact (guards the planned glow-fringe trap)",
+   "reference_assets": [
+    "staticfox_scrap_transparent.png"
+   ]
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-kitchen-gone/H012",
+   "check": "Scrap on “Channel thumbnail - KITCHEN. GONE.” (thumbnail-kitchen-gone.png) keeps the orange fur and purple headset of the supplied cutout, not recoloured.",
+   "why": "shortened for a quick read; same fact",
+   "reference_assets": [
+    "staticfox_scrap_transparent.png"
+   ]
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-kitchen-gone/H021",
+   "check": "Every title word on “Channel thumbnail - KITCHEN. GONE.” (thumbnail-kitchen-gone.png) is filled Signal White, Acid Signal or Fox Orange, not left transparent.",
+   "why": "shortened for a quick read; same fact"
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-kitchen-gone/H020",
+   "check": "No single row of Inter text on “Channel thumbnail - KITCHEN. GONE.” (thumbnail-kitchen-gone.png) is longer than 65 characters.",
+   "why": "\"line\" could be read as a whole piece of copy; the limit applies to a typeset row",
+   "evidence_reference": "Type scale step 03 Body: Inter SemiBold 600, max 65 characters."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-kitchen-gone/H030",
+   "check": "Not counting title letters, Acid Signal #B6FF2E fills no more than a tenth of the graphics laid over the capture on “Channel thumbnail - KITCHEN. GONE.” (thumbnail-kitchen-gone.png).",
+   "why": "plain-language rewording of the brand sentence; same fact",
+   "evidence_reference": "Brand identity, palette_rules.distribution: Acid Signal is an accent; leaving title-word fills aside, it covers no more than 10% of the designed, non-footage area."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-do-not-open-that-door/H002",
+   "check": "Scrap on “Channel thumbnail - DO NOT OPEN THAT DOOR” (thumbnail-do-not-open-that-door.png) keeps both ears, the headset and the tail tip of the supplied cutout, none bitten away.",
+   "why": "shortened for a quick read; same fact (guards the planned knockout trap)",
+   "reference_assets": [
+    "staticfox_scrap_transparent.png"
+   ]
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-do-not-open-that-door/H005",
+   "check": "“Channel thumbnail - DO NOT OPEN THAT DOOR” (thumbnail-do-not-open-that-door.png) is built on a frame from staticfox_captures/staticfox_capture_04.mp4, the capture for upload title 4.",
+   "why": "shortened for a quick read; same fact",
+   "reference_assets": [
+    "staticfox_captures/staticfox_capture_04.mp4",
+    "staticfox_titles.txt"
+   ]
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-do-not-open-that-door/H006",
+   "check": "The capture frame on “Channel thumbnail - DO NOT OPEN THAT DOOR” (thumbnail-do-not-open-that-door.png) is used as recorded, with nothing generated, extended or painted into it.",
+   "why": "shortened for a quick read; same fact; the source capture is named in the pairing check",
+   "reference_assets": [
+    "staticfox_captures/staticfox_capture_04.mp4"
+   ]
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-do-not-open-that-door/H007",
+   "check": "On “Channel thumbnail - DO NOT OPEN THAT DOOR” (thumbnail-do-not-open-that-door.png), neither the title nor Scrap hides the pale gaunt monster lunging out of a half-open doorway.",
+   "why": "shortened for a quick read; same fact",
+   "reference_assets": [
+    "staticfox_captures/staticfox_capture_04.mp4"
+   ]
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-do-not-open-that-door/H001",
+   "check": "The capture frame on “Channel thumbnail - DO NOT OPEN THAT DOOR” (thumbnail-do-not-open-that-door.png) is not recoloured toward the palette: its corridor tiles still read green.",
+   "why": "shortened for a quick read; same fact (guards the planned room-cast trap)",
+   "reference_assets": [
+    "staticfox_captures/staticfox_capture_04.mp4"
+   ]
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-do-not-open-that-door/H011",
+   "check": "Scrap on “Channel thumbnail - DO NOT OPEN THAT DOOR” (thumbnail-do-not-open-that-door.png) keeps his supplied proportions, not stretched or squashed.",
+   "why": "shortened for a quick read; same fact",
+   "reference_assets": [
+    "staticfox_scrap_transparent.png"
+   ]
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-do-not-open-that-door/H012",
+   "check": "Scrap on “Channel thumbnail - DO NOT OPEN THAT DOOR” (thumbnail-do-not-open-that-door.png) shows no leftover panel, white margin or grey fringe around his outline.",
+   "why": "shortened for a quick read; same fact (guards the planned glow-fringe trap)",
+   "reference_assets": [
+    "staticfox_scrap_transparent.png"
+   ]
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-do-not-open-that-door/H013",
+   "check": "Scrap on “Channel thumbnail - DO NOT OPEN THAT DOOR” (thumbnail-do-not-open-that-door.png) keeps the orange fur and purple headset of the supplied cutout, not recoloured.",
+   "why": "shortened for a quick read; same fact",
+   "reference_assets": [
+    "staticfox_scrap_transparent.png"
+   ]
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-do-not-open-that-door/H022",
+   "check": "Every title word on “Channel thumbnail - DO NOT OPEN THAT DOOR” (thumbnail-do-not-open-that-door.png) is filled Signal White, Acid Signal or Fox Orange, not left transparent.",
+   "why": "shortened for a quick read; same fact"
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-do-not-open-that-door/H021",
+   "check": "No single row of Inter text on “Channel thumbnail - DO NOT OPEN THAT DOOR” (thumbnail-do-not-open-that-door.png) is longer than 65 characters.",
+   "why": "\"line\" could be read as a whole piece of copy; the limit applies to a typeset row",
+   "evidence_reference": "Type scale step 03 Body: Inter SemiBold 600, max 65 characters."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-do-not-open-that-door/H031",
+   "check": "Not counting title letters, Acid Signal #B6FF2E fills no more than a tenth of the graphics laid over the capture on “Channel thumbnail - DO NOT OPEN THAT DOOR” (thumbnail-do-not-open-that-door.png).",
+   "why": "plain-language rewording of the brand sentence; same fact",
+   "evidence_reference": "Brand identity, palette_rules.distribution: Acid Signal is an accent; leaving title-word fills aside, it covers no more than 10% of the designed, non-footage area."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-do-not-open-that-door/H008",
+   "check": "On “Channel thumbnail - DO NOT OPEN THAT DOOR” (thumbnail-do-not-open-that-door.png), the capture's webcam window is shown whole, fully covered, or cropped out, never partly cut.",
+   "why": "shortened for a quick read; same fact (guards the planned webcam trap); keeps the brief's full range of covering",
+   "reference_assets": [
+    "staticfox_captures/staticfox_capture_04.mp4"
+   ]
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas/H002",
+   "check": "Scrap on “Channel thumbnail - WE SPENT SIX HOURS BUILDING A BRIDGE AND THEN DROVE STRAIGHT PAST IT” (thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas.png) keeps both ears, the headset and the tail tip of the supplied cutout, none bitten away.",
+   "why": "shortened for a quick read; same fact (guards the planned knockout trap)",
+   "reference_assets": [
+    "staticfox_scrap_transparent.png"
+   ]
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas/H003",
+   "check": "The title on “Channel thumbnail - WE SPENT SIX HOURS BUILDING A BRIDGE AND THEN DROVE STRAIGHT PAST IT” (thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas.png) reads exactly “WE SPENT SIX HOURS BUILDING A BRIDGE AND THEN DROVE STRAIGHT PAST IT”.",
+   "why": "quotes the full upload title exactly, as on the short titles (guards the planned long-title trap)",
+   "reference_assets": [
+    "staticfox_titles.txt"
+   ]
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas/H004",
+   "check": "“Channel thumbnail - WE SPENT SIX HOURS BUILDING A BRIDGE AND THEN DROVE STRAIGHT PAST IT” (thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas.png) is built on a frame from staticfox_captures/staticfox_capture_05.mp4, the capture for upload title 5.",
+   "why": "shortened for a quick read; same fact",
+   "reference_assets": [
+    "staticfox_captures/staticfox_capture_05.mp4",
+    "staticfox_titles.txt"
+   ]
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas/H005",
+   "check": "The capture frame on “Channel thumbnail - WE SPENT SIX HOURS BUILDING A BRIDGE AND THEN DROVE STRAIGHT PAST IT” (thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas.png) is used as recorded, with nothing generated, extended or painted into it.",
+   "why": "shortened for a quick read; same fact; the source capture is named in the pairing check",
+   "reference_assets": [
+    "staticfox_captures/staticfox_capture_05.mp4"
+   ]
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas/H006",
+   "check": "On “Channel thumbnail - WE SPENT SIX HOURS BUILDING A BRIDGE AND THEN DROVE STRAIGHT PAST IT” (thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas.png), neither the title nor Scrap hides the boxy cartoon car and the ragdoll driver.",
+   "why": "shortened for a quick read; same fact",
+   "reference_assets": [
+    "staticfox_captures/staticfox_capture_05.mp4"
+   ]
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas/H001",
+   "check": "The capture frame on “Channel thumbnail - WE SPENT SIX HOURS BUILDING A BRIDGE AND THEN DROVE STRAIGHT PAST IT” (thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas.png) is not recoloured toward the palette: its sky still reads blue.",
+   "why": "shortened for a quick read; same fact (guards the planned room-cast trap)",
+   "reference_assets": [
+    "staticfox_captures/staticfox_capture_05.mp4"
+   ]
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas/H010",
+   "check": "Scrap on “Channel thumbnail - WE SPENT SIX HOURS BUILDING A BRIDGE AND THEN DROVE STRAIGHT PAST IT” (thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas.png) keeps his supplied proportions, not stretched or squashed.",
+   "why": "shortened for a quick read; same fact",
+   "reference_assets": [
+    "staticfox_scrap_transparent.png"
+   ]
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas/H011",
+   "check": "Scrap on “Channel thumbnail - WE SPENT SIX HOURS BUILDING A BRIDGE AND THEN DROVE STRAIGHT PAST IT” (thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas.png) shows no leftover panel, white margin or grey fringe around his outline.",
+   "why": "shortened for a quick read; same fact (guards the planned glow-fringe trap)",
+   "reference_assets": [
+    "staticfox_scrap_transparent.png"
+   ]
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas/H012",
+   "check": "Scrap on “Channel thumbnail - WE SPENT SIX HOURS BUILDING A BRIDGE AND THEN DROVE STRAIGHT PAST IT” (thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas.png) keeps the orange fur and purple headset of the supplied cutout, not recoloured.",
+   "why": "shortened for a quick read; same fact",
+   "reference_assets": [
+    "staticfox_scrap_transparent.png"
+   ]
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas/H020",
+   "check": "Every title word on “Channel thumbnail - WE SPENT SIX HOURS BUILDING A BRIDGE AND THEN DROVE STRAIGHT PAST IT” (thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas.png) is filled Signal White, Acid Signal or Fox Orange, not left transparent.",
+   "why": "shortened for a quick read; same fact"
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas/H019",
+   "check": "No single row of Inter text on “Channel thumbnail - WE SPENT SIX HOURS BUILDING A BRIDGE AND THEN DROVE STRAIGHT PAST IT” (thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas.png) is longer than 65 characters.",
+   "why": "\"line\" could be read as a whole piece of copy; the limit applies to a typeset row",
+   "evidence_reference": "Type scale step 03 Body: Inter SemiBold 600, max 65 characters."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas/H029",
+   "check": "Not counting title letters, Acid Signal #B6FF2E fills no more than a tenth of the graphics laid over the capture on “Channel thumbnail - WE SPENT SIX HOURS BUILDING A BRIDGE AND THEN DROVE STRAIGHT PAST IT” (thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas.png).",
+   "why": "plain-language rewording of the brand sentence; same fact",
+   "evidence_reference": "Brand identity, palette_rules.distribution: Acid Signal is an accent; leaving title-word fills aside, it covers no more than 10% of the designed, non-footage area."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi/H002",
+   "check": "Scrap on “Channel thumbnail - I GAVE MY TEAM ONE SIMPLE JOB AND THEY SET THE ENTIRE BASE ON FIRE” (thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi.png) keeps both ears, the headset and the tail tip of the supplied cutout, none bitten away.",
+   "why": "shortened for a quick read; same fact (guards the planned knockout trap)",
+   "reference_assets": [
+    "staticfox_scrap_transparent.png"
+   ]
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi/H003",
+   "check": "The title on “Channel thumbnail - I GAVE MY TEAM ONE SIMPLE JOB AND THEY SET THE ENTIRE BASE ON FIRE” (thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi.png) reads exactly “I GAVE MY TEAM ONE SIMPLE JOB AND THEY SET THE ENTIRE BASE ON FIRE”.",
+   "why": "quotes the full upload title exactly, as on the short titles (guards the planned long-title trap)",
+   "reference_assets": [
+    "staticfox_titles.txt"
+   ]
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi/H004",
+   "check": "“Channel thumbnail - I GAVE MY TEAM ONE SIMPLE JOB AND THEY SET THE ENTIRE BASE ON FIRE” (thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi.png) is built on a frame from staticfox_captures/staticfox_capture_06.mp4, the capture for upload title 6.",
+   "why": "shortened for a quick read; same fact",
+   "reference_assets": [
+    "staticfox_captures/staticfox_capture_06.mp4",
+    "staticfox_titles.txt"
+   ]
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi/H005",
+   "check": "The capture frame on “Channel thumbnail - I GAVE MY TEAM ONE SIMPLE JOB AND THEY SET THE ENTIRE BASE ON FIRE” (thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi.png) is used as recorded, with nothing generated, extended or painted into it.",
+   "why": "shortened for a quick read; same fact; the source capture is named in the pairing check",
+   "reference_assets": [
+    "staticfox_captures/staticfox_capture_06.mp4"
+   ]
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi/H006",
+   "check": "On “Channel thumbnail - I GAVE MY TEAM ONE SIMPLE JOB AND THEY SET THE ENTIRE BASE ON FIRE” (thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi.png), neither the title nor Scrap hides the base engulfed in flames.",
+   "why": "shortened for a quick read; same fact",
+   "reference_assets": [
+    "staticfox_captures/staticfox_capture_06.mp4"
+   ]
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi/H007",
+   "check": "The capture frame on “Channel thumbnail - I GAVE MY TEAM ONE SIMPLE JOB AND THEY SET THE ENTIRE BASE ON FIRE” (thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi.png) is not recoloured toward the palette: its stone walls still read brown.",
+   "why": "shortened for a quick read; same fact (guards the planned room-cast trap)",
+   "reference_assets": [
+    "staticfox_captures/staticfox_capture_06.mp4"
+   ]
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi/H011",
+   "check": "Scrap on “Channel thumbnail - I GAVE MY TEAM ONE SIMPLE JOB AND THEY SET THE ENTIRE BASE ON FIRE” (thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi.png) keeps his supplied proportions, not stretched or squashed.",
+   "why": "shortened for a quick read; same fact",
+   "reference_assets": [
+    "staticfox_scrap_transparent.png"
+   ]
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi/H012",
+   "check": "Scrap on “Channel thumbnail - I GAVE MY TEAM ONE SIMPLE JOB AND THEY SET THE ENTIRE BASE ON FIRE” (thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi.png) shows no leftover panel, white margin or grey fringe around his outline.",
+   "why": "shortened for a quick read; same fact (guards the planned glow-fringe trap)",
+   "reference_assets": [
+    "staticfox_scrap_transparent.png"
+   ]
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi/H013",
+   "check": "Scrap on “Channel thumbnail - I GAVE MY TEAM ONE SIMPLE JOB AND THEY SET THE ENTIRE BASE ON FIRE” (thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi.png) keeps the orange fur and purple headset of the supplied cutout, not recoloured.",
+   "why": "shortened for a quick read; same fact",
+   "reference_assets": [
+    "staticfox_scrap_transparent.png"
+   ]
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi/H021",
+   "check": "Every title word on “Channel thumbnail - I GAVE MY TEAM ONE SIMPLE JOB AND THEY SET THE ENTIRE BASE ON FIRE” (thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi.png) is filled Signal White, Acid Signal or Fox Orange, not left transparent.",
+   "why": "shortened for a quick read; same fact"
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi/H020",
+   "check": "No single row of Inter text on “Channel thumbnail - I GAVE MY TEAM ONE SIMPLE JOB AND THEY SET THE ENTIRE BASE ON FIRE” (thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi.png) is longer than 65 characters.",
+   "why": "\"line\" could be read as a whole piece of copy; the limit applies to a typeset row",
+   "evidence_reference": "Type scale step 03 Body: Inter SemiBold 600, max 65 characters."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi/H030",
+   "check": "Not counting title letters, Acid Signal #B6FF2E fills no more than a tenth of the graphics laid over the capture on “Channel thumbnail - I GAVE MY TEAM ONE SIMPLE JOB AND THEY SET THE ENTIRE BASE ON FIRE” (thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi.png).",
+   "why": "plain-language rewording of the brand sentence; same fact",
+   "evidence_reference": "Brand identity, palette_rules.distribution: Acid Signal is an accent; leaving title-word fills aside, it covers no more than 10% of the designed, non-footage area."
+  },
+  {
+   "check_id": "MOTION-11/channel-animation/H006",
+   "check": "No gameplay footage from the supplied captures staticfox_capture_01.mp4 to staticfox_capture_06.mp4 appears in “Animated channel title and end card” (channel-animation.mp4).",
+   "why": "shortened (listed six file paths); same fact",
+   "evidence_reference": "Brief: authored from the identity rather than cut from gameplay; do not substitute a gameplay montage.",
+   "reference_assets": [
+    "staticfox_captures/staticfox_capture_01.mp4",
+    "staticfox_captures/staticfox_capture_02.mp4",
+    "staticfox_captures/staticfox_capture_03.mp4",
+    "staticfox_captures/staticfox_capture_04.mp4",
+    "staticfox_captures/staticfox_capture_05.mp4",
+    "staticfox_captures/staticfox_capture_06.mp4"
+   ]
+  },
+  {
+   "check_id": "MOTION-11/channel-animation/H010",
+   "check": "Wherever Scrap appears in “Animated channel title and end card” (channel-animation.mp4), he is the supplied staticfox_scrap_transparent.png cutout, not a newly drawn or traced fox.",
+   "why": "wording tidied; his presence is now its own check",
+   "evidence_reference": "Brief: use staticfox_scrap_transparent.png as the supplied mascot artwork, without redesigning it.",
+   "reference_assets": [
+    "staticfox_scrap_transparent.png"
+   ]
+  },
+  {
+   "check_id": "MOTION-11/channel-animation/H017",
+   "check": "“STATIC” in the channel name of “Animated channel title and end card” (channel-animation.mp4) is set in Anton Regular.",
+   "why": "reworded for a quick read; same fact",
+   "reference_assets": [
+    "fonts/Anton-Regular.ttf",
+    "fonts/ArchivoBlack-Regular.ttf"
+   ]
+  },
+  {
+   "check_id": "MOTION-11/channel-animation/H015",
+   "check": "Every line set in Anton or Archivo Black in “Animated channel title and end card” (channel-animation.mp4) is in capitals.",
+   "why": "\"Anton / Archivo Black\" read like one font name; same fact"
+  },
+  {
+   "check_id": "MOTION-11/channel-animation/H022",
+   "check": "No single row of Inter text on the end card of “Animated channel title and end card” (channel-animation.mp4) is longer than 65 characters; longer copy wraps onto more rows.",
+   "why": "\"line\" clashed with \"the members line\", which runs about 96 characters and must wrap; the limit applies to a typeset row",
+   "evidence_reference": "Type scale step 03 Body: Inter SemiBold 600, max 65 characters."
+  },
+  {
+   "check_id": "MOTION-11/channel-animation/H018",
+   "check": "“FOX” in the channel name of “Animated channel title and end card” (channel-animation.mp4) is set in Archivo Black Regular.",
+   "why": "compound split: payoff family kept here; its width and its last-row position moved to their own checks",
+   "evidence_reference": "Type scale step 02: the payoff word in Archivo Black Regular.",
+   "reference_assets": [
+    "fonts/Anton-Regular.ttf",
+    "fonts/ArchivoBlack-Regular.ttf"
+   ]
+  },
+  {
+   "check_id": "MOTION-11/channel-animation/H019",
+   "check": "Measured on the held end card of “Animated channel title and end card” (channel-animation.mp4), the capitals of “STATIC” stand roughly 145 to 180 px tall.",
+   "why": "exact 190 px font size not judgeable on an MP4 frame; restated as a measurable cap-height range, as on the thumbnails",
+   "evidence_reference": "Type scale step 01: setup capitals in Anton Regular at 190 px, dropping to 96 px only on long copy. In the supplied Anton-Regular.ttf cap height is 1760/2048 em, so 190 px type gives capitals about 163 px tall (range 145 to 180 px); 96 px type gives about 82 px (range 70 to 95 px). Planned trap: short titles must not be underset to match the long ones.",
+   "reference_assets": [
+    "fonts/Anton-Regular.ttf",
+    "fonts/ArchivoBlack-Regular.ttf"
+   ]
+  },
+  {
+   "check_id": "MOTION-11/channel-animation/H020",
+   "check": "On the held end card of “Animated channel title and end card” (channel-animation.mp4), the capitals of “FOX” are shorter than the capitals of “STATIC” above it.",
+   "why": "exact 150 px size not judgeable on an MP4 frame; restated as the visible step 01 to step 02 relationship",
+   "evidence_reference": "Type scale: step 01 setup capitals in Anton at 190 px, step 02 payoff in Archivo Black at 150 px; on long copy the whole stack drops to 96 px. Anton capitals are 0.86 em tall and Archivo Black capitals 0.69 em, so the payoff capitals are always visibly shorter than the setup capitals.",
+   "reference_assets": [
+    "fonts/Anton-Regular.ttf",
+    "fonts/ArchivoBlack-Regular.ttf"
+   ]
+  },
+  {
+   "check_id": "MOTION-11/channel-animation/H025",
+   "check": "On every held frame of “Animated channel title and end card” (channel-animation.mp4), end card included, type, outlines, panels and background are solid, with no transparency, blur, glow, soft shadow or gradient.",
+   "why": "rule covers every held frame, not only the end card; wording aligned with the opacity rule",
+   "evidence_reference": "Brand identity, palette_rules.opacity: in the films every held frame, and the final end card, is solid and unblurred."
+  },
+  {
+   "check_id": "MOTION-11/channel-teaser/H001",
+   "check": "Every shot in “Channel feed teaser” (channel-teaser.mp4) is cut from the supplied captures staticfox_capture_01.mp4 to staticfox_capture_06.mp4, with no invented footage.",
+   "why": "shortened (listed six file paths); same fact",
+   "reference_assets": [
+    "staticfox_captures/staticfox_capture_01.mp4",
+    "staticfox_captures/staticfox_capture_02.mp4",
+    "staticfox_captures/staticfox_capture_03.mp4",
+    "staticfox_captures/staticfox_capture_04.mp4",
+    "staticfox_captures/staticfox_capture_05.mp4",
+    "staticfox_captures/staticfox_capture_06.mp4"
+   ]
+  },
+  {
+   "check_id": "MOTION-11/channel-teaser/H011",
+   "check": "No shot in “Channel feed teaser” (channel-teaser.mp4) is recoloured toward the palette; each keeps the game colours of its source capture.",
+   "why": "shortened (listed six file paths); same fact",
+   "evidence_reference": "Brand identity, palette_rules.photography: capture frames keep their own corrected colour and are never recoloured or washed toward the palette.",
+   "reference_assets": [
+    "staticfox_captures/staticfox_capture_01.mp4",
+    "staticfox_captures/staticfox_capture_02.mp4",
+    "staticfox_captures/staticfox_capture_03.mp4",
+    "staticfox_captures/staticfox_capture_04.mp4",
+    "staticfox_captures/staticfox_capture_05.mp4",
+    "staticfox_captures/staticfox_capture_06.mp4"
+   ]
+  },
+  {
+   "check_id": "MOTION-11/channel-teaser/H020",
+   "check": "If a title stack appears in “Channel feed teaser” (channel-teaser.mp4), its final word is set in Archivo Black Regular.",
+   "why": "compound split: payoff family kept here; its width and its last-row position moved to their own checks",
+   "evidence_reference": "Type scale step 02: the payoff word in Archivo Black Regular.",
+   "reference_assets": [
+    "fonts/Anton-Regular.ttf",
+    "fonts/ArchivoBlack-Regular.ttf"
+   ]
+  },
+  {
+   "check_id": "MOTION-11/channel-teaser/H021",
+   "check": "If a title stack appears in “Channel feed teaser” (channel-teaser.mp4), each Anton setup capital stands roughly 145 to 180 px tall, or 70 to 95 px tall on a long title.",
+   "why": "exact 190 px / 96 px font size not judgeable on an MP4 frame; restated as a measurable cap-height range, as on the thumbnails",
+   "evidence_reference": "Type scale step 01: setup capitals in Anton Regular at 190 px, dropping to 96 px only on long copy. In the supplied Anton-Regular.ttf cap height is 1760/2048 em, so 190 px type gives capitals about 163 px tall (range 145 to 180 px); 96 px type gives about 82 px (range 70 to 95 px). Planned trap: short titles must not be underset to match the long ones.",
+   "reference_assets": [
+    "fonts/Anton-Regular.ttf",
+    "fonts/ArchivoBlack-Regular.ttf"
+   ]
+  },
+  {
+   "check_id": "MOTION-11/channel-teaser/H022",
+   "check": "If a title stack appears in “Channel feed teaser” (channel-teaser.mp4), the capitals of its final word are shorter than its Anton setup capitals.",
+   "why": "exact 150 px / 96 px size not judgeable on an MP4 frame; restated as the visible step 01 to step 02 relationship",
+   "evidence_reference": "Type scale: step 01 setup capitals in Anton at 190 px, step 02 payoff in Archivo Black at 150 px; on long copy the whole stack drops to 96 px. Anton capitals are 0.86 em tall and Archivo Black capitals 0.69 em, so the payoff capitals are always visibly shorter than the setup capitals.",
+   "reference_assets": [
+    "fonts/Anton-Regular.ttf",
+    "fonts/ArchivoBlack-Regular.ttf"
+   ]
+  },
+  {
+   "check_id": "MOTION-11/channel-teaser/H027",
+   "check": "Whenever type, outlines, panels or shapes are held still in “Channel feed teaser” (channel-teaser.mp4), they are solid, with no transparency, blur, glow, soft shadow or gradient.",
+   "why": "compound split: solid-colour rule kept here; the wash over the footage moved to its own check; condition now names the elements themselves",
+   "evidence_reference": "Brand identity, palette_rules.opacity: every palette colour is used solid, at 100% opacity: no tint, partial transparency, blur, gradient or blend mode on type, outlines, panels or shapes. A hard, unblurred offset shadow is allowed."
+  },
+  {
+   "check_id": "MOTION-11/channel-teaser/H026",
+   "check": "Type, outlines, panels, shapes and icons in “Channel feed teaser” (channel-teaser.mp4) use only #FF5A1F, #7A2FF2, #B6FF2E, #101014 and #FFFFFF.",
+   "why": "the colour rule does not depend on whether type is at rest; condition removed",
+   "evidence_reference": "Brand identity, palette_rules.forbidden: no colour outside the five palette hexes for type, outlines, panels, shapes, icons or backgrounds."
+  },
+  {
+   "check_id": "MOTION-11/channel-teaser/H018",
+   "check": "Every word set in Anton or Archivo Black in “Channel feed teaser” (channel-teaser.mp4) carries a hard, unblurred Jet Black #101014 outline whenever it is held still.",
+   "why": "\"Anton / Archivo Black\" read like one font name; \"at rest\" changed to \"held still\" to match the opacity rule"
+  },
+  {
+   "check_id": "MOTION-11/channel-teaser/H017",
+   "check": "Every line set in Anton or Archivo Black in “Channel feed teaser” (channel-teaser.mp4) is in capitals.",
+   "why": "\"Anton / Archivo Black\" read like one font name; same fact"
+  },
+  {
+   "check_id": "MOTION-11/channel-teaser/H019",
+   "check": "In any Anton or Archivo Black title stack in “Channel feed teaser” (channel-teaser.mp4), every word before the last is set in Anton Regular.",
+   "why": "\"Anton / Archivo Black\" read like one font name; same fact",
+   "reference_assets": [
+    "fonts/Anton-Regular.ttf",
+    "fonts/ArchivoBlack-Regular.ttf"
+   ]
+  },
+  {
+   "check_id": "MOTION-11/channel-teaser/H023",
+   "check": "Every on-screen line in “Channel feed teaser” (channel-teaser.mp4) not set in Anton or Archivo Black is set in Inter SemiBold 600.",
+   "why": "\"Anton / Archivo Black\" read like one font name; same fact",
+   "reference_assets": [
+    "fonts/Inter[opsz,wght].ttf"
+   ]
+  },
+  {
+   "check_id": "MOTION-11/channel-teaser/H024",
+   "check": "No single row of Inter text in “Channel feed teaser” (channel-teaser.mp4) is longer than 65 characters.",
+   "why": "\"line\" could be read as a whole piece of copy; the limit applies to a typeset row",
+   "evidence_reference": "Type scale step 03 Body: Inter SemiBold 600, max 65 characters."
+  },
+  {
+   "check_id": "MOTION-11/channel-teaser/H034",
+   "check": "Wherever graphics are held still in “Channel feed teaser” (channel-teaser.mp4), Acid Signal #B6FF2E fills no more than a tenth of them, not counting title letters.",
+   "why": "plain-language rewording; \"designed, non-footage area of any frame\" replaced by the held graphics laid over the footage",
+   "evidence_reference": "Brand identity, palette_rules.distribution: Acid Signal is an accent; leaving title-word fills aside, it covers no more than 10% of the designed, non-footage area."
+  },
+  {
+   "check_id": "MOTION-11/channel-teaser-vertical/H002",
+   "check": "Every shot in “Channel feed teaser upright cutdown” (channel-teaser-vertical.mp4) is cut from the supplied captures staticfox_capture_01.mp4 to staticfox_capture_06.mp4, with no invented footage.",
+   "why": "shortened (listed six file paths); same fact",
+   "reference_assets": [
+    "staticfox_captures/staticfox_capture_01.mp4",
+    "staticfox_captures/staticfox_capture_02.mp4",
+    "staticfox_captures/staticfox_capture_03.mp4",
+    "staticfox_captures/staticfox_capture_04.mp4",
+    "staticfox_captures/staticfox_capture_05.mp4",
+    "staticfox_captures/staticfox_capture_06.mp4"
+   ]
+  },
+  {
+   "check_id": "MOTION-11/channel-teaser-vertical/H009",
+   "check": "No shot in “Channel feed teaser upright cutdown” (channel-teaser-vertical.mp4) is recoloured toward the palette; each keeps the game colours of its source capture.",
+   "why": "shortened (listed six file paths); same fact",
+   "evidence_reference": "Brand identity, palette_rules.photography: capture frames keep their own corrected colour and are never recoloured or washed toward the palette.",
+   "reference_assets": [
+    "staticfox_captures/staticfox_capture_01.mp4",
+    "staticfox_captures/staticfox_capture_02.mp4",
+    "staticfox_captures/staticfox_capture_03.mp4",
+    "staticfox_captures/staticfox_capture_04.mp4",
+    "staticfox_captures/staticfox_capture_05.mp4",
+    "staticfox_captures/staticfox_capture_06.mp4"
+   ]
+  },
+  {
+   "check_id": "MOTION-11/channel-teaser-vertical/H018",
+   "check": "If a title stack appears in “Channel feed teaser upright cutdown” (channel-teaser-vertical.mp4), its final word is set in Archivo Black Regular.",
+   "why": "compound split: payoff family kept here; its width and its last-row position moved to their own checks",
+   "evidence_reference": "Type scale step 02: the payoff word in Archivo Black Regular.",
+   "reference_assets": [
+    "fonts/Anton-Regular.ttf",
+    "fonts/ArchivoBlack-Regular.ttf"
+   ]
+  },
+  {
+   "check_id": "MOTION-11/channel-teaser-vertical/H019",
+   "check": "If a title stack appears in “Channel feed teaser upright cutdown” (channel-teaser-vertical.mp4), each Anton setup capital stands roughly 145 to 180 px tall, or 70 to 95 px tall on a long title.",
+   "why": "exact 190 px / 96 px font size not judgeable on an MP4 frame; restated as a measurable cap-height range, as on the thumbnails",
+   "evidence_reference": "Type scale step 01: setup capitals in Anton Regular at 190 px, dropping to 96 px only on long copy. In the supplied Anton-Regular.ttf cap height is 1760/2048 em, so 190 px type gives capitals about 163 px tall (range 145 to 180 px); 96 px type gives about 82 px (range 70 to 95 px). Planned trap: short titles must not be underset to match the long ones.",
+   "reference_assets": [
+    "fonts/Anton-Regular.ttf",
+    "fonts/ArchivoBlack-Regular.ttf"
+   ]
+  },
+  {
+   "check_id": "MOTION-11/channel-teaser-vertical/H020",
+   "check": "If a title stack appears in “Channel feed teaser upright cutdown” (channel-teaser-vertical.mp4), the capitals of its final word are shorter than its Anton setup capitals.",
+   "why": "exact 150 px / 96 px size not judgeable on an MP4 frame; restated as the visible step 01 to step 02 relationship",
+   "evidence_reference": "Type scale: step 01 setup capitals in Anton at 190 px, step 02 payoff in Archivo Black at 150 px; on long copy the whole stack drops to 96 px. Anton capitals are 0.86 em tall and Archivo Black capitals 0.69 em, so the payoff capitals are always visibly shorter than the setup capitals.",
+   "reference_assets": [
+    "fonts/Anton-Regular.ttf",
+    "fonts/ArchivoBlack-Regular.ttf"
+   ]
+  },
+  {
+   "check_id": "MOTION-11/channel-teaser-vertical/H025",
+   "check": "Whenever type, outlines, panels or shapes are held still in “Channel feed teaser upright cutdown” (channel-teaser-vertical.mp4), they are solid, with no transparency, blur, glow, soft shadow or gradient.",
+   "why": "compound split: solid-colour rule kept here; the wash over the footage moved to its own check; condition now names the elements themselves",
+   "evidence_reference": "Brand identity, palette_rules.opacity: every palette colour is used solid, at 100% opacity: no tint, partial transparency, blur, gradient or blend mode on type, outlines, panels or shapes. A hard, unblurred offset shadow is allowed."
+  },
+  {
+   "check_id": "MOTION-11/channel-teaser-vertical/H024",
+   "check": "Type, outlines, panels, shapes and icons in “Channel feed teaser upright cutdown” (channel-teaser-vertical.mp4) use only #FF5A1F, #7A2FF2, #B6FF2E, #101014 and #FFFFFF.",
+   "why": "the colour rule does not depend on whether type is at rest; condition removed",
+   "evidence_reference": "Brand identity, palette_rules.forbidden: no colour outside the five palette hexes for type, outlines, panels, shapes, icons or backgrounds."
+  },
+  {
+   "check_id": "MOTION-11/channel-teaser-vertical/H016",
+   "check": "Every word set in Anton or Archivo Black in “Channel feed teaser upright cutdown” (channel-teaser-vertical.mp4) carries a hard, unblurred Jet Black #101014 outline whenever it is held still.",
+   "why": "\"Anton / Archivo Black\" read like one font name; \"at rest\" changed to \"held still\" to match the opacity rule"
+  },
+  {
+   "check_id": "MOTION-11/channel-teaser-vertical/H015",
+   "check": "Every line set in Anton or Archivo Black in “Channel feed teaser upright cutdown” (channel-teaser-vertical.mp4) is in capitals.",
+   "why": "\"Anton / Archivo Black\" read like one font name; same fact"
+  },
+  {
+   "check_id": "MOTION-11/channel-teaser-vertical/H017",
+   "check": "In any Anton or Archivo Black title stack in “Channel feed teaser upright cutdown” (channel-teaser-vertical.mp4), every word before the last is set in Anton Regular.",
+   "why": "\"Anton / Archivo Black\" read like one font name; same fact",
+   "reference_assets": [
+    "fonts/Anton-Regular.ttf",
+    "fonts/ArchivoBlack-Regular.ttf"
+   ]
+  },
+  {
+   "check_id": "MOTION-11/channel-teaser-vertical/H021",
+   "check": "Every on-screen line in “Channel feed teaser upright cutdown” (channel-teaser-vertical.mp4) not set in Anton or Archivo Black is set in Inter SemiBold 600.",
+   "why": "\"Anton / Archivo Black\" read like one font name; same fact",
+   "reference_assets": [
+    "fonts/Inter[opsz,wght].ttf"
+   ]
+  },
+  {
+   "check_id": "MOTION-11/channel-teaser-vertical/H022",
+   "check": "No single row of Inter text in “Channel feed teaser upright cutdown” (channel-teaser-vertical.mp4) is longer than 65 characters.",
+   "why": "\"line\" could be read as a whole piece of copy; the limit applies to a typeset row",
+   "evidence_reference": "Type scale step 03 Body: Inter SemiBold 600, max 65 characters."
+  },
+  {
+   "check_id": "MOTION-11/channel-teaser-vertical/H032",
+   "check": "Wherever graphics are held still in “Channel feed teaser upright cutdown” (channel-teaser-vertical.mp4), Acid Signal #B6FF2E fills no more than a tenth of them, not counting title letters.",
+   "why": "plain-language rewording; \"designed, non-footage area of any frame\" replaced by the held graphics laid over the footage",
+   "evidence_reference": "Brand identity, palette_rules.distribution: Acid Signal is an accent; leaving title-word fills aside, it covers no more than 10% of the designed, non-footage area."
+  },
+  {
+   "check_id": "MOTION-11/channel-teaser/H010",
+   "check": "If capture 04 is used in “Channel feed teaser” (channel-teaser.mp4), its webcam window is shown whole, fully covered, or cropped out, never partly cut.",
+   "why": "shortened for a quick read; same fact (guards the planned webcam trap); keeps the brief's full range of covering",
+   "reference_assets": [
+    "staticfox_captures/staticfox_capture_04.mp4"
+   ]
+  },
+  {
+   "check_id": "MOTION-11/channel-teaser/H025",
+   "check": "Every word set in Anton or Archivo Black in “Channel feed teaser” (channel-teaser.mp4) is filled Signal White, Acid Signal or Fox Orange when held still, not left transparent.",
+   "why": "shortened for a quick read; same fact; \"at rest\" changed to \"held still\" to match the opacity rule"
+  },
+  {
+   "check_id": "MOTION-11/channel-teaser-vertical/H008",
+   "check": "If capture 04 is used in “Channel feed teaser upright cutdown” (channel-teaser-vertical.mp4), its webcam window is shown whole, fully covered, or cropped out, never partly cut.",
+   "why": "shortened for a quick read; same fact (guards the planned webcam trap); keeps the brief's full range of covering",
+   "reference_assets": [
+    "staticfox_captures/staticfox_capture_04.mp4"
+   ]
+  },
+  {
+   "check_id": "MOTION-11/channel-teaser-vertical/H023",
+   "check": "Every word set in Anton or Archivo Black in “Channel feed teaser upright cutdown” (channel-teaser-vertical.mp4) is filled Signal White, Acid Signal or Fox Orange when held still, not left transparent.",
+   "why": "shortened for a quick read; same fact; \"at rest\" changed to \"held still\" to match the opacity rule"
+  },
+  {
+   "check_id": "MOTION-11/channel-animation/H011",
+   "check": "Wherever Scrap appears in “Animated channel title and end card” (channel-animation.mp4), he keeps his supplied proportions, not stretched or squashed.",
+   "why": "shortened for a quick read; same fact",
+   "reference_assets": [
+    "staticfox_scrap_transparent.png"
+   ]
+  },
+  {
+   "check_id": "MOTION-11/channel-animation/H012",
+   "check": "Wherever Scrap appears in “Animated channel title and end card” (channel-animation.mp4), he keeps both ears, the headset and the tail tip of the supplied cutout, none bitten away.",
+   "why": "shortened for a quick read; same fact (guards the planned knockout trap)",
+   "reference_assets": [
+    "staticfox_scrap_transparent.png"
+   ]
+  },
+  {
+   "check_id": "MOTION-11/channel-animation/H013",
+   "check": "Wherever Scrap appears in “Animated channel title and end card” (channel-animation.mp4), he shows no leftover panel, white margin or grey fringe around his outline.",
+   "why": "shortened for a quick read; same fact (guards the planned glow-fringe trap)",
+   "reference_assets": [
+    "staticfox_scrap_transparent.png"
+   ]
+  },
+  {
+   "check_id": "MOTION-11/channel-animation/H014",
+   "check": "Wherever Scrap appears in “Animated channel title and end card” (channel-animation.mp4), he keeps the orange fur and purple headset of the supplied cutout, not recoloured.",
+   "why": "shortened for a quick read; same fact",
+   "reference_assets": [
+    "staticfox_scrap_transparent.png"
+   ]
+  },
+  {
+   "check_id": "MOTION-11/channel-teaser/H013",
+   "check": "Wherever Scrap appears in “Channel feed teaser” (channel-teaser.mp4), he keeps his supplied proportions, not stretched or squashed.",
+   "why": "shortened for a quick read; same fact",
+   "reference_assets": [
+    "staticfox_scrap_transparent.png"
+   ]
+  },
+  {
+   "check_id": "MOTION-11/channel-teaser/H014",
+   "check": "Wherever Scrap appears in “Channel feed teaser” (channel-teaser.mp4), he keeps both ears, the headset and the tail tip of the supplied cutout, none bitten away.",
+   "why": "shortened for a quick read; same fact (guards the planned knockout trap)",
+   "reference_assets": [
+    "staticfox_scrap_transparent.png"
+   ]
+  },
+  {
+   "check_id": "MOTION-11/channel-teaser/H015",
+   "check": "Wherever Scrap appears in “Channel feed teaser” (channel-teaser.mp4), he shows no leftover panel, white margin or grey fringe around his outline.",
+   "why": "shortened for a quick read; same fact (guards the planned glow-fringe trap)",
+   "reference_assets": [
+    "staticfox_scrap_transparent.png"
+   ]
+  },
+  {
+   "check_id": "MOTION-11/channel-teaser/H016",
+   "check": "Wherever Scrap appears in “Channel feed teaser” (channel-teaser.mp4), he keeps the orange fur and purple headset of the supplied cutout, not recoloured.",
+   "why": "shortened for a quick read; same fact",
+   "reference_assets": [
+    "staticfox_scrap_transparent.png"
+   ]
+  },
+  {
+   "check_id": "MOTION-11/channel-teaser-vertical/H011",
+   "check": "Wherever Scrap appears in “Channel feed teaser upright cutdown” (channel-teaser-vertical.mp4), he keeps his supplied proportions, not stretched or squashed.",
+   "why": "shortened for a quick read; same fact",
+   "reference_assets": [
+    "staticfox_scrap_transparent.png"
+   ]
+  },
+  {
+   "check_id": "MOTION-11/channel-teaser-vertical/H012",
+   "check": "Wherever Scrap appears in “Channel feed teaser upright cutdown” (channel-teaser-vertical.mp4), he keeps both ears, the headset and the tail tip of the supplied cutout, none bitten away.",
+   "why": "shortened for a quick read; same fact (guards the planned knockout trap)",
+   "reference_assets": [
+    "staticfox_scrap_transparent.png"
+   ]
+  },
+  {
+   "check_id": "MOTION-11/channel-teaser-vertical/H013",
+   "check": "Wherever Scrap appears in “Channel feed teaser upright cutdown” (channel-teaser-vertical.mp4), he shows no leftover panel, white margin or grey fringe around his outline.",
+   "why": "shortened for a quick read; same fact (guards the planned glow-fringe trap)",
+   "reference_assets": [
+    "staticfox_scrap_transparent.png"
+   ]
+  },
+  {
+   "check_id": "MOTION-11/channel-teaser-vertical/H014",
+   "check": "Wherever Scrap appears in “Channel feed teaser upright cutdown” (channel-teaser-vertical.mp4), he keeps the orange fur and purple headset of the supplied cutout, not recoloured.",
+   "why": "shortened for a quick read; same fact",
+   "reference_assets": [
+    "staticfox_scrap_transparent.png"
+   ]
+  },
+  {
+   "check_id": "MOTION-11/channel-teaser/H002",
+   "check": "“Channel feed teaser” (channel-teaser.mp4) uses shots from at least four different captures among staticfox_capture_01.mp4 to staticfox_capture_06.mp4.",
+   "why": "shortened (listed six file paths); same fact",
+   "reference_assets": [
+    "staticfox_captures/staticfox_capture_01.mp4",
+    "staticfox_captures/staticfox_capture_02.mp4",
+    "staticfox_captures/staticfox_capture_03.mp4",
+    "staticfox_captures/staticfox_capture_04.mp4",
+    "staticfox_captures/staticfox_capture_05.mp4",
+    "staticfox_captures/staticfox_capture_06.mp4"
+   ]
+  },
+  {
+   "check_id": "MOTION-11/channel-teaser/H005",
+   "check": "“Channel feed teaser” (channel-teaser.mp4) closes on an end card frame.",
+   "why": "compound split: the upload line is already checked on its own (H004); this keeps the closing end card",
+   "evidence_reference": "Group requirement for the animation group: the final frame is a usable end card."
+  },
+  {
+   "check_id": "MOTION-11/channel-teaser-vertical/H003",
+   "check": "“Channel feed teaser upright cutdown” (channel-teaser-vertical.mp4) uses shots from at least three captures, all of them also used in “Channel feed teaser” (channel-teaser.mp4).",
+   "why": "kept as a stated requirement naming one fixed reference deliverable, named as “Name” (file); wording tidied",
+   "evidence_reference": "Brief: the upright teaser uses at least three of the captures used in the wide teaser, from the same cut. Required content: shots from at least three captures, all of them also used in the wide teaser."
+  },
+  {
+   "check_id": "MOTION-11/channel-teaser-vertical/H004",
+   "check": "“Channel feed teaser upright cutdown” (channel-teaser-vertical.mp4) closes on an end card frame.",
+   "why": "compound split: the handle moved to its own check",
+   "evidence_reference": "Group requirement for the animation group: the final frame is a usable end card."
+  }
+ ],
+ "add": [
+  {
+   "key": "t1-read320",
+   "output_id": "thumbnail-we-broke-the-map",
+   "type": "human",
+   "k_id": "K5_Q1",
+   "check": "Displayed 320 px wide, every word of the title on “Channel thumbnail - WE BROKE THE MAP” (thumbnail-we-broke-the-map.png) can still be read.",
+   "evidence_reference": "Brief: the title still reads at 320 px wide in a feed. Group requirement: the title is readable at 320 px width.",
+   "reference_assets": [
+    "staticfox_titles.txt"
+   ],
+   "why": "hole: the brief requires the title to read at 320 px; only clipping was checked"
+  },
+  {
+   "key": "t1-nocond",
+   "output_id": "thumbnail-we-broke-the-map",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "The final word “MAP” on “Channel thumbnail - WE BROKE THE MAP” (thumbnail-we-broke-the-map.png) keeps the normal width of the supplied Archivo Black letters, not condensed or squeezed.",
+   "evidence_reference": "Type system rule: never set the payoff word condensed. Type scale step 02 note: never condensed.",
+   "reference_assets": [
+    "fonts/Anton-Regular.ttf",
+    "fonts/ArchivoBlack-Regular.ttf"
+   ],
+   "why": "compound split from the payoff family check (rule: never set the payoff word condensed)"
+  },
+  {
+   "key": "t1-enlarge",
+   "output_id": "thumbnail-we-broke-the-map",
+   "type": "human",
+   "k_id": "K2_Q2",
+   "check": "The capture frame on “Channel thumbnail - WE BROKE THE MAP” (thumbnail-we-broke-the-map.png) is not visibly pixelated or blocky at full size from being enlarged.",
+   "evidence_reference": "Thumbnail expert review criteria: the finishing looks polished at the delivered size. Planned trap: two captures are smaller frames whose punch-in cannot be reached without enlarging.",
+   "reference_assets": [
+    "staticfox_captures/staticfox_capture_01.mp4"
+   ],
+   "why": "hole: the finishing must look polished at the delivered size; guards the planned enlargement trap on the smaller captures without naming them"
+  },
+  {
+   "key": "t1-lastrow",
+   "output_id": "thumbnail-we-broke-the-map",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "The final word “MAP” sits alone on the last row of the title stack on “Channel thumbnail - WE BROKE THE MAP” (thumbnail-we-broke-the-map.png).",
+   "evidence_reference": "Signature type move and step 02 note: the payoff word is set as the last row of the same capital stack, so the narrow Anton setup fattens hard on the last word.",
+   "reference_assets": [
+    "fonts/Anton-Regular.ttf",
+    "fonts/ArchivoBlack-Regular.ttf"
+   ],
+   "why": "compound split from the payoff family check (signature move)"
+  },
+  {
+   "key": "t1-scrim",
+   "output_id": "thumbnail-we-broke-the-map",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "No scrim or colour wash of any colour, black or white included, lies over the capture frame on “Channel thumbnail - WE BROKE THE MAP” (thumbnail-we-broke-the-map.png).",
+   "evidence_reference": "Brand identity, palette_rules.opacity: no scrim or colour wash of any colour, black and white included, over a capture frame. A cut or plain fade between shots is a transition, not a tint.",
+   "reference_assets": [],
+   "why": "compound split from the solid-colour check"
+  },
+  {
+   "key": "t1-scrapopaque",
+   "output_id": "thumbnail-we-broke-the-map",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "Scrap on “Channel thumbnail - WE BROKE THE MAP” (thumbnail-we-broke-the-map.png) is fully opaque, with no capture frame showing through him.",
+   "evidence_reference": "Brand identity, palette_rules.opacity: supplied raster identity artwork retains its edge anti-aliasing; place it at 100% layer opacity.",
+   "reference_assets": [
+    "staticfox_scrap_transparent.png"
+   ],
+   "why": "hole: the 100% layer opacity rule for the supplied artwork had no check"
+  },
+  {
+   "key": "t2-read320",
+   "output_id": "thumbnail-everyone-off-the-platform",
+   "type": "human",
+   "k_id": "K5_Q1",
+   "check": "Displayed 320 px wide, every word of the title on “Channel thumbnail - EVERYONE OFF THE PLATFORM” (thumbnail-everyone-off-the-platform.png) can still be read.",
+   "evidence_reference": "Brief: the title still reads at 320 px wide in a feed. Group requirement: the title is readable at 320 px width.",
+   "reference_assets": [
+    "staticfox_titles.txt"
+   ],
+   "why": "hole: the brief requires the title to read at 320 px; only clipping was checked"
+  },
+  {
+   "key": "t2-nocond",
+   "output_id": "thumbnail-everyone-off-the-platform",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "The final word “PLATFORM” on “Channel thumbnail - EVERYONE OFF THE PLATFORM” (thumbnail-everyone-off-the-platform.png) keeps the normal width of the supplied Archivo Black letters, not condensed or squeezed.",
+   "evidence_reference": "Type system rule: never set the payoff word condensed. Type scale step 02 note: never condensed.",
+   "reference_assets": [
+    "fonts/Anton-Regular.ttf",
+    "fonts/ArchivoBlack-Regular.ttf"
+   ],
+   "why": "compound split from the payoff family check (rule: never set the payoff word condensed)"
+  },
+  {
+   "key": "t2-enlarge",
+   "output_id": "thumbnail-everyone-off-the-platform",
+   "type": "human",
+   "k_id": "K2_Q2",
+   "check": "The capture frame on “Channel thumbnail - EVERYONE OFF THE PLATFORM” (thumbnail-everyone-off-the-platform.png) is not visibly pixelated or blocky at full size from being enlarged.",
+   "evidence_reference": "Thumbnail expert review criteria: the finishing looks polished at the delivered size. Planned trap: two captures are smaller frames whose punch-in cannot be reached without enlarging.",
+   "reference_assets": [
+    "staticfox_captures/staticfox_capture_02.mp4"
+   ],
+   "why": "hole: the finishing must look polished at the delivered size; guards the planned enlargement trap on the smaller captures without naming them"
+  },
+  {
+   "key": "t2-lastrow",
+   "output_id": "thumbnail-everyone-off-the-platform",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "The final word “PLATFORM” sits alone on the last row of the title stack on “Channel thumbnail - EVERYONE OFF THE PLATFORM” (thumbnail-everyone-off-the-platform.png).",
+   "evidence_reference": "Signature type move and step 02 note: the payoff word is set as the last row of the same capital stack, so the narrow Anton setup fattens hard on the last word.",
+   "reference_assets": [
+    "fonts/Anton-Regular.ttf",
+    "fonts/ArchivoBlack-Regular.ttf"
+   ],
+   "why": "compound split from the payoff family check (signature move)"
+  },
+  {
+   "key": "t2-scrim",
+   "output_id": "thumbnail-everyone-off-the-platform",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "No scrim or colour wash of any colour, black or white included, lies over the capture frame on “Channel thumbnail - EVERYONE OFF THE PLATFORM” (thumbnail-everyone-off-the-platform.png).",
+   "evidence_reference": "Brand identity, palette_rules.opacity: no scrim or colour wash of any colour, black and white included, over a capture frame. A cut or plain fade between shots is a transition, not a tint.",
+   "reference_assets": [],
+   "why": "compound split from the solid-colour check"
+  },
+  {
+   "key": "t2-scrapopaque",
+   "output_id": "thumbnail-everyone-off-the-platform",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "Scrap on “Channel thumbnail - EVERYONE OFF THE PLATFORM” (thumbnail-everyone-off-the-platform.png) is fully opaque, with no capture frame showing through him.",
+   "evidence_reference": "Brand identity, palette_rules.opacity: supplied raster identity artwork retains its edge anti-aliasing; place it at 100% layer opacity.",
+   "reference_assets": [
+    "staticfox_scrap_transparent.png"
+   ],
+   "why": "hole: the 100% layer opacity rule for the supplied artwork had no check"
+  },
+  {
+   "key": "t3-read320",
+   "output_id": "thumbnail-kitchen-gone",
+   "type": "human",
+   "k_id": "K5_Q1",
+   "check": "Displayed 320 px wide, every word of the title on “Channel thumbnail - KITCHEN. GONE.” (thumbnail-kitchen-gone.png) can still be read.",
+   "evidence_reference": "Brief: the title still reads at 320 px wide in a feed. Group requirement: the title is readable at 320 px width.",
+   "reference_assets": [
+    "staticfox_titles.txt"
+   ],
+   "why": "hole: the brief requires the title to read at 320 px; only clipping was checked"
+  },
+  {
+   "key": "t3-nocond",
+   "output_id": "thumbnail-kitchen-gone",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "The final word “GONE.” on “Channel thumbnail - KITCHEN. GONE.” (thumbnail-kitchen-gone.png) keeps the normal width of the supplied Archivo Black letters, not condensed or squeezed.",
+   "evidence_reference": "Type system rule: never set the payoff word condensed. Type scale step 02 note: never condensed.",
+   "reference_assets": [
+    "fonts/Anton-Regular.ttf",
+    "fonts/ArchivoBlack-Regular.ttf"
+   ],
+   "why": "compound split from the payoff family check (rule: never set the payoff word condensed)"
+  },
+  {
+   "key": "t3-enlarge",
+   "output_id": "thumbnail-kitchen-gone",
+   "type": "human",
+   "k_id": "K2_Q2",
+   "check": "The capture frame on “Channel thumbnail - KITCHEN. GONE.” (thumbnail-kitchen-gone.png) is not visibly pixelated or blocky at full size from being enlarged.",
+   "evidence_reference": "Thumbnail expert review criteria: the finishing looks polished at the delivered size. Planned trap: two captures are smaller frames whose punch-in cannot be reached without enlarging.",
+   "reference_assets": [
+    "staticfox_captures/staticfox_capture_03.mp4"
+   ],
+   "why": "hole: the finishing must look polished at the delivered size; guards the planned enlargement trap on the smaller captures without naming them"
+  },
+  {
+   "key": "t3-lastrow",
+   "output_id": "thumbnail-kitchen-gone",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "The final word “GONE.” sits alone on the last row of the title stack on “Channel thumbnail - KITCHEN. GONE.” (thumbnail-kitchen-gone.png).",
+   "evidence_reference": "Signature type move and step 02 note: the payoff word is set as the last row of the same capital stack, so the narrow Anton setup fattens hard on the last word.",
+   "reference_assets": [
+    "fonts/Anton-Regular.ttf",
+    "fonts/ArchivoBlack-Regular.ttf"
+   ],
+   "why": "compound split from the payoff family check (signature move)"
+  },
+  {
+   "key": "t3-scrim",
+   "output_id": "thumbnail-kitchen-gone",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "No scrim or colour wash of any colour, black or white included, lies over the capture frame on “Channel thumbnail - KITCHEN. GONE.” (thumbnail-kitchen-gone.png).",
+   "evidence_reference": "Brand identity, palette_rules.opacity: no scrim or colour wash of any colour, black and white included, over a capture frame. A cut or plain fade between shots is a transition, not a tint.",
+   "reference_assets": [],
+   "why": "compound split from the solid-colour check"
+  },
+  {
+   "key": "t3-scrapopaque",
+   "output_id": "thumbnail-kitchen-gone",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "Scrap on “Channel thumbnail - KITCHEN. GONE.” (thumbnail-kitchen-gone.png) is fully opaque, with no capture frame showing through him.",
+   "evidence_reference": "Brand identity, palette_rules.opacity: supplied raster identity artwork retains its edge anti-aliasing; place it at 100% layer opacity.",
+   "reference_assets": [
+    "staticfox_scrap_transparent.png"
+   ],
+   "why": "hole: the 100% layer opacity rule for the supplied artwork had no check"
+  },
+  {
+   "key": "t4-read320",
+   "output_id": "thumbnail-do-not-open-that-door",
+   "type": "human",
+   "k_id": "K5_Q1",
+   "check": "Displayed 320 px wide, every word of the title on “Channel thumbnail - DO NOT OPEN THAT DOOR” (thumbnail-do-not-open-that-door.png) can still be read.",
+   "evidence_reference": "Brief: the title still reads at 320 px wide in a feed. Group requirement: the title is readable at 320 px width.",
+   "reference_assets": [
+    "staticfox_titles.txt"
+   ],
+   "why": "hole: the brief requires the title to read at 320 px; only clipping was checked"
+  },
+  {
+   "key": "t4-nocond",
+   "output_id": "thumbnail-do-not-open-that-door",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "The final word “DOOR” on “Channel thumbnail - DO NOT OPEN THAT DOOR” (thumbnail-do-not-open-that-door.png) keeps the normal width of the supplied Archivo Black letters, not condensed or squeezed.",
+   "evidence_reference": "Type system rule: never set the payoff word condensed. Type scale step 02 note: never condensed.",
+   "reference_assets": [
+    "fonts/Anton-Regular.ttf",
+    "fonts/ArchivoBlack-Regular.ttf"
+   ],
+   "why": "compound split from the payoff family check (rule: never set the payoff word condensed)"
+  },
+  {
+   "key": "t4-enlarge",
+   "output_id": "thumbnail-do-not-open-that-door",
+   "type": "human",
+   "k_id": "K2_Q2",
+   "check": "The capture frame on “Channel thumbnail - DO NOT OPEN THAT DOOR” (thumbnail-do-not-open-that-door.png) is not visibly pixelated or blocky at full size from being enlarged.",
+   "evidence_reference": "Thumbnail expert review criteria: the finishing looks polished at the delivered size. Planned trap: two captures are smaller frames whose punch-in cannot be reached without enlarging.",
+   "reference_assets": [
+    "staticfox_captures/staticfox_capture_04.mp4"
+   ],
+   "why": "hole: the finishing must look polished at the delivered size; guards the planned enlargement trap on the smaller captures without naming them"
+  },
+  {
+   "key": "t4-lastrow",
+   "output_id": "thumbnail-do-not-open-that-door",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "The final word “DOOR” sits alone on the last row of the title stack on “Channel thumbnail - DO NOT OPEN THAT DOOR” (thumbnail-do-not-open-that-door.png).",
+   "evidence_reference": "Signature type move and step 02 note: the payoff word is set as the last row of the same capital stack, so the narrow Anton setup fattens hard on the last word.",
+   "reference_assets": [
+    "fonts/Anton-Regular.ttf",
+    "fonts/ArchivoBlack-Regular.ttf"
+   ],
+   "why": "compound split from the payoff family check (signature move)"
+  },
+  {
+   "key": "t4-scrim",
+   "output_id": "thumbnail-do-not-open-that-door",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "No scrim or colour wash of any colour, black or white included, lies over the capture frame on “Channel thumbnail - DO NOT OPEN THAT DOOR” (thumbnail-do-not-open-that-door.png).",
+   "evidence_reference": "Brand identity, palette_rules.opacity: no scrim or colour wash of any colour, black and white included, over a capture frame. A cut or plain fade between shots is a transition, not a tint.",
+   "reference_assets": [],
+   "why": "compound split from the solid-colour check"
+  },
+  {
+   "key": "t4-scrapopaque",
+   "output_id": "thumbnail-do-not-open-that-door",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "Scrap on “Channel thumbnail - DO NOT OPEN THAT DOOR” (thumbnail-do-not-open-that-door.png) is fully opaque, with no capture frame showing through him.",
+   "evidence_reference": "Brand identity, palette_rules.opacity: supplied raster identity artwork retains its edge anti-aliasing; place it at 100% layer opacity.",
+   "reference_assets": [
+    "staticfox_scrap_transparent.png"
+   ],
+   "why": "hole: the 100% layer opacity rule for the supplied artwork had no check"
+  },
+  {
+   "key": "t5-read320",
+   "output_id": "thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas",
+   "type": "human",
+   "k_id": "K5_Q1",
+   "check": "Displayed 320 px wide, every word of the title on “Channel thumbnail - WE SPENT SIX HOURS BUILDING A BRIDGE AND THEN DROVE STRAIGHT PAST IT” (thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas.png) can still be read.",
+   "evidence_reference": "Brief: the title still reads at 320 px wide in a feed. Group requirement: the title is readable at 320 px width.",
+   "reference_assets": [
+    "staticfox_titles.txt"
+   ],
+   "why": "hole: the brief requires the title to read at 320 px; only clipping was checked"
+  },
+  {
+   "key": "t5-nocond",
+   "output_id": "thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "The final word “IT” on “Channel thumbnail - WE SPENT SIX HOURS BUILDING A BRIDGE AND THEN DROVE STRAIGHT PAST IT” (thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas.png) keeps the normal width of the supplied Archivo Black letters, not condensed or squeezed.",
+   "evidence_reference": "Type system rule: never set the payoff word condensed. Type scale step 02 note: never condensed.",
+   "reference_assets": [
+    "fonts/Anton-Regular.ttf",
+    "fonts/ArchivoBlack-Regular.ttf"
+   ],
+   "why": "compound split from the payoff family check (rule: never set the payoff word condensed)"
+  },
+  {
+   "key": "t5-enlarge",
+   "output_id": "thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas",
+   "type": "human",
+   "k_id": "K2_Q2",
+   "check": "The capture frame on “Channel thumbnail - WE SPENT SIX HOURS BUILDING A BRIDGE AND THEN DROVE STRAIGHT PAST IT” (thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas.png) is not visibly pixelated or blocky at full size from being enlarged.",
+   "evidence_reference": "Thumbnail expert review criteria: the finishing looks polished at the delivered size. Planned trap: two captures are smaller frames whose punch-in cannot be reached without enlarging.",
+   "reference_assets": [
+    "staticfox_captures/staticfox_capture_05.mp4"
+   ],
+   "why": "hole: the finishing must look polished at the delivered size; guards the planned enlargement trap on the smaller captures without naming them"
+  },
+  {
+   "key": "t5-lastrow",
+   "output_id": "thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "The final word “IT” sits alone on the last row of the title stack on “Channel thumbnail - WE SPENT SIX HOURS BUILDING A BRIDGE AND THEN DROVE STRAIGHT PAST IT” (thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas.png).",
+   "evidence_reference": "Signature type move and step 02 note: the payoff word is set as the last row of the same capital stack, so the narrow Anton setup fattens hard on the last word.",
+   "reference_assets": [
+    "fonts/Anton-Regular.ttf",
+    "fonts/ArchivoBlack-Regular.ttf"
+   ],
+   "why": "compound split from the payoff family check (signature move)"
+  },
+  {
+   "key": "t5-scrim",
+   "output_id": "thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "No scrim or colour wash of any colour, black or white included, lies over the capture frame on “Channel thumbnail - WE SPENT SIX HOURS BUILDING A BRIDGE AND THEN DROVE STRAIGHT PAST IT” (thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas.png).",
+   "evidence_reference": "Brand identity, palette_rules.opacity: no scrim or colour wash of any colour, black and white included, over a capture frame. A cut or plain fade between shots is a transition, not a tint.",
+   "reference_assets": [],
+   "why": "compound split from the solid-colour check"
+  },
+  {
+   "key": "t5-scrapopaque",
+   "output_id": "thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "Scrap on “Channel thumbnail - WE SPENT SIX HOURS BUILDING A BRIDGE AND THEN DROVE STRAIGHT PAST IT” (thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas.png) is fully opaque, with no capture frame showing through him.",
+   "evidence_reference": "Brand identity, palette_rules.opacity: supplied raster identity artwork retains its edge anti-aliasing; place it at 100% layer opacity.",
+   "reference_assets": [
+    "staticfox_scrap_transparent.png"
+   ],
+   "why": "hole: the 100% layer opacity rule for the supplied artwork had no check"
+  },
+  {
+   "key": "t5-payoffrel",
+   "output_id": "thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "The capitals of the final word “IT” on “Channel thumbnail - WE SPENT SIX HOURS BUILDING A BRIDGE AND THEN DROVE STRAIGHT PAST IT” (thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas.png) are shorter than the Anton setup capitals above it.",
+   "evidence_reference": "Type scale: step 01 setup capitals in Anton at 190 px, step 02 payoff in Archivo Black at 150 px; on long copy the whole stack drops to 96 px. Anton capitals are 0.86 em tall and Archivo Black capitals 0.69 em, so the payoff capitals are always visibly shorter than the setup capitals.",
+   "reference_assets": [
+    "fonts/Anton-Regular.ttf",
+    "fonts/ArchivoBlack-Regular.ttf"
+   ],
+   "why": "hole: the step 01 to step 02 relationship was checked only on the short titles"
+  },
+  {
+   "key": "t6-read320",
+   "output_id": "thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi",
+   "type": "human",
+   "k_id": "K5_Q1",
+   "check": "Displayed 320 px wide, every word of the title on “Channel thumbnail - I GAVE MY TEAM ONE SIMPLE JOB AND THEY SET THE ENTIRE BASE ON FIRE” (thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi.png) can still be read.",
+   "evidence_reference": "Brief: the title still reads at 320 px wide in a feed. Group requirement: the title is readable at 320 px width.",
+   "reference_assets": [
+    "staticfox_titles.txt"
+   ],
+   "why": "hole: the brief requires the title to read at 320 px; only clipping was checked"
+  },
+  {
+   "key": "t6-nocond",
+   "output_id": "thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "The final word “FIRE” on “Channel thumbnail - I GAVE MY TEAM ONE SIMPLE JOB AND THEY SET THE ENTIRE BASE ON FIRE” (thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi.png) keeps the normal width of the supplied Archivo Black letters, not condensed or squeezed.",
+   "evidence_reference": "Type system rule: never set the payoff word condensed. Type scale step 02 note: never condensed.",
+   "reference_assets": [
+    "fonts/Anton-Regular.ttf",
+    "fonts/ArchivoBlack-Regular.ttf"
+   ],
+   "why": "compound split from the payoff family check (rule: never set the payoff word condensed)"
+  },
+  {
+   "key": "t6-enlarge",
+   "output_id": "thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi",
+   "type": "human",
+   "k_id": "K2_Q2",
+   "check": "The capture frame on “Channel thumbnail - I GAVE MY TEAM ONE SIMPLE JOB AND THEY SET THE ENTIRE BASE ON FIRE” (thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi.png) is not visibly pixelated or blocky at full size from being enlarged.",
+   "evidence_reference": "Thumbnail expert review criteria: the finishing looks polished at the delivered size. Planned trap: two captures are smaller frames whose punch-in cannot be reached without enlarging.",
+   "reference_assets": [
+    "staticfox_captures/staticfox_capture_06.mp4"
+   ],
+   "why": "hole: the finishing must look polished at the delivered size; guards the planned enlargement trap on the smaller captures without naming them"
+  },
+  {
+   "key": "t6-lastrow",
+   "output_id": "thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "The final word “FIRE” sits alone on the last row of the title stack on “Channel thumbnail - I GAVE MY TEAM ONE SIMPLE JOB AND THEY SET THE ENTIRE BASE ON FIRE” (thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi.png).",
+   "evidence_reference": "Signature type move and step 02 note: the payoff word is set as the last row of the same capital stack, so the narrow Anton setup fattens hard on the last word.",
+   "reference_assets": [
+    "fonts/Anton-Regular.ttf",
+    "fonts/ArchivoBlack-Regular.ttf"
+   ],
+   "why": "compound split from the payoff family check (signature move)"
+  },
+  {
+   "key": "t6-scrim",
+   "output_id": "thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "No scrim or colour wash of any colour, black or white included, lies over the capture frame on “Channel thumbnail - I GAVE MY TEAM ONE SIMPLE JOB AND THEY SET THE ENTIRE BASE ON FIRE” (thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi.png).",
+   "evidence_reference": "Brand identity, palette_rules.opacity: no scrim or colour wash of any colour, black and white included, over a capture frame. A cut or plain fade between shots is a transition, not a tint.",
+   "reference_assets": [],
+   "why": "compound split from the solid-colour check"
+  },
+  {
+   "key": "t6-scrapopaque",
+   "output_id": "thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "Scrap on “Channel thumbnail - I GAVE MY TEAM ONE SIMPLE JOB AND THEY SET THE ENTIRE BASE ON FIRE” (thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi.png) is fully opaque, with no capture frame showing through him.",
+   "evidence_reference": "Brand identity, palette_rules.opacity: supplied raster identity artwork retains its edge anti-aliasing; place it at 100% layer opacity.",
+   "reference_assets": [
+    "staticfox_scrap_transparent.png"
+   ],
+   "why": "hole: the 100% layer opacity rule for the supplied artwork had no check"
+  },
+  {
+   "key": "t6-payoffrel",
+   "output_id": "thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "The capitals of the final word “FIRE” on “Channel thumbnail - I GAVE MY TEAM ONE SIMPLE JOB AND THEY SET THE ENTIRE BASE ON FIRE” (thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi.png) are shorter than the Anton setup capitals above it.",
+   "evidence_reference": "Type scale: step 01 setup capitals in Anton at 190 px, step 02 payoff in Archivo Black at 150 px; on long copy the whole stack drops to 96 px. Anton capitals are 0.86 em tall and Archivo Black capitals 0.69 em, so the payoff capitals are always visibly shorter than the setup capitals.",
+   "reference_assets": [
+    "fonts/Anton-Regular.ttf",
+    "fonts/ArchivoBlack-Regular.ttf"
+   ],
+   "why": "hole: the step 01 to step 02 relationship was checked only on the short titles"
+  },
+  {
+   "key": "ca-present",
+   "output_id": "channel-animation",
+   "type": "human",
+   "k_id": "K1_Q1",
+   "check": "Scrap, the supplied fox mascot, appears in “Animated channel title and end card” (channel-animation.mp4).",
+   "evidence_reference": "Commission: animate the supplied mascot and channel typography, not a gameplay montage.",
+   "reference_assets": [
+    "staticfox_scrap_transparent.png"
+   ],
+   "why": "hole: the commission requires the supplied mascot to be animated; the source check only applied wherever he appears"
+  },
+  {
+   "key": "ca-holdread",
+   "output_id": "channel-animation",
+   "type": "human",
+   "k_id": "K1_Q2",
+   "check": "While “STATIC FOX” is held in “Animated channel title and end card” (channel-animation.mp4), every letter can be read, with nothing covering it.",
+   "evidence_reference": "Deliverable group requirement (Animated channel title and end card): the title remains readable during its hold.",
+   "reference_assets": [
+    "fonts/Anton-Regular.ttf",
+    "fonts/ArchivoBlack-Regular.ttf"
+   ],
+   "why": "hole: group requirement \"The title remains readable during its hold\" had no check"
+  },
+  {
+   "key": "ca-nocond",
+   "output_id": "channel-animation",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "“FOX” in the channel name of “Animated channel title and end card” (channel-animation.mp4) keeps the normal width of the supplied Archivo Black letters, not condensed or squeezed.",
+   "evidence_reference": "Type system rule: never set the payoff word condensed. Type scale step 02 note: never condensed.",
+   "reference_assets": [
+    "fonts/Anton-Regular.ttf",
+    "fonts/ArchivoBlack-Regular.ttf"
+   ],
+   "why": "compound split from the payoff family check (rule: never set the payoff word condensed)"
+  },
+  {
+   "key": "ca-lastrow",
+   "output_id": "channel-animation",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "On the held end card of “Animated channel title and end card” (channel-animation.mp4), “FOX” sits alone on the last row of the “STATIC FOX” title stack.",
+   "evidence_reference": "Signature type move and step 02 note: the payoff word is set as the last row of the same capital stack, so the narrow Anton setup fattens hard on the last word.",
+   "reference_assets": [
+    "fonts/Anton-Regular.ttf",
+    "fonts/ArchivoBlack-Regular.ttf"
+   ],
+   "why": "compound split from the payoff family check (signature move)"
+  },
+  {
+   "key": "ca-scrapopaque",
+   "output_id": "channel-animation",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "Wherever Scrap is held still in “Animated channel title and end card” (channel-animation.mp4), he is fully opaque, with nothing showing through him.",
+   "evidence_reference": "Brand identity, palette_rules.opacity: supplied raster identity artwork retains its edge anti-aliasing; place it at 100% layer opacity.",
+   "reference_assets": [
+    "staticfox_scrap_transparent.png"
+   ],
+   "why": "hole: the 100% layer opacity rule for the supplied artwork had no check"
+  },
+  {
+   "key": "tw-nocond",
+   "output_id": "channel-teaser",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "If a title stack appears in “Channel feed teaser” (channel-teaser.mp4), its final word keeps the normal width of the supplied Archivo Black letters, not condensed or squeezed.",
+   "evidence_reference": "Type system rule: never set the payoff word condensed. Type scale step 02 note: never condensed.",
+   "reference_assets": [
+    "fonts/Anton-Regular.ttf",
+    "fonts/ArchivoBlack-Regular.ttf"
+   ],
+   "why": "compound split from the payoff family check (rule: never set the payoff word condensed)"
+  },
+  {
+   "key": "tw-lastrow",
+   "output_id": "channel-teaser",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "If a title stack appears in “Channel feed teaser” (channel-teaser.mp4), its final word sits alone on the stack's last row.",
+   "evidence_reference": "Signature type move and step 02 note: the payoff word is set as the last row of the same capital stack, so the narrow Anton setup fattens hard on the last word.",
+   "reference_assets": [
+    "fonts/Anton-Regular.ttf",
+    "fonts/ArchivoBlack-Regular.ttf"
+   ],
+   "why": "compound split from the payoff family check (signature move)"
+  },
+  {
+   "key": "tw-scrim",
+   "output_id": "channel-teaser",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "No shot in “Channel feed teaser” (channel-teaser.mp4) carries a scrim or colour wash of any colour over the footage; plain fades between shots are allowed.",
+   "evidence_reference": "Brand identity, palette_rules.opacity: no scrim or colour wash of any colour, black and white included, over a capture frame. A cut or plain fade between shots is a transition, not a tint.",
+   "reference_assets": [],
+   "why": "compound split from the solid-colour check"
+  },
+  {
+   "key": "tw-scrapopaque",
+   "output_id": "channel-teaser",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "Wherever Scrap is held still in “Channel feed teaser” (channel-teaser.mp4), he is fully opaque, with no footage showing through him.",
+   "evidence_reference": "Brand identity, palette_rules.opacity: supplied raster identity artwork retains its edge anti-aliasing; place it at 100% layer opacity.",
+   "reference_assets": [
+    "staticfox_scrap_transparent.png"
+   ],
+   "why": "hole: the 100% layer opacity rule for the supplied artwork had no check"
+  },
+  {
+   "key": "tv-nocond",
+   "output_id": "channel-teaser-vertical",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "If a title stack appears in “Channel feed teaser upright cutdown” (channel-teaser-vertical.mp4), its final word keeps the normal width of the supplied Archivo Black letters, not condensed or squeezed.",
+   "evidence_reference": "Type system rule: never set the payoff word condensed. Type scale step 02 note: never condensed.",
+   "reference_assets": [
+    "fonts/Anton-Regular.ttf",
+    "fonts/ArchivoBlack-Regular.ttf"
+   ],
+   "why": "compound split from the payoff family check (rule: never set the payoff word condensed)"
+  },
+  {
+   "key": "tv-lastrow",
+   "output_id": "channel-teaser-vertical",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "If a title stack appears in “Channel feed teaser upright cutdown” (channel-teaser-vertical.mp4), its final word sits alone on the stack's last row.",
+   "evidence_reference": "Signature type move and step 02 note: the payoff word is set as the last row of the same capital stack, so the narrow Anton setup fattens hard on the last word.",
+   "reference_assets": [
+    "fonts/Anton-Regular.ttf",
+    "fonts/ArchivoBlack-Regular.ttf"
+   ],
+   "why": "compound split from the payoff family check (signature move)"
+  },
+  {
+   "key": "tv-scrim",
+   "output_id": "channel-teaser-vertical",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "No shot in “Channel feed teaser upright cutdown” (channel-teaser-vertical.mp4) carries a scrim or colour wash of any colour over the footage; plain fades between shots are allowed.",
+   "evidence_reference": "Brand identity, palette_rules.opacity: no scrim or colour wash of any colour, black and white included, over a capture frame. A cut or plain fade between shots is a transition, not a tint.",
+   "reference_assets": [],
+   "why": "compound split from the solid-colour check"
+  },
+  {
+   "key": "tv-scrapopaque",
+   "output_id": "channel-teaser-vertical",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "Wherever Scrap is held still in “Channel feed teaser upright cutdown” (channel-teaser-vertical.mp4), he is fully opaque, with no footage showing through him.",
+   "evidence_reference": "Brand identity, palette_rules.opacity: supplied raster identity artwork retains its edge anti-aliasing; place it at 100% layer opacity.",
+   "reference_assets": [
+    "staticfox_scrap_transparent.png"
+   ],
+   "why": "hole: the 100% layer opacity rule for the supplied artwork had no check"
+  },
+  {
+   "key": "tv-handle",
+   "output_id": "channel-teaser-vertical",
+   "type": "human",
+   "k_id": "K1_Q1",
+   "check": "The closing end card of “Channel feed teaser upright cutdown” (channel-teaser-vertical.mp4) shows the handle “@STATICFOX” exactly as written.",
+   "evidence_reference": "Required content: the handle @STATICFOX on the closing frame. staticfox_titles.txt END CARD COPY: @STATICFOX.",
+   "reference_assets": [
+    "staticfox_titles.txt"
+   ],
+   "why": "compound split from the closing-frame check"
+  },
+  {
+   "key": "tv-tagline",
+   "output_id": "channel-teaser-vertical",
+   "type": "human",
+   "k_id": "K1_Q1",
+   "check": "The tagline “Co op disasters and bad decisions.” appears on screen in “Channel feed teaser upright cutdown” (channel-teaser-vertical.mp4) exactly as in staticfox_titles.txt.",
+   "evidence_reference": "Commission: keep the exact tagline and upload line. staticfox_titles.txt: Tagline: Co op disasters and bad decisions.",
+   "reference_assets": [
+    "staticfox_titles.txt"
+   ],
+   "why": "hole: the commission keeps the exact tagline on the upright cutdown; it was checked only on the wide teaser"
+  },
+  {
+   "key": "tv-upload",
+   "output_id": "channel-teaser-vertical",
+   "type": "human",
+   "k_id": "K1_Q1",
+   "check": "The upload line “NEW ONE EVERY OTHER DAY” appears on screen in “Channel feed teaser upright cutdown” (channel-teaser-vertical.mp4) exactly as in staticfox_titles.txt.",
+   "evidence_reference": "Commission: keep the exact tagline and upload line. staticfox_titles.txt END CARD COPY: NEW ONE EVERY OTHER DAY.",
+   "reference_assets": [
+    "staticfox_titles.txt"
+   ],
+   "why": "hole: the commission keeps the exact upload line on the upright cutdown; it was checked only on the wide teaser"
+  },
+  {
+   "key": "tv-action",
+   "output_id": "channel-teaser-vertical",
+   "type": "human",
+   "k_id": "K5_Q2",
+   "check": "In “Channel feed teaser upright cutdown” (channel-teaser-vertical.mp4), the reframe keeps the key action of each capture used in frame: monster crowd (01), jellybeans over slime (02), stove flames (03), lunging monster (04), car and driver (05), burning base (06).",
+   "evidence_reference": "Commission purpose: adapt the wide teaser for a vertical feed without losing the key action; reframe the action and type for the vertical canvas.",
+   "reference_assets": [],
+   "why": "hole: the commission asks to reframe the action for the vertical canvas without losing it"
+  }
+ ]
+}

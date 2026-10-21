@@ -23,6 +23,18 @@ image ops, Express, InDesign data merge, Fonts, Stock, Acrobat, Premiere-style v
   validation, Phase 1 input-asset validation (8 dims incl. "decision quality"), Phase 2 golden trajectory by
   an expert, Phase 3 output scoring (K1 to K7). Humans judge; code checks only objective facts; no AI judge.
 
+## Update 2026-10-21 (read first)
+
+- **Pilot is 13 tasks** (original 10 + LAYOUT-12, VECTOR-04, MOTION-11), refreshed 2026-10-14 (purpose/placement/audience/
+  export per deliverable, OFL fonts in assets, clean transparent logos, fixed vs open decisions, Part A questions reworded).
+- **2026-10-21 fixes A + B applied to those 13:** PHOTO-10 logo rebuilt (leaf restored, S3 same keys), every brief/brand
+  constraint checked on every deliverable with published coverage tables
+  (`docs/gatsby-v7/annotation-pilot/coverage/`, 0 missing cells), machine facts moved to new auto ops, unjudgeable
+  measurements and duplicates retired, atomic plain-language checks, auto kept out of the Human tab and the sheet.
+  Full record and judgement calls: `context/PILOT13_AB_FIXES_2026-10-21.md`. Tooling: `tools/pilot13_ab_fixes/`.
+- Still open from the audit: Brand Identity question set + Decision Quality (platform), task variety, MOTION/other tasks.
+- `TASKS_V5_ALL100.json` is 90.4 MB (GitHub limit 100 MB): split before adding much more data.
+
 ## Current state (2026-10-09)
 
 1. **Gatsby V7 is the current full corpus**: https://dhigdec.github.io/creative-ai-benchmark/gatsby-v7/
@@ -135,6 +147,7 @@ They read the V7 task files, so V7 task edits flow into the pilot when rebuilt.
 | `context/PILOT_10.md` | The 10 pilot tasks, fixes applied, rejected candidates with reasons, the vetting lenses |
 | `context/EXPERT_FEEDBACK_2026-10-07.md` | Expert feedback verbatim, my assessment with evidence, the 5-part plan, pending decisions |
 | `context/OPEN_WORK.md` | Everything still open, in priority order |
+| `context/PILOT13_AB_FIXES_2026-10-21.md` | Pilot-13 fixes A+B: what changed, numbers, tooling, rebuild order, open judgement calls |
 | `context/STORAGE_AWS.md` | AWS account, S3 bucket `annotationprod`, every asset prefix with sizes, SSO profile, local copies |
 | `context/memory/` | Copies of Claude's project memory notes for this project (point-in-time; verify before relying) |
 | `context/workflows/` | Multi-agent workflow scripts and their results (feedback pass on V7; V5 audits and the IP-mark sweep) |

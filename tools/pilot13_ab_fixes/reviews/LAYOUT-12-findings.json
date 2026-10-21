@@ -1,0 +1,340 @@
+{
+ "LANGUAGE, ATOMICITY AND OBSERVABILITY": [
+  {
+   "severity": "major",
+   "check_ids": [
+    "LAYOUT-12/poster-direction-type-led/H044",
+    "LAYOUT-12/poster-direction-image-led/H043",
+    "LAYOUT-12/poster-direction-graphic-led/H043",
+    "LAYOUT-12/promoter-deck/H038",
+    "LAYOUT-12/release-post-r002/H035",
+    "LAYOUT-12/release-post-r003/H030",
+    "LAYOUT-12/release-post-r004/H032",
+    "LAYOUT-12/release-post-r005/H031",
+    "LAYOUT-12/release-post-r006/H031",
+    "LAYOUT-12/release-post-r007/H031",
+    "LAYOUT-12/release-post-r008/H027",
+    "LAYOUT-12/release-post-r009/H027",
+    "LAYOUT-12/release-post-r010/H031"
+   ],
+   "problem": "Compound check. The date-line check bundles three separate facts: position (directly above the act name), line count (on a single line) and colour (Sodium). A post with a Sodium date line set below the act name fails, and the result does not say which fact failed. The 'on a single line' part also has no source: brand_identity.palette_rules.distribution and the type rules only say 'its date line directly above it in Sodium'.",
+   "fix": "Split each into two checks and drop 'on a single line'. Modify the existing id to the colour fact: “The date line on “Night release post - 2026-09-26” (release-post-r003.png) is Sodium #E4863B.” Add a new position check: “The date line on “Night release post - 2026-09-26” (release-post-r003.png) sits directly above the act name.” Poster form: “Every date line on “After Dark poster direction - Type-led” (poster-direction-type-led.pdf) is Sodium #E4863B.” plus “On “After Dark poster direction - Type-led” (poster-direction-type-led.pdf), each date line sits directly above its act name.” Deck form: keep “Any date line typeset in “Promoter pitch deck” (promoter-deck.pdf) outside the poster images ...”, split the same way. Update the B05 coverage cells to list both ids."
+  },
+  {
+   "severity": "major",
+   "check_ids": [
+    "LAYOUT-12/poster-direction-type-led/H043",
+    "LAYOUT-12/poster-direction-image-led/H042",
+    "LAYOUT-12/poster-direction-graphic-led/H042",
+    "LAYOUT-12/promoter-deck/H035",
+    "LAYOUT-12/release-post-r002/H033",
+    "LAYOUT-12/release-post-r003/H024",
+    "LAYOUT-12/release-post-r004/H030",
+    "LAYOUT-12/release-post-r005/H029",
+    "LAYOUT-12/release-post-r006/H029",
+    "LAYOUT-12/release-post-r007/H029",
+    "LAYOUT-12/release-post-r008/H021",
+    "LAYOUT-12/release-post-r009/H021",
+    "LAYOUT-12/release-post-r010/H029"
+   ],
+   "problem": "Compound check that is over 30 words on the posters (the validator warns). It holds two independent facts: (a) Cold Signal and Blood appear only as hairlines, dividers or photo treatment, and (b) together they cover at most 5% of the non-photographic area. These can fail separately: a single Blood text line breaks (a) at well under 5%.",
+   "fix": "Split. Modify the existing id: “On “Night release post - 2026-09-26” (release-post-r003.png), Cold Signal #3F7C8C and Blood #8E2B24 appear only as hairlines, dividers or photo treatment.” Use “hairlines, dividers, chart marks or photo treatment” on the deck. Add: “Cold Signal #3F7C8C and Blood #8E2B24 together cover no more than 5% of the non-photographic area of “Night release post - 2026-09-26” (release-post-r003.png).” Apply to all 13 outputs and list both ids in the B07 coverage cells."
+  },
+  {
+   "severity": "major",
+   "check_ids": [
+    "LAYOUT-12/poster-direction-type-led/H011",
+    "LAYOUT-12/poster-direction-image-led/H009",
+    "LAYOUT-12/poster-direction-graphic-led/H008",
+    "LAYOUT-12/promoter-deck/H010"
+   ],
+   "problem": "Unclear wording, and 34 to 37 words. 'Koa's aside' reads as a quoted aside by Koa, not as 'apart from Koa'. A designer will stop and reread it. The weekday list itself matches 2026 correctly.",
+   "fix": "Rewrite as: “Any weekday shown on “After Dark poster direction - Type-led” (poster-direction-type-led.pdf) matches 2026: Fri 25 Sep, Sat 26 Sep, Fri 2 Oct, Sat 3 Oct, Sun 4 Oct, Fri 9 Oct, Sat 10 Oct, Sat 17 Oct.” Koa's 16 Oct already has its own check (H010, H008, H007 and deck H009), so drop the exception clause. Use the same wording for the image-led, graphic-led and deck checks ('in “Promoter pitch deck” (promoter-deck.pdf)')."
+  },
+  {
+   "severity": "major",
+   "check_ids": [
+    "LAYOUT-12/release-post-r007/H006"
+   ],
+   "problem": "Compound K1_Q5 trap check. It holds two independent facts: the door time is 8:00 PM, and the raw export text “&nbsp;” does not appear. A post showing “DOORS 7” with no &nbsp; and a post showing “8:00&nbsp;PM” fail for different reasons. At 33 words it is also over the length target.",
+   "fix": "Keep the trap fact in the existing id and add the value as a new check. Modify H006 to: “The text “&nbsp;” does not appear anywhere on “Night release post - 2026-10-09” (release-post-r007.png).” (K1_Q5). Add (K1_Q1): “The door time on “Night release post - 2026-10-09” (release-post-r007.png) is 8:00 PM (umbra_nights_autumn.csv row 7), in any clear form such as “DOORS 8”.”"
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "LAYOUT-12/release-post-r002/H014",
+    "LAYOUT-12/release-post-r003/H013",
+    "LAYOUT-12/release-post-r004/H012",
+    "LAYOUT-12/release-post-r005/H012",
+    "LAYOUT-12/release-post-r006/H012",
+    "LAYOUT-12/release-post-r007/H012",
+    "LAYOUT-12/release-post-r008/H012",
+    "LAYOUT-12/release-post-r009/H012",
+    "LAYOUT-12/release-post-r010/H012"
+   ],
+   "problem": "Near-duplicate on the same output. The K5_Q1 check right beside it (r002 H013, r003 H012, r004 to r010 H011) already says the act name is the largest text apart from any series title. That makes 'the act name is set larger than the support line' logically certain, so annotators answer the same fact twice on each of nine posts.",
+   "fix": "Retire each one with covered_by set to that post's 'largest text' check. Use why: 'implied by the act name being the largest text on the post'. To keep a distinct K5_Q2 fact from umbra_billing_autumn.txt ('one size down, prefixed with'), use instead: “On “Night release post - 2026-09-25” (release-post-r002.png), the support line “with Odette Lang” is the second-largest line after the act name.” Add it only if the team wants that rule."
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "LAYOUT-12/poster-direction-type-led/H054",
+    "LAYOUT-12/poster-direction-image-led/H053",
+    "LAYOUT-12/poster-direction-graphic-led/H053"
+   ],
+   "problem": "Duplicate. On each poster PDF the new auto checks A010 and A011 already test that the licence line and the accessibility line are set in Archivo Narrow Regular (at 9 pt). This human family and weight check repeats the same two facts and also packs both lines into one check.",
+   "fix": "Retire each one with covered_by [A010, A011] for that poster and why 'family and weight covered by pdf_text_style auto checks'. Update the matching type-rule coverage cells to cite A010 and A011."
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "LAYOUT-12/poster-direction-type-led/R13-logo-sable",
+    "LAYOUT-12/poster-direction-image-led/R13-logo-sable",
+    "LAYOUT-12/poster-direction-graphic-led/R13-logo-sable",
+    "LAYOUT-12/release-post-r002/R13-logo-sable"
+   ],
+   "problem": "Wrong k_id. 'Uses the letter shapes of umbra_sable_wordmark_transparent.png, not lettering retyped in a font' is an identity-fidelity check. The matching Meridian check on the same outputs (type-led H024, image-led H023, graphic-led H022, r003 H018) and deck H017 are tagged K2_Q4. This one is tagged K2_Q3 (brand-system compliance).",
+   "fix": "Set k_id to K2_Q4 on all four. The text can stay."
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "LAYOUT-12/poster-direction-type-led/H004",
+    "LAYOUT-12/poster-direction-image-led/H004",
+    "LAYOUT-12/poster-direction-graphic-led/H003"
+   ],
+   "problem": "The check carries a rationale clause, '; a misspelled act makes the poster unusable'. That is a reason, not something to observe, and it adds words a designer has to parse.",
+   "fix": "Rewrite as: “Every act name on “After Dark poster direction - Type-led” (poster-direction-type-led.pdf), support acts excepted, is spelled exactly as credited in umbra_billing_autumn.txt.” Keep K1_Q5. Use the same wording for image-led H004 and graphic-led H003."
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "LAYOUT-12/poster-direction-graphic-led/H046"
+   ],
+   "problem": "The standard is uneven across the three direction checks. Type-led H047 says type is more prominent than any photograph or graphic shape. Image-led H046 says the photograph is more prominent than any type block or graphic shape. Graphic-led H046 only compares graphic elements with photographs, so a poster led by a big type block would pass as 'graphic-led'.",
+   "fix": "Rewrite as: “On “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf), solid panels, shapes or rules are the dominant visual element, more prominent than any type block or photograph.”"
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "LAYOUT-12/poster-direction-type-led/H002",
+    "LAYOUT-12/poster-direction-image-led/H002",
+    "LAYOUT-12/poster-direction-graphic-led/H002"
+   ],
+   "problem": "'The event information text' is vague. The annotator is not told which lines count, so two annotators can scope it differently.",
+   "fix": "Rewrite as: “At full A2 size, no letter of any act name, support act, date, licence line or accessibility line on “After Dark poster direction - Type-led” (poster-direction-type-led.pdf) is cut off at an edge.” Use the same wording for image-led and graphic-led."
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "LAYOUT-12/promoter-deck/H006"
+   ],
+   "problem": "Unclear wording. 'term figure' is jargon: it means the split terms in umbra_room_specs.txt, but a designer will not know that. The negative 'states no ... figure absent from' structure is also hard to parse.",
+   "fix": "Rewrite as: “Every draw, capacity, stage, price, date or split-term figure in “Promoter pitch deck” (promoter-deck.pdf) appears in umbra_room_specs.txt, umbra_billing_autumn.txt, umbra_nights_autumn.csv or the brand identity.”"
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "LAYOUT-12/release-post-r002/H018",
+    "LAYOUT-12/release-post-r003/H025",
+    "LAYOUT-12/release-post-r004/H015",
+    "LAYOUT-12/release-post-r005/H015",
+    "LAYOUT-12/release-post-r006/H015",
+    "LAYOUT-12/release-post-r007/H015",
+    "LAYOUT-12/release-post-r008/H022",
+    "LAYOUT-12/release-post-r009/H022",
+    "LAYOUT-12/release-post-r010/H015",
+    "LAYOUT-12/poster-direction-type-led/H029",
+    "LAYOUT-12/poster-direction-image-led/H003",
+    "LAYOUT-12/poster-direction-graphic-led/H027",
+    "LAYOUT-12/promoter-deck/H021"
+   ],
+   "problem": "Two observable facts in one check. 'Reproduced in two brand palette colours' and 'with visible grain' can fail on their own: a clean duotone with no grain, or a grainy full-colour photo.",
+   "fix": "Keep the two-colour fact in the existing id: “The photograph on “Night release post - 2026-09-26” (release-post-r003.png) is reproduced in two palette colours, not in full colour.” Add: “The photograph on “Night release post - 2026-09-26” (release-post-r003.png) shows visible grain.” Use 'Every performance photograph in' on the deck and 'Any performance photograph on' on the type-led and graphic-led posters."
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "LAYOUT-12/poster-direction-type-led/H022",
+    "LAYOUT-12/poster-direction-image-led/H021",
+    "LAYOUT-12/poster-direction-graphic-led/H020",
+    "LAYOUT-12/release-post-r002/H021",
+    "LAYOUT-12/promoter-deck/H015"
+   ],
+   "problem": "Unclear wording. 'none lost to the cloth or the cracked print' points at the merchandise photo, but the required source is the transparent production artwork. An annotator looking at umbra_sable_wordmark_transparent.png sees no cloth.",
+   "fix": "Rewrite as: “Every letter of SABLE QUARTET is clearly visible in the Sable Quartet wordmark on “Night release post - 2026-09-25” (release-post-r002.png), none lost to cracks or texture.” For the deck: “If a Sable Quartet wordmark appears in “Promoter pitch deck” (promoter-deck.pdf), every letter of SABLE QUARTET is clearly visible in it.”"
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "LAYOUT-12/poster-direction-type-led/H040",
+    "LAYOUT-12/poster-direction-image-led/H039",
+    "LAYOUT-12/poster-direction-graphic-led/H039",
+    "LAYOUT-12/release-post-r002/H031",
+    "LAYOUT-12/release-post-r003/H022",
+    "LAYOUT-12/release-post-r004/H027",
+    "LAYOUT-12/release-post-r005/H026",
+    "LAYOUT-12/release-post-r006/H026",
+    "LAYOUT-12/release-post-r007/H026",
+    "LAYOUT-12/release-post-r008/H019",
+    "LAYOUT-12/release-post-r009/H019",
+    "LAYOUT-12/release-post-r010/H026"
+   ],
+   "problem": "Partial duplicate. The Sodium part of 'Pitch, Bone White and Sodium all appear' is already settled by the date-line Sodium check on the same output (B05). Sodium is mandatory only for date lines, so annotators answer the Sodium question twice.",
+   "fix": "Narrow it to the two colours no other check guarantees: “Pitch #0E0E10 and Bone White #E9E4D8 both appear in the designed parts of “Night release post - 2026-09-26” (release-post-r003.png).” This matches deck H032. In the B02 coverage cells, cite this check plus the Sodium date-line check."
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "LAYOUT-12/release-post-r003/H023",
+    "LAYOUT-12/release-post-r002/H032",
+    "LAYOUT-12/poster-direction-type-led/H042",
+    "LAYOUT-12/promoter-deck/H034"
+   ],
+   "problem": "Awkward wording in the opacity check: 'no tint, transparency, gradient, glow, shadow, or scrim or overlay on the photograph' runs two 'or's together and reads as if the glow and shadow apply to the photograph. This applies to the same template on all 13 outputs (r004 H029, r005 to r007 and r010 H028, r008 and r009 H020, image-led and graphic-led H041).",
+   "fix": "Rewrite as: “All colour on “Night release post - 2026-09-26” (release-post-r003.png) is solid at 100% opacity, with no tint, transparency, gradient, glow or shadow, and no scrim or overlay on the photograph.” Apply the same wording to every output, using 'a photograph' on the posters and the deck."
+  }
+ ],
+ "FIDELITY AND COVERAGE": [
+  {
+   "severity": "major",
+   "check_ids": [
+    "LAYOUT-12/poster-direction-*/A010",
+    "LAYOUT-12/poster-direction-*/A011"
+   ],
+   "problem": "Type scale step 04 (fine print, which the scale note says covers the poster licence and access lines) is \"+30 units, all caps\". pdf_text_style matching is case-sensitive: verify_outputs.py uses ''.join(normal).find(wanted). A compliant poster that sets the licence line in capitals will not match the mixed-case text in A010 (\"City of Providence Entertainment Licence PVD-2021-0846\") or A011 (\"Step-free access to the main room\"). Both checks then raise VerifierUnavailable, and evaluate() marks the task incomplete_or_failed. This happens on all three posters (6 auto checks).",
+   "fix": "On all three posters, change A010 text to the case-invariant \"PVD-2021-0846\" (keep Archivo Narrow Regular 9 pt). A011 has no case-invariant substring, so drop it and leave the access-line family to human H054/H053/H053 (type/image/graphic). Alternatively, write the A011 text in capitals, \"STEP-FREE ACCESS TO THE MAIN ROOM\", but only if the team agrees step 04 caps applies to the access line."
+  },
+  {
+   "severity": "major",
+   "check_ids": [
+    "coverage B03",
+    "all 13 outputs"
+   ],
+   "problem": "Brand palette: Pitch is \"The main ground of every poster, post and deck page\" (palette_rules.distribution: \"Pitch is the main ground\"). The coverage rule B03 shortens this to \"Grounds and panels are Pitch or Ash\" and loses the main-ground half. No check on any output tests it: an all-Ash ground passes B02 (Pitch appears somewhere) and B03 (Ash is allowed).",
+   "fix": "Add a B rule \"Pitch #0E0E10 is the main ground\" and one human K2_Q3 check per output, e.g. \"Pitch #0E0E10 is the main ground of “Night release post - 2026-09-25” (release-post-r002.png).\" Do the same for each poster and post, and for the deck use \"…of every page of “Promoter pitch deck” (promoter-deck.pdf).\""
+  },
+  {
+   "severity": "major",
+   "check_ids": [
+    "LAYOUT-12/release-post-r004 (missing)",
+    "coverage (no rule)"
+   ],
+   "problem": "umbra_billing_autumn.txt says \"Credit: 'NIGHT FERRY' (two words)\" and \"credit exactly as written\". Each poster guards this with a K1_Q3 check (type-led H007, image-led H005, graphic-led H004), but the Night Ferry release post r004 has none. Its only name check is H011, a hierarchy check (\"largest text is the act name 'Night Ferry'\"). No coverage rule lists the credit-as-written requirement, so the hole never shows up.",
+   "fix": "Add to r004: {key:\"r004-nf-two-words\", k_id:\"K1_Q3\", check:\"Night Ferry is credited on “Night release post - 2026-10-02” (release-post-r004.png) as two words, “NIGHT FERRY”, never run together.\", evidence_reference:\"umbra_billing_autumn.txt: Credit: 'NIGHT FERRY' (two words).\"}. Add a brief rule \"Acts are credited exactly as written in umbra_billing_autumn.txt\" that cites poster H004/H003, deck H008 and the new r004 check."
+  },
+  {
+   "severity": "major",
+   "check_ids": [
+    "coverage F05",
+    "poster-direction-type-led/H014",
+    "poster-direction-image-led/H012",
+    "poster-direction-graphic-led/H011"
+   ],
+   "problem": "Rule F05 reads \"Support acts appear one size down from the headline, prefixed with\". On the three posters it cites only the size check (H014/H012/H011). No poster check tests the 'with' prefix: H012/H013 (type-led) say \"Sable Quartet is billed with Odette Lang\", which does not require the literal word 'with'. On the posts the prefix is covered (H005 \"reads 'with Odette Lang'\"), but the cells cite only the size check.",
+   "fix": "Add one K1_Q1 check per poster: \"Every support act on “After Dark poster direction - Type-led” (poster-direction-type-led.pdf) is prefixed “with”, as in “with Odette Lang”.\" Add H005 to the F05 cells for r002 to r010."
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "coverage F06",
+    "release-post-r002..r010 (except r009)"
+   ],
+   "problem": "F06 is \"Keep all nine dates: Koa plays Friday 16 Oct...\", but eight posts mark it na because \"the Koa weekday does not apply\". Those posts do carry their date and must keep it: H001 checks the date, and on r005/r006 H001 is the K1_Q5 residency trap. The poster cells also cite only the Koa weekday check, not the date checks H008/H009.",
+   "fix": "Split F06 into \"Keep each night's CSV date\" and \"Koa's 16 Oct weekday is Friday\". For the first, cite H001 plus the weekday check (r002 H016, r003 H010, others H009) on each post, and H008/H009 (type-led), H006/H007 (image-led), H005/H006 (graphic-led) on the posters. Keep na only for the Koa weekday half."
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "coverage T02/T05",
+    "all outputs"
+   ],
+   "problem": "Step 01 (act names; the typography text says \"one solid mass of caps\") and step 04 (door line) are both specified \"all caps\". T03 tracks capitals for the date line (H052 etc.), but no rule or check covers capitals for act names or the door line. That leaves a checkable type rule out of the rule list.",
+   "fix": "Add 'all caps' to T02 and T05, and add human K2_Q3 checks per output, e.g. \"The act name on “Night release post - 2026-10-09” (release-post-r007.png) is set in capitals.\" and \"The door line on “…” (release-post-r007.png) is set in capitals.\" On posters and the deck, make the door check conditional."
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "coverage T04",
+    "release-post-r002..r010/R13-supporting-billing-family"
+   ],
+   "problem": "On posts, T04 (Archivo Narrow Regular for body and supporting copy; Sora never sets billing or body) cites only the support-line check. The set-time and advance-price lines are release-post supporting copy (step 03 note: 28 px / 38 px), but no check confirms their family. A post that sets them in Sora passes.",
+   "fix": "Add one K2_Q3 check per post: \"The set time and advance price on “Night release post - 2026-09-25” (release-post-r002.png) are set in Archivo Narrow Regular.\" Cite it under T04."
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "coverage rule list"
+   ],
+   "problem": "The rule list leaves out checkable rules from the type system and brand assets. (1) Type rule \"Do not apply the 180 pt series-title size to the full billing list\" and the step 01 note \"A2 series title only, not every act in the schedule\". This is relevant on the PDF posters. (2) brand_assets_status \"Merchandise photos are historical references only\": nothing stops umbra_wordmark_sable.jpg, umbra_wordmark_meridian.jpg or umbra_wordmark_nightferry.jpg being placed as images, for example on a deck history slide. (3) T12 drops the \"compact series-title stack in Sora ExtraBold\" half of the signature move, while every series-title check is written \"If a series title … appears\", even though the scale gives the series title a set size on A2 and on posts (96 px).",
+   "fix": "Add type rules for (1), with a per-poster human K5_Q2 check: \"No act name on “…” (poster-direction-*.pdf) is as large as the series title.\" Add a brand rule for (2), with a per-output K2_Q1 check: \"No merchandise photo (umbra_wordmark_sable.jpg, umbra_wordmark_meridian.jpg, umbra_wordmark_nightferry.jpg) appears on “…”.\" Restore the full signature move text in T12 and decide explicitly whether the series-title stack is required on posters and posts. If it is, drop \"If … appears\"."
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "promoter-deck/H043",
+    "release-post-r002/H034",
+    "release-post-r003/H029",
+    "release-post-r004/H031",
+    "release-post-r005/H030",
+    "release-post-r006/H030",
+    "release-post-r007/H030",
+    "release-post-r008/H026",
+    "release-post-r009/H026",
+    "release-post-r010/H030"
+   ],
+   "problem": "All nine shared-pair checks depend on the deck naming the pair (new H043). The brief's \"Explain that choice in the deck\" grammatically refers to the chosen direction. A deck that explains only the direction fails H043 and leaves all nine post checks unanswerable. The guide allows this reference, but the failure spreads to nine checks.",
+   "fix": "Keep H043, but give the post checks a stated fallback that still names one fixed file, e.g. \"…are the pair that promoter-deck.pdf names for the release posts; if the deck names none, the pair used on release-post-r002.png\". Write the r002 check against the deck only."
+  }
+ ],
+ "repair": {
+  "fixed": [
+   "Case-sensitive pdf_text_style (verify_outputs.py uses ''.join(normal).find(wanted)), while step 04 is 'all caps'. On all 3 posters A010 now matches the case-invariant 'PVD-2021-0846' (Archivo Narrow Regular, 9 pt). The access-line auto check A011 is dropped; the human fine-print check covers that line.",
+   "Pitch main ground: added brand rule B16 and one K2_Q3 check per output (13). The deck uses 'every page of'.",
+   "Night Ferry credit: added the K1_Q3 'two words, NIGHT FERRY' check to r004. Added a K1_Q1 act-name spelling check to the other 8 posts. Added rule F08 'credited exactly as written', which cites poster spelling and Night Ferry checks, deck H008 and the post checks.",
+   "Rule F05 text fixed to \"prefixed 'with'\". Added a per-poster K1_Q1 'every support act is prefixed with' check. The post cells now cite H005 plus the largest-text check.",
+   "Rule F06 split into F06 'Keep all nine dates' and F07 'Koa 16 Oct is Friday'. F06 cites the date, year and weekday checks on the posts, the date and weekday checks on the posters, and deck H006, H009 and H010. F07 is na only on the non-Koa posts.",
+   "Caps: act-name family checks now read 'Sora ExtraBold capitals' and door-line family checks 'Archivo Narrow SemiBold capitals'. The door checks stay conditional on the posters and the deck. Rules T02 and T05 updated.",
+   "Added a K2_Q3 check per post that the set time and advance price are set in Archivo Narrow Regular, cited under T04.",
+   "Added rule T13 (no 180 pt series-title size on the billing list) with a per-poster K5_Q2 check that every act name is smaller than the series title. Added rule B17 (merchandise photos are references only) with a K2_Q1 check on all 13 outputs. T12 now carries the full signature move. The series-title stack is now required on posters and posts, which drops the 'If ... appears' wording; it stays conditional on the deck. The largest-text checks now say 'Apart from the series title'.",
+   "Shared pair: r002 checks against promoter-deck.pdf only. r003 to r010 now say 'match the pair promoter-deck.pdf names for the posts or, if it names none, the pair on release-post-r002.png'. Deck H043 kept.",
+   "Date-line check split into 'is Sodium #E4863B' and 'sits directly above its act name' on all 13 outputs. Dropped 'on a single line', which has no source. B05 and T12 cite both checks.",
+   "Accent check split on all 13 outputs: the existing check keeps 'appear only as hairlines, dividers (chart marks on the deck) or photo treatment'. A new check holds the '5% of the non-photographic area' limit. B07 cites both.",
+   "Weekday checks on the 3 posters and the deck rewritten as 'Any weekday shown on ... matches 2026: ...'. The confusing 'Koa's aside' clause is gone; Koa keeps its own check.",
+   "r007 H006 split: H006 (K1_Q5 trap) now reads 'The text “&nbsp;” does not appear anywhere on ...'. A new K1_Q1 check holds the door time 8:00 PM, row 7.",
+   "Retired the 9 post checks 'act name is set larger than the support line' (r002 H014, r003 H013, r004 to r010 H012), covered_by each post's largest-text check.",
+   "Sable Quartet wordmark R13-logo-sable checks (3 posters and r002) set to K2_Q4, to match the Meridian Brass lettering checks.",
+   "Removed the rationale clause from the poster spelling checks (type-led H004, image-led H004, graphic-led H003). They stay K1_Q5.",
+   "Graphic-led led check now reads 'solid panels, shapes or rules are the dominant visual element, more prominent than any type block or photograph'.",
+   "Poster H002 now names the lines: 'no letter of an act name, support act, date, licence line or accessibility line ... is cut off'.",
+   "Deck H006 rewritten in positive form: 'Every draw, capacity, stage, price, date or deal figure ... appears in umbra_room_specs.txt, umbra_billing_autumn.txt, umbra_nights_autumn.csv or the brand identity'.",
+   "Photo treatment split on all 13 outputs: 'reproduced in two palette colours, not in full colour' plus a new 'shows visible grain' check. B11 and D06 cite both.",
+   "Sable Quartet letters check reworded to 'clearly visible ..., none missing or broken up', with no mention of cloth. This is the same trap fact (asset_plan: knockout keeps only 2 or 3 letters).",
+   "Mandatory-colour check: instead of narrowing it, retired it on the posters and the posts that had it (12 checks). covered_by is the act-name 'Bone White on solid Pitch' check plus the new Sodium date-line check, which together imply all three colours appear. r003, r008 and r009 no longer get the added copy. Deck H032 kept, because deck act names are conditional. B02 cites act-colour, date-colour and deck H032.",
+   "Opacity wording reads 'solid at 100% opacity, with no tint, transparency, gradient, glow or shadow, and no scrim or overlay on a/the photograph' on all 13 outputs.",
+   "Known issues from the audit verified as already fixed: r003, r008 and r009 have the palette and act-name colour checks; there are no 'same two as on the other eight' comparisons left."
+  ],
+  "rejected": [
+   {
+    "finding": "LANGUAGE lens: retire poster H054/H053/H053 (licence and accessibility lines in Archivo Narrow Regular) as duplicates of A010/A011.",
+    "why": "I dropped A011 because of the FIDELITY finding: pdf_text_style is case-sensitive and the scale gives step 04 as '+30 units, all caps'. A010 now matches only 'PVD-2021-0846'. That leaves the access line, and most of the licence line, with no auto check, so the human check (now H060 type-led, H059 image-led, H060 graphic-led) is the only family check for them. Act names follow the same pattern: human R13-act-name-text-family alongside auto A008. Coverage T06 cites both the human check and A010."
+   },
+   {
+    "finding": "FIDELITY lens: add separate per-output 'act name is in capitals' and 'door line is in capitals' checks.",
+    "why": "Partly applied. I put 'capitals' into the existing family checks ('set in Sora ExtraBold capitals', 'Archivo Narrow SemiBold capitals') instead of adding 26 more checks. This matches the existing date-line check 'set in Sora ExtraBold capitals', which describes one type setting from the scale row ('ExtraBold', '-10 units, all caps')."
+   },
+   {
+    "finding": "LANGUAGE lens: narrow 'Pitch, Bone White and Sodium all appear' to 'Pitch and Bone White both appear'.",
+    "why": "Replaced with a stronger fix. On posters and posts the act name is required, so 'Bone White on a solid Pitch ground' already proves Pitch and Bone White appear, and the Sodium date-line check proves Sodium. The narrowed check would still be a duplicate, so I retired it (covered_by those two checks). Deck H032 kept, because deck act names are conditional ('Any act name typeset in')."
+   }
+  ],
+  "unresolved": [
+   "Team decision: the series-title stack is now required on the 3 posters and 9 posts. Grounds: the signature move 'A compact series-title stack in Sora ExtraBold' and the step 01 note 'A2 series title only ... Use 96 px on a release post'. If the team treats it as optional, change the series checks back to 'If a series title ... appears', and drop poster H057/H056/H056 (series-size) with them.",
+   "Team decision: B17 reads 'Merchandise photos are historical references only' as 'never placed in a deliverable', which includes a deck history slide.",
+   "Shared-pair checks on r003 to r010 now use promoter-deck.pdf with a fallback to release-post-r002.png. That makes two named references. The brief's 'Explain that choice in the deck' may refer only to the chosen direction, so deck H043 (deck names the pair) could fail on a valid deck.",
+   "18 validator warnings remain: checks of 31 to 37 words that hold one rule as a list. These are the billing order, the remaining-night dates and supports, the 2026 weekday list on the posters and deck, the poster opacity check, and the r005/r006 residency K1_Q5 date trap. All are under the 40-word limit.",
+   "Volume grew by 69 human checks (532 to 601), almost all of them per-output fills for brand and brief rules that had no checks before.",
+   "The user's request 'Give me the link' is not answered here. This repair produced local JSON files (patches/LAYOUT-12.json, coverage/LAYOUT-12.json), not a published page, so there is no link."
+  ]
+ }
+}

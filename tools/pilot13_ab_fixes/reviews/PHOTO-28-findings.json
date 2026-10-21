@@ -1,0 +1,228 @@
+{
+ "LANGUAGE, ATOMICITY AND OBSERVABILITY": [
+  {
+   "severity": "major",
+   "check_ids": [
+    "PHOTO-28/studio-launch/H038",
+    "PHOTO-28/class-feed/H037",
+    "PHOTO-28/booking-story/H035"
+   ],
+   "problem": "Compound and not judgeable by eye. It tests two facts: Oak is used only as hairlines, and Oak covers no more than 5% of the designed area. Nobody can estimate a 5% area share by looking at a PNG. The hairline-only rule is stricter than the 5% cap, so it already implies it.",
+   "fix": "Rewrite each check as one fact, for example studio-launch H038: \"Oak #C7A97A on “Studio launch-page composition” (studio-launch.png) appears only as thin hairline rules or dividers, never as a ground, panel, button, text or fill.\" Use the same wording for class-feed H037 and booking-story H035 with their own names and files. In the why, say the hairline-only wording covers the 5% cap."
+  },
+  {
+   "severity": "major",
+   "check_ids": [
+    "PHOTO-28/studio-launch/H043",
+    "PHOTO-28/class-feed/H043",
+    "PHOTO-28/booking-story/H041"
+   ],
+   "problem": "Two independent facts in one check: no exclamation mark, and no discount or urgency wording. An output can fail one and pass the other.",
+   "fix": "Modify each check to keep only the wording fact, for example: \"The copy on “Studio launch-page composition” (studio-launch.png) has no discount or urgency wording, such as sale, % off, limited time or hurry.\" Add a new check on each output: \"The copy on “Studio launch-page composition” (studio-launch.png) has no exclamation mark.\" Do the same for class-feed.png and booking-story.png. Both new checks are K2_Q3, citing brand_identity.voice and price_positioning."
+  },
+  {
+   "severity": "major",
+   "check_ids": [
+    "PHOTO-28/studio-launch/H035",
+    "PHOTO-28/class-feed/H035",
+    "PHOTO-28/booking-story/H032"
+   ],
+   "problem": "Asks for things a viewer cannot see in a flattened PNG: \"full opacity\" and \"blend effect\" are layer settings. \"Tint\" is unclear to a designer. It also packs five effects into one check.",
+   "fix": "Rewrite as the visible result, for example: \"All type, the wordmark, and every ground, panel and button on “Studio launch-page composition” (studio-launch.png) is one flat, solid colour: nothing shows through it, and it has no gradient or drop shadow.\" Do the same for class-feed H035 and booking-story H032. The brand's 92% wordmark trap is still caught, because a 92% wordmark shows the ground through it."
+  },
+  {
+   "severity": "major",
+   "check_ids": [
+    "PHOTO-28/studio-launch/H002"
+   ],
+   "problem": "Unclear jargon and two facts. \"One content element\" is not a term a designer checks at a glance. The check also mixes \"the offer is grouped in one block\" with \"nothing covers it\".",
+   "fix": "Modify H002: \"No photo, button, panel or other element covers any part of the class list on “Studio launch-page composition” (studio-launch.png).\" Add a new K1_Q1 check (source: acceptance_requirements, \"one unobscured content element\"): \"The six classes and their prices on “Studio launch-page composition” (studio-launch.png) sit together in one block, not split across separate parts of the page.\""
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "PHOTO-28/class-feed/H013"
+   ],
+   "problem": "Two independent cut-out defects in one check: the edge biting into the figure, and a halo or fringe. A cut-out can have either defect without the other.",
+   "fix": "Modify H013: \"The cut-out edge around the instructor on “Class announcement” (class-feed.png) shows no halo or fringe of the original wall.\" Add a new K2_Q2 check: \"No part of the instructor's hair, shoulders or arms is cut away along the cut-out edge on “Class announcement” (class-feed.png).\" Keep H014 and H015 as the trap-specific checks."
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "PHOTO-28/studio-launch/H026",
+    "PHOTO-28/class-feed/H028",
+    "PHOTO-28/booking-story/H003"
+   ],
+   "problem": "Two facts in one check: the mark is the supplied drawing and not retyped, and it is scaled proportionally, not stretched or squashed. A stretched copy of the real drawing passes \"not retyped\" but fails \"proportions unchanged\".",
+   "fix": "Modify each check: \"The studio wordmark on “Studio launch-page composition” (studio-launch.png) is the verda_wordmark_transparent.png drawing, not retyped in another font.\" Add a new K2_Q2 check on each output: \"The studio wordmark on “Studio launch-page composition” (studio-launch.png) is not stretched or squashed; its width-to-height ratio matches verda_wordmark_transparent.png.\" Do the same for class-feed.png and booking-story.png."
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "PHOTO-28/studio-launch/H031",
+    "PHOTO-28/class-feed/H032",
+    "PHOTO-28/booking-story/H029",
+    "PHOTO-28/booking-story/H001"
+   ],
+   "problem": "Exact pixel limits on a PNG (wordmark at most 34 px; safe area 250/320/60 px) cannot be judged by eye, and the validator flags them. They are fixed brief rules, so they cannot be retired. The wording has to tell the annotator to measure.",
+   "fix": "Keep the rules and make them measurable. H031: \"Measured in an image editor, the studio wordmark's visible letterforms on “Studio launch-page composition” (studio-launch.png) are no more than 34 px tall.\" Use the same wording for class-feed H032 and booking-story H029. booking-story H001: \"Measured in an image editor, every part of the booking action on “Studio booking story” (booking-story.png) is at least 250 px below the top edge, 320 px above the bottom edge and 60 px from each side.\""
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "PHOTO-28/studio-launch/H037",
+    "PHOTO-28/class-feed/H036",
+    "PHOTO-28/booking-story/H034"
+   ],
+   "problem": "\"Only small labels may be Sage\" is vague and states no standard. The brand rule names its standard: the field labels on passcard_2025_print.pdf.",
+   "fix": "Rewrite, for example studio-launch H037: \"All type and the wordmark on Warm Off White #F4F0E8 on “Studio launch-page composition” (studio-launch.png) are Soft Ink #33352E; only short labels like the field labels on passcard_2025_print.pdf may be Sage.\" Add passcard_2025_print.pdf to reference_assets. Do the same on the other two outputs."
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "PHOTO-28/studio-launch/H044",
+    "PHOTO-28/class-feed/H008",
+    "PHOTO-28/booking-story/H004"
+   ],
+   "problem": "Wrong k_id. \"The headline is the largest text\" tests information hierarchy (K5_Q2), not primary-message recovery (K5_Q1).",
+   "fix": "Set k_id to K5_Q2 on all three checks. Keep the text as is."
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "PHOTO-28/studio-launch/H020",
+    "PHOTO-28/studio-launch/H060",
+    "PHOTO-28/studio-launch/H061",
+    "PHOTO-28/class-feed/H024",
+    "PHOTO-28/class-feed/H059",
+    "PHOTO-28/class-feed/H060",
+    "PHOTO-28/booking-story/H019",
+    "PHOTO-28/booking-story/H057",
+    "PHOTO-28/booking-story/H058"
+   ],
+   "problem": "Wrong k_id. The upholstery-sage, floor-oak and one-daylight checks come from brand_identity.palette_rules.photography, and the coverage table lists them as brand rules B10 to B12. They are tagged K2_Q4 (identity fidelity), but the guide says brand rules are K2_Q3.",
+   "fix": "Set k_id to K2_Q3 on these nine checks. Keep the text as is."
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "PHOTO-28/class-feed/H063",
+    "PHOTO-28/class-feed/H005"
+   ],
+   "problem": "Near-duplicate on the same output. H005 already requires every ground to be Warm Off White or Sage, and H063 restates that ground-colour fact. The only new fact in H063 is that none of the portrait's original wall shows.",
+   "fix": "Modify H063 so it holds only the new fact: \"No part of the source portrait's original wall shows behind the cut-out instructor on “Class announcement” (class-feed.png); the ground is flat and solid.\" H005 keeps the colour rule."
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "PHOTO-28/studio-launch/H023",
+    "PHOTO-28/booking-story/H022",
+    "PHOTO-28/class-feed/H006",
+    "PHOTO-28/class-feed/H009"
+   ],
+   "problem": "Hard to read: each check spells out all six portrait filenames inline (33 to 36 words). The list hides the one fact being tested.",
+   "fix": "Shorten the list to a range, for example studio-launch H023: \"If a supplied instructor portrait (verda_instructor_01.jpg to verda_instructor_06.jpg) appears on “Studio launch-page composition” (studio-launch.png), the face keeps that portrait's features, with nothing reshaped or regenerated.\" Do the same for booking-story H022 and class-feed H006 and H009."
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "PHOTO-28/studio-launch/H062",
+    "PHOTO-28/class-feed/H061",
+    "PHOTO-28/booking-story/H059"
+   ],
+   "problem": "\"Clearer\" is vague. It adds a second, loosely defined quality on top of the brightness fact, which is the one people can see.",
+   "fix": "Rewrite as one fact, for example: \"Wherever verda_studio_frame_01.jpg or verda_studio_frame_02.jpg appears on “Studio launch-page composition” (studio-launch.png), the room is visibly brighter than the dusky source frame, not left dark.\""
+  }
+ ],
+ "FIDELITY AND COVERAGE": [
+  {
+   "severity": "major",
+   "check_ids": [
+    "PHOTO-28/studio-launch/H020",
+    "PHOTO-28/class-feed/H024",
+    "PHOTO-28/booking-story/H019",
+    "new:l-floor-oak",
+    "new:f-floor-oak",
+    "new:s-floor-oak"
+   ],
+   "problem": "Part of a brand photography rule is untested. palette_rules.photography says \"Photographs keep their own corrected colour and are never recoloured toward the palette\", and the upholstery and floor are \"neither pushed to the Sage or Oak hexes\". Coverage rows B10 and B11 only paraphrase this as \"its own sage green\" and \"its own natural oak\". The checks they cite (H020, H024, H019 and the new floor-oak checks) only ask whether the upholstery reads sage green rather than blue or grey, and whether the floor reads oak rather than orange. A room frame washed flat to #9CA98F or #C7A97A, or an overall palette tint on a photo, passes every current check on all three outputs. The rule list has no row for it, so the coverage table hides the gap.",
+   "fix": "Add a rule row B20: \"Photographs keep their own corrected colour and are never recoloured toward the palette; upholstery and floor are not pushed to the Sage or Oak hexes\" (source: brand_identity.palette_rules.photography). Add one human K2_Q4 check per output and cite it in each cell, e.g. key l-no-palette-wash: \"Wherever verda_studio_frame_01.jpg or verda_studio_frame_02.jpg appears on “Studio launch-page composition” (studio-launch.png), the photo is not tinted toward the palette; upholstery and floor keep their own colour, not flat Sage #9CA98F or Oak #C7A97A.\" Add the same check as f-no-palette-wash for class-feed.png and s-no-palette-wash for booking-story.png. Use the same reference_assets as the floor-oak checks."
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "PHOTO-28/studio-launch/H029",
+    "PHOTO-28/class-feed/H030",
+    "PHOTO-28/booking-story/H027",
+    "PHOTO-28/studio-launch/H033",
+    "PHOTO-28/class-feed/H033",
+    "PHOTO-28/booking-story/H030"
+   ],
+   "problem": "Taking \"from verda_wordmark_transparent.png\" out of the fringe checks was right. As now worded, though, \"clean letter edges, with no grey fringe\" can fail the correct asset. palette_rules.opacity says \"Supplied raster identity artwork retains its edge anti-aliasing\", and that colour rules apply only to intentional recolouring. Annotators may read normal anti-aliased edge pixels as a grey fringe, or as off-palette colour under H033/H030. That would penalise a correct placement and blur what the verda_logo_web.png JPEG-ring trap is testing.",
+   "fix": "Reword H029 (launch), H030 (feed) and H027 (story) to: \"The studio wordmark on “…” (….png) has clean letter edges, with no grey fringe or blocky compression ring; normal edge anti-aliasing is fine.\" Optionally add \"intended\" to H033/H030: \"The intended type, wordmark, panel... colours come only from...\"."
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "PHOTO-28/studio-launch/H032"
+   ],
+   "problem": "Coverage row T08 marks the signature move na on class-feed and booking-story, with the reason \"The brief asks for the separate above-headline lockup only on the launch page.\" But brand_identity.type_system.signature_move is not limited to one output: \"Place [the wordmark] above the headline, on one line ..., no more than 34 px tall\". The type scale also gives class-feed.png and booking-story.png a headline (H2). The coverage applies the \"one line\" and \"34 px\" parts of the same move to all three outputs (T09, T10) but drops \"above the headline\" for two of them, without saying why. The brief's \"on the launch page ... as a separate lockup\" can fairly be read as narrowing only the separate-lockup part.",
+   "fix": "Split T08. Keep \"separate lockup\" launch-only (H032). Add a rule row \"The wordmark sits above the headline (signature move)\" with K2_Q3 checks key f-mark-above-headline: \"The studio wordmark on “Class announcement” (class-feed.png) sits above the headline.\" and s-mark-above-headline for booking-story.png. If the author decides the brief deliberately limits this to the launch page, rewrite both na reasons to quote that brief sentence and say the brief overrides the brand-wide signature move."
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "PHOTO-28/class-feed/H013",
+    "PHOTO-28/class-feed/H014",
+    "PHOTO-28/class-feed/H015"
+   ],
+   "problem": "Row R20 (cutout edge traps for verda_instructor_02.jpg and verda_instructor_05.jpg) is marked na on studio-launch and booking-story because \"the brief commissions an instructor cutout only for the class announcement\". Yet palette_rules.distribution expects that \"a cut-out portrait sits on one of the two\" grounds on any piece. Launch and story also already carry conditional portrait checks (studio-launch/H023, H025; booking-story/H022, H024). If either piece uses a cut-out of Dana Osei or Yuki Sato, the planned shoulder-bite and hair-fringe traps go unchecked there.",
+   "fix": "Add a conditional K2_Q2 check per output and cite it in the R20 cells in place of na. Key l-cutout-edge: \"If an instructor cut-out appears on “Studio launch-page composition” (studio-launch.png), its edge follows hair, shoulders and arms cleanly, with no bite into the figure and no halo.\" Add the same as s-cutout-edge for booking-story.png."
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "PHOTO-28/studio-launch/H006"
+   ],
+   "problem": "Gap left by the roster trap. The asset_plan defect is \"seven rows for six passes\": Erin Coyle's row is a second RF-FND $34 entry. H006 lists the six classes and prices but does not forbid a repeated entry. A launch offer that shows Foundations $34 twice (from Erin's row, without her name) passes H006, H008 and H011.",
+   "fix": "Modify studio-launch/H006 to: \"The class offer on “Studio launch-page composition” (studio-launch.png) lists exactly six classes, each once: Foundations $34, Flow $36, Core & Restore $34, Strength $38, Prenatal $36, Slow & Deep $34.\""
+  },
+  {
+   "severity": "minor",
+   "check_ids": [
+    "PHOTO-28/studio-launch/H005"
+   ],
+   "problem": "Retiring H005 (class offer above booking action) is correct: the brief makes the page hierarchy and booking-action placement designer choices. But its covered_by [studio-launch/H003, new:l-booking-visible] do not test the same fact. One tests that the action stays inside the edges, the other that it is present, not their order. The coverage chain therefore claims a cover that does not exist.",
+   "fix": "Keep the retirement. Change the why to say the requirement is dropped as not stated in the brief, and make clear that covered_by points to the remaining booking-action checks, not to an equivalent of the ordering rule. Leave covered_by empty if the validator allows it."
+  }
+ ],
+ "repair": {
+  "fixed": [
+   "L1-F1: Added B20 (palette_rules.photography: 'never recoloured toward the palette') with new K2_Q3 checks l/f/s-no-palette-wash (studio-launch H066, class-feed H064, booking-story H062), reference_assets verda_studio_frame_01/02.jpg.",
+   "L1-F2: Reworded the fringe checks (studio-launch H029, class-feed H030, booking-story H027) to end with 'normal edge anti-aliasing is fine'. Shortened the palette-only colour checks (H033/H033/H030) and added 'anti-aliased edges aside', per palette_rules.opacity 'Supplied raster identity artwork retains its edge anti-aliasing'. B17 now cites both sources.",
+   "L1-F3: Split T08. T08 is now the brand-wide signature move ('wordmark sits above the headline') with new f/s-mark-above-headline checks (class-feed H065, booking-story H063). The new brief rule R23 holds the launch-only 'separate lockup' (H032); its na reasons quote the brief.",
+   "L1-F4: R20 is now the planned-trap bite rule on all three outputs. Added conditional l/s-cutout-bite checks (studio-launch H067, booking-story H064). Added R24 for the halo, with class-feed H013 and conditional l/s-cutout-halo checks (H068, H065).",
+   "L1-F5: studio-launch H006 now lists 'exactly six classes, each once' to catch the trap row (Erin Coyle RF-FND $34).",
+   "L1-F6: The H005 retirement now has an empty covered_by. Its why now says the ordering rule is dropped because the brief makes it a designer choice, and that no other check tests it.",
+   "L2-F1: Rewrote the Oak checks (H038/H037/H035) as one fact: hairline rules or dividers only, never a ground, panel, button, text or fill. The why says this covers the 5% cap. B06 text updated.",
+   "L2-F2: The voice checks (H043/H043/H041) now cover discount and urgency wording only. Added l/f/s-no-exclaim checks (H069/H066/H066) and new rule B21. B19 text narrowed to match.",
+   "L2-F3: Rewrote the opacity checks (H035/H035/H032) as the visible result: flat, solid colour, with nothing showing through and no gradient or drop shadow. B07 text updated.",
+   "L2-F4: studio-launch H002 now says only that nothing covers the class list. Added l-offer-one-block (H070, K1_Q1) and rule R25 for the acceptance requirement.",
+   "L2-F5: class-feed H013 now covers the halo only. Added f-cutout-bite (H067) for the bite.",
+   "L2-F6: H026/H028/H003 now say only 'not retyped'. Added l/f/s-mark-proportion checks (H071/H068/H067) and rule B22. B15 text narrowed.",
+   "L2-F7: The 34 px checks (H031/H032/H029) and booking-story H001 now start with 'Measured in an image editor'.",
+   "L2-F8: H037/H036/H034 now name the passcard_2025_print.pdf field labels as the Sage label standard, with passcard_2025_print.pdf in reference_assets.",
+   "L2-F9: Set k_id to K5_Q2 on studio-launch H044, class-feed H008 and booking-story H004.",
+   "L2-F10: Set k_id to K2_Q3 on the upholstery checks (H020/H024/H019) and on the floor-oak and one-daylight adds for all three outputs (9 checks).",
+   "L2-F11: f-cutout-ground (class-feed H063) now holds only the new fact: none of the portrait's original wall or background shows behind the cut-out. H005 keeps the ground colour. D04 cites H063, H005 and H028.",
+   "L2-F12: Shortened the portrait-file lists to the range 'verda_instructor_01.jpg to verda_instructor_06.jpg' in studio-launch H023, booking-story H022, class-feed H006 and H009. The H024/H023/H002 name-to-file maps are kept as they are because each name must match its own file.",
+   "L2-F13: The not-dusky checks (l/f/s-not-dusky) drop 'and clearer' and now test only that the room is visibly brighter."
+  ],
+  "rejected": [],
+  "unresolved": [
+   "Validator: 0 errors, 11 warnings. Four warnings are intended pixel values in the measure-in-editor checks (34 px wordmark ×3, 250/320/60 px safe area on booking-story H001). They are fixed brief rules and cannot be retired. Seven are word-count warnings (31 to 37 words, all under the 40 limit), mostly the instructor-to-class and name-to-portrait maps (class-feed H001, H011; studio-launch H014, H024; booking-story H013, H023) plus booking-story H001. These maps must list every pairing to guard the roster trap.",
+   "Judgement call: T08 now applies the brand signature move (wordmark above the headline) to class-feed and booking-story. It follows type_system.signature_move ('Place ... above the headline'). The brief's 'on the launch page ... as a separate lockup' is read as narrowing only the separate-lockup part. If the author reads the brief as limiting the whole move to the launch page, retire class-feed H065 and booking-story H063.",
+   "Volume: human checks go from 164 in the spec to 169 after the patch (152 before this repair; +17 adds). Backups and the repair script are in /Users/dhiren/Documents/ChatGPT/Adobe_Gpt/reviews/pilot13-ab-fixes-2026-10-21/work/PHOTO-28/ (patch_before_repair.json, coverage_before_repair.json, repair.py, show_after_repair.txt)."
+  ]
+ }
+}

@@ -44,7 +44,7 @@
     "output_id": "collection-spread",
     "type": "human",
     "output_reference": "deliverables/collection-spread.pdf",
-    "check": "Every textile on “Autumn interiors collection spread” (collection-spread.pdf) keeps the weave, stripes and fringe of its own source photograph, one of autumn_shoot_12.jpg, textile_flatlay_01.jpg, textile_flatlay_02.jpg, textile_flatlay_03.jpg, textile_flatlay_04.jpg, textile_flatlay_05.jpg or textile_flatlay_06.jpg, with no pattern changed or replaced.",
+    "check": "Every textile on “Autumn interiors collection spread” (collection-spread.pdf) keeps the weave, stripes and fringe of its own source photo, autumn_shoot_12.jpg or textile_flatlay_01.jpg to textile_flatlay_06.jpg, with no pattern changed or replaced.",
     "reference_assets": [
       {
         "filename": "autumn_shoot_12.jpg",
@@ -146,7 +146,7 @@
     "output_id": "wholesale-presentation",
     "type": "human",
     "output_reference": "deliverables/wholesale-presentation.pdf",
-    "check": "Every dimension line on “Interiors wholesale presentation” (wholesale-presentation.pdf) matches the dimensions column of thornmere_autumn_skus.csv for its product, for example “H 70 x Dia 150 mm” for the Indigo Cereal Bowl.",
+    "check": "Every dimension line on “Interiors wholesale presentation” (wholesale-presentation.pdf) matches its product's dimensions in thornmere_autumn_skus.csv, for example “H 70 x Dia 150 mm” for the Indigo Cereal Bowl.",
     "reference_assets": [
       {
         "filename": "thornmere_autumn_skus.csv",
@@ -196,49 +196,8 @@
     "output_id": "wholesale-presentation",
     "type": "human",
     "output_reference": "deliverables/wholesale-presentation.pdf",
-    "check": "No price on “Interiors wholesale presentation” (wholesale-presentation.pdf) differs from the price column of thornmere_autumn_skus.csv for its product; a wrong price makes the trade deck unusable.",
+    "check": "No price on “Interiors wholesale presentation” (wholesale-presentation.pdf) differs from the price column of thornmere_autumn_skus.csv for its product.",
     "reference_assets": [
-      {
-        "filename": "thornmere_autumn_skus.csv",
-        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/tasks/SB3-026-PHO__thornmere-home-autumn-interiors-image-system/assets/thornmere_autumn_skus.csv"
-      },
-      {
-        "filename": "fonts/BarlowCondensed-Medium.ttf",
-        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/BarlowCondensed-Medium.ttf"
-      },
-      {
-        "filename": "fonts/SourceSerif4[opsz,wght].ttf",
-        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/SourceSerif4%5Bopsz%2Cwght%5D.ttf"
-      },
-      {
-        "filename": "fonts/Inter[opsz,wght].ttf",
-        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/Inter%5Bopsz%2Cwght%5D.ttf"
-      }
-    ]
-  },
-  {
-    "check_id": "PHOTO-26/wholesale-presentation/H005",
-    "output_id": "wholesale-presentation",
-    "type": "human",
-    "output_reference": "deliverables/wholesale-presentation.pdf",
-    "check": "The photo shown with each product name on “Interiors wholesale presentation” (wholesale-presentation.pdf) shows that product in its named glaze or dye and form: its picture_filename file in thornmere_autumn_skus.csv wherever that file shows it.",
-    "reference_assets": [
-      {
-        "filename": "autumn_shoot_04.jpg",
-        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/tasks/SB3-026-PHO__thornmere-home-autumn-interiors-image-system/assets/autumn_shoot_04.jpg"
-      },
-      {
-        "filename": "autumn_shoot_06.jpg",
-        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/tasks/SB3-026-PHO__thornmere-home-autumn-interiors-image-system/assets/autumn_shoot_06.jpg"
-      },
-      {
-        "filename": "autumn_shoot_13.jpg",
-        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/tasks/SB3-026-PHO__thornmere-home-autumn-interiors-image-system/assets/autumn_shoot_13.jpg"
-      },
-      {
-        "filename": "textile_flatlay_02.jpg",
-        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/tasks/SB3-026-PHO__thornmere-home-autumn-interiors-image-system/assets/textile_flatlay_02.jpg"
-      },
       {
         "filename": "thornmere_autumn_skus.csv",
         "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/tasks/SB3-026-PHO__thornmere-home-autumn-interiors-image-system/assets/thornmere_autumn_skus.csv"
@@ -262,7 +221,7 @@
     "output_id": "wholesale-presentation",
     "type": "human",
     "output_reference": "deliverables/wholesale-presentation.pdf",
-    "check": "Product names, the brand name, every other display heading and every subheading on “Interiors wholesale presentation” (wholesale-presentation.pdf) are Barlow Condensed Medium capitals tracked visibly open, product names at +200 thousandths, never a serif, Source Serif 4, Inter or another Barlow Condensed weight.",
+    "check": "Every product name and main heading on “Interiors wholesale presentation” (wholesale-presentation.pdf) is Barlow Condensed Medium capitals, never a serif, Inter or another weight.",
     "reference_assets": [
       {
         "filename": "thornmere_spring_catalog_press.pdf",
@@ -287,7 +246,7 @@
     "output_id": "wholesale-presentation",
     "type": "human",
     "output_reference": "deliverables/wholesale-presentation.pdf",
-    "check": "The coloured band behind the products on “Interiors wholesale presentation” (wholesale-presentation.pdf) is one solid block of Soft Clay #C9A98E or Indigo Dye #33455E, the same colour on every page that carries it.",
+    "check": "“Interiors wholesale presentation” (wholesale-presentation.pdf) carries a coloured band that is one solid block of Soft Clay #C9A98E or Indigo Dye #33455E.",
     "reference_assets": [
       {
         "filename": "fonts/BarlowCondensed-Medium.ttf",
@@ -308,7 +267,7 @@
     "output_id": "wholesale-presentation",
     "type": "human",
     "output_reference": "deliverables/wholesale-presentation.pdf",
-    "check": "Every ceramic piece on “Interiors wholesale presentation” (wholesale-presentation.pdf) keeps the outline it has in its own source photograph, one of autumn_shoot_01.jpg to autumn_shoot_11.jpg, autumn_shoot_13.jpg or autumn_shoot_14.jpg, with no handle, rim or foot redrawn or cut away.",
+    "check": "Every ceramic piece on “Interiors wholesale presentation” (wholesale-presentation.pdf) keeps its source-photo outline (autumn_shoot_01.jpg to autumn_shoot_11.jpg, autumn_shoot_13.jpg or autumn_shoot_14.jpg), with no handle, rim or foot redrawn or cut away.",
     "reference_assets": [
       {
         "filename": "autumn_shoot_01.jpg",
@@ -381,7 +340,7 @@
     "output_id": "wholesale-presentation",
     "type": "human",
     "output_reference": "deliverables/wholesale-presentation.pdf",
-    "check": "On “Interiors wholesale presentation” (wholesale-presentation.pdf) the band colour shows through the handle loop of every jug or pitcher cut from autumn_shoot_03.jpg, autumn_shoot_06.jpg or autumn_shoot_08.jpg; no loop holds a patch of studio sweep.",
+    "check": "On “Interiors wholesale presentation” (wholesale-presentation.pdf), every jug or pitcher cut from autumn_shoot_03.jpg, autumn_shoot_06.jpg or autumn_shoot_08.jpg shows the colour behind it through its handle loop, not studio sweep.",
     "reference_assets": [
       {
         "filename": "autumn_shoot_03.jpg",
@@ -460,7 +419,7 @@
     "output_id": "wholesale-presentation",
     "type": "human",
     "output_reference": "deliverables/wholesale-presentation.pdf",
-    "check": "Each featured object on “Interiors wholesale presentation” (wholesale-presentation.pdf) carries its dimensions, materials, care line and price from thornmere_autumn_skus.csv with its product name.",
+    "check": "Every product shown on “Interiors wholesale presentation” (wholesale-presentation.pdf) has its name, dimensions, materials, care line and price printed with it.",
     "reference_assets": [
       {
         "filename": "thornmere_autumn_skus.csv",
@@ -489,7 +448,7 @@
     "output_id": "wholesale-presentation",
     "type": "human",
     "output_reference": "deliverables/wholesale-presentation.pdf",
-    "check": "Wherever autumn_shoot_04.jpg, autumn_shoot_07.jpg or autumn_shoot_10.jpg is used on “Interiors wholesale presentation” (wholesale-presentation.pdf), both pieces in that photograph appear whole; neither is dropped or cut away.",
+    "check": "Wherever autumn_shoot_04.jpg, autumn_shoot_07.jpg, autumn_shoot_10.jpg or autumn_shoot_13.jpg is used on “Interiors wholesale presentation” (wholesale-presentation.pdf), both pieces in that photograph appear whole; neither is dropped or cut away.",
     "reference_assets": [
       {
         "filename": "autumn_shoot_04.jpg",
@@ -551,7 +510,7 @@
     "output_id": "wholesale-presentation",
     "type": "human",
     "output_reference": "deliverables/wholesale-presentation.pdf",
-    "check": "No product name on “Interiors wholesale presentation” (wholesale-presentation.pdf) labels a photograph of a different piece, such as “Oatmeal Teapot” on the charcoal jug of autumn_shoot_06.jpg or “Charcoal Mug” on the oatmeal mug of autumn_shoot_01.jpg.",
+    "check": "No product name on “Interiors wholesale presentation” (wholesale-presentation.pdf) labels a different piece's photo, for example “Oatmeal Teapot” on autumn_shoot_06.jpg's charcoal jug or “Charcoal Mug” on autumn_shoot_01.jpg's oatmeal mug.",
     "reference_assets": [
       {
         "filename": "autumn_shoot_06.jpg",
@@ -592,7 +551,7 @@
     "output_id": "wholesale-presentation",
     "type": "human",
     "output_reference": "deliverables/wholesale-presentation.pdf",
-    "check": "Every textile on “Interiors wholesale presentation” (wholesale-presentation.pdf) keeps the weave, stripes and fringe of its own source photograph, one of autumn_shoot_12.jpg, textile_flatlay_01.jpg, textile_flatlay_02.jpg, textile_flatlay_03.jpg, textile_flatlay_04.jpg, textile_flatlay_05.jpg or textile_flatlay_06.jpg, with no pattern changed or replaced.",
+    "check": "Every textile on “Interiors wholesale presentation” (wholesale-presentation.pdf) keeps the weave, stripes and fringe of its own source photo, autumn_shoot_12.jpg or textile_flatlay_01.jpg to textile_flatlay_06.jpg, with no pattern changed or replaced.",
     "reference_assets": [
       {
         "filename": "autumn_shoot_12.jpg",
@@ -690,7 +649,7 @@
     "output_id": "wholesale-presentation",
     "type": "human",
     "output_reference": "deliverables/wholesale-presentation.pdf",
-    "check": "Wherever the mug in autumn_shoot_01.jpg or the teapot in autumn_shoot_13.jpg is cut out on “Interiors wholesale presentation” (wholesale-presentation.pdf), the colour behind it shows through the handle loop, with no patch of studio sweep inside.",
+    "check": "On “Interiors wholesale presentation” (wholesale-presentation.pdf), the handle loops of the mug from autumn_shoot_01.jpg and the teapot from autumn_shoot_13.jpg, wherever cut out, show the colour behind them, not studio sweep.",
     "reference_assets": [
       {
         "filename": "autumn_shoot_01.jpg",
@@ -781,7 +740,7 @@
     "output_id": "wholesale-presentation",
     "type": "human",
     "output_reference": "deliverables/wholesale-presentation.pdf",
-    "check": "Every oatmeal glaze, wool or stripe cut from autumn_shoot_01.jpg, autumn_shoot_03.jpg, autumn_shoot_07.jpg, autumn_shoot_09.jpg, autumn_shoot_12.jpg, autumn_shoot_13.jpg, textile_flatlay_01.jpg or textile_flatlay_05.jpg on “Interiors wholesale presentation” (wholesale-presentation.pdf) still reads oatmeal as in its frame, not pushed orange toward the warm cast of thornmere_colour_note_phone.jpg.",
+    "check": "Every oatmeal glaze, wool or stripe from autumn_shoot_01.jpg, autumn_shoot_03.jpg, autumn_shoot_07.jpg, autumn_shoot_09.jpg, autumn_shoot_12.jpg, autumn_shoot_13.jpg, textile_flatlay_01.jpg or textile_flatlay_05.jpg stays oatmeal on “Interiors wholesale presentation” (wholesale-presentation.pdf), not pushed orange like thornmere_colour_note_phone.jpg.",
     "reference_assets": [
       {
         "filename": "autumn_shoot_01.jpg",
@@ -838,7 +797,7 @@
     "output_id": "wholesale-presentation",
     "type": "human",
     "output_reference": "deliverables/wholesale-presentation.pdf",
-    "check": "Every soft clay glaze or cloth cut from autumn_shoot_05.jpg, autumn_shoot_11.jpg or textile_flatlay_03.jpg on “Interiors wholesale presentation” (wholesale-presentation.pdf) still reads soft clay as in its frame, not pushed orange toward the warm cast of thornmere_colour_note_phone.jpg.",
+    "check": "On “Interiors wholesale presentation” (wholesale-presentation.pdf), every soft clay glaze or cloth from autumn_shoot_05.jpg, autumn_shoot_11.jpg or textile_flatlay_03.jpg keeps its source photo's soft clay colour, not pushed orange like thornmere_colour_note_phone.jpg.",
     "reference_assets": [
       {
         "filename": "autumn_shoot_05.jpg",
@@ -875,7 +834,7 @@
     "output_id": "wholesale-presentation",
     "type": "human",
     "output_reference": "deliverables/wholesale-presentation.pdf",
-    "check": "Every piece cut from autumn_shoot_04.jpg, autumn_shoot_06.jpg, autumn_shoot_10.jpg or textile_flatlay_04.jpg on “Interiors wholesale presentation” (wholesale-presentation.pdf) still reads the charcoal or stoneware glaze or wool of its frame, not pushed orange toward the warm cast of thornmere_colour_note_phone.jpg.",
+    "check": "On “Interiors wholesale presentation” (wholesale-presentation.pdf), every piece from autumn_shoot_04.jpg, autumn_shoot_06.jpg, autumn_shoot_10.jpg or textile_flatlay_04.jpg keeps its source photo's charcoal or natural stoneware colour, not pushed orange like thornmere_colour_note_phone.jpg.",
     "reference_assets": [
       {
         "filename": "autumn_shoot_04.jpg",
@@ -912,32 +871,11 @@
     ]
   },
   {
-    "check_id": "PHOTO-26/wholesale-presentation/H024",
-    "output_id": "wholesale-presentation",
-    "type": "human",
-    "output_reference": "deliverables/wholesale-presentation.pdf",
-    "check": "No product name on “Interiors wholesale presentation” (wholesale-presentation.pdf) is set larger than 16 pt.",
-    "reference_assets": [
-      {
-        "filename": "fonts/BarlowCondensed-Medium.ttf",
-        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/BarlowCondensed-Medium.ttf"
-      },
-      {
-        "filename": "fonts/SourceSerif4[opsz,wght].ttf",
-        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/SourceSerif4%5Bopsz%2Cwght%5D.ttf"
-      },
-      {
-        "filename": "fonts/Inter[opsz,wght].ttf",
-        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/Inter%5Bopsz%2Cwght%5D.ttf"
-      }
-    ]
-  },
-  {
     "check_id": "PHOTO-26/wholesale-presentation/H025",
     "output_id": "wholesale-presentation",
     "type": "human",
     "output_reference": "deliverables/wholesale-presentation.pdf",
-    "check": "The product name heading each single-product page on “Interiors wholesale presentation” (wholesale-presentation.pdf) stands alone at the head of the page above at least forty millimetres of bare paper.",
+    "check": "On any single-product page of “Interiors wholesale presentation” (wholesale-presentation.pdf), at least 40 mm of bare paper lies directly below the product name heading.",
     "reference_assets": [
       {
         "filename": "fonts/BarlowCondensed-Medium.ttf",
@@ -958,7 +896,7 @@
     "output_id": "wholesale-presentation",
     "type": "human",
     "output_reference": "deliverables/wholesale-presentation.pdf",
-    "check": "The body text on “Interiors wholesale presentation” (wholesale-presentation.pdf) is set in Source Serif 4 Regular, not italic, bold or a sans.",
+    "check": "Any body text on “Interiors wholesale presentation” (wholesale-presentation.pdf) is set in Source Serif 4 Regular, not italic, bold or a sans.",
     "reference_assets": [
       {
         "filename": "fonts/BarlowCondensed-Medium.ttf",
@@ -1025,7 +963,7 @@
     "output_id": "wholesale-presentation",
     "type": "human",
     "output_reference": "deliverables/wholesale-presentation.pdf",
-    "check": "Every line of type on “Interiors wholesale presentation” (wholesale-presentation.pdf) is set in Barlow Condensed Medium, Source Serif 4 Regular or Inter Regular, with no other typeface, such as Georgia or Arial.",
+    "check": "Every line of type on “Interiors wholesale presentation” (wholesale-presentation.pdf) uses only Barlow Condensed Medium, Source Serif 4 Regular or Inter Regular, never Georgia, Arial or another typeface.",
     "reference_assets": [
       {
         "filename": "thornmere_spring_catalog_press.pdf",
@@ -1050,7 +988,7 @@
     "output_id": "wholesale-presentation",
     "type": "human",
     "output_reference": "deliverables/wholesale-presentation.pdf",
-    "check": "The type, ground, tile, panel, band, rule and icon colours on “Interiors wholesale presentation” (wholesale-presentation.pdf) come only from #E7DDCB, #33455E, #F6F1E8, #3B3733 and #C9A98E; none is pure black or the near-black #211E1A of thornmere_spring_catalog_press.pdf.",
+    "check": "Type, grounds, tiles, panels, the band, rules and icons on “Interiors wholesale presentation” (wholesale-presentation.pdf) use only #E7DDCB, #33455E, #F6F1E8, #3B3733 and #C9A98E, never pure black or the near-black #211E1A.",
     "reference_assets": [
       {
         "filename": "thornmere_spring_catalog_press.pdf",
@@ -1075,7 +1013,7 @@
     "output_id": "wholesale-presentation",
     "type": "human",
     "output_reference": "deliverables/wholesale-presentation.pdf",
-    "check": "Warm Paper Ground #F6F1E8 and Stoneware Charcoal #3B3733 both appear on “Interiors wholesale presentation” (wholesale-presentation.pdf), as the page ground and as the type colour.",
+    "check": "Photographs aside, the page ground of every page of “Interiors wholesale presentation” (wholesale-presentation.pdf) is Warm Paper Ground #F6F1E8.",
     "reference_assets": [
       {
         "filename": "thornmere_spring_catalog_press.pdf",
@@ -1100,7 +1038,7 @@
     "output_id": "wholesale-presentation",
     "type": "human",
     "output_reference": "deliverables/wholesale-presentation.pdf",
-    "check": "Every ground, tile, panel and band on “Interiors wholesale presentation” (wholesale-presentation.pdf) is solid at full opacity, with no drop shadow, glow or gradient, and no scrim or overlay of any colour, black and white included, over a photograph.",
+    "check": "Every palette colour on “Interiors wholesale presentation” (wholesale-presentation.pdf) is solid at full opacity, with no tint, transparency, gradient, shadow or blend mode applied.",
     "reference_assets": [
       {
         "filename": "fonts/BarlowCondensed-Medium.ttf",
@@ -1121,7 +1059,7 @@
     "output_id": "wholesale-presentation",
     "type": "human",
     "output_reference": "deliverables/wholesale-presentation.pdf",
-    "check": "No ground, tile, panel or band on “Interiors wholesale presentation” (wholesale-presentation.pdf) is Stoneware Charcoal #3B3733; its product names, headings, subheadings, body, prices, dimension, materials and care lines are #F6F1E8 on Indigo Dye and #3B3733 on every other palette ground.",
+    "check": "No ground, tile, panel or band on “Interiors wholesale presentation” (wholesale-presentation.pdf) is Stoneware Charcoal #3B3733.",
     "reference_assets": [
       {
         "filename": "thornmere_spring_catalog_press.pdf",
@@ -1146,7 +1084,7 @@
     "output_id": "wholesale-presentation",
     "type": "human",
     "output_reference": "deliverables/wholesale-presentation.pdf",
-    "check": "Soft Clay #C9A98E type on “Interiors wholesale presentation” (wholesale-presentation.pdf) is only a small running foot in tracked capitals, and, photographs aside, Oatmeal Glaze, Soft Clay and Indigo Dye together cover less of every page than Warm Paper Ground #F6F1E8.",
+    "check": "Soft Clay #C9A98E type on “Interiors wholesale presentation” (wholesale-presentation.pdf) appears only in a running foot set on Warm Paper Ground #F6F1E8.",
     "reference_assets": [
       {
         "filename": "thornmere_spring_catalog_press.pdf",
@@ -1171,7 +1109,7 @@
     "output_id": "wholesale-presentation",
     "type": "human",
     "output_reference": "deliverables/wholesale-presentation.pdf",
-    "check": "No product photograph on “Interiors wholesale presentation” (wholesale-presentation.pdf) is tinted away from its true colour toward a palette hex or the band, tile or ground behind it; correcting the cast in textile_flatlay_02.jpg is not a tint.",
+    "check": "No product photo on “Interiors wholesale presentation” (wholesale-presentation.pdf) is recoloured toward a palette hex or the band, tile or ground behind it; correcting the cast in textile_flatlay_02.jpg is allowed.",
     "reference_assets": [
       {
         "filename": "textile_flatlay_02.jpg",
@@ -1360,7 +1298,7 @@
     "output_id": "collection-spread",
     "type": "human",
     "output_reference": "deliverables/collection-spread.pdf",
-    "check": "Any dimension line on “Autumn interiors collection spread” (collection-spread.pdf) matches the dimensions column of thornmere_autumn_skus.csv for its product, for example “H 70 x Dia 150 mm” for the Indigo Cereal Bowl.",
+    "check": "Any dimension line on “Autumn interiors collection spread” (collection-spread.pdf) matches its product's dimensions in thornmere_autumn_skus.csv, for example “H 70 x Dia 150 mm” for the Indigo Cereal Bowl.",
     "reference_assets": [
       {
         "filename": "thornmere_autumn_skus.csv",
@@ -1399,45 +1337,8 @@
     "output_id": "collection-spread",
     "type": "human",
     "output_reference": "deliverables/collection-spread.pdf",
-    "check": "No price on “Autumn interiors collection spread” (collection-spread.pdf) differs from the price column of thornmere_autumn_skus.csv for its product; a wrong price makes the spread unusable.",
+    "check": "No price on “Autumn interiors collection spread” (collection-spread.pdf) differs from the price column of thornmere_autumn_skus.csv for its product.",
     "reference_assets": [
-      {
-        "filename": "thornmere_autumn_skus.csv",
-        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/tasks/SB3-026-PHO__thornmere-home-autumn-interiors-image-system/assets/thornmere_autumn_skus.csv"
-      }
-    ]
-  },
-  {
-    "check_id": "PHOTO-26/collection-spread/H010",
-    "output_id": "collection-spread",
-    "type": "human",
-    "output_reference": "deliverables/collection-spread.pdf",
-    "check": "Where a product name on “Autumn interiors collection spread” (collection-spread.pdf) labels a photograph, that photograph shows that product in its named glaze or dye and form, as in its picture_filename file in thornmere_autumn_skus.csv wherever that file shows it.",
-    "reference_assets": [
-      {
-        "filename": "autumn_shoot_04.jpg",
-        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/tasks/SB3-026-PHO__thornmere-home-autumn-interiors-image-system/assets/autumn_shoot_04.jpg"
-      },
-      {
-        "filename": "autumn_shoot_06.jpg",
-        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/tasks/SB3-026-PHO__thornmere-home-autumn-interiors-image-system/assets/autumn_shoot_06.jpg"
-      },
-      {
-        "filename": "autumn_shoot_12.jpg",
-        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/tasks/SB3-026-PHO__thornmere-home-autumn-interiors-image-system/assets/autumn_shoot_12.jpg"
-      },
-      {
-        "filename": "autumn_shoot_13.jpg",
-        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/tasks/SB3-026-PHO__thornmere-home-autumn-interiors-image-system/assets/autumn_shoot_13.jpg"
-      },
-      {
-        "filename": "textile_flatlay_01.jpg",
-        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/tasks/SB3-026-PHO__thornmere-home-autumn-interiors-image-system/assets/textile_flatlay_01.jpg"
-      },
-      {
-        "filename": "textile_flatlay_02.jpg",
-        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/tasks/SB3-026-PHO__thornmere-home-autumn-interiors-image-system/assets/textile_flatlay_02.jpg"
-      },
       {
         "filename": "thornmere_autumn_skus.csv",
         "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/tasks/SB3-026-PHO__thornmere-home-autumn-interiors-image-system/assets/thornmere_autumn_skus.csv"
@@ -1449,7 +1350,7 @@
     "output_id": "collection-spread",
     "type": "human",
     "output_reference": "deliverables/collection-spread.pdf",
-    "check": "No product name on “Autumn interiors collection spread” (collection-spread.pdf) labels a photograph of a different piece, such as “Oatmeal Teapot” on the charcoal jug of autumn_shoot_06.jpg or “Charcoal Mug” on the oatmeal mug of autumn_shoot_01.jpg.",
+    "check": "No product name on “Autumn interiors collection spread” (collection-spread.pdf) labels a different piece's photo, for example “Oatmeal Teapot” on autumn_shoot_06.jpg's charcoal jug or “Charcoal Mug” on autumn_shoot_01.jpg's oatmeal mug.",
     "reference_assets": [
       {
         "filename": "autumn_shoot_06.jpg",
@@ -1478,7 +1379,7 @@
     "output_id": "collection-spread",
     "type": "human",
     "output_reference": "deliverables/collection-spread.pdf",
-    "check": "Every ceramic piece on “Autumn interiors collection spread” (collection-spread.pdf) keeps the outline it has in its own source photograph, one of autumn_shoot_01.jpg to autumn_shoot_11.jpg, autumn_shoot_13.jpg or autumn_shoot_14.jpg, with no handle, rim or foot redrawn or cut away.",
+    "check": "Every ceramic piece on “Autumn interiors collection spread” (collection-spread.pdf) keeps its source-photo outline (autumn_shoot_01.jpg to autumn_shoot_11.jpg, autumn_shoot_13.jpg or autumn_shoot_14.jpg), with no handle, rim or foot redrawn or cut away.",
     "reference_assets": [
       {
         "filename": "autumn_shoot_01.jpg",
@@ -1539,7 +1440,7 @@
     "output_id": "collection-spread",
     "type": "human",
     "output_reference": "deliverables/collection-spread.pdf",
-    "check": "Wherever a jug or pitcher from autumn_shoot_03.jpg, autumn_shoot_06.jpg or autumn_shoot_08.jpg is cut out on “Autumn interiors collection spread” (collection-spread.pdf), the colour behind it shows through the handle loop, with no patch of studio sweep inside.",
+    "check": "On “Autumn interiors collection spread” (collection-spread.pdf), every jug or pitcher cut from autumn_shoot_03.jpg, autumn_shoot_06.jpg or autumn_shoot_08.jpg shows the colour behind it through its handle loop, not studio sweep.",
     "reference_assets": [
       {
         "filename": "autumn_shoot_03.jpg",
@@ -1564,7 +1465,7 @@
     "output_id": "collection-spread",
     "type": "human",
     "output_reference": "deliverables/collection-spread.pdf",
-    "check": "Wherever the mug in autumn_shoot_01.jpg or the teapot in autumn_shoot_13.jpg is cut out on “Autumn interiors collection spread” (collection-spread.pdf), the colour behind it shows through the handle loop, with no patch of studio sweep inside.",
+    "check": "On “Autumn interiors collection spread” (collection-spread.pdf), the handle loops of the mug from autumn_shoot_01.jpg and the teapot from autumn_shoot_13.jpg, wherever cut out, show the colour behind them, not studio sweep.",
     "reference_assets": [
       {
         "filename": "autumn_shoot_01.jpg",
@@ -1619,7 +1520,7 @@
     "output_id": "collection-spread",
     "type": "human",
     "output_reference": "deliverables/collection-spread.pdf",
-    "check": "Every oatmeal glaze, wool or stripe cut from autumn_shoot_01.jpg, autumn_shoot_03.jpg, autumn_shoot_07.jpg, autumn_shoot_09.jpg, autumn_shoot_12.jpg, autumn_shoot_13.jpg, textile_flatlay_01.jpg or textile_flatlay_05.jpg on “Autumn interiors collection spread” (collection-spread.pdf) still reads oatmeal as in its frame, not pushed orange toward the warm cast of thornmere_colour_note_phone.jpg.",
+    "check": "Every oatmeal glaze, wool or stripe from autumn_shoot_01.jpg, autumn_shoot_03.jpg, autumn_shoot_07.jpg, autumn_shoot_09.jpg, autumn_shoot_12.jpg, autumn_shoot_13.jpg, textile_flatlay_01.jpg or textile_flatlay_05.jpg stays oatmeal on “Autumn interiors collection spread” (collection-spread.pdf), not pushed orange like thornmere_colour_note_phone.jpg.",
     "reference_assets": [
       {
         "filename": "autumn_shoot_01.jpg",
@@ -1664,7 +1565,7 @@
     "output_id": "collection-spread",
     "type": "human",
     "output_reference": "deliverables/collection-spread.pdf",
-    "check": "Every soft clay glaze or cloth cut from autumn_shoot_05.jpg, autumn_shoot_11.jpg or textile_flatlay_03.jpg on “Autumn interiors collection spread” (collection-spread.pdf) still reads soft clay as in its frame, not pushed orange toward the warm cast of thornmere_colour_note_phone.jpg.",
+    "check": "On “Autumn interiors collection spread” (collection-spread.pdf), every soft clay glaze or cloth from autumn_shoot_05.jpg, autumn_shoot_11.jpg or textile_flatlay_03.jpg keeps its source photo's soft clay colour, not pushed orange like thornmere_colour_note_phone.jpg.",
     "reference_assets": [
       {
         "filename": "autumn_shoot_05.jpg",
@@ -1689,7 +1590,7 @@
     "output_id": "collection-spread",
     "type": "human",
     "output_reference": "deliverables/collection-spread.pdf",
-    "check": "Every piece cut from autumn_shoot_04.jpg, autumn_shoot_06.jpg, autumn_shoot_10.jpg or textile_flatlay_04.jpg on “Autumn interiors collection spread” (collection-spread.pdf) still reads the charcoal or stoneware glaze or wool of its frame, not pushed orange toward the warm cast of thornmere_colour_note_phone.jpg.",
+    "check": "On “Autumn interiors collection spread” (collection-spread.pdf), every piece from autumn_shoot_04.jpg, autumn_shoot_06.jpg, autumn_shoot_10.jpg or textile_flatlay_04.jpg keeps its source photo's charcoal or natural stoneware colour, not pushed orange like thornmere_colour_note_phone.jpg.",
     "reference_assets": [
       {
         "filename": "autumn_shoot_04.jpg",
@@ -1718,7 +1619,7 @@
     "output_id": "collection-spread",
     "type": "human",
     "output_reference": "deliverables/collection-spread.pdf",
-    "check": "Product names, every other display heading and every subheading on “Autumn interiors collection spread” (collection-spread.pdf) are Barlow Condensed Medium capitals tracked visibly open, product names at +200 thousandths, never a serif, Source Serif 4, Inter or another Barlow Condensed weight.",
+    "check": "Every product name, main heading and any brand name on “Autumn interiors collection spread” (collection-spread.pdf) is Barlow Condensed Medium capitals, never a serif, Inter or another weight.",
     "reference_assets": [
       {
         "filename": "thornmere_spring_catalog_press.pdf",
@@ -1739,19 +1640,11 @@
     ]
   },
   {
-    "check_id": "PHOTO-26/collection-spread/H021",
-    "output_id": "collection-spread",
-    "type": "human",
-    "output_reference": "deliverables/collection-spread.pdf",
-    "check": "No product name on “Autumn interiors collection spread” (collection-spread.pdf) is set larger than 16 pt.",
-    "reference_assets": []
-  },
-  {
     "check_id": "PHOTO-26/collection-spread/H022",
     "output_id": "collection-spread",
     "type": "human",
     "output_reference": "deliverables/collection-spread.pdf",
-    "check": "The product name heading each single-product page on “Autumn interiors collection spread” (collection-spread.pdf) stands alone at the head of the page above at least forty millimetres of bare paper.",
+    "check": "On any single-product page of “Autumn interiors collection spread” (collection-spread.pdf), at least 40 mm of bare paper lies directly below the product name heading.",
     "reference_assets": []
   },
   {
@@ -1759,7 +1652,7 @@
     "output_id": "collection-spread",
     "type": "human",
     "output_reference": "deliverables/collection-spread.pdf",
-    "check": "The body text on “Autumn interiors collection spread” (collection-spread.pdf) is set in Source Serif 4 Regular, not italic, bold or a sans.",
+    "check": "Any body text on “Autumn interiors collection spread” (collection-spread.pdf) is set in Source Serif 4 Regular, not italic, bold or a sans.",
     "reference_assets": [
       {
         "filename": "fonts/BarlowCondensed-Medium.ttf",
@@ -1813,7 +1706,7 @@
     "output_id": "collection-spread",
     "type": "human",
     "output_reference": "deliverables/collection-spread.pdf",
-    "check": "Every line of type on “Autumn interiors collection spread” (collection-spread.pdf) is set in Barlow Condensed Medium, Source Serif 4 Regular or Inter Regular, with no other typeface, such as Georgia or Arial.",
+    "check": "Every line of type on “Autumn interiors collection spread” (collection-spread.pdf) uses only Barlow Condensed Medium, Source Serif 4 Regular or Inter Regular, never Georgia, Arial or another typeface.",
     "reference_assets": [
       {
         "filename": "thornmere_spring_catalog_press.pdf",
@@ -1846,7 +1739,7 @@
     "output_id": "collection-spread",
     "type": "human",
     "output_reference": "deliverables/collection-spread.pdf",
-    "check": "The type, ground, tile, panel, band, rule and icon colours on “Autumn interiors collection spread” (collection-spread.pdf) come only from #E7DDCB, #33455E, #F6F1E8, #3B3733 and #C9A98E; none is pure black or the near-black #211E1A of thornmere_spring_catalog_press.pdf.",
+    "check": "Type, grounds, tiles, panels, any band, rules and icons on “Autumn interiors collection spread” (collection-spread.pdf) use only #E7DDCB, #33455E, #F6F1E8, #3B3733 and #C9A98E, never pure black or the near-black #211E1A.",
     "reference_assets": [
       {
         "filename": "thornmere_spring_catalog_press.pdf",
@@ -1859,7 +1752,7 @@
     "output_id": "collection-spread",
     "type": "human",
     "output_reference": "deliverables/collection-spread.pdf",
-    "check": "Warm Paper Ground #F6F1E8 and Stoneware Charcoal #3B3733 both appear on “Autumn interiors collection spread” (collection-spread.pdf), as the page ground and as the type colour.",
+    "check": "Photographs aside, the page ground of every page of “Autumn interiors collection spread” (collection-spread.pdf) is Warm Paper Ground #F6F1E8.",
     "reference_assets": [
       {
         "filename": "thornmere_spring_catalog_press.pdf",
@@ -1872,7 +1765,7 @@
     "output_id": "collection-spread",
     "type": "human",
     "output_reference": "deliverables/collection-spread.pdf",
-    "check": "Every ground, tile, panel and band on “Autumn interiors collection spread” (collection-spread.pdf) is solid at full opacity, with no drop shadow, glow or gradient, and no scrim or overlay of any colour, black and white included, over a photograph.",
+    "check": "Every palette colour on “Autumn interiors collection spread” (collection-spread.pdf) is solid at full opacity, with no tint, transparency, gradient, shadow or blend mode applied.",
     "reference_assets": []
   },
   {
@@ -1880,7 +1773,7 @@
     "output_id": "collection-spread",
     "type": "human",
     "output_reference": "deliverables/collection-spread.pdf",
-    "check": "No ground, tile, panel or band on “Autumn interiors collection spread” (collection-spread.pdf) is Stoneware Charcoal #3B3733; its product names, headings, subheadings, body, prices, dimension, materials and care lines are #F6F1E8 on Indigo Dye and #3B3733 on every other palette ground.",
+    "check": "No ground, tile, panel or band on “Autumn interiors collection spread” (collection-spread.pdf) is Stoneware Charcoal #3B3733.",
     "reference_assets": [
       {
         "filename": "thornmere_spring_catalog_press.pdf",
@@ -1893,7 +1786,7 @@
     "output_id": "collection-spread",
     "type": "human",
     "output_reference": "deliverables/collection-spread.pdf",
-    "check": "Soft Clay #C9A98E type on “Autumn interiors collection spread” (collection-spread.pdf) is only a small running foot in tracked capitals, and, photographs aside, Oatmeal Glaze, Soft Clay and Indigo Dye together cover less of every page than Warm Paper Ground #F6F1E8.",
+    "check": "Soft Clay #C9A98E type on “Autumn interiors collection spread” (collection-spread.pdf) appears only in a running foot set on Warm Paper Ground #F6F1E8.",
     "reference_assets": [
       {
         "filename": "thornmere_spring_catalog_press.pdf",
@@ -1906,7 +1799,7 @@
     "output_id": "collection-spread",
     "type": "human",
     "output_reference": "deliverables/collection-spread.pdf",
-    "check": "No product photograph on “Autumn interiors collection spread” (collection-spread.pdf) is tinted away from its true colour toward a palette hex or the band, tile or ground behind it; correcting the cast in textile_flatlay_02.jpg is not a tint.",
+    "check": "No product photo on “Autumn interiors collection spread” (collection-spread.pdf) is recoloured toward a palette hex or the band, tile or ground behind it; correcting the cast in textile_flatlay_02.jpg is allowed.",
     "reference_assets": [
       {
         "filename": "textile_flatlay_02.jpg",
@@ -1915,53 +1808,11 @@
     ]
   },
   {
-    "check_id": "PHOTO-26/collection-spread/H034",
-    "output_id": "collection-spread",
-    "type": "human",
-    "output_reference": "deliverables/collection-spread.pdf",
-    "check": "collection-spread.pdf: product name/main heading uses Barlow Condensed Medium capitals (when present).",
-    "reference_assets": [
-      {
-        "filename": "fonts/BarlowCondensed-Medium.ttf",
-        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/BarlowCondensed-Medium.ttf"
-      },
-      {
-        "filename": "fonts/SourceSerif4[opsz,wght].ttf",
-        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/SourceSerif4%5Bopsz%2Cwght%5D.ttf"
-      },
-      {
-        "filename": "fonts/Inter[opsz,wght].ttf",
-        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/Inter%5Bopsz%2Cwght%5D.ttf"
-      }
-    ]
-  },
-  {
     "check_id": "PHOTO-26/collection-spread/H035",
     "output_id": "collection-spread",
     "type": "human",
     "output_reference": "deliverables/collection-spread.pdf",
-    "check": "collection-spread.pdf: product name/main heading has font size 13 pt (when present).",
-    "reference_assets": [
-      {
-        "filename": "fonts/BarlowCondensed-Medium.ttf",
-        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/BarlowCondensed-Medium.ttf"
-      },
-      {
-        "filename": "fonts/SourceSerif4[opsz,wght].ttf",
-        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/SourceSerif4%5Bopsz%2Cwght%5D.ttf"
-      },
-      {
-        "filename": "fonts/Inter[opsz,wght].ttf",
-        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/Inter%5Bopsz%2Cwght%5D.ttf"
-      }
-    ]
-  },
-  {
-    "check_id": "PHOTO-26/collection-spread/H036",
-    "output_id": "collection-spread",
-    "type": "human",
-    "output_reference": "deliverables/collection-spread.pdf",
-    "check": "collection-spread.pdf: product name/main heading has 15 pt leading on multiline text (when present).",
+    "check": "Every product name and main heading on “Autumn interiors collection spread” (collection-spread.pdf) is set at 13 pt, as shown in the PDF's text properties.",
     "reference_assets": [
       {
         "filename": "fonts/BarlowCondensed-Medium.ttf",
@@ -1982,7 +1833,7 @@
     "output_id": "collection-spread",
     "type": "human",
     "output_reference": "deliverables/collection-spread.pdf",
-    "check": "collection-spread.pdf: product name/main heading uses tracking +200/1000 em (when present).",
+    "check": "Product names on “Autumn interiors collection spread” (collection-spread.pdf) have wide, open letter spacing, clearly looser than ordinary text.",
     "reference_assets": [
       {
         "filename": "fonts/BarlowCondensed-Medium.ttf",
@@ -2003,7 +1854,7 @@
     "output_id": "collection-spread",
     "type": "human",
     "output_reference": "deliverables/collection-spread.pdf",
-    "check": "collection-spread.pdf: secondary heading uses Barlow Condensed Medium capitals (when present).",
+    "check": "Any subheading on “Autumn interiors collection spread” (collection-spread.pdf) is set in Barlow Condensed Medium capitals.",
     "reference_assets": [
       {
         "filename": "fonts/BarlowCondensed-Medium.ttf",
@@ -2024,28 +1875,7 @@
     "output_id": "collection-spread",
     "type": "human",
     "output_reference": "deliverables/collection-spread.pdf",
-    "check": "collection-spread.pdf: secondary heading has font size 11 pt (when present).",
-    "reference_assets": [
-      {
-        "filename": "fonts/BarlowCondensed-Medium.ttf",
-        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/BarlowCondensed-Medium.ttf"
-      },
-      {
-        "filename": "fonts/SourceSerif4[opsz,wght].ttf",
-        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/SourceSerif4%5Bopsz%2Cwght%5D.ttf"
-      },
-      {
-        "filename": "fonts/Inter[opsz,wght].ttf",
-        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/Inter%5Bopsz%2Cwght%5D.ttf"
-      }
-    ]
-  },
-  {
-    "check_id": "PHOTO-26/collection-spread/H040",
-    "output_id": "collection-spread",
-    "type": "human",
-    "output_reference": "deliverables/collection-spread.pdf",
-    "check": "collection-spread.pdf: secondary heading has 13 pt leading on multiline text (when present).",
+    "check": "Any subheading on “Autumn interiors collection spread” (collection-spread.pdf) is set at 11 pt, as shown in the PDF's text properties.",
     "reference_assets": [
       {
         "filename": "fonts/BarlowCondensed-Medium.ttf",
@@ -2066,28 +1896,7 @@
     "output_id": "collection-spread",
     "type": "human",
     "output_reference": "deliverables/collection-spread.pdf",
-    "check": "collection-spread.pdf: secondary heading uses tracking +160/1000 em (when present).",
-    "reference_assets": [
-      {
-        "filename": "fonts/BarlowCondensed-Medium.ttf",
-        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/BarlowCondensed-Medium.ttf"
-      },
-      {
-        "filename": "fonts/SourceSerif4[opsz,wght].ttf",
-        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/SourceSerif4%5Bopsz%2Cwght%5D.ttf"
-      },
-      {
-        "filename": "fonts/Inter[opsz,wght].ttf",
-        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/Inter%5Bopsz%2Cwght%5D.ttf"
-      }
-    ]
-  },
-  {
-    "check_id": "PHOTO-26/collection-spread/H042",
-    "output_id": "collection-spread",
-    "type": "human",
-    "output_reference": "deliverables/collection-spread.pdf",
-    "check": "collection-spread.pdf: body text uses Source Serif 4 Regular (when present).",
+    "check": "Any subheading on “Autumn interiors collection spread” (collection-spread.pdf) has visibly open letter spacing.",
     "reference_assets": [
       {
         "filename": "fonts/BarlowCondensed-Medium.ttf",
@@ -2108,70 +1917,7 @@
     "output_id": "collection-spread",
     "type": "human",
     "output_reference": "deliverables/collection-spread.pdf",
-    "check": "collection-spread.pdf: body text has font size 10 pt (when present).",
-    "reference_assets": [
-      {
-        "filename": "fonts/BarlowCondensed-Medium.ttf",
-        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/BarlowCondensed-Medium.ttf"
-      },
-      {
-        "filename": "fonts/SourceSerif4[opsz,wght].ttf",
-        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/SourceSerif4%5Bopsz%2Cwght%5D.ttf"
-      },
-      {
-        "filename": "fonts/Inter[opsz,wght].ttf",
-        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/Inter%5Bopsz%2Cwght%5D.ttf"
-      }
-    ]
-  },
-  {
-    "check_id": "PHOTO-26/collection-spread/H044",
-    "output_id": "collection-spread",
-    "type": "human",
-    "output_reference": "deliverables/collection-spread.pdf",
-    "check": "collection-spread.pdf: body text has 15 pt leading on multiline text (when present).",
-    "reference_assets": [
-      {
-        "filename": "fonts/BarlowCondensed-Medium.ttf",
-        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/BarlowCondensed-Medium.ttf"
-      },
-      {
-        "filename": "fonts/SourceSerif4[opsz,wght].ttf",
-        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/SourceSerif4%5Bopsz%2Cwght%5D.ttf"
-      },
-      {
-        "filename": "fonts/Inter[opsz,wght].ttf",
-        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/Inter%5Bopsz%2Cwght%5D.ttf"
-      }
-    ]
-  },
-  {
-    "check_id": "PHOTO-26/collection-spread/H045",
-    "output_id": "collection-spread",
-    "type": "human",
-    "output_reference": "deliverables/collection-spread.pdf",
-    "check": "collection-spread.pdf: body text uses tracking +0/1000 em (when present).",
-    "reference_assets": [
-      {
-        "filename": "fonts/BarlowCondensed-Medium.ttf",
-        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/BarlowCondensed-Medium.ttf"
-      },
-      {
-        "filename": "fonts/SourceSerif4[opsz,wght].ttf",
-        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/SourceSerif4%5Bopsz%2Cwght%5D.ttf"
-      },
-      {
-        "filename": "fonts/Inter[opsz,wght].ttf",
-        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/Inter%5Bopsz%2Cwght%5D.ttf"
-      }
-    ]
-  },
-  {
-    "check_id": "PHOTO-26/collection-spread/H046",
-    "output_id": "collection-spread",
-    "type": "human",
-    "output_reference": "deliverables/collection-spread.pdf",
-    "check": "collection-spread.pdf: price/dimension/care text uses Inter Regular (when present).",
+    "check": "Any body text on “Autumn interiors collection spread” (collection-spread.pdf) is set at 10 pt, as shown in the PDF's text properties.",
     "reference_assets": [
       {
         "filename": "fonts/BarlowCondensed-Medium.ttf",
@@ -2192,70 +1938,7 @@
     "output_id": "collection-spread",
     "type": "human",
     "output_reference": "deliverables/collection-spread.pdf",
-    "check": "collection-spread.pdf: price/dimension/care text has font size 8.5 pt (when present).",
-    "reference_assets": [
-      {
-        "filename": "fonts/BarlowCondensed-Medium.ttf",
-        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/BarlowCondensed-Medium.ttf"
-      },
-      {
-        "filename": "fonts/SourceSerif4[opsz,wght].ttf",
-        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/SourceSerif4%5Bopsz%2Cwght%5D.ttf"
-      },
-      {
-        "filename": "fonts/Inter[opsz,wght].ttf",
-        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/Inter%5Bopsz%2Cwght%5D.ttf"
-      }
-    ]
-  },
-  {
-    "check_id": "PHOTO-26/collection-spread/H048",
-    "output_id": "collection-spread",
-    "type": "human",
-    "output_reference": "deliverables/collection-spread.pdf",
-    "check": "collection-spread.pdf: price/dimension/care text has 12 pt leading on multiline text (when present).",
-    "reference_assets": [
-      {
-        "filename": "fonts/BarlowCondensed-Medium.ttf",
-        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/BarlowCondensed-Medium.ttf"
-      },
-      {
-        "filename": "fonts/SourceSerif4[opsz,wght].ttf",
-        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/SourceSerif4%5Bopsz%2Cwght%5D.ttf"
-      },
-      {
-        "filename": "fonts/Inter[opsz,wght].ttf",
-        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/Inter%5Bopsz%2Cwght%5D.ttf"
-      }
-    ]
-  },
-  {
-    "check_id": "PHOTO-26/collection-spread/H049",
-    "output_id": "collection-spread",
-    "type": "human",
-    "output_reference": "deliverables/collection-spread.pdf",
-    "check": "collection-spread.pdf: price/dimension/care text uses tracking +20/1000 em (when present).",
-    "reference_assets": [
-      {
-        "filename": "fonts/BarlowCondensed-Medium.ttf",
-        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/BarlowCondensed-Medium.ttf"
-      },
-      {
-        "filename": "fonts/SourceSerif4[opsz,wght].ttf",
-        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/SourceSerif4%5Bopsz%2Cwght%5D.ttf"
-      },
-      {
-        "filename": "fonts/Inter[opsz,wght].ttf",
-        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/Inter%5Bopsz%2Cwght%5D.ttf"
-      }
-    ]
-  },
-  {
-    "check_id": "PHOTO-26/wholesale-presentation/H036",
-    "output_id": "wholesale-presentation",
-    "type": "human",
-    "output_reference": "deliverables/wholesale-presentation.pdf",
-    "check": "wholesale-presentation.pdf: product name/main heading uses Barlow Condensed Medium capitals (when present).",
+    "check": "Any price, dimension or care line on “Autumn interiors collection spread” (collection-spread.pdf) is set at 8.5 pt, as shown in the PDF's text properties.",
     "reference_assets": [
       {
         "filename": "fonts/BarlowCondensed-Medium.ttf",
@@ -2276,28 +1959,7 @@
     "output_id": "wholesale-presentation",
     "type": "human",
     "output_reference": "deliverables/wholesale-presentation.pdf",
-    "check": "wholesale-presentation.pdf: product name/main heading has font size 13 pt (when present).",
-    "reference_assets": [
-      {
-        "filename": "fonts/BarlowCondensed-Medium.ttf",
-        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/BarlowCondensed-Medium.ttf"
-      },
-      {
-        "filename": "fonts/SourceSerif4[opsz,wght].ttf",
-        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/SourceSerif4%5Bopsz%2Cwght%5D.ttf"
-      },
-      {
-        "filename": "fonts/Inter[opsz,wght].ttf",
-        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/Inter%5Bopsz%2Cwght%5D.ttf"
-      }
-    ]
-  },
-  {
-    "check_id": "PHOTO-26/wholesale-presentation/H038",
-    "output_id": "wholesale-presentation",
-    "type": "human",
-    "output_reference": "deliverables/wholesale-presentation.pdf",
-    "check": "wholesale-presentation.pdf: product name/main heading has 15 pt leading on multiline text (when present).",
+    "check": "Every product name and main heading on “Interiors wholesale presentation” (wholesale-presentation.pdf) is set at 13 pt, as shown in the PDF's text properties.",
     "reference_assets": [
       {
         "filename": "fonts/BarlowCondensed-Medium.ttf",
@@ -2318,7 +1980,7 @@
     "output_id": "wholesale-presentation",
     "type": "human",
     "output_reference": "deliverables/wholesale-presentation.pdf",
-    "check": "wholesale-presentation.pdf: product name/main heading uses tracking +200/1000 em (when present).",
+    "check": "Product names on “Interiors wholesale presentation” (wholesale-presentation.pdf) have wide, open letter spacing, clearly looser than ordinary text.",
     "reference_assets": [
       {
         "filename": "fonts/BarlowCondensed-Medium.ttf",
@@ -2339,7 +2001,7 @@
     "output_id": "wholesale-presentation",
     "type": "human",
     "output_reference": "deliverables/wholesale-presentation.pdf",
-    "check": "wholesale-presentation.pdf: secondary heading uses Barlow Condensed Medium capitals (when present).",
+    "check": "Any subheading on “Interiors wholesale presentation” (wholesale-presentation.pdf) is set in Barlow Condensed Medium capitals.",
     "reference_assets": [
       {
         "filename": "fonts/BarlowCondensed-Medium.ttf",
@@ -2360,28 +2022,7 @@
     "output_id": "wholesale-presentation",
     "type": "human",
     "output_reference": "deliverables/wholesale-presentation.pdf",
-    "check": "wholesale-presentation.pdf: secondary heading has font size 11 pt (when present).",
-    "reference_assets": [
-      {
-        "filename": "fonts/BarlowCondensed-Medium.ttf",
-        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/BarlowCondensed-Medium.ttf"
-      },
-      {
-        "filename": "fonts/SourceSerif4[opsz,wght].ttf",
-        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/SourceSerif4%5Bopsz%2Cwght%5D.ttf"
-      },
-      {
-        "filename": "fonts/Inter[opsz,wght].ttf",
-        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/Inter%5Bopsz%2Cwght%5D.ttf"
-      }
-    ]
-  },
-  {
-    "check_id": "PHOTO-26/wholesale-presentation/H042",
-    "output_id": "wholesale-presentation",
-    "type": "human",
-    "output_reference": "deliverables/wholesale-presentation.pdf",
-    "check": "wholesale-presentation.pdf: secondary heading has 13 pt leading on multiline text (when present).",
+    "check": "Any subheading on “Interiors wholesale presentation” (wholesale-presentation.pdf) is set at 11 pt, as shown in the PDF's text properties.",
     "reference_assets": [
       {
         "filename": "fonts/BarlowCondensed-Medium.ttf",
@@ -2402,28 +2043,7 @@
     "output_id": "wholesale-presentation",
     "type": "human",
     "output_reference": "deliverables/wholesale-presentation.pdf",
-    "check": "wholesale-presentation.pdf: secondary heading uses tracking +160/1000 em (when present).",
-    "reference_assets": [
-      {
-        "filename": "fonts/BarlowCondensed-Medium.ttf",
-        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/BarlowCondensed-Medium.ttf"
-      },
-      {
-        "filename": "fonts/SourceSerif4[opsz,wght].ttf",
-        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/SourceSerif4%5Bopsz%2Cwght%5D.ttf"
-      },
-      {
-        "filename": "fonts/Inter[opsz,wght].ttf",
-        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/Inter%5Bopsz%2Cwght%5D.ttf"
-      }
-    ]
-  },
-  {
-    "check_id": "PHOTO-26/wholesale-presentation/H044",
-    "output_id": "wholesale-presentation",
-    "type": "human",
-    "output_reference": "deliverables/wholesale-presentation.pdf",
-    "check": "wholesale-presentation.pdf: body text uses Source Serif 4 Regular (when present).",
+    "check": "Any subheading on “Interiors wholesale presentation” (wholesale-presentation.pdf) has visibly open letter spacing.",
     "reference_assets": [
       {
         "filename": "fonts/BarlowCondensed-Medium.ttf",
@@ -2444,70 +2064,7 @@
     "output_id": "wholesale-presentation",
     "type": "human",
     "output_reference": "deliverables/wholesale-presentation.pdf",
-    "check": "wholesale-presentation.pdf: body text has font size 10 pt (when present).",
-    "reference_assets": [
-      {
-        "filename": "fonts/BarlowCondensed-Medium.ttf",
-        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/BarlowCondensed-Medium.ttf"
-      },
-      {
-        "filename": "fonts/SourceSerif4[opsz,wght].ttf",
-        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/SourceSerif4%5Bopsz%2Cwght%5D.ttf"
-      },
-      {
-        "filename": "fonts/Inter[opsz,wght].ttf",
-        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/Inter%5Bopsz%2Cwght%5D.ttf"
-      }
-    ]
-  },
-  {
-    "check_id": "PHOTO-26/wholesale-presentation/H046",
-    "output_id": "wholesale-presentation",
-    "type": "human",
-    "output_reference": "deliverables/wholesale-presentation.pdf",
-    "check": "wholesale-presentation.pdf: body text has 15 pt leading on multiline text (when present).",
-    "reference_assets": [
-      {
-        "filename": "fonts/BarlowCondensed-Medium.ttf",
-        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/BarlowCondensed-Medium.ttf"
-      },
-      {
-        "filename": "fonts/SourceSerif4[opsz,wght].ttf",
-        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/SourceSerif4%5Bopsz%2Cwght%5D.ttf"
-      },
-      {
-        "filename": "fonts/Inter[opsz,wght].ttf",
-        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/Inter%5Bopsz%2Cwght%5D.ttf"
-      }
-    ]
-  },
-  {
-    "check_id": "PHOTO-26/wholesale-presentation/H047",
-    "output_id": "wholesale-presentation",
-    "type": "human",
-    "output_reference": "deliverables/wholesale-presentation.pdf",
-    "check": "wholesale-presentation.pdf: body text uses tracking +0/1000 em (when present).",
-    "reference_assets": [
-      {
-        "filename": "fonts/BarlowCondensed-Medium.ttf",
-        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/BarlowCondensed-Medium.ttf"
-      },
-      {
-        "filename": "fonts/SourceSerif4[opsz,wght].ttf",
-        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/SourceSerif4%5Bopsz%2Cwght%5D.ttf"
-      },
-      {
-        "filename": "fonts/Inter[opsz,wght].ttf",
-        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/Inter%5Bopsz%2Cwght%5D.ttf"
-      }
-    ]
-  },
-  {
-    "check_id": "PHOTO-26/wholesale-presentation/H048",
-    "output_id": "wholesale-presentation",
-    "type": "human",
-    "output_reference": "deliverables/wholesale-presentation.pdf",
-    "check": "wholesale-presentation.pdf: price/dimension/care text uses Inter Regular (when present).",
+    "check": "Any body text on “Interiors wholesale presentation” (wholesale-presentation.pdf) is set at 10 pt, as shown in the PDF's text properties.",
     "reference_assets": [
       {
         "filename": "fonts/BarlowCondensed-Medium.ttf",
@@ -2528,7 +2085,7 @@
     "output_id": "wholesale-presentation",
     "type": "human",
     "output_reference": "deliverables/wholesale-presentation.pdf",
-    "check": "wholesale-presentation.pdf: price/dimension/care text has font size 8.5 pt (when present).",
+    "check": "Every price, dimension or care line on “Interiors wholesale presentation” (wholesale-presentation.pdf) is set at 8.5 pt, as shown in the PDF's text properties.",
     "reference_assets": [
       {
         "filename": "fonts/BarlowCondensed-Medium.ttf",
@@ -2545,102 +2102,224 @@
     ]
   },
   {
-    "check_id": "PHOTO-26/wholesale-presentation/H050",
-    "output_id": "wholesale-presentation",
-    "type": "human",
-    "output_reference": "deliverables/wholesale-presentation.pdf",
-    "check": "wholesale-presentation.pdf: price/dimension/care text has 12 pt leading on multiline text (when present).",
-    "reference_assets": [
-      {
-        "filename": "fonts/BarlowCondensed-Medium.ttf",
-        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/BarlowCondensed-Medium.ttf"
-      },
-      {
-        "filename": "fonts/SourceSerif4[opsz,wght].ttf",
-        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/SourceSerif4%5Bopsz%2Cwght%5D.ttf"
-      },
-      {
-        "filename": "fonts/Inter[opsz,wght].ttf",
-        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/Inter%5Bopsz%2Cwght%5D.ttf"
-      }
-    ]
-  },
-  {
-    "check_id": "PHOTO-26/wholesale-presentation/H051",
-    "output_id": "wholesale-presentation",
-    "type": "human",
-    "output_reference": "deliverables/wholesale-presentation.pdf",
-    "check": "wholesale-presentation.pdf: price/dimension/care text uses tracking +20/1000 em (when present).",
-    "reference_assets": [
-      {
-        "filename": "fonts/BarlowCondensed-Medium.ttf",
-        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/BarlowCondensed-Medium.ttf"
-      },
-      {
-        "filename": "fonts/SourceSerif4[opsz,wght].ttf",
-        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/SourceSerif4%5Bopsz%2Cwght%5D.ttf"
-      },
-      {
-        "filename": "fonts/Inter[opsz,wght].ttf",
-        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/Inter%5Bopsz%2Cwght%5D.ttf"
-      }
-    ]
-  },
-  {
-    "check_id": "PHOTO-26/collection-spread/R13-pdf-profile",
+    "check_id": "PHOTO-26/collection-spread/A006",
     "output_id": "collection-spread",
-    "type": "human",
+    "type": "auto",
     "output_reference": "deliverables/collection-spread.pdf",
-    "check": "collection-spread.pdf: is exported for sRGB screen viewing, not as a CMYK press master.",
+    "check": "“Autumn interiors collection spread” (collection-spread.pdf) uses RGB colour only, with no CMYK colour and no CMYK output intent.",
     "reference_assets": []
   },
   {
-    "check_id": "PHOTO-26/collection-spread/R13-pdf-fonts",
+    "check_id": "PHOTO-26/collection-spread/A007",
+    "output_id": "collection-spread",
+    "type": "auto",
+    "output_reference": "deliverables/collection-spread.pdf",
+    "check": "“Autumn interiors collection spread” (collection-spread.pdf) embeds every font it uses.",
+    "reference_assets": []
+  },
+  {
+    "check_id": "PHOTO-26/wholesale-presentation/A006",
+    "output_id": "wholesale-presentation",
+    "type": "auto",
+    "output_reference": "deliverables/wholesale-presentation.pdf",
+    "check": "“Interiors wholesale presentation” (wholesale-presentation.pdf) uses RGB colour only, with no CMYK colour and no CMYK output intent.",
+    "reference_assets": []
+  },
+  {
+    "check_id": "PHOTO-26/wholesale-presentation/A007",
+    "output_id": "wholesale-presentation",
+    "type": "auto",
+    "output_reference": "deliverables/wholesale-presentation.pdf",
+    "check": "“Interiors wholesale presentation” (wholesale-presentation.pdf) embeds every font it uses.",
+    "reference_assets": []
+  },
+  {
+    "check_id": "PHOTO-26/wholesale-presentation/A008",
+    "output_id": "wholesale-presentation",
+    "type": "auto",
+    "output_reference": "deliverables/wholesale-presentation.pdf",
+    "check": "“Interiors wholesale presentation” (wholesale-presentation.pdf) sets the brand name “THORNMERE HOME” on page 1 in Barlow Condensed Medium at 13 pt.",
+    "reference_assets": []
+  },
+  {
+    "check_id": "PHOTO-26/collection-spread/H050",
     "output_id": "collection-spread",
     "type": "human",
     "output_reference": "deliverables/collection-spread.pdf",
-    "check": "collection-spread.pdf: has no unembedded font dependency.",
+    "check": "Apart from a Soft Clay running foot, all type on Warm Paper Ground, Oatmeal Glaze or Soft Clay on “Autumn interiors collection spread” (collection-spread.pdf) is Stoneware Charcoal #3B3733.",
     "reference_assets": [
       {
-        "filename": "fonts/BarlowCondensed-Medium.ttf",
-        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/BarlowCondensed-Medium.ttf"
-      },
-      {
-        "filename": "fonts/SourceSerif4[opsz,wght].ttf",
-        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/SourceSerif4%5Bopsz%2Cwght%5D.ttf"
-      },
-      {
-        "filename": "fonts/Inter[opsz,wght].ttf",
-        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/Inter%5Bopsz%2Cwght%5D.ttf"
+        "filename": "thornmere_spring_catalog_press.pdf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/tasks/SB3-026-PHO__thornmere-home-autumn-interiors-image-system/assets/thornmere_spring_catalog_press.pdf"
       }
     ]
   },
   {
-    "check_id": "PHOTO-26/wholesale-presentation/R13-pdf-profile",
-    "output_id": "wholesale-presentation",
+    "check_id": "PHOTO-26/collection-spread/H051",
+    "output_id": "collection-spread",
     "type": "human",
-    "output_reference": "deliverables/wholesale-presentation.pdf",
-    "check": "wholesale-presentation.pdf: is exported for sRGB screen viewing, not as a CMYK press master.",
+    "output_reference": "deliverables/collection-spread.pdf",
+    "check": "Any type set on Indigo Dye #33455E on “Autumn interiors collection spread” (collection-spread.pdf) is Warm Paper Ground #F6F1E8.",
     "reference_assets": []
   },
   {
-    "check_id": "PHOTO-26/wholesale-presentation/R13-pdf-fonts",
+    "check_id": "PHOTO-26/collection-spread/H052",
+    "output_id": "collection-spread",
+    "type": "human",
+    "output_reference": "deliverables/collection-spread.pdf",
+    "check": "Photographs aside, Warm Paper Ground #F6F1E8 covers more of every page of “Autumn interiors collection spread” (collection-spread.pdf) than all Oatmeal Glaze, Soft Clay and Indigo Dye areas combined.",
+    "reference_assets": []
+  },
+  {
+    "check_id": "PHOTO-26/collection-spread/H053",
+    "output_id": "collection-spread",
+    "type": "human",
+    "output_reference": "deliverables/collection-spread.pdf",
+    "check": "No cut-out piece on “Autumn interiors collection spread” (collection-spread.pdf) has a drop shadow or glow added beneath it.",
+    "reference_assets": []
+  },
+  {
+    "check_id": "PHOTO-26/collection-spread/H054",
+    "output_id": "collection-spread",
+    "type": "human",
+    "output_reference": "deliverables/collection-spread.pdf",
+    "check": "No scrim, gradient or overlay of any colour, black and white included, is laid over a photograph on “Autumn interiors collection spread” (collection-spread.pdf).",
+    "reference_assets": []
+  },
+  {
+    "check_id": "PHOTO-26/collection-spread/H055",
+    "output_id": "collection-spread",
+    "type": "human",
+    "output_reference": "deliverables/collection-spread.pdf",
+    "check": "On any page of “Autumn interiors collection spread” (collection-spread.pdf) showing several products, each product name that appears sits beside its own product.",
+    "reference_assets": []
+  },
+  {
+    "check_id": "PHOTO-26/wholesale-presentation/H052",
     "output_id": "wholesale-presentation",
     "type": "human",
     "output_reference": "deliverables/wholesale-presentation.pdf",
-    "check": "wholesale-presentation.pdf: has no unembedded font dependency.",
+    "check": "Apart from a Soft Clay running foot, all type on Warm Paper Ground, Oatmeal Glaze or Soft Clay on “Interiors wholesale presentation” (wholesale-presentation.pdf) is Stoneware Charcoal #3B3733.",
     "reference_assets": [
       {
-        "filename": "fonts/BarlowCondensed-Medium.ttf",
-        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/BarlowCondensed-Medium.ttf"
-      },
+        "filename": "thornmere_spring_catalog_press.pdf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/tasks/SB3-026-PHO__thornmere-home-autumn-interiors-image-system/assets/thornmere_spring_catalog_press.pdf"
+      }
+    ]
+  },
+  {
+    "check_id": "PHOTO-26/wholesale-presentation/H053",
+    "output_id": "wholesale-presentation",
+    "type": "human",
+    "output_reference": "deliverables/wholesale-presentation.pdf",
+    "check": "Any type set on Indigo Dye #33455E on “Interiors wholesale presentation” (wholesale-presentation.pdf) is Warm Paper Ground #F6F1E8.",
+    "reference_assets": []
+  },
+  {
+    "check_id": "PHOTO-26/wholesale-presentation/H054",
+    "output_id": "wholesale-presentation",
+    "type": "human",
+    "output_reference": "deliverables/wholesale-presentation.pdf",
+    "check": "Photographs aside, Warm Paper Ground #F6F1E8 covers more of every page of “Interiors wholesale presentation” (wholesale-presentation.pdf) than all Oatmeal Glaze, Soft Clay and Indigo Dye areas combined.",
+    "reference_assets": []
+  },
+  {
+    "check_id": "PHOTO-26/wholesale-presentation/H055",
+    "output_id": "wholesale-presentation",
+    "type": "human",
+    "output_reference": "deliverables/wholesale-presentation.pdf",
+    "check": "No cut-out piece on “Interiors wholesale presentation” (wholesale-presentation.pdf) has a drop shadow or glow added beneath it.",
+    "reference_assets": []
+  },
+  {
+    "check_id": "PHOTO-26/wholesale-presentation/H056",
+    "output_id": "wholesale-presentation",
+    "type": "human",
+    "output_reference": "deliverables/wholesale-presentation.pdf",
+    "check": "No scrim, gradient or overlay of any colour, black and white included, is laid over a photograph on “Interiors wholesale presentation” (wholesale-presentation.pdf).",
+    "reference_assets": []
+  },
+  {
+    "check_id": "PHOTO-26/wholesale-presentation/H057",
+    "output_id": "wholesale-presentation",
+    "type": "human",
+    "output_reference": "deliverables/wholesale-presentation.pdf",
+    "check": "On any page of “Interiors wholesale presentation” (wholesale-presentation.pdf) showing several products, each product name sits beside its own product.",
+    "reference_assets": []
+  },
+  {
+    "check_id": "PHOTO-26/wholesale-presentation/H058",
+    "output_id": "wholesale-presentation",
+    "type": "human",
+    "output_reference": "deliverables/wholesale-presentation.pdf",
+    "check": "The coloured band on “Interiors wholesale presentation” (wholesale-presentation.pdf) is the same colour on every page that carries it.",
+    "reference_assets": []
+  },
+  {
+    "check_id": "PHOTO-26/collection-spread/H056",
+    "output_id": "collection-spread",
+    "type": "human",
+    "output_reference": "deliverables/collection-spread.pdf",
+    "check": "If a Soft Clay running foot appears on “Autumn interiors collection spread” (collection-spread.pdf), it is small capitals with open letter spacing.",
+    "reference_assets": [
       {
-        "filename": "fonts/SourceSerif4[opsz,wght].ttf",
-        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/SourceSerif4%5Bopsz%2Cwght%5D.ttf"
-      },
+        "filename": "thornmere_spring_catalog_press.pdf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/tasks/SB3-026-PHO__thornmere-home-autumn-interiors-image-system/assets/thornmere_spring_catalog_press.pdf"
+      }
+    ]
+  },
+  {
+    "check_id": "PHOTO-26/collection-spread/H057",
+    "output_id": "collection-spread",
+    "type": "human",
+    "output_reference": "deliverables/collection-spread.pdf",
+    "check": "“Autumn interiors collection spread” (collection-spread.pdf) shows no crop marks, registration marks or bleed area beyond its 210 x 297 mm page.",
+    "reference_assets": []
+  },
+  {
+    "check_id": "PHOTO-26/collection-spread/H058",
+    "output_id": "collection-spread",
+    "type": "human",
+    "output_reference": "deliverables/collection-spread.pdf",
+    "check": "No product feature, material, use or care claim on “Autumn interiors collection spread” (collection-spread.pdf) goes beyond what thornmere_autumn_skus.csv or the brief states.",
+    "reference_assets": [
       {
-        "filename": "fonts/Inter[opsz,wght].ttf",
-        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/Inter%5Bopsz%2Cwght%5D.ttf"
+        "filename": "thornmere_autumn_skus.csv",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/tasks/SB3-026-PHO__thornmere-home-autumn-interiors-image-system/assets/thornmere_autumn_skus.csv"
+      }
+    ]
+  },
+  {
+    "check_id": "PHOTO-26/wholesale-presentation/H059",
+    "output_id": "wholesale-presentation",
+    "type": "human",
+    "output_reference": "deliverables/wholesale-presentation.pdf",
+    "check": "If a Soft Clay running foot appears on “Interiors wholesale presentation” (wholesale-presentation.pdf), it is small capitals with open letter spacing.",
+    "reference_assets": [
+      {
+        "filename": "thornmere_spring_catalog_press.pdf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/tasks/SB3-026-PHO__thornmere-home-autumn-interiors-image-system/assets/thornmere_spring_catalog_press.pdf"
+      }
+    ]
+  },
+  {
+    "check_id": "PHOTO-26/wholesale-presentation/H060",
+    "output_id": "wholesale-presentation",
+    "type": "human",
+    "output_reference": "deliverables/wholesale-presentation.pdf",
+    "check": "“Interiors wholesale presentation” (wholesale-presentation.pdf) shows no crop marks, registration marks or bleed area beyond its 338.667 x 190.5 mm page.",
+    "reference_assets": []
+  },
+  {
+    "check_id": "PHOTO-26/wholesale-presentation/H061",
+    "output_id": "wholesale-presentation",
+    "type": "human",
+    "output_reference": "deliverables/wholesale-presentation.pdf",
+    "check": "No product feature, material, use or care claim on “Interiors wholesale presentation” (wholesale-presentation.pdf) goes beyond what thornmere_autumn_skus.csv or the brief states.",
+    "reference_assets": [
+      {
+        "filename": "thornmere_autumn_skus.csv",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/tasks/SB3-026-PHO__thornmere-home-autumn-interiors-image-system/assets/thornmere_autumn_skus.csv"
       }
     ]
   }

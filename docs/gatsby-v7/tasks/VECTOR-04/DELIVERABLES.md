@@ -11,8 +11,7 @@ File: `deliverables/recovered-sticker-window-mark.svg`
 - Specification: {"format": "svg", "transparent": true}
 - Trace the single photograph assigned to this sticker, preserving its distinctive painted or printed shapes.
 - Use editable vector paths, an explicit viewBox and physical long edge of 55 mm; no embedded raster image or opaque background rectangle.
-- Export: SVG with editable vector paths and an explicit viewBox; no embedded raster image; transparent uninked areas.
-- Export: Set physical units in millimetres; artwork long edge is 55 mm. Cut-contour dimensions include the 2.5 mm outward offset.
+- Export: SVG with editable vector paths and an explicit viewBox; no embedded raster image; transparent uninked areas. Set physical units in millimetres; artwork long edge is 55 mm. Cut-contour dimensions include the 2.5 mm outward offset.
 
 ## Recovered sticker artwork - Bag design 1
 File: `deliverables/recovered-sticker-bag-design-1.svg`
@@ -23,8 +22,7 @@ File: `deliverables/recovered-sticker-bag-design-1.svg`
 - Specification: {"format": "svg", "transparent": true}
 - Trace the single photograph assigned to this sticker, preserving its distinctive painted or printed shapes.
 - Use editable vector paths, an explicit viewBox and physical long edge of 55 mm; no embedded raster image or opaque background rectangle.
-- Export: SVG with editable vector paths and an explicit viewBox; no embedded raster image; transparent uninked areas.
-- Export: Set physical units in millimetres; artwork long edge is 55 mm. Cut-contour dimensions include the 2.5 mm outward offset.
+- Export: SVG with editable vector paths and an explicit viewBox; no embedded raster image; transparent uninked areas. Set physical units in millimetres; artwork long edge is 55 mm. Cut-contour dimensions include the 2.5 mm outward offset.
 
 ## Recovered sticker artwork - Bag design 2
 File: `deliverables/recovered-sticker-bag-design-2.svg`
@@ -35,8 +33,7 @@ File: `deliverables/recovered-sticker-bag-design-2.svg`
 - Specification: {"format": "svg", "transparent": true}
 - Trace the single photograph assigned to this sticker, preserving its distinctive painted or printed shapes.
 - Use editable vector paths, an explicit viewBox and physical long edge of 55 mm; no embedded raster image or opaque background rectangle.
-- Export: SVG with editable vector paths and an explicit viewBox; no embedded raster image; transparent uninked areas.
-- Export: Set physical units in millimetres; artwork long edge is 55 mm. Cut-contour dimensions include the 2.5 mm outward offset.
+- Export: SVG with editable vector paths and an explicit viewBox; no embedded raster image; transparent uninked areas. Set physical units in millimetres; artwork long edge is 55 mm. Cut-contour dimensions include the 2.5 mm outward offset.
 
 ## Recovered sticker artwork - Bag design 3
 File: `deliverables/recovered-sticker-bag-design-3.svg`
@@ -47,8 +44,7 @@ File: `deliverables/recovered-sticker-bag-design-3.svg`
 - Specification: {"format": "svg", "transparent": true}
 - Trace the single photograph assigned to this sticker, preserving its distinctive painted or printed shapes.
 - Use editable vector paths, an explicit viewBox and physical long edge of 55 mm; no embedded raster image or opaque background rectangle.
-- Export: SVG with editable vector paths and an explicit viewBox; no embedded raster image; transparent uninked areas.
-- Export: Set physical units in millimetres; artwork long edge is 55 mm. Cut-contour dimensions include the 2.5 mm outward offset.
+- Export: SVG with editable vector paths and an explicit viewBox; no embedded raster image; transparent uninked areas. Set physical units in millimetres; artwork long edge is 55 mm. Cut-contour dimensions include the 2.5 mm outward offset.
 
 ## Original companion sticker - Companion 1
 File: `deliverables/new-sticker-companion-1.svg`
@@ -59,8 +55,7 @@ File: `deliverables/new-sticker-companion-1.svg`
 - Specification: {"format": "svg", "transparent": true}
 - Create one original illustration that belongs beside the recovered designs.
 - Supply editable vector paths at 55 mm long edge with open negative space, using the specified palette.
-- Export: SVG with editable vector paths and an explicit viewBox; no embedded raster image; transparent uninked areas.
-- Export: Set physical units in millimetres; artwork long edge is 55 mm. Cut-contour dimensions include the 2.5 mm outward offset.
+- Export: SVG with editable vector paths and an explicit viewBox; no embedded raster image; transparent uninked areas. Set physical units in millimetres; artwork long edge is 55 mm. Cut-contour dimensions include the 2.5 mm outward offset.
 
 ## Original companion sticker - Companion 2
 File: `deliverables/new-sticker-companion-2.svg`
@@ -71,8 +66,7 @@ File: `deliverables/new-sticker-companion-2.svg`
 - Specification: {"format": "svg", "transparent": true}
 - Create one original illustration that belongs beside the recovered designs.
 - Supply editable vector paths at 55 mm long edge with open negative space, using the specified palette.
-- Export: SVG with editable vector paths and an explicit viewBox; no embedded raster image; transparent uninked areas.
-- Export: Set physical units in millimetres; artwork long edge is 55 mm. Cut-contour dimensions include the 2.5 mm outward offset.
+- Export: SVG with editable vector paths and an explicit viewBox; no embedded raster image; transparent uninked areas. Set physical units in millimetres; artwork long edge is 55 mm. Cut-contour dimensions include the 2.5 mm outward offset.
 
 ## Separate sticker cut contour - Window mark
 File: `deliverables/sticker-cut-window-mark.svg`
@@ -83,8 +77,7 @@ File: `deliverables/sticker-cut-window-mark.svg`
 - Specification: {"format": "svg", "transparent": true, "closed_paths": true}
 - Provide exactly one closed outer contour for the corresponding artwork, offset 2.5 mm outward with corners at least 3 mm radius.
 - Keep this contour separate from the illustration; no interior cut-outs are requested.
-- Export: SVG with editable vector paths and an explicit viewBox; no embedded raster image; transparent uninked areas.
-- Export: Set physical units in millimetres; artwork long edge is 55 mm. Cut-contour dimensions include the 2.5 mm outward offset.
+- Export: SVG with editable vector paths and an explicit viewBox; no embedded raster image; transparent uninked areas. Set physical units in millimetres; artwork long edge is 55 mm. Cut-contour dimensions include the 2.5 mm outward offset.
 
 ## Separate sticker cut contour - Bag design 1
 File: `deliverables/sticker-cut-bag-design-1.svg`
@@ -95,8 +88,7 @@ File: `deliverables/sticker-cut-bag-design-1.svg`
 - Specification: {"format": "svg", "transparent": true, "closed_paths": true}
 - Provide exactly one closed outer contour for the corresponding artwork, offset 2.5 mm outward with corners at least 3 mm radius.
 - Keep this contour separate from the illustration; no interior cut-outs are requested.
-- Export: SVG with editable vector paths and an explicit viewBox; no embedded raster image; transparent uninked areas.
-- Export: Set physical units in millimetres; artwork long edge is 55 mm. Cut-contour dimensions include the 2.5 mm outward offset.
+- Export: SVG with editable vector paths and an explicit viewBox; no embedded raster image; transparent uninked areas. Set physical units in millimetres; artwork long edge is 55 mm. Cut-contour dimensions include the 2.5 mm outward offset.
 
 ## Separate sticker cut contour - Bag design 2
 File: `deliverables/sticker-cut-bag-design-2.svg`
@@ -107,8 +99,7 @@ File: `deliverables/sticker-cut-bag-design-2.svg`
 - Specification: {"format": "svg", "transparent": true, "closed_paths": true}
 - Provide exactly one closed outer contour for the corresponding artwork, offset 2.5 mm outward with corners at least 3 mm radius.
 - Keep this contour separate from the illustration; no interior cut-outs are requested.
-- Export: SVG with editable vector paths and an explicit viewBox; no embedded raster image; transparent uninked areas.
-- Export: Set physical units in millimetres; artwork long edge is 55 mm. Cut-contour dimensions include the 2.5 mm outward offset.
+- Export: SVG with editable vector paths and an explicit viewBox; no embedded raster image; transparent uninked areas. Set physical units in millimetres; artwork long edge is 55 mm. Cut-contour dimensions include the 2.5 mm outward offset.
 
 ## Separate sticker cut contour - Bag design 3
 File: `deliverables/sticker-cut-bag-design-3.svg`
@@ -119,8 +110,7 @@ File: `deliverables/sticker-cut-bag-design-3.svg`
 - Specification: {"format": "svg", "transparent": true, "closed_paths": true}
 - Provide exactly one closed outer contour for the corresponding artwork, offset 2.5 mm outward with corners at least 3 mm radius.
 - Keep this contour separate from the illustration; no interior cut-outs are requested.
-- Export: SVG with editable vector paths and an explicit viewBox; no embedded raster image; transparent uninked areas.
-- Export: Set physical units in millimetres; artwork long edge is 55 mm. Cut-contour dimensions include the 2.5 mm outward offset.
+- Export: SVG with editable vector paths and an explicit viewBox; no embedded raster image; transparent uninked areas. Set physical units in millimetres; artwork long edge is 55 mm. Cut-contour dimensions include the 2.5 mm outward offset.
 
 ## Separate sticker cut contour - Companion 1
 File: `deliverables/sticker-cut-companion-1.svg`
@@ -131,8 +121,7 @@ File: `deliverables/sticker-cut-companion-1.svg`
 - Specification: {"format": "svg", "transparent": true, "closed_paths": true}
 - Provide exactly one closed outer contour for the corresponding artwork, offset 2.5 mm outward with corners at least 3 mm radius.
 - Keep this contour separate from the illustration; no interior cut-outs are requested.
-- Export: SVG with editable vector paths and an explicit viewBox; no embedded raster image; transparent uninked areas.
-- Export: Set physical units in millimetres; artwork long edge is 55 mm. Cut-contour dimensions include the 2.5 mm outward offset.
+- Export: SVG with editable vector paths and an explicit viewBox; no embedded raster image; transparent uninked areas. Set physical units in millimetres; artwork long edge is 55 mm. Cut-contour dimensions include the 2.5 mm outward offset.
 
 ## Separate sticker cut contour - Companion 2
 File: `deliverables/sticker-cut-companion-2.svg`
@@ -143,8 +132,7 @@ File: `deliverables/sticker-cut-companion-2.svg`
 - Specification: {"format": "svg", "transparent": true, "closed_paths": true}
 - Provide exactly one closed outer contour for the corresponding artwork, offset 2.5 mm outward with corners at least 3 mm radius.
 - Keep this contour separate from the illustration; no interior cut-outs are requested.
-- Export: SVG with editable vector paths and an explicit viewBox; no embedded raster image; transparent uninked areas.
-- Export: Set physical units in millimetres; artwork long edge is 55 mm. Cut-contour dimensions include the 2.5 mm outward offset.
+- Export: SVG with editable vector paths and an explicit viewBox; no embedded raster image; transparent uninked areas. Set physical units in millimetres; artwork long edge is 55 mm. Cut-contour dimensions include the 2.5 mm outward offset.
 
 ## Transparent sticker proof - Window mark
 File: `deliverables/sticker-proof-window-mark.png`
@@ -221,5 +209,4 @@ File: `deliverables/gang-sheet.pdf`
 - Specification: {"format": "pdf", "width_mm": 305, "height_mm": 457, "pages": 1}
 - Place the six designs with their corresponding cut paths on a separable CutContour layer.
 - Keep cut contours at least 10 mm from the sheet edge and 6 mm apart; preserve the 55 mm artwork scale.
-- Export: Production PDF/X-4 with embedded fonts or outlined lettering, CMYK artwork and the supplied PSO Coated v3 output intent. Convert palette colours from sRGB using this profile; preserve named spot cut lines separately.
-- Export: 305 x 457 mm page, 55 mm artwork scale, 10 mm sheet clearance and 6 mm contour gutters; CutContour remains a separate named layer and spot colour. PSO Coated v3 is the agreed CMYK exchange space, not a solvent/vinyl device profile: the printer handles the final RIP conversion and physical proof for white gloss vinyl.
+- Export: Production PDF/X-4 with embedded fonts or outlined lettering, CMYK artwork and the supplied PSO Coated v3 output intent. Convert palette colours from sRGB using this profile; preserve named spot cut lines separately. 305 x 457 mm page, 55 mm artwork scale, 10 mm sheet clearance and 6 mm contour gutters; CutContour remains a separate named layer and spot colour. PSO Coated v3 is the agreed CMYK exchange space, not a solvent/vinyl device profile: the printer handles the final RIP conversion and physical proof for white gloss vinyl.

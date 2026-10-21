@@ -33,17 +33,28 @@ Revised input pack. Previous execution results are historical, not current ratin
 - `PHOTO-24/dealer-launch/A003` “Lunara Chronometry / Watch dealer launch sheet” (dealer-launch.pdf) contains exactly 2 pages.
 - `PHOTO-24/dealer-launch/A004` The finished printed width of “Lunara Chronometry / Watch dealer launch sheet” (dealer-launch.pdf) is 210 mm (within 0.2 mm).
 - `PHOTO-24/dealer-launch/A005` The finished printed height of “Lunara Chronometry / Watch dealer launch sheet” (dealer-launch.pdf) is 297 mm (within 0.2 mm).
+- `PHOTO-24/watch-keyvisual/A005` “Autumn watch key visual” (watch-keyvisual.png) is in sRGB colour: it carries an sRGB profile or no colour profile.
+- `PHOTO-24/watch-feature-r002/A005` “Watch product-page feature - LC-25-0101” (watch-feature-r002.png) is in sRGB colour: it carries an sRGB profile or no colour profile.
+- `PHOTO-24/watch-feature-r003/A005` “Watch product-page feature - LC-25-0102” (watch-feature-r003.png) is in sRGB colour: it carries an sRGB profile or no colour profile.
+- `PHOTO-24/watch-feature-r004/A005` “Watch product-page feature - LC-25-0103” (watch-feature-r004.png) is in sRGB colour: it carries an sRGB profile or no colour profile.
+- `PHOTO-24/watch-feature-r005/A005` “Watch product-page feature - LC-25-0104” (watch-feature-r005.png) is in sRGB colour: it carries an sRGB profile or no colour profile.
+- `PHOTO-24/watch-feature-r006/A005` “Watch product-page feature - LC-25-0105” (watch-feature-r006.png) is in sRGB colour: it carries an sRGB profile or no colour profile.
+- `PHOTO-24/dealer-launch/A006` “Watch dealer launch sheet” (dealer-launch.pdf) uses RGB colour only, with no CMYK colour and no CMYK output intent.
+- `PHOTO-24/dealer-launch/A007` “Watch dealer launch sheet” (dealer-launch.pdf) embeds every font it uses.
+- `PHOTO-24/dealer-launch/A008` “Watch dealer launch sheet” (dealer-launch.pdf) sets the timing line “Timed by hand and signed. This piece was regulated to the result above and released by the named regulator.” in Inter Regular at 10 pt.
+- `PHOTO-24/dealer-launch/A009` “Watch dealer launch sheet” (dealer-launch.pdf) sets the dial finish “Silver sunburst” in Inter Regular at 10 pt.
+- `PHOTO-24/dealer-launch/A010` “Watch dealer launch sheet” (dealer-launch.pdf) sets the dial finish “Grained cream” in Inter Regular at 10 pt.
+- `PHOTO-24/dealer-launch/A011` “Watch dealer launch sheet” (dealer-launch.pdf) sets the dial finish “Lacquered oxblood” in Inter Regular at 10 pt.
+- `PHOTO-24/dealer-launch/A012` “Watch dealer launch sheet” (dealer-launch.pdf) sets the dial finish “Deep blue sunray” in Inter Regular at 10 pt.
 
 ## Human verifiers
 
-- `PHOTO-24/watch-keyvisual/H001` The reference named on “Autumn watch key visual” (watch-keyvisual.png) is the watch it shows: allowing for the warm single-tone treatment, its dial has the finish lunara_notes.txt gives that reference.
-- `PHOTO-24/watch-feature-r002/H001` The watch case shape in “Watch product-page feature - LC-25-0101” (watch-feature-r002.png) matches the “Meridian” (LC-25-0101) case shown in lunara_pdp_meridian.jpg.
-- `PHOTO-24/watch-feature-r002/H002` The specification on “Watch product-page feature - LC-25-0101” (watch-feature-r002.png) gives all four fields the brief names, reference, caliber, case metal and dial finish, with none left out.
+- `PHOTO-24/watch-keyvisual/H001` Allowing for the warm tone, the dial on “Autumn watch key visual” (watch-keyvisual.png) has its named reference’s finish: Meridian silver sunburst, Selene grained cream, Ardent lacquered oxblood, Halcyon silver, Vesper deep blue sunray.
+- `PHOTO-24/watch-feature-r002/H001` The watch on “Watch product-page feature - LC-25-0101” (watch-feature-r002.png) keeps the case proportions of lunara_pdp_meridian.jpg, not stretched, squashed or warped.
 - `PHOTO-24/watch-feature-r002/H003` The model reference printed on “Watch product-page feature - LC-25-0101” (watch-feature-r002.png) reads exactly “Meridian”, as approved in lunara_register.csv, row 2.
 - `PHOTO-24/watch-feature-r002/H004` The case metal printed on “Watch product-page feature - LC-25-0101” (watch-feature-r002.png) reads exactly “Steel”, as approved in lunara_register.csv, row 2.
 - `PHOTO-24/watch-feature-r002/H005` The dial finish printed on “Watch product-page feature - LC-25-0101” (watch-feature-r002.png) reads exactly “Silver sunburst”, as approved in lunara_register.csv, row 2.
-- `PHOTO-24/watch-feature-r003/H001` The watch case shape in “Watch product-page feature - LC-25-0102” (watch-feature-r003.png) matches the “Selene” (LC-25-0102) case shown in lunara_pdp_selene.jpg.
-- `PHOTO-24/watch-feature-r003/H002` The specification on “Watch product-page feature - LC-25-0102” (watch-feature-r003.png) gives all four fields the brief names, reference, caliber, case metal and dial finish, with none left out.
+- `PHOTO-24/watch-feature-r003/H001` The watch on “Watch product-page feature - LC-25-0102” (watch-feature-r003.png) keeps the case proportions of lunara_pdp_selene.jpg, not stretched, squashed or warped.
 - `PHOTO-24/watch-feature-r003/H003` The model reference printed on “Watch product-page feature - LC-25-0102” (watch-feature-r003.png) reads exactly “Selene”, as approved in lunara_register.csv, row 3.
 - `PHOTO-24/watch-feature-r003/H004` The case metal printed on “Watch product-page feature - LC-25-0102” (watch-feature-r003.png) reads exactly “Steel”, as approved in lunara_register.csv, row 3.
 - `PHOTO-24/watch-feature-r003/H005` The dial finish printed on “Watch product-page feature - LC-25-0102” (watch-feature-r003.png) reads exactly “Grained cream”, as approved in lunara_register.csv, row 3.
@@ -54,33 +65,31 @@ Revised input pack. Previous execution results are historical, not current ratin
 - `PHOTO-24/watch-feature-r003/H010` Any movement description on “Watch product-page feature - LC-25-0102” (watch-feature-r003.png) matches lunara_notes.txt for LM-02: automatic, 48h reserve.
 - `PHOTO-24/watch-feature-r003/H011` “Watch product-page feature - LC-25-0102” (watch-feature-r003.png) claims no feature for Selene absent from lunara_notes.txt and lunara_register.csv, such as a water-resistance rating, crystal type or case size.
 - `PHOTO-24/watch-feature-r003/H012` “Watch product-page feature - LC-25-0102” (watch-feature-r003.png) gives no price for Selene alone; any price shown is the band $4,000-$12,000 a piece from lunara_notes.txt.
-- `PHOTO-24/watch-feature-r003/H013` Any timing line on “Watch product-page feature - LC-25-0102” (watch-feature-r003.png) reads word for word as lunara_notes.txt fixes it, with nothing reworded, shortened or added.
+- `PHOTO-24/watch-feature-r003/H013` Any timing line on “Watch product-page feature - LC-25-0102” (watch-feature-r003.png) matches the certificate wording in lunara_notes.txt word for word, with nothing reworded, shortened or added.
 - `PHOTO-24/watch-feature-r003/H014` Every specification line on “Watch product-page feature - LC-25-0102” (watch-feature-r003.png) is fully visible, with no words cut off.
 - `PHOTO-24/watch-feature-r003/H015` The watch photograph on “Watch product-page feature - LC-25-0102” (watch-feature-r003.png) is the supplied frame lunara_pdp_selene.jpg.
-- `PHOTO-24/watch-feature-r003/H016` Apart from any wordmark, every Cormorant Garamond line on “Watch product-page feature - LC-25-0102” (watch-feature-r003.png), the reference name “Selene” and any heading included, is Cormorant Garamond Medium capitals, visibly letterspaced at 180 units, never another weight, italic or plain lowercase.
-- `PHOTO-24/watch-feature-r003/H017` The specification, body copy and fine print on “Watch product-page feature - LC-25-0102” (watch-feature-r003.png), and any caption, price, serial, timing result or timing line, are Inter Regular, never Cormorant Garamond, bold, another weight or italic.
-- `PHOTO-24/watch-feature-r003/H018` On “Watch product-page feature - LC-25-0102” (watch-feature-r003.png) the reference name “Selene” sits above and larger than the specification lines.
+- `PHOTO-24/watch-feature-r003/H016` Any Cormorant Garamond line on “Watch product-page feature - LC-25-0102” (watch-feature-r003.png) other than the wordmark and reference name, such as a subhead, is Medium capitals, never italic, lowercase or another weight.
+- `PHOTO-24/watch-feature-r003/H017` If the timing line appears on “Watch product-page feature - LC-25-0102” (watch-feature-r003.png), it is set in Inter Regular, not italic.
+- `PHOTO-24/watch-feature-r003/H018` On “Watch product-page feature - LC-25-0102” (watch-feature-r003.png) the reference name “Selene” is set larger than the specification lines.
 - `PHOTO-24/watch-feature-r003/H019` The dial colour on “Watch product-page feature - LC-25-0102” (watch-feature-r003.png) matches the dial in lunara_pdp_selene.jpg, with no tonal treatment applied.
 - `PHOTO-24/watch-feature-r003/H020` The dial markings, hands, crown and bracelet on “Watch product-page feature - LC-25-0102” (watch-feature-r003.png) match lunara_pdp_selene.jpg, with nothing generated, redrawn or removed.
-- `PHOTO-24/watch-feature-r003/H021` If the watch on “Watch product-page feature - LC-25-0102” (watch-feature-r003.png) is cut out of the grey sweep of lunara_pdp_selene.jpg, no grey sweep remains in the enclosed gaps between its bracelet links.
+- `PHOTO-24/watch-feature-r003/H021` If the watch on “Watch product-page feature - LC-25-0102” (watch-feature-r003.png) is cut out of lunara_pdp_selene.jpg, no grey sweep remains in the enclosed gaps between its bracelet links.
 - `PHOTO-24/watch-feature-r003/H022` Apart from lettering inside a photograph, every line of type on “Watch product-page feature - LC-25-0102” (watch-feature-r003.png) is set in Cormorant Garamond or Inter, with no third typeface.
-- `PHOTO-24/watch-feature-r003/H023` No figure on “Watch product-page feature - LC-25-0102” (watch-feature-r003.png) is set in Cormorant Garamond: every figure, caliber and serial numbers included, is Inter, and any figure inside a Cormorant Garamond small-caps line switches to Inter at the same size.
-- `PHOTO-24/watch-feature-r003/H024` Every figure on “Watch product-page feature - LC-25-0102” (watch-feature-r003.png) is a tabular lining figure, not an old-style figure, so any column of figures aligns.
+- `PHOTO-24/watch-feature-r003/H023` Every figure on “Watch product-page feature - LC-25-0102” (watch-feature-r003.png), including any inside a Cormorant Garamond heading, is set in Inter, not Cormorant Garamond.
+- `PHOTO-24/watch-feature-r003/H024` Every figure on “Watch product-page feature - LC-25-0102” (watch-feature-r003.png) is a lining figure at full capital height, with no old-style figure dropping below the line.
 - `PHOTO-24/watch-feature-r003/H025` No line of body text on “Watch product-page feature - LC-25-0102” (watch-feature-r003.png) runs longer than 65 characters.
-- `PHOTO-24/watch-feature-r003/H026` Any wordmark on “Watch product-page feature - LC-25-0102” (watch-feature-r003.png) is stacked as Lunara over Chronometry in Cormorant Garamond Medium capitals, visibly letterspaced at 180 units, never on one line.
+- `PHOTO-24/watch-feature-r003/H026` If a wordmark appears on “Watch product-page feature - LC-25-0102” (watch-feature-r003.png), it is stacked as Lunara over Chronometry, never set on one line.
 - `PHOTO-24/watch-feature-r003/H027` The copy on “Watch product-page feature - LC-25-0102” (watch-feature-r003.png) makes no superlative or hype claim, such as luxury, iconic, ultimate or finest.
 - `PHOTO-24/watch-feature-r003/H028` The type, panel, rule and icon colours on “Watch product-page feature - LC-25-0102” (watch-feature-r003.png) come only from #191512, #EDE6D6, #9A9EA3, #9C7A3C and #5A2A28.
-- `PHOTO-24/watch-feature-r003/H029` Every designed ground and panel on “Watch product-page feature - LC-25-0102” (watch-feature-r003.png) is Bone cream #EDE6D6, Warm near-black #191512 or Oxblood #5A2A28; type on Warm near-black or Oxblood is Bone cream, and on the photograph Bone cream or Warm near-black.
-- `PHOTO-24/watch-feature-r003/H030` Any wordmark, heading, body, specification, fine print or timing line on Bone cream #EDE6D6 on “Watch product-page feature - LC-25-0102” (watch-feature-r003.png) is Warm near-black #191512, except small captions, footer lines or labels in Tempered steel #9A9EA3 or Oxblood #5A2A28.
-- `PHOTO-24/watch-feature-r003/H031` On “Watch product-page feature - LC-25-0102” (watch-feature-r003.png), Aged brass #9C7A3C appears only as hairline rules or dividers and Tempered steel #9A9EA3 only in small captions, footer lines, labels or dividers; neither is a ground, a panel or body text.
-- `PHOTO-24/watch-feature-r003/H032` Every type, panel and rule colour on “Watch product-page feature - LC-25-0102” (watch-feature-r003.png) is solid at full opacity, with no tint, gradient, metallic, shadow or blend effect, and no scrim or overlay, black or white included, sits over any photograph.
-- `PHOTO-24/watch-feature-r004/H001` The watch case shape in “Watch product-page feature - LC-25-0103” (watch-feature-r004.png) matches the “Ardent” (LC-25-0103) case shown in lunara_pdp_ardent.jpg.
-- `PHOTO-24/watch-feature-r004/H002` The specification on “Watch product-page feature - LC-25-0103” (watch-feature-r004.png) gives all four fields the brief names, reference, caliber, case metal and dial finish, with none left out.
+- `PHOTO-24/watch-feature-r003/H029` Every designed ground and panel on “Watch product-page feature - LC-25-0102” (watch-feature-r003.png) is Bone cream #EDE6D6, Warm near-black #191512 or Oxblood #5A2A28.
+- `PHOTO-24/watch-feature-r003/H030` Type on Bone cream #EDE6D6 on “Watch product-page feature - LC-25-0102” (watch-feature-r003.png) is Warm near-black #191512, except small captions, footers and labels, which may be Tempered steel or Oxblood.
+- `PHOTO-24/watch-feature-r003/H031` On “Watch product-page feature - LC-25-0102” (watch-feature-r003.png), Aged brass #9C7A3C appears only as hairline rules or dividers, never as type, a ground or a panel.
+- `PHOTO-24/watch-feature-r003/H032` Every type, panel and rule colour on “Watch product-page feature - LC-25-0102” (watch-feature-r003.png) is flat and solid at full opacity, with no tint, gradient, metallic, glow, shadow or blend effect.
+- `PHOTO-24/watch-feature-r004/H001` The watch on “Watch product-page feature - LC-25-0103” (watch-feature-r004.png) keeps the case proportions of lunara_pdp_ardent.jpg, not stretched, squashed or warped.
 - `PHOTO-24/watch-feature-r004/H003` The model reference printed on “Watch product-page feature - LC-25-0103” (watch-feature-r004.png) reads exactly “Ardent”, as approved in lunara_register.csv, row 4.
 - `PHOTO-24/watch-feature-r004/H004` The case metal printed on “Watch product-page feature - LC-25-0103” (watch-feature-r004.png) reads exactly “Steel”, as approved in lunara_register.csv, row 4.
 - `PHOTO-24/watch-feature-r004/H005` The dial finish printed on “Watch product-page feature - LC-25-0103” (watch-feature-r004.png) reads exactly “Lacquered oxblood”, as approved in lunara_register.csv, row 4.
-- `PHOTO-24/watch-feature-r005/H001` The watch case shape in “Watch product-page feature - LC-25-0104” (watch-feature-r005.png) matches the “Halcyon” (LC-25-0104) case shown in lunara_pdp_halcyon.jpg.
-- `PHOTO-24/watch-feature-r005/H002` The specification on “Watch product-page feature - LC-25-0104” (watch-feature-r005.png) gives all four fields the brief names, reference, caliber, case metal and dial finish, with none left out.
+- `PHOTO-24/watch-feature-r005/H001` The watch on “Watch product-page feature - LC-25-0104” (watch-feature-r005.png) keeps the case proportions of lunara_pdp_halcyon.jpg, not stretched, squashed or warped.
 - `PHOTO-24/watch-feature-r005/H003` The model reference printed on “Watch product-page feature - LC-25-0104” (watch-feature-r005.png) reads exactly “Halcyon”, as approved in lunara_register.csv, row 5.
 - `PHOTO-24/watch-feature-r005/H004` The case metal printed on “Watch product-page feature - LC-25-0104” (watch-feature-r005.png) reads exactly “Steel”, as approved in lunara_register.csv, row 5.
 - `PHOTO-24/watch-feature-r005/H005` The dial finish printed on “Watch product-page feature - LC-25-0104” (watch-feature-r005.png) reads exactly “Silver”, as approved in lunara_register.csv, row 5.
@@ -91,28 +100,27 @@ Revised input pack. Previous execution results are historical, not current ratin
 - `PHOTO-24/watch-feature-r005/H010` Any movement description on “Watch product-page feature - LC-25-0104” (watch-feature-r005.png) matches lunara_notes.txt for LM-03: hand-wound, small seconds.
 - `PHOTO-24/watch-feature-r005/H011` “Watch product-page feature - LC-25-0104” (watch-feature-r005.png) claims no feature for Halcyon absent from lunara_notes.txt and lunara_register.csv, such as a water-resistance rating, crystal type or case size.
 - `PHOTO-24/watch-feature-r005/H012` “Watch product-page feature - LC-25-0104” (watch-feature-r005.png) gives no price for Halcyon alone; any price shown is the band $4,000-$12,000 a piece from lunara_notes.txt.
-- `PHOTO-24/watch-feature-r005/H013` Any timing line on “Watch product-page feature - LC-25-0104” (watch-feature-r005.png) reads word for word as lunara_notes.txt fixes it, with nothing reworded, shortened or added.
+- `PHOTO-24/watch-feature-r005/H013` Any timing line on “Watch product-page feature - LC-25-0104” (watch-feature-r005.png) matches the certificate wording in lunara_notes.txt word for word, with nothing reworded, shortened or added.
 - `PHOTO-24/watch-feature-r005/H014` Every specification line on “Watch product-page feature - LC-25-0104” (watch-feature-r005.png) is fully visible, with no words cut off.
 - `PHOTO-24/watch-feature-r005/H015` The watch photograph on “Watch product-page feature - LC-25-0104” (watch-feature-r005.png) is the supplied frame lunara_pdp_halcyon.jpg.
-- `PHOTO-24/watch-feature-r005/H016` Apart from any wordmark, every Cormorant Garamond line on “Watch product-page feature - LC-25-0104” (watch-feature-r005.png), the reference name “Halcyon” and any heading included, is Cormorant Garamond Medium capitals, visibly letterspaced at 180 units, never another weight, italic or plain lowercase.
-- `PHOTO-24/watch-feature-r005/H017` The specification, body copy and fine print on “Watch product-page feature - LC-25-0104” (watch-feature-r005.png), and any caption, price, serial, timing result or timing line, are Inter Regular, never Cormorant Garamond, bold, another weight or italic.
-- `PHOTO-24/watch-feature-r005/H018` On “Watch product-page feature - LC-25-0104” (watch-feature-r005.png) the reference name “Halcyon” sits above and larger than the specification lines.
+- `PHOTO-24/watch-feature-r005/H016` Any Cormorant Garamond line on “Watch product-page feature - LC-25-0104” (watch-feature-r005.png) other than the wordmark and reference name, such as a subhead, is Medium capitals, never italic, lowercase or another weight.
+- `PHOTO-24/watch-feature-r005/H017` If the timing line appears on “Watch product-page feature - LC-25-0104” (watch-feature-r005.png), it is set in Inter Regular, not italic.
+- `PHOTO-24/watch-feature-r005/H018` On “Watch product-page feature - LC-25-0104” (watch-feature-r005.png) the reference name “Halcyon” is set larger than the specification lines.
 - `PHOTO-24/watch-feature-r005/H019` The dial colour on “Watch product-page feature - LC-25-0104” (watch-feature-r005.png) matches the dial in lunara_pdp_halcyon.jpg, with no tonal treatment applied.
 - `PHOTO-24/watch-feature-r005/H020` The dial markings, hands, crown and bracelet on “Watch product-page feature - LC-25-0104” (watch-feature-r005.png) match lunara_pdp_halcyon.jpg, with nothing generated, redrawn or removed.
-- `PHOTO-24/watch-feature-r005/H021` If the watch on “Watch product-page feature - LC-25-0104” (watch-feature-r005.png) is cut out of the grey sweep of lunara_pdp_halcyon.jpg, no grey sweep remains in the enclosed gaps between its bracelet links.
+- `PHOTO-24/watch-feature-r005/H021` If the watch on “Watch product-page feature - LC-25-0104” (watch-feature-r005.png) is cut out of lunara_pdp_halcyon.jpg, no grey sweep remains in the enclosed gaps between its bracelet links.
 - `PHOTO-24/watch-feature-r005/H022` Apart from lettering inside a photograph, every line of type on “Watch product-page feature - LC-25-0104” (watch-feature-r005.png) is set in Cormorant Garamond or Inter, with no third typeface.
-- `PHOTO-24/watch-feature-r005/H023` No figure on “Watch product-page feature - LC-25-0104” (watch-feature-r005.png) is set in Cormorant Garamond: every figure, caliber and serial numbers included, is Inter, and any figure inside a Cormorant Garamond small-caps line switches to Inter at the same size.
-- `PHOTO-24/watch-feature-r005/H024` Every figure on “Watch product-page feature - LC-25-0104” (watch-feature-r005.png) is a tabular lining figure, not an old-style figure, so any column of figures aligns.
+- `PHOTO-24/watch-feature-r005/H023` Every figure on “Watch product-page feature - LC-25-0104” (watch-feature-r005.png), including any inside a Cormorant Garamond heading, is set in Inter, not Cormorant Garamond.
+- `PHOTO-24/watch-feature-r005/H024` Every figure on “Watch product-page feature - LC-25-0104” (watch-feature-r005.png) is a lining figure at full capital height, with no old-style figure dropping below the line.
 - `PHOTO-24/watch-feature-r005/H025` No line of body text on “Watch product-page feature - LC-25-0104” (watch-feature-r005.png) runs longer than 65 characters.
-- `PHOTO-24/watch-feature-r005/H026` Any wordmark on “Watch product-page feature - LC-25-0104” (watch-feature-r005.png) is stacked as Lunara over Chronometry in Cormorant Garamond Medium capitals, visibly letterspaced at 180 units, never on one line.
+- `PHOTO-24/watch-feature-r005/H026` If a wordmark appears on “Watch product-page feature - LC-25-0104” (watch-feature-r005.png), it is stacked as Lunara over Chronometry, never set on one line.
 - `PHOTO-24/watch-feature-r005/H027` The copy on “Watch product-page feature - LC-25-0104” (watch-feature-r005.png) makes no superlative or hype claim, such as luxury, iconic, ultimate or finest.
 - `PHOTO-24/watch-feature-r005/H028` The type, panel, rule and icon colours on “Watch product-page feature - LC-25-0104” (watch-feature-r005.png) come only from #191512, #EDE6D6, #9A9EA3, #9C7A3C and #5A2A28.
-- `PHOTO-24/watch-feature-r005/H029` Every designed ground and panel on “Watch product-page feature - LC-25-0104” (watch-feature-r005.png) is Bone cream #EDE6D6, Warm near-black #191512 or Oxblood #5A2A28; type on Warm near-black or Oxblood is Bone cream, and on the photograph Bone cream or Warm near-black.
-- `PHOTO-24/watch-feature-r005/H030` Any wordmark, heading, body, specification, fine print or timing line on Bone cream #EDE6D6 on “Watch product-page feature - LC-25-0104” (watch-feature-r005.png) is Warm near-black #191512, except small captions, footer lines or labels in Tempered steel #9A9EA3 or Oxblood #5A2A28.
-- `PHOTO-24/watch-feature-r005/H031` On “Watch product-page feature - LC-25-0104” (watch-feature-r005.png), Aged brass #9C7A3C appears only as hairline rules or dividers and Tempered steel #9A9EA3 only in small captions, footer lines, labels or dividers; neither is a ground, a panel or body text.
-- `PHOTO-24/watch-feature-r005/H032` Every type, panel and rule colour on “Watch product-page feature - LC-25-0104” (watch-feature-r005.png) is solid at full opacity, with no tint, gradient, metallic, shadow or blend effect, and no scrim or overlay, black or white included, sits over any photograph.
-- `PHOTO-24/watch-feature-r006/H001` The watch case shape in “Watch product-page feature - LC-25-0105” (watch-feature-r006.png) matches the “Vesper” (LC-25-0105) case shown in lunara_pdp_vesper.jpg.
-- `PHOTO-24/watch-feature-r006/H002` The specification on “Watch product-page feature - LC-25-0105” (watch-feature-r006.png) gives all four fields the brief names, reference, caliber, case metal and dial finish, with none left out.
+- `PHOTO-24/watch-feature-r005/H029` Every designed ground and panel on “Watch product-page feature - LC-25-0104” (watch-feature-r005.png) is Bone cream #EDE6D6, Warm near-black #191512 or Oxblood #5A2A28.
+- `PHOTO-24/watch-feature-r005/H030` Type on Bone cream #EDE6D6 on “Watch product-page feature - LC-25-0104” (watch-feature-r005.png) is Warm near-black #191512, except small captions, footers and labels, which may be Tempered steel or Oxblood.
+- `PHOTO-24/watch-feature-r005/H031` On “Watch product-page feature - LC-25-0104” (watch-feature-r005.png), Aged brass #9C7A3C appears only as hairline rules or dividers, never as type, a ground or a panel.
+- `PHOTO-24/watch-feature-r005/H032` Every type, panel and rule colour on “Watch product-page feature - LC-25-0104” (watch-feature-r005.png) is flat and solid at full opacity, with no tint, gradient, metallic, glow, shadow or blend effect.
+- `PHOTO-24/watch-feature-r006/H001` The watch on “Watch product-page feature - LC-25-0105” (watch-feature-r006.png) keeps the case proportions of lunara_pdp_vesper.jpg, not stretched, squashed or warped.
 - `PHOTO-24/watch-feature-r006/H003` The model reference printed on “Watch product-page feature - LC-25-0105” (watch-feature-r006.png) reads exactly “Vesper”, as approved in lunara_register.csv, row 6.
 - `PHOTO-24/watch-feature-r006/H004` The case metal printed on “Watch product-page feature - LC-25-0105” (watch-feature-r006.png) reads exactly “Steel”, as approved in lunara_register.csv, row 6.
 - `PHOTO-24/watch-feature-r006/H005` The dial finish printed on “Watch product-page feature - LC-25-0105” (watch-feature-r006.png) reads exactly “Deep blue sunray”, as approved in lunara_register.csv, row 6.
@@ -123,25 +131,25 @@ Revised input pack. Previous execution results are historical, not current ratin
 - `PHOTO-24/watch-feature-r006/H010` Any movement description on “Watch product-page feature - LC-25-0105” (watch-feature-r006.png) matches lunara_notes.txt for LM-02: automatic, 48h reserve.
 - `PHOTO-24/watch-feature-r006/H011` “Watch product-page feature - LC-25-0105” (watch-feature-r006.png) claims no feature for Vesper absent from lunara_notes.txt and lunara_register.csv, such as a water-resistance rating, crystal type or case size.
 - `PHOTO-24/watch-feature-r006/H012` “Watch product-page feature - LC-25-0105” (watch-feature-r006.png) gives no price for Vesper alone; any price shown is the band $4,000-$12,000 a piece from lunara_notes.txt.
-- `PHOTO-24/watch-feature-r006/H013` Any timing line on “Watch product-page feature - LC-25-0105” (watch-feature-r006.png) reads word for word as lunara_notes.txt fixes it, with nothing reworded, shortened or added.
+- `PHOTO-24/watch-feature-r006/H013` Any timing line on “Watch product-page feature - LC-25-0105” (watch-feature-r006.png) matches the certificate wording in lunara_notes.txt word for word, with nothing reworded, shortened or added.
 - `PHOTO-24/watch-feature-r006/H014` Every specification line on “Watch product-page feature - LC-25-0105” (watch-feature-r006.png) is fully visible, with no words cut off.
 - `PHOTO-24/watch-feature-r006/H015` The watch photograph on “Watch product-page feature - LC-25-0105” (watch-feature-r006.png) is the supplied frame lunara_pdp_vesper.jpg.
-- `PHOTO-24/watch-feature-r006/H016` Apart from any wordmark, every Cormorant Garamond line on “Watch product-page feature - LC-25-0105” (watch-feature-r006.png), the reference name “Vesper” and any heading included, is Cormorant Garamond Medium capitals, visibly letterspaced at 180 units, never another weight, italic or plain lowercase.
-- `PHOTO-24/watch-feature-r006/H017` The specification, body copy and fine print on “Watch product-page feature - LC-25-0105” (watch-feature-r006.png), and any caption, price, serial, timing result or timing line, are Inter Regular, never Cormorant Garamond, bold, another weight or italic.
-- `PHOTO-24/watch-feature-r006/H018` On “Watch product-page feature - LC-25-0105” (watch-feature-r006.png) the reference name “Vesper” sits above and larger than the specification lines.
+- `PHOTO-24/watch-feature-r006/H016` Any Cormorant Garamond line on “Watch product-page feature - LC-25-0105” (watch-feature-r006.png) other than the wordmark and reference name, such as a subhead, is Medium capitals, never italic, lowercase or another weight.
+- `PHOTO-24/watch-feature-r006/H017` If the timing line appears on “Watch product-page feature - LC-25-0105” (watch-feature-r006.png), it is set in Inter Regular, not italic.
+- `PHOTO-24/watch-feature-r006/H018` On “Watch product-page feature - LC-25-0105” (watch-feature-r006.png) the reference name “Vesper” is set larger than the specification lines.
 - `PHOTO-24/watch-feature-r006/H019` The dial colour on “Watch product-page feature - LC-25-0105” (watch-feature-r006.png) matches the deep blue sunray dial in lunara_pdp_vesper.jpg, true to colour, with no tonal treatment applied.
 - `PHOTO-24/watch-feature-r006/H020` The dial markings, hands, crown and strap on “Watch product-page feature - LC-25-0105” (watch-feature-r006.png) match lunara_pdp_vesper.jpg, with nothing generated, redrawn or removed.
 - `PHOTO-24/watch-feature-r006/H021` Apart from lettering inside a photograph, every line of type on “Watch product-page feature - LC-25-0105” (watch-feature-r006.png) is set in Cormorant Garamond or Inter, with no third typeface.
-- `PHOTO-24/watch-feature-r006/H022` No figure on “Watch product-page feature - LC-25-0105” (watch-feature-r006.png) is set in Cormorant Garamond: every figure, caliber and serial numbers included, is Inter, and any figure inside a Cormorant Garamond small-caps line switches to Inter at the same size.
-- `PHOTO-24/watch-feature-r006/H023` Every figure on “Watch product-page feature - LC-25-0105” (watch-feature-r006.png) is a tabular lining figure, not an old-style figure, so any column of figures aligns.
+- `PHOTO-24/watch-feature-r006/H022` Every figure on “Watch product-page feature - LC-25-0105” (watch-feature-r006.png), including any inside a Cormorant Garamond heading, is set in Inter, not Cormorant Garamond.
+- `PHOTO-24/watch-feature-r006/H023` Every figure on “Watch product-page feature - LC-25-0105” (watch-feature-r006.png) is a lining figure at full capital height, with no old-style figure dropping below the line.
 - `PHOTO-24/watch-feature-r006/H024` No line of body text on “Watch product-page feature - LC-25-0105” (watch-feature-r006.png) runs longer than 65 characters.
-- `PHOTO-24/watch-feature-r006/H025` Any wordmark on “Watch product-page feature - LC-25-0105” (watch-feature-r006.png) is stacked as Lunara over Chronometry in Cormorant Garamond Medium capitals, visibly letterspaced at 180 units, never on one line.
+- `PHOTO-24/watch-feature-r006/H025` If a wordmark appears on “Watch product-page feature - LC-25-0105” (watch-feature-r006.png), it is stacked as Lunara over Chronometry, never set on one line.
 - `PHOTO-24/watch-feature-r006/H026` The copy on “Watch product-page feature - LC-25-0105” (watch-feature-r006.png) makes no superlative or hype claim, such as luxury, iconic, ultimate or finest.
 - `PHOTO-24/watch-feature-r006/H027` The type, panel, rule and icon colours on “Watch product-page feature - LC-25-0105” (watch-feature-r006.png) come only from #191512, #EDE6D6, #9A9EA3, #9C7A3C and #5A2A28.
-- `PHOTO-24/watch-feature-r006/H028` Every designed ground and panel on “Watch product-page feature - LC-25-0105” (watch-feature-r006.png) is Bone cream #EDE6D6, Warm near-black #191512 or Oxblood #5A2A28; type on Warm near-black or Oxblood is Bone cream, and on the photograph Bone cream or Warm near-black.
-- `PHOTO-24/watch-feature-r006/H029` Any wordmark, heading, body, specification, fine print or timing line on Bone cream #EDE6D6 on “Watch product-page feature - LC-25-0105” (watch-feature-r006.png) is Warm near-black #191512, except small captions, footer lines or labels in Tempered steel #9A9EA3 or Oxblood #5A2A28.
-- `PHOTO-24/watch-feature-r006/H030` On “Watch product-page feature - LC-25-0105” (watch-feature-r006.png), Aged brass #9C7A3C appears only as hairline rules or dividers and Tempered steel #9A9EA3 only in small captions, footer lines, labels or dividers; neither is a ground, a panel or body text.
-- `PHOTO-24/watch-feature-r006/H031` Every type, panel and rule colour on “Watch product-page feature - LC-25-0105” (watch-feature-r006.png) is solid at full opacity, with no tint, gradient, metallic, shadow or blend effect, and no scrim or overlay, black or white included, sits over any photograph.
+- `PHOTO-24/watch-feature-r006/H028` Every designed ground and panel on “Watch product-page feature - LC-25-0105” (watch-feature-r006.png) is Bone cream #EDE6D6, Warm near-black #191512 or Oxblood #5A2A28.
+- `PHOTO-24/watch-feature-r006/H029` Type on Bone cream #EDE6D6 on “Watch product-page feature - LC-25-0105” (watch-feature-r006.png) is Warm near-black #191512, except small captions, footers and labels, which may be Tempered steel or Oxblood.
+- `PHOTO-24/watch-feature-r006/H030` On “Watch product-page feature - LC-25-0105” (watch-feature-r006.png), Aged brass #9C7A3C appears only as hairline rules or dividers, never as type, a ground or a panel.
+- `PHOTO-24/watch-feature-r006/H031` Every type, panel and rule colour on “Watch product-page feature - LC-25-0105” (watch-feature-r006.png) is flat and solid at full opacity, with no tint, gradient, metallic, glow, shadow or blend effect.
 - `PHOTO-24/dealer-launch/H001` “Watch dealer launch sheet” (dealer-launch.pdf) names all five references, Meridian, Selene, Ardent, Halcyon and Vesper, each spelled as in lunara_register.csv and lunara_notes.txt.
 - `PHOTO-24/watch-feature-r004/H006` The dial colour on “Watch product-page feature - LC-25-0103” (watch-feature-r004.png) matches the dial in lunara_pdp_ardent.jpg, with no tonal treatment applied.
 - `PHOTO-24/watch-feature-r004/H007` The caliber printed on “Watch product-page feature - LC-25-0103” (watch-feature-r004.png) reads exactly “LM-01”, as approved in lunara_register.csv, row 4.
@@ -151,29 +159,29 @@ Revised input pack. Previous execution results are historical, not current ratin
 - `PHOTO-24/watch-feature-r004/H011` Any movement description on “Watch product-page feature - LC-25-0103” (watch-feature-r004.png) matches lunara_notes.txt for LM-01: hand-wound, 42h reserve.
 - `PHOTO-24/watch-feature-r004/H012` “Watch product-page feature - LC-25-0103” (watch-feature-r004.png) claims no feature for Ardent absent from lunara_notes.txt and lunara_register.csv, such as a water-resistance rating, crystal type or case size.
 - `PHOTO-24/watch-feature-r004/H013` “Watch product-page feature - LC-25-0103” (watch-feature-r004.png) gives no price for Ardent alone; any price shown is the band $4,000-$12,000 a piece from lunara_notes.txt.
-- `PHOTO-24/watch-feature-r004/H014` Any timing line on “Watch product-page feature - LC-25-0103” (watch-feature-r004.png) reads word for word as lunara_notes.txt fixes it, with nothing reworded, shortened or added.
+- `PHOTO-24/watch-feature-r004/H014` Any timing line on “Watch product-page feature - LC-25-0103” (watch-feature-r004.png) matches the certificate wording in lunara_notes.txt word for word, with nothing reworded, shortened or added.
 - `PHOTO-24/watch-feature-r004/H015` Every specification line on “Watch product-page feature - LC-25-0103” (watch-feature-r004.png) is fully visible, with no words cut off.
 - `PHOTO-24/watch-feature-r004/H016` The watch photograph on “Watch product-page feature - LC-25-0103” (watch-feature-r004.png) is the supplied frame lunara_pdp_ardent.jpg.
-- `PHOTO-24/watch-feature-r004/H017` Apart from any wordmark, every Cormorant Garamond line on “Watch product-page feature - LC-25-0103” (watch-feature-r004.png), the reference name “Ardent” and any heading included, is Cormorant Garamond Medium capitals, visibly letterspaced at 180 units, never another weight, italic or plain lowercase.
-- `PHOTO-24/watch-feature-r004/H018` The specification, body copy and fine print on “Watch product-page feature - LC-25-0103” (watch-feature-r004.png), and any caption, price, serial, timing result or timing line, are Inter Regular, never Cormorant Garamond, bold, another weight or italic.
-- `PHOTO-24/watch-feature-r004/H019` On “Watch product-page feature - LC-25-0103” (watch-feature-r004.png) the reference name “Ardent” sits above and larger than the specification lines.
+- `PHOTO-24/watch-feature-r004/H017` Any Cormorant Garamond line on “Watch product-page feature - LC-25-0103” (watch-feature-r004.png) other than the wordmark and reference name, such as a subhead, is Medium capitals, never italic, lowercase or another weight.
+- `PHOTO-24/watch-feature-r004/H018` If the timing line appears on “Watch product-page feature - LC-25-0103” (watch-feature-r004.png), it is set in Inter Regular, not italic.
+- `PHOTO-24/watch-feature-r004/H019` On “Watch product-page feature - LC-25-0103” (watch-feature-r004.png) the reference name “Ardent” is set larger than the specification lines.
 - `PHOTO-24/watch-feature-r004/H020` The dial markings, hands, crown and strap on “Watch product-page feature - LC-25-0103” (watch-feature-r004.png) match lunara_pdp_ardent.jpg, with nothing generated, redrawn or removed.
 - `PHOTO-24/watch-feature-r004/H021` Apart from lettering inside a photograph, every line of type on “Watch product-page feature - LC-25-0103” (watch-feature-r004.png) is set in Cormorant Garamond or Inter, with no third typeface.
-- `PHOTO-24/watch-feature-r004/H022` No figure on “Watch product-page feature - LC-25-0103” (watch-feature-r004.png) is set in Cormorant Garamond: every figure, caliber and serial numbers included, is Inter, and any figure inside a Cormorant Garamond small-caps line switches to Inter at the same size.
-- `PHOTO-24/watch-feature-r004/H023` Every figure on “Watch product-page feature - LC-25-0103” (watch-feature-r004.png) is a tabular lining figure, not an old-style figure, so any column of figures aligns.
+- `PHOTO-24/watch-feature-r004/H022` Every figure on “Watch product-page feature - LC-25-0103” (watch-feature-r004.png), including any inside a Cormorant Garamond heading, is set in Inter, not Cormorant Garamond.
+- `PHOTO-24/watch-feature-r004/H023` Every figure on “Watch product-page feature - LC-25-0103” (watch-feature-r004.png) is a lining figure at full capital height, with no old-style figure dropping below the line.
 - `PHOTO-24/watch-feature-r004/H024` No line of body text on “Watch product-page feature - LC-25-0103” (watch-feature-r004.png) runs longer than 65 characters.
-- `PHOTO-24/watch-feature-r004/H025` Any wordmark on “Watch product-page feature - LC-25-0103” (watch-feature-r004.png) is stacked as Lunara over Chronometry in Cormorant Garamond Medium capitals, visibly letterspaced at 180 units, never on one line.
+- `PHOTO-24/watch-feature-r004/H025` If a wordmark appears on “Watch product-page feature - LC-25-0103” (watch-feature-r004.png), it is stacked as Lunara over Chronometry, never set on one line.
 - `PHOTO-24/watch-feature-r004/H026` The copy on “Watch product-page feature - LC-25-0103” (watch-feature-r004.png) makes no superlative or hype claim, such as luxury, iconic, ultimate or finest.
 - `PHOTO-24/watch-feature-r004/H027` The type, panel, rule and icon colours on “Watch product-page feature - LC-25-0103” (watch-feature-r004.png) come only from #191512, #EDE6D6, #9A9EA3, #9C7A3C and #5A2A28.
-- `PHOTO-24/watch-feature-r004/H028` Every designed ground and panel on “Watch product-page feature - LC-25-0103” (watch-feature-r004.png) is Bone cream #EDE6D6, Warm near-black #191512 or Oxblood #5A2A28; type on Warm near-black or Oxblood is Bone cream, and on the photograph Bone cream or Warm near-black.
-- `PHOTO-24/watch-feature-r004/H029` Any wordmark, heading, body, specification, fine print or timing line on Bone cream #EDE6D6 on “Watch product-page feature - LC-25-0103” (watch-feature-r004.png) is Warm near-black #191512, except small captions, footer lines or labels in Tempered steel #9A9EA3 or Oxblood #5A2A28.
-- `PHOTO-24/watch-feature-r004/H030` On “Watch product-page feature - LC-25-0103” (watch-feature-r004.png), Aged brass #9C7A3C appears only as hairline rules or dividers and Tempered steel #9A9EA3 only in small captions, footer lines, labels or dividers; neither is a ground, a panel or body text.
-- `PHOTO-24/watch-feature-r004/H031` Every type, panel and rule colour on “Watch product-page feature - LC-25-0103” (watch-feature-r004.png) is solid at full opacity, with no tint, gradient, metallic, shadow or blend effect, and no scrim or overlay, black or white included, sits over any photograph.
+- `PHOTO-24/watch-feature-r004/H028` Every designed ground and panel on “Watch product-page feature - LC-25-0103” (watch-feature-r004.png) is Bone cream #EDE6D6, Warm near-black #191512 or Oxblood #5A2A28.
+- `PHOTO-24/watch-feature-r004/H029` Type on Bone cream #EDE6D6 on “Watch product-page feature - LC-25-0103” (watch-feature-r004.png) is Warm near-black #191512, except small captions, footers and labels, which may be Tempered steel or Oxblood.
+- `PHOTO-24/watch-feature-r004/H030` On “Watch product-page feature - LC-25-0103” (watch-feature-r004.png), Aged brass #9C7A3C appears only as hairline rules or dividers, never as type, a ground or a panel.
+- `PHOTO-24/watch-feature-r004/H031` Every type, panel and rule colour on “Watch product-page feature - LC-25-0103” (watch-feature-r004.png) is flat and solid at full opacity, with no tint, gradient, metallic, glow, shadow or blend effect.
 - `PHOTO-24/watch-feature-r002/H006` Every specification line on “Watch product-page feature - LC-25-0101” (watch-feature-r002.png) is fully visible, with no words cut off.
 - `PHOTO-24/watch-feature-r002/H007` The watch photograph on “Watch product-page feature - LC-25-0101” (watch-feature-r002.png) is the supplied frame lunara_pdp_meridian.jpg.
-- `PHOTO-24/watch-feature-r002/H008` Apart from any wordmark, every Cormorant Garamond line on “Watch product-page feature - LC-25-0101” (watch-feature-r002.png), the reference name “Meridian” and any heading included, is Cormorant Garamond Medium capitals, visibly letterspaced at 180 units, never another weight, italic or plain lowercase.
-- `PHOTO-24/watch-feature-r002/H009` The specification, body copy and fine print on “Watch product-page feature - LC-25-0101” (watch-feature-r002.png), and any caption, price, serial, timing result or timing line, are Inter Regular, never Cormorant Garamond, bold, another weight or italic.
-- `PHOTO-24/watch-feature-r002/H010` On “Watch product-page feature - LC-25-0101” (watch-feature-r002.png) the reference name “Meridian” sits above and larger than the specification lines.
+- `PHOTO-24/watch-feature-r002/H008` Any Cormorant Garamond line on “Watch product-page feature - LC-25-0101” (watch-feature-r002.png) other than the wordmark and reference name, such as a subhead, is Medium capitals, never italic, lowercase or another weight.
+- `PHOTO-24/watch-feature-r002/H009` If the timing line appears on “Watch product-page feature - LC-25-0101” (watch-feature-r002.png), it is set in Inter Regular, not italic.
+- `PHOTO-24/watch-feature-r002/H010` On “Watch product-page feature - LC-25-0101” (watch-feature-r002.png) the reference name “Meridian” is set larger than the specification lines.
 - `PHOTO-24/watch-feature-r002/H011` The caliber printed on “Watch product-page feature - LC-25-0101” (watch-feature-r002.png) reads exactly “LM-01”, as approved in lunara_register.csv, row 2.
 - `PHOTO-24/watch-feature-r002/H012` Any serial on “Watch product-page feature - LC-25-0101” (watch-feature-r002.png) reads exactly “LC-25-0101”, as in lunara_register.csv, row 2.
 - `PHOTO-24/watch-feature-r002/H013` Any timing result on “Watch product-page feature - LC-25-0101” (watch-feature-r002.png) reads exactly “+2 s/day”, as in lunara_register.csv, row 2.
@@ -181,46 +189,46 @@ Revised input pack. Previous execution results are historical, not current ratin
 - `PHOTO-24/watch-feature-r002/H015` Any movement description on “Watch product-page feature - LC-25-0101” (watch-feature-r002.png) matches lunara_notes.txt for LM-01: hand-wound, 42h reserve.
 - `PHOTO-24/watch-feature-r002/H016` “Watch product-page feature - LC-25-0101” (watch-feature-r002.png) claims no feature for Meridian absent from lunara_notes.txt and lunara_register.csv, such as a water-resistance rating, crystal type or case size.
 - `PHOTO-24/watch-feature-r002/H017` “Watch product-page feature - LC-25-0101” (watch-feature-r002.png) gives no price for Meridian alone; any price shown is the band $4,000-$12,000 a piece from lunara_notes.txt.
-- `PHOTO-24/watch-feature-r002/H018` Any timing line on “Watch product-page feature - LC-25-0101” (watch-feature-r002.png) reads word for word as lunara_notes.txt fixes it, with nothing reworded, shortened or added.
+- `PHOTO-24/watch-feature-r002/H018` Any timing line on “Watch product-page feature - LC-25-0101” (watch-feature-r002.png) matches the certificate wording in lunara_notes.txt word for word, with nothing reworded, shortened or added.
 - `PHOTO-24/watch-feature-r002/H019` The dial colour on “Watch product-page feature - LC-25-0101” (watch-feature-r002.png) matches the dial in lunara_pdp_meridian.jpg, with no tonal treatment applied.
 - `PHOTO-24/watch-feature-r002/H020` The dial markings, hands, crown and bracelet on “Watch product-page feature - LC-25-0101” (watch-feature-r002.png) match lunara_pdp_meridian.jpg, with nothing generated, redrawn or removed.
-- `PHOTO-24/watch-feature-r002/H021` If the watch on “Watch product-page feature - LC-25-0101” (watch-feature-r002.png) is cut out of the grey sweep of lunara_pdp_meridian.jpg, no grey sweep remains in the enclosed gaps between its bracelet links.
-- `PHOTO-24/watch-feature-r002/H022` If the watch on “Watch product-page feature - LC-25-0101” (watch-feature-r002.png) is cut out of lunara_pdp_meridian.jpg, its mirror-polished case flank is kept whole, not cut away with the grey sweep it reflects.
+- `PHOTO-24/watch-feature-r002/H021` If the watch on “Watch product-page feature - LC-25-0101” (watch-feature-r002.png) is cut out of lunara_pdp_meridian.jpg, no grey sweep remains in the enclosed gaps between its bracelet links.
+- `PHOTO-24/watch-feature-r002/H022` If the watch on “Watch product-page feature - LC-25-0101” (watch-feature-r002.png) is cut out, its mirror-polished case flank is kept whole, not cut away with the grey sweep.
 - `PHOTO-24/watch-feature-r002/H023` Apart from lettering inside a photograph, every line of type on “Watch product-page feature - LC-25-0101” (watch-feature-r002.png) is set in Cormorant Garamond or Inter, with no third typeface.
-- `PHOTO-24/watch-feature-r002/H024` No figure on “Watch product-page feature - LC-25-0101” (watch-feature-r002.png) is set in Cormorant Garamond: every figure, caliber and serial numbers included, is Inter, and any figure inside a Cormorant Garamond small-caps line switches to Inter at the same size.
-- `PHOTO-24/watch-feature-r002/H025` Every figure on “Watch product-page feature - LC-25-0101” (watch-feature-r002.png) is a tabular lining figure, not an old-style figure, so any column of figures aligns.
+- `PHOTO-24/watch-feature-r002/H024` Every figure on “Watch product-page feature - LC-25-0101” (watch-feature-r002.png), including any inside a Cormorant Garamond heading, is set in Inter, not Cormorant Garamond.
+- `PHOTO-24/watch-feature-r002/H025` Every figure on “Watch product-page feature - LC-25-0101” (watch-feature-r002.png) is a lining figure at full capital height, with no old-style figure dropping below the line.
 - `PHOTO-24/watch-feature-r002/H026` No line of body text on “Watch product-page feature - LC-25-0101” (watch-feature-r002.png) runs longer than 65 characters.
-- `PHOTO-24/watch-feature-r002/H027` Any wordmark on “Watch product-page feature - LC-25-0101” (watch-feature-r002.png) is stacked as Lunara over Chronometry in Cormorant Garamond Medium capitals, visibly letterspaced at 180 units, never on one line.
+- `PHOTO-24/watch-feature-r002/H027` If a wordmark appears on “Watch product-page feature - LC-25-0101” (watch-feature-r002.png), it is stacked as Lunara over Chronometry, never set on one line.
 - `PHOTO-24/watch-feature-r002/H028` The copy on “Watch product-page feature - LC-25-0101” (watch-feature-r002.png) makes no superlative or hype claim, such as luxury, iconic, ultimate or finest.
 - `PHOTO-24/watch-feature-r002/H029` The type, panel, rule and icon colours on “Watch product-page feature - LC-25-0101” (watch-feature-r002.png) come only from #191512, #EDE6D6, #9A9EA3, #9C7A3C and #5A2A28.
-- `PHOTO-24/watch-feature-r002/H030` Every designed ground and panel on “Watch product-page feature - LC-25-0101” (watch-feature-r002.png) is Bone cream #EDE6D6, Warm near-black #191512 or Oxblood #5A2A28; type on Warm near-black or Oxblood is Bone cream, and on the photograph Bone cream or Warm near-black.
-- `PHOTO-24/watch-feature-r002/H031` Any wordmark, heading, body, specification, fine print or timing line on Bone cream #EDE6D6 on “Watch product-page feature - LC-25-0101” (watch-feature-r002.png) is Warm near-black #191512, except small captions, footer lines or labels in Tempered steel #9A9EA3 or Oxblood #5A2A28.
-- `PHOTO-24/watch-feature-r002/H032` On “Watch product-page feature - LC-25-0101” (watch-feature-r002.png), Aged brass #9C7A3C appears only as hairline rules or dividers and Tempered steel #9A9EA3 only in small captions, footer lines, labels or dividers; neither is a ground, a panel or body text.
-- `PHOTO-24/watch-feature-r002/H033` Every type, panel and rule colour on “Watch product-page feature - LC-25-0101” (watch-feature-r002.png) is solid at full opacity, with no tint, gradient, metallic, shadow or blend effect, and no scrim or overlay, black or white included, sits over any photograph.
-- `PHOTO-24/dealer-launch/H002` The timing line on “Watch dealer launch sheet” (dealer-launch.pdf) is present and reads word for word as fixed in lunara_notes.txt; a missing or reworded timing line makes the sheet unusable.
+- `PHOTO-24/watch-feature-r002/H030` Every designed ground and panel on “Watch product-page feature - LC-25-0101” (watch-feature-r002.png) is Bone cream #EDE6D6, Warm near-black #191512 or Oxblood #5A2A28.
+- `PHOTO-24/watch-feature-r002/H031` Type on Bone cream #EDE6D6 on “Watch product-page feature - LC-25-0101” (watch-feature-r002.png) is Warm near-black #191512, except small captions, footers and labels, which may be Tempered steel or Oxblood.
+- `PHOTO-24/watch-feature-r002/H032` On “Watch product-page feature - LC-25-0101” (watch-feature-r002.png), Aged brass #9C7A3C appears only as hairline rules or dividers, never as type, a ground or a panel.
+- `PHOTO-24/watch-feature-r002/H033` Every type, panel and rule colour on “Watch product-page feature - LC-25-0101” (watch-feature-r002.png) is flat and solid at full opacity, with no tint, gradient, metallic, glow, shadow or blend effect.
+- `PHOTO-24/dealer-launch/H002` The timing line on “Watch dealer launch sheet” (dealer-launch.pdf) is present and matches the certificate wording in lunara_notes.txt word for word, with nothing reworded or shortened.
 - `PHOTO-24/dealer-launch/H003` “Watch dealer launch sheet” (dealer-launch.pdf) lists no reference other than the five in lunara_register.csv: Meridian, Selene, Ardent, Halcyon and Vesper.
-- `PHOTO-24/dealer-launch/H004` The wordmark on “Watch dealer launch sheet” (dealer-launch.pdf) is stacked as Lunara over Chronometry in Cormorant Garamond Medium capitals tracked 180 units, not the bold serif capitals of lunara_certificate_2025.pdf.
-- `PHOTO-24/dealer-launch/H005` Every solid ground and panel on “Watch dealer launch sheet” (dealer-launch.pdf) is Bone cream #EDE6D6, Warm near-black #191512 or Oxblood #5A2A28; type on Warm near-black or Oxblood is Bone cream, and on any photograph Bone cream or Warm near-black.
+- `PHOTO-24/dealer-launch/H004` If a wordmark appears on “Watch dealer launch sheet” (dealer-launch.pdf), it is stacked as Lunara over Chronometry, never set on one line.
+- `PHOTO-24/dealer-launch/H005` Every designed ground and panel on “Watch dealer launch sheet” (dealer-launch.pdf) is Bone cream #EDE6D6, Warm near-black #191512 or Oxblood #5A2A28.
 - `PHOTO-24/dealer-launch/H006` “Watch dealer launch sheet” (dealer-launch.pdf) gives Meridian caliber LM-01, as lunara_register.csv row 2 does.
 - `PHOTO-24/dealer-launch/H007` “Watch dealer launch sheet” (dealer-launch.pdf) gives Meridian dial finish Silver sunburst, as lunara_register.csv row 2 does.
 - `PHOTO-24/dealer-launch/H008` The watch photograph for Meridian on “Watch dealer launch sheet” (dealer-launch.pdf) is the supplied frame lunara_pdp_meridian.jpg.
-- `PHOTO-24/dealer-launch/H009` The watch pictured as Meridian on “Watch dealer launch sheet” (dealer-launch.pdf) has the silver sunburst dial and steel case & bracelet of lunara_pdp_meridian.jpg, with no part generated or redrawn.
-- `PHOTO-24/dealer-launch/H010` “Watch dealer launch sheet” (dealer-launch.pdf) gives Selene caliber LM-02 alone, not LM-03.
+- `PHOTO-24/dealer-launch/H009` The watch pictured as Meridian on “Watch dealer launch sheet” (dealer-launch.pdf) shows the dial, case and bracelet of lunara_pdp_meridian.jpg, with nothing generated or redrawn.
+- `PHOTO-24/dealer-launch/H010` On “Watch dealer launch sheet” (dealer-launch.pdf), Selene is given one caliber only, LM-02, as in lunara_register.csv row 3.
 - `PHOTO-24/dealer-launch/H011` “Watch dealer launch sheet” (dealer-launch.pdf) gives Selene dial finish Grained cream, as lunara_register.csv row 3 does.
 - `PHOTO-24/dealer-launch/H012` The watch photograph for Selene on “Watch dealer launch sheet” (dealer-launch.pdf) is the supplied frame lunara_pdp_selene.jpg.
-- `PHOTO-24/dealer-launch/H013` The watch pictured as Selene on “Watch dealer launch sheet” (dealer-launch.pdf) has the grained cream dial and steel case & bracelet of lunara_pdp_selene.jpg, with no part generated or redrawn.
+- `PHOTO-24/dealer-launch/H013` The watch pictured as Selene on “Watch dealer launch sheet” (dealer-launch.pdf) shows the dial, case and bracelet of lunara_pdp_selene.jpg, with nothing generated or redrawn.
 - `PHOTO-24/dealer-launch/H014` “Watch dealer launch sheet” (dealer-launch.pdf) gives Ardent caliber LM-01, as lunara_register.csv row 4 does.
 - `PHOTO-24/dealer-launch/H015` “Watch dealer launch sheet” (dealer-launch.pdf) gives Ardent dial finish Lacquered oxblood, as lunara_register.csv row 4 does.
 - `PHOTO-24/dealer-launch/H016` The watch photograph for Ardent on “Watch dealer launch sheet” (dealer-launch.pdf) is the supplied frame lunara_pdp_ardent.jpg.
-- `PHOTO-24/dealer-launch/H017` The watch pictured as Ardent on “Watch dealer launch sheet” (dealer-launch.pdf) has the lacquered oxblood dial and steel case on oxblood strap of lunara_pdp_ardent.jpg, with no part generated or redrawn.
-- `PHOTO-24/dealer-launch/H018` “Watch dealer launch sheet” (dealer-launch.pdf) gives Halcyon caliber LM-03 alone, not LM-01 or LM-02.
+- `PHOTO-24/dealer-launch/H017` The watch pictured as Ardent on “Watch dealer launch sheet” (dealer-launch.pdf) shows the dial, case and strap of lunara_pdp_ardent.jpg, with nothing generated or redrawn.
+- `PHOTO-24/dealer-launch/H018` On “Watch dealer launch sheet” (dealer-launch.pdf), Halcyon is given one caliber only, LM-03, as in lunara_register.csv row 5.
 - `PHOTO-24/dealer-launch/H019` “Watch dealer launch sheet” (dealer-launch.pdf) gives Halcyon dial finish Silver, as lunara_register.csv row 5 does.
 - `PHOTO-24/dealer-launch/H020` The watch photograph for Halcyon on “Watch dealer launch sheet” (dealer-launch.pdf) is the supplied frame lunara_pdp_halcyon.jpg.
-- `PHOTO-24/dealer-launch/H021` The watch pictured as Halcyon on “Watch dealer launch sheet” (dealer-launch.pdf) has the silver dial and steel case & bracelet of lunara_pdp_halcyon.jpg, with no part generated or redrawn.
+- `PHOTO-24/dealer-launch/H021` The watch pictured as Halcyon on “Watch dealer launch sheet” (dealer-launch.pdf) shows the dial, case and bracelet of lunara_pdp_halcyon.jpg, with nothing generated or redrawn.
 - `PHOTO-24/dealer-launch/H022` “Watch dealer launch sheet” (dealer-launch.pdf) gives Vesper caliber LM-02, as lunara_register.csv row 6 does.
 - `PHOTO-24/dealer-launch/H023` “Watch dealer launch sheet” (dealer-launch.pdf) gives Vesper dial finish Deep blue sunray, as lunara_register.csv row 6 does.
 - `PHOTO-24/dealer-launch/H024` The watch photograph for Vesper on “Watch dealer launch sheet” (dealer-launch.pdf) is the supplied frame lunara_pdp_vesper.jpg.
-- `PHOTO-24/dealer-launch/H025` The watch pictured as Vesper on “Watch dealer launch sheet” (dealer-launch.pdf) has the deep blue sunray dial and steel case on blue strap of lunara_pdp_vesper.jpg, with no part generated or redrawn.
+- `PHOTO-24/dealer-launch/H025` The watch pictured as Vesper on “Watch dealer launch sheet” (dealer-launch.pdf) shows the dial, case and strap of lunara_pdp_vesper.jpg, with nothing generated or redrawn.
 - `PHOTO-24/dealer-launch/H026` No watch photograph on “Watch dealer launch sheet” (dealer-launch.pdf) carries the campaign's warm single-tone treatment or film grain.
 - `PHOTO-24/dealer-launch/H027` The Vesper dial on “Watch dealer launch sheet” (dealer-launch.pdf) reads deep blue as in lunara_pdp_vesper.jpg, true to colour, not warmed or toned.
 - `PHOTO-24/dealer-launch/H028` Every reference entry, specification line and the timing line on “Watch dealer launch sheet” (dealer-launch.pdf) is fully visible, with no words cut off or overset.
@@ -231,186 +239,118 @@ Revised input pack. Previous execution results are historical, not current ratin
 - `PHOTO-24/dealer-launch/H033` Any caliber description on “Watch dealer launch sheet” (dealer-launch.pdf) matches lunara_notes.txt: LM-01 hand-wound, 42h reserve; LM-02 automatic, 48h reserve; LM-03 hand-wound, small seconds.
 - `PHOTO-24/dealer-launch/H034` “Watch dealer launch sheet” (dealer-launch.pdf) claims no feature for any reference absent from lunara_notes.txt and lunara_register.csv, such as a water-resistance rating, crystal type or case size.
 - `PHOTO-24/dealer-launch/H035` “Watch dealer launch sheet” (dealer-launch.pdf) gives no price for any single reference; any price shown is the band $4,000-$12,000 a piece from lunara_notes.txt.
-- `PHOTO-24/dealer-launch/H036` Apart from the wordmark, every Cormorant Garamond line on “Watch dealer launch sheet” (dealer-launch.pdf), the sheet heading and each reference name included, is Cormorant Garamond Medium capitals, visibly letterspaced at 180 units, never another weight, italic or plain lowercase.
-- `PHOTO-24/dealer-launch/H037` The body, specification, fine print and timing line on “Watch dealer launch sheet” (dealer-launch.pdf), and any caption, price, serial or timing result, are Inter Regular, never Cormorant Garamond, bold, another weight or italic.
-- `PHOTO-24/dealer-launch/H038` In each reference entry on “Watch dealer launch sheet” (dealer-launch.pdf), the reference name sits above its specification and is set larger.
+- `PHOTO-24/dealer-launch/H036` Any Cormorant Garamond line on “Watch dealer launch sheet” (dealer-launch.pdf) other than the main heading, reference names and wordmark, such as a subhead, is Medium capitals, never italic, lowercase or another weight.
+- `PHOTO-24/dealer-launch/H037` The timing line on “Watch dealer launch sheet” (dealer-launch.pdf) is set in Inter Regular, not italic.
+- `PHOTO-24/dealer-launch/H038` In each reference entry on “Watch dealer launch sheet” (dealer-launch.pdf), the reference name is set larger than its specification text.
 - `PHOTO-24/dealer-launch/H039` Apart from lettering inside a photograph, every line of type on “Watch dealer launch sheet” (dealer-launch.pdf) is set in Cormorant Garamond or Inter, with no third typeface.
-- `PHOTO-24/dealer-launch/H040` No figure on “Watch dealer launch sheet” (dealer-launch.pdf) is set in Cormorant Garamond: every figure, caliber and serial numbers included, is Inter, and any figure inside a Cormorant Garamond small-caps line switches to Inter at the same size.
-- `PHOTO-24/dealer-launch/H041` Every figure on “Watch dealer launch sheet” (dealer-launch.pdf) is a tabular lining figure, not an old-style figure, so any column of figures aligns.
+- `PHOTO-24/dealer-launch/H040` Every figure on “Watch dealer launch sheet” (dealer-launch.pdf), including any inside a Cormorant Garamond heading, is set in Inter, not Cormorant Garamond.
+- `PHOTO-24/dealer-launch/H041` Every figure on “Watch dealer launch sheet” (dealer-launch.pdf) is a lining figure at full capital height, with no old-style figure dropping below the line.
 - `PHOTO-24/dealer-launch/H042` No line of body text on “Watch dealer launch sheet” (dealer-launch.pdf) runs longer than 65 characters.
 - `PHOTO-24/dealer-launch/H043` The copy on “Watch dealer launch sheet” (dealer-launch.pdf) makes no superlative or hype claim, such as luxury, iconic, ultimate or finest.
 - `PHOTO-24/dealer-launch/H044` The type, panel, rule and icon colours on “Watch dealer launch sheet” (dealer-launch.pdf) come only from #191512, #EDE6D6, #9A9EA3, #9C7A3C and #5A2A28.
-- `PHOTO-24/dealer-launch/H045` Any wordmark, heading, body, specification, fine print or timing line on Bone cream #EDE6D6 on “Watch dealer launch sheet” (dealer-launch.pdf) is Warm near-black #191512, except small captions, footer lines or labels in Tempered steel #9A9EA3 or Oxblood #5A2A28.
-- `PHOTO-24/dealer-launch/H046` On “Watch dealer launch sheet” (dealer-launch.pdf), Aged brass #9C7A3C appears only as hairline rules or dividers and Tempered steel #9A9EA3 only in small captions, footer lines, labels or dividers; neither is a ground, a panel or body text.
-- `PHOTO-24/dealer-launch/H047` Every type, panel and rule colour on “Watch dealer launch sheet” (dealer-launch.pdf) is solid at full opacity, with no tint, gradient, metallic, shadow or blend effect, and no scrim or overlay, black or white included, sits over any photograph.
-- `PHOTO-24/watch-keyvisual/H002` The watch on “Autumn watch key visual” (watch-keyvisual.png) is taken from one of lunara_campaign_01.jpg, lunara_campaign_02.jpg, lunara_campaign_03.jpg, lunara_campaign_04.jpg, lunara_campaign_05.jpg, lunara_campaign_06.jpg, lunara_campaign_07.jpg, lunara_campaign_08.jpg or lunara_campaign_09.jpg.
+- `PHOTO-24/dealer-launch/H045` Type on Bone cream #EDE6D6 on “Watch dealer launch sheet” (dealer-launch.pdf) is Warm near-black #191512, except small captions, footers and labels, which may be Tempered steel or Oxblood.
+- `PHOTO-24/dealer-launch/H046` On “Watch dealer launch sheet” (dealer-launch.pdf), Aged brass #9C7A3C appears only as hairline rules or dividers, never as type, a ground or a panel.
+- `PHOTO-24/dealer-launch/H047` Every type, panel and rule colour on “Watch dealer launch sheet” (dealer-launch.pdf) is flat and solid at full opacity, with no tint, gradient, metallic, glow, shadow or blend effect.
+- `PHOTO-24/watch-keyvisual/H002` The watch on “Autumn watch key visual” (watch-keyvisual.png) is taken from one of the supplied campaign frames, lunara_campaign_01.jpg to lunara_campaign_09.jpg.
 - `PHOTO-24/watch-keyvisual/H003` On “Autumn watch key visual” (watch-keyvisual.png) the watch is the largest single object in the frame, bigger than any text or prop.
 - `PHOTO-24/watch-keyvisual/H004` Any caliber shown on “Autumn watch key visual” (watch-keyvisual.png) is the one its reference takes: Meridian LM-01, Selene LM-02, Ardent LM-01, Halcyon LM-03, Vesper LM-02.
-- `PHOTO-24/watch-keyvisual/H005` Any movement description on “Autumn watch key visual” (watch-keyvisual.png) matches lunara_notes.txt for the caliber of the reference shown.
+- `PHOTO-24/watch-keyvisual/H005` Any movement description on “Autumn watch key visual” (watch-keyvisual.png) matches lunara_notes.txt for the reference shown: Meridian, Ardent hand-wound, 42h reserve; Selene, Vesper automatic, 48h reserve; Halcyon hand-wound, small seconds.
 - `PHOTO-24/watch-keyvisual/H006` “Autumn watch key visual” (watch-keyvisual.png) names exactly one reference, spelled as in lunara_register.csv: Meridian, Selene, Ardent, Halcyon or Vesper.
-- `PHOTO-24/watch-keyvisual/H007` The photograph on “Autumn watch key visual” (watch-keyvisual.png) carries one warm single-tone treatment across the whole frame, warm and not blue, with fine, even grain.
+- `PHOTO-24/watch-keyvisual/H007` The photograph on “Autumn watch key visual” (watch-keyvisual.png) has one warm single-tone grade, with no blue cast, applied evenly across the whole frame.
 - `PHOTO-24/watch-keyvisual/H008` No area of the dial on “Autumn watch key visual” (watch-keyvisual.png) is clipped to featureless white, hiding its markings or hands.
-- `PHOTO-24/watch-keyvisual/H009` The watch on “Autumn watch key visual” (watch-keyvisual.png) keeps the case, dial markings, hands and strap or bracelet of its source frame, one of lunara_campaign_01.jpg, lunara_campaign_02.jpg, lunara_campaign_03.jpg, lunara_campaign_04.jpg, lunara_campaign_05.jpg, lunara_campaign_06.jpg, lunara_campaign_07.jpg, lunara_campaign_08.jpg or lunara_campaign_09.jpg, with nothing generated or removed.
-- `PHOTO-24/watch-keyvisual/H010` “Autumn watch key visual” (watch-keyvisual.png) carries the wordmark stacked as Lunara over Chronometry in Cormorant Garamond Medium capitals, visibly letterspaced at 180 units, never on one line.
-- `PHOTO-24/watch-keyvisual/H011` Apart from the wordmark, every Cormorant Garamond line on “Autumn watch key visual” (watch-keyvisual.png), the reference name and any heading included, is Cormorant Garamond Medium capitals, visibly letterspaced at 180 units, never another weight, italic or plain lowercase.
-- `PHOTO-24/watch-keyvisual/H012` Any body copy, specification, caption, fine print, price, serial, timing result or timing line on “Autumn watch key visual” (watch-keyvisual.png) is Inter Regular, never Cormorant Garamond, bold, another weight or italic.
+- `PHOTO-24/watch-keyvisual/H009` The watch on “Autumn watch key visual” (watch-keyvisual.png) keeps the case, dial markings, hands and strap or bracelet of its source campaign frame, with nothing generated or removed.
+- `PHOTO-24/watch-keyvisual/H010` The wordmark on “Autumn watch key visual” (watch-keyvisual.png) is stacked as Lunara over Chronometry, never set on one line.
+- `PHOTO-24/watch-keyvisual/H011` Any Cormorant Garamond line on “Autumn watch key visual” (watch-keyvisual.png) other than the wordmark and reference name, such as a headline, is Medium capitals, never italic, lowercase or another weight.
+- `PHOTO-24/watch-keyvisual/H012` If the timing line appears on “Autumn watch key visual” (watch-keyvisual.png), it is set in Inter Regular, not italic.
 - `PHOTO-24/watch-keyvisual/H013` On “Autumn watch key visual” (watch-keyvisual.png) the stacked wordmark is set larger than the reference name.
 - `PHOTO-24/watch-keyvisual/H014` “Autumn watch key visual” (watch-keyvisual.png) claims no watch feature absent from lunara_notes.txt and lunara_register.csv, such as a water-resistance rating, crystal type or case size.
 - `PHOTO-24/watch-keyvisual/H015` “Autumn watch key visual” (watch-keyvisual.png) gives no price for a single reference; any price shown is the band $4,000-$12,000 a piece from lunara_notes.txt.
-- `PHOTO-24/watch-keyvisual/H016` Any timing line on “Autumn watch key visual” (watch-keyvisual.png) reads word for word as lunara_notes.txt fixes it, with nothing reworded, shortened or added.
+- `PHOTO-24/watch-keyvisual/H016` Any timing line on “Autumn watch key visual” (watch-keyvisual.png) matches the certificate wording in lunara_notes.txt word for word, with nothing reworded, shortened or added.
 - `PHOTO-24/watch-keyvisual/H017` Apart from lettering inside a photograph, every line of type on “Autumn watch key visual” (watch-keyvisual.png) is set in Cormorant Garamond or Inter, with no third typeface.
-- `PHOTO-24/watch-keyvisual/H018` No figure on “Autumn watch key visual” (watch-keyvisual.png) is set in Cormorant Garamond: every figure, caliber and serial numbers included, is Inter, and any figure inside a Cormorant Garamond small-caps line switches to Inter at the same size.
-- `PHOTO-24/watch-keyvisual/H019` Every figure on “Autumn watch key visual” (watch-keyvisual.png) is a tabular lining figure, not an old-style figure, so any column of figures aligns.
+- `PHOTO-24/watch-keyvisual/H018` Every figure on “Autumn watch key visual” (watch-keyvisual.png), including any inside a Cormorant Garamond heading, is set in Inter, not Cormorant Garamond.
+- `PHOTO-24/watch-keyvisual/H019` Every figure on “Autumn watch key visual” (watch-keyvisual.png) is a lining figure at full capital height, with no old-style figure dropping below the line.
 - `PHOTO-24/watch-keyvisual/H020` No line of body text on “Autumn watch key visual” (watch-keyvisual.png) runs longer than 65 characters.
 - `PHOTO-24/watch-keyvisual/H021` The copy on “Autumn watch key visual” (watch-keyvisual.png) makes no superlative or hype claim, such as luxury, iconic, ultimate or finest.
 - `PHOTO-24/watch-keyvisual/H022` The type, panel, rule and icon colours on “Autumn watch key visual” (watch-keyvisual.png) come only from #191512, #EDE6D6, #9A9EA3, #9C7A3C and #5A2A28.
-- `PHOTO-24/watch-keyvisual/H023` Any designed panel on “Autumn watch key visual” (watch-keyvisual.png) is Bone cream #EDE6D6, Warm near-black #191512 or Oxblood #5A2A28; type on Warm near-black or Oxblood is Bone cream, and on the photograph Bone cream or Warm near-black.
-- `PHOTO-24/watch-keyvisual/H024` Any wordmark, heading, body, specification, fine print or timing line on Bone cream #EDE6D6 on “Autumn watch key visual” (watch-keyvisual.png) is Warm near-black #191512, except small captions, footer lines or labels in Tempered steel #9A9EA3 or Oxblood #5A2A28.
-- `PHOTO-24/watch-keyvisual/H025` On “Autumn watch key visual” (watch-keyvisual.png), Aged brass #9C7A3C appears only as hairline rules or dividers and Tempered steel #9A9EA3 only in small captions, footer lines, labels or dividers; neither is a ground, a panel or body text.
-- `PHOTO-24/watch-keyvisual/H026` Every type, panel and rule colour on “Autumn watch key visual” (watch-keyvisual.png) is solid at full opacity, with no tint, gradient, metallic, shadow or blend effect, and no scrim or overlay, black or white included, sits over the photograph.
-- `PHOTO-24/watch-keyvisual/H027` watch-keyvisual.png: main heading/wordmark letters uses Cormorant Garamond Medium capitals (when present).
-- `PHOTO-24/watch-keyvisual/H028` watch-keyvisual.png: main heading/wordmark letters has font size 72 px (when present).
-- `PHOTO-24/watch-keyvisual/H029` watch-keyvisual.png: main heading/wordmark letters has 76 px leading on multiline text (when present).
-- `PHOTO-24/watch-keyvisual/H030` watch-keyvisual.png: main heading/wordmark letters uses tracking +180/1000 em (when present).
-- `PHOTO-24/watch-keyvisual/H031` watch-keyvisual.png: reference-name letters uses Cormorant Garamond Medium capitals (when present).
-- `PHOTO-24/watch-keyvisual/H032` watch-keyvisual.png: reference-name letters has font size 40 px (when present).
-- `PHOTO-24/watch-keyvisual/H033` watch-keyvisual.png: reference-name letters has 44 px leading on multiline text (when present).
-- `PHOTO-24/watch-keyvisual/H034` watch-keyvisual.png: reference-name letters uses tracking +180/1000 em (when present).
-- `PHOTO-24/watch-keyvisual/H035` watch-keyvisual.png: body text uses Inter Regular (when present).
-- `PHOTO-24/watch-keyvisual/H036` watch-keyvisual.png: body text has font size 20 px (when present).
-- `PHOTO-24/watch-keyvisual/H037` watch-keyvisual.png: body text has 30 px leading on multiline text (when present).
-- `PHOTO-24/watch-keyvisual/H038` watch-keyvisual.png: body text uses tracking +0/1000 em (when present).
-- `PHOTO-24/watch-keyvisual/H039` watch-keyvisual.png: specification text uses Inter Regular (when present).
-- `PHOTO-24/watch-keyvisual/H040` watch-keyvisual.png: specification text has font size 22 px (when present).
-- `PHOTO-24/watch-keyvisual/H041` watch-keyvisual.png: specification text has 32 px leading on multiline text (when present).
-- `PHOTO-24/watch-keyvisual/H042` watch-keyvisual.png: specification text uses tracking +0/1000 em (when present).
-- `PHOTO-24/watch-keyvisual/H043` watch-keyvisual.png: price/serial/timing text uses Inter Regular (when present).
-- `PHOTO-24/watch-keyvisual/H044` watch-keyvisual.png: price/serial/timing text has font size 16 px (when present).
-- `PHOTO-24/watch-keyvisual/H045` watch-keyvisual.png: price/serial/timing text has 22 px leading on multiline text (when present).
-- `PHOTO-24/watch-keyvisual/H046` watch-keyvisual.png: price/serial/timing text uses tracking +20/1000 em (when present).
-- `PHOTO-24/watch-feature-r002/H034` watch-feature-r002.png: main heading/wordmark letters uses Cormorant Garamond Medium capitals (when present).
-- `PHOTO-24/watch-feature-r002/H035` watch-feature-r002.png: main heading/wordmark letters has font size 72 px (when present).
-- `PHOTO-24/watch-feature-r002/H036` watch-feature-r002.png: main heading/wordmark letters has 76 px leading on multiline text (when present).
-- `PHOTO-24/watch-feature-r002/H037` watch-feature-r002.png: main heading/wordmark letters uses tracking +180/1000 em (when present).
-- `PHOTO-24/watch-feature-r002/H038` watch-feature-r002.png: reference-name letters uses Cormorant Garamond Medium capitals (when present).
-- `PHOTO-24/watch-feature-r002/H039` watch-feature-r002.png: reference-name letters has font size 48 px (when present).
-- `PHOTO-24/watch-feature-r002/H040` watch-feature-r002.png: reference-name letters has 53 px leading on multiline text (when present).
-- `PHOTO-24/watch-feature-r002/H041` watch-feature-r002.png: reference-name letters uses tracking +180/1000 em (when present).
-- `PHOTO-24/watch-feature-r002/H042` watch-feature-r002.png: body text uses Inter Regular (when present).
-- `PHOTO-24/watch-feature-r002/H043` watch-feature-r002.png: body text has font size 20 px (when present).
-- `PHOTO-24/watch-feature-r002/H044` watch-feature-r002.png: body text has 30 px leading on multiline text (when present).
-- `PHOTO-24/watch-feature-r002/H045` watch-feature-r002.png: body text uses tracking +0/1000 em (when present).
-- `PHOTO-24/watch-feature-r002/H046` watch-feature-r002.png: specification text uses Inter Regular (when present).
-- `PHOTO-24/watch-feature-r002/H047` watch-feature-r002.png: specification text has font size 22 px (when present).
-- `PHOTO-24/watch-feature-r002/H048` watch-feature-r002.png: specification text has 32 px leading on multiline text (when present).
-- `PHOTO-24/watch-feature-r002/H049` watch-feature-r002.png: specification text uses tracking +0/1000 em (when present).
-- `PHOTO-24/watch-feature-r002/H050` watch-feature-r002.png: price/serial/timing text uses Inter Regular (when present).
-- `PHOTO-24/watch-feature-r002/H051` watch-feature-r002.png: price/serial/timing text has font size 16 px (when present).
-- `PHOTO-24/watch-feature-r002/H052` watch-feature-r002.png: price/serial/timing text has 22 px leading on multiline text (when present).
-- `PHOTO-24/watch-feature-r002/H053` watch-feature-r002.png: price/serial/timing text uses tracking +20/1000 em (when present).
-- `PHOTO-24/watch-feature-r003/H033` watch-feature-r003.png: main heading/wordmark letters uses Cormorant Garamond Medium capitals (when present).
-- `PHOTO-24/watch-feature-r003/H034` watch-feature-r003.png: main heading/wordmark letters has font size 72 px (when present).
-- `PHOTO-24/watch-feature-r003/H035` watch-feature-r003.png: main heading/wordmark letters has 76 px leading on multiline text (when present).
-- `PHOTO-24/watch-feature-r003/H036` watch-feature-r003.png: main heading/wordmark letters uses tracking +180/1000 em (when present).
-- `PHOTO-24/watch-feature-r003/H037` watch-feature-r003.png: reference-name letters uses Cormorant Garamond Medium capitals (when present).
-- `PHOTO-24/watch-feature-r003/H038` watch-feature-r003.png: reference-name letters has font size 48 px (when present).
-- `PHOTO-24/watch-feature-r003/H039` watch-feature-r003.png: reference-name letters has 53 px leading on multiline text (when present).
-- `PHOTO-24/watch-feature-r003/H040` watch-feature-r003.png: reference-name letters uses tracking +180/1000 em (when present).
-- `PHOTO-24/watch-feature-r003/H041` watch-feature-r003.png: body text uses Inter Regular (when present).
-- `PHOTO-24/watch-feature-r003/H042` watch-feature-r003.png: body text has font size 20 px (when present).
-- `PHOTO-24/watch-feature-r003/H043` watch-feature-r003.png: body text has 30 px leading on multiline text (when present).
-- `PHOTO-24/watch-feature-r003/H044` watch-feature-r003.png: body text uses tracking +0/1000 em (when present).
-- `PHOTO-24/watch-feature-r003/H045` watch-feature-r003.png: specification text uses Inter Regular (when present).
-- `PHOTO-24/watch-feature-r003/H046` watch-feature-r003.png: specification text has font size 22 px (when present).
-- `PHOTO-24/watch-feature-r003/H047` watch-feature-r003.png: specification text has 32 px leading on multiline text (when present).
-- `PHOTO-24/watch-feature-r003/H048` watch-feature-r003.png: specification text uses tracking +0/1000 em (when present).
-- `PHOTO-24/watch-feature-r003/H049` watch-feature-r003.png: price/serial/timing text uses Inter Regular (when present).
-- `PHOTO-24/watch-feature-r003/H050` watch-feature-r003.png: price/serial/timing text has font size 16 px (when present).
-- `PHOTO-24/watch-feature-r003/H051` watch-feature-r003.png: price/serial/timing text has 22 px leading on multiline text (when present).
-- `PHOTO-24/watch-feature-r003/H052` watch-feature-r003.png: price/serial/timing text uses tracking +20/1000 em (when present).
-- `PHOTO-24/watch-feature-r004/H032` watch-feature-r004.png: main heading/wordmark letters uses Cormorant Garamond Medium capitals (when present).
-- `PHOTO-24/watch-feature-r004/H033` watch-feature-r004.png: main heading/wordmark letters has font size 72 px (when present).
-- `PHOTO-24/watch-feature-r004/H034` watch-feature-r004.png: main heading/wordmark letters has 76 px leading on multiline text (when present).
-- `PHOTO-24/watch-feature-r004/H035` watch-feature-r004.png: main heading/wordmark letters uses tracking +180/1000 em (when present).
-- `PHOTO-24/watch-feature-r004/H036` watch-feature-r004.png: reference-name letters uses Cormorant Garamond Medium capitals (when present).
-- `PHOTO-24/watch-feature-r004/H037` watch-feature-r004.png: reference-name letters has font size 48 px (when present).
-- `PHOTO-24/watch-feature-r004/H038` watch-feature-r004.png: reference-name letters has 53 px leading on multiline text (when present).
-- `PHOTO-24/watch-feature-r004/H039` watch-feature-r004.png: reference-name letters uses tracking +180/1000 em (when present).
-- `PHOTO-24/watch-feature-r004/H040` watch-feature-r004.png: body text uses Inter Regular (when present).
-- `PHOTO-24/watch-feature-r004/H041` watch-feature-r004.png: body text has font size 20 px (when present).
-- `PHOTO-24/watch-feature-r004/H042` watch-feature-r004.png: body text has 30 px leading on multiline text (when present).
-- `PHOTO-24/watch-feature-r004/H043` watch-feature-r004.png: body text uses tracking +0/1000 em (when present).
-- `PHOTO-24/watch-feature-r004/H044` watch-feature-r004.png: specification text uses Inter Regular (when present).
-- `PHOTO-24/watch-feature-r004/H045` watch-feature-r004.png: specification text has font size 22 px (when present).
-- `PHOTO-24/watch-feature-r004/H046` watch-feature-r004.png: specification text has 32 px leading on multiline text (when present).
-- `PHOTO-24/watch-feature-r004/H047` watch-feature-r004.png: specification text uses tracking +0/1000 em (when present).
-- `PHOTO-24/watch-feature-r004/H048` watch-feature-r004.png: price/serial/timing text uses Inter Regular (when present).
-- `PHOTO-24/watch-feature-r004/H049` watch-feature-r004.png: price/serial/timing text has font size 16 px (when present).
-- `PHOTO-24/watch-feature-r004/H050` watch-feature-r004.png: price/serial/timing text has 22 px leading on multiline text (when present).
-- `PHOTO-24/watch-feature-r004/H051` watch-feature-r004.png: price/serial/timing text uses tracking +20/1000 em (when present).
-- `PHOTO-24/watch-feature-r005/H033` watch-feature-r005.png: main heading/wordmark letters uses Cormorant Garamond Medium capitals (when present).
-- `PHOTO-24/watch-feature-r005/H034` watch-feature-r005.png: main heading/wordmark letters has font size 72 px (when present).
-- `PHOTO-24/watch-feature-r005/H035` watch-feature-r005.png: main heading/wordmark letters has 76 px leading on multiline text (when present).
-- `PHOTO-24/watch-feature-r005/H036` watch-feature-r005.png: main heading/wordmark letters uses tracking +180/1000 em (when present).
-- `PHOTO-24/watch-feature-r005/H037` watch-feature-r005.png: reference-name letters uses Cormorant Garamond Medium capitals (when present).
-- `PHOTO-24/watch-feature-r005/H038` watch-feature-r005.png: reference-name letters has font size 48 px (when present).
-- `PHOTO-24/watch-feature-r005/H039` watch-feature-r005.png: reference-name letters has 53 px leading on multiline text (when present).
-- `PHOTO-24/watch-feature-r005/H040` watch-feature-r005.png: reference-name letters uses tracking +180/1000 em (when present).
-- `PHOTO-24/watch-feature-r005/H041` watch-feature-r005.png: body text uses Inter Regular (when present).
-- `PHOTO-24/watch-feature-r005/H042` watch-feature-r005.png: body text has font size 20 px (when present).
-- `PHOTO-24/watch-feature-r005/H043` watch-feature-r005.png: body text has 30 px leading on multiline text (when present).
-- `PHOTO-24/watch-feature-r005/H044` watch-feature-r005.png: body text uses tracking +0/1000 em (when present).
-- `PHOTO-24/watch-feature-r005/H045` watch-feature-r005.png: specification text uses Inter Regular (when present).
-- `PHOTO-24/watch-feature-r005/H046` watch-feature-r005.png: specification text has font size 22 px (when present).
-- `PHOTO-24/watch-feature-r005/H047` watch-feature-r005.png: specification text has 32 px leading on multiline text (when present).
-- `PHOTO-24/watch-feature-r005/H048` watch-feature-r005.png: specification text uses tracking +0/1000 em (when present).
-- `PHOTO-24/watch-feature-r005/H049` watch-feature-r005.png: price/serial/timing text uses Inter Regular (when present).
-- `PHOTO-24/watch-feature-r005/H050` watch-feature-r005.png: price/serial/timing text has font size 16 px (when present).
-- `PHOTO-24/watch-feature-r005/H051` watch-feature-r005.png: price/serial/timing text has 22 px leading on multiline text (when present).
-- `PHOTO-24/watch-feature-r005/H052` watch-feature-r005.png: price/serial/timing text uses tracking +20/1000 em (when present).
-- `PHOTO-24/watch-feature-r006/H032` watch-feature-r006.png: main heading/wordmark letters uses Cormorant Garamond Medium capitals (when present).
-- `PHOTO-24/watch-feature-r006/H033` watch-feature-r006.png: main heading/wordmark letters has font size 72 px (when present).
-- `PHOTO-24/watch-feature-r006/H034` watch-feature-r006.png: main heading/wordmark letters has 76 px leading on multiline text (when present).
-- `PHOTO-24/watch-feature-r006/H035` watch-feature-r006.png: main heading/wordmark letters uses tracking +180/1000 em (when present).
-- `PHOTO-24/watch-feature-r006/H036` watch-feature-r006.png: reference-name letters uses Cormorant Garamond Medium capitals (when present).
-- `PHOTO-24/watch-feature-r006/H037` watch-feature-r006.png: reference-name letters has font size 48 px (when present).
-- `PHOTO-24/watch-feature-r006/H038` watch-feature-r006.png: reference-name letters has 53 px leading on multiline text (when present).
-- `PHOTO-24/watch-feature-r006/H039` watch-feature-r006.png: reference-name letters uses tracking +180/1000 em (when present).
-- `PHOTO-24/watch-feature-r006/H040` watch-feature-r006.png: body text uses Inter Regular (when present).
-- `PHOTO-24/watch-feature-r006/H041` watch-feature-r006.png: body text has font size 20 px (when present).
-- `PHOTO-24/watch-feature-r006/H042` watch-feature-r006.png: body text has 30 px leading on multiline text (when present).
-- `PHOTO-24/watch-feature-r006/H043` watch-feature-r006.png: body text uses tracking +0/1000 em (when present).
-- `PHOTO-24/watch-feature-r006/H044` watch-feature-r006.png: specification text uses Inter Regular (when present).
-- `PHOTO-24/watch-feature-r006/H045` watch-feature-r006.png: specification text has font size 22 px (when present).
-- `PHOTO-24/watch-feature-r006/H046` watch-feature-r006.png: specification text has 32 px leading on multiline text (when present).
-- `PHOTO-24/watch-feature-r006/H047` watch-feature-r006.png: specification text uses tracking +0/1000 em (when present).
-- `PHOTO-24/watch-feature-r006/H048` watch-feature-r006.png: price/serial/timing text uses Inter Regular (when present).
-- `PHOTO-24/watch-feature-r006/H049` watch-feature-r006.png: price/serial/timing text has font size 16 px (when present).
-- `PHOTO-24/watch-feature-r006/H050` watch-feature-r006.png: price/serial/timing text has 22 px leading on multiline text (when present).
-- `PHOTO-24/watch-feature-r006/H051` watch-feature-r006.png: price/serial/timing text uses tracking +20/1000 em (when present).
-- `PHOTO-24/dealer-launch/H048` dealer-launch.pdf: main heading/wordmark letters uses Cormorant Garamond Medium capitals (when present).
-- `PHOTO-24/dealer-launch/H049` dealer-launch.pdf: main heading/wordmark letters has font size 28 pt (when present).
-- `PHOTO-24/dealer-launch/H050` dealer-launch.pdf: main heading/wordmark letters has 31 pt leading on multiline text (when present).
-- `PHOTO-24/dealer-launch/H051` dealer-launch.pdf: main heading/wordmark letters uses tracking +180/1000 em (when present).
-- `PHOTO-24/dealer-launch/H052` dealer-launch.pdf: reference-name letters uses Cormorant Garamond Medium capitals (when present).
-- `PHOTO-24/dealer-launch/H053` dealer-launch.pdf: reference-name letters uses tracking +180/1000 em (when present).
-- `PHOTO-24/dealer-launch/H054` dealer-launch.pdf: body text uses Inter Regular (when present).
-- `PHOTO-24/dealer-launch/H055` dealer-launch.pdf: body text has font size 10 pt (when present).
-- `PHOTO-24/dealer-launch/H056` dealer-launch.pdf: body text has 14 pt leading on multiline text (when present).
-- `PHOTO-24/dealer-launch/H057` dealer-launch.pdf: body text uses tracking +0/1000 em (when present).
-- `PHOTO-24/dealer-launch/H058` dealer-launch.pdf: specification text uses Inter Regular (when present).
-- `PHOTO-24/dealer-launch/H059` dealer-launch.pdf: specification text has font size 10 pt (when present).
-- `PHOTO-24/dealer-launch/H060` dealer-launch.pdf: specification text has 14 pt leading on multiline text (when present).
-- `PHOTO-24/dealer-launch/H061` dealer-launch.pdf: specification text uses tracking +0/1000 em (when present).
-- `PHOTO-24/dealer-launch/H062` dealer-launch.pdf: price/serial/timing text uses Inter Regular (when present).
-- `PHOTO-24/dealer-launch/H063` dealer-launch.pdf: price/serial/timing text has font size 10 pt (when present).
-- `PHOTO-24/dealer-launch/H064` dealer-launch.pdf: price/serial/timing text has 14 pt leading on multiline text (when present).
-- `PHOTO-24/dealer-launch/H065` dealer-launch.pdf: price/serial/timing text uses tracking +20/1000 em (when present).
-- `PHOTO-24/watch-keyvisual/R13-colour-profile` watch-keyvisual.png: uses an sRGB colour profile.
-- `PHOTO-24/watch-feature-r002/R13-colour-profile` watch-feature-r002.png: uses an sRGB colour profile.
-- `PHOTO-24/watch-feature-r003/R13-colour-profile` watch-feature-r003.png: uses an sRGB colour profile.
-- `PHOTO-24/watch-feature-r004/R13-colour-profile` watch-feature-r004.png: uses an sRGB colour profile.
-- `PHOTO-24/watch-feature-r005/R13-colour-profile` watch-feature-r005.png: uses an sRGB colour profile.
-- `PHOTO-24/watch-feature-r006/R13-colour-profile` watch-feature-r006.png: uses an sRGB colour profile.
-- `PHOTO-24/dealer-launch/R13-pdf-profile` dealer-launch.pdf: is exported for sRGB screen viewing, not as a CMYK press master.
-- `PHOTO-24/dealer-launch/R13-pdf-fonts` dealer-launch.pdf: has no unembedded font dependency.
+- `PHOTO-24/watch-keyvisual/H023` Any designed panel on “Autumn watch key visual” (watch-keyvisual.png) is Bone cream #EDE6D6, Warm near-black #191512 or Oxblood #5A2A28.
+- `PHOTO-24/watch-keyvisual/H024` Type on Bone cream #EDE6D6 on “Autumn watch key visual” (watch-keyvisual.png) is Warm near-black #191512, except small captions, footers and labels, which may be Tempered steel or Oxblood.
+- `PHOTO-24/watch-keyvisual/H025` On “Autumn watch key visual” (watch-keyvisual.png), Aged brass #9C7A3C appears only as hairline rules or dividers, never as type, a ground or a panel.
+- `PHOTO-24/watch-keyvisual/H026` Every type, panel and rule colour on “Autumn watch key visual” (watch-keyvisual.png) is flat and solid at full opacity, with no tint, gradient, metallic, glow, shadow or blend effect.
+- `PHOTO-24/watch-keyvisual/H027` The wordmark on “Autumn watch key visual” (watch-keyvisual.png) is set in Cormorant Garamond Medium capitals.
+- `PHOTO-24/watch-keyvisual/H031` The reference name on “Autumn watch key visual” (watch-keyvisual.png) is set in Cormorant Garamond Medium capitals.
+- `PHOTO-24/watch-keyvisual/H035` If body copy appears on “Autumn watch key visual” (watch-keyvisual.png), it is set in Inter Regular.
+- `PHOTO-24/watch-keyvisual/H039` If specification text appears on “Autumn watch key visual” (watch-keyvisual.png), it is set in Inter Regular.
+- `PHOTO-24/watch-keyvisual/H043` If a caption, price, serial or timing result appears on “Autumn watch key visual” (watch-keyvisual.png), it is set in Inter Regular.
+- `PHOTO-24/watch-feature-r002/H034` If a wordmark appears on “Watch product-page feature - LC-25-0101” (watch-feature-r002.png), it is set in Cormorant Garamond Medium capitals.
+- `PHOTO-24/watch-feature-r002/H038` The reference name “Meridian” on “Watch product-page feature - LC-25-0101” (watch-feature-r002.png) is set in Cormorant Garamond Medium capitals.
+- `PHOTO-24/watch-feature-r002/H042` If body copy appears on “Watch product-page feature - LC-25-0101” (watch-feature-r002.png), it is set in Inter Regular.
+- `PHOTO-24/watch-feature-r002/H046` The specification text on “Watch product-page feature - LC-25-0101” (watch-feature-r002.png) is set in Inter Regular.
+- `PHOTO-24/watch-feature-r002/H050` If a caption, price, serial or timing result appears on “Watch product-page feature - LC-25-0101” (watch-feature-r002.png), it is set in Inter Regular.
+- `PHOTO-24/watch-feature-r003/H033` If a wordmark appears on “Watch product-page feature - LC-25-0102” (watch-feature-r003.png), it is set in Cormorant Garamond Medium capitals.
+- `PHOTO-24/watch-feature-r003/H037` The reference name “Selene” on “Watch product-page feature - LC-25-0102” (watch-feature-r003.png) is set in Cormorant Garamond Medium capitals.
+- `PHOTO-24/watch-feature-r003/H041` If body copy appears on “Watch product-page feature - LC-25-0102” (watch-feature-r003.png), it is set in Inter Regular.
+- `PHOTO-24/watch-feature-r003/H045` The specification text on “Watch product-page feature - LC-25-0102” (watch-feature-r003.png) is set in Inter Regular.
+- `PHOTO-24/watch-feature-r003/H049` If a caption, price, serial or timing result appears on “Watch product-page feature - LC-25-0102” (watch-feature-r003.png), it is set in Inter Regular.
+- `PHOTO-24/watch-feature-r004/H032` If a wordmark appears on “Watch product-page feature - LC-25-0103” (watch-feature-r004.png), it is set in Cormorant Garamond Medium capitals.
+- `PHOTO-24/watch-feature-r004/H036` The reference name “Ardent” on “Watch product-page feature - LC-25-0103” (watch-feature-r004.png) is set in Cormorant Garamond Medium capitals.
+- `PHOTO-24/watch-feature-r004/H040` If body copy appears on “Watch product-page feature - LC-25-0103” (watch-feature-r004.png), it is set in Inter Regular.
+- `PHOTO-24/watch-feature-r004/H044` The specification text on “Watch product-page feature - LC-25-0103” (watch-feature-r004.png) is set in Inter Regular.
+- `PHOTO-24/watch-feature-r004/H048` If a caption, price, serial or timing result appears on “Watch product-page feature - LC-25-0103” (watch-feature-r004.png), it is set in Inter Regular.
+- `PHOTO-24/watch-feature-r005/H033` If a wordmark appears on “Watch product-page feature - LC-25-0104” (watch-feature-r005.png), it is set in Cormorant Garamond Medium capitals.
+- `PHOTO-24/watch-feature-r005/H037` The reference name “Halcyon” on “Watch product-page feature - LC-25-0104” (watch-feature-r005.png) is set in Cormorant Garamond Medium capitals.
+- `PHOTO-24/watch-feature-r005/H041` If body copy appears on “Watch product-page feature - LC-25-0104” (watch-feature-r005.png), it is set in Inter Regular.
+- `PHOTO-24/watch-feature-r005/H045` The specification text on “Watch product-page feature - LC-25-0104” (watch-feature-r005.png) is set in Inter Regular.
+- `PHOTO-24/watch-feature-r005/H049` If a caption, price, serial or timing result appears on “Watch product-page feature - LC-25-0104” (watch-feature-r005.png), it is set in Inter Regular.
+- `PHOTO-24/watch-feature-r006/H032` If a wordmark appears on “Watch product-page feature - LC-25-0105” (watch-feature-r006.png), it is set in Cormorant Garamond Medium capitals.
+- `PHOTO-24/watch-feature-r006/H036` The reference name “Vesper” on “Watch product-page feature - LC-25-0105” (watch-feature-r006.png) is set in Cormorant Garamond Medium capitals.
+- `PHOTO-24/watch-feature-r006/H040` If body copy appears on “Watch product-page feature - LC-25-0105” (watch-feature-r006.png), it is set in Inter Regular.
+- `PHOTO-24/watch-feature-r006/H044` The specification text on “Watch product-page feature - LC-25-0105” (watch-feature-r006.png) is set in Inter Regular.
+- `PHOTO-24/watch-feature-r006/H048` If a caption, price, serial or timing result appears on “Watch product-page feature - LC-25-0105” (watch-feature-r006.png), it is set in Inter Regular.
+- `PHOTO-24/dealer-launch/H048` If a main heading appears on “Watch dealer launch sheet” (dealer-launch.pdf), it is set in Cormorant Garamond Medium capitals, not the bold serif capitals of lunara_certificate_2025.pdf.
+- `PHOTO-24/dealer-launch/H049` If a main heading appears on “Watch dealer launch sheet” (dealer-launch.pdf), it is set larger than the body and specification text.
+- `PHOTO-24/dealer-launch/H052` Each reference name on “Watch dealer launch sheet” (dealer-launch.pdf) is set in Cormorant Garamond Medium capitals.
+- `PHOTO-24/dealer-launch/H054` If body copy appears on “Watch dealer launch sheet” (dealer-launch.pdf), it is set in Inter Regular.
+- `PHOTO-24/dealer-launch/H058` The specification text on “Watch dealer launch sheet” (dealer-launch.pdf) is set in Inter Regular.
+- `PHOTO-24/dealer-launch/H062` If a caption, price, serial or timing result appears on “Watch dealer launch sheet” (dealer-launch.pdf), it is set in Inter Regular.
+- `PHOTO-24/watch-keyvisual/H047` Any type on a Warm near-black #191512 or Oxblood #5A2A28 panel on “Autumn watch key visual” (watch-keyvisual.png) is Bone cream #EDE6D6.
+- `PHOTO-24/watch-keyvisual/H048` Any type set directly on the photograph on “Autumn watch key visual” (watch-keyvisual.png) is Bone cream #EDE6D6 or Warm near-black #191512.
+- `PHOTO-24/watch-keyvisual/H049` On “Autumn watch key visual” (watch-keyvisual.png), Tempered steel #9A9EA3 appears only in small captions, footer lines, labels or dividers, never as body text, a ground or a panel.
+- `PHOTO-24/watch-keyvisual/H050` No dark or light band, vignette, gradient or tinted box is laid over part of the photograph on “Autumn watch key visual” (watch-keyvisual.png).
+- `PHOTO-24/watch-keyvisual/H051` The photograph on “Autumn watch key visual” (watch-keyvisual.png) shows fine, even grain across the whole frame.
+- `PHOTO-24/watch-keyvisual/H052` Every line of type on “Autumn watch key visual” (watch-keyvisual.png), the wordmark and reference name included, is fully visible, with no words cut off.
+- `PHOTO-24/watch-feature-r002/H054` Any type on a Warm near-black #191512 or Oxblood #5A2A28 panel on “Watch product-page feature - LC-25-0101” (watch-feature-r002.png) is Bone cream #EDE6D6.
+- `PHOTO-24/watch-feature-r002/H055` Any type set directly on the photograph on “Watch product-page feature - LC-25-0101” (watch-feature-r002.png) is Bone cream #EDE6D6 or Warm near-black #191512.
+- `PHOTO-24/watch-feature-r002/H056` On “Watch product-page feature - LC-25-0101” (watch-feature-r002.png), Tempered steel #9A9EA3 appears only in small captions, footer lines, labels or dividers, never as body text, a ground or a panel.
+- `PHOTO-24/watch-feature-r002/H057` No scrim, gradient or overlay of any colour, black or white included, is laid over the photograph on “Watch product-page feature - LC-25-0101” (watch-feature-r002.png).
+- `PHOTO-24/watch-feature-r003/H053` Any type on a Warm near-black #191512 or Oxblood #5A2A28 panel on “Watch product-page feature - LC-25-0102” (watch-feature-r003.png) is Bone cream #EDE6D6.
+- `PHOTO-24/watch-feature-r003/H054` Any type set directly on the photograph on “Watch product-page feature - LC-25-0102” (watch-feature-r003.png) is Bone cream #EDE6D6 or Warm near-black #191512.
+- `PHOTO-24/watch-feature-r003/H055` On “Watch product-page feature - LC-25-0102” (watch-feature-r003.png), Tempered steel #9A9EA3 appears only in small captions, footer lines, labels or dividers, never as body text, a ground or a panel.
+- `PHOTO-24/watch-feature-r003/H056` No scrim, gradient or overlay of any colour, black or white included, is laid over the photograph on “Watch product-page feature - LC-25-0102” (watch-feature-r003.png).
+- `PHOTO-24/watch-feature-r004/H052` Any type on a Warm near-black #191512 or Oxblood #5A2A28 panel on “Watch product-page feature - LC-25-0103” (watch-feature-r004.png) is Bone cream #EDE6D6.
+- `PHOTO-24/watch-feature-r004/H053` Any type set directly on the photograph on “Watch product-page feature - LC-25-0103” (watch-feature-r004.png) is Bone cream #EDE6D6 or Warm near-black #191512.
+- `PHOTO-24/watch-feature-r004/H054` On “Watch product-page feature - LC-25-0103” (watch-feature-r004.png), Tempered steel #9A9EA3 appears only in small captions, footer lines, labels or dividers, never as body text, a ground or a panel.
+- `PHOTO-24/watch-feature-r004/H055` No scrim, gradient or overlay of any colour, black or white included, is laid over the photograph on “Watch product-page feature - LC-25-0103” (watch-feature-r004.png).
+- `PHOTO-24/watch-feature-r005/H053` Any type on a Warm near-black #191512 or Oxblood #5A2A28 panel on “Watch product-page feature - LC-25-0104” (watch-feature-r005.png) is Bone cream #EDE6D6.
+- `PHOTO-24/watch-feature-r005/H054` Any type set directly on the photograph on “Watch product-page feature - LC-25-0104” (watch-feature-r005.png) is Bone cream #EDE6D6 or Warm near-black #191512.
+- `PHOTO-24/watch-feature-r005/H055` On “Watch product-page feature - LC-25-0104” (watch-feature-r005.png), Tempered steel #9A9EA3 appears only in small captions, footer lines, labels or dividers, never as body text, a ground or a panel.
+- `PHOTO-24/watch-feature-r005/H056` No scrim, gradient or overlay of any colour, black or white included, is laid over the photograph on “Watch product-page feature - LC-25-0104” (watch-feature-r005.png).
+- `PHOTO-24/watch-feature-r006/H052` Any type on a Warm near-black #191512 or Oxblood #5A2A28 panel on “Watch product-page feature - LC-25-0105” (watch-feature-r006.png) is Bone cream #EDE6D6.
+- `PHOTO-24/watch-feature-r006/H053` Any type set directly on the photograph on “Watch product-page feature - LC-25-0105” (watch-feature-r006.png) is Bone cream #EDE6D6 or Warm near-black #191512.
+- `PHOTO-24/watch-feature-r006/H054` On “Watch product-page feature - LC-25-0105” (watch-feature-r006.png), Tempered steel #9A9EA3 appears only in small captions, footer lines, labels or dividers, never as body text, a ground or a panel.
+- `PHOTO-24/watch-feature-r006/H055` No scrim, gradient or overlay of any colour, black or white included, is laid over the photograph on “Watch product-page feature - LC-25-0105” (watch-feature-r006.png).
+- `PHOTO-24/watch-feature-r004/H056` The strap on “Watch product-page feature - LC-25-0103” (watch-feature-r004.png) matches the strap colour in lunara_pdp_ardent.jpg, with no recolouring.
+- `PHOTO-24/dealer-launch/H066` Any type on a Warm near-black #191512 or Oxblood #5A2A28 panel on “Watch dealer launch sheet” (dealer-launch.pdf) is Bone cream #EDE6D6.
+- `PHOTO-24/dealer-launch/H067` Any type set directly on any photograph on “Watch dealer launch sheet” (dealer-launch.pdf) is Bone cream #EDE6D6 or Warm near-black #191512.
+- `PHOTO-24/dealer-launch/H068` On “Watch dealer launch sheet” (dealer-launch.pdf), Tempered steel #9A9EA3 appears only in small captions, footer lines, labels or dividers, never as body text, a ground or a panel.
+- `PHOTO-24/dealer-launch/H069` No scrim, gradient or overlay of any colour, black or white included, is laid over any photograph on “Watch dealer launch sheet” (dealer-launch.pdf).
+- `PHOTO-24/dealer-launch/H070` The Ardent dial and strap on “Watch dealer launch sheet” (dealer-launch.pdf) match their colour in lunara_pdp_ardent.jpg, with no recolouring.
+- `PHOTO-24/dealer-launch/H071` If a wordmark appears on “Watch dealer launch sheet” (dealer-launch.pdf), it is set in Cormorant Garamond Medium capitals, not the bold serif capitals of lunara_certificate_2025.pdf.
+- `PHOTO-24/watch-keyvisual/H053` Every line of Cormorant Garamond capitals on “Autumn watch key visual” (watch-keyvisual.png) is tracked open at +180, clearly wider than the supplied font’s default spacing.
+- `PHOTO-24/watch-feature-r002/H058` Every line of Cormorant Garamond capitals on “Watch product-page feature - LC-25-0101” (watch-feature-r002.png) is tracked open at +180, clearly wider than the supplied font’s default spacing.
+- `PHOTO-24/watch-feature-r003/H057` Every line of Cormorant Garamond capitals on “Watch product-page feature - LC-25-0102” (watch-feature-r003.png) is tracked open at +180, clearly wider than the supplied font’s default spacing.
+- `PHOTO-24/watch-feature-r004/H057` Every line of Cormorant Garamond capitals on “Watch product-page feature - LC-25-0103” (watch-feature-r004.png) is tracked open at +180, clearly wider than the supplied font’s default spacing.
+- `PHOTO-24/watch-feature-r005/H057` Every line of Cormorant Garamond capitals on “Watch product-page feature - LC-25-0104” (watch-feature-r005.png) is tracked open at +180, clearly wider than the supplied font’s default spacing.
+- `PHOTO-24/watch-feature-r006/H056` Every line of Cormorant Garamond capitals on “Watch product-page feature - LC-25-0105” (watch-feature-r006.png) is tracked open at +180, clearly wider than the supplied font’s default spacing.
+- `PHOTO-24/dealer-launch/H072` Every line of Cormorant Garamond capitals on “Watch dealer launch sheet” (dealer-launch.pdf) is tracked open at +180, clearly wider than the supplied font’s default spacing.
+- `PHOTO-24/dealer-launch/H073` Where figures are stacked in a column on “Watch dealer launch sheet” (dealer-launch.pdf), their digits line up vertically.
+- `PHOTO-24/dealer-launch/H074` Any figure inside a heading on “Watch dealer launch sheet” (dealer-launch.pdf) is set at the same point size as the heading capitals around it.
