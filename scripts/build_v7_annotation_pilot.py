@@ -534,11 +534,21 @@ def main() -> None:
     # Same rows for a manual Google Sheets import (File > Import > Replace current sheet, text kept as text).
     with current_export.with_suffix('.csv').open('w', newline='', encoding='utf-8') as f:
         csv.writer(f).writerows(rows)
-    links = ''.join(f'<li><a href="{tid}.html">{tid} - {esc(json.loads((TASKS/tid/"TASK_SPEC.json").read_text())["task_name"])}</a></li>' for tid in TASK_IDS)
+    def task_links(tid: str) -> str:
+        spec = json.loads((TASKS/tid/"TASK_SPEC.json").read_text())
+        v7 = f'../index.html#{tid}'
+        return (f'<li><a href="{tid}.html">{tid} - {esc(spec["task_name"])}</a><br><span class="vlinks">Verifiers: '
+                f'<a href="{v7}/human">Human ({len(spec["verifiers_human"])})</a> · '
+                f'<a href="{v7}/auto">Auto ({len(spec["verifiers_auto"])})</a> · '
+                f'<a href="{v7}/trajectory">Trajectory</a> · '
+                f'<a href="coverage/{tid}.html">Checks per deliverable</a></span></li>')
+    links = ''.join(task_links(tid) for tid in TASK_IDS)
+    links_note = ('<p>Each task links to its brief and to its Human, Auto and Trajectory verifiers on the V7 review site. '
+                  'The review site is a large page, so the first load takes a few seconds.</p>')
     coverage = ''
     if (OUT/'coverage'/'index.html').is_file():
         coverage = '<h2>Verifier coverage</h2><p>For each task: every brief and brand-identity constraint against every deliverable, with the verifier that checks it. <a href="coverage/index.html">Open the coverage tables</a>.</p>'
-    (OUT/'index.html').write_text(f'<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Pilot task briefs</title><style>{CSS}</style><main class="page"><h1>Pilot task briefs</h1><ul>{links}</ul>{coverage}</main></html>')
+    (OUT/'index.html').write_text(f'<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Pilot task briefs</title><style>{CSS}.vlinks{{font-size:14px;color:#5b6760}}.page li{{margin:0 0 10px}}</style><main class="page"><h1>Pilot task briefs</h1>{links_note}<ul>{links}</ul>{coverage}</main></html>')
     print(f"Sheet payload: {SHEET_EXPORT}")
 
 

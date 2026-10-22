@@ -227,6 +227,16 @@ def sync(check: bool = False) -> None:
     replacement="""if(t.input_revision){const note='<p class="verifier-note"><strong>Revised input pack:</strong> '+esc(t.input_revision.previous_run_results)+'</p>';if(section==='Outputs')html=note+'<h2>Current requested deliverables</h2>'+t.current_deliverables_html+'<h2>Historical pilot outputs</h2>'+html;if(section==='Auto verifiers'||section==='Human verifiers')html=note+html;}document.getElementById('content').innerHTML=html;}"""
     if 'Current requested deliverables</h2>' not in document:
         document=document.replace(hook,replacement)
+    # Deep links to a tab, e.g. index.html#PHOTO-04/human; the address follows task and tab clicks.
+    document=document.replace(
+        "let current=data.tasks.find(t=>t.id===location.hash.slice(1))||data.tasks[0],section='Brief';",
+        "const sectionLinks={brief:'Brief',brand:'Brand',outputs:'Outputs',auto:'Auto verifiers',human:'Human verifiers',trajectory:'Trajectory verifiers',assets:'Assets',gates:'Release gates'};"
+        "const hashParts=decodeURIComponent(location.hash.slice(1)).split('/');"
+        "let current=data.tasks.find(t=>t.id===hashParts[0])||data.tasks[0],section=sectionLinks[(hashParts[1]||'').toLowerCase()]||'Brief';"
+        "const setHash=()=>history.replaceState(null,'','#'+current.id+(section==='Brief'?'':'/'+Object.keys(sectionLinks).find(k=>sectionLinks[k]===section)));")
+    document=document.replace("outputFilter='';history.replaceState(null,'','#'+current.id);nav();render();",
+                              "outputFilter='';setHash();nav();render();")
+    document=document.replace("section=b.dataset.section;render();", "section=b.dataset.section;setHash();render();")
     reconcile(index_path,document,check)
 
     for name in ("photo-tasks.csv", "layout-tasks.csv", "vector-tasks.csv", "motion-tasks.csv", "task-register.csv", "brand-identity.csv"):
