@@ -173,7 +173,7 @@ Score only the listed current Auto and Human verifiers. A design target marked "
   Measure: At 400% zoom in an image editor, eyedropper panels, rules and the centres of letter strokes, not edges; compare the hexes with those named. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-04/booking-hero-oliveto/H018` The house name “Casa Oliveto” on “Villa booking hero - Oliveto” (booking-hero-oliveto.png) is set in Cormorant Garamond Light, with no heavier weight.
   Look: Inspect the named output against this requirement and its linked references.
-- `PHOTO-04/booking-hero-oliveto/H019` Body text on “Villa booking hero - Oliveto” (booking-hero-oliveto.png) are set in Source Sans 3 Regular.
+- `PHOTO-04/booking-hero-oliveto/H019` Body text on “Villa booking hero - Oliveto” (booking-hero-oliveto.png) is set in Source Sans 3 Regular.
   Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-04/booking-hero-oliveto/H020` The opening “C” of “Casa Oliveto” on “Villa booking hero - Oliveto” (booking-hero-oliveto.png) stands twice as tall as the capital “O” of “Oliveto”.
   Measure: In an image editor, measure the full pixel heights of initial C and capital O. Yes if C is 1.8 to 2.2 times as tall.
@@ -213,7 +213,7 @@ Score only the listed current Auto and Human verifiers. A design target marked "
   Measure: At 400% zoom in an image editor, eyedropper panels, rules and the centres of letter strokes, not edges; compare the hexes with those named. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-04/booking-hero-verranza/H017` The house name “Casa Verranza” on “Villa booking hero - Verranza” (booking-hero-verranza.png) is set in Cormorant Garamond Light, with no heavier weight.
   Look: Inspect the named output against this requirement and its linked references.
-- `PHOTO-04/booking-hero-verranza/H018` Body text on “Villa booking hero - Verranza” (booking-hero-verranza.png) are set in Source Sans 3 Regular.
+- `PHOTO-04/booking-hero-verranza/H018` Body text on “Villa booking hero - Verranza” (booking-hero-verranza.png) is set in Source Sans 3 Regular.
   Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-04/booking-hero-verranza/H019` The opening “C” of “Casa Verranza” on “Villa booking hero - Verranza” (booking-hero-verranza.png) stands twice as tall as the capital “V” of “Verranza”.
   Measure: In an image editor, measure the full pixel heights of initial C and capital V. Yes if C is 1.8 to 2.2 times as tall.
@@ -257,7 +257,7 @@ Score only the listed current Auto and Human verifiers. A design target marked "
   Measure: At 400% zoom in an image editor, eyedropper panels, rules and the centres of letter strokes, not edges; compare the hexes with those named. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-04/booking-hero-scogliera/H018` The house name “Casa Scogliera” on “Villa booking hero - Scogliera” (booking-hero-scogliera.png) is set in Cormorant Garamond Light, with no heavier weight.
   Look: Inspect the named output against this requirement and its linked references.
-- `PHOTO-04/booking-hero-scogliera/H019` Body text on “Villa booking hero - Scogliera” (booking-hero-scogliera.png) are set in Source Sans 3 Regular.
+- `PHOTO-04/booking-hero-scogliera/H019` Body text on “Villa booking hero - Scogliera” (booking-hero-scogliera.png) is set in Source Sans 3 Regular.
   Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-04/booking-hero-scogliera/H020` The opening “C” of “Casa Scogliera” on “Villa booking hero - Scogliera” (booking-hero-scogliera.png) stands twice as tall as the capital “S” of “Scogliera”.
   Measure: In an image editor, measure the full pixel heights of initial C and capital S. Yes if C is 1.8 to 2.2 times as tall.

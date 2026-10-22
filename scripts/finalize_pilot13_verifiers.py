@@ -248,6 +248,11 @@ def main():
         outputs = {o['output_id']: o for o in spec['deliverables']}
         assets = {a['filename']: a for a in spec['assets']}
         for c in spec['verifiers_human']:
+            if c.get('split_from'):
+                text = c['check']
+                if text.startswith('Body text '): text = text.replace(' are set ', ' is set ')
+                if text.startswith(("The print's white border ", 'The skin ')): text = text.replace(' show no ', ' shows no ')
+                if text != c['check']: wording(c, text)
             source = outputs[c['output_id']].get('source_image')
             if c.get('split_from') and source and 'its source photograph' in c['check']:
                 wording(c, c['check'].replace('its source photograph', source))

@@ -148,7 +148,7 @@ Score only the listed current Auto and Human verifiers. A design target marked "
   Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/restoration-hollis-scan-06/H006` “Archival restoration master - hollis_scan_06” (restoration-hollis-scan-06.png) stays in colour like hollis_scan_06.jpg and is not converted to monochrome or sepia.
   Look: Inspect the named output against this requirement and its linked references.
-- `PHOTO-06/restoration-hollis-scan-06/H007` The print's white border on “Archival restoration master - hollis_scan_06” (restoration-hollis-scan-06.png) show no magenta or red cast.
+- `PHOTO-06/restoration-hollis-scan-06/H007` The print's white border on “Archival restoration master - hollis_scan_06” (restoration-hollis-scan-06.png) shows no magenta or red cast.
   Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/restoration-hollis-scan-06/H008` At 100% zoom, the film grain visible in hollis_scan_06.jpg is still visible on “Archival restoration master - hollis_scan_06” (restoration-hollis-scan-06.png), not smoothed away.
   Look: Inspect the named output against this requirement and its linked references.
@@ -298,7 +298,7 @@ Score only the listed current Auto and Human verifiers. A design target marked "
   Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-06/H006` “Family archive share image - hollis_scan_06” (share-hollis-scan-06.jpg) stays in colour like hollis_scan_06.jpg and is not converted to monochrome or sepia.
   Look: Inspect the named output against this requirement and its linked references.
-- `PHOTO-06/share-hollis-scan-06/H007` The print's white border on “Family archive share image - hollis_scan_06” (share-hollis-scan-06.jpg) show no magenta or red cast.
+- `PHOTO-06/share-hollis-scan-06/H007` The print's white border on “Family archive share image - hollis_scan_06” (share-hollis-scan-06.jpg) shows no magenta or red cast.
   Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-06/H008` The deckled edge of the print in hollis_scan_06.jpg is kept whole on “Family archive share image - hollis_scan_06” (share-hollis-scan-06.jpg), not trimmed or cut straight; levelling the print is allowed.
   Look: Inspect the named output against this requirement and its linked references.
@@ -330,7 +330,7 @@ Score only the listed current Auto and Human verifiers. A design target marked "
   Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-07/H007` “Family archive share image - hollis_scan_07” (share-hollis-scan-07.jpg) stays in colour like hollis_scan_07.jpg and is not converted to monochrome or sepia.
   Look: Inspect the named output against this requirement and its linked references.
-- `PHOTO-06/share-hollis-scan-07/H008` The print's white border on “Family archive share image - hollis_scan_07” (share-hollis-scan-07.jpg) show no green or cyan cast.
+- `PHOTO-06/share-hollis-scan-07/H008` The print's white border on “Family archive share image - hollis_scan_07” (share-hollis-scan-07.jpg) shows no green or cyan cast.
   Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-07/H009` The scar on Ada Hollis's left hand on “Family archive share image - hollis_scan_07” (share-hollis-scan-07.jpg) keeps the shape, length and paleness it has in hollis_scan_07.jpg; it is not smoothed.
   Look: Inspect the named output against this requirement and its linked references.
@@ -472,7 +472,7 @@ Score only the listed current Auto and Human verifiers. A design target marked "
   Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/restoration-hollis-scan-07/H008` “Archival restoration master - hollis_scan_07” (restoration-hollis-scan-07.png) stays in colour like hollis_scan_07.jpg and is not converted to monochrome or sepia.
   Look: Inspect the named output against this requirement and its linked references.
-- `PHOTO-06/restoration-hollis-scan-07/H009` The print's white border on “Archival restoration master - hollis_scan_07” (restoration-hollis-scan-07.png) show no green or cyan cast.
+- `PHOTO-06/restoration-hollis-scan-07/H009` The print's white border on “Archival restoration master - hollis_scan_07” (restoration-hollis-scan-07.png) shows no green or cyan cast.
   Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/restoration-hollis-scan-07/H010` At 100% zoom, the film grain visible in hollis_scan_07.jpg is still visible on “Archival restoration master - hollis_scan_07” (restoration-hollis-scan-07.png), not smoothed away.
   Look: Inspect the named output against this requirement and its linked references.
@@ -1274,11 +1274,11 @@ Score only the listed current Auto and Human verifiers. A design target marked "
   Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-08/H064` The caption on “Family archive share image - hollis_scan_08” (share-hollis-scan-08.jpg) names Tom Hollis; a shared surname, as in “Ada and Tom Hollis”, counts.
   Look: Inspect the named output against this requirement and its linked references.
-- `PHOTO-06/restoration-hollis-scan-06/H019` The skin on “Archival restoration master - hollis_scan_06” (restoration-hollis-scan-06.png) show no magenta or red cast.
+- `PHOTO-06/restoration-hollis-scan-06/H019` The skin on “Archival restoration master - hollis_scan_06” (restoration-hollis-scan-06.png) shows no magenta or red cast.
   Look: Inspect the named output against this requirement and its linked references.
-- `PHOTO-06/share-hollis-scan-06/H067` The skin on “Family archive share image - hollis_scan_06” (share-hollis-scan-06.jpg) show no magenta or red cast.
+- `PHOTO-06/share-hollis-scan-06/H067` The skin on “Family archive share image - hollis_scan_06” (share-hollis-scan-06.jpg) shows no magenta or red cast.
   Look: Inspect the named output against this requirement and its linked references.
-- `PHOTO-06/share-hollis-scan-07/H070` The skin on “Family archive share image - hollis_scan_07” (share-hollis-scan-07.jpg) show no green or cyan cast.
+- `PHOTO-06/share-hollis-scan-07/H070` The skin on “Family archive share image - hollis_scan_07” (share-hollis-scan-07.jpg) shows no green or cyan cast.
   Look: Inspect the named output against this requirement and its linked references.
-- `PHOTO-06/restoration-hollis-scan-07/H020` The skin on “Archival restoration master - hollis_scan_07” (restoration-hollis-scan-07.png) show no green or cyan cast.
+- `PHOTO-06/restoration-hollis-scan-07/H020` The skin on “Archival restoration master - hollis_scan_07” (restoration-hollis-scan-07.png) shows no green or cyan cast.
   Look: Inspect the named output against this requirement and its linked references.

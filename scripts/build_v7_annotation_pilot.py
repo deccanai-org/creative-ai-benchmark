@@ -537,7 +537,7 @@ def main() -> None:
     current_export.write_bytes(SHEET_EXPORT.read_bytes())
     # Same rows for a manual Google Sheets import (File > Import > Replace current sheet, text kept as text).
     with current_export.with_suffix('.csv').open('w', newline='', encoding='utf-8') as f:
-        csv.writer(f).writerows(rows)
+        csv.writer(f, lineterminator='\n').writerows(rows)
     def task_links(tid: str) -> str:
         spec = json.loads((TASKS/tid/"TASK_SPEC.json").read_text())
         v7 = f'../index.html#{tid}'
