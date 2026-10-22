@@ -3,6 +3,7 @@
 
 from __future__ import annotations
 
+import csv
 import html
 import json
 import re
@@ -530,6 +531,9 @@ def main() -> None:
     current_export = ROOT / 'tools/pilot13_ab_fixes/round3/sheet_rows_2026-10-22.json'
     current_export.parent.mkdir(parents=True, exist_ok=True)
     current_export.write_bytes(SHEET_EXPORT.read_bytes())
+    # Same rows for a manual Google Sheets import (File > Import > Replace current sheet, text kept as text).
+    with current_export.with_suffix('.csv').open('w', newline='', encoding='utf-8') as f:
+        csv.writer(f).writerows(rows)
     links = ''.join(f'<li><a href="{tid}.html">{tid} - {esc(json.loads((TASKS/tid/"TASK_SPEC.json").read_text())["task_name"])}</a></li>' for tid in TASK_IDS)
     coverage = ''
     if (OUT/'coverage'/'index.html').is_file():

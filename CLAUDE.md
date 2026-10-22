@@ -25,6 +25,9 @@ image ops, Express, InDesign data merge, Fonts, Stock, Acrobat, Premiere-style v
 
 ## Update 2026-10-22 (read first)
 
+- Colour tolerance + checker sync (after verifying ChatGPT's follow-up): every exact-colour Measure check states its rule
+  (R, G, B within 5; video stills within 10; SVG exact; press PDFs via Relative Colorimetric + black point compensation).
+  `benchmark_v4/verify_outputs.py` now equals `tools/auto_verifier/`; edit the repo copy first. Live Sheet not yet re-imported.
 - Follow-up review fixes: see `context/PILOT13_REVIEW_FIXES_2026-10-22.md`. The current Sheet import is
   `tools/pilot13_ab_fixes/round3/sheet_rows_2026-10-22.json`, not the older round2 export.
 - Repository visibility was verified PUBLIC on 2026-10-22. Older statements below that call it private are historical.

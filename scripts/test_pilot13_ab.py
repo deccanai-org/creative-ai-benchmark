@@ -64,6 +64,14 @@ class AbFixTests(unittest.TestCase):
                 if re.search(r'#[0-9A-Fa-f]{6}',c['check']) and 'shifted toward' not in c['check']:
                     self.assertNotEqual(c['method'],'look',c['check_id'])
 
+    def test_colour_measurements_state_a_tolerance(self):
+        for tid in TASK_IDS:
+            spec = json.loads((TASKS / tid / 'TASK_SPEC.json').read_text())
+            for c in spec['verifiers_human']:
+                if c['method'] == 'measure' and re.search(r'#[0-9A-Fa-f]{6}', c['check']):
+                    self.assertRegex(c['method_note'], r'(?i)within \d+|exactly|must be #|\bnearer\b|HSB brightness', c['check_id'])
+                    self.assertNotRegex(c['method_note'], r'clearly differs|clearly matches|very near|1-unit', c['check_id'])
+
     def test_typography_prose_matches_current_scale(self):
         spec=json.loads((TASKS/'LAYOUT-12'/'TASK_SPEC.json').read_text())
         prose=spec['brand_identity']['typography']

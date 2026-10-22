@@ -2648,7 +2648,7 @@
     "output_reference": "deliverables/gang-sheet.pdf",
     "check": "With colour management on, every colour on “Sticker imposed production sheet” (gang-sheet.pdf) except the CutContour paths matches one of #3E2A20, #C8A97E, #5B6B54, #F3E7D3, #A8442E or #201914.",
     "method": "measure",
-    "method_note": "Open the PDF in Photoshop in RGB mode (sRGB), then eyedrop each ink area; R, G and B each within 5 of a listed hex.",
+    "method_note": "Open the PDF in Photoshop in RGB mode (sRGB), then eyedrop each ink area; R, G and B each within 5 of a listed hex. Convert with Relative Colorimetric and black point compensation, the Adobe default.",
     "reference_assets": []
   },
   {
@@ -2687,7 +2687,7 @@
     "output_reference": "deliverables/gang-sheet.pdf",
     "check": "Any label, slug or die line note on “Sticker imposed production sheet” (gang-sheet.pdf) is Roast Brown #3E2A20 or, for a secondary line, Ash Green #5B6B54.",
     "method": "measure",
-    "method_note": "Open the PDF in Photoshop in RGB mode (sRGB), zoom in, eyedrop label strokes; within 5 of #3E2A20, or #5B6B54 for a secondary line.",
+    "method_note": "Open the PDF in Photoshop in RGB mode (sRGB), zoom in, eyedrop label strokes; within 5 of #3E2A20, or #5B6B54 for a secondary line. Convert with Relative Colorimetric and black point compensation, the Adobe default.",
     "reference_assets": [
       {
         "filename": "meridian_shelfcard_2025.pdf",
@@ -3380,7 +3380,7 @@
     "output_reference": "deliverables/new-sticker-companion-1.svg",
     "check": "Any type on a light ground on “Original companion sticker - Companion 1” (new-sticker-companion-1.svg) is Roast Brown #3E2A20, or Ash Green #5B6B54 for a secondary line.",
     "method": "measure",
-    "method_note": "Select each type on a light ground and read its fill hex: #3E2A20, or #5B6B54 for a secondary line.",
+    "method_note": "Select each type on a light ground and read its fill hex: #3E2A20, or #5B6B54 for a secondary line. The hex read from the file must match exactly.",
     "reference_assets": [
       {
         "filename": "meridian_shelfcard_2025.pdf",
@@ -3611,7 +3611,7 @@
     "output_reference": "deliverables/new-sticker-companion-2.svg",
     "check": "Any type on a light ground on “Original companion sticker - Companion 2” (new-sticker-companion-2.svg) is Roast Brown #3E2A20, or Ash Green #5B6B54 for a secondary line.",
     "method": "measure",
-    "method_note": "Select each type on a light ground and read its fill hex: #3E2A20, or #5B6B54 for a secondary line.",
+    "method_note": "Select each type on a light ground and read its fill hex: #3E2A20, or #5B6B54 for a secondary line. The hex read from the file must match exactly.",
     "reference_assets": [
       {
         "filename": "meridian_shelfcard_2025.pdf",
@@ -3753,7 +3753,7 @@
     "output_reference": "deliverables/recovered-sticker-window-mark.svg",
     "check": "If Ink Black #201914 appears on “Recovered sticker artwork - Window mark” (recovered-sticker-window-mark.svg), it is only fine detail, never a main shape, backing shape, type or the wordmark.",
     "method": "measure",
-    "method_note": "Select Same Fill on any #201914 shape to highlight all Ink Black, then confirm none is a main shape, backing, type or wordmark.",
+    "method_note": "Select Same Fill on any #201914 shape to highlight all Ink Black, then confirm none is a main shape, backing, type or wordmark. The hex read from the file must match exactly.",
     "reference_assets": []
   },
   {
@@ -3783,7 +3783,7 @@
     "output_reference": "deliverables/recovered-sticker-bag-design-1.svg",
     "check": "If Ink Black #201914 appears on “Recovered sticker artwork - Bag design 1” (recovered-sticker-bag-design-1.svg), it is only fine detail, never a main shape, backing shape, type or the wordmark.",
     "method": "measure",
-    "method_note": "Select Same Fill on any #201914 shape to highlight all Ink Black, then confirm none is a main shape, backing, type or wordmark.",
+    "method_note": "Select Same Fill on any #201914 shape to highlight all Ink Black, then confirm none is a main shape, backing, type or wordmark. The hex read from the file must match exactly.",
     "reference_assets": []
   },
   {
@@ -3813,7 +3813,7 @@
     "output_reference": "deliverables/recovered-sticker-bag-design-2.svg",
     "check": "If Ink Black #201914 appears on “Recovered sticker artwork - Bag design 2” (recovered-sticker-bag-design-2.svg), it is only fine detail, never a main shape, backing shape, type or the wordmark.",
     "method": "measure",
-    "method_note": "Select Same Fill on any #201914 shape to highlight all Ink Black, then confirm none is a main shape, backing, type or wordmark.",
+    "method_note": "Select Same Fill on any #201914 shape to highlight all Ink Black, then confirm none is a main shape, backing, type or wordmark. The hex read from the file must match exactly.",
     "reference_assets": []
   },
   {
@@ -3843,7 +3843,7 @@
     "output_reference": "deliverables/recovered-sticker-bag-design-3.svg",
     "check": "If Ink Black #201914 appears on “Recovered sticker artwork - Bag design 3” (recovered-sticker-bag-design-3.svg), it is only fine detail, never a main shape, backing shape, type or the wordmark.",
     "method": "measure",
-    "method_note": "Select Same Fill on any #201914 shape to highlight all Ink Black, then confirm none is a main shape, backing, type or wordmark.",
+    "method_note": "Select Same Fill on any #201914 shape to highlight all Ink Black, then confirm none is a main shape, backing, type or wordmark. The hex read from the file must match exactly.",
     "reference_assets": []
   },
   {
@@ -3903,7 +3903,7 @@
     "output_reference": "deliverables/new-sticker-companion-1.svg",
     "check": "If Ink Black #201914 appears on “Original companion sticker - Companion 1” (new-sticker-companion-1.svg), it is only fine detail, never a main shape, backing shape, type or the wordmark.",
     "method": "measure",
-    "method_note": "Select Same Fill on any #201914 shape to highlight all Ink Black, then confirm none is a main shape, backing, type or wordmark.",
+    "method_note": "Select Same Fill on any #201914 shape to highlight all Ink Black, then confirm none is a main shape, backing, type or wordmark. The hex read from the file must match exactly.",
     "reference_assets": []
   },
   {
@@ -3996,7 +3996,7 @@
     "output_reference": "deliverables/new-sticker-companion-2.svg",
     "check": "If Ink Black #201914 appears on “Original companion sticker - Companion 2” (new-sticker-companion-2.svg), it is only fine detail, never a main shape, backing shape, type or the wordmark.",
     "method": "measure",
-    "method_note": "Select Same Fill on any #201914 shape to highlight all Ink Black, then confirm none is a main shape, backing, type or wordmark.",
+    "method_note": "Select Same Fill on any #201914 shape to highlight all Ink Black, then confirm none is a main shape, backing, type or wordmark. The hex read from the file must match exactly.",
     "reference_assets": []
   },
   {

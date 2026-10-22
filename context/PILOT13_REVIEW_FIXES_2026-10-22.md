@@ -20,6 +20,31 @@ This supersedes the open issues and current-export references in the Round 2 rec
   The Sheet questions show Look labels and explicit Measure/Estimate guidance. Auto checks remain separate.
 - Patch tooling initializes newly added human checks, and regressions require metadata on every canonical human check.
 
+## Colour tolerance and checker sync (2026-10-22, after verifying this follow-up)
+
+- Every exact-colour Measure check now says how close a sampled colour must be. 890 notes changed; all 1,063
+  exact-colour Measure checks carry a rule (974 within 5, 15 within 10, 3 within 4, 25 exact, 27 nearest colour,
+  19 brightness range). Before, 880 only said "compare with the stated hex", which JPG/MP4 compression cannot meet exactly.
+- Stills and PDFs: "A sample matches a stated hex when R, G and B are each within 5 of it", the window 112 checks
+  already used. No two palette colours in the 13 tasks are within 10 of each other in every channel, so the window
+  never matches two palette colours.
+- Video (MOTION-11, 12): pause on a frame, save a still, within 10, as MOTION-11's other video checks.
+- Press PDFs (LAYOUT-15, VECTOR-04, 145): convert with Relative Colorimetric and black point compensation, the Adobe
+  default; every palette hex converted to PSO Coated v3 and back then reads within 4 (without compensation Ink Black is 12 off).
+- SVG (VECTOR-04, 8): the hex read from the file must match exactly.
+- PHOTO-26's rounding-only rule (8) and PHOTO-19's "clearly differs / clearly matches none" wording (114) moved to the
+  shared window. Kept as written: PHOTO-06 nearest-colour rule, PHOTO-19 brightness range for the photographic ground,
+  PHOTO-28 wordmark ink within 4.
+- Code: `colour_tolerance()` in `scripts/repair_pilot13_review.py` (idempotent; second run changes 0). Regression test
+  `test_colour_measurements_state_a_tolerance`. Check text, IDs and method totals are unchanged.
+- Checker sync: `benchmark_v4/verify_outputs.py` was still the pre-fix version (an ordinary PDF's 24 pt type read as
+  1 pt). It now equals `tools/auto_verifier/` (28 tests pass in both). Old files:
+  `reviews/pilot13-colour-tolerance-2026-10-22/checker_backup_benchmark_v4/`.
+- The live Google Sheet shows the earlier wording until it is re-imported from the round3 export. For a manual import use
+  `tools/pilot13_ab_fixes/round3/sheet_rows_2026-10-22.csv` (same 157 rows x 22 columns as the JSON): on the
+  `Verifiers_sample_inventory` tab, File > Import > Upload > Replace current sheet, and untick "Convert text to numbers,
+  dates, and formulas". Then reload the platform assignments and open one assigned job to confirm the new wording.
+
 ## LAYOUT-12
 
 - Reconciled the outdated prose with the placement-specific type card: title 180/148 pt, dates 18/22 pt, body 14/19 pt
@@ -51,4 +76,5 @@ This supersedes the open issues and current-export references in the Round 2 rec
 5. `python3 -m unittest discover -s tools/auto_verifier -p test_verifiers.py -v`
 6. `python3 -m unittest discover -s scripts -p 'test_*pilot*.py' -v`
 7. `node --test scripts/test_v7_main_attachments.mjs`
-8. `node scripts/test_pilot13_review_ui.cjs` (Playwright installed; add `--live` after deployment).
+8. `node scripts/test_pilot13_review_ui.cjs` (needs the `playwright` npm package, which the Mac checkout does not have
+   as of 2026-10-22; add `--live` after deployment).
