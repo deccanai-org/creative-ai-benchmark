@@ -2128,7 +2128,7 @@
    "check_id": "PHOTO-26/wholesale-presentation/H018",
    "type": "human",
    "output_reference": "deliverables/wholesale-presentation.pdf",
-   "check": "On “Interiors wholesale presentation” (wholesale-presentation.pdf), the handle loops of the mug from autumn_shoot_01.jpg and the teapot from autumn_shoot_13.jpg, wherever cut out, show the colour behind them, not studio sweep.",
+   "check": "The cut-out mug handle opening in wholesale-presentation.pdf shows the background behind the product, not the studio sweep from autumn_shoot_01.jpg.",
    "answer_type": "yes_no",
    "allowed_answers": [
     "Yes",
@@ -2141,8 +2141,8 @@
    "evidence_reference": "Handle loops that enclose studio sweep: the mug in autumn_shoot_01.jpg and the teapot in autumn_shoot_13.jpg. Zoom to 200 percent on each loop.",
    "artifact_name": "Interiors wholesale presentation",
    "artifact_file": "wholesale-presentation.pdf",
-   "requirement": "On “Interiors wholesale presentation” (wholesale-presentation.pdf), the handle loops of the mug from autumn_shoot_01.jpg and the teapot from autumn_shoot_13.jpg, wherever cut out, show the colour behind them, not studio sweep.",
-   "pass_condition": "On “Interiors wholesale presentation” (wholesale-presentation.pdf), the handle loops of the mug from autumn_shoot_01.jpg and the teapot from autumn_shoot_13.jpg, wherever cut out, show the colour behind them, not studio sweep.",
+   "requirement": "The cut-out mug handle opening in wholesale-presentation.pdf shows the background behind the product, not the studio sweep from autumn_shoot_01.jpg.",
+   "pass_condition": "The cut-out mug handle opening in wholesale-presentation.pdf shows the background behind the product, not the studio sweep from autumn_shoot_01.jpg.",
    "reference_assets": [
     {
      "filename": "autumn_shoot_01.jpg",
@@ -2168,9 +2168,10 @@
    "k_id": "K2_Q4",
    "k_label": "Identity fidelity",
    "origin": "review_feedback_2026_09_25",
-   "revision": "pilot13_ab_2026_10_21",
+   "revision": "pilot13_verifier_lock_2026_10_22",
    "method": "look",
-   "method_note": "Inspect the named output against this requirement and its linked references."
+   "method_note": "Inspect the named output against this requirement and its linked references.",
+   "split_from": "PHOTO-26/wholesale-presentation/H018"
   },
   {
    "task_id": "PHOTO-26",
@@ -3534,7 +3535,7 @@
    "check_id": "PHOTO-26/collection-spread/H014",
    "type": "human",
    "output_reference": "deliverables/collection-spread.pdf",
-   "check": "On “Autumn interiors collection spread” (collection-spread.pdf), the handle loops of the mug from autumn_shoot_01.jpg and the teapot from autumn_shoot_13.jpg, wherever cut out, show the colour behind them, not studio sweep.",
+   "check": "The cut-out mug handle opening in collection-spread.pdf shows the background behind the product, not the studio sweep from autumn_shoot_01.jpg.",
    "answer_type": "yes_no",
    "allowed_answers": [
     "Yes",
@@ -3547,8 +3548,8 @@
    "evidence_reference": "Handle loops that enclose studio sweep: the mug in autumn_shoot_01.jpg and the teapot in autumn_shoot_13.jpg. Zoom to 200 percent on each loop. Brief, pinned: the styled grouping shows every piece in the twenty product photographs as one range and feels coherent.",
    "artifact_name": "Autumn interiors collection spread",
    "artifact_file": "collection-spread.pdf",
-   "requirement": "On “Autumn interiors collection spread” (collection-spread.pdf), the handle loops of the mug from autumn_shoot_01.jpg and the teapot from autumn_shoot_13.jpg, wherever cut out, show the colour behind them, not studio sweep.",
-   "pass_condition": "On “Autumn interiors collection spread” (collection-spread.pdf), the handle loops of the mug from autumn_shoot_01.jpg and the teapot from autumn_shoot_13.jpg, wherever cut out, show the colour behind them, not studio sweep.",
+   "requirement": "The cut-out mug handle opening in collection-spread.pdf shows the background behind the product, not the studio sweep from autumn_shoot_01.jpg.",
+   "pass_condition": "The cut-out mug handle opening in collection-spread.pdf shows the background behind the product, not the studio sweep from autumn_shoot_01.jpg.",
    "reference_assets": [
     {
      "filename": "autumn_shoot_01.jpg",
@@ -3562,9 +3563,10 @@
    "k_id": "K2_Q4",
    "k_label": "Identity fidelity",
    "origin": "review_feedback_2026_09_25",
-   "revision": "pilot13_ab_2026_10_21",
+   "revision": "pilot13_verifier_lock_2026_10_22",
    "method": "look",
-   "method_note": "Inspect the named output against this requirement and its linked references."
+   "method_note": "Inspect the named output against this requirement and its linked references.",
+   "split_from": "PHOTO-26/collection-spread/H014"
   },
   {
    "task_id": "PHOTO-26",
@@ -4964,12 +4966,17 @@
    "requirement": "Photographs aside, Warm Paper Ground #F6F1E8 covers more of every page of “Autumn interiors collection spread” (collection-spread.pdf) than all Oatmeal Glaze, Soft Clay and Indigo Dye areas combined.",
    "pass_condition": "Photographs aside, Warm Paper Ground #F6F1E8 covers more of every page of “Autumn interiors collection spread” (collection-spread.pdf) than all Oatmeal Glaze, Soft Clay and Indigo Dye areas combined.",
    "reference_assets": [],
-   "revision": "pilot13_c_2026_10_22",
+   "revision": "pilot13_verifier_lock_2026_10_22",
    "origin": "pilot13_ab_2026_10_21",
    "k_id": "K2_Q3",
    "k_label": "Brand-system compliance",
-   "method": "estimate",
-   "method_note": "Page by page, estimate whether bare Warm Paper Ground outweighs all coloured tiles, panels and any band; answer No only if clearly not."
+   "method": "measure",
+   "method_note": "Measure each PDF page separately. Exclude photographs. Count Warm Paper Ground pixels and compare with the combined Oatmeal Glaze, Soft Clay and Indigo Dye pixels. Yes only if Warm Paper Ground has strictly more pixels on every page. Use the measurement guide; do not estimate. Each RGB channel must be within 5 of a selected palette colour.",
+   "measurement": {
+    "kind": "area_comparison",
+    "channel_tolerance": 5,
+    "comparison": "strictly_greater"
+   }
   },
   {
    "task_id": "PHOTO-26",
@@ -5143,12 +5150,17 @@
    "requirement": "Photographs aside, Warm Paper Ground #F6F1E8 covers more of every page of “Interiors wholesale presentation” (wholesale-presentation.pdf) than all Oatmeal Glaze, Soft Clay and Indigo Dye areas combined.",
    "pass_condition": "Photographs aside, Warm Paper Ground #F6F1E8 covers more of every page of “Interiors wholesale presentation” (wholesale-presentation.pdf) than all Oatmeal Glaze, Soft Clay and Indigo Dye areas combined.",
    "reference_assets": [],
-   "revision": "pilot13_c_2026_10_22",
+   "revision": "pilot13_verifier_lock_2026_10_22",
    "origin": "pilot13_ab_2026_10_21",
    "k_id": "K2_Q3",
    "k_label": "Brand-system compliance",
-   "method": "estimate",
-   "method_note": "Page by page, estimate whether bare Warm Paper Ground outweighs all coloured tiles, panels and any band; answer No only if clearly not."
+   "method": "measure",
+   "method_note": "Measure each PDF page separately. Exclude photographs. Count Warm Paper Ground pixels and compare with the combined Oatmeal Glaze, Soft Clay and Indigo Dye pixels. Yes only if Warm Paper Ground has strictly more pixels on every page. Use the measurement guide; do not estimate. Each RGB channel must be within 5 of a selected palette colour.",
+   "measurement": {
+    "kind": "area_comparison",
+    "channel_tolerance": 5,
+    "comparison": "strictly_greater"
+   }
   },
   {
    "task_id": "PHOTO-26",
@@ -5914,6 +5926,96 @@
    "k_label": "Brand-system compliance",
    "method": "look",
    "method_note": "Inspect the named output against this requirement and its linked references."
+  },
+  {
+   "task_id": "PHOTO-26",
+   "output_id": "wholesale-presentation",
+   "check_id": "PHOTO-26/wholesale-presentation/H071",
+   "type": "human",
+   "output_reference": "deliverables/wholesale-presentation.pdf",
+   "check": "The cut-out teapot handle opening in wholesale-presentation.pdf shows the background behind the product, not the studio sweep from autumn_shoot_13.jpg.",
+   "answer_type": "yes_no",
+   "allowed_answers": [
+    "Yes",
+    "No"
+   ],
+   "pass_answer": "Yes",
+   "answer": null,
+   "status": "not_assessed",
+   "source_statement": "On “Interiors wholesale presentation” (wholesale-presentation.pdf), the handle loops of the mug from autumn_shoot_01.jpg and the teapot from autumn_shoot_13.jpg, wherever cut out, show the colour behind them, not studio sweep.",
+   "evidence_reference": "Handle loops that enclose studio sweep: the mug in autumn_shoot_01.jpg and the teapot in autumn_shoot_13.jpg. Zoom to 200 percent on each loop.",
+   "artifact_name": "Interiors wholesale presentation",
+   "artifact_file": "wholesale-presentation.pdf",
+   "requirement": "The cut-out teapot handle opening in wholesale-presentation.pdf shows the background behind the product, not the studio sweep from autumn_shoot_13.jpg.",
+   "pass_condition": "The cut-out teapot handle opening in wholesale-presentation.pdf shows the background behind the product, not the studio sweep from autumn_shoot_13.jpg.",
+   "reference_assets": [
+    {
+     "filename": "autumn_shoot_01.jpg",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/tasks/SB3-026-PHO__thornmere-home-autumn-interiors-image-system/assets/autumn_shoot_01.jpg"
+    },
+    {
+     "filename": "autumn_shoot_13.jpg",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/tasks/SB3-026-PHO__thornmere-home-autumn-interiors-image-system/assets/autumn_shoot_13.jpg"
+    },
+    {
+     "filename": "fonts/BarlowCondensed-Medium.ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/BarlowCondensed-Medium.ttf"
+    },
+    {
+     "filename": "fonts/SourceSerif4[opsz,wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/SourceSerif4%5Bopsz%2Cwght%5D.ttf"
+    },
+    {
+     "filename": "fonts/Inter[opsz,wght].ttf",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/Inter%5Bopsz%2Cwght%5D.ttf"
+    }
+   ],
+   "k_id": "K2_Q4",
+   "k_label": "Identity fidelity",
+   "origin": "review_feedback_2026_09_25",
+   "revision": "pilot13_verifier_lock_2026_10_22",
+   "method": "look",
+   "method_note": "Inspect the named output against this requirement and its linked references.",
+   "split_from": "PHOTO-26/wholesale-presentation/H018"
+  },
+  {
+   "task_id": "PHOTO-26",
+   "output_id": "collection-spread",
+   "check_id": "PHOTO-26/collection-spread/H065",
+   "type": "human",
+   "output_reference": "deliverables/collection-spread.pdf",
+   "check": "The cut-out teapot handle opening in collection-spread.pdf shows the background behind the product, not the studio sweep from autumn_shoot_13.jpg.",
+   "answer_type": "yes_no",
+   "allowed_answers": [
+    "Yes",
+    "No"
+   ],
+   "pass_answer": "Yes",
+   "answer": null,
+   "status": "not_assessed",
+   "source_statement": "On “Autumn interiors collection spread” (collection-spread.pdf), the handle loops of the mug from autumn_shoot_01.jpg and the teapot from autumn_shoot_13.jpg, wherever cut out, show the colour behind them, not studio sweep.",
+   "evidence_reference": "Handle loops that enclose studio sweep: the mug in autumn_shoot_01.jpg and the teapot in autumn_shoot_13.jpg. Zoom to 200 percent on each loop. Brief, pinned: the styled grouping shows every piece in the twenty product photographs as one range and feels coherent.",
+   "artifact_name": "Autumn interiors collection spread",
+   "artifact_file": "collection-spread.pdf",
+   "requirement": "The cut-out teapot handle opening in collection-spread.pdf shows the background behind the product, not the studio sweep from autumn_shoot_13.jpg.",
+   "pass_condition": "The cut-out teapot handle opening in collection-spread.pdf shows the background behind the product, not the studio sweep from autumn_shoot_13.jpg.",
+   "reference_assets": [
+    {
+     "filename": "autumn_shoot_01.jpg",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/tasks/SB3-026-PHO__thornmere-home-autumn-interiors-image-system/assets/autumn_shoot_01.jpg"
+    },
+    {
+     "filename": "autumn_shoot_13.jpg",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/tasks/SB3-026-PHO__thornmere-home-autumn-interiors-image-system/assets/autumn_shoot_13.jpg"
+    }
+   ],
+   "k_id": "K2_Q4",
+   "k_label": "Identity fidelity",
+   "origin": "review_feedback_2026_09_25",
+   "revision": "pilot13_verifier_lock_2026_10_22",
+   "method": "look",
+   "method_note": "Inspect the named output against this requirement and its linked references.",
+   "split_from": "PHOTO-26/collection-spread/H014"
   }
  ],
  "evaluation": {
@@ -5921,7 +6023,105 @@
   "creative_review": "Subjective professional judgement is recorded separately and never changes an acceptance-verifier answer.",
   "process_evaluation_reference": "../../evaluation/rubric_catalog_v2.json",
   "process_scores_do_not_replace_output_acceptance": true,
-  "human_review_required": true
+  "human_review_required": true,
+  "objective_scoring_policy": "Score only the listed current Auto and Human verifiers. A design target marked \"Not scored\" in coverage remains a client instruction but is excluded from the score denominator: the requested delivery does not provide enough evidence to verify it. Do not infer a pass or failure. If a listed measurement cannot be completed, leave it unanswered and record the missing evidence; do not guess. Human answers remain Yes/No. Historical run results are not current scores.",
+  "unscored_design_targets": [
+   {
+    "rule_id": "T01L",
+    "output_id": "collection-spread",
+    "reason": "Product names and the brand name are one-line text, so no known multi-line string exists for a code check; the brand value 15 pt is kept as a design target."
+   },
+   {
+    "rule_id": "T01L",
+    "output_id": "wholesale-presentation",
+    "reason": "Product names and the brand name are one-line text, so no known multi-line string exists for a code check; the brand value 15 pt is kept as a design target."
+   },
+   {
+    "rule_id": "T01T",
+    "output_id": "collection-spread",
+    "reason": "The spread is not required to carry product names, so no name is known to be on it for a code check; +200 is kept as a design target and H037 only judges open spacing."
+   },
+   {
+    "rule_id": "T01T",
+    "output_id": "wholesale-presentation",
+    "reason": "Names appear only for the objects the designer features, so no name is known to be on it for a code check; +200 is kept as a design target and H039 only judges open spacing."
+   },
+   {
+    "rule_id": "T01TB",
+    "output_id": "collection-spread",
+    "reason": "The spread is not required to carry the brand name, so no known string exists for a code check; +200 is kept as a design target."
+   },
+   {
+    "rule_id": "T01TH",
+    "output_id": "collection-spread",
+    "reason": "Main headings other than product names and the brand name are written by the designer, so no known string exists for a code check; +200 is kept as a design target."
+   },
+   {
+    "rule_id": "T01TH",
+    "output_id": "wholesale-presentation",
+    "reason": "Main headings other than product names and the brand name are written by the designer, so no known string exists for a code check; +200 is kept as a design target."
+   },
+   {
+    "rule_id": "T02L",
+    "output_id": "collection-spread",
+    "reason": "Subheadings are optional text written by the designer, so no known string exists for a code check; the brand value 13 pt is kept as a design target."
+   },
+   {
+    "rule_id": "T02L",
+    "output_id": "wholesale-presentation",
+    "reason": "Subheadings are optional text written by the designer, so no known string exists for a code check; the brand value 13 pt is kept as a design target."
+   },
+   {
+    "rule_id": "T02T",
+    "output_id": "collection-spread",
+    "reason": "Subheadings are optional text written by the designer, so no known string exists for a code check; +160 is a design target and H041 only judges that spacing is visibly open."
+   },
+   {
+    "rule_id": "T02T",
+    "output_id": "wholesale-presentation",
+    "reason": "Subheadings are optional text written by the designer, so no known string exists for a code check; +160 is a design target and H043 only judges that spacing is visibly open."
+   },
+   {
+    "rule_id": "T03L",
+    "output_id": "collection-spread",
+    "reason": "Body copy is written by the designer, so no known string exists for a code check; baseline distance cannot be read reliably from text properties, and 15 pt is kept as a design target."
+   },
+   {
+    "rule_id": "T03L",
+    "output_id": "wholesale-presentation",
+    "reason": "Body copy is written by the designer, so no known string exists for a code check; baseline distance cannot be read reliably from text properties, and 15 pt is kept as a design target."
+   },
+   {
+    "rule_id": "T03T",
+    "output_id": "collection-spread",
+    "reason": "Body copy is written by the designer, so no known string exists for a code check; tracking in thousandths of an em cannot be judged by eye, and 0 is kept as a design target."
+   },
+   {
+    "rule_id": "T03T",
+    "output_id": "wholesale-presentation",
+    "reason": "Body copy is written by the designer, so no known string exists for a code check; tracking in thousandths of an em cannot be judged by eye, and 0 is kept as a design target."
+   },
+   {
+    "rule_id": "T04L",
+    "output_id": "collection-spread",
+    "reason": "No price, dimension or care line is known to run over two lines, so a code check has no multi-line text; the brand value 12 pt is kept as a design target."
+   },
+   {
+    "rule_id": "T04L",
+    "output_id": "wholesale-presentation",
+    "reason": "No price, dimension or care line is known to run over two lines, so a code check has no multi-line text; the brand value 12 pt is kept as a design target."
+   },
+   {
+    "rule_id": "T04T",
+    "output_id": "collection-spread",
+    "reason": "The spread commission requires no prices, dimensions or care lines, so no such string is known to be on it; +20 is kept as a design target."
+   },
+   {
+    "rule_id": "T04T",
+    "output_id": "wholesale-presentation",
+    "reason": "Prices, dimensions and care lines appear only for the objects the designer features, so no exact string is known to be on it; +20 is kept as a design target."
+   }
+  ]
  },
  "readiness": {
   "contract": "revised",

@@ -47,6 +47,9 @@ def page(tid):
     na = sum(1 for c in cells if 'na' in c)
     nv = sum(1 for c in cells if 'not_verified' in c)
     missing = len(cells) - covered - na - nv
+    mapped = {cid for cell in cells for cid in cell.get('checks', [])}
+    if mapped != set(checks):
+        raise ValueError(f'{tid}: coverage and live checks differ: {sorted(mapped ^ set(checks))}')
     head = ''.join(f'<th title="{html.escape(o["name"])}">{html.escape(Path(o["path"]).name)}</th>' for o in outputs)
     rows = []
     for r in rules:
@@ -60,32 +63,39 @@ def page(tid):
             elif 'na' in cell:
                 tds.append(f'<td class="na" title="{html.escape(cell["na"])}">n/a</td>')
             elif 'not_verified' in cell:
-                tds.append(f'<td class="nv" title="{html.escape(cell["not_verified"])}">not verified</td>')
+                tds.append(f'<td class="nv" title="{html.escape(cell["not_verified"] + " Excluded from scoring.")}">Not scored</td>')
             else:
                 tds.append('<td class="missing">missing</td>')
         rows.append(f'<tr><th class="rule" scope="row"><span class="kind">{html.escape(KIND.get(r["kind"], r["kind"]))}</span>{html.escape(r["rule"])}</th>{"".join(tds)}</tr>')
     per = []
     for o in outputs:
-        items = []
+        items = {'auto': [], 'human': []}
+        excluded = []
+        seen = set()
         for r in rules:
             cell = r['cells'][o['output_id']]
             if cell.get('checks'):
                 for c in cell['checks']:
-                    if c in checks:
+                    if c in checks and c not in seen:
+                        seen.add(c)
                         kind = 'auto' if checks[c]['type'] == 'auto' else 'human'
                         m = checks[c].get('method', 'look')
                         note=checks[c].get('method_note','')
                         tag = '' if kind == 'auto' else f'<span class="method {m}">{m.capitalize()}</span><span class="muted">{html.escape(note)}</span><br>'
-                        items.append(f'<li>{html.escape(r["rule"])}<br><code>{html.escape(c.split("/")[-1])} · {kind}</code> {tag}{html.escape(checks[c]["check"])}</li>')
+                        items[kind].append(f'<li><code>{html.escape(c)} · {kind}</code><br>{html.escape(checks[c]["check"])}<br>{tag}</li>')
             elif 'not_verified' in cell:
-                items.append(f'<li>{html.escape(r["rule"])}<br><span class="method estimate">not verified</span> {html.escape(cell["not_verified"])}</li>')
-        per.append(f'<details class="deliv"><summary>{html.escape(o["name"])} <code>{html.escape(Path(o["path"]).name)}</code> · {len(items)} checks</summary><ul>{"".join(items)}</ul></details>')
+                excluded.append(f'<li>{html.escape(r["rule"])}<br><strong>Not scored:</strong> {html.escape(cell["not_verified"])}</li>')
+        lists = ''.join(f'<h3>{kind.capitalize()} verifiers ({len(items[kind])})</h3><ul>{"".join(items[kind])}</ul>' for kind in ('auto', 'human'))
+        if excluded:
+            lists += f'<h3>Unscored design targets ({len(excluded)})</h3><p>These are not verifiers and are excluded from the score denominator.</p><ul>{"".join(excluded)}</ul>'
+        per.append(f'<details class="deliv" id="{html.escape(o["output_id"])}"><summary>{html.escape(o["name"])} <code>{html.escape(Path(o["path"]).name)}</code> · {len(seen)} unique checks · {len(excluded)} unscored targets</summary>{lists}</details>')
     doc = f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{html.escape(tid)} verifier coverage</title><style>{CSS}{EXTRA_CSS}</style></head><body><main class="page">
 <p class="eyebrow"><a href="index.html">Verifier coverage</a> · <a href="../{tid}.html">Task brief</a></p>
 <h1>{html.escape(spec["task_name"])}</h1>
-<p class="muted">Every brief and brand-identity requirement, split into single parts, against every deliverable. A cell names the verifier that checks that part on that file (hover for its text). “n/a” means the part does not apply to that file; “not verified” means it applies but no check verifies it, with the reason (for example an exact type value that cannot be measured in a delivered image). Hover for why.</p>
-<div class="stats"><div><strong>{len(rules)}</strong>rules</div><div><strong>{len(outputs)}</strong>deliverables</div><div><strong>{covered}</strong>cells checked</div><div><strong>{na}</strong>not applicable</div><div><strong>{nv}</strong>not verified</div><div><strong>{missing}</strong>missing</div></div>
+<p class="muted">A cell names the verifier for that rule and file. “n/a” means the rule does not apply. “Not scored” means it applies but the requested finished file lacks the evidence needed to verify it. It is not counted as covered. Hover for the reason; full details are also listed below.</p>
+<p>{html.escape(cov['scoring_policy'])}</p><p><a href="../measurement-guide.html">Measurement guide and calculators</a></p>
+<div class="stats"><div><strong>{len(rules)}</strong>rules</div><div><strong>{len(outputs)}</strong>deliverables</div><div><strong>{covered}</strong>cells with checks</div><div><strong>{na}</strong>not applicable</div><div><strong>{nv}</strong>not scored</div><div><strong>{missing}</strong>missing</div></div>
 <div class="cov-wrap"><table class="cov"><thead><tr><th class="rule">Rule</th>{head}</tr></thead><tbody>{"".join(rows)}</tbody></table></div>
 <h2>Checklist by deliverable</h2>{"".join(per)}
 </main></body></html>'''
@@ -98,8 +108,9 @@ def main():
     rows = ''.join(f'<tr><td><a href="{s["task"]}.html">{s["task"]}</a></td><td>{html.escape(s["name"])}</td><td>{s["rules"]}</td><td>{s["outputs"]}</td><td>{s["covered"]}</td><td>{s["na"]}</td><td>{s["not_verified"]}</td><td>{s["missing"]}</td></tr>' for s in stats)
     index = f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Verifier coverage</title><style>{CSS}{EXTRA_CSS}</style></head><body><main class="page">
 <p class="eyebrow"><a href="../index.html">Pilot task briefs</a></p><h1>Verifier coverage</h1>
-<p class="muted">For each pilot task: is every brief and brand-identity requirement checked on every individual deliverable? Rules are split into single parts; a part that applies but cannot be checked in the delivered file is shown as “not verified” with its reason, never counted as covered. Generated from the published verifiers (2026-10-22).</p>
-<div class="cov-wrap"><table class="cov"><thead><tr><th>Task</th><th class="rule">Name</th><th>Rules</th><th>Deliverables</th><th>Cells checked</th><th>Not applicable</th><th>Not verified</th><th>Missing</th></tr></thead><tbody>{rows}</tbody></table></div>
+<p class="muted">Each pilot's rules against its deliverables. Unverifiable design targets are marked “Not scored”, with reasons, and excluded from the score denominator. They are not counted as covered. Auto and Human lists below each table contain each check once per file, even when it supports several rules.</p>
+<p><a href="../measurement-guide.html">Measurement guide and calculators</a></p>
+<div class="cov-wrap"><table class="cov"><thead><tr><th>Task</th><th class="rule">Name</th><th>Rules</th><th>Deliverables</th><th>Cells with checks</th><th>Not applicable</th><th>Not scored</th><th>Missing</th></tr></thead><tbody>{rows}</tbody></table></div>
 </main></body></html>'''
     (COV / 'index.html').write_text(index, encoding='utf-8')
     print(json.dumps(stats, indent=1))

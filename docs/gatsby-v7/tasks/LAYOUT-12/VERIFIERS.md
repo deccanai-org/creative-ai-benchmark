@@ -2,6 +2,10 @@
 
 Revised input pack. Previous execution results are historical, not current ratings.
 
+Score only the listed current Auto and Human verifiers. A design target marked "Not scored" in coverage remains a client instruction but is excluded from the score denominator: the requested delivery does not provide enough evidence to verify it. Do not infer a pass or failure. If a listed measurement cannot be completed, leave it unanswered and record the missing evidence; do not guess. Human answers remain Yes/No. Historical run results are not current scores.
+
+[Measurement guide](../../annotation-pilot/measurement-guide.html)
+
 ## Auto verifiers
 
 - `LAYOUT-12/poster-direction-type-led/A001` “Umbra Loft / After Dark poster direction - Type-led” (poster-direction-type-led.pdf) is present in the delivery package.
@@ -147,771 +151,1570 @@ Revised input pack. Previous execution results are historical, not current ratin
 ## Human verifiers
 
 - `LAYOUT-12/poster-direction-type-led/H001` Acts on “After Dark poster direction - Type-led” (poster-direction-type-led.pdf) follow the umbra_billing_autumn.txt order: Sable Quartet, Meridian Brass, Night Ferry, The Blue Hour, Vespertine, The Eastons, Koa, Laurel and the Dive.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-type-led/H002` At full A2 size, no letter of an act name, support act, date, licence line or accessibility line on “After Dark poster direction - Type-led” (poster-direction-type-led.pdf) is cut off.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-image-led/H001` Acts on “After Dark poster direction - Image-led” (poster-direction-image-led.pdf) follow the umbra_billing_autumn.txt order: Sable Quartet, Meridian Brass, Night Ferry, The Blue Hour, Vespertine, The Eastons, Koa, Laurel and the Dive.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-image-led/H002` At full A2 size, no letter of an act name, support act, date, licence line or accessibility line on “After Dark poster direction - Image-led” (poster-direction-image-led.pdf) is cut off.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-graphic-led/H001` Acts on “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf) follow the umbra_billing_autumn.txt order: Sable Quartet, Meridian Brass, Night Ferry, The Blue Hour, Vespertine, The Eastons, Koa, Laurel and the Dive.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-graphic-led/H002` At full A2 size, no letter of an act name, support act, date, licence line or accessibility line on “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf) is cut off.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-graphic-led/H003` Every act name on “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf), support acts excepted, is spelled exactly as credited in umbra_billing_autumn.txt.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-graphic-led/H004` Night Ferry is credited on “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf) as two words, “NIGHT FERRY”, never run together.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-graphic-led/H005` On “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf), Sable Quartet is billed with the date 25 Sep.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-graphic-led/H006` On “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf), The Blue Hour is billed with the date 3 Oct.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-graphic-led/H007` Any weekday shown with Koa's 16 Oct date on “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf) is Friday (FRI), not Saturday as umbra_billing_autumn.txt prints it.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-graphic-led/H008` Apart from Koa's 16 Oct, checked separately, every weekday shown beside a date on “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf) is correct for 2026; for example, 25 Sep 2026 is a Friday.
+  Measure: Look up each printed date in a 2026 calendar and confirm the weekday printed beside it matches.
 - `LAYOUT-12/poster-direction-graphic-led/H009` On “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf), Sable Quartet is billed with the support act Odette Lang.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-graphic-led/H010` On “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf), The Blue Hour is billed with the support act Coral Sound.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-graphic-led/H011` Every support act on “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf) is set smaller than the act name it supports.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-graphic-led/H012` On “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf), each headline act, Sable Quartet, Meridian Brass and Night Ferry, is set larger than every act of the remaining nights.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-graphic-led/H013` The licence line on “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf) reads exactly, in any letter case: “Umbra Loft, 14 Foundry Court (basement), Providence RI. Licensed under City of Providence Entertainment Licence PVD-2021-0846.”
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-graphic-led/H014` The accessibility line on “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf) reads exactly, in any letter case: “Step-free access to the main room is via the mill loading entrance on request; please contact the venue in advance.”
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-graphic-led/H015` No SABLE QUARTET lettering, such as the shirt print in umbra_wordmark_nightferry.jpg, stands for Night Ferry on “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf).
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-graphic-led/H016` No wordmark, stencil or distressed lettering drawn, generated or otherwise made for Night Ferry appears on “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf).
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-graphic-led/H017` On “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf), The Blue Hour, Vespertine, The Eastons, Koa and Laurel and the Dive are billed in type only, with no wordmark.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-graphic-led/H020` Every letter of SABLE QUARTET in the Sable Quartet wordmark on “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf) is complete, as in umbra_sable_wordmark_transparent.png, with none missing or partly erased.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-graphic-led/H021` The Sable Quartet wordmark on “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf) keeps the letter proportions of umbra_sable_wordmark_transparent.png, without stretching.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-graphic-led/H022` The Meridian Brass wordmark on “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf) uses the MERIDIAN BRASS letter shapes of umbra_meridian_wordmark_transparent.png, not lettering retyped in a font.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-graphic-led/H023` The Meridian Brass wordmark on “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf) keeps the letter proportions of umbra_meridian_wordmark_transparent.png, without stretching.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-graphic-led/H024` No knit texture, like the sweater weave in umbra_wordmark_meridian.jpg, shows around or between the letters of the Meridian Brass wordmark on “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf).
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-graphic-led/H025` Any performance photograph on “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf) is one of the six supplied archive frames, umbra_archive_night_01.jpg to umbra_archive_night_06.jpg, not stock or generated.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-graphic-led/H026` Every performance photograph on “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf) is used as shot, with nothing generated, extended, added or removed in it.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-graphic-led/H027` Any performance photograph on “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf) is reproduced in two palette colours, not in full colour.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-graphic-led/H028` Wherever umbra_archive_night_02.jpg or umbra_archive_night_05.jpg appears on “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf), its clipped white areas stay flat, with no face, clothing or instrument detail invented in them.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-graphic-led/H029` Viewed at 100% on “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf), no performance photograph shows motion smear such as the streaked trumpet bell and right hand of umbra_archive_night_06.jpg.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-graphic-led/H030` “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf) shows no sponsor logo or corporate partner mark anywhere on the poster.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-graphic-led/H035` Every act name on “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf), support acts excepted, is Bone White #E9E4D8.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-12/poster-direction-graphic-led/H036` On “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf), every date line is letterspaced more open than the act names.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-graphic-led/H037` No line of body or billing text on “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf) runs longer than 65 characters.
+  Measure: Find the longest line of body or billing text and count its characters, spaces included, by hand or in a text tool.
 - `LAYOUT-12/poster-direction-graphic-led/H038` Apart from photographs, every type, ground, panel, rule and wordmark colour on “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf) is one of #0E0E10, #2A2A2E, #E4863B, #3F7C8C, #E9E4D8 or #8E2B24.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-12/poster-direction-graphic-led/H040` Every non-photographic ground and panel on “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf) is Pitch #0E0E10 or Ash #2A2A2E.
-- `LAYOUT-12/poster-direction-graphic-led/H041` Nothing on “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf) uses a tint, transparency, gradient, glow or shadow, and no photograph carries a scrim or overlay.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
+- `LAYOUT-12/poster-direction-graphic-led/H041` Nothing on “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf) uses a tint, transparency, gradient, glow or shadow.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-graphic-led/H042` On “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf), Cold Signal #3F7C8C and Blood #8E2B24 appear only as hairlines, dividers or photo treatment.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-12/promoter-deck/H001` “Promoter pitch deck” (promoter-deck.pdf) has no blank page anywhere in the PDF.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r002/H001` The date on “Night release post - 2026-09-25” (release-post-r002.png) is 25 Sep (2026-09-25, umbra_nights_autumn.csv row 2), in any clear form such as “25 SEP”.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r002/H002` At full export size, the advance price text on “Night release post - 2026-09-25” (release-post-r002.png) is fully visible, no letters cut off at the edge.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r002/H003` Any year shown with the date on “Night release post - 2026-09-25” (release-post-r002.png) is 2026, as in umbra_nights_autumn.csv row 2.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r002/H005` The support line on “Night release post - 2026-09-25” (release-post-r002.png) reads “with Odette Lang”, spelled as in umbra_nights_autumn.csv row 2, in any letter case.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r002/H006` The door time on “Night release post - 2026-09-25” (release-post-r002.png) is 8:00 PM (umbra_nights_autumn.csv row 2), in any clear form such as “DOORS 8” or “DOORS 8:00 PM”.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r002/H007` The set time on “Night release post - 2026-09-25” (release-post-r002.png) is 9:00 PM (umbra_nights_autumn.csv row 2), in any clear form such as “SETS 9:00 PM”.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r002/H008` The advance price on “Night release post - 2026-09-25” (release-post-r002.png) reads “$28”, as in umbra_nights_autumn.csv row 2.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r003/H001` The date on “Night release post - 2026-09-26” (release-post-r003.png) is 26 Sep (2026-09-26, umbra_nights_autumn.csv row 3), in any clear form such as “26 SEP”.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r003/H002` At full export size, the advance price text on “Night release post - 2026-09-26” (release-post-r003.png) is fully visible, no letters cut off at the edge.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r003/H003` Any year shown with the date on “Night release post - 2026-09-26” (release-post-r003.png) is 2026, as in umbra_nights_autumn.csv row 3.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r003/H005` The support line on “Night release post - 2026-09-26” (release-post-r003.png) reads “with The Tin Ravens”, spelled as in umbra_nights_autumn.csv row 3, in any letter case.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r003/H006` The door time on “Night release post - 2026-09-26” (release-post-r003.png) is 8:30 PM (umbra_nights_autumn.csv row 3), in any clear form such as “DOORS 8:30” or “DOORS 8:30 PM”.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r003/H007` The set time on “Night release post - 2026-09-26” (release-post-r003.png) is 9:15 PM (umbra_nights_autumn.csv row 3), in any clear form such as “SETS 9:15 PM”.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r003/H008` The advance price on “Night release post - 2026-09-26” (release-post-r003.png) reads “$32”, as in umbra_nights_autumn.csv row 3.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r004/H001` The date on “Night release post - 2026-10-02” (release-post-r004.png) is 2 Oct (2026-10-02, umbra_nights_autumn.csv row 4), in any clear form such as “2 OCT”.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r004/H002` At full export size, the advance price text on “Night release post - 2026-10-02” (release-post-r004.png) is fully visible, no letters cut off at the edge.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r004/H003` Any year shown with the date on “Night release post - 2026-10-02” (release-post-r004.png) is 2026, as in umbra_nights_autumn.csv row 4.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r004/H005` The support line on “Night release post - 2026-10-02” (release-post-r004.png) reads “with Junior Vale”, spelled as in umbra_nights_autumn.csv row 4, in any letter case.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r004/H006` The door time on “Night release post - 2026-10-02” (release-post-r004.png) is 8:00 PM (umbra_nights_autumn.csv row 4), in any clear form such as “DOORS 8” or “DOORS 8:00 PM”.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r004/H007` The set time on “Night release post - 2026-10-02” (release-post-r004.png) is 9:00 PM (umbra_nights_autumn.csv row 4), in any clear form such as “SETS 9:00 PM”.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r004/H008` The advance price on “Night release post - 2026-10-02” (release-post-r004.png) reads “$26”, as in umbra_nights_autumn.csv row 4.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r004/H009` Any weekday shown with the date on “Night release post - 2026-10-02” (release-post-r004.png) is Friday (FRI).
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r004/H010` At full 1080 x 1350 size, every letter of the act name on “Night release post - 2026-10-02” (release-post-r004.png) is inside the frame, none clipped.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r004/H011` Apart from the series title, the largest text on “Night release post - 2026-10-02” (release-post-r004.png) is the act name “Night Ferry”.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r004/H013` The photograph on “Night release post - 2026-10-02” (release-post-r004.png) is one of the six supplied archive frames, umbra_archive_night_01.jpg to umbra_archive_night_06.jpg, not stock or generated.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r004/H014` The photograph on “Night release post - 2026-10-02” (release-post-r004.png) is used as shot, with nothing generated, extended, added or removed in it.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r004/H015` The photograph on “Night release post - 2026-10-02” (release-post-r004.png) is reproduced in two palette colours, not in full colour.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r004/H016` Wherever umbra_archive_night_02.jpg or umbra_archive_night_05.jpg appears on “Night release post - 2026-10-02” (release-post-r004.png), its clipped white areas stay flat, with no face, clothing or instrument detail invented in them.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r004/H017` No SABLE QUARTET lettering, such as the shirt print in umbra_wordmark_nightferry.jpg, stands for Night Ferry on “Night release post - 2026-10-02” (release-post-r004.png).
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r004/H018` No wordmark, stencil or distressed lettering drawn, generated or otherwise made for Night Ferry appears on “Night release post - 2026-10-02” (release-post-r004.png).
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r004/H022` The act name “Night Ferry” on “Night release post - 2026-10-02” (release-post-r004.png) is Bone White #E9E4D8.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-12/release-post-r004/H023` On “Night release post - 2026-10-02” (release-post-r004.png), the date line is letterspaced more open than the act name.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r004/H025` “Night release post - 2026-10-02” (release-post-r004.png) shows no sponsor logo or corporate partner mark anywhere.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r004/H026` Apart from the photograph, every type, ground, panel, rule and wordmark colour on “Night release post - 2026-10-02” (release-post-r004.png) is one of #0E0E10, #2A2A2E, #E4863B, #3F7C8C, #E9E4D8 or #8E2B24.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-12/release-post-r004/H028` Every non-photographic ground and panel on “Night release post - 2026-10-02” (release-post-r004.png) is Pitch #0E0E10 or Ash #2A2A2E.
-- `LAYOUT-12/release-post-r004/H029` All colour on “Night release post - 2026-10-02” (release-post-r004.png) is solid at 100% opacity, with no tint, transparency, gradient, glow or shadow, and no scrim or overlay on the photograph.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
+- `LAYOUT-12/release-post-r004/H029` All colour on “Night release post - 2026-10-02” (release-post-r004.png) is solid at 100% opacity, with no tint, transparency, gradient, glow or shadow.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r004/H030` On “Night release post - 2026-10-02” (release-post-r004.png), Cold Signal #3F7C8C and Blood #8E2B24 appear only as hairlines, dividers or photo treatment.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-12/release-post-r005/H001` The date on “Night release post - 2026-10-03” (release-post-r005.png) is 3 Oct (umbra_nights_autumn.csv row 5), not 4 Oct, the residency's other night, in any clear form such as “3 OCT”.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r005/H002` At full export size, the advance price text on “Night release post - 2026-10-03” (release-post-r005.png) is fully visible, no letters cut off at the edge.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r005/H003` Any year shown with the date on “Night release post - 2026-10-03” (release-post-r005.png) is 2026, as in umbra_nights_autumn.csv row 5.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r005/H005` The support line on “Night release post - 2026-10-03” (release-post-r005.png) reads “with Coral Sound”, spelled as in umbra_nights_autumn.csv row 5, in any letter case.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r005/H006` The door time on “Night release post - 2026-10-03” (release-post-r005.png) is 8:00 PM (umbra_nights_autumn.csv row 5), in any clear form such as “DOORS 8” or “DOORS 8:00 PM”.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r005/H007` The set time on “Night release post - 2026-10-03” (release-post-r005.png) is 9:00 PM (umbra_nights_autumn.csv row 5), in any clear form such as “SETS 9:00 PM”.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r005/H008` The advance price on “Night release post - 2026-10-03” (release-post-r005.png) reads “$24”, as in umbra_nights_autumn.csv row 5.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r005/H009` Any weekday shown with the date on “Night release post - 2026-10-03” (release-post-r005.png) is Saturday (SAT).
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r005/H010` At full 1080 x 1350 size, every letter of the act name on “Night release post - 2026-10-03” (release-post-r005.png) is inside the frame, none clipped.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r005/H011` Apart from the series title, the largest text on “Night release post - 2026-10-03” (release-post-r005.png) is the act name “The Blue Hour”.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r005/H013` The photograph on “Night release post - 2026-10-03” (release-post-r005.png) is one of the six supplied archive frames, umbra_archive_night_01.jpg to umbra_archive_night_06.jpg, not stock or generated.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r005/H014` The photograph on “Night release post - 2026-10-03” (release-post-r005.png) is used as shot, with nothing generated, extended, added or removed in it.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r005/H015` The photograph on “Night release post - 2026-10-03” (release-post-r005.png) is reproduced in two palette colours, not in full colour.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r005/H016` Wherever umbra_archive_night_02.jpg or umbra_archive_night_05.jpg appears on “Night release post - 2026-10-03” (release-post-r005.png), its clipped white areas stay flat, with no face, clothing or instrument detail invented in them.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r005/H021` The act name “The Blue Hour” on “Night release post - 2026-10-03” (release-post-r005.png) is Bone White #E9E4D8.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-12/release-post-r005/H022` On “Night release post - 2026-10-03” (release-post-r005.png), the date line is letterspaced more open than the act name.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r005/H024` “Night release post - 2026-10-03” (release-post-r005.png) shows no sponsor logo or corporate partner mark anywhere.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r005/H025` Apart from the photograph, every type, ground, panel, rule and wordmark colour on “Night release post - 2026-10-03” (release-post-r005.png) is one of #0E0E10, #2A2A2E, #E4863B, #3F7C8C, #E9E4D8 or #8E2B24.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-12/release-post-r005/H027` Every non-photographic ground and panel on “Night release post - 2026-10-03” (release-post-r005.png) is Pitch #0E0E10 or Ash #2A2A2E.
-- `LAYOUT-12/release-post-r005/H028` All colour on “Night release post - 2026-10-03” (release-post-r005.png) is solid at 100% opacity, with no tint, transparency, gradient, glow or shadow, and no scrim or overlay on the photograph.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
+- `LAYOUT-12/release-post-r005/H028` All colour on “Night release post - 2026-10-03” (release-post-r005.png) is solid at 100% opacity, with no tint, transparency, gradient, glow or shadow.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r005/H029` On “Night release post - 2026-10-03” (release-post-r005.png), Cold Signal #3F7C8C and Blood #8E2B24 appear only as hairlines, dividers or photo treatment.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-12/release-post-r006/H001` The date on “Night release post - 2026-10-04” (release-post-r006.png) is 4 Oct (umbra_nights_autumn.csv row 6), not 3 Oct, the residency's other night, in any clear form such as “4 OCT”.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r006/H002` At full export size, the advance price text on “Night release post - 2026-10-04” (release-post-r006.png) is fully visible, no letters cut off at the edge.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r006/H003` Any year shown with the date on “Night release post - 2026-10-04” (release-post-r006.png) is 2026, as in umbra_nights_autumn.csv row 6.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r006/H005` The support line on “Night release post - 2026-10-04” (release-post-r006.png) reads “with Coral Sound”, spelled as in umbra_nights_autumn.csv row 6, in any letter case.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r006/H006` The door time on “Night release post - 2026-10-04” (release-post-r006.png) is 8:00 PM (umbra_nights_autumn.csv row 6), in any clear form such as “DOORS 8” or “DOORS 8:00 PM”.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r006/H007` The set time on “Night release post - 2026-10-04” (release-post-r006.png) is 9:00 PM (umbra_nights_autumn.csv row 6), in any clear form such as “SETS 9:00 PM”.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r006/H008` The advance price on “Night release post - 2026-10-04” (release-post-r006.png) reads “$24”, as in umbra_nights_autumn.csv row 6.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r006/H009` Any weekday shown with the date on “Night release post - 2026-10-04” (release-post-r006.png) is Sunday (SUN).
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r006/H010` At full 1080 x 1350 size, every letter of the act name on “Night release post - 2026-10-04” (release-post-r006.png) is inside the frame, none clipped.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r006/H011` Apart from the series title, the largest text on “Night release post - 2026-10-04” (release-post-r006.png) is the act name “The Blue Hour”.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r006/H013` The photograph on “Night release post - 2026-10-04” (release-post-r006.png) is one of the six supplied archive frames, umbra_archive_night_01.jpg to umbra_archive_night_06.jpg, not stock or generated.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r006/H014` The photograph on “Night release post - 2026-10-04” (release-post-r006.png) is used as shot, with nothing generated, extended, added or removed in it.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r006/H015` The photograph on “Night release post - 2026-10-04” (release-post-r006.png) is reproduced in two palette colours, not in full colour.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r006/H016` Wherever umbra_archive_night_02.jpg or umbra_archive_night_05.jpg appears on “Night release post - 2026-10-04” (release-post-r006.png), its clipped white areas stay flat, with no face, clothing or instrument detail invented in them.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r006/H021` The act name “The Blue Hour” on “Night release post - 2026-10-04” (release-post-r006.png) is Bone White #E9E4D8.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-12/release-post-r006/H022` On “Night release post - 2026-10-04” (release-post-r006.png), the date line is letterspaced more open than the act name.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r006/H024` “Night release post - 2026-10-04” (release-post-r006.png) shows no sponsor logo or corporate partner mark anywhere.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r006/H025` Apart from the photograph, every type, ground, panel, rule and wordmark colour on “Night release post - 2026-10-04” (release-post-r006.png) is one of #0E0E10, #2A2A2E, #E4863B, #3F7C8C, #E9E4D8 or #8E2B24.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-12/release-post-r006/H027` Every non-photographic ground and panel on “Night release post - 2026-10-04” (release-post-r006.png) is Pitch #0E0E10 or Ash #2A2A2E.
-- `LAYOUT-12/release-post-r006/H028` All colour on “Night release post - 2026-10-04” (release-post-r006.png) is solid at 100% opacity, with no tint, transparency, gradient, glow or shadow, and no scrim or overlay on the photograph.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
+- `LAYOUT-12/release-post-r006/H028` All colour on “Night release post - 2026-10-04” (release-post-r006.png) is solid at 100% opacity, with no tint, transparency, gradient, glow or shadow.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r006/H029` On “Night release post - 2026-10-04” (release-post-r006.png), Cold Signal #3F7C8C and Blood #8E2B24 appear only as hairlines, dividers or photo treatment.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-12/release-post-r007/H001` The date on “Night release post - 2026-10-09” (release-post-r007.png) is 9 Oct (2026-10-09, umbra_nights_autumn.csv row 7), in any clear form such as “9 OCT”.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r007/H002` At full export size, the advance price text on “Night release post - 2026-10-09” (release-post-r007.png) is fully visible, no letters cut off at the edge.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r007/H003` Any year shown with the date on “Night release post - 2026-10-09” (release-post-r007.png) is 2026, as in umbra_nights_autumn.csv row 7.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r007/H005` The support line on “Night release post - 2026-10-09” (release-post-r007.png) reads “with Marlow Reyes”, spelled as in umbra_nights_autumn.csv row 7, in any letter case.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r007/H006` The text “&nbsp;” does not appear anywhere on “Night release post - 2026-10-09” (release-post-r007.png).
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r007/H007` The set time on “Night release post - 2026-10-09” (release-post-r007.png) is 9:00 PM (umbra_nights_autumn.csv row 7), in any clear form such as “SETS 9:00 PM”.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r007/H008` The advance price on “Night release post - 2026-10-09” (release-post-r007.png) reads “$22”, as in umbra_nights_autumn.csv row 7.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r007/H009` Any weekday shown with the date on “Night release post - 2026-10-09” (release-post-r007.png) is Friday (FRI).
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r007/H010` At full 1080 x 1350 size, every letter of the act name on “Night release post - 2026-10-09” (release-post-r007.png) is inside the frame, none clipped.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r007/H011` Apart from the series title, the largest text on “Night release post - 2026-10-09” (release-post-r007.png) is the act name “Vespertine”.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r007/H013` The photograph on “Night release post - 2026-10-09” (release-post-r007.png) is one of the six supplied archive frames, umbra_archive_night_01.jpg to umbra_archive_night_06.jpg, not stock or generated.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r007/H014` The photograph on “Night release post - 2026-10-09” (release-post-r007.png) is used as shot, with nothing generated, extended, added or removed in it.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r007/H015` The photograph on “Night release post - 2026-10-09” (release-post-r007.png) is reproduced in two palette colours, not in full colour.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r007/H016` Wherever umbra_archive_night_02.jpg or umbra_archive_night_05.jpg appears on “Night release post - 2026-10-09” (release-post-r007.png), its clipped white areas stay flat, with no face, clothing or instrument detail invented in them.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r007/H021` The act name “Vespertine” on “Night release post - 2026-10-09” (release-post-r007.png) is Bone White #E9E4D8.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-12/release-post-r007/H022` On “Night release post - 2026-10-09” (release-post-r007.png), the date line is letterspaced more open than the act name.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r007/H024` “Night release post - 2026-10-09” (release-post-r007.png) shows no sponsor logo or corporate partner mark anywhere.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r007/H025` Apart from the photograph, every type, ground, panel, rule and wordmark colour on “Night release post - 2026-10-09” (release-post-r007.png) is one of #0E0E10, #2A2A2E, #E4863B, #3F7C8C, #E9E4D8 or #8E2B24.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-12/release-post-r007/H027` Every non-photographic ground and panel on “Night release post - 2026-10-09” (release-post-r007.png) is Pitch #0E0E10 or Ash #2A2A2E.
-- `LAYOUT-12/release-post-r007/H028` All colour on “Night release post - 2026-10-09” (release-post-r007.png) is solid at 100% opacity, with no tint, transparency, gradient, glow or shadow, and no scrim or overlay on the photograph.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
+- `LAYOUT-12/release-post-r007/H028` All colour on “Night release post - 2026-10-09” (release-post-r007.png) is solid at 100% opacity, with no tint, transparency, gradient, glow or shadow.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r007/H029` On “Night release post - 2026-10-09” (release-post-r007.png), Cold Signal #3F7C8C and Blood #8E2B24 appear only as hairlines, dividers or photo treatment.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-12/release-post-r008/H001` The date on “Night release post - 2026-10-10” (release-post-r008.png) is 10 Oct (2026-10-10, umbra_nights_autumn.csv row 8), in any clear form such as “10 OCT”.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r008/H002` At full export size, the advance price text on “Night release post - 2026-10-10” (release-post-r008.png) is fully visible, no letters cut off at the edge.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r008/H003` Any year shown with the date on “Night release post - 2026-10-10” (release-post-r008.png) is 2026, as in umbra_nights_autumn.csv row 8.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r008/H005` The support line on “Night release post - 2026-10-10” (release-post-r008.png) reads “with Half Light”, spelled as in umbra_nights_autumn.csv row 8, in any letter case.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r008/H006` The door time on “Night release post - 2026-10-10” (release-post-r008.png) is 8:30 PM (umbra_nights_autumn.csv row 8), in any clear form such as “DOORS 8:30” or “DOORS 8:30 PM”.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r008/H007` The set time on “Night release post - 2026-10-10” (release-post-r008.png) is 9:30 PM (umbra_nights_autumn.csv row 8), in any clear form such as “SETS 9:30 PM”.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r008/H008` The advance price on “Night release post - 2026-10-10” (release-post-r008.png) reads “$28”, as in umbra_nights_autumn.csv row 8.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r008/H009` Any weekday shown with the date on “Night release post - 2026-10-10” (release-post-r008.png) is Saturday (SAT).
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r008/H010` At full 1080 x 1350 size, every letter of the act name on “Night release post - 2026-10-10” (release-post-r008.png) is inside the frame, none clipped.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r008/H011` Apart from the series title, the largest text on “Night release post - 2026-10-10” (release-post-r008.png) is the act name “The Eastons”.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r008/H013` The photograph on “Night release post - 2026-10-10” (release-post-r008.png) is one of the six supplied archive frames, umbra_archive_night_01.jpg to umbra_archive_night_06.jpg, not stock or generated.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r008/H014` The photograph on “Night release post - 2026-10-10” (release-post-r008.png) is used as shot, with nothing generated, extended, added or removed in it.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r008/H015` Wherever umbra_archive_night_02.jpg or umbra_archive_night_05.jpg appears on “Night release post - 2026-10-10” (release-post-r008.png), its clipped white areas stay flat, with no face, clothing or instrument detail invented in them.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r008/H017` “Night release post - 2026-10-10” (release-post-r008.png) shows no sponsor logo or corporate partner mark anywhere.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r009/H001` The date on “Night release post - 2026-10-16” (release-post-r009.png) is 16 Oct (2026-10-16, umbra_nights_autumn.csv row 9), in any clear form such as “16 OCT”.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r009/H002` At full export size, the advance price text on “Night release post - 2026-10-16” (release-post-r009.png) is fully visible, no letters cut off at the edge.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r009/H003` Any year shown with the date on “Night release post - 2026-10-16” (release-post-r009.png) is 2026, as in umbra_nights_autumn.csv row 9.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r009/H005` The support line on “Night release post - 2026-10-16” (release-post-r009.png) reads “with The Undertow”, spelled as in umbra_nights_autumn.csv row 9, in any letter case.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r009/H006` The door time on “Night release post - 2026-10-16” (release-post-r009.png) is 8:00 PM (umbra_nights_autumn.csv row 9), in any clear form such as “DOORS 8” or “DOORS 8:00 PM”.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r009/H007` The set time on “Night release post - 2026-10-16” (release-post-r009.png) is 9:00 PM (umbra_nights_autumn.csv row 9), in any clear form such as “SETS 9:00 PM”.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r009/H008` The advance price on “Night release post - 2026-10-16” (release-post-r009.png) reads “$24”, as in umbra_nights_autumn.csv row 9.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r009/H009` Any weekday shown with Koa's 16 Oct date on “Night release post - 2026-10-16” (release-post-r009.png) is Friday (FRI), not Saturday as umbra_billing_autumn.txt prints it.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r009/H010` At full 1080 x 1350 size, every letter of the act name on “Night release post - 2026-10-16” (release-post-r009.png) is inside the frame, none clipped.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r009/H011` Apart from the series title, the largest text on “Night release post - 2026-10-16” (release-post-r009.png) is the act name “Koa”.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r009/H013` The photograph on “Night release post - 2026-10-16” (release-post-r009.png) is one of the six supplied archive frames, umbra_archive_night_01.jpg to umbra_archive_night_06.jpg, not stock or generated.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r009/H014` The photograph on “Night release post - 2026-10-16” (release-post-r009.png) is used as shot, with nothing generated, extended, added or removed in it.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r009/H015` Wherever umbra_archive_night_02.jpg or umbra_archive_night_05.jpg appears on “Night release post - 2026-10-16” (release-post-r009.png), its clipped white areas stay flat, with no face, clothing or instrument detail invented in them.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r009/H017` “Night release post - 2026-10-16” (release-post-r009.png) shows no sponsor logo or corporate partner mark anywhere.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r010/H001` The date on “Night release post - 2026-10-17” (release-post-r010.png) is 17 Oct (2026-10-17, umbra_nights_autumn.csv row 10), in any clear form such as “17 OCT”.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r010/H002` At full export size, the advance price text on “Night release post - 2026-10-17” (release-post-r010.png) is fully visible, no letters cut off at the edge.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r010/H003` Any year shown with the date on “Night release post - 2026-10-17” (release-post-r010.png) is 2026, as in umbra_nights_autumn.csv row 10.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r010/H005` The support line on “Night release post - 2026-10-17” (release-post-r010.png) reads “with Ferro”, spelled as in umbra_nights_autumn.csv row 10, in any letter case.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r010/H006` The door time on “Night release post - 2026-10-17” (release-post-r010.png) is 8:30 PM (umbra_nights_autumn.csv row 10), in any clear form such as “DOORS 8:30” or “DOORS 8:30 PM”.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r010/H007` The set time on “Night release post - 2026-10-17” (release-post-r010.png) is 9:15 PM (umbra_nights_autumn.csv row 10), in any clear form such as “SETS 9:15 PM”.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r010/H008` The advance price on “Night release post - 2026-10-17” (release-post-r010.png) reads “$26”, as in umbra_nights_autumn.csv row 10.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r010/H009` Any weekday shown with the date on “Night release post - 2026-10-17” (release-post-r010.png) is Saturday (SAT).
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r010/H010` At full 1080 x 1350 size, every letter of the act name on “Night release post - 2026-10-17” (release-post-r010.png) is inside the frame, none clipped.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r010/H011` Apart from the series title, the largest text on “Night release post - 2026-10-17” (release-post-r010.png) is the act name “Laurel and the Dive”.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r010/H013` The photograph on “Night release post - 2026-10-17” (release-post-r010.png) is one of the six supplied archive frames, umbra_archive_night_01.jpg to umbra_archive_night_06.jpg, not stock or generated.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r010/H014` The photograph on “Night release post - 2026-10-17” (release-post-r010.png) is used as shot, with nothing generated, extended, added or removed in it.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r010/H015` The photograph on “Night release post - 2026-10-17” (release-post-r010.png) is reproduced in two palette colours, not in full colour.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r010/H016` Wherever umbra_archive_night_02.jpg or umbra_archive_night_05.jpg appears on “Night release post - 2026-10-17” (release-post-r010.png), its clipped white areas stay flat, with no face, clothing or instrument detail invented in them.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r010/H021` The act name “Laurel and the Dive” on “Night release post - 2026-10-17” (release-post-r010.png) is Bone White #E9E4D8.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-12/release-post-r010/H022` On “Night release post - 2026-10-17” (release-post-r010.png), the date line is letterspaced more open than the act name.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r010/H024` “Night release post - 2026-10-17” (release-post-r010.png) shows no sponsor logo or corporate partner mark anywhere.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r010/H025` Apart from the photograph, every type, ground, panel, rule and wordmark colour on “Night release post - 2026-10-17” (release-post-r010.png) is one of #0E0E10, #2A2A2E, #E4863B, #3F7C8C, #E9E4D8 or #8E2B24.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-12/release-post-r010/H027` Every non-photographic ground and panel on “Night release post - 2026-10-17” (release-post-r010.png) is Pitch #0E0E10 or Ash #2A2A2E.
-- `LAYOUT-12/release-post-r010/H028` All colour on “Night release post - 2026-10-17” (release-post-r010.png) is solid at 100% opacity, with no tint, transparency, gradient, glow or shadow, and no scrim or overlay on the photograph.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
+- `LAYOUT-12/release-post-r010/H028` All colour on “Night release post - 2026-10-17” (release-post-r010.png) is solid at 100% opacity, with no tint, transparency, gradient, glow or shadow.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r010/H029` On “Night release post - 2026-10-17” (release-post-r010.png), Cold Signal #3F7C8C and Blood #8E2B24 appear only as hairlines, dividers or photo treatment.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-12/release-post-r002/H010` The photograph on “Night release post - 2026-09-25” (release-post-r002.png) is one of the six supplied archive frames, umbra_archive_night_01.jpg to umbra_archive_night_06.jpg, not stock or generated.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r002/H011` Every non-photographic ground and panel on “Night release post - 2026-09-25” (release-post-r002.png) is Pitch #0E0E10 or Ash #2A2A2E.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-12/release-post-r002/H013` Apart from the series title, the largest text on “Night release post - 2026-09-25” (release-post-r002.png) is the act name “Sable Quartet”.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-type-led/H004` Every act name on “After Dark poster direction - Type-led” (poster-direction-type-led.pdf), support acts excepted, is spelled exactly as credited in umbra_billing_autumn.txt.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-type-led/H005` On “After Dark poster direction - Type-led” (poster-direction-type-led.pdf), each headline act, Sable Quartet, Meridian Brass and Night Ferry, is set larger than every act of the remaining nights.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/promoter-deck/H002` “Promoter pitch deck” (promoter-deck.pdf) shows all three poster directions by name: Type-led, Image-led and Graphic-led.
-- `LAYOUT-12/promoter-deck/H003` The draw chart in “Promoter pitch deck” (promoter-deck.pdf) shows Sep at 168, as in umbra_room_specs.txt.
-- `LAYOUT-12/promoter-deck/H004` Any capacity figure in “Promoter pitch deck” (promoter-deck.pdf) reads 250 standing or 120 seated cabaret, as in umbra_room_specs.txt.
-- `LAYOUT-12/promoter-deck/H005` Any season-average draw in “Promoter pitch deck” (promoter-deck.pdf) reads 183 of 250, 73 percent, as in umbra_room_specs.txt.
+  Look: Inspect the named output against this requirement and its linked references.
+- `LAYOUT-12/promoter-deck/H003` The draw chart in “Promoter pitch deck” (promoter-deck.pdf) labels Sep at 168, as in umbra_room_specs.txt.
+  Look: Read the printed value label for the named month; it must match exactly. Do not estimate a value from bar height.
+- `LAYOUT-12/promoter-deck/H004` Any standing capacity in promoter-deck.pdf is 250, as specified in umbra_room_specs.txt.
+  Look: Inspect the named output against this requirement and its linked references.
+- `LAYOUT-12/promoter-deck/H005` Any season-average attendance in promoter-deck.pdf is 183, as specified in umbra_room_specs.txt.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/promoter-deck/H006` Every draw, capacity, stage, price, date or deal figure in “Promoter pitch deck” (promoter-deck.pdf) appears in umbra_room_specs.txt, umbra_billing_autumn.txt, umbra_nights_autumn.csv or the brand identity.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/promoter-deck/H007` The Type-led design shown in “Promoter pitch deck” (promoter-deck.pdf) is the one delivered as poster-direction-type-led.pdf.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/promoter-deck/H008` Every act name in “Promoter pitch deck” (promoter-deck.pdf), support acts excepted, is spelled as credited in umbra_billing_autumn.txt.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/promoter-deck/H009` Any weekday shown with Koa's 16 Oct date in “Promoter pitch deck” (promoter-deck.pdf) is Friday (FRI), not Saturday as umbra_billing_autumn.txt prints it.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/promoter-deck/H010` Apart from Koa's 16 Oct, checked separately, every weekday shown beside a date in “Promoter pitch deck” (promoter-deck.pdf) is correct for 2026; for example, 25 Sep 2026 is a Friday.
+  Measure: Look up each printed date in a 2026 calendar and confirm the weekday printed beside it matches.
 - `LAYOUT-12/promoter-deck/H011` No SABLE QUARTET lettering, such as the shirt print in umbra_wordmark_nightferry.jpg, stands for Night Ferry in “Promoter pitch deck” (promoter-deck.pdf).
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/promoter-deck/H012` No wordmark, stencil or distressed lettering drawn, generated or otherwise made for Night Ferry appears in “Promoter pitch deck” (promoter-deck.pdf).
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/promoter-deck/H013` In “Promoter pitch deck” (promoter-deck.pdf), The Blue Hour, Vespertine, The Eastons, Koa and Laurel and the Dive are billed in type only, with no wordmark.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/promoter-deck/H015` If a Sable Quartet wordmark appears in “Promoter pitch deck” (promoter-deck.pdf), every letter of SABLE QUARTET in it is complete, as in umbra_sable_wordmark_transparent.png, with none missing or partly erased.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/promoter-deck/H016` If a Sable Quartet wordmark appears in “Promoter pitch deck” (promoter-deck.pdf), it keeps the letter proportions of umbra_sable_wordmark_transparent.png, without stretching.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/promoter-deck/H017` If a Meridian Brass wordmark appears in “Promoter pitch deck” (promoter-deck.pdf), it uses the letter shapes of umbra_meridian_wordmark_transparent.png, not lettering retyped in a font.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/promoter-deck/H018` If a Meridian Brass wordmark appears in “Promoter pitch deck” (promoter-deck.pdf), it keeps the letter proportions of umbra_meridian_wordmark_transparent.png, without stretching.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/promoter-deck/H019` If a Meridian Brass wordmark appears in “Promoter pitch deck” (promoter-deck.pdf), no knit texture like the sweater weave in umbra_wordmark_meridian.jpg shows around or between its letters.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/promoter-deck/H020` Every performance photograph in “Promoter pitch deck” (promoter-deck.pdf) is one of the six supplied archive frames, umbra_archive_night_01.jpg to umbra_archive_night_06.jpg, not stock or generated.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/promoter-deck/H021` Every performance photograph in “Promoter pitch deck” (promoter-deck.pdf) is reproduced in two palette colours, not in full colour.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/promoter-deck/H022` Every performance photograph in “Promoter pitch deck” (promoter-deck.pdf) is used as shot, with nothing generated, extended, added or removed in it.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/promoter-deck/H023` Wherever umbra_archive_night_02.jpg or umbra_archive_night_05.jpg appears in “Promoter pitch deck” (promoter-deck.pdf), its clipped white areas stay flat, with no face, clothing or instrument detail invented in them.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/promoter-deck/H027` Any act name typeset in “Promoter pitch deck” (promoter-deck.pdf) outside the poster images, support acts excepted, is Bone White #E9E4D8.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-12/promoter-deck/H028` Any date line in “Promoter pitch deck” (promoter-deck.pdf) is letterspaced more open than its act name.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/promoter-deck/H029` No line of body text in “Promoter pitch deck” (promoter-deck.pdf) runs longer than 65 characters.
+  Measure: Find the longest line of body text and count its characters, spaces included, by hand or by copying it from the PDF.
 - `LAYOUT-12/promoter-deck/H030` “Promoter pitch deck” (promoter-deck.pdf) shows no sponsor logo or corporate partner mark on any page.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/promoter-deck/H031` Apart from photographs and poster images, every type, ground, panel, rule, chart and wordmark colour in “Promoter pitch deck” (promoter-deck.pdf) is one of #0E0E10, #2A2A2E, #E4863B, #3F7C8C, #E9E4D8 or #8E2B24.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-12/promoter-deck/H033` Outside the poster images, every non-photographic ground and panel in “Promoter pitch deck” (promoter-deck.pdf) is Pitch #0E0E10 or Ash #2A2A2E.
-- `LAYOUT-12/promoter-deck/H034` All colour in “Promoter pitch deck” (promoter-deck.pdf) is solid at 100% opacity, with no tint, transparency, gradient, glow or shadow, and no scrim or overlay on a photograph.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
+- `LAYOUT-12/promoter-deck/H034` All colour in “Promoter pitch deck” (promoter-deck.pdf) is solid at 100% opacity, with no tint, transparency, gradient, glow or shadow.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/promoter-deck/H035` In “Promoter pitch deck” (promoter-deck.pdf), Cold Signal #3F7C8C and Blood #8E2B24 appear only as hairlines, dividers, chart marks or photo treatment.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-12/release-post-r003/H009` The Meridian Brass wordmark on “Night release post - 2026-09-26” (release-post-r003.png) keeps the letter proportions of umbra_meridian_wordmark_transparent.png, without stretching.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r003/H010` Any weekday shown with the date on “Night release post - 2026-09-26” (release-post-r003.png) is Saturday (SAT).
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r003/H011` At full 1080 x 1350 size, every letter of the act name on “Night release post - 2026-09-26” (release-post-r003.png) is inside the frame, none clipped.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r003/H012` Apart from the series title, the largest text on “Night release post - 2026-09-26” (release-post-r003.png) is the act name “Meridian Brass”.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r003/H014` The photograph on “Night release post - 2026-09-26” (release-post-r003.png) is one of the six supplied archive frames, umbra_archive_night_01.jpg to umbra_archive_night_06.jpg, not stock or generated.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r003/H015` The photograph on “Night release post - 2026-09-26” (release-post-r003.png) is used as shot, with nothing generated, extended, added or removed in it.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r003/H016` Wherever umbra_archive_night_02.jpg or umbra_archive_night_05.jpg appears on “Night release post - 2026-09-26” (release-post-r003.png), its clipped white areas stay flat, with no face, clothing or instrument detail invented in them.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r003/H018` The Meridian Brass wordmark on “Night release post - 2026-09-26” (release-post-r003.png) uses the MERIDIAN BRASS letter shapes of umbra_meridian_wordmark_transparent.png, not lettering retyped in a font.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r003/H019` No knit texture, like the sweater weave in umbra_wordmark_meridian.jpg, shows around or between the letters of the Meridian Brass wordmark on “Night release post - 2026-09-26” (release-post-r003.png).
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r003/H020` “Night release post - 2026-09-26” (release-post-r003.png) shows no sponsor logo or corporate partner mark anywhere.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-image-led/H003` The photograph on “After Dark poster direction - Image-led” (poster-direction-image-led.pdf) is reproduced in two palette colours, not in full colour.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-image-led/H004` Every act name on “After Dark poster direction - Image-led” (poster-direction-image-led.pdf), support acts excepted, is spelled exactly as credited in umbra_billing_autumn.txt.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-image-led/H005` Night Ferry is credited on “After Dark poster direction - Image-led” (poster-direction-image-led.pdf) as two words, “NIGHT FERRY”, never run together.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-image-led/H006` On “After Dark poster direction - Image-led” (poster-direction-image-led.pdf), Sable Quartet is billed with the date 25 Sep.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-image-led/H007` On “After Dark poster direction - Image-led” (poster-direction-image-led.pdf), The Blue Hour is billed with the date 3 Oct.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-image-led/H008` Any weekday shown with Koa's 16 Oct date on “After Dark poster direction - Image-led” (poster-direction-image-led.pdf) is Friday (FRI), not Saturday as umbra_billing_autumn.txt prints it.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-image-led/H009` Apart from Koa's 16 Oct, checked separately, every weekday shown beside a date on “After Dark poster direction - Image-led” (poster-direction-image-led.pdf) is correct for 2026; for example, 25 Sep 2026 is a Friday.
+  Measure: Look up each printed date in a 2026 calendar and confirm the weekday printed beside it matches.
 - `LAYOUT-12/poster-direction-image-led/H010` On “After Dark poster direction - Image-led” (poster-direction-image-led.pdf), Sable Quartet is billed with the support act Odette Lang.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-image-led/H011` On “After Dark poster direction - Image-led” (poster-direction-image-led.pdf), The Blue Hour is billed with the support act Coral Sound.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-image-led/H012` Every support act on “After Dark poster direction - Image-led” (poster-direction-image-led.pdf) is set smaller than the act name it supports.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-image-led/H013` On “After Dark poster direction - Image-led” (poster-direction-image-led.pdf), each headline act, Sable Quartet, Meridian Brass and Night Ferry, is set larger than every act of the remaining nights.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-image-led/H014` The licence line on “After Dark poster direction - Image-led” (poster-direction-image-led.pdf) reads exactly, in any letter case: “Umbra Loft, 14 Foundry Court (basement), Providence RI. Licensed under City of Providence Entertainment Licence PVD-2021-0846.”
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-image-led/H015` The accessibility line on “After Dark poster direction - Image-led” (poster-direction-image-led.pdf) reads exactly, in any letter case: “Step-free access to the main room is via the mill loading entrance on request; please contact the venue in advance.”
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-image-led/H016` No SABLE QUARTET lettering, such as the shirt print in umbra_wordmark_nightferry.jpg, stands for Night Ferry on “After Dark poster direction - Image-led” (poster-direction-image-led.pdf).
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-image-led/H017` No wordmark, stencil or distressed lettering drawn, generated or otherwise made for Night Ferry appears on “After Dark poster direction - Image-led” (poster-direction-image-led.pdf).
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-image-led/H018` On “After Dark poster direction - Image-led” (poster-direction-image-led.pdf), The Blue Hour, Vespertine, The Eastons, Koa and Laurel and the Dive are billed in type only, with no wordmark.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-image-led/H021` Every letter of SABLE QUARTET in the Sable Quartet wordmark on “After Dark poster direction - Image-led” (poster-direction-image-led.pdf) is complete, as in umbra_sable_wordmark_transparent.png, with none missing or partly erased.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-image-led/H022` The Sable Quartet wordmark on “After Dark poster direction - Image-led” (poster-direction-image-led.pdf) keeps the letter proportions of umbra_sable_wordmark_transparent.png, without stretching.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-image-led/H023` The Meridian Brass wordmark on “After Dark poster direction - Image-led” (poster-direction-image-led.pdf) uses the MERIDIAN BRASS letter shapes of umbra_meridian_wordmark_transparent.png, not lettering retyped in a font.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-image-led/H024` The Meridian Brass wordmark on “After Dark poster direction - Image-led” (poster-direction-image-led.pdf) keeps the letter proportions of umbra_meridian_wordmark_transparent.png, without stretching.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-image-led/H025` No knit texture, like the sweater weave in umbra_wordmark_meridian.jpg, shows around or between the letters of the Meridian Brass wordmark on “After Dark poster direction - Image-led” (poster-direction-image-led.pdf).
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-image-led/H026` The photograph on “After Dark poster direction - Image-led” (poster-direction-image-led.pdf) is one of the six supplied archive frames, umbra_archive_night_01.jpg to umbra_archive_night_06.jpg, not stock or generated.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-image-led/H027` The photograph on “After Dark poster direction - Image-led” (poster-direction-image-led.pdf) is used as shot, with nothing generated, extended, added or removed in it.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-image-led/H028` Wherever umbra_archive_night_02.jpg or umbra_archive_night_05.jpg appears on “After Dark poster direction - Image-led” (poster-direction-image-led.pdf), its clipped white areas stay flat, with no face, clothing or instrument detail invented in them.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-image-led/H029` Viewed at 100% on “After Dark poster direction - Image-led” (poster-direction-image-led.pdf), no performance photograph shows motion smear such as the streaked trumpet bell and right hand of umbra_archive_night_06.jpg.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-image-led/H030` “After Dark poster direction - Image-led” (poster-direction-image-led.pdf) shows no sponsor logo or corporate partner mark anywhere on the poster.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-image-led/H035` Every act name on “After Dark poster direction - Image-led” (poster-direction-image-led.pdf), support acts excepted, is Bone White #E9E4D8.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-12/poster-direction-image-led/H036` On “After Dark poster direction - Image-led” (poster-direction-image-led.pdf), every date line is letterspaced more open than the act names.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-image-led/H037` No line of body or billing text on “After Dark poster direction - Image-led” (poster-direction-image-led.pdf) runs longer than 65 characters.
+  Measure: Find the longest line of body or billing text and count its characters, spaces included, by hand or in a text tool.
 - `LAYOUT-12/poster-direction-image-led/H038` Apart from photographs, every type, ground, panel, rule and wordmark colour on “After Dark poster direction - Image-led” (poster-direction-image-led.pdf) is one of #0E0E10, #2A2A2E, #E4863B, #3F7C8C, #E9E4D8 or #8E2B24.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-12/poster-direction-image-led/H040` Every non-photographic ground and panel on “After Dark poster direction - Image-led” (poster-direction-image-led.pdf) is Pitch #0E0E10 or Ash #2A2A2E.
-- `LAYOUT-12/poster-direction-image-led/H041` Nothing on “After Dark poster direction - Image-led” (poster-direction-image-led.pdf) uses a tint, transparency, gradient, glow or shadow, and no photograph carries a scrim or overlay.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
+- `LAYOUT-12/poster-direction-image-led/H041` Nothing on “After Dark poster direction - Image-led” (poster-direction-image-led.pdf) uses a tint, transparency, gradient, glow or shadow.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-image-led/H042` On “After Dark poster direction - Image-led” (poster-direction-image-led.pdf), Cold Signal #3F7C8C and Blood #8E2B24 appear only as hairlines, dividers or photo treatment.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-12/poster-direction-type-led/H006` “After Dark poster direction - Type-led” (poster-direction-type-led.pdf) shows no sponsor logo or corporate partner mark anywhere on the poster.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-type-led/H007` Night Ferry is credited on “After Dark poster direction - Type-led” (poster-direction-type-led.pdf) as two words, “NIGHT FERRY”, never run together.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-type-led/H008` On “After Dark poster direction - Type-led” (poster-direction-type-led.pdf), Sable Quartet is billed with the date 25 Sep.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-type-led/H009` On “After Dark poster direction - Type-led” (poster-direction-type-led.pdf), The Blue Hour is billed with the date 3 Oct.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-type-led/H010` Any weekday shown with Koa's 16 Oct date on “After Dark poster direction - Type-led” (poster-direction-type-led.pdf) is Friday (FRI), not Saturday as umbra_billing_autumn.txt prints it.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-type-led/H011` Apart from Koa's 16 Oct, checked separately, every weekday shown beside a date on “After Dark poster direction - Type-led” (poster-direction-type-led.pdf) is correct for 2026; for example, 25 Sep 2026 is a Friday.
+  Measure: Look up each printed date in a 2026 calendar and confirm the weekday printed beside it matches.
 - `LAYOUT-12/poster-direction-type-led/H012` On “After Dark poster direction - Type-led” (poster-direction-type-led.pdf), Sable Quartet is billed with the support act Odette Lang.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-type-led/H013` On “After Dark poster direction - Type-led” (poster-direction-type-led.pdf), The Blue Hour is billed with the support act Coral Sound.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-type-led/H014` Every support act on “After Dark poster direction - Type-led” (poster-direction-type-led.pdf) is set smaller than the act name it supports.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-type-led/H015` The licence line on “After Dark poster direction - Type-led” (poster-direction-type-led.pdf) reads exactly, in any letter case: “Umbra Loft, 14 Foundry Court (basement), Providence RI. Licensed under City of Providence Entertainment Licence PVD-2021-0846.”
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-type-led/H016` The accessibility line on “After Dark poster direction - Type-led” (poster-direction-type-led.pdf) reads exactly, in any letter case: “Step-free access to the main room is via the mill loading entrance on request; please contact the venue in advance.”
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-type-led/H017` No SABLE QUARTET lettering, such as the shirt print in umbra_wordmark_nightferry.jpg, stands for Night Ferry on “After Dark poster direction - Type-led” (poster-direction-type-led.pdf).
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-type-led/H018` No wordmark, stencil or distressed lettering drawn, generated or otherwise made for Night Ferry appears on “After Dark poster direction - Type-led” (poster-direction-type-led.pdf).
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-type-led/H019` On “After Dark poster direction - Type-led” (poster-direction-type-led.pdf), The Blue Hour, Vespertine, The Eastons, Koa and Laurel and the Dive are billed in type only, with no wordmark.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-type-led/H022` Every letter of SABLE QUARTET in the Sable Quartet wordmark on “After Dark poster direction - Type-led” (poster-direction-type-led.pdf) is complete, as in umbra_sable_wordmark_transparent.png, with none missing or partly erased.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-type-led/H023` The Sable Quartet wordmark on “After Dark poster direction - Type-led” (poster-direction-type-led.pdf) keeps the letter proportions of umbra_sable_wordmark_transparent.png, without stretching.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-type-led/H024` The Meridian Brass wordmark on “After Dark poster direction - Type-led” (poster-direction-type-led.pdf) uses the MERIDIAN BRASS letter shapes of umbra_meridian_wordmark_transparent.png, not lettering retyped in a font.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-type-led/H025` The Meridian Brass wordmark on “After Dark poster direction - Type-led” (poster-direction-type-led.pdf) keeps the letter proportions of umbra_meridian_wordmark_transparent.png, without stretching.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-type-led/H026` No knit texture, like the sweater weave in umbra_wordmark_meridian.jpg, shows around or between the letters of the Meridian Brass wordmark on “After Dark poster direction - Type-led” (poster-direction-type-led.pdf).
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-type-led/H027` Any performance photograph on “After Dark poster direction - Type-led” (poster-direction-type-led.pdf) is one of the six supplied archive frames, umbra_archive_night_01.jpg to umbra_archive_night_06.jpg, not stock or generated.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-type-led/H028` Every performance photograph on “After Dark poster direction - Type-led” (poster-direction-type-led.pdf) is used as shot, with nothing generated, extended, added or removed in it.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-type-led/H029` Any performance photograph on “After Dark poster direction - Type-led” (poster-direction-type-led.pdf) is reproduced in two palette colours, not in full colour.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-type-led/H030` Wherever umbra_archive_night_02.jpg or umbra_archive_night_05.jpg appears on “After Dark poster direction - Type-led” (poster-direction-type-led.pdf), its clipped white areas stay flat, with no face, clothing or instrument detail invented in them.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-type-led/H031` Viewed at 100% on “After Dark poster direction - Type-led” (poster-direction-type-led.pdf), no performance photograph shows motion smear such as the streaked trumpet bell and right hand of umbra_archive_night_06.jpg.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-type-led/H036` Every act name on “After Dark poster direction - Type-led” (poster-direction-type-led.pdf), support acts excepted, is Bone White #E9E4D8.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-12/poster-direction-type-led/H037` On “After Dark poster direction - Type-led” (poster-direction-type-led.pdf), every date line is letterspaced more open than the act names.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-type-led/H038` No line of body or billing text on “After Dark poster direction - Type-led” (poster-direction-type-led.pdf) runs longer than 65 characters.
+  Measure: Find the longest line of body or billing text and count its characters, spaces included, by hand or in a text tool.
 - `LAYOUT-12/poster-direction-type-led/H039` Apart from photographs, every type, ground, panel, rule and wordmark colour on “After Dark poster direction - Type-led” (poster-direction-type-led.pdf) is one of #0E0E10, #2A2A2E, #E4863B, #3F7C8C, #E9E4D8 or #8E2B24.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-12/poster-direction-type-led/H041` Every non-photographic ground and panel on “After Dark poster direction - Type-led” (poster-direction-type-led.pdf) is Pitch #0E0E10 or Ash #2A2A2E.
-- `LAYOUT-12/poster-direction-type-led/H042` Nothing on “After Dark poster direction - Type-led” (poster-direction-type-led.pdf) uses a tint, transparency, gradient, glow or shadow, and no photograph carries a scrim or overlay.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
+- `LAYOUT-12/poster-direction-type-led/H042` Nothing on “After Dark poster direction - Type-led” (poster-direction-type-led.pdf) uses a tint, transparency, gradient, glow or shadow.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-type-led/H043` On “After Dark poster direction - Type-led” (poster-direction-type-led.pdf), Cold Signal #3F7C8C and Blood #8E2B24 appear only as hairlines, dividers or photo treatment.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-12/release-post-r002/H015` The photograph on “Night release post - 2026-09-25” (release-post-r002.png) is used as shot, with nothing generated, extended, added or removed in it.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r002/H016` Any weekday shown with the date on “Night release post - 2026-09-25” (release-post-r002.png) is Friday (FRI).
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r002/H017` At full 1080 x 1350 size, every letter of the act name on “Night release post - 2026-09-25” (release-post-r002.png) is inside the frame, none clipped.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r002/H018` The photograph on “Night release post - 2026-09-25” (release-post-r002.png) is reproduced in two palette colours, not in full colour.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r002/H019` Wherever umbra_archive_night_02.jpg or umbra_archive_night_05.jpg appears on “Night release post - 2026-09-25” (release-post-r002.png), its clipped white areas stay flat, with no face, clothing or instrument detail invented in them.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r002/H021` Every letter of SABLE QUARTET in the Sable Quartet wordmark on “Night release post - 2026-09-25” (release-post-r002.png) is complete, as in umbra_sable_wordmark_transparent.png, with none missing or partly erased.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r002/H022` The Sable Quartet wordmark on “Night release post - 2026-09-25” (release-post-r002.png) keeps the letter proportions of umbra_sable_wordmark_transparent.png, without stretching.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r002/H026` The act name “Sable Quartet” on “Night release post - 2026-09-25” (release-post-r002.png) is Bone White #E9E4D8.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-12/release-post-r002/H027` On “Night release post - 2026-09-25” (release-post-r002.png), the date line is letterspaced more open than the act name.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r002/H029` “Night release post - 2026-09-25” (release-post-r002.png) shows no sponsor logo or corporate partner mark anywhere.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r002/H030` Apart from the photograph, every type, ground, panel, rule and wordmark colour on “Night release post - 2026-09-25” (release-post-r002.png) is one of #0E0E10, #2A2A2E, #E4863B, #3F7C8C, #E9E4D8 or #8E2B24.
-- `LAYOUT-12/release-post-r002/H032` All colour on “Night release post - 2026-09-25” (release-post-r002.png) is solid at 100% opacity, with no tint, transparency, gradient, glow or shadow, and no scrim or overlay on the photograph.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
+- `LAYOUT-12/release-post-r002/H032` All colour on “Night release post - 2026-09-25” (release-post-r002.png) is solid at 100% opacity, with no tint, transparency, gradient, glow or shadow.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r002/H033` On “Night release post - 2026-09-25” (release-post-r002.png), Cold Signal #3F7C8C and Blood #8E2B24 appear only as hairlines, dividers or photo treatment.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-12/poster-direction-type-led/R13-supporting-billing-family` Every support act and billing line on “After Dark poster direction - Type-led” (poster-direction-type-led.pdf) is set in Archivo Narrow Regular.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-type-led/R13-door-time-information-family` If a door time appears on “After Dark poster direction - Type-led” (poster-direction-type-led.pdf), it is set in Archivo Narrow SemiBold.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-type-led/R13-koa-line` The act name KOA is set on one line on “After Dark poster direction - Type-led” (poster-direction-type-led.pdf).
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-type-led/R13-logo-sable` The Sable Quartet wordmark on “After Dark poster direction - Type-led” (poster-direction-type-led.pdf) uses the letter shapes of umbra_sable_wordmark_transparent.png, not lettering retyped in a font.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-image-led/R13-supporting-billing-family` Every support act and billing line on “After Dark poster direction - Image-led” (poster-direction-image-led.pdf) is set in Archivo Narrow Regular.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-image-led/R13-door-time-information-family` If a door time appears on “After Dark poster direction - Image-led” (poster-direction-image-led.pdf), it is set in Archivo Narrow SemiBold.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-image-led/R13-koa-line` The act name KOA is set on one line on “After Dark poster direction - Image-led” (poster-direction-image-led.pdf).
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-image-led/R13-logo-sable` The Sable Quartet wordmark on “After Dark poster direction - Image-led” (poster-direction-image-led.pdf) uses the letter shapes of umbra_sable_wordmark_transparent.png, not lettering retyped in a font.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-graphic-led/R13-supporting-billing-family` Every support act and billing line on “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf) is set in Archivo Narrow Regular.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-graphic-led/R13-door-time-information-family` If a door time appears on “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf), it is set in Archivo Narrow SemiBold.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-graphic-led/R13-koa-line` The act name KOA is set on one line on “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf).
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-graphic-led/R13-logo-sable` The Sable Quartet wordmark on “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf) uses the letter shapes of umbra_sable_wordmark_transparent.png, not lettering retyped in a font.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/promoter-deck/R13-supporting-billing-family` Body, billing and table text in “Promoter pitch deck” (promoter-deck.pdf) is set in Archivo Narrow Regular.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/promoter-deck/R13-door-time-information-family` If a door time appears in “Promoter pitch deck” (promoter-deck.pdf), it is set in Archivo Narrow SemiBold.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/promoter-deck/R13-koa-line` If KOA is typeset in “Promoter pitch deck” (promoter-deck.pdf), it is set on one line.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r002/R13-supporting-billing-family` The support line “with Odette Lang” on “Night release post - 2026-09-25” (release-post-r002.png) is set in Archivo Narrow Regular.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r002/R13-door-time-information-family` The door line on “Night release post - 2026-09-25” (release-post-r002.png) is set in Archivo Narrow SemiBold.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r002/R13-logo-sable` The Sable Quartet wordmark on “Night release post - 2026-09-25” (release-post-r002.png) uses the letter shapes of umbra_sable_wordmark_transparent.png, not lettering retyped in a font.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r003/R13-supporting-billing-family` The support line “with The Tin Ravens” on “Night release post - 2026-09-26” (release-post-r003.png) is set in Archivo Narrow Regular.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r003/R13-door-time-information-family` The door line on “Night release post - 2026-09-26” (release-post-r003.png) is set in Archivo Narrow SemiBold.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r004/R13-supporting-billing-family` The support line “with Junior Vale” on “Night release post - 2026-10-02” (release-post-r004.png) is set in Archivo Narrow Regular.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r004/R13-door-time-information-family` The door line on “Night release post - 2026-10-02” (release-post-r004.png) is set in Archivo Narrow SemiBold.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r005/R13-supporting-billing-family` The support line “with Coral Sound” on “Night release post - 2026-10-03” (release-post-r005.png) is set in Archivo Narrow Regular.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r005/R13-door-time-information-family` The door line on “Night release post - 2026-10-03” (release-post-r005.png) is set in Archivo Narrow SemiBold.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r006/R13-supporting-billing-family` The support line “with Coral Sound” on “Night release post - 2026-10-04” (release-post-r006.png) is set in Archivo Narrow Regular.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r006/R13-door-time-information-family` The door line on “Night release post - 2026-10-04” (release-post-r006.png) is set in Archivo Narrow SemiBold.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r007/R13-supporting-billing-family` The support line “with Marlow Reyes” on “Night release post - 2026-10-09” (release-post-r007.png) is set in Archivo Narrow Regular.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r007/R13-door-time-information-family` The door line on “Night release post - 2026-10-09” (release-post-r007.png) is set in Archivo Narrow SemiBold.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r008/R13-supporting-billing-family` The support line “with Half Light” on “Night release post - 2026-10-10” (release-post-r008.png) is set in Archivo Narrow Regular.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r008/R13-door-time-information-family` The door line on “Night release post - 2026-10-10” (release-post-r008.png) is set in Archivo Narrow SemiBold.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r009/R13-supporting-billing-family` The support line “with The Undertow” on “Night release post - 2026-10-16” (release-post-r009.png) is set in Archivo Narrow Regular.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r009/R13-door-time-information-family` The door line on “Night release post - 2026-10-16” (release-post-r009.png) is set in Archivo Narrow SemiBold.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r009/R13-koa-line` The act name KOA is set on one line on “Night release post - 2026-10-16” (release-post-r009.png).
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r010/R13-supporting-billing-family` The support line “with Ferro” on “Night release post - 2026-10-17” (release-post-r010.png) is set in Archivo Narrow Regular.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r010/R13-door-time-information-family` The door line on “Night release post - 2026-10-17” (release-post-r010.png) is set in Archivo Narrow SemiBold.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-type-led/R13-act-name-text-family` Every act name on “After Dark poster direction - Type-led” (poster-direction-type-led.pdf), support acts excepted, is set in Sora ExtraBold.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-image-led/R13-act-name-text-family` Every act name on “After Dark poster direction - Image-led” (poster-direction-image-led.pdf), support acts excepted, is set in Sora ExtraBold.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-graphic-led/R13-act-name-text-family` Every act name on “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf), support acts excepted, is set in Sora ExtraBold.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/promoter-deck/R13-act-name-text-family` Any act name typeset in “Promoter pitch deck” (promoter-deck.pdf) is set in Sora ExtraBold.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r002/R13-act-name-text-family` The act name “Sable Quartet” on “Night release post - 2026-09-25” (release-post-r002.png) is set in Sora ExtraBold.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r003/R13-act-name-text-family` The act name “Meridian Brass” on “Night release post - 2026-09-26” (release-post-r003.png) is set in Sora ExtraBold.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r004/R13-act-name-text-family` The act name “Night Ferry” on “Night release post - 2026-10-02” (release-post-r004.png) is set in Sora ExtraBold.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r005/R13-act-name-text-family` The act name “The Blue Hour” on “Night release post - 2026-10-03” (release-post-r005.png) is set in Sora ExtraBold.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r006/R13-act-name-text-family` The act name “The Blue Hour” on “Night release post - 2026-10-04” (release-post-r006.png) is set in Sora ExtraBold.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r007/R13-act-name-text-family` The act name “Vespertine” on “Night release post - 2026-10-09” (release-post-r007.png) is set in Sora ExtraBold.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r008/R13-act-name-text-family` The act name “The Eastons” on “Night release post - 2026-10-10” (release-post-r008.png) is set in Sora ExtraBold.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r009/R13-act-name-text-family` The act name “Koa” on “Night release post - 2026-10-16” (release-post-r009.png) is set in Sora ExtraBold.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r010/R13-act-name-text-family` The act name “Laurel and the Dive” on “Night release post - 2026-10-17” (release-post-r010.png) is set in Sora ExtraBold.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-type-led/H044` Every date line on “After Dark poster direction - Type-led” (poster-direction-type-led.pdf) is Sodium #E4863B.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-12/poster-direction-type-led/H045` On “After Dark poster direction - Type-led” (poster-direction-type-led.pdf), each date line sits directly above its act name.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-type-led/H046` If a door line appears on “After Dark poster direction - Type-led” (poster-direction-type-led.pdf), it is letterspaced more open than the support acts.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-type-led/H047` Every title, support, door, set, body, billing and fine-print line on “After Dark poster direction - Type-led” (poster-direction-type-led.pdf) is Bone White #E9E4D8.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-12/poster-direction-type-led/H048` Cold Signal #3F7C8C and Blood #8E2B24 together cover no more than 5% of the non-photographic area of “After Dark poster direction - Type-led” (poster-direction-type-led.pdf).
+  Measure: Measure, do not estimate. On a measurement copy, mask the named area; exclude photographs and transparent canvas. Count the selected accent-colour pixels and divide by all pixels in that mask. Include text unless the condition excludes it. Test each PDF page or held video frame separately. Yes only when the unrounded percentage is at or below the stated limit. Use the linked measurement guide for rasterisation and colour matching. Each RGB channel must be within 5 of a selected palette colour.
 - `LAYOUT-12/poster-direction-type-led/H049` Any performance photograph on “After Dark poster direction - Type-led” (poster-direction-type-led.pdf) shows visible grain.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-type-led/H050` On “After Dark poster direction - Type-led” (poster-direction-type-led.pdf), typography is the dominant visual element, more prominent than any photograph or graphic shape.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-type-led/H051` The Sable Quartet wordmark appears on “After Dark poster direction - Type-led” (poster-direction-type-led.pdf) alongside the typeset act name SABLE QUARTET, not in place of it.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-type-led/H052` The Sable Quartet wordmark on “After Dark poster direction - Type-led” (poster-direction-type-led.pdf) is inked in solid Bone White #E9E4D8.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-12/poster-direction-type-led/H053` The Meridian Brass wordmark appears on “After Dark poster direction - Type-led” (poster-direction-type-led.pdf) alongside the typeset act name MERIDIAN BRASS, not in place of it.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-type-led/H054` The Meridian Brass wordmark on “After Dark poster direction - Type-led” (poster-direction-type-led.pdf) is inked in solid Bone White #E9E4D8.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-12/poster-direction-type-led/H055` Every date line on “After Dark poster direction - Type-led” (poster-direction-type-led.pdf) is set in Sora ExtraBold.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-type-led/H056` “After Dark poster direction - Type-led” (poster-direction-type-led.pdf) carries a compact series-title stack, such as “UMBRA / LOFT”.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-type-led/H057` On “After Dark poster direction - Type-led” (poster-direction-type-led.pdf), every act name is set smaller than the series title.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-type-led/H058` Every support act on “After Dark poster direction - Type-led” (poster-direction-type-led.pdf) is prefixed “with”, as in “with Odette Lang”.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-type-led/H059` Pitch #0E0E10 is the main ground of “After Dark poster direction - Type-led” (poster-direction-type-led.pdf).
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-12/poster-direction-type-led/H060` No merchandise photo (umbra_wordmark_sable.jpg, umbra_wordmark_meridian.jpg or umbra_wordmark_nightferry.jpg) is placed as an image on “After Dark poster direction - Type-led” (poster-direction-type-led.pdf).
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-type-led/H061` The licence line on “After Dark poster direction - Type-led” (poster-direction-type-led.pdf) is set in Archivo Narrow Regular.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-type-led/H062` No caption or credit on “After Dark poster direction - Type-led” (poster-direction-type-led.pdf) identifies a pictured performer as one of the billed acts.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-image-led/H043` Every date line on “After Dark poster direction - Image-led” (poster-direction-image-led.pdf) is Sodium #E4863B.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-12/poster-direction-image-led/H044` On “After Dark poster direction - Image-led” (poster-direction-image-led.pdf), each date line sits directly above its act name.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-image-led/H045` If a door line appears on “After Dark poster direction - Image-led” (poster-direction-image-led.pdf), it is letterspaced more open than the support acts.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-image-led/H046` Every title, support, door, set, body, billing and fine-print line on “After Dark poster direction - Image-led” (poster-direction-image-led.pdf) is Bone White #E9E4D8.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-12/poster-direction-image-led/H047` Cold Signal #3F7C8C and Blood #8E2B24 together cover no more than 5% of the non-photographic area of “After Dark poster direction - Image-led” (poster-direction-image-led.pdf).
+  Measure: Measure, do not estimate. On a measurement copy, mask the named area; exclude photographs and transparent canvas. Count the selected accent-colour pixels and divide by all pixels in that mask. Include text unless the condition excludes it. Test each PDF page or held video frame separately. Yes only when the unrounded percentage is at or below the stated limit. Use the linked measurement guide for rasterisation and colour matching. Each RGB channel must be within 5 of a selected palette colour.
 - `LAYOUT-12/poster-direction-image-led/H048` The photograph on “After Dark poster direction - Image-led” (poster-direction-image-led.pdf) shows visible grain.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-image-led/H049` On “After Dark poster direction - Image-led” (poster-direction-image-led.pdf), a treated archive photograph is the dominant visual element, more prominent than any type block or graphic shape.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-image-led/H050` The Sable Quartet wordmark appears on “After Dark poster direction - Image-led” (poster-direction-image-led.pdf) alongside the typeset act name SABLE QUARTET, not in place of it.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-image-led/H051` The Sable Quartet wordmark on “After Dark poster direction - Image-led” (poster-direction-image-led.pdf) is inked in solid Bone White #E9E4D8.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-12/poster-direction-image-led/H052` The Meridian Brass wordmark appears on “After Dark poster direction - Image-led” (poster-direction-image-led.pdf) alongside the typeset act name MERIDIAN BRASS, not in place of it.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-image-led/H053` The Meridian Brass wordmark on “After Dark poster direction - Image-led” (poster-direction-image-led.pdf) is inked in solid Bone White #E9E4D8.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-12/poster-direction-image-led/H054` Every date line on “After Dark poster direction - Image-led” (poster-direction-image-led.pdf) is set in Sora ExtraBold.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-image-led/H055` “After Dark poster direction - Image-led” (poster-direction-image-led.pdf) carries a compact series-title stack, such as “UMBRA / LOFT”.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-image-led/H056` On “After Dark poster direction - Image-led” (poster-direction-image-led.pdf), every act name is set smaller than the series title.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-image-led/H057` Every support act on “After Dark poster direction - Image-led” (poster-direction-image-led.pdf) is prefixed “with”, as in “with Odette Lang”.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-image-led/H058` Pitch #0E0E10 is the main ground of “After Dark poster direction - Image-led” (poster-direction-image-led.pdf).
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-12/poster-direction-image-led/H059` No merchandise photo (umbra_wordmark_sable.jpg, umbra_wordmark_meridian.jpg or umbra_wordmark_nightferry.jpg) is placed as an image on “After Dark poster direction - Image-led” (poster-direction-image-led.pdf).
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-image-led/H060` The licence line on “After Dark poster direction - Image-led” (poster-direction-image-led.pdf) is set in Archivo Narrow Regular.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-image-led/H061` No caption or credit on “After Dark poster direction - Image-led” (poster-direction-image-led.pdf) identifies a pictured performer as one of the billed acts.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-graphic-led/H043` Every date line on “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf) is Sodium #E4863B.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-12/poster-direction-graphic-led/H044` On “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf), each date line sits directly above its act name.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-graphic-led/H045` If a door line appears on “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf), it is letterspaced more open than the support acts.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-graphic-led/H046` Every title, support, door, set, body, billing and fine-print line on “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf) is Bone White #E9E4D8.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-12/poster-direction-graphic-led/H047` Cold Signal #3F7C8C and Blood #8E2B24 together cover no more than 5% of the non-photographic area of “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf).
+  Measure: Measure, do not estimate. On a measurement copy, mask the named area; exclude photographs and transparent canvas. Count the selected accent-colour pixels and divide by all pixels in that mask. Include text unless the condition excludes it. Test each PDF page or held video frame separately. Yes only when the unrounded percentage is at or below the stated limit. Use the linked measurement guide for rasterisation and colour matching. Each RGB channel must be within 5 of a selected palette colour.
 - `LAYOUT-12/poster-direction-graphic-led/H048` Any performance photograph on “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf) shows visible grain.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-graphic-led/H049` On “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf), solid panels, shapes or rules are the dominant visual element, more prominent than any type block or photograph.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-graphic-led/H050` The Sable Quartet wordmark appears on “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf) alongside the typeset act name SABLE QUARTET, not in place of it.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-graphic-led/H051` The Sable Quartet wordmark on “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf) is inked in solid Bone White #E9E4D8.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-12/poster-direction-graphic-led/H052` The Meridian Brass wordmark appears on “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf) alongside the typeset act name MERIDIAN BRASS, not in place of it.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-graphic-led/H053` The Meridian Brass wordmark on “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf) is inked in solid Bone White #E9E4D8.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-12/poster-direction-graphic-led/H054` Every date line on “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf) is set in Sora ExtraBold.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-graphic-led/H055` “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf) carries a compact series-title stack, such as “UMBRA / LOFT”.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-graphic-led/H056` On “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf), every act name is set smaller than the series title.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-graphic-led/H057` Every support act on “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf) is prefixed “with”, as in “with Odette Lang”.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-graphic-led/H058` Pitch #0E0E10 is the main ground of “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf).
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-12/poster-direction-graphic-led/H059` No merchandise photo (umbra_wordmark_sable.jpg, umbra_wordmark_meridian.jpg or umbra_wordmark_nightferry.jpg) is placed as an image on “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf).
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-graphic-led/H060` The licence line on “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf) is set in Archivo Narrow Regular.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-graphic-led/H061` No caption or credit on “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf) identifies a pictured performer as one of the billed acts.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/promoter-deck/H036` The Image-led design shown in “Promoter pitch deck” (promoter-deck.pdf) is the one delivered as poster-direction-image-led.pdf.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/promoter-deck/H037` The Graphic-led design shown in “Promoter pitch deck” (promoter-deck.pdf) is the one delivered as poster-direction-graphic-led.pdf.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/promoter-deck/H038` Any date line typeset in “Promoter pitch deck” (promoter-deck.pdf) outside the poster images is Sodium #E4863B.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-12/promoter-deck/H039` Any date line typeset in “Promoter pitch deck” (promoter-deck.pdf) outside the poster images sits directly above its act name.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/promoter-deck/H040` Any door line in “Promoter pitch deck” (promoter-deck.pdf) is letterspaced more open than the body text.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/promoter-deck/H041` Outside the poster images, every heading, support, billing, body, table, chart-label, door, set and fine-print line in “Promoter pitch deck” (promoter-deck.pdf) is Bone White #E9E4D8.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-12/promoter-deck/H042` Outside the poster images, Cold Signal #3F7C8C and Blood #8E2B24 together cover no more than 5% of the non-photographic area of “Promoter pitch deck” (promoter-deck.pdf).
+  Measure: Measure, do not estimate. On a measurement copy, mask the named area; exclude photographs and transparent canvas. Count the selected accent-colour pixels and divide by all pixels in that mask. Include text unless the condition excludes it. Test each PDF page or held video frame separately. Yes only when the unrounded percentage is at or below the stated limit. Use the linked measurement guide for rasterisation and colour matching. Exclude the embedded poster previews; assess the surrounding deck graphics on each page. Each RGB channel must be within 5 of a selected palette colour.
 - `LAYOUT-12/promoter-deck/H043` Every performance photograph in “Promoter pitch deck” (promoter-deck.pdf) shows visible grain.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/promoter-deck/H044` Pitch #0E0E10 is the main ground of every page of “Promoter pitch deck” (promoter-deck.pdf).
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-12/promoter-deck/H045` No merchandise photo (umbra_wordmark_sable.jpg, umbra_wordmark_meridian.jpg or umbra_wordmark_nightferry.jpg) is placed as an image in “Promoter pitch deck” (promoter-deck.pdf).
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/promoter-deck/H046` “Promoter pitch deck” (promoter-deck.pdf) states which of the three poster directions is adapted for the nine release posts.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/promoter-deck/H047` “Promoter pitch deck” (promoter-deck.pdf) gives a reason for choosing the direction adapted for the release posts.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/promoter-deck/H048` The draw chart in “Promoter pitch deck” (promoter-deck.pdf) has a truthful scale: bar or point positions are in proportion to the six draw values.
+  Measure: Measure each chart mark's height above zero with a PDF ruler; heights must keep the value ratios, e.g. Dec 224 about 1.6 times Jan 142.
 - `LAYOUT-12/promoter-deck/H049` Any date line in “Promoter pitch deck” (promoter-deck.pdf) is set in Sora ExtraBold.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/promoter-deck/H050` If a series title such as “UMBRA / LOFT” appears in “Promoter pitch deck” (promoter-deck.pdf), it is set in Sora ExtraBold.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/promoter-deck/H051` No caption or credit in “Promoter pitch deck” (promoter-deck.pdf) identifies a pictured performer as one of the billed acts.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/promoter-deck/H052` Any Sable Quartet wordmark placed in “Promoter pitch deck” (promoter-deck.pdf) outside the poster images is inked in solid Bone White #E9E4D8.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-12/release-post-r002/H034` Cold Signal #3F7C8C and Blood #8E2B24 together cover no more than 5% of the non-photographic area of “Night release post - 2026-09-25” (release-post-r002.png).
+  Measure: Measure, do not estimate. On a measurement copy, mask the named area; exclude photographs and transparent canvas. Count the selected accent-colour pixels and divide by all pixels in that mask. Include text unless the condition excludes it. Test each PDF page or held video frame separately. Yes only when the unrounded percentage is at or below the stated limit. Use the linked measurement guide for rasterisation and colour matching. Each RGB channel must be within 5 of a selected palette colour.
 - `LAYOUT-12/release-post-r002/H035` The photograph on “Night release post - 2026-09-25” (release-post-r002.png) shows visible grain.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r002/H036` The date line on “Night release post - 2026-09-25” (release-post-r002.png) is Sodium #E4863B.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-12/release-post-r002/H037` The date line on “Night release post - 2026-09-25” (release-post-r002.png) sits directly above the act name.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r002/H038` On “Night release post - 2026-09-25” (release-post-r002.png), the door line is letterspaced more open than the support line.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r002/H039` Every title, support, door, set, body and fine-print line on “Night release post - 2026-09-25” (release-post-r002.png) is Bone White #E9E4D8.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-12/release-post-r002/H040` Pitch #0E0E10 is the main ground of “Night release post - 2026-09-25” (release-post-r002.png).
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-12/release-post-r002/H041` The date line on “Night release post - 2026-09-25” (release-post-r002.png) is set in Sora ExtraBold.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r002/H042` “Night release post - 2026-09-25” (release-post-r002.png) carries a compact series-title stack, such as “UMBRA / LOFT”.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r002/H043` The advance price on “Night release post - 2026-09-25” (release-post-r002.png) is set in Archivo Narrow Regular.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r002/H044` If the set time on “Night release post - 2026-09-25” (release-post-r002.png) sits apart from the door line, it is set in Archivo Narrow Regular.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r002/H045` No line of body text on “Night release post - 2026-09-25” (release-post-r002.png) runs longer than 65 characters.
+  Measure: Zoom in, find the longest line of body text and count its characters by hand, spaces included.
 - `LAYOUT-12/release-post-r002/H046` No merchandise photo (umbra_wordmark_sable.jpg, umbra_wordmark_meridian.jpg or umbra_wordmark_nightferry.jpg) is placed as an image on “Night release post - 2026-09-25” (release-post-r002.png).
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r002/H047` No caption or credit on “Night release post - 2026-09-25” (release-post-r002.png) identifies the pictured performer as Sable Quartet or any other billed act.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r002/H048` The act name on “Night release post - 2026-09-25” (release-post-r002.png) is spelled “SABLE QUARTET”, as credited in umbra_billing_autumn.txt, in any letter case.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r002/H049` The Sable Quartet wordmark appears on “Night release post - 2026-09-25” (release-post-r002.png) alongside the typeset act name “Sable Quartet”, not in place of it.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r002/H050` The Sable Quartet wordmark on “Night release post - 2026-09-25” (release-post-r002.png) is inked in solid Bone White #E9E4D8.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-12/release-post-r003/H021` Apart from the photograph, every type, ground, panel, rule and wordmark colour on “Night release post - 2026-09-26” (release-post-r003.png) is one of #0E0E10, #2A2A2E, #E4863B, #3F7C8C, #E9E4D8 or #8E2B24.
-- `LAYOUT-12/release-post-r003/H022` All colour on “Night release post - 2026-09-26” (release-post-r003.png) is solid at 100% opacity, with no tint, transparency, gradient, glow or shadow, and no scrim or overlay on the photograph.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
+- `LAYOUT-12/release-post-r003/H022` All colour on “Night release post - 2026-09-26” (release-post-r003.png) is solid at 100% opacity, with no tint, transparency, gradient, glow or shadow.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r003/H023` On “Night release post - 2026-09-26” (release-post-r003.png), Cold Signal #3F7C8C and Blood #8E2B24 appear only as hairlines, dividers or photo treatment.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-12/release-post-r003/H024` The photograph on “Night release post - 2026-09-26” (release-post-r003.png) is reproduced in two palette colours, not in full colour.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r003/H025` The act name “Meridian Brass” on “Night release post - 2026-09-26” (release-post-r003.png) is Bone White #E9E4D8.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-12/release-post-r003/H026` On “Night release post - 2026-09-26” (release-post-r003.png), the date line is letterspaced more open than the act name.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r003/H027` Every non-photographic ground and panel on “Night release post - 2026-09-26” (release-post-r003.png) is Pitch #0E0E10 or Ash #2A2A2E.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-12/release-post-r003/H028` Cold Signal #3F7C8C and Blood #8E2B24 together cover no more than 5% of the non-photographic area of “Night release post - 2026-09-26” (release-post-r003.png).
+  Measure: Measure, do not estimate. On a measurement copy, mask the named area; exclude photographs and transparent canvas. Count the selected accent-colour pixels and divide by all pixels in that mask. Include text unless the condition excludes it. Test each PDF page or held video frame separately. Yes only when the unrounded percentage is at or below the stated limit. Use the linked measurement guide for rasterisation and colour matching. Each RGB channel must be within 5 of a selected palette colour.
 - `LAYOUT-12/release-post-r003/H029` The photograph on “Night release post - 2026-09-26” (release-post-r003.png) shows visible grain.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r003/H030` The photograph's two colours on “Night release post - 2026-09-26” (release-post-r003.png) are the same pair as on release-post-r002.png.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r003/H031` The date line on “Night release post - 2026-09-26” (release-post-r003.png) is Sodium #E4863B.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-12/release-post-r003/H032` The date line on “Night release post - 2026-09-26” (release-post-r003.png) sits directly above the act name.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r003/H033` On “Night release post - 2026-09-26” (release-post-r003.png), the door line is letterspaced more open than the support line.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r003/H034` Every title, support, door, set, body and fine-print line on “Night release post - 2026-09-26” (release-post-r003.png) is Bone White #E9E4D8.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-12/release-post-r003/H035` Pitch #0E0E10 is the main ground of “Night release post - 2026-09-26” (release-post-r003.png).
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-12/release-post-r003/H036` The date line on “Night release post - 2026-09-26” (release-post-r003.png) is set in Sora ExtraBold.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r003/H037` “Night release post - 2026-09-26” (release-post-r003.png) carries a compact series-title stack, such as “UMBRA / LOFT”.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r003/H038` The advance price on “Night release post - 2026-09-26” (release-post-r003.png) is set in Archivo Narrow Regular.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r003/H039` If the set time on “Night release post - 2026-09-26” (release-post-r003.png) sits apart from the door line, it is set in Archivo Narrow Regular.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r003/H040` No line of body text on “Night release post - 2026-09-26” (release-post-r003.png) runs longer than 65 characters.
+  Measure: Zoom in, find the longest line of body text and count its characters by hand, spaces included.
 - `LAYOUT-12/release-post-r003/H041` No merchandise photo (umbra_wordmark_sable.jpg, umbra_wordmark_meridian.jpg or umbra_wordmark_nightferry.jpg) is placed as an image on “Night release post - 2026-09-26” (release-post-r003.png).
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r003/H042` No caption or credit on “Night release post - 2026-09-26” (release-post-r003.png) identifies the pictured performer as Meridian Brass or any other billed act.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r003/H043` The act name on “Night release post - 2026-09-26” (release-post-r003.png) is spelled “MERIDIAN BRASS”, as credited in umbra_billing_autumn.txt, in any letter case.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r003/H044` The Meridian Brass wordmark appears on “Night release post - 2026-09-26” (release-post-r003.png) alongside the typeset act name “Meridian Brass”, not in place of it.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r004/H031` Cold Signal #3F7C8C and Blood #8E2B24 together cover no more than 5% of the non-photographic area of “Night release post - 2026-10-02” (release-post-r004.png).
+  Measure: Measure, do not estimate. On a measurement copy, mask the named area; exclude photographs and transparent canvas. Count the selected accent-colour pixels and divide by all pixels in that mask. Include text unless the condition excludes it. Test each PDF page or held video frame separately. Yes only when the unrounded percentage is at or below the stated limit. Use the linked measurement guide for rasterisation and colour matching. Each RGB channel must be within 5 of a selected palette colour.
 - `LAYOUT-12/release-post-r004/H032` The photograph on “Night release post - 2026-10-02” (release-post-r004.png) shows visible grain.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r004/H033` The photograph's two colours on “Night release post - 2026-10-02” (release-post-r004.png) are the same pair as on release-post-r002.png.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r004/H034` The date line on “Night release post - 2026-10-02” (release-post-r004.png) is Sodium #E4863B.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-12/release-post-r004/H035` The date line on “Night release post - 2026-10-02” (release-post-r004.png) sits directly above the act name.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r004/H036` On “Night release post - 2026-10-02” (release-post-r004.png), the door line is letterspaced more open than the support line.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r004/H037` Every title, support, door, set, body and fine-print line on “Night release post - 2026-10-02” (release-post-r004.png) is Bone White #E9E4D8.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-12/release-post-r004/H038` Pitch #0E0E10 is the main ground of “Night release post - 2026-10-02” (release-post-r004.png).
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-12/release-post-r004/H039` The date line on “Night release post - 2026-10-02” (release-post-r004.png) is set in Sora ExtraBold.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r004/H040` “Night release post - 2026-10-02” (release-post-r004.png) carries a compact series-title stack, such as “UMBRA / LOFT”.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r004/H041` The advance price on “Night release post - 2026-10-02” (release-post-r004.png) is set in Archivo Narrow Regular.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r004/H042` If the set time on “Night release post - 2026-10-02” (release-post-r004.png) sits apart from the door line, it is set in Archivo Narrow Regular.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r004/H043` No line of body text on “Night release post - 2026-10-02” (release-post-r004.png) runs longer than 65 characters.
+  Measure: Zoom in, find the longest line of body text and count its characters by hand, spaces included.
 - `LAYOUT-12/release-post-r004/H044` No merchandise photo (umbra_wordmark_sable.jpg, umbra_wordmark_meridian.jpg or umbra_wordmark_nightferry.jpg) is placed as an image on “Night release post - 2026-10-02” (release-post-r004.png).
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r004/H045` No caption or credit on “Night release post - 2026-10-02” (release-post-r004.png) identifies the pictured performer as Night Ferry or any other billed act.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r005/H030` Cold Signal #3F7C8C and Blood #8E2B24 together cover no more than 5% of the non-photographic area of “Night release post - 2026-10-03” (release-post-r005.png).
+  Measure: Measure, do not estimate. On a measurement copy, mask the named area; exclude photographs and transparent canvas. Count the selected accent-colour pixels and divide by all pixels in that mask. Include text unless the condition excludes it. Test each PDF page or held video frame separately. Yes only when the unrounded percentage is at or below the stated limit. Use the linked measurement guide for rasterisation and colour matching. Each RGB channel must be within 5 of a selected palette colour.
 - `LAYOUT-12/release-post-r005/H031` The photograph on “Night release post - 2026-10-03” (release-post-r005.png) shows visible grain.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r005/H032` The photograph's two colours on “Night release post - 2026-10-03” (release-post-r005.png) are the same pair as on release-post-r002.png.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r005/H033` The date line on “Night release post - 2026-10-03” (release-post-r005.png) is Sodium #E4863B.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-12/release-post-r005/H034` The date line on “Night release post - 2026-10-03” (release-post-r005.png) sits directly above the act name.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r005/H035` On “Night release post - 2026-10-03” (release-post-r005.png), the door line is letterspaced more open than the support line.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r005/H036` Every title, support, door, set, body and fine-print line on “Night release post - 2026-10-03” (release-post-r005.png) is Bone White #E9E4D8.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-12/release-post-r005/H037` Pitch #0E0E10 is the main ground of “Night release post - 2026-10-03” (release-post-r005.png).
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-12/release-post-r005/H038` The date line on “Night release post - 2026-10-03” (release-post-r005.png) is set in Sora ExtraBold.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r005/H039` “Night release post - 2026-10-03” (release-post-r005.png) carries a compact series-title stack, such as “UMBRA / LOFT”.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r005/H040` The advance price on “Night release post - 2026-10-03” (release-post-r005.png) is set in Archivo Narrow Regular.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r005/H041` If the set time on “Night release post - 2026-10-03” (release-post-r005.png) sits apart from the door line, it is set in Archivo Narrow Regular.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r005/H042` No line of body text on “Night release post - 2026-10-03” (release-post-r005.png) runs longer than 65 characters.
+  Measure: Zoom in, find the longest line of body text and count its characters by hand, spaces included.
 - `LAYOUT-12/release-post-r005/H043` No merchandise photo (umbra_wordmark_sable.jpg, umbra_wordmark_meridian.jpg or umbra_wordmark_nightferry.jpg) is placed as an image on “Night release post - 2026-10-03” (release-post-r005.png).
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r005/H044` No caption or credit on “Night release post - 2026-10-03” (release-post-r005.png) identifies the pictured performer as The Blue Hour or any other billed act.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r005/H045` The act name on “Night release post - 2026-10-03” (release-post-r005.png) is spelled “THE BLUE HOUR”, as credited in umbra_billing_autumn.txt, in any letter case.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r006/H030` Cold Signal #3F7C8C and Blood #8E2B24 together cover no more than 5% of the non-photographic area of “Night release post - 2026-10-04” (release-post-r006.png).
+  Measure: Measure, do not estimate. On a measurement copy, mask the named area; exclude photographs and transparent canvas. Count the selected accent-colour pixels and divide by all pixels in that mask. Include text unless the condition excludes it. Test each PDF page or held video frame separately. Yes only when the unrounded percentage is at or below the stated limit. Use the linked measurement guide for rasterisation and colour matching. Each RGB channel must be within 5 of a selected palette colour.
 - `LAYOUT-12/release-post-r006/H031` The photograph on “Night release post - 2026-10-04” (release-post-r006.png) shows visible grain.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r006/H032` The photograph's two colours on “Night release post - 2026-10-04” (release-post-r006.png) are the same pair as on release-post-r002.png.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r006/H033` The date line on “Night release post - 2026-10-04” (release-post-r006.png) is Sodium #E4863B.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-12/release-post-r006/H034` The date line on “Night release post - 2026-10-04” (release-post-r006.png) sits directly above the act name.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r006/H035` On “Night release post - 2026-10-04” (release-post-r006.png), the door line is letterspaced more open than the support line.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r006/H036` Every title, support, door, set, body and fine-print line on “Night release post - 2026-10-04” (release-post-r006.png) is Bone White #E9E4D8.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-12/release-post-r006/H037` Pitch #0E0E10 is the main ground of “Night release post - 2026-10-04” (release-post-r006.png).
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-12/release-post-r006/H038` The date line on “Night release post - 2026-10-04” (release-post-r006.png) is set in Sora ExtraBold.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r006/H039` “Night release post - 2026-10-04” (release-post-r006.png) carries a compact series-title stack, such as “UMBRA / LOFT”.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r006/H040` The advance price on “Night release post - 2026-10-04” (release-post-r006.png) is set in Archivo Narrow Regular.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r006/H041` If the set time on “Night release post - 2026-10-04” (release-post-r006.png) sits apart from the door line, it is set in Archivo Narrow Regular.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r006/H042` No line of body text on “Night release post - 2026-10-04” (release-post-r006.png) runs longer than 65 characters.
+  Measure: Zoom in, find the longest line of body text and count its characters by hand, spaces included.
 - `LAYOUT-12/release-post-r006/H043` No merchandise photo (umbra_wordmark_sable.jpg, umbra_wordmark_meridian.jpg or umbra_wordmark_nightferry.jpg) is placed as an image on “Night release post - 2026-10-04” (release-post-r006.png).
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r006/H044` No caption or credit on “Night release post - 2026-10-04” (release-post-r006.png) identifies the pictured performer as The Blue Hour or any other billed act.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r006/H045` The act name on “Night release post - 2026-10-04” (release-post-r006.png) is spelled “THE BLUE HOUR”, as credited in umbra_billing_autumn.txt, in any letter case.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r007/H030` Cold Signal #3F7C8C and Blood #8E2B24 together cover no more than 5% of the non-photographic area of “Night release post - 2026-10-09” (release-post-r007.png).
+  Measure: Measure, do not estimate. On a measurement copy, mask the named area; exclude photographs and transparent canvas. Count the selected accent-colour pixels and divide by all pixels in that mask. Include text unless the condition excludes it. Test each PDF page or held video frame separately. Yes only when the unrounded percentage is at or below the stated limit. Use the linked measurement guide for rasterisation and colour matching. Each RGB channel must be within 5 of a selected palette colour.
 - `LAYOUT-12/release-post-r007/H031` The photograph on “Night release post - 2026-10-09” (release-post-r007.png) shows visible grain.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r007/H032` The photograph's two colours on “Night release post - 2026-10-09” (release-post-r007.png) are the same pair as on release-post-r002.png.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r007/H033` The date line on “Night release post - 2026-10-09” (release-post-r007.png) is Sodium #E4863B.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-12/release-post-r007/H034` The date line on “Night release post - 2026-10-09” (release-post-r007.png) sits directly above the act name.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r007/H035` On “Night release post - 2026-10-09” (release-post-r007.png), the door line is letterspaced more open than the support line.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r007/H036` Every title, support, door, set, body and fine-print line on “Night release post - 2026-10-09” (release-post-r007.png) is Bone White #E9E4D8.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-12/release-post-r007/H037` Pitch #0E0E10 is the main ground of “Night release post - 2026-10-09” (release-post-r007.png).
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-12/release-post-r007/H038` The date line on “Night release post - 2026-10-09” (release-post-r007.png) is set in Sora ExtraBold.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r007/H039` “Night release post - 2026-10-09” (release-post-r007.png) carries a compact series-title stack, such as “UMBRA / LOFT”.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r007/H040` The advance price on “Night release post - 2026-10-09” (release-post-r007.png) is set in Archivo Narrow Regular.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r007/H041` If the set time on “Night release post - 2026-10-09” (release-post-r007.png) sits apart from the door line, it is set in Archivo Narrow Regular.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r007/H042` No line of body text on “Night release post - 2026-10-09” (release-post-r007.png) runs longer than 65 characters.
+  Measure: Zoom in, find the longest line of body text and count its characters by hand, spaces included.
 - `LAYOUT-12/release-post-r007/H043` No merchandise photo (umbra_wordmark_sable.jpg, umbra_wordmark_meridian.jpg or umbra_wordmark_nightferry.jpg) is placed as an image on “Night release post - 2026-10-09” (release-post-r007.png).
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r007/H044` No caption or credit on “Night release post - 2026-10-09” (release-post-r007.png) identifies the pictured performer as Vespertine or any other billed act.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r007/H045` The act name on “Night release post - 2026-10-09” (release-post-r007.png) is spelled “VESPERTINE”, as credited in umbra_billing_autumn.txt, in any letter case.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r007/H046` The door time on “Night release post - 2026-10-09” (release-post-r007.png) is 8:00 PM (umbra_nights_autumn.csv row 7), in any clear form such as “DOORS 8”.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r008/H018` Apart from the photograph, every type, ground, panel, rule and wordmark colour on “Night release post - 2026-10-10” (release-post-r008.png) is one of #0E0E10, #2A2A2E, #E4863B, #3F7C8C, #E9E4D8 or #8E2B24.
-- `LAYOUT-12/release-post-r008/H019` All colour on “Night release post - 2026-10-10” (release-post-r008.png) is solid at 100% opacity, with no tint, transparency, gradient, glow or shadow, and no scrim or overlay on the photograph.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
+- `LAYOUT-12/release-post-r008/H019` All colour on “Night release post - 2026-10-10” (release-post-r008.png) is solid at 100% opacity, with no tint, transparency, gradient, glow or shadow.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r008/H020` On “Night release post - 2026-10-10” (release-post-r008.png), Cold Signal #3F7C8C and Blood #8E2B24 appear only as hairlines, dividers or photo treatment.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-12/release-post-r008/H021` The photograph on “Night release post - 2026-10-10” (release-post-r008.png) is reproduced in two palette colours, not in full colour.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r008/H022` The act name “The Eastons” on “Night release post - 2026-10-10” (release-post-r008.png) is Bone White #E9E4D8.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-12/release-post-r008/H023` On “Night release post - 2026-10-10” (release-post-r008.png), the date line is letterspaced more open than the act name.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r008/H024` Every non-photographic ground and panel on “Night release post - 2026-10-10” (release-post-r008.png) is Pitch #0E0E10 or Ash #2A2A2E.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-12/release-post-r008/H025` Cold Signal #3F7C8C and Blood #8E2B24 together cover no more than 5% of the non-photographic area of “Night release post - 2026-10-10” (release-post-r008.png).
+  Measure: Measure, do not estimate. On a measurement copy, mask the named area; exclude photographs and transparent canvas. Count the selected accent-colour pixels and divide by all pixels in that mask. Include text unless the condition excludes it. Test each PDF page or held video frame separately. Yes only when the unrounded percentage is at or below the stated limit. Use the linked measurement guide for rasterisation and colour matching. Each RGB channel must be within 5 of a selected palette colour.
 - `LAYOUT-12/release-post-r008/H026` The photograph on “Night release post - 2026-10-10” (release-post-r008.png) shows visible grain.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r008/H027` The photograph's two colours on “Night release post - 2026-10-10” (release-post-r008.png) are the same pair as on release-post-r002.png.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r008/H028` The date line on “Night release post - 2026-10-10” (release-post-r008.png) is Sodium #E4863B.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-12/release-post-r008/H029` The date line on “Night release post - 2026-10-10” (release-post-r008.png) sits directly above the act name.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r008/H030` On “Night release post - 2026-10-10” (release-post-r008.png), the door line is letterspaced more open than the support line.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r008/H031` Every title, support, door, set, body and fine-print line on “Night release post - 2026-10-10” (release-post-r008.png) is Bone White #E9E4D8.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-12/release-post-r008/H032` Pitch #0E0E10 is the main ground of “Night release post - 2026-10-10” (release-post-r008.png).
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-12/release-post-r008/H033` The date line on “Night release post - 2026-10-10” (release-post-r008.png) is set in Sora ExtraBold.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r008/H034` “Night release post - 2026-10-10” (release-post-r008.png) carries a compact series-title stack, such as “UMBRA / LOFT”.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r008/H035` The advance price on “Night release post - 2026-10-10” (release-post-r008.png) is set in Archivo Narrow Regular.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r008/H036` If the set time on “Night release post - 2026-10-10” (release-post-r008.png) sits apart from the door line, it is set in Archivo Narrow Regular.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r008/H037` No line of body text on “Night release post - 2026-10-10” (release-post-r008.png) runs longer than 65 characters.
+  Measure: Zoom in, find the longest line of body text and count its characters by hand, spaces included.
 - `LAYOUT-12/release-post-r008/H038` No merchandise photo (umbra_wordmark_sable.jpg, umbra_wordmark_meridian.jpg or umbra_wordmark_nightferry.jpg) is placed as an image on “Night release post - 2026-10-10” (release-post-r008.png).
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r008/H039` No caption or credit on “Night release post - 2026-10-10” (release-post-r008.png) identifies the pictured performer as The Eastons or any other billed act.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r008/H040` The act name on “Night release post - 2026-10-10” (release-post-r008.png) is spelled “THE EASTONS”, as credited in umbra_billing_autumn.txt, in any letter case.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r009/H018` Apart from the photograph, every type, ground, panel, rule and wordmark colour on “Night release post - 2026-10-16” (release-post-r009.png) is one of #0E0E10, #2A2A2E, #E4863B, #3F7C8C, #E9E4D8 or #8E2B24.
-- `LAYOUT-12/release-post-r009/H019` All colour on “Night release post - 2026-10-16” (release-post-r009.png) is solid at 100% opacity, with no tint, transparency, gradient, glow or shadow, and no scrim or overlay on the photograph.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
+- `LAYOUT-12/release-post-r009/H019` All colour on “Night release post - 2026-10-16” (release-post-r009.png) is solid at 100% opacity, with no tint, transparency, gradient, glow or shadow.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r009/H020` On “Night release post - 2026-10-16” (release-post-r009.png), Cold Signal #3F7C8C and Blood #8E2B24 appear only as hairlines, dividers or photo treatment.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-12/release-post-r009/H021` The photograph on “Night release post - 2026-10-16” (release-post-r009.png) is reproduced in two palette colours, not in full colour.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r009/H022` The act name “Koa” on “Night release post - 2026-10-16” (release-post-r009.png) is Bone White #E9E4D8.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-12/release-post-r009/H023` On “Night release post - 2026-10-16” (release-post-r009.png), the date line is letterspaced more open than the act name.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r009/H024` Every non-photographic ground and panel on “Night release post - 2026-10-16” (release-post-r009.png) is Pitch #0E0E10 or Ash #2A2A2E.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-12/release-post-r009/H025` Cold Signal #3F7C8C and Blood #8E2B24 together cover no more than 5% of the non-photographic area of “Night release post - 2026-10-16” (release-post-r009.png).
+  Measure: Measure, do not estimate. On a measurement copy, mask the named area; exclude photographs and transparent canvas. Count the selected accent-colour pixels and divide by all pixels in that mask. Include text unless the condition excludes it. Test each PDF page or held video frame separately. Yes only when the unrounded percentage is at or below the stated limit. Use the linked measurement guide for rasterisation and colour matching. Each RGB channel must be within 5 of a selected palette colour.
 - `LAYOUT-12/release-post-r009/H026` The photograph on “Night release post - 2026-10-16” (release-post-r009.png) shows visible grain.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r009/H027` The photograph's two colours on “Night release post - 2026-10-16” (release-post-r009.png) are the same pair as on release-post-r002.png.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r009/H028` The date line on “Night release post - 2026-10-16” (release-post-r009.png) is Sodium #E4863B.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-12/release-post-r009/H029` The date line on “Night release post - 2026-10-16” (release-post-r009.png) sits directly above the act name.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r009/H030` On “Night release post - 2026-10-16” (release-post-r009.png), the door line is letterspaced more open than the support line.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r009/H031` Every title, support, door, set, body and fine-print line on “Night release post - 2026-10-16” (release-post-r009.png) is Bone White #E9E4D8.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-12/release-post-r009/H032` Pitch #0E0E10 is the main ground of “Night release post - 2026-10-16” (release-post-r009.png).
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-12/release-post-r009/H033` The date line on “Night release post - 2026-10-16” (release-post-r009.png) is set in Sora ExtraBold.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r009/H034` “Night release post - 2026-10-16” (release-post-r009.png) carries a compact series-title stack, such as “UMBRA / LOFT”.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r009/H035` The advance price on “Night release post - 2026-10-16” (release-post-r009.png) is set in Archivo Narrow Regular.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r009/H036` If the set time on “Night release post - 2026-10-16” (release-post-r009.png) sits apart from the door line, it is set in Archivo Narrow Regular.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r009/H037` No line of body text on “Night release post - 2026-10-16” (release-post-r009.png) runs longer than 65 characters.
+  Measure: Zoom in, find the longest line of body text and count its characters by hand, spaces included.
 - `LAYOUT-12/release-post-r009/H038` No merchandise photo (umbra_wordmark_sable.jpg, umbra_wordmark_meridian.jpg or umbra_wordmark_nightferry.jpg) is placed as an image on “Night release post - 2026-10-16” (release-post-r009.png).
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r009/H039` No caption or credit on “Night release post - 2026-10-16” (release-post-r009.png) identifies the pictured performer as Koa or any other billed act.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r009/H040` The act name on “Night release post - 2026-10-16” (release-post-r009.png) is spelled “KOA”, as credited in umbra_billing_autumn.txt, in any letter case.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r010/H030` Cold Signal #3F7C8C and Blood #8E2B24 together cover no more than 5% of the non-photographic area of “Night release post - 2026-10-17” (release-post-r010.png).
+  Measure: Measure, do not estimate. On a measurement copy, mask the named area; exclude photographs and transparent canvas. Count the selected accent-colour pixels and divide by all pixels in that mask. Include text unless the condition excludes it. Test each PDF page or held video frame separately. Yes only when the unrounded percentage is at or below the stated limit. Use the linked measurement guide for rasterisation and colour matching. Each RGB channel must be within 5 of a selected palette colour.
 - `LAYOUT-12/release-post-r010/H031` The photograph on “Night release post - 2026-10-17” (release-post-r010.png) shows visible grain.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r010/H032` The photograph's two colours on “Night release post - 2026-10-17” (release-post-r010.png) are the same pair as on release-post-r002.png.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r010/H033` The date line on “Night release post - 2026-10-17” (release-post-r010.png) is Sodium #E4863B.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-12/release-post-r010/H034` The date line on “Night release post - 2026-10-17” (release-post-r010.png) sits directly above the act name.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r010/H035` On “Night release post - 2026-10-17” (release-post-r010.png), the door line is letterspaced more open than the support line.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r010/H036` Every title, support, door, set, body and fine-print line on “Night release post - 2026-10-17” (release-post-r010.png) is Bone White #E9E4D8.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-12/release-post-r010/H037` Pitch #0E0E10 is the main ground of “Night release post - 2026-10-17” (release-post-r010.png).
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-12/release-post-r010/H038` The date line on “Night release post - 2026-10-17” (release-post-r010.png) is set in Sora ExtraBold.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r010/H039` “Night release post - 2026-10-17” (release-post-r010.png) carries a compact series-title stack, such as “UMBRA / LOFT”.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r010/H040` The advance price on “Night release post - 2026-10-17” (release-post-r010.png) is set in Archivo Narrow Regular.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r010/H041` If the set time on “Night release post - 2026-10-17” (release-post-r010.png) sits apart from the door line, it is set in Archivo Narrow Regular.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r010/H042` No line of body text on “Night release post - 2026-10-17” (release-post-r010.png) runs longer than 65 characters.
+  Measure: Zoom in, find the longest line of body text and count its characters by hand, spaces included.
 - `LAYOUT-12/release-post-r010/H043` No merchandise photo (umbra_wordmark_sable.jpg, umbra_wordmark_meridian.jpg or umbra_wordmark_nightferry.jpg) is placed as an image on “Night release post - 2026-10-17” (release-post-r010.png).
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r010/H044` No caption or credit on “Night release post - 2026-10-17” (release-post-r010.png) identifies the pictured performer as Laurel and the Dive or any other billed act.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r010/H045` The act name on “Night release post - 2026-10-17” (release-post-r010.png) is spelled “LAUREL AND THE DIVE”, as credited in umbra_billing_autumn.txt, in any letter case.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r003/H045` The Meridian Brass wordmark on “Night release post - 2026-09-26” (release-post-r003.png) is inked in solid Bone White #E9E4D8.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-12/release-post-r004/H046` Night Ferry is credited on “Night release post - 2026-10-02” (release-post-r004.png) as two words, “NIGHT FERRY”, never run together.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r005/H046` “The Blue Hour” is billed on “Night release post - 2026-10-03” (release-post-r005.png) in type only, with no wordmark or logo artwork.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r006/H046` “The Blue Hour” is billed on “Night release post - 2026-10-04” (release-post-r006.png) in type only, with no wordmark or logo artwork.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r007/H047` “Vespertine” is billed on “Night release post - 2026-10-09” (release-post-r007.png) in type only, with no wordmark or logo artwork.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r008/H041` “The Eastons” is billed on “Night release post - 2026-10-10” (release-post-r008.png) in type only, with no wordmark or logo artwork.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r009/H041` “Koa” is billed on “Night release post - 2026-10-16” (release-post-r009.png) in type only, with no wordmark or logo artwork.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r010/H046` “Laurel and the Dive” is billed on “Night release post - 2026-10-17” (release-post-r010.png) in type only, with no wordmark or logo artwork.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r002/H051` “Night release post - 2026-09-25” (release-post-r002.png) follows the poster direction that promoter-deck.pdf names for the release posts.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r003/H046` “Night release post - 2026-09-26” (release-post-r003.png) follows the poster direction that promoter-deck.pdf names for the release posts.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r004/H047` “Night release post - 2026-10-02” (release-post-r004.png) follows the poster direction that promoter-deck.pdf names for the release posts.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r005/H047` “Night release post - 2026-10-03” (release-post-r005.png) follows the poster direction that promoter-deck.pdf names for the release posts.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r006/H047` “Night release post - 2026-10-04” (release-post-r006.png) follows the poster direction that promoter-deck.pdf names for the release posts.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r007/H048` “Night release post - 2026-10-09” (release-post-r007.png) follows the poster direction that promoter-deck.pdf names for the release posts.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r008/H042` “Night release post - 2026-10-10” (release-post-r008.png) follows the poster direction that promoter-deck.pdf names for the release posts.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r009/H042` “Night release post - 2026-10-16” (release-post-r009.png) follows the poster direction that promoter-deck.pdf names for the release posts.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r010/H047` “Night release post - 2026-10-17” (release-post-r010.png) follows the poster direction that promoter-deck.pdf names for the release posts.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-type-led/H063` On “After Dark poster direction - Type-led” (poster-direction-type-led.pdf), Meridian Brass is billed with the date 26 Sep.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-type-led/H064` On “After Dark poster direction - Type-led” (poster-direction-type-led.pdf), Meridian Brass is billed with the support act The Tin Ravens.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-type-led/H065` On “After Dark poster direction - Type-led” (poster-direction-type-led.pdf), Night Ferry is billed with the date 2 Oct.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-type-led/H066` On “After Dark poster direction - Type-led” (poster-direction-type-led.pdf), Night Ferry is billed with the support act Junior Vale.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-type-led/H067` On “After Dark poster direction - Type-led” (poster-direction-type-led.pdf), The Blue Hour is billed with the date 4 Oct.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-type-led/H068` On “After Dark poster direction - Type-led” (poster-direction-type-led.pdf), Vespertine is billed with the date 9 Oct.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-type-led/H069` On “After Dark poster direction - Type-led” (poster-direction-type-led.pdf), Vespertine is billed with the support act Marlow Reyes.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-type-led/H070` On “After Dark poster direction - Type-led” (poster-direction-type-led.pdf), The Eastons is billed with the date 10 Oct.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-type-led/H071` On “After Dark poster direction - Type-led” (poster-direction-type-led.pdf), The Eastons is billed with the support act Half Light.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-type-led/H072` On “After Dark poster direction - Type-led” (poster-direction-type-led.pdf), Koa is billed with the date 16 Oct.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-type-led/H073` On “After Dark poster direction - Type-led” (poster-direction-type-led.pdf), Koa is billed with the support act The Undertow.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-type-led/H074` On “After Dark poster direction - Type-led” (poster-direction-type-led.pdf), Laurel and the Dive is billed with the date 17 Oct.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-type-led/H075` On “After Dark poster direction - Type-led” (poster-direction-type-led.pdf), Laurel and the Dive is billed with the support act Ferro.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-type-led/H076` Every act name on “After Dark poster direction - Type-led” (poster-direction-type-led.pdf) runs over one or two lines, never three or more.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-type-led/H077` The licence line on “After Dark poster direction - Type-led” (poster-direction-type-led.pdf) is set in capitals.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-type-led/H078` The accessibility line on “After Dark poster direction - Type-led” (poster-direction-type-led.pdf) is set in capitals.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-type-led/H079` The accessibility line on “After Dark poster direction - Type-led” (poster-direction-type-led.pdf) is set in Archivo Narrow Regular.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-image-led/H062` On “After Dark poster direction - Image-led” (poster-direction-image-led.pdf), Meridian Brass is billed with the date 26 Sep.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-image-led/H063` On “After Dark poster direction - Image-led” (poster-direction-image-led.pdf), Meridian Brass is billed with the support act The Tin Ravens.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-image-led/H064` On “After Dark poster direction - Image-led” (poster-direction-image-led.pdf), Night Ferry is billed with the date 2 Oct.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-image-led/H065` On “After Dark poster direction - Image-led” (poster-direction-image-led.pdf), Night Ferry is billed with the support act Junior Vale.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-image-led/H066` On “After Dark poster direction - Image-led” (poster-direction-image-led.pdf), The Blue Hour is billed with the date 4 Oct.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-image-led/H067` On “After Dark poster direction - Image-led” (poster-direction-image-led.pdf), Vespertine is billed with the date 9 Oct.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-image-led/H068` On “After Dark poster direction - Image-led” (poster-direction-image-led.pdf), Vespertine is billed with the support act Marlow Reyes.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-image-led/H069` On “After Dark poster direction - Image-led” (poster-direction-image-led.pdf), The Eastons is billed with the date 10 Oct.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-image-led/H070` On “After Dark poster direction - Image-led” (poster-direction-image-led.pdf), The Eastons is billed with the support act Half Light.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-image-led/H071` On “After Dark poster direction - Image-led” (poster-direction-image-led.pdf), Koa is billed with the date 16 Oct.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-image-led/H072` On “After Dark poster direction - Image-led” (poster-direction-image-led.pdf), Koa is billed with the support act The Undertow.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-image-led/H073` On “After Dark poster direction - Image-led” (poster-direction-image-led.pdf), Laurel and the Dive is billed with the date 17 Oct.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-image-led/H074` On “After Dark poster direction - Image-led” (poster-direction-image-led.pdf), Laurel and the Dive is billed with the support act Ferro.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-image-led/H075` Every act name on “After Dark poster direction - Image-led” (poster-direction-image-led.pdf) runs over one or two lines, never three or more.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-image-led/H076` The licence line on “After Dark poster direction - Image-led” (poster-direction-image-led.pdf) is set in capitals.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-image-led/H077` The accessibility line on “After Dark poster direction - Image-led” (poster-direction-image-led.pdf) is set in capitals.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-image-led/H078` The accessibility line on “After Dark poster direction - Image-led” (poster-direction-image-led.pdf) is set in Archivo Narrow Regular.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-graphic-led/H062` On “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf), Meridian Brass is billed with the date 26 Sep.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-graphic-led/H063` On “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf), Meridian Brass is billed with the support act The Tin Ravens.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-graphic-led/H064` On “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf), Night Ferry is billed with the date 2 Oct.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-graphic-led/H065` On “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf), Night Ferry is billed with the support act Junior Vale.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-graphic-led/H066` On “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf), The Blue Hour is billed with the date 4 Oct.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-graphic-led/H067` On “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf), Vespertine is billed with the date 9 Oct.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-graphic-led/H068` On “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf), Vespertine is billed with the support act Marlow Reyes.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-graphic-led/H069` On “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf), The Eastons is billed with the date 10 Oct.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-graphic-led/H070` On “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf), The Eastons is billed with the support act Half Light.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-graphic-led/H071` On “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf), Koa is billed with the date 16 Oct.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-graphic-led/H072` On “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf), Koa is billed with the support act The Undertow.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-graphic-led/H073` On “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf), Laurel and the Dive is billed with the date 17 Oct.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-graphic-led/H074` On “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf), Laurel and the Dive is billed with the support act Ferro.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-graphic-led/H075` Every act name on “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf) runs over one or two lines, never three or more.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-graphic-led/H076` The licence line on “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf) is set in capitals.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-graphic-led/H077` The accessibility line on “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf) is set in capitals.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-graphic-led/H078` The accessibility line on “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf) is set in Archivo Narrow Regular.
-- `LAYOUT-12/promoter-deck/H053` The draw chart in “Promoter pitch deck” (promoter-deck.pdf) shows Oct at 201, as in umbra_room_specs.txt.
-- `LAYOUT-12/promoter-deck/H054` The draw chart in “Promoter pitch deck” (promoter-deck.pdf) shows Nov at 187, as in umbra_room_specs.txt.
-- `LAYOUT-12/promoter-deck/H055` The draw chart in “Promoter pitch deck” (promoter-deck.pdf) shows Dec at 224, as in umbra_room_specs.txt.
-- `LAYOUT-12/promoter-deck/H056` The draw chart in “Promoter pitch deck” (promoter-deck.pdf) shows Jan at 142, as in umbra_room_specs.txt.
-- `LAYOUT-12/promoter-deck/H057` The draw chart in “Promoter pitch deck” (promoter-deck.pdf) shows Feb at 176, as in umbra_room_specs.txt.
+  Look: Inspect the named output against this requirement and its linked references.
+- `LAYOUT-12/promoter-deck/H053` The draw chart in “Promoter pitch deck” (promoter-deck.pdf) labels Oct at 201, as in umbra_room_specs.txt.
+  Look: Read the printed value label for the named month; it must match exactly. Do not estimate a value from bar height.
+- `LAYOUT-12/promoter-deck/H054` The draw chart in “Promoter pitch deck” (promoter-deck.pdf) labels Nov at 187, as in umbra_room_specs.txt.
+  Look: Read the printed value label for the named month; it must match exactly. Do not estimate a value from bar height.
+- `LAYOUT-12/promoter-deck/H055` The draw chart in “Promoter pitch deck” (promoter-deck.pdf) labels Dec at 224, as in umbra_room_specs.txt.
+  Look: Read the printed value label for the named month; it must match exactly. Do not estimate a value from bar height.
+- `LAYOUT-12/promoter-deck/H056` The draw chart in “Promoter pitch deck” (promoter-deck.pdf) labels Jan at 142, as in umbra_room_specs.txt.
+  Look: Read the printed value label for the named month; it must match exactly. Do not estimate a value from bar height.
+- `LAYOUT-12/promoter-deck/H057` The draw chart in “Promoter pitch deck” (promoter-deck.pdf) labels Feb at 176, as in umbra_room_specs.txt.
+  Look: Read the printed value label for the named month; it must match exactly. Do not estimate a value from bar height.
 - `LAYOUT-12/promoter-deck/H058` Any act name typeset in “Promoter pitch deck” (promoter-deck.pdf) outside the poster images runs over one or two lines, never three or more.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r002/H052` The act name “Sable Quartet” on “Night release post - 2026-09-25” (release-post-r002.png) runs over one or two lines, never three or more.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r003/H047` The act name “Meridian Brass” on “Night release post - 2026-09-26” (release-post-r003.png) runs over one or two lines, never three or more.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r004/H048` The act name “Night Ferry” on “Night release post - 2026-10-02” (release-post-r004.png) runs over one or two lines, never three or more.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r005/H048` The act name “The Blue Hour” on “Night release post - 2026-10-03” (release-post-r005.png) runs over one or two lines, never three or more.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r006/H048` The act name “The Blue Hour” on “Night release post - 2026-10-04” (release-post-r006.png) runs over one or two lines, never three or more.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r007/H049` The act name “Vespertine” on “Night release post - 2026-10-09” (release-post-r007.png) runs over one or two lines, never three or more.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r008/H043` The act name “The Eastons” on “Night release post - 2026-10-10” (release-post-r008.png) runs over one or two lines, never three or more.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r010/H048` The act name “Laurel and the Dive” on “Night release post - 2026-10-17” (release-post-r010.png) runs over one or two lines, never three or more.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-type-led/H080` Every act name on “After Dark poster direction - Type-led” (poster-direction-type-led.pdf), support acts excepted, sits on a solid Pitch #0E0E10 ground, not on Ash or a photograph.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-12/poster-direction-image-led/H079` Every act name on “After Dark poster direction - Image-led” (poster-direction-image-led.pdf), support acts excepted, sits on a solid Pitch #0E0E10 ground, not on Ash or a photograph.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-12/poster-direction-graphic-led/H079` Every act name on “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf), support acts excepted, sits on a solid Pitch #0E0E10 ground, not on Ash or a photograph.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-12/promoter-deck/H059` Any act name typeset in “Promoter pitch deck” (promoter-deck.pdf) outside the poster images sits on solid Pitch #0E0E10, not on Ash or a photograph.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-12/release-post-r002/H053` The act name “Sable Quartet” on “Night release post - 2026-09-25” (release-post-r002.png) sits on a solid Pitch #0E0E10 ground, not on Ash or the photograph.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-12/release-post-r003/H048` The act name “Meridian Brass” on “Night release post - 2026-09-26” (release-post-r003.png) sits on a solid Pitch #0E0E10 ground, not on Ash or the photograph.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-12/release-post-r004/H049` The act name “Night Ferry” on “Night release post - 2026-10-02” (release-post-r004.png) sits on a solid Pitch #0E0E10 ground, not on Ash or the photograph.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-12/release-post-r005/H049` The act name “The Blue Hour” on “Night release post - 2026-10-03” (release-post-r005.png) sits on a solid Pitch #0E0E10 ground, not on Ash or the photograph.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-12/release-post-r006/H049` The act name “The Blue Hour” on “Night release post - 2026-10-04” (release-post-r006.png) sits on a solid Pitch #0E0E10 ground, not on Ash or the photograph.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-12/release-post-r007/H050` The act name “Vespertine” on “Night release post - 2026-10-09” (release-post-r007.png) sits on a solid Pitch #0E0E10 ground, not on Ash or the photograph.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-12/release-post-r008/H044` The act name “The Eastons” on “Night release post - 2026-10-10” (release-post-r008.png) sits on a solid Pitch #0E0E10 ground, not on Ash or the photograph.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-12/release-post-r009/H043` The act name “Koa” on “Night release post - 2026-10-16” (release-post-r009.png) sits on a solid Pitch #0E0E10 ground, not on Ash or the photograph.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-12/release-post-r010/H049` The act name “Laurel and the Dive” on “Night release post - 2026-10-17” (release-post-r010.png) sits on a solid Pitch #0E0E10 ground, not on Ash or the photograph.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-12/poster-direction-type-led/H081` The Sable Quartet wordmark on “After Dark poster direction - Type-led” (poster-direction-type-led.pdf) sits on a Pitch #0E0E10 ground.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-12/poster-direction-type-led/H082` The Meridian Brass wordmark on “After Dark poster direction - Type-led” (poster-direction-type-led.pdf) sits on a Pitch #0E0E10 ground.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-12/poster-direction-image-led/H080` The Sable Quartet wordmark on “After Dark poster direction - Image-led” (poster-direction-image-led.pdf) sits on a Pitch #0E0E10 ground.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-12/poster-direction-image-led/H081` The Meridian Brass wordmark on “After Dark poster direction - Image-led” (poster-direction-image-led.pdf) sits on a Pitch #0E0E10 ground.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-12/poster-direction-graphic-led/H080` The Sable Quartet wordmark on “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf) sits on a Pitch #0E0E10 ground.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-12/poster-direction-graphic-led/H081` The Meridian Brass wordmark on “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf) sits on a Pitch #0E0E10 ground.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-12/release-post-r002/H054` The Sable Quartet wordmark on “Night release post - 2026-09-25” (release-post-r002.png) sits on a Pitch #0E0E10 ground.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-12/release-post-r003/H049` The Meridian Brass wordmark on “Night release post - 2026-09-26” (release-post-r003.png) sits on a Pitch #0E0E10 ground.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-12/promoter-deck/H060` Any Meridian Brass wordmark placed in “Promoter pitch deck” (promoter-deck.pdf) outside the poster images is inked in solid Bone White #E9E4D8.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-12/promoter-deck/H061` Any Sable Quartet wordmark placed in “Promoter pitch deck” (promoter-deck.pdf) outside the poster images sits on a Pitch #0E0E10 ground.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-12/promoter-deck/H062` Any Meridian Brass wordmark placed in “Promoter pitch deck” (promoter-deck.pdf) outside the poster images sits on a Pitch #0E0E10 ground.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-12/poster-direction-type-led/H083` Every act name on “After Dark poster direction - Type-led” (poster-direction-type-led.pdf), support acts excepted, is set in capitals.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-type-led/H084` If a door time appears on “After Dark poster direction - Type-led” (poster-direction-type-led.pdf), it is set in capitals.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-type-led/H085` Every date line on “After Dark poster direction - Type-led” (poster-direction-type-led.pdf) is set in capitals.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-type-led/H086` The series title on “After Dark poster direction - Type-led” (poster-direction-type-led.pdf) is set in Sora ExtraBold.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-type-led/H087` The series title on “After Dark poster direction - Type-led” (poster-direction-type-led.pdf) is set in capitals.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-image-led/H082` Every act name on “After Dark poster direction - Image-led” (poster-direction-image-led.pdf), support acts excepted, is set in capitals.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-image-led/H083` If a door time appears on “After Dark poster direction - Image-led” (poster-direction-image-led.pdf), it is set in capitals.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-image-led/H084` Every date line on “After Dark poster direction - Image-led” (poster-direction-image-led.pdf) is set in capitals.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-image-led/H085` The series title on “After Dark poster direction - Image-led” (poster-direction-image-led.pdf) is set in Sora ExtraBold.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-image-led/H086` The series title on “After Dark poster direction - Image-led” (poster-direction-image-led.pdf) is set in capitals.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-graphic-led/H082` Every act name on “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf), support acts excepted, is set in capitals.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-graphic-led/H083` If a door time appears on “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf), it is set in capitals.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-graphic-led/H084` Every date line on “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf) is set in capitals.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-graphic-led/H085` The series title on “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf) is set in Sora ExtraBold.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/poster-direction-graphic-led/H086` The series title on “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf) is set in capitals.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/promoter-deck/H063` Any act name typeset in “Promoter pitch deck” (promoter-deck.pdf) is set in capitals.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/promoter-deck/H064` If a door time appears in “Promoter pitch deck” (promoter-deck.pdf), it is set in capitals.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/promoter-deck/H065` Any date line in “Promoter pitch deck” (promoter-deck.pdf) is set in capitals.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/promoter-deck/H066` If a series title appears in “Promoter pitch deck” (promoter-deck.pdf), it is set in capitals.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r002/H055` The act name “Sable Quartet” on “Night release post - 2026-09-25” (release-post-r002.png) is set in capitals.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r002/H056` The door line on “Night release post - 2026-09-25” (release-post-r002.png) is set in capitals.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r002/H057` The date line on “Night release post - 2026-09-25” (release-post-r002.png) is set in capitals.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r002/H058` The series title on “Night release post - 2026-09-25” (release-post-r002.png) is set in Sora ExtraBold.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r002/H059` The series title on “Night release post - 2026-09-25” (release-post-r002.png) is set in capitals.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r003/H050` The act name “Meridian Brass” on “Night release post - 2026-09-26” (release-post-r003.png) is set in capitals.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r003/H051` The door line on “Night release post - 2026-09-26” (release-post-r003.png) is set in capitals.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r003/H052` The date line on “Night release post - 2026-09-26” (release-post-r003.png) is set in capitals.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r003/H053` The series title on “Night release post - 2026-09-26” (release-post-r003.png) is set in Sora ExtraBold.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r003/H054` The series title on “Night release post - 2026-09-26” (release-post-r003.png) is set in capitals.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r004/H050` The act name “Night Ferry” on “Night release post - 2026-10-02” (release-post-r004.png) is set in capitals.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r004/H051` The door line on “Night release post - 2026-10-02” (release-post-r004.png) is set in capitals.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r004/H052` The date line on “Night release post - 2026-10-02” (release-post-r004.png) is set in capitals.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r004/H053` The series title on “Night release post - 2026-10-02” (release-post-r004.png) is set in Sora ExtraBold.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r004/H054` The series title on “Night release post - 2026-10-02” (release-post-r004.png) is set in capitals.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r005/H050` The act name “The Blue Hour” on “Night release post - 2026-10-03” (release-post-r005.png) is set in capitals.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r005/H051` The door line on “Night release post - 2026-10-03” (release-post-r005.png) is set in capitals.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r005/H052` The date line on “Night release post - 2026-10-03” (release-post-r005.png) is set in capitals.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r005/H053` The series title on “Night release post - 2026-10-03” (release-post-r005.png) is set in Sora ExtraBold.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r005/H054` The series title on “Night release post - 2026-10-03” (release-post-r005.png) is set in capitals.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r006/H050` The act name “The Blue Hour” on “Night release post - 2026-10-04” (release-post-r006.png) is set in capitals.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r006/H051` The door line on “Night release post - 2026-10-04” (release-post-r006.png) is set in capitals.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r006/H052` The date line on “Night release post - 2026-10-04” (release-post-r006.png) is set in capitals.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r006/H053` The series title on “Night release post - 2026-10-04” (release-post-r006.png) is set in Sora ExtraBold.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r006/H054` The series title on “Night release post - 2026-10-04” (release-post-r006.png) is set in capitals.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r007/H051` The act name “Vespertine” on “Night release post - 2026-10-09” (release-post-r007.png) is set in capitals.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r007/H052` The door line on “Night release post - 2026-10-09” (release-post-r007.png) is set in capitals.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r007/H053` The date line on “Night release post - 2026-10-09” (release-post-r007.png) is set in capitals.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r007/H054` The series title on “Night release post - 2026-10-09” (release-post-r007.png) is set in Sora ExtraBold.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r007/H055` The series title on “Night release post - 2026-10-09” (release-post-r007.png) is set in capitals.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r008/H045` The act name “The Eastons” on “Night release post - 2026-10-10” (release-post-r008.png) is set in capitals.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r008/H046` The door line on “Night release post - 2026-10-10” (release-post-r008.png) is set in capitals.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r008/H047` The date line on “Night release post - 2026-10-10” (release-post-r008.png) is set in capitals.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r008/H048` The series title on “Night release post - 2026-10-10” (release-post-r008.png) is set in Sora ExtraBold.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r008/H049` The series title on “Night release post - 2026-10-10” (release-post-r008.png) is set in capitals.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r009/H044` The act name “Koa” on “Night release post - 2026-10-16” (release-post-r009.png) is set in capitals.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r009/H045` The door line on “Night release post - 2026-10-16” (release-post-r009.png) is set in capitals.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r009/H046` The date line on “Night release post - 2026-10-16” (release-post-r009.png) is set in capitals.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r009/H047` The series title on “Night release post - 2026-10-16” (release-post-r009.png) is set in Sora ExtraBold.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r009/H048` The series title on “Night release post - 2026-10-16” (release-post-r009.png) is set in capitals.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r010/H050` The act name “Laurel and the Dive” on “Night release post - 2026-10-17” (release-post-r010.png) is set in capitals.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r010/H051` The door line on “Night release post - 2026-10-17” (release-post-r010.png) is set in capitals.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r010/H052` The date line on “Night release post - 2026-10-17” (release-post-r010.png) is set in capitals.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r010/H053` The series title on “Night release post - 2026-10-17” (release-post-r010.png) is set in Sora ExtraBold.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-12/release-post-r010/H054` The series title on “Night release post - 2026-10-17” (release-post-r010.png) is set in capitals.
+  Look: Inspect the named output against this requirement and its linked references.
+- `LAYOUT-12/poster-direction-graphic-led/H087` No photograph in poster-direction-graphic-led.pdf carries a scrim or overlay.
+  Look: Inspect the named output against this requirement and its linked references.
+- `LAYOUT-12/release-post-r004/H055` No photograph in release-post-r004.png carries a scrim or overlay.
+  Look: Inspect the named output against this requirement and its linked references.
+- `LAYOUT-12/release-post-r005/H055` No photograph in release-post-r005.png carries a scrim or overlay.
+  Look: Inspect the named output against this requirement and its linked references.
+- `LAYOUT-12/release-post-r006/H055` No photograph in release-post-r006.png carries a scrim or overlay.
+  Look: Inspect the named output against this requirement and its linked references.
+- `LAYOUT-12/release-post-r007/H056` No photograph in release-post-r007.png carries a scrim or overlay.
+  Look: Inspect the named output against this requirement and its linked references.
+- `LAYOUT-12/release-post-r010/H055` No photograph in release-post-r010.png carries a scrim or overlay.
+  Look: Inspect the named output against this requirement and its linked references.
+- `LAYOUT-12/promoter-deck/H067` Any seated-cabaret capacity in promoter-deck.pdf is 120, as specified in umbra_room_specs.txt.
+  Look: Inspect the named output against this requirement and its linked references.
+- `LAYOUT-12/promoter-deck/H068` Any season-average occupancy percentage in promoter-deck.pdf is 73%, as specified in umbra_room_specs.txt.
+  Look: Inspect the named output against this requirement and its linked references.
+- `LAYOUT-12/promoter-deck/H069` No photograph in promoter-deck.pdf carries a scrim or overlay.
+  Look: Inspect the named output against this requirement and its linked references.
+- `LAYOUT-12/poster-direction-image-led/H087` No photograph in poster-direction-image-led.pdf carries a scrim or overlay.
+  Look: Inspect the named output against this requirement and its linked references.
+- `LAYOUT-12/poster-direction-type-led/H088` No photograph in poster-direction-type-led.pdf carries a scrim or overlay.
+  Look: Inspect the named output against this requirement and its linked references.
+- `LAYOUT-12/release-post-r002/H060` No photograph in release-post-r002.png carries a scrim or overlay.
+  Look: Inspect the named output against this requirement and its linked references.
+- `LAYOUT-12/release-post-r003/H055` No photograph in release-post-r003.png carries a scrim or overlay.
+  Look: Inspect the named output against this requirement and its linked references.
+- `LAYOUT-12/release-post-r008/H050` No photograph in release-post-r008.png carries a scrim or overlay.
+  Look: Inspect the named output against this requirement and its linked references.
+- `LAYOUT-12/release-post-r009/H049` No photograph in release-post-r009.png carries a scrim or overlay.
+  Look: Inspect the named output against this requirement and its linked references.

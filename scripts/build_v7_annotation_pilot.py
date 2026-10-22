@@ -423,7 +423,7 @@ def platform_verifiers(verifiers: list[dict], outputs: list[dict]) -> list[dict]
 def write_review_verifiers(task_id: str, verifiers: list[dict]) -> None:
     bank = OUT / "verifier-bank"
     bank.mkdir(parents=True, exist_ok=True)
-    fields = ("check_id", "output_id", "type", "output_reference", "check", "method", "method_note", "reference_assets")
+    fields = ("check_id", "output_id", "type", "output_reference", "check", "method", "method_note", "measurement", "reference_assets")
     review_only = [{key: item[key] for key in fields if key in item} for item in verifiers]
     (bank / f"{task_id}.json").write_text(
         json.dumps(review_only, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
@@ -459,9 +459,6 @@ def sheet_row(index: int, task_id: str, assets: list[dict], verifiers: list[dict
     return row
 
 
-SECONDS_PER_CHECK = 10
-
-
 def question_text(index: int, check: dict) -> str:
     """Annotator-facing question, with an explicit checking method."""
     method = check['method']
@@ -486,7 +483,7 @@ def deliverable_rows(task_id: str, verifiers: list[dict], outputs: list[dict]) -
             f"https://deccanai-org.github.io/creative-ai-benchmark/gatsby-v7/tasks/{task_id}/ASSET_MANIFEST.json",
             "", 1, len(questions), len(human),
             "deliverable_verifiers", task_id, output["output_id"], output["name"], Path(output["path"]).name,
-            round(len(questions) * SECONDS_PER_CHECK / 60, 1),
+            "",
             sum(1 for v in human if v.get("method") == "measure"), sum(1 for v in human if v.get("method") == "estimate"),
         ])
     return rows
@@ -500,6 +497,7 @@ def main() -> None:
         "full_verifiers_url", "asset_manifest_url", "asset_count", "output_count",
         "platform_verifier_count", "full_verifier_count",
         "row_type", "task", "output_id", "deliverable", "deliverable_file", "estimated_minutes", "measure_checks", "estimate_checks",
+        "scoring_policy", "coverage_url", "unscored_target_count", "measurement_guide_url",
     ]]
     verifier_rows = []
     for index, task_id in enumerate(TASK_IDS, 1):
@@ -519,16 +517,22 @@ def main() -> None:
         row[2] = "[]"
         row[12] = 0
         row += ["task_inputs", task_id, "", "", "", "", 0, 0]
+        policy = spec['evaluation'].get('objective_scoring_policy', '')
+        excluded = spec['evaluation'].get('unscored_design_targets', [])
+        coverage_url = BASE_URL + 'coverage/' + task_id + '.html'
+        row += [policy, coverage_url, len(excluded), BASE_URL + 'measurement-guide.html']
         rows.append(row)
         drows = deliverable_rows(task_id, verifiers, outputs)
+        for drow in drows:
+            drow += [policy, coverage_url + '#' + drow[16], sum(t['output_id'] == drow[16] for t in excluded), BASE_URL + 'measurement-guide.html']
         verifier_rows += drows
-        print(f"{task_id}: {len(assets)} assets, {len(outputs)} deliverable rows, {sum(r[12] for r in drows)} human checks (all), about {round(sum(r[19] for r in drows))} min at {SECONDS_PER_CHECK}s each")
+        print(f"{task_id}: {len(assets)} assets, {len(outputs)} deliverable rows, {sum(r[12] for r in drows)} human checks; timing not calibrated")
     rows += verifier_rows
     for n, r in enumerate(rows[1:], 1):
         r[3] = n
     SHEET_EXPORT.parent.mkdir(parents=True, exist_ok=True)
     SHEET_EXPORT.write_text(json.dumps(rows, ensure_ascii=False), encoding="utf-8")
-    current_export = ROOT / 'tools/pilot13_ab_fixes/round3/sheet_rows_2026-10-22.json'
+    current_export = ROOT / 'tools/pilot13_ab_fixes/round4/sheet_rows_2026-10-22.json'
     current_export.parent.mkdir(parents=True, exist_ok=True)
     current_export.write_bytes(SHEET_EXPORT.read_bytes())
     # Same rows for a manual Google Sheets import (File > Import > Replace current sheet, text kept as text).
@@ -544,7 +548,8 @@ def main() -> None:
                 f'<a href="coverage/{tid}.html">Checks per deliverable</a></span></li>')
     links = ''.join(task_links(tid) for tid in TASK_IDS)
     links_note = ('<p>Each task links to its brief and to its Human, Auto and Trajectory verifiers on the V7 review site. '
-                  'The review site is a large page, so the first load takes a few seconds.</p>')
+                  'The review site is a large page, so the first load takes a few seconds.</p>'
+                  '<p><a href="measurement-guide.html">Measurement guide and scoring policy</a>. Review time has not been calibrated.</p>')
     coverage = ''
     if (OUT/'coverage'/'index.html').is_file():
         coverage = '<h2>Verifier coverage</h2><p>For each task: every brief and brand-identity constraint against every deliverable, with the verifier that checks it. <a href="coverage/index.html">Open the coverage tables</a>.</p>'

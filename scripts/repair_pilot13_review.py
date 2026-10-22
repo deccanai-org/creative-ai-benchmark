@@ -22,8 +22,8 @@ VECTOR_NOTE = "Read the fill or stroke hex in the SVG code or a vector editor's 
 # A palette colour converted to PSO Coated v3 and back reads within 4 of its hex only with these settings.
 PRESS_NOTE = 'Convert with Relative Colorimetric and black point compensation, the Adobe default.'
 HEX = re.compile(r'#[0-9A-Fa-f]{6}')
-# The note already decides a sample: a numeric window, an exact vector read, or a nearest-colour or brightness rule.
-DECIDED = re.compile(r'(?i)within \d+|exactly|must be #|\bnearer\b|HSB brightness')
+# A pass needs a numeric window or an exact vector value, not a relative colour judgement.
+DECIDED = re.compile(r'(?i)within \d+|exactly|must be #')
 
 
 def colour_tolerance(spec):

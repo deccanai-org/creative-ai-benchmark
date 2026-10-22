@@ -20979,7 +20979,7 @@
    "check_id": "PHOTO-10/style-pdp-northgrove-style-01-loopback-crew/H054",
    "type": "human",
    "output_reference": "deliverables/style-pdp-northgrove-style-01-loopback-crew.png",
-   "check": "Olive #6B7248 on “Apparel style product-page module - northgrove_style_01_loopback_crew” (style-pdp-northgrove-style-01-loopback-crew.png) is only a small accent, covering no more than about 5% of the area outside the photographs.",
+   "check": "Olive #6B7248 on “Apparel style product-page module - northgrove_style_01_loopback_crew” (style-pdp-northgrove-style-01-loopback-crew.png) is only a small accent, covering no more than 5% of the area outside the photographs.",
    "answer_type": "yes_no",
    "allowed_answers": [
     "Yes",
@@ -20992,15 +20992,20 @@
    "evidence_reference": "Palette rules, distribution: Olive #6B7248 is the accent for the mark's leaf and small labels only, no more than 5% of the designed, non-photographic area, never a ground, panel or body text.",
    "artifact_name": "Apparel style product-page module - northgrove_style_01_loopback_crew",
    "artifact_file": "style-pdp-northgrove-style-01-loopback-crew.png",
-   "requirement": "Olive #6B7248 on “Apparel style product-page module - northgrove_style_01_loopback_crew” (style-pdp-northgrove-style-01-loopback-crew.png) is only a small accent, covering no more than about 5% of the area outside the photographs.",
-   "pass_condition": "Olive #6B7248 on “Apparel style product-page module - northgrove_style_01_loopback_crew” (style-pdp-northgrove-style-01-loopback-crew.png) is only a small accent, covering no more than about 5% of the area outside the photographs.",
+   "requirement": "Olive #6B7248 on “Apparel style product-page module - northgrove_style_01_loopback_crew” (style-pdp-northgrove-style-01-loopback-crew.png) is only a small accent, covering no more than 5% of the area outside the photographs.",
+   "pass_condition": "Olive #6B7248 on “Apparel style product-page module - northgrove_style_01_loopback_crew” (style-pdp-northgrove-style-01-loopback-crew.png) is only a small accent, covering no more than 5% of the area outside the photographs.",
    "reference_assets": [],
-   "revision": "pilot13_c_2026_10_22",
+   "revision": "pilot13_verifier_lock_2026_10_22",
    "origin": "pilot13_ab_2026_10_21",
    "k_id": "K2_Q3",
    "k_label": "Brand-system compliance",
-   "method": "estimate",
-   "method_note": "Estimate the share of the designed, non-photographic area in Olive #6B7248; answer No only if it is clearly over 5%."
+   "method": "measure",
+   "method_note": "Measure, do not estimate. On a measurement copy, mask the named area; exclude photographs and transparent canvas. Count the selected accent-colour pixels and divide by all pixels in that mask. Include text unless the condition excludes it. Test each PDF page or held video frame separately. Yes only when the unrounded percentage is at or below the stated limit. Use the linked measurement guide for rasterisation and colour matching. Each RGB channel must be within 5 of a selected palette colour.",
+   "measurement": {
+    "kind": "area_ratio",
+    "channel_tolerance": 5,
+    "max_percent": 5
+   }
   },
   {
    "task_id": "PHOTO-10",
@@ -21071,7 +21076,7 @@
    "check_id": "PHOTO-10/style-pdp-northgrove-style-02-heavy-tee/H054",
    "type": "human",
    "output_reference": "deliverables/style-pdp-northgrove-style-02-heavy-tee.png",
-   "check": "Olive #6B7248 on “Apparel style product-page module - northgrove_style_02_heavy_tee” (style-pdp-northgrove-style-02-heavy-tee.png) is only a small accent, covering no more than about 5% of the area outside the photographs.",
+   "check": "Olive #6B7248 on “Apparel style product-page module - northgrove_style_02_heavy_tee” (style-pdp-northgrove-style-02-heavy-tee.png) is only a small accent, covering no more than 5% of the area outside the photographs.",
    "answer_type": "yes_no",
    "allowed_answers": [
     "Yes",
@@ -21084,15 +21089,20 @@
    "evidence_reference": "Palette rules, distribution: Olive #6B7248 is the accent for the mark's leaf and small labels only, no more than 5% of the designed, non-photographic area, never a ground, panel or body text.",
    "artifact_name": "Apparel style product-page module - northgrove_style_02_heavy_tee",
    "artifact_file": "style-pdp-northgrove-style-02-heavy-tee.png",
-   "requirement": "Olive #6B7248 on “Apparel style product-page module - northgrove_style_02_heavy_tee” (style-pdp-northgrove-style-02-heavy-tee.png) is only a small accent, covering no more than about 5% of the area outside the photographs.",
-   "pass_condition": "Olive #6B7248 on “Apparel style product-page module - northgrove_style_02_heavy_tee” (style-pdp-northgrove-style-02-heavy-tee.png) is only a small accent, covering no more than about 5% of the area outside the photographs.",
+   "requirement": "Olive #6B7248 on “Apparel style product-page module - northgrove_style_02_heavy_tee” (style-pdp-northgrove-style-02-heavy-tee.png) is only a small accent, covering no more than 5% of the area outside the photographs.",
+   "pass_condition": "Olive #6B7248 on “Apparel style product-page module - northgrove_style_02_heavy_tee” (style-pdp-northgrove-style-02-heavy-tee.png) is only a small accent, covering no more than 5% of the area outside the photographs.",
    "reference_assets": [],
-   "revision": "pilot13_c_2026_10_22",
+   "revision": "pilot13_verifier_lock_2026_10_22",
    "origin": "pilot13_ab_2026_10_21",
    "k_id": "K2_Q3",
    "k_label": "Brand-system compliance",
-   "method": "estimate",
-   "method_note": "Estimate the share of the designed, non-photographic area in Olive #6B7248; answer No only if it is clearly over 5%."
+   "method": "measure",
+   "method_note": "Measure, do not estimate. On a measurement copy, mask the named area; exclude photographs and transparent canvas. Count the selected accent-colour pixels and divide by all pixels in that mask. Include text unless the condition excludes it. Test each PDF page or held video frame separately. Yes only when the unrounded percentage is at or below the stated limit. Use the linked measurement guide for rasterisation and colour matching. Each RGB channel must be within 5 of a selected palette colour.",
+   "measurement": {
+    "kind": "area_ratio",
+    "channel_tolerance": 5,
+    "max_percent": 5
+   }
   },
   {
    "task_id": "PHOTO-10",
@@ -21163,7 +21173,7 @@
    "check_id": "PHOTO-10/style-pdp-northgrove-style-03-raglan/H052",
    "type": "human",
    "output_reference": "deliverables/style-pdp-northgrove-style-03-raglan.png",
-   "check": "Olive #6B7248 on “Apparel style product-page module - northgrove_style_03_raglan” (style-pdp-northgrove-style-03-raglan.png) is only a small accent, covering no more than about 5% of the area outside the photographs.",
+   "check": "Olive #6B7248 on “Apparel style product-page module - northgrove_style_03_raglan” (style-pdp-northgrove-style-03-raglan.png) is only a small accent, covering no more than 5% of the area outside the photographs.",
    "answer_type": "yes_no",
    "allowed_answers": [
     "Yes",
@@ -21176,15 +21186,20 @@
    "evidence_reference": "Palette rules, distribution: Olive #6B7248 is the accent for the mark's leaf and small labels only, no more than 5% of the designed, non-photographic area, never a ground, panel or body text.",
    "artifact_name": "Apparel style product-page module - northgrove_style_03_raglan",
    "artifact_file": "style-pdp-northgrove-style-03-raglan.png",
-   "requirement": "Olive #6B7248 on “Apparel style product-page module - northgrove_style_03_raglan” (style-pdp-northgrove-style-03-raglan.png) is only a small accent, covering no more than about 5% of the area outside the photographs.",
-   "pass_condition": "Olive #6B7248 on “Apparel style product-page module - northgrove_style_03_raglan” (style-pdp-northgrove-style-03-raglan.png) is only a small accent, covering no more than about 5% of the area outside the photographs.",
+   "requirement": "Olive #6B7248 on “Apparel style product-page module - northgrove_style_03_raglan” (style-pdp-northgrove-style-03-raglan.png) is only a small accent, covering no more than 5% of the area outside the photographs.",
+   "pass_condition": "Olive #6B7248 on “Apparel style product-page module - northgrove_style_03_raglan” (style-pdp-northgrove-style-03-raglan.png) is only a small accent, covering no more than 5% of the area outside the photographs.",
    "reference_assets": [],
-   "revision": "pilot13_c_2026_10_22",
+   "revision": "pilot13_verifier_lock_2026_10_22",
    "origin": "pilot13_ab_2026_10_21",
    "k_id": "K2_Q3",
    "k_label": "Brand-system compliance",
-   "method": "estimate",
-   "method_note": "Estimate the share of the designed, non-photographic area in Olive #6B7248; answer No only if it is clearly over 5%."
+   "method": "measure",
+   "method_note": "Measure, do not estimate. On a measurement copy, mask the named area; exclude photographs and transparent canvas. Count the selected accent-colour pixels and divide by all pixels in that mask. Include text unless the condition excludes it. Test each PDF page or held video frame separately. Yes only when the unrounded percentage is at or below the stated limit. Use the linked measurement guide for rasterisation and colour matching. Each RGB channel must be within 5 of a selected palette colour.",
+   "measurement": {
+    "kind": "area_ratio",
+    "channel_tolerance": 5,
+    "max_percent": 5
+   }
   },
   {
    "task_id": "PHOTO-10",
@@ -21255,7 +21270,7 @@
    "check_id": "PHOTO-10/style-pdp-northgrove-style-04-henley/H052",
    "type": "human",
    "output_reference": "deliverables/style-pdp-northgrove-style-04-henley.png",
-   "check": "Olive #6B7248 on “Apparel style product-page module - northgrove_style_04_henley” (style-pdp-northgrove-style-04-henley.png) is only a small accent, covering no more than about 5% of the area outside the photographs.",
+   "check": "Olive #6B7248 on “Apparel style product-page module - northgrove_style_04_henley” (style-pdp-northgrove-style-04-henley.png) is only a small accent, covering no more than 5% of the area outside the photographs.",
    "answer_type": "yes_no",
    "allowed_answers": [
     "Yes",
@@ -21268,15 +21283,20 @@
    "evidence_reference": "Palette rules, distribution: Olive #6B7248 is the accent for the mark's leaf and small labels only, no more than 5% of the designed, non-photographic area, never a ground, panel or body text.",
    "artifact_name": "Apparel style product-page module - northgrove_style_04_henley",
    "artifact_file": "style-pdp-northgrove-style-04-henley.png",
-   "requirement": "Olive #6B7248 on “Apparel style product-page module - northgrove_style_04_henley” (style-pdp-northgrove-style-04-henley.png) is only a small accent, covering no more than about 5% of the area outside the photographs.",
-   "pass_condition": "Olive #6B7248 on “Apparel style product-page module - northgrove_style_04_henley” (style-pdp-northgrove-style-04-henley.png) is only a small accent, covering no more than about 5% of the area outside the photographs.",
+   "requirement": "Olive #6B7248 on “Apparel style product-page module - northgrove_style_04_henley” (style-pdp-northgrove-style-04-henley.png) is only a small accent, covering no more than 5% of the area outside the photographs.",
+   "pass_condition": "Olive #6B7248 on “Apparel style product-page module - northgrove_style_04_henley” (style-pdp-northgrove-style-04-henley.png) is only a small accent, covering no more than 5% of the area outside the photographs.",
    "reference_assets": [],
-   "revision": "pilot13_c_2026_10_22",
+   "revision": "pilot13_verifier_lock_2026_10_22",
    "origin": "pilot13_ab_2026_10_21",
    "k_id": "K2_Q3",
    "k_label": "Brand-system compliance",
-   "method": "estimate",
-   "method_note": "Estimate the share of the designed, non-photographic area in Olive #6B7248; answer No only if it is clearly over 5%."
+   "method": "measure",
+   "method_note": "Measure, do not estimate. On a measurement copy, mask the named area; exclude photographs and transparent canvas. Count the selected accent-colour pixels and divide by all pixels in that mask. Include text unless the condition excludes it. Test each PDF page or held video frame separately. Yes only when the unrounded percentage is at or below the stated limit. Use the linked measurement guide for rasterisation and colour matching. Each RGB channel must be within 5 of a selected palette colour.",
+   "measurement": {
+    "kind": "area_ratio",
+    "channel_tolerance": 5,
+    "max_percent": 5
+   }
   },
   {
    "task_id": "PHOTO-10",
@@ -21347,7 +21367,7 @@
    "check_id": "PHOTO-10/style-pdp-northgrove-style-05-zip-hoodie/H052",
    "type": "human",
    "output_reference": "deliverables/style-pdp-northgrove-style-05-zip-hoodie.png",
-   "check": "Olive #6B7248 on “Apparel style product-page module - northgrove_style_05_zip_hoodie” (style-pdp-northgrove-style-05-zip-hoodie.png) is only a small accent, covering no more than about 5% of the area outside the photographs.",
+   "check": "Olive #6B7248 on “Apparel style product-page module - northgrove_style_05_zip_hoodie” (style-pdp-northgrove-style-05-zip-hoodie.png) is only a small accent, covering no more than 5% of the area outside the photographs.",
    "answer_type": "yes_no",
    "allowed_answers": [
     "Yes",
@@ -21360,15 +21380,20 @@
    "evidence_reference": "Palette rules, distribution: Olive #6B7248 is the accent for the mark's leaf and small labels only, no more than 5% of the designed, non-photographic area, never a ground, panel or body text.",
    "artifact_name": "Apparel style product-page module - northgrove_style_05_zip_hoodie",
    "artifact_file": "style-pdp-northgrove-style-05-zip-hoodie.png",
-   "requirement": "Olive #6B7248 on “Apparel style product-page module - northgrove_style_05_zip_hoodie” (style-pdp-northgrove-style-05-zip-hoodie.png) is only a small accent, covering no more than about 5% of the area outside the photographs.",
-   "pass_condition": "Olive #6B7248 on “Apparel style product-page module - northgrove_style_05_zip_hoodie” (style-pdp-northgrove-style-05-zip-hoodie.png) is only a small accent, covering no more than about 5% of the area outside the photographs.",
+   "requirement": "Olive #6B7248 on “Apparel style product-page module - northgrove_style_05_zip_hoodie” (style-pdp-northgrove-style-05-zip-hoodie.png) is only a small accent, covering no more than 5% of the area outside the photographs.",
+   "pass_condition": "Olive #6B7248 on “Apparel style product-page module - northgrove_style_05_zip_hoodie” (style-pdp-northgrove-style-05-zip-hoodie.png) is only a small accent, covering no more than 5% of the area outside the photographs.",
    "reference_assets": [],
-   "revision": "pilot13_c_2026_10_22",
+   "revision": "pilot13_verifier_lock_2026_10_22",
    "origin": "pilot13_ab_2026_10_21",
    "k_id": "K2_Q3",
    "k_label": "Brand-system compliance",
-   "method": "estimate",
-   "method_note": "Estimate the share of the designed, non-photographic area in Olive #6B7248; answer No only if it is clearly over 5%."
+   "method": "measure",
+   "method_note": "Measure, do not estimate. On a measurement copy, mask the named area; exclude photographs and transparent canvas. Count the selected accent-colour pixels and divide by all pixels in that mask. Include text unless the condition excludes it. Test each PDF page or held video frame separately. Yes only when the unrounded percentage is at or below the stated limit. Use the linked measurement guide for rasterisation and colour matching. Each RGB channel must be within 5 of a selected palette colour.",
+   "measurement": {
+    "kind": "area_ratio",
+    "channel_tolerance": 5,
+    "max_percent": 5
+   }
   },
   {
    "task_id": "PHOTO-10",
@@ -21439,7 +21464,7 @@
    "check_id": "PHOTO-10/style-pdp-northgrove-style-06-supporters-crew/H053",
    "type": "human",
    "output_reference": "deliverables/style-pdp-northgrove-style-06-supporters-crew.png",
-   "check": "Olive #6B7248 on “Apparel style product-page module - northgrove_style_06_supporters_crew” (style-pdp-northgrove-style-06-supporters-crew.png) is only a small accent, covering no more than about 5% of the area outside the photographs.",
+   "check": "Olive #6B7248 on “Apparel style product-page module - northgrove_style_06_supporters_crew” (style-pdp-northgrove-style-06-supporters-crew.png) is only a small accent, covering no more than 5% of the area outside the photographs.",
    "answer_type": "yes_no",
    "allowed_answers": [
     "Yes",
@@ -21452,15 +21477,20 @@
    "evidence_reference": "Palette rules, distribution: Olive #6B7248 is the accent for the mark's leaf and small labels only, no more than 5% of the designed, non-photographic area, never a ground, panel or body text.",
    "artifact_name": "Apparel style product-page module - northgrove_style_06_supporters_crew",
    "artifact_file": "style-pdp-northgrove-style-06-supporters-crew.png",
-   "requirement": "Olive #6B7248 on “Apparel style product-page module - northgrove_style_06_supporters_crew” (style-pdp-northgrove-style-06-supporters-crew.png) is only a small accent, covering no more than about 5% of the area outside the photographs.",
-   "pass_condition": "Olive #6B7248 on “Apparel style product-page module - northgrove_style_06_supporters_crew” (style-pdp-northgrove-style-06-supporters-crew.png) is only a small accent, covering no more than about 5% of the area outside the photographs.",
+   "requirement": "Olive #6B7248 on “Apparel style product-page module - northgrove_style_06_supporters_crew” (style-pdp-northgrove-style-06-supporters-crew.png) is only a small accent, covering no more than 5% of the area outside the photographs.",
+   "pass_condition": "Olive #6B7248 on “Apparel style product-page module - northgrove_style_06_supporters_crew” (style-pdp-northgrove-style-06-supporters-crew.png) is only a small accent, covering no more than 5% of the area outside the photographs.",
    "reference_assets": [],
-   "revision": "pilot13_c_2026_10_22",
+   "revision": "pilot13_verifier_lock_2026_10_22",
    "origin": "pilot13_ab_2026_10_21",
    "k_id": "K2_Q3",
    "k_label": "Brand-system compliance",
-   "method": "estimate",
-   "method_note": "Estimate the share of the designed, non-photographic area in Olive #6B7248; answer No only if it is clearly over 5%."
+   "method": "measure",
+   "method_note": "Measure, do not estimate. On a measurement copy, mask the named area; exclude photographs and transparent canvas. Count the selected accent-colour pixels and divide by all pixels in that mask. Include text unless the condition excludes it. Test each PDF page or held video frame separately. Yes only when the unrounded percentage is at or below the stated limit. Use the linked measurement guide for rasterisation and colour matching. Each RGB channel must be within 5 of a selected palette colour.",
+   "measurement": {
+    "kind": "area_ratio",
+    "channel_tolerance": 5,
+    "max_percent": 5
+   }
   },
   {
    "task_id": "PHOTO-10",
@@ -21560,7 +21590,7 @@
    "check_id": "PHOTO-10/capsule-carousel-p01/H066",
    "type": "human",
    "output_reference": "deliverables/capsule-carousel-p01.png",
-   "check": "Olive #6B7248 on “Capsule launch carousel - Page 1” (capsule-carousel-p01.png) is only a small accent, covering no more than about 5% of the area outside the photographs.",
+   "check": "Olive #6B7248 on “Capsule launch carousel - Page 1” (capsule-carousel-p01.png) is only a small accent, covering no more than 5% of the area outside the photographs.",
    "answer_type": "yes_no",
    "allowed_answers": [
     "Yes",
@@ -21573,15 +21603,20 @@
    "evidence_reference": "Palette rules, distribution: Olive #6B7248 is the accent for the mark's leaf and small labels only, no more than 5% of the designed, non-photographic area, never a ground, panel or body text.",
    "artifact_name": "Capsule launch carousel - Page 1",
    "artifact_file": "capsule-carousel-p01.png",
-   "requirement": "Olive #6B7248 on “Capsule launch carousel - Page 1” (capsule-carousel-p01.png) is only a small accent, covering no more than about 5% of the area outside the photographs.",
-   "pass_condition": "Olive #6B7248 on “Capsule launch carousel - Page 1” (capsule-carousel-p01.png) is only a small accent, covering no more than about 5% of the area outside the photographs.",
+   "requirement": "Olive #6B7248 on “Capsule launch carousel - Page 1” (capsule-carousel-p01.png) is only a small accent, covering no more than 5% of the area outside the photographs.",
+   "pass_condition": "Olive #6B7248 on “Capsule launch carousel - Page 1” (capsule-carousel-p01.png) is only a small accent, covering no more than 5% of the area outside the photographs.",
    "reference_assets": [],
-   "revision": "pilot13_c_2026_10_22",
+   "revision": "pilot13_verifier_lock_2026_10_22",
    "origin": "pilot13_ab_2026_10_21",
    "k_id": "K2_Q3",
    "k_label": "Brand-system compliance",
-   "method": "estimate",
-   "method_note": "Estimate the share of the designed, non-photographic area in Olive #6B7248; answer No only if it is clearly over 5%."
+   "method": "measure",
+   "method_note": "Measure, do not estimate. On a measurement copy, mask the named area; exclude photographs and transparent canvas. Count the selected accent-colour pixels and divide by all pixels in that mask. Include text unless the condition excludes it. Test each PDF page or held video frame separately. Yes only when the unrounded percentage is at or below the stated limit. Use the linked measurement guide for rasterisation and colour matching. Each RGB channel must be within 5 of a selected palette colour.",
+   "measurement": {
+    "kind": "area_ratio",
+    "channel_tolerance": 5,
+    "max_percent": 5
+   }
   },
   {
    "task_id": "PHOTO-10",
@@ -21827,7 +21862,7 @@
    "check_id": "PHOTO-10/capsule-carousel-p02/H064",
    "type": "human",
    "output_reference": "deliverables/capsule-carousel-p02.png",
-   "check": "Olive #6B7248 on “Capsule launch carousel - Page 2” (capsule-carousel-p02.png) is only a small accent, covering no more than about 5% of the area outside the photographs.",
+   "check": "Olive #6B7248 on “Capsule launch carousel - Page 2” (capsule-carousel-p02.png) is only a small accent, covering no more than 5% of the area outside the photographs.",
    "answer_type": "yes_no",
    "allowed_answers": [
     "Yes",
@@ -21840,15 +21875,20 @@
    "evidence_reference": "Palette rules, distribution: Olive #6B7248 is the accent for the mark's leaf and small labels only, no more than 5% of the designed, non-photographic area, never a ground, panel or body text.",
    "artifact_name": "Capsule launch carousel - Page 2",
    "artifact_file": "capsule-carousel-p02.png",
-   "requirement": "Olive #6B7248 on “Capsule launch carousel - Page 2” (capsule-carousel-p02.png) is only a small accent, covering no more than about 5% of the area outside the photographs.",
-   "pass_condition": "Olive #6B7248 on “Capsule launch carousel - Page 2” (capsule-carousel-p02.png) is only a small accent, covering no more than about 5% of the area outside the photographs.",
+   "requirement": "Olive #6B7248 on “Capsule launch carousel - Page 2” (capsule-carousel-p02.png) is only a small accent, covering no more than 5% of the area outside the photographs.",
+   "pass_condition": "Olive #6B7248 on “Capsule launch carousel - Page 2” (capsule-carousel-p02.png) is only a small accent, covering no more than 5% of the area outside the photographs.",
    "reference_assets": [],
-   "revision": "pilot13_c_2026_10_22",
+   "revision": "pilot13_verifier_lock_2026_10_22",
    "origin": "pilot13_ab_2026_10_21",
    "k_id": "K2_Q3",
    "k_label": "Brand-system compliance",
-   "method": "estimate",
-   "method_note": "Estimate the share of the designed, non-photographic area in Olive #6B7248; answer No only if it is clearly over 5%."
+   "method": "measure",
+   "method_note": "Measure, do not estimate. On a measurement copy, mask the named area; exclude photographs and transparent canvas. Count the selected accent-colour pixels and divide by all pixels in that mask. Include text unless the condition excludes it. Test each PDF page or held video frame separately. Yes only when the unrounded percentage is at or below the stated limit. Use the linked measurement guide for rasterisation and colour matching. Each RGB channel must be within 5 of a selected palette colour.",
+   "measurement": {
+    "kind": "area_ratio",
+    "channel_tolerance": 5,
+    "max_percent": 5
+   }
   },
   {
    "task_id": "PHOTO-10",
@@ -22094,7 +22134,7 @@
    "check_id": "PHOTO-10/capsule-carousel-p03/H064",
    "type": "human",
    "output_reference": "deliverables/capsule-carousel-p03.png",
-   "check": "Olive #6B7248 on “Capsule launch carousel - Page 3” (capsule-carousel-p03.png) is only a small accent, covering no more than about 5% of the area outside the photographs.",
+   "check": "Olive #6B7248 on “Capsule launch carousel - Page 3” (capsule-carousel-p03.png) is only a small accent, covering no more than 5% of the area outside the photographs.",
    "answer_type": "yes_no",
    "allowed_answers": [
     "Yes",
@@ -22107,15 +22147,20 @@
    "evidence_reference": "Palette rules, distribution: Olive #6B7248 is the accent for the mark's leaf and small labels only, no more than 5% of the designed, non-photographic area, never a ground, panel or body text.",
    "artifact_name": "Capsule launch carousel - Page 3",
    "artifact_file": "capsule-carousel-p03.png",
-   "requirement": "Olive #6B7248 on “Capsule launch carousel - Page 3” (capsule-carousel-p03.png) is only a small accent, covering no more than about 5% of the area outside the photographs.",
-   "pass_condition": "Olive #6B7248 on “Capsule launch carousel - Page 3” (capsule-carousel-p03.png) is only a small accent, covering no more than about 5% of the area outside the photographs.",
+   "requirement": "Olive #6B7248 on “Capsule launch carousel - Page 3” (capsule-carousel-p03.png) is only a small accent, covering no more than 5% of the area outside the photographs.",
+   "pass_condition": "Olive #6B7248 on “Capsule launch carousel - Page 3” (capsule-carousel-p03.png) is only a small accent, covering no more than 5% of the area outside the photographs.",
    "reference_assets": [],
-   "revision": "pilot13_c_2026_10_22",
+   "revision": "pilot13_verifier_lock_2026_10_22",
    "origin": "pilot13_ab_2026_10_21",
    "k_id": "K2_Q3",
    "k_label": "Brand-system compliance",
-   "method": "estimate",
-   "method_note": "Estimate the share of the designed, non-photographic area in Olive #6B7248; answer No only if it is clearly over 5%."
+   "method": "measure",
+   "method_note": "Measure, do not estimate. On a measurement copy, mask the named area; exclude photographs and transparent canvas. Count the selected accent-colour pixels and divide by all pixels in that mask. Include text unless the condition excludes it. Test each PDF page or held video frame separately. Yes only when the unrounded percentage is at or below the stated limit. Use the linked measurement guide for rasterisation and colour matching. Each RGB channel must be within 5 of a selected palette colour.",
+   "measurement": {
+    "kind": "area_ratio",
+    "channel_tolerance": 5,
+    "max_percent": 5
+   }
   },
   {
    "task_id": "PHOTO-10",
@@ -22361,7 +22406,7 @@
    "check_id": "PHOTO-10/capsule-carousel-p04/H064",
    "type": "human",
    "output_reference": "deliverables/capsule-carousel-p04.png",
-   "check": "Olive #6B7248 on “Capsule launch carousel - Page 4” (capsule-carousel-p04.png) is only a small accent, covering no more than about 5% of the area outside the photographs.",
+   "check": "Olive #6B7248 on “Capsule launch carousel - Page 4” (capsule-carousel-p04.png) is only a small accent, covering no more than 5% of the area outside the photographs.",
    "answer_type": "yes_no",
    "allowed_answers": [
     "Yes",
@@ -22374,15 +22419,20 @@
    "evidence_reference": "Palette rules, distribution: Olive #6B7248 is the accent for the mark's leaf and small labels only, no more than 5% of the designed, non-photographic area, never a ground, panel or body text.",
    "artifact_name": "Capsule launch carousel - Page 4",
    "artifact_file": "capsule-carousel-p04.png",
-   "requirement": "Olive #6B7248 on “Capsule launch carousel - Page 4” (capsule-carousel-p04.png) is only a small accent, covering no more than about 5% of the area outside the photographs.",
-   "pass_condition": "Olive #6B7248 on “Capsule launch carousel - Page 4” (capsule-carousel-p04.png) is only a small accent, covering no more than about 5% of the area outside the photographs.",
+   "requirement": "Olive #6B7248 on “Capsule launch carousel - Page 4” (capsule-carousel-p04.png) is only a small accent, covering no more than 5% of the area outside the photographs.",
+   "pass_condition": "Olive #6B7248 on “Capsule launch carousel - Page 4” (capsule-carousel-p04.png) is only a small accent, covering no more than 5% of the area outside the photographs.",
    "reference_assets": [],
-   "revision": "pilot13_c_2026_10_22",
+   "revision": "pilot13_verifier_lock_2026_10_22",
    "origin": "pilot13_ab_2026_10_21",
    "k_id": "K2_Q3",
    "k_label": "Brand-system compliance",
-   "method": "estimate",
-   "method_note": "Estimate the share of the designed, non-photographic area in Olive #6B7248; answer No only if it is clearly over 5%."
+   "method": "measure",
+   "method_note": "Measure, do not estimate. On a measurement copy, mask the named area; exclude photographs and transparent canvas. Count the selected accent-colour pixels and divide by all pixels in that mask. Include text unless the condition excludes it. Test each PDF page or held video frame separately. Yes only when the unrounded percentage is at or below the stated limit. Use the linked measurement guide for rasterisation and colour matching. Each RGB channel must be within 5 of a selected palette colour.",
+   "measurement": {
+    "kind": "area_ratio",
+    "channel_tolerance": 5,
+    "max_percent": 5
+   }
   },
   {
    "task_id": "PHOTO-10",
@@ -22628,7 +22678,7 @@
    "check_id": "PHOTO-10/capsule-carousel-p05/H064",
    "type": "human",
    "output_reference": "deliverables/capsule-carousel-p05.png",
-   "check": "Olive #6B7248 on “Capsule launch carousel - Page 5” (capsule-carousel-p05.png) is only a small accent, covering no more than about 5% of the area outside the photographs.",
+   "check": "Olive #6B7248 on “Capsule launch carousel - Page 5” (capsule-carousel-p05.png) is only a small accent, covering no more than 5% of the area outside the photographs.",
    "answer_type": "yes_no",
    "allowed_answers": [
     "Yes",
@@ -22641,15 +22691,20 @@
    "evidence_reference": "Palette rules, distribution: Olive #6B7248 is the accent for the mark's leaf and small labels only, no more than 5% of the designed, non-photographic area, never a ground, panel or body text.",
    "artifact_name": "Capsule launch carousel - Page 5",
    "artifact_file": "capsule-carousel-p05.png",
-   "requirement": "Olive #6B7248 on “Capsule launch carousel - Page 5” (capsule-carousel-p05.png) is only a small accent, covering no more than about 5% of the area outside the photographs.",
-   "pass_condition": "Olive #6B7248 on “Capsule launch carousel - Page 5” (capsule-carousel-p05.png) is only a small accent, covering no more than about 5% of the area outside the photographs.",
+   "requirement": "Olive #6B7248 on “Capsule launch carousel - Page 5” (capsule-carousel-p05.png) is only a small accent, covering no more than 5% of the area outside the photographs.",
+   "pass_condition": "Olive #6B7248 on “Capsule launch carousel - Page 5” (capsule-carousel-p05.png) is only a small accent, covering no more than 5% of the area outside the photographs.",
    "reference_assets": [],
-   "revision": "pilot13_c_2026_10_22",
+   "revision": "pilot13_verifier_lock_2026_10_22",
    "origin": "pilot13_ab_2026_10_21",
    "k_id": "K2_Q3",
    "k_label": "Brand-system compliance",
-   "method": "estimate",
-   "method_note": "Estimate the share of the designed, non-photographic area in Olive #6B7248; answer No only if it is clearly over 5%."
+   "method": "measure",
+   "method_note": "Measure, do not estimate. On a measurement copy, mask the named area; exclude photographs and transparent canvas. Count the selected accent-colour pixels and divide by all pixels in that mask. Include text unless the condition excludes it. Test each PDF page or held video frame separately. Yes only when the unrounded percentage is at or below the stated limit. Use the linked measurement guide for rasterisation and colour matching. Each RGB channel must be within 5 of a selected palette colour.",
+   "measurement": {
+    "kind": "area_ratio",
+    "channel_tolerance": 5,
+    "max_percent": 5
+   }
   },
   {
    "task_id": "PHOTO-10",
@@ -22895,7 +22950,7 @@
    "check_id": "PHOTO-10/capsule-carousel-p06/H065",
    "type": "human",
    "output_reference": "deliverables/capsule-carousel-p06.png",
-   "check": "Olive #6B7248 on “Capsule launch carousel - Page 6” (capsule-carousel-p06.png) is only a small accent, covering no more than about 5% of the area outside the photographs.",
+   "check": "Olive #6B7248 on “Capsule launch carousel - Page 6” (capsule-carousel-p06.png) is only a small accent, covering no more than 5% of the area outside the photographs.",
    "answer_type": "yes_no",
    "allowed_answers": [
     "Yes",
@@ -22908,15 +22963,20 @@
    "evidence_reference": "Palette rules, distribution: Olive #6B7248 is the accent for the mark's leaf and small labels only, no more than 5% of the designed, non-photographic area, never a ground, panel or body text.",
    "artifact_name": "Capsule launch carousel - Page 6",
    "artifact_file": "capsule-carousel-p06.png",
-   "requirement": "Olive #6B7248 on “Capsule launch carousel - Page 6” (capsule-carousel-p06.png) is only a small accent, covering no more than about 5% of the area outside the photographs.",
-   "pass_condition": "Olive #6B7248 on “Capsule launch carousel - Page 6” (capsule-carousel-p06.png) is only a small accent, covering no more than about 5% of the area outside the photographs.",
+   "requirement": "Olive #6B7248 on “Capsule launch carousel - Page 6” (capsule-carousel-p06.png) is only a small accent, covering no more than 5% of the area outside the photographs.",
+   "pass_condition": "Olive #6B7248 on “Capsule launch carousel - Page 6” (capsule-carousel-p06.png) is only a small accent, covering no more than 5% of the area outside the photographs.",
    "reference_assets": [],
-   "revision": "pilot13_c_2026_10_22",
+   "revision": "pilot13_verifier_lock_2026_10_22",
    "origin": "pilot13_ab_2026_10_21",
    "k_id": "K2_Q3",
    "k_label": "Brand-system compliance",
-   "method": "estimate",
-   "method_note": "Estimate the share of the designed, non-photographic area in Olive #6B7248; answer No only if it is clearly over 5%."
+   "method": "measure",
+   "method_note": "Measure, do not estimate. On a measurement copy, mask the named area; exclude photographs and transparent canvas. Count the selected accent-colour pixels and divide by all pixels in that mask. Include text unless the condition excludes it. Test each PDF page or held video frame separately. Yes only when the unrounded percentage is at or below the stated limit. Use the linked measurement guide for rasterisation and colour matching. Each RGB channel must be within 5 of a selected palette colour.",
+   "measurement": {
+    "kind": "area_ratio",
+    "channel_tolerance": 5,
+    "max_percent": 5
+   }
   },
   {
    "task_id": "PHOTO-10",
@@ -25469,7 +25529,640 @@
   "creative_review": "Subjective professional judgement is recorded separately and never changes an acceptance-verifier answer.",
   "process_evaluation_reference": "../../evaluation/rubric_catalog_v2.json",
   "process_scores_do_not_replace_output_acceptance": true,
-  "human_review_required": true
+  "human_review_required": true,
+  "objective_scoring_policy": "Score only the listed current Auto and Human verifiers. A design target marked \"Not scored\" in coverage remains a client instruction but is excluded from the score denominator: the requested delivery does not provide enough evidence to verify it. Do not infer a pass or failure. If a listed measurement cannot be completed, leave it unanswered and record the missing evidence; do not guess. Human answers remain Yes/No. Historical run results are not current scores.",
+  "unscored_design_targets": [
+   {
+    "rule_id": "T01b",
+    "output_id": "capsule-carousel-p01",
+    "reason": "Exact 96 px size cannot be measured by eye in a delivered PNG; the brand value is a design target. Relative size is checked under T12."
+   },
+   {
+    "rule_id": "T01b",
+    "output_id": "capsule-carousel-p02",
+    "reason": "Exact 96 px size cannot be measured by eye in a delivered PNG; the brand value is a design target. Relative size is checked under T12."
+   },
+   {
+    "rule_id": "T01b",
+    "output_id": "capsule-carousel-p03",
+    "reason": "Exact 96 px size cannot be measured by eye in a delivered PNG; the brand value is a design target. Relative size is checked under T12."
+   },
+   {
+    "rule_id": "T01b",
+    "output_id": "capsule-carousel-p04",
+    "reason": "Exact 96 px size cannot be measured by eye in a delivered PNG; the brand value is a design target. Relative size is checked under T12."
+   },
+   {
+    "rule_id": "T01b",
+    "output_id": "capsule-carousel-p05",
+    "reason": "Exact 96 px size cannot be measured by eye in a delivered PNG; the brand value is a design target. Relative size is checked under T12."
+   },
+   {
+    "rule_id": "T01b",
+    "output_id": "capsule-carousel-p06",
+    "reason": "Exact 96 px size cannot be measured by eye in a delivered PNG; the brand value is a design target. Relative size is checked under T12."
+   },
+   {
+    "rule_id": "T01c",
+    "output_id": "capsule-carousel-p01",
+    "reason": "Exact 102 px leading cannot be measured reliably in a delivered PNG; the brand value is a design target."
+   },
+   {
+    "rule_id": "T01c",
+    "output_id": "capsule-carousel-p02",
+    "reason": "Exact 102 px leading cannot be measured reliably in a delivered PNG; the brand value is a design target."
+   },
+   {
+    "rule_id": "T01c",
+    "output_id": "capsule-carousel-p03",
+    "reason": "Exact 102 px leading cannot be measured reliably in a delivered PNG; the brand value is a design target."
+   },
+   {
+    "rule_id": "T01c",
+    "output_id": "capsule-carousel-p04",
+    "reason": "Exact 102 px leading cannot be measured reliably in a delivered PNG; the brand value is a design target."
+   },
+   {
+    "rule_id": "T01c",
+    "output_id": "capsule-carousel-p05",
+    "reason": "Exact 102 px leading cannot be measured reliably in a delivered PNG; the brand value is a design target."
+   },
+   {
+    "rule_id": "T01c",
+    "output_id": "capsule-carousel-p06",
+    "reason": "Exact 102 px leading cannot be measured reliably in a delivered PNG; the brand value is a design target."
+   },
+   {
+    "rule_id": "T01d",
+    "output_id": "capsule-carousel-p01",
+    "reason": "Tracking of minus 20 thousandths cannot be judged by eye in a delivered PNG; the brand value is a design target."
+   },
+   {
+    "rule_id": "T01d",
+    "output_id": "capsule-carousel-p02",
+    "reason": "Tracking of minus 20 thousandths cannot be judged by eye in a delivered PNG; the brand value is a design target."
+   },
+   {
+    "rule_id": "T01d",
+    "output_id": "capsule-carousel-p03",
+    "reason": "Tracking of minus 20 thousandths cannot be judged by eye in a delivered PNG; the brand value is a design target."
+   },
+   {
+    "rule_id": "T01d",
+    "output_id": "capsule-carousel-p04",
+    "reason": "Tracking of minus 20 thousandths cannot be judged by eye in a delivered PNG; the brand value is a design target."
+   },
+   {
+    "rule_id": "T01d",
+    "output_id": "capsule-carousel-p05",
+    "reason": "Tracking of minus 20 thousandths cannot be judged by eye in a delivered PNG; the brand value is a design target."
+   },
+   {
+    "rule_id": "T01d",
+    "output_id": "capsule-carousel-p06",
+    "reason": "Tracking of minus 20 thousandths cannot be judged by eye in a delivered PNG; the brand value is a design target."
+   },
+   {
+    "rule_id": "T02b",
+    "output_id": "style-pdp-northgrove-style-01-loopback-crew",
+    "reason": "Exact 56 px size cannot be measured by eye in a delivered PNG; the brand value is a design target. Relative size is checked under T13 and T14."
+   },
+   {
+    "rule_id": "T02b",
+    "output_id": "style-pdp-northgrove-style-02-heavy-tee",
+    "reason": "Exact 56 px size cannot be measured by eye in a delivered PNG; the brand value is a design target. Relative size is checked under T13 and T14."
+   },
+   {
+    "rule_id": "T02b",
+    "output_id": "style-pdp-northgrove-style-03-raglan",
+    "reason": "Exact 56 px size cannot be measured by eye in a delivered PNG; the brand value is a design target. Relative size is checked under T13 and T14."
+   },
+   {
+    "rule_id": "T02b",
+    "output_id": "style-pdp-northgrove-style-04-henley",
+    "reason": "Exact 56 px size cannot be measured by eye in a delivered PNG; the brand value is a design target. Relative size is checked under T13 and T14."
+   },
+   {
+    "rule_id": "T02b",
+    "output_id": "style-pdp-northgrove-style-05-zip-hoodie",
+    "reason": "Exact 56 px size cannot be measured by eye in a delivered PNG; the brand value is a design target. Relative size is checked under T13 and T14."
+   },
+   {
+    "rule_id": "T02b",
+    "output_id": "style-pdp-northgrove-style-06-supporters-crew",
+    "reason": "Exact 56 px size cannot be measured by eye in a delivered PNG; the brand value is a design target. Relative size is checked under T13 and T14."
+   },
+   {
+    "rule_id": "T02b",
+    "output_id": "capsule-carousel-p01",
+    "reason": "Exact 56 px size cannot be measured by eye in a delivered PNG; the brand value is a design target. Relative size is checked under T13 and T14."
+   },
+   {
+    "rule_id": "T02b",
+    "output_id": "capsule-carousel-p02",
+    "reason": "Exact 56 px size cannot be measured by eye in a delivered PNG; the brand value is a design target. Relative size is checked under T13 and T14."
+   },
+   {
+    "rule_id": "T02b",
+    "output_id": "capsule-carousel-p03",
+    "reason": "Exact 56 px size cannot be measured by eye in a delivered PNG; the brand value is a design target. Relative size is checked under T13 and T14."
+   },
+   {
+    "rule_id": "T02b",
+    "output_id": "capsule-carousel-p04",
+    "reason": "Exact 56 px size cannot be measured by eye in a delivered PNG; the brand value is a design target. Relative size is checked under T13 and T14."
+   },
+   {
+    "rule_id": "T02b",
+    "output_id": "capsule-carousel-p05",
+    "reason": "Exact 56 px size cannot be measured by eye in a delivered PNG; the brand value is a design target. Relative size is checked under T13 and T14."
+   },
+   {
+    "rule_id": "T02b",
+    "output_id": "capsule-carousel-p06",
+    "reason": "Exact 56 px size cannot be measured by eye in a delivered PNG; the brand value is a design target. Relative size is checked under T13 and T14."
+   },
+   {
+    "rule_id": "T02c",
+    "output_id": "style-pdp-northgrove-style-01-loopback-crew",
+    "reason": "Exact 62 px leading cannot be measured reliably in a delivered PNG; the brand value is a design target, and a style name may sit on one line."
+   },
+   {
+    "rule_id": "T02c",
+    "output_id": "style-pdp-northgrove-style-02-heavy-tee",
+    "reason": "Exact 62 px leading cannot be measured reliably in a delivered PNG; the brand value is a design target, and a style name may sit on one line."
+   },
+   {
+    "rule_id": "T02c",
+    "output_id": "style-pdp-northgrove-style-03-raglan",
+    "reason": "Exact 62 px leading cannot be measured reliably in a delivered PNG; the brand value is a design target, and a style name may sit on one line."
+   },
+   {
+    "rule_id": "T02c",
+    "output_id": "style-pdp-northgrove-style-04-henley",
+    "reason": "Exact 62 px leading cannot be measured reliably in a delivered PNG; the brand value is a design target, and a style name may sit on one line."
+   },
+   {
+    "rule_id": "T02c",
+    "output_id": "style-pdp-northgrove-style-05-zip-hoodie",
+    "reason": "Exact 62 px leading cannot be measured reliably in a delivered PNG; the brand value is a design target, and a style name may sit on one line."
+   },
+   {
+    "rule_id": "T02c",
+    "output_id": "style-pdp-northgrove-style-06-supporters-crew",
+    "reason": "Exact 62 px leading cannot be measured reliably in a delivered PNG; the brand value is a design target, and a style name may sit on one line."
+   },
+   {
+    "rule_id": "T02c",
+    "output_id": "capsule-carousel-p01",
+    "reason": "Exact 62 px leading cannot be measured reliably in a delivered PNG; the brand value is a design target, and a style name may sit on one line."
+   },
+   {
+    "rule_id": "T02c",
+    "output_id": "capsule-carousel-p02",
+    "reason": "Exact 62 px leading cannot be measured reliably in a delivered PNG; the brand value is a design target, and a style name may sit on one line."
+   },
+   {
+    "rule_id": "T02c",
+    "output_id": "capsule-carousel-p03",
+    "reason": "Exact 62 px leading cannot be measured reliably in a delivered PNG; the brand value is a design target, and a style name may sit on one line."
+   },
+   {
+    "rule_id": "T02c",
+    "output_id": "capsule-carousel-p04",
+    "reason": "Exact 62 px leading cannot be measured reliably in a delivered PNG; the brand value is a design target, and a style name may sit on one line."
+   },
+   {
+    "rule_id": "T02c",
+    "output_id": "capsule-carousel-p05",
+    "reason": "Exact 62 px leading cannot be measured reliably in a delivered PNG; the brand value is a design target, and a style name may sit on one line."
+   },
+   {
+    "rule_id": "T02c",
+    "output_id": "capsule-carousel-p06",
+    "reason": "Exact 62 px leading cannot be measured reliably in a delivered PNG; the brand value is a design target, and a style name may sit on one line."
+   },
+   {
+    "rule_id": "T02d",
+    "output_id": "style-pdp-northgrove-style-01-loopback-crew",
+    "reason": "Tracking of minus 10 thousandths cannot be judged by eye in a delivered PNG; the brand value is a design target."
+   },
+   {
+    "rule_id": "T02d",
+    "output_id": "style-pdp-northgrove-style-02-heavy-tee",
+    "reason": "Tracking of minus 10 thousandths cannot be judged by eye in a delivered PNG; the brand value is a design target."
+   },
+   {
+    "rule_id": "T02d",
+    "output_id": "style-pdp-northgrove-style-03-raglan",
+    "reason": "Tracking of minus 10 thousandths cannot be judged by eye in a delivered PNG; the brand value is a design target."
+   },
+   {
+    "rule_id": "T02d",
+    "output_id": "style-pdp-northgrove-style-04-henley",
+    "reason": "Tracking of minus 10 thousandths cannot be judged by eye in a delivered PNG; the brand value is a design target."
+   },
+   {
+    "rule_id": "T02d",
+    "output_id": "style-pdp-northgrove-style-05-zip-hoodie",
+    "reason": "Tracking of minus 10 thousandths cannot be judged by eye in a delivered PNG; the brand value is a design target."
+   },
+   {
+    "rule_id": "T02d",
+    "output_id": "style-pdp-northgrove-style-06-supporters-crew",
+    "reason": "Tracking of minus 10 thousandths cannot be judged by eye in a delivered PNG; the brand value is a design target."
+   },
+   {
+    "rule_id": "T02d",
+    "output_id": "capsule-carousel-p01",
+    "reason": "Tracking of minus 10 thousandths cannot be judged by eye in a delivered PNG; the brand value is a design target."
+   },
+   {
+    "rule_id": "T02d",
+    "output_id": "capsule-carousel-p02",
+    "reason": "Tracking of minus 10 thousandths cannot be judged by eye in a delivered PNG; the brand value is a design target."
+   },
+   {
+    "rule_id": "T02d",
+    "output_id": "capsule-carousel-p03",
+    "reason": "Tracking of minus 10 thousandths cannot be judged by eye in a delivered PNG; the brand value is a design target."
+   },
+   {
+    "rule_id": "T02d",
+    "output_id": "capsule-carousel-p04",
+    "reason": "Tracking of minus 10 thousandths cannot be judged by eye in a delivered PNG; the brand value is a design target."
+   },
+   {
+    "rule_id": "T02d",
+    "output_id": "capsule-carousel-p05",
+    "reason": "Tracking of minus 10 thousandths cannot be judged by eye in a delivered PNG; the brand value is a design target."
+   },
+   {
+    "rule_id": "T02d",
+    "output_id": "capsule-carousel-p06",
+    "reason": "Tracking of minus 10 thousandths cannot be judged by eye in a delivered PNG; the brand value is a design target."
+   },
+   {
+    "rule_id": "T03b",
+    "output_id": "style-pdp-northgrove-style-01-loopback-crew",
+    "reason": "Exact 20 px size cannot be measured by eye in a delivered PNG; the brand value is a design target. Relative size is checked under T14 and T15."
+   },
+   {
+    "rule_id": "T03b",
+    "output_id": "style-pdp-northgrove-style-02-heavy-tee",
+    "reason": "Exact 20 px size cannot be measured by eye in a delivered PNG; the brand value is a design target. Relative size is checked under T14 and T15."
+   },
+   {
+    "rule_id": "T03b",
+    "output_id": "style-pdp-northgrove-style-03-raglan",
+    "reason": "Exact 20 px size cannot be measured by eye in a delivered PNG; the brand value is a design target. Relative size is checked under T14 and T15."
+   },
+   {
+    "rule_id": "T03b",
+    "output_id": "style-pdp-northgrove-style-04-henley",
+    "reason": "Exact 20 px size cannot be measured by eye in a delivered PNG; the brand value is a design target. Relative size is checked under T14 and T15."
+   },
+   {
+    "rule_id": "T03b",
+    "output_id": "style-pdp-northgrove-style-05-zip-hoodie",
+    "reason": "Exact 20 px size cannot be measured by eye in a delivered PNG; the brand value is a design target. Relative size is checked under T14 and T15."
+   },
+   {
+    "rule_id": "T03b",
+    "output_id": "style-pdp-northgrove-style-06-supporters-crew",
+    "reason": "Exact 20 px size cannot be measured by eye in a delivered PNG; the brand value is a design target. Relative size is checked under T14 and T15."
+   },
+   {
+    "rule_id": "T03b",
+    "output_id": "capsule-carousel-p01",
+    "reason": "Exact 20 px size cannot be measured by eye in a delivered PNG; the brand value is a design target. Relative size is checked under T14 and T15."
+   },
+   {
+    "rule_id": "T03b",
+    "output_id": "capsule-carousel-p02",
+    "reason": "Exact 20 px size cannot be measured by eye in a delivered PNG; the brand value is a design target. Relative size is checked under T14 and T15."
+   },
+   {
+    "rule_id": "T03b",
+    "output_id": "capsule-carousel-p03",
+    "reason": "Exact 20 px size cannot be measured by eye in a delivered PNG; the brand value is a design target. Relative size is checked under T14 and T15."
+   },
+   {
+    "rule_id": "T03b",
+    "output_id": "capsule-carousel-p04",
+    "reason": "Exact 20 px size cannot be measured by eye in a delivered PNG; the brand value is a design target. Relative size is checked under T14 and T15."
+   },
+   {
+    "rule_id": "T03b",
+    "output_id": "capsule-carousel-p05",
+    "reason": "Exact 20 px size cannot be measured by eye in a delivered PNG; the brand value is a design target. Relative size is checked under T14 and T15."
+   },
+   {
+    "rule_id": "T03b",
+    "output_id": "capsule-carousel-p06",
+    "reason": "Exact 20 px size cannot be measured by eye in a delivered PNG; the brand value is a design target. Relative size is checked under T14 and T15."
+   },
+   {
+    "rule_id": "T03c",
+    "output_id": "style-pdp-northgrove-style-01-loopback-crew",
+    "reason": "Exact 32 px leading cannot be measured reliably in a delivered PNG; the brand value is a design target."
+   },
+   {
+    "rule_id": "T03c",
+    "output_id": "style-pdp-northgrove-style-02-heavy-tee",
+    "reason": "Exact 32 px leading cannot be measured reliably in a delivered PNG; the brand value is a design target."
+   },
+   {
+    "rule_id": "T03c",
+    "output_id": "style-pdp-northgrove-style-03-raglan",
+    "reason": "Exact 32 px leading cannot be measured reliably in a delivered PNG; the brand value is a design target."
+   },
+   {
+    "rule_id": "T03c",
+    "output_id": "style-pdp-northgrove-style-04-henley",
+    "reason": "Exact 32 px leading cannot be measured reliably in a delivered PNG; the brand value is a design target."
+   },
+   {
+    "rule_id": "T03c",
+    "output_id": "style-pdp-northgrove-style-05-zip-hoodie",
+    "reason": "Exact 32 px leading cannot be measured reliably in a delivered PNG; the brand value is a design target."
+   },
+   {
+    "rule_id": "T03c",
+    "output_id": "style-pdp-northgrove-style-06-supporters-crew",
+    "reason": "Exact 32 px leading cannot be measured reliably in a delivered PNG; the brand value is a design target."
+   },
+   {
+    "rule_id": "T03c",
+    "output_id": "capsule-carousel-p01",
+    "reason": "Exact 32 px leading cannot be measured reliably in a delivered PNG; the brand value is a design target."
+   },
+   {
+    "rule_id": "T03c",
+    "output_id": "capsule-carousel-p02",
+    "reason": "Exact 32 px leading cannot be measured reliably in a delivered PNG; the brand value is a design target."
+   },
+   {
+    "rule_id": "T03c",
+    "output_id": "capsule-carousel-p03",
+    "reason": "Exact 32 px leading cannot be measured reliably in a delivered PNG; the brand value is a design target."
+   },
+   {
+    "rule_id": "T03c",
+    "output_id": "capsule-carousel-p04",
+    "reason": "Exact 32 px leading cannot be measured reliably in a delivered PNG; the brand value is a design target."
+   },
+   {
+    "rule_id": "T03c",
+    "output_id": "capsule-carousel-p05",
+    "reason": "Exact 32 px leading cannot be measured reliably in a delivered PNG; the brand value is a design target."
+   },
+   {
+    "rule_id": "T03c",
+    "output_id": "capsule-carousel-p06",
+    "reason": "Exact 32 px leading cannot be measured reliably in a delivered PNG; the brand value is a design target."
+   },
+   {
+    "rule_id": "T03d",
+    "output_id": "style-pdp-northgrove-style-01-loopback-crew",
+    "reason": "Exact tracking of 0 cannot be judged by eye in a delivered PNG; the brand value is a design target."
+   },
+   {
+    "rule_id": "T03d",
+    "output_id": "style-pdp-northgrove-style-02-heavy-tee",
+    "reason": "Exact tracking of 0 cannot be judged by eye in a delivered PNG; the brand value is a design target."
+   },
+   {
+    "rule_id": "T03d",
+    "output_id": "style-pdp-northgrove-style-03-raglan",
+    "reason": "Exact tracking of 0 cannot be judged by eye in a delivered PNG; the brand value is a design target."
+   },
+   {
+    "rule_id": "T03d",
+    "output_id": "style-pdp-northgrove-style-04-henley",
+    "reason": "Exact tracking of 0 cannot be judged by eye in a delivered PNG; the brand value is a design target."
+   },
+   {
+    "rule_id": "T03d",
+    "output_id": "style-pdp-northgrove-style-05-zip-hoodie",
+    "reason": "Exact tracking of 0 cannot be judged by eye in a delivered PNG; the brand value is a design target."
+   },
+   {
+    "rule_id": "T03d",
+    "output_id": "style-pdp-northgrove-style-06-supporters-crew",
+    "reason": "Exact tracking of 0 cannot be judged by eye in a delivered PNG; the brand value is a design target."
+   },
+   {
+    "rule_id": "T03d",
+    "output_id": "capsule-carousel-p01",
+    "reason": "Exact tracking of 0 cannot be judged by eye in a delivered PNG; the brand value is a design target."
+   },
+   {
+    "rule_id": "T03d",
+    "output_id": "capsule-carousel-p02",
+    "reason": "Exact tracking of 0 cannot be judged by eye in a delivered PNG; the brand value is a design target."
+   },
+   {
+    "rule_id": "T03d",
+    "output_id": "capsule-carousel-p03",
+    "reason": "Exact tracking of 0 cannot be judged by eye in a delivered PNG; the brand value is a design target."
+   },
+   {
+    "rule_id": "T03d",
+    "output_id": "capsule-carousel-p04",
+    "reason": "Exact tracking of 0 cannot be judged by eye in a delivered PNG; the brand value is a design target."
+   },
+   {
+    "rule_id": "T03d",
+    "output_id": "capsule-carousel-p05",
+    "reason": "Exact tracking of 0 cannot be judged by eye in a delivered PNG; the brand value is a design target."
+   },
+   {
+    "rule_id": "T03d",
+    "output_id": "capsule-carousel-p06",
+    "reason": "Exact tracking of 0 cannot be judged by eye in a delivered PNG; the brand value is a design target."
+   },
+   {
+    "rule_id": "T04b",
+    "output_id": "style-pdp-northgrove-style-01-loopback-crew",
+    "reason": "Exact 14 px size cannot be measured by eye in a delivered PNG; the brand value is a design target. Relative size is checked under T15."
+   },
+   {
+    "rule_id": "T04b",
+    "output_id": "style-pdp-northgrove-style-02-heavy-tee",
+    "reason": "Exact 14 px size cannot be measured by eye in a delivered PNG; the brand value is a design target. Relative size is checked under T15."
+   },
+   {
+    "rule_id": "T04b",
+    "output_id": "style-pdp-northgrove-style-03-raglan",
+    "reason": "Exact 14 px size cannot be measured by eye in a delivered PNG; the brand value is a design target. Relative size is checked under T15."
+   },
+   {
+    "rule_id": "T04b",
+    "output_id": "style-pdp-northgrove-style-04-henley",
+    "reason": "Exact 14 px size cannot be measured by eye in a delivered PNG; the brand value is a design target. Relative size is checked under T15."
+   },
+   {
+    "rule_id": "T04b",
+    "output_id": "style-pdp-northgrove-style-05-zip-hoodie",
+    "reason": "Exact 14 px size cannot be measured by eye in a delivered PNG; the brand value is a design target. Relative size is checked under T15."
+   },
+   {
+    "rule_id": "T04b",
+    "output_id": "style-pdp-northgrove-style-06-supporters-crew",
+    "reason": "Exact 14 px size cannot be measured by eye in a delivered PNG; the brand value is a design target. Relative size is checked under T15."
+   },
+   {
+    "rule_id": "T04b",
+    "output_id": "capsule-carousel-p01",
+    "reason": "Exact 14 px size cannot be measured by eye in a delivered PNG; the brand value is a design target. Relative size is checked under T15."
+   },
+   {
+    "rule_id": "T04b",
+    "output_id": "capsule-carousel-p02",
+    "reason": "Exact 14 px size cannot be measured by eye in a delivered PNG; the brand value is a design target. Relative size is checked under T15."
+   },
+   {
+    "rule_id": "T04b",
+    "output_id": "capsule-carousel-p03",
+    "reason": "Exact 14 px size cannot be measured by eye in a delivered PNG; the brand value is a design target. Relative size is checked under T15."
+   },
+   {
+    "rule_id": "T04b",
+    "output_id": "capsule-carousel-p04",
+    "reason": "Exact 14 px size cannot be measured by eye in a delivered PNG; the brand value is a design target. Relative size is checked under T15."
+   },
+   {
+    "rule_id": "T04b",
+    "output_id": "capsule-carousel-p05",
+    "reason": "Exact 14 px size cannot be measured by eye in a delivered PNG; the brand value is a design target. Relative size is checked under T15."
+   },
+   {
+    "rule_id": "T04b",
+    "output_id": "capsule-carousel-p06",
+    "reason": "Exact 14 px size cannot be measured by eye in a delivered PNG; the brand value is a design target. Relative size is checked under T15."
+   },
+   {
+    "rule_id": "T04c",
+    "output_id": "style-pdp-northgrove-style-01-loopback-crew",
+    "reason": "Exact 20 px leading cannot be measured reliably in a delivered PNG; the brand value is a design target."
+   },
+   {
+    "rule_id": "T04c",
+    "output_id": "style-pdp-northgrove-style-02-heavy-tee",
+    "reason": "Exact 20 px leading cannot be measured reliably in a delivered PNG; the brand value is a design target."
+   },
+   {
+    "rule_id": "T04c",
+    "output_id": "style-pdp-northgrove-style-03-raglan",
+    "reason": "Exact 20 px leading cannot be measured reliably in a delivered PNG; the brand value is a design target."
+   },
+   {
+    "rule_id": "T04c",
+    "output_id": "style-pdp-northgrove-style-04-henley",
+    "reason": "Exact 20 px leading cannot be measured reliably in a delivered PNG; the brand value is a design target."
+   },
+   {
+    "rule_id": "T04c",
+    "output_id": "style-pdp-northgrove-style-05-zip-hoodie",
+    "reason": "Exact 20 px leading cannot be measured reliably in a delivered PNG; the brand value is a design target."
+   },
+   {
+    "rule_id": "T04c",
+    "output_id": "style-pdp-northgrove-style-06-supporters-crew",
+    "reason": "Exact 20 px leading cannot be measured reliably in a delivered PNG; the brand value is a design target."
+   },
+   {
+    "rule_id": "T04c",
+    "output_id": "capsule-carousel-p01",
+    "reason": "Exact 20 px leading cannot be measured reliably in a delivered PNG; the brand value is a design target."
+   },
+   {
+    "rule_id": "T04c",
+    "output_id": "capsule-carousel-p02",
+    "reason": "Exact 20 px leading cannot be measured reliably in a delivered PNG; the brand value is a design target."
+   },
+   {
+    "rule_id": "T04c",
+    "output_id": "capsule-carousel-p03",
+    "reason": "Exact 20 px leading cannot be measured reliably in a delivered PNG; the brand value is a design target."
+   },
+   {
+    "rule_id": "T04c",
+    "output_id": "capsule-carousel-p04",
+    "reason": "Exact 20 px leading cannot be measured reliably in a delivered PNG; the brand value is a design target."
+   },
+   {
+    "rule_id": "T04c",
+    "output_id": "capsule-carousel-p05",
+    "reason": "Exact 20 px leading cannot be measured reliably in a delivered PNG; the brand value is a design target."
+   },
+   {
+    "rule_id": "T04c",
+    "output_id": "capsule-carousel-p06",
+    "reason": "Exact 20 px leading cannot be measured reliably in a delivered PNG; the brand value is a design target."
+   },
+   {
+    "rule_id": "T04d",
+    "output_id": "style-pdp-northgrove-style-01-loopback-crew",
+    "reason": "Tracking of 40 thousandths cannot be judged by eye in a delivered PNG; the brand value is a design target."
+   },
+   {
+    "rule_id": "T04d",
+    "output_id": "style-pdp-northgrove-style-02-heavy-tee",
+    "reason": "Tracking of 40 thousandths cannot be judged by eye in a delivered PNG; the brand value is a design target."
+   },
+   {
+    "rule_id": "T04d",
+    "output_id": "style-pdp-northgrove-style-03-raglan",
+    "reason": "Tracking of 40 thousandths cannot be judged by eye in a delivered PNG; the brand value is a design target."
+   },
+   {
+    "rule_id": "T04d",
+    "output_id": "style-pdp-northgrove-style-04-henley",
+    "reason": "Tracking of 40 thousandths cannot be judged by eye in a delivered PNG; the brand value is a design target."
+   },
+   {
+    "rule_id": "T04d",
+    "output_id": "style-pdp-northgrove-style-05-zip-hoodie",
+    "reason": "Tracking of 40 thousandths cannot be judged by eye in a delivered PNG; the brand value is a design target."
+   },
+   {
+    "rule_id": "T04d",
+    "output_id": "style-pdp-northgrove-style-06-supporters-crew",
+    "reason": "Tracking of 40 thousandths cannot be judged by eye in a delivered PNG; the brand value is a design target."
+   },
+   {
+    "rule_id": "T04d",
+    "output_id": "capsule-carousel-p01",
+    "reason": "Tracking of 40 thousandths cannot be judged by eye in a delivered PNG; the brand value is a design target."
+   },
+   {
+    "rule_id": "T04d",
+    "output_id": "capsule-carousel-p02",
+    "reason": "Tracking of 40 thousandths cannot be judged by eye in a delivered PNG; the brand value is a design target."
+   },
+   {
+    "rule_id": "T04d",
+    "output_id": "capsule-carousel-p03",
+    "reason": "Tracking of 40 thousandths cannot be judged by eye in a delivered PNG; the brand value is a design target."
+   },
+   {
+    "rule_id": "T04d",
+    "output_id": "capsule-carousel-p04",
+    "reason": "Tracking of 40 thousandths cannot be judged by eye in a delivered PNG; the brand value is a design target."
+   },
+   {
+    "rule_id": "T04d",
+    "output_id": "capsule-carousel-p05",
+    "reason": "Tracking of 40 thousandths cannot be judged by eye in a delivered PNG; the brand value is a design target."
+   },
+   {
+    "rule_id": "T04d",
+    "output_id": "capsule-carousel-p06",
+    "reason": "Tracking of 40 thousandths cannot be judged by eye in a delivered PNG; the brand value is a design target."
+   }
+  ]
  },
  "readiness": {
   "contract": "revised",

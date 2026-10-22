@@ -2,6 +2,10 @@
 
 Revised input pack. Previous execution results are historical, not current ratings.
 
+Score only the listed current Auto and Human verifiers. A design target marked "Not scored" in coverage remains a client instruction but is excluded from the score denominator: the requested delivery does not provide enough evidence to verify it. Do not infer a pass or failure. If a listed measurement cannot be completed, leave it unanswered and record the missing evidence; do not guess. Human answers remain Yes/No. Historical run results are not current scores.
+
+[Measurement guide](../../annotation-pilot/measurement-guide.html)
+
 ## Auto verifiers
 
 - `LAYOUT-15/producer-card-r002/A001` “District insurance counter card - Raymond Hollis” (producer-card-r002.pdf) is present in the delivery package.
@@ -195,595 +199,1188 @@ Revised input pack. Previous execution results are historical, not current ratin
 ## Human verifiers
 
 - `LAYOUT-15/producer-card-r002/H001` The Disclosure Text on “District insurance counter card - Raymond Hollis” (producer-card-r002.pdf) matches the Disclosure Text field of producer_roster_northern.csv row 2 word for word, with nothing added, dropped or reworded.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r002/H002` The office line on “District insurance counter card - Raymond Hollis” (producer-card-r002.pdf) reads “Concord Branch, 212 North Main St, Concord NH 03301”, the Office field in producer_roster_northern.csv row 2.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r002/H003` The whole Disclosure Text on “District insurance counter card - Raymond Hollis” (producer-card-r002.pdf) sits inside the trim, none of it cut off, ending “claims-paying ability of the company.”
+  Measure: In Acrobat, open Preferences, Page Display and tick Show art, trim and bleed boxes; every disclosure line must sit inside the drawn trim box.
 - `LAYOUT-15/producer-card-r003/H001` The Disclosure Text on “District insurance counter card - Susan Grady” (producer-card-r003.pdf) matches the Disclosure Text field of producer_roster_northern.csv row 3 word for word, with nothing added, dropped or reworded.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r003/H002` The office line on “District insurance counter card - Susan Grady” (producer-card-r003.pdf) reads “Manchester Branch, 88 Elm St, Manchester NH 03101”, the Office field in producer_roster_northern.csv row 3.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r003/H003` The whole Disclosure Text on “District insurance counter card - Susan Grady” (producer-card-r003.pdf) sits inside the trim, none of it cut off, ending “claims-paying ability of the company.”
+  Measure: In Acrobat, open Preferences, Page Display and tick Show art, trim and bleed boxes; every disclosure line must sit inside the drawn trim box.
 - `LAYOUT-15/producer-card-r005/H001` The Disclosure Text on “District insurance counter card - Paul Devoe” (producer-card-r005.pdf) matches the Disclosure Text field of producer_roster_northern.csv row 5 word for word, with nothing added, dropped or reworded.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r005/H002` The office line on “District insurance counter card - Paul Devoe” (producer-card-r005.pdf) reads “Upper Valley Office, 30 Bridge St, Lebanon NH 03766”, the Office field in producer_roster_northern.csv row 5.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r005/H003` The whole Disclosure Text on “District insurance counter card - Paul Devoe” (producer-card-r005.pdf) sits inside the trim, none of it cut off, ending “by Vermont Insurance Division regulation.”
+  Measure: In Acrobat, open Preferences, Page Display and tick Show art, trim and bleed boxes; every disclosure line must sit inside the drawn trim box.
 - `LAYOUT-15/producer-card-r005/H004` Any premium figure on “District insurance counter card - Paul Devoe” (producer-card-r005.pdf) is the plan_rates_2027.csv value for the plan and issue age band it is shown against.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r005/H005` If “District insurance counter card - Paul Devoe” (producer-card-r005.pdf) shows premiums for more than one plan in plan_rates_2027.csv, a plain note says they are not quoted on the same basis.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r005/H006` “District insurance counter card - Paul Devoe” (producer-card-r005.pdf) shows no phone number, email or web address; producer_roster_northern.csv row 5 gives none.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r005/H007` “District insurance counter card - Paul Devoe” (producer-card-r005.pdf) has no superlative, urgency, exclamation mark, burst or starburst callout, implied guarantee of a return or of approval, or competitor comparison.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r005/H008` Any photograph on “District insurance counter card - Paul Devoe” (producer-card-r005.pdf) other than producer_headshot_04.jpg is honestly labelled stock or illustration, never a family, client or policyholder presented as real.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r005/H009` “District insurance counter card - Paul Devoe” (producer-card-r005.pdf) carries no district line, neither “Central Vermont district” nor any other district name; the office line does not count.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r005/H010` The largest text on “District insurance counter card - Paul Devoe” (producer-card-r005.pdf) is the producer name “Paul Devoe”.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r005/H011` On “District insurance counter card - Paul Devoe” (producer-card-r005.pdf) the Disclosure Text is the smallest text on the card.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r005/H012` The headshot on “District insurance counter card - Paul Devoe” (producer-card-r005.pdf) is producer_headshot_04.jpg, the Photo File in producer_roster_northern.csv row 5.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r005/H013` The headshot on “District insurance counter card - Paul Devoe” (producer-card-r005.pdf) keeps the proportions of producer_headshot_04.jpg, not stretched or squashed.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r005/H014` The person in the headshot on “District insurance counter card - Paul Devoe” (producer-card-r005.pdf) is recognizably the same person as in producer_headshot_04.jpg, with the face unaltered.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r005/H015` On “District insurance counter card - Paul Devoe” (producer-card-r005.pdf), the navy jacket's shoulder and collar from producer_headshot_04.jpg are complete, with no part cut away where they meet the mid-grey wall.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r005/H016` The producer name “Paul Devoe” on “District insurance counter card - Paul Devoe” (producer-card-r005.pdf) is set in Lexend SemiBold, not a serif and not another weight.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r005/H017` The producer name on “District insurance counter card - Paul Devoe” (producer-card-r005.pdf) reads “Paul Devoe” in sentence case, not in capitals.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r005/H018` On “District insurance counter card - Paul Devoe” (producer-card-r005.pdf) the producer name sits directly on a Heritage Green #3C6B54 rule running the full card width.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. Convert with Relative Colorimetric and black point compensation, the Adobe default. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-15/producer-card-r005/H019` The license line and office on “District insurance counter card - Paul Devoe” (producer-card-r005.pdf), figures aside, are set in Source Serif 4 Regular.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r005/H020` Every figure on “District insurance counter card - Paul Devoe” (producer-card-r005.pdf), including “05012” in the license line, is set in IBM Plex Sans Regular.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r005/H021` Each line of the license text and the office text on “District insurance counter card - Paul Devoe” (producer-card-r005.pdf) has 65 characters or fewer.
+  Measure: Count the characters, spaces included, in the longest line of license text and of office text; each must be 65 or fewer.
 - `LAYOUT-15/producer-card-r005/H022` The colours of all type, panels, rules and icons on “District insurance counter card - Paul Devoe” (producer-card-r005.pdf) come only from #1E2A3A, #4A5560, #F4F2EC, #C7CBC8 and #3C6B54.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. Convert with Relative Colorimetric and black point compensation, the Adobe default. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-15/producer-card-r005/H023` Document Paper #F4F2EC is the only colour used for the card ground and for any panel on “District insurance counter card - Paul Devoe” (producer-card-r005.pdf).
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. Convert with Relative Colorimetric and black point compensation, the Adobe default. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-15/producer-card-r005/H024` Outside the headshot, Heritage Green #3C6B54 appears on “District insurance counter card - Paul Devoe” (producer-card-r005.pdf) only as the two full-width rules.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. Convert with Relative Colorimetric and black point compensation, the Adobe default. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-15/producer-card-r005/H025` All type, panels, rules, dividers and the card ground on “District insurance counter card - Paul Devoe” (producer-card-r005.pdf) are solid at full opacity, with no tint, transparency, gradient or shadow.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r005/H026` The headshot on “District insurance counter card - Paul Devoe” (producer-card-r005.pdf) shows producer_headshot_04.jpg in natural colour and skin tones, not tinted, duotoned or recoloured toward the palette.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r006/H001` The Disclosure Text on “District insurance counter card - Karen Marsh” (producer-card-r006.pdf) matches the Disclosure Text field of producer_roster_northern.csv row 6 word for word, with nothing added, dropped or reworded.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r006/H002` The office line on “District insurance counter card - Karen Marsh” (producer-card-r006.pdf) reads “Portsmouth Branch, 150 Congress St, Portsmouth NH 03801”, the Office field in producer_roster_northern.csv row 6.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r006/H003` The whole Disclosure Text on “District insurance counter card - Karen Marsh” (producer-card-r006.pdf) sits inside the trim, none of it cut off, ending “claims-paying ability of the company.”
+  Measure: In Acrobat, open Preferences, Page Display and tick Show art, trim and bleed boxes; every disclosure line must sit inside the drawn trim box.
 - `LAYOUT-15/producer-card-r006/H004` Any premium figure on “District insurance counter card - Karen Marsh” (producer-card-r006.pdf) is the plan_rates_2027.csv value for the plan and issue age band it is shown against.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r006/H005` If “District insurance counter card - Karen Marsh” (producer-card-r006.pdf) shows premiums for more than one plan in plan_rates_2027.csv, a plain note says they are not quoted on the same basis.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r006/H006` “District insurance counter card - Karen Marsh” (producer-card-r006.pdf) shows no phone number, email or web address; producer_roster_northern.csv row 6 gives none.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r006/H007` “District insurance counter card - Karen Marsh” (producer-card-r006.pdf) has no superlative, urgency, exclamation mark, burst or starburst callout, implied guarantee of a return or of approval, or competitor comparison.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r006/H008` Any photograph on “District insurance counter card - Karen Marsh” (producer-card-r006.pdf) other than producer_headshot_05.jpg is honestly labelled stock or illustration, never a family, client or policyholder presented as real.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r006/H009` “District insurance counter card - Karen Marsh” (producer-card-r006.pdf) carries no district line, neither “Central Vermont district” nor any other district name; the office line does not count.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r006/H010` The largest text on “District insurance counter card - Karen Marsh” (producer-card-r006.pdf) is the producer name “Karen Marsh”.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r006/H011` On “District insurance counter card - Karen Marsh” (producer-card-r006.pdf) the Disclosure Text is the smallest text on the card.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r006/H012` The headshot on “District insurance counter card - Karen Marsh” (producer-card-r006.pdf) is producer_headshot_05.jpg, the Photo File in producer_roster_northern.csv row 6.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r006/H013` The headshot on “District insurance counter card - Karen Marsh” (producer-card-r006.pdf) keeps the proportions of producer_headshot_05.jpg, not stretched or squashed.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r006/H014` The person in the headshot on “District insurance counter card - Karen Marsh” (producer-card-r006.pdf) is recognizably the same person as in producer_headshot_05.jpg, with the face unaltered.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r006/H015` The headshot on “District insurance counter card - Karen Marsh” (producer-card-r006.pdf) shows no hair, skin or fabric detail that is not in the small 720 x 960 px producer_headshot_05.jpg.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r006/H016` The producer name “Karen Marsh” on “District insurance counter card - Karen Marsh” (producer-card-r006.pdf) is set in Lexend SemiBold, not a serif and not another weight.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r006/H017` The producer name on “District insurance counter card - Karen Marsh” (producer-card-r006.pdf) reads “Karen Marsh” in sentence case, not in capitals.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r006/H018` On “District insurance counter card - Karen Marsh” (producer-card-r006.pdf) the producer name sits directly on a Heritage Green #3C6B54 rule running the full card width.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. Convert with Relative Colorimetric and black point compensation, the Adobe default. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-15/producer-card-r006/H019` The license line and office on “District insurance counter card - Karen Marsh” (producer-card-r006.pdf), figures aside, are set in Source Serif 4 Regular.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r006/H020` Every figure on “District insurance counter card - Karen Marsh” (producer-card-r006.pdf), including “05077” in the license line, is set in IBM Plex Sans Regular.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r006/H021` Each line of the license text and the office text on “District insurance counter card - Karen Marsh” (producer-card-r006.pdf) has 65 characters or fewer.
+  Measure: Count the characters, spaces included, in the longest line of license text and of office text; each must be 65 or fewer.
 - `LAYOUT-15/producer-card-r006/H022` The colours of all type, panels, rules and icons on “District insurance counter card - Karen Marsh” (producer-card-r006.pdf) come only from #1E2A3A, #4A5560, #F4F2EC, #C7CBC8 and #3C6B54.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. Convert with Relative Colorimetric and black point compensation, the Adobe default. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-15/producer-card-r006/H023` Document Paper #F4F2EC is the only colour used for the card ground and for any panel on “District insurance counter card - Karen Marsh” (producer-card-r006.pdf).
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. Convert with Relative Colorimetric and black point compensation, the Adobe default. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-15/producer-card-r006/H024` Outside the headshot, Heritage Green #3C6B54 appears on “District insurance counter card - Karen Marsh” (producer-card-r006.pdf) only as the two full-width rules.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. Convert with Relative Colorimetric and black point compensation, the Adobe default. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-15/producer-card-r006/H025` All type, panels, rules, dividers and the card ground on “District insurance counter card - Karen Marsh” (producer-card-r006.pdf) are solid at full opacity, with no tint, transparency, gradient or shadow.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r006/H026` The headshot on “District insurance counter card - Karen Marsh” (producer-card-r006.pdf) shows producer_headshot_05.jpg in natural colour and skin tones, not tinted, duotoned or recoloured toward the palette.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r007/H001` The Disclosure Text on “District insurance counter card - Daniel Okafor” (producer-card-r007.pdf) matches the Disclosure Text field of producer_roster_northern.csv row 7 word for word, with nothing added, dropped or reworded.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r007/H002` The office line on “District insurance counter card - Daniel Okafor” (producer-card-r007.pdf) reads “Dover Branch, 7 Central Ave, Dover NH 03820”, the Office field in producer_roster_northern.csv row 7.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r007/H003` The whole Disclosure Text on “District insurance counter card - Daniel Okafor” (producer-card-r007.pdf) sits inside the trim, none of it cut off, ending “claims-paying ability of the company.”
+  Measure: In Acrobat, open Preferences, Page Display and tick Show art, trim and bleed boxes; every disclosure line must sit inside the drawn trim box.
 - `LAYOUT-15/producer-card-r007/H004` Any premium figure on “District insurance counter card - Daniel Okafor” (producer-card-r007.pdf) is the plan_rates_2027.csv value for the plan and issue age band it is shown against.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r007/H005` If “District insurance counter card - Daniel Okafor” (producer-card-r007.pdf) shows premiums for more than one plan in plan_rates_2027.csv, a plain note says they are not quoted on the same basis.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r007/H006` “District insurance counter card - Daniel Okafor” (producer-card-r007.pdf) shows no phone number, email or web address; producer_roster_northern.csv row 7 gives none.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r007/H007` “District insurance counter card - Daniel Okafor” (producer-card-r007.pdf) has no superlative, urgency, exclamation mark, burst or starburst callout, implied guarantee of a return or of approval, or competitor comparison.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r007/H008` Any photograph on “District insurance counter card - Daniel Okafor” (producer-card-r007.pdf) other than producer_headshot_06.jpg is honestly labelled stock or illustration, never a family, client or policyholder presented as real.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r007/H009` “District insurance counter card - Daniel Okafor” (producer-card-r007.pdf) carries no district line, neither “Central Vermont district” nor any other district name; the office line does not count.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r007/H010` The largest text on “District insurance counter card - Daniel Okafor” (producer-card-r007.pdf) is the producer name “Daniel Okafor”.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r007/H011` On “District insurance counter card - Daniel Okafor” (producer-card-r007.pdf) the Disclosure Text is the smallest text on the card.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r007/H012` The headshot on “District insurance counter card - Daniel Okafor” (producer-card-r007.pdf) is producer_headshot_06.jpg, the Photo File in producer_roster_northern.csv row 7.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r007/H013` The headshot on “District insurance counter card - Daniel Okafor” (producer-card-r007.pdf) keeps the proportions of producer_headshot_06.jpg, not stretched or squashed.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r007/H014` The person in the headshot on “District insurance counter card - Daniel Okafor” (producer-card-r007.pdf) is recognizably the same person as in producer_headshot_06.jpg, with the face unaltered.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r008/H001` The Disclosure Text on “District insurance counter card - Gina Bianchi” (producer-card-r008.pdf) matches the Disclosure Text field of producer_roster_northern.csv row 8 word for word, with nothing added, dropped or reworded.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r008/H002` The office line on “District insurance counter card - Gina Bianchi” (producer-card-r008.pdf) reads “Keene Branch, 19 Main St, Keene NH 03431”, the Office field in producer_roster_northern.csv row 8.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r008/H003` The whole Disclosure Text on “District insurance counter card - Gina Bianchi” (producer-card-r008.pdf) sits inside the trim, none of it cut off, ending “claims-paying ability of the company.”
+  Measure: In Acrobat, open Preferences, Page Display and tick Show art, trim and bleed boxes; every disclosure line must sit inside the drawn trim box.
 - `LAYOUT-15/producer-card-r008/H004` Any premium figure on “District insurance counter card - Gina Bianchi” (producer-card-r008.pdf) is the plan_rates_2027.csv value for the plan and issue age band it is shown against.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r008/H005` If “District insurance counter card - Gina Bianchi” (producer-card-r008.pdf) shows premiums for more than one plan in plan_rates_2027.csv, a plain note says they are not quoted on the same basis.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r008/H006` “District insurance counter card - Gina Bianchi” (producer-card-r008.pdf) shows no phone number, email or web address; producer_roster_northern.csv row 8 gives none.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r008/H007` “District insurance counter card - Gina Bianchi” (producer-card-r008.pdf) has no superlative, urgency, exclamation mark, burst or starburst callout, implied guarantee of a return or of approval, or competitor comparison.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r008/H008` Any photograph on “District insurance counter card - Gina Bianchi” (producer-card-r008.pdf) other than producer_headshot_07.jpg is honestly labelled stock or illustration, never a family, client or policyholder presented as real.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r008/H009` “District insurance counter card - Gina Bianchi” (producer-card-r008.pdf) carries no district line, neither “Central Vermont district” nor any other district name; the office line does not count.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r008/H010` The largest text on “District insurance counter card - Gina Bianchi” (producer-card-r008.pdf) is the producer name “Gina Bianchi”.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r008/H011` On “District insurance counter card - Gina Bianchi” (producer-card-r008.pdf) the Disclosure Text is the smallest text on the card.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r008/H012` The headshot on “District insurance counter card - Gina Bianchi” (producer-card-r008.pdf) is producer_headshot_07.jpg, the Photo File in producer_roster_northern.csv row 8.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r008/H013` The headshot on “District insurance counter card - Gina Bianchi” (producer-card-r008.pdf) keeps the proportions of producer_headshot_07.jpg, not stretched or squashed.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r008/H014` The person in the headshot on “District insurance counter card - Gina Bianchi” (producer-card-r008.pdf) is recognizably the same person as in producer_headshot_07.jpg, with the face unaltered.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r008/H015` On “District insurance counter card - Gina Bianchi” (producer-card-r008.pdf), the charcoal jacket's shoulder and collar from producer_headshot_07.jpg are complete, with no part cut away where they meet the mid-grey wall.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r008/H016` The producer name “Gina Bianchi” on “District insurance counter card - Gina Bianchi” (producer-card-r008.pdf) is set in Lexend SemiBold, not a serif and not another weight.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r008/H017` The producer name on “District insurance counter card - Gina Bianchi” (producer-card-r008.pdf) reads “Gina Bianchi” in sentence case, not in capitals.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r008/H018` On “District insurance counter card - Gina Bianchi” (producer-card-r008.pdf) the producer name sits directly on a Heritage Green #3C6B54 rule running the full card width.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. Convert with Relative Colorimetric and black point compensation, the Adobe default. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-15/producer-card-r008/H019` The license line and office on “District insurance counter card - Gina Bianchi” (producer-card-r008.pdf), figures aside, are set in Source Serif 4 Regular.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r008/H020` Every figure on “District insurance counter card - Gina Bianchi” (producer-card-r008.pdf), including “05104” in the license line, is set in IBM Plex Sans Regular.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r008/H021` Each line of the license text and the office text on “District insurance counter card - Gina Bianchi” (producer-card-r008.pdf) has 65 characters or fewer.
+  Measure: Count the characters, spaces included, in the longest line of license text and of office text; each must be 65 or fewer.
 - `LAYOUT-15/producer-card-r008/H022` The colours of all type, panels, rules and icons on “District insurance counter card - Gina Bianchi” (producer-card-r008.pdf) come only from #1E2A3A, #4A5560, #F4F2EC, #C7CBC8 and #3C6B54.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. Convert with Relative Colorimetric and black point compensation, the Adobe default. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-15/producer-card-r008/H023` Document Paper #F4F2EC is the only colour used for the card ground and for any panel on “District insurance counter card - Gina Bianchi” (producer-card-r008.pdf).
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. Convert with Relative Colorimetric and black point compensation, the Adobe default. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-15/producer-card-r008/H024` Outside the headshot, Heritage Green #3C6B54 appears on “District insurance counter card - Gina Bianchi” (producer-card-r008.pdf) only as the two full-width rules.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. Convert with Relative Colorimetric and black point compensation, the Adobe default. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-15/producer-card-r008/H025` All type, panels, rules, dividers and the card ground on “District insurance counter card - Gina Bianchi” (producer-card-r008.pdf) are solid at full opacity, with no tint, transparency, gradient or shadow.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r008/H026` The headshot on “District insurance counter card - Gina Bianchi” (producer-card-r008.pdf) shows producer_headshot_07.jpg in natural colour and skin tones, not tinted, duotoned or recoloured toward the palette.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r009/H001` The Disclosure Text on “District insurance counter card - Miguel Reyes” (producer-card-r009.pdf) matches the Disclosure Text field of producer_roster_northern.csv row 9 word for word, with nothing added, dropped or reworded.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r009/H002` The office line on “District insurance counter card - Miguel Reyes” (producer-card-r009.pdf) reads “Claremont Desk, 58 Opera House Sq, Claremont NH 03743”, the Office field in producer_roster_northern.csv row 9.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r009/H003` The whole Disclosure Text on “District insurance counter card - Miguel Reyes” (producer-card-r009.pdf) sits inside the trim, none of it cut off, ending “claims-paying ability of the company.”
+  Measure: In Acrobat, open Preferences, Page Display and tick Show art, trim and bleed boxes; every disclosure line must sit inside the drawn trim box.
 - `LAYOUT-15/producer-card-r009/H004` Any premium figure on “District insurance counter card - Miguel Reyes” (producer-card-r009.pdf) is the plan_rates_2027.csv value for the plan and issue age band it is shown against.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r009/H005` If “District insurance counter card - Miguel Reyes” (producer-card-r009.pdf) shows premiums for more than one plan in plan_rates_2027.csv, a plain note says they are not quoted on the same basis.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r009/H006` “District insurance counter card - Miguel Reyes” (producer-card-r009.pdf) shows no phone number, email or web address; producer_roster_northern.csv row 9 gives none.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r009/H007` “District insurance counter card - Miguel Reyes” (producer-card-r009.pdf) has no superlative, urgency, exclamation mark, burst or starburst callout, implied guarantee of a return or of approval, or competitor comparison.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r009/H008` Any photograph on “District insurance counter card - Miguel Reyes” (producer-card-r009.pdf) other than producer_headshot_08.jpg is honestly labelled stock or illustration, never a family, client or policyholder presented as real.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r009/H009` “District insurance counter card - Miguel Reyes” (producer-card-r009.pdf) carries no district line, neither “Central Vermont district” nor any other district name; the office line does not count.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r009/H010` The largest text on “District insurance counter card - Miguel Reyes” (producer-card-r009.pdf) is the producer name “Miguel Reyes”.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r009/H011` On “District insurance counter card - Miguel Reyes” (producer-card-r009.pdf) the Disclosure Text is the smallest text on the card.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r009/H012` The headshot on “District insurance counter card - Miguel Reyes” (producer-card-r009.pdf) is producer_headshot_08.jpg, the Photo File in producer_roster_northern.csv row 9.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r009/H013` The headshot on “District insurance counter card - Miguel Reyes” (producer-card-r009.pdf) keeps the proportions of producer_headshot_08.jpg, not stretched or squashed.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r009/H014` The person in the headshot on “District insurance counter card - Miguel Reyes” (producer-card-r009.pdf) is recognizably the same person as in producer_headshot_08.jpg, with the face unaltered.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r009/H015` The wall behind Miguel Reyes on “District insurance counter card - Miguel Reyes” (producer-card-r009.pdf) is not painted, cloned or generated over to hide the PINEBROOK SAVINGS counter sign in producer_headshot_08.jpg.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r009/H016` The producer name “Miguel Reyes” on “District insurance counter card - Miguel Reyes” (producer-card-r009.pdf) is set in Lexend SemiBold, not a serif and not another weight.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r009/H017` The producer name on “District insurance counter card - Miguel Reyes” (producer-card-r009.pdf) reads “Miguel Reyes” in sentence case, not in capitals.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r009/H018` On “District insurance counter card - Miguel Reyes” (producer-card-r009.pdf) the producer name sits directly on a Heritage Green #3C6B54 rule running the full card width.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. Convert with Relative Colorimetric and black point compensation, the Adobe default. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-15/producer-card-r009/H019` The license line and office on “District insurance counter card - Miguel Reyes” (producer-card-r009.pdf), figures aside, are set in Source Serif 4 Regular.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r009/H020` Every figure on “District insurance counter card - Miguel Reyes” (producer-card-r009.pdf), including “05118” in the license line, is set in IBM Plex Sans Regular.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r009/H021` Each line of the license text and the office text on “District insurance counter card - Miguel Reyes” (producer-card-r009.pdf) has 65 characters or fewer.
+  Measure: Count the characters, spaces included, in the longest line of license text and of office text; each must be 65 or fewer.
 - `LAYOUT-15/producer-card-r009/H022` The colours of all type, panels, rules and icons on “District insurance counter card - Miguel Reyes” (producer-card-r009.pdf) come only from #1E2A3A, #4A5560, #F4F2EC, #C7CBC8 and #3C6B54.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. Convert with Relative Colorimetric and black point compensation, the Adobe default. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-15/producer-card-r009/H023` Document Paper #F4F2EC is the only colour used for the card ground and for any panel on “District insurance counter card - Miguel Reyes” (producer-card-r009.pdf).
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. Convert with Relative Colorimetric and black point compensation, the Adobe default. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-15/producer-card-r009/H024` Outside the headshot, Heritage Green #3C6B54 appears on “District insurance counter card - Miguel Reyes” (producer-card-r009.pdf) only as the two full-width rules.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. Convert with Relative Colorimetric and black point compensation, the Adobe default. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-15/producer-card-r009/H025` All type, panels, rules, dividers and the card ground on “District insurance counter card - Miguel Reyes” (producer-card-r009.pdf) are solid at full opacity, with no tint, transparency, gradient or shadow.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r009/H026` The headshot on “District insurance counter card - Miguel Reyes” (producer-card-r009.pdf) shows producer_headshot_08.jpg in natural colour and skin tones, not tinted, duotoned or recoloured toward the palette.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r010/H001` The Disclosure Text on “District insurance counter card - Linh Tran” (producer-card-r010.pdf) matches the Disclosure Text field of producer_roster_northern.csv row 10 word for word, with nothing added, dropped or reworded.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r010/H002` The office line on “District insurance counter card - Linh Tran” (producer-card-r010.pdf) reads “Seacoast Office, 5 Market Sq, Portsmouth NH 03801”, the Office field in producer_roster_northern.csv row 10.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r010/H003` The whole Disclosure Text on “District insurance counter card - Linh Tran” (producer-card-r010.pdf) sits inside the trim, none of it cut off, ending “producer represents Aldervale Mutual only.”
+  Measure: In Acrobat, open Preferences, Page Display and tick Show art, trim and bleed boxes; every disclosure line must sit inside the drawn trim box.
 - `LAYOUT-15/producer-card-r010/H004` Any premium figure on “District insurance counter card - Linh Tran” (producer-card-r010.pdf) is the plan_rates_2027.csv value for the plan and issue age band it is shown against.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r010/H005` If “District insurance counter card - Linh Tran” (producer-card-r010.pdf) shows premiums for more than one plan in plan_rates_2027.csv, a plain note says they are not quoted on the same basis.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r010/H006` “District insurance counter card - Linh Tran” (producer-card-r010.pdf) shows no phone number, email or web address; producer_roster_northern.csv row 10 gives none.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r010/H007` “District insurance counter card - Linh Tran” (producer-card-r010.pdf) has no superlative, urgency, exclamation mark, burst or starburst callout, implied guarantee of a return or of approval, or competitor comparison.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r010/H008` Any photograph on “District insurance counter card - Linh Tran” (producer-card-r010.pdf) other than producer_headshot_09.jpg is honestly labelled stock or illustration, never a family, client or policyholder presented as real.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r010/H009` “District insurance counter card - Linh Tran” (producer-card-r010.pdf) carries no district line, neither “Central Vermont district” nor any other district name; the office line does not count.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r010/H010` The largest text on “District insurance counter card - Linh Tran” (producer-card-r010.pdf) is the producer name “Linh Tran”.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r010/H011` On “District insurance counter card - Linh Tran” (producer-card-r010.pdf) the Disclosure Text is the smallest text on the card.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r010/H012` The headshot on “District insurance counter card - Linh Tran” (producer-card-r010.pdf) is producer_headshot_09.jpg, the Photo File in producer_roster_northern.csv row 10.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r010/H013` The headshot on “District insurance counter card - Linh Tran” (producer-card-r010.pdf) keeps the proportions of producer_headshot_09.jpg, not stretched or squashed.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r010/H014` The person in the headshot on “District insurance counter card - Linh Tran” (producer-card-r010.pdf) is recognizably the same person as in producer_headshot_09.jpg, with the face unaltered.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r010/H015` The producer name “Linh Tran” on “District insurance counter card - Linh Tran” (producer-card-r010.pdf) is set in Lexend SemiBold, not a serif and not another weight.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r010/H016` The producer name on “District insurance counter card - Linh Tran” (producer-card-r010.pdf) reads “Linh Tran” in sentence case, not in capitals.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r010/H017` On “District insurance counter card - Linh Tran” (producer-card-r010.pdf) the producer name sits directly on a Heritage Green #3C6B54 rule running the full card width.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. Convert with Relative Colorimetric and black point compensation, the Adobe default. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-15/producer-card-r010/H018` The license line and office on “District insurance counter card - Linh Tran” (producer-card-r010.pdf), figures aside, are set in Source Serif 4 Regular.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r010/H019` Every figure on “District insurance counter card - Linh Tran” (producer-card-r010.pdf), including “05131” in the license line, is set in IBM Plex Sans Regular.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r010/H020` Each line of the license text and the office text on “District insurance counter card - Linh Tran” (producer-card-r010.pdf) has 65 characters or fewer.
+  Measure: Count the characters, spaces included, in the longest line of license text and of office text; each must be 65 or fewer.
 - `LAYOUT-15/producer-card-r010/H021` The colours of all type, panels, rules and icons on “District insurance counter card - Linh Tran” (producer-card-r010.pdf) come only from #1E2A3A, #4A5560, #F4F2EC, #C7CBC8 and #3C6B54.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. Convert with Relative Colorimetric and black point compensation, the Adobe default. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-15/producer-card-r010/H022` Document Paper #F4F2EC is the only colour used for the card ground and for any panel on “District insurance counter card - Linh Tran” (producer-card-r010.pdf).
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. Convert with Relative Colorimetric and black point compensation, the Adobe default. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-15/producer-card-r010/H023` Outside the headshot, Heritage Green #3C6B54 appears on “District insurance counter card - Linh Tran” (producer-card-r010.pdf) only as the two full-width rules.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. Convert with Relative Colorimetric and black point compensation, the Adobe default. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-15/producer-card-r010/H024` All type, panels, rules, dividers and the card ground on “District insurance counter card - Linh Tran” (producer-card-r010.pdf) are solid at full opacity, with no tint, transparency, gradient or shadow.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r010/H025` The headshot on “District insurance counter card - Linh Tran” (producer-card-r010.pdf) shows producer_headshot_09.jpg in natural colour and skin tones, not tinted, duotoned or recoloured toward the palette.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r011/H001` The Disclosure Text on “District insurance counter card - Sean Donnelly” (producer-card-r011.pdf) matches the Disclosure Text field of producer_roster_northern.csv row 11 word for word, with nothing added, dropped or reworded.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r011/H002` The office line on “District insurance counter card - Sean Donnelly” (producer-card-r011.pdf) reads “Laconia Branch, 431 Union Ave, Laconia NH 03246”, the Office field in producer_roster_northern.csv row 11.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r011/H003` The whole Disclosure Text on “District insurance counter card - Sean Donnelly” (producer-card-r011.pdf) sits inside the trim, none of it cut off, ending “claims-paying ability of the company.”
+  Measure: In Acrobat, open Preferences, Page Display and tick Show art, trim and bleed boxes; every disclosure line must sit inside the drawn trim box.
 - `LAYOUT-15/producer-card-r011/H004` Any premium figure on “District insurance counter card - Sean Donnelly” (producer-card-r011.pdf) is the plan_rates_2027.csv value for the plan and issue age band it is shown against.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r011/H005` If “District insurance counter card - Sean Donnelly” (producer-card-r011.pdf) shows premiums for more than one plan in plan_rates_2027.csv, a plain note says they are not quoted on the same basis.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r011/H006` “District insurance counter card - Sean Donnelly” (producer-card-r011.pdf) shows no phone number, email or web address; producer_roster_northern.csv row 11 gives none.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r011/H007` “District insurance counter card - Sean Donnelly” (producer-card-r011.pdf) has no superlative, urgency, exclamation mark, burst or starburst callout, implied guarantee of a return or of approval, or competitor comparison.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r011/H008` Any photograph on “District insurance counter card - Sean Donnelly” (producer-card-r011.pdf) other than producer_headshot_10.jpg is honestly labelled stock or illustration, never a family, client or policyholder presented as real.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r011/H009` “District insurance counter card - Sean Donnelly” (producer-card-r011.pdf) carries no district line, neither “Central Vermont district” nor any other district name; the office line does not count.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r011/H010` The largest text on “District insurance counter card - Sean Donnelly” (producer-card-r011.pdf) is the producer name “Sean Donnelly”.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r011/H011` On “District insurance counter card - Sean Donnelly” (producer-card-r011.pdf) the Disclosure Text is the smallest text on the card.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r011/H012` The headshot on “District insurance counter card - Sean Donnelly” (producer-card-r011.pdf) is producer_headshot_10.jpg, the Photo File in producer_roster_northern.csv row 11.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r011/H013` The headshot on “District insurance counter card - Sean Donnelly” (producer-card-r011.pdf) keeps the proportions of producer_headshot_10.jpg, not stretched or squashed.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r011/H014` The person in the headshot on “District insurance counter card - Sean Donnelly” (producer-card-r011.pdf) is recognizably the same person as in producer_headshot_10.jpg, with the face unaltered.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r011/H015` On “District insurance counter card - Sean Donnelly” (producer-card-r011.pdf), the navy jacket's shoulder and collar from producer_headshot_10.jpg are complete, with no part cut away where they meet the mid-grey wall.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r011/H016` The producer name “Sean Donnelly” on “District insurance counter card - Sean Donnelly” (producer-card-r011.pdf) is set in Lexend SemiBold, not a serif and not another weight.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r011/H017` The producer name on “District insurance counter card - Sean Donnelly” (producer-card-r011.pdf) reads “Sean Donnelly” in sentence case, not in capitals.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r011/H018` On “District insurance counter card - Sean Donnelly” (producer-card-r011.pdf) the producer name sits directly on a Heritage Green #3C6B54 rule running the full card width.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. Convert with Relative Colorimetric and black point compensation, the Adobe default. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-15/producer-card-r011/H019` The license line and office on “District insurance counter card - Sean Donnelly” (producer-card-r011.pdf), figures aside, are set in Source Serif 4 Regular.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r011/H020` Every figure on “District insurance counter card - Sean Donnelly” (producer-card-r011.pdf), including “05145” in the license line, is set in IBM Plex Sans Regular.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r011/H021` Each line of the license text and the office text on “District insurance counter card - Sean Donnelly” (producer-card-r011.pdf) has 65 characters or fewer.
+  Measure: Count the characters, spaces included, in the longest line of license text and of office text; each must be 65 or fewer.
 - `LAYOUT-15/producer-card-r011/H022` The colours of all type, panels, rules and icons on “District insurance counter card - Sean Donnelly” (producer-card-r011.pdf) come only from #1E2A3A, #4A5560, #F4F2EC, #C7CBC8 and #3C6B54.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. Convert with Relative Colorimetric and black point compensation, the Adobe default. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-15/producer-card-r011/H023` Document Paper #F4F2EC is the only colour used for the card ground and for any panel on “District insurance counter card - Sean Donnelly” (producer-card-r011.pdf).
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. Convert with Relative Colorimetric and black point compensation, the Adobe default. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-15/producer-card-r011/H024` Outside the headshot, Heritage Green #3C6B54 appears on “District insurance counter card - Sean Donnelly” (producer-card-r011.pdf) only as the two full-width rules.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. Convert with Relative Colorimetric and black point compensation, the Adobe default. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-15/producer-card-r011/H025` All type, panels, rules, dividers and the card ground on “District insurance counter card - Sean Donnelly” (producer-card-r011.pdf) are solid at full opacity, with no tint, transparency, gradient or shadow.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r011/H026` The headshot on “District insurance counter card - Sean Donnelly” (producer-card-r011.pdf) shows producer_headshot_10.jpg in natural colour and skin tones, not tinted, duotoned or recoloured toward the palette.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r012/H001` The Disclosure Text on “District insurance counter card - Rosa Castellano” (producer-card-r012.pdf) matches the Disclosure Text field of producer_roster_northern.csv row 12 word for word, with nothing added, dropped or reworded.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r012/H002` The office line on “District insurance counter card - Rosa Castellano” (producer-card-r012.pdf) reads “Rochester Branch, 22 South Main St, Rochester NH 03867”, the Office field in producer_roster_northern.csv row 12.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r012/H003` The whole Disclosure Text on “District insurance counter card - Rosa Castellano” (producer-card-r012.pdf) sits inside the trim, none of it cut off, ending “claims-paying ability of the company.”
+  Measure: In Acrobat, open Preferences, Page Display and tick Show art, trim and bleed boxes; every disclosure line must sit inside the drawn trim box.
 - `LAYOUT-15/producer-card-r012/H004` Any premium figure on “District insurance counter card - Rosa Castellano” (producer-card-r012.pdf) is the plan_rates_2027.csv value for the plan and issue age band it is shown against.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r012/H005` If “District insurance counter card - Rosa Castellano” (producer-card-r012.pdf) shows premiums for more than one plan in plan_rates_2027.csv, a plain note says they are not quoted on the same basis.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r012/H006` “District insurance counter card - Rosa Castellano” (producer-card-r012.pdf) shows no phone number, email or web address; producer_roster_northern.csv row 12 gives none.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r012/H007` “District insurance counter card - Rosa Castellano” (producer-card-r012.pdf) has no superlative, urgency, exclamation mark, burst or starburst callout, implied guarantee of a return or of approval, or competitor comparison.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r012/H008` Any photograph on “District insurance counter card - Rosa Castellano” (producer-card-r012.pdf) other than producer_headshot_11.jpg is honestly labelled stock or illustration, never a family, client or policyholder presented as real.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r012/H009` “District insurance counter card - Rosa Castellano” (producer-card-r012.pdf) carries no district line, neither “Central Vermont district” nor any other district name; the office line does not count.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r012/H010` The largest text on “District insurance counter card - Rosa Castellano” (producer-card-r012.pdf) is the producer name “Rosa Castellano”.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r012/H011` On “District insurance counter card - Rosa Castellano” (producer-card-r012.pdf) the Disclosure Text is the smallest text on the card.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r012/H012` The headshot on “District insurance counter card - Rosa Castellano” (producer-card-r012.pdf) is producer_headshot_11.jpg, the Photo File in producer_roster_northern.csv row 12.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r012/H013` The headshot on “District insurance counter card - Rosa Castellano” (producer-card-r012.pdf) keeps the proportions of producer_headshot_11.jpg, not stretched or squashed.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r012/H014` The person in the headshot on “District insurance counter card - Rosa Castellano” (producer-card-r012.pdf) is recognizably the same person as in producer_headshot_11.jpg, with the face unaltered.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r013/H001` The Disclosure Text on “District insurance counter card - Walter Pruitt” (producer-card-r013.pdf) matches the Disclosure Text field of producer_roster_northern.csv row 13 word for word, with nothing added, dropped or reworded.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r013/H002` The office line on “District insurance counter card - Walter Pruitt” (producer-card-r013.pdf) reads “Claremont Branch, 14 Tremont Sq, Claremont NH 03743”, the Office field in producer_roster_northern.csv row 13.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r013/H003` The whole Disclosure Text on “District insurance counter card - Walter Pruitt” (producer-card-r013.pdf) sits inside the trim, none of it cut off, ending “claims-paying ability of the company.”
+  Measure: In Acrobat, open Preferences, Page Display and tick Show art, trim and bleed boxes; every disclosure line must sit inside the drawn trim box.
 - `LAYOUT-15/producer-card-r013/H004` Any premium figure on “District insurance counter card - Walter Pruitt” (producer-card-r013.pdf) is the plan_rates_2027.csv value for the plan and issue age band it is shown against.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r013/H005` If “District insurance counter card - Walter Pruitt” (producer-card-r013.pdf) shows premiums for more than one plan in plan_rates_2027.csv, a plain note says they are not quoted on the same basis.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r013/H006` “District insurance counter card - Walter Pruitt” (producer-card-r013.pdf) shows no phone number, email or web address; producer_roster_northern.csv row 13 gives none.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r013/H007` “District insurance counter card - Walter Pruitt” (producer-card-r013.pdf) has no superlative, urgency, exclamation mark, burst or starburst callout, implied guarantee of a return or of approval, or competitor comparison.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r013/H008` Any photograph on “District insurance counter card - Walter Pruitt” (producer-card-r013.pdf) other than producer_headshot_12.jpg is honestly labelled stock or illustration, never a family, client or policyholder presented as real.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r013/H009` “District insurance counter card - Walter Pruitt” (producer-card-r013.pdf) carries no district line, neither “Central Vermont district” nor any other district name; the office line does not count.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r013/H010` The largest text on “District insurance counter card - Walter Pruitt” (producer-card-r013.pdf) is the producer name “Walter Pruitt”.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r013/H011` On “District insurance counter card - Walter Pruitt” (producer-card-r013.pdf) the Disclosure Text is the smallest text on the card.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r013/H012` The headshot on “District insurance counter card - Walter Pruitt” (producer-card-r013.pdf) is producer_headshot_12.jpg, the Photo File in producer_roster_northern.csv row 13.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r013/H013` The headshot on “District insurance counter card - Walter Pruitt” (producer-card-r013.pdf) keeps the proportions of producer_headshot_12.jpg, not stretched or squashed.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r013/H014` The person in the headshot on “District insurance counter card - Walter Pruitt” (producer-card-r013.pdf) is recognizably the same person as in producer_headshot_12.jpg, with the face unaltered.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r013/H015` On “District insurance counter card - Walter Pruitt” (producer-card-r013.pdf), the charcoal jacket's shoulder and collar from producer_headshot_12.jpg are complete, with no part cut away where they meet the mid-grey wall.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r013/H016` The producer name “Walter Pruitt” on “District insurance counter card - Walter Pruitt” (producer-card-r013.pdf) is set in Lexend SemiBold, not a serif and not another weight.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r013/H017` The producer name on “District insurance counter card - Walter Pruitt” (producer-card-r013.pdf) reads “Walter Pruitt” in sentence case, not in capitals.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r013/H018` On “District insurance counter card - Walter Pruitt” (producer-card-r013.pdf) the producer name sits directly on a Heritage Green #3C6B54 rule running the full card width.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. Convert with Relative Colorimetric and black point compensation, the Adobe default. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-15/producer-card-r013/H019` The license line and office on “District insurance counter card - Walter Pruitt” (producer-card-r013.pdf), figures aside, are set in Source Serif 4 Regular.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r013/H020` Every figure on “District insurance counter card - Walter Pruitt” (producer-card-r013.pdf), including “05170” in the license line, is set in IBM Plex Sans Regular.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r013/H021` Each line of the license text and the office text on “District insurance counter card - Walter Pruitt” (producer-card-r013.pdf) has 65 characters or fewer.
+  Measure: Count the characters, spaces included, in the longest line of license text and of office text; each must be 65 or fewer.
 - `LAYOUT-15/producer-card-r013/H022` The colours of all type, panels, rules and icons on “District insurance counter card - Walter Pruitt” (producer-card-r013.pdf) come only from #1E2A3A, #4A5560, #F4F2EC, #C7CBC8 and #3C6B54.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. Convert with Relative Colorimetric and black point compensation, the Adobe default. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-15/producer-card-r013/H023` Document Paper #F4F2EC is the only colour used for the card ground and for any panel on “District insurance counter card - Walter Pruitt” (producer-card-r013.pdf).
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. Convert with Relative Colorimetric and black point compensation, the Adobe default. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-15/producer-card-r013/H024` Outside the headshot, Heritage Green #3C6B54 appears on “District insurance counter card - Walter Pruitt” (producer-card-r013.pdf) only as the two full-width rules.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. Convert with Relative Colorimetric and black point compensation, the Adobe default. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-15/producer-card-r013/H025` All type, panels, rules, dividers and the card ground on “District insurance counter card - Walter Pruitt” (producer-card-r013.pdf) are solid at full opacity, with no tint, transparency, gradient or shadow.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r013/H026` The headshot on “District insurance counter card - Walter Pruitt” (producer-card-r013.pdf) shows producer_headshot_12.jpg in natural colour and skin tones, not tinted, duotoned or recoloured toward the palette.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r014/H001` The Disclosure Text on “District insurance counter card - Dana Whitfield” (producer-card-r014.pdf) matches the Disclosure Text field of producer_roster_northern.csv row 14 word for word, with nothing added, dropped or reworded.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r014/H002` The office line on “District insurance counter card - Dana Whitfield” (producer-card-r014.pdf) reads “Berlin Branch, 165 Main St, Berlin NH 03570”, the Office field in producer_roster_northern.csv row 14.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r014/H003` The whole Disclosure Text on “District insurance counter card - Dana Whitfield” (producer-card-r014.pdf) sits inside the trim, none of it cut off, ending “claims-paying ability of the company.”
+  Measure: In Acrobat, open Preferences, Page Display and tick Show art, trim and bleed boxes; every disclosure line must sit inside the drawn trim box.
 - `LAYOUT-15/producer-card-r014/H004` Any premium figure on “District insurance counter card - Dana Whitfield” (producer-card-r014.pdf) is the plan_rates_2027.csv value for the plan and issue age band it is shown against.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r014/H005` If “District insurance counter card - Dana Whitfield” (producer-card-r014.pdf) shows premiums for more than one plan in plan_rates_2027.csv, a plain note says they are not quoted on the same basis.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r014/H006` “District insurance counter card - Dana Whitfield” (producer-card-r014.pdf) shows no phone number, email or web address; producer_roster_northern.csv row 14 gives none.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r014/H007` “District insurance counter card - Dana Whitfield” (producer-card-r014.pdf) has no superlative, urgency, exclamation mark, burst or starburst callout, implied guarantee of a return or of approval, or competitor comparison.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r014/H008` Any photograph on “District insurance counter card - Dana Whitfield” (producer-card-r014.pdf) other than producer_headshot_13.jpg is honestly labelled stock or illustration, never a family, client or policyholder presented as real.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r014/H009` “District insurance counter card - Dana Whitfield” (producer-card-r014.pdf) carries no district line, neither “Central Vermont district” nor any other district name; the office line does not count.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r014/H010` The largest text on “District insurance counter card - Dana Whitfield” (producer-card-r014.pdf) is the producer name “Dana Whitfield”.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r014/H011` On “District insurance counter card - Dana Whitfield” (producer-card-r014.pdf) the Disclosure Text is the smallest text on the card.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r014/H012` The headshot on “District insurance counter card - Dana Whitfield” (producer-card-r014.pdf) is producer_headshot_13.jpg, the Photo File in producer_roster_northern.csv row 14.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r014/H013` The headshot on “District insurance counter card - Dana Whitfield” (producer-card-r014.pdf) keeps the proportions of producer_headshot_13.jpg, not stretched or squashed.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r014/H014` The person in the headshot on “District insurance counter card - Dana Whitfield” (producer-card-r014.pdf) is recognizably the same person as in producer_headshot_13.jpg, with the face unaltered.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r014/H015` The headshot on “District insurance counter card - Dana Whitfield” (producer-card-r014.pdf) shows no hair, skin or fabric detail that is not in the small 675 x 900 px producer_headshot_13.jpg.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r014/H016` The producer name “Dana Whitfield” on “District insurance counter card - Dana Whitfield” (producer-card-r014.pdf) is set in Lexend SemiBold, not a serif and not another weight.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r014/H017` The producer name on “District insurance counter card - Dana Whitfield” (producer-card-r014.pdf) reads “Dana Whitfield” in sentence case, not in capitals.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r014/H018` On “District insurance counter card - Dana Whitfield” (producer-card-r014.pdf) the producer name sits directly on a Heritage Green #3C6B54 rule running the full card width.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. Convert with Relative Colorimetric and black point compensation, the Adobe default. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-15/producer-card-r014/H019` The license line and office on “District insurance counter card - Dana Whitfield” (producer-card-r014.pdf), figures aside, are set in Source Serif 4 Regular.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r014/H020` Every figure on “District insurance counter card - Dana Whitfield” (producer-card-r014.pdf), including “05182” in the license line, is set in IBM Plex Sans Regular.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r014/H021` Each line of the license text and the office text on “District insurance counter card - Dana Whitfield” (producer-card-r014.pdf) has 65 characters or fewer.
+  Measure: Count the characters, spaces included, in the longest line of license text and of office text; each must be 65 or fewer.
 - `LAYOUT-15/producer-card-r014/H022` The colours of all type, panels, rules and icons on “District insurance counter card - Dana Whitfield” (producer-card-r014.pdf) come only from #1E2A3A, #4A5560, #F4F2EC, #C7CBC8 and #3C6B54.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. Convert with Relative Colorimetric and black point compensation, the Adobe default. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-15/producer-card-r014/H023` Document Paper #F4F2EC is the only colour used for the card ground and for any panel on “District insurance counter card - Dana Whitfield” (producer-card-r014.pdf).
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. Convert with Relative Colorimetric and black point compensation, the Adobe default. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-15/producer-card-r014/H024` Outside the headshot, Heritage Green #3C6B54 appears on “District insurance counter card - Dana Whitfield” (producer-card-r014.pdf) only as the two full-width rules.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. Convert with Relative Colorimetric and black point compensation, the Adobe default. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-15/producer-card-r014/H025` All type, panels, rules, dividers and the card ground on “District insurance counter card - Dana Whitfield” (producer-card-r014.pdf) are solid at full opacity, with no tint, transparency, gradient or shadow.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r014/H026` The headshot on “District insurance counter card - Dana Whitfield” (producer-card-r014.pdf) shows producer_headshot_13.jpg in natural colour and skin tones, not tinted, duotoned or recoloured toward the palette.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r015/H001` The Disclosure Text on “District insurance counter card - Priya Nandakumar” (producer-card-r015.pdf) matches the Disclosure Text field of producer_roster_northern.csv row 15 word for word, with nothing added, dropped or reworded.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r015/H002` The office line on “District insurance counter card - Priya Nandakumar” (producer-card-r015.pdf) reads “Salem Branch, 200 Main St, Salem NH 03079”, the Office field in producer_roster_northern.csv row 15.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r015/H003` The whole Disclosure Text on “District insurance counter card - Priya Nandakumar” (producer-card-r015.pdf) sits inside the trim, none of it cut off, ending “claims-paying ability of the company.”
+  Measure: In Acrobat, open Preferences, Page Display and tick Show art, trim and bleed boxes; every disclosure line must sit inside the drawn trim box.
 - `LAYOUT-15/producer-card-r015/H004` Any premium figure on “District insurance counter card - Priya Nandakumar” (producer-card-r015.pdf) is the plan_rates_2027.csv value for the plan and issue age band it is shown against.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r015/H005` If “District insurance counter card - Priya Nandakumar” (producer-card-r015.pdf) shows premiums for more than one plan in plan_rates_2027.csv, a plain note says they are not quoted on the same basis.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r015/H006` “District insurance counter card - Priya Nandakumar” (producer-card-r015.pdf) shows no phone number, email or web address; producer_roster_northern.csv row 15 gives none.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r015/H007` “District insurance counter card - Priya Nandakumar” (producer-card-r015.pdf) has no superlative, urgency, exclamation mark, burst or starburst callout, implied guarantee of a return or of approval, or competitor comparison.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r015/H008` “District insurance counter card - Priya Nandakumar” (producer-card-r015.pdf) shows no photograph, generated face or illustration presented as Priya Nandakumar; nandakumar_headshot.jpg was never supplied.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r015/H009` “District insurance counter card - Priya Nandakumar” (producer-card-r015.pdf) carries no district line, neither “Central Vermont district” nor any other district name; the office line does not count.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r015/H010` The largest text on “District insurance counter card - Priya Nandakumar” (producer-card-r015.pdf) is the producer name “Priya Nandakumar”.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r015/H011` On “District insurance counter card - Priya Nandakumar” (producer-card-r015.pdf) the Disclosure Text is the smallest text on the card.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r015/H012` No photograph on “District insurance counter card - Priya Nandakumar” (producer-card-r015.pdf) is any of the supplied headshots producer_headshot_01.jpg to producer_headshot_14.jpg.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r015/H014` The producer name “Priya Nandakumar” on “District insurance counter card - Priya Nandakumar” (producer-card-r015.pdf) is set in Lexend SemiBold, not a serif and not another weight.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r015/H015` The producer name on “District insurance counter card - Priya Nandakumar” (producer-card-r015.pdf) reads “Priya Nandakumar” in sentence case, not in capitals.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r015/H016` On “District insurance counter card - Priya Nandakumar” (producer-card-r015.pdf) the producer name sits directly on a Heritage Green #3C6B54 rule running the full card width.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. Convert with Relative Colorimetric and black point compensation, the Adobe default. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-15/producer-card-r015/H017` The license line and office on “District insurance counter card - Priya Nandakumar” (producer-card-r015.pdf), figures aside, are set in Source Serif 4 Regular.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r015/H018` Every figure on “District insurance counter card - Priya Nandakumar” (producer-card-r015.pdf), including “05188” in the license line, is set in IBM Plex Sans Regular.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r015/H019` Each line of the license text and the office text on “District insurance counter card - Priya Nandakumar” (producer-card-r015.pdf) has 65 characters or fewer.
+  Measure: Count the characters, spaces included, in the longest line of license text and of office text; each must be 65 or fewer.
 - `LAYOUT-15/producer-card-r015/H020` The colours of all type, panels, rules and icons on “District insurance counter card - Priya Nandakumar” (producer-card-r015.pdf) come only from #1E2A3A, #4A5560, #F4F2EC, #C7CBC8 and #3C6B54.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. Convert with Relative Colorimetric and black point compensation, the Adobe default. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-15/producer-card-r015/H021` Document Paper #F4F2EC is the only colour used for the card ground and for any panel on “District insurance counter card - Priya Nandakumar” (producer-card-r015.pdf).
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. Convert with Relative Colorimetric and black point compensation, the Adobe default. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-15/producer-card-r015/H022` Outside any photograph, Heritage Green #3C6B54 appears on “District insurance counter card - Priya Nandakumar” (producer-card-r015.pdf) only as the two full-width rules.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. Convert with Relative Colorimetric and black point compensation, the Adobe default. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-15/producer-card-r015/H023` All type, panels, rules, dividers and the card ground on “District insurance counter card - Priya Nandakumar” (producer-card-r015.pdf) are solid at full opacity, with no tint, transparency, gradient or shadow.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r015/H024` Any photograph on “District insurance counter card - Priya Nandakumar” (producer-card-r015.pdf) keeps its natural colour and skin tones, not tinted, duotoned or recoloured toward the palette.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-combined/H002` “District insurance counter card - combined production run” (producer-card-combined.pdf) has no page for Maureen Alcott.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r002/H004` If “District insurance counter card - Raymond Hollis” (producer-card-r002.pdf) shows premiums for more than one plan in plan_rates_2027.csv, a plain note says they are not quoted on the same basis.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r002/H005` The headshot on “District insurance counter card - Raymond Hollis” (producer-card-r002.pdf) is producer_headshot_01.jpg, the Photo File in producer_roster_northern.csv row 2.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r002/H006` The headshot on “District insurance counter card - Raymond Hollis” (producer-card-r002.pdf) keeps the proportions of producer_headshot_01.jpg, not stretched or squashed.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r002/H007` The license line and office on “District insurance counter card - Raymond Hollis” (producer-card-r002.pdf), figures aside, are set in Source Serif 4 Regular.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r002/H008` Outside the headshot, Heritage Green #3C6B54 appears on “District insurance counter card - Raymond Hollis” (producer-card-r002.pdf) only as the two full-width rules.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. Convert with Relative Colorimetric and black point compensation, the Adobe default. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-15/producer-card-r002/H009` The person in the headshot on “District insurance counter card - Raymond Hollis” (producer-card-r002.pdf) is recognizably the same person as in producer_headshot_01.jpg, with the face unaltered.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r002/H010` The largest text on “District insurance counter card - Raymond Hollis” (producer-card-r002.pdf) is the producer name “Raymond Hollis”.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r002/H011` On “District insurance counter card - Raymond Hollis” (producer-card-r002.pdf) the Disclosure Text is the smallest text on the card.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r002/H012` Any premium figure on “District insurance counter card - Raymond Hollis” (producer-card-r002.pdf) is the plan_rates_2027.csv value for the plan and issue age band it is shown against.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r002/H013` “District insurance counter card - Raymond Hollis” (producer-card-r002.pdf) shows no phone number, email or web address; producer_roster_northern.csv row 2 gives none.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r002/H014` “District insurance counter card - Raymond Hollis” (producer-card-r002.pdf) has no superlative, urgency, exclamation mark, burst or starburst callout, implied guarantee of a return or of approval, or competitor comparison.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r002/H015` Any photograph on “District insurance counter card - Raymond Hollis” (producer-card-r002.pdf) other than producer_headshot_01.jpg is honestly labelled stock or illustration, never a family, client or policyholder presented as real.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r002/H016` “District insurance counter card - Raymond Hollis” (producer-card-r002.pdf) carries no district line, neither “Central Vermont district” nor any other district name; the office line does not count.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r002/H017` The producer name “Raymond Hollis” on “District insurance counter card - Raymond Hollis” (producer-card-r002.pdf) is set in Lexend SemiBold, not a serif and not another weight.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r002/H018` The producer name on “District insurance counter card - Raymond Hollis” (producer-card-r002.pdf) reads “Raymond Hollis” in sentence case, not in capitals.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r002/H019` On “District insurance counter card - Raymond Hollis” (producer-card-r002.pdf) the producer name sits directly on a Heritage Green #3C6B54 rule running the full card width.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. Convert with Relative Colorimetric and black point compensation, the Adobe default. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-15/producer-card-r002/H020` Every figure on “District insurance counter card - Raymond Hollis” (producer-card-r002.pdf), including “04821” in the license line, is set in IBM Plex Sans Regular.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r002/H021` Each line of the license text and the office text on “District insurance counter card - Raymond Hollis” (producer-card-r002.pdf) has 65 characters or fewer.
+  Measure: Count the characters, spaces included, in the longest line of license text and of office text; each must be 65 or fewer.
 - `LAYOUT-15/producer-card-r002/H022` The colours of all type, panels, rules and icons on “District insurance counter card - Raymond Hollis” (producer-card-r002.pdf) come only from #1E2A3A, #4A5560, #F4F2EC, #C7CBC8 and #3C6B54.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. Convert with Relative Colorimetric and black point compensation, the Adobe default. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-15/producer-card-r002/H023` Document Paper #F4F2EC is the only colour used for the card ground and for any panel on “District insurance counter card - Raymond Hollis” (producer-card-r002.pdf).
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. Convert with Relative Colorimetric and black point compensation, the Adobe default. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-15/producer-card-r002/H024` All type, panels, rules, dividers and the card ground on “District insurance counter card - Raymond Hollis” (producer-card-r002.pdf) are solid at full opacity, with no tint, transparency, gradient or shadow.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r002/H025` The headshot on “District insurance counter card - Raymond Hollis” (producer-card-r002.pdf) shows producer_headshot_01.jpg in natural colour and skin tones, not tinted, duotoned or recoloured toward the palette.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r003/H004` Any premium figure on “District insurance counter card - Susan Grady” (producer-card-r003.pdf) is the plan_rates_2027.csv value for the plan and issue age band it is shown against.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r003/H005` The headshot on “District insurance counter card - Susan Grady” (producer-card-r003.pdf) is producer_headshot_02.jpg, the Photo File in producer_roster_northern.csv row 3.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r003/H006` On “District insurance counter card - Susan Grady” (producer-card-r003.pdf) the Disclosure Text is the smallest text on the card.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r003/H007` If “District insurance counter card - Susan Grady” (producer-card-r003.pdf) shows premiums for more than one plan in plan_rates_2027.csv, a plain note says they are not quoted on the same basis.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r003/H008` “District insurance counter card - Susan Grady” (producer-card-r003.pdf) shows no phone number, email or web address; producer_roster_northern.csv row 3 gives none.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r003/H009` “District insurance counter card - Susan Grady” (producer-card-r003.pdf) has no superlative, urgency, exclamation mark, burst or starburst callout, implied guarantee of a return or of approval, or competitor comparison.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r003/H010` Any photograph on “District insurance counter card - Susan Grady” (producer-card-r003.pdf) other than producer_headshot_02.jpg is honestly labelled stock or illustration, never a family, client or policyholder presented as real.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r003/H011` “District insurance counter card - Susan Grady” (producer-card-r003.pdf) carries no district line, neither “Central Vermont district” nor any other district name; the office line does not count.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r003/H012` The largest text on “District insurance counter card - Susan Grady” (producer-card-r003.pdf) is the producer name “Susan Grady”.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r003/H013` The headshot on “District insurance counter card - Susan Grady” (producer-card-r003.pdf) keeps the proportions of producer_headshot_02.jpg, not stretched or squashed.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r003/H014` The person in the headshot on “District insurance counter card - Susan Grady” (producer-card-r003.pdf) is recognizably the same person as in producer_headshot_02.jpg, with the face unaltered.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r003/H015` On “District insurance counter card - Susan Grady” (producer-card-r003.pdf), the charcoal jacket's shoulder and collar from producer_headshot_02.jpg are complete, with no part cut away where they meet the mid-grey wall.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r003/H016` The producer name “Susan Grady” on “District insurance counter card - Susan Grady” (producer-card-r003.pdf) is set in Lexend SemiBold, not a serif and not another weight.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r003/H017` The producer name on “District insurance counter card - Susan Grady” (producer-card-r003.pdf) reads “Susan Grady” in sentence case, not in capitals.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r003/H018` On “District insurance counter card - Susan Grady” (producer-card-r003.pdf) the producer name sits directly on a Heritage Green #3C6B54 rule running the full card width.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. Convert with Relative Colorimetric and black point compensation, the Adobe default. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-15/producer-card-r003/H019` The license line and office on “District insurance counter card - Susan Grady” (producer-card-r003.pdf), figures aside, are set in Source Serif 4 Regular.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r003/H020` Every figure on “District insurance counter card - Susan Grady” (producer-card-r003.pdf), including “04833” in the license line, is set in IBM Plex Sans Regular.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r003/H021` Each line of the license text and the office text on “District insurance counter card - Susan Grady” (producer-card-r003.pdf) has 65 characters or fewer.
+  Measure: Count the characters, spaces included, in the longest line of license text and of office text; each must be 65 or fewer.
 - `LAYOUT-15/producer-card-r003/H022` The colours of all type, panels, rules and icons on “District insurance counter card - Susan Grady” (producer-card-r003.pdf) come only from #1E2A3A, #4A5560, #F4F2EC, #C7CBC8 and #3C6B54.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. Convert with Relative Colorimetric and black point compensation, the Adobe default. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-15/producer-card-r003/H023` Document Paper #F4F2EC is the only colour used for the card ground and for any panel on “District insurance counter card - Susan Grady” (producer-card-r003.pdf).
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. Convert with Relative Colorimetric and black point compensation, the Adobe default. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-15/producer-card-r003/H024` Outside the headshot, Heritage Green #3C6B54 appears on “District insurance counter card - Susan Grady” (producer-card-r003.pdf) only as the two full-width rules.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. Convert with Relative Colorimetric and black point compensation, the Adobe default. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-15/producer-card-r003/H025` All type, panels, rules, dividers and the card ground on “District insurance counter card - Susan Grady” (producer-card-r003.pdf) are solid at full opacity, with no tint, transparency, gradient or shadow.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r003/H026` The headshot on “District insurance counter card - Susan Grady” (producer-card-r003.pdf) shows producer_headshot_02.jpg in natural colour and skin tones, not tinted, duotoned or recoloured toward the palette.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r002/H034` The Disclosure Text on “District insurance counter card - Raymond Hollis” (producer-card-r002.pdf) is set in Source Serif 4 Regular.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r003/H035` The Disclosure Text on “District insurance counter card - Susan Grady” (producer-card-r003.pdf) is set in Source Serif 4 Regular.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r005/H035` The Disclosure Text on “District insurance counter card - Paul Devoe” (producer-card-r005.pdf) is set in Source Serif 4 Regular.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r006/H035` The Disclosure Text on “District insurance counter card - Karen Marsh” (producer-card-r006.pdf) is set in Source Serif 4 Regular.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r007/H015` The producer name “Daniel Okafor” on “District insurance counter card - Daniel Okafor” (producer-card-r007.pdf) is set in Lexend SemiBold, not a serif and not another weight.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r007/H019` The license line and office on “District insurance counter card - Daniel Okafor” (producer-card-r007.pdf), figures aside, are set in Source Serif 4 Regular.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r007/H023` The Disclosure Text on “District insurance counter card - Daniel Okafor” (producer-card-r007.pdf) is set in Source Serif 4 Regular.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r007/H027` Every figure on “District insurance counter card - Daniel Okafor” (producer-card-r007.pdf), including “05090” in the license line, is set in IBM Plex Sans Regular.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r008/H035` The Disclosure Text on “District insurance counter card - Gina Bianchi” (producer-card-r008.pdf) is set in Source Serif 4 Regular.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r009/H035` The Disclosure Text on “District insurance counter card - Miguel Reyes” (producer-card-r009.pdf) is set in Source Serif 4 Regular.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r010/H034` The Disclosure Text on “District insurance counter card - Linh Tran” (producer-card-r010.pdf) is set in Source Serif 4 Regular.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r011/H035` The Disclosure Text on “District insurance counter card - Sean Donnelly” (producer-card-r011.pdf) is set in Source Serif 4 Regular.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r012/H015` The producer name “Rosa Castellano” on “District insurance counter card - Rosa Castellano” (producer-card-r012.pdf) is set in Lexend SemiBold, not a serif and not another weight.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r012/H019` The license line and office on “District insurance counter card - Rosa Castellano” (producer-card-r012.pdf), figures aside, are set in Source Serif 4 Regular.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r012/H023` The Disclosure Text on “District insurance counter card - Rosa Castellano” (producer-card-r012.pdf) is set in Source Serif 4 Regular.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r012/H027` Every figure on “District insurance counter card - Rosa Castellano” (producer-card-r012.pdf), including “05159” in the license line, is set in IBM Plex Sans Regular.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r013/H035` The Disclosure Text on “District insurance counter card - Walter Pruitt” (producer-card-r013.pdf) is set in Source Serif 4 Regular.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r014/H035` The Disclosure Text on “District insurance counter card - Dana Whitfield” (producer-card-r014.pdf) is set in Source Serif 4 Regular.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r015/H033` The Disclosure Text on “District insurance counter card - Priya Nandakumar” (producer-card-r015.pdf) is set in Source Serif 4 Regular.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r002/H047` The headshot on “District insurance counter card - Raymond Hollis” (producer-card-r002.pdf) is placed at 300 ppi or more at its printed size.
+  Measure: In Acrobat Pro, open Print Production, Output Preview, Object Inspector, click the headshot and read its effective resolution.
 - `LAYOUT-15/producer-card-r002/H048` The producer name on “District insurance counter card - Raymond Hollis” (producer-card-r002.pdf) is not visibly letterspaced: its letters are not spread apart with added space.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r002/H049` On “District insurance counter card - Raymond Hollis” (producer-card-r002.pdf) a Heritage Green #3C6B54 rule running the full card width sits directly above the Disclosure Text.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. Convert with Relative Colorimetric and black point compensation, the Adobe default. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-15/producer-card-r002/H050` If a premium appears on “District insurance counter card - Raymond Hollis” (producer-card-r002.pdf), it is neither italic nor bold.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r002/H051` The producer name on “District insurance counter card - Raymond Hollis” (producer-card-r002.pdf) is Ink Navy #1E2A3A, the same dark blue as the producer name on countercard_2026_print.pdf.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. Convert with Relative Colorimetric and black point compensation, the Adobe default. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-15/producer-card-r002/H052` The Disclosure Text on “District insurance counter card - Raymond Hollis” (producer-card-r002.pdf) is Ink Navy #1E2A3A, the same dark blue as the disclosure on countercard_2026_print.pdf.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. Convert with Relative Colorimetric and black point compensation, the Adobe default. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-15/producer-card-r002/H053` The license line and office on “District insurance counter card - Raymond Hollis” (producer-card-r002.pdf) are Slate #4A5560, the same grey as the license line and office on countercard_2026_print.pdf.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. Convert with Relative Colorimetric and black point compensation, the Adobe default. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-15/producer-card-r002/H054` Outside the headshot, any Mist Grey #C7CBC8 on “District insurance counter card - Raymond Hollis” (producer-card-r002.pdf) is only a thin divider or keyline, never type, a panel or the ground.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. Convert with Relative Colorimetric and black point compensation, the Adobe default. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-15/producer-card-r002/H055` No scrim, gradient or overlay of any colour sits over a photograph on “District insurance counter card - Raymond Hollis” (producer-card-r002.pdf).
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r002/H056` “District insurance counter card - Raymond Hollis” (producer-card-r002.pdf) carries no newly drawn Aldervale Mutual logo, monogram or symbol.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r003/H048` The headshot on “District insurance counter card - Susan Grady” (producer-card-r003.pdf) is placed at 300 ppi or more at its printed size.
+  Measure: In Acrobat Pro, open Print Production, Output Preview, Object Inspector, click the headshot and read its effective resolution.
 - `LAYOUT-15/producer-card-r003/H049` The producer name on “District insurance counter card - Susan Grady” (producer-card-r003.pdf) is not visibly letterspaced: its letters are not spread apart with added space.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r003/H050` On “District insurance counter card - Susan Grady” (producer-card-r003.pdf) a Heritage Green #3C6B54 rule running the full card width sits directly above the Disclosure Text.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. Convert with Relative Colorimetric and black point compensation, the Adobe default. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-15/producer-card-r003/H051` If a premium appears on “District insurance counter card - Susan Grady” (producer-card-r003.pdf), it is neither italic nor bold.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r003/H052` The producer name on “District insurance counter card - Susan Grady” (producer-card-r003.pdf) is Ink Navy #1E2A3A, the same dark blue as the producer name on countercard_2026_print.pdf.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. Convert with Relative Colorimetric and black point compensation, the Adobe default. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-15/producer-card-r003/H053` The Disclosure Text on “District insurance counter card - Susan Grady” (producer-card-r003.pdf) is Ink Navy #1E2A3A, the same dark blue as the disclosure on countercard_2026_print.pdf.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. Convert with Relative Colorimetric and black point compensation, the Adobe default. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-15/producer-card-r003/H054` The license line and office on “District insurance counter card - Susan Grady” (producer-card-r003.pdf) are Slate #4A5560, the same grey as the license line and office on countercard_2026_print.pdf.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. Convert with Relative Colorimetric and black point compensation, the Adobe default. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-15/producer-card-r003/H055` Outside the headshot, any Mist Grey #C7CBC8 on “District insurance counter card - Susan Grady” (producer-card-r003.pdf) is only a thin divider or keyline, never type, a panel or the ground.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. Convert with Relative Colorimetric and black point compensation, the Adobe default. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-15/producer-card-r003/H056` No scrim, gradient or overlay of any colour sits over a photograph on “District insurance counter card - Susan Grady” (producer-card-r003.pdf).
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r003/H057` The two Heritage Green rules on “District insurance counter card - Susan Grady” (producer-card-r003.pdf) sit at the same heights as on “District insurance counter card - Raymond Hollis” (producer-card-r002.pdf).
+  Measure: Show trim boxes (Preferences, Page Display); measure top trim to each rule (Measure tool); each distance must match that rule on producer-card-r002.pdf within 0.5 mm.
 - `LAYOUT-15/producer-card-r003/H058` “District insurance counter card - Susan Grady” (producer-card-r003.pdf) carries no newly drawn Aldervale Mutual logo, monogram or symbol.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r005/H048` The headshot on “District insurance counter card - Paul Devoe” (producer-card-r005.pdf) is placed at 300 ppi or more at its printed size.
+  Measure: In Acrobat Pro, open Print Production, Output Preview, Object Inspector, click the headshot and read its effective resolution.
 - `LAYOUT-15/producer-card-r005/H049` The producer name on “District insurance counter card - Paul Devoe” (producer-card-r005.pdf) is not visibly letterspaced: its letters are not spread apart with added space.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r005/H050` On “District insurance counter card - Paul Devoe” (producer-card-r005.pdf) a Heritage Green #3C6B54 rule running the full card width sits directly above the Disclosure Text.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. Convert with Relative Colorimetric and black point compensation, the Adobe default. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-15/producer-card-r005/H051` The Disclosure Text on “District insurance counter card - Paul Devoe” (producer-card-r005.pdf) is set no smaller than the Disclosure Text on “District insurance counter card - Raymond Hollis” (producer-card-r002.pdf).
+  Measure: At 3200%, measure the M height in “Mutual” in both disclosures with Acrobat's Measure tool; No if this card's is over 0.05 mm shorter.
 - `LAYOUT-15/producer-card-r005/H052` If a premium appears on “District insurance counter card - Paul Devoe” (producer-card-r005.pdf), it is neither italic nor bold.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r005/H053` The producer name on “District insurance counter card - Paul Devoe” (producer-card-r005.pdf) is Ink Navy #1E2A3A, the same dark blue as the producer name on countercard_2026_print.pdf.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. Convert with Relative Colorimetric and black point compensation, the Adobe default. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-15/producer-card-r005/H054` The Disclosure Text on “District insurance counter card - Paul Devoe” (producer-card-r005.pdf) is Ink Navy #1E2A3A, the same dark blue as the disclosure on countercard_2026_print.pdf.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. Convert with Relative Colorimetric and black point compensation, the Adobe default. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-15/producer-card-r005/H055` The license line and office on “District insurance counter card - Paul Devoe” (producer-card-r005.pdf) are Slate #4A5560, the same grey as the license line and office on countercard_2026_print.pdf.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. Convert with Relative Colorimetric and black point compensation, the Adobe default. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-15/producer-card-r005/H056` Outside the headshot, any Mist Grey #C7CBC8 on “District insurance counter card - Paul Devoe” (producer-card-r005.pdf) is only a thin divider or keyline, never type, a panel or the ground.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. Convert with Relative Colorimetric and black point compensation, the Adobe default. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-15/producer-card-r005/H057` No scrim, gradient or overlay of any colour sits over a photograph on “District insurance counter card - Paul Devoe” (producer-card-r005.pdf).
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r005/H058` The two Heritage Green rules on “District insurance counter card - Paul Devoe” (producer-card-r005.pdf) sit at the same heights as on “District insurance counter card - Raymond Hollis” (producer-card-r002.pdf).
+  Measure: Show trim boxes (Preferences, Page Display); measure top trim to each rule (Measure tool); each distance must match that rule on producer-card-r002.pdf within 0.5 mm.
 - `LAYOUT-15/producer-card-r005/H059` “District insurance counter card - Paul Devoe” (producer-card-r005.pdf) carries no newly drawn Aldervale Mutual logo, monogram or symbol.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r006/H048` The headshot on “District insurance counter card - Karen Marsh” (producer-card-r006.pdf) is placed at 300 ppi or more at its printed size.
+  Measure: In Acrobat Pro, open Print Production, Output Preview, Object Inspector, click the headshot and read its effective resolution.
 - `LAYOUT-15/producer-card-r006/H049` The producer name on “District insurance counter card - Karen Marsh” (producer-card-r006.pdf) is not visibly letterspaced: its letters are not spread apart with added space.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r006/H050` On “District insurance counter card - Karen Marsh” (producer-card-r006.pdf) a Heritage Green #3C6B54 rule running the full card width sits directly above the Disclosure Text.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. Convert with Relative Colorimetric and black point compensation, the Adobe default. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-15/producer-card-r006/H051` If a premium appears on “District insurance counter card - Karen Marsh” (producer-card-r006.pdf), it is neither italic nor bold.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r006/H052` The producer name on “District insurance counter card - Karen Marsh” (producer-card-r006.pdf) is Ink Navy #1E2A3A, the same dark blue as the producer name on countercard_2026_print.pdf.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. Convert with Relative Colorimetric and black point compensation, the Adobe default. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-15/producer-card-r006/H053` The Disclosure Text on “District insurance counter card - Karen Marsh” (producer-card-r006.pdf) is Ink Navy #1E2A3A, the same dark blue as the disclosure on countercard_2026_print.pdf.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. Convert with Relative Colorimetric and black point compensation, the Adobe default. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-15/producer-card-r006/H054` The license line and office on “District insurance counter card - Karen Marsh” (producer-card-r006.pdf) are Slate #4A5560, the same grey as the license line and office on countercard_2026_print.pdf.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. Convert with Relative Colorimetric and black point compensation, the Adobe default. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-15/producer-card-r006/H055` Outside the headshot, any Mist Grey #C7CBC8 on “District insurance counter card - Karen Marsh” (producer-card-r006.pdf) is only a thin divider or keyline, never type, a panel or the ground.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. Convert with Relative Colorimetric and black point compensation, the Adobe default. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-15/producer-card-r006/H056` No scrim, gradient or overlay of any colour sits over a photograph on “District insurance counter card - Karen Marsh” (producer-card-r006.pdf).
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r006/H057` The two Heritage Green rules on “District insurance counter card - Karen Marsh” (producer-card-r006.pdf) sit at the same heights as on “District insurance counter card - Raymond Hollis” (producer-card-r002.pdf).
+  Measure: Show trim boxes (Preferences, Page Display); measure top trim to each rule (Measure tool); each distance must match that rule on producer-card-r002.pdf within 0.5 mm.
 - `LAYOUT-15/producer-card-r006/H058` “District insurance counter card - Karen Marsh” (producer-card-r006.pdf) carries no newly drawn Aldervale Mutual logo, monogram or symbol.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r007/H036` The headshot on “District insurance counter card - Daniel Okafor” (producer-card-r007.pdf) is placed at 300 ppi or more at its printed size.
+  Measure: In Acrobat Pro, open Print Production, Output Preview, Object Inspector, click the headshot and read its effective resolution.
 - `LAYOUT-15/producer-card-r007/H037` The producer name on “District insurance counter card - Daniel Okafor” (producer-card-r007.pdf) reads “Daniel Okafor” in sentence case, not in capitals.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r007/H038` The producer name on “District insurance counter card - Daniel Okafor” (producer-card-r007.pdf) is not visibly letterspaced: its letters are not spread apart with added space.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r007/H039` On “District insurance counter card - Daniel Okafor” (producer-card-r007.pdf) the producer name sits directly on a Heritage Green #3C6B54 rule running the full card width.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. Convert with Relative Colorimetric and black point compensation, the Adobe default. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-15/producer-card-r007/H040` On “District insurance counter card - Daniel Okafor” (producer-card-r007.pdf) a Heritage Green #3C6B54 rule running the full card width sits directly above the Disclosure Text.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. Convert with Relative Colorimetric and black point compensation, the Adobe default. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-15/producer-card-r007/H041` If a premium appears on “District insurance counter card - Daniel Okafor” (producer-card-r007.pdf), it is neither italic nor bold.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r007/H042` Each line of the license text and the office text on “District insurance counter card - Daniel Okafor” (producer-card-r007.pdf) has 65 characters or fewer.
+  Measure: Count the characters, spaces included, in the longest line of license text and of office text; each must be 65 or fewer.
 - `LAYOUT-15/producer-card-r007/H043` The colours of all type, panels, rules and icons on “District insurance counter card - Daniel Okafor” (producer-card-r007.pdf) come only from #1E2A3A, #4A5560, #F4F2EC, #C7CBC8 and #3C6B54.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. Convert with Relative Colorimetric and black point compensation, the Adobe default. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-15/producer-card-r007/H044` Document Paper #F4F2EC is the only colour used for the card ground and for any panel on “District insurance counter card - Daniel Okafor” (producer-card-r007.pdf).
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. Convert with Relative Colorimetric and black point compensation, the Adobe default. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-15/producer-card-r007/H045` The producer name on “District insurance counter card - Daniel Okafor” (producer-card-r007.pdf) is Ink Navy #1E2A3A, the same dark blue as the producer name on countercard_2026_print.pdf.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. Convert with Relative Colorimetric and black point compensation, the Adobe default. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-15/producer-card-r007/H046` The Disclosure Text on “District insurance counter card - Daniel Okafor” (producer-card-r007.pdf) is Ink Navy #1E2A3A, the same dark blue as the disclosure on countercard_2026_print.pdf.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. Convert with Relative Colorimetric and black point compensation, the Adobe default. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-15/producer-card-r007/H047` The license line and office on “District insurance counter card - Daniel Okafor” (producer-card-r007.pdf) are Slate #4A5560, the same grey as the license line and office on countercard_2026_print.pdf.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. Convert with Relative Colorimetric and black point compensation, the Adobe default. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-15/producer-card-r007/H048` Outside the headshot, Heritage Green #3C6B54 appears on “District insurance counter card - Daniel Okafor” (producer-card-r007.pdf) only as the two full-width rules.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. Convert with Relative Colorimetric and black point compensation, the Adobe default. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-15/producer-card-r007/H049` Outside the headshot, any Mist Grey #C7CBC8 on “District insurance counter card - Daniel Okafor” (producer-card-r007.pdf) is only a thin divider or keyline, never type, a panel or the ground.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. Convert with Relative Colorimetric and black point compensation, the Adobe default. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-15/producer-card-r007/H050` All type, panels, rules, dividers and the card ground on “District insurance counter card - Daniel Okafor” (producer-card-r007.pdf) are solid at full opacity, with no tint, transparency, gradient or shadow.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r007/H051` No scrim, gradient or overlay of any colour sits over a photograph on “District insurance counter card - Daniel Okafor” (producer-card-r007.pdf).
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r007/H052` The headshot on “District insurance counter card - Daniel Okafor” (producer-card-r007.pdf) shows producer_headshot_06.jpg in natural colour and skin tones, not tinted, duotoned or recoloured toward the palette.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r007/H053` The two Heritage Green rules on “District insurance counter card - Daniel Okafor” (producer-card-r007.pdf) sit at the same heights as on “District insurance counter card - Raymond Hollis” (producer-card-r002.pdf).
+  Measure: Show trim boxes (Preferences, Page Display); measure top trim to each rule (Measure tool); each distance must match that rule on producer-card-r002.pdf within 0.5 mm.
 - `LAYOUT-15/producer-card-r007/H054` “District insurance counter card - Daniel Okafor” (producer-card-r007.pdf) carries no newly drawn Aldervale Mutual logo, monogram or symbol.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r008/H048` The headshot on “District insurance counter card - Gina Bianchi” (producer-card-r008.pdf) is placed at 300 ppi or more at its printed size.
+  Measure: In Acrobat Pro, open Print Production, Output Preview, Object Inspector, click the headshot and read its effective resolution.
 - `LAYOUT-15/producer-card-r008/H049` The producer name on “District insurance counter card - Gina Bianchi” (producer-card-r008.pdf) is not visibly letterspaced: its letters are not spread apart with added space.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r008/H050` On “District insurance counter card - Gina Bianchi” (producer-card-r008.pdf) a Heritage Green #3C6B54 rule running the full card width sits directly above the Disclosure Text.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. Convert with Relative Colorimetric and black point compensation, the Adobe default. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-15/producer-card-r008/H051` If a premium appears on “District insurance counter card - Gina Bianchi” (producer-card-r008.pdf), it is neither italic nor bold.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r008/H052` The producer name on “District insurance counter card - Gina Bianchi” (producer-card-r008.pdf) is Ink Navy #1E2A3A, the same dark blue as the producer name on countercard_2026_print.pdf.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. Convert with Relative Colorimetric and black point compensation, the Adobe default. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-15/producer-card-r008/H053` The Disclosure Text on “District insurance counter card - Gina Bianchi” (producer-card-r008.pdf) is Ink Navy #1E2A3A, the same dark blue as the disclosure on countercard_2026_print.pdf.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. Convert with Relative Colorimetric and black point compensation, the Adobe default. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-15/producer-card-r008/H054` The license line and office on “District insurance counter card - Gina Bianchi” (producer-card-r008.pdf) are Slate #4A5560, the same grey as the license line and office on countercard_2026_print.pdf.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. Convert with Relative Colorimetric and black point compensation, the Adobe default. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-15/producer-card-r008/H055` Outside the headshot, any Mist Grey #C7CBC8 on “District insurance counter card - Gina Bianchi” (producer-card-r008.pdf) is only a thin divider or keyline, never type, a panel or the ground.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. Convert with Relative Colorimetric and black point compensation, the Adobe default. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-15/producer-card-r008/H056` No scrim, gradient or overlay of any colour sits over a photograph on “District insurance counter card - Gina Bianchi” (producer-card-r008.pdf).
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r008/H057` The two Heritage Green rules on “District insurance counter card - Gina Bianchi” (producer-card-r008.pdf) sit at the same heights as on “District insurance counter card - Raymond Hollis” (producer-card-r002.pdf).
+  Measure: Show trim boxes (Preferences, Page Display); measure top trim to each rule (Measure tool); each distance must match that rule on producer-card-r002.pdf within 0.5 mm.
 - `LAYOUT-15/producer-card-r008/H058` “District insurance counter card - Gina Bianchi” (producer-card-r008.pdf) carries no newly drawn Aldervale Mutual logo, monogram or symbol.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r009/H048` The headshot on “District insurance counter card - Miguel Reyes” (producer-card-r009.pdf) is placed at 300 ppi or more at its printed size.
+  Measure: In Acrobat Pro, open Print Production, Output Preview, Object Inspector, click the headshot and read its effective resolution.
 - `LAYOUT-15/producer-card-r009/H049` The producer name on “District insurance counter card - Miguel Reyes” (producer-card-r009.pdf) is not visibly letterspaced: its letters are not spread apart with added space.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r009/H050` On “District insurance counter card - Miguel Reyes” (producer-card-r009.pdf) a Heritage Green #3C6B54 rule running the full card width sits directly above the Disclosure Text.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. Convert with Relative Colorimetric and black point compensation, the Adobe default. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-15/producer-card-r009/H051` If a premium appears on “District insurance counter card - Miguel Reyes” (producer-card-r009.pdf), it is neither italic nor bold.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r009/H052` The producer name on “District insurance counter card - Miguel Reyes” (producer-card-r009.pdf) is Ink Navy #1E2A3A, the same dark blue as the producer name on countercard_2026_print.pdf.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. Convert with Relative Colorimetric and black point compensation, the Adobe default. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-15/producer-card-r009/H053` The Disclosure Text on “District insurance counter card - Miguel Reyes” (producer-card-r009.pdf) is Ink Navy #1E2A3A, the same dark blue as the disclosure on countercard_2026_print.pdf.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. Convert with Relative Colorimetric and black point compensation, the Adobe default. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-15/producer-card-r009/H054` The license line and office on “District insurance counter card - Miguel Reyes” (producer-card-r009.pdf) are Slate #4A5560, the same grey as the license line and office on countercard_2026_print.pdf.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. Convert with Relative Colorimetric and black point compensation, the Adobe default. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-15/producer-card-r009/H055` Outside the headshot, any Mist Grey #C7CBC8 on “District insurance counter card - Miguel Reyes” (producer-card-r009.pdf) is only a thin divider or keyline, never type, a panel or the ground.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. Convert with Relative Colorimetric and black point compensation, the Adobe default. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-15/producer-card-r009/H056` No scrim, gradient or overlay of any colour sits over a photograph on “District insurance counter card - Miguel Reyes” (producer-card-r009.pdf).
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r009/H057` The two Heritage Green rules on “District insurance counter card - Miguel Reyes” (producer-card-r009.pdf) sit at the same heights as on “District insurance counter card - Raymond Hollis” (producer-card-r002.pdf).
+  Measure: Show trim boxes (Preferences, Page Display); measure top trim to each rule (Measure tool); each distance must match that rule on producer-card-r002.pdf within 0.5 mm.
 - `LAYOUT-15/producer-card-r009/H058` “District insurance counter card - Miguel Reyes” (producer-card-r009.pdf) carries no newly drawn Aldervale Mutual logo, monogram or symbol.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r010/H047` The headshot on “District insurance counter card - Linh Tran” (producer-card-r010.pdf) is placed at 300 ppi or more at its printed size.
+  Measure: In Acrobat Pro, open Print Production, Output Preview, Object Inspector, click the headshot and read its effective resolution.
 - `LAYOUT-15/producer-card-r010/H048` The producer name on “District insurance counter card - Linh Tran” (producer-card-r010.pdf) is not visibly letterspaced: its letters are not spread apart with added space.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r010/H049` On “District insurance counter card - Linh Tran” (producer-card-r010.pdf) a Heritage Green #3C6B54 rule running the full card width sits directly above the Disclosure Text.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. Convert with Relative Colorimetric and black point compensation, the Adobe default. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-15/producer-card-r010/H050` The Disclosure Text on “District insurance counter card - Linh Tran” (producer-card-r010.pdf) is set no smaller than the Disclosure Text on “District insurance counter card - Raymond Hollis” (producer-card-r002.pdf).
+  Measure: At 3200%, measure the M height in “Mutual” in both disclosures with Acrobat's Measure tool; No if this card's is over 0.05 mm shorter.
 - `LAYOUT-15/producer-card-r010/H051` If a premium appears on “District insurance counter card - Linh Tran” (producer-card-r010.pdf), it is neither italic nor bold.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r010/H052` The producer name on “District insurance counter card - Linh Tran” (producer-card-r010.pdf) is Ink Navy #1E2A3A, the same dark blue as the producer name on countercard_2026_print.pdf.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. Convert with Relative Colorimetric and black point compensation, the Adobe default. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-15/producer-card-r010/H053` The Disclosure Text on “District insurance counter card - Linh Tran” (producer-card-r010.pdf) is Ink Navy #1E2A3A, the same dark blue as the disclosure on countercard_2026_print.pdf.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. Convert with Relative Colorimetric and black point compensation, the Adobe default. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-15/producer-card-r010/H054` The license line and office on “District insurance counter card - Linh Tran” (producer-card-r010.pdf) are Slate #4A5560, the same grey as the license line and office on countercard_2026_print.pdf.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. Convert with Relative Colorimetric and black point compensation, the Adobe default. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-15/producer-card-r010/H055` Outside the headshot, any Mist Grey #C7CBC8 on “District insurance counter card - Linh Tran” (producer-card-r010.pdf) is only a thin divider or keyline, never type, a panel or the ground.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. Convert with Relative Colorimetric and black point compensation, the Adobe default. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-15/producer-card-r010/H056` No scrim, gradient or overlay of any colour sits over a photograph on “District insurance counter card - Linh Tran” (producer-card-r010.pdf).
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r010/H057` The two Heritage Green rules on “District insurance counter card - Linh Tran” (producer-card-r010.pdf) sit at the same heights as on “District insurance counter card - Raymond Hollis” (producer-card-r002.pdf).
+  Measure: Show trim boxes (Preferences, Page Display); measure top trim to each rule (Measure tool); each distance must match that rule on producer-card-r002.pdf within 0.5 mm.
 - `LAYOUT-15/producer-card-r010/H058` “District insurance counter card - Linh Tran” (producer-card-r010.pdf) carries no newly drawn Aldervale Mutual logo, monogram or symbol.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r011/H048` The headshot on “District insurance counter card - Sean Donnelly” (producer-card-r011.pdf) is placed at 300 ppi or more at its printed size.
+  Measure: In Acrobat Pro, open Print Production, Output Preview, Object Inspector, click the headshot and read its effective resolution.
 - `LAYOUT-15/producer-card-r011/H049` The producer name on “District insurance counter card - Sean Donnelly” (producer-card-r011.pdf) is not visibly letterspaced: its letters are not spread apart with added space.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r011/H050` On “District insurance counter card - Sean Donnelly” (producer-card-r011.pdf) a Heritage Green #3C6B54 rule running the full card width sits directly above the Disclosure Text.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. Convert with Relative Colorimetric and black point compensation, the Adobe default. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-15/producer-card-r011/H051` If a premium appears on “District insurance counter card - Sean Donnelly” (producer-card-r011.pdf), it is neither italic nor bold.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r011/H052` The producer name on “District insurance counter card - Sean Donnelly” (producer-card-r011.pdf) is Ink Navy #1E2A3A, the same dark blue as the producer name on countercard_2026_print.pdf.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. Convert with Relative Colorimetric and black point compensation, the Adobe default. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-15/producer-card-r011/H053` The Disclosure Text on “District insurance counter card - Sean Donnelly” (producer-card-r011.pdf) is Ink Navy #1E2A3A, the same dark blue as the disclosure on countercard_2026_print.pdf.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. Convert with Relative Colorimetric and black point compensation, the Adobe default. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-15/producer-card-r011/H054` The license line and office on “District insurance counter card - Sean Donnelly” (producer-card-r011.pdf) are Slate #4A5560, the same grey as the license line and office on countercard_2026_print.pdf.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. Convert with Relative Colorimetric and black point compensation, the Adobe default. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-15/producer-card-r011/H055` Outside the headshot, any Mist Grey #C7CBC8 on “District insurance counter card - Sean Donnelly” (producer-card-r011.pdf) is only a thin divider or keyline, never type, a panel or the ground.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. Convert with Relative Colorimetric and black point compensation, the Adobe default. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-15/producer-card-r011/H056` No scrim, gradient or overlay of any colour sits over a photograph on “District insurance counter card - Sean Donnelly” (producer-card-r011.pdf).
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r011/H057` The two Heritage Green rules on “District insurance counter card - Sean Donnelly” (producer-card-r011.pdf) sit at the same heights as on “District insurance counter card - Raymond Hollis” (producer-card-r002.pdf).
+  Measure: Show trim boxes (Preferences, Page Display); measure top trim to each rule (Measure tool); each distance must match that rule on producer-card-r002.pdf within 0.5 mm.
 - `LAYOUT-15/producer-card-r011/H058` “District insurance counter card - Sean Donnelly” (producer-card-r011.pdf) carries no newly drawn Aldervale Mutual logo, monogram or symbol.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r012/H036` The headshot on “District insurance counter card - Rosa Castellano” (producer-card-r012.pdf) is placed at 300 ppi or more at its printed size.
+  Measure: In Acrobat Pro, open Print Production, Output Preview, Object Inspector, click the headshot and read its effective resolution.
 - `LAYOUT-15/producer-card-r012/H037` The producer name on “District insurance counter card - Rosa Castellano” (producer-card-r012.pdf) reads “Rosa Castellano” in sentence case, not in capitals.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r012/H038` The producer name on “District insurance counter card - Rosa Castellano” (producer-card-r012.pdf) is not visibly letterspaced: its letters are not spread apart with added space.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r012/H039` On “District insurance counter card - Rosa Castellano” (producer-card-r012.pdf) the producer name sits directly on a Heritage Green #3C6B54 rule running the full card width.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. Convert with Relative Colorimetric and black point compensation, the Adobe default. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-15/producer-card-r012/H040` On “District insurance counter card - Rosa Castellano” (producer-card-r012.pdf) a Heritage Green #3C6B54 rule running the full card width sits directly above the Disclosure Text.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. Convert with Relative Colorimetric and black point compensation, the Adobe default. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-15/producer-card-r012/H041` If a premium appears on “District insurance counter card - Rosa Castellano” (producer-card-r012.pdf), it is neither italic nor bold.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r012/H042` Each line of the license text and the office text on “District insurance counter card - Rosa Castellano” (producer-card-r012.pdf) has 65 characters or fewer.
+  Measure: Count the characters, spaces included, in the longest line of license text and of office text; each must be 65 or fewer.
 - `LAYOUT-15/producer-card-r012/H043` The colours of all type, panels, rules and icons on “District insurance counter card - Rosa Castellano” (producer-card-r012.pdf) come only from #1E2A3A, #4A5560, #F4F2EC, #C7CBC8 and #3C6B54.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. Convert with Relative Colorimetric and black point compensation, the Adobe default. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-15/producer-card-r012/H044` Document Paper #F4F2EC is the only colour used for the card ground and for any panel on “District insurance counter card - Rosa Castellano” (producer-card-r012.pdf).
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. Convert with Relative Colorimetric and black point compensation, the Adobe default. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-15/producer-card-r012/H045` The producer name on “District insurance counter card - Rosa Castellano” (producer-card-r012.pdf) is Ink Navy #1E2A3A, the same dark blue as the producer name on countercard_2026_print.pdf.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. Convert with Relative Colorimetric and black point compensation, the Adobe default. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-15/producer-card-r012/H046` The Disclosure Text on “District insurance counter card - Rosa Castellano” (producer-card-r012.pdf) is Ink Navy #1E2A3A, the same dark blue as the disclosure on countercard_2026_print.pdf.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. Convert with Relative Colorimetric and black point compensation, the Adobe default. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-15/producer-card-r012/H047` The license line and office on “District insurance counter card - Rosa Castellano” (producer-card-r012.pdf) are Slate #4A5560, the same grey as the license line and office on countercard_2026_print.pdf.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. Convert with Relative Colorimetric and black point compensation, the Adobe default. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-15/producer-card-r012/H048` Outside the headshot, Heritage Green #3C6B54 appears on “District insurance counter card - Rosa Castellano” (producer-card-r012.pdf) only as the two full-width rules.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. Convert with Relative Colorimetric and black point compensation, the Adobe default. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-15/producer-card-r012/H049` Outside the headshot, any Mist Grey #C7CBC8 on “District insurance counter card - Rosa Castellano” (producer-card-r012.pdf) is only a thin divider or keyline, never type, a panel or the ground.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. Convert with Relative Colorimetric and black point compensation, the Adobe default. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-15/producer-card-r012/H050` All type, panels, rules, dividers and the card ground on “District insurance counter card - Rosa Castellano” (producer-card-r012.pdf) are solid at full opacity, with no tint, transparency, gradient or shadow.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r012/H051` No scrim, gradient or overlay of any colour sits over a photograph on “District insurance counter card - Rosa Castellano” (producer-card-r012.pdf).
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r012/H052` The headshot on “District insurance counter card - Rosa Castellano” (producer-card-r012.pdf) shows producer_headshot_11.jpg in natural colour and skin tones, not tinted, duotoned or recoloured toward the palette.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r012/H053` The two Heritage Green rules on “District insurance counter card - Rosa Castellano” (producer-card-r012.pdf) sit at the same heights as on “District insurance counter card - Raymond Hollis” (producer-card-r002.pdf).
+  Measure: Show trim boxes (Preferences, Page Display); measure top trim to each rule (Measure tool); each distance must match that rule on producer-card-r002.pdf within 0.5 mm.
 - `LAYOUT-15/producer-card-r012/H054` “District insurance counter card - Rosa Castellano” (producer-card-r012.pdf) carries no newly drawn Aldervale Mutual logo, monogram or symbol.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r013/H048` The headshot on “District insurance counter card - Walter Pruitt” (producer-card-r013.pdf) is placed at 300 ppi or more at its printed size.
+  Measure: In Acrobat Pro, open Print Production, Output Preview, Object Inspector, click the headshot and read its effective resolution.
 - `LAYOUT-15/producer-card-r013/H049` The producer name on “District insurance counter card - Walter Pruitt” (producer-card-r013.pdf) is not visibly letterspaced: its letters are not spread apart with added space.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r013/H050` On “District insurance counter card - Walter Pruitt” (producer-card-r013.pdf) a Heritage Green #3C6B54 rule running the full card width sits directly above the Disclosure Text.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. Convert with Relative Colorimetric and black point compensation, the Adobe default. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-15/producer-card-r013/H051` If a premium appears on “District insurance counter card - Walter Pruitt” (producer-card-r013.pdf), it is neither italic nor bold.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r013/H052` The producer name on “District insurance counter card - Walter Pruitt” (producer-card-r013.pdf) is Ink Navy #1E2A3A, the same dark blue as the producer name on countercard_2026_print.pdf.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. Convert with Relative Colorimetric and black point compensation, the Adobe default. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-15/producer-card-r013/H053` The Disclosure Text on “District insurance counter card - Walter Pruitt” (producer-card-r013.pdf) is Ink Navy #1E2A3A, the same dark blue as the disclosure on countercard_2026_print.pdf.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. Convert with Relative Colorimetric and black point compensation, the Adobe default. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-15/producer-card-r013/H054` The license line and office on “District insurance counter card - Walter Pruitt” (producer-card-r013.pdf) are Slate #4A5560, the same grey as the license line and office on countercard_2026_print.pdf.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. Convert with Relative Colorimetric and black point compensation, the Adobe default. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-15/producer-card-r013/H055` Outside the headshot, any Mist Grey #C7CBC8 on “District insurance counter card - Walter Pruitt” (producer-card-r013.pdf) is only a thin divider or keyline, never type, a panel or the ground.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. Convert with Relative Colorimetric and black point compensation, the Adobe default. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-15/producer-card-r013/H056` No scrim, gradient or overlay of any colour sits over a photograph on “District insurance counter card - Walter Pruitt” (producer-card-r013.pdf).
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r013/H057` The two Heritage Green rules on “District insurance counter card - Walter Pruitt” (producer-card-r013.pdf) sit at the same heights as on “District insurance counter card - Raymond Hollis” (producer-card-r002.pdf).
+  Measure: Show trim boxes (Preferences, Page Display); measure top trim to each rule (Measure tool); each distance must match that rule on producer-card-r002.pdf within 0.5 mm.
 - `LAYOUT-15/producer-card-r013/H058` “District insurance counter card - Walter Pruitt” (producer-card-r013.pdf) carries no newly drawn Aldervale Mutual logo, monogram or symbol.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r014/H048` The headshot on “District insurance counter card - Dana Whitfield” (producer-card-r014.pdf) is placed at 300 ppi or more at its printed size.
+  Measure: In Acrobat Pro, open Print Production, Output Preview, Object Inspector, click the headshot and read its effective resolution.
 - `LAYOUT-15/producer-card-r014/H049` The producer name on “District insurance counter card - Dana Whitfield” (producer-card-r014.pdf) is not visibly letterspaced: its letters are not spread apart with added space.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r014/H050` On “District insurance counter card - Dana Whitfield” (producer-card-r014.pdf) a Heritage Green #3C6B54 rule running the full card width sits directly above the Disclosure Text.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. Convert with Relative Colorimetric and black point compensation, the Adobe default. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-15/producer-card-r014/H051` If a premium appears on “District insurance counter card - Dana Whitfield” (producer-card-r014.pdf), it is neither italic nor bold.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r014/H052` The producer name on “District insurance counter card - Dana Whitfield” (producer-card-r014.pdf) is Ink Navy #1E2A3A, the same dark blue as the producer name on countercard_2026_print.pdf.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. Convert with Relative Colorimetric and black point compensation, the Adobe default. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-15/producer-card-r014/H053` The Disclosure Text on “District insurance counter card - Dana Whitfield” (producer-card-r014.pdf) is Ink Navy #1E2A3A, the same dark blue as the disclosure on countercard_2026_print.pdf.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. Convert with Relative Colorimetric and black point compensation, the Adobe default. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-15/producer-card-r014/H054` The license line and office on “District insurance counter card - Dana Whitfield” (producer-card-r014.pdf) are Slate #4A5560, the same grey as the license line and office on countercard_2026_print.pdf.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. Convert with Relative Colorimetric and black point compensation, the Adobe default. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-15/producer-card-r014/H055` Outside the headshot, any Mist Grey #C7CBC8 on “District insurance counter card - Dana Whitfield” (producer-card-r014.pdf) is only a thin divider or keyline, never type, a panel or the ground.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. Convert with Relative Colorimetric and black point compensation, the Adobe default. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-15/producer-card-r014/H056` No scrim, gradient or overlay of any colour sits over a photograph on “District insurance counter card - Dana Whitfield” (producer-card-r014.pdf).
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r014/H057` The two Heritage Green rules on “District insurance counter card - Dana Whitfield” (producer-card-r014.pdf) sit at the same heights as on “District insurance counter card - Raymond Hollis” (producer-card-r002.pdf).
+  Measure: Show trim boxes (Preferences, Page Display); measure top trim to each rule (Measure tool); each distance must match that rule on producer-card-r002.pdf within 0.5 mm.
 - `LAYOUT-15/producer-card-r014/H058` “District insurance counter card - Dana Whitfield” (producer-card-r014.pdf) carries no newly drawn Aldervale Mutual logo, monogram or symbol.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r015/H046` The portrait area on “District insurance counter card - Priya Nandakumar” (producer-card-r015.pdf) is left empty, with no photograph, illustration or stand-in image.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r015/H047` Any photograph outside the portrait area on “District insurance counter card - Priya Nandakumar” (producer-card-r015.pdf) is honestly labelled stock or illustration, never a family, client or policyholder presented as real.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r015/H048` The producer name on “District insurance counter card - Priya Nandakumar” (producer-card-r015.pdf) is not visibly letterspaced: its letters are not spread apart with added space.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r015/H049` On “District insurance counter card - Priya Nandakumar” (producer-card-r015.pdf) a Heritage Green #3C6B54 rule running the full card width sits directly above the Disclosure Text.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. Convert with Relative Colorimetric and black point compensation, the Adobe default. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-15/producer-card-r015/H050` If a premium appears on “District insurance counter card - Priya Nandakumar” (producer-card-r015.pdf), it is neither italic nor bold.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r015/H051` The producer name on “District insurance counter card - Priya Nandakumar” (producer-card-r015.pdf) is Ink Navy #1E2A3A, the same dark blue as the producer name on countercard_2026_print.pdf.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. Convert with Relative Colorimetric and black point compensation, the Adobe default. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-15/producer-card-r015/H052` The Disclosure Text on “District insurance counter card - Priya Nandakumar” (producer-card-r015.pdf) is Ink Navy #1E2A3A, the same dark blue as the disclosure on countercard_2026_print.pdf.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. Convert with Relative Colorimetric and black point compensation, the Adobe default. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-15/producer-card-r015/H053` The license line and office on “District insurance counter card - Priya Nandakumar” (producer-card-r015.pdf) are Slate #4A5560, the same grey as the license line and office on countercard_2026_print.pdf.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. Convert with Relative Colorimetric and black point compensation, the Adobe default. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-15/producer-card-r015/H054` Outside any photograph, any Mist Grey #C7CBC8 on “District insurance counter card - Priya Nandakumar” (producer-card-r015.pdf) is only a thin divider or keyline, never type, a panel or the ground.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. Convert with Relative Colorimetric and black point compensation, the Adobe default. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-15/producer-card-r015/H055` No scrim, gradient or overlay of any colour sits over a photograph on “District insurance counter card - Priya Nandakumar” (producer-card-r015.pdf).
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r015/H056` The two Heritage Green rules on “District insurance counter card - Priya Nandakumar” (producer-card-r015.pdf) sit at the same heights as on “District insurance counter card - Raymond Hollis” (producer-card-r002.pdf).
+  Measure: Show trim boxes (Preferences, Page Display); measure top trim to each rule (Measure tool); each distance must match that rule on producer-card-r002.pdf within 0.5 mm.
 - `LAYOUT-15/producer-card-r015/H057` “District insurance counter card - Priya Nandakumar” (producer-card-r015.pdf) carries no newly drawn Aldervale Mutual logo, monogram or symbol.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-combined/H003` producer_headshot_03.jpg appears on no page of “District insurance counter card - combined production run” (producer-card-combined.pdf).
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-combined/H004` Every page of “District insurance counter card - combined production run” (producer-card-combined.pdf) has a 148 x 210 mm trim, not scaled.
+  Measure: In Acrobat Preferences, Page Display, tick Show art, trim and bleed boxes; use the Measure tool on each page's trim box; pass within 0.5 mm.
 - `LAYOUT-15/producer-card-r002/H057` Both Heritage Green rules on “District insurance counter card - Raymond Hollis” (producer-card-r002.pdf) are 1 pt thick.
+  Measure: At 3200% zoom, with snapping off in Acrobat's Measure tool, measure each rule's thickness edge to edge; pass if both read 0.3 to 0.4 mm.
 - `LAYOUT-15/producer-card-r002/H058` Apart from the producer name and the Aldervale Mutual name, “District insurance counter card - Raymond Hollis” (producer-card-r002.pdf) carries no heading line, such as a title, region or section heading.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r003/H059` Both Heritage Green rules on “District insurance counter card - Susan Grady” (producer-card-r003.pdf) are 1 pt thick.
+  Measure: At 3200% zoom, with snapping off in Acrobat's Measure tool, measure each rule's thickness edge to edge; pass if both read 0.3 to 0.4 mm.
 - `LAYOUT-15/producer-card-r003/H060` Apart from the producer name and the Aldervale Mutual name, “District insurance counter card - Susan Grady” (producer-card-r003.pdf) carries no heading line, such as a title, region or section heading.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r005/H060` Both Heritage Green rules on “District insurance counter card - Paul Devoe” (producer-card-r005.pdf) are 1 pt thick.
+  Measure: At 3200% zoom, with snapping off in Acrobat's Measure tool, measure each rule's thickness edge to edge; pass if both read 0.3 to 0.4 mm.
 - `LAYOUT-15/producer-card-r005/H061` Apart from the producer name and the Aldervale Mutual name, “District insurance counter card - Paul Devoe” (producer-card-r005.pdf) carries no heading line, such as a title, region or section heading.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r006/H059` Both Heritage Green rules on “District insurance counter card - Karen Marsh” (producer-card-r006.pdf) are 1 pt thick.
+  Measure: At 3200% zoom, with snapping off in Acrobat's Measure tool, measure each rule's thickness edge to edge; pass if both read 0.3 to 0.4 mm.
 - `LAYOUT-15/producer-card-r006/H060` Apart from the producer name and the Aldervale Mutual name, “District insurance counter card - Karen Marsh” (producer-card-r006.pdf) carries no heading line, such as a title, region or section heading.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r007/H055` Both Heritage Green rules on “District insurance counter card - Daniel Okafor” (producer-card-r007.pdf) are 1 pt thick.
+  Measure: At 3200% zoom, with snapping off in Acrobat's Measure tool, measure each rule's thickness edge to edge; pass if both read 0.3 to 0.4 mm.
 - `LAYOUT-15/producer-card-r007/H056` Apart from the producer name and the Aldervale Mutual name, “District insurance counter card - Daniel Okafor” (producer-card-r007.pdf) carries no heading line, such as a title, region or section heading.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r008/H059` Both Heritage Green rules on “District insurance counter card - Gina Bianchi” (producer-card-r008.pdf) are 1 pt thick.
+  Measure: At 3200% zoom, with snapping off in Acrobat's Measure tool, measure each rule's thickness edge to edge; pass if both read 0.3 to 0.4 mm.
 - `LAYOUT-15/producer-card-r008/H060` Apart from the producer name and the Aldervale Mutual name, “District insurance counter card - Gina Bianchi” (producer-card-r008.pdf) carries no heading line, such as a title, region or section heading.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r009/H059` Both Heritage Green rules on “District insurance counter card - Miguel Reyes” (producer-card-r009.pdf) are 1 pt thick.
+  Measure: At 3200% zoom, with snapping off in Acrobat's Measure tool, measure each rule's thickness edge to edge; pass if both read 0.3 to 0.4 mm.
 - `LAYOUT-15/producer-card-r009/H060` Apart from the producer name and the Aldervale Mutual name, “District insurance counter card - Miguel Reyes” (producer-card-r009.pdf) carries no heading line, such as a title, region or section heading.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r010/H059` Both Heritage Green rules on “District insurance counter card - Linh Tran” (producer-card-r010.pdf) are 1 pt thick.
+  Measure: At 3200% zoom, with snapping off in Acrobat's Measure tool, measure each rule's thickness edge to edge; pass if both read 0.3 to 0.4 mm.
 - `LAYOUT-15/producer-card-r010/H060` Apart from the producer name and the Aldervale Mutual name, “District insurance counter card - Linh Tran” (producer-card-r010.pdf) carries no heading line, such as a title, region or section heading.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r011/H059` Both Heritage Green rules on “District insurance counter card - Sean Donnelly” (producer-card-r011.pdf) are 1 pt thick.
+  Measure: At 3200% zoom, with snapping off in Acrobat's Measure tool, measure each rule's thickness edge to edge; pass if both read 0.3 to 0.4 mm.
 - `LAYOUT-15/producer-card-r011/H060` Apart from the producer name and the Aldervale Mutual name, “District insurance counter card - Sean Donnelly” (producer-card-r011.pdf) carries no heading line, such as a title, region or section heading.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r012/H055` Both Heritage Green rules on “District insurance counter card - Rosa Castellano” (producer-card-r012.pdf) are 1 pt thick.
+  Measure: At 3200% zoom, with snapping off in Acrobat's Measure tool, measure each rule's thickness edge to edge; pass if both read 0.3 to 0.4 mm.
 - `LAYOUT-15/producer-card-r012/H056` Apart from the producer name and the Aldervale Mutual name, “District insurance counter card - Rosa Castellano” (producer-card-r012.pdf) carries no heading line, such as a title, region or section heading.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r013/H059` Both Heritage Green rules on “District insurance counter card - Walter Pruitt” (producer-card-r013.pdf) are 1 pt thick.
+  Measure: At 3200% zoom, with snapping off in Acrobat's Measure tool, measure each rule's thickness edge to edge; pass if both read 0.3 to 0.4 mm.
 - `LAYOUT-15/producer-card-r013/H060` Apart from the producer name and the Aldervale Mutual name, “District insurance counter card - Walter Pruitt” (producer-card-r013.pdf) carries no heading line, such as a title, region or section heading.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r014/H059` Both Heritage Green rules on “District insurance counter card - Dana Whitfield” (producer-card-r014.pdf) are 1 pt thick.
+  Measure: At 3200% zoom, with snapping off in Acrobat's Measure tool, measure each rule's thickness edge to edge; pass if both read 0.3 to 0.4 mm.
 - `LAYOUT-15/producer-card-r014/H060` Apart from the producer name and the Aldervale Mutual name, “District insurance counter card - Dana Whitfield” (producer-card-r014.pdf) carries no heading line, such as a title, region or section heading.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r015/H058` Both Heritage Green rules on “District insurance counter card - Priya Nandakumar” (producer-card-r015.pdf) are 1 pt thick.
+  Measure: At 3200% zoom, with snapping off in Acrobat's Measure tool, measure each rule's thickness edge to edge; pass if both read 0.3 to 0.4 mm.
 - `LAYOUT-15/producer-card-r015/H059` Apart from the producer name and the Aldervale Mutual name, “District insurance counter card - Priya Nandakumar” (producer-card-r015.pdf) carries no heading line, such as a title, region or section heading.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r002/H059` The figures in the license line and the office line on “District insurance counter card - Raymond Hollis” (producer-card-r002.pdf) are not visibly larger or smaller than the letters around them.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r003/H061` The figures in the license line and the office line on “District insurance counter card - Susan Grady” (producer-card-r003.pdf) are not visibly larger or smaller than the letters around them.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r005/H062` The figures in the license line and the office line on “District insurance counter card - Paul Devoe” (producer-card-r005.pdf) are not visibly larger or smaller than the letters around them.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r006/H061` The figures in the license line and the office line on “District insurance counter card - Karen Marsh” (producer-card-r006.pdf) are not visibly larger or smaller than the letters around them.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r007/H057` The figures in the license line and the office line on “District insurance counter card - Daniel Okafor” (producer-card-r007.pdf) are not visibly larger or smaller than the letters around them.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r008/H061` The figures in the license line and the office line on “District insurance counter card - Gina Bianchi” (producer-card-r008.pdf) are not visibly larger or smaller than the letters around them.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r009/H061` The figures in the license line and the office line on “District insurance counter card - Miguel Reyes” (producer-card-r009.pdf) are not visibly larger or smaller than the letters around them.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r010/H061` The figures in the license line and the office line on “District insurance counter card - Linh Tran” (producer-card-r010.pdf) are not visibly larger or smaller than the letters around them.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r011/H061` The figures in the license line and the office line on “District insurance counter card - Sean Donnelly” (producer-card-r011.pdf) are not visibly larger or smaller than the letters around them.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r012/H057` The figures in the license line and the office line on “District insurance counter card - Rosa Castellano” (producer-card-r012.pdf) are not visibly larger or smaller than the letters around them.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r013/H061` The figures in the license line and the office line on “District insurance counter card - Walter Pruitt” (producer-card-r013.pdf) are not visibly larger or smaller than the letters around them.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r014/H061` The figures in the license line and the office line on “District insurance counter card - Dana Whitfield” (producer-card-r014.pdf) are not visibly larger or smaller than the letters around them.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r015/H060` The figures in the license line and the office line on “District insurance counter card - Priya Nandakumar” (producer-card-r015.pdf) are not visibly larger or smaller than the letters around them.
+  Look: Inspect the named output against this requirement and its linked references.
 - `LAYOUT-15/producer-card-r003/H062` The Disclosure Text on “District insurance counter card - Susan Grady” (producer-card-r003.pdf) is set no smaller than the Disclosure Text on “District insurance counter card - Raymond Hollis” (producer-card-r002.pdf).
+  Measure: At 3200%, measure the M height in “Mutual” in both disclosures with Acrobat's Measure tool; No if this card's is over 0.05 mm shorter.
 - `LAYOUT-15/producer-card-r006/H062` The Disclosure Text on “District insurance counter card - Karen Marsh” (producer-card-r006.pdf) is set no smaller than the Disclosure Text on “District insurance counter card - Raymond Hollis” (producer-card-r002.pdf).
+  Measure: At 3200%, measure the M height in “Mutual” in both disclosures with Acrobat's Measure tool; No if this card's is over 0.05 mm shorter.
 - `LAYOUT-15/producer-card-r007/H058` The Disclosure Text on “District insurance counter card - Daniel Okafor” (producer-card-r007.pdf) is set no smaller than the Disclosure Text on “District insurance counter card - Raymond Hollis” (producer-card-r002.pdf).
+  Measure: At 3200%, measure the M height in “Mutual” in both disclosures with Acrobat's Measure tool; No if this card's is over 0.05 mm shorter.
 - `LAYOUT-15/producer-card-r008/H062` The Disclosure Text on “District insurance counter card - Gina Bianchi” (producer-card-r008.pdf) is set no smaller than the Disclosure Text on “District insurance counter card - Raymond Hollis” (producer-card-r002.pdf).
+  Measure: At 3200%, measure the M height in “Mutual” in both disclosures with Acrobat's Measure tool; No if this card's is over 0.05 mm shorter.
 - `LAYOUT-15/producer-card-r009/H062` The Disclosure Text on “District insurance counter card - Miguel Reyes” (producer-card-r009.pdf) is set no smaller than the Disclosure Text on “District insurance counter card - Raymond Hollis” (producer-card-r002.pdf).
+  Measure: At 3200%, measure the M height in “Mutual” in both disclosures with Acrobat's Measure tool; No if this card's is over 0.05 mm shorter.
 - `LAYOUT-15/producer-card-r011/H062` The Disclosure Text on “District insurance counter card - Sean Donnelly” (producer-card-r011.pdf) is set no smaller than the Disclosure Text on “District insurance counter card - Raymond Hollis” (producer-card-r002.pdf).
+  Measure: At 3200%, measure the M height in “Mutual” in both disclosures with Acrobat's Measure tool; No if this card's is over 0.05 mm shorter.
 - `LAYOUT-15/producer-card-r012/H058` The Disclosure Text on “District insurance counter card - Rosa Castellano” (producer-card-r012.pdf) is set no smaller than the Disclosure Text on “District insurance counter card - Raymond Hollis” (producer-card-r002.pdf).
+  Measure: At 3200%, measure the M height in “Mutual” in both disclosures with Acrobat's Measure tool; No if this card's is over 0.05 mm shorter.
 - `LAYOUT-15/producer-card-r013/H062` The Disclosure Text on “District insurance counter card - Walter Pruitt” (producer-card-r013.pdf) is set no smaller than the Disclosure Text on “District insurance counter card - Raymond Hollis” (producer-card-r002.pdf).
+  Measure: At 3200%, measure the M height in “Mutual” in both disclosures with Acrobat's Measure tool; No if this card's is over 0.05 mm shorter.
 - `LAYOUT-15/producer-card-r014/H062` The Disclosure Text on “District insurance counter card - Dana Whitfield” (producer-card-r014.pdf) is set no smaller than the Disclosure Text on “District insurance counter card - Raymond Hollis” (producer-card-r002.pdf).
+  Measure: At 3200%, measure the M height in “Mutual” in both disclosures with Acrobat's Measure tool; No if this card's is over 0.05 mm shorter.
 - `LAYOUT-15/producer-card-r015/H061` The Disclosure Text on “District insurance counter card - Priya Nandakumar” (producer-card-r015.pdf) is set no smaller than the Disclosure Text on “District insurance counter card - Raymond Hollis” (producer-card-r002.pdf).
+  Measure: At 3200%, measure the M height in “Mutual” in both disclosures with Acrobat's Measure tool; No if this card's is over 0.05 mm shorter.
 - `LAYOUT-15/producer-card-r002/H060` Heritage Green #3C6B54 and Mist Grey #C7CBC8 together cover no more than 5% of the designed, non-photographic area of “District insurance counter card - Raymond Hollis” (producer-card-r002.pdf).
+  Measure: Measure, do not estimate. On a measurement copy, mask the named area; exclude photographs and transparent canvas. Count the selected accent-colour pixels and divide by all pixels in that mask. Include text unless the condition excludes it. Test each PDF page or held video frame separately. Yes only when the unrounded percentage is at or below the stated limit. Use the linked measurement guide for rasterisation and colour matching. Each RGB channel must be within 5 of a selected palette colour. Convert with Relative Colorimetric and black point compensation, the Adobe default.
 - `LAYOUT-15/producer-card-r002/H061` Consecutive lines of the Disclosure Text on “District insurance counter card - Raymond Hollis” (producer-card-r002.pdf) are 9 pt (3.2 mm) apart, baseline to baseline.
+  Measure: At 800%, with snapping off, use Acrobat's Measure tool from the first disclosure line's baseline to the second's; pass if 3.0 to 3.4 mm.
 - `LAYOUT-15/producer-card-r002/H062` All type on “District insurance counter card - Raymond Hollis” (producer-card-r002.pdf), including any Aldervale Mutual name or premium, is Ink Navy #1E2A3A or Slate #4A5560.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. Convert with Relative Colorimetric and black point compensation, the Adobe default. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-15/producer-card-r002/H063` No rule, divider or keyline on “District insurance counter card - Raymond Hollis” (producer-card-r002.pdf) is Ink Navy #1E2A3A, Slate #4A5560 or Document Paper #F4F2EC.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. Convert with Relative Colorimetric and black point compensation, the Adobe default. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-15/producer-card-r003/H063` Heritage Green #3C6B54 and Mist Grey #C7CBC8 together cover no more than 5% of the designed, non-photographic area of “District insurance counter card - Susan Grady” (producer-card-r003.pdf).
+  Measure: Measure, do not estimate. On a measurement copy, mask the named area; exclude photographs and transparent canvas. Count the selected accent-colour pixels and divide by all pixels in that mask. Include text unless the condition excludes it. Test each PDF page or held video frame separately. Yes only when the unrounded percentage is at or below the stated limit. Use the linked measurement guide for rasterisation and colour matching. Each RGB channel must be within 5 of a selected palette colour. Convert with Relative Colorimetric and black point compensation, the Adobe default.
 - `LAYOUT-15/producer-card-r003/H064` Consecutive lines of the Disclosure Text on “District insurance counter card - Susan Grady” (producer-card-r003.pdf) are 9 pt (3.2 mm) apart, baseline to baseline.
+  Measure: At 800%, with snapping off, use Acrobat's Measure tool from the first disclosure line's baseline to the second's; pass if 3.0 to 3.4 mm.
 - `LAYOUT-15/producer-card-r003/H065` All type on “District insurance counter card - Susan Grady” (producer-card-r003.pdf), including any Aldervale Mutual name or premium, is Ink Navy #1E2A3A or Slate #4A5560.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. Convert with Relative Colorimetric and black point compensation, the Adobe default. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-15/producer-card-r003/H066` No rule, divider or keyline on “District insurance counter card - Susan Grady” (producer-card-r003.pdf) is Ink Navy #1E2A3A, Slate #4A5560 or Document Paper #F4F2EC.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. Convert with Relative Colorimetric and black point compensation, the Adobe default. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-15/producer-card-r005/H063` Heritage Green #3C6B54 and Mist Grey #C7CBC8 together cover no more than 5% of the designed, non-photographic area of “District insurance counter card - Paul Devoe” (producer-card-r005.pdf).
+  Measure: Measure, do not estimate. On a measurement copy, mask the named area; exclude photographs and transparent canvas. Count the selected accent-colour pixels and divide by all pixels in that mask. Include text unless the condition excludes it. Test each PDF page or held video frame separately. Yes only when the unrounded percentage is at or below the stated limit. Use the linked measurement guide for rasterisation and colour matching. Each RGB channel must be within 5 of a selected palette colour. Convert with Relative Colorimetric and black point compensation, the Adobe default.
 - `LAYOUT-15/producer-card-r005/H064` Consecutive lines of the Disclosure Text on “District insurance counter card - Paul Devoe” (producer-card-r005.pdf) are 9 pt (3.2 mm) apart, baseline to baseline.
+  Measure: At 800%, with snapping off, use Acrobat's Measure tool from the first disclosure line's baseline to the second's; pass if 3.0 to 3.4 mm.
 - `LAYOUT-15/producer-card-r005/H065` All type on “District insurance counter card - Paul Devoe” (producer-card-r005.pdf), including any Aldervale Mutual name or premium, is Ink Navy #1E2A3A or Slate #4A5560.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. Convert with Relative Colorimetric and black point compensation, the Adobe default. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-15/producer-card-r005/H066` No rule, divider or keyline on “District insurance counter card - Paul Devoe” (producer-card-r005.pdf) is Ink Navy #1E2A3A, Slate #4A5560 or Document Paper #F4F2EC.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. Convert with Relative Colorimetric and black point compensation, the Adobe default. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-15/producer-card-r006/H063` Heritage Green #3C6B54 and Mist Grey #C7CBC8 together cover no more than 5% of the designed, non-photographic area of “District insurance counter card - Karen Marsh” (producer-card-r006.pdf).
+  Measure: Measure, do not estimate. On a measurement copy, mask the named area; exclude photographs and transparent canvas. Count the selected accent-colour pixels and divide by all pixels in that mask. Include text unless the condition excludes it. Test each PDF page or held video frame separately. Yes only when the unrounded percentage is at or below the stated limit. Use the linked measurement guide for rasterisation and colour matching. Each RGB channel must be within 5 of a selected palette colour. Convert with Relative Colorimetric and black point compensation, the Adobe default.
 - `LAYOUT-15/producer-card-r006/H064` Consecutive lines of the Disclosure Text on “District insurance counter card - Karen Marsh” (producer-card-r006.pdf) are 9 pt (3.2 mm) apart, baseline to baseline.
+  Measure: At 800%, with snapping off, use Acrobat's Measure tool from the first disclosure line's baseline to the second's; pass if 3.0 to 3.4 mm.
 - `LAYOUT-15/producer-card-r006/H065` All type on “District insurance counter card - Karen Marsh” (producer-card-r006.pdf), including any Aldervale Mutual name or premium, is Ink Navy #1E2A3A or Slate #4A5560.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. Convert with Relative Colorimetric and black point compensation, the Adobe default. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-15/producer-card-r006/H066` No rule, divider or keyline on “District insurance counter card - Karen Marsh” (producer-card-r006.pdf) is Ink Navy #1E2A3A, Slate #4A5560 or Document Paper #F4F2EC.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. Convert with Relative Colorimetric and black point compensation, the Adobe default. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-15/producer-card-r007/H059` Heritage Green #3C6B54 and Mist Grey #C7CBC8 together cover no more than 5% of the designed, non-photographic area of “District insurance counter card - Daniel Okafor” (producer-card-r007.pdf).
+  Measure: Measure, do not estimate. On a measurement copy, mask the named area; exclude photographs and transparent canvas. Count the selected accent-colour pixels and divide by all pixels in that mask. Include text unless the condition excludes it. Test each PDF page or held video frame separately. Yes only when the unrounded percentage is at or below the stated limit. Use the linked measurement guide for rasterisation and colour matching. Each RGB channel must be within 5 of a selected palette colour. Convert with Relative Colorimetric and black point compensation, the Adobe default.
 - `LAYOUT-15/producer-card-r007/H060` Consecutive lines of the Disclosure Text on “District insurance counter card - Daniel Okafor” (producer-card-r007.pdf) are 9 pt (3.2 mm) apart, baseline to baseline.
+  Measure: At 800%, with snapping off, use Acrobat's Measure tool from the first disclosure line's baseline to the second's; pass if 3.0 to 3.4 mm.
 - `LAYOUT-15/producer-card-r007/H061` All type on “District insurance counter card - Daniel Okafor” (producer-card-r007.pdf), including any Aldervale Mutual name or premium, is Ink Navy #1E2A3A or Slate #4A5560.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. Convert with Relative Colorimetric and black point compensation, the Adobe default. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-15/producer-card-r007/H062` No rule, divider or keyline on “District insurance counter card - Daniel Okafor” (producer-card-r007.pdf) is Ink Navy #1E2A3A, Slate #4A5560 or Document Paper #F4F2EC.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. Convert with Relative Colorimetric and black point compensation, the Adobe default. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-15/producer-card-r008/H063` Heritage Green #3C6B54 and Mist Grey #C7CBC8 together cover no more than 5% of the designed, non-photographic area of “District insurance counter card - Gina Bianchi” (producer-card-r008.pdf).
+  Measure: Measure, do not estimate. On a measurement copy, mask the named area; exclude photographs and transparent canvas. Count the selected accent-colour pixels and divide by all pixels in that mask. Include text unless the condition excludes it. Test each PDF page or held video frame separately. Yes only when the unrounded percentage is at or below the stated limit. Use the linked measurement guide for rasterisation and colour matching. Each RGB channel must be within 5 of a selected palette colour. Convert with Relative Colorimetric and black point compensation, the Adobe default.
 - `LAYOUT-15/producer-card-r008/H064` Consecutive lines of the Disclosure Text on “District insurance counter card - Gina Bianchi” (producer-card-r008.pdf) are 9 pt (3.2 mm) apart, baseline to baseline.
+  Measure: At 800%, with snapping off, use Acrobat's Measure tool from the first disclosure line's baseline to the second's; pass if 3.0 to 3.4 mm.
 - `LAYOUT-15/producer-card-r008/H065` All type on “District insurance counter card - Gina Bianchi” (producer-card-r008.pdf), including any Aldervale Mutual name or premium, is Ink Navy #1E2A3A or Slate #4A5560.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. Convert with Relative Colorimetric and black point compensation, the Adobe default. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-15/producer-card-r008/H066` No rule, divider or keyline on “District insurance counter card - Gina Bianchi” (producer-card-r008.pdf) is Ink Navy #1E2A3A, Slate #4A5560 or Document Paper #F4F2EC.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. Convert with Relative Colorimetric and black point compensation, the Adobe default. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-15/producer-card-r009/H063` Heritage Green #3C6B54 and Mist Grey #C7CBC8 together cover no more than 5% of the designed, non-photographic area of “District insurance counter card - Miguel Reyes” (producer-card-r009.pdf).
+  Measure: Measure, do not estimate. On a measurement copy, mask the named area; exclude photographs and transparent canvas. Count the selected accent-colour pixels and divide by all pixels in that mask. Include text unless the condition excludes it. Test each PDF page or held video frame separately. Yes only when the unrounded percentage is at or below the stated limit. Use the linked measurement guide for rasterisation and colour matching. Each RGB channel must be within 5 of a selected palette colour. Convert with Relative Colorimetric and black point compensation, the Adobe default.
 - `LAYOUT-15/producer-card-r009/H064` Consecutive lines of the Disclosure Text on “District insurance counter card - Miguel Reyes” (producer-card-r009.pdf) are 9 pt (3.2 mm) apart, baseline to baseline.
+  Measure: At 800%, with snapping off, use Acrobat's Measure tool from the first disclosure line's baseline to the second's; pass if 3.0 to 3.4 mm.
 - `LAYOUT-15/producer-card-r009/H065` All type on “District insurance counter card - Miguel Reyes” (producer-card-r009.pdf), including any Aldervale Mutual name or premium, is Ink Navy #1E2A3A or Slate #4A5560.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. Convert with Relative Colorimetric and black point compensation, the Adobe default. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-15/producer-card-r009/H066` No rule, divider or keyline on “District insurance counter card - Miguel Reyes” (producer-card-r009.pdf) is Ink Navy #1E2A3A, Slate #4A5560 or Document Paper #F4F2EC.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. Convert with Relative Colorimetric and black point compensation, the Adobe default. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-15/producer-card-r010/H062` Heritage Green #3C6B54 and Mist Grey #C7CBC8 together cover no more than 5% of the designed, non-photographic area of “District insurance counter card - Linh Tran” (producer-card-r010.pdf).
+  Measure: Measure, do not estimate. On a measurement copy, mask the named area; exclude photographs and transparent canvas. Count the selected accent-colour pixels and divide by all pixels in that mask. Include text unless the condition excludes it. Test each PDF page or held video frame separately. Yes only when the unrounded percentage is at or below the stated limit. Use the linked measurement guide for rasterisation and colour matching. Each RGB channel must be within 5 of a selected palette colour. Convert with Relative Colorimetric and black point compensation, the Adobe default.
 - `LAYOUT-15/producer-card-r010/H063` Consecutive lines of the Disclosure Text on “District insurance counter card - Linh Tran” (producer-card-r010.pdf) are 9 pt (3.2 mm) apart, baseline to baseline.
+  Measure: At 800%, with snapping off, use Acrobat's Measure tool from the first disclosure line's baseline to the second's; pass if 3.0 to 3.4 mm.
 - `LAYOUT-15/producer-card-r010/H064` All type on “District insurance counter card - Linh Tran” (producer-card-r010.pdf), including any Aldervale Mutual name or premium, is Ink Navy #1E2A3A or Slate #4A5560.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. Convert with Relative Colorimetric and black point compensation, the Adobe default. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-15/producer-card-r010/H065` No rule, divider or keyline on “District insurance counter card - Linh Tran” (producer-card-r010.pdf) is Ink Navy #1E2A3A, Slate #4A5560 or Document Paper #F4F2EC.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. Convert with Relative Colorimetric and black point compensation, the Adobe default. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-15/producer-card-r011/H063` Heritage Green #3C6B54 and Mist Grey #C7CBC8 together cover no more than 5% of the designed, non-photographic area of “District insurance counter card - Sean Donnelly” (producer-card-r011.pdf).
+  Measure: Measure, do not estimate. On a measurement copy, mask the named area; exclude photographs and transparent canvas. Count the selected accent-colour pixels and divide by all pixels in that mask. Include text unless the condition excludes it. Test each PDF page or held video frame separately. Yes only when the unrounded percentage is at or below the stated limit. Use the linked measurement guide for rasterisation and colour matching. Each RGB channel must be within 5 of a selected palette colour. Convert with Relative Colorimetric and black point compensation, the Adobe default.
 - `LAYOUT-15/producer-card-r011/H064` Consecutive lines of the Disclosure Text on “District insurance counter card - Sean Donnelly” (producer-card-r011.pdf) are 9 pt (3.2 mm) apart, baseline to baseline.
+  Measure: At 800%, with snapping off, use Acrobat's Measure tool from the first disclosure line's baseline to the second's; pass if 3.0 to 3.4 mm.
 - `LAYOUT-15/producer-card-r011/H065` All type on “District insurance counter card - Sean Donnelly” (producer-card-r011.pdf), including any Aldervale Mutual name or premium, is Ink Navy #1E2A3A or Slate #4A5560.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. Convert with Relative Colorimetric and black point compensation, the Adobe default. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-15/producer-card-r011/H066` No rule, divider or keyline on “District insurance counter card - Sean Donnelly” (producer-card-r011.pdf) is Ink Navy #1E2A3A, Slate #4A5560 or Document Paper #F4F2EC.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. Convert with Relative Colorimetric and black point compensation, the Adobe default. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-15/producer-card-r012/H059` Heritage Green #3C6B54 and Mist Grey #C7CBC8 together cover no more than 5% of the designed, non-photographic area of “District insurance counter card - Rosa Castellano” (producer-card-r012.pdf).
+  Measure: Measure, do not estimate. On a measurement copy, mask the named area; exclude photographs and transparent canvas. Count the selected accent-colour pixels and divide by all pixels in that mask. Include text unless the condition excludes it. Test each PDF page or held video frame separately. Yes only when the unrounded percentage is at or below the stated limit. Use the linked measurement guide for rasterisation and colour matching. Each RGB channel must be within 5 of a selected palette colour. Convert with Relative Colorimetric and black point compensation, the Adobe default.
 - `LAYOUT-15/producer-card-r012/H060` Consecutive lines of the Disclosure Text on “District insurance counter card - Rosa Castellano” (producer-card-r012.pdf) are 9 pt (3.2 mm) apart, baseline to baseline.
+  Measure: At 800%, with snapping off, use Acrobat's Measure tool from the first disclosure line's baseline to the second's; pass if 3.0 to 3.4 mm.
 - `LAYOUT-15/producer-card-r012/H061` All type on “District insurance counter card - Rosa Castellano” (producer-card-r012.pdf), including any Aldervale Mutual name or premium, is Ink Navy #1E2A3A or Slate #4A5560.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. Convert with Relative Colorimetric and black point compensation, the Adobe default. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-15/producer-card-r012/H062` No rule, divider or keyline on “District insurance counter card - Rosa Castellano” (producer-card-r012.pdf) is Ink Navy #1E2A3A, Slate #4A5560 or Document Paper #F4F2EC.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. Convert with Relative Colorimetric and black point compensation, the Adobe default. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-15/producer-card-r013/H063` Heritage Green #3C6B54 and Mist Grey #C7CBC8 together cover no more than 5% of the designed, non-photographic area of “District insurance counter card - Walter Pruitt” (producer-card-r013.pdf).
+  Measure: Measure, do not estimate. On a measurement copy, mask the named area; exclude photographs and transparent canvas. Count the selected accent-colour pixels and divide by all pixels in that mask. Include text unless the condition excludes it. Test each PDF page or held video frame separately. Yes only when the unrounded percentage is at or below the stated limit. Use the linked measurement guide for rasterisation and colour matching. Each RGB channel must be within 5 of a selected palette colour. Convert with Relative Colorimetric and black point compensation, the Adobe default.
 - `LAYOUT-15/producer-card-r013/H064` Consecutive lines of the Disclosure Text on “District insurance counter card - Walter Pruitt” (producer-card-r013.pdf) are 9 pt (3.2 mm) apart, baseline to baseline.
+  Measure: At 800%, with snapping off, use Acrobat's Measure tool from the first disclosure line's baseline to the second's; pass if 3.0 to 3.4 mm.
 - `LAYOUT-15/producer-card-r013/H065` All type on “District insurance counter card - Walter Pruitt” (producer-card-r013.pdf), including any Aldervale Mutual name or premium, is Ink Navy #1E2A3A or Slate #4A5560.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. Convert with Relative Colorimetric and black point compensation, the Adobe default. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-15/producer-card-r013/H066` No rule, divider or keyline on “District insurance counter card - Walter Pruitt” (producer-card-r013.pdf) is Ink Navy #1E2A3A, Slate #4A5560 or Document Paper #F4F2EC.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. Convert with Relative Colorimetric and black point compensation, the Adobe default. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-15/producer-card-r014/H063` Heritage Green #3C6B54 and Mist Grey #C7CBC8 together cover no more than 5% of the designed, non-photographic area of “District insurance counter card - Dana Whitfield” (producer-card-r014.pdf).
+  Measure: Measure, do not estimate. On a measurement copy, mask the named area; exclude photographs and transparent canvas. Count the selected accent-colour pixels and divide by all pixels in that mask. Include text unless the condition excludes it. Test each PDF page or held video frame separately. Yes only when the unrounded percentage is at or below the stated limit. Use the linked measurement guide for rasterisation and colour matching. Each RGB channel must be within 5 of a selected palette colour. Convert with Relative Colorimetric and black point compensation, the Adobe default.
 - `LAYOUT-15/producer-card-r014/H064` Consecutive lines of the Disclosure Text on “District insurance counter card - Dana Whitfield” (producer-card-r014.pdf) are 9 pt (3.2 mm) apart, baseline to baseline.
+  Measure: At 800%, with snapping off, use Acrobat's Measure tool from the first disclosure line's baseline to the second's; pass if 3.0 to 3.4 mm.
 - `LAYOUT-15/producer-card-r014/H065` All type on “District insurance counter card - Dana Whitfield” (producer-card-r014.pdf), including any Aldervale Mutual name or premium, is Ink Navy #1E2A3A or Slate #4A5560.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. Convert with Relative Colorimetric and black point compensation, the Adobe default. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-15/producer-card-r014/H066` No rule, divider or keyline on “District insurance counter card - Dana Whitfield” (producer-card-r014.pdf) is Ink Navy #1E2A3A, Slate #4A5560 or Document Paper #F4F2EC.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. Convert with Relative Colorimetric and black point compensation, the Adobe default. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-15/producer-card-r015/H062` Heritage Green #3C6B54 and Mist Grey #C7CBC8 together cover no more than 5% of the designed, non-photographic area of “District insurance counter card - Priya Nandakumar” (producer-card-r015.pdf).
+  Measure: Measure, do not estimate. On a measurement copy, mask the named area; exclude photographs and transparent canvas. Count the selected accent-colour pixels and divide by all pixels in that mask. Include text unless the condition excludes it. Test each PDF page or held video frame separately. Yes only when the unrounded percentage is at or below the stated limit. Use the linked measurement guide for rasterisation and colour matching. Each RGB channel must be within 5 of a selected palette colour. Convert with Relative Colorimetric and black point compensation, the Adobe default.
 - `LAYOUT-15/producer-card-r015/H063` Consecutive lines of the Disclosure Text on “District insurance counter card - Priya Nandakumar” (producer-card-r015.pdf) are 9 pt (3.2 mm) apart, baseline to baseline.
+  Measure: At 800%, with snapping off, use Acrobat's Measure tool from the first disclosure line's baseline to the second's; pass if 3.0 to 3.4 mm.
 - `LAYOUT-15/producer-card-r015/H064` All type on “District insurance counter card - Priya Nandakumar” (producer-card-r015.pdf), including any Aldervale Mutual name or premium, is Ink Navy #1E2A3A or Slate #4A5560.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. Convert with Relative Colorimetric and black point compensation, the Adobe default. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `LAYOUT-15/producer-card-r015/H065` No rule, divider or keyline on “District insurance counter card - Priya Nandakumar” (producer-card-r015.pdf) is Ink Navy #1E2A3A, Slate #4A5560 or Document Paper #F4F2EC.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. Convert with Relative Colorimetric and black point compensation, the Adobe default. A sample matches a stated hex when R, G and B are each within 5 of it.

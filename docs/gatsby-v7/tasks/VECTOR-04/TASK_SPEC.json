@@ -12491,12 +12491,17 @@
    "requirement": "If Ink Black #201914 appears on “Recovered sticker artwork - Window mark” (recovered-sticker-window-mark.svg), it covers no more than 5% of the sticker's inked area.",
    "pass_condition": "If Ink Black #201914 appears on “Recovered sticker artwork - Window mark” (recovered-sticker-window-mark.svg), it covers no more than 5% of the sticker's inked area.",
    "reference_assets": [],
-   "revision": "pilot13_c_2026_10_22",
+   "revision": "pilot13_verifier_lock_2026_10_22",
    "origin": "pilot13_c_2026_10_22",
    "k_id": "K2_Q3",
    "k_label": "Brand-system compliance",
-   "method": "estimate",
-   "method_note": "Use Select Same Fill on any #201914 shape, then estimate those shapes' share of all inked area; answer No only if clearly over 5%."
+   "method": "measure",
+   "method_note": "Measure, do not estimate. On a measurement copy, mask the named area; exclude photographs and transparent canvas. Count the selected accent-colour pixels and divide by all pixels in that mask. Include text unless the condition excludes it. Test each PDF page or held video frame separately. Yes only when the unrounded percentage is at or below the stated limit. Use the linked measurement guide for rasterisation and colour matching. The mask is the visible inked artwork only, not the sticker background or transparent gaps. Each RGB channel must be within 5 of a selected palette colour.",
+   "measurement": {
+    "kind": "area_ratio",
+    "channel_tolerance": 5,
+    "max_percent": 5
+   }
   },
   {
    "task_id": "VECTOR-04",
@@ -12520,12 +12525,17 @@
    "requirement": "If Ink Black #201914 appears on “Recovered sticker artwork - Bag design 1” (recovered-sticker-bag-design-1.svg), it covers no more than 5% of the sticker's inked area.",
    "pass_condition": "If Ink Black #201914 appears on “Recovered sticker artwork - Bag design 1” (recovered-sticker-bag-design-1.svg), it covers no more than 5% of the sticker's inked area.",
    "reference_assets": [],
-   "revision": "pilot13_c_2026_10_22",
+   "revision": "pilot13_verifier_lock_2026_10_22",
    "origin": "pilot13_c_2026_10_22",
    "k_id": "K2_Q3",
    "k_label": "Brand-system compliance",
-   "method": "estimate",
-   "method_note": "Use Select Same Fill on any #201914 shape, then estimate those shapes' share of all inked area; answer No only if clearly over 5%."
+   "method": "measure",
+   "method_note": "Measure, do not estimate. On a measurement copy, mask the named area; exclude photographs and transparent canvas. Count the selected accent-colour pixels and divide by all pixels in that mask. Include text unless the condition excludes it. Test each PDF page or held video frame separately. Yes only when the unrounded percentage is at or below the stated limit. Use the linked measurement guide for rasterisation and colour matching. The mask is the visible inked artwork only, not the sticker background or transparent gaps. Each RGB channel must be within 5 of a selected palette colour.",
+   "measurement": {
+    "kind": "area_ratio",
+    "channel_tolerance": 5,
+    "max_percent": 5
+   }
   },
   {
    "task_id": "VECTOR-04",
@@ -12549,12 +12559,17 @@
    "requirement": "If Ink Black #201914 appears on “Recovered sticker artwork - Bag design 2” (recovered-sticker-bag-design-2.svg), it covers no more than 5% of the sticker's inked area.",
    "pass_condition": "If Ink Black #201914 appears on “Recovered sticker artwork - Bag design 2” (recovered-sticker-bag-design-2.svg), it covers no more than 5% of the sticker's inked area.",
    "reference_assets": [],
-   "revision": "pilot13_c_2026_10_22",
+   "revision": "pilot13_verifier_lock_2026_10_22",
    "origin": "pilot13_c_2026_10_22",
    "k_id": "K2_Q3",
    "k_label": "Brand-system compliance",
-   "method": "estimate",
-   "method_note": "Use Select Same Fill on any #201914 shape, then estimate those shapes' share of all inked area; answer No only if clearly over 5%."
+   "method": "measure",
+   "method_note": "Measure, do not estimate. On a measurement copy, mask the named area; exclude photographs and transparent canvas. Count the selected accent-colour pixels and divide by all pixels in that mask. Include text unless the condition excludes it. Test each PDF page or held video frame separately. Yes only when the unrounded percentage is at or below the stated limit. Use the linked measurement guide for rasterisation and colour matching. The mask is the visible inked artwork only, not the sticker background or transparent gaps. Each RGB channel must be within 5 of a selected palette colour.",
+   "measurement": {
+    "kind": "area_ratio",
+    "channel_tolerance": 5,
+    "max_percent": 5
+   }
   },
   {
    "task_id": "VECTOR-04",
@@ -12578,12 +12593,17 @@
    "requirement": "If Ink Black #201914 appears on “Recovered sticker artwork - Bag design 3” (recovered-sticker-bag-design-3.svg), it covers no more than 5% of the sticker's inked area.",
    "pass_condition": "If Ink Black #201914 appears on “Recovered sticker artwork - Bag design 3” (recovered-sticker-bag-design-3.svg), it covers no more than 5% of the sticker's inked area.",
    "reference_assets": [],
-   "revision": "pilot13_c_2026_10_22",
+   "revision": "pilot13_verifier_lock_2026_10_22",
    "origin": "pilot13_c_2026_10_22",
    "k_id": "K2_Q3",
    "k_label": "Brand-system compliance",
-   "method": "estimate",
-   "method_note": "Use Select Same Fill on any #201914 shape, then estimate those shapes' share of all inked area; answer No only if clearly over 5%."
+   "method": "measure",
+   "method_note": "Measure, do not estimate. On a measurement copy, mask the named area; exclude photographs and transparent canvas. Count the selected accent-colour pixels and divide by all pixels in that mask. Include text unless the condition excludes it. Test each PDF page or held video frame separately. Yes only when the unrounded percentage is at or below the stated limit. Use the linked measurement guide for rasterisation and colour matching. The mask is the visible inked artwork only, not the sticker background or transparent gaps. Each RGB channel must be within 5 of a selected palette colour.",
+   "measurement": {
+    "kind": "area_ratio",
+    "channel_tolerance": 5,
+    "max_percent": 5
+   }
   },
   {
    "task_id": "VECTOR-04",
@@ -12607,12 +12627,17 @@
    "requirement": "If Ink Black #201914 appears on “Original companion sticker - Companion 1” (new-sticker-companion-1.svg), it covers no more than 5% of the sticker's inked area.",
    "pass_condition": "If Ink Black #201914 appears on “Original companion sticker - Companion 1” (new-sticker-companion-1.svg), it covers no more than 5% of the sticker's inked area.",
    "reference_assets": [],
-   "revision": "pilot13_c_2026_10_22",
+   "revision": "pilot13_verifier_lock_2026_10_22",
    "origin": "pilot13_c_2026_10_22",
    "k_id": "K2_Q3",
    "k_label": "Brand-system compliance",
-   "method": "estimate",
-   "method_note": "Use Select Same Fill on any #201914 shape, then estimate those shapes' share of all inked area; answer No only if clearly over 5%."
+   "method": "measure",
+   "method_note": "Measure, do not estimate. On a measurement copy, mask the named area; exclude photographs and transparent canvas. Count the selected accent-colour pixels and divide by all pixels in that mask. Include text unless the condition excludes it. Test each PDF page or held video frame separately. Yes only when the unrounded percentage is at or below the stated limit. Use the linked measurement guide for rasterisation and colour matching. The mask is the visible inked artwork only, not the sticker background or transparent gaps. Each RGB channel must be within 5 of a selected palette colour.",
+   "measurement": {
+    "kind": "area_ratio",
+    "channel_tolerance": 5,
+    "max_percent": 5
+   }
   },
   {
    "task_id": "VECTOR-04",
@@ -12636,12 +12661,17 @@
    "requirement": "If Ink Black #201914 appears on “Original companion sticker - Companion 2” (new-sticker-companion-2.svg), it covers no more than 5% of the sticker's inked area.",
    "pass_condition": "If Ink Black #201914 appears on “Original companion sticker - Companion 2” (new-sticker-companion-2.svg), it covers no more than 5% of the sticker's inked area.",
    "reference_assets": [],
-   "revision": "pilot13_c_2026_10_22",
+   "revision": "pilot13_verifier_lock_2026_10_22",
    "origin": "pilot13_c_2026_10_22",
    "k_id": "K2_Q3",
    "k_label": "Brand-system compliance",
-   "method": "estimate",
-   "method_note": "Use Select Same Fill on any #201914 shape, then estimate those shapes' share of all inked area; answer No only if clearly over 5%."
+   "method": "measure",
+   "method_note": "Measure, do not estimate. On a measurement copy, mask the named area; exclude photographs and transparent canvas. Count the selected accent-colour pixels and divide by all pixels in that mask. Include text unless the condition excludes it. Test each PDF page or held video frame separately. Yes only when the unrounded percentage is at or below the stated limit. Use the linked measurement guide for rasterisation and colour matching. The mask is the visible inked artwork only, not the sticker background or transparent gaps. Each RGB channel must be within 5 of a selected palette colour.",
+   "measurement": {
+    "kind": "area_ratio",
+    "channel_tolerance": 5,
+    "max_percent": 5
+   }
   },
   {
    "task_id": "VECTOR-04",
@@ -13316,7 +13346,130 @@
   "creative_review": "Subjective professional judgement is recorded separately and never changes an acceptance-verifier answer.",
   "process_evaluation_reference": "../../evaluation/rubric_catalog_v2.json",
   "process_scores_do_not_replace_output_acceptance": true,
-  "human_review_required": true
+  "human_review_required": true,
+  "objective_scoring_policy": "Score only the listed current Auto and Human verifiers. A design target marked \"Not scored\" in coverage remains a client instruction but is excluded from the score denominator: the requested delivery does not provide enough evidence to verify it. Do not infer a pass or failure. If a listed measurement cannot be completed, leave it unanswered and record the missing evidence; do not guess. Human answers remain Yes/No. Historical run results are not current scores.",
+  "unscored_design_targets": [
+   {
+    "rule_id": "T01S",
+    "output_id": "new-sticker-companion-1",
+    "reason": "Lettering may be outlined in the SVG, so the 18 pt size cannot be read by code or judged by eye; kept as a design target."
+   },
+   {
+    "rule_id": "T01S",
+    "output_id": "new-sticker-companion-2",
+    "reason": "Lettering may be outlined in the SVG, so the 18 pt size cannot be read by code or judged by eye; kept as a design target."
+   },
+   {
+    "rule_id": "T01T",
+    "output_id": "new-sticker-companion-1",
+    "reason": "Tracking of +30 cannot be read from outlined lettering or judged by eye on the SVG; kept as a design target."
+   },
+   {
+    "rule_id": "T01T",
+    "output_id": "new-sticker-companion-2",
+    "reason": "Tracking of +30 cannot be read from outlined lettering or judged by eye on the SVG; kept as a design target."
+   },
+   {
+    "rule_id": "T01T",
+    "output_id": "sticker-proof-companion-1",
+    "reason": "Tracking of +30 in thousandths of an em cannot be judged in a PNG proof; kept as a design target."
+   },
+   {
+    "rule_id": "T01T",
+    "output_id": "sticker-proof-companion-2",
+    "reason": "Tracking of +30 in thousandths of an em cannot be judged in a PNG proof; kept as a design target."
+   },
+   {
+    "rule_id": "T02S",
+    "output_id": "new-sticker-companion-1",
+    "reason": "Lettering may be outlined in the SVG, so the 11 pt size cannot be read by code or judged by eye; kept as a design target."
+   },
+   {
+    "rule_id": "T02S",
+    "output_id": "new-sticker-companion-2",
+    "reason": "Lettering may be outlined in the SVG, so the 11 pt size cannot be read by code or judged by eye; kept as a design target."
+   },
+   {
+    "rule_id": "T02S",
+    "output_id": "sticker-proof-companion-1",
+    "reason": "Exact point size cannot be measured in a PNG proof; the 11 pt size is kept as a design target."
+   },
+   {
+    "rule_id": "T02S",
+    "output_id": "sticker-proof-companion-2",
+    "reason": "Exact point size cannot be measured in a PNG proof; the 11 pt size is kept as a design target."
+   },
+   {
+    "rule_id": "T02T",
+    "output_id": "new-sticker-companion-1",
+    "reason": "Tracking of +20 cannot be read from outlined lettering or judged by eye on the SVG; kept as a design target."
+   },
+   {
+    "rule_id": "T02T",
+    "output_id": "new-sticker-companion-2",
+    "reason": "Tracking of +20 cannot be read from outlined lettering or judged by eye on the SVG; kept as a design target."
+   },
+   {
+    "rule_id": "T02T",
+    "output_id": "sticker-proof-companion-1",
+    "reason": "Tracking of +20 in thousandths of an em cannot be judged in a PNG proof; kept as a design target."
+   },
+   {
+    "rule_id": "T02T",
+    "output_id": "sticker-proof-companion-2",
+    "reason": "Tracking of +20 in thousandths of an em cannot be judged in a PNG proof; kept as a design target."
+   },
+   {
+    "rule_id": "T03S",
+    "output_id": "new-sticker-companion-1",
+    "reason": "Lettering may be outlined in the SVG, so the 7 pt size cannot be read by code or judged by eye; kept as a design target."
+   },
+   {
+    "rule_id": "T03S",
+    "output_id": "new-sticker-companion-2",
+    "reason": "Lettering may be outlined in the SVG, so the 7 pt size cannot be read by code or judged by eye; kept as a design target."
+   },
+   {
+    "rule_id": "T03S",
+    "output_id": "sticker-proof-companion-1",
+    "reason": "Exact point size cannot be measured in a PNG proof; the 7 pt size is kept as a design target."
+   },
+   {
+    "rule_id": "T03S",
+    "output_id": "sticker-proof-companion-2",
+    "reason": "Exact point size cannot be measured in a PNG proof; the 7 pt size is kept as a design target."
+   },
+   {
+    "rule_id": "T03T",
+    "output_id": "new-sticker-companion-1",
+    "reason": "Tracking of 0 cannot be read from outlined lettering or judged by eye on the SVG; kept as a design target."
+   },
+   {
+    "rule_id": "T03T",
+    "output_id": "new-sticker-companion-2",
+    "reason": "Tracking of 0 cannot be read from outlined lettering or judged by eye on the SVG; kept as a design target."
+   },
+   {
+    "rule_id": "T03T",
+    "output_id": "sticker-proof-companion-1",
+    "reason": "Tracking of 0 in thousandths of an em cannot be judged in a PNG proof; kept as a design target."
+   },
+   {
+    "rule_id": "T03T",
+    "output_id": "sticker-proof-companion-2",
+    "reason": "Tracking of 0 in thousandths of an em cannot be judged in a PNG proof; kept as a design target."
+   },
+   {
+    "rule_id": "T05S",
+    "output_id": "gang-sheet",
+    "reason": "Gang sheet lettering may be outlined in export, so no code check reads the 6 pt size; kept as a design target."
+   },
+   {
+    "rule_id": "T05T",
+    "output_id": "gang-sheet",
+    "reason": "Gang sheet lettering may be outlined in export, so no code check reads the +40 tracking; kept as a design target."
+   }
+  ]
  },
  "readiness": {
   "contract": "revised",

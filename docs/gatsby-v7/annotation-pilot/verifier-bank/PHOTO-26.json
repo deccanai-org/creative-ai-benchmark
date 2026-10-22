@@ -683,7 +683,7 @@
     "output_id": "wholesale-presentation",
     "type": "human",
     "output_reference": "deliverables/wholesale-presentation.pdf",
-    "check": "On “Interiors wholesale presentation” (wholesale-presentation.pdf), the handle loops of the mug from autumn_shoot_01.jpg and the teapot from autumn_shoot_13.jpg, wherever cut out, show the colour behind them, not studio sweep.",
+    "check": "The cut-out mug handle opening in wholesale-presentation.pdf shows the background behind the product, not the studio sweep from autumn_shoot_01.jpg.",
     "method": "look",
     "method_note": "Inspect the named output against this requirement and its linked references.",
     "reference_assets": [
@@ -1555,7 +1555,7 @@
     "output_id": "collection-spread",
     "type": "human",
     "output_reference": "deliverables/collection-spread.pdf",
-    "check": "On “Autumn interiors collection spread” (collection-spread.pdf), the handle loops of the mug from autumn_shoot_01.jpg and the teapot from autumn_shoot_13.jpg, wherever cut out, show the colour behind them, not studio sweep.",
+    "check": "The cut-out mug handle opening in collection-spread.pdf shows the background behind the product, not the studio sweep from autumn_shoot_01.jpg.",
     "method": "look",
     "method_note": "Inspect the named output against this requirement and its linked references.",
     "reference_assets": [
@@ -2328,8 +2328,13 @@
     "type": "human",
     "output_reference": "deliverables/collection-spread.pdf",
     "check": "Photographs aside, Warm Paper Ground #F6F1E8 covers more of every page of “Autumn interiors collection spread” (collection-spread.pdf) than all Oatmeal Glaze, Soft Clay and Indigo Dye areas combined.",
-    "method": "estimate",
-    "method_note": "Page by page, estimate whether bare Warm Paper Ground outweighs all coloured tiles, panels and any band; answer No only if clearly not.",
+    "method": "measure",
+    "method_note": "Measure each PDF page separately. Exclude photographs. Count Warm Paper Ground pixels and compare with the combined Oatmeal Glaze, Soft Clay and Indigo Dye pixels. Yes only if Warm Paper Ground has strictly more pixels on every page. Use the measurement guide; do not estimate. Each RGB channel must be within 5 of a selected palette colour.",
+    "measurement": {
+      "kind": "area_comparison",
+      "channel_tolerance": 5,
+      "comparison": "strictly_greater"
+    },
     "reference_assets": []
   },
   {
@@ -2393,8 +2398,13 @@
     "type": "human",
     "output_reference": "deliverables/wholesale-presentation.pdf",
     "check": "Photographs aside, Warm Paper Ground #F6F1E8 covers more of every page of “Interiors wholesale presentation” (wholesale-presentation.pdf) than all Oatmeal Glaze, Soft Clay and Indigo Dye areas combined.",
-    "method": "estimate",
-    "method_note": "Page by page, estimate whether bare Warm Paper Ground outweighs all coloured tiles, panels and any band; answer No only if clearly not.",
+    "method": "measure",
+    "method_note": "Measure each PDF page separately. Exclude photographs. Count Warm Paper Ground pixels and compare with the combined Oatmeal Glaze, Soft Clay and Indigo Dye pixels. Yes only if Warm Paper Ground has strictly more pixels on every page. Use the measurement guide; do not estimate. Each RGB channel must be within 5 of a selected palette colour.",
+    "measurement": {
+      "kind": "area_comparison",
+      "channel_tolerance": 5,
+      "comparison": "strictly_greater"
+    },
     "reference_assets": []
   },
   {
@@ -2694,5 +2704,55 @@
     "method": "look",
     "method_note": "Inspect the named output against this requirement and its linked references.",
     "reference_assets": []
+  },
+  {
+    "check_id": "PHOTO-26/wholesale-presentation/H071",
+    "output_id": "wholesale-presentation",
+    "type": "human",
+    "output_reference": "deliverables/wholesale-presentation.pdf",
+    "check": "The cut-out teapot handle opening in wholesale-presentation.pdf shows the background behind the product, not the studio sweep from autumn_shoot_13.jpg.",
+    "method": "look",
+    "method_note": "Inspect the named output against this requirement and its linked references.",
+    "reference_assets": [
+      {
+        "filename": "autumn_shoot_01.jpg",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/tasks/SB3-026-PHO__thornmere-home-autumn-interiors-image-system/assets/autumn_shoot_01.jpg"
+      },
+      {
+        "filename": "autumn_shoot_13.jpg",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/tasks/SB3-026-PHO__thornmere-home-autumn-interiors-image-system/assets/autumn_shoot_13.jpg"
+      },
+      {
+        "filename": "fonts/BarlowCondensed-Medium.ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/BarlowCondensed-Medium.ttf"
+      },
+      {
+        "filename": "fonts/SourceSerif4[opsz,wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/SourceSerif4%5Bopsz%2Cwght%5D.ttf"
+      },
+      {
+        "filename": "fonts/Inter[opsz,wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-26/fonts/Inter%5Bopsz%2Cwght%5D.ttf"
+      }
+    ]
+  },
+  {
+    "check_id": "PHOTO-26/collection-spread/H065",
+    "output_id": "collection-spread",
+    "type": "human",
+    "output_reference": "deliverables/collection-spread.pdf",
+    "check": "The cut-out teapot handle opening in collection-spread.pdf shows the background behind the product, not the studio sweep from autumn_shoot_13.jpg.",
+    "method": "look",
+    "method_note": "Inspect the named output against this requirement and its linked references.",
+    "reference_assets": [
+      {
+        "filename": "autumn_shoot_01.jpg",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/tasks/SB3-026-PHO__thornmere-home-autumn-interiors-image-system/assets/autumn_shoot_01.jpg"
+      },
+      {
+        "filename": "autumn_shoot_13.jpg",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/tasks/SB3-026-PHO__thornmere-home-autumn-interiors-image-system/assets/autumn_shoot_13.jpg"
+      }
+    ]
   }
 ]

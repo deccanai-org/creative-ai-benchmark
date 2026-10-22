@@ -2,6 +2,10 @@
 
 Revised input pack. Previous execution results are historical, not current ratings.
 
+Score only the listed current Auto and Human verifiers. A design target marked "Not scored" in coverage remains a client instruction but is excluded from the score denominator: the requested delivery does not provide enough evidence to verify it. Do not infer a pass or failure. If a listed measurement cannot be completed, leave it unanswered and record the missing evidence; do not guess. Human answers remain Yes/No. Historical run results are not current scores.
+
+[Measurement guide](../../annotation-pilot/measurement-guide.html)
+
 ## Auto verifiers
 
 - `PHOTO-20/speaker-onepager/A001` “Astrid Vellacourt / Speaker booking one-pager” (speaker-onepager.pdf) is present in the delivery package.
@@ -245,661 +249,1440 @@ Revised input pack. Previous execution results are historical, not current ratin
 ## Human verifiers
 
 - `PHOTO-20/speaker-onepager/H001` The biography on “Speaker booking one-pager” (speaker-onepager.pdf) says she co-founded and runs Vellacourt & Sund, a six-person industrial design studio.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/speaker-onepager/H003` At full export size, the booking contact on “Speaker booking one-pager” (speaker-onepager.pdf) is fully visible, with no letters cut off at an edge.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-announcement-r002/H001` The event name “Northlight Design Forum” on “Confirmed-talk speaker announcement - Northlight Design Forum - Designing the thing before the deck” (event-announcement-r002.png) is fully visible, not cropped at any edge.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-announcement-r002/H003` The speaker name “Astrid Vellacourt” appears on “Confirmed-talk speaker announcement - Northlight Design Forum - Designing the thing before the deck” (event-announcement-r002.png).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-announcement-r002/H004` The event name on “Confirmed-talk speaker announcement - Northlight Design Forum - Designing the thing before the deck” (event-announcement-r002.png) reads exactly “Northlight Design Forum”, as in vellacourt_talks.csv row 2.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-announcement-r002/H005` The date on “Confirmed-talk speaker announcement - Northlight Design Forum - Designing the thing before the deck” (event-announcement-r002.png) reads exactly “14 Feb 2026”, as in vellacourt_talks.csv row 2.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-announcement-r002/H006` The talk title on “Confirmed-talk speaker announcement - Northlight Design Forum - Designing the thing before the deck” (event-announcement-r002.png) reads exactly “Designing the thing before the deck”, as in vellacourt_talks.csv row 2.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-announcement-r002/H007` “Confirmed-talk speaker announcement - Northlight Design Forum - Designing the thing before the deck” (event-announcement-r002.png) announces “Designing the thing before the deck”, one of the three confirmed talks in vellacourt_bio_copy.txt.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-announcement-r002/H008` The headline on “Confirmed-talk speaker announcement - Northlight Design Forum - Designing the thing before the deck” (event-announcement-r002.png) reads “I'll be speaking.”, as in her announcement wording.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-announcement-r002/H009` The body line on “Confirmed-talk speaker announcement - Northlight Design Forum - Designing the thing before the deck” (event-announcement-r002.png) reads “I'm speaking at Northlight Design Forum on 14 Feb 2026. Designing the thing before the deck.”
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-announcement-r002/H010` The sign-off on “Confirmed-talk speaker announcement - Northlight Design Forum - Designing the thing before the deck” (event-announcement-r002.png) reads “Astrid Vellacourt - Vellacourt & Sund.”
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-announcement-r002/H011` Her name “Astrid Vellacourt” on “Confirmed-talk speaker announcement - Northlight Design Forum - Designing the thing before the deck” (event-announcement-r002.png) is set larger than the date “14 Feb 2026”.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-announcement-r002/H012` No social handle, follower count or platform icon appears on “Confirmed-talk speaker announcement - Northlight Design Forum - Designing the thing before the deck” (event-announcement-r002.png).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-announcement-r002/H013` The portrait on “Confirmed-talk speaker announcement - Northlight Design Forum - Designing the thing before the deck” (event-announcement-r002.png) is built from vellacourt_session_02.jpg, the frame vellacourt_talks.csv row 2 assigns.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-announcement-r002/H014` The face in the portrait on “Confirmed-talk speaker announcement - Northlight Design Forum - Designing the thing before the deck” (event-announcement-r002.png) is the original photograph, not regenerated or repainted.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-announcement-r002/H015` The face on “Confirmed-talk speaker announcement - Northlight Design Forum - Designing the thing before the deck” (event-announcement-r002.png) is still recognizably the person photographed in vellacourt_session_02.jpg.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-announcement-r002/H016` Nothing of her hair, shoulders or clothing on “Confirmed-talk speaker announcement - Northlight Design Forum - Designing the thing before the deck” (event-announcement-r002.png) is generated, extended or redrawn beyond vellacourt_session_02.jpg.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-announcement-r002/H017` No grey studio paper from vellacourt_session_02.jpg shows behind Astrid Vellacourt on “Confirmed-talk speaker announcement - Northlight Design Forum - Designing the thing before the deck” (event-announcement-r002.png).
-- `PHOTO-20/event-announcement-r002/H018` Her curly hair edge on “Confirmed-talk speaker announcement - Northlight Design Forum - Designing the thing before the deck” (event-announcement-r002.png) shows no pale or grey rim and no clipped curls.
-- `PHOTO-20/event-announcement-r002/H019` The portrait on “Confirmed-talk speaker announcement - Northlight Design Forum - Designing the thing before the deck” (event-announcement-r002.png) keeps her natural skin and hair colour, with no heavy filter, colour grade or skin smoothing.
+  Look: Inspect the named output against this requirement and its linked references.
+- `PHOTO-20/event-announcement-r002/H018` The hair edge in event-announcement-r002.png has no pale or grey fringe.
+  Look: Inspect the named output against this requirement and its linked references.
+- `PHOTO-20/event-announcement-r002/H019` The portrait in event-announcement-r002.png retains natural skin colour from vellacourt_session_02.jpg.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-announcement-r002/H020` If vellacourt_workshop_snap.jpg appears on “Confirmed-talk speaker announcement - Northlight Design Forum - Designing the thing before the deck” (event-announcement-r002.png), it shows no blur, softness or blocky pixels from being enlarged.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-announcement-r002/H021` The AV monogram on “Confirmed-talk speaker announcement - Northlight Design Forum - Designing the thing before the deck” (event-announcement-r002.png) is the supplied mark from vellacourt_av_transparent.png, not a retyped or redrawn AV.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-announcement-r002/H022` The AV monogram on “Confirmed-talk speaker announcement - Northlight Design Forum - Designing the thing before the deck” (event-announcement-r002.png) is clean artwork, with no paper texture, raking-light shadow or wood grain.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-announcement-r002/H023` The AV monogram on “Confirmed-talk speaker announcement - Northlight Design Forum - Designing the thing before the deck” (event-announcement-r002.png) is narrower than her name “Astrid Vellacourt” set beneath it.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-announcement-r002/H024` Her name beneath the AV monogram on “Confirmed-talk speaker announcement - Northlight Design Forum - Designing the thing before the deck” (event-announcement-r002.png) is set in Instrument Serif Regular.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-announcement-r002/H025` Her name “Astrid Vellacourt” sits directly beneath the AV monogram on “Confirmed-talk speaker announcement - Northlight Design Forum - Designing the thing before the deck” (event-announcement-r002.png).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-announcement-r002/H026` The AV monogram appears exactly once on “Confirmed-talk speaker announcement - Northlight Design Forum - Designing the thing before the deck” (event-announcement-r002.png).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-announcement-r002/H027` On “Confirmed-talk speaker announcement - Northlight Design Forum - Designing the thing before the deck” (event-announcement-r002.png), the inner diagonals of the monogram A and V read as one shared hairline.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-announcement-r002/H028` The AV monogram on “Confirmed-talk speaker announcement - Northlight Design Forum - Designing the thing before the deck” (event-announcement-r002.png) is solid Ochre #B98A4B.
+  Measure: Eyedropper the thickest part of the monogram at 400% zoom and compare its hex with #B98A4B. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-20/event-announcement-r002/H029` On “Confirmed-talk speaker announcement - Northlight Design Forum - Designing the thing before the deck” (event-announcement-r002.png), the AV monogram sits above or left of the portrait, so it is read first.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-announcement-r002/H030` Apart from her name and the AV monogram, no text on “Confirmed-talk speaker announcement - Northlight Design Forum - Designing the thing before the deck” (event-announcement-r002.png) is set in a serif.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-announcement-r002/H031` Apart from the talk title, the body line and sign-off on “Confirmed-talk speaker announcement - Northlight Design Forum - Designing the thing before the deck” (event-announcement-r002.png) are set in Inter Regular.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-announcement-r002/H032` No line of running text on “Confirmed-talk speaker announcement - Northlight Design Forum - Designing the thing before the deck” (event-announcement-r002.png) runs longer than 65 characters.
+  Measure: Count the characters, spaces included, in each printed line of the body line and sign-off; answer No if any line has more than 65.
 - `PHOTO-20/event-announcement-r002/H033` Type, grounds, panels, rules and icons on “Confirmed-talk speaker announcement - Northlight Design Forum - Designing the thing before the deck” (event-announcement-r002.png) use only #262524, #E8E1D6, #4C5560, #B98A4B, #16171A and #F4EFE7.
+  Measure: In an image editor at 400% zoom, eyedropper every ground, panel, rule, icon and thick type stroke; ignore the photograph; any unlisted hex means No. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-20/event-announcement-r002/H034` Every ground and panel on “Confirmed-talk speaker announcement - Northlight Design Forum - Designing the thing before the deck” (event-announcement-r002.png) is Warm Neutral #E8E1D6, Bone #F4EFE7, Deep Ground #16171A or Vellacourt Ink #262524, not pure white.
+  Measure: In an image editor, eyedropper each ground, panel and flat colour and compare its hex with the listed values; #FFFFFF is a No. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-20/event-announcement-r002/H035` On Warm Neutral or Bone, her name, talk titles and running text on “Confirmed-talk speaker announcement - Northlight Design Forum - Designing the thing before the deck” (event-announcement-r002.png) are Vellacourt Ink #262524.
+  Measure: In an image editor at 400% zoom, eyedropper the middle of a thick stroke of that type and compare its hex with the values named. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-20/event-announcement-r002/H036` Apart from the Ochre monogram, type on Deep Ground or Vellacourt Ink on “Confirmed-talk speaker announcement - Northlight Design Forum - Designing the thing before the deck” (event-announcement-r002.png) is Warm Neutral #E8E1D6 or Bone #F4EFE7.
+  Measure: In an image editor at 400% zoom, eyedropper the middle of a thick stroke of that type and compare its hex with the values named. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-20/event-announcement-r002/H037` On “Confirmed-talk speaker announcement - Northlight Design Forum - Designing the thing before the deck” (event-announcement-r002.png), Ochre #B98A4B appears only in the AV monogram, never in type, rules, grounds or panels.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-20/event-announcement-r002/H038` All type, grounds and panels on “Confirmed-talk speaker announcement - Northlight Design Forum - Designing the thing before the deck” (event-announcement-r002.png) are solid colour, with no transparency or gradient.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-announcement-r002/H039` No gold foil, metallic, gloss, bevel, glow or drop shadow appears on the monogram, type, rules or panels of “Confirmed-talk speaker announcement - Northlight Design Forum - Designing the thing before the deck” (event-announcement-r002.png).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-announcement-r003/H001` The event name “Made & Kept” on “Confirmed-talk speaker announcement - Made & Kept - Six people, one hand” (event-announcement-r003.png) is fully visible, not cropped at any edge.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-announcement-r003/H003` The speaker name “Astrid Vellacourt” appears on “Confirmed-talk speaker announcement - Made & Kept - Six people, one hand” (event-announcement-r003.png).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-announcement-r003/H004` The event name on “Confirmed-talk speaker announcement - Made & Kept - Six people, one hand” (event-announcement-r003.png) reads exactly “Made & Kept”, as in vellacourt_talks.csv row 3.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-announcement-r003/H005` The date on “Confirmed-talk speaker announcement - Made & Kept - Six people, one hand” (event-announcement-r003.png) reads exactly “2026-03-03”, as in vellacourt_talks.csv row 3.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-announcement-r003/H006` The talk title on “Confirmed-talk speaker announcement - Made & Kept - Six people, one hand” (event-announcement-r003.png) reads exactly “Six people, one hand”, as in vellacourt_talks.csv row 3.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-announcement-r008/H001` The event name “Continuum Product Days” on “Confirmed-talk speaker announcement - Continuum Product Days - What survives contact with a factory” (event-announcement-r008.png) is fully visible, not cropped at any edge.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-announcement-r008/H003` The speaker name “Astrid Vellacourt” appears on “Confirmed-talk speaker announcement - Continuum Product Days - What survives contact with a factory” (event-announcement-r008.png).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-announcement-r008/H004` The event name on “Confirmed-talk speaker announcement - Continuum Product Days - What survives contact with a factory” (event-announcement-r008.png) reads exactly “Continuum Product Days”, as in vellacourt_talks.csv row 8.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-announcement-r008/H005` The date on “Confirmed-talk speaker announcement - Continuum Product Days - What survives contact with a factory” (event-announcement-r008.png) reads exactly “May 9”, as in vellacourt_talks.csv row 8.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-announcement-r008/H006` The talk title on “Confirmed-talk speaker announcement - Continuum Product Days - What survives contact with a factory” (event-announcement-r008.png) reads exactly “What survives contact with a factory”, as in vellacourt_talks.csv row 8.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-announcement-r008/H007` “Confirmed-talk speaker announcement - Continuum Product Days - What survives contact with a factory” (event-announcement-r008.png) announces “What survives contact with a factory”, one of the three confirmed talks in vellacourt_bio_copy.txt.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-announcement-r008/H008` The headline on “Confirmed-talk speaker announcement - Continuum Product Days - What survives contact with a factory” (event-announcement-r008.png) reads “I'll be speaking.”, as in her announcement wording.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-announcement-r008/H009` The body line on “Confirmed-talk speaker announcement - Continuum Product Days - What survives contact with a factory” (event-announcement-r008.png) reads “I'm speaking at Continuum Product Days on May 9. What survives contact with a factory.”
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-announcement-r008/H010` The sign-off on “Confirmed-talk speaker announcement - Continuum Product Days - What survives contact with a factory” (event-announcement-r008.png) reads “Astrid Vellacourt - Vellacourt & Sund.”
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-announcement-r008/H011` Her name “Astrid Vellacourt” on “Confirmed-talk speaker announcement - Continuum Product Days - What survives contact with a factory” (event-announcement-r008.png) is set larger than the date “May 9”.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-announcement-r008/H012` No social handle, follower count or platform icon appears on “Confirmed-talk speaker announcement - Continuum Product Days - What survives contact with a factory” (event-announcement-r008.png).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-announcement-r008/H013` The portrait on “Confirmed-talk speaker announcement - Continuum Product Days - What survives contact with a factory” (event-announcement-r008.png) is built from vellacourt_session_01.jpg, the frame vellacourt_talks.csv row 8 assigns.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-announcement-r008/H014` The face in the portrait on “Confirmed-talk speaker announcement - Continuum Product Days - What survives contact with a factory” (event-announcement-r008.png) is the original photograph, not regenerated or repainted.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-announcement-r008/H015` The face on “Confirmed-talk speaker announcement - Continuum Product Days - What survives contact with a factory” (event-announcement-r008.png) is still recognizably the person photographed in vellacourt_session_01.jpg.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-announcement-r008/H016` Nothing of her hair, shoulders or clothing on “Confirmed-talk speaker announcement - Continuum Product Days - What survives contact with a factory” (event-announcement-r008.png) is generated, extended or redrawn beyond vellacourt_session_01.jpg.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-announcement-r008/H017` No grey studio paper from vellacourt_session_01.jpg shows behind Astrid Vellacourt on “Confirmed-talk speaker announcement - Continuum Product Days - What survives contact with a factory” (event-announcement-r008.png).
-- `PHOTO-20/event-announcement-r008/H018` Her curly hair edge on “Confirmed-talk speaker announcement - Continuum Product Days - What survives contact with a factory” (event-announcement-r008.png) shows no pale or grey rim and no clipped curls.
-- `PHOTO-20/event-announcement-r008/H019` The portrait on “Confirmed-talk speaker announcement - Continuum Product Days - What survives contact with a factory” (event-announcement-r008.png) keeps her natural skin and hair colour, with no heavy filter, colour grade or skin smoothing.
+  Look: Inspect the named output against this requirement and its linked references.
+- `PHOTO-20/event-announcement-r008/H018` The hair edge in event-announcement-r008.png has no pale or grey fringe.
+  Look: Inspect the named output against this requirement and its linked references.
+- `PHOTO-20/event-announcement-r008/H019` The portrait in event-announcement-r008.png retains natural skin colour from vellacourt_session_01.jpg.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-announcement-r008/H020` If vellacourt_workshop_snap.jpg appears on “Confirmed-talk speaker announcement - Continuum Product Days - What survives contact with a factory” (event-announcement-r008.png), it shows no blur, softness or blocky pixels from being enlarged.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-announcement-r008/H021` The AV monogram on “Confirmed-talk speaker announcement - Continuum Product Days - What survives contact with a factory” (event-announcement-r008.png) is the supplied mark from vellacourt_av_transparent.png, not a retyped or redrawn AV.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-announcement-r008/H022` The AV monogram on “Confirmed-talk speaker announcement - Continuum Product Days - What survives contact with a factory” (event-announcement-r008.png) is clean artwork, with no paper texture, raking-light shadow or wood grain.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-announcement-r008/H023` The AV monogram on “Confirmed-talk speaker announcement - Continuum Product Days - What survives contact with a factory” (event-announcement-r008.png) is narrower than her name “Astrid Vellacourt” set beneath it.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-announcement-r008/H024` Her name beneath the AV monogram on “Confirmed-talk speaker announcement - Continuum Product Days - What survives contact with a factory” (event-announcement-r008.png) is set in Instrument Serif Regular.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-announcement-r008/H025` Her name “Astrid Vellacourt” sits directly beneath the AV monogram on “Confirmed-talk speaker announcement - Continuum Product Days - What survives contact with a factory” (event-announcement-r008.png).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-announcement-r008/H026` The AV monogram appears exactly once on “Confirmed-talk speaker announcement - Continuum Product Days - What survives contact with a factory” (event-announcement-r008.png).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-announcement-r008/H027` On “Confirmed-talk speaker announcement - Continuum Product Days - What survives contact with a factory” (event-announcement-r008.png), the inner diagonals of the monogram A and V read as one shared hairline.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-announcement-r008/H028` The AV monogram on “Confirmed-talk speaker announcement - Continuum Product Days - What survives contact with a factory” (event-announcement-r008.png) is solid Ochre #B98A4B.
+  Measure: Eyedropper the thickest part of the monogram at 400% zoom and compare its hex with #B98A4B. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-20/event-announcement-r008/H029` On “Confirmed-talk speaker announcement - Continuum Product Days - What survives contact with a factory” (event-announcement-r008.png), the AV monogram sits above or left of the portrait, so it is read first.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-announcement-r008/H030` Apart from her name and the AV monogram, no text on “Confirmed-talk speaker announcement - Continuum Product Days - What survives contact with a factory” (event-announcement-r008.png) is set in a serif.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-announcement-r008/H031` Apart from the talk title, the body line and sign-off on “Confirmed-talk speaker announcement - Continuum Product Days - What survives contact with a factory” (event-announcement-r008.png) are set in Inter Regular.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-announcement-r008/H032` No line of running text on “Confirmed-talk speaker announcement - Continuum Product Days - What survives contact with a factory” (event-announcement-r008.png) runs longer than 65 characters.
+  Measure: Count the characters, spaces included, in each printed line of the body line and sign-off; answer No if any line has more than 65.
 - `PHOTO-20/event-announcement-r008/H033` Type, grounds, panels, rules and icons on “Confirmed-talk speaker announcement - Continuum Product Days - What survives contact with a factory” (event-announcement-r008.png) use only #262524, #E8E1D6, #4C5560, #B98A4B, #16171A and #F4EFE7.
+  Measure: In an image editor at 400% zoom, eyedropper every ground, panel, rule, icon and thick type stroke; ignore the photograph; any unlisted hex means No. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-20/event-announcement-r008/H034` Every ground and panel on “Confirmed-talk speaker announcement - Continuum Product Days - What survives contact with a factory” (event-announcement-r008.png) is Warm Neutral #E8E1D6, Bone #F4EFE7, Deep Ground #16171A or Vellacourt Ink #262524, not pure white.
+  Measure: In an image editor, eyedropper each ground, panel and flat colour and compare its hex with the listed values; #FFFFFF is a No. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-20/event-announcement-r008/H035` On Warm Neutral or Bone, her name, talk titles and running text on “Confirmed-talk speaker announcement - Continuum Product Days - What survives contact with a factory” (event-announcement-r008.png) are Vellacourt Ink #262524.
+  Measure: In an image editor at 400% zoom, eyedropper the middle of a thick stroke of that type and compare its hex with the values named. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-20/event-announcement-r008/H036` Apart from the Ochre monogram, type on Deep Ground or Vellacourt Ink on “Confirmed-talk speaker announcement - Continuum Product Days - What survives contact with a factory” (event-announcement-r008.png) is Warm Neutral #E8E1D6 or Bone #F4EFE7.
+  Measure: In an image editor at 400% zoom, eyedropper the middle of a thick stroke of that type and compare its hex with the values named. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-20/event-announcement-r008/H037` On “Confirmed-talk speaker announcement - Continuum Product Days - What survives contact with a factory” (event-announcement-r008.png), Ochre #B98A4B appears only in the AV monogram, never in type, rules, grounds or panels.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-20/event-announcement-r008/H038` All type, grounds and panels on “Confirmed-talk speaker announcement - Continuum Product Days - What survives contact with a factory” (event-announcement-r008.png) are solid colour, with no transparency or gradient.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-announcement-r008/H039` No gold foil, metallic, gloss, bevel, glow or drop shadow appears on the monogram, type, rules or panels of “Confirmed-talk speaker announcement - Continuum Product Days - What survives contact with a factory” (event-announcement-r008.png).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-banner-r002/H002` The portrait on “Confirmed-talk speaker banner - Northlight Design Forum - Designing the thing before the deck” (event-banner-r002.png) is built from vellacourt_session_02.jpg, the frame vellacourt_talks.csv row 2 assigns.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-banner-r002/H003` The event name on “Confirmed-talk speaker banner - Northlight Design Forum - Designing the thing before the deck” (event-banner-r002.png) reads exactly “Northlight Design Forum”, as in vellacourt_talks.csv row 2.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-banner-r002/H004` The date on “Confirmed-talk speaker banner - Northlight Design Forum - Designing the thing before the deck” (event-banner-r002.png) reads exactly “14 Feb 2026”, as in vellacourt_talks.csv row 2.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-banner-r002/H005` The talk title on “Confirmed-talk speaker banner - Northlight Design Forum - Designing the thing before the deck” (event-banner-r002.png) reads exactly “Designing the thing before the deck”, as in vellacourt_talks.csv row 2.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-banner-r002/H006` “Confirmed-talk speaker banner - Northlight Design Forum - Designing the thing before the deck” (event-banner-r002.png) announces “Designing the thing before the deck”, one of the three confirmed talks in vellacourt_bio_copy.txt.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-banner-r002/H007` The speaker name “Astrid Vellacourt” appears on “Confirmed-talk speaker banner - Northlight Design Forum - Designing the thing before the deck” (event-banner-r002.png).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-banner-r002/H008` No letter of the talk title, event name or date is cut off at an edge of “Confirmed-talk speaker banner - Northlight Design Forum - Designing the thing before the deck” (event-banner-r002.png).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-banner-r002/H009` Her name “Astrid Vellacourt” on “Confirmed-talk speaker banner - Northlight Design Forum - Designing the thing before the deck” (event-banner-r002.png) is set larger than the date “14 Feb 2026”.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-banner-r002/H010` Apart from the monogram, the talk title is the largest text on “Confirmed-talk speaker banner - Northlight Design Forum - Designing the thing before the deck” (event-banner-r002.png).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-banner-r002/H011` No social handle, follower count or platform icon appears on “Confirmed-talk speaker banner - Northlight Design Forum - Designing the thing before the deck” (event-banner-r002.png).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-banner-r002/H012` The face in the portrait on “Confirmed-talk speaker banner - Northlight Design Forum - Designing the thing before the deck” (event-banner-r002.png) is the original photograph, not regenerated or repainted.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-banner-r002/H013` The face on “Confirmed-talk speaker banner - Northlight Design Forum - Designing the thing before the deck” (event-banner-r002.png) is still recognizably the person photographed in vellacourt_session_02.jpg.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-banner-r002/H014` Nothing of her hair, shoulders or clothing on “Confirmed-talk speaker banner - Northlight Design Forum - Designing the thing before the deck” (event-banner-r002.png) is generated, extended or redrawn beyond vellacourt_session_02.jpg.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-banner-r002/H015` No grey studio paper from vellacourt_session_02.jpg shows behind Astrid Vellacourt on “Confirmed-talk speaker banner - Northlight Design Forum - Designing the thing before the deck” (event-banner-r002.png).
-- `PHOTO-20/event-banner-r002/H016` Her curly hair edge on “Confirmed-talk speaker banner - Northlight Design Forum - Designing the thing before the deck” (event-banner-r002.png) shows no pale or grey rim and no clipped curls.
-- `PHOTO-20/event-banner-r002/H017` The portrait on “Confirmed-talk speaker banner - Northlight Design Forum - Designing the thing before the deck” (event-banner-r002.png) keeps her natural skin and hair colour, with no heavy filter, colour grade or skin smoothing.
+  Look: Inspect the named output against this requirement and its linked references.
+- `PHOTO-20/event-banner-r002/H016` The hair edge in event-banner-r002.png has no pale or grey fringe.
+  Look: Inspect the named output against this requirement and its linked references.
+- `PHOTO-20/event-banner-r002/H017` The portrait in event-banner-r002.png retains natural skin colour from vellacourt_session_02.jpg.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-banner-r002/H018` If vellacourt_workshop_snap.jpg appears on “Confirmed-talk speaker banner - Northlight Design Forum - Designing the thing before the deck” (event-banner-r002.png), it shows no blur, softness or blocky pixels from being enlarged.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-banner-r002/H019` The AV monogram on “Confirmed-talk speaker banner - Northlight Design Forum - Designing the thing before the deck” (event-banner-r002.png) is the supplied mark from vellacourt_av_transparent.png, not a retyped or redrawn AV.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-banner-r002/H020` The AV monogram on “Confirmed-talk speaker banner - Northlight Design Forum - Designing the thing before the deck” (event-banner-r002.png) is clean artwork, with no paper texture, raking-light shadow or wood grain.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-banner-r002/H021` The AV monogram on “Confirmed-talk speaker banner - Northlight Design Forum - Designing the thing before the deck” (event-banner-r002.png) is narrower than her name “Astrid Vellacourt” set beneath it.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-banner-r002/H022` Her name beneath the AV monogram on “Confirmed-talk speaker banner - Northlight Design Forum - Designing the thing before the deck” (event-banner-r002.png) is set in Instrument Serif Regular.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-banner-r002/H023` Her name “Astrid Vellacourt” sits directly beneath the AV monogram on “Confirmed-talk speaker banner - Northlight Design Forum - Designing the thing before the deck” (event-banner-r002.png).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-banner-r002/H024` The AV monogram appears exactly once on “Confirmed-talk speaker banner - Northlight Design Forum - Designing the thing before the deck” (event-banner-r002.png).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-banner-r002/H025` On “Confirmed-talk speaker banner - Northlight Design Forum - Designing the thing before the deck” (event-banner-r002.png), the inner diagonals of the monogram A and V read as one shared hairline.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-banner-r002/H026` The AV monogram on “Confirmed-talk speaker banner - Northlight Design Forum - Designing the thing before the deck” (event-banner-r002.png) is solid Ochre #B98A4B.
+  Measure: Eyedropper the thickest part of the monogram at 400% zoom and compare its hex with #B98A4B. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-20/event-banner-r002/H027` On “Confirmed-talk speaker banner - Northlight Design Forum - Designing the thing before the deck” (event-banner-r002.png), the AV monogram sits above or left of the portrait, so it is read first.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-banner-r002/H028` Apart from her name and the AV monogram, no text on “Confirmed-talk speaker banner - Northlight Design Forum - Designing the thing before the deck” (event-banner-r002.png) is set in a serif.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-banner-r002/H029` The event and date line on “Confirmed-talk speaker banner - Northlight Design Forum - Designing the thing before the deck” (event-banner-r002.png) is Inter Regular, not Medium, bold or a serif.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-banner-r002/H030` No line of running text on “Confirmed-talk speaker banner - Northlight Design Forum - Designing the thing before the deck” (event-banner-r002.png) runs longer than 65 characters.
+  Measure: Ignore her name, talk title, event and date. Count the characters, spaces included, of any other line; No if over 65, else Yes.
 - `PHOTO-20/event-banner-r002/H031` Type, grounds, panels, rules and icons on “Confirmed-talk speaker banner - Northlight Design Forum - Designing the thing before the deck” (event-banner-r002.png) use only #262524, #E8E1D6, #4C5560, #B98A4B, #16171A and #F4EFE7.
+  Measure: In an image editor at 400% zoom, eyedropper every ground, panel, rule, icon and thick type stroke; ignore the photograph; any unlisted hex means No. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-20/event-banner-r002/H032` Every ground and panel on “Confirmed-talk speaker banner - Northlight Design Forum - Designing the thing before the deck” (event-banner-r002.png) is Warm Neutral #E8E1D6, Bone #F4EFE7, Deep Ground #16171A or Vellacourt Ink #262524, not pure white.
+  Measure: In an image editor, eyedropper each ground, panel and flat colour and compare its hex with the listed values; #FFFFFF is a No. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-20/event-banner-r002/H033` On Warm Neutral or Bone, her name and the talk title on “Confirmed-talk speaker banner - Northlight Design Forum - Designing the thing before the deck” (event-banner-r002.png) are Vellacourt Ink #262524.
+  Measure: In an image editor at 400% zoom, eyedropper the middle of a thick stroke of that type and compare its hex with the values named. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-20/event-banner-r002/H034` Apart from the Ochre monogram, type on Deep Ground or Vellacourt Ink on “Confirmed-talk speaker banner - Northlight Design Forum - Designing the thing before the deck” (event-banner-r002.png) is Warm Neutral #E8E1D6 or Bone #F4EFE7.
+  Measure: In an image editor at 400% zoom, eyedropper the middle of a thick stroke of that type and compare its hex with the values named. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-20/event-banner-r002/H035` On “Confirmed-talk speaker banner - Northlight Design Forum - Designing the thing before the deck” (event-banner-r002.png), Ochre #B98A4B appears only in the AV monogram, never in type, rules, grounds or panels.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-20/event-banner-r002/H036` All type, grounds and panels on “Confirmed-talk speaker banner - Northlight Design Forum - Designing the thing before the deck” (event-banner-r002.png) are solid colour, with no transparency or gradient.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-banner-r002/H037` No gold foil, metallic, gloss, bevel, glow or drop shadow appears on the monogram, type, rules or panels of “Confirmed-talk speaker banner - Northlight Design Forum - Designing the thing before the deck” (event-banner-r002.png).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-banner-r003/H002` The portrait on “Confirmed-talk speaker banner - Made & Kept - Six people, one hand” (event-banner-r003.png) is built from vellacourt_session_05.jpg, the frame vellacourt_talks.csv row 3 assigns.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-banner-r003/H003` The event name on “Confirmed-talk speaker banner - Made & Kept - Six people, one hand” (event-banner-r003.png) reads exactly “Made & Kept”, as in vellacourt_talks.csv row 3.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-banner-r003/H004` The date on “Confirmed-talk speaker banner - Made & Kept - Six people, one hand” (event-banner-r003.png) reads exactly “2026-03-03”, as in vellacourt_talks.csv row 3.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-banner-r003/H005` The talk title on “Confirmed-talk speaker banner - Made & Kept - Six people, one hand” (event-banner-r003.png) reads exactly “Six people, one hand”, as in vellacourt_talks.csv row 3.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-banner-r008/H002` The portrait on “Confirmed-talk speaker banner - Continuum Product Days - What survives contact with a factory” (event-banner-r008.png) is built from vellacourt_session_01.jpg, the frame vellacourt_talks.csv row 8 assigns.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-banner-r008/H003` The event name on “Confirmed-talk speaker banner - Continuum Product Days - What survives contact with a factory” (event-banner-r008.png) reads exactly “Continuum Product Days”, as in vellacourt_talks.csv row 8.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-banner-r008/H004` The date on “Confirmed-talk speaker banner - Continuum Product Days - What survives contact with a factory” (event-banner-r008.png) reads exactly “May 9”, as in vellacourt_talks.csv row 8.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-banner-r008/H005` The talk title on “Confirmed-talk speaker banner - Continuum Product Days - What survives contact with a factory” (event-banner-r008.png) reads exactly “What survives contact with a factory”, as in vellacourt_talks.csv row 8.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r002/H001` The talk title on “Speaker talk card - Northlight Design Forum - Designing the thing before the deck” (talk-card-r002.pdf) reads “Designing the thing before the deck”, as in vellacourt_talks.csv row 2.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r002/H002` The event name “Northlight Design Forum” sits fully inside “Speaker talk card - Northlight Design Forum - Designing the thing before the deck” (talk-card-r002.pdf), with no letters cut off.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r003/H001` The talk title on “Speaker talk card - Made & Kept - Six people, one hand” (talk-card-r003.pdf) reads “Six people, one hand”, as in vellacourt_talks.csv row 3.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r003/H002` The event name “Made & Kept” sits fully inside “Speaker talk card - Made & Kept - Six people, one hand” (talk-card-r003.pdf), with no letters cut off.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r003/H003` The speaker name “Astrid Vellacourt” appears on “Speaker talk card - Made & Kept - Six people, one hand” (talk-card-r003.pdf).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r003/H004` The AV monogram on “Speaker talk card - Made & Kept - Six people, one hand” (talk-card-r003.pdf) is narrower than her name “Astrid Vellacourt” set beneath it.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r003/H005` The talk title, event and date on “Speaker talk card - Made & Kept - Six people, one hand” (talk-card-r003.pdf) sit together in one text block.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r003/H006` Apart from the monogram and her name, the talk title is the largest text on “Speaker talk card - Made & Kept - Six people, one hand” (talk-card-r003.pdf).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r003/H007` Her name “Astrid Vellacourt” on “Speaker talk card - Made & Kept - Six people, one hand” (talk-card-r003.pdf) is set larger than the date “2026-03-03”.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r003/H008` No social handle, follower count or platform icon appears on “Speaker talk card - Made & Kept - Six people, one hand” (talk-card-r003.pdf).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r003/H009` No other talk's text, such as the template sample “Designing the thing before the deck” or “Northlight Design Forum”, appears on “Speaker talk card - Made & Kept - Six people, one hand” (talk-card-r003.pdf).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r003/H010` The AV monogram on “Speaker talk card - Made & Kept - Six people, one hand” (talk-card-r003.pdf) is the supplied mark from vellacourt_av_transparent.png, not the template's Georgia Bold “AV” or any retyped AV.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r003/H011` The AV monogram on “Speaker talk card - Made & Kept - Six people, one hand” (talk-card-r003.pdf) is clean artwork, with no paper texture, raking-light shadow or wood grain.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r003/H013` The portrait on “Speaker talk card - Made & Kept - Six people, one hand” (talk-card-r003.pdf) is built from vellacourt_session_05.jpg, the frame vellacourt_talks.csv row 3 assigns.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r003/H014` The face in the portrait on “Speaker talk card - Made & Kept - Six people, one hand” (talk-card-r003.pdf) is the original photograph, not regenerated or repainted.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r003/H015` The face on “Speaker talk card - Made & Kept - Six people, one hand” (talk-card-r003.pdf) is still recognizably the person photographed in vellacourt_session_05.jpg.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r003/H016` Nothing of her hair, shoulders or clothing on “Speaker talk card - Made & Kept - Six people, one hand” (talk-card-r003.pdf) is generated, extended or redrawn beyond vellacourt_session_05.jpg.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r003/H017` No grey studio paper from vellacourt_session_05.jpg shows behind Astrid Vellacourt on “Speaker talk card - Made & Kept - Six people, one hand” (talk-card-r003.pdf).
-- `PHOTO-20/talk-card-r003/H018` Her curly hair edge on “Speaker talk card - Made & Kept - Six people, one hand” (talk-card-r003.pdf) shows no pale or grey rim and no clipped curls.
-- `PHOTO-20/talk-card-r003/H019` The portrait on “Speaker talk card - Made & Kept - Six people, one hand” (talk-card-r003.pdf) keeps her natural skin and hair colour, with no heavy filter, colour grade or skin smoothing.
+  Look: Inspect the named output against this requirement and its linked references.
+- `PHOTO-20/talk-card-r003/H018` The hair edge in talk-card-r003.pdf has no pale or grey fringe.
+  Look: Inspect the named output against this requirement and its linked references.
+- `PHOTO-20/talk-card-r003/H019` The portrait in talk-card-r003.pdf retains natural skin colour from vellacourt_session_05.jpg.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r003/H020` Her name beneath the AV monogram on “Speaker talk card - Made & Kept - Six people, one hand” (talk-card-r003.pdf) is set in Instrument Serif Regular.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r003/H021` Her name “Astrid Vellacourt” sits directly beneath the AV monogram on “Speaker talk card - Made & Kept - Six people, one hand” (talk-card-r003.pdf).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r003/H022` The AV monogram appears exactly once on “Speaker talk card - Made & Kept - Six people, one hand” (talk-card-r003.pdf).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r003/H023` On “Speaker talk card - Made & Kept - Six people, one hand” (talk-card-r003.pdf), the inner diagonals of the monogram A and V read as one shared hairline.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r003/H024` The AV monogram on “Speaker talk card - Made & Kept - Six people, one hand” (talk-card-r003.pdf) is solid Ochre #B98A4B, not grey and not embossed.
+  Measure: Open the PDF in Photoshop or GIMP; eyedropper the thickest part of the monogram at 400% zoom and compare its hex with #B98A4B. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-20/talk-card-r003/H025` On “Speaker talk card - Made & Kept - Six people, one hand” (talk-card-r003.pdf), the AV monogram sits above or left of the portrait, so it is read first.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r003/H026` Apart from her name and the AV monogram, no text on “Speaker talk card - Made & Kept - Six people, one hand” (talk-card-r003.pdf) is set in a serif.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r003/H027` The event name, date and format on “Speaker talk card - Made & Kept - Six people, one hand” (talk-card-r003.pdf) are Inter Regular, not Helvetica Neue.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r003/H028` No line of running text on “Speaker talk card - Made & Kept - Six people, one hand” (talk-card-r003.pdf) runs longer than 65 characters.
+  Measure: Ignore her name, talk title, event, date and format. Copy each other line in Acrobat, count characters with spaces; No if over 65, else Yes.
 - `PHOTO-20/talk-card-r003/H029` Type, grounds, panels, rules and icons on “Speaker talk card - Made & Kept - Six people, one hand” (talk-card-r003.pdf) use only #262524, #E8E1D6, #4C5560, #B98A4B, #16171A and #F4EFE7.
+  Measure: Open the PDF in Photoshop or GIMP; eyedropper every ground, panel, rule, icon and thick type stroke, ignoring the photograph; any unlisted hex means No. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-20/talk-card-r003/H030` “Speaker talk card - Made & Kept - Six people, one hand” (talk-card-r003.pdf) keeps the Warm Neutral #E8E1D6 ground of vellacourt_speakercard_template.pdf.
+  Measure: Open the PDF in Photoshop or GIMP, eyedropper the middle of each ground and panel, and compare its hex with the values named. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-20/talk-card-r003/H031` On Warm Neutral or Bone, her name and the talk title on “Speaker talk card - Made & Kept - Six people, one hand” (talk-card-r003.pdf) are Vellacourt Ink #262524.
+  Measure: Open the PDF in Photoshop or GIMP; at 400% zoom, eyedropper inside a thick stroke of that type and compare its hex with those named. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-20/talk-card-r003/H032` Apart from the Ochre monogram, type on Deep Ground or Vellacourt Ink on “Speaker talk card - Made & Kept - Six people, one hand” (talk-card-r003.pdf) is Warm Neutral #E8E1D6 or Bone #F4EFE7.
+  Measure: Open the PDF in Photoshop or GIMP; at 400% zoom, eyedropper inside a thick stroke of that type and compare its hex with those named. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-20/talk-card-r003/H033` On “Speaker talk card - Made & Kept - Six people, one hand” (talk-card-r003.pdf), Ochre #B98A4B appears only in the AV monogram, never in type, rules, grounds or panels.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-20/talk-card-r003/H034` All type, grounds and panels on “Speaker talk card - Made & Kept - Six people, one hand” (talk-card-r003.pdf) are solid colour, with no transparency or gradient.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r003/H035` No gold foil, metallic, gloss, bevel, glow or drop shadow appears on the monogram, type, rules or panels of “Speaker talk card - Made & Kept - Six people, one hand” (talk-card-r003.pdf).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r004/H001` The talk title on “Speaker talk card - Fjordworks Summit - On staying small on purpose” (talk-card-r004.pdf) reads “On staying small on purpose”, as in vellacourt_talks.csv row 4.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r004/H002` The event name “Fjordworks Summit” sits fully inside “Speaker talk card - Fjordworks Summit - On staying small on purpose” (talk-card-r004.pdf), with no letters cut off.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r004/H003` The speaker name “Astrid Vellacourt” appears on “Speaker talk card - Fjordworks Summit - On staying small on purpose” (talk-card-r004.pdf).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r004/H004` The AV monogram on “Speaker talk card - Fjordworks Summit - On staying small on purpose” (talk-card-r004.pdf) is narrower than her name “Astrid Vellacourt” set beneath it.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r004/H005` The talk title, event and date on “Speaker talk card - Fjordworks Summit - On staying small on purpose” (talk-card-r004.pdf) sit together in one text block.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r004/H006` Apart from the monogram and her name, the talk title is the largest text on “Speaker talk card - Fjordworks Summit - On staying small on purpose” (talk-card-r004.pdf).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r004/H007` Her name “Astrid Vellacourt” on “Speaker talk card - Fjordworks Summit - On staying small on purpose” (talk-card-r004.pdf) is set larger than the date “21/03/26”.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r004/H008` No social handle, follower count or platform icon appears on “Speaker talk card - Fjordworks Summit - On staying small on purpose” (talk-card-r004.pdf).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r004/H009` No other talk's text, such as “The room after the round” or the template sample “Designing the thing before the deck”, appears on “Speaker talk card - Fjordworks Summit - On staying small on purpose” (talk-card-r004.pdf).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r004/H010` The AV monogram on “Speaker talk card - Fjordworks Summit - On staying small on purpose” (talk-card-r004.pdf) is the supplied mark from vellacourt_av_transparent.png, not the template's Georgia Bold “AV” or any retyped AV.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r004/H011` The AV monogram on “Speaker talk card - Fjordworks Summit - On staying small on purpose” (talk-card-r004.pdf) is clean artwork, with no paper texture, raking-light shadow or wood grain.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r004/H013` The portrait on “Speaker talk card - Fjordworks Summit - On staying small on purpose” (talk-card-r004.pdf) is built from vellacourt_session_04.jpg, the frame vellacourt_talks.csv row 4 assigns.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r004/H014` The face in the portrait on “Speaker talk card - Fjordworks Summit - On staying small on purpose” (talk-card-r004.pdf) is the original photograph, not regenerated or repainted.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r004/H015` The face on “Speaker talk card - Fjordworks Summit - On staying small on purpose” (talk-card-r004.pdf) is still recognizably the person photographed in vellacourt_session_04.jpg.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r004/H016` Nothing of her hair, shoulders or clothing on “Speaker talk card - Fjordworks Summit - On staying small on purpose” (talk-card-r004.pdf) is generated, extended or redrawn beyond vellacourt_session_04.jpg.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r004/H017` No grey studio paper from vellacourt_session_04.jpg shows behind Astrid Vellacourt on “Speaker talk card - Fjordworks Summit - On staying small on purpose” (talk-card-r004.pdf).
-- `PHOTO-20/talk-card-r004/H018` Her curly hair edge on “Speaker talk card - Fjordworks Summit - On staying small on purpose” (talk-card-r004.pdf) shows no pale or grey rim and no clipped curls.
-- `PHOTO-20/talk-card-r004/H019` The portrait on “Speaker talk card - Fjordworks Summit - On staying small on purpose” (talk-card-r004.pdf) keeps her natural skin and hair colour, with no heavy filter, colour grade or skin smoothing.
+  Look: Inspect the named output against this requirement and its linked references.
+- `PHOTO-20/talk-card-r004/H018` The hair edge in talk-card-r004.pdf has no pale or grey fringe.
+  Look: Inspect the named output against this requirement and its linked references.
+- `PHOTO-20/talk-card-r004/H019` The portrait in talk-card-r004.pdf retains natural skin colour from vellacourt_session_04.jpg.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r004/H020` Her name beneath the AV monogram on “Speaker talk card - Fjordworks Summit - On staying small on purpose” (talk-card-r004.pdf) is set in Instrument Serif Regular.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r004/H021` Her name “Astrid Vellacourt” sits directly beneath the AV monogram on “Speaker talk card - Fjordworks Summit - On staying small on purpose” (talk-card-r004.pdf).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r004/H022` The AV monogram appears exactly once on “Speaker talk card - Fjordworks Summit - On staying small on purpose” (talk-card-r004.pdf).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r004/H023` On “Speaker talk card - Fjordworks Summit - On staying small on purpose” (talk-card-r004.pdf), the inner diagonals of the monogram A and V read as one shared hairline.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r004/H024` The AV monogram on “Speaker talk card - Fjordworks Summit - On staying small on purpose” (talk-card-r004.pdf) is solid Ochre #B98A4B, not grey and not embossed.
+  Measure: Open the PDF in Photoshop or GIMP; eyedropper the thickest part of the monogram at 400% zoom and compare its hex with #B98A4B. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-20/talk-card-r004/H025` On “Speaker talk card - Fjordworks Summit - On staying small on purpose” (talk-card-r004.pdf), the AV monogram sits above or left of the portrait, so it is read first.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r004/H026` Apart from her name and the AV monogram, no text on “Speaker talk card - Fjordworks Summit - On staying small on purpose” (talk-card-r004.pdf) is set in a serif.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r004/H027` The event name, date and format on “Speaker talk card - Fjordworks Summit - On staying small on purpose” (talk-card-r004.pdf) are Inter Regular, not Helvetica Neue.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r004/H028` No line of running text on “Speaker talk card - Fjordworks Summit - On staying small on purpose” (talk-card-r004.pdf) runs longer than 65 characters.
+  Measure: Ignore her name, talk title, event, date and format. Copy each other line in Acrobat, count characters with spaces; No if over 65, else Yes.
 - `PHOTO-20/talk-card-r004/H029` Type, grounds, panels, rules and icons on “Speaker talk card - Fjordworks Summit - On staying small on purpose” (talk-card-r004.pdf) use only #262524, #E8E1D6, #4C5560, #B98A4B, #16171A and #F4EFE7.
+  Measure: Open the PDF in Photoshop or GIMP; eyedropper every ground, panel, rule, icon and thick type stroke, ignoring the photograph; any unlisted hex means No. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-20/talk-card-r004/H030` “Speaker talk card - Fjordworks Summit - On staying small on purpose” (talk-card-r004.pdf) keeps the Warm Neutral #E8E1D6 ground of vellacourt_speakercard_template.pdf.
+  Measure: Open the PDF in Photoshop or GIMP, eyedropper the middle of each ground and panel, and compare its hex with the values named. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-20/talk-card-r004/H031` On Warm Neutral or Bone, her name and the talk title on “Speaker talk card - Fjordworks Summit - On staying small on purpose” (talk-card-r004.pdf) are Vellacourt Ink #262524.
+  Measure: Open the PDF in Photoshop or GIMP; at 400% zoom, eyedropper inside a thick stroke of that type and compare its hex with those named. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-20/talk-card-r004/H032` Apart from the Ochre monogram, type on Deep Ground or Vellacourt Ink on “Speaker talk card - Fjordworks Summit - On staying small on purpose” (talk-card-r004.pdf) is Warm Neutral #E8E1D6 or Bone #F4EFE7.
+  Measure: Open the PDF in Photoshop or GIMP; at 400% zoom, eyedropper inside a thick stroke of that type and compare its hex with those named. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-20/talk-card-r004/H033` On “Speaker talk card - Fjordworks Summit - On staying small on purpose” (talk-card-r004.pdf), Ochre #B98A4B appears only in the AV monogram, never in type, rules, grounds or panels.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-20/talk-card-r004/H034` All type, grounds and panels on “Speaker talk card - Fjordworks Summit - On staying small on purpose” (talk-card-r004.pdf) are solid colour, with no transparency or gradient.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r004/H035` No gold foil, metallic, gloss, bevel, glow or drop shadow appears on the monogram, type, rules or panels of “Speaker talk card - Fjordworks Summit - On staying small on purpose” (talk-card-r004.pdf).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r005/H001` The talk title on “Speaker talk card - Fjordworks Summit - The room after the round” (talk-card-r005.pdf) reads “The room after the round”, as in vellacourt_talks.csv row 5.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r005/H002` The event name “Fjordworks Summit” sits fully inside “Speaker talk card - Fjordworks Summit - The room after the round” (talk-card-r005.pdf), with no letters cut off.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r005/H003` The speaker name “Astrid Vellacourt” appears on “Speaker talk card - Fjordworks Summit - The room after the round” (talk-card-r005.pdf).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r005/H004` The AV monogram on “Speaker talk card - Fjordworks Summit - The room after the round” (talk-card-r005.pdf) is narrower than her name “Astrid Vellacourt” set beneath it.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r005/H005` The talk title, event and date on “Speaker talk card - Fjordworks Summit - The room after the round” (talk-card-r005.pdf) sit together in one text block.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r005/H006` Apart from the monogram and her name, the talk title is the largest text on “Speaker talk card - Fjordworks Summit - The room after the round” (talk-card-r005.pdf).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r005/H007` Her name “Astrid Vellacourt” on “Speaker talk card - Fjordworks Summit - The room after the round” (talk-card-r005.pdf) is set larger than the date “21 March 2026”.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r005/H008` No social handle, follower count or platform icon appears on “Speaker talk card - Fjordworks Summit - The room after the round” (talk-card-r005.pdf).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r005/H009` No other talk's text, such as “On staying small on purpose” or the template sample “Designing the thing before the deck”, appears on “Speaker talk card - Fjordworks Summit - The room after the round” (talk-card-r005.pdf).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r005/H010` The AV monogram on “Speaker talk card - Fjordworks Summit - The room after the round” (talk-card-r005.pdf) is the supplied mark from vellacourt_av_transparent.png, not the template's Georgia Bold “AV” or any retyped AV.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r005/H011` The AV monogram on “Speaker talk card - Fjordworks Summit - The room after the round” (talk-card-r005.pdf) is clean artwork, with no paper texture, raking-light shadow or wood grain.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r005/H013` The portrait on “Speaker talk card - Fjordworks Summit - The room after the round” (talk-card-r005.pdf) is built from vellacourt_session_04.jpg, the frame vellacourt_talks.csv row 5 assigns.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r005/H014` The face in the portrait on “Speaker talk card - Fjordworks Summit - The room after the round” (talk-card-r005.pdf) is the original photograph, not regenerated or repainted.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r005/H015` The face on “Speaker talk card - Fjordworks Summit - The room after the round” (talk-card-r005.pdf) is still recognizably the person photographed in vellacourt_session_04.jpg.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r005/H016` Nothing of her hair, shoulders or clothing on “Speaker talk card - Fjordworks Summit - The room after the round” (talk-card-r005.pdf) is generated, extended or redrawn beyond vellacourt_session_04.jpg.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r005/H017` No grey studio paper from vellacourt_session_04.jpg shows behind Astrid Vellacourt on “Speaker talk card - Fjordworks Summit - The room after the round” (talk-card-r005.pdf).
-- `PHOTO-20/talk-card-r005/H018` Her curly hair edge on “Speaker talk card - Fjordworks Summit - The room after the round” (talk-card-r005.pdf) shows no pale or grey rim and no clipped curls.
-- `PHOTO-20/talk-card-r005/H019` The portrait on “Speaker talk card - Fjordworks Summit - The room after the round” (talk-card-r005.pdf) keeps her natural skin and hair colour, with no heavy filter, colour grade or skin smoothing.
+  Look: Inspect the named output against this requirement and its linked references.
+- `PHOTO-20/talk-card-r005/H018` The hair edge in talk-card-r005.pdf has no pale or grey fringe.
+  Look: Inspect the named output against this requirement and its linked references.
+- `PHOTO-20/talk-card-r005/H019` The portrait in talk-card-r005.pdf retains natural skin colour from vellacourt_session_04.jpg.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r005/H020` Her name beneath the AV monogram on “Speaker talk card - Fjordworks Summit - The room after the round” (talk-card-r005.pdf) is set in Instrument Serif Regular.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r005/H021` Her name “Astrid Vellacourt” sits directly beneath the AV monogram on “Speaker talk card - Fjordworks Summit - The room after the round” (talk-card-r005.pdf).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r005/H022` The AV monogram appears exactly once on “Speaker talk card - Fjordworks Summit - The room after the round” (talk-card-r005.pdf).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r005/H023` On “Speaker talk card - Fjordworks Summit - The room after the round” (talk-card-r005.pdf), the inner diagonals of the monogram A and V read as one shared hairline.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r005/H024` The AV monogram on “Speaker talk card - Fjordworks Summit - The room after the round” (talk-card-r005.pdf) is solid Ochre #B98A4B, not grey and not embossed.
+  Measure: Open the PDF in Photoshop or GIMP; eyedropper the thickest part of the monogram at 400% zoom and compare its hex with #B98A4B. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-20/talk-card-r005/H025` On “Speaker talk card - Fjordworks Summit - The room after the round” (talk-card-r005.pdf), the AV monogram sits above or left of the portrait, so it is read first.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r005/H026` Apart from her name and the AV monogram, no text on “Speaker talk card - Fjordworks Summit - The room after the round” (talk-card-r005.pdf) is set in a serif.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r005/H027` The event name, date and format on “Speaker talk card - Fjordworks Summit - The room after the round” (talk-card-r005.pdf) are Inter Regular, not Helvetica Neue.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r005/H028` No line of running text on “Speaker talk card - Fjordworks Summit - The room after the round” (talk-card-r005.pdf) runs longer than 65 characters.
+  Measure: Ignore her name, talk title, event, date and format. Copy each other line in Acrobat, count characters with spaces; No if over 65, else Yes.
 - `PHOTO-20/talk-card-r005/H029` Type, grounds, panels, rules and icons on “Speaker talk card - Fjordworks Summit - The room after the round” (talk-card-r005.pdf) use only #262524, #E8E1D6, #4C5560, #B98A4B, #16171A and #F4EFE7.
+  Measure: Open the PDF in Photoshop or GIMP; eyedropper every ground, panel, rule, icon and thick type stroke, ignoring the photograph; any unlisted hex means No. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-20/talk-card-r005/H030` “Speaker talk card - Fjordworks Summit - The room after the round” (talk-card-r005.pdf) keeps the Warm Neutral #E8E1D6 ground of vellacourt_speakercard_template.pdf.
+  Measure: Open the PDF in Photoshop or GIMP, eyedropper the middle of each ground and panel, and compare its hex with the values named. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-20/talk-card-r005/H031` On Warm Neutral or Bone, her name and the talk title on “Speaker talk card - Fjordworks Summit - The room after the round” (talk-card-r005.pdf) are Vellacourt Ink #262524.
+  Measure: Open the PDF in Photoshop or GIMP; at 400% zoom, eyedropper inside a thick stroke of that type and compare its hex with those named. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-20/talk-card-r005/H032` Apart from the Ochre monogram, type on Deep Ground or Vellacourt Ink on “Speaker talk card - Fjordworks Summit - The room after the round” (talk-card-r005.pdf) is Warm Neutral #E8E1D6 or Bone #F4EFE7.
+  Measure: Open the PDF in Photoshop or GIMP; at 400% zoom, eyedropper inside a thick stroke of that type and compare its hex with those named. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-20/talk-card-r005/H033` On “Speaker talk card - Fjordworks Summit - The room after the round” (talk-card-r005.pdf), Ochre #B98A4B appears only in the AV monogram, never in type, rules, grounds or panels.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-20/talk-card-r005/H034` All type, grounds and panels on “Speaker talk card - Fjordworks Summit - The room after the round” (talk-card-r005.pdf) are solid colour, with no transparency or gradient.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r005/H035` No gold foil, metallic, gloss, bevel, glow or drop shadow appears on the monogram, type, rules or panels of “Speaker talk card - Fjordworks Summit - The room after the round” (talk-card-r005.pdf).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r006/H001` The talk title on “Speaker talk card - Halden Design Days - From sketch to tooling” (talk-card-r006.pdf) reads “From sketch to tooling”, as in vellacourt_talks.csv row 6.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r006/H002` The event name “Halden Design Days” sits fully inside “Speaker talk card - Halden Design Days - From sketch to tooling” (talk-card-r006.pdf), with no letters cut off.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r007/H001` The talk title on “Speaker talk card - The Bench Sessions - Designing for the next hands” (talk-card-r007.pdf) reads “Designing for the next hands”, as in vellacourt_talks.csv row 7.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r007/H002` The event name “The Bench Sessions” sits fully inside “Speaker talk card - The Bench Sessions - Designing for the next hands” (talk-card-r007.pdf), with no letters cut off.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r007/H003` The speaker name “Astrid Vellacourt” appears on “Speaker talk card - The Bench Sessions - Designing for the next hands” (talk-card-r007.pdf).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r007/H004` The AV monogram on “Speaker talk card - The Bench Sessions - Designing for the next hands” (talk-card-r007.pdf) is narrower than her name “Astrid Vellacourt” set beneath it.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r007/H005` The talk title, event and date on “Speaker talk card - The Bench Sessions - Designing for the next hands” (talk-card-r007.pdf) sit together in one text block.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r007/H006` Apart from the monogram and her name, the talk title is the largest text on “Speaker talk card - The Bench Sessions - Designing for the next hands” (talk-card-r007.pdf).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r007/H007` Her name “Astrid Vellacourt” on “Speaker talk card - The Bench Sessions - Designing for the next hands” (talk-card-r007.pdf) is set larger than the date “Apr 30”.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r007/H008` No social handle, follower count or platform icon appears on “Speaker talk card - The Bench Sessions - Designing for the next hands” (talk-card-r007.pdf).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r007/H009` No other talk's text, such as the template sample “Designing the thing before the deck” or “Northlight Design Forum”, appears on “Speaker talk card - The Bench Sessions - Designing for the next hands” (talk-card-r007.pdf).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r007/H010` The AV monogram on “Speaker talk card - The Bench Sessions - Designing for the next hands” (talk-card-r007.pdf) is the supplied mark from vellacourt_av_transparent.png, not the template's Georgia Bold “AV” or any retyped AV.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r007/H011` The AV monogram on “Speaker talk card - The Bench Sessions - Designing for the next hands” (talk-card-r007.pdf) is clean artwork, with no paper texture, raking-light shadow or wood grain.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r007/H013` Any portrait on “Speaker talk card - The Bench Sessions - Designing for the next hands” (talk-card-r007.pdf) is built from one of the nine supplied frames vellacourt_session_01.jpg to vellacourt_session_09.jpg, not a generated, composited or stock face.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r007/H014` “Speaker talk card - The Bench Sessions - Designing for the next hands” (talk-card-r007.pdf) shows no empty picture frame, placeholder box or missing-image marker in place of a portrait.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r007/H015` If “Speaker talk card - The Bench Sessions - Designing for the next hands” (talk-card-r007.pdf) carries a portrait, no grey studio paper shows behind Astrid Vellacourt.
-- `PHOTO-20/talk-card-r007/H016` If “Speaker talk card - The Bench Sessions - Designing for the next hands” (talk-card-r007.pdf) carries a portrait, her curly hair edge shows no pale or grey rim and no clipped curls.
-- `PHOTO-20/talk-card-r007/H017` If “Speaker talk card - The Bench Sessions - Designing for the next hands” (talk-card-r007.pdf) carries a portrait, it keeps her natural skin and hair colour, with no heavy filter, grade or smoothing.
+  Look: Inspect the named output against this requirement and its linked references.
+- `PHOTO-20/talk-card-r007/H016` The hair edge in talk-card-r007.pdf has no pale or grey fringe.
+  Look: Inspect the named output against this requirement and its linked references.
+- `PHOTO-20/talk-card-r007/H017` If talk-card-r007.pdf carries a portrait, it retains natural skin colour from its source photograph.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r007/H018` If “Speaker talk card - The Bench Sessions - Designing for the next hands” (talk-card-r007.pdf) carries a portrait, nothing of her hair, shoulders or clothing is generated, extended or redrawn.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r007/H019` If “Speaker talk card - The Bench Sessions - Designing for the next hands” (talk-card-r007.pdf) carries a portrait, it keeps the warm colour balance of vellacourt_session_01.jpg, with no blue or grey cast.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r007/H020` Her name beneath the AV monogram on “Speaker talk card - The Bench Sessions - Designing for the next hands” (talk-card-r007.pdf) is set in Instrument Serif Regular.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r007/H021` Her name “Astrid Vellacourt” sits directly beneath the AV monogram on “Speaker talk card - The Bench Sessions - Designing for the next hands” (talk-card-r007.pdf).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r007/H022` The AV monogram appears exactly once on “Speaker talk card - The Bench Sessions - Designing for the next hands” (talk-card-r007.pdf).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r007/H023` On “Speaker talk card - The Bench Sessions - Designing for the next hands” (talk-card-r007.pdf), the inner diagonals of the monogram A and V read as one shared hairline.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r007/H024` The AV monogram on “Speaker talk card - The Bench Sessions - Designing for the next hands” (talk-card-r007.pdf) is solid Ochre #B98A4B, not grey and not embossed.
+  Measure: Open the PDF in Photoshop or GIMP; eyedropper the thickest part of the monogram at 400% zoom and compare its hex with #B98A4B. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-20/talk-card-r007/H025` If “Speaker talk card - The Bench Sessions - Designing for the next hands” (talk-card-r007.pdf) carries a portrait, the AV monogram sits above or left of it, so it is read first.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r007/H026` Apart from her name and the AV monogram, no text on “Speaker talk card - The Bench Sessions - Designing for the next hands” (talk-card-r007.pdf) is set in a serif.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r007/H027` The event name, date and format on “Speaker talk card - The Bench Sessions - Designing for the next hands” (talk-card-r007.pdf) are Inter Regular, not Helvetica Neue.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r007/H028` No line of running text on “Speaker talk card - The Bench Sessions - Designing for the next hands” (talk-card-r007.pdf) runs longer than 65 characters.
+  Measure: Ignore her name, talk title, event, date and format. Copy each other line in Acrobat, count characters with spaces; No if over 65, else Yes.
 - `PHOTO-20/talk-card-r007/H029` Type, grounds, panels, rules and icons on “Speaker talk card - The Bench Sessions - Designing for the next hands” (talk-card-r007.pdf) use only #262524, #E8E1D6, #4C5560, #B98A4B, #16171A and #F4EFE7.
+  Measure: Open the PDF in Photoshop or GIMP; eyedropper every ground, panel, rule, icon and thick type stroke, ignoring the photograph; any unlisted hex means No. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-20/talk-card-r007/H030` “Speaker talk card - The Bench Sessions - Designing for the next hands” (talk-card-r007.pdf) keeps the Warm Neutral #E8E1D6 ground of vellacourt_speakercard_template.pdf.
+  Measure: Open the PDF in Photoshop or GIMP, eyedropper the middle of each ground and panel, and compare its hex with the values named. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-20/talk-card-r007/H031` On Warm Neutral or Bone, her name and the talk title on “Speaker talk card - The Bench Sessions - Designing for the next hands” (talk-card-r007.pdf) are Vellacourt Ink #262524.
+  Measure: Open the PDF in Photoshop or GIMP; at 400% zoom, eyedropper inside a thick stroke of that type and compare its hex with those named. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-20/talk-card-r007/H032` Apart from the Ochre monogram, type on Deep Ground or Vellacourt Ink on “Speaker talk card - The Bench Sessions - Designing for the next hands” (talk-card-r007.pdf) is Warm Neutral #E8E1D6 or Bone #F4EFE7.
+  Measure: Open the PDF in Photoshop or GIMP; at 400% zoom, eyedropper inside a thick stroke of that type and compare its hex with those named. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-20/talk-card-r007/H033` On “Speaker talk card - The Bench Sessions - Designing for the next hands” (talk-card-r007.pdf), Ochre #B98A4B appears only in the AV monogram, never in type, rules, grounds or panels.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-20/talk-card-r007/H034` All type, grounds and panels on “Speaker talk card - The Bench Sessions - Designing for the next hands” (talk-card-r007.pdf) are solid colour, with no transparency or gradient.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r007/H035` No gold foil, metallic, gloss, bevel, glow or drop shadow appears on the monogram, type, rules or panels of “Speaker talk card - The Bench Sessions - Designing for the next hands” (talk-card-r007.pdf).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r008/H001` The talk title on “Speaker talk card - Continuum Product Days - What survives contact with a factory” (talk-card-r008.pdf) reads “What survives contact with a factory”, as in vellacourt_talks.csv row 8.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r008/H002` The event name “Continuum Product Days” sits fully inside “Speaker talk card - Continuum Product Days - What survives contact with a factory” (talk-card-r008.pdf), with no letters cut off.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r008/H003` The speaker name “Astrid Vellacourt” appears on “Speaker talk card - Continuum Product Days - What survives contact with a factory” (talk-card-r008.pdf).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r008/H004` The AV monogram on “Speaker talk card - Continuum Product Days - What survives contact with a factory” (talk-card-r008.pdf) is narrower than her name “Astrid Vellacourt” set beneath it.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r008/H005` The talk title, event and date on “Speaker talk card - Continuum Product Days - What survives contact with a factory” (talk-card-r008.pdf) sit together in one text block.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r008/H006` Apart from the monogram and her name, the talk title is the largest text on “Speaker talk card - Continuum Product Days - What survives contact with a factory” (talk-card-r008.pdf).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r008/H007` Her name “Astrid Vellacourt” on “Speaker talk card - Continuum Product Days - What survives contact with a factory” (talk-card-r008.pdf) is set larger than the date “May 9”.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r008/H008` No social handle, follower count or platform icon appears on “Speaker talk card - Continuum Product Days - What survives contact with a factory” (talk-card-r008.pdf).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r008/H009` No other talk's text, such as the template sample “Designing the thing before the deck” or “Northlight Design Forum”, appears on “Speaker talk card - Continuum Product Days - What survives contact with a factory” (talk-card-r008.pdf).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r008/H010` The AV monogram on “Speaker talk card - Continuum Product Days - What survives contact with a factory” (talk-card-r008.pdf) is the supplied mark from vellacourt_av_transparent.png, not the template's Georgia Bold “AV” or any retyped AV.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r008/H011` The AV monogram on “Speaker talk card - Continuum Product Days - What survives contact with a factory” (talk-card-r008.pdf) is clean artwork, with no paper texture, raking-light shadow or wood grain.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r008/H013` The portrait on “Speaker talk card - Continuum Product Days - What survives contact with a factory” (talk-card-r008.pdf) is built from vellacourt_session_01.jpg, the frame vellacourt_talks.csv row 8 assigns.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r008/H014` The face in the portrait on “Speaker talk card - Continuum Product Days - What survives contact with a factory” (talk-card-r008.pdf) is the original photograph, not regenerated or repainted.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r008/H015` The face on “Speaker talk card - Continuum Product Days - What survives contact with a factory” (talk-card-r008.pdf) is still recognizably the person photographed in vellacourt_session_01.jpg.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r008/H016` Nothing of her hair, shoulders or clothing on “Speaker talk card - Continuum Product Days - What survives contact with a factory” (talk-card-r008.pdf) is generated, extended or redrawn beyond vellacourt_session_01.jpg.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r008/H017` No grey studio paper from vellacourt_session_01.jpg shows behind Astrid Vellacourt on “Speaker talk card - Continuum Product Days - What survives contact with a factory” (talk-card-r008.pdf).
-- `PHOTO-20/talk-card-r008/H018` Her curly hair edge on “Speaker talk card - Continuum Product Days - What survives contact with a factory” (talk-card-r008.pdf) shows no pale or grey rim and no clipped curls.
-- `PHOTO-20/talk-card-r008/H019` The portrait on “Speaker talk card - Continuum Product Days - What survives contact with a factory” (talk-card-r008.pdf) keeps her natural skin and hair colour, with no heavy filter, colour grade or skin smoothing.
+  Look: Inspect the named output against this requirement and its linked references.
+- `PHOTO-20/talk-card-r008/H018` The hair edge in talk-card-r008.pdf has no pale or grey fringe.
+  Look: Inspect the named output against this requirement and its linked references.
+- `PHOTO-20/talk-card-r008/H019` The portrait in talk-card-r008.pdf retains natural skin colour from vellacourt_session_01.jpg.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r008/H020` Her name beneath the AV monogram on “Speaker talk card - Continuum Product Days - What survives contact with a factory” (talk-card-r008.pdf) is set in Instrument Serif Regular.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r008/H021` Her name “Astrid Vellacourt” sits directly beneath the AV monogram on “Speaker talk card - Continuum Product Days - What survives contact with a factory” (talk-card-r008.pdf).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r008/H022` The AV monogram appears exactly once on “Speaker talk card - Continuum Product Days - What survives contact with a factory” (talk-card-r008.pdf).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r008/H023` On “Speaker talk card - Continuum Product Days - What survives contact with a factory” (talk-card-r008.pdf), the inner diagonals of the monogram A and V read as one shared hairline.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r008/H024` The AV monogram on “Speaker talk card - Continuum Product Days - What survives contact with a factory” (talk-card-r008.pdf) is solid Ochre #B98A4B, not grey and not embossed.
+  Measure: Open the PDF in Photoshop or GIMP; eyedropper the thickest part of the monogram at 400% zoom and compare its hex with #B98A4B. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-20/talk-card-r008/H025` On “Speaker talk card - Continuum Product Days - What survives contact with a factory” (talk-card-r008.pdf), the AV monogram sits above or left of the portrait, so it is read first.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r008/H026` Apart from her name and the AV monogram, no text on “Speaker talk card - Continuum Product Days - What survives contact with a factory” (talk-card-r008.pdf) is set in a serif.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r008/H027` The event name, date and format on “Speaker talk card - Continuum Product Days - What survives contact with a factory” (talk-card-r008.pdf) are Inter Regular, not Helvetica Neue.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r008/H028` No line of running text on “Speaker talk card - Continuum Product Days - What survives contact with a factory” (talk-card-r008.pdf) runs longer than 65 characters.
+  Measure: Ignore her name, talk title, event, date and format. Copy each other line in Acrobat, count characters with spaces; No if over 65, else Yes.
 - `PHOTO-20/talk-card-r008/H029` Type, grounds, panels, rules and icons on “Speaker talk card - Continuum Product Days - What survives contact with a factory” (talk-card-r008.pdf) use only #262524, #E8E1D6, #4C5560, #B98A4B, #16171A and #F4EFE7.
+  Measure: Open the PDF in Photoshop or GIMP; eyedropper every ground, panel, rule, icon and thick type stroke, ignoring the photograph; any unlisted hex means No. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-20/talk-card-r008/H030` “Speaker talk card - Continuum Product Days - What survives contact with a factory” (talk-card-r008.pdf) keeps the Warm Neutral #E8E1D6 ground of vellacourt_speakercard_template.pdf.
+  Measure: Open the PDF in Photoshop or GIMP, eyedropper the middle of each ground and panel, and compare its hex with the values named. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-20/talk-card-r008/H031` On Warm Neutral or Bone, her name and the talk title on “Speaker talk card - Continuum Product Days - What survives contact with a factory” (talk-card-r008.pdf) are Vellacourt Ink #262524.
+  Measure: Open the PDF in Photoshop or GIMP; at 400% zoom, eyedropper inside a thick stroke of that type and compare its hex with those named. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-20/talk-card-r008/H032` Apart from the Ochre monogram, type on Deep Ground or Vellacourt Ink on “Speaker talk card - Continuum Product Days - What survives contact with a factory” (talk-card-r008.pdf) is Warm Neutral #E8E1D6 or Bone #F4EFE7.
+  Measure: Open the PDF in Photoshop or GIMP; at 400% zoom, eyedropper inside a thick stroke of that type and compare its hex with those named. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-20/talk-card-r008/H033` On “Speaker talk card - Continuum Product Days - What survives contact with a factory” (talk-card-r008.pdf), Ochre #B98A4B appears only in the AV monogram, never in type, rules, grounds or panels.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-20/talk-card-r008/H034` All type, grounds and panels on “Speaker talk card - Continuum Product Days - What survives contact with a factory” (talk-card-r008.pdf) are solid colour, with no transparency or gradient.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r008/H035` No gold foil, metallic, gloss, bevel, glow or drop shadow appears on the monogram, type, rules or panels of “Speaker talk card - Continuum Product Days - What survives contact with a factory” (talk-card-r008.pdf).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r009/H001` The talk title on “Speaker talk card - Grain & Frame Forum - What a small studio can promise” (talk-card-r009.pdf) reads “What a small studio can promise”, as in vellacourt_talks.csv row 9.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r009/H002` The event name “Grain & Frame Forum” sits fully inside “Speaker talk card - Grain & Frame Forum - What a small studio can promise” (talk-card-r009.pdf), with no letters cut off.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r009/H003` The speaker name “Astrid Vellacourt” appears on “Speaker talk card - Grain & Frame Forum - What a small studio can promise” (talk-card-r009.pdf).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r009/H004` The AV monogram on “Speaker talk card - Grain & Frame Forum - What a small studio can promise” (talk-card-r009.pdf) is narrower than her name “Astrid Vellacourt” set beneath it.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r009/H005` The talk title, event and date on “Speaker talk card - Grain & Frame Forum - What a small studio can promise” (talk-card-r009.pdf) sit together in one text block.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r009/H006` Apart from the monogram and her name, the talk title is the largest text on “Speaker talk card - Grain & Frame Forum - What a small studio can promise” (talk-card-r009.pdf).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r009/H007` Her name “Astrid Vellacourt” on “Speaker talk card - Grain & Frame Forum - What a small studio can promise” (talk-card-r009.pdf) is set larger than the date “2026-05-22”.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r009/H008` No social handle, follower count or platform icon appears on “Speaker talk card - Grain & Frame Forum - What a small studio can promise” (talk-card-r009.pdf).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r009/H009` No other talk's text, such as the template sample “Designing the thing before the deck” or “Northlight Design Forum”, appears on “Speaker talk card - Grain & Frame Forum - What a small studio can promise” (talk-card-r009.pdf).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r009/H010` The AV monogram on “Speaker talk card - Grain & Frame Forum - What a small studio can promise” (talk-card-r009.pdf) is the supplied mark from vellacourt_av_transparent.png, not the template's Georgia Bold “AV” or any retyped AV.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r009/H011` The AV monogram on “Speaker talk card - Grain & Frame Forum - What a small studio can promise” (talk-card-r009.pdf) is clean artwork, with no paper texture, raking-light shadow or wood grain.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r009/H013` The portrait on “Speaker talk card - Grain & Frame Forum - What a small studio can promise” (talk-card-r009.pdf) is built from vellacourt_session_09.jpg, the frame vellacourt_talks.csv row 9 assigns.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r009/H014` The face in the portrait on “Speaker talk card - Grain & Frame Forum - What a small studio can promise” (talk-card-r009.pdf) is the original photograph, not regenerated or repainted.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r009/H015` The face on “Speaker talk card - Grain & Frame Forum - What a small studio can promise” (talk-card-r009.pdf) is still recognizably the person photographed in vellacourt_session_09.jpg.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r009/H016` Nothing of her hair, shoulders or clothing on “Speaker talk card - Grain & Frame Forum - What a small studio can promise” (talk-card-r009.pdf) is generated, extended or redrawn beyond vellacourt_session_09.jpg.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r009/H017` No grey studio paper from vellacourt_session_09.jpg shows behind Astrid Vellacourt on “Speaker talk card - Grain & Frame Forum - What a small studio can promise” (talk-card-r009.pdf).
-- `PHOTO-20/talk-card-r009/H018` Her curly hair edge on “Speaker talk card - Grain & Frame Forum - What a small studio can promise” (talk-card-r009.pdf) shows no pale or grey rim and no clipped curls.
-- `PHOTO-20/talk-card-r009/H019` The portrait on “Speaker talk card - Grain & Frame Forum - What a small studio can promise” (talk-card-r009.pdf) keeps her natural skin and hair colour, with no heavy filter, colour grade or skin smoothing.
+  Look: Inspect the named output against this requirement and its linked references.
+- `PHOTO-20/talk-card-r009/H018` The hair edge in talk-card-r009.pdf has no pale or grey fringe.
+  Look: Inspect the named output against this requirement and its linked references.
+- `PHOTO-20/talk-card-r009/H019` The portrait in talk-card-r009.pdf retains natural skin colour from vellacourt_session_09.jpg.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r009/H020` Her name beneath the AV monogram on “Speaker talk card - Grain & Frame Forum - What a small studio can promise” (talk-card-r009.pdf) is set in Instrument Serif Regular.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r009/H021` Her name “Astrid Vellacourt” sits directly beneath the AV monogram on “Speaker talk card - Grain & Frame Forum - What a small studio can promise” (talk-card-r009.pdf).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r009/H022` The AV monogram appears exactly once on “Speaker talk card - Grain & Frame Forum - What a small studio can promise” (talk-card-r009.pdf).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r009/H023` On “Speaker talk card - Grain & Frame Forum - What a small studio can promise” (talk-card-r009.pdf), the inner diagonals of the monogram A and V read as one shared hairline.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r009/H024` The AV monogram on “Speaker talk card - Grain & Frame Forum - What a small studio can promise” (talk-card-r009.pdf) is solid Ochre #B98A4B, not grey and not embossed.
+  Measure: Open the PDF in Photoshop or GIMP; eyedropper the thickest part of the monogram at 400% zoom and compare its hex with #B98A4B. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-20/talk-card-r009/H025` On “Speaker talk card - Grain & Frame Forum - What a small studio can promise” (talk-card-r009.pdf), the AV monogram sits above or left of the portrait, so it is read first.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r009/H026` Apart from her name and the AV monogram, no text on “Speaker talk card - Grain & Frame Forum - What a small studio can promise” (talk-card-r009.pdf) is set in a serif.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r009/H027` The event name, date and format on “Speaker talk card - Grain & Frame Forum - What a small studio can promise” (talk-card-r009.pdf) are Inter Regular, not Helvetica Neue.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r009/H028` No line of running text on “Speaker talk card - Grain & Frame Forum - What a small studio can promise” (talk-card-r009.pdf) runs longer than 65 characters.
+  Measure: Ignore her name, talk title, event, date and format. Copy each other line in Acrobat, count characters with spaces; No if over 65, else Yes.
 - `PHOTO-20/talk-card-r009/H029` Type, grounds, panels, rules and icons on “Speaker talk card - Grain & Frame Forum - What a small studio can promise” (talk-card-r009.pdf) use only #262524, #E8E1D6, #4C5560, #B98A4B, #16171A and #F4EFE7.
+  Measure: Open the PDF in Photoshop or GIMP; eyedropper every ground, panel, rule, icon and thick type stroke, ignoring the photograph; any unlisted hex means No. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-20/talk-card-r009/H030` “Speaker talk card - Grain & Frame Forum - What a small studio can promise” (talk-card-r009.pdf) keeps the Warm Neutral #E8E1D6 ground of vellacourt_speakercard_template.pdf.
+  Measure: Open the PDF in Photoshop or GIMP, eyedropper the middle of each ground and panel, and compare its hex with the values named. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-20/talk-card-r009/H031` On Warm Neutral or Bone, her name and the talk title on “Speaker talk card - Grain & Frame Forum - What a small studio can promise” (talk-card-r009.pdf) are Vellacourt Ink #262524.
+  Measure: Open the PDF in Photoshop or GIMP; at 400% zoom, eyedropper inside a thick stroke of that type and compare its hex with those named. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-20/talk-card-r009/H032` Apart from the Ochre monogram, type on Deep Ground or Vellacourt Ink on “Speaker talk card - Grain & Frame Forum - What a small studio can promise” (talk-card-r009.pdf) is Warm Neutral #E8E1D6 or Bone #F4EFE7.
+  Measure: Open the PDF in Photoshop or GIMP; at 400% zoom, eyedropper inside a thick stroke of that type and compare its hex with those named. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-20/talk-card-r009/H033` On “Speaker talk card - Grain & Frame Forum - What a small studio can promise” (talk-card-r009.pdf), Ochre #B98A4B appears only in the AV monogram, never in type, rules, grounds or panels.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-20/talk-card-r009/H034` All type, grounds and panels on “Speaker talk card - Grain & Frame Forum - What a small studio can promise” (talk-card-r009.pdf) are solid colour, with no transparency or gradient.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r009/H035` No gold foil, metallic, gloss, bevel, glow or drop shadow appears on the monogram, type, rules or panels of “Speaker talk card - Grain & Frame Forum - What a small studio can promise” (talk-card-r009.pdf).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/speaker-onepager/H004` The booking contact on “Speaker booking one-pager” (speaker-onepager.pdf) reads “Astrid Vellacourt - Vellacourt & Sund”, as in vellacourt_bio_copy.txt.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/speaker-onepager/H005` Her name beneath the AV monogram on “Speaker booking one-pager” (speaker-onepager.pdf) is set in Instrument Serif Regular.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/speaker-onepager/H006` The AV monogram on “Speaker booking one-pager” (speaker-onepager.pdf) is the supplied mark from vellacourt_av_transparent.png, not a retyped or redrawn AV.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/speaker-onepager/H007` Apart from the AV monogram, the largest text on “Speaker booking one-pager” (speaker-onepager.pdf) is her name “Astrid Vellacourt”.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-announcement-r003/H007` “Confirmed-talk speaker announcement - Made & Kept - Six people, one hand” (event-announcement-r003.png) announces “Six people, one hand”, one of the three confirmed talks in vellacourt_bio_copy.txt.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-announcement-r003/H008` Her name “Astrid Vellacourt” on “Confirmed-talk speaker announcement - Made & Kept - Six people, one hand” (event-announcement-r003.png) is set larger than the date “2026-03-03”.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-announcement-r003/H009` The headline on “Confirmed-talk speaker announcement - Made & Kept - Six people, one hand” (event-announcement-r003.png) reads “I'll be speaking.”, as in her announcement wording.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-announcement-r003/H010` The body line on “Confirmed-talk speaker announcement - Made & Kept - Six people, one hand” (event-announcement-r003.png) reads “I'm speaking at Made & Kept on 2026-03-03. Six people, one hand.”
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-announcement-r003/H011` The sign-off on “Confirmed-talk speaker announcement - Made & Kept - Six people, one hand” (event-announcement-r003.png) reads “Astrid Vellacourt - Vellacourt & Sund.”
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-announcement-r003/H012` No social handle, follower count or platform icon appears on “Confirmed-talk speaker announcement - Made & Kept - Six people, one hand” (event-announcement-r003.png).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-announcement-r003/H013` The portrait on “Confirmed-talk speaker announcement - Made & Kept - Six people, one hand” (event-announcement-r003.png) is built from vellacourt_session_05.jpg, the frame vellacourt_talks.csv row 3 assigns.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-announcement-r003/H014` The face in the portrait on “Confirmed-talk speaker announcement - Made & Kept - Six people, one hand” (event-announcement-r003.png) is the original photograph, not regenerated or repainted.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-announcement-r003/H015` The face on “Confirmed-talk speaker announcement - Made & Kept - Six people, one hand” (event-announcement-r003.png) is still recognizably the person photographed in vellacourt_session_05.jpg.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-announcement-r003/H016` Nothing of her hair, shoulders or clothing on “Confirmed-talk speaker announcement - Made & Kept - Six people, one hand” (event-announcement-r003.png) is generated, extended or redrawn beyond vellacourt_session_05.jpg.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-announcement-r003/H017` No grey studio paper from vellacourt_session_05.jpg shows behind Astrid Vellacourt on “Confirmed-talk speaker announcement - Made & Kept - Six people, one hand” (event-announcement-r003.png).
-- `PHOTO-20/event-announcement-r003/H018` Her curly hair edge on “Confirmed-talk speaker announcement - Made & Kept - Six people, one hand” (event-announcement-r003.png) shows no pale or grey rim and no clipped curls.
-- `PHOTO-20/event-announcement-r003/H019` The portrait on “Confirmed-talk speaker announcement - Made & Kept - Six people, one hand” (event-announcement-r003.png) keeps her natural skin and hair colour, with no heavy filter, colour grade or skin smoothing.
+  Look: Inspect the named output against this requirement and its linked references.
+- `PHOTO-20/event-announcement-r003/H018` The hair edge in event-announcement-r003.png has no pale or grey fringe.
+  Look: Inspect the named output against this requirement and its linked references.
+- `PHOTO-20/event-announcement-r003/H019` The portrait in event-announcement-r003.png retains natural skin colour from vellacourt_session_05.jpg.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-announcement-r003/H020` If vellacourt_workshop_snap.jpg appears on “Confirmed-talk speaker announcement - Made & Kept - Six people, one hand” (event-announcement-r003.png), it shows no blur, softness or blocky pixels from being enlarged.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-announcement-r003/H021` The AV monogram on “Confirmed-talk speaker announcement - Made & Kept - Six people, one hand” (event-announcement-r003.png) is the supplied mark from vellacourt_av_transparent.png, not a retyped or redrawn AV.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-announcement-r003/H022` The AV monogram on “Confirmed-talk speaker announcement - Made & Kept - Six people, one hand” (event-announcement-r003.png) is clean artwork, with no paper texture, raking-light shadow or wood grain.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-announcement-r003/H023` The AV monogram on “Confirmed-talk speaker announcement - Made & Kept - Six people, one hand” (event-announcement-r003.png) is narrower than her name “Astrid Vellacourt” set beneath it.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-announcement-r003/H024` Her name beneath the AV monogram on “Confirmed-talk speaker announcement - Made & Kept - Six people, one hand” (event-announcement-r003.png) is set in Instrument Serif Regular.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-announcement-r003/H025` Her name “Astrid Vellacourt” sits directly beneath the AV monogram on “Confirmed-talk speaker announcement - Made & Kept - Six people, one hand” (event-announcement-r003.png).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-announcement-r003/H026` The AV monogram appears exactly once on “Confirmed-talk speaker announcement - Made & Kept - Six people, one hand” (event-announcement-r003.png).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-announcement-r003/H027` On “Confirmed-talk speaker announcement - Made & Kept - Six people, one hand” (event-announcement-r003.png), the inner diagonals of the monogram A and V read as one shared hairline.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-announcement-r003/H028` The AV monogram on “Confirmed-talk speaker announcement - Made & Kept - Six people, one hand” (event-announcement-r003.png) is solid Ochre #B98A4B.
+  Measure: Eyedropper the thickest part of the monogram at 400% zoom and compare its hex with #B98A4B. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-20/event-announcement-r003/H029` On “Confirmed-talk speaker announcement - Made & Kept - Six people, one hand” (event-announcement-r003.png), the AV monogram sits above or left of the portrait, so it is read first.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-announcement-r003/H030` Apart from her name and the AV monogram, no text on “Confirmed-talk speaker announcement - Made & Kept - Six people, one hand” (event-announcement-r003.png) is set in a serif.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-announcement-r003/H031` Apart from the talk title, the body line and sign-off on “Confirmed-talk speaker announcement - Made & Kept - Six people, one hand” (event-announcement-r003.png) are set in Inter Regular.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-announcement-r003/H032` No line of running text on “Confirmed-talk speaker announcement - Made & Kept - Six people, one hand” (event-announcement-r003.png) runs longer than 65 characters.
+  Measure: Count the characters, spaces included, in each printed line of the body line and sign-off; answer No if any line has more than 65.
 - `PHOTO-20/event-announcement-r003/H033` Type, grounds, panels, rules and icons on “Confirmed-talk speaker announcement - Made & Kept - Six people, one hand” (event-announcement-r003.png) use only #262524, #E8E1D6, #4C5560, #B98A4B, #16171A and #F4EFE7.
+  Measure: In an image editor at 400% zoom, eyedropper every ground, panel, rule, icon and thick type stroke; ignore the photograph; any unlisted hex means No. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-20/event-announcement-r003/H034` Every ground and panel on “Confirmed-talk speaker announcement - Made & Kept - Six people, one hand” (event-announcement-r003.png) is Warm Neutral #E8E1D6, Bone #F4EFE7, Deep Ground #16171A or Vellacourt Ink #262524, not pure white.
+  Measure: In an image editor, eyedropper each ground, panel and flat colour and compare its hex with the listed values; #FFFFFF is a No. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-20/event-announcement-r003/H035` On Warm Neutral or Bone, her name, talk titles and running text on “Confirmed-talk speaker announcement - Made & Kept - Six people, one hand” (event-announcement-r003.png) are Vellacourt Ink #262524.
+  Measure: In an image editor at 400% zoom, eyedropper the middle of a thick stroke of that type and compare its hex with the values named. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-20/event-announcement-r003/H036` Apart from the Ochre monogram, type on Deep Ground or Vellacourt Ink on “Confirmed-talk speaker announcement - Made & Kept - Six people, one hand” (event-announcement-r003.png) is Warm Neutral #E8E1D6 or Bone #F4EFE7.
+  Measure: In an image editor at 400% zoom, eyedropper the middle of a thick stroke of that type and compare its hex with the values named. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-20/event-announcement-r003/H037` On “Confirmed-talk speaker announcement - Made & Kept - Six people, one hand” (event-announcement-r003.png), Ochre #B98A4B appears only in the AV monogram, never in type, rules, grounds or panels.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-20/event-announcement-r003/H038` All type, grounds and panels on “Confirmed-talk speaker announcement - Made & Kept - Six people, one hand” (event-announcement-r003.png) are solid colour, with no transparency or gradient.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-announcement-r003/H039` No gold foil, metallic, gloss, bevel, glow or drop shadow appears on the monogram, type, rules or panels of “Confirmed-talk speaker announcement - Made & Kept - Six people, one hand” (event-announcement-r003.png).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r006/H003` The talk title, event and date on “Speaker talk card - Halden Design Days - From sketch to tooling” (talk-card-r006.pdf) sit together in one text block.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r006/H004` The event name, date and format on “Speaker talk card - Halden Design Days - From sketch to tooling” (talk-card-r006.pdf) are Inter Regular, not Helvetica Neue.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r006/H005` Apart from the monogram and her name, the talk title is the largest text on “Speaker talk card - Halden Design Days - From sketch to tooling” (talk-card-r006.pdf).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r006/H006` The speaker name “Astrid Vellacourt” appears on “Speaker talk card - Halden Design Days - From sketch to tooling” (talk-card-r006.pdf).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r006/H007` The AV monogram on “Speaker talk card - Halden Design Days - From sketch to tooling” (talk-card-r006.pdf) is narrower than her name “Astrid Vellacourt” set beneath it.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r006/H008` Her name “Astrid Vellacourt” on “Speaker talk card - Halden Design Days - From sketch to tooling” (talk-card-r006.pdf) is set larger than the date “4 April 2026”.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r006/H009` No social handle, follower count or platform icon appears on “Speaker talk card - Halden Design Days - From sketch to tooling” (talk-card-r006.pdf).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r006/H010` No other talk's text, such as the template sample “Designing the thing before the deck” or “Northlight Design Forum”, appears on “Speaker talk card - Halden Design Days - From sketch to tooling” (talk-card-r006.pdf).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r006/H011` The AV monogram on “Speaker talk card - Halden Design Days - From sketch to tooling” (talk-card-r006.pdf) is the supplied mark from vellacourt_av_transparent.png, not the template's Georgia Bold “AV” or any retyped AV.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r006/H012` The AV monogram on “Speaker talk card - Halden Design Days - From sketch to tooling” (talk-card-r006.pdf) is clean artwork, with no paper texture, raking-light shadow or wood grain.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r006/H014` The portrait on “Speaker talk card - Halden Design Days - From sketch to tooling” (talk-card-r006.pdf) is built from vellacourt_session_08.jpg, the frame vellacourt_talks.csv row 6 assigns.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r006/H015` The face in the portrait on “Speaker talk card - Halden Design Days - From sketch to tooling” (talk-card-r006.pdf) is the original photograph, not regenerated or repainted.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r006/H016` The face on “Speaker talk card - Halden Design Days - From sketch to tooling” (talk-card-r006.pdf) is still recognizably the person photographed in vellacourt_session_08.jpg.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r006/H017` Nothing of her hair, shoulders or clothing on “Speaker talk card - Halden Design Days - From sketch to tooling” (talk-card-r006.pdf) is generated, extended or redrawn beyond vellacourt_session_08.jpg.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r006/H018` No grey studio paper from vellacourt_session_08.jpg shows behind Astrid Vellacourt on “Speaker talk card - Halden Design Days - From sketch to tooling” (talk-card-r006.pdf).
-- `PHOTO-20/talk-card-r006/H019` Her curly hair edge on “Speaker talk card - Halden Design Days - From sketch to tooling” (talk-card-r006.pdf) shows no pale or grey rim and no clipped curls.
-- `PHOTO-20/talk-card-r006/H020` The portrait on “Speaker talk card - Halden Design Days - From sketch to tooling” (talk-card-r006.pdf) keeps her natural skin and hair colour, with no heavy filter, colour grade or skin smoothing.
+  Look: Inspect the named output against this requirement and its linked references.
+- `PHOTO-20/talk-card-r006/H019` The hair edge in talk-card-r006.pdf has no pale or grey fringe.
+  Look: Inspect the named output against this requirement and its linked references.
+- `PHOTO-20/talk-card-r006/H020` The portrait in talk-card-r006.pdf retains natural skin colour from vellacourt_session_08.jpg.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r006/H021` Her name beneath the AV monogram on “Speaker talk card - Halden Design Days - From sketch to tooling” (talk-card-r006.pdf) is set in Instrument Serif Regular.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r006/H022` Her name “Astrid Vellacourt” sits directly beneath the AV monogram on “Speaker talk card - Halden Design Days - From sketch to tooling” (talk-card-r006.pdf).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r006/H023` The AV monogram appears exactly once on “Speaker talk card - Halden Design Days - From sketch to tooling” (talk-card-r006.pdf).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r006/H024` On “Speaker talk card - Halden Design Days - From sketch to tooling” (talk-card-r006.pdf), the inner diagonals of the monogram A and V read as one shared hairline.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r006/H025` The AV monogram on “Speaker talk card - Halden Design Days - From sketch to tooling” (talk-card-r006.pdf) is solid Ochre #B98A4B, not grey and not embossed.
+  Measure: Open the PDF in Photoshop or GIMP; eyedropper the thickest part of the monogram at 400% zoom and compare its hex with #B98A4B. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-20/talk-card-r006/H026` On “Speaker talk card - Halden Design Days - From sketch to tooling” (talk-card-r006.pdf), the AV monogram sits above or left of the portrait, so it is read first.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r006/H027` Apart from her name and the AV monogram, no text on “Speaker talk card - Halden Design Days - From sketch to tooling” (talk-card-r006.pdf) is set in a serif.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r006/H028` No line of running text on “Speaker talk card - Halden Design Days - From sketch to tooling” (talk-card-r006.pdf) runs longer than 65 characters.
+  Measure: Ignore her name, talk title, event, date and format. Copy each other line in Acrobat, count characters with spaces; No if over 65, else Yes.
 - `PHOTO-20/talk-card-r006/H029` Type, grounds, panels, rules and icons on “Speaker talk card - Halden Design Days - From sketch to tooling” (talk-card-r006.pdf) use only #262524, #E8E1D6, #4C5560, #B98A4B, #16171A and #F4EFE7.
+  Measure: Open the PDF in Photoshop or GIMP; eyedropper every ground, panel, rule, icon and thick type stroke, ignoring the photograph; any unlisted hex means No. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-20/talk-card-r006/H030` “Speaker talk card - Halden Design Days - From sketch to tooling” (talk-card-r006.pdf) keeps the Warm Neutral #E8E1D6 ground of vellacourt_speakercard_template.pdf.
+  Measure: Open the PDF in Photoshop or GIMP, eyedropper the middle of each ground and panel, and compare its hex with the values named. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-20/talk-card-r006/H031` On Warm Neutral or Bone, her name and the talk title on “Speaker talk card - Halden Design Days - From sketch to tooling” (talk-card-r006.pdf) are Vellacourt Ink #262524.
+  Measure: Open the PDF in Photoshop or GIMP; at 400% zoom, eyedropper inside a thick stroke of that type and compare its hex with those named. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-20/talk-card-r006/H032` Apart from the Ochre monogram, type on Deep Ground or Vellacourt Ink on “Speaker talk card - Halden Design Days - From sketch to tooling” (talk-card-r006.pdf) is Warm Neutral #E8E1D6 or Bone #F4EFE7.
+  Measure: Open the PDF in Photoshop or GIMP; at 400% zoom, eyedropper inside a thick stroke of that type and compare its hex with those named. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-20/talk-card-r006/H033` On “Speaker talk card - Halden Design Days - From sketch to tooling” (talk-card-r006.pdf), Ochre #B98A4B appears only in the AV monogram, never in type, rules, grounds or panels.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-20/talk-card-r006/H034` All type, grounds and panels on “Speaker talk card - Halden Design Days - From sketch to tooling” (talk-card-r006.pdf) are solid colour, with no transparency or gradient.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r006/H035` No gold foil, metallic, gloss, bevel, glow or drop shadow appears on the monogram, type, rules or panels of “Speaker talk card - Halden Design Days - From sketch to tooling” (talk-card-r006.pdf).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-banner-r003/H006` The face in the portrait on “Confirmed-talk speaker banner - Made & Kept - Six people, one hand” (event-banner-r003.png) is the original photograph, not regenerated or repainted.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-banner-r003/H007` “Confirmed-talk speaker banner - Made & Kept - Six people, one hand” (event-banner-r003.png) announces “Six people, one hand”, one of the three confirmed talks in vellacourt_bio_copy.txt.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-banner-r003/H008` The speaker name “Astrid Vellacourt” appears on “Confirmed-talk speaker banner - Made & Kept - Six people, one hand” (event-banner-r003.png).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-banner-r003/H009` No letter of the talk title, event name or date is cut off at an edge of “Confirmed-talk speaker banner - Made & Kept - Six people, one hand” (event-banner-r003.png).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-banner-r003/H010` Her name “Astrid Vellacourt” on “Confirmed-talk speaker banner - Made & Kept - Six people, one hand” (event-banner-r003.png) is set larger than the date “2026-03-03”.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-banner-r003/H011` Apart from the monogram, the talk title is the largest text on “Confirmed-talk speaker banner - Made & Kept - Six people, one hand” (event-banner-r003.png).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-banner-r003/H012` No social handle, follower count or platform icon appears on “Confirmed-talk speaker banner - Made & Kept - Six people, one hand” (event-banner-r003.png).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-banner-r003/H013` The face on “Confirmed-talk speaker banner - Made & Kept - Six people, one hand” (event-banner-r003.png) is still recognizably the person photographed in vellacourt_session_05.jpg.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-banner-r003/H014` Nothing of her hair, shoulders or clothing on “Confirmed-talk speaker banner - Made & Kept - Six people, one hand” (event-banner-r003.png) is generated, extended or redrawn beyond vellacourt_session_05.jpg.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-banner-r003/H015` No grey studio paper from vellacourt_session_05.jpg shows behind Astrid Vellacourt on “Confirmed-talk speaker banner - Made & Kept - Six people, one hand” (event-banner-r003.png).
-- `PHOTO-20/event-banner-r003/H016` Her curly hair edge on “Confirmed-talk speaker banner - Made & Kept - Six people, one hand” (event-banner-r003.png) shows no pale or grey rim and no clipped curls.
-- `PHOTO-20/event-banner-r003/H017` The portrait on “Confirmed-talk speaker banner - Made & Kept - Six people, one hand” (event-banner-r003.png) keeps her natural skin and hair colour, with no heavy filter, colour grade or skin smoothing.
+  Look: Inspect the named output against this requirement and its linked references.
+- `PHOTO-20/event-banner-r003/H016` The hair edge in event-banner-r003.png has no pale or grey fringe.
+  Look: Inspect the named output against this requirement and its linked references.
+- `PHOTO-20/event-banner-r003/H017` The portrait in event-banner-r003.png retains natural skin colour from vellacourt_session_05.jpg.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-banner-r003/H018` If vellacourt_workshop_snap.jpg appears on “Confirmed-talk speaker banner - Made & Kept - Six people, one hand” (event-banner-r003.png), it shows no blur, softness or blocky pixels from being enlarged.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-banner-r003/H019` The AV monogram on “Confirmed-talk speaker banner - Made & Kept - Six people, one hand” (event-banner-r003.png) is the supplied mark from vellacourt_av_transparent.png, not a retyped or redrawn AV.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-banner-r003/H020` The AV monogram on “Confirmed-talk speaker banner - Made & Kept - Six people, one hand” (event-banner-r003.png) is clean artwork, with no paper texture, raking-light shadow or wood grain.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-banner-r003/H021` The AV monogram on “Confirmed-talk speaker banner - Made & Kept - Six people, one hand” (event-banner-r003.png) is narrower than her name “Astrid Vellacourt” set beneath it.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-banner-r003/H022` Her name beneath the AV monogram on “Confirmed-talk speaker banner - Made & Kept - Six people, one hand” (event-banner-r003.png) is set in Instrument Serif Regular.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-banner-r003/H023` Her name “Astrid Vellacourt” sits directly beneath the AV monogram on “Confirmed-talk speaker banner - Made & Kept - Six people, one hand” (event-banner-r003.png).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-banner-r003/H024` The AV monogram appears exactly once on “Confirmed-talk speaker banner - Made & Kept - Six people, one hand” (event-banner-r003.png).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-banner-r003/H025` On “Confirmed-talk speaker banner - Made & Kept - Six people, one hand” (event-banner-r003.png), the inner diagonals of the monogram A and V read as one shared hairline.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-banner-r003/H026` The AV monogram on “Confirmed-talk speaker banner - Made & Kept - Six people, one hand” (event-banner-r003.png) is solid Ochre #B98A4B.
+  Measure: Eyedropper the thickest part of the monogram at 400% zoom and compare its hex with #B98A4B. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-20/event-banner-r003/H027` On “Confirmed-talk speaker banner - Made & Kept - Six people, one hand” (event-banner-r003.png), the AV monogram sits above or left of the portrait, so it is read first.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-banner-r003/H028` Apart from her name and the AV monogram, no text on “Confirmed-talk speaker banner - Made & Kept - Six people, one hand” (event-banner-r003.png) is set in a serif.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-banner-r003/H029` The event and date line on “Confirmed-talk speaker banner - Made & Kept - Six people, one hand” (event-banner-r003.png) is Inter Regular, not Medium, bold or a serif.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-banner-r003/H030` No line of running text on “Confirmed-talk speaker banner - Made & Kept - Six people, one hand” (event-banner-r003.png) runs longer than 65 characters.
+  Measure: Ignore her name, talk title, event and date. Count the characters, spaces included, of any other line; No if over 65, else Yes.
 - `PHOTO-20/event-banner-r003/H031` Type, grounds, panels, rules and icons on “Confirmed-talk speaker banner - Made & Kept - Six people, one hand” (event-banner-r003.png) use only #262524, #E8E1D6, #4C5560, #B98A4B, #16171A and #F4EFE7.
+  Measure: In an image editor at 400% zoom, eyedropper every ground, panel, rule, icon and thick type stroke; ignore the photograph; any unlisted hex means No. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-20/event-banner-r003/H032` Every ground and panel on “Confirmed-talk speaker banner - Made & Kept - Six people, one hand” (event-banner-r003.png) is Warm Neutral #E8E1D6, Bone #F4EFE7, Deep Ground #16171A or Vellacourt Ink #262524, not pure white.
+  Measure: In an image editor, eyedropper each ground, panel and flat colour and compare its hex with the listed values; #FFFFFF is a No. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-20/event-banner-r003/H033` On Warm Neutral or Bone, her name and the talk title on “Confirmed-talk speaker banner - Made & Kept - Six people, one hand” (event-banner-r003.png) are Vellacourt Ink #262524.
+  Measure: In an image editor at 400% zoom, eyedropper the middle of a thick stroke of that type and compare its hex with the values named. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-20/event-banner-r003/H034` Apart from the Ochre monogram, type on Deep Ground or Vellacourt Ink on “Confirmed-talk speaker banner - Made & Kept - Six people, one hand” (event-banner-r003.png) is Warm Neutral #E8E1D6 or Bone #F4EFE7.
+  Measure: In an image editor at 400% zoom, eyedropper the middle of a thick stroke of that type and compare its hex with the values named. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-20/event-banner-r003/H035` On “Confirmed-talk speaker banner - Made & Kept - Six people, one hand” (event-banner-r003.png), Ochre #B98A4B appears only in the AV monogram, never in type, rules, grounds or panels.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-20/event-banner-r003/H036` All type, grounds and panels on “Confirmed-talk speaker banner - Made & Kept - Six people, one hand” (event-banner-r003.png) are solid colour, with no transparency or gradient.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-banner-r003/H037` No gold foil, metallic, gloss, bevel, glow or drop shadow appears on the monogram, type, rules or panels of “Confirmed-talk speaker banner - Made & Kept - Six people, one hand” (event-banner-r003.png).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-banner-r008/H006` The face on “Confirmed-talk speaker banner - Continuum Product Days - What survives contact with a factory” (event-banner-r008.png) is still recognizably the person photographed in vellacourt_session_01.jpg.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-banner-r008/H007` “Confirmed-talk speaker banner - Continuum Product Days - What survives contact with a factory” (event-banner-r008.png) announces “What survives contact with a factory”, one of the three confirmed talks in vellacourt_bio_copy.txt.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-banner-r008/H008` The speaker name “Astrid Vellacourt” appears on “Confirmed-talk speaker banner - Continuum Product Days - What survives contact with a factory” (event-banner-r008.png).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-banner-r008/H009` No letter of the talk title, event name or date is cut off at an edge of “Confirmed-talk speaker banner - Continuum Product Days - What survives contact with a factory” (event-banner-r008.png).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-banner-r008/H010` Her name “Astrid Vellacourt” on “Confirmed-talk speaker banner - Continuum Product Days - What survives contact with a factory” (event-banner-r008.png) is set larger than the date “May 9”.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-banner-r008/H011` Apart from the monogram, the talk title is the largest text on “Confirmed-talk speaker banner - Continuum Product Days - What survives contact with a factory” (event-banner-r008.png).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-banner-r008/H012` No social handle, follower count or platform icon appears on “Confirmed-talk speaker banner - Continuum Product Days - What survives contact with a factory” (event-banner-r008.png).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-banner-r008/H013` The face in the portrait on “Confirmed-talk speaker banner - Continuum Product Days - What survives contact with a factory” (event-banner-r008.png) is the original photograph, not regenerated or repainted.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-banner-r008/H014` Nothing of her hair, shoulders or clothing on “Confirmed-talk speaker banner - Continuum Product Days - What survives contact with a factory” (event-banner-r008.png) is generated, extended or redrawn beyond vellacourt_session_01.jpg.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-banner-r008/H015` No grey studio paper from vellacourt_session_01.jpg shows behind Astrid Vellacourt on “Confirmed-talk speaker banner - Continuum Product Days - What survives contact with a factory” (event-banner-r008.png).
-- `PHOTO-20/event-banner-r008/H016` Her curly hair edge on “Confirmed-talk speaker banner - Continuum Product Days - What survives contact with a factory” (event-banner-r008.png) shows no pale or grey rim and no clipped curls.
-- `PHOTO-20/event-banner-r008/H017` The portrait on “Confirmed-talk speaker banner - Continuum Product Days - What survives contact with a factory” (event-banner-r008.png) keeps her natural skin and hair colour, with no heavy filter, colour grade or skin smoothing.
+  Look: Inspect the named output against this requirement and its linked references.
+- `PHOTO-20/event-banner-r008/H016` The hair edge in event-banner-r008.png has no pale or grey fringe.
+  Look: Inspect the named output against this requirement and its linked references.
+- `PHOTO-20/event-banner-r008/H017` The portrait in event-banner-r008.png retains natural skin colour from vellacourt_session_01.jpg.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-banner-r008/H018` If vellacourt_workshop_snap.jpg appears on “Confirmed-talk speaker banner - Continuum Product Days - What survives contact with a factory” (event-banner-r008.png), it shows no blur, softness or blocky pixels from being enlarged.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-banner-r008/H019` The AV monogram on “Confirmed-talk speaker banner - Continuum Product Days - What survives contact with a factory” (event-banner-r008.png) is the supplied mark from vellacourt_av_transparent.png, not a retyped or redrawn AV.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-banner-r008/H020` The AV monogram on “Confirmed-talk speaker banner - Continuum Product Days - What survives contact with a factory” (event-banner-r008.png) is clean artwork, with no paper texture, raking-light shadow or wood grain.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-banner-r008/H021` The AV monogram on “Confirmed-talk speaker banner - Continuum Product Days - What survives contact with a factory” (event-banner-r008.png) is narrower than her name “Astrid Vellacourt” set beneath it.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-banner-r008/H022` Her name beneath the AV monogram on “Confirmed-talk speaker banner - Continuum Product Days - What survives contact with a factory” (event-banner-r008.png) is set in Instrument Serif Regular.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-banner-r008/H023` Her name “Astrid Vellacourt” sits directly beneath the AV monogram on “Confirmed-talk speaker banner - Continuum Product Days - What survives contact with a factory” (event-banner-r008.png).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-banner-r008/H024` The AV monogram appears exactly once on “Confirmed-talk speaker banner - Continuum Product Days - What survives contact with a factory” (event-banner-r008.png).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-banner-r008/H025` On “Confirmed-talk speaker banner - Continuum Product Days - What survives contact with a factory” (event-banner-r008.png), the inner diagonals of the monogram A and V read as one shared hairline.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-banner-r008/H026` The AV monogram on “Confirmed-talk speaker banner - Continuum Product Days - What survives contact with a factory” (event-banner-r008.png) is solid Ochre #B98A4B.
+  Measure: Eyedropper the thickest part of the monogram at 400% zoom and compare its hex with #B98A4B. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-20/event-banner-r008/H027` On “Confirmed-talk speaker banner - Continuum Product Days - What survives contact with a factory” (event-banner-r008.png), the AV monogram sits above or left of the portrait, so it is read first.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-banner-r008/H028` Apart from her name and the AV monogram, no text on “Confirmed-talk speaker banner - Continuum Product Days - What survives contact with a factory” (event-banner-r008.png) is set in a serif.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-banner-r008/H029` The event and date line on “Confirmed-talk speaker banner - Continuum Product Days - What survives contact with a factory” (event-banner-r008.png) is Inter Regular, not Medium, bold or a serif.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-banner-r008/H030` No line of running text on “Confirmed-talk speaker banner - Continuum Product Days - What survives contact with a factory” (event-banner-r008.png) runs longer than 65 characters.
+  Measure: Ignore her name, talk title, event and date. Count the characters, spaces included, of any other line; No if over 65, else Yes.
 - `PHOTO-20/event-banner-r008/H031` Type, grounds, panels, rules and icons on “Confirmed-talk speaker banner - Continuum Product Days - What survives contact with a factory” (event-banner-r008.png) use only #262524, #E8E1D6, #4C5560, #B98A4B, #16171A and #F4EFE7.
+  Measure: In an image editor at 400% zoom, eyedropper every ground, panel, rule, icon and thick type stroke; ignore the photograph; any unlisted hex means No. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-20/event-banner-r008/H032` Every ground and panel on “Confirmed-talk speaker banner - Continuum Product Days - What survives contact with a factory” (event-banner-r008.png) is Warm Neutral #E8E1D6, Bone #F4EFE7, Deep Ground #16171A or Vellacourt Ink #262524, not pure white.
+  Measure: In an image editor, eyedropper each ground, panel and flat colour and compare its hex with the listed values; #FFFFFF is a No. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-20/event-banner-r008/H033` On Warm Neutral or Bone, her name and the talk title on “Confirmed-talk speaker banner - Continuum Product Days - What survives contact with a factory” (event-banner-r008.png) are Vellacourt Ink #262524.
+  Measure: In an image editor at 400% zoom, eyedropper the middle of a thick stroke of that type and compare its hex with the values named. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-20/event-banner-r008/H034` Apart from the Ochre monogram, type on Deep Ground or Vellacourt Ink on “Confirmed-talk speaker banner - Continuum Product Days - What survives contact with a factory” (event-banner-r008.png) is Warm Neutral #E8E1D6 or Bone #F4EFE7.
+  Measure: In an image editor at 400% zoom, eyedropper the middle of a thick stroke of that type and compare its hex with the values named. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-20/event-banner-r008/H035` On “Confirmed-talk speaker banner - Continuum Product Days - What survives contact with a factory” (event-banner-r008.png), Ochre #B98A4B appears only in the AV monogram, never in type, rules, grounds or panels.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-20/event-banner-r008/H036` All type, grounds and panels on “Confirmed-talk speaker banner - Continuum Product Days - What survives contact with a factory” (event-banner-r008.png) are solid colour, with no transparency or gradient.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-banner-r008/H037` No gold foil, metallic, gloss, bevel, glow or drop shadow appears on the monogram, type, rules or panels of “Confirmed-talk speaker banner - Continuum Product Days - What survives contact with a factory” (event-banner-r008.png).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/speaker-onepager/H008` No social handle, follower count or platform icon appears on “Speaker booking one-pager” (speaker-onepager.pdf).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/speaker-onepager/H009` The biography on “Speaker booking one-pager” (speaker-onepager.pdf) says she works on physical products from first sketch to production.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/speaker-onepager/H010` The biography on “Speaker booking one-pager” (speaker-onepager.pdf) adds no client, award, credential, figure or claim that vellacourt_bio_copy.txt does not give.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/speaker-onepager/H011` On “Speaker booking one-pager” (speaker-onepager.pdf), the talk “Designing the thing before the deck” is followed by its subject “on building product before pitch”, word for word.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/speaker-onepager/H012` The three talks on “Speaker booking one-pager” (speaker-onepager.pdf) are grouped in one talk-offer block.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/speaker-onepager/H013` The AV monogram on “Speaker booking one-pager” (speaker-onepager.pdf) is clean artwork, with no paper texture, raking-light shadow or wood grain.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/speaker-onepager/H014` The AV monogram on “Speaker booking one-pager” (speaker-onepager.pdf) is narrower than her name “Astrid Vellacourt” set beneath it.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/speaker-onepager/H015` Any portrait on “Speaker booking one-pager” (speaker-onepager.pdf) is built from one of the nine supplied frames vellacourt_session_01.jpg to vellacourt_session_09.jpg, not a generated or stock face.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/speaker-onepager/H016` If “Speaker booking one-pager” (speaker-onepager.pdf) carries a portrait, no grey studio paper shows behind Astrid Vellacourt.
-- `PHOTO-20/speaker-onepager/H017` If “Speaker booking one-pager” (speaker-onepager.pdf) carries a portrait, her curly hair edge shows no pale or grey rim and no clipped curls.
+  Look: Inspect the named output against this requirement and its linked references.
+- `PHOTO-20/speaker-onepager/H017` The hair edge in speaker-onepager.pdf has no pale or grey fringe.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/speaker-onepager/H018` Any portrait on “Speaker booking one-pager” (speaker-onepager.pdf) keeps her face, hair and clothing as photographed, with nothing generated, extended or redrawn.
-- `PHOTO-20/speaker-onepager/H019` Any portrait on “Speaker booking one-pager” (speaker-onepager.pdf) keeps her natural skin and hair colour, with no heavy filter, colour grade or skin smoothing.
+  Look: Inspect the named output against this requirement and its linked references.
+- `PHOTO-20/speaker-onepager/H019` The portrait in speaker-onepager.pdf retains natural skin colour from its source photograph.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/speaker-onepager/H020` If “Speaker booking one-pager” (speaker-onepager.pdf) carries a portrait, it keeps the warm colour balance of vellacourt_session_01.jpg, with no blue or grey cast.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/speaker-onepager/H021` If vellacourt_workshop_snap.jpg appears on “Speaker booking one-pager” (speaker-onepager.pdf), it shows no blur, softness or blocky pixels from being enlarged, viewed at 100% zoom.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/speaker-onepager/H022` Her name “Astrid Vellacourt” sits directly beneath the AV monogram on “Speaker booking one-pager” (speaker-onepager.pdf).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/speaker-onepager/H023` The AV monogram appears exactly once on “Speaker booking one-pager” (speaker-onepager.pdf).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/speaker-onepager/H024` On “Speaker booking one-pager” (speaker-onepager.pdf), the inner diagonals of the monogram A and V read as one shared hairline.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/speaker-onepager/H025` The AV monogram on “Speaker booking one-pager” (speaker-onepager.pdf) is solid Ochre #B98A4B, not grey and not embossed.
+  Measure: Open the PDF in Photoshop or GIMP; eyedropper the thickest part of the monogram at 400% zoom and compare its hex with #B98A4B. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-20/speaker-onepager/H026` If “Speaker booking one-pager” (speaker-onepager.pdf) carries a portrait, the AV monogram sits above or left of it, so it is read first.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/speaker-onepager/H027` Apart from her name and the AV monogram, no text on “Speaker booking one-pager” (speaker-onepager.pdf) is set in a serif.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/speaker-onepager/H028` The biography, talk subjects and booking contact on “Speaker booking one-pager” (speaker-onepager.pdf) are set in Inter Regular.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/speaker-onepager/H029` No line of running text on “Speaker booking one-pager” (speaker-onepager.pdf) runs longer than 65 characters.
+  Measure: In Acrobat, select the longest-looking line of the biography or talk subjects, copy it and count characters with spaces; No if over 65.
 - `PHOTO-20/speaker-onepager/H030` Type, grounds, panels, rules and icons on “Speaker booking one-pager” (speaker-onepager.pdf) use only #262524, #E8E1D6, #4C5560, #B98A4B, #16171A and #F4EFE7.
+  Measure: Open the PDF in Photoshop or GIMP; eyedropper every ground, panel, rule, icon and thick type stroke, ignoring the photograph; any unlisted hex means No. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-20/speaker-onepager/H031` Every ground and panel on “Speaker booking one-pager” (speaker-onepager.pdf) is Warm Neutral #E8E1D6, Bone #F4EFE7, Deep Ground #16171A or Vellacourt Ink #262524, not pure white.
+  Measure: Open the PDF in Photoshop or GIMP, eyedropper the middle of each ground and panel, and compare its hex with the values named. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-20/speaker-onepager/H032` On “Speaker booking one-pager” (speaker-onepager.pdf), her name, talk titles and running text set on Warm Neutral or Bone are Vellacourt Ink #262524.
+  Measure: Open the PDF in Photoshop or GIMP; at 400% zoom, eyedropper inside a thick stroke of that type and compare its hex with those named. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-20/speaker-onepager/H033` On “Speaker booking one-pager” (speaker-onepager.pdf), Ochre #B98A4B appears only in the AV monogram, never in type, rules, grounds or panels.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-20/speaker-onepager/H034` All type, grounds and panels on “Speaker booking one-pager” (speaker-onepager.pdf) are solid colour, with no transparency or gradient.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/speaker-onepager/H035` No gold foil, metallic, gloss, bevel, glow or drop shadow appears on the monogram, type, rules or panels of “Speaker booking one-pager” (speaker-onepager.pdf).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r002/H004` The AV monogram on “Speaker talk card - Northlight Design Forum - Designing the thing before the deck” (talk-card-r002.pdf) is narrower than her name “Astrid Vellacourt” set beneath it.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r002/H005` The speaker name “Astrid Vellacourt” appears on “Speaker talk card - Northlight Design Forum - Designing the thing before the deck” (talk-card-r002.pdf).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r002/H006` The talk title, event and date on “Speaker talk card - Northlight Design Forum - Designing the thing before the deck” (talk-card-r002.pdf) sit together in one text block.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r002/H007` Apart from the monogram and her name, the talk title is the largest text on “Speaker talk card - Northlight Design Forum - Designing the thing before the deck” (talk-card-r002.pdf).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r002/H008` Her name “Astrid Vellacourt” on “Speaker talk card - Northlight Design Forum - Designing the thing before the deck” (talk-card-r002.pdf) is set larger than the date “14 Feb 2026”.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r002/H009` No social handle, follower count or platform icon appears on “Speaker talk card - Northlight Design Forum - Designing the thing before the deck” (talk-card-r002.pdf).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r002/H010` The AV monogram on “Speaker talk card - Northlight Design Forum - Designing the thing before the deck” (talk-card-r002.pdf) is the supplied mark from vellacourt_av_transparent.png, not the template's Georgia Bold “AV” or any retyped AV.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r002/H011` The AV monogram on “Speaker talk card - Northlight Design Forum - Designing the thing before the deck” (talk-card-r002.pdf) is clean artwork, with no paper texture, raking-light shadow or wood grain.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r002/H013` The portrait on “Speaker talk card - Northlight Design Forum - Designing the thing before the deck” (talk-card-r002.pdf) is built from vellacourt_session_02.jpg, the frame vellacourt_talks.csv row 2 assigns.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r002/H014` The face in the portrait on “Speaker talk card - Northlight Design Forum - Designing the thing before the deck” (talk-card-r002.pdf) is the original photograph, not regenerated or repainted.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r002/H015` The face on “Speaker talk card - Northlight Design Forum - Designing the thing before the deck” (talk-card-r002.pdf) is still recognizably the person photographed in vellacourt_session_02.jpg.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r002/H016` Nothing of her hair, shoulders or clothing on “Speaker talk card - Northlight Design Forum - Designing the thing before the deck” (talk-card-r002.pdf) is generated, extended or redrawn beyond vellacourt_session_02.jpg.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r002/H017` No grey studio paper from vellacourt_session_02.jpg shows behind Astrid Vellacourt on “Speaker talk card - Northlight Design Forum - Designing the thing before the deck” (talk-card-r002.pdf).
-- `PHOTO-20/talk-card-r002/H018` Her curly hair edge on “Speaker talk card - Northlight Design Forum - Designing the thing before the deck” (talk-card-r002.pdf) shows no pale or grey rim and no clipped curls.
-- `PHOTO-20/talk-card-r002/H019` The portrait on “Speaker talk card - Northlight Design Forum - Designing the thing before the deck” (talk-card-r002.pdf) keeps her natural skin and hair colour, with no heavy filter, colour grade or skin smoothing.
+  Look: Inspect the named output against this requirement and its linked references.
+- `PHOTO-20/talk-card-r002/H018` The hair edge in talk-card-r002.pdf has no pale or grey fringe.
+  Look: Inspect the named output against this requirement and its linked references.
+- `PHOTO-20/talk-card-r002/H019` The portrait in talk-card-r002.pdf retains natural skin colour from vellacourt_session_02.jpg.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r002/H020` Her name beneath the AV monogram on “Speaker talk card - Northlight Design Forum - Designing the thing before the deck” (talk-card-r002.pdf) is set in Instrument Serif Regular.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r002/H021` Her name “Astrid Vellacourt” sits directly beneath the AV monogram on “Speaker talk card - Northlight Design Forum - Designing the thing before the deck” (talk-card-r002.pdf).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r002/H022` The AV monogram appears exactly once on “Speaker talk card - Northlight Design Forum - Designing the thing before the deck” (talk-card-r002.pdf).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r002/H023` On “Speaker talk card - Northlight Design Forum - Designing the thing before the deck” (talk-card-r002.pdf), the inner diagonals of the monogram A and V read as one shared hairline.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r002/H024` The AV monogram on “Speaker talk card - Northlight Design Forum - Designing the thing before the deck” (talk-card-r002.pdf) is solid Ochre #B98A4B, not grey and not embossed.
+  Measure: Open the PDF in Photoshop or GIMP; eyedropper the thickest part of the monogram at 400% zoom and compare its hex with #B98A4B. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-20/talk-card-r002/H025` On “Speaker talk card - Northlight Design Forum - Designing the thing before the deck” (talk-card-r002.pdf), the AV monogram sits above or left of the portrait, so it is read first.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r002/H026` Apart from her name and the AV monogram, no text on “Speaker talk card - Northlight Design Forum - Designing the thing before the deck” (talk-card-r002.pdf) is set in a serif.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r002/H027` The event name, date and format on “Speaker talk card - Northlight Design Forum - Designing the thing before the deck” (talk-card-r002.pdf) are Inter Regular, not Helvetica Neue.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r002/H028` No line of running text on “Speaker talk card - Northlight Design Forum - Designing the thing before the deck” (talk-card-r002.pdf) runs longer than 65 characters.
+  Measure: Ignore her name, talk title, event, date and format. Copy each other line in Acrobat, count characters with spaces; No if over 65, else Yes.
 - `PHOTO-20/talk-card-r002/H029` Type, grounds, panels, rules and icons on “Speaker talk card - Northlight Design Forum - Designing the thing before the deck” (talk-card-r002.pdf) use only #262524, #E8E1D6, #4C5560, #B98A4B, #16171A and #F4EFE7.
+  Measure: Open the PDF in Photoshop or GIMP; eyedropper every ground, panel, rule, icon and thick type stroke, ignoring the photograph; any unlisted hex means No. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-20/talk-card-r002/H030` “Speaker talk card - Northlight Design Forum - Designing the thing before the deck” (talk-card-r002.pdf) keeps the Warm Neutral #E8E1D6 ground of vellacourt_speakercard_template.pdf.
+  Measure: Open the PDF in Photoshop or GIMP, eyedropper the middle of each ground and panel, and compare its hex with the values named. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-20/talk-card-r002/H031` On Warm Neutral or Bone, her name and the talk title on “Speaker talk card - Northlight Design Forum - Designing the thing before the deck” (talk-card-r002.pdf) are Vellacourt Ink #262524.
+  Measure: Open the PDF in Photoshop or GIMP; at 400% zoom, eyedropper inside a thick stroke of that type and compare its hex with those named. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-20/talk-card-r002/H032` Apart from the Ochre monogram, type on Deep Ground or Vellacourt Ink on “Speaker talk card - Northlight Design Forum - Designing the thing before the deck” (talk-card-r002.pdf) is Warm Neutral #E8E1D6 or Bone #F4EFE7.
+  Measure: Open the PDF in Photoshop or GIMP; at 400% zoom, eyedropper inside a thick stroke of that type and compare its hex with those named. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-20/talk-card-r002/H033` On “Speaker talk card - Northlight Design Forum - Designing the thing before the deck” (talk-card-r002.pdf), Ochre #B98A4B appears only in the AV monogram, never in type, rules, grounds or panels.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-20/talk-card-r002/H034` All type, grounds and panels on “Speaker talk card - Northlight Design Forum - Designing the thing before the deck” (talk-card-r002.pdf) are solid colour, with no transparency or gradient.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r002/H035` No gold foil, metallic, gloss, bevel, glow or drop shadow appears on the monogram, type, rules or panels of “Speaker talk card - Northlight Design Forum - Designing the thing before the deck” (talk-card-r002.pdf).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/speaker-onepager/H040` Each talk title on “Speaker booking one-pager” (speaker-onepager.pdf) is set in Inter Medium.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/speaker-onepager/H046` If an event or date line appears on “Speaker booking one-pager” (speaker-onepager.pdf), it is set in Inter Regular.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-announcement-r002/H044` The talk title “Designing the thing before the deck” on “Confirmed-talk speaker announcement - Northlight Design Forum - Designing the thing before the deck” (event-announcement-r002.png) is set in Inter Medium.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-announcement-r002/H052` If a separate event and date line appears on “Confirmed-talk speaker announcement - Northlight Design Forum - Designing the thing before the deck” (event-announcement-r002.png), it is set in Inter Regular.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-announcement-r003/H044` The talk title “Six people, one hand” on “Confirmed-talk speaker announcement - Made & Kept - Six people, one hand” (event-announcement-r003.png) is set in Inter Medium.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-announcement-r003/H052` If a separate event and date line appears on “Confirmed-talk speaker announcement - Made & Kept - Six people, one hand” (event-announcement-r003.png), it is set in Inter Regular.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-announcement-r008/H044` The talk title “What survives contact with a factory” on “Confirmed-talk speaker announcement - Continuum Product Days - What survives contact with a factory” (event-announcement-r008.png) is set in Inter Medium.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-announcement-r008/H052` If a separate event and date line appears on “Confirmed-talk speaker announcement - Continuum Product Days - What survives contact with a factory” (event-announcement-r008.png), it is set in Inter Regular.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-banner-r002/H042` The talk title on “Confirmed-talk speaker banner - Northlight Design Forum - Designing the thing before the deck” (event-banner-r002.png) is set in Inter Medium.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-banner-r002/H046` If any running text appears on “Confirmed-talk speaker banner - Northlight Design Forum - Designing the thing before the deck” (event-banner-r002.png), it is set in Inter Regular.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-banner-r003/H042` The talk title on “Confirmed-talk speaker banner - Made & Kept - Six people, one hand” (event-banner-r003.png) is set in Inter Medium.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-banner-r003/H046` If any running text appears on “Confirmed-talk speaker banner - Made & Kept - Six people, one hand” (event-banner-r003.png), it is set in Inter Regular.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-banner-r008/H042` The talk title on “Confirmed-talk speaker banner - Continuum Product Days - What survives contact with a factory” (event-banner-r008.png) is set in Inter Medium.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-banner-r008/H046` If any running text appears on “Confirmed-talk speaker banner - Continuum Product Days - What survives contact with a factory” (event-banner-r008.png), it is set in Inter Regular.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r002/H040` The talk title on “Speaker talk card - Northlight Design Forum - Designing the thing before the deck” (talk-card-r002.pdf) is set in Inter Medium.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r002/H042` If any running text appears on “Speaker talk card - Northlight Design Forum - Designing the thing before the deck” (talk-card-r002.pdf), it is set in Inter Regular.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r003/H040` The talk title on “Speaker talk card - Made & Kept - Six people, one hand” (talk-card-r003.pdf) is set in Inter Medium.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r003/H042` If any running text appears on “Speaker talk card - Made & Kept - Six people, one hand” (talk-card-r003.pdf), it is set in Inter Regular.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r004/H040` The talk title on “Speaker talk card - Fjordworks Summit - On staying small on purpose” (talk-card-r004.pdf) is set in Inter Medium.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r004/H042` If any running text appears on “Speaker talk card - Fjordworks Summit - On staying small on purpose” (talk-card-r004.pdf), it is set in Inter Regular.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r005/H040` The talk title on “Speaker talk card - Fjordworks Summit - The room after the round” (talk-card-r005.pdf) is set in Inter Medium.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r005/H042` If any running text appears on “Speaker talk card - Fjordworks Summit - The room after the round” (talk-card-r005.pdf), it is set in Inter Regular.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r006/H040` The talk title on “Speaker talk card - Halden Design Days - From sketch to tooling” (talk-card-r006.pdf) is set in Inter Medium.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r006/H042` If any running text appears on “Speaker talk card - Halden Design Days - From sketch to tooling” (talk-card-r006.pdf), it is set in Inter Regular.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r007/H040` The talk title on “Speaker talk card - The Bench Sessions - Designing for the next hands” (talk-card-r007.pdf) is set in Inter Medium.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r007/H042` If any running text appears on “Speaker talk card - The Bench Sessions - Designing for the next hands” (talk-card-r007.pdf), it is set in Inter Regular.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r008/H040` The talk title on “Speaker talk card - Continuum Product Days - What survives contact with a factory” (talk-card-r008.pdf) is set in Inter Medium.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r008/H042` If any running text appears on “Speaker talk card - Continuum Product Days - What survives contact with a factory” (talk-card-r008.pdf), it is set in Inter Regular.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r009/H040` The talk title on “Speaker talk card - Grain & Frame Forum - What a small studio can promise” (talk-card-r009.pdf) is set in Inter Medium.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r009/H042` If any running text appears on “Speaker talk card - Grain & Frame Forum - What a small studio can promise” (talk-card-r009.pdf), it is set in Inter Regular.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/speaker-onepager/H050` The AV monogram on “Speaker booking one-pager” (speaker-onepager.pdf) is at least 18 mm wide.
+  Measure: In Acrobat, use Measure > Distance from the A's leftmost ink edge to the V's rightmost ink edge, not the image frame.
 - `PHOTO-20/speaker-onepager/H051` If “Speaker booking one-pager” (speaker-onepager.pdf) carries a photograph, no black, white or coloured scrim, gradient or overlay covers it.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-announcement-r002/H056` No black, white or coloured scrim, gradient or overlay covers the portrait on “Confirmed-talk speaker announcement - Northlight Design Forum - Designing the thing before the deck” (event-announcement-r002.png).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-announcement-r003/H056` No black, white or coloured scrim, gradient or overlay covers the portrait on “Confirmed-talk speaker announcement - Made & Kept - Six people, one hand” (event-announcement-r003.png).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-announcement-r008/H056` No black, white or coloured scrim, gradient or overlay covers the portrait on “Confirmed-talk speaker announcement - Continuum Product Days - What survives contact with a factory” (event-announcement-r008.png).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-banner-r002/H054` No black, white or coloured scrim, gradient or overlay covers the portrait on “Confirmed-talk speaker banner - Northlight Design Forum - Designing the thing before the deck” (event-banner-r002.png).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-banner-r003/H054` No black, white or coloured scrim, gradient or overlay covers the portrait on “Confirmed-talk speaker banner - Made & Kept - Six people, one hand” (event-banner-r003.png).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-banner-r008/H054` No black, white or coloured scrim, gradient or overlay covers the portrait on “Confirmed-talk speaker banner - Continuum Product Days - What survives contact with a factory” (event-banner-r008.png).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r002/H050` The AV monogram on “Speaker talk card - Northlight Design Forum - Designing the thing before the deck” (talk-card-r002.pdf) is at least 18 mm wide.
+  Measure: In Acrobat, use Measure > Distance from the A's leftmost ink edge to the V's rightmost ink edge, not the image frame.
 - `PHOTO-20/talk-card-r002/H051` No black, white or coloured scrim, gradient or overlay covers the portrait on “Speaker talk card - Northlight Design Forum - Designing the thing before the deck” (talk-card-r002.pdf).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r002/H052` The talk title on “Speaker talk card - Northlight Design Forum - Designing the thing before the deck” (talk-card-r002.pdf) is set smaller than her name “Astrid Vellacourt”.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r002/H053` Every panel on “Speaker talk card - Northlight Design Forum - Designing the thing before the deck” (talk-card-r002.pdf) is Warm Neutral #E8E1D6, Bone #F4EFE7, Deep Ground #16171A or Vellacourt Ink #262524.
+  Measure: Open the PDF in Photoshop or GIMP, eyedropper the middle of each ground and panel, and compare its hex with the values named. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-20/talk-card-r003/H050` The AV monogram on “Speaker talk card - Made & Kept - Six people, one hand” (talk-card-r003.pdf) is at least 18 mm wide.
+  Measure: In Acrobat, use Measure > Distance from the A's leftmost ink edge to the V's rightmost ink edge, not the image frame.
 - `PHOTO-20/talk-card-r003/H051` No black, white or coloured scrim, gradient or overlay covers the portrait on “Speaker talk card - Made & Kept - Six people, one hand” (talk-card-r003.pdf).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r003/H052` The talk title on “Speaker talk card - Made & Kept - Six people, one hand” (talk-card-r003.pdf) is set smaller than her name “Astrid Vellacourt”.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r003/H053` Every panel on “Speaker talk card - Made & Kept - Six people, one hand” (talk-card-r003.pdf) is Warm Neutral #E8E1D6, Bone #F4EFE7, Deep Ground #16171A or Vellacourt Ink #262524.
+  Measure: Open the PDF in Photoshop or GIMP, eyedropper the middle of each ground and panel, and compare its hex with the values named. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-20/talk-card-r004/H050` The AV monogram on “Speaker talk card - Fjordworks Summit - On staying small on purpose” (talk-card-r004.pdf) is at least 18 mm wide.
+  Measure: In Acrobat, use Measure > Distance from the A's leftmost ink edge to the V's rightmost ink edge, not the image frame.
 - `PHOTO-20/talk-card-r004/H051` No black, white or coloured scrim, gradient or overlay covers the portrait on “Speaker talk card - Fjordworks Summit - On staying small on purpose” (talk-card-r004.pdf).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r004/H052` The talk title on “Speaker talk card - Fjordworks Summit - On staying small on purpose” (talk-card-r004.pdf) is set smaller than her name “Astrid Vellacourt”.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r004/H053` Every panel on “Speaker talk card - Fjordworks Summit - On staying small on purpose” (talk-card-r004.pdf) is Warm Neutral #E8E1D6, Bone #F4EFE7, Deep Ground #16171A or Vellacourt Ink #262524.
+  Measure: Open the PDF in Photoshop or GIMP, eyedropper the middle of each ground and panel, and compare its hex with the values named. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-20/talk-card-r005/H050` The AV monogram on “Speaker talk card - Fjordworks Summit - The room after the round” (talk-card-r005.pdf) is at least 18 mm wide.
+  Measure: In Acrobat, use Measure > Distance from the A's leftmost ink edge to the V's rightmost ink edge, not the image frame.
 - `PHOTO-20/talk-card-r005/H051` No black, white or coloured scrim, gradient or overlay covers the portrait on “Speaker talk card - Fjordworks Summit - The room after the round” (talk-card-r005.pdf).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r005/H052` The talk title on “Speaker talk card - Fjordworks Summit - The room after the round” (talk-card-r005.pdf) is set smaller than her name “Astrid Vellacourt”.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r005/H053` Every panel on “Speaker talk card - Fjordworks Summit - The room after the round” (talk-card-r005.pdf) is Warm Neutral #E8E1D6, Bone #F4EFE7, Deep Ground #16171A or Vellacourt Ink #262524.
+  Measure: Open the PDF in Photoshop or GIMP, eyedropper the middle of each ground and panel, and compare its hex with the values named. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-20/talk-card-r006/H050` The AV monogram on “Speaker talk card - Halden Design Days - From sketch to tooling” (talk-card-r006.pdf) is at least 18 mm wide.
+  Measure: In Acrobat, use Measure > Distance from the A's leftmost ink edge to the V's rightmost ink edge, not the image frame.
 - `PHOTO-20/talk-card-r006/H051` No black, white or coloured scrim, gradient or overlay covers the portrait on “Speaker talk card - Halden Design Days - From sketch to tooling” (talk-card-r006.pdf).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r006/H052` The talk title on “Speaker talk card - Halden Design Days - From sketch to tooling” (talk-card-r006.pdf) is set smaller than her name “Astrid Vellacourt”.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r006/H053` Every panel on “Speaker talk card - Halden Design Days - From sketch to tooling” (talk-card-r006.pdf) is Warm Neutral #E8E1D6, Bone #F4EFE7, Deep Ground #16171A or Vellacourt Ink #262524.
+  Measure: Open the PDF in Photoshop or GIMP, eyedropper the middle of each ground and panel, and compare its hex with the values named. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-20/talk-card-r007/H050` The AV monogram on “Speaker talk card - The Bench Sessions - Designing for the next hands” (talk-card-r007.pdf) is at least 18 mm wide.
+  Measure: In Acrobat, use Measure > Distance from the A's leftmost ink edge to the V's rightmost ink edge, not the image frame.
 - `PHOTO-20/talk-card-r007/H051` If “Speaker talk card - The Bench Sessions - Designing for the next hands” (talk-card-r007.pdf) carries a photograph, no black, white or coloured scrim, gradient or overlay covers it.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r007/H052` The talk title on “Speaker talk card - The Bench Sessions - Designing for the next hands” (talk-card-r007.pdf) is set smaller than her name “Astrid Vellacourt”.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r007/H053` Every panel on “Speaker talk card - The Bench Sessions - Designing for the next hands” (talk-card-r007.pdf) is Warm Neutral #E8E1D6, Bone #F4EFE7, Deep Ground #16171A or Vellacourt Ink #262524.
+  Measure: Open the PDF in Photoshop or GIMP, eyedropper the middle of each ground and panel, and compare its hex with the values named. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-20/talk-card-r008/H050` The AV monogram on “Speaker talk card - Continuum Product Days - What survives contact with a factory” (talk-card-r008.pdf) is at least 18 mm wide.
+  Measure: In Acrobat, use Measure > Distance from the A's leftmost ink edge to the V's rightmost ink edge, not the image frame.
 - `PHOTO-20/talk-card-r008/H051` No black, white or coloured scrim, gradient or overlay covers the portrait on “Speaker talk card - Continuum Product Days - What survives contact with a factory” (talk-card-r008.pdf).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r008/H052` The talk title on “Speaker talk card - Continuum Product Days - What survives contact with a factory” (talk-card-r008.pdf) is set smaller than her name “Astrid Vellacourt”.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r008/H053` Every panel on “Speaker talk card - Continuum Product Days - What survives contact with a factory” (talk-card-r008.pdf) is Warm Neutral #E8E1D6, Bone #F4EFE7, Deep Ground #16171A or Vellacourt Ink #262524.
+  Measure: Open the PDF in Photoshop or GIMP, eyedropper the middle of each ground and panel, and compare its hex with the values named. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-20/talk-card-r009/H050` The AV monogram on “Speaker talk card - Grain & Frame Forum - What a small studio can promise” (talk-card-r009.pdf) is at least 18 mm wide.
+  Measure: In Acrobat, use Measure > Distance from the A's leftmost ink edge to the V's rightmost ink edge, not the image frame.
 - `PHOTO-20/talk-card-r009/H051` No black, white or coloured scrim, gradient or overlay covers the portrait on “Speaker talk card - Grain & Frame Forum - What a small studio can promise” (talk-card-r009.pdf).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r009/H052` The talk title on “Speaker talk card - Grain & Frame Forum - What a small studio can promise” (talk-card-r009.pdf) is set smaller than her name “Astrid Vellacourt”.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r009/H053` Every panel on “Speaker talk card - Grain & Frame Forum - What a small studio can promise” (talk-card-r009.pdf) is Warm Neutral #E8E1D6, Bone #F4EFE7, Deep Ground #16171A or Vellacourt Ink #262524.
+  Measure: Open the PDF in Photoshop or GIMP, eyedropper the middle of each ground and panel, and compare its hex with the values named. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-20/speaker-onepager/H052` The booking contact on “Speaker booking one-pager” (speaker-onepager.pdf) adds no email address, phone number or web address.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/speaker-onepager/H053` The biography on “Speaker booking one-pager” (speaker-onepager.pdf) says she is raising a seed round to grow the studio's own product line.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/speaker-onepager/H054` Apart from the Ochre monogram, type on Deep Ground or Vellacourt Ink on “Speaker booking one-pager” (speaker-onepager.pdf) is Warm Neutral #E8E1D6 or Bone #F4EFE7.
+  Measure: Open the PDF in Photoshop or GIMP; at 400% zoom, eyedropper inside a thick stroke of that type and compare its hex with those named. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-20/talk-card-r002/H054` No text from another talk, such as “Six people, one hand” or “Made & Kept”, appears on “Speaker talk card - Northlight Design Forum - Designing the thing before the deck” (talk-card-r002.pdf).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-announcement-r002/H057` The talk title on “Confirmed-talk speaker announcement - Northlight Design Forum - Designing the thing before the deck” (event-announcement-r002.png) is set larger than the date “14 Feb 2026”.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-announcement-r002/H058` If a separate event and date line sits on Warm Neutral or Bone on “Confirmed-talk speaker announcement - Northlight Design Forum - Designing the thing before the deck” (event-announcement-r002.png), it is Vellacourt Ink #262524 or Studio Slate #4C5560.
+  Measure: In an image editor at 400% zoom, eyedropper the middle of a thick stroke of that type and compare its hex with the values named. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-20/event-announcement-r003/H057` The talk title on “Confirmed-talk speaker announcement - Made & Kept - Six people, one hand” (event-announcement-r003.png) is set larger than the date “2026-03-03”.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-announcement-r003/H058` If a separate event and date line sits on Warm Neutral or Bone on “Confirmed-talk speaker announcement - Made & Kept - Six people, one hand” (event-announcement-r003.png), it is Vellacourt Ink #262524 or Studio Slate #4C5560.
+  Measure: In an image editor at 400% zoom, eyedropper the middle of a thick stroke of that type and compare its hex with the values named. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-20/event-announcement-r008/H057` The talk title on “Confirmed-talk speaker announcement - Continuum Product Days - What survives contact with a factory” (event-announcement-r008.png) is set larger than the date “May 9”.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-announcement-r008/H058` If a separate event and date line sits on Warm Neutral or Bone on “Confirmed-talk speaker announcement - Continuum Product Days - What survives contact with a factory” (event-announcement-r008.png), it is Vellacourt Ink #262524 or Studio Slate #4C5560.
+  Measure: In an image editor at 400% zoom, eyedropper the middle of a thick stroke of that type and compare its hex with the values named. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-20/event-banner-r002/H055` On Warm Neutral or Bone, the event name and date on “Confirmed-talk speaker banner - Northlight Design Forum - Designing the thing before the deck” (event-banner-r002.png) are Vellacourt Ink #262524 or Studio Slate #4C5560.
+  Measure: In an image editor at 400% zoom, eyedropper the middle of a thick stroke of that type and compare its hex with the values named. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-20/event-banner-r003/H055` On Warm Neutral or Bone, the event name and date on “Confirmed-talk speaker banner - Made & Kept - Six people, one hand” (event-banner-r003.png) are Vellacourt Ink #262524 or Studio Slate #4C5560.
+  Measure: In an image editor at 400% zoom, eyedropper the middle of a thick stroke of that type and compare its hex with the values named. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-20/event-banner-r008/H055` On Warm Neutral or Bone, the event name and date on “Confirmed-talk speaker banner - Continuum Product Days - What survives contact with a factory” (event-banner-r008.png) are Vellacourt Ink #262524 or Studio Slate #4C5560.
+  Measure: In an image editor at 400% zoom, eyedropper the middle of a thick stroke of that type and compare its hex with the values named. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-20/talk-card-r002/H055` On Warm Neutral or Bone, the event name and date on “Speaker talk card - Northlight Design Forum - Designing the thing before the deck” (talk-card-r002.pdf) are Vellacourt Ink #262524 or Studio Slate #4C5560.
+  Measure: Open the PDF in Photoshop or GIMP; at 400% zoom, eyedropper inside a thick stroke of that type and compare its hex with those named. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-20/talk-card-r002/H056` “Speaker talk card - Northlight Design Forum - Designing the thing before the deck” (talk-card-r002.pdf) carries exactly one portrait.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r003/H054` On Warm Neutral or Bone, the event name and date on “Speaker talk card - Made & Kept - Six people, one hand” (talk-card-r003.pdf) are Vellacourt Ink #262524 or Studio Slate #4C5560.
+  Measure: Open the PDF in Photoshop or GIMP; at 400% zoom, eyedropper inside a thick stroke of that type and compare its hex with those named. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-20/talk-card-r003/H055` “Speaker talk card - Made & Kept - Six people, one hand” (talk-card-r003.pdf) carries exactly one portrait.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r004/H054` On Warm Neutral or Bone, the event name and date on “Speaker talk card - Fjordworks Summit - On staying small on purpose” (talk-card-r004.pdf) are Vellacourt Ink #262524 or Studio Slate #4C5560.
+  Measure: Open the PDF in Photoshop or GIMP; at 400% zoom, eyedropper inside a thick stroke of that type and compare its hex with those named. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-20/talk-card-r004/H055` “Speaker talk card - Fjordworks Summit - On staying small on purpose” (talk-card-r004.pdf) carries exactly one portrait.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r005/H054` On Warm Neutral or Bone, the event name and date on “Speaker talk card - Fjordworks Summit - The room after the round” (talk-card-r005.pdf) are Vellacourt Ink #262524 or Studio Slate #4C5560.
+  Measure: Open the PDF in Photoshop or GIMP; at 400% zoom, eyedropper inside a thick stroke of that type and compare its hex with those named. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-20/talk-card-r005/H055` “Speaker talk card - Fjordworks Summit - The room after the round” (talk-card-r005.pdf) carries exactly one portrait.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r006/H054` On Warm Neutral or Bone, the event name and date on “Speaker talk card - Halden Design Days - From sketch to tooling” (talk-card-r006.pdf) are Vellacourt Ink #262524 or Studio Slate #4C5560.
+  Measure: Open the PDF in Photoshop or GIMP; at 400% zoom, eyedropper inside a thick stroke of that type and compare its hex with those named. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-20/talk-card-r006/H055` “Speaker talk card - Halden Design Days - From sketch to tooling” (talk-card-r006.pdf) carries exactly one portrait.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r007/H054` On Warm Neutral or Bone, the event name and date on “Speaker talk card - The Bench Sessions - Designing for the next hands” (talk-card-r007.pdf) are Vellacourt Ink #262524 or Studio Slate #4C5560.
+  Measure: Open the PDF in Photoshop or GIMP; at 400% zoom, eyedropper inside a thick stroke of that type and compare its hex with those named. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-20/talk-card-r008/H054` On Warm Neutral or Bone, the event name and date on “Speaker talk card - Continuum Product Days - What survives contact with a factory” (talk-card-r008.pdf) are Vellacourt Ink #262524 or Studio Slate #4C5560.
+  Measure: Open the PDF in Photoshop or GIMP; at 400% zoom, eyedropper inside a thick stroke of that type and compare its hex with those named. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-20/talk-card-r008/H055` “Speaker talk card - Continuum Product Days - What survives contact with a factory” (talk-card-r008.pdf) carries exactly one portrait.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r009/H054` On Warm Neutral or Bone, the event name and date on “Speaker talk card - Grain & Frame Forum - What a small studio can promise” (talk-card-r009.pdf) are Vellacourt Ink #262524 or Studio Slate #4C5560.
+  Measure: Open the PDF in Photoshop or GIMP; at 400% zoom, eyedropper inside a thick stroke of that type and compare its hex with those named. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-20/talk-card-r009/H055` “Speaker talk card - Grain & Frame Forum - What a small studio can promise” (talk-card-r009.pdf) carries exactly one portrait.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r006/H056` The portrait on “Speaker talk card - Halden Design Days - From sketch to tooling” (talk-card-r006.pdf) keeps the warm colour balance of vellacourt_session_01.jpg, with no cooler, bluer or greyer cast.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r009/H056` The portrait on “Speaker talk card - Grain & Frame Forum - What a small studio can promise” (talk-card-r009.pdf) keeps the warm colour balance of vellacourt_session_01.jpg, with no cooler, bluer or greyer cast.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r007/H055` If vellacourt_workshop_snap.jpg appears on “Speaker talk card - The Bench Sessions - Designing for the next hands” (talk-card-r007.pdf), it shows no blur, softness or blocky pixels from being enlarged, viewed at 100% zoom.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/speaker-onepager/H055` No image, panel or text covers any part of the talk offer on “Speaker booking one-pager” (speaker-onepager.pdf).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-announcement-r002/H059` The AV monogram on “Confirmed-talk speaker announcement - Northlight Design Forum - Designing the thing before the deck” (event-announcement-r002.png) is at least 69 px wide.
+  Measure: In an image editor, measure in pixels from the A's leftmost ink edge to the V's rightmost ink edge, not the transparent frame.
 - `PHOTO-20/event-announcement-r003/H059` The AV monogram on “Confirmed-talk speaker announcement - Made & Kept - Six people, one hand” (event-announcement-r003.png) is at least 69 px wide.
+  Measure: In an image editor, measure in pixels from the A's leftmost ink edge to the V's rightmost ink edge, not the transparent frame.
 - `PHOTO-20/event-announcement-r008/H059` The AV monogram on “Confirmed-talk speaker announcement - Continuum Product Days - What survives contact with a factory” (event-announcement-r008.png) is at least 69 px wide.
+  Measure: In an image editor, measure in pixels from the A's leftmost ink edge to the V's rightmost ink edge, not the transparent frame.
 - `PHOTO-20/event-banner-r002/H056` The AV monogram on “Confirmed-talk speaker banner - Northlight Design Forum - Designing the thing before the deck” (event-banner-r002.png) is at least 69 px wide.
+  Measure: In an image editor, measure in pixels from the A's leftmost ink edge to the V's rightmost ink edge, not the transparent frame.
 - `PHOTO-20/event-banner-r003/H056` The AV monogram on “Confirmed-talk speaker banner - Made & Kept - Six people, one hand” (event-banner-r003.png) is at least 69 px wide.
+  Measure: In an image editor, measure in pixels from the A's leftmost ink edge to the V's rightmost ink edge, not the transparent frame.
 - `PHOTO-20/event-banner-r008/H056` The AV monogram on “Confirmed-talk speaker banner - Continuum Product Days - What survives contact with a factory” (event-banner-r008.png) is at least 69 px wide.
+  Measure: In an image editor, measure in pixels from the A's leftmost ink edge to the V's rightmost ink edge, not the transparent frame.
 - `PHOTO-20/speaker-onepager/H056` If an event or date line sits on Warm Neutral or Bone on “Speaker booking one-pager” (speaker-onepager.pdf), it is Vellacourt Ink #262524 or Studio Slate #4C5560.
+  Measure: Open the PDF in Photoshop or GIMP; at 400% zoom, eyedropper inside a thick stroke of that type and compare its hex with those named. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-20/event-announcement-r002/H060` Every name, claim, credential and contact detail on “Confirmed-talk speaker announcement - Northlight Design Forum - Designing the thing before the deck” (event-announcement-r002.png) comes from vellacourt_bio_copy.txt or vellacourt_talks.csv.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-announcement-r003/H060` Every name, claim, credential and contact detail on “Confirmed-talk speaker announcement - Made & Kept - Six people, one hand” (event-announcement-r003.png) comes from vellacourt_bio_copy.txt or vellacourt_talks.csv.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-announcement-r008/H060` Every name, claim, credential and contact detail on “Confirmed-talk speaker announcement - Continuum Product Days - What survives contact with a factory” (event-announcement-r008.png) comes from vellacourt_bio_copy.txt or vellacourt_talks.csv.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-banner-r002/H057` Every name, claim, credential and contact detail on “Confirmed-talk speaker banner - Northlight Design Forum - Designing the thing before the deck” (event-banner-r002.png) comes from vellacourt_bio_copy.txt or vellacourt_talks.csv.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-banner-r003/H057` Every name, claim, credential and contact detail on “Confirmed-talk speaker banner - Made & Kept - Six people, one hand” (event-banner-r003.png) comes from vellacourt_bio_copy.txt or vellacourt_talks.csv.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/event-banner-r008/H057` Every name, claim, credential and contact detail on “Confirmed-talk speaker banner - Continuum Product Days - What survives contact with a factory” (event-banner-r008.png) comes from vellacourt_bio_copy.txt or vellacourt_talks.csv.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r002/H057` Every name, claim, credential and contact detail on “Speaker talk card - Northlight Design Forum - Designing the thing before the deck” (talk-card-r002.pdf) comes from vellacourt_bio_copy.txt or vellacourt_talks.csv.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r003/H056` Every name, claim, credential and contact detail on “Speaker talk card - Made & Kept - Six people, one hand” (talk-card-r003.pdf) comes from vellacourt_bio_copy.txt or vellacourt_talks.csv.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r004/H056` Every name, claim, credential and contact detail on “Speaker talk card - Fjordworks Summit - On staying small on purpose” (talk-card-r004.pdf) comes from vellacourt_bio_copy.txt or vellacourt_talks.csv.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r005/H056` Every name, claim, credential and contact detail on “Speaker talk card - Fjordworks Summit - The room after the round” (talk-card-r005.pdf) comes from vellacourt_bio_copy.txt or vellacourt_talks.csv.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r006/H057` Every name, claim, credential and contact detail on “Speaker talk card - Halden Design Days - From sketch to tooling” (talk-card-r006.pdf) comes from vellacourt_bio_copy.txt or vellacourt_talks.csv.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r007/H056` Every name, claim, credential and contact detail on “Speaker talk card - The Bench Sessions - Designing for the next hands” (talk-card-r007.pdf) comes from vellacourt_bio_copy.txt or vellacourt_talks.csv.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r008/H056` Every name, claim, credential and contact detail on “Speaker talk card - Continuum Product Days - What survives contact with a factory” (talk-card-r008.pdf) comes from vellacourt_bio_copy.txt or vellacourt_talks.csv.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r009/H057` Every name, claim, credential and contact detail on “Speaker talk card - Grain & Frame Forum - What a small studio can promise” (talk-card-r009.pdf) comes from vellacourt_bio_copy.txt or vellacourt_talks.csv.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/speaker-onepager/H057` On “Speaker booking one-pager” (speaker-onepager.pdf), the talk “Six people, one hand” is followed by its subject “on keeping a small studio's craft as it grows”, word for word.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/speaker-onepager/H058` On “Speaker booking one-pager” (speaker-onepager.pdf), the talk “What survives contact with a factory” is followed by its subject “on designing for real manufacturing”, word for word.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r002/H058` The text block with the talk title, event and date on “Speaker talk card - Northlight Design Forum - Designing the thing before the deck” (talk-card-r002.pdf) sits below the portrait.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r003/H057` The text block with the talk title, event and date on “Speaker talk card - Made & Kept - Six people, one hand” (talk-card-r003.pdf) sits below the portrait.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r004/H057` The text block with the talk title, event and date on “Speaker talk card - Fjordworks Summit - On staying small on purpose” (talk-card-r004.pdf) sits below the portrait.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r005/H057` The text block with the talk title, event and date on “Speaker talk card - Fjordworks Summit - The room after the round” (talk-card-r005.pdf) sits below the portrait.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r006/H058` The text block with the talk title, event and date on “Speaker talk card - Halden Design Days - From sketch to tooling” (talk-card-r006.pdf) sits below the portrait.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r008/H057` The text block with the talk title, event and date on “Speaker talk card - Continuum Product Days - What survives contact with a factory” (talk-card-r008.pdf) sits below the portrait.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-20/talk-card-r009/H058` The text block with the talk title, event and date on “Speaker talk card - Grain & Frame Forum - What a small studio can promise” (talk-card-r009.pdf) sits below the portrait.
+  Look: Inspect the named output against this requirement and its linked references.
+- `PHOTO-20/event-announcement-r002/H061` No source curls are clipped away in event-announcement-r002.png.
+  Look: Inspect the named output against this requirement and its linked references.
+- `PHOTO-20/event-announcement-r002/H062` The portrait in event-announcement-r002.png retains the hair colour from vellacourt_session_02.jpg.
+  Look: Inspect the named output against this requirement and its linked references.
+- `PHOTO-20/event-announcement-r002/H063` The portrait in event-announcement-r002.png has no added creative colour filter or colour grade.
+  Look: Inspect the named output against this requirement and its linked references.
+- `PHOTO-20/event-announcement-r002/H064` The facial skin texture in event-announcement-r002.png has not been smoothed away.
+  Look: Inspect the named output against this requirement and its linked references.
+- `PHOTO-20/event-announcement-r008/H061` No source curls are clipped away in event-announcement-r008.png.
+  Look: Inspect the named output against this requirement and its linked references.
+- `PHOTO-20/event-announcement-r008/H062` The portrait in event-announcement-r008.png retains the hair colour from vellacourt_session_01.jpg.
+  Look: Inspect the named output against this requirement and its linked references.
+- `PHOTO-20/event-announcement-r008/H063` The portrait in event-announcement-r008.png has no added creative colour filter or colour grade.
+  Look: Inspect the named output against this requirement and its linked references.
+- `PHOTO-20/event-announcement-r008/H064` The facial skin texture in event-announcement-r008.png has not been smoothed away.
+  Look: Inspect the named output against this requirement and its linked references.
+- `PHOTO-20/event-banner-r002/H058` No source curls are clipped away in event-banner-r002.png.
+  Look: Inspect the named output against this requirement and its linked references.
+- `PHOTO-20/event-banner-r002/H059` The portrait in event-banner-r002.png retains the hair colour from vellacourt_session_02.jpg.
+  Look: Inspect the named output against this requirement and its linked references.
+- `PHOTO-20/event-banner-r002/H060` The portrait in event-banner-r002.png has no added creative colour filter or colour grade.
+  Look: Inspect the named output against this requirement and its linked references.
+- `PHOTO-20/event-banner-r002/H061` The facial skin texture in event-banner-r002.png has not been smoothed away.
+  Look: Inspect the named output against this requirement and its linked references.
+- `PHOTO-20/talk-card-r003/H058` No source curls are clipped away in talk-card-r003.pdf.
+  Look: Inspect the named output against this requirement and its linked references.
+- `PHOTO-20/talk-card-r003/H059` The portrait in talk-card-r003.pdf retains the hair colour from vellacourt_session_05.jpg.
+  Look: Inspect the named output against this requirement and its linked references.
+- `PHOTO-20/talk-card-r003/H060` The portrait in talk-card-r003.pdf has no added creative colour filter or colour grade.
+  Look: Inspect the named output against this requirement and its linked references.
+- `PHOTO-20/talk-card-r003/H061` The facial skin texture in talk-card-r003.pdf has not been smoothed away.
+  Look: Inspect the named output against this requirement and its linked references.
+- `PHOTO-20/talk-card-r004/H058` No source curls are clipped away in talk-card-r004.pdf.
+  Look: Inspect the named output against this requirement and its linked references.
+- `PHOTO-20/talk-card-r004/H059` The portrait in talk-card-r004.pdf retains the hair colour from vellacourt_session_04.jpg.
+  Look: Inspect the named output against this requirement and its linked references.
+- `PHOTO-20/talk-card-r004/H060` The portrait in talk-card-r004.pdf has no added creative colour filter or colour grade.
+  Look: Inspect the named output against this requirement and its linked references.
+- `PHOTO-20/talk-card-r004/H061` The facial skin texture in talk-card-r004.pdf has not been smoothed away.
+  Look: Inspect the named output against this requirement and its linked references.
+- `PHOTO-20/talk-card-r005/H058` No source curls are clipped away in talk-card-r005.pdf.
+  Look: Inspect the named output against this requirement and its linked references.
+- `PHOTO-20/talk-card-r005/H059` The portrait in talk-card-r005.pdf retains the hair colour from vellacourt_session_04.jpg.
+  Look: Inspect the named output against this requirement and its linked references.
+- `PHOTO-20/talk-card-r005/H060` The portrait in talk-card-r005.pdf has no added creative colour filter or colour grade.
+  Look: Inspect the named output against this requirement and its linked references.
+- `PHOTO-20/talk-card-r005/H061` The facial skin texture in talk-card-r005.pdf has not been smoothed away.
+  Look: Inspect the named output against this requirement and its linked references.
+- `PHOTO-20/talk-card-r007/H057` No source curls are clipped away in talk-card-r007.pdf.
+  Look: Inspect the named output against this requirement and its linked references.
+- `PHOTO-20/talk-card-r008/H058` No source curls are clipped away in talk-card-r008.pdf.
+  Look: Inspect the named output against this requirement and its linked references.
+- `PHOTO-20/talk-card-r008/H059` The portrait in talk-card-r008.pdf retains the hair colour from vellacourt_session_01.jpg.
+  Look: Inspect the named output against this requirement and its linked references.
+- `PHOTO-20/talk-card-r008/H060` The portrait in talk-card-r008.pdf has no added creative colour filter or colour grade.
+  Look: Inspect the named output against this requirement and its linked references.
+- `PHOTO-20/talk-card-r008/H061` The facial skin texture in talk-card-r008.pdf has not been smoothed away.
+  Look: Inspect the named output against this requirement and its linked references.
+- `PHOTO-20/talk-card-r009/H059` No source curls are clipped away in talk-card-r009.pdf.
+  Look: Inspect the named output against this requirement and its linked references.
+- `PHOTO-20/talk-card-r009/H060` The portrait in talk-card-r009.pdf retains the hair colour from vellacourt_session_09.jpg.
+  Look: Inspect the named output against this requirement and its linked references.
+- `PHOTO-20/talk-card-r009/H061` The portrait in talk-card-r009.pdf has no added creative colour filter or colour grade.
+  Look: Inspect the named output against this requirement and its linked references.
+- `PHOTO-20/talk-card-r009/H062` The facial skin texture in talk-card-r009.pdf has not been smoothed away.
+  Look: Inspect the named output against this requirement and its linked references.
+- `PHOTO-20/event-announcement-r003/H061` No source curls are clipped away in event-announcement-r003.png.
+  Look: Inspect the named output against this requirement and its linked references.
+- `PHOTO-20/event-announcement-r003/H062` The portrait in event-announcement-r003.png retains the hair colour from vellacourt_session_05.jpg.
+  Look: Inspect the named output against this requirement and its linked references.
+- `PHOTO-20/event-announcement-r003/H063` The portrait in event-announcement-r003.png has no added creative colour filter or colour grade.
+  Look: Inspect the named output against this requirement and its linked references.
+- `PHOTO-20/event-announcement-r003/H064` The facial skin texture in event-announcement-r003.png has not been smoothed away.
+  Look: Inspect the named output against this requirement and its linked references.
+- `PHOTO-20/talk-card-r006/H059` No source curls are clipped away in talk-card-r006.pdf.
+  Look: Inspect the named output against this requirement and its linked references.
+- `PHOTO-20/talk-card-r006/H060` The portrait in talk-card-r006.pdf retains the hair colour from vellacourt_session_08.jpg.
+  Look: Inspect the named output against this requirement and its linked references.
+- `PHOTO-20/talk-card-r006/H061` The portrait in talk-card-r006.pdf has no added creative colour filter or colour grade.
+  Look: Inspect the named output against this requirement and its linked references.
+- `PHOTO-20/talk-card-r006/H062` The facial skin texture in talk-card-r006.pdf has not been smoothed away.
+  Look: Inspect the named output against this requirement and its linked references.
+- `PHOTO-20/event-banner-r003/H058` No source curls are clipped away in event-banner-r003.png.
+  Look: Inspect the named output against this requirement and its linked references.
+- `PHOTO-20/event-banner-r003/H059` The portrait in event-banner-r003.png retains the hair colour from vellacourt_session_05.jpg.
+  Look: Inspect the named output against this requirement and its linked references.
+- `PHOTO-20/event-banner-r003/H060` The portrait in event-banner-r003.png has no added creative colour filter or colour grade.
+  Look: Inspect the named output against this requirement and its linked references.
+- `PHOTO-20/event-banner-r003/H061` The facial skin texture in event-banner-r003.png has not been smoothed away.
+  Look: Inspect the named output against this requirement and its linked references.
+- `PHOTO-20/event-banner-r008/H058` No source curls are clipped away in event-banner-r008.png.
+  Look: Inspect the named output against this requirement and its linked references.
+- `PHOTO-20/event-banner-r008/H059` The portrait in event-banner-r008.png retains the hair colour from vellacourt_session_01.jpg.
+  Look: Inspect the named output against this requirement and its linked references.
+- `PHOTO-20/event-banner-r008/H060` The portrait in event-banner-r008.png has no added creative colour filter or colour grade.
+  Look: Inspect the named output against this requirement and its linked references.
+- `PHOTO-20/event-banner-r008/H061` The facial skin texture in event-banner-r008.png has not been smoothed away.
+  Look: Inspect the named output against this requirement and its linked references.
+- `PHOTO-20/speaker-onepager/H059` No source curls are clipped away in speaker-onepager.pdf.
+  Look: Inspect the named output against this requirement and its linked references.
+- `PHOTO-20/speaker-onepager/H060` The portrait in speaker-onepager.pdf retains the hair colour from its source photograph.
+  Look: Inspect the named output against this requirement and its linked references.
+- `PHOTO-20/speaker-onepager/H061` The portrait in speaker-onepager.pdf has no added creative colour filter or colour grade.
+  Look: Inspect the named output against this requirement and its linked references.
+- `PHOTO-20/speaker-onepager/H062` The facial skin texture in speaker-onepager.pdf has not been smoothed away.
+  Look: Inspect the named output against this requirement and its linked references.
+- `PHOTO-20/talk-card-r002/H059` No source curls are clipped away in talk-card-r002.pdf.
+  Look: Inspect the named output against this requirement and its linked references.
+- `PHOTO-20/talk-card-r002/H060` The portrait in talk-card-r002.pdf retains the hair colour from vellacourt_session_02.jpg.
+  Look: Inspect the named output against this requirement and its linked references.
+- `PHOTO-20/talk-card-r002/H061` The portrait in talk-card-r002.pdf has no added creative colour filter or colour grade.
+  Look: Inspect the named output against this requirement and its linked references.
+- `PHOTO-20/talk-card-r002/H062` The facial skin texture in talk-card-r002.pdf has not been smoothed away.
+  Look: Inspect the named output against this requirement and its linked references.
+- `PHOTO-20/talk-card-r007/H058` If talk-card-r007.pdf carries a portrait, it retains the hair colour from its source photograph.
+  Look: Inspect the named output against this requirement and its linked references.
+- `PHOTO-20/talk-card-r007/H059` If talk-card-r007.pdf carries a portrait, it has no added creative colour filter or colour grade.
+  Look: Inspect the named output against this requirement and its linked references.
+- `PHOTO-20/talk-card-r007/H060` If talk-card-r007.pdf carries a portrait, its facial skin texture has not been smoothed away.
+  Look: Inspect the named output against this requirement and its linked references.

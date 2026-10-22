@@ -1972,7 +1972,21 @@
   "origin": "review_feedback_2026_09_25",
   "revision": "pilot13_c_2026_10_22",
   "method": "measure",
-  "method_note": "Eyedropper the ground beside the head in three places; answer No if any HSB brightness is clearly under 87% or over 95%, or clearly coloured."
+  "method_note": "Sample the flat ground beside the left shoulder, beside the right shoulder and above the head. Each sample must be within 5 in every RGB channel of one blend between Fog Grey (217,221,222) and Warm Paper (242,238,231). Use the neutral-range calculator in the measurement guide; all three samples must pass. Do not sample hair or anti-aliased edges.",
+  "measurement": {
+   "kind": "neutral_range",
+   "from_rgb": [
+    217,
+    221,
+    222
+   ],
+   "to_rgb": [
+    242,
+    238,
+    231
+   ],
+   "channel_tolerance": 5
+  }
  },
  {
   "task_id": "PHOTO-19",
@@ -2124,7 +2138,7 @@
   "check_id": "PHOTO-19/speaker-card-r007/H018",
   "type": "human",
   "output_reference": "deliverables/speaker-card-r007.png",
-  "check": "The portrait on “Summit speaker card - Colm Byrne” (speaker-card-r007.png) shows no hard direct-flash look: no hard flash shadow behind the head and no flat shine across the face.",
+  "check": "No portrait in speaker-card-r007.png has a hard flash shadow behind the head.",
   "answer_type": "yes_no",
   "allowed_answers": [
    "Yes",
@@ -2137,8 +2151,8 @@
   "evidence_reference": "Palette rules, photography: no flat, hard direct-flash look. summit_brand_notes.txt: not a free meetup (no flat hard direct flash).",
   "artifact_name": "Summit speaker card - Colm Byrne",
   "artifact_file": "speaker-card-r007.png",
-  "requirement": "The portrait on “Summit speaker card - Colm Byrne” (speaker-card-r007.png) shows no hard direct-flash look: no hard flash shadow behind the head and no flat shine across the face.",
-  "pass_condition": "The portrait on “Summit speaker card - Colm Byrne” (speaker-card-r007.png) shows no hard direct-flash look: no hard flash shadow behind the head and no flat shine across the face.",
+  "requirement": "No portrait in speaker-card-r007.png has a hard flash shadow behind the head.",
+  "pass_condition": "No portrait in speaker-card-r007.png has a hard flash shadow behind the head.",
   "reference_assets": [
    {
     "filename": "summit_brand_notes.txt",
@@ -2148,9 +2162,10 @@
   "k_id": "K2_Q3",
   "k_label": "Brand-system compliance",
   "origin": "review_feedback_2026_09_25",
-  "revision": "pilot13_ab_2026_10_21",
+  "revision": "pilot13_verifier_lock_2026_10_22",
   "method": "look",
-  "method_note": "Inspect the named output against this requirement and its linked references."
+  "method_note": "Inspect the named output against this requirement and its linked references.",
+  "split_from": "PHOTO-19/speaker-card-r007/H018"
  },
  {
   "task_id": "PHOTO-19",
@@ -2725,7 +2740,21 @@
   "origin": "review_feedback_2026_09_25",
   "revision": "pilot13_c_2026_10_22",
   "method": "measure",
-  "method_note": "Eyedropper the ground beside the head in three places; answer No if any HSB brightness is clearly under 87% or over 95%, or clearly coloured."
+  "method_note": "Sample the flat ground beside the left shoulder, beside the right shoulder and above the head. Each sample must be within 5 in every RGB channel of one blend between Fog Grey (217,221,222) and Warm Paper (242,238,231). Use the neutral-range calculator in the measurement guide; all three samples must pass. Do not sample hair or anti-aliased edges.",
+  "measurement": {
+   "kind": "neutral_range",
+   "from_rgb": [
+    217,
+    221,
+    222
+   ],
+   "to_rgb": [
+    242,
+    238,
+    231
+   ],
+   "channel_tolerance": 5
+  }
  },
  {
   "task_id": "PHOTO-19",
@@ -2877,7 +2906,7 @@
   "check_id": "PHOTO-19/speaker-card-r008/H018",
   "type": "human",
   "output_reference": "deliverables/speaker-card-r008.png",
-  "check": "The portrait on “Summit speaker card - Dana Whitfield” (speaker-card-r008.png) shows no hard direct-flash look: no hard flash shadow behind the head and no flat shine across the face.",
+  "check": "No portrait in speaker-card-r008.png has a hard flash shadow behind the head.",
   "answer_type": "yes_no",
   "allowed_answers": [
    "Yes",
@@ -2890,8 +2919,8 @@
   "evidence_reference": "Palette rules, photography: no flat, hard direct-flash look. summit_brand_notes.txt: not a free meetup (no flat hard direct flash).",
   "artifact_name": "Summit speaker card - Dana Whitfield",
   "artifact_file": "speaker-card-r008.png",
-  "requirement": "The portrait on “Summit speaker card - Dana Whitfield” (speaker-card-r008.png) shows no hard direct-flash look: no hard flash shadow behind the head and no flat shine across the face.",
-  "pass_condition": "The portrait on “Summit speaker card - Dana Whitfield” (speaker-card-r008.png) shows no hard direct-flash look: no hard flash shadow behind the head and no flat shine across the face.",
+  "requirement": "No portrait in speaker-card-r008.png has a hard flash shadow behind the head.",
+  "pass_condition": "No portrait in speaker-card-r008.png has a hard flash shadow behind the head.",
   "reference_assets": [
    {
     "filename": "summit_brand_notes.txt",
@@ -2901,9 +2930,10 @@
   "k_id": "K2_Q3",
   "k_label": "Brand-system compliance",
   "origin": "review_feedback_2026_09_25",
-  "revision": "pilot13_ab_2026_10_21",
+  "revision": "pilot13_verifier_lock_2026_10_22",
   "method": "look",
-  "method_note": "Inspect the named output against this requirement and its linked references."
+  "method_note": "Inspect the named output against this requirement and its linked references.",
+  "split_from": "PHOTO-19/speaker-card-r008/H018"
  },
  {
   "task_id": "PHOTO-19",
@@ -3478,7 +3508,21 @@
   "origin": "review_feedback_2026_09_25",
   "revision": "pilot13_c_2026_10_22",
   "method": "measure",
-  "method_note": "Eyedropper the ground beside the head in three places; answer No if any HSB brightness is clearly under 87% or over 95%, or clearly coloured."
+  "method_note": "Sample the flat ground beside the left shoulder, beside the right shoulder and above the head. Each sample must be within 5 in every RGB channel of one blend between Fog Grey (217,221,222) and Warm Paper (242,238,231). Use the neutral-range calculator in the measurement guide; all three samples must pass. Do not sample hair or anti-aliased edges.",
+  "measurement": {
+   "kind": "neutral_range",
+   "from_rgb": [
+    217,
+    221,
+    222
+   ],
+   "to_rgb": [
+    242,
+    238,
+    231
+   ],
+   "channel_tolerance": 5
+  }
  },
  {
   "task_id": "PHOTO-19",
@@ -3630,7 +3674,7 @@
   "check_id": "PHOTO-19/speaker-card-r009/H018",
   "type": "human",
   "output_reference": "deliverables/speaker-card-r009.png",
-  "check": "The portrait on “Summit speaker card - Estelle Rioux” (speaker-card-r009.png) shows no hard direct-flash look: no hard flash shadow behind the head and no flat shine across the face.",
+  "check": "No portrait in speaker-card-r009.png has a hard flash shadow behind the head.",
   "answer_type": "yes_no",
   "allowed_answers": [
    "Yes",
@@ -3643,8 +3687,8 @@
   "evidence_reference": "Palette rules, photography: no flat, hard direct-flash look. summit_brand_notes.txt: not a free meetup (no flat hard direct flash).",
   "artifact_name": "Summit speaker card - Estelle Rioux",
   "artifact_file": "speaker-card-r009.png",
-  "requirement": "The portrait on “Summit speaker card - Estelle Rioux” (speaker-card-r009.png) shows no hard direct-flash look: no hard flash shadow behind the head and no flat shine across the face.",
-  "pass_condition": "The portrait on “Summit speaker card - Estelle Rioux” (speaker-card-r009.png) shows no hard direct-flash look: no hard flash shadow behind the head and no flat shine across the face.",
+  "requirement": "No portrait in speaker-card-r009.png has a hard flash shadow behind the head.",
+  "pass_condition": "No portrait in speaker-card-r009.png has a hard flash shadow behind the head.",
   "reference_assets": [
    {
     "filename": "summit_brand_notes.txt",
@@ -3654,9 +3698,10 @@
   "k_id": "K2_Q3",
   "k_label": "Brand-system compliance",
   "origin": "review_feedback_2026_09_25",
-  "revision": "pilot13_ab_2026_10_21",
+  "revision": "pilot13_verifier_lock_2026_10_22",
   "method": "look",
-  "method_note": "Inspect the named output against this requirement and its linked references."
+  "method_note": "Inspect the named output against this requirement and its linked references.",
+  "split_from": "PHOTO-19/speaker-card-r009/H018"
  },
  {
   "task_id": "PHOTO-19",
@@ -4231,7 +4276,21 @@
   "origin": "review_feedback_2026_09_25",
   "revision": "pilot13_c_2026_10_22",
   "method": "measure",
-  "method_note": "Eyedropper the ground beside the head in three places; answer No if any HSB brightness is clearly under 87% or over 95%, or clearly coloured."
+  "method_note": "Sample the flat ground beside the left shoulder, beside the right shoulder and above the head. Each sample must be within 5 in every RGB channel of one blend between Fog Grey (217,221,222) and Warm Paper (242,238,231). Use the neutral-range calculator in the measurement guide; all three samples must pass. Do not sample hair or anti-aliased edges.",
+  "measurement": {
+   "kind": "neutral_range",
+   "from_rgb": [
+    217,
+    221,
+    222
+   ],
+   "to_rgb": [
+    242,
+    238,
+    231
+   ],
+   "channel_tolerance": 5
+  }
  },
  {
   "task_id": "PHOTO-19",
@@ -4417,7 +4476,7 @@
   "check_id": "PHOTO-19/speaker-card-r010/H019",
   "type": "human",
   "output_reference": "deliverables/speaker-card-r010.png",
-  "check": "The portrait on “Summit speaker card - Grant Mackey” (speaker-card-r010.png) shows no hard direct-flash look: no hard flash shadow behind the head and no flat shine across the face.",
+  "check": "No portrait in speaker-card-r010.png has a hard flash shadow behind the head.",
   "answer_type": "yes_no",
   "allowed_answers": [
    "Yes",
@@ -4430,8 +4489,8 @@
   "evidence_reference": "Palette rules, photography: no flat, hard direct-flash look. summit_brand_notes.txt: not a free meetup (no flat hard direct flash).",
   "artifact_name": "Summit speaker card - Grant Mackey",
   "artifact_file": "speaker-card-r010.png",
-  "requirement": "The portrait on “Summit speaker card - Grant Mackey” (speaker-card-r010.png) shows no hard direct-flash look: no hard flash shadow behind the head and no flat shine across the face.",
-  "pass_condition": "The portrait on “Summit speaker card - Grant Mackey” (speaker-card-r010.png) shows no hard direct-flash look: no hard flash shadow behind the head and no flat shine across the face.",
+  "requirement": "No portrait in speaker-card-r010.png has a hard flash shadow behind the head.",
+  "pass_condition": "No portrait in speaker-card-r010.png has a hard flash shadow behind the head.",
   "reference_assets": [
    {
     "filename": "summit_brand_notes.txt",
@@ -4441,9 +4500,10 @@
   "k_id": "K2_Q3",
   "k_label": "Brand-system compliance",
   "origin": "review_feedback_2026_09_25",
-  "revision": "pilot13_ab_2026_10_21",
+  "revision": "pilot13_verifier_lock_2026_10_22",
   "method": "look",
-  "method_note": "Inspect the named output against this requirement and its linked references."
+  "method_note": "Inspect the named output against this requirement and its linked references.",
+  "split_from": "PHOTO-19/speaker-card-r010/H019"
  },
  {
   "task_id": "PHOTO-19",
@@ -5018,7 +5078,21 @@
   "origin": "review_feedback_2026_09_25",
   "revision": "pilot13_c_2026_10_22",
   "method": "measure",
-  "method_note": "Eyedropper the ground beside the head in three places; answer No if any HSB brightness is clearly under 87% or over 95%, or clearly coloured."
+  "method_note": "Sample the flat ground beside the left shoulder, beside the right shoulder and above the head. Each sample must be within 5 in every RGB channel of one blend between Fog Grey (217,221,222) and Warm Paper (242,238,231). Use the neutral-range calculator in the measurement guide; all three samples must pass. Do not sample hair or anti-aliased edges.",
+  "measurement": {
+   "kind": "neutral_range",
+   "from_rgb": [
+    217,
+    221,
+    222
+   ],
+   "to_rgb": [
+    242,
+    238,
+    231
+   ],
+   "channel_tolerance": 5
+  }
  },
  {
   "task_id": "PHOTO-19",
@@ -5170,7 +5244,7 @@
   "check_id": "PHOTO-19/speaker-card-r011/H018",
   "type": "human",
   "output_reference": "deliverables/speaker-card-r011.png",
-  "check": "The portrait on “Summit speaker card - Sofia Bellini” (speaker-card-r011.png) shows no hard direct-flash look: no hard flash shadow behind the head and no flat shine across the face.",
+  "check": "No portrait in speaker-card-r011.png has a hard flash shadow behind the head.",
   "answer_type": "yes_no",
   "allowed_answers": [
    "Yes",
@@ -5183,8 +5257,8 @@
   "evidence_reference": "Palette rules, photography: no flat, hard direct-flash look. summit_brand_notes.txt: not a free meetup (no flat hard direct flash).",
   "artifact_name": "Summit speaker card - Sofia Bellini",
   "artifact_file": "speaker-card-r011.png",
-  "requirement": "The portrait on “Summit speaker card - Sofia Bellini” (speaker-card-r011.png) shows no hard direct-flash look: no hard flash shadow behind the head and no flat shine across the face.",
-  "pass_condition": "The portrait on “Summit speaker card - Sofia Bellini” (speaker-card-r011.png) shows no hard direct-flash look: no hard flash shadow behind the head and no flat shine across the face.",
+  "requirement": "No portrait in speaker-card-r011.png has a hard flash shadow behind the head.",
+  "pass_condition": "No portrait in speaker-card-r011.png has a hard flash shadow behind the head.",
   "reference_assets": [
    {
     "filename": "summit_brand_notes.txt",
@@ -5194,9 +5268,10 @@
   "k_id": "K2_Q3",
   "k_label": "Brand-system compliance",
   "origin": "review_feedback_2026_09_25",
-  "revision": "pilot13_ab_2026_10_21",
+  "revision": "pilot13_verifier_lock_2026_10_22",
   "method": "look",
-  "method_note": "Inspect the named output against this requirement and its linked references."
+  "method_note": "Inspect the named output against this requirement and its linked references.",
+  "split_from": "PHOTO-19/speaker-card-r011/H018"
  },
  {
   "task_id": "PHOTO-19",
@@ -5771,7 +5846,21 @@
   "origin": "review_feedback_2026_09_25",
   "revision": "pilot13_c_2026_10_22",
   "method": "measure",
-  "method_note": "Eyedropper the ground beside the head in three places; answer No if any HSB brightness is clearly under 87% or over 95%, or clearly coloured."
+  "method_note": "Sample the flat ground beside the left shoulder, beside the right shoulder and above the head. Each sample must be within 5 in every RGB channel of one blend between Fog Grey (217,221,222) and Warm Paper (242,238,231). Use the neutral-range calculator in the measurement guide; all three samples must pass. Do not sample hair or anti-aliased edges.",
+  "measurement": {
+   "kind": "neutral_range",
+   "from_rgb": [
+    217,
+    221,
+    222
+   ],
+   "to_rgb": [
+    242,
+    238,
+    231
+   ],
+   "channel_tolerance": 5
+  }
  },
  {
   "task_id": "PHOTO-19",
@@ -5923,7 +6012,7 @@
   "check_id": "PHOTO-19/speaker-card-r013/H018",
   "type": "human",
   "output_reference": "deliverables/speaker-card-r013.png",
-  "check": "The portrait on “Summit speaker card - Nils Haugen” (speaker-card-r013.png) shows no hard direct-flash look: no hard flash shadow behind the head and no flat shine across the face.",
+  "check": "No portrait in speaker-card-r013.png has a hard flash shadow behind the head.",
   "answer_type": "yes_no",
   "allowed_answers": [
    "Yes",
@@ -5936,8 +6025,8 @@
   "evidence_reference": "Palette rules, photography: no flat, hard direct-flash look. summit_brand_notes.txt: not a free meetup (no flat hard direct flash).",
   "artifact_name": "Summit speaker card - Nils Haugen",
   "artifact_file": "speaker-card-r013.png",
-  "requirement": "The portrait on “Summit speaker card - Nils Haugen” (speaker-card-r013.png) shows no hard direct-flash look: no hard flash shadow behind the head and no flat shine across the face.",
-  "pass_condition": "The portrait on “Summit speaker card - Nils Haugen” (speaker-card-r013.png) shows no hard direct-flash look: no hard flash shadow behind the head and no flat shine across the face.",
+  "requirement": "No portrait in speaker-card-r013.png has a hard flash shadow behind the head.",
+  "pass_condition": "No portrait in speaker-card-r013.png has a hard flash shadow behind the head.",
   "reference_assets": [
    {
     "filename": "summit_brand_notes.txt",
@@ -5947,9 +6036,10 @@
   "k_id": "K2_Q3",
   "k_label": "Brand-system compliance",
   "origin": "review_feedback_2026_09_25",
-  "revision": "pilot13_ab_2026_10_21",
+  "revision": "pilot13_verifier_lock_2026_10_22",
   "method": "look",
-  "method_note": "Inspect the named output against this requirement and its linked references."
+  "method_note": "Inspect the named output against this requirement and its linked references.",
+  "split_from": "PHOTO-19/speaker-card-r013/H018"
  },
  {
   "task_id": "PHOTO-19",
@@ -6524,7 +6614,21 @@
   "origin": "review_feedback_2026_09_25",
   "revision": "pilot13_c_2026_10_22",
   "method": "measure",
-  "method_note": "Eyedropper the ground beside the head in three places; answer No if any HSB brightness is clearly under 87% or over 95%, or clearly coloured."
+  "method_note": "Sample the flat ground beside the left shoulder, beside the right shoulder and above the head. Each sample must be within 5 in every RGB channel of one blend between Fog Grey (217,221,222) and Warm Paper (242,238,231). Use the neutral-range calculator in the measurement guide; all three samples must pass. Do not sample hair or anti-aliased edges.",
+  "measurement": {
+   "kind": "neutral_range",
+   "from_rgb": [
+    217,
+    221,
+    222
+   ],
+   "to_rgb": [
+    242,
+    238,
+    231
+   ],
+   "channel_tolerance": 5
+  }
  },
  {
   "task_id": "PHOTO-19",
@@ -6676,7 +6780,7 @@
   "check_id": "PHOTO-19/speaker-card-r014/H018",
   "type": "human",
   "output_reference": "deliverables/speaker-card-r014.png",
-  "check": "The portrait on “Summit speaker card - Robin Tate” (speaker-card-r014.png) shows no hard direct-flash look: no hard flash shadow behind the head and no flat shine across the face.",
+  "check": "No portrait in speaker-card-r014.png has a hard flash shadow behind the head.",
   "answer_type": "yes_no",
   "allowed_answers": [
    "Yes",
@@ -6689,8 +6793,8 @@
   "evidence_reference": "Palette rules, photography: no flat, hard direct-flash look. summit_brand_notes.txt: not a free meetup (no flat hard direct flash).",
   "artifact_name": "Summit speaker card - Robin Tate",
   "artifact_file": "speaker-card-r014.png",
-  "requirement": "The portrait on “Summit speaker card - Robin Tate” (speaker-card-r014.png) shows no hard direct-flash look: no hard flash shadow behind the head and no flat shine across the face.",
-  "pass_condition": "The portrait on “Summit speaker card - Robin Tate” (speaker-card-r014.png) shows no hard direct-flash look: no hard flash shadow behind the head and no flat shine across the face.",
+  "requirement": "No portrait in speaker-card-r014.png has a hard flash shadow behind the head.",
+  "pass_condition": "No portrait in speaker-card-r014.png has a hard flash shadow behind the head.",
   "reference_assets": [
    {
     "filename": "summit_brand_notes.txt",
@@ -6700,9 +6804,10 @@
   "k_id": "K2_Q3",
   "k_label": "Brand-system compliance",
   "origin": "review_feedback_2026_09_25",
-  "revision": "pilot13_ab_2026_10_21",
+  "revision": "pilot13_verifier_lock_2026_10_22",
   "method": "look",
-  "method_note": "Inspect the named output against this requirement and its linked references."
+  "method_note": "Inspect the named output against this requirement and its linked references.",
+  "split_from": "PHOTO-19/speaker-card-r014/H018"
  },
  {
   "task_id": "PHOTO-19",
@@ -7277,7 +7382,21 @@
   "origin": "review_feedback_2026_09_25",
   "revision": "pilot13_c_2026_10_22",
   "method": "measure",
-  "method_note": "Eyedropper the ground beside the head in three places; answer No if any HSB brightness is clearly under 87% or over 95%, or clearly coloured."
+  "method_note": "Sample the flat ground beside the left shoulder, beside the right shoulder and above the head. Each sample must be within 5 in every RGB channel of one blend between Fog Grey (217,221,222) and Warm Paper (242,238,231). Use the neutral-range calculator in the measurement guide; all three samples must pass. Do not sample hair or anti-aliased edges.",
+  "measurement": {
+   "kind": "neutral_range",
+   "from_rgb": [
+    217,
+    221,
+    222
+   ],
+   "to_rgb": [
+    242,
+    238,
+    231
+   ],
+   "channel_tolerance": 5
+  }
  },
  {
   "task_id": "PHOTO-19",
@@ -7429,7 +7548,7 @@
   "check_id": "PHOTO-19/speaker-card-r015/H018",
   "type": "human",
   "output_reference": "deliverables/speaker-card-r015.png",
-  "check": "The portrait on “Summit speaker card - Bernadette Cruz” (speaker-card-r015.png) shows no hard direct-flash look: no hard flash shadow behind the head and no flat shine across the face.",
+  "check": "No portrait in speaker-card-r015.png has a hard flash shadow behind the head.",
   "answer_type": "yes_no",
   "allowed_answers": [
    "Yes",
@@ -7442,8 +7561,8 @@
   "evidence_reference": "Palette rules, photography: no flat, hard direct-flash look. summit_brand_notes.txt: not a free meetup (no flat hard direct flash).",
   "artifact_name": "Summit speaker card - Bernadette Cruz",
   "artifact_file": "speaker-card-r015.png",
-  "requirement": "The portrait on “Summit speaker card - Bernadette Cruz” (speaker-card-r015.png) shows no hard direct-flash look: no hard flash shadow behind the head and no flat shine across the face.",
-  "pass_condition": "The portrait on “Summit speaker card - Bernadette Cruz” (speaker-card-r015.png) shows no hard direct-flash look: no hard flash shadow behind the head and no flat shine across the face.",
+  "requirement": "No portrait in speaker-card-r015.png has a hard flash shadow behind the head.",
+  "pass_condition": "No portrait in speaker-card-r015.png has a hard flash shadow behind the head.",
   "reference_assets": [
    {
     "filename": "summit_brand_notes.txt",
@@ -7453,9 +7572,10 @@
   "k_id": "K2_Q3",
   "k_label": "Brand-system compliance",
   "origin": "review_feedback_2026_09_25",
-  "revision": "pilot13_ab_2026_10_21",
+  "revision": "pilot13_verifier_lock_2026_10_22",
   "method": "look",
-  "method_note": "Inspect the named output against this requirement and its linked references."
+  "method_note": "Inspect the named output against this requirement and its linked references.",
+  "split_from": "PHOTO-19/speaker-card-r015/H018"
  },
  {
   "task_id": "PHOTO-19",
@@ -8030,7 +8150,21 @@
   "origin": "review_feedback_2026_09_25",
   "revision": "pilot13_c_2026_10_22",
   "method": "measure",
-  "method_note": "Eyedropper the ground beside the head in three places; answer No if any HSB brightness is clearly under 87% or over 95%, or clearly coloured."
+  "method_note": "Sample the flat ground beside the left shoulder, beside the right shoulder and above the head. Each sample must be within 5 in every RGB channel of one blend between Fog Grey (217,221,222) and Warm Paper (242,238,231). Use the neutral-range calculator in the measurement guide; all three samples must pass. Do not sample hair or anti-aliased edges.",
+  "measurement": {
+   "kind": "neutral_range",
+   "from_rgb": [
+    217,
+    221,
+    222
+   ],
+   "to_rgb": [
+    242,
+    238,
+    231
+   ],
+   "channel_tolerance": 5
+  }
  },
  {
   "task_id": "PHOTO-19",
@@ -8182,7 +8316,7 @@
   "check_id": "PHOTO-19/speaker-card-r016/H018",
   "type": "human",
   "output_reference": "deliverables/speaker-card-r016.png",
-  "check": "The portrait on “Summit speaker card - Hugo Almeida” (speaker-card-r016.png) shows no hard direct-flash look: no hard flash shadow behind the head and no flat shine across the face.",
+  "check": "No portrait in speaker-card-r016.png has a hard flash shadow behind the head.",
   "answer_type": "yes_no",
   "allowed_answers": [
    "Yes",
@@ -8195,8 +8329,8 @@
   "evidence_reference": "Palette rules, photography: no flat, hard direct-flash look. summit_brand_notes.txt: not a free meetup (no flat hard direct flash).",
   "artifact_name": "Summit speaker card - Hugo Almeida",
   "artifact_file": "speaker-card-r016.png",
-  "requirement": "The portrait on “Summit speaker card - Hugo Almeida” (speaker-card-r016.png) shows no hard direct-flash look: no hard flash shadow behind the head and no flat shine across the face.",
-  "pass_condition": "The portrait on “Summit speaker card - Hugo Almeida” (speaker-card-r016.png) shows no hard direct-flash look: no hard flash shadow behind the head and no flat shine across the face.",
+  "requirement": "No portrait in speaker-card-r016.png has a hard flash shadow behind the head.",
+  "pass_condition": "No portrait in speaker-card-r016.png has a hard flash shadow behind the head.",
   "reference_assets": [
    {
     "filename": "summit_brand_notes.txt",
@@ -8206,9 +8340,10 @@
   "k_id": "K2_Q3",
   "k_label": "Brand-system compliance",
   "origin": "review_feedback_2026_09_25",
-  "revision": "pilot13_ab_2026_10_21",
+  "revision": "pilot13_verifier_lock_2026_10_22",
   "method": "look",
-  "method_note": "Inspect the named output against this requirement and its linked references."
+  "method_note": "Inspect the named output against this requirement and its linked references.",
+  "split_from": "PHOTO-19/speaker-card-r016/H018"
  },
  {
   "task_id": "PHOTO-19",
@@ -8783,7 +8918,21 @@
   "origin": "review_feedback_2026_09_25",
   "revision": "pilot13_c_2026_10_22",
   "method": "measure",
-  "method_note": "Eyedropper the ground beside the head in three places; answer No if any HSB brightness is clearly under 87% or over 95%, or clearly coloured."
+  "method_note": "Sample the flat ground beside the left shoulder, beside the right shoulder and above the head. Each sample must be within 5 in every RGB channel of one blend between Fog Grey (217,221,222) and Warm Paper (242,238,231). Use the neutral-range calculator in the measurement guide; all three samples must pass. Do not sample hair or anti-aliased edges.",
+  "measurement": {
+   "kind": "neutral_range",
+   "from_rgb": [
+    217,
+    221,
+    222
+   ],
+   "to_rgb": [
+    242,
+    238,
+    231
+   ],
+   "channel_tolerance": 5
+  }
  },
  {
   "task_id": "PHOTO-19",
@@ -8935,7 +9084,7 @@
   "check_id": "PHOTO-19/speaker-card-r017/H018",
   "type": "human",
   "output_reference": "deliverables/speaker-card-r017.png",
-  "check": "The portrait on “Summit speaker card - Karin Voss” (speaker-card-r017.png) shows no hard direct-flash look: no hard flash shadow behind the head and no flat shine across the face.",
+  "check": "No portrait in speaker-card-r017.png has a hard flash shadow behind the head.",
   "answer_type": "yes_no",
   "allowed_answers": [
    "Yes",
@@ -8948,8 +9097,8 @@
   "evidence_reference": "Palette rules, photography: no flat, hard direct-flash look. summit_brand_notes.txt: not a free meetup (no flat hard direct flash).",
   "artifact_name": "Summit speaker card - Karin Voss",
   "artifact_file": "speaker-card-r017.png",
-  "requirement": "The portrait on “Summit speaker card - Karin Voss” (speaker-card-r017.png) shows no hard direct-flash look: no hard flash shadow behind the head and no flat shine across the face.",
-  "pass_condition": "The portrait on “Summit speaker card - Karin Voss” (speaker-card-r017.png) shows no hard direct-flash look: no hard flash shadow behind the head and no flat shine across the face.",
+  "requirement": "No portrait in speaker-card-r017.png has a hard flash shadow behind the head.",
+  "pass_condition": "No portrait in speaker-card-r017.png has a hard flash shadow behind the head.",
   "reference_assets": [
    {
     "filename": "summit_brand_notes.txt",
@@ -8959,9 +9108,10 @@
   "k_id": "K2_Q3",
   "k_label": "Brand-system compliance",
   "origin": "review_feedback_2026_09_25",
-  "revision": "pilot13_ab_2026_10_21",
+  "revision": "pilot13_verifier_lock_2026_10_22",
   "method": "look",
-  "method_note": "Inspect the named output against this requirement and its linked references."
+  "method_note": "Inspect the named output against this requirement and its linked references.",
+  "split_from": "PHOTO-19/speaker-card-r017/H018"
  },
  {
   "task_id": "PHOTO-19",
@@ -9886,7 +10036,21 @@
   "origin": "review_feedback_2026_09_25",
   "revision": "pilot13_c_2026_10_22",
   "method": "measure",
-  "method_note": "Eyedropper the ground beside the head in three places; answer No if any HSB brightness is clearly under 87% or over 95%, or clearly coloured."
+  "method_note": "Sample the flat ground beside the left shoulder, beside the right shoulder and above the head. Each sample must be within 5 in every RGB channel of one blend between Fog Grey (217,221,222) and Warm Paper (242,238,231). Use the neutral-range calculator in the measurement guide; all three samples must pass. Do not sample hair or anti-aliased edges.",
+  "measurement": {
+   "kind": "neutral_range",
+   "from_rgb": [
+    217,
+    221,
+    222
+   ],
+   "to_rgb": [
+    242,
+    238,
+    231
+   ],
+   "channel_tolerance": 5
+  }
  },
  {
   "task_id": "PHOTO-19",
@@ -10038,7 +10202,7 @@
   "check_id": "PHOTO-19/speaker-card-r019/H018",
   "type": "human",
   "output_reference": "deliverables/speaker-card-r019.png",
-  "check": "The portrait on “Summit host card - Owen Faraday” (speaker-card-r019.png) shows no hard direct-flash look: no hard flash shadow behind the head and no flat shine across the face.",
+  "check": "No portrait in speaker-card-r019.png has a hard flash shadow behind the head.",
   "answer_type": "yes_no",
   "allowed_answers": [
    "Yes",
@@ -10051,8 +10215,8 @@
   "evidence_reference": "Palette rules, photography: no flat, hard direct-flash look. summit_brand_notes.txt: not a free meetup (no flat hard direct flash).",
   "artifact_name": "Summit host card - Owen Faraday",
   "artifact_file": "speaker-card-r019.png",
-  "requirement": "The portrait on “Summit host card - Owen Faraday” (speaker-card-r019.png) shows no hard direct-flash look: no hard flash shadow behind the head and no flat shine across the face.",
-  "pass_condition": "The portrait on “Summit host card - Owen Faraday” (speaker-card-r019.png) shows no hard direct-flash look: no hard flash shadow behind the head and no flat shine across the face.",
+  "requirement": "No portrait in speaker-card-r019.png has a hard flash shadow behind the head.",
+  "pass_condition": "No portrait in speaker-card-r019.png has a hard flash shadow behind the head.",
   "reference_assets": [
    {
     "filename": "summit_brand_notes.txt",
@@ -10062,9 +10226,10 @@
   "k_id": "K2_Q3",
   "k_label": "Brand-system compliance",
   "origin": "review_feedback_2026_09_25",
-  "revision": "pilot13_ab_2026_10_21",
+  "revision": "pilot13_verifier_lock_2026_10_22",
   "method": "look",
-  "method_note": "Inspect the named output against this requirement and its linked references."
+  "method_note": "Inspect the named output against this requirement and its linked references.",
+  "split_from": "PHOTO-19/speaker-card-r019/H018"
  },
  {
   "task_id": "PHOTO-19",
@@ -10639,7 +10804,21 @@
   "origin": "review_feedback_2026_09_25",
   "revision": "pilot13_c_2026_10_22",
   "method": "measure",
-  "method_note": "Eyedropper the ground beside the head in three places; answer No if any HSB brightness is clearly under 87% or over 95%, or clearly coloured."
+  "method_note": "Sample the flat ground beside the left shoulder, beside the right shoulder and above the head. Each sample must be within 5 in every RGB channel of one blend between Fog Grey (217,221,222) and Warm Paper (242,238,231). Use the neutral-range calculator in the measurement guide; all three samples must pass. Do not sample hair or anti-aliased edges.",
+  "measurement": {
+   "kind": "neutral_range",
+   "from_rgb": [
+    217,
+    221,
+    222
+   ],
+   "to_rgb": [
+    242,
+    238,
+    231
+   ],
+   "channel_tolerance": 5
+  }
  },
  {
   "task_id": "PHOTO-19",
@@ -10791,7 +10970,7 @@
   "check_id": "PHOTO-19/speaker-card-r020/H018",
   "type": "human",
   "output_reference": "deliverables/speaker-card-r020.png",
-  "check": "The portrait on “Summit host card - Mireille Dufort” (speaker-card-r020.png) shows no hard direct-flash look: no hard flash shadow behind the head and no flat shine across the face.",
+  "check": "No portrait in speaker-card-r020.png has a hard flash shadow behind the head.",
   "answer_type": "yes_no",
   "allowed_answers": [
    "Yes",
@@ -10804,8 +10983,8 @@
   "evidence_reference": "Palette rules, photography: no flat, hard direct-flash look. summit_brand_notes.txt: not a free meetup (no flat hard direct flash).",
   "artifact_name": "Summit host card - Mireille Dufort",
   "artifact_file": "speaker-card-r020.png",
-  "requirement": "The portrait on “Summit host card - Mireille Dufort” (speaker-card-r020.png) shows no hard direct-flash look: no hard flash shadow behind the head and no flat shine across the face.",
-  "pass_condition": "The portrait on “Summit host card - Mireille Dufort” (speaker-card-r020.png) shows no hard direct-flash look: no hard flash shadow behind the head and no flat shine across the face.",
+  "requirement": "No portrait in speaker-card-r020.png has a hard flash shadow behind the head.",
+  "pass_condition": "No portrait in speaker-card-r020.png has a hard flash shadow behind the head.",
   "reference_assets": [
    {
     "filename": "summit_brand_notes.txt",
@@ -10815,9 +10994,10 @@
   "k_id": "K2_Q3",
   "k_label": "Brand-system compliance",
   "origin": "review_feedback_2026_09_25",
-  "revision": "pilot13_ab_2026_10_21",
+  "revision": "pilot13_verifier_lock_2026_10_22",
   "method": "look",
-  "method_note": "Inspect the named output against this requirement and its linked references."
+  "method_note": "Inspect the named output against this requirement and its linked references.",
+  "split_from": "PHOTO-19/speaker-card-r020/H018"
  },
  {
   "task_id": "PHOTO-19",
@@ -11392,7 +11572,21 @@
   "origin": "review_feedback_2026_09_25",
   "revision": "pilot13_c_2026_10_22",
   "method": "measure",
-  "method_note": "Eyedropper the ground beside the head in three places; answer No if any HSB brightness is clearly under 87% or over 95%, or clearly coloured."
+  "method_note": "Sample the flat ground beside the left shoulder, beside the right shoulder and above the head. Each sample must be within 5 in every RGB channel of one blend between Fog Grey (217,221,222) and Warm Paper (242,238,231). Use the neutral-range calculator in the measurement guide; all three samples must pass. Do not sample hair or anti-aliased edges.",
+  "measurement": {
+   "kind": "neutral_range",
+   "from_rgb": [
+    217,
+    221,
+    222
+   ],
+   "to_rgb": [
+    242,
+    238,
+    231
+   ],
+   "channel_tolerance": 5
+  }
  },
  {
   "task_id": "PHOTO-19",
@@ -11544,7 +11738,7 @@
   "check_id": "PHOTO-19/speaker-card-r021/H018",
   "type": "human",
   "output_reference": "deliverables/speaker-card-r021.png",
-  "check": "The portrait on “Summit host card - Jonah Pryce” (speaker-card-r021.png) shows no hard direct-flash look: no hard flash shadow behind the head and no flat shine across the face.",
+  "check": "No portrait in speaker-card-r021.png has a hard flash shadow behind the head.",
   "answer_type": "yes_no",
   "allowed_answers": [
    "Yes",
@@ -11557,8 +11751,8 @@
   "evidence_reference": "Palette rules, photography: no flat, hard direct-flash look. summit_brand_notes.txt: not a free meetup (no flat hard direct flash).",
   "artifact_name": "Summit host card - Jonah Pryce",
   "artifact_file": "speaker-card-r021.png",
-  "requirement": "The portrait on “Summit host card - Jonah Pryce” (speaker-card-r021.png) shows no hard direct-flash look: no hard flash shadow behind the head and no flat shine across the face.",
-  "pass_condition": "The portrait on “Summit host card - Jonah Pryce” (speaker-card-r021.png) shows no hard direct-flash look: no hard flash shadow behind the head and no flat shine across the face.",
+  "requirement": "No portrait in speaker-card-r021.png has a hard flash shadow behind the head.",
+  "pass_condition": "No portrait in speaker-card-r021.png has a hard flash shadow behind the head.",
   "reference_assets": [
    {
     "filename": "summit_brand_notes.txt",
@@ -11568,9 +11762,10 @@
   "k_id": "K2_Q3",
   "k_label": "Brand-system compliance",
   "origin": "review_feedback_2026_09_25",
-  "revision": "pilot13_ab_2026_10_21",
+  "revision": "pilot13_verifier_lock_2026_10_22",
   "method": "look",
-  "method_note": "Inspect the named output against this requirement and its linked references."
+  "method_note": "Inspect the named output against this requirement and its linked references.",
+  "split_from": "PHOTO-19/speaker-card-r021/H018"
  },
  {
   "task_id": "PHOTO-19",
@@ -12381,7 +12576,21 @@
   "origin": "review_feedback_2026_09_25",
   "revision": "pilot13_c_2026_10_22",
   "method": "measure",
-  "method_note": "Eyedropper the ground beside the head in three places; answer No if any HSB brightness is clearly under 87% or over 95%, or clearly coloured."
+  "method_note": "Sample the flat ground beside the left shoulder, beside the right shoulder and above the head. Each sample must be within 5 in every RGB channel of one blend between Fog Grey (217,221,222) and Warm Paper (242,238,231). Use the neutral-range calculator in the measurement guide; all three samples must pass. Do not sample hair or anti-aliased edges.",
+  "measurement": {
+   "kind": "neutral_range",
+   "from_rgb": [
+    217,
+    221,
+    222
+   ],
+   "to_rgb": [
+    242,
+    238,
+    231
+   ],
+   "channel_tolerance": 5
+  }
  },
  {
   "task_id": "PHOTO-19",
@@ -12495,7 +12704,7 @@
   "check_id": "PHOTO-19/summit-announcement/H015",
   "type": "human",
   "output_reference": "deliverables/summit-announcement.png",
-  "check": "Any portrait on “Summit announcement” (summit-announcement.png) shows no hard direct-flash look: no hard flash shadow behind the head and no flat shine across the face.",
+  "check": "No portrait in summit-announcement.png has a hard flash shadow behind the head.",
   "answer_type": "yes_no",
   "allowed_answers": [
    "Yes",
@@ -12508,8 +12717,8 @@
   "evidence_reference": "Palette rules, photography: no flat, hard direct-flash look. summit_brand_notes.txt: not a free meetup (no flat hard direct flash).",
   "artifact_name": "Summit announcement",
   "artifact_file": "summit-announcement.png",
-  "requirement": "Any portrait on “Summit announcement” (summit-announcement.png) shows no hard direct-flash look: no hard flash shadow behind the head and no flat shine across the face.",
-  "pass_condition": "Any portrait on “Summit announcement” (summit-announcement.png) shows no hard direct-flash look: no hard flash shadow behind the head and no flat shine across the face.",
+  "requirement": "No portrait in summit-announcement.png has a hard flash shadow behind the head.",
+  "pass_condition": "No portrait in summit-announcement.png has a hard flash shadow behind the head.",
   "reference_assets": [
    {
     "filename": "summit_brand_notes.txt",
@@ -12519,9 +12728,10 @@
   "k_id": "K2_Q3",
   "k_label": "Brand-system compliance",
   "origin": "review_feedback_2026_09_25",
-  "revision": "pilot13_ab_2026_10_21",
+  "revision": "pilot13_verifier_lock_2026_10_22",
   "method": "look",
-  "method_note": "Inspect the named output against this requirement and its linked references."
+  "method_note": "Inspect the named output against this requirement and its linked references.",
+  "split_from": "PHOTO-19/summit-announcement/H015"
  },
  {
   "task_id": "PHOTO-19",
@@ -13296,7 +13506,21 @@
   "origin": "review_feedback_2026_09_25",
   "revision": "pilot13_c_2026_10_22",
   "method": "measure",
-  "method_note": "Eyedropper the ground beside the head in three places; answer No if any HSB brightness is clearly under 87% or over 95%, or clearly coloured."
+  "method_note": "Sample the flat ground beside the left shoulder, beside the right shoulder and above the head. Each sample must be within 5 in every RGB channel of one blend between Fog Grey (217,221,222) and Warm Paper (242,238,231). Use the neutral-range calculator in the measurement guide; all three samples must pass. Do not sample hair or anti-aliased edges.",
+  "measurement": {
+   "kind": "neutral_range",
+   "from_rgb": [
+    217,
+    221,
+    222
+   ],
+   "to_rgb": [
+    242,
+    238,
+    231
+   ],
+   "channel_tolerance": 5
+  }
  },
  {
   "task_id": "PHOTO-19",
@@ -13414,7 +13638,7 @@
   "check_id": "PHOTO-19/speaker-card-r005/H018",
   "type": "human",
   "output_reference": "deliverables/speaker-card-r005.png",
-  "check": "The portrait on “Summit speaker card - Ines Moreau” (speaker-card-r005.png) shows no hard direct-flash look: no hard flash shadow behind the head and no flat shine across the face.",
+  "check": "No portrait in speaker-card-r005.png has a hard flash shadow behind the head.",
   "answer_type": "yes_no",
   "allowed_answers": [
    "Yes",
@@ -13427,8 +13651,8 @@
   "evidence_reference": "Palette rules, photography: no flat, hard direct-flash look. summit_brand_notes.txt: not a free meetup (no flat hard direct flash).",
   "artifact_name": "Summit speaker card - Ines Moreau",
   "artifact_file": "speaker-card-r005.png",
-  "requirement": "The portrait on “Summit speaker card - Ines Moreau” (speaker-card-r005.png) shows no hard direct-flash look: no hard flash shadow behind the head and no flat shine across the face.",
-  "pass_condition": "The portrait on “Summit speaker card - Ines Moreau” (speaker-card-r005.png) shows no hard direct-flash look: no hard flash shadow behind the head and no flat shine across the face.",
+  "requirement": "No portrait in speaker-card-r005.png has a hard flash shadow behind the head.",
+  "pass_condition": "No portrait in speaker-card-r005.png has a hard flash shadow behind the head.",
   "reference_assets": [
    {
     "filename": "summit_brand_notes.txt",
@@ -13438,9 +13662,10 @@
   "k_id": "K2_Q3",
   "k_label": "Brand-system compliance",
   "origin": "review_feedback_2026_09_25",
-  "revision": "pilot13_ab_2026_10_21",
+  "revision": "pilot13_verifier_lock_2026_10_22",
   "method": "look",
-  "method_note": "Inspect the named output against this requirement and its linked references."
+  "method_note": "Inspect the named output against this requirement and its linked references.",
+  "split_from": "PHOTO-19/speaker-card-r005/H018"
  },
  {
   "task_id": "PHOTO-19",
@@ -13665,7 +13890,21 @@
   "origin": "review_feedback_2026_09_25",
   "revision": "pilot13_c_2026_10_22",
   "method": "measure",
-  "method_note": "Eyedropper the ground beside the head in three places; answer No if any HSB brightness is clearly under 87% or over 95%, or clearly coloured."
+  "method_note": "Sample the flat ground beside the left shoulder, beside the right shoulder and above the head. Each sample must be within 5 in every RGB channel of one blend between Fog Grey (217,221,222) and Warm Paper (242,238,231). Use the neutral-range calculator in the measurement guide; all three samples must pass. Do not sample hair or anti-aliased edges.",
+  "measurement": {
+   "kind": "neutral_range",
+   "from_rgb": [
+    217,
+    221,
+    222
+   ],
+   "to_rgb": [
+    242,
+    238,
+    231
+   ],
+   "channel_tolerance": 5
+  }
  },
  {
   "task_id": "PHOTO-19",
@@ -13817,7 +14056,7 @@
   "check_id": "PHOTO-19/speaker-card-r006/H018",
   "type": "human",
   "output_reference": "deliverables/speaker-card-r006.png",
-  "check": "The portrait on “Summit speaker card - Anders Lindqvist” (speaker-card-r006.png) shows no hard direct-flash look: no hard flash shadow behind the head and no flat shine across the face.",
+  "check": "No portrait in speaker-card-r006.png has a hard flash shadow behind the head.",
   "answer_type": "yes_no",
   "allowed_answers": [
    "Yes",
@@ -13830,8 +14069,8 @@
   "evidence_reference": "Palette rules, photography: no flat, hard direct-flash look. summit_brand_notes.txt: not a free meetup (no flat hard direct flash).",
   "artifact_name": "Summit speaker card - Anders Lindqvist",
   "artifact_file": "speaker-card-r006.png",
-  "requirement": "The portrait on “Summit speaker card - Anders Lindqvist” (speaker-card-r006.png) shows no hard direct-flash look: no hard flash shadow behind the head and no flat shine across the face.",
-  "pass_condition": "The portrait on “Summit speaker card - Anders Lindqvist” (speaker-card-r006.png) shows no hard direct-flash look: no hard flash shadow behind the head and no flat shine across the face.",
+  "requirement": "No portrait in speaker-card-r006.png has a hard flash shadow behind the head.",
+  "pass_condition": "No portrait in speaker-card-r006.png has a hard flash shadow behind the head.",
   "reference_assets": [
    {
     "filename": "summit_brand_notes.txt",
@@ -13841,9 +14080,10 @@
   "k_id": "K2_Q3",
   "k_label": "Brand-system compliance",
   "origin": "review_feedback_2026_09_25",
-  "revision": "pilot13_ab_2026_10_21",
+  "revision": "pilot13_verifier_lock_2026_10_22",
   "method": "look",
-  "method_note": "Inspect the named output against this requirement and its linked references."
+  "method_note": "Inspect the named output against this requirement and its linked references.",
+  "split_from": "PHOTO-19/speaker-card-r006/H018"
  },
  {
   "task_id": "PHOTO-19",
@@ -14068,7 +14308,21 @@
   "origin": "review_feedback_2026_09_25",
   "revision": "pilot13_c_2026_10_22",
   "method": "measure",
-  "method_note": "Eyedropper the ground beside the head in three places; answer No if any HSB brightness is clearly under 87% or over 95%, or clearly coloured."
+  "method_note": "Sample the flat ground beside the left shoulder, beside the right shoulder and above the head. Each sample must be within 5 in every RGB channel of one blend between Fog Grey (217,221,222) and Warm Paper (242,238,231). Use the neutral-range calculator in the measurement guide; all three samples must pass. Do not sample hair or anti-aliased edges.",
+  "measurement": {
+   "kind": "neutral_range",
+   "from_rgb": [
+    217,
+    221,
+    222
+   ],
+   "to_rgb": [
+    242,
+    238,
+    231
+   ],
+   "channel_tolerance": 5
+  }
  },
  {
   "task_id": "PHOTO-19",
@@ -14220,7 +14474,7 @@
   "check_id": "PHOTO-19/speaker-card-r018/H018",
   "type": "human",
   "output_reference": "deliverables/speaker-card-r018.png",
-  "check": "The portrait on “Summit host card - Laurel Beckett” (speaker-card-r018.png) shows no hard direct-flash look: no hard flash shadow behind the head and no flat shine across the face.",
+  "check": "No portrait in speaker-card-r018.png has a hard flash shadow behind the head.",
   "answer_type": "yes_no",
   "allowed_answers": [
    "Yes",
@@ -14233,8 +14487,8 @@
   "evidence_reference": "Palette rules, photography: no flat, hard direct-flash look. summit_brand_notes.txt: not a free meetup (no flat hard direct flash).",
   "artifact_name": "Summit host card - Laurel Beckett",
   "artifact_file": "speaker-card-r018.png",
-  "requirement": "The portrait on “Summit host card - Laurel Beckett” (speaker-card-r018.png) shows no hard direct-flash look: no hard flash shadow behind the head and no flat shine across the face.",
-  "pass_condition": "The portrait on “Summit host card - Laurel Beckett” (speaker-card-r018.png) shows no hard direct-flash look: no hard flash shadow behind the head and no flat shine across the face.",
+  "requirement": "No portrait in speaker-card-r018.png has a hard flash shadow behind the head.",
+  "pass_condition": "No portrait in speaker-card-r018.png has a hard flash shadow behind the head.",
   "reference_assets": [
    {
     "filename": "summit_brand_notes.txt",
@@ -14244,9 +14498,10 @@
   "k_id": "K2_Q3",
   "k_label": "Brand-system compliance",
   "origin": "review_feedback_2026_09_25",
-  "revision": "pilot13_ab_2026_10_21",
+  "revision": "pilot13_verifier_lock_2026_10_22",
   "method": "look",
-  "method_note": "Inspect the named output against this requirement and its linked references."
+  "method_note": "Inspect the named output against this requirement and its linked references.",
+  "split_from": "PHOTO-19/speaker-card-r018/H018"
  },
  {
   "task_id": "PHOTO-19",
@@ -14465,7 +14720,21 @@
   "origin": "review_feedback_2026_09_25",
   "revision": "pilot13_c_2026_10_22",
   "method": "measure",
-  "method_note": "Eyedropper the ground beside the head in three places; answer No if any HSB brightness is clearly under 87% or over 95%, or clearly coloured."
+  "method_note": "Sample the flat ground beside the left shoulder, beside the right shoulder and above the head. Each sample must be within 5 in every RGB channel of one blend between Fog Grey (217,221,222) and Warm Paper (242,238,231). Use the neutral-range calculator in the measurement guide; all three samples must pass. Do not sample hair or anti-aliased edges.",
+  "measurement": {
+   "kind": "neutral_range",
+   "from_rgb": [
+    217,
+    221,
+    222
+   ],
+   "to_rgb": [
+    242,
+    238,
+    231
+   ],
+   "channel_tolerance": 5
+  }
  },
  {
   "task_id": "PHOTO-19",
@@ -14617,7 +14886,7 @@
   "check_id": "PHOTO-19/speaker-card-r002/H021",
   "type": "human",
   "output_reference": "deliverables/speaker-card-r002.png",
-  "check": "The portrait on “Summit speaker card - Marguerite Halloran” (speaker-card-r002.png) shows no hard direct-flash look: no hard flash shadow behind the head and no flat shine across the face.",
+  "check": "No portrait in speaker-card-r002.png has a hard flash shadow behind the head.",
   "answer_type": "yes_no",
   "allowed_answers": [
    "Yes",
@@ -14630,8 +14899,8 @@
   "evidence_reference": "Palette rules, photography: no flat, hard direct-flash look. summit_brand_notes.txt: not a free meetup (no flat hard direct flash).",
   "artifact_name": "Summit speaker card - Marguerite Halloran",
   "artifact_file": "speaker-card-r002.png",
-  "requirement": "The portrait on “Summit speaker card - Marguerite Halloran” (speaker-card-r002.png) shows no hard direct-flash look: no hard flash shadow behind the head and no flat shine across the face.",
-  "pass_condition": "The portrait on “Summit speaker card - Marguerite Halloran” (speaker-card-r002.png) shows no hard direct-flash look: no hard flash shadow behind the head and no flat shine across the face.",
+  "requirement": "No portrait in speaker-card-r002.png has a hard flash shadow behind the head.",
+  "pass_condition": "No portrait in speaker-card-r002.png has a hard flash shadow behind the head.",
   "reference_assets": [
    {
     "filename": "summit_brand_notes.txt",
@@ -14641,9 +14910,10 @@
   "k_id": "K2_Q3",
   "k_label": "Brand-system compliance",
   "origin": "review_feedback_2026_09_25",
-  "revision": "pilot13_ab_2026_10_21",
+  "revision": "pilot13_verifier_lock_2026_10_22",
   "method": "look",
-  "method_note": "Inspect the named output against this requirement and its linked references."
+  "method_note": "Inspect the named output against this requirement and its linked references.",
+  "split_from": "PHOTO-19/speaker-card-r002/H021"
  },
  {
   "task_id": "PHOTO-19",
@@ -14951,7 +15221,21 @@
   "origin": "k_gap_fill",
   "revision": "pilot13_c_2026_10_22",
   "method": "measure",
-  "method_note": "Eyedropper the ground beside the head in three places; answer No if any HSB brightness is clearly under 87% or over 95%, or clearly coloured."
+  "method_note": "Sample the flat ground beside the left shoulder, beside the right shoulder and above the head. Each sample must be within 5 in every RGB channel of one blend between Fog Grey (217,221,222) and Warm Paper (242,238,231). Use the neutral-range calculator in the measurement guide; all three samples must pass. Do not sample hair or anti-aliased edges.",
+  "measurement": {
+   "kind": "neutral_range",
+   "from_rgb": [
+    217,
+    221,
+    222
+   ],
+   "to_rgb": [
+    242,
+    238,
+    231
+   ],
+   "channel_tolerance": 5
+  }
  },
  {
   "task_id": "PHOTO-19",
@@ -15252,7 +15536,7 @@
   "check_id": "PHOTO-19/speaker-card-r003/H019",
   "type": "human",
   "output_reference": "deliverables/speaker-card-r003.png",
-  "check": "The portrait on “Summit speaker card - Peter Vance” (speaker-card-r003.png) shows no hard direct-flash look: no hard flash shadow behind the head and no flat shine across the face.",
+  "check": "No portrait in speaker-card-r003.png has a hard flash shadow behind the head.",
   "answer_type": "yes_no",
   "allowed_answers": [
    "Yes",
@@ -15265,8 +15549,8 @@
   "evidence_reference": "Palette rules, photography: no flat, hard direct-flash look. summit_brand_notes.txt: not a free meetup (no flat hard direct flash).",
   "artifact_name": "Summit speaker card - Peter Vance",
   "artifact_file": "speaker-card-r003.png",
-  "requirement": "The portrait on “Summit speaker card - Peter Vance” (speaker-card-r003.png) shows no hard direct-flash look: no hard flash shadow behind the head and no flat shine across the face.",
-  "pass_condition": "The portrait on “Summit speaker card - Peter Vance” (speaker-card-r003.png) shows no hard direct-flash look: no hard flash shadow behind the head and no flat shine across the face.",
+  "requirement": "No portrait in speaker-card-r003.png has a hard flash shadow behind the head.",
+  "pass_condition": "No portrait in speaker-card-r003.png has a hard flash shadow behind the head.",
   "reference_assets": [
    {
     "filename": "summit_brand_notes.txt",
@@ -15276,9 +15560,10 @@
   "k_id": "K2_Q3",
   "k_label": "Brand-system compliance",
   "origin": "review_feedback_2026_09_25",
-  "revision": "pilot13_ab_2026_10_21",
+  "revision": "pilot13_verifier_lock_2026_10_22",
   "method": "look",
-  "method_note": "Inspect the named output against this requirement and its linked references."
+  "method_note": "Inspect the named output against this requirement and its linked references.",
+  "split_from": "PHOTO-19/speaker-card-r003/H019"
  },
  {
   "task_id": "PHOTO-19",
@@ -19304,7 +19589,7 @@
   "check_id": "PHOTO-19/speaker-card-r002/H061",
   "type": "human",
   "output_reference": "deliverables/speaker-card-r002.png",
-  "check": "On “Summit speaker card - Marguerite Halloran” (speaker-card-r002.png), Signal Copper and Evergreen together cover no more than about 5% of the area outside the photograph.",
+  "check": "On “Summit speaker card - Marguerite Halloran” (speaker-card-r002.png), Signal Copper and Evergreen together cover no more than 5% of the area outside the photograph.",
   "answer_type": "yes_no",
   "allowed_answers": [
    "Yes",
@@ -19317,15 +19602,20 @@
   "evidence_reference": "Palette rules, distribution: Signal Copper and Evergreen together no more than 5% of the designed, non-photographic area.",
   "artifact_name": "Summit speaker card - Marguerite Halloran",
   "artifact_file": "speaker-card-r002.png",
-  "requirement": "On “Summit speaker card - Marguerite Halloran” (speaker-card-r002.png), Signal Copper and Evergreen together cover no more than about 5% of the area outside the photograph.",
-  "pass_condition": "On “Summit speaker card - Marguerite Halloran” (speaker-card-r002.png), Signal Copper and Evergreen together cover no more than about 5% of the area outside the photograph.",
+  "requirement": "On “Summit speaker card - Marguerite Halloran” (speaker-card-r002.png), Signal Copper and Evergreen together cover no more than 5% of the area outside the photograph.",
+  "pass_condition": "On “Summit speaker card - Marguerite Halloran” (speaker-card-r002.png), Signal Copper and Evergreen together cover no more than 5% of the area outside the photograph.",
   "reference_assets": [],
-  "revision": "pilot13_c_2026_10_22",
+  "revision": "pilot13_verifier_lock_2026_10_22",
   "origin": "pilot13_ab_2026_10_21",
   "k_id": "K2_Q3",
   "k_label": "Brand-system compliance",
-  "method": "estimate",
-  "method_note": "Estimate the share of the non-photographic area in Signal Copper and Evergreen; answer No only if it is clearly over 5%."
+  "method": "measure",
+  "method_note": "Measure, do not estimate. On a measurement copy, mask the named area; exclude photographs and transparent canvas. Count the selected accent-colour pixels and divide by all pixels in that mask. Include text unless the condition excludes it. Test each PDF page or held video frame separately. Yes only when the unrounded percentage is at or below the stated limit. Use the linked measurement guide for rasterisation and colour matching. Each RGB channel must be within 5 of a selected palette colour.",
+  "measurement": {
+   "kind": "area_ratio",
+   "channel_tolerance": 5,
+   "max_percent": 5
+  }
  },
  {
   "task_id": "PHOTO-19",
@@ -19885,7 +20175,7 @@
   "check_id": "PHOTO-19/speaker-card-r003/H058",
   "type": "human",
   "output_reference": "deliverables/speaker-card-r003.png",
-  "check": "On “Summit speaker card - Peter Vance” (speaker-card-r003.png), Signal Copper and Evergreen together cover no more than about 5% of the area outside the photograph.",
+  "check": "On “Summit speaker card - Peter Vance” (speaker-card-r003.png), Signal Copper and Evergreen together cover no more than 5% of the area outside the photograph.",
   "answer_type": "yes_no",
   "allowed_answers": [
    "Yes",
@@ -19898,15 +20188,20 @@
   "evidence_reference": "Palette rules, distribution: Signal Copper and Evergreen together no more than 5% of the designed, non-photographic area.",
   "artifact_name": "Summit speaker card - Peter Vance",
   "artifact_file": "speaker-card-r003.png",
-  "requirement": "On “Summit speaker card - Peter Vance” (speaker-card-r003.png), Signal Copper and Evergreen together cover no more than about 5% of the area outside the photograph.",
-  "pass_condition": "On “Summit speaker card - Peter Vance” (speaker-card-r003.png), Signal Copper and Evergreen together cover no more than about 5% of the area outside the photograph.",
+  "requirement": "On “Summit speaker card - Peter Vance” (speaker-card-r003.png), Signal Copper and Evergreen together cover no more than 5% of the area outside the photograph.",
+  "pass_condition": "On “Summit speaker card - Peter Vance” (speaker-card-r003.png), Signal Copper and Evergreen together cover no more than 5% of the area outside the photograph.",
   "reference_assets": [],
-  "revision": "pilot13_c_2026_10_22",
+  "revision": "pilot13_verifier_lock_2026_10_22",
   "origin": "pilot13_ab_2026_10_21",
   "k_id": "K2_Q3",
   "k_label": "Brand-system compliance",
-  "method": "estimate",
-  "method_note": "Estimate the share of the non-photographic area in Signal Copper and Evergreen; answer No only if it is clearly over 5%."
+  "method": "measure",
+  "method_note": "Measure, do not estimate. On a measurement copy, mask the named area; exclude photographs and transparent canvas. Count the selected accent-colour pixels and divide by all pixels in that mask. Include text unless the condition excludes it. Test each PDF page or held video frame separately. Yes only when the unrounded percentage is at or below the stated limit. Use the linked measurement guide for rasterisation and colour matching. Each RGB channel must be within 5 of a selected palette colour.",
+  "measurement": {
+   "kind": "area_ratio",
+   "channel_tolerance": 5,
+   "max_percent": 5
+  }
  },
  {
   "task_id": "PHOTO-19",
@@ -20403,7 +20698,7 @@
   "check_id": "PHOTO-19/speaker-card-r005/H055",
   "type": "human",
   "output_reference": "deliverables/speaker-card-r005.png",
-  "check": "On “Summit speaker card - Ines Moreau” (speaker-card-r005.png), Signal Copper and Evergreen together cover no more than about 5% of the area outside the photograph.",
+  "check": "On “Summit speaker card - Ines Moreau” (speaker-card-r005.png), Signal Copper and Evergreen together cover no more than 5% of the area outside the photograph.",
   "answer_type": "yes_no",
   "allowed_answers": [
    "Yes",
@@ -20416,15 +20711,20 @@
   "evidence_reference": "Palette rules, distribution: Signal Copper and Evergreen together no more than 5% of the designed, non-photographic area.",
   "artifact_name": "Summit speaker card - Ines Moreau",
   "artifact_file": "speaker-card-r005.png",
-  "requirement": "On “Summit speaker card - Ines Moreau” (speaker-card-r005.png), Signal Copper and Evergreen together cover no more than about 5% of the area outside the photograph.",
-  "pass_condition": "On “Summit speaker card - Ines Moreau” (speaker-card-r005.png), Signal Copper and Evergreen together cover no more than about 5% of the area outside the photograph.",
+  "requirement": "On “Summit speaker card - Ines Moreau” (speaker-card-r005.png), Signal Copper and Evergreen together cover no more than 5% of the area outside the photograph.",
+  "pass_condition": "On “Summit speaker card - Ines Moreau” (speaker-card-r005.png), Signal Copper and Evergreen together cover no more than 5% of the area outside the photograph.",
   "reference_assets": [],
-  "revision": "pilot13_c_2026_10_22",
+  "revision": "pilot13_verifier_lock_2026_10_22",
   "origin": "pilot13_ab_2026_10_21",
   "k_id": "K2_Q3",
   "k_label": "Brand-system compliance",
-  "method": "estimate",
-  "method_note": "Estimate the share of the non-photographic area in Signal Copper and Evergreen; answer No only if it is clearly over 5%."
+  "method": "measure",
+  "method_note": "Measure, do not estimate. On a measurement copy, mask the named area; exclude photographs and transparent canvas. Count the selected accent-colour pixels and divide by all pixels in that mask. Include text unless the condition excludes it. Test each PDF page or held video frame separately. Yes only when the unrounded percentage is at or below the stated limit. Use the linked measurement guide for rasterisation and colour matching. Each RGB channel must be within 5 of a selected palette colour.",
+  "measurement": {
+   "kind": "area_ratio",
+   "channel_tolerance": 5,
+   "max_percent": 5
+  }
  },
  {
   "task_id": "PHOTO-19",
@@ -20950,7 +21250,7 @@
   "check_id": "PHOTO-19/speaker-card-r006/H056",
   "type": "human",
   "output_reference": "deliverables/speaker-card-r006.png",
-  "check": "On “Summit speaker card - Anders Lindqvist” (speaker-card-r006.png), Signal Copper and Evergreen together cover no more than about 5% of the area outside the photograph.",
+  "check": "On “Summit speaker card - Anders Lindqvist” (speaker-card-r006.png), Signal Copper and Evergreen together cover no more than 5% of the area outside the photograph.",
   "answer_type": "yes_no",
   "allowed_answers": [
    "Yes",
@@ -20963,15 +21263,20 @@
   "evidence_reference": "Palette rules, distribution: Signal Copper and Evergreen together no more than 5% of the designed, non-photographic area.",
   "artifact_name": "Summit speaker card - Anders Lindqvist",
   "artifact_file": "speaker-card-r006.png",
-  "requirement": "On “Summit speaker card - Anders Lindqvist” (speaker-card-r006.png), Signal Copper and Evergreen together cover no more than about 5% of the area outside the photograph.",
-  "pass_condition": "On “Summit speaker card - Anders Lindqvist” (speaker-card-r006.png), Signal Copper and Evergreen together cover no more than about 5% of the area outside the photograph.",
+  "requirement": "On “Summit speaker card - Anders Lindqvist” (speaker-card-r006.png), Signal Copper and Evergreen together cover no more than 5% of the area outside the photograph.",
+  "pass_condition": "On “Summit speaker card - Anders Lindqvist” (speaker-card-r006.png), Signal Copper and Evergreen together cover no more than 5% of the area outside the photograph.",
   "reference_assets": [],
-  "revision": "pilot13_c_2026_10_22",
+  "revision": "pilot13_verifier_lock_2026_10_22",
   "origin": "pilot13_ab_2026_10_21",
   "k_id": "K2_Q3",
   "k_label": "Brand-system compliance",
-  "method": "estimate",
-  "method_note": "Estimate the share of the non-photographic area in Signal Copper and Evergreen; answer No only if it is clearly over 5%."
+  "method": "measure",
+  "method_note": "Measure, do not estimate. On a measurement copy, mask the named area; exclude photographs and transparent canvas. Count the selected accent-colour pixels and divide by all pixels in that mask. Include text unless the condition excludes it. Test each PDF page or held video frame separately. Yes only when the unrounded percentage is at or below the stated limit. Use the linked measurement guide for rasterisation and colour matching. Each RGB channel must be within 5 of a selected palette colour.",
+  "measurement": {
+   "kind": "area_ratio",
+   "channel_tolerance": 5,
+   "max_percent": 5
+  }
  },
  {
   "task_id": "PHOTO-19",
@@ -21497,7 +21802,7 @@
   "check_id": "PHOTO-19/speaker-card-r007/H056",
   "type": "human",
   "output_reference": "deliverables/speaker-card-r007.png",
-  "check": "On “Summit speaker card - Colm Byrne” (speaker-card-r007.png), Signal Copper and Evergreen together cover no more than about 5% of the area outside the photograph.",
+  "check": "On “Summit speaker card - Colm Byrne” (speaker-card-r007.png), Signal Copper and Evergreen together cover no more than 5% of the area outside the photograph.",
   "answer_type": "yes_no",
   "allowed_answers": [
    "Yes",
@@ -21510,15 +21815,20 @@
   "evidence_reference": "Palette rules, distribution: Signal Copper and Evergreen together no more than 5% of the designed, non-photographic area.",
   "artifact_name": "Summit speaker card - Colm Byrne",
   "artifact_file": "speaker-card-r007.png",
-  "requirement": "On “Summit speaker card - Colm Byrne” (speaker-card-r007.png), Signal Copper and Evergreen together cover no more than about 5% of the area outside the photograph.",
-  "pass_condition": "On “Summit speaker card - Colm Byrne” (speaker-card-r007.png), Signal Copper and Evergreen together cover no more than about 5% of the area outside the photograph.",
+  "requirement": "On “Summit speaker card - Colm Byrne” (speaker-card-r007.png), Signal Copper and Evergreen together cover no more than 5% of the area outside the photograph.",
+  "pass_condition": "On “Summit speaker card - Colm Byrne” (speaker-card-r007.png), Signal Copper and Evergreen together cover no more than 5% of the area outside the photograph.",
   "reference_assets": [],
-  "revision": "pilot13_c_2026_10_22",
+  "revision": "pilot13_verifier_lock_2026_10_22",
   "origin": "pilot13_ab_2026_10_21",
   "k_id": "K2_Q3",
   "k_label": "Brand-system compliance",
-  "method": "estimate",
-  "method_note": "Estimate the share of the non-photographic area in Signal Copper and Evergreen; answer No only if it is clearly over 5%."
+  "method": "measure",
+  "method_note": "Measure, do not estimate. On a measurement copy, mask the named area; exclude photographs and transparent canvas. Count the selected accent-colour pixels and divide by all pixels in that mask. Include text unless the condition excludes it. Test each PDF page or held video frame separately. Yes only when the unrounded percentage is at or below the stated limit. Use the linked measurement guide for rasterisation and colour matching. Each RGB channel must be within 5 of a selected palette colour.",
+  "measurement": {
+   "kind": "area_ratio",
+   "channel_tolerance": 5,
+   "max_percent": 5
+  }
  },
  {
   "task_id": "PHOTO-19",
@@ -22044,7 +22354,7 @@
   "check_id": "PHOTO-19/speaker-card-r008/H056",
   "type": "human",
   "output_reference": "deliverables/speaker-card-r008.png",
-  "check": "On “Summit speaker card - Dana Whitfield” (speaker-card-r008.png), Signal Copper and Evergreen together cover no more than about 5% of the area outside the photograph.",
+  "check": "On “Summit speaker card - Dana Whitfield” (speaker-card-r008.png), Signal Copper and Evergreen together cover no more than 5% of the area outside the photograph.",
   "answer_type": "yes_no",
   "allowed_answers": [
    "Yes",
@@ -22057,15 +22367,20 @@
   "evidence_reference": "Palette rules, distribution: Signal Copper and Evergreen together no more than 5% of the designed, non-photographic area.",
   "artifact_name": "Summit speaker card - Dana Whitfield",
   "artifact_file": "speaker-card-r008.png",
-  "requirement": "On “Summit speaker card - Dana Whitfield” (speaker-card-r008.png), Signal Copper and Evergreen together cover no more than about 5% of the area outside the photograph.",
-  "pass_condition": "On “Summit speaker card - Dana Whitfield” (speaker-card-r008.png), Signal Copper and Evergreen together cover no more than about 5% of the area outside the photograph.",
+  "requirement": "On “Summit speaker card - Dana Whitfield” (speaker-card-r008.png), Signal Copper and Evergreen together cover no more than 5% of the area outside the photograph.",
+  "pass_condition": "On “Summit speaker card - Dana Whitfield” (speaker-card-r008.png), Signal Copper and Evergreen together cover no more than 5% of the area outside the photograph.",
   "reference_assets": [],
-  "revision": "pilot13_c_2026_10_22",
+  "revision": "pilot13_verifier_lock_2026_10_22",
   "origin": "pilot13_ab_2026_10_21",
   "k_id": "K2_Q3",
   "k_label": "Brand-system compliance",
-  "method": "estimate",
-  "method_note": "Estimate the share of the non-photographic area in Signal Copper and Evergreen; answer No only if it is clearly over 5%."
+  "method": "measure",
+  "method_note": "Measure, do not estimate. On a measurement copy, mask the named area; exclude photographs and transparent canvas. Count the selected accent-colour pixels and divide by all pixels in that mask. Include text unless the condition excludes it. Test each PDF page or held video frame separately. Yes only when the unrounded percentage is at or below the stated limit. Use the linked measurement guide for rasterisation and colour matching. Each RGB channel must be within 5 of a selected palette colour.",
+  "measurement": {
+   "kind": "area_ratio",
+   "channel_tolerance": 5,
+   "max_percent": 5
+  }
  },
  {
   "task_id": "PHOTO-19",
@@ -22591,7 +22906,7 @@
   "check_id": "PHOTO-19/speaker-card-r009/H056",
   "type": "human",
   "output_reference": "deliverables/speaker-card-r009.png",
-  "check": "On “Summit speaker card - Estelle Rioux” (speaker-card-r009.png), Signal Copper and Evergreen together cover no more than about 5% of the area outside the photograph.",
+  "check": "On “Summit speaker card - Estelle Rioux” (speaker-card-r009.png), Signal Copper and Evergreen together cover no more than 5% of the area outside the photograph.",
   "answer_type": "yes_no",
   "allowed_answers": [
    "Yes",
@@ -22604,15 +22919,20 @@
   "evidence_reference": "Palette rules, distribution: Signal Copper and Evergreen together no more than 5% of the designed, non-photographic area.",
   "artifact_name": "Summit speaker card - Estelle Rioux",
   "artifact_file": "speaker-card-r009.png",
-  "requirement": "On “Summit speaker card - Estelle Rioux” (speaker-card-r009.png), Signal Copper and Evergreen together cover no more than about 5% of the area outside the photograph.",
-  "pass_condition": "On “Summit speaker card - Estelle Rioux” (speaker-card-r009.png), Signal Copper and Evergreen together cover no more than about 5% of the area outside the photograph.",
+  "requirement": "On “Summit speaker card - Estelle Rioux” (speaker-card-r009.png), Signal Copper and Evergreen together cover no more than 5% of the area outside the photograph.",
+  "pass_condition": "On “Summit speaker card - Estelle Rioux” (speaker-card-r009.png), Signal Copper and Evergreen together cover no more than 5% of the area outside the photograph.",
   "reference_assets": [],
-  "revision": "pilot13_c_2026_10_22",
+  "revision": "pilot13_verifier_lock_2026_10_22",
   "origin": "pilot13_ab_2026_10_21",
   "k_id": "K2_Q3",
   "k_label": "Brand-system compliance",
-  "method": "estimate",
-  "method_note": "Estimate the share of the non-photographic area in Signal Copper and Evergreen; answer No only if it is clearly over 5%."
+  "method": "measure",
+  "method_note": "Measure, do not estimate. On a measurement copy, mask the named area; exclude photographs and transparent canvas. Count the selected accent-colour pixels and divide by all pixels in that mask. Include text unless the condition excludes it. Test each PDF page or held video frame separately. Yes only when the unrounded percentage is at or below the stated limit. Use the linked measurement guide for rasterisation and colour matching. Each RGB channel must be within 5 of a selected palette colour.",
+  "measurement": {
+   "kind": "area_ratio",
+   "channel_tolerance": 5,
+   "max_percent": 5
+  }
  },
  {
   "task_id": "PHOTO-19",
@@ -23172,7 +23492,7 @@
   "check_id": "PHOTO-19/speaker-card-r010/H058",
   "type": "human",
   "output_reference": "deliverables/speaker-card-r010.png",
-  "check": "On “Summit speaker card - Grant Mackey” (speaker-card-r010.png), Signal Copper and Evergreen together cover no more than about 5% of the area outside the photograph.",
+  "check": "On “Summit speaker card - Grant Mackey” (speaker-card-r010.png), Signal Copper and Evergreen together cover no more than 5% of the area outside the photograph.",
   "answer_type": "yes_no",
   "allowed_answers": [
    "Yes",
@@ -23185,15 +23505,20 @@
   "evidence_reference": "Palette rules, distribution: Signal Copper and Evergreen together no more than 5% of the designed, non-photographic area.",
   "artifact_name": "Summit speaker card - Grant Mackey",
   "artifact_file": "speaker-card-r010.png",
-  "requirement": "On “Summit speaker card - Grant Mackey” (speaker-card-r010.png), Signal Copper and Evergreen together cover no more than about 5% of the area outside the photograph.",
-  "pass_condition": "On “Summit speaker card - Grant Mackey” (speaker-card-r010.png), Signal Copper and Evergreen together cover no more than about 5% of the area outside the photograph.",
+  "requirement": "On “Summit speaker card - Grant Mackey” (speaker-card-r010.png), Signal Copper and Evergreen together cover no more than 5% of the area outside the photograph.",
+  "pass_condition": "On “Summit speaker card - Grant Mackey” (speaker-card-r010.png), Signal Copper and Evergreen together cover no more than 5% of the area outside the photograph.",
   "reference_assets": [],
-  "revision": "pilot13_c_2026_10_22",
+  "revision": "pilot13_verifier_lock_2026_10_22",
   "origin": "pilot13_ab_2026_10_21",
   "k_id": "K2_Q3",
   "k_label": "Brand-system compliance",
-  "method": "estimate",
-  "method_note": "Estimate the share of the non-photographic area in Signal Copper and Evergreen; answer No only if it is clearly over 5%."
+  "method": "measure",
+  "method_note": "Measure, do not estimate. On a measurement copy, mask the named area; exclude photographs and transparent canvas. Count the selected accent-colour pixels and divide by all pixels in that mask. Include text unless the condition excludes it. Test each PDF page or held video frame separately. Yes only when the unrounded percentage is at or below the stated limit. Use the linked measurement guide for rasterisation and colour matching. Each RGB channel must be within 5 of a selected palette colour.",
+  "measurement": {
+   "kind": "area_ratio",
+   "channel_tolerance": 5,
+   "max_percent": 5
+  }
  },
  {
   "task_id": "PHOTO-19",
@@ -23719,7 +24044,7 @@
   "check_id": "PHOTO-19/speaker-card-r011/H056",
   "type": "human",
   "output_reference": "deliverables/speaker-card-r011.png",
-  "check": "On “Summit speaker card - Sofia Bellini” (speaker-card-r011.png), Signal Copper and Evergreen together cover no more than about 5% of the area outside the photograph.",
+  "check": "On “Summit speaker card - Sofia Bellini” (speaker-card-r011.png), Signal Copper and Evergreen together cover no more than 5% of the area outside the photograph.",
   "answer_type": "yes_no",
   "allowed_answers": [
    "Yes",
@@ -23732,15 +24057,20 @@
   "evidence_reference": "Palette rules, distribution: Signal Copper and Evergreen together no more than 5% of the designed, non-photographic area.",
   "artifact_name": "Summit speaker card - Sofia Bellini",
   "artifact_file": "speaker-card-r011.png",
-  "requirement": "On “Summit speaker card - Sofia Bellini” (speaker-card-r011.png), Signal Copper and Evergreen together cover no more than about 5% of the area outside the photograph.",
-  "pass_condition": "On “Summit speaker card - Sofia Bellini” (speaker-card-r011.png), Signal Copper and Evergreen together cover no more than about 5% of the area outside the photograph.",
+  "requirement": "On “Summit speaker card - Sofia Bellini” (speaker-card-r011.png), Signal Copper and Evergreen together cover no more than 5% of the area outside the photograph.",
+  "pass_condition": "On “Summit speaker card - Sofia Bellini” (speaker-card-r011.png), Signal Copper and Evergreen together cover no more than 5% of the area outside the photograph.",
   "reference_assets": [],
-  "revision": "pilot13_c_2026_10_22",
+  "revision": "pilot13_verifier_lock_2026_10_22",
   "origin": "pilot13_ab_2026_10_21",
   "k_id": "K2_Q3",
   "k_label": "Brand-system compliance",
-  "method": "estimate",
-  "method_note": "Estimate the share of the non-photographic area in Signal Copper and Evergreen; answer No only if it is clearly over 5%."
+  "method": "measure",
+  "method_note": "Measure, do not estimate. On a measurement copy, mask the named area; exclude photographs and transparent canvas. Count the selected accent-colour pixels and divide by all pixels in that mask. Include text unless the condition excludes it. Test each PDF page or held video frame separately. Yes only when the unrounded percentage is at or below the stated limit. Use the linked measurement guide for rasterisation and colour matching. Each RGB channel must be within 5 of a selected palette colour.",
+  "measurement": {
+   "kind": "area_ratio",
+   "channel_tolerance": 5,
+   "max_percent": 5
+  }
  },
  {
   "task_id": "PHOTO-19",
@@ -24266,7 +24596,7 @@
   "check_id": "PHOTO-19/speaker-card-r013/H056",
   "type": "human",
   "output_reference": "deliverables/speaker-card-r013.png",
-  "check": "On “Summit speaker card - Nils Haugen” (speaker-card-r013.png), Signal Copper and Evergreen together cover no more than about 5% of the area outside the photograph.",
+  "check": "On “Summit speaker card - Nils Haugen” (speaker-card-r013.png), Signal Copper and Evergreen together cover no more than 5% of the area outside the photograph.",
   "answer_type": "yes_no",
   "allowed_answers": [
    "Yes",
@@ -24279,15 +24609,20 @@
   "evidence_reference": "Palette rules, distribution: Signal Copper and Evergreen together no more than 5% of the designed, non-photographic area.",
   "artifact_name": "Summit speaker card - Nils Haugen",
   "artifact_file": "speaker-card-r013.png",
-  "requirement": "On “Summit speaker card - Nils Haugen” (speaker-card-r013.png), Signal Copper and Evergreen together cover no more than about 5% of the area outside the photograph.",
-  "pass_condition": "On “Summit speaker card - Nils Haugen” (speaker-card-r013.png), Signal Copper and Evergreen together cover no more than about 5% of the area outside the photograph.",
+  "requirement": "On “Summit speaker card - Nils Haugen” (speaker-card-r013.png), Signal Copper and Evergreen together cover no more than 5% of the area outside the photograph.",
+  "pass_condition": "On “Summit speaker card - Nils Haugen” (speaker-card-r013.png), Signal Copper and Evergreen together cover no more than 5% of the area outside the photograph.",
   "reference_assets": [],
-  "revision": "pilot13_c_2026_10_22",
+  "revision": "pilot13_verifier_lock_2026_10_22",
   "origin": "pilot13_ab_2026_10_21",
   "k_id": "K2_Q3",
   "k_label": "Brand-system compliance",
-  "method": "estimate",
-  "method_note": "Estimate the share of the non-photographic area in Signal Copper and Evergreen; answer No only if it is clearly over 5%."
+  "method": "measure",
+  "method_note": "Measure, do not estimate. On a measurement copy, mask the named area; exclude photographs and transparent canvas. Count the selected accent-colour pixels and divide by all pixels in that mask. Include text unless the condition excludes it. Test each PDF page or held video frame separately. Yes only when the unrounded percentage is at or below the stated limit. Use the linked measurement guide for rasterisation and colour matching. Each RGB channel must be within 5 of a selected palette colour.",
+  "measurement": {
+   "kind": "area_ratio",
+   "channel_tolerance": 5,
+   "max_percent": 5
+  }
  },
  {
   "task_id": "PHOTO-19",
@@ -24813,7 +25148,7 @@
   "check_id": "PHOTO-19/speaker-card-r014/H056",
   "type": "human",
   "output_reference": "deliverables/speaker-card-r014.png",
-  "check": "On “Summit speaker card - Robin Tate” (speaker-card-r014.png), Signal Copper and Evergreen together cover no more than about 5% of the area outside the photograph.",
+  "check": "On “Summit speaker card - Robin Tate” (speaker-card-r014.png), Signal Copper and Evergreen together cover no more than 5% of the area outside the photograph.",
   "answer_type": "yes_no",
   "allowed_answers": [
    "Yes",
@@ -24826,15 +25161,20 @@
   "evidence_reference": "Palette rules, distribution: Signal Copper and Evergreen together no more than 5% of the designed, non-photographic area.",
   "artifact_name": "Summit speaker card - Robin Tate",
   "artifact_file": "speaker-card-r014.png",
-  "requirement": "On “Summit speaker card - Robin Tate” (speaker-card-r014.png), Signal Copper and Evergreen together cover no more than about 5% of the area outside the photograph.",
-  "pass_condition": "On “Summit speaker card - Robin Tate” (speaker-card-r014.png), Signal Copper and Evergreen together cover no more than about 5% of the area outside the photograph.",
+  "requirement": "On “Summit speaker card - Robin Tate” (speaker-card-r014.png), Signal Copper and Evergreen together cover no more than 5% of the area outside the photograph.",
+  "pass_condition": "On “Summit speaker card - Robin Tate” (speaker-card-r014.png), Signal Copper and Evergreen together cover no more than 5% of the area outside the photograph.",
   "reference_assets": [],
-  "revision": "pilot13_c_2026_10_22",
+  "revision": "pilot13_verifier_lock_2026_10_22",
   "origin": "pilot13_ab_2026_10_21",
   "k_id": "K2_Q3",
   "k_label": "Brand-system compliance",
-  "method": "estimate",
-  "method_note": "Estimate the share of the non-photographic area in Signal Copper and Evergreen; answer No only if it is clearly over 5%."
+  "method": "measure",
+  "method_note": "Measure, do not estimate. On a measurement copy, mask the named area; exclude photographs and transparent canvas. Count the selected accent-colour pixels and divide by all pixels in that mask. Include text unless the condition excludes it. Test each PDF page or held video frame separately. Yes only when the unrounded percentage is at or below the stated limit. Use the linked measurement guide for rasterisation and colour matching. Each RGB channel must be within 5 of a selected palette colour.",
+  "measurement": {
+   "kind": "area_ratio",
+   "channel_tolerance": 5,
+   "max_percent": 5
+  }
  },
  {
   "task_id": "PHOTO-19",
@@ -25360,7 +25700,7 @@
   "check_id": "PHOTO-19/speaker-card-r015/H056",
   "type": "human",
   "output_reference": "deliverables/speaker-card-r015.png",
-  "check": "On “Summit speaker card - Bernadette Cruz” (speaker-card-r015.png), Signal Copper and Evergreen together cover no more than about 5% of the area outside the photograph.",
+  "check": "On “Summit speaker card - Bernadette Cruz” (speaker-card-r015.png), Signal Copper and Evergreen together cover no more than 5% of the area outside the photograph.",
   "answer_type": "yes_no",
   "allowed_answers": [
    "Yes",
@@ -25373,15 +25713,20 @@
   "evidence_reference": "Palette rules, distribution: Signal Copper and Evergreen together no more than 5% of the designed, non-photographic area.",
   "artifact_name": "Summit speaker card - Bernadette Cruz",
   "artifact_file": "speaker-card-r015.png",
-  "requirement": "On “Summit speaker card - Bernadette Cruz” (speaker-card-r015.png), Signal Copper and Evergreen together cover no more than about 5% of the area outside the photograph.",
-  "pass_condition": "On “Summit speaker card - Bernadette Cruz” (speaker-card-r015.png), Signal Copper and Evergreen together cover no more than about 5% of the area outside the photograph.",
+  "requirement": "On “Summit speaker card - Bernadette Cruz” (speaker-card-r015.png), Signal Copper and Evergreen together cover no more than 5% of the area outside the photograph.",
+  "pass_condition": "On “Summit speaker card - Bernadette Cruz” (speaker-card-r015.png), Signal Copper and Evergreen together cover no more than 5% of the area outside the photograph.",
   "reference_assets": [],
-  "revision": "pilot13_c_2026_10_22",
+  "revision": "pilot13_verifier_lock_2026_10_22",
   "origin": "pilot13_ab_2026_10_21",
   "k_id": "K2_Q3",
   "k_label": "Brand-system compliance",
-  "method": "estimate",
-  "method_note": "Estimate the share of the non-photographic area in Signal Copper and Evergreen; answer No only if it is clearly over 5%."
+  "method": "measure",
+  "method_note": "Measure, do not estimate. On a measurement copy, mask the named area; exclude photographs and transparent canvas. Count the selected accent-colour pixels and divide by all pixels in that mask. Include text unless the condition excludes it. Test each PDF page or held video frame separately. Yes only when the unrounded percentage is at or below the stated limit. Use the linked measurement guide for rasterisation and colour matching. Each RGB channel must be within 5 of a selected palette colour.",
+  "measurement": {
+   "kind": "area_ratio",
+   "channel_tolerance": 5,
+   "max_percent": 5
+  }
  },
  {
   "task_id": "PHOTO-19",
@@ -25907,7 +26252,7 @@
   "check_id": "PHOTO-19/speaker-card-r016/H056",
   "type": "human",
   "output_reference": "deliverables/speaker-card-r016.png",
-  "check": "On “Summit speaker card - Hugo Almeida” (speaker-card-r016.png), Signal Copper and Evergreen together cover no more than about 5% of the area outside the photograph.",
+  "check": "On “Summit speaker card - Hugo Almeida” (speaker-card-r016.png), Signal Copper and Evergreen together cover no more than 5% of the area outside the photograph.",
   "answer_type": "yes_no",
   "allowed_answers": [
    "Yes",
@@ -25920,15 +26265,20 @@
   "evidence_reference": "Palette rules, distribution: Signal Copper and Evergreen together no more than 5% of the designed, non-photographic area.",
   "artifact_name": "Summit speaker card - Hugo Almeida",
   "artifact_file": "speaker-card-r016.png",
-  "requirement": "On “Summit speaker card - Hugo Almeida” (speaker-card-r016.png), Signal Copper and Evergreen together cover no more than about 5% of the area outside the photograph.",
-  "pass_condition": "On “Summit speaker card - Hugo Almeida” (speaker-card-r016.png), Signal Copper and Evergreen together cover no more than about 5% of the area outside the photograph.",
+  "requirement": "On “Summit speaker card - Hugo Almeida” (speaker-card-r016.png), Signal Copper and Evergreen together cover no more than 5% of the area outside the photograph.",
+  "pass_condition": "On “Summit speaker card - Hugo Almeida” (speaker-card-r016.png), Signal Copper and Evergreen together cover no more than 5% of the area outside the photograph.",
   "reference_assets": [],
-  "revision": "pilot13_c_2026_10_22",
+  "revision": "pilot13_verifier_lock_2026_10_22",
   "origin": "pilot13_ab_2026_10_21",
   "k_id": "K2_Q3",
   "k_label": "Brand-system compliance",
-  "method": "estimate",
-  "method_note": "Estimate the share of the non-photographic area in Signal Copper and Evergreen; answer No only if it is clearly over 5%."
+  "method": "measure",
+  "method_note": "Measure, do not estimate. On a measurement copy, mask the named area; exclude photographs and transparent canvas. Count the selected accent-colour pixels and divide by all pixels in that mask. Include text unless the condition excludes it. Test each PDF page or held video frame separately. Yes only when the unrounded percentage is at or below the stated limit. Use the linked measurement guide for rasterisation and colour matching. Each RGB channel must be within 5 of a selected palette colour.",
+  "measurement": {
+   "kind": "area_ratio",
+   "channel_tolerance": 5,
+   "max_percent": 5
+  }
  },
  {
   "task_id": "PHOTO-19",
@@ -26454,7 +26804,7 @@
   "check_id": "PHOTO-19/speaker-card-r017/H056",
   "type": "human",
   "output_reference": "deliverables/speaker-card-r017.png",
-  "check": "On “Summit speaker card - Karin Voss” (speaker-card-r017.png), Signal Copper and Evergreen together cover no more than about 5% of the area outside the photograph.",
+  "check": "On “Summit speaker card - Karin Voss” (speaker-card-r017.png), Signal Copper and Evergreen together cover no more than 5% of the area outside the photograph.",
   "answer_type": "yes_no",
   "allowed_answers": [
    "Yes",
@@ -26467,15 +26817,20 @@
   "evidence_reference": "Palette rules, distribution: Signal Copper and Evergreen together no more than 5% of the designed, non-photographic area.",
   "artifact_name": "Summit speaker card - Karin Voss",
   "artifact_file": "speaker-card-r017.png",
-  "requirement": "On “Summit speaker card - Karin Voss” (speaker-card-r017.png), Signal Copper and Evergreen together cover no more than about 5% of the area outside the photograph.",
-  "pass_condition": "On “Summit speaker card - Karin Voss” (speaker-card-r017.png), Signal Copper and Evergreen together cover no more than about 5% of the area outside the photograph.",
+  "requirement": "On “Summit speaker card - Karin Voss” (speaker-card-r017.png), Signal Copper and Evergreen together cover no more than 5% of the area outside the photograph.",
+  "pass_condition": "On “Summit speaker card - Karin Voss” (speaker-card-r017.png), Signal Copper and Evergreen together cover no more than 5% of the area outside the photograph.",
   "reference_assets": [],
-  "revision": "pilot13_c_2026_10_22",
+  "revision": "pilot13_verifier_lock_2026_10_22",
   "origin": "pilot13_ab_2026_10_21",
   "k_id": "K2_Q3",
   "k_label": "Brand-system compliance",
-  "method": "estimate",
-  "method_note": "Estimate the share of the non-photographic area in Signal Copper and Evergreen; answer No only if it is clearly over 5%."
+  "method": "measure",
+  "method_note": "Measure, do not estimate. On a measurement copy, mask the named area; exclude photographs and transparent canvas. Count the selected accent-colour pixels and divide by all pixels in that mask. Include text unless the condition excludes it. Test each PDF page or held video frame separately. Yes only when the unrounded percentage is at or below the stated limit. Use the linked measurement guide for rasterisation and colour matching. Each RGB channel must be within 5 of a selected palette colour.",
+  "measurement": {
+   "kind": "area_ratio",
+   "channel_tolerance": 5,
+   "max_percent": 5
+  }
  },
  {
   "task_id": "PHOTO-19",
@@ -27001,7 +27356,7 @@
   "check_id": "PHOTO-19/speaker-card-r018/H056",
   "type": "human",
   "output_reference": "deliverables/speaker-card-r018.png",
-  "check": "On “Summit host card - Laurel Beckett” (speaker-card-r018.png), Signal Copper and Evergreen together cover no more than about 5% of the area outside the photograph.",
+  "check": "On “Summit host card - Laurel Beckett” (speaker-card-r018.png), Signal Copper and Evergreen together cover no more than 5% of the area outside the photograph.",
   "answer_type": "yes_no",
   "allowed_answers": [
    "Yes",
@@ -27014,15 +27369,20 @@
   "evidence_reference": "Palette rules, distribution: Signal Copper and Evergreen together no more than 5% of the designed, non-photographic area.",
   "artifact_name": "Summit host card - Laurel Beckett",
   "artifact_file": "speaker-card-r018.png",
-  "requirement": "On “Summit host card - Laurel Beckett” (speaker-card-r018.png), Signal Copper and Evergreen together cover no more than about 5% of the area outside the photograph.",
-  "pass_condition": "On “Summit host card - Laurel Beckett” (speaker-card-r018.png), Signal Copper and Evergreen together cover no more than about 5% of the area outside the photograph.",
+  "requirement": "On “Summit host card - Laurel Beckett” (speaker-card-r018.png), Signal Copper and Evergreen together cover no more than 5% of the area outside the photograph.",
+  "pass_condition": "On “Summit host card - Laurel Beckett” (speaker-card-r018.png), Signal Copper and Evergreen together cover no more than 5% of the area outside the photograph.",
   "reference_assets": [],
-  "revision": "pilot13_c_2026_10_22",
+  "revision": "pilot13_verifier_lock_2026_10_22",
   "origin": "pilot13_ab_2026_10_21",
   "k_id": "K2_Q3",
   "k_label": "Brand-system compliance",
-  "method": "estimate",
-  "method_note": "Estimate the share of the non-photographic area in Signal Copper and Evergreen; answer No only if it is clearly over 5%."
+  "method": "measure",
+  "method_note": "Measure, do not estimate. On a measurement copy, mask the named area; exclude photographs and transparent canvas. Count the selected accent-colour pixels and divide by all pixels in that mask. Include text unless the condition excludes it. Test each PDF page or held video frame separately. Yes only when the unrounded percentage is at or below the stated limit. Use the linked measurement guide for rasterisation and colour matching. Each RGB channel must be within 5 of a selected palette colour.",
+  "measurement": {
+   "kind": "area_ratio",
+   "channel_tolerance": 5,
+   "max_percent": 5
+  }
  },
  {
   "task_id": "PHOTO-19",
@@ -27548,7 +27908,7 @@
   "check_id": "PHOTO-19/speaker-card-r019/H056",
   "type": "human",
   "output_reference": "deliverables/speaker-card-r019.png",
-  "check": "On “Summit host card - Owen Faraday” (speaker-card-r019.png), Signal Copper and Evergreen together cover no more than about 5% of the area outside the photograph.",
+  "check": "On “Summit host card - Owen Faraday” (speaker-card-r019.png), Signal Copper and Evergreen together cover no more than 5% of the area outside the photograph.",
   "answer_type": "yes_no",
   "allowed_answers": [
    "Yes",
@@ -27561,15 +27921,20 @@
   "evidence_reference": "Palette rules, distribution: Signal Copper and Evergreen together no more than 5% of the designed, non-photographic area.",
   "artifact_name": "Summit host card - Owen Faraday",
   "artifact_file": "speaker-card-r019.png",
-  "requirement": "On “Summit host card - Owen Faraday” (speaker-card-r019.png), Signal Copper and Evergreen together cover no more than about 5% of the area outside the photograph.",
-  "pass_condition": "On “Summit host card - Owen Faraday” (speaker-card-r019.png), Signal Copper and Evergreen together cover no more than about 5% of the area outside the photograph.",
+  "requirement": "On “Summit host card - Owen Faraday” (speaker-card-r019.png), Signal Copper and Evergreen together cover no more than 5% of the area outside the photograph.",
+  "pass_condition": "On “Summit host card - Owen Faraday” (speaker-card-r019.png), Signal Copper and Evergreen together cover no more than 5% of the area outside the photograph.",
   "reference_assets": [],
-  "revision": "pilot13_c_2026_10_22",
+  "revision": "pilot13_verifier_lock_2026_10_22",
   "origin": "pilot13_ab_2026_10_21",
   "k_id": "K2_Q3",
   "k_label": "Brand-system compliance",
-  "method": "estimate",
-  "method_note": "Estimate the share of the non-photographic area in Signal Copper and Evergreen; answer No only if it is clearly over 5%."
+  "method": "measure",
+  "method_note": "Measure, do not estimate. On a measurement copy, mask the named area; exclude photographs and transparent canvas. Count the selected accent-colour pixels and divide by all pixels in that mask. Include text unless the condition excludes it. Test each PDF page or held video frame separately. Yes only when the unrounded percentage is at or below the stated limit. Use the linked measurement guide for rasterisation and colour matching. Each RGB channel must be within 5 of a selected palette colour.",
+  "measurement": {
+   "kind": "area_ratio",
+   "channel_tolerance": 5,
+   "max_percent": 5
+  }
  },
  {
   "task_id": "PHOTO-19",
@@ -28095,7 +28460,7 @@
   "check_id": "PHOTO-19/speaker-card-r020/H056",
   "type": "human",
   "output_reference": "deliverables/speaker-card-r020.png",
-  "check": "On “Summit host card - Mireille Dufort” (speaker-card-r020.png), Signal Copper and Evergreen together cover no more than about 5% of the area outside the photograph.",
+  "check": "On “Summit host card - Mireille Dufort” (speaker-card-r020.png), Signal Copper and Evergreen together cover no more than 5% of the area outside the photograph.",
   "answer_type": "yes_no",
   "allowed_answers": [
    "Yes",
@@ -28108,15 +28473,20 @@
   "evidence_reference": "Palette rules, distribution: Signal Copper and Evergreen together no more than 5% of the designed, non-photographic area.",
   "artifact_name": "Summit host card - Mireille Dufort",
   "artifact_file": "speaker-card-r020.png",
-  "requirement": "On “Summit host card - Mireille Dufort” (speaker-card-r020.png), Signal Copper and Evergreen together cover no more than about 5% of the area outside the photograph.",
-  "pass_condition": "On “Summit host card - Mireille Dufort” (speaker-card-r020.png), Signal Copper and Evergreen together cover no more than about 5% of the area outside the photograph.",
+  "requirement": "On “Summit host card - Mireille Dufort” (speaker-card-r020.png), Signal Copper and Evergreen together cover no more than 5% of the area outside the photograph.",
+  "pass_condition": "On “Summit host card - Mireille Dufort” (speaker-card-r020.png), Signal Copper and Evergreen together cover no more than 5% of the area outside the photograph.",
   "reference_assets": [],
-  "revision": "pilot13_c_2026_10_22",
+  "revision": "pilot13_verifier_lock_2026_10_22",
   "origin": "pilot13_ab_2026_10_21",
   "k_id": "K2_Q3",
   "k_label": "Brand-system compliance",
-  "method": "estimate",
-  "method_note": "Estimate the share of the non-photographic area in Signal Copper and Evergreen; answer No only if it is clearly over 5%."
+  "method": "measure",
+  "method_note": "Measure, do not estimate. On a measurement copy, mask the named area; exclude photographs and transparent canvas. Count the selected accent-colour pixels and divide by all pixels in that mask. Include text unless the condition excludes it. Test each PDF page or held video frame separately. Yes only when the unrounded percentage is at or below the stated limit. Use the linked measurement guide for rasterisation and colour matching. Each RGB channel must be within 5 of a selected palette colour.",
+  "measurement": {
+   "kind": "area_ratio",
+   "channel_tolerance": 5,
+   "max_percent": 5
+  }
  },
  {
   "task_id": "PHOTO-19",
@@ -28347,7 +28717,7 @@
   "check_id": "PHOTO-19/speaker-card-r021/H060",
   "type": "human",
   "output_reference": "deliverables/speaker-card-r021.png",
-  "check": "On “Summit host card - Jonah Pryce” (speaker-card-r021.png), Signal Copper and Evergreen together cover no more than about 5% of the area outside the photograph.",
+  "check": "On “Summit host card - Jonah Pryce” (speaker-card-r021.png), Signal Copper and Evergreen together cover no more than 5% of the area outside the photograph.",
   "answer_type": "yes_no",
   "allowed_answers": [
    "Yes",
@@ -28360,15 +28730,20 @@
   "evidence_reference": "Palette rules, distribution: Signal Copper and Evergreen together no more than 5% of the designed, non-photographic area.",
   "artifact_name": "Summit host card - Jonah Pryce",
   "artifact_file": "speaker-card-r021.png",
-  "requirement": "On “Summit host card - Jonah Pryce” (speaker-card-r021.png), Signal Copper and Evergreen together cover no more than about 5% of the area outside the photograph.",
-  "pass_condition": "On “Summit host card - Jonah Pryce” (speaker-card-r021.png), Signal Copper and Evergreen together cover no more than about 5% of the area outside the photograph.",
+  "requirement": "On “Summit host card - Jonah Pryce” (speaker-card-r021.png), Signal Copper and Evergreen together cover no more than 5% of the area outside the photograph.",
+  "pass_condition": "On “Summit host card - Jonah Pryce” (speaker-card-r021.png), Signal Copper and Evergreen together cover no more than 5% of the area outside the photograph.",
   "reference_assets": [],
-  "revision": "pilot13_c_2026_10_22",
+  "revision": "pilot13_verifier_lock_2026_10_22",
   "origin": "pilot13_ab_2026_10_21",
   "k_id": "K2_Q3",
   "k_label": "Brand-system compliance",
-  "method": "estimate",
-  "method_note": "Estimate the share of the non-photographic area in Signal Copper and Evergreen; answer No only if it is clearly over 5%."
+  "method": "measure",
+  "method_note": "Measure, do not estimate. On a measurement copy, mask the named area; exclude photographs and transparent canvas. Count the selected accent-colour pixels and divide by all pixels in that mask. Include text unless the condition excludes it. Test each PDF page or held video frame separately. Yes only when the unrounded percentage is at or below the stated limit. Use the linked measurement guide for rasterisation and colour matching. Each RGB channel must be within 5 of a selected palette colour.",
+  "measurement": {
+   "kind": "area_ratio",
+   "channel_tolerance": 5,
+   "max_percent": 5
+  }
  },
  {
   "task_id": "PHOTO-19",
@@ -28604,7 +28979,7 @@
   "check_id": "PHOTO-19/summit-announcement/H061",
   "type": "human",
   "output_reference": "deliverables/summit-announcement.png",
-  "check": "On “Summit announcement” (summit-announcement.png), Signal Copper and Evergreen together cover no more than about 5% of the area outside any photograph.",
+  "check": "On “Summit announcement” (summit-announcement.png), Signal Copper and Evergreen together cover no more than 5% of the area outside any photograph.",
   "answer_type": "yes_no",
   "allowed_answers": [
    "Yes",
@@ -28617,15 +28992,20 @@
   "evidence_reference": "Palette rules, distribution: Signal Copper and Evergreen together no more than 5% of the designed, non-photographic area.",
   "artifact_name": "Summit announcement",
   "artifact_file": "summit-announcement.png",
-  "requirement": "On “Summit announcement” (summit-announcement.png), Signal Copper and Evergreen together cover no more than about 5% of the area outside any photograph.",
-  "pass_condition": "On “Summit announcement” (summit-announcement.png), Signal Copper and Evergreen together cover no more than about 5% of the area outside any photograph.",
+  "requirement": "On “Summit announcement” (summit-announcement.png), Signal Copper and Evergreen together cover no more than 5% of the area outside any photograph.",
+  "pass_condition": "On “Summit announcement” (summit-announcement.png), Signal Copper and Evergreen together cover no more than 5% of the area outside any photograph.",
   "reference_assets": [],
-  "revision": "pilot13_c_2026_10_22",
+  "revision": "pilot13_verifier_lock_2026_10_22",
   "origin": "pilot13_ab_2026_10_21",
   "k_id": "K2_Q3",
   "k_label": "Brand-system compliance",
-  "method": "estimate",
-  "method_note": "Estimate the share of the non-photographic area in Signal Copper and Evergreen; answer No only if it is clearly over 5%."
+  "method": "measure",
+  "method_note": "Measure, do not estimate. On a measurement copy, mask the named area; exclude photographs and transparent canvas. Count the selected accent-colour pixels and divide by all pixels in that mask. Include text unless the condition excludes it. Test each PDF page or held video frame separately. Yes only when the unrounded percentage is at or below the stated limit. Use the linked measurement guide for rasterisation and colour matching. Each RGB channel must be within 5 of a selected palette colour.",
+  "measurement": {
+   "kind": "area_ratio",
+   "channel_tolerance": 5,
+   "max_percent": 5
+  }
  },
  {
   "task_id": "PHOTO-19",
@@ -32459,5 +32839,670 @@
   "k_label": "Brand-system compliance",
   "method": "measure",
   "method_note": "Eyedropper the light grounds and panels outside any photograph; answer Yes if any matches #F2EEE7. A sample matches a stated hex when R, G and B are each within 5 of it."
+ },
+ {
+  "task_id": "PHOTO-19",
+  "output_id": "speaker-card-r007",
+  "check_id": "PHOTO-19/speaker-card-r007/H063",
+  "type": "human",
+  "output_reference": "deliverables/speaker-card-r007.png",
+  "check": "No portrait in speaker-card-r007.png has a flat direct-flash shine across the face.",
+  "answer_type": "yes_no",
+  "allowed_answers": [
+   "Yes",
+   "No"
+  ],
+  "pass_answer": "Yes",
+  "answer": null,
+  "status": "not_assessed",
+  "source_statement": "The portrait on “Summit speaker card - Colm Byrne” (speaker-card-r007.png) shows no hard direct-flash look: no hard flash shadow behind the head and no flat shine across the face.",
+  "evidence_reference": "Palette rules, photography: no flat, hard direct-flash look. summit_brand_notes.txt: not a free meetup (no flat hard direct flash).",
+  "artifact_name": "Summit speaker card - Colm Byrne",
+  "artifact_file": "speaker-card-r007.png",
+  "requirement": "No portrait in speaker-card-r007.png has a flat direct-flash shine across the face.",
+  "pass_condition": "No portrait in speaker-card-r007.png has a flat direct-flash shine across the face.",
+  "reference_assets": [
+   {
+    "filename": "summit_brand_notes.txt",
+    "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/tasks/SB3-019-PHO__cascadia-founders-summit-executive-portrait-set/assets/summit_brand_notes.txt"
+   }
+  ],
+  "k_id": "K2_Q3",
+  "k_label": "Brand-system compliance",
+  "origin": "review_feedback_2026_09_25",
+  "revision": "pilot13_verifier_lock_2026_10_22",
+  "method": "look",
+  "method_note": "Inspect the named output against this requirement and its linked references.",
+  "split_from": "PHOTO-19/speaker-card-r007/H018"
+ },
+ {
+  "task_id": "PHOTO-19",
+  "output_id": "speaker-card-r008",
+  "check_id": "PHOTO-19/speaker-card-r008/H063",
+  "type": "human",
+  "output_reference": "deliverables/speaker-card-r008.png",
+  "check": "No portrait in speaker-card-r008.png has a flat direct-flash shine across the face.",
+  "answer_type": "yes_no",
+  "allowed_answers": [
+   "Yes",
+   "No"
+  ],
+  "pass_answer": "Yes",
+  "answer": null,
+  "status": "not_assessed",
+  "source_statement": "The portrait on “Summit speaker card - Dana Whitfield” (speaker-card-r008.png) shows no hard direct-flash look: no hard flash shadow behind the head and no flat shine across the face.",
+  "evidence_reference": "Palette rules, photography: no flat, hard direct-flash look. summit_brand_notes.txt: not a free meetup (no flat hard direct flash).",
+  "artifact_name": "Summit speaker card - Dana Whitfield",
+  "artifact_file": "speaker-card-r008.png",
+  "requirement": "No portrait in speaker-card-r008.png has a flat direct-flash shine across the face.",
+  "pass_condition": "No portrait in speaker-card-r008.png has a flat direct-flash shine across the face.",
+  "reference_assets": [
+   {
+    "filename": "summit_brand_notes.txt",
+    "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/tasks/SB3-019-PHO__cascadia-founders-summit-executive-portrait-set/assets/summit_brand_notes.txt"
+   }
+  ],
+  "k_id": "K2_Q3",
+  "k_label": "Brand-system compliance",
+  "origin": "review_feedback_2026_09_25",
+  "revision": "pilot13_verifier_lock_2026_10_22",
+  "method": "look",
+  "method_note": "Inspect the named output against this requirement and its linked references.",
+  "split_from": "PHOTO-19/speaker-card-r008/H018"
+ },
+ {
+  "task_id": "PHOTO-19",
+  "output_id": "speaker-card-r009",
+  "check_id": "PHOTO-19/speaker-card-r009/H063",
+  "type": "human",
+  "output_reference": "deliverables/speaker-card-r009.png",
+  "check": "No portrait in speaker-card-r009.png has a flat direct-flash shine across the face.",
+  "answer_type": "yes_no",
+  "allowed_answers": [
+   "Yes",
+   "No"
+  ],
+  "pass_answer": "Yes",
+  "answer": null,
+  "status": "not_assessed",
+  "source_statement": "The portrait on “Summit speaker card - Estelle Rioux” (speaker-card-r009.png) shows no hard direct-flash look: no hard flash shadow behind the head and no flat shine across the face.",
+  "evidence_reference": "Palette rules, photography: no flat, hard direct-flash look. summit_brand_notes.txt: not a free meetup (no flat hard direct flash).",
+  "artifact_name": "Summit speaker card - Estelle Rioux",
+  "artifact_file": "speaker-card-r009.png",
+  "requirement": "No portrait in speaker-card-r009.png has a flat direct-flash shine across the face.",
+  "pass_condition": "No portrait in speaker-card-r009.png has a flat direct-flash shine across the face.",
+  "reference_assets": [
+   {
+    "filename": "summit_brand_notes.txt",
+    "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/tasks/SB3-019-PHO__cascadia-founders-summit-executive-portrait-set/assets/summit_brand_notes.txt"
+   }
+  ],
+  "k_id": "K2_Q3",
+  "k_label": "Brand-system compliance",
+  "origin": "review_feedback_2026_09_25",
+  "revision": "pilot13_verifier_lock_2026_10_22",
+  "method": "look",
+  "method_note": "Inspect the named output against this requirement and its linked references.",
+  "split_from": "PHOTO-19/speaker-card-r009/H018"
+ },
+ {
+  "task_id": "PHOTO-19",
+  "output_id": "speaker-card-r010",
+  "check_id": "PHOTO-19/speaker-card-r010/H065",
+  "type": "human",
+  "output_reference": "deliverables/speaker-card-r010.png",
+  "check": "No portrait in speaker-card-r010.png has a flat direct-flash shine across the face.",
+  "answer_type": "yes_no",
+  "allowed_answers": [
+   "Yes",
+   "No"
+  ],
+  "pass_answer": "Yes",
+  "answer": null,
+  "status": "not_assessed",
+  "source_statement": "The portrait on “Summit speaker card - Grant Mackey” (speaker-card-r010.png) shows no hard direct-flash look: no hard flash shadow behind the head and no flat shine across the face.",
+  "evidence_reference": "Palette rules, photography: no flat, hard direct-flash look. summit_brand_notes.txt: not a free meetup (no flat hard direct flash).",
+  "artifact_name": "Summit speaker card - Grant Mackey",
+  "artifact_file": "speaker-card-r010.png",
+  "requirement": "No portrait in speaker-card-r010.png has a flat direct-flash shine across the face.",
+  "pass_condition": "No portrait in speaker-card-r010.png has a flat direct-flash shine across the face.",
+  "reference_assets": [
+   {
+    "filename": "summit_brand_notes.txt",
+    "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/tasks/SB3-019-PHO__cascadia-founders-summit-executive-portrait-set/assets/summit_brand_notes.txt"
+   }
+  ],
+  "k_id": "K2_Q3",
+  "k_label": "Brand-system compliance",
+  "origin": "review_feedback_2026_09_25",
+  "revision": "pilot13_verifier_lock_2026_10_22",
+  "method": "look",
+  "method_note": "Inspect the named output against this requirement and its linked references.",
+  "split_from": "PHOTO-19/speaker-card-r010/H019"
+ },
+ {
+  "task_id": "PHOTO-19",
+  "output_id": "speaker-card-r011",
+  "check_id": "PHOTO-19/speaker-card-r011/H063",
+  "type": "human",
+  "output_reference": "deliverables/speaker-card-r011.png",
+  "check": "No portrait in speaker-card-r011.png has a flat direct-flash shine across the face.",
+  "answer_type": "yes_no",
+  "allowed_answers": [
+   "Yes",
+   "No"
+  ],
+  "pass_answer": "Yes",
+  "answer": null,
+  "status": "not_assessed",
+  "source_statement": "The portrait on “Summit speaker card - Sofia Bellini” (speaker-card-r011.png) shows no hard direct-flash look: no hard flash shadow behind the head and no flat shine across the face.",
+  "evidence_reference": "Palette rules, photography: no flat, hard direct-flash look. summit_brand_notes.txt: not a free meetup (no flat hard direct flash).",
+  "artifact_name": "Summit speaker card - Sofia Bellini",
+  "artifact_file": "speaker-card-r011.png",
+  "requirement": "No portrait in speaker-card-r011.png has a flat direct-flash shine across the face.",
+  "pass_condition": "No portrait in speaker-card-r011.png has a flat direct-flash shine across the face.",
+  "reference_assets": [
+   {
+    "filename": "summit_brand_notes.txt",
+    "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/tasks/SB3-019-PHO__cascadia-founders-summit-executive-portrait-set/assets/summit_brand_notes.txt"
+   }
+  ],
+  "k_id": "K2_Q3",
+  "k_label": "Brand-system compliance",
+  "origin": "review_feedback_2026_09_25",
+  "revision": "pilot13_verifier_lock_2026_10_22",
+  "method": "look",
+  "method_note": "Inspect the named output against this requirement and its linked references.",
+  "split_from": "PHOTO-19/speaker-card-r011/H018"
+ },
+ {
+  "task_id": "PHOTO-19",
+  "output_id": "speaker-card-r013",
+  "check_id": "PHOTO-19/speaker-card-r013/H063",
+  "type": "human",
+  "output_reference": "deliverables/speaker-card-r013.png",
+  "check": "No portrait in speaker-card-r013.png has a flat direct-flash shine across the face.",
+  "answer_type": "yes_no",
+  "allowed_answers": [
+   "Yes",
+   "No"
+  ],
+  "pass_answer": "Yes",
+  "answer": null,
+  "status": "not_assessed",
+  "source_statement": "The portrait on “Summit speaker card - Nils Haugen” (speaker-card-r013.png) shows no hard direct-flash look: no hard flash shadow behind the head and no flat shine across the face.",
+  "evidence_reference": "Palette rules, photography: no flat, hard direct-flash look. summit_brand_notes.txt: not a free meetup (no flat hard direct flash).",
+  "artifact_name": "Summit speaker card - Nils Haugen",
+  "artifact_file": "speaker-card-r013.png",
+  "requirement": "No portrait in speaker-card-r013.png has a flat direct-flash shine across the face.",
+  "pass_condition": "No portrait in speaker-card-r013.png has a flat direct-flash shine across the face.",
+  "reference_assets": [
+   {
+    "filename": "summit_brand_notes.txt",
+    "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/tasks/SB3-019-PHO__cascadia-founders-summit-executive-portrait-set/assets/summit_brand_notes.txt"
+   }
+  ],
+  "k_id": "K2_Q3",
+  "k_label": "Brand-system compliance",
+  "origin": "review_feedback_2026_09_25",
+  "revision": "pilot13_verifier_lock_2026_10_22",
+  "method": "look",
+  "method_note": "Inspect the named output against this requirement and its linked references.",
+  "split_from": "PHOTO-19/speaker-card-r013/H018"
+ },
+ {
+  "task_id": "PHOTO-19",
+  "output_id": "speaker-card-r014",
+  "check_id": "PHOTO-19/speaker-card-r014/H063",
+  "type": "human",
+  "output_reference": "deliverables/speaker-card-r014.png",
+  "check": "No portrait in speaker-card-r014.png has a flat direct-flash shine across the face.",
+  "answer_type": "yes_no",
+  "allowed_answers": [
+   "Yes",
+   "No"
+  ],
+  "pass_answer": "Yes",
+  "answer": null,
+  "status": "not_assessed",
+  "source_statement": "The portrait on “Summit speaker card - Robin Tate” (speaker-card-r014.png) shows no hard direct-flash look: no hard flash shadow behind the head and no flat shine across the face.",
+  "evidence_reference": "Palette rules, photography: no flat, hard direct-flash look. summit_brand_notes.txt: not a free meetup (no flat hard direct flash).",
+  "artifact_name": "Summit speaker card - Robin Tate",
+  "artifact_file": "speaker-card-r014.png",
+  "requirement": "No portrait in speaker-card-r014.png has a flat direct-flash shine across the face.",
+  "pass_condition": "No portrait in speaker-card-r014.png has a flat direct-flash shine across the face.",
+  "reference_assets": [
+   {
+    "filename": "summit_brand_notes.txt",
+    "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/tasks/SB3-019-PHO__cascadia-founders-summit-executive-portrait-set/assets/summit_brand_notes.txt"
+   }
+  ],
+  "k_id": "K2_Q3",
+  "k_label": "Brand-system compliance",
+  "origin": "review_feedback_2026_09_25",
+  "revision": "pilot13_verifier_lock_2026_10_22",
+  "method": "look",
+  "method_note": "Inspect the named output against this requirement and its linked references.",
+  "split_from": "PHOTO-19/speaker-card-r014/H018"
+ },
+ {
+  "task_id": "PHOTO-19",
+  "output_id": "speaker-card-r015",
+  "check_id": "PHOTO-19/speaker-card-r015/H063",
+  "type": "human",
+  "output_reference": "deliverables/speaker-card-r015.png",
+  "check": "No portrait in speaker-card-r015.png has a flat direct-flash shine across the face.",
+  "answer_type": "yes_no",
+  "allowed_answers": [
+   "Yes",
+   "No"
+  ],
+  "pass_answer": "Yes",
+  "answer": null,
+  "status": "not_assessed",
+  "source_statement": "The portrait on “Summit speaker card - Bernadette Cruz” (speaker-card-r015.png) shows no hard direct-flash look: no hard flash shadow behind the head and no flat shine across the face.",
+  "evidence_reference": "Palette rules, photography: no flat, hard direct-flash look. summit_brand_notes.txt: not a free meetup (no flat hard direct flash).",
+  "artifact_name": "Summit speaker card - Bernadette Cruz",
+  "artifact_file": "speaker-card-r015.png",
+  "requirement": "No portrait in speaker-card-r015.png has a flat direct-flash shine across the face.",
+  "pass_condition": "No portrait in speaker-card-r015.png has a flat direct-flash shine across the face.",
+  "reference_assets": [
+   {
+    "filename": "summit_brand_notes.txt",
+    "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/tasks/SB3-019-PHO__cascadia-founders-summit-executive-portrait-set/assets/summit_brand_notes.txt"
+   }
+  ],
+  "k_id": "K2_Q3",
+  "k_label": "Brand-system compliance",
+  "origin": "review_feedback_2026_09_25",
+  "revision": "pilot13_verifier_lock_2026_10_22",
+  "method": "look",
+  "method_note": "Inspect the named output against this requirement and its linked references.",
+  "split_from": "PHOTO-19/speaker-card-r015/H018"
+ },
+ {
+  "task_id": "PHOTO-19",
+  "output_id": "speaker-card-r016",
+  "check_id": "PHOTO-19/speaker-card-r016/H063",
+  "type": "human",
+  "output_reference": "deliverables/speaker-card-r016.png",
+  "check": "No portrait in speaker-card-r016.png has a flat direct-flash shine across the face.",
+  "answer_type": "yes_no",
+  "allowed_answers": [
+   "Yes",
+   "No"
+  ],
+  "pass_answer": "Yes",
+  "answer": null,
+  "status": "not_assessed",
+  "source_statement": "The portrait on “Summit speaker card - Hugo Almeida” (speaker-card-r016.png) shows no hard direct-flash look: no hard flash shadow behind the head and no flat shine across the face.",
+  "evidence_reference": "Palette rules, photography: no flat, hard direct-flash look. summit_brand_notes.txt: not a free meetup (no flat hard direct flash).",
+  "artifact_name": "Summit speaker card - Hugo Almeida",
+  "artifact_file": "speaker-card-r016.png",
+  "requirement": "No portrait in speaker-card-r016.png has a flat direct-flash shine across the face.",
+  "pass_condition": "No portrait in speaker-card-r016.png has a flat direct-flash shine across the face.",
+  "reference_assets": [
+   {
+    "filename": "summit_brand_notes.txt",
+    "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/tasks/SB3-019-PHO__cascadia-founders-summit-executive-portrait-set/assets/summit_brand_notes.txt"
+   }
+  ],
+  "k_id": "K2_Q3",
+  "k_label": "Brand-system compliance",
+  "origin": "review_feedback_2026_09_25",
+  "revision": "pilot13_verifier_lock_2026_10_22",
+  "method": "look",
+  "method_note": "Inspect the named output against this requirement and its linked references.",
+  "split_from": "PHOTO-19/speaker-card-r016/H018"
+ },
+ {
+  "task_id": "PHOTO-19",
+  "output_id": "speaker-card-r017",
+  "check_id": "PHOTO-19/speaker-card-r017/H063",
+  "type": "human",
+  "output_reference": "deliverables/speaker-card-r017.png",
+  "check": "No portrait in speaker-card-r017.png has a flat direct-flash shine across the face.",
+  "answer_type": "yes_no",
+  "allowed_answers": [
+   "Yes",
+   "No"
+  ],
+  "pass_answer": "Yes",
+  "answer": null,
+  "status": "not_assessed",
+  "source_statement": "The portrait on “Summit speaker card - Karin Voss” (speaker-card-r017.png) shows no hard direct-flash look: no hard flash shadow behind the head and no flat shine across the face.",
+  "evidence_reference": "Palette rules, photography: no flat, hard direct-flash look. summit_brand_notes.txt: not a free meetup (no flat hard direct flash).",
+  "artifact_name": "Summit speaker card - Karin Voss",
+  "artifact_file": "speaker-card-r017.png",
+  "requirement": "No portrait in speaker-card-r017.png has a flat direct-flash shine across the face.",
+  "pass_condition": "No portrait in speaker-card-r017.png has a flat direct-flash shine across the face.",
+  "reference_assets": [
+   {
+    "filename": "summit_brand_notes.txt",
+    "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/tasks/SB3-019-PHO__cascadia-founders-summit-executive-portrait-set/assets/summit_brand_notes.txt"
+   }
+  ],
+  "k_id": "K2_Q3",
+  "k_label": "Brand-system compliance",
+  "origin": "review_feedback_2026_09_25",
+  "revision": "pilot13_verifier_lock_2026_10_22",
+  "method": "look",
+  "method_note": "Inspect the named output against this requirement and its linked references.",
+  "split_from": "PHOTO-19/speaker-card-r017/H018"
+ },
+ {
+  "task_id": "PHOTO-19",
+  "output_id": "speaker-card-r019",
+  "check_id": "PHOTO-19/speaker-card-r019/H063",
+  "type": "human",
+  "output_reference": "deliverables/speaker-card-r019.png",
+  "check": "No portrait in speaker-card-r019.png has a flat direct-flash shine across the face.",
+  "answer_type": "yes_no",
+  "allowed_answers": [
+   "Yes",
+   "No"
+  ],
+  "pass_answer": "Yes",
+  "answer": null,
+  "status": "not_assessed",
+  "source_statement": "The portrait on “Summit host card - Owen Faraday” (speaker-card-r019.png) shows no hard direct-flash look: no hard flash shadow behind the head and no flat shine across the face.",
+  "evidence_reference": "Palette rules, photography: no flat, hard direct-flash look. summit_brand_notes.txt: not a free meetup (no flat hard direct flash).",
+  "artifact_name": "Summit host card - Owen Faraday",
+  "artifact_file": "speaker-card-r019.png",
+  "requirement": "No portrait in speaker-card-r019.png has a flat direct-flash shine across the face.",
+  "pass_condition": "No portrait in speaker-card-r019.png has a flat direct-flash shine across the face.",
+  "reference_assets": [
+   {
+    "filename": "summit_brand_notes.txt",
+    "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/tasks/SB3-019-PHO__cascadia-founders-summit-executive-portrait-set/assets/summit_brand_notes.txt"
+   }
+  ],
+  "k_id": "K2_Q3",
+  "k_label": "Brand-system compliance",
+  "origin": "review_feedback_2026_09_25",
+  "revision": "pilot13_verifier_lock_2026_10_22",
+  "method": "look",
+  "method_note": "Inspect the named output against this requirement and its linked references.",
+  "split_from": "PHOTO-19/speaker-card-r019/H018"
+ },
+ {
+  "task_id": "PHOTO-19",
+  "output_id": "speaker-card-r020",
+  "check_id": "PHOTO-19/speaker-card-r020/H063",
+  "type": "human",
+  "output_reference": "deliverables/speaker-card-r020.png",
+  "check": "No portrait in speaker-card-r020.png has a flat direct-flash shine across the face.",
+  "answer_type": "yes_no",
+  "allowed_answers": [
+   "Yes",
+   "No"
+  ],
+  "pass_answer": "Yes",
+  "answer": null,
+  "status": "not_assessed",
+  "source_statement": "The portrait on “Summit host card - Mireille Dufort” (speaker-card-r020.png) shows no hard direct-flash look: no hard flash shadow behind the head and no flat shine across the face.",
+  "evidence_reference": "Palette rules, photography: no flat, hard direct-flash look. summit_brand_notes.txt: not a free meetup (no flat hard direct flash).",
+  "artifact_name": "Summit host card - Mireille Dufort",
+  "artifact_file": "speaker-card-r020.png",
+  "requirement": "No portrait in speaker-card-r020.png has a flat direct-flash shine across the face.",
+  "pass_condition": "No portrait in speaker-card-r020.png has a flat direct-flash shine across the face.",
+  "reference_assets": [
+   {
+    "filename": "summit_brand_notes.txt",
+    "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/tasks/SB3-019-PHO__cascadia-founders-summit-executive-portrait-set/assets/summit_brand_notes.txt"
+   }
+  ],
+  "k_id": "K2_Q3",
+  "k_label": "Brand-system compliance",
+  "origin": "review_feedback_2026_09_25",
+  "revision": "pilot13_verifier_lock_2026_10_22",
+  "method": "look",
+  "method_note": "Inspect the named output against this requirement and its linked references.",
+  "split_from": "PHOTO-19/speaker-card-r020/H018"
+ },
+ {
+  "task_id": "PHOTO-19",
+  "output_id": "speaker-card-r021",
+  "check_id": "PHOTO-19/speaker-card-r021/H067",
+  "type": "human",
+  "output_reference": "deliverables/speaker-card-r021.png",
+  "check": "No portrait in speaker-card-r021.png has a flat direct-flash shine across the face.",
+  "answer_type": "yes_no",
+  "allowed_answers": [
+   "Yes",
+   "No"
+  ],
+  "pass_answer": "Yes",
+  "answer": null,
+  "status": "not_assessed",
+  "source_statement": "The portrait on “Summit host card - Jonah Pryce” (speaker-card-r021.png) shows no hard direct-flash look: no hard flash shadow behind the head and no flat shine across the face.",
+  "evidence_reference": "Palette rules, photography: no flat, hard direct-flash look. summit_brand_notes.txt: not a free meetup (no flat hard direct flash).",
+  "artifact_name": "Summit host card - Jonah Pryce",
+  "artifact_file": "speaker-card-r021.png",
+  "requirement": "No portrait in speaker-card-r021.png has a flat direct-flash shine across the face.",
+  "pass_condition": "No portrait in speaker-card-r021.png has a flat direct-flash shine across the face.",
+  "reference_assets": [
+   {
+    "filename": "summit_brand_notes.txt",
+    "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/tasks/SB3-019-PHO__cascadia-founders-summit-executive-portrait-set/assets/summit_brand_notes.txt"
+   }
+  ],
+  "k_id": "K2_Q3",
+  "k_label": "Brand-system compliance",
+  "origin": "review_feedback_2026_09_25",
+  "revision": "pilot13_verifier_lock_2026_10_22",
+  "method": "look",
+  "method_note": "Inspect the named output against this requirement and its linked references.",
+  "split_from": "PHOTO-19/speaker-card-r021/H018"
+ },
+ {
+  "task_id": "PHOTO-19",
+  "output_id": "summit-announcement",
+  "check_id": "PHOTO-19/summit-announcement/H076",
+  "type": "human",
+  "output_reference": "deliverables/summit-announcement.png",
+  "check": "No portrait in summit-announcement.png has a flat direct-flash shine across the face.",
+  "answer_type": "yes_no",
+  "allowed_answers": [
+   "Yes",
+   "No"
+  ],
+  "pass_answer": "Yes",
+  "answer": null,
+  "status": "not_assessed",
+  "source_statement": "Any portrait on “Summit announcement” (summit-announcement.png) shows no hard direct-flash look: no hard flash shadow behind the head and no flat shine across the face.",
+  "evidence_reference": "Palette rules, photography: no flat, hard direct-flash look. summit_brand_notes.txt: not a free meetup (no flat hard direct flash).",
+  "artifact_name": "Summit announcement",
+  "artifact_file": "summit-announcement.png",
+  "requirement": "No portrait in summit-announcement.png has a flat direct-flash shine across the face.",
+  "pass_condition": "No portrait in summit-announcement.png has a flat direct-flash shine across the face.",
+  "reference_assets": [
+   {
+    "filename": "summit_brand_notes.txt",
+    "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/tasks/SB3-019-PHO__cascadia-founders-summit-executive-portrait-set/assets/summit_brand_notes.txt"
+   }
+  ],
+  "k_id": "K2_Q3",
+  "k_label": "Brand-system compliance",
+  "origin": "review_feedback_2026_09_25",
+  "revision": "pilot13_verifier_lock_2026_10_22",
+  "method": "look",
+  "method_note": "Inspect the named output against this requirement and its linked references.",
+  "split_from": "PHOTO-19/summit-announcement/H015"
+ },
+ {
+  "task_id": "PHOTO-19",
+  "output_id": "speaker-card-r005",
+  "check_id": "PHOTO-19/speaker-card-r005/H062",
+  "type": "human",
+  "output_reference": "deliverables/speaker-card-r005.png",
+  "check": "No portrait in speaker-card-r005.png has a flat direct-flash shine across the face.",
+  "answer_type": "yes_no",
+  "allowed_answers": [
+   "Yes",
+   "No"
+  ],
+  "pass_answer": "Yes",
+  "answer": null,
+  "status": "not_assessed",
+  "source_statement": "The portrait on “Summit speaker card - Ines Moreau” (speaker-card-r005.png) shows no hard direct-flash look: no hard flash shadow behind the head and no flat shine across the face.",
+  "evidence_reference": "Palette rules, photography: no flat, hard direct-flash look. summit_brand_notes.txt: not a free meetup (no flat hard direct flash).",
+  "artifact_name": "Summit speaker card - Ines Moreau",
+  "artifact_file": "speaker-card-r005.png",
+  "requirement": "No portrait in speaker-card-r005.png has a flat direct-flash shine across the face.",
+  "pass_condition": "No portrait in speaker-card-r005.png has a flat direct-flash shine across the face.",
+  "reference_assets": [
+   {
+    "filename": "summit_brand_notes.txt",
+    "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/tasks/SB3-019-PHO__cascadia-founders-summit-executive-portrait-set/assets/summit_brand_notes.txt"
+   }
+  ],
+  "k_id": "K2_Q3",
+  "k_label": "Brand-system compliance",
+  "origin": "review_feedback_2026_09_25",
+  "revision": "pilot13_verifier_lock_2026_10_22",
+  "method": "look",
+  "method_note": "Inspect the named output against this requirement and its linked references.",
+  "split_from": "PHOTO-19/speaker-card-r005/H018"
+ },
+ {
+  "task_id": "PHOTO-19",
+  "output_id": "speaker-card-r006",
+  "check_id": "PHOTO-19/speaker-card-r006/H063",
+  "type": "human",
+  "output_reference": "deliverables/speaker-card-r006.png",
+  "check": "No portrait in speaker-card-r006.png has a flat direct-flash shine across the face.",
+  "answer_type": "yes_no",
+  "allowed_answers": [
+   "Yes",
+   "No"
+  ],
+  "pass_answer": "Yes",
+  "answer": null,
+  "status": "not_assessed",
+  "source_statement": "The portrait on “Summit speaker card - Anders Lindqvist” (speaker-card-r006.png) shows no hard direct-flash look: no hard flash shadow behind the head and no flat shine across the face.",
+  "evidence_reference": "Palette rules, photography: no flat, hard direct-flash look. summit_brand_notes.txt: not a free meetup (no flat hard direct flash).",
+  "artifact_name": "Summit speaker card - Anders Lindqvist",
+  "artifact_file": "speaker-card-r006.png",
+  "requirement": "No portrait in speaker-card-r006.png has a flat direct-flash shine across the face.",
+  "pass_condition": "No portrait in speaker-card-r006.png has a flat direct-flash shine across the face.",
+  "reference_assets": [
+   {
+    "filename": "summit_brand_notes.txt",
+    "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/tasks/SB3-019-PHO__cascadia-founders-summit-executive-portrait-set/assets/summit_brand_notes.txt"
+   }
+  ],
+  "k_id": "K2_Q3",
+  "k_label": "Brand-system compliance",
+  "origin": "review_feedback_2026_09_25",
+  "revision": "pilot13_verifier_lock_2026_10_22",
+  "method": "look",
+  "method_note": "Inspect the named output against this requirement and its linked references.",
+  "split_from": "PHOTO-19/speaker-card-r006/H018"
+ },
+ {
+  "task_id": "PHOTO-19",
+  "output_id": "speaker-card-r018",
+  "check_id": "PHOTO-19/speaker-card-r018/H063",
+  "type": "human",
+  "output_reference": "deliverables/speaker-card-r018.png",
+  "check": "No portrait in speaker-card-r018.png has a flat direct-flash shine across the face.",
+  "answer_type": "yes_no",
+  "allowed_answers": [
+   "Yes",
+   "No"
+  ],
+  "pass_answer": "Yes",
+  "answer": null,
+  "status": "not_assessed",
+  "source_statement": "The portrait on “Summit host card - Laurel Beckett” (speaker-card-r018.png) shows no hard direct-flash look: no hard flash shadow behind the head and no flat shine across the face.",
+  "evidence_reference": "Palette rules, photography: no flat, hard direct-flash look. summit_brand_notes.txt: not a free meetup (no flat hard direct flash).",
+  "artifact_name": "Summit host card - Laurel Beckett",
+  "artifact_file": "speaker-card-r018.png",
+  "requirement": "No portrait in speaker-card-r018.png has a flat direct-flash shine across the face.",
+  "pass_condition": "No portrait in speaker-card-r018.png has a flat direct-flash shine across the face.",
+  "reference_assets": [
+   {
+    "filename": "summit_brand_notes.txt",
+    "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/tasks/SB3-019-PHO__cascadia-founders-summit-executive-portrait-set/assets/summit_brand_notes.txt"
+   }
+  ],
+  "k_id": "K2_Q3",
+  "k_label": "Brand-system compliance",
+  "origin": "review_feedback_2026_09_25",
+  "revision": "pilot13_verifier_lock_2026_10_22",
+  "method": "look",
+  "method_note": "Inspect the named output against this requirement and its linked references.",
+  "split_from": "PHOTO-19/speaker-card-r018/H018"
+ },
+ {
+  "task_id": "PHOTO-19",
+  "output_id": "speaker-card-r002",
+  "check_id": "PHOTO-19/speaker-card-r002/H068",
+  "type": "human",
+  "output_reference": "deliverables/speaker-card-r002.png",
+  "check": "No portrait in speaker-card-r002.png has a flat direct-flash shine across the face.",
+  "answer_type": "yes_no",
+  "allowed_answers": [
+   "Yes",
+   "No"
+  ],
+  "pass_answer": "Yes",
+  "answer": null,
+  "status": "not_assessed",
+  "source_statement": "The portrait on “Summit speaker card - Marguerite Halloran” (speaker-card-r002.png) shows no hard direct-flash look: no hard flash shadow behind the head and no flat shine across the face.",
+  "evidence_reference": "Palette rules, photography: no flat, hard direct-flash look. summit_brand_notes.txt: not a free meetup (no flat hard direct flash).",
+  "artifact_name": "Summit speaker card - Marguerite Halloran",
+  "artifact_file": "speaker-card-r002.png",
+  "requirement": "No portrait in speaker-card-r002.png has a flat direct-flash shine across the face.",
+  "pass_condition": "No portrait in speaker-card-r002.png has a flat direct-flash shine across the face.",
+  "reference_assets": [
+   {
+    "filename": "summit_brand_notes.txt",
+    "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/tasks/SB3-019-PHO__cascadia-founders-summit-executive-portrait-set/assets/summit_brand_notes.txt"
+   }
+  ],
+  "k_id": "K2_Q3",
+  "k_label": "Brand-system compliance",
+  "origin": "review_feedback_2026_09_25",
+  "revision": "pilot13_verifier_lock_2026_10_22",
+  "method": "look",
+  "method_note": "Inspect the named output against this requirement and its linked references.",
+  "split_from": "PHOTO-19/speaker-card-r002/H021"
+ },
+ {
+  "task_id": "PHOTO-19",
+  "output_id": "speaker-card-r003",
+  "check_id": "PHOTO-19/speaker-card-r003/H065",
+  "type": "human",
+  "output_reference": "deliverables/speaker-card-r003.png",
+  "check": "No portrait in speaker-card-r003.png has a flat direct-flash shine across the face.",
+  "answer_type": "yes_no",
+  "allowed_answers": [
+   "Yes",
+   "No"
+  ],
+  "pass_answer": "Yes",
+  "answer": null,
+  "status": "not_assessed",
+  "source_statement": "The portrait on “Summit speaker card - Peter Vance” (speaker-card-r003.png) shows no hard direct-flash look: no hard flash shadow behind the head and no flat shine across the face.",
+  "evidence_reference": "Palette rules, photography: no flat, hard direct-flash look. summit_brand_notes.txt: not a free meetup (no flat hard direct flash).",
+  "artifact_name": "Summit speaker card - Peter Vance",
+  "artifact_file": "speaker-card-r003.png",
+  "requirement": "No portrait in speaker-card-r003.png has a flat direct-flash shine across the face.",
+  "pass_condition": "No portrait in speaker-card-r003.png has a flat direct-flash shine across the face.",
+  "reference_assets": [
+   {
+    "filename": "summit_brand_notes.txt",
+    "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/tasks/SB3-019-PHO__cascadia-founders-summit-executive-portrait-set/assets/summit_brand_notes.txt"
+   }
+  ],
+  "k_id": "K2_Q3",
+  "k_label": "Brand-system compliance",
+  "origin": "review_feedback_2026_09_25",
+  "revision": "pilot13_verifier_lock_2026_10_22",
+  "method": "look",
+  "method_note": "Inspect the named output against this requirement and its linked references.",
+  "split_from": "PHOTO-19/speaker-card-r003/H019"
  }
 ]

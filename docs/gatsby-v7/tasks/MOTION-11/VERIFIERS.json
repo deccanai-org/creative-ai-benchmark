@@ -2245,7 +2245,7 @@
   "check_id": "MOTION-11/thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi/H013",
   "type": "human",
   "output_reference": "deliverables/thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi.png",
-  "check": "Scrap on “Channel thumbnail - I GAVE MY TEAM ONE SIMPLE JOB AND THEY SET THE ENTIRE BASE ON FIRE” (thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi.png) keeps the orange fur and purple headset of the supplied cutout, not recoloured.",
+  "check": "Scrap on “Channel thumbnail - I GAVE MY TEAM ONE SIMPLE JOB AND THEY SET THE ENTIRE BASE ON FIRE” (thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi.png) keeps the orange fur of the supplied cutout, not recoloured.",
   "answer_type": "yes_no",
   "allowed_answers": [
    "Yes",
@@ -2258,8 +2258,8 @@
   "evidence_reference": "Palette rules, photography: Scrap keeps the orange fur and purple headset drawn in staticfox_scrap_transparent.png. staticfox_scrap_transparent.png shows Scrap with orange fur and a purple over-ear headset.",
   "artifact_name": "Channel thumbnail - I GAVE MY TEAM ONE SIMPLE JOB AND THEY SET THE ENTIRE BASE ON FIRE",
   "artifact_file": "thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi.png",
-  "requirement": "Scrap on “Channel thumbnail - I GAVE MY TEAM ONE SIMPLE JOB AND THEY SET THE ENTIRE BASE ON FIRE” (thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi.png) keeps the orange fur and purple headset of the supplied cutout, not recoloured.",
-  "pass_condition": "Scrap on “Channel thumbnail - I GAVE MY TEAM ONE SIMPLE JOB AND THEY SET THE ENTIRE BASE ON FIRE” (thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi.png) keeps the orange fur and purple headset of the supplied cutout, not recoloured.",
+  "requirement": "Scrap on “Channel thumbnail - I GAVE MY TEAM ONE SIMPLE JOB AND THEY SET THE ENTIRE BASE ON FIRE” (thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi.png) keeps the orange fur of the supplied cutout, not recoloured.",
+  "pass_condition": "Scrap on “Channel thumbnail - I GAVE MY TEAM ONE SIMPLE JOB AND THEY SET THE ENTIRE BASE ON FIRE” (thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi.png) keeps the orange fur of the supplied cutout, not recoloured.",
   "reference_assets": [
    {
     "filename": "staticfox_scrap_transparent.png",
@@ -2269,9 +2269,10 @@
   "k_id": "K2_Q4",
   "k_label": "Identity fidelity",
   "origin": "review_feedback_2026_09_25",
-  "revision": "pilot13_ab_2026_10_21",
+  "revision": "pilot13_verifier_lock_2026_10_22",
   "method": "look",
-  "method_note": "Inspect the named output against this requirement and its linked references."
+  "method_note": "Inspect the named output against this requirement and its linked references.",
+  "split_from": "MOTION-11/thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi/H013"
  },
  {
   "task_id": "MOTION-11",
@@ -2876,9 +2877,14 @@
   "k_id": "K2_Q3",
   "k_label": "Brand-system compliance",
   "origin": "review_feedback_2026_09_25",
-  "revision": "pilot13_c_2026_10_22",
-  "method": "estimate",
-  "method_note": "Of the graphics laid over the capture, title letters excluded, estimate how much is Acid Signal green; answer No only if clearly over 10%."
+  "revision": "pilot13_verifier_lock_2026_10_22",
+  "method": "measure",
+  "method_note": "Measure, do not estimate. On a measurement copy, mask the named area; exclude photographs and transparent canvas. Count the selected accent-colour pixels and divide by all pixels in that mask. Include text unless the condition excludes it. Test each PDF page or held video frame separately. Yes only when the unrounded percentage is at or below the stated limit. Use the linked measurement guide for rasterisation and colour matching. Each RGB channel must be within 5 of a selected palette colour.",
+  "measurement": {
+   "kind": "area_ratio",
+   "channel_tolerance": 5,
+   "max_percent": 10
+  }
  },
  {
   "task_id": "MOTION-11",
@@ -3403,7 +3409,7 @@
   "check_id": "MOTION-11/thumbnail-everyone-off-the-platform/H013",
   "type": "human",
   "output_reference": "deliverables/thumbnail-everyone-off-the-platform.png",
-  "check": "Scrap on “Channel thumbnail - EVERYONE OFF THE PLATFORM” (thumbnail-everyone-off-the-platform.png) keeps the orange fur and purple headset of the supplied cutout, not recoloured.",
+  "check": "Scrap on “Channel thumbnail - EVERYONE OFF THE PLATFORM” (thumbnail-everyone-off-the-platform.png) keeps the orange fur of the supplied cutout, not recoloured.",
   "answer_type": "yes_no",
   "allowed_answers": [
    "Yes",
@@ -3416,8 +3422,8 @@
   "evidence_reference": "Palette rules, photography: Scrap keeps the orange fur and purple headset drawn in staticfox_scrap_transparent.png. staticfox_scrap_transparent.png shows Scrap with orange fur and a purple over-ear headset.",
   "artifact_name": "Channel thumbnail - EVERYONE OFF THE PLATFORM",
   "artifact_file": "thumbnail-everyone-off-the-platform.png",
-  "requirement": "Scrap on “Channel thumbnail - EVERYONE OFF THE PLATFORM” (thumbnail-everyone-off-the-platform.png) keeps the orange fur and purple headset of the supplied cutout, not recoloured.",
-  "pass_condition": "Scrap on “Channel thumbnail - EVERYONE OFF THE PLATFORM” (thumbnail-everyone-off-the-platform.png) keeps the orange fur and purple headset of the supplied cutout, not recoloured.",
+  "requirement": "Scrap on “Channel thumbnail - EVERYONE OFF THE PLATFORM” (thumbnail-everyone-off-the-platform.png) keeps the orange fur of the supplied cutout, not recoloured.",
+  "pass_condition": "Scrap on “Channel thumbnail - EVERYONE OFF THE PLATFORM” (thumbnail-everyone-off-the-platform.png) keeps the orange fur of the supplied cutout, not recoloured.",
   "reference_assets": [
    {
     "filename": "staticfox_scrap_transparent.png",
@@ -3427,9 +3433,10 @@
   "k_id": "K2_Q4",
   "k_label": "Identity fidelity",
   "origin": "review_feedback_2026_09_25",
-  "revision": "pilot13_ab_2026_10_21",
+  "revision": "pilot13_verifier_lock_2026_10_22",
   "method": "look",
-  "method_note": "Inspect the named output against this requirement and its linked references."
+  "method_note": "Inspect the named output against this requirement and its linked references.",
+  "split_from": "MOTION-11/thumbnail-everyone-off-the-platform/H013"
  },
  {
   "task_id": "MOTION-11",
@@ -4072,9 +4079,14 @@
   "k_id": "K2_Q3",
   "k_label": "Brand-system compliance",
   "origin": "review_feedback_2026_09_25",
-  "revision": "pilot13_c_2026_10_22",
-  "method": "estimate",
-  "method_note": "Of the graphics laid over the capture, title letters excluded, estimate how much is Acid Signal green; answer No only if clearly over 10%."
+  "revision": "pilot13_verifier_lock_2026_10_22",
+  "method": "measure",
+  "method_note": "Measure, do not estimate. On a measurement copy, mask the named area; exclude photographs and transparent canvas. Count the selected accent-colour pixels and divide by all pixels in that mask. Include text unless the condition excludes it. Test each PDF page or held video frame separately. Yes only when the unrounded percentage is at or below the stated limit. Use the linked measurement guide for rasterisation and colour matching. Each RGB channel must be within 5 of a selected palette colour.",
+  "measurement": {
+   "kind": "area_ratio",
+   "channel_tolerance": 5,
+   "max_percent": 10
+  }
  },
  {
   "task_id": "MOTION-11",
@@ -4416,7 +4428,7 @@
   "check_id": "MOTION-11/thumbnail-kitchen-gone/H012",
   "type": "human",
   "output_reference": "deliverables/thumbnail-kitchen-gone.png",
-  "check": "Scrap on “Channel thumbnail - KITCHEN. GONE.” (thumbnail-kitchen-gone.png) keeps the orange fur and purple headset of the supplied cutout, not recoloured.",
+  "check": "Scrap on “Channel thumbnail - KITCHEN. GONE.” (thumbnail-kitchen-gone.png) keeps the orange fur of the supplied cutout, not recoloured.",
   "answer_type": "yes_no",
   "allowed_answers": [
    "Yes",
@@ -4429,8 +4441,8 @@
   "evidence_reference": "Palette rules, photography: Scrap keeps the orange fur and purple headset drawn in staticfox_scrap_transparent.png. staticfox_scrap_transparent.png shows Scrap with orange fur and a purple over-ear headset.",
   "artifact_name": "Channel thumbnail - KITCHEN. GONE.",
   "artifact_file": "thumbnail-kitchen-gone.png",
-  "requirement": "Scrap on “Channel thumbnail - KITCHEN. GONE.” (thumbnail-kitchen-gone.png) keeps the orange fur and purple headset of the supplied cutout, not recoloured.",
-  "pass_condition": "Scrap on “Channel thumbnail - KITCHEN. GONE.” (thumbnail-kitchen-gone.png) keeps the orange fur and purple headset of the supplied cutout, not recoloured.",
+  "requirement": "Scrap on “Channel thumbnail - KITCHEN. GONE.” (thumbnail-kitchen-gone.png) keeps the orange fur of the supplied cutout, not recoloured.",
+  "pass_condition": "Scrap on “Channel thumbnail - KITCHEN. GONE.” (thumbnail-kitchen-gone.png) keeps the orange fur of the supplied cutout, not recoloured.",
   "reference_assets": [
    {
     "filename": "staticfox_scrap_transparent.png",
@@ -4440,9 +4452,10 @@
   "k_id": "K2_Q4",
   "k_label": "Identity fidelity",
   "origin": "review_feedback_2026_09_25",
-  "revision": "pilot13_ab_2026_10_21",
+  "revision": "pilot13_verifier_lock_2026_10_22",
   "method": "look",
-  "method_note": "Inspect the named output against this requirement and its linked references."
+  "method_note": "Inspect the named output against this requirement and its linked references.",
+  "split_from": "MOTION-11/thumbnail-kitchen-gone/H012"
  },
  {
   "task_id": "MOTION-11",
@@ -5085,9 +5098,14 @@
   "k_id": "K2_Q3",
   "k_label": "Brand-system compliance",
   "origin": "review_feedback_2026_09_25",
-  "revision": "pilot13_c_2026_10_22",
-  "method": "estimate",
-  "method_note": "Of the graphics laid over the capture, title letters excluded, estimate how much is Acid Signal green; answer No only if clearly over 10%."
+  "revision": "pilot13_verifier_lock_2026_10_22",
+  "method": "measure",
+  "method_note": "Measure, do not estimate. On a measurement copy, mask the named area; exclude photographs and transparent canvas. Count the selected accent-colour pixels and divide by all pixels in that mask. Include text unless the condition excludes it. Test each PDF page or held video frame separately. Yes only when the unrounded percentage is at or below the stated limit. Use the linked measurement guide for rasterisation and colour matching. Each RGB channel must be within 5 of a selected palette colour.",
+  "measurement": {
+   "kind": "area_ratio",
+   "channel_tolerance": 5,
+   "max_percent": 10
+  }
  },
  {
   "task_id": "MOTION-11",
@@ -5400,7 +5418,7 @@
   "check_id": "MOTION-11/thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas/H012",
   "type": "human",
   "output_reference": "deliverables/thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas.png",
-  "check": "Scrap on “Channel thumbnail - WE SPENT SIX HOURS BUILDING A BRIDGE AND THEN DROVE STRAIGHT PAST IT” (thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas.png) keeps the orange fur and purple headset of the supplied cutout, not recoloured.",
+  "check": "Scrap on “Channel thumbnail - WE SPENT SIX HOURS BUILDING A BRIDGE AND THEN DROVE STRAIGHT PAST IT” (thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas.png) keeps the orange fur of the supplied cutout, not recoloured.",
   "answer_type": "yes_no",
   "allowed_answers": [
    "Yes",
@@ -5413,8 +5431,8 @@
   "evidence_reference": "Palette rules, photography: Scrap keeps the orange fur and purple headset drawn in staticfox_scrap_transparent.png. staticfox_scrap_transparent.png shows Scrap with orange fur and a purple over-ear headset.",
   "artifact_name": "Channel thumbnail - WE SPENT SIX HOURS BUILDING A BRIDGE AND THEN DROVE STRAIGHT PAST IT",
   "artifact_file": "thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas.png",
-  "requirement": "Scrap on “Channel thumbnail - WE SPENT SIX HOURS BUILDING A BRIDGE AND THEN DROVE STRAIGHT PAST IT” (thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas.png) keeps the orange fur and purple headset of the supplied cutout, not recoloured.",
-  "pass_condition": "Scrap on “Channel thumbnail - WE SPENT SIX HOURS BUILDING A BRIDGE AND THEN DROVE STRAIGHT PAST IT” (thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas.png) keeps the orange fur and purple headset of the supplied cutout, not recoloured.",
+  "requirement": "Scrap on “Channel thumbnail - WE SPENT SIX HOURS BUILDING A BRIDGE AND THEN DROVE STRAIGHT PAST IT” (thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas.png) keeps the orange fur of the supplied cutout, not recoloured.",
+  "pass_condition": "Scrap on “Channel thumbnail - WE SPENT SIX HOURS BUILDING A BRIDGE AND THEN DROVE STRAIGHT PAST IT” (thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas.png) keeps the orange fur of the supplied cutout, not recoloured.",
   "reference_assets": [
    {
     "filename": "staticfox_scrap_transparent.png",
@@ -5424,9 +5442,10 @@
   "k_id": "K2_Q4",
   "k_label": "Identity fidelity",
   "origin": "review_feedback_2026_09_25",
-  "revision": "pilot13_ab_2026_10_21",
+  "revision": "pilot13_verifier_lock_2026_10_22",
   "method": "look",
-  "method_note": "Inspect the named output against this requirement and its linked references."
+  "method_note": "Inspect the named output against this requirement and its linked references.",
+  "split_from": "MOTION-11/thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas/H012"
  },
  {
   "task_id": "MOTION-11",
@@ -6031,9 +6050,14 @@
   "k_id": "K2_Q3",
   "k_label": "Brand-system compliance",
   "origin": "review_feedback_2026_09_25",
-  "revision": "pilot13_c_2026_10_22",
-  "method": "estimate",
-  "method_note": "Of the graphics laid over the capture, title letters excluded, estimate how much is Acid Signal green; answer No only if clearly over 10%."
+  "revision": "pilot13_verifier_lock_2026_10_22",
+  "method": "measure",
+  "method_note": "Measure, do not estimate. On a measurement copy, mask the named area; exclude photographs and transparent canvas. Count the selected accent-colour pixels and divide by all pixels in that mask. Include text unless the condition excludes it. Test each PDF page or held video frame separately. Yes only when the unrounded percentage is at or below the stated limit. Use the linked measurement guide for rasterisation and colour matching. Each RGB channel must be within 5 of a selected palette colour.",
+  "measurement": {
+   "kind": "area_ratio",
+   "channel_tolerance": 5,
+   "max_percent": 10
+  }
  },
  {
   "task_id": "MOTION-11",
@@ -6312,7 +6336,7 @@
   "check_id": "MOTION-11/thumbnail-we-broke-the-map/H014",
   "type": "human",
   "output_reference": "deliverables/thumbnail-we-broke-the-map.png",
-  "check": "Scrap on “Channel thumbnail - WE BROKE THE MAP” (thumbnail-we-broke-the-map.png) keeps the orange fur and purple headset of the supplied cutout, not recoloured.",
+  "check": "Scrap on “Channel thumbnail - WE BROKE THE MAP” (thumbnail-we-broke-the-map.png) keeps the orange fur of the supplied cutout, not recoloured.",
   "answer_type": "yes_no",
   "allowed_answers": [
    "Yes",
@@ -6325,8 +6349,8 @@
   "evidence_reference": "Palette rules, photography: Scrap keeps the orange fur and purple headset drawn in staticfox_scrap_transparent.png. staticfox_scrap_transparent.png shows Scrap with orange fur and a purple over-ear headset.",
   "artifact_name": "Channel thumbnail - WE BROKE THE MAP",
   "artifact_file": "thumbnail-we-broke-the-map.png",
-  "requirement": "Scrap on “Channel thumbnail - WE BROKE THE MAP” (thumbnail-we-broke-the-map.png) keeps the orange fur and purple headset of the supplied cutout, not recoloured.",
-  "pass_condition": "Scrap on “Channel thumbnail - WE BROKE THE MAP” (thumbnail-we-broke-the-map.png) keeps the orange fur and purple headset of the supplied cutout, not recoloured.",
+  "requirement": "Scrap on “Channel thumbnail - WE BROKE THE MAP” (thumbnail-we-broke-the-map.png) keeps the orange fur of the supplied cutout, not recoloured.",
+  "pass_condition": "Scrap on “Channel thumbnail - WE BROKE THE MAP” (thumbnail-we-broke-the-map.png) keeps the orange fur of the supplied cutout, not recoloured.",
   "reference_assets": [
    {
     "filename": "staticfox_scrap_transparent.png",
@@ -6336,9 +6360,10 @@
   "k_id": "K2_Q4",
   "k_label": "Identity fidelity",
   "origin": "review_feedback_2026_09_25",
-  "revision": "pilot13_ab_2026_10_21",
+  "revision": "pilot13_verifier_lock_2026_10_22",
   "method": "look",
-  "method_note": "Inspect the named output against this requirement and its linked references."
+  "method_note": "Inspect the named output against this requirement and its linked references.",
+  "split_from": "MOTION-11/thumbnail-we-broke-the-map/H014"
  },
  {
   "task_id": "MOTION-11",
@@ -6939,9 +6964,14 @@
   "k_id": "K2_Q3",
   "k_label": "Brand-system compliance",
   "origin": "review_feedback_2026_09_25",
-  "revision": "pilot13_c_2026_10_22",
-  "method": "estimate",
-  "method_note": "Of the graphics laid over the capture, title letters excluded, estimate how much is Acid Signal green; answer No only if clearly over 10%."
+  "revision": "pilot13_verifier_lock_2026_10_22",
+  "method": "measure",
+  "method_note": "Measure, do not estimate. On a measurement copy, mask the named area; exclude photographs and transparent canvas. Count the selected accent-colour pixels and divide by all pixels in that mask. Include text unless the condition excludes it. Test each PDF page or held video frame separately. Yes only when the unrounded percentage is at or below the stated limit. Use the linked measurement guide for rasterisation and colour matching. Each RGB channel must be within 5 of a selected palette colour.",
+  "measurement": {
+   "kind": "area_ratio",
+   "channel_tolerance": 5,
+   "max_percent": 10
+  }
  },
  {
   "task_id": "MOTION-11",
@@ -7293,7 +7323,7 @@
   "check_id": "MOTION-11/thumbnail-do-not-open-that-door/H013",
   "type": "human",
   "output_reference": "deliverables/thumbnail-do-not-open-that-door.png",
-  "check": "Scrap on “Channel thumbnail - DO NOT OPEN THAT DOOR” (thumbnail-do-not-open-that-door.png) keeps the orange fur and purple headset of the supplied cutout, not recoloured.",
+  "check": "Scrap on “Channel thumbnail - DO NOT OPEN THAT DOOR” (thumbnail-do-not-open-that-door.png) keeps the orange fur of the supplied cutout, not recoloured.",
   "answer_type": "yes_no",
   "allowed_answers": [
    "Yes",
@@ -7306,8 +7336,8 @@
   "evidence_reference": "Palette rules, photography: Scrap keeps the orange fur and purple headset drawn in staticfox_scrap_transparent.png. staticfox_scrap_transparent.png shows Scrap with orange fur and a purple over-ear headset.",
   "artifact_name": "Channel thumbnail - DO NOT OPEN THAT DOOR",
   "artifact_file": "thumbnail-do-not-open-that-door.png",
-  "requirement": "Scrap on “Channel thumbnail - DO NOT OPEN THAT DOOR” (thumbnail-do-not-open-that-door.png) keeps the orange fur and purple headset of the supplied cutout, not recoloured.",
-  "pass_condition": "Scrap on “Channel thumbnail - DO NOT OPEN THAT DOOR” (thumbnail-do-not-open-that-door.png) keeps the orange fur and purple headset of the supplied cutout, not recoloured.",
+  "requirement": "Scrap on “Channel thumbnail - DO NOT OPEN THAT DOOR” (thumbnail-do-not-open-that-door.png) keeps the orange fur of the supplied cutout, not recoloured.",
+  "pass_condition": "Scrap on “Channel thumbnail - DO NOT OPEN THAT DOOR” (thumbnail-do-not-open-that-door.png) keeps the orange fur of the supplied cutout, not recoloured.",
   "reference_assets": [
    {
     "filename": "staticfox_scrap_transparent.png",
@@ -7317,9 +7347,10 @@
   "k_id": "K2_Q4",
   "k_label": "Identity fidelity",
   "origin": "review_feedback_2026_09_25",
-  "revision": "pilot13_ab_2026_10_21",
+  "revision": "pilot13_verifier_lock_2026_10_22",
   "method": "look",
-  "method_note": "Inspect the named output against this requirement and its linked references."
+  "method_note": "Inspect the named output against this requirement and its linked references.",
+  "split_from": "MOTION-11/thumbnail-do-not-open-that-door/H013"
  },
  {
   "task_id": "MOTION-11",
@@ -7962,9 +7993,14 @@
   "k_id": "K2_Q3",
   "k_label": "Brand-system compliance",
   "origin": "review_feedback_2026_09_25",
-  "revision": "pilot13_c_2026_10_22",
-  "method": "estimate",
-  "method_note": "Of the graphics laid over the capture, title letters excluded, estimate how much is Acid Signal green; answer No only if clearly over 10%."
+  "revision": "pilot13_verifier_lock_2026_10_22",
+  "method": "measure",
+  "method_note": "Measure, do not estimate. On a measurement copy, mask the named area; exclude photographs and transparent canvas. Count the selected accent-colour pixels and divide by all pixels in that mask. Include text unless the condition excludes it. Test each PDF page or held video frame separately. Yes only when the unrounded percentage is at or below the stated limit. Use the linked measurement guide for rasterisation and colour matching. Each RGB channel must be within 5 of a selected palette colour.",
+  "measurement": {
+   "kind": "area_ratio",
+   "channel_tolerance": 5,
+   "max_percent": 10
+  }
  },
  {
   "task_id": "MOTION-11",
@@ -8409,7 +8445,7 @@
   "check_id": "MOTION-11/channel-animation/H014",
   "type": "human",
   "output_reference": "deliverables/channel-animation.mp4",
-  "check": "Wherever Scrap appears in “Animated channel title and end card” (channel-animation.mp4), he keeps the orange fur and purple headset of the supplied cutout, not recoloured.",
+  "check": "Wherever Scrap appears in “Animated channel title and end card” (channel-animation.mp4), he keeps the orange fur of the supplied cutout, not recoloured.",
   "answer_type": "yes_no",
   "allowed_answers": [
    "Yes",
@@ -8422,8 +8458,8 @@
   "evidence_reference": "Palette rules, photography: Scrap keeps the orange fur and purple headset drawn in staticfox_scrap_transparent.png. staticfox_scrap_transparent.png shows Scrap with orange fur and a purple over-ear headset.",
   "artifact_name": "Animated channel title and end card",
   "artifact_file": "channel-animation.mp4",
-  "requirement": "Wherever Scrap appears in “Animated channel title and end card” (channel-animation.mp4), he keeps the orange fur and purple headset of the supplied cutout, not recoloured.",
-  "pass_condition": "Wherever Scrap appears in “Animated channel title and end card” (channel-animation.mp4), he keeps the orange fur and purple headset of the supplied cutout, not recoloured.",
+  "requirement": "Wherever Scrap appears in “Animated channel title and end card” (channel-animation.mp4), he keeps the orange fur of the supplied cutout, not recoloured.",
+  "pass_condition": "Wherever Scrap appears in “Animated channel title and end card” (channel-animation.mp4), he keeps the orange fur of the supplied cutout, not recoloured.",
   "reference_assets": [
    {
     "filename": "staticfox_scrap_transparent.png",
@@ -8433,9 +8469,10 @@
   "k_id": "K2_Q4",
   "k_label": "Identity fidelity",
   "origin": "review_feedback_2026_09_25",
-  "revision": "pilot13_ab_2026_10_21",
+  "revision": "pilot13_verifier_lock_2026_10_22",
   "method": "look",
-  "method_note": "Inspect the named output against this requirement and its linked references."
+  "method_note": "Inspect the named output against this requirement and its linked references.",
+  "split_from": "MOTION-11/channel-animation/H014"
  },
  {
   "task_id": "MOTION-11",
@@ -9091,9 +9128,14 @@
   "k_id": "K2_Q3",
   "k_label": "Brand-system compliance",
   "origin": "review_feedback_2026_09_25",
-  "revision": "pilot13_c_2026_10_22",
-  "method": "estimate",
-  "method_note": "On each held frame, title-word fills excluded, estimate how much of the frame is Acid Signal green; answer No only if clearly over 10%."
+  "revision": "pilot13_verifier_lock_2026_10_22",
+  "method": "measure",
+  "method_note": "Measure, do not estimate. On a measurement copy, mask the named area; exclude photographs and transparent canvas. Count the selected accent-colour pixels and divide by all pixels in that mask. Include text unless the condition excludes it. Test each PDF page or held video frame separately. Yes only when the unrounded percentage is at or below the stated limit. Use the linked measurement guide for rasterisation and colour matching. Each RGB channel must be within 10 of a selected palette colour.",
+  "measurement": {
+   "kind": "area_ratio",
+   "channel_tolerance": 10,
+   "max_percent": 10
+  }
  },
  {
   "task_id": "MOTION-11",
@@ -9656,7 +9698,7 @@
   "check_id": "MOTION-11/channel-teaser/H016",
   "type": "human",
   "output_reference": "deliverables/channel-teaser.mp4",
-  "check": "Wherever Scrap appears in “Channel feed teaser” (channel-teaser.mp4), he keeps the orange fur and purple headset of the supplied cutout, not recoloured.",
+  "check": "Wherever Scrap appears in “Channel feed teaser” (channel-teaser.mp4), he keeps the orange fur of the supplied cutout, not recoloured.",
   "answer_type": "yes_no",
   "allowed_answers": [
    "Yes",
@@ -9669,8 +9711,8 @@
   "evidence_reference": "Palette rules, photography: Scrap keeps the orange fur and purple headset drawn in staticfox_scrap_transparent.png. staticfox_scrap_transparent.png shows Scrap with orange fur and a purple over-ear headset.",
   "artifact_name": "Channel feed teaser",
   "artifact_file": "channel-teaser.mp4",
-  "requirement": "Wherever Scrap appears in “Channel feed teaser” (channel-teaser.mp4), he keeps the orange fur and purple headset of the supplied cutout, not recoloured.",
-  "pass_condition": "Wherever Scrap appears in “Channel feed teaser” (channel-teaser.mp4), he keeps the orange fur and purple headset of the supplied cutout, not recoloured.",
+  "requirement": "Wherever Scrap appears in “Channel feed teaser” (channel-teaser.mp4), he keeps the orange fur of the supplied cutout, not recoloured.",
+  "pass_condition": "Wherever Scrap appears in “Channel feed teaser” (channel-teaser.mp4), he keeps the orange fur of the supplied cutout, not recoloured.",
   "reference_assets": [
    {
     "filename": "staticfox_scrap_transparent.png",
@@ -9680,9 +9722,10 @@
   "k_id": "K2_Q4",
   "k_label": "Identity fidelity",
   "origin": "review_feedback_2026_09_25",
-  "revision": "pilot13_ab_2026_10_21",
+  "revision": "pilot13_verifier_lock_2026_10_22",
   "method": "look",
-  "method_note": "Inspect the named output against this requirement and its linked references."
+  "method_note": "Inspect the named output against this requirement and its linked references.",
+  "split_from": "MOTION-11/channel-teaser/H016"
  },
  {
   "task_id": "MOTION-11",
@@ -10352,9 +10395,14 @@
   "k_id": "K2_Q3",
   "k_label": "Brand-system compliance",
   "origin": "review_feedback_2026_09_25",
-  "revision": "pilot13_c_2026_10_22",
-  "method": "estimate",
-  "method_note": "On held frames, title letters excluded, estimate how much of the graphics over footage is Acid Signal green; No only if clearly over 10%."
+  "revision": "pilot13_verifier_lock_2026_10_22",
+  "method": "measure",
+  "method_note": "Measure, do not estimate. On a measurement copy, mask the named area; exclude photographs and transparent canvas. Count the selected accent-colour pixels and divide by all pixels in that mask. Include text unless the condition excludes it. Test each PDF page or held video frame separately. Yes only when the unrounded percentage is at or below the stated limit. Use the linked measurement guide for rasterisation and colour matching. Each RGB channel must be within 10 of a selected palette colour.",
+  "measurement": {
+   "kind": "area_ratio",
+   "channel_tolerance": 10,
+   "max_percent": 10
+  }
  },
  {
   "task_id": "MOTION-11",
@@ -10823,7 +10871,7 @@
   "check_id": "MOTION-11/channel-teaser-vertical/H014",
   "type": "human",
   "output_reference": "deliverables/channel-teaser-vertical.mp4",
-  "check": "Wherever Scrap appears in “Channel feed teaser upright cutdown” (channel-teaser-vertical.mp4), he keeps the orange fur and purple headset of the supplied cutout, not recoloured.",
+  "check": "Wherever Scrap appears in “Channel feed teaser upright cutdown” (channel-teaser-vertical.mp4), he keeps the orange fur of the supplied cutout, not recoloured.",
   "answer_type": "yes_no",
   "allowed_answers": [
    "Yes",
@@ -10836,8 +10884,8 @@
   "evidence_reference": "Palette rules, photography: Scrap keeps the orange fur and purple headset drawn in staticfox_scrap_transparent.png. staticfox_scrap_transparent.png shows Scrap with orange fur and a purple over-ear headset.",
   "artifact_name": "Channel feed teaser upright cutdown",
   "artifact_file": "channel-teaser-vertical.mp4",
-  "requirement": "Wherever Scrap appears in “Channel feed teaser upright cutdown” (channel-teaser-vertical.mp4), he keeps the orange fur and purple headset of the supplied cutout, not recoloured.",
-  "pass_condition": "Wherever Scrap appears in “Channel feed teaser upright cutdown” (channel-teaser-vertical.mp4), he keeps the orange fur and purple headset of the supplied cutout, not recoloured.",
+  "requirement": "Wherever Scrap appears in “Channel feed teaser upright cutdown” (channel-teaser-vertical.mp4), he keeps the orange fur of the supplied cutout, not recoloured.",
+  "pass_condition": "Wherever Scrap appears in “Channel feed teaser upright cutdown” (channel-teaser-vertical.mp4), he keeps the orange fur of the supplied cutout, not recoloured.",
   "reference_assets": [
    {
     "filename": "staticfox_scrap_transparent.png",
@@ -10847,9 +10895,10 @@
   "k_id": "K2_Q4",
   "k_label": "Identity fidelity",
   "origin": "review_feedback_2026_09_25",
-  "revision": "pilot13_ab_2026_10_21",
+  "revision": "pilot13_verifier_lock_2026_10_22",
   "method": "look",
-  "method_note": "Inspect the named output against this requirement and its linked references."
+  "method_note": "Inspect the named output against this requirement and its linked references.",
+  "split_from": "MOTION-11/channel-teaser-vertical/H014"
  },
  {
   "task_id": "MOTION-11",
@@ -11519,9 +11568,14 @@
   "k_id": "K2_Q3",
   "k_label": "Brand-system compliance",
   "origin": "review_feedback_2026_09_25",
-  "revision": "pilot13_c_2026_10_22",
-  "method": "estimate",
-  "method_note": "On held frames, title letters excluded, estimate how much of the graphics over footage is Acid Signal green; No only if clearly over 10%."
+  "revision": "pilot13_verifier_lock_2026_10_22",
+  "method": "measure",
+  "method_note": "Measure, do not estimate. On a measurement copy, mask the named area; exclude photographs and transparent canvas. Count the selected accent-colour pixels and divide by all pixels in that mask. Include text unless the condition excludes it. Test each PDF page or held video frame separately. Yes only when the unrounded percentage is at or below the stated limit. Use the linked measurement guide for rasterisation and colour matching. Each RGB channel must be within 10 of a selected palette colour.",
+  "measurement": {
+   "kind": "area_ratio",
+   "channel_tolerance": 10,
+   "max_percent": 10
+  }
  },
  {
   "task_id": "MOTION-11",
@@ -14314,5 +14368,320 @@
   "k_label": "Primary-message recovery",
   "method": "look",
   "method_note": "Inspect the named output against this requirement and its linked references."
+ },
+ {
+  "task_id": "MOTION-11",
+  "output_id": "thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi",
+  "check_id": "MOTION-11/thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi/H039",
+  "type": "human",
+  "output_reference": "deliverables/thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi.png",
+  "check": "Scrap on “Channel thumbnail - I GAVE MY TEAM ONE SIMPLE JOB AND THEY SET THE ENTIRE BASE ON FIRE” (thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi.png) keeps the purple headset of the supplied cutout, not recoloured.",
+  "answer_type": "yes_no",
+  "allowed_answers": [
+   "Yes",
+   "No"
+  ],
+  "pass_answer": "Yes",
+  "answer": null,
+  "status": "not_assessed",
+  "source_statement": "Scrap on “Channel thumbnail - I GAVE MY TEAM ONE SIMPLE JOB AND THEY SET THE ENTIRE BASE ON FIRE” (thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi.png) keeps the orange fur and purple headset of the supplied cutout, not recoloured.",
+  "evidence_reference": "Palette rules, photography: Scrap keeps the orange fur and purple headset drawn in staticfox_scrap_transparent.png. staticfox_scrap_transparent.png shows Scrap with orange fur and a purple over-ear headset.",
+  "artifact_name": "Channel thumbnail - I GAVE MY TEAM ONE SIMPLE JOB AND THEY SET THE ENTIRE BASE ON FIRE",
+  "artifact_file": "thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi.png",
+  "requirement": "Scrap on “Channel thumbnail - I GAVE MY TEAM ONE SIMPLE JOB AND THEY SET THE ENTIRE BASE ON FIRE” (thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi.png) keeps the purple headset of the supplied cutout, not recoloured.",
+  "pass_condition": "Scrap on “Channel thumbnail - I GAVE MY TEAM ONE SIMPLE JOB AND THEY SET THE ENTIRE BASE ON FIRE” (thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi.png) keeps the purple headset of the supplied cutout, not recoloured.",
+  "reference_assets": [
+   {
+    "filename": "staticfox_scrap_transparent.png",
+    "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/MOTION-11/staticfox_scrap_transparent.png"
+   }
+  ],
+  "k_id": "K2_Q4",
+  "k_label": "Identity fidelity",
+  "origin": "review_feedback_2026_09_25",
+  "revision": "pilot13_verifier_lock_2026_10_22",
+  "method": "look",
+  "method_note": "Inspect the named output against this requirement and its linked references.",
+  "split_from": "MOTION-11/thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi/H013"
+ },
+ {
+  "task_id": "MOTION-11",
+  "output_id": "thumbnail-everyone-off-the-platform",
+  "check_id": "MOTION-11/thumbnail-everyone-off-the-platform/H039",
+  "type": "human",
+  "output_reference": "deliverables/thumbnail-everyone-off-the-platform.png",
+  "check": "Scrap on “Channel thumbnail - EVERYONE OFF THE PLATFORM” (thumbnail-everyone-off-the-platform.png) keeps the purple headset of the supplied cutout, not recoloured.",
+  "answer_type": "yes_no",
+  "allowed_answers": [
+   "Yes",
+   "No"
+  ],
+  "pass_answer": "Yes",
+  "answer": null,
+  "status": "not_assessed",
+  "source_statement": "Scrap on “Channel thumbnail - EVERYONE OFF THE PLATFORM” (thumbnail-everyone-off-the-platform.png) keeps the orange fur and purple headset of the supplied cutout, not recoloured.",
+  "evidence_reference": "Palette rules, photography: Scrap keeps the orange fur and purple headset drawn in staticfox_scrap_transparent.png. staticfox_scrap_transparent.png shows Scrap with orange fur and a purple over-ear headset.",
+  "artifact_name": "Channel thumbnail - EVERYONE OFF THE PLATFORM",
+  "artifact_file": "thumbnail-everyone-off-the-platform.png",
+  "requirement": "Scrap on “Channel thumbnail - EVERYONE OFF THE PLATFORM” (thumbnail-everyone-off-the-platform.png) keeps the purple headset of the supplied cutout, not recoloured.",
+  "pass_condition": "Scrap on “Channel thumbnail - EVERYONE OFF THE PLATFORM” (thumbnail-everyone-off-the-platform.png) keeps the purple headset of the supplied cutout, not recoloured.",
+  "reference_assets": [
+   {
+    "filename": "staticfox_scrap_transparent.png",
+    "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/MOTION-11/staticfox_scrap_transparent.png"
+   }
+  ],
+  "k_id": "K2_Q4",
+  "k_label": "Identity fidelity",
+  "origin": "review_feedback_2026_09_25",
+  "revision": "pilot13_verifier_lock_2026_10_22",
+  "method": "look",
+  "method_note": "Inspect the named output against this requirement and its linked references.",
+  "split_from": "MOTION-11/thumbnail-everyone-off-the-platform/H013"
+ },
+ {
+  "task_id": "MOTION-11",
+  "output_id": "thumbnail-kitchen-gone",
+  "check_id": "MOTION-11/thumbnail-kitchen-gone/H039",
+  "type": "human",
+  "output_reference": "deliverables/thumbnail-kitchen-gone.png",
+  "check": "Scrap on “Channel thumbnail - KITCHEN. GONE.” (thumbnail-kitchen-gone.png) keeps the purple headset of the supplied cutout, not recoloured.",
+  "answer_type": "yes_no",
+  "allowed_answers": [
+   "Yes",
+   "No"
+  ],
+  "pass_answer": "Yes",
+  "answer": null,
+  "status": "not_assessed",
+  "source_statement": "Scrap on “Channel thumbnail - KITCHEN. GONE.” (thumbnail-kitchen-gone.png) keeps the orange fur and purple headset of the supplied cutout, not recoloured.",
+  "evidence_reference": "Palette rules, photography: Scrap keeps the orange fur and purple headset drawn in staticfox_scrap_transparent.png. staticfox_scrap_transparent.png shows Scrap with orange fur and a purple over-ear headset.",
+  "artifact_name": "Channel thumbnail - KITCHEN. GONE.",
+  "artifact_file": "thumbnail-kitchen-gone.png",
+  "requirement": "Scrap on “Channel thumbnail - KITCHEN. GONE.” (thumbnail-kitchen-gone.png) keeps the purple headset of the supplied cutout, not recoloured.",
+  "pass_condition": "Scrap on “Channel thumbnail - KITCHEN. GONE.” (thumbnail-kitchen-gone.png) keeps the purple headset of the supplied cutout, not recoloured.",
+  "reference_assets": [
+   {
+    "filename": "staticfox_scrap_transparent.png",
+    "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/MOTION-11/staticfox_scrap_transparent.png"
+   }
+  ],
+  "k_id": "K2_Q4",
+  "k_label": "Identity fidelity",
+  "origin": "review_feedback_2026_09_25",
+  "revision": "pilot13_verifier_lock_2026_10_22",
+  "method": "look",
+  "method_note": "Inspect the named output against this requirement and its linked references.",
+  "split_from": "MOTION-11/thumbnail-kitchen-gone/H012"
+ },
+ {
+  "task_id": "MOTION-11",
+  "output_id": "thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas",
+  "check_id": "MOTION-11/thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas/H039",
+  "type": "human",
+  "output_reference": "deliverables/thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas.png",
+  "check": "Scrap on “Channel thumbnail - WE SPENT SIX HOURS BUILDING A BRIDGE AND THEN DROVE STRAIGHT PAST IT” (thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas.png) keeps the purple headset of the supplied cutout, not recoloured.",
+  "answer_type": "yes_no",
+  "allowed_answers": [
+   "Yes",
+   "No"
+  ],
+  "pass_answer": "Yes",
+  "answer": null,
+  "status": "not_assessed",
+  "source_statement": "Scrap on “Channel thumbnail - WE SPENT SIX HOURS BUILDING A BRIDGE AND THEN DROVE STRAIGHT PAST IT” (thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas.png) keeps the orange fur and purple headset of the supplied cutout, not recoloured.",
+  "evidence_reference": "Palette rules, photography: Scrap keeps the orange fur and purple headset drawn in staticfox_scrap_transparent.png. staticfox_scrap_transparent.png shows Scrap with orange fur and a purple over-ear headset.",
+  "artifact_name": "Channel thumbnail - WE SPENT SIX HOURS BUILDING A BRIDGE AND THEN DROVE STRAIGHT PAST IT",
+  "artifact_file": "thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas.png",
+  "requirement": "Scrap on “Channel thumbnail - WE SPENT SIX HOURS BUILDING A BRIDGE AND THEN DROVE STRAIGHT PAST IT” (thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas.png) keeps the purple headset of the supplied cutout, not recoloured.",
+  "pass_condition": "Scrap on “Channel thumbnail - WE SPENT SIX HOURS BUILDING A BRIDGE AND THEN DROVE STRAIGHT PAST IT” (thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas.png) keeps the purple headset of the supplied cutout, not recoloured.",
+  "reference_assets": [
+   {
+    "filename": "staticfox_scrap_transparent.png",
+    "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/MOTION-11/staticfox_scrap_transparent.png"
+   }
+  ],
+  "k_id": "K2_Q4",
+  "k_label": "Identity fidelity",
+  "origin": "review_feedback_2026_09_25",
+  "revision": "pilot13_verifier_lock_2026_10_22",
+  "method": "look",
+  "method_note": "Inspect the named output against this requirement and its linked references.",
+  "split_from": "MOTION-11/thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas/H012"
+ },
+ {
+  "task_id": "MOTION-11",
+  "output_id": "thumbnail-we-broke-the-map",
+  "check_id": "MOTION-11/thumbnail-we-broke-the-map/H040",
+  "type": "human",
+  "output_reference": "deliverables/thumbnail-we-broke-the-map.png",
+  "check": "Scrap on “Channel thumbnail - WE BROKE THE MAP” (thumbnail-we-broke-the-map.png) keeps the purple headset of the supplied cutout, not recoloured.",
+  "answer_type": "yes_no",
+  "allowed_answers": [
+   "Yes",
+   "No"
+  ],
+  "pass_answer": "Yes",
+  "answer": null,
+  "status": "not_assessed",
+  "source_statement": "Scrap on “Channel thumbnail - WE BROKE THE MAP” (thumbnail-we-broke-the-map.png) keeps the orange fur and purple headset of the supplied cutout, not recoloured.",
+  "evidence_reference": "Palette rules, photography: Scrap keeps the orange fur and purple headset drawn in staticfox_scrap_transparent.png. staticfox_scrap_transparent.png shows Scrap with orange fur and a purple over-ear headset.",
+  "artifact_name": "Channel thumbnail - WE BROKE THE MAP",
+  "artifact_file": "thumbnail-we-broke-the-map.png",
+  "requirement": "Scrap on “Channel thumbnail - WE BROKE THE MAP” (thumbnail-we-broke-the-map.png) keeps the purple headset of the supplied cutout, not recoloured.",
+  "pass_condition": "Scrap on “Channel thumbnail - WE BROKE THE MAP” (thumbnail-we-broke-the-map.png) keeps the purple headset of the supplied cutout, not recoloured.",
+  "reference_assets": [
+   {
+    "filename": "staticfox_scrap_transparent.png",
+    "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/MOTION-11/staticfox_scrap_transparent.png"
+   }
+  ],
+  "k_id": "K2_Q4",
+  "k_label": "Identity fidelity",
+  "origin": "review_feedback_2026_09_25",
+  "revision": "pilot13_verifier_lock_2026_10_22",
+  "method": "look",
+  "method_note": "Inspect the named output against this requirement and its linked references.",
+  "split_from": "MOTION-11/thumbnail-we-broke-the-map/H014"
+ },
+ {
+  "task_id": "MOTION-11",
+  "output_id": "thumbnail-do-not-open-that-door",
+  "check_id": "MOTION-11/thumbnail-do-not-open-that-door/H040",
+  "type": "human",
+  "output_reference": "deliverables/thumbnail-do-not-open-that-door.png",
+  "check": "Scrap on “Channel thumbnail - DO NOT OPEN THAT DOOR” (thumbnail-do-not-open-that-door.png) keeps the purple headset of the supplied cutout, not recoloured.",
+  "answer_type": "yes_no",
+  "allowed_answers": [
+   "Yes",
+   "No"
+  ],
+  "pass_answer": "Yes",
+  "answer": null,
+  "status": "not_assessed",
+  "source_statement": "Scrap on “Channel thumbnail - DO NOT OPEN THAT DOOR” (thumbnail-do-not-open-that-door.png) keeps the orange fur and purple headset of the supplied cutout, not recoloured.",
+  "evidence_reference": "Palette rules, photography: Scrap keeps the orange fur and purple headset drawn in staticfox_scrap_transparent.png. staticfox_scrap_transparent.png shows Scrap with orange fur and a purple over-ear headset.",
+  "artifact_name": "Channel thumbnail - DO NOT OPEN THAT DOOR",
+  "artifact_file": "thumbnail-do-not-open-that-door.png",
+  "requirement": "Scrap on “Channel thumbnail - DO NOT OPEN THAT DOOR” (thumbnail-do-not-open-that-door.png) keeps the purple headset of the supplied cutout, not recoloured.",
+  "pass_condition": "Scrap on “Channel thumbnail - DO NOT OPEN THAT DOOR” (thumbnail-do-not-open-that-door.png) keeps the purple headset of the supplied cutout, not recoloured.",
+  "reference_assets": [
+   {
+    "filename": "staticfox_scrap_transparent.png",
+    "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/MOTION-11/staticfox_scrap_transparent.png"
+   }
+  ],
+  "k_id": "K2_Q4",
+  "k_label": "Identity fidelity",
+  "origin": "review_feedback_2026_09_25",
+  "revision": "pilot13_verifier_lock_2026_10_22",
+  "method": "look",
+  "method_note": "Inspect the named output against this requirement and its linked references.",
+  "split_from": "MOTION-11/thumbnail-do-not-open-that-door/H013"
+ },
+ {
+  "task_id": "MOTION-11",
+  "output_id": "channel-animation",
+  "check_id": "MOTION-11/channel-animation/H041",
+  "type": "human",
+  "output_reference": "deliverables/channel-animation.mp4",
+  "check": "Wherever Scrap appears in “Animated channel title and end card” (channel-animation.mp4), he keeps the purple headset of the supplied cutout, not recoloured.",
+  "answer_type": "yes_no",
+  "allowed_answers": [
+   "Yes",
+   "No"
+  ],
+  "pass_answer": "Yes",
+  "answer": null,
+  "status": "not_assessed",
+  "source_statement": "Wherever Scrap appears in “Animated channel title and end card” (channel-animation.mp4), he keeps the orange fur and purple headset of the supplied cutout, not recoloured.",
+  "evidence_reference": "Palette rules, photography: Scrap keeps the orange fur and purple headset drawn in staticfox_scrap_transparent.png. staticfox_scrap_transparent.png shows Scrap with orange fur and a purple over-ear headset.",
+  "artifact_name": "Animated channel title and end card",
+  "artifact_file": "channel-animation.mp4",
+  "requirement": "Wherever Scrap appears in “Animated channel title and end card” (channel-animation.mp4), he keeps the purple headset of the supplied cutout, not recoloured.",
+  "pass_condition": "Wherever Scrap appears in “Animated channel title and end card” (channel-animation.mp4), he keeps the purple headset of the supplied cutout, not recoloured.",
+  "reference_assets": [
+   {
+    "filename": "staticfox_scrap_transparent.png",
+    "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/MOTION-11/staticfox_scrap_transparent.png"
+   }
+  ],
+  "k_id": "K2_Q4",
+  "k_label": "Identity fidelity",
+  "origin": "review_feedback_2026_09_25",
+  "revision": "pilot13_verifier_lock_2026_10_22",
+  "method": "look",
+  "method_note": "Inspect the named output against this requirement and its linked references.",
+  "split_from": "MOTION-11/channel-animation/H014"
+ },
+ {
+  "task_id": "MOTION-11",
+  "output_id": "channel-teaser",
+  "check_id": "MOTION-11/channel-teaser/H043",
+  "type": "human",
+  "output_reference": "deliverables/channel-teaser.mp4",
+  "check": "Wherever Scrap appears in “Channel feed teaser” (channel-teaser.mp4), he keeps the purple headset of the supplied cutout, not recoloured.",
+  "answer_type": "yes_no",
+  "allowed_answers": [
+   "Yes",
+   "No"
+  ],
+  "pass_answer": "Yes",
+  "answer": null,
+  "status": "not_assessed",
+  "source_statement": "Wherever Scrap appears in “Channel feed teaser” (channel-teaser.mp4), he keeps the orange fur and purple headset of the supplied cutout, not recoloured.",
+  "evidence_reference": "Palette rules, photography: Scrap keeps the orange fur and purple headset drawn in staticfox_scrap_transparent.png. staticfox_scrap_transparent.png shows Scrap with orange fur and a purple over-ear headset.",
+  "artifact_name": "Channel feed teaser",
+  "artifact_file": "channel-teaser.mp4",
+  "requirement": "Wherever Scrap appears in “Channel feed teaser” (channel-teaser.mp4), he keeps the purple headset of the supplied cutout, not recoloured.",
+  "pass_condition": "Wherever Scrap appears in “Channel feed teaser” (channel-teaser.mp4), he keeps the purple headset of the supplied cutout, not recoloured.",
+  "reference_assets": [
+   {
+    "filename": "staticfox_scrap_transparent.png",
+    "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/MOTION-11/staticfox_scrap_transparent.png"
+   }
+  ],
+  "k_id": "K2_Q4",
+  "k_label": "Identity fidelity",
+  "origin": "review_feedback_2026_09_25",
+  "revision": "pilot13_verifier_lock_2026_10_22",
+  "method": "look",
+  "method_note": "Inspect the named output against this requirement and its linked references.",
+  "split_from": "MOTION-11/channel-teaser/H016"
+ },
+ {
+  "task_id": "MOTION-11",
+  "output_id": "channel-teaser-vertical",
+  "check_id": "MOTION-11/channel-teaser-vertical/H050",
+  "type": "human",
+  "output_reference": "deliverables/channel-teaser-vertical.mp4",
+  "check": "Wherever Scrap appears in “Channel feed teaser upright cutdown” (channel-teaser-vertical.mp4), he keeps the purple headset of the supplied cutout, not recoloured.",
+  "answer_type": "yes_no",
+  "allowed_answers": [
+   "Yes",
+   "No"
+  ],
+  "pass_answer": "Yes",
+  "answer": null,
+  "status": "not_assessed",
+  "source_statement": "Wherever Scrap appears in “Channel feed teaser upright cutdown” (channel-teaser-vertical.mp4), he keeps the orange fur and purple headset of the supplied cutout, not recoloured.",
+  "evidence_reference": "Palette rules, photography: Scrap keeps the orange fur and purple headset drawn in staticfox_scrap_transparent.png. staticfox_scrap_transparent.png shows Scrap with orange fur and a purple over-ear headset.",
+  "artifact_name": "Channel feed teaser upright cutdown",
+  "artifact_file": "channel-teaser-vertical.mp4",
+  "requirement": "Wherever Scrap appears in “Channel feed teaser upright cutdown” (channel-teaser-vertical.mp4), he keeps the purple headset of the supplied cutout, not recoloured.",
+  "pass_condition": "Wherever Scrap appears in “Channel feed teaser upright cutdown” (channel-teaser-vertical.mp4), he keeps the purple headset of the supplied cutout, not recoloured.",
+  "reference_assets": [
+   {
+    "filename": "staticfox_scrap_transparent.png",
+    "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/MOTION-11/staticfox_scrap_transparent.png"
+   }
+  ],
+  "k_id": "K2_Q4",
+  "k_label": "Identity fidelity",
+  "origin": "review_feedback_2026_09_25",
+  "revision": "pilot13_verifier_lock_2026_10_22",
+  "method": "look",
+  "method_note": "Inspect the named output against this requirement and its linked references.",
+  "split_from": "MOTION-11/channel-teaser-vertical/H014"
  }
 ]

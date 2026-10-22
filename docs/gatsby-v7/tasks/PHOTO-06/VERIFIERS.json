@@ -1613,7 +1613,7 @@
   "check_id": "PHOTO-06/restoration-hollis-scan-06/H007",
   "type": "human",
   "output_reference": "deliverables/restoration-hollis-scan-06.png",
-  "check": "The print's white border and the skin on “Archival restoration master - hollis_scan_06” (restoration-hollis-scan-06.png) show no magenta or red cast.",
+  "check": "The print's white border on “Archival restoration master - hollis_scan_06” (restoration-hollis-scan-06.png) show no magenta or red cast.",
   "answer_type": "yes_no",
   "allowed_answers": [
    "Yes",
@@ -1626,8 +1626,8 @@
   "evidence_reference": "family_notes.txt: \"1967, the garden. Gone very orange.\" Palette rules, photography: photographs keep their own corrected colour; hollis_scan_06.jpg is not warmed further to blend with the set. Source scan hollis_scan_06.jpg reads yellow-orange.",
   "artifact_name": "Archival restoration master - hollis_scan_06",
   "artifact_file": "restoration-hollis-scan-06.png",
-  "requirement": "The print's white border and the skin on “Archival restoration master - hollis_scan_06” (restoration-hollis-scan-06.png) show no magenta or red cast.",
-  "pass_condition": "The print's white border and the skin on “Archival restoration master - hollis_scan_06” (restoration-hollis-scan-06.png) show no magenta or red cast.",
+  "requirement": "The print's white border on “Archival restoration master - hollis_scan_06” (restoration-hollis-scan-06.png) show no magenta or red cast.",
+  "pass_condition": "The print's white border on “Archival restoration master - hollis_scan_06” (restoration-hollis-scan-06.png) show no magenta or red cast.",
   "reference_assets": [
    {
     "filename": "hollis_scan_06.jpg",
@@ -1641,9 +1641,10 @@
   "k_id": "K2_Q2",
   "k_label": "Asset preservation",
   "origin": "review_feedback_2026_09_25",
-  "revision": "pilot13_ab_2026_10_21",
+  "revision": "pilot13_verifier_lock_2026_10_22",
   "method": "look",
-  "method_note": "Inspect the named output against this requirement and its linked references."
+  "method_note": "Inspect the named output against this requirement and its linked references.",
+  "split_from": "PHOTO-06/restoration-hollis-scan-06/H007"
  },
  {
   "task_id": "PHOTO-06",
@@ -4083,7 +4084,11 @@
   "origin": "review_feedback_2026_09_25",
   "revision": "pilot13_c_2026_10_22",
   "method": "measure",
-  "method_note": "At 400% zoom, colour-pick the centre of a thick stroke in the name; answer No if nearer R51 G48 B43 than R25 G22 B19."
+  "method_note": "Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.",
+  "measurement": {
+   "kind": "colour",
+   "channel_tolerance": 5
+  }
  },
  {
   "task_id": "PHOTO-06",
@@ -5032,7 +5037,7 @@
   "check_id": "PHOTO-06/share-hollis-scan-06/H007",
   "type": "human",
   "output_reference": "deliverables/share-hollis-scan-06.jpg",
-  "check": "The print's white border and the skin on “Family archive share image - hollis_scan_06” (share-hollis-scan-06.jpg) show no magenta or red cast.",
+  "check": "The print's white border on “Family archive share image - hollis_scan_06” (share-hollis-scan-06.jpg) show no magenta or red cast.",
   "answer_type": "yes_no",
   "allowed_answers": [
    "Yes",
@@ -5045,8 +5050,8 @@
   "evidence_reference": "family_notes.txt: \"1967, the garden. Gone very orange.\" Palette rules, photography: photographs keep their own corrected colour; hollis_scan_06.jpg is not warmed further to blend with the set. Source scan hollis_scan_06.jpg reads yellow-orange.",
   "artifact_name": "Family archive share image - hollis_scan_06",
   "artifact_file": "share-hollis-scan-06.jpg",
-  "requirement": "The print's white border and the skin on “Family archive share image - hollis_scan_06” (share-hollis-scan-06.jpg) show no magenta or red cast.",
-  "pass_condition": "The print's white border and the skin on “Family archive share image - hollis_scan_06” (share-hollis-scan-06.jpg) show no magenta or red cast.",
+  "requirement": "The print's white border on “Family archive share image - hollis_scan_06” (share-hollis-scan-06.jpg) show no magenta or red cast.",
+  "pass_condition": "The print's white border on “Family archive share image - hollis_scan_06” (share-hollis-scan-06.jpg) show no magenta or red cast.",
   "reference_assets": [
    {
     "filename": "hollis_scan_06.jpg",
@@ -5060,9 +5065,10 @@
   "k_id": "K2_Q2",
   "k_label": "Asset preservation",
   "origin": "review_feedback_2026_09_25",
-  "revision": "pilot13_ab_2026_10_21",
+  "revision": "pilot13_verifier_lock_2026_10_22",
   "method": "look",
-  "method_note": "Inspect the named output against this requirement and its linked references."
+  "method_note": "Inspect the named output against this requirement and its linked references.",
+  "split_from": "PHOTO-06/share-hollis-scan-06/H007"
  },
  {
   "task_id": "PHOTO-06",
@@ -5677,7 +5683,7 @@
   "check_id": "PHOTO-06/share-hollis-scan-07/H008",
   "type": "human",
   "output_reference": "deliverables/share-hollis-scan-07.jpg",
-  "check": "The print's white border and the skin on “Family archive share image - hollis_scan_07” (share-hollis-scan-07.jpg) show no green or cyan cast.",
+  "check": "The print's white border on “Family archive share image - hollis_scan_07” (share-hollis-scan-07.jpg) show no green or cyan cast.",
   "answer_type": "yes_no",
   "allowed_answers": [
    "Yes",
@@ -5690,8 +5696,8 @@
   "evidence_reference": "Palette rules, photography: photographs keep their own corrected colour. Source scan hollis_scan_07.jpg reads green-cyan and washed out.",
   "artifact_name": "Family archive share image - hollis_scan_07",
   "artifact_file": "share-hollis-scan-07.jpg",
-  "requirement": "The print's white border and the skin on “Family archive share image - hollis_scan_07” (share-hollis-scan-07.jpg) show no green or cyan cast.",
-  "pass_condition": "The print's white border and the skin on “Family archive share image - hollis_scan_07” (share-hollis-scan-07.jpg) show no green or cyan cast.",
+  "requirement": "The print's white border on “Family archive share image - hollis_scan_07” (share-hollis-scan-07.jpg) show no green or cyan cast.",
+  "pass_condition": "The print's white border on “Family archive share image - hollis_scan_07” (share-hollis-scan-07.jpg) show no green or cyan cast.",
   "reference_assets": [
    {
     "filename": "hollis_scan_07.jpg",
@@ -5701,9 +5707,10 @@
   "k_id": "K2_Q2",
   "k_label": "Asset preservation",
   "origin": "review_feedback_2026_09_25",
-  "revision": "pilot13_ab_2026_10_21",
+  "revision": "pilot13_verifier_lock_2026_10_22",
   "method": "look",
-  "method_note": "Inspect the named output against this requirement and its linked references."
+  "method_note": "Inspect the named output against this requirement and its linked references.",
+  "split_from": "PHOTO-06/share-hollis-scan-07/H008"
  },
  {
   "task_id": "PHOTO-06",
@@ -6277,7 +6284,11 @@
   "origin": "review_feedback_2026_09_25",
   "revision": "pilot13_c_2026_10_22",
   "method": "measure",
-  "method_note": "At 400% zoom, colour-pick the centre of a thick stroke in the name; answer No if nearer R51 G48 B43 than R25 G22 B19."
+  "method_note": "Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.",
+  "measurement": {
+   "kind": "colour",
+   "channel_tolerance": 5
+  }
  },
  {
   "task_id": "PHOTO-06",
@@ -7599,7 +7610,11 @@
   "origin": "review_feedback_2026_09_25",
   "revision": "pilot13_c_2026_10_22",
   "method": "measure",
-  "method_note": "At 400% zoom, colour-pick the centre of a thick stroke in the name; answer No if nearer R51 G48 B43 than R25 G22 B19."
+  "method_note": "Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.",
+  "measurement": {
+   "kind": "colour",
+   "channel_tolerance": 5
+  }
  },
  {
   "task_id": "PHOTO-06",
@@ -8313,7 +8328,7 @@
   "check_id": "PHOTO-06/restoration-hollis-scan-07/H009",
   "type": "human",
   "output_reference": "deliverables/restoration-hollis-scan-07.png",
-  "check": "The print's white border and the skin on “Archival restoration master - hollis_scan_07” (restoration-hollis-scan-07.png) show no green or cyan cast.",
+  "check": "The print's white border on “Archival restoration master - hollis_scan_07” (restoration-hollis-scan-07.png) show no green or cyan cast.",
   "answer_type": "yes_no",
   "allowed_answers": [
    "Yes",
@@ -8326,8 +8341,8 @@
   "evidence_reference": "Palette rules, photography: photographs keep their own corrected colour. Source scan hollis_scan_07.jpg reads green-cyan and washed out.",
   "artifact_name": "Archival restoration master - hollis_scan_07",
   "artifact_file": "restoration-hollis-scan-07.png",
-  "requirement": "The print's white border and the skin on “Archival restoration master - hollis_scan_07” (restoration-hollis-scan-07.png) show no green or cyan cast.",
-  "pass_condition": "The print's white border and the skin on “Archival restoration master - hollis_scan_07” (restoration-hollis-scan-07.png) show no green or cyan cast.",
+  "requirement": "The print's white border on “Archival restoration master - hollis_scan_07” (restoration-hollis-scan-07.png) show no green or cyan cast.",
+  "pass_condition": "The print's white border on “Archival restoration master - hollis_scan_07” (restoration-hollis-scan-07.png) show no green or cyan cast.",
   "reference_assets": [
    {
     "filename": "hollis_scan_07.jpg",
@@ -8337,9 +8352,10 @@
   "k_id": "K2_Q2",
   "k_label": "Asset preservation",
   "origin": "review_feedback_2026_09_25",
-  "revision": "pilot13_ab_2026_10_21",
+  "revision": "pilot13_verifier_lock_2026_10_22",
   "method": "look",
-  "method_note": "Inspect the named output against this requirement and its linked references."
+  "method_note": "Inspect the named output against this requirement and its linked references.",
+  "split_from": "PHOTO-06/restoration-hollis-scan-07/H009"
  },
  {
   "task_id": "PHOTO-06",
@@ -9303,7 +9319,11 @@
   "origin": "review_feedback_2026_09_25",
   "revision": "pilot13_c_2026_10_22",
   "method": "measure",
-  "method_note": "At 400% zoom, colour-pick the centre of a thick stroke in the name; answer No if nearer R51 G48 B43 than R25 G22 B19."
+  "method_note": "Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.",
+  "measurement": {
+   "kind": "colour",
+   "channel_tolerance": 5
+  }
  },
  {
   "task_id": "PHOTO-06",
@@ -10771,7 +10791,11 @@
   "origin": "review_feedback_2026_09_25",
   "revision": "pilot13_c_2026_10_22",
   "method": "measure",
-  "method_note": "At 400% zoom, colour-pick the centre of a thick stroke in the name; answer No if nearer R51 G48 B43 than R25 G22 B19."
+  "method_note": "Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.",
+  "measurement": {
+   "kind": "colour",
+   "channel_tolerance": 5
+  }
  },
  {
   "task_id": "PHOTO-06",
@@ -14872,7 +14896,11 @@
   "k_id": "K2_Q3",
   "k_label": "Brand-system compliance",
   "method": "measure",
-  "method_note": "At 400% zoom, pick the centre of a thick stroke; No if nearer R25 G22 B19 or R111 G107 B100 than R51 G48 B43."
+  "method_note": "Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.",
+  "measurement": {
+   "kind": "colour",
+   "channel_tolerance": 5
+  }
  },
  {
   "task_id": "PHOTO-06",
@@ -14906,7 +14934,11 @@
   "k_id": "K2_Q3",
   "k_label": "Brand-system compliance",
   "method": "measure",
-  "method_note": "At 400% zoom, pick the centre of a thick stroke; No if nearer R25 G22 B19 or R111 G107 B100 than R51 G48 B43."
+  "method_note": "Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.",
+  "measurement": {
+   "kind": "colour",
+   "channel_tolerance": 5
+  }
  },
  {
   "task_id": "PHOTO-06",
@@ -14959,12 +14991,17 @@
   "requirement": "Museum Grey and Linen together cover no more than 5% of the added margin and caption area on “Family archive share image - hollis_scan_01” (share-hollis-scan-01.jpg).",
   "pass_condition": "Museum Grey and Linen together cover no more than 5% of the added margin and caption area on “Family archive share image - hollis_scan_01” (share-hollis-scan-01.jpg).",
   "reference_assets": [],
-  "revision": "pilot13_c_2026_10_22",
+  "revision": "pilot13_verifier_lock_2026_10_22",
   "origin": "pilot13_ab_2026_10_21",
   "k_id": "K2_Q3",
   "k_label": "Brand-system compliance",
-  "method": "estimate",
-  "method_note": "Estimate the share of the added margin and caption area in Museum Grey or Linen; answer No only if it is clearly over 5%."
+  "method": "measure",
+  "method_note": "Measure, do not estimate. On a measurement copy, mask the named area; exclude photographs and transparent canvas. Count the selected accent-colour pixels and divide by all pixels in that mask. Include text unless the condition excludes it. Test each PDF page or held video frame separately. Yes only when the unrounded percentage is at or below the stated limit. Use the linked measurement guide for rasterisation and colour matching. The mask is only the added caption margin, not the restored historical print. Each RGB channel must be within 5 of a selected palette colour.",
+  "measurement": {
+   "kind": "area_ratio",
+   "channel_tolerance": 5,
+   "max_percent": 5
+  }
  },
  {
   "task_id": "PHOTO-06",
@@ -15629,7 +15666,11 @@
   "k_id": "K2_Q3",
   "k_label": "Brand-system compliance",
   "method": "measure",
-  "method_note": "At 400% zoom, colour-pick the centre of a thick stroke in the name; answer No if nearer R51 G48 B43 than R25 G22 B19."
+  "method_note": "Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.",
+  "measurement": {
+   "kind": "colour",
+   "channel_tolerance": 5
+  }
  },
  {
   "task_id": "PHOTO-06",
@@ -15663,7 +15704,11 @@
   "k_id": "K2_Q3",
   "k_label": "Brand-system compliance",
   "method": "measure",
-  "method_note": "At 400% zoom, pick the centre of a thick stroke; No if nearer R25 G22 B19 or R111 G107 B100 than R51 G48 B43."
+  "method_note": "Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.",
+  "measurement": {
+   "kind": "colour",
+   "channel_tolerance": 5
+  }
  },
  {
   "task_id": "PHOTO-06",
@@ -15697,7 +15742,11 @@
   "k_id": "K2_Q3",
   "k_label": "Brand-system compliance",
   "method": "measure",
-  "method_note": "At 400% zoom, pick the centre of a thick stroke; No if nearer R25 G22 B19 or R111 G107 B100 than R51 G48 B43."
+  "method_note": "Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.",
+  "measurement": {
+   "kind": "colour",
+   "channel_tolerance": 5
+  }
  },
  {
   "task_id": "PHOTO-06",
@@ -15784,12 +15833,17 @@
   "requirement": "Museum Grey and Linen together cover no more than 5% of the added margin and caption area on “Family archive share image - hollis_scan_02” (share-hollis-scan-02.jpg).",
   "pass_condition": "Museum Grey and Linen together cover no more than 5% of the added margin and caption area on “Family archive share image - hollis_scan_02” (share-hollis-scan-02.jpg).",
   "reference_assets": [],
-  "revision": "pilot13_c_2026_10_22",
+  "revision": "pilot13_verifier_lock_2026_10_22",
   "origin": "pilot13_ab_2026_10_21",
   "k_id": "K2_Q3",
   "k_label": "Brand-system compliance",
-  "method": "estimate",
-  "method_note": "Estimate the share of the added margin and caption area in Museum Grey or Linen; answer No only if it is clearly over 5%."
+  "method": "measure",
+  "method_note": "Measure, do not estimate. On a measurement copy, mask the named area; exclude photographs and transparent canvas. Count the selected accent-colour pixels and divide by all pixels in that mask. Include text unless the condition excludes it. Test each PDF page or held video frame separately. Yes only when the unrounded percentage is at or below the stated limit. Use the linked measurement guide for rasterisation and colour matching. The mask is only the added caption margin, not the restored historical print. Each RGB channel must be within 5 of a selected palette colour.",
+  "measurement": {
+   "kind": "area_ratio",
+   "channel_tolerance": 5,
+   "max_percent": 5
+  }
  },
  {
   "task_id": "PHOTO-06",
@@ -16410,7 +16464,11 @@
   "k_id": "K2_Q3",
   "k_label": "Brand-system compliance",
   "method": "measure",
-  "method_note": "At 400% zoom, pick the centre of a thick stroke; No if nearer R25 G22 B19 or R111 G107 B100 than R51 G48 B43."
+  "method_note": "Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.",
+  "measurement": {
+   "kind": "colour",
+   "channel_tolerance": 5
+  }
  },
  {
   "task_id": "PHOTO-06",
@@ -16444,7 +16502,11 @@
   "k_id": "K2_Q3",
   "k_label": "Brand-system compliance",
   "method": "measure",
-  "method_note": "At 400% zoom, pick the centre of a thick stroke; No if nearer R25 G22 B19 or R111 G107 B100 than R51 G48 B43."
+  "method_note": "Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.",
+  "measurement": {
+   "kind": "colour",
+   "channel_tolerance": 5
+  }
  },
  {
   "task_id": "PHOTO-06",
@@ -16497,12 +16559,17 @@
   "requirement": "Museum Grey and Linen together cover no more than 5% of the added margin and caption area on “Family archive share image - hollis_scan_03” (share-hollis-scan-03.jpg).",
   "pass_condition": "Museum Grey and Linen together cover no more than 5% of the added margin and caption area on “Family archive share image - hollis_scan_03” (share-hollis-scan-03.jpg).",
   "reference_assets": [],
-  "revision": "pilot13_c_2026_10_22",
+  "revision": "pilot13_verifier_lock_2026_10_22",
   "origin": "pilot13_ab_2026_10_21",
   "k_id": "K2_Q3",
   "k_label": "Brand-system compliance",
-  "method": "estimate",
-  "method_note": "Estimate the share of the added margin and caption area in Museum Grey or Linen; answer No only if it is clearly over 5%."
+  "method": "measure",
+  "method_note": "Measure, do not estimate. On a measurement copy, mask the named area; exclude photographs and transparent canvas. Count the selected accent-colour pixels and divide by all pixels in that mask. Include text unless the condition excludes it. Test each PDF page or held video frame separately. Yes only when the unrounded percentage is at or below the stated limit. Use the linked measurement guide for rasterisation and colour matching. The mask is only the added caption margin, not the restored historical print. Each RGB channel must be within 5 of a selected palette colour.",
+  "measurement": {
+   "kind": "area_ratio",
+   "channel_tolerance": 5,
+   "max_percent": 5
+  }
  },
  {
   "task_id": "PHOTO-06",
@@ -17201,7 +17268,11 @@
   "k_id": "K2_Q3",
   "k_label": "Brand-system compliance",
   "method": "measure",
-  "method_note": "At 400% zoom, colour-pick the centre of a thick stroke in the name; answer No if nearer R51 G48 B43 than R25 G22 B19."
+  "method_note": "Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.",
+  "measurement": {
+   "kind": "colour",
+   "channel_tolerance": 5
+  }
  },
  {
   "task_id": "PHOTO-06",
@@ -17235,7 +17306,11 @@
   "k_id": "K2_Q3",
   "k_label": "Brand-system compliance",
   "method": "measure",
-  "method_note": "At 400% zoom, pick the centre of a thick stroke; No if nearer R25 G22 B19 or R111 G107 B100 than R51 G48 B43."
+  "method_note": "Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.",
+  "measurement": {
+   "kind": "colour",
+   "channel_tolerance": 5
+  }
  },
  {
   "task_id": "PHOTO-06",
@@ -17269,7 +17344,11 @@
   "k_id": "K2_Q3",
   "k_label": "Brand-system compliance",
   "method": "measure",
-  "method_note": "At 400% zoom, pick the centre of a thick stroke; No if nearer R25 G22 B19 or R111 G107 B100 than R51 G48 B43."
+  "method_note": "Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.",
+  "measurement": {
+   "kind": "colour",
+   "channel_tolerance": 5
+  }
  },
  {
   "task_id": "PHOTO-06",
@@ -17356,12 +17435,17 @@
   "requirement": "Museum Grey and Linen together cover no more than 5% of the added margin and caption area on “Family archive share image - hollis_scan_04” (share-hollis-scan-04.jpg).",
   "pass_condition": "Museum Grey and Linen together cover no more than 5% of the added margin and caption area on “Family archive share image - hollis_scan_04” (share-hollis-scan-04.jpg).",
   "reference_assets": [],
-  "revision": "pilot13_c_2026_10_22",
+  "revision": "pilot13_verifier_lock_2026_10_22",
   "origin": "pilot13_ab_2026_10_21",
   "k_id": "K2_Q3",
   "k_label": "Brand-system compliance",
-  "method": "estimate",
-  "method_note": "Estimate the share of the added margin and caption area in Museum Grey or Linen; answer No only if it is clearly over 5%."
+  "method": "measure",
+  "method_note": "Measure, do not estimate. On a measurement copy, mask the named area; exclude photographs and transparent canvas. Count the selected accent-colour pixels and divide by all pixels in that mask. Include text unless the condition excludes it. Test each PDF page or held video frame separately. Yes only when the unrounded percentage is at or below the stated limit. Use the linked measurement guide for rasterisation and colour matching. The mask is only the added caption margin, not the restored historical print. Each RGB channel must be within 5 of a selected palette colour.",
+  "measurement": {
+   "kind": "area_ratio",
+   "channel_tolerance": 5,
+   "max_percent": 5
+  }
  },
  {
   "task_id": "PHOTO-06",
@@ -18078,7 +18162,11 @@
   "k_id": "K2_Q3",
   "k_label": "Brand-system compliance",
   "method": "measure",
-  "method_note": "At 400% zoom, pick the centre of a thick stroke; No if nearer R25 G22 B19 or R111 G107 B100 than R51 G48 B43."
+  "method_note": "Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.",
+  "measurement": {
+   "kind": "colour",
+   "channel_tolerance": 5
+  }
  },
  {
   "task_id": "PHOTO-06",
@@ -18112,7 +18200,11 @@
   "k_id": "K2_Q3",
   "k_label": "Brand-system compliance",
   "method": "measure",
-  "method_note": "At 400% zoom, pick the centre of a thick stroke; No if nearer R25 G22 B19 or R111 G107 B100 than R51 G48 B43."
+  "method_note": "Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.",
+  "measurement": {
+   "kind": "colour",
+   "channel_tolerance": 5
+  }
  },
  {
   "task_id": "PHOTO-06",
@@ -18165,12 +18257,17 @@
   "requirement": "Museum Grey and Linen together cover no more than 5% of the added margin and caption area on “Family archive share image - hollis_scan_05” (share-hollis-scan-05.jpg).",
   "pass_condition": "Museum Grey and Linen together cover no more than 5% of the added margin and caption area on “Family archive share image - hollis_scan_05” (share-hollis-scan-05.jpg).",
   "reference_assets": [],
-  "revision": "pilot13_c_2026_10_22",
+  "revision": "pilot13_verifier_lock_2026_10_22",
   "origin": "pilot13_ab_2026_10_21",
   "k_id": "K2_Q3",
   "k_label": "Brand-system compliance",
-  "method": "estimate",
-  "method_note": "Estimate the share of the added margin and caption area in Museum Grey or Linen; answer No only if it is clearly over 5%."
+  "method": "measure",
+  "method_note": "Measure, do not estimate. On a measurement copy, mask the named area; exclude photographs and transparent canvas. Count the selected accent-colour pixels and divide by all pixels in that mask. Include text unless the condition excludes it. Test each PDF page or held video frame separately. Yes only when the unrounded percentage is at or below the stated limit. Use the linked measurement guide for rasterisation and colour matching. The mask is only the added caption margin, not the restored historical print. Each RGB channel must be within 5 of a selected palette colour.",
+  "measurement": {
+   "kind": "area_ratio",
+   "channel_tolerance": 5,
+   "max_percent": 5
+  }
  },
  {
   "task_id": "PHOTO-06",
@@ -18835,7 +18932,11 @@
   "k_id": "K2_Q3",
   "k_label": "Brand-system compliance",
   "method": "measure",
-  "method_note": "At 400% zoom, colour-pick the centre of a thick stroke in the name; answer No if nearer R51 G48 B43 than R25 G22 B19."
+  "method_note": "Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.",
+  "measurement": {
+   "kind": "colour",
+   "channel_tolerance": 5
+  }
  },
  {
   "task_id": "PHOTO-06",
@@ -18869,7 +18970,11 @@
   "k_id": "K2_Q3",
   "k_label": "Brand-system compliance",
   "method": "measure",
-  "method_note": "At 400% zoom, pick the centre of a thick stroke; No if nearer R25 G22 B19 or R111 G107 B100 than R51 G48 B43."
+  "method_note": "Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.",
+  "measurement": {
+   "kind": "colour",
+   "channel_tolerance": 5
+  }
  },
  {
   "task_id": "PHOTO-06",
@@ -18903,7 +19008,11 @@
   "k_id": "K2_Q3",
   "k_label": "Brand-system compliance",
   "method": "measure",
-  "method_note": "At 400% zoom, pick the centre of a thick stroke; No if nearer R25 G22 B19 or R111 G107 B100 than R51 G48 B43."
+  "method_note": "Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.",
+  "measurement": {
+   "kind": "colour",
+   "channel_tolerance": 5
+  }
  },
  {
   "task_id": "PHOTO-06",
@@ -18990,12 +19099,17 @@
   "requirement": "Museum Grey and Linen together cover no more than 5% of the added margin and caption area on “Family archive share image - hollis_scan_06” (share-hollis-scan-06.jpg).",
   "pass_condition": "Museum Grey and Linen together cover no more than 5% of the added margin and caption area on “Family archive share image - hollis_scan_06” (share-hollis-scan-06.jpg).",
   "reference_assets": [],
-  "revision": "pilot13_c_2026_10_22",
+  "revision": "pilot13_verifier_lock_2026_10_22",
   "origin": "pilot13_ab_2026_10_21",
   "k_id": "K2_Q3",
   "k_label": "Brand-system compliance",
-  "method": "estimate",
-  "method_note": "Estimate the share of the added margin and caption area in Museum Grey or Linen; answer No only if it is clearly over 5%."
+  "method": "measure",
+  "method_note": "Measure, do not estimate. On a measurement copy, mask the named area; exclude photographs and transparent canvas. Count the selected accent-colour pixels and divide by all pixels in that mask. Include text unless the condition excludes it. Test each PDF page or held video frame separately. Yes only when the unrounded percentage is at or below the stated limit. Use the linked measurement guide for rasterisation and colour matching. The mask is only the added caption margin, not the restored historical print. Each RGB channel must be within 5 of a selected palette colour.",
+  "measurement": {
+   "kind": "area_ratio",
+   "channel_tolerance": 5,
+   "max_percent": 5
+  }
  },
  {
   "task_id": "PHOTO-06",
@@ -19650,7 +19764,11 @@
   "k_id": "K2_Q3",
   "k_label": "Brand-system compliance",
   "method": "measure",
-  "method_note": "At 400% zoom, pick the centre of a thick stroke; No if nearer R25 G22 B19 or R111 G107 B100 than R51 G48 B43."
+  "method_note": "Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.",
+  "measurement": {
+   "kind": "colour",
+   "channel_tolerance": 5
+  }
  },
  {
   "task_id": "PHOTO-06",
@@ -19684,7 +19802,11 @@
   "k_id": "K2_Q3",
   "k_label": "Brand-system compliance",
   "method": "measure",
-  "method_note": "At 400% zoom, pick the centre of a thick stroke; No if nearer R25 G22 B19 or R111 G107 B100 than R51 G48 B43."
+  "method_note": "Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.",
+  "measurement": {
+   "kind": "colour",
+   "channel_tolerance": 5
+  }
  },
  {
   "task_id": "PHOTO-06",
@@ -19737,12 +19859,17 @@
   "requirement": "Museum Grey and Linen together cover no more than 5% of the added margin and caption area on “Family archive share image - hollis_scan_07” (share-hollis-scan-07.jpg).",
   "pass_condition": "Museum Grey and Linen together cover no more than 5% of the added margin and caption area on “Family archive share image - hollis_scan_07” (share-hollis-scan-07.jpg).",
   "reference_assets": [],
-  "revision": "pilot13_c_2026_10_22",
+  "revision": "pilot13_verifier_lock_2026_10_22",
   "origin": "pilot13_ab_2026_10_21",
   "k_id": "K2_Q3",
   "k_label": "Brand-system compliance",
-  "method": "estimate",
-  "method_note": "Estimate the share of the added margin and caption area in Museum Grey or Linen; answer No only if it is clearly over 5%."
+  "method": "measure",
+  "method_note": "Measure, do not estimate. On a measurement copy, mask the named area; exclude photographs and transparent canvas. Count the selected accent-colour pixels and divide by all pixels in that mask. Include text unless the condition excludes it. Test each PDF page or held video frame separately. Yes only when the unrounded percentage is at or below the stated limit. Use the linked measurement guide for rasterisation and colour matching. The mask is only the added caption margin, not the restored historical print. Each RGB channel must be within 5 of a selected palette colour.",
+  "measurement": {
+   "kind": "area_ratio",
+   "channel_tolerance": 5,
+   "max_percent": 5
+  }
  },
  {
   "task_id": "PHOTO-06",
@@ -20441,7 +20568,11 @@
   "k_id": "K2_Q3",
   "k_label": "Brand-system compliance",
   "method": "measure",
-  "method_note": "At 400% zoom, colour-pick the centre of a thick stroke in the name; answer No if nearer R51 G48 B43 than R25 G22 B19."
+  "method_note": "Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.",
+  "measurement": {
+   "kind": "colour",
+   "channel_tolerance": 5
+  }
  },
  {
   "task_id": "PHOTO-06",
@@ -20475,7 +20606,11 @@
   "k_id": "K2_Q3",
   "k_label": "Brand-system compliance",
   "method": "measure",
-  "method_note": "At 400% zoom, pick the centre of a thick stroke; No if nearer R25 G22 B19 or R111 G107 B100 than R51 G48 B43."
+  "method_note": "Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.",
+  "measurement": {
+   "kind": "colour",
+   "channel_tolerance": 5
+  }
  },
  {
   "task_id": "PHOTO-06",
@@ -20509,7 +20644,11 @@
   "k_id": "K2_Q3",
   "k_label": "Brand-system compliance",
   "method": "measure",
-  "method_note": "At 400% zoom, pick the centre of a thick stroke; No if nearer R25 G22 B19 or R111 G107 B100 than R51 G48 B43."
+  "method_note": "Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.",
+  "measurement": {
+   "kind": "colour",
+   "channel_tolerance": 5
+  }
  },
  {
   "task_id": "PHOTO-06",
@@ -20596,12 +20735,17 @@
   "requirement": "Museum Grey and Linen together cover no more than 5% of the added margin and caption area on “Family archive share image - hollis_scan_08” (share-hollis-scan-08.jpg).",
   "pass_condition": "Museum Grey and Linen together cover no more than 5% of the added margin and caption area on “Family archive share image - hollis_scan_08” (share-hollis-scan-08.jpg).",
   "reference_assets": [],
-  "revision": "pilot13_c_2026_10_22",
+  "revision": "pilot13_verifier_lock_2026_10_22",
   "origin": "pilot13_ab_2026_10_21",
   "k_id": "K2_Q3",
   "k_label": "Brand-system compliance",
-  "method": "estimate",
-  "method_note": "Estimate the share of the added margin and caption area in Museum Grey or Linen; answer No only if it is clearly over 5%."
+  "method": "measure",
+  "method_note": "Measure, do not estimate. On a measurement copy, mask the named area; exclude photographs and transparent canvas. Count the selected accent-colour pixels and divide by all pixels in that mask. Include text unless the condition excludes it. Test each PDF page or held video frame separately. Yes only when the unrounded percentage is at or below the stated limit. Use the linked measurement guide for rasterisation and colour matching. The mask is only the added caption margin, not the restored historical print. Each RGB channel must be within 5 of a selected palette colour.",
+  "measurement": {
+   "kind": "area_ratio",
+   "channel_tolerance": 5,
+   "max_percent": 5
+  }
  },
  {
   "task_id": "PHOTO-06",
@@ -21318,7 +21462,11 @@
   "k_id": "K2_Q3",
   "k_label": "Brand-system compliance",
   "method": "measure",
-  "method_note": "At 400% zoom, pick the centre of a thick stroke; No if nearer R25 G22 B19 or R111 G107 B100 than R51 G48 B43."
+  "method_note": "Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.",
+  "measurement": {
+   "kind": "colour",
+   "channel_tolerance": 5
+  }
  },
  {
   "task_id": "PHOTO-06",
@@ -21352,7 +21500,11 @@
   "k_id": "K2_Q3",
   "k_label": "Brand-system compliance",
   "method": "measure",
-  "method_note": "At 400% zoom, pick the centre of a thick stroke; No if nearer R25 G22 B19 or R111 G107 B100 than R51 G48 B43."
+  "method_note": "Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.",
+  "measurement": {
+   "kind": "colour",
+   "channel_tolerance": 5
+  }
  },
  {
   "task_id": "PHOTO-06",
@@ -21405,12 +21557,17 @@
   "requirement": "Museum Grey and Linen together cover no more than 5% of the added margin and caption area on “Family archive share image - hollis_scan_09” (share-hollis-scan-09.jpg).",
   "pass_condition": "Museum Grey and Linen together cover no more than 5% of the added margin and caption area on “Family archive share image - hollis_scan_09” (share-hollis-scan-09.jpg).",
   "reference_assets": [],
-  "revision": "pilot13_c_2026_10_22",
+  "revision": "pilot13_verifier_lock_2026_10_22",
   "origin": "pilot13_ab_2026_10_21",
   "k_id": "K2_Q3",
   "k_label": "Brand-system compliance",
-  "method": "estimate",
-  "method_note": "Estimate the share of the added margin and caption area in Museum Grey or Linen; answer No only if it is clearly over 5%."
+  "method": "measure",
+  "method_note": "Measure, do not estimate. On a measurement copy, mask the named area; exclude photographs and transparent canvas. Count the selected accent-colour pixels and divide by all pixels in that mask. Include text unless the condition excludes it. Test each PDF page or held video frame separately. Yes only when the unrounded percentage is at or below the stated limit. Use the linked measurement guide for rasterisation and colour matching. The mask is only the added caption margin, not the restored historical print. Each RGB channel must be within 5 of a selected palette colour.",
+  "measurement": {
+   "kind": "area_ratio",
+   "channel_tolerance": 5,
+   "max_percent": 5
+  }
  },
  {
   "task_id": "PHOTO-06",
@@ -22536,5 +22693,153 @@
   "k_label": "Content completeness",
   "method": "look",
   "method_note": "Inspect the named output against this requirement and its linked references."
+ },
+ {
+  "task_id": "PHOTO-06",
+  "output_id": "restoration-hollis-scan-06",
+  "check_id": "PHOTO-06/restoration-hollis-scan-06/H019",
+  "type": "human",
+  "output_reference": "deliverables/restoration-hollis-scan-06.png",
+  "check": "The skin on “Archival restoration master - hollis_scan_06” (restoration-hollis-scan-06.png) show no magenta or red cast.",
+  "answer_type": "yes_no",
+  "allowed_answers": [
+   "Yes",
+   "No"
+  ],
+  "pass_answer": "Yes",
+  "answer": null,
+  "status": "not_assessed",
+  "source_statement": "The print's white border and the skin on “Archival restoration master - hollis_scan_06” (restoration-hollis-scan-06.png) show no magenta or red cast.",
+  "evidence_reference": "family_notes.txt: \"1967, the garden. Gone very orange.\" Palette rules, photography: photographs keep their own corrected colour; hollis_scan_06.jpg is not warmed further to blend with the set. Source scan hollis_scan_06.jpg reads yellow-orange.",
+  "artifact_name": "Archival restoration master - hollis_scan_06",
+  "artifact_file": "restoration-hollis-scan-06.png",
+  "requirement": "The skin on “Archival restoration master - hollis_scan_06” (restoration-hollis-scan-06.png) show no magenta or red cast.",
+  "pass_condition": "The skin on “Archival restoration master - hollis_scan_06” (restoration-hollis-scan-06.png) show no magenta or red cast.",
+  "reference_assets": [
+   {
+    "filename": "hollis_scan_06.jpg",
+    "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/tasks/SB3-006-PHO__hollis-family-archive-ada-hollis-archival-restoration/assets/hollis_scan_06.jpg"
+   },
+   {
+    "filename": "family_notes.txt",
+    "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/tasks/SB3-006-PHO__hollis-family-archive-ada-hollis-archival-restoration/assets/family_notes.txt"
+   }
+  ],
+  "k_id": "K2_Q2",
+  "k_label": "Asset preservation",
+  "origin": "review_feedback_2026_09_25",
+  "revision": "pilot13_verifier_lock_2026_10_22",
+  "method": "look",
+  "method_note": "Inspect the named output against this requirement and its linked references.",
+  "split_from": "PHOTO-06/restoration-hollis-scan-06/H007"
+ },
+ {
+  "task_id": "PHOTO-06",
+  "output_id": "share-hollis-scan-06",
+  "check_id": "PHOTO-06/share-hollis-scan-06/H067",
+  "type": "human",
+  "output_reference": "deliverables/share-hollis-scan-06.jpg",
+  "check": "The skin on “Family archive share image - hollis_scan_06” (share-hollis-scan-06.jpg) show no magenta or red cast.",
+  "answer_type": "yes_no",
+  "allowed_answers": [
+   "Yes",
+   "No"
+  ],
+  "pass_answer": "Yes",
+  "answer": null,
+  "status": "not_assessed",
+  "source_statement": "The print's white border and the skin on “Family archive share image - hollis_scan_06” (share-hollis-scan-06.jpg) show no magenta or red cast.",
+  "evidence_reference": "family_notes.txt: \"1967, the garden. Gone very orange.\" Palette rules, photography: photographs keep their own corrected colour; hollis_scan_06.jpg is not warmed further to blend with the set. Source scan hollis_scan_06.jpg reads yellow-orange.",
+  "artifact_name": "Family archive share image - hollis_scan_06",
+  "artifact_file": "share-hollis-scan-06.jpg",
+  "requirement": "The skin on “Family archive share image - hollis_scan_06” (share-hollis-scan-06.jpg) show no magenta or red cast.",
+  "pass_condition": "The skin on “Family archive share image - hollis_scan_06” (share-hollis-scan-06.jpg) show no magenta or red cast.",
+  "reference_assets": [
+   {
+    "filename": "hollis_scan_06.jpg",
+    "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/tasks/SB3-006-PHO__hollis-family-archive-ada-hollis-archival-restoration/assets/hollis_scan_06.jpg"
+   },
+   {
+    "filename": "family_notes.txt",
+    "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/tasks/SB3-006-PHO__hollis-family-archive-ada-hollis-archival-restoration/assets/family_notes.txt"
+   }
+  ],
+  "k_id": "K2_Q2",
+  "k_label": "Asset preservation",
+  "origin": "review_feedback_2026_09_25",
+  "revision": "pilot13_verifier_lock_2026_10_22",
+  "method": "look",
+  "method_note": "Inspect the named output against this requirement and its linked references.",
+  "split_from": "PHOTO-06/share-hollis-scan-06/H007"
+ },
+ {
+  "task_id": "PHOTO-06",
+  "output_id": "share-hollis-scan-07",
+  "check_id": "PHOTO-06/share-hollis-scan-07/H070",
+  "type": "human",
+  "output_reference": "deliverables/share-hollis-scan-07.jpg",
+  "check": "The skin on “Family archive share image - hollis_scan_07” (share-hollis-scan-07.jpg) show no green or cyan cast.",
+  "answer_type": "yes_no",
+  "allowed_answers": [
+   "Yes",
+   "No"
+  ],
+  "pass_answer": "Yes",
+  "answer": null,
+  "status": "not_assessed",
+  "source_statement": "The print's white border and the skin on “Family archive share image - hollis_scan_07” (share-hollis-scan-07.jpg) show no green or cyan cast.",
+  "evidence_reference": "Palette rules, photography: photographs keep their own corrected colour. Source scan hollis_scan_07.jpg reads green-cyan and washed out.",
+  "artifact_name": "Family archive share image - hollis_scan_07",
+  "artifact_file": "share-hollis-scan-07.jpg",
+  "requirement": "The skin on “Family archive share image - hollis_scan_07” (share-hollis-scan-07.jpg) show no green or cyan cast.",
+  "pass_condition": "The skin on “Family archive share image - hollis_scan_07” (share-hollis-scan-07.jpg) show no green or cyan cast.",
+  "reference_assets": [
+   {
+    "filename": "hollis_scan_07.jpg",
+    "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/tasks/SB3-006-PHO__hollis-family-archive-ada-hollis-archival-restoration/assets/hollis_scan_07.jpg"
+   }
+  ],
+  "k_id": "K2_Q2",
+  "k_label": "Asset preservation",
+  "origin": "review_feedback_2026_09_25",
+  "revision": "pilot13_verifier_lock_2026_10_22",
+  "method": "look",
+  "method_note": "Inspect the named output against this requirement and its linked references.",
+  "split_from": "PHOTO-06/share-hollis-scan-07/H008"
+ },
+ {
+  "task_id": "PHOTO-06",
+  "output_id": "restoration-hollis-scan-07",
+  "check_id": "PHOTO-06/restoration-hollis-scan-07/H020",
+  "type": "human",
+  "output_reference": "deliverables/restoration-hollis-scan-07.png",
+  "check": "The skin on “Archival restoration master - hollis_scan_07” (restoration-hollis-scan-07.png) show no green or cyan cast.",
+  "answer_type": "yes_no",
+  "allowed_answers": [
+   "Yes",
+   "No"
+  ],
+  "pass_answer": "Yes",
+  "answer": null,
+  "status": "not_assessed",
+  "source_statement": "The print's white border and the skin on “Archival restoration master - hollis_scan_07” (restoration-hollis-scan-07.png) show no green or cyan cast.",
+  "evidence_reference": "Palette rules, photography: photographs keep their own corrected colour. Source scan hollis_scan_07.jpg reads green-cyan and washed out.",
+  "artifact_name": "Archival restoration master - hollis_scan_07",
+  "artifact_file": "restoration-hollis-scan-07.png",
+  "requirement": "The skin on “Archival restoration master - hollis_scan_07” (restoration-hollis-scan-07.png) show no green or cyan cast.",
+  "pass_condition": "The skin on “Archival restoration master - hollis_scan_07” (restoration-hollis-scan-07.png) show no green or cyan cast.",
+  "reference_assets": [
+   {
+    "filename": "hollis_scan_07.jpg",
+    "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/tasks/SB3-006-PHO__hollis-family-archive-ada-hollis-archival-restoration/assets/hollis_scan_07.jpg"
+   }
+  ],
+  "k_id": "K2_Q2",
+  "k_label": "Asset preservation",
+  "origin": "review_feedback_2026_09_25",
+  "revision": "pilot13_verifier_lock_2026_10_22",
+  "method": "look",
+  "method_note": "Inspect the named output against this requirement and its linked references.",
+  "split_from": "PHOTO-06/restoration-hollis-scan-07/H009"
  }
 ]

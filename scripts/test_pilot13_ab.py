@@ -69,7 +69,7 @@ class AbFixTests(unittest.TestCase):
             spec = json.loads((TASKS / tid / 'TASK_SPEC.json').read_text())
             for c in spec['verifiers_human']:
                 if c['method'] == 'measure' and re.search(r'#[0-9A-Fa-f]{6}', c['check']):
-                    self.assertRegex(c['method_note'], r'(?i)within \d+|exactly|must be #|\bnearer\b|HSB brightness', c['check_id'])
+                    self.assertRegex(c['method_note'], r'(?i)within \d+|exactly|must be #', c['check_id'])
                     self.assertNotRegex(c['method_note'], r'clearly differs|clearly matches|very near|1-unit', c['check_id'])
 
     def test_typography_prose_matches_current_scale(self):

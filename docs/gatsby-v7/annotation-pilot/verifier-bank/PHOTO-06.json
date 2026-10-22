@@ -648,7 +648,7 @@
     "output_id": "restoration-hollis-scan-06",
     "type": "human",
     "output_reference": "deliverables/restoration-hollis-scan-06.png",
-    "check": "The print's white border and the skin on “Archival restoration master - hollis_scan_06” (restoration-hollis-scan-06.png) show no magenta or red cast.",
+    "check": "The print's white border on “Archival restoration master - hollis_scan_06” (restoration-hollis-scan-06.png) show no magenta or red cast.",
     "method": "look",
     "method_note": "Inspect the named output against this requirement and its linked references.",
     "reference_assets": [
@@ -1688,7 +1688,11 @@
     "output_reference": "deliverables/share-hollis-scan-03.jpg",
     "check": "The sitter's name or title line on “Family archive share image - hollis_scan_03” (share-hollis-scan-03.jpg) is Archive Black #191613.",
     "method": "measure",
-    "method_note": "At 400% zoom, colour-pick the centre of a thick stroke in the name; answer No if nearer R51 G48 B43 than R25 G22 B19.",
+    "method_note": "Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.",
+    "measurement": {
+      "kind": "colour",
+      "channel_tolerance": 5
+    },
     "reference_assets": [
       {
         "filename": "mountcard_2019_print.pdf",
@@ -2097,7 +2101,7 @@
     "output_id": "share-hollis-scan-06",
     "type": "human",
     "output_reference": "deliverables/share-hollis-scan-06.jpg",
-    "check": "The print's white border and the skin on “Family archive share image - hollis_scan_06” (share-hollis-scan-06.jpg) show no magenta or red cast.",
+    "check": "The print's white border on “Family archive share image - hollis_scan_06” (share-hollis-scan-06.jpg) show no magenta or red cast.",
     "method": "look",
     "method_note": "Inspect the named output against this requirement and its linked references.",
     "reference_assets": [
@@ -2384,7 +2388,7 @@
     "output_id": "share-hollis-scan-07",
     "type": "human",
     "output_reference": "deliverables/share-hollis-scan-07.jpg",
-    "check": "The print's white border and the skin on “Family archive share image - hollis_scan_07” (share-hollis-scan-07.jpg) show no green or cyan cast.",
+    "check": "The print's white border on “Family archive share image - hollis_scan_07” (share-hollis-scan-07.jpg) show no green or cyan cast.",
     "method": "look",
     "method_note": "Inspect the named output against this requirement and its linked references.",
     "reference_assets": [
@@ -2637,7 +2641,11 @@
     "output_reference": "deliverables/share-hollis-scan-07.jpg",
     "check": "The sitter's name or title line on “Family archive share image - hollis_scan_07” (share-hollis-scan-07.jpg) is Archive Black #191613.",
     "method": "measure",
-    "method_note": "At 400% zoom, colour-pick the centre of a thick stroke in the name; answer No if nearer R51 G48 B43 than R25 G22 B19.",
+    "method_note": "Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.",
+    "measurement": {
+      "kind": "colour",
+      "channel_tolerance": 5
+    },
     "reference_assets": [
       {
         "filename": "mountcard_2019_print.pdf",
@@ -3203,7 +3211,11 @@
     "output_reference": "deliverables/share-hollis-scan-09.jpg",
     "check": "The sitter's name or title line on “Family archive share image - hollis_scan_09” (share-hollis-scan-09.jpg) is Archive Black #191613.",
     "method": "measure",
-    "method_note": "At 400% zoom, colour-pick the centre of a thick stroke in the name; answer No if nearer R51 G48 B43 than R25 G22 B19.",
+    "method_note": "Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.",
+    "measurement": {
+      "kind": "colour",
+      "channel_tolerance": 5
+    },
     "reference_assets": [
       {
         "filename": "mountcard_2019_print.pdf",
@@ -3561,7 +3573,7 @@
     "output_id": "restoration-hollis-scan-07",
     "type": "human",
     "output_reference": "deliverables/restoration-hollis-scan-07.png",
-    "check": "The print's white border and the skin on “Archival restoration master - hollis_scan_07” (restoration-hollis-scan-07.png) show no green or cyan cast.",
+    "check": "The print's white border on “Archival restoration master - hollis_scan_07” (restoration-hollis-scan-07.png) show no green or cyan cast.",
     "method": "look",
     "method_note": "Inspect the named output against this requirement and its linked references.",
     "reference_assets": [
@@ -3995,7 +4007,11 @@
     "output_reference": "deliverables/share-hollis-scan-05.jpg",
     "check": "The sitter's name or title line on “Family archive share image - hollis_scan_05” (share-hollis-scan-05.jpg) is Archive Black #191613.",
     "method": "measure",
-    "method_note": "At 400% zoom, colour-pick the centre of a thick stroke in the name; answer No if nearer R51 G48 B43 than R25 G22 B19.",
+    "method_note": "Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.",
+    "measurement": {
+      "kind": "colour",
+      "channel_tolerance": 5
+    },
     "reference_assets": [
       {
         "filename": "mountcard_2019_print.pdf",
@@ -4665,7 +4681,11 @@
     "output_reference": "deliverables/share-hollis-scan-01.jpg",
     "check": "The sitter's name or title line on “Family archive share image - hollis_scan_01” (share-hollis-scan-01.jpg) is Archive Black #191613.",
     "method": "measure",
-    "method_note": "At 400% zoom, colour-pick the centre of a thick stroke in the name; answer No if nearer R51 G48 B43 than R25 G22 B19.",
+    "method_note": "Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.",
+    "measurement": {
+      "kind": "colour",
+      "channel_tolerance": 5
+    },
     "reference_assets": [
       {
         "filename": "mountcard_2019_print.pdf",
@@ -6491,7 +6511,11 @@
     "output_reference": "deliverables/share-hollis-scan-01.jpg",
     "check": "The place and date line on “Family archive share image - hollis_scan_01” (share-hollis-scan-01.jpg) is Ink Charcoal #33302B, not grey and not a colour.",
     "method": "measure",
-    "method_note": "At 400% zoom, pick the centre of a thick stroke; No if nearer R25 G22 B19 or R111 G107 B100 than R51 G48 B43.",
+    "method_note": "Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.",
+    "measurement": {
+      "kind": "colour",
+      "channel_tolerance": 5
+    },
     "reference_assets": [
       {
         "filename": "mountcard_2019_print.pdf",
@@ -6506,7 +6530,11 @@
     "output_reference": "deliverables/share-hollis-scan-01.jpg",
     "check": "If body text, such as a names line, appears on “Family archive share image - hollis_scan_01” (share-hollis-scan-01.jpg), it is Ink Charcoal #33302B; a provenance line may be grey.",
     "method": "measure",
-    "method_note": "At 400% zoom, pick the centre of a thick stroke; No if nearer R25 G22 B19 or R111 G107 B100 than R51 G48 B43.",
+    "method_note": "Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.",
+    "measurement": {
+      "kind": "colour",
+      "channel_tolerance": 5
+    },
     "reference_assets": [
       {
         "filename": "mountcard_2019_print.pdf",
@@ -6530,8 +6558,13 @@
     "type": "human",
     "output_reference": "deliverables/share-hollis-scan-01.jpg",
     "check": "Museum Grey and Linen together cover no more than 5% of the added margin and caption area on “Family archive share image - hollis_scan_01” (share-hollis-scan-01.jpg).",
-    "method": "estimate",
-    "method_note": "Estimate the share of the added margin and caption area in Museum Grey or Linen; answer No only if it is clearly over 5%.",
+    "method": "measure",
+    "method_note": "Measure, do not estimate. On a measurement copy, mask the named area; exclude photographs and transparent canvas. Count the selected accent-colour pixels and divide by all pixels in that mask. Include text unless the condition excludes it. Test each PDF page or held video frame separately. Yes only when the unrounded percentage is at or below the stated limit. Use the linked measurement guide for rasterisation and colour matching. The mask is only the added caption margin, not the restored historical print. Each RGB channel must be within 5 of a selected palette colour.",
+    "measurement": {
+      "kind": "area_ratio",
+      "channel_tolerance": 5,
+      "max_percent": 5
+    },
     "reference_assets": []
   },
   {
@@ -6810,7 +6843,11 @@
     "output_reference": "deliverables/share-hollis-scan-02.jpg",
     "check": "The sitter's name or title line on “Family archive share image - hollis_scan_02” (share-hollis-scan-02.jpg) is Archive Black #191613.",
     "method": "measure",
-    "method_note": "At 400% zoom, colour-pick the centre of a thick stroke in the name; answer No if nearer R51 G48 B43 than R25 G22 B19.",
+    "method_note": "Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.",
+    "measurement": {
+      "kind": "colour",
+      "channel_tolerance": 5
+    },
     "reference_assets": [
       {
         "filename": "mountcard_2019_print.pdf",
@@ -6825,7 +6862,11 @@
     "output_reference": "deliverables/share-hollis-scan-02.jpg",
     "check": "The place and date line on “Family archive share image - hollis_scan_02” (share-hollis-scan-02.jpg) is Ink Charcoal #33302B, not grey and not a colour.",
     "method": "measure",
-    "method_note": "At 400% zoom, pick the centre of a thick stroke; No if nearer R25 G22 B19 or R111 G107 B100 than R51 G48 B43.",
+    "method_note": "Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.",
+    "measurement": {
+      "kind": "colour",
+      "channel_tolerance": 5
+    },
     "reference_assets": [
       {
         "filename": "mountcard_2019_print.pdf",
@@ -6840,7 +6881,11 @@
     "output_reference": "deliverables/share-hollis-scan-02.jpg",
     "check": "If body text, such as a names line, appears on “Family archive share image - hollis_scan_02” (share-hollis-scan-02.jpg), it is Ink Charcoal #33302B; a provenance line may be grey.",
     "method": "measure",
-    "method_note": "At 400% zoom, pick the centre of a thick stroke; No if nearer R25 G22 B19 or R111 G107 B100 than R51 G48 B43.",
+    "method_note": "Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.",
+    "measurement": {
+      "kind": "colour",
+      "channel_tolerance": 5
+    },
     "reference_assets": [
       {
         "filename": "mountcard_2019_print.pdf",
@@ -6879,8 +6924,13 @@
     "type": "human",
     "output_reference": "deliverables/share-hollis-scan-02.jpg",
     "check": "Museum Grey and Linen together cover no more than 5% of the added margin and caption area on “Family archive share image - hollis_scan_02” (share-hollis-scan-02.jpg).",
-    "method": "estimate",
-    "method_note": "Estimate the share of the added margin and caption area in Museum Grey or Linen; answer No only if it is clearly over 5%.",
+    "method": "measure",
+    "method_note": "Measure, do not estimate. On a measurement copy, mask the named area; exclude photographs and transparent canvas. Count the selected accent-colour pixels and divide by all pixels in that mask. Include text unless the condition excludes it. Test each PDF page or held video frame separately. Yes only when the unrounded percentage is at or below the stated limit. Use the linked measurement guide for rasterisation and colour matching. The mask is only the added caption margin, not the restored historical print. Each RGB channel must be within 5 of a selected palette colour.",
+    "measurement": {
+      "kind": "area_ratio",
+      "channel_tolerance": 5,
+      "max_percent": 5
+    },
     "reference_assets": []
   },
   {
@@ -7134,7 +7184,11 @@
     "output_reference": "deliverables/share-hollis-scan-03.jpg",
     "check": "The place and date line on “Family archive share image - hollis_scan_03” (share-hollis-scan-03.jpg) is Ink Charcoal #33302B, not grey and not a colour.",
     "method": "measure",
-    "method_note": "At 400% zoom, pick the centre of a thick stroke; No if nearer R25 G22 B19 or R111 G107 B100 than R51 G48 B43.",
+    "method_note": "Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.",
+    "measurement": {
+      "kind": "colour",
+      "channel_tolerance": 5
+    },
     "reference_assets": [
       {
         "filename": "mountcard_2019_print.pdf",
@@ -7149,7 +7203,11 @@
     "output_reference": "deliverables/share-hollis-scan-03.jpg",
     "check": "If body text, such as a names line, appears on “Family archive share image - hollis_scan_03” (share-hollis-scan-03.jpg), it is Ink Charcoal #33302B; a provenance line may be grey.",
     "method": "measure",
-    "method_note": "At 400% zoom, pick the centre of a thick stroke; No if nearer R25 G22 B19 or R111 G107 B100 than R51 G48 B43.",
+    "method_note": "Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.",
+    "measurement": {
+      "kind": "colour",
+      "channel_tolerance": 5
+    },
     "reference_assets": [
       {
         "filename": "mountcard_2019_print.pdf",
@@ -7173,8 +7231,13 @@
     "type": "human",
     "output_reference": "deliverables/share-hollis-scan-03.jpg",
     "check": "Museum Grey and Linen together cover no more than 5% of the added margin and caption area on “Family archive share image - hollis_scan_03” (share-hollis-scan-03.jpg).",
-    "method": "estimate",
-    "method_note": "Estimate the share of the added margin and caption area in Museum Grey or Linen; answer No only if it is clearly over 5%.",
+    "method": "measure",
+    "method_note": "Measure, do not estimate. On a measurement copy, mask the named area; exclude photographs and transparent canvas. Count the selected accent-colour pixels and divide by all pixels in that mask. Include text unless the condition excludes it. Test each PDF page or held video frame separately. Yes only when the unrounded percentage is at or below the stated limit. Use the linked measurement guide for rasterisation and colour matching. The mask is only the added caption margin, not the restored historical print. Each RGB channel must be within 5 of a selected palette colour.",
+    "measurement": {
+      "kind": "area_ratio",
+      "channel_tolerance": 5,
+      "max_percent": 5
+    },
     "reference_assets": []
   },
   {
@@ -7468,7 +7531,11 @@
     "output_reference": "deliverables/share-hollis-scan-04.jpg",
     "check": "The sitter's name or title line on “Family archive share image - hollis_scan_04” (share-hollis-scan-04.jpg) is Archive Black #191613.",
     "method": "measure",
-    "method_note": "At 400% zoom, colour-pick the centre of a thick stroke in the name; answer No if nearer R51 G48 B43 than R25 G22 B19.",
+    "method_note": "Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.",
+    "measurement": {
+      "kind": "colour",
+      "channel_tolerance": 5
+    },
     "reference_assets": [
       {
         "filename": "mountcard_2019_print.pdf",
@@ -7483,7 +7550,11 @@
     "output_reference": "deliverables/share-hollis-scan-04.jpg",
     "check": "The place and date line on “Family archive share image - hollis_scan_04” (share-hollis-scan-04.jpg) is Ink Charcoal #33302B, not grey and not a colour.",
     "method": "measure",
-    "method_note": "At 400% zoom, pick the centre of a thick stroke; No if nearer R25 G22 B19 or R111 G107 B100 than R51 G48 B43.",
+    "method_note": "Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.",
+    "measurement": {
+      "kind": "colour",
+      "channel_tolerance": 5
+    },
     "reference_assets": [
       {
         "filename": "mountcard_2019_print.pdf",
@@ -7498,7 +7569,11 @@
     "output_reference": "deliverables/share-hollis-scan-04.jpg",
     "check": "If body text, such as a names line, appears on “Family archive share image - hollis_scan_04” (share-hollis-scan-04.jpg), it is Ink Charcoal #33302B; a provenance line may be grey.",
     "method": "measure",
-    "method_note": "At 400% zoom, pick the centre of a thick stroke; No if nearer R25 G22 B19 or R111 G107 B100 than R51 G48 B43.",
+    "method_note": "Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.",
+    "measurement": {
+      "kind": "colour",
+      "channel_tolerance": 5
+    },
     "reference_assets": [
       {
         "filename": "mountcard_2019_print.pdf",
@@ -7537,8 +7612,13 @@
     "type": "human",
     "output_reference": "deliverables/share-hollis-scan-04.jpg",
     "check": "Museum Grey and Linen together cover no more than 5% of the added margin and caption area on “Family archive share image - hollis_scan_04” (share-hollis-scan-04.jpg).",
-    "method": "estimate",
-    "method_note": "Estimate the share of the added margin and caption area in Museum Grey or Linen; answer No only if it is clearly over 5%.",
+    "method": "measure",
+    "method_note": "Measure, do not estimate. On a measurement copy, mask the named area; exclude photographs and transparent canvas. Count the selected accent-colour pixels and divide by all pixels in that mask. Include text unless the condition excludes it. Test each PDF page or held video frame separately. Yes only when the unrounded percentage is at or below the stated limit. Use the linked measurement guide for rasterisation and colour matching. The mask is only the added caption margin, not the restored historical print. Each RGB channel must be within 5 of a selected palette colour.",
+    "measurement": {
+      "kind": "area_ratio",
+      "channel_tolerance": 5,
+      "max_percent": 5
+    },
     "reference_assets": []
   },
   {
@@ -7831,7 +7911,11 @@
     "output_reference": "deliverables/share-hollis-scan-05.jpg",
     "check": "The place and date line on “Family archive share image - hollis_scan_05” (share-hollis-scan-05.jpg) is Ink Charcoal #33302B, not grey and not a colour.",
     "method": "measure",
-    "method_note": "At 400% zoom, pick the centre of a thick stroke; No if nearer R25 G22 B19 or R111 G107 B100 than R51 G48 B43.",
+    "method_note": "Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.",
+    "measurement": {
+      "kind": "colour",
+      "channel_tolerance": 5
+    },
     "reference_assets": [
       {
         "filename": "mountcard_2019_print.pdf",
@@ -7846,7 +7930,11 @@
     "output_reference": "deliverables/share-hollis-scan-05.jpg",
     "check": "If body text, such as a names line, appears on “Family archive share image - hollis_scan_05” (share-hollis-scan-05.jpg), it is Ink Charcoal #33302B; a provenance line may be grey.",
     "method": "measure",
-    "method_note": "At 400% zoom, pick the centre of a thick stroke; No if nearer R25 G22 B19 or R111 G107 B100 than R51 G48 B43.",
+    "method_note": "Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.",
+    "measurement": {
+      "kind": "colour",
+      "channel_tolerance": 5
+    },
     "reference_assets": [
       {
         "filename": "mountcard_2019_print.pdf",
@@ -7870,8 +7958,13 @@
     "type": "human",
     "output_reference": "deliverables/share-hollis-scan-05.jpg",
     "check": "Museum Grey and Linen together cover no more than 5% of the added margin and caption area on “Family archive share image - hollis_scan_05” (share-hollis-scan-05.jpg).",
-    "method": "estimate",
-    "method_note": "Estimate the share of the added margin and caption area in Museum Grey or Linen; answer No only if it is clearly over 5%.",
+    "method": "measure",
+    "method_note": "Measure, do not estimate. On a measurement copy, mask the named area; exclude photographs and transparent canvas. Count the selected accent-colour pixels and divide by all pixels in that mask. Include text unless the condition excludes it. Test each PDF page or held video frame separately. Yes only when the unrounded percentage is at or below the stated limit. Use the linked measurement guide for rasterisation and colour matching. The mask is only the added caption margin, not the restored historical print. Each RGB channel must be within 5 of a selected palette colour.",
+    "measurement": {
+      "kind": "area_ratio",
+      "channel_tolerance": 5,
+      "max_percent": 5
+    },
     "reference_assets": []
   },
   {
@@ -8150,7 +8243,11 @@
     "output_reference": "deliverables/share-hollis-scan-06.jpg",
     "check": "The sitter's name or title line on “Family archive share image - hollis_scan_06” (share-hollis-scan-06.jpg) is Archive Black #191613.",
     "method": "measure",
-    "method_note": "At 400% zoom, colour-pick the centre of a thick stroke in the name; answer No if nearer R51 G48 B43 than R25 G22 B19.",
+    "method_note": "Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.",
+    "measurement": {
+      "kind": "colour",
+      "channel_tolerance": 5
+    },
     "reference_assets": [
       {
         "filename": "mountcard_2019_print.pdf",
@@ -8165,7 +8262,11 @@
     "output_reference": "deliverables/share-hollis-scan-06.jpg",
     "check": "The place and date line on “Family archive share image - hollis_scan_06” (share-hollis-scan-06.jpg) is Ink Charcoal #33302B, not grey and not a colour.",
     "method": "measure",
-    "method_note": "At 400% zoom, pick the centre of a thick stroke; No if nearer R25 G22 B19 or R111 G107 B100 than R51 G48 B43.",
+    "method_note": "Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.",
+    "measurement": {
+      "kind": "colour",
+      "channel_tolerance": 5
+    },
     "reference_assets": [
       {
         "filename": "mountcard_2019_print.pdf",
@@ -8180,7 +8281,11 @@
     "output_reference": "deliverables/share-hollis-scan-06.jpg",
     "check": "If body text, such as a names line, appears on “Family archive share image - hollis_scan_06” (share-hollis-scan-06.jpg), it is Ink Charcoal #33302B; a provenance line may be grey.",
     "method": "measure",
-    "method_note": "At 400% zoom, pick the centre of a thick stroke; No if nearer R25 G22 B19 or R111 G107 B100 than R51 G48 B43.",
+    "method_note": "Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.",
+    "measurement": {
+      "kind": "colour",
+      "channel_tolerance": 5
+    },
     "reference_assets": [
       {
         "filename": "mountcard_2019_print.pdf",
@@ -8219,8 +8324,13 @@
     "type": "human",
     "output_reference": "deliverables/share-hollis-scan-06.jpg",
     "check": "Museum Grey and Linen together cover no more than 5% of the added margin and caption area on “Family archive share image - hollis_scan_06” (share-hollis-scan-06.jpg).",
-    "method": "estimate",
-    "method_note": "Estimate the share of the added margin and caption area in Museum Grey or Linen; answer No only if it is clearly over 5%.",
+    "method": "measure",
+    "method_note": "Measure, do not estimate. On a measurement copy, mask the named area; exclude photographs and transparent canvas. Count the selected accent-colour pixels and divide by all pixels in that mask. Include text unless the condition excludes it. Test each PDF page or held video frame separately. Yes only when the unrounded percentage is at or below the stated limit. Use the linked measurement guide for rasterisation and colour matching. The mask is only the added caption margin, not the restored historical print. Each RGB channel must be within 5 of a selected palette colour.",
+    "measurement": {
+      "kind": "area_ratio",
+      "channel_tolerance": 5,
+      "max_percent": 5
+    },
     "reference_assets": []
   },
   {
@@ -8489,7 +8599,11 @@
     "output_reference": "deliverables/share-hollis-scan-07.jpg",
     "check": "The place and date line on “Family archive share image - hollis_scan_07” (share-hollis-scan-07.jpg) is Ink Charcoal #33302B, not grey and not a colour.",
     "method": "measure",
-    "method_note": "At 400% zoom, pick the centre of a thick stroke; No if nearer R25 G22 B19 or R111 G107 B100 than R51 G48 B43.",
+    "method_note": "Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.",
+    "measurement": {
+      "kind": "colour",
+      "channel_tolerance": 5
+    },
     "reference_assets": [
       {
         "filename": "mountcard_2019_print.pdf",
@@ -8504,7 +8618,11 @@
     "output_reference": "deliverables/share-hollis-scan-07.jpg",
     "check": "If body text, such as a names line, appears on “Family archive share image - hollis_scan_07” (share-hollis-scan-07.jpg), it is Ink Charcoal #33302B; a provenance line may be grey.",
     "method": "measure",
-    "method_note": "At 400% zoom, pick the centre of a thick stroke; No if nearer R25 G22 B19 or R111 G107 B100 than R51 G48 B43.",
+    "method_note": "Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.",
+    "measurement": {
+      "kind": "colour",
+      "channel_tolerance": 5
+    },
     "reference_assets": [
       {
         "filename": "mountcard_2019_print.pdf",
@@ -8528,8 +8646,13 @@
     "type": "human",
     "output_reference": "deliverables/share-hollis-scan-07.jpg",
     "check": "Museum Grey and Linen together cover no more than 5% of the added margin and caption area on “Family archive share image - hollis_scan_07” (share-hollis-scan-07.jpg).",
-    "method": "estimate",
-    "method_note": "Estimate the share of the added margin and caption area in Museum Grey or Linen; answer No only if it is clearly over 5%.",
+    "method": "measure",
+    "method_note": "Measure, do not estimate. On a measurement copy, mask the named area; exclude photographs and transparent canvas. Count the selected accent-colour pixels and divide by all pixels in that mask. Include text unless the condition excludes it. Test each PDF page or held video frame separately. Yes only when the unrounded percentage is at or below the stated limit. Use the linked measurement guide for rasterisation and colour matching. The mask is only the added caption margin, not the restored historical print. Each RGB channel must be within 5 of a selected palette colour.",
+    "measurement": {
+      "kind": "area_ratio",
+      "channel_tolerance": 5,
+      "max_percent": 5
+    },
     "reference_assets": []
   },
   {
@@ -8823,7 +8946,11 @@
     "output_reference": "deliverables/share-hollis-scan-08.jpg",
     "check": "The sitter's name or title line on “Family archive share image - hollis_scan_08” (share-hollis-scan-08.jpg) is Archive Black #191613.",
     "method": "measure",
-    "method_note": "At 400% zoom, colour-pick the centre of a thick stroke in the name; answer No if nearer R51 G48 B43 than R25 G22 B19.",
+    "method_note": "Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.",
+    "measurement": {
+      "kind": "colour",
+      "channel_tolerance": 5
+    },
     "reference_assets": [
       {
         "filename": "mountcard_2019_print.pdf",
@@ -8838,7 +8965,11 @@
     "output_reference": "deliverables/share-hollis-scan-08.jpg",
     "check": "The place and date line on “Family archive share image - hollis_scan_08” (share-hollis-scan-08.jpg) is Ink Charcoal #33302B, not grey and not a colour.",
     "method": "measure",
-    "method_note": "At 400% zoom, pick the centre of a thick stroke; No if nearer R25 G22 B19 or R111 G107 B100 than R51 G48 B43.",
+    "method_note": "Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.",
+    "measurement": {
+      "kind": "colour",
+      "channel_tolerance": 5
+    },
     "reference_assets": [
       {
         "filename": "mountcard_2019_print.pdf",
@@ -8853,7 +8984,11 @@
     "output_reference": "deliverables/share-hollis-scan-08.jpg",
     "check": "If body text, such as a names line, appears on “Family archive share image - hollis_scan_08” (share-hollis-scan-08.jpg), it is Ink Charcoal #33302B; a provenance line may be grey.",
     "method": "measure",
-    "method_note": "At 400% zoom, pick the centre of a thick stroke; No if nearer R25 G22 B19 or R111 G107 B100 than R51 G48 B43.",
+    "method_note": "Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.",
+    "measurement": {
+      "kind": "colour",
+      "channel_tolerance": 5
+    },
     "reference_assets": [
       {
         "filename": "mountcard_2019_print.pdf",
@@ -8892,8 +9027,13 @@
     "type": "human",
     "output_reference": "deliverables/share-hollis-scan-08.jpg",
     "check": "Museum Grey and Linen together cover no more than 5% of the added margin and caption area on “Family archive share image - hollis_scan_08” (share-hollis-scan-08.jpg).",
-    "method": "estimate",
-    "method_note": "Estimate the share of the added margin and caption area in Museum Grey or Linen; answer No only if it is clearly over 5%.",
+    "method": "measure",
+    "method_note": "Measure, do not estimate. On a measurement copy, mask the named area; exclude photographs and transparent canvas. Count the selected accent-colour pixels and divide by all pixels in that mask. Include text unless the condition excludes it. Test each PDF page or held video frame separately. Yes only when the unrounded percentage is at or below the stated limit. Use the linked measurement guide for rasterisation and colour matching. The mask is only the added caption margin, not the restored historical print. Each RGB channel must be within 5 of a selected palette colour.",
+    "measurement": {
+      "kind": "area_ratio",
+      "channel_tolerance": 5,
+      "max_percent": 5
+    },
     "reference_assets": []
   },
   {
@@ -9186,7 +9326,11 @@
     "output_reference": "deliverables/share-hollis-scan-09.jpg",
     "check": "The place and date line on “Family archive share image - hollis_scan_09” (share-hollis-scan-09.jpg) is Ink Charcoal #33302B, not grey and not a colour.",
     "method": "measure",
-    "method_note": "At 400% zoom, pick the centre of a thick stroke; No if nearer R25 G22 B19 or R111 G107 B100 than R51 G48 B43.",
+    "method_note": "Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.",
+    "measurement": {
+      "kind": "colour",
+      "channel_tolerance": 5
+    },
     "reference_assets": [
       {
         "filename": "mountcard_2019_print.pdf",
@@ -9201,7 +9345,11 @@
     "output_reference": "deliverables/share-hollis-scan-09.jpg",
     "check": "If body text, such as a names line, appears on “Family archive share image - hollis_scan_09” (share-hollis-scan-09.jpg), it is Ink Charcoal #33302B; a provenance line may be grey.",
     "method": "measure",
-    "method_note": "At 400% zoom, pick the centre of a thick stroke; No if nearer R25 G22 B19 or R111 G107 B100 than R51 G48 B43.",
+    "method_note": "Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.",
+    "measurement": {
+      "kind": "colour",
+      "channel_tolerance": 5
+    },
     "reference_assets": [
       {
         "filename": "mountcard_2019_print.pdf",
@@ -9225,8 +9373,13 @@
     "type": "human",
     "output_reference": "deliverables/share-hollis-scan-09.jpg",
     "check": "Museum Grey and Linen together cover no more than 5% of the added margin and caption area on “Family archive share image - hollis_scan_09” (share-hollis-scan-09.jpg).",
-    "method": "estimate",
-    "method_note": "Estimate the share of the added margin and caption area in Museum Grey or Linen; answer No only if it is clearly over 5%.",
+    "method": "measure",
+    "method_note": "Measure, do not estimate. On a measurement copy, mask the named area; exclude photographs and transparent canvas. Count the selected accent-colour pixels and divide by all pixels in that mask. Include text unless the condition excludes it. Test each PDF page or held video frame separately. Yes only when the unrounded percentage is at or below the stated limit. Use the linked measurement guide for rasterisation and colour matching. The mask is only the added caption margin, not the restored historical print. Each RGB channel must be within 5 of a selected palette colour.",
+    "measurement": {
+      "kind": "area_ratio",
+      "channel_tolerance": 5,
+      "max_percent": 5
+    },
     "reference_assets": []
   },
   {
@@ -9723,6 +9876,74 @@
       {
         "filename": "family_notes.txt",
         "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/tasks/SB3-006-PHO__hollis-family-archive-ada-hollis-archival-restoration/assets/family_notes.txt"
+      }
+    ]
+  },
+  {
+    "check_id": "PHOTO-06/restoration-hollis-scan-06/H019",
+    "output_id": "restoration-hollis-scan-06",
+    "type": "human",
+    "output_reference": "deliverables/restoration-hollis-scan-06.png",
+    "check": "The skin on “Archival restoration master - hollis_scan_06” (restoration-hollis-scan-06.png) show no magenta or red cast.",
+    "method": "look",
+    "method_note": "Inspect the named output against this requirement and its linked references.",
+    "reference_assets": [
+      {
+        "filename": "hollis_scan_06.jpg",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/tasks/SB3-006-PHO__hollis-family-archive-ada-hollis-archival-restoration/assets/hollis_scan_06.jpg"
+      },
+      {
+        "filename": "family_notes.txt",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/tasks/SB3-006-PHO__hollis-family-archive-ada-hollis-archival-restoration/assets/family_notes.txt"
+      }
+    ]
+  },
+  {
+    "check_id": "PHOTO-06/share-hollis-scan-06/H067",
+    "output_id": "share-hollis-scan-06",
+    "type": "human",
+    "output_reference": "deliverables/share-hollis-scan-06.jpg",
+    "check": "The skin on “Family archive share image - hollis_scan_06” (share-hollis-scan-06.jpg) show no magenta or red cast.",
+    "method": "look",
+    "method_note": "Inspect the named output against this requirement and its linked references.",
+    "reference_assets": [
+      {
+        "filename": "hollis_scan_06.jpg",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/tasks/SB3-006-PHO__hollis-family-archive-ada-hollis-archival-restoration/assets/hollis_scan_06.jpg"
+      },
+      {
+        "filename": "family_notes.txt",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/tasks/SB3-006-PHO__hollis-family-archive-ada-hollis-archival-restoration/assets/family_notes.txt"
+      }
+    ]
+  },
+  {
+    "check_id": "PHOTO-06/share-hollis-scan-07/H070",
+    "output_id": "share-hollis-scan-07",
+    "type": "human",
+    "output_reference": "deliverables/share-hollis-scan-07.jpg",
+    "check": "The skin on “Family archive share image - hollis_scan_07” (share-hollis-scan-07.jpg) show no green or cyan cast.",
+    "method": "look",
+    "method_note": "Inspect the named output against this requirement and its linked references.",
+    "reference_assets": [
+      {
+        "filename": "hollis_scan_07.jpg",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/tasks/SB3-006-PHO__hollis-family-archive-ada-hollis-archival-restoration/assets/hollis_scan_07.jpg"
+      }
+    ]
+  },
+  {
+    "check_id": "PHOTO-06/restoration-hollis-scan-07/H020",
+    "output_id": "restoration-hollis-scan-07",
+    "type": "human",
+    "output_reference": "deliverables/restoration-hollis-scan-07.png",
+    "check": "The skin on “Archival restoration master - hollis_scan_07” (restoration-hollis-scan-07.png) show no green or cyan cast.",
+    "method": "look",
+    "method_note": "Inspect the named output against this requirement and its linked references.",
+    "reference_assets": [
+      {
+        "filename": "hollis_scan_07.jpg",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/tasks/SB3-006-PHO__hollis-family-archive-ada-hollis-archival-restoration/assets/hollis_scan_07.jpg"
       }
     ]
   }

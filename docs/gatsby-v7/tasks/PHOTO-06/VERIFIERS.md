@@ -2,6 +2,10 @@
 
 Revised input pack. Previous execution results are historical, not current ratings.
 
+Score only the listed current Auto and Human verifiers. A design target marked "Not scored" in coverage remains a client instruction but is excluded from the score denominator: the requested delivery does not provide enough evidence to verify it. Do not infer a pass or failure. If a listed measurement cannot be completed, leave it unanswered and record the missing evidence; do not guess. Human answers remain Yes/No. Historical run results are not current scores.
+
+[Measurement guide](../../annotation-pilot/measurement-guide.html)
+
 ## Auto verifiers
 
 - `PHOTO-06/restoration-hollis-scan-01/A001` “The Hollis Family Archive / Archival restoration master - hollis_scan_01” (restoration-hollis-scan-01.png) is present in the delivery package.
@@ -89,593 +93,1192 @@ Revised input pack. Previous execution results are historical, not current ratin
 ## Human verifiers
 
 - `PHOTO-06/restoration-hollis-scan-01/H001` Every face on “Archival restoration master - hollis_scan_01” (restoration-hollis-scan-01.png) matches the same face in hollis_scan_01.jpg, with no feature reshaped, restyled or regenerated.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/restoration-hollis-scan-01/H002` Every detail on “Archival restoration master - hollis_scan_01” (restoration-hollis-scan-01.png), from clothing to background, can be found in hollis_scan_01.jpg; nothing has been invented or added.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/restoration-hollis-scan-01/H003` At 100% zoom, the facial skin texture on “Archival restoration master - hollis_scan_01” (restoration-hollis-scan-01.png) matches the same areas of hollis_scan_01.jpg and has not been smoothed away by damage removal.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/restoration-hollis-scan-02/H001` Every face on “Archival restoration master - hollis_scan_02” (restoration-hollis-scan-02.png) matches the same face in hollis_scan_02.jpg, with no feature reshaped, restyled or regenerated.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/restoration-hollis-scan-02/H002` Every detail on “Archival restoration master - hollis_scan_02” (restoration-hollis-scan-02.png), from clothing to background, can be found in hollis_scan_02.jpg; nothing has been invented or added.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/restoration-hollis-scan-02/H003` At 100% zoom, the facial skin texture on “Archival restoration master - hollis_scan_02” (restoration-hollis-scan-02.png) matches the same areas of hollis_scan_02.jpg and has not been smoothed away by damage removal.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/restoration-hollis-scan-03/H001` Every face on “Archival restoration master - hollis_scan_03” (restoration-hollis-scan-03.png) matches the same face in hollis_scan_03.jpg, with no feature reshaped, restyled or regenerated.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/restoration-hollis-scan-03/H002` Every detail on “Archival restoration master - hollis_scan_03” (restoration-hollis-scan-03.png), from clothing to background, can be found in hollis_scan_03.jpg; nothing has been invented or added.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/restoration-hollis-scan-03/H003` At 100% zoom, the facial skin texture on “Archival restoration master - hollis_scan_03” (restoration-hollis-scan-03.png) matches the same areas of hollis_scan_03.jpg and has not been smoothed away by damage removal.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/restoration-hollis-scan-04/H001` Every face on “Archival restoration master - hollis_scan_04” (restoration-hollis-scan-04.png) matches the same face in hollis_scan_04.jpg, with no feature reshaped, restyled or regenerated.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/restoration-hollis-scan-04/H002` Every detail on “Archival restoration master - hollis_scan_04” (restoration-hollis-scan-04.png), from clothing to background, can be found in hollis_scan_04.jpg; nothing has been invented or added.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/restoration-hollis-scan-04/H003` At 100% zoom, the facial skin texture on “Archival restoration master - hollis_scan_04” (restoration-hollis-scan-04.png) matches the same areas of hollis_scan_04.jpg and has not been smoothed away by damage removal.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/restoration-hollis-scan-04/H004` “Archival restoration master - hollis_scan_04” (restoration-hollis-scan-04.png) is made from hollis_scan_04.jpg, the “Ada with baby Ruth” photograph, and from no other scan.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/restoration-hollis-scan-04/H005` “Archival restoration master - hollis_scan_04” (restoration-hollis-scan-04.png) shows both people in hollis_scan_04.jpg, Ada Hollis and Ruth Hollis, with no person added or removed.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/restoration-hollis-scan-04/H006` “Archival restoration master - hollis_scan_04” (restoration-hollis-scan-04.png) stays monochrome like hollis_scan_04.jpg and is not colourised.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/restoration-hollis-scan-04/H007` At 100% zoom, the film grain visible in hollis_scan_04.jpg is still visible on “Archival restoration master - hollis_scan_04” (restoration-hollis-scan-04.png), not smoothed away.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/restoration-hollis-scan-04/H008` At 100% zoom, the paper texture of the print in hollis_scan_04.jpg is still visible on “Archival restoration master - hollis_scan_04” (restoration-hollis-scan-04.png), not smoothed away.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/restoration-hollis-scan-04/H009` The deckled edge of the print in hollis_scan_04.jpg is kept whole on “Archival restoration master - hollis_scan_04” (restoration-hollis-scan-04.png), not trimmed or cut straight; levelling the print is allowed.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/restoration-hollis-scan-04/H010` No part of any person visible in hollis_scan_04.jpg is cropped away or hidden on “Archival restoration master - hollis_scan_04” (restoration-hollis-scan-04.png).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/restoration-hollis-scan-05/H001` Every face on “Archival restoration master - hollis_scan_05” (restoration-hollis-scan-05.png) matches the same face in hollis_scan_05.jpg, with no feature reshaped, restyled or regenerated.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/restoration-hollis-scan-05/H002` Every detail on “Archival restoration master - hollis_scan_05” (restoration-hollis-scan-05.png), from clothing to background, can be found in hollis_scan_05.jpg; nothing has been invented or added.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/restoration-hollis-scan-05/H003` At 100% zoom, the facial skin texture on “Archival restoration master - hollis_scan_05” (restoration-hollis-scan-05.png) matches the same areas of hollis_scan_05.jpg and has not been smoothed away by damage removal.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/restoration-hollis-scan-06/H001` Every face on “Archival restoration master - hollis_scan_06” (restoration-hollis-scan-06.png) matches the same face in hollis_scan_06.jpg, with no feature reshaped, restyled or regenerated.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/restoration-hollis-scan-06/H002` Every detail on “Archival restoration master - hollis_scan_06” (restoration-hollis-scan-06.png), from clothing to background, can be found in hollis_scan_06.jpg; nothing has been invented or added.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/restoration-hollis-scan-06/H003` At 100% zoom, the facial skin texture on “Archival restoration master - hollis_scan_06” (restoration-hollis-scan-06.png) matches the same areas of hollis_scan_06.jpg and has not been smoothed away by damage removal.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/restoration-hollis-scan-06/H004` “Archival restoration master - hollis_scan_06” (restoration-hollis-scan-06.png) is made from hollis_scan_06.jpg, the “Nan in the garden” photograph, and from no other scan.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/restoration-hollis-scan-06/H005` “Archival restoration master - hollis_scan_06” (restoration-hollis-scan-06.png) shows Ada Hollis alone, as in hollis_scan_06.jpg, with no person added or removed.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/restoration-hollis-scan-06/H006` “Archival restoration master - hollis_scan_06” (restoration-hollis-scan-06.png) stays in colour like hollis_scan_06.jpg and is not converted to monochrome or sepia.
-- `PHOTO-06/restoration-hollis-scan-06/H007` The print's white border and the skin on “Archival restoration master - hollis_scan_06” (restoration-hollis-scan-06.png) show no magenta or red cast.
+  Look: Inspect the named output against this requirement and its linked references.
+- `PHOTO-06/restoration-hollis-scan-06/H007` The print's white border on “Archival restoration master - hollis_scan_06” (restoration-hollis-scan-06.png) show no magenta or red cast.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/restoration-hollis-scan-06/H008` At 100% zoom, the film grain visible in hollis_scan_06.jpg is still visible on “Archival restoration master - hollis_scan_06” (restoration-hollis-scan-06.png), not smoothed away.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/restoration-hollis-scan-06/H009` At 100% zoom, the paper texture of the print in hollis_scan_06.jpg is still visible on “Archival restoration master - hollis_scan_06” (restoration-hollis-scan-06.png), not smoothed away.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/restoration-hollis-scan-06/H010` The deckled edge of the print in hollis_scan_06.jpg is kept whole on “Archival restoration master - hollis_scan_06” (restoration-hollis-scan-06.png), not trimmed or cut straight; levelling the print is allowed.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/restoration-hollis-scan-06/H011` No part of any person visible in hollis_scan_06.jpg is cropped away or hidden on “Archival restoration master - hollis_scan_06” (restoration-hollis-scan-06.png).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/restoration-hollis-scan-07/H001` Every face on “Archival restoration master - hollis_scan_07” (restoration-hollis-scan-07.png) matches the same face in hollis_scan_07.jpg, with no feature reshaped, restyled or regenerated.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/restoration-hollis-scan-07/H002` Every detail on “Archival restoration master - hollis_scan_07” (restoration-hollis-scan-07.png), from clothing to background, can be found in hollis_scan_07.jpg; nothing has been invented or added.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/restoration-hollis-scan-07/H003` At 100% zoom, the facial skin texture on “Archival restoration master - hollis_scan_07” (restoration-hollis-scan-07.png) matches the same areas of hollis_scan_07.jpg and has not been smoothed away by damage removal.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/restoration-hollis-scan-07/H004` The scar on Ada Hollis's left hand on “Archival restoration master - hollis_scan_07” (restoration-hollis-scan-07.png) keeps the shape, length and paleness it has in hollis_scan_07.jpg; it is not smoothed.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/restoration-hollis-scan-08/H001` Every face on “Archival restoration master - hollis_scan_08” (restoration-hollis-scan-08.png) matches the same face in hollis_scan_08.jpg, with no feature reshaped, restyled or regenerated.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/restoration-hollis-scan-08/H002` Every detail on “Archival restoration master - hollis_scan_08” (restoration-hollis-scan-08.png), from clothing to background, can be found in hollis_scan_08.jpg; nothing has been invented or added.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/restoration-hollis-scan-08/H003` At 100% zoom, the facial skin texture on “Archival restoration master - hollis_scan_08” (restoration-hollis-scan-08.png) matches the same areas of hollis_scan_08.jpg and has not been smoothed away by damage removal.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/restoration-hollis-scan-08/H004` “Archival restoration master - hollis_scan_08” (restoration-hollis-scan-08.png) is made from hollis_scan_08.jpg, the “Ada with grandchild” photograph, and from no other scan.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/restoration-hollis-scan-08/H005` “Archival restoration master - hollis_scan_08” (restoration-hollis-scan-08.png) shows both people in hollis_scan_08.jpg, Ada Hollis and Tom Hollis, with no person added or removed.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/restoration-hollis-scan-08/H006` “Archival restoration master - hollis_scan_08” (restoration-hollis-scan-08.png) stays in colour like hollis_scan_08.jpg and is not converted to monochrome or sepia.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/restoration-hollis-scan-08/H007` At 100% zoom, the film grain visible in hollis_scan_08.jpg is still visible on “Archival restoration master - hollis_scan_08” (restoration-hollis-scan-08.png), not smoothed away.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/restoration-hollis-scan-08/H008` At 100% zoom, the paper texture of the print in hollis_scan_08.jpg is still visible on “Archival restoration master - hollis_scan_08” (restoration-hollis-scan-08.png), not smoothed away.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/restoration-hollis-scan-08/H009` No part of any person visible in hollis_scan_08.jpg is cropped away or hidden on “Archival restoration master - hollis_scan_08” (restoration-hollis-scan-08.png).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/restoration-hollis-scan-09/H001` Every face on “Archival restoration master - hollis_scan_09” (restoration-hollis-scan-09.png) matches the same face in hollis_scan_09.jpg, with no feature reshaped, restyled or regenerated.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/restoration-hollis-scan-09/H002` Every detail on “Archival restoration master - hollis_scan_09” (restoration-hollis-scan-09.png), from clothing to background, can be found in hollis_scan_09.jpg; nothing has been invented or added.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/restoration-hollis-scan-09/H003` At 100% zoom, the facial skin texture on “Archival restoration master - hollis_scan_09” (restoration-hollis-scan-09.png) matches the same areas of hollis_scan_09.jpg and has not been smoothed away by damage removal.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/restoration-hollis-scan-09/H004` “Archival restoration master - hollis_scan_09” (restoration-hollis-scan-09.png) is made from hollis_scan_09.jpg, the “Ada later years” photograph, and from no other scan.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/restoration-hollis-scan-09/H005` “Archival restoration master - hollis_scan_09” (restoration-hollis-scan-09.png) shows Ada Hollis alone, as in hollis_scan_09.jpg, with no person added or removed.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/restoration-hollis-scan-09/H006` “Archival restoration master - hollis_scan_09” (restoration-hollis-scan-09.png) stays in colour like hollis_scan_09.jpg and is not converted to monochrome or sepia.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/restoration-hollis-scan-09/H007` At 100% zoom, the film grain visible in hollis_scan_09.jpg is still visible on “Archival restoration master - hollis_scan_09” (restoration-hollis-scan-09.png), not smoothed away.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/restoration-hollis-scan-09/H008` At 100% zoom, the paper texture of the print in hollis_scan_09.jpg is still visible on “Archival restoration master - hollis_scan_09” (restoration-hollis-scan-09.png), not smoothed away.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/restoration-hollis-scan-09/H009` No part of any person visible in hollis_scan_09.jpg is cropped away or hidden on “Archival restoration master - hollis_scan_09” (restoration-hollis-scan-09.png).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/restoration-hollis-scan-09/H010` No palette colour, tint, scrim or wash is laid over the picture from hollis_scan_09.jpg on “Archival restoration master - hollis_scan_09” (restoration-hollis-scan-09.png).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/restoration-hollis-scan-09/H011` No frame, ornament, brand mark or drop shadow is added to “Archival restoration master - hollis_scan_09” (restoration-hollis-scan-09.png).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/restoration-hollis-scan-09/H012` No metallic, gold, glow or other decorative colour effect is added to the picture on “Archival restoration master - hollis_scan_09” (restoration-hollis-scan-09.png).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-01/H001` “Family archive share image - hollis_scan_01” (share-hollis-scan-01.jpg) shows the whole print from hollis_scan_01.jpg edge to edge, its own border included; no part of the print is cropped away.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-02/H001` “Family archive share image - hollis_scan_02” (share-hollis-scan-02.jpg) shows the whole print from hollis_scan_02.jpg edge to edge, its own border included; no part of the print is cropped away.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-03/H001` “Family archive share image - hollis_scan_03” (share-hollis-scan-03.jpg) shows the whole print from hollis_scan_03.jpg edge to edge, its own border included; no part of the print is cropped away.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-03/H002` Every face on “Family archive share image - hollis_scan_03” (share-hollis-scan-03.jpg) matches the same face in hollis_scan_03.jpg, with no feature reshaped, restyled or regenerated.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-03/H003` Every detail inside the picture on “Family archive share image - hollis_scan_03” (share-hollis-scan-03.jpg), from clothing to background, can be found in hollis_scan_03.jpg; nothing is invented or added to the photograph.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-03/H004` “Family archive share image - hollis_scan_03” (share-hollis-scan-03.jpg) is made from hollis_scan_03.jpg, the “Ada and Walter wedding” photograph, and from no other scan.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-03/H005` “Family archive share image - hollis_scan_03” (share-hollis-scan-03.jpg) shows both people in hollis_scan_03.jpg, Ada Hollis and Walter Hollis, with no person added or removed.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-03/H006` “Family archive share image - hollis_scan_03” (share-hollis-scan-03.jpg) stays monochrome like hollis_scan_03.jpg and is not colourised.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-03/H007` No crop, caption or added graphic on “Family archive share image - hollis_scan_03” (share-hollis-scan-03.jpg) cuts off or covers any part of a person visible in hollis_scan_03.jpg.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-03/H008` The caption on “Family archive share image - hollis_scan_03” (share-hollis-scan-03.jpg) sits on a margin outside the print from hollis_scan_03.jpg and covers no part of the picture.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-03/H009` The caption on “Family archive share image - hollis_scan_03” (share-hollis-scan-03.jpg) gives the year 1936, not the catalogue's 1938.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-03/H010` The caption on “Family archive share image - hollis_scan_03” (share-hollis-scan-03.jpg) names no one other than Ada Hollis and Walter Hollis.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-03/H011` The margin, caption type, rules and keylines on “Family archive share image - hollis_scan_03” (share-hollis-scan-03.jpg) are flat solid colours, with no see-through areas, tints or gradients.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-03/H012` No ornament, decorative frame, script lettering, drop shadow, logo or monogram is added to “Family archive share image - hollis_scan_03” (share-hollis-scan-03.jpg).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-03/H013` No metallic, gold, glow or other decorative colour effect is added to the picture, margin or caption on “Family archive share image - hollis_scan_03” (share-hollis-scan-03.jpg).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-03/H014` The picture on “Family archive share image - hollis_scan_03” (share-hollis-scan-03.jpg) is not toned sepia unless hollis_scan_03.jpg already is.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-03/H017` The sitter's name or title line on “Family archive share image - hollis_scan_03” (share-hollis-scan-03.jpg) is upright, not italic.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-03/H018` No caption line on “Family archive share image - hollis_scan_03” (share-hollis-scan-03.jpg) runs longer than 65 characters.
+  Measure: Count the characters, including spaces and punctuation, in each caption line as it breaks on the image; answer No if any line has more than 65.
 - `PHOTO-06/share-hollis-scan-03/H019` If a plate numeral appears on “Family archive share image - hollis_scan_03” (share-hollis-scan-03.jpg), it sits in the left margin.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-03/H020` A single fine hairline rule sits beneath the sitter's name on “Family archive share image - hollis_scan_03” (share-hollis-scan-03.jpg), not a heavy bar or a double line.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-03/H021` The sitter's name or title line on “Family archive share image - hollis_scan_03” (share-hollis-scan-03.jpg) is set larger than the place and date line.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-03/H022` The caption block on “Family archive share image - hollis_scan_03” (share-hollis-scan-03.jpg) covers a smaller area than the picture from hollis_scan_03.jpg.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-03/H023` The added margin on “Family archive share image - hollis_scan_03” (share-hollis-scan-03.jpg) is Paper White #F5F1E9, not pure white. Ignore any kept album page or scanner bed.
+  Measure: Colour-pick three plain spots of the added margin; answer Yes if each reads within 5 of R245 G241 B233, No otherwise.
 - `PHOTO-06/share-hollis-scan-03/H024` Caption type, rules and keylines on “Family archive share image - hollis_scan_03” (share-hollis-scan-03.jpg) use only the neutral archive tones of the palette; no colour or gold appears.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-03/H025` The sitter's name or title line on “Family archive share image - hollis_scan_03” (share-hollis-scan-03.jpg) is Archive Black #191613.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-06/share-hollis-scan-03/H026` If Museum Grey #6F6B64 appears on “Family archive share image - hollis_scan_03” (share-hollis-scan-03.jpg), it is used only for the provenance line.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-06/share-hollis-scan-03/H027` The paper texture of the print in hollis_scan_03.jpg is still visible on “Family archive share image - hollis_scan_03” (share-hollis-scan-03.jpg), not smoothed to a flat tone.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-04/H001` “Family archive share image - hollis_scan_04” (share-hollis-scan-04.jpg) shows the whole print from hollis_scan_04.jpg edge to edge, its own border included; no part of the print is cropped away.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-04/H002` Every face on “Family archive share image - hollis_scan_04” (share-hollis-scan-04.jpg) matches the same face in hollis_scan_04.jpg, with no feature reshaped, restyled or regenerated.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-04/H003` Every detail inside the picture on “Family archive share image - hollis_scan_04” (share-hollis-scan-04.jpg), from clothing to background, can be found in hollis_scan_04.jpg; nothing is invented or added to the photograph.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-04/H004` “Family archive share image - hollis_scan_04” (share-hollis-scan-04.jpg) is made from hollis_scan_04.jpg, the “Ada with baby Ruth” photograph, and from no other scan.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-04/H005` “Family archive share image - hollis_scan_04” (share-hollis-scan-04.jpg) shows both people in hollis_scan_04.jpg, Ada Hollis and Ruth Hollis, with no person added or removed.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-04/H006` “Family archive share image - hollis_scan_04” (share-hollis-scan-04.jpg) stays monochrome like hollis_scan_04.jpg and is not colourised.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-04/H007` The deckled edge of the print in hollis_scan_04.jpg is kept whole on “Family archive share image - hollis_scan_04” (share-hollis-scan-04.jpg), not trimmed or cut straight; levelling the print is allowed.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-04/H008` No crop, caption or added graphic on “Family archive share image - hollis_scan_04” (share-hollis-scan-04.jpg) cuts off or covers any part of a person visible in hollis_scan_04.jpg.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-04/H009` The caption on “Family archive share image - hollis_scan_04” (share-hollis-scan-04.jpg) sits on a margin outside the print from hollis_scan_04.jpg and covers no part of the picture.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-04/H010` The caption on “Family archive share image - hollis_scan_04” (share-hollis-scan-04.jpg) gives the year 1948.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-04/H011` The caption on “Family archive share image - hollis_scan_04” (share-hollis-scan-04.jpg) names no one other than Ada Hollis and Ruth Hollis.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-05/H001` “Family archive share image - hollis_scan_05” (share-hollis-scan-05.jpg) shows the whole print from hollis_scan_05.jpg edge to edge, its own border included; no part of the print is cropped away.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-06/H001` “Family archive share image - hollis_scan_06” (share-hollis-scan-06.jpg) shows the whole print from hollis_scan_06.jpg edge to edge, its own border included; no part of the print is cropped away.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-06/H002` Every face on “Family archive share image - hollis_scan_06” (share-hollis-scan-06.jpg) matches the same face in hollis_scan_06.jpg, with no feature reshaped, restyled or regenerated.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-06/H003` Every detail inside the picture on “Family archive share image - hollis_scan_06” (share-hollis-scan-06.jpg), from clothing to background, can be found in hollis_scan_06.jpg; nothing is invented or added to the photograph.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-06/H004` “Family archive share image - hollis_scan_06” (share-hollis-scan-06.jpg) is made from hollis_scan_06.jpg, the “Nan in the garden” photograph, and from no other scan.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-06/H005` “Family archive share image - hollis_scan_06” (share-hollis-scan-06.jpg) shows Ada Hollis alone, as in hollis_scan_06.jpg, with no person added or removed.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-06/H006` “Family archive share image - hollis_scan_06” (share-hollis-scan-06.jpg) stays in colour like hollis_scan_06.jpg and is not converted to monochrome or sepia.
-- `PHOTO-06/share-hollis-scan-06/H007` The print's white border and the skin on “Family archive share image - hollis_scan_06” (share-hollis-scan-06.jpg) show no magenta or red cast.
+  Look: Inspect the named output against this requirement and its linked references.
+- `PHOTO-06/share-hollis-scan-06/H007` The print's white border on “Family archive share image - hollis_scan_06” (share-hollis-scan-06.jpg) show no magenta or red cast.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-06/H008` The deckled edge of the print in hollis_scan_06.jpg is kept whole on “Family archive share image - hollis_scan_06” (share-hollis-scan-06.jpg), not trimmed or cut straight; levelling the print is allowed.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-06/H009` No crop, caption or added graphic on “Family archive share image - hollis_scan_06” (share-hollis-scan-06.jpg) cuts off or covers any part of a person visible in hollis_scan_06.jpg.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-06/H010` The caption on “Family archive share image - hollis_scan_06” (share-hollis-scan-06.jpg) sits on a margin outside the print from hollis_scan_06.jpg and covers no part of the picture.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-06/H011` The caption on “Family archive share image - hollis_scan_06” (share-hollis-scan-06.jpg) gives the year 1967.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-06/H012` The caption on “Family archive share image - hollis_scan_06” (share-hollis-scan-06.jpg) names Ada Hollis and no one else.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-06/H013` The sitter's name or title line on “Family archive share image - hollis_scan_06” (share-hollis-scan-06.jpg) is set larger than the place and date line.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-06/H014` The caption block on “Family archive share image - hollis_scan_06” (share-hollis-scan-06.jpg) covers a smaller area than the picture from hollis_scan_06.jpg.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-06/H015` The paper texture of the print in hollis_scan_06.jpg is still visible on “Family archive share image - hollis_scan_06” (share-hollis-scan-06.jpg), not smoothed to a flat tone.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-07/H001` “Family archive share image - hollis_scan_07” (share-hollis-scan-07.jpg) shows the whole print from hollis_scan_07.jpg edge to edge, its own border included; no part of the print is cropped away.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-07/H002` The scar on Ada Hollis's left hand in hollis_scan_07.jpg is still present on “Family archive share image - hollis_scan_07” (share-hollis-scan-07.jpg).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-07/H003` Every face on “Family archive share image - hollis_scan_07” (share-hollis-scan-07.jpg) matches the same face in hollis_scan_07.jpg, with no feature reshaped, restyled or regenerated.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-07/H004` Every detail inside the picture on “Family archive share image - hollis_scan_07” (share-hollis-scan-07.jpg), from clothing to background, can be found in hollis_scan_07.jpg; nothing is invented or added to the photograph.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-07/H005` “Family archive share image - hollis_scan_07” (share-hollis-scan-07.jpg) is made from hollis_scan_07.jpg, the “Nan at the stove” photograph, and from no other scan.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-07/H006` “Family archive share image - hollis_scan_07” (share-hollis-scan-07.jpg) shows Ada Hollis alone, as in hollis_scan_07.jpg, with no person added or removed.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-07/H007` “Family archive share image - hollis_scan_07” (share-hollis-scan-07.jpg) stays in colour like hollis_scan_07.jpg and is not converted to monochrome or sepia.
-- `PHOTO-06/share-hollis-scan-07/H008` The print's white border and the skin on “Family archive share image - hollis_scan_07” (share-hollis-scan-07.jpg) show no green or cyan cast.
+  Look: Inspect the named output against this requirement and its linked references.
+- `PHOTO-06/share-hollis-scan-07/H008` The print's white border on “Family archive share image - hollis_scan_07” (share-hollis-scan-07.jpg) show no green or cyan cast.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-07/H009` The scar on Ada Hollis's left hand on “Family archive share image - hollis_scan_07” (share-hollis-scan-07.jpg) keeps the shape, length and paleness it has in hollis_scan_07.jpg; it is not smoothed.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-07/H010` No crop, caption or added graphic on “Family archive share image - hollis_scan_07” (share-hollis-scan-07.jpg) cuts off or covers any part of a person visible in hollis_scan_07.jpg.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-07/H011` The caption on “Family archive share image - hollis_scan_07” (share-hollis-scan-07.jpg) sits on a margin outside the print from hollis_scan_07.jpg and covers no part of the picture.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-07/H012` The caption on “Family archive share image - hollis_scan_07” (share-hollis-scan-07.jpg) gives the year 1971.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-07/H013` The caption on “Family archive share image - hollis_scan_07” (share-hollis-scan-07.jpg) names Ada Hollis and no one else.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-07/H014` The margin, caption type, rules and keylines on “Family archive share image - hollis_scan_07” (share-hollis-scan-07.jpg) are flat solid colours, with no see-through areas, tints or gradients.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-07/H015` No ornament, decorative frame, script lettering, drop shadow, logo or monogram is added to “Family archive share image - hollis_scan_07” (share-hollis-scan-07.jpg).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-07/H016` No metallic, gold, glow or other decorative colour effect is added to the picture, margin or caption on “Family archive share image - hollis_scan_07” (share-hollis-scan-07.jpg).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-07/H020` The sitter's name or title line on “Family archive share image - hollis_scan_07” (share-hollis-scan-07.jpg) is upright, not italic.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-07/H021` No caption line on “Family archive share image - hollis_scan_07” (share-hollis-scan-07.jpg) runs longer than 65 characters.
+  Measure: Count the characters, including spaces and punctuation, in each caption line as it breaks on the image; answer No if any line has more than 65.
 - `PHOTO-06/share-hollis-scan-07/H022` If a plate numeral appears on “Family archive share image - hollis_scan_07” (share-hollis-scan-07.jpg), it sits in the left margin.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-07/H023` A single fine hairline rule sits beneath the sitter's name on “Family archive share image - hollis_scan_07” (share-hollis-scan-07.jpg), not a heavy bar or a double line.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-07/H024` The sitter's name or title line on “Family archive share image - hollis_scan_07” (share-hollis-scan-07.jpg) is set larger than the place and date line.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-07/H025` The caption block on “Family archive share image - hollis_scan_07” (share-hollis-scan-07.jpg) covers a smaller area than the picture from hollis_scan_07.jpg.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-07/H026` The added margin on “Family archive share image - hollis_scan_07” (share-hollis-scan-07.jpg) is Paper White #F5F1E9, not pure white. Ignore any kept album page or scanner bed.
+  Measure: Colour-pick three plain spots of the added margin; answer Yes if each reads within 5 of R245 G241 B233, No otherwise.
 - `PHOTO-06/share-hollis-scan-07/H027` Caption type, rules and keylines on “Family archive share image - hollis_scan_07” (share-hollis-scan-07.jpg) use only the neutral archive tones of the palette; no colour or gold appears.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-07/H028` The sitter's name or title line on “Family archive share image - hollis_scan_07” (share-hollis-scan-07.jpg) is Archive Black #191613.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-06/share-hollis-scan-07/H029` If Museum Grey #6F6B64 appears on “Family archive share image - hollis_scan_07” (share-hollis-scan-07.jpg), it is used only for the provenance line.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-06/share-hollis-scan-07/H030` The paper texture of the print in hollis_scan_07.jpg is still visible on “Family archive share image - hollis_scan_07” (share-hollis-scan-07.jpg), not smoothed to a flat tone.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-08/H001` “Family archive share image - hollis_scan_08” (share-hollis-scan-08.jpg) shows the whole print from hollis_scan_08.jpg edge to edge, its own border included; no part of the print is cropped away.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-08/H002` Every face on “Family archive share image - hollis_scan_08” (share-hollis-scan-08.jpg) matches the same face in hollis_scan_08.jpg, with no feature reshaped, restyled or regenerated.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-08/H003` Every detail inside the picture on “Family archive share image - hollis_scan_08” (share-hollis-scan-08.jpg), from clothing to background, can be found in hollis_scan_08.jpg; nothing is invented or added to the photograph.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-08/H004` “Family archive share image - hollis_scan_08” (share-hollis-scan-08.jpg) is made from hollis_scan_08.jpg, the “Ada with grandchild” photograph, and from no other scan.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-08/H005` “Family archive share image - hollis_scan_08” (share-hollis-scan-08.jpg) shows both people in hollis_scan_08.jpg, Ada Hollis and Tom Hollis, with no person added or removed.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-08/H006` “Family archive share image - hollis_scan_08” (share-hollis-scan-08.jpg) stays in colour like hollis_scan_08.jpg and is not converted to monochrome or sepia.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-08/H007` No crop, caption or added graphic on “Family archive share image - hollis_scan_08” (share-hollis-scan-08.jpg) cuts off or covers any part of a person visible in hollis_scan_08.jpg.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-08/H008` The caption on “Family archive share image - hollis_scan_08” (share-hollis-scan-08.jpg) sits on a margin outside the print from hollis_scan_08.jpg and covers no part of the picture.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-08/H009` The caption on “Family archive share image - hollis_scan_08” (share-hollis-scan-08.jpg) gives the year 1969.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-08/H010` The caption on “Family archive share image - hollis_scan_08” (share-hollis-scan-08.jpg) names no one other than Ada Hollis and Tom Hollis.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-09/H001` “Family archive share image - hollis_scan_09” (share-hollis-scan-09.jpg) shows the whole print from hollis_scan_09.jpg edge to edge, its own border included; no part of the print is cropped away.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-09/H002` Every face on “Family archive share image - hollis_scan_09” (share-hollis-scan-09.jpg) matches the same face in hollis_scan_09.jpg, with no feature reshaped, restyled or regenerated.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-09/H003` Every detail inside the picture on “Family archive share image - hollis_scan_09” (share-hollis-scan-09.jpg), from clothing to background, can be found in hollis_scan_09.jpg; nothing is invented or added to the photograph.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-09/H004` “Family archive share image - hollis_scan_09” (share-hollis-scan-09.jpg) is made from hollis_scan_09.jpg, the “Ada later years” photograph, and from no other scan.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-09/H005` “Family archive share image - hollis_scan_09” (share-hollis-scan-09.jpg) shows Ada Hollis alone, as in hollis_scan_09.jpg, with no person added or removed.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-09/H006` “Family archive share image - hollis_scan_09” (share-hollis-scan-09.jpg) stays in colour like hollis_scan_09.jpg and is not converted to monochrome or sepia.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-09/H007` No crop, caption or added graphic on “Family archive share image - hollis_scan_09” (share-hollis-scan-09.jpg) cuts off or covers any part of a person visible in hollis_scan_09.jpg.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-09/H008` The caption on “Family archive share image - hollis_scan_09” (share-hollis-scan-09.jpg) sits on a margin outside the print from hollis_scan_09.jpg and covers no part of the picture.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-09/H009` The caption on “Family archive share image - hollis_scan_09” (share-hollis-scan-09.jpg) gives the year 1974.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-09/H010` The caption on “Family archive share image - hollis_scan_09” (share-hollis-scan-09.jpg) names Ada Hollis and no one else.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-09/H011` The margin, caption type, rules and keylines on “Family archive share image - hollis_scan_09” (share-hollis-scan-09.jpg) are flat solid colours, with no see-through areas, tints or gradients.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-09/H012` No ornament, decorative frame, script lettering, drop shadow, logo or monogram is added to “Family archive share image - hollis_scan_09” (share-hollis-scan-09.jpg).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-09/H013` No metallic, gold, glow or other decorative colour effect is added to the picture, margin or caption on “Family archive share image - hollis_scan_09” (share-hollis-scan-09.jpg).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-09/H017` The sitter's name or title line on “Family archive share image - hollis_scan_09” (share-hollis-scan-09.jpg) is upright, not italic.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-09/H018` No caption line on “Family archive share image - hollis_scan_09” (share-hollis-scan-09.jpg) runs longer than 65 characters.
+  Measure: Count the characters, including spaces and punctuation, in each caption line as it breaks on the image; answer No if any line has more than 65.
 - `PHOTO-06/share-hollis-scan-09/H019` If a plate numeral appears on “Family archive share image - hollis_scan_09” (share-hollis-scan-09.jpg), it sits in the left margin.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-09/H020` A single fine hairline rule sits beneath the sitter's name on “Family archive share image - hollis_scan_09” (share-hollis-scan-09.jpg), not a heavy bar or a double line.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-09/H021` The sitter's name or title line on “Family archive share image - hollis_scan_09” (share-hollis-scan-09.jpg) is set larger than the place and date line.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-09/H022` The caption block on “Family archive share image - hollis_scan_09” (share-hollis-scan-09.jpg) covers a smaller area than the picture from hollis_scan_09.jpg.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-09/H023` The added margin on “Family archive share image - hollis_scan_09” (share-hollis-scan-09.jpg) is Paper White #F5F1E9, not pure white. Ignore any kept album page or scanner bed.
+  Measure: Colour-pick three plain spots of the added margin; answer Yes if each reads within 5 of R245 G241 B233, No otherwise.
 - `PHOTO-06/share-hollis-scan-09/H024` Caption type, rules and keylines on “Family archive share image - hollis_scan_09” (share-hollis-scan-09.jpg) use only the neutral archive tones of the palette; no colour or gold appears.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-09/H025` The sitter's name or title line on “Family archive share image - hollis_scan_09” (share-hollis-scan-09.jpg) is Archive Black #191613.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-06/share-hollis-scan-09/H026` If Museum Grey #6F6B64 appears on “Family archive share image - hollis_scan_09” (share-hollis-scan-09.jpg), it is used only for the provenance line.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-06/share-hollis-scan-09/H027` The paper texture of the print in hollis_scan_09.jpg is still visible on “Family archive share image - hollis_scan_09” (share-hollis-scan-09.jpg), not smoothed to a flat tone.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/restoration-hollis-scan-05/H004` “Archival restoration master - hollis_scan_05” (restoration-hollis-scan-05.png) shows all four people in hollis_scan_05.jpg, Ada, Ruth, Frank and Carol Hollis, with no person added or removed.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/restoration-hollis-scan-05/H005` “Archival restoration master - hollis_scan_05” (restoration-hollis-scan-05.png) is made from hollis_scan_05.jpg, the “Ada and the children” photograph, and from no other scan.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/restoration-hollis-scan-05/H006` “Archival restoration master - hollis_scan_05” (restoration-hollis-scan-05.png) stays monochrome like hollis_scan_05.jpg and is not colourised.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/restoration-hollis-scan-05/H007` At 100% zoom, the film grain visible in hollis_scan_05.jpg is still visible on “Archival restoration master - hollis_scan_05” (restoration-hollis-scan-05.png), not smoothed away.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/restoration-hollis-scan-05/H008` At 100% zoom, the paper texture of the print in hollis_scan_05.jpg is still visible on “Archival restoration master - hollis_scan_05” (restoration-hollis-scan-05.png), not smoothed away.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/restoration-hollis-scan-05/H009` No part of any person visible in hollis_scan_05.jpg is cropped away or hidden on “Archival restoration master - hollis_scan_05” (restoration-hollis-scan-05.png).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/restoration-hollis-scan-03/H004` “Archival restoration master - hollis_scan_03” (restoration-hollis-scan-03.png) shows both people in hollis_scan_03.jpg, Ada Hollis and Walter Hollis, with no person added or removed.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/restoration-hollis-scan-03/H005` “Archival restoration master - hollis_scan_03” (restoration-hollis-scan-03.png) is made from hollis_scan_03.jpg, the “Ada and Walter wedding” photograph, and from no other scan.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/restoration-hollis-scan-03/H006` “Archival restoration master - hollis_scan_03” (restoration-hollis-scan-03.png) stays monochrome like hollis_scan_03.jpg and is not colourised.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/restoration-hollis-scan-03/H007` At 100% zoom, the film grain visible in hollis_scan_03.jpg is still visible on “Archival restoration master - hollis_scan_03” (restoration-hollis-scan-03.png), not smoothed away.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/restoration-hollis-scan-03/H008` At 100% zoom, the paper texture of the print in hollis_scan_03.jpg is still visible on “Archival restoration master - hollis_scan_03” (restoration-hollis-scan-03.png), not smoothed away.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/restoration-hollis-scan-03/H009` No part of any person visible in hollis_scan_03.jpg is cropped away or hidden on “Archival restoration master - hollis_scan_03” (restoration-hollis-scan-03.png).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-01/H002` “Family archive share image - hollis_scan_01” (share-hollis-scan-01.jpg) stays monochrome like hollis_scan_01.jpg and is not colourised.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/restoration-hollis-scan-07/H005` The scar on Ada Hollis's left hand in hollis_scan_07.jpg is still present on “Archival restoration master - hollis_scan_07” (restoration-hollis-scan-07.png).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/restoration-hollis-scan-07/H006` “Archival restoration master - hollis_scan_07” (restoration-hollis-scan-07.png) is made from hollis_scan_07.jpg, the “Nan at the stove” photograph, and from no other scan.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/restoration-hollis-scan-07/H007` “Archival restoration master - hollis_scan_07” (restoration-hollis-scan-07.png) shows Ada Hollis alone, as in hollis_scan_07.jpg, with no person added or removed.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/restoration-hollis-scan-07/H008` “Archival restoration master - hollis_scan_07” (restoration-hollis-scan-07.png) stays in colour like hollis_scan_07.jpg and is not converted to monochrome or sepia.
-- `PHOTO-06/restoration-hollis-scan-07/H009` The print's white border and the skin on “Archival restoration master - hollis_scan_07” (restoration-hollis-scan-07.png) show no green or cyan cast.
+  Look: Inspect the named output against this requirement and its linked references.
+- `PHOTO-06/restoration-hollis-scan-07/H009` The print's white border on “Archival restoration master - hollis_scan_07” (restoration-hollis-scan-07.png) show no green or cyan cast.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/restoration-hollis-scan-07/H010` At 100% zoom, the film grain visible in hollis_scan_07.jpg is still visible on “Archival restoration master - hollis_scan_07” (restoration-hollis-scan-07.png), not smoothed away.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/restoration-hollis-scan-07/H011` At 100% zoom, the paper texture of the print in hollis_scan_07.jpg is still visible on “Archival restoration master - hollis_scan_07” (restoration-hollis-scan-07.png), not smoothed away.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/restoration-hollis-scan-07/H012` No part of any person visible in hollis_scan_07.jpg is cropped away or hidden on “Archival restoration master - hollis_scan_07” (restoration-hollis-scan-07.png).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/restoration-hollis-scan-07/H013` No palette colour, tint, scrim or wash is laid over the picture from hollis_scan_07.jpg on “Archival restoration master - hollis_scan_07” (restoration-hollis-scan-07.png).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/restoration-hollis-scan-07/H014` No frame, ornament, brand mark or drop shadow is added to “Archival restoration master - hollis_scan_07” (restoration-hollis-scan-07.png).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/restoration-hollis-scan-07/H015` No metallic, gold, glow or other decorative colour effect is added to the picture on “Archival restoration master - hollis_scan_07” (restoration-hollis-scan-07.png).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-05/H002` “Family archive share image - hollis_scan_05” (share-hollis-scan-05.jpg) is made from hollis_scan_05.jpg, the “Ada and the children” photograph, and from no other scan.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-05/H003` Every face on “Family archive share image - hollis_scan_05” (share-hollis-scan-05.jpg) matches the same face in hollis_scan_05.jpg, with no feature reshaped, restyled or regenerated.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-05/H004` Every detail inside the picture on “Family archive share image - hollis_scan_05” (share-hollis-scan-05.jpg), from clothing to background, can be found in hollis_scan_05.jpg; nothing is invented or added to the photograph.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-05/H005` “Family archive share image - hollis_scan_05” (share-hollis-scan-05.jpg) shows all four people in hollis_scan_05.jpg, Ada, Ruth, Frank and Carol Hollis, with no person added or removed.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-05/H006` “Family archive share image - hollis_scan_05” (share-hollis-scan-05.jpg) stays monochrome like hollis_scan_05.jpg and is not colourised.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-05/H007` No crop, caption or added graphic on “Family archive share image - hollis_scan_05” (share-hollis-scan-05.jpg) cuts off or covers any part of a person visible in hollis_scan_05.jpg.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-05/H008` The caption on “Family archive share image - hollis_scan_05” (share-hollis-scan-05.jpg) sits on a margin outside the print from hollis_scan_05.jpg and covers no part of the picture.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-05/H009` The caption on “Family archive share image - hollis_scan_05” (share-hollis-scan-05.jpg) gives the year 1955, not cousin Dale's 1956.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-05/H010` The caption on “Family archive share image - hollis_scan_05” (share-hollis-scan-05.jpg) names no one other than Ada, Ruth, Frank and Carol Hollis.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-05/H011` The margin, caption type, rules and keylines on “Family archive share image - hollis_scan_05” (share-hollis-scan-05.jpg) are flat solid colours, with no see-through areas, tints or gradients.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-05/H012` No ornament, decorative frame, script lettering, drop shadow, logo or monogram is added to “Family archive share image - hollis_scan_05” (share-hollis-scan-05.jpg).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-05/H013` No metallic, gold, glow or other decorative colour effect is added to the picture, margin or caption on “Family archive share image - hollis_scan_05” (share-hollis-scan-05.jpg).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-05/H014` The picture on “Family archive share image - hollis_scan_05” (share-hollis-scan-05.jpg) is not toned sepia unless hollis_scan_05.jpg already is.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-05/H017` The sitter's name or title line on “Family archive share image - hollis_scan_05” (share-hollis-scan-05.jpg) is upright, not italic.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-05/H018` No caption line on “Family archive share image - hollis_scan_05” (share-hollis-scan-05.jpg) runs longer than 65 characters.
+  Measure: Count the characters, including spaces and punctuation, in each caption line as it breaks on the image; answer No if any line has more than 65.
 - `PHOTO-06/share-hollis-scan-05/H019` If a plate numeral appears on “Family archive share image - hollis_scan_05” (share-hollis-scan-05.jpg), it sits in the left margin.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-05/H020` A single fine hairline rule sits beneath the sitter's name on “Family archive share image - hollis_scan_05” (share-hollis-scan-05.jpg), not a heavy bar or a double line.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-05/H021` The sitter's name or title line on “Family archive share image - hollis_scan_05” (share-hollis-scan-05.jpg) is set larger than the place and date line.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-05/H022` The caption block on “Family archive share image - hollis_scan_05” (share-hollis-scan-05.jpg) covers a smaller area than the picture from hollis_scan_05.jpg.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-05/H023` The added margin on “Family archive share image - hollis_scan_05” (share-hollis-scan-05.jpg) is Paper White #F5F1E9, not pure white. Ignore any kept album page or scanner bed.
+  Measure: Colour-pick three plain spots of the added margin; answer Yes if each reads within 5 of R245 G241 B233, No otherwise.
 - `PHOTO-06/share-hollis-scan-05/H024` Caption type, rules and keylines on “Family archive share image - hollis_scan_05” (share-hollis-scan-05.jpg) use only the neutral archive tones of the palette; no colour or gold appears.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-05/H025` The sitter's name or title line on “Family archive share image - hollis_scan_05” (share-hollis-scan-05.jpg) is Archive Black #191613.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-06/share-hollis-scan-05/H026` If Museum Grey #6F6B64 appears on “Family archive share image - hollis_scan_05” (share-hollis-scan-05.jpg), it is used only for the provenance line.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-06/share-hollis-scan-05/H027` The paper texture of the print in hollis_scan_05.jpg is still visible on “Family archive share image - hollis_scan_05” (share-hollis-scan-05.jpg), not smoothed to a flat tone.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/restoration-hollis-scan-02/H004` The studio's pencil retouching on Ada Hollis's cheek, visible in the 1931 card hollis_scan_02.jpg, is still present on “Archival restoration master - hollis_scan_02” (restoration-hollis-scan-02.png).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-02/H002` The added margin on “Family archive share image - hollis_scan_02” (share-hollis-scan-02.jpg) is Paper White #F5F1E9, not pure white. Ignore any kept album page or scanner bed.
+  Measure: Colour-pick three plain spots of the added margin; answer Yes if each reads within 5 of R245 G241 B233, No otherwise.
 - `PHOTO-06/restoration-hollis-scan-01/H005` No part of any person visible in hollis_scan_01.jpg is cropped away or hidden on “Archival restoration master - hollis_scan_01” (restoration-hollis-scan-01.png).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/restoration-hollis-scan-01/H006` “Archival restoration master - hollis_scan_01” (restoration-hollis-scan-01.png) is made from hollis_scan_01.jpg, the “Ada infant” photograph, and from no other scan.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/restoration-hollis-scan-01/H007` “Archival restoration master - hollis_scan_01” (restoration-hollis-scan-01.png) shows Ada Hollis alone, as in hollis_scan_01.jpg, with no person added or removed.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/restoration-hollis-scan-01/H008` “Archival restoration master - hollis_scan_01” (restoration-hollis-scan-01.png) stays monochrome like hollis_scan_01.jpg and is not colourised.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/restoration-hollis-scan-01/H009` At 100% zoom, the film grain visible in hollis_scan_01.jpg is still visible on “Archival restoration master - hollis_scan_01” (restoration-hollis-scan-01.png), not smoothed away.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/restoration-hollis-scan-01/H010` At 100% zoom, the paper texture of the print in hollis_scan_01.jpg is still visible on “Archival restoration master - hollis_scan_01” (restoration-hollis-scan-01.png), not smoothed away.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/restoration-hollis-scan-01/H011` No palette colour, tint, scrim or wash is laid over the picture from hollis_scan_01.jpg on “Archival restoration master - hollis_scan_01” (restoration-hollis-scan-01.png).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/restoration-hollis-scan-01/H012` No frame, ornament, brand mark or drop shadow is added to “Archival restoration master - hollis_scan_01” (restoration-hollis-scan-01.png).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/restoration-hollis-scan-01/H013` No metallic, gold, glow or other decorative colour effect is added to the picture on “Archival restoration master - hollis_scan_01” (restoration-hollis-scan-01.png).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/restoration-hollis-scan-01/H014` The picture on “Archival restoration master - hollis_scan_01” (restoration-hollis-scan-01.png) is not toned sepia unless hollis_scan_01.jpg already is.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/restoration-hollis-scan-02/H005` No part of any person visible in hollis_scan_02.jpg is cropped away or hidden on “Archival restoration master - hollis_scan_02” (restoration-hollis-scan-02.png).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/restoration-hollis-scan-02/H006` “Archival restoration master - hollis_scan_02” (restoration-hollis-scan-02.png) is made from hollis_scan_02.jpg, the “Ada young woman” photograph, and from no other scan.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/restoration-hollis-scan-02/H007` “Archival restoration master - hollis_scan_02” (restoration-hollis-scan-02.png) shows Ada Hollis alone, as in hollis_scan_02.jpg, with no person added or removed.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/restoration-hollis-scan-02/H008` “Archival restoration master - hollis_scan_02” (restoration-hollis-scan-02.png) stays monochrome like hollis_scan_02.jpg and is not colourised.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/restoration-hollis-scan-02/H009` At 100% zoom, the film grain visible in hollis_scan_02.jpg is still visible on “Archival restoration master - hollis_scan_02” (restoration-hollis-scan-02.png), not smoothed away.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/restoration-hollis-scan-02/H010` At 100% zoom, the paper texture of the print in hollis_scan_02.jpg is still visible on “Archival restoration master - hollis_scan_02” (restoration-hollis-scan-02.png), not smoothed away.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/restoration-hollis-scan-02/H011` The deckled edge of the print in hollis_scan_02.jpg is kept whole on “Archival restoration master - hollis_scan_02” (restoration-hollis-scan-02.png), not trimmed or cut straight; levelling the print is allowed.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-01/H005` The caption block on “Family archive share image - hollis_scan_01” (share-hollis-scan-01.jpg) covers a smaller area than the picture from hollis_scan_01.jpg.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-01/H006` Every face on “Family archive share image - hollis_scan_01” (share-hollis-scan-01.jpg) matches the same face in hollis_scan_01.jpg, with no feature reshaped, restyled or regenerated.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-01/H007` Every detail inside the picture on “Family archive share image - hollis_scan_01” (share-hollis-scan-01.jpg), from clothing to background, can be found in hollis_scan_01.jpg; nothing is invented or added to the photograph.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-01/H008` “Family archive share image - hollis_scan_01” (share-hollis-scan-01.jpg) is made from hollis_scan_01.jpg, the “Ada infant” photograph, and from no other scan.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-01/H009` “Family archive share image - hollis_scan_01” (share-hollis-scan-01.jpg) shows Ada Hollis alone, as in hollis_scan_01.jpg, with no person added or removed.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-01/H010` No crop, caption or added graphic on “Family archive share image - hollis_scan_01” (share-hollis-scan-01.jpg) cuts off or covers any part of a person visible in hollis_scan_01.jpg.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-01/H011` The caption on “Family archive share image - hollis_scan_01” (share-hollis-scan-01.jpg) sits on a margin outside the print from hollis_scan_01.jpg and covers no part of the picture.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-01/H012` The caption on “Family archive share image - hollis_scan_01” (share-hollis-scan-01.jpg) gives the year 1912.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-01/H013` The caption on “Family archive share image - hollis_scan_01” (share-hollis-scan-01.jpg) names Ada Hollis and no one else.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-01/H014` The margin, caption type, rules and keylines on “Family archive share image - hollis_scan_01” (share-hollis-scan-01.jpg) are flat solid colours, with no see-through areas, tints or gradients.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-01/H015` No ornament, decorative frame, script lettering, drop shadow, logo or monogram is added to “Family archive share image - hollis_scan_01” (share-hollis-scan-01.jpg).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-01/H016` No metallic, gold, glow or other decorative colour effect is added to the picture, margin or caption on “Family archive share image - hollis_scan_01” (share-hollis-scan-01.jpg).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-01/H017` The picture on “Family archive share image - hollis_scan_01” (share-hollis-scan-01.jpg) is not toned sepia unless hollis_scan_01.jpg already is.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-01/H019` The sitter's name or title line on “Family archive share image - hollis_scan_01” (share-hollis-scan-01.jpg) is upright, not italic.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-01/H020` No caption line on “Family archive share image - hollis_scan_01” (share-hollis-scan-01.jpg) runs longer than 65 characters.
+  Measure: Count the characters, including spaces and punctuation, in each caption line as it breaks on the image; answer No if any line has more than 65.
 - `PHOTO-06/share-hollis-scan-01/H021` If a plate numeral appears on “Family archive share image - hollis_scan_01” (share-hollis-scan-01.jpg), it sits in the left margin.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-01/H022` A single fine hairline rule sits beneath the sitter's name on “Family archive share image - hollis_scan_01” (share-hollis-scan-01.jpg), not a heavy bar or a double line.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-01/H023` The sitter's name or title line on “Family archive share image - hollis_scan_01” (share-hollis-scan-01.jpg) is set larger than the place and date line.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-01/H024` The added margin on “Family archive share image - hollis_scan_01” (share-hollis-scan-01.jpg) is Paper White #F5F1E9, not pure white. Ignore any kept album page or scanner bed.
+  Measure: Colour-pick three plain spots of the added margin; answer Yes if each reads within 5 of R245 G241 B233, No otherwise.
 - `PHOTO-06/share-hollis-scan-01/H025` Caption type, rules and keylines on “Family archive share image - hollis_scan_01” (share-hollis-scan-01.jpg) use only the neutral archive tones of the palette; no colour or gold appears.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-01/H026` The sitter's name or title line on “Family archive share image - hollis_scan_01” (share-hollis-scan-01.jpg) is Archive Black #191613.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-06/share-hollis-scan-01/H027` If Museum Grey #6F6B64 appears on “Family archive share image - hollis_scan_01” (share-hollis-scan-01.jpg), it is used only for the provenance line.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-06/share-hollis-scan-01/H028` The paper texture of the print in hollis_scan_01.jpg is still visible on “Family archive share image - hollis_scan_01” (share-hollis-scan-01.jpg), not smoothed to a flat tone.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-02/H003` The sitter's name or title line on “Family archive share image - hollis_scan_02” (share-hollis-scan-02.jpg) is set larger than the place and date line.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-02/H004` Every face on “Family archive share image - hollis_scan_02” (share-hollis-scan-02.jpg) matches the same face in hollis_scan_02.jpg, with no feature reshaped, restyled or regenerated.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-02/H005` Every detail inside the picture on “Family archive share image - hollis_scan_02” (share-hollis-scan-02.jpg), from clothing to background, can be found in hollis_scan_02.jpg; nothing is invented or added to the photograph.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-02/H006` “Family archive share image - hollis_scan_02” (share-hollis-scan-02.jpg) is made from hollis_scan_02.jpg, the “Ada young woman” photograph, and from no other scan.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-02/H007` “Family archive share image - hollis_scan_02” (share-hollis-scan-02.jpg) shows Ada Hollis alone, as in hollis_scan_02.jpg, with no person added or removed.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-02/H008` “Family archive share image - hollis_scan_02” (share-hollis-scan-02.jpg) stays monochrome like hollis_scan_02.jpg and is not colourised.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-02/H009` The deckled edge of the print in hollis_scan_02.jpg is kept whole on “Family archive share image - hollis_scan_02” (share-hollis-scan-02.jpg), not trimmed or cut straight; levelling the print is allowed.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-02/H010` The studio's pencil retouching on Ada Hollis's cheek, visible in the 1931 card hollis_scan_02.jpg, is still present on “Family archive share image - hollis_scan_02” (share-hollis-scan-02.jpg).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-02/H011` No crop, caption or added graphic on “Family archive share image - hollis_scan_02” (share-hollis-scan-02.jpg) cuts off or covers any part of a person visible in hollis_scan_02.jpg.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-02/H012` The caption on “Family archive share image - hollis_scan_02” (share-hollis-scan-02.jpg) sits on a margin outside the print from hollis_scan_02.jpg and covers no part of the picture.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-02/H013` The caption on “Family archive share image - hollis_scan_02” (share-hollis-scan-02.jpg) gives the year 1931.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-02/H014` The caption on “Family archive share image - hollis_scan_02” (share-hollis-scan-02.jpg) names Ada Hollis and no one else.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-02/H015` The caption block on “Family archive share image - hollis_scan_02” (share-hollis-scan-02.jpg) covers a smaller area than the picture from hollis_scan_02.jpg.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-02/H016` The paper texture of the print in hollis_scan_02.jpg is still visible on “Family archive share image - hollis_scan_02” (share-hollis-scan-02.jpg), not smoothed to a flat tone.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-01/H029` The sitter's name or title line on “Family archive share image - hollis_scan_01” (share-hollis-scan-01.jpg) is set in Cormorant Garamond Light.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-01/H033` The place and date line on “Family archive share image - hollis_scan_01” (share-hollis-scan-01.jpg) is set in Cormorant Garamond Light.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-01/H037` If caption body text, such as a names line, appears on “Family archive share image - hollis_scan_01” (share-hollis-scan-01.jpg), it is set in Source Serif 4 Regular.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-02/H017` The sitter's name or title line on “Family archive share image - hollis_scan_02” (share-hollis-scan-02.jpg) is set in Cormorant Garamond Light.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-02/H021` The place and date line on “Family archive share image - hollis_scan_02” (share-hollis-scan-02.jpg) is set in Cormorant Garamond Light.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-02/H025` If caption body text, such as a names line, appears on “Family archive share image - hollis_scan_02” (share-hollis-scan-02.jpg), it is set in Source Serif 4 Regular.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-03/H028` The sitter's name or title line on “Family archive share image - hollis_scan_03” (share-hollis-scan-03.jpg) is set in Cormorant Garamond Light.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-03/H032` The place and date line on “Family archive share image - hollis_scan_03” (share-hollis-scan-03.jpg) is set in Cormorant Garamond Light.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-03/H036` If caption body text, such as a names line, appears on “Family archive share image - hollis_scan_03” (share-hollis-scan-03.jpg), it is set in Source Serif 4 Regular.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-04/H012` The sitter's name or title line on “Family archive share image - hollis_scan_04” (share-hollis-scan-04.jpg) is set in Cormorant Garamond Light.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-04/H016` The place and date line on “Family archive share image - hollis_scan_04” (share-hollis-scan-04.jpg) is set in Cormorant Garamond Light.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-04/H020` If caption body text, such as a names line, appears on “Family archive share image - hollis_scan_04” (share-hollis-scan-04.jpg), it is set in Source Serif 4 Regular.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-05/H028` The sitter's name or title line on “Family archive share image - hollis_scan_05” (share-hollis-scan-05.jpg) is set in Cormorant Garamond Light.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-05/H032` The place and date line on “Family archive share image - hollis_scan_05” (share-hollis-scan-05.jpg) is set in Cormorant Garamond Light.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-05/H036` If caption body text, such as a names line, appears on “Family archive share image - hollis_scan_05” (share-hollis-scan-05.jpg), it is set in Source Serif 4 Regular.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-06/H016` The sitter's name or title line on “Family archive share image - hollis_scan_06” (share-hollis-scan-06.jpg) is set in Cormorant Garamond Light.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-06/H020` The place and date line on “Family archive share image - hollis_scan_06” (share-hollis-scan-06.jpg) is set in Cormorant Garamond Light.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-06/H024` If caption body text, such as a names line, appears on “Family archive share image - hollis_scan_06” (share-hollis-scan-06.jpg), it is set in Source Serif 4 Regular.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-07/H031` The sitter's name or title line on “Family archive share image - hollis_scan_07” (share-hollis-scan-07.jpg) is set in Cormorant Garamond Light.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-07/H035` The place and date line on “Family archive share image - hollis_scan_07” (share-hollis-scan-07.jpg) is set in Cormorant Garamond Light.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-07/H039` If caption body text, such as a names line, appears on “Family archive share image - hollis_scan_07” (share-hollis-scan-07.jpg), it is set in Source Serif 4 Regular.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-08/H011` The sitter's name or title line on “Family archive share image - hollis_scan_08” (share-hollis-scan-08.jpg) is set in Cormorant Garamond Light.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-08/H015` The place and date line on “Family archive share image - hollis_scan_08” (share-hollis-scan-08.jpg) is set in Cormorant Garamond Light.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-08/H019` If caption body text, such as a names line, appears on “Family archive share image - hollis_scan_08” (share-hollis-scan-08.jpg), it is set in Source Serif 4 Regular.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-09/H028` The sitter's name or title line on “Family archive share image - hollis_scan_09” (share-hollis-scan-09.jpg) is set in Cormorant Garamond Light.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-09/H032` The place and date line on “Family archive share image - hollis_scan_09” (share-hollis-scan-09.jpg) is set in Cormorant Garamond Light.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-09/H036` If caption body text, such as a names line, appears on “Family archive share image - hollis_scan_09” (share-hollis-scan-09.jpg), it is set in Source Serif 4 Regular.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-01/H045` The sitter's name or title line on “Family archive share image - hollis_scan_01” (share-hollis-scan-01.jpg) is set in small caps.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-02/H033` The sitter's name or title line on “Family archive share image - hollis_scan_02” (share-hollis-scan-02.jpg) is set in small caps.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-03/H044` The sitter's name or title line on “Family archive share image - hollis_scan_03” (share-hollis-scan-03.jpg) is set in small caps.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-04/H028` The sitter's name or title line on “Family archive share image - hollis_scan_04” (share-hollis-scan-04.jpg) is set in small caps.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-05/H044` The sitter's name or title line on “Family archive share image - hollis_scan_05” (share-hollis-scan-05.jpg) is set in small caps.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-06/H032` The sitter's name or title line on “Family archive share image - hollis_scan_06” (share-hollis-scan-06.jpg) is set in small caps.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-07/H047` The sitter's name or title line on “Family archive share image - hollis_scan_07” (share-hollis-scan-07.jpg) is set in small caps.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-08/H027` The sitter's name or title line on “Family archive share image - hollis_scan_08” (share-hollis-scan-08.jpg) is set in small caps.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-09/H044` The sitter's name or title line on “Family archive share image - hollis_scan_09” (share-hollis-scan-09.jpg) is set in small caps.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/restoration-hollis-scan-01/H015` No caption, text, plate numeral or rule is added to “Archival restoration master - hollis_scan_01” (restoration-hollis-scan-01.png).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/restoration-hollis-scan-01/H016` The scratches, creases and other damage in hollis_scan_01.jpg are repaired on “Archival restoration master - hollis_scan_01” (restoration-hollis-scan-01.png).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/restoration-hollis-scan-02/H012` No palette colour, tint, scrim or wash is laid over the picture from hollis_scan_02.jpg on “Archival restoration master - hollis_scan_02” (restoration-hollis-scan-02.png).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/restoration-hollis-scan-02/H013` No frame, ornament, brand mark or drop shadow is added to “Archival restoration master - hollis_scan_02” (restoration-hollis-scan-02.png).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/restoration-hollis-scan-02/H014` No metallic, gold, glow or other decorative colour effect is added to the picture on “Archival restoration master - hollis_scan_02” (restoration-hollis-scan-02.png).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/restoration-hollis-scan-02/H015` The picture on “Archival restoration master - hollis_scan_02” (restoration-hollis-scan-02.png) is not toned sepia unless hollis_scan_02.jpg already is.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/restoration-hollis-scan-02/H016` No caption, text, plate numeral or rule is added to “Archival restoration master - hollis_scan_02” (restoration-hollis-scan-02.png).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/restoration-hollis-scan-02/H017` The scratches, creases and other damage in hollis_scan_02.jpg are repaired on “Archival restoration master - hollis_scan_02” (restoration-hollis-scan-02.png); the pencil retouching on Ada's cheek is not damage.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/restoration-hollis-scan-03/H010` No palette colour, tint, scrim or wash is laid over the picture from hollis_scan_03.jpg on “Archival restoration master - hollis_scan_03” (restoration-hollis-scan-03.png).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/restoration-hollis-scan-03/H011` No frame, ornament, brand mark or drop shadow is added to “Archival restoration master - hollis_scan_03” (restoration-hollis-scan-03.png).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/restoration-hollis-scan-03/H012` No metallic, gold, glow or other decorative colour effect is added to the picture on “Archival restoration master - hollis_scan_03” (restoration-hollis-scan-03.png).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/restoration-hollis-scan-03/H013` The picture on “Archival restoration master - hollis_scan_03” (restoration-hollis-scan-03.png) is not toned sepia unless hollis_scan_03.jpg already is.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/restoration-hollis-scan-03/H014` No caption, text, plate numeral or rule is added to “Archival restoration master - hollis_scan_03” (restoration-hollis-scan-03.png).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/restoration-hollis-scan-03/H015` The scratches, creases and other damage in hollis_scan_03.jpg are repaired on “Archival restoration master - hollis_scan_03” (restoration-hollis-scan-03.png).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/restoration-hollis-scan-04/H011` No palette colour, tint, scrim or wash is laid over the picture from hollis_scan_04.jpg on “Archival restoration master - hollis_scan_04” (restoration-hollis-scan-04.png).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/restoration-hollis-scan-04/H012` No frame, ornament, brand mark or drop shadow is added to “Archival restoration master - hollis_scan_04” (restoration-hollis-scan-04.png).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/restoration-hollis-scan-04/H013` No metallic, gold, glow or other decorative colour effect is added to the picture on “Archival restoration master - hollis_scan_04” (restoration-hollis-scan-04.png).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/restoration-hollis-scan-04/H014` The picture on “Archival restoration master - hollis_scan_04” (restoration-hollis-scan-04.png) is not toned sepia unless hollis_scan_04.jpg already is.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/restoration-hollis-scan-04/H015` No caption, text, plate numeral or rule is added to “Archival restoration master - hollis_scan_04” (restoration-hollis-scan-04.png).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/restoration-hollis-scan-04/H016` The scratches, creases and other damage in hollis_scan_04.jpg are repaired on “Archival restoration master - hollis_scan_04” (restoration-hollis-scan-04.png).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/restoration-hollis-scan-05/H010` No palette colour, tint, scrim or wash is laid over the picture from hollis_scan_05.jpg on “Archival restoration master - hollis_scan_05” (restoration-hollis-scan-05.png).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/restoration-hollis-scan-05/H011` No frame, ornament, brand mark or drop shadow is added to “Archival restoration master - hollis_scan_05” (restoration-hollis-scan-05.png).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/restoration-hollis-scan-05/H012` No metallic, gold, glow or other decorative colour effect is added to the picture on “Archival restoration master - hollis_scan_05” (restoration-hollis-scan-05.png).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/restoration-hollis-scan-05/H013` The picture on “Archival restoration master - hollis_scan_05” (restoration-hollis-scan-05.png) is not toned sepia unless hollis_scan_05.jpg already is.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/restoration-hollis-scan-05/H014` No caption, text, plate numeral or rule is added to “Archival restoration master - hollis_scan_05” (restoration-hollis-scan-05.png).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/restoration-hollis-scan-05/H015` The scratches, creases and other damage in hollis_scan_05.jpg are repaired on “Archival restoration master - hollis_scan_05” (restoration-hollis-scan-05.png).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/restoration-hollis-scan-06/H012` No palette colour, tint, scrim or wash is laid over the picture from hollis_scan_06.jpg on “Archival restoration master - hollis_scan_06” (restoration-hollis-scan-06.png).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/restoration-hollis-scan-06/H013` No frame, ornament, brand mark or drop shadow is added to “Archival restoration master - hollis_scan_06” (restoration-hollis-scan-06.png).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/restoration-hollis-scan-06/H014` No metallic, gold, glow or other decorative colour effect is added to the picture on “Archival restoration master - hollis_scan_06” (restoration-hollis-scan-06.png).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/restoration-hollis-scan-06/H015` No caption, text, plate numeral or rule is added to “Archival restoration master - hollis_scan_06” (restoration-hollis-scan-06.png).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/restoration-hollis-scan-06/H016` The scratches, creases and other damage in hollis_scan_06.jpg are repaired on “Archival restoration master - hollis_scan_06” (restoration-hollis-scan-06.png).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/restoration-hollis-scan-06/H017` The yellow-orange fade of hollis_scan_06.jpg is removed on “Archival restoration master - hollis_scan_06” (restoration-hollis-scan-06.png): whites and skin no longer look yellow-orange.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/restoration-hollis-scan-07/H017` No caption, text, plate numeral or rule is added to “Archival restoration master - hollis_scan_07” (restoration-hollis-scan-07.png).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/restoration-hollis-scan-07/H018` The scratches, creases and other damage in hollis_scan_07.jpg are repaired on “Archival restoration master - hollis_scan_07” (restoration-hollis-scan-07.png); the scar on Ada's left hand is not damage.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/restoration-hollis-scan-07/H019` The washed-out fade of hollis_scan_07.jpg is lifted on “Archival restoration master - hollis_scan_07” (restoration-hollis-scan-07.png): the picture no longer looks pale and washed out.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/restoration-hollis-scan-08/H010` No palette colour, tint, scrim or wash is laid over the picture from hollis_scan_08.jpg on “Archival restoration master - hollis_scan_08” (restoration-hollis-scan-08.png).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/restoration-hollis-scan-08/H011` No frame, ornament, brand mark or drop shadow is added to “Archival restoration master - hollis_scan_08” (restoration-hollis-scan-08.png).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/restoration-hollis-scan-08/H012` No metallic, gold, glow or other decorative colour effect is added to the picture on “Archival restoration master - hollis_scan_08” (restoration-hollis-scan-08.png).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/restoration-hollis-scan-08/H013` No caption, text, plate numeral or rule is added to “Archival restoration master - hollis_scan_08” (restoration-hollis-scan-08.png).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/restoration-hollis-scan-08/H014` The scratches, creases and other damage in hollis_scan_08.jpg are repaired on “Archival restoration master - hollis_scan_08” (restoration-hollis-scan-08.png).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/restoration-hollis-scan-09/H014` No caption, text, plate numeral or rule is added to “Archival restoration master - hollis_scan_09” (restoration-hollis-scan-09.png).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/restoration-hollis-scan-09/H015` The scratches, creases and other damage in hollis_scan_09.jpg are repaired on “Archival restoration master - hollis_scan_09” (restoration-hollis-scan-09.png).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-01/H048` No colour overlay, scrim or wash is laid over the picture from hollis_scan_01.jpg on “Family archive share image - hollis_scan_01” (share-hollis-scan-01.jpg).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-01/H049` The caption on “Family archive share image - hollis_scan_01” (share-hollis-scan-01.jpg) sits on the added Paper White margin, not on a kept album page or scanner bed.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-01/H050` The place and date line on “Family archive share image - hollis_scan_01” (share-hollis-scan-01.jpg) is Ink Charcoal #33302B, not grey and not a colour.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-06/share-hollis-scan-01/H051` If body text, such as a names line, appears on “Family archive share image - hollis_scan_01” (share-hollis-scan-01.jpg), it is Ink Charcoal #33302B; a provenance line may be grey.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-06/share-hollis-scan-01/H052` If Linen #D9D0C1 appears on “Family archive share image - hollis_scan_01” (share-hollis-scan-01.jpg), it is used only for a hairline keyline around the photograph.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-06/share-hollis-scan-01/H053` Museum Grey and Linen together cover no more than 5% of the added margin and caption area on “Family archive share image - hollis_scan_01” (share-hollis-scan-01.jpg).
+  Measure: Measure, do not estimate. On a measurement copy, mask the named area; exclude photographs and transparent canvas. Count the selected accent-colour pixels and divide by all pixels in that mask. Include text unless the condition excludes it. Test each PDF page or held video frame separately. Yes only when the unrounded percentage is at or below the stated limit. Use the linked measurement guide for rasterisation and colour matching. The mask is only the added caption margin, not the restored historical print. Each RGB channel must be within 5 of a selected palette colour.
 - `PHOTO-06/share-hollis-scan-01/H054` All caption text on “Family archive share image - hollis_scan_01” (share-hollis-scan-01.jpg) is set in Cormorant Garamond, Source Serif 4 or Source Sans 3; no other typeface appears.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-01/H055` No accession code appears on “Family archive share image - hollis_scan_01” (share-hollis-scan-01.jpg).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-01/H056` The place and date line on “Family archive share image - hollis_scan_01” (share-hollis-scan-01.jpg) is upright, not italic.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-01/H057` If a plate numeral appears on “Family archive share image - hollis_scan_01” (share-hollis-scan-01.jpg), it is larger than the sitter's name.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-01/H058` If a plate numeral appears on “Family archive share image - hollis_scan_01” (share-hollis-scan-01.jpg), its top lines up with the top of the capital letters in the sitter's name.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-01/H059` If a plate numeral appears on “Family archive share image - hollis_scan_01” (share-hollis-scan-01.jpg), it is set in Cormorant Garamond Light.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-01/H060` The rule beneath the sitter's name on “Family archive share image - hollis_scan_01” (share-hollis-scan-01.jpg) starts and ends in line with the picture's left and right edges.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-01/H061` The place and date line on “Family archive share image - hollis_scan_01” (share-hollis-scan-01.jpg) sits below the rule beneath the sitter's name.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-01/H062` The film grain visible in hollis_scan_01.jpg is still visible on “Family archive share image - hollis_scan_01” (share-hollis-scan-01.jpg), not smoothed to a flat tone.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-01/H063` The scratches, creases and other damage in hollis_scan_01.jpg are gone from the picture on “Family archive share image - hollis_scan_01” (share-hollis-scan-01.jpg).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-01/H064` Every caption line on “Family archive share image - hollis_scan_01” (share-hollis-scan-01.jpg) is shown whole; no word is cut off at the image edge or at a frame edge.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-01/H065` The caption on “Family archive share image - hollis_scan_01” (share-hollis-scan-01.jpg) names the place Brattleboro, with or without Vermont or VT.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-02/H036` The margin, caption type, rules and keylines on “Family archive share image - hollis_scan_02” (share-hollis-scan-02.jpg) are flat solid colours, with no see-through areas, tints or gradients.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-02/H037` No colour overlay, scrim or wash is laid over the picture from hollis_scan_02.jpg on “Family archive share image - hollis_scan_02” (share-hollis-scan-02.jpg).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-02/H038` No ornament, decorative frame, script lettering, drop shadow, logo or monogram is added to “Family archive share image - hollis_scan_02” (share-hollis-scan-02.jpg).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-02/H039` No metallic, gold, glow or other decorative colour effect is added to the picture, margin or caption on “Family archive share image - hollis_scan_02” (share-hollis-scan-02.jpg).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-02/H040` The picture on “Family archive share image - hollis_scan_02” (share-hollis-scan-02.jpg) is not toned sepia unless hollis_scan_02.jpg already is.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-02/H041` The caption on “Family archive share image - hollis_scan_02” (share-hollis-scan-02.jpg) sits on the added Paper White margin, not on a kept album page or scanner bed.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-02/H042` Caption type, rules and keylines on “Family archive share image - hollis_scan_02” (share-hollis-scan-02.jpg) use only the neutral archive tones of the palette; no colour or gold appears.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-02/H043` The sitter's name or title line on “Family archive share image - hollis_scan_02” (share-hollis-scan-02.jpg) is Archive Black #191613.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-06/share-hollis-scan-02/H044` The place and date line on “Family archive share image - hollis_scan_02” (share-hollis-scan-02.jpg) is Ink Charcoal #33302B, not grey and not a colour.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-06/share-hollis-scan-02/H045` If body text, such as a names line, appears on “Family archive share image - hollis_scan_02” (share-hollis-scan-02.jpg), it is Ink Charcoal #33302B; a provenance line may be grey.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-06/share-hollis-scan-02/H046` If Museum Grey #6F6B64 appears on “Family archive share image - hollis_scan_02” (share-hollis-scan-02.jpg), it is used only for the provenance line.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-06/share-hollis-scan-02/H047` If Linen #D9D0C1 appears on “Family archive share image - hollis_scan_02” (share-hollis-scan-02.jpg), it is used only for a hairline keyline around the photograph.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-06/share-hollis-scan-02/H048` Museum Grey and Linen together cover no more than 5% of the added margin and caption area on “Family archive share image - hollis_scan_02” (share-hollis-scan-02.jpg).
+  Measure: Measure, do not estimate. On a measurement copy, mask the named area; exclude photographs and transparent canvas. Count the selected accent-colour pixels and divide by all pixels in that mask. Include text unless the condition excludes it. Test each PDF page or held video frame separately. Yes only when the unrounded percentage is at or below the stated limit. Use the linked measurement guide for rasterisation and colour matching. The mask is only the added caption margin, not the restored historical print. Each RGB channel must be within 5 of a selected palette colour.
 - `PHOTO-06/share-hollis-scan-02/H049` All caption text on “Family archive share image - hollis_scan_02” (share-hollis-scan-02.jpg) is set in Cormorant Garamond, Source Serif 4 or Source Sans 3; no other typeface appears.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-02/H050` No accession code appears on “Family archive share image - hollis_scan_02” (share-hollis-scan-02.jpg).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-02/H051` The sitter's name or title line on “Family archive share image - hollis_scan_02” (share-hollis-scan-02.jpg) is upright, not italic.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-02/H052` The place and date line on “Family archive share image - hollis_scan_02” (share-hollis-scan-02.jpg) is upright, not italic.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-02/H053` No caption line on “Family archive share image - hollis_scan_02” (share-hollis-scan-02.jpg) runs longer than 65 characters.
+  Measure: Count the characters, including spaces and punctuation, in each caption line as it breaks on the image; answer No if any line has more than 65.
 - `PHOTO-06/share-hollis-scan-02/H054` If a plate numeral appears on “Family archive share image - hollis_scan_02” (share-hollis-scan-02.jpg), it sits in the left margin.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-02/H055` If a plate numeral appears on “Family archive share image - hollis_scan_02” (share-hollis-scan-02.jpg), it is larger than the sitter's name.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-02/H056` If a plate numeral appears on “Family archive share image - hollis_scan_02” (share-hollis-scan-02.jpg), its top lines up with the top of the capital letters in the sitter's name.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-02/H057` If a plate numeral appears on “Family archive share image - hollis_scan_02” (share-hollis-scan-02.jpg), it is set in Cormorant Garamond Light.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-02/H058` A single fine hairline rule sits beneath the sitter's name on “Family archive share image - hollis_scan_02” (share-hollis-scan-02.jpg), not a heavy bar or a double line.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-02/H059` The rule beneath the sitter's name on “Family archive share image - hollis_scan_02” (share-hollis-scan-02.jpg) starts and ends in line with the picture's left and right edges.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-02/H060` The place and date line on “Family archive share image - hollis_scan_02” (share-hollis-scan-02.jpg) sits below the rule beneath the sitter's name.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-02/H061` The film grain visible in hollis_scan_02.jpg is still visible on “Family archive share image - hollis_scan_02” (share-hollis-scan-02.jpg), not smoothed to a flat tone.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-02/H062` The scratches, creases and other damage in hollis_scan_02.jpg are gone from the picture on “Family archive share image - hollis_scan_02” (share-hollis-scan-02.jpg); the pencil retouching on Ada's cheek is not damage.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-02/H063` Every caption line on “Family archive share image - hollis_scan_02” (share-hollis-scan-02.jpg) is shown whole; no word is cut off at the image edge or at a frame edge.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-02/H064` The caption on “Family archive share image - hollis_scan_02” (share-hollis-scan-02.jpg) names the place Brattleboro, with or without Vermont or VT.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-03/H047` No colour overlay, scrim or wash is laid over the picture from hollis_scan_03.jpg on “Family archive share image - hollis_scan_03” (share-hollis-scan-03.jpg).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-03/H048` The caption on “Family archive share image - hollis_scan_03” (share-hollis-scan-03.jpg) sits on the added Paper White margin, not on a kept album page or scanner bed.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-03/H049` The place and date line on “Family archive share image - hollis_scan_03” (share-hollis-scan-03.jpg) is Ink Charcoal #33302B, not grey and not a colour.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-06/share-hollis-scan-03/H050` If body text, such as a names line, appears on “Family archive share image - hollis_scan_03” (share-hollis-scan-03.jpg), it is Ink Charcoal #33302B; a provenance line may be grey.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-06/share-hollis-scan-03/H051` If Linen #D9D0C1 appears on “Family archive share image - hollis_scan_03” (share-hollis-scan-03.jpg), it is used only for a hairline keyline around the photograph.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-06/share-hollis-scan-03/H052` Museum Grey and Linen together cover no more than 5% of the added margin and caption area on “Family archive share image - hollis_scan_03” (share-hollis-scan-03.jpg).
+  Measure: Measure, do not estimate. On a measurement copy, mask the named area; exclude photographs and transparent canvas. Count the selected accent-colour pixels and divide by all pixels in that mask. Include text unless the condition excludes it. Test each PDF page or held video frame separately. Yes only when the unrounded percentage is at or below the stated limit. Use the linked measurement guide for rasterisation and colour matching. The mask is only the added caption margin, not the restored historical print. Each RGB channel must be within 5 of a selected palette colour.
 - `PHOTO-06/share-hollis-scan-03/H053` All caption text on “Family archive share image - hollis_scan_03” (share-hollis-scan-03.jpg) is set in Cormorant Garamond, Source Serif 4 or Source Sans 3; no other typeface appears.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-03/H054` No accession code appears on “Family archive share image - hollis_scan_03” (share-hollis-scan-03.jpg).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-03/H055` The place and date line on “Family archive share image - hollis_scan_03” (share-hollis-scan-03.jpg) is upright, not italic.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-03/H056` If a plate numeral appears on “Family archive share image - hollis_scan_03” (share-hollis-scan-03.jpg), it is larger than the sitter's name.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-03/H057` If a plate numeral appears on “Family archive share image - hollis_scan_03” (share-hollis-scan-03.jpg), its top lines up with the top of the capital letters in the sitter's name.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-03/H058` If a plate numeral appears on “Family archive share image - hollis_scan_03” (share-hollis-scan-03.jpg), it is set in Cormorant Garamond Light.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-03/H059` The rule beneath the sitter's name on “Family archive share image - hollis_scan_03” (share-hollis-scan-03.jpg) starts and ends in line with the picture's left and right edges.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-03/H060` The place and date line on “Family archive share image - hollis_scan_03” (share-hollis-scan-03.jpg) sits below the rule beneath the sitter's name.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-03/H061` The film grain visible in hollis_scan_03.jpg is still visible on “Family archive share image - hollis_scan_03” (share-hollis-scan-03.jpg), not smoothed to a flat tone.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-03/H062` The scratches, creases and other damage in hollis_scan_03.jpg are gone from the picture on “Family archive share image - hollis_scan_03” (share-hollis-scan-03.jpg).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-03/H063` Every caption line on “Family archive share image - hollis_scan_03” (share-hollis-scan-03.jpg) is shown whole; no word is cut off at the image edge or at a frame edge.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-03/H064` The caption on “Family archive share image - hollis_scan_03” (share-hollis-scan-03.jpg) names the place Newfane, with or without Vermont or VT.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-04/H031` The margin, caption type, rules and keylines on “Family archive share image - hollis_scan_04” (share-hollis-scan-04.jpg) are flat solid colours, with no see-through areas, tints or gradients.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-04/H032` No colour overlay, scrim or wash is laid over the picture from hollis_scan_04.jpg on “Family archive share image - hollis_scan_04” (share-hollis-scan-04.jpg).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-04/H033` No ornament, decorative frame, script lettering, drop shadow, logo or monogram is added to “Family archive share image - hollis_scan_04” (share-hollis-scan-04.jpg).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-04/H034` No metallic, gold, glow or other decorative colour effect is added to the picture, margin or caption on “Family archive share image - hollis_scan_04” (share-hollis-scan-04.jpg).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-04/H035` The picture on “Family archive share image - hollis_scan_04” (share-hollis-scan-04.jpg) is not toned sepia unless hollis_scan_04.jpg already is.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-04/H036` The added margin on “Family archive share image - hollis_scan_04” (share-hollis-scan-04.jpg) is Paper White #F5F1E9, not pure white. Ignore any kept album page or scanner bed.
+  Measure: Colour-pick three plain spots of the added margin; answer Yes if each reads within 5 of R245 G241 B233, No otherwise.
 - `PHOTO-06/share-hollis-scan-04/H037` The caption on “Family archive share image - hollis_scan_04” (share-hollis-scan-04.jpg) sits on the added Paper White margin, not on a kept album page or scanner bed.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-04/H038` Caption type, rules and keylines on “Family archive share image - hollis_scan_04” (share-hollis-scan-04.jpg) use only the neutral archive tones of the palette; no colour or gold appears.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-04/H039` The sitter's name or title line on “Family archive share image - hollis_scan_04” (share-hollis-scan-04.jpg) is Archive Black #191613.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-06/share-hollis-scan-04/H040` The place and date line on “Family archive share image - hollis_scan_04” (share-hollis-scan-04.jpg) is Ink Charcoal #33302B, not grey and not a colour.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-06/share-hollis-scan-04/H041` If body text, such as a names line, appears on “Family archive share image - hollis_scan_04” (share-hollis-scan-04.jpg), it is Ink Charcoal #33302B; a provenance line may be grey.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-06/share-hollis-scan-04/H042` If Museum Grey #6F6B64 appears on “Family archive share image - hollis_scan_04” (share-hollis-scan-04.jpg), it is used only for the provenance line.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-06/share-hollis-scan-04/H043` If Linen #D9D0C1 appears on “Family archive share image - hollis_scan_04” (share-hollis-scan-04.jpg), it is used only for a hairline keyline around the photograph.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-06/share-hollis-scan-04/H044` Museum Grey and Linen together cover no more than 5% of the added margin and caption area on “Family archive share image - hollis_scan_04” (share-hollis-scan-04.jpg).
+  Measure: Measure, do not estimate. On a measurement copy, mask the named area; exclude photographs and transparent canvas. Count the selected accent-colour pixels and divide by all pixels in that mask. Include text unless the condition excludes it. Test each PDF page or held video frame separately. Yes only when the unrounded percentage is at or below the stated limit. Use the linked measurement guide for rasterisation and colour matching. The mask is only the added caption margin, not the restored historical print. Each RGB channel must be within 5 of a selected palette colour.
 - `PHOTO-06/share-hollis-scan-04/H045` All caption text on “Family archive share image - hollis_scan_04” (share-hollis-scan-04.jpg) is set in Cormorant Garamond, Source Serif 4 or Source Sans 3; no other typeface appears.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-04/H046` No accession code appears on “Family archive share image - hollis_scan_04” (share-hollis-scan-04.jpg).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-04/H047` The sitter's name or title line on “Family archive share image - hollis_scan_04” (share-hollis-scan-04.jpg) is upright, not italic.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-04/H048` The place and date line on “Family archive share image - hollis_scan_04” (share-hollis-scan-04.jpg) is upright, not italic.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-04/H049` No caption line on “Family archive share image - hollis_scan_04” (share-hollis-scan-04.jpg) runs longer than 65 characters.
+  Measure: Count the characters, including spaces and punctuation, in each caption line as it breaks on the image; answer No if any line has more than 65.
 - `PHOTO-06/share-hollis-scan-04/H050` If a plate numeral appears on “Family archive share image - hollis_scan_04” (share-hollis-scan-04.jpg), it sits in the left margin.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-04/H051` If a plate numeral appears on “Family archive share image - hollis_scan_04” (share-hollis-scan-04.jpg), it is larger than the sitter's name.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-04/H052` If a plate numeral appears on “Family archive share image - hollis_scan_04” (share-hollis-scan-04.jpg), its top lines up with the top of the capital letters in the sitter's name.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-04/H053` If a plate numeral appears on “Family archive share image - hollis_scan_04” (share-hollis-scan-04.jpg), it is set in Cormorant Garamond Light.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-04/H054` A single fine hairline rule sits beneath the sitter's name on “Family archive share image - hollis_scan_04” (share-hollis-scan-04.jpg), not a heavy bar or a double line.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-04/H055` The rule beneath the sitter's name on “Family archive share image - hollis_scan_04” (share-hollis-scan-04.jpg) starts and ends in line with the picture's left and right edges.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-04/H056` The sitter's name or title line on “Family archive share image - hollis_scan_04” (share-hollis-scan-04.jpg) is set larger than the place and date line.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-04/H057` The place and date line on “Family archive share image - hollis_scan_04” (share-hollis-scan-04.jpg) sits below the rule beneath the sitter's name.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-04/H058` The caption block on “Family archive share image - hollis_scan_04” (share-hollis-scan-04.jpg) covers a smaller area than the picture from hollis_scan_04.jpg.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-04/H059` The paper texture of the print in hollis_scan_04.jpg is still visible on “Family archive share image - hollis_scan_04” (share-hollis-scan-04.jpg), not smoothed to a flat tone.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-04/H060` The film grain visible in hollis_scan_04.jpg is still visible on “Family archive share image - hollis_scan_04” (share-hollis-scan-04.jpg), not smoothed to a flat tone.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-04/H061` The scratches, creases and other damage in hollis_scan_04.jpg are gone from the picture on “Family archive share image - hollis_scan_04” (share-hollis-scan-04.jpg).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-04/H062` Every caption line on “Family archive share image - hollis_scan_04” (share-hollis-scan-04.jpg) is shown whole; no word is cut off at the image edge or at a frame edge.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-04/H063` The caption on “Family archive share image - hollis_scan_04” (share-hollis-scan-04.jpg) names the place Brattleboro, with or without Vermont or VT.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-05/H047` No colour overlay, scrim or wash is laid over the picture from hollis_scan_05.jpg on “Family archive share image - hollis_scan_05” (share-hollis-scan-05.jpg).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-05/H048` The caption on “Family archive share image - hollis_scan_05” (share-hollis-scan-05.jpg) sits on the added Paper White margin, not on a kept album page or scanner bed.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-05/H049` The place and date line on “Family archive share image - hollis_scan_05” (share-hollis-scan-05.jpg) is Ink Charcoal #33302B, not grey and not a colour.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-06/share-hollis-scan-05/H050` If body text, such as a names line, appears on “Family archive share image - hollis_scan_05” (share-hollis-scan-05.jpg), it is Ink Charcoal #33302B; a provenance line may be grey.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-06/share-hollis-scan-05/H051` If Linen #D9D0C1 appears on “Family archive share image - hollis_scan_05” (share-hollis-scan-05.jpg), it is used only for a hairline keyline around the photograph.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-06/share-hollis-scan-05/H052` Museum Grey and Linen together cover no more than 5% of the added margin and caption area on “Family archive share image - hollis_scan_05” (share-hollis-scan-05.jpg).
+  Measure: Measure, do not estimate. On a measurement copy, mask the named area; exclude photographs and transparent canvas. Count the selected accent-colour pixels and divide by all pixels in that mask. Include text unless the condition excludes it. Test each PDF page or held video frame separately. Yes only when the unrounded percentage is at or below the stated limit. Use the linked measurement guide for rasterisation and colour matching. The mask is only the added caption margin, not the restored historical print. Each RGB channel must be within 5 of a selected palette colour.
 - `PHOTO-06/share-hollis-scan-05/H053` All caption text on “Family archive share image - hollis_scan_05” (share-hollis-scan-05.jpg) is set in Cormorant Garamond, Source Serif 4 or Source Sans 3; no other typeface appears.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-05/H054` No accession code appears on “Family archive share image - hollis_scan_05” (share-hollis-scan-05.jpg).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-05/H055` The place and date line on “Family archive share image - hollis_scan_05” (share-hollis-scan-05.jpg) is upright, not italic.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-05/H056` If a plate numeral appears on “Family archive share image - hollis_scan_05” (share-hollis-scan-05.jpg), it is larger than the sitter's name.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-05/H057` If a plate numeral appears on “Family archive share image - hollis_scan_05” (share-hollis-scan-05.jpg), its top lines up with the top of the capital letters in the sitter's name.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-05/H058` If a plate numeral appears on “Family archive share image - hollis_scan_05” (share-hollis-scan-05.jpg), it is set in Cormorant Garamond Light.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-05/H059` The rule beneath the sitter's name on “Family archive share image - hollis_scan_05” (share-hollis-scan-05.jpg) starts and ends in line with the picture's left and right edges.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-05/H060` The place and date line on “Family archive share image - hollis_scan_05” (share-hollis-scan-05.jpg) sits below the rule beneath the sitter's name.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-05/H061` The film grain visible in hollis_scan_05.jpg is still visible on “Family archive share image - hollis_scan_05” (share-hollis-scan-05.jpg), not smoothed to a flat tone.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-05/H062` The scratches, creases and other damage in hollis_scan_05.jpg are gone from the picture on “Family archive share image - hollis_scan_05” (share-hollis-scan-05.jpg).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-05/H063` Every caption line on “Family archive share image - hollis_scan_05” (share-hollis-scan-05.jpg) is shown whole; no word is cut off at the image edge or at a frame edge.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-05/H064` The caption on “Family archive share image - hollis_scan_05” (share-hollis-scan-05.jpg) names the place Putney, with or without Vermont or VT.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-06/H035` The margin, caption type, rules and keylines on “Family archive share image - hollis_scan_06” (share-hollis-scan-06.jpg) are flat solid colours, with no see-through areas, tints or gradients.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-06/H036` No colour overlay, scrim or wash is laid over the picture from hollis_scan_06.jpg on “Family archive share image - hollis_scan_06” (share-hollis-scan-06.jpg).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-06/H037` No ornament, decorative frame, script lettering, drop shadow, logo or monogram is added to “Family archive share image - hollis_scan_06” (share-hollis-scan-06.jpg).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-06/H038` No metallic, gold, glow or other decorative colour effect is added to the picture, margin or caption on “Family archive share image - hollis_scan_06” (share-hollis-scan-06.jpg).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-06/H039` The added margin on “Family archive share image - hollis_scan_06” (share-hollis-scan-06.jpg) is Paper White #F5F1E9, not pure white. Ignore any kept album page or scanner bed.
+  Measure: Colour-pick three plain spots of the added margin; answer Yes if each reads within 5 of R245 G241 B233, No otherwise.
 - `PHOTO-06/share-hollis-scan-06/H040` The caption on “Family archive share image - hollis_scan_06” (share-hollis-scan-06.jpg) sits on the added Paper White margin, not on a kept album page or scanner bed.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-06/H041` Caption type, rules and keylines on “Family archive share image - hollis_scan_06” (share-hollis-scan-06.jpg) use only the neutral archive tones of the palette; no colour or gold appears.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-06/H042` The sitter's name or title line on “Family archive share image - hollis_scan_06” (share-hollis-scan-06.jpg) is Archive Black #191613.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-06/share-hollis-scan-06/H043` The place and date line on “Family archive share image - hollis_scan_06” (share-hollis-scan-06.jpg) is Ink Charcoal #33302B, not grey and not a colour.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-06/share-hollis-scan-06/H044` If body text, such as a names line, appears on “Family archive share image - hollis_scan_06” (share-hollis-scan-06.jpg), it is Ink Charcoal #33302B; a provenance line may be grey.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-06/share-hollis-scan-06/H045` If Museum Grey #6F6B64 appears on “Family archive share image - hollis_scan_06” (share-hollis-scan-06.jpg), it is used only for the provenance line.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-06/share-hollis-scan-06/H046` If Linen #D9D0C1 appears on “Family archive share image - hollis_scan_06” (share-hollis-scan-06.jpg), it is used only for a hairline keyline around the photograph.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-06/share-hollis-scan-06/H047` Museum Grey and Linen together cover no more than 5% of the added margin and caption area on “Family archive share image - hollis_scan_06” (share-hollis-scan-06.jpg).
+  Measure: Measure, do not estimate. On a measurement copy, mask the named area; exclude photographs and transparent canvas. Count the selected accent-colour pixels and divide by all pixels in that mask. Include text unless the condition excludes it. Test each PDF page or held video frame separately. Yes only when the unrounded percentage is at or below the stated limit. Use the linked measurement guide for rasterisation and colour matching. The mask is only the added caption margin, not the restored historical print. Each RGB channel must be within 5 of a selected palette colour.
 - `PHOTO-06/share-hollis-scan-06/H048` All caption text on “Family archive share image - hollis_scan_06” (share-hollis-scan-06.jpg) is set in Cormorant Garamond, Source Serif 4 or Source Sans 3; no other typeface appears.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-06/H049` No accession code appears on “Family archive share image - hollis_scan_06” (share-hollis-scan-06.jpg).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-06/H050` The sitter's name or title line on “Family archive share image - hollis_scan_06” (share-hollis-scan-06.jpg) is upright, not italic.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-06/H051` The place and date line on “Family archive share image - hollis_scan_06” (share-hollis-scan-06.jpg) is upright, not italic.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-06/H052` No caption line on “Family archive share image - hollis_scan_06” (share-hollis-scan-06.jpg) runs longer than 65 characters.
+  Measure: Count the characters, including spaces and punctuation, in each caption line as it breaks on the image; answer No if any line has more than 65.
 - `PHOTO-06/share-hollis-scan-06/H053` If a plate numeral appears on “Family archive share image - hollis_scan_06” (share-hollis-scan-06.jpg), it sits in the left margin.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-06/H054` If a plate numeral appears on “Family archive share image - hollis_scan_06” (share-hollis-scan-06.jpg), it is larger than the sitter's name.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-06/H055` If a plate numeral appears on “Family archive share image - hollis_scan_06” (share-hollis-scan-06.jpg), its top lines up with the top of the capital letters in the sitter's name.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-06/H056` If a plate numeral appears on “Family archive share image - hollis_scan_06” (share-hollis-scan-06.jpg), it is set in Cormorant Garamond Light.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-06/H057` A single fine hairline rule sits beneath the sitter's name on “Family archive share image - hollis_scan_06” (share-hollis-scan-06.jpg), not a heavy bar or a double line.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-06/H058` The rule beneath the sitter's name on “Family archive share image - hollis_scan_06” (share-hollis-scan-06.jpg) starts and ends in line with the picture's left and right edges.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-06/H059` The place and date line on “Family archive share image - hollis_scan_06” (share-hollis-scan-06.jpg) sits below the rule beneath the sitter's name.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-06/H060` The film grain visible in hollis_scan_06.jpg is still visible on “Family archive share image - hollis_scan_06” (share-hollis-scan-06.jpg), not smoothed to a flat tone.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-06/H061` The scratches, creases and other damage in hollis_scan_06.jpg are gone from the picture on “Family archive share image - hollis_scan_06” (share-hollis-scan-06.jpg).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-06/H062` Every caption line on “Family archive share image - hollis_scan_06” (share-hollis-scan-06.jpg) is shown whole; no word is cut off at the image edge or at a frame edge.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-06/H063` The caption on “Family archive share image - hollis_scan_06” (share-hollis-scan-06.jpg) names the place Brattleboro, with or without Vermont or VT.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-06/H064` The yellow-orange fade of hollis_scan_06.jpg is removed on “Family archive share image - hollis_scan_06” (share-hollis-scan-06.jpg): whites and skin no longer look yellow-orange.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-07/H050` No colour overlay, scrim or wash is laid over the picture from hollis_scan_07.jpg on “Family archive share image - hollis_scan_07” (share-hollis-scan-07.jpg).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-07/H051` The caption on “Family archive share image - hollis_scan_07” (share-hollis-scan-07.jpg) sits on the added Paper White margin, not on a kept album page or scanner bed.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-07/H052` The place and date line on “Family archive share image - hollis_scan_07” (share-hollis-scan-07.jpg) is Ink Charcoal #33302B, not grey and not a colour.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-06/share-hollis-scan-07/H053` If body text, such as a names line, appears on “Family archive share image - hollis_scan_07” (share-hollis-scan-07.jpg), it is Ink Charcoal #33302B; a provenance line may be grey.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-06/share-hollis-scan-07/H054` If Linen #D9D0C1 appears on “Family archive share image - hollis_scan_07” (share-hollis-scan-07.jpg), it is used only for a hairline keyline around the photograph.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-06/share-hollis-scan-07/H055` Museum Grey and Linen together cover no more than 5% of the added margin and caption area on “Family archive share image - hollis_scan_07” (share-hollis-scan-07.jpg).
+  Measure: Measure, do not estimate. On a measurement copy, mask the named area; exclude photographs and transparent canvas. Count the selected accent-colour pixels and divide by all pixels in that mask. Include text unless the condition excludes it. Test each PDF page or held video frame separately. Yes only when the unrounded percentage is at or below the stated limit. Use the linked measurement guide for rasterisation and colour matching. The mask is only the added caption margin, not the restored historical print. Each RGB channel must be within 5 of a selected palette colour.
 - `PHOTO-06/share-hollis-scan-07/H056` All caption text on “Family archive share image - hollis_scan_07” (share-hollis-scan-07.jpg) is set in Cormorant Garamond, Source Serif 4 or Source Sans 3; no other typeface appears.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-07/H057` No accession code appears on “Family archive share image - hollis_scan_07” (share-hollis-scan-07.jpg).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-07/H058` The place and date line on “Family archive share image - hollis_scan_07” (share-hollis-scan-07.jpg) is upright, not italic.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-07/H059` If a plate numeral appears on “Family archive share image - hollis_scan_07” (share-hollis-scan-07.jpg), it is larger than the sitter's name.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-07/H060` If a plate numeral appears on “Family archive share image - hollis_scan_07” (share-hollis-scan-07.jpg), its top lines up with the top of the capital letters in the sitter's name.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-07/H061` If a plate numeral appears on “Family archive share image - hollis_scan_07” (share-hollis-scan-07.jpg), it is set in Cormorant Garamond Light.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-07/H062` The rule beneath the sitter's name on “Family archive share image - hollis_scan_07” (share-hollis-scan-07.jpg) starts and ends in line with the picture's left and right edges.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-07/H063` The place and date line on “Family archive share image - hollis_scan_07” (share-hollis-scan-07.jpg) sits below the rule beneath the sitter's name.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-07/H064` The film grain visible in hollis_scan_07.jpg is still visible on “Family archive share image - hollis_scan_07” (share-hollis-scan-07.jpg), not smoothed to a flat tone.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-07/H065` The scratches, creases and other damage in hollis_scan_07.jpg are gone from the picture on “Family archive share image - hollis_scan_07” (share-hollis-scan-07.jpg); the scar on Ada's left hand is not damage.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-07/H066` Every caption line on “Family archive share image - hollis_scan_07” (share-hollis-scan-07.jpg) is shown whole; no word is cut off at the image edge or at a frame edge.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-07/H067` The caption on “Family archive share image - hollis_scan_07” (share-hollis-scan-07.jpg) names the place Brattleboro, with or without Vermont or VT.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-07/H068` The washed-out fade of hollis_scan_07.jpg is lifted on “Family archive share image - hollis_scan_07” (share-hollis-scan-07.jpg): the picture no longer looks pale and washed out.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-08/H030` The margin, caption type, rules and keylines on “Family archive share image - hollis_scan_08” (share-hollis-scan-08.jpg) are flat solid colours, with no see-through areas, tints or gradients.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-08/H031` No colour overlay, scrim or wash is laid over the picture from hollis_scan_08.jpg on “Family archive share image - hollis_scan_08” (share-hollis-scan-08.jpg).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-08/H032` No ornament, decorative frame, script lettering, drop shadow, logo or monogram is added to “Family archive share image - hollis_scan_08” (share-hollis-scan-08.jpg).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-08/H033` No metallic, gold, glow or other decorative colour effect is added to the picture, margin or caption on “Family archive share image - hollis_scan_08” (share-hollis-scan-08.jpg).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-08/H034` The added margin on “Family archive share image - hollis_scan_08” (share-hollis-scan-08.jpg) is Paper White #F5F1E9, not pure white. Ignore any kept album page or scanner bed.
+  Measure: Colour-pick three plain spots of the added margin; answer Yes if each reads within 5 of R245 G241 B233, No otherwise.
 - `PHOTO-06/share-hollis-scan-08/H035` The caption on “Family archive share image - hollis_scan_08” (share-hollis-scan-08.jpg) sits on the added Paper White margin, not on a kept album page or scanner bed.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-08/H036` Caption type, rules and keylines on “Family archive share image - hollis_scan_08” (share-hollis-scan-08.jpg) use only the neutral archive tones of the palette; no colour or gold appears.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-08/H037` The sitter's name or title line on “Family archive share image - hollis_scan_08” (share-hollis-scan-08.jpg) is Archive Black #191613.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-06/share-hollis-scan-08/H038` The place and date line on “Family archive share image - hollis_scan_08” (share-hollis-scan-08.jpg) is Ink Charcoal #33302B, not grey and not a colour.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-06/share-hollis-scan-08/H039` If body text, such as a names line, appears on “Family archive share image - hollis_scan_08” (share-hollis-scan-08.jpg), it is Ink Charcoal #33302B; a provenance line may be grey.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-06/share-hollis-scan-08/H040` If Museum Grey #6F6B64 appears on “Family archive share image - hollis_scan_08” (share-hollis-scan-08.jpg), it is used only for the provenance line.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-06/share-hollis-scan-08/H041` If Linen #D9D0C1 appears on “Family archive share image - hollis_scan_08” (share-hollis-scan-08.jpg), it is used only for a hairline keyline around the photograph.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-06/share-hollis-scan-08/H042` Museum Grey and Linen together cover no more than 5% of the added margin and caption area on “Family archive share image - hollis_scan_08” (share-hollis-scan-08.jpg).
+  Measure: Measure, do not estimate. On a measurement copy, mask the named area; exclude photographs and transparent canvas. Count the selected accent-colour pixels and divide by all pixels in that mask. Include text unless the condition excludes it. Test each PDF page or held video frame separately. Yes only when the unrounded percentage is at or below the stated limit. Use the linked measurement guide for rasterisation and colour matching. The mask is only the added caption margin, not the restored historical print. Each RGB channel must be within 5 of a selected palette colour.
 - `PHOTO-06/share-hollis-scan-08/H043` All caption text on “Family archive share image - hollis_scan_08” (share-hollis-scan-08.jpg) is set in Cormorant Garamond, Source Serif 4 or Source Sans 3; no other typeface appears.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-08/H044` No accession code appears on “Family archive share image - hollis_scan_08” (share-hollis-scan-08.jpg).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-08/H045` The sitter's name or title line on “Family archive share image - hollis_scan_08” (share-hollis-scan-08.jpg) is upright, not italic.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-08/H046` The place and date line on “Family archive share image - hollis_scan_08” (share-hollis-scan-08.jpg) is upright, not italic.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-08/H047` No caption line on “Family archive share image - hollis_scan_08” (share-hollis-scan-08.jpg) runs longer than 65 characters.
+  Measure: Count the characters, including spaces and punctuation, in each caption line as it breaks on the image; answer No if any line has more than 65.
 - `PHOTO-06/share-hollis-scan-08/H048` If a plate numeral appears on “Family archive share image - hollis_scan_08” (share-hollis-scan-08.jpg), it sits in the left margin.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-08/H049` If a plate numeral appears on “Family archive share image - hollis_scan_08” (share-hollis-scan-08.jpg), it is larger than the sitter's name.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-08/H050` If a plate numeral appears on “Family archive share image - hollis_scan_08” (share-hollis-scan-08.jpg), its top lines up with the top of the capital letters in the sitter's name.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-08/H051` If a plate numeral appears on “Family archive share image - hollis_scan_08” (share-hollis-scan-08.jpg), it is set in Cormorant Garamond Light.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-08/H052` A single fine hairline rule sits beneath the sitter's name on “Family archive share image - hollis_scan_08” (share-hollis-scan-08.jpg), not a heavy bar or a double line.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-08/H053` The rule beneath the sitter's name on “Family archive share image - hollis_scan_08” (share-hollis-scan-08.jpg) starts and ends in line with the picture's left and right edges.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-08/H054` The sitter's name or title line on “Family archive share image - hollis_scan_08” (share-hollis-scan-08.jpg) is set larger than the place and date line.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-08/H055` The place and date line on “Family archive share image - hollis_scan_08” (share-hollis-scan-08.jpg) sits below the rule beneath the sitter's name.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-08/H056` The caption block on “Family archive share image - hollis_scan_08” (share-hollis-scan-08.jpg) covers a smaller area than the picture from hollis_scan_08.jpg.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-08/H057` The paper texture of the print in hollis_scan_08.jpg is still visible on “Family archive share image - hollis_scan_08” (share-hollis-scan-08.jpg), not smoothed to a flat tone.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-08/H058` The film grain visible in hollis_scan_08.jpg is still visible on “Family archive share image - hollis_scan_08” (share-hollis-scan-08.jpg), not smoothed to a flat tone.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-08/H059` The scratches, creases and other damage in hollis_scan_08.jpg are gone from the picture on “Family archive share image - hollis_scan_08” (share-hollis-scan-08.jpg).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-08/H060` Every caption line on “Family archive share image - hollis_scan_08” (share-hollis-scan-08.jpg) is shown whole; no word is cut off at the image edge or at a frame edge.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-08/H061` The caption on “Family archive share image - hollis_scan_08” (share-hollis-scan-08.jpg) names the place Brattleboro, with or without Vermont or VT.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-09/H047` No colour overlay, scrim or wash is laid over the picture from hollis_scan_09.jpg on “Family archive share image - hollis_scan_09” (share-hollis-scan-09.jpg).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-09/H048` The caption on “Family archive share image - hollis_scan_09” (share-hollis-scan-09.jpg) sits on the added Paper White margin, not on a kept album page or scanner bed.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-09/H049` The place and date line on “Family archive share image - hollis_scan_09” (share-hollis-scan-09.jpg) is Ink Charcoal #33302B, not grey and not a colour.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-06/share-hollis-scan-09/H050` If body text, such as a names line, appears on “Family archive share image - hollis_scan_09” (share-hollis-scan-09.jpg), it is Ink Charcoal #33302B; a provenance line may be grey.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-06/share-hollis-scan-09/H051` If Linen #D9D0C1 appears on “Family archive share image - hollis_scan_09” (share-hollis-scan-09.jpg), it is used only for a hairline keyline around the photograph.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-06/share-hollis-scan-09/H052` Museum Grey and Linen together cover no more than 5% of the added margin and caption area on “Family archive share image - hollis_scan_09” (share-hollis-scan-09.jpg).
+  Measure: Measure, do not estimate. On a measurement copy, mask the named area; exclude photographs and transparent canvas. Count the selected accent-colour pixels and divide by all pixels in that mask. Include text unless the condition excludes it. Test each PDF page or held video frame separately. Yes only when the unrounded percentage is at or below the stated limit. Use the linked measurement guide for rasterisation and colour matching. The mask is only the added caption margin, not the restored historical print. Each RGB channel must be within 5 of a selected palette colour.
 - `PHOTO-06/share-hollis-scan-09/H053` All caption text on “Family archive share image - hollis_scan_09” (share-hollis-scan-09.jpg) is set in Cormorant Garamond, Source Serif 4 or Source Sans 3; no other typeface appears.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-09/H054` No accession code appears on “Family archive share image - hollis_scan_09” (share-hollis-scan-09.jpg).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-09/H055` The place and date line on “Family archive share image - hollis_scan_09” (share-hollis-scan-09.jpg) is upright, not italic.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-09/H056` If a plate numeral appears on “Family archive share image - hollis_scan_09” (share-hollis-scan-09.jpg), it is larger than the sitter's name.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-09/H057` If a plate numeral appears on “Family archive share image - hollis_scan_09” (share-hollis-scan-09.jpg), its top lines up with the top of the capital letters in the sitter's name.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-09/H058` If a plate numeral appears on “Family archive share image - hollis_scan_09” (share-hollis-scan-09.jpg), it is set in Cormorant Garamond Light.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-09/H059` The rule beneath the sitter's name on “Family archive share image - hollis_scan_09” (share-hollis-scan-09.jpg) starts and ends in line with the picture's left and right edges.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-09/H060` The place and date line on “Family archive share image - hollis_scan_09” (share-hollis-scan-09.jpg) sits below the rule beneath the sitter's name.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-09/H061` The film grain visible in hollis_scan_09.jpg is still visible on “Family archive share image - hollis_scan_09” (share-hollis-scan-09.jpg), not smoothed to a flat tone.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-09/H062` The scratches, creases and other damage in hollis_scan_09.jpg are gone from the picture on “Family archive share image - hollis_scan_09” (share-hollis-scan-09.jpg).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-09/H063` Every caption line on “Family archive share image - hollis_scan_09” (share-hollis-scan-09.jpg) is shown whole; no word is cut off at the image edge or at a frame edge.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-09/H064` The caption on “Family archive share image - hollis_scan_09” (share-hollis-scan-09.jpg) names the place Brattleboro, with or without Vermont or VT.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-01/H066` The sitter's name on “Family archive share image - hollis_scan_01” (share-hollis-scan-01.jpg) has wider letter spacing than the place and date line.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-02/H065` The sitter's name on “Family archive share image - hollis_scan_02” (share-hollis-scan-02.jpg) has wider letter spacing than the place and date line.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-03/H065` The sitter's name on “Family archive share image - hollis_scan_03” (share-hollis-scan-03.jpg) has wider letter spacing than the place and date line.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-04/H064` The sitter's name on “Family archive share image - hollis_scan_04” (share-hollis-scan-04.jpg) has wider letter spacing than the place and date line.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-05/H065` The sitter's name on “Family archive share image - hollis_scan_05” (share-hollis-scan-05.jpg) has wider letter spacing than the place and date line.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-06/H065` The sitter's name on “Family archive share image - hollis_scan_06” (share-hollis-scan-06.jpg) has wider letter spacing than the place and date line.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-07/H069` The sitter's name on “Family archive share image - hollis_scan_07” (share-hollis-scan-07.jpg) has wider letter spacing than the place and date line.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-08/H062` The sitter's name on “Family archive share image - hollis_scan_08” (share-hollis-scan-08.jpg) has wider letter spacing than the place and date line.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-09/H065` The sitter's name on “Family archive share image - hollis_scan_09” (share-hollis-scan-09.jpg) has wider letter spacing than the place and date line.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/restoration-hollis-scan-06/H018` After the orange fade is corrected, no warm, amber or sepia tone is added back to the picture on “Archival restoration master - hollis_scan_06” (restoration-hollis-scan-06.png).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-06/H066` After the orange fade is corrected, no warm, amber or sepia tone is added back to the picture on “Family archive share image - hollis_scan_06” (share-hollis-scan-06.jpg).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-03/H066` The caption on “Family archive share image - hollis_scan_03” (share-hollis-scan-03.jpg) names Ada Hollis; a shared surname, as in “Ada and Walter Hollis”, counts.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-03/H067` The caption on “Family archive share image - hollis_scan_03” (share-hollis-scan-03.jpg) names Walter Hollis; a shared surname, as in “Ada and Walter Hollis”, counts.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-04/H065` The caption on “Family archive share image - hollis_scan_04” (share-hollis-scan-04.jpg) names Ada Hollis; a shared surname, as in “Ada and Ruth Hollis”, counts.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-04/H066` The caption on “Family archive share image - hollis_scan_04” (share-hollis-scan-04.jpg) names Ruth Hollis; a shared surname, as in “Ada and Ruth Hollis”, counts.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-05/H066` The caption on “Family archive share image - hollis_scan_05” (share-hollis-scan-05.jpg) names Ada Hollis; a shared surname, as in “Ada, Ruth, Frank and Carol Hollis”, counts.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-05/H067` The caption on “Family archive share image - hollis_scan_05” (share-hollis-scan-05.jpg) names Ruth Hollis; a shared surname, as in “Ada, Ruth, Frank and Carol Hollis”, counts.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-05/H068` The caption on “Family archive share image - hollis_scan_05” (share-hollis-scan-05.jpg) names Frank Hollis; a shared surname, as in “Ada, Ruth, Frank and Carol Hollis”, counts.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-05/H069` The caption on “Family archive share image - hollis_scan_05” (share-hollis-scan-05.jpg) names Carol Hollis; a shared surname, as in “Ada, Ruth, Frank and Carol Hollis”, counts.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-08/H063` The caption on “Family archive share image - hollis_scan_08” (share-hollis-scan-08.jpg) names Ada Hollis; a shared surname, as in “Ada and Tom Hollis”, counts.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-06/share-hollis-scan-08/H064` The caption on “Family archive share image - hollis_scan_08” (share-hollis-scan-08.jpg) names Tom Hollis; a shared surname, as in “Ada and Tom Hollis”, counts.
+  Look: Inspect the named output against this requirement and its linked references.
+- `PHOTO-06/restoration-hollis-scan-06/H019` The skin on “Archival restoration master - hollis_scan_06” (restoration-hollis-scan-06.png) show no magenta or red cast.
+  Look: Inspect the named output against this requirement and its linked references.
+- `PHOTO-06/share-hollis-scan-06/H067` The skin on “Family archive share image - hollis_scan_06” (share-hollis-scan-06.jpg) show no magenta or red cast.
+  Look: Inspect the named output against this requirement and its linked references.
+- `PHOTO-06/share-hollis-scan-07/H070` The skin on “Family archive share image - hollis_scan_07” (share-hollis-scan-07.jpg) show no green or cyan cast.
+  Look: Inspect the named output against this requirement and its linked references.
+- `PHOTO-06/restoration-hollis-scan-07/H020` The skin on “Archival restoration master - hollis_scan_07” (restoration-hollis-scan-07.png) show no green or cyan cast.
+  Look: Inspect the named output against this requirement and its linked references.

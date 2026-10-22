@@ -2,6 +2,10 @@
 
 Revised input pack. Previous execution results are historical, not current ratings.
 
+Score only the listed current Auto and Human verifiers. A design target marked "Not scored" in coverage remains a client instruction but is excluded from the score denominator: the requested delivery does not provide enough evidence to verify it. Do not infer a pass or failure. If a listed measurement cannot be completed, leave it unanswered and record the missing evidence; do not guess. Human answers remain Yes/No. Historical run results are not current scores.
+
+[Measurement guide](../../annotation-pilot/measurement-guide.html)
+
 ## Auto verifiers
 
 - `PHOTO-28/studio-launch/A001` “Verda Reformer Studio / Studio launch-page composition” (studio-launch.png) is present in the delivery package.
@@ -23,226 +27,456 @@ Revised input pack. Previous execution results are historical, not current ratin
 ## Human verifiers
 
 - `PHOTO-28/studio-launch/H001` The studio location on “Studio launch-page composition” (studio-launch.png) reads “Calloway Row”, with no invented street number, city or postcode added.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/studio-launch/H002` No photo, button, panel or other element covers any part of the class list on “Studio launch-page composition” (studio-launch.png).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/studio-launch/H003` The booking action on “Studio launch-page composition” (studio-launch.png) stays fully inside the 1440 x 2400 image edges and does not run off any edge.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/class-feed/H001` If the pictured instructor on “Class announcement” (class-feed.png) is Priya Anand, the class named is Foundations, as owner_note.txt gives.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/class-feed/H002` If verda_instructor_01.jpg is pictured on “Class announcement” (class-feed.png), the name given is Priya Anand, per roster_2027.csv.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/booking-story/H001` The booking action on “Studio booking story” (booking-story.png) sits at least 250 px from the top, 320 px from the bottom and 60 px from each side.
+  Measure: In an image editor, check every part of the booking action, button included, lies between x 60 and 1020 and y 250 and 1600.
 - `PHOTO-28/booking-story/H002` The studio wordmark and any “Verda Reformer Studio” text on “Studio booking story” (booking-story.png) are fully visible at 1080 x 1920, with no letters cut off at an edge.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/class-feed/H003` The class on “Class announcement” (class-feed.png) is written with its client-facing name, for example “Core & Restore”, not an internal code such as “RF-COR”.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/class-feed/H004` “Class announcement” (class-feed.png) does not name “Erin Coyle” or give erin@verdastudio.example; she has left the studio, and naming her makes it unusable.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/class-feed/H005` Every ground, panel and button on “Class announcement” (class-feed.png) is Warm Off White #F4F0E8 or Sage #9CA98F, never Soft Ink or Oak.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-28/class-feed/H006` The instructor's face on “Class announcement” (class-feed.png) keeps the features of its source portrait (verda_instructor_01.jpg to verda_instructor_06.jpg), with nothing reshaped or regenerated.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/class-feed/H007` The studio wordmark on “Class announcement” (class-feed.png) keeps the e, d and a counters of verda_wordmark_transparent.png open; none is filled in.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/class-feed/H008` The headline on “Class announcement” (class-feed.png) is set larger than any body text, price or validity line.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/class-feed/H009` The instructor on “Class announcement” (class-feed.png) is pictured from a supplied portrait (verda_instructor_01.jpg to verda_instructor_06.jpg), not a stock or generated person.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/class-feed/H010` The pictured instructor on “Class announcement” (class-feed.png) is named in full, first and last name, spelled exactly as in owner_note.txt.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/class-feed/H011` If the pictured instructor on “Class announcement” (class-feed.png) is Priya Anand, Lena Brandt or Nadia Haddad, the class price reads $34, as in roster_2027.csv.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/class-feed/H012` The validity on “Class announcement” (class-feed.png) is through Dec 2027, as in roster_2027.csv, not last year's through Dec 2025.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/class-feed/H013` The cut-out edge around the instructor on “Class announcement” (class-feed.png) shows no halo or fringe of the original wall.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/class-feed/H014` If “Class announcement” (class-feed.png) pictures Dana Osei from verda_instructor_02.jpg, the cut-out keeps the full shoulder and upper-arm line, with no bite into the pale top.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/class-feed/H015` If “Class announcement” (class-feed.png) pictures Yuki Sato from verda_instructor_05.jpg, the cut-out keeps the loose hair on both sides of the head, with neither side eaten away.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/class-feed/H016` The instructor's skin on “Class announcement” (class-feed.png) reads natural, with no orange cast.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/class-feed/H017` “Class announcement” (class-feed.png) states no opening date or month: September and October have both slipped, and no new date is fixed.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/class-feed/H018` “Class announcement” (class-feed.png) gives no class day, time or timetable, since no supplied file states one.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/class-feed/H019` Every price on “Class announcement” (class-feed.png) is a supplied figure: a class price from roster_2027.csv, the 180 dollar intro pack or the 220 dollar membership.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/class-feed/H020` Any studio location given on “Class announcement” (class-feed.png) reads “Calloway Row”, with no invented street number, city or postcode added.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/class-feed/H021` “Class announcement” (class-feed.png) invents no web address, phone number or social handle; any contact it gives is a supplied verdastudio.example address.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/class-feed/H022` No photograph on “Class announcement” (class-feed.png) shows a black rubber floor.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/class-feed/H023` No photograph on “Class announcement” (class-feed.png) shows a group class or more than one person exercising.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/class-feed/H024` Wherever verda_studio_frame_01.jpg or verda_studio_frame_02.jpg appears on “Class announcement” (class-feed.png), the reformer upholstery reads sage green, not blue or grey.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/class-feed/H025` Wherever verda_studio_frame_01.jpg or verda_studio_frame_02.jpg appears on “Class announcement” (class-feed.png), it keeps what the source frame shows of the room, with nothing generated, added or removed beyond a crop.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/class-feed/H026` If verda_studio_frame_01.jpg is used on “Class announcement” (class-feed.png), its blown-out front window shows no invented sky, street or scenery: it stays plain or is cropped out.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/class-feed/H027` If verda_instructor_04.jpg appears on “Class announcement” (class-feed.png), it shows no pixelation, softness or generated detail from being enlarged.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/class-feed/H028` The studio wordmark on “Class announcement” (class-feed.png) is the verda_wordmark_transparent.png drawing, not retyped in another font.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/class-feed/H029` No white square, box or halo shows around the studio wordmark on “Class announcement” (class-feed.png); the ground meets the letters directly.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/class-feed/H030` The studio wordmark on “Class announcement” (class-feed.png) has clean letter edges, with no grey fringe or blocky compression ring; normal edge anti-aliasing is fine.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/class-feed/H031` The studio wordmark on “Class announcement” (class-feed.png) sits on one line, never stacked onto two.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/class-feed/H032` The studio wordmark's visible letterforms on “Class announcement” (class-feed.png) are no more than 34 px tall.
+  Measure: In an image editor at 100% zoom, measure in pixels from the highest to the lowest point of the wordmark's visible letters.
 - `PHOTO-28/class-feed/H033` Type, panel, rule, button and icon colours on “Class announcement” (class-feed.png) are only Sage #9CA98F, Oak #C7A97A, Warm Off White #F4F0E8 or Soft Ink #33352E, anti-aliased edges aside.
+  Measure: Eyedropper flat colour centres of type, panels, rules, buttons, icons; each must be within 5 per channel of (156,169,143), (199,169,122), (244,240,232) or (51,53,46).
 - `PHOTO-28/class-feed/H034` Warm Off White #F4F0E8 appears in the designed parts of “Class announcement” (class-feed.png).
+  Measure: Eyedropper the main ground, a light panel or reversed type; at least one sample is within 5 of #F4F0E8 (244, 240, 232).
 - `PHOTO-28/class-feed/H035` All type, the wordmark and every ground, panel, button, rule and icon on “Class announcement” (class-feed.png) are flat, solid colour, with no gradient, drop shadow or anything showing through.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/class-feed/H036` On “Class announcement” (class-feed.png), all type on Warm Off White #F4F0E8 is Soft Ink #33352E; only short labels, like the passcard_2025_print.pdf field labels, may be Sage.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-28/class-feed/H037` Oak #C7A97A on “Class announcement” (class-feed.png) appears only as thin hairline rules or dividers, never as a ground, panel, button, text or fill.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-28/class-feed/H038` The headline on “Class announcement” (class-feed.png) is set in Archivo Regular, not bold, condensed or a serif.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/class-feed/H039` Any body text on “Class announcement” (class-feed.png) is set in Inter Regular, not a serif and not a bolder weight.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/class-feed/H040` The class price, the validity and every other fine-print line on “Class announcement” (class-feed.png) are set in Inter Medium, not Regular.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/class-feed/H041` Every line of designed type on “Class announcement” (class-feed.png), labels and buttons included, is Archivo Regular, Inter Regular or Inter Medium; only the wordmark drawing differs.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/class-feed/H042` No line of body text on “Class announcement” (class-feed.png) runs longer than 65 characters.
+  Measure: Find the longest line of body text and count its characters, spaces and punctuation included.
 - `PHOTO-28/class-feed/H043` The copy on “Class announcement” (class-feed.png) has no discount or urgency wording, such as sale, % off, limited time or hurry.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/booking-story/H003` The studio wordmark on “Studio booking story” (booking-story.png) is the verda_wordmark_transparent.png drawing, not retyped in another font.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/booking-story/H004` The headline on “Studio booking story” (booking-story.png) is set larger than any body text or fine print.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/booking-story/H005` Any price given for Foundations, Core & Restore or Slow & Deep on “Studio booking story” (booking-story.png) is $34, as roster_2027.csv gives for RF-FND, RF-COR and RF-SLW.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/booking-story/H006` Any class named on “Studio booking story” (booking-story.png) is written with its client-facing name, such as “Core & Restore”, never an internal code such as “RF-COR”.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/booking-story/H007` “Studio booking story” (booking-story.png) does not name “Erin Coyle” or give erin@verdastudio.example; she has left the studio, and naming her makes it unusable.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/booking-story/H008` “Studio booking story” (booking-story.png) states no opening date or month: September and October have both slipped, and no new date is fixed.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/booking-story/H009` “Studio booking story” (booking-story.png) gives no class day, time or timetable, since no supplied file states one.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/booking-story/H010` Every price on “Studio booking story” (booking-story.png) is a supplied figure: a class price from roster_2027.csv, the 180 dollar intro pack or the 220 dollar membership.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/booking-story/H011` Any validity given on “Studio booking story” (booking-story.png) reads through Dec 2027, as in roster_2027.csv, never last year's through Dec 2025.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/booking-story/H012` Any instructor named on “Studio booking story” (booking-story.png) is named in full, first and last name, spelled exactly as in owner_note.txt.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/booking-story/H013` If Priya Anand is named on “Studio booking story” (booking-story.png), any class beside that name is Foundations, as owner_note.txt gives.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/booking-story/H014` Any studio location given on “Studio booking story” (booking-story.png) reads “Calloway Row”, with no invented street number, city or postcode added.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/booking-story/H015` The booking action on “Studio booking story” (booking-story.png) invents no web address, phone number or social handle; any contact it gives is a supplied verdastudio.example address.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/booking-story/H016` Any person pictured on “Studio booking story” (booking-story.png) has natural skin, with no orange cast.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/booking-story/H017` No photograph on “Studio booking story” (booking-story.png) shows a black rubber floor.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/booking-story/H018` No photograph on “Studio booking story” (booking-story.png) shows a group class or more than one person exercising.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/booking-story/H019` Wherever verda_studio_frame_01.jpg or verda_studio_frame_02.jpg appears on “Studio booking story” (booking-story.png), the reformer upholstery reads sage green, not blue or grey.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/booking-story/H020` Wherever verda_studio_frame_01.jpg or verda_studio_frame_02.jpg appears on “Studio booking story” (booking-story.png), it keeps what the source frame shows of the room, with nothing generated, added or removed beyond a crop.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/booking-story/H021` If verda_studio_frame_01.jpg is used on “Studio booking story” (booking-story.png), its blown-out front window shows no invented sky, street or scenery: it stays plain or is cropped out.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/booking-story/H022` If a supplied instructor portrait (verda_instructor_01.jpg to verda_instructor_06.jpg) appears on “Studio booking story” (booking-story.png), the face keeps that portrait's features, with nothing reshaped or regenerated.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/booking-story/H023` If verda_instructor_01.jpg appears on “Studio booking story” (booking-story.png), any name beside it is Priya Anand, per roster_2027.csv.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/booking-story/H024` If verda_instructor_04.jpg appears on “Studio booking story” (booking-story.png), it shows no pixelation, softness or generated detail from being enlarged.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/booking-story/H025` The studio wordmark on “Studio booking story” (booking-story.png) keeps the e, d and a counters of verda_wordmark_transparent.png open; none is filled in.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/booking-story/H026` No white square, box or halo shows around the studio wordmark on “Studio booking story” (booking-story.png); the ground meets the letters directly.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/booking-story/H027` The studio wordmark on “Studio booking story” (booking-story.png) has clean letter edges, with no grey fringe or blocky compression ring; normal edge anti-aliasing is fine.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/booking-story/H028` The studio wordmark on “Studio booking story” (booking-story.png) sits on one line, never stacked onto two.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/booking-story/H029` The studio wordmark's visible letterforms on “Studio booking story” (booking-story.png) are no more than 34 px tall.
+  Measure: In an image editor at 100% zoom, measure in pixels from the highest to the lowest point of the wordmark's visible letters.
 - `PHOTO-28/booking-story/H030` Type, panel, rule, button and icon colours on “Studio booking story” (booking-story.png) are only Sage #9CA98F, Oak #C7A97A, Warm Off White #F4F0E8 or Soft Ink #33352E, anti-aliased edges aside.
+  Measure: Eyedropper flat colour centres of type, panels, rules, buttons, icons; each must be within 5 per channel of (156,169,143), (199,169,122), (244,240,232) or (51,53,46).
 - `PHOTO-28/booking-story/H031` Warm Off White #F4F0E8 appears in the designed parts of “Studio booking story” (booking-story.png).
+  Measure: Eyedropper the main ground, a light panel or reversed type; at least one sample is within 5 of #F4F0E8 (244, 240, 232).
 - `PHOTO-28/booking-story/H032` All type, the wordmark and every ground, panel, button, rule and icon on “Studio booking story” (booking-story.png) are flat, solid colour, with no gradient, drop shadow or anything showing through.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/booking-story/H033` Every ground, panel and button on “Studio booking story” (booking-story.png) is Warm Off White #F4F0E8 or Sage #9CA98F, never Soft Ink or Oak.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-28/booking-story/H034` On “Studio booking story” (booking-story.png), all type on Warm Off White #F4F0E8 is Soft Ink #33352E; only short labels, like the passcard_2025_print.pdf field labels, may be Sage.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-28/booking-story/H035` Oak #C7A97A on “Studio booking story” (booking-story.png) appears only as thin hairline rules or dividers, never as a ground, panel, button, text or fill.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-28/booking-story/H036` The headline on “Studio booking story” (booking-story.png) is set in Archivo Regular, not bold, condensed or a serif.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/booking-story/H037` Any body text on “Studio booking story” (booking-story.png) is set in Inter Regular, not a serif and not a bolder weight.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/booking-story/H038` Any price or fine-print line on “Studio booking story” (booking-story.png) is set in Inter Medium, not Regular.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/booking-story/H039` Every line of designed type on “Studio booking story” (booking-story.png), labels and buttons included, is Archivo Regular, Inter Regular or Inter Medium; only the wordmark drawing differs.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/booking-story/H040` No line of body text on “Studio booking story” (booking-story.png) runs longer than 65 characters.
+  Measure: Find the longest line of body text and count its characters, spaces and punctuation included.
 - `PHOTO-28/booking-story/H041` The copy on “Studio booking story” (booking-story.png) has no discount or urgency wording, such as sale, % off, limited time or hurry.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/studio-launch/H004` The launch headline on “Studio launch-page composition” (studio-launch.png) is set in Archivo Regular, not bold, condensed or a serif.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/studio-launch/H006` “Studio launch-page composition” (studio-launch.png) lists exactly six classes, each once: Foundations, Flow, Core & Restore, Strength, Prenatal and Slow & Deep.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/studio-launch/H007` Every class in the class offer on “Studio launch-page composition” (studio-launch.png) is written with its client-facing name, such as “Core & Restore”, never an internal code such as “RF-COR”.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/studio-launch/H008` “Studio launch-page composition” (studio-launch.png) does not name “Erin Coyle” or give erin@verdastudio.example; she has left the studio, and naming her makes it unusable.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/studio-launch/H009` “Studio launch-page composition” (studio-launch.png) states no opening date or month: September and October have both slipped, and no new date is fixed.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/studio-launch/H010` “Studio launch-page composition” (studio-launch.png) gives no class day, time or timetable, since no supplied file states one.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/studio-launch/H011` Every price on “Studio launch-page composition” (studio-launch.png) is a supplied figure: a class price from roster_2027.csv, the 180 dollar intro pack or the 220 dollar membership.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/studio-launch/H012` Any validity given on “Studio launch-page composition” (studio-launch.png) reads through Dec 2027, as in roster_2027.csv, never last year's through Dec 2025.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/studio-launch/H013` Any instructor named on “Studio launch-page composition” (studio-launch.png) is named in full, first and last name, spelled exactly as in owner_note.txt.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/studio-launch/H014` If Priya Anand is named on “Studio launch-page composition” (studio-launch.png), any class beside that name is Foundations, as owner_note.txt gives.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/studio-launch/H015` The booking action on “Studio launch-page composition” (studio-launch.png) invents no web address, phone number or social handle; any contact it gives is a supplied verdastudio.example address.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/studio-launch/H016` Any person pictured on “Studio launch-page composition” (studio-launch.png) has natural skin, with no orange cast.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/studio-launch/H017` No photograph on “Studio launch-page composition” (studio-launch.png) shows a black rubber floor.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/studio-launch/H018` No photograph on “Studio launch-page composition” (studio-launch.png) shows a group class or more than one person exercising.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/studio-launch/H019` “Studio launch-page composition” (studio-launch.png) shows the studio's own room in at least one photograph built from verda_studio_frame_01.jpg or verda_studio_frame_02.jpg.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/studio-launch/H020` Wherever verda_studio_frame_01.jpg or verda_studio_frame_02.jpg appears on “Studio launch-page composition” (studio-launch.png), the reformer upholstery reads sage green, not blue or grey.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/studio-launch/H021` Wherever verda_studio_frame_01.jpg or verda_studio_frame_02.jpg appears on “Studio launch-page composition” (studio-launch.png), it keeps what the source frame shows of the room, with nothing generated, added or removed beyond a crop.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/studio-launch/H022` If verda_studio_frame_01.jpg is used on “Studio launch-page composition” (studio-launch.png), its blown-out front window shows no invented sky, street or scenery: it stays plain or is cropped out.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/studio-launch/H023` If a supplied instructor portrait (verda_instructor_01.jpg to verda_instructor_06.jpg) appears on “Studio launch-page composition” (studio-launch.png), the face keeps that portrait's features, with nothing reshaped or regenerated.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/studio-launch/H024` If verda_instructor_01.jpg appears on “Studio launch-page composition” (studio-launch.png), any name beside it is Priya Anand, per roster_2027.csv.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/studio-launch/H025` If verda_instructor_04.jpg appears on “Studio launch-page composition” (studio-launch.png), it shows no pixelation, softness or generated detail from being enlarged.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/studio-launch/H026` The studio wordmark on “Studio launch-page composition” (studio-launch.png) is the verda_wordmark_transparent.png drawing, not retyped in another font.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/studio-launch/H027` The studio wordmark on “Studio launch-page composition” (studio-launch.png) keeps the e, d and a counters of verda_wordmark_transparent.png open; none is filled in.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/studio-launch/H028` No white square, box or halo shows around the studio wordmark on “Studio launch-page composition” (studio-launch.png); the ground meets the letters directly.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/studio-launch/H029` The studio wordmark on “Studio launch-page composition” (studio-launch.png) has clean letter edges, with no grey fringe or blocky compression ring; normal edge anti-aliasing is fine.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/studio-launch/H030` The studio wordmark on “Studio launch-page composition” (studio-launch.png) sits on one line, never stacked onto two.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/studio-launch/H031` The studio wordmark's visible letterforms on “Studio launch-page composition” (studio-launch.png) are no more than 34 px tall.
+  Measure: In an image editor at 100% zoom, measure in pixels from the highest to the lowest point of the wordmark's visible letters.
 - `PHOTO-28/studio-launch/H032` The studio wordmark on “Studio launch-page composition” (studio-launch.png) sits above the launch headline as its own lockup, separate from it.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/studio-launch/H033` Type, panel, rule, button and icon colours on “Studio launch-page composition” (studio-launch.png) are only Sage #9CA98F, Oak #C7A97A, Warm Off White #F4F0E8 or Soft Ink #33352E, anti-aliased edges aside.
+  Measure: Eyedropper flat colour centres of type, panels, rules, buttons, icons; each must be within 5 per channel of (156,169,143), (199,169,122), (244,240,232) or (51,53,46).
 - `PHOTO-28/studio-launch/H034` Warm Off White #F4F0E8 appears in the designed parts of “Studio launch-page composition” (studio-launch.png).
+  Measure: Eyedropper the main ground, a light panel or reversed type; at least one sample is within 5 of #F4F0E8 (244, 240, 232).
 - `PHOTO-28/studio-launch/H035` All type, the wordmark and every ground, panel, button, rule and icon on “Studio launch-page composition” (studio-launch.png) are flat, solid colour, with no gradient, drop shadow or anything showing through.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/studio-launch/H036` Every ground, panel and button on “Studio launch-page composition” (studio-launch.png) is Warm Off White #F4F0E8 or Sage #9CA98F, never Soft Ink or Oak.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-28/studio-launch/H037` On “Studio launch-page composition” (studio-launch.png), all type on Warm Off White #F4F0E8 is Soft Ink #33352E; only short labels, like the passcard_2025_print.pdf field labels, may be Sage.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-28/studio-launch/H038` Oak #C7A97A on “Studio launch-page composition” (studio-launch.png) appears only as thin hairline rules or dividers, never as a ground, panel, button, text or fill.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-28/studio-launch/H039` Any body text on “Studio launch-page composition” (studio-launch.png) is set in Inter Regular, not a serif and not a bolder weight.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/studio-launch/H040` Every class price and every other fine-print line on “Studio launch-page composition” (studio-launch.png) is set in Inter Medium, not Regular.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/studio-launch/H041` Every line of designed type on “Studio launch-page composition” (studio-launch.png), labels and buttons included, is Archivo Regular, Inter Regular or Inter Medium; only the wordmark drawing differs.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/studio-launch/H042` No line of body text on “Studio launch-page composition” (studio-launch.png) runs longer than 65 characters.
+  Measure: Find the longest line of body text and count its characters, spaces and punctuation included.
 - `PHOTO-28/studio-launch/H043` The copy on “Studio launch-page composition” (studio-launch.png) has no discount or urgency wording, such as sale, % off, limited time or hurry.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/studio-launch/H044` The largest text on “Studio launch-page composition” (studio-launch.png) is the launch headline.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/studio-launch/H057` No type or wordmark on “Studio launch-page composition” (studio-launch.png) sits directly on a photograph; it sits on a solid Warm Off White or Sage panel.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/studio-launch/H058` No scrim, gradient or overlay of any colour, black or white included, is laid over a photograph on “Studio launch-page composition” (studio-launch.png).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/studio-launch/H059` Any type on a Sage #9CA98F ground or panel on “Studio launch-page composition” (studio-launch.png) is Soft Ink #33352E or Warm Off White #F4F0E8.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-28/studio-launch/H060` Wherever verda_studio_frame_01.jpg or verda_studio_frame_02.jpg appears on “Studio launch-page composition” (studio-launch.png), the floor reads natural oak, not orange.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/studio-launch/H061` Wherever verda_studio_frame_01.jpg or verda_studio_frame_02.jpg appears on “Studio launch-page composition” (studio-launch.png), the room reads lit by one soft daylight, with no cool blue and warm orange areas side by side.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/studio-launch/H062` Wherever verda_studio_frame_01.jpg or verda_studio_frame_02.jpg appears on “Studio launch-page composition” (studio-launch.png), the room is visibly brighter than the dusky source frame, not left dark.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/studio-launch/H063` Every studio interior shown on “Studio launch-page composition” (studio-launch.png) comes from verda_studio_frame_01.jpg or verda_studio_frame_02.jpg, not a stock or generated room.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/class-feed/H056` No type or wordmark on “Class announcement” (class-feed.png) sits directly on a photograph; it sits on a solid Warm Off White or Sage panel.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/class-feed/H057` No scrim, gradient or overlay of any colour, black or white included, is laid over a photograph on “Class announcement” (class-feed.png).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/class-feed/H058` Any type on a Sage #9CA98F ground or panel on “Class announcement” (class-feed.png) is Soft Ink #33352E or Warm Off White #F4F0E8.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-28/class-feed/H059` Wherever verda_studio_frame_01.jpg or verda_studio_frame_02.jpg appears on “Class announcement” (class-feed.png), the floor reads natural oak, not orange.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/class-feed/H060` Wherever verda_studio_frame_01.jpg or verda_studio_frame_02.jpg appears on “Class announcement” (class-feed.png), the room reads lit by one soft daylight, with no cool blue and warm orange areas side by side.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/class-feed/H061` Wherever verda_studio_frame_01.jpg or verda_studio_frame_02.jpg appears on “Class announcement” (class-feed.png), the room is visibly brighter than the dusky source frame, not left dark.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/class-feed/H062` Every studio interior shown on “Class announcement” (class-feed.png) comes from verda_studio_frame_01.jpg or verda_studio_frame_02.jpg, not a stock or generated room.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/booking-story/H054` No type or wordmark on “Studio booking story” (booking-story.png) sits directly on a photograph; it sits on a solid Warm Off White or Sage panel.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/booking-story/H055` No scrim, gradient or overlay of any colour, black or white included, is laid over a photograph on “Studio booking story” (booking-story.png).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/booking-story/H056` Any type on a Sage #9CA98F ground or panel on “Studio booking story” (booking-story.png) is Soft Ink #33352E or Warm Off White #F4F0E8.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-28/booking-story/H057` Wherever verda_studio_frame_01.jpg or verda_studio_frame_02.jpg appears on “Studio booking story” (booking-story.png), the floor reads natural oak, not orange.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/booking-story/H058` Wherever verda_studio_frame_01.jpg or verda_studio_frame_02.jpg appears on “Studio booking story” (booking-story.png), the room reads lit by one soft daylight, with no cool blue and warm orange areas side by side.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/booking-story/H059` Wherever verda_studio_frame_01.jpg or verda_studio_frame_02.jpg appears on “Studio booking story” (booking-story.png), the room is visibly brighter than the dusky source frame, not left dark.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/booking-story/H060` Every studio interior shown on “Studio booking story” (booking-story.png) comes from verda_studio_frame_01.jpg or verda_studio_frame_02.jpg, not a stock or generated room.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/studio-launch/H064` If a secondary heading appears on “Studio launch-page composition” (studio-launch.png), it is set in Archivo Regular, not bold, condensed or a serif.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/studio-launch/H065` “Studio launch-page composition” (studio-launch.png) shows a booking action: a button or line telling the viewer how to book.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/class-feed/H063` No part of the source portrait's original wall or background shows behind the cut-out instructor on “Class announcement” (class-feed.png).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/booking-story/H061` “Studio booking story” (booking-story.png) shows a booking action: a button or line telling the viewer how to book.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/studio-launch/H066` Wherever verda_studio_frame_01.jpg or verda_studio_frame_02.jpg appears on “Studio launch-page composition” (studio-launch.png), the photo is not tinted toward the palette; upholstery and floor are not flattened to Sage #9CA98F or Oak #C7A97A.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-28/class-feed/H064` Wherever verda_studio_frame_01.jpg or verda_studio_frame_02.jpg appears on “Class announcement” (class-feed.png), the photo is not tinted toward the palette; upholstery and floor are not flattened to Sage #9CA98F or Oak #C7A97A.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-28/booking-story/H062` Wherever verda_studio_frame_01.jpg or verda_studio_frame_02.jpg appears on “Studio booking story” (booking-story.png), the photo is not tinted toward the palette; upholstery and floor are not flattened to Sage #9CA98F or Oak #C7A97A.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-28/class-feed/H065` The studio wordmark on “Class announcement” (class-feed.png) sits above the headline.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/booking-story/H063` The studio wordmark on “Studio booking story” (booking-story.png) sits above the headline.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/studio-launch/H067` If an instructor cut-out appears on “Studio launch-page composition” (studio-launch.png), no part of the figure's hair, shoulders or arms is cut away along its edge.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/studio-launch/H068` If an instructor cut-out appears on “Studio launch-page composition” (studio-launch.png), its edge shows no halo or fringe of the original wall.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/booking-story/H064` If an instructor cut-out appears on “Studio booking story” (booking-story.png), no part of the figure's hair, shoulders or arms is cut away along its edge.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/booking-story/H065` If an instructor cut-out appears on “Studio booking story” (booking-story.png), its edge shows no halo or fringe of the original wall.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/studio-launch/H069` The copy on “Studio launch-page composition” (studio-launch.png) has no exclamation mark.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/class-feed/H066` The copy on “Class announcement” (class-feed.png) has no exclamation mark.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/booking-story/H066` The copy on “Studio booking story” (booking-story.png) has no exclamation mark.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/studio-launch/H070` The six classes and their prices on “Studio launch-page composition” (studio-launch.png) sit together in one block, not split across separate parts of the page.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/class-feed/H067` No part of the instructor's hair, shoulders or arms is cut away along the cut-out edge on “Class announcement” (class-feed.png).
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/studio-launch/H071` The studio wordmark on “Studio launch-page composition” (studio-launch.png) is not stretched or squashed: its visible letters are 3.1 to 3.45 times as wide as they are tall, as in verda_wordmark_transparent.png.
+  Measure: Measure the width and height of the wordmark's visible letters in pixels; width divided by height must be 3.1 to 3.45 (source 1109 x 340).
 - `PHOTO-28/class-feed/H068` The studio wordmark on “Class announcement” (class-feed.png) is not stretched or squashed: its visible letters are 3.1 to 3.45 times as wide as they are tall, as in verda_wordmark_transparent.png.
+  Measure: Measure the width and height of the wordmark's visible letters in pixels; width divided by height must be 3.1 to 3.45 (source 1109 x 340).
 - `PHOTO-28/booking-story/H067` The studio wordmark on “Studio booking story” (booking-story.png) is not stretched or squashed: its visible letters are 3.1 to 3.45 times as wide as they are tall, as in verda_wordmark_transparent.png.
+  Measure: Measure the width and height of the wordmark's visible letters in pixels; width divided by height must be 3.1 to 3.45 (source 1109 x 340).
 - `PHOTO-28/studio-launch/H072` Foundations is priced $34 on “Studio launch-page composition” (studio-launch.png), as roster_2027.csv gives for RF-FND.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/studio-launch/H073` Flow is priced $36 on “Studio launch-page composition” (studio-launch.png), as roster_2027.csv gives for RF-FLW.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/studio-launch/H074` Core & Restore is priced $34 on “Studio launch-page composition” (studio-launch.png), as roster_2027.csv gives for RF-COR.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/studio-launch/H075` Strength is priced $38 on “Studio launch-page composition” (studio-launch.png), as roster_2027.csv gives for RF-ATH.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/studio-launch/H076` Prenatal is priced $36 on “Studio launch-page composition” (studio-launch.png), as roster_2027.csv gives for RF-PRE.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/studio-launch/H077` Slow & Deep is priced $34 on “Studio launch-page composition” (studio-launch.png), as roster_2027.csv gives for RF-SLW.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/booking-story/H068` Any price given for Flow or Prenatal on “Studio booking story” (booking-story.png) is $36, as roster_2027.csv gives for RF-FLW and RF-PRE.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/booking-story/H069` Any price given for Strength on “Studio booking story” (booking-story.png) is $38, as roster_2027.csv gives for RF-ATH.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/class-feed/H069` If the pictured instructor on “Class announcement” (class-feed.png) is Dana Osei or Yuki Sato, the class price reads $36, as in roster_2027.csv.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/class-feed/H070` If the pictured instructor on “Class announcement” (class-feed.png) is Tomas Reyes, the class price reads $38, as in roster_2027.csv.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/class-feed/H071` The instructor cut-out on “Class announcement” (class-feed.png) sits on a solid Warm Off White #F4F0E8 or Sage #9CA98F ground.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-28/studio-launch/H078` Oak #C7A97A covers no more than 5% of the designed, non-photographic area on “Studio launch-page composition” (studio-launch.png).
-- `PHOTO-28/studio-launch/H079` The d stem of the studio wordmark on “Studio launch-page composition” (studio-launch.png) samples as solid #222724 (the verda_wordmark_transparent.png ink as placed), Soft Ink #33352E or Warm Off White #F4F0E8.
+  Measure: Measure, do not estimate. On a measurement copy, mask the named area; exclude photographs and transparent canvas. Count the selected accent-colour pixels and divide by all pixels in that mask. Include text unless the condition excludes it. Test each PDF page or held video frame separately. Yes only when the unrounded percentage is at or below the stated limit. Use the linked measurement guide for rasterisation and colour matching. Each RGB channel must be within 5 of a selected palette colour.
+- `PHOTO-28/studio-launch/H079` On Warm Off White in studio-launch.png, the wordmark ink is #222724 or Soft Ink #33352E.
+  Measure: If the named ground is absent, this conditional requirement passes. Otherwise sample the middle of the d stem. Each RGB channel must be within 4 of one colour stated in this check; do not sample anti-aliased edges.
 - `PHOTO-28/class-feed/H072` Oak #C7A97A covers no more than 5% of the designed, non-photographic area on “Class announcement” (class-feed.png).
-- `PHOTO-28/class-feed/H073` The d stem of the studio wordmark on “Class announcement” (class-feed.png) samples as solid #222724 (the verda_wordmark_transparent.png ink as placed), Soft Ink #33352E or Warm Off White #F4F0E8.
+  Measure: Measure, do not estimate. On a measurement copy, mask the named area; exclude photographs and transparent canvas. Count the selected accent-colour pixels and divide by all pixels in that mask. Include text unless the condition excludes it. Test each PDF page or held video frame separately. Yes only when the unrounded percentage is at or below the stated limit. Use the linked measurement guide for rasterisation and colour matching. Each RGB channel must be within 5 of a selected palette colour.
+- `PHOTO-28/class-feed/H073` On Warm Off White in class-feed.png, the wordmark ink is #222724 or Soft Ink #33352E.
+  Measure: If the named ground is absent, this conditional requirement passes. Otherwise sample the middle of the d stem. Each RGB channel must be within 4 of one colour stated in this check; do not sample anti-aliased edges.
 - `PHOTO-28/booking-story/H070` Oak #C7A97A covers no more than 5% of the designed, non-photographic area on “Studio booking story” (booking-story.png).
-- `PHOTO-28/booking-story/H071` The d stem of the studio wordmark on “Studio booking story” (booking-story.png) samples as solid #222724 (the verda_wordmark_transparent.png ink as placed), Soft Ink #33352E or Warm Off White #F4F0E8.
+  Measure: Measure, do not estimate. On a measurement copy, mask the named area; exclude photographs and transparent canvas. Count the selected accent-colour pixels and divide by all pixels in that mask. Include text unless the condition excludes it. Test each PDF page or held video frame separately. Yes only when the unrounded percentage is at or below the stated limit. Use the linked measurement guide for rasterisation and colour matching. Each RGB channel must be within 5 of a selected palette colour.
+- `PHOTO-28/booking-story/H071` On Warm Off White in booking-story.png, the wordmark ink is #222724 or Soft Ink #33352E.
+  Measure: If the named ground is absent, this conditional requirement passes. Otherwise sample the middle of the d stem. Each RGB channel must be within 4 of one colour stated in this check; do not sample anti-aliased edges.
 - `PHOTO-28/studio-launch/H080` If an instructor cut-out appears on “Studio launch-page composition” (studio-launch.png), it sits on a solid Warm Off White #F4F0E8 or Sage #9CA98F ground, not on a photograph.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-28/booking-story/H072` If an instructor cut-out appears on “Studio booking story” (booking-story.png), it sits on a solid Warm Off White #F4F0E8 or Sage #9CA98F ground, not on a photograph.
+  Measure: Sample flat colour interiors, not anti-aliased edges, in an image or PDF editor. Compare with the stated hex values in sRGB; convert CMYK objects through their embedded profile first. A sample matches a stated hex when R, G and B are each within 5 of it.
 - `PHOTO-28/studio-launch/H081` Soft Ink #33352E appears in the type on “Studio launch-page composition” (studio-launch.png).
+  Measure: Eyedropper the middle of thick dark type strokes, such as the headline; at least one sample is within 5 of #33352E (51, 53, 46).
 - `PHOTO-28/class-feed/H074` Soft Ink #33352E appears in the type on “Class announcement” (class-feed.png).
+  Measure: Eyedropper the middle of thick dark type strokes, such as the headline; at least one sample is within 5 of #33352E (51, 53, 46).
 - `PHOTO-28/booking-story/H073` Soft Ink #33352E appears in the type on “Studio booking story” (booking-story.png).
+  Measure: Eyedropper the middle of thick dark type strokes, such as the headline; at least one sample is within 5 of #33352E (51, 53, 46).
 - `PHOTO-28/studio-launch/H082` If Dana Osei is named on “Studio launch-page composition” (studio-launch.png), any class beside that name is Flow, as owner_note.txt gives.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/studio-launch/H083` If verda_instructor_02.jpg appears on “Studio launch-page composition” (studio-launch.png), any name beside it is Dana Osei, per roster_2027.csv.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/studio-launch/H084` If Lena Brandt is named on “Studio launch-page composition” (studio-launch.png), any class beside that name is Core & Restore, as owner_note.txt gives.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/studio-launch/H085` If verda_instructor_03.jpg appears on “Studio launch-page composition” (studio-launch.png), any name beside it is Lena Brandt, per roster_2027.csv.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/studio-launch/H086` If Tomas Reyes is named on “Studio launch-page composition” (studio-launch.png), any class beside that name is Strength, as owner_note.txt gives.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/studio-launch/H087` If verda_instructor_04.jpg appears on “Studio launch-page composition” (studio-launch.png), any name beside it is Tomas Reyes, per roster_2027.csv.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/studio-launch/H088` If Yuki Sato is named on “Studio launch-page composition” (studio-launch.png), any class beside that name is Prenatal, as owner_note.txt gives.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/studio-launch/H089` If verda_instructor_05.jpg appears on “Studio launch-page composition” (studio-launch.png), any name beside it is Yuki Sato, per roster_2027.csv.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/studio-launch/H090` If Nadia Haddad is named on “Studio launch-page composition” (studio-launch.png), any class beside that name is Slow & Deep, as owner_note.txt gives.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/studio-launch/H091` If verda_instructor_06.jpg appears on “Studio launch-page composition” (studio-launch.png), any name beside it is Nadia Haddad, per roster_2027.csv.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/booking-story/H074` If Dana Osei is named on “Studio booking story” (booking-story.png), any class beside that name is Flow, as owner_note.txt gives.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/booking-story/H075` If verda_instructor_02.jpg appears on “Studio booking story” (booking-story.png), any name beside it is Dana Osei, per roster_2027.csv.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/booking-story/H076` If Lena Brandt is named on “Studio booking story” (booking-story.png), any class beside that name is Core & Restore, as owner_note.txt gives.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/booking-story/H077` If verda_instructor_03.jpg appears on “Studio booking story” (booking-story.png), any name beside it is Lena Brandt, per roster_2027.csv.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/booking-story/H078` If Tomas Reyes is named on “Studio booking story” (booking-story.png), any class beside that name is Strength, as owner_note.txt gives.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/booking-story/H079` If verda_instructor_04.jpg appears on “Studio booking story” (booking-story.png), any name beside it is Tomas Reyes, per roster_2027.csv.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/booking-story/H080` If Yuki Sato is named on “Studio booking story” (booking-story.png), any class beside that name is Prenatal, as owner_note.txt gives.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/booking-story/H081` If verda_instructor_05.jpg appears on “Studio booking story” (booking-story.png), any name beside it is Yuki Sato, per roster_2027.csv.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/booking-story/H082` If Nadia Haddad is named on “Studio booking story” (booking-story.png), any class beside that name is Slow & Deep, as owner_note.txt gives.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/booking-story/H083` If verda_instructor_06.jpg appears on “Studio booking story” (booking-story.png), any name beside it is Nadia Haddad, per roster_2027.csv.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/class-feed/H075` If the pictured instructor on “Class announcement” (class-feed.png) is Dana Osei, the class named is Flow, as owner_note.txt gives.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/class-feed/H076` If verda_instructor_02.jpg is pictured on “Class announcement” (class-feed.png), the name given is Dana Osei, per roster_2027.csv.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/class-feed/H077` If the pictured instructor on “Class announcement” (class-feed.png) is Lena Brandt, the class named is Core & Restore, as owner_note.txt gives.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/class-feed/H078` If verda_instructor_03.jpg is pictured on “Class announcement” (class-feed.png), the name given is Lena Brandt, per roster_2027.csv.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/class-feed/H079` If the pictured instructor on “Class announcement” (class-feed.png) is Tomas Reyes, the class named is Strength, as owner_note.txt gives.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/class-feed/H080` If verda_instructor_04.jpg is pictured on “Class announcement” (class-feed.png), the name given is Tomas Reyes, per roster_2027.csv.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/class-feed/H081` If the pictured instructor on “Class announcement” (class-feed.png) is Yuki Sato, the class named is Prenatal, as owner_note.txt gives.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/class-feed/H082` If verda_instructor_05.jpg is pictured on “Class announcement” (class-feed.png), the name given is Yuki Sato, per roster_2027.csv.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/class-feed/H083` If the pictured instructor on “Class announcement” (class-feed.png) is Nadia Haddad, the class named is Slow & Deep, as owner_note.txt gives.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/class-feed/H084` If verda_instructor_06.jpg is pictured on “Class announcement” (class-feed.png), the name given is Nadia Haddad, per roster_2027.csv.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/studio-launch/H092` The gaps between the letters of the studio wordmark on “Studio launch-page composition” (studio-launch.png) match verda_wordmark_transparent.png, with no letters moved closer or further apart.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/class-feed/H085` The gaps between the letters of the studio wordmark on “Class announcement” (class-feed.png) match verda_wordmark_transparent.png, with no letters moved closer or further apart.
+  Look: Inspect the named output against this requirement and its linked references.
 - `PHOTO-28/booking-story/H084` The gaps between the letters of the studio wordmark on “Studio booking story” (booking-story.png) match verda_wordmark_transparent.png, with no letters moved closer or further apart.
+  Look: Inspect the named output against this requirement and its linked references.
+- `PHOTO-28/studio-launch/H093` On Sage in studio-launch.png, the wordmark ink is #222724, Soft Ink #33352E or Warm Off White #F4F0E8.
+  Measure: If the named ground is absent, this conditional requirement passes. Otherwise sample the middle of the d stem. Each RGB channel must be within 4 of one colour stated in this check; do not sample anti-aliased edges.
+- `PHOTO-28/class-feed/H086` On Sage in class-feed.png, the wordmark ink is #222724, Soft Ink #33352E or Warm Off White #F4F0E8.
+  Measure: If the named ground is absent, this conditional requirement passes. Otherwise sample the middle of the d stem. Each RGB channel must be within 4 of one colour stated in this check; do not sample anti-aliased edges.
+- `PHOTO-28/booking-story/H085` On Sage in booking-story.png, the wordmark ink is #222724, Soft Ink #33352E or Warm Off White #F4F0E8.
+  Measure: If the named ground is absent, this conditional requirement passes. Otherwise sample the middle of the d stem. Each RGB channel must be within 4 of one colour stated in this check; do not sample anti-aliased edges.

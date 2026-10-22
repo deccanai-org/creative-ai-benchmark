@@ -44,6 +44,7 @@ File: `deliverables/promoter-deck.pdf`
 - Specification: {"format": "pdf", "width_mm": 338.667, "height_mm": 190.5, "pages": 6}
 - Present all three directions and identify which one is used for the release posts.
 - Chart the six monthly average-draw values from umbra_room_specs.txt, with clear month labels and a truthful numerical scale.
+- Label every monthly draw-chart value with its exact number from umbra_room_specs.txt; do not rely only on bar height.
 - Export: Digital PDF in sRGB with embedded fonts, searchable text where practical, no crop marks and no added bleed; retain the exact page size and page count. This file is for screen review/distribution, not a CMYK press master.
 
 ## Night release post - 2026-09-25

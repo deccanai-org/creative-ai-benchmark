@@ -3020,8 +3020,13 @@
     "type": "human",
     "output_reference": "deliverables/studio-launch.png",
     "check": "Oak #C7A97A covers no more than 5% of the designed, non-photographic area on “Studio launch-page composition” (studio-launch.png).",
-    "method": "estimate",
-    "method_note": "Estimate the share of the designed, non-photographic area drawn in Oak; answer No only if it is clearly over 5%.",
+    "method": "measure",
+    "method_note": "Measure, do not estimate. On a measurement copy, mask the named area; exclude photographs and transparent canvas. Count the selected accent-colour pixels and divide by all pixels in that mask. Include text unless the condition excludes it. Test each PDF page or held video frame separately. Yes only when the unrounded percentage is at or below the stated limit. Use the linked measurement guide for rasterisation and colour matching. Each RGB channel must be within 5 of a selected palette colour.",
+    "measurement": {
+      "kind": "area_ratio",
+      "channel_tolerance": 5,
+      "max_percent": 5
+    },
     "reference_assets": []
   },
   {
@@ -3029,9 +3034,9 @@
     "output_id": "studio-launch",
     "type": "human",
     "output_reference": "deliverables/studio-launch.png",
-    "check": "The d stem of the studio wordmark on “Studio launch-page composition” (studio-launch.png) samples as solid #222724 (the verda_wordmark_transparent.png ink as placed), Soft Ink #33352E or Warm Off White #F4F0E8.",
+    "check": "On Warm Off White in studio-launch.png, the wordmark ink is #222724 or Soft Ink #33352E.",
     "method": "measure",
-    "method_note": "In an image editor, eyedropper the middle of the d's thick upright stroke; each RGB value is within 4 of (34,39,36), (51,53,46) or (244,240,232).",
+    "method_note": "If the named ground is absent, this conditional requirement passes. Otherwise sample the middle of the d stem. Each RGB channel must be within 4 of one colour stated in this check; do not sample anti-aliased edges.",
     "reference_assets": [
       {
         "filename": "passcard_2025_print.pdf",
@@ -3049,8 +3054,13 @@
     "type": "human",
     "output_reference": "deliverables/class-feed.png",
     "check": "Oak #C7A97A covers no more than 5% of the designed, non-photographic area on “Class announcement” (class-feed.png).",
-    "method": "estimate",
-    "method_note": "Estimate the share of the designed, non-photographic area drawn in Oak; answer No only if it is clearly over 5%.",
+    "method": "measure",
+    "method_note": "Measure, do not estimate. On a measurement copy, mask the named area; exclude photographs and transparent canvas. Count the selected accent-colour pixels and divide by all pixels in that mask. Include text unless the condition excludes it. Test each PDF page or held video frame separately. Yes only when the unrounded percentage is at or below the stated limit. Use the linked measurement guide for rasterisation and colour matching. Each RGB channel must be within 5 of a selected palette colour.",
+    "measurement": {
+      "kind": "area_ratio",
+      "channel_tolerance": 5,
+      "max_percent": 5
+    },
     "reference_assets": []
   },
   {
@@ -3058,9 +3068,9 @@
     "output_id": "class-feed",
     "type": "human",
     "output_reference": "deliverables/class-feed.png",
-    "check": "The d stem of the studio wordmark on “Class announcement” (class-feed.png) samples as solid #222724 (the verda_wordmark_transparent.png ink as placed), Soft Ink #33352E or Warm Off White #F4F0E8.",
+    "check": "On Warm Off White in class-feed.png, the wordmark ink is #222724 or Soft Ink #33352E.",
     "method": "measure",
-    "method_note": "In an image editor, eyedropper the middle of the d's thick upright stroke; each RGB value is within 4 of (34,39,36), (51,53,46) or (244,240,232).",
+    "method_note": "If the named ground is absent, this conditional requirement passes. Otherwise sample the middle of the d stem. Each RGB channel must be within 4 of one colour stated in this check; do not sample anti-aliased edges.",
     "reference_assets": [
       {
         "filename": "passcard_2025_print.pdf",
@@ -3078,8 +3088,13 @@
     "type": "human",
     "output_reference": "deliverables/booking-story.png",
     "check": "Oak #C7A97A covers no more than 5% of the designed, non-photographic area on “Studio booking story” (booking-story.png).",
-    "method": "estimate",
-    "method_note": "Estimate the share of the designed, non-photographic area drawn in Oak; answer No only if it is clearly over 5%.",
+    "method": "measure",
+    "method_note": "Measure, do not estimate. On a measurement copy, mask the named area; exclude photographs and transparent canvas. Count the selected accent-colour pixels and divide by all pixels in that mask. Include text unless the condition excludes it. Test each PDF page or held video frame separately. Yes only when the unrounded percentage is at or below the stated limit. Use the linked measurement guide for rasterisation and colour matching. Each RGB channel must be within 5 of a selected palette colour.",
+    "measurement": {
+      "kind": "area_ratio",
+      "channel_tolerance": 5,
+      "max_percent": 5
+    },
     "reference_assets": []
   },
   {
@@ -3087,9 +3102,9 @@
     "output_id": "booking-story",
     "type": "human",
     "output_reference": "deliverables/booking-story.png",
-    "check": "The d stem of the studio wordmark on “Studio booking story” (booking-story.png) samples as solid #222724 (the verda_wordmark_transparent.png ink as placed), Soft Ink #33352E or Warm Off White #F4F0E8.",
+    "check": "On Warm Off White in booking-story.png, the wordmark ink is #222724 or Soft Ink #33352E.",
     "method": "measure",
-    "method_note": "In an image editor, eyedropper the middle of the d's thick upright stroke; each RGB value is within 4 of (34,39,36), (51,53,46) or (244,240,232).",
+    "method_note": "If the named ground is absent, this conditional requirement passes. Otherwise sample the middle of the d stem. Each RGB channel must be within 4 of one colour stated in this check; do not sample anti-aliased edges.",
     "reference_assets": [
       {
         "filename": "passcard_2025_print.pdf",
@@ -3760,6 +3775,63 @@
     "method": "look",
     "method_note": "Inspect the named output against this requirement and its linked references.",
     "reference_assets": [
+      {
+        "filename": "verda_wordmark_transparent.png",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-28/verda_wordmark_transparent.png"
+      }
+    ]
+  },
+  {
+    "check_id": "PHOTO-28/studio-launch/H093",
+    "output_id": "studio-launch",
+    "type": "human",
+    "output_reference": "deliverables/studio-launch.png",
+    "check": "On Sage in studio-launch.png, the wordmark ink is #222724, Soft Ink #33352E or Warm Off White #F4F0E8.",
+    "method": "measure",
+    "method_note": "If the named ground is absent, this conditional requirement passes. Otherwise sample the middle of the d stem. Each RGB channel must be within 4 of one colour stated in this check; do not sample anti-aliased edges.",
+    "reference_assets": [
+      {
+        "filename": "passcard_2025_print.pdf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/tasks/SB3-028-PHO__verda-reformer-studio-fitness-campaign-image-system/assets/passcard_2025_print.pdf"
+      },
+      {
+        "filename": "verda_wordmark_transparent.png",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-28/verda_wordmark_transparent.png"
+      }
+    ]
+  },
+  {
+    "check_id": "PHOTO-28/class-feed/H086",
+    "output_id": "class-feed",
+    "type": "human",
+    "output_reference": "deliverables/class-feed.png",
+    "check": "On Sage in class-feed.png, the wordmark ink is #222724, Soft Ink #33352E or Warm Off White #F4F0E8.",
+    "method": "measure",
+    "method_note": "If the named ground is absent, this conditional requirement passes. Otherwise sample the middle of the d stem. Each RGB channel must be within 4 of one colour stated in this check; do not sample anti-aliased edges.",
+    "reference_assets": [
+      {
+        "filename": "passcard_2025_print.pdf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/tasks/SB3-028-PHO__verda-reformer-studio-fitness-campaign-image-system/assets/passcard_2025_print.pdf"
+      },
+      {
+        "filename": "verda_wordmark_transparent.png",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-28/verda_wordmark_transparent.png"
+      }
+    ]
+  },
+  {
+    "check_id": "PHOTO-28/booking-story/H085",
+    "output_id": "booking-story",
+    "type": "human",
+    "output_reference": "deliverables/booking-story.png",
+    "check": "On Sage in booking-story.png, the wordmark ink is #222724, Soft Ink #33352E or Warm Off White #F4F0E8.",
+    "method": "measure",
+    "method_note": "If the named ground is absent, this conditional requirement passes. Otherwise sample the middle of the d stem. Each RGB channel must be within 4 of one colour stated in this check; do not sample anti-aliased edges.",
+    "reference_assets": [
+      {
+        "filename": "passcard_2025_print.pdf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/tasks/SB3-028-PHO__verda-reformer-studio-fitness-campaign-image-system/assets/passcard_2025_print.pdf"
+      },
       {
         "filename": "verda_wordmark_transparent.png",
         "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-28/verda_wordmark_transparent.png"

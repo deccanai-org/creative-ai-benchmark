@@ -12872,7 +12872,7 @@
    "check_id": "PHOTO-24/dealer-launch/H070",
    "type": "human",
    "output_reference": "deliverables/dealer-launch.pdf",
-   "check": "The Ardent dial and strap on “Watch dealer launch sheet” (dealer-launch.pdf) match their colour in lunara_pdp_ardent.jpg, with no recolouring.",
+   "check": "The Ardent dial on “Watch dealer launch sheet” (dealer-launch.pdf) matches its colour in lunara_pdp_ardent.jpg, with no recolouring.",
    "answer_type": "yes_no",
    "allowed_answers": [
     "Yes",
@@ -12885,20 +12885,21 @@
    "evidence_reference": "Brand identity, palette_rules.photography: \"the lacquered oxblood dial and strap in lunara_pdp_ardent.jpg are product colours\".",
    "artifact_name": "Watch dealer launch sheet",
    "artifact_file": "dealer-launch.pdf",
-   "requirement": "The Ardent dial and strap on “Watch dealer launch sheet” (dealer-launch.pdf) match their colour in lunara_pdp_ardent.jpg, with no recolouring.",
-   "pass_condition": "The Ardent dial and strap on “Watch dealer launch sheet” (dealer-launch.pdf) match their colour in lunara_pdp_ardent.jpg, with no recolouring.",
+   "requirement": "The Ardent dial on “Watch dealer launch sheet” (dealer-launch.pdf) matches its colour in lunara_pdp_ardent.jpg, with no recolouring.",
+   "pass_condition": "The Ardent dial on “Watch dealer launch sheet” (dealer-launch.pdf) matches its colour in lunara_pdp_ardent.jpg, with no recolouring.",
    "reference_assets": [
     {
      "filename": "lunara_pdp_ardent.jpg",
      "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/tasks/SB3-024-PHO__lunara-chronometry-autumn-watch-campaign/assets/lunara_pdp_ardent.jpg"
     }
    ],
-   "revision": "pilot13_ab_2026_10_21",
+   "revision": "pilot13_verifier_lock_2026_10_22",
    "origin": "pilot13_ab_2026_10_21",
    "k_id": "K2_Q3",
    "k_label": "Brand-system compliance",
    "method": "look",
-   "method_note": "Inspect the named output against this requirement and its linked references."
+   "method_note": "Inspect the named output against this requirement and its linked references.",
+   "split_from": "PHOTO-24/dealer-launch/H070"
   },
   {
    "task_id": "PHOTO-24",
@@ -14758,6 +14759,41 @@
    "k_label": "Specification accuracy",
    "method": "look",
    "method_note": "Inspect the named output against this requirement and its linked references."
+  },
+  {
+   "task_id": "PHOTO-24",
+   "output_id": "dealer-launch",
+   "check_id": "PHOTO-24/dealer-launch/H094",
+   "type": "human",
+   "output_reference": "deliverables/dealer-launch.pdf",
+   "check": "The Ardent strap on “Watch dealer launch sheet” (dealer-launch.pdf) matches its colour in lunara_pdp_ardent.jpg, with no recolouring.",
+   "answer_type": "yes_no",
+   "allowed_answers": [
+    "Yes",
+    "No"
+   ],
+   "pass_answer": "Yes",
+   "answer": null,
+   "status": "not_assessed",
+   "source_statement": "The Ardent dial and strap on “Watch dealer launch sheet” (dealer-launch.pdf) match their colour in lunara_pdp_ardent.jpg, with no recolouring.",
+   "evidence_reference": "Brand identity, palette_rules.photography: \"the lacquered oxblood dial and strap in lunara_pdp_ardent.jpg are product colours\".",
+   "artifact_name": "Watch dealer launch sheet",
+   "artifact_file": "dealer-launch.pdf",
+   "requirement": "The Ardent strap on “Watch dealer launch sheet” (dealer-launch.pdf) matches its colour in lunara_pdp_ardent.jpg, with no recolouring.",
+   "pass_condition": "The Ardent strap on “Watch dealer launch sheet” (dealer-launch.pdf) matches its colour in lunara_pdp_ardent.jpg, with no recolouring.",
+   "reference_assets": [
+    {
+     "filename": "lunara_pdp_ardent.jpg",
+     "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/tasks/SB3-024-PHO__lunara-chronometry-autumn-watch-campaign/assets/lunara_pdp_ardent.jpg"
+    }
+   ],
+   "revision": "pilot13_verifier_lock_2026_10_22",
+   "origin": "pilot13_ab_2026_10_21",
+   "k_id": "K2_Q3",
+   "k_label": "Brand-system compliance",
+   "method": "look",
+   "method_note": "Inspect the named output against this requirement and its linked references.",
+   "split_from": "PHOTO-24/dealer-launch/H070"
   }
  ],
  "evaluation": {
@@ -14765,7 +14801,500 @@
   "creative_review": "Subjective professional judgement is recorded separately and never changes an acceptance-verifier answer.",
   "process_evaluation_reference": "../../evaluation/rubric_catalog_v2.json",
   "process_scores_do_not_replace_output_acceptance": true,
-  "human_review_required": true
+  "human_review_required": true,
+  "objective_scoring_policy": "Score only the listed current Auto and Human verifiers. A design target marked \"Not scored\" in coverage remains a client instruction but is excluded from the score denominator: the requested delivery does not provide enough evidence to verify it. Do not infer a pass or failure. If a listed measurement cannot be completed, leave it unanswered and record the missing evidence; do not guess. Human answers remain Yes/No. Historical run results are not current scores.",
+  "unscored_design_targets": [
+   {
+    "rule_id": "T01S",
+    "output_id": "watch-keyvisual",
+    "reason": "Exact type size cannot be measured in a delivered PNG; 72 px is kept as a design target."
+   },
+   {
+    "rule_id": "T01S",
+    "output_id": "watch-feature-r002",
+    "reason": "Applies if a wordmark appears. Exact type size cannot be measured in a delivered PNG; 72 px is kept as a design target."
+   },
+   {
+    "rule_id": "T01S",
+    "output_id": "watch-feature-r003",
+    "reason": "Applies if a wordmark appears. Exact type size cannot be measured in a delivered PNG; 72 px is kept as a design target."
+   },
+   {
+    "rule_id": "T01S",
+    "output_id": "watch-feature-r004",
+    "reason": "Applies if a wordmark appears. Exact type size cannot be measured in a delivered PNG; 72 px is kept as a design target."
+   },
+   {
+    "rule_id": "T01S",
+    "output_id": "watch-feature-r005",
+    "reason": "Applies if a wordmark appears. Exact type size cannot be measured in a delivered PNG; 72 px is kept as a design target."
+   },
+   {
+    "rule_id": "T01S",
+    "output_id": "watch-feature-r006",
+    "reason": "Applies if a wordmark appears. Exact type size cannot be measured in a delivered PNG; 72 px is kept as a design target."
+   },
+   {
+    "rule_id": "T01L",
+    "output_id": "watch-keyvisual",
+    "reason": "Baseline-to-baseline leading cannot be measured reliably in a delivered PNG; 76 pixels between the stacked Lunara and Chronometry lines is kept as a design target."
+   },
+   {
+    "rule_id": "T01L",
+    "output_id": "watch-feature-r002",
+    "reason": "Applies if a wordmark appears. Baseline-to-baseline leading cannot be measured reliably in a delivered PNG; 76 pixels is kept as a design target."
+   },
+   {
+    "rule_id": "T01L",
+    "output_id": "watch-feature-r003",
+    "reason": "Applies if a wordmark appears. Baseline-to-baseline leading cannot be measured reliably in a delivered PNG; 76 pixels is kept as a design target."
+   },
+   {
+    "rule_id": "T01L",
+    "output_id": "watch-feature-r004",
+    "reason": "Applies if a wordmark appears. Baseline-to-baseline leading cannot be measured reliably in a delivered PNG; 76 pixels is kept as a design target."
+   },
+   {
+    "rule_id": "T01L",
+    "output_id": "watch-feature-r005",
+    "reason": "Applies if a wordmark appears. Baseline-to-baseline leading cannot be measured reliably in a delivered PNG; 76 pixels is kept as a design target."
+   },
+   {
+    "rule_id": "T01L",
+    "output_id": "watch-feature-r006",
+    "reason": "Applies if a wordmark appears. Baseline-to-baseline leading cannot be measured reliably in a delivered PNG; 76 pixels is kept as a design target."
+   },
+   {
+    "rule_id": "T01T",
+    "output_id": "watch-keyvisual",
+    "reason": "Tracking in thousandths of an em cannot be judged in a delivered PNG; +180 is kept as a design target; H053 checks only visible letter-spacing."
+   },
+   {
+    "rule_id": "T01T",
+    "output_id": "watch-feature-r002",
+    "reason": "Applies if a wordmark appears. Tracking in thousandths of an em cannot be judged in a delivered PNG; +180 is kept as a design target; H058 checks only visible letter-spacing."
+   },
+   {
+    "rule_id": "T01T",
+    "output_id": "watch-feature-r003",
+    "reason": "Applies if a wordmark appears. Tracking in thousandths of an em cannot be judged in a delivered PNG; +180 is kept as a design target; H057 checks only visible letter-spacing."
+   },
+   {
+    "rule_id": "T01T",
+    "output_id": "watch-feature-r004",
+    "reason": "Applies if a wordmark appears. Tracking in thousandths of an em cannot be judged in a delivered PNG; +180 is kept as a design target; H057 checks only visible letter-spacing."
+   },
+   {
+    "rule_id": "T01T",
+    "output_id": "watch-feature-r005",
+    "reason": "Applies if a wordmark appears. Tracking in thousandths of an em cannot be judged in a delivered PNG; +180 is kept as a design target; H057 checks only visible letter-spacing."
+   },
+   {
+    "rule_id": "T01T",
+    "output_id": "watch-feature-r006",
+    "reason": "Applies if a wordmark appears. Tracking in thousandths of an em cannot be judged in a delivered PNG; +180 is kept as a design target; H056 checks only visible letter-spacing."
+   },
+   {
+    "rule_id": "T01T",
+    "output_id": "dealer-launch",
+    "reason": "The heading wording is the designer’s choice, so no code check can find it, and tracking in thousandths of an em cannot be read by eye; H072 checks only visible letter-spacing."
+   },
+   {
+    "rule_id": "T02S",
+    "output_id": "watch-keyvisual",
+    "reason": "Exact type size cannot be measured in a delivered PNG; 40 px is kept as a design target."
+   },
+   {
+    "rule_id": "T02S",
+    "output_id": "watch-feature-r002",
+    "reason": "Exact type size cannot be measured in a delivered PNG; 48 px is kept as a design target."
+   },
+   {
+    "rule_id": "T02S",
+    "output_id": "watch-feature-r003",
+    "reason": "Exact type size cannot be measured in a delivered PNG; 48 px is kept as a design target."
+   },
+   {
+    "rule_id": "T02S",
+    "output_id": "watch-feature-r004",
+    "reason": "Exact type size cannot be measured in a delivered PNG; 48 px is kept as a design target."
+   },
+   {
+    "rule_id": "T02S",
+    "output_id": "watch-feature-r005",
+    "reason": "Exact type size cannot be measured in a delivered PNG; 48 px is kept as a design target."
+   },
+   {
+    "rule_id": "T02S",
+    "output_id": "watch-feature-r006",
+    "reason": "Exact type size cannot be measured in a delivered PNG; 48 px is kept as a design target."
+   },
+   {
+    "rule_id": "T02L",
+    "output_id": "watch-keyvisual",
+    "reason": "Applies only if the reference name wraps onto a second line. Baseline-to-baseline leading cannot be measured reliably in a delivered PNG; 44 pixels is kept as a design target."
+   },
+   {
+    "rule_id": "T02L",
+    "output_id": "watch-feature-r002",
+    "reason": "Applies only if the reference name wraps onto a second line. Baseline-to-baseline leading cannot be measured reliably in a delivered PNG; 53 pixels is kept as a design target."
+   },
+   {
+    "rule_id": "T02L",
+    "output_id": "watch-feature-r003",
+    "reason": "Applies only if the reference name wraps onto a second line. Baseline-to-baseline leading cannot be measured reliably in a delivered PNG; 53 pixels is kept as a design target."
+   },
+   {
+    "rule_id": "T02L",
+    "output_id": "watch-feature-r004",
+    "reason": "Applies only if the reference name wraps onto a second line. Baseline-to-baseline leading cannot be measured reliably in a delivered PNG; 53 pixels is kept as a design target."
+   },
+   {
+    "rule_id": "T02L",
+    "output_id": "watch-feature-r005",
+    "reason": "Applies only if the reference name wraps onto a second line. Baseline-to-baseline leading cannot be measured reliably in a delivered PNG; 53 pixels is kept as a design target."
+   },
+   {
+    "rule_id": "T02L",
+    "output_id": "watch-feature-r006",
+    "reason": "Applies only if the reference name wraps onto a second line. Baseline-to-baseline leading cannot be measured reliably in a delivered PNG; 53 pixels is kept as a design target."
+   },
+   {
+    "rule_id": "T02T",
+    "output_id": "watch-keyvisual",
+    "reason": "Tracking in thousandths of an em cannot be judged in a delivered PNG; +180 is kept as a design target; H053 checks only visible letter-spacing."
+   },
+   {
+    "rule_id": "T02T",
+    "output_id": "watch-feature-r002",
+    "reason": "Tracking in thousandths of an em cannot be judged in a delivered PNG; +180 is kept as a design target; H058 checks only visible letter-spacing."
+   },
+   {
+    "rule_id": "T02T",
+    "output_id": "watch-feature-r003",
+    "reason": "Tracking in thousandths of an em cannot be judged in a delivered PNG; +180 is kept as a design target; H057 checks only visible letter-spacing."
+   },
+   {
+    "rule_id": "T02T",
+    "output_id": "watch-feature-r004",
+    "reason": "Tracking in thousandths of an em cannot be judged in a delivered PNG; +180 is kept as a design target; H057 checks only visible letter-spacing."
+   },
+   {
+    "rule_id": "T02T",
+    "output_id": "watch-feature-r005",
+    "reason": "Tracking in thousandths of an em cannot be judged in a delivered PNG; +180 is kept as a design target; H057 checks only visible letter-spacing."
+   },
+   {
+    "rule_id": "T02T",
+    "output_id": "watch-feature-r006",
+    "reason": "Tracking in thousandths of an em cannot be judged in a delivered PNG; +180 is kept as a design target; H056 checks only visible letter-spacing."
+   },
+   {
+    "rule_id": "T03S",
+    "output_id": "watch-keyvisual",
+    "reason": "Applies if supporting copy appears. Exact type size cannot be measured in a delivered PNG; 20 px is kept as a design target."
+   },
+   {
+    "rule_id": "T03S",
+    "output_id": "watch-feature-r002",
+    "reason": "Applies if supporting copy appears. Exact type size cannot be measured in a delivered PNG; 20 px is kept as a design target."
+   },
+   {
+    "rule_id": "T03S",
+    "output_id": "watch-feature-r003",
+    "reason": "Applies if supporting copy appears. Exact type size cannot be measured in a delivered PNG; 20 px is kept as a design target."
+   },
+   {
+    "rule_id": "T03S",
+    "output_id": "watch-feature-r004",
+    "reason": "Applies if supporting copy appears. Exact type size cannot be measured in a delivered PNG; 20 px is kept as a design target."
+   },
+   {
+    "rule_id": "T03S",
+    "output_id": "watch-feature-r005",
+    "reason": "Applies if supporting copy appears. Exact type size cannot be measured in a delivered PNG; 20 px is kept as a design target."
+   },
+   {
+    "rule_id": "T03S",
+    "output_id": "watch-feature-r006",
+    "reason": "Applies if supporting copy appears. Exact type size cannot be measured in a delivered PNG; 20 px is kept as a design target."
+   },
+   {
+    "rule_id": "T03L",
+    "output_id": "watch-keyvisual",
+    "reason": "Applies if supporting copy appears. Baseline-to-baseline leading cannot be measured reliably in a delivered PNG; 30 pixels is kept as a design target."
+   },
+   {
+    "rule_id": "T03L",
+    "output_id": "watch-feature-r002",
+    "reason": "Applies if supporting copy appears. Baseline-to-baseline leading cannot be measured reliably in a delivered PNG; 30 pixels is kept as a design target."
+   },
+   {
+    "rule_id": "T03L",
+    "output_id": "watch-feature-r003",
+    "reason": "Applies if supporting copy appears. Baseline-to-baseline leading cannot be measured reliably in a delivered PNG; 30 pixels is kept as a design target."
+   },
+   {
+    "rule_id": "T03L",
+    "output_id": "watch-feature-r004",
+    "reason": "Applies if supporting copy appears. Baseline-to-baseline leading cannot be measured reliably in a delivered PNG; 30 pixels is kept as a design target."
+   },
+   {
+    "rule_id": "T03L",
+    "output_id": "watch-feature-r005",
+    "reason": "Applies if supporting copy appears. Baseline-to-baseline leading cannot be measured reliably in a delivered PNG; 30 pixels is kept as a design target."
+   },
+   {
+    "rule_id": "T03L",
+    "output_id": "watch-feature-r006",
+    "reason": "Applies if supporting copy appears. Baseline-to-baseline leading cannot be measured reliably in a delivered PNG; 30 pixels is kept as a design target."
+   },
+   {
+    "rule_id": "T03T",
+    "output_id": "watch-keyvisual",
+    "reason": "Applies if supporting copy appears. Tracking in thousandths of an em cannot be judged in a delivered PNG; 0 is kept as a design target."
+   },
+   {
+    "rule_id": "T03T",
+    "output_id": "watch-feature-r002",
+    "reason": "Applies if supporting copy appears. Tracking in thousandths of an em cannot be judged in a delivered PNG; 0 is kept as a design target."
+   },
+   {
+    "rule_id": "T03T",
+    "output_id": "watch-feature-r003",
+    "reason": "Applies if supporting copy appears. Tracking in thousandths of an em cannot be judged in a delivered PNG; 0 is kept as a design target."
+   },
+   {
+    "rule_id": "T03T",
+    "output_id": "watch-feature-r004",
+    "reason": "Applies if supporting copy appears. Tracking in thousandths of an em cannot be judged in a delivered PNG; 0 is kept as a design target."
+   },
+   {
+    "rule_id": "T03T",
+    "output_id": "watch-feature-r005",
+    "reason": "Applies if supporting copy appears. Tracking in thousandths of an em cannot be judged in a delivered PNG; 0 is kept as a design target."
+   },
+   {
+    "rule_id": "T03T",
+    "output_id": "watch-feature-r006",
+    "reason": "Applies if supporting copy appears. Tracking in thousandths of an em cannot be judged in a delivered PNG; 0 is kept as a design target."
+   },
+   {
+    "rule_id": "T04S",
+    "output_id": "watch-keyvisual",
+    "reason": "Applies if specification text appears. Exact type size cannot be measured in a delivered PNG; 22 px is kept as a design target."
+   },
+   {
+    "rule_id": "T04S",
+    "output_id": "watch-feature-r002",
+    "reason": "Exact type size cannot be measured in a delivered PNG; 22 px is kept as a design target."
+   },
+   {
+    "rule_id": "T04S",
+    "output_id": "watch-feature-r003",
+    "reason": "Exact type size cannot be measured in a delivered PNG; 22 px is kept as a design target."
+   },
+   {
+    "rule_id": "T04S",
+    "output_id": "watch-feature-r004",
+    "reason": "Exact type size cannot be measured in a delivered PNG; 22 px is kept as a design target."
+   },
+   {
+    "rule_id": "T04S",
+    "output_id": "watch-feature-r005",
+    "reason": "Exact type size cannot be measured in a delivered PNG; 22 px is kept as a design target."
+   },
+   {
+    "rule_id": "T04S",
+    "output_id": "watch-feature-r006",
+    "reason": "Exact type size cannot be measured in a delivered PNG; 22 px is kept as a design target."
+   },
+   {
+    "rule_id": "T04L",
+    "output_id": "watch-keyvisual",
+    "reason": "Applies if specification text appears. Baseline-to-baseline leading cannot be measured reliably in a delivered PNG; 32 pixels is kept as a design target."
+   },
+   {
+    "rule_id": "T04L",
+    "output_id": "watch-feature-r002",
+    "reason": "Baseline-to-baseline leading cannot be measured reliably in a delivered PNG; 32 pixels is kept as a design target."
+   },
+   {
+    "rule_id": "T04L",
+    "output_id": "watch-feature-r003",
+    "reason": "Baseline-to-baseline leading cannot be measured reliably in a delivered PNG; 32 pixels is kept as a design target."
+   },
+   {
+    "rule_id": "T04L",
+    "output_id": "watch-feature-r004",
+    "reason": "Baseline-to-baseline leading cannot be measured reliably in a delivered PNG; 32 pixels is kept as a design target."
+   },
+   {
+    "rule_id": "T04L",
+    "output_id": "watch-feature-r005",
+    "reason": "Baseline-to-baseline leading cannot be measured reliably in a delivered PNG; 32 pixels is kept as a design target."
+   },
+   {
+    "rule_id": "T04L",
+    "output_id": "watch-feature-r006",
+    "reason": "Baseline-to-baseline leading cannot be measured reliably in a delivered PNG; 32 pixels is kept as a design target."
+   },
+   {
+    "rule_id": "T04T",
+    "output_id": "watch-keyvisual",
+    "reason": "Applies if specification text appears. Tracking in thousandths of an em cannot be judged in a delivered PNG; 0 is kept as a design target."
+   },
+   {
+    "rule_id": "T04T",
+    "output_id": "watch-feature-r002",
+    "reason": "Tracking in thousandths of an em cannot be judged in a delivered PNG; 0 is kept as a design target."
+   },
+   {
+    "rule_id": "T04T",
+    "output_id": "watch-feature-r003",
+    "reason": "Tracking in thousandths of an em cannot be judged in a delivered PNG; 0 is kept as a design target."
+   },
+   {
+    "rule_id": "T04T",
+    "output_id": "watch-feature-r004",
+    "reason": "Tracking in thousandths of an em cannot be judged in a delivered PNG; 0 is kept as a design target."
+   },
+   {
+    "rule_id": "T04T",
+    "output_id": "watch-feature-r005",
+    "reason": "Tracking in thousandths of an em cannot be judged in a delivered PNG; 0 is kept as a design target."
+   },
+   {
+    "rule_id": "T04T",
+    "output_id": "watch-feature-r006",
+    "reason": "Tracking in thousandths of an em cannot be judged in a delivered PNG; 0 is kept as a design target."
+   },
+   {
+    "rule_id": "T05S",
+    "output_id": "watch-keyvisual",
+    "reason": "Applies if a price, serial, timing result or caption appears. Exact type size cannot be measured in a delivered PNG; 16 px is kept as a design target."
+   },
+   {
+    "rule_id": "T05S",
+    "output_id": "watch-feature-r002",
+    "reason": "Applies if a price, serial, timing result or caption appears. Exact type size cannot be measured in a delivered PNG; 16 px is kept as a design target."
+   },
+   {
+    "rule_id": "T05S",
+    "output_id": "watch-feature-r003",
+    "reason": "Applies if a price, serial, timing result or caption appears. Exact type size cannot be measured in a delivered PNG; 16 px is kept as a design target."
+   },
+   {
+    "rule_id": "T05S",
+    "output_id": "watch-feature-r004",
+    "reason": "Applies if a price, serial, timing result or caption appears. Exact type size cannot be measured in a delivered PNG; 16 px is kept as a design target."
+   },
+   {
+    "rule_id": "T05S",
+    "output_id": "watch-feature-r005",
+    "reason": "Applies if a price, serial, timing result or caption appears. Exact type size cannot be measured in a delivered PNG; 16 px is kept as a design target."
+   },
+   {
+    "rule_id": "T05S",
+    "output_id": "watch-feature-r006",
+    "reason": "Applies if a price, serial, timing result or caption appears. Exact type size cannot be measured in a delivered PNG; 16 px is kept as a design target."
+   },
+   {
+    "rule_id": "T05L",
+    "output_id": "watch-keyvisual",
+    "reason": "Applies if a price, serial, timing result or caption appears. Baseline-to-baseline leading cannot be measured reliably in a delivered PNG; 22 pixels is kept as a design target."
+   },
+   {
+    "rule_id": "T05L",
+    "output_id": "watch-feature-r002",
+    "reason": "Applies if a price, serial, timing result or caption appears. Baseline-to-baseline leading cannot be measured reliably in a delivered PNG; 22 pixels is kept as a design target."
+   },
+   {
+    "rule_id": "T05L",
+    "output_id": "watch-feature-r003",
+    "reason": "Applies if a price, serial, timing result or caption appears. Baseline-to-baseline leading cannot be measured reliably in a delivered PNG; 22 pixels is kept as a design target."
+   },
+   {
+    "rule_id": "T05L",
+    "output_id": "watch-feature-r004",
+    "reason": "Applies if a price, serial, timing result or caption appears. Baseline-to-baseline leading cannot be measured reliably in a delivered PNG; 22 pixels is kept as a design target."
+   },
+   {
+    "rule_id": "T05L",
+    "output_id": "watch-feature-r005",
+    "reason": "Applies if a price, serial, timing result or caption appears. Baseline-to-baseline leading cannot be measured reliably in a delivered PNG; 22 pixels is kept as a design target."
+   },
+   {
+    "rule_id": "T05L",
+    "output_id": "watch-feature-r006",
+    "reason": "Applies if a price, serial, timing result or caption appears. Baseline-to-baseline leading cannot be measured reliably in a delivered PNG; 22 pixels is kept as a design target."
+   },
+   {
+    "rule_id": "T05T",
+    "output_id": "watch-keyvisual",
+    "reason": "Applies if a price, serial, timing result or caption appears. Tracking in thousandths of an em cannot be judged in a delivered PNG; +20 is kept as a design target."
+   },
+   {
+    "rule_id": "T05T",
+    "output_id": "watch-feature-r002",
+    "reason": "Applies if a price, serial, timing result or caption appears. Tracking in thousandths of an em cannot be judged in a delivered PNG; +20 is kept as a design target."
+   },
+   {
+    "rule_id": "T05T",
+    "output_id": "watch-feature-r003",
+    "reason": "Applies if a price, serial, timing result or caption appears. Tracking in thousandths of an em cannot be judged in a delivered PNG; +20 is kept as a design target."
+   },
+   {
+    "rule_id": "T05T",
+    "output_id": "watch-feature-r004",
+    "reason": "Applies if a price, serial, timing result or caption appears. Tracking in thousandths of an em cannot be judged in a delivered PNG; +20 is kept as a design target."
+   },
+   {
+    "rule_id": "T05T",
+    "output_id": "watch-feature-r005",
+    "reason": "Applies if a price, serial, timing result or caption appears. Tracking in thousandths of an em cannot be judged in a delivered PNG; +20 is kept as a design target."
+   },
+   {
+    "rule_id": "T05T",
+    "output_id": "watch-feature-r006",
+    "reason": "Applies if a price, serial, timing result or caption appears. Tracking in thousandths of an em cannot be judged in a delivered PNG; +20 is kept as a design target."
+   },
+   {
+    "rule_id": "T05T",
+    "output_id": "dealer-launch",
+    "reason": "Fine print is optional on the dealer sheet and has no fixed wording for a code check; tracking in thousandths of an em cannot be read by eye."
+   },
+   {
+    "rule_id": "T08b",
+    "output_id": "watch-keyvisual",
+    "reason": "Inter figures and Cormorant Garamond capitals differ in visible height at the same type size, so equal size cannot be confirmed in a delivered PNG."
+   },
+   {
+    "rule_id": "T08b",
+    "output_id": "watch-feature-r002",
+    "reason": "Inter figures and Cormorant Garamond capitals differ in visible height at the same type size, so equal size cannot be confirmed in a delivered PNG."
+   },
+   {
+    "rule_id": "T08b",
+    "output_id": "watch-feature-r003",
+    "reason": "Inter figures and Cormorant Garamond capitals differ in visible height at the same type size, so equal size cannot be confirmed in a delivered PNG."
+   },
+   {
+    "rule_id": "T08b",
+    "output_id": "watch-feature-r004",
+    "reason": "Inter figures and Cormorant Garamond capitals differ in visible height at the same type size, so equal size cannot be confirmed in a delivered PNG."
+   },
+   {
+    "rule_id": "T08b",
+    "output_id": "watch-feature-r005",
+    "reason": "Inter figures and Cormorant Garamond capitals differ in visible height at the same type size, so equal size cannot be confirmed in a delivered PNG."
+   },
+   {
+    "rule_id": "T08b",
+    "output_id": "watch-feature-r006",
+    "reason": "Inter figures and Cormorant Garamond capitals differ in visible height at the same type size, so equal size cannot be confirmed in a delivered PNG."
+   }
+  ]
  },
  "readiness": {
   "contract": "revised",

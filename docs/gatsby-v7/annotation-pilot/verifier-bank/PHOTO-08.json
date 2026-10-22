@@ -893,7 +893,7 @@
     "output_id": "vehicle-card-r005",
     "type": "human",
     "output_reference": "deliverables/vehicle-card-r005.png",
-    "check": "“Vehicle sales card - M3105” (vehicle-card-r005.png) has no starburst and no slashed or struck-through price.",
+    "check": "vehicle-card-r005.png contains no starburst graphic.",
     "method": "look",
     "method_note": "Inspect the named output against this requirement and its linked references.",
     "reference_assets": []
@@ -1595,7 +1595,7 @@
     "output_id": "vehicle-card-r007",
     "type": "human",
     "output_reference": "deliverables/vehicle-card-r007.png",
-    "check": "“Vehicle sales card - M3119” (vehicle-card-r007.png) has no starburst and no slashed or struck-through price.",
+    "check": "vehicle-card-r007.png contains no starburst graphic.",
     "method": "look",
     "method_note": "Inspect the named output against this requirement and its linked references.",
     "reference_assets": []
@@ -2068,7 +2068,7 @@
     "output_id": "vehicle-card-r002",
     "type": "human",
     "output_reference": "deliverables/vehicle-card-r002.png",
-    "check": "“Vehicle sales card - M3082” (vehicle-card-r002.png) has no starburst and no slashed or struck-through price.",
+    "check": "vehicle-card-r002.png contains no starburst graphic.",
     "method": "look",
     "method_note": "Inspect the named output against this requirement and its linked references.",
     "reference_assets": []
@@ -2431,7 +2431,7 @@
     "output_id": "vehicle-card-r006",
     "type": "human",
     "output_reference": "deliverables/vehicle-card-r006.png",
-    "check": "“Vehicle sales card - M2471” (vehicle-card-r006.png) has no starburst and no slashed or struck-through price.",
+    "check": "vehicle-card-r006.png contains no starburst graphic.",
     "method": "look",
     "method_note": "Inspect the named output against this requirement and its linked references.",
     "reference_assets": []
@@ -2801,7 +2801,7 @@
     "output_id": "vehicle-card-r004",
     "type": "human",
     "output_reference": "deliverables/vehicle-card-r004.png",
-    "check": "“Vehicle sales card - M2417” (vehicle-card-r004.png) has no starburst and no slashed or struck-through price.",
+    "check": "vehicle-card-r004.png contains no starburst graphic.",
     "method": "look",
     "method_note": "Inspect the named output against this requirement and its linked references.",
     "reference_assets": []
@@ -4350,7 +4350,7 @@
     "output_id": "inventory-campaign",
     "type": "human",
     "output_reference": "deliverables/inventory-campaign.png",
-    "check": "“Forecourt inventory campaign” (inventory-campaign.png) has no starburst and no slashed or struck-through price.",
+    "check": "inventory-campaign.png contains no starburst graphic.",
     "method": "look",
     "method_note": "Inspect the named output against this requirement and its linked references.",
     "reference_assets": []
@@ -4662,7 +4662,7 @@
     "output_id": "vehicle-card-r003",
     "type": "human",
     "output_reference": "deliverables/vehicle-card-r003.png",
-    "check": "“Vehicle sales card - M3091” (vehicle-card-r003.png) has no starburst and no slashed or struck-through price.",
+    "check": "vehicle-card-r003.png contains no starburst graphic.",
     "method": "look",
     "method_note": "Inspect the named output against this requirement and its linked references.",
     "reference_assets": []
@@ -5418,9 +5418,14 @@
     "output_id": "vehicle-card-r002",
     "type": "human",
     "output_reference": "deliverables/vehicle-card-r002.png",
-    "check": "Compass Teal #3C6E71 and Steel Grey #9AA1A8 together fill only a small share, about 5% or less, of the non-photographic area of “Vehicle sales card - M3082” (vehicle-card-r002.png).",
-    "method": "estimate",
-    "method_note": "Estimate the share of the designed, non-photographic area in Compass Teal and Steel Grey; answer No only if it is clearly over 5%.",
+    "check": "Compass Teal #3C6E71 and Steel Grey #9AA1A8 together fill no more than 5% of the non-photographic area of “Vehicle sales card - M3082” (vehicle-card-r002.png).",
+    "method": "measure",
+    "method_note": "Measure, do not estimate. On a measurement copy, mask the named area; exclude photographs and transparent canvas. Count the selected accent-colour pixels and divide by all pixels in that mask. Include text unless the condition excludes it. Test each PDF page or held video frame separately. Yes only when the unrounded percentage is at or below the stated limit. Use the linked measurement guide for rasterisation and colour matching. Each RGB channel must be within 5 of a selected palette colour.",
+    "measurement": {
+      "kind": "area_ratio",
+      "channel_tolerance": 5,
+      "max_percent": 5
+    },
     "reference_assets": []
   },
   {
@@ -5738,9 +5743,14 @@
     "output_id": "vehicle-card-r003",
     "type": "human",
     "output_reference": "deliverables/vehicle-card-r003.png",
-    "check": "Compass Teal #3C6E71 and Steel Grey #9AA1A8 together fill only a small share, about 5% or less, of the non-photographic area of “Vehicle sales card - M3091” (vehicle-card-r003.png).",
-    "method": "estimate",
-    "method_note": "Estimate the share of the designed, non-photographic area in Compass Teal and Steel Grey; answer No only if it is clearly over 5%.",
+    "check": "Compass Teal #3C6E71 and Steel Grey #9AA1A8 together fill no more than 5% of the non-photographic area of “Vehicle sales card - M3091” (vehicle-card-r003.png).",
+    "method": "measure",
+    "method_note": "Measure, do not estimate. On a measurement copy, mask the named area; exclude photographs and transparent canvas. Count the selected accent-colour pixels and divide by all pixels in that mask. Include text unless the condition excludes it. Test each PDF page or held video frame separately. Yes only when the unrounded percentage is at or below the stated limit. Use the linked measurement guide for rasterisation and colour matching. Each RGB channel must be within 5 of a selected palette colour.",
+    "measurement": {
+      "kind": "area_ratio",
+      "channel_tolerance": 5,
+      "max_percent": 5
+    },
     "reference_assets": []
   },
   {
@@ -6058,9 +6068,14 @@
     "output_id": "vehicle-card-r004",
     "type": "human",
     "output_reference": "deliverables/vehicle-card-r004.png",
-    "check": "Compass Teal #3C6E71 and Steel Grey #9AA1A8 together fill only a small share, about 5% or less, of the non-photographic area of “Vehicle sales card - M2417” (vehicle-card-r004.png).",
-    "method": "estimate",
-    "method_note": "Estimate the share of the designed, non-photographic area in Compass Teal and Steel Grey; answer No only if it is clearly over 5%.",
+    "check": "Compass Teal #3C6E71 and Steel Grey #9AA1A8 together fill no more than 5% of the non-photographic area of “Vehicle sales card - M2417” (vehicle-card-r004.png).",
+    "method": "measure",
+    "method_note": "Measure, do not estimate. On a measurement copy, mask the named area; exclude photographs and transparent canvas. Count the selected accent-colour pixels and divide by all pixels in that mask. Include text unless the condition excludes it. Test each PDF page or held video frame separately. Yes only when the unrounded percentage is at or below the stated limit. Use the linked measurement guide for rasterisation and colour matching. Each RGB channel must be within 5 of a selected palette colour.",
+    "measurement": {
+      "kind": "area_ratio",
+      "channel_tolerance": 5,
+      "max_percent": 5
+    },
     "reference_assets": []
   },
   {
@@ -6378,9 +6393,14 @@
     "output_id": "vehicle-card-r005",
     "type": "human",
     "output_reference": "deliverables/vehicle-card-r005.png",
-    "check": "Compass Teal #3C6E71 and Steel Grey #9AA1A8 together fill only a small share, about 5% or less, of the non-photographic area of “Vehicle sales card - M3105” (vehicle-card-r005.png).",
-    "method": "estimate",
-    "method_note": "Estimate the share of the designed, non-photographic area in Compass Teal and Steel Grey; answer No only if it is clearly over 5%.",
+    "check": "Compass Teal #3C6E71 and Steel Grey #9AA1A8 together fill no more than 5% of the non-photographic area of “Vehicle sales card - M3105” (vehicle-card-r005.png).",
+    "method": "measure",
+    "method_note": "Measure, do not estimate. On a measurement copy, mask the named area; exclude photographs and transparent canvas. Count the selected accent-colour pixels and divide by all pixels in that mask. Include text unless the condition excludes it. Test each PDF page or held video frame separately. Yes only when the unrounded percentage is at or below the stated limit. Use the linked measurement guide for rasterisation and colour matching. Each RGB channel must be within 5 of a selected palette colour.",
+    "measurement": {
+      "kind": "area_ratio",
+      "channel_tolerance": 5,
+      "max_percent": 5
+    },
     "reference_assets": []
   },
   {
@@ -6698,9 +6718,14 @@
     "output_id": "vehicle-card-r006",
     "type": "human",
     "output_reference": "deliverables/vehicle-card-r006.png",
-    "check": "Compass Teal #3C6E71 and Steel Grey #9AA1A8 together fill only a small share, about 5% or less, of the non-photographic area of “Vehicle sales card - M2471” (vehicle-card-r006.png).",
-    "method": "estimate",
-    "method_note": "Estimate the share of the designed, non-photographic area in Compass Teal and Steel Grey; answer No only if it is clearly over 5%.",
+    "check": "Compass Teal #3C6E71 and Steel Grey #9AA1A8 together fill no more than 5% of the non-photographic area of “Vehicle sales card - M2471” (vehicle-card-r006.png).",
+    "method": "measure",
+    "method_note": "Measure, do not estimate. On a measurement copy, mask the named area; exclude photographs and transparent canvas. Count the selected accent-colour pixels and divide by all pixels in that mask. Include text unless the condition excludes it. Test each PDF page or held video frame separately. Yes only when the unrounded percentage is at or below the stated limit. Use the linked measurement guide for rasterisation and colour matching. Each RGB channel must be within 5 of a selected palette colour.",
+    "measurement": {
+      "kind": "area_ratio",
+      "channel_tolerance": 5,
+      "max_percent": 5
+    },
     "reference_assets": []
   },
   {
@@ -7018,9 +7043,14 @@
     "output_id": "vehicle-card-r007",
     "type": "human",
     "output_reference": "deliverables/vehicle-card-r007.png",
-    "check": "Compass Teal #3C6E71 and Steel Grey #9AA1A8 together fill only a small share, about 5% or less, of the non-photographic area of “Vehicle sales card - M3119” (vehicle-card-r007.png).",
-    "method": "estimate",
-    "method_note": "Estimate the share of the designed, non-photographic area in Compass Teal and Steel Grey; answer No only if it is clearly over 5%.",
+    "check": "Compass Teal #3C6E71 and Steel Grey #9AA1A8 together fill no more than 5% of the non-photographic area of “Vehicle sales card - M3119” (vehicle-card-r007.png).",
+    "method": "measure",
+    "method_note": "Measure, do not estimate. On a measurement copy, mask the named area; exclude photographs and transparent canvas. Count the selected accent-colour pixels and divide by all pixels in that mask. Include text unless the condition excludes it. Test each PDF page or held video frame separately. Yes only when the unrounded percentage is at or below the stated limit. Use the linked measurement guide for rasterisation and colour matching. Each RGB channel must be within 5 of a selected palette colour.",
+    "measurement": {
+      "kind": "area_ratio",
+      "channel_tolerance": 5,
+      "max_percent": 5
+    },
     "reference_assets": []
   },
   {
@@ -7262,9 +7292,14 @@
     "output_id": "inventory-campaign",
     "type": "human",
     "output_reference": "deliverables/inventory-campaign.png",
-    "check": "Compass Teal #3C6E71 and Steel Grey #9AA1A8 together fill only a small share, about 5% or less, of the non-photographic area of “Forecourt inventory campaign” (inventory-campaign.png).",
-    "method": "estimate",
-    "method_note": "Estimate the share of the designed, non-photographic area in Compass Teal and Steel Grey; answer No only if it is clearly over 5%.",
+    "check": "Compass Teal #3C6E71 and Steel Grey #9AA1A8 together fill no more than 5% of the non-photographic area of “Forecourt inventory campaign” (inventory-campaign.png).",
+    "method": "measure",
+    "method_note": "Measure, do not estimate. On a measurement copy, mask the named area; exclude photographs and transparent canvas. Count the selected accent-colour pixels and divide by all pixels in that mask. Include text unless the condition excludes it. Test each PDF page or held video frame separately. Yes only when the unrounded percentage is at or below the stated limit. Use the linked measurement guide for rasterisation and colour matching. Each RGB channel must be within 5 of a selected palette colour.",
+    "measurement": {
+      "kind": "area_ratio",
+      "channel_tolerance": 5,
+      "max_percent": 5
+    },
     "reference_assets": []
   },
   {
@@ -8258,6 +8293,76 @@
     "type": "human",
     "output_reference": "deliverables/inventory-campaign.png",
     "check": "If a price appears on “Forecourt inventory campaign” (inventory-campaign.png), the rule under it runs across that vehicle's full panel width.",
+    "method": "look",
+    "method_note": "Inspect the named output against this requirement and its linked references.",
+    "reference_assets": []
+  },
+  {
+    "check_id": "PHOTO-08/vehicle-card-r005/H083",
+    "output_id": "vehicle-card-r005",
+    "type": "human",
+    "output_reference": "deliverables/vehicle-card-r005.png",
+    "check": "vehicle-card-r005.png contains no slashed or struck-through price.",
+    "method": "look",
+    "method_note": "Inspect the named output against this requirement and its linked references.",
+    "reference_assets": []
+  },
+  {
+    "check_id": "PHOTO-08/vehicle-card-r007/H083",
+    "output_id": "vehicle-card-r007",
+    "type": "human",
+    "output_reference": "deliverables/vehicle-card-r007.png",
+    "check": "vehicle-card-r007.png contains no slashed or struck-through price.",
+    "method": "look",
+    "method_note": "Inspect the named output against this requirement and its linked references.",
+    "reference_assets": []
+  },
+  {
+    "check_id": "PHOTO-08/vehicle-card-r002/H084",
+    "output_id": "vehicle-card-r002",
+    "type": "human",
+    "output_reference": "deliverables/vehicle-card-r002.png",
+    "check": "vehicle-card-r002.png contains no slashed or struck-through price.",
+    "method": "look",
+    "method_note": "Inspect the named output against this requirement and its linked references.",
+    "reference_assets": []
+  },
+  {
+    "check_id": "PHOTO-08/vehicle-card-r006/H083",
+    "output_id": "vehicle-card-r006",
+    "type": "human",
+    "output_reference": "deliverables/vehicle-card-r006.png",
+    "check": "vehicle-card-r006.png contains no slashed or struck-through price.",
+    "method": "look",
+    "method_note": "Inspect the named output against this requirement and its linked references.",
+    "reference_assets": []
+  },
+  {
+    "check_id": "PHOTO-08/vehicle-card-r004/H082",
+    "output_id": "vehicle-card-r004",
+    "type": "human",
+    "output_reference": "deliverables/vehicle-card-r004.png",
+    "check": "vehicle-card-r004.png contains no slashed or struck-through price.",
+    "method": "look",
+    "method_note": "Inspect the named output against this requirement and its linked references.",
+    "reference_assets": []
+  },
+  {
+    "check_id": "PHOTO-08/inventory-campaign/H131",
+    "output_id": "inventory-campaign",
+    "type": "human",
+    "output_reference": "deliverables/inventory-campaign.png",
+    "check": "inventory-campaign.png contains no slashed or struck-through price.",
+    "method": "look",
+    "method_note": "Inspect the named output against this requirement and its linked references.",
+    "reference_assets": []
+  },
+  {
+    "check_id": "PHOTO-08/vehicle-card-r003/H083",
+    "output_id": "vehicle-card-r003",
+    "type": "human",
+    "output_reference": "deliverables/vehicle-card-r003.png",
+    "check": "vehicle-card-r003.png contains no slashed or struck-through price.",
     "method": "look",
     "method_note": "Inspect the named output against this requirement and its linked references.",
     "reference_assets": []

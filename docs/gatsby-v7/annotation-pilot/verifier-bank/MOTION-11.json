@@ -781,7 +781,7 @@
     "output_id": "thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi",
     "type": "human",
     "output_reference": "deliverables/thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi.png",
-    "check": "Scrap on “Channel thumbnail - I GAVE MY TEAM ONE SIMPLE JOB AND THEY SET THE ENTIRE BASE ON FIRE” (thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi.png) keeps the orange fur and purple headset of the supplied cutout, not recoloured.",
+    "check": "Scrap on “Channel thumbnail - I GAVE MY TEAM ONE SIMPLE JOB AND THEY SET THE ENTIRE BASE ON FIRE” (thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi.png) keeps the orange fur of the supplied cutout, not recoloured.",
     "method": "look",
     "method_note": "Inspect the named output against this requirement and its linked references.",
     "reference_assets": [
@@ -1071,8 +1071,13 @@
     "type": "human",
     "output_reference": "deliverables/thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi.png",
     "check": "Not counting title letters, Acid Signal #B6FF2E fills no more than a tenth of the graphics laid over the capture on “Channel thumbnail - I GAVE MY TEAM ONE SIMPLE JOB AND THEY SET THE ENTIRE BASE ON FIRE” (thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi.png).",
-    "method": "estimate",
-    "method_note": "Of the graphics laid over the capture, title letters excluded, estimate how much is Acid Signal green; answer No only if clearly over 10%.",
+    "method": "measure",
+    "method_note": "Measure, do not estimate. On a measurement copy, mask the named area; exclude photographs and transparent canvas. Count the selected accent-colour pixels and divide by all pixels in that mask. Include text unless the condition excludes it. Test each PDF page or held video frame separately. Yes only when the unrounded percentage is at or below the stated limit. Use the linked measurement guide for rasterisation and colour matching. Each RGB channel must be within 5 of a selected palette colour.",
+    "measurement": {
+      "kind": "area_ratio",
+      "channel_tolerance": 5,
+      "max_percent": 10
+    },
     "reference_assets": []
   },
   {
@@ -1312,7 +1317,7 @@
     "output_id": "thumbnail-everyone-off-the-platform",
     "type": "human",
     "output_reference": "deliverables/thumbnail-everyone-off-the-platform.png",
-    "check": "Scrap on “Channel thumbnail - EVERYONE OFF THE PLATFORM” (thumbnail-everyone-off-the-platform.png) keeps the orange fur and purple headset of the supplied cutout, not recoloured.",
+    "check": "Scrap on “Channel thumbnail - EVERYONE OFF THE PLATFORM” (thumbnail-everyone-off-the-platform.png) keeps the orange fur of the supplied cutout, not recoloured.",
     "method": "look",
     "method_note": "Inspect the named output against this requirement and its linked references.",
     "reference_assets": [
@@ -1621,8 +1626,13 @@
     "type": "human",
     "output_reference": "deliverables/thumbnail-everyone-off-the-platform.png",
     "check": "Not counting title letters, Acid Signal #B6FF2E fills no more than a tenth of the graphics laid over the capture on “Channel thumbnail - EVERYONE OFF THE PLATFORM” (thumbnail-everyone-off-the-platform.png).",
-    "method": "estimate",
-    "method_note": "Of the graphics laid over the capture, title letters excluded, estimate how much is Acid Signal green; answer No only if clearly over 10%.",
+    "method": "measure",
+    "method_note": "Measure, do not estimate. On a measurement copy, mask the named area; exclude photographs and transparent canvas. Count the selected accent-colour pixels and divide by all pixels in that mask. Include text unless the condition excludes it. Test each PDF page or held video frame separately. Yes only when the unrounded percentage is at or below the stated limit. Use the linked measurement guide for rasterisation and colour matching. Each RGB channel must be within 5 of a selected palette colour.",
+    "measurement": {
+      "kind": "area_ratio",
+      "channel_tolerance": 5,
+      "max_percent": 10
+    },
     "reference_assets": []
   },
   {
@@ -1774,7 +1784,7 @@
     "output_id": "thumbnail-kitchen-gone",
     "type": "human",
     "output_reference": "deliverables/thumbnail-kitchen-gone.png",
-    "check": "Scrap on “Channel thumbnail - KITCHEN. GONE.” (thumbnail-kitchen-gone.png) keeps the orange fur and purple headset of the supplied cutout, not recoloured.",
+    "check": "Scrap on “Channel thumbnail - KITCHEN. GONE.” (thumbnail-kitchen-gone.png) keeps the orange fur of the supplied cutout, not recoloured.",
     "method": "look",
     "method_note": "Inspect the named output against this requirement and its linked references.",
     "reference_assets": [
@@ -2083,8 +2093,13 @@
     "type": "human",
     "output_reference": "deliverables/thumbnail-kitchen-gone.png",
     "check": "Not counting title letters, Acid Signal #B6FF2E fills no more than a tenth of the graphics laid over the capture on “Channel thumbnail - KITCHEN. GONE.” (thumbnail-kitchen-gone.png).",
-    "method": "estimate",
-    "method_note": "Of the graphics laid over the capture, title letters excluded, estimate how much is Acid Signal green; answer No only if clearly over 10%.",
+    "method": "measure",
+    "method_note": "Measure, do not estimate. On a measurement copy, mask the named area; exclude photographs and transparent canvas. Count the selected accent-colour pixels and divide by all pixels in that mask. Include text unless the condition excludes it. Test each PDF page or held video frame separately. Yes only when the unrounded percentage is at or below the stated limit. Use the linked measurement guide for rasterisation and colour matching. Each RGB channel must be within 5 of a selected palette colour.",
+    "measurement": {
+      "kind": "area_ratio",
+      "channel_tolerance": 5,
+      "max_percent": 10
+    },
     "reference_assets": []
   },
   {
@@ -2226,7 +2241,7 @@
     "output_id": "thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas",
     "type": "human",
     "output_reference": "deliverables/thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas.png",
-    "check": "Scrap on “Channel thumbnail - WE SPENT SIX HOURS BUILDING A BRIDGE AND THEN DROVE STRAIGHT PAST IT” (thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas.png) keeps the orange fur and purple headset of the supplied cutout, not recoloured.",
+    "check": "Scrap on “Channel thumbnail - WE SPENT SIX HOURS BUILDING A BRIDGE AND THEN DROVE STRAIGHT PAST IT” (thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas.png) keeps the orange fur of the supplied cutout, not recoloured.",
     "method": "look",
     "method_note": "Inspect the named output against this requirement and its linked references.",
     "reference_assets": [
@@ -2516,8 +2531,13 @@
     "type": "human",
     "output_reference": "deliverables/thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas.png",
     "check": "Not counting title letters, Acid Signal #B6FF2E fills no more than a tenth of the graphics laid over the capture on “Channel thumbnail - WE SPENT SIX HOURS BUILDING A BRIDGE AND THEN DROVE STRAIGHT PAST IT” (thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas.png).",
-    "method": "estimate",
-    "method_note": "Of the graphics laid over the capture, title letters excluded, estimate how much is Acid Signal green; answer No only if clearly over 10%.",
+    "method": "measure",
+    "method_note": "Measure, do not estimate. On a measurement copy, mask the named area; exclude photographs and transparent canvas. Count the selected accent-colour pixels and divide by all pixels in that mask. Include text unless the condition excludes it. Test each PDF page or held video frame separately. Yes only when the unrounded percentage is at or below the stated limit. Use the linked measurement guide for rasterisation and colour matching. Each RGB channel must be within 5 of a selected palette colour.",
+    "measurement": {
+      "kind": "area_ratio",
+      "channel_tolerance": 5,
+      "max_percent": 10
+    },
     "reference_assets": []
   },
   {
@@ -2644,7 +2664,7 @@
     "output_id": "thumbnail-we-broke-the-map",
     "type": "human",
     "output_reference": "deliverables/thumbnail-we-broke-the-map.png",
-    "check": "Scrap on “Channel thumbnail - WE BROKE THE MAP” (thumbnail-we-broke-the-map.png) keeps the orange fur and purple headset of the supplied cutout, not recoloured.",
+    "check": "Scrap on “Channel thumbnail - WE BROKE THE MAP” (thumbnail-we-broke-the-map.png) keeps the orange fur of the supplied cutout, not recoloured.",
     "method": "look",
     "method_note": "Inspect the named output against this requirement and its linked references.",
     "reference_assets": [
@@ -2930,8 +2950,13 @@
     "type": "human",
     "output_reference": "deliverables/thumbnail-we-broke-the-map.png",
     "check": "Not counting title letters, Acid Signal #B6FF2E fills no more than a tenth of the graphics laid over the capture on “Channel thumbnail - WE BROKE THE MAP” (thumbnail-we-broke-the-map.png).",
-    "method": "estimate",
-    "method_note": "Of the graphics laid over the capture, title letters excluded, estimate how much is Acid Signal green; answer No only if clearly over 10%.",
+    "method": "measure",
+    "method_note": "Measure, do not estimate. On a measurement copy, mask the named area; exclude photographs and transparent canvas. Count the selected accent-colour pixels and divide by all pixels in that mask. Include text unless the condition excludes it. Test each PDF page or held video frame separately. Yes only when the unrounded percentage is at or below the stated limit. Use the linked measurement guide for rasterisation and colour matching. Each RGB channel must be within 5 of a selected palette colour.",
+    "measurement": {
+      "kind": "area_ratio",
+      "channel_tolerance": 5,
+      "max_percent": 10
+    },
     "reference_assets": []
   },
   {
@@ -3093,7 +3118,7 @@
     "output_id": "thumbnail-do-not-open-that-door",
     "type": "human",
     "output_reference": "deliverables/thumbnail-do-not-open-that-door.png",
-    "check": "Scrap on “Channel thumbnail - DO NOT OPEN THAT DOOR” (thumbnail-do-not-open-that-door.png) keeps the orange fur and purple headset of the supplied cutout, not recoloured.",
+    "check": "Scrap on “Channel thumbnail - DO NOT OPEN THAT DOOR” (thumbnail-do-not-open-that-door.png) keeps the orange fur of the supplied cutout, not recoloured.",
     "method": "look",
     "method_note": "Inspect the named output against this requirement and its linked references.",
     "reference_assets": [
@@ -3402,8 +3427,13 @@
     "type": "human",
     "output_reference": "deliverables/thumbnail-do-not-open-that-door.png",
     "check": "Not counting title letters, Acid Signal #B6FF2E fills no more than a tenth of the graphics laid over the capture on “Channel thumbnail - DO NOT OPEN THAT DOOR” (thumbnail-do-not-open-that-door.png).",
-    "method": "estimate",
-    "method_note": "Of the graphics laid over the capture, title letters excluded, estimate how much is Acid Signal green; answer No only if clearly over 10%.",
+    "method": "measure",
+    "method_note": "Measure, do not estimate. On a measurement copy, mask the named area; exclude photographs and transparent canvas. Count the selected accent-colour pixels and divide by all pixels in that mask. Include text unless the condition excludes it. Test each PDF page or held video frame separately. Yes only when the unrounded percentage is at or below the stated limit. Use the linked measurement guide for rasterisation and colour matching. Each RGB channel must be within 5 of a selected palette colour.",
+    "measurement": {
+      "kind": "area_ratio",
+      "channel_tolerance": 5,
+      "max_percent": 10
+    },
     "reference_assets": []
   },
   {
@@ -3601,7 +3631,7 @@
     "output_id": "channel-animation",
     "type": "human",
     "output_reference": "deliverables/channel-animation.mp4",
-    "check": "Wherever Scrap appears in “Animated channel title and end card” (channel-animation.mp4), he keeps the orange fur and purple headset of the supplied cutout, not recoloured.",
+    "check": "Wherever Scrap appears in “Animated channel title and end card” (channel-animation.mp4), he keeps the orange fur of the supplied cutout, not recoloured.",
     "method": "look",
     "method_note": "Inspect the named output against this requirement and its linked references.",
     "reference_assets": [
@@ -3923,8 +3953,13 @@
     "type": "human",
     "output_reference": "deliverables/channel-animation.mp4",
     "check": "On every held frame of “Animated channel title and end card” (channel-animation.mp4), leaving title-word fills aside, Acid Signal #B6FF2E covers no more than 10% of the frame.",
-    "method": "estimate",
-    "method_note": "On each held frame, title-word fills excluded, estimate how much of the frame is Acid Signal green; answer No only if clearly over 10%.",
+    "method": "measure",
+    "method_note": "Measure, do not estimate. On a measurement copy, mask the named area; exclude photographs and transparent canvas. Count the selected accent-colour pixels and divide by all pixels in that mask. Include text unless the condition excludes it. Test each PDF page or held video frame separately. Yes only when the unrounded percentage is at or below the stated limit. Use the linked measurement guide for rasterisation and colour matching. Each RGB channel must be within 10 of a selected palette colour.",
+    "measurement": {
+      "kind": "area_ratio",
+      "channel_tolerance": 10,
+      "max_percent": 10
+    },
     "reference_assets": []
   },
   {
@@ -4202,7 +4237,7 @@
     "output_id": "channel-teaser",
     "type": "human",
     "output_reference": "deliverables/channel-teaser.mp4",
-    "check": "Wherever Scrap appears in “Channel feed teaser” (channel-teaser.mp4), he keeps the orange fur and purple headset of the supplied cutout, not recoloured.",
+    "check": "Wherever Scrap appears in “Channel feed teaser” (channel-teaser.mp4), he keeps the orange fur of the supplied cutout, not recoloured.",
     "method": "look",
     "method_note": "Inspect the named output against this requirement and its linked references.",
     "reference_assets": [
@@ -4538,8 +4573,13 @@
     "type": "human",
     "output_reference": "deliverables/channel-teaser.mp4",
     "check": "Wherever graphics are held still in “Channel feed teaser” (channel-teaser.mp4), Acid Signal #B6FF2E fills no more than a tenth of them, not counting title letters.",
-    "method": "estimate",
-    "method_note": "On held frames, title letters excluded, estimate how much of the graphics over footage is Acid Signal green; No only if clearly over 10%.",
+    "method": "measure",
+    "method_note": "Measure, do not estimate. On a measurement copy, mask the named area; exclude photographs and transparent canvas. Count the selected accent-colour pixels and divide by all pixels in that mask. Include text unless the condition excludes it. Test each PDF page or held video frame separately. Yes only when the unrounded percentage is at or below the stated limit. Use the linked measurement guide for rasterisation and colour matching. Each RGB channel must be within 10 of a selected palette colour.",
+    "measurement": {
+      "kind": "area_ratio",
+      "channel_tolerance": 10,
+      "max_percent": 10
+    },
     "reference_assets": []
   },
   {
@@ -4762,7 +4802,7 @@
     "output_id": "channel-teaser-vertical",
     "type": "human",
     "output_reference": "deliverables/channel-teaser-vertical.mp4",
-    "check": "Wherever Scrap appears in “Channel feed teaser upright cutdown” (channel-teaser-vertical.mp4), he keeps the orange fur and purple headset of the supplied cutout, not recoloured.",
+    "check": "Wherever Scrap appears in “Channel feed teaser upright cutdown” (channel-teaser-vertical.mp4), he keeps the orange fur of the supplied cutout, not recoloured.",
     "method": "look",
     "method_note": "Inspect the named output against this requirement and its linked references.",
     "reference_assets": [
@@ -5098,8 +5138,13 @@
     "type": "human",
     "output_reference": "deliverables/channel-teaser-vertical.mp4",
     "check": "Wherever graphics are held still in “Channel feed teaser upright cutdown” (channel-teaser-vertical.mp4), Acid Signal #B6FF2E fills no more than a tenth of them, not counting title letters.",
-    "method": "estimate",
-    "method_note": "On held frames, title letters excluded, estimate how much of the graphics over footage is Acid Signal green; No only if clearly over 10%.",
+    "method": "measure",
+    "method_note": "Measure, do not estimate. On a measurement copy, mask the named area; exclude photographs and transparent canvas. Count the selected accent-colour pixels and divide by all pixels in that mask. Include text unless the condition excludes it. Test each PDF page or held video frame separately. Yes only when the unrounded percentage is at or below the stated limit. Use the linked measurement guide for rasterisation and colour matching. Each RGB channel must be within 10 of a selected palette colour.",
+    "measurement": {
+      "kind": "area_ratio",
+      "channel_tolerance": 10,
+      "max_percent": 10
+    },
     "reference_assets": []
   },
   {
@@ -6298,5 +6343,140 @@
     "method": "look",
     "method_note": "Inspect the named output against this requirement and its linked references.",
     "reference_assets": []
+  },
+  {
+    "check_id": "MOTION-11/thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi/H039",
+    "output_id": "thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi",
+    "type": "human",
+    "output_reference": "deliverables/thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi.png",
+    "check": "Scrap on “Channel thumbnail - I GAVE MY TEAM ONE SIMPLE JOB AND THEY SET THE ENTIRE BASE ON FIRE” (thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi.png) keeps the purple headset of the supplied cutout, not recoloured.",
+    "method": "look",
+    "method_note": "Inspect the named output against this requirement and its linked references.",
+    "reference_assets": [
+      {
+        "filename": "staticfox_scrap_transparent.png",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/MOTION-11/staticfox_scrap_transparent.png"
+      }
+    ]
+  },
+  {
+    "check_id": "MOTION-11/thumbnail-everyone-off-the-platform/H039",
+    "output_id": "thumbnail-everyone-off-the-platform",
+    "type": "human",
+    "output_reference": "deliverables/thumbnail-everyone-off-the-platform.png",
+    "check": "Scrap on “Channel thumbnail - EVERYONE OFF THE PLATFORM” (thumbnail-everyone-off-the-platform.png) keeps the purple headset of the supplied cutout, not recoloured.",
+    "method": "look",
+    "method_note": "Inspect the named output against this requirement and its linked references.",
+    "reference_assets": [
+      {
+        "filename": "staticfox_scrap_transparent.png",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/MOTION-11/staticfox_scrap_transparent.png"
+      }
+    ]
+  },
+  {
+    "check_id": "MOTION-11/thumbnail-kitchen-gone/H039",
+    "output_id": "thumbnail-kitchen-gone",
+    "type": "human",
+    "output_reference": "deliverables/thumbnail-kitchen-gone.png",
+    "check": "Scrap on “Channel thumbnail - KITCHEN. GONE.” (thumbnail-kitchen-gone.png) keeps the purple headset of the supplied cutout, not recoloured.",
+    "method": "look",
+    "method_note": "Inspect the named output against this requirement and its linked references.",
+    "reference_assets": [
+      {
+        "filename": "staticfox_scrap_transparent.png",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/MOTION-11/staticfox_scrap_transparent.png"
+      }
+    ]
+  },
+  {
+    "check_id": "MOTION-11/thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas/H039",
+    "output_id": "thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas",
+    "type": "human",
+    "output_reference": "deliverables/thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas.png",
+    "check": "Scrap on “Channel thumbnail - WE SPENT SIX HOURS BUILDING A BRIDGE AND THEN DROVE STRAIGHT PAST IT” (thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas.png) keeps the purple headset of the supplied cutout, not recoloured.",
+    "method": "look",
+    "method_note": "Inspect the named output against this requirement and its linked references.",
+    "reference_assets": [
+      {
+        "filename": "staticfox_scrap_transparent.png",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/MOTION-11/staticfox_scrap_transparent.png"
+      }
+    ]
+  },
+  {
+    "check_id": "MOTION-11/thumbnail-we-broke-the-map/H040",
+    "output_id": "thumbnail-we-broke-the-map",
+    "type": "human",
+    "output_reference": "deliverables/thumbnail-we-broke-the-map.png",
+    "check": "Scrap on “Channel thumbnail - WE BROKE THE MAP” (thumbnail-we-broke-the-map.png) keeps the purple headset of the supplied cutout, not recoloured.",
+    "method": "look",
+    "method_note": "Inspect the named output against this requirement and its linked references.",
+    "reference_assets": [
+      {
+        "filename": "staticfox_scrap_transparent.png",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/MOTION-11/staticfox_scrap_transparent.png"
+      }
+    ]
+  },
+  {
+    "check_id": "MOTION-11/thumbnail-do-not-open-that-door/H040",
+    "output_id": "thumbnail-do-not-open-that-door",
+    "type": "human",
+    "output_reference": "deliverables/thumbnail-do-not-open-that-door.png",
+    "check": "Scrap on “Channel thumbnail - DO NOT OPEN THAT DOOR” (thumbnail-do-not-open-that-door.png) keeps the purple headset of the supplied cutout, not recoloured.",
+    "method": "look",
+    "method_note": "Inspect the named output against this requirement and its linked references.",
+    "reference_assets": [
+      {
+        "filename": "staticfox_scrap_transparent.png",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/MOTION-11/staticfox_scrap_transparent.png"
+      }
+    ]
+  },
+  {
+    "check_id": "MOTION-11/channel-animation/H041",
+    "output_id": "channel-animation",
+    "type": "human",
+    "output_reference": "deliverables/channel-animation.mp4",
+    "check": "Wherever Scrap appears in “Animated channel title and end card” (channel-animation.mp4), he keeps the purple headset of the supplied cutout, not recoloured.",
+    "method": "look",
+    "method_note": "Inspect the named output against this requirement and its linked references.",
+    "reference_assets": [
+      {
+        "filename": "staticfox_scrap_transparent.png",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/MOTION-11/staticfox_scrap_transparent.png"
+      }
+    ]
+  },
+  {
+    "check_id": "MOTION-11/channel-teaser/H043",
+    "output_id": "channel-teaser",
+    "type": "human",
+    "output_reference": "deliverables/channel-teaser.mp4",
+    "check": "Wherever Scrap appears in “Channel feed teaser” (channel-teaser.mp4), he keeps the purple headset of the supplied cutout, not recoloured.",
+    "method": "look",
+    "method_note": "Inspect the named output against this requirement and its linked references.",
+    "reference_assets": [
+      {
+        "filename": "staticfox_scrap_transparent.png",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/MOTION-11/staticfox_scrap_transparent.png"
+      }
+    ]
+  },
+  {
+    "check_id": "MOTION-11/channel-teaser-vertical/H050",
+    "output_id": "channel-teaser-vertical",
+    "type": "human",
+    "output_reference": "deliverables/channel-teaser-vertical.mp4",
+    "check": "Wherever Scrap appears in “Channel feed teaser upright cutdown” (channel-teaser-vertical.mp4), he keeps the purple headset of the supplied cutout, not recoloured.",
+    "method": "look",
+    "method_note": "Inspect the named output against this requirement and its linked references.",
+    "reference_assets": [
+      {
+        "filename": "staticfox_scrap_transparent.png",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/MOTION-11/staticfox_scrap_transparent.png"
+      }
+    ]
   }
 ]

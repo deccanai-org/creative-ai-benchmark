@@ -4,25 +4,28 @@
     {
       "rule_id": "B01",
       "kind": "brand",
-      "rule": "No colour outside #9CA98F, #C7A97A, #F4F0E8 and #33352E for type, panels, rules, buttons, icons or a recoloured wordmark.",
+      "rule": "No colour outside #9CA98F, #C7A97A, #F4F0E8 and #33352E for type, panels, rules, buttons, icons or a recoloured wordmark. Exception: the supplied wordmark may retain original ink #222724 on Warm Off White or Sage.",
       "source": "brand_identity.palette_rules.forbidden",
       "cells": {
         "studio-launch": {
           "checks": [
             "PHOTO-28/studio-launch/H033",
-            "PHOTO-28/studio-launch/H079"
+            "PHOTO-28/studio-launch/H079",
+            "PHOTO-28/studio-launch/H093"
           ]
         },
         "class-feed": {
           "checks": [
             "PHOTO-28/class-feed/H033",
-            "PHOTO-28/class-feed/H073"
+            "PHOTO-28/class-feed/H073",
+            "PHOTO-28/class-feed/H086"
           ]
         },
         "booking-story": {
           "checks": [
             "PHOTO-28/booking-story/H030",
-            "PHOTO-28/booking-story/H071"
+            "PHOTO-28/booking-story/H071",
+            "PHOTO-28/booking-story/H085"
           ]
         }
       }
@@ -99,25 +102,28 @@
     {
       "rule_id": "B04",
       "kind": "brand",
-      "rule": "On Warm Off White, all type and the wordmark are Soft Ink, except small labels, which may be Sage.",
+      "rule": "On Warm Off White, all type and the wordmark are Soft Ink, except small labels, which may be Sage. Exception: the supplied wordmark may retain original ink #222724 on Warm Off White or Sage.",
       "source": "brand_identity.palette_rules.distribution",
       "cells": {
         "studio-launch": {
           "checks": [
             "PHOTO-28/studio-launch/H037",
-            "PHOTO-28/studio-launch/H079"
+            "PHOTO-28/studio-launch/H079",
+            "PHOTO-28/studio-launch/H093"
           ]
         },
         "class-feed": {
           "checks": [
             "PHOTO-28/class-feed/H036",
-            "PHOTO-28/class-feed/H073"
+            "PHOTO-28/class-feed/H073",
+            "PHOTO-28/class-feed/H086"
           ]
         },
         "booking-story": {
           "checks": [
             "PHOTO-28/booking-story/H034",
-            "PHOTO-28/booking-story/H071"
+            "PHOTO-28/booking-story/H071",
+            "PHOTO-28/booking-story/H085"
           ]
         }
       }
@@ -125,25 +131,28 @@
     {
       "rule_id": "B05",
       "kind": "brand",
-      "rule": "On Sage, all type and the wordmark are Soft Ink or Warm Off White.",
+      "rule": "On Sage, all type and the wordmark are Soft Ink or Warm Off White. Exception: the supplied wordmark may retain original ink #222724 on Warm Off White or Sage.",
       "source": "brand_identity.palette_rules.distribution",
       "cells": {
         "studio-launch": {
           "checks": [
             "PHOTO-28/studio-launch/H059",
-            "PHOTO-28/studio-launch/H079"
+            "PHOTO-28/studio-launch/H079",
+            "PHOTO-28/studio-launch/H093"
           ]
         },
         "class-feed": {
           "checks": [
             "PHOTO-28/class-feed/H058",
-            "PHOTO-28/class-feed/H073"
+            "PHOTO-28/class-feed/H073",
+            "PHOTO-28/class-feed/H086"
           ]
         },
         "booking-story": {
           "checks": [
             "PHOTO-28/booking-story/H056",
-            "PHOTO-28/booking-story/H071"
+            "PHOTO-28/booking-story/H071",
+            "PHOTO-28/booking-story/H085"
           ]
         }
       }
@@ -571,18 +580,21 @@
         "studio-launch": {
           "checks": [
             "PHOTO-28/studio-launch/H079",
+            "PHOTO-28/studio-launch/H093",
             "PHOTO-28/studio-launch/H035"
           ]
         },
         "class-feed": {
           "checks": [
             "PHOTO-28/class-feed/H073",
+            "PHOTO-28/class-feed/H086",
             "PHOTO-28/class-feed/H035"
           ]
         },
         "booking-story": {
           "checks": [
             "PHOTO-28/booking-story/H071",
+            "PHOTO-28/booking-story/H085",
             "PHOTO-28/booking-story/H032"
           ]
         }
@@ -686,7 +698,9 @@
       "source": "brand_identity.type_system.scale[01]",
       "cells": {
         "studio-launch": {
-          "not_verified": "Exact type size cannot be measured in a delivered PNG; the brand value 88 px is kept as a design target."
+          "not_verified": "Exact type size cannot be measured in a delivered PNG; the brand value 88 px is kept as a design target.",
+          "scoring": "excluded",
+          "scoring_reason": "Design instruction retained; evidence is unavailable in the requested finished format. Excluded from the score denominator."
         },
         "class-feed": {
           "na": "The H1 style is assigned only to the launch-page headline, not this output."
@@ -703,7 +717,9 @@
       "source": "brand_identity.type_system.scale[01]",
       "cells": {
         "studio-launch": {
-          "not_verified": "Baseline-to-baseline leading cannot be verified reliably in a delivered PNG; 104 pixels is kept as a design target."
+          "not_verified": "Baseline-to-baseline leading cannot be verified reliably in a delivered PNG; 104 pixels is kept as a design target.",
+          "scoring": "excluded",
+          "scoring_reason": "Design instruction retained; evidence is unavailable in the requested finished format. Excluded from the score denominator."
         },
         "class-feed": {
           "na": "The H1 style is assigned only to the launch-page headline, not this output."
@@ -720,7 +736,9 @@
       "source": "brand_identity.type_system.scale[01]",
       "cells": {
         "studio-launch": {
-          "not_verified": "Tracking in thousandths of an em cannot be judged in a delivered PNG; -10 is kept as a design target."
+          "not_verified": "Tracking in thousandths of an em cannot be judged in a delivered PNG; -10 is kept as a design target.",
+          "scoring": "excluded",
+          "scoring_reason": "Design instruction retained; evidence is unavailable in the requested finished format. Excluded from the score denominator."
         },
         "class-feed": {
           "na": "The H1 style is assigned only to the launch-page headline, not this output."
@@ -760,13 +778,19 @@
       "source": "brand_identity.type_system.scale[02] + rules",
       "cells": {
         "studio-launch": {
-          "not_verified": "Exact type size cannot be measured in a delivered PNG; the brand value 56 px (optional secondary heading) is kept as a design target."
+          "not_verified": "Exact type size cannot be measured in a delivered PNG; the brand value 56 px (optional secondary heading) is kept as a design target.",
+          "scoring": "excluded",
+          "scoring_reason": "Design instruction retained; evidence is unavailable in the requested finished format. Excluded from the score denominator."
         },
         "class-feed": {
-          "not_verified": "Exact type size cannot be measured in a delivered PNG; the brand value 56 px is kept as a design target."
+          "not_verified": "Exact type size cannot be measured in a delivered PNG; the brand value 56 px is kept as a design target.",
+          "scoring": "excluded",
+          "scoring_reason": "Design instruction retained; evidence is unavailable in the requested finished format. Excluded from the score denominator."
         },
         "booking-story": {
-          "not_verified": "Exact type size cannot be measured in a delivered PNG; the brand value 56 px is kept as a design target."
+          "not_verified": "Exact type size cannot be measured in a delivered PNG; the brand value 56 px is kept as a design target.",
+          "scoring": "excluded",
+          "scoring_reason": "Design instruction retained; evidence is unavailable in the requested finished format. Excluded from the score denominator."
         }
       }
     },
@@ -777,13 +801,19 @@
       "source": "brand_identity.type_system.scale[02] + rules",
       "cells": {
         "studio-launch": {
-          "not_verified": "Baseline-to-baseline leading cannot be verified reliably in a delivered PNG; 68 pixels (optional secondary heading) is kept as a design target."
+          "not_verified": "Baseline-to-baseline leading cannot be verified reliably in a delivered PNG; 68 pixels (optional secondary heading) is kept as a design target.",
+          "scoring": "excluded",
+          "scoring_reason": "Design instruction retained; evidence is unavailable in the requested finished format. Excluded from the score denominator."
         },
         "class-feed": {
-          "not_verified": "Baseline-to-baseline leading cannot be verified reliably in a delivered PNG; 68 pixels is kept as a design target."
+          "not_verified": "Baseline-to-baseline leading cannot be verified reliably in a delivered PNG; 68 pixels is kept as a design target.",
+          "scoring": "excluded",
+          "scoring_reason": "Design instruction retained; evidence is unavailable in the requested finished format. Excluded from the score denominator."
         },
         "booking-story": {
-          "not_verified": "Baseline-to-baseline leading cannot be verified reliably in a delivered PNG; 68 pixels is kept as a design target."
+          "not_verified": "Baseline-to-baseline leading cannot be verified reliably in a delivered PNG; 68 pixels is kept as a design target.",
+          "scoring": "excluded",
+          "scoring_reason": "Design instruction retained; evidence is unavailable in the requested finished format. Excluded from the score denominator."
         }
       }
     },
@@ -794,13 +824,19 @@
       "source": "brand_identity.type_system.scale[02]",
       "cells": {
         "studio-launch": {
-          "not_verified": "Tracking in thousandths of an em cannot be judged in a delivered PNG; -5 (optional secondary heading) is kept as a design target."
+          "not_verified": "Tracking in thousandths of an em cannot be judged in a delivered PNG; -5 (optional secondary heading) is kept as a design target.",
+          "scoring": "excluded",
+          "scoring_reason": "Design instruction retained; evidence is unavailable in the requested finished format. Excluded from the score denominator."
         },
         "class-feed": {
-          "not_verified": "Tracking in thousandths of an em cannot be judged in a delivered PNG; -5 is kept as a design target."
+          "not_verified": "Tracking in thousandths of an em cannot be judged in a delivered PNG; -5 is kept as a design target.",
+          "scoring": "excluded",
+          "scoring_reason": "Design instruction retained; evidence is unavailable in the requested finished format. Excluded from the score denominator."
         },
         "booking-story": {
-          "not_verified": "Tracking in thousandths of an em cannot be judged in a delivered PNG; -5 is kept as a design target."
+          "not_verified": "Tracking in thousandths of an em cannot be judged in a delivered PNG; -5 is kept as a design target.",
+          "scoring": "excluded",
+          "scoring_reason": "Design instruction retained; evidence is unavailable in the requested finished format. Excluded from the score denominator."
         }
       }
     },
@@ -834,13 +870,19 @@
       "source": "brand_identity.type_system.scale[03] + rules",
       "cells": {
         "studio-launch": {
-          "not_verified": "Exact type size cannot be measured in a delivered PNG; the brand value 22 px is kept as a design target."
+          "not_verified": "Exact type size cannot be measured in a delivered PNG; the brand value 22 px is kept as a design target.",
+          "scoring": "excluded",
+          "scoring_reason": "Design instruction retained; evidence is unavailable in the requested finished format. Excluded from the score denominator."
         },
         "class-feed": {
-          "not_verified": "Exact type size cannot be measured in a delivered PNG; the brand value 22 px is kept as a design target."
+          "not_verified": "Exact type size cannot be measured in a delivered PNG; the brand value 22 px is kept as a design target.",
+          "scoring": "excluded",
+          "scoring_reason": "Design instruction retained; evidence is unavailable in the requested finished format. Excluded from the score denominator."
         },
         "booking-story": {
-          "not_verified": "Exact type size cannot be measured in a delivered PNG; the brand value 22 px is kept as a design target."
+          "not_verified": "Exact type size cannot be measured in a delivered PNG; the brand value 22 px is kept as a design target.",
+          "scoring": "excluded",
+          "scoring_reason": "Design instruction retained; evidence is unavailable in the requested finished format. Excluded from the score denominator."
         }
       }
     },
@@ -851,13 +893,19 @@
       "source": "brand_identity.type_system.scale[03]",
       "cells": {
         "studio-launch": {
-          "not_verified": "Baseline-to-baseline leading cannot be verified reliably in a delivered PNG; 34 pixels is kept as a design target."
+          "not_verified": "Baseline-to-baseline leading cannot be verified reliably in a delivered PNG; 34 pixels is kept as a design target.",
+          "scoring": "excluded",
+          "scoring_reason": "Design instruction retained; evidence is unavailable in the requested finished format. Excluded from the score denominator."
         },
         "class-feed": {
-          "not_verified": "Baseline-to-baseline leading cannot be verified reliably in a delivered PNG; 34 pixels is kept as a design target."
+          "not_verified": "Baseline-to-baseline leading cannot be verified reliably in a delivered PNG; 34 pixels is kept as a design target.",
+          "scoring": "excluded",
+          "scoring_reason": "Design instruction retained; evidence is unavailable in the requested finished format. Excluded from the score denominator."
         },
         "booking-story": {
-          "not_verified": "Baseline-to-baseline leading cannot be verified reliably in a delivered PNG; 34 pixels is kept as a design target."
+          "not_verified": "Baseline-to-baseline leading cannot be verified reliably in a delivered PNG; 34 pixels is kept as a design target.",
+          "scoring": "excluded",
+          "scoring_reason": "Design instruction retained; evidence is unavailable in the requested finished format. Excluded from the score denominator."
         }
       }
     },
@@ -868,13 +916,19 @@
       "source": "brand_identity.type_system.scale[03]",
       "cells": {
         "studio-launch": {
-          "not_verified": "Tracking in thousandths of an em cannot be judged in a delivered PNG; 0 is kept as a design target."
+          "not_verified": "Tracking in thousandths of an em cannot be judged in a delivered PNG; 0 is kept as a design target.",
+          "scoring": "excluded",
+          "scoring_reason": "Design instruction retained; evidence is unavailable in the requested finished format. Excluded from the score denominator."
         },
         "class-feed": {
-          "not_verified": "Tracking in thousandths of an em cannot be judged in a delivered PNG; 0 is kept as a design target."
+          "not_verified": "Tracking in thousandths of an em cannot be judged in a delivered PNG; 0 is kept as a design target.",
+          "scoring": "excluded",
+          "scoring_reason": "Design instruction retained; evidence is unavailable in the requested finished format. Excluded from the score denominator."
         },
         "booking-story": {
-          "not_verified": "Tracking in thousandths of an em cannot be judged in a delivered PNG; 0 is kept as a design target."
+          "not_verified": "Tracking in thousandths of an em cannot be judged in a delivered PNG; 0 is kept as a design target.",
+          "scoring": "excluded",
+          "scoring_reason": "Design instruction retained; evidence is unavailable in the requested finished format. Excluded from the score denominator."
         }
       }
     },
@@ -908,13 +962,19 @@
       "source": "brand_identity.type_system.scale[04] + rules",
       "cells": {
         "studio-launch": {
-          "not_verified": "Exact type size cannot be measured in a delivered PNG; the brand value 16 px is kept as a design target."
+          "not_verified": "Exact type size cannot be measured in a delivered PNG; the brand value 16 px is kept as a design target.",
+          "scoring": "excluded",
+          "scoring_reason": "Design instruction retained; evidence is unavailable in the requested finished format. Excluded from the score denominator."
         },
         "class-feed": {
-          "not_verified": "Exact type size cannot be measured in a delivered PNG; the brand value 16 px is kept as a design target."
+          "not_verified": "Exact type size cannot be measured in a delivered PNG; the brand value 16 px is kept as a design target.",
+          "scoring": "excluded",
+          "scoring_reason": "Design instruction retained; evidence is unavailable in the requested finished format. Excluded from the score denominator."
         },
         "booking-story": {
-          "not_verified": "Exact type size cannot be measured in a delivered PNG; the brand value 16 px is kept as a design target."
+          "not_verified": "Exact type size cannot be measured in a delivered PNG; the brand value 16 px is kept as a design target.",
+          "scoring": "excluded",
+          "scoring_reason": "Design instruction retained; evidence is unavailable in the requested finished format. Excluded from the score denominator."
         }
       }
     },
@@ -925,13 +985,19 @@
       "source": "brand_identity.type_system.scale[04]",
       "cells": {
         "studio-launch": {
-          "not_verified": "Baseline-to-baseline leading cannot be verified reliably in a delivered PNG; 24 pixels is kept as a design target."
+          "not_verified": "Baseline-to-baseline leading cannot be verified reliably in a delivered PNG; 24 pixels is kept as a design target.",
+          "scoring": "excluded",
+          "scoring_reason": "Design instruction retained; evidence is unavailable in the requested finished format. Excluded from the score denominator."
         },
         "class-feed": {
-          "not_verified": "Baseline-to-baseline leading cannot be verified reliably in a delivered PNG; 24 pixels is kept as a design target."
+          "not_verified": "Baseline-to-baseline leading cannot be verified reliably in a delivered PNG; 24 pixels is kept as a design target.",
+          "scoring": "excluded",
+          "scoring_reason": "Design instruction retained; evidence is unavailable in the requested finished format. Excluded from the score denominator."
         },
         "booking-story": {
-          "not_verified": "Baseline-to-baseline leading cannot be verified reliably in a delivered PNG; 24 pixels is kept as a design target."
+          "not_verified": "Baseline-to-baseline leading cannot be verified reliably in a delivered PNG; 24 pixels is kept as a design target.",
+          "scoring": "excluded",
+          "scoring_reason": "Design instruction retained; evidence is unavailable in the requested finished format. Excluded from the score denominator."
         }
       }
     },
@@ -942,13 +1008,19 @@
       "source": "brand_identity.type_system.scale[04]",
       "cells": {
         "studio-launch": {
-          "not_verified": "Tracking in thousandths of an em cannot be judged in a delivered PNG; +15 is kept as a design target."
+          "not_verified": "Tracking in thousandths of an em cannot be judged in a delivered PNG; +15 is kept as a design target.",
+          "scoring": "excluded",
+          "scoring_reason": "Design instruction retained; evidence is unavailable in the requested finished format. Excluded from the score denominator."
         },
         "class-feed": {
-          "not_verified": "Tracking in thousandths of an em cannot be judged in a delivered PNG; +15 is kept as a design target."
+          "not_verified": "Tracking in thousandths of an em cannot be judged in a delivered PNG; +15 is kept as a design target.",
+          "scoring": "excluded",
+          "scoring_reason": "Design instruction retained; evidence is unavailable in the requested finished format. Excluded from the score denominator."
         },
         "booking-story": {
-          "not_verified": "Tracking in thousandths of an em cannot be judged in a delivered PNG; +15 is kept as a design target."
+          "not_verified": "Tracking in thousandths of an em cannot be judged in a delivered PNG; +15 is kept as a design target.",
+          "scoring": "excluded",
+          "scoring_reason": "Design instruction retained; evidence is unavailable in the requested finished format. Excluded from the score denominator."
         }
       }
     },
@@ -1846,6 +1918,205 @@
           ]
         }
       }
+    },
+    {
+      "rule_id": "C-69d8ea7b3689",
+      "kind": "deliverable",
+      "rule": "the named deliverable is present in the delivery package.",
+      "source": "PHOTO-28/studio-launch/A001; PHOTO-28/class-feed/A001; PHOTO-28/booking-story/A001",
+      "scope": [
+        "booking-story",
+        "class-feed",
+        "studio-launch"
+      ],
+      "cells": {
+        "studio-launch": {
+          "checks": [
+            "PHOTO-28/studio-launch/A001"
+          ]
+        },
+        "class-feed": {
+          "checks": [
+            "PHOTO-28/class-feed/A001"
+          ]
+        },
+        "booking-story": {
+          "checks": [
+            "PHOTO-28/booking-story/A001"
+          ]
+        }
+      }
+    },
+    {
+      "rule_id": "C-46a780239ee3",
+      "kind": "deliverable",
+      "rule": "the named deliverable opens as a valid PNG file with no errors or corruption.",
+      "source": "PHOTO-28/studio-launch/A002; PHOTO-28/class-feed/A002; PHOTO-28/booking-story/A002",
+      "scope": [
+        "booking-story",
+        "class-feed",
+        "studio-launch"
+      ],
+      "cells": {
+        "studio-launch": {
+          "checks": [
+            "PHOTO-28/studio-launch/A002"
+          ]
+        },
+        "class-feed": {
+          "checks": [
+            "PHOTO-28/class-feed/A002"
+          ]
+        },
+        "booking-story": {
+          "checks": [
+            "PHOTO-28/booking-story/A002"
+          ]
+        }
+      }
+    },
+    {
+      "rule_id": "C-b21e423bf8cf",
+      "kind": "deliverable",
+      "rule": "the named deliverable is exactly 1440 pixels wide.",
+      "source": "PHOTO-28/studio-launch/A003",
+      "scope": [
+        "studio-launch"
+      ],
+      "cells": {
+        "studio-launch": {
+          "checks": [
+            "PHOTO-28/studio-launch/A003"
+          ]
+        },
+        "class-feed": {
+          "na": "This output-specific requirement is scoped to the named files in this row; other outputs have their own requirement rows."
+        },
+        "booking-story": {
+          "na": "This output-specific requirement is scoped to the named files in this row; other outputs have their own requirement rows."
+        }
+      }
+    },
+    {
+      "rule_id": "C-0fa02b5dc19d",
+      "kind": "deliverable",
+      "rule": "the named deliverable is exactly 2400 pixels tall.",
+      "source": "PHOTO-28/studio-launch/A004",
+      "scope": [
+        "studio-launch"
+      ],
+      "cells": {
+        "studio-launch": {
+          "checks": [
+            "PHOTO-28/studio-launch/A004"
+          ]
+        },
+        "class-feed": {
+          "na": "This output-specific requirement is scoped to the named files in this row; other outputs have their own requirement rows."
+        },
+        "booking-story": {
+          "na": "This output-specific requirement is scoped to the named files in this row; other outputs have their own requirement rows."
+        }
+      }
+    },
+    {
+      "rule_id": "C-92df9b02e214",
+      "kind": "deliverable",
+      "rule": "the named deliverable is exactly 1080 pixels wide.",
+      "source": "PHOTO-28/class-feed/A003; PHOTO-28/booking-story/A003",
+      "scope": [
+        "booking-story",
+        "class-feed"
+      ],
+      "cells": {
+        "studio-launch": {
+          "na": "This output-specific requirement is scoped to the named files in this row; other outputs have their own requirement rows."
+        },
+        "class-feed": {
+          "checks": [
+            "PHOTO-28/class-feed/A003"
+          ]
+        },
+        "booking-story": {
+          "checks": [
+            "PHOTO-28/booking-story/A003"
+          ]
+        }
+      }
+    },
+    {
+      "rule_id": "C-c99b7ac1218a",
+      "kind": "deliverable",
+      "rule": "the named deliverable is exactly 1350 pixels tall.",
+      "source": "PHOTO-28/class-feed/A004",
+      "scope": [
+        "class-feed"
+      ],
+      "cells": {
+        "studio-launch": {
+          "na": "This output-specific requirement is scoped to the named files in this row; other outputs have their own requirement rows."
+        },
+        "class-feed": {
+          "checks": [
+            "PHOTO-28/class-feed/A004"
+          ]
+        },
+        "booking-story": {
+          "na": "This output-specific requirement is scoped to the named files in this row; other outputs have their own requirement rows."
+        }
+      }
+    },
+    {
+      "rule_id": "C-ff83fd8baadd",
+      "kind": "deliverable",
+      "rule": "the named deliverable is exactly 1920 pixels tall.",
+      "source": "PHOTO-28/booking-story/A004",
+      "scope": [
+        "booking-story"
+      ],
+      "cells": {
+        "studio-launch": {
+          "na": "This output-specific requirement is scoped to the named files in this row; other outputs have their own requirement rows."
+        },
+        "class-feed": {
+          "na": "This output-specific requirement is scoped to the named files in this row; other outputs have their own requirement rows."
+        },
+        "booking-story": {
+          "checks": [
+            "PHOTO-28/booking-story/A004"
+          ]
+        }
+      }
+    },
+    {
+      "rule_id": "C-a282c9bbb65d",
+      "kind": "deliverable",
+      "rule": "the named deliverable is in sRGB colour: it carries an sRGB profile or no colour profile.",
+      "source": "PHOTO-28/studio-launch/A005; PHOTO-28/class-feed/A005; PHOTO-28/booking-story/A005",
+      "scope": [
+        "booking-story",
+        "class-feed",
+        "studio-launch"
+      ],
+      "cells": {
+        "studio-launch": {
+          "checks": [
+            "PHOTO-28/studio-launch/A005"
+          ]
+        },
+        "class-feed": {
+          "checks": [
+            "PHOTO-28/class-feed/A005"
+          ]
+        },
+        "booking-story": {
+          "checks": [
+            "PHOTO-28/booking-story/A005"
+          ]
+        }
+      }
     }
-  ]
+  ],
+  "scoring_policy": "Score only the listed current Auto and Human verifiers. A design target marked \"Not scored\" in coverage remains a client instruction but is excluded from the score denominator: the requested delivery does not provide enough evidence to verify it. Do not infer a pass or failure. If a listed measurement cannot be completed, leave it unanswered and record the missing evidence; do not guess. Human answers remain Yes/No. Historical run results are not current scores.",
+  "revision": "pilot13_verifier_lock_2026_10_22"
 }

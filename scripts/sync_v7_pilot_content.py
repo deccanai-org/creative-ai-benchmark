@@ -155,6 +155,11 @@ def sync(check: bool = False) -> None:
         brief = f'# {spec["task_code"]} | {spec["task_name"]}\n\n{spec["client_brief"]}\n'
         reconcile(folder / "BRIEF.md", brief, check)
         brand_path = folder / "BRAND_IDENTITY.json"
+        output_path = folder / 'OUTPUT_REGISTER.json'
+        output_text = output_path.read_text()
+        if json.loads(output_text) != spec['deliverables']:
+            indent = len(re.search(r'\n( +)\{', output_text)[1])
+            reconcile(output_path, json.dumps(spec['deliverables'], ensure_ascii=False, indent=indent) + ('\n' if output_text.endswith('\n') else ''), check)
         brand = spec["brand_identity"]
         markdown = brand_markdown(brand)
         reconcile(folder / "BRAND_IDENTITY.md", markdown, check)
@@ -164,10 +169,14 @@ def sync(check: bool = False) -> None:
         verifier_data = merge_checks(json.loads(old_verifier_text), spec["verifiers_auto"] + spec["verifiers_human"])
         reconcile(verifier_path, json.dumps(verifier_data, ensure_ascii=False, indent=1) + ("\n" if old_verifier_text.endswith("\n") else ""), check)
         verifier_md=['# '+spec['task_name']+' - current verifiers', '', 'Revised input pack. Previous execution results are historical, not current ratings.', '']
+        if spec['evaluation'].get('objective_scoring_policy'):
+            verifier_md += [spec['evaluation']['objective_scoring_policy'], '', '[Measurement guide](../../annotation-pilot/measurement-guide.html)', '']
         for kind in ['auto','human']:
             verifier_md+=['## '+kind.capitalize()+' verifiers','']
             for c in verifier_data:
-                if c['type']==kind: verifier_md += ['- `'+c['check_id']+'` '+c['check']]
+                if c['type']==kind:
+                    verifier_md += ['- `'+c['check_id']+'` '+c['check']]
+                    if kind == 'human': verifier_md += ['  '+c['method'].capitalize()+': '+c['method_note']]
             verifier_md.append('')
         reconcile(folder/'VERIFIERS.md','\n'.join(verifier_md).rstrip()+'\n',check)
         lines=[f'# {spec["task_name"]}: requested deliverables', '', 'Current input revision: pilot13_inputs_2026_10_14. Prior outputs have not been reassessed against these revised inputs.', '']
@@ -184,7 +193,7 @@ def sync(check: bool = False) -> None:
     for task in tasks:
         if task["new_id"] in specs:
             spec = specs[task["new_id"]]
-            for key in ('client_brief','brand_identity','assets','deliverable_groups','deliverables','input_revision','revision_date'):
+            for key in ('client_brief','brand_identity','assets','deliverable_groups','deliverables','input_revision','revision_date','evaluation'):
                 task[key]=deepcopy(spec[key])
             for key in ("verifiers_auto", "verifiers_human"):
                 task[key] = merge_checks(task[key], spec[key])
@@ -217,6 +226,8 @@ def sync(check: bool = False) -> None:
                         o[key]=deepcopy(current[key])
                     o['verification_scope']='historical_before_input_refresh'
             task['input_revision']=spec['input_revision']
+            task['scoring_policy']=spec['evaluation'].get('objective_scoring_policy', '')
+            task['unscored_design_targets']=deepcopy(spec['evaluation'].get('unscored_design_targets', []))
             task['current_type_html']='<style>'+font_css(spec['brand_identity'])+'</style>'+render_type_system(spec['brand_identity'])
             task['current_deliverables_html']='<style>.output-row{padding:16px 0;border-bottom:1px solid #ddd}.output-row code,.output-row small{display:block}.output-requirements{padding-left:20px}.output-requirements li{margin:5px 0}</style>'+render_outputs(spec['deliverables'],spec['deliverable_groups'])
     serialized = json.dumps(data, ensure_ascii=False, separators=(",", ":"))
@@ -227,6 +238,9 @@ def sync(check: bool = False) -> None:
     replacement="""if(t.input_revision){const note='<p class="verifier-note"><strong>Revised input pack:</strong> '+esc(t.input_revision.previous_run_results)+'</p>';if(section==='Outputs')html=note+'<h2>Current requested deliverables</h2>'+t.current_deliverables_html+'<h2>Historical pilot outputs</h2>'+html;if(section==='Auto verifiers'||section==='Human verifiers')html=note+html;}document.getElementById('content').innerHTML=html;}"""
     if 'Current requested deliverables</h2>' not in document:
         document=document.replace(hook,replacement)
+    if 'id="current-scoring-policy"' not in document:
+        scoring_hook = """if(t.scoring_policy&&(section==='Auto verifiers'||section==='Human verifiers'))html='<div id="current-scoring-policy"><p>'+esc(t.scoring_policy)+'</p><p>'+t.unscored_design_targets.length+' unscored design targets. <a href="annotation-pilot/coverage/'+encodeURIComponent(t.id)+'.html">Coverage and exclusions</a> · <a href="annotation-pilot/measurement-guide.html">Measurement guide</a></p></div>'+html;"""
+        document=document.replace(hook,scoring_hook+hook)
     # Deep links to a tab, e.g. index.html#PHOTO-04/human; the address follows task and tab clicks.
     document=document.replace(
         "let current=data.tasks.find(t=>t.id===location.hash.slice(1))||data.tasks[0],section='Brief';",

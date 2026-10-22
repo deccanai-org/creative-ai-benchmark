@@ -11257,12 +11257,17 @@
   "requirement": "If Ink Black #201914 appears on “Recovered sticker artwork - Window mark” (recovered-sticker-window-mark.svg), it covers no more than 5% of the sticker's inked area.",
   "pass_condition": "If Ink Black #201914 appears on “Recovered sticker artwork - Window mark” (recovered-sticker-window-mark.svg), it covers no more than 5% of the sticker's inked area.",
   "reference_assets": [],
-  "revision": "pilot13_c_2026_10_22",
+  "revision": "pilot13_verifier_lock_2026_10_22",
   "origin": "pilot13_c_2026_10_22",
   "k_id": "K2_Q3",
   "k_label": "Brand-system compliance",
-  "method": "estimate",
-  "method_note": "Use Select Same Fill on any #201914 shape, then estimate those shapes' share of all inked area; answer No only if clearly over 5%."
+  "method": "measure",
+  "method_note": "Measure, do not estimate. On a measurement copy, mask the named area; exclude photographs and transparent canvas. Count the selected accent-colour pixels and divide by all pixels in that mask. Include text unless the condition excludes it. Test each PDF page or held video frame separately. Yes only when the unrounded percentage is at or below the stated limit. Use the linked measurement guide for rasterisation and colour matching. The mask is the visible inked artwork only, not the sticker background or transparent gaps. Each RGB channel must be within 5 of a selected palette colour.",
+  "measurement": {
+   "kind": "area_ratio",
+   "channel_tolerance": 5,
+   "max_percent": 5
+  }
  },
  {
   "task_id": "VECTOR-04",
@@ -11286,12 +11291,17 @@
   "requirement": "If Ink Black #201914 appears on “Recovered sticker artwork - Bag design 1” (recovered-sticker-bag-design-1.svg), it covers no more than 5% of the sticker's inked area.",
   "pass_condition": "If Ink Black #201914 appears on “Recovered sticker artwork - Bag design 1” (recovered-sticker-bag-design-1.svg), it covers no more than 5% of the sticker's inked area.",
   "reference_assets": [],
-  "revision": "pilot13_c_2026_10_22",
+  "revision": "pilot13_verifier_lock_2026_10_22",
   "origin": "pilot13_c_2026_10_22",
   "k_id": "K2_Q3",
   "k_label": "Brand-system compliance",
-  "method": "estimate",
-  "method_note": "Use Select Same Fill on any #201914 shape, then estimate those shapes' share of all inked area; answer No only if clearly over 5%."
+  "method": "measure",
+  "method_note": "Measure, do not estimate. On a measurement copy, mask the named area; exclude photographs and transparent canvas. Count the selected accent-colour pixels and divide by all pixels in that mask. Include text unless the condition excludes it. Test each PDF page or held video frame separately. Yes only when the unrounded percentage is at or below the stated limit. Use the linked measurement guide for rasterisation and colour matching. The mask is the visible inked artwork only, not the sticker background or transparent gaps. Each RGB channel must be within 5 of a selected palette colour.",
+  "measurement": {
+   "kind": "area_ratio",
+   "channel_tolerance": 5,
+   "max_percent": 5
+  }
  },
  {
   "task_id": "VECTOR-04",
@@ -11315,12 +11325,17 @@
   "requirement": "If Ink Black #201914 appears on “Recovered sticker artwork - Bag design 2” (recovered-sticker-bag-design-2.svg), it covers no more than 5% of the sticker's inked area.",
   "pass_condition": "If Ink Black #201914 appears on “Recovered sticker artwork - Bag design 2” (recovered-sticker-bag-design-2.svg), it covers no more than 5% of the sticker's inked area.",
   "reference_assets": [],
-  "revision": "pilot13_c_2026_10_22",
+  "revision": "pilot13_verifier_lock_2026_10_22",
   "origin": "pilot13_c_2026_10_22",
   "k_id": "K2_Q3",
   "k_label": "Brand-system compliance",
-  "method": "estimate",
-  "method_note": "Use Select Same Fill on any #201914 shape, then estimate those shapes' share of all inked area; answer No only if clearly over 5%."
+  "method": "measure",
+  "method_note": "Measure, do not estimate. On a measurement copy, mask the named area; exclude photographs and transparent canvas. Count the selected accent-colour pixels and divide by all pixels in that mask. Include text unless the condition excludes it. Test each PDF page or held video frame separately. Yes only when the unrounded percentage is at or below the stated limit. Use the linked measurement guide for rasterisation and colour matching. The mask is the visible inked artwork only, not the sticker background or transparent gaps. Each RGB channel must be within 5 of a selected palette colour.",
+  "measurement": {
+   "kind": "area_ratio",
+   "channel_tolerance": 5,
+   "max_percent": 5
+  }
  },
  {
   "task_id": "VECTOR-04",
@@ -11344,12 +11359,17 @@
   "requirement": "If Ink Black #201914 appears on “Recovered sticker artwork - Bag design 3” (recovered-sticker-bag-design-3.svg), it covers no more than 5% of the sticker's inked area.",
   "pass_condition": "If Ink Black #201914 appears on “Recovered sticker artwork - Bag design 3” (recovered-sticker-bag-design-3.svg), it covers no more than 5% of the sticker's inked area.",
   "reference_assets": [],
-  "revision": "pilot13_c_2026_10_22",
+  "revision": "pilot13_verifier_lock_2026_10_22",
   "origin": "pilot13_c_2026_10_22",
   "k_id": "K2_Q3",
   "k_label": "Brand-system compliance",
-  "method": "estimate",
-  "method_note": "Use Select Same Fill on any #201914 shape, then estimate those shapes' share of all inked area; answer No only if clearly over 5%."
+  "method": "measure",
+  "method_note": "Measure, do not estimate. On a measurement copy, mask the named area; exclude photographs and transparent canvas. Count the selected accent-colour pixels and divide by all pixels in that mask. Include text unless the condition excludes it. Test each PDF page or held video frame separately. Yes only when the unrounded percentage is at or below the stated limit. Use the linked measurement guide for rasterisation and colour matching. The mask is the visible inked artwork only, not the sticker background or transparent gaps. Each RGB channel must be within 5 of a selected palette colour.",
+  "measurement": {
+   "kind": "area_ratio",
+   "channel_tolerance": 5,
+   "max_percent": 5
+  }
  },
  {
   "task_id": "VECTOR-04",
@@ -11373,12 +11393,17 @@
   "requirement": "If Ink Black #201914 appears on “Original companion sticker - Companion 1” (new-sticker-companion-1.svg), it covers no more than 5% of the sticker's inked area.",
   "pass_condition": "If Ink Black #201914 appears on “Original companion sticker - Companion 1” (new-sticker-companion-1.svg), it covers no more than 5% of the sticker's inked area.",
   "reference_assets": [],
-  "revision": "pilot13_c_2026_10_22",
+  "revision": "pilot13_verifier_lock_2026_10_22",
   "origin": "pilot13_c_2026_10_22",
   "k_id": "K2_Q3",
   "k_label": "Brand-system compliance",
-  "method": "estimate",
-  "method_note": "Use Select Same Fill on any #201914 shape, then estimate those shapes' share of all inked area; answer No only if clearly over 5%."
+  "method": "measure",
+  "method_note": "Measure, do not estimate. On a measurement copy, mask the named area; exclude photographs and transparent canvas. Count the selected accent-colour pixels and divide by all pixels in that mask. Include text unless the condition excludes it. Test each PDF page or held video frame separately. Yes only when the unrounded percentage is at or below the stated limit. Use the linked measurement guide for rasterisation and colour matching. The mask is the visible inked artwork only, not the sticker background or transparent gaps. Each RGB channel must be within 5 of a selected palette colour.",
+  "measurement": {
+   "kind": "area_ratio",
+   "channel_tolerance": 5,
+   "max_percent": 5
+  }
  },
  {
   "task_id": "VECTOR-04",
@@ -11402,12 +11427,17 @@
   "requirement": "If Ink Black #201914 appears on “Original companion sticker - Companion 2” (new-sticker-companion-2.svg), it covers no more than 5% of the sticker's inked area.",
   "pass_condition": "If Ink Black #201914 appears on “Original companion sticker - Companion 2” (new-sticker-companion-2.svg), it covers no more than 5% of the sticker's inked area.",
   "reference_assets": [],
-  "revision": "pilot13_c_2026_10_22",
+  "revision": "pilot13_verifier_lock_2026_10_22",
   "origin": "pilot13_c_2026_10_22",
   "k_id": "K2_Q3",
   "k_label": "Brand-system compliance",
-  "method": "estimate",
-  "method_note": "Use Select Same Fill on any #201914 shape, then estimate those shapes' share of all inked area; answer No only if clearly over 5%."
+  "method": "measure",
+  "method_note": "Measure, do not estimate. On a measurement copy, mask the named area; exclude photographs and transparent canvas. Count the selected accent-colour pixels and divide by all pixels in that mask. Include text unless the condition excludes it. Test each PDF page or held video frame separately. Yes only when the unrounded percentage is at or below the stated limit. Use the linked measurement guide for rasterisation and colour matching. The mask is the visible inked artwork only, not the sticker background or transparent gaps. Each RGB channel must be within 5 of a selected palette colour.",
+  "measurement": {
+   "kind": "area_ratio",
+   "channel_tolerance": 5,
+   "max_percent": 5
+  }
  },
  {
   "task_id": "VECTOR-04",

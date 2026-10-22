@@ -1049,7 +1049,7 @@
     "output_id": "villa-collection",
     "type": "human",
     "output_reference": "deliverables/villa-collection.pdf",
-    "check": "The Casa Verranza section of “Villa comparison brochure” (villa-collection.pdf) names the house's stone, its water and its light, for example its walls, its pool or cove, and its daylight.",
+    "check": "The Casa Verranza section of “Villa comparison brochure” (villa-collection.pdf) mentions the named house's stone or walls.",
     "method": "look",
     "method_note": "Inspect the named output against this requirement and its linked references.",
     "reference_assets": []
@@ -1293,7 +1293,7 @@
     "output_id": "booking-hero-oliveto",
     "type": "human",
     "output_reference": "deliverables/booking-hero-oliveto.png",
-    "check": "Body text and the booking action on “Villa booking hero - Oliveto” (booking-hero-oliveto.png) are set in Source Sans 3 Regular.",
+    "check": "Body text on “Villa booking hero - Oliveto” (booking-hero-oliveto.png) are set in Source Sans 3 Regular.",
     "method": "look",
     "method_note": "Inspect the named output against this requirement and its linked references.",
     "reference_assets": [
@@ -1351,7 +1351,7 @@
     "output_id": "booking-hero-oliveto",
     "type": "human",
     "output_reference": "deliverables/booking-hero-oliveto.png",
-    "check": "The copy on “Villa booking hero - Oliveto” (booking-hero-oliveto.png) names Casa Oliveto's stone, its water and its light, for example its walls, its pool or cove, and its daylight.",
+    "check": "The copy on “Villa booking hero - Oliveto” (booking-hero-oliveto.png) mentions Casa Oliveto's stone or walls.",
     "method": "look",
     "method_note": "Inspect the named output against this requirement and its linked references.",
     "reference_assets": []
@@ -1595,7 +1595,7 @@
     "output_id": "booking-hero-verranza",
     "type": "human",
     "output_reference": "deliverables/booking-hero-verranza.png",
-    "check": "Body text and the booking action on “Villa booking hero - Verranza” (booking-hero-verranza.png) are set in Source Sans 3 Regular.",
+    "check": "Body text on “Villa booking hero - Verranza” (booking-hero-verranza.png) are set in Source Sans 3 Regular.",
     "method": "look",
     "method_note": "Inspect the named output against this requirement and its linked references.",
     "reference_assets": [
@@ -1653,7 +1653,7 @@
     "output_id": "booking-hero-verranza",
     "type": "human",
     "output_reference": "deliverables/booking-hero-verranza.png",
-    "check": "The copy on “Villa booking hero - Verranza” (booking-hero-verranza.png) names Casa Verranza's stone, its water and its light, for example its walls, its pool or cove, and its daylight.",
+    "check": "The copy on “Villa booking hero - Verranza” (booking-hero-verranza.png) mentions Casa Verranza's stone or walls.",
     "method": "look",
     "method_note": "Inspect the named output against this requirement and its linked references.",
     "reference_assets": []
@@ -1917,7 +1917,7 @@
     "output_id": "booking-hero-scogliera",
     "type": "human",
     "output_reference": "deliverables/booking-hero-scogliera.png",
-    "check": "Body text and the booking action on “Villa booking hero - Scogliera” (booking-hero-scogliera.png) are set in Source Sans 3 Regular.",
+    "check": "Body text on “Villa booking hero - Scogliera” (booking-hero-scogliera.png) are set in Source Sans 3 Regular.",
     "method": "look",
     "method_note": "Inspect the named output against this requirement and its linked references.",
     "reference_assets": [
@@ -1975,7 +1975,7 @@
     "output_id": "booking-hero-scogliera",
     "type": "human",
     "output_reference": "deliverables/booking-hero-scogliera.png",
-    "check": "The copy on “Villa booking hero - Scogliera” (booking-hero-scogliera.png) names Casa Scogliera's stone, its water and its light, for example its walls, its pool or cove, and its daylight.",
+    "check": "The copy on “Villa booking hero - Scogliera” (booking-hero-scogliera.png) mentions Casa Scogliera's stone or walls.",
     "method": "look",
     "method_note": "Inspect the named output against this requirement and its linked references.",
     "reference_assets": []
@@ -2645,9 +2645,14 @@
     "output_id": "booking-hero-oliveto",
     "type": "human",
     "output_reference": "deliverables/booking-hero-oliveto.png",
-    "check": "Accent colours #C4B5A0, #6E7355 and #4C7A8C together cover no more than about 5% of the designed, non-photographic area of “Villa booking hero - Oliveto” (booking-hero-oliveto.png).",
-    "method": "estimate",
-    "method_note": "Estimate the share of the designed, non-photographic area in the three accent colours; answer No only if it is clearly over 5%.",
+    "check": "Accent colours #C4B5A0, #6E7355 and #4C7A8C together cover no more than 5% of the designed, non-photographic area of “Villa booking hero - Oliveto” (booking-hero-oliveto.png).",
+    "method": "measure",
+    "method_note": "Measure, do not estimate. On a measurement copy, mask the named area; exclude photographs and transparent canvas. Count the selected accent-colour pixels and divide by all pixels in that mask. Include text unless the condition excludes it. Test each PDF page or held video frame separately. Yes only when the unrounded percentage is at or below the stated limit. Use the linked measurement guide for rasterisation and colour matching. Each RGB channel must be within 5 of a selected palette colour.",
+    "measurement": {
+      "kind": "area_ratio",
+      "channel_tolerance": 5,
+      "max_percent": 5
+    },
     "reference_assets": []
   },
   {
@@ -2695,9 +2700,14 @@
     "output_id": "booking-hero-scogliera",
     "type": "human",
     "output_reference": "deliverables/booking-hero-scogliera.png",
-    "check": "Accent colours #C4B5A0, #6E7355 and #4C7A8C together cover no more than about 5% of the designed, non-photographic area of “Villa booking hero - Scogliera” (booking-hero-scogliera.png).",
-    "method": "estimate",
-    "method_note": "Estimate the share of the designed, non-photographic area in the three accent colours; answer No only if it is clearly over 5%.",
+    "check": "Accent colours #C4B5A0, #6E7355 and #4C7A8C together cover no more than 5% of the designed, non-photographic area of “Villa booking hero - Scogliera” (booking-hero-scogliera.png).",
+    "method": "measure",
+    "method_note": "Measure, do not estimate. On a measurement copy, mask the named area; exclude photographs and transparent canvas. Count the selected accent-colour pixels and divide by all pixels in that mask. Include text unless the condition excludes it. Test each PDF page or held video frame separately. Yes only when the unrounded percentage is at or below the stated limit. Use the linked measurement guide for rasterisation and colour matching. Each RGB channel must be within 5 of a selected palette colour.",
+    "measurement": {
+      "kind": "area_ratio",
+      "channel_tolerance": 5,
+      "max_percent": 5
+    },
     "reference_assets": []
   },
   {
@@ -2745,9 +2755,14 @@
     "output_id": "booking-hero-verranza",
     "type": "human",
     "output_reference": "deliverables/booking-hero-verranza.png",
-    "check": "Accent colours #C4B5A0, #6E7355 and #4C7A8C together cover no more than about 5% of the designed, non-photographic area of “Villa booking hero - Verranza” (booking-hero-verranza.png).",
-    "method": "estimate",
-    "method_note": "Estimate the share of the designed, non-photographic area in the three accent colours; answer No only if it is clearly over 5%.",
+    "check": "Accent colours #C4B5A0, #6E7355 and #4C7A8C together cover no more than 5% of the designed, non-photographic area of “Villa booking hero - Verranza” (booking-hero-verranza.png).",
+    "method": "measure",
+    "method_note": "Measure, do not estimate. On a measurement copy, mask the named area; exclude photographs and transparent canvas. Count the selected accent-colour pixels and divide by all pixels in that mask. Include text unless the condition excludes it. Test each PDF page or held video frame separately. Yes only when the unrounded percentage is at or below the stated limit. Use the linked measurement guide for rasterisation and colour matching. Each RGB channel must be within 5 of a selected palette colour.",
+    "measurement": {
+      "kind": "area_ratio",
+      "channel_tolerance": 5,
+      "max_percent": 5
+    },
     "reference_assets": []
   },
   {
@@ -2805,9 +2820,14 @@
     "output_id": "villa-collection",
     "type": "human",
     "output_reference": "deliverables/villa-collection.pdf",
-    "check": "Accent colours #C4B5A0, #6E7355 and #4C7A8C together cover no more than about 5% of the designed, non-photographic area of “Villa comparison brochure” (villa-collection.pdf).",
-    "method": "estimate",
-    "method_note": "Estimate the share of the designed, non-photographic area in the three accent colours; answer No only if it is clearly over 5%.",
+    "check": "Accent colours #C4B5A0, #6E7355 and #4C7A8C together cover no more than 5% of the designed, non-photographic area of “Villa comparison brochure” (villa-collection.pdf).",
+    "method": "measure",
+    "method_note": "Measure, do not estimate. On a measurement copy, mask the named area; exclude photographs and transparent canvas. Count the selected accent-colour pixels and divide by all pixels in that mask. Include text unless the condition excludes it. Test each PDF page or held video frame separately. Yes only when the unrounded percentage is at or below the stated limit. Use the linked measurement guide for rasterisation and colour matching. Each RGB channel must be within 5 of a selected palette colour.",
+    "measurement": {
+      "kind": "area_ratio",
+      "channel_tolerance": 5,
+      "max_percent": 5
+    },
     "reference_assets": []
   },
   {
@@ -2844,7 +2864,7 @@
     "output_id": "villa-collection",
     "type": "human",
     "output_reference": "deliverables/villa-collection.pdf",
-    "check": "The Casa Oliveto section of “Villa comparison brochure” (villa-collection.pdf) names the house's stone, its water and its light, for example its walls, its pool or cove, and its daylight.",
+    "check": "The Casa Oliveto section of “Villa comparison brochure” (villa-collection.pdf) mentions the named house's stone or walls.",
     "method": "look",
     "method_note": "Inspect the named output against this requirement and its linked references.",
     "reference_assets": []
@@ -2854,7 +2874,7 @@
     "output_id": "villa-collection",
     "type": "human",
     "output_reference": "deliverables/villa-collection.pdf",
-    "check": "The Casa Scogliera section of “Villa comparison brochure” (villa-collection.pdf) names the house's stone, its water and its light, for example its walls, its pool or cove, and its daylight.",
+    "check": "The Casa Scogliera section of “Villa comparison brochure” (villa-collection.pdf) mentions the named house's stone or walls.",
     "method": "look",
     "method_note": "Inspect the named output against this requirement and its linked references.",
     "reference_assets": []
@@ -3412,6 +3432,183 @@
     "type": "human",
     "output_reference": "deliverables/villa-collection.pdf",
     "check": "Every numeral inside a heading or text line in “Villa comparison brochure” (villa-collection.pdf) is the same size as the letters around it.",
+    "method": "look",
+    "method_note": "Inspect the named output against this requirement and its linked references.",
+    "reference_assets": []
+  },
+  {
+    "check_id": "PHOTO-04/villa-collection/H096",
+    "output_id": "villa-collection",
+    "type": "human",
+    "output_reference": "deliverables/villa-collection.pdf",
+    "check": "The Casa Verranza section of “Villa comparison brochure” (villa-collection.pdf) mentions the named house's water, pool or cove.",
+    "method": "look",
+    "method_note": "Inspect the named output against this requirement and its linked references.",
+    "reference_assets": []
+  },
+  {
+    "check_id": "PHOTO-04/villa-collection/H097",
+    "output_id": "villa-collection",
+    "type": "human",
+    "output_reference": "deliverables/villa-collection.pdf",
+    "check": "The Casa Verranza section of “Villa comparison brochure” (villa-collection.pdf) mentions the named house's light or daylight.",
+    "method": "look",
+    "method_note": "Inspect the named output against this requirement and its linked references.",
+    "reference_assets": []
+  },
+  {
+    "check_id": "PHOTO-04/booking-hero-oliveto/H070",
+    "output_id": "booking-hero-oliveto",
+    "type": "human",
+    "output_reference": "deliverables/booking-hero-oliveto.png",
+    "check": "The booking action on “Villa booking hero - Oliveto” (booking-hero-oliveto.png) is set in Source Sans 3 Regular.",
+    "method": "look",
+    "method_note": "Inspect the named output against this requirement and its linked references.",
+    "reference_assets": [
+      {
+        "filename": "fonts/CormorantGaramond[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/CormorantGaramond%5Bwght%5D.ttf"
+      },
+      {
+        "filename": "fonts/SourceSans3[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/SourceSans3%5Bwght%5D.ttf"
+      }
+    ]
+  },
+  {
+    "check_id": "PHOTO-04/booking-hero-oliveto/H071",
+    "output_id": "booking-hero-oliveto",
+    "type": "human",
+    "output_reference": "deliverables/booking-hero-oliveto.png",
+    "check": "The copy on “Villa booking hero - Oliveto” (booking-hero-oliveto.png) mentions Casa Oliveto's water, pool or cove.",
+    "method": "look",
+    "method_note": "Inspect the named output against this requirement and its linked references.",
+    "reference_assets": []
+  },
+  {
+    "check_id": "PHOTO-04/booking-hero-oliveto/H072",
+    "output_id": "booking-hero-oliveto",
+    "type": "human",
+    "output_reference": "deliverables/booking-hero-oliveto.png",
+    "check": "The copy on “Villa booking hero - Oliveto” (booking-hero-oliveto.png) mentions Casa Oliveto's light or daylight.",
+    "method": "look",
+    "method_note": "Inspect the named output against this requirement and its linked references.",
+    "reference_assets": []
+  },
+  {
+    "check_id": "PHOTO-04/booking-hero-verranza/H070",
+    "output_id": "booking-hero-verranza",
+    "type": "human",
+    "output_reference": "deliverables/booking-hero-verranza.png",
+    "check": "The booking action on “Villa booking hero - Verranza” (booking-hero-verranza.png) is set in Source Sans 3 Regular.",
+    "method": "look",
+    "method_note": "Inspect the named output against this requirement and its linked references.",
+    "reference_assets": [
+      {
+        "filename": "fonts/CormorantGaramond[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/CormorantGaramond%5Bwght%5D.ttf"
+      },
+      {
+        "filename": "fonts/SourceSans3[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/SourceSans3%5Bwght%5D.ttf"
+      }
+    ]
+  },
+  {
+    "check_id": "PHOTO-04/booking-hero-verranza/H071",
+    "output_id": "booking-hero-verranza",
+    "type": "human",
+    "output_reference": "deliverables/booking-hero-verranza.png",
+    "check": "The copy on “Villa booking hero - Verranza” (booking-hero-verranza.png) mentions Casa Verranza's water, pool or cove.",
+    "method": "look",
+    "method_note": "Inspect the named output against this requirement and its linked references.",
+    "reference_assets": []
+  },
+  {
+    "check_id": "PHOTO-04/booking-hero-verranza/H072",
+    "output_id": "booking-hero-verranza",
+    "type": "human",
+    "output_reference": "deliverables/booking-hero-verranza.png",
+    "check": "The copy on “Villa booking hero - Verranza” (booking-hero-verranza.png) mentions Casa Verranza's light or daylight.",
+    "method": "look",
+    "method_note": "Inspect the named output against this requirement and its linked references.",
+    "reference_assets": []
+  },
+  {
+    "check_id": "PHOTO-04/booking-hero-scogliera/H070",
+    "output_id": "booking-hero-scogliera",
+    "type": "human",
+    "output_reference": "deliverables/booking-hero-scogliera.png",
+    "check": "The booking action on “Villa booking hero - Scogliera” (booking-hero-scogliera.png) is set in Source Sans 3 Regular.",
+    "method": "look",
+    "method_note": "Inspect the named output against this requirement and its linked references.",
+    "reference_assets": [
+      {
+        "filename": "fonts/CormorantGaramond[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/CormorantGaramond%5Bwght%5D.ttf"
+      },
+      {
+        "filename": "fonts/SourceSans3[wght].ttf",
+        "url": "https://annotationprod.s3.ap-south-1.amazonaws.com/creative-ai-benchmark/v3.1/pilot-refresh-2026-10-14/PHOTO-04/fonts/SourceSans3%5Bwght%5D.ttf"
+      }
+    ]
+  },
+  {
+    "check_id": "PHOTO-04/booking-hero-scogliera/H071",
+    "output_id": "booking-hero-scogliera",
+    "type": "human",
+    "output_reference": "deliverables/booking-hero-scogliera.png",
+    "check": "The copy on “Villa booking hero - Scogliera” (booking-hero-scogliera.png) mentions Casa Scogliera's water, pool or cove.",
+    "method": "look",
+    "method_note": "Inspect the named output against this requirement and its linked references.",
+    "reference_assets": []
+  },
+  {
+    "check_id": "PHOTO-04/booking-hero-scogliera/H072",
+    "output_id": "booking-hero-scogliera",
+    "type": "human",
+    "output_reference": "deliverables/booking-hero-scogliera.png",
+    "check": "The copy on “Villa booking hero - Scogliera” (booking-hero-scogliera.png) mentions Casa Scogliera's light or daylight.",
+    "method": "look",
+    "method_note": "Inspect the named output against this requirement and its linked references.",
+    "reference_assets": []
+  },
+  {
+    "check_id": "PHOTO-04/villa-collection/H098",
+    "output_id": "villa-collection",
+    "type": "human",
+    "output_reference": "deliverables/villa-collection.pdf",
+    "check": "The Casa Oliveto section of “Villa comparison brochure” (villa-collection.pdf) mentions the named house's water, pool or cove.",
+    "method": "look",
+    "method_note": "Inspect the named output against this requirement and its linked references.",
+    "reference_assets": []
+  },
+  {
+    "check_id": "PHOTO-04/villa-collection/H099",
+    "output_id": "villa-collection",
+    "type": "human",
+    "output_reference": "deliverables/villa-collection.pdf",
+    "check": "The Casa Oliveto section of “Villa comparison brochure” (villa-collection.pdf) mentions the named house's light or daylight.",
+    "method": "look",
+    "method_note": "Inspect the named output against this requirement and its linked references.",
+    "reference_assets": []
+  },
+  {
+    "check_id": "PHOTO-04/villa-collection/H100",
+    "output_id": "villa-collection",
+    "type": "human",
+    "output_reference": "deliverables/villa-collection.pdf",
+    "check": "The Casa Scogliera section of “Villa comparison brochure” (villa-collection.pdf) mentions the named house's water, pool or cove.",
+    "method": "look",
+    "method_note": "Inspect the named output against this requirement and its linked references.",
+    "reference_assets": []
+  },
+  {
+    "check_id": "PHOTO-04/villa-collection/H101",
+    "output_id": "villa-collection",
+    "type": "human",
+    "output_reference": "deliverables/villa-collection.pdf",
+    "check": "The Casa Scogliera section of “Villa comparison brochure” (villa-collection.pdf) mentions the named house's light or daylight.",
     "method": "look",
     "method_note": "Inspect the named output against this requirement and its linked references.",
     "reference_assets": []
