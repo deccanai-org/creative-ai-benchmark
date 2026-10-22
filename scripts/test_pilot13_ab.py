@@ -54,13 +54,40 @@ class AbFixTests(unittest.TestCase):
             for r in body:
                 if r[kind] == 'deliverable_verifiers' and r[task_col] == tid:
                     for item in json.loads(r[2]):
-                        text = re.sub(r'^\d+\. (?:\[(?:Measure|Estimate): [^\]]*\] )?', '', item['verifier_question'])
+                        text = re.sub(r'^\d+\. \[(?:Look|(?:Measure|Estimate): [^\]]*)\] ', '', item['verifier_question'])
                         self.assertNotIn(text, auto)
                         seen.append(text)
             self.assertEqual(sorted(seen), sorted(c['check'] for c in spec['verifiers_human']))
             for c in spec['verifiers_human']:
-                if c.get('method') in ('measure', 'estimate'):
-                    self.assertTrue(c.get('method_note'))
+                self.assertIn(c.get('method'), ('look', 'measure', 'estimate'), c['check_id'])
+                self.assertTrue(c.get('method_note'), c['check_id'])
+
+    def test_typography_prose_matches_current_scale(self):
+        spec=json.loads((TASKS/'LAYOUT-12'/'TASK_SPEC.json').read_text())
+        prose=spec['brand_identity']['typography']
+        self.assertIn('remaining act names are 48 pt', prose)
+        self.assertIn('choose their larger size', prose)
+        self.assertIn('18 pt / 22 pt', prose)
+        self.assertIn('14 pt / 19 pt', prose)
+        self.assertIn('other fine print is Regular', prose)
+        self.assertNotIn('exactly two lines', prose)
+        self.assertNotIn('46 pt', prose)
+
+    def test_method_rendering_is_visible_in_main_page(self):
+        page=(ROOT/'docs/gatsby-v7/index.html').read_text()
+        self.assertIn('conditionHTML(c)+checkingMethod(c)', page)
+        self.assertIn('esc(c.method_note', page)
+
+    def test_new_human_checks_receive_a_method(self):
+        from apply_patch import apply
+        spec=json.loads((TASKS/'PHOTO-04'/'TASK_SPEC.json').read_text())
+        output=spec['deliverables'][0]
+        result,_=apply(spec,{'task_id':'PHOTO-04','add':[{
+            'key':'test','output_id':output['output_id'],'type':'human','k_id':'K1_Q1',
+            'check':'A test requirement.', 'why':'Regression fixture.'
+        }]})
+        self.assertEqual(result['verifiers_human'][-1]['method'],'look')
+        self.assertTrue(result['verifiers_human'][-1]['method_note'])
 
     def test_photo10_mark_rebuilt(self):
         spec = json.loads((TASKS / 'PHOTO-10' / 'TASK_SPEC.json').read_text())

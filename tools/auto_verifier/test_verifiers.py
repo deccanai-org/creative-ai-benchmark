@@ -183,6 +183,43 @@ class PilotThirteenOperationTests(unittest.TestCase):
         with self.assertRaises(v.VerifierUnavailable):
             v.verify(self.pdf,{'op':'pdf_text_style','text':'Priya Nandakumar','family':'Helvetica'})
 
+    def _text_operator_pdf(self, name, operators):
+        from pypdf.generic import DictionaryObject, NameObject, DecodedStreamObject
+        writer=PdfWriter();page=writer.add_blank_page(600,600)
+        font=DictionaryObject({NameObject('/Type'):NameObject('/Font'),NameObject('/Subtype'):NameObject('/Type1'),NameObject('/BaseFont'):NameObject('/Helvetica')})
+        page[NameObject('/Resources')]=DictionaryObject({NameObject('/Font'):DictionaryObject({NameObject('/F1'):writer._add_object(font)})})
+        content=DecodedStreamObject();content.set_data(operators)
+        page[NameObject('/Contents')]=writer._add_object(content)
+        path=self.root/name
+        with path.open('wb') as handle:writer.write(handle)
+        return path
+
+    def test_metrics_with_tf_tm_horizontal_scaling_and_rotation(self):
+        variants=[
+            b'/F1 15 Tf 0.45 Tc 30 TL 1 0 0 1 20 250 Tm',
+            b'/F1 1 Tf 0.03 Tc 2 TL 15 0 0 15 20 250 Tm',
+            b'/F1 15 Tf 0.45 Tc 30 TL 80 Tz 1 0 0 1 20 250 Tm',
+            b'/F1 15 Tf 0.45 Tc 30 TL 0 1 -1 0 250 20 Tm',
+        ]
+        for i,operators in enumerate(variants):
+            with self.subTest(operators=operators):
+                pdf=self._text_operator_pdf(f'operators-{i}.pdf',b'BT '+operators+b' (Astrid Vellacourt) Tj T* (Design lead) Tj ET')
+                assertion={'op':'pdf_text_style','text':'Astrid Vellacourt Design lead','family':'Helvetica','size_pt':15,'tracking':30,'leading_pt':30}
+                ok,evidence=v.verify(pdf,assertion)
+                self.assertTrue(ok,evidence)
+                self.assertEqual(evidence['sizes_pt'],[15])
+                self.assertAlmostEqual(evidence['tracking_units'],30,delta=1)
+                self.assertFalse(v.verify(pdf,{**assertion,'size_pt':1})[0])
+                self.assertFalse(v.verify(pdf,{**assertion,'tracking':450})[0])
+                self.assertFalse(v.verify(pdf,{**assertion,'leading_pt':20})[0])
+
+    def test_metrics_negative_tracking_and_later_measurable_occurrence(self):
+        pdf=self._text_operator_pdf('negative.pdf',b'BT /F1 48 Tf -0.48 Tc 1 0 0 1 20 250 Tm (THE BLUE HOUR) Tj ET')
+        self.assertTrue(v.verify(pdf,{'op':'pdf_text_style','text':'THE BLUE HOUR','family':'Helvetica','size_pt':48,'tracking':-10})[0])
+        pdf=self._text_operator_pdf('occurrences.pdf',b'BT /F1 15 Tf 30 TL 20 400 Td (Design lead) Tj 0 -100 Td (Design) Tj T* (lead) Tj ET')
+        ok,evidence=v.verify(pdf,{'op':'pdf_text_style','text':'Design lead','family':'Helvetica','leading_pt':30})
+        self.assertTrue(ok,evidence)
+
     def test_fonts_embedded(self):
         self.assertTrue(v.verify(self.pdf,{'op':'pdf_fonts_embedded'})[0])
         from pypdf.generic import DictionaryObject,NameObject,DecodedStreamObject
@@ -220,8 +257,35 @@ class PilotThirteenOperationTests(unittest.TestCase):
         if self.PSO_ICC.is_file():
             press=self._with_intent('press.pdf',self.PSO_ICC.read_bytes())
             self.assertTrue(v.verify(press,{'op':'pdf_output_intent','contains':'PSO Coated v3'})[0])
+            import hashlib
+            digest=hashlib.sha256(self.PSO_ICC.read_bytes()).hexdigest()
+            self.assertTrue(v.verify(press,{'op':'pdf_output_intent','contains':'PSO Coated v3','profile_sha256':digest})[0])
+            self.assertFalse(v.verify(press,{'op':'pdf_output_intent','contains':'PSO Coated v3','profile_sha256':'0'*64})[0])
             self.assertFalse(v.verify(press,{'op':'pdf_no_cmyk'})[0])
         self.assertFalse(v.verify(label_only,{'op':'pdf_no_cmyk'})[0])
+
+    def test_output_intent_rejects_fake_icc_and_wrong_cmyk_identity(self):
+        fake=bytearray(132);fake[:4]=(132).to_bytes(4,'big');fake[16:20]=b'CMYK';fake[36:40]=b'acsp'
+        ok,evidence=v.verify(self._with_intent('fake.pdf',bytes(fake)),{'op':'pdf_output_intent','contains':'PSO Coated v3'})
+        self.assertFalse(ok,evidence)
+        self.assertFalse(evidence['output_intents'][0]['profile_valid'])
+        profile=Path('/System/Library/ColorSync/Profiles/Generic CMYK Profile.icc')
+        if not profile.exists():self.skipTest('System Generic CMYK fixture unavailable')
+        wrong=self._with_intent('wrong-cmyk.pdf',profile.read_bytes())
+        self.assertFalse(v.verify(wrong,{'op':'pdf_output_intent','contains':'PSO Coated v3'})[0])
+        self.assertTrue(v.verify(wrong,{'op':'pdf_output_intent','contains':'Generic CMYK Profile'})[0])
+
+    def test_output_intent_rejects_bad_length_and_channel_count(self):
+        if not self.PSO_ICC.exists():self.skipTest('PSO Coated v3 fixture unavailable')
+        data=self.PSO_ICC.read_bytes()
+        self.assertFalse(v.verify(self._with_intent('truncated.pdf',data[:-10]),{'op':'pdf_output_intent','contains':'PSO Coated v3'})[0])
+        from pypdf import PdfReader
+        from pypdf.generic import NameObject, NumberObject
+        writer=PdfWriter(clone_from=PdfReader(self._with_intent('channels.pdf',data)))
+        writer._root_object['/OutputIntents'][0].get_object()['/DestOutputProfile'][NameObject('/N')]=NumberObject(3)
+        target=self.root/'bad-channels.pdf'
+        with target.open('wb') as handle:writer.write(handle)
+        self.assertFalse(v.verify(target,{'op':'pdf_output_intent','contains':'PSO Coated v3'})[0])
 
     def test_no_cmyk_finds_cmyk_anywhere(self):
         self.assertTrue(v.verify(self.pdf,{'op':'pdf_no_cmyk'})[0])

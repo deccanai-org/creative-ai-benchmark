@@ -462,9 +462,11 @@ SECONDS_PER_CHECK = 10
 
 
 def question_text(index: int, check: dict) -> str:
-    """Annotator-facing question; measured and estimated checks say so up front."""
-    method = check.get("method", "look")
-    prefix = "" if method == "look" else f'[{method.capitalize()}: {check.get("method_note", "")}] '
+    """Annotator-facing question, with an explicit checking method."""
+    method = check['method']
+    if method not in ('look', 'measure', 'estimate') or not check.get('method_note'):
+        raise ValueError(f"Missing checking guidance: {check['check_id']}")
+    prefix = '[Look] ' if method == 'look' else f'[{method.capitalize()}: {check["method_note"]}] '
     return f"{index}. {prefix}{check['check']}"
 
 
@@ -525,6 +527,9 @@ def main() -> None:
         r[3] = n
     SHEET_EXPORT.parent.mkdir(parents=True, exist_ok=True)
     SHEET_EXPORT.write_text(json.dumps(rows, ensure_ascii=False), encoding="utf-8")
+    current_export = ROOT / 'tools/pilot13_ab_fixes/round3/sheet_rows_2026-10-22.json'
+    current_export.parent.mkdir(parents=True, exist_ok=True)
+    current_export.write_bytes(SHEET_EXPORT.read_bytes())
     links = ''.join(f'<li><a href="{tid}.html">{tid} - {esc(json.loads((TASKS/tid/"TASK_SPEC.json").read_text())["task_name"])}</a></li>' for tid in TASK_IDS)
     coverage = ''
     if (OUT/'coverage'/'index.html').is_file():

@@ -74,7 +74,8 @@ def page(tid):
                     if c in checks:
                         kind = 'auto' if checks[c]['type'] == 'auto' else 'human'
                         m = checks[c].get('method', 'look')
-                        tag = '' if kind == 'auto' or m == 'look' else f'<span class="method {m}" title="{html.escape(checks[c].get("method_note", ""))}">{m}</span>'
+                        note=checks[c].get('method_note','')
+                        tag = '' if kind == 'auto' else f'<span class="method {m}">{m.capitalize()}</span><span class="muted">{html.escape(note)}</span><br>'
                         items.append(f'<li>{html.escape(r["rule"])}<br><code>{html.escape(c.split("/")[-1])} · {kind}</code> {tag}{html.escape(checks[c]["check"])}</li>')
             elif 'not_verified' in cell:
                 items.append(f'<li>{html.escape(r["rule"])}<br><span class="method estimate">not verified</span> {html.escape(cell["not_verified"])}</li>')

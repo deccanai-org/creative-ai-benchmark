@@ -1,5 +1,8 @@
 # Pilot-13 fixes A + B (2026-10-21)
 
+Current follow-up and corrected claims: [2026-10-22 review fixes](PILOT13_REVIEW_FIXES_2026-10-22.md).
+The rounds below are historical; use the round3 export named in that follow-up for current imports.
+
 What was fixed after the audit of the 13 refreshed pilot tasks (original 10 + LAYOUT-12, VECTOR-04, MOTION-11)
 against every stakeholder request: client (every constraint on every deliverable; verifier count manageable),
 design call (simple, atomic, exact output reference), in-house creative expert (deliverable details, fonts, logos).

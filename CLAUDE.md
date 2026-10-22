@@ -25,6 +25,11 @@ image ops, Express, InDesign data merge, Fonts, Stock, Acrobat, Premiere-style v
 
 ## Update 2026-10-22 (read first)
 
+- Follow-up review fixes: see `context/PILOT13_REVIEW_FIXES_2026-10-22.md`. The current Sheet import is
+  `tools/pilot13_ab_fixes/round3/sheet_rows_2026-10-22.json`, not the older round2 export.
+- Repository visibility was verified PUBLIC on 2026-10-22. Older statements below that call it private are historical.
+- LAYOUT-12 typography is reconciled: poster headline acts larger than the remaining 48 pt acts, designer-selected
+  headline sizes. PDF measurement and ICC identity checks are hardened; all human methods are explicit and visible.
 - Repo is now **deccanai-org/creative-ai-benchmark**; site https://deccanai-org.github.io/creative-ai-benchmark/ (old dhigdec links 404).
 - Round 2 fixes (external review): full-coverage Sheet export (one row per deliverable, all human checks), honest coverage with
   "not verified" cells, hardened auto ops + leading/tracking, Look/Measure/Estimate labels. See `context/PILOT13_AB_FIXES_2026-10-21.md` (Round 2).

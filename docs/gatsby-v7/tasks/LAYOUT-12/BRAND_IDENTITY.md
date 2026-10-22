@@ -48,7 +48,7 @@ Tickets 18 to 32 dollars, capacity 250. Independent basement scale: deliberately
 
 ## Typography
 
-Umbra Loft runs four steps. Step 01, display, is Sora ExtraBold caps at 180 pt on 148 pt leading with -10 tracking, that leading being 0.82 of the size, and every act name is broken onto exactly two lines whatever its length so the block closes into one solid mass of caps, Bone White on Pitch; the post size is 150 px on 123 px by the same 0.82 rule. Step 02, subheading, is Sora ExtraBold caps at 46 pt on 50 pt with +20 tracking for the date line, set in Sodium directly above the act block. Step 03, body, is Archivo Narrow Regular at 11 pt on 15 pt, tracking 0, to a maximum of 65 characters, and billing and tables take the same setting. Step 04, fine print, is Archivo Narrow SemiBold caps at 9 pt on 13 pt with +30 tracking, reserved for the door line.
+Use Sora ExtraBold caps for series titles, act names and date lines. The A2 series title is 180 pt / 148 pt with -10 tracking; the release-post title is 96 px. On A2 posters, Sable Quartet, Meridian Brass and Night Ferry are each larger than the remaining act names; choose their larger size to fit the direction. The remaining act names are 48 pt. All release-post act names are 76 px. Act names use -10 tracking and one or two lines; KOA stays on one line. Act names are Bone White on Pitch. Date lines are Sodium, immediately above their act, at 18 pt / 22 pt on posters and 30 px / 36 px on posts, with +20 tracking. Archivo Narrow Regular sets body, supporting billing and tables: 14 pt / 19 pt on posters, 28 px / 38 px on posts and 18 pt / 25 pt in the deck, with 0 tracking and at most 65 characters per line. Poster licence and accessibility lines use Archivo Narrow Regular at 9 pt / 13 pt. Release-post fine print is at least 22 px / 30 px. Fine print uses +30 tracking. Archivo Narrow SemiBold is reserved for door-time information; other fine print is Regular.
 
 ## Voice
 
@@ -79,7 +79,7 @@ Apply these roles to newly set text in the requested deliverables. Preserve supp
 
 Tracking in units means thousandths of an em; 1 pt is 1/72 inch. Pixel settings apply at final exported size. Font size is not cap height.
 
-- 01 Series title / headline: Sora, 180 pt / 148 pt, ExtraBold, tracking -10 units, all caps. A2 series title only, not every act in the schedule. Use 96 px on a release post; act names are 48 pt on posters and 76 px on posts. Act names may occupy one or two lines; keep the one-word name KOA on one line.
+- 01 Series title / headline: Sora, 180 pt / 148 pt, ExtraBold, tracking -10 units, all caps. A2 series title only, not every act in the schedule. Use 96 px for a release-post series title. On A2 posters, Sable Quartet, Meridian Brass and Night Ferry must each be larger than the remaining acts; choose their larger size. Remaining act names are 48 pt. All release-post act names are 76 px. Act names may occupy one or two lines; keep KOA on one line.
 - 02 Date line: Sora, 18 pt / 22 pt, ExtraBold, tracking +20 units, all caps. A2 poster date line above its act. On release posts use 30 px / 36 px.
 - 03 Body: Archivo Narrow, 14 pt / 19 pt, Regular, tracking 0, max 65 characters. A2 supporting billing uses 14 pt / 19 pt. Release-post supporting copy uses 28 px / 38 px. Deck body uses 18 pt / 25 pt.
 - 04 Fine print: Archivo Narrow, 9 pt / 13 pt, SemiBold, tracking +30 units, all caps. 9 pt / 13 pt for poster licence and access lines. Release posts use at least 22 px / 30 px. SemiBold is reserved for door-time information; other fine print is Regular.
@@ -104,7 +104,7 @@ Rules:
 ## Creative scope
 
 - Fixed: Keep the approved billing order, all nine dates, support acts, times and CSV prices. Use the current palette and supplied fonts. Sable Quartet and Meridian Brass have supplied production wordmarks; Night Ferry and the remaining acts are type-only.
-- Designer choices: Develop three genuinely different type-led, image-led and graphic-led poster directions. Choose the two-colour photographic pair and grain treatment within the palette, then choose one direction to adapt consistently to the nine release posts. Explain that choice in the deck.
+- Designer choices: Develop three genuinely different type-led, image-led and graphic-led poster directions. Choose the two-colour photographic pair and grain treatment within the palette, then choose one direction to adapt consistently to the nine release posts. Explain that choice in the deck. Choose the three poster headliner sizes above 48 pt; the remaining poster act names stay at 48 pt.
 
 ## Font files
 

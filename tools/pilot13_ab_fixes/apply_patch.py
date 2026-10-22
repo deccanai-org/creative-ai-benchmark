@@ -73,13 +73,12 @@ def _set_method(c, item):
     if item['method'] not in METHODS:
         raise PatchError(f'{c.get("check_id")}: method must be one of {METHODS}')
     c['method'] = item['method']
-    if item['method'] == 'look':
-        c.pop('method_note', None)
-    else:
-        note = str(item.get('how', '')).strip()
-        if not note:
-            raise PatchError(f'{c.get("check_id")}: method {item["method"]} needs "how"')
-        c['method_note'] = note
+    note = str(item.get('how', '')).strip()
+    if not note and item['method'] == 'look':
+        note = 'Inspect the named output against this requirement and its linked references.'
+    if not note:
+        raise PatchError(f'{c.get("check_id")}: method {item["method"]} needs "how"')
+    c['method_note'] = note
 
 
 def apply(spec, patch):
@@ -165,9 +164,12 @@ def apply(spec, patch):
         c.pop('typography_key', None)
         c.update(revision=REV, status='not_assessed', answer=None)
     spec['verifiers_human'] = [c for c in spec['verifiers_human'] if c['check_id'] not in retired]
-    for c in spec['verifiers_human']:
-        c.setdefault('method', 'look')
     spec['verifiers_human'] += [c for c in new_checks if c['type'] == 'human']
+    for c in spec['verifiers_human']:
+        if not c.get('method'):
+            _set_method(c, {'method':'look'})
+        elif c['method']=='look' and not c.get('method_note'):
+            _set_method(c, {'method':'look'})
     spec['verifiers_auto'] += [c for c in new_checks if c['type'] == 'auto']
     live = {c['check_id']: c for c in spec['verifiers_auto'] + spec['verifiers_human']}
     for cid, targets in retired.items():

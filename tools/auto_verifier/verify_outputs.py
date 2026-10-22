@@ -1,6 +1,7 @@
 """Run file-bound objective checks. A missing artifact never becomes a process-based pass."""
 import argparse
 import ctypes.util
+import hashlib
 import io
 import json
 import math
@@ -250,8 +251,9 @@ def verify(file, assertion, artifact_root=None):
         subtype=assertion.get('subtype','/GTS_PDFX')
         intents=pdf_output_intent_records(PdfReader(file))
         matched=[i for i in intents if i['subtype']==subtype and i['profile_space']=='CMYK' and i['profile_valid']
-                 and any(wanted in normalize_name(v) for v in i['names']+[i['profile_description']])]
-        return bool(matched), {'output_intents':intents,'required':f'{subtype} intent naming {assertion["contains"]} with an embedded CMYK ICC profile'}
+                 and wanted == normalize_name(i['profile_description'])
+                 and (not assertion.get('profile_sha256') or i.get('profile_sha256')==assertion['profile_sha256'])]
+        return bool(matched), {'output_intents':intents,'required':f'{subtype} intent with a valid embedded CMYK ICC profile whose description is {assertion["contains"]}'}
     if op == 'pdf_no_cmyk':
         reader=PdfReader(file)
         evidence=pdf_cmyk_usage(reader)
@@ -317,11 +319,21 @@ def pdf_output_intent_records(reader):
         if profile is not None:
             try:
                 data=profile.get_data()
+                record['profile_sha256']=hashlib.sha256(data).hexdigest()
                 record['profile_space']=data[16:20].decode('latin-1').strip()
-                record['profile_valid']=data[36:40]==b'acsp'
+                if len(data)<132 or data[36:40]!=b'acsp' or int.from_bytes(data[:4], 'big')!=len(data):
+                    raise ValueError('Invalid ICC header or declared profile length')
                 from PIL import ImageCms
-                record['profile_description']=ImageCms.getProfileDescription(ImageCms.ImageCmsProfile(io.BytesIO(data))).strip()
+                parsed=ImageCms.ImageCmsProfile(io.BytesIO(data))
+                record['profile_description']=ImageCms.getProfileDescription(parsed).strip()
+                channels={'GRAY':1,'RGB':3,'CMYK':4}.get(record['profile_space'])
+                if channels is None or int(profile.get('/N',0))!=channels:
+                    raise ValueError('PDF profile channel count does not match the embedded ICC profile')
+                mode={'GRAY':'L','RGB':'RGB','CMYK':'CMYK'}[record['profile_space']]
+                ImageCms.buildTransformFromOpenProfiles(parsed,ImageCms.createProfile('LAB'),mode,'LAB')
+                record['profile_valid']=True
             except Exception as error:
+                record['profile_valid']=False
                 record['profile_error']=str(error)[:120]
         records.append(record)
     return records
@@ -525,7 +537,9 @@ def pdf_text_metrics(file, assertion):
     the matched text's baselines, so it needs text that runs over at least two lines.
     """
     try:
-        from pdfminer.high_level import extract_pages
+        from pdfminer.converter import PDFPageAggregator
+        from pdfminer.pdfinterp import PDFResourceManager, PDFPageInterpreter
+        from pdfminer.pdfpage import PDFPage
         from pdfminer.layout import LTChar
     except ImportError as error:
         raise VerifierUnavailable('pdfminer.six is required for leading and tracking checks') from error
@@ -538,6 +552,27 @@ def pdf_text_metrics(file, assertion):
     tracking=assertion.get('tracking');tracking_tol=float(assertion.get('tracking_tolerance',8))
     wanted_pages=None if 'page' not in assertion else {assertion['page']}
 
+    class MetricsAggregator(PDFPageAggregator):
+        def render_char(self, matrix, font, fontsize, scaling, rise, cid, ncs, graphicstate):
+            advance=super().render_char(matrix,font,fontsize,scaling,rise,cid,ncs,graphicstate)
+            glyph=self.cur_item._objs[-1]
+            # Tf and Tz are separate from Tm; retain both instead of assuming a 1 pt font.
+            glyph.em_pt=abs(fontsize)*math.hypot(matrix[2],matrix[3])
+            glyph.advance_em=abs(fontsize*scaling)*math.hypot(matrix[0],matrix[1])
+            return advance
+
+    def pages():
+        manager=PDFResourceManager()
+        device=MetricsAggregator(manager)
+        interpreter=PDFPageInterpreter(manager,device)
+        try:
+            with open(file,'rb') as stream:
+                for page in PDFPage.get_pages(stream):
+                    interpreter.process_page(page)
+                    yield device.get_result()
+        finally:
+            device.close()
+
     def walk(item):
         if isinstance(item,LTChar) or not hasattr(item,'__iter__'):
             yield item
@@ -546,7 +581,7 @@ def pdf_text_metrics(file, assertion):
                 yield from walk(child)
 
     any_text=False;failures=[];unmeasurable=[]
-    for number,page in enumerate(extract_pages(str(file)),1):
+    for number,page in enumerate(pages(),1):
         if wanted_pages and number not in wanted_pages:continue
         items=list(walk(page))
         glyphs=[(i,o) for i,o in enumerate(items) if isinstance(o,LTChar) and o.get_text().strip()]
@@ -559,33 +594,43 @@ def pdf_text_metrics(file, assertion):
         while start>=0:
             positions=sorted(set(owner[start:start+len(needle)]))
             matched=[glyphs[p] for p in positions]
-            rows=[(o.get_text(),o.fontname,math.hypot(o.matrix[2],o.matrix[3])) for _,o in matched]
+            rows=[(o.get_text(),o.fontname,o.em_pt) for _,o in matched]
             ok,evidence=_judge_style(rows,number,family,weight,size,tolerance)
             problems=list(evidence.get('problems',[]))
+            unavailable=[]
+            first=matched[0][1]
+            axis_length=math.hypot(first.matrix[0],first.matrix[1])
+            if not axis_length or not first.em_pt:
+                raise VerifierUnavailable('Degenerate text transform cannot be measured')
+            ux,uy=first.matrix[0]/axis_length,first.matrix[1]/axis_length
+            if any(abs(o.matrix[0]*uy-o.matrix[1]*ux)>0.001 for _,o in matched):
+                raise VerifierUnavailable('Matched text changes baseline direction')
             if tracking is not None:
                 gaps=[]
                 for (i,a),(j,b) in zip(matched,matched[1:]):
-                    em=math.hypot(a.matrix[2],a.matrix[3])
-                    if j==i+1 and a.fontname==b.fontname and abs(a.matrix[5]-b.matrix[5])<0.2*em:
-                        gaps.append((b.matrix[4]-(a.matrix[4]+a.adv*math.hypot(a.matrix[0],a.matrix[1])))/em*1000)
+                    dx,dy=b.matrix[4]-a.matrix[4],b.matrix[5]-a.matrix[5]
+                    if j==i+1 and a.fontname==b.fontname and a.advance_em and abs(-dx*uy+dy*ux)<0.2*a.em_pt:
+                        advance=a.adv*math.hypot(a.matrix[0],a.matrix[1])
+                        gaps.append((dx*ux+dy*uy-advance)/a.advance_em*1000)
                 if gaps:
                     measured=_median(gaps);evidence['tracking_units']=round(measured,1)
                     if abs(measured-float(tracking))>tracking_tol:problems.append(f'tracking {measured:+.0f} units, expected {float(tracking):+.0f}')
                 else:
-                    unmeasurable.append('tracking needs two neighbouring glyphs on one line')
+                    unavailable.append('tracking needs two neighbouring glyphs on one line')
             if leading is not None:
                 baselines=[]
-                for y in sorted({round(o.matrix[5],1) for _,o in matched},reverse=True):
+                for y in sorted({round(-o.matrix[4]*uy+o.matrix[5]*ux,1) for _,o in matched},reverse=True):
                     if not baselines or baselines[-1]-y>0.5:baselines.append(y)
                 if len(baselines)>=2:
                     measured=_median([a-b for a,b in zip(baselines,baselines[1:])]);evidence['leading_pt']=round(measured,2)
                     if abs(measured-float(leading))>leading_tol:problems.append(f'leading {measured:.2f} pt, expected {float(leading)} pt')
                 else:
-                    unmeasurable.append('leading needs the text to run over at least two lines')
+                    unavailable.append('leading needs the text to run over at least two lines')
             if problems:
                 evidence['problems']=problems[:12];failures.append(evidence)
-            elif not unmeasurable:
+            elif not unavailable:
                 return True,evidence
+            unmeasurable.extend(unavailable)
             start=hay.find(needle,start+1)
     if failures:
         return False,{'occurrences':len(failures),'first':failures[0]}
