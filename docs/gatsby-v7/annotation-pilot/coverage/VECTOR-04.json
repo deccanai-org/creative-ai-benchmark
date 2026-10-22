@@ -4,8 +4,99 @@
     {
       "rule_id": "B01",
       "kind": "brand",
-      "rule": "No colour outside the six palette hexes for any artwork, type, backing shape, label or mark; no colour is sampled from a photograph. Cut paths are exempt.",
+      "rule": "No colour outside the six palette hexes appears in any artwork, type, backing shape, label or mark, with cut paths exempt.",
       "source": "brand_identity.palette_rules.forbidden",
+      "cells": {
+        "recovered-sticker-window-mark": {
+          "checks": [
+            "VECTOR-04/recovered-sticker-window-mark/H012"
+          ]
+        },
+        "recovered-sticker-bag-design-1": {
+          "checks": [
+            "VECTOR-04/recovered-sticker-bag-design-1/H008"
+          ]
+        },
+        "recovered-sticker-bag-design-2": {
+          "checks": [
+            "VECTOR-04/recovered-sticker-bag-design-2/H008"
+          ]
+        },
+        "recovered-sticker-bag-design-3": {
+          "checks": [
+            "VECTOR-04/recovered-sticker-bag-design-3/H008"
+          ]
+        },
+        "new-sticker-companion-1": {
+          "checks": [
+            "VECTOR-04/new-sticker-companion-1/H002"
+          ]
+        },
+        "new-sticker-companion-2": {
+          "checks": [
+            "VECTOR-04/new-sticker-companion-2/H002"
+          ]
+        },
+        "sticker-cut-window-mark": {
+          "na": "Cut paths on the CutContour layer are production lines, exempt from the palette rule."
+        },
+        "sticker-cut-bag-design-1": {
+          "na": "Cut paths on the CutContour layer are production lines, exempt from the palette rule."
+        },
+        "sticker-cut-bag-design-2": {
+          "na": "Cut paths on the CutContour layer are production lines, exempt from the palette rule."
+        },
+        "sticker-cut-bag-design-3": {
+          "na": "Cut paths on the CutContour layer are production lines, exempt from the palette rule."
+        },
+        "sticker-cut-companion-1": {
+          "na": "Cut paths on the CutContour layer are production lines, exempt from the palette rule."
+        },
+        "sticker-cut-companion-2": {
+          "na": "Cut paths on the CutContour layer are production lines, exempt from the palette rule."
+        },
+        "sticker-proof-window-mark": {
+          "checks": [
+            "VECTOR-04/sticker-proof-window-mark/H012"
+          ]
+        },
+        "sticker-proof-bag-design-1": {
+          "checks": [
+            "VECTOR-04/sticker-proof-bag-design-1/H008"
+          ]
+        },
+        "sticker-proof-bag-design-2": {
+          "checks": [
+            "VECTOR-04/sticker-proof-bag-design-2/H008"
+          ]
+        },
+        "sticker-proof-bag-design-3": {
+          "checks": [
+            "VECTOR-04/sticker-proof-bag-design-3/H008"
+          ]
+        },
+        "sticker-proof-companion-1": {
+          "checks": [
+            "VECTOR-04/sticker-proof-companion-1/H003"
+          ]
+        },
+        "sticker-proof-companion-2": {
+          "checks": [
+            "VECTOR-04/sticker-proof-companion-2/H003"
+          ]
+        },
+        "gang-sheet": {
+          "checks": [
+            "VECTOR-04/gang-sheet/H019"
+          ]
+        }
+      }
+    },
+    {
+      "rule_id": "B01S",
+      "kind": "brand",
+      "rule": "No colour is sampled from a photograph: each ink is matched to its palette hex.",
+      "source": "brand_identity.palette_rules.forbidden; palette_rules.photography",
       "cells": {
         "recovered-sticker-window-mark": {
           "checks": [
@@ -95,7 +186,7 @@
     {
       "rule_id": "B02",
       "kind": "brand",
-      "rule": "Every palette colour is used solid, at 100% opacity; no tint, transparency, gradient, shadow or blend mode.",
+      "rule": "Every palette colour is used solid at 100% opacity, with no tint, transparency, gradient, shadow or blend mode.",
       "source": "brand_identity.palette_rules.opacity",
       "cells": {
         "recovered-sticker-window-mark": {
@@ -228,37 +319,43 @@
         "sticker-proof-window-mark": {
           "checks": [
             "VECTOR-04/sticker-proof-window-mark/H016",
-            "VECTOR-04/sticker-proof-window-mark/A005"
+            "VECTOR-04/sticker-proof-window-mark/A005",
+            "VECTOR-04/sticker-proof-window-mark/H013"
           ]
         },
         "sticker-proof-bag-design-1": {
           "checks": [
             "VECTOR-04/sticker-proof-bag-design-1/H012",
-            "VECTOR-04/sticker-proof-bag-design-1/A005"
+            "VECTOR-04/sticker-proof-bag-design-1/A005",
+            "VECTOR-04/sticker-proof-bag-design-1/H009"
           ]
         },
         "sticker-proof-bag-design-2": {
           "checks": [
             "VECTOR-04/sticker-proof-bag-design-2/H012",
-            "VECTOR-04/sticker-proof-bag-design-2/A005"
+            "VECTOR-04/sticker-proof-bag-design-2/A005",
+            "VECTOR-04/sticker-proof-bag-design-2/H009"
           ]
         },
         "sticker-proof-bag-design-3": {
           "checks": [
             "VECTOR-04/sticker-proof-bag-design-3/H012",
-            "VECTOR-04/sticker-proof-bag-design-3/A005"
+            "VECTOR-04/sticker-proof-bag-design-3/A005",
+            "VECTOR-04/sticker-proof-bag-design-3/H009"
           ]
         },
         "sticker-proof-companion-1": {
           "checks": [
             "VECTOR-04/sticker-proof-companion-1/H016",
-            "VECTOR-04/sticker-proof-companion-1/A005"
+            "VECTOR-04/sticker-proof-companion-1/A005",
+            "VECTOR-04/sticker-proof-companion-1/H004"
           ]
         },
         "sticker-proof-companion-2": {
           "checks": [
             "VECTOR-04/sticker-proof-companion-2/H016",
-            "VECTOR-04/sticker-proof-companion-2/A005"
+            "VECTOR-04/sticker-proof-companion-2/A005",
+            "VECTOR-04/sticker-proof-companion-2/H004"
           ]
         },
         "gang-sheet": {
@@ -508,7 +605,7 @@
     {
       "rule_id": "B07",
       "kind": "brand",
-      "rule": "The window mark leaf and hairline ring are Warm Cream #F3E7D3.",
+      "rule": "The window mark ash leaf is Warm Cream #F3E7D3.",
       "source": "brand_identity.palette_rules.distribution",
       "cells": {
         "recovered-sticker-window-mark": {
@@ -552,6 +649,75 @@
         "sticker-proof-window-mark": {
           "checks": [
             "VECTOR-04/sticker-proof-window-mark/H019"
+          ]
+        },
+        "sticker-proof-bag-design-1": {
+          "na": "This ink assignment belongs to the design Window mark only."
+        },
+        "sticker-proof-bag-design-2": {
+          "na": "This ink assignment belongs to the design Window mark only."
+        },
+        "sticker-proof-bag-design-3": {
+          "na": "This ink assignment belongs to the design Window mark only."
+        },
+        "sticker-proof-companion-1": {
+          "na": "This ink assignment belongs to the design Window mark only."
+        },
+        "sticker-proof-companion-2": {
+          "na": "This ink assignment belongs to the design Window mark only."
+        },
+        "gang-sheet": {
+          "na": "The window mark on the sheet matches its single file, confirmed by gang-sheet H007."
+        }
+      }
+    },
+    {
+      "rule_id": "B07R",
+      "kind": "brand",
+      "rule": "The window mark fine hairline ring is Warm Cream #F3E7D3.",
+      "source": "brand_identity.palette_rules.distribution",
+      "cells": {
+        "recovered-sticker-window-mark": {
+          "checks": [
+            "VECTOR-04/recovered-sticker-window-mark/H022"
+          ]
+        },
+        "recovered-sticker-bag-design-1": {
+          "na": "This ink assignment belongs to the design Window mark only."
+        },
+        "recovered-sticker-bag-design-2": {
+          "na": "This ink assignment belongs to the design Window mark only."
+        },
+        "recovered-sticker-bag-design-3": {
+          "na": "This ink assignment belongs to the design Window mark only."
+        },
+        "new-sticker-companion-1": {
+          "na": "This ink assignment belongs to the design Window mark only."
+        },
+        "new-sticker-companion-2": {
+          "na": "This ink assignment belongs to the design Window mark only."
+        },
+        "sticker-cut-window-mark": {
+          "na": "Cut contour files hold only a production cut line, no artwork or colour."
+        },
+        "sticker-cut-bag-design-1": {
+          "na": "Cut contour files hold only a production cut line, no artwork or colour."
+        },
+        "sticker-cut-bag-design-2": {
+          "na": "Cut contour files hold only a production cut line, no artwork or colour."
+        },
+        "sticker-cut-bag-design-3": {
+          "na": "Cut contour files hold only a production cut line, no artwork or colour."
+        },
+        "sticker-cut-companion-1": {
+          "na": "Cut contour files hold only a production cut line, no artwork or colour."
+        },
+        "sticker-cut-companion-2": {
+          "na": "Cut contour files hold only a production cut line, no artwork or colour."
+        },
+        "sticker-proof-window-mark": {
+          "checks": [
+            "VECTOR-04/sticker-proof-window-mark/H020"
           ]
         },
         "sticker-proof-bag-design-1": {
@@ -864,7 +1030,8 @@
           "checks": [
             "VECTOR-04/recovered-sticker-window-mark/H014",
             "VECTOR-04/recovered-sticker-window-mark/H020",
-            "VECTOR-04/recovered-sticker-window-mark/H021"
+            "VECTOR-04/recovered-sticker-window-mark/H021",
+            "VECTOR-04/recovered-sticker-window-mark/H022"
           ]
         },
         "recovered-sticker-bag-design-1": {
@@ -914,7 +1081,8 @@
           "checks": [
             "VECTOR-04/sticker-proof-window-mark/H014",
             "VECTOR-04/sticker-proof-window-mark/H018",
-            "VECTOR-04/sticker-proof-window-mark/H019"
+            "VECTOR-04/sticker-proof-window-mark/H019",
+            "VECTOR-04/sticker-proof-window-mark/H020"
           ]
         },
         "sticker-proof-bag-design-1": {
@@ -1032,6 +1200,91 @@
           ]
         },
         "gang-sheet": {
+          "checks": [
+            "VECTOR-04/gang-sheet/H023",
+            "VECTOR-04/gang-sheet/H007",
+            "VECTOR-04/gang-sheet/H008",
+            "VECTOR-04/gang-sheet/H009",
+            "VECTOR-04/gang-sheet/H010",
+            "VECTOR-04/gang-sheet/H011",
+            "VECTOR-04/gang-sheet/H012"
+          ]
+        }
+      }
+    },
+    {
+      "rule_id": "B13P",
+      "kind": "brand",
+      "rule": "Ink Black covers no more than 5% of a sticker's inked area.",
+      "source": "brand_identity.palette (Ink Black usage); palette_rules.distribution",
+      "cells": {
+        "recovered-sticker-window-mark": {
+          "checks": [
+            "VECTOR-04/recovered-sticker-window-mark/H023"
+          ]
+        },
+        "recovered-sticker-bag-design-1": {
+          "checks": [
+            "VECTOR-04/recovered-sticker-bag-design-1/H016"
+          ]
+        },
+        "recovered-sticker-bag-design-2": {
+          "checks": [
+            "VECTOR-04/recovered-sticker-bag-design-2/H016"
+          ]
+        },
+        "recovered-sticker-bag-design-3": {
+          "checks": [
+            "VECTOR-04/recovered-sticker-bag-design-3/H016"
+          ]
+        },
+        "new-sticker-companion-1": {
+          "checks": [
+            "VECTOR-04/new-sticker-companion-1/H026"
+          ]
+        },
+        "new-sticker-companion-2": {
+          "checks": [
+            "VECTOR-04/new-sticker-companion-2/H026"
+          ]
+        },
+        "sticker-cut-window-mark": {
+          "na": "Cut contour files hold only a production cut line, no artwork or colour."
+        },
+        "sticker-cut-bag-design-1": {
+          "na": "Cut contour files hold only a production cut line, no artwork or colour."
+        },
+        "sticker-cut-bag-design-2": {
+          "na": "Cut contour files hold only a production cut line, no artwork or colour."
+        },
+        "sticker-cut-bag-design-3": {
+          "na": "Cut contour files hold only a production cut line, no artwork or colour."
+        },
+        "sticker-cut-companion-1": {
+          "na": "Cut contour files hold only a production cut line, no artwork or colour."
+        },
+        "sticker-cut-companion-2": {
+          "na": "Cut contour files hold only a production cut line, no artwork or colour."
+        },
+        "sticker-proof-window-mark": {
+          "na": "The proof renders recovered-sticker-window-mark.svg unchanged in colour (proof H001), so the share is estimated on that SVG."
+        },
+        "sticker-proof-bag-design-1": {
+          "na": "The proof renders recovered-sticker-bag-design-1.svg unchanged in colour (proof H001), so the share is estimated on that SVG."
+        },
+        "sticker-proof-bag-design-2": {
+          "na": "The proof renders recovered-sticker-bag-design-2.svg unchanged in colour (proof H001), so the share is estimated on that SVG."
+        },
+        "sticker-proof-bag-design-3": {
+          "na": "The proof renders recovered-sticker-bag-design-3.svg unchanged in colour (proof H001), so the share is estimated on that SVG."
+        },
+        "sticker-proof-companion-1": {
+          "na": "The proof renders new-sticker-companion-1.svg unchanged in colour (proof H001), so the share is estimated on that SVG."
+        },
+        "sticker-proof-companion-2": {
+          "na": "The proof renders new-sticker-companion-2.svg unchanged in colour (proof H001), so the share is estimated on that SVG."
+        },
+        "gang-sheet": {
           "na": "Each placed sticker matches its own single file, confirmed by gang-sheet H007 to H012."
         }
       }
@@ -1039,7 +1292,7 @@
     {
       "rule_id": "B14",
       "kind": "brand",
-      "rule": "Type on a light ground is Roast Brown, or Ash Green for a secondary line; type on Roast Brown or Ash Green is Warm Cream. Brick Red is not a type colour.",
+      "rule": "Type on a light ground is Roast Brown, or Ash Green for a secondary line.",
       "source": "brand_identity.palette_rules.distribution",
       "cells": {
         "recovered-sticker-window-mark": {
@@ -1112,9 +1365,161 @@
       }
     },
     {
+      "rule_id": "B14R",
+      "kind": "brand",
+      "rule": "Type reversed out of Roast Brown or Ash Green is Warm Cream.",
+      "source": "brand_identity.palette_rules.distribution",
+      "cells": {
+        "recovered-sticker-window-mark": {
+          "na": "Recovered artwork keeps its photographed lettering and adds no new type, per brief."
+        },
+        "recovered-sticker-bag-design-1": {
+          "na": "Recovered artwork keeps its photographed lettering and adds no new type, per brief."
+        },
+        "recovered-sticker-bag-design-2": {
+          "na": "Recovered artwork keeps its photographed lettering and adds no new type, per brief."
+        },
+        "recovered-sticker-bag-design-3": {
+          "na": "Recovered artwork keeps its photographed lettering and adds no new type, per brief."
+        },
+        "new-sticker-companion-1": {
+          "checks": [
+            "VECTOR-04/new-sticker-companion-1/H032"
+          ]
+        },
+        "new-sticker-companion-2": {
+          "checks": [
+            "VECTOR-04/new-sticker-companion-2/H032"
+          ]
+        },
+        "sticker-cut-window-mark": {
+          "na": "Cut contour files hold only a production cut line, no artwork or colour."
+        },
+        "sticker-cut-bag-design-1": {
+          "na": "Cut contour files hold only a production cut line, no artwork or colour."
+        },
+        "sticker-cut-bag-design-2": {
+          "na": "Cut contour files hold only a production cut line, no artwork or colour."
+        },
+        "sticker-cut-bag-design-3": {
+          "na": "Cut contour files hold only a production cut line, no artwork or colour."
+        },
+        "sticker-cut-companion-1": {
+          "na": "Cut contour files hold only a production cut line, no artwork or colour."
+        },
+        "sticker-cut-companion-2": {
+          "na": "Cut contour files hold only a production cut line, no artwork or colour."
+        },
+        "sticker-proof-window-mark": {
+          "na": "This proof renders recovered artwork that keeps its photographed lettering and adds no type."
+        },
+        "sticker-proof-bag-design-1": {
+          "na": "This proof renders recovered artwork that keeps its photographed lettering and adds no type."
+        },
+        "sticker-proof-bag-design-2": {
+          "na": "This proof renders recovered artwork that keeps its photographed lettering and adds no type."
+        },
+        "sticker-proof-bag-design-3": {
+          "na": "This proof renders recovered artwork that keeps its photographed lettering and adds no type."
+        },
+        "sticker-proof-companion-1": {
+          "checks": [
+            "VECTOR-04/sticker-proof-companion-1/H024"
+          ]
+        },
+        "sticker-proof-companion-2": {
+          "checks": [
+            "VECTOR-04/sticker-proof-companion-2/H024"
+          ]
+        },
+        "gang-sheet": {
+          "na": "Gang sheet labels sit on the white vinyl sheet margin; H023 requires them in Roast Brown or Ash Green."
+        }
+      }
+    },
+    {
+      "rule_id": "B14B",
+      "kind": "brand",
+      "rule": "Brick Red is not a type colour on the stickers or gang sheet.",
+      "source": "brand_identity.palette (Brick Red usage)",
+      "cells": {
+        "recovered-sticker-window-mark": {
+          "na": "Recovered artwork keeps its photographed lettering and adds no new type, per brief."
+        },
+        "recovered-sticker-bag-design-1": {
+          "na": "Recovered artwork keeps its photographed lettering and adds no new type, per brief."
+        },
+        "recovered-sticker-bag-design-2": {
+          "na": "Recovered artwork keeps its photographed lettering and adds no new type, per brief."
+        },
+        "recovered-sticker-bag-design-3": {
+          "na": "Recovered artwork keeps its photographed lettering and adds no new type, per brief."
+        },
+        "new-sticker-companion-1": {
+          "checks": [
+            "VECTOR-04/new-sticker-companion-1/H013",
+            "VECTOR-04/new-sticker-companion-1/H032"
+          ]
+        },
+        "new-sticker-companion-2": {
+          "checks": [
+            "VECTOR-04/new-sticker-companion-2/H013",
+            "VECTOR-04/new-sticker-companion-2/H032"
+          ]
+        },
+        "sticker-cut-window-mark": {
+          "na": "Cut contour files hold only a production cut line, no artwork or colour."
+        },
+        "sticker-cut-bag-design-1": {
+          "na": "Cut contour files hold only a production cut line, no artwork or colour."
+        },
+        "sticker-cut-bag-design-2": {
+          "na": "Cut contour files hold only a production cut line, no artwork or colour."
+        },
+        "sticker-cut-bag-design-3": {
+          "na": "Cut contour files hold only a production cut line, no artwork or colour."
+        },
+        "sticker-cut-companion-1": {
+          "na": "Cut contour files hold only a production cut line, no artwork or colour."
+        },
+        "sticker-cut-companion-2": {
+          "na": "Cut contour files hold only a production cut line, no artwork or colour."
+        },
+        "sticker-proof-window-mark": {
+          "na": "This proof renders recovered artwork that keeps its photographed lettering and adds no type."
+        },
+        "sticker-proof-bag-design-1": {
+          "na": "This proof renders recovered artwork that keeps its photographed lettering and adds no type."
+        },
+        "sticker-proof-bag-design-2": {
+          "na": "This proof renders recovered artwork that keeps its photographed lettering and adds no type."
+        },
+        "sticker-proof-bag-design-3": {
+          "na": "This proof renders recovered artwork that keeps its photographed lettering and adds no type."
+        },
+        "sticker-proof-companion-1": {
+          "checks": [
+            "VECTOR-04/sticker-proof-companion-1/H012",
+            "VECTOR-04/sticker-proof-companion-1/H024"
+          ]
+        },
+        "sticker-proof-companion-2": {
+          "checks": [
+            "VECTOR-04/sticker-proof-companion-2/H012",
+            "VECTOR-04/sticker-proof-companion-2/H024"
+          ]
+        },
+        "gang-sheet": {
+          "checks": [
+            "VECTOR-04/gang-sheet/H023"
+          ]
+        }
+      }
+    },
+    {
       "rule_id": "B15",
       "kind": "brand",
-      "rule": "No photograph appears in any deliverable; the supplied photographs are tracing references only.",
+      "rule": "No photograph appears in any deliverable, since the supplied photographs are tracing references only.",
       "source": "brand_identity.palette_rules.photography",
       "cells": {
         "recovered-sticker-window-mark": {
@@ -1219,9 +1624,144 @@
       }
     },
     {
+      "rule_id": "B16",
+      "kind": "brand",
+      "rule": "The print PDF carries the PSO Coated v3 output intent.",
+      "source": "brand_identity.palette_rules.distribution; gang-sheet export_settings",
+      "cells": {
+        "recovered-sticker-window-mark": {
+          "na": "Only the print PDF is colour converted; SVG artwork and PNG proofs stay in sRGB palette hexes."
+        },
+        "recovered-sticker-bag-design-1": {
+          "na": "Only the print PDF is colour converted; SVG artwork and PNG proofs stay in sRGB palette hexes."
+        },
+        "recovered-sticker-bag-design-2": {
+          "na": "Only the print PDF is colour converted; SVG artwork and PNG proofs stay in sRGB palette hexes."
+        },
+        "recovered-sticker-bag-design-3": {
+          "na": "Only the print PDF is colour converted; SVG artwork and PNG proofs stay in sRGB palette hexes."
+        },
+        "new-sticker-companion-1": {
+          "na": "Only the print PDF is colour converted; SVG artwork and PNG proofs stay in sRGB palette hexes."
+        },
+        "new-sticker-companion-2": {
+          "na": "Only the print PDF is colour converted; SVG artwork and PNG proofs stay in sRGB palette hexes."
+        },
+        "sticker-cut-window-mark": {
+          "na": "Only the print PDF is colour converted; SVG artwork and PNG proofs stay in sRGB palette hexes."
+        },
+        "sticker-cut-bag-design-1": {
+          "na": "Only the print PDF is colour converted; SVG artwork and PNG proofs stay in sRGB palette hexes."
+        },
+        "sticker-cut-bag-design-2": {
+          "na": "Only the print PDF is colour converted; SVG artwork and PNG proofs stay in sRGB palette hexes."
+        },
+        "sticker-cut-bag-design-3": {
+          "na": "Only the print PDF is colour converted; SVG artwork and PNG proofs stay in sRGB palette hexes."
+        },
+        "sticker-cut-companion-1": {
+          "na": "Only the print PDF is colour converted; SVG artwork and PNG proofs stay in sRGB palette hexes."
+        },
+        "sticker-cut-companion-2": {
+          "na": "Only the print PDF is colour converted; SVG artwork and PNG proofs stay in sRGB palette hexes."
+        },
+        "sticker-proof-window-mark": {
+          "na": "Only the print PDF is colour converted; SVG artwork and PNG proofs stay in sRGB palette hexes."
+        },
+        "sticker-proof-bag-design-1": {
+          "na": "Only the print PDF is colour converted; SVG artwork and PNG proofs stay in sRGB palette hexes."
+        },
+        "sticker-proof-bag-design-2": {
+          "na": "Only the print PDF is colour converted; SVG artwork and PNG proofs stay in sRGB palette hexes."
+        },
+        "sticker-proof-bag-design-3": {
+          "na": "Only the print PDF is colour converted; SVG artwork and PNG proofs stay in sRGB palette hexes."
+        },
+        "sticker-proof-companion-1": {
+          "na": "Only the print PDF is colour converted; SVG artwork and PNG proofs stay in sRGB palette hexes."
+        },
+        "sticker-proof-companion-2": {
+          "na": "Only the print PDF is colour converted; SVG artwork and PNG proofs stay in sRGB palette hexes."
+        },
+        "gang-sheet": {
+          "checks": [
+            "VECTOR-04/gang-sheet/A006"
+          ]
+        }
+      }
+    },
+    {
+      "rule_id": "B16C",
+      "kind": "brand",
+      "rule": "Artwork in the print PDF is CMYK, converted from the sRGB palette with PSO Coated v3.",
+      "source": "brand_identity.palette_rules.distribution; gang-sheet export_settings",
+      "cells": {
+        "recovered-sticker-window-mark": {
+          "na": "Only the print PDF is colour converted; SVG artwork and PNG proofs stay in sRGB palette hexes."
+        },
+        "recovered-sticker-bag-design-1": {
+          "na": "Only the print PDF is colour converted; SVG artwork and PNG proofs stay in sRGB palette hexes."
+        },
+        "recovered-sticker-bag-design-2": {
+          "na": "Only the print PDF is colour converted; SVG artwork and PNG proofs stay in sRGB palette hexes."
+        },
+        "recovered-sticker-bag-design-3": {
+          "na": "Only the print PDF is colour converted; SVG artwork and PNG proofs stay in sRGB palette hexes."
+        },
+        "new-sticker-companion-1": {
+          "na": "Only the print PDF is colour converted; SVG artwork and PNG proofs stay in sRGB palette hexes."
+        },
+        "new-sticker-companion-2": {
+          "na": "Only the print PDF is colour converted; SVG artwork and PNG proofs stay in sRGB palette hexes."
+        },
+        "sticker-cut-window-mark": {
+          "na": "Only the print PDF is colour converted; SVG artwork and PNG proofs stay in sRGB palette hexes."
+        },
+        "sticker-cut-bag-design-1": {
+          "na": "Only the print PDF is colour converted; SVG artwork and PNG proofs stay in sRGB palette hexes."
+        },
+        "sticker-cut-bag-design-2": {
+          "na": "Only the print PDF is colour converted; SVG artwork and PNG proofs stay in sRGB palette hexes."
+        },
+        "sticker-cut-bag-design-3": {
+          "na": "Only the print PDF is colour converted; SVG artwork and PNG proofs stay in sRGB palette hexes."
+        },
+        "sticker-cut-companion-1": {
+          "na": "Only the print PDF is colour converted; SVG artwork and PNG proofs stay in sRGB palette hexes."
+        },
+        "sticker-cut-companion-2": {
+          "na": "Only the print PDF is colour converted; SVG artwork and PNG proofs stay in sRGB palette hexes."
+        },
+        "sticker-proof-window-mark": {
+          "na": "Only the print PDF is colour converted; SVG artwork and PNG proofs stay in sRGB palette hexes."
+        },
+        "sticker-proof-bag-design-1": {
+          "na": "Only the print PDF is colour converted; SVG artwork and PNG proofs stay in sRGB palette hexes."
+        },
+        "sticker-proof-bag-design-2": {
+          "na": "Only the print PDF is colour converted; SVG artwork and PNG proofs stay in sRGB palette hexes."
+        },
+        "sticker-proof-bag-design-3": {
+          "na": "Only the print PDF is colour converted; SVG artwork and PNG proofs stay in sRGB palette hexes."
+        },
+        "sticker-proof-companion-1": {
+          "na": "Only the print PDF is colour converted; SVG artwork and PNG proofs stay in sRGB palette hexes."
+        },
+        "sticker-proof-companion-2": {
+          "na": "Only the print PDF is colour converted; SVG artwork and PNG proofs stay in sRGB palette hexes."
+        },
+        "gang-sheet": {
+          "checks": [
+            "VECTOR-04/gang-sheet/H031",
+            "VECTOR-04/gang-sheet/H019"
+          ]
+        }
+      }
+    },
+    {
       "rule_id": "T01",
       "kind": "type",
-      "rule": "Display (step 01): a newly set MERIDIAN & ASH wordmark is DM Serif Display Regular capitals.",
+      "rule": "Display (step 01) font: a newly set MERIDIAN & ASH wordmark is DM Serif Display Regular.",
       "source": "brand_identity.type_system.scale[01]",
       "cells": {
         "recovered-sticker-window-mark": {
@@ -1292,9 +1832,285 @@
       }
     },
     {
+      "rule_id": "T01C",
+      "kind": "type",
+      "rule": "Display (step 01) case: the newly set MERIDIAN & ASH wordmark is in capitals.",
+      "source": "brand_identity.type_system.scale[01]",
+      "cells": {
+        "recovered-sticker-window-mark": {
+          "na": "Recovered artwork keeps its photographed lettering and adds no new type, per brief."
+        },
+        "recovered-sticker-bag-design-1": {
+          "na": "Recovered artwork keeps its photographed lettering and adds no new type, per brief."
+        },
+        "recovered-sticker-bag-design-2": {
+          "na": "Recovered artwork keeps its photographed lettering and adds no new type, per brief."
+        },
+        "recovered-sticker-bag-design-3": {
+          "na": "Recovered artwork keeps its photographed lettering and adds no new type, per brief."
+        },
+        "new-sticker-companion-1": {
+          "checks": [
+            "VECTOR-04/new-sticker-companion-1/H030"
+          ]
+        },
+        "new-sticker-companion-2": {
+          "checks": [
+            "VECTOR-04/new-sticker-companion-2/H030"
+          ]
+        },
+        "sticker-cut-window-mark": {
+          "na": "Cut contour files hold only a production cut line, no artwork or colour."
+        },
+        "sticker-cut-bag-design-1": {
+          "na": "Cut contour files hold only a production cut line, no artwork or colour."
+        },
+        "sticker-cut-bag-design-2": {
+          "na": "Cut contour files hold only a production cut line, no artwork or colour."
+        },
+        "sticker-cut-bag-design-3": {
+          "na": "Cut contour files hold only a production cut line, no artwork or colour."
+        },
+        "sticker-cut-companion-1": {
+          "na": "Cut contour files hold only a production cut line, no artwork or colour."
+        },
+        "sticker-cut-companion-2": {
+          "na": "Cut contour files hold only a production cut line, no artwork or colour."
+        },
+        "sticker-proof-window-mark": {
+          "na": "This proof renders recovered artwork that keeps its photographed lettering and adds no type."
+        },
+        "sticker-proof-bag-design-1": {
+          "na": "This proof renders recovered artwork that keeps its photographed lettering and adds no type."
+        },
+        "sticker-proof-bag-design-2": {
+          "na": "This proof renders recovered artwork that keeps its photographed lettering and adds no type."
+        },
+        "sticker-proof-bag-design-3": {
+          "na": "This proof renders recovered artwork that keeps its photographed lettering and adds no type."
+        },
+        "sticker-proof-companion-1": {
+          "checks": [
+            "VECTOR-04/sticker-proof-companion-1/H022"
+          ]
+        },
+        "sticker-proof-companion-2": {
+          "checks": [
+            "VECTOR-04/sticker-proof-companion-2/H022"
+          ]
+        },
+        "gang-sheet": {
+          "na": "Sticker lettering on the sheet repeats the single files unchanged, confirmed by gang-sheet H007 to H012."
+        }
+      }
+    },
+    {
+      "rule_id": "T01S",
+      "kind": "type",
+      "rule": "Display (step 01) size: 18 pt.",
+      "source": "brand_identity.type_system.scale[01]",
+      "cells": {
+        "recovered-sticker-window-mark": {
+          "na": "Recovered artwork keeps its photographed lettering and adds no new type, per brief."
+        },
+        "recovered-sticker-bag-design-1": {
+          "na": "Recovered artwork keeps its photographed lettering and adds no new type, per brief."
+        },
+        "recovered-sticker-bag-design-2": {
+          "na": "Recovered artwork keeps its photographed lettering and adds no new type, per brief."
+        },
+        "recovered-sticker-bag-design-3": {
+          "na": "Recovered artwork keeps its photographed lettering and adds no new type, per brief."
+        },
+        "new-sticker-companion-1": {
+          "not_verified": "Lettering may be outlined in the SVG, so the 18 pt size cannot be read by code or judged by eye; kept as a design target."
+        },
+        "new-sticker-companion-2": {
+          "not_verified": "Lettering may be outlined in the SVG, so the 18 pt size cannot be read by code or judged by eye; kept as a design target."
+        },
+        "sticker-cut-window-mark": {
+          "na": "Cut contour files hold only a production cut line, no artwork or colour."
+        },
+        "sticker-cut-bag-design-1": {
+          "na": "Cut contour files hold only a production cut line, no artwork or colour."
+        },
+        "sticker-cut-bag-design-2": {
+          "na": "Cut contour files hold only a production cut line, no artwork or colour."
+        },
+        "sticker-cut-bag-design-3": {
+          "na": "Cut contour files hold only a production cut line, no artwork or colour."
+        },
+        "sticker-cut-companion-1": {
+          "na": "Cut contour files hold only a production cut line, no artwork or colour."
+        },
+        "sticker-cut-companion-2": {
+          "na": "Cut contour files hold only a production cut line, no artwork or colour."
+        },
+        "sticker-proof-window-mark": {
+          "na": "This proof renders recovered artwork that keeps its photographed lettering and adds no type."
+        },
+        "sticker-proof-bag-design-1": {
+          "na": "This proof renders recovered artwork that keeps its photographed lettering and adds no type."
+        },
+        "sticker-proof-bag-design-2": {
+          "na": "This proof renders recovered artwork that keeps its photographed lettering and adds no type."
+        },
+        "sticker-proof-bag-design-3": {
+          "na": "This proof renders recovered artwork that keeps its photographed lettering and adds no type."
+        },
+        "sticker-proof-companion-1": {
+          "checks": [
+            "VECTOR-04/sticker-proof-companion-1/H021"
+          ]
+        },
+        "sticker-proof-companion-2": {
+          "checks": [
+            "VECTOR-04/sticker-proof-companion-2/H021"
+          ]
+        },
+        "gang-sheet": {
+          "na": "Sticker lettering on the sheet repeats the single files unchanged, confirmed by gang-sheet H007 to H012."
+        }
+      }
+    },
+    {
+      "rule_id": "T01L",
+      "kind": "type",
+      "rule": "Display (step 01) leading: 20 points from baseline to baseline.",
+      "source": "brand_identity.type_system.scale[01]",
+      "cells": {
+        "recovered-sticker-window-mark": {
+          "na": "Recovered artwork keeps its photographed lettering and adds no new type, per brief."
+        },
+        "recovered-sticker-bag-design-1": {
+          "na": "Recovered artwork keeps its photographed lettering and adds no new type, per brief."
+        },
+        "recovered-sticker-bag-design-2": {
+          "na": "Recovered artwork keeps its photographed lettering and adds no new type, per brief."
+        },
+        "recovered-sticker-bag-design-3": {
+          "na": "Recovered artwork keeps its photographed lettering and adds no new type, per brief."
+        },
+        "new-sticker-companion-1": {
+          "checks": [
+            "VECTOR-04/new-sticker-companion-1/H029"
+          ]
+        },
+        "new-sticker-companion-2": {
+          "checks": [
+            "VECTOR-04/new-sticker-companion-2/H029"
+          ]
+        },
+        "sticker-cut-window-mark": {
+          "na": "Cut contour files hold only a production cut line, no artwork or colour."
+        },
+        "sticker-cut-bag-design-1": {
+          "na": "Cut contour files hold only a production cut line, no artwork or colour."
+        },
+        "sticker-cut-bag-design-2": {
+          "na": "Cut contour files hold only a production cut line, no artwork or colour."
+        },
+        "sticker-cut-bag-design-3": {
+          "na": "Cut contour files hold only a production cut line, no artwork or colour."
+        },
+        "sticker-cut-companion-1": {
+          "na": "Cut contour files hold only a production cut line, no artwork or colour."
+        },
+        "sticker-cut-companion-2": {
+          "na": "Cut contour files hold only a production cut line, no artwork or colour."
+        },
+        "sticker-proof-window-mark": {
+          "na": "This proof renders recovered artwork that keeps its photographed lettering and adds no type."
+        },
+        "sticker-proof-bag-design-1": {
+          "na": "This proof renders recovered artwork that keeps its photographed lettering and adds no type."
+        },
+        "sticker-proof-bag-design-2": {
+          "na": "This proof renders recovered artwork that keeps its photographed lettering and adds no type."
+        },
+        "sticker-proof-bag-design-3": {
+          "na": "This proof renders recovered artwork that keeps its photographed lettering and adds no type."
+        },
+        "sticker-proof-companion-1": {
+          "na": "The proof renders new-sticker-companion-1.svg unchanged (proof H001); leading is measured on that SVG."
+        },
+        "sticker-proof-companion-2": {
+          "na": "The proof renders new-sticker-companion-2.svg unchanged (proof H001); leading is measured on that SVG."
+        },
+        "gang-sheet": {
+          "na": "Sticker lettering on the sheet repeats the single files unchanged, confirmed by gang-sheet H007 to H012."
+        }
+      }
+    },
+    {
+      "rule_id": "T01T",
+      "kind": "type",
+      "rule": "Display (step 01) tracking: plus 30 thousandths of an em on the arc.",
+      "source": "brand_identity.type_system.scale[01]",
+      "cells": {
+        "recovered-sticker-window-mark": {
+          "na": "Recovered artwork keeps its photographed lettering and adds no new type, per brief."
+        },
+        "recovered-sticker-bag-design-1": {
+          "na": "Recovered artwork keeps its photographed lettering and adds no new type, per brief."
+        },
+        "recovered-sticker-bag-design-2": {
+          "na": "Recovered artwork keeps its photographed lettering and adds no new type, per brief."
+        },
+        "recovered-sticker-bag-design-3": {
+          "na": "Recovered artwork keeps its photographed lettering and adds no new type, per brief."
+        },
+        "new-sticker-companion-1": {
+          "not_verified": "Tracking of +30 cannot be read from outlined lettering or judged by eye on the SVG; kept as a design target."
+        },
+        "new-sticker-companion-2": {
+          "not_verified": "Tracking of +30 cannot be read from outlined lettering or judged by eye on the SVG; kept as a design target."
+        },
+        "sticker-cut-window-mark": {
+          "na": "Cut contour files hold only a production cut line, no artwork or colour."
+        },
+        "sticker-cut-bag-design-1": {
+          "na": "Cut contour files hold only a production cut line, no artwork or colour."
+        },
+        "sticker-cut-bag-design-2": {
+          "na": "Cut contour files hold only a production cut line, no artwork or colour."
+        },
+        "sticker-cut-bag-design-3": {
+          "na": "Cut contour files hold only a production cut line, no artwork or colour."
+        },
+        "sticker-cut-companion-1": {
+          "na": "Cut contour files hold only a production cut line, no artwork or colour."
+        },
+        "sticker-cut-companion-2": {
+          "na": "Cut contour files hold only a production cut line, no artwork or colour."
+        },
+        "sticker-proof-window-mark": {
+          "na": "This proof renders recovered artwork that keeps its photographed lettering and adds no type."
+        },
+        "sticker-proof-bag-design-1": {
+          "na": "This proof renders recovered artwork that keeps its photographed lettering and adds no type."
+        },
+        "sticker-proof-bag-design-2": {
+          "na": "This proof renders recovered artwork that keeps its photographed lettering and adds no type."
+        },
+        "sticker-proof-bag-design-3": {
+          "na": "This proof renders recovered artwork that keeps its photographed lettering and adds no type."
+        },
+        "sticker-proof-companion-1": {
+          "not_verified": "Tracking of +30 in thousandths of an em cannot be judged in a PNG proof; kept as a design target."
+        },
+        "sticker-proof-companion-2": {
+          "not_verified": "Tracking of +30 in thousandths of an em cannot be judged in a PNG proof; kept as a design target."
+        },
+        "gang-sheet": {
+          "na": "Sticker lettering on the sheet repeats the single files unchanged, confirmed by gang-sheet H007 to H012."
+        }
+      }
+    },
+    {
       "rule_id": "T02",
       "kind": "type",
-      "rule": "Subheading (step 02): headings and headers are DM Serif Display Regular capitals.",
+      "rule": "Subheading (step 02) font: flat headings and headers are DM Serif Display Regular.",
       "source": "brand_identity.type_system.scale[02]",
       "cells": {
         "recovered-sticker-window-mark": {
@@ -1365,9 +2181,281 @@
       }
     },
     {
+      "rule_id": "T02C",
+      "kind": "type",
+      "rule": "Subheading (step 02) case: flat headings and headers are in capitals.",
+      "source": "brand_identity.type_system.scale[02]",
+      "cells": {
+        "recovered-sticker-window-mark": {
+          "na": "Recovered artwork keeps its photographed lettering and adds no new type, per brief."
+        },
+        "recovered-sticker-bag-design-1": {
+          "na": "Recovered artwork keeps its photographed lettering and adds no new type, per brief."
+        },
+        "recovered-sticker-bag-design-2": {
+          "na": "Recovered artwork keeps its photographed lettering and adds no new type, per brief."
+        },
+        "recovered-sticker-bag-design-3": {
+          "na": "Recovered artwork keeps its photographed lettering and adds no new type, per brief."
+        },
+        "new-sticker-companion-1": {
+          "checks": [
+            "VECTOR-04/new-sticker-companion-1/H031"
+          ]
+        },
+        "new-sticker-companion-2": {
+          "checks": [
+            "VECTOR-04/new-sticker-companion-2/H031"
+          ]
+        },
+        "sticker-cut-window-mark": {
+          "na": "Cut contour files hold only a production cut line, no artwork or colour."
+        },
+        "sticker-cut-bag-design-1": {
+          "na": "Cut contour files hold only a production cut line, no artwork or colour."
+        },
+        "sticker-cut-bag-design-2": {
+          "na": "Cut contour files hold only a production cut line, no artwork or colour."
+        },
+        "sticker-cut-bag-design-3": {
+          "na": "Cut contour files hold only a production cut line, no artwork or colour."
+        },
+        "sticker-cut-companion-1": {
+          "na": "Cut contour files hold only a production cut line, no artwork or colour."
+        },
+        "sticker-cut-companion-2": {
+          "na": "Cut contour files hold only a production cut line, no artwork or colour."
+        },
+        "sticker-proof-window-mark": {
+          "na": "This proof renders recovered artwork that keeps its photographed lettering and adds no type."
+        },
+        "sticker-proof-bag-design-1": {
+          "na": "This proof renders recovered artwork that keeps its photographed lettering and adds no type."
+        },
+        "sticker-proof-bag-design-2": {
+          "na": "This proof renders recovered artwork that keeps its photographed lettering and adds no type."
+        },
+        "sticker-proof-bag-design-3": {
+          "na": "This proof renders recovered artwork that keeps its photographed lettering and adds no type."
+        },
+        "sticker-proof-companion-1": {
+          "checks": [
+            "VECTOR-04/sticker-proof-companion-1/H023"
+          ]
+        },
+        "sticker-proof-companion-2": {
+          "checks": [
+            "VECTOR-04/sticker-proof-companion-2/H023"
+          ]
+        },
+        "gang-sheet": {
+          "na": "Sticker lettering on the sheet repeats the single files unchanged, confirmed by gang-sheet H007 to H012."
+        }
+      }
+    },
+    {
+      "rule_id": "T02S",
+      "kind": "type",
+      "rule": "Subheading (step 02) size: 11 pt.",
+      "source": "brand_identity.type_system.scale[02]",
+      "cells": {
+        "recovered-sticker-window-mark": {
+          "na": "Recovered artwork keeps its photographed lettering and adds no new type, per brief."
+        },
+        "recovered-sticker-bag-design-1": {
+          "na": "Recovered artwork keeps its photographed lettering and adds no new type, per brief."
+        },
+        "recovered-sticker-bag-design-2": {
+          "na": "Recovered artwork keeps its photographed lettering and adds no new type, per brief."
+        },
+        "recovered-sticker-bag-design-3": {
+          "na": "Recovered artwork keeps its photographed lettering and adds no new type, per brief."
+        },
+        "new-sticker-companion-1": {
+          "not_verified": "Lettering may be outlined in the SVG, so the 11 pt size cannot be read by code or judged by eye; kept as a design target."
+        },
+        "new-sticker-companion-2": {
+          "not_verified": "Lettering may be outlined in the SVG, so the 11 pt size cannot be read by code or judged by eye; kept as a design target."
+        },
+        "sticker-cut-window-mark": {
+          "na": "Cut contour files hold only a production cut line, no artwork or colour."
+        },
+        "sticker-cut-bag-design-1": {
+          "na": "Cut contour files hold only a production cut line, no artwork or colour."
+        },
+        "sticker-cut-bag-design-2": {
+          "na": "Cut contour files hold only a production cut line, no artwork or colour."
+        },
+        "sticker-cut-bag-design-3": {
+          "na": "Cut contour files hold only a production cut line, no artwork or colour."
+        },
+        "sticker-cut-companion-1": {
+          "na": "Cut contour files hold only a production cut line, no artwork or colour."
+        },
+        "sticker-cut-companion-2": {
+          "na": "Cut contour files hold only a production cut line, no artwork or colour."
+        },
+        "sticker-proof-window-mark": {
+          "na": "This proof renders recovered artwork that keeps its photographed lettering and adds no type."
+        },
+        "sticker-proof-bag-design-1": {
+          "na": "This proof renders recovered artwork that keeps its photographed lettering and adds no type."
+        },
+        "sticker-proof-bag-design-2": {
+          "na": "This proof renders recovered artwork that keeps its photographed lettering and adds no type."
+        },
+        "sticker-proof-bag-design-3": {
+          "na": "This proof renders recovered artwork that keeps its photographed lettering and adds no type."
+        },
+        "sticker-proof-companion-1": {
+          "not_verified": "Exact point size cannot be measured in a PNG proof; the 11 pt size is kept as a design target."
+        },
+        "sticker-proof-companion-2": {
+          "not_verified": "Exact point size cannot be measured in a PNG proof; the 11 pt size is kept as a design target."
+        },
+        "gang-sheet": {
+          "na": "Sticker lettering on the sheet repeats the single files unchanged, confirmed by gang-sheet H007 to H012."
+        }
+      }
+    },
+    {
+      "rule_id": "T02L",
+      "kind": "type",
+      "rule": "Subheading (step 02) leading: 13 points from baseline to baseline.",
+      "source": "brand_identity.type_system.scale[02]",
+      "cells": {
+        "recovered-sticker-window-mark": {
+          "na": "Recovered artwork keeps its photographed lettering and adds no new type, per brief."
+        },
+        "recovered-sticker-bag-design-1": {
+          "na": "Recovered artwork keeps its photographed lettering and adds no new type, per brief."
+        },
+        "recovered-sticker-bag-design-2": {
+          "na": "Recovered artwork keeps its photographed lettering and adds no new type, per brief."
+        },
+        "recovered-sticker-bag-design-3": {
+          "na": "Recovered artwork keeps its photographed lettering and adds no new type, per brief."
+        },
+        "new-sticker-companion-1": {
+          "checks": [
+            "VECTOR-04/new-sticker-companion-1/H028"
+          ]
+        },
+        "new-sticker-companion-2": {
+          "checks": [
+            "VECTOR-04/new-sticker-companion-2/H028"
+          ]
+        },
+        "sticker-cut-window-mark": {
+          "na": "Cut contour files hold only a production cut line, no artwork or colour."
+        },
+        "sticker-cut-bag-design-1": {
+          "na": "Cut contour files hold only a production cut line, no artwork or colour."
+        },
+        "sticker-cut-bag-design-2": {
+          "na": "Cut contour files hold only a production cut line, no artwork or colour."
+        },
+        "sticker-cut-bag-design-3": {
+          "na": "Cut contour files hold only a production cut line, no artwork or colour."
+        },
+        "sticker-cut-companion-1": {
+          "na": "Cut contour files hold only a production cut line, no artwork or colour."
+        },
+        "sticker-cut-companion-2": {
+          "na": "Cut contour files hold only a production cut line, no artwork or colour."
+        },
+        "sticker-proof-window-mark": {
+          "na": "This proof renders recovered artwork that keeps its photographed lettering and adds no type."
+        },
+        "sticker-proof-bag-design-1": {
+          "na": "This proof renders recovered artwork that keeps its photographed lettering and adds no type."
+        },
+        "sticker-proof-bag-design-2": {
+          "na": "This proof renders recovered artwork that keeps its photographed lettering and adds no type."
+        },
+        "sticker-proof-bag-design-3": {
+          "na": "This proof renders recovered artwork that keeps its photographed lettering and adds no type."
+        },
+        "sticker-proof-companion-1": {
+          "na": "The proof renders new-sticker-companion-1.svg unchanged (proof H001); leading is measured on that SVG."
+        },
+        "sticker-proof-companion-2": {
+          "na": "The proof renders new-sticker-companion-2.svg unchanged (proof H001); leading is measured on that SVG."
+        },
+        "gang-sheet": {
+          "na": "Sticker lettering on the sheet repeats the single files unchanged, confirmed by gang-sheet H007 to H012."
+        }
+      }
+    },
+    {
+      "rule_id": "T02T",
+      "kind": "type",
+      "rule": "Subheading (step 02) tracking: plus 20 thousandths of an em.",
+      "source": "brand_identity.type_system.scale[02]",
+      "cells": {
+        "recovered-sticker-window-mark": {
+          "na": "Recovered artwork keeps its photographed lettering and adds no new type, per brief."
+        },
+        "recovered-sticker-bag-design-1": {
+          "na": "Recovered artwork keeps its photographed lettering and adds no new type, per brief."
+        },
+        "recovered-sticker-bag-design-2": {
+          "na": "Recovered artwork keeps its photographed lettering and adds no new type, per brief."
+        },
+        "recovered-sticker-bag-design-3": {
+          "na": "Recovered artwork keeps its photographed lettering and adds no new type, per brief."
+        },
+        "new-sticker-companion-1": {
+          "not_verified": "Tracking of +20 cannot be read from outlined lettering or judged by eye on the SVG; kept as a design target."
+        },
+        "new-sticker-companion-2": {
+          "not_verified": "Tracking of +20 cannot be read from outlined lettering or judged by eye on the SVG; kept as a design target."
+        },
+        "sticker-cut-window-mark": {
+          "na": "Cut contour files hold only a production cut line, no artwork or colour."
+        },
+        "sticker-cut-bag-design-1": {
+          "na": "Cut contour files hold only a production cut line, no artwork or colour."
+        },
+        "sticker-cut-bag-design-2": {
+          "na": "Cut contour files hold only a production cut line, no artwork or colour."
+        },
+        "sticker-cut-bag-design-3": {
+          "na": "Cut contour files hold only a production cut line, no artwork or colour."
+        },
+        "sticker-cut-companion-1": {
+          "na": "Cut contour files hold only a production cut line, no artwork or colour."
+        },
+        "sticker-cut-companion-2": {
+          "na": "Cut contour files hold only a production cut line, no artwork or colour."
+        },
+        "sticker-proof-window-mark": {
+          "na": "This proof renders recovered artwork that keeps its photographed lettering and adds no type."
+        },
+        "sticker-proof-bag-design-1": {
+          "na": "This proof renders recovered artwork that keeps its photographed lettering and adds no type."
+        },
+        "sticker-proof-bag-design-2": {
+          "na": "This proof renders recovered artwork that keeps its photographed lettering and adds no type."
+        },
+        "sticker-proof-bag-design-3": {
+          "na": "This proof renders recovered artwork that keeps its photographed lettering and adds no type."
+        },
+        "sticker-proof-companion-1": {
+          "not_verified": "Tracking of +20 in thousandths of an em cannot be judged in a PNG proof; kept as a design target."
+        },
+        "sticker-proof-companion-2": {
+          "not_verified": "Tracking of +20 in thousandths of an em cannot be judged in a PNG proof; kept as a design target."
+        },
+        "gang-sheet": {
+          "na": "Sticker lettering on the sheet repeats the single files unchanged, confirmed by gang-sheet H007 to H012."
+        }
+      }
+    },
+    {
       "rule_id": "T03",
       "kind": "type",
-      "rule": "Body (step 03): sticker and supporting copy is Libre Franklin Regular 400.",
+      "rule": "Body (step 03) font: sticker and supporting copy is Libre Franklin Regular 400.",
       "source": "brand_identity.type_system.scale[03]",
       "cells": {
         "recovered-sticker-window-mark": {
@@ -1431,6 +2519,205 @@
           "checks": [
             "VECTOR-04/sticker-proof-companion-2/H019"
           ]
+        },
+        "gang-sheet": {
+          "na": "Sticker lettering on the sheet repeats the single files unchanged, confirmed by gang-sheet H007 to H012."
+        }
+      }
+    },
+    {
+      "rule_id": "T03S",
+      "kind": "type",
+      "rule": "Body (step 03) size: 7 pt.",
+      "source": "brand_identity.type_system.scale[03]",
+      "cells": {
+        "recovered-sticker-window-mark": {
+          "na": "Recovered artwork keeps its photographed lettering and adds no new type, per brief."
+        },
+        "recovered-sticker-bag-design-1": {
+          "na": "Recovered artwork keeps its photographed lettering and adds no new type, per brief."
+        },
+        "recovered-sticker-bag-design-2": {
+          "na": "Recovered artwork keeps its photographed lettering and adds no new type, per brief."
+        },
+        "recovered-sticker-bag-design-3": {
+          "na": "Recovered artwork keeps its photographed lettering and adds no new type, per brief."
+        },
+        "new-sticker-companion-1": {
+          "not_verified": "Lettering may be outlined in the SVG, so the 7 pt size cannot be read by code or judged by eye; kept as a design target."
+        },
+        "new-sticker-companion-2": {
+          "not_verified": "Lettering may be outlined in the SVG, so the 7 pt size cannot be read by code or judged by eye; kept as a design target."
+        },
+        "sticker-cut-window-mark": {
+          "na": "Cut contour files hold only a production cut line, no artwork or colour."
+        },
+        "sticker-cut-bag-design-1": {
+          "na": "Cut contour files hold only a production cut line, no artwork or colour."
+        },
+        "sticker-cut-bag-design-2": {
+          "na": "Cut contour files hold only a production cut line, no artwork or colour."
+        },
+        "sticker-cut-bag-design-3": {
+          "na": "Cut contour files hold only a production cut line, no artwork or colour."
+        },
+        "sticker-cut-companion-1": {
+          "na": "Cut contour files hold only a production cut line, no artwork or colour."
+        },
+        "sticker-cut-companion-2": {
+          "na": "Cut contour files hold only a production cut line, no artwork or colour."
+        },
+        "sticker-proof-window-mark": {
+          "na": "This proof renders recovered artwork that keeps its photographed lettering and adds no type."
+        },
+        "sticker-proof-bag-design-1": {
+          "na": "This proof renders recovered artwork that keeps its photographed lettering and adds no type."
+        },
+        "sticker-proof-bag-design-2": {
+          "na": "This proof renders recovered artwork that keeps its photographed lettering and adds no type."
+        },
+        "sticker-proof-bag-design-3": {
+          "na": "This proof renders recovered artwork that keeps its photographed lettering and adds no type."
+        },
+        "sticker-proof-companion-1": {
+          "not_verified": "Exact point size cannot be measured in a PNG proof; the 7 pt size is kept as a design target."
+        },
+        "sticker-proof-companion-2": {
+          "not_verified": "Exact point size cannot be measured in a PNG proof; the 7 pt size is kept as a design target."
+        },
+        "gang-sheet": {
+          "na": "Sticker lettering on the sheet repeats the single files unchanged, confirmed by gang-sheet H007 to H012."
+        }
+      }
+    },
+    {
+      "rule_id": "T03L",
+      "kind": "type",
+      "rule": "Body (step 03) leading: 10.5 points from baseline to baseline.",
+      "source": "brand_identity.type_system.scale[03]",
+      "cells": {
+        "recovered-sticker-window-mark": {
+          "na": "Recovered artwork keeps its photographed lettering and adds no new type, per brief."
+        },
+        "recovered-sticker-bag-design-1": {
+          "na": "Recovered artwork keeps its photographed lettering and adds no new type, per brief."
+        },
+        "recovered-sticker-bag-design-2": {
+          "na": "Recovered artwork keeps its photographed lettering and adds no new type, per brief."
+        },
+        "recovered-sticker-bag-design-3": {
+          "na": "Recovered artwork keeps its photographed lettering and adds no new type, per brief."
+        },
+        "new-sticker-companion-1": {
+          "checks": [
+            "VECTOR-04/new-sticker-companion-1/H027"
+          ]
+        },
+        "new-sticker-companion-2": {
+          "checks": [
+            "VECTOR-04/new-sticker-companion-2/H027"
+          ]
+        },
+        "sticker-cut-window-mark": {
+          "na": "Cut contour files hold only a production cut line, no artwork or colour."
+        },
+        "sticker-cut-bag-design-1": {
+          "na": "Cut contour files hold only a production cut line, no artwork or colour."
+        },
+        "sticker-cut-bag-design-2": {
+          "na": "Cut contour files hold only a production cut line, no artwork or colour."
+        },
+        "sticker-cut-bag-design-3": {
+          "na": "Cut contour files hold only a production cut line, no artwork or colour."
+        },
+        "sticker-cut-companion-1": {
+          "na": "Cut contour files hold only a production cut line, no artwork or colour."
+        },
+        "sticker-cut-companion-2": {
+          "na": "Cut contour files hold only a production cut line, no artwork or colour."
+        },
+        "sticker-proof-window-mark": {
+          "na": "This proof renders recovered artwork that keeps its photographed lettering and adds no type."
+        },
+        "sticker-proof-bag-design-1": {
+          "na": "This proof renders recovered artwork that keeps its photographed lettering and adds no type."
+        },
+        "sticker-proof-bag-design-2": {
+          "na": "This proof renders recovered artwork that keeps its photographed lettering and adds no type."
+        },
+        "sticker-proof-bag-design-3": {
+          "na": "This proof renders recovered artwork that keeps its photographed lettering and adds no type."
+        },
+        "sticker-proof-companion-1": {
+          "na": "The proof renders new-sticker-companion-1.svg unchanged (proof H001); leading is measured on that SVG."
+        },
+        "sticker-proof-companion-2": {
+          "na": "The proof renders new-sticker-companion-2.svg unchanged (proof H001); leading is measured on that SVG."
+        },
+        "gang-sheet": {
+          "na": "Sticker lettering on the sheet repeats the single files unchanged, confirmed by gang-sheet H007 to H012."
+        }
+      }
+    },
+    {
+      "rule_id": "T03T",
+      "kind": "type",
+      "rule": "Body (step 03) tracking: 0.",
+      "source": "brand_identity.type_system.scale[03]",
+      "cells": {
+        "recovered-sticker-window-mark": {
+          "na": "Recovered artwork keeps its photographed lettering and adds no new type, per brief."
+        },
+        "recovered-sticker-bag-design-1": {
+          "na": "Recovered artwork keeps its photographed lettering and adds no new type, per brief."
+        },
+        "recovered-sticker-bag-design-2": {
+          "na": "Recovered artwork keeps its photographed lettering and adds no new type, per brief."
+        },
+        "recovered-sticker-bag-design-3": {
+          "na": "Recovered artwork keeps its photographed lettering and adds no new type, per brief."
+        },
+        "new-sticker-companion-1": {
+          "not_verified": "Tracking of 0 cannot be read from outlined lettering or judged by eye on the SVG; kept as a design target."
+        },
+        "new-sticker-companion-2": {
+          "not_verified": "Tracking of 0 cannot be read from outlined lettering or judged by eye on the SVG; kept as a design target."
+        },
+        "sticker-cut-window-mark": {
+          "na": "Cut contour files hold only a production cut line, no artwork or colour."
+        },
+        "sticker-cut-bag-design-1": {
+          "na": "Cut contour files hold only a production cut line, no artwork or colour."
+        },
+        "sticker-cut-bag-design-2": {
+          "na": "Cut contour files hold only a production cut line, no artwork or colour."
+        },
+        "sticker-cut-bag-design-3": {
+          "na": "Cut contour files hold only a production cut line, no artwork or colour."
+        },
+        "sticker-cut-companion-1": {
+          "na": "Cut contour files hold only a production cut line, no artwork or colour."
+        },
+        "sticker-cut-companion-2": {
+          "na": "Cut contour files hold only a production cut line, no artwork or colour."
+        },
+        "sticker-proof-window-mark": {
+          "na": "This proof renders recovered artwork that keeps its photographed lettering and adds no type."
+        },
+        "sticker-proof-bag-design-1": {
+          "na": "This proof renders recovered artwork that keeps its photographed lettering and adds no type."
+        },
+        "sticker-proof-bag-design-2": {
+          "na": "This proof renders recovered artwork that keeps its photographed lettering and adds no type."
+        },
+        "sticker-proof-bag-design-3": {
+          "na": "This proof renders recovered artwork that keeps its photographed lettering and adds no type."
+        },
+        "sticker-proof-companion-1": {
+          "not_verified": "Tracking of 0 in thousandths of an em cannot be judged in a PNG proof; kept as a design target."
+        },
+        "sticker-proof-companion-2": {
+          "not_verified": "Tracking of 0 in thousandths of an em cannot be judged in a PNG proof; kept as a design target."
         },
         "gang-sheet": {
           "na": "Sticker lettering on the sheet repeats the single files unchanged, confirmed by gang-sheet H007 to H012."
@@ -1513,7 +2800,7 @@
     {
       "rule_id": "T05",
       "kind": "type",
-      "rule": "Fine print (step 04): gang sheet labels and die line notes are Libre Franklin Bold 700 capitals.",
+      "rule": "Fine print (step 04) font: gang sheet labels and die line notes are Libre Franklin Bold 700.",
       "source": "brand_identity.type_system.scale[04]",
       "cells": {
         "recovered-sticker-window-mark": {
@@ -1578,9 +2865,273 @@
       }
     },
     {
+      "rule_id": "T05C",
+      "kind": "type",
+      "rule": "Fine print (step 04) case: gang sheet labels and die line notes are in capitals.",
+      "source": "brand_identity.type_system.scale[04]",
+      "cells": {
+        "recovered-sticker-window-mark": {
+          "na": "Fine print is for gang sheet labels and die line notes only."
+        },
+        "recovered-sticker-bag-design-1": {
+          "na": "Fine print is for gang sheet labels and die line notes only."
+        },
+        "recovered-sticker-bag-design-2": {
+          "na": "Fine print is for gang sheet labels and die line notes only."
+        },
+        "recovered-sticker-bag-design-3": {
+          "na": "Fine print is for gang sheet labels and die line notes only."
+        },
+        "new-sticker-companion-1": {
+          "na": "Fine print is for gang sheet labels and die line notes only."
+        },
+        "new-sticker-companion-2": {
+          "na": "Fine print is for gang sheet labels and die line notes only."
+        },
+        "sticker-cut-window-mark": {
+          "na": "Fine print is for gang sheet labels and die line notes only."
+        },
+        "sticker-cut-bag-design-1": {
+          "na": "Fine print is for gang sheet labels and die line notes only."
+        },
+        "sticker-cut-bag-design-2": {
+          "na": "Fine print is for gang sheet labels and die line notes only."
+        },
+        "sticker-cut-bag-design-3": {
+          "na": "Fine print is for gang sheet labels and die line notes only."
+        },
+        "sticker-cut-companion-1": {
+          "na": "Fine print is for gang sheet labels and die line notes only."
+        },
+        "sticker-cut-companion-2": {
+          "na": "Fine print is for gang sheet labels and die line notes only."
+        },
+        "sticker-proof-window-mark": {
+          "na": "Fine print is for gang sheet labels and die line notes only."
+        },
+        "sticker-proof-bag-design-1": {
+          "na": "Fine print is for gang sheet labels and die line notes only."
+        },
+        "sticker-proof-bag-design-2": {
+          "na": "Fine print is for gang sheet labels and die line notes only."
+        },
+        "sticker-proof-bag-design-3": {
+          "na": "Fine print is for gang sheet labels and die line notes only."
+        },
+        "sticker-proof-companion-1": {
+          "na": "Fine print is for gang sheet labels and die line notes only."
+        },
+        "sticker-proof-companion-2": {
+          "na": "Fine print is for gang sheet labels and die line notes only."
+        },
+        "gang-sheet": {
+          "checks": [
+            "VECTOR-04/gang-sheet/H032"
+          ]
+        }
+      }
+    },
+    {
+      "rule_id": "T05S",
+      "kind": "type",
+      "rule": "Fine print (step 04) size: 6 pt.",
+      "source": "brand_identity.type_system.scale[04]",
+      "cells": {
+        "recovered-sticker-window-mark": {
+          "na": "Fine print is for gang sheet labels and die line notes only."
+        },
+        "recovered-sticker-bag-design-1": {
+          "na": "Fine print is for gang sheet labels and die line notes only."
+        },
+        "recovered-sticker-bag-design-2": {
+          "na": "Fine print is for gang sheet labels and die line notes only."
+        },
+        "recovered-sticker-bag-design-3": {
+          "na": "Fine print is for gang sheet labels and die line notes only."
+        },
+        "new-sticker-companion-1": {
+          "na": "Fine print is for gang sheet labels and die line notes only."
+        },
+        "new-sticker-companion-2": {
+          "na": "Fine print is for gang sheet labels and die line notes only."
+        },
+        "sticker-cut-window-mark": {
+          "na": "Fine print is for gang sheet labels and die line notes only."
+        },
+        "sticker-cut-bag-design-1": {
+          "na": "Fine print is for gang sheet labels and die line notes only."
+        },
+        "sticker-cut-bag-design-2": {
+          "na": "Fine print is for gang sheet labels and die line notes only."
+        },
+        "sticker-cut-bag-design-3": {
+          "na": "Fine print is for gang sheet labels and die line notes only."
+        },
+        "sticker-cut-companion-1": {
+          "na": "Fine print is for gang sheet labels and die line notes only."
+        },
+        "sticker-cut-companion-2": {
+          "na": "Fine print is for gang sheet labels and die line notes only."
+        },
+        "sticker-proof-window-mark": {
+          "na": "Fine print is for gang sheet labels and die line notes only."
+        },
+        "sticker-proof-bag-design-1": {
+          "na": "Fine print is for gang sheet labels and die line notes only."
+        },
+        "sticker-proof-bag-design-2": {
+          "na": "Fine print is for gang sheet labels and die line notes only."
+        },
+        "sticker-proof-bag-design-3": {
+          "na": "Fine print is for gang sheet labels and die line notes only."
+        },
+        "sticker-proof-companion-1": {
+          "na": "Fine print is for gang sheet labels and die line notes only."
+        },
+        "sticker-proof-companion-2": {
+          "na": "Fine print is for gang sheet labels and die line notes only."
+        },
+        "gang-sheet": {
+          "not_verified": "Gang sheet lettering may be outlined in export, so no code check reads the 6 pt size; kept as a design target."
+        }
+      }
+    },
+    {
+      "rule_id": "T05L",
+      "kind": "type",
+      "rule": "Fine print (step 04) leading: 8.5 points from baseline to baseline.",
+      "source": "brand_identity.type_system.scale[04]",
+      "cells": {
+        "recovered-sticker-window-mark": {
+          "na": "Fine print is for gang sheet labels and die line notes only."
+        },
+        "recovered-sticker-bag-design-1": {
+          "na": "Fine print is for gang sheet labels and die line notes only."
+        },
+        "recovered-sticker-bag-design-2": {
+          "na": "Fine print is for gang sheet labels and die line notes only."
+        },
+        "recovered-sticker-bag-design-3": {
+          "na": "Fine print is for gang sheet labels and die line notes only."
+        },
+        "new-sticker-companion-1": {
+          "na": "Fine print is for gang sheet labels and die line notes only."
+        },
+        "new-sticker-companion-2": {
+          "na": "Fine print is for gang sheet labels and die line notes only."
+        },
+        "sticker-cut-window-mark": {
+          "na": "Fine print is for gang sheet labels and die line notes only."
+        },
+        "sticker-cut-bag-design-1": {
+          "na": "Fine print is for gang sheet labels and die line notes only."
+        },
+        "sticker-cut-bag-design-2": {
+          "na": "Fine print is for gang sheet labels and die line notes only."
+        },
+        "sticker-cut-bag-design-3": {
+          "na": "Fine print is for gang sheet labels and die line notes only."
+        },
+        "sticker-cut-companion-1": {
+          "na": "Fine print is for gang sheet labels and die line notes only."
+        },
+        "sticker-cut-companion-2": {
+          "na": "Fine print is for gang sheet labels and die line notes only."
+        },
+        "sticker-proof-window-mark": {
+          "na": "Fine print is for gang sheet labels and die line notes only."
+        },
+        "sticker-proof-bag-design-1": {
+          "na": "Fine print is for gang sheet labels and die line notes only."
+        },
+        "sticker-proof-bag-design-2": {
+          "na": "Fine print is for gang sheet labels and die line notes only."
+        },
+        "sticker-proof-bag-design-3": {
+          "na": "Fine print is for gang sheet labels and die line notes only."
+        },
+        "sticker-proof-companion-1": {
+          "na": "Fine print is for gang sheet labels and die line notes only."
+        },
+        "sticker-proof-companion-2": {
+          "na": "Fine print is for gang sheet labels and die line notes only."
+        },
+        "gang-sheet": {
+          "checks": [
+            "VECTOR-04/gang-sheet/H030"
+          ]
+        }
+      }
+    },
+    {
+      "rule_id": "T05T",
+      "kind": "type",
+      "rule": "Fine print (step 04) tracking: plus 40 thousandths of an em.",
+      "source": "brand_identity.type_system.scale[04]",
+      "cells": {
+        "recovered-sticker-window-mark": {
+          "na": "Fine print is for gang sheet labels and die line notes only."
+        },
+        "recovered-sticker-bag-design-1": {
+          "na": "Fine print is for gang sheet labels and die line notes only."
+        },
+        "recovered-sticker-bag-design-2": {
+          "na": "Fine print is for gang sheet labels and die line notes only."
+        },
+        "recovered-sticker-bag-design-3": {
+          "na": "Fine print is for gang sheet labels and die line notes only."
+        },
+        "new-sticker-companion-1": {
+          "na": "Fine print is for gang sheet labels and die line notes only."
+        },
+        "new-sticker-companion-2": {
+          "na": "Fine print is for gang sheet labels and die line notes only."
+        },
+        "sticker-cut-window-mark": {
+          "na": "Fine print is for gang sheet labels and die line notes only."
+        },
+        "sticker-cut-bag-design-1": {
+          "na": "Fine print is for gang sheet labels and die line notes only."
+        },
+        "sticker-cut-bag-design-2": {
+          "na": "Fine print is for gang sheet labels and die line notes only."
+        },
+        "sticker-cut-bag-design-3": {
+          "na": "Fine print is for gang sheet labels and die line notes only."
+        },
+        "sticker-cut-companion-1": {
+          "na": "Fine print is for gang sheet labels and die line notes only."
+        },
+        "sticker-cut-companion-2": {
+          "na": "Fine print is for gang sheet labels and die line notes only."
+        },
+        "sticker-proof-window-mark": {
+          "na": "Fine print is for gang sheet labels and die line notes only."
+        },
+        "sticker-proof-bag-design-1": {
+          "na": "Fine print is for gang sheet labels and die line notes only."
+        },
+        "sticker-proof-bag-design-2": {
+          "na": "Fine print is for gang sheet labels and die line notes only."
+        },
+        "sticker-proof-bag-design-3": {
+          "na": "Fine print is for gang sheet labels and die line notes only."
+        },
+        "sticker-proof-companion-1": {
+          "na": "Fine print is for gang sheet labels and die line notes only."
+        },
+        "sticker-proof-companion-2": {
+          "na": "Fine print is for gang sheet labels and die line notes only."
+        },
+        "gang-sheet": {
+          "not_verified": "Gang sheet lettering may be outlined in export, so no code check reads the +40 tracking; kept as a design target."
+        }
+      }
+    },
+    {
       "rule_id": "T06",
       "kind": "type",
-      "rule": "Signature move: the ampersand is 1.6 times the cap height of MERIDIAN and ASH, never at cap height.",
+      "rule": "Signature move: the ampersand is never set at cap height.",
       "source": "brand_identity.signature_type_move; type_system.rules",
       "cells": {
         "recovered-sticker-window-mark": {
@@ -1644,6 +3195,75 @@
           "checks": [
             "VECTOR-04/sticker-proof-companion-2/H009"
           ]
+        },
+        "gang-sheet": {
+          "na": "Sticker lettering on the sheet repeats the single files unchanged, confirmed by gang-sheet H007 to H012."
+        }
+      }
+    },
+    {
+      "rule_id": "T06R",
+      "kind": "type",
+      "rule": "Signature move: the ampersand is 1.6 times the cap height of MERIDIAN and ASH.",
+      "source": "brand_identity.signature_type_move; type_system.rules",
+      "cells": {
+        "recovered-sticker-window-mark": {
+          "na": "Recovered artwork keeps its photographed lettering and adds no new type, per brief."
+        },
+        "recovered-sticker-bag-design-1": {
+          "na": "Recovered artwork keeps its photographed lettering and adds no new type, per brief."
+        },
+        "recovered-sticker-bag-design-2": {
+          "na": "Recovered artwork keeps its photographed lettering and adds no new type, per brief."
+        },
+        "recovered-sticker-bag-design-3": {
+          "na": "Recovered artwork keeps its photographed lettering and adds no new type, per brief."
+        },
+        "new-sticker-companion-1": {
+          "checks": [
+            "VECTOR-04/new-sticker-companion-1/H010"
+          ]
+        },
+        "new-sticker-companion-2": {
+          "checks": [
+            "VECTOR-04/new-sticker-companion-2/H010"
+          ]
+        },
+        "sticker-cut-window-mark": {
+          "na": "Cut contour files hold only a production cut line, no artwork or colour."
+        },
+        "sticker-cut-bag-design-1": {
+          "na": "Cut contour files hold only a production cut line, no artwork or colour."
+        },
+        "sticker-cut-bag-design-2": {
+          "na": "Cut contour files hold only a production cut line, no artwork or colour."
+        },
+        "sticker-cut-bag-design-3": {
+          "na": "Cut contour files hold only a production cut line, no artwork or colour."
+        },
+        "sticker-cut-companion-1": {
+          "na": "Cut contour files hold only a production cut line, no artwork or colour."
+        },
+        "sticker-cut-companion-2": {
+          "na": "Cut contour files hold only a production cut line, no artwork or colour."
+        },
+        "sticker-proof-window-mark": {
+          "na": "This proof renders recovered artwork that keeps its photographed lettering and adds no type."
+        },
+        "sticker-proof-bag-design-1": {
+          "na": "This proof renders recovered artwork that keeps its photographed lettering and adds no type."
+        },
+        "sticker-proof-bag-design-2": {
+          "na": "This proof renders recovered artwork that keeps its photographed lettering and adds no type."
+        },
+        "sticker-proof-bag-design-3": {
+          "na": "This proof renders recovered artwork that keeps its photographed lettering and adds no type."
+        },
+        "sticker-proof-companion-1": {
+          "na": "The proof renders new-sticker-companion-1.svg unchanged (proof H001); the 1.6 ratio is measured on that SVG."
+        },
+        "sticker-proof-companion-2": {
+          "na": "The proof renders new-sticker-companion-2.svg unchanged (proof H001); the 1.6 ratio is measured on that SVG."
         },
         "gang-sheet": {
           "na": "Sticker lettering on the sheet repeats the single files unchanged, confirmed by gang-sheet H007 to H012."
@@ -1726,7 +3346,7 @@
     {
       "rule_id": "T08",
       "kind": "type",
-      "rule": "Signature move: MERIDIAN and ASH arch on a fixed 40 degree curve.",
+      "rule": "Signature move: MERIDIAN and ASH are set on an arch, not a flat line.",
       "source": "brand_identity.signature_type_move; type_system.rules",
       "cells": {
         "recovered-sticker-window-mark": {
@@ -1797,6 +3417,75 @@
       }
     },
     {
+      "rule_id": "T08A",
+      "kind": "type",
+      "rule": "Signature move: the arch is a fixed 40 degree curve.",
+      "source": "brand_identity.signature_type_move; type_system.rules",
+      "cells": {
+        "recovered-sticker-window-mark": {
+          "na": "Recovered artwork keeps its photographed lettering and adds no new type, per brief."
+        },
+        "recovered-sticker-bag-design-1": {
+          "na": "Recovered artwork keeps its photographed lettering and adds no new type, per brief."
+        },
+        "recovered-sticker-bag-design-2": {
+          "na": "Recovered artwork keeps its photographed lettering and adds no new type, per brief."
+        },
+        "recovered-sticker-bag-design-3": {
+          "na": "Recovered artwork keeps its photographed lettering and adds no new type, per brief."
+        },
+        "new-sticker-companion-1": {
+          "checks": [
+            "VECTOR-04/new-sticker-companion-1/H009"
+          ]
+        },
+        "new-sticker-companion-2": {
+          "checks": [
+            "VECTOR-04/new-sticker-companion-2/H009"
+          ]
+        },
+        "sticker-cut-window-mark": {
+          "na": "Cut contour files hold only a production cut line, no artwork or colour."
+        },
+        "sticker-cut-bag-design-1": {
+          "na": "Cut contour files hold only a production cut line, no artwork or colour."
+        },
+        "sticker-cut-bag-design-2": {
+          "na": "Cut contour files hold only a production cut line, no artwork or colour."
+        },
+        "sticker-cut-bag-design-3": {
+          "na": "Cut contour files hold only a production cut line, no artwork or colour."
+        },
+        "sticker-cut-companion-1": {
+          "na": "Cut contour files hold only a production cut line, no artwork or colour."
+        },
+        "sticker-cut-companion-2": {
+          "na": "Cut contour files hold only a production cut line, no artwork or colour."
+        },
+        "sticker-proof-window-mark": {
+          "na": "This proof renders recovered artwork that keeps its photographed lettering and adds no type."
+        },
+        "sticker-proof-bag-design-1": {
+          "na": "This proof renders recovered artwork that keeps its photographed lettering and adds no type."
+        },
+        "sticker-proof-bag-design-2": {
+          "na": "This proof renders recovered artwork that keeps its photographed lettering and adds no type."
+        },
+        "sticker-proof-bag-design-3": {
+          "na": "This proof renders recovered artwork that keeps its photographed lettering and adds no type."
+        },
+        "sticker-proof-companion-1": {
+          "na": "The proof renders new-sticker-companion-1.svg unchanged (proof H001); the 40 degree arc is measured on that SVG."
+        },
+        "sticker-proof-companion-2": {
+          "na": "The proof renders new-sticker-companion-2.svg unchanged (proof H001); the 40 degree arc is measured on that SVG."
+        },
+        "gang-sheet": {
+          "na": "Sticker lettering on the sheet repeats the single files unchanged, confirmed by gang-sheet H007 to H012."
+        }
+      }
+    },
+    {
       "rule_id": "T09",
       "kind": "type",
       "rule": "Photographed lettering retains its original shape rather than being reset in a typeface.",
@@ -1817,14 +3506,10 @@
           "na": "The bag illustrations carry no lettering in their photographs."
         },
         "new-sticker-companion-1": {
-          "checks": [
-            "VECTOR-04/new-sticker-companion-1/H008"
-          ]
+          "na": "Companion lettering is newly set in the type system; photographed lettering belongs to the window mark only."
         },
         "new-sticker-companion-2": {
-          "checks": [
-            "VECTOR-04/new-sticker-companion-2/H008"
-          ]
+          "na": "Companion lettering is newly set in the type system; photographed lettering belongs to the window mark only."
         },
         "sticker-cut-window-mark": {
           "na": "Cut contour files hold only a production cut line, no artwork or colour."
@@ -1859,14 +3544,10 @@
           "na": "The bag illustrations carry no lettering in their photographs."
         },
         "sticker-proof-companion-1": {
-          "checks": [
-            "VECTOR-04/sticker-proof-companion-1/H007"
-          ]
+          "na": "Companion lettering is newly set in the type system; photographed lettering belongs to the window mark only."
         },
         "sticker-proof-companion-2": {
-          "checks": [
-            "VECTOR-04/sticker-proof-companion-2/H007"
-          ]
+          "na": "Companion lettering is newly set in the type system; photographed lettering belongs to the window mark only."
         },
         "gang-sheet": {
           "na": "The window mark on the sheet matches its single file, confirmed by gang-sheet H007."
@@ -1966,25 +3647,33 @@
         "recovered-sticker-window-mark": {
           "checks": [
             "VECTOR-04/recovered-sticker-window-mark/H001",
-            "VECTOR-04/recovered-sticker-window-mark/H003"
+            "VECTOR-04/recovered-sticker-window-mark/H003",
+            "VECTOR-04/recovered-sticker-window-mark/A003",
+            "VECTOR-04/recovered-sticker-window-mark/H005"
           ]
         },
         "recovered-sticker-bag-design-1": {
           "checks": [
             "VECTOR-04/recovered-sticker-bag-design-1/H001",
-            "VECTOR-04/recovered-sticker-bag-design-1/H003"
+            "VECTOR-04/recovered-sticker-bag-design-1/H003",
+            "VECTOR-04/recovered-sticker-bag-design-1/A003",
+            "VECTOR-04/recovered-sticker-bag-design-1/H005"
           ]
         },
         "recovered-sticker-bag-design-2": {
           "checks": [
             "VECTOR-04/recovered-sticker-bag-design-2/H001",
-            "VECTOR-04/recovered-sticker-bag-design-2/H003"
+            "VECTOR-04/recovered-sticker-bag-design-2/H003",
+            "VECTOR-04/recovered-sticker-bag-design-2/A003",
+            "VECTOR-04/recovered-sticker-bag-design-2/H005"
           ]
         },
         "recovered-sticker-bag-design-3": {
           "checks": [
             "VECTOR-04/recovered-sticker-bag-design-3/H001",
-            "VECTOR-04/recovered-sticker-bag-design-3/H003"
+            "VECTOR-04/recovered-sticker-bag-design-3/H003",
+            "VECTOR-04/recovered-sticker-bag-design-3/A003",
+            "VECTOR-04/recovered-sticker-bag-design-3/H005"
           ]
         },
         "new-sticker-companion-1": {
@@ -2014,25 +3703,29 @@
         "sticker-proof-window-mark": {
           "checks": [
             "VECTOR-04/sticker-proof-window-mark/H001",
-            "VECTOR-04/sticker-proof-window-mark/H003"
+            "VECTOR-04/sticker-proof-window-mark/H003",
+            "VECTOR-04/sticker-proof-window-mark/H011"
           ]
         },
         "sticker-proof-bag-design-1": {
           "checks": [
             "VECTOR-04/sticker-proof-bag-design-1/H001",
-            "VECTOR-04/sticker-proof-bag-design-1/H003"
+            "VECTOR-04/sticker-proof-bag-design-1/H003",
+            "VECTOR-04/sticker-proof-bag-design-1/H005"
           ]
         },
         "sticker-proof-bag-design-2": {
           "checks": [
             "VECTOR-04/sticker-proof-bag-design-2/H001",
-            "VECTOR-04/sticker-proof-bag-design-2/H003"
+            "VECTOR-04/sticker-proof-bag-design-2/H003",
+            "VECTOR-04/sticker-proof-bag-design-2/H005"
           ]
         },
         "sticker-proof-bag-design-3": {
           "checks": [
             "VECTOR-04/sticker-proof-bag-design-3/H001",
-            "VECTOR-04/sticker-proof-bag-design-3/H003"
+            "VECTOR-04/sticker-proof-bag-design-3/H003",
+            "VECTOR-04/sticker-proof-bag-design-3/H005"
           ]
         },
         "sticker-proof-companion-1": {
@@ -2138,34 +3831,452 @@
       }
     },
     {
-      "rule_id": "F03",
+      "rule_id": "F03A",
       "kind": "brief",
-      "rule": "Photograph traps are handled: no glass pane or street reflection, ring and leaf kept, ring not a solid disc, no halftone dots, the fold straightened, nothing from the bag or table.",
-      "source": "asset_plan defect_engineered (meridian_window_mark.jpg, meridian_bag_*.jpg)",
+      "rule": "No glass pane, window frame, cafe interior or street scene is traced from meridian_window_mark.jpg.",
+      "source": "asset_plan defect_engineered (meridian_window_mark.jpg)",
       "cells": {
         "recovered-sticker-window-mark": {
           "checks": [
-            "VECTOR-04/recovered-sticker-window-mark/H006",
-            "VECTOR-04/recovered-sticker-window-mark/H007",
-            "VECTOR-04/recovered-sticker-window-mark/H008",
             "VECTOR-04/recovered-sticker-window-mark/H009"
           ]
         },
         "recovered-sticker-bag-design-1": {
+          "na": "The photograph this file traces, meridian_bag_moth.jpg, carries no such defect."
+        },
+        "recovered-sticker-bag-design-2": {
+          "na": "The photograph this file traces, meridian_bag_pourover.jpg, carries no such defect."
+        },
+        "recovered-sticker-bag-design-3": {
+          "na": "The photograph this file traces, meridian_bag_ridgeline.jpg, carries no such defect."
+        },
+        "new-sticker-companion-1": {
+          "na": "Companion stickers are new drawings, not traced from a supplied photograph."
+        },
+        "new-sticker-companion-2": {
+          "na": "Companion stickers are new drawings, not traced from a supplied photograph."
+        },
+        "sticker-cut-window-mark": {
+          "na": "Cut contour files hold only a production cut line, no artwork or colour."
+        },
+        "sticker-cut-bag-design-1": {
+          "na": "Cut contour files hold only a production cut line, no artwork or colour."
+        },
+        "sticker-cut-bag-design-2": {
+          "na": "Cut contour files hold only a production cut line, no artwork or colour."
+        },
+        "sticker-cut-bag-design-3": {
+          "na": "Cut contour files hold only a production cut line, no artwork or colour."
+        },
+        "sticker-cut-companion-1": {
+          "na": "Cut contour files hold only a production cut line, no artwork or colour."
+        },
+        "sticker-cut-companion-2": {
+          "na": "Cut contour files hold only a production cut line, no artwork or colour."
+        },
+        "sticker-proof-window-mark": {
           "checks": [
-            "VECTOR-04/recovered-sticker-bag-design-1/H004",
+            "VECTOR-04/sticker-proof-window-mark/H007"
+          ]
+        },
+        "sticker-proof-bag-design-1": {
+          "na": "The photograph this file traces, meridian_bag_moth.jpg, carries no such defect."
+        },
+        "sticker-proof-bag-design-2": {
+          "na": "The photograph this file traces, meridian_bag_pourover.jpg, carries no such defect."
+        },
+        "sticker-proof-bag-design-3": {
+          "na": "The photograph this file traces, meridian_bag_ridgeline.jpg, carries no such defect."
+        },
+        "sticker-proof-companion-1": {
+          "na": "Companion stickers are new drawings, not traced from a supplied photograph."
+        },
+        "sticker-proof-companion-2": {
+          "na": "Companion stickers are new drawings, not traced from a supplied photograph."
+        },
+        "gang-sheet": {
+          "checks": [
+            "VECTOR-04/gang-sheet/H007"
+          ]
+        }
+      }
+    },
+    {
+      "rule_id": "F03B",
+      "kind": "brief",
+      "rule": "No street reflection is traced into the letters of ASH from meridian_window_mark.jpg.",
+      "source": "asset_plan defect_engineered (meridian_window_mark.jpg)",
+      "cells": {
+        "recovered-sticker-window-mark": {
+          "checks": [
+            "VECTOR-04/recovered-sticker-window-mark/H008"
+          ]
+        },
+        "recovered-sticker-bag-design-1": {
+          "na": "The photograph this file traces, meridian_bag_moth.jpg, carries no such defect."
+        },
+        "recovered-sticker-bag-design-2": {
+          "na": "The photograph this file traces, meridian_bag_pourover.jpg, carries no such defect."
+        },
+        "recovered-sticker-bag-design-3": {
+          "na": "The photograph this file traces, meridian_bag_ridgeline.jpg, carries no such defect."
+        },
+        "new-sticker-companion-1": {
+          "na": "Companion stickers are new drawings, not traced from a supplied photograph."
+        },
+        "new-sticker-companion-2": {
+          "na": "Companion stickers are new drawings, not traced from a supplied photograph."
+        },
+        "sticker-cut-window-mark": {
+          "na": "Cut contour files hold only a production cut line, no artwork or colour."
+        },
+        "sticker-cut-bag-design-1": {
+          "na": "Cut contour files hold only a production cut line, no artwork or colour."
+        },
+        "sticker-cut-bag-design-2": {
+          "na": "Cut contour files hold only a production cut line, no artwork or colour."
+        },
+        "sticker-cut-bag-design-3": {
+          "na": "Cut contour files hold only a production cut line, no artwork or colour."
+        },
+        "sticker-cut-companion-1": {
+          "na": "Cut contour files hold only a production cut line, no artwork or colour."
+        },
+        "sticker-cut-companion-2": {
+          "na": "Cut contour files hold only a production cut line, no artwork or colour."
+        },
+        "sticker-proof-window-mark": {
+          "checks": [
+            "VECTOR-04/sticker-proof-window-mark/H006"
+          ]
+        },
+        "sticker-proof-bag-design-1": {
+          "na": "The photograph this file traces, meridian_bag_moth.jpg, carries no such defect."
+        },
+        "sticker-proof-bag-design-2": {
+          "na": "The photograph this file traces, meridian_bag_pourover.jpg, carries no such defect."
+        },
+        "sticker-proof-bag-design-3": {
+          "na": "The photograph this file traces, meridian_bag_ridgeline.jpg, carries no such defect."
+        },
+        "sticker-proof-companion-1": {
+          "na": "Companion stickers are new drawings, not traced from a supplied photograph."
+        },
+        "sticker-proof-companion-2": {
+          "na": "Companion stickers are new drawings, not traced from a supplied photograph."
+        },
+        "gang-sheet": {
+          "checks": [
+            "VECTOR-04/gang-sheet/H007"
+          ]
+        }
+      }
+    },
+    {
+      "rule_id": "F03C",
+      "kind": "brief",
+      "rule": "The window mark keeps all four painted parts, including the hairline ring and ash leaf.",
+      "source": "asset_plan defect_engineered (meridian_window_mark.jpg)",
+      "cells": {
+        "recovered-sticker-window-mark": {
+          "checks": [
+            "VECTOR-04/recovered-sticker-window-mark/H006"
+          ]
+        },
+        "recovered-sticker-bag-design-1": {
+          "na": "The photograph this file traces, meridian_bag_moth.jpg, carries no such defect."
+        },
+        "recovered-sticker-bag-design-2": {
+          "na": "The photograph this file traces, meridian_bag_pourover.jpg, carries no such defect."
+        },
+        "recovered-sticker-bag-design-3": {
+          "na": "The photograph this file traces, meridian_bag_ridgeline.jpg, carries no such defect."
+        },
+        "new-sticker-companion-1": {
+          "na": "Companion stickers are new drawings, not traced from a supplied photograph."
+        },
+        "new-sticker-companion-2": {
+          "na": "Companion stickers are new drawings, not traced from a supplied photograph."
+        },
+        "sticker-cut-window-mark": {
+          "na": "Cut contour files hold only a production cut line, no artwork or colour."
+        },
+        "sticker-cut-bag-design-1": {
+          "na": "Cut contour files hold only a production cut line, no artwork or colour."
+        },
+        "sticker-cut-bag-design-2": {
+          "na": "Cut contour files hold only a production cut line, no artwork or colour."
+        },
+        "sticker-cut-bag-design-3": {
+          "na": "Cut contour files hold only a production cut line, no artwork or colour."
+        },
+        "sticker-cut-companion-1": {
+          "na": "Cut contour files hold only a production cut line, no artwork or colour."
+        },
+        "sticker-cut-companion-2": {
+          "na": "Cut contour files hold only a production cut line, no artwork or colour."
+        },
+        "sticker-proof-window-mark": {
+          "checks": [
+            "VECTOR-04/sticker-proof-window-mark/H004"
+          ]
+        },
+        "sticker-proof-bag-design-1": {
+          "na": "The photograph this file traces, meridian_bag_moth.jpg, carries no such defect."
+        },
+        "sticker-proof-bag-design-2": {
+          "na": "The photograph this file traces, meridian_bag_pourover.jpg, carries no such defect."
+        },
+        "sticker-proof-bag-design-3": {
+          "na": "The photograph this file traces, meridian_bag_ridgeline.jpg, carries no such defect."
+        },
+        "sticker-proof-companion-1": {
+          "na": "Companion stickers are new drawings, not traced from a supplied photograph."
+        },
+        "sticker-proof-companion-2": {
+          "na": "Companion stickers are new drawings, not traced from a supplied photograph."
+        },
+        "gang-sheet": {
+          "checks": [
+            "VECTOR-04/gang-sheet/H007"
+          ]
+        }
+      }
+    },
+    {
+      "rule_id": "F03D",
+      "kind": "brief",
+      "rule": "The window mark hairline ring stays a thin line, not a solid disc.",
+      "source": "asset_plan defect_engineered (meridian_window_mark.jpg)",
+      "cells": {
+        "recovered-sticker-window-mark": {
+          "checks": [
+            "VECTOR-04/recovered-sticker-window-mark/H007"
+          ]
+        },
+        "recovered-sticker-bag-design-1": {
+          "na": "The photograph this file traces, meridian_bag_moth.jpg, carries no such defect."
+        },
+        "recovered-sticker-bag-design-2": {
+          "na": "The photograph this file traces, meridian_bag_pourover.jpg, carries no such defect."
+        },
+        "recovered-sticker-bag-design-3": {
+          "na": "The photograph this file traces, meridian_bag_ridgeline.jpg, carries no such defect."
+        },
+        "new-sticker-companion-1": {
+          "na": "Companion stickers are new drawings, not traced from a supplied photograph."
+        },
+        "new-sticker-companion-2": {
+          "na": "Companion stickers are new drawings, not traced from a supplied photograph."
+        },
+        "sticker-cut-window-mark": {
+          "na": "Cut contour files hold only a production cut line, no artwork or colour."
+        },
+        "sticker-cut-bag-design-1": {
+          "na": "Cut contour files hold only a production cut line, no artwork or colour."
+        },
+        "sticker-cut-bag-design-2": {
+          "na": "Cut contour files hold only a production cut line, no artwork or colour."
+        },
+        "sticker-cut-bag-design-3": {
+          "na": "Cut contour files hold only a production cut line, no artwork or colour."
+        },
+        "sticker-cut-companion-1": {
+          "na": "Cut contour files hold only a production cut line, no artwork or colour."
+        },
+        "sticker-cut-companion-2": {
+          "na": "Cut contour files hold only a production cut line, no artwork or colour."
+        },
+        "sticker-proof-window-mark": {
+          "checks": [
+            "VECTOR-04/sticker-proof-window-mark/H005"
+          ]
+        },
+        "sticker-proof-bag-design-1": {
+          "na": "The photograph this file traces, meridian_bag_moth.jpg, carries no such defect."
+        },
+        "sticker-proof-bag-design-2": {
+          "na": "The photograph this file traces, meridian_bag_pourover.jpg, carries no such defect."
+        },
+        "sticker-proof-bag-design-3": {
+          "na": "The photograph this file traces, meridian_bag_ridgeline.jpg, carries no such defect."
+        },
+        "sticker-proof-companion-1": {
+          "na": "Companion stickers are new drawings, not traced from a supplied photograph."
+        },
+        "sticker-proof-companion-2": {
+          "na": "Companion stickers are new drawings, not traced from a supplied photograph."
+        },
+        "gang-sheet": {
+          "checks": [
+            "VECTOR-04/gang-sheet/H007"
+          ]
+        }
+      }
+    },
+    {
+      "rule_id": "F03E",
+      "kind": "brief",
+      "rule": "The ridge line is redrawn as solid shapes, not traced from the halftone dots on meridian_bag_ridgeline.jpg.",
+      "source": "asset_plan defect_engineered (meridian_bag_ridgeline.jpg)",
+      "cells": {
+        "recovered-sticker-window-mark": {
+          "na": "The photograph this file traces, meridian_window_mark.jpg, carries no such defect."
+        },
+        "recovered-sticker-bag-design-1": {
+          "na": "The photograph this file traces, meridian_bag_moth.jpg, carries no such defect."
+        },
+        "recovered-sticker-bag-design-2": {
+          "na": "The photograph this file traces, meridian_bag_pourover.jpg, carries no such defect."
+        },
+        "recovered-sticker-bag-design-3": {
+          "checks": [
+            "VECTOR-04/recovered-sticker-bag-design-3/H004"
+          ]
+        },
+        "new-sticker-companion-1": {
+          "na": "Companion stickers are new drawings, not traced from a supplied photograph."
+        },
+        "new-sticker-companion-2": {
+          "na": "Companion stickers are new drawings, not traced from a supplied photograph."
+        },
+        "sticker-cut-window-mark": {
+          "na": "Cut contour files hold only a production cut line, no artwork or colour."
+        },
+        "sticker-cut-bag-design-1": {
+          "na": "Cut contour files hold only a production cut line, no artwork or colour."
+        },
+        "sticker-cut-bag-design-2": {
+          "na": "Cut contour files hold only a production cut line, no artwork or colour."
+        },
+        "sticker-cut-bag-design-3": {
+          "na": "Cut contour files hold only a production cut line, no artwork or colour."
+        },
+        "sticker-cut-companion-1": {
+          "na": "Cut contour files hold only a production cut line, no artwork or colour."
+        },
+        "sticker-cut-companion-2": {
+          "na": "Cut contour files hold only a production cut line, no artwork or colour."
+        },
+        "sticker-proof-window-mark": {
+          "na": "The photograph this file traces, meridian_window_mark.jpg, carries no such defect."
+        },
+        "sticker-proof-bag-design-1": {
+          "na": "The photograph this file traces, meridian_bag_moth.jpg, carries no such defect."
+        },
+        "sticker-proof-bag-design-2": {
+          "na": "The photograph this file traces, meridian_bag_pourover.jpg, carries no such defect."
+        },
+        "sticker-proof-bag-design-3": {
+          "checks": [
+            "VECTOR-04/sticker-proof-bag-design-3/H004"
+          ]
+        },
+        "sticker-proof-companion-1": {
+          "na": "Companion stickers are new drawings, not traced from a supplied photograph."
+        },
+        "sticker-proof-companion-2": {
+          "na": "Companion stickers are new drawings, not traced from a supplied photograph."
+        },
+        "gang-sheet": {
+          "checks": [
+            "VECTOR-04/gang-sheet/H010"
+          ]
+        }
+      }
+    },
+    {
+      "rule_id": "F03F",
+      "kind": "brief",
+      "rule": "The pour-over drawing is redrawn flat across the gusset fold on meridian_bag_pourover.jpg.",
+      "source": "asset_plan defect_engineered (meridian_bag_pourover.jpg)",
+      "cells": {
+        "recovered-sticker-window-mark": {
+          "na": "The photograph this file traces, meridian_window_mark.jpg, carries no such defect."
+        },
+        "recovered-sticker-bag-design-1": {
+          "na": "The photograph this file traces, meridian_bag_moth.jpg, carries no such defect."
+        },
+        "recovered-sticker-bag-design-2": {
+          "checks": [
+            "VECTOR-04/recovered-sticker-bag-design-2/H004"
+          ]
+        },
+        "recovered-sticker-bag-design-3": {
+          "na": "The photograph this file traces, meridian_bag_ridgeline.jpg, carries no such defect."
+        },
+        "new-sticker-companion-1": {
+          "na": "Companion stickers are new drawings, not traced from a supplied photograph."
+        },
+        "new-sticker-companion-2": {
+          "na": "Companion stickers are new drawings, not traced from a supplied photograph."
+        },
+        "sticker-cut-window-mark": {
+          "na": "Cut contour files hold only a production cut line, no artwork or colour."
+        },
+        "sticker-cut-bag-design-1": {
+          "na": "Cut contour files hold only a production cut line, no artwork or colour."
+        },
+        "sticker-cut-bag-design-2": {
+          "na": "Cut contour files hold only a production cut line, no artwork or colour."
+        },
+        "sticker-cut-bag-design-3": {
+          "na": "Cut contour files hold only a production cut line, no artwork or colour."
+        },
+        "sticker-cut-companion-1": {
+          "na": "Cut contour files hold only a production cut line, no artwork or colour."
+        },
+        "sticker-cut-companion-2": {
+          "na": "Cut contour files hold only a production cut line, no artwork or colour."
+        },
+        "sticker-proof-window-mark": {
+          "na": "The photograph this file traces, meridian_window_mark.jpg, carries no such defect."
+        },
+        "sticker-proof-bag-design-1": {
+          "na": "The photograph this file traces, meridian_bag_moth.jpg, carries no such defect."
+        },
+        "sticker-proof-bag-design-2": {
+          "checks": [
+            "VECTOR-04/sticker-proof-bag-design-2/H004"
+          ]
+        },
+        "sticker-proof-bag-design-3": {
+          "na": "The photograph this file traces, meridian_bag_ridgeline.jpg, carries no such defect."
+        },
+        "sticker-proof-companion-1": {
+          "na": "Companion stickers are new drawings, not traced from a supplied photograph."
+        },
+        "sticker-proof-companion-2": {
+          "na": "Companion stickers are new drawings, not traced from a supplied photograph."
+        },
+        "gang-sheet": {
+          "checks": [
+            "VECTOR-04/gang-sheet/H009"
+          ]
+        }
+      }
+    },
+    {
+      "rule_id": "F03G",
+      "kind": "brief",
+      "rule": "Nothing from the bag, kraft paper, wood or table is traced from the bag photographs.",
+      "source": "asset_plan defect_engineered (meridian_bag_*.jpg)",
+      "cells": {
+        "recovered-sticker-window-mark": {
+          "na": "The photograph this file traces, meridian_window_mark.jpg, carries no such defect."
+        },
+        "recovered-sticker-bag-design-1": {
+          "checks": [
             "VECTOR-04/recovered-sticker-bag-design-1/H006"
           ]
         },
         "recovered-sticker-bag-design-2": {
           "checks": [
-            "VECTOR-04/recovered-sticker-bag-design-2/H004",
             "VECTOR-04/recovered-sticker-bag-design-2/H006"
           ]
         },
         "recovered-sticker-bag-design-3": {
           "checks": [
-            "VECTOR-04/recovered-sticker-bag-design-3/H004",
             "VECTOR-04/recovered-sticker-bag-design-3/H006"
           ]
         },
@@ -2194,28 +4305,20 @@
           "na": "Cut contour files hold only a production cut line, no artwork or colour."
         },
         "sticker-proof-window-mark": {
-          "checks": [
-            "VECTOR-04/sticker-proof-window-mark/H004",
-            "VECTOR-04/sticker-proof-window-mark/H005",
-            "VECTOR-04/sticker-proof-window-mark/H006",
-            "VECTOR-04/sticker-proof-window-mark/H007"
-          ]
+          "na": "The photograph this file traces, meridian_window_mark.jpg, carries no such defect."
         },
         "sticker-proof-bag-design-1": {
           "checks": [
-            "VECTOR-04/sticker-proof-bag-design-1/H004",
             "VECTOR-04/sticker-proof-bag-design-1/H006"
           ]
         },
         "sticker-proof-bag-design-2": {
           "checks": [
-            "VECTOR-04/sticker-proof-bag-design-2/H004",
             "VECTOR-04/sticker-proof-bag-design-2/H006"
           ]
         },
         "sticker-proof-bag-design-3": {
           "checks": [
-            "VECTOR-04/sticker-proof-bag-design-3/H004",
             "VECTOR-04/sticker-proof-bag-design-3/H006"
           ]
         },
@@ -2227,7 +4330,6 @@
         },
         "gang-sheet": {
           "checks": [
-            "VECTOR-04/gang-sheet/H007",
             "VECTOR-04/gang-sheet/H008",
             "VECTOR-04/gang-sheet/H009",
             "VECTOR-04/gang-sheet/H010"
@@ -3167,62 +5269,86 @@
       "cells": {
         "recovered-sticker-window-mark": {
           "checks": [
-            "VECTOR-04/recovered-sticker-window-mark/H019"
+            "VECTOR-04/recovered-sticker-window-mark/H019",
+            "VECTOR-04/recovered-sticker-window-mark/A003",
+            "VECTOR-04/recovered-sticker-window-mark/A004"
           ]
         },
         "recovered-sticker-bag-design-1": {
           "checks": [
-            "VECTOR-04/recovered-sticker-bag-design-1/H015"
+            "VECTOR-04/recovered-sticker-bag-design-1/H015",
+            "VECTOR-04/recovered-sticker-bag-design-1/A003",
+            "VECTOR-04/recovered-sticker-bag-design-1/A004"
           ]
         },
         "recovered-sticker-bag-design-2": {
           "checks": [
-            "VECTOR-04/recovered-sticker-bag-design-2/H015"
+            "VECTOR-04/recovered-sticker-bag-design-2/H015",
+            "VECTOR-04/recovered-sticker-bag-design-2/A003",
+            "VECTOR-04/recovered-sticker-bag-design-2/A004"
           ]
         },
         "recovered-sticker-bag-design-3": {
           "checks": [
-            "VECTOR-04/recovered-sticker-bag-design-3/H015"
+            "VECTOR-04/recovered-sticker-bag-design-3/H015",
+            "VECTOR-04/recovered-sticker-bag-design-3/A003",
+            "VECTOR-04/recovered-sticker-bag-design-3/A004"
           ]
         },
         "new-sticker-companion-1": {
           "checks": [
-            "VECTOR-04/new-sticker-companion-1/H025"
+            "VECTOR-04/new-sticker-companion-1/H025",
+            "VECTOR-04/new-sticker-companion-1/A003",
+            "VECTOR-04/new-sticker-companion-1/A004"
           ]
         },
         "new-sticker-companion-2": {
           "checks": [
-            "VECTOR-04/new-sticker-companion-2/H025"
+            "VECTOR-04/new-sticker-companion-2/H025",
+            "VECTOR-04/new-sticker-companion-2/A003",
+            "VECTOR-04/new-sticker-companion-2/A004"
           ]
         },
         "sticker-cut-window-mark": {
           "checks": [
-            "VECTOR-04/sticker-cut-window-mark/H007"
+            "VECTOR-04/sticker-cut-window-mark/H007",
+            "VECTOR-04/sticker-cut-window-mark/A003",
+            "VECTOR-04/sticker-cut-window-mark/A004"
           ]
         },
         "sticker-cut-bag-design-1": {
           "checks": [
-            "VECTOR-04/sticker-cut-bag-design-1/H006"
+            "VECTOR-04/sticker-cut-bag-design-1/H006",
+            "VECTOR-04/sticker-cut-bag-design-1/A003",
+            "VECTOR-04/sticker-cut-bag-design-1/A004"
           ]
         },
         "sticker-cut-bag-design-2": {
           "checks": [
-            "VECTOR-04/sticker-cut-bag-design-2/H006"
+            "VECTOR-04/sticker-cut-bag-design-2/H006",
+            "VECTOR-04/sticker-cut-bag-design-2/A003",
+            "VECTOR-04/sticker-cut-bag-design-2/A004"
           ]
         },
         "sticker-cut-bag-design-3": {
           "checks": [
-            "VECTOR-04/sticker-cut-bag-design-3/H006"
+            "VECTOR-04/sticker-cut-bag-design-3/H006",
+            "VECTOR-04/sticker-cut-bag-design-3/A003",
+            "VECTOR-04/sticker-cut-bag-design-3/A004"
           ]
         },
         "sticker-cut-companion-1": {
           "checks": [
-            "VECTOR-04/sticker-cut-companion-1/H006"
+            "VECTOR-04/sticker-cut-companion-1/H006",
+            "VECTOR-04/sticker-cut-companion-1/A003",
+            "VECTOR-04/sticker-cut-companion-1/A004"
           ]
         },
         "sticker-cut-companion-2": {
           "checks": [
-            "VECTOR-04/sticker-cut-companion-2/H006"
+            "VECTOR-04/sticker-cut-companion-2/H006",
+            "VECTOR-04/sticker-cut-companion-2/A003",
+            "VECTOR-04/sticker-cut-companion-2/A004"
           ]
         },
         "sticker-proof-window-mark": {

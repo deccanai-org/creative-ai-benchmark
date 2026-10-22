@@ -1,0 +1,2946 @@
+{
+ "task_id": "PHOTO-19",
+ "retire": [],
+ "modify": [
+  {
+   "check_id": "PHOTO-19/speaker-card-r002/H061",
+   "method": "estimate",
+   "how": "Estimate the share of the non-photographic area in Signal Copper and Evergreen; answer No only if it is clearly over 5%.",
+   "why": "Area share is an estimate, not a look judgement; labelled estimate with how to answer."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r002/H056",
+   "check": "If a summit title appears on “Summit speaker card - Marguerite Halloran” (speaker-card-r002.png), it is set in Piazzolla Medium.",
+   "why": "Split: family and weight kept here; the axis 8 small-text design is now its own check (rule T11)."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r002/H020",
+   "check": "The skin on “Summit speaker card - Marguerite Halloran” (speaker-card-r002.png) looks natural in colour, with no colour cast carried over from speaker_portrait_01.jpg.",
+   "why": "Split: the planned cast correction and the separate no-warm-filter ban can fail separately; the filter is now its own check."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r002/H030",
+   "method": "measure",
+   "how": "Eyedropper the centre of each flat ground and panel, the sitter's ground excepted; answer No if any clearly differs from both #23303A and #F2EEE7.",
+   "why": "Exact hex value: Fog Grey, Warm Paper, white, Slate and Near Black cannot be told apart by eye; needs an eyedropper reading."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r002/H031",
+   "method": "measure",
+   "how": "Eyedropper a thick letter stroke in each line on Warm Paper; answer No if any clearly differs from #1A1F24, apart from an affiliation in #B06B3E.",
+   "why": "Exact hex value: Fog Grey, Warm Paper, white, Slate and Near Black cannot be told apart by eye; needs an eyedropper reading."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r002/H059",
+   "method": "measure",
+   "how": "Eyedropper a thick letter stroke in each line on Cascadia Slate; answer No if any clearly differs from both #F2EEE7 and #D9DDDE.",
+   "why": "Exact hex value: Fog Grey, Warm Paper, white, Slate and Near Black cannot be told apart by eye; needs an eyedropper reading."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r002/H055",
+   "method": "measure",
+   "how": "Eyedropper the ground beside the head on this card and on speaker-card-r005.png; answer No if the two readings clearly differ.",
+   "why": "Whether two pale near-neutral grounds in separate files are the same tone needs an eyedropper reading, like the range check."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r002/H027",
+   "method": "measure",
+   "how": "Eyedropper the centre of each flat area, rule and thick letter stroke outside the photograph; answer No if any clearly matches none of the six.",
+   "why": "Exact hexes (B02) and solid, untinted colour (B03a) need an eyedropper reading, not a look."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r002/H016",
+   "method": "measure",
+   "how": "Eyedropper the ground beside the head in three places; answer No if any HSB brightness is clearly under 87% or over 95%, or clearly coloured.",
+   "why": "Two pale neutrals about 20 levels apart; whether the ground falls between them needs an eyedropper reading."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r002/H026",
+   "method": "measure",
+   "how": "Count every character on each printed line of role or running text, spaces and punctuation included; answer No if any line has more than 65.",
+   "why": "An exact 65-character limit needs counting, not a look (r017 guards the 69-character role trap)."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r002/H002",
+   "method": "measure",
+   "how": "In an image viewer, show the card 320 px wide (about 30% zoom); answer No if any role-line word is cut off or unreadable.",
+   "check": "Viewed 320 px wide, every word of the role line on “Summit speaker card - Marguerite Halloran” (speaker-card-r002.png) can be read in full without zooming in.",
+   "why": "Now tests the brief's \"keep the role readable on a phone\" at a set display width; a clipped letter still fails, so the old fact is kept."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r002/H023",
+   "check": "Apart from the CFS mark and any summit title, all text on “Summit speaker card - Marguerite Halloran” (speaker-card-r002.png) is Inter Regular, Inter Medium or IBM Plex Mono Regular.",
+   "why": "weights missing; rule T10 limits the weights (IBM Plex Mono Regular, and Inter weights on host cards)."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r002/H058",
+   "check": "The CFS mark on “Summit speaker card - Marguerite Halloran” (speaker-card-r002.png) is Fog Grey #D9DDDE.",
+   "method": "measure",
+   "how": "Eyedropper the solid centre of a CFS mark stroke; answer No if it clearly differs from #D9DDDE, for example white or #F2EEE7.",
+   "why": "Split: mark colour and ground colour can fail separately. Measured: a mark recoloured white or Warm Paper looks the same as Fog Grey."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r002/H029",
+   "check": "Cascadia Slate #23303A appears outside the photograph on “Summit speaker card - Marguerite Halloran” (speaker-card-r002.png).",
+   "method": "measure",
+   "how": "Eyedropper the dark grounds and bands outside the photograph; answer Yes if any reads at or very near #23303A.",
+   "why": "Split: each mandatory colour is its own presence fact; exact hex needs an eyedropper."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r003/H058",
+   "method": "estimate",
+   "how": "Estimate the share of the non-photographic area in Signal Copper and Evergreen; answer No only if it is clearly over 5%.",
+   "why": "Area share is an estimate, not a look judgement; labelled estimate with how to answer."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r003/H045",
+   "check": "If a summit title appears on “Summit speaker card - Peter Vance” (speaker-card-r003.png), it is set in Piazzolla Medium.",
+   "why": "Split: family and weight kept here; the axis 8 small-text design is now its own check (rule T11)."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r003/H018",
+   "check": "The skin on “Summit speaker card - Peter Vance” (speaker-card-r003.png) looks natural in colour, with none of the warm studio-light cast of speaker_portrait_02.jpg left.",
+   "why": "Split: the planned cast correction and the separate no-warm-filter ban can fail separately; the filter is now its own check."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r003/H052",
+   "method": "measure",
+   "how": "Eyedropper the centre of each flat ground and panel, the sitter's ground excepted; answer No if any clearly differs from both #23303A and #F2EEE7.",
+   "why": "Exact hex value: Fog Grey, Warm Paper, white, Slate and Near Black cannot be told apart by eye; needs an eyedropper reading."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r003/H054",
+   "method": "measure",
+   "how": "Eyedropper a thick letter stroke in each line on Warm Paper; answer No if any clearly differs from #1A1F24, apart from an affiliation in #B06B3E.",
+   "why": "Exact hex value: Fog Grey, Warm Paper, white, Slate and Near Black cannot be told apart by eye; needs an eyedropper reading."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r003/H055",
+   "method": "measure",
+   "how": "Eyedropper a thick letter stroke in each line on Cascadia Slate; answer No if any clearly differs from both #F2EEE7 and #D9DDDE.",
+   "why": "Exact hex value: Fog Grey, Warm Paper, white, Slate and Near Black cannot be told apart by eye; needs an eyedropper reading."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r003/H042",
+   "method": "measure",
+   "how": "Eyedropper the ground beside the head on this card and on speaker-card-r005.png; answer No if the two readings clearly differ.",
+   "why": "Whether two pale near-neutral grounds in separate files are the same tone needs an eyedropper reading, like the range check."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r003/H049",
+   "method": "measure",
+   "how": "Eyedropper the centre of each flat area, rule and thick letter stroke outside the photograph; answer No if any clearly matches none of the six.",
+   "why": "Exact hexes (B02) and solid, untinted colour (B03a) need an eyedropper reading, not a look."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r003/H010",
+   "method": "measure",
+   "how": "Eyedropper the ground beside the head in three places; answer No if any HSB brightness is clearly under 87% or over 95%, or clearly coloured.",
+   "why": "Two pale neutrals about 20 levels apart; whether the ground falls between them needs an eyedropper reading."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r003/H047",
+   "method": "measure",
+   "how": "Count every character on each printed line of role or running text, spaces and punctuation included; answer No if any line has more than 65.",
+   "why": "An exact 65-character limit needs counting, not a look (r017 guards the 69-character role trap)."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r003/H002",
+   "method": "measure",
+   "how": "In an image viewer, show the card 320 px wide (about 30% zoom); answer No if any role-line word is cut off or unreadable.",
+   "check": "Viewed 320 px wide, every word of the role line on “Summit speaker card - Peter Vance” (speaker-card-r003.png) can be read in full without zooming in.",
+   "why": "Now tests the brief's \"keep the role readable on a phone\" at a set display width; a clipped letter still fails, so the old fact is kept."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r003/H044",
+   "check": "Apart from the CFS mark and any summit title, all text on “Summit speaker card - Peter Vance” (speaker-card-r003.png) is Inter Regular, Inter Medium or IBM Plex Mono Regular.",
+   "why": "weights missing; rule T10 limits the weights (IBM Plex Mono Regular, and Inter weights on host cards)."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r003/H053",
+   "check": "The CFS mark on “Summit speaker card - Peter Vance” (speaker-card-r003.png) is Fog Grey #D9DDDE.",
+   "method": "measure",
+   "how": "Eyedropper the solid centre of a CFS mark stroke; answer No if it clearly differs from #D9DDDE, for example white or #F2EEE7.",
+   "why": "Split: mark colour and ground colour can fail separately. Measured: a mark recoloured white or Warm Paper looks the same as Fog Grey."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r003/H051",
+   "check": "Cascadia Slate #23303A appears outside the photograph on “Summit speaker card - Peter Vance” (speaker-card-r003.png).",
+   "method": "measure",
+   "how": "Eyedropper the dark grounds and bands outside the photograph; answer Yes if any reads at or very near #23303A.",
+   "why": "Split: each mandatory colour is its own presence fact; exact hex needs an eyedropper."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r005/H055",
+   "method": "estimate",
+   "how": "Estimate the share of the non-photographic area in Signal Copper and Evergreen; answer No only if it is clearly over 5%.",
+   "why": "Area share is an estimate, not a look judgement; labelled estimate with how to answer."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r005/H042",
+   "check": "If a summit title appears on “Summit speaker card - Ines Moreau” (speaker-card-r005.png), it is set in Piazzolla Medium.",
+   "why": "Split: family and weight kept here; the axis 8 small-text design is now its own check (rule T11)."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r005/H017",
+   "check": "The skin on “Summit speaker card - Ines Moreau” (speaker-card-r005.png) looks natural in colour, with no colour cast carried over from speaker_portrait_03.jpg.",
+   "why": "Split: the planned cast correction and the separate no-warm-filter ban can fail separately; the filter is now its own check."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r005/H049",
+   "method": "measure",
+   "how": "Eyedropper the centre of each flat ground and panel, the sitter's ground excepted; answer No if any clearly differs from both #23303A and #F2EEE7.",
+   "why": "Exact hex value: Fog Grey, Warm Paper, white, Slate and Near Black cannot be told apart by eye; needs an eyedropper reading."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r005/H051",
+   "method": "measure",
+   "how": "Eyedropper a thick letter stroke in each line on Warm Paper; answer No if any clearly differs from #1A1F24, apart from an affiliation in #B06B3E.",
+   "why": "Exact hex value: Fog Grey, Warm Paper, white, Slate and Near Black cannot be told apart by eye; needs an eyedropper reading."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r005/H052",
+   "method": "measure",
+   "how": "Eyedropper a thick letter stroke in each line on Cascadia Slate; answer No if any clearly differs from both #F2EEE7 and #D9DDDE.",
+   "why": "Exact hex value: Fog Grey, Warm Paper, white, Slate and Near Black cannot be told apart by eye; needs an eyedropper reading."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r005/H046",
+   "method": "measure",
+   "how": "Eyedropper the centre of each flat area, rule and thick letter stroke outside the photograph; answer No if any clearly matches none of the six.",
+   "why": "Exact hexes (B02) and solid, untinted colour (B03a) need an eyedropper reading, not a look."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r005/H013",
+   "method": "measure",
+   "how": "Eyedropper the ground beside the head in three places; answer No if any HSB brightness is clearly under 87% or over 95%, or clearly coloured.",
+   "why": "Two pale neutrals about 20 levels apart; whether the ground falls between them needs an eyedropper reading."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r005/H044",
+   "method": "measure",
+   "how": "Count every character on each printed line of role or running text, spaces and punctuation included; answer No if any line has more than 65.",
+   "why": "An exact 65-character limit needs counting, not a look (r017 guards the 69-character role trap)."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r005/H002",
+   "method": "measure",
+   "how": "In an image viewer, show the card 320 px wide (about 30% zoom); answer No if any role-line word is cut off or unreadable.",
+   "check": "Viewed 320 px wide, every word of the role line on “Summit speaker card - Ines Moreau” (speaker-card-r005.png) can be read in full without zooming in.",
+   "why": "Now tests the brief's \"keep the role readable on a phone\" at a set display width; a clipped letter still fails, so the old fact is kept."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r005/H041",
+   "check": "Apart from the CFS mark and any summit title, all text on “Summit speaker card - Ines Moreau” (speaker-card-r005.png) is Inter Regular, Inter Medium or IBM Plex Mono Regular.",
+   "why": "weights missing; rule T10 limits the weights (IBM Plex Mono Regular, and Inter weights on host cards)."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r005/H050",
+   "check": "The CFS mark on “Summit speaker card - Ines Moreau” (speaker-card-r005.png) is Fog Grey #D9DDDE.",
+   "method": "measure",
+   "how": "Eyedropper the solid centre of a CFS mark stroke; answer No if it clearly differs from #D9DDDE, for example white or #F2EEE7.",
+   "why": "Split: mark colour and ground colour can fail separately. Measured: a mark recoloured white or Warm Paper looks the same as Fog Grey."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r005/H048",
+   "check": "Cascadia Slate #23303A appears outside the photograph on “Summit speaker card - Ines Moreau” (speaker-card-r005.png).",
+   "method": "measure",
+   "how": "Eyedropper the dark grounds and bands outside the photograph; answer Yes if any reads at or very near #23303A.",
+   "why": "Split: each mandatory colour is its own presence fact; exact hex needs an eyedropper."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r006/H056",
+   "method": "estimate",
+   "how": "Estimate the share of the non-photographic area in Signal Copper and Evergreen; answer No only if it is clearly over 5%.",
+   "why": "Area share is an estimate, not a look judgement; labelled estimate with how to answer."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r006/H043",
+   "check": "If a summit title appears on “Summit speaker card - Anders Lindqvist” (speaker-card-r006.png), it is set in Piazzolla Medium.",
+   "why": "Split: family and weight kept here; the axis 8 small-text design is now its own check (rule T11)."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r006/H017",
+   "check": "The skin on “Summit speaker card - Anders Lindqvist” (speaker-card-r006.png) looks natural in colour, with none of the green-tinged fluorescent cast of speaker_portrait_04.jpg left.",
+   "why": "Split: the planned cast correction and the separate no-warm-filter ban can fail separately; the filter is now its own check."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r006/H050",
+   "method": "measure",
+   "how": "Eyedropper the centre of each flat ground and panel, the sitter's ground excepted; answer No if any clearly differs from both #23303A and #F2EEE7.",
+   "why": "Exact hex value: Fog Grey, Warm Paper, white, Slate and Near Black cannot be told apart by eye; needs an eyedropper reading."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r006/H052",
+   "method": "measure",
+   "how": "Eyedropper a thick letter stroke in each line on Warm Paper; answer No if any clearly differs from #1A1F24, apart from an affiliation in #B06B3E.",
+   "why": "Exact hex value: Fog Grey, Warm Paper, white, Slate and Near Black cannot be told apart by eye; needs an eyedropper reading."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r006/H053",
+   "method": "measure",
+   "how": "Eyedropper a thick letter stroke in each line on Cascadia Slate; answer No if any clearly differs from both #F2EEE7 and #D9DDDE.",
+   "why": "Exact hex value: Fog Grey, Warm Paper, white, Slate and Near Black cannot be told apart by eye; needs an eyedropper reading."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r006/H041",
+   "method": "measure",
+   "how": "Eyedropper the ground beside the head on this card and on speaker-card-r005.png; answer No if the two readings clearly differ.",
+   "why": "Whether two pale near-neutral grounds in separate files are the same tone needs an eyedropper reading, like the range check."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r006/H047",
+   "method": "measure",
+   "how": "Eyedropper the centre of each flat area, rule and thick letter stroke outside the photograph; answer No if any clearly matches none of the six.",
+   "why": "Exact hexes (B02) and solid, untinted colour (B03a) need an eyedropper reading, not a look."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r006/H013",
+   "method": "measure",
+   "how": "Eyedropper the ground beside the head in three places; answer No if any HSB brightness is clearly under 87% or over 95%, or clearly coloured.",
+   "why": "Two pale neutrals about 20 levels apart; whether the ground falls between them needs an eyedropper reading."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r006/H045",
+   "method": "measure",
+   "how": "Count every character on each printed line of role or running text, spaces and punctuation included; answer No if any line has more than 65.",
+   "why": "An exact 65-character limit needs counting, not a look (r017 guards the 69-character role trap)."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r006/H002",
+   "method": "measure",
+   "how": "In an image viewer, show the card 320 px wide (about 30% zoom); answer No if any role-line word is cut off or unreadable.",
+   "check": "Viewed 320 px wide, every word of the role line on “Summit speaker card - Anders Lindqvist” (speaker-card-r006.png) can be read in full without zooming in.",
+   "why": "Now tests the brief's \"keep the role readable on a phone\" at a set display width; a clipped letter still fails, so the old fact is kept."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r006/H042",
+   "check": "Apart from the CFS mark and any summit title, all text on “Summit speaker card - Anders Lindqvist” (speaker-card-r006.png) is Inter Regular, Inter Medium or IBM Plex Mono Regular.",
+   "why": "weights missing; rule T10 limits the weights (IBM Plex Mono Regular, and Inter weights on host cards)."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r006/H051",
+   "check": "The CFS mark on “Summit speaker card - Anders Lindqvist” (speaker-card-r006.png) is Fog Grey #D9DDDE.",
+   "method": "measure",
+   "how": "Eyedropper the solid centre of a CFS mark stroke; answer No if it clearly differs from #D9DDDE, for example white or #F2EEE7.",
+   "why": "Split: mark colour and ground colour can fail separately. Measured: a mark recoloured white or Warm Paper looks the same as Fog Grey."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r006/H049",
+   "check": "Cascadia Slate #23303A appears outside the photograph on “Summit speaker card - Anders Lindqvist” (speaker-card-r006.png).",
+   "method": "measure",
+   "how": "Eyedropper the dark grounds and bands outside the photograph; answer Yes if any reads at or very near #23303A.",
+   "why": "Split: each mandatory colour is its own presence fact; exact hex needs an eyedropper."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r007/H056",
+   "method": "estimate",
+   "how": "Estimate the share of the non-photographic area in Signal Copper and Evergreen; answer No only if it is clearly over 5%.",
+   "why": "Area share is an estimate, not a look judgement; labelled estimate with how to answer."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r007/H043",
+   "check": "If a summit title appears on “Summit speaker card - Colm Byrne” (speaker-card-r007.png), it is set in Piazzolla Medium.",
+   "why": "Split: family and weight kept here; the axis 8 small-text design is now its own check (rule T11)."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r007/H017",
+   "check": "The skin on “Summit speaker card - Colm Byrne” (speaker-card-r007.png) looks natural in colour, with no colour cast carried over from speaker_portrait_05.jpg.",
+   "why": "Split: the planned cast correction and the separate no-warm-filter ban can fail separately; the filter is now its own check."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r007/H050",
+   "method": "measure",
+   "how": "Eyedropper the centre of each flat ground and panel, the sitter's ground excepted; answer No if any clearly differs from both #23303A and #F2EEE7.",
+   "why": "Exact hex value: Fog Grey, Warm Paper, white, Slate and Near Black cannot be told apart by eye; needs an eyedropper reading."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r007/H052",
+   "method": "measure",
+   "how": "Eyedropper a thick letter stroke in each line on Warm Paper; answer No if any clearly differs from #1A1F24, apart from an affiliation in #B06B3E.",
+   "why": "Exact hex value: Fog Grey, Warm Paper, white, Slate and Near Black cannot be told apart by eye; needs an eyedropper reading."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r007/H053",
+   "method": "measure",
+   "how": "Eyedropper a thick letter stroke in each line on Cascadia Slate; answer No if any clearly differs from both #F2EEE7 and #D9DDDE.",
+   "why": "Exact hex value: Fog Grey, Warm Paper, white, Slate and Near Black cannot be told apart by eye; needs an eyedropper reading."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r007/H041",
+   "method": "measure",
+   "how": "Eyedropper the ground beside the head on this card and on speaker-card-r005.png; answer No if the two readings clearly differ.",
+   "why": "Whether two pale near-neutral grounds in separate files are the same tone needs an eyedropper reading, like the range check."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r007/H047",
+   "method": "measure",
+   "how": "Eyedropper the centre of each flat area, rule and thick letter stroke outside the photograph; answer No if any clearly matches none of the six.",
+   "why": "Exact hexes (B02) and solid, untinted colour (B03a) need an eyedropper reading, not a look."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r007/H013",
+   "method": "measure",
+   "how": "Eyedropper the ground beside the head in three places; answer No if any HSB brightness is clearly under 87% or over 95%, or clearly coloured.",
+   "why": "Two pale neutrals about 20 levels apart; whether the ground falls between them needs an eyedropper reading."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r007/H045",
+   "method": "measure",
+   "how": "Count every character on each printed line of role or running text, spaces and punctuation included; answer No if any line has more than 65.",
+   "why": "An exact 65-character limit needs counting, not a look (r017 guards the 69-character role trap)."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r007/H002",
+   "method": "measure",
+   "how": "In an image viewer, show the card 320 px wide (about 30% zoom); answer No if any role-line word is cut off or unreadable.",
+   "check": "Viewed 320 px wide, every word of the role line on “Summit speaker card - Colm Byrne” (speaker-card-r007.png) can be read in full without zooming in.",
+   "why": "Now tests the brief's \"keep the role readable on a phone\" at a set display width; a clipped letter still fails, so the old fact is kept."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r007/H042",
+   "check": "Apart from the CFS mark and any summit title, all text on “Summit speaker card - Colm Byrne” (speaker-card-r007.png) is Inter Regular, Inter Medium or IBM Plex Mono Regular.",
+   "why": "weights missing; rule T10 limits the weights (IBM Plex Mono Regular, and Inter weights on host cards)."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r007/H051",
+   "check": "The CFS mark on “Summit speaker card - Colm Byrne” (speaker-card-r007.png) is Fog Grey #D9DDDE.",
+   "method": "measure",
+   "how": "Eyedropper the solid centre of a CFS mark stroke; answer No if it clearly differs from #D9DDDE, for example white or #F2EEE7.",
+   "why": "Split: mark colour and ground colour can fail separately. Measured: a mark recoloured white or Warm Paper looks the same as Fog Grey."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r007/H049",
+   "check": "Cascadia Slate #23303A appears outside the photograph on “Summit speaker card - Colm Byrne” (speaker-card-r007.png).",
+   "method": "measure",
+   "how": "Eyedropper the dark grounds and bands outside the photograph; answer Yes if any reads at or very near #23303A.",
+   "why": "Split: each mandatory colour is its own presence fact; exact hex needs an eyedropper."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r008/H056",
+   "method": "estimate",
+   "how": "Estimate the share of the non-photographic area in Signal Copper and Evergreen; answer No only if it is clearly over 5%.",
+   "why": "Area share is an estimate, not a look judgement; labelled estimate with how to answer."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r008/H043",
+   "check": "If a summit title appears on “Summit speaker card - Dana Whitfield” (speaker-card-r008.png), it is set in Piazzolla Medium.",
+   "why": "Split: family and weight kept here; the axis 8 small-text design is now its own check (rule T11)."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r008/H017",
+   "check": "The skin on “Summit speaker card - Dana Whitfield” (speaker-card-r008.png) looks natural in colour, with no colour cast carried over from speaker_portrait_06.jpg.",
+   "why": "Split: the planned cast correction and the separate no-warm-filter ban can fail separately; the filter is now its own check."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r008/H050",
+   "method": "measure",
+   "how": "Eyedropper the centre of each flat ground and panel, the sitter's ground excepted; answer No if any clearly differs from both #23303A and #F2EEE7.",
+   "why": "Exact hex value: Fog Grey, Warm Paper, white, Slate and Near Black cannot be told apart by eye; needs an eyedropper reading."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r008/H052",
+   "method": "measure",
+   "how": "Eyedropper a thick letter stroke in each line on Warm Paper; answer No if any clearly differs from #1A1F24, apart from an affiliation in #B06B3E.",
+   "why": "Exact hex value: Fog Grey, Warm Paper, white, Slate and Near Black cannot be told apart by eye; needs an eyedropper reading."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r008/H053",
+   "method": "measure",
+   "how": "Eyedropper a thick letter stroke in each line on Cascadia Slate; answer No if any clearly differs from both #F2EEE7 and #D9DDDE.",
+   "why": "Exact hex value: Fog Grey, Warm Paper, white, Slate and Near Black cannot be told apart by eye; needs an eyedropper reading."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r008/H041",
+   "method": "measure",
+   "how": "Eyedropper the ground beside the head on this card and on speaker-card-r005.png; answer No if the two readings clearly differ.",
+   "why": "Whether two pale near-neutral grounds in separate files are the same tone needs an eyedropper reading, like the range check."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r008/H047",
+   "method": "measure",
+   "how": "Eyedropper the centre of each flat area, rule and thick letter stroke outside the photograph; answer No if any clearly matches none of the six.",
+   "why": "Exact hexes (B02) and solid, untinted colour (B03a) need an eyedropper reading, not a look."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r008/H013",
+   "method": "measure",
+   "how": "Eyedropper the ground beside the head in three places; answer No if any HSB brightness is clearly under 87% or over 95%, or clearly coloured.",
+   "why": "Two pale neutrals about 20 levels apart; whether the ground falls between them needs an eyedropper reading."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r008/H045",
+   "method": "measure",
+   "how": "Count every character on each printed line of role or running text, spaces and punctuation included; answer No if any line has more than 65.",
+   "why": "An exact 65-character limit needs counting, not a look (r017 guards the 69-character role trap)."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r008/H002",
+   "method": "measure",
+   "how": "In an image viewer, show the card 320 px wide (about 30% zoom); answer No if any role-line word is cut off or unreadable.",
+   "check": "Viewed 320 px wide, every word of the role line on “Summit speaker card - Dana Whitfield” (speaker-card-r008.png) can be read in full without zooming in.",
+   "why": "Now tests the brief's \"keep the role readable on a phone\" at a set display width; a clipped letter still fails, so the old fact is kept."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r008/H042",
+   "check": "Apart from the CFS mark and any summit title, all text on “Summit speaker card - Dana Whitfield” (speaker-card-r008.png) is Inter Regular, Inter Medium or IBM Plex Mono Regular.",
+   "why": "weights missing; rule T10 limits the weights (IBM Plex Mono Regular, and Inter weights on host cards)."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r008/H051",
+   "check": "The CFS mark on “Summit speaker card - Dana Whitfield” (speaker-card-r008.png) is Fog Grey #D9DDDE.",
+   "method": "measure",
+   "how": "Eyedropper the solid centre of a CFS mark stroke; answer No if it clearly differs from #D9DDDE, for example white or #F2EEE7.",
+   "why": "Split: mark colour and ground colour can fail separately. Measured: a mark recoloured white or Warm Paper looks the same as Fog Grey."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r008/H049",
+   "check": "Cascadia Slate #23303A appears outside the photograph on “Summit speaker card - Dana Whitfield” (speaker-card-r008.png).",
+   "method": "measure",
+   "how": "Eyedropper the dark grounds and bands outside the photograph; answer Yes if any reads at or very near #23303A.",
+   "why": "Split: each mandatory colour is its own presence fact; exact hex needs an eyedropper."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r009/H056",
+   "method": "estimate",
+   "how": "Estimate the share of the non-photographic area in Signal Copper and Evergreen; answer No only if it is clearly over 5%.",
+   "why": "Area share is an estimate, not a look judgement; labelled estimate with how to answer."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r009/H043",
+   "check": "If a summit title appears on “Summit speaker card - Estelle Rioux” (speaker-card-r009.png), it is set in Piazzolla Medium.",
+   "why": "Split: family and weight kept here; the axis 8 small-text design is now its own check (rule T11)."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r009/H017",
+   "check": "The skin on “Summit speaker card - Estelle Rioux” (speaker-card-r009.png) looks natural in colour, with none of the warm lamplight cast of speaker_portrait_07.jpg left.",
+   "why": "Split: the planned cast correction and the separate no-warm-filter ban can fail separately; the filter is now its own check."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r009/H050",
+   "method": "measure",
+   "how": "Eyedropper the centre of each flat ground and panel, the sitter's ground excepted; answer No if any clearly differs from both #23303A and #F2EEE7.",
+   "why": "Exact hex value: Fog Grey, Warm Paper, white, Slate and Near Black cannot be told apart by eye; needs an eyedropper reading."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r009/H052",
+   "method": "measure",
+   "how": "Eyedropper a thick letter stroke in each line on Warm Paper; answer No if any clearly differs from #1A1F24, apart from an affiliation in #B06B3E.",
+   "why": "Exact hex value: Fog Grey, Warm Paper, white, Slate and Near Black cannot be told apart by eye; needs an eyedropper reading."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r009/H053",
+   "method": "measure",
+   "how": "Eyedropper a thick letter stroke in each line on Cascadia Slate; answer No if any clearly differs from both #F2EEE7 and #D9DDDE.",
+   "why": "Exact hex value: Fog Grey, Warm Paper, white, Slate and Near Black cannot be told apart by eye; needs an eyedropper reading."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r009/H041",
+   "method": "measure",
+   "how": "Eyedropper the ground beside the head on this card and on speaker-card-r005.png; answer No if the two readings clearly differ.",
+   "why": "Whether two pale near-neutral grounds in separate files are the same tone needs an eyedropper reading, like the range check."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r009/H047",
+   "method": "measure",
+   "how": "Eyedropper the centre of each flat area, rule and thick letter stroke outside the photograph; answer No if any clearly matches none of the six.",
+   "why": "Exact hexes (B02) and solid, untinted colour (B03a) need an eyedropper reading, not a look."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r009/H013",
+   "method": "measure",
+   "how": "Eyedropper the ground beside the head in three places; answer No if any HSB brightness is clearly under 87% or over 95%, or clearly coloured.",
+   "why": "Two pale neutrals about 20 levels apart; whether the ground falls between them needs an eyedropper reading."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r009/H045",
+   "method": "measure",
+   "how": "Count every character on each printed line of role or running text, spaces and punctuation included; answer No if any line has more than 65.",
+   "why": "An exact 65-character limit needs counting, not a look (r017 guards the 69-character role trap)."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r009/H002",
+   "method": "measure",
+   "how": "In an image viewer, show the card 320 px wide (about 30% zoom); answer No if any role-line word is cut off or unreadable.",
+   "check": "Viewed 320 px wide, every word of the role line on “Summit speaker card - Estelle Rioux” (speaker-card-r009.png) can be read in full without zooming in.",
+   "why": "Now tests the brief's \"keep the role readable on a phone\" at a set display width; a clipped letter still fails, so the old fact is kept."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r009/H042",
+   "check": "Apart from the CFS mark and any summit title, all text on “Summit speaker card - Estelle Rioux” (speaker-card-r009.png) is Inter Regular, Inter Medium or IBM Plex Mono Regular.",
+   "why": "weights missing; rule T10 limits the weights (IBM Plex Mono Regular, and Inter weights on host cards)."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r009/H051",
+   "check": "The CFS mark on “Summit speaker card - Estelle Rioux” (speaker-card-r009.png) is Fog Grey #D9DDDE.",
+   "method": "measure",
+   "how": "Eyedropper the solid centre of a CFS mark stroke; answer No if it clearly differs from #D9DDDE, for example white or #F2EEE7.",
+   "why": "Split: mark colour and ground colour can fail separately. Measured: a mark recoloured white or Warm Paper looks the same as Fog Grey."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r009/H049",
+   "check": "Cascadia Slate #23303A appears outside the photograph on “Summit speaker card - Estelle Rioux” (speaker-card-r009.png).",
+   "method": "measure",
+   "how": "Eyedropper the dark grounds and bands outside the photograph; answer Yes if any reads at or very near #23303A.",
+   "why": "Split: each mandatory colour is its own presence fact; exact hex needs an eyedropper."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r010/H058",
+   "method": "estimate",
+   "how": "Estimate the share of the non-photographic area in Signal Copper and Evergreen; answer No only if it is clearly over 5%.",
+   "why": "Area share is an estimate, not a look judgement; labelled estimate with how to answer."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r010/H045",
+   "check": "If a summit title appears on “Summit speaker card - Grant Mackey” (speaker-card-r010.png), it is set in Piazzolla Medium.",
+   "why": "Split: family and weight kept here; the axis 8 small-text design is now its own check (rule T11)."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r010/H018",
+   "check": "The skin on “Summit speaker card - Grant Mackey” (speaker-card-r010.png) looks natural in colour, with none of the cool studio-light cast of speaker_portrait_08.jpg left.",
+   "why": "Split: the planned cast correction and the separate no-warm-filter ban can fail separately; the filter is now its own check."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r010/H052",
+   "method": "measure",
+   "how": "Eyedropper the centre of each flat ground and panel, the sitter's ground excepted; answer No if any clearly differs from both #23303A and #F2EEE7.",
+   "why": "Exact hex value: Fog Grey, Warm Paper, white, Slate and Near Black cannot be told apart by eye; needs an eyedropper reading."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r010/H054",
+   "method": "measure",
+   "how": "Eyedropper a thick letter stroke in each line on Warm Paper; answer No if any clearly differs from #1A1F24, apart from an affiliation in #B06B3E.",
+   "why": "Exact hex value: Fog Grey, Warm Paper, white, Slate and Near Black cannot be told apart by eye; needs an eyedropper reading."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r010/H055",
+   "method": "measure",
+   "how": "Eyedropper a thick letter stroke in each line on Cascadia Slate; answer No if any clearly differs from both #F2EEE7 and #D9DDDE.",
+   "why": "Exact hex value: Fog Grey, Warm Paper, white, Slate and Near Black cannot be told apart by eye; needs an eyedropper reading."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r010/H042",
+   "method": "measure",
+   "how": "Eyedropper the ground beside the head on this card and on speaker-card-r005.png; answer No if the two readings clearly differ.",
+   "why": "Whether two pale near-neutral grounds in separate files are the same tone needs an eyedropper reading, like the range check."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r010/H049",
+   "method": "measure",
+   "how": "Eyedropper the centre of each flat area, rule and thick letter stroke outside the photograph; answer No if any clearly matches none of the six.",
+   "why": "Exact hexes (B02) and solid, untinted colour (B03a) need an eyedropper reading, not a look."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r010/H013",
+   "method": "measure",
+   "how": "Eyedropper the ground beside the head in three places; answer No if any HSB brightness is clearly under 87% or over 95%, or clearly coloured.",
+   "why": "Two pale neutrals about 20 levels apart; whether the ground falls between them needs an eyedropper reading."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r010/H047",
+   "method": "measure",
+   "how": "Count every character on each printed line of role or running text, spaces and punctuation included; answer No if any line has more than 65.",
+   "why": "An exact 65-character limit needs counting, not a look (r017 guards the 69-character role trap)."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r010/H002",
+   "method": "measure",
+   "how": "In an image viewer, show the card 320 px wide (about 30% zoom); answer No if any role-line word is cut off or unreadable.",
+   "check": "Viewed 320 px wide, every word of the role line on “Summit speaker card - Grant Mackey” (speaker-card-r010.png) can be read in full without zooming in.",
+   "why": "Now tests the brief's \"keep the role readable on a phone\" at a set display width; a clipped letter still fails, so the old fact is kept."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r010/H044",
+   "check": "Apart from the CFS mark and any summit title, all text on “Summit speaker card - Grant Mackey” (speaker-card-r010.png) is Inter Regular, Inter Medium or IBM Plex Mono Regular.",
+   "why": "weights missing; rule T10 limits the weights (IBM Plex Mono Regular, and Inter weights on host cards)."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r010/H053",
+   "check": "The CFS mark on “Summit speaker card - Grant Mackey” (speaker-card-r010.png) is Fog Grey #D9DDDE.",
+   "method": "measure",
+   "how": "Eyedropper the solid centre of a CFS mark stroke; answer No if it clearly differs from #D9DDDE, for example white or #F2EEE7.",
+   "why": "Split: mark colour and ground colour can fail separately. Measured: a mark recoloured white or Warm Paper looks the same as Fog Grey."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r010/H051",
+   "check": "Cascadia Slate #23303A appears outside the photograph on “Summit speaker card - Grant Mackey” (speaker-card-r010.png).",
+   "method": "measure",
+   "how": "Eyedropper the dark grounds and bands outside the photograph; answer Yes if any reads at or very near #23303A.",
+   "why": "Split: each mandatory colour is its own presence fact; exact hex needs an eyedropper."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r011/H056",
+   "method": "estimate",
+   "how": "Estimate the share of the non-photographic area in Signal Copper and Evergreen; answer No only if it is clearly over 5%.",
+   "why": "Area share is an estimate, not a look judgement; labelled estimate with how to answer."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r011/H043",
+   "check": "If a summit title appears on “Summit speaker card - Sofia Bellini” (speaker-card-r011.png), it is set in Piazzolla Medium.",
+   "why": "Split: family and weight kept here; the axis 8 small-text design is now its own check (rule T11)."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r011/H017",
+   "check": "The skin on “Summit speaker card - Sofia Bellini” (speaker-card-r011.png) looks natural in colour, with none of the warm venue-light cast of speaker_portrait_09.jpg left.",
+   "why": "Split: the planned cast correction and the separate no-warm-filter ban can fail separately; the filter is now its own check."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r011/H050",
+   "method": "measure",
+   "how": "Eyedropper the centre of each flat ground and panel, the sitter's ground excepted; answer No if any clearly differs from both #23303A and #F2EEE7.",
+   "why": "Exact hex value: Fog Grey, Warm Paper, white, Slate and Near Black cannot be told apart by eye; needs an eyedropper reading."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r011/H052",
+   "method": "measure",
+   "how": "Eyedropper a thick letter stroke in each line on Warm Paper; answer No if any clearly differs from #1A1F24, apart from an affiliation in #B06B3E.",
+   "why": "Exact hex value: Fog Grey, Warm Paper, white, Slate and Near Black cannot be told apart by eye; needs an eyedropper reading."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r011/H053",
+   "method": "measure",
+   "how": "Eyedropper a thick letter stroke in each line on Cascadia Slate; answer No if any clearly differs from both #F2EEE7 and #D9DDDE.",
+   "why": "Exact hex value: Fog Grey, Warm Paper, white, Slate and Near Black cannot be told apart by eye; needs an eyedropper reading."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r011/H041",
+   "method": "measure",
+   "how": "Eyedropper the ground beside the head on this card and on speaker-card-r005.png; answer No if the two readings clearly differ.",
+   "why": "Whether two pale near-neutral grounds in separate files are the same tone needs an eyedropper reading, like the range check."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r011/H047",
+   "method": "measure",
+   "how": "Eyedropper the centre of each flat area, rule and thick letter stroke outside the photograph; answer No if any clearly matches none of the six.",
+   "why": "Exact hexes (B02) and solid, untinted colour (B03a) need an eyedropper reading, not a look."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r011/H013",
+   "method": "measure",
+   "how": "Eyedropper the ground beside the head in three places; answer No if any HSB brightness is clearly under 87% or over 95%, or clearly coloured.",
+   "why": "Two pale neutrals about 20 levels apart; whether the ground falls between them needs an eyedropper reading."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r011/H045",
+   "method": "measure",
+   "how": "Count every character on each printed line of role or running text, spaces and punctuation included; answer No if any line has more than 65.",
+   "why": "An exact 65-character limit needs counting, not a look (r017 guards the 69-character role trap)."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r011/H002",
+   "method": "measure",
+   "how": "In an image viewer, show the card 320 px wide (about 30% zoom); answer No if any role-line word is cut off or unreadable.",
+   "check": "Viewed 320 px wide, every word of the role line on “Summit speaker card - Sofia Bellini” (speaker-card-r011.png) can be read in full without zooming in.",
+   "why": "Now tests the brief's \"keep the role readable on a phone\" at a set display width; a clipped letter still fails, so the old fact is kept."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r011/H042",
+   "check": "Apart from the CFS mark and any summit title, all text on “Summit speaker card - Sofia Bellini” (speaker-card-r011.png) is Inter Regular, Inter Medium or IBM Plex Mono Regular.",
+   "why": "weights missing; rule T10 limits the weights (IBM Plex Mono Regular, and Inter weights on host cards)."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r011/H051",
+   "check": "The CFS mark on “Summit speaker card - Sofia Bellini” (speaker-card-r011.png) is Fog Grey #D9DDDE.",
+   "method": "measure",
+   "how": "Eyedropper the solid centre of a CFS mark stroke; answer No if it clearly differs from #D9DDDE, for example white or #F2EEE7.",
+   "why": "Split: mark colour and ground colour can fail separately. Measured: a mark recoloured white or Warm Paper looks the same as Fog Grey."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r011/H049",
+   "check": "Cascadia Slate #23303A appears outside the photograph on “Summit speaker card - Sofia Bellini” (speaker-card-r011.png).",
+   "method": "measure",
+   "how": "Eyedropper the dark grounds and bands outside the photograph; answer Yes if any reads at or very near #23303A.",
+   "why": "Split: each mandatory colour is its own presence fact; exact hex needs an eyedropper."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r013/H056",
+   "method": "estimate",
+   "how": "Estimate the share of the non-photographic area in Signal Copper and Evergreen; answer No only if it is clearly over 5%.",
+   "why": "Area share is an estimate, not a look judgement; labelled estimate with how to answer."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r013/H043",
+   "check": "If a summit title appears on “Summit speaker card - Nils Haugen” (speaker-card-r013.png), it is set in Piazzolla Medium.",
+   "why": "Split: family and weight kept here; the axis 8 small-text design is now its own check (rule T11)."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r013/H017",
+   "check": "The skin on “Summit speaker card - Nils Haugen” (speaker-card-r013.png) looks natural in colour, with no colour cast carried over from speaker_portrait_10.jpg.",
+   "why": "Split: the planned cast correction and the separate no-warm-filter ban can fail separately; the filter is now its own check."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r013/H050",
+   "method": "measure",
+   "how": "Eyedropper the centre of each flat ground and panel, the sitter's ground excepted; answer No if any clearly differs from both #23303A and #F2EEE7.",
+   "why": "Exact hex value: Fog Grey, Warm Paper, white, Slate and Near Black cannot be told apart by eye; needs an eyedropper reading."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r013/H052",
+   "method": "measure",
+   "how": "Eyedropper a thick letter stroke in each line on Warm Paper; answer No if any clearly differs from #1A1F24, apart from an affiliation in #B06B3E.",
+   "why": "Exact hex value: Fog Grey, Warm Paper, white, Slate and Near Black cannot be told apart by eye; needs an eyedropper reading."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r013/H053",
+   "method": "measure",
+   "how": "Eyedropper a thick letter stroke in each line on Cascadia Slate; answer No if any clearly differs from both #F2EEE7 and #D9DDDE.",
+   "why": "Exact hex value: Fog Grey, Warm Paper, white, Slate and Near Black cannot be told apart by eye; needs an eyedropper reading."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r013/H041",
+   "method": "measure",
+   "how": "Eyedropper the ground beside the head on this card and on speaker-card-r005.png; answer No if the two readings clearly differ.",
+   "why": "Whether two pale near-neutral grounds in separate files are the same tone needs an eyedropper reading, like the range check."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r013/H047",
+   "method": "measure",
+   "how": "Eyedropper the centre of each flat area, rule and thick letter stroke outside the photograph; answer No if any clearly matches none of the six.",
+   "why": "Exact hexes (B02) and solid, untinted colour (B03a) need an eyedropper reading, not a look."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r013/H013",
+   "method": "measure",
+   "how": "Eyedropper the ground beside the head in three places; answer No if any HSB brightness is clearly under 87% or over 95%, or clearly coloured.",
+   "why": "Two pale neutrals about 20 levels apart; whether the ground falls between them needs an eyedropper reading."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r013/H045",
+   "method": "measure",
+   "how": "Count every character on each printed line of role or running text, spaces and punctuation included; answer No if any line has more than 65.",
+   "why": "An exact 65-character limit needs counting, not a look (r017 guards the 69-character role trap)."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r013/H002",
+   "method": "measure",
+   "how": "In an image viewer, show the card 320 px wide (about 30% zoom); answer No if any role-line word is cut off or unreadable.",
+   "check": "Viewed 320 px wide, every word of the role line on “Summit speaker card - Nils Haugen” (speaker-card-r013.png) can be read in full without zooming in.",
+   "why": "Now tests the brief's \"keep the role readable on a phone\" at a set display width; a clipped letter still fails, so the old fact is kept."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r013/H042",
+   "check": "Apart from the CFS mark and any summit title, all text on “Summit speaker card - Nils Haugen” (speaker-card-r013.png) is Inter Regular, Inter Medium or IBM Plex Mono Regular.",
+   "why": "weights missing; rule T10 limits the weights (IBM Plex Mono Regular, and Inter weights on host cards)."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r013/H051",
+   "check": "The CFS mark on “Summit speaker card - Nils Haugen” (speaker-card-r013.png) is Fog Grey #D9DDDE.",
+   "method": "measure",
+   "how": "Eyedropper the solid centre of a CFS mark stroke; answer No if it clearly differs from #D9DDDE, for example white or #F2EEE7.",
+   "why": "Split: mark colour and ground colour can fail separately. Measured: a mark recoloured white or Warm Paper looks the same as Fog Grey."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r013/H049",
+   "check": "Cascadia Slate #23303A appears outside the photograph on “Summit speaker card - Nils Haugen” (speaker-card-r013.png).",
+   "method": "measure",
+   "how": "Eyedropper the dark grounds and bands outside the photograph; answer Yes if any reads at or very near #23303A.",
+   "why": "Split: each mandatory colour is its own presence fact; exact hex needs an eyedropper."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r014/H056",
+   "method": "estimate",
+   "how": "Estimate the share of the non-photographic area in Signal Copper and Evergreen; answer No only if it is clearly over 5%.",
+   "why": "Area share is an estimate, not a look judgement; labelled estimate with how to answer."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r014/H043",
+   "check": "If a summit title appears on “Summit speaker card - Robin Tate” (speaker-card-r014.png), it is set in Piazzolla Medium.",
+   "why": "Split: family and weight kept here; the axis 8 small-text design is now its own check (rule T11)."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r014/H017",
+   "check": "The skin on “Summit speaker card - Robin Tate” (speaker-card-r014.png) looks natural in colour, with none of the warm mixed-light cast of speaker_portrait_11.jpg left.",
+   "why": "Split: the planned cast correction and the separate no-warm-filter ban can fail separately; the filter is now its own check."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r014/H050",
+   "method": "measure",
+   "how": "Eyedropper the centre of each flat ground and panel, the sitter's ground excepted; answer No if any clearly differs from both #23303A and #F2EEE7.",
+   "why": "Exact hex value: Fog Grey, Warm Paper, white, Slate and Near Black cannot be told apart by eye; needs an eyedropper reading."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r014/H052",
+   "method": "measure",
+   "how": "Eyedropper a thick letter stroke in each line on Warm Paper; answer No if any clearly differs from #1A1F24, apart from an affiliation in #B06B3E.",
+   "why": "Exact hex value: Fog Grey, Warm Paper, white, Slate and Near Black cannot be told apart by eye; needs an eyedropper reading."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r014/H053",
+   "method": "measure",
+   "how": "Eyedropper a thick letter stroke in each line on Cascadia Slate; answer No if any clearly differs from both #F2EEE7 and #D9DDDE.",
+   "why": "Exact hex value: Fog Grey, Warm Paper, white, Slate and Near Black cannot be told apart by eye; needs an eyedropper reading."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r014/H041",
+   "method": "measure",
+   "how": "Eyedropper the ground beside the head on this card and on speaker-card-r005.png; answer No if the two readings clearly differ.",
+   "why": "Whether two pale near-neutral grounds in separate files are the same tone needs an eyedropper reading, like the range check."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r014/H047",
+   "method": "measure",
+   "how": "Eyedropper the centre of each flat area, rule and thick letter stroke outside the photograph; answer No if any clearly matches none of the six.",
+   "why": "Exact hexes (B02) and solid, untinted colour (B03a) need an eyedropper reading, not a look."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r014/H013",
+   "method": "measure",
+   "how": "Eyedropper the ground beside the head in three places; answer No if any HSB brightness is clearly under 87% or over 95%, or clearly coloured.",
+   "why": "Two pale neutrals about 20 levels apart; whether the ground falls between them needs an eyedropper reading."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r014/H045",
+   "method": "measure",
+   "how": "Count every character on each printed line of role or running text, spaces and punctuation included; answer No if any line has more than 65.",
+   "why": "An exact 65-character limit needs counting, not a look (r017 guards the 69-character role trap)."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r014/H002",
+   "method": "measure",
+   "how": "In an image viewer, show the card 320 px wide (about 30% zoom); answer No if any role-line word is cut off or unreadable.",
+   "check": "Viewed 320 px wide, every word of the role line on “Summit speaker card - Robin Tate” (speaker-card-r014.png) can be read in full without zooming in.",
+   "why": "Now tests the brief's \"keep the role readable on a phone\" at a set display width; a clipped letter still fails, so the old fact is kept."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r014/H042",
+   "check": "Apart from the CFS mark and any summit title, all text on “Summit speaker card - Robin Tate” (speaker-card-r014.png) is Inter Regular, Inter Medium or IBM Plex Mono Regular.",
+   "why": "weights missing; rule T10 limits the weights (IBM Plex Mono Regular, and Inter weights on host cards)."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r014/H051",
+   "check": "The CFS mark on “Summit speaker card - Robin Tate” (speaker-card-r014.png) is Fog Grey #D9DDDE.",
+   "method": "measure",
+   "how": "Eyedropper the solid centre of a CFS mark stroke; answer No if it clearly differs from #D9DDDE, for example white or #F2EEE7.",
+   "why": "Split: mark colour and ground colour can fail separately. Measured: a mark recoloured white or Warm Paper looks the same as Fog Grey."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r014/H049",
+   "check": "Cascadia Slate #23303A appears outside the photograph on “Summit speaker card - Robin Tate” (speaker-card-r014.png).",
+   "method": "measure",
+   "how": "Eyedropper the dark grounds and bands outside the photograph; answer Yes if any reads at or very near #23303A.",
+   "why": "Split: each mandatory colour is its own presence fact; exact hex needs an eyedropper."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r015/H056",
+   "method": "estimate",
+   "how": "Estimate the share of the non-photographic area in Signal Copper and Evergreen; answer No only if it is clearly over 5%.",
+   "why": "Area share is an estimate, not a look judgement; labelled estimate with how to answer."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r015/H043",
+   "check": "If a summit title appears on “Summit speaker card - Bernadette Cruz” (speaker-card-r015.png), it is set in Piazzolla Medium.",
+   "why": "Split: family and weight kept here; the axis 8 small-text design is now its own check (rule T11)."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r015/H017",
+   "check": "The skin on “Summit speaker card - Bernadette Cruz” (speaker-card-r015.png) looks natural in colour, with none of the cool open-shade cast of speaker_portrait_12.jpg left.",
+   "why": "Split: the planned cast correction and the separate no-warm-filter ban can fail separately; the filter is now its own check."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r015/H050",
+   "method": "measure",
+   "how": "Eyedropper the centre of each flat ground and panel, the sitter's ground excepted; answer No if any clearly differs from both #23303A and #F2EEE7.",
+   "why": "Exact hex value: Fog Grey, Warm Paper, white, Slate and Near Black cannot be told apart by eye; needs an eyedropper reading."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r015/H052",
+   "method": "measure",
+   "how": "Eyedropper a thick letter stroke in each line on Warm Paper; answer No if any clearly differs from #1A1F24, apart from an affiliation in #B06B3E.",
+   "why": "Exact hex value: Fog Grey, Warm Paper, white, Slate and Near Black cannot be told apart by eye; needs an eyedropper reading."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r015/H053",
+   "method": "measure",
+   "how": "Eyedropper a thick letter stroke in each line on Cascadia Slate; answer No if any clearly differs from both #F2EEE7 and #D9DDDE.",
+   "why": "Exact hex value: Fog Grey, Warm Paper, white, Slate and Near Black cannot be told apart by eye; needs an eyedropper reading."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r015/H041",
+   "method": "measure",
+   "how": "Eyedropper the ground beside the head on this card and on speaker-card-r005.png; answer No if the two readings clearly differ.",
+   "why": "Whether two pale near-neutral grounds in separate files are the same tone needs an eyedropper reading, like the range check."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r015/H047",
+   "method": "measure",
+   "how": "Eyedropper the centre of each flat area, rule and thick letter stroke outside the photograph; answer No if any clearly matches none of the six.",
+   "why": "Exact hexes (B02) and solid, untinted colour (B03a) need an eyedropper reading, not a look."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r015/H013",
+   "method": "measure",
+   "how": "Eyedropper the ground beside the head in three places; answer No if any HSB brightness is clearly under 87% or over 95%, or clearly coloured.",
+   "why": "Two pale neutrals about 20 levels apart; whether the ground falls between them needs an eyedropper reading."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r015/H045",
+   "method": "measure",
+   "how": "Count every character on each printed line of role or running text, spaces and punctuation included; answer No if any line has more than 65.",
+   "why": "An exact 65-character limit needs counting, not a look (r017 guards the 69-character role trap)."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r015/H002",
+   "method": "measure",
+   "how": "In an image viewer, show the card 320 px wide (about 30% zoom); answer No if any role-line word is cut off or unreadable.",
+   "check": "Viewed 320 px wide, every word of the role line on “Summit speaker card - Bernadette Cruz” (speaker-card-r015.png) can be read in full without zooming in.",
+   "why": "Now tests the brief's \"keep the role readable on a phone\" at a set display width; a clipped letter still fails, so the old fact is kept."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r015/H042",
+   "check": "Apart from the CFS mark and any summit title, all text on “Summit speaker card - Bernadette Cruz” (speaker-card-r015.png) is Inter Regular, Inter Medium or IBM Plex Mono Regular.",
+   "why": "weights missing; rule T10 limits the weights (IBM Plex Mono Regular, and Inter weights on host cards)."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r015/H051",
+   "check": "The CFS mark on “Summit speaker card - Bernadette Cruz” (speaker-card-r015.png) is Fog Grey #D9DDDE.",
+   "method": "measure",
+   "how": "Eyedropper the solid centre of a CFS mark stroke; answer No if it clearly differs from #D9DDDE, for example white or #F2EEE7.",
+   "why": "Split: mark colour and ground colour can fail separately. Measured: a mark recoloured white or Warm Paper looks the same as Fog Grey."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r015/H049",
+   "check": "Cascadia Slate #23303A appears outside the photograph on “Summit speaker card - Bernadette Cruz” (speaker-card-r015.png).",
+   "method": "measure",
+   "how": "Eyedropper the dark grounds and bands outside the photograph; answer Yes if any reads at or very near #23303A.",
+   "why": "Split: each mandatory colour is its own presence fact; exact hex needs an eyedropper."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r016/H056",
+   "method": "estimate",
+   "how": "Estimate the share of the non-photographic area in Signal Copper and Evergreen; answer No only if it is clearly over 5%.",
+   "why": "Area share is an estimate, not a look judgement; labelled estimate with how to answer."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r016/H043",
+   "check": "If a summit title appears on “Summit speaker card - Hugo Almeida” (speaker-card-r016.png), it is set in Piazzolla Medium.",
+   "why": "Split: family and weight kept here; the axis 8 small-text design is now its own check (rule T11)."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r016/H017",
+   "check": "The skin on “Summit speaker card - Hugo Almeida” (speaker-card-r016.png) looks natural in colour, with none of the warm office-light cast of speaker_portrait_13.jpg left.",
+   "why": "Split: the planned cast correction and the separate no-warm-filter ban can fail separately; the filter is now its own check."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r016/H050",
+   "method": "measure",
+   "how": "Eyedropper the centre of each flat ground and panel, the sitter's ground excepted; answer No if any clearly differs from both #23303A and #F2EEE7.",
+   "why": "Exact hex value: Fog Grey, Warm Paper, white, Slate and Near Black cannot be told apart by eye; needs an eyedropper reading."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r016/H052",
+   "method": "measure",
+   "how": "Eyedropper a thick letter stroke in each line on Warm Paper; answer No if any clearly differs from #1A1F24, apart from an affiliation in #B06B3E.",
+   "why": "Exact hex value: Fog Grey, Warm Paper, white, Slate and Near Black cannot be told apart by eye; needs an eyedropper reading."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r016/H053",
+   "method": "measure",
+   "how": "Eyedropper a thick letter stroke in each line on Cascadia Slate; answer No if any clearly differs from both #F2EEE7 and #D9DDDE.",
+   "why": "Exact hex value: Fog Grey, Warm Paper, white, Slate and Near Black cannot be told apart by eye; needs an eyedropper reading."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r016/H041",
+   "method": "measure",
+   "how": "Eyedropper the ground beside the head on this card and on speaker-card-r005.png; answer No if the two readings clearly differ.",
+   "why": "Whether two pale near-neutral grounds in separate files are the same tone needs an eyedropper reading, like the range check."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r016/H047",
+   "method": "measure",
+   "how": "Eyedropper the centre of each flat area, rule and thick letter stroke outside the photograph; answer No if any clearly matches none of the six.",
+   "why": "Exact hexes (B02) and solid, untinted colour (B03a) need an eyedropper reading, not a look."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r016/H013",
+   "method": "measure",
+   "how": "Eyedropper the ground beside the head in three places; answer No if any HSB brightness is clearly under 87% or over 95%, or clearly coloured.",
+   "why": "Two pale neutrals about 20 levels apart; whether the ground falls between them needs an eyedropper reading."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r016/H045",
+   "method": "measure",
+   "how": "Count every character on each printed line of role or running text, spaces and punctuation included; answer No if any line has more than 65.",
+   "why": "An exact 65-character limit needs counting, not a look (r017 guards the 69-character role trap)."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r016/H002",
+   "method": "measure",
+   "how": "In an image viewer, show the card 320 px wide (about 30% zoom); answer No if any role-line word is cut off or unreadable.",
+   "check": "Viewed 320 px wide, every word of the role line on “Summit speaker card - Hugo Almeida” (speaker-card-r016.png) can be read in full without zooming in.",
+   "why": "Now tests the brief's \"keep the role readable on a phone\" at a set display width; a clipped letter still fails, so the old fact is kept."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r016/H042",
+   "check": "Apart from the CFS mark and any summit title, all text on “Summit speaker card - Hugo Almeida” (speaker-card-r016.png) is Inter Regular, Inter Medium or IBM Plex Mono Regular.",
+   "why": "weights missing; rule T10 limits the weights (IBM Plex Mono Regular, and Inter weights on host cards)."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r016/H051",
+   "check": "The CFS mark on “Summit speaker card - Hugo Almeida” (speaker-card-r016.png) is Fog Grey #D9DDDE.",
+   "method": "measure",
+   "how": "Eyedropper the solid centre of a CFS mark stroke; answer No if it clearly differs from #D9DDDE, for example white or #F2EEE7.",
+   "why": "Split: mark colour and ground colour can fail separately. Measured: a mark recoloured white or Warm Paper looks the same as Fog Grey."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r016/H049",
+   "check": "Cascadia Slate #23303A appears outside the photograph on “Summit speaker card - Hugo Almeida” (speaker-card-r016.png).",
+   "method": "measure",
+   "how": "Eyedropper the dark grounds and bands outside the photograph; answer Yes if any reads at or very near #23303A.",
+   "why": "Split: each mandatory colour is its own presence fact; exact hex needs an eyedropper."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r017/H056",
+   "method": "estimate",
+   "how": "Estimate the share of the non-photographic area in Signal Copper and Evergreen; answer No only if it is clearly over 5%.",
+   "why": "Area share is an estimate, not a look judgement; labelled estimate with how to answer."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r017/H043",
+   "check": "If a summit title appears on “Summit speaker card - Karin Voss” (speaker-card-r017.png), it is set in Piazzolla Medium.",
+   "why": "Split: family and weight kept here; the axis 8 small-text design is now its own check (rule T11)."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r017/H017",
+   "check": "The skin on “Summit speaker card - Karin Voss” (speaker-card-r017.png) looks natural in colour, with no colour cast carried over from speaker_portrait_14.jpg.",
+   "why": "Split: the planned cast correction and the separate no-warm-filter ban can fail separately; the filter is now its own check."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r017/H050",
+   "method": "measure",
+   "how": "Eyedropper the centre of each flat ground and panel, the sitter's ground excepted; answer No if any clearly differs from both #23303A and #F2EEE7.",
+   "why": "Exact hex value: Fog Grey, Warm Paper, white, Slate and Near Black cannot be told apart by eye; needs an eyedropper reading."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r017/H052",
+   "method": "measure",
+   "how": "Eyedropper a thick letter stroke in each line on Warm Paper; answer No if any clearly differs from #1A1F24, apart from an affiliation in #B06B3E.",
+   "why": "Exact hex value: Fog Grey, Warm Paper, white, Slate and Near Black cannot be told apart by eye; needs an eyedropper reading."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r017/H053",
+   "method": "measure",
+   "how": "Eyedropper a thick letter stroke in each line on Cascadia Slate; answer No if any clearly differs from both #F2EEE7 and #D9DDDE.",
+   "why": "Exact hex value: Fog Grey, Warm Paper, white, Slate and Near Black cannot be told apart by eye; needs an eyedropper reading."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r017/H041",
+   "method": "measure",
+   "how": "Eyedropper the ground beside the head on this card and on speaker-card-r005.png; answer No if the two readings clearly differ.",
+   "why": "Whether two pale near-neutral grounds in separate files are the same tone needs an eyedropper reading, like the range check."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r017/H047",
+   "method": "measure",
+   "how": "Eyedropper the centre of each flat area, rule and thick letter stroke outside the photograph; answer No if any clearly matches none of the six.",
+   "why": "Exact hexes (B02) and solid, untinted colour (B03a) need an eyedropper reading, not a look."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r017/H013",
+   "method": "measure",
+   "how": "Eyedropper the ground beside the head in three places; answer No if any HSB brightness is clearly under 87% or over 95%, or clearly coloured.",
+   "why": "Two pale neutrals about 20 levels apart; whether the ground falls between them needs an eyedropper reading."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r017/H045",
+   "method": "measure",
+   "how": "Count every character on each printed line of role or running text, spaces and punctuation included; answer No if any line has more than 65.",
+   "why": "An exact 65-character limit needs counting, not a look (r017 guards the 69-character role trap)."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r017/H002",
+   "method": "measure",
+   "how": "In an image viewer, show the card 320 px wide (about 30% zoom); answer No if any role-line word is cut off or unreadable.",
+   "check": "Viewed 320 px wide, every word of the role line on “Summit speaker card - Karin Voss” (speaker-card-r017.png) can be read in full without zooming in.",
+   "why": "Now tests the brief's \"keep the role readable on a phone\" at a set display width; a clipped letter still fails, so the old fact is kept."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r017/H042",
+   "check": "Apart from the CFS mark and any summit title, all text on “Summit speaker card - Karin Voss” (speaker-card-r017.png) is Inter Regular, Inter Medium or IBM Plex Mono Regular.",
+   "why": "weights missing; rule T10 limits the weights (IBM Plex Mono Regular, and Inter weights on host cards)."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r017/H051",
+   "check": "The CFS mark on “Summit speaker card - Karin Voss” (speaker-card-r017.png) is Fog Grey #D9DDDE.",
+   "method": "measure",
+   "how": "Eyedropper the solid centre of a CFS mark stroke; answer No if it clearly differs from #D9DDDE, for example white or #F2EEE7.",
+   "why": "Split: mark colour and ground colour can fail separately. Measured: a mark recoloured white or Warm Paper looks the same as Fog Grey."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r017/H049",
+   "check": "Cascadia Slate #23303A appears outside the photograph on “Summit speaker card - Karin Voss” (speaker-card-r017.png).",
+   "method": "measure",
+   "how": "Eyedropper the dark grounds and bands outside the photograph; answer Yes if any reads at or very near #23303A.",
+   "why": "Split: each mandatory colour is its own presence fact; exact hex needs an eyedropper."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r018/H056",
+   "method": "estimate",
+   "how": "Estimate the share of the non-photographic area in Signal Copper and Evergreen; answer No only if it is clearly over 5%.",
+   "why": "Area share is an estimate, not a look judgement; labelled estimate with how to answer."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r018/H043",
+   "check": "Apart from the affiliation line “Cascadia Founders Summit”, if a summit title appears on “Summit host card - Laurel Beckett” (speaker-card-r018.png), it is set in Piazzolla Medium.",
+   "why": "Split: family and weight kept here; the axis 8 small-text design is now its own check (rule T11). Host cards exclude the affiliation “Cascadia Founders Summit”, which must be Inter Regular."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r018/H017",
+   "check": "The skin on “Summit host card - Laurel Beckett” (speaker-card-r018.png) looks natural in colour, with no colour cast carried over from staff_portrait_01.jpg.",
+   "why": "Split: the planned cast correction and the separate no-warm-filter ban can fail separately; the filter is now its own check."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r018/H050",
+   "method": "measure",
+   "how": "Eyedropper the centre of each flat ground and panel, the sitter's ground excepted; answer No if any clearly differs from both #23303A and #F2EEE7.",
+   "why": "Exact hex value: Fog Grey, Warm Paper, white, Slate and Near Black cannot be told apart by eye; needs an eyedropper reading."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r018/H052",
+   "method": "measure",
+   "how": "Eyedropper a thick letter stroke in each line on Warm Paper; answer No if any clearly differs from #1A1F24, apart from an affiliation in #B06B3E.",
+   "why": "Exact hex value: Fog Grey, Warm Paper, white, Slate and Near Black cannot be told apart by eye; needs an eyedropper reading."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r018/H053",
+   "method": "measure",
+   "how": "Eyedropper a thick letter stroke in each line on Cascadia Slate; answer No if any clearly differs from both #F2EEE7 and #D9DDDE.",
+   "why": "Exact hex value: Fog Grey, Warm Paper, white, Slate and Near Black cannot be told apart by eye; needs an eyedropper reading."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r018/H041",
+   "method": "measure",
+   "how": "Eyedropper the ground beside the head on this card and on speaker-card-r005.png; answer No if the two readings clearly differ.",
+   "why": "Whether two pale near-neutral grounds in separate files are the same tone needs an eyedropper reading, like the range check."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r018/H047",
+   "method": "measure",
+   "how": "Eyedropper the centre of each flat area, rule and thick letter stroke outside the photograph; answer No if any clearly matches none of the six.",
+   "why": "Exact hexes (B02) and solid, untinted colour (B03a) need an eyedropper reading, not a look."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r018/H013",
+   "method": "measure",
+   "how": "Eyedropper the ground beside the head in three places; answer No if any HSB brightness is clearly under 87% or over 95%, or clearly coloured.",
+   "why": "Two pale neutrals about 20 levels apart; whether the ground falls between them needs an eyedropper reading."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r018/H045",
+   "method": "measure",
+   "how": "Count every character on each printed line of role or running text, spaces and punctuation included; answer No if any line has more than 65.",
+   "why": "An exact 65-character limit needs counting, not a look (r017 guards the 69-character role trap)."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r018/H002",
+   "method": "measure",
+   "how": "In an image viewer, show the card 320 px wide (about 30% zoom); answer No if any role-line word is cut off or unreadable.",
+   "check": "Viewed 320 px wide, every word of the role line on “Summit host card - Laurel Beckett” (speaker-card-r018.png) can be read in full without zooming in.",
+   "why": "Now tests the brief's \"keep the role readable on a phone\" at a set display width; a clipped letter still fails, so the old fact is kept."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r018/H042",
+   "check": "Apart from the CFS mark and any summit title, all text on “Summit host card - Laurel Beckett” (speaker-card-r018.png) is Inter Regular, Inter Medium or IBM Plex Mono Regular.",
+   "why": "weights missing; rule T10 limits the weights (IBM Plex Mono Regular, and Inter weights on host cards)."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r018/H051",
+   "check": "The CFS mark on “Summit host card - Laurel Beckett” (speaker-card-r018.png) is Fog Grey #D9DDDE.",
+   "method": "measure",
+   "how": "Eyedropper the solid centre of a CFS mark stroke; answer No if it clearly differs from #D9DDDE, for example white or #F2EEE7.",
+   "why": "Split: mark colour and ground colour can fail separately. Measured: a mark recoloured white or Warm Paper looks the same as Fog Grey."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r018/H049",
+   "check": "Cascadia Slate #23303A appears outside the photograph on “Summit host card - Laurel Beckett” (speaker-card-r018.png).",
+   "method": "measure",
+   "how": "Eyedropper the dark grounds and bands outside the photograph; answer Yes if any reads at or very near #23303A.",
+   "why": "Split: each mandatory colour is its own presence fact; exact hex needs an eyedropper."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r019/H056",
+   "method": "estimate",
+   "how": "Estimate the share of the non-photographic area in Signal Copper and Evergreen; answer No only if it is clearly over 5%.",
+   "why": "Area share is an estimate, not a look judgement; labelled estimate with how to answer."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r019/H043",
+   "check": "Apart from the affiliation line “Cascadia Founders Summit”, if a summit title appears on “Summit host card - Owen Faraday” (speaker-card-r019.png), it is set in Piazzolla Medium.",
+   "why": "Split: family and weight kept here; the axis 8 small-text design is now its own check (rule T11). Host cards exclude the affiliation “Cascadia Founders Summit”, which must be Inter Regular."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r019/H017",
+   "check": "The skin on “Summit host card - Owen Faraday” (speaker-card-r019.png) looks natural in colour, with no colour cast carried over from staff_portrait_02.jpg.",
+   "why": "Split: the planned cast correction and the separate no-warm-filter ban can fail separately; the filter is now its own check."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r019/H050",
+   "method": "measure",
+   "how": "Eyedropper the centre of each flat ground and panel, the sitter's ground excepted; answer No if any clearly differs from both #23303A and #F2EEE7.",
+   "why": "Exact hex value: Fog Grey, Warm Paper, white, Slate and Near Black cannot be told apart by eye; needs an eyedropper reading."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r019/H052",
+   "method": "measure",
+   "how": "Eyedropper a thick letter stroke in each line on Warm Paper; answer No if any clearly differs from #1A1F24, apart from an affiliation in #B06B3E.",
+   "why": "Exact hex value: Fog Grey, Warm Paper, white, Slate and Near Black cannot be told apart by eye; needs an eyedropper reading."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r019/H053",
+   "method": "measure",
+   "how": "Eyedropper a thick letter stroke in each line on Cascadia Slate; answer No if any clearly differs from both #F2EEE7 and #D9DDDE.",
+   "why": "Exact hex value: Fog Grey, Warm Paper, white, Slate and Near Black cannot be told apart by eye; needs an eyedropper reading."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r019/H041",
+   "method": "measure",
+   "how": "Eyedropper the ground beside the head on this card and on speaker-card-r005.png; answer No if the two readings clearly differ.",
+   "why": "Whether two pale near-neutral grounds in separate files are the same tone needs an eyedropper reading, like the range check."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r019/H047",
+   "method": "measure",
+   "how": "Eyedropper the centre of each flat area, rule and thick letter stroke outside the photograph; answer No if any clearly matches none of the six.",
+   "why": "Exact hexes (B02) and solid, untinted colour (B03a) need an eyedropper reading, not a look."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r019/H013",
+   "method": "measure",
+   "how": "Eyedropper the ground beside the head in three places; answer No if any HSB brightness is clearly under 87% or over 95%, or clearly coloured.",
+   "why": "Two pale neutrals about 20 levels apart; whether the ground falls between them needs an eyedropper reading."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r019/H045",
+   "method": "measure",
+   "how": "Count every character on each printed line of role or running text, spaces and punctuation included; answer No if any line has more than 65.",
+   "why": "An exact 65-character limit needs counting, not a look (r017 guards the 69-character role trap)."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r019/H002",
+   "method": "measure",
+   "how": "In an image viewer, show the card 320 px wide (about 30% zoom); answer No if any role-line word is cut off or unreadable.",
+   "check": "Viewed 320 px wide, every word of the role line on “Summit host card - Owen Faraday” (speaker-card-r019.png) can be read in full without zooming in.",
+   "why": "Now tests the brief's \"keep the role readable on a phone\" at a set display width; a clipped letter still fails, so the old fact is kept."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r019/H042",
+   "check": "Apart from the CFS mark and any summit title, all text on “Summit host card - Owen Faraday” (speaker-card-r019.png) is Inter Regular, Inter Medium or IBM Plex Mono Regular.",
+   "why": "weights missing; rule T10 limits the weights (IBM Plex Mono Regular, and Inter weights on host cards)."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r019/H051",
+   "check": "The CFS mark on “Summit host card - Owen Faraday” (speaker-card-r019.png) is Fog Grey #D9DDDE.",
+   "method": "measure",
+   "how": "Eyedropper the solid centre of a CFS mark stroke; answer No if it clearly differs from #D9DDDE, for example white or #F2EEE7.",
+   "why": "Split: mark colour and ground colour can fail separately. Measured: a mark recoloured white or Warm Paper looks the same as Fog Grey."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r019/H049",
+   "check": "Cascadia Slate #23303A appears outside the photograph on “Summit host card - Owen Faraday” (speaker-card-r019.png).",
+   "method": "measure",
+   "how": "Eyedropper the dark grounds and bands outside the photograph; answer Yes if any reads at or very near #23303A.",
+   "why": "Split: each mandatory colour is its own presence fact; exact hex needs an eyedropper."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r020/H056",
+   "method": "estimate",
+   "how": "Estimate the share of the non-photographic area in Signal Copper and Evergreen; answer No only if it is clearly over 5%.",
+   "why": "Area share is an estimate, not a look judgement; labelled estimate with how to answer."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r020/H043",
+   "check": "Apart from the affiliation line “Cascadia Founders Summit”, if a summit title appears on “Summit host card - Mireille Dufort” (speaker-card-r020.png), it is set in Piazzolla Medium.",
+   "why": "Split: family and weight kept here; the axis 8 small-text design is now its own check (rule T11). Host cards exclude the affiliation “Cascadia Founders Summit”, which must be Inter Regular."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r020/H017",
+   "check": "The skin on “Summit host card - Mireille Dufort” (speaker-card-r020.png) looks natural in colour, with none of the green fluorescent tinge of staff_portrait_03.jpg left.",
+   "why": "Split: the planned cast correction and the separate no-warm-filter ban can fail separately; the filter is now its own check."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r020/H050",
+   "method": "measure",
+   "how": "Eyedropper the centre of each flat ground and panel, the sitter's ground excepted; answer No if any clearly differs from both #23303A and #F2EEE7.",
+   "why": "Exact hex value: Fog Grey, Warm Paper, white, Slate and Near Black cannot be told apart by eye; needs an eyedropper reading."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r020/H052",
+   "method": "measure",
+   "how": "Eyedropper a thick letter stroke in each line on Warm Paper; answer No if any clearly differs from #1A1F24, apart from an affiliation in #B06B3E.",
+   "why": "Exact hex value: Fog Grey, Warm Paper, white, Slate and Near Black cannot be told apart by eye; needs an eyedropper reading."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r020/H053",
+   "method": "measure",
+   "how": "Eyedropper a thick letter stroke in each line on Cascadia Slate; answer No if any clearly differs from both #F2EEE7 and #D9DDDE.",
+   "why": "Exact hex value: Fog Grey, Warm Paper, white, Slate and Near Black cannot be told apart by eye; needs an eyedropper reading."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r020/H041",
+   "method": "measure",
+   "how": "Eyedropper the ground beside the head on this card and on speaker-card-r005.png; answer No if the two readings clearly differ.",
+   "why": "Whether two pale near-neutral grounds in separate files are the same tone needs an eyedropper reading, like the range check."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r020/H047",
+   "method": "measure",
+   "how": "Eyedropper the centre of each flat area, rule and thick letter stroke outside the photograph; answer No if any clearly matches none of the six.",
+   "why": "Exact hexes (B02) and solid, untinted colour (B03a) need an eyedropper reading, not a look."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r020/H013",
+   "method": "measure",
+   "how": "Eyedropper the ground beside the head in three places; answer No if any HSB brightness is clearly under 87% or over 95%, or clearly coloured.",
+   "why": "Two pale neutrals about 20 levels apart; whether the ground falls between them needs an eyedropper reading."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r020/H045",
+   "method": "measure",
+   "how": "Count every character on each printed line of role or running text, spaces and punctuation included; answer No if any line has more than 65.",
+   "why": "An exact 65-character limit needs counting, not a look (r017 guards the 69-character role trap)."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r020/H002",
+   "method": "measure",
+   "how": "In an image viewer, show the card 320 px wide (about 30% zoom); answer No if any role-line word is cut off or unreadable.",
+   "check": "Viewed 320 px wide, every word of the role line on “Summit host card - Mireille Dufort” (speaker-card-r020.png) can be read in full without zooming in.",
+   "why": "Now tests the brief's \"keep the role readable on a phone\" at a set display width; a clipped letter still fails, so the old fact is kept."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r020/H042",
+   "check": "Apart from the CFS mark and any summit title, all text on “Summit host card - Mireille Dufort” (speaker-card-r020.png) is Inter Regular, Inter Medium or IBM Plex Mono Regular.",
+   "why": "weights missing; rule T10 limits the weights (IBM Plex Mono Regular, and Inter weights on host cards)."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r020/H051",
+   "check": "The CFS mark on “Summit host card - Mireille Dufort” (speaker-card-r020.png) is Fog Grey #D9DDDE.",
+   "method": "measure",
+   "how": "Eyedropper the solid centre of a CFS mark stroke; answer No if it clearly differs from #D9DDDE, for example white or #F2EEE7.",
+   "why": "Split: mark colour and ground colour can fail separately. Measured: a mark recoloured white or Warm Paper looks the same as Fog Grey."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r020/H049",
+   "check": "Cascadia Slate #23303A appears outside the photograph on “Summit host card - Mireille Dufort” (speaker-card-r020.png).",
+   "method": "measure",
+   "how": "Eyedropper the dark grounds and bands outside the photograph; answer Yes if any reads at or very near #23303A.",
+   "why": "Split: each mandatory colour is its own presence fact; exact hex needs an eyedropper."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r021/H060",
+   "method": "estimate",
+   "how": "Estimate the share of the non-photographic area in Signal Copper and Evergreen; answer No only if it is clearly over 5%.",
+   "why": "Area share is an estimate, not a look judgement; labelled estimate with how to answer."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r021/H055",
+   "check": "Apart from the affiliation line “Cascadia Founders Summit”, if a summit title appears on “Summit host card - Jonah Pryce” (speaker-card-r021.png), it is set in Piazzolla Medium.",
+   "why": "Split: family and weight kept here; the axis 8 small-text design is now its own check (rule T11). Host cards exclude the affiliation “Cascadia Founders Summit”, which must be Inter Regular."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r021/H017",
+   "check": "The skin on “Summit host card - Jonah Pryce” (speaker-card-r021.png) looks natural in colour, with no colour cast carried over from staff_portrait_04.jpg.",
+   "why": "Split: the planned cast correction and the separate no-warm-filter ban can fail separately; the filter is now its own check."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r021/H029",
+   "method": "measure",
+   "how": "Eyedropper the centre of each flat ground and panel, the sitter's ground excepted; answer No if any clearly differs from both #23303A and #F2EEE7.",
+   "why": "Exact hex value: Fog Grey, Warm Paper, white, Slate and Near Black cannot be told apart by eye; needs an eyedropper reading."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r021/H030",
+   "method": "measure",
+   "how": "Eyedropper a thick letter stroke in each line on Warm Paper; answer No if any clearly differs from #1A1F24, apart from an affiliation in #B06B3E.",
+   "why": "Exact hex value: Fog Grey, Warm Paper, white, Slate and Near Black cannot be told apart by eye; needs an eyedropper reading."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r021/H058",
+   "method": "measure",
+   "how": "Eyedropper a thick letter stroke in each line on Cascadia Slate; answer No if any clearly differs from both #F2EEE7 and #D9DDDE.",
+   "why": "Exact hex value: Fog Grey, Warm Paper, white, Slate and Near Black cannot be told apart by eye; needs an eyedropper reading."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r021/H054",
+   "method": "measure",
+   "how": "Eyedropper the ground beside the head on this card and on speaker-card-r005.png; answer No if the two readings clearly differ.",
+   "why": "Whether two pale near-neutral grounds in separate files are the same tone needs an eyedropper reading, like the range check."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r021/H026",
+   "method": "measure",
+   "how": "Eyedropper the centre of each flat area, rule and thick letter stroke outside the photograph; answer No if any clearly matches none of the six.",
+   "why": "Exact hexes (B02) and solid, untinted colour (B03a) need an eyedropper reading, not a look."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r021/H013",
+   "method": "measure",
+   "how": "Eyedropper the ground beside the head in three places; answer No if any HSB brightness is clearly under 87% or over 95%, or clearly coloured.",
+   "why": "Two pale neutrals about 20 levels apart; whether the ground falls between them needs an eyedropper reading."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r021/H025",
+   "method": "measure",
+   "how": "Count every character on each printed line of role or running text, spaces and punctuation included; answer No if any line has more than 65.",
+   "why": "An exact 65-character limit needs counting, not a look (r017 guards the 69-character role trap)."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r021/H002",
+   "method": "measure",
+   "how": "In an image viewer, show the card 320 px wide (about 30% zoom); answer No if any role-line word is cut off or unreadable.",
+   "check": "Viewed 320 px wide, every word of the role line on “Summit host card - Jonah Pryce” (speaker-card-r021.png) can be read in full without zooming in.",
+   "why": "Now tests the brief's \"keep the role readable on a phone\" at a set display width; a clipped letter still fails, so the old fact is kept."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r021/H021",
+   "check": "Apart from the CFS mark and any summit title, all text on “Summit host card - Jonah Pryce” (speaker-card-r021.png) is Inter Regular, Inter Medium or IBM Plex Mono Regular.",
+   "why": "weights missing; rule T10 limits the weights (IBM Plex Mono Regular, and Inter weights on host cards)."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r021/H057",
+   "check": "The CFS mark on “Summit host card - Jonah Pryce” (speaker-card-r021.png) is Fog Grey #D9DDDE.",
+   "method": "measure",
+   "how": "Eyedropper the solid centre of a CFS mark stroke; answer No if it clearly differs from #D9DDDE, for example white or #F2EEE7.",
+   "why": "Split: mark colour and ground colour can fail separately. Measured: a mark recoloured white or Warm Paper looks the same as Fog Grey."
+  },
+  {
+   "check_id": "PHOTO-19/speaker-card-r021/H028",
+   "check": "Cascadia Slate #23303A appears outside the photograph on “Summit host card - Jonah Pryce” (speaker-card-r021.png).",
+   "method": "measure",
+   "how": "Eyedropper the dark grounds and bands outside the photograph; answer Yes if any reads at or very near #23303A.",
+   "why": "Split: each mandatory colour is its own presence fact; exact hex needs an eyedropper."
+  },
+  {
+   "check_id": "PHOTO-19/summit-announcement/H061",
+   "method": "estimate",
+   "how": "Estimate the share of the non-photographic area in Signal Copper and Evergreen; answer No only if it is clearly over 5%.",
+   "why": "Area share is an estimate, not a look judgement; labelled estimate with how to answer."
+  },
+  {
+   "check_id": "PHOTO-19/summit-announcement/H005",
+   "check": "“Summit announcement” (summit-announcement.png) gives no registration web address.",
+   "why": "Split: one prohibition per check; the deadline and price limits are now separate K1_Q5 checks."
+  },
+  {
+   "check_id": "PHOTO-19/summit-announcement/H014",
+   "check": "Any portrait on “Summit announcement” (summit-announcement.png) shows natural skin colour, with no green, warm or cool light cast left from its source photo.",
+   "why": "Split: the no-warm-filter ban is now its own check."
+  },
+  {
+   "check_id": "PHOTO-19/summit-announcement/H027",
+   "method": "measure",
+   "how": "Eyedropper the centre of each flat ground and panel, any sitter's ground excepted; answer No if any clearly differs from both #23303A and #F2EEE7.",
+   "why": "Exact hex value: Fog Grey, Warm Paper, white, Slate and Near Black cannot be told apart by eye; needs an eyedropper reading."
+  },
+  {
+   "check_id": "PHOTO-19/summit-announcement/H028",
+   "method": "measure",
+   "how": "Eyedropper a thick letter stroke in each line on Warm Paper; answer No if any clearly differs from #1A1F24, apart from an affiliation in #B06B3E.",
+   "why": "Exact hex value: Fog Grey, Warm Paper, white, Slate and Near Black cannot be told apart by eye; needs an eyedropper reading."
+  },
+  {
+   "check_id": "PHOTO-19/summit-announcement/H059",
+   "method": "measure",
+   "how": "Eyedropper a thick letter stroke in each line on Cascadia Slate; answer No if any clearly differs from both #F2EEE7 and #D9DDDE.",
+   "why": "Exact hex value: Fog Grey, Warm Paper, white, Slate and Near Black cannot be told apart by eye; needs an eyedropper reading."
+  },
+  {
+   "check_id": "PHOTO-19/summit-announcement/H064",
+   "method": "measure",
+   "how": "Eyedropper the ground beside the head on this file and on speaker-card-r005.png; answer No if the two readings clearly differ.",
+   "why": "Whether two pale near-neutral grounds in separate files are the same tone needs an eyedropper reading, like the range check."
+  },
+  {
+   "check_id": "PHOTO-19/summit-announcement/H024",
+   "method": "measure",
+   "how": "Eyedropper the centre of each flat area, rule and thick letter stroke outside any photograph; answer No if any clearly matches none of the six.",
+   "why": "Exact hexes (B02) and solid, untinted colour (B03a) need an eyedropper reading, not a look."
+  },
+  {
+   "check_id": "PHOTO-19/summit-announcement/H011",
+   "method": "measure",
+   "how": "Eyedropper the ground beside the head in three places; answer No if any HSB brightness is clearly under 87% or over 95%, or clearly coloured.",
+   "why": "Two pale neutrals about 20 levels apart; whether the ground falls between them needs an eyedropper reading."
+  },
+  {
+   "check_id": "PHOTO-19/summit-announcement/H023",
+   "method": "measure",
+   "how": "Count every character on each printed line of running text, spaces and punctuation included; answer No if any line has more than 65.",
+   "why": "An exact 65-character limit needs counting, not a look."
+  },
+  {
+   "check_id": "PHOTO-19/summit-announcement/H018",
+   "check": "If venue_render.jpg appears on “Summit announcement” (summit-announcement.png), it is shown no larger than its native 1400 x 933 pixels.",
+   "method": "measure",
+   "how": "At 100% zoom, compare one feature's pixel width in the placed image with venue_render.jpg; answer No if the placed one is larger.",
+   "why": "Split: the pixel-scale limit needs measuring; the visible softness fact is now its own look check. Trap fact kept."
+  },
+  {
+   "check_id": "PHOTO-19/summit-announcement/H021",
+   "check": "The headline “Cascadia Founders Summit” on “Summit announcement” (summit-announcement.png) has Piazzolla's small-text shapes (wider, sturdier, low thick-thin contrast), not the default display shapes.",
+   "why": "One plain wording for the optical-size signature move, shared with the card checks; \"axis 8\" was jargon."
+  },
+  {
+   "check_id": "PHOTO-19/summit-announcement/H058",
+   "check": "If the CFS mark appears on “Summit announcement” (summit-announcement.png), it is Fog Grey #D9DDDE.",
+   "method": "measure",
+   "how": "Eyedropper the solid centre of a CFS mark stroke; answer No if it clearly differs from #D9DDDE, for example white or #F2EEE7.",
+   "why": "Split: mark colour and ground colour can fail separately; exact hex needs an eyedropper."
+  },
+  {
+   "check_id": "PHOTO-19/summit-announcement/H026",
+   "check": "Cascadia Slate #23303A appears outside any photograph on “Summit announcement” (summit-announcement.png).",
+   "method": "measure",
+   "how": "Eyedropper the dark grounds and bands outside any photograph; answer Yes if any reads at or very near #23303A.",
+   "why": "Split: each mandatory colour is its own presence fact; exact hex needs an eyedropper."
+  }
+ ],
+ "add": [
+  {
+   "key": "r002-title-opsz",
+   "output_id": "speaker-card-r002",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "If a summit title appears on “Summit speaker card - Marguerite Halloran” (speaker-card-r002.png), its letters have Piazzolla's small-text shapes (wider, sturdier, low thick-thin contrast), not the default display shapes.",
+   "evidence_reference": "Brand identity, signature_type_move: every summit title and announcement headline is Piazzolla Medium with the optical size axis pinned to 8.",
+   "reference_assets": [
+    "fonts/Piazzolla[opsz,wght].ttf"
+   ],
+   "why": "Split from the summit-title family check so each fact is judged on its own."
+  },
+  {
+   "key": "r002-edge",
+   "output_id": "speaker-card-r002",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "The sitter's outline against the ground on “Summit speaker card - Marguerite Halloran” (speaker-card-r002.png) shows no halo, fringe, jagged cut-out edge or other visible retouching trace.",
+   "evidence_reference": "summit_brand_notes.txt: \"Natural skin, no glamour retouching, no visible retouching signature.\"",
+   "reference_assets": [
+    "summit_brand_notes.txt"
+   ],
+   "why": "Coverage hole: \"no visible retouching signature\" had no check; the house-ground swap makes the cut-out edge the likely signature."
+  },
+  {
+   "key": "r002-recolour",
+   "output_id": "speaker-card-r002",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "Compared with speaker_portrait_01.jpg, no skin, hair or clothing colour on “Summit speaker card - Marguerite Halloran” (speaker-card-r002.png) is shifted toward Signal Copper #B06B3E or Evergreen #2C4A3B.",
+   "evidence_reference": "Brand identity, palette_rules.photography: portraits keep their subjects' own colouring and are never recoloured toward the palette.",
+   "reference_assets": [
+    "speaker_portrait_01.jpg"
+   ],
+   "why": "Coverage hole: \"never recoloured toward the palette\" had no check; worded as no shift toward the accents so cast correction still passes."
+  },
+  {
+   "key": "r002-no-warm-filter",
+   "output_id": "speaker-card-r002",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "No warm or golden filter is laid over the portrait on “Summit speaker card - Marguerite Halloran” (speaker-card-r002.png).",
+   "evidence_reference": "Brand identity, palette_rules.photography: mixed-light casts are brought to natural skin, with no glossy warm filter.",
+   "reference_assets": [],
+   "why": "Split from the skin-colour check (rule B13 held two facts)."
+  },
+  {
+   "key": "r002-mark-slate",
+   "output_id": "speaker-card-r002",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "The CFS mark on “Summit speaker card - Marguerite Halloran” (speaker-card-r002.png) sits on a Cascadia Slate #23303A ground.",
+   "method": "measure",
+   "how": "Eyedropper the ground right beside the CFS mark; answer No if it clearly differs from #23303A.",
+   "evidence_reference": "Brand identity, palette_rules.distribution: the CFS mark is Fog Grey on Cascadia Slate.",
+   "reference_assets": [],
+   "why": "Split from the mark-colour check (rule B08 held two facts); exact hex needs an eyedropper."
+  },
+  {
+   "key": "r002-has-paper",
+   "output_id": "speaker-card-r002",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "Warm Paper #F2EEE7 appears outside the photograph on “Summit speaker card - Marguerite Halloran” (speaker-card-r002.png).",
+   "method": "measure",
+   "how": "Eyedropper the light grounds and panels outside the photograph; answer Yes if any reads at or very near #F2EEE7.",
+   "evidence_reference": "Brand identity, palette: Cascadia Slate and Warm Paper are mandatory colours.",
+   "reference_assets": [],
+   "why": "Split from the mandatory-colours check (rule B04 held two facts); exact hex needs an eyedropper."
+  },
+  {
+   "key": "r003-title-opsz",
+   "output_id": "speaker-card-r003",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "If a summit title appears on “Summit speaker card - Peter Vance” (speaker-card-r003.png), its letters have Piazzolla's small-text shapes (wider, sturdier, low thick-thin contrast), not the default display shapes.",
+   "evidence_reference": "Brand identity, signature_type_move: every summit title and announcement headline is Piazzolla Medium with the optical size axis pinned to 8.",
+   "reference_assets": [
+    "fonts/Piazzolla[opsz,wght].ttf"
+   ],
+   "why": "Split from the summit-title family check so each fact is judged on its own."
+  },
+  {
+   "key": "r003-edge",
+   "output_id": "speaker-card-r003",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "The sitter's outline against the ground on “Summit speaker card - Peter Vance” (speaker-card-r003.png) shows no halo, fringe, jagged cut-out edge or other visible retouching trace.",
+   "evidence_reference": "summit_brand_notes.txt: \"Natural skin, no glamour retouching, no visible retouching signature.\"",
+   "reference_assets": [
+    "summit_brand_notes.txt"
+   ],
+   "why": "Coverage hole: \"no visible retouching signature\" had no check; the house-ground swap makes the cut-out edge the likely signature."
+  },
+  {
+   "key": "r003-recolour",
+   "output_id": "speaker-card-r003",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "Compared with speaker_portrait_02.jpg, no skin, hair or clothing colour on “Summit speaker card - Peter Vance” (speaker-card-r003.png) is shifted toward Signal Copper #B06B3E or Evergreen #2C4A3B.",
+   "evidence_reference": "Brand identity, palette_rules.photography: portraits keep their subjects' own colouring and are never recoloured toward the palette.",
+   "reference_assets": [
+    "speaker_portrait_02.jpg"
+   ],
+   "why": "Coverage hole: \"never recoloured toward the palette\" had no check; worded as no shift toward the accents so cast correction still passes."
+  },
+  {
+   "key": "r003-no-warm-filter",
+   "output_id": "speaker-card-r003",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "No warm or golden filter is laid over the portrait on “Summit speaker card - Peter Vance” (speaker-card-r003.png).",
+   "evidence_reference": "Brand identity, palette_rules.photography: mixed-light casts are brought to natural skin, with no glossy warm filter.",
+   "reference_assets": [],
+   "why": "Split from the skin-colour check (rule B13 held two facts)."
+  },
+  {
+   "key": "r003-mark-slate",
+   "output_id": "speaker-card-r003",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "The CFS mark on “Summit speaker card - Peter Vance” (speaker-card-r003.png) sits on a Cascadia Slate #23303A ground.",
+   "method": "measure",
+   "how": "Eyedropper the ground right beside the CFS mark; answer No if it clearly differs from #23303A.",
+   "evidence_reference": "Brand identity, palette_rules.distribution: the CFS mark is Fog Grey on Cascadia Slate.",
+   "reference_assets": [],
+   "why": "Split from the mark-colour check (rule B08 held two facts); exact hex needs an eyedropper."
+  },
+  {
+   "key": "r003-has-paper",
+   "output_id": "speaker-card-r003",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "Warm Paper #F2EEE7 appears outside the photograph on “Summit speaker card - Peter Vance” (speaker-card-r003.png).",
+   "method": "measure",
+   "how": "Eyedropper the light grounds and panels outside the photograph; answer Yes if any reads at or very near #F2EEE7.",
+   "evidence_reference": "Brand identity, palette: Cascadia Slate and Warm Paper are mandatory colours.",
+   "reference_assets": [],
+   "why": "Split from the mandatory-colours check (rule B04 held two facts); exact hex needs an eyedropper."
+  },
+  {
+   "key": "r005-title-opsz",
+   "output_id": "speaker-card-r005",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "If a summit title appears on “Summit speaker card - Ines Moreau” (speaker-card-r005.png), its letters have Piazzolla's small-text shapes (wider, sturdier, low thick-thin contrast), not the default display shapes.",
+   "evidence_reference": "Brand identity, signature_type_move: every summit title and announcement headline is Piazzolla Medium with the optical size axis pinned to 8.",
+   "reference_assets": [
+    "fonts/Piazzolla[opsz,wght].ttf"
+   ],
+   "why": "Split from the summit-title family check so each fact is judged on its own."
+  },
+  {
+   "key": "r005-edge",
+   "output_id": "speaker-card-r005",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "The sitter's outline against the ground on “Summit speaker card - Ines Moreau” (speaker-card-r005.png) shows no halo, fringe, jagged cut-out edge or other visible retouching trace.",
+   "evidence_reference": "summit_brand_notes.txt: \"Natural skin, no glamour retouching, no visible retouching signature.\"",
+   "reference_assets": [
+    "summit_brand_notes.txt"
+   ],
+   "why": "Coverage hole: \"no visible retouching signature\" had no check; the house-ground swap makes the cut-out edge the likely signature."
+  },
+  {
+   "key": "r005-recolour",
+   "output_id": "speaker-card-r005",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "Compared with speaker_portrait_03.jpg, no skin, hair or clothing colour on “Summit speaker card - Ines Moreau” (speaker-card-r005.png) is shifted toward Signal Copper #B06B3E or Evergreen #2C4A3B.",
+   "evidence_reference": "Brand identity, palette_rules.photography: portraits keep their subjects' own colouring and are never recoloured toward the palette.",
+   "reference_assets": [
+    "speaker_portrait_03.jpg"
+   ],
+   "why": "Coverage hole: \"never recoloured toward the palette\" had no check; worded as no shift toward the accents so cast correction still passes."
+  },
+  {
+   "key": "r005-no-warm-filter",
+   "output_id": "speaker-card-r005",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "No warm or golden filter is laid over the portrait on “Summit speaker card - Ines Moreau” (speaker-card-r005.png).",
+   "evidence_reference": "Brand identity, palette_rules.photography: mixed-light casts are brought to natural skin, with no glossy warm filter.",
+   "reference_assets": [],
+   "why": "Split from the skin-colour check (rule B13 held two facts)."
+  },
+  {
+   "key": "r005-mark-slate",
+   "output_id": "speaker-card-r005",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "The CFS mark on “Summit speaker card - Ines Moreau” (speaker-card-r005.png) sits on a Cascadia Slate #23303A ground.",
+   "method": "measure",
+   "how": "Eyedropper the ground right beside the CFS mark; answer No if it clearly differs from #23303A.",
+   "evidence_reference": "Brand identity, palette_rules.distribution: the CFS mark is Fog Grey on Cascadia Slate.",
+   "reference_assets": [],
+   "why": "Split from the mark-colour check (rule B08 held two facts); exact hex needs an eyedropper."
+  },
+  {
+   "key": "r005-has-paper",
+   "output_id": "speaker-card-r005",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "Warm Paper #F2EEE7 appears outside the photograph on “Summit speaker card - Ines Moreau” (speaker-card-r005.png).",
+   "method": "measure",
+   "how": "Eyedropper the light grounds and panels outside the photograph; answer Yes if any reads at or very near #F2EEE7.",
+   "evidence_reference": "Brand identity, palette: Cascadia Slate and Warm Paper are mandatory colours.",
+   "reference_assets": [],
+   "why": "Split from the mandatory-colours check (rule B04 held two facts); exact hex needs an eyedropper."
+  },
+  {
+   "key": "r006-title-opsz",
+   "output_id": "speaker-card-r006",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "If a summit title appears on “Summit speaker card - Anders Lindqvist” (speaker-card-r006.png), its letters have Piazzolla's small-text shapes (wider, sturdier, low thick-thin contrast), not the default display shapes.",
+   "evidence_reference": "Brand identity, signature_type_move: every summit title and announcement headline is Piazzolla Medium with the optical size axis pinned to 8.",
+   "reference_assets": [
+    "fonts/Piazzolla[opsz,wght].ttf"
+   ],
+   "why": "Split from the summit-title family check so each fact is judged on its own."
+  },
+  {
+   "key": "r006-edge",
+   "output_id": "speaker-card-r006",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "The sitter's outline against the ground on “Summit speaker card - Anders Lindqvist” (speaker-card-r006.png) shows no halo, fringe, jagged cut-out edge or other visible retouching trace.",
+   "evidence_reference": "summit_brand_notes.txt: \"Natural skin, no glamour retouching, no visible retouching signature.\"",
+   "reference_assets": [
+    "summit_brand_notes.txt"
+   ],
+   "why": "Coverage hole: \"no visible retouching signature\" had no check; the house-ground swap makes the cut-out edge the likely signature."
+  },
+  {
+   "key": "r006-recolour",
+   "output_id": "speaker-card-r006",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "Compared with speaker_portrait_04.jpg, no skin, hair or clothing colour on “Summit speaker card - Anders Lindqvist” (speaker-card-r006.png) is shifted toward Signal Copper #B06B3E or Evergreen #2C4A3B.",
+   "evidence_reference": "Brand identity, palette_rules.photography: portraits keep their subjects' own colouring and are never recoloured toward the palette.",
+   "reference_assets": [
+    "speaker_portrait_04.jpg"
+   ],
+   "why": "Coverage hole: \"never recoloured toward the palette\" had no check; worded as no shift toward the accents so cast correction still passes."
+  },
+  {
+   "key": "r006-no-warm-filter",
+   "output_id": "speaker-card-r006",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "No warm or golden filter is laid over the portrait on “Summit speaker card - Anders Lindqvist” (speaker-card-r006.png).",
+   "evidence_reference": "Brand identity, palette_rules.photography: mixed-light casts are brought to natural skin, with no glossy warm filter.",
+   "reference_assets": [],
+   "why": "Split from the skin-colour check (rule B13 held two facts)."
+  },
+  {
+   "key": "r006-mark-slate",
+   "output_id": "speaker-card-r006",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "The CFS mark on “Summit speaker card - Anders Lindqvist” (speaker-card-r006.png) sits on a Cascadia Slate #23303A ground.",
+   "method": "measure",
+   "how": "Eyedropper the ground right beside the CFS mark; answer No if it clearly differs from #23303A.",
+   "evidence_reference": "Brand identity, palette_rules.distribution: the CFS mark is Fog Grey on Cascadia Slate.",
+   "reference_assets": [],
+   "why": "Split from the mark-colour check (rule B08 held two facts); exact hex needs an eyedropper."
+  },
+  {
+   "key": "r006-has-paper",
+   "output_id": "speaker-card-r006",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "Warm Paper #F2EEE7 appears outside the photograph on “Summit speaker card - Anders Lindqvist” (speaker-card-r006.png).",
+   "method": "measure",
+   "how": "Eyedropper the light grounds and panels outside the photograph; answer Yes if any reads at or very near #F2EEE7.",
+   "evidence_reference": "Brand identity, palette: Cascadia Slate and Warm Paper are mandatory colours.",
+   "reference_assets": [],
+   "why": "Split from the mandatory-colours check (rule B04 held two facts); exact hex needs an eyedropper."
+  },
+  {
+   "key": "r007-title-opsz",
+   "output_id": "speaker-card-r007",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "If a summit title appears on “Summit speaker card - Colm Byrne” (speaker-card-r007.png), its letters have Piazzolla's small-text shapes (wider, sturdier, low thick-thin contrast), not the default display shapes.",
+   "evidence_reference": "Brand identity, signature_type_move: every summit title and announcement headline is Piazzolla Medium with the optical size axis pinned to 8.",
+   "reference_assets": [
+    "fonts/Piazzolla[opsz,wght].ttf"
+   ],
+   "why": "Split from the summit-title family check so each fact is judged on its own."
+  },
+  {
+   "key": "r007-edge",
+   "output_id": "speaker-card-r007",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "The sitter's outline against the ground on “Summit speaker card - Colm Byrne” (speaker-card-r007.png) shows no halo, fringe, jagged cut-out edge or other visible retouching trace.",
+   "evidence_reference": "summit_brand_notes.txt: \"Natural skin, no glamour retouching, no visible retouching signature.\"",
+   "reference_assets": [
+    "summit_brand_notes.txt"
+   ],
+   "why": "Coverage hole: \"no visible retouching signature\" had no check; the house-ground swap makes the cut-out edge the likely signature."
+  },
+  {
+   "key": "r007-recolour",
+   "output_id": "speaker-card-r007",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "Compared with speaker_portrait_05.jpg, no skin, hair or clothing colour on “Summit speaker card - Colm Byrne” (speaker-card-r007.png) is shifted toward Signal Copper #B06B3E or Evergreen #2C4A3B.",
+   "evidence_reference": "Brand identity, palette_rules.photography: portraits keep their subjects' own colouring and are never recoloured toward the palette.",
+   "reference_assets": [
+    "speaker_portrait_05.jpg"
+   ],
+   "why": "Coverage hole: \"never recoloured toward the palette\" had no check; worded as no shift toward the accents so cast correction still passes."
+  },
+  {
+   "key": "r007-no-warm-filter",
+   "output_id": "speaker-card-r007",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "No warm or golden filter is laid over the portrait on “Summit speaker card - Colm Byrne” (speaker-card-r007.png).",
+   "evidence_reference": "Brand identity, palette_rules.photography: mixed-light casts are brought to natural skin, with no glossy warm filter.",
+   "reference_assets": [],
+   "why": "Split from the skin-colour check (rule B13 held two facts)."
+  },
+  {
+   "key": "r007-mark-slate",
+   "output_id": "speaker-card-r007",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "The CFS mark on “Summit speaker card - Colm Byrne” (speaker-card-r007.png) sits on a Cascadia Slate #23303A ground.",
+   "method": "measure",
+   "how": "Eyedropper the ground right beside the CFS mark; answer No if it clearly differs from #23303A.",
+   "evidence_reference": "Brand identity, palette_rules.distribution: the CFS mark is Fog Grey on Cascadia Slate.",
+   "reference_assets": [],
+   "why": "Split from the mark-colour check (rule B08 held two facts); exact hex needs an eyedropper."
+  },
+  {
+   "key": "r007-has-paper",
+   "output_id": "speaker-card-r007",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "Warm Paper #F2EEE7 appears outside the photograph on “Summit speaker card - Colm Byrne” (speaker-card-r007.png).",
+   "method": "measure",
+   "how": "Eyedropper the light grounds and panels outside the photograph; answer Yes if any reads at or very near #F2EEE7.",
+   "evidence_reference": "Brand identity, palette: Cascadia Slate and Warm Paper are mandatory colours.",
+   "reference_assets": [],
+   "why": "Split from the mandatory-colours check (rule B04 held two facts); exact hex needs an eyedropper."
+  },
+  {
+   "key": "r008-title-opsz",
+   "output_id": "speaker-card-r008",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "If a summit title appears on “Summit speaker card - Dana Whitfield” (speaker-card-r008.png), its letters have Piazzolla's small-text shapes (wider, sturdier, low thick-thin contrast), not the default display shapes.",
+   "evidence_reference": "Brand identity, signature_type_move: every summit title and announcement headline is Piazzolla Medium with the optical size axis pinned to 8.",
+   "reference_assets": [
+    "fonts/Piazzolla[opsz,wght].ttf"
+   ],
+   "why": "Split from the summit-title family check so each fact is judged on its own."
+  },
+  {
+   "key": "r008-edge",
+   "output_id": "speaker-card-r008",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "The sitter's outline against the ground on “Summit speaker card - Dana Whitfield” (speaker-card-r008.png) shows no halo, fringe, jagged cut-out edge or other visible retouching trace.",
+   "evidence_reference": "summit_brand_notes.txt: \"Natural skin, no glamour retouching, no visible retouching signature.\"",
+   "reference_assets": [
+    "summit_brand_notes.txt"
+   ],
+   "why": "Coverage hole: \"no visible retouching signature\" had no check; the house-ground swap makes the cut-out edge the likely signature."
+  },
+  {
+   "key": "r008-recolour",
+   "output_id": "speaker-card-r008",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "Compared with speaker_portrait_06.jpg, no skin, hair or clothing colour on “Summit speaker card - Dana Whitfield” (speaker-card-r008.png) is shifted toward Signal Copper #B06B3E or Evergreen #2C4A3B.",
+   "evidence_reference": "Brand identity, palette_rules.photography: portraits keep their subjects' own colouring and are never recoloured toward the palette.",
+   "reference_assets": [
+    "speaker_portrait_06.jpg"
+   ],
+   "why": "Coverage hole: \"never recoloured toward the palette\" had no check; worded as no shift toward the accents so cast correction still passes."
+  },
+  {
+   "key": "r008-no-warm-filter",
+   "output_id": "speaker-card-r008",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "No warm or golden filter is laid over the portrait on “Summit speaker card - Dana Whitfield” (speaker-card-r008.png).",
+   "evidence_reference": "Brand identity, palette_rules.photography: mixed-light casts are brought to natural skin, with no glossy warm filter.",
+   "reference_assets": [],
+   "why": "Split from the skin-colour check (rule B13 held two facts)."
+  },
+  {
+   "key": "r008-mark-slate",
+   "output_id": "speaker-card-r008",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "The CFS mark on “Summit speaker card - Dana Whitfield” (speaker-card-r008.png) sits on a Cascadia Slate #23303A ground.",
+   "method": "measure",
+   "how": "Eyedropper the ground right beside the CFS mark; answer No if it clearly differs from #23303A.",
+   "evidence_reference": "Brand identity, palette_rules.distribution: the CFS mark is Fog Grey on Cascadia Slate.",
+   "reference_assets": [],
+   "why": "Split from the mark-colour check (rule B08 held two facts); exact hex needs an eyedropper."
+  },
+  {
+   "key": "r008-has-paper",
+   "output_id": "speaker-card-r008",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "Warm Paper #F2EEE7 appears outside the photograph on “Summit speaker card - Dana Whitfield” (speaker-card-r008.png).",
+   "method": "measure",
+   "how": "Eyedropper the light grounds and panels outside the photograph; answer Yes if any reads at or very near #F2EEE7.",
+   "evidence_reference": "Brand identity, palette: Cascadia Slate and Warm Paper are mandatory colours.",
+   "reference_assets": [],
+   "why": "Split from the mandatory-colours check (rule B04 held two facts); exact hex needs an eyedropper."
+  },
+  {
+   "key": "r009-title-opsz",
+   "output_id": "speaker-card-r009",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "If a summit title appears on “Summit speaker card - Estelle Rioux” (speaker-card-r009.png), its letters have Piazzolla's small-text shapes (wider, sturdier, low thick-thin contrast), not the default display shapes.",
+   "evidence_reference": "Brand identity, signature_type_move: every summit title and announcement headline is Piazzolla Medium with the optical size axis pinned to 8.",
+   "reference_assets": [
+    "fonts/Piazzolla[opsz,wght].ttf"
+   ],
+   "why": "Split from the summit-title family check so each fact is judged on its own."
+  },
+  {
+   "key": "r009-edge",
+   "output_id": "speaker-card-r009",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "The sitter's outline against the ground on “Summit speaker card - Estelle Rioux” (speaker-card-r009.png) shows no halo, fringe, jagged cut-out edge or other visible retouching trace.",
+   "evidence_reference": "summit_brand_notes.txt: \"Natural skin, no glamour retouching, no visible retouching signature.\"",
+   "reference_assets": [
+    "summit_brand_notes.txt"
+   ],
+   "why": "Coverage hole: \"no visible retouching signature\" had no check; the house-ground swap makes the cut-out edge the likely signature."
+  },
+  {
+   "key": "r009-recolour",
+   "output_id": "speaker-card-r009",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "Compared with speaker_portrait_07.jpg, no skin, hair or clothing colour on “Summit speaker card - Estelle Rioux” (speaker-card-r009.png) is shifted toward Signal Copper #B06B3E or Evergreen #2C4A3B.",
+   "evidence_reference": "Brand identity, palette_rules.photography: portraits keep their subjects' own colouring and are never recoloured toward the palette.",
+   "reference_assets": [
+    "speaker_portrait_07.jpg"
+   ],
+   "why": "Coverage hole: \"never recoloured toward the palette\" had no check; worded as no shift toward the accents so cast correction still passes."
+  },
+  {
+   "key": "r009-no-warm-filter",
+   "output_id": "speaker-card-r009",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "No warm or golden filter is laid over the portrait on “Summit speaker card - Estelle Rioux” (speaker-card-r009.png).",
+   "evidence_reference": "Brand identity, palette_rules.photography: mixed-light casts are brought to natural skin, with no glossy warm filter.",
+   "reference_assets": [],
+   "why": "Split from the skin-colour check (rule B13 held two facts)."
+  },
+  {
+   "key": "r009-mark-slate",
+   "output_id": "speaker-card-r009",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "The CFS mark on “Summit speaker card - Estelle Rioux” (speaker-card-r009.png) sits on a Cascadia Slate #23303A ground.",
+   "method": "measure",
+   "how": "Eyedropper the ground right beside the CFS mark; answer No if it clearly differs from #23303A.",
+   "evidence_reference": "Brand identity, palette_rules.distribution: the CFS mark is Fog Grey on Cascadia Slate.",
+   "reference_assets": [],
+   "why": "Split from the mark-colour check (rule B08 held two facts); exact hex needs an eyedropper."
+  },
+  {
+   "key": "r009-has-paper",
+   "output_id": "speaker-card-r009",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "Warm Paper #F2EEE7 appears outside the photograph on “Summit speaker card - Estelle Rioux” (speaker-card-r009.png).",
+   "method": "measure",
+   "how": "Eyedropper the light grounds and panels outside the photograph; answer Yes if any reads at or very near #F2EEE7.",
+   "evidence_reference": "Brand identity, palette: Cascadia Slate and Warm Paper are mandatory colours.",
+   "reference_assets": [],
+   "why": "Split from the mandatory-colours check (rule B04 held two facts); exact hex needs an eyedropper."
+  },
+  {
+   "key": "r010-title-opsz",
+   "output_id": "speaker-card-r010",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "If a summit title appears on “Summit speaker card - Grant Mackey” (speaker-card-r010.png), its letters have Piazzolla's small-text shapes (wider, sturdier, low thick-thin contrast), not the default display shapes.",
+   "evidence_reference": "Brand identity, signature_type_move: every summit title and announcement headline is Piazzolla Medium with the optical size axis pinned to 8.",
+   "reference_assets": [
+    "fonts/Piazzolla[opsz,wght].ttf"
+   ],
+   "why": "Split from the summit-title family check so each fact is judged on its own."
+  },
+  {
+   "key": "r010-edge",
+   "output_id": "speaker-card-r010",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "The sitter's outline against the ground on “Summit speaker card - Grant Mackey” (speaker-card-r010.png) shows no halo, fringe, jagged cut-out edge or other visible retouching trace.",
+   "evidence_reference": "summit_brand_notes.txt: \"Natural skin, no glamour retouching, no visible retouching signature.\"",
+   "reference_assets": [
+    "summit_brand_notes.txt"
+   ],
+   "why": "Coverage hole: \"no visible retouching signature\" had no check; the house-ground swap makes the cut-out edge the likely signature."
+  },
+  {
+   "key": "r010-recolour",
+   "output_id": "speaker-card-r010",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "Compared with speaker_portrait_08.jpg, no skin, hair or clothing colour on “Summit speaker card - Grant Mackey” (speaker-card-r010.png) is shifted toward Signal Copper #B06B3E or Evergreen #2C4A3B.",
+   "evidence_reference": "Brand identity, palette_rules.photography: portraits keep their subjects' own colouring and are never recoloured toward the palette.",
+   "reference_assets": [
+    "speaker_portrait_08.jpg"
+   ],
+   "why": "Coverage hole: \"never recoloured toward the palette\" had no check; worded as no shift toward the accents so cast correction still passes."
+  },
+  {
+   "key": "r010-no-warm-filter",
+   "output_id": "speaker-card-r010",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "No warm or golden filter is laid over the portrait on “Summit speaker card - Grant Mackey” (speaker-card-r010.png).",
+   "evidence_reference": "Brand identity, palette_rules.photography: mixed-light casts are brought to natural skin, with no glossy warm filter.",
+   "reference_assets": [],
+   "why": "Split from the skin-colour check (rule B13 held two facts)."
+  },
+  {
+   "key": "r010-mark-slate",
+   "output_id": "speaker-card-r010",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "The CFS mark on “Summit speaker card - Grant Mackey” (speaker-card-r010.png) sits on a Cascadia Slate #23303A ground.",
+   "method": "measure",
+   "how": "Eyedropper the ground right beside the CFS mark; answer No if it clearly differs from #23303A.",
+   "evidence_reference": "Brand identity, palette_rules.distribution: the CFS mark is Fog Grey on Cascadia Slate.",
+   "reference_assets": [],
+   "why": "Split from the mark-colour check (rule B08 held two facts); exact hex needs an eyedropper."
+  },
+  {
+   "key": "r010-has-paper",
+   "output_id": "speaker-card-r010",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "Warm Paper #F2EEE7 appears outside the photograph on “Summit speaker card - Grant Mackey” (speaker-card-r010.png).",
+   "method": "measure",
+   "how": "Eyedropper the light grounds and panels outside the photograph; answer Yes if any reads at or very near #F2EEE7.",
+   "evidence_reference": "Brand identity, palette: Cascadia Slate and Warm Paper are mandatory colours.",
+   "reference_assets": [],
+   "why": "Split from the mandatory-colours check (rule B04 held two facts); exact hex needs an eyedropper."
+  },
+  {
+   "key": "r011-title-opsz",
+   "output_id": "speaker-card-r011",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "If a summit title appears on “Summit speaker card - Sofia Bellini” (speaker-card-r011.png), its letters have Piazzolla's small-text shapes (wider, sturdier, low thick-thin contrast), not the default display shapes.",
+   "evidence_reference": "Brand identity, signature_type_move: every summit title and announcement headline is Piazzolla Medium with the optical size axis pinned to 8.",
+   "reference_assets": [
+    "fonts/Piazzolla[opsz,wght].ttf"
+   ],
+   "why": "Split from the summit-title family check so each fact is judged on its own."
+  },
+  {
+   "key": "r011-edge",
+   "output_id": "speaker-card-r011",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "The sitter's outline against the ground on “Summit speaker card - Sofia Bellini” (speaker-card-r011.png) shows no halo, fringe, jagged cut-out edge or other visible retouching trace.",
+   "evidence_reference": "summit_brand_notes.txt: \"Natural skin, no glamour retouching, no visible retouching signature.\"",
+   "reference_assets": [
+    "summit_brand_notes.txt"
+   ],
+   "why": "Coverage hole: \"no visible retouching signature\" had no check; the house-ground swap makes the cut-out edge the likely signature."
+  },
+  {
+   "key": "r011-recolour",
+   "output_id": "speaker-card-r011",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "Compared with speaker_portrait_09.jpg, no skin, hair or clothing colour on “Summit speaker card - Sofia Bellini” (speaker-card-r011.png) is shifted toward Signal Copper #B06B3E or Evergreen #2C4A3B.",
+   "evidence_reference": "Brand identity, palette_rules.photography: portraits keep their subjects' own colouring and are never recoloured toward the palette.",
+   "reference_assets": [
+    "speaker_portrait_09.jpg"
+   ],
+   "why": "Coverage hole: \"never recoloured toward the palette\" had no check; worded as no shift toward the accents so cast correction still passes."
+  },
+  {
+   "key": "r011-no-warm-filter",
+   "output_id": "speaker-card-r011",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "No warm or golden filter is laid over the portrait on “Summit speaker card - Sofia Bellini” (speaker-card-r011.png).",
+   "evidence_reference": "Brand identity, palette_rules.photography: mixed-light casts are brought to natural skin, with no glossy warm filter.",
+   "reference_assets": [],
+   "why": "Split from the skin-colour check (rule B13 held two facts)."
+  },
+  {
+   "key": "r011-mark-slate",
+   "output_id": "speaker-card-r011",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "The CFS mark on “Summit speaker card - Sofia Bellini” (speaker-card-r011.png) sits on a Cascadia Slate #23303A ground.",
+   "method": "measure",
+   "how": "Eyedropper the ground right beside the CFS mark; answer No if it clearly differs from #23303A.",
+   "evidence_reference": "Brand identity, palette_rules.distribution: the CFS mark is Fog Grey on Cascadia Slate.",
+   "reference_assets": [],
+   "why": "Split from the mark-colour check (rule B08 held two facts); exact hex needs an eyedropper."
+  },
+  {
+   "key": "r011-has-paper",
+   "output_id": "speaker-card-r011",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "Warm Paper #F2EEE7 appears outside the photograph on “Summit speaker card - Sofia Bellini” (speaker-card-r011.png).",
+   "method": "measure",
+   "how": "Eyedropper the light grounds and panels outside the photograph; answer Yes if any reads at or very near #F2EEE7.",
+   "evidence_reference": "Brand identity, palette: Cascadia Slate and Warm Paper are mandatory colours.",
+   "reference_assets": [],
+   "why": "Split from the mandatory-colours check (rule B04 held two facts); exact hex needs an eyedropper."
+  },
+  {
+   "key": "r013-title-opsz",
+   "output_id": "speaker-card-r013",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "If a summit title appears on “Summit speaker card - Nils Haugen” (speaker-card-r013.png), its letters have Piazzolla's small-text shapes (wider, sturdier, low thick-thin contrast), not the default display shapes.",
+   "evidence_reference": "Brand identity, signature_type_move: every summit title and announcement headline is Piazzolla Medium with the optical size axis pinned to 8.",
+   "reference_assets": [
+    "fonts/Piazzolla[opsz,wght].ttf"
+   ],
+   "why": "Split from the summit-title family check so each fact is judged on its own."
+  },
+  {
+   "key": "r013-edge",
+   "output_id": "speaker-card-r013",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "The sitter's outline against the ground on “Summit speaker card - Nils Haugen” (speaker-card-r013.png) shows no halo, fringe, jagged cut-out edge or other visible retouching trace.",
+   "evidence_reference": "summit_brand_notes.txt: \"Natural skin, no glamour retouching, no visible retouching signature.\"",
+   "reference_assets": [
+    "summit_brand_notes.txt"
+   ],
+   "why": "Coverage hole: \"no visible retouching signature\" had no check; the house-ground swap makes the cut-out edge the likely signature."
+  },
+  {
+   "key": "r013-recolour",
+   "output_id": "speaker-card-r013",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "Compared with speaker_portrait_10.jpg, no skin, hair or clothing colour on “Summit speaker card - Nils Haugen” (speaker-card-r013.png) is shifted toward Signal Copper #B06B3E or Evergreen #2C4A3B.",
+   "evidence_reference": "Brand identity, palette_rules.photography: portraits keep their subjects' own colouring and are never recoloured toward the palette.",
+   "reference_assets": [
+    "speaker_portrait_10.jpg"
+   ],
+   "why": "Coverage hole: \"never recoloured toward the palette\" had no check; worded as no shift toward the accents so cast correction still passes."
+  },
+  {
+   "key": "r013-no-warm-filter",
+   "output_id": "speaker-card-r013",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "No warm or golden filter is laid over the portrait on “Summit speaker card - Nils Haugen” (speaker-card-r013.png).",
+   "evidence_reference": "Brand identity, palette_rules.photography: mixed-light casts are brought to natural skin, with no glossy warm filter.",
+   "reference_assets": [],
+   "why": "Split from the skin-colour check (rule B13 held two facts)."
+  },
+  {
+   "key": "r013-mark-slate",
+   "output_id": "speaker-card-r013",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "The CFS mark on “Summit speaker card - Nils Haugen” (speaker-card-r013.png) sits on a Cascadia Slate #23303A ground.",
+   "method": "measure",
+   "how": "Eyedropper the ground right beside the CFS mark; answer No if it clearly differs from #23303A.",
+   "evidence_reference": "Brand identity, palette_rules.distribution: the CFS mark is Fog Grey on Cascadia Slate.",
+   "reference_assets": [],
+   "why": "Split from the mark-colour check (rule B08 held two facts); exact hex needs an eyedropper."
+  },
+  {
+   "key": "r013-has-paper",
+   "output_id": "speaker-card-r013",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "Warm Paper #F2EEE7 appears outside the photograph on “Summit speaker card - Nils Haugen” (speaker-card-r013.png).",
+   "method": "measure",
+   "how": "Eyedropper the light grounds and panels outside the photograph; answer Yes if any reads at or very near #F2EEE7.",
+   "evidence_reference": "Brand identity, palette: Cascadia Slate and Warm Paper are mandatory colours.",
+   "reference_assets": [],
+   "why": "Split from the mandatory-colours check (rule B04 held two facts); exact hex needs an eyedropper."
+  },
+  {
+   "key": "r014-title-opsz",
+   "output_id": "speaker-card-r014",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "If a summit title appears on “Summit speaker card - Robin Tate” (speaker-card-r014.png), its letters have Piazzolla's small-text shapes (wider, sturdier, low thick-thin contrast), not the default display shapes.",
+   "evidence_reference": "Brand identity, signature_type_move: every summit title and announcement headline is Piazzolla Medium with the optical size axis pinned to 8.",
+   "reference_assets": [
+    "fonts/Piazzolla[opsz,wght].ttf"
+   ],
+   "why": "Split from the summit-title family check so each fact is judged on its own."
+  },
+  {
+   "key": "r014-edge",
+   "output_id": "speaker-card-r014",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "The sitter's outline against the ground on “Summit speaker card - Robin Tate” (speaker-card-r014.png) shows no halo, fringe, jagged cut-out edge or other visible retouching trace.",
+   "evidence_reference": "summit_brand_notes.txt: \"Natural skin, no glamour retouching, no visible retouching signature.\"",
+   "reference_assets": [
+    "summit_brand_notes.txt"
+   ],
+   "why": "Coverage hole: \"no visible retouching signature\" had no check; the house-ground swap makes the cut-out edge the likely signature."
+  },
+  {
+   "key": "r014-recolour",
+   "output_id": "speaker-card-r014",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "Compared with speaker_portrait_11.jpg, no skin, hair or clothing colour on “Summit speaker card - Robin Tate” (speaker-card-r014.png) is shifted toward Signal Copper #B06B3E or Evergreen #2C4A3B.",
+   "evidence_reference": "Brand identity, palette_rules.photography: portraits keep their subjects' own colouring and are never recoloured toward the palette.",
+   "reference_assets": [
+    "speaker_portrait_11.jpg"
+   ],
+   "why": "Coverage hole: \"never recoloured toward the palette\" had no check; worded as no shift toward the accents so cast correction still passes."
+  },
+  {
+   "key": "r014-no-warm-filter",
+   "output_id": "speaker-card-r014",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "No warm or golden filter is laid over the portrait on “Summit speaker card - Robin Tate” (speaker-card-r014.png).",
+   "evidence_reference": "Brand identity, palette_rules.photography: mixed-light casts are brought to natural skin, with no glossy warm filter.",
+   "reference_assets": [],
+   "why": "Split from the skin-colour check (rule B13 held two facts)."
+  },
+  {
+   "key": "r014-mark-slate",
+   "output_id": "speaker-card-r014",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "The CFS mark on “Summit speaker card - Robin Tate” (speaker-card-r014.png) sits on a Cascadia Slate #23303A ground.",
+   "method": "measure",
+   "how": "Eyedropper the ground right beside the CFS mark; answer No if it clearly differs from #23303A.",
+   "evidence_reference": "Brand identity, palette_rules.distribution: the CFS mark is Fog Grey on Cascadia Slate.",
+   "reference_assets": [],
+   "why": "Split from the mark-colour check (rule B08 held two facts); exact hex needs an eyedropper."
+  },
+  {
+   "key": "r014-has-paper",
+   "output_id": "speaker-card-r014",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "Warm Paper #F2EEE7 appears outside the photograph on “Summit speaker card - Robin Tate” (speaker-card-r014.png).",
+   "method": "measure",
+   "how": "Eyedropper the light grounds and panels outside the photograph; answer Yes if any reads at or very near #F2EEE7.",
+   "evidence_reference": "Brand identity, palette: Cascadia Slate and Warm Paper are mandatory colours.",
+   "reference_assets": [],
+   "why": "Split from the mandatory-colours check (rule B04 held two facts); exact hex needs an eyedropper."
+  },
+  {
+   "key": "r015-title-opsz",
+   "output_id": "speaker-card-r015",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "If a summit title appears on “Summit speaker card - Bernadette Cruz” (speaker-card-r015.png), its letters have Piazzolla's small-text shapes (wider, sturdier, low thick-thin contrast), not the default display shapes.",
+   "evidence_reference": "Brand identity, signature_type_move: every summit title and announcement headline is Piazzolla Medium with the optical size axis pinned to 8.",
+   "reference_assets": [
+    "fonts/Piazzolla[opsz,wght].ttf"
+   ],
+   "why": "Split from the summit-title family check so each fact is judged on its own."
+  },
+  {
+   "key": "r015-edge",
+   "output_id": "speaker-card-r015",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "The sitter's outline against the ground on “Summit speaker card - Bernadette Cruz” (speaker-card-r015.png) shows no halo, fringe, jagged cut-out edge or other visible retouching trace.",
+   "evidence_reference": "summit_brand_notes.txt: \"Natural skin, no glamour retouching, no visible retouching signature.\"",
+   "reference_assets": [
+    "summit_brand_notes.txt"
+   ],
+   "why": "Coverage hole: \"no visible retouching signature\" had no check; the house-ground swap makes the cut-out edge the likely signature."
+  },
+  {
+   "key": "r015-recolour",
+   "output_id": "speaker-card-r015",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "Compared with speaker_portrait_12.jpg, no skin, hair or clothing colour on “Summit speaker card - Bernadette Cruz” (speaker-card-r015.png) is shifted toward Signal Copper #B06B3E or Evergreen #2C4A3B.",
+   "evidence_reference": "Brand identity, palette_rules.photography: portraits keep their subjects' own colouring and are never recoloured toward the palette.",
+   "reference_assets": [
+    "speaker_portrait_12.jpg"
+   ],
+   "why": "Coverage hole: \"never recoloured toward the palette\" had no check; worded as no shift toward the accents so cast correction still passes."
+  },
+  {
+   "key": "r015-no-warm-filter",
+   "output_id": "speaker-card-r015",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "No warm or golden filter is laid over the portrait on “Summit speaker card - Bernadette Cruz” (speaker-card-r015.png).",
+   "evidence_reference": "Brand identity, palette_rules.photography: mixed-light casts are brought to natural skin, with no glossy warm filter.",
+   "reference_assets": [],
+   "why": "Split from the skin-colour check (rule B13 held two facts)."
+  },
+  {
+   "key": "r015-mark-slate",
+   "output_id": "speaker-card-r015",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "The CFS mark on “Summit speaker card - Bernadette Cruz” (speaker-card-r015.png) sits on a Cascadia Slate #23303A ground.",
+   "method": "measure",
+   "how": "Eyedropper the ground right beside the CFS mark; answer No if it clearly differs from #23303A.",
+   "evidence_reference": "Brand identity, palette_rules.distribution: the CFS mark is Fog Grey on Cascadia Slate.",
+   "reference_assets": [],
+   "why": "Split from the mark-colour check (rule B08 held two facts); exact hex needs an eyedropper."
+  },
+  {
+   "key": "r015-has-paper",
+   "output_id": "speaker-card-r015",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "Warm Paper #F2EEE7 appears outside the photograph on “Summit speaker card - Bernadette Cruz” (speaker-card-r015.png).",
+   "method": "measure",
+   "how": "Eyedropper the light grounds and panels outside the photograph; answer Yes if any reads at or very near #F2EEE7.",
+   "evidence_reference": "Brand identity, palette: Cascadia Slate and Warm Paper are mandatory colours.",
+   "reference_assets": [],
+   "why": "Split from the mandatory-colours check (rule B04 held two facts); exact hex needs an eyedropper."
+  },
+  {
+   "key": "r016-title-opsz",
+   "output_id": "speaker-card-r016",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "If a summit title appears on “Summit speaker card - Hugo Almeida” (speaker-card-r016.png), its letters have Piazzolla's small-text shapes (wider, sturdier, low thick-thin contrast), not the default display shapes.",
+   "evidence_reference": "Brand identity, signature_type_move: every summit title and announcement headline is Piazzolla Medium with the optical size axis pinned to 8.",
+   "reference_assets": [
+    "fonts/Piazzolla[opsz,wght].ttf"
+   ],
+   "why": "Split from the summit-title family check so each fact is judged on its own."
+  },
+  {
+   "key": "r016-edge",
+   "output_id": "speaker-card-r016",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "The sitter's outline against the ground on “Summit speaker card - Hugo Almeida” (speaker-card-r016.png) shows no halo, fringe, jagged cut-out edge or other visible retouching trace.",
+   "evidence_reference": "summit_brand_notes.txt: \"Natural skin, no glamour retouching, no visible retouching signature.\"",
+   "reference_assets": [
+    "summit_brand_notes.txt"
+   ],
+   "why": "Coverage hole: \"no visible retouching signature\" had no check; the house-ground swap makes the cut-out edge the likely signature."
+  },
+  {
+   "key": "r016-recolour",
+   "output_id": "speaker-card-r016",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "Compared with speaker_portrait_13.jpg, no skin, hair or clothing colour on “Summit speaker card - Hugo Almeida” (speaker-card-r016.png) is shifted toward Signal Copper #B06B3E or Evergreen #2C4A3B.",
+   "evidence_reference": "Brand identity, palette_rules.photography: portraits keep their subjects' own colouring and are never recoloured toward the palette.",
+   "reference_assets": [
+    "speaker_portrait_13.jpg"
+   ],
+   "why": "Coverage hole: \"never recoloured toward the palette\" had no check; worded as no shift toward the accents so cast correction still passes."
+  },
+  {
+   "key": "r016-no-warm-filter",
+   "output_id": "speaker-card-r016",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "No warm or golden filter is laid over the portrait on “Summit speaker card - Hugo Almeida” (speaker-card-r016.png).",
+   "evidence_reference": "Brand identity, palette_rules.photography: mixed-light casts are brought to natural skin, with no glossy warm filter.",
+   "reference_assets": [],
+   "why": "Split from the skin-colour check (rule B13 held two facts)."
+  },
+  {
+   "key": "r016-mark-slate",
+   "output_id": "speaker-card-r016",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "The CFS mark on “Summit speaker card - Hugo Almeida” (speaker-card-r016.png) sits on a Cascadia Slate #23303A ground.",
+   "method": "measure",
+   "how": "Eyedropper the ground right beside the CFS mark; answer No if it clearly differs from #23303A.",
+   "evidence_reference": "Brand identity, palette_rules.distribution: the CFS mark is Fog Grey on Cascadia Slate.",
+   "reference_assets": [],
+   "why": "Split from the mark-colour check (rule B08 held two facts); exact hex needs an eyedropper."
+  },
+  {
+   "key": "r016-has-paper",
+   "output_id": "speaker-card-r016",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "Warm Paper #F2EEE7 appears outside the photograph on “Summit speaker card - Hugo Almeida” (speaker-card-r016.png).",
+   "method": "measure",
+   "how": "Eyedropper the light grounds and panels outside the photograph; answer Yes if any reads at or very near #F2EEE7.",
+   "evidence_reference": "Brand identity, palette: Cascadia Slate and Warm Paper are mandatory colours.",
+   "reference_assets": [],
+   "why": "Split from the mandatory-colours check (rule B04 held two facts); exact hex needs an eyedropper."
+  },
+  {
+   "key": "r017-title-opsz",
+   "output_id": "speaker-card-r017",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "If a summit title appears on “Summit speaker card - Karin Voss” (speaker-card-r017.png), its letters have Piazzolla's small-text shapes (wider, sturdier, low thick-thin contrast), not the default display shapes.",
+   "evidence_reference": "Brand identity, signature_type_move: every summit title and announcement headline is Piazzolla Medium with the optical size axis pinned to 8.",
+   "reference_assets": [
+    "fonts/Piazzolla[opsz,wght].ttf"
+   ],
+   "why": "Split from the summit-title family check so each fact is judged on its own."
+  },
+  {
+   "key": "r017-edge",
+   "output_id": "speaker-card-r017",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "The sitter's outline against the ground on “Summit speaker card - Karin Voss” (speaker-card-r017.png) shows no halo, fringe, jagged cut-out edge or other visible retouching trace.",
+   "evidence_reference": "summit_brand_notes.txt: \"Natural skin, no glamour retouching, no visible retouching signature.\"",
+   "reference_assets": [
+    "summit_brand_notes.txt"
+   ],
+   "why": "Coverage hole: \"no visible retouching signature\" had no check; the house-ground swap makes the cut-out edge the likely signature."
+  },
+  {
+   "key": "r017-recolour",
+   "output_id": "speaker-card-r017",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "Compared with speaker_portrait_14.jpg, no skin, hair or clothing colour on “Summit speaker card - Karin Voss” (speaker-card-r017.png) is shifted toward Signal Copper #B06B3E or Evergreen #2C4A3B.",
+   "evidence_reference": "Brand identity, palette_rules.photography: portraits keep their subjects' own colouring and are never recoloured toward the palette.",
+   "reference_assets": [
+    "speaker_portrait_14.jpg"
+   ],
+   "why": "Coverage hole: \"never recoloured toward the palette\" had no check; worded as no shift toward the accents so cast correction still passes."
+  },
+  {
+   "key": "r017-no-warm-filter",
+   "output_id": "speaker-card-r017",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "No warm or golden filter is laid over the portrait on “Summit speaker card - Karin Voss” (speaker-card-r017.png).",
+   "evidence_reference": "Brand identity, palette_rules.photography: mixed-light casts are brought to natural skin, with no glossy warm filter.",
+   "reference_assets": [],
+   "why": "Split from the skin-colour check (rule B13 held two facts)."
+  },
+  {
+   "key": "r017-mark-slate",
+   "output_id": "speaker-card-r017",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "The CFS mark on “Summit speaker card - Karin Voss” (speaker-card-r017.png) sits on a Cascadia Slate #23303A ground.",
+   "method": "measure",
+   "how": "Eyedropper the ground right beside the CFS mark; answer No if it clearly differs from #23303A.",
+   "evidence_reference": "Brand identity, palette_rules.distribution: the CFS mark is Fog Grey on Cascadia Slate.",
+   "reference_assets": [],
+   "why": "Split from the mark-colour check (rule B08 held two facts); exact hex needs an eyedropper."
+  },
+  {
+   "key": "r017-has-paper",
+   "output_id": "speaker-card-r017",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "Warm Paper #F2EEE7 appears outside the photograph on “Summit speaker card - Karin Voss” (speaker-card-r017.png).",
+   "method": "measure",
+   "how": "Eyedropper the light grounds and panels outside the photograph; answer Yes if any reads at or very near #F2EEE7.",
+   "evidence_reference": "Brand identity, palette: Cascadia Slate and Warm Paper are mandatory colours.",
+   "reference_assets": [],
+   "why": "Split from the mandatory-colours check (rule B04 held two facts); exact hex needs an eyedropper."
+  },
+  {
+   "key": "r018-title-opsz",
+   "output_id": "speaker-card-r018",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "Apart from the affiliation line “Cascadia Founders Summit”, if a summit title appears on “Summit host card - Laurel Beckett” (speaker-card-r018.png), its letters have Piazzolla's wide, sturdy, low-contrast small-text shapes, not the display shapes.",
+   "evidence_reference": "Brand identity, signature_type_move: every summit title and announcement headline is Piazzolla Medium with the optical size axis pinned to 8.",
+   "reference_assets": [
+    "fonts/Piazzolla[opsz,wght].ttf"
+   ],
+   "why": "Split from the summit-title family check so each fact is judged on its own."
+  },
+  {
+   "key": "r018-edge",
+   "output_id": "speaker-card-r018",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "The sitter's outline against the ground on “Summit host card - Laurel Beckett” (speaker-card-r018.png) shows no halo, fringe, jagged cut-out edge or other visible retouching trace.",
+   "evidence_reference": "summit_brand_notes.txt: \"Natural skin, no glamour retouching, no visible retouching signature.\"",
+   "reference_assets": [
+    "summit_brand_notes.txt"
+   ],
+   "why": "Coverage hole: \"no visible retouching signature\" had no check; the house-ground swap makes the cut-out edge the likely signature."
+  },
+  {
+   "key": "r018-recolour",
+   "output_id": "speaker-card-r018",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "Compared with staff_portrait_01.jpg, no skin, hair or clothing colour on “Summit host card - Laurel Beckett” (speaker-card-r018.png) is shifted toward Signal Copper #B06B3E or Evergreen #2C4A3B.",
+   "evidence_reference": "Brand identity, palette_rules.photography: portraits keep their subjects' own colouring and are never recoloured toward the palette.",
+   "reference_assets": [
+    "staff_portrait_01.jpg"
+   ],
+   "why": "Coverage hole: \"never recoloured toward the palette\" had no check; worded as no shift toward the accents so cast correction still passes."
+  },
+  {
+   "key": "r018-no-warm-filter",
+   "output_id": "speaker-card-r018",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "No warm or golden filter is laid over the portrait on “Summit host card - Laurel Beckett” (speaker-card-r018.png).",
+   "evidence_reference": "Brand identity, palette_rules.photography: mixed-light casts are brought to natural skin, with no glossy warm filter.",
+   "reference_assets": [],
+   "why": "Split from the skin-colour check (rule B13 held two facts)."
+  },
+  {
+   "key": "r018-mark-slate",
+   "output_id": "speaker-card-r018",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "The CFS mark on “Summit host card - Laurel Beckett” (speaker-card-r018.png) sits on a Cascadia Slate #23303A ground.",
+   "method": "measure",
+   "how": "Eyedropper the ground right beside the CFS mark; answer No if it clearly differs from #23303A.",
+   "evidence_reference": "Brand identity, palette_rules.distribution: the CFS mark is Fog Grey on Cascadia Slate.",
+   "reference_assets": [],
+   "why": "Split from the mark-colour check (rule B08 held two facts); exact hex needs an eyedropper."
+  },
+  {
+   "key": "r018-has-paper",
+   "output_id": "speaker-card-r018",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "Warm Paper #F2EEE7 appears outside the photograph on “Summit host card - Laurel Beckett” (speaker-card-r018.png).",
+   "method": "measure",
+   "how": "Eyedropper the light grounds and panels outside the photograph; answer Yes if any reads at or very near #F2EEE7.",
+   "evidence_reference": "Brand identity, palette: Cascadia Slate and Warm Paper are mandatory colours.",
+   "reference_assets": [],
+   "why": "Split from the mandatory-colours check (rule B04 held two facts); exact hex needs an eyedropper."
+  },
+  {
+   "key": "r019-title-opsz",
+   "output_id": "speaker-card-r019",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "Apart from the affiliation line “Cascadia Founders Summit”, if a summit title appears on “Summit host card - Owen Faraday” (speaker-card-r019.png), its letters have Piazzolla's wide, sturdy, low-contrast small-text shapes, not the display shapes.",
+   "evidence_reference": "Brand identity, signature_type_move: every summit title and announcement headline is Piazzolla Medium with the optical size axis pinned to 8.",
+   "reference_assets": [
+    "fonts/Piazzolla[opsz,wght].ttf"
+   ],
+   "why": "Split from the summit-title family check so each fact is judged on its own."
+  },
+  {
+   "key": "r019-edge",
+   "output_id": "speaker-card-r019",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "The sitter's outline against the ground on “Summit host card - Owen Faraday” (speaker-card-r019.png) shows no halo, fringe, jagged cut-out edge or other visible retouching trace.",
+   "evidence_reference": "summit_brand_notes.txt: \"Natural skin, no glamour retouching, no visible retouching signature.\"",
+   "reference_assets": [
+    "summit_brand_notes.txt"
+   ],
+   "why": "Coverage hole: \"no visible retouching signature\" had no check; the house-ground swap makes the cut-out edge the likely signature."
+  },
+  {
+   "key": "r019-recolour",
+   "output_id": "speaker-card-r019",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "Compared with staff_portrait_02.jpg, no skin, hair or clothing colour on “Summit host card - Owen Faraday” (speaker-card-r019.png) is shifted toward Signal Copper #B06B3E or Evergreen #2C4A3B.",
+   "evidence_reference": "Brand identity, palette_rules.photography: portraits keep their subjects' own colouring and are never recoloured toward the palette.",
+   "reference_assets": [
+    "staff_portrait_02.jpg"
+   ],
+   "why": "Coverage hole: \"never recoloured toward the palette\" had no check; worded as no shift toward the accents so cast correction still passes."
+  },
+  {
+   "key": "r019-no-warm-filter",
+   "output_id": "speaker-card-r019",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "No warm or golden filter is laid over the portrait on “Summit host card - Owen Faraday” (speaker-card-r019.png).",
+   "evidence_reference": "Brand identity, palette_rules.photography: mixed-light casts are brought to natural skin, with no glossy warm filter.",
+   "reference_assets": [],
+   "why": "Split from the skin-colour check (rule B13 held two facts)."
+  },
+  {
+   "key": "r019-mark-slate",
+   "output_id": "speaker-card-r019",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "The CFS mark on “Summit host card - Owen Faraday” (speaker-card-r019.png) sits on a Cascadia Slate #23303A ground.",
+   "method": "measure",
+   "how": "Eyedropper the ground right beside the CFS mark; answer No if it clearly differs from #23303A.",
+   "evidence_reference": "Brand identity, palette_rules.distribution: the CFS mark is Fog Grey on Cascadia Slate.",
+   "reference_assets": [],
+   "why": "Split from the mark-colour check (rule B08 held two facts); exact hex needs an eyedropper."
+  },
+  {
+   "key": "r019-has-paper",
+   "output_id": "speaker-card-r019",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "Warm Paper #F2EEE7 appears outside the photograph on “Summit host card - Owen Faraday” (speaker-card-r019.png).",
+   "method": "measure",
+   "how": "Eyedropper the light grounds and panels outside the photograph; answer Yes if any reads at or very near #F2EEE7.",
+   "evidence_reference": "Brand identity, palette: Cascadia Slate and Warm Paper are mandatory colours.",
+   "reference_assets": [],
+   "why": "Split from the mandatory-colours check (rule B04 held two facts); exact hex needs an eyedropper."
+  },
+  {
+   "key": "r020-title-opsz",
+   "output_id": "speaker-card-r020",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "Apart from the affiliation line “Cascadia Founders Summit”, if a summit title appears on “Summit host card - Mireille Dufort” (speaker-card-r020.png), its letters have Piazzolla's wide, sturdy, low-contrast small-text shapes, not the display shapes.",
+   "evidence_reference": "Brand identity, signature_type_move: every summit title and announcement headline is Piazzolla Medium with the optical size axis pinned to 8.",
+   "reference_assets": [
+    "fonts/Piazzolla[opsz,wght].ttf"
+   ],
+   "why": "Split from the summit-title family check so each fact is judged on its own."
+  },
+  {
+   "key": "r020-edge",
+   "output_id": "speaker-card-r020",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "The sitter's outline against the ground on “Summit host card - Mireille Dufort” (speaker-card-r020.png) shows no halo, fringe, jagged cut-out edge or other visible retouching trace.",
+   "evidence_reference": "summit_brand_notes.txt: \"Natural skin, no glamour retouching, no visible retouching signature.\"",
+   "reference_assets": [
+    "summit_brand_notes.txt"
+   ],
+   "why": "Coverage hole: \"no visible retouching signature\" had no check; the house-ground swap makes the cut-out edge the likely signature."
+  },
+  {
+   "key": "r020-recolour",
+   "output_id": "speaker-card-r020",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "Compared with staff_portrait_03.jpg, no skin, hair or clothing colour on “Summit host card - Mireille Dufort” (speaker-card-r020.png) is shifted toward Signal Copper #B06B3E or Evergreen #2C4A3B.",
+   "evidence_reference": "Brand identity, palette_rules.photography: portraits keep their subjects' own colouring and are never recoloured toward the palette.",
+   "reference_assets": [
+    "staff_portrait_03.jpg"
+   ],
+   "why": "Coverage hole: \"never recoloured toward the palette\" had no check; worded as no shift toward the accents so cast correction still passes."
+  },
+  {
+   "key": "r020-no-warm-filter",
+   "output_id": "speaker-card-r020",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "No warm or golden filter is laid over the portrait on “Summit host card - Mireille Dufort” (speaker-card-r020.png).",
+   "evidence_reference": "Brand identity, palette_rules.photography: mixed-light casts are brought to natural skin, with no glossy warm filter.",
+   "reference_assets": [],
+   "why": "Split from the skin-colour check (rule B13 held two facts)."
+  },
+  {
+   "key": "r020-mark-slate",
+   "output_id": "speaker-card-r020",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "The CFS mark on “Summit host card - Mireille Dufort” (speaker-card-r020.png) sits on a Cascadia Slate #23303A ground.",
+   "method": "measure",
+   "how": "Eyedropper the ground right beside the CFS mark; answer No if it clearly differs from #23303A.",
+   "evidence_reference": "Brand identity, palette_rules.distribution: the CFS mark is Fog Grey on Cascadia Slate.",
+   "reference_assets": [],
+   "why": "Split from the mark-colour check (rule B08 held two facts); exact hex needs an eyedropper."
+  },
+  {
+   "key": "r020-has-paper",
+   "output_id": "speaker-card-r020",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "Warm Paper #F2EEE7 appears outside the photograph on “Summit host card - Mireille Dufort” (speaker-card-r020.png).",
+   "method": "measure",
+   "how": "Eyedropper the light grounds and panels outside the photograph; answer Yes if any reads at or very near #F2EEE7.",
+   "evidence_reference": "Brand identity, palette: Cascadia Slate and Warm Paper are mandatory colours.",
+   "reference_assets": [],
+   "why": "Split from the mandatory-colours check (rule B04 held two facts); exact hex needs an eyedropper."
+  },
+  {
+   "key": "r021-title-opsz",
+   "output_id": "speaker-card-r021",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "Apart from the affiliation line “Cascadia Founders Summit”, if a summit title appears on “Summit host card - Jonah Pryce” (speaker-card-r021.png), its letters have Piazzolla's wide, sturdy, low-contrast small-text shapes, not the display shapes.",
+   "evidence_reference": "Brand identity, signature_type_move: every summit title and announcement headline is Piazzolla Medium with the optical size axis pinned to 8.",
+   "reference_assets": [
+    "fonts/Piazzolla[opsz,wght].ttf"
+   ],
+   "why": "Split from the summit-title family check so each fact is judged on its own."
+  },
+  {
+   "key": "r021-edge",
+   "output_id": "speaker-card-r021",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "The sitter's outline against the ground on “Summit host card - Jonah Pryce” (speaker-card-r021.png) shows no halo, fringe, jagged cut-out edge or other visible retouching trace.",
+   "evidence_reference": "summit_brand_notes.txt: \"Natural skin, no glamour retouching, no visible retouching signature.\"",
+   "reference_assets": [
+    "summit_brand_notes.txt"
+   ],
+   "why": "Coverage hole: \"no visible retouching signature\" had no check; the house-ground swap makes the cut-out edge the likely signature."
+  },
+  {
+   "key": "r021-recolour",
+   "output_id": "speaker-card-r021",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "Compared with staff_portrait_04.jpg, no skin, hair or clothing colour on “Summit host card - Jonah Pryce” (speaker-card-r021.png) is shifted toward Signal Copper #B06B3E or Evergreen #2C4A3B.",
+   "evidence_reference": "Brand identity, palette_rules.photography: portraits keep their subjects' own colouring and are never recoloured toward the palette.",
+   "reference_assets": [
+    "staff_portrait_04.jpg"
+   ],
+   "why": "Coverage hole: \"never recoloured toward the palette\" had no check; worded as no shift toward the accents so cast correction still passes."
+  },
+  {
+   "key": "r021-no-warm-filter",
+   "output_id": "speaker-card-r021",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "No warm or golden filter is laid over the portrait on “Summit host card - Jonah Pryce” (speaker-card-r021.png).",
+   "evidence_reference": "Brand identity, palette_rules.photography: mixed-light casts are brought to natural skin, with no glossy warm filter.",
+   "reference_assets": [],
+   "why": "Split from the skin-colour check (rule B13 held two facts)."
+  },
+  {
+   "key": "r021-mark-slate",
+   "output_id": "speaker-card-r021",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "The CFS mark on “Summit host card - Jonah Pryce” (speaker-card-r021.png) sits on a Cascadia Slate #23303A ground.",
+   "method": "measure",
+   "how": "Eyedropper the ground right beside the CFS mark; answer No if it clearly differs from #23303A.",
+   "evidence_reference": "Brand identity, palette_rules.distribution: the CFS mark is Fog Grey on Cascadia Slate.",
+   "reference_assets": [],
+   "why": "Split from the mark-colour check (rule B08 held two facts); exact hex needs an eyedropper."
+  },
+  {
+   "key": "r021-has-paper",
+   "output_id": "speaker-card-r021",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "Warm Paper #F2EEE7 appears outside the photograph on “Summit host card - Jonah Pryce” (speaker-card-r021.png).",
+   "method": "measure",
+   "how": "Eyedropper the light grounds and panels outside the photograph; answer Yes if any reads at or very near #F2EEE7.",
+   "evidence_reference": "Brand identity, palette: Cascadia Slate and Warm Paper are mandatory colours.",
+   "reference_assets": [],
+   "why": "Split from the mandatory-colours check (rule B04 held two facts); exact hex needs an eyedropper."
+  },
+  {
+   "key": "ann-no-deadline",
+   "output_id": "summit-announcement",
+   "type": "human",
+   "k_id": "K1_Q5",
+   "check": "“Summit announcement” (summit-announcement.png) gives no registration deadline.",
+   "evidence_reference": "Client brief: \"We have not supplied a registration address or deadline; please leave those out.\"",
+   "reference_assets": [],
+   "why": "Split from H005 (address, deadline and price were bundled)."
+  },
+  {
+   "key": "ann-price-range",
+   "output_id": "summit-announcement",
+   "type": "human",
+   "k_id": "K1_Q5",
+   "check": "“Summit announcement” (summit-announcement.png) shows no price outside the brand identity's 600 to 1,200 dollar pass range.",
+   "evidence_reference": "Client brief: \"Do not introduce a price beyond the 600 to 1,200 dollar pass range in the brand identity.\"",
+   "reference_assets": [],
+   "why": "Split from H005 (address, deadline and price were bundled)."
+  },
+  {
+   "key": "ann-edge",
+   "output_id": "summit-announcement",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "If a portrait appears on “Summit announcement” (summit-announcement.png), the sitter's outline against the ground shows no halo, fringe, jagged cut-out edge or other retouching trace.",
+   "evidence_reference": "summit_brand_notes.txt: \"Natural skin, no glamour retouching, no visible retouching signature.\"",
+   "reference_assets": [
+    "summit_brand_notes.txt"
+   ],
+   "why": "Coverage hole: \"no visible retouching signature\" had no check."
+  },
+  {
+   "key": "ann-recolour",
+   "output_id": "summit-announcement",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "If a portrait appears on “Summit announcement” (summit-announcement.png), none of its skin, hair or clothing colours is shifted toward Signal Copper #B06B3E or Evergreen #2C4A3B, compared with its source photo.",
+   "evidence_reference": "Brand identity, palette_rules.photography: portraits keep their subjects' own colouring and are never recoloured toward the palette.",
+   "reference_assets": [],
+   "why": "Coverage hole: \"never recoloured toward the palette\" had no check; worded as no shift toward the accents so cast correction still passes."
+  },
+  {
+   "key": "ann-no-warm-filter",
+   "output_id": "summit-announcement",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "If a portrait appears on “Summit announcement” (summit-announcement.png), no warm or golden filter is laid over it.",
+   "evidence_reference": "Brand identity, palette_rules.photography: mixed-light casts are brought to natural skin, with no glossy warm filter.",
+   "reference_assets": [],
+   "why": "Split from H014 (cast correction and the no-warm-filter ban were bundled)."
+  },
+  {
+   "key": "ann-venue-soft",
+   "output_id": "summit-announcement",
+   "type": "human",
+   "k_id": "K2_Q2",
+   "check": "If venue_render.jpg appears on “Summit announcement” (summit-announcement.png), it shows no upscaling softness or pixelation.",
+   "evidence_reference": "venue_render.jpg is supplied at only 1400 x 933 pixels (asset plan); truth_constraints forbid invented pixels.",
+   "reference_assets": [
+    "venue_render.jpg"
+   ],
+   "why": "Split from H018: the visible softness fact is judged by eye, the pixel limit is measured."
+  },
+  {
+   "key": "ann-mark-slate",
+   "output_id": "summit-announcement",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "If the CFS mark appears on “Summit announcement” (summit-announcement.png), it sits on a Cascadia Slate #23303A ground.",
+   "method": "measure",
+   "how": "Eyedropper the ground right beside the CFS mark; answer No if it clearly differs from #23303A.",
+   "evidence_reference": "Brand identity, palette_rules.distribution: the CFS mark is Fog Grey on Cascadia Slate.",
+   "reference_assets": [],
+   "why": "Split from H058 (rule B08 held two facts)."
+  },
+  {
+   "key": "ann-has-paper",
+   "output_id": "summit-announcement",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "Warm Paper #F2EEE7 appears outside any photograph on “Summit announcement” (summit-announcement.png).",
+   "method": "measure",
+   "how": "Eyedropper the light grounds and panels outside any photograph; answer Yes if any reads at or very near #F2EEE7.",
+   "evidence_reference": "Brand identity, palette: Cascadia Slate and Warm Paper are mandatory colours.",
+   "reference_assets": [],
+   "why": "Split from H026 (rule B04 held two facts)."
+  }
+ ]
+}

@@ -1,0 +1,460 @@
+{
+ "task_id": "MOTION-11",
+ "retire": [],
+ "modify": [
+  {
+   "check_id": "MOTION-11/thumbnail-we-broke-the-map/H018",
+   "method": "measure",
+   "how": "At 100% zoom in an image editor, measure in pixels the fill height of one E, T or H per setup row, black outline excluded.",
+   "why": "cap-height range guards the long-title trap and needs a ruler; labelled measure with how"
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-everyone-off-the-platform/H018",
+   "method": "measure",
+   "how": "At 100% zoom in an image editor, measure in pixels the fill height of one E, T or H per setup row, black outline excluded.",
+   "why": "cap-height range guards the long-title trap and needs a ruler; labelled measure with how"
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-kitchen-gone/H017",
+   "method": "measure",
+   "how": "At 100% zoom in an image editor, measure in pixels the fill height of one E, T or H per setup row, black outline excluded.",
+   "why": "cap-height range guards the long-title trap and needs a ruler; labelled measure with how"
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-do-not-open-that-door/H018",
+   "method": "measure",
+   "how": "At 100% zoom in an image editor, measure in pixels the fill height of one E, T or H per setup row, black outline excluded.",
+   "why": "cap-height range guards the long-title trap and needs a ruler; labelled measure with how"
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas/H017",
+   "method": "measure",
+   "how": "At 100% zoom in an image editor, measure in pixels the fill height of one E, T or H per setup row, black outline excluded.",
+   "why": "cap-height range guards the long-title trap and needs a ruler; labelled measure with how"
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi/H018",
+   "method": "measure",
+   "how": "At 100% zoom in an image editor, measure in pixels the fill height of one E, T or H per setup row, black outline excluded.",
+   "why": "cap-height range guards the long-title trap and needs a ruler; labelled measure with how"
+  },
+  {
+   "check_id": "MOTION-11/channel-animation/H019",
+   "method": "measure",
+   "how": "Export a still of the held end card; at 100% zoom, measure the fill height of the T or I in STATIC, black outline excluded.",
+   "why": "cap-height range needs a ruler; labelled measure with how"
+  },
+  {
+   "check_id": "MOTION-11/channel-teaser/H021",
+   "method": "measure",
+   "how": "Export a held title frame; at 100% zoom, measure the fill height of one E, T, H or I per Anton row, black outline excluded.",
+   "check": "If a title stack appears in “Channel feed teaser” (channel-teaser.mp4), each Anton setup capital stands roughly 145 to 180 px tall, or 70 to 95 px when the stack is upload title 5 or 6.",
+   "why": "cap-height range needs a ruler; labelled measure with how (outline excluded); names titles 5 and 6 as the long ones"
+  },
+  {
+   "check_id": "MOTION-11/channel-teaser-vertical/H019",
+   "method": "measure",
+   "how": "Export a held title frame; at 100% zoom, measure the fill height of one E, T, H or I per Anton row, black outline excluded.",
+   "check": "If a title stack appears in “Channel feed teaser upright cutdown” (channel-teaser-vertical.mp4), each Anton setup capital stands roughly 145 to 180 px tall, or 70 to 95 px when the stack is upload title 5 or 6.",
+   "why": "cap-height range needs a ruler; labelled measure with how (outline excluded); names titles 5 and 6 as the long ones"
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-we-broke-the-map/H031",
+   "method": "estimate",
+   "how": "Of the graphics laid over the capture, title letters excluded, estimate how much is Acid Signal green; answer No only if clearly over 10%.",
+   "why": "accent share is an approximate visual estimate; labelled estimate with how"
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-everyone-off-the-platform/H031",
+   "method": "estimate",
+   "how": "Of the graphics laid over the capture, title letters excluded, estimate how much is Acid Signal green; answer No only if clearly over 10%.",
+   "why": "accent share is an approximate visual estimate; labelled estimate with how"
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-kitchen-gone/H030",
+   "method": "estimate",
+   "how": "Of the graphics laid over the capture, title letters excluded, estimate how much is Acid Signal green; answer No only if clearly over 10%.",
+   "why": "accent share is an approximate visual estimate; labelled estimate with how"
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-do-not-open-that-door/H031",
+   "method": "estimate",
+   "how": "Of the graphics laid over the capture, title letters excluded, estimate how much is Acid Signal green; answer No only if clearly over 10%.",
+   "why": "accent share is an approximate visual estimate; labelled estimate with how"
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas/H029",
+   "method": "estimate",
+   "how": "Of the graphics laid over the capture, title letters excluded, estimate how much is Acid Signal green; answer No only if clearly over 10%.",
+   "why": "accent share is an approximate visual estimate; labelled estimate with how"
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi/H030",
+   "method": "estimate",
+   "how": "Of the graphics laid over the capture, title letters excluded, estimate how much is Acid Signal green; answer No only if clearly over 10%.",
+   "why": "accent share is an approximate visual estimate; labelled estimate with how"
+  },
+  {
+   "check_id": "MOTION-11/channel-animation/H032",
+   "method": "estimate",
+   "how": "On each held frame, title-word fills excluded, estimate how much of the frame is Acid Signal green; answer No only if clearly over 10%.",
+   "check": "On every held frame of “Animated channel title and end card” (channel-animation.mp4), leaving title-word fills aside, Acid Signal #B6FF2E covers no more than 10% of the frame.",
+   "why": "B06 covers the whole film, not only the end card; accent share is an estimate, labelled with how"
+  },
+  {
+   "check_id": "MOTION-11/channel-teaser/H034",
+   "method": "estimate",
+   "how": "On held frames, title letters excluded, estimate how much of the graphics over footage is Acid Signal green; No only if clearly over 10%.",
+   "why": "accent share is an approximate visual estimate; labelled estimate with how"
+  },
+  {
+   "check_id": "MOTION-11/channel-teaser-vertical/H032",
+   "method": "estimate",
+   "how": "On held frames, title letters excluded, estimate how much of the graphics over footage is Acid Signal green; No only if clearly over 10%.",
+   "why": "accent share is an approximate visual estimate; labelled estimate with how"
+  },
+  {
+   "check_id": "MOTION-11/channel-animation/H003",
+   "check": "The end card of “Animated channel title and end card” (channel-animation.mp4) carries “NEW ONE EVERY OTHER DAY” exactly as written in staticfox_titles.txt.",
+   "why": "bundled three end card lines; split into one check per line"
+  },
+  {
+   "check_id": "MOTION-11/channel-teaser-vertical/H040",
+   "check": "If capture 01 is used in “Channel feed teaser upright cutdown” (channel-teaser-vertical.mp4), its upright reframe keeps the crowd of blocky monsters at the low block walls in frame.",
+   "reference_assets": [
+    "staticfox_captures/staticfox_capture_01.mp4"
+   ],
+   "why": "bundled six captures in one check; split into one check per capture"
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-we-broke-the-map/H023",
+   "method": "measure",
+   "how": "Eyedropper the middle of each type, outline, panel, shape and icon colour; R, G and B must each be within 5 of a listed hex.",
+   "why": "exact hex values cannot be told apart by eye; labelled measure with an eyedropper method"
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-everyone-off-the-platform/H023",
+   "method": "measure",
+   "how": "Eyedropper the middle of each type, outline, panel, shape and icon colour; R, G and B must each be within 5 of a listed hex.",
+   "why": "exact hex values cannot be told apart by eye; labelled measure with an eyedropper method"
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-kitchen-gone/H022",
+   "method": "measure",
+   "how": "Eyedropper the middle of each type, outline, panel, shape and icon colour; R, G and B must each be within 5 of a listed hex.",
+   "why": "exact hex values cannot be told apart by eye; labelled measure with an eyedropper method"
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-do-not-open-that-door/H023",
+   "method": "measure",
+   "how": "Eyedropper the middle of each type, outline, panel, shape and icon colour; R, G and B must each be within 5 of a listed hex.",
+   "why": "exact hex values cannot be told apart by eye; labelled measure with an eyedropper method"
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas/H021",
+   "method": "measure",
+   "how": "Eyedropper the middle of each type, outline, panel, shape and icon colour; R, G and B must each be within 5 of a listed hex.",
+   "why": "exact hex values cannot be told apart by eye; labelled measure with an eyedropper method"
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi/H022",
+   "method": "measure",
+   "how": "Eyedropper the middle of each type, outline, panel, shape and icon colour; R, G and B must each be within 5 of a listed hex.",
+   "why": "exact hex values cannot be told apart by eye; labelled measure with an eyedropper method"
+  },
+  {
+   "check_id": "MOTION-11/channel-animation/H024",
+   "method": "measure",
+   "how": "On a held still, eyedropper inside each type, outline, panel, shape and background colour; R, G and B each within 10 of a listed hex.",
+   "why": "exact hex values cannot be told apart by eye; labelled measure, wider tolerance for H.264 yuv420p"
+  },
+  {
+   "check_id": "MOTION-11/channel-teaser/H026",
+   "method": "measure",
+   "how": "On a held still, eyedropper inside each type, outline, panel, shape and icon colour, not footage; R, G, B within 10 of a listed hex.",
+   "why": "exact hex values cannot be told apart by eye; labelled measure, wider tolerance for H.264 yuv420p"
+  },
+  {
+   "check_id": "MOTION-11/channel-teaser-vertical/H024",
+   "method": "measure",
+   "how": "On a held still, eyedropper inside each type, outline, panel, shape and icon colour, not footage; R, G, B within 10 of a listed hex.",
+   "why": "exact hex values cannot be told apart by eye; labelled measure, wider tolerance for H.264 yuv420p"
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-we-broke-the-map/H033",
+   "check": "Displayed 320 px wide (one sixth of full size), every word of the title on “Channel thumbnail - WE BROKE THE MAP” (thumbnail-we-broke-the-map.png) can still be read.",
+   "why": "states the viewing scale of the 1920 px PNG so annotators judge at the same size"
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-everyone-off-the-platform/H032",
+   "check": "Displayed 320 px wide (one sixth of full size), every word of the title on “Channel thumbnail - EVERYONE OFF THE PLATFORM” (thumbnail-everyone-off-the-platform.png) can still be read.",
+   "why": "states the viewing scale of the 1920 px PNG so annotators judge at the same size"
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-kitchen-gone/H032",
+   "check": "Displayed 320 px wide (one sixth of full size), every word of the title on “Channel thumbnail - KITCHEN. GONE.” (thumbnail-kitchen-gone.png) can still be read.",
+   "why": "states the viewing scale of the 1920 px PNG so annotators judge at the same size"
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-do-not-open-that-door/H033",
+   "check": "Displayed 320 px wide (one sixth of full size), every word of the title on “Channel thumbnail - DO NOT OPEN THAT DOOR” (thumbnail-do-not-open-that-door.png) can still be read.",
+   "why": "states the viewing scale of the 1920 px PNG so annotators judge at the same size"
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas/H031",
+   "check": "Displayed 320 px wide (one sixth of full size), every word of the title on “Channel thumbnail - WE SPENT SIX HOURS BUILDING A BRIDGE AND THEN DROVE STRAIGHT PAST IT” (thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas.png) can still be read.",
+   "why": "states the viewing scale of the 1920 px PNG so annotators judge at the same size"
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi/H031",
+   "check": "Displayed 320 px wide (one sixth of full size), every word of the title on “Channel thumbnail - I GAVE MY TEAM ONE SIMPLE JOB AND THEY SET THE ENTIRE BASE ON FIRE” (thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi.png) can still be read.",
+   "why": "states the viewing scale of the 1920 px PNG so annotators judge at the same size"
+  }
+ ],
+ "add": [
+  {
+   "key": "anim-end-subscribe",
+   "output_id": "channel-animation",
+   "type": "human",
+   "k_id": "K1_Q1",
+   "check": "The end card of “Animated channel title and end card” (channel-animation.mp4) carries the line “SUBSCRIBE OR DAVE WINS” exactly as written in staticfox_titles.txt.",
+   "evidence_reference": "Commission: hold a final end card containing all three END CARD COPY lines from staticfox_titles.txt.",
+   "reference_assets": [
+    "staticfox_titles.txt"
+   ],
+   "why": "split from the bundled end card check"
+  },
+  {
+   "key": "anim-end-handle",
+   "output_id": "channel-animation",
+   "type": "human",
+   "k_id": "K1_Q1",
+   "check": "The end card of “Animated channel title and end card” (channel-animation.mp4) carries the handle “@STATICFOX” exactly as written in staticfox_titles.txt.",
+   "evidence_reference": "Commission: hold a final end card containing all three END CARD COPY lines from staticfox_titles.txt.",
+   "reference_assets": [
+    "staticfox_titles.txt"
+   ],
+   "why": "split from the bundled end card check"
+  },
+  {
+   "key": "vert-action-02",
+   "output_id": "channel-teaser-vertical",
+   "type": "human",
+   "k_id": "K5_Q2",
+   "check": "If capture 02 is used in “Channel feed teaser upright cutdown” (channel-teaser-vertical.mp4), its upright reframe keeps the jellybean characters over the pool of hot-pink slime in frame.",
+   "evidence_reference": "Commission (upright cutdown): reframe the action for the vertical canvas without losing the key action.",
+   "reference_assets": [
+    "staticfox_captures/staticfox_capture_02.mp4"
+   ],
+   "why": "split from the bundled six-capture key-action check"
+  },
+  {
+   "key": "vert-action-03",
+   "output_id": "channel-teaser-vertical",
+   "type": "human",
+   "k_id": "K5_Q2",
+   "check": "If capture 03 is used in “Channel feed teaser upright cutdown” (channel-teaser-vertical.mp4), its upright reframe keeps the flames climbing a stove in frame.",
+   "evidence_reference": "Commission (upright cutdown): reframe the action for the vertical canvas without losing the key action.",
+   "reference_assets": [
+    "staticfox_captures/staticfox_capture_03.mp4"
+   ],
+   "why": "split from the bundled six-capture key-action check"
+  },
+  {
+   "key": "vert-action-04",
+   "output_id": "channel-teaser-vertical",
+   "type": "human",
+   "k_id": "K5_Q2",
+   "check": "If capture 04 is used in “Channel feed teaser upright cutdown” (channel-teaser-vertical.mp4), its upright reframe keeps the pale gaunt monster lunging out of a half-open doorway in frame.",
+   "evidence_reference": "Commission (upright cutdown): reframe the action for the vertical canvas without losing the key action.",
+   "reference_assets": [
+    "staticfox_captures/staticfox_capture_04.mp4"
+   ],
+   "why": "split from the bundled six-capture key-action check"
+  },
+  {
+   "key": "vert-action-05",
+   "output_id": "channel-teaser-vertical",
+   "type": "human",
+   "k_id": "K5_Q2",
+   "check": "If capture 05 is used in “Channel feed teaser upright cutdown” (channel-teaser-vertical.mp4), its upright reframe keeps the boxy cartoon car and the ragdoll driver in frame.",
+   "evidence_reference": "Commission (upright cutdown): reframe the action for the vertical canvas without losing the key action.",
+   "reference_assets": [
+    "staticfox_captures/staticfox_capture_05.mp4"
+   ],
+   "why": "split from the bundled six-capture key-action check"
+  },
+  {
+   "key": "vert-action-06",
+   "output_id": "channel-teaser-vertical",
+   "type": "human",
+   "k_id": "K5_Q2",
+   "check": "If capture 06 is used in “Channel feed teaser upright cutdown” (channel-teaser-vertical.mp4), its upright reframe keeps the base engulfed in flames in frame.",
+   "evidence_reference": "Commission (upright cutdown): reframe the action for the vertical canvas without losing the key action.",
+   "reference_assets": [
+    "staticfox_captures/staticfox_capture_06.mp4"
+   ],
+   "why": "split from the bundled six-capture key-action check"
+  },
+  {
+   "key": "anim-scrap-moves",
+   "output_id": "channel-animation",
+   "type": "human",
+   "k_id": "K1_Q1",
+   "check": "Scrap, the supplied fox mascot, moves or animates on screen at some point in “Animated channel title and end card” (channel-animation.mp4), not only held still.",
+   "evidence_reference": "Commission: Animate the supplied mascot and channel typography, not a gameplay montage.",
+   "reference_assets": [
+    "staticfox_scrap_transparent.png"
+   ],
+   "why": "D03 requires the mascot to be animated; H033 only checks that he appears"
+  },
+  {
+   "key": "thumbnail-we-broke-the-map-no-speech",
+   "output_id": "thumbnail-we-broke-the-map",
+   "type": "human",
+   "k_id": "K1_Q3",
+   "check": "“Channel thumbnail - WE BROKE THE MAP” (thumbnail-we-broke-the-map.png) carries no speech bubble or quoted caption of speech.",
+   "evidence_reference": "Brief: Nobody talks in any of this, so do not put a voice or a caption of a voice on it.",
+   "reference_assets": [],
+   "why": "F06 applies to every piece; a still can carry a caption of a voice"
+  },
+  {
+   "key": "thumbnail-everyone-off-the-platform-no-speech",
+   "output_id": "thumbnail-everyone-off-the-platform",
+   "type": "human",
+   "k_id": "K1_Q3",
+   "check": "“Channel thumbnail - EVERYONE OFF THE PLATFORM” (thumbnail-everyone-off-the-platform.png) carries no speech bubble or quoted caption of speech.",
+   "evidence_reference": "Brief: Nobody talks in any of this, so do not put a voice or a caption of a voice on it.",
+   "reference_assets": [],
+   "why": "F06 applies to every piece; a still can carry a caption of a voice"
+  },
+  {
+   "key": "thumbnail-kitchen-gone-no-speech",
+   "output_id": "thumbnail-kitchen-gone",
+   "type": "human",
+   "k_id": "K1_Q3",
+   "check": "“Channel thumbnail - KITCHEN. GONE.” (thumbnail-kitchen-gone.png) carries no speech bubble or quoted caption of speech.",
+   "evidence_reference": "Brief: Nobody talks in any of this, so do not put a voice or a caption of a voice on it.",
+   "reference_assets": [],
+   "why": "F06 applies to every piece; a still can carry a caption of a voice"
+  },
+  {
+   "key": "thumbnail-do-not-open-that-door-no-speech",
+   "output_id": "thumbnail-do-not-open-that-door",
+   "type": "human",
+   "k_id": "K1_Q3",
+   "check": "“Channel thumbnail - DO NOT OPEN THAT DOOR” (thumbnail-do-not-open-that-door.png) carries no speech bubble or quoted caption of speech.",
+   "evidence_reference": "Brief: Nobody talks in any of this, so do not put a voice or a caption of a voice on it.",
+   "reference_assets": [],
+   "why": "F06 applies to every piece; a still can carry a caption of a voice"
+  },
+  {
+   "key": "thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas-no-speech",
+   "output_id": "thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas",
+   "type": "human",
+   "k_id": "K1_Q3",
+   "check": "“Channel thumbnail - WE SPENT SIX HOURS BUILDING A BRIDGE AND THEN DROVE STRAIGHT PAST IT” (thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas.png) carries no speech bubble or quoted caption of speech.",
+   "evidence_reference": "Brief: Nobody talks in any of this, so do not put a voice or a caption of a voice on it.",
+   "reference_assets": [],
+   "why": "F06 applies to every piece; a still can carry a caption of a voice"
+  },
+  {
+   "key": "thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi-no-speech",
+   "output_id": "thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi",
+   "type": "human",
+   "k_id": "K1_Q3",
+   "check": "“Channel thumbnail - I GAVE MY TEAM ONE SIMPLE JOB AND THEY SET THE ENTIRE BASE ON FIRE” (thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi.png) carries no speech bubble or quoted caption of speech.",
+   "evidence_reference": "Brief: Nobody talks in any of this, so do not put a voice or a caption of a voice on it.",
+   "reference_assets": [],
+   "why": "F06 applies to every piece; a still can carry a caption of a voice"
+  },
+  {
+   "key": "teaser-cap03-not-enlarged",
+   "output_id": "channel-teaser",
+   "type": "human",
+   "k_id": "K2_Q2",
+   "check": "If capture 03 is used in “Channel feed teaser” (channel-teaser.mp4), its shots are not visibly pixelated or blocky at full size from being enlarged.",
+   "evidence_reference": "Asset plan: staticfox_capture_03.mp4 is a smaller 1280x720 frame; the teaser is delivered at exact 1920x1080.",
+   "reference_assets": [
+    "staticfox_captures/staticfox_capture_03.mp4"
+   ],
+   "why": "planned enlargement trap (captures 03 and 05 are 1280x720) applies to the teasers too; no teaser check guarded it"
+  },
+  {
+   "key": "teaser-cap05-not-enlarged",
+   "output_id": "channel-teaser",
+   "type": "human",
+   "k_id": "K2_Q2",
+   "check": "If capture 05 is used in “Channel feed teaser” (channel-teaser.mp4), its shots are not visibly pixelated or blocky at full size from being enlarged.",
+   "evidence_reference": "Asset plan: staticfox_capture_05.mp4 is a smaller 1280x720 frame; the teaser is delivered at exact 1920x1080.",
+   "reference_assets": [
+    "staticfox_captures/staticfox_capture_05.mp4"
+   ],
+   "why": "planned enlargement trap (captures 03 and 05 are 1280x720) applies to the teasers too; no teaser check guarded it"
+  },
+  {
+   "key": "vert-cap03-not-enlarged",
+   "output_id": "channel-teaser-vertical",
+   "type": "human",
+   "k_id": "K2_Q2",
+   "check": "If capture 03 is used in “Channel feed teaser upright cutdown” (channel-teaser-vertical.mp4), its shots are not visibly pixelated or blocky at full size from being enlarged.",
+   "evidence_reference": "Asset plan: staticfox_capture_03.mp4 is a smaller 1280x720 frame; the teaser is delivered at exact 1080x1920.",
+   "reference_assets": [
+    "staticfox_captures/staticfox_capture_03.mp4"
+   ],
+   "why": "planned enlargement trap (captures 03 and 05 are 1280x720) applies to the teasers too; no teaser check guarded it"
+  },
+  {
+   "key": "vert-cap05-not-enlarged",
+   "output_id": "channel-teaser-vertical",
+   "type": "human",
+   "k_id": "K2_Q2",
+   "check": "If capture 05 is used in “Channel feed teaser upright cutdown” (channel-teaser-vertical.mp4), its shots are not visibly pixelated or blocky at full size from being enlarged.",
+   "evidence_reference": "Asset plan: staticfox_capture_05.mp4 is a smaller 1280x720 frame; the teaser is delivered at exact 1080x1920.",
+   "reference_assets": [
+    "staticfox_captures/staticfox_capture_05.mp4"
+   ],
+   "why": "planned enlargement trap (captures 03 and 05 are 1280x720) applies to the teasers too; no teaser check guarded it"
+  },
+  {
+   "key": "teaser-title-hold-readable",
+   "output_id": "channel-teaser",
+   "type": "human",
+   "k_id": "K1_Q2",
+   "check": "If a title stack or the channel name is held on screen in “Channel feed teaser” (channel-teaser.mp4), every letter can be read while held, with nothing covering it.",
+   "evidence_reference": "Deliverable group channel-animation (includes both teasers): The title remains readable during its hold.",
+   "reference_assets": [],
+   "why": "F15 is a group requirement that lists both teasers; the clipping check does not test covering"
+  },
+  {
+   "key": "vert-title-hold-readable",
+   "output_id": "channel-teaser-vertical",
+   "type": "human",
+   "k_id": "K1_Q2",
+   "check": "If a title stack or the channel name is held on screen in “Channel feed teaser upright cutdown” (channel-teaser-vertical.mp4), every letter can be read while held, with nothing covering it.",
+   "evidence_reference": "Deliverable group channel-animation (includes both teasers): The title remains readable during its hold.",
+   "reference_assets": [],
+   "why": "F15 is a group requirement that lists both teasers; the clipping check does not test covering"
+  },
+  {
+   "key": "teaser-title-largest",
+   "output_id": "channel-teaser",
+   "type": "human",
+   "k_id": "K5_Q1",
+   "check": "If a title stack appears in “Channel feed teaser” (channel-teaser.mp4), it is the largest text on that frame.",
+   "evidence_reference": "Brand identity, type scale: step 01 Display / H1 is the largest step; the title is the primary message.",
+   "reference_assets": [],
+   "why": "T11 applies wherever a title stack appears; the teaser type rules already check optional stacks"
+  },
+  {
+   "key": "vert-title-largest",
+   "output_id": "channel-teaser-vertical",
+   "type": "human",
+   "k_id": "K5_Q1",
+   "check": "If a title stack appears in “Channel feed teaser upright cutdown” (channel-teaser-vertical.mp4), it is the largest text on that frame.",
+   "evidence_reference": "Brand identity, type scale: step 01 Display / H1 is the largest step; the title is the primary message.",
+   "reference_assets": [],
+   "why": "T11 applies wherever a title stack appears; the teaser type rules already check optional stacks"
+  }
+ ]
+}

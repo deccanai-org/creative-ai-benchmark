@@ -90,8 +90,8 @@
     {
       "rule_id": "B02",
       "kind": "brand",
-      "rule": "Grounds and panels are Warm Neutral, Bone, Deep Ground or Vellacourt Ink and nothing else; Studio Slate and Ochre are never a ground or panel; no pure white ground.",
-      "source": "brand_identity.palette_rules.distribution; brand_identity.palette_rules.forbidden",
+      "rule": "Grounds and panels are Warm Neutral, Bone, Deep Ground or Vellacourt Ink and nothing else.",
+      "source": "brand_identity.palette_rules.distribution",
       "cells": {
         "speaker-onepager": {
           "checks": [
@@ -182,6 +182,201 @@
       }
     },
     {
+      "rule_id": "B16",
+      "kind": "brand",
+      "rule": "Studio Slate and Ochre are never a ground or panel.",
+      "source": "brand_identity.palette_rules.distribution",
+      "cells": {
+        "speaker-onepager": {
+          "checks": [
+            "PHOTO-20/speaker-onepager/H031",
+            "PHOTO-20/speaker-onepager/H033"
+          ]
+        },
+        "event-announcement-r002": {
+          "checks": [
+            "PHOTO-20/event-announcement-r002/H034",
+            "PHOTO-20/event-announcement-r002/H037"
+          ]
+        },
+        "event-announcement-r003": {
+          "checks": [
+            "PHOTO-20/event-announcement-r003/H034",
+            "PHOTO-20/event-announcement-r003/H037"
+          ]
+        },
+        "event-announcement-r008": {
+          "checks": [
+            "PHOTO-20/event-announcement-r008/H034",
+            "PHOTO-20/event-announcement-r008/H037"
+          ]
+        },
+        "event-banner-r002": {
+          "checks": [
+            "PHOTO-20/event-banner-r002/H032",
+            "PHOTO-20/event-banner-r002/H035"
+          ]
+        },
+        "event-banner-r003": {
+          "checks": [
+            "PHOTO-20/event-banner-r003/H032",
+            "PHOTO-20/event-banner-r003/H035"
+          ]
+        },
+        "event-banner-r008": {
+          "checks": [
+            "PHOTO-20/event-banner-r008/H032",
+            "PHOTO-20/event-banner-r008/H035"
+          ]
+        },
+        "talk-card-r002": {
+          "checks": [
+            "PHOTO-20/talk-card-r002/H030",
+            "PHOTO-20/talk-card-r002/H053",
+            "PHOTO-20/talk-card-r002/H033"
+          ]
+        },
+        "talk-card-r003": {
+          "checks": [
+            "PHOTO-20/talk-card-r003/H030",
+            "PHOTO-20/talk-card-r003/H053",
+            "PHOTO-20/talk-card-r003/H033"
+          ]
+        },
+        "talk-card-r004": {
+          "checks": [
+            "PHOTO-20/talk-card-r004/H030",
+            "PHOTO-20/talk-card-r004/H053",
+            "PHOTO-20/talk-card-r004/H033"
+          ]
+        },
+        "talk-card-r005": {
+          "checks": [
+            "PHOTO-20/talk-card-r005/H030",
+            "PHOTO-20/talk-card-r005/H053",
+            "PHOTO-20/talk-card-r005/H033"
+          ]
+        },
+        "talk-card-r006": {
+          "checks": [
+            "PHOTO-20/talk-card-r006/H030",
+            "PHOTO-20/talk-card-r006/H053",
+            "PHOTO-20/talk-card-r006/H033"
+          ]
+        },
+        "talk-card-r007": {
+          "checks": [
+            "PHOTO-20/talk-card-r007/H030",
+            "PHOTO-20/talk-card-r007/H053",
+            "PHOTO-20/talk-card-r007/H033"
+          ]
+        },
+        "talk-card-r008": {
+          "checks": [
+            "PHOTO-20/talk-card-r008/H030",
+            "PHOTO-20/talk-card-r008/H053",
+            "PHOTO-20/talk-card-r008/H033"
+          ]
+        },
+        "talk-card-r009": {
+          "checks": [
+            "PHOTO-20/talk-card-r009/H030",
+            "PHOTO-20/talk-card-r009/H053",
+            "PHOTO-20/talk-card-r009/H033"
+          ]
+        },
+        "talk-card-combined": {
+          "na": "Each page is checked by code to look identical to its single card file (A004 to A011), so the single-card checks cover this rule."
+        }
+      }
+    },
+    {
+      "rule_id": "B17",
+      "kind": "brand",
+      "rule": "No pure white ground.",
+      "source": "brand_identity.palette_rules.forbidden",
+      "cells": {
+        "speaker-onepager": {
+          "checks": [
+            "PHOTO-20/speaker-onepager/H031"
+          ]
+        },
+        "event-announcement-r002": {
+          "checks": [
+            "PHOTO-20/event-announcement-r002/H034"
+          ]
+        },
+        "event-announcement-r003": {
+          "checks": [
+            "PHOTO-20/event-announcement-r003/H034"
+          ]
+        },
+        "event-announcement-r008": {
+          "checks": [
+            "PHOTO-20/event-announcement-r008/H034"
+          ]
+        },
+        "event-banner-r002": {
+          "checks": [
+            "PHOTO-20/event-banner-r002/H032"
+          ]
+        },
+        "event-banner-r003": {
+          "checks": [
+            "PHOTO-20/event-banner-r003/H032"
+          ]
+        },
+        "event-banner-r008": {
+          "checks": [
+            "PHOTO-20/event-banner-r008/H032"
+          ]
+        },
+        "talk-card-r002": {
+          "checks": [
+            "PHOTO-20/talk-card-r002/H030"
+          ]
+        },
+        "talk-card-r003": {
+          "checks": [
+            "PHOTO-20/talk-card-r003/H030"
+          ]
+        },
+        "talk-card-r004": {
+          "checks": [
+            "PHOTO-20/talk-card-r004/H030"
+          ]
+        },
+        "talk-card-r005": {
+          "checks": [
+            "PHOTO-20/talk-card-r005/H030"
+          ]
+        },
+        "talk-card-r006": {
+          "checks": [
+            "PHOTO-20/talk-card-r006/H030"
+          ]
+        },
+        "talk-card-r007": {
+          "checks": [
+            "PHOTO-20/talk-card-r007/H030"
+          ]
+        },
+        "talk-card-r008": {
+          "checks": [
+            "PHOTO-20/talk-card-r008/H030"
+          ]
+        },
+        "talk-card-r009": {
+          "checks": [
+            "PHOTO-20/talk-card-r009/H030"
+          ]
+        },
+        "talk-card-combined": {
+          "na": "Each page is checked by code to look identical to its single card file (A004 to A011), so the single-card checks cover this rule."
+        }
+      }
+    },
+    {
       "rule_id": "B03",
       "kind": "brand",
       "rule": "Every talk card keeps the Warm Neutral ground of vellacourt_speakercard_template.pdf.",
@@ -256,7 +451,7 @@
     {
       "rule_id": "B04",
       "kind": "brand",
-      "rule": "On Warm Neutral or Bone, her name, talk titles and running text are Vellacourt Ink, and the event and date line is Vellacourt Ink or Studio Slate.",
+      "rule": "On Warm Neutral or Bone, her name, talk titles and running text are Vellacourt Ink.",
       "source": "brand_identity.palette_rules.distribution",
       "cells": {
         "speaker-onepager": {
@@ -266,85 +461,157 @@
         },
         "event-announcement-r002": {
           "checks": [
-            "PHOTO-20/event-announcement-r002/H035",
+            "PHOTO-20/event-announcement-r002/H035"
+          ]
+        },
+        "event-announcement-r003": {
+          "checks": [
+            "PHOTO-20/event-announcement-r003/H035"
+          ]
+        },
+        "event-announcement-r008": {
+          "checks": [
+            "PHOTO-20/event-announcement-r008/H035"
+          ]
+        },
+        "event-banner-r002": {
+          "checks": [
+            "PHOTO-20/event-banner-r002/H033"
+          ]
+        },
+        "event-banner-r003": {
+          "checks": [
+            "PHOTO-20/event-banner-r003/H033"
+          ]
+        },
+        "event-banner-r008": {
+          "checks": [
+            "PHOTO-20/event-banner-r008/H033"
+          ]
+        },
+        "talk-card-r002": {
+          "checks": [
+            "PHOTO-20/talk-card-r002/H031"
+          ]
+        },
+        "talk-card-r003": {
+          "checks": [
+            "PHOTO-20/talk-card-r003/H031"
+          ]
+        },
+        "talk-card-r004": {
+          "checks": [
+            "PHOTO-20/talk-card-r004/H031"
+          ]
+        },
+        "talk-card-r005": {
+          "checks": [
+            "PHOTO-20/talk-card-r005/H031"
+          ]
+        },
+        "talk-card-r006": {
+          "checks": [
+            "PHOTO-20/talk-card-r006/H031"
+          ]
+        },
+        "talk-card-r007": {
+          "checks": [
+            "PHOTO-20/talk-card-r007/H031"
+          ]
+        },
+        "talk-card-r008": {
+          "checks": [
+            "PHOTO-20/talk-card-r008/H031"
+          ]
+        },
+        "talk-card-r009": {
+          "checks": [
+            "PHOTO-20/talk-card-r009/H031"
+          ]
+        },
+        "talk-card-combined": {
+          "na": "Each page is checked by code to look identical to its single card file (A004 to A011), so the single-card checks cover this rule."
+        }
+      }
+    },
+    {
+      "rule_id": "B18",
+      "kind": "brand",
+      "rule": "On Warm Neutral or Bone, the event and date line is Vellacourt Ink or Studio Slate.",
+      "source": "brand_identity.palette_rules.distribution",
+      "cells": {
+        "speaker-onepager": {
+          "checks": [
+            "PHOTO-20/speaker-onepager/H056"
+          ]
+        },
+        "event-announcement-r002": {
+          "checks": [
             "PHOTO-20/event-announcement-r002/H058"
           ]
         },
         "event-announcement-r003": {
           "checks": [
-            "PHOTO-20/event-announcement-r003/H035",
             "PHOTO-20/event-announcement-r003/H058"
           ]
         },
         "event-announcement-r008": {
           "checks": [
-            "PHOTO-20/event-announcement-r008/H035",
             "PHOTO-20/event-announcement-r008/H058"
           ]
         },
         "event-banner-r002": {
           "checks": [
-            "PHOTO-20/event-banner-r002/H033",
             "PHOTO-20/event-banner-r002/H055"
           ]
         },
         "event-banner-r003": {
           "checks": [
-            "PHOTO-20/event-banner-r003/H033",
             "PHOTO-20/event-banner-r003/H055"
           ]
         },
         "event-banner-r008": {
           "checks": [
-            "PHOTO-20/event-banner-r008/H033",
             "PHOTO-20/event-banner-r008/H055"
           ]
         },
         "talk-card-r002": {
           "checks": [
-            "PHOTO-20/talk-card-r002/H031",
             "PHOTO-20/talk-card-r002/H055"
           ]
         },
         "talk-card-r003": {
           "checks": [
-            "PHOTO-20/talk-card-r003/H031",
             "PHOTO-20/talk-card-r003/H054"
           ]
         },
         "talk-card-r004": {
           "checks": [
-            "PHOTO-20/talk-card-r004/H031",
             "PHOTO-20/talk-card-r004/H054"
           ]
         },
         "talk-card-r005": {
           "checks": [
-            "PHOTO-20/talk-card-r005/H031",
             "PHOTO-20/talk-card-r005/H054"
           ]
         },
         "talk-card-r006": {
           "checks": [
-            "PHOTO-20/talk-card-r006/H031",
             "PHOTO-20/talk-card-r006/H054"
           ]
         },
         "talk-card-r007": {
           "checks": [
-            "PHOTO-20/talk-card-r007/H031",
             "PHOTO-20/talk-card-r007/H054"
           ]
         },
         "talk-card-r008": {
           "checks": [
-            "PHOTO-20/talk-card-r008/H031",
             "PHOTO-20/talk-card-r008/H054"
           ]
         },
         "talk-card-r009": {
           "checks": [
-            "PHOTO-20/talk-card-r009/H031",
             "PHOTO-20/talk-card-r009/H054"
           ]
         },
@@ -533,77 +800,107 @@
       "cells": {
         "speaker-onepager": {
           "checks": [
-            "PHOTO-20/speaker-onepager/H034"
+            "PHOTO-20/speaker-onepager/H034",
+            "PHOTO-20/speaker-onepager/H030",
+            "PHOTO-20/speaker-onepager/H035"
           ]
         },
         "event-announcement-r002": {
           "checks": [
-            "PHOTO-20/event-announcement-r002/H038"
+            "PHOTO-20/event-announcement-r002/H038",
+            "PHOTO-20/event-announcement-r002/H033",
+            "PHOTO-20/event-announcement-r002/H039"
           ]
         },
         "event-announcement-r003": {
           "checks": [
-            "PHOTO-20/event-announcement-r003/H038"
+            "PHOTO-20/event-announcement-r003/H038",
+            "PHOTO-20/event-announcement-r003/H033",
+            "PHOTO-20/event-announcement-r003/H039"
           ]
         },
         "event-announcement-r008": {
           "checks": [
-            "PHOTO-20/event-announcement-r008/H038"
+            "PHOTO-20/event-announcement-r008/H038",
+            "PHOTO-20/event-announcement-r008/H033",
+            "PHOTO-20/event-announcement-r008/H039"
           ]
         },
         "event-banner-r002": {
           "checks": [
-            "PHOTO-20/event-banner-r002/H036"
+            "PHOTO-20/event-banner-r002/H036",
+            "PHOTO-20/event-banner-r002/H031",
+            "PHOTO-20/event-banner-r002/H037"
           ]
         },
         "event-banner-r003": {
           "checks": [
-            "PHOTO-20/event-banner-r003/H036"
+            "PHOTO-20/event-banner-r003/H036",
+            "PHOTO-20/event-banner-r003/H031",
+            "PHOTO-20/event-banner-r003/H037"
           ]
         },
         "event-banner-r008": {
           "checks": [
-            "PHOTO-20/event-banner-r008/H036"
+            "PHOTO-20/event-banner-r008/H036",
+            "PHOTO-20/event-banner-r008/H031",
+            "PHOTO-20/event-banner-r008/H037"
           ]
         },
         "talk-card-r002": {
           "checks": [
-            "PHOTO-20/talk-card-r002/H034"
+            "PHOTO-20/talk-card-r002/H034",
+            "PHOTO-20/talk-card-r002/H029",
+            "PHOTO-20/talk-card-r002/H035"
           ]
         },
         "talk-card-r003": {
           "checks": [
-            "PHOTO-20/talk-card-r003/H034"
+            "PHOTO-20/talk-card-r003/H034",
+            "PHOTO-20/talk-card-r003/H029",
+            "PHOTO-20/talk-card-r003/H035"
           ]
         },
         "talk-card-r004": {
           "checks": [
-            "PHOTO-20/talk-card-r004/H034"
+            "PHOTO-20/talk-card-r004/H034",
+            "PHOTO-20/talk-card-r004/H029",
+            "PHOTO-20/talk-card-r004/H035"
           ]
         },
         "talk-card-r005": {
           "checks": [
-            "PHOTO-20/talk-card-r005/H034"
+            "PHOTO-20/talk-card-r005/H034",
+            "PHOTO-20/talk-card-r005/H029",
+            "PHOTO-20/talk-card-r005/H035"
           ]
         },
         "talk-card-r006": {
           "checks": [
-            "PHOTO-20/talk-card-r006/H034"
+            "PHOTO-20/talk-card-r006/H034",
+            "PHOTO-20/talk-card-r006/H029",
+            "PHOTO-20/talk-card-r006/H035"
           ]
         },
         "talk-card-r007": {
           "checks": [
-            "PHOTO-20/talk-card-r007/H034"
+            "PHOTO-20/talk-card-r007/H034",
+            "PHOTO-20/talk-card-r007/H029",
+            "PHOTO-20/talk-card-r007/H035"
           ]
         },
         "talk-card-r008": {
           "checks": [
-            "PHOTO-20/talk-card-r008/H034"
+            "PHOTO-20/talk-card-r008/H034",
+            "PHOTO-20/talk-card-r008/H029",
+            "PHOTO-20/talk-card-r008/H035"
           ]
         },
         "talk-card-r009": {
           "checks": [
-            "PHOTO-20/talk-card-r009/H034"
+            "PHOTO-20/talk-card-r009/H034",
+            "PHOTO-20/talk-card-r009/H029",
+            "PHOTO-20/talk-card-r009/H035"
           ]
         },
         "talk-card-combined": {
@@ -936,7 +1233,7 @@
     {
       "rule_id": "B12",
       "kind": "brand",
-      "rule": "vellacourt_av_transparent.png is the AV monogram for this commission; keep the supplied artwork, not a font reconstruction.",
+      "rule": "Use the supplied vellacourt_av_transparent.png artwork as the AV monogram, not a font reconstruction.",
       "source": "brand_identity.brand_assets_status",
       "cells": {
         "speaker-onepager": {
@@ -1108,7 +1405,7 @@
     {
       "rule_id": "B14",
       "kind": "brand",
-      "rule": "Use solid Ochre for the monogram in digital exports; a blind impression is a print finish, never a grey digital simulation.",
+      "rule": "In digital exports the AV monogram is solid Ochre, never a grey or embossed simulation of a blind impression.",
       "source": "brand_identity.type_system.rules[3]",
       "cells": {
         "speaker-onepager": {
@@ -1194,7 +1491,7 @@
     {
       "rule_id": "B15",
       "kind": "brand",
-      "rule": "It reads as a person who runs a company, never as an influencer or an account.",
+      "rule": "No influencer or account cues: no social handle, follower count or platform icon.",
       "source": "brand_identity.about",
       "cells": {
         "speaker-onepager": {
@@ -1280,121 +1577,91 @@
     {
       "rule_id": "T01",
       "kind": "type",
-      "rule": "Astrid's name: Instrument Serif Regular, 34 pt with 38 pt leading, tracking +30 units, below the AV monogram (PNG: same point setting, judged relatively).",
+      "rule": "Astrid's name is set in Instrument Serif Regular.",
       "source": "brand_identity.type_system.scale[01]",
       "cells": {
         "speaker-onepager": {
           "checks": [
-            "PHOTO-20/speaker-onepager/H005",
-            "PHOTO-20/speaker-onepager/H022",
-            "PHOTO-20/speaker-onepager/H007",
-            "PHOTO-20/speaker-onepager/A008"
+            "PHOTO-20/speaker-onepager/A008",
+            "PHOTO-20/speaker-onepager/H005"
           ]
         },
         "event-announcement-r002": {
           "checks": [
-            "PHOTO-20/event-announcement-r002/H011",
-            "PHOTO-20/event-announcement-r002/H024",
-            "PHOTO-20/event-announcement-r002/H025"
+            "PHOTO-20/event-announcement-r002/H024"
           ]
         },
         "event-announcement-r003": {
           "checks": [
-            "PHOTO-20/event-announcement-r003/H008",
-            "PHOTO-20/event-announcement-r003/H024",
-            "PHOTO-20/event-announcement-r003/H025"
+            "PHOTO-20/event-announcement-r003/H024"
           ]
         },
         "event-announcement-r008": {
           "checks": [
-            "PHOTO-20/event-announcement-r008/H011",
-            "PHOTO-20/event-announcement-r008/H024",
-            "PHOTO-20/event-announcement-r008/H025"
+            "PHOTO-20/event-announcement-r008/H024"
           ]
         },
         "event-banner-r002": {
           "checks": [
-            "PHOTO-20/event-banner-r002/H009",
-            "PHOTO-20/event-banner-r002/H022",
-            "PHOTO-20/event-banner-r002/H023"
+            "PHOTO-20/event-banner-r002/H022"
           ]
         },
         "event-banner-r003": {
           "checks": [
-            "PHOTO-20/event-banner-r003/H010",
-            "PHOTO-20/event-banner-r003/H022",
-            "PHOTO-20/event-banner-r003/H023"
+            "PHOTO-20/event-banner-r003/H022"
           ]
         },
         "event-banner-r008": {
           "checks": [
-            "PHOTO-20/event-banner-r008/H010",
-            "PHOTO-20/event-banner-r008/H022",
-            "PHOTO-20/event-banner-r008/H023"
+            "PHOTO-20/event-banner-r008/H022"
           ]
         },
         "talk-card-r002": {
           "checks": [
             "PHOTO-20/talk-card-r002/A012",
-            "PHOTO-20/talk-card-r002/H008",
-            "PHOTO-20/talk-card-r002/H020",
-            "PHOTO-20/talk-card-r002/H021"
+            "PHOTO-20/talk-card-r002/H020"
           ]
         },
         "talk-card-r003": {
           "checks": [
             "PHOTO-20/talk-card-r003/A012",
-            "PHOTO-20/talk-card-r003/H007",
-            "PHOTO-20/talk-card-r003/H020",
-            "PHOTO-20/talk-card-r003/H021"
+            "PHOTO-20/talk-card-r003/H020"
           ]
         },
         "talk-card-r004": {
           "checks": [
             "PHOTO-20/talk-card-r004/A012",
-            "PHOTO-20/talk-card-r004/H007",
-            "PHOTO-20/talk-card-r004/H020",
-            "PHOTO-20/talk-card-r004/H021"
+            "PHOTO-20/talk-card-r004/H020"
           ]
         },
         "talk-card-r005": {
           "checks": [
             "PHOTO-20/talk-card-r005/A012",
-            "PHOTO-20/talk-card-r005/H007",
-            "PHOTO-20/talk-card-r005/H020",
-            "PHOTO-20/talk-card-r005/H021"
+            "PHOTO-20/talk-card-r005/H020"
           ]
         },
         "talk-card-r006": {
           "checks": [
             "PHOTO-20/talk-card-r006/A012",
-            "PHOTO-20/talk-card-r006/H008",
-            "PHOTO-20/talk-card-r006/H021",
-            "PHOTO-20/talk-card-r006/H022"
+            "PHOTO-20/talk-card-r006/H021"
           ]
         },
         "talk-card-r007": {
           "checks": [
             "PHOTO-20/talk-card-r007/A012",
-            "PHOTO-20/talk-card-r007/H007",
-            "PHOTO-20/talk-card-r007/H020",
-            "PHOTO-20/talk-card-r007/H021"
+            "PHOTO-20/talk-card-r007/H020"
           ]
         },
         "talk-card-r008": {
           "checks": [
             "PHOTO-20/talk-card-r008/A012",
-            "PHOTO-20/talk-card-r008/H007",
-            "PHOTO-20/talk-card-r008/H020",
-            "PHOTO-20/talk-card-r008/H021"
+            "PHOTO-20/talk-card-r008/H020"
           ]
         },
         "talk-card-r009": {
           "checks": [
             "PHOTO-20/talk-card-r009/A012",
-            "PHOTO-20/talk-card-r009/H007",
-            "PHOTO-20/talk-card-r009/H020",
-            "PHOTO-20/talk-card-r009/H021"
+            "PHOTO-20/talk-card-r009/H020"
           ]
         },
         "talk-card-combined": {
@@ -1405,116 +1672,70 @@
     {
       "rule_id": "T02",
       "kind": "type",
-      "rule": "Talk title: Inter Medium, tracking -5 units; 64 px with 70 px leading on PNGs; PDF size chosen to fit, below the 34 pt name.",
-      "source": "brand_identity.type_system.scale[02]",
+      "rule": "Astrid's name is 34 pt in the PDFs and the same point setting (45 1/3 px) on PNG canvases.",
+      "source": "brand_identity.type_system.scale[01]",
       "cells": {
         "speaker-onepager": {
           "checks": [
-            "PHOTO-20/speaker-onepager/A009",
-            "PHOTO-20/speaker-onepager/A010",
-            "PHOTO-20/speaker-onepager/A011",
-            "PHOTO-20/speaker-onepager/H007",
-            "PHOTO-20/speaker-onepager/H040"
+            "PHOTO-20/speaker-onepager/A008"
           ]
         },
         "event-announcement-r002": {
-          "checks": [
-            "PHOTO-20/event-announcement-r002/H044",
-            "PHOTO-20/event-announcement-r002/H057"
-          ]
+          "not_verified": "Exact type size cannot be measured reliably in a delivered PNG; the brand value is a design target. A separate check confirms her name is larger than the date."
         },
         "event-announcement-r003": {
-          "checks": [
-            "PHOTO-20/event-announcement-r003/H044",
-            "PHOTO-20/event-announcement-r003/H057"
-          ]
+          "not_verified": "Exact type size cannot be measured reliably in a delivered PNG; the brand value is a design target. A separate check confirms her name is larger than the date."
         },
         "event-announcement-r008": {
-          "checks": [
-            "PHOTO-20/event-announcement-r008/H044",
-            "PHOTO-20/event-announcement-r008/H057"
-          ]
+          "not_verified": "Exact type size cannot be measured reliably in a delivered PNG; the brand value is a design target. A separate check confirms her name is larger than the date."
         },
         "event-banner-r002": {
-          "checks": [
-            "PHOTO-20/event-banner-r002/H010",
-            "PHOTO-20/event-banner-r002/H042"
-          ]
+          "not_verified": "Exact type size cannot be measured reliably in a delivered PNG; the brand value is a design target. A separate check confirms her name is larger than the date."
         },
         "event-banner-r003": {
-          "checks": [
-            "PHOTO-20/event-banner-r003/H011",
-            "PHOTO-20/event-banner-r003/H042"
-          ]
+          "not_verified": "Exact type size cannot be measured reliably in a delivered PNG; the brand value is a design target. A separate check confirms her name is larger than the date."
         },
         "event-banner-r008": {
-          "checks": [
-            "PHOTO-20/event-banner-r008/H011",
-            "PHOTO-20/event-banner-r008/H042"
-          ]
+          "not_verified": "Exact type size cannot be measured reliably in a delivered PNG; the brand value is a design target. A separate check confirms her name is larger than the date."
         },
         "talk-card-r002": {
           "checks": [
-            "PHOTO-20/talk-card-r002/A013",
-            "PHOTO-20/talk-card-r002/H007",
-            "PHOTO-20/talk-card-r002/H040",
-            "PHOTO-20/talk-card-r002/H052"
+            "PHOTO-20/talk-card-r002/A012"
           ]
         },
         "talk-card-r003": {
           "checks": [
-            "PHOTO-20/talk-card-r003/A013",
-            "PHOTO-20/talk-card-r003/H006",
-            "PHOTO-20/talk-card-r003/H040",
-            "PHOTO-20/talk-card-r003/H052"
+            "PHOTO-20/talk-card-r003/A012"
           ]
         },
         "talk-card-r004": {
           "checks": [
-            "PHOTO-20/talk-card-r004/A013",
-            "PHOTO-20/talk-card-r004/H006",
-            "PHOTO-20/talk-card-r004/H040",
-            "PHOTO-20/talk-card-r004/H052"
+            "PHOTO-20/talk-card-r004/A012"
           ]
         },
         "talk-card-r005": {
           "checks": [
-            "PHOTO-20/talk-card-r005/A013",
-            "PHOTO-20/talk-card-r005/H006",
-            "PHOTO-20/talk-card-r005/H040",
-            "PHOTO-20/talk-card-r005/H052"
+            "PHOTO-20/talk-card-r005/A012"
           ]
         },
         "talk-card-r006": {
           "checks": [
-            "PHOTO-20/talk-card-r006/A013",
-            "PHOTO-20/talk-card-r006/H005",
-            "PHOTO-20/talk-card-r006/H040",
-            "PHOTO-20/talk-card-r006/H052"
+            "PHOTO-20/talk-card-r006/A012"
           ]
         },
         "talk-card-r007": {
           "checks": [
-            "PHOTO-20/talk-card-r007/A013",
-            "PHOTO-20/talk-card-r007/H006",
-            "PHOTO-20/talk-card-r007/H040",
-            "PHOTO-20/talk-card-r007/H052"
+            "PHOTO-20/talk-card-r007/A012"
           ]
         },
         "talk-card-r008": {
           "checks": [
-            "PHOTO-20/talk-card-r008/A013",
-            "PHOTO-20/talk-card-r008/H006",
-            "PHOTO-20/talk-card-r008/H040",
-            "PHOTO-20/talk-card-r008/H052"
+            "PHOTO-20/talk-card-r008/A012"
           ]
         },
         "talk-card-r009": {
           "checks": [
-            "PHOTO-20/talk-card-r009/A013",
-            "PHOTO-20/talk-card-r009/H006",
-            "PHOTO-20/talk-card-r009/H040",
-            "PHOTO-20/talk-card-r009/H052"
+            "PHOTO-20/talk-card-r009/A012"
           ]
         },
         "talk-card-combined": {
@@ -1525,103 +1746,53 @@
     {
       "rule_id": "T03",
       "kind": "type",
-      "rule": "Body, bio and running text: Inter Regular, 9.5 pt with 13 pt leading, tracking 0, at most 65 characters per line.",
-      "source": "brand_identity.type_system.scale[03]",
+      "rule": "Astrid's name has 38-point leading (50 2/3 pixels on PNGs) where it runs over two lines.",
+      "source": "brand_identity.type_system.scale[01]",
       "cells": {
         "speaker-onepager": {
-          "checks": [
-            "PHOTO-20/speaker-onepager/A012",
-            "PHOTO-20/speaker-onepager/A013",
-            "PHOTO-20/speaker-onepager/A014",
-            "PHOTO-20/speaker-onepager/A015",
-            "PHOTO-20/speaker-onepager/A016",
-            "PHOTO-20/speaker-onepager/H028",
-            "PHOTO-20/speaker-onepager/H029"
-          ]
+          "not_verified": "Leading applies only if her name runs over two lines, which the brief does not require, so no code check can rely on it; the value is a design target."
         },
         "event-announcement-r002": {
-          "checks": [
-            "PHOTO-20/event-announcement-r002/H031",
-            "PHOTO-20/event-announcement-r002/H032"
-          ]
+          "not_verified": "Exact leading cannot be measured in a delivered PNG; the brand value is a design target."
         },
         "event-announcement-r003": {
-          "checks": [
-            "PHOTO-20/event-announcement-r003/H031",
-            "PHOTO-20/event-announcement-r003/H032"
-          ]
+          "not_verified": "Exact leading cannot be measured in a delivered PNG; the brand value is a design target."
         },
         "event-announcement-r008": {
-          "checks": [
-            "PHOTO-20/event-announcement-r008/H031",
-            "PHOTO-20/event-announcement-r008/H032"
-          ]
+          "not_verified": "Exact leading cannot be measured in a delivered PNG; the brand value is a design target."
         },
         "event-banner-r002": {
-          "checks": [
-            "PHOTO-20/event-banner-r002/H030",
-            "PHOTO-20/event-banner-r002/H046"
-          ]
+          "not_verified": "Exact leading cannot be measured in a delivered PNG; the brand value is a design target."
         },
         "event-banner-r003": {
-          "checks": [
-            "PHOTO-20/event-banner-r003/H030",
-            "PHOTO-20/event-banner-r003/H046"
-          ]
+          "not_verified": "Exact leading cannot be measured in a delivered PNG; the brand value is a design target."
         },
         "event-banner-r008": {
-          "checks": [
-            "PHOTO-20/event-banner-r008/H030",
-            "PHOTO-20/event-banner-r008/H046"
-          ]
+          "not_verified": "Exact leading cannot be measured in a delivered PNG; the brand value is a design target."
         },
         "talk-card-r002": {
-          "checks": [
-            "PHOTO-20/talk-card-r002/H028",
-            "PHOTO-20/talk-card-r002/H042"
-          ]
+          "not_verified": "Leading applies only if her name runs over two lines, which the brief does not require, so no code check can rely on it; the value is a design target."
         },
         "talk-card-r003": {
-          "checks": [
-            "PHOTO-20/talk-card-r003/H028",
-            "PHOTO-20/talk-card-r003/H042"
-          ]
+          "not_verified": "Leading applies only if her name runs over two lines, which the brief does not require, so no code check can rely on it; the value is a design target."
         },
         "talk-card-r004": {
-          "checks": [
-            "PHOTO-20/talk-card-r004/H028",
-            "PHOTO-20/talk-card-r004/H042"
-          ]
+          "not_verified": "Leading applies only if her name runs over two lines, which the brief does not require, so no code check can rely on it; the value is a design target."
         },
         "talk-card-r005": {
-          "checks": [
-            "PHOTO-20/talk-card-r005/H028",
-            "PHOTO-20/talk-card-r005/H042"
-          ]
+          "not_verified": "Leading applies only if her name runs over two lines, which the brief does not require, so no code check can rely on it; the value is a design target."
         },
         "talk-card-r006": {
-          "checks": [
-            "PHOTO-20/talk-card-r006/H028",
-            "PHOTO-20/talk-card-r006/H042"
-          ]
+          "not_verified": "Leading applies only if her name runs over two lines, which the brief does not require, so no code check can rely on it; the value is a design target."
         },
         "talk-card-r007": {
-          "checks": [
-            "PHOTO-20/talk-card-r007/H028",
-            "PHOTO-20/talk-card-r007/H042"
-          ]
+          "not_verified": "Leading applies only if her name runs over two lines, which the brief does not require, so no code check can rely on it; the value is a design target."
         },
         "talk-card-r008": {
-          "checks": [
-            "PHOTO-20/talk-card-r008/H028",
-            "PHOTO-20/talk-card-r008/H042"
-          ]
+          "not_verified": "Leading applies only if her name runs over two lines, which the brief does not require, so no code check can rely on it; the value is a design target."
         },
         "talk-card-r009": {
-          "checks": [
-            "PHOTO-20/talk-card-r009/H028",
-            "PHOTO-20/talk-card-r009/H042"
-          ]
+          "not_verified": "Leading applies only if her name runs over two lines, which the brief does not require, so no code check can rely on it; the value is a design target."
         },
         "talk-card-combined": {
           "na": "Each page is checked by code to look identical to its single card file (A004 to A011), so the single-card checks cover this rule."
@@ -1631,7 +1802,799 @@
     {
       "rule_id": "T04",
       "kind": "type",
-      "rule": "Fine print, event and date line: Inter Regular, 28 px with 36 px leading on PNGs, 9.5 pt with 13 pt on talk-card PDFs; tracking +15 units.",
+      "rule": "Astrid's name has tracking +30 units.",
+      "source": "brand_identity.type_system.scale[01]",
+      "cells": {
+        "speaker-onepager": {
+          "checks": [
+            "PHOTO-20/speaker-onepager/A017"
+          ]
+        },
+        "event-announcement-r002": {
+          "not_verified": "Exact tracking cannot be measured in a delivered PNG; the brand value is a design target."
+        },
+        "event-announcement-r003": {
+          "not_verified": "Exact tracking cannot be measured in a delivered PNG; the brand value is a design target."
+        },
+        "event-announcement-r008": {
+          "not_verified": "Exact tracking cannot be measured in a delivered PNG; the brand value is a design target."
+        },
+        "event-banner-r002": {
+          "not_verified": "Exact tracking cannot be measured in a delivered PNG; the brand value is a design target."
+        },
+        "event-banner-r003": {
+          "not_verified": "Exact tracking cannot be measured in a delivered PNG; the brand value is a design target."
+        },
+        "event-banner-r008": {
+          "not_verified": "Exact tracking cannot be measured in a delivered PNG; the brand value is a design target."
+        },
+        "talk-card-r002": {
+          "checks": [
+            "PHOTO-20/talk-card-r002/A017"
+          ]
+        },
+        "talk-card-r003": {
+          "checks": [
+            "PHOTO-20/talk-card-r003/A017"
+          ]
+        },
+        "talk-card-r004": {
+          "checks": [
+            "PHOTO-20/talk-card-r004/A017"
+          ]
+        },
+        "talk-card-r005": {
+          "checks": [
+            "PHOTO-20/talk-card-r005/A017"
+          ]
+        },
+        "talk-card-r006": {
+          "checks": [
+            "PHOTO-20/talk-card-r006/A017"
+          ]
+        },
+        "talk-card-r007": {
+          "checks": [
+            "PHOTO-20/talk-card-r007/A017"
+          ]
+        },
+        "talk-card-r008": {
+          "checks": [
+            "PHOTO-20/talk-card-r008/A017"
+          ]
+        },
+        "talk-card-r009": {
+          "checks": [
+            "PHOTO-20/talk-card-r009/A017"
+          ]
+        },
+        "talk-card-combined": {
+          "na": "Each page is checked by code to look identical to its single card file (A004 to A011), so the single-card checks cover this rule."
+        }
+      }
+    },
+    {
+      "rule_id": "T05",
+      "kind": "type",
+      "rule": "Talk titles are set in Inter Medium.",
+      "source": "brand_identity.type_system.scale[02]",
+      "cells": {
+        "speaker-onepager": {
+          "checks": [
+            "PHOTO-20/speaker-onepager/A009",
+            "PHOTO-20/speaker-onepager/A010",
+            "PHOTO-20/speaker-onepager/A011",
+            "PHOTO-20/speaker-onepager/H040"
+          ]
+        },
+        "event-announcement-r002": {
+          "checks": [
+            "PHOTO-20/event-announcement-r002/H044"
+          ]
+        },
+        "event-announcement-r003": {
+          "checks": [
+            "PHOTO-20/event-announcement-r003/H044"
+          ]
+        },
+        "event-announcement-r008": {
+          "checks": [
+            "PHOTO-20/event-announcement-r008/H044"
+          ]
+        },
+        "event-banner-r002": {
+          "checks": [
+            "PHOTO-20/event-banner-r002/H042"
+          ]
+        },
+        "event-banner-r003": {
+          "checks": [
+            "PHOTO-20/event-banner-r003/H042"
+          ]
+        },
+        "event-banner-r008": {
+          "checks": [
+            "PHOTO-20/event-banner-r008/H042"
+          ]
+        },
+        "talk-card-r002": {
+          "checks": [
+            "PHOTO-20/talk-card-r002/A013",
+            "PHOTO-20/talk-card-r002/H040"
+          ]
+        },
+        "talk-card-r003": {
+          "checks": [
+            "PHOTO-20/talk-card-r003/A013",
+            "PHOTO-20/talk-card-r003/H040"
+          ]
+        },
+        "talk-card-r004": {
+          "checks": [
+            "PHOTO-20/talk-card-r004/A013",
+            "PHOTO-20/talk-card-r004/H040"
+          ]
+        },
+        "talk-card-r005": {
+          "checks": [
+            "PHOTO-20/talk-card-r005/A013",
+            "PHOTO-20/talk-card-r005/H040"
+          ]
+        },
+        "talk-card-r006": {
+          "checks": [
+            "PHOTO-20/talk-card-r006/A013",
+            "PHOTO-20/talk-card-r006/H040"
+          ]
+        },
+        "talk-card-r007": {
+          "checks": [
+            "PHOTO-20/talk-card-r007/A013",
+            "PHOTO-20/talk-card-r007/H040"
+          ]
+        },
+        "talk-card-r008": {
+          "checks": [
+            "PHOTO-20/talk-card-r008/A013",
+            "PHOTO-20/talk-card-r008/H040"
+          ]
+        },
+        "talk-card-r009": {
+          "checks": [
+            "PHOTO-20/talk-card-r009/A013",
+            "PHOTO-20/talk-card-r009/H040"
+          ]
+        },
+        "talk-card-combined": {
+          "na": "Each page is checked by code to look identical to its single card file (A004 to A011), so the single-card checks cover this rule."
+        }
+      }
+    },
+    {
+      "rule_id": "T06",
+      "kind": "type",
+      "rule": "The talk title on the six announcement and banner PNGs is 64 px.",
+      "source": "brand_identity.type_system.scale[02]",
+      "cells": {
+        "speaker-onepager": {
+          "na": "The 64 px title size is for the PNGs; PDF title sizes may be chosen to fit the trim."
+        },
+        "event-announcement-r002": {
+          "not_verified": "Exact type size cannot be measured reliably in a delivered PNG; the brand value is a design target. Separate checks confirm the title is larger than the date."
+        },
+        "event-announcement-r003": {
+          "not_verified": "Exact type size cannot be measured reliably in a delivered PNG; the brand value is a design target. Separate checks confirm the title is larger than the date."
+        },
+        "event-announcement-r008": {
+          "not_verified": "Exact type size cannot be measured reliably in a delivered PNG; the brand value is a design target. Separate checks confirm the title is larger than the date."
+        },
+        "event-banner-r002": {
+          "not_verified": "Exact type size cannot be measured reliably in a delivered PNG; the brand value is a design target. Separate checks confirm the title is larger than the date."
+        },
+        "event-banner-r003": {
+          "not_verified": "Exact type size cannot be measured reliably in a delivered PNG; the brand value is a design target. Separate checks confirm the title is larger than the date."
+        },
+        "event-banner-r008": {
+          "not_verified": "Exact type size cannot be measured reliably in a delivered PNG; the brand value is a design target. Separate checks confirm the title is larger than the date."
+        },
+        "talk-card-r002": {
+          "na": "The 64 px title size is for the PNGs; PDF title sizes may be chosen to fit the trim."
+        },
+        "talk-card-r003": {
+          "na": "The 64 px title size is for the PNGs; PDF title sizes may be chosen to fit the trim."
+        },
+        "talk-card-r004": {
+          "na": "The 64 px title size is for the PNGs; PDF title sizes may be chosen to fit the trim."
+        },
+        "talk-card-r005": {
+          "na": "The 64 px title size is for the PNGs; PDF title sizes may be chosen to fit the trim."
+        },
+        "talk-card-r006": {
+          "na": "The 64 px title size is for the PNGs; PDF title sizes may be chosen to fit the trim."
+        },
+        "talk-card-r007": {
+          "na": "The 64 px title size is for the PNGs; PDF title sizes may be chosen to fit the trim."
+        },
+        "talk-card-r008": {
+          "na": "The 64 px title size is for the PNGs; PDF title sizes may be chosen to fit the trim."
+        },
+        "talk-card-r009": {
+          "na": "The 64 px title size is for the PNGs; PDF title sizes may be chosen to fit the trim."
+        },
+        "talk-card-combined": {
+          "na": "Each page is checked by code to look identical to its single card file (A004 to A011), so the single-card checks cover this rule."
+        }
+      }
+    },
+    {
+      "rule_id": "T07",
+      "kind": "type",
+      "rule": "PDF talk titles are sized to fit the trim, smaller than her 34 pt name.",
+      "source": "brand_identity.type_system.scale[02].note",
+      "cells": {
+        "speaker-onepager": {
+          "checks": [
+            "PHOTO-20/speaker-onepager/H007"
+          ]
+        },
+        "event-announcement-r002": {
+          "na": "This sizing rule covers PDF talk titles; PNG titles have a fixed 64 px size."
+        },
+        "event-announcement-r003": {
+          "na": "This sizing rule covers PDF talk titles; PNG titles have a fixed 64 px size."
+        },
+        "event-announcement-r008": {
+          "na": "This sizing rule covers PDF talk titles; PNG titles have a fixed 64 px size."
+        },
+        "event-banner-r002": {
+          "na": "This sizing rule covers PDF talk titles; PNG titles have a fixed 64 px size."
+        },
+        "event-banner-r003": {
+          "na": "This sizing rule covers PDF talk titles; PNG titles have a fixed 64 px size."
+        },
+        "event-banner-r008": {
+          "na": "This sizing rule covers PDF talk titles; PNG titles have a fixed 64 px size."
+        },
+        "talk-card-r002": {
+          "checks": [
+            "PHOTO-20/talk-card-r002/H052"
+          ]
+        },
+        "talk-card-r003": {
+          "checks": [
+            "PHOTO-20/talk-card-r003/H052"
+          ]
+        },
+        "talk-card-r004": {
+          "checks": [
+            "PHOTO-20/talk-card-r004/H052"
+          ]
+        },
+        "talk-card-r005": {
+          "checks": [
+            "PHOTO-20/talk-card-r005/H052"
+          ]
+        },
+        "talk-card-r006": {
+          "checks": [
+            "PHOTO-20/talk-card-r006/H052"
+          ]
+        },
+        "talk-card-r007": {
+          "checks": [
+            "PHOTO-20/talk-card-r007/H052"
+          ]
+        },
+        "talk-card-r008": {
+          "checks": [
+            "PHOTO-20/talk-card-r008/H052"
+          ]
+        },
+        "talk-card-r009": {
+          "checks": [
+            "PHOTO-20/talk-card-r009/H052"
+          ]
+        },
+        "talk-card-combined": {
+          "na": "Each page is checked by code to look identical to its single card file (A004 to A011), so the single-card checks cover this rule."
+        }
+      }
+    },
+    {
+      "rule_id": "T08",
+      "kind": "type",
+      "rule": "The talk title on the announcement and banner PNGs has 70-pixel leading where it runs over two lines.",
+      "source": "brand_identity.type_system.scale[02]",
+      "cells": {
+        "speaker-onepager": {
+          "na": "PDF talk-title leading may be chosen to fit the trim, so no fixed value applies."
+        },
+        "event-announcement-r002": {
+          "not_verified": "Exact leading cannot be measured in a delivered PNG; the brand value is a design target."
+        },
+        "event-announcement-r003": {
+          "not_verified": "Exact leading cannot be measured in a delivered PNG; the brand value is a design target."
+        },
+        "event-announcement-r008": {
+          "not_verified": "Exact leading cannot be measured in a delivered PNG; the brand value is a design target."
+        },
+        "event-banner-r002": {
+          "not_verified": "Exact leading cannot be measured in a delivered PNG; the brand value is a design target."
+        },
+        "event-banner-r003": {
+          "not_verified": "Exact leading cannot be measured in a delivered PNG; the brand value is a design target."
+        },
+        "event-banner-r008": {
+          "not_verified": "Exact leading cannot be measured in a delivered PNG; the brand value is a design target."
+        },
+        "talk-card-r002": {
+          "na": "PDF talk-title leading may be chosen to fit the trim, so no fixed value applies."
+        },
+        "talk-card-r003": {
+          "na": "PDF talk-title leading may be chosen to fit the trim, so no fixed value applies."
+        },
+        "talk-card-r004": {
+          "na": "PDF talk-title leading may be chosen to fit the trim, so no fixed value applies."
+        },
+        "talk-card-r005": {
+          "na": "PDF talk-title leading may be chosen to fit the trim, so no fixed value applies."
+        },
+        "talk-card-r006": {
+          "na": "PDF talk-title leading may be chosen to fit the trim, so no fixed value applies."
+        },
+        "talk-card-r007": {
+          "na": "PDF talk-title leading may be chosen to fit the trim, so no fixed value applies."
+        },
+        "talk-card-r008": {
+          "na": "PDF talk-title leading may be chosen to fit the trim, so no fixed value applies."
+        },
+        "talk-card-r009": {
+          "na": "PDF talk-title leading may be chosen to fit the trim, so no fixed value applies."
+        },
+        "talk-card-combined": {
+          "na": "Each page is checked by code to look identical to its single card file (A004 to A011), so the single-card checks cover this rule."
+        }
+      }
+    },
+    {
+      "rule_id": "T09",
+      "kind": "type",
+      "rule": "Talk titles have tracking -5 units.",
+      "source": "brand_identity.type_system.scale[02]",
+      "cells": {
+        "speaker-onepager": {
+          "checks": [
+            "PHOTO-20/speaker-onepager/A018",
+            "PHOTO-20/speaker-onepager/A019",
+            "PHOTO-20/speaker-onepager/A020"
+          ]
+        },
+        "event-announcement-r002": {
+          "not_verified": "Exact tracking cannot be measured in a delivered PNG; the brand value is a design target."
+        },
+        "event-announcement-r003": {
+          "not_verified": "Exact tracking cannot be measured in a delivered PNG; the brand value is a design target."
+        },
+        "event-announcement-r008": {
+          "not_verified": "Exact tracking cannot be measured in a delivered PNG; the brand value is a design target."
+        },
+        "event-banner-r002": {
+          "not_verified": "Exact tracking cannot be measured in a delivered PNG; the brand value is a design target."
+        },
+        "event-banner-r003": {
+          "not_verified": "Exact tracking cannot be measured in a delivered PNG; the brand value is a design target."
+        },
+        "event-banner-r008": {
+          "not_verified": "Exact tracking cannot be measured in a delivered PNG; the brand value is a design target."
+        },
+        "talk-card-r002": {
+          "checks": [
+            "PHOTO-20/talk-card-r002/A018"
+          ]
+        },
+        "talk-card-r003": {
+          "checks": [
+            "PHOTO-20/talk-card-r003/A018"
+          ]
+        },
+        "talk-card-r004": {
+          "checks": [
+            "PHOTO-20/talk-card-r004/A018"
+          ]
+        },
+        "talk-card-r005": {
+          "checks": [
+            "PHOTO-20/talk-card-r005/A018"
+          ]
+        },
+        "talk-card-r006": {
+          "checks": [
+            "PHOTO-20/talk-card-r006/A018"
+          ]
+        },
+        "talk-card-r007": {
+          "checks": [
+            "PHOTO-20/talk-card-r007/A018"
+          ]
+        },
+        "talk-card-r008": {
+          "checks": [
+            "PHOTO-20/talk-card-r008/A018"
+          ]
+        },
+        "talk-card-r009": {
+          "checks": [
+            "PHOTO-20/talk-card-r009/A018"
+          ]
+        },
+        "talk-card-combined": {
+          "na": "Each page is checked by code to look identical to its single card file (A004 to A011), so the single-card checks cover this rule."
+        }
+      }
+    },
+    {
+      "rule_id": "T10",
+      "kind": "type",
+      "rule": "Body, bio and running text are set in Inter Regular.",
+      "source": "brand_identity.type_system.scale[03]",
+      "cells": {
+        "speaker-onepager": {
+          "checks": [
+            "PHOTO-20/speaker-onepager/A012",
+            "PHOTO-20/speaker-onepager/A013",
+            "PHOTO-20/speaker-onepager/A014",
+            "PHOTO-20/speaker-onepager/A015",
+            "PHOTO-20/speaker-onepager/A016",
+            "PHOTO-20/speaker-onepager/H028"
+          ]
+        },
+        "event-announcement-r002": {
+          "checks": [
+            "PHOTO-20/event-announcement-r002/H031"
+          ]
+        },
+        "event-announcement-r003": {
+          "checks": [
+            "PHOTO-20/event-announcement-r003/H031"
+          ]
+        },
+        "event-announcement-r008": {
+          "checks": [
+            "PHOTO-20/event-announcement-r008/H031"
+          ]
+        },
+        "event-banner-r002": {
+          "checks": [
+            "PHOTO-20/event-banner-r002/H046"
+          ]
+        },
+        "event-banner-r003": {
+          "checks": [
+            "PHOTO-20/event-banner-r003/H046"
+          ]
+        },
+        "event-banner-r008": {
+          "checks": [
+            "PHOTO-20/event-banner-r008/H046"
+          ]
+        },
+        "talk-card-r002": {
+          "checks": [
+            "PHOTO-20/talk-card-r002/H042"
+          ]
+        },
+        "talk-card-r003": {
+          "checks": [
+            "PHOTO-20/talk-card-r003/H042"
+          ]
+        },
+        "talk-card-r004": {
+          "checks": [
+            "PHOTO-20/talk-card-r004/H042"
+          ]
+        },
+        "talk-card-r005": {
+          "checks": [
+            "PHOTO-20/talk-card-r005/H042"
+          ]
+        },
+        "talk-card-r006": {
+          "checks": [
+            "PHOTO-20/talk-card-r006/H042"
+          ]
+        },
+        "talk-card-r007": {
+          "checks": [
+            "PHOTO-20/talk-card-r007/H042"
+          ]
+        },
+        "talk-card-r008": {
+          "checks": [
+            "PHOTO-20/talk-card-r008/H042"
+          ]
+        },
+        "talk-card-r009": {
+          "checks": [
+            "PHOTO-20/talk-card-r009/H042"
+          ]
+        },
+        "talk-card-combined": {
+          "na": "Each page is checked by code to look identical to its single card file (A004 to A011), so the single-card checks cover this rule."
+        }
+      }
+    },
+    {
+      "rule_id": "T11",
+      "kind": "type",
+      "rule": "Body, bio and running text is 9.5 pt (12 2/3 px on PNGs).",
+      "source": "brand_identity.type_system.scale[03]",
+      "cells": {
+        "speaker-onepager": {
+          "checks": [
+            "PHOTO-20/speaker-onepager/A012",
+            "PHOTO-20/speaker-onepager/A013",
+            "PHOTO-20/speaker-onepager/A014",
+            "PHOTO-20/speaker-onepager/A015",
+            "PHOTO-20/speaker-onepager/A016"
+          ]
+        },
+        "event-announcement-r002": {
+          "not_verified": "Exact type size cannot be measured reliably in a delivered PNG; the brand value is a design target."
+        },
+        "event-announcement-r003": {
+          "not_verified": "Exact type size cannot be measured reliably in a delivered PNG; the brand value is a design target."
+        },
+        "event-announcement-r008": {
+          "not_verified": "Exact type size cannot be measured reliably in a delivered PNG; the brand value is a design target."
+        },
+        "event-banner-r002": {
+          "not_verified": "Running copy is optional on the banners; if it appears, its exact size cannot be measured in a PNG, so the brand value is a design target."
+        },
+        "event-banner-r003": {
+          "not_verified": "Running copy is optional on the banners; if it appears, its exact size cannot be measured in a PNG, so the brand value is a design target."
+        },
+        "event-banner-r008": {
+          "not_verified": "Running copy is optional on the banners; if it appears, its exact size cannot be measured in a PNG, so the brand value is a design target."
+        },
+        "talk-card-r002": {
+          "not_verified": "Running copy is optional on the talk cards and no exact string is known, so no code check can target its size; the brand value is a design target."
+        },
+        "talk-card-r003": {
+          "not_verified": "Running copy is optional on the talk cards and no exact string is known, so no code check can target its size; the brand value is a design target."
+        },
+        "talk-card-r004": {
+          "not_verified": "Running copy is optional on the talk cards and no exact string is known, so no code check can target its size; the brand value is a design target."
+        },
+        "talk-card-r005": {
+          "not_verified": "Running copy is optional on the talk cards and no exact string is known, so no code check can target its size; the brand value is a design target."
+        },
+        "talk-card-r006": {
+          "not_verified": "Running copy is optional on the talk cards and no exact string is known, so no code check can target its size; the brand value is a design target."
+        },
+        "talk-card-r007": {
+          "not_verified": "Running copy is optional on the talk cards and no exact string is known, so no code check can target its size; the brand value is a design target."
+        },
+        "talk-card-r008": {
+          "not_verified": "Running copy is optional on the talk cards and no exact string is known, so no code check can target its size; the brand value is a design target."
+        },
+        "talk-card-r009": {
+          "not_verified": "Running copy is optional on the talk cards and no exact string is known, so no code check can target its size; the brand value is a design target."
+        },
+        "talk-card-combined": {
+          "na": "Each page is checked by code to look identical to its single card file (A004 to A011), so the single-card checks cover this rule."
+        }
+      }
+    },
+    {
+      "rule_id": "T12",
+      "kind": "type",
+      "rule": "Body, bio and running text has 13-point leading where it runs over two lines.",
+      "source": "brand_identity.type_system.scale[03]",
+      "cells": {
+        "speaker-onepager": {
+          "checks": [
+            "PHOTO-20/speaker-onepager/A021"
+          ]
+        },
+        "event-announcement-r002": {
+          "not_verified": "Exact leading cannot be measured in a delivered PNG; the brand value is a design target."
+        },
+        "event-announcement-r003": {
+          "not_verified": "Exact leading cannot be measured in a delivered PNG; the brand value is a design target."
+        },
+        "event-announcement-r008": {
+          "not_verified": "Exact leading cannot be measured in a delivered PNG; the brand value is a design target."
+        },
+        "event-banner-r002": {
+          "not_verified": "Running copy is optional on the banners; if it appears, its exact leading cannot be measured in a PNG, so the brand value is a design target."
+        },
+        "event-banner-r003": {
+          "not_verified": "Running copy is optional on the banners; if it appears, its exact leading cannot be measured in a PNG, so the brand value is a design target."
+        },
+        "event-banner-r008": {
+          "not_verified": "Running copy is optional on the banners; if it appears, its exact leading cannot be measured in a PNG, so the brand value is a design target."
+        },
+        "talk-card-r002": {
+          "not_verified": "Running copy is optional on the talk cards and no exact string is known, so no code check can target its leading; the brand value is a design target."
+        },
+        "talk-card-r003": {
+          "not_verified": "Running copy is optional on the talk cards and no exact string is known, so no code check can target its leading; the brand value is a design target."
+        },
+        "talk-card-r004": {
+          "not_verified": "Running copy is optional on the talk cards and no exact string is known, so no code check can target its leading; the brand value is a design target."
+        },
+        "talk-card-r005": {
+          "not_verified": "Running copy is optional on the talk cards and no exact string is known, so no code check can target its leading; the brand value is a design target."
+        },
+        "talk-card-r006": {
+          "not_verified": "Running copy is optional on the talk cards and no exact string is known, so no code check can target its leading; the brand value is a design target."
+        },
+        "talk-card-r007": {
+          "not_verified": "Running copy is optional on the talk cards and no exact string is known, so no code check can target its leading; the brand value is a design target."
+        },
+        "talk-card-r008": {
+          "not_verified": "Running copy is optional on the talk cards and no exact string is known, so no code check can target its leading; the brand value is a design target."
+        },
+        "talk-card-r009": {
+          "not_verified": "Running copy is optional on the talk cards and no exact string is known, so no code check can target its leading; the brand value is a design target."
+        },
+        "talk-card-combined": {
+          "na": "Each page is checked by code to look identical to its single card file (A004 to A011), so the single-card checks cover this rule."
+        }
+      }
+    },
+    {
+      "rule_id": "T13",
+      "kind": "type",
+      "rule": "Body, bio and running text has tracking 0 units.",
+      "source": "brand_identity.type_system.scale[03]",
+      "cells": {
+        "speaker-onepager": {
+          "checks": [
+            "PHOTO-20/speaker-onepager/A022",
+            "PHOTO-20/speaker-onepager/A023",
+            "PHOTO-20/speaker-onepager/A024",
+            "PHOTO-20/speaker-onepager/A025",
+            "PHOTO-20/speaker-onepager/A026"
+          ]
+        },
+        "event-announcement-r002": {
+          "not_verified": "Exact tracking cannot be measured in a delivered PNG; the brand value is a design target."
+        },
+        "event-announcement-r003": {
+          "not_verified": "Exact tracking cannot be measured in a delivered PNG; the brand value is a design target."
+        },
+        "event-announcement-r008": {
+          "not_verified": "Exact tracking cannot be measured in a delivered PNG; the brand value is a design target."
+        },
+        "event-banner-r002": {
+          "not_verified": "Running copy is optional on the banners; if it appears, its exact tracking cannot be measured in a PNG, so the brand value is a design target."
+        },
+        "event-banner-r003": {
+          "not_verified": "Running copy is optional on the banners; if it appears, its exact tracking cannot be measured in a PNG, so the brand value is a design target."
+        },
+        "event-banner-r008": {
+          "not_verified": "Running copy is optional on the banners; if it appears, its exact tracking cannot be measured in a PNG, so the brand value is a design target."
+        },
+        "talk-card-r002": {
+          "not_verified": "Running copy is optional on the talk cards and no exact string is known, so no code check can target its tracking; the brand value is a design target."
+        },
+        "talk-card-r003": {
+          "not_verified": "Running copy is optional on the talk cards and no exact string is known, so no code check can target its tracking; the brand value is a design target."
+        },
+        "talk-card-r004": {
+          "not_verified": "Running copy is optional on the talk cards and no exact string is known, so no code check can target its tracking; the brand value is a design target."
+        },
+        "talk-card-r005": {
+          "not_verified": "Running copy is optional on the talk cards and no exact string is known, so no code check can target its tracking; the brand value is a design target."
+        },
+        "talk-card-r006": {
+          "not_verified": "Running copy is optional on the talk cards and no exact string is known, so no code check can target its tracking; the brand value is a design target."
+        },
+        "talk-card-r007": {
+          "not_verified": "Running copy is optional on the talk cards and no exact string is known, so no code check can target its tracking; the brand value is a design target."
+        },
+        "talk-card-r008": {
+          "not_verified": "Running copy is optional on the talk cards and no exact string is known, so no code check can target its tracking; the brand value is a design target."
+        },
+        "talk-card-r009": {
+          "not_verified": "Running copy is optional on the talk cards and no exact string is known, so no code check can target its tracking; the brand value is a design target."
+        },
+        "talk-card-combined": {
+          "na": "Each page is checked by code to look identical to its single card file (A004 to A011), so the single-card checks cover this rule."
+        }
+      }
+    },
+    {
+      "rule_id": "T14",
+      "kind": "type",
+      "rule": "Running text has at most 65 characters per line.",
+      "source": "brand_identity.type_system.scale[03]",
+      "cells": {
+        "speaker-onepager": {
+          "checks": [
+            "PHOTO-20/speaker-onepager/H029"
+          ]
+        },
+        "event-announcement-r002": {
+          "checks": [
+            "PHOTO-20/event-announcement-r002/H032"
+          ]
+        },
+        "event-announcement-r003": {
+          "checks": [
+            "PHOTO-20/event-announcement-r003/H032"
+          ]
+        },
+        "event-announcement-r008": {
+          "checks": [
+            "PHOTO-20/event-announcement-r008/H032"
+          ]
+        },
+        "event-banner-r002": {
+          "checks": [
+            "PHOTO-20/event-banner-r002/H030"
+          ]
+        },
+        "event-banner-r003": {
+          "checks": [
+            "PHOTO-20/event-banner-r003/H030"
+          ]
+        },
+        "event-banner-r008": {
+          "checks": [
+            "PHOTO-20/event-banner-r008/H030"
+          ]
+        },
+        "talk-card-r002": {
+          "checks": [
+            "PHOTO-20/talk-card-r002/H028"
+          ]
+        },
+        "talk-card-r003": {
+          "checks": [
+            "PHOTO-20/talk-card-r003/H028"
+          ]
+        },
+        "talk-card-r004": {
+          "checks": [
+            "PHOTO-20/talk-card-r004/H028"
+          ]
+        },
+        "talk-card-r005": {
+          "checks": [
+            "PHOTO-20/talk-card-r005/H028"
+          ]
+        },
+        "talk-card-r006": {
+          "checks": [
+            "PHOTO-20/talk-card-r006/H028"
+          ]
+        },
+        "talk-card-r007": {
+          "checks": [
+            "PHOTO-20/talk-card-r007/H028"
+          ]
+        },
+        "talk-card-r008": {
+          "checks": [
+            "PHOTO-20/talk-card-r008/H028"
+          ]
+        },
+        "talk-card-r009": {
+          "checks": [
+            "PHOTO-20/talk-card-r009/H028"
+          ]
+        },
+        "talk-card-combined": {
+          "na": "Each page is checked by code to look identical to its single card file (A004 to A011), so the single-card checks cover this rule."
+        }
+      }
+    },
+    {
+      "rule_id": "T15",
+      "kind": "type",
+      "rule": "The event and date line (and talk-card format) is set in Inter Regular.",
       "source": "brand_identity.type_system.scale[04]",
       "cells": {
         "speaker-onepager": {
@@ -1739,9 +2702,409 @@
       }
     },
     {
-      "rule_id": "T05",
+      "rule_id": "T16",
       "kind": "type",
-      "rule": "Instrument Serif Regular is for Astrid's name and the AV monogram only; talk titles are Inter Medium, running copy and fine print Roman.",
+      "rule": "The event and date line is 28 px on the announcement and banner PNGs and 9.5 pt on the talk-card PDFs.",
+      "source": "brand_identity.type_system.scale[04]",
+      "cells": {
+        "speaker-onepager": {
+          "na": "The brief states the fine-print size for the PNGs and the talk cards only, not the one-pager."
+        },
+        "event-announcement-r002": {
+          "not_verified": "Exact type size cannot be measured reliably in a delivered PNG; the brand value is a design target. Separate checks confirm the date is smaller than the title and her name."
+        },
+        "event-announcement-r003": {
+          "not_verified": "Exact type size cannot be measured reliably in a delivered PNG; the brand value is a design target. Separate checks confirm the date is smaller than the title and her name."
+        },
+        "event-announcement-r008": {
+          "not_verified": "Exact type size cannot be measured reliably in a delivered PNG; the brand value is a design target. Separate checks confirm the date is smaller than the title and her name."
+        },
+        "event-banner-r002": {
+          "not_verified": "Exact type size cannot be measured reliably in a delivered PNG; the brand value is a design target. Separate checks confirm the date is smaller than the title and her name."
+        },
+        "event-banner-r003": {
+          "not_verified": "Exact type size cannot be measured reliably in a delivered PNG; the brand value is a design target. Separate checks confirm the date is smaller than the title and her name."
+        },
+        "event-banner-r008": {
+          "not_verified": "Exact type size cannot be measured reliably in a delivered PNG; the brand value is a design target. Separate checks confirm the date is smaller than the title and her name."
+        },
+        "talk-card-r002": {
+          "checks": [
+            "PHOTO-20/talk-card-r002/A014",
+            "PHOTO-20/talk-card-r002/A015",
+            "PHOTO-20/talk-card-r002/A016"
+          ]
+        },
+        "talk-card-r003": {
+          "checks": [
+            "PHOTO-20/talk-card-r003/A014",
+            "PHOTO-20/talk-card-r003/A015",
+            "PHOTO-20/talk-card-r003/A016"
+          ]
+        },
+        "talk-card-r004": {
+          "checks": [
+            "PHOTO-20/talk-card-r004/A014",
+            "PHOTO-20/talk-card-r004/A015",
+            "PHOTO-20/talk-card-r004/A016"
+          ]
+        },
+        "talk-card-r005": {
+          "checks": [
+            "PHOTO-20/talk-card-r005/A014",
+            "PHOTO-20/talk-card-r005/A015",
+            "PHOTO-20/talk-card-r005/A016"
+          ]
+        },
+        "talk-card-r006": {
+          "checks": [
+            "PHOTO-20/talk-card-r006/A014",
+            "PHOTO-20/talk-card-r006/A015",
+            "PHOTO-20/talk-card-r006/A016"
+          ]
+        },
+        "talk-card-r007": {
+          "checks": [
+            "PHOTO-20/talk-card-r007/A014",
+            "PHOTO-20/talk-card-r007/A015",
+            "PHOTO-20/talk-card-r007/A016"
+          ]
+        },
+        "talk-card-r008": {
+          "checks": [
+            "PHOTO-20/talk-card-r008/A014",
+            "PHOTO-20/talk-card-r008/A015",
+            "PHOTO-20/talk-card-r008/A016"
+          ]
+        },
+        "talk-card-r009": {
+          "checks": [
+            "PHOTO-20/talk-card-r009/A014",
+            "PHOTO-20/talk-card-r009/A015",
+            "PHOTO-20/talk-card-r009/A016"
+          ]
+        },
+        "talk-card-combined": {
+          "na": "Each page is checked by code to look identical to its single card file (A004 to A011), so the single-card checks cover this rule."
+        }
+      }
+    },
+    {
+      "rule_id": "T17",
+      "kind": "type",
+      "rule": "The event and date line has 36-pixel leading on the PNGs and 13-point leading on the talk cards where it runs over two lines.",
+      "source": "brand_identity.type_system.scale[04]",
+      "cells": {
+        "speaker-onepager": {
+          "na": "The brief states fine-print leading for the PNGs and the talk cards only, not the one-pager."
+        },
+        "event-announcement-r002": {
+          "not_verified": "Exact leading cannot be measured in a delivered PNG; the brand value is a design target."
+        },
+        "event-announcement-r003": {
+          "not_verified": "Exact leading cannot be measured in a delivered PNG; the brand value is a design target."
+        },
+        "event-announcement-r008": {
+          "not_verified": "Exact leading cannot be measured in a delivered PNG; the brand value is a design target."
+        },
+        "event-banner-r002": {
+          "not_verified": "Exact leading cannot be measured in a delivered PNG; the brand value is a design target."
+        },
+        "event-banner-r003": {
+          "not_verified": "Exact leading cannot be measured in a delivered PNG; the brand value is a design target."
+        },
+        "event-banner-r008": {
+          "not_verified": "Exact leading cannot be measured in a delivered PNG; the brand value is a design target."
+        },
+        "talk-card-r002": {
+          "not_verified": "Event, date and format are short lines that need not wrap, so code cannot rely on measuring their leading; the value is a design target."
+        },
+        "talk-card-r003": {
+          "not_verified": "Event, date and format are short lines that need not wrap, so code cannot rely on measuring their leading; the value is a design target."
+        },
+        "talk-card-r004": {
+          "not_verified": "Event, date and format are short lines that need not wrap, so code cannot rely on measuring their leading; the value is a design target."
+        },
+        "talk-card-r005": {
+          "not_verified": "Event, date and format are short lines that need not wrap, so code cannot rely on measuring their leading; the value is a design target."
+        },
+        "talk-card-r006": {
+          "not_verified": "Event, date and format are short lines that need not wrap, so code cannot rely on measuring their leading; the value is a design target."
+        },
+        "talk-card-r007": {
+          "not_verified": "Event, date and format are short lines that need not wrap, so code cannot rely on measuring their leading; the value is a design target."
+        },
+        "talk-card-r008": {
+          "not_verified": "Event, date and format are short lines that need not wrap, so code cannot rely on measuring their leading; the value is a design target."
+        },
+        "talk-card-r009": {
+          "not_verified": "Event, date and format are short lines that need not wrap, so code cannot rely on measuring their leading; the value is a design target."
+        },
+        "talk-card-combined": {
+          "na": "Each page is checked by code to look identical to its single card file (A004 to A011), so the single-card checks cover this rule."
+        }
+      }
+    },
+    {
+      "rule_id": "T18",
+      "kind": "type",
+      "rule": "The event and date line (and talk-card format) has tracking +15 units.",
+      "source": "brand_identity.type_system.scale[04]",
+      "cells": {
+        "speaker-onepager": {
+          "not_verified": "No event or date line is required on the one-pager, so no known text can be checked by code; +15 tracking is a design target."
+        },
+        "event-announcement-r002": {
+          "not_verified": "Exact tracking cannot be measured in a delivered PNG; the brand value is a design target."
+        },
+        "event-announcement-r003": {
+          "not_verified": "Exact tracking cannot be measured in a delivered PNG; the brand value is a design target."
+        },
+        "event-announcement-r008": {
+          "not_verified": "Exact tracking cannot be measured in a delivered PNG; the brand value is a design target."
+        },
+        "event-banner-r002": {
+          "not_verified": "Exact tracking cannot be measured in a delivered PNG; the brand value is a design target."
+        },
+        "event-banner-r003": {
+          "not_verified": "Exact tracking cannot be measured in a delivered PNG; the brand value is a design target."
+        },
+        "event-banner-r008": {
+          "not_verified": "Exact tracking cannot be measured in a delivered PNG; the brand value is a design target."
+        },
+        "talk-card-r002": {
+          "checks": [
+            "PHOTO-20/talk-card-r002/A019",
+            "PHOTO-20/talk-card-r002/A020",
+            "PHOTO-20/talk-card-r002/A021"
+          ]
+        },
+        "talk-card-r003": {
+          "checks": [
+            "PHOTO-20/talk-card-r003/A019",
+            "PHOTO-20/talk-card-r003/A020",
+            "PHOTO-20/talk-card-r003/A021"
+          ]
+        },
+        "talk-card-r004": {
+          "checks": [
+            "PHOTO-20/talk-card-r004/A019",
+            "PHOTO-20/talk-card-r004/A020",
+            "PHOTO-20/talk-card-r004/A021"
+          ]
+        },
+        "talk-card-r005": {
+          "checks": [
+            "PHOTO-20/talk-card-r005/A019",
+            "PHOTO-20/talk-card-r005/A020",
+            "PHOTO-20/talk-card-r005/A021"
+          ]
+        },
+        "talk-card-r006": {
+          "checks": [
+            "PHOTO-20/talk-card-r006/A019",
+            "PHOTO-20/talk-card-r006/A020",
+            "PHOTO-20/talk-card-r006/A021"
+          ]
+        },
+        "talk-card-r007": {
+          "checks": [
+            "PHOTO-20/talk-card-r007/A019",
+            "PHOTO-20/talk-card-r007/A020",
+            "PHOTO-20/talk-card-r007/A021"
+          ]
+        },
+        "talk-card-r008": {
+          "checks": [
+            "PHOTO-20/talk-card-r008/A019",
+            "PHOTO-20/talk-card-r008/A020",
+            "PHOTO-20/talk-card-r008/A021"
+          ]
+        },
+        "talk-card-r009": {
+          "checks": [
+            "PHOTO-20/talk-card-r009/A019",
+            "PHOTO-20/talk-card-r009/A020",
+            "PHOTO-20/talk-card-r009/A021"
+          ]
+        },
+        "talk-card-combined": {
+          "na": "Each page is checked by code to look identical to its single card file (A004 to A011), so the single-card checks cover this rule."
+        }
+      }
+    },
+    {
+      "rule_id": "T19",
+      "kind": "type",
+      "rule": "The talk title is larger than the event and date line (64 px against 28 px on PNGs; against 9.5 pt on talk cards).",
+      "source": "brand_identity.type_system.scale[02],[04]",
+      "cells": {
+        "speaker-onepager": {
+          "na": "The one-pager carries no required event and date line to compare against."
+        },
+        "event-announcement-r002": {
+          "checks": [
+            "PHOTO-20/event-announcement-r002/H057"
+          ]
+        },
+        "event-announcement-r003": {
+          "checks": [
+            "PHOTO-20/event-announcement-r003/H057"
+          ]
+        },
+        "event-announcement-r008": {
+          "checks": [
+            "PHOTO-20/event-announcement-r008/H057"
+          ]
+        },
+        "event-banner-r002": {
+          "checks": [
+            "PHOTO-20/event-banner-r002/H010"
+          ]
+        },
+        "event-banner-r003": {
+          "checks": [
+            "PHOTO-20/event-banner-r003/H011"
+          ]
+        },
+        "event-banner-r008": {
+          "checks": [
+            "PHOTO-20/event-banner-r008/H011"
+          ]
+        },
+        "talk-card-r002": {
+          "checks": [
+            "PHOTO-20/talk-card-r002/H007"
+          ]
+        },
+        "talk-card-r003": {
+          "checks": [
+            "PHOTO-20/talk-card-r003/H006"
+          ]
+        },
+        "talk-card-r004": {
+          "checks": [
+            "PHOTO-20/talk-card-r004/H006"
+          ]
+        },
+        "talk-card-r005": {
+          "checks": [
+            "PHOTO-20/talk-card-r005/H006"
+          ]
+        },
+        "talk-card-r006": {
+          "checks": [
+            "PHOTO-20/talk-card-r006/H005"
+          ]
+        },
+        "talk-card-r007": {
+          "checks": [
+            "PHOTO-20/talk-card-r007/H006"
+          ]
+        },
+        "talk-card-r008": {
+          "checks": [
+            "PHOTO-20/talk-card-r008/H006"
+          ]
+        },
+        "talk-card-r009": {
+          "checks": [
+            "PHOTO-20/talk-card-r009/H006"
+          ]
+        },
+        "talk-card-combined": {
+          "na": "Each page is checked by code to look identical to its single card file (A004 to A011), so the single-card checks cover this rule."
+        }
+      }
+    },
+    {
+      "rule_id": "T20",
+      "kind": "type",
+      "rule": "Her name is larger than the event and date line (45 1/3 px against 28 px on PNGs; 34 pt against 9.5 pt on talk cards).",
+      "source": "brand_identity.type_system.scale[01],[04]",
+      "cells": {
+        "speaker-onepager": {
+          "na": "The one-pager carries no required event and date line to compare against."
+        },
+        "event-announcement-r002": {
+          "checks": [
+            "PHOTO-20/event-announcement-r002/H011"
+          ]
+        },
+        "event-announcement-r003": {
+          "checks": [
+            "PHOTO-20/event-announcement-r003/H008"
+          ]
+        },
+        "event-announcement-r008": {
+          "checks": [
+            "PHOTO-20/event-announcement-r008/H011"
+          ]
+        },
+        "event-banner-r002": {
+          "checks": [
+            "PHOTO-20/event-banner-r002/H009"
+          ]
+        },
+        "event-banner-r003": {
+          "checks": [
+            "PHOTO-20/event-banner-r003/H010"
+          ]
+        },
+        "event-banner-r008": {
+          "checks": [
+            "PHOTO-20/event-banner-r008/H010"
+          ]
+        },
+        "talk-card-r002": {
+          "checks": [
+            "PHOTO-20/talk-card-r002/H008"
+          ]
+        },
+        "talk-card-r003": {
+          "checks": [
+            "PHOTO-20/talk-card-r003/H007"
+          ]
+        },
+        "talk-card-r004": {
+          "checks": [
+            "PHOTO-20/talk-card-r004/H007"
+          ]
+        },
+        "talk-card-r005": {
+          "checks": [
+            "PHOTO-20/talk-card-r005/H007"
+          ]
+        },
+        "talk-card-r006": {
+          "checks": [
+            "PHOTO-20/talk-card-r006/H008"
+          ]
+        },
+        "talk-card-r007": {
+          "checks": [
+            "PHOTO-20/talk-card-r007/H007"
+          ]
+        },
+        "talk-card-r008": {
+          "checks": [
+            "PHOTO-20/talk-card-r008/H007"
+          ]
+        },
+        "talk-card-r009": {
+          "checks": [
+            "PHOTO-20/talk-card-r009/H007"
+          ]
+        },
+        "talk-card-combined": {
+          "na": "Each page is checked by code to look identical to its single card file (A004 to A011), so the single-card checks cover this rule."
+        }
+      }
+    },
+    {
+      "rule_id": "T21",
+      "kind": "type",
+      "rule": "Instrument Serif Regular is used for Astrid's name and the AV monogram only.",
       "source": "brand_identity.type_system.rules[1]",
       "cells": {
         "speaker-onepager": {
@@ -1825,9 +3188,9 @@
       }
     },
     {
-      "rule_id": "T06",
+      "rule_id": "T22",
       "kind": "type",
-      "rule": "The AV monogram appears once per surface, with its interlocking A and V retained.",
+      "rule": "The AV monogram appears once per surface.",
       "source": "brand_identity.type_system.rules[2]",
       "cells": {
         "speaker-onepager": {
@@ -1911,98 +3274,270 @@
       }
     },
     {
-      "rule_id": "T07",
+      "rule_id": "T23",
       "kind": "type",
-      "rule": "The monogram sits above Astrid's name and before the portrait in reading order.",
+      "rule": "The AV monogram keeps its interlocking A and V.",
       "source": "brand_identity.type_system.rules[2]",
       "cells": {
         "speaker-onepager": {
           "checks": [
-            "PHOTO-20/speaker-onepager/H022",
+            "PHOTO-20/speaker-onepager/H006",
+            "PHOTO-20/speaker-onepager/H024"
+          ]
+        },
+        "event-announcement-r002": {
+          "checks": [
+            "PHOTO-20/event-announcement-r002/H021",
+            "PHOTO-20/event-announcement-r002/H027"
+          ]
+        },
+        "event-announcement-r003": {
+          "checks": [
+            "PHOTO-20/event-announcement-r003/H021",
+            "PHOTO-20/event-announcement-r003/H027"
+          ]
+        },
+        "event-announcement-r008": {
+          "checks": [
+            "PHOTO-20/event-announcement-r008/H021",
+            "PHOTO-20/event-announcement-r008/H027"
+          ]
+        },
+        "event-banner-r002": {
+          "checks": [
+            "PHOTO-20/event-banner-r002/H019",
+            "PHOTO-20/event-banner-r002/H025"
+          ]
+        },
+        "event-banner-r003": {
+          "checks": [
+            "PHOTO-20/event-banner-r003/H019",
+            "PHOTO-20/event-banner-r003/H025"
+          ]
+        },
+        "event-banner-r008": {
+          "checks": [
+            "PHOTO-20/event-banner-r008/H019",
+            "PHOTO-20/event-banner-r008/H025"
+          ]
+        },
+        "talk-card-r002": {
+          "checks": [
+            "PHOTO-20/talk-card-r002/H010",
+            "PHOTO-20/talk-card-r002/H023"
+          ]
+        },
+        "talk-card-r003": {
+          "checks": [
+            "PHOTO-20/talk-card-r003/H010",
+            "PHOTO-20/talk-card-r003/H023"
+          ]
+        },
+        "talk-card-r004": {
+          "checks": [
+            "PHOTO-20/talk-card-r004/H010",
+            "PHOTO-20/talk-card-r004/H023"
+          ]
+        },
+        "talk-card-r005": {
+          "checks": [
+            "PHOTO-20/talk-card-r005/H010",
+            "PHOTO-20/talk-card-r005/H023"
+          ]
+        },
+        "talk-card-r006": {
+          "checks": [
+            "PHOTO-20/talk-card-r006/H011",
+            "PHOTO-20/talk-card-r006/H024"
+          ]
+        },
+        "talk-card-r007": {
+          "checks": [
+            "PHOTO-20/talk-card-r007/H010",
+            "PHOTO-20/talk-card-r007/H023"
+          ]
+        },
+        "talk-card-r008": {
+          "checks": [
+            "PHOTO-20/talk-card-r008/H010",
+            "PHOTO-20/talk-card-r008/H023"
+          ]
+        },
+        "talk-card-r009": {
+          "checks": [
+            "PHOTO-20/talk-card-r009/H010",
+            "PHOTO-20/talk-card-r009/H023"
+          ]
+        },
+        "talk-card-combined": {
+          "na": "Each page is checked by code to look identical to its single card file (A004 to A011), so the single-card checks cover this rule."
+        }
+      }
+    },
+    {
+      "rule_id": "T24",
+      "kind": "type",
+      "rule": "The AV monogram sits above Astrid's name.",
+      "source": "brand_identity.type_system.rules[2]",
+      "cells": {
+        "speaker-onepager": {
+          "checks": [
+            "PHOTO-20/speaker-onepager/H022"
+          ]
+        },
+        "event-announcement-r002": {
+          "checks": [
+            "PHOTO-20/event-announcement-r002/H025"
+          ]
+        },
+        "event-announcement-r003": {
+          "checks": [
+            "PHOTO-20/event-announcement-r003/H025"
+          ]
+        },
+        "event-announcement-r008": {
+          "checks": [
+            "PHOTO-20/event-announcement-r008/H025"
+          ]
+        },
+        "event-banner-r002": {
+          "checks": [
+            "PHOTO-20/event-banner-r002/H023"
+          ]
+        },
+        "event-banner-r003": {
+          "checks": [
+            "PHOTO-20/event-banner-r003/H023"
+          ]
+        },
+        "event-banner-r008": {
+          "checks": [
+            "PHOTO-20/event-banner-r008/H023"
+          ]
+        },
+        "talk-card-r002": {
+          "checks": [
+            "PHOTO-20/talk-card-r002/H021"
+          ]
+        },
+        "talk-card-r003": {
+          "checks": [
+            "PHOTO-20/talk-card-r003/H021"
+          ]
+        },
+        "talk-card-r004": {
+          "checks": [
+            "PHOTO-20/talk-card-r004/H021"
+          ]
+        },
+        "talk-card-r005": {
+          "checks": [
+            "PHOTO-20/talk-card-r005/H021"
+          ]
+        },
+        "talk-card-r006": {
+          "checks": [
+            "PHOTO-20/talk-card-r006/H022"
+          ]
+        },
+        "talk-card-r007": {
+          "checks": [
+            "PHOTO-20/talk-card-r007/H021"
+          ]
+        },
+        "talk-card-r008": {
+          "checks": [
+            "PHOTO-20/talk-card-r008/H021"
+          ]
+        },
+        "talk-card-r009": {
+          "checks": [
+            "PHOTO-20/talk-card-r009/H021"
+          ]
+        },
+        "talk-card-combined": {
+          "na": "Each page is checked by code to look identical to its single card file (A004 to A011), so the single-card checks cover this rule."
+        }
+      }
+    },
+    {
+      "rule_id": "T25",
+      "kind": "type",
+      "rule": "The AV monogram comes before the portrait in reading order.",
+      "source": "brand_identity.type_system.rules[2]",
+      "cells": {
+        "speaker-onepager": {
+          "checks": [
             "PHOTO-20/speaker-onepager/H026"
           ]
         },
         "event-announcement-r002": {
           "checks": [
-            "PHOTO-20/event-announcement-r002/H025",
             "PHOTO-20/event-announcement-r002/H029"
           ]
         },
         "event-announcement-r003": {
           "checks": [
-            "PHOTO-20/event-announcement-r003/H025",
             "PHOTO-20/event-announcement-r003/H029"
           ]
         },
         "event-announcement-r008": {
           "checks": [
-            "PHOTO-20/event-announcement-r008/H025",
             "PHOTO-20/event-announcement-r008/H029"
           ]
         },
         "event-banner-r002": {
           "checks": [
-            "PHOTO-20/event-banner-r002/H023",
             "PHOTO-20/event-banner-r002/H027"
           ]
         },
         "event-banner-r003": {
           "checks": [
-            "PHOTO-20/event-banner-r003/H023",
             "PHOTO-20/event-banner-r003/H027"
           ]
         },
         "event-banner-r008": {
           "checks": [
-            "PHOTO-20/event-banner-r008/H023",
             "PHOTO-20/event-banner-r008/H027"
           ]
         },
         "talk-card-r002": {
           "checks": [
-            "PHOTO-20/talk-card-r002/H021",
             "PHOTO-20/talk-card-r002/H025"
           ]
         },
         "talk-card-r003": {
           "checks": [
-            "PHOTO-20/talk-card-r003/H021",
             "PHOTO-20/talk-card-r003/H025"
           ]
         },
         "talk-card-r004": {
           "checks": [
-            "PHOTO-20/talk-card-r004/H021",
             "PHOTO-20/talk-card-r004/H025"
           ]
         },
         "talk-card-r005": {
           "checks": [
-            "PHOTO-20/talk-card-r005/H021",
             "PHOTO-20/talk-card-r005/H025"
           ]
         },
         "talk-card-r006": {
           "checks": [
-            "PHOTO-20/talk-card-r006/H022",
             "PHOTO-20/talk-card-r006/H026"
           ]
         },
         "talk-card-r007": {
           "checks": [
-            "PHOTO-20/talk-card-r007/H021",
             "PHOTO-20/talk-card-r007/H025"
           ]
         },
         "talk-card-r008": {
           "checks": [
-            "PHOTO-20/talk-card-r008/H021",
             "PHOTO-20/talk-card-r008/H025"
           ]
         },
         "talk-card-r009": {
           "checks": [
-            "PHOTO-20/talk-card-r009/H021",
             "PHOTO-20/talk-card-r009/H025"
           ]
         },
@@ -2012,7 +3547,7 @@
       }
     },
     {
-      "rule_id": "T08",
+      "rule_id": "T26",
       "kind": "type",
       "rule": "The AV monogram is at least 18 mm wide in a PDF and 69 px wide on a PNG.",
       "source": "brand_identity.type_system.rules[3]",
@@ -2023,22 +3558,34 @@
           ]
         },
         "event-announcement-r002": {
-          "na": "A 69 px minimum width cannot be judged by eye on a PNG; exact raster sizes are not checked."
+          "checks": [
+            "PHOTO-20/event-announcement-r002/H059"
+          ]
         },
         "event-announcement-r003": {
-          "na": "A 69 px minimum width cannot be judged by eye on a PNG; exact raster sizes are not checked."
+          "checks": [
+            "PHOTO-20/event-announcement-r003/H059"
+          ]
         },
         "event-announcement-r008": {
-          "na": "A 69 px minimum width cannot be judged by eye on a PNG; exact raster sizes are not checked."
+          "checks": [
+            "PHOTO-20/event-announcement-r008/H059"
+          ]
         },
         "event-banner-r002": {
-          "na": "A 69 px minimum width cannot be judged by eye on a PNG; exact raster sizes are not checked."
+          "checks": [
+            "PHOTO-20/event-banner-r002/H056"
+          ]
         },
         "event-banner-r003": {
-          "na": "A 69 px minimum width cannot be judged by eye on a PNG; exact raster sizes are not checked."
+          "checks": [
+            "PHOTO-20/event-banner-r003/H056"
+          ]
         },
         "event-banner-r008": {
-          "na": "A 69 px minimum width cannot be judged by eye on a PNG; exact raster sizes are not checked."
+          "checks": [
+            "PHOTO-20/event-banner-r008/H056"
+          ]
         },
         "talk-card-r002": {
           "checks": [
@@ -2086,7 +3633,7 @@
       }
     },
     {
-      "rule_id": "T09",
+      "rule_id": "T27",
       "kind": "type",
       "rule": "Signature move, the shared stroke: the two inner diagonals of the interlocked A and V read as one hairline.",
       "source": "brand_identity.type_system.signature_move",
@@ -2172,7 +3719,7 @@
       }
     },
     {
-      "rule_id": "T10",
+      "rule_id": "T28",
       "kind": "type",
       "rule": "The combined talk-card PDF retains the type settings of its eight individual cards without scaling the pages.",
       "source": "brand_identity.type_system.rules[4]",
@@ -2244,7 +3791,13 @@
       "cells": {
         "speaker-onepager": {
           "checks": [
-            "PHOTO-20/speaker-onepager/H002"
+            "PHOTO-20/speaker-onepager/H011",
+            "PHOTO-20/speaker-onepager/H057",
+            "PHOTO-20/speaker-onepager/H058",
+            "PHOTO-20/speaker-onepager/H001",
+            "PHOTO-20/speaker-onepager/H009",
+            "PHOTO-20/speaker-onepager/H053",
+            "PHOTO-20/speaker-onepager/H018"
           ]
         },
         "event-announcement-r002": {
@@ -2974,72 +4527,86 @@
         },
         "event-announcement-r002": {
           "checks": [
-            "PHOTO-20/event-announcement-r002/H007"
+            "PHOTO-20/event-announcement-r002/H007",
+            "PHOTO-20/event-announcement-r002/H060"
           ]
         },
         "event-announcement-r003": {
           "checks": [
-            "PHOTO-20/event-announcement-r003/H007"
+            "PHOTO-20/event-announcement-r003/H007",
+            "PHOTO-20/event-announcement-r003/H060"
           ]
         },
         "event-announcement-r008": {
           "checks": [
-            "PHOTO-20/event-announcement-r008/H007"
+            "PHOTO-20/event-announcement-r008/H007",
+            "PHOTO-20/event-announcement-r008/H060"
           ]
         },
         "event-banner-r002": {
           "checks": [
-            "PHOTO-20/event-banner-r002/H006"
+            "PHOTO-20/event-banner-r002/H006",
+            "PHOTO-20/event-banner-r002/H057"
           ]
         },
         "event-banner-r003": {
           "checks": [
-            "PHOTO-20/event-banner-r003/H007"
+            "PHOTO-20/event-banner-r003/H007",
+            "PHOTO-20/event-banner-r003/H057"
           ]
         },
         "event-banner-r008": {
           "checks": [
-            "PHOTO-20/event-banner-r008/H007"
+            "PHOTO-20/event-banner-r008/H007",
+            "PHOTO-20/event-banner-r008/H057"
           ]
         },
         "talk-card-r002": {
           "checks": [
-            "PHOTO-20/talk-card-r002/H054"
+            "PHOTO-20/talk-card-r002/H054",
+            "PHOTO-20/talk-card-r002/H057"
           ]
         },
         "talk-card-r003": {
           "checks": [
-            "PHOTO-20/talk-card-r003/H009"
+            "PHOTO-20/talk-card-r003/H009",
+            "PHOTO-20/talk-card-r003/H056"
           ]
         },
         "talk-card-r004": {
           "checks": [
-            "PHOTO-20/talk-card-r004/H009"
+            "PHOTO-20/talk-card-r004/H009",
+            "PHOTO-20/talk-card-r004/H056"
           ]
         },
         "talk-card-r005": {
           "checks": [
-            "PHOTO-20/talk-card-r005/H009"
+            "PHOTO-20/talk-card-r005/H009",
+            "PHOTO-20/talk-card-r005/H056"
           ]
         },
         "talk-card-r006": {
           "checks": [
-            "PHOTO-20/talk-card-r006/H010"
+            "PHOTO-20/talk-card-r006/H010",
+            "PHOTO-20/talk-card-r006/H057"
           ]
         },
         "talk-card-r007": {
           "checks": [
-            "PHOTO-20/talk-card-r007/H009"
+            "PHOTO-20/talk-card-r007/H009",
+            "PHOTO-20/talk-card-r007/H056"
           ]
         },
         "talk-card-r008": {
           "checks": [
-            "PHOTO-20/talk-card-r008/H009"
+            "PHOTO-20/talk-card-r008/H009",
+            "PHOTO-20/talk-card-r008/H056"
           ]
         },
         "talk-card-r009": {
           "checks": [
-            "PHOTO-20/talk-card-r009/H009"
+            "PHOTO-20/talk-card-r009/H009",
+            "PHOTO-20/talk-card-r009/H057"
           ]
         },
         "talk-card-combined": {
@@ -3056,13 +4623,14 @@
         "speaker-onepager": {
           "checks": [
             "PHOTO-20/speaker-onepager/H001",
-            "PHOTO-20/speaker-onepager/H002",
             "PHOTO-20/speaker-onepager/H009",
             "PHOTO-20/speaker-onepager/H010",
-            "PHOTO-20/speaker-onepager/H011",
             "PHOTO-20/speaker-onepager/H012",
             "PHOTO-20/speaker-onepager/H053",
-            "PHOTO-20/speaker-onepager/H055"
+            "PHOTO-20/speaker-onepager/H055",
+            "PHOTO-20/speaker-onepager/H011",
+            "PHOTO-20/speaker-onepager/H057",
+            "PHOTO-20/speaker-onepager/H058"
           ]
         },
         "event-announcement-r002": {

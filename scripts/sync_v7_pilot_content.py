@@ -73,7 +73,7 @@ def sync_csv(path: Path, specs: dict, check: bool) -> None:
             if "Client brief" in row:
                 row["Client brief"] = spec["client_brief"]
             if "Review page" in row:
-                row["Review page"] = "https://dhigdec.github.io/creative-ai-benchmark/gatsby-v7/#" + spec["new_id"]
+                row["Review page"] = "https://deccanai-org.github.io/creative-ai-benchmark/gatsby-v7/#" + spec["new_id"]
             if 'Assets' in row: row['Assets']=str(len(spec['assets']))
             if 'Deliverables' in row:
                 row['Deliverables']='\n'.join(g['name']+': '+str(sum(o['group_id']==g['id'] for o in spec['deliverables']))+' files' for g in spec['deliverable_groups'])

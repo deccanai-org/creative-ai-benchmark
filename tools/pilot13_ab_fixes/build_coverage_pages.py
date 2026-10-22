@@ -25,6 +25,9 @@ table.cov{border-collapse:collapse;font-size:12px;min-width:100%}
 .cov .kind{display:block;color:#59645f;font-size:10.5px;text-transform:uppercase;letter-spacing:.06em;margin-bottom:2px}
 .cov td.ok{background:#eef7f1;color:#1f5c40;white-space:nowrap}.cov td.na{background:#f4f4f2;color:#7a837e}
 .cov td.missing{background:#fde8e6;color:#9b2c22;font-weight:700}
+.cov td.nv{background:#fff4dc;color:#7a5200}
+.method{display:inline-block;font-size:10.5px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;border-radius:3px;padding:1px 5px;margin-right:4px;background:#e8eef9;color:#2a4f8a}
+.method.estimate{background:#f3e8f9;color:#6b2a8a}
 .stats{display:flex;gap:22px;flex-wrap:wrap;margin:6px 0 4px}.stats div{font-size:13px}.stats strong{font-size:20px;display:block}
 details.deliv{border:1px solid #e0e6e1;border-radius:6px;padding:10px 14px;margin-bottom:8px}
 details.deliv summary{cursor:pointer;font-weight:700}details.deliv ul{margin:8px 0 0;padding-left:18px}
@@ -42,7 +45,8 @@ def page(tid):
     cells = [r['cells'][o['output_id']] for r in rules for o in outputs]
     covered = sum(1 for c in cells if c.get('checks'))
     na = sum(1 for c in cells if 'na' in c)
-    missing = len(cells) - covered - na
+    nv = sum(1 for c in cells if 'not_verified' in c)
+    missing = len(cells) - covered - na - nv
     head = ''.join(f'<th title="{html.escape(o["name"])}">{html.escape(Path(o["path"]).name)}</th>' for o in outputs)
     rows = []
     for r in rules:
@@ -55,6 +59,8 @@ def page(tid):
                 tds.append(f'<td class="ok" title="{html.escape(tip)}">{html.escape(label)}</td>')
             elif 'na' in cell:
                 tds.append(f'<td class="na" title="{html.escape(cell["na"])}">n/a</td>')
+            elif 'not_verified' in cell:
+                tds.append(f'<td class="nv" title="{html.escape(cell["not_verified"])}">not verified</td>')
             else:
                 tds.append('<td class="missing">missing</td>')
         rows.append(f'<tr><th class="rule" scope="row"><span class="kind">{html.escape(KIND.get(r["kind"], r["kind"]))}</span>{html.escape(r["rule"])}</th>{"".join(tds)}</tr>')
@@ -67,28 +73,32 @@ def page(tid):
                 for c in cell['checks']:
                     if c in checks:
                         kind = 'auto' if checks[c]['type'] == 'auto' else 'human'
-                        items.append(f'<li>{html.escape(r["rule"])}<br><code>{html.escape(c.split("/")[-1])} · {kind}</code> {html.escape(checks[c]["check"])}</li>')
+                        m = checks[c].get('method', 'look')
+                        tag = '' if kind == 'auto' or m == 'look' else f'<span class="method {m}" title="{html.escape(checks[c].get("method_note", ""))}">{m}</span>'
+                        items.append(f'<li>{html.escape(r["rule"])}<br><code>{html.escape(c.split("/")[-1])} · {kind}</code> {tag}{html.escape(checks[c]["check"])}</li>')
+            elif 'not_verified' in cell:
+                items.append(f'<li>{html.escape(r["rule"])}<br><span class="method estimate">not verified</span> {html.escape(cell["not_verified"])}</li>')
         per.append(f'<details class="deliv"><summary>{html.escape(o["name"])} <code>{html.escape(Path(o["path"]).name)}</code> · {len(items)} checks</summary><ul>{"".join(items)}</ul></details>')
     doc = f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{html.escape(tid)} verifier coverage</title><style>{CSS}{EXTRA_CSS}</style></head><body><main class="page">
 <p class="eyebrow"><a href="index.html">Verifier coverage</a> · <a href="../{tid}.html">Task brief</a></p>
 <h1>{html.escape(spec["task_name"])}</h1>
-<p class="muted">Every brief and brand-identity constraint, and every requirement listed on a deliverable, against every deliverable. A cell names the verifier that checks that rule on that file (hover for its text); “n/a” means the rule does not apply to that file (hover for why).</p>
-<div class="stats"><div><strong>{len(rules)}</strong>rules</div><div><strong>{len(outputs)}</strong>deliverables</div><div><strong>{covered}</strong>cells checked</div><div><strong>{na}</strong>not applicable</div><div><strong>{missing}</strong>missing</div></div>
+<p class="muted">Every brief and brand-identity requirement, split into single parts, against every deliverable. A cell names the verifier that checks that part on that file (hover for its text). “n/a” means the part does not apply to that file; “not verified” means it applies but no check verifies it, with the reason (for example an exact type value that cannot be measured in a delivered image). Hover for why.</p>
+<div class="stats"><div><strong>{len(rules)}</strong>rules</div><div><strong>{len(outputs)}</strong>deliverables</div><div><strong>{covered}</strong>cells checked</div><div><strong>{na}</strong>not applicable</div><div><strong>{nv}</strong>not verified</div><div><strong>{missing}</strong>missing</div></div>
 <div class="cov-wrap"><table class="cov"><thead><tr><th class="rule">Rule</th>{head}</tr></thead><tbody>{"".join(rows)}</tbody></table></div>
 <h2>Checklist by deliverable</h2>{"".join(per)}
 </main></body></html>'''
     (COV / f'{tid}.html').write_text(doc, encoding='utf-8')
-    return {'task': tid, 'name': spec['task_name'], 'rules': len(rules), 'outputs': len(outputs), 'covered': covered, 'na': na, 'missing': missing}
+    return {'task': tid, 'name': spec['task_name'], 'rules': len(rules), 'outputs': len(outputs), 'covered': covered, 'na': na, 'not_verified': nv, 'missing': missing}
 
 
 def main():
     stats = [page(tid) for tid in TASK_IDS if (COV / f'{tid}.json').is_file()]
-    rows = ''.join(f'<tr><td><a href="{s["task"]}.html">{s["task"]}</a></td><td>{html.escape(s["name"])}</td><td>{s["rules"]}</td><td>{s["outputs"]}</td><td>{s["covered"]}</td><td>{s["na"]}</td><td>{s["missing"]}</td></tr>' for s in stats)
+    rows = ''.join(f'<tr><td><a href="{s["task"]}.html">{s["task"]}</a></td><td>{html.escape(s["name"])}</td><td>{s["rules"]}</td><td>{s["outputs"]}</td><td>{s["covered"]}</td><td>{s["na"]}</td><td>{s["not_verified"]}</td><td>{s["missing"]}</td></tr>' for s in stats)
     index = f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Verifier coverage</title><style>{CSS}{EXTRA_CSS}</style></head><body><main class="page">
 <p class="eyebrow"><a href="../index.html">Pilot task briefs</a></p><h1>Verifier coverage</h1>
-<p class="muted">For each pilot task: is every brief and brand-identity constraint checked on every individual deliverable? Rule-by-deliverable tables, generated from the published verifiers (2026-10-21).</p>
-<div class="cov-wrap"><table class="cov"><thead><tr><th>Task</th><th class="rule">Name</th><th>Rules</th><th>Deliverables</th><th>Cells checked</th><th>Not applicable</th><th>Missing</th></tr></thead><tbody>{rows}</tbody></table></div>
+<p class="muted">For each pilot task: is every brief and brand-identity requirement checked on every individual deliverable? Rules are split into single parts; a part that applies but cannot be checked in the delivered file is shown as “not verified” with its reason, never counted as covered. Generated from the published verifiers (2026-10-22).</p>
+<div class="cov-wrap"><table class="cov"><thead><tr><th>Task</th><th class="rule">Name</th><th>Rules</th><th>Deliverables</th><th>Cells checked</th><th>Not applicable</th><th>Not verified</th><th>Missing</th></tr></thead><tbody>{rows}</tbody></table></div>
 </main></body></html>'''
     (COV / 'index.html').write_text(index, encoding='utf-8')
     print(json.dumps(stats, indent=1))

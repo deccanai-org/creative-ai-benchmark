@@ -1,0 +1,665 @@
+{
+ "task_id": "PHOTO-04",
+ "retire": [
+  {
+   "check_id": "PHOTO-04/villa-collection/H042",
+   "why": "Exact house-name size is now checked by code on the live PDF text.",
+   "covered_by": [
+    "new:bro-name-size-oliveto",
+    "new:bro-name-size-scogliera",
+    "new:bro-name-size-verranza"
+   ]
+  }
+ ],
+ "modify": [
+  {
+   "check_id": "PHOTO-04/booking-hero-oliveto/H061",
+   "method": "estimate",
+   "how": "Estimate the share of the designed, non-photographic area in the three accent colours; answer No only if it is clearly over 5%.",
+   "why": "An area share is an estimate, not a glance; labelled estimate with how."
+  },
+  {
+   "check_id": "PHOTO-04/booking-hero-scogliera/H061",
+   "method": "estimate",
+   "how": "Estimate the share of the designed, non-photographic area in the three accent colours; answer No only if it is clearly over 5%.",
+   "why": "An area share is an estimate, not a glance; labelled estimate with how."
+  },
+  {
+   "check_id": "PHOTO-04/booking-hero-verranza/H061",
+   "method": "estimate",
+   "how": "Estimate the share of the designed, non-photographic area in the three accent colours; answer No only if it is clearly over 5%.",
+   "why": "An area share is an estimate, not a glance; labelled estimate with how."
+  },
+  {
+   "check_id": "PHOTO-04/villa-collection/H069",
+   "method": "estimate",
+   "how": "Estimate the share of the designed, non-photographic area in the three accent colours; answer No only if it is clearly over 5%.",
+   "why": "An area share is an estimate, not a glance; labelled estimate with how."
+  },
+  {
+   "check_id": "PHOTO-04/booking-hero-oliveto/H022",
+   "method": "measure",
+   "how": "Find the longest line of body or booking text and count its characters, spaces and punctuation included.",
+   "why": "A 65-character limit needs counting, not a glance; labelled measure with how."
+  },
+  {
+   "check_id": "PHOTO-04/booking-hero-scogliera/H022",
+   "method": "measure",
+   "how": "Find the longest line of body or booking text and count its characters, spaces and punctuation included.",
+   "why": "A 65-character limit needs counting, not a glance; labelled measure with how."
+  },
+  {
+   "check_id": "PHOTO-04/booking-hero-verranza/H021",
+   "method": "measure",
+   "how": "Find the longest line of body or booking text and count its characters, spaces and punctuation included.",
+   "why": "A 65-character limit needs counting, not a glance; labelled measure with how."
+  },
+  {
+   "check_id": "PHOTO-04/villa-collection/H039",
+   "method": "measure",
+   "how": "Find the longest line of body text and count its characters, spaces and punctuation included.",
+   "why": "A 65-character limit needs counting, not a glance; labelled measure with how."
+  },
+  {
+   "check_id": "PHOTO-04/booking-hero-oliveto/H020",
+   "method": "measure",
+   "how": "In an image editor, measure the full pixel heights of initial C and capital O. Yes if C is 1.8 to 2.2 times as tall.",
+   "why": "A two-to-one cap-height ratio needs a ruler; the how now names the letters and a pass band."
+  },
+  {
+   "check_id": "PHOTO-04/booking-hero-scogliera/H020",
+   "method": "measure",
+   "how": "In an image editor, measure the full pixel heights of initial C and capital S. Yes if C is 1.8 to 2.2 times as tall.",
+   "why": "A two-to-one cap-height ratio needs a ruler; the how now names the letters and a pass band."
+  },
+  {
+   "check_id": "PHOTO-04/booking-hero-verranza/H019",
+   "method": "measure",
+   "how": "In an image editor, measure the full pixel heights of initial C and capital V. Yes if C is 1.8 to 2.2 times as tall.",
+   "why": "A two-to-one cap-height ratio needs a ruler; the how now names the letters and a pass band."
+  },
+  {
+   "check_id": "PHOTO-04/villa-collection/H037",
+   "method": "measure",
+   "how": "With Acrobat's Measure tool, measure the full heights of initial C and capital V. Yes if C is 1.8 to 2.2 times as tall.",
+   "check": "The house name heading “Casa Verranza” in “Villa comparison brochure” (villa-collection.pdf) opens with a “C” twice the cap height of the capital “V” of “Verranza”.",
+   "why": "Was one check for three headings; narrowed to Casa Verranza, with named letters and a pass band."
+  },
+  {
+   "check_id": "PHOTO-04/villa-collection/H047",
+   "method": "measure",
+   "how": "In Acrobat, choose Edit PDF, click inside a body paragraph and read the font size in the Format panel.",
+   "why": "Body size has no fixed text string for code; kept as a measured Acrobat check with how."
+  },
+  {
+   "check_id": "PHOTO-04/villa-collection/H048",
+   "method": "measure",
+   "how": "With Acrobat's Measure tool set to points, measure two neighbouring baselines in a wrapped body paragraph. Yes if 14.5 to 15.5 pt apart.",
+   "why": "Body leading has no fixed text string for code; kept as a measured Acrobat check with how."
+  },
+  {
+   "check_id": "PHOTO-04/booking-hero-oliveto/H014",
+   "check": "All type, panels, buttons and rules on “Villa booking hero - Oliveto” (booking-hero-oliveto.png) are solid colour at full opacity: no tint, transparency, gradient, shadow or blend mode.",
+   "why": "The opacity rule covers every palette colour; the check named only panels and buttons."
+  },
+  {
+   "check_id": "PHOTO-04/booking-hero-scogliera/H014",
+   "check": "All type, panels, buttons and rules on “Villa booking hero - Scogliera” (booking-hero-scogliera.png) are solid colour at full opacity: no tint, transparency, gradient, shadow or blend mode.",
+   "why": "The opacity rule covers every palette colour; the check named only panels and buttons."
+  },
+  {
+   "check_id": "PHOTO-04/booking-hero-verranza/H013",
+   "check": "All type, panels, buttons and rules on “Villa booking hero - Verranza” (booking-hero-verranza.png) are solid colour at full opacity: no tint, transparency, gradient, shadow or blend mode.",
+   "why": "The opacity rule covers every palette colour; the check named only panels and buttons."
+  },
+  {
+   "check_id": "PHOTO-04/villa-collection/H032",
+   "check": "All grounds, panels, type and rules in “Villa comparison brochure” (villa-collection.pdf) are solid colour at full opacity: no tint, transparency, gradient, shadow or blend mode.",
+   "why": "The opacity rule covers every palette colour; the check named only grounds and panels."
+  },
+  {
+   "check_id": "PHOTO-04/booking-hero-oliveto/H018",
+   "check": "The house name “Casa Oliveto” on “Villa booking hero - Oliveto” (booking-hero-oliveto.png) is set in Cormorant Garamond Light, with no heavier weight.",
+   "why": "Covered two type roles; narrowed to the house name (Display / H1)."
+  },
+  {
+   "check_id": "PHOTO-04/booking-hero-oliveto/H019",
+   "check": "Body text and the booking action on “Villa booking hero - Oliveto” (booking-hero-oliveto.png) are set in Source Sans 3 Regular.",
+   "why": "Covered two type roles; narrowed to body and booking-action text (Body)."
+  },
+  {
+   "check_id": "PHOTO-04/booking-hero-scogliera/H018",
+   "check": "The house name “Casa Scogliera” on “Villa booking hero - Scogliera” (booking-hero-scogliera.png) is set in Cormorant Garamond Light, with no heavier weight.",
+   "why": "Covered two type roles; narrowed to the house name (Display / H1)."
+  },
+  {
+   "check_id": "PHOTO-04/booking-hero-scogliera/H019",
+   "check": "Body text and the booking action on “Villa booking hero - Scogliera” (booking-hero-scogliera.png) are set in Source Sans 3 Regular.",
+   "why": "Covered two type roles; narrowed to body and booking-action text (Body)."
+  },
+  {
+   "check_id": "PHOTO-04/booking-hero-verranza/H017",
+   "check": "The house name “Casa Verranza” on “Villa booking hero - Verranza” (booking-hero-verranza.png) is set in Cormorant Garamond Light, with no heavier weight.",
+   "why": "Covered two type roles; narrowed to the house name (Display / H1)."
+  },
+  {
+   "check_id": "PHOTO-04/booking-hero-verranza/H018",
+   "check": "Body text and the booking action on “Villa booking hero - Verranza” (booking-hero-verranza.png) are set in Source Sans 3 Regular.",
+   "why": "Covered two type roles; narrowed to body and booking-action text (Body)."
+  },
+  {
+   "check_id": "PHOTO-04/villa-collection/H035",
+   "check": "Every house name in “Villa comparison brochure” (villa-collection.pdf) is set in Cormorant Garamond Light, with no heavier weight, apart from any numerals.",
+   "why": "Covered two type roles; narrowed to the house names (Display / H1)."
+  },
+  {
+   "check_id": "PHOTO-04/villa-collection/H036",
+   "check": "Body text in “Villa comparison brochure” (villa-collection.pdf) is set in Source Sans 3 Regular.",
+   "why": "Covered two type roles; narrowed to body text (Body)."
+  },
+  {
+   "check_id": "PHOTO-04/villa-collection/H001",
+   "check": "Casa Verranza is named in full in “Villa comparison brochure” (villa-collection.pdf), spelled as in owner_note.txt.",
+   "why": "Held three independent names; narrowed to Casa Verranza, the other two houses split out."
+  },
+  {
+   "check_id": "PHOTO-04/villa-collection/H064",
+   "check": "In “Villa comparison brochure” (villa-collection.pdf), sleeps, minimum stays and the three seasonal rates appear in the same order for all three houses.",
+   "why": "Held two facts (order and labels); kept the order fact, labels split out."
+  },
+  {
+   "check_id": "PHOTO-04/villa-collection/H030",
+   "method": "measure",
+   "how": "Open each PDF page in an image editor at 300 ppi; eyedropper panels, rules and the centres of letter strokes; compare hexes with those named.",
+   "why": "An exact hex cannot be told apart from a near colour by eye; labelled measure with an eyedropper how."
+  },
+  {
+   "check_id": "PHOTO-04/villa-collection/H031",
+   "method": "measure",
+   "how": "Open each PDF page in an image editor at 300 ppi; eyedropper panels, rules and the centres of letter strokes; compare hexes with those named.",
+   "why": "An exact hex cannot be told apart from a near colour by eye; labelled measure with an eyedropper how."
+  },
+  {
+   "check_id": "PHOTO-04/villa-collection/H033",
+   "method": "measure",
+   "how": "Open each PDF page in an image editor at 300 ppi; eyedropper panels, rules and the centres of letter strokes; compare hexes with those named.",
+   "why": "An exact hex cannot be told apart from a near colour by eye; labelled measure with an eyedropper how."
+  },
+  {
+   "check_id": "PHOTO-04/villa-collection/H034",
+   "method": "measure",
+   "how": "Open each PDF page in an image editor at 300 ppi; eyedropper panels, rules and the centres of letter strokes; compare hexes with those named.",
+   "why": "An exact hex cannot be told apart from a near colour by eye; labelled measure with an eyedropper how."
+  },
+  {
+   "check_id": "PHOTO-04/booking-hero-oliveto/H004",
+   "method": "measure",
+   "how": "At 400% zoom in an image editor, eyedropper panels, rules and the centres of letter strokes, not edges; compare the hexes with those named.",
+   "why": "An exact hex cannot be told apart from a near colour by eye; labelled measure with an eyedropper how."
+  },
+  {
+   "check_id": "PHOTO-04/booking-hero-oliveto/H013",
+   "method": "measure",
+   "how": "At 400% zoom in an image editor, eyedropper panels, rules and the centres of letter strokes, not edges; compare the hexes with those named.",
+   "why": "An exact hex cannot be told apart from a near colour by eye; labelled measure with an eyedropper how."
+  },
+  {
+   "check_id": "PHOTO-04/booking-hero-oliveto/H016",
+   "method": "measure",
+   "how": "At 400% zoom in an image editor, eyedropper panels, rules and the centres of letter strokes, not edges; compare the hexes with those named.",
+   "why": "An exact hex cannot be told apart from a near colour by eye; labelled measure with an eyedropper how."
+  },
+  {
+   "check_id": "PHOTO-04/booking-hero-oliveto/H017",
+   "method": "measure",
+   "how": "At 400% zoom in an image editor, eyedropper panels, rules and the centres of letter strokes, not edges; compare the hexes with those named.",
+   "why": "An exact hex cannot be told apart from a near colour by eye; labelled measure with an eyedropper how."
+  },
+  {
+   "check_id": "PHOTO-04/booking-hero-verranza/H011",
+   "method": "measure",
+   "how": "At 400% zoom in an image editor, eyedropper panels, rules and the centres of letter strokes, not edges; compare the hexes with those named.",
+   "why": "An exact hex cannot be told apart from a near colour by eye; labelled measure with an eyedropper how."
+  },
+  {
+   "check_id": "PHOTO-04/booking-hero-verranza/H012",
+   "method": "measure",
+   "how": "At 400% zoom in an image editor, eyedropper panels, rules and the centres of letter strokes, not edges; compare the hexes with those named.",
+   "why": "An exact hex cannot be told apart from a near colour by eye; labelled measure with an eyedropper how."
+  },
+  {
+   "check_id": "PHOTO-04/booking-hero-verranza/H015",
+   "method": "measure",
+   "how": "At 400% zoom in an image editor, eyedropper panels, rules and the centres of letter strokes, not edges; compare the hexes with those named.",
+   "why": "An exact hex cannot be told apart from a near colour by eye; labelled measure with an eyedropper how."
+  },
+  {
+   "check_id": "PHOTO-04/booking-hero-verranza/H016",
+   "method": "measure",
+   "how": "At 400% zoom in an image editor, eyedropper panels, rules and the centres of letter strokes, not edges; compare the hexes with those named.",
+   "why": "An exact hex cannot be told apart from a near colour by eye; labelled measure with an eyedropper how."
+  },
+  {
+   "check_id": "PHOTO-04/booking-hero-scogliera/H012",
+   "method": "measure",
+   "how": "At 400% zoom in an image editor, eyedropper panels, rules and the centres of letter strokes, not edges; compare the hexes with those named.",
+   "why": "An exact hex cannot be told apart from a near colour by eye; labelled measure with an eyedropper how."
+  },
+  {
+   "check_id": "PHOTO-04/booking-hero-scogliera/H013",
+   "method": "measure",
+   "how": "At 400% zoom in an image editor, eyedropper panels, rules and the centres of letter strokes, not edges; compare the hexes with those named.",
+   "why": "An exact hex cannot be told apart from a near colour by eye; labelled measure with an eyedropper how."
+  },
+  {
+   "check_id": "PHOTO-04/booking-hero-scogliera/H016",
+   "method": "measure",
+   "how": "At 400% zoom in an image editor, eyedropper panels, rules and the centres of letter strokes, not edges; compare the hexes with those named.",
+   "why": "An exact hex cannot be told apart from a near colour by eye; labelled measure with an eyedropper how."
+  },
+  {
+   "check_id": "PHOTO-04/booking-hero-scogliera/H017",
+   "method": "measure",
+   "how": "At 400% zoom in an image editor, eyedropper panels, rules and the centres of letter strokes, not edges; compare the hexes with those named.",
+   "why": "An exact hex cannot be told apart from a near colour by eye; labelled measure with an eyedropper how."
+  },
+  {
+   "check_id": "PHOTO-04/booking-hero-oliveto/H050",
+   "method": "measure",
+   "how": "At 400% zoom in an image editor, eyedropper panels, rules and the centres of letter strokes, not edges; compare the hexes with those named.",
+   "why": "An exact hex cannot be told apart from a near colour by eye; labelled measure with an eyedropper how."
+  },
+  {
+   "check_id": "PHOTO-04/booking-hero-oliveto/H051",
+   "method": "measure",
+   "how": "At 400% zoom in an image editor, eyedropper panels, rules and the centres of letter strokes, not edges; compare the hexes with those named.",
+   "why": "An exact hex cannot be told apart from a near colour by eye; labelled measure with an eyedropper how."
+  },
+  {
+   "check_id": "PHOTO-04/booking-hero-oliveto/H052",
+   "method": "measure",
+   "how": "At 400% zoom in an image editor, eyedropper panels, rules and the centres of letter strokes, not edges; compare the hexes with those named.",
+   "why": "An exact hex cannot be told apart from a near colour by eye; labelled measure with an eyedropper how."
+  },
+  {
+   "check_id": "PHOTO-04/booking-hero-scogliera/H050",
+   "method": "measure",
+   "how": "At 400% zoom in an image editor, eyedropper panels, rules and the centres of letter strokes, not edges; compare the hexes with those named.",
+   "why": "An exact hex cannot be told apart from a near colour by eye; labelled measure with an eyedropper how."
+  },
+  {
+   "check_id": "PHOTO-04/booking-hero-scogliera/H051",
+   "method": "measure",
+   "how": "At 400% zoom in an image editor, eyedropper panels, rules and the centres of letter strokes, not edges; compare the hexes with those named.",
+   "why": "An exact hex cannot be told apart from a near colour by eye; labelled measure with an eyedropper how."
+  },
+  {
+   "check_id": "PHOTO-04/booking-hero-scogliera/H052",
+   "method": "measure",
+   "how": "At 400% zoom in an image editor, eyedropper panels, rules and the centres of letter strokes, not edges; compare the hexes with those named.",
+   "why": "An exact hex cannot be told apart from a near colour by eye; labelled measure with an eyedropper how."
+  },
+  {
+   "check_id": "PHOTO-04/booking-hero-verranza/H050",
+   "method": "measure",
+   "how": "At 400% zoom in an image editor, eyedropper panels, rules and the centres of letter strokes, not edges; compare the hexes with those named.",
+   "why": "An exact hex cannot be told apart from a near colour by eye; labelled measure with an eyedropper how."
+  },
+  {
+   "check_id": "PHOTO-04/booking-hero-verranza/H051",
+   "method": "measure",
+   "how": "At 400% zoom in an image editor, eyedropper panels, rules and the centres of letter strokes, not edges; compare the hexes with those named.",
+   "why": "An exact hex cannot be told apart from a near colour by eye; labelled measure with an eyedropper how."
+  },
+  {
+   "check_id": "PHOTO-04/booking-hero-verranza/H052",
+   "method": "measure",
+   "how": "At 400% zoom in an image editor, eyedropper panels, rules and the centres of letter strokes, not edges; compare the hexes with those named.",
+   "why": "An exact hex cannot be told apart from a near colour by eye; labelled measure with an eyedropper how."
+  },
+  {
+   "check_id": "PHOTO-04/villa-collection/H056",
+   "method": "measure",
+   "how": "Open each PDF page in an image editor at 300 ppi; eyedropper panels, rules and the centres of letter strokes; compare hexes with those named.",
+   "why": "An exact hex cannot be told apart from a near colour by eye; labelled measure with an eyedropper how."
+  },
+  {
+   "check_id": "PHOTO-04/villa-collection/H057",
+   "method": "measure",
+   "how": "Open each PDF page in an image editor at 300 ppi; eyedropper panels, rules and the centres of letter strokes; compare hexes with those named.",
+   "why": "An exact hex cannot be told apart from a near colour by eye; labelled measure with an eyedropper how."
+  },
+  {
+   "check_id": "PHOTO-04/villa-collection/H058",
+   "method": "measure",
+   "how": "Open each PDF page in an image editor at 300 ppi; eyedropper panels, rules and the centres of letter strokes; compare hexes with those named.",
+   "why": "An exact hex cannot be told apart from a near colour by eye; labelled measure with an eyedropper how."
+  }
+ ],
+ "add": [
+  {
+   "key": "bro-initial-oliveto",
+   "output_id": "villa-collection",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "method": "measure",
+   "how": "With Acrobat's Measure tool, measure the full heights of initial C and capital O. Yes if C is 1.8 to 2.2 times as tall.",
+   "check": "The house name heading “Casa Oliveto” in “Villa comparison brochure” (villa-collection.pdf) opens with a “C” twice the cap height of the capital “O” of “Oliveto”.",
+   "evidence_reference": "Brand identity, type rules: a house-name initial is twice the cap height of its remaining letters on the heroes and in the brochure.",
+   "why": "Split from H037 so each house heading has its own measured check."
+  },
+  {
+   "key": "bro-initial-scogliera",
+   "output_id": "villa-collection",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "method": "measure",
+   "how": "With Acrobat's Measure tool, measure the full heights of initial C and capital S. Yes if C is 1.8 to 2.2 times as tall.",
+   "check": "The house name heading “Casa Scogliera” in “Villa comparison brochure” (villa-collection.pdf) opens with a “C” twice the cap height of the capital “S” of “Scogliera”.",
+   "evidence_reference": "Brand identity, type rules: a house-name initial is twice the cap height of its remaining letters on the heroes and in the brochure.",
+   "why": "Split from H037 so each house heading has its own measured check."
+  },
+  {
+   "key": "bro-name-size-oliveto",
+   "output_id": "villa-collection",
+   "type": "auto",
+   "assertion": {
+    "op": "pdf_text_style",
+    "text": "asa Oliveto",
+    "family": "Cormorant Garamond",
+    "weight": "Light",
+    "size_pt": 34
+   },
+   "check": "“Villa comparison brochure” (villa-collection.pdf) sets the house name “Casa Oliveto”, after its enlarged initial, in Cormorant Garamond Light at 34 pt.",
+   "evidence_reference": "Brand identity, type scale step 01 note: in villa-collection.pdf, use 34 pt for the house name.",
+   "why": "Exact 34 pt house-name size is checkable by code on live PDF text; replaces the Acrobat reading."
+  },
+  {
+   "key": "bro-name-size-scogliera",
+   "output_id": "villa-collection",
+   "type": "auto",
+   "assertion": {
+    "op": "pdf_text_style",
+    "text": "asa Scogliera",
+    "family": "Cormorant Garamond",
+    "weight": "Light",
+    "size_pt": 34
+   },
+   "check": "“Villa comparison brochure” (villa-collection.pdf) sets the house name “Casa Scogliera”, after its enlarged initial, in Cormorant Garamond Light at 34 pt.",
+   "evidence_reference": "Brand identity, type scale step 01 note: in villa-collection.pdf, use 34 pt for the house name.",
+   "why": "Exact 34 pt house-name size is checkable by code on live PDF text; replaces the Acrobat reading."
+  },
+  {
+   "key": "bro-name-size-verranza",
+   "output_id": "villa-collection",
+   "type": "auto",
+   "assertion": {
+    "op": "pdf_text_style",
+    "text": "asa Verranza",
+    "family": "Cormorant Garamond",
+    "weight": "Light",
+    "size_pt": 34
+   },
+   "check": "“Villa comparison brochure” (villa-collection.pdf) sets the house name “Casa Verranza”, after its enlarged initial, in Cormorant Garamond Light at 34 pt.",
+   "evidence_reference": "Brand identity, type scale step 01 note: in villa-collection.pdf, use 34 pt for the house name.",
+   "why": "Exact 34 pt house-name size is checkable by code on live PDF text; replaces the Acrobat reading."
+  },
+  {
+   "key": "booking-hero-oliveto-standfirst-font",
+   "output_id": "booking-hero-oliveto",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "If a standfirst appears on “Villa booking hero - Oliveto” (booking-hero-oliveto.png), it is set in Cormorant Garamond Light, with no heavier weight.",
+   "evidence_reference": "Brand identity, type scale step 02: Subheading / H2, Cormorant Garamond Light; optional standfirst on a booking hero.",
+   "why": "Split from the house-name font check so the optional standfirst role has its own check."
+  },
+  {
+   "key": "booking-hero-oliveto-fineprint-font",
+   "output_id": "booking-hero-oliveto",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "The offer price on “Villa booking hero - Oliveto” (booking-hero-oliveto.png), and any caption, sleeps or minimum-stay line, is set in Source Sans 3 Regular.",
+   "evidence_reference": "Brand identity, type scale step 04: Fine print, Source Sans 3 Regular (hero rates and captions).",
+   "why": "Split from the body font check so the fine-print role has its own check."
+  },
+  {
+   "key": "booking-hero-scogliera-standfirst-font",
+   "output_id": "booking-hero-scogliera",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "If a standfirst appears on “Villa booking hero - Scogliera” (booking-hero-scogliera.png), it is set in Cormorant Garamond Light, with no heavier weight.",
+   "evidence_reference": "Brand identity, type scale step 02: Subheading / H2, Cormorant Garamond Light; optional standfirst on a booking hero.",
+   "why": "Split from the house-name font check so the optional standfirst role has its own check."
+  },
+  {
+   "key": "booking-hero-scogliera-fineprint-font",
+   "output_id": "booking-hero-scogliera",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "The offer price on “Villa booking hero - Scogliera” (booking-hero-scogliera.png), and any caption, sleeps or minimum-stay line, is set in Source Sans 3 Regular.",
+   "evidence_reference": "Brand identity, type scale step 04: Fine print, Source Sans 3 Regular (hero rates and captions).",
+   "why": "Split from the body font check so the fine-print role has its own check."
+  },
+  {
+   "key": "booking-hero-verranza-standfirst-font",
+   "output_id": "booking-hero-verranza",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "If a standfirst appears on “Villa booking hero - Verranza” (booking-hero-verranza.png), it is set in Cormorant Garamond Light, with no heavier weight.",
+   "evidence_reference": "Brand identity, type scale step 02: Subheading / H2, Cormorant Garamond Light; optional standfirst on a booking hero.",
+   "why": "Split from the house-name font check so the optional standfirst role has its own check."
+  },
+  {
+   "key": "booking-hero-verranza-fineprint-font",
+   "output_id": "booking-hero-verranza",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "The offer price on “Villa booking hero - Verranza” (booking-hero-verranza.png), and any caption, sleeps or minimum-stay line, is set in Source Sans 3 Regular.",
+   "evidence_reference": "Brand identity, type scale step 04: Fine print, Source Sans 3 Regular (hero rates and captions).",
+   "why": "Split from the body font check so the fine-print role has its own check."
+  },
+  {
+   "key": "bro-subhead-font",
+   "output_id": "villa-collection",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "Every secondary heading and standfirst in “Villa comparison brochure” (villa-collection.pdf) is set in Cormorant Garamond Light, with no heavier weight, apart from any numerals.",
+   "evidence_reference": "Brand identity, type scale step 02: Subheading / H2, Cormorant Garamond Light; brochure secondary headings.",
+   "why": "Split from H035 so the secondary-heading role has its own check."
+  },
+  {
+   "key": "bro-fineprint-font",
+   "output_id": "villa-collection",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "Rates, captions and the sleeps and minimum-stay lines in “Villa comparison brochure” (villa-collection.pdf) are set in Source Sans 3 Regular.",
+   "evidence_reference": "Brand identity, type scale step 04: Fine print, Source Sans 3 Regular (rates and captions).",
+   "why": "Split from H036 so the fine-print role has its own check."
+  },
+  {
+   "key": "booking-hero-oliveto-lining",
+   "output_id": "booking-hero-oliveto",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "The figures in the offer price on “Villa booking hero - Oliveto” (booking-hero-oliveto.png) are lining figures: all at capital height, none dropping below the baseline.",
+   "evidence_reference": "Brand identity, type scale step 04 note: hero rates and captions use tabular lining figures.",
+   "why": "Lining figures had no check on the heroes; visible by eye on a single rate."
+  },
+  {
+   "key": "booking-hero-scogliera-lining",
+   "output_id": "booking-hero-scogliera",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "The figures in the offer price on “Villa booking hero - Scogliera” (booking-hero-scogliera.png) are lining figures: all at capital height, none dropping below the baseline.",
+   "evidence_reference": "Brand identity, type scale step 04 note: hero rates and captions use tabular lining figures.",
+   "why": "Lining figures had no check on the heroes; visible by eye on a single rate."
+  },
+  {
+   "key": "booking-hero-verranza-lining",
+   "output_id": "booking-hero-verranza",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "The figures in the offer price on “Villa booking hero - Verranza” (booking-hero-verranza.png) are lining figures: all at capital height, none dropping below the baseline.",
+   "evidence_reference": "Brand identity, type scale step 04 note: hero rates and captions use tabular lining figures.",
+   "why": "Lining figures had no check on the heroes; visible by eye on a single rate."
+  },
+  {
+   "key": "bro-lining",
+   "output_id": "villa-collection",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "The rate figures in “Villa comparison brochure” (villa-collection.pdf) are lining figures: all at capital height, none dropping below the baseline.",
+   "evidence_reference": "Brand identity, type rules: all numerals use Source Sans 3 Regular with tabular lining figures.",
+   "why": "Lining figures had no check in the brochure; H071 checks only the tabular widths."
+  },
+  {
+   "key": "booking-hero-oliveto-stone-use",
+   "output_id": "booking-hero-oliveto",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "Ligurian Stone #C4B5A0, if used on “Villa booking hero - Oliveto” (booking-hero-oliveto.png), appears only as hairline rules or dividers, never as type, a panel or a ground.",
+   "evidence_reference": "Brand identity, palette: Ligurian Stone, hairline rules and dividers only. Never a ground, panel or body text.",
+   "method": "measure",
+   "how": "At 400% zoom in an image editor, eyedropper panels, rules and the centres of letter strokes, not edges; compare the hexes with those named.",
+   "why": "The Ligurian Stone usage limit had no check on this file."
+  },
+  {
+   "key": "booking-hero-scogliera-stone-use",
+   "output_id": "booking-hero-scogliera",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "Ligurian Stone #C4B5A0, if used on “Villa booking hero - Scogliera” (booking-hero-scogliera.png), appears only as hairline rules or dividers, never as type, a panel or a ground.",
+   "evidence_reference": "Brand identity, palette: Ligurian Stone, hairline rules and dividers only. Never a ground, panel or body text.",
+   "method": "measure",
+   "how": "At 400% zoom in an image editor, eyedropper panels, rules and the centres of letter strokes, not edges; compare the hexes with those named.",
+   "why": "The Ligurian Stone usage limit had no check on this file."
+  },
+  {
+   "key": "booking-hero-verranza-stone-use",
+   "output_id": "booking-hero-verranza",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "Ligurian Stone #C4B5A0, if used on “Villa booking hero - Verranza” (booking-hero-verranza.png), appears only as hairline rules or dividers, never as type, a panel or a ground.",
+   "evidence_reference": "Brand identity, palette: Ligurian Stone, hairline rules and dividers only. Never a ground, panel or body text.",
+   "method": "measure",
+   "how": "At 400% zoom in an image editor, eyedropper panels, rules and the centres of letter strokes, not edges; compare the hexes with those named.",
+   "why": "The Ligurian Stone usage limit had no check on this file."
+  },
+  {
+   "key": "villa-collection-stone-use",
+   "output_id": "villa-collection",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "Ligurian Stone #C4B5A0, if used in “Villa comparison brochure” (villa-collection.pdf), appears only as hairline rules or dividers, never as type, a panel or a ground.",
+   "evidence_reference": "Brand identity, palette: Ligurian Stone, hairline rules and dividers only. Never a ground, panel or body text.",
+   "method": "measure",
+   "how": "Open each PDF page in an image editor at 300 ppi; eyedropper panels, rules and the centres of letter strokes; compare hexes with those named.",
+   "why": "The Ligurian Stone usage limit had no check on this file."
+  },
+  {
+   "key": "bro-named-oliveto",
+   "output_id": "villa-collection",
+   "type": "human",
+   "k_id": "K1_Q1",
+   "check": "Casa Oliveto is named in full in “Villa comparison brochure” (villa-collection.pdf), spelled as in owner_note.txt.",
+   "evidence_reference": "owner_note.txt names the three houses we let: Casa Verranza, Casa Oliveto and Casa Scogliera.",
+   "reference_assets": [
+    "owner_note.txt"
+   ],
+   "why": "Split from H001 so a missing or misspelled house fails on its own."
+  },
+  {
+   "key": "bro-named-scogliera",
+   "output_id": "villa-collection",
+   "type": "human",
+   "k_id": "K1_Q1",
+   "check": "Casa Scogliera is named in full in “Villa comparison brochure” (villa-collection.pdf), spelled as in owner_note.txt.",
+   "evidence_reference": "owner_note.txt names the three houses we let: Casa Verranza, Casa Oliveto and Casa Scogliera.",
+   "reference_assets": [
+    "owner_note.txt"
+   ],
+   "why": "Split from H001 so a missing or misspelled house fails on its own."
+  },
+  {
+   "key": "bro-facts-same-labels",
+   "output_id": "villa-collection",
+   "type": "human",
+   "k_id": "K5_Q2",
+   "check": "In “Villa comparison brochure” (villa-collection.pdf), the sleeps, minimum-stay and seasonal-rate entries carry the same labels for all three houses.",
+   "evidence_reference": "Brief: make the differences between the houses easy to scan; commission: organise six pages so the three properties can be compared.",
+   "why": "Split from H064: same labels is a separate fact from same order."
+  },
+  {
+   "key": "booking-hero-oliveto-no-fienile",
+   "output_id": "booking-hero-oliveto",
+   "type": "human",
+   "k_id": "K1_Q1",
+   "check": "No copy on “Villa booking hero - Oliveto” (booking-hero-oliveto.png) names or offers Casa Fienile.",
+   "evidence_reference": "owner_note.txt: we sold the fourth house, Casa Fienile; it must not go to agents.",
+   "reference_assets": [
+    "owner_note.txt"
+   ],
+   "why": "The sold-house rule had only an na on the heroes; a hero could still name it in its copy."
+  },
+  {
+   "key": "booking-hero-oliveto-numeral-size",
+   "output_id": "booking-hero-oliveto",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "The figures in the offer price on “Villa booking hero - Oliveto” (booking-hero-oliveto.png) are the same size as the words beside them, such as “from”.",
+   "evidence_reference": "Brand identity, type scale step 04 note: numerals remain Source Sans 3 Regular at the size of their surrounding text.",
+   "why": "The numeral-size rule had no check on this hero."
+  },
+  {
+   "key": "booking-hero-scogliera-no-fienile",
+   "output_id": "booking-hero-scogliera",
+   "type": "human",
+   "k_id": "K1_Q1",
+   "check": "No copy on “Villa booking hero - Scogliera” (booking-hero-scogliera.png) names or offers Casa Fienile.",
+   "evidence_reference": "owner_note.txt: we sold the fourth house, Casa Fienile; it must not go to agents.",
+   "reference_assets": [
+    "owner_note.txt"
+   ],
+   "why": "The sold-house rule had only an na on the heroes; a hero could still name it in its copy."
+  },
+  {
+   "key": "booking-hero-scogliera-numeral-size",
+   "output_id": "booking-hero-scogliera",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "The figures in the offer price on “Villa booking hero - Scogliera” (booking-hero-scogliera.png) are the same size as the words beside them, such as “from”.",
+   "evidence_reference": "Brand identity, type scale step 04 note: numerals remain Source Sans 3 Regular at the size of their surrounding text.",
+   "why": "The numeral-size rule had no check on this hero."
+  },
+  {
+   "key": "booking-hero-verranza-no-fienile",
+   "output_id": "booking-hero-verranza",
+   "type": "human",
+   "k_id": "K1_Q1",
+   "check": "No copy on “Villa booking hero - Verranza” (booking-hero-verranza.png) names or offers Casa Fienile.",
+   "evidence_reference": "owner_note.txt: we sold the fourth house, Casa Fienile; it must not go to agents.",
+   "reference_assets": [
+    "owner_note.txt"
+   ],
+   "why": "The sold-house rule had only an na on the heroes; a hero could still name it in its copy."
+  },
+  {
+   "key": "booking-hero-verranza-numeral-size",
+   "output_id": "booking-hero-verranza",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "The figures in the offer price on “Villa booking hero - Verranza” (booking-hero-verranza.png) are the same size as the words beside them, such as “from”.",
+   "evidence_reference": "Brand identity, type scale step 04 note: numerals remain Source Sans 3 Regular at the size of their surrounding text.",
+   "why": "The numeral-size rule had no check on this hero."
+  },
+  {
+   "key": "bro-numeral-size",
+   "output_id": "villa-collection",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "Every numeral inside a heading or text line in “Villa comparison brochure” (villa-collection.pdf) is the same size as the letters around it.",
+   "evidence_reference": "Brand identity, type scale step 04 note: numerals remain Source Sans 3 Regular at the size of their surrounding text.",
+   "why": "The numeral-size rule had no check in the brochure."
+  }
+ ]
+}

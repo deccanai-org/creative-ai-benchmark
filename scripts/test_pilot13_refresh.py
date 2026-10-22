@@ -48,8 +48,10 @@ class RefreshTests(unittest.TestCase):
 
     def test_evaluation_scope(self):
         rows=json.loads(SHEET_EXPORT.read_text())
-        self.assertEqual(len(rows),14)
-        for row in rows[1:]:
+        kind=rows[0].index('row_type')
+        task_rows=[r for r in rows[1:] if r[kind]=='task_inputs']
+        self.assertEqual(len(task_rows),13)
+        for row in task_rows:
             self.assertTrue(all(len(str(v))<49000 for v in row))
             rubrics=json.loads(row[1])
             decision=next(r for r in rubrics if r['side_headers'].startswith('7.'))

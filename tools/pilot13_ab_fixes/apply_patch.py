@@ -18,14 +18,17 @@ New ids continue each output's H### / A### numbering after the highest id ever u
 """
 import copy
 import json
+import os
 import re
 import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
 TASKS = ROOT / 'docs/gatsby-v7/tasks'
-WORK = ROOT.parents[1] / 'reviews/pilot13-ab-fixes-2026-10-21'
-REV = 'pilot13_ab_2026_10_21'
+# Round 1 (A+B, 2026-10-21) used reviews/pilot13-ab-fixes-2026-10-21; round 2 (2026-10-22) sets PILOT_FIX_WORK.
+WORK = Path(os.environ.get('PILOT_FIX_WORK', ROOT.parents[1] / 'reviews/pilot13-ab-fixes-2026-10-21'))
+REV = os.environ.get('PILOT_FIX_REV', 'pilot13_ab_2026_10_21')
+METHODS = ('look', 'measure', 'estimate')
 K_LABELS = {
     'K1_Q1': 'Content completeness', 'K1_Q2': 'Specification accuracy', 'K1_Q3': 'Constraint compliance',
     'K1_Q4': 'Deliverable completeness', 'K1_Q5': 'Critical failure check', 'K2_Q1': 'Asset selection',
@@ -61,6 +64,22 @@ def _next_number(spec, output_id, letter):
     used = [int(m.group(1)) for c in spec['verifiers_auto'] + spec['verifiers_human']
             if c['output_id'] == output_id for m in [re.search(rf'/{letter}(\d+)$', c['check_id'])] if m]
     return max(used or [0]) + 1
+
+
+def _set_method(c, item):
+    """look = judge by eye; measure = needs a ruler or tool (say what); estimate = an approximate visual estimate."""
+    if 'method' not in item:
+        return
+    if item['method'] not in METHODS:
+        raise PatchError(f'{c.get("check_id")}: method must be one of {METHODS}')
+    c['method'] = item['method']
+    if item['method'] == 'look':
+        c.pop('method_note', None)
+    else:
+        note = str(item.get('how', '')).strip()
+        if not note:
+            raise PatchError(f'{c.get("check_id")}: method {item["method"]} needs "how"')
+        c['method_note'] = note
 
 
 def apply(spec, patch):
@@ -110,6 +129,7 @@ def apply(spec, patch):
             if k not in K_LABELS:
                 raise PatchError(f'add {key}: invalid k_id {k!r}')
             c.update(k_id=k, k_label=K_LABELS[k])
+            _set_method(c, item)
         else:
             if not isinstance(item.get('assertion'), dict) or 'op' not in item['assertion']:
                 raise PatchError(f'add {key}: auto check needs an assertion with op')
@@ -129,9 +149,11 @@ def apply(spec, patch):
         retired[item['check_id']] = [resolve(r) for r in item.get('covered_by', [])]
     for item in patch.get('modify', []):
         c = by_id[item['check_id']]
-        text = item['check'].strip()
-        for f in TEXT_FIELDS:
-            c[f] = text
+        if 'check' in item:
+            text = item['check'].strip()
+            for f in TEXT_FIELDS:
+                c[f] = text
+        _set_method(c, item)
         if 'k_id' in item:
             if item['k_id'] not in K_LABELS:
                 raise PatchError(f'modify {c["check_id"]}: invalid k_id')
@@ -143,6 +165,8 @@ def apply(spec, patch):
         c.pop('typography_key', None)
         c.update(revision=REV, status='not_assessed', answer=None)
     spec['verifiers_human'] = [c for c in spec['verifiers_human'] if c['check_id'] not in retired]
+    for c in spec['verifiers_human']:
+        c.setdefault('method', 'look')
     spec['verifiers_human'] += [c for c in new_checks if c['type'] == 'human']
     spec['verifiers_auto'] += [c for c in new_checks if c['type'] == 'auto']
     live = {c['check_id']: c for c in spec['verifiers_auto'] + spec['verifiers_human']}

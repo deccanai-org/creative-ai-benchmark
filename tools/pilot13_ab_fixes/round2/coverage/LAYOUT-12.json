@@ -1,0 +1,5514 @@
+{
+ "task_id": "LAYOUT-12",
+ "rules": [
+  {
+   "rule_id": "B01",
+   "kind": "brand",
+   "rule": "No colour outside the six palette hexes for type, grounds, panels, rules, chart marks, icons or recovered act wordmarks.",
+   "source": "brand_identity.palette_rules.forbidden",
+   "cells": {
+    "poster-direction-type-led": {
+     "checks": [
+      "LAYOUT-12/poster-direction-type-led/H039"
+     ]
+    },
+    "poster-direction-image-led": {
+     "checks": [
+      "LAYOUT-12/poster-direction-image-led/H038"
+     ]
+    },
+    "poster-direction-graphic-led": {
+     "checks": [
+      "LAYOUT-12/poster-direction-graphic-led/H038"
+     ]
+    },
+    "promoter-deck": {
+     "checks": [
+      "LAYOUT-12/promoter-deck/H031"
+     ]
+    },
+    "release-post-r002": {
+     "checks": [
+      "LAYOUT-12/release-post-r002/H030"
+     ]
+    },
+    "release-post-r003": {
+     "checks": [
+      "LAYOUT-12/release-post-r003/H021"
+     ]
+    },
+    "release-post-r004": {
+     "checks": [
+      "LAYOUT-12/release-post-r004/H026"
+     ]
+    },
+    "release-post-r005": {
+     "checks": [
+      "LAYOUT-12/release-post-r005/H025"
+     ]
+    },
+    "release-post-r006": {
+     "checks": [
+      "LAYOUT-12/release-post-r006/H025"
+     ]
+    },
+    "release-post-r007": {
+     "checks": [
+      "LAYOUT-12/release-post-r007/H025"
+     ]
+    },
+    "release-post-r008": {
+     "checks": [
+      "LAYOUT-12/release-post-r008/H018"
+     ]
+    },
+    "release-post-r009": {
+     "checks": [
+      "LAYOUT-12/release-post-r009/H018"
+     ]
+    },
+    "release-post-r010": {
+     "checks": [
+      "LAYOUT-12/release-post-r010/H025"
+     ]
+    }
+   }
+  },
+  {
+   "rule_id": "B02",
+   "kind": "brand",
+   "rule": "Pitch, Bone White and Sodium (for every date line) are mandatory palette colours.",
+   "source": "brand_identity.palette[].role",
+   "cells": {
+    "poster-direction-type-led": {
+     "checks": [
+      "LAYOUT-12/poster-direction-type-led/H036",
+      "LAYOUT-12/poster-direction-type-led/H044",
+      "new:pd-type-led-act-ground"
+     ]
+    },
+    "poster-direction-image-led": {
+     "checks": [
+      "LAYOUT-12/poster-direction-image-led/H035",
+      "LAYOUT-12/poster-direction-image-led/H043",
+      "new:pd-image-led-act-ground"
+     ]
+    },
+    "poster-direction-graphic-led": {
+     "checks": [
+      "LAYOUT-12/poster-direction-graphic-led/H035",
+      "LAYOUT-12/poster-direction-graphic-led/H043",
+      "new:pd-graphic-led-act-ground"
+     ]
+    },
+    "promoter-deck": {
+     "checks": [
+      "LAYOUT-12/promoter-deck/H044",
+      "LAYOUT-12/promoter-deck/H041",
+      "LAYOUT-12/promoter-deck/H027",
+      "LAYOUT-12/promoter-deck/H038",
+      "new:promoter-deck-act-ground"
+     ]
+    },
+    "release-post-r002": {
+     "checks": [
+      "LAYOUT-12/release-post-r002/H026",
+      "LAYOUT-12/release-post-r002/H036",
+      "new:r002-act-ground"
+     ]
+    },
+    "release-post-r003": {
+     "checks": [
+      "LAYOUT-12/release-post-r003/H025",
+      "LAYOUT-12/release-post-r003/H031",
+      "new:r003-act-ground"
+     ]
+    },
+    "release-post-r004": {
+     "checks": [
+      "LAYOUT-12/release-post-r004/H022",
+      "LAYOUT-12/release-post-r004/H034",
+      "new:r004-act-ground"
+     ]
+    },
+    "release-post-r005": {
+     "checks": [
+      "LAYOUT-12/release-post-r005/H021",
+      "LAYOUT-12/release-post-r005/H033",
+      "new:r005-act-ground"
+     ]
+    },
+    "release-post-r006": {
+     "checks": [
+      "LAYOUT-12/release-post-r006/H021",
+      "LAYOUT-12/release-post-r006/H033",
+      "new:r006-act-ground"
+     ]
+    },
+    "release-post-r007": {
+     "checks": [
+      "LAYOUT-12/release-post-r007/H021",
+      "LAYOUT-12/release-post-r007/H033",
+      "new:r007-act-ground"
+     ]
+    },
+    "release-post-r008": {
+     "checks": [
+      "LAYOUT-12/release-post-r008/H022",
+      "LAYOUT-12/release-post-r008/H028",
+      "new:r008-act-ground"
+     ]
+    },
+    "release-post-r009": {
+     "checks": [
+      "LAYOUT-12/release-post-r009/H022",
+      "LAYOUT-12/release-post-r009/H028",
+      "new:r009-act-ground"
+     ]
+    },
+    "release-post-r010": {
+     "checks": [
+      "LAYOUT-12/release-post-r010/H021",
+      "LAYOUT-12/release-post-r010/H033",
+      "new:r010-act-ground"
+     ]
+    }
+   }
+  },
+  {
+   "rule_id": "B03",
+   "kind": "brand",
+   "rule": "Grounds and panels are Pitch or Ash and nothing else.",
+   "source": "brand_identity.palette_rules.distribution",
+   "cells": {
+    "poster-direction-type-led": {
+     "checks": [
+      "LAYOUT-12/poster-direction-type-led/H041"
+     ]
+    },
+    "poster-direction-image-led": {
+     "checks": [
+      "LAYOUT-12/poster-direction-image-led/H040"
+     ]
+    },
+    "poster-direction-graphic-led": {
+     "checks": [
+      "LAYOUT-12/poster-direction-graphic-led/H040"
+     ]
+    },
+    "promoter-deck": {
+     "checks": [
+      "LAYOUT-12/promoter-deck/H033"
+     ]
+    },
+    "release-post-r002": {
+     "checks": [
+      "LAYOUT-12/release-post-r002/H011"
+     ]
+    },
+    "release-post-r003": {
+     "checks": [
+      "LAYOUT-12/release-post-r003/H027"
+     ]
+    },
+    "release-post-r004": {
+     "checks": [
+      "LAYOUT-12/release-post-r004/H028"
+     ]
+    },
+    "release-post-r005": {
+     "checks": [
+      "LAYOUT-12/release-post-r005/H027"
+     ]
+    },
+    "release-post-r006": {
+     "checks": [
+      "LAYOUT-12/release-post-r006/H027"
+     ]
+    },
+    "release-post-r007": {
+     "checks": [
+      "LAYOUT-12/release-post-r007/H027"
+     ]
+    },
+    "release-post-r008": {
+     "checks": [
+      "LAYOUT-12/release-post-r008/H024"
+     ]
+    },
+    "release-post-r009": {
+     "checks": [
+      "LAYOUT-12/release-post-r009/H024"
+     ]
+    },
+    "release-post-r010": {
+     "checks": [
+      "LAYOUT-12/release-post-r010/H027"
+     ]
+    }
+   }
+  },
+  {
+   "rule_id": "B16",
+   "kind": "brand",
+   "rule": "Pitch is the main ground of every poster, post and deck page.",
+   "source": "brand_identity.palette[Pitch].usage; palette_rules.distribution",
+   "cells": {
+    "poster-direction-type-led": {
+     "checks": [
+      "LAYOUT-12/poster-direction-type-led/H059"
+     ]
+    },
+    "poster-direction-image-led": {
+     "checks": [
+      "LAYOUT-12/poster-direction-image-led/H058"
+     ]
+    },
+    "poster-direction-graphic-led": {
+     "checks": [
+      "LAYOUT-12/poster-direction-graphic-led/H058"
+     ]
+    },
+    "promoter-deck": {
+     "checks": [
+      "LAYOUT-12/promoter-deck/H044"
+     ]
+    },
+    "release-post-r002": {
+     "checks": [
+      "LAYOUT-12/release-post-r002/H040"
+     ]
+    },
+    "release-post-r003": {
+     "checks": [
+      "LAYOUT-12/release-post-r003/H035"
+     ]
+    },
+    "release-post-r004": {
+     "checks": [
+      "LAYOUT-12/release-post-r004/H038"
+     ]
+    },
+    "release-post-r005": {
+     "checks": [
+      "LAYOUT-12/release-post-r005/H037"
+     ]
+    },
+    "release-post-r006": {
+     "checks": [
+      "LAYOUT-12/release-post-r006/H037"
+     ]
+    },
+    "release-post-r007": {
+     "checks": [
+      "LAYOUT-12/release-post-r007/H037"
+     ]
+    },
+    "release-post-r008": {
+     "checks": [
+      "LAYOUT-12/release-post-r008/H032"
+     ]
+    },
+    "release-post-r009": {
+     "checks": [
+      "LAYOUT-12/release-post-r009/H032"
+     ]
+    },
+    "release-post-r010": {
+     "checks": [
+      "LAYOUT-12/release-post-r010/H037"
+     ]
+    }
+   }
+  },
+  {
+   "rule_id": "B04",
+   "kind": "brand",
+   "rule": "Every act name is Bone White.",
+   "source": "brand_identity.palette_rules.distribution",
+   "cells": {
+    "poster-direction-type-led": {
+     "checks": [
+      "LAYOUT-12/poster-direction-type-led/H036"
+     ]
+    },
+    "poster-direction-image-led": {
+     "checks": [
+      "LAYOUT-12/poster-direction-image-led/H035"
+     ]
+    },
+    "poster-direction-graphic-led": {
+     "checks": [
+      "LAYOUT-12/poster-direction-graphic-led/H035"
+     ]
+    },
+    "promoter-deck": {
+     "checks": [
+      "LAYOUT-12/promoter-deck/H027"
+     ]
+    },
+    "release-post-r002": {
+     "checks": [
+      "LAYOUT-12/release-post-r002/H026"
+     ]
+    },
+    "release-post-r003": {
+     "checks": [
+      "LAYOUT-12/release-post-r003/H025"
+     ]
+    },
+    "release-post-r004": {
+     "checks": [
+      "LAYOUT-12/release-post-r004/H022"
+     ]
+    },
+    "release-post-r005": {
+     "checks": [
+      "LAYOUT-12/release-post-r005/H021"
+     ]
+    },
+    "release-post-r006": {
+     "checks": [
+      "LAYOUT-12/release-post-r006/H021"
+     ]
+    },
+    "release-post-r007": {
+     "checks": [
+      "LAYOUT-12/release-post-r007/H021"
+     ]
+    },
+    "release-post-r008": {
+     "checks": [
+      "LAYOUT-12/release-post-r008/H022"
+     ]
+    },
+    "release-post-r009": {
+     "checks": [
+      "LAYOUT-12/release-post-r009/H022"
+     ]
+    },
+    "release-post-r010": {
+     "checks": [
+      "LAYOUT-12/release-post-r010/H021"
+     ]
+    }
+   }
+  },
+  {
+   "rule_id": "B22",
+   "kind": "brand",
+   "rule": "Pitch is always the ground under an act block: every act name sits on Pitch.",
+   "source": "brand_identity.palette_rules.distribution",
+   "cells": {
+    "poster-direction-type-led": {
+     "checks": [
+      "new:pd-type-led-act-ground"
+     ]
+    },
+    "poster-direction-image-led": {
+     "checks": [
+      "new:pd-image-led-act-ground"
+     ]
+    },
+    "poster-direction-graphic-led": {
+     "checks": [
+      "new:pd-graphic-led-act-ground"
+     ]
+    },
+    "promoter-deck": {
+     "checks": [
+      "new:promoter-deck-act-ground"
+     ]
+    },
+    "release-post-r002": {
+     "checks": [
+      "new:r002-act-ground"
+     ]
+    },
+    "release-post-r003": {
+     "checks": [
+      "new:r003-act-ground"
+     ]
+    },
+    "release-post-r004": {
+     "checks": [
+      "new:r004-act-ground"
+     ]
+    },
+    "release-post-r005": {
+     "checks": [
+      "new:r005-act-ground"
+     ]
+    },
+    "release-post-r006": {
+     "checks": [
+      "new:r006-act-ground"
+     ]
+    },
+    "release-post-r007": {
+     "checks": [
+      "new:r007-act-ground"
+     ]
+    },
+    "release-post-r008": {
+     "checks": [
+      "new:r008-act-ground"
+     ]
+    },
+    "release-post-r009": {
+     "checks": [
+      "new:r009-act-ground"
+     ]
+    },
+    "release-post-r010": {
+     "checks": [
+      "new:r010-act-ground"
+     ]
+    }
+   }
+  },
+  {
+   "rule_id": "B05",
+   "kind": "brand",
+   "rule": "Each act name has its date line directly above it.",
+   "source": "brand_identity.palette_rules.distribution; type_system.rules",
+   "cells": {
+    "poster-direction-type-led": {
+     "checks": [
+      "LAYOUT-12/poster-direction-type-led/H045"
+     ]
+    },
+    "poster-direction-image-led": {
+     "checks": [
+      "LAYOUT-12/poster-direction-image-led/H044"
+     ]
+    },
+    "poster-direction-graphic-led": {
+     "checks": [
+      "LAYOUT-12/poster-direction-graphic-led/H044"
+     ]
+    },
+    "promoter-deck": {
+     "checks": [
+      "LAYOUT-12/promoter-deck/H039"
+     ]
+    },
+    "release-post-r002": {
+     "checks": [
+      "LAYOUT-12/release-post-r002/H037"
+     ]
+    },
+    "release-post-r003": {
+     "checks": [
+      "LAYOUT-12/release-post-r003/H032"
+     ]
+    },
+    "release-post-r004": {
+     "checks": [
+      "LAYOUT-12/release-post-r004/H035"
+     ]
+    },
+    "release-post-r005": {
+     "checks": [
+      "LAYOUT-12/release-post-r005/H034"
+     ]
+    },
+    "release-post-r006": {
+     "checks": [
+      "LAYOUT-12/release-post-r006/H034"
+     ]
+    },
+    "release-post-r007": {
+     "checks": [
+      "LAYOUT-12/release-post-r007/H034"
+     ]
+    },
+    "release-post-r008": {
+     "checks": [
+      "LAYOUT-12/release-post-r008/H029"
+     ]
+    },
+    "release-post-r009": {
+     "checks": [
+      "LAYOUT-12/release-post-r009/H029"
+     ]
+    },
+    "release-post-r010": {
+     "checks": [
+      "LAYOUT-12/release-post-r010/H034"
+     ]
+    }
+   }
+  },
+  {
+   "rule_id": "B18",
+   "kind": "brand",
+   "rule": "Every date line is Sodium #E4863B.",
+   "source": "brand_identity.palette[Sodium].role; palette_rules.distribution",
+   "cells": {
+    "poster-direction-type-led": {
+     "checks": [
+      "LAYOUT-12/poster-direction-type-led/H044"
+     ]
+    },
+    "poster-direction-image-led": {
+     "checks": [
+      "LAYOUT-12/poster-direction-image-led/H043"
+     ]
+    },
+    "poster-direction-graphic-led": {
+     "checks": [
+      "LAYOUT-12/poster-direction-graphic-led/H043"
+     ]
+    },
+    "promoter-deck": {
+     "checks": [
+      "LAYOUT-12/promoter-deck/H038"
+     ]
+    },
+    "release-post-r002": {
+     "checks": [
+      "LAYOUT-12/release-post-r002/H036"
+     ]
+    },
+    "release-post-r003": {
+     "checks": [
+      "LAYOUT-12/release-post-r003/H031"
+     ]
+    },
+    "release-post-r004": {
+     "checks": [
+      "LAYOUT-12/release-post-r004/H034"
+     ]
+    },
+    "release-post-r005": {
+     "checks": [
+      "LAYOUT-12/release-post-r005/H033"
+     ]
+    },
+    "release-post-r006": {
+     "checks": [
+      "LAYOUT-12/release-post-r006/H033"
+     ]
+    },
+    "release-post-r007": {
+     "checks": [
+      "LAYOUT-12/release-post-r007/H033"
+     ]
+    },
+    "release-post-r008": {
+     "checks": [
+      "LAYOUT-12/release-post-r008/H028"
+     ]
+    },
+    "release-post-r009": {
+     "checks": [
+      "LAYOUT-12/release-post-r009/H028"
+     ]
+    },
+    "release-post-r010": {
+     "checks": [
+      "LAYOUT-12/release-post-r010/H033"
+     ]
+    }
+   }
+  },
+  {
+   "rule_id": "B06",
+   "kind": "brand",
+   "rule": "Every other line of type (titles, headings, support, door, set, body, billing, table and fine print) is Bone White.",
+   "source": "brand_identity.palette_rules.distribution",
+   "cells": {
+    "poster-direction-type-led": {
+     "checks": [
+      "LAYOUT-12/poster-direction-type-led/H047"
+     ]
+    },
+    "poster-direction-image-led": {
+     "checks": [
+      "LAYOUT-12/poster-direction-image-led/H046"
+     ]
+    },
+    "poster-direction-graphic-led": {
+     "checks": [
+      "LAYOUT-12/poster-direction-graphic-led/H046"
+     ]
+    },
+    "promoter-deck": {
+     "checks": [
+      "LAYOUT-12/promoter-deck/H041"
+     ]
+    },
+    "release-post-r002": {
+     "checks": [
+      "LAYOUT-12/release-post-r002/H039"
+     ]
+    },
+    "release-post-r003": {
+     "checks": [
+      "LAYOUT-12/release-post-r003/H034"
+     ]
+    },
+    "release-post-r004": {
+     "checks": [
+      "LAYOUT-12/release-post-r004/H037"
+     ]
+    },
+    "release-post-r005": {
+     "checks": [
+      "LAYOUT-12/release-post-r005/H036"
+     ]
+    },
+    "release-post-r006": {
+     "checks": [
+      "LAYOUT-12/release-post-r006/H036"
+     ]
+    },
+    "release-post-r007": {
+     "checks": [
+      "LAYOUT-12/release-post-r007/H036"
+     ]
+    },
+    "release-post-r008": {
+     "checks": [
+      "LAYOUT-12/release-post-r008/H031"
+     ]
+    },
+    "release-post-r009": {
+     "checks": [
+      "LAYOUT-12/release-post-r009/H031"
+     ]
+    },
+    "release-post-r010": {
+     "checks": [
+      "LAYOUT-12/release-post-r010/H036"
+     ]
+    }
+   }
+  },
+  {
+   "rule_id": "B07",
+   "kind": "brand",
+   "rule": "Cold Signal and Blood are used only for hairline rules, dividers, chart marks or a photograph's treatment, never type, a ground or a panel.",
+   "source": "brand_identity.palette_rules.distribution",
+   "cells": {
+    "poster-direction-type-led": {
+     "checks": [
+      "LAYOUT-12/poster-direction-type-led/H043"
+     ]
+    },
+    "poster-direction-image-led": {
+     "checks": [
+      "LAYOUT-12/poster-direction-image-led/H042"
+     ]
+    },
+    "poster-direction-graphic-led": {
+     "checks": [
+      "LAYOUT-12/poster-direction-graphic-led/H042"
+     ]
+    },
+    "promoter-deck": {
+     "checks": [
+      "LAYOUT-12/promoter-deck/H035"
+     ]
+    },
+    "release-post-r002": {
+     "checks": [
+      "LAYOUT-12/release-post-r002/H033"
+     ]
+    },
+    "release-post-r003": {
+     "checks": [
+      "LAYOUT-12/release-post-r003/H023"
+     ]
+    },
+    "release-post-r004": {
+     "checks": [
+      "LAYOUT-12/release-post-r004/H030"
+     ]
+    },
+    "release-post-r005": {
+     "checks": [
+      "LAYOUT-12/release-post-r005/H029"
+     ]
+    },
+    "release-post-r006": {
+     "checks": [
+      "LAYOUT-12/release-post-r006/H029"
+     ]
+    },
+    "release-post-r007": {
+     "checks": [
+      "LAYOUT-12/release-post-r007/H029"
+     ]
+    },
+    "release-post-r008": {
+     "checks": [
+      "LAYOUT-12/release-post-r008/H020"
+     ]
+    },
+    "release-post-r009": {
+     "checks": [
+      "LAYOUT-12/release-post-r009/H020"
+     ]
+    },
+    "release-post-r010": {
+     "checks": [
+      "LAYOUT-12/release-post-r010/H029"
+     ]
+    }
+   }
+  },
+  {
+   "rule_id": "B19",
+   "kind": "brand",
+   "rule": "Cold Signal and Blood together cover no more than 5% of the designed, non-photographic area.",
+   "source": "brand_identity.palette_rules.distribution",
+   "cells": {
+    "poster-direction-type-led": {
+     "checks": [
+      "LAYOUT-12/poster-direction-type-led/H048"
+     ]
+    },
+    "poster-direction-image-led": {
+     "checks": [
+      "LAYOUT-12/poster-direction-image-led/H047"
+     ]
+    },
+    "poster-direction-graphic-led": {
+     "checks": [
+      "LAYOUT-12/poster-direction-graphic-led/H047"
+     ]
+    },
+    "promoter-deck": {
+     "checks": [
+      "LAYOUT-12/promoter-deck/H042"
+     ]
+    },
+    "release-post-r002": {
+     "checks": [
+      "LAYOUT-12/release-post-r002/H034"
+     ]
+    },
+    "release-post-r003": {
+     "checks": [
+      "LAYOUT-12/release-post-r003/H028"
+     ]
+    },
+    "release-post-r004": {
+     "checks": [
+      "LAYOUT-12/release-post-r004/H031"
+     ]
+    },
+    "release-post-r005": {
+     "checks": [
+      "LAYOUT-12/release-post-r005/H030"
+     ]
+    },
+    "release-post-r006": {
+     "checks": [
+      "LAYOUT-12/release-post-r006/H030"
+     ]
+    },
+    "release-post-r007": {
+     "checks": [
+      "LAYOUT-12/release-post-r007/H030"
+     ]
+    },
+    "release-post-r008": {
+     "checks": [
+      "LAYOUT-12/release-post-r008/H025"
+     ]
+    },
+    "release-post-r009": {
+     "checks": [
+      "LAYOUT-12/release-post-r009/H025"
+     ]
+    },
+    "release-post-r010": {
+     "checks": [
+      "LAYOUT-12/release-post-r010/H030"
+     ]
+    }
+   }
+  },
+  {
+   "rule_id": "B08",
+   "kind": "brand",
+   "rule": "Supplied production act wordmarks are recoloured to Bone White, in one solid palette colour.",
+   "source": "brand_identity.palette_rules.distribution; brand_assets_status",
+   "cells": {
+    "poster-direction-type-led": {
+     "checks": [
+      "LAYOUT-12/poster-direction-type-led/H052",
+      "LAYOUT-12/poster-direction-type-led/H054"
+     ]
+    },
+    "poster-direction-image-led": {
+     "checks": [
+      "LAYOUT-12/poster-direction-image-led/H051",
+      "LAYOUT-12/poster-direction-image-led/H053"
+     ]
+    },
+    "poster-direction-graphic-led": {
+     "checks": [
+      "LAYOUT-12/poster-direction-graphic-led/H051",
+      "LAYOUT-12/poster-direction-graphic-led/H053"
+     ]
+    },
+    "promoter-deck": {
+     "checks": [
+      "LAYOUT-12/promoter-deck/H052",
+      "new:deck-wm-meridian-ink"
+     ]
+    },
+    "release-post-r002": {
+     "checks": [
+      "LAYOUT-12/release-post-r002/H050"
+     ]
+    },
+    "release-post-r003": {
+     "checks": [
+      "LAYOUT-12/release-post-r003/H045"
+     ]
+    },
+    "release-post-r004": {
+     "na": "This post bills Night Ferry, a type-only act, so no production wordmark appears on it."
+    },
+    "release-post-r005": {
+     "na": "This post bills The Blue Hour, a type-only act, so no production wordmark appears on it."
+    },
+    "release-post-r006": {
+     "na": "This post bills The Blue Hour, a type-only act, so no production wordmark appears on it."
+    },
+    "release-post-r007": {
+     "na": "This post bills Vespertine, a type-only act, so no production wordmark appears on it."
+    },
+    "release-post-r008": {
+     "na": "This post bills The Eastons, a type-only act, so no production wordmark appears on it."
+    },
+    "release-post-r009": {
+     "na": "This post bills Koa, a type-only act, so no production wordmark appears on it."
+    },
+    "release-post-r010": {
+     "na": "This post bills Laurel and the Dive, a type-only act, so no production wordmark appears on it."
+    }
+   }
+  },
+  {
+   "rule_id": "B23",
+   "kind": "brand",
+   "rule": "Supplied production act wordmarks sit on Pitch.",
+   "source": "brand_identity.palette_rules.distribution",
+   "cells": {
+    "poster-direction-type-led": {
+     "checks": [
+      "new:pd-type-led-wm-sable-ground",
+      "new:pd-type-led-wm-meridian-ground"
+     ]
+    },
+    "poster-direction-image-led": {
+     "checks": [
+      "new:pd-image-led-wm-sable-ground",
+      "new:pd-image-led-wm-meridian-ground"
+     ]
+    },
+    "poster-direction-graphic-led": {
+     "checks": [
+      "new:pd-graphic-led-wm-sable-ground",
+      "new:pd-graphic-led-wm-meridian-ground"
+     ]
+    },
+    "promoter-deck": {
+     "checks": [
+      "new:deck-wm-sable-ground",
+      "new:deck-wm-meridian-ground"
+     ]
+    },
+    "release-post-r002": {
+     "checks": [
+      "new:r002-wm-sable-ground"
+     ]
+    },
+    "release-post-r003": {
+     "checks": [
+      "new:r003-wm-meridian-ground"
+     ]
+    },
+    "release-post-r004": {
+     "na": "This post bills Night Ferry, a type-only act, so no production wordmark appears on it."
+    },
+    "release-post-r005": {
+     "na": "This post bills The Blue Hour, a type-only act, so no production wordmark appears on it."
+    },
+    "release-post-r006": {
+     "na": "This post bills The Blue Hour, a type-only act, so no production wordmark appears on it."
+    },
+    "release-post-r007": {
+     "na": "This post bills Vespertine, a type-only act, so no production wordmark appears on it."
+    },
+    "release-post-r008": {
+     "na": "This post bills The Eastons, a type-only act, so no production wordmark appears on it."
+    },
+    "release-post-r009": {
+     "na": "This post bills Koa, a type-only act, so no production wordmark appears on it."
+    },
+    "release-post-r010": {
+     "na": "This post bills Laurel and the Dive, a type-only act, so no production wordmark appears on it."
+    }
+   }
+  },
+  {
+   "rule_id": "B09",
+   "kind": "brand",
+   "rule": "Every palette colour is solid at 100% opacity, with no tint, transparency, gradient, shadow, glow, blend mode, scrim or overlay on a photograph.",
+   "source": "brand_identity.palette_rules.opacity",
+   "cells": {
+    "poster-direction-type-led": {
+     "checks": [
+      "LAYOUT-12/poster-direction-type-led/H042"
+     ]
+    },
+    "poster-direction-image-led": {
+     "checks": [
+      "LAYOUT-12/poster-direction-image-led/H041"
+     ]
+    },
+    "poster-direction-graphic-led": {
+     "checks": [
+      "LAYOUT-12/poster-direction-graphic-led/H041"
+     ]
+    },
+    "promoter-deck": {
+     "checks": [
+      "LAYOUT-12/promoter-deck/H034"
+     ]
+    },
+    "release-post-r002": {
+     "checks": [
+      "LAYOUT-12/release-post-r002/H032"
+     ]
+    },
+    "release-post-r003": {
+     "checks": [
+      "LAYOUT-12/release-post-r003/H022"
+     ]
+    },
+    "release-post-r004": {
+     "checks": [
+      "LAYOUT-12/release-post-r004/H029"
+     ]
+    },
+    "release-post-r005": {
+     "checks": [
+      "LAYOUT-12/release-post-r005/H028"
+     ]
+    },
+    "release-post-r006": {
+     "checks": [
+      "LAYOUT-12/release-post-r006/H028"
+     ]
+    },
+    "release-post-r007": {
+     "checks": [
+      "LAYOUT-12/release-post-r007/H028"
+     ]
+    },
+    "release-post-r008": {
+     "checks": [
+      "LAYOUT-12/release-post-r008/H019"
+     ]
+    },
+    "release-post-r009": {
+     "checks": [
+      "LAYOUT-12/release-post-r009/H019"
+     ]
+    },
+    "release-post-r010": {
+     "checks": [
+      "LAYOUT-12/release-post-r010/H028"
+     ]
+    }
+   }
+  },
+  {
+   "rule_id": "B10",
+   "kind": "brand",
+   "rule": "No sponsor logo or corporate partner mark.",
+   "source": "brand_identity.palette_rules.forbidden",
+   "cells": {
+    "poster-direction-type-led": {
+     "checks": [
+      "LAYOUT-12/poster-direction-type-led/H006"
+     ]
+    },
+    "poster-direction-image-led": {
+     "checks": [
+      "LAYOUT-12/poster-direction-image-led/H030"
+     ]
+    },
+    "poster-direction-graphic-led": {
+     "checks": [
+      "LAYOUT-12/poster-direction-graphic-led/H030"
+     ]
+    },
+    "promoter-deck": {
+     "checks": [
+      "LAYOUT-12/promoter-deck/H030"
+     ]
+    },
+    "release-post-r002": {
+     "checks": [
+      "LAYOUT-12/release-post-r002/H029"
+     ]
+    },
+    "release-post-r003": {
+     "checks": [
+      "LAYOUT-12/release-post-r003/H020"
+     ]
+    },
+    "release-post-r004": {
+     "checks": [
+      "LAYOUT-12/release-post-r004/H025"
+     ]
+    },
+    "release-post-r005": {
+     "checks": [
+      "LAYOUT-12/release-post-r005/H024"
+     ]
+    },
+    "release-post-r006": {
+     "checks": [
+      "LAYOUT-12/release-post-r006/H024"
+     ]
+    },
+    "release-post-r007": {
+     "checks": [
+      "LAYOUT-12/release-post-r007/H024"
+     ]
+    },
+    "release-post-r008": {
+     "checks": [
+      "LAYOUT-12/release-post-r008/H017"
+     ]
+    },
+    "release-post-r009": {
+     "checks": [
+      "LAYOUT-12/release-post-r009/H017"
+     ]
+    },
+    "release-post-r010": {
+     "checks": [
+      "LAYOUT-12/release-post-r010/H024"
+     ]
+    }
+   }
+  },
+  {
+   "rule_id": "B11",
+   "kind": "brand",
+   "rule": "Every photograph is rendered in two palette colours, never in full colour.",
+   "source": "brand_identity.palette_rules.photography",
+   "cells": {
+    "poster-direction-type-led": {
+     "checks": [
+      "LAYOUT-12/poster-direction-type-led/H029"
+     ]
+    },
+    "poster-direction-image-led": {
+     "checks": [
+      "LAYOUT-12/poster-direction-image-led/H003"
+     ]
+    },
+    "poster-direction-graphic-led": {
+     "checks": [
+      "LAYOUT-12/poster-direction-graphic-led/H027"
+     ]
+    },
+    "promoter-deck": {
+     "checks": [
+      "LAYOUT-12/promoter-deck/H021"
+     ]
+    },
+    "release-post-r002": {
+     "checks": [
+      "LAYOUT-12/release-post-r002/H018"
+     ]
+    },
+    "release-post-r003": {
+     "checks": [
+      "LAYOUT-12/release-post-r003/H024"
+     ]
+    },
+    "release-post-r004": {
+     "checks": [
+      "LAYOUT-12/release-post-r004/H015"
+     ]
+    },
+    "release-post-r005": {
+     "checks": [
+      "LAYOUT-12/release-post-r005/H015"
+     ]
+    },
+    "release-post-r006": {
+     "checks": [
+      "LAYOUT-12/release-post-r006/H015"
+     ]
+    },
+    "release-post-r007": {
+     "checks": [
+      "LAYOUT-12/release-post-r007/H015"
+     ]
+    },
+    "release-post-r008": {
+     "checks": [
+      "LAYOUT-12/release-post-r008/H021"
+     ]
+    },
+    "release-post-r009": {
+     "checks": [
+      "LAYOUT-12/release-post-r009/H021"
+     ]
+    },
+    "release-post-r010": {
+     "checks": [
+      "LAYOUT-12/release-post-r010/H015"
+     ]
+    }
+   }
+  },
+  {
+   "rule_id": "B20",
+   "kind": "brand",
+   "rule": "Every photograph carries visible grain.",
+   "source": "brand_identity.palette_rules.photography",
+   "cells": {
+    "poster-direction-type-led": {
+     "checks": [
+      "LAYOUT-12/poster-direction-type-led/H049"
+     ]
+    },
+    "poster-direction-image-led": {
+     "checks": [
+      "LAYOUT-12/poster-direction-image-led/H048"
+     ]
+    },
+    "poster-direction-graphic-led": {
+     "checks": [
+      "LAYOUT-12/poster-direction-graphic-led/H048"
+     ]
+    },
+    "promoter-deck": {
+     "checks": [
+      "LAYOUT-12/promoter-deck/H043"
+     ]
+    },
+    "release-post-r002": {
+     "checks": [
+      "LAYOUT-12/release-post-r002/H035"
+     ]
+    },
+    "release-post-r003": {
+     "checks": [
+      "LAYOUT-12/release-post-r003/H029"
+     ]
+    },
+    "release-post-r004": {
+     "checks": [
+      "LAYOUT-12/release-post-r004/H032"
+     ]
+    },
+    "release-post-r005": {
+     "checks": [
+      "LAYOUT-12/release-post-r005/H031"
+     ]
+    },
+    "release-post-r006": {
+     "checks": [
+      "LAYOUT-12/release-post-r006/H031"
+     ]
+    },
+    "release-post-r007": {
+     "checks": [
+      "LAYOUT-12/release-post-r007/H031"
+     ]
+    },
+    "release-post-r008": {
+     "checks": [
+      "LAYOUT-12/release-post-r008/H026"
+     ]
+    },
+    "release-post-r009": {
+     "checks": [
+      "LAYOUT-12/release-post-r009/H026"
+     ]
+    },
+    "release-post-r010": {
+     "checks": [
+      "LAYOUT-12/release-post-r010/H031"
+     ]
+    }
+   }
+  },
+  {
+   "rule_id": "B12",
+   "kind": "brand",
+   "rule": "The nine night release posts share one two-colour pair.",
+   "source": "brand_identity.palette_rules.photography; client_brief design decisions",
+   "cells": {
+    "poster-direction-type-led": {
+     "na": "The shared-pair rule covers the nine release posts only; poster directions may differ."
+    },
+    "poster-direction-image-led": {
+     "na": "The shared-pair rule covers the nine release posts only; poster directions may differ."
+    },
+    "poster-direction-graphic-led": {
+     "na": "The shared-pair rule covers the nine release posts only; poster directions may differ."
+    },
+    "promoter-deck": {
+     "na": "The brief asks the deck to explain the chosen direction; naming the colour pair is not clearly required."
+    },
+    "release-post-r002": {
+     "na": "This post is the fixed reference whose two-colour pair the other eight posts must match."
+    },
+    "release-post-r003": {
+     "checks": [
+      "LAYOUT-12/release-post-r003/H030"
+     ]
+    },
+    "release-post-r004": {
+     "checks": [
+      "LAYOUT-12/release-post-r004/H033"
+     ]
+    },
+    "release-post-r005": {
+     "checks": [
+      "LAYOUT-12/release-post-r005/H032"
+     ]
+    },
+    "release-post-r006": {
+     "checks": [
+      "LAYOUT-12/release-post-r006/H032"
+     ]
+    },
+    "release-post-r007": {
+     "checks": [
+      "LAYOUT-12/release-post-r007/H032"
+     ]
+    },
+    "release-post-r008": {
+     "checks": [
+      "LAYOUT-12/release-post-r008/H027"
+     ]
+    },
+    "release-post-r009": {
+     "checks": [
+      "LAYOUT-12/release-post-r009/H027"
+     ]
+    },
+    "release-post-r010": {
+     "checks": [
+      "LAYOUT-12/release-post-r010/H032"
+     ]
+    }
+   }
+  },
+  {
+   "rule_id": "B13",
+   "kind": "brand",
+   "rule": "Photographs are used as shot, with nothing generated, extended, added or painted in.",
+   "source": "brand_identity.palette_rules.photography",
+   "cells": {
+    "poster-direction-type-led": {
+     "checks": [
+      "LAYOUT-12/poster-direction-type-led/H028",
+      "LAYOUT-12/poster-direction-type-led/H030"
+     ]
+    },
+    "poster-direction-image-led": {
+     "checks": [
+      "LAYOUT-12/poster-direction-image-led/H027",
+      "LAYOUT-12/poster-direction-image-led/H028"
+     ]
+    },
+    "poster-direction-graphic-led": {
+     "checks": [
+      "LAYOUT-12/poster-direction-graphic-led/H026",
+      "LAYOUT-12/poster-direction-graphic-led/H028"
+     ]
+    },
+    "promoter-deck": {
+     "checks": [
+      "LAYOUT-12/promoter-deck/H022",
+      "LAYOUT-12/promoter-deck/H023"
+     ]
+    },
+    "release-post-r002": {
+     "checks": [
+      "LAYOUT-12/release-post-r002/H015",
+      "LAYOUT-12/release-post-r002/H019"
+     ]
+    },
+    "release-post-r003": {
+     "checks": [
+      "LAYOUT-12/release-post-r003/H015",
+      "LAYOUT-12/release-post-r003/H016"
+     ]
+    },
+    "release-post-r004": {
+     "checks": [
+      "LAYOUT-12/release-post-r004/H014",
+      "LAYOUT-12/release-post-r004/H016"
+     ]
+    },
+    "release-post-r005": {
+     "checks": [
+      "LAYOUT-12/release-post-r005/H014",
+      "LAYOUT-12/release-post-r005/H016"
+     ]
+    },
+    "release-post-r006": {
+     "checks": [
+      "LAYOUT-12/release-post-r006/H014",
+      "LAYOUT-12/release-post-r006/H016"
+     ]
+    },
+    "release-post-r007": {
+     "checks": [
+      "LAYOUT-12/release-post-r007/H014",
+      "LAYOUT-12/release-post-r007/H016"
+     ]
+    },
+    "release-post-r008": {
+     "checks": [
+      "LAYOUT-12/release-post-r008/H014",
+      "LAYOUT-12/release-post-r008/H015"
+     ]
+    },
+    "release-post-r009": {
+     "checks": [
+      "LAYOUT-12/release-post-r009/H014",
+      "LAYOUT-12/release-post-r009/H015"
+     ]
+    },
+    "release-post-r010": {
+     "checks": [
+      "LAYOUT-12/release-post-r010/H014",
+      "LAYOUT-12/release-post-r010/H016"
+     ]
+    }
+   }
+  },
+  {
+   "rule_id": "B14",
+   "kind": "brand",
+   "rule": "Use the supplied production wordmark shapes for Sable Quartet and Meridian Brass, unchanged.",
+   "source": "brand_identity.brand_assets_status",
+   "cells": {
+    "poster-direction-type-led": {
+     "checks": [
+      "LAYOUT-12/poster-direction-type-led/H022",
+      "LAYOUT-12/poster-direction-type-led/H023",
+      "LAYOUT-12/poster-direction-type-led/R13-logo-sable",
+      "LAYOUT-12/poster-direction-type-led/H024",
+      "LAYOUT-12/poster-direction-type-led/H025",
+      "LAYOUT-12/poster-direction-type-led/H026"
+     ]
+    },
+    "poster-direction-image-led": {
+     "checks": [
+      "LAYOUT-12/poster-direction-image-led/H021",
+      "LAYOUT-12/poster-direction-image-led/H022",
+      "LAYOUT-12/poster-direction-image-led/R13-logo-sable",
+      "LAYOUT-12/poster-direction-image-led/H023",
+      "LAYOUT-12/poster-direction-image-led/H024",
+      "LAYOUT-12/poster-direction-image-led/H025"
+     ]
+    },
+    "poster-direction-graphic-led": {
+     "checks": [
+      "LAYOUT-12/poster-direction-graphic-led/H020",
+      "LAYOUT-12/poster-direction-graphic-led/H021",
+      "LAYOUT-12/poster-direction-graphic-led/R13-logo-sable",
+      "LAYOUT-12/poster-direction-graphic-led/H022",
+      "LAYOUT-12/poster-direction-graphic-led/H023",
+      "LAYOUT-12/poster-direction-graphic-led/H024"
+     ]
+    },
+    "promoter-deck": {
+     "checks": [
+      "LAYOUT-12/promoter-deck/H015",
+      "LAYOUT-12/promoter-deck/H016",
+      "LAYOUT-12/promoter-deck/H017",
+      "LAYOUT-12/promoter-deck/H018",
+      "LAYOUT-12/promoter-deck/H019"
+     ]
+    },
+    "release-post-r002": {
+     "checks": [
+      "LAYOUT-12/release-post-r002/H021",
+      "LAYOUT-12/release-post-r002/H022",
+      "LAYOUT-12/release-post-r002/R13-logo-sable"
+     ]
+    },
+    "release-post-r003": {
+     "checks": [
+      "LAYOUT-12/release-post-r003/H018",
+      "LAYOUT-12/release-post-r003/H009",
+      "LAYOUT-12/release-post-r003/H019"
+     ]
+    },
+    "release-post-r004": {
+     "na": "This post bills Night Ferry, a type-only act, so no production wordmark appears on it."
+    },
+    "release-post-r005": {
+     "na": "This post bills The Blue Hour, a type-only act, so no production wordmark appears on it."
+    },
+    "release-post-r006": {
+     "na": "This post bills The Blue Hour, a type-only act, so no production wordmark appears on it."
+    },
+    "release-post-r007": {
+     "na": "This post bills Vespertine, a type-only act, so no production wordmark appears on it."
+    },
+    "release-post-r008": {
+     "na": "This post bills The Eastons, a type-only act, so no production wordmark appears on it."
+    },
+    "release-post-r009": {
+     "na": "This post bills Koa, a type-only act, so no production wordmark appears on it."
+    },
+    "release-post-r010": {
+     "na": "This post bills Laurel and the Dive, a type-only act, so no production wordmark appears on it."
+    }
+   }
+  },
+  {
+   "rule_id": "B15",
+   "kind": "brand",
+   "rule": "umbra_wordmark_nightferry.jpg, which shows Sable Quartet, must not represent Night Ferry.",
+   "source": "brand_identity.brand_assets_status",
+   "cells": {
+    "poster-direction-type-led": {
+     "checks": [
+      "LAYOUT-12/poster-direction-type-led/H017"
+     ]
+    },
+    "poster-direction-image-led": {
+     "checks": [
+      "LAYOUT-12/poster-direction-image-led/H016"
+     ]
+    },
+    "poster-direction-graphic-led": {
+     "checks": [
+      "LAYOUT-12/poster-direction-graphic-led/H015"
+     ]
+    },
+    "promoter-deck": {
+     "checks": [
+      "LAYOUT-12/promoter-deck/H011"
+     ]
+    },
+    "release-post-r002": {
+     "na": "Night Ferry does not appear on this post, which bills Sable Quartet only."
+    },
+    "release-post-r003": {
+     "na": "Night Ferry does not appear on this post, which bills Meridian Brass only."
+    },
+    "release-post-r004": {
+     "checks": [
+      "LAYOUT-12/release-post-r004/H017"
+     ]
+    },
+    "release-post-r005": {
+     "na": "Night Ferry does not appear on this post, which bills The Blue Hour only."
+    },
+    "release-post-r006": {
+     "na": "Night Ferry does not appear on this post, which bills The Blue Hour only."
+    },
+    "release-post-r007": {
+     "na": "Night Ferry does not appear on this post, which bills Vespertine only."
+    },
+    "release-post-r008": {
+     "na": "Night Ferry does not appear on this post, which bills The Eastons only."
+    },
+    "release-post-r009": {
+     "na": "Night Ferry does not appear on this post, which bills Koa only."
+    },
+    "release-post-r010": {
+     "na": "Night Ferry does not appear on this post, which bills Laurel and the Dive only."
+    }
+   }
+  },
+  {
+   "rule_id": "B21",
+   "kind": "brand",
+   "rule": "Night Ferry is billed in the series type only, with no invented wordmark.",
+   "source": "brand_identity.brand_assets_status",
+   "cells": {
+    "poster-direction-type-led": {
+     "checks": [
+      "LAYOUT-12/poster-direction-type-led/H018"
+     ]
+    },
+    "poster-direction-image-led": {
+     "checks": [
+      "LAYOUT-12/poster-direction-image-led/H017"
+     ]
+    },
+    "poster-direction-graphic-led": {
+     "checks": [
+      "LAYOUT-12/poster-direction-graphic-led/H016"
+     ]
+    },
+    "promoter-deck": {
+     "checks": [
+      "LAYOUT-12/promoter-deck/H012"
+     ]
+    },
+    "release-post-r002": {
+     "na": "Night Ferry does not appear on this post, which bills Sable Quartet only."
+    },
+    "release-post-r003": {
+     "na": "Night Ferry does not appear on this post, which bills Meridian Brass only."
+    },
+    "release-post-r004": {
+     "checks": [
+      "LAYOUT-12/release-post-r004/H018"
+     ]
+    },
+    "release-post-r005": {
+     "na": "Night Ferry does not appear on this post, which bills The Blue Hour only."
+    },
+    "release-post-r006": {
+     "na": "Night Ferry does not appear on this post, which bills The Blue Hour only."
+    },
+    "release-post-r007": {
+     "na": "Night Ferry does not appear on this post, which bills Vespertine only."
+    },
+    "release-post-r008": {
+     "na": "Night Ferry does not appear on this post, which bills The Eastons only."
+    },
+    "release-post-r009": {
+     "na": "Night Ferry does not appear on this post, which bills Koa only."
+    },
+    "release-post-r010": {
+     "na": "Night Ferry does not appear on this post, which bills Laurel and the Dive only."
+    }
+   }
+  },
+  {
+   "rule_id": "B17",
+   "kind": "brand",
+   "rule": "Merchandise photos are historical references only.",
+   "source": "brand_identity.brand_assets_status",
+   "cells": {
+    "poster-direction-type-led": {
+     "checks": [
+      "LAYOUT-12/poster-direction-type-led/H060"
+     ]
+    },
+    "poster-direction-image-led": {
+     "checks": [
+      "LAYOUT-12/poster-direction-image-led/H059"
+     ]
+    },
+    "poster-direction-graphic-led": {
+     "checks": [
+      "LAYOUT-12/poster-direction-graphic-led/H059"
+     ]
+    },
+    "promoter-deck": {
+     "checks": [
+      "LAYOUT-12/promoter-deck/H045"
+     ]
+    },
+    "release-post-r002": {
+     "checks": [
+      "LAYOUT-12/release-post-r002/H046"
+     ]
+    },
+    "release-post-r003": {
+     "checks": [
+      "LAYOUT-12/release-post-r003/H041"
+     ]
+    },
+    "release-post-r004": {
+     "checks": [
+      "LAYOUT-12/release-post-r004/H044"
+     ]
+    },
+    "release-post-r005": {
+     "checks": [
+      "LAYOUT-12/release-post-r005/H043"
+     ]
+    },
+    "release-post-r006": {
+     "checks": [
+      "LAYOUT-12/release-post-r006/H043"
+     ]
+    },
+    "release-post-r007": {
+     "checks": [
+      "LAYOUT-12/release-post-r007/H043"
+     ]
+    },
+    "release-post-r008": {
+     "checks": [
+      "LAYOUT-12/release-post-r008/H038"
+     ]
+    },
+    "release-post-r009": {
+     "checks": [
+      "LAYOUT-12/release-post-r009/H038"
+     ]
+    },
+    "release-post-r010": {
+     "checks": [
+      "LAYOUT-12/release-post-r010/H043"
+     ]
+    }
+   }
+  },
+  {
+   "rule_id": "F01",
+   "kind": "brief",
+   "rule": "Choose photographs from umbra_archive_night_01.jpg to umbra_archive_night_06.jpg; the seasoncard_img identifiers are not supplied photographs.",
+   "source": "client_brief",
+   "cells": {
+    "poster-direction-type-led": {
+     "checks": [
+      "LAYOUT-12/poster-direction-type-led/H027"
+     ]
+    },
+    "poster-direction-image-led": {
+     "checks": [
+      "LAYOUT-12/poster-direction-image-led/H026"
+     ]
+    },
+    "poster-direction-graphic-led": {
+     "checks": [
+      "LAYOUT-12/poster-direction-graphic-led/H025"
+     ]
+    },
+    "promoter-deck": {
+     "checks": [
+      "LAYOUT-12/promoter-deck/H020"
+     ]
+    },
+    "release-post-r002": {
+     "checks": [
+      "LAYOUT-12/release-post-r002/H010"
+     ]
+    },
+    "release-post-r003": {
+     "checks": [
+      "LAYOUT-12/release-post-r003/H014"
+     ]
+    },
+    "release-post-r004": {
+     "checks": [
+      "LAYOUT-12/release-post-r004/H013"
+     ]
+    },
+    "release-post-r005": {
+     "checks": [
+      "LAYOUT-12/release-post-r005/H013"
+     ]
+    },
+    "release-post-r006": {
+     "checks": [
+      "LAYOUT-12/release-post-r006/H013"
+     ]
+    },
+    "release-post-r007": {
+     "checks": [
+      "LAYOUT-12/release-post-r007/H013"
+     ]
+    },
+    "release-post-r008": {
+     "checks": [
+      "LAYOUT-12/release-post-r008/H013"
+     ]
+    },
+    "release-post-r009": {
+     "checks": [
+      "LAYOUT-12/release-post-r009/H013"
+     ]
+    },
+    "release-post-r010": {
+     "checks": [
+      "LAYOUT-12/release-post-r010/H013"
+     ]
+    }
+   }
+  },
+  {
+   "rule_id": "F02",
+   "kind": "brief",
+   "rule": "Do not imply that a pictured performer is a named act.",
+   "source": "client_brief",
+   "cells": {
+    "poster-direction-type-led": {
+     "checks": [
+      "LAYOUT-12/poster-direction-type-led/H062"
+     ]
+    },
+    "poster-direction-image-led": {
+     "checks": [
+      "LAYOUT-12/poster-direction-image-led/H061"
+     ]
+    },
+    "poster-direction-graphic-led": {
+     "checks": [
+      "LAYOUT-12/poster-direction-graphic-led/H061"
+     ]
+    },
+    "promoter-deck": {
+     "checks": [
+      "LAYOUT-12/promoter-deck/H051"
+     ]
+    },
+    "release-post-r002": {
+     "checks": [
+      "LAYOUT-12/release-post-r002/H047"
+     ]
+    },
+    "release-post-r003": {
+     "checks": [
+      "LAYOUT-12/release-post-r003/H042"
+     ]
+    },
+    "release-post-r004": {
+     "checks": [
+      "LAYOUT-12/release-post-r004/H045"
+     ]
+    },
+    "release-post-r005": {
+     "checks": [
+      "LAYOUT-12/release-post-r005/H044"
+     ]
+    },
+    "release-post-r006": {
+     "checks": [
+      "LAYOUT-12/release-post-r006/H044"
+     ]
+    },
+    "release-post-r007": {
+     "checks": [
+      "LAYOUT-12/release-post-r007/H044"
+     ]
+    },
+    "release-post-r008": {
+     "checks": [
+      "LAYOUT-12/release-post-r008/H039"
+     ]
+    },
+    "release-post-r009": {
+     "checks": [
+      "LAYOUT-12/release-post-r009/H039"
+     ]
+    },
+    "release-post-r010": {
+     "checks": [
+      "LAYOUT-12/release-post-r010/H044"
+     ]
+    }
+   }
+  },
+  {
+   "rule_id": "F03",
+   "kind": "brief",
+   "rule": "Night Ferry and the remaining acts are type-only; only Sable Quartet and Meridian Brass have production wordmarks.",
+   "source": "client_brief, What stays fixed",
+   "cells": {
+    "poster-direction-type-led": {
+     "checks": [
+      "LAYOUT-12/poster-direction-type-led/H019",
+      "LAYOUT-12/poster-direction-type-led/H018"
+     ]
+    },
+    "poster-direction-image-led": {
+     "checks": [
+      "LAYOUT-12/poster-direction-image-led/H018",
+      "LAYOUT-12/poster-direction-image-led/H017"
+     ]
+    },
+    "poster-direction-graphic-led": {
+     "checks": [
+      "LAYOUT-12/poster-direction-graphic-led/H017",
+      "LAYOUT-12/poster-direction-graphic-led/H016"
+     ]
+    },
+    "promoter-deck": {
+     "checks": [
+      "LAYOUT-12/promoter-deck/H013",
+      "LAYOUT-12/promoter-deck/H012"
+     ]
+    },
+    "release-post-r002": {
+     "na": "This post bills Sable Quartet, which has a supplied production wordmark by the brief."
+    },
+    "release-post-r003": {
+     "na": "This post bills Meridian Brass, which has a supplied production wordmark by the brief."
+    },
+    "release-post-r004": {
+     "checks": [
+      "LAYOUT-12/release-post-r004/H017",
+      "LAYOUT-12/release-post-r004/H018"
+     ]
+    },
+    "release-post-r005": {
+     "checks": [
+      "LAYOUT-12/release-post-r005/H046"
+     ]
+    },
+    "release-post-r006": {
+     "checks": [
+      "LAYOUT-12/release-post-r006/H046"
+     ]
+    },
+    "release-post-r007": {
+     "checks": [
+      "LAYOUT-12/release-post-r007/H047"
+     ]
+    },
+    "release-post-r008": {
+     "checks": [
+      "LAYOUT-12/release-post-r008/H041"
+     ]
+    },
+    "release-post-r009": {
+     "checks": [
+      "LAYOUT-12/release-post-r009/H041"
+     ]
+    },
+    "release-post-r010": {
+     "checks": [
+      "LAYOUT-12/release-post-r010/H046"
+     ]
+    }
+   }
+  },
+  {
+   "rule_id": "F04",
+   "kind": "brief",
+   "rule": "Keep the approved billing order.",
+   "source": "client_brief, What stays fixed",
+   "cells": {
+    "poster-direction-type-led": {
+     "checks": [
+      "LAYOUT-12/poster-direction-type-led/H001"
+     ]
+    },
+    "poster-direction-image-led": {
+     "checks": [
+      "LAYOUT-12/poster-direction-image-led/H001"
+     ]
+    },
+    "poster-direction-graphic-led": {
+     "checks": [
+      "LAYOUT-12/poster-direction-graphic-led/H001"
+     ]
+    },
+    "promoter-deck": {
+     "na": "The deck is not commissioned to bill the nine nights; the poster directions carry the billing order."
+    },
+    "release-post-r002": {
+     "na": "Each release post carries a single night, so billing order does not apply."
+    },
+    "release-post-r003": {
+     "na": "Each release post carries a single night, so billing order does not apply."
+    },
+    "release-post-r004": {
+     "na": "Each release post carries a single night, so billing order does not apply."
+    },
+    "release-post-r005": {
+     "na": "Each release post carries a single night, so billing order does not apply."
+    },
+    "release-post-r006": {
+     "na": "Each release post carries a single night, so billing order does not apply."
+    },
+    "release-post-r007": {
+     "na": "Each release post carries a single night, so billing order does not apply."
+    },
+    "release-post-r008": {
+     "na": "Each release post carries a single night, so billing order does not apply."
+    },
+    "release-post-r009": {
+     "na": "Each release post carries a single night, so billing order does not apply."
+    },
+    "release-post-r010": {
+     "na": "Each release post carries a single night, so billing order does not apply."
+    }
+   }
+  },
+  {
+   "rule_id": "F05",
+   "kind": "brief",
+   "rule": "Support acts appear one size down from the headline act.",
+   "source": "umbra_billing_autumn.txt",
+   "cells": {
+    "poster-direction-type-led": {
+     "checks": [
+      "LAYOUT-12/poster-direction-type-led/H014"
+     ]
+    },
+    "poster-direction-image-led": {
+     "checks": [
+      "LAYOUT-12/poster-direction-image-led/H012"
+     ]
+    },
+    "poster-direction-graphic-led": {
+     "checks": [
+      "LAYOUT-12/poster-direction-graphic-led/H011"
+     ]
+    },
+    "promoter-deck": {
+     "na": "The deck is not commissioned to bill support acts; posters and posts carry them."
+    },
+    "release-post-r002": {
+     "checks": [
+      "LAYOUT-12/release-post-r002/H013"
+     ]
+    },
+    "release-post-r003": {
+     "checks": [
+      "LAYOUT-12/release-post-r003/H012"
+     ]
+    },
+    "release-post-r004": {
+     "checks": [
+      "LAYOUT-12/release-post-r004/H011"
+     ]
+    },
+    "release-post-r005": {
+     "checks": [
+      "LAYOUT-12/release-post-r005/H011"
+     ]
+    },
+    "release-post-r006": {
+     "checks": [
+      "LAYOUT-12/release-post-r006/H011"
+     ]
+    },
+    "release-post-r007": {
+     "checks": [
+      "LAYOUT-12/release-post-r007/H011"
+     ]
+    },
+    "release-post-r008": {
+     "checks": [
+      "LAYOUT-12/release-post-r008/H011"
+     ]
+    },
+    "release-post-r009": {
+     "checks": [
+      "LAYOUT-12/release-post-r009/H011"
+     ]
+    },
+    "release-post-r010": {
+     "checks": [
+      "LAYOUT-12/release-post-r010/H011"
+     ]
+    }
+   }
+  },
+  {
+   "rule_id": "F10",
+   "kind": "brief",
+   "rule": "Support acts are prefixed 'with'.",
+   "source": "umbra_billing_autumn.txt",
+   "cells": {
+    "poster-direction-type-led": {
+     "checks": [
+      "LAYOUT-12/poster-direction-type-led/H058"
+     ]
+    },
+    "poster-direction-image-led": {
+     "checks": [
+      "LAYOUT-12/poster-direction-image-led/H057"
+     ]
+    },
+    "poster-direction-graphic-led": {
+     "checks": [
+      "LAYOUT-12/poster-direction-graphic-led/H057"
+     ]
+    },
+    "promoter-deck": {
+     "na": "The deck is not commissioned to bill support acts; posters and posts carry them."
+    },
+    "release-post-r002": {
+     "checks": [
+      "LAYOUT-12/release-post-r002/H005"
+     ]
+    },
+    "release-post-r003": {
+     "checks": [
+      "LAYOUT-12/release-post-r003/H005"
+     ]
+    },
+    "release-post-r004": {
+     "checks": [
+      "LAYOUT-12/release-post-r004/H005"
+     ]
+    },
+    "release-post-r005": {
+     "checks": [
+      "LAYOUT-12/release-post-r005/H005"
+     ]
+    },
+    "release-post-r006": {
+     "checks": [
+      "LAYOUT-12/release-post-r006/H005"
+     ]
+    },
+    "release-post-r007": {
+     "checks": [
+      "LAYOUT-12/release-post-r007/H005"
+     ]
+    },
+    "release-post-r008": {
+     "checks": [
+      "LAYOUT-12/release-post-r008/H005"
+     ]
+    },
+    "release-post-r009": {
+     "checks": [
+      "LAYOUT-12/release-post-r009/H005"
+     ]
+    },
+    "release-post-r010": {
+     "checks": [
+      "LAYOUT-12/release-post-r010/H005"
+     ]
+    }
+   }
+  },
+  {
+   "rule_id": "F06",
+   "kind": "brief",
+   "rule": "Keep all nine dates as in umbra_nights_autumn.csv.",
+   "source": "client_brief, What stays fixed; umbra_nights_autumn.csv",
+   "cells": {
+    "poster-direction-type-led": {
+     "checks": [
+      "LAYOUT-12/poster-direction-type-led/H008",
+      "new:pd-type-led-date-meridian-brass-26",
+      "new:pd-type-led-date-night-ferry-2",
+      "LAYOUT-12/poster-direction-type-led/H009",
+      "new:pd-type-led-date-the-blue-hour-4",
+      "new:pd-type-led-date-vespertine-9",
+      "new:pd-type-led-date-the-eastons-10",
+      "new:pd-type-led-date-koa-16",
+      "new:pd-type-led-date-laurel-and-the-dive-17",
+      "LAYOUT-12/poster-direction-type-led/H011",
+      "LAYOUT-12/poster-direction-type-led/H010"
+     ]
+    },
+    "poster-direction-image-led": {
+     "checks": [
+      "LAYOUT-12/poster-direction-image-led/H006",
+      "new:pd-image-led-date-meridian-brass-26",
+      "new:pd-image-led-date-night-ferry-2",
+      "LAYOUT-12/poster-direction-image-led/H007",
+      "new:pd-image-led-date-the-blue-hour-4",
+      "new:pd-image-led-date-vespertine-9",
+      "new:pd-image-led-date-the-eastons-10",
+      "new:pd-image-led-date-koa-16",
+      "new:pd-image-led-date-laurel-and-the-dive-17",
+      "LAYOUT-12/poster-direction-image-led/H009",
+      "LAYOUT-12/poster-direction-image-led/H008"
+     ]
+    },
+    "poster-direction-graphic-led": {
+     "checks": [
+      "LAYOUT-12/poster-direction-graphic-led/H005",
+      "new:pd-graphic-led-date-meridian-brass-26",
+      "new:pd-graphic-led-date-night-ferry-2",
+      "LAYOUT-12/poster-direction-graphic-led/H006",
+      "new:pd-graphic-led-date-the-blue-hour-4",
+      "new:pd-graphic-led-date-vespertine-9",
+      "new:pd-graphic-led-date-the-eastons-10",
+      "new:pd-graphic-led-date-koa-16",
+      "new:pd-graphic-led-date-laurel-and-the-dive-17",
+      "LAYOUT-12/poster-direction-graphic-led/H008",
+      "LAYOUT-12/poster-direction-graphic-led/H007"
+     ]
+    },
+    "promoter-deck": {
+     "checks": [
+      "LAYOUT-12/promoter-deck/H010",
+      "LAYOUT-12/promoter-deck/H006",
+      "LAYOUT-12/promoter-deck/H009"
+     ]
+    },
+    "release-post-r002": {
+     "checks": [
+      "LAYOUT-12/release-post-r002/H001",
+      "LAYOUT-12/release-post-r002/H003",
+      "LAYOUT-12/release-post-r002/H016"
+     ]
+    },
+    "release-post-r003": {
+     "checks": [
+      "LAYOUT-12/release-post-r003/H001",
+      "LAYOUT-12/release-post-r003/H003",
+      "LAYOUT-12/release-post-r003/H010"
+     ]
+    },
+    "release-post-r004": {
+     "checks": [
+      "LAYOUT-12/release-post-r004/H001",
+      "LAYOUT-12/release-post-r004/H003",
+      "LAYOUT-12/release-post-r004/H009"
+     ]
+    },
+    "release-post-r005": {
+     "checks": [
+      "LAYOUT-12/release-post-r005/H001",
+      "LAYOUT-12/release-post-r005/H003",
+      "LAYOUT-12/release-post-r005/H009"
+     ]
+    },
+    "release-post-r006": {
+     "checks": [
+      "LAYOUT-12/release-post-r006/H001",
+      "LAYOUT-12/release-post-r006/H003",
+      "LAYOUT-12/release-post-r006/H009"
+     ]
+    },
+    "release-post-r007": {
+     "checks": [
+      "LAYOUT-12/release-post-r007/H001",
+      "LAYOUT-12/release-post-r007/H003",
+      "LAYOUT-12/release-post-r007/H009"
+     ]
+    },
+    "release-post-r008": {
+     "checks": [
+      "LAYOUT-12/release-post-r008/H001",
+      "LAYOUT-12/release-post-r008/H003",
+      "LAYOUT-12/release-post-r008/H009"
+     ]
+    },
+    "release-post-r009": {
+     "checks": [
+      "LAYOUT-12/release-post-r009/H001",
+      "LAYOUT-12/release-post-r009/H003",
+      "LAYOUT-12/release-post-r009/H009"
+     ]
+    },
+    "release-post-r010": {
+     "checks": [
+      "LAYOUT-12/release-post-r010/H001",
+      "LAYOUT-12/release-post-r010/H003",
+      "LAYOUT-12/release-post-r010/H009"
+     ]
+    }
+   }
+  },
+  {
+   "rule_id": "F07",
+   "kind": "brief",
+   "rule": "Koa plays Friday 16 Oct, not Saturday as the billing file prints.",
+   "source": "client_brief, What stays fixed; umbra_nights_autumn.csv",
+   "cells": {
+    "poster-direction-type-led": {
+     "checks": [
+      "LAYOUT-12/poster-direction-type-led/H010"
+     ]
+    },
+    "poster-direction-image-led": {
+     "checks": [
+      "LAYOUT-12/poster-direction-image-led/H008"
+     ]
+    },
+    "poster-direction-graphic-led": {
+     "checks": [
+      "LAYOUT-12/poster-direction-graphic-led/H007"
+     ]
+    },
+    "promoter-deck": {
+     "checks": [
+      "LAYOUT-12/promoter-deck/H009"
+     ]
+    },
+    "release-post-r002": {
+     "na": "This post bills Sable Quartet on its own date, so the Koa weekday does not apply."
+    },
+    "release-post-r003": {
+     "na": "This post bills Meridian Brass on its own date, so the Koa weekday does not apply."
+    },
+    "release-post-r004": {
+     "na": "This post bills Night Ferry on its own date, so the Koa weekday does not apply."
+    },
+    "release-post-r005": {
+     "na": "This post bills The Blue Hour on its own date, so the Koa weekday does not apply."
+    },
+    "release-post-r006": {
+     "na": "This post bills The Blue Hour on its own date, so the Koa weekday does not apply."
+    },
+    "release-post-r007": {
+     "na": "This post bills Vespertine on its own date, so the Koa weekday does not apply."
+    },
+    "release-post-r008": {
+     "na": "This post bills The Eastons on its own date, so the Koa weekday does not apply."
+    },
+    "release-post-r009": {
+     "checks": [
+      "LAYOUT-12/release-post-r009/H009"
+     ]
+    },
+    "release-post-r010": {
+     "na": "This post bills Laurel and the Dive on its own date, so the Koa weekday does not apply."
+    }
+   }
+  },
+  {
+   "rule_id": "F08",
+   "kind": "brief",
+   "rule": "Acts are credited exactly as written in umbra_billing_autumn.txt.",
+   "source": "umbra_billing_autumn.txt",
+   "cells": {
+    "poster-direction-type-led": {
+     "checks": [
+      "LAYOUT-12/poster-direction-type-led/H004",
+      "LAYOUT-12/poster-direction-type-led/H007"
+     ]
+    },
+    "poster-direction-image-led": {
+     "checks": [
+      "LAYOUT-12/poster-direction-image-led/H004",
+      "LAYOUT-12/poster-direction-image-led/H005"
+     ]
+    },
+    "poster-direction-graphic-led": {
+     "checks": [
+      "LAYOUT-12/poster-direction-graphic-led/H003",
+      "LAYOUT-12/poster-direction-graphic-led/H004"
+     ]
+    },
+    "promoter-deck": {
+     "checks": [
+      "LAYOUT-12/promoter-deck/H008"
+     ]
+    },
+    "release-post-r002": {
+     "checks": [
+      "LAYOUT-12/release-post-r002/H048"
+     ]
+    },
+    "release-post-r003": {
+     "checks": [
+      "LAYOUT-12/release-post-r003/H043"
+     ]
+    },
+    "release-post-r004": {
+     "checks": [
+      "LAYOUT-12/release-post-r004/H046"
+     ]
+    },
+    "release-post-r005": {
+     "checks": [
+      "LAYOUT-12/release-post-r005/H045"
+     ]
+    },
+    "release-post-r006": {
+     "checks": [
+      "LAYOUT-12/release-post-r006/H045"
+     ]
+    },
+    "release-post-r007": {
+     "checks": [
+      "LAYOUT-12/release-post-r007/H045"
+     ]
+    },
+    "release-post-r008": {
+     "checks": [
+      "LAYOUT-12/release-post-r008/H040"
+     ]
+    },
+    "release-post-r009": {
+     "checks": [
+      "LAYOUT-12/release-post-r009/H040"
+     ]
+    },
+    "release-post-r010": {
+     "checks": [
+      "LAYOUT-12/release-post-r010/H045"
+     ]
+    }
+   }
+  },
+  {
+   "rule_id": "F09",
+   "kind": "brief",
+   "rule": "One chosen poster direction is adapted consistently to the nine release posts.",
+   "source": "client_brief, design decisions",
+   "cells": {
+    "poster-direction-type-led": {
+     "na": "The poster directions are the options; the choice is adapted only on the release posts."
+    },
+    "poster-direction-image-led": {
+     "na": "The poster directions are the options; the choice is adapted only on the release posts."
+    },
+    "poster-direction-graphic-led": {
+     "na": "The poster directions are the options; the choice is adapted only on the release posts."
+    },
+    "promoter-deck": {
+     "checks": [
+      "LAYOUT-12/promoter-deck/H046",
+      "LAYOUT-12/promoter-deck/H047"
+     ]
+    },
+    "release-post-r002": {
+     "checks": [
+      "LAYOUT-12/release-post-r002/H051"
+     ]
+    },
+    "release-post-r003": {
+     "checks": [
+      "LAYOUT-12/release-post-r003/H046"
+     ]
+    },
+    "release-post-r004": {
+     "checks": [
+      "LAYOUT-12/release-post-r004/H047"
+     ]
+    },
+    "release-post-r005": {
+     "checks": [
+      "LAYOUT-12/release-post-r005/H047"
+     ]
+    },
+    "release-post-r006": {
+     "checks": [
+      "LAYOUT-12/release-post-r006/H047"
+     ]
+    },
+    "release-post-r007": {
+     "checks": [
+      "LAYOUT-12/release-post-r007/H048"
+     ]
+    },
+    "release-post-r008": {
+     "checks": [
+      "LAYOUT-12/release-post-r008/H042"
+     ]
+    },
+    "release-post-r009": {
+     "checks": [
+      "LAYOUT-12/release-post-r009/H042"
+     ]
+    },
+    "release-post-r010": {
+     "checks": [
+      "LAYOUT-12/release-post-r010/H047"
+     ]
+    }
+   }
+  },
+  {
+   "rule_id": "T01",
+   "kind": "type",
+   "rule": "Series title (step 01): Sora ExtraBold.",
+   "source": "brand_identity.type_system.scale[01]",
+   "cells": {
+    "poster-direction-type-led": {
+     "checks": [
+      "new:pd-type-led-series-family"
+     ]
+    },
+    "poster-direction-image-led": {
+     "checks": [
+      "new:pd-image-led-series-family"
+     ]
+    },
+    "poster-direction-graphic-led": {
+     "checks": [
+      "new:pd-graphic-led-series-family"
+     ]
+    },
+    "promoter-deck": {
+     "checks": [
+      "LAYOUT-12/promoter-deck/H050"
+     ]
+    },
+    "release-post-r002": {
+     "checks": [
+      "new:r002-series-family"
+     ]
+    },
+    "release-post-r003": {
+     "checks": [
+      "new:r003-series-family"
+     ]
+    },
+    "release-post-r004": {
+     "checks": [
+      "new:r004-series-family"
+     ]
+    },
+    "release-post-r005": {
+     "checks": [
+      "new:r005-series-family"
+     ]
+    },
+    "release-post-r006": {
+     "checks": [
+      "new:r006-series-family"
+     ]
+    },
+    "release-post-r007": {
+     "checks": [
+      "new:r007-series-family"
+     ]
+    },
+    "release-post-r008": {
+     "checks": [
+      "new:r008-series-family"
+     ]
+    },
+    "release-post-r009": {
+     "checks": [
+      "new:r009-series-family"
+     ]
+    },
+    "release-post-r010": {
+     "checks": [
+      "new:r010-series-family"
+     ]
+    }
+   }
+  },
+  {
+   "rule_id": "T14",
+   "kind": "type",
+   "rule": "Series title (step 01): all capitals.",
+   "source": "brand_identity.type_system.scale[01]",
+   "cells": {
+    "poster-direction-type-led": {
+     "checks": [
+      "new:pd-type-led-series-caps"
+     ]
+    },
+    "poster-direction-image-led": {
+     "checks": [
+      "new:pd-image-led-series-caps"
+     ]
+    },
+    "poster-direction-graphic-led": {
+     "checks": [
+      "new:pd-graphic-led-series-caps"
+     ]
+    },
+    "promoter-deck": {
+     "checks": [
+      "new:deck-series-caps"
+     ]
+    },
+    "release-post-r002": {
+     "checks": [
+      "new:r002-series-caps"
+     ]
+    },
+    "release-post-r003": {
+     "checks": [
+      "new:r003-series-caps"
+     ]
+    },
+    "release-post-r004": {
+     "checks": [
+      "new:r004-series-caps"
+     ]
+    },
+    "release-post-r005": {
+     "checks": [
+      "new:r005-series-caps"
+     ]
+    },
+    "release-post-r006": {
+     "checks": [
+      "new:r006-series-caps"
+     ]
+    },
+    "release-post-r007": {
+     "checks": [
+      "new:r007-series-caps"
+     ]
+    },
+    "release-post-r008": {
+     "checks": [
+      "new:r008-series-caps"
+     ]
+    },
+    "release-post-r009": {
+     "checks": [
+      "new:r009-series-caps"
+     ]
+    },
+    "release-post-r010": {
+     "checks": [
+      "new:r010-series-caps"
+     ]
+    }
+   }
+  },
+  {
+   "rule_id": "T15",
+   "kind": "type",
+   "rule": "Series title (step 01) size: 180 pt on the A2 posters, 96 px on a release post.",
+   "source": "brand_identity.type_system.scale[01] size and note",
+   "cells": {
+    "poster-direction-type-led": {
+     "not_verified": "Series-title wording is the designer's choice, so no known string exists for a code check, and 180 pt cannot be judged by eye."
+    },
+    "poster-direction-image-led": {
+     "not_verified": "Series-title wording is the designer's choice, so no known string exists for a code check, and 180 pt cannot be judged by eye."
+    },
+    "poster-direction-graphic-led": {
+     "not_verified": "Series-title wording is the designer's choice, so no known string exists for a code check, and 180 pt cannot be judged by eye."
+    },
+    "promoter-deck": {
+     "na": "The type scale states no series-title size for the deck, only for A2 posters and release posts."
+    },
+    "release-post-r002": {
+     "not_verified": "Exact type size cannot be measured in a delivered PNG; the brand value 96 px is a design target."
+    },
+    "release-post-r003": {
+     "not_verified": "Exact type size cannot be measured in a delivered PNG; the brand value 96 px is a design target."
+    },
+    "release-post-r004": {
+     "not_verified": "Exact type size cannot be measured in a delivered PNG; the brand value 96 px is a design target."
+    },
+    "release-post-r005": {
+     "not_verified": "Exact type size cannot be measured in a delivered PNG; the brand value 96 px is a design target."
+    },
+    "release-post-r006": {
+     "not_verified": "Exact type size cannot be measured in a delivered PNG; the brand value 96 px is a design target."
+    },
+    "release-post-r007": {
+     "not_verified": "Exact type size cannot be measured in a delivered PNG; the brand value 96 px is a design target."
+    },
+    "release-post-r008": {
+     "not_verified": "Exact type size cannot be measured in a delivered PNG; the brand value 96 px is a design target."
+    },
+    "release-post-r009": {
+     "not_verified": "Exact type size cannot be measured in a delivered PNG; the brand value 96 px is a design target."
+    },
+    "release-post-r010": {
+     "not_verified": "Exact type size cannot be measured in a delivered PNG; the brand value 96 px is a design target."
+    }
+   }
+  },
+  {
+   "rule_id": "T16",
+   "kind": "type",
+   "rule": "Series title (step 01) leading: 148 points on the A2 posters.",
+   "source": "brand_identity.type_system.scale[01] leading",
+   "cells": {
+    "poster-direction-type-led": {
+     "not_verified": "Series-title wording is the designer's choice, so no known string exists for a code check, and 148 pt leading cannot be judged by eye."
+    },
+    "poster-direction-image-led": {
+     "not_verified": "Series-title wording is the designer's choice, so no known string exists for a code check, and 148 pt leading cannot be judged by eye."
+    },
+    "poster-direction-graphic-led": {
+     "not_verified": "Series-title wording is the designer's choice, so no known string exists for a code check, and 148 pt leading cannot be judged by eye."
+    },
+    "promoter-deck": {
+     "na": "The type scale states no series-title leading for the deck, only for A2 posters and release posts."
+    },
+    "release-post-r002": {
+     "na": "The type scale states no series-title leading for a release post."
+    },
+    "release-post-r003": {
+     "na": "The type scale states no series-title leading for a release post."
+    },
+    "release-post-r004": {
+     "na": "The type scale states no series-title leading for a release post."
+    },
+    "release-post-r005": {
+     "na": "The type scale states no series-title leading for a release post."
+    },
+    "release-post-r006": {
+     "na": "The type scale states no series-title leading for a release post."
+    },
+    "release-post-r007": {
+     "na": "The type scale states no series-title leading for a release post."
+    },
+    "release-post-r008": {
+     "na": "The type scale states no series-title leading for a release post."
+    },
+    "release-post-r009": {
+     "na": "The type scale states no series-title leading for a release post."
+    },
+    "release-post-r010": {
+     "na": "The type scale states no series-title leading for a release post."
+    }
+   }
+  },
+  {
+   "rule_id": "T17",
+   "kind": "type",
+   "rule": "Series title (step 01) tracking: -10 units.",
+   "source": "brand_identity.type_system.scale[01] tracking",
+   "cells": {
+    "poster-direction-type-led": {
+     "not_verified": "Series-title wording is the designer's choice, so no known string exists for a code check, and -10 tracking cannot be judged by eye."
+    },
+    "poster-direction-image-led": {
+     "not_verified": "Series-title wording is the designer's choice, so no known string exists for a code check, and -10 tracking cannot be judged by eye."
+    },
+    "poster-direction-graphic-led": {
+     "not_verified": "Series-title wording is the designer's choice, so no known string exists for a code check, and -10 tracking cannot be judged by eye."
+    },
+    "promoter-deck": {
+     "not_verified": "The series title is optional in the deck and its wording is free, so no code check exists; -10 tracking cannot be judged by eye."
+    },
+    "release-post-r002": {
+     "not_verified": "Exact tracking cannot be measured in a delivered PNG; the brand value -10 units is a design target."
+    },
+    "release-post-r003": {
+     "not_verified": "Exact tracking cannot be measured in a delivered PNG; the brand value -10 units is a design target."
+    },
+    "release-post-r004": {
+     "not_verified": "Exact tracking cannot be measured in a delivered PNG; the brand value -10 units is a design target."
+    },
+    "release-post-r005": {
+     "not_verified": "Exact tracking cannot be measured in a delivered PNG; the brand value -10 units is a design target."
+    },
+    "release-post-r006": {
+     "not_verified": "Exact tracking cannot be measured in a delivered PNG; the brand value -10 units is a design target."
+    },
+    "release-post-r007": {
+     "not_verified": "Exact tracking cannot be measured in a delivered PNG; the brand value -10 units is a design target."
+    },
+    "release-post-r008": {
+     "not_verified": "Exact tracking cannot be measured in a delivered PNG; the brand value -10 units is a design target."
+    },
+    "release-post-r009": {
+     "not_verified": "Exact tracking cannot be measured in a delivered PNG; the brand value -10 units is a design target."
+    },
+    "release-post-r010": {
+     "not_verified": "Exact tracking cannot be measured in a delivered PNG; the brand value -10 units is a design target."
+    }
+   }
+  },
+  {
+   "rule_id": "T02",
+   "kind": "type",
+   "rule": "Act names: Sora ExtraBold (step 01 note and type rules).",
+   "source": "brand_identity.type_system.scale[01]; rules",
+   "cells": {
+    "poster-direction-type-led": {
+     "checks": [
+      "LAYOUT-12/poster-direction-type-led/R13-act-name-text-family",
+      "LAYOUT-12/poster-direction-type-led/A008",
+      "new:pd-type-led-auto-act-track-sable-quartet",
+      "new:pd-type-led-auto-act-track-meridian-brass",
+      "new:pd-type-led-auto-act-track-night-ferry",
+      "new:pd-type-led-auto-act-the-blue-hour",
+      "new:pd-type-led-auto-act-vespertine",
+      "new:pd-type-led-auto-act-the-eastons",
+      "new:pd-type-led-auto-act-koa",
+      "new:pd-type-led-auto-act-laurel-and-the-dive"
+     ]
+    },
+    "poster-direction-image-led": {
+     "checks": [
+      "LAYOUT-12/poster-direction-image-led/R13-act-name-text-family",
+      "LAYOUT-12/poster-direction-image-led/A008",
+      "new:pd-image-led-auto-act-track-sable-quartet",
+      "new:pd-image-led-auto-act-track-meridian-brass",
+      "new:pd-image-led-auto-act-track-night-ferry",
+      "new:pd-image-led-auto-act-the-blue-hour",
+      "new:pd-image-led-auto-act-vespertine",
+      "new:pd-image-led-auto-act-the-eastons",
+      "new:pd-image-led-auto-act-koa",
+      "new:pd-image-led-auto-act-laurel-and-the-dive"
+     ]
+    },
+    "poster-direction-graphic-led": {
+     "checks": [
+      "LAYOUT-12/poster-direction-graphic-led/R13-act-name-text-family",
+      "LAYOUT-12/poster-direction-graphic-led/A008",
+      "new:pd-graphic-led-auto-act-track-sable-quartet",
+      "new:pd-graphic-led-auto-act-track-meridian-brass",
+      "new:pd-graphic-led-auto-act-track-night-ferry",
+      "new:pd-graphic-led-auto-act-the-blue-hour",
+      "new:pd-graphic-led-auto-act-vespertine",
+      "new:pd-graphic-led-auto-act-the-eastons",
+      "new:pd-graphic-led-auto-act-koa",
+      "new:pd-graphic-led-auto-act-laurel-and-the-dive"
+     ]
+    },
+    "promoter-deck": {
+     "checks": [
+      "LAYOUT-12/promoter-deck/R13-act-name-text-family"
+     ]
+    },
+    "release-post-r002": {
+     "checks": [
+      "LAYOUT-12/release-post-r002/R13-act-name-text-family"
+     ]
+    },
+    "release-post-r003": {
+     "checks": [
+      "LAYOUT-12/release-post-r003/R13-act-name-text-family"
+     ]
+    },
+    "release-post-r004": {
+     "checks": [
+      "LAYOUT-12/release-post-r004/R13-act-name-text-family"
+     ]
+    },
+    "release-post-r005": {
+     "checks": [
+      "LAYOUT-12/release-post-r005/R13-act-name-text-family"
+     ]
+    },
+    "release-post-r006": {
+     "checks": [
+      "LAYOUT-12/release-post-r006/R13-act-name-text-family"
+     ]
+    },
+    "release-post-r007": {
+     "checks": [
+      "LAYOUT-12/release-post-r007/R13-act-name-text-family"
+     ]
+    },
+    "release-post-r008": {
+     "checks": [
+      "LAYOUT-12/release-post-r008/R13-act-name-text-family"
+     ]
+    },
+    "release-post-r009": {
+     "checks": [
+      "LAYOUT-12/release-post-r009/R13-act-name-text-family"
+     ]
+    },
+    "release-post-r010": {
+     "checks": [
+      "LAYOUT-12/release-post-r010/R13-act-name-text-family"
+     ]
+    }
+   }
+  },
+  {
+   "rule_id": "T18",
+   "kind": "type",
+   "rule": "Act names: all capitals.",
+   "source": "brand_identity.type_system.scale[01] tracking (all caps); typography",
+   "cells": {
+    "poster-direction-type-led": {
+     "checks": [
+      "new:pd-type-led-act-caps"
+     ]
+    },
+    "poster-direction-image-led": {
+     "checks": [
+      "new:pd-image-led-act-caps"
+     ]
+    },
+    "poster-direction-graphic-led": {
+     "checks": [
+      "new:pd-graphic-led-act-caps"
+     ]
+    },
+    "promoter-deck": {
+     "checks": [
+      "new:deck-act-caps"
+     ]
+    },
+    "release-post-r002": {
+     "checks": [
+      "new:r002-act-caps"
+     ]
+    },
+    "release-post-r003": {
+     "checks": [
+      "new:r003-act-caps"
+     ]
+    },
+    "release-post-r004": {
+     "checks": [
+      "new:r004-act-caps"
+     ]
+    },
+    "release-post-r005": {
+     "checks": [
+      "new:r005-act-caps"
+     ]
+    },
+    "release-post-r006": {
+     "checks": [
+      "new:r006-act-caps"
+     ]
+    },
+    "release-post-r007": {
+     "checks": [
+      "new:r007-act-caps"
+     ]
+    },
+    "release-post-r008": {
+     "checks": [
+      "new:r008-act-caps"
+     ]
+    },
+    "release-post-r009": {
+     "checks": [
+      "new:r009-act-caps"
+     ]
+    },
+    "release-post-r010": {
+     "checks": [
+      "new:r010-act-caps"
+     ]
+    }
+   }
+  },
+  {
+   "rule_id": "T19",
+   "kind": "type",
+   "rule": "Act-name size on the A2 posters for the remaining nights (The Blue Hour, Vespertine, The Eastons, Koa, Laurel and the Dive): 48 pt.",
+   "source": "brand_identity.type_system.scale[01] note",
+   "cells": {
+    "poster-direction-type-led": {
+     "checks": [
+      "new:pd-type-led-auto-act-the-blue-hour",
+      "new:pd-type-led-auto-act-vespertine",
+      "new:pd-type-led-auto-act-the-eastons",
+      "new:pd-type-led-auto-act-koa",
+      "new:pd-type-led-auto-act-laurel-and-the-dive"
+     ]
+    },
+    "poster-direction-image-led": {
+     "checks": [
+      "new:pd-image-led-auto-act-the-blue-hour",
+      "new:pd-image-led-auto-act-vespertine",
+      "new:pd-image-led-auto-act-the-eastons",
+      "new:pd-image-led-auto-act-koa",
+      "new:pd-image-led-auto-act-laurel-and-the-dive"
+     ]
+    },
+    "poster-direction-graphic-led": {
+     "checks": [
+      "new:pd-graphic-led-auto-act-the-blue-hour",
+      "new:pd-graphic-led-auto-act-vespertine",
+      "new:pd-graphic-led-auto-act-the-eastons",
+      "new:pd-graphic-led-auto-act-koa",
+      "new:pd-graphic-led-auto-act-laurel-and-the-dive"
+     ]
+    },
+    "promoter-deck": {
+     "na": "The type scale states no act-name size for the deck, only for A2 posters and release posts."
+    },
+    "release-post-r002": {
+     "na": "The 48 pt act-name size is stated for the A2 posters only; posts have their own 76 px rule."
+    },
+    "release-post-r003": {
+     "na": "The 48 pt act-name size is stated for the A2 posters only; posts have their own 76 px rule."
+    },
+    "release-post-r004": {
+     "na": "The 48 pt act-name size is stated for the A2 posters only; posts have their own 76 px rule."
+    },
+    "release-post-r005": {
+     "na": "The 48 pt act-name size is stated for the A2 posters only; posts have their own 76 px rule."
+    },
+    "release-post-r006": {
+     "na": "The 48 pt act-name size is stated for the A2 posters only; posts have their own 76 px rule."
+    },
+    "release-post-r007": {
+     "na": "The 48 pt act-name size is stated for the A2 posters only; posts have their own 76 px rule."
+    },
+    "release-post-r008": {
+     "na": "The 48 pt act-name size is stated for the A2 posters only; posts have their own 76 px rule."
+    },
+    "release-post-r009": {
+     "na": "The 48 pt act-name size is stated for the A2 posters only; posts have their own 76 px rule."
+    },
+    "release-post-r010": {
+     "na": "The 48 pt act-name size is stated for the A2 posters only; posts have their own 76 px rule."
+    }
+   }
+  },
+  {
+   "rule_id": "T38",
+   "kind": "type",
+   "rule": "Headline acts (Sable Quartet, Meridian Brass, Night Ferry) are set larger than the remaining nights' act names on the A2 posters.",
+   "source": "brand_identity.type_system.scale[01] note; umbra_billing_autumn.txt",
+   "cells": {
+    "poster-direction-type-led": {
+     "checks": [
+      "LAYOUT-12/poster-direction-type-led/H005"
+     ]
+    },
+    "poster-direction-image-led": {
+     "checks": [
+      "LAYOUT-12/poster-direction-image-led/H013"
+     ]
+    },
+    "poster-direction-graphic-led": {
+     "checks": [
+      "LAYOUT-12/poster-direction-graphic-led/H012"
+     ]
+    },
+    "promoter-deck": {
+     "na": "The type scale states no headline act size for the deck, only for A2 posters and release posts."
+    },
+    "release-post-r002": {
+     "na": "Each release post bills a single act; the poster headline size does not apply."
+    },
+    "release-post-r003": {
+     "na": "Each release post bills a single act; the poster headline size does not apply."
+    },
+    "release-post-r004": {
+     "na": "Each release post bills a single act; the poster headline size does not apply."
+    },
+    "release-post-r005": {
+     "na": "Each release post bills a single act; the poster headline size does not apply."
+    },
+    "release-post-r006": {
+     "na": "Each release post bills a single act; the poster headline size does not apply."
+    },
+    "release-post-r007": {
+     "na": "Each release post bills a single act; the poster headline size does not apply."
+    },
+    "release-post-r008": {
+     "na": "Each release post bills a single act; the poster headline size does not apply."
+    },
+    "release-post-r009": {
+     "na": "Each release post bills a single act; the poster headline size does not apply."
+    },
+    "release-post-r010": {
+     "na": "Each release post bills a single act; the poster headline size does not apply."
+    }
+   }
+  },
+  {
+   "rule_id": "T39",
+   "kind": "type",
+   "rule": "Act-name size on a release post: 76 px.",
+   "source": "brand_identity.type_system.scale[01] note",
+   "cells": {
+    "poster-direction-type-led": {
+     "na": "The 76 px act-name size is stated for release posts only; posters have their own rule."
+    },
+    "poster-direction-image-led": {
+     "na": "The 76 px act-name size is stated for release posts only; posters have their own rule."
+    },
+    "poster-direction-graphic-led": {
+     "na": "The 76 px act-name size is stated for release posts only; posters have their own rule."
+    },
+    "promoter-deck": {
+     "na": "The type scale states no act-name size for the deck, only for A2 posters and release posts."
+    },
+    "release-post-r002": {
+     "not_verified": "Exact type size cannot be measured in a delivered PNG; the brand value 76 px is a design target."
+    },
+    "release-post-r003": {
+     "not_verified": "Exact type size cannot be measured in a delivered PNG; the brand value 76 px is a design target."
+    },
+    "release-post-r004": {
+     "not_verified": "Exact type size cannot be measured in a delivered PNG; the brand value 76 px is a design target."
+    },
+    "release-post-r005": {
+     "not_verified": "Exact type size cannot be measured in a delivered PNG; the brand value 76 px is a design target."
+    },
+    "release-post-r006": {
+     "not_verified": "Exact type size cannot be measured in a delivered PNG; the brand value 76 px is a design target."
+    },
+    "release-post-r007": {
+     "not_verified": "Exact type size cannot be measured in a delivered PNG; the brand value 76 px is a design target."
+    },
+    "release-post-r008": {
+     "not_verified": "Exact type size cannot be measured in a delivered PNG; the brand value 76 px is a design target."
+    },
+    "release-post-r009": {
+     "not_verified": "Exact type size cannot be measured in a delivered PNG; the brand value 76 px is a design target."
+    },
+    "release-post-r010": {
+     "not_verified": "Exact type size cannot be measured in a delivered PNG; the brand value 76 px is a design target."
+    }
+   }
+  },
+  {
+   "rule_id": "T20",
+   "kind": "type",
+   "rule": "Act-name tracking: -10 units (step 01).",
+   "source": "brand_identity.type_system.scale[01] tracking",
+   "cells": {
+    "poster-direction-type-led": {
+     "checks": [
+      "new:pd-type-led-auto-act-track-sable-quartet",
+      "new:pd-type-led-auto-act-track-meridian-brass",
+      "new:pd-type-led-auto-act-track-night-ferry",
+      "new:pd-type-led-auto-act-the-blue-hour",
+      "new:pd-type-led-auto-act-vespertine",
+      "new:pd-type-led-auto-act-the-eastons",
+      "new:pd-type-led-auto-act-koa",
+      "new:pd-type-led-auto-act-laurel-and-the-dive"
+     ]
+    },
+    "poster-direction-image-led": {
+     "checks": [
+      "new:pd-image-led-auto-act-track-sable-quartet",
+      "new:pd-image-led-auto-act-track-meridian-brass",
+      "new:pd-image-led-auto-act-track-night-ferry",
+      "new:pd-image-led-auto-act-the-blue-hour",
+      "new:pd-image-led-auto-act-vespertine",
+      "new:pd-image-led-auto-act-the-eastons",
+      "new:pd-image-led-auto-act-koa",
+      "new:pd-image-led-auto-act-laurel-and-the-dive"
+     ]
+    },
+    "poster-direction-graphic-led": {
+     "checks": [
+      "new:pd-graphic-led-auto-act-track-sable-quartet",
+      "new:pd-graphic-led-auto-act-track-meridian-brass",
+      "new:pd-graphic-led-auto-act-track-night-ferry",
+      "new:pd-graphic-led-auto-act-the-blue-hour",
+      "new:pd-graphic-led-auto-act-vespertine",
+      "new:pd-graphic-led-auto-act-the-eastons",
+      "new:pd-graphic-led-auto-act-koa",
+      "new:pd-graphic-led-auto-act-laurel-and-the-dive"
+     ]
+    },
+    "promoter-deck": {
+     "not_verified": "Act names are optional in the deck and may sit inside poster images, so no code check exists; -10 tracking cannot be judged by eye."
+    },
+    "release-post-r002": {
+     "not_verified": "Exact tracking cannot be measured in a delivered PNG; the brand value -10 units is a design target."
+    },
+    "release-post-r003": {
+     "not_verified": "Exact tracking cannot be measured in a delivered PNG; the brand value -10 units is a design target."
+    },
+    "release-post-r004": {
+     "not_verified": "Exact tracking cannot be measured in a delivered PNG; the brand value -10 units is a design target."
+    },
+    "release-post-r005": {
+     "not_verified": "Exact tracking cannot be measured in a delivered PNG; the brand value -10 units is a design target."
+    },
+    "release-post-r006": {
+     "not_verified": "Exact tracking cannot be measured in a delivered PNG; the brand value -10 units is a design target."
+    },
+    "release-post-r007": {
+     "not_verified": "Exact tracking cannot be measured in a delivered PNG; the brand value -10 units is a design target."
+    },
+    "release-post-r008": {
+     "not_verified": "Exact tracking cannot be measured in a delivered PNG; the brand value -10 units is a design target."
+    },
+    "release-post-r009": {
+     "not_verified": "Exact tracking cannot be measured in a delivered PNG; the brand value -10 units is a design target."
+    },
+    "release-post-r010": {
+     "not_verified": "Exact tracking cannot be measured in a delivered PNG; the brand value -10 units is a design target."
+    }
+   }
+  },
+  {
+   "rule_id": "T07",
+   "kind": "type",
+   "rule": "Act names use one or two lines as needed.",
+   "source": "brand_identity.type_system.rules; scale[01] note",
+   "cells": {
+    "poster-direction-type-led": {
+     "checks": [
+      "new:pd-type-led-act-lines"
+     ]
+    },
+    "poster-direction-image-led": {
+     "checks": [
+      "new:pd-image-led-act-lines"
+     ]
+    },
+    "poster-direction-graphic-led": {
+     "checks": [
+      "new:pd-graphic-led-act-lines"
+     ]
+    },
+    "promoter-deck": {
+     "checks": [
+      "new:deck-act-lines"
+     ]
+    },
+    "release-post-r002": {
+     "checks": [
+      "new:r002-act-lines"
+     ]
+    },
+    "release-post-r003": {
+     "checks": [
+      "new:r003-act-lines"
+     ]
+    },
+    "release-post-r004": {
+     "checks": [
+      "new:r004-act-lines"
+     ]
+    },
+    "release-post-r005": {
+     "checks": [
+      "new:r005-act-lines"
+     ]
+    },
+    "release-post-r006": {
+     "checks": [
+      "new:r006-act-lines"
+     ]
+    },
+    "release-post-r007": {
+     "checks": [
+      "new:r007-act-lines"
+     ]
+    },
+    "release-post-r008": {
+     "checks": [
+      "new:r008-act-lines"
+     ]
+    },
+    "release-post-r009": {
+     "checks": [
+      "LAYOUT-12/release-post-r009/R13-koa-line"
+     ]
+    },
+    "release-post-r010": {
+     "checks": [
+      "new:r010-act-lines"
+     ]
+    }
+   }
+  },
+  {
+   "rule_id": "T21",
+   "kind": "type",
+   "rule": "The one-word act name KOA stays on one line.",
+   "source": "brand_identity.type_system.rules; scale[01] note",
+   "cells": {
+    "poster-direction-type-led": {
+     "checks": [
+      "LAYOUT-12/poster-direction-type-led/R13-koa-line"
+     ]
+    },
+    "poster-direction-image-led": {
+     "checks": [
+      "LAYOUT-12/poster-direction-image-led/R13-koa-line"
+     ]
+    },
+    "poster-direction-graphic-led": {
+     "checks": [
+      "LAYOUT-12/poster-direction-graphic-led/R13-koa-line"
+     ]
+    },
+    "promoter-deck": {
+     "checks": [
+      "LAYOUT-12/promoter-deck/R13-koa-line"
+     ]
+    },
+    "release-post-r002": {
+     "na": "Koa does not appear on this post, which bills Sable Quartet only."
+    },
+    "release-post-r003": {
+     "na": "Koa does not appear on this post, which bills Meridian Brass only."
+    },
+    "release-post-r004": {
+     "na": "Koa does not appear on this post, which bills Night Ferry only."
+    },
+    "release-post-r005": {
+     "na": "Koa does not appear on this post, which bills The Blue Hour only."
+    },
+    "release-post-r006": {
+     "na": "Koa does not appear on this post, which bills The Blue Hour only."
+    },
+    "release-post-r007": {
+     "na": "Koa does not appear on this post, which bills Vespertine only."
+    },
+    "release-post-r008": {
+     "na": "Koa does not appear on this post, which bills The Eastons only."
+    },
+    "release-post-r009": {
+     "checks": [
+      "LAYOUT-12/release-post-r009/R13-koa-line"
+     ]
+    },
+    "release-post-r010": {
+     "na": "Koa does not appear on this post, which bills Laurel and the Dive only."
+    }
+   }
+  },
+  {
+   "rule_id": "T03",
+   "kind": "type",
+   "rule": "Date line (step 02): Sora ExtraBold.",
+   "source": "brand_identity.type_system.scale[02]",
+   "cells": {
+    "poster-direction-type-led": {
+     "checks": [
+      "LAYOUT-12/poster-direction-type-led/H055"
+     ]
+    },
+    "poster-direction-image-led": {
+     "checks": [
+      "LAYOUT-12/poster-direction-image-led/H054"
+     ]
+    },
+    "poster-direction-graphic-led": {
+     "checks": [
+      "LAYOUT-12/poster-direction-graphic-led/H054"
+     ]
+    },
+    "promoter-deck": {
+     "checks": [
+      "LAYOUT-12/promoter-deck/H049"
+     ]
+    },
+    "release-post-r002": {
+     "checks": [
+      "LAYOUT-12/release-post-r002/H041"
+     ]
+    },
+    "release-post-r003": {
+     "checks": [
+      "LAYOUT-12/release-post-r003/H036"
+     ]
+    },
+    "release-post-r004": {
+     "checks": [
+      "LAYOUT-12/release-post-r004/H039"
+     ]
+    },
+    "release-post-r005": {
+     "checks": [
+      "LAYOUT-12/release-post-r005/H038"
+     ]
+    },
+    "release-post-r006": {
+     "checks": [
+      "LAYOUT-12/release-post-r006/H038"
+     ]
+    },
+    "release-post-r007": {
+     "checks": [
+      "LAYOUT-12/release-post-r007/H038"
+     ]
+    },
+    "release-post-r008": {
+     "checks": [
+      "LAYOUT-12/release-post-r008/H033"
+     ]
+    },
+    "release-post-r009": {
+     "checks": [
+      "LAYOUT-12/release-post-r009/H033"
+     ]
+    },
+    "release-post-r010": {
+     "checks": [
+      "LAYOUT-12/release-post-r010/H038"
+     ]
+    }
+   }
+  },
+  {
+   "rule_id": "T22",
+   "kind": "type",
+   "rule": "Date line (step 02): all capitals.",
+   "source": "brand_identity.type_system.scale[02]",
+   "cells": {
+    "poster-direction-type-led": {
+     "checks": [
+      "new:pd-type-led-date-caps"
+     ]
+    },
+    "poster-direction-image-led": {
+     "checks": [
+      "new:pd-image-led-date-caps"
+     ]
+    },
+    "poster-direction-graphic-led": {
+     "checks": [
+      "new:pd-graphic-led-date-caps"
+     ]
+    },
+    "promoter-deck": {
+     "checks": [
+      "new:deck-date-caps"
+     ]
+    },
+    "release-post-r002": {
+     "checks": [
+      "new:r002-date-caps"
+     ]
+    },
+    "release-post-r003": {
+     "checks": [
+      "new:r003-date-caps"
+     ]
+    },
+    "release-post-r004": {
+     "checks": [
+      "new:r004-date-caps"
+     ]
+    },
+    "release-post-r005": {
+     "checks": [
+      "new:r005-date-caps"
+     ]
+    },
+    "release-post-r006": {
+     "checks": [
+      "new:r006-date-caps"
+     ]
+    },
+    "release-post-r007": {
+     "checks": [
+      "new:r007-date-caps"
+     ]
+    },
+    "release-post-r008": {
+     "checks": [
+      "new:r008-date-caps"
+     ]
+    },
+    "release-post-r009": {
+     "checks": [
+      "new:r009-date-caps"
+     ]
+    },
+    "release-post-r010": {
+     "checks": [
+      "new:r010-date-caps"
+     ]
+    }
+   }
+  },
+  {
+   "rule_id": "T23",
+   "kind": "type",
+   "rule": "Date-line size: 18 pt on the A2 posters, 30 px on a release post.",
+   "source": "brand_identity.type_system.scale[02] size and note",
+   "cells": {
+    "poster-direction-type-led": {
+     "not_verified": "Date wording and format are the designer's choice, so no known string exists for a code check; 18 pt cannot be judged by eye."
+    },
+    "poster-direction-image-led": {
+     "not_verified": "Date wording and format are the designer's choice, so no known string exists for a code check; 18 pt cannot be judged by eye."
+    },
+    "poster-direction-graphic-led": {
+     "not_verified": "Date wording and format are the designer's choice, so no known string exists for a code check; 18 pt cannot be judged by eye."
+    },
+    "promoter-deck": {
+     "na": "The type scale states no date-line size for the deck, only for A2 posters and release posts."
+    },
+    "release-post-r002": {
+     "not_verified": "Exact type size cannot be measured in a delivered PNG; the brand value 30 px is a design target."
+    },
+    "release-post-r003": {
+     "not_verified": "Exact type size cannot be measured in a delivered PNG; the brand value 30 px is a design target."
+    },
+    "release-post-r004": {
+     "not_verified": "Exact type size cannot be measured in a delivered PNG; the brand value 30 px is a design target."
+    },
+    "release-post-r005": {
+     "not_verified": "Exact type size cannot be measured in a delivered PNG; the brand value 30 px is a design target."
+    },
+    "release-post-r006": {
+     "not_verified": "Exact type size cannot be measured in a delivered PNG; the brand value 30 px is a design target."
+    },
+    "release-post-r007": {
+     "not_verified": "Exact type size cannot be measured in a delivered PNG; the brand value 30 px is a design target."
+    },
+    "release-post-r008": {
+     "not_verified": "Exact type size cannot be measured in a delivered PNG; the brand value 30 px is a design target."
+    },
+    "release-post-r009": {
+     "not_verified": "Exact type size cannot be measured in a delivered PNG; the brand value 30 px is a design target."
+    },
+    "release-post-r010": {
+     "not_verified": "Exact type size cannot be measured in a delivered PNG; the brand value 30 px is a design target."
+    }
+   }
+  },
+  {
+   "rule_id": "T24",
+   "kind": "type",
+   "rule": "Date-line leading: 22 points on the A2 posters, 36 pixels on a release post.",
+   "source": "brand_identity.type_system.scale[02] leading and note",
+   "cells": {
+    "poster-direction-type-led": {
+     "not_verified": "A date line is usually a single line and its wording is free, so leading cannot be measured by code or by eye."
+    },
+    "poster-direction-image-led": {
+     "not_verified": "A date line is usually a single line and its wording is free, so leading cannot be measured by code or by eye."
+    },
+    "poster-direction-graphic-led": {
+     "not_verified": "A date line is usually a single line and its wording is free, so leading cannot be measured by code or by eye."
+    },
+    "promoter-deck": {
+     "na": "The type scale states no date-line leading for the deck, only for A2 posters and release posts."
+    },
+    "release-post-r002": {
+     "not_verified": "Exact leading cannot be measured in a delivered PNG; the brand value 36 px is a design target."
+    },
+    "release-post-r003": {
+     "not_verified": "Exact leading cannot be measured in a delivered PNG; the brand value 36 px is a design target."
+    },
+    "release-post-r004": {
+     "not_verified": "Exact leading cannot be measured in a delivered PNG; the brand value 36 px is a design target."
+    },
+    "release-post-r005": {
+     "not_verified": "Exact leading cannot be measured in a delivered PNG; the brand value 36 px is a design target."
+    },
+    "release-post-r006": {
+     "not_verified": "Exact leading cannot be measured in a delivered PNG; the brand value 36 px is a design target."
+    },
+    "release-post-r007": {
+     "not_verified": "Exact leading cannot be measured in a delivered PNG; the brand value 36 px is a design target."
+    },
+    "release-post-r008": {
+     "not_verified": "Exact leading cannot be measured in a delivered PNG; the brand value 36 px is a design target."
+    },
+    "release-post-r009": {
+     "not_verified": "Exact leading cannot be measured in a delivered PNG; the brand value 36 px is a design target."
+    },
+    "release-post-r010": {
+     "not_verified": "Exact leading cannot be measured in a delivered PNG; the brand value 36 px is a design target."
+    }
+   }
+  },
+  {
+   "rule_id": "T25",
+   "kind": "type",
+   "rule": "Date-line tracking: +20 units.",
+   "source": "brand_identity.type_system.scale[02] tracking",
+   "cells": {
+    "poster-direction-type-led": {
+     "not_verified": "Date wording and format are the designer's choice, so no known string exists for a code check; +20 tracking cannot be judged by eye."
+    },
+    "poster-direction-image-led": {
+     "not_verified": "Date wording and format are the designer's choice, so no known string exists for a code check; +20 tracking cannot be judged by eye."
+    },
+    "poster-direction-graphic-led": {
+     "not_verified": "Date wording and format are the designer's choice, so no known string exists for a code check; +20 tracking cannot be judged by eye."
+    },
+    "promoter-deck": {
+     "not_verified": "Date lines are optional in the deck and their wording is free, so no code check exists; +20 tracking cannot be judged by eye."
+    },
+    "release-post-r002": {
+     "not_verified": "Exact tracking cannot be measured in a delivered PNG; the brand value +20 units is a design target."
+    },
+    "release-post-r003": {
+     "not_verified": "Exact tracking cannot be measured in a delivered PNG; the brand value +20 units is a design target."
+    },
+    "release-post-r004": {
+     "not_verified": "Exact tracking cannot be measured in a delivered PNG; the brand value +20 units is a design target."
+    },
+    "release-post-r005": {
+     "not_verified": "Exact tracking cannot be measured in a delivered PNG; the brand value +20 units is a design target."
+    },
+    "release-post-r006": {
+     "not_verified": "Exact tracking cannot be measured in a delivered PNG; the brand value +20 units is a design target."
+    },
+    "release-post-r007": {
+     "not_verified": "Exact tracking cannot be measured in a delivered PNG; the brand value +20 units is a design target."
+    },
+    "release-post-r008": {
+     "not_verified": "Exact tracking cannot be measured in a delivered PNG; the brand value +20 units is a design target."
+    },
+    "release-post-r009": {
+     "not_verified": "Exact tracking cannot be measured in a delivered PNG; the brand value +20 units is a design target."
+    },
+    "release-post-r010": {
+     "not_verified": "Exact tracking cannot be measured in a delivered PNG; the brand value +20 units is a design target."
+    }
+   }
+  },
+  {
+   "rule_id": "T04",
+   "kind": "type",
+   "rule": "Body, billing and tables (step 03): Archivo Narrow Regular, never Sora.",
+   "source": "brand_identity.type_system.scale[03]; rules",
+   "cells": {
+    "poster-direction-type-led": {
+     "checks": [
+      "LAYOUT-12/poster-direction-type-led/R13-supporting-billing-family",
+      "LAYOUT-12/poster-direction-type-led/A009"
+     ]
+    },
+    "poster-direction-image-led": {
+     "checks": [
+      "LAYOUT-12/poster-direction-image-led/R13-supporting-billing-family",
+      "LAYOUT-12/poster-direction-image-led/A009"
+     ]
+    },
+    "poster-direction-graphic-led": {
+     "checks": [
+      "LAYOUT-12/poster-direction-graphic-led/R13-supporting-billing-family",
+      "LAYOUT-12/poster-direction-graphic-led/A009"
+     ]
+    },
+    "promoter-deck": {
+     "checks": [
+      "LAYOUT-12/promoter-deck/R13-supporting-billing-family"
+     ]
+    },
+    "release-post-r002": {
+     "checks": [
+      "LAYOUT-12/release-post-r002/R13-supporting-billing-family",
+      "LAYOUT-12/release-post-r002/H043",
+      "LAYOUT-12/release-post-r002/H044"
+     ]
+    },
+    "release-post-r003": {
+     "checks": [
+      "LAYOUT-12/release-post-r003/R13-supporting-billing-family",
+      "LAYOUT-12/release-post-r003/H038",
+      "LAYOUT-12/release-post-r003/H039"
+     ]
+    },
+    "release-post-r004": {
+     "checks": [
+      "LAYOUT-12/release-post-r004/R13-supporting-billing-family",
+      "LAYOUT-12/release-post-r004/H041",
+      "LAYOUT-12/release-post-r004/H042"
+     ]
+    },
+    "release-post-r005": {
+     "checks": [
+      "LAYOUT-12/release-post-r005/R13-supporting-billing-family",
+      "LAYOUT-12/release-post-r005/H040",
+      "LAYOUT-12/release-post-r005/H041"
+     ]
+    },
+    "release-post-r006": {
+     "checks": [
+      "LAYOUT-12/release-post-r006/R13-supporting-billing-family",
+      "LAYOUT-12/release-post-r006/H040",
+      "LAYOUT-12/release-post-r006/H041"
+     ]
+    },
+    "release-post-r007": {
+     "checks": [
+      "LAYOUT-12/release-post-r007/R13-supporting-billing-family",
+      "LAYOUT-12/release-post-r007/H040",
+      "LAYOUT-12/release-post-r007/H041"
+     ]
+    },
+    "release-post-r008": {
+     "checks": [
+      "LAYOUT-12/release-post-r008/R13-supporting-billing-family",
+      "LAYOUT-12/release-post-r008/H035",
+      "LAYOUT-12/release-post-r008/H036"
+     ]
+    },
+    "release-post-r009": {
+     "checks": [
+      "LAYOUT-12/release-post-r009/R13-supporting-billing-family",
+      "LAYOUT-12/release-post-r009/H035",
+      "LAYOUT-12/release-post-r009/H036"
+     ]
+    },
+    "release-post-r010": {
+     "checks": [
+      "LAYOUT-12/release-post-r010/R13-supporting-billing-family",
+      "LAYOUT-12/release-post-r010/H040",
+      "LAYOUT-12/release-post-r010/H041"
+     ]
+    }
+   }
+  },
+  {
+   "rule_id": "T26",
+   "kind": "type",
+   "rule": "Body and billing size: 14 pt on the A2 posters, 28 px on a release post, 18 pt in the deck.",
+   "source": "brand_identity.type_system.scale[03] note",
+   "cells": {
+    "poster-direction-type-led": {
+     "checks": [
+      "LAYOUT-12/poster-direction-type-led/A009",
+      "new:pd-type-led-auto-sup-the-tin-ravens",
+      "new:pd-type-led-auto-sup-junior-vale",
+      "new:pd-type-led-auto-sup-coral-sound",
+      "new:pd-type-led-auto-sup-marlow-reyes",
+      "new:pd-type-led-auto-sup-half-light",
+      "new:pd-type-led-auto-sup-the-undertow",
+      "new:pd-type-led-auto-sup-ferro"
+     ]
+    },
+    "poster-direction-image-led": {
+     "checks": [
+      "LAYOUT-12/poster-direction-image-led/A009",
+      "new:pd-image-led-auto-sup-the-tin-ravens",
+      "new:pd-image-led-auto-sup-junior-vale",
+      "new:pd-image-led-auto-sup-coral-sound",
+      "new:pd-image-led-auto-sup-marlow-reyes",
+      "new:pd-image-led-auto-sup-half-light",
+      "new:pd-image-led-auto-sup-the-undertow",
+      "new:pd-image-led-auto-sup-ferro"
+     ]
+    },
+    "poster-direction-graphic-led": {
+     "checks": [
+      "LAYOUT-12/poster-direction-graphic-led/A009",
+      "new:pd-graphic-led-auto-sup-the-tin-ravens",
+      "new:pd-graphic-led-auto-sup-junior-vale",
+      "new:pd-graphic-led-auto-sup-coral-sound",
+      "new:pd-graphic-led-auto-sup-marlow-reyes",
+      "new:pd-graphic-led-auto-sup-half-light",
+      "new:pd-graphic-led-auto-sup-the-undertow",
+      "new:pd-graphic-led-auto-sup-ferro"
+     ]
+    },
+    "promoter-deck": {
+     "not_verified": "Deck copy is written by the designer, so no known string exists for a code check; 18 pt cannot be judged by eye."
+    },
+    "release-post-r002": {
+     "not_verified": "Exact type size cannot be measured in a delivered PNG; the brand value 28 px is a design target."
+    },
+    "release-post-r003": {
+     "not_verified": "Exact type size cannot be measured in a delivered PNG; the brand value 28 px is a design target."
+    },
+    "release-post-r004": {
+     "not_verified": "Exact type size cannot be measured in a delivered PNG; the brand value 28 px is a design target."
+    },
+    "release-post-r005": {
+     "not_verified": "Exact type size cannot be measured in a delivered PNG; the brand value 28 px is a design target."
+    },
+    "release-post-r006": {
+     "not_verified": "Exact type size cannot be measured in a delivered PNG; the brand value 28 px is a design target."
+    },
+    "release-post-r007": {
+     "not_verified": "Exact type size cannot be measured in a delivered PNG; the brand value 28 px is a design target."
+    },
+    "release-post-r008": {
+     "not_verified": "Exact type size cannot be measured in a delivered PNG; the brand value 28 px is a design target."
+    },
+    "release-post-r009": {
+     "not_verified": "Exact type size cannot be measured in a delivered PNG; the brand value 28 px is a design target."
+    },
+    "release-post-r010": {
+     "not_verified": "Exact type size cannot be measured in a delivered PNG; the brand value 28 px is a design target."
+    }
+   }
+  },
+  {
+   "rule_id": "T27",
+   "kind": "type",
+   "rule": "Body and billing leading: 19 points on the A2 posters, 38 pixels on a release post, 25 points in the deck.",
+   "source": "brand_identity.type_system.scale[03] note",
+   "cells": {
+    "poster-direction-type-led": {
+     "not_verified": "Poster billing lines are single lines, so 19 pt leading cannot be measured by code, and a person cannot judge it by eye."
+    },
+    "poster-direction-image-led": {
+     "not_verified": "Poster billing lines are single lines, so 19 pt leading cannot be measured by code, and a person cannot judge it by eye."
+    },
+    "poster-direction-graphic-led": {
+     "not_verified": "Poster billing lines are single lines, so 19 pt leading cannot be measured by code, and a person cannot judge it by eye."
+    },
+    "promoter-deck": {
+     "not_verified": "Deck copy is written by the designer, so no known wrapping string exists for a code check; 25 pt leading cannot be judged by eye."
+    },
+    "release-post-r002": {
+     "not_verified": "Exact leading cannot be measured in a delivered PNG; the brand value 38 px is a design target."
+    },
+    "release-post-r003": {
+     "not_verified": "Exact leading cannot be measured in a delivered PNG; the brand value 38 px is a design target."
+    },
+    "release-post-r004": {
+     "not_verified": "Exact leading cannot be measured in a delivered PNG; the brand value 38 px is a design target."
+    },
+    "release-post-r005": {
+     "not_verified": "Exact leading cannot be measured in a delivered PNG; the brand value 38 px is a design target."
+    },
+    "release-post-r006": {
+     "not_verified": "Exact leading cannot be measured in a delivered PNG; the brand value 38 px is a design target."
+    },
+    "release-post-r007": {
+     "not_verified": "Exact leading cannot be measured in a delivered PNG; the brand value 38 px is a design target."
+    },
+    "release-post-r008": {
+     "not_verified": "Exact leading cannot be measured in a delivered PNG; the brand value 38 px is a design target."
+    },
+    "release-post-r009": {
+     "not_verified": "Exact leading cannot be measured in a delivered PNG; the brand value 38 px is a design target."
+    },
+    "release-post-r010": {
+     "not_verified": "Exact leading cannot be measured in a delivered PNG; the brand value 38 px is a design target."
+    }
+   }
+  },
+  {
+   "rule_id": "T28",
+   "kind": "type",
+   "rule": "Body and billing tracking: 0.",
+   "source": "brand_identity.type_system.scale[03] tracking",
+   "cells": {
+    "poster-direction-type-led": {
+     "checks": [
+      "new:pd-type-led-auto-sup-track-odette-lang",
+      "new:pd-type-led-auto-sup-the-tin-ravens",
+      "new:pd-type-led-auto-sup-junior-vale",
+      "new:pd-type-led-auto-sup-coral-sound",
+      "new:pd-type-led-auto-sup-marlow-reyes",
+      "new:pd-type-led-auto-sup-half-light",
+      "new:pd-type-led-auto-sup-the-undertow",
+      "new:pd-type-led-auto-sup-ferro"
+     ]
+    },
+    "poster-direction-image-led": {
+     "checks": [
+      "new:pd-image-led-auto-sup-track-odette-lang",
+      "new:pd-image-led-auto-sup-the-tin-ravens",
+      "new:pd-image-led-auto-sup-junior-vale",
+      "new:pd-image-led-auto-sup-coral-sound",
+      "new:pd-image-led-auto-sup-marlow-reyes",
+      "new:pd-image-led-auto-sup-half-light",
+      "new:pd-image-led-auto-sup-the-undertow",
+      "new:pd-image-led-auto-sup-ferro"
+     ]
+    },
+    "poster-direction-graphic-led": {
+     "checks": [
+      "new:pd-graphic-led-auto-sup-track-odette-lang",
+      "new:pd-graphic-led-auto-sup-the-tin-ravens",
+      "new:pd-graphic-led-auto-sup-junior-vale",
+      "new:pd-graphic-led-auto-sup-coral-sound",
+      "new:pd-graphic-led-auto-sup-marlow-reyes",
+      "new:pd-graphic-led-auto-sup-half-light",
+      "new:pd-graphic-led-auto-sup-the-undertow",
+      "new:pd-graphic-led-auto-sup-ferro"
+     ]
+    },
+    "promoter-deck": {
+     "not_verified": "Deck copy is written by the designer, so no known string exists for a code check; 0 tracking cannot be judged by eye."
+    },
+    "release-post-r002": {
+     "not_verified": "Exact tracking cannot be measured in a delivered PNG; the brand value 0 is a design target."
+    },
+    "release-post-r003": {
+     "not_verified": "Exact tracking cannot be measured in a delivered PNG; the brand value 0 is a design target."
+    },
+    "release-post-r004": {
+     "not_verified": "Exact tracking cannot be measured in a delivered PNG; the brand value 0 is a design target."
+    },
+    "release-post-r005": {
+     "not_verified": "Exact tracking cannot be measured in a delivered PNG; the brand value 0 is a design target."
+    },
+    "release-post-r006": {
+     "not_verified": "Exact tracking cannot be measured in a delivered PNG; the brand value 0 is a design target."
+    },
+    "release-post-r007": {
+     "not_verified": "Exact tracking cannot be measured in a delivered PNG; the brand value 0 is a design target."
+    },
+    "release-post-r008": {
+     "not_verified": "Exact tracking cannot be measured in a delivered PNG; the brand value 0 is a design target."
+    },
+    "release-post-r009": {
+     "not_verified": "Exact tracking cannot be measured in a delivered PNG; the brand value 0 is a design target."
+    },
+    "release-post-r010": {
+     "not_verified": "Exact tracking cannot be measured in a delivered PNG; the brand value 0 is a design target."
+    }
+   }
+  },
+  {
+   "rule_id": "T08",
+   "kind": "type",
+   "rule": "Body text runs to a maximum of 65 characters per line.",
+   "source": "brand_identity.type_system.scale[03]",
+   "cells": {
+    "poster-direction-type-led": {
+     "checks": [
+      "LAYOUT-12/poster-direction-type-led/H038"
+     ]
+    },
+    "poster-direction-image-led": {
+     "checks": [
+      "LAYOUT-12/poster-direction-image-led/H037"
+     ]
+    },
+    "poster-direction-graphic-led": {
+     "checks": [
+      "LAYOUT-12/poster-direction-graphic-led/H037"
+     ]
+    },
+    "promoter-deck": {
+     "checks": [
+      "LAYOUT-12/promoter-deck/H029"
+     ]
+    },
+    "release-post-r002": {
+     "checks": [
+      "LAYOUT-12/release-post-r002/H045"
+     ]
+    },
+    "release-post-r003": {
+     "checks": [
+      "LAYOUT-12/release-post-r003/H040"
+     ]
+    },
+    "release-post-r004": {
+     "checks": [
+      "LAYOUT-12/release-post-r004/H043"
+     ]
+    },
+    "release-post-r005": {
+     "checks": [
+      "LAYOUT-12/release-post-r005/H042"
+     ]
+    },
+    "release-post-r006": {
+     "checks": [
+      "LAYOUT-12/release-post-r006/H042"
+     ]
+    },
+    "release-post-r007": {
+     "checks": [
+      "LAYOUT-12/release-post-r007/H042"
+     ]
+    },
+    "release-post-r008": {
+     "checks": [
+      "LAYOUT-12/release-post-r008/H037"
+     ]
+    },
+    "release-post-r009": {
+     "checks": [
+      "LAYOUT-12/release-post-r009/H037"
+     ]
+    },
+    "release-post-r010": {
+     "checks": [
+      "LAYOUT-12/release-post-r010/H042"
+     ]
+    }
+   }
+  },
+  {
+   "rule_id": "T05",
+   "kind": "type",
+   "rule": "Door-time information (step 04): Archivo Narrow SemiBold.",
+   "source": "brand_identity.type_system.scale[04]; rules",
+   "cells": {
+    "poster-direction-type-led": {
+     "checks": [
+      "LAYOUT-12/poster-direction-type-led/R13-door-time-information-family"
+     ]
+    },
+    "poster-direction-image-led": {
+     "checks": [
+      "LAYOUT-12/poster-direction-image-led/R13-door-time-information-family"
+     ]
+    },
+    "poster-direction-graphic-led": {
+     "checks": [
+      "LAYOUT-12/poster-direction-graphic-led/R13-door-time-information-family"
+     ]
+    },
+    "promoter-deck": {
+     "checks": [
+      "LAYOUT-12/promoter-deck/R13-door-time-information-family"
+     ]
+    },
+    "release-post-r002": {
+     "checks": [
+      "LAYOUT-12/release-post-r002/R13-door-time-information-family"
+     ]
+    },
+    "release-post-r003": {
+     "checks": [
+      "LAYOUT-12/release-post-r003/R13-door-time-information-family"
+     ]
+    },
+    "release-post-r004": {
+     "checks": [
+      "LAYOUT-12/release-post-r004/R13-door-time-information-family"
+     ]
+    },
+    "release-post-r005": {
+     "checks": [
+      "LAYOUT-12/release-post-r005/R13-door-time-information-family"
+     ]
+    },
+    "release-post-r006": {
+     "checks": [
+      "LAYOUT-12/release-post-r006/R13-door-time-information-family"
+     ]
+    },
+    "release-post-r007": {
+     "checks": [
+      "LAYOUT-12/release-post-r007/R13-door-time-information-family"
+     ]
+    },
+    "release-post-r008": {
+     "checks": [
+      "LAYOUT-12/release-post-r008/R13-door-time-information-family"
+     ]
+    },
+    "release-post-r009": {
+     "checks": [
+      "LAYOUT-12/release-post-r009/R13-door-time-information-family"
+     ]
+    },
+    "release-post-r010": {
+     "checks": [
+      "LAYOUT-12/release-post-r010/R13-door-time-information-family"
+     ]
+    }
+   }
+  },
+  {
+   "rule_id": "T29",
+   "kind": "type",
+   "rule": "Door line: all capitals.",
+   "source": "brand_identity.type_system.scale[04] tracking (all caps)",
+   "cells": {
+    "poster-direction-type-led": {
+     "checks": [
+      "new:pd-type-led-door-caps"
+     ]
+    },
+    "poster-direction-image-led": {
+     "checks": [
+      "new:pd-image-led-door-caps"
+     ]
+    },
+    "poster-direction-graphic-led": {
+     "checks": [
+      "new:pd-graphic-led-door-caps"
+     ]
+    },
+    "promoter-deck": {
+     "checks": [
+      "new:deck-door-caps"
+     ]
+    },
+    "release-post-r002": {
+     "checks": [
+      "new:r002-door-caps"
+     ]
+    },
+    "release-post-r003": {
+     "checks": [
+      "new:r003-door-caps"
+     ]
+    },
+    "release-post-r004": {
+     "checks": [
+      "new:r004-door-caps"
+     ]
+    },
+    "release-post-r005": {
+     "checks": [
+      "new:r005-door-caps"
+     ]
+    },
+    "release-post-r006": {
+     "checks": [
+      "new:r006-door-caps"
+     ]
+    },
+    "release-post-r007": {
+     "checks": [
+      "new:r007-door-caps"
+     ]
+    },
+    "release-post-r008": {
+     "checks": [
+      "new:r008-door-caps"
+     ]
+    },
+    "release-post-r009": {
+     "checks": [
+      "new:r009-door-caps"
+     ]
+    },
+    "release-post-r010": {
+     "checks": [
+      "new:r010-door-caps"
+     ]
+    }
+   }
+  },
+  {
+   "rule_id": "T30",
+   "kind": "type",
+   "rule": "Archivo Narrow SemiBold is reserved for the door line and sets nothing else.",
+   "source": "brand_identity.type_system.rules; scale[04] note",
+   "cells": {
+    "poster-direction-type-led": {
+     "checks": [
+      "LAYOUT-12/poster-direction-type-led/R13-supporting-billing-family",
+      "LAYOUT-12/poster-direction-type-led/H061",
+      "new:pd-type-led-access-family"
+     ]
+    },
+    "poster-direction-image-led": {
+     "checks": [
+      "LAYOUT-12/poster-direction-image-led/R13-supporting-billing-family",
+      "LAYOUT-12/poster-direction-image-led/H060",
+      "new:pd-image-led-access-family"
+     ]
+    },
+    "poster-direction-graphic-led": {
+     "checks": [
+      "LAYOUT-12/poster-direction-graphic-led/R13-supporting-billing-family",
+      "LAYOUT-12/poster-direction-graphic-led/H060",
+      "new:pd-graphic-led-access-family"
+     ]
+    },
+    "promoter-deck": {
+     "checks": [
+      "LAYOUT-12/promoter-deck/R13-supporting-billing-family"
+     ]
+    },
+    "release-post-r002": {
+     "checks": [
+      "LAYOUT-12/release-post-r002/R13-supporting-billing-family",
+      "LAYOUT-12/release-post-r002/H043",
+      "LAYOUT-12/release-post-r002/H044"
+     ]
+    },
+    "release-post-r003": {
+     "checks": [
+      "LAYOUT-12/release-post-r003/R13-supporting-billing-family",
+      "LAYOUT-12/release-post-r003/H038",
+      "LAYOUT-12/release-post-r003/H039"
+     ]
+    },
+    "release-post-r004": {
+     "checks": [
+      "LAYOUT-12/release-post-r004/R13-supporting-billing-family",
+      "LAYOUT-12/release-post-r004/H041",
+      "LAYOUT-12/release-post-r004/H042"
+     ]
+    },
+    "release-post-r005": {
+     "checks": [
+      "LAYOUT-12/release-post-r005/R13-supporting-billing-family",
+      "LAYOUT-12/release-post-r005/H040",
+      "LAYOUT-12/release-post-r005/H041"
+     ]
+    },
+    "release-post-r006": {
+     "checks": [
+      "LAYOUT-12/release-post-r006/R13-supporting-billing-family",
+      "LAYOUT-12/release-post-r006/H040",
+      "LAYOUT-12/release-post-r006/H041"
+     ]
+    },
+    "release-post-r007": {
+     "checks": [
+      "LAYOUT-12/release-post-r007/R13-supporting-billing-family",
+      "LAYOUT-12/release-post-r007/H040",
+      "LAYOUT-12/release-post-r007/H041"
+     ]
+    },
+    "release-post-r008": {
+     "checks": [
+      "LAYOUT-12/release-post-r008/R13-supporting-billing-family",
+      "LAYOUT-12/release-post-r008/H035",
+      "LAYOUT-12/release-post-r008/H036"
+     ]
+    },
+    "release-post-r009": {
+     "checks": [
+      "LAYOUT-12/release-post-r009/R13-supporting-billing-family",
+      "LAYOUT-12/release-post-r009/H035",
+      "LAYOUT-12/release-post-r009/H036"
+     ]
+    },
+    "release-post-r010": {
+     "checks": [
+      "LAYOUT-12/release-post-r010/R13-supporting-billing-family",
+      "LAYOUT-12/release-post-r010/H040",
+      "LAYOUT-12/release-post-r010/H041"
+     ]
+    }
+   }
+  },
+  {
+   "rule_id": "T31",
+   "kind": "type",
+   "rule": "Door-line size: at least 22 px on a release post.",
+   "source": "brand_identity.type_system.scale[04] note",
+   "cells": {
+    "poster-direction-type-led": {
+     "na": "The type scale states the door-line pixel size for release posts only; poster fine print has its own rule."
+    },
+    "poster-direction-image-led": {
+     "na": "The type scale states the door-line pixel size for release posts only; poster fine print has its own rule."
+    },
+    "poster-direction-graphic-led": {
+     "na": "The type scale states the door-line pixel size for release posts only; poster fine print has its own rule."
+    },
+    "promoter-deck": {
+     "na": "The type scale states no door-line size for the deck, only for A2 posters and release posts."
+    },
+    "release-post-r002": {
+     "not_verified": "Exact type size cannot be measured in a delivered PNG; the brand value of at least 22 px is a design target."
+    },
+    "release-post-r003": {
+     "not_verified": "Exact type size cannot be measured in a delivered PNG; the brand value of at least 22 px is a design target."
+    },
+    "release-post-r004": {
+     "not_verified": "Exact type size cannot be measured in a delivered PNG; the brand value of at least 22 px is a design target."
+    },
+    "release-post-r005": {
+     "not_verified": "Exact type size cannot be measured in a delivered PNG; the brand value of at least 22 px is a design target."
+    },
+    "release-post-r006": {
+     "not_verified": "Exact type size cannot be measured in a delivered PNG; the brand value of at least 22 px is a design target."
+    },
+    "release-post-r007": {
+     "not_verified": "Exact type size cannot be measured in a delivered PNG; the brand value of at least 22 px is a design target."
+    },
+    "release-post-r008": {
+     "not_verified": "Exact type size cannot be measured in a delivered PNG; the brand value of at least 22 px is a design target."
+    },
+    "release-post-r009": {
+     "not_verified": "Exact type size cannot be measured in a delivered PNG; the brand value of at least 22 px is a design target."
+    },
+    "release-post-r010": {
+     "not_verified": "Exact type size cannot be measured in a delivered PNG; the brand value of at least 22 px is a design target."
+    }
+   }
+  },
+  {
+   "rule_id": "T32",
+   "kind": "type",
+   "rule": "Door-line leading: 30 pixels on a release post.",
+   "source": "brand_identity.type_system.scale[04] note",
+   "cells": {
+    "poster-direction-type-led": {
+     "na": "The type scale states the door-line leading for release posts only; poster fine print has its own rule."
+    },
+    "poster-direction-image-led": {
+     "na": "The type scale states the door-line leading for release posts only; poster fine print has its own rule."
+    },
+    "poster-direction-graphic-led": {
+     "na": "The type scale states the door-line leading for release posts only; poster fine print has its own rule."
+    },
+    "promoter-deck": {
+     "na": "The type scale states no door-line leading for the deck, only for A2 posters and release posts."
+    },
+    "release-post-r002": {
+     "not_verified": "Exact leading cannot be measured in a delivered PNG; the brand value 30 px is a design target."
+    },
+    "release-post-r003": {
+     "not_verified": "Exact leading cannot be measured in a delivered PNG; the brand value 30 px is a design target."
+    },
+    "release-post-r004": {
+     "not_verified": "Exact leading cannot be measured in a delivered PNG; the brand value 30 px is a design target."
+    },
+    "release-post-r005": {
+     "not_verified": "Exact leading cannot be measured in a delivered PNG; the brand value 30 px is a design target."
+    },
+    "release-post-r006": {
+     "not_verified": "Exact leading cannot be measured in a delivered PNG; the brand value 30 px is a design target."
+    },
+    "release-post-r007": {
+     "not_verified": "Exact leading cannot be measured in a delivered PNG; the brand value 30 px is a design target."
+    },
+    "release-post-r008": {
+     "not_verified": "Exact leading cannot be measured in a delivered PNG; the brand value 30 px is a design target."
+    },
+    "release-post-r009": {
+     "not_verified": "Exact leading cannot be measured in a delivered PNG; the brand value 30 px is a design target."
+    },
+    "release-post-r010": {
+     "not_verified": "Exact leading cannot be measured in a delivered PNG; the brand value 30 px is a design target."
+    }
+   }
+  },
+  {
+   "rule_id": "T33",
+   "kind": "type",
+   "rule": "Door-line tracking: +30 units.",
+   "source": "brand_identity.type_system.scale[04] tracking",
+   "cells": {
+    "poster-direction-type-led": {
+     "not_verified": "A door line is optional on the posters and its wording is free, so no code check exists; +30 tracking cannot be judged by eye."
+    },
+    "poster-direction-image-led": {
+     "not_verified": "A door line is optional on the posters and its wording is free, so no code check exists; +30 tracking cannot be judged by eye."
+    },
+    "poster-direction-graphic-led": {
+     "not_verified": "A door line is optional on the posters and its wording is free, so no code check exists; +30 tracking cannot be judged by eye."
+    },
+    "promoter-deck": {
+     "not_verified": "A door line is optional in the deck and its wording is free, so no code check exists; +30 tracking cannot be judged by eye."
+    },
+    "release-post-r002": {
+     "not_verified": "Exact tracking cannot be measured in a delivered PNG; the brand value +30 units is a design target."
+    },
+    "release-post-r003": {
+     "not_verified": "Exact tracking cannot be measured in a delivered PNG; the brand value +30 units is a design target."
+    },
+    "release-post-r004": {
+     "not_verified": "Exact tracking cannot be measured in a delivered PNG; the brand value +30 units is a design target."
+    },
+    "release-post-r005": {
+     "not_verified": "Exact tracking cannot be measured in a delivered PNG; the brand value +30 units is a design target."
+    },
+    "release-post-r006": {
+     "not_verified": "Exact tracking cannot be measured in a delivered PNG; the brand value +30 units is a design target."
+    },
+    "release-post-r007": {
+     "not_verified": "Exact tracking cannot be measured in a delivered PNG; the brand value +30 units is a design target."
+    },
+    "release-post-r008": {
+     "not_verified": "Exact tracking cannot be measured in a delivered PNG; the brand value +30 units is a design target."
+    },
+    "release-post-r009": {
+     "not_verified": "Exact tracking cannot be measured in a delivered PNG; the brand value +30 units is a design target."
+    },
+    "release-post-r010": {
+     "not_verified": "Exact tracking cannot be measured in a delivered PNG; the brand value +30 units is a design target."
+    }
+   }
+  },
+  {
+   "rule_id": "T06",
+   "kind": "type",
+   "rule": "Poster licence and access lines (step 04 fine print): Archivo Narrow Regular.",
+   "source": "brand_identity.type_system.scale[04] note",
+   "cells": {
+    "poster-direction-type-led": {
+     "checks": [
+      "LAYOUT-12/poster-direction-type-led/H061",
+      "new:pd-type-led-access-family",
+      "LAYOUT-12/poster-direction-type-led/A010",
+      "LAYOUT-12/poster-direction-type-led/A011"
+     ]
+    },
+    "poster-direction-image-led": {
+     "checks": [
+      "LAYOUT-12/poster-direction-image-led/H060",
+      "new:pd-image-led-access-family",
+      "LAYOUT-12/poster-direction-image-led/A010",
+      "LAYOUT-12/poster-direction-image-led/A011"
+     ]
+    },
+    "poster-direction-graphic-led": {
+     "checks": [
+      "LAYOUT-12/poster-direction-graphic-led/H060",
+      "new:pd-graphic-led-access-family",
+      "LAYOUT-12/poster-direction-graphic-led/A010",
+      "LAYOUT-12/poster-direction-graphic-led/A011"
+     ]
+    },
+    "promoter-deck": {
+     "na": "The deck commission carries no licence or access lines; its text roles are covered by the body check."
+    },
+    "release-post-r002": {
+     "na": "Release posts carry no licence or access line; their only required fine print is the door line."
+    },
+    "release-post-r003": {
+     "na": "Release posts carry no licence or access line; their only required fine print is the door line."
+    },
+    "release-post-r004": {
+     "na": "Release posts carry no licence or access line; their only required fine print is the door line."
+    },
+    "release-post-r005": {
+     "na": "Release posts carry no licence or access line; their only required fine print is the door line."
+    },
+    "release-post-r006": {
+     "na": "Release posts carry no licence or access line; their only required fine print is the door line."
+    },
+    "release-post-r007": {
+     "na": "Release posts carry no licence or access line; their only required fine print is the door line."
+    },
+    "release-post-r008": {
+     "na": "Release posts carry no licence or access line; their only required fine print is the door line."
+    },
+    "release-post-r009": {
+     "na": "Release posts carry no licence or access line; their only required fine print is the door line."
+    },
+    "release-post-r010": {
+     "na": "Release posts carry no licence or access line; their only required fine print is the door line."
+    }
+   }
+  },
+  {
+   "rule_id": "T34",
+   "kind": "type",
+   "rule": "Poster licence and access lines: all capitals.",
+   "source": "brand_identity.type_system.scale[04] tracking (all caps)",
+   "cells": {
+    "poster-direction-type-led": {
+     "checks": [
+      "new:pd-type-led-licence-caps",
+      "new:pd-type-led-access-caps"
+     ]
+    },
+    "poster-direction-image-led": {
+     "checks": [
+      "new:pd-image-led-licence-caps",
+      "new:pd-image-led-access-caps"
+     ]
+    },
+    "poster-direction-graphic-led": {
+     "checks": [
+      "new:pd-graphic-led-licence-caps",
+      "new:pd-graphic-led-access-caps"
+     ]
+    },
+    "promoter-deck": {
+     "na": "The deck commission carries no licence or access lines, which belong to the printed poster proofs."
+    },
+    "release-post-r002": {
+     "na": "Release posts carry no licence or access line; their only fine print is the door line."
+    },
+    "release-post-r003": {
+     "na": "Release posts carry no licence or access line; their only fine print is the door line."
+    },
+    "release-post-r004": {
+     "na": "Release posts carry no licence or access line; their only fine print is the door line."
+    },
+    "release-post-r005": {
+     "na": "Release posts carry no licence or access line; their only fine print is the door line."
+    },
+    "release-post-r006": {
+     "na": "Release posts carry no licence or access line; their only fine print is the door line."
+    },
+    "release-post-r007": {
+     "na": "Release posts carry no licence or access line; their only fine print is the door line."
+    },
+    "release-post-r008": {
+     "na": "Release posts carry no licence or access line; their only fine print is the door line."
+    },
+    "release-post-r009": {
+     "na": "Release posts carry no licence or access line; their only fine print is the door line."
+    },
+    "release-post-r010": {
+     "na": "Release posts carry no licence or access line; their only fine print is the door line."
+    }
+   }
+  },
+  {
+   "rule_id": "T35",
+   "kind": "type",
+   "rule": "Poster licence and access lines size: 9 pt.",
+   "source": "brand_identity.type_system.scale[04] note",
+   "cells": {
+    "poster-direction-type-led": {
+     "checks": [
+      "LAYOUT-12/poster-direction-type-led/A010",
+      "LAYOUT-12/poster-direction-type-led/A011"
+     ]
+    },
+    "poster-direction-image-led": {
+     "checks": [
+      "LAYOUT-12/poster-direction-image-led/A010",
+      "LAYOUT-12/poster-direction-image-led/A011"
+     ]
+    },
+    "poster-direction-graphic-led": {
+     "checks": [
+      "LAYOUT-12/poster-direction-graphic-led/A010",
+      "LAYOUT-12/poster-direction-graphic-led/A011"
+     ]
+    },
+    "promoter-deck": {
+     "na": "The deck commission carries no licence or access lines, which belong to the printed poster proofs."
+    },
+    "release-post-r002": {
+     "na": "Release posts carry no licence or access line; their only fine print is the door line."
+    },
+    "release-post-r003": {
+     "na": "Release posts carry no licence or access line; their only fine print is the door line."
+    },
+    "release-post-r004": {
+     "na": "Release posts carry no licence or access line; their only fine print is the door line."
+    },
+    "release-post-r005": {
+     "na": "Release posts carry no licence or access line; their only fine print is the door line."
+    },
+    "release-post-r006": {
+     "na": "Release posts carry no licence or access line; their only fine print is the door line."
+    },
+    "release-post-r007": {
+     "na": "Release posts carry no licence or access line; their only fine print is the door line."
+    },
+    "release-post-r008": {
+     "na": "Release posts carry no licence or access line; their only fine print is the door line."
+    },
+    "release-post-r009": {
+     "na": "Release posts carry no licence or access line; their only fine print is the door line."
+    },
+    "release-post-r010": {
+     "na": "Release posts carry no licence or access line; their only fine print is the door line."
+    }
+   }
+  },
+  {
+   "rule_id": "T36",
+   "kind": "type",
+   "rule": "Poster licence and access lines leading: 13 points.",
+   "source": "brand_identity.type_system.scale[04] note",
+   "cells": {
+    "poster-direction-type-led": {
+     "not_verified": "Each line may fit on one line at 9 pt on A2, so 13 pt leading cannot be measured by code, and a person cannot judge it by eye."
+    },
+    "poster-direction-image-led": {
+     "not_verified": "Each line may fit on one line at 9 pt on A2, so 13 pt leading cannot be measured by code, and a person cannot judge it by eye."
+    },
+    "poster-direction-graphic-led": {
+     "not_verified": "Each line may fit on one line at 9 pt on A2, so 13 pt leading cannot be measured by code, and a person cannot judge it by eye."
+    },
+    "promoter-deck": {
+     "na": "The deck commission carries no licence or access lines, which belong to the printed poster proofs."
+    },
+    "release-post-r002": {
+     "na": "Release posts carry no licence or access line; their only fine print is the door line."
+    },
+    "release-post-r003": {
+     "na": "Release posts carry no licence or access line; their only fine print is the door line."
+    },
+    "release-post-r004": {
+     "na": "Release posts carry no licence or access line; their only fine print is the door line."
+    },
+    "release-post-r005": {
+     "na": "Release posts carry no licence or access line; their only fine print is the door line."
+    },
+    "release-post-r006": {
+     "na": "Release posts carry no licence or access line; their only fine print is the door line."
+    },
+    "release-post-r007": {
+     "na": "Release posts carry no licence or access line; their only fine print is the door line."
+    },
+    "release-post-r008": {
+     "na": "Release posts carry no licence or access line; their only fine print is the door line."
+    },
+    "release-post-r009": {
+     "na": "Release posts carry no licence or access line; their only fine print is the door line."
+    },
+    "release-post-r010": {
+     "na": "Release posts carry no licence or access line; their only fine print is the door line."
+    }
+   }
+  },
+  {
+   "rule_id": "T37",
+   "kind": "type",
+   "rule": "Poster licence and access lines tracking: +30 units.",
+   "source": "brand_identity.type_system.scale[04] tracking",
+   "cells": {
+    "poster-direction-type-led": {
+     "checks": [
+      "new:pd-type-led-auto-access-track",
+      "new:pd-type-led-auto-licence-track"
+     ]
+    },
+    "poster-direction-image-led": {
+     "checks": [
+      "new:pd-image-led-auto-access-track",
+      "new:pd-image-led-auto-licence-track"
+     ]
+    },
+    "poster-direction-graphic-led": {
+     "checks": [
+      "new:pd-graphic-led-auto-access-track",
+      "new:pd-graphic-led-auto-licence-track"
+     ]
+    },
+    "promoter-deck": {
+     "na": "The deck commission carries no licence or access lines, which belong to the printed poster proofs."
+    },
+    "release-post-r002": {
+     "na": "Release posts carry no licence or access line; their only fine print is the door line."
+    },
+    "release-post-r003": {
+     "na": "Release posts carry no licence or access line; their only fine print is the door line."
+    },
+    "release-post-r004": {
+     "na": "Release posts carry no licence or access line; their only fine print is the door line."
+    },
+    "release-post-r005": {
+     "na": "Release posts carry no licence or access line; their only fine print is the door line."
+    },
+    "release-post-r006": {
+     "na": "Release posts carry no licence or access line; their only fine print is the door line."
+    },
+    "release-post-r007": {
+     "na": "Release posts carry no licence or access line; their only fine print is the door line."
+    },
+    "release-post-r008": {
+     "na": "Release posts carry no licence or access line; their only fine print is the door line."
+    },
+    "release-post-r009": {
+     "na": "Release posts carry no licence or access line; their only fine print is the door line."
+    },
+    "release-post-r010": {
+     "na": "Release posts carry no licence or access line; their only fine print is the door line."
+    }
+   }
+  },
+  {
+   "rule_id": "T09",
+   "kind": "type",
+   "rule": "Date line tracking (+20) is more open than act names (-10).",
+   "source": "brand_identity.type_system.scale[01-02]",
+   "cells": {
+    "poster-direction-type-led": {
+     "checks": [
+      "LAYOUT-12/poster-direction-type-led/H037"
+     ]
+    },
+    "poster-direction-image-led": {
+     "checks": [
+      "LAYOUT-12/poster-direction-image-led/H036"
+     ]
+    },
+    "poster-direction-graphic-led": {
+     "checks": [
+      "LAYOUT-12/poster-direction-graphic-led/H036"
+     ]
+    },
+    "promoter-deck": {
+     "checks": [
+      "LAYOUT-12/promoter-deck/H028"
+     ]
+    },
+    "release-post-r002": {
+     "checks": [
+      "LAYOUT-12/release-post-r002/H027"
+     ]
+    },
+    "release-post-r003": {
+     "checks": [
+      "LAYOUT-12/release-post-r003/H026"
+     ]
+    },
+    "release-post-r004": {
+     "checks": [
+      "LAYOUT-12/release-post-r004/H023"
+     ]
+    },
+    "release-post-r005": {
+     "checks": [
+      "LAYOUT-12/release-post-r005/H022"
+     ]
+    },
+    "release-post-r006": {
+     "checks": [
+      "LAYOUT-12/release-post-r006/H022"
+     ]
+    },
+    "release-post-r007": {
+     "checks": [
+      "LAYOUT-12/release-post-r007/H022"
+     ]
+    },
+    "release-post-r008": {
+     "checks": [
+      "LAYOUT-12/release-post-r008/H023"
+     ]
+    },
+    "release-post-r009": {
+     "checks": [
+      "LAYOUT-12/release-post-r009/H023"
+     ]
+    },
+    "release-post-r010": {
+     "checks": [
+      "LAYOUT-12/release-post-r010/H022"
+     ]
+    }
+   }
+  },
+  {
+   "rule_id": "T10",
+   "kind": "type",
+   "rule": "Door line tracking (+30) is more open than billing and body (0).",
+   "source": "brand_identity.type_system.scale[03-04]",
+   "cells": {
+    "poster-direction-type-led": {
+     "checks": [
+      "LAYOUT-12/poster-direction-type-led/H046"
+     ]
+    },
+    "poster-direction-image-led": {
+     "checks": [
+      "LAYOUT-12/poster-direction-image-led/H045"
+     ]
+    },
+    "poster-direction-graphic-led": {
+     "checks": [
+      "LAYOUT-12/poster-direction-graphic-led/H045"
+     ]
+    },
+    "promoter-deck": {
+     "checks": [
+      "LAYOUT-12/promoter-deck/H040"
+     ]
+    },
+    "release-post-r002": {
+     "checks": [
+      "LAYOUT-12/release-post-r002/H038"
+     ]
+    },
+    "release-post-r003": {
+     "checks": [
+      "LAYOUT-12/release-post-r003/H033"
+     ]
+    },
+    "release-post-r004": {
+     "checks": [
+      "LAYOUT-12/release-post-r004/H036"
+     ]
+    },
+    "release-post-r005": {
+     "checks": [
+      "LAYOUT-12/release-post-r005/H035"
+     ]
+    },
+    "release-post-r006": {
+     "checks": [
+      "LAYOUT-12/release-post-r006/H035"
+     ]
+    },
+    "release-post-r007": {
+     "checks": [
+      "LAYOUT-12/release-post-r007/H035"
+     ]
+    },
+    "release-post-r008": {
+     "checks": [
+      "LAYOUT-12/release-post-r008/H030"
+     ]
+    },
+    "release-post-r009": {
+     "checks": [
+      "LAYOUT-12/release-post-r009/H030"
+     ]
+    },
+    "release-post-r010": {
+     "checks": [
+      "LAYOUT-12/release-post-r010/H035"
+     ]
+    }
+   }
+  },
+  {
+   "rule_id": "T11",
+   "kind": "type",
+   "rule": "Hierarchy: act names lead; headline acts above the remaining acts on posters, the act name above all night information on posts.",
+   "source": "brand_identity.type_system.scale; umbra_billing_autumn.txt",
+   "cells": {
+    "poster-direction-type-led": {
+     "checks": [
+      "LAYOUT-12/poster-direction-type-led/H005"
+     ]
+    },
+    "poster-direction-image-led": {
+     "checks": [
+      "LAYOUT-12/poster-direction-image-led/H013"
+     ]
+    },
+    "poster-direction-graphic-led": {
+     "checks": [
+      "LAYOUT-12/poster-direction-graphic-led/H012"
+     ]
+    },
+    "promoter-deck": {
+     "na": "The deck has no billing hierarchy commissioned; its draw chart and directions carry the content."
+    },
+    "release-post-r002": {
+     "checks": [
+      "LAYOUT-12/release-post-r002/H013"
+     ]
+    },
+    "release-post-r003": {
+     "checks": [
+      "LAYOUT-12/release-post-r003/H012"
+     ]
+    },
+    "release-post-r004": {
+     "checks": [
+      "LAYOUT-12/release-post-r004/H011"
+     ]
+    },
+    "release-post-r005": {
+     "checks": [
+      "LAYOUT-12/release-post-r005/H011"
+     ]
+    },
+    "release-post-r006": {
+     "checks": [
+      "LAYOUT-12/release-post-r006/H011"
+     ]
+    },
+    "release-post-r007": {
+     "checks": [
+      "LAYOUT-12/release-post-r007/H011"
+     ]
+    },
+    "release-post-r008": {
+     "checks": [
+      "LAYOUT-12/release-post-r008/H011"
+     ]
+    },
+    "release-post-r009": {
+     "checks": [
+      "LAYOUT-12/release-post-r009/H011"
+     ]
+    },
+    "release-post-r010": {
+     "checks": [
+      "LAYOUT-12/release-post-r010/H011"
+     ]
+    }
+   }
+  },
+  {
+   "rule_id": "T12",
+   "kind": "type",
+   "rule": "Signature move: a compact series-title stack in Sora ExtraBold; Bone White act blocks on Pitch with the date immediately above in Sodium.",
+   "source": "brand_identity.type_system.signature_move",
+   "cells": {
+    "poster-direction-type-led": {
+     "checks": [
+      "LAYOUT-12/poster-direction-type-led/H056",
+      "new:pd-type-led-series-family",
+      "LAYOUT-12/poster-direction-type-led/H036",
+      "LAYOUT-12/poster-direction-type-led/H045",
+      "LAYOUT-12/poster-direction-type-led/H044",
+      "new:pd-type-led-act-ground"
+     ]
+    },
+    "poster-direction-image-led": {
+     "checks": [
+      "LAYOUT-12/poster-direction-image-led/H055",
+      "new:pd-image-led-series-family",
+      "LAYOUT-12/poster-direction-image-led/H035",
+      "LAYOUT-12/poster-direction-image-led/H044",
+      "LAYOUT-12/poster-direction-image-led/H043",
+      "new:pd-image-led-act-ground"
+     ]
+    },
+    "poster-direction-graphic-led": {
+     "checks": [
+      "LAYOUT-12/poster-direction-graphic-led/H055",
+      "new:pd-graphic-led-series-family",
+      "LAYOUT-12/poster-direction-graphic-led/H035",
+      "LAYOUT-12/poster-direction-graphic-led/H044",
+      "LAYOUT-12/poster-direction-graphic-led/H043",
+      "new:pd-graphic-led-act-ground"
+     ]
+    },
+    "promoter-deck": {
+     "checks": [
+      "LAYOUT-12/promoter-deck/H050",
+      "LAYOUT-12/promoter-deck/H027",
+      "LAYOUT-12/promoter-deck/H039",
+      "LAYOUT-12/promoter-deck/H038",
+      "new:promoter-deck-act-ground"
+     ]
+    },
+    "release-post-r002": {
+     "checks": [
+      "LAYOUT-12/release-post-r002/H042",
+      "new:r002-series-family",
+      "LAYOUT-12/release-post-r002/H026",
+      "LAYOUT-12/release-post-r002/H037",
+      "LAYOUT-12/release-post-r002/H036",
+      "new:r002-act-ground"
+     ]
+    },
+    "release-post-r003": {
+     "checks": [
+      "LAYOUT-12/release-post-r003/H037",
+      "new:r003-series-family",
+      "LAYOUT-12/release-post-r003/H025",
+      "LAYOUT-12/release-post-r003/H032",
+      "LAYOUT-12/release-post-r003/H031",
+      "new:r003-act-ground"
+     ]
+    },
+    "release-post-r004": {
+     "checks": [
+      "LAYOUT-12/release-post-r004/H040",
+      "new:r004-series-family",
+      "LAYOUT-12/release-post-r004/H022",
+      "LAYOUT-12/release-post-r004/H035",
+      "LAYOUT-12/release-post-r004/H034",
+      "new:r004-act-ground"
+     ]
+    },
+    "release-post-r005": {
+     "checks": [
+      "LAYOUT-12/release-post-r005/H039",
+      "new:r005-series-family",
+      "LAYOUT-12/release-post-r005/H021",
+      "LAYOUT-12/release-post-r005/H034",
+      "LAYOUT-12/release-post-r005/H033",
+      "new:r005-act-ground"
+     ]
+    },
+    "release-post-r006": {
+     "checks": [
+      "LAYOUT-12/release-post-r006/H039",
+      "new:r006-series-family",
+      "LAYOUT-12/release-post-r006/H021",
+      "LAYOUT-12/release-post-r006/H034",
+      "LAYOUT-12/release-post-r006/H033",
+      "new:r006-act-ground"
+     ]
+    },
+    "release-post-r007": {
+     "checks": [
+      "LAYOUT-12/release-post-r007/H039",
+      "new:r007-series-family",
+      "LAYOUT-12/release-post-r007/H021",
+      "LAYOUT-12/release-post-r007/H034",
+      "LAYOUT-12/release-post-r007/H033",
+      "new:r007-act-ground"
+     ]
+    },
+    "release-post-r008": {
+     "checks": [
+      "LAYOUT-12/release-post-r008/H034",
+      "new:r008-series-family",
+      "LAYOUT-12/release-post-r008/H022",
+      "LAYOUT-12/release-post-r008/H029",
+      "LAYOUT-12/release-post-r008/H028",
+      "new:r008-act-ground"
+     ]
+    },
+    "release-post-r009": {
+     "checks": [
+      "LAYOUT-12/release-post-r009/H034",
+      "new:r009-series-family",
+      "LAYOUT-12/release-post-r009/H022",
+      "LAYOUT-12/release-post-r009/H029",
+      "LAYOUT-12/release-post-r009/H028",
+      "new:r009-act-ground"
+     ]
+    },
+    "release-post-r010": {
+     "checks": [
+      "LAYOUT-12/release-post-r010/H039",
+      "new:r010-series-family",
+      "LAYOUT-12/release-post-r010/H021",
+      "LAYOUT-12/release-post-r010/H034",
+      "LAYOUT-12/release-post-r010/H033",
+      "new:r010-act-ground"
+     ]
+    }
+   }
+  },
+  {
+   "rule_id": "T13",
+   "kind": "type",
+   "rule": "Do not apply the 180 pt series-title size to the full billing list (A2 series title only, not every act).",
+   "source": "brand_identity.type_system.rules; scale[01] note",
+   "cells": {
+    "poster-direction-type-led": {
+     "checks": [
+      "LAYOUT-12/poster-direction-type-led/H057"
+     ]
+    },
+    "poster-direction-image-led": {
+     "checks": [
+      "LAYOUT-12/poster-direction-image-led/H056"
+     ]
+    },
+    "poster-direction-graphic-led": {
+     "checks": [
+      "LAYOUT-12/poster-direction-graphic-led/H056"
+     ]
+    },
+    "promoter-deck": {
+     "na": "The deck carries no A2 billing list; this rule covers the A2 poster directions."
+    },
+    "release-post-r002": {
+     "na": "A release post carries one act, not the billing list; this A2 rule covers the posters."
+    },
+    "release-post-r003": {
+     "na": "A release post carries one act, not the billing list; this A2 rule covers the posters."
+    },
+    "release-post-r004": {
+     "na": "A release post carries one act, not the billing list; this A2 rule covers the posters."
+    },
+    "release-post-r005": {
+     "na": "A release post carries one act, not the billing list; this A2 rule covers the posters."
+    },
+    "release-post-r006": {
+     "na": "A release post carries one act, not the billing list; this A2 rule covers the posters."
+    },
+    "release-post-r007": {
+     "na": "A release post carries one act, not the billing list; this A2 rule covers the posters."
+    },
+    "release-post-r008": {
+     "na": "A release post carries one act, not the billing list; this A2 rule covers the posters."
+    },
+    "release-post-r009": {
+     "na": "A release post carries one act, not the billing list; this A2 rule covers the posters."
+    },
+    "release-post-r010": {
+     "na": "A release post carries one act, not the billing list; this A2 rule covers the posters."
+    }
+   }
+  },
+  {
+   "rule_id": "D01",
+   "kind": "deliverable",
+   "rule": "Show all nine nights and dates in approved billing order, with support acts and the printed-matter accessibility and licence lines.",
+   "source": "deliverables[].commission.content",
+   "cells": {
+    "poster-direction-type-led": {
+     "checks": [
+      "LAYOUT-12/poster-direction-type-led/H001",
+      "LAYOUT-12/poster-direction-type-led/H008",
+      "new:pd-type-led-date-meridian-brass-26",
+      "new:pd-type-led-date-night-ferry-2",
+      "LAYOUT-12/poster-direction-type-led/H009",
+      "new:pd-type-led-date-the-blue-hour-4",
+      "new:pd-type-led-date-vespertine-9",
+      "new:pd-type-led-date-the-eastons-10",
+      "new:pd-type-led-date-koa-16",
+      "new:pd-type-led-date-laurel-and-the-dive-17",
+      "LAYOUT-12/poster-direction-type-led/H012",
+      "new:pd-type-led-support-meridian-brass",
+      "new:pd-type-led-support-night-ferry",
+      "LAYOUT-12/poster-direction-type-led/H013",
+      "new:pd-type-led-support-vespertine",
+      "new:pd-type-led-support-the-eastons",
+      "new:pd-type-led-support-koa",
+      "new:pd-type-led-support-laurel-and-the-dive",
+      "LAYOUT-12/poster-direction-type-led/H058",
+      "LAYOUT-12/poster-direction-type-led/H016",
+      "LAYOUT-12/poster-direction-type-led/H015"
+     ]
+    },
+    "poster-direction-image-led": {
+     "checks": [
+      "LAYOUT-12/poster-direction-image-led/H001",
+      "LAYOUT-12/poster-direction-image-led/H006",
+      "new:pd-image-led-date-meridian-brass-26",
+      "new:pd-image-led-date-night-ferry-2",
+      "LAYOUT-12/poster-direction-image-led/H007",
+      "new:pd-image-led-date-the-blue-hour-4",
+      "new:pd-image-led-date-vespertine-9",
+      "new:pd-image-led-date-the-eastons-10",
+      "new:pd-image-led-date-koa-16",
+      "new:pd-image-led-date-laurel-and-the-dive-17",
+      "LAYOUT-12/poster-direction-image-led/H010",
+      "new:pd-image-led-support-meridian-brass",
+      "new:pd-image-led-support-night-ferry",
+      "LAYOUT-12/poster-direction-image-led/H011",
+      "new:pd-image-led-support-vespertine",
+      "new:pd-image-led-support-the-eastons",
+      "new:pd-image-led-support-koa",
+      "new:pd-image-led-support-laurel-and-the-dive",
+      "LAYOUT-12/poster-direction-image-led/H057",
+      "LAYOUT-12/poster-direction-image-led/H015",
+      "LAYOUT-12/poster-direction-image-led/H014"
+     ]
+    },
+    "poster-direction-graphic-led": {
+     "checks": [
+      "LAYOUT-12/poster-direction-graphic-led/H001",
+      "LAYOUT-12/poster-direction-graphic-led/H005",
+      "new:pd-graphic-led-date-meridian-brass-26",
+      "new:pd-graphic-led-date-night-ferry-2",
+      "LAYOUT-12/poster-direction-graphic-led/H006",
+      "new:pd-graphic-led-date-the-blue-hour-4",
+      "new:pd-graphic-led-date-vespertine-9",
+      "new:pd-graphic-led-date-the-eastons-10",
+      "new:pd-graphic-led-date-koa-16",
+      "new:pd-graphic-led-date-laurel-and-the-dive-17",
+      "LAYOUT-12/poster-direction-graphic-led/H009",
+      "new:pd-graphic-led-support-meridian-brass",
+      "new:pd-graphic-led-support-night-ferry",
+      "LAYOUT-12/poster-direction-graphic-led/H010",
+      "new:pd-graphic-led-support-vespertine",
+      "new:pd-graphic-led-support-the-eastons",
+      "new:pd-graphic-led-support-koa",
+      "new:pd-graphic-led-support-laurel-and-the-dive",
+      "LAYOUT-12/poster-direction-graphic-led/H057",
+      "LAYOUT-12/poster-direction-graphic-led/H014",
+      "LAYOUT-12/poster-direction-graphic-led/H013"
+     ]
+    },
+    "promoter-deck": {
+     "na": "This requirement belongs to the A2 poster directions, not to this file."
+    },
+    "release-post-r002": {
+     "na": "This requirement belongs to the A2 poster directions, not to this file."
+    },
+    "release-post-r003": {
+     "na": "This requirement belongs to the A2 poster directions, not to this file."
+    },
+    "release-post-r004": {
+     "na": "This requirement belongs to the A2 poster directions, not to this file."
+    },
+    "release-post-r005": {
+     "na": "This requirement belongs to the A2 poster directions, not to this file."
+    },
+    "release-post-r006": {
+     "na": "This requirement belongs to the A2 poster directions, not to this file."
+    },
+    "release-post-r007": {
+     "na": "This requirement belongs to the A2 poster directions, not to this file."
+    },
+    "release-post-r008": {
+     "na": "This requirement belongs to the A2 poster directions, not to this file."
+    },
+    "release-post-r009": {
+     "na": "This requirement belongs to the A2 poster directions, not to this file."
+    },
+    "release-post-r010": {
+     "na": "This requirement belongs to the A2 poster directions, not to this file."
+    }
+   }
+  },
+  {
+   "rule_id": "D02",
+   "kind": "deliverable",
+   "rule": "Make this file's named direction visibly type-led, image-led or graphic-led. Use the supplied Sable Quartet and Meridian Brass wordmarks alongside their typeset names.",
+   "source": "deliverables[].commission.content",
+   "cells": {
+    "poster-direction-type-led": {
+     "checks": [
+      "LAYOUT-12/poster-direction-type-led/H050",
+      "LAYOUT-12/poster-direction-type-led/H051",
+      "LAYOUT-12/poster-direction-type-led/H053"
+     ]
+    },
+    "poster-direction-image-led": {
+     "checks": [
+      "LAYOUT-12/poster-direction-image-led/H049",
+      "LAYOUT-12/poster-direction-image-led/H050",
+      "LAYOUT-12/poster-direction-image-led/H052"
+     ]
+    },
+    "poster-direction-graphic-led": {
+     "checks": [
+      "LAYOUT-12/poster-direction-graphic-led/H049",
+      "LAYOUT-12/poster-direction-graphic-led/H050",
+      "LAYOUT-12/poster-direction-graphic-led/H052"
+     ]
+    },
+    "promoter-deck": {
+     "na": "This requirement belongs to the A2 poster directions, not to this file."
+    },
+    "release-post-r002": {
+     "na": "This requirement belongs to the A2 poster directions, not to this file."
+    },
+    "release-post-r003": {
+     "na": "This requirement belongs to the A2 poster directions, not to this file."
+    },
+    "release-post-r004": {
+     "na": "This requirement belongs to the A2 poster directions, not to this file."
+    },
+    "release-post-r005": {
+     "na": "This requirement belongs to the A2 poster directions, not to this file."
+    },
+    "release-post-r006": {
+     "na": "This requirement belongs to the A2 poster directions, not to this file."
+    },
+    "release-post-r007": {
+     "na": "This requirement belongs to the A2 poster directions, not to this file."
+    },
+    "release-post-r008": {
+     "na": "This requirement belongs to the A2 poster directions, not to this file."
+    },
+    "release-post-r009": {
+     "na": "This requirement belongs to the A2 poster directions, not to this file."
+    },
+    "release-post-r010": {
+     "na": "This requirement belongs to the A2 poster directions, not to this file."
+    }
+   }
+  },
+  {
+   "rule_id": "D03",
+   "kind": "deliverable",
+   "rule": "Present all three directions and identify which one is used for the release posts.",
+   "source": "deliverables[].commission.content",
+   "cells": {
+    "poster-direction-type-led": {
+     "na": "This requirement belongs to the promoter pitch deck, not to this file."
+    },
+    "poster-direction-image-led": {
+     "na": "This requirement belongs to the promoter pitch deck, not to this file."
+    },
+    "poster-direction-graphic-led": {
+     "na": "This requirement belongs to the promoter pitch deck, not to this file."
+    },
+    "promoter-deck": {
+     "checks": [
+      "LAYOUT-12/promoter-deck/H002",
+      "LAYOUT-12/promoter-deck/H007",
+      "LAYOUT-12/promoter-deck/H036",
+      "LAYOUT-12/promoter-deck/H037",
+      "LAYOUT-12/promoter-deck/H046"
+     ]
+    },
+    "release-post-r002": {
+     "na": "This requirement belongs to the promoter pitch deck, not to this file."
+    },
+    "release-post-r003": {
+     "na": "This requirement belongs to the promoter pitch deck, not to this file."
+    },
+    "release-post-r004": {
+     "na": "This requirement belongs to the promoter pitch deck, not to this file."
+    },
+    "release-post-r005": {
+     "na": "This requirement belongs to the promoter pitch deck, not to this file."
+    },
+    "release-post-r006": {
+     "na": "This requirement belongs to the promoter pitch deck, not to this file."
+    },
+    "release-post-r007": {
+     "na": "This requirement belongs to the promoter pitch deck, not to this file."
+    },
+    "release-post-r008": {
+     "na": "This requirement belongs to the promoter pitch deck, not to this file."
+    },
+    "release-post-r009": {
+     "na": "This requirement belongs to the promoter pitch deck, not to this file."
+    },
+    "release-post-r010": {
+     "na": "This requirement belongs to the promoter pitch deck, not to this file."
+    }
+   }
+  },
+  {
+   "rule_id": "D04",
+   "kind": "deliverable",
+   "rule": "Chart the six monthly average-draw values from umbra_room_specs.txt, with clear month labels and a truthful numerical scale.",
+   "source": "deliverables[].commission.content",
+   "cells": {
+    "poster-direction-type-led": {
+     "na": "This requirement belongs to the promoter pitch deck, not to this file."
+    },
+    "poster-direction-image-led": {
+     "na": "This requirement belongs to the promoter pitch deck, not to this file."
+    },
+    "poster-direction-graphic-led": {
+     "na": "This requirement belongs to the promoter pitch deck, not to this file."
+    },
+    "promoter-deck": {
+     "checks": [
+      "LAYOUT-12/promoter-deck/H003",
+      "new:deck-draw-oct",
+      "new:deck-draw-nov",
+      "new:deck-draw-dec",
+      "new:deck-draw-jan",
+      "new:deck-draw-feb",
+      "LAYOUT-12/promoter-deck/H048"
+     ]
+    },
+    "release-post-r002": {
+     "na": "This requirement belongs to the promoter pitch deck, not to this file."
+    },
+    "release-post-r003": {
+     "na": "This requirement belongs to the promoter pitch deck, not to this file."
+    },
+    "release-post-r004": {
+     "na": "This requirement belongs to the promoter pitch deck, not to this file."
+    },
+    "release-post-r005": {
+     "na": "This requirement belongs to the promoter pitch deck, not to this file."
+    },
+    "release-post-r006": {
+     "na": "This requirement belongs to the promoter pitch deck, not to this file."
+    },
+    "release-post-r007": {
+     "na": "This requirement belongs to the promoter pitch deck, not to this file."
+    },
+    "release-post-r008": {
+     "na": "This requirement belongs to the promoter pitch deck, not to this file."
+    },
+    "release-post-r009": {
+     "na": "This requirement belongs to the promoter pitch deck, not to this file."
+    },
+    "release-post-r010": {
+     "na": "This requirement belongs to the promoter pitch deck, not to this file."
+    }
+   }
+  },
+  {
+   "rule_id": "D05",
+   "kind": "deliverable",
+   "rule": "Include this record's date, headline act, support act, door time, set time and advance price.",
+   "source": "deliverables[].commission.content",
+   "cells": {
+    "poster-direction-type-led": {
+     "na": "This requirement belongs to the nine night release posts, not to this file."
+    },
+    "poster-direction-image-led": {
+     "na": "This requirement belongs to the nine night release posts, not to this file."
+    },
+    "poster-direction-graphic-led": {
+     "na": "This requirement belongs to the nine night release posts, not to this file."
+    },
+    "promoter-deck": {
+     "na": "This requirement belongs to the nine night release posts, not to this file."
+    },
+    "release-post-r002": {
+     "checks": [
+      "LAYOUT-12/release-post-r002/H001",
+      "LAYOUT-12/release-post-r002/H048",
+      "LAYOUT-12/release-post-r002/H013",
+      "LAYOUT-12/release-post-r002/H005",
+      "LAYOUT-12/release-post-r002/H006",
+      "LAYOUT-12/release-post-r002/H007",
+      "LAYOUT-12/release-post-r002/H008"
+     ]
+    },
+    "release-post-r003": {
+     "checks": [
+      "LAYOUT-12/release-post-r003/H001",
+      "LAYOUT-12/release-post-r003/H043",
+      "LAYOUT-12/release-post-r003/H012",
+      "LAYOUT-12/release-post-r003/H005",
+      "LAYOUT-12/release-post-r003/H006",
+      "LAYOUT-12/release-post-r003/H007",
+      "LAYOUT-12/release-post-r003/H008"
+     ]
+    },
+    "release-post-r004": {
+     "checks": [
+      "LAYOUT-12/release-post-r004/H001",
+      "LAYOUT-12/release-post-r004/H046",
+      "LAYOUT-12/release-post-r004/H011",
+      "LAYOUT-12/release-post-r004/H005",
+      "LAYOUT-12/release-post-r004/H006",
+      "LAYOUT-12/release-post-r004/H007",
+      "LAYOUT-12/release-post-r004/H008"
+     ]
+    },
+    "release-post-r005": {
+     "checks": [
+      "LAYOUT-12/release-post-r005/H001",
+      "LAYOUT-12/release-post-r005/H045",
+      "LAYOUT-12/release-post-r005/H011",
+      "LAYOUT-12/release-post-r005/H005",
+      "LAYOUT-12/release-post-r005/H006",
+      "LAYOUT-12/release-post-r005/H007",
+      "LAYOUT-12/release-post-r005/H008"
+     ]
+    },
+    "release-post-r006": {
+     "checks": [
+      "LAYOUT-12/release-post-r006/H001",
+      "LAYOUT-12/release-post-r006/H045",
+      "LAYOUT-12/release-post-r006/H011",
+      "LAYOUT-12/release-post-r006/H005",
+      "LAYOUT-12/release-post-r006/H006",
+      "LAYOUT-12/release-post-r006/H007",
+      "LAYOUT-12/release-post-r006/H008"
+     ]
+    },
+    "release-post-r007": {
+     "checks": [
+      "LAYOUT-12/release-post-r007/H001",
+      "LAYOUT-12/release-post-r007/H045",
+      "LAYOUT-12/release-post-r007/H011",
+      "LAYOUT-12/release-post-r007/H005",
+      "LAYOUT-12/release-post-r007/H006",
+      "LAYOUT-12/release-post-r007/H046",
+      "LAYOUT-12/release-post-r007/H007",
+      "LAYOUT-12/release-post-r007/H008"
+     ]
+    },
+    "release-post-r008": {
+     "checks": [
+      "LAYOUT-12/release-post-r008/H001",
+      "LAYOUT-12/release-post-r008/H040",
+      "LAYOUT-12/release-post-r008/H011",
+      "LAYOUT-12/release-post-r008/H005",
+      "LAYOUT-12/release-post-r008/H006",
+      "LAYOUT-12/release-post-r008/H007",
+      "LAYOUT-12/release-post-r008/H008"
+     ]
+    },
+    "release-post-r009": {
+     "checks": [
+      "LAYOUT-12/release-post-r009/H001",
+      "LAYOUT-12/release-post-r009/H040",
+      "LAYOUT-12/release-post-r009/H011",
+      "LAYOUT-12/release-post-r009/H005",
+      "LAYOUT-12/release-post-r009/H006",
+      "LAYOUT-12/release-post-r009/H007",
+      "LAYOUT-12/release-post-r009/H008"
+     ]
+    },
+    "release-post-r010": {
+     "checks": [
+      "LAYOUT-12/release-post-r010/H001",
+      "LAYOUT-12/release-post-r010/H045",
+      "LAYOUT-12/release-post-r010/H011",
+      "LAYOUT-12/release-post-r010/H005",
+      "LAYOUT-12/release-post-r010/H006",
+      "LAYOUT-12/release-post-r010/H007",
+      "LAYOUT-12/release-post-r010/H008"
+     ]
+    }
+   }
+  },
+  {
+   "rule_id": "D06",
+   "kind": "deliverable",
+   "rule": "Use an actual supplied archive photograph in the shared two-colour and grain treatment; the CSV's seasoncard_img filenames refer to the old season card, not additional supplied photographs.",
+   "source": "deliverables[].commission.content",
+   "cells": {
+    "poster-direction-type-led": {
+     "na": "This requirement belongs to the nine night release posts, not to this file."
+    },
+    "poster-direction-image-led": {
+     "na": "This requirement belongs to the nine night release posts, not to this file."
+    },
+    "poster-direction-graphic-led": {
+     "na": "This requirement belongs to the nine night release posts, not to this file."
+    },
+    "promoter-deck": {
+     "na": "This requirement belongs to the nine night release posts, not to this file."
+    },
+    "release-post-r002": {
+     "checks": [
+      "LAYOUT-12/release-post-r002/H010",
+      "LAYOUT-12/release-post-r002/H018",
+      "LAYOUT-12/release-post-r002/H035"
+     ]
+    },
+    "release-post-r003": {
+     "checks": [
+      "LAYOUT-12/release-post-r003/H014",
+      "LAYOUT-12/release-post-r003/H024",
+      "LAYOUT-12/release-post-r003/H029",
+      "LAYOUT-12/release-post-r003/H030"
+     ]
+    },
+    "release-post-r004": {
+     "checks": [
+      "LAYOUT-12/release-post-r004/H013",
+      "LAYOUT-12/release-post-r004/H015",
+      "LAYOUT-12/release-post-r004/H032",
+      "LAYOUT-12/release-post-r004/H033"
+     ]
+    },
+    "release-post-r005": {
+     "checks": [
+      "LAYOUT-12/release-post-r005/H013",
+      "LAYOUT-12/release-post-r005/H015",
+      "LAYOUT-12/release-post-r005/H031",
+      "LAYOUT-12/release-post-r005/H032"
+     ]
+    },
+    "release-post-r006": {
+     "checks": [
+      "LAYOUT-12/release-post-r006/H013",
+      "LAYOUT-12/release-post-r006/H015",
+      "LAYOUT-12/release-post-r006/H031",
+      "LAYOUT-12/release-post-r006/H032"
+     ]
+    },
+    "release-post-r007": {
+     "checks": [
+      "LAYOUT-12/release-post-r007/H013",
+      "LAYOUT-12/release-post-r007/H015",
+      "LAYOUT-12/release-post-r007/H031",
+      "LAYOUT-12/release-post-r007/H032"
+     ]
+    },
+    "release-post-r008": {
+     "checks": [
+      "LAYOUT-12/release-post-r008/H013",
+      "LAYOUT-12/release-post-r008/H021",
+      "LAYOUT-12/release-post-r008/H026",
+      "LAYOUT-12/release-post-r008/H027"
+     ]
+    },
+    "release-post-r009": {
+     "checks": [
+      "LAYOUT-12/release-post-r009/H013",
+      "LAYOUT-12/release-post-r009/H021",
+      "LAYOUT-12/release-post-r009/H026",
+      "LAYOUT-12/release-post-r009/H027"
+     ]
+    },
+    "release-post-r010": {
+     "checks": [
+      "LAYOUT-12/release-post-r010/H013",
+      "LAYOUT-12/release-post-r010/H015",
+      "LAYOUT-12/release-post-r010/H031",
+      "LAYOUT-12/release-post-r010/H032"
+     ]
+    }
+   }
+  },
+  {
+   "rule_id": "D07",
+   "kind": "deliverable",
+   "rule": "Add the supplied production act wordmark only for Sable Quartet or Meridian Brass; all other acts are type-only.",
+   "source": "deliverables[].commission.content",
+   "cells": {
+    "poster-direction-type-led": {
+     "na": "This requirement belongs to the nine night release posts, not to this file."
+    },
+    "poster-direction-image-led": {
+     "na": "This requirement belongs to the nine night release posts, not to this file."
+    },
+    "poster-direction-graphic-led": {
+     "na": "This requirement belongs to the nine night release posts, not to this file."
+    },
+    "promoter-deck": {
+     "na": "This requirement belongs to the nine night release posts, not to this file."
+    },
+    "release-post-r002": {
+     "checks": [
+      "LAYOUT-12/release-post-r002/H049"
+     ]
+    },
+    "release-post-r003": {
+     "checks": [
+      "LAYOUT-12/release-post-r003/H044"
+     ]
+    },
+    "release-post-r004": {
+     "checks": [
+      "LAYOUT-12/release-post-r004/H017",
+      "LAYOUT-12/release-post-r004/H018"
+     ]
+    },
+    "release-post-r005": {
+     "checks": [
+      "LAYOUT-12/release-post-r005/H046"
+     ]
+    },
+    "release-post-r006": {
+     "checks": [
+      "LAYOUT-12/release-post-r006/H046"
+     ]
+    },
+    "release-post-r007": {
+     "checks": [
+      "LAYOUT-12/release-post-r007/H047"
+     ]
+    },
+    "release-post-r008": {
+     "checks": [
+      "LAYOUT-12/release-post-r008/H041"
+     ]
+    },
+    "release-post-r009": {
+     "checks": [
+      "LAYOUT-12/release-post-r009/H041"
+     ]
+    },
+    "release-post-r010": {
+     "checks": [
+      "LAYOUT-12/release-post-r010/H046"
+     ]
+    }
+   }
+  }
+ ]
+}

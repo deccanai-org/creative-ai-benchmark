@@ -22,7 +22,7 @@
     {
       "rule_id": "B02",
       "kind": "brand",
-      "rule": "On Warm Paper Ground, Oatmeal Glaze and Soft Clay all type is Stoneware Charcoal; the only other type colour is a Soft Clay running foot.",
+      "rule": "Apart from a Soft Clay running foot, all type on Warm Paper Ground, Oatmeal Glaze or Soft Clay is Stoneware Charcoal.",
       "source": "brand_identity.palette_rules.distribution",
       "cells": {
         "collection-spread": {
@@ -76,19 +76,53 @@
     {
       "rule_id": "B05",
       "kind": "brand",
-      "rule": "Soft Clay type is only a small running foot in tracked capitals on Warm Paper Ground, never a product name, body line, price or care line.",
+      "rule": "Soft Clay type appears only as a running foot on Warm Paper Ground, never as a product name, body line, price or care line.",
       "source": "brand_identity.palette_rules.distribution; palette Soft Clay usage",
       "cells": {
         "collection-spread": {
           "checks": [
-            "PHOTO-26/collection-spread/H032",
+            "PHOTO-26/collection-spread/H032"
+          ]
+        },
+        "wholesale-presentation": {
+          "checks": [
+            "PHOTO-26/wholesale-presentation/H034"
+          ]
+        }
+      }
+    },
+    {
+      "rule_id": "B05F",
+      "kind": "brand",
+      "rule": "The Soft Clay running foot is set in capitals.",
+      "source": "brand_identity.palette_rules.distribution; palette Soft Clay usage (small running foot in tracked capitals)",
+      "cells": {
+        "collection-spread": {
+          "checks": [
             "PHOTO-26/collection-spread/H056"
           ]
         },
         "wholesale-presentation": {
           "checks": [
-            "PHOTO-26/wholesale-presentation/H034",
             "PHOTO-26/wholesale-presentation/H059"
+          ]
+        }
+      }
+    },
+    {
+      "rule_id": "B05S",
+      "kind": "brand",
+      "rule": "The Soft Clay running foot has open letter spacing.",
+      "source": "brand_identity.palette_rules.distribution; palette Soft Clay usage (small running foot in tracked capitals)",
+      "cells": {
+        "collection-spread": {
+          "checks": [
+            "PHOTO-26/collection-spread/H064"
+          ]
+        },
+        "wholesale-presentation": {
+          "checks": [
+            "PHOTO-26/wholesale-presentation/H070"
           ]
         }
       }
@@ -151,12 +185,14 @@
       "cells": {
         "collection-spread": {
           "checks": [
-            "PHOTO-26/collection-spread/H030"
+            "PHOTO-26/collection-spread/H030",
+            "PHOTO-26/collection-spread/H028"
           ]
         },
         "wholesale-presentation": {
           "checks": [
-            "PHOTO-26/wholesale-presentation/H032"
+            "PHOTO-26/wholesale-presentation/H032",
+            "PHOTO-26/wholesale-presentation/H030"
           ]
         }
       }
@@ -200,7 +236,7 @@
     {
       "rule_id": "B12",
       "kind": "brand",
-      "rule": "No colour outside the five palette hexes; no pure black or near-black.",
+      "rule": "Type, grounds, tiles, panels, the band, rules and icons use only the five palette hexes, so never pure black or near-black.",
       "source": "brand_identity.palette_rules.forbidden",
       "cells": {
         "collection-spread": {
@@ -234,88 +270,343 @@
       }
     },
     {
-      "rule_id": "T01",
+      "rule_id": "T01F",
       "kind": "type",
-      "rule": "Display / H1: Barlow Condensed Medium, all caps, 13 pt on 15 pt, tracking +200, for product names and main headings.",
+      "rule": "Display / H1 font: Barlow Condensed Medium for product names and main headings.",
       "source": "brand_identity.type_system.scale[01]",
       "cells": {
         "collection-spread": {
           "checks": [
-            "PHOTO-26/collection-spread/H020",
-            "PHOTO-26/collection-spread/H035",
-            "PHOTO-26/collection-spread/H037"
+            "PHOTO-26/collection-spread/H020"
           ]
         },
         "wholesale-presentation": {
           "checks": [
-            "PHOTO-26/wholesale-presentation/H006",
-            "PHOTO-26/wholesale-presentation/H037",
-            "PHOTO-26/wholesale-presentation/H039"
+            "PHOTO-26/wholesale-presentation/H006"
           ]
         }
       }
     },
     {
-      "rule_id": "T02",
+      "rule_id": "T01C",
       "kind": "type",
-      "rule": "Subheading / H2: Barlow Condensed Medium, all caps, 11 pt on 13 pt, tracking +160, where needed.",
+      "rule": "Display / H1 case: product names and main headings are set in capitals.",
+      "source": "brand_identity.type_system.scale[01] (all caps); signature_move",
+      "cells": {
+        "collection-spread": {
+          "checks": [
+            "PHOTO-26/collection-spread/H062"
+          ]
+        },
+        "wholesale-presentation": {
+          "checks": [
+            "PHOTO-26/wholesale-presentation/H068"
+          ]
+        }
+      }
+    },
+    {
+      "rule_id": "T01S",
+      "kind": "type",
+      "rule": "Display / H1 size: 13 pt for product names and main headings.",
+      "source": "brand_identity.type_system.scale[01]; rules[1]",
+      "cells": {
+        "collection-spread": {
+          "checks": [
+            "PHOTO-26/collection-spread/H035"
+          ]
+        },
+        "wholesale-presentation": {
+          "checks": [
+            "PHOTO-26/wholesale-presentation/H037",
+            "PHOTO-26/wholesale-presentation/A008"
+          ]
+        }
+      }
+    },
+    {
+      "rule_id": "T01L",
+      "kind": "type",
+      "rule": "Display / H1 leading: 15 points from baseline to baseline.",
+      "source": "brand_identity.type_system.scale[01]",
+      "cells": {
+        "collection-spread": {
+          "not_verified": "Product names and the brand name are one-line text, so no known multi-line string exists for a code check; the brand value 15 pt is kept as a design target."
+        },
+        "wholesale-presentation": {
+          "not_verified": "Product names and the brand name are one-line text, so no known multi-line string exists for a code check; the brand value 15 pt is kept as a design target."
+        }
+      }
+    },
+    {
+      "rule_id": "T01T",
+      "kind": "type",
+      "rule": "Display / H1 tracking: +200 thousandths of an em on product names.",
+      "source": "brand_identity.type_system.scale[01]; signature_move",
+      "cells": {
+        "collection-spread": {
+          "not_verified": "The spread is not required to carry product names, so no name is known to be on it for a code check; +200 is kept as a design target and H037 only judges open spacing."
+        },
+        "wholesale-presentation": {
+          "not_verified": "Names appear only for the objects the designer features, so no name is known to be on it for a code check; +200 is kept as a design target and H039 only judges open spacing."
+        }
+      }
+    },
+    {
+      "rule_id": "T01TB",
+      "kind": "type",
+      "rule": "Display / H1 tracking: +200 thousandths of an em on the brand name Thornmere Home.",
+      "source": "brand_identity.type_system.scale[01] (sample THORNMERE HOME)",
+      "cells": {
+        "collection-spread": {
+          "not_verified": "The spread is not required to carry the brand name, so no known string exists for a code check; +200 is kept as a design target."
+        },
+        "wholesale-presentation": {
+          "checks": [
+            "PHOTO-26/wholesale-presentation/A009"
+          ]
+        }
+      }
+    },
+    {
+      "rule_id": "T01TH",
+      "kind": "type",
+      "rule": "Display / H1 tracking: +200 thousandths of an em on other main headings.",
+      "source": "brand_identity.type_system.scale[01]",
+      "cells": {
+        "collection-spread": {
+          "not_verified": "Main headings other than product names and the brand name are written by the designer, so no known string exists for a code check; +200 is kept as a design target."
+        },
+        "wholesale-presentation": {
+          "not_verified": "Main headings other than product names and the brand name are written by the designer, so no known string exists for a code check; +200 is kept as a design target."
+        }
+      }
+    },
+    {
+      "rule_id": "T02F",
+      "kind": "type",
+      "rule": "Subheading / H2 font: Barlow Condensed Medium, where a secondary heading is needed.",
       "source": "brand_identity.type_system.scale[02]",
       "cells": {
         "collection-spread": {
           "checks": [
-            "PHOTO-26/collection-spread/H038",
-            "PHOTO-26/collection-spread/H039",
-            "PHOTO-26/collection-spread/H041"
+            "PHOTO-26/collection-spread/H038"
           ]
         },
         "wholesale-presentation": {
           "checks": [
-            "PHOTO-26/wholesale-presentation/H040",
-            "PHOTO-26/wholesale-presentation/H041",
-            "PHOTO-26/wholesale-presentation/H043"
+            "PHOTO-26/wholesale-presentation/H040"
           ]
         }
       }
     },
     {
-      "rule_id": "T03",
+      "rule_id": "T02C",
       "kind": "type",
-      "rule": "Body: Source Serif 4 Regular, 10 pt on 15 pt, tracking 0, at most 65 characters per line.",
+      "rule": "Subheading / H2 case: secondary headings are set in capitals.",
+      "source": "brand_identity.type_system.scale[02] (all caps)",
+      "cells": {
+        "collection-spread": {
+          "checks": [
+            "PHOTO-26/collection-spread/H063"
+          ]
+        },
+        "wholesale-presentation": {
+          "checks": [
+            "PHOTO-26/wholesale-presentation/H069"
+          ]
+        }
+      }
+    },
+    {
+      "rule_id": "T02S",
+      "kind": "type",
+      "rule": "Subheading / H2 size: 11 pt.",
+      "source": "brand_identity.type_system.scale[02]",
+      "cells": {
+        "collection-spread": {
+          "checks": [
+            "PHOTO-26/collection-spread/H039"
+          ]
+        },
+        "wholesale-presentation": {
+          "checks": [
+            "PHOTO-26/wholesale-presentation/H041"
+          ]
+        }
+      }
+    },
+    {
+      "rule_id": "T02L",
+      "kind": "type",
+      "rule": "Subheading / H2 leading: 13 points from baseline to baseline.",
+      "source": "brand_identity.type_system.scale[02]",
+      "cells": {
+        "collection-spread": {
+          "not_verified": "Subheadings are optional text written by the designer, so no known string exists for a code check; the brand value 13 pt is kept as a design target."
+        },
+        "wholesale-presentation": {
+          "not_verified": "Subheadings are optional text written by the designer, so no known string exists for a code check; the brand value 13 pt is kept as a design target."
+        }
+      }
+    },
+    {
+      "rule_id": "T02T",
+      "kind": "type",
+      "rule": "Subheading / H2 tracking: +160 thousandths of an em.",
+      "source": "brand_identity.type_system.scale[02]",
+      "cells": {
+        "collection-spread": {
+          "not_verified": "Subheadings are optional text written by the designer, so no known string exists for a code check; +160 is a design target and H041 only judges that spacing is visibly open."
+        },
+        "wholesale-presentation": {
+          "not_verified": "Subheadings are optional text written by the designer, so no known string exists for a code check; +160 is a design target and H043 only judges that spacing is visibly open."
+        }
+      }
+    },
+    {
+      "rule_id": "T03F",
+      "kind": "type",
+      "rule": "Body font: Source Serif 4 Regular for descriptive text.",
       "source": "brand_identity.type_system.scale[03]",
       "cells": {
         "collection-spread": {
           "checks": [
-            "PHOTO-26/collection-spread/H023",
-            "PHOTO-26/collection-spread/H043",
+            "PHOTO-26/collection-spread/H023"
+          ]
+        },
+        "wholesale-presentation": {
+          "checks": [
+            "PHOTO-26/wholesale-presentation/H026"
+          ]
+        }
+      }
+    },
+    {
+      "rule_id": "T03S",
+      "kind": "type",
+      "rule": "Body size: 10 pt.",
+      "source": "brand_identity.type_system.scale[03]",
+      "cells": {
+        "collection-spread": {
+          "checks": [
+            "PHOTO-26/collection-spread/H043"
+          ]
+        },
+        "wholesale-presentation": {
+          "checks": [
+            "PHOTO-26/wholesale-presentation/H045"
+          ]
+        }
+      }
+    },
+    {
+      "rule_id": "T03L",
+      "kind": "type",
+      "rule": "Body leading: 15 points from baseline to baseline.",
+      "source": "brand_identity.type_system.scale[03]",
+      "cells": {
+        "collection-spread": {
+          "not_verified": "Body copy is written by the designer, so no known string exists for a code check; baseline distance cannot be read reliably from text properties, and 15 pt is kept as a design target."
+        },
+        "wholesale-presentation": {
+          "not_verified": "Body copy is written by the designer, so no known string exists for a code check; baseline distance cannot be read reliably from text properties, and 15 pt is kept as a design target."
+        }
+      }
+    },
+    {
+      "rule_id": "T03T",
+      "kind": "type",
+      "rule": "Body tracking: 0.",
+      "source": "brand_identity.type_system.scale[03]",
+      "cells": {
+        "collection-spread": {
+          "not_verified": "Body copy is written by the designer, so no known string exists for a code check; tracking in thousandths of an em cannot be judged by eye, and 0 is kept as a design target."
+        },
+        "wholesale-presentation": {
+          "not_verified": "Body copy is written by the designer, so no known string exists for a code check; tracking in thousandths of an em cannot be judged by eye, and 0 is kept as a design target."
+        }
+      }
+    },
+    {
+      "rule_id": "T03M",
+      "kind": "type",
+      "rule": "Body line length: at most 65 characters per line.",
+      "source": "brand_identity.type_system.scale[03]",
+      "cells": {
+        "collection-spread": {
+          "checks": [
             "PHOTO-26/collection-spread/H024"
           ]
         },
         "wholesale-presentation": {
           "checks": [
-            "PHOTO-26/wholesale-presentation/H026",
-            "PHOTO-26/wholesale-presentation/H045",
             "PHOTO-26/wholesale-presentation/H027"
           ]
         }
       }
     },
     {
-      "rule_id": "T04",
+      "rule_id": "T04F",
       "kind": "type",
-      "rule": "Fine print: Inter Regular, 8.5 pt on 12 pt, tracking +20, for prices, dimensions and care lines.",
+      "rule": "Fine print font: Inter Regular for prices, dimensions and care lines.",
       "source": "brand_identity.type_system.scale[04]; rules[3]",
       "cells": {
         "collection-spread": {
           "checks": [
-            "PHOTO-26/collection-spread/H025",
+            "PHOTO-26/collection-spread/H025"
+          ]
+        },
+        "wholesale-presentation": {
+          "checks": [
+            "PHOTO-26/wholesale-presentation/H028"
+          ]
+        }
+      }
+    },
+    {
+      "rule_id": "T04S",
+      "kind": "type",
+      "rule": "Fine print size: 8.5 pt for prices, dimensions and care lines.",
+      "source": "brand_identity.type_system.scale[04]",
+      "cells": {
+        "collection-spread": {
+          "checks": [
             "PHOTO-26/collection-spread/H047"
           ]
         },
         "wholesale-presentation": {
           "checks": [
-            "PHOTO-26/wholesale-presentation/H028",
             "PHOTO-26/wholesale-presentation/H049"
           ]
+        }
+      }
+    },
+    {
+      "rule_id": "T04L",
+      "kind": "type",
+      "rule": "Fine print leading: 12 points from baseline to baseline.",
+      "source": "brand_identity.type_system.scale[04]",
+      "cells": {
+        "collection-spread": {
+          "not_verified": "No price, dimension or care line is known to run over two lines, so a code check has no multi-line text; the brand value 12 pt is kept as a design target."
+        },
+        "wholesale-presentation": {
+          "not_verified": "No price, dimension or care line is known to run over two lines, so a code check has no multi-line text; the brand value 12 pt is kept as a design target."
+        }
+      }
+    },
+    {
+      "rule_id": "T04T",
+      "kind": "type",
+      "rule": "Fine print tracking: +20 thousandths of an em on prices, dimensions and care lines.",
+      "source": "brand_identity.type_system.scale[04]",
+      "cells": {
+        "collection-spread": {
+          "not_verified": "The spread commission requires no prices, dimensions or care lines, so no such string is known to be on it; +20 is kept as a design target."
+        },
+        "wholesale-presentation": {
+          "not_verified": "Prices, dimensions and care lines appear only for the objects the designer features, so no exact string is known to be on it; +20 is kept as a design target."
         }
       }
     },
@@ -327,12 +618,12 @@
       "cells": {
         "collection-spread": {
           "checks": [
-            "PHOTO-26/collection-spread/H035"
+            "PHOTO-26/collection-spread/H060"
           ]
         },
         "wholesale-presentation": {
           "checks": [
-            "PHOTO-26/wholesale-presentation/H037"
+            "PHOTO-26/wholesale-presentation/H062"
           ]
         }
       }
@@ -544,6 +835,24 @@
       }
     },
     {
+      "rule_id": "F07",
+      "kind": "brief",
+      "rule": "Do not invent names, prices, claims or product features absent from the approved inputs.",
+      "source": "truth_constraints[0]",
+      "cells": {
+        "collection-spread": {
+          "checks": [
+            "PHOTO-26/collection-spread/H058"
+          ]
+        },
+        "wholesale-presentation": {
+          "checks": [
+            "PHOTO-26/wholesale-presentation/H061"
+          ]
+        }
+      }
+    },
+    {
       "rule_id": "D01",
       "kind": "deliverable",
       "rule": "Include all twenty supplied products across four A4 pages, with coherent grouping and preserved textile patterns.",
@@ -553,6 +862,7 @@
           "checks": [
             "PHOTO-26/collection-spread/H003",
             "PHOTO-26/collection-spread/H004",
+            "PHOTO-26/collection-spread/H059",
             "PHOTO-26/collection-spread/H001",
             "PHOTO-26/collection-spread/A003",
             "PHOTO-26/collection-spread/A004",
@@ -598,25 +908,11 @@
             "PHOTO-26/wholesale-presentation/H014",
             "PHOTO-26/wholesale-presentation/H003",
             "PHOTO-26/wholesale-presentation/H004",
-            "PHOTO-26/wholesale-presentation/H015"
-          ]
-        }
-      }
-    },
-    {
-      "rule_id": "F07",
-      "kind": "brief",
-      "rule": "Do not invent names, prices, claims or product features absent from the approved inputs.",
-      "source": "truth_constraints[0]",
-      "cells": {
-        "collection-spread": {
-          "checks": [
-            "PHOTO-26/collection-spread/H058"
-          ]
-        },
-        "wholesale-presentation": {
-          "checks": [
-            "PHOTO-26/wholesale-presentation/H061"
+            "PHOTO-26/wholesale-presentation/H015",
+            "PHOTO-26/wholesale-presentation/H064",
+            "PHOTO-26/wholesale-presentation/H065",
+            "PHOTO-26/wholesale-presentation/H066",
+            "PHOTO-26/wholesale-presentation/H067"
           ]
         }
       }
@@ -624,21 +920,95 @@
     {
       "rule_id": "E01",
       "kind": "deliverable",
-      "rule": "Digital PDF with no crop marks and no added bleed; retain the exact page size and page count.",
+      "rule": "No crop marks and no added bleed.",
       "source": "deliverables[].commission.export_settings[0]",
       "cells": {
         "collection-spread": {
           "checks": [
             "PHOTO-26/collection-spread/H057",
-            "PHOTO-26/collection-spread/A004",
-            "PHOTO-26/collection-spread/A005"
+            "PHOTO-26/collection-spread/H061"
           ]
         },
         "wholesale-presentation": {
           "checks": [
             "PHOTO-26/wholesale-presentation/H060",
+            "PHOTO-26/wholesale-presentation/H063"
+          ]
+        }
+      }
+    },
+    {
+      "rule_id": "E02",
+      "kind": "deliverable",
+      "rule": "Retain the exact page size.",
+      "source": "deliverables[].commission.export_settings[0]",
+      "cells": {
+        "collection-spread": {
+          "checks": [
+            "PHOTO-26/collection-spread/A004",
+            "PHOTO-26/collection-spread/A005",
+            "PHOTO-26/collection-spread/H061"
+          ]
+        },
+        "wholesale-presentation": {
+          "checks": [
             "PHOTO-26/wholesale-presentation/A004",
-            "PHOTO-26/wholesale-presentation/A005"
+            "PHOTO-26/wholesale-presentation/A005",
+            "PHOTO-26/wholesale-presentation/H063"
+          ]
+        }
+      }
+    },
+    {
+      "rule_id": "E03",
+      "kind": "deliverable",
+      "rule": "Retain the exact page count.",
+      "source": "deliverables[].commission.export_settings[0]",
+      "cells": {
+        "collection-spread": {
+          "checks": [
+            "PHOTO-26/collection-spread/A003"
+          ]
+        },
+        "wholesale-presentation": {
+          "checks": [
+            "PHOTO-26/wholesale-presentation/A003"
+          ]
+        }
+      }
+    },
+    {
+      "rule_id": "E04",
+      "kind": "deliverable",
+      "rule": "Digital PDF in sRGB, not a CMYK press master.",
+      "source": "deliverables[].commission.export_settings[0] and [1]",
+      "cells": {
+        "collection-spread": {
+          "checks": [
+            "PHOTO-26/collection-spread/A006"
+          ]
+        },
+        "wholesale-presentation": {
+          "checks": [
+            "PHOTO-26/wholesale-presentation/A006"
+          ]
+        }
+      }
+    },
+    {
+      "rule_id": "E05",
+      "kind": "deliverable",
+      "rule": "Fonts are embedded in the PDF.",
+      "source": "deliverables[].commission.export_settings[0]",
+      "cells": {
+        "collection-spread": {
+          "checks": [
+            "PHOTO-26/collection-spread/A007"
+          ]
+        },
+        "wholesale-presentation": {
+          "checks": [
+            "PHOTO-26/wholesale-presentation/A007"
           ]
         }
       }

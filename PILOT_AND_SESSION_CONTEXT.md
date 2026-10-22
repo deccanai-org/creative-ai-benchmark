@@ -22,7 +22,7 @@ training data.
 ### Locations (IMPORTANT — two dirs exist)
 - **ACTIVE repo:** `/Users/dhiren/Downloads/Deccan/Adobe-Freelance-Leads/` — git repo
   `dhigdec/creative-ai-benchmark` (private), GitHub Pages at
-  `https://dhigdec.github.io/creative-ai-benchmark/`. **Work here.**
+  `https://deccanai-org.github.io/creative-ai-benchmark/`. **Work here.**
 - **STALE snapshot (ignore):** `/Users/dhiren/Downloads/Adobe-Freelance-Leads/` (no "Deccan") —
   a frozen June-11 copy; do not use.
 

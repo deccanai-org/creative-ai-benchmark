@@ -247,15 +247,21 @@ def verify(file, assertion, artifact_root=None):
         return not missing, {'fonts':sorted({name for name,_ in fonts}),'not_embedded':missing}
     if op == 'pdf_output_intent':
         wanted=normalize_name(assertion['contains'])
-        found=pdf_output_intents(PdfReader(file))
-        return any(wanted in normalize_name(value) for value in found), {'output_intents':found}
+        subtype=assertion.get('subtype','/GTS_PDFX')
+        intents=pdf_output_intent_records(PdfReader(file))
+        matched=[i for i in intents if i['subtype']==subtype and i['profile_space']=='CMYK' and i['profile_valid']
+                 and any(wanted in normalize_name(v) for v in i['names']+[i['profile_description']])]
+        return bool(matched), {'output_intents':intents,'required':f'{subtype} intent naming {assertion["contains"]} with an embedded CMYK ICC profile'}
     if op == 'pdf_no_cmyk':
         reader=PdfReader(file)
         evidence=pdf_cmyk_usage(reader)
-        evidence['output_intents']=pdf_output_intents(reader)
-        cmyk_intent=any('cmyk' in value.lower() or 'coated' in value.lower() or 'fogra' in value.lower() or 'swop' in value.lower() for value in evidence['output_intents'])
+        intents=pdf_output_intent_records(reader)
+        evidence['output_intents']=intents
+        cmyk_intent=any(i['profile_space']=='CMYK' or any(re.search(r'cmyk|coated|fogra|swop|gracol|pso',v,re.I) for v in i['names']) for i in intents)
         return not (evidence['colour_spaces'] or evidence['operators'] or cmyk_intent), evidence
     if op == 'pdf_text_style':
+        if any(key in assertion for key in ('leading_pt','tracking')):
+            return pdf_text_metrics(file, assertion)
         return pdf_text_style(PdfReader(file), assertion)
     raise NotImplementedError(op)
 
@@ -300,21 +306,29 @@ def pdf_font_inventory(reader):
     return fonts
 
 
-def pdf_output_intents(reader):
-    values=[]
+def pdf_output_intent_records(reader):
+    """Every OutputIntent with its names and what its embedded DestOutputProfile really is."""
+    records=[]
     for intent in _resolved(reader.trailer['/Root'].get('/OutputIntents')) or []:
         intent=_resolved(intent)
-        for key in ('/OutputConditionIdentifier','/OutputCondition','/Info','/RegistryName'):
-            if key in intent:
-                values.append(str(intent[key]))
+        record={'subtype':str(intent.get('/S','')),'names':[str(intent[k]) for k in ('/OutputConditionIdentifier','/OutputCondition','/Info','/RegistryName') if k in intent],
+                'profile_valid':False,'profile_space':None,'profile_description':''}
         profile=_resolved(intent.get('/DestOutputProfile'))
         if profile is not None:
             try:
+                data=profile.get_data()
+                record['profile_space']=data[16:20].decode('latin-1').strip()
+                record['profile_valid']=data[36:40]==b'acsp'
                 from PIL import ImageCms
-                values.append(ImageCms.getProfileDescription(ImageCms.ImageCmsProfile(io.BytesIO(profile.get_data()))).strip())
-            except Exception:
-                values.append('(unreadable ICC profile)')
-    return values
+                record['profile_description']=ImageCms.getProfileDescription(ImageCms.ImageCmsProfile(io.BytesIO(data))).strip()
+            except Exception as error:
+                record['profile_error']=str(error)[:120]
+        records.append(record)
+    return records
+
+
+def pdf_output_intents(reader):
+    return [v for r in pdf_output_intent_records(reader) for v in r['names']+([r['profile_description']] if r['profile_description'] else [])]
 
 
 def _is_cmyk(space):
@@ -329,25 +343,86 @@ def _is_cmyk(space):
         return _is_cmyk(space[1])
     if len(space) and str(space[0]) in ('/Separation','/DeviceN'):
         return _is_cmyk(space[2])
+    if len(space) and str(space[0])=='/Pattern' and len(space)>1:
+        return _is_cmyk(space[1])
     return False
 
 
+def _named_space(name, resources):
+    if str(name) in ('/DeviceCMYK','/CMYK','/DeviceRGB','/RGB','/DeviceGray','/G','/Pattern'):
+        return name
+    return (_resolved(resources.get('/ColorSpace')) or {}).get(name) if resources else None
+
+
 def pdf_cmyk_usage(reader):
+    """Find CMYK anywhere it can paint: page and nested Form XObject streams, tiling patterns, shadings,
+    images (XObject and inline), transparency groups and annotation appearances."""
     from pypdf.generic import ContentStream
-    spaces=set();operators=set()
+    spaces=set();operators=set();seen=set()
+
+    def note_space(space,label):
+        if _is_cmyk(space): spaces.add(label)
+
+    def scan(stream,resources,label,depth=0):
+        key=id(stream)
+        if key in seen or depth>12:
+            return
+        seen.add(key)
+        resources=_resolved(resources) or {}
+        for name,space in (_resolved(resources.get('/ColorSpace')) or {}).items():
+            note_space(space,f'{label}: colour space {name}')
+        group=_resolved(stream.get('/Group')) if hasattr(stream,'get') else None
+        if group and group.get('/CS') is not None:
+            note_space(group.get('/CS'),f'{label}: transparency group')
+        try:
+            operations=ContentStream(stream,reader).operations
+        except Exception:
+            return
+        for operands,operator in operations:
+            if operator in (b'k',b'K'):
+                operators.add(f'{label}: {operator.decode()}')
+            elif operator in (b'cs',b'CS') and operands:
+                note_space(_named_space(operands[0],resources),f'{label}: {operator.decode()} {operands[0]}')
+            elif operator==b'sh' and operands:
+                shading=_resolved((_resolved(resources.get('/Shading')) or {}).get(operands[0]))
+                if shading is not None: note_space(shading.get('/ColorSpace'),f'{label}: shading {operands[0]}')
+            elif operator in (b'scn',b'SCN') and operands and str(operands[-1]).startswith('/'):
+                pattern=_resolved((_resolved(resources.get('/Pattern')) or {}).get(operands[-1]))
+                if pattern is not None:
+                    if pattern.get('/PatternType')==1:
+                        scan(pattern,pattern.get('/Resources') or resources,f'{label} > pattern {operands[-1]}',depth+1)
+                    else:
+                        shading=_resolved(pattern.get('/Shading'))
+                        if shading is not None: note_space(shading.get('/ColorSpace'),f'{label}: pattern {operands[-1]}')
+            elif operator==b'INLINE IMAGE':
+                settings=operands.get('settings',{}) if isinstance(operands,dict) else {}
+                space=settings.get('/CS',settings.get('/ColorSpace'))
+                if space is not None: note_space(_named_space(space,resources),f'{label}: inline image')
+            elif operator==b'Do' and operands:
+                xobject=_resolved((_resolved(resources.get('/XObject')) or {}).get(operands[0]))
+                if xobject is None: continue
+                if xobject.get('/Subtype')=='/Image':
+                    note_space(xobject.get('/ColorSpace'),f'{label}: image {operands[0]}')
+                elif xobject.get('/Subtype')=='/Form':
+                    scan(xobject,xobject.get('/Resources') or resources,f'{label} > form {operands[0]}',depth+1)
+
     for number,page in enumerate(reader.pages,1):
-        for resources in _walk_resources(page.get('/Resources')):
-            for name,space in (_resolved(resources.get('/ColorSpace')) or {}).items():
-                if _is_cmyk(space): spaces.add(f'page {number}: {name}')
-            for name,xobject in (_resolved(resources.get('/XObject')) or {}).items():
-                xobject=_resolved(xobject)
-                if xobject.get('/Subtype')=='/Image' and _is_cmyk(xobject.get('/ColorSpace')):
-                    spaces.add(f'page {number}: image {name}')
+        resources=page.get('/Resources')
+        group=_resolved(page.get('/Group'))
+        if group and group.get('/CS') is not None:
+            note_space(group.get('/CS'),f'page {number}: page group')
         contents=page.get_contents()
         if contents is not None:
-            for _,operator in ContentStream(contents,reader).operations:
-                if operator in (b'k',b'K'):
-                    operators.add(f'page {number}: {operator.decode()}')
+            scan(contents,resources,f'page {number}')
+        for resource_dict in _walk_resources(resources):
+            for name,xobject in (_resolved(resource_dict.get('/XObject')) or {}).items():
+                xobject=_resolved(xobject)
+                if xobject.get('/Subtype')=='/Image':
+                    note_space(xobject.get('/ColorSpace'),f'page {number}: image {name}')
+        for annot in _resolved(page.get('/Annots')) or []:
+            appearance=_resolved((_resolved(_resolved(annot).get('/AP')) or {}).get('/N'))
+            if appearance is not None and hasattr(appearance,'get_data'):
+                scan(appearance,appearance.get('/Resources'),f'page {number}: annotation')
     return {'colour_spaces':sorted(spaces),'operators':sorted(operators)}
 
 
@@ -435,6 +510,90 @@ def _judge_style(matched,number,family,weight,size,tolerance):
     evidence={'page':number,'fonts':sorted({_style_of(n)[0] for _,n,_ in matched}),'sizes_pt':sorted({round(e,2) for _,_,e in matched})}
     if problems:evidence['problems']=problems[:12]
     return not problems, evidence
+
+
+def _median(values):
+    values=sorted(values)
+    return values[len(values)//2] if len(values)%2 else (values[len(values)//2-1]+values[len(values)//2])/2
+
+
+def pdf_text_metrics(file, assertion):
+    """pdf_text_style plus measured leading (pt, baseline to baseline) and tracking (thousandths of an em).
+
+    Uses pdfminer.six glyph positions: tracking is the median extra advance between neighbouring glyphs of the
+    matched text on one baseline (kerning pairs vary, so the median is used); leading is the median distance between
+    the matched text's baselines, so it needs text that runs over at least two lines.
+    """
+    try:
+        from pdfminer.high_level import extract_pages
+        from pdfminer.layout import LTChar
+    except ImportError as error:
+        raise VerifierUnavailable('pdfminer.six is required for leading and tracking checks') from error
+    fold=(lambda t:t) if assertion.get('case_sensitive') else str.lower
+    needle=fold(re.sub(r'\s+','',assertion['text']))
+    family=normalize_name(assertion['family'])
+    weight=normalize_name(assertion.get('weight','')) or None
+    size=assertion.get('size_pt');tolerance=float(assertion.get('tolerance_pt',0.3))
+    leading=assertion.get('leading_pt');leading_tol=float(assertion.get('leading_tolerance_pt',0.5))
+    tracking=assertion.get('tracking');tracking_tol=float(assertion.get('tracking_tolerance',8))
+    wanted_pages=None if 'page' not in assertion else {assertion['page']}
+
+    def walk(item):
+        if isinstance(item,LTChar) or not hasattr(item,'__iter__'):
+            yield item
+        else:
+            for child in item:
+                yield from walk(child)
+
+    any_text=False;failures=[];unmeasurable=[]
+    for number,page in enumerate(extract_pages(str(file)),1):
+        if wanted_pages and number not in wanted_pages:continue
+        items=list(walk(page))
+        glyphs=[(i,o) for i,o in enumerate(items) if isinstance(o,LTChar) and o.get_text().strip()]
+        if glyphs:any_text=True
+        hay='';owner=[]
+        for position,(_,glyph) in enumerate(glyphs):
+            text=fold(glyph.get_text())
+            hay+=text;owner.extend([position]*len(text))
+        start=hay.find(needle)
+        while start>=0:
+            positions=sorted(set(owner[start:start+len(needle)]))
+            matched=[glyphs[p] for p in positions]
+            rows=[(o.get_text(),o.fontname,math.hypot(o.matrix[2],o.matrix[3])) for _,o in matched]
+            ok,evidence=_judge_style(rows,number,family,weight,size,tolerance)
+            problems=list(evidence.get('problems',[]))
+            if tracking is not None:
+                gaps=[]
+                for (i,a),(j,b) in zip(matched,matched[1:]):
+                    em=math.hypot(a.matrix[2],a.matrix[3])
+                    if j==i+1 and a.fontname==b.fontname and abs(a.matrix[5]-b.matrix[5])<0.2*em:
+                        gaps.append((b.matrix[4]-(a.matrix[4]+a.adv*math.hypot(a.matrix[0],a.matrix[1])))/em*1000)
+                if gaps:
+                    measured=_median(gaps);evidence['tracking_units']=round(measured,1)
+                    if abs(measured-float(tracking))>tracking_tol:problems.append(f'tracking {measured:+.0f} units, expected {float(tracking):+.0f}')
+                else:
+                    unmeasurable.append('tracking needs two neighbouring glyphs on one line')
+            if leading is not None:
+                baselines=[]
+                for y in sorted({round(o.matrix[5],1) for _,o in matched},reverse=True):
+                    if not baselines or baselines[-1]-y>0.5:baselines.append(y)
+                if len(baselines)>=2:
+                    measured=_median([a-b for a,b in zip(baselines,baselines[1:])]);evidence['leading_pt']=round(measured,2)
+                    if abs(measured-float(leading))>leading_tol:problems.append(f'leading {measured:.2f} pt, expected {float(leading)} pt')
+                else:
+                    unmeasurable.append('leading needs the text to run over at least two lines')
+            if problems:
+                evidence['problems']=problems[:12];failures.append(evidence)
+            elif not unmeasurable:
+                return True,evidence
+            start=hay.find(needle,start+1)
+    if failures:
+        return False,{'occurrences':len(failures),'first':failures[0]}
+    if unmeasurable:
+        raise VerifierUnavailable('; '.join(sorted(set(unmeasurable))))
+    if not any_text:
+        raise VerifierUnavailable('The PDF has no live text; outlined lettering needs the matching human check')
+    raise VerifierUnavailable('The exact text was not found as live text; the matching content check covers its presence')
 
 
 def evaluate(spec, artifact_root):

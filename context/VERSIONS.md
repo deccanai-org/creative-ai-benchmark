@@ -1,6 +1,6 @@
 # Versions of the StudioBench review site
 
-All live under `https://dhigdec.github.io/creative-ai-benchmark/<folder>/` (GitHub Pages from `main:/docs`).
+All live under `https://deccanai-org.github.io/creative-ai-benchmark/<folder>/` (GitHub Pages from `main:/docs`).
 
 ## gatsby, gatsby-v2, gatsby-v4 (frozen)
 Earlier review pages for the V3 corpus. Kept for history. Not edited since.

@@ -4,8 +4,8 @@ What was fixed after the audit of the 13 refreshed pilot tasks (original 10 + LA
 against every stakeholder request: client (every constraint on every deliverable; verifier count manageable),
 design call (simple, atomic, exact output reference), in-house creative expert (deliverable details, fonts, logos).
 
-Live: https://dhigdec.github.io/creative-ai-benchmark/gatsby-v7/annotation-pilot/ and the new coverage tables at
-https://dhigdec.github.io/creative-ai-benchmark/gatsby-v7/annotation-pilot/coverage/
+Live: https://deccanai-org.github.io/creative-ai-benchmark/gatsby-v7/annotation-pilot/ and the new coverage tables at
+https://deccanai-org.github.io/creative-ai-benchmark/gatsby-v7/annotation-pilot/coverage/
 Git tag before the change: `pilot13-before-AB-fixes-2026-10-21`.
 
 ## A. Visible errors
@@ -67,3 +67,25 @@ Rebuild order: `apply_patch.py --write <IDs>` -> `pre_edits.py` -> `scripts/sync
   combined run only.
 - The annotation platform still shows only a sample of each output's human checks (first 2-4 + priority ones); the
   full bank and the coverage tables are linked. Re-import the sheet from `reviews/pilot13-refresh-2026-10-14/sheet_rows.json`.
+
+## Round 2 (2026-10-22): response to the external review
+An external (ChatGPT) review of round 1 found five gaps; all were verified and fixed.
+1. **Repo moved to `deccanai-org`.** Old `dhigdec.github.io` links 404. Current release links, Sheet export, QA scripts,
+   docs and the git remote now use `https://deccanai-org.github.io/creative-ai-benchmark/`. Frozen V4/V5/V6 folders untouched.
+2. **Sheet sampled 807 of 5,431 checks.** The export is now 13 task rows (input-asset rubric) + 143 deliverable rows that
+   carry EVERY human check (6,177; about 17 h at 10 s each), auto checks excluded. Import file:
+   `tools/pilot13_ab_fixes/round2/sheet_rows_2026-10-22.json` (also `reviews/pilot13-refresh-2026-10-14/sheet_rows.json`).
+   The live Google Sheet is NOT updated; the team must import it and decide how to assign the 143 deliverable rows.
+3. **"0 missing" overstated coverage.** Rules are now split into single requirements (type: one property per role).
+   Each cell is checked, n/a, or **not verified** with a reason (exact values that cannot be measured in a delivered
+   image, designer-worded text that code cannot target). Totals: 6,029 checked, 3,090 n/a, 1,190 not verified, 0 missing.
+   Decision (Dhiren): code where possible, otherwise design target marked not verified.
+4. **Auto false passes fixed.** `pdf_no_cmyk` now follows nested Form XObjects, patterns, shadings, inline images,
+   transparency groups and annotations; `pdf_output_intent` requires a /GTS_PDFX intent with an embedded valid CMYK ICC
+   profile. New: `pdf_text_style` measures `leading_pt` and `tracking` (pdfminer.six). Regression tests: 24 pass.
+5. **Atomic + measured vs visual.** Bundled checks split (e.g. LAYOUT-12 dates per act). Every human check carries
+   `method` = look / measure / estimate (857 measure, 103 estimate) with a plain `method_note`; the Sheet shows
+   "[Measure: ...]" / "[Estimate: ...]" before the question.
+Totals after round 2: 6,177 human + 1,111 auto checks on the 13 tasks. Records: `tools/pilot13_ab_fixes/round2/`.
+Open owner decisions: LAYOUT-12 act-name size (48 pt for all vs larger headliners) and its prose typography paragraph
+that contradicts the type scale. TASKS_V5_ALL100.json is 92.1 MB (limit 100 MB).

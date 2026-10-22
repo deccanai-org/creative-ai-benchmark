@@ -55,7 +55,7 @@ team always sees the latest pushed version at a stable URL — no re-sharing fil
 
 **One-time enable** (repo owner, in the GitHub UI): **Settings → Pages → Source: “Deploy from
 a branch” → `main` / `/docs` → Save.** Site publishes at
-`https://dhigdec.github.io/creative-ai-benchmark/`.
+`https://deccanai-org.github.io/creative-ai-benchmark/`.
 
 > Note: this repo is **private**. GitHub Pages on a private repo requires **GitHub Pro/Team/
 > Enterprise** (Pages is unavailable on Free private repos). Pages serves only the `docs/`

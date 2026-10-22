@@ -176,7 +176,7 @@
     {
       "rule_id": "B05",
       "kind": "brand",
-      "rule": "On Bone cream, the wordmark, headings, body, specification, fine print and timing line are Warm near-black; small captions and footer lines may be Tempered steel, a small label Oxblood.",
+      "rule": "On Bone cream, type is Warm near-black, except small captions and footer lines, which may be Tempered steel, and a small label, which may be Oxblood.",
       "source": "brand_identity.palette_rules.distribution",
       "cells": {
         "watch-keyvisual": {
@@ -303,10 +303,10 @@
       }
     },
     {
-      "rule_id": "B08",
+      "rule_id": "B08a",
       "kind": "brand",
-      "rule": "Every palette colour is solid at 100% opacity; no tint, gradient, shadow, metallic, foil, glow or blend effect.",
-      "source": "brand_identity.palette_rules.opacity + forbidden",
+      "rule": "Every palette colour is used solid at 100% opacity, with no tint or transparency.",
+      "source": "brand_identity.palette_rules.opacity",
       "cells": {
         "watch-keyvisual": {
           "checks": [
@@ -341,6 +341,49 @@
         "dealer-launch": {
           "checks": [
             "PHOTO-24/dealer-launch/H047"
+          ]
+        }
+      }
+    },
+    {
+      "rule_id": "B08b",
+      "kind": "brand",
+      "rule": "Every colour is flat, Aged brass included, with no gradient, shadow, metallic, foil, glow or blend effect.",
+      "source": "brand_identity.palette_rules.forbidden + opacity",
+      "cells": {
+        "watch-keyvisual": {
+          "checks": [
+            "PHOTO-24/watch-keyvisual/H054"
+          ]
+        },
+        "watch-feature-r002": {
+          "checks": [
+            "PHOTO-24/watch-feature-r002/H059"
+          ]
+        },
+        "watch-feature-r003": {
+          "checks": [
+            "PHOTO-24/watch-feature-r003/H058"
+          ]
+        },
+        "watch-feature-r004": {
+          "checks": [
+            "PHOTO-24/watch-feature-r004/H058"
+          ]
+        },
+        "watch-feature-r005": {
+          "checks": [
+            "PHOTO-24/watch-feature-r005/H058"
+          ]
+        },
+        "watch-feature-r006": {
+          "checks": [
+            "PHOTO-24/watch-feature-r006/H057"
+          ]
+        },
+        "dealer-launch": {
+          "checks": [
+            "PHOTO-24/dealer-launch/H075"
           ]
         }
       }
@@ -401,35 +444,42 @@
         },
         "watch-feature-r002": {
           "checks": [
-            "PHOTO-24/watch-feature-r002/H019"
+            "PHOTO-24/watch-feature-r002/H019",
+            "PHOTO-24/watch-feature-r002/H063"
           ]
         },
         "watch-feature-r003": {
           "checks": [
-            "PHOTO-24/watch-feature-r003/H019"
+            "PHOTO-24/watch-feature-r003/H019",
+            "PHOTO-24/watch-feature-r003/H062"
           ]
         },
         "watch-feature-r004": {
           "checks": [
             "PHOTO-24/watch-feature-r004/H006",
-            "PHOTO-24/watch-feature-r004/H056"
+            "PHOTO-24/watch-feature-r004/H056",
+            "PHOTO-24/watch-feature-r004/H062"
           ]
         },
         "watch-feature-r005": {
           "checks": [
-            "PHOTO-24/watch-feature-r005/H019"
+            "PHOTO-24/watch-feature-r005/H019",
+            "PHOTO-24/watch-feature-r005/H062"
           ]
         },
         "watch-feature-r006": {
           "checks": [
-            "PHOTO-24/watch-feature-r006/H019"
+            "PHOTO-24/watch-feature-r006/H019",
+            "PHOTO-24/watch-feature-r006/H061"
           ]
         },
         "dealer-launch": {
           "checks": [
             "PHOTO-24/dealer-launch/H026",
             "PHOTO-24/dealer-launch/H027",
-            "PHOTO-24/dealer-launch/H070"
+            "PHOTO-24/dealer-launch/H070",
+            "PHOTO-24/dealer-launch/H088",
+            "PHOTO-24/dealer-launch/H093"
           ]
         }
       }
@@ -535,293 +585,185 @@
           "na": "Product features keep true colour; the campaign grain belongs to the campaign image only."
         },
         "dealer-launch": {
-          "na": "Dealer photographs stay true colour; the campaign grain belongs to the campaign image (H026 checks it is absent)."
+          "na": "Dealer photographs stay true colour; the campaign grain belongs to the campaign image (H093 checks it is absent)."
         }
       }
     },
     {
-      "rule_id": "T01",
+      "rule_id": "T01F",
       "kind": "type",
-      "rule": "Display / H1: Cormorant Garamond Medium capitals, tracked 180 (key visual wordmark 72 px; dealer heading 28 pt).",
+      "rule": "Display / H1 font: Cormorant Garamond Medium for the key visual wordmark, any product-feature wordmark, and the dealer-sheet main heading and any wordmark.",
       "source": "brand_identity.type_system.scale[01]",
       "cells": {
         "watch-keyvisual": {
           "checks": [
-            "PHOTO-24/watch-keyvisual/H027",
-            "PHOTO-24/watch-keyvisual/H053"
+            "PHOTO-24/watch-keyvisual/H027"
           ]
         },
         "watch-feature-r002": {
           "checks": [
-            "PHOTO-24/watch-feature-r002/H034",
-            "PHOTO-24/watch-feature-r002/H058"
+            "PHOTO-24/watch-feature-r002/H034"
           ]
         },
         "watch-feature-r003": {
           "checks": [
-            "PHOTO-24/watch-feature-r003/H033",
-            "PHOTO-24/watch-feature-r003/H057"
+            "PHOTO-24/watch-feature-r003/H033"
           ]
         },
         "watch-feature-r004": {
           "checks": [
-            "PHOTO-24/watch-feature-r004/H032",
-            "PHOTO-24/watch-feature-r004/H057"
+            "PHOTO-24/watch-feature-r004/H032"
           ]
         },
         "watch-feature-r005": {
           "checks": [
-            "PHOTO-24/watch-feature-r005/H033",
-            "PHOTO-24/watch-feature-r005/H057"
+            "PHOTO-24/watch-feature-r005/H033"
           ]
         },
         "watch-feature-r006": {
           "checks": [
-            "PHOTO-24/watch-feature-r006/H032",
-            "PHOTO-24/watch-feature-r006/H056"
+            "PHOTO-24/watch-feature-r006/H032"
           ]
         },
         "dealer-launch": {
           "checks": [
             "PHOTO-24/dealer-launch/H048",
-            "PHOTO-24/dealer-launch/H049",
-            "PHOTO-24/dealer-launch/H072",
             "PHOTO-24/dealer-launch/H071"
           ]
         }
       }
     },
     {
-      "rule_id": "T02",
+      "rule_id": "T01C",
       "kind": "type",
-      "rule": "Subheading / H2 and any other Cormorant line: reference names, subheads and headlines in Cormorant Garamond Medium capitals, tracked 180.",
-      "source": "brand_identity.type_system.scale[02]",
+      "rule": "Display / H1 case: the wordmark and the dealer-sheet heading are set in capitals.",
+      "source": "brand_identity.type_system.scale[01]",
       "cells": {
         "watch-keyvisual": {
           "checks": [
-            "PHOTO-24/watch-keyvisual/H031",
-            "PHOTO-24/watch-keyvisual/H011",
-            "PHOTO-24/watch-keyvisual/H053"
+            "PHOTO-24/watch-keyvisual/H055"
           ]
         },
         "watch-feature-r002": {
           "checks": [
-            "PHOTO-24/watch-feature-r002/H038",
-            "PHOTO-24/watch-feature-r002/H008",
-            "PHOTO-24/watch-feature-r002/H058"
+            "PHOTO-24/watch-feature-r002/H060"
           ]
         },
         "watch-feature-r003": {
           "checks": [
-            "PHOTO-24/watch-feature-r003/H037",
-            "PHOTO-24/watch-feature-r003/H016",
-            "PHOTO-24/watch-feature-r003/H057"
+            "PHOTO-24/watch-feature-r003/H059"
           ]
         },
         "watch-feature-r004": {
           "checks": [
-            "PHOTO-24/watch-feature-r004/H036",
-            "PHOTO-24/watch-feature-r004/H017",
-            "PHOTO-24/watch-feature-r004/H057"
+            "PHOTO-24/watch-feature-r004/H059"
           ]
         },
         "watch-feature-r005": {
           "checks": [
-            "PHOTO-24/watch-feature-r005/H037",
-            "PHOTO-24/watch-feature-r005/H016",
-            "PHOTO-24/watch-feature-r005/H057"
+            "PHOTO-24/watch-feature-r005/H059"
           ]
         },
         "watch-feature-r006": {
           "checks": [
-            "PHOTO-24/watch-feature-r006/H036",
-            "PHOTO-24/watch-feature-r006/H016",
-            "PHOTO-24/watch-feature-r006/H056"
+            "PHOTO-24/watch-feature-r006/H058"
           ]
         },
         "dealer-launch": {
           "checks": [
-            "PHOTO-24/dealer-launch/H052",
-            "PHOTO-24/dealer-launch/H036",
-            "PHOTO-24/dealer-launch/H072"
+            "PHOTO-24/dealer-launch/H076"
           ]
         }
       }
     },
     {
-      "rule_id": "T03",
+      "rule_id": "T01S",
       "kind": "type",
-      "rule": "Body: Inter Regular (supporting copy).",
-      "source": "brand_identity.type_system.scale[03]",
+      "rule": "Display / H1 size: 72 px for the key visual wordmark and any product-feature wordmark; 28 pt for the dealer-sheet heading.",
+      "source": "brand_identity.type_system.scale[01]",
       "cells": {
         "watch-keyvisual": {
-          "checks": [
-            "PHOTO-24/watch-keyvisual/H035"
-          ]
+          "not_verified": "Exact type size cannot be measured in a delivered PNG; 72 px is kept as a design target."
         },
         "watch-feature-r002": {
-          "checks": [
-            "PHOTO-24/watch-feature-r002/H042"
-          ]
+          "not_verified": "Applies if a wordmark appears. Exact type size cannot be measured in a delivered PNG; 72 px is kept as a design target."
         },
         "watch-feature-r003": {
-          "checks": [
-            "PHOTO-24/watch-feature-r003/H041"
-          ]
+          "not_verified": "Applies if a wordmark appears. Exact type size cannot be measured in a delivered PNG; 72 px is kept as a design target."
         },
         "watch-feature-r004": {
-          "checks": [
-            "PHOTO-24/watch-feature-r004/H040"
-          ]
+          "not_verified": "Applies if a wordmark appears. Exact type size cannot be measured in a delivered PNG; 72 px is kept as a design target."
         },
         "watch-feature-r005": {
-          "checks": [
-            "PHOTO-24/watch-feature-r005/H041"
-          ]
+          "not_verified": "Applies if a wordmark appears. Exact type size cannot be measured in a delivered PNG; 72 px is kept as a design target."
         },
         "watch-feature-r006": {
-          "checks": [
-            "PHOTO-24/watch-feature-r006/H040"
-          ]
+          "not_verified": "Applies if a wordmark appears. Exact type size cannot be measured in a delivered PNG; 72 px is kept as a design target."
         },
         "dealer-launch": {
           "checks": [
-            "PHOTO-24/dealer-launch/H054"
+            "PHOTO-24/dealer-launch/H089"
           ]
         }
       }
     },
     {
-      "rule_id": "T04",
+      "rule_id": "T01L",
       "kind": "type",
-      "rule": "Body: specification text in Inter Regular (digital 22 px; dealer 10 pt).",
-      "source": "brand_identity.type_system.scale[03]",
+      "rule": "Display / H1 leading: 76 pixels baseline to baseline between the stacked wordmark lines; 31 points for a dealer-sheet heading that wraps.",
+      "source": "brand_identity.type_system.scale[01]",
       "cells": {
         "watch-keyvisual": {
-          "checks": [
-            "PHOTO-24/watch-keyvisual/H039"
-          ]
+          "not_verified": "Baseline-to-baseline leading cannot be measured reliably in a delivered PNG; 76 pixels between the stacked Lunara and Chronometry lines is kept as a design target."
         },
         "watch-feature-r002": {
-          "checks": [
-            "PHOTO-24/watch-feature-r002/H046"
-          ]
+          "not_verified": "Applies if a wordmark appears. Baseline-to-baseline leading cannot be measured reliably in a delivered PNG; 76 pixels is kept as a design target."
         },
         "watch-feature-r003": {
-          "checks": [
-            "PHOTO-24/watch-feature-r003/H045"
-          ]
+          "not_verified": "Applies if a wordmark appears. Baseline-to-baseline leading cannot be measured reliably in a delivered PNG; 76 pixels is kept as a design target."
         },
         "watch-feature-r004": {
-          "checks": [
-            "PHOTO-24/watch-feature-r004/H044"
-          ]
+          "not_verified": "Applies if a wordmark appears. Baseline-to-baseline leading cannot be measured reliably in a delivered PNG; 76 pixels is kept as a design target."
         },
         "watch-feature-r005": {
-          "checks": [
-            "PHOTO-24/watch-feature-r005/H045"
-          ]
+          "not_verified": "Applies if a wordmark appears. Baseline-to-baseline leading cannot be measured reliably in a delivered PNG; 76 pixels is kept as a design target."
         },
         "watch-feature-r006": {
-          "checks": [
-            "PHOTO-24/watch-feature-r006/H044"
-          ]
+          "not_verified": "Applies if a wordmark appears. Baseline-to-baseline leading cannot be measured reliably in a delivered PNG; 76 pixels is kept as a design target."
         },
         "dealer-launch": {
           "checks": [
-            "PHOTO-24/dealer-launch/H058",
-            "PHOTO-24/dealer-launch/A009",
-            "PHOTO-24/dealer-launch/A010",
-            "PHOTO-24/dealer-launch/A011",
-            "PHOTO-24/dealer-launch/A012"
+            "PHOTO-24/dealer-launch/H090"
           ]
         }
       }
     },
     {
-      "rule_id": "T05",
+      "rule_id": "T01T",
       "kind": "type",
-      "rule": "Fine print: prices, serials, timing results and captions in Inter Regular, tabular lining.",
-      "source": "brand_identity.type_system.scale[04]",
+      "rule": "Display / H1 tracking: 180 thousandths of an em.",
+      "source": "brand_identity.type_system.scale[01]",
       "cells": {
         "watch-keyvisual": {
-          "checks": [
-            "PHOTO-24/watch-keyvisual/H043"
-          ]
+          "not_verified": "Tracking in thousandths of an em cannot be judged in a delivered PNG; +180 is kept as a design target; H053 checks only visible letter-spacing."
         },
         "watch-feature-r002": {
-          "checks": [
-            "PHOTO-24/watch-feature-r002/H050"
-          ]
+          "not_verified": "Applies if a wordmark appears. Tracking in thousandths of an em cannot be judged in a delivered PNG; +180 is kept as a design target; H058 checks only visible letter-spacing."
         },
         "watch-feature-r003": {
-          "checks": [
-            "PHOTO-24/watch-feature-r003/H049"
-          ]
+          "not_verified": "Applies if a wordmark appears. Tracking in thousandths of an em cannot be judged in a delivered PNG; +180 is kept as a design target; H057 checks only visible letter-spacing."
         },
         "watch-feature-r004": {
-          "checks": [
-            "PHOTO-24/watch-feature-r004/H048"
-          ]
+          "not_verified": "Applies if a wordmark appears. Tracking in thousandths of an em cannot be judged in a delivered PNG; +180 is kept as a design target; H057 checks only visible letter-spacing."
         },
         "watch-feature-r005": {
-          "checks": [
-            "PHOTO-24/watch-feature-r005/H049"
-          ]
+          "not_verified": "Applies if a wordmark appears. Tracking in thousandths of an em cannot be judged in a delivered PNG; +180 is kept as a design target; H057 checks only visible letter-spacing."
         },
         "watch-feature-r006": {
-          "checks": [
-            "PHOTO-24/watch-feature-r006/H048"
-          ]
+          "not_verified": "Applies if a wordmark appears. Tracking in thousandths of an em cannot be judged in a delivered PNG; +180 is kept as a design target; H056 checks only visible letter-spacing."
         },
         "dealer-launch": {
-          "checks": [
-            "PHOTO-24/dealer-launch/H062"
-          ]
-        }
-      }
-    },
-    {
-      "rule_id": "T06",
-      "kind": "type",
-      "rule": "Visible type-scale relationships: wordmark over reference name over specification.",
-      "source": "brand_identity.type_system.scale",
-      "cells": {
-        "watch-keyvisual": {
-          "checks": [
-            "PHOTO-24/watch-keyvisual/H013"
-          ]
-        },
-        "watch-feature-r002": {
-          "checks": [
-            "PHOTO-24/watch-feature-r002/H010"
-          ]
-        },
-        "watch-feature-r003": {
-          "checks": [
-            "PHOTO-24/watch-feature-r003/H018"
-          ]
-        },
-        "watch-feature-r004": {
-          "checks": [
-            "PHOTO-24/watch-feature-r004/H019"
-          ]
-        },
-        "watch-feature-r005": {
-          "checks": [
-            "PHOTO-24/watch-feature-r005/H018"
-          ]
-        },
-        "watch-feature-r006": {
-          "checks": [
-            "PHOTO-24/watch-feature-r006/H018"
-          ]
-        },
-        "dealer-launch": {
-          "checks": [
-            "PHOTO-24/dealer-launch/H038",
-            "PHOTO-24/dealer-launch/H049"
-          ]
+          "not_verified": "The heading wording is the designer’s choice, so no code check can find it, and tracking in thousandths of an em cannot be read by eye; H072 checks only visible letter-spacing."
         }
       }
     },
@@ -869,54 +811,785 @@
       }
     },
     {
-      "rule_id": "T08",
+      "rule_id": "T02F",
       "kind": "type",
-      "rule": "Signature move: no figure is set in the serif; every numeral switches to Inter at the surrounding size.",
-      "source": "brand_identity.signature_type_move",
+      "rule": "Subheading / H2 font: reference names in Cormorant Garamond Medium.",
+      "source": "brand_identity.type_system.scale[02]",
       "cells": {
         "watch-keyvisual": {
           "checks": [
-            "PHOTO-24/watch-keyvisual/H018"
+            "PHOTO-24/watch-keyvisual/H031"
           ]
         },
         "watch-feature-r002": {
           "checks": [
-            "PHOTO-24/watch-feature-r002/H024"
+            "PHOTO-24/watch-feature-r002/H038"
           ]
         },
         "watch-feature-r003": {
           "checks": [
-            "PHOTO-24/watch-feature-r003/H023"
+            "PHOTO-24/watch-feature-r003/H037"
           ]
         },
         "watch-feature-r004": {
           "checks": [
-            "PHOTO-24/watch-feature-r004/H022"
+            "PHOTO-24/watch-feature-r004/H036"
           ]
         },
         "watch-feature-r005": {
           "checks": [
-            "PHOTO-24/watch-feature-r005/H023"
+            "PHOTO-24/watch-feature-r005/H037"
           ]
         },
         "watch-feature-r006": {
           "checks": [
-            "PHOTO-24/watch-feature-r006/H022"
+            "PHOTO-24/watch-feature-r006/H036"
           ]
         },
         "dealer-launch": {
           "checks": [
-            "PHOTO-24/dealer-launch/H040",
-            "PHOTO-24/dealer-launch/H074"
+            "PHOTO-24/dealer-launch/H052",
+            "PHOTO-24/dealer-launch/A013",
+            "PHOTO-24/dealer-launch/A014",
+            "PHOTO-24/dealer-launch/A015",
+            "PHOTO-24/dealer-launch/A016",
+            "PHOTO-24/dealer-launch/A017"
           ]
         }
       }
     },
     {
-      "rule_id": "T09",
+      "rule_id": "T02C",
       "kind": "type",
-      "rule": "All numerals use tabular lining figures (tabular spacing is judged where figures stand in a column).",
-      "source": "brand_identity.type_system.rules",
+      "rule": "Subheading / H2 case: reference names are set in capitals.",
+      "source": "brand_identity.type_system.scale[02]",
+      "cells": {
+        "watch-keyvisual": {
+          "checks": [
+            "PHOTO-24/watch-keyvisual/H055"
+          ]
+        },
+        "watch-feature-r002": {
+          "checks": [
+            "PHOTO-24/watch-feature-r002/H060"
+          ]
+        },
+        "watch-feature-r003": {
+          "checks": [
+            "PHOTO-24/watch-feature-r003/H059"
+          ]
+        },
+        "watch-feature-r004": {
+          "checks": [
+            "PHOTO-24/watch-feature-r004/H059"
+          ]
+        },
+        "watch-feature-r005": {
+          "checks": [
+            "PHOTO-24/watch-feature-r005/H059"
+          ]
+        },
+        "watch-feature-r006": {
+          "checks": [
+            "PHOTO-24/watch-feature-r006/H058"
+          ]
+        },
+        "dealer-launch": {
+          "checks": [
+            "PHOTO-24/dealer-launch/H076"
+          ]
+        }
+      }
+    },
+    {
+      "rule_id": "T02S",
+      "kind": "type",
+      "rule": "Subheading / H2 size: reference names 40 px on the key visual and 48 px on the product features; flexible on the dealer sheet.",
+      "source": "brand_identity.type_system.scale[02]",
+      "cells": {
+        "watch-keyvisual": {
+          "not_verified": "Exact type size cannot be measured in a delivered PNG; 40 px is kept as a design target."
+        },
+        "watch-feature-r002": {
+          "not_verified": "Exact type size cannot be measured in a delivered PNG; 48 px is kept as a design target."
+        },
+        "watch-feature-r003": {
+          "not_verified": "Exact type size cannot be measured in a delivered PNG; 48 px is kept as a design target."
+        },
+        "watch-feature-r004": {
+          "not_verified": "Exact type size cannot be measured in a delivered PNG; 48 px is kept as a design target."
+        },
+        "watch-feature-r005": {
+          "not_verified": "Exact type size cannot be measured in a delivered PNG; 48 px is kept as a design target."
+        },
+        "watch-feature-r006": {
+          "not_verified": "Exact type size cannot be measured in a delivered PNG; 48 px is kept as a design target."
+        },
+        "dealer-launch": {
+          "na": "In dealer-launch.pdf, reference heading size and leading are flexible, per the type scale note."
+        }
+      }
+    },
+    {
+      "rule_id": "T02L",
+      "kind": "type",
+      "rule": "Subheading / H2 leading: 44 pixels on the key visual and 53 pixels on the product features, baseline to baseline; flexible on the dealer sheet.",
+      "source": "brand_identity.type_system.scale[02]",
+      "cells": {
+        "watch-keyvisual": {
+          "not_verified": "Applies only if the reference name wraps onto a second line. Baseline-to-baseline leading cannot be measured reliably in a delivered PNG; 44 pixels is kept as a design target."
+        },
+        "watch-feature-r002": {
+          "not_verified": "Applies only if the reference name wraps onto a second line. Baseline-to-baseline leading cannot be measured reliably in a delivered PNG; 53 pixels is kept as a design target."
+        },
+        "watch-feature-r003": {
+          "not_verified": "Applies only if the reference name wraps onto a second line. Baseline-to-baseline leading cannot be measured reliably in a delivered PNG; 53 pixels is kept as a design target."
+        },
+        "watch-feature-r004": {
+          "not_verified": "Applies only if the reference name wraps onto a second line. Baseline-to-baseline leading cannot be measured reliably in a delivered PNG; 53 pixels is kept as a design target."
+        },
+        "watch-feature-r005": {
+          "not_verified": "Applies only if the reference name wraps onto a second line. Baseline-to-baseline leading cannot be measured reliably in a delivered PNG; 53 pixels is kept as a design target."
+        },
+        "watch-feature-r006": {
+          "not_verified": "Applies only if the reference name wraps onto a second line. Baseline-to-baseline leading cannot be measured reliably in a delivered PNG; 53 pixels is kept as a design target."
+        },
+        "dealer-launch": {
+          "na": "In dealer-launch.pdf, reference heading size and leading are flexible, per the type scale note."
+        }
+      }
+    },
+    {
+      "rule_id": "T02T",
+      "kind": "type",
+      "rule": "Subheading / H2 tracking: 180 thousandths of an em on reference names.",
+      "source": "brand_identity.type_system.scale[02]",
+      "cells": {
+        "watch-keyvisual": {
+          "not_verified": "Tracking in thousandths of an em cannot be judged in a delivered PNG; +180 is kept as a design target; H053 checks only visible letter-spacing."
+        },
+        "watch-feature-r002": {
+          "not_verified": "Tracking in thousandths of an em cannot be judged in a delivered PNG; +180 is kept as a design target; H058 checks only visible letter-spacing."
+        },
+        "watch-feature-r003": {
+          "not_verified": "Tracking in thousandths of an em cannot be judged in a delivered PNG; +180 is kept as a design target; H057 checks only visible letter-spacing."
+        },
+        "watch-feature-r004": {
+          "not_verified": "Tracking in thousandths of an em cannot be judged in a delivered PNG; +180 is kept as a design target; H057 checks only visible letter-spacing."
+        },
+        "watch-feature-r005": {
+          "not_verified": "Tracking in thousandths of an em cannot be judged in a delivered PNG; +180 is kept as a design target; H057 checks only visible letter-spacing."
+        },
+        "watch-feature-r006": {
+          "not_verified": "Tracking in thousandths of an em cannot be judged in a delivered PNG; +180 is kept as a design target; H056 checks only visible letter-spacing."
+        },
+        "dealer-launch": {
+          "checks": [
+            "PHOTO-24/dealer-launch/A013",
+            "PHOTO-24/dealer-launch/A014",
+            "PHOTO-24/dealer-launch/A015",
+            "PHOTO-24/dealer-launch/A016",
+            "PHOTO-24/dealer-launch/A017"
+          ]
+        }
+      }
+    },
+    {
+      "rule_id": "T02X",
+      "kind": "type",
+      "rule": "Any other serif line, such as a headline or subhead, is Cormorant Garamond Medium, as steps 01 and 02 set.",
+      "source": "brand_identity.type_system.scale[02]",
+      "cells": {
+        "watch-keyvisual": {
+          "checks": [
+            "PHOTO-24/watch-keyvisual/H011"
+          ]
+        },
+        "watch-feature-r002": {
+          "checks": [
+            "PHOTO-24/watch-feature-r002/H008"
+          ]
+        },
+        "watch-feature-r003": {
+          "checks": [
+            "PHOTO-24/watch-feature-r003/H016"
+          ]
+        },
+        "watch-feature-r004": {
+          "checks": [
+            "PHOTO-24/watch-feature-r004/H017"
+          ]
+        },
+        "watch-feature-r005": {
+          "checks": [
+            "PHOTO-24/watch-feature-r005/H016"
+          ]
+        },
+        "watch-feature-r006": {
+          "checks": [
+            "PHOTO-24/watch-feature-r006/H016"
+          ]
+        },
+        "dealer-launch": {
+          "checks": [
+            "PHOTO-24/dealer-launch/H036"
+          ]
+        }
+      }
+    },
+    {
+      "rule_id": "T02XC",
+      "kind": "type",
+      "rule": "Any other serif line, such as a headline or subhead, is set in capitals, as steps 01 and 02 set.",
+      "source": "brand_identity.type_system.scale[02]",
+      "cells": {
+        "watch-keyvisual": {
+          "checks": [
+            "PHOTO-24/watch-keyvisual/H055"
+          ]
+        },
+        "watch-feature-r002": {
+          "checks": [
+            "PHOTO-24/watch-feature-r002/H060"
+          ]
+        },
+        "watch-feature-r003": {
+          "checks": [
+            "PHOTO-24/watch-feature-r003/H059"
+          ]
+        },
+        "watch-feature-r004": {
+          "checks": [
+            "PHOTO-24/watch-feature-r004/H059"
+          ]
+        },
+        "watch-feature-r005": {
+          "checks": [
+            "PHOTO-24/watch-feature-r005/H059"
+          ]
+        },
+        "watch-feature-r006": {
+          "checks": [
+            "PHOTO-24/watch-feature-r006/H058"
+          ]
+        },
+        "dealer-launch": {
+          "checks": [
+            "PHOTO-24/dealer-launch/H076"
+          ]
+        }
+      }
+    },
+    {
+      "rule_id": "T02V",
+      "kind": "type",
+      "rule": "Steps 01 and 02 capitals are visibly letter-spaced, the visible effect of the 180-unit setting.",
+      "source": "brand_identity.type_system.scale[01] and [02] + signature_type_move",
+      "cells": {
+        "watch-keyvisual": {
+          "checks": [
+            "PHOTO-24/watch-keyvisual/H053"
+          ]
+        },
+        "watch-feature-r002": {
+          "checks": [
+            "PHOTO-24/watch-feature-r002/H058"
+          ]
+        },
+        "watch-feature-r003": {
+          "checks": [
+            "PHOTO-24/watch-feature-r003/H057"
+          ]
+        },
+        "watch-feature-r004": {
+          "checks": [
+            "PHOTO-24/watch-feature-r004/H057"
+          ]
+        },
+        "watch-feature-r005": {
+          "checks": [
+            "PHOTO-24/watch-feature-r005/H057"
+          ]
+        },
+        "watch-feature-r006": {
+          "checks": [
+            "PHOTO-24/watch-feature-r006/H056"
+          ]
+        },
+        "dealer-launch": {
+          "checks": [
+            "PHOTO-24/dealer-launch/H072"
+          ]
+        }
+      }
+    },
+    {
+      "rule_id": "T03F",
+      "kind": "type",
+      "rule": "Body font: supporting copy in Inter Regular.",
+      "source": "brand_identity.type_system.scale[03]",
+      "cells": {
+        "watch-keyvisual": {
+          "checks": [
+            "PHOTO-24/watch-keyvisual/H035"
+          ]
+        },
+        "watch-feature-r002": {
+          "checks": [
+            "PHOTO-24/watch-feature-r002/H042"
+          ]
+        },
+        "watch-feature-r003": {
+          "checks": [
+            "PHOTO-24/watch-feature-r003/H041"
+          ]
+        },
+        "watch-feature-r004": {
+          "checks": [
+            "PHOTO-24/watch-feature-r004/H040"
+          ]
+        },
+        "watch-feature-r005": {
+          "checks": [
+            "PHOTO-24/watch-feature-r005/H041"
+          ]
+        },
+        "watch-feature-r006": {
+          "checks": [
+            "PHOTO-24/watch-feature-r006/H040"
+          ]
+        },
+        "dealer-launch": {
+          "checks": [
+            "PHOTO-24/dealer-launch/H054"
+          ]
+        }
+      }
+    },
+    {
+      "rule_id": "T03S",
+      "kind": "type",
+      "rule": "Body size: supporting copy 20 px on the PNG outputs; 10 pt on the dealer sheet.",
+      "source": "brand_identity.type_system.scale[03]",
+      "cells": {
+        "watch-keyvisual": {
+          "not_verified": "Applies if supporting copy appears. Exact type size cannot be measured in a delivered PNG; 20 px is kept as a design target."
+        },
+        "watch-feature-r002": {
+          "not_verified": "Applies if supporting copy appears. Exact type size cannot be measured in a delivered PNG; 20 px is kept as a design target."
+        },
+        "watch-feature-r003": {
+          "not_verified": "Applies if supporting copy appears. Exact type size cannot be measured in a delivered PNG; 20 px is kept as a design target."
+        },
+        "watch-feature-r004": {
+          "not_verified": "Applies if supporting copy appears. Exact type size cannot be measured in a delivered PNG; 20 px is kept as a design target."
+        },
+        "watch-feature-r005": {
+          "not_verified": "Applies if supporting copy appears. Exact type size cannot be measured in a delivered PNG; 20 px is kept as a design target."
+        },
+        "watch-feature-r006": {
+          "not_verified": "Applies if supporting copy appears. Exact type size cannot be measured in a delivered PNG; 20 px is kept as a design target."
+        },
+        "dealer-launch": {
+          "checks": [
+            "PHOTO-24/dealer-launch/H091",
+            "PHOTO-24/dealer-launch/A008"
+          ]
+        }
+      }
+    },
+    {
+      "rule_id": "T03L",
+      "kind": "type",
+      "rule": "Body leading: supporting copy 30 pixels on the PNG outputs and 14 points on the dealer sheet, baseline to baseline.",
+      "source": "brand_identity.type_system.scale[03]",
+      "cells": {
+        "watch-keyvisual": {
+          "not_verified": "Applies if supporting copy appears. Baseline-to-baseline leading cannot be measured reliably in a delivered PNG; 30 pixels is kept as a design target."
+        },
+        "watch-feature-r002": {
+          "not_verified": "Applies if supporting copy appears. Baseline-to-baseline leading cannot be measured reliably in a delivered PNG; 30 pixels is kept as a design target."
+        },
+        "watch-feature-r003": {
+          "not_verified": "Applies if supporting copy appears. Baseline-to-baseline leading cannot be measured reliably in a delivered PNG; 30 pixels is kept as a design target."
+        },
+        "watch-feature-r004": {
+          "not_verified": "Applies if supporting copy appears. Baseline-to-baseline leading cannot be measured reliably in a delivered PNG; 30 pixels is kept as a design target."
+        },
+        "watch-feature-r005": {
+          "not_verified": "Applies if supporting copy appears. Baseline-to-baseline leading cannot be measured reliably in a delivered PNG; 30 pixels is kept as a design target."
+        },
+        "watch-feature-r006": {
+          "not_verified": "Applies if supporting copy appears. Baseline-to-baseline leading cannot be measured reliably in a delivered PNG; 30 pixels is kept as a design target."
+        },
+        "dealer-launch": {
+          "checks": [
+            "PHOTO-24/dealer-launch/H092",
+            "PHOTO-24/dealer-launch/A022"
+          ]
+        }
+      }
+    },
+    {
+      "rule_id": "T03T",
+      "kind": "type",
+      "rule": "Body tracking: supporting copy at 0 thousandths of an em.",
+      "source": "brand_identity.type_system.scale[03]",
+      "cells": {
+        "watch-keyvisual": {
+          "not_verified": "Applies if supporting copy appears. Tracking in thousandths of an em cannot be judged in a delivered PNG; 0 is kept as a design target."
+        },
+        "watch-feature-r002": {
+          "not_verified": "Applies if supporting copy appears. Tracking in thousandths of an em cannot be judged in a delivered PNG; 0 is kept as a design target."
+        },
+        "watch-feature-r003": {
+          "not_verified": "Applies if supporting copy appears. Tracking in thousandths of an em cannot be judged in a delivered PNG; 0 is kept as a design target."
+        },
+        "watch-feature-r004": {
+          "not_verified": "Applies if supporting copy appears. Tracking in thousandths of an em cannot be judged in a delivered PNG; 0 is kept as a design target."
+        },
+        "watch-feature-r005": {
+          "not_verified": "Applies if supporting copy appears. Tracking in thousandths of an em cannot be judged in a delivered PNG; 0 is kept as a design target."
+        },
+        "watch-feature-r006": {
+          "not_verified": "Applies if supporting copy appears. Tracking in thousandths of an em cannot be judged in a delivered PNG; 0 is kept as a design target."
+        },
+        "dealer-launch": {
+          "checks": [
+            "PHOTO-24/dealer-launch/A023"
+          ]
+        }
+      }
+    },
+    {
+      "rule_id": "T11",
+      "kind": "type",
+      "rule": "At most 65 characters per line of body text.",
+      "source": "brand_identity.type_system.scale[03]",
+      "cells": {
+        "watch-keyvisual": {
+          "checks": [
+            "PHOTO-24/watch-keyvisual/H020"
+          ]
+        },
+        "watch-feature-r002": {
+          "checks": [
+            "PHOTO-24/watch-feature-r002/H026"
+          ]
+        },
+        "watch-feature-r003": {
+          "checks": [
+            "PHOTO-24/watch-feature-r003/H025"
+          ]
+        },
+        "watch-feature-r004": {
+          "checks": [
+            "PHOTO-24/watch-feature-r004/H024"
+          ]
+        },
+        "watch-feature-r005": {
+          "checks": [
+            "PHOTO-24/watch-feature-r005/H025"
+          ]
+        },
+        "watch-feature-r006": {
+          "checks": [
+            "PHOTO-24/watch-feature-r006/H024"
+          ]
+        },
+        "dealer-launch": {
+          "checks": [
+            "PHOTO-24/dealer-launch/H042"
+          ]
+        }
+      }
+    },
+    {
+      "rule_id": "T04F",
+      "kind": "type",
+      "rule": "Specification text font: Inter Regular.",
+      "source": "brand_identity.type_system.scale[03]",
+      "cells": {
+        "watch-keyvisual": {
+          "checks": [
+            "PHOTO-24/watch-keyvisual/H039"
+          ]
+        },
+        "watch-feature-r002": {
+          "checks": [
+            "PHOTO-24/watch-feature-r002/H046"
+          ]
+        },
+        "watch-feature-r003": {
+          "checks": [
+            "PHOTO-24/watch-feature-r003/H045"
+          ]
+        },
+        "watch-feature-r004": {
+          "checks": [
+            "PHOTO-24/watch-feature-r004/H044"
+          ]
+        },
+        "watch-feature-r005": {
+          "checks": [
+            "PHOTO-24/watch-feature-r005/H045"
+          ]
+        },
+        "watch-feature-r006": {
+          "checks": [
+            "PHOTO-24/watch-feature-r006/H044"
+          ]
+        },
+        "dealer-launch": {
+          "checks": [
+            "PHOTO-24/dealer-launch/H058",
+            "PHOTO-24/dealer-launch/A009",
+            "PHOTO-24/dealer-launch/A010",
+            "PHOTO-24/dealer-launch/A011",
+            "PHOTO-24/dealer-launch/A012"
+          ]
+        }
+      }
+    },
+    {
+      "rule_id": "T04S",
+      "kind": "type",
+      "rule": "Specification text size: 22 px on the PNG outputs; 10 pt on the dealer sheet.",
+      "source": "brand_identity.type_system.scale[03]",
+      "cells": {
+        "watch-keyvisual": {
+          "not_verified": "Applies if specification text appears. Exact type size cannot be measured in a delivered PNG; 22 px is kept as a design target."
+        },
+        "watch-feature-r002": {
+          "not_verified": "Exact type size cannot be measured in a delivered PNG; 22 px is kept as a design target."
+        },
+        "watch-feature-r003": {
+          "not_verified": "Exact type size cannot be measured in a delivered PNG; 22 px is kept as a design target."
+        },
+        "watch-feature-r004": {
+          "not_verified": "Exact type size cannot be measured in a delivered PNG; 22 px is kept as a design target."
+        },
+        "watch-feature-r005": {
+          "not_verified": "Exact type size cannot be measured in a delivered PNG; 22 px is kept as a design target."
+        },
+        "watch-feature-r006": {
+          "not_verified": "Exact type size cannot be measured in a delivered PNG; 22 px is kept as a design target."
+        },
+        "dealer-launch": {
+          "checks": [
+            "PHOTO-24/dealer-launch/A009",
+            "PHOTO-24/dealer-launch/A010",
+            "PHOTO-24/dealer-launch/A011",
+            "PHOTO-24/dealer-launch/A012",
+            "PHOTO-24/dealer-launch/H091"
+          ]
+        }
+      }
+    },
+    {
+      "rule_id": "T04L",
+      "kind": "type",
+      "rule": "Specification text leading: 32 pixels on the PNG outputs and 14 points on the dealer sheet, baseline to baseline.",
+      "source": "brand_identity.type_system.scale[03]",
+      "cells": {
+        "watch-keyvisual": {
+          "not_verified": "Applies if specification text appears. Baseline-to-baseline leading cannot be measured reliably in a delivered PNG; 32 pixels is kept as a design target."
+        },
+        "watch-feature-r002": {
+          "not_verified": "Baseline-to-baseline leading cannot be measured reliably in a delivered PNG; 32 pixels is kept as a design target."
+        },
+        "watch-feature-r003": {
+          "not_verified": "Baseline-to-baseline leading cannot be measured reliably in a delivered PNG; 32 pixels is kept as a design target."
+        },
+        "watch-feature-r004": {
+          "not_verified": "Baseline-to-baseline leading cannot be measured reliably in a delivered PNG; 32 pixels is kept as a design target."
+        },
+        "watch-feature-r005": {
+          "not_verified": "Baseline-to-baseline leading cannot be measured reliably in a delivered PNG; 32 pixels is kept as a design target."
+        },
+        "watch-feature-r006": {
+          "not_verified": "Baseline-to-baseline leading cannot be measured reliably in a delivered PNG; 32 pixels is kept as a design target."
+        },
+        "dealer-launch": {
+          "checks": [
+            "PHOTO-24/dealer-launch/H092"
+          ]
+        }
+      }
+    },
+    {
+      "rule_id": "T04T",
+      "kind": "type",
+      "rule": "Specification text tracking: 0 thousandths of an em.",
+      "source": "brand_identity.type_system.scale[03]",
+      "cells": {
+        "watch-keyvisual": {
+          "not_verified": "Applies if specification text appears. Tracking in thousandths of an em cannot be judged in a delivered PNG; 0 is kept as a design target."
+        },
+        "watch-feature-r002": {
+          "not_verified": "Tracking in thousandths of an em cannot be judged in a delivered PNG; 0 is kept as a design target."
+        },
+        "watch-feature-r003": {
+          "not_verified": "Tracking in thousandths of an em cannot be judged in a delivered PNG; 0 is kept as a design target."
+        },
+        "watch-feature-r004": {
+          "not_verified": "Tracking in thousandths of an em cannot be judged in a delivered PNG; 0 is kept as a design target."
+        },
+        "watch-feature-r005": {
+          "not_verified": "Tracking in thousandths of an em cannot be judged in a delivered PNG; 0 is kept as a design target."
+        },
+        "watch-feature-r006": {
+          "not_verified": "Tracking in thousandths of an em cannot be judged in a delivered PNG; 0 is kept as a design target."
+        },
+        "dealer-launch": {
+          "checks": [
+            "PHOTO-24/dealer-launch/A018",
+            "PHOTO-24/dealer-launch/A019",
+            "PHOTO-24/dealer-launch/A020",
+            "PHOTO-24/dealer-launch/A021"
+          ]
+        }
+      }
+    },
+    {
+      "rule_id": "T05F",
+      "kind": "type",
+      "rule": "Fine print font: prices, serials, timing results and captions in Inter Regular.",
+      "source": "brand_identity.type_system.scale[04]",
+      "cells": {
+        "watch-keyvisual": {
+          "checks": [
+            "PHOTO-24/watch-keyvisual/H043"
+          ]
+        },
+        "watch-feature-r002": {
+          "checks": [
+            "PHOTO-24/watch-feature-r002/H050"
+          ]
+        },
+        "watch-feature-r003": {
+          "checks": [
+            "PHOTO-24/watch-feature-r003/H049"
+          ]
+        },
+        "watch-feature-r004": {
+          "checks": [
+            "PHOTO-24/watch-feature-r004/H048"
+          ]
+        },
+        "watch-feature-r005": {
+          "checks": [
+            "PHOTO-24/watch-feature-r005/H049"
+          ]
+        },
+        "watch-feature-r006": {
+          "checks": [
+            "PHOTO-24/watch-feature-r006/H048"
+          ]
+        },
+        "dealer-launch": {
+          "checks": [
+            "PHOTO-24/dealer-launch/H062"
+          ]
+        }
+      }
+    },
+    {
+      "rule_id": "T05S",
+      "kind": "type",
+      "rule": "Fine print size: 16 px on the PNG outputs; 10 pt on the dealer sheet.",
+      "source": "brand_identity.type_system.scale[04]",
+      "cells": {
+        "watch-keyvisual": {
+          "not_verified": "Applies if a price, serial, timing result or caption appears. Exact type size cannot be measured in a delivered PNG; 16 px is kept as a design target."
+        },
+        "watch-feature-r002": {
+          "not_verified": "Applies if a price, serial, timing result or caption appears. Exact type size cannot be measured in a delivered PNG; 16 px is kept as a design target."
+        },
+        "watch-feature-r003": {
+          "not_verified": "Applies if a price, serial, timing result or caption appears. Exact type size cannot be measured in a delivered PNG; 16 px is kept as a design target."
+        },
+        "watch-feature-r004": {
+          "not_verified": "Applies if a price, serial, timing result or caption appears. Exact type size cannot be measured in a delivered PNG; 16 px is kept as a design target."
+        },
+        "watch-feature-r005": {
+          "not_verified": "Applies if a price, serial, timing result or caption appears. Exact type size cannot be measured in a delivered PNG; 16 px is kept as a design target."
+        },
+        "watch-feature-r006": {
+          "not_verified": "Applies if a price, serial, timing result or caption appears. Exact type size cannot be measured in a delivered PNG; 16 px is kept as a design target."
+        },
+        "dealer-launch": {
+          "checks": [
+            "PHOTO-24/dealer-launch/H091"
+          ]
+        }
+      }
+    },
+    {
+      "rule_id": "T05L",
+      "kind": "type",
+      "rule": "Fine print leading: 22 pixels on the PNG outputs and 14 points on the dealer sheet, baseline to baseline.",
+      "source": "brand_identity.type_system.scale[04]",
+      "cells": {
+        "watch-keyvisual": {
+          "not_verified": "Applies if a price, serial, timing result or caption appears. Baseline-to-baseline leading cannot be measured reliably in a delivered PNG; 22 pixels is kept as a design target."
+        },
+        "watch-feature-r002": {
+          "not_verified": "Applies if a price, serial, timing result or caption appears. Baseline-to-baseline leading cannot be measured reliably in a delivered PNG; 22 pixels is kept as a design target."
+        },
+        "watch-feature-r003": {
+          "not_verified": "Applies if a price, serial, timing result or caption appears. Baseline-to-baseline leading cannot be measured reliably in a delivered PNG; 22 pixels is kept as a design target."
+        },
+        "watch-feature-r004": {
+          "not_verified": "Applies if a price, serial, timing result or caption appears. Baseline-to-baseline leading cannot be measured reliably in a delivered PNG; 22 pixels is kept as a design target."
+        },
+        "watch-feature-r005": {
+          "not_verified": "Applies if a price, serial, timing result or caption appears. Baseline-to-baseline leading cannot be measured reliably in a delivered PNG; 22 pixels is kept as a design target."
+        },
+        "watch-feature-r006": {
+          "not_verified": "Applies if a price, serial, timing result or caption appears. Baseline-to-baseline leading cannot be measured reliably in a delivered PNG; 22 pixels is kept as a design target."
+        },
+        "dealer-launch": {
+          "checks": [
+            "PHOTO-24/dealer-launch/H092"
+          ]
+        }
+      }
+    },
+    {
+      "rule_id": "T05T",
+      "kind": "type",
+      "rule": "Fine print tracking: +20 thousandths of an em.",
+      "source": "brand_identity.type_system.scale[04]",
+      "cells": {
+        "watch-keyvisual": {
+          "not_verified": "Applies if a price, serial, timing result or caption appears. Tracking in thousandths of an em cannot be judged in a delivered PNG; +20 is kept as a design target."
+        },
+        "watch-feature-r002": {
+          "not_verified": "Applies if a price, serial, timing result or caption appears. Tracking in thousandths of an em cannot be judged in a delivered PNG; +20 is kept as a design target."
+        },
+        "watch-feature-r003": {
+          "not_verified": "Applies if a price, serial, timing result or caption appears. Tracking in thousandths of an em cannot be judged in a delivered PNG; +20 is kept as a design target."
+        },
+        "watch-feature-r004": {
+          "not_verified": "Applies if a price, serial, timing result or caption appears. Tracking in thousandths of an em cannot be judged in a delivered PNG; +20 is kept as a design target."
+        },
+        "watch-feature-r005": {
+          "not_verified": "Applies if a price, serial, timing result or caption appears. Tracking in thousandths of an em cannot be judged in a delivered PNG; +20 is kept as a design target."
+        },
+        "watch-feature-r006": {
+          "not_verified": "Applies if a price, serial, timing result or caption appears. Tracking in thousandths of an em cannot be judged in a delivered PNG; +20 is kept as a design target."
+        },
+        "dealer-launch": {
+          "not_verified": "Fine print is optional on the dealer sheet and has no fixed wording for a code check; tracking in thousandths of an em cannot be read by eye."
+        }
+      }
+    },
+    {
+      "rule_id": "T09a",
+      "kind": "type",
+      "rule": "All numerals use lining figures at full capital height, never old-style figures.",
+      "source": "brand_identity.type_system.rules + scale[04]",
       "cells": {
         "watch-keyvisual": {
           "checks": [
@@ -950,8 +1623,239 @@
         },
         "dealer-launch": {
           "checks": [
-            "PHOTO-24/dealer-launch/H041",
+            "PHOTO-24/dealer-launch/H041"
+          ]
+        }
+      }
+    },
+    {
+      "rule_id": "T09b",
+      "kind": "type",
+      "rule": "All numerals use tabular (equal-width) figures.",
+      "source": "brand_identity.type_system.rules + scale[04]",
+      "cells": {
+        "watch-keyvisual": {
+          "checks": [
+            "PHOTO-24/watch-keyvisual/H056"
+          ]
+        },
+        "watch-feature-r002": {
+          "checks": [
+            "PHOTO-24/watch-feature-r002/H061"
+          ]
+        },
+        "watch-feature-r003": {
+          "checks": [
+            "PHOTO-24/watch-feature-r003/H060"
+          ]
+        },
+        "watch-feature-r004": {
+          "checks": [
+            "PHOTO-24/watch-feature-r004/H060"
+          ]
+        },
+        "watch-feature-r005": {
+          "checks": [
+            "PHOTO-24/watch-feature-r005/H060"
+          ]
+        },
+        "watch-feature-r006": {
+          "checks": [
+            "PHOTO-24/watch-feature-r006/H059"
+          ]
+        },
+        "dealer-launch": {
+          "checks": [
             "PHOTO-24/dealer-launch/H073"
+          ]
+        }
+      }
+    },
+    {
+      "rule_id": "T06a",
+      "kind": "type",
+      "rule": "Scale order: the wordmark is set larger than the reference name.",
+      "source": "brand_identity.type_system.scale[01] and [02]",
+      "cells": {
+        "watch-keyvisual": {
+          "checks": [
+            "PHOTO-24/watch-keyvisual/H013"
+          ]
+        },
+        "watch-feature-r002": {
+          "checks": [
+            "PHOTO-24/watch-feature-r002/H062"
+          ]
+        },
+        "watch-feature-r003": {
+          "checks": [
+            "PHOTO-24/watch-feature-r003/H061"
+          ]
+        },
+        "watch-feature-r004": {
+          "checks": [
+            "PHOTO-24/watch-feature-r004/H061"
+          ]
+        },
+        "watch-feature-r005": {
+          "checks": [
+            "PHOTO-24/watch-feature-r005/H061"
+          ]
+        },
+        "watch-feature-r006": {
+          "checks": [
+            "PHOTO-24/watch-feature-r006/H060"
+          ]
+        },
+        "dealer-launch": {
+          "na": "Dealer reference heading sizes are flexible, so the type scale sets no wordmark-over-name order on this sheet."
+        }
+      }
+    },
+    {
+      "rule_id": "T06b",
+      "kind": "type",
+      "rule": "Scale order: the reference name is set larger than the specification text.",
+      "source": "brand_identity.type_system.scale[02] and [03]",
+      "cells": {
+        "watch-keyvisual": {
+          "checks": [
+            "PHOTO-24/watch-keyvisual/H058"
+          ]
+        },
+        "watch-feature-r002": {
+          "checks": [
+            "PHOTO-24/watch-feature-r002/H010"
+          ]
+        },
+        "watch-feature-r003": {
+          "checks": [
+            "PHOTO-24/watch-feature-r003/H018"
+          ]
+        },
+        "watch-feature-r004": {
+          "checks": [
+            "PHOTO-24/watch-feature-r004/H019"
+          ]
+        },
+        "watch-feature-r005": {
+          "checks": [
+            "PHOTO-24/watch-feature-r005/H018"
+          ]
+        },
+        "watch-feature-r006": {
+          "checks": [
+            "PHOTO-24/watch-feature-r006/H018"
+          ]
+        },
+        "dealer-launch": {
+          "checks": [
+            "PHOTO-24/dealer-launch/H038"
+          ]
+        }
+      }
+    },
+    {
+      "rule_id": "T06c",
+      "kind": "type",
+      "rule": "Scale order: the dealer-sheet main heading is set larger than body and specification text.",
+      "source": "brand_identity.type_system.scale[01] and [03]",
+      "cells": {
+        "watch-keyvisual": {
+          "na": "The dealer-sheet heading setting applies only to dealer-launch.pdf, not to this PNG."
+        },
+        "watch-feature-r002": {
+          "na": "The dealer-sheet heading setting applies only to dealer-launch.pdf, not to this PNG."
+        },
+        "watch-feature-r003": {
+          "na": "The dealer-sheet heading setting applies only to dealer-launch.pdf, not to this PNG."
+        },
+        "watch-feature-r004": {
+          "na": "The dealer-sheet heading setting applies only to dealer-launch.pdf, not to this PNG."
+        },
+        "watch-feature-r005": {
+          "na": "The dealer-sheet heading setting applies only to dealer-launch.pdf, not to this PNG."
+        },
+        "watch-feature-r006": {
+          "na": "The dealer-sheet heading setting applies only to dealer-launch.pdf, not to this PNG."
+        },
+        "dealer-launch": {
+          "checks": [
+            "PHOTO-24/dealer-launch/H049"
+          ]
+        }
+      }
+    },
+    {
+      "rule_id": "T08a",
+      "kind": "type",
+      "rule": "Signature move: no figure is set in the serif; every numeral, including one inside a heading, switches to Inter.",
+      "source": "brand_identity.signature_type_move + type_system.rules",
+      "cells": {
+        "watch-keyvisual": {
+          "checks": [
+            "PHOTO-24/watch-keyvisual/H018"
+          ]
+        },
+        "watch-feature-r002": {
+          "checks": [
+            "PHOTO-24/watch-feature-r002/H024"
+          ]
+        },
+        "watch-feature-r003": {
+          "checks": [
+            "PHOTO-24/watch-feature-r003/H023"
+          ]
+        },
+        "watch-feature-r004": {
+          "checks": [
+            "PHOTO-24/watch-feature-r004/H022"
+          ]
+        },
+        "watch-feature-r005": {
+          "checks": [
+            "PHOTO-24/watch-feature-r005/H023"
+          ]
+        },
+        "watch-feature-r006": {
+          "checks": [
+            "PHOTO-24/watch-feature-r006/H022"
+          ]
+        },
+        "dealer-launch": {
+          "checks": [
+            "PHOTO-24/dealer-launch/H040"
+          ]
+        }
+      }
+    },
+    {
+      "rule_id": "T08b",
+      "kind": "type",
+      "rule": "Signature move: a figure inside a heading matches the size of the heading capitals around it.",
+      "source": "brand_identity.signature_type_move + type_system.rules",
+      "cells": {
+        "watch-keyvisual": {
+          "not_verified": "Inter figures and Cormorant Garamond capitals differ in visible height at the same type size, so equal size cannot be confirmed in a delivered PNG."
+        },
+        "watch-feature-r002": {
+          "not_verified": "Inter figures and Cormorant Garamond capitals differ in visible height at the same type size, so equal size cannot be confirmed in a delivered PNG."
+        },
+        "watch-feature-r003": {
+          "not_verified": "Inter figures and Cormorant Garamond capitals differ in visible height at the same type size, so equal size cannot be confirmed in a delivered PNG."
+        },
+        "watch-feature-r004": {
+          "not_verified": "Inter figures and Cormorant Garamond capitals differ in visible height at the same type size, so equal size cannot be confirmed in a delivered PNG."
+        },
+        "watch-feature-r005": {
+          "not_verified": "Inter figures and Cormorant Garamond capitals differ in visible height at the same type size, so equal size cannot be confirmed in a delivered PNG."
+        },
+        "watch-feature-r006": {
+          "not_verified": "Inter figures and Cormorant Garamond capitals differ in visible height at the same type size, so equal size cannot be confirmed in a delivered PNG."
+        },
+        "dealer-launch": {
+          "checks": [
+            "PHOTO-24/dealer-launch/H074"
           ]
         }
       }
@@ -1001,44 +1905,94 @@
       }
     },
     {
-      "rule_id": "T11",
+      "rule_id": "T10S",
       "kind": "type",
-      "rule": "At most 65 characters per line of body text.",
-      "source": "brand_identity.type_system.scale[03]",
+      "rule": "Dealer-sheet timing line size: 10 pt, the dealer text setting.",
+      "source": "brand_identity.type_system.scale[03] + lunara_notes.txt CERTIFICATE WORDING",
       "cells": {
         "watch-keyvisual": {
-          "checks": [
-            "PHOTO-24/watch-keyvisual/H020"
-          ]
+          "na": "This dealer-sheet setting applies only to dealer-launch.pdf, not to this PNG."
         },
         "watch-feature-r002": {
-          "checks": [
-            "PHOTO-24/watch-feature-r002/H026"
-          ]
+          "na": "This dealer-sheet setting applies only to dealer-launch.pdf, not to this PNG."
         },
         "watch-feature-r003": {
-          "checks": [
-            "PHOTO-24/watch-feature-r003/H025"
-          ]
+          "na": "This dealer-sheet setting applies only to dealer-launch.pdf, not to this PNG."
         },
         "watch-feature-r004": {
-          "checks": [
-            "PHOTO-24/watch-feature-r004/H024"
-          ]
+          "na": "This dealer-sheet setting applies only to dealer-launch.pdf, not to this PNG."
         },
         "watch-feature-r005": {
-          "checks": [
-            "PHOTO-24/watch-feature-r005/H025"
-          ]
+          "na": "This dealer-sheet setting applies only to dealer-launch.pdf, not to this PNG."
         },
         "watch-feature-r006": {
-          "checks": [
-            "PHOTO-24/watch-feature-r006/H024"
-          ]
+          "na": "This dealer-sheet setting applies only to dealer-launch.pdf, not to this PNG."
         },
         "dealer-launch": {
           "checks": [
-            "PHOTO-24/dealer-launch/H042"
+            "PHOTO-24/dealer-launch/A008"
+          ]
+        }
+      }
+    },
+    {
+      "rule_id": "T10L",
+      "kind": "type",
+      "rule": "Dealer-sheet timing line leading: 14 points baseline to baseline; the line runs past 65 characters, so it wraps.",
+      "source": "brand_identity.type_system.scale[03] + lunara_notes.txt CERTIFICATE WORDING",
+      "cells": {
+        "watch-keyvisual": {
+          "na": "This dealer-sheet setting applies only to dealer-launch.pdf, not to this PNG."
+        },
+        "watch-feature-r002": {
+          "na": "This dealer-sheet setting applies only to dealer-launch.pdf, not to this PNG."
+        },
+        "watch-feature-r003": {
+          "na": "This dealer-sheet setting applies only to dealer-launch.pdf, not to this PNG."
+        },
+        "watch-feature-r004": {
+          "na": "This dealer-sheet setting applies only to dealer-launch.pdf, not to this PNG."
+        },
+        "watch-feature-r005": {
+          "na": "This dealer-sheet setting applies only to dealer-launch.pdf, not to this PNG."
+        },
+        "watch-feature-r006": {
+          "na": "This dealer-sheet setting applies only to dealer-launch.pdf, not to this PNG."
+        },
+        "dealer-launch": {
+          "checks": [
+            "PHOTO-24/dealer-launch/A022"
+          ]
+        }
+      }
+    },
+    {
+      "rule_id": "T10T",
+      "kind": "type",
+      "rule": "Dealer-sheet timing line tracking: 0 thousandths of an em, the dealer body setting.",
+      "source": "brand_identity.type_system.scale[03] + lunara_notes.txt CERTIFICATE WORDING",
+      "cells": {
+        "watch-keyvisual": {
+          "na": "This dealer-sheet setting applies only to dealer-launch.pdf, not to this PNG."
+        },
+        "watch-feature-r002": {
+          "na": "This dealer-sheet setting applies only to dealer-launch.pdf, not to this PNG."
+        },
+        "watch-feature-r003": {
+          "na": "This dealer-sheet setting applies only to dealer-launch.pdf, not to this PNG."
+        },
+        "watch-feature-r004": {
+          "na": "This dealer-sheet setting applies only to dealer-launch.pdf, not to this PNG."
+        },
+        "watch-feature-r005": {
+          "na": "This dealer-sheet setting applies only to dealer-launch.pdf, not to this PNG."
+        },
+        "watch-feature-r006": {
+          "na": "This dealer-sheet setting applies only to dealer-launch.pdf, not to this PNG."
+        },
+        "dealer-launch": {
+          "checks": [
+            "PHOTO-24/dealer-launch/A023"
           ]
         }
       }
@@ -1134,44 +2088,139 @@
       }
     },
     {
-      "rule_id": "R01",
+      "rule_id": "R01a",
       "kind": "brief",
-      "rule": "Keep the watch's reference, case geometry, dial appearance and finish accurate.",
+      "rule": "Keep the watch's reference accurate.",
+      "source": "client_brief What stays fixed",
+      "cells": {
+        "watch-keyvisual": {
+          "checks": [
+            "PHOTO-24/watch-keyvisual/H006"
+          ]
+        },
+        "watch-feature-r002": {
+          "checks": [
+            "PHOTO-24/watch-feature-r002/H003"
+          ]
+        },
+        "watch-feature-r003": {
+          "checks": [
+            "PHOTO-24/watch-feature-r003/H003"
+          ]
+        },
+        "watch-feature-r004": {
+          "checks": [
+            "PHOTO-24/watch-feature-r004/H003"
+          ]
+        },
+        "watch-feature-r005": {
+          "checks": [
+            "PHOTO-24/watch-feature-r005/H003"
+          ]
+        },
+        "watch-feature-r006": {
+          "checks": [
+            "PHOTO-24/watch-feature-r006/H003"
+          ]
+        },
+        "dealer-launch": {
+          "checks": [
+            "PHOTO-24/dealer-launch/H001",
+            "PHOTO-24/dealer-launch/H082",
+            "PHOTO-24/dealer-launch/H083",
+            "PHOTO-24/dealer-launch/H084",
+            "PHOTO-24/dealer-launch/H085"
+          ]
+        }
+      }
+    },
+    {
+      "rule_id": "R01b",
+      "kind": "brief",
+      "rule": "Keep the watch's case geometry accurate.",
+      "source": "client_brief What stays fixed",
+      "cells": {
+        "watch-keyvisual": {
+          "checks": [
+            "PHOTO-24/watch-keyvisual/H057"
+          ]
+        },
+        "watch-feature-r002": {
+          "checks": [
+            "PHOTO-24/watch-feature-r002/H001"
+          ]
+        },
+        "watch-feature-r003": {
+          "checks": [
+            "PHOTO-24/watch-feature-r003/H001"
+          ]
+        },
+        "watch-feature-r004": {
+          "checks": [
+            "PHOTO-24/watch-feature-r004/H001"
+          ]
+        },
+        "watch-feature-r005": {
+          "checks": [
+            "PHOTO-24/watch-feature-r005/H001"
+          ]
+        },
+        "watch-feature-r006": {
+          "checks": [
+            "PHOTO-24/watch-feature-r006/H001"
+          ]
+        },
+        "dealer-launch": {
+          "checks": [
+            "PHOTO-24/dealer-launch/H077",
+            "PHOTO-24/dealer-launch/H078",
+            "PHOTO-24/dealer-launch/H079",
+            "PHOTO-24/dealer-launch/H080",
+            "PHOTO-24/dealer-launch/H081"
+          ]
+        }
+      }
+    },
+    {
+      "rule_id": "R01c",
+      "kind": "brief",
+      "rule": "Keep the watch's dial appearance and finish accurate.",
       "source": "client_brief What stays fixed",
       "cells": {
         "watch-keyvisual": {
           "checks": [
             "PHOTO-24/watch-keyvisual/H001",
+            "PHOTO-24/watch-keyvisual/H008",
             "PHOTO-24/watch-keyvisual/H009"
           ]
         },
         "watch-feature-r002": {
           "checks": [
-            "PHOTO-24/watch-feature-r002/H001",
+            "PHOTO-24/watch-feature-r002/H019",
             "PHOTO-24/watch-feature-r002/H020"
           ]
         },
         "watch-feature-r003": {
           "checks": [
-            "PHOTO-24/watch-feature-r003/H001",
+            "PHOTO-24/watch-feature-r003/H019",
             "PHOTO-24/watch-feature-r003/H020"
           ]
         },
         "watch-feature-r004": {
           "checks": [
-            "PHOTO-24/watch-feature-r004/H001",
+            "PHOTO-24/watch-feature-r004/H006",
             "PHOTO-24/watch-feature-r004/H020"
           ]
         },
         "watch-feature-r005": {
           "checks": [
-            "PHOTO-24/watch-feature-r005/H001",
+            "PHOTO-24/watch-feature-r005/H019",
             "PHOTO-24/watch-feature-r005/H020"
           ]
         },
         "watch-feature-r006": {
           "checks": [
-            "PHOTO-24/watch-feature-r006/H001",
+            "PHOTO-24/watch-feature-r006/H019",
             "PHOTO-24/watch-feature-r006/H020"
           ]
         },
@@ -1181,7 +2230,9 @@
             "PHOTO-24/dealer-launch/H013",
             "PHOTO-24/dealer-launch/H017",
             "PHOTO-24/dealer-launch/H021",
-            "PHOTO-24/dealer-launch/H025"
+            "PHOTO-24/dealer-launch/H025",
+            "PHOTO-24/dealer-launch/H027",
+            "PHOTO-24/dealer-launch/H070"
           ]
         }
       }
@@ -1255,6 +2306,10 @@
         "dealer-launch": {
           "checks": [
             "PHOTO-24/dealer-launch/H001",
+            "PHOTO-24/dealer-launch/H082",
+            "PHOTO-24/dealer-launch/H083",
+            "PHOTO-24/dealer-launch/H084",
+            "PHOTO-24/dealer-launch/H085",
             "PHOTO-24/dealer-launch/H006",
             "PHOTO-24/dealer-launch/H007",
             "PHOTO-24/dealer-launch/H011",
@@ -1481,7 +2536,9 @@
         },
         "dealer-launch": {
           "checks": [
-            "PHOTO-24/dealer-launch/H033"
+            "PHOTO-24/dealer-launch/H033",
+            "PHOTO-24/dealer-launch/H086",
+            "PHOTO-24/dealer-launch/H087"
           ]
         }
       }
@@ -1534,9 +2591,9 @@
       }
     },
     {
-      "rule_id": "R09",
+      "rule_id": "R09a",
       "kind": "brief",
-      "rule": "Knockouts of the bracelet references leave no sweep in enclosed link gaps; the Meridian polished flank is kept whole.",
+      "rule": "Knockouts of the bracelet references leave no sweep in enclosed link gaps.",
       "source": "asset_plan defect_engineered (lunara_pdp_meridian/selene/halcyon.jpg)",
       "cells": {
         "watch-keyvisual": {
@@ -1544,8 +2601,7 @@
         },
         "watch-feature-r002": {
           "checks": [
-            "PHOTO-24/watch-feature-r002/H021",
-            "PHOTO-24/watch-feature-r002/H022"
+            "PHOTO-24/watch-feature-r002/H021"
           ]
         },
         "watch-feature-r003": {
@@ -1568,7 +2624,39 @@
           "checks": [
             "PHOTO-24/dealer-launch/H029",
             "PHOTO-24/dealer-launch/H030",
-            "PHOTO-24/dealer-launch/H031",
+            "PHOTO-24/dealer-launch/H031"
+          ]
+        }
+      }
+    },
+    {
+      "rule_id": "R09b",
+      "kind": "brief",
+      "rule": "A knockout of the Meridian keeps its mirror-polished case flank whole.",
+      "source": "asset_plan defect_engineered (lunara_pdp_meridian/selene/halcyon.jpg)",
+      "cells": {
+        "watch-keyvisual": {
+          "na": "Only lunara_pdp_meridian.jpg carries the polished-flank trap, per the asset plan."
+        },
+        "watch-feature-r002": {
+          "checks": [
+            "PHOTO-24/watch-feature-r002/H022"
+          ]
+        },
+        "watch-feature-r003": {
+          "na": "Only lunara_pdp_meridian.jpg carries the polished-flank trap, per the asset plan."
+        },
+        "watch-feature-r004": {
+          "na": "Only lunara_pdp_meridian.jpg carries the polished-flank trap, per the asset plan."
+        },
+        "watch-feature-r005": {
+          "na": "Only lunara_pdp_meridian.jpg carries the polished-flank trap, per the asset plan."
+        },
+        "watch-feature-r006": {
+          "na": "Only lunara_pdp_meridian.jpg carries the polished-flank trap, per the asset plan."
+        },
+        "dealer-launch": {
+          "checks": [
             "PHOTO-24/dealer-launch/H032"
           ]
         }
@@ -1719,7 +2807,8 @@
         "watch-keyvisual": {
           "checks": [
             "PHOTO-24/watch-keyvisual/H002",
-            "PHOTO-24/watch-keyvisual/H006"
+            "PHOTO-24/watch-keyvisual/H006",
+            "PHOTO-24/watch-keyvisual/H001"
           ]
         },
         "watch-feature-r002": {
@@ -1861,6 +2950,10 @@
         "dealer-launch": {
           "checks": [
             "PHOTO-24/dealer-launch/H001",
+            "PHOTO-24/dealer-launch/H082",
+            "PHOTO-24/dealer-launch/H083",
+            "PHOTO-24/dealer-launch/H084",
+            "PHOTO-24/dealer-launch/H085",
             "PHOTO-24/dealer-launch/H006",
             "PHOTO-24/dealer-launch/H007",
             "PHOTO-24/dealer-launch/H008",
@@ -1880,7 +2973,8 @@
             "PHOTO-24/dealer-launch/H022",
             "PHOTO-24/dealer-launch/H023",
             "PHOTO-24/dealer-launch/H024",
-            "PHOTO-24/dealer-launch/H025"
+            "PHOTO-24/dealer-launch/H025",
+            "PHOTO-24/dealer-launch/A003"
           ]
         }
       }

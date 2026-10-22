@@ -1,0 +1,1851 @@
+{
+ "task_id": "PHOTO-28",
+ "rules": [
+  {
+   "rule_id": "B01",
+   "kind": "brand",
+   "rule": "No colour outside #9CA98F, #C7A97A, #F4F0E8 and #33352E for type, panels, rules, buttons, icons or a recoloured wordmark.",
+   "source": "brand_identity.palette_rules.forbidden",
+   "cells": {
+    "studio-launch": {
+     "checks": [
+      "PHOTO-28/studio-launch/H033",
+      "new:studio-launch-wordmark-solid"
+     ]
+    },
+    "class-feed": {
+     "checks": [
+      "PHOTO-28/class-feed/H033",
+      "new:class-feed-wordmark-solid"
+     ]
+    },
+    "booking-story": {
+     "checks": [
+      "PHOTO-28/booking-story/H030",
+      "new:booking-story-wordmark-solid"
+     ]
+    }
+   }
+  },
+  {
+   "rule_id": "B02",
+   "kind": "brand",
+   "rule": "Warm Off White is a mandatory palette colour and appears in the designed parts.",
+   "source": "brand_identity.palette[].role",
+   "cells": {
+    "studio-launch": {
+     "checks": [
+      "PHOTO-28/studio-launch/H034"
+     ]
+    },
+    "class-feed": {
+     "checks": [
+      "PHOTO-28/class-feed/H034"
+     ]
+    },
+    "booking-story": {
+     "checks": [
+      "PHOTO-28/booking-story/H031"
+     ]
+    }
+   }
+  },
+  {
+   "rule_id": "B27",
+   "kind": "brand",
+   "rule": "Soft Ink is a mandatory palette colour and appears in the type.",
+   "source": "brand_identity.palette (roles)",
+   "cells": {
+    "studio-launch": {
+     "checks": [
+      "new:studio-launch-soft-ink-present"
+     ]
+    },
+    "class-feed": {
+     "checks": [
+      "new:class-feed-soft-ink-present"
+     ]
+    },
+    "booking-story": {
+     "checks": [
+      "new:booking-story-soft-ink-present"
+     ]
+    }
+   }
+  },
+  {
+   "rule_id": "B03",
+   "kind": "brand",
+   "rule": "Grounds, panels and buttons are Warm Off White or Sage and nothing else.",
+   "source": "brand_identity.palette_rules.distribution",
+   "cells": {
+    "studio-launch": {
+     "checks": [
+      "PHOTO-28/studio-launch/H036"
+     ]
+    },
+    "class-feed": {
+     "checks": [
+      "PHOTO-28/class-feed/H005"
+     ]
+    },
+    "booking-story": {
+     "checks": [
+      "PHOTO-28/booking-story/H033"
+     ]
+    }
+   }
+  },
+  {
+   "rule_id": "B04",
+   "kind": "brand",
+   "rule": "On Warm Off White, all type and the wordmark are Soft Ink, except small labels, which may be Sage.",
+   "source": "brand_identity.palette_rules.distribution",
+   "cells": {
+    "studio-launch": {
+     "checks": [
+      "PHOTO-28/studio-launch/H037",
+      "new:studio-launch-wordmark-solid"
+     ]
+    },
+    "class-feed": {
+     "checks": [
+      "PHOTO-28/class-feed/H036",
+      "new:class-feed-wordmark-solid"
+     ]
+    },
+    "booking-story": {
+     "checks": [
+      "PHOTO-28/booking-story/H034",
+      "new:booking-story-wordmark-solid"
+     ]
+    }
+   }
+  },
+  {
+   "rule_id": "B05",
+   "kind": "brand",
+   "rule": "On Sage, all type and the wordmark are Soft Ink or Warm Off White.",
+   "source": "brand_identity.palette_rules.distribution",
+   "cells": {
+    "studio-launch": {
+     "checks": [
+      "PHOTO-28/studio-launch/H059",
+      "new:studio-launch-wordmark-solid"
+     ]
+    },
+    "class-feed": {
+     "checks": [
+      "PHOTO-28/class-feed/H058",
+      "new:class-feed-wordmark-solid"
+     ]
+    },
+    "booking-story": {
+     "checks": [
+      "PHOTO-28/booking-story/H056",
+      "new:booking-story-wordmark-solid"
+     ]
+    }
+   }
+  },
+  {
+   "rule_id": "B06",
+   "kind": "brand",
+   "rule": "Oak is used only for hairline rules and dividers, never as a ground, panel, button or text.",
+   "source": "brand_identity.palette_rules.distribution",
+   "cells": {
+    "studio-launch": {
+     "checks": [
+      "PHOTO-28/studio-launch/H038"
+     ]
+    },
+    "class-feed": {
+     "checks": [
+      "PHOTO-28/class-feed/H037"
+     ]
+    },
+    "booking-story": {
+     "checks": [
+      "PHOTO-28/booking-story/H035"
+     ]
+    }
+   }
+  },
+  {
+   "rule_id": "B07",
+   "kind": "brand",
+   "rule": "Every palette colour is used solid at 100% opacity, with no tint, transparency, gradient, shadow or blend mode.",
+   "source": "brand_identity.palette_rules.opacity",
+   "cells": {
+    "studio-launch": {
+     "checks": [
+      "PHOTO-28/studio-launch/H035"
+     ]
+    },
+    "class-feed": {
+     "checks": [
+      "PHOTO-28/class-feed/H035"
+     ]
+    },
+    "booking-story": {
+     "checks": [
+      "PHOTO-28/booking-story/H032"
+     ]
+    }
+   }
+  },
+  {
+   "rule_id": "B08",
+   "kind": "brand",
+   "rule": "Type, the wordmark included, beside or over a photograph sits on a solid Warm Off White or Sage panel, never directly on the photograph.",
+   "source": "brand_identity.palette_rules.opacity",
+   "cells": {
+    "studio-launch": {
+     "checks": [
+      "PHOTO-28/studio-launch/H057"
+     ]
+    },
+    "class-feed": {
+     "checks": [
+      "PHOTO-28/class-feed/H056"
+     ]
+    },
+    "booking-story": {
+     "checks": [
+      "PHOTO-28/booking-story/H054"
+     ]
+    }
+   }
+  },
+  {
+   "rule_id": "B09",
+   "kind": "brand",
+   "rule": "No scrim, gradient or overlay of any colour, black and white included, is laid over a photograph.",
+   "source": "brand_identity.palette_rules.opacity",
+   "cells": {
+    "studio-launch": {
+     "checks": [
+      "PHOTO-28/studio-launch/H058"
+     ]
+    },
+    "class-feed": {
+     "checks": [
+      "PHOTO-28/class-feed/H057"
+     ]
+    },
+    "booking-story": {
+     "checks": [
+      "PHOTO-28/booking-story/H055"
+     ]
+    }
+   }
+  },
+  {
+   "rule_id": "B10",
+   "kind": "brand",
+   "rule": "In the room frames the reformer upholstery is brought to its own sage green.",
+   "source": "brand_identity.palette_rules.photography",
+   "cells": {
+    "studio-launch": {
+     "checks": [
+      "PHOTO-28/studio-launch/H020"
+     ]
+    },
+    "class-feed": {
+     "checks": [
+      "PHOTO-28/class-feed/H024"
+     ]
+    },
+    "booking-story": {
+     "checks": [
+      "PHOTO-28/booking-story/H019"
+     ]
+    }
+   }
+  },
+  {
+   "rule_id": "B11",
+   "kind": "brand",
+   "rule": "In the room frames the floor is brought to its own natural oak.",
+   "source": "brand_identity.palette_rules.photography",
+   "cells": {
+    "studio-launch": {
+     "checks": [
+      "PHOTO-28/studio-launch/H060"
+     ]
+    },
+    "class-feed": {
+     "checks": [
+      "PHOTO-28/class-feed/H059"
+     ]
+    },
+    "booking-story": {
+     "checks": [
+      "PHOTO-28/booking-story/H057"
+     ]
+    }
+   }
+  },
+  {
+   "rule_id": "B12",
+   "kind": "brand",
+   "rule": "Room frames are corrected in one soft daylight (mixed cool LED and warm sodium light resolved).",
+   "source": "brand_identity.palette_rules.photography + asset_plan defect_engineered",
+   "cells": {
+    "studio-launch": {
+     "checks": [
+      "PHOTO-28/studio-launch/H061"
+     ]
+    },
+    "class-feed": {
+     "checks": [
+      "PHOTO-28/class-feed/H060"
+     ]
+    },
+    "booking-story": {
+     "checks": [
+      "PHOTO-28/booking-story/H058"
+     ]
+    }
+   }
+  },
+  {
+   "rule_id": "B13",
+   "kind": "brand",
+   "rule": "No skin reads orange.",
+   "source": "brand_identity.palette_rules.photography + owner_note.txt",
+   "cells": {
+    "studio-launch": {
+     "checks": [
+      "PHOTO-28/studio-launch/H016"
+     ]
+    },
+    "class-feed": {
+     "checks": [
+      "PHOTO-28/class-feed/H016"
+     ]
+    },
+    "booking-story": {
+     "checks": [
+      "PHOTO-28/booking-story/H016"
+     ]
+    }
+   }
+  },
+  {
+   "rule_id": "B14",
+   "kind": "brand",
+   "rule": "No photograph shows a black rubber floor.",
+   "source": "brand_identity.palette_rules.photography + owner_note.txt",
+   "cells": {
+    "studio-launch": {
+     "checks": [
+      "PHOTO-28/studio-launch/H017"
+     ]
+    },
+    "class-feed": {
+     "checks": [
+      "PHOTO-28/class-feed/H022"
+     ]
+    },
+    "booking-story": {
+     "checks": [
+      "PHOTO-28/booking-story/H017"
+     ]
+    }
+   }
+  },
+  {
+   "rule_id": "B15",
+   "kind": "brand",
+   "rule": "Use verda_wordmark_transparent.png with its drawn letterforms, never retyped.",
+   "source": "client_brief Supplied identity artwork + brand_assets_status",
+   "cells": {
+    "studio-launch": {
+     "checks": [
+      "PHOTO-28/studio-launch/H026"
+     ]
+    },
+    "class-feed": {
+     "checks": [
+      "PHOTO-28/class-feed/H028"
+     ]
+    },
+    "booking-story": {
+     "checks": [
+      "PHOTO-28/booking-story/H003"
+     ]
+    }
+   }
+  },
+  {
+   "rule_id": "B16",
+   "kind": "brand",
+   "rule": "No white square, box or halo around the wordmark (the old verda_logo_web.png defect).",
+   "source": "brand_assets_status + asset_plan defect_engineered (verda_logo_web.png)",
+   "cells": {
+    "studio-launch": {
+     "checks": [
+      "PHOTO-28/studio-launch/H028"
+     ]
+    },
+    "class-feed": {
+     "checks": [
+      "PHOTO-28/class-feed/H029"
+     ]
+    },
+    "booking-story": {
+     "checks": [
+      "PHOTO-28/booking-story/H026"
+     ]
+    }
+   }
+  },
+  {
+   "rule_id": "B17",
+   "kind": "brand",
+   "rule": "Wordmark edges are clean, with no grey fringe or compression ring, while normal edge anti-aliasing is kept.",
+   "source": "asset_plan defect_engineered (verda_logo_web.png) + palette_rules.opacity",
+   "cells": {
+    "studio-launch": {
+     "checks": [
+      "PHOTO-28/studio-launch/H029"
+     ]
+    },
+    "class-feed": {
+     "checks": [
+      "PHOTO-28/class-feed/H030"
+     ]
+    },
+    "booking-story": {
+     "checks": [
+      "PHOTO-28/booking-story/H027"
+     ]
+    }
+   }
+  },
+  {
+   "rule_id": "B18",
+   "kind": "brand",
+   "rule": "The e, d and a counters of the wordmark stay open.",
+   "source": "asset_plan defect_engineered (verda_logo_web.png)",
+   "cells": {
+    "studio-launch": {
+     "checks": [
+      "PHOTO-28/studio-launch/H027"
+     ]
+    },
+    "class-feed": {
+     "checks": [
+      "PHOTO-28/class-feed/H007"
+     ]
+    },
+    "booking-story": {
+     "checks": [
+      "PHOTO-28/booking-story/H025"
+     ]
+    }
+   }
+  },
+  {
+   "rule_id": "B19",
+   "kind": "brand",
+   "rule": "No discount or urgency wording appears, since the voice is confident without hype and never a discount.",
+   "source": "brand_identity.voice + price_positioning",
+   "cells": {
+    "studio-launch": {
+     "checks": [
+      "PHOTO-28/studio-launch/H043"
+     ]
+    },
+    "class-feed": {
+     "checks": [
+      "PHOTO-28/class-feed/H043"
+     ]
+    },
+    "booking-story": {
+     "checks": [
+      "PHOTO-28/booking-story/H041"
+     ]
+    }
+   }
+  },
+  {
+   "rule_id": "B20",
+   "kind": "brand",
+   "rule": "Photographs keep their own corrected colour and are never recoloured toward the palette, so upholstery and floor are not pushed to the Sage or Oak hexes.",
+   "source": "brand_identity.palette_rules.photography",
+   "cells": {
+    "studio-launch": {
+     "checks": [
+      "PHOTO-28/studio-launch/H066"
+     ]
+    },
+    "class-feed": {
+     "checks": [
+      "PHOTO-28/class-feed/H064"
+     ]
+    },
+    "booking-story": {
+     "checks": [
+      "PHOTO-28/booking-story/H062"
+     ]
+    }
+   }
+  },
+  {
+   "rule_id": "B21",
+   "kind": "brand",
+   "rule": "Nothing shouting: no exclamation mark in the copy.",
+   "source": "brand_identity.voice + owner_note.txt",
+   "cells": {
+    "studio-launch": {
+     "checks": [
+      "PHOTO-28/studio-launch/H069"
+     ]
+    },
+    "class-feed": {
+     "checks": [
+      "PHOTO-28/class-feed/H066"
+     ]
+    },
+    "booking-story": {
+     "checks": [
+      "PHOTO-28/booking-story/H066"
+     ]
+    }
+   }
+  },
+  {
+   "rule_id": "B22",
+   "kind": "brand",
+   "rule": "The wordmark is scaled proportionally, never stretched or squashed.",
+   "source": "client_brief Supplied identity artwork + brand_assets_status",
+   "cells": {
+    "studio-launch": {
+     "checks": [
+      "PHOTO-28/studio-launch/H071"
+     ]
+    },
+    "class-feed": {
+     "checks": [
+      "PHOTO-28/class-feed/H068"
+     ]
+    },
+    "booking-story": {
+     "checks": [
+      "PHOTO-28/booking-story/H067"
+     ]
+    }
+   }
+  },
+  {
+   "rule_id": "B23",
+   "kind": "brand",
+   "rule": "Oak covers no more than 5% of the designed, non-photographic area.",
+   "source": "brand_identity.palette_rules.distribution",
+   "cells": {
+    "studio-launch": {
+     "checks": [
+      "new:studio-launch-oak-share"
+     ]
+    },
+    "class-feed": {
+     "checks": [
+      "new:class-feed-oak-share"
+     ]
+    },
+    "booking-story": {
+     "checks": [
+      "new:booking-story-oak-share"
+     ]
+    }
+   }
+  },
+  {
+   "rule_id": "B24",
+   "kind": "brand",
+   "rule": "On these exports the wordmark is solid at 100% opacity (the supplied ink, or Soft Ink or Warm Off White if recoloured), not 92% as on passcard_2025_print.pdf.",
+   "source": "brand_identity.palette_rules.opacity",
+   "cells": {
+    "studio-launch": {
+     "checks": [
+      "new:studio-launch-wordmark-solid",
+      "PHOTO-28/studio-launch/H035"
+     ]
+    },
+    "class-feed": {
+     "checks": [
+      "new:class-feed-wordmark-solid",
+      "PHOTO-28/class-feed/H035"
+     ]
+    },
+    "booking-story": {
+     "checks": [
+      "new:booking-story-wordmark-solid",
+      "PHOTO-28/booking-story/H032"
+     ]
+    }
+   }
+  },
+  {
+   "rule_id": "B25",
+   "kind": "brand",
+   "rule": "The wordmark is used on a light solid ground.",
+   "source": "brand_assets_status + client_brief Supplied identity artwork",
+   "cells": {
+    "studio-launch": {
+     "checks": [
+      "PHOTO-28/studio-launch/H057",
+      "PHOTO-28/studio-launch/H036"
+     ]
+    },
+    "class-feed": {
+     "checks": [
+      "PHOTO-28/class-feed/H056",
+      "PHOTO-28/class-feed/H005"
+     ]
+    },
+    "booking-story": {
+     "checks": [
+      "PHOTO-28/booking-story/H054",
+      "PHOTO-28/booking-story/H033"
+     ]
+    }
+   }
+  },
+  {
+   "rule_id": "B26",
+   "kind": "brand",
+   "rule": "A cut-out portrait sits on a solid Warm Off White or Sage ground.",
+   "source": "brand_identity.palette_rules.distribution + client_brief",
+   "cells": {
+    "studio-launch": {
+     "checks": [
+      "new:launch-cutout-ground"
+     ]
+    },
+    "class-feed": {
+     "checks": [
+      "new:feed-cutout-ground"
+     ]
+    },
+    "booking-story": {
+     "checks": [
+      "new:story-cutout-ground"
+     ]
+    }
+   }
+  },
+  {
+   "rule_id": "B28",
+   "kind": "brand",
+   "rule": "The wordmark keeps its original letter spacing.",
+   "source": "brand_identity.type_system.rules + signature_move",
+   "cells": {
+    "studio-launch": {
+     "checks": [
+      "new:launch-wordmark-spacing"
+     ]
+    },
+    "class-feed": {
+     "checks": [
+      "new:feed-wordmark-spacing"
+     ]
+    },
+    "booking-story": {
+     "checks": [
+      "new:story-wordmark-spacing"
+     ]
+    }
+   }
+  },
+  {
+   "rule_id": "T01",
+   "kind": "type",
+   "rule": "Display / H1 font: Archivo Regular, the headline on studio-launch.png.",
+   "source": "brand_identity.type_system.scale[01]",
+   "cells": {
+    "studio-launch": {
+     "checks": [
+      "PHOTO-28/studio-launch/H004"
+     ]
+    },
+    "class-feed": {
+     "na": "The H1 style is assigned only to the launch-page headline, not this output."
+    },
+    "booking-story": {
+     "na": "The H1 style is assigned only to the launch-page headline, not this output."
+    }
+   }
+  },
+  {
+   "rule_id": "T01S",
+   "kind": "type",
+   "rule": "Display / H1 size: 88 px on the studio-launch.png headline.",
+   "source": "brand_identity.type_system.scale[01]",
+   "cells": {
+    "studio-launch": {
+     "not_verified": "Exact type size cannot be measured in a delivered PNG; the brand value 88 px is kept as a design target."
+    },
+    "class-feed": {
+     "na": "The H1 style is assigned only to the launch-page headline, not this output."
+    },
+    "booking-story": {
+     "na": "The H1 style is assigned only to the launch-page headline, not this output."
+    }
+   }
+  },
+  {
+   "rule_id": "T01L",
+   "kind": "type",
+   "rule": "Display / H1 leading: 104 pixels from baseline to baseline.",
+   "source": "brand_identity.type_system.scale[01]",
+   "cells": {
+    "studio-launch": {
+     "not_verified": "Baseline-to-baseline leading cannot be verified reliably in a delivered PNG; 104 pixels is kept as a design target."
+    },
+    "class-feed": {
+     "na": "The H1 style is assigned only to the launch-page headline, not this output."
+    },
+    "booking-story": {
+     "na": "The H1 style is assigned only to the launch-page headline, not this output."
+    }
+   }
+  },
+  {
+   "rule_id": "T01T",
+   "kind": "type",
+   "rule": "Display / H1 tracking: -10 thousandths of an em.",
+   "source": "brand_identity.type_system.scale[01]",
+   "cells": {
+    "studio-launch": {
+     "not_verified": "Tracking in thousandths of an em cannot be judged in a delivered PNG; -10 is kept as a design target."
+    },
+    "class-feed": {
+     "na": "The H1 style is assigned only to the launch-page headline, not this output."
+    },
+    "booking-story": {
+     "na": "The H1 style is assigned only to the launch-page headline, not this output."
+    }
+   }
+  },
+  {
+   "rule_id": "T02",
+   "kind": "type",
+   "rule": "Subheading / H2 font: Archivo Regular, the headline on class-feed.png and booking-story.png and any secondary heading on studio-launch.png.",
+   "source": "brand_identity.type_system.scale[02]",
+   "cells": {
+    "studio-launch": {
+     "checks": [
+      "PHOTO-28/studio-launch/H064"
+     ]
+    },
+    "class-feed": {
+     "checks": [
+      "PHOTO-28/class-feed/H038"
+     ]
+    },
+    "booking-story": {
+     "checks": [
+      "PHOTO-28/booking-story/H036"
+     ]
+    }
+   }
+  },
+  {
+   "rule_id": "T02S",
+   "kind": "type",
+   "rule": "Subheading / H2 size: 56 px.",
+   "source": "brand_identity.type_system.scale[02] + rules",
+   "cells": {
+    "studio-launch": {
+     "not_verified": "Exact type size cannot be measured in a delivered PNG; the brand value 56 px (optional secondary heading) is kept as a design target."
+    },
+    "class-feed": {
+     "not_verified": "Exact type size cannot be measured in a delivered PNG; the brand value 56 px is kept as a design target."
+    },
+    "booking-story": {
+     "not_verified": "Exact type size cannot be measured in a delivered PNG; the brand value 56 px is kept as a design target."
+    }
+   }
+  },
+  {
+   "rule_id": "T02L",
+   "kind": "type",
+   "rule": "Subheading / H2 leading: 68 pixels from baseline to baseline.",
+   "source": "brand_identity.type_system.scale[02] + rules",
+   "cells": {
+    "studio-launch": {
+     "not_verified": "Baseline-to-baseline leading cannot be verified reliably in a delivered PNG; 68 pixels (optional secondary heading) is kept as a design target."
+    },
+    "class-feed": {
+     "not_verified": "Baseline-to-baseline leading cannot be verified reliably in a delivered PNG; 68 pixels is kept as a design target."
+    },
+    "booking-story": {
+     "not_verified": "Baseline-to-baseline leading cannot be verified reliably in a delivered PNG; 68 pixels is kept as a design target."
+    }
+   }
+  },
+  {
+   "rule_id": "T02T",
+   "kind": "type",
+   "rule": "Subheading / H2 tracking: -5 thousandths of an em.",
+   "source": "brand_identity.type_system.scale[02]",
+   "cells": {
+    "studio-launch": {
+     "not_verified": "Tracking in thousandths of an em cannot be judged in a delivered PNG; -5 (optional secondary heading) is kept as a design target."
+    },
+    "class-feed": {
+     "not_verified": "Tracking in thousandths of an em cannot be judged in a delivered PNG; -5 is kept as a design target."
+    },
+    "booking-story": {
+     "not_verified": "Tracking in thousandths of an em cannot be judged in a delivered PNG; -5 is kept as a design target."
+    }
+   }
+  },
+  {
+   "rule_id": "T03",
+   "kind": "type",
+   "rule": "Body font: Inter Regular.",
+   "source": "brand_identity.type_system.scale[03]",
+   "cells": {
+    "studio-launch": {
+     "checks": [
+      "PHOTO-28/studio-launch/H039"
+     ]
+    },
+    "class-feed": {
+     "checks": [
+      "PHOTO-28/class-feed/H039"
+     ]
+    },
+    "booking-story": {
+     "checks": [
+      "PHOTO-28/booking-story/H037"
+     ]
+    }
+   }
+  },
+  {
+   "rule_id": "T03S",
+   "kind": "type",
+   "rule": "Body size: 22 px.",
+   "source": "brand_identity.type_system.scale[03] + rules",
+   "cells": {
+    "studio-launch": {
+     "not_verified": "Exact type size cannot be measured in a delivered PNG; the brand value 22 px is kept as a design target."
+    },
+    "class-feed": {
+     "not_verified": "Exact type size cannot be measured in a delivered PNG; the brand value 22 px is kept as a design target."
+    },
+    "booking-story": {
+     "not_verified": "Exact type size cannot be measured in a delivered PNG; the brand value 22 px is kept as a design target."
+    }
+   }
+  },
+  {
+   "rule_id": "T03L",
+   "kind": "type",
+   "rule": "Body leading: 34 pixels from baseline to baseline.",
+   "source": "brand_identity.type_system.scale[03]",
+   "cells": {
+    "studio-launch": {
+     "not_verified": "Baseline-to-baseline leading cannot be verified reliably in a delivered PNG; 34 pixels is kept as a design target."
+    },
+    "class-feed": {
+     "not_verified": "Baseline-to-baseline leading cannot be verified reliably in a delivered PNG; 34 pixels is kept as a design target."
+    },
+    "booking-story": {
+     "not_verified": "Baseline-to-baseline leading cannot be verified reliably in a delivered PNG; 34 pixels is kept as a design target."
+    }
+   }
+  },
+  {
+   "rule_id": "T03T",
+   "kind": "type",
+   "rule": "Body tracking: 0.",
+   "source": "brand_identity.type_system.scale[03]",
+   "cells": {
+    "studio-launch": {
+     "not_verified": "Tracking in thousandths of an em cannot be judged in a delivered PNG; 0 is kept as a design target."
+    },
+    "class-feed": {
+     "not_verified": "Tracking in thousandths of an em cannot be judged in a delivered PNG; 0 is kept as a design target."
+    },
+    "booking-story": {
+     "not_verified": "Tracking in thousandths of an em cannot be judged in a delivered PNG; 0 is kept as a design target."
+    }
+   }
+  },
+  {
+   "rule_id": "T04",
+   "kind": "type",
+   "rule": "Fine print font (class times and prices): Inter Medium, not Regular.",
+   "source": "brand_identity.type_system.scale[04] + rules",
+   "cells": {
+    "studio-launch": {
+     "checks": [
+      "PHOTO-28/studio-launch/H040"
+     ]
+    },
+    "class-feed": {
+     "checks": [
+      "PHOTO-28/class-feed/H040"
+     ]
+    },
+    "booking-story": {
+     "checks": [
+      "PHOTO-28/booking-story/H038"
+     ]
+    }
+   }
+  },
+  {
+   "rule_id": "T04S",
+   "kind": "type",
+   "rule": "Fine print size: 16 px.",
+   "source": "brand_identity.type_system.scale[04] + rules",
+   "cells": {
+    "studio-launch": {
+     "not_verified": "Exact type size cannot be measured in a delivered PNG; the brand value 16 px is kept as a design target."
+    },
+    "class-feed": {
+     "not_verified": "Exact type size cannot be measured in a delivered PNG; the brand value 16 px is kept as a design target."
+    },
+    "booking-story": {
+     "not_verified": "Exact type size cannot be measured in a delivered PNG; the brand value 16 px is kept as a design target."
+    }
+   }
+  },
+  {
+   "rule_id": "T04L",
+   "kind": "type",
+   "rule": "Fine print leading: 24 pixels from baseline to baseline.",
+   "source": "brand_identity.type_system.scale[04]",
+   "cells": {
+    "studio-launch": {
+     "not_verified": "Baseline-to-baseline leading cannot be verified reliably in a delivered PNG; 24 pixels is kept as a design target."
+    },
+    "class-feed": {
+     "not_verified": "Baseline-to-baseline leading cannot be verified reliably in a delivered PNG; 24 pixels is kept as a design target."
+    },
+    "booking-story": {
+     "not_verified": "Baseline-to-baseline leading cannot be verified reliably in a delivered PNG; 24 pixels is kept as a design target."
+    }
+   }
+  },
+  {
+   "rule_id": "T04T",
+   "kind": "type",
+   "rule": "Fine print tracking: +15 thousandths of an em.",
+   "source": "brand_identity.type_system.scale[04]",
+   "cells": {
+    "studio-launch": {
+     "not_verified": "Tracking in thousandths of an em cannot be judged in a delivered PNG; +15 is kept as a design target."
+    },
+    "class-feed": {
+     "not_verified": "Tracking in thousandths of an em cannot be judged in a delivered PNG; +15 is kept as a design target."
+    },
+    "booking-story": {
+     "not_verified": "Tracking in thousandths of an em cannot be judged in a delivered PNG; +15 is kept as a design target."
+    }
+   }
+  },
+  {
+   "rule_id": "T05",
+   "kind": "type",
+   "rule": "Visible scale relationship: the headline is the largest text, larger than body text and fine print.",
+   "source": "brand_identity.type_system.scale + rules",
+   "cells": {
+    "studio-launch": {
+     "checks": [
+      "PHOTO-28/studio-launch/H044"
+     ]
+    },
+    "class-feed": {
+     "checks": [
+      "PHOTO-28/class-feed/H008"
+     ]
+    },
+    "booking-story": {
+     "checks": [
+      "PHOTO-28/booking-story/H004"
+     ]
+    }
+   }
+  },
+  {
+   "rule_id": "T06",
+   "kind": "type",
+   "rule": "Body lines are at most 65 characters.",
+   "source": "brand_identity.type_system.scale[03]",
+   "cells": {
+    "studio-launch": {
+     "checks": [
+      "PHOTO-28/studio-launch/H042"
+     ]
+    },
+    "class-feed": {
+     "checks": [
+      "PHOTO-28/class-feed/H042"
+     ]
+    },
+    "booking-story": {
+     "checks": [
+      "PHOTO-28/booking-story/H040"
+     ]
+    }
+   }
+  },
+  {
+   "rule_id": "T07",
+   "kind": "type",
+   "rule": "Use only the attached Archivo and Inter at the named weights; no other family.",
+   "source": "brand_identity.type_system.font_access",
+   "cells": {
+    "studio-launch": {
+     "checks": [
+      "PHOTO-28/studio-launch/H041"
+     ]
+    },
+    "class-feed": {
+     "checks": [
+      "PHOTO-28/class-feed/H041"
+     ]
+    },
+    "booking-story": {
+     "checks": [
+      "PHOTO-28/booking-story/H039"
+     ]
+    }
+   }
+  },
+  {
+   "rule_id": "T08",
+   "kind": "type",
+   "rule": "Signature move: the wordmark sits above the headline.",
+   "source": "brand_identity.type_system.signature_move",
+   "cells": {
+    "studio-launch": {
+     "checks": [
+      "PHOTO-28/studio-launch/H032"
+     ]
+    },
+    "class-feed": {
+     "checks": [
+      "PHOTO-28/class-feed/H065"
+     ]
+    },
+    "booking-story": {
+     "checks": [
+      "PHOTO-28/booking-story/H063"
+     ]
+    }
+   }
+  },
+  {
+   "rule_id": "T09",
+   "kind": "type",
+   "rule": "The wordmark stays on one line, never stacked.",
+   "source": "brand_identity.type_system.rules",
+   "cells": {
+    "studio-launch": {
+     "checks": [
+      "PHOTO-28/studio-launch/H030"
+     ]
+    },
+    "class-feed": {
+     "checks": [
+      "PHOTO-28/class-feed/H031"
+     ]
+    },
+    "booking-story": {
+     "checks": [
+      "PHOTO-28/booking-story/H028"
+     ]
+    }
+   }
+  },
+  {
+   "rule_id": "T10",
+   "kind": "type",
+   "rule": "The placed wordmark is no more than 34 px tall measured on the visible letterforms.",
+   "source": "brand_identity.type_system.rules + client_brief",
+   "cells": {
+    "studio-launch": {
+     "checks": [
+      "PHOTO-28/studio-launch/H031"
+     ]
+    },
+    "class-feed": {
+     "checks": [
+      "PHOTO-28/class-feed/H032"
+     ]
+    },
+    "booking-story": {
+     "checks": [
+      "PHOTO-28/booking-story/H029"
+     ]
+    }
+   }
+  },
+  {
+   "rule_id": "R01",
+   "kind": "brief",
+   "rule": "Use the actual supplied studio photographs; do not invent a different studio.",
+   "source": "client_brief What stays fixed",
+   "cells": {
+    "studio-launch": {
+     "checks": [
+      "PHOTO-28/studio-launch/H019",
+      "PHOTO-28/studio-launch/H063"
+     ]
+    },
+    "class-feed": {
+     "checks": [
+      "PHOTO-28/class-feed/H062"
+     ]
+    },
+    "booking-story": {
+     "checks": [
+      "PHOTO-28/booking-story/H060"
+     ]
+    }
+   }
+  },
+  {
+   "rule_id": "R02",
+   "kind": "brief",
+   "rule": "Room frames are improved, not replaced: nothing generated, added or removed beyond a crop.",
+   "source": "client_brief + truth_constraints",
+   "cells": {
+    "studio-launch": {
+     "checks": [
+      "PHOTO-28/studio-launch/H021"
+     ]
+    },
+    "class-feed": {
+     "checks": [
+      "PHOTO-28/class-feed/H025"
+     ]
+    },
+    "booking-story": {
+     "checks": [
+      "PHOTO-28/booking-story/H020"
+     ]
+    }
+   }
+  },
+  {
+   "rule_id": "R03",
+   "kind": "brief",
+   "rule": "The clipped window in verda_studio_frame_01.jpg gets no invented scenery.",
+   "source": "asset_plan defect_engineered + truth_constraints",
+   "cells": {
+    "studio-launch": {
+     "checks": [
+      "PHOTO-28/studio-launch/H022"
+     ]
+    },
+    "class-feed": {
+     "checks": [
+      "PHOTO-28/class-feed/H026"
+     ]
+    },
+    "booking-story": {
+     "checks": [
+      "PHOTO-28/booking-story/H021"
+     ]
+    }
+   }
+  },
+  {
+   "rule_id": "R04",
+   "kind": "brief",
+   "rule": "The dusky room photographs are improved with a restrained lighting correction.",
+   "source": "client_brief",
+   "cells": {
+    "studio-launch": {
+     "checks": [
+      "PHOTO-28/studio-launch/H062"
+     ]
+    },
+    "class-feed": {
+     "checks": [
+      "PHOTO-28/class-feed/H061"
+     ]
+    },
+    "booking-story": {
+     "checks": [
+      "PHOTO-28/booking-story/H059"
+     ]
+    }
+   }
+  },
+  {
+   "rule_id": "R05",
+   "kind": "brief",
+   "rule": "Instructor information is correctly matched to the portrait.",
+   "source": "client_brief What stays fixed",
+   "cells": {
+    "studio-launch": {
+     "checks": [
+      "PHOTO-28/studio-launch/H024",
+      "new:launch-portrait-02",
+      "new:launch-portrait-03",
+      "new:launch-portrait-04",
+      "new:launch-portrait-05",
+      "new:launch-portrait-06"
+     ]
+    },
+    "class-feed": {
+     "checks": [
+      "PHOTO-28/class-feed/H002",
+      "new:feed-portrait-02",
+      "new:feed-portrait-03",
+      "new:feed-portrait-04",
+      "new:feed-portrait-05",
+      "new:feed-portrait-06"
+     ]
+    },
+    "booking-story": {
+     "checks": [
+      "PHOTO-28/booking-story/H023",
+      "new:story-portrait-02",
+      "new:story-portrait-03",
+      "new:story-portrait-04",
+      "new:story-portrait-05",
+      "new:story-portrait-06"
+     ]
+    }
+   }
+  },
+  {
+   "rule_id": "R06",
+   "kind": "brief",
+   "rule": "Instructors are named in full as listed.",
+   "source": "client_brief + owner_note.txt",
+   "cells": {
+    "studio-launch": {
+     "checks": [
+      "PHOTO-28/studio-launch/H013"
+     ]
+    },
+    "class-feed": {
+     "checks": [
+      "PHOTO-28/class-feed/H010"
+     ]
+    },
+    "booking-story": {
+     "checks": [
+      "PHOTO-28/booking-story/H012"
+     ]
+    }
+   }
+  },
+  {
+   "rule_id": "R07",
+   "kind": "brief",
+   "rule": "Each instructor is paired with their own class.",
+   "source": "client_brief + owner_note.txt",
+   "cells": {
+    "studio-launch": {
+     "checks": [
+      "PHOTO-28/studio-launch/H014",
+      "new:launch-class-dana",
+      "new:launch-class-lena",
+      "new:launch-class-tomas",
+      "new:launch-class-yuki",
+      "new:launch-class-nadia"
+     ]
+    },
+    "class-feed": {
+     "checks": [
+      "PHOTO-28/class-feed/H001",
+      "new:feed-class-dana",
+      "new:feed-class-lena",
+      "new:feed-class-tomas",
+      "new:feed-class-yuki",
+      "new:feed-class-nadia"
+     ]
+    },
+    "booking-story": {
+     "checks": [
+      "PHOTO-28/booking-story/H013",
+      "new:story-class-dana",
+      "new:story-class-lena",
+      "new:story-class-tomas",
+      "new:story-class-yuki",
+      "new:story-class-nadia"
+     ]
+    }
+   }
+  },
+  {
+   "rule_id": "R08",
+   "kind": "brief",
+   "rule": "Classes use client-facing names, not scheduling codes.",
+   "source": "owner_note.txt",
+   "cells": {
+    "studio-launch": {
+     "checks": [
+      "PHOTO-28/studio-launch/H007"
+     ]
+    },
+    "class-feed": {
+     "checks": [
+      "PHOTO-28/class-feed/H003"
+     ]
+    },
+    "booking-story": {
+     "checks": [
+      "PHOTO-28/booking-story/H006"
+     ]
+    }
+   }
+  },
+  {
+   "rule_id": "R09",
+   "kind": "brief",
+   "rule": "Erin Coyle has left and is not named.",
+   "source": "owner_note.txt",
+   "cells": {
+    "studio-launch": {
+     "checks": [
+      "PHOTO-28/studio-launch/H008"
+     ]
+    },
+    "class-feed": {
+     "checks": [
+      "PHOTO-28/class-feed/H004"
+     ]
+    },
+    "booking-story": {
+     "checks": [
+      "PHOTO-28/booking-story/H007"
+     ]
+    }
+   }
+  },
+  {
+   "rule_id": "R10",
+   "kind": "brief",
+   "rule": "No opening date is stated; it keeps slipping.",
+   "source": "owner_note.txt",
+   "cells": {
+    "studio-launch": {
+     "checks": [
+      "PHOTO-28/studio-launch/H009"
+     ]
+    },
+    "class-feed": {
+     "checks": [
+      "PHOTO-28/class-feed/H017"
+     ]
+    },
+    "booking-story": {
+     "checks": [
+      "PHOTO-28/booking-story/H008"
+     ]
+    }
+   }
+  },
+  {
+   "rule_id": "R11",
+   "kind": "brief",
+   "rule": "No class day or time is invented.",
+   "source": "truth_constraints",
+   "cells": {
+    "studio-launch": {
+     "checks": [
+      "PHOTO-28/studio-launch/H010"
+     ]
+    },
+    "class-feed": {
+     "checks": [
+      "PHOTO-28/class-feed/H018"
+     ]
+    },
+    "booking-story": {
+     "checks": [
+      "PHOTO-28/booking-story/H009"
+     ]
+    }
+   }
+  },
+  {
+   "rule_id": "R12",
+   "kind": "brief",
+   "rule": "Every price is a supplied figure.",
+   "source": "truth_constraints + roster_2027.csv + price_positioning",
+   "cells": {
+    "studio-launch": {
+     "checks": [
+      "PHOTO-28/studio-launch/H011"
+     ]
+    },
+    "class-feed": {
+     "checks": [
+      "PHOTO-28/class-feed/H019"
+     ]
+    },
+    "booking-story": {
+     "checks": [
+      "PHOTO-28/booking-story/H010"
+     ]
+    }
+   }
+  },
+  {
+   "rule_id": "R13",
+   "kind": "brief",
+   "rule": "Validity reads through Dec 2027.",
+   "source": "roster_2027.csv",
+   "cells": {
+    "studio-launch": {
+     "checks": [
+      "PHOTO-28/studio-launch/H012"
+     ]
+    },
+    "class-feed": {
+     "checks": [
+      "PHOTO-28/class-feed/H012"
+     ]
+    },
+    "booking-story": {
+     "checks": [
+      "PHOTO-28/booking-story/H011"
+     ]
+    }
+   }
+  },
+  {
+   "rule_id": "R14",
+   "kind": "brief",
+   "rule": "The location is Calloway Row, with no invented address detail.",
+   "source": "brand_identity.about + truth_constraints",
+   "cells": {
+    "studio-launch": {
+     "checks": [
+      "PHOTO-28/studio-launch/H001"
+     ]
+    },
+    "class-feed": {
+     "checks": [
+      "PHOTO-28/class-feed/H020"
+     ]
+    },
+    "booking-story": {
+     "checks": [
+      "PHOTO-28/booking-story/H014"
+     ]
+    }
+   }
+  },
+  {
+   "rule_id": "R15",
+   "kind": "brief",
+   "rule": "No invented web address, phone number or social handle.",
+   "source": "truth_constraints",
+   "cells": {
+    "studio-launch": {
+     "checks": [
+      "PHOTO-28/studio-launch/H015"
+     ]
+    },
+    "class-feed": {
+     "checks": [
+      "PHOTO-28/class-feed/H021"
+     ]
+    },
+    "booking-story": {
+     "checks": [
+      "PHOTO-28/booking-story/H015"
+     ]
+    }
+   }
+  },
+  {
+   "rule_id": "R16",
+   "kind": "brief",
+   "rule": "Instructor faces keep their source features.",
+   "source": "truth_constraints",
+   "cells": {
+    "studio-launch": {
+     "checks": [
+      "PHOTO-28/studio-launch/H023"
+     ]
+    },
+    "class-feed": {
+     "checks": [
+      "PHOTO-28/class-feed/H006"
+     ]
+    },
+    "booking-story": {
+     "checks": [
+      "PHOTO-28/booking-story/H022"
+     ]
+    }
+   }
+  },
+  {
+   "rule_id": "R17",
+   "kind": "brief",
+   "rule": "verda_instructor_04.jpg (825 x 1100 px source) is not enlarged to the point of visible pixelation, softness or generated detail.",
+   "source": "asset_plan defect_engineered",
+   "cells": {
+    "studio-launch": {
+     "checks": [
+      "PHOTO-28/studio-launch/H025"
+     ]
+    },
+    "class-feed": {
+     "checks": [
+      "PHOTO-28/class-feed/H027"
+     ]
+    },
+    "booking-story": {
+     "checks": [
+      "PHOTO-28/booking-story/H024"
+     ]
+    }
+   }
+  },
+  {
+   "rule_id": "R18",
+   "kind": "brief",
+   "rule": "Calm, one body at a time: no group class or crowd.",
+   "source": "owner_note.txt + brand_identity.about",
+   "cells": {
+    "studio-launch": {
+     "checks": [
+      "PHOTO-28/studio-launch/H018"
+     ]
+    },
+    "class-feed": {
+     "checks": [
+      "PHOTO-28/class-feed/H023"
+     ]
+    },
+    "booking-story": {
+     "checks": [
+      "PHOTO-28/booking-story/H018"
+     ]
+    }
+   }
+  },
+  {
+   "rule_id": "R19",
+   "kind": "brief",
+   "rule": "Class prices match roster_2027.csv for each class shown.",
+   "source": "roster_2027.csv",
+   "cells": {
+    "studio-launch": {
+     "checks": [
+      "new:launch-price-foundations",
+      "new:launch-price-flow",
+      "new:launch-price-core-restore",
+      "new:launch-price-strength",
+      "new:launch-price-prenatal",
+      "new:launch-price-slow-deep"
+     ]
+    },
+    "class-feed": {
+     "checks": [
+      "PHOTO-28/class-feed/H011",
+      "new:feed-price-36",
+      "new:feed-price-38"
+     ]
+    },
+    "booking-story": {
+     "checks": [
+      "PHOTO-28/booking-story/H005",
+      "new:story-price-36",
+      "new:story-price-38"
+     ]
+    }
+   }
+  },
+  {
+   "rule_id": "R20",
+   "kind": "brief",
+   "rule": "An instructor cut-out keeps the whole figure, with no bite into the shoulder line or hair (pale-top and hair traps).",
+   "source": "asset_plan defect_engineered (verda_instructor_02.jpg, verda_instructor_05.jpg)",
+   "cells": {
+    "studio-launch": {
+     "checks": [
+      "PHOTO-28/studio-launch/H067"
+     ]
+    },
+    "class-feed": {
+     "checks": [
+      "PHOTO-28/class-feed/H067",
+      "PHOTO-28/class-feed/H014",
+      "PHOTO-28/class-feed/H015"
+     ]
+    },
+    "booking-story": {
+     "checks": [
+      "PHOTO-28/booking-story/H064"
+     ]
+    }
+   }
+  },
+  {
+   "rule_id": "R21",
+   "kind": "brief",
+   "rule": "Preserve the story safe area: 250 top, 320 bottom, 60 each side.",
+   "source": "client_brief What stays fixed",
+   "cells": {
+    "studio-launch": {
+     "na": "The safe-area margins are specified only for the booking story."
+    },
+    "class-feed": {
+     "na": "The safe-area margins are specified only for the booking story."
+    },
+    "booking-story": {
+     "checks": [
+      "PHOTO-28/booking-story/H001"
+     ]
+    }
+   }
+  },
+  {
+   "rule_id": "R22",
+   "kind": "brief",
+   "rule": "The studio identity on the booking story is readable, with no clipped characters.",
+   "source": "deliverables[booking-story].acceptance_requirements",
+   "cells": {
+    "studio-launch": {
+     "na": "Readability of the studio identity is an acceptance requirement only for the story."
+    },
+    "class-feed": {
+     "na": "Readability of the studio identity is an acceptance requirement only for the story."
+    },
+    "booking-story": {
+     "checks": [
+      "PHOTO-28/booking-story/H002"
+     ]
+    }
+   }
+  },
+  {
+   "rule_id": "R23",
+   "kind": "brief",
+   "rule": "On the launch page, the wordmark sits above the headline as a separate lockup.",
+   "source": "client_brief",
+   "cells": {
+    "studio-launch": {
+     "checks": [
+      "PHOTO-28/studio-launch/H032"
+     ]
+    },
+    "class-feed": {
+     "na": "The brief says \"on the launch page, place it above the headline as a separate lockup\"; the feed only takes the signature move (T08)."
+    },
+    "booking-story": {
+     "na": "The brief says \"on the launch page, place it above the headline as a separate lockup\"; the story only takes the signature move (T08)."
+    }
+   }
+  },
+  {
+   "rule_id": "R24",
+   "kind": "brief",
+   "rule": "An instructor cut-out edge shows no halo or fringe of the original wall.",
+   "source": "brand_identity.palette_rules.distribution + client_brief",
+   "cells": {
+    "studio-launch": {
+     "checks": [
+      "PHOTO-28/studio-launch/H068"
+     ]
+    },
+    "class-feed": {
+     "checks": [
+      "PHOTO-28/class-feed/H013"
+     ]
+    },
+    "booking-story": {
+     "checks": [
+      "PHOTO-28/booking-story/H065"
+     ]
+    }
+   }
+  },
+  {
+   "rule_id": "R25",
+   "kind": "brief",
+   "rule": "The complete approved class offer is present as one unobscured content element.",
+   "source": "deliverables[studio-launch].acceptance_requirements",
+   "cells": {
+    "studio-launch": {
+     "checks": [
+      "PHOTO-28/studio-launch/H002",
+      "PHOTO-28/studio-launch/H070",
+      "PHOTO-28/studio-launch/H006",
+      "new:launch-price-foundations",
+      "new:launch-price-flow",
+      "new:launch-price-core-restore",
+      "new:launch-price-strength",
+      "new:launch-price-prenatal",
+      "new:launch-price-slow-deep"
+     ]
+    },
+    "class-feed": {
+     "na": "The class-offer acceptance requirement is set only for the launch page."
+    },
+    "booking-story": {
+     "na": "The class-offer acceptance requirement is set only for the launch page."
+    }
+   }
+  },
+  {
+   "rule_id": "D01",
+   "kind": "deliverable",
+   "rule": "Use at least one actual room photograph, the Calloway Row location, approved classes and prices, and a booking action.",
+   "source": "deliverables[].commission.content",
+   "cells": {
+    "studio-launch": {
+     "checks": [
+      "PHOTO-28/studio-launch/H019",
+      "PHOTO-28/studio-launch/H001",
+      "PHOTO-28/studio-launch/H006",
+      "PHOTO-28/studio-launch/H002",
+      "PHOTO-28/studio-launch/H007",
+      "PHOTO-28/studio-launch/H003",
+      "PHOTO-28/studio-launch/H065",
+      "new:launch-price-foundations",
+      "new:launch-price-flow",
+      "new:launch-price-core-restore",
+      "new:launch-price-strength",
+      "new:launch-price-prenatal",
+      "new:launch-price-slow-deep"
+     ]
+    },
+    "class-feed": {
+     "na": "This commission bullet belongs to the launch page, not this output."
+    },
+    "booking-story": {
+     "na": "This commission bullet belongs to the launch page, not this output."
+    }
+   }
+  },
+  {
+   "rule_id": "D02",
+   "kind": "deliverable",
+   "rule": "Place the supplied Verda wordmark above the headline as a separate lockup.",
+   "source": "deliverables[].commission.content",
+   "cells": {
+    "studio-launch": {
+     "checks": [
+      "PHOTO-28/studio-launch/H032",
+      "PHOTO-28/studio-launch/H026"
+     ]
+    },
+    "class-feed": {
+     "na": "This commission bullet belongs to the launch page, not this output."
+    },
+    "booking-story": {
+     "na": "This commission bullet belongs to the launch page, not this output."
+    }
+   }
+  },
+  {
+   "rule_id": "D03",
+   "kind": "deliverable",
+   "rule": "Match the pictured instructor to their full name, class, price and validity in the approved roster.",
+   "source": "deliverables[].commission.content",
+   "cells": {
+    "studio-launch": {
+     "na": "This commission bullet belongs to the class announcement, not this output."
+    },
+    "class-feed": {
+     "checks": [
+      "PHOTO-28/class-feed/H009",
+      "PHOTO-28/class-feed/H002",
+      "PHOTO-28/class-feed/H010",
+      "PHOTO-28/class-feed/H001",
+      "PHOTO-28/class-feed/H011",
+      "PHOTO-28/class-feed/H012",
+      "new:feed-price-36",
+      "new:feed-price-38",
+      "new:feed-class-dana",
+      "new:feed-class-lena",
+      "new:feed-class-tomas",
+      "new:feed-class-yuki",
+      "new:feed-class-nadia",
+      "new:feed-portrait-02",
+      "new:feed-portrait-03",
+      "new:feed-portrait-04",
+      "new:feed-portrait-05",
+      "new:feed-portrait-06"
+     ]
+    },
+    "booking-story": {
+     "na": "This commission bullet belongs to the class announcement, not this output."
+    }
+   }
+  },
+  {
+   "rule_id": "D04",
+   "kind": "deliverable",
+   "rule": "Place the instructor cutout on solid Warm Off White or Sage and include the supplied wordmark.",
+   "source": "deliverables[].commission.content",
+   "cells": {
+    "studio-launch": {
+     "na": "This commission bullet belongs to the class announcement, not this output."
+    },
+    "class-feed": {
+     "checks": [
+      "new:feed-cutout-ground",
+      "PHOTO-28/class-feed/H063",
+      "PHOTO-28/class-feed/H005",
+      "PHOTO-28/class-feed/H028"
+     ]
+    },
+    "booking-story": {
+     "na": "This commission bullet belongs to the class announcement, not this output."
+    }
+   }
+  },
+  {
+   "rule_id": "D05",
+   "kind": "deliverable",
+   "rule": "Include the supplied studio wordmark and a clear booking action.",
+   "source": "deliverables[].commission.content",
+   "cells": {
+    "studio-launch": {
+     "na": "This commission bullet belongs to the booking story, not this output."
+    },
+    "class-feed": {
+     "na": "This commission bullet belongs to the booking story, not this output."
+    },
+    "booking-story": {
+     "checks": [
+      "PHOTO-28/booking-story/H003",
+      "PHOTO-28/booking-story/H061"
+     ]
+    }
+   }
+  },
+  {
+   "rule_id": "D06",
+   "kind": "deliverable",
+   "rule": "Keep the booking action within the exact safe-area margins listed for this file.",
+   "source": "deliverables[].commission.content",
+   "cells": {
+    "studio-launch": {
+     "na": "This commission bullet belongs to the booking story, not this output."
+    },
+    "class-feed": {
+     "na": "This commission bullet belongs to the booking story, not this output."
+    },
+    "booking-story": {
+     "checks": [
+      "PHOTO-28/booking-story/H001"
+     ]
+    }
+   }
+  }
+ ]
+}

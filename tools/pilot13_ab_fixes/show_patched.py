@@ -38,7 +38,12 @@ def main(argv):
         for rule in cov['rules']:
             print(f'\n{rule["rule_id"]} [{rule["kind"]}] {rule["rule"]}  (source: {rule["source"]})')
             for oid, cell in rule['cells'].items():
-                print(f'   {oid}: ' + (', '.join(x.split('/')[-1] for x in cell['checks']) if 'checks' in cell else 'NA: ' + cell['na']))
+                if 'checks' in cell:
+                    print(f'   {oid}: ' + ', '.join(x.split('/')[-1] for x in cell['checks']))
+                elif 'not_verified' in cell:
+                    print(f'   {oid}: NOT VERIFIED: ' + cell['not_verified'])
+                else:
+                    print(f'   {oid}: NA: ' + cell.get('na', ''))
 
 
 if __name__ == '__main__':

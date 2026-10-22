@@ -1,6 +1,6 @@
 # The 10-task annotation pilot (V7)
 
-Pages: `https://dhigdec.github.io/creative-ai-benchmark/gatsby-v7/annotation-pilot/<ID>.html`
+Pages: `https://deccanai-org.github.io/creative-ai-benchmark/gatsby-v7/annotation-pilot/<ID>.html`
 
 | Task | Brand | Pilot page |
 |---|---|---|

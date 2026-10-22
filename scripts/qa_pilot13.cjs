@@ -28,7 +28,7 @@ const mime={'.ttf':'font/ttf','.png':'image/png','.jpg':'image/jpeg','.svg':'ima
   const page=await context.newPage();
   for(let i=0;i<ids.length;i++){
     const id=ids[i];const errors=[];const listener=e=>errors.push(e.message);page.on('pageerror',listener);
-    await page.goto(live?'https://dhigdec.github.io/creative-ai-benchmark/gatsby-v7/annotation-pilot/'+id+'.html':'file://'+path.join(out,id+'.html'),{waitUntil:'domcontentloaded',timeout:60000});
+    await page.goto(live?'https://deccanai-org.github.io/creative-ai-benchmark/gatsby-v7/annotation-pilot/'+id+'.html':'file://'+path.join(out,id+'.html'),{waitUntil:'domcontentloaded',timeout:60000});
     await page.evaluate(()=>document.querySelectorAll('img').forEach(img=>img.loading='eager'));
     await page.evaluate(async()=>{await document.fonts.ready;await Promise.all([...document.images].map(im=>im.decode()));});
     const loaded=await page.evaluate(()=>[...document.fonts].filter(f=>f.status==='loaded').map(f=>f.family));

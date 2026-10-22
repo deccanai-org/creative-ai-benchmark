@@ -128,36 +128,48 @@
         "vehicle-card-r002": {
           "checks": [
             "PHOTO-08/vehicle-card-r002/H015",
+            "PHOTO-08/vehicle-card-r002/H077",
+            "PHOTO-08/vehicle-card-r002/H082",
             "PHOTO-08/vehicle-card-r002/H003"
           ]
         },
         "vehicle-card-r003": {
           "checks": [
             "PHOTO-08/vehicle-card-r003/H013",
+            "PHOTO-08/vehicle-card-r003/H076",
+            "PHOTO-08/vehicle-card-r003/H081",
             "PHOTO-08/vehicle-card-r003/H003"
           ]
         },
         "vehicle-card-r004": {
           "checks": [
             "PHOTO-08/vehicle-card-r004/H012",
+            "PHOTO-08/vehicle-card-r004/H075",
+            "PHOTO-08/vehicle-card-r004/H080",
             "PHOTO-08/vehicle-card-r004/H003"
           ]
         },
         "vehicle-card-r005": {
           "checks": [
             "PHOTO-08/vehicle-card-r005/H012",
+            "PHOTO-08/vehicle-card-r005/H076",
+            "PHOTO-08/vehicle-card-r005/H081",
             "PHOTO-08/vehicle-card-r005/H003"
           ]
         },
         "vehicle-card-r006": {
           "checks": [
             "PHOTO-08/vehicle-card-r006/H012",
+            "PHOTO-08/vehicle-card-r006/H076",
+            "PHOTO-08/vehicle-card-r006/H081",
             "PHOTO-08/vehicle-card-r006/H003"
           ]
         },
         "vehicle-card-r007": {
           "checks": [
             "PHOTO-08/vehicle-card-r007/H012",
+            "PHOTO-08/vehicle-card-r007/H076",
+            "PHOTO-08/vehicle-card-r007/H081",
             "PHOTO-08/vehicle-card-r007/H003"
           ]
         },
@@ -243,10 +255,101 @@
       }
     },
     {
-      "rule_id": "F01",
+      "rule_id": "F01a",
       "kind": "brief",
-      "rule": "Keep each vehicle's paint, body geometry, visible condition and stock-record facts; visible condition details stay honest.",
+      "rule": "Keep each vehicle's paint.",
       "source": "client_brief \"What stays fixed\"; brand_identity.creative_scope.fixed",
+      "cells": {
+        "vehicle-card-r002": {
+          "checks": [
+            "PHOTO-08/vehicle-card-r002/H020"
+          ]
+        },
+        "vehicle-card-r003": {
+          "checks": [
+            "PHOTO-08/vehicle-card-r003/H017"
+          ]
+        },
+        "vehicle-card-r004": {
+          "checks": [
+            "PHOTO-08/vehicle-card-r004/H016"
+          ]
+        },
+        "vehicle-card-r005": {
+          "checks": [
+            "PHOTO-08/vehicle-card-r005/H017"
+          ]
+        },
+        "vehicle-card-r006": {
+          "checks": [
+            "PHOTO-08/vehicle-card-r006/H017"
+          ]
+        },
+        "vehicle-card-r007": {
+          "checks": [
+            "PHOTO-08/vehicle-card-r007/H016"
+          ]
+        },
+        "inventory-campaign": {
+          "checks": [
+            "PHOTO-08/inventory-campaign/H014",
+            "PHOTO-08/inventory-campaign/H025",
+            "PHOTO-08/inventory-campaign/H034",
+            "PHOTO-08/inventory-campaign/H043",
+            "PHOTO-08/inventory-campaign/H053",
+            "PHOTO-08/inventory-campaign/H063"
+          ]
+        }
+      }
+    },
+    {
+      "rule_id": "F01b",
+      "kind": "brief",
+      "rule": "Keep each vehicle's body geometry (no stretch, squash or warp).",
+      "source": "client_brief \"What stays fixed\"; brand_identity.creative_scope.fixed",
+      "cells": {
+        "vehicle-card-r002": {
+          "checks": [
+            "PHOTO-08/vehicle-card-r002/H079"
+          ]
+        },
+        "vehicle-card-r003": {
+          "checks": [
+            "PHOTO-08/vehicle-card-r003/H078"
+          ]
+        },
+        "vehicle-card-r004": {
+          "checks": [
+            "PHOTO-08/vehicle-card-r004/H077"
+          ]
+        },
+        "vehicle-card-r005": {
+          "checks": [
+            "PHOTO-08/vehicle-card-r005/H078"
+          ]
+        },
+        "vehicle-card-r006": {
+          "checks": [
+            "PHOTO-08/vehicle-card-r006/H078"
+          ]
+        },
+        "vehicle-card-r007": {
+          "checks": [
+            "PHOTO-08/vehicle-card-r007/H078"
+          ]
+        },
+        "inventory-campaign": {
+          "checks": [
+            "PHOTO-08/inventory-campaign/H127"
+          ]
+        }
+      }
+    },
+    {
+      "rule_id": "F01c",
+      "kind": "brief",
+      "rule": "Keep each vehicle's visible condition, with condition details kept honest.",
+      "source": "client_brief \"What stays fixed\"; brand_identity.creative_scope.fixed; client_brief",
       "cells": {
         "vehicle-card-r002": {
           "checks": [
@@ -386,8 +489,8 @@
     {
       "rule_id": "F04",
       "kind": "brief",
-      "rule": "Every stock-record fact shown (stock number, trim, mileage, price, certification tier) matches meridian_intake_week.csv.",
-      "source": "client_brief; meridian_intake_week.csv",
+      "rule": "Keep each vehicle's stock-record facts: every stock number, year, make and model, trim, mileage, price and certification tier shown matches meridian_intake_week.csv.",
+      "source": "client_brief \"What stays fixed\"; meridian_intake_week.csv",
       "cells": {
         "vehicle-card-r002": {
           "checks": [
@@ -486,56 +589,98 @@
             "PHOTO-08/inventory-campaign/H058",
             "PHOTO-08/inventory-campaign/H059",
             "PHOTO-08/inventory-campaign/H060",
-            "PHOTO-08/inventory-campaign/H061"
+            "PHOTO-08/inventory-campaign/H061",
+            "PHOTO-08/inventory-campaign/H007",
+            "PHOTO-08/inventory-campaign/H017",
+            "PHOTO-08/inventory-campaign/H027",
+            "PHOTO-08/inventory-campaign/H036",
+            "PHOTO-08/inventory-campaign/H046",
+            "PHOTO-08/inventory-campaign/H056"
           ]
         }
       }
     },
     {
-      "rule_id": "F05",
+      "rule_id": "F05a",
       "kind": "brief",
-      "rule": "The full vehicle is in frame, on an even, neutral, well lit showroom white; never a dark dramatic studio look.",
+      "rule": "The full vehicle is in frame.",
+      "source": "brand_identity.price_positioning",
+      "cells": {
+        "vehicle-card-r002": {
+          "checks": [
+            "PHOTO-08/vehicle-card-r002/H021"
+          ]
+        },
+        "vehicle-card-r003": {
+          "checks": [
+            "PHOTO-08/vehicle-card-r003/H019"
+          ]
+        },
+        "vehicle-card-r004": {
+          "checks": [
+            "PHOTO-08/vehicle-card-r004/H017"
+          ]
+        },
+        "vehicle-card-r005": {
+          "checks": [
+            "PHOTO-08/vehicle-card-r005/H018"
+          ]
+        },
+        "vehicle-card-r006": {
+          "checks": [
+            "PHOTO-08/vehicle-card-r006/H018"
+          ]
+        },
+        "vehicle-card-r007": {
+          "checks": [
+            "PHOTO-08/vehicle-card-r007/H017"
+          ]
+        },
+        "inventory-campaign": {
+          "checks": [
+            "PHOTO-08/inventory-campaign/H068"
+          ]
+        }
+      }
+    },
+    {
+      "rule_id": "F05b",
+      "kind": "brief",
+      "rule": "The vehicle is shown in even, neutral, well lit showroom light, never a dark dramatic studio look.",
       "source": "brand_identity.price_positioning; palette_rules.forbidden",
       "cells": {
         "vehicle-card-r002": {
           "checks": [
-            "PHOTO-08/vehicle-card-r002/H021",
             "PHOTO-08/vehicle-card-r002/H022"
           ]
         },
         "vehicle-card-r003": {
           "checks": [
-            "PHOTO-08/vehicle-card-r003/H019",
             "PHOTO-08/vehicle-card-r003/H020"
           ]
         },
         "vehicle-card-r004": {
           "checks": [
-            "PHOTO-08/vehicle-card-r004/H017",
             "PHOTO-08/vehicle-card-r004/H018"
           ]
         },
         "vehicle-card-r005": {
           "checks": [
-            "PHOTO-08/vehicle-card-r005/H018",
             "PHOTO-08/vehicle-card-r005/H019"
           ]
         },
         "vehicle-card-r006": {
           "checks": [
-            "PHOTO-08/vehicle-card-r006/H018",
             "PHOTO-08/vehicle-card-r006/H019"
           ]
         },
         "vehicle-card-r007": {
           "checks": [
-            "PHOTO-08/vehicle-card-r007/H017",
             "PHOTO-08/vehicle-card-r007/H018"
           ]
         },
         "inventory-campaign": {
           "checks": [
-            "PHOTO-08/inventory-campaign/H068",
             "PHOTO-08/inventory-campaign/H069"
           ]
         }
@@ -617,59 +762,52 @@
       }
     },
     {
-      "rule_id": "B01",
+      "rule_id": "B01a",
       "kind": "brand",
-      "rule": "No starburst, no price slash and no hot saturated sale colour on any type, panel, rule, button or icon.",
+      "rule": "No starburst and no price slash.",
       "source": "brand_identity.palette_rules.forbidden",
       "cells": {
         "vehicle-card-r002": {
           "checks": [
-            "PHOTO-08/vehicle-card-r002/H030",
-            "PHOTO-08/vehicle-card-r002/H012"
+            "PHOTO-08/vehicle-card-r002/H030"
           ]
         },
         "vehicle-card-r003": {
           "checks": [
-            "PHOTO-08/vehicle-card-r003/H028",
-            "PHOTO-08/vehicle-card-r003/H032"
+            "PHOTO-08/vehicle-card-r003/H028"
           ]
         },
         "vehicle-card-r004": {
           "checks": [
-            "PHOTO-08/vehicle-card-r004/H027",
-            "PHOTO-08/vehicle-card-r004/H031"
+            "PHOTO-08/vehicle-card-r004/H027"
           ]
         },
         "vehicle-card-r005": {
           "checks": [
-            "PHOTO-08/vehicle-card-r005/H028",
-            "PHOTO-08/vehicle-card-r005/H032"
+            "PHOTO-08/vehicle-card-r005/H028"
           ]
         },
         "vehicle-card-r006": {
           "checks": [
-            "PHOTO-08/vehicle-card-r006/H028",
-            "PHOTO-08/vehicle-card-r006/H032"
+            "PHOTO-08/vehicle-card-r006/H028"
           ]
         },
         "vehicle-card-r007": {
           "checks": [
-            "PHOTO-08/vehicle-card-r007/H027",
-            "PHOTO-08/vehicle-card-r007/H031"
+            "PHOTO-08/vehicle-card-r007/H027"
           ]
         },
         "inventory-campaign": {
           "checks": [
-            "PHOTO-08/inventory-campaign/H077",
-            "PHOTO-08/inventory-campaign/H079"
+            "PHOTO-08/inventory-campaign/H077"
           ]
         }
       }
     },
     {
-      "rule_id": "B02",
+      "rule_id": "B01b",
       "kind": "brand",
-      "rule": "No colour outside the 5 palette hexes for type, panels, rules, buttons or icons; the supplied roundel artwork keeps its own colours.",
+      "rule": "No hot saturated sale colour on any type, panel, rule, button or icon.",
       "source": "brand_identity.palette_rules.forbidden",
       "cells": {
         "vehicle-card-r002": {
@@ -710,44 +848,180 @@
       }
     },
     {
-      "rule_id": "B03",
+      "rule_id": "B02a",
       "kind": "brand",
-      "rule": "Showroom White is the ground behind all type; Meridian Navy is the only other ground, for a band, panel or seal carrying reversed type.",
-      "source": "brand_identity.palette_rules.distribution",
+      "rule": "No colour outside the 5 palette hexes is used for type, panels, rules, buttons or icons.",
+      "source": "brand_identity.palette_rules.forbidden",
       "cells": {
         "vehicle-card-r002": {
           "checks": [
-            "PHOTO-08/vehicle-card-r002/H035"
+            "PHOTO-08/vehicle-card-r002/H012"
           ]
         },
         "vehicle-card-r003": {
           "checks": [
-            "PHOTO-08/vehicle-card-r003/H034"
+            "PHOTO-08/vehicle-card-r003/H032"
           ]
         },
         "vehicle-card-r004": {
           "checks": [
-            "PHOTO-08/vehicle-card-r004/H033"
+            "PHOTO-08/vehicle-card-r004/H031"
           ]
         },
         "vehicle-card-r005": {
           "checks": [
-            "PHOTO-08/vehicle-card-r005/H034"
+            "PHOTO-08/vehicle-card-r005/H032"
           ]
         },
         "vehicle-card-r006": {
           "checks": [
-            "PHOTO-08/vehicle-card-r006/H034"
+            "PHOTO-08/vehicle-card-r006/H032"
           ]
         },
         "vehicle-card-r007": {
           "checks": [
-            "PHOTO-08/vehicle-card-r007/H033"
+            "PHOTO-08/vehicle-card-r007/H031"
           ]
         },
         "inventory-campaign": {
           "checks": [
-            "PHOTO-08/inventory-campaign/H081"
+            "PHOTO-08/inventory-campaign/H079"
+          ]
+        }
+      }
+    },
+    {
+      "rule_id": "B02b",
+      "kind": "brand",
+      "rule": "The supplied roundel artwork keeps its own colours and is not recoloured.",
+      "source": "brand_identity.palette_rules.forbidden; type_system.rules[4]",
+      "cells": {
+        "vehicle-card-r002": {
+          "checks": [
+            "PHOTO-08/vehicle-card-r002/H080"
+          ]
+        },
+        "vehicle-card-r003": {
+          "checks": [
+            "PHOTO-08/vehicle-card-r003/H079"
+          ]
+        },
+        "vehicle-card-r004": {
+          "checks": [
+            "PHOTO-08/vehicle-card-r004/H078"
+          ]
+        },
+        "vehicle-card-r005": {
+          "checks": [
+            "PHOTO-08/vehicle-card-r005/H079"
+          ]
+        },
+        "vehicle-card-r006": {
+          "checks": [
+            "PHOTO-08/vehicle-card-r006/H079"
+          ]
+        },
+        "vehicle-card-r007": {
+          "checks": [
+            "PHOTO-08/vehicle-card-r007/H079"
+          ]
+        },
+        "inventory-campaign": {
+          "checks": [
+            "PHOTO-08/inventory-campaign/H128"
+          ]
+        }
+      }
+    },
+    {
+      "rule_id": "B03a",
+      "kind": "brand",
+      "rule": "Showroom White is the ground behind all type, apart from a Meridian Navy band, panel or seal carrying reversed type.",
+      "source": "brand_identity.palette_rules.distribution; palette[Showroom White].usage",
+      "cells": {
+        "vehicle-card-r002": {
+          "checks": [
+            "PHOTO-08/vehicle-card-r002/H035",
+            "PHOTO-08/vehicle-card-r002/H075"
+          ]
+        },
+        "vehicle-card-r003": {
+          "checks": [
+            "PHOTO-08/vehicle-card-r003/H034",
+            "PHOTO-08/vehicle-card-r003/H074"
+          ]
+        },
+        "vehicle-card-r004": {
+          "checks": [
+            "PHOTO-08/vehicle-card-r004/H033",
+            "PHOTO-08/vehicle-card-r004/H073"
+          ]
+        },
+        "vehicle-card-r005": {
+          "checks": [
+            "PHOTO-08/vehicle-card-r005/H034",
+            "PHOTO-08/vehicle-card-r005/H074"
+          ]
+        },
+        "vehicle-card-r006": {
+          "checks": [
+            "PHOTO-08/vehicle-card-r006/H034",
+            "PHOTO-08/vehicle-card-r006/H074"
+          ]
+        },
+        "vehicle-card-r007": {
+          "checks": [
+            "PHOTO-08/vehicle-card-r007/H033",
+            "PHOTO-08/vehicle-card-r007/H074"
+          ]
+        },
+        "inventory-campaign": {
+          "checks": [
+            "PHOTO-08/inventory-campaign/H081",
+            "PHOTO-08/inventory-campaign/H125"
+          ]
+        }
+      }
+    },
+    {
+      "rule_id": "B03b",
+      "kind": "brand",
+      "rule": "Meridian Navy is the only ground other than Showroom White, so no ground, band or panel is Graphite, Compass Teal or Steel Grey.",
+      "source": "brand_identity.palette_rules.distribution; palette[Meridian Navy, Graphite, Compass Teal, Steel Grey].usage",
+      "cells": {
+        "vehicle-card-r002": {
+          "checks": [
+            "PHOTO-08/vehicle-card-r002/H075"
+          ]
+        },
+        "vehicle-card-r003": {
+          "checks": [
+            "PHOTO-08/vehicle-card-r003/H074"
+          ]
+        },
+        "vehicle-card-r004": {
+          "checks": [
+            "PHOTO-08/vehicle-card-r004/H073"
+          ]
+        },
+        "vehicle-card-r005": {
+          "checks": [
+            "PHOTO-08/vehicle-card-r005/H074"
+          ]
+        },
+        "vehicle-card-r006": {
+          "checks": [
+            "PHOTO-08/vehicle-card-r006/H074"
+          ]
+        },
+        "vehicle-card-r007": {
+          "checks": [
+            "PHOTO-08/vehicle-card-r007/H074"
+          ]
+        },
+        "inventory-campaign": {
+          "checks": [
+            "PHOTO-08/inventory-campaign/H125"
           ]
         }
       }
@@ -933,37 +1207,43 @@
         "vehicle-card-r002": {
           "checks": [
             "PHOTO-08/vehicle-card-r002/H067",
-            "PHOTO-08/vehicle-card-r002/H071"
+            "PHOTO-08/vehicle-card-r002/H071",
+            "PHOTO-08/vehicle-card-r002/H076"
           ]
         },
         "vehicle-card-r003": {
           "checks": [
             "PHOTO-08/vehicle-card-r003/H066",
-            "PHOTO-08/vehicle-card-r003/H070"
+            "PHOTO-08/vehicle-card-r003/H070",
+            "PHOTO-08/vehicle-card-r003/H075"
           ]
         },
         "vehicle-card-r004": {
           "checks": [
             "PHOTO-08/vehicle-card-r004/H065",
-            "PHOTO-08/vehicle-card-r004/H069"
+            "PHOTO-08/vehicle-card-r004/H069",
+            "PHOTO-08/vehicle-card-r004/H074"
           ]
         },
         "vehicle-card-r005": {
           "checks": [
             "PHOTO-08/vehicle-card-r005/H066",
-            "PHOTO-08/vehicle-card-r005/H070"
+            "PHOTO-08/vehicle-card-r005/H070",
+            "PHOTO-08/vehicle-card-r005/H075"
           ]
         },
         "vehicle-card-r006": {
           "checks": [
             "PHOTO-08/vehicle-card-r006/H066",
-            "PHOTO-08/vehicle-card-r006/H070"
+            "PHOTO-08/vehicle-card-r006/H070",
+            "PHOTO-08/vehicle-card-r006/H075"
           ]
         },
         "vehicle-card-r007": {
           "checks": [
             "PHOTO-08/vehicle-card-r007/H065",
-            "PHOTO-08/vehicle-card-r007/H069"
+            "PHOTO-08/vehicle-card-r007/H069",
+            "PHOTO-08/vehicle-card-r007/H075"
           ]
         },
         "inventory-campaign": {
@@ -1072,7 +1352,7 @@
     {
       "rule_id": "B10",
       "kind": "brand",
-      "rule": "Compass Teal is for the price rule, other hairline rules and seal compass needles only; never a ground or a type colour.",
+      "rule": "Compass Teal appears only as the price rule, other hairline rules and seal compass needles, never as a ground or a type colour.",
       "source": "brand_identity.palette[Compass Teal].usage; palette_rules.distribution",
       "cells": {
         "vehicle-card-r002": {
@@ -1115,7 +1395,7 @@
     {
       "rule_id": "B10b",
       "kind": "brand",
-      "rule": "Steel Grey is for keylines, box rules, the photo-well border, one small muted line and small seal lettering only; never a ground.",
+      "rule": "Steel Grey appears only as keylines, box rules, the photo-well border, one small muted line and small seal lettering, never as a ground.",
       "source": "brand_identity.palette[Steel Grey].usage; palette_rules.distribution",
       "cells": {
         "vehicle-card-r002": {
@@ -1292,116 +1572,380 @@
       }
     },
     {
-      "rule_id": "B13",
+      "rule_id": "B13a",
       "kind": "brand",
-      "rule": "Photographs keep their own corrected colour and are never recoloured toward the palette. The three bays' casts (warm apron, yellow-orange wash bay, dim cool-green back row) are corrected to one even, neutral showroom white, but each car keeps its true paint: the Ardmoor Ridge stays deep red and does not swing orange, the black Brookmere Sable keeps its shadow-side detail, and the pale rooflines of the white Norsted Alta and the silver Calder Kestrel are not clipped into the background.",
+      "rule": "Photographs keep their own corrected colour and are never recoloured toward the palette.",
       "source": "brand_identity.palette_rules.photography",
       "cells": {
         "vehicle-card-r002": {
           "checks": [
-            "PHOTO-08/vehicle-card-r002/H019",
-            "PHOTO-08/vehicle-card-r002/H020",
             "PHOTO-08/vehicle-card-r002/H073"
           ]
         },
         "vehicle-card-r003": {
           "checks": [
-            "PHOTO-08/vehicle-card-r003/H017",
-            "PHOTO-08/vehicle-card-r003/H018",
             "PHOTO-08/vehicle-card-r003/H072"
           ]
         },
         "vehicle-card-r004": {
           "checks": [
-            "PHOTO-08/vehicle-card-r004/H016",
             "PHOTO-08/vehicle-card-r004/H071"
           ]
         },
         "vehicle-card-r005": {
           "checks": [
-            "PHOTO-08/vehicle-card-r005/H016",
-            "PHOTO-08/vehicle-card-r005/H017",
             "PHOTO-08/vehicle-card-r005/H072"
           ]
         },
         "vehicle-card-r006": {
           "checks": [
-            "PHOTO-08/vehicle-card-r006/H016",
-            "PHOTO-08/vehicle-card-r006/H017",
             "PHOTO-08/vehicle-card-r006/H072"
           ]
         },
         "vehicle-card-r007": {
           "checks": [
-            "PHOTO-08/vehicle-card-r007/H016",
-            "PHOTO-08/vehicle-card-r007/H073",
             "PHOTO-08/vehicle-card-r007/H071"
           ]
         },
         "inventory-campaign": {
           "checks": [
-            "PHOTO-08/inventory-campaign/H014",
-            "PHOTO-08/inventory-campaign/H015",
-            "PHOTO-08/inventory-campaign/H024",
-            "PHOTO-08/inventory-campaign/H025",
-            "PHOTO-08/inventory-campaign/H034",
-            "PHOTO-08/inventory-campaign/H043",
-            "PHOTO-08/inventory-campaign/H044",
-            "PHOTO-08/inventory-campaign/H053",
-            "PHOTO-08/inventory-campaign/H054",
-            "PHOTO-08/inventory-campaign/H063",
-            "PHOTO-08/inventory-campaign/H116",
             "PHOTO-08/inventory-campaign/H114"
           ]
         }
       }
     },
     {
-      "rule_id": "B14",
+      "rule_id": "B13b",
       "kind": "brand",
-      "rule": "Use only meridian_roundel_transparent.svg, meridian_roundel_reversed.svg, meridian_roundel_transparent.png or meridian_roundel_reversed.png, placed unchanged; meridian_roundel.png is not the production file.",
-      "source": "brand_identity.brand_assets_status; client_brief \"Supplied identity artwork\"; type_system.rules[4]",
+      "rule": "The three bays' casts (warm apron, yellow-orange wash bay, dim cool-green back row) are corrected to one even, neutral showroom white.",
+      "source": "brand_identity.palette_rules.photography",
       "cells": {
         "vehicle-card-r002": {
           "checks": [
-            "PHOTO-08/vehicle-card-r002/H031",
-            "PHOTO-08/vehicle-card-r002/H060"
+            "PHOTO-08/vehicle-card-r002/H020"
           ]
         },
         "vehicle-card-r003": {
           "checks": [
-            "PHOTO-08/vehicle-card-r003/H029",
-            "PHOTO-08/vehicle-card-r003/H059"
+            "PHOTO-08/vehicle-card-r003/H018"
           ]
         },
         "vehicle-card-r004": {
           "checks": [
-            "PHOTO-08/vehicle-card-r004/H028",
-            "PHOTO-08/vehicle-card-r004/H058"
+            "PHOTO-08/vehicle-card-r004/H016"
           ]
         },
         "vehicle-card-r005": {
           "checks": [
-            "PHOTO-08/vehicle-card-r005/H029",
-            "PHOTO-08/vehicle-card-r005/H059"
+            "PHOTO-08/vehicle-card-r005/H017"
           ]
         },
         "vehicle-card-r006": {
           "checks": [
-            "PHOTO-08/vehicle-card-r006/H029",
-            "PHOTO-08/vehicle-card-r006/H059"
+            "PHOTO-08/vehicle-card-r006/H017"
           ]
         },
         "vehicle-card-r007": {
           "checks": [
-            "PHOTO-08/vehicle-card-r007/H028",
-            "PHOTO-08/vehicle-card-r007/H058"
+            "PHOTO-08/vehicle-card-r007/H016",
+            "PHOTO-08/vehicle-card-r007/H073"
           ]
         },
         "inventory-campaign": {
           "checks": [
-            "PHOTO-08/inventory-campaign/H003",
-            "PHOTO-08/inventory-campaign/H100"
+            "PHOTO-08/inventory-campaign/H014",
+            "PHOTO-08/inventory-campaign/H024",
+            "PHOTO-08/inventory-campaign/H034",
+            "PHOTO-08/inventory-campaign/H043",
+            "PHOTO-08/inventory-campaign/H053",
+            "PHOTO-08/inventory-campaign/H063",
+            "PHOTO-08/inventory-campaign/H116"
+          ]
+        }
+      }
+    },
+    {
+      "rule_id": "B13c",
+      "kind": "brand",
+      "rule": "Each car keeps its true paint colour through the correction.",
+      "source": "brand_identity.palette_rules.photography",
+      "cells": {
+        "vehicle-card-r002": {
+          "checks": [
+            "PHOTO-08/vehicle-card-r002/H020"
+          ]
+        },
+        "vehicle-card-r003": {
+          "checks": [
+            "PHOTO-08/vehicle-card-r003/H017"
+          ]
+        },
+        "vehicle-card-r004": {
+          "checks": [
+            "PHOTO-08/vehicle-card-r004/H016"
+          ]
+        },
+        "vehicle-card-r005": {
+          "checks": [
+            "PHOTO-08/vehicle-card-r005/H017"
+          ]
+        },
+        "vehicle-card-r006": {
+          "checks": [
+            "PHOTO-08/vehicle-card-r006/H017"
+          ]
+        },
+        "vehicle-card-r007": {
+          "checks": [
+            "PHOTO-08/vehicle-card-r007/H016"
+          ]
+        },
+        "inventory-campaign": {
+          "checks": [
+            "PHOTO-08/inventory-campaign/H014",
+            "PHOTO-08/inventory-campaign/H025",
+            "PHOTO-08/inventory-campaign/H034",
+            "PHOTO-08/inventory-campaign/H043",
+            "PHOTO-08/inventory-campaign/H053",
+            "PHOTO-08/inventory-campaign/H063"
+          ]
+        }
+      }
+    },
+    {
+      "rule_id": "B13d",
+      "kind": "brand",
+      "rule": "The Ardmoor Ridge stays deep red and does not swing orange.",
+      "source": "brand_identity.palette_rules.photography",
+      "cells": {
+        "vehicle-card-r002": {
+          "na": "This card shows the Norsted Alta, not the Ardmoor Ridge this rule names."
+        },
+        "vehicle-card-r003": {
+          "checks": [
+            "PHOTO-08/vehicle-card-r003/H017"
+          ]
+        },
+        "vehicle-card-r004": {
+          "na": "This card shows the Calder Vireo, not the Ardmoor Ridge this rule names."
+        },
+        "vehicle-card-r005": {
+          "na": "This card shows the Brookmere Sable, not the Ardmoor Ridge this rule names."
+        },
+        "vehicle-card-r006": {
+          "na": "This card shows the Calder Kestrel, not the Ardmoor Ridge this rule names."
+        },
+        "vehicle-card-r007": {
+          "na": "This card shows the Norsted Fjord, not the Ardmoor Ridge this rule names."
+        },
+        "inventory-campaign": {
+          "checks": [
+            "PHOTO-08/inventory-campaign/H025"
+          ]
+        }
+      }
+    },
+    {
+      "rule_id": "B13e",
+      "kind": "brand",
+      "rule": "The black Brookmere Sable keeps its shadow-side detail.",
+      "source": "brand_identity.palette_rules.photography",
+      "cells": {
+        "vehicle-card-r002": {
+          "na": "This card shows the Norsted Alta, not the Brookmere Sable this rule names."
+        },
+        "vehicle-card-r003": {
+          "na": "This card shows the Ardmoor Ridge, not the Brookmere Sable this rule names."
+        },
+        "vehicle-card-r004": {
+          "na": "This card shows the Calder Vireo, not the Brookmere Sable this rule names."
+        },
+        "vehicle-card-r005": {
+          "checks": [
+            "PHOTO-08/vehicle-card-r005/H016"
+          ]
+        },
+        "vehicle-card-r006": {
+          "na": "This card shows the Calder Kestrel, not the Brookmere Sable this rule names."
+        },
+        "vehicle-card-r007": {
+          "na": "This card shows the Norsted Fjord, not the Brookmere Sable this rule names."
+        },
+        "inventory-campaign": {
+          "checks": [
+            "PHOTO-08/inventory-campaign/H044"
+          ]
+        }
+      }
+    },
+    {
+      "rule_id": "B13f",
+      "kind": "brand",
+      "rule": "The pale rooflines of the white Norsted Alta and the silver Calder Kestrel are not clipped into the background.",
+      "source": "brand_identity.palette_rules.photography",
+      "cells": {
+        "vehicle-card-r002": {
+          "checks": [
+            "PHOTO-08/vehicle-card-r002/H019"
+          ]
+        },
+        "vehicle-card-r003": {
+          "na": "This card shows the Ardmoor Ridge, not the white Norsted Alta or silver Calder Kestrel this rule names."
+        },
+        "vehicle-card-r004": {
+          "na": "This card shows the Calder Vireo, not the white Norsted Alta or silver Calder Kestrel this rule names."
+        },
+        "vehicle-card-r005": {
+          "na": "This card shows the Brookmere Sable, not the white Norsted Alta or silver Calder Kestrel this rule names."
+        },
+        "vehicle-card-r006": {
+          "checks": [
+            "PHOTO-08/vehicle-card-r006/H016"
+          ]
+        },
+        "vehicle-card-r007": {
+          "na": "This card shows the Norsted Fjord, not the white Norsted Alta or silver Calder Kestrel this rule names."
+        },
+        "inventory-campaign": {
+          "checks": [
+            "PHOTO-08/inventory-campaign/H015",
+            "PHOTO-08/inventory-campaign/H054"
+          ]
+        }
+      }
+    },
+    {
+      "rule_id": "B14a",
+      "kind": "brand",
+      "rule": "Any roundel is one of the four supplied production files, never the older meridian_roundel.png.",
+      "source": "brand_identity.brand_assets_status; client_brief \"Supplied identity artwork\"",
+      "cells": {
+        "vehicle-card-r002": {
+          "checks": [
+            "PHOTO-08/vehicle-card-r002/H031"
+          ]
+        },
+        "vehicle-card-r003": {
+          "checks": [
+            "PHOTO-08/vehicle-card-r003/H029"
+          ]
+        },
+        "vehicle-card-r004": {
+          "checks": [
+            "PHOTO-08/vehicle-card-r004/H028"
+          ]
+        },
+        "vehicle-card-r005": {
+          "checks": [
+            "PHOTO-08/vehicle-card-r005/H029"
+          ]
+        },
+        "vehicle-card-r006": {
+          "checks": [
+            "PHOTO-08/vehicle-card-r006/H029"
+          ]
+        },
+        "vehicle-card-r007": {
+          "checks": [
+            "PHOTO-08/vehicle-card-r007/H028"
+          ]
+        },
+        "inventory-campaign": {
+          "checks": [
+            "PHOTO-08/inventory-campaign/H003"
+          ]
+        }
+      }
+    },
+    {
+      "rule_id": "B14b",
+      "kind": "brand",
+      "rule": "The roundel artwork is placed unchanged, not stretched, squashed, retyped or redrawn.",
+      "source": "client_brief \"What stays fixed\"; type_system.rules[4]; type_system.scale[02].note",
+      "cells": {
+        "vehicle-card-r002": {
+          "checks": [
+            "PHOTO-08/vehicle-card-r002/H060",
+            "PHOTO-08/vehicle-card-r002/H031"
+          ]
+        },
+        "vehicle-card-r003": {
+          "checks": [
+            "PHOTO-08/vehicle-card-r003/H059",
+            "PHOTO-08/vehicle-card-r003/H029"
+          ]
+        },
+        "vehicle-card-r004": {
+          "checks": [
+            "PHOTO-08/vehicle-card-r004/H058",
+            "PHOTO-08/vehicle-card-r004/H028"
+          ]
+        },
+        "vehicle-card-r005": {
+          "checks": [
+            "PHOTO-08/vehicle-card-r005/H059",
+            "PHOTO-08/vehicle-card-r005/H029"
+          ]
+        },
+        "vehicle-card-r006": {
+          "checks": [
+            "PHOTO-08/vehicle-card-r006/H059",
+            "PHOTO-08/vehicle-card-r006/H029"
+          ]
+        },
+        "vehicle-card-r007": {
+          "checks": [
+            "PHOTO-08/vehicle-card-r007/H058",
+            "PHOTO-08/vehicle-card-r007/H028"
+          ]
+        },
+        "inventory-campaign": {
+          "checks": [
+            "PHOTO-08/inventory-campaign/H100",
+            "PHOTO-08/inventory-campaign/H003"
+          ]
+        }
+      }
+    },
+    {
+      "rule_id": "B14c",
+      "kind": "brand",
+      "rule": "A roundel on a Meridian Navy ground is the reversed artwork (meridian_roundel_reversed.svg or meridian_roundel_reversed.png).",
+      "source": "brand_identity.palette[Meridian Navy].usage",
+      "cells": {
+        "vehicle-card-r002": {
+          "checks": [
+            "PHOTO-08/vehicle-card-r002/H081"
+          ]
+        },
+        "vehicle-card-r003": {
+          "checks": [
+            "PHOTO-08/vehicle-card-r003/H080"
+          ]
+        },
+        "vehicle-card-r004": {
+          "checks": [
+            "PHOTO-08/vehicle-card-r004/H079"
+          ]
+        },
+        "vehicle-card-r005": {
+          "checks": [
+            "PHOTO-08/vehicle-card-r005/H080"
+          ]
+        },
+        "vehicle-card-r006": {
+          "checks": [
+            "PHOTO-08/vehicle-card-r006/H080"
+          ]
+        },
+        "vehicle-card-r007": {
+          "checks": [
+            "PHOTO-08/vehicle-card-r007/H080"
+          ]
+        },
+        "inventory-campaign": {
+          "checks": [
+            "PHOTO-08/inventory-campaign/H129"
           ]
         }
       }
@@ -1493,311 +2037,140 @@
       }
     },
     {
-      "rule_id": "T01",
+      "rule_id": "T01a",
       "kind": "type",
-      "rule": "Display / H1: the price in Source Serif 4 Bold, the ceiling of the scale.",
+      "rule": "Display / H1 font: the price is set in Source Serif 4 Bold.",
+      "source": "type_system.scale[01]; type_system.rules[1]",
+      "cells": {
+        "vehicle-card-r002": {
+          "checks": [
+            "PHOTO-08/vehicle-card-r002/H024"
+          ]
+        },
+        "vehicle-card-r003": {
+          "checks": [
+            "PHOTO-08/vehicle-card-r003/H022"
+          ]
+        },
+        "vehicle-card-r004": {
+          "checks": [
+            "PHOTO-08/vehicle-card-r004/H021"
+          ]
+        },
+        "vehicle-card-r005": {
+          "checks": [
+            "PHOTO-08/vehicle-card-r005/H022"
+          ]
+        },
+        "vehicle-card-r006": {
+          "checks": [
+            "PHOTO-08/vehicle-card-r006/H022"
+          ]
+        },
+        "vehicle-card-r007": {
+          "checks": [
+            "PHOTO-08/vehicle-card-r007/H021"
+          ]
+        },
+        "inventory-campaign": {
+          "checks": [
+            "PHOTO-08/inventory-campaign/H084"
+          ]
+        }
+      }
+    },
+    {
+      "rule_id": "T01b",
+      "kind": "type",
+      "rule": "Display / H1 size: the price is 68 px, smaller only to fit, never larger.",
+      "source": "type_system.scale[01]; type_system.rules[1]",
+      "cells": {
+        "vehicle-card-r002": {
+          "not_verified": "Exact type size cannot be measured reliably in a delivered PNG; 68 px is kept as a design target and only the size order is checked."
+        },
+        "vehicle-card-r003": {
+          "not_verified": "Exact type size cannot be measured reliably in a delivered PNG; 68 px is kept as a design target and only the size order is checked."
+        },
+        "vehicle-card-r004": {
+          "not_verified": "Exact type size cannot be measured reliably in a delivered PNG; 68 px is kept as a design target and only the size order is checked."
+        },
+        "vehicle-card-r005": {
+          "not_verified": "Exact type size cannot be measured reliably in a delivered PNG; 68 px is kept as a design target and only the size order is checked."
+        },
+        "vehicle-card-r006": {
+          "not_verified": "Exact type size cannot be measured reliably in a delivered PNG; 68 px is kept as a design target and only the size order is checked."
+        },
+        "vehicle-card-r007": {
+          "not_verified": "Exact type size cannot be measured reliably in a delivered PNG; 68 px is kept as a design target and only the size order is checked."
+        },
+        "inventory-campaign": {
+          "not_verified": "Applies if a price appears. Exact type size cannot be measured reliably in a delivered PNG; 68 px is kept as a design target and only the size order is checked."
+        }
+      }
+    },
+    {
+      "rule_id": "T01c",
+      "kind": "type",
+      "rule": "Display / H1 leading: 72 pixels from baseline to baseline.",
       "source": "type_system.scale[01]",
       "cells": {
         "vehicle-card-r002": {
-          "checks": [
-            "PHOTO-08/vehicle-card-r002/H024",
-            "PHOTO-08/vehicle-card-r002/H013"
-          ]
+          "na": "The price is a single line, and the brief states leading applies only to multiline text."
         },
         "vehicle-card-r003": {
-          "checks": [
-            "PHOTO-08/vehicle-card-r003/H022",
-            "PHOTO-08/vehicle-card-r003/H021"
-          ]
+          "na": "The price is a single line, and the brief states leading applies only to multiline text."
         },
         "vehicle-card-r004": {
-          "checks": [
-            "PHOTO-08/vehicle-card-r004/H021",
-            "PHOTO-08/vehicle-card-r004/H019"
-          ]
+          "na": "The price is a single line, and the brief states leading applies only to multiline text."
         },
         "vehicle-card-r005": {
-          "checks": [
-            "PHOTO-08/vehicle-card-r005/H022",
-            "PHOTO-08/vehicle-card-r005/H020"
-          ]
+          "na": "The price is a single line, and the brief states leading applies only to multiline text."
         },
         "vehicle-card-r006": {
-          "checks": [
-            "PHOTO-08/vehicle-card-r006/H022",
-            "PHOTO-08/vehicle-card-r006/H020"
-          ]
+          "na": "The price is a single line, and the brief states leading applies only to multiline text."
         },
         "vehicle-card-r007": {
-          "checks": [
-            "PHOTO-08/vehicle-card-r007/H021",
-            "PHOTO-08/vehicle-card-r007/H019"
-          ]
+          "na": "The price is a single line, and the brief states leading applies only to multiline text."
         },
         "inventory-campaign": {
-          "checks": [
-            "PHOTO-08/inventory-campaign/H084",
-            "PHOTO-08/inventory-campaign/H105"
-          ]
+          "na": "The price is a single line, and the brief states leading applies only to multiline text."
         }
       }
     },
     {
-      "rule_id": "T02",
+      "rule_id": "T01d",
       "kind": "type",
-      "rule": "Subheading / H2: year, make and model in Source Serif 4 Bold.",
-      "source": "type_system.scale[02]",
+      "rule": "Display / H1 tracking: minus 10 thousandths of an em.",
+      "source": "type_system.scale[01]; type_system.rules[1]",
       "cells": {
         "vehicle-card-r002": {
-          "checks": [
-            "PHOTO-08/vehicle-card-r002/H042",
-            "PHOTO-08/vehicle-card-r002/H059"
-          ]
+          "not_verified": "Tracking in thousandths of an em cannot be measured reliably in a delivered PNG; minus 10 is kept as a design target."
         },
         "vehicle-card-r003": {
-          "checks": [
-            "PHOTO-08/vehicle-card-r003/H041",
-            "PHOTO-08/vehicle-card-r003/H058"
-          ]
+          "not_verified": "Tracking in thousandths of an em cannot be measured reliably in a delivered PNG; minus 10 is kept as a design target."
         },
         "vehicle-card-r004": {
-          "checks": [
-            "PHOTO-08/vehicle-card-r004/H040",
-            "PHOTO-08/vehicle-card-r004/H057"
-          ]
+          "not_verified": "Tracking in thousandths of an em cannot be measured reliably in a delivered PNG; minus 10 is kept as a design target."
         },
         "vehicle-card-r005": {
-          "checks": [
-            "PHOTO-08/vehicle-card-r005/H041",
-            "PHOTO-08/vehicle-card-r005/H058"
-          ]
+          "not_verified": "Tracking in thousandths of an em cannot be measured reliably in a delivered PNG; minus 10 is kept as a design target."
         },
         "vehicle-card-r006": {
-          "checks": [
-            "PHOTO-08/vehicle-card-r006/H041",
-            "PHOTO-08/vehicle-card-r006/H058"
-          ]
+          "not_verified": "Tracking in thousandths of an em cannot be measured reliably in a delivered PNG; minus 10 is kept as a design target."
         },
         "vehicle-card-r007": {
-          "checks": [
-            "PHOTO-08/vehicle-card-r007/H040",
-            "PHOTO-08/vehicle-card-r007/H057"
-          ]
+          "not_verified": "Tracking in thousandths of an em cannot be measured reliably in a delivered PNG; minus 10 is kept as a design target."
         },
         "inventory-campaign": {
-          "checks": [
-            "PHOTO-08/inventory-campaign/H088",
-            "PHOTO-08/inventory-campaign/H108"
-          ]
+          "not_verified": "Applies if a price appears. Tracking in thousandths of an em cannot be measured reliably in a delivered PNG; minus 10 is kept as a design target."
         }
       }
     },
     {
-      "rule_id": "T03",
+      "rule_id": "T01e",
       "kind": "type",
-      "rule": "Body: mileage and listing detail in Source Sans 3 Regular, max 65 characters a line.",
-      "source": "type_system.scale[03]",
-      "cells": {
-        "vehicle-card-r002": {
-          "checks": [
-            "PHOTO-08/vehicle-card-r002/H027",
-            "PHOTO-08/vehicle-card-r002/H028"
-          ]
-        },
-        "vehicle-card-r003": {
-          "checks": [
-            "PHOTO-08/vehicle-card-r003/H025",
-            "PHOTO-08/vehicle-card-r003/H026"
-          ]
-        },
-        "vehicle-card-r004": {
-          "checks": [
-            "PHOTO-08/vehicle-card-r004/H024",
-            "PHOTO-08/vehicle-card-r004/H025"
-          ]
-        },
-        "vehicle-card-r005": {
-          "checks": [
-            "PHOTO-08/vehicle-card-r005/H025",
-            "PHOTO-08/vehicle-card-r005/H026"
-          ]
-        },
-        "vehicle-card-r006": {
-          "checks": [
-            "PHOTO-08/vehicle-card-r006/H025",
-            "PHOTO-08/vehicle-card-r006/H026"
-          ]
-        },
-        "vehicle-card-r007": {
-          "checks": [
-            "PHOTO-08/vehicle-card-r007/H024",
-            "PHOTO-08/vehicle-card-r007/H025"
-          ]
-        },
-        "inventory-campaign": {
-          "checks": [
-            "PHOTO-08/inventory-campaign/H074",
-            "PHOTO-08/inventory-campaign/H075"
-          ]
-        }
-      }
-    },
-    {
-      "rule_id": "T04",
-      "kind": "type",
-      "rule": "Fine print: disclosure in Source Sans 3 Regular, smaller than body.",
-      "source": "type_system.scale[04]",
-      "cells": {
-        "vehicle-card-r002": {
-          "checks": [
-            "PHOTO-08/vehicle-card-r002/H050",
-            "PHOTO-08/vehicle-card-r002/H058"
-          ]
-        },
-        "vehicle-card-r003": {
-          "checks": [
-            "PHOTO-08/vehicle-card-r003/H049",
-            "PHOTO-08/vehicle-card-r003/H057"
-          ]
-        },
-        "vehicle-card-r004": {
-          "checks": [
-            "PHOTO-08/vehicle-card-r004/H048",
-            "PHOTO-08/vehicle-card-r004/H056"
-          ]
-        },
-        "vehicle-card-r005": {
-          "checks": [
-            "PHOTO-08/vehicle-card-r005/H049",
-            "PHOTO-08/vehicle-card-r005/H057"
-          ]
-        },
-        "vehicle-card-r006": {
-          "checks": [
-            "PHOTO-08/vehicle-card-r006/H049",
-            "PHOTO-08/vehicle-card-r006/H057"
-          ]
-        },
-        "vehicle-card-r007": {
-          "checks": [
-            "PHOTO-08/vehicle-card-r007/H048",
-            "PHOTO-08/vehicle-card-r007/H056"
-          ]
-        },
-        "inventory-campaign": {
-          "checks": [
-            "PHOTO-08/inventory-campaign/H096",
-            "PHOTO-08/inventory-campaign/H106",
-            "PHOTO-08/inventory-campaign/H107"
-          ]
-        }
-      }
-    },
-    {
-      "rule_id": "T05",
-      "kind": "type",
-      "rule": "Signature move: the dollar sign at sixty percent of numeral height, raised to the figure tops.",
-      "source": "type_system.signature_move; rules[2]",
-      "cells": {
-        "vehicle-card-r002": {
-          "checks": [
-            "PHOTO-08/vehicle-card-r002/H056",
-            "PHOTO-08/vehicle-card-r002/H057"
-          ]
-        },
-        "vehicle-card-r003": {
-          "checks": [
-            "PHOTO-08/vehicle-card-r003/H055",
-            "PHOTO-08/vehicle-card-r003/H056"
-          ]
-        },
-        "vehicle-card-r004": {
-          "checks": [
-            "PHOTO-08/vehicle-card-r004/H054",
-            "PHOTO-08/vehicle-card-r004/H055"
-          ]
-        },
-        "vehicle-card-r005": {
-          "checks": [
-            "PHOTO-08/vehicle-card-r005/H055",
-            "PHOTO-08/vehicle-card-r005/H056"
-          ]
-        },
-        "vehicle-card-r006": {
-          "checks": [
-            "PHOTO-08/vehicle-card-r006/H055",
-            "PHOTO-08/vehicle-card-r006/H056"
-          ]
-        },
-        "vehicle-card-r007": {
-          "checks": [
-            "PHOTO-08/vehicle-card-r007/H054",
-            "PHOTO-08/vehicle-card-r007/H055"
-          ]
-        },
-        "inventory-campaign": {
-          "checks": [
-            "PHOTO-08/inventory-campaign/H103",
-            "PHOTO-08/inventory-campaign/H104"
-          ]
-        }
-      }
-    },
-    {
-      "rule_id": "T06",
-      "kind": "type",
-      "rule": "A 1 pt Compass Teal rule sits below the price across the full vehicle-card width, or across that vehicle's panel in the campaign.",
-      "source": "type_system.rules[3]",
-      "cells": {
-        "vehicle-card-r002": {
-          "checks": [
-            "PHOTO-08/vehicle-card-r002/H025",
-            "PHOTO-08/vehicle-card-r002/H055"
-          ]
-        },
-        "vehicle-card-r003": {
-          "checks": [
-            "PHOTO-08/vehicle-card-r003/H023",
-            "PHOTO-08/vehicle-card-r003/H054"
-          ]
-        },
-        "vehicle-card-r004": {
-          "checks": [
-            "PHOTO-08/vehicle-card-r004/H022",
-            "PHOTO-08/vehicle-card-r004/H053"
-          ]
-        },
-        "vehicle-card-r005": {
-          "checks": [
-            "PHOTO-08/vehicle-card-r005/H023",
-            "PHOTO-08/vehicle-card-r005/H054"
-          ]
-        },
-        "vehicle-card-r006": {
-          "checks": [
-            "PHOTO-08/vehicle-card-r006/H023",
-            "PHOTO-08/vehicle-card-r006/H054"
-          ]
-        },
-        "vehicle-card-r007": {
-          "checks": [
-            "PHOTO-08/vehicle-card-r007/H022",
-            "PHOTO-08/vehicle-card-r007/H053"
-          ]
-        },
-        "inventory-campaign": {
-          "checks": [
-            "PHOTO-08/inventory-campaign/H072",
-            "PHOTO-08/inventory-campaign/H102"
-          ]
-        }
-      }
-    },
-    {
-      "rule_id": "T07",
-      "kind": "type",
-      "rule": "The price keeps tabular lining figures.",
-      "source": "type_system.rules[1]",
+      "rule": "The price uses lining figures.",
+      "source": "type_system.scale[01]; type_system.rules[1]",
       "cells": {
         "vehicle-card-r002": {
           "checks": [
@@ -1837,9 +2210,866 @@
       }
     },
     {
-      "rule_id": "T08",
+      "rule_id": "T01f",
       "kind": "type",
-      "rule": "A separately typeset Meridian Motors label beside the supplied roundel uses Source Serif 4 Bold.",
+      "rule": "The price uses tabular (equal-width) figures.",
+      "source": "type_system.scale[01]; type_system.rules[1]",
+      "cells": {
+        "vehicle-card-r002": {
+          "not_verified": "Tabular versus proportional figure widths cannot be told apart reliably by eye in one price on a delivered PNG; tabular figures are kept as a design target."
+        },
+        "vehicle-card-r003": {
+          "not_verified": "Tabular versus proportional figure widths cannot be told apart reliably by eye in one price on a delivered PNG; tabular figures are kept as a design target."
+        },
+        "vehicle-card-r004": {
+          "not_verified": "Tabular versus proportional figure widths cannot be told apart reliably by eye in one price on a delivered PNG; tabular figures are kept as a design target."
+        },
+        "vehicle-card-r005": {
+          "not_verified": "Tabular versus proportional figure widths cannot be told apart reliably by eye in one price on a delivered PNG; tabular figures are kept as a design target."
+        },
+        "vehicle-card-r006": {
+          "not_verified": "Tabular versus proportional figure widths cannot be told apart reliably by eye in one price on a delivered PNG; tabular figures are kept as a design target."
+        },
+        "vehicle-card-r007": {
+          "not_verified": "Tabular versus proportional figure widths cannot be told apart reliably by eye in one price on a delivered PNG; tabular figures are kept as a design target."
+        },
+        "inventory-campaign": {
+          "not_verified": "Applies if a price appears. Tabular versus proportional figure widths cannot be told apart reliably by eye in one price on a delivered PNG; tabular figures are kept as a design target."
+        }
+      }
+    },
+    {
+      "rule_id": "T01g",
+      "kind": "type",
+      "rule": "Scale order: the price (Display / H1) is larger than the year, make and model (Subheading / H2).",
+      "source": "type_system.scale[01] note (the price is the ceiling of the scale)",
+      "cells": {
+        "vehicle-card-r002": {
+          "checks": [
+            "PHOTO-08/vehicle-card-r002/H013"
+          ]
+        },
+        "vehicle-card-r003": {
+          "checks": [
+            "PHOTO-08/vehicle-card-r003/H021"
+          ]
+        },
+        "vehicle-card-r004": {
+          "checks": [
+            "PHOTO-08/vehicle-card-r004/H019"
+          ]
+        },
+        "vehicle-card-r005": {
+          "checks": [
+            "PHOTO-08/vehicle-card-r005/H020"
+          ]
+        },
+        "vehicle-card-r006": {
+          "checks": [
+            "PHOTO-08/vehicle-card-r006/H020"
+          ]
+        },
+        "vehicle-card-r007": {
+          "checks": [
+            "PHOTO-08/vehicle-card-r007/H019"
+          ]
+        },
+        "inventory-campaign": {
+          "checks": [
+            "PHOTO-08/inventory-campaign/H105"
+          ]
+        }
+      }
+    },
+    {
+      "rule_id": "T02a",
+      "kind": "type",
+      "rule": "Subheading / H2 font: year, make and model in Source Serif 4 Bold.",
+      "source": "type_system.scale[02]",
+      "cells": {
+        "vehicle-card-r002": {
+          "checks": [
+            "PHOTO-08/vehicle-card-r002/H042"
+          ]
+        },
+        "vehicle-card-r003": {
+          "checks": [
+            "PHOTO-08/vehicle-card-r003/H041"
+          ]
+        },
+        "vehicle-card-r004": {
+          "checks": [
+            "PHOTO-08/vehicle-card-r004/H040"
+          ]
+        },
+        "vehicle-card-r005": {
+          "checks": [
+            "PHOTO-08/vehicle-card-r005/H041"
+          ]
+        },
+        "vehicle-card-r006": {
+          "checks": [
+            "PHOTO-08/vehicle-card-r006/H041"
+          ]
+        },
+        "vehicle-card-r007": {
+          "checks": [
+            "PHOTO-08/vehicle-card-r007/H040"
+          ]
+        },
+        "inventory-campaign": {
+          "checks": [
+            "PHOTO-08/inventory-campaign/H088"
+          ]
+        }
+      }
+    },
+    {
+      "rule_id": "T02b",
+      "kind": "type",
+      "rule": "Subheading / H2 size: 44 px.",
+      "source": "type_system.scale[02]",
+      "cells": {
+        "vehicle-card-r002": {
+          "not_verified": "Exact type size cannot be measured reliably in a delivered PNG; 44 px is kept as a design target and only the size order is checked."
+        },
+        "vehicle-card-r003": {
+          "not_verified": "Exact type size cannot be measured reliably in a delivered PNG; 44 px is kept as a design target and only the size order is checked."
+        },
+        "vehicle-card-r004": {
+          "not_verified": "Exact type size cannot be measured reliably in a delivered PNG; 44 px is kept as a design target and only the size order is checked."
+        },
+        "vehicle-card-r005": {
+          "not_verified": "Exact type size cannot be measured reliably in a delivered PNG; 44 px is kept as a design target and only the size order is checked."
+        },
+        "vehicle-card-r006": {
+          "not_verified": "Exact type size cannot be measured reliably in a delivered PNG; 44 px is kept as a design target and only the size order is checked."
+        },
+        "vehicle-card-r007": {
+          "not_verified": "Exact type size cannot be measured reliably in a delivered PNG; 44 px is kept as a design target and only the size order is checked."
+        },
+        "inventory-campaign": {
+          "not_verified": "Exact type size cannot be measured reliably in a delivered PNG; 44 px is kept as a design target and only the size order is checked."
+        }
+      }
+    },
+    {
+      "rule_id": "T02c",
+      "kind": "type",
+      "rule": "Subheading / H2 leading: 50 pixels from baseline to baseline.",
+      "source": "type_system.scale[02]",
+      "cells": {
+        "vehicle-card-r002": {
+          "not_verified": "Leading applies only if the heading wraps, and baseline-to-baseline leading cannot be measured reliably in a delivered PNG; 50 px is kept as a design target."
+        },
+        "vehicle-card-r003": {
+          "not_verified": "Leading applies only if the heading wraps, and baseline-to-baseline leading cannot be measured reliably in a delivered PNG; 50 px is kept as a design target."
+        },
+        "vehicle-card-r004": {
+          "not_verified": "Leading applies only if the heading wraps, and baseline-to-baseline leading cannot be measured reliably in a delivered PNG; 50 px is kept as a design target."
+        },
+        "vehicle-card-r005": {
+          "not_verified": "Leading applies only if the heading wraps, and baseline-to-baseline leading cannot be measured reliably in a delivered PNG; 50 px is kept as a design target."
+        },
+        "vehicle-card-r006": {
+          "not_verified": "Leading applies only if the heading wraps, and baseline-to-baseline leading cannot be measured reliably in a delivered PNG; 50 px is kept as a design target."
+        },
+        "vehicle-card-r007": {
+          "not_verified": "Leading applies only if the heading wraps, and baseline-to-baseline leading cannot be measured reliably in a delivered PNG; 50 px is kept as a design target."
+        },
+        "inventory-campaign": {
+          "not_verified": "Leading applies only if the heading wraps, and baseline-to-baseline leading cannot be measured reliably in a delivered PNG; 50 px is kept as a design target."
+        }
+      }
+    },
+    {
+      "rule_id": "T02d",
+      "kind": "type",
+      "rule": "Subheading / H2 tracking: minus 5 thousandths of an em.",
+      "source": "type_system.scale[02]",
+      "cells": {
+        "vehicle-card-r002": {
+          "not_verified": "Tracking in thousandths of an em cannot be measured reliably in a delivered PNG; minus 5 is kept as a design target."
+        },
+        "vehicle-card-r003": {
+          "not_verified": "Tracking in thousandths of an em cannot be measured reliably in a delivered PNG; minus 5 is kept as a design target."
+        },
+        "vehicle-card-r004": {
+          "not_verified": "Tracking in thousandths of an em cannot be measured reliably in a delivered PNG; minus 5 is kept as a design target."
+        },
+        "vehicle-card-r005": {
+          "not_verified": "Tracking in thousandths of an em cannot be measured reliably in a delivered PNG; minus 5 is kept as a design target."
+        },
+        "vehicle-card-r006": {
+          "not_verified": "Tracking in thousandths of an em cannot be measured reliably in a delivered PNG; minus 5 is kept as a design target."
+        },
+        "vehicle-card-r007": {
+          "not_verified": "Tracking in thousandths of an em cannot be measured reliably in a delivered PNG; minus 5 is kept as a design target."
+        },
+        "inventory-campaign": {
+          "not_verified": "Tracking in thousandths of an em cannot be measured reliably in a delivered PNG; minus 5 is kept as a design target."
+        }
+      }
+    },
+    {
+      "rule_id": "T02e",
+      "kind": "type",
+      "rule": "Scale order: the year, make and model (Subheading / H2) is larger than mileage and listing detail (Body).",
+      "source": "type_system.scale[02], scale[03]",
+      "cells": {
+        "vehicle-card-r002": {
+          "checks": [
+            "PHOTO-08/vehicle-card-r002/H059"
+          ]
+        },
+        "vehicle-card-r003": {
+          "checks": [
+            "PHOTO-08/vehicle-card-r003/H058"
+          ]
+        },
+        "vehicle-card-r004": {
+          "checks": [
+            "PHOTO-08/vehicle-card-r004/H057"
+          ]
+        },
+        "vehicle-card-r005": {
+          "checks": [
+            "PHOTO-08/vehicle-card-r005/H058"
+          ]
+        },
+        "vehicle-card-r006": {
+          "checks": [
+            "PHOTO-08/vehicle-card-r006/H058"
+          ]
+        },
+        "vehicle-card-r007": {
+          "checks": [
+            "PHOTO-08/vehicle-card-r007/H057"
+          ]
+        },
+        "inventory-campaign": {
+          "checks": [
+            "PHOTO-08/inventory-campaign/H108"
+          ]
+        }
+      }
+    },
+    {
+      "rule_id": "T03a",
+      "kind": "type",
+      "rule": "Body font: mileage and listing detail in Source Sans 3 Regular.",
+      "source": "type_system.scale[03]",
+      "cells": {
+        "vehicle-card-r002": {
+          "checks": [
+            "PHOTO-08/vehicle-card-r002/H027"
+          ]
+        },
+        "vehicle-card-r003": {
+          "checks": [
+            "PHOTO-08/vehicle-card-r003/H025"
+          ]
+        },
+        "vehicle-card-r004": {
+          "checks": [
+            "PHOTO-08/vehicle-card-r004/H024"
+          ]
+        },
+        "vehicle-card-r005": {
+          "checks": [
+            "PHOTO-08/vehicle-card-r005/H025"
+          ]
+        },
+        "vehicle-card-r006": {
+          "checks": [
+            "PHOTO-08/vehicle-card-r006/H025"
+          ]
+        },
+        "vehicle-card-r007": {
+          "checks": [
+            "PHOTO-08/vehicle-card-r007/H024"
+          ]
+        },
+        "inventory-campaign": {
+          "checks": [
+            "PHOTO-08/inventory-campaign/H074"
+          ]
+        }
+      }
+    },
+    {
+      "rule_id": "T03b",
+      "kind": "type",
+      "rule": "Body size: 26 px.",
+      "source": "type_system.scale[03]",
+      "cells": {
+        "vehicle-card-r002": {
+          "not_verified": "Exact type size cannot be measured reliably in a delivered PNG; 26 px is kept as a design target and only the size order is checked."
+        },
+        "vehicle-card-r003": {
+          "not_verified": "Exact type size cannot be measured reliably in a delivered PNG; 26 px is kept as a design target and only the size order is checked."
+        },
+        "vehicle-card-r004": {
+          "not_verified": "Exact type size cannot be measured reliably in a delivered PNG; 26 px is kept as a design target and only the size order is checked."
+        },
+        "vehicle-card-r005": {
+          "not_verified": "Exact type size cannot be measured reliably in a delivered PNG; 26 px is kept as a design target and only the size order is checked."
+        },
+        "vehicle-card-r006": {
+          "not_verified": "Exact type size cannot be measured reliably in a delivered PNG; 26 px is kept as a design target and only the size order is checked."
+        },
+        "vehicle-card-r007": {
+          "not_verified": "Exact type size cannot be measured reliably in a delivered PNG; 26 px is kept as a design target and only the size order is checked."
+        },
+        "inventory-campaign": {
+          "not_verified": "Applies if mileage or listing detail appears. Exact type size cannot be measured reliably in a delivered PNG; 26 px is kept as a design target and only the size order is checked."
+        }
+      }
+    },
+    {
+      "rule_id": "T03c",
+      "kind": "type",
+      "rule": "Body leading: 38 pixels from baseline to baseline.",
+      "source": "type_system.scale[03]",
+      "cells": {
+        "vehicle-card-r002": {
+          "not_verified": "Baseline-to-baseline leading cannot be measured reliably in a delivered PNG; 38 px is kept as a design target."
+        },
+        "vehicle-card-r003": {
+          "not_verified": "Baseline-to-baseline leading cannot be measured reliably in a delivered PNG; 38 px is kept as a design target."
+        },
+        "vehicle-card-r004": {
+          "not_verified": "Baseline-to-baseline leading cannot be measured reliably in a delivered PNG; 38 px is kept as a design target."
+        },
+        "vehicle-card-r005": {
+          "not_verified": "Baseline-to-baseline leading cannot be measured reliably in a delivered PNG; 38 px is kept as a design target."
+        },
+        "vehicle-card-r006": {
+          "not_verified": "Baseline-to-baseline leading cannot be measured reliably in a delivered PNG; 38 px is kept as a design target."
+        },
+        "vehicle-card-r007": {
+          "not_verified": "Baseline-to-baseline leading cannot be measured reliably in a delivered PNG; 38 px is kept as a design target."
+        },
+        "inventory-campaign": {
+          "not_verified": "Applies if mileage or listing detail appears. Baseline-to-baseline leading cannot be measured reliably in a delivered PNG; 38 px is kept as a design target."
+        }
+      }
+    },
+    {
+      "rule_id": "T03d",
+      "kind": "type",
+      "rule": "Body tracking: 0.",
+      "source": "type_system.scale[03]",
+      "cells": {
+        "vehicle-card-r002": {
+          "not_verified": "Tracking in thousandths of an em cannot be measured reliably in a delivered PNG; 0 is kept as a design target."
+        },
+        "vehicle-card-r003": {
+          "not_verified": "Tracking in thousandths of an em cannot be measured reliably in a delivered PNG; 0 is kept as a design target."
+        },
+        "vehicle-card-r004": {
+          "not_verified": "Tracking in thousandths of an em cannot be measured reliably in a delivered PNG; 0 is kept as a design target."
+        },
+        "vehicle-card-r005": {
+          "not_verified": "Tracking in thousandths of an em cannot be measured reliably in a delivered PNG; 0 is kept as a design target."
+        },
+        "vehicle-card-r006": {
+          "not_verified": "Tracking in thousandths of an em cannot be measured reliably in a delivered PNG; 0 is kept as a design target."
+        },
+        "vehicle-card-r007": {
+          "not_verified": "Tracking in thousandths of an em cannot be measured reliably in a delivered PNG; 0 is kept as a design target."
+        },
+        "inventory-campaign": {
+          "not_verified": "Applies if mileage or listing detail appears. Tracking in thousandths of an em cannot be measured reliably in a delivered PNG; 0 is kept as a design target."
+        }
+      }
+    },
+    {
+      "rule_id": "T03e",
+      "kind": "type",
+      "rule": "Body line length: mileage and listing detail run at most 65 characters a line.",
+      "source": "type_system.scale[03].note",
+      "cells": {
+        "vehicle-card-r002": {
+          "checks": [
+            "PHOTO-08/vehicle-card-r002/H028"
+          ]
+        },
+        "vehicle-card-r003": {
+          "checks": [
+            "PHOTO-08/vehicle-card-r003/H026"
+          ]
+        },
+        "vehicle-card-r004": {
+          "checks": [
+            "PHOTO-08/vehicle-card-r004/H025"
+          ]
+        },
+        "vehicle-card-r005": {
+          "checks": [
+            "PHOTO-08/vehicle-card-r005/H026"
+          ]
+        },
+        "vehicle-card-r006": {
+          "checks": [
+            "PHOTO-08/vehicle-card-r006/H026"
+          ]
+        },
+        "vehicle-card-r007": {
+          "checks": [
+            "PHOTO-08/vehicle-card-r007/H025"
+          ]
+        },
+        "inventory-campaign": {
+          "checks": [
+            "PHOTO-08/inventory-campaign/H075"
+          ]
+        }
+      }
+    },
+    {
+      "rule_id": "T03f",
+      "kind": "type",
+      "rule": "Body: plain information, stated once.",
+      "source": "type_system.scale[03].note",
+      "cells": {
+        "vehicle-card-r002": {
+          "checks": [
+            "PHOTO-08/vehicle-card-r002/H074"
+          ]
+        },
+        "vehicle-card-r003": {
+          "checks": [
+            "PHOTO-08/vehicle-card-r003/H073"
+          ]
+        },
+        "vehicle-card-r004": {
+          "checks": [
+            "PHOTO-08/vehicle-card-r004/H072"
+          ]
+        },
+        "vehicle-card-r005": {
+          "checks": [
+            "PHOTO-08/vehicle-card-r005/H073"
+          ]
+        },
+        "vehicle-card-r006": {
+          "checks": [
+            "PHOTO-08/vehicle-card-r006/H073"
+          ]
+        },
+        "vehicle-card-r007": {
+          "checks": [
+            "PHOTO-08/vehicle-card-r007/H072"
+          ]
+        },
+        "inventory-campaign": {
+          "checks": [
+            "PHOTO-08/inventory-campaign/H115"
+          ]
+        }
+      }
+    },
+    {
+      "rule_id": "T04a",
+      "kind": "type",
+      "rule": "Fine print font: the disclosure is set in Source Sans 3 Regular.",
+      "source": "type_system.scale[04]; type_system.rules[5]",
+      "cells": {
+        "vehicle-card-r002": {
+          "checks": [
+            "PHOTO-08/vehicle-card-r002/H050"
+          ]
+        },
+        "vehicle-card-r003": {
+          "checks": [
+            "PHOTO-08/vehicle-card-r003/H049"
+          ]
+        },
+        "vehicle-card-r004": {
+          "checks": [
+            "PHOTO-08/vehicle-card-r004/H048"
+          ]
+        },
+        "vehicle-card-r005": {
+          "checks": [
+            "PHOTO-08/vehicle-card-r005/H049"
+          ]
+        },
+        "vehicle-card-r006": {
+          "checks": [
+            "PHOTO-08/vehicle-card-r006/H049"
+          ]
+        },
+        "vehicle-card-r007": {
+          "checks": [
+            "PHOTO-08/vehicle-card-r007/H048"
+          ]
+        },
+        "inventory-campaign": {
+          "checks": [
+            "PHOTO-08/inventory-campaign/H096"
+          ]
+        }
+      }
+    },
+    {
+      "rule_id": "T04b",
+      "kind": "type",
+      "rule": "Fine print size: 20 px.",
+      "source": "type_system.scale[04]; type_system.rules[5]",
+      "cells": {
+        "vehicle-card-r002": {
+          "not_verified": "Exact type size cannot be measured reliably in a delivered PNG; 20 px is kept as a design target and only the size order is checked."
+        },
+        "vehicle-card-r003": {
+          "not_verified": "Exact type size cannot be measured reliably in a delivered PNG; 20 px is kept as a design target and only the size order is checked."
+        },
+        "vehicle-card-r004": {
+          "not_verified": "Exact type size cannot be measured reliably in a delivered PNG; 20 px is kept as a design target and only the size order is checked."
+        },
+        "vehicle-card-r005": {
+          "not_verified": "Exact type size cannot be measured reliably in a delivered PNG; 20 px is kept as a design target and only the size order is checked."
+        },
+        "vehicle-card-r006": {
+          "not_verified": "Exact type size cannot be measured reliably in a delivered PNG; 20 px is kept as a design target and only the size order is checked."
+        },
+        "vehicle-card-r007": {
+          "not_verified": "Exact type size cannot be measured reliably in a delivered PNG; 20 px is kept as a design target and only the size order is checked."
+        },
+        "inventory-campaign": {
+          "not_verified": "Applies if a disclosure appears. Exact type size cannot be measured reliably in a delivered PNG; 20 px is kept as a design target and only the size order is checked."
+        }
+      }
+    },
+    {
+      "rule_id": "T04c",
+      "kind": "type",
+      "rule": "Fine print leading: 30 pixels from baseline to baseline.",
+      "source": "type_system.scale[04]; type_system.rules[5]",
+      "cells": {
+        "vehicle-card-r002": {
+          "not_verified": "Baseline-to-baseline leading cannot be measured reliably in a delivered PNG; 30 px is kept as a design target."
+        },
+        "vehicle-card-r003": {
+          "not_verified": "Baseline-to-baseline leading cannot be measured reliably in a delivered PNG; 30 px is kept as a design target."
+        },
+        "vehicle-card-r004": {
+          "not_verified": "Baseline-to-baseline leading cannot be measured reliably in a delivered PNG; 30 px is kept as a design target."
+        },
+        "vehicle-card-r005": {
+          "not_verified": "Baseline-to-baseline leading cannot be measured reliably in a delivered PNG; 30 px is kept as a design target."
+        },
+        "vehicle-card-r006": {
+          "not_verified": "Baseline-to-baseline leading cannot be measured reliably in a delivered PNG; 30 px is kept as a design target."
+        },
+        "vehicle-card-r007": {
+          "not_verified": "Baseline-to-baseline leading cannot be measured reliably in a delivered PNG; 30 px is kept as a design target."
+        },
+        "inventory-campaign": {
+          "not_verified": "Applies if a disclosure appears. Baseline-to-baseline leading cannot be measured reliably in a delivered PNG; 30 px is kept as a design target."
+        }
+      }
+    },
+    {
+      "rule_id": "T04d",
+      "kind": "type",
+      "rule": "Fine print tracking: 20 thousandths of an em.",
+      "source": "type_system.scale[04]",
+      "cells": {
+        "vehicle-card-r002": {
+          "not_verified": "Tracking in thousandths of an em cannot be measured reliably in a delivered PNG; +20 is kept as a design target."
+        },
+        "vehicle-card-r003": {
+          "not_verified": "Tracking in thousandths of an em cannot be measured reliably in a delivered PNG; +20 is kept as a design target."
+        },
+        "vehicle-card-r004": {
+          "not_verified": "Tracking in thousandths of an em cannot be measured reliably in a delivered PNG; +20 is kept as a design target."
+        },
+        "vehicle-card-r005": {
+          "not_verified": "Tracking in thousandths of an em cannot be measured reliably in a delivered PNG; +20 is kept as a design target."
+        },
+        "vehicle-card-r006": {
+          "not_verified": "Tracking in thousandths of an em cannot be measured reliably in a delivered PNG; +20 is kept as a design target."
+        },
+        "vehicle-card-r007": {
+          "not_verified": "Tracking in thousandths of an em cannot be measured reliably in a delivered PNG; +20 is kept as a design target."
+        },
+        "inventory-campaign": {
+          "not_verified": "Applies if a disclosure appears. Tracking in thousandths of an em cannot be measured reliably in a delivered PNG; +20 is kept as a design target."
+        }
+      }
+    },
+    {
+      "rule_id": "T04e",
+      "kind": "type",
+      "rule": "Scale order: the fine-print disclosure is the smallest step, below Body and Subheading / H2.",
+      "source": "type_system.scale[03], scale[04]",
+      "cells": {
+        "vehicle-card-r002": {
+          "checks": [
+            "PHOTO-08/vehicle-card-r002/H058"
+          ]
+        },
+        "vehicle-card-r003": {
+          "checks": [
+            "PHOTO-08/vehicle-card-r003/H057"
+          ]
+        },
+        "vehicle-card-r004": {
+          "checks": [
+            "PHOTO-08/vehicle-card-r004/H056"
+          ]
+        },
+        "vehicle-card-r005": {
+          "checks": [
+            "PHOTO-08/vehicle-card-r005/H057"
+          ]
+        },
+        "vehicle-card-r006": {
+          "checks": [
+            "PHOTO-08/vehicle-card-r006/H057"
+          ]
+        },
+        "vehicle-card-r007": {
+          "checks": [
+            "PHOTO-08/vehicle-card-r007/H056"
+          ]
+        },
+        "inventory-campaign": {
+          "checks": [
+            "PHOTO-08/inventory-campaign/H107",
+            "PHOTO-08/inventory-campaign/H106"
+          ]
+        }
+      }
+    },
+    {
+      "rule_id": "T05a",
+      "kind": "type",
+      "rule": "Signature move: the dollar sign is sixty percent of the numerals’ visible height.",
+      "source": "type_system.signature_move; rules[2]",
+      "cells": {
+        "vehicle-card-r002": {
+          "checks": [
+            "PHOTO-08/vehicle-card-r002/H056"
+          ]
+        },
+        "vehicle-card-r003": {
+          "checks": [
+            "PHOTO-08/vehicle-card-r003/H055"
+          ]
+        },
+        "vehicle-card-r004": {
+          "checks": [
+            "PHOTO-08/vehicle-card-r004/H054"
+          ]
+        },
+        "vehicle-card-r005": {
+          "checks": [
+            "PHOTO-08/vehicle-card-r005/H055"
+          ]
+        },
+        "vehicle-card-r006": {
+          "checks": [
+            "PHOTO-08/vehicle-card-r006/H055"
+          ]
+        },
+        "vehicle-card-r007": {
+          "checks": [
+            "PHOTO-08/vehicle-card-r007/H054"
+          ]
+        },
+        "inventory-campaign": {
+          "checks": [
+            "PHOTO-08/inventory-campaign/H103"
+          ]
+        }
+      }
+    },
+    {
+      "rule_id": "T05b",
+      "kind": "type",
+      "rule": "Signature move: the dollar sign is raised so its top aligns with the figure tops.",
+      "source": "type_system.signature_move; rules[2]",
+      "cells": {
+        "vehicle-card-r002": {
+          "checks": [
+            "PHOTO-08/vehicle-card-r002/H057"
+          ]
+        },
+        "vehicle-card-r003": {
+          "checks": [
+            "PHOTO-08/vehicle-card-r003/H056"
+          ]
+        },
+        "vehicle-card-r004": {
+          "checks": [
+            "PHOTO-08/vehicle-card-r004/H055"
+          ]
+        },
+        "vehicle-card-r005": {
+          "checks": [
+            "PHOTO-08/vehicle-card-r005/H056"
+          ]
+        },
+        "vehicle-card-r006": {
+          "checks": [
+            "PHOTO-08/vehicle-card-r006/H056"
+          ]
+        },
+        "vehicle-card-r007": {
+          "checks": [
+            "PHOTO-08/vehicle-card-r007/H055"
+          ]
+        },
+        "inventory-campaign": {
+          "checks": [
+            "PHOTO-08/inventory-campaign/H104"
+          ]
+        }
+      }
+    },
+    {
+      "rule_id": "T06a",
+      "kind": "type",
+      "rule": "A rule sits below the price across the full vehicle-card width, or across that vehicle’s panel in the campaign.",
+      "source": "type_system.rules[3]; signature_move",
+      "cells": {
+        "vehicle-card-r002": {
+          "checks": [
+            "PHOTO-08/vehicle-card-r002/H025",
+            "PHOTO-08/vehicle-card-r002/H083"
+          ]
+        },
+        "vehicle-card-r003": {
+          "checks": [
+            "PHOTO-08/vehicle-card-r003/H023",
+            "PHOTO-08/vehicle-card-r003/H082"
+          ]
+        },
+        "vehicle-card-r004": {
+          "checks": [
+            "PHOTO-08/vehicle-card-r004/H022",
+            "PHOTO-08/vehicle-card-r004/H081"
+          ]
+        },
+        "vehicle-card-r005": {
+          "checks": [
+            "PHOTO-08/vehicle-card-r005/H023",
+            "PHOTO-08/vehicle-card-r005/H082"
+          ]
+        },
+        "vehicle-card-r006": {
+          "checks": [
+            "PHOTO-08/vehicle-card-r006/H023",
+            "PHOTO-08/vehicle-card-r006/H082"
+          ]
+        },
+        "vehicle-card-r007": {
+          "checks": [
+            "PHOTO-08/vehicle-card-r007/H022",
+            "PHOTO-08/vehicle-card-r007/H082"
+          ]
+        },
+        "inventory-campaign": {
+          "checks": [
+            "PHOTO-08/inventory-campaign/H072",
+            "PHOTO-08/inventory-campaign/H130"
+          ]
+        }
+      }
+    },
+    {
+      "rule_id": "T06b",
+      "kind": "type",
+      "rule": "The rule below the price is Compass Teal.",
+      "source": "type_system.rules[3]; palette[Compass Teal].usage",
+      "cells": {
+        "vehicle-card-r002": {
+          "checks": [
+            "PHOTO-08/vehicle-card-r002/H055"
+          ]
+        },
+        "vehicle-card-r003": {
+          "checks": [
+            "PHOTO-08/vehicle-card-r003/H054"
+          ]
+        },
+        "vehicle-card-r004": {
+          "checks": [
+            "PHOTO-08/vehicle-card-r004/H053"
+          ]
+        },
+        "vehicle-card-r005": {
+          "checks": [
+            "PHOTO-08/vehicle-card-r005/H054"
+          ]
+        },
+        "vehicle-card-r006": {
+          "checks": [
+            "PHOTO-08/vehicle-card-r006/H054"
+          ]
+        },
+        "vehicle-card-r007": {
+          "checks": [
+            "PHOTO-08/vehicle-card-r007/H053"
+          ]
+        },
+        "inventory-campaign": {
+          "checks": [
+            "PHOTO-08/inventory-campaign/H102"
+          ]
+        }
+      }
+    },
+    {
+      "rule_id": "T06c",
+      "kind": "type",
+      "rule": "The rule below the price is 1 pt thick.",
+      "source": "type_system.rules[3]",
+      "cells": {
+        "vehicle-card-r002": {
+          "checks": [
+            "PHOTO-08/vehicle-card-r002/H078"
+          ]
+        },
+        "vehicle-card-r003": {
+          "checks": [
+            "PHOTO-08/vehicle-card-r003/H077"
+          ]
+        },
+        "vehicle-card-r004": {
+          "checks": [
+            "PHOTO-08/vehicle-card-r004/H076"
+          ]
+        },
+        "vehicle-card-r005": {
+          "checks": [
+            "PHOTO-08/vehicle-card-r005/H077"
+          ]
+        },
+        "vehicle-card-r006": {
+          "checks": [
+            "PHOTO-08/vehicle-card-r006/H077"
+          ]
+        },
+        "vehicle-card-r007": {
+          "checks": [
+            "PHOTO-08/vehicle-card-r007/H077"
+          ]
+        },
+        "inventory-campaign": {
+          "checks": [
+            "PHOTO-08/inventory-campaign/H126"
+          ]
+        }
+      }
+    },
+    {
+      "rule_id": "T08a",
+      "kind": "type",
+      "rule": "Font: a separately typeset Meridian Motors label beside the supplied roundel uses Source Serif 4 Bold.",
       "source": "type_system.scale[02].note; rules[4]",
       "cells": {
         "vehicle-card-r002": {
@@ -1876,6 +3106,64 @@
           "checks": [
             "PHOTO-08/inventory-campaign/H004"
           ]
+        }
+      }
+    },
+    {
+      "rule_id": "T08b",
+      "kind": "type",
+      "rule": "Size: a separately typeset Meridian Motors label beside the roundel is 22 px.",
+      "source": "type_system.scale[02].note; rules[4]",
+      "cells": {
+        "vehicle-card-r002": {
+          "not_verified": "Applies if a typeset label sits beside the roundel. Exact type size cannot be measured reliably in a delivered PNG; 22 px is kept as a design target."
+        },
+        "vehicle-card-r003": {
+          "not_verified": "Applies if a typeset label sits beside the roundel. Exact type size cannot be measured reliably in a delivered PNG; 22 px is kept as a design target."
+        },
+        "vehicle-card-r004": {
+          "not_verified": "Applies if a typeset label sits beside the roundel. Exact type size cannot be measured reliably in a delivered PNG; 22 px is kept as a design target."
+        },
+        "vehicle-card-r005": {
+          "not_verified": "Applies if a typeset label sits beside the roundel. Exact type size cannot be measured reliably in a delivered PNG; 22 px is kept as a design target."
+        },
+        "vehicle-card-r006": {
+          "not_verified": "Applies if a typeset label sits beside the roundel. Exact type size cannot be measured reliably in a delivered PNG; 22 px is kept as a design target."
+        },
+        "vehicle-card-r007": {
+          "not_verified": "Applies if a typeset label sits beside the roundel. Exact type size cannot be measured reliably in a delivered PNG; 22 px is kept as a design target."
+        },
+        "inventory-campaign": {
+          "not_verified": "Applies if a typeset label sits beside the roundel. Exact type size cannot be measured reliably in a delivered PNG; 22 px is kept as a design target."
+        }
+      }
+    },
+    {
+      "rule_id": "T08c",
+      "kind": "type",
+      "rule": "Tracking: a separately typeset Meridian Motors label beside the roundel is +40 thousandths of an em.",
+      "source": "type_system.scale[02].note; rules[4]",
+      "cells": {
+        "vehicle-card-r002": {
+          "not_verified": "Applies if a typeset label sits beside the roundel. Tracking in thousandths of an em cannot be measured reliably in a delivered PNG; +40 is kept as a design target."
+        },
+        "vehicle-card-r003": {
+          "not_verified": "Applies if a typeset label sits beside the roundel. Tracking in thousandths of an em cannot be measured reliably in a delivered PNG; +40 is kept as a design target."
+        },
+        "vehicle-card-r004": {
+          "not_verified": "Applies if a typeset label sits beside the roundel. Tracking in thousandths of an em cannot be measured reliably in a delivered PNG; +40 is kept as a design target."
+        },
+        "vehicle-card-r005": {
+          "not_verified": "Applies if a typeset label sits beside the roundel. Tracking in thousandths of an em cannot be measured reliably in a delivered PNG; +40 is kept as a design target."
+        },
+        "vehicle-card-r006": {
+          "not_verified": "Applies if a typeset label sits beside the roundel. Tracking in thousandths of an em cannot be measured reliably in a delivered PNG; +40 is kept as a design target."
+        },
+        "vehicle-card-r007": {
+          "not_verified": "Applies if a typeset label sits beside the roundel. Tracking in thousandths of an em cannot be measured reliably in a delivered PNG; +40 is kept as a design target."
+        },
+        "inventory-campaign": {
+          "not_verified": "Applies if a typeset label sits beside the roundel. Tracking in thousandths of an em cannot be measured reliably in a delivered PNG; +40 is kept as a design target."
         }
       }
     },
@@ -1918,49 +3206,6 @@
         "inventory-campaign": {
           "checks": [
             "PHOTO-08/inventory-campaign/H076"
-          ]
-        }
-      }
-    },
-    {
-      "rule_id": "T10",
-      "kind": "type",
-      "rule": "Body: plain information, stated once.",
-      "source": "type_system.scale[03].note",
-      "cells": {
-        "vehicle-card-r002": {
-          "checks": [
-            "PHOTO-08/vehicle-card-r002/H074"
-          ]
-        },
-        "vehicle-card-r003": {
-          "checks": [
-            "PHOTO-08/vehicle-card-r003/H073"
-          ]
-        },
-        "vehicle-card-r004": {
-          "checks": [
-            "PHOTO-08/vehicle-card-r004/H072"
-          ]
-        },
-        "vehicle-card-r005": {
-          "checks": [
-            "PHOTO-08/vehicle-card-r005/H073"
-          ]
-        },
-        "vehicle-card-r006": {
-          "checks": [
-            "PHOTO-08/vehicle-card-r006/H073"
-          ]
-        },
-        "vehicle-card-r007": {
-          "checks": [
-            "PHOTO-08/vehicle-card-r007/H072"
-          ]
-        },
-        "inventory-campaign": {
-          "checks": [
-            "PHOTO-08/inventory-campaign/H115"
           ]
         }
       }

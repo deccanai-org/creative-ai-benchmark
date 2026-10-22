@@ -16,7 +16,7 @@ OUT = ROOT / "docs/gatsby-v7/annotation-pilot"
 RUN_SOURCES = ROOT.parents[1] / "benchmark_runs/pilot_v7_hybrid_2026-09-28"
 REFRESH = ROOT.parents[1] / "reviews/pilot13-refresh-2026-10-14"
 SHEET_EXPORT = REFRESH / "sheet_rows.json"
-BASE_URL = "https://dhigdec.github.io/creative-ai-benchmark/gatsby-v7/annotation-pilot/"
+BASE_URL = "https://deccanai-org.github.io/creative-ai-benchmark/gatsby-v7/annotation-pilot/"
 TASK_IDS = [
     "PHOTO-04", "PHOTO-06", "PHOTO-08", "PHOTO-10", "PHOTO-19",
     "PHOTO-20", "PHOTO-24", "PHOTO-26", "PHOTO-28", "LAYOUT-15",
@@ -422,7 +422,7 @@ def platform_verifiers(verifiers: list[dict], outputs: list[dict]) -> list[dict]
 def write_review_verifiers(task_id: str, verifiers: list[dict]) -> None:
     bank = OUT / "verifier-bank"
     bank.mkdir(parents=True, exist_ok=True)
-    fields = ("check_id", "output_id", "type", "output_reference", "check", "reference_assets")
+    fields = ("check_id", "output_id", "type", "output_reference", "check", "method", "method_note", "reference_assets")
     review_only = [{key: item[key] for key in fields if key in item} for item in verifiers]
     (bank / f"{task_id}.json").write_text(
         json.dumps(review_only, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
@@ -450,12 +450,43 @@ def sheet_row(index: int, task_id: str, assets: list[dict], verifiers: list[dict
         json.dumps(review_checks, ensure_ascii=False, separators=(",", ":")),
         index, "", "NORMAL", "", BASE_URL + task_id + ".html",
         BASE_URL + "verifier-bank/" + task_id + ".json",
-        f"https://dhigdec.github.io/creative-ai-benchmark/gatsby-v7/tasks/{task_id}/ASSET_MANIFEST.json",
+        f"https://deccanai-org.github.io/creative-ai-benchmark/gatsby-v7/tasks/{task_id}/ASSET_MANIFEST.json",
         len(assets), len(outputs), len(review_checks), len(verifiers),
     ]
     if len(row[1]) > 49000 or len(row[2]) > 49000:
         raise ValueError(f"Sheet cell too large for {task_id}: {len(row[1])}, {len(row[2])}")
     return row
+
+
+SECONDS_PER_CHECK = 10
+
+
+def question_text(index: int, check: dict) -> str:
+    """Annotator-facing question; measured and estimated checks say so up front."""
+    method = check.get("method", "look")
+    prefix = "" if method == "look" else f'[{method.capitalize()}: {check.get("method_note", "")}] '
+    return f"{index}. {prefix}{check['check']}"
+
+
+def deliverable_rows(task_id: str, verifiers: list[dict], outputs: list[dict]) -> list[list[object]]:
+    """One sheet row per deliverable carrying every human check for it (no sampling, no auto checks)."""
+    rows = []
+    for output in outputs:
+        human = [v for v in verifiers if v["output_id"] == output["output_id"] and v["type"] == "human"]
+        questions = [{"verifier_question": question_text(i, v), "verifer_radio": "", "comment_box": ""} for i, v in enumerate(human, 1)]
+        cell = json.dumps(questions, ensure_ascii=False, separators=(",", ":"))
+        if len(cell) > 49000:
+            raise ValueError(f"Sheet cell too large for {task_id}/{output['output_id']}: {len(cell)}")
+        rows.append([
+            f"gatsby_v7_pilot_{task_id.lower().replace('-', '_')}__{output['output_id']}", "[]", cell, "", "", "NORMAL", "",
+            BASE_URL + task_id + ".html", BASE_URL + "verifier-bank/" + task_id + ".json",
+            f"https://deccanai-org.github.io/creative-ai-benchmark/gatsby-v7/tasks/{task_id}/ASSET_MANIFEST.json",
+            "", 1, len(questions), len(human),
+            "deliverable_verifiers", task_id, output["output_id"], output["name"], Path(output["path"]).name,
+            round(len(questions) * SECONDS_PER_CHECK / 60, 1),
+            sum(1 for v in human if v.get("method") == "measure"), sum(1 for v in human if v.get("method") == "estimate"),
+        ])
+    return rows
 
 
 def main() -> None:
@@ -465,7 +496,9 @@ def main() -> None:
         "taskTags", "taskCategory", "CustomVerifiersRepeater", "url_link",
         "full_verifiers_url", "asset_manifest_url", "asset_count", "output_count",
         "platform_verifier_count", "full_verifier_count",
+        "row_type", "task", "output_id", "deliverable", "deliverable_file", "estimated_minutes", "measure_checks", "estimate_checks",
     ]]
+    verifier_rows = []
     for index, task_id in enumerate(TASK_IDS, 1):
         folder = TASKS / task_id
         spec = json.loads((folder / "TASK_SPEC.json").read_text(encoding="utf-8"))
@@ -479,8 +512,17 @@ def main() -> None:
         write_page(task_id, spec, assets, outputs)
         write_review_verifiers(task_id, verifiers)
         row = sheet_row(index, task_id, assets, verifiers, outputs)
+        # 2026-10-22: the task row carries the input-asset rubric only; every human check is on a deliverable row.
+        row[2] = "[]"
+        row[12] = 0
+        row += ["task_inputs", task_id, "", "", "", "", 0, 0]
         rows.append(row)
-        print(f"{task_id}: {len(assets)} assets, {len(outputs)} outputs, {row[12]}/{row[13]} platform/full checks; sheet cells {len(row[1])}/{len(row[2])} chars")
+        drows = deliverable_rows(task_id, verifiers, outputs)
+        verifier_rows += drows
+        print(f"{task_id}: {len(assets)} assets, {len(outputs)} deliverable rows, {sum(r[12] for r in drows)} human checks (all), about {round(sum(r[19] for r in drows))} min at {SECONDS_PER_CHECK}s each")
+    rows += verifier_rows
+    for n, r in enumerate(rows[1:], 1):
+        r[3] = n
     SHEET_EXPORT.parent.mkdir(parents=True, exist_ok=True)
     SHEET_EXPORT.write_text(json.dumps(rows, ensure_ascii=False), encoding="utf-8")
     links = ''.join(f'<li><a href="{tid}.html">{tid} - {esc(json.loads((TASKS/tid/"TASK_SPEC.json").read_text())["task_name"])}</a></li>' for tid in TASK_IDS)

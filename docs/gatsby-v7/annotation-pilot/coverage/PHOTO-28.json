@@ -4,22 +4,25 @@
     {
       "rule_id": "B01",
       "kind": "brand",
-      "rule": "No colour outside #9CA98F, #C7A97A, #F4F0E8 and #33352E for type, the wordmark, panels, rules, buttons or icons.",
+      "rule": "No colour outside #9CA98F, #C7A97A, #F4F0E8 and #33352E for type, panels, rules, buttons, icons or a recoloured wordmark.",
       "source": "brand_identity.palette_rules.forbidden",
       "cells": {
         "studio-launch": {
           "checks": [
-            "PHOTO-28/studio-launch/H033"
+            "PHOTO-28/studio-launch/H033",
+            "PHOTO-28/studio-launch/H079"
           ]
         },
         "class-feed": {
           "checks": [
-            "PHOTO-28/class-feed/H033"
+            "PHOTO-28/class-feed/H033",
+            "PHOTO-28/class-feed/H073"
           ]
         },
         "booking-story": {
           "checks": [
-            "PHOTO-28/booking-story/H030"
+            "PHOTO-28/booking-story/H030",
+            "PHOTO-28/booking-story/H071"
           ]
         }
       }
@@ -27,7 +30,7 @@
     {
       "rule_id": "B02",
       "kind": "brand",
-      "rule": "Warm Off White and Soft Ink are mandatory palette colours.",
+      "rule": "Warm Off White is a mandatory palette colour and appears in the designed parts.",
       "source": "brand_identity.palette[].role",
       "cells": {
         "studio-launch": {
@@ -43,6 +46,29 @@
         "booking-story": {
           "checks": [
             "PHOTO-28/booking-story/H031"
+          ]
+        }
+      }
+    },
+    {
+      "rule_id": "B27",
+      "kind": "brand",
+      "rule": "Soft Ink is a mandatory palette colour and appears in the type.",
+      "source": "brand_identity.palette (roles)",
+      "cells": {
+        "studio-launch": {
+          "checks": [
+            "PHOTO-28/studio-launch/H081"
+          ]
+        },
+        "class-feed": {
+          "checks": [
+            "PHOTO-28/class-feed/H074"
+          ]
+        },
+        "booking-story": {
+          "checks": [
+            "PHOTO-28/booking-story/H073"
           ]
         }
       }
@@ -73,22 +99,25 @@
     {
       "rule_id": "B04",
       "kind": "brand",
-      "rule": "On Warm Off White, headlines, body, prices, fine print and the wordmark are Soft Ink; only small labels may be Sage.",
+      "rule": "On Warm Off White, all type and the wordmark are Soft Ink, except small labels, which may be Sage.",
       "source": "brand_identity.palette_rules.distribution",
       "cells": {
         "studio-launch": {
           "checks": [
-            "PHOTO-28/studio-launch/H037"
+            "PHOTO-28/studio-launch/H037",
+            "PHOTO-28/studio-launch/H079"
           ]
         },
         "class-feed": {
           "checks": [
-            "PHOTO-28/class-feed/H036"
+            "PHOTO-28/class-feed/H036",
+            "PHOTO-28/class-feed/H073"
           ]
         },
         "booking-story": {
           "checks": [
-            "PHOTO-28/booking-story/H034"
+            "PHOTO-28/booking-story/H034",
+            "PHOTO-28/booking-story/H071"
           ]
         }
       }
@@ -101,17 +130,20 @@
       "cells": {
         "studio-launch": {
           "checks": [
-            "PHOTO-28/studio-launch/H059"
+            "PHOTO-28/studio-launch/H059",
+            "PHOTO-28/studio-launch/H079"
           ]
         },
         "class-feed": {
           "checks": [
-            "PHOTO-28/class-feed/H058"
+            "PHOTO-28/class-feed/H058",
+            "PHOTO-28/class-feed/H073"
           ]
         },
         "booking-story": {
           "checks": [
-            "PHOTO-28/booking-story/H056"
+            "PHOTO-28/booking-story/H056",
+            "PHOTO-28/booking-story/H071"
           ]
         }
       }
@@ -119,7 +151,7 @@
     {
       "rule_id": "B06",
       "kind": "brand",
-      "rule": "Oak is for hairline rules and dividers only, never a ground, panel, button or text (this keeps it under the 5% cap).",
+      "rule": "Oak is used only for hairline rules and dividers, never as a ground, panel, button or text.",
       "source": "brand_identity.palette_rules.distribution",
       "cells": {
         "studio-launch": {
@@ -142,7 +174,7 @@
     {
       "rule_id": "B07",
       "kind": "brand",
-      "rule": "Every palette colour is solid at 100% opacity: nothing shows through type, the wordmark, grounds, panels or buttons, and no gradient or shadow; the wordmark is solid, not 92%.",
+      "rule": "Every palette colour is used solid at 100% opacity, with no tint, transparency, gradient, shadow or blend mode.",
       "source": "brand_identity.palette_rules.opacity",
       "cells": {
         "studio-launch": {
@@ -165,8 +197,8 @@
     {
       "rule_id": "B08",
       "kind": "brand",
-      "rule": "Type, the wordmark included, beside or over a photograph sits on a solid Warm Off White or Sage panel, never directly on the photograph; the wordmark is used on a light solid ground.",
-      "source": "brand_identity.palette_rules.opacity + brand_assets_status",
+      "rule": "Type, the wordmark included, beside or over a photograph sits on a solid Warm Off White or Sage panel, never directly on the photograph.",
+      "source": "brand_identity.palette_rules.opacity",
       "cells": {
         "studio-launch": {
           "checks": [
@@ -372,7 +404,7 @@
     {
       "rule_id": "B17",
       "kind": "brand",
-      "rule": "Wordmark edges are clean, with no grey fringe or compression ring; normal edge anti-aliasing is kept.",
+      "rule": "Wordmark edges are clean, with no grey fringe or compression ring, while normal edge anti-aliasing is kept.",
       "source": "asset_plan defect_engineered (verda_logo_web.png) + palette_rules.opacity",
       "cells": {
         "studio-launch": {
@@ -418,7 +450,7 @@
     {
       "rule_id": "B19",
       "kind": "brand",
-      "rule": "Voice: confident without hype and never a discount; no discount or urgency wording.",
+      "rule": "No discount or urgency wording appears, since the voice is confident without hype and never a discount.",
       "source": "brand_identity.voice + price_positioning",
       "cells": {
         "studio-launch": {
@@ -441,7 +473,7 @@
     {
       "rule_id": "B20",
       "kind": "brand",
-      "rule": "Photographs keep their own corrected colour and are never recoloured toward the palette; upholstery and floor are not pushed to the Sage or Oak hexes.",
+      "rule": "Photographs keep their own corrected colour and are never recoloured toward the palette, so upholstery and floor are not pushed to the Sage or Oak hexes.",
       "source": "brand_identity.palette_rules.photography",
       "cells": {
         "studio-launch": {
@@ -508,9 +540,130 @@
       }
     },
     {
+      "rule_id": "B23",
+      "kind": "brand",
+      "rule": "Oak covers no more than 5% of the designed, non-photographic area.",
+      "source": "brand_identity.palette_rules.distribution",
+      "cells": {
+        "studio-launch": {
+          "checks": [
+            "PHOTO-28/studio-launch/H078"
+          ]
+        },
+        "class-feed": {
+          "checks": [
+            "PHOTO-28/class-feed/H072"
+          ]
+        },
+        "booking-story": {
+          "checks": [
+            "PHOTO-28/booking-story/H070"
+          ]
+        }
+      }
+    },
+    {
+      "rule_id": "B24",
+      "kind": "brand",
+      "rule": "On these exports the wordmark is solid at 100% opacity (the supplied ink, or Soft Ink or Warm Off White if recoloured), not 92% as on passcard_2025_print.pdf.",
+      "source": "brand_identity.palette_rules.opacity",
+      "cells": {
+        "studio-launch": {
+          "checks": [
+            "PHOTO-28/studio-launch/H079",
+            "PHOTO-28/studio-launch/H035"
+          ]
+        },
+        "class-feed": {
+          "checks": [
+            "PHOTO-28/class-feed/H073",
+            "PHOTO-28/class-feed/H035"
+          ]
+        },
+        "booking-story": {
+          "checks": [
+            "PHOTO-28/booking-story/H071",
+            "PHOTO-28/booking-story/H032"
+          ]
+        }
+      }
+    },
+    {
+      "rule_id": "B25",
+      "kind": "brand",
+      "rule": "The wordmark is used on a light solid ground.",
+      "source": "brand_assets_status + client_brief Supplied identity artwork",
+      "cells": {
+        "studio-launch": {
+          "checks": [
+            "PHOTO-28/studio-launch/H057",
+            "PHOTO-28/studio-launch/H036"
+          ]
+        },
+        "class-feed": {
+          "checks": [
+            "PHOTO-28/class-feed/H056",
+            "PHOTO-28/class-feed/H005"
+          ]
+        },
+        "booking-story": {
+          "checks": [
+            "PHOTO-28/booking-story/H054",
+            "PHOTO-28/booking-story/H033"
+          ]
+        }
+      }
+    },
+    {
+      "rule_id": "B26",
+      "kind": "brand",
+      "rule": "A cut-out portrait sits on a solid Warm Off White or Sage ground.",
+      "source": "brand_identity.palette_rules.distribution + client_brief",
+      "cells": {
+        "studio-launch": {
+          "checks": [
+            "PHOTO-28/studio-launch/H080"
+          ]
+        },
+        "class-feed": {
+          "checks": [
+            "PHOTO-28/class-feed/H071"
+          ]
+        },
+        "booking-story": {
+          "checks": [
+            "PHOTO-28/booking-story/H072"
+          ]
+        }
+      }
+    },
+    {
+      "rule_id": "B28",
+      "kind": "brand",
+      "rule": "The wordmark keeps its original letter spacing.",
+      "source": "brand_identity.type_system.rules + signature_move",
+      "cells": {
+        "studio-launch": {
+          "checks": [
+            "PHOTO-28/studio-launch/H092"
+          ]
+        },
+        "class-feed": {
+          "checks": [
+            "PHOTO-28/class-feed/H085"
+          ]
+        },
+        "booking-story": {
+          "checks": [
+            "PHOTO-28/booking-story/H084"
+          ]
+        }
+      }
+    },
+    {
       "rule_id": "T01",
       "kind": "type",
-      "rule": "Display / H1: Archivo Regular, the headline on studio-launch.png.",
+      "rule": "Display / H1 font: Archivo Regular, the headline on studio-launch.png.",
       "source": "brand_identity.type_system.scale[01]",
       "cells": {
         "studio-launch": {
@@ -519,17 +672,68 @@
           ]
         },
         "class-feed": {
-          "na": "The H1 style is assigned only to the launch-page headline, not the feed."
+          "na": "The H1 style is assigned only to the launch-page headline, not this output."
         },
         "booking-story": {
-          "na": "The H1 style is assigned only to the launch-page headline, not the story."
+          "na": "The H1 style is assigned only to the launch-page headline, not this output."
+        }
+      }
+    },
+    {
+      "rule_id": "T01S",
+      "kind": "type",
+      "rule": "Display / H1 size: 88 px on the studio-launch.png headline.",
+      "source": "brand_identity.type_system.scale[01]",
+      "cells": {
+        "studio-launch": {
+          "not_verified": "Exact type size cannot be measured in a delivered PNG; the brand value 88 px is kept as a design target."
+        },
+        "class-feed": {
+          "na": "The H1 style is assigned only to the launch-page headline, not this output."
+        },
+        "booking-story": {
+          "na": "The H1 style is assigned only to the launch-page headline, not this output."
+        }
+      }
+    },
+    {
+      "rule_id": "T01L",
+      "kind": "type",
+      "rule": "Display / H1 leading: 104 pixels from baseline to baseline.",
+      "source": "brand_identity.type_system.scale[01]",
+      "cells": {
+        "studio-launch": {
+          "not_verified": "Baseline-to-baseline leading cannot be verified reliably in a delivered PNG; 104 pixels is kept as a design target."
+        },
+        "class-feed": {
+          "na": "The H1 style is assigned only to the launch-page headline, not this output."
+        },
+        "booking-story": {
+          "na": "The H1 style is assigned only to the launch-page headline, not this output."
+        }
+      }
+    },
+    {
+      "rule_id": "T01T",
+      "kind": "type",
+      "rule": "Display / H1 tracking: -10 thousandths of an em.",
+      "source": "brand_identity.type_system.scale[01]",
+      "cells": {
+        "studio-launch": {
+          "not_verified": "Tracking in thousandths of an em cannot be judged in a delivered PNG; -10 is kept as a design target."
+        },
+        "class-feed": {
+          "na": "The H1 style is assigned only to the launch-page headline, not this output."
+        },
+        "booking-story": {
+          "na": "The H1 style is assigned only to the launch-page headline, not this output."
         }
       }
     },
     {
       "rule_id": "T02",
       "kind": "type",
-      "rule": "Subheading / H2: Archivo Regular, the headline on class-feed.png and booking-story.png and any secondary heading on studio-launch.png.",
+      "rule": "Subheading / H2 font: Archivo Regular, the headline on class-feed.png and booking-story.png and any secondary heading on studio-launch.png.",
       "source": "brand_identity.type_system.scale[02]",
       "cells": {
         "studio-launch": {
@@ -550,9 +754,60 @@
       }
     },
     {
+      "rule_id": "T02S",
+      "kind": "type",
+      "rule": "Subheading / H2 size: 56 px.",
+      "source": "brand_identity.type_system.scale[02] + rules",
+      "cells": {
+        "studio-launch": {
+          "not_verified": "Exact type size cannot be measured in a delivered PNG; the brand value 56 px (optional secondary heading) is kept as a design target."
+        },
+        "class-feed": {
+          "not_verified": "Exact type size cannot be measured in a delivered PNG; the brand value 56 px is kept as a design target."
+        },
+        "booking-story": {
+          "not_verified": "Exact type size cannot be measured in a delivered PNG; the brand value 56 px is kept as a design target."
+        }
+      }
+    },
+    {
+      "rule_id": "T02L",
+      "kind": "type",
+      "rule": "Subheading / H2 leading: 68 pixels from baseline to baseline.",
+      "source": "brand_identity.type_system.scale[02] + rules",
+      "cells": {
+        "studio-launch": {
+          "not_verified": "Baseline-to-baseline leading cannot be verified reliably in a delivered PNG; 68 pixels (optional secondary heading) is kept as a design target."
+        },
+        "class-feed": {
+          "not_verified": "Baseline-to-baseline leading cannot be verified reliably in a delivered PNG; 68 pixels is kept as a design target."
+        },
+        "booking-story": {
+          "not_verified": "Baseline-to-baseline leading cannot be verified reliably in a delivered PNG; 68 pixels is kept as a design target."
+        }
+      }
+    },
+    {
+      "rule_id": "T02T",
+      "kind": "type",
+      "rule": "Subheading / H2 tracking: -5 thousandths of an em.",
+      "source": "brand_identity.type_system.scale[02]",
+      "cells": {
+        "studio-launch": {
+          "not_verified": "Tracking in thousandths of an em cannot be judged in a delivered PNG; -5 (optional secondary heading) is kept as a design target."
+        },
+        "class-feed": {
+          "not_verified": "Tracking in thousandths of an em cannot be judged in a delivered PNG; -5 is kept as a design target."
+        },
+        "booking-story": {
+          "not_verified": "Tracking in thousandths of an em cannot be judged in a delivered PNG; -5 is kept as a design target."
+        }
+      }
+    },
+    {
       "rule_id": "T03",
       "kind": "type",
-      "rule": "Body: Inter Regular.",
+      "rule": "Body font: Inter Regular.",
       "source": "brand_identity.type_system.scale[03]",
       "cells": {
         "studio-launch": {
@@ -573,9 +828,60 @@
       }
     },
     {
+      "rule_id": "T03S",
+      "kind": "type",
+      "rule": "Body size: 22 px.",
+      "source": "brand_identity.type_system.scale[03] + rules",
+      "cells": {
+        "studio-launch": {
+          "not_verified": "Exact type size cannot be measured in a delivered PNG; the brand value 22 px is kept as a design target."
+        },
+        "class-feed": {
+          "not_verified": "Exact type size cannot be measured in a delivered PNG; the brand value 22 px is kept as a design target."
+        },
+        "booking-story": {
+          "not_verified": "Exact type size cannot be measured in a delivered PNG; the brand value 22 px is kept as a design target."
+        }
+      }
+    },
+    {
+      "rule_id": "T03L",
+      "kind": "type",
+      "rule": "Body leading: 34 pixels from baseline to baseline.",
+      "source": "brand_identity.type_system.scale[03]",
+      "cells": {
+        "studio-launch": {
+          "not_verified": "Baseline-to-baseline leading cannot be verified reliably in a delivered PNG; 34 pixels is kept as a design target."
+        },
+        "class-feed": {
+          "not_verified": "Baseline-to-baseline leading cannot be verified reliably in a delivered PNG; 34 pixels is kept as a design target."
+        },
+        "booking-story": {
+          "not_verified": "Baseline-to-baseline leading cannot be verified reliably in a delivered PNG; 34 pixels is kept as a design target."
+        }
+      }
+    },
+    {
+      "rule_id": "T03T",
+      "kind": "type",
+      "rule": "Body tracking: 0.",
+      "source": "brand_identity.type_system.scale[03]",
+      "cells": {
+        "studio-launch": {
+          "not_verified": "Tracking in thousandths of an em cannot be judged in a delivered PNG; 0 is kept as a design target."
+        },
+        "class-feed": {
+          "not_verified": "Tracking in thousandths of an em cannot be judged in a delivered PNG; 0 is kept as a design target."
+        },
+        "booking-story": {
+          "not_verified": "Tracking in thousandths of an em cannot be judged in a delivered PNG; 0 is kept as a design target."
+        }
+      }
+    },
+    {
       "rule_id": "T04",
       "kind": "type",
-      "rule": "Fine print (class times and prices): Inter Medium, not Regular.",
+      "rule": "Fine print font (class times and prices): Inter Medium, not Regular.",
       "source": "brand_identity.type_system.scale[04] + rules",
       "cells": {
         "studio-launch": {
@@ -596,9 +902,60 @@
       }
     },
     {
+      "rule_id": "T04S",
+      "kind": "type",
+      "rule": "Fine print size: 16 px.",
+      "source": "brand_identity.type_system.scale[04] + rules",
+      "cells": {
+        "studio-launch": {
+          "not_verified": "Exact type size cannot be measured in a delivered PNG; the brand value 16 px is kept as a design target."
+        },
+        "class-feed": {
+          "not_verified": "Exact type size cannot be measured in a delivered PNG; the brand value 16 px is kept as a design target."
+        },
+        "booking-story": {
+          "not_verified": "Exact type size cannot be measured in a delivered PNG; the brand value 16 px is kept as a design target."
+        }
+      }
+    },
+    {
+      "rule_id": "T04L",
+      "kind": "type",
+      "rule": "Fine print leading: 24 pixels from baseline to baseline.",
+      "source": "brand_identity.type_system.scale[04]",
+      "cells": {
+        "studio-launch": {
+          "not_verified": "Baseline-to-baseline leading cannot be verified reliably in a delivered PNG; 24 pixels is kept as a design target."
+        },
+        "class-feed": {
+          "not_verified": "Baseline-to-baseline leading cannot be verified reliably in a delivered PNG; 24 pixels is kept as a design target."
+        },
+        "booking-story": {
+          "not_verified": "Baseline-to-baseline leading cannot be verified reliably in a delivered PNG; 24 pixels is kept as a design target."
+        }
+      }
+    },
+    {
+      "rule_id": "T04T",
+      "kind": "type",
+      "rule": "Fine print tracking: +15 thousandths of an em.",
+      "source": "brand_identity.type_system.scale[04]",
+      "cells": {
+        "studio-launch": {
+          "not_verified": "Tracking in thousandths of an em cannot be judged in a delivered PNG; +15 is kept as a design target."
+        },
+        "class-feed": {
+          "not_verified": "Tracking in thousandths of an em cannot be judged in a delivered PNG; +15 is kept as a design target."
+        },
+        "booking-story": {
+          "not_verified": "Tracking in thousandths of an em cannot be judged in a delivered PNG; +15 is kept as a design target."
+        }
+      }
+    },
+    {
       "rule_id": "T05",
       "kind": "type",
-      "rule": "Visible scale relationship: the headline (88 px launch, 56 px feed and story) is the largest text, above 22 px body and 16 px fine print.",
+      "rule": "Visible scale relationship: the headline is the largest text, larger than body text and fine print.",
       "source": "brand_identity.type_system.scale + rules",
       "cells": {
         "studio-launch": {
@@ -834,17 +1191,32 @@
       "cells": {
         "studio-launch": {
           "checks": [
-            "PHOTO-28/studio-launch/H024"
+            "PHOTO-28/studio-launch/H024",
+            "PHOTO-28/studio-launch/H083",
+            "PHOTO-28/studio-launch/H085",
+            "PHOTO-28/studio-launch/H087",
+            "PHOTO-28/studio-launch/H089",
+            "PHOTO-28/studio-launch/H091"
           ]
         },
         "class-feed": {
           "checks": [
-            "PHOTO-28/class-feed/H002"
+            "PHOTO-28/class-feed/H002",
+            "PHOTO-28/class-feed/H076",
+            "PHOTO-28/class-feed/H078",
+            "PHOTO-28/class-feed/H080",
+            "PHOTO-28/class-feed/H082",
+            "PHOTO-28/class-feed/H084"
           ]
         },
         "booking-story": {
           "checks": [
-            "PHOTO-28/booking-story/H023"
+            "PHOTO-28/booking-story/H023",
+            "PHOTO-28/booking-story/H075",
+            "PHOTO-28/booking-story/H077",
+            "PHOTO-28/booking-story/H079",
+            "PHOTO-28/booking-story/H081",
+            "PHOTO-28/booking-story/H083"
           ]
         }
       }
@@ -880,17 +1252,32 @@
       "cells": {
         "studio-launch": {
           "checks": [
-            "PHOTO-28/studio-launch/H014"
+            "PHOTO-28/studio-launch/H014",
+            "PHOTO-28/studio-launch/H082",
+            "PHOTO-28/studio-launch/H084",
+            "PHOTO-28/studio-launch/H086",
+            "PHOTO-28/studio-launch/H088",
+            "PHOTO-28/studio-launch/H090"
           ]
         },
         "class-feed": {
           "checks": [
-            "PHOTO-28/class-feed/H001"
+            "PHOTO-28/class-feed/H001",
+            "PHOTO-28/class-feed/H075",
+            "PHOTO-28/class-feed/H077",
+            "PHOTO-28/class-feed/H079",
+            "PHOTO-28/class-feed/H081",
+            "PHOTO-28/class-feed/H083"
           ]
         },
         "booking-story": {
           "checks": [
-            "PHOTO-28/booking-story/H013"
+            "PHOTO-28/booking-story/H013",
+            "PHOTO-28/booking-story/H074",
+            "PHOTO-28/booking-story/H076",
+            "PHOTO-28/booking-story/H078",
+            "PHOTO-28/booking-story/H080",
+            "PHOTO-28/booking-story/H082"
           ]
         }
       }
@@ -1105,7 +1492,7 @@
     {
       "rule_id": "R17",
       "kind": "brief",
-      "rule": "verda_instructor_04.jpg is not enlarged beyond its 825 x 1100 px source.",
+      "rule": "verda_instructor_04.jpg (825 x 1100 px source) is not enlarged to the point of visible pixelation, softness or generated detail.",
       "source": "asset_plan defect_engineered",
       "cells": {
         "studio-launch": {
@@ -1156,17 +1543,26 @@
       "cells": {
         "studio-launch": {
           "checks": [
-            "PHOTO-28/studio-launch/H006"
+            "PHOTO-28/studio-launch/H072",
+            "PHOTO-28/studio-launch/H073",
+            "PHOTO-28/studio-launch/H074",
+            "PHOTO-28/studio-launch/H075",
+            "PHOTO-28/studio-launch/H076",
+            "PHOTO-28/studio-launch/H077"
           ]
         },
         "class-feed": {
           "checks": [
-            "PHOTO-28/class-feed/H011"
+            "PHOTO-28/class-feed/H011",
+            "PHOTO-28/class-feed/H069",
+            "PHOTO-28/class-feed/H070"
           ]
         },
         "booking-story": {
           "checks": [
-            "PHOTO-28/booking-story/H005"
+            "PHOTO-28/booking-story/H005",
+            "PHOTO-28/booking-story/H068",
+            "PHOTO-28/booking-story/H069"
           ]
         }
       }
@@ -1286,7 +1682,13 @@
           "checks": [
             "PHOTO-28/studio-launch/H002",
             "PHOTO-28/studio-launch/H070",
-            "PHOTO-28/studio-launch/H006"
+            "PHOTO-28/studio-launch/H006",
+            "PHOTO-28/studio-launch/H072",
+            "PHOTO-28/studio-launch/H073",
+            "PHOTO-28/studio-launch/H074",
+            "PHOTO-28/studio-launch/H075",
+            "PHOTO-28/studio-launch/H076",
+            "PHOTO-28/studio-launch/H077"
           ]
         },
         "class-feed": {
@@ -1311,7 +1713,13 @@
             "PHOTO-28/studio-launch/H002",
             "PHOTO-28/studio-launch/H007",
             "PHOTO-28/studio-launch/H003",
-            "PHOTO-28/studio-launch/H065"
+            "PHOTO-28/studio-launch/H065",
+            "PHOTO-28/studio-launch/H072",
+            "PHOTO-28/studio-launch/H073",
+            "PHOTO-28/studio-launch/H074",
+            "PHOTO-28/studio-launch/H075",
+            "PHOTO-28/studio-launch/H076",
+            "PHOTO-28/studio-launch/H077"
           ]
         },
         "class-feed": {
@@ -1358,7 +1766,19 @@
             "PHOTO-28/class-feed/H010",
             "PHOTO-28/class-feed/H001",
             "PHOTO-28/class-feed/H011",
-            "PHOTO-28/class-feed/H012"
+            "PHOTO-28/class-feed/H012",
+            "PHOTO-28/class-feed/H069",
+            "PHOTO-28/class-feed/H070",
+            "PHOTO-28/class-feed/H075",
+            "PHOTO-28/class-feed/H077",
+            "PHOTO-28/class-feed/H079",
+            "PHOTO-28/class-feed/H081",
+            "PHOTO-28/class-feed/H083",
+            "PHOTO-28/class-feed/H076",
+            "PHOTO-28/class-feed/H078",
+            "PHOTO-28/class-feed/H080",
+            "PHOTO-28/class-feed/H082",
+            "PHOTO-28/class-feed/H084"
           ]
         },
         "booking-story": {
@@ -1377,6 +1797,7 @@
         },
         "class-feed": {
           "checks": [
+            "PHOTO-28/class-feed/H071",
             "PHOTO-28/class-feed/H063",
             "PHOTO-28/class-feed/H005",
             "PHOTO-28/class-feed/H028"

@@ -103,35 +103,35 @@ Revised input pack. Previous execution results are historical, not current ratin
 ## Human verifiers
 
 - `PHOTO-19/speaker-card-r002/H001` The portrait on “Summit speaker card - Marguerite Halloran” (speaker-card-r002.png) shows “Marguerite Halloran”, using the supplied photo speaker_portrait_01.jpg.
-- `PHOTO-19/speaker-card-r002/H002` Displayed 320 px wide, the role text on “Summit speaker card - Marguerite Halloran” (speaker-card-r002.png) is fully visible, no letters cut off at the edge.
+- `PHOTO-19/speaker-card-r002/H002` Viewed 320 px wide, every word of the role line on “Summit speaker card - Marguerite Halloran” (speaker-card-r002.png) can be read in full without zooming in.
 - `PHOTO-19/speaker-card-r002/H003` The CFS summit mark on “Summit speaker card - Marguerite Halloran” (speaker-card-r002.png) stays fully inside the image, nothing cut off at the edges.
 - `PHOTO-19/speaker-card-r002/H004` The name on “Summit speaker card - Marguerite Halloran” (speaker-card-r002.png) reads exactly “Marguerite Halloran”, as approved in speakers.csv, row 2.
 - `PHOTO-19/speaker-card-r002/H005` The role line on “Summit speaker card - Marguerite Halloran” (speaker-card-r002.png) reads exactly “Founder & CEO”, as approved in speakers.csv, row 2.
 - `PHOTO-19/speaker-card-r002/H006` The affiliation on “Summit speaker card - Marguerite Halloran” (speaker-card-r002.png) reads exactly “Aldermoor Robotics”, as approved in speakers.csv, row 2.
 - `PHOTO-19/speaker-card-r002/H007` The session on “Summit speaker card - Marguerite Halloran” (speaker-card-r002.png) reads exactly “Opening Keynote”, as approved in speakers.csv, row 2.
 - `PHOTO-19/speaker-card-r003/H001` The portrait on “Summit speaker card - Peter Vance” (speaker-card-r003.png) shows “Peter Vance”, using the supplied photo speaker_portrait_02.jpg.
-- `PHOTO-19/speaker-card-r003/H002` Displayed 320 px wide, the role text on “Summit speaker card - Peter Vance” (speaker-card-r003.png) is fully visible, no letters cut off at the edge.
+- `PHOTO-19/speaker-card-r003/H002` Viewed 320 px wide, every word of the role line on “Summit speaker card - Peter Vance” (speaker-card-r003.png) can be read in full without zooming in.
 - `PHOTO-19/speaker-card-r003/H003` The CFS summit mark on “Summit speaker card - Peter Vance” (speaker-card-r003.png) stays fully inside the image, nothing cut off at the edges.
 - `PHOTO-19/speaker-card-r003/H004` The name on “Summit speaker card - Peter Vance” (speaker-card-r003.png) reads exactly “Peter Vance”, as approved in speakers.csv, row 3.
 - `PHOTO-19/speaker-card-r003/H005` The role line on “Summit speaker card - Peter Vance” (speaker-card-r003.png) reads exactly “General Partner”, as approved in speakers.csv, row 3.
 - `PHOTO-19/speaker-card-r003/H006` The affiliation on “Summit speaker card - Peter Vance” (speaker-card-r003.png) reads exactly “Northwater Capital”, as approved in speakers.csv, row 3.
 - `PHOTO-19/speaker-card-r003/H007` The session on “Summit speaker card - Peter Vance” (speaker-card-r003.png) reads exactly “Funding Track”, as approved in speakers.csv, row 3.
 - `PHOTO-19/speaker-card-r005/H001` The portrait on “Summit speaker card - Ines Moreau” (speaker-card-r005.png) shows “Ines Moreau”, using the supplied photo speaker_portrait_03.jpg.
-- `PHOTO-19/speaker-card-r005/H002` Displayed 320 px wide, the role text on “Summit speaker card - Ines Moreau” (speaker-card-r005.png) is fully visible, no letters cut off at the edge.
+- `PHOTO-19/speaker-card-r005/H002` Viewed 320 px wide, every word of the role line on “Summit speaker card - Ines Moreau” (speaker-card-r005.png) can be read in full without zooming in.
 - `PHOTO-19/speaker-card-r005/H003` The CFS summit mark on “Summit speaker card - Ines Moreau” (speaker-card-r005.png) stays fully inside the image, nothing cut off at the edges.
 - `PHOTO-19/speaker-card-r005/H004` The name on “Summit speaker card - Ines Moreau” (speaker-card-r005.png) reads exactly “Ines Moreau”, as approved in speakers.csv, row 5.
 - `PHOTO-19/speaker-card-r005/H005` The role line on “Summit speaker card - Ines Moreau” (speaker-card-r005.png) reads exactly “Co-founder & CTO”, as approved in speakers.csv, row 5.
 - `PHOTO-19/speaker-card-r005/H006` The affiliation on “Summit speaker card - Ines Moreau” (speaker-card-r005.png) reads exactly “Verdance Labs”, as approved in speakers.csv, row 5.
 - `PHOTO-19/speaker-card-r005/H007` The session on “Summit speaker card - Ines Moreau” (speaker-card-r005.png) reads exactly “Building Track”, as approved in speakers.csv, row 5.
 - `PHOTO-19/speaker-card-r006/H001` The portrait on “Summit speaker card - Anders Lindqvist” (speaker-card-r006.png) shows “Anders Lindqvist”, using the supplied photo speaker_portrait_04.jpg.
-- `PHOTO-19/speaker-card-r006/H002` Displayed 320 px wide, the role text on “Summit speaker card - Anders Lindqvist” (speaker-card-r006.png) is fully visible, no letters cut off at the edge.
+- `PHOTO-19/speaker-card-r006/H002` Viewed 320 px wide, every word of the role line on “Summit speaker card - Anders Lindqvist” (speaker-card-r006.png) can be read in full without zooming in.
 - `PHOTO-19/speaker-card-r006/H003` The CFS summit mark on “Summit speaker card - Anders Lindqvist” (speaker-card-r006.png) stays fully inside the image, nothing cut off at the edges.
 - `PHOTO-19/speaker-card-r006/H004` The name on “Summit speaker card - Anders Lindqvist” (speaker-card-r006.png) reads exactly “Anders Lindqvist”, as approved in speakers.csv, row 6.
 - `PHOTO-19/speaker-card-r006/H005` The role line on “Summit speaker card - Anders Lindqvist” (speaker-card-r006.png) reads exactly “Founder”, as approved in speakers.csv, row 6.
 - `PHOTO-19/speaker-card-r006/H006` The affiliation on “Summit speaker card - Anders Lindqvist” (speaker-card-r006.png) reads exactly “Kastellet Systems”, as approved in speakers.csv, row 6.
 - `PHOTO-19/speaker-card-r006/H007` The session on “Summit speaker card - Anders Lindqvist” (speaker-card-r006.png) reads exactly “Scaling Track”, as approved in speakers.csv, row 6.
 - `PHOTO-19/speaker-card-r007/H001` The portrait on “Summit speaker card - Colm Byrne” (speaker-card-r007.png) shows “Colm Byrne”, using the supplied photo speaker_portrait_05.jpg.
-- `PHOTO-19/speaker-card-r007/H002` Displayed 320 px wide, the role text on “Summit speaker card - Colm Byrne” (speaker-card-r007.png) is fully visible, no letters cut off at the edge.
+- `PHOTO-19/speaker-card-r007/H002` Viewed 320 px wide, every word of the role line on “Summit speaker card - Colm Byrne” (speaker-card-r007.png) can be read in full without zooming in.
 - `PHOTO-19/speaker-card-r007/H003` The CFS summit mark on “Summit speaker card - Colm Byrne” (speaker-card-r007.png) stays fully inside the image, nothing cut off at the edges.
 - `PHOTO-19/speaker-card-r007/H004` The name on “Summit speaker card - Colm Byrne” (speaker-card-r007.png) reads exactly “Colm Byrne”, as approved in speakers.csv, row 7.
 - `PHOTO-19/speaker-card-r007/H005` The role line on “Summit speaker card - Colm Byrne” (speaker-card-r007.png) reads exactly “Operating Partner”, as approved in speakers.csv, row 7.
@@ -146,10 +146,10 @@ Revised input pack. Previous execution results are historical, not current ratin
 - `PHOTO-19/speaker-card-r007/H014` The ground behind the sitter on “Summit speaker card - Colm Byrne” (speaker-card-r007.png) is one flat, even tone, with no gradient, vignette, pattern or texture.
 - `PHOTO-19/speaker-card-r007/H015` The head on “Summit speaker card - Colm Byrne” (speaker-card-r007.png) is neither visibly larger nor smaller in frame than the head on “Summit speaker card - Ines Moreau” (speaker-card-r005.png).
 - `PHOTO-19/speaker-card-r007/H016` The skin on “Summit speaker card - Colm Byrne” (speaker-card-r007.png) keeps the natural texture seen in speaker_portrait_05.jpg, with no smoothing, glow or glamour retouching added.
-- `PHOTO-19/speaker-card-r007/H017` The skin on “Summit speaker card - Colm Byrne” (speaker-card-r007.png) looks natural in colour, with no colour cast carried over from speaker_portrait_05.jpg and no warm filter added.
+- `PHOTO-19/speaker-card-r007/H017` The skin on “Summit speaker card - Colm Byrne” (speaker-card-r007.png) looks natural in colour, with no colour cast carried over from speaker_portrait_05.jpg.
 - `PHOTO-19/speaker-card-r007/H018` The portrait on “Summit speaker card - Colm Byrne” (speaker-card-r007.png) shows no hard direct-flash look: no hard flash shadow behind the head and no flat shine across the face.
 - `PHOTO-19/speaker-card-r008/H001` The portrait on “Summit speaker card - Dana Whitfield” (speaker-card-r008.png) shows “Dana Whitfield”, using the supplied photo speaker_portrait_06.jpg.
-- `PHOTO-19/speaker-card-r008/H002` Displayed 320 px wide, the role text on “Summit speaker card - Dana Whitfield” (speaker-card-r008.png) is fully visible, no letters cut off at the edge.
+- `PHOTO-19/speaker-card-r008/H002` Viewed 320 px wide, every word of the role line on “Summit speaker card - Dana Whitfield” (speaker-card-r008.png) can be read in full without zooming in.
 - `PHOTO-19/speaker-card-r008/H003` The CFS summit mark on “Summit speaker card - Dana Whitfield” (speaker-card-r008.png) stays fully inside the image, nothing cut off at the edges.
 - `PHOTO-19/speaker-card-r008/H004` The name on “Summit speaker card - Dana Whitfield” (speaker-card-r008.png) reads exactly “Dana Whitfield”, as approved in speakers.csv, row 8.
 - `PHOTO-19/speaker-card-r008/H005` The role line on “Summit speaker card - Dana Whitfield” (speaker-card-r008.png) reads exactly “Founder & CEO”, as approved in speakers.csv, row 8.
@@ -164,10 +164,10 @@ Revised input pack. Previous execution results are historical, not current ratin
 - `PHOTO-19/speaker-card-r008/H014` The ground behind the sitter on “Summit speaker card - Dana Whitfield” (speaker-card-r008.png) is one flat, even tone, with no gradient, vignette, pattern or texture.
 - `PHOTO-19/speaker-card-r008/H015` The head on “Summit speaker card - Dana Whitfield” (speaker-card-r008.png) is neither visibly larger nor smaller in frame than the head on “Summit speaker card - Ines Moreau” (speaker-card-r005.png).
 - `PHOTO-19/speaker-card-r008/H016` The skin on “Summit speaker card - Dana Whitfield” (speaker-card-r008.png) keeps the natural texture seen in speaker_portrait_06.jpg, with no smoothing, glow or glamour retouching added.
-- `PHOTO-19/speaker-card-r008/H017` The skin on “Summit speaker card - Dana Whitfield” (speaker-card-r008.png) looks natural in colour, with no colour cast carried over from speaker_portrait_06.jpg and no warm filter added.
+- `PHOTO-19/speaker-card-r008/H017` The skin on “Summit speaker card - Dana Whitfield” (speaker-card-r008.png) looks natural in colour, with no colour cast carried over from speaker_portrait_06.jpg.
 - `PHOTO-19/speaker-card-r008/H018` The portrait on “Summit speaker card - Dana Whitfield” (speaker-card-r008.png) shows no hard direct-flash look: no hard flash shadow behind the head and no flat shine across the face.
 - `PHOTO-19/speaker-card-r009/H001` The portrait on “Summit speaker card - Estelle Rioux” (speaker-card-r009.png) shows “Estelle Rioux”, using the supplied photo speaker_portrait_07.jpg.
-- `PHOTO-19/speaker-card-r009/H002` Displayed 320 px wide, the role text on “Summit speaker card - Estelle Rioux” (speaker-card-r009.png) is fully visible, no letters cut off at the edge.
+- `PHOTO-19/speaker-card-r009/H002` Viewed 320 px wide, every word of the role line on “Summit speaker card - Estelle Rioux” (speaker-card-r009.png) can be read in full without zooming in.
 - `PHOTO-19/speaker-card-r009/H003` The CFS summit mark on “Summit speaker card - Estelle Rioux” (speaker-card-r009.png) stays fully inside the image, nothing cut off at the edges.
 - `PHOTO-19/speaker-card-r009/H004` The name on “Summit speaker card - Estelle Rioux” (speaker-card-r009.png) reads exactly “Estelle Rioux”, as approved in speakers.csv, row 9.
 - `PHOTO-19/speaker-card-r009/H005` The role line on “Summit speaker card - Estelle Rioux” (speaker-card-r009.png) reads exactly “Managing Director”, as approved in speakers.csv, row 9.
@@ -182,10 +182,10 @@ Revised input pack. Previous execution results are historical, not current ratin
 - `PHOTO-19/speaker-card-r009/H014` The ground behind the sitter on “Summit speaker card - Estelle Rioux” (speaker-card-r009.png) is one flat, even tone, with no gradient, vignette, pattern or texture.
 - `PHOTO-19/speaker-card-r009/H015` The head on “Summit speaker card - Estelle Rioux” (speaker-card-r009.png) is neither visibly larger nor smaller in frame than the head on “Summit speaker card - Ines Moreau” (speaker-card-r005.png).
 - `PHOTO-19/speaker-card-r009/H016` The skin on “Summit speaker card - Estelle Rioux” (speaker-card-r009.png) keeps the natural texture seen in speaker_portrait_07.jpg, with no smoothing, glow or glamour retouching added.
-- `PHOTO-19/speaker-card-r009/H017` The skin on “Summit speaker card - Estelle Rioux” (speaker-card-r009.png) looks natural in colour, with none of the warm lamplight cast of speaker_portrait_07.jpg left and no warm filter added.
+- `PHOTO-19/speaker-card-r009/H017` The skin on “Summit speaker card - Estelle Rioux” (speaker-card-r009.png) looks natural in colour, with none of the warm lamplight cast of speaker_portrait_07.jpg left.
 - `PHOTO-19/speaker-card-r009/H018` The portrait on “Summit speaker card - Estelle Rioux” (speaker-card-r009.png) shows no hard direct-flash look: no hard flash shadow behind the head and no flat shine across the face.
 - `PHOTO-19/speaker-card-r010/H001` The portrait on “Summit speaker card - Grant Mackey” (speaker-card-r010.png) shows “Grant Mackey”, using the supplied photo speaker_portrait_08.jpg.
-- `PHOTO-19/speaker-card-r010/H002` Displayed 320 px wide, the role text on “Summit speaker card - Grant Mackey” (speaker-card-r010.png) is fully visible, no letters cut off at the edge.
+- `PHOTO-19/speaker-card-r010/H002` Viewed 320 px wide, every word of the role line on “Summit speaker card - Grant Mackey” (speaker-card-r010.png) can be read in full without zooming in.
 - `PHOTO-19/speaker-card-r010/H003` The CFS summit mark on “Summit speaker card - Grant Mackey” (speaker-card-r010.png) stays fully inside the image, nothing cut off at the edges.
 - `PHOTO-19/speaker-card-r010/H004` The name on “Summit speaker card - Grant Mackey” (speaker-card-r010.png) reads exactly “Grant Mackey”, as approved in speakers.csv, row 10.
 - `PHOTO-19/speaker-card-r010/H005` The role line on “Summit speaker card - Grant Mackey” (speaker-card-r010.png) reads exactly “Founder”, as approved in speakers.csv, row 10.
@@ -201,10 +201,10 @@ Revised input pack. Previous execution results are historical, not current ratin
 - `PHOTO-19/speaker-card-r010/H015` The head on “Summit speaker card - Grant Mackey” (speaker-card-r010.png) is neither visibly larger nor smaller in frame than the head on “Summit speaker card - Ines Moreau” (speaker-card-r005.png).
 - `PHOTO-19/speaker-card-r010/H016` The skin on “Summit speaker card - Grant Mackey” (speaker-card-r010.png) is smoothed no further than in speaker_portrait_08.jpg: no extra airbrushing, glow or glossy finish is added.
 - `PHOTO-19/speaker-card-r010/H017` Compared with speaker_portrait_08.jpg, the brightened eyes on “Summit speaker card - Grant Mackey” (speaker-card-r010.png) are toned down to a natural brightness.
-- `PHOTO-19/speaker-card-r010/H018` The skin on “Summit speaker card - Grant Mackey” (speaker-card-r010.png) looks natural in colour, with none of the cool studio-light cast of speaker_portrait_08.jpg left and no warm filter added.
+- `PHOTO-19/speaker-card-r010/H018` The skin on “Summit speaker card - Grant Mackey” (speaker-card-r010.png) looks natural in colour, with none of the cool studio-light cast of speaker_portrait_08.jpg left.
 - `PHOTO-19/speaker-card-r010/H019` The portrait on “Summit speaker card - Grant Mackey” (speaker-card-r010.png) shows no hard direct-flash look: no hard flash shadow behind the head and no flat shine across the face.
 - `PHOTO-19/speaker-card-r011/H001` The portrait on “Summit speaker card - Sofia Bellini” (speaker-card-r011.png) shows “Sofia Bellini”, using the supplied photo speaker_portrait_09.jpg.
-- `PHOTO-19/speaker-card-r011/H002` Displayed 320 px wide, the role text on “Summit speaker card - Sofia Bellini” (speaker-card-r011.png) is fully visible, no letters cut off at the edge.
+- `PHOTO-19/speaker-card-r011/H002` Viewed 320 px wide, every word of the role line on “Summit speaker card - Sofia Bellini” (speaker-card-r011.png) can be read in full without zooming in.
 - `PHOTO-19/speaker-card-r011/H003` The CFS summit mark on “Summit speaker card - Sofia Bellini” (speaker-card-r011.png) stays fully inside the image, nothing cut off at the edges.
 - `PHOTO-19/speaker-card-r011/H004` The name on “Summit speaker card - Sofia Bellini” (speaker-card-r011.png) reads exactly “Sofia Bellini”, as approved in speakers.csv, row 11.
 - `PHOTO-19/speaker-card-r011/H005` The role line on “Summit speaker card - Sofia Bellini” (speaker-card-r011.png) reads exactly “Partner”, as approved in speakers.csv, row 11.
@@ -219,10 +219,10 @@ Revised input pack. Previous execution results are historical, not current ratin
 - `PHOTO-19/speaker-card-r011/H014` The ground behind the sitter on “Summit speaker card - Sofia Bellini” (speaker-card-r011.png) is one flat, even tone, with no gradient, vignette, pattern or texture.
 - `PHOTO-19/speaker-card-r011/H015` The head on “Summit speaker card - Sofia Bellini” (speaker-card-r011.png) is neither visibly larger nor smaller in frame than the head on “Summit speaker card - Ines Moreau” (speaker-card-r005.png).
 - `PHOTO-19/speaker-card-r011/H016` The skin on “Summit speaker card - Sofia Bellini” (speaker-card-r011.png) keeps the natural texture seen in speaker_portrait_09.jpg, with no smoothing, glow or glamour retouching added.
-- `PHOTO-19/speaker-card-r011/H017` The skin on “Summit speaker card - Sofia Bellini” (speaker-card-r011.png) looks natural in colour, with none of the warm venue-light cast of speaker_portrait_09.jpg left and no warm filter added.
+- `PHOTO-19/speaker-card-r011/H017` The skin on “Summit speaker card - Sofia Bellini” (speaker-card-r011.png) looks natural in colour, with none of the warm venue-light cast of speaker_portrait_09.jpg left.
 - `PHOTO-19/speaker-card-r011/H018` The portrait on “Summit speaker card - Sofia Bellini” (speaker-card-r011.png) shows no hard direct-flash look: no hard flash shadow behind the head and no flat shine across the face.
 - `PHOTO-19/speaker-card-r013/H001` The portrait on “Summit speaker card - Nils Haugen” (speaker-card-r013.png) shows “Nils Haugen”, using the supplied photo speaker_portrait_10.jpg.
-- `PHOTO-19/speaker-card-r013/H002` Displayed 320 px wide, the role text on “Summit speaker card - Nils Haugen” (speaker-card-r013.png) is fully visible, no letters cut off at the edge.
+- `PHOTO-19/speaker-card-r013/H002` Viewed 320 px wide, every word of the role line on “Summit speaker card - Nils Haugen” (speaker-card-r013.png) can be read in full without zooming in.
 - `PHOTO-19/speaker-card-r013/H003` The CFS summit mark on “Summit speaker card - Nils Haugen” (speaker-card-r013.png) stays fully inside the image, nothing cut off at the edges.
 - `PHOTO-19/speaker-card-r013/H004` The name on “Summit speaker card - Nils Haugen” (speaker-card-r013.png) reads exactly “Nils Haugen”, as approved in speakers.csv, row 13.
 - `PHOTO-19/speaker-card-r013/H005` The role line on “Summit speaker card - Nils Haugen” (speaker-card-r013.png) reads exactly “Co-founder & CEO”, as approved in speakers.csv, row 13.
@@ -237,10 +237,10 @@ Revised input pack. Previous execution results are historical, not current ratin
 - `PHOTO-19/speaker-card-r013/H014` The ground behind the sitter on “Summit speaker card - Nils Haugen” (speaker-card-r013.png) is one flat, even tone, with no gradient, vignette, pattern or texture.
 - `PHOTO-19/speaker-card-r013/H015` The head on “Summit speaker card - Nils Haugen” (speaker-card-r013.png) is neither visibly larger nor smaller in frame than the head on “Summit speaker card - Ines Moreau” (speaker-card-r005.png).
 - `PHOTO-19/speaker-card-r013/H016` The skin on “Summit speaker card - Nils Haugen” (speaker-card-r013.png) keeps the natural texture seen in speaker_portrait_10.jpg, with no smoothing, glow or glamour retouching added.
-- `PHOTO-19/speaker-card-r013/H017` The skin on “Summit speaker card - Nils Haugen” (speaker-card-r013.png) looks natural in colour, with no colour cast carried over from speaker_portrait_10.jpg and no warm filter added.
+- `PHOTO-19/speaker-card-r013/H017` The skin on “Summit speaker card - Nils Haugen” (speaker-card-r013.png) looks natural in colour, with no colour cast carried over from speaker_portrait_10.jpg.
 - `PHOTO-19/speaker-card-r013/H018` The portrait on “Summit speaker card - Nils Haugen” (speaker-card-r013.png) shows no hard direct-flash look: no hard flash shadow behind the head and no flat shine across the face.
 - `PHOTO-19/speaker-card-r014/H001` The portrait on “Summit speaker card - Robin Tate” (speaker-card-r014.png) shows “Robin Tate”, using the supplied photo speaker_portrait_11.jpg.
-- `PHOTO-19/speaker-card-r014/H002` Displayed 320 px wide, the role text on “Summit speaker card - Robin Tate” (speaker-card-r014.png) is fully visible, no letters cut off at the edge.
+- `PHOTO-19/speaker-card-r014/H002` Viewed 320 px wide, every word of the role line on “Summit speaker card - Robin Tate” (speaker-card-r014.png) can be read in full without zooming in.
 - `PHOTO-19/speaker-card-r014/H003` The CFS summit mark on “Summit speaker card - Robin Tate” (speaker-card-r014.png) stays fully inside the image, nothing cut off at the edges.
 - `PHOTO-19/speaker-card-r014/H004` The name on “Summit speaker card - Robin Tate” (speaker-card-r014.png) reads exactly “Robin Tate”, as approved in speakers.csv, row 14.
 - `PHOTO-19/speaker-card-r014/H005` The role line on “Summit speaker card - Robin Tate” (speaker-card-r014.png) reads exactly “Founder”, as approved in speakers.csv, row 14.
@@ -255,10 +255,10 @@ Revised input pack. Previous execution results are historical, not current ratin
 - `PHOTO-19/speaker-card-r014/H014` The ground behind the sitter on “Summit speaker card - Robin Tate” (speaker-card-r014.png) is one flat, even tone, with no gradient, vignette, pattern or texture.
 - `PHOTO-19/speaker-card-r014/H015` The head on “Summit speaker card - Robin Tate” (speaker-card-r014.png) is neither visibly larger nor smaller in frame than the head on “Summit speaker card - Ines Moreau” (speaker-card-r005.png).
 - `PHOTO-19/speaker-card-r014/H016` The skin on “Summit speaker card - Robin Tate” (speaker-card-r014.png) keeps the natural texture seen in speaker_portrait_11.jpg, with no smoothing, glow or glamour retouching added.
-- `PHOTO-19/speaker-card-r014/H017` The skin on “Summit speaker card - Robin Tate” (speaker-card-r014.png) looks natural in colour, with none of the warm mixed-light cast of speaker_portrait_11.jpg left and no warm filter added.
+- `PHOTO-19/speaker-card-r014/H017` The skin on “Summit speaker card - Robin Tate” (speaker-card-r014.png) looks natural in colour, with none of the warm mixed-light cast of speaker_portrait_11.jpg left.
 - `PHOTO-19/speaker-card-r014/H018` The portrait on “Summit speaker card - Robin Tate” (speaker-card-r014.png) shows no hard direct-flash look: no hard flash shadow behind the head and no flat shine across the face.
 - `PHOTO-19/speaker-card-r015/H001` The portrait on “Summit speaker card - Bernadette Cruz” (speaker-card-r015.png) shows “Bernadette Cruz”, using the supplied photo speaker_portrait_12.jpg.
-- `PHOTO-19/speaker-card-r015/H002` Displayed 320 px wide, the role text on “Summit speaker card - Bernadette Cruz” (speaker-card-r015.png) is fully visible, no letters cut off at the edge.
+- `PHOTO-19/speaker-card-r015/H002` Viewed 320 px wide, every word of the role line on “Summit speaker card - Bernadette Cruz” (speaker-card-r015.png) can be read in full without zooming in.
 - `PHOTO-19/speaker-card-r015/H003` The CFS summit mark on “Summit speaker card - Bernadette Cruz” (speaker-card-r015.png) stays fully inside the image, nothing cut off at the edges.
 - `PHOTO-19/speaker-card-r015/H004` The name on “Summit speaker card - Bernadette Cruz” (speaker-card-r015.png) reads exactly “Bernadette Cruz”, as approved in speakers.csv, row 15.
 - `PHOTO-19/speaker-card-r015/H005` The role line on “Summit speaker card - Bernadette Cruz” (speaker-card-r015.png) reads exactly “Chief Executive”, as approved in speakers.csv, row 15.
@@ -273,10 +273,10 @@ Revised input pack. Previous execution results are historical, not current ratin
 - `PHOTO-19/speaker-card-r015/H014` The ground behind the sitter on “Summit speaker card - Bernadette Cruz” (speaker-card-r015.png) is one flat, even tone, with no gradient, vignette, pattern or texture.
 - `PHOTO-19/speaker-card-r015/H015` The head on “Summit speaker card - Bernadette Cruz” (speaker-card-r015.png) is neither visibly larger nor smaller in frame than the head on “Summit speaker card - Ines Moreau” (speaker-card-r005.png).
 - `PHOTO-19/speaker-card-r015/H016` The skin on “Summit speaker card - Bernadette Cruz” (speaker-card-r015.png) keeps the natural texture seen in speaker_portrait_12.jpg, with no smoothing, glow or glamour retouching added.
-- `PHOTO-19/speaker-card-r015/H017` The skin on “Summit speaker card - Bernadette Cruz” (speaker-card-r015.png) looks natural in colour, with none of the cool open-shade cast of speaker_portrait_12.jpg left and no warm filter added.
+- `PHOTO-19/speaker-card-r015/H017` The skin on “Summit speaker card - Bernadette Cruz” (speaker-card-r015.png) looks natural in colour, with none of the cool open-shade cast of speaker_portrait_12.jpg left.
 - `PHOTO-19/speaker-card-r015/H018` The portrait on “Summit speaker card - Bernadette Cruz” (speaker-card-r015.png) shows no hard direct-flash look: no hard flash shadow behind the head and no flat shine across the face.
 - `PHOTO-19/speaker-card-r016/H001` The portrait on “Summit speaker card - Hugo Almeida” (speaker-card-r016.png) shows “Hugo Almeida”, using the supplied photo speaker_portrait_13.jpg.
-- `PHOTO-19/speaker-card-r016/H002` Displayed 320 px wide, the role text on “Summit speaker card - Hugo Almeida” (speaker-card-r016.png) is fully visible, no letters cut off at the edge.
+- `PHOTO-19/speaker-card-r016/H002` Viewed 320 px wide, every word of the role line on “Summit speaker card - Hugo Almeida” (speaker-card-r016.png) can be read in full without zooming in.
 - `PHOTO-19/speaker-card-r016/H003` The CFS summit mark on “Summit speaker card - Hugo Almeida” (speaker-card-r016.png) stays fully inside the image, nothing cut off at the edges.
 - `PHOTO-19/speaker-card-r016/H004` The name on “Summit speaker card - Hugo Almeida” (speaker-card-r016.png) reads exactly “Hugo Almeida”, as approved in speakers.csv, row 16.
 - `PHOTO-19/speaker-card-r016/H005` The role line on “Summit speaker card - Hugo Almeida” (speaker-card-r016.png) reads exactly “Founder”, as approved in speakers.csv, row 16.
@@ -291,10 +291,10 @@ Revised input pack. Previous execution results are historical, not current ratin
 - `PHOTO-19/speaker-card-r016/H014` The ground behind the sitter on “Summit speaker card - Hugo Almeida” (speaker-card-r016.png) is one flat, even tone, with no gradient, vignette, pattern or texture.
 - `PHOTO-19/speaker-card-r016/H015` The head on “Summit speaker card - Hugo Almeida” (speaker-card-r016.png) is neither visibly larger nor smaller in frame than the head on “Summit speaker card - Ines Moreau” (speaker-card-r005.png).
 - `PHOTO-19/speaker-card-r016/H016` The skin on “Summit speaker card - Hugo Almeida” (speaker-card-r016.png) keeps the natural texture seen in speaker_portrait_13.jpg, with no smoothing, glow or glamour retouching added.
-- `PHOTO-19/speaker-card-r016/H017` The skin on “Summit speaker card - Hugo Almeida” (speaker-card-r016.png) looks natural in colour, with none of the warm office-light cast of speaker_portrait_13.jpg left and no warm filter added.
+- `PHOTO-19/speaker-card-r016/H017` The skin on “Summit speaker card - Hugo Almeida” (speaker-card-r016.png) looks natural in colour, with none of the warm office-light cast of speaker_portrait_13.jpg left.
 - `PHOTO-19/speaker-card-r016/H018` The portrait on “Summit speaker card - Hugo Almeida” (speaker-card-r016.png) shows no hard direct-flash look: no hard flash shadow behind the head and no flat shine across the face.
 - `PHOTO-19/speaker-card-r017/H001` The portrait on “Summit speaker card - Karin Voss” (speaker-card-r017.png) shows “Karin Voss”, using the supplied photo speaker_portrait_14.jpg.
-- `PHOTO-19/speaker-card-r017/H002` Displayed 320 px wide, the role text on “Summit speaker card - Karin Voss” (speaker-card-r017.png) is fully visible, no letters cut off at the edge.
+- `PHOTO-19/speaker-card-r017/H002` Viewed 320 px wide, every word of the role line on “Summit speaker card - Karin Voss” (speaker-card-r017.png) can be read in full without zooming in.
 - `PHOTO-19/speaker-card-r017/H003` The CFS summit mark on “Summit speaker card - Karin Voss” (speaker-card-r017.png) stays fully inside the image, nothing cut off at the edges.
 - `PHOTO-19/speaker-card-r017/H004` The name on “Summit speaker card - Karin Voss” (speaker-card-r017.png) reads exactly “Karin Voss”, as approved in speakers.csv, row 17.
 - `PHOTO-19/speaker-card-r017/H005` The role line on “Summit speaker card - Karin Voss” (speaker-card-r017.png) reads exactly “Co-founder, Managing Partner and Head of Platform Investments, Europe”, as approved in speakers.csv, row 17.
@@ -309,17 +309,17 @@ Revised input pack. Previous execution results are historical, not current ratin
 - `PHOTO-19/speaker-card-r017/H014` The ground behind the sitter on “Summit speaker card - Karin Voss” (speaker-card-r017.png) is one flat, even tone, with no gradient, vignette, pattern or texture.
 - `PHOTO-19/speaker-card-r017/H015` The head on “Summit speaker card - Karin Voss” (speaker-card-r017.png) is neither visibly larger nor smaller in frame than the head on “Summit speaker card - Ines Moreau” (speaker-card-r005.png).
 - `PHOTO-19/speaker-card-r017/H016` The skin on “Summit speaker card - Karin Voss” (speaker-card-r017.png) keeps the natural texture seen in speaker_portrait_14.jpg, with no smoothing, glow or glamour retouching added.
-- `PHOTO-19/speaker-card-r017/H017` The skin on “Summit speaker card - Karin Voss” (speaker-card-r017.png) looks natural in colour, with no colour cast carried over from speaker_portrait_14.jpg and no warm filter added.
+- `PHOTO-19/speaker-card-r017/H017` The skin on “Summit speaker card - Karin Voss” (speaker-card-r017.png) looks natural in colour, with no colour cast carried over from speaker_portrait_14.jpg.
 - `PHOTO-19/speaker-card-r017/H018` The portrait on “Summit speaker card - Karin Voss” (speaker-card-r017.png) shows no hard direct-flash look: no hard flash shadow behind the head and no flat shine across the face.
 - `PHOTO-19/speaker-card-r018/H001` The portrait on “Summit host card - Laurel Beckett” (speaker-card-r018.png) shows “Laurel Beckett”, using the supplied photo staff_portrait_01.jpg.
-- `PHOTO-19/speaker-card-r018/H002` Displayed 320 px wide, the role text on “Summit host card - Laurel Beckett” (speaker-card-r018.png) is fully visible, no letters cut off at the edge.
+- `PHOTO-19/speaker-card-r018/H002` Viewed 320 px wide, every word of the role line on “Summit host card - Laurel Beckett” (speaker-card-r018.png) can be read in full without zooming in.
 - `PHOTO-19/speaker-card-r018/H003` The CFS summit mark on “Summit host card - Laurel Beckett” (speaker-card-r018.png) stays fully inside the image, nothing cut off at the edges.
 - `PHOTO-19/speaker-card-r018/H004` The name on “Summit host card - Laurel Beckett” (speaker-card-r018.png) reads exactly “Laurel Beckett”, as approved in speakers.csv, row 18.
 - `PHOTO-19/speaker-card-r018/H005` The role line on “Summit host card - Laurel Beckett” (speaker-card-r018.png) reads exactly “Programme Director”, as approved in speakers.csv, row 18.
 - `PHOTO-19/speaker-card-r018/H006` The affiliation on “Summit host card - Laurel Beckett” (speaker-card-r018.png) reads exactly “Cascadia Founders Summit”, as approved in speakers.csv, row 18.
 - `PHOTO-19/speaker-card-r018/H007` The session on “Summit host card - Laurel Beckett” (speaker-card-r018.png) reads exactly “Host”, as approved in speakers.csv, row 18.
 - `PHOTO-19/speaker-card-r019/H001` The portrait on “Summit host card - Owen Faraday” (speaker-card-r019.png) shows “Owen Faraday”, using the supplied photo staff_portrait_02.jpg.
-- `PHOTO-19/speaker-card-r019/H002` Displayed 320 px wide, the role text on “Summit host card - Owen Faraday” (speaker-card-r019.png) is fully visible, no letters cut off at the edge.
+- `PHOTO-19/speaker-card-r019/H002` Viewed 320 px wide, every word of the role line on “Summit host card - Owen Faraday” (speaker-card-r019.png) can be read in full without zooming in.
 - `PHOTO-19/speaker-card-r019/H003` The CFS summit mark on “Summit host card - Owen Faraday” (speaker-card-r019.png) stays fully inside the image, nothing cut off at the edges.
 - `PHOTO-19/speaker-card-r019/H004` The name on “Summit host card - Owen Faraday” (speaker-card-r019.png) reads exactly “Owen Faraday”, as approved in speakers.csv, row 19.
 - `PHOTO-19/speaker-card-r019/H005` The role line on “Summit host card - Owen Faraday” (speaker-card-r019.png) reads exactly “Operations Lead”, as approved in speakers.csv, row 19.
@@ -334,10 +334,10 @@ Revised input pack. Previous execution results are historical, not current ratin
 - `PHOTO-19/speaker-card-r019/H014` The ground behind the sitter on “Summit host card - Owen Faraday” (speaker-card-r019.png) is one flat, even tone, with no gradient, vignette, pattern or texture.
 - `PHOTO-19/speaker-card-r019/H015` The head on “Summit host card - Owen Faraday” (speaker-card-r019.png) is neither visibly larger nor smaller in frame than the head on “Summit speaker card - Ines Moreau” (speaker-card-r005.png).
 - `PHOTO-19/speaker-card-r019/H016` The skin on “Summit host card - Owen Faraday” (speaker-card-r019.png) keeps the natural texture seen in staff_portrait_02.jpg, with no smoothing, glow or glamour retouching added.
-- `PHOTO-19/speaker-card-r019/H017` The skin on “Summit host card - Owen Faraday” (speaker-card-r019.png) looks natural in colour, with no colour cast carried over from staff_portrait_02.jpg and no warm filter added.
+- `PHOTO-19/speaker-card-r019/H017` The skin on “Summit host card - Owen Faraday” (speaker-card-r019.png) looks natural in colour, with no colour cast carried over from staff_portrait_02.jpg.
 - `PHOTO-19/speaker-card-r019/H018` The portrait on “Summit host card - Owen Faraday” (speaker-card-r019.png) shows no hard direct-flash look: no hard flash shadow behind the head and no flat shine across the face.
 - `PHOTO-19/speaker-card-r020/H001` The portrait on “Summit host card - Mireille Dufort” (speaker-card-r020.png) shows “Mireille Dufort”, using the supplied photo staff_portrait_03.jpg.
-- `PHOTO-19/speaker-card-r020/H002` Displayed 320 px wide, the role text on “Summit host card - Mireille Dufort” (speaker-card-r020.png) is fully visible, no letters cut off at the edge.
+- `PHOTO-19/speaker-card-r020/H002` Viewed 320 px wide, every word of the role line on “Summit host card - Mireille Dufort” (speaker-card-r020.png) can be read in full without zooming in.
 - `PHOTO-19/speaker-card-r020/H003` The CFS summit mark on “Summit host card - Mireille Dufort” (speaker-card-r020.png) stays fully inside the image, nothing cut off at the edges.
 - `PHOTO-19/speaker-card-r020/H004` The name on “Summit host card - Mireille Dufort” (speaker-card-r020.png) reads exactly “Mireille Dufort”, as approved in speakers.csv, row 20.
 - `PHOTO-19/speaker-card-r020/H005` The role line on “Summit host card - Mireille Dufort” (speaker-card-r020.png) reads exactly “Partnerships Manager”, as approved in speakers.csv, row 20.
@@ -352,10 +352,10 @@ Revised input pack. Previous execution results are historical, not current ratin
 - `PHOTO-19/speaker-card-r020/H014` The ground behind the sitter on “Summit host card - Mireille Dufort” (speaker-card-r020.png) is one flat, even tone, with no gradient, vignette, pattern or texture.
 - `PHOTO-19/speaker-card-r020/H015` The head on “Summit host card - Mireille Dufort” (speaker-card-r020.png) is neither visibly larger nor smaller in frame than the head on “Summit speaker card - Ines Moreau” (speaker-card-r005.png).
 - `PHOTO-19/speaker-card-r020/H016` The skin on “Summit host card - Mireille Dufort” (speaker-card-r020.png) keeps the natural texture seen in staff_portrait_03.jpg, with no smoothing, glow or glamour retouching added.
-- `PHOTO-19/speaker-card-r020/H017` The skin on “Summit host card - Mireille Dufort” (speaker-card-r020.png) looks natural in colour, with none of the green fluorescent tinge of staff_portrait_03.jpg left and no warm filter added.
+- `PHOTO-19/speaker-card-r020/H017` The skin on “Summit host card - Mireille Dufort” (speaker-card-r020.png) looks natural in colour, with none of the green fluorescent tinge of staff_portrait_03.jpg left.
 - `PHOTO-19/speaker-card-r020/H018` The portrait on “Summit host card - Mireille Dufort” (speaker-card-r020.png) shows no hard direct-flash look: no hard flash shadow behind the head and no flat shine across the face.
 - `PHOTO-19/speaker-card-r021/H001` The portrait on “Summit host card - Jonah Pryce” (speaker-card-r021.png) shows “Jonah Pryce”, using the supplied photo staff_portrait_04.jpg.
-- `PHOTO-19/speaker-card-r021/H002` Displayed 320 px wide, the role text on “Summit host card - Jonah Pryce” (speaker-card-r021.png) is fully visible, no letters cut off at the edge.
+- `PHOTO-19/speaker-card-r021/H002` Viewed 320 px wide, every word of the role line on “Summit host card - Jonah Pryce” (speaker-card-r021.png) can be read in full without zooming in.
 - `PHOTO-19/speaker-card-r021/H003` The CFS summit mark on “Summit host card - Jonah Pryce” (speaker-card-r021.png) stays fully inside the image, nothing cut off at the edges.
 - `PHOTO-19/speaker-card-r021/H004` The name on “Summit host card - Jonah Pryce” (speaker-card-r021.png) reads exactly “Jonah Pryce”, as approved in speakers.csv, row 21.
 - `PHOTO-19/speaker-card-r021/H005` The role line on “Summit host card - Jonah Pryce” (speaker-card-r021.png) reads exactly “Production Coordinator”, as approved in speakers.csv, row 21.
@@ -370,14 +370,14 @@ Revised input pack. Previous execution results are historical, not current ratin
 - `PHOTO-19/speaker-card-r021/H014` The ground behind the sitter on “Summit host card - Jonah Pryce” (speaker-card-r021.png) is one flat, even tone, with no gradient, vignette, pattern or texture.
 - `PHOTO-19/speaker-card-r021/H015` The head on “Summit host card - Jonah Pryce” (speaker-card-r021.png) is neither visibly larger nor smaller in frame than the head on “Summit speaker card - Ines Moreau” (speaker-card-r005.png).
 - `PHOTO-19/speaker-card-r021/H016` The skin on “Summit host card - Jonah Pryce” (speaker-card-r021.png) keeps the natural texture seen in staff_portrait_04.jpg, with no smoothing, glow or glamour retouching added.
-- `PHOTO-19/speaker-card-r021/H017` The skin on “Summit host card - Jonah Pryce” (speaker-card-r021.png) looks natural in colour, with no colour cast carried over from staff_portrait_04.jpg and no warm filter added.
+- `PHOTO-19/speaker-card-r021/H017` The skin on “Summit host card - Jonah Pryce” (speaker-card-r021.png) looks natural in colour, with no colour cast carried over from staff_portrait_04.jpg.
 - `PHOTO-19/speaker-card-r021/H018` The portrait on “Summit host card - Jonah Pryce” (speaker-card-r021.png) shows no hard direct-flash look: no hard flash shadow behind the head and no flat shine across the face.
-- `PHOTO-19/speaker-card-r021/H021` Apart from the CFS mark and any separate summit title, all text on “Summit host card - Jonah Pryce” (speaker-card-r021.png), the affiliation included, is Inter or IBM Plex Mono.
+- `PHOTO-19/speaker-card-r021/H021` Apart from the CFS mark and any summit title, all text on “Summit host card - Jonah Pryce” (speaker-card-r021.png) is Inter Regular, Inter Medium or IBM Plex Mono Regular.
 - `PHOTO-19/speaker-card-r021/H024` No type, panel or rule on “Summit host card - Jonah Pryce” (speaker-card-r021.png) carries a drop shadow, glow, outline, gloss, metallic finish, gradient or busy texture.
 - `PHOTO-19/speaker-card-r021/H025` No line of role or running text on “Summit host card - Jonah Pryce” (speaker-card-r021.png) runs longer than 65 characters.
 - `PHOTO-19/speaker-card-r021/H026` Apart from the sitter's ground, all type, grounds, panels, rules and icons on “Summit host card - Jonah Pryce” (speaker-card-r021.png) use only #23303A, #2C4A3B, #D9DDDE, #F2EEE7, #B06B3E and #1A1F24.
 - `PHOTO-19/speaker-card-r021/H027` No scrim, tint or overlay of any colour, black or white included, is laid over the portrait on “Summit host card - Jonah Pryce” (speaker-card-r021.png).
-- `PHOTO-19/speaker-card-r021/H028` Cascadia Slate #23303A and Warm Paper #F2EEE7 both appear outside the photograph on “Summit host card - Jonah Pryce” (speaker-card-r021.png).
+- `PHOTO-19/speaker-card-r021/H028` Cascadia Slate #23303A appears outside the photograph on “Summit host card - Jonah Pryce” (speaker-card-r021.png).
 - `PHOTO-19/speaker-card-r021/H029` Every flat ground and panel on “Summit host card - Jonah Pryce” (speaker-card-r021.png) is Cascadia Slate #23303A or Warm Paper #F2EEE7, apart from the ground behind the sitter.
 - `PHOTO-19/speaker-card-r021/H030` On “Summit host card - Jonah Pryce” (speaker-card-r021.png), all type on Warm Paper is Near Black #1A1F24, except the affiliation line, which may be Signal Copper #B06B3E.
 - `PHOTO-19/speaker-card-r021/H031` On “Summit host card - Jonah Pryce” (speaker-card-r021.png), Signal Copper #B06B3E appears only in the affiliation line or as thin rules.
@@ -386,7 +386,7 @@ Revised input pack. Previous execution results are historical, not current ratin
 - `PHOTO-19/summit-announcement/H003` At full 1920 x 1080 size, the registration action text on “Summit announcement” (summit-announcement.png) is fully visible, no letters cut off at the edge.
 - `PHOTO-19/speaker-card-r002/H010` The largest text on “Summit speaker card - Marguerite Halloran” (speaker-card-r002.png) is the speaker name “Marguerite Halloran”.
 - `PHOTO-19/summit-announcement/H004` The date on “Summit announcement” (summit-announcement.png) reads 12-13 March 2026, as in programme_copy.txt; any other day, month or year makes the announcement unusable.
-- `PHOTO-19/summit-announcement/H005` “Summit announcement” (summit-announcement.png) gives no registration web address, no deadline and no price beyond the brand identity's 600 to 1,200 dollar pass range.
+- `PHOTO-19/summit-announcement/H005` “Summit announcement” (summit-announcement.png) gives no registration web address.
 - `PHOTO-19/summit-announcement/H006` The headline “Cascadia Founders Summit” on “Summit announcement” (summit-announcement.png) is set in Piazzolla Medium.
 - `PHOTO-19/summit-announcement/H007` The largest text on “Summit announcement” (summit-announcement.png) is the event name “Cascadia Founders Summit”.
 - `PHOTO-19/summit-announcement/H008` “Summit announcement” (summit-announcement.png) announces the summit itself, not one speaker: it does not carry the “Now confirmed.” speaker-confirmation copy from programme_copy.txt.
@@ -395,19 +395,19 @@ Revised input pack. Previous execution results are historical, not current ratin
 - `PHOTO-19/summit-announcement/H011` If a portrait appears on “Summit announcement” (summit-announcement.png), the ground behind the sitter is a tone between Fog Grey #D9DDDE and Warm Paper #F2EEE7.
 - `PHOTO-19/summit-announcement/H012` Any portrait named on “Summit announcement” (summit-announcement.png) carries the name speakers.csv gives for that photo.
 - `PHOTO-19/summit-announcement/H013` Any portrait on “Summit announcement” (summit-announcement.png) keeps the skin texture of the photo file speakers.csv lists for that person, with no smoothing, glow or glamour retouching added.
-- `PHOTO-19/summit-announcement/H014` Any portrait on “Summit announcement” (summit-announcement.png) shows natural skin colour, with no green, warm or cool light cast left from its source photo and no warm filter added.
+- `PHOTO-19/summit-announcement/H014` Any portrait on “Summit announcement” (summit-announcement.png) shows natural skin colour, with no green, warm or cool light cast left from its source photo.
 - `PHOTO-19/summit-announcement/H015` Any portrait on “Summit announcement” (summit-announcement.png) shows no hard direct-flash look: no hard flash shadow behind the head and no flat shine across the face.
 - `PHOTO-19/summit-announcement/H016` If speaker_portrait_02.jpg (Peter Vance) appears on “Summit announcement” (summit-announcement.png), its whitened eyes are toned down to a natural brightness.
 - `PHOTO-19/summit-announcement/H017` If speaker_portrait_08.jpg (Grant Mackey) appears on “Summit announcement” (summit-announcement.png), its brightened eyes are toned down to a natural brightness.
-- `PHOTO-19/summit-announcement/H018` If venue_render.jpg appears on “Summit announcement” (summit-announcement.png), it is not scaled up beyond its native 1400 x 933 pixels, so it shows no upscaling softness or pixelation.
+- `PHOTO-19/summit-announcement/H018` If venue_render.jpg appears on “Summit announcement” (summit-announcement.png), it is shown no larger than its native 1400 x 933 pixels.
 - `PHOTO-19/summit-announcement/H019` Every line on “Summit announcement” (summit-announcement.png) other than the Piazzolla headline and any CFS mark is set in Inter Regular, Inter Medium or IBM Plex Mono Regular.
 - `PHOTO-19/summit-announcement/H020` If a speaker or host name appears on “Summit announcement” (summit-announcement.png), it is set in Inter Medium, not Piazzolla.
-- `PHOTO-19/summit-announcement/H021` The headline “Cascadia Founders Summit” on “Summit announcement” (summit-announcement.png) matches Piazzolla Medium's small-text design (axis 8: wider, sturdier letters, less thick-thin contrast), not its default display design.
+- `PHOTO-19/summit-announcement/H021` The headline “Cascadia Founders Summit” on “Summit announcement” (summit-announcement.png) has Piazzolla's small-text shapes (wider, sturdier, low thick-thin contrast), not the default display shapes.
 - `PHOTO-19/summit-announcement/H022` No type, panel or rule on “Summit announcement” (summit-announcement.png) carries a drop shadow, glow, outline, gloss, metallic finish, gradient or busy texture.
 - `PHOTO-19/summit-announcement/H023` No line of running text on “Summit announcement” (summit-announcement.png) runs longer than 65 characters.
 - `PHOTO-19/summit-announcement/H024` Apart from any sitter's ground, all type, grounds, panels, rules, buttons and icons on “Summit announcement” (summit-announcement.png) use only #23303A, #2C4A3B, #D9DDDE, #F2EEE7, #B06B3E and #1A1F24.
 - `PHOTO-19/summit-announcement/H025` No scrim, tint or overlay of any colour, black or white included, is laid over any photograph on “Summit announcement” (summit-announcement.png).
-- `PHOTO-19/summit-announcement/H026` Cascadia Slate #23303A and Warm Paper #F2EEE7 both appear outside any photograph on “Summit announcement” (summit-announcement.png).
+- `PHOTO-19/summit-announcement/H026` Cascadia Slate #23303A appears outside any photograph on “Summit announcement” (summit-announcement.png).
 - `PHOTO-19/summit-announcement/H027` Every flat ground and panel on “Summit announcement” (summit-announcement.png) is Cascadia Slate #23303A or Warm Paper #F2EEE7, apart from any sitter's ground.
 - `PHOTO-19/summit-announcement/H028` On “Summit announcement” (summit-announcement.png), all type on Warm Paper, the headline included, is Near Black #1A1F24, apart from any affiliation line in Signal Copper #B06B3E.
 - `PHOTO-19/summit-announcement/H029` On “Summit announcement” (summit-announcement.png), Signal Copper #B06B3E appears only in an affiliation line or as thin rules.
@@ -421,7 +421,7 @@ Revised input pack. Previous execution results are historical, not current ratin
 - `PHOTO-19/speaker-card-r005/H013` The ground behind the sitter on “Summit speaker card - Ines Moreau” (speaker-card-r005.png) is a tone between Fog Grey #D9DDDE and Warm Paper #F2EEE7.
 - `PHOTO-19/speaker-card-r005/H014` The ground behind the sitter on “Summit speaker card - Ines Moreau” (speaker-card-r005.png) is one flat, even tone, with no gradient, vignette, pattern or texture.
 - `PHOTO-19/speaker-card-r005/H016` The skin on “Summit speaker card - Ines Moreau” (speaker-card-r005.png) keeps the natural texture seen in speaker_portrait_03.jpg, with no smoothing, glow or glamour retouching added.
-- `PHOTO-19/speaker-card-r005/H017` The skin on “Summit speaker card - Ines Moreau” (speaker-card-r005.png) looks natural in colour, with no colour cast carried over from speaker_portrait_03.jpg and no warm filter added.
+- `PHOTO-19/speaker-card-r005/H017` The skin on “Summit speaker card - Ines Moreau” (speaker-card-r005.png) looks natural in colour, with no colour cast carried over from speaker_portrait_03.jpg.
 - `PHOTO-19/speaker-card-r005/H018` The portrait on “Summit speaker card - Ines Moreau” (speaker-card-r005.png) shows no hard direct-flash look: no hard flash shadow behind the head and no flat shine across the face.
 - `PHOTO-19/speaker-card-r006/H008` The face on “Summit speaker card - Anders Lindqvist” (speaker-card-r006.png) is still recognizably the same person as in speaker_portrait_04.jpg.
 - `PHOTO-19/speaker-card-r006/H009` The CFS mark on “Summit speaker card - Anders Lindqvist” (speaker-card-r006.png) is the supplied cfs_mark_transparent.svg artwork, with its letters and proportions unchanged.
@@ -432,7 +432,7 @@ Revised input pack. Previous execution results are historical, not current ratin
 - `PHOTO-19/speaker-card-r006/H014` The ground behind the sitter on “Summit speaker card - Anders Lindqvist” (speaker-card-r006.png) is one flat, even tone, with no gradient, vignette, pattern or texture.
 - `PHOTO-19/speaker-card-r006/H015` The head on “Summit speaker card - Anders Lindqvist” (speaker-card-r006.png) is neither visibly larger nor smaller in frame than the head on “Summit speaker card - Ines Moreau” (speaker-card-r005.png).
 - `PHOTO-19/speaker-card-r006/H016` The skin on “Summit speaker card - Anders Lindqvist” (speaker-card-r006.png) keeps the natural texture seen in speaker_portrait_04.jpg, with no smoothing, glow or glamour retouching added.
-- `PHOTO-19/speaker-card-r006/H017` The skin on “Summit speaker card - Anders Lindqvist” (speaker-card-r006.png) looks natural in colour, with none of the green-tinged fluorescent cast of speaker_portrait_04.jpg left and no warm filter added.
+- `PHOTO-19/speaker-card-r006/H017` The skin on “Summit speaker card - Anders Lindqvist” (speaker-card-r006.png) looks natural in colour, with none of the green-tinged fluorescent cast of speaker_portrait_04.jpg left.
 - `PHOTO-19/speaker-card-r006/H018` The portrait on “Summit speaker card - Anders Lindqvist” (speaker-card-r006.png) shows no hard direct-flash look: no hard flash shadow behind the head and no flat shine across the face.
 - `PHOTO-19/speaker-card-r018/H008` The face on “Summit host card - Laurel Beckett” (speaker-card-r018.png) is still recognizably the same person as in staff_portrait_01.jpg.
 - `PHOTO-19/speaker-card-r018/H009` The CFS mark on “Summit host card - Laurel Beckett” (speaker-card-r018.png) is the supplied cfs_mark_transparent.svg artwork, with its letters and proportions unchanged.
@@ -443,7 +443,7 @@ Revised input pack. Previous execution results are historical, not current ratin
 - `PHOTO-19/speaker-card-r018/H014` The ground behind the sitter on “Summit host card - Laurel Beckett” (speaker-card-r018.png) is one flat, even tone, with no gradient, vignette, pattern or texture.
 - `PHOTO-19/speaker-card-r018/H015` The head on “Summit host card - Laurel Beckett” (speaker-card-r018.png) is neither visibly larger nor smaller in frame than the head on “Summit speaker card - Ines Moreau” (speaker-card-r005.png).
 - `PHOTO-19/speaker-card-r018/H016` The skin on “Summit host card - Laurel Beckett” (speaker-card-r018.png) keeps the natural texture seen in staff_portrait_01.jpg, with no smoothing, glow or glamour retouching added.
-- `PHOTO-19/speaker-card-r018/H017` The skin on “Summit host card - Laurel Beckett” (speaker-card-r018.png) looks natural in colour, with no colour cast carried over from staff_portrait_01.jpg and no warm filter added.
+- `PHOTO-19/speaker-card-r018/H017` The skin on “Summit host card - Laurel Beckett” (speaker-card-r018.png) looks natural in colour, with no colour cast carried over from staff_portrait_01.jpg.
 - `PHOTO-19/speaker-card-r018/H018` The portrait on “Summit host card - Laurel Beckett” (speaker-card-r018.png) shows no hard direct-flash look: no hard flash shadow behind the head and no flat shine across the face.
 - `PHOTO-19/speaker-card-r002/H011` No type, panel or rule on “Summit speaker card - Marguerite Halloran” (speaker-card-r002.png) carries a drop shadow, glow, outline, gloss, metallic finish, gradient or busy texture.
 - `PHOTO-19/speaker-card-r002/H012` The CFS mark on “Summit speaker card - Marguerite Halloran” (speaker-card-r002.png) is the supplied cfs_mark_transparent.svg artwork, with its letters and proportions unchanged.
@@ -454,13 +454,13 @@ Revised input pack. Previous execution results are historical, not current ratin
 - `PHOTO-19/speaker-card-r002/H017` The ground behind the sitter on “Summit speaker card - Marguerite Halloran” (speaker-card-r002.png) is one flat, even tone, with no gradient, vignette, pattern or texture.
 - `PHOTO-19/speaker-card-r002/H018` The head on “Summit speaker card - Marguerite Halloran” (speaker-card-r002.png) is neither visibly larger nor smaller in frame than the head on “Summit speaker card - Ines Moreau” (speaker-card-r005.png).
 - `PHOTO-19/speaker-card-r002/H019` The skin on “Summit speaker card - Marguerite Halloran” (speaker-card-r002.png) keeps the natural texture seen in speaker_portrait_01.jpg, with no smoothing, glow or glamour retouching added.
-- `PHOTO-19/speaker-card-r002/H020` The skin on “Summit speaker card - Marguerite Halloran” (speaker-card-r002.png) looks natural in colour, with no colour cast carried over from speaker_portrait_01.jpg and no warm filter added.
+- `PHOTO-19/speaker-card-r002/H020` The skin on “Summit speaker card - Marguerite Halloran” (speaker-card-r002.png) looks natural in colour, with no colour cast carried over from speaker_portrait_01.jpg.
 - `PHOTO-19/speaker-card-r002/H021` The portrait on “Summit speaker card - Marguerite Halloran” (speaker-card-r002.png) shows no hard direct-flash look: no hard flash shadow behind the head and no flat shine across the face.
-- `PHOTO-19/speaker-card-r002/H023` Apart from the CFS mark and any separate summit title, all text on “Summit speaker card - Marguerite Halloran” (speaker-card-r002.png) is Inter Regular, Inter Medium or IBM Plex Mono.
+- `PHOTO-19/speaker-card-r002/H023` Apart from the CFS mark and any summit title, all text on “Summit speaker card - Marguerite Halloran” (speaker-card-r002.png) is Inter Regular, Inter Medium or IBM Plex Mono Regular.
 - `PHOTO-19/speaker-card-r002/H026` No line of role or running text on “Summit speaker card - Marguerite Halloran” (speaker-card-r002.png) runs longer than 65 characters.
 - `PHOTO-19/speaker-card-r002/H027` Apart from the sitter's ground, all type, grounds, panels, rules and icons on “Summit speaker card - Marguerite Halloran” (speaker-card-r002.png) use only #23303A, #2C4A3B, #D9DDDE, #F2EEE7, #B06B3E and #1A1F24.
 - `PHOTO-19/speaker-card-r002/H028` No scrim, tint or overlay of any colour, black or white included, is laid over the portrait on “Summit speaker card - Marguerite Halloran” (speaker-card-r002.png).
-- `PHOTO-19/speaker-card-r002/H029` Cascadia Slate #23303A and Warm Paper #F2EEE7 both appear outside the photograph on “Summit speaker card - Marguerite Halloran” (speaker-card-r002.png).
+- `PHOTO-19/speaker-card-r002/H029` Cascadia Slate #23303A appears outside the photograph on “Summit speaker card - Marguerite Halloran” (speaker-card-r002.png).
 - `PHOTO-19/speaker-card-r002/H030` Every flat ground and panel on “Summit speaker card - Marguerite Halloran” (speaker-card-r002.png) is Cascadia Slate #23303A or Warm Paper #F2EEE7, apart from the ground behind the sitter.
 - `PHOTO-19/speaker-card-r002/H031` On “Summit speaker card - Marguerite Halloran” (speaker-card-r002.png), all type on Warm Paper is Near Black #1A1F24, except the affiliation line, which may be Signal Copper #B06B3E.
 - `PHOTO-19/speaker-card-r002/H032` On “Summit speaker card - Marguerite Halloran” (speaker-card-r002.png), Signal Copper #B06B3E appears only in the affiliation line or as thin rules.
@@ -472,7 +472,7 @@ Revised input pack. Previous execution results are historical, not current ratin
 - `PHOTO-19/speaker-card-r003/H015` The head on “Summit speaker card - Peter Vance” (speaker-card-r003.png) is neither visibly larger nor smaller in frame than the head on “Summit speaker card - Ines Moreau” (speaker-card-r005.png).
 - `PHOTO-19/speaker-card-r003/H016` The skin on “Summit speaker card - Peter Vance” (speaker-card-r003.png) is smoothed no further than in speaker_portrait_02.jpg: no extra airbrushing, glow or glossy finish is added.
 - `PHOTO-19/speaker-card-r003/H017` Compared with speaker_portrait_02.jpg, the whitened eyes on “Summit speaker card - Peter Vance” (speaker-card-r003.png) are toned down to a natural brightness.
-- `PHOTO-19/speaker-card-r003/H018` The skin on “Summit speaker card - Peter Vance” (speaker-card-r003.png) looks natural in colour, with none of the warm studio-light cast of speaker_portrait_02.jpg left and no warm filter added.
+- `PHOTO-19/speaker-card-r003/H018` The skin on “Summit speaker card - Peter Vance” (speaker-card-r003.png) looks natural in colour, with none of the warm studio-light cast of speaker_portrait_02.jpg left.
 - `PHOTO-19/speaker-card-r003/H019` The portrait on “Summit speaker card - Peter Vance” (speaker-card-r003.png) shows no hard direct-flash look: no hard flash shadow behind the head and no flat shine across the face.
 - `PHOTO-19/speaker-card-r002/H033` The name “Marguerite Halloran” on “Summit speaker card - Marguerite Halloran” (speaker-card-r002.png) is set in Inter Medium, not Piazzolla.
 - `PHOTO-19/speaker-card-r002/H037` The role line “Founder & CEO” on “Summit speaker card - Marguerite Halloran” (speaker-card-r002.png) is set in Inter Regular.
@@ -551,41 +551,41 @@ Revised input pack. Previous execution results are historical, not current ratin
 - `PHOTO-19/summit-announcement/H046` If a session title appears on “Summit announcement” (summit-announcement.png), it is set in Inter Regular.
 - `PHOTO-19/speaker-card-r002/H054` No part of the original background of speaker_portrait_01.jpg remains behind the sitter on “Summit speaker card - Marguerite Halloran” (speaker-card-r002.png).
 - `PHOTO-19/speaker-card-r002/H055` The ground behind the sitter on “Summit speaker card - Marguerite Halloran” (speaker-card-r002.png) is the same tone as the sitter's ground on “Summit speaker card - Ines Moreau” (speaker-card-r005.png).
-- `PHOTO-19/speaker-card-r002/H056` If a separate summit title appears on “Summit speaker card - Marguerite Halloran” (speaker-card-r002.png), it is Piazzolla Medium in its small-text design (axis 8: wider, lower contrast), not the default design.
+- `PHOTO-19/speaker-card-r002/H056` If a summit title appears on “Summit speaker card - Marguerite Halloran” (speaker-card-r002.png), it is set in Piazzolla Medium.
 - `PHOTO-19/speaker-card-r002/H057` The role line on “Summit speaker card - Marguerite Halloran” (speaker-card-r002.png) is set larger than the affiliation and the session.
-- `PHOTO-19/speaker-card-r002/H058` The CFS mark on “Summit speaker card - Marguerite Halloran” (speaker-card-r002.png) is Fog Grey #D9DDDE on a Cascadia Slate #23303A ground.
+- `PHOTO-19/speaker-card-r002/H058` The CFS mark on “Summit speaker card - Marguerite Halloran” (speaker-card-r002.png) is Fog Grey #D9DDDE.
 - `PHOTO-19/speaker-card-r002/H059` On “Summit speaker card - Marguerite Halloran” (speaker-card-r002.png), all type on Cascadia Slate is Warm Paper #F2EEE7 or Fog Grey #D9DDDE.
 - `PHOTO-19/speaker-card-r002/H060` On “Summit speaker card - Marguerite Halloran” (speaker-card-r002.png), Evergreen #2C4A3B, if used, appears only as thin rules or dividers.
 - `PHOTO-19/speaker-card-r002/H061` On “Summit speaker card - Marguerite Halloran” (speaker-card-r002.png), Signal Copper and Evergreen together cover no more than about 5% of the area outside the photograph.
 - `PHOTO-19/speaker-card-r003/H041` No part of the original background of speaker_portrait_02.jpg remains behind the sitter on “Summit speaker card - Peter Vance” (speaker-card-r003.png).
 - `PHOTO-19/speaker-card-r003/H042` The ground behind the sitter on “Summit speaker card - Peter Vance” (speaker-card-r003.png) is the same tone as the sitter's ground on “Summit speaker card - Ines Moreau” (speaker-card-r005.png).
 - `PHOTO-19/speaker-card-r003/H043` Compared with speaker_portrait_02.jpg, the glossy plastic skin sheen on “Summit speaker card - Peter Vance” (speaker-card-r003.png) is toned down.
-- `PHOTO-19/speaker-card-r003/H044` Apart from the CFS mark and any separate summit title, all text on “Summit speaker card - Peter Vance” (speaker-card-r003.png) is Inter Regular, Inter Medium or IBM Plex Mono.
-- `PHOTO-19/speaker-card-r003/H045` If a separate summit title appears on “Summit speaker card - Peter Vance” (speaker-card-r003.png), it is Piazzolla Medium in its small-text design (axis 8: wider, lower contrast), not the default design.
+- `PHOTO-19/speaker-card-r003/H044` Apart from the CFS mark and any summit title, all text on “Summit speaker card - Peter Vance” (speaker-card-r003.png) is Inter Regular, Inter Medium or IBM Plex Mono Regular.
+- `PHOTO-19/speaker-card-r003/H045` If a summit title appears on “Summit speaker card - Peter Vance” (speaker-card-r003.png), it is set in Piazzolla Medium.
 - `PHOTO-19/speaker-card-r003/H046` The role line on “Summit speaker card - Peter Vance” (speaker-card-r003.png) is set larger than the affiliation and the session.
 - `PHOTO-19/speaker-card-r003/H047` No line of role or running text on “Summit speaker card - Peter Vance” (speaker-card-r003.png) runs longer than 65 characters.
 - `PHOTO-19/speaker-card-r003/H048` No type, panel or rule on “Summit speaker card - Peter Vance” (speaker-card-r003.png) carries a drop shadow, glow, outline, gloss, metallic finish, gradient or busy texture.
 - `PHOTO-19/speaker-card-r003/H049` Apart from the sitter's ground, all type, grounds, panels, rules and icons on “Summit speaker card - Peter Vance” (speaker-card-r003.png) use only #23303A, #2C4A3B, #D9DDDE, #F2EEE7, #B06B3E and #1A1F24.
 - `PHOTO-19/speaker-card-r003/H050` No scrim, tint or overlay of any colour, black or white included, is laid over the portrait on “Summit speaker card - Peter Vance” (speaker-card-r003.png).
-- `PHOTO-19/speaker-card-r003/H051` Cascadia Slate #23303A and Warm Paper #F2EEE7 both appear outside the photograph on “Summit speaker card - Peter Vance” (speaker-card-r003.png).
+- `PHOTO-19/speaker-card-r003/H051` Cascadia Slate #23303A appears outside the photograph on “Summit speaker card - Peter Vance” (speaker-card-r003.png).
 - `PHOTO-19/speaker-card-r003/H052` Every flat ground and panel on “Summit speaker card - Peter Vance” (speaker-card-r003.png) is Cascadia Slate #23303A or Warm Paper #F2EEE7, apart from the ground behind the sitter.
-- `PHOTO-19/speaker-card-r003/H053` The CFS mark on “Summit speaker card - Peter Vance” (speaker-card-r003.png) is Fog Grey #D9DDDE on a Cascadia Slate #23303A ground.
+- `PHOTO-19/speaker-card-r003/H053` The CFS mark on “Summit speaker card - Peter Vance” (speaker-card-r003.png) is Fog Grey #D9DDDE.
 - `PHOTO-19/speaker-card-r003/H054` On “Summit speaker card - Peter Vance” (speaker-card-r003.png), all type on Warm Paper is Near Black #1A1F24, except the affiliation line, which may be Signal Copper #B06B3E.
 - `PHOTO-19/speaker-card-r003/H055` On “Summit speaker card - Peter Vance” (speaker-card-r003.png), all type on Cascadia Slate is Warm Paper #F2EEE7 or Fog Grey #D9DDDE.
 - `PHOTO-19/speaker-card-r003/H056` On “Summit speaker card - Peter Vance” (speaker-card-r003.png), Signal Copper #B06B3E appears only in the affiliation line or as thin rules.
 - `PHOTO-19/speaker-card-r003/H057` On “Summit speaker card - Peter Vance” (speaker-card-r003.png), Evergreen #2C4A3B, if used, appears only as thin rules or dividers.
 - `PHOTO-19/speaker-card-r003/H058` On “Summit speaker card - Peter Vance” (speaker-card-r003.png), Signal Copper and Evergreen together cover no more than about 5% of the area outside the photograph.
 - `PHOTO-19/speaker-card-r005/H040` No part of the original background of speaker_portrait_03.jpg remains behind the sitter on “Summit speaker card - Ines Moreau” (speaker-card-r005.png).
-- `PHOTO-19/speaker-card-r005/H041` Apart from the CFS mark and any separate summit title, all text on “Summit speaker card - Ines Moreau” (speaker-card-r005.png) is Inter Regular, Inter Medium or IBM Plex Mono.
-- `PHOTO-19/speaker-card-r005/H042` If a separate summit title appears on “Summit speaker card - Ines Moreau” (speaker-card-r005.png), it is Piazzolla Medium in its small-text design (axis 8: wider, lower contrast), not the default design.
+- `PHOTO-19/speaker-card-r005/H041` Apart from the CFS mark and any summit title, all text on “Summit speaker card - Ines Moreau” (speaker-card-r005.png) is Inter Regular, Inter Medium or IBM Plex Mono Regular.
+- `PHOTO-19/speaker-card-r005/H042` If a summit title appears on “Summit speaker card - Ines Moreau” (speaker-card-r005.png), it is set in Piazzolla Medium.
 - `PHOTO-19/speaker-card-r005/H043` The role line on “Summit speaker card - Ines Moreau” (speaker-card-r005.png) is set larger than the affiliation and the session.
 - `PHOTO-19/speaker-card-r005/H044` No line of role or running text on “Summit speaker card - Ines Moreau” (speaker-card-r005.png) runs longer than 65 characters.
 - `PHOTO-19/speaker-card-r005/H045` No type, panel or rule on “Summit speaker card - Ines Moreau” (speaker-card-r005.png) carries a drop shadow, glow, outline, gloss, metallic finish, gradient or busy texture.
 - `PHOTO-19/speaker-card-r005/H046` Apart from the sitter's ground, all type, grounds, panels, rules and icons on “Summit speaker card - Ines Moreau” (speaker-card-r005.png) use only #23303A, #2C4A3B, #D9DDDE, #F2EEE7, #B06B3E and #1A1F24.
 - `PHOTO-19/speaker-card-r005/H047` No scrim, tint or overlay of any colour, black or white included, is laid over the portrait on “Summit speaker card - Ines Moreau” (speaker-card-r005.png).
-- `PHOTO-19/speaker-card-r005/H048` Cascadia Slate #23303A and Warm Paper #F2EEE7 both appear outside the photograph on “Summit speaker card - Ines Moreau” (speaker-card-r005.png).
+- `PHOTO-19/speaker-card-r005/H048` Cascadia Slate #23303A appears outside the photograph on “Summit speaker card - Ines Moreau” (speaker-card-r005.png).
 - `PHOTO-19/speaker-card-r005/H049` Every flat ground and panel on “Summit speaker card - Ines Moreau” (speaker-card-r005.png) is Cascadia Slate #23303A or Warm Paper #F2EEE7, apart from the ground behind the sitter.
-- `PHOTO-19/speaker-card-r005/H050` The CFS mark on “Summit speaker card - Ines Moreau” (speaker-card-r005.png) is Fog Grey #D9DDDE on a Cascadia Slate #23303A ground.
+- `PHOTO-19/speaker-card-r005/H050` The CFS mark on “Summit speaker card - Ines Moreau” (speaker-card-r005.png) is Fog Grey #D9DDDE.
 - `PHOTO-19/speaker-card-r005/H051` On “Summit speaker card - Ines Moreau” (speaker-card-r005.png), all type on Warm Paper is Near Black #1A1F24, except the affiliation line, which may be Signal Copper #B06B3E.
 - `PHOTO-19/speaker-card-r005/H052` On “Summit speaker card - Ines Moreau” (speaker-card-r005.png), all type on Cascadia Slate is Warm Paper #F2EEE7 or Fog Grey #D9DDDE.
 - `PHOTO-19/speaker-card-r005/H053` On “Summit speaker card - Ines Moreau” (speaker-card-r005.png), Signal Copper #B06B3E appears only in the affiliation line or as thin rules.
@@ -593,16 +593,16 @@ Revised input pack. Previous execution results are historical, not current ratin
 - `PHOTO-19/speaker-card-r005/H055` On “Summit speaker card - Ines Moreau” (speaker-card-r005.png), Signal Copper and Evergreen together cover no more than about 5% of the area outside the photograph.
 - `PHOTO-19/speaker-card-r006/H040` No part of the original background of speaker_portrait_04.jpg remains behind the sitter on “Summit speaker card - Anders Lindqvist” (speaker-card-r006.png).
 - `PHOTO-19/speaker-card-r006/H041` The ground behind the sitter on “Summit speaker card - Anders Lindqvist” (speaker-card-r006.png) is the same tone as the sitter's ground on “Summit speaker card - Ines Moreau” (speaker-card-r005.png).
-- `PHOTO-19/speaker-card-r006/H042` Apart from the CFS mark and any separate summit title, all text on “Summit speaker card - Anders Lindqvist” (speaker-card-r006.png) is Inter Regular, Inter Medium or IBM Plex Mono.
-- `PHOTO-19/speaker-card-r006/H043` If a separate summit title appears on “Summit speaker card - Anders Lindqvist” (speaker-card-r006.png), it is Piazzolla Medium in its small-text design (axis 8: wider, lower contrast), not the default design.
+- `PHOTO-19/speaker-card-r006/H042` Apart from the CFS mark and any summit title, all text on “Summit speaker card - Anders Lindqvist” (speaker-card-r006.png) is Inter Regular, Inter Medium or IBM Plex Mono Regular.
+- `PHOTO-19/speaker-card-r006/H043` If a summit title appears on “Summit speaker card - Anders Lindqvist” (speaker-card-r006.png), it is set in Piazzolla Medium.
 - `PHOTO-19/speaker-card-r006/H044` The role line on “Summit speaker card - Anders Lindqvist” (speaker-card-r006.png) is set larger than the affiliation and the session.
 - `PHOTO-19/speaker-card-r006/H045` No line of role or running text on “Summit speaker card - Anders Lindqvist” (speaker-card-r006.png) runs longer than 65 characters.
 - `PHOTO-19/speaker-card-r006/H046` No type, panel or rule on “Summit speaker card - Anders Lindqvist” (speaker-card-r006.png) carries a drop shadow, glow, outline, gloss, metallic finish, gradient or busy texture.
 - `PHOTO-19/speaker-card-r006/H047` Apart from the sitter's ground, all type, grounds, panels, rules and icons on “Summit speaker card - Anders Lindqvist” (speaker-card-r006.png) use only #23303A, #2C4A3B, #D9DDDE, #F2EEE7, #B06B3E and #1A1F24.
 - `PHOTO-19/speaker-card-r006/H048` No scrim, tint or overlay of any colour, black or white included, is laid over the portrait on “Summit speaker card - Anders Lindqvist” (speaker-card-r006.png).
-- `PHOTO-19/speaker-card-r006/H049` Cascadia Slate #23303A and Warm Paper #F2EEE7 both appear outside the photograph on “Summit speaker card - Anders Lindqvist” (speaker-card-r006.png).
+- `PHOTO-19/speaker-card-r006/H049` Cascadia Slate #23303A appears outside the photograph on “Summit speaker card - Anders Lindqvist” (speaker-card-r006.png).
 - `PHOTO-19/speaker-card-r006/H050` Every flat ground and panel on “Summit speaker card - Anders Lindqvist” (speaker-card-r006.png) is Cascadia Slate #23303A or Warm Paper #F2EEE7, apart from the ground behind the sitter.
-- `PHOTO-19/speaker-card-r006/H051` The CFS mark on “Summit speaker card - Anders Lindqvist” (speaker-card-r006.png) is Fog Grey #D9DDDE on a Cascadia Slate #23303A ground.
+- `PHOTO-19/speaker-card-r006/H051` The CFS mark on “Summit speaker card - Anders Lindqvist” (speaker-card-r006.png) is Fog Grey #D9DDDE.
 - `PHOTO-19/speaker-card-r006/H052` On “Summit speaker card - Anders Lindqvist” (speaker-card-r006.png), all type on Warm Paper is Near Black #1A1F24, except the affiliation line, which may be Signal Copper #B06B3E.
 - `PHOTO-19/speaker-card-r006/H053` On “Summit speaker card - Anders Lindqvist” (speaker-card-r006.png), all type on Cascadia Slate is Warm Paper #F2EEE7 or Fog Grey #D9DDDE.
 - `PHOTO-19/speaker-card-r006/H054` On “Summit speaker card - Anders Lindqvist” (speaker-card-r006.png), Signal Copper #B06B3E appears only in the affiliation line or as thin rules.
@@ -610,16 +610,16 @@ Revised input pack. Previous execution results are historical, not current ratin
 - `PHOTO-19/speaker-card-r006/H056` On “Summit speaker card - Anders Lindqvist” (speaker-card-r006.png), Signal Copper and Evergreen together cover no more than about 5% of the area outside the photograph.
 - `PHOTO-19/speaker-card-r007/H040` No part of the original background of speaker_portrait_05.jpg remains behind the sitter on “Summit speaker card - Colm Byrne” (speaker-card-r007.png).
 - `PHOTO-19/speaker-card-r007/H041` The ground behind the sitter on “Summit speaker card - Colm Byrne” (speaker-card-r007.png) is the same tone as the sitter's ground on “Summit speaker card - Ines Moreau” (speaker-card-r005.png).
-- `PHOTO-19/speaker-card-r007/H042` Apart from the CFS mark and any separate summit title, all text on “Summit speaker card - Colm Byrne” (speaker-card-r007.png) is Inter Regular, Inter Medium or IBM Plex Mono.
-- `PHOTO-19/speaker-card-r007/H043` If a separate summit title appears on “Summit speaker card - Colm Byrne” (speaker-card-r007.png), it is Piazzolla Medium in its small-text design (axis 8: wider, lower contrast), not the default design.
+- `PHOTO-19/speaker-card-r007/H042` Apart from the CFS mark and any summit title, all text on “Summit speaker card - Colm Byrne” (speaker-card-r007.png) is Inter Regular, Inter Medium or IBM Plex Mono Regular.
+- `PHOTO-19/speaker-card-r007/H043` If a summit title appears on “Summit speaker card - Colm Byrne” (speaker-card-r007.png), it is set in Piazzolla Medium.
 - `PHOTO-19/speaker-card-r007/H044` The role line on “Summit speaker card - Colm Byrne” (speaker-card-r007.png) is set larger than the affiliation and the session.
 - `PHOTO-19/speaker-card-r007/H045` No line of role or running text on “Summit speaker card - Colm Byrne” (speaker-card-r007.png) runs longer than 65 characters.
 - `PHOTO-19/speaker-card-r007/H046` No type, panel or rule on “Summit speaker card - Colm Byrne” (speaker-card-r007.png) carries a drop shadow, glow, outline, gloss, metallic finish, gradient or busy texture.
 - `PHOTO-19/speaker-card-r007/H047` Apart from the sitter's ground, all type, grounds, panels, rules and icons on “Summit speaker card - Colm Byrne” (speaker-card-r007.png) use only #23303A, #2C4A3B, #D9DDDE, #F2EEE7, #B06B3E and #1A1F24.
 - `PHOTO-19/speaker-card-r007/H048` No scrim, tint or overlay of any colour, black or white included, is laid over the portrait on “Summit speaker card - Colm Byrne” (speaker-card-r007.png).
-- `PHOTO-19/speaker-card-r007/H049` Cascadia Slate #23303A and Warm Paper #F2EEE7 both appear outside the photograph on “Summit speaker card - Colm Byrne” (speaker-card-r007.png).
+- `PHOTO-19/speaker-card-r007/H049` Cascadia Slate #23303A appears outside the photograph on “Summit speaker card - Colm Byrne” (speaker-card-r007.png).
 - `PHOTO-19/speaker-card-r007/H050` Every flat ground and panel on “Summit speaker card - Colm Byrne” (speaker-card-r007.png) is Cascadia Slate #23303A or Warm Paper #F2EEE7, apart from the ground behind the sitter.
-- `PHOTO-19/speaker-card-r007/H051` The CFS mark on “Summit speaker card - Colm Byrne” (speaker-card-r007.png) is Fog Grey #D9DDDE on a Cascadia Slate #23303A ground.
+- `PHOTO-19/speaker-card-r007/H051` The CFS mark on “Summit speaker card - Colm Byrne” (speaker-card-r007.png) is Fog Grey #D9DDDE.
 - `PHOTO-19/speaker-card-r007/H052` On “Summit speaker card - Colm Byrne” (speaker-card-r007.png), all type on Warm Paper is Near Black #1A1F24, except the affiliation line, which may be Signal Copper #B06B3E.
 - `PHOTO-19/speaker-card-r007/H053` On “Summit speaker card - Colm Byrne” (speaker-card-r007.png), all type on Cascadia Slate is Warm Paper #F2EEE7 or Fog Grey #D9DDDE.
 - `PHOTO-19/speaker-card-r007/H054` On “Summit speaker card - Colm Byrne” (speaker-card-r007.png), Signal Copper #B06B3E appears only in the affiliation line or as thin rules.
@@ -627,16 +627,16 @@ Revised input pack. Previous execution results are historical, not current ratin
 - `PHOTO-19/speaker-card-r007/H056` On “Summit speaker card - Colm Byrne” (speaker-card-r007.png), Signal Copper and Evergreen together cover no more than about 5% of the area outside the photograph.
 - `PHOTO-19/speaker-card-r008/H040` No part of the original background of speaker_portrait_06.jpg remains behind the sitter on “Summit speaker card - Dana Whitfield” (speaker-card-r008.png).
 - `PHOTO-19/speaker-card-r008/H041` The ground behind the sitter on “Summit speaker card - Dana Whitfield” (speaker-card-r008.png) is the same tone as the sitter's ground on “Summit speaker card - Ines Moreau” (speaker-card-r005.png).
-- `PHOTO-19/speaker-card-r008/H042` Apart from the CFS mark and any separate summit title, all text on “Summit speaker card - Dana Whitfield” (speaker-card-r008.png) is Inter Regular, Inter Medium or IBM Plex Mono.
-- `PHOTO-19/speaker-card-r008/H043` If a separate summit title appears on “Summit speaker card - Dana Whitfield” (speaker-card-r008.png), it is Piazzolla Medium in its small-text design (axis 8: wider, lower contrast), not the default design.
+- `PHOTO-19/speaker-card-r008/H042` Apart from the CFS mark and any summit title, all text on “Summit speaker card - Dana Whitfield” (speaker-card-r008.png) is Inter Regular, Inter Medium or IBM Plex Mono Regular.
+- `PHOTO-19/speaker-card-r008/H043` If a summit title appears on “Summit speaker card - Dana Whitfield” (speaker-card-r008.png), it is set in Piazzolla Medium.
 - `PHOTO-19/speaker-card-r008/H044` The role line on “Summit speaker card - Dana Whitfield” (speaker-card-r008.png) is set larger than the affiliation and the session.
 - `PHOTO-19/speaker-card-r008/H045` No line of role or running text on “Summit speaker card - Dana Whitfield” (speaker-card-r008.png) runs longer than 65 characters.
 - `PHOTO-19/speaker-card-r008/H046` No type, panel or rule on “Summit speaker card - Dana Whitfield” (speaker-card-r008.png) carries a drop shadow, glow, outline, gloss, metallic finish, gradient or busy texture.
 - `PHOTO-19/speaker-card-r008/H047` Apart from the sitter's ground, all type, grounds, panels, rules and icons on “Summit speaker card - Dana Whitfield” (speaker-card-r008.png) use only #23303A, #2C4A3B, #D9DDDE, #F2EEE7, #B06B3E and #1A1F24.
 - `PHOTO-19/speaker-card-r008/H048` No scrim, tint or overlay of any colour, black or white included, is laid over the portrait on “Summit speaker card - Dana Whitfield” (speaker-card-r008.png).
-- `PHOTO-19/speaker-card-r008/H049` Cascadia Slate #23303A and Warm Paper #F2EEE7 both appear outside the photograph on “Summit speaker card - Dana Whitfield” (speaker-card-r008.png).
+- `PHOTO-19/speaker-card-r008/H049` Cascadia Slate #23303A appears outside the photograph on “Summit speaker card - Dana Whitfield” (speaker-card-r008.png).
 - `PHOTO-19/speaker-card-r008/H050` Every flat ground and panel on “Summit speaker card - Dana Whitfield” (speaker-card-r008.png) is Cascadia Slate #23303A or Warm Paper #F2EEE7, apart from the ground behind the sitter.
-- `PHOTO-19/speaker-card-r008/H051` The CFS mark on “Summit speaker card - Dana Whitfield” (speaker-card-r008.png) is Fog Grey #D9DDDE on a Cascadia Slate #23303A ground.
+- `PHOTO-19/speaker-card-r008/H051` The CFS mark on “Summit speaker card - Dana Whitfield” (speaker-card-r008.png) is Fog Grey #D9DDDE.
 - `PHOTO-19/speaker-card-r008/H052` On “Summit speaker card - Dana Whitfield” (speaker-card-r008.png), all type on Warm Paper is Near Black #1A1F24, except the affiliation line, which may be Signal Copper #B06B3E.
 - `PHOTO-19/speaker-card-r008/H053` On “Summit speaker card - Dana Whitfield” (speaker-card-r008.png), all type on Cascadia Slate is Warm Paper #F2EEE7 or Fog Grey #D9DDDE.
 - `PHOTO-19/speaker-card-r008/H054` On “Summit speaker card - Dana Whitfield” (speaker-card-r008.png), Signal Copper #B06B3E appears only in the affiliation line or as thin rules.
@@ -644,16 +644,16 @@ Revised input pack. Previous execution results are historical, not current ratin
 - `PHOTO-19/speaker-card-r008/H056` On “Summit speaker card - Dana Whitfield” (speaker-card-r008.png), Signal Copper and Evergreen together cover no more than about 5% of the area outside the photograph.
 - `PHOTO-19/speaker-card-r009/H040` No part of the original background of speaker_portrait_07.jpg remains behind the sitter on “Summit speaker card - Estelle Rioux” (speaker-card-r009.png).
 - `PHOTO-19/speaker-card-r009/H041` The ground behind the sitter on “Summit speaker card - Estelle Rioux” (speaker-card-r009.png) is the same tone as the sitter's ground on “Summit speaker card - Ines Moreau” (speaker-card-r005.png).
-- `PHOTO-19/speaker-card-r009/H042` Apart from the CFS mark and any separate summit title, all text on “Summit speaker card - Estelle Rioux” (speaker-card-r009.png) is Inter Regular, Inter Medium or IBM Plex Mono.
-- `PHOTO-19/speaker-card-r009/H043` If a separate summit title appears on “Summit speaker card - Estelle Rioux” (speaker-card-r009.png), it is Piazzolla Medium in its small-text design (axis 8: wider, lower contrast), not the default design.
+- `PHOTO-19/speaker-card-r009/H042` Apart from the CFS mark and any summit title, all text on “Summit speaker card - Estelle Rioux” (speaker-card-r009.png) is Inter Regular, Inter Medium or IBM Plex Mono Regular.
+- `PHOTO-19/speaker-card-r009/H043` If a summit title appears on “Summit speaker card - Estelle Rioux” (speaker-card-r009.png), it is set in Piazzolla Medium.
 - `PHOTO-19/speaker-card-r009/H044` The role line on “Summit speaker card - Estelle Rioux” (speaker-card-r009.png) is set larger than the affiliation and the session.
 - `PHOTO-19/speaker-card-r009/H045` No line of role or running text on “Summit speaker card - Estelle Rioux” (speaker-card-r009.png) runs longer than 65 characters.
 - `PHOTO-19/speaker-card-r009/H046` No type, panel or rule on “Summit speaker card - Estelle Rioux” (speaker-card-r009.png) carries a drop shadow, glow, outline, gloss, metallic finish, gradient or busy texture.
 - `PHOTO-19/speaker-card-r009/H047` Apart from the sitter's ground, all type, grounds, panels, rules and icons on “Summit speaker card - Estelle Rioux” (speaker-card-r009.png) use only #23303A, #2C4A3B, #D9DDDE, #F2EEE7, #B06B3E and #1A1F24.
 - `PHOTO-19/speaker-card-r009/H048` No scrim, tint or overlay of any colour, black or white included, is laid over the portrait on “Summit speaker card - Estelle Rioux” (speaker-card-r009.png).
-- `PHOTO-19/speaker-card-r009/H049` Cascadia Slate #23303A and Warm Paper #F2EEE7 both appear outside the photograph on “Summit speaker card - Estelle Rioux” (speaker-card-r009.png).
+- `PHOTO-19/speaker-card-r009/H049` Cascadia Slate #23303A appears outside the photograph on “Summit speaker card - Estelle Rioux” (speaker-card-r009.png).
 - `PHOTO-19/speaker-card-r009/H050` Every flat ground and panel on “Summit speaker card - Estelle Rioux” (speaker-card-r009.png) is Cascadia Slate #23303A or Warm Paper #F2EEE7, apart from the ground behind the sitter.
-- `PHOTO-19/speaker-card-r009/H051` The CFS mark on “Summit speaker card - Estelle Rioux” (speaker-card-r009.png) is Fog Grey #D9DDDE on a Cascadia Slate #23303A ground.
+- `PHOTO-19/speaker-card-r009/H051` The CFS mark on “Summit speaker card - Estelle Rioux” (speaker-card-r009.png) is Fog Grey #D9DDDE.
 - `PHOTO-19/speaker-card-r009/H052` On “Summit speaker card - Estelle Rioux” (speaker-card-r009.png), all type on Warm Paper is Near Black #1A1F24, except the affiliation line, which may be Signal Copper #B06B3E.
 - `PHOTO-19/speaker-card-r009/H053` On “Summit speaker card - Estelle Rioux” (speaker-card-r009.png), all type on Cascadia Slate is Warm Paper #F2EEE7 or Fog Grey #D9DDDE.
 - `PHOTO-19/speaker-card-r009/H054` On “Summit speaker card - Estelle Rioux” (speaker-card-r009.png), Signal Copper #B06B3E appears only in the affiliation line or as thin rules.
@@ -662,16 +662,16 @@ Revised input pack. Previous execution results are historical, not current ratin
 - `PHOTO-19/speaker-card-r010/H041` No part of the original background of speaker_portrait_08.jpg remains behind the sitter on “Summit speaker card - Grant Mackey” (speaker-card-r010.png).
 - `PHOTO-19/speaker-card-r010/H042` The ground behind the sitter on “Summit speaker card - Grant Mackey” (speaker-card-r010.png) is the same tone as the sitter's ground on “Summit speaker card - Ines Moreau” (speaker-card-r005.png).
 - `PHOTO-19/speaker-card-r010/H043` Compared with speaker_portrait_08.jpg, the glossy skin finish on “Summit speaker card - Grant Mackey” (speaker-card-r010.png) is toned down.
-- `PHOTO-19/speaker-card-r010/H044` Apart from the CFS mark and any separate summit title, all text on “Summit speaker card - Grant Mackey” (speaker-card-r010.png) is Inter Regular, Inter Medium or IBM Plex Mono.
-- `PHOTO-19/speaker-card-r010/H045` If a separate summit title appears on “Summit speaker card - Grant Mackey” (speaker-card-r010.png), it is Piazzolla Medium in its small-text design (axis 8: wider, lower contrast), not the default design.
+- `PHOTO-19/speaker-card-r010/H044` Apart from the CFS mark and any summit title, all text on “Summit speaker card - Grant Mackey” (speaker-card-r010.png) is Inter Regular, Inter Medium or IBM Plex Mono Regular.
+- `PHOTO-19/speaker-card-r010/H045` If a summit title appears on “Summit speaker card - Grant Mackey” (speaker-card-r010.png), it is set in Piazzolla Medium.
 - `PHOTO-19/speaker-card-r010/H046` The role line on “Summit speaker card - Grant Mackey” (speaker-card-r010.png) is set larger than the affiliation and the session.
 - `PHOTO-19/speaker-card-r010/H047` No line of role or running text on “Summit speaker card - Grant Mackey” (speaker-card-r010.png) runs longer than 65 characters.
 - `PHOTO-19/speaker-card-r010/H048` No type, panel or rule on “Summit speaker card - Grant Mackey” (speaker-card-r010.png) carries a drop shadow, glow, outline, gloss, metallic finish, gradient or busy texture.
 - `PHOTO-19/speaker-card-r010/H049` Apart from the sitter's ground, all type, grounds, panels, rules and icons on “Summit speaker card - Grant Mackey” (speaker-card-r010.png) use only #23303A, #2C4A3B, #D9DDDE, #F2EEE7, #B06B3E and #1A1F24.
 - `PHOTO-19/speaker-card-r010/H050` No scrim, tint or overlay of any colour, black or white included, is laid over the portrait on “Summit speaker card - Grant Mackey” (speaker-card-r010.png).
-- `PHOTO-19/speaker-card-r010/H051` Cascadia Slate #23303A and Warm Paper #F2EEE7 both appear outside the photograph on “Summit speaker card - Grant Mackey” (speaker-card-r010.png).
+- `PHOTO-19/speaker-card-r010/H051` Cascadia Slate #23303A appears outside the photograph on “Summit speaker card - Grant Mackey” (speaker-card-r010.png).
 - `PHOTO-19/speaker-card-r010/H052` Every flat ground and panel on “Summit speaker card - Grant Mackey” (speaker-card-r010.png) is Cascadia Slate #23303A or Warm Paper #F2EEE7, apart from the ground behind the sitter.
-- `PHOTO-19/speaker-card-r010/H053` The CFS mark on “Summit speaker card - Grant Mackey” (speaker-card-r010.png) is Fog Grey #D9DDDE on a Cascadia Slate #23303A ground.
+- `PHOTO-19/speaker-card-r010/H053` The CFS mark on “Summit speaker card - Grant Mackey” (speaker-card-r010.png) is Fog Grey #D9DDDE.
 - `PHOTO-19/speaker-card-r010/H054` On “Summit speaker card - Grant Mackey” (speaker-card-r010.png), all type on Warm Paper is Near Black #1A1F24, except the affiliation line, which may be Signal Copper #B06B3E.
 - `PHOTO-19/speaker-card-r010/H055` On “Summit speaker card - Grant Mackey” (speaker-card-r010.png), all type on Cascadia Slate is Warm Paper #F2EEE7 or Fog Grey #D9DDDE.
 - `PHOTO-19/speaker-card-r010/H056` On “Summit speaker card - Grant Mackey” (speaker-card-r010.png), Signal Copper #B06B3E appears only in the affiliation line or as thin rules.
@@ -679,16 +679,16 @@ Revised input pack. Previous execution results are historical, not current ratin
 - `PHOTO-19/speaker-card-r010/H058` On “Summit speaker card - Grant Mackey” (speaker-card-r010.png), Signal Copper and Evergreen together cover no more than about 5% of the area outside the photograph.
 - `PHOTO-19/speaker-card-r011/H040` No part of the original background of speaker_portrait_09.jpg remains behind the sitter on “Summit speaker card - Sofia Bellini” (speaker-card-r011.png).
 - `PHOTO-19/speaker-card-r011/H041` The ground behind the sitter on “Summit speaker card - Sofia Bellini” (speaker-card-r011.png) is the same tone as the sitter's ground on “Summit speaker card - Ines Moreau” (speaker-card-r005.png).
-- `PHOTO-19/speaker-card-r011/H042` Apart from the CFS mark and any separate summit title, all text on “Summit speaker card - Sofia Bellini” (speaker-card-r011.png) is Inter Regular, Inter Medium or IBM Plex Mono.
-- `PHOTO-19/speaker-card-r011/H043` If a separate summit title appears on “Summit speaker card - Sofia Bellini” (speaker-card-r011.png), it is Piazzolla Medium in its small-text design (axis 8: wider, lower contrast), not the default design.
+- `PHOTO-19/speaker-card-r011/H042` Apart from the CFS mark and any summit title, all text on “Summit speaker card - Sofia Bellini” (speaker-card-r011.png) is Inter Regular, Inter Medium or IBM Plex Mono Regular.
+- `PHOTO-19/speaker-card-r011/H043` If a summit title appears on “Summit speaker card - Sofia Bellini” (speaker-card-r011.png), it is set in Piazzolla Medium.
 - `PHOTO-19/speaker-card-r011/H044` The role line on “Summit speaker card - Sofia Bellini” (speaker-card-r011.png) is set larger than the affiliation and the session.
 - `PHOTO-19/speaker-card-r011/H045` No line of role or running text on “Summit speaker card - Sofia Bellini” (speaker-card-r011.png) runs longer than 65 characters.
 - `PHOTO-19/speaker-card-r011/H046` No type, panel or rule on “Summit speaker card - Sofia Bellini” (speaker-card-r011.png) carries a drop shadow, glow, outline, gloss, metallic finish, gradient or busy texture.
 - `PHOTO-19/speaker-card-r011/H047` Apart from the sitter's ground, all type, grounds, panels, rules and icons on “Summit speaker card - Sofia Bellini” (speaker-card-r011.png) use only #23303A, #2C4A3B, #D9DDDE, #F2EEE7, #B06B3E and #1A1F24.
 - `PHOTO-19/speaker-card-r011/H048` No scrim, tint or overlay of any colour, black or white included, is laid over the portrait on “Summit speaker card - Sofia Bellini” (speaker-card-r011.png).
-- `PHOTO-19/speaker-card-r011/H049` Cascadia Slate #23303A and Warm Paper #F2EEE7 both appear outside the photograph on “Summit speaker card - Sofia Bellini” (speaker-card-r011.png).
+- `PHOTO-19/speaker-card-r011/H049` Cascadia Slate #23303A appears outside the photograph on “Summit speaker card - Sofia Bellini” (speaker-card-r011.png).
 - `PHOTO-19/speaker-card-r011/H050` Every flat ground and panel on “Summit speaker card - Sofia Bellini” (speaker-card-r011.png) is Cascadia Slate #23303A or Warm Paper #F2EEE7, apart from the ground behind the sitter.
-- `PHOTO-19/speaker-card-r011/H051` The CFS mark on “Summit speaker card - Sofia Bellini” (speaker-card-r011.png) is Fog Grey #D9DDDE on a Cascadia Slate #23303A ground.
+- `PHOTO-19/speaker-card-r011/H051` The CFS mark on “Summit speaker card - Sofia Bellini” (speaker-card-r011.png) is Fog Grey #D9DDDE.
 - `PHOTO-19/speaker-card-r011/H052` On “Summit speaker card - Sofia Bellini” (speaker-card-r011.png), all type on Warm Paper is Near Black #1A1F24, except the affiliation line, which may be Signal Copper #B06B3E.
 - `PHOTO-19/speaker-card-r011/H053` On “Summit speaker card - Sofia Bellini” (speaker-card-r011.png), all type on Cascadia Slate is Warm Paper #F2EEE7 or Fog Grey #D9DDDE.
 - `PHOTO-19/speaker-card-r011/H054` On “Summit speaker card - Sofia Bellini” (speaker-card-r011.png), Signal Copper #B06B3E appears only in the affiliation line or as thin rules.
@@ -696,16 +696,16 @@ Revised input pack. Previous execution results are historical, not current ratin
 - `PHOTO-19/speaker-card-r011/H056` On “Summit speaker card - Sofia Bellini” (speaker-card-r011.png), Signal Copper and Evergreen together cover no more than about 5% of the area outside the photograph.
 - `PHOTO-19/speaker-card-r013/H040` No part of the original background of speaker_portrait_10.jpg remains behind the sitter on “Summit speaker card - Nils Haugen” (speaker-card-r013.png).
 - `PHOTO-19/speaker-card-r013/H041` The ground behind the sitter on “Summit speaker card - Nils Haugen” (speaker-card-r013.png) is the same tone as the sitter's ground on “Summit speaker card - Ines Moreau” (speaker-card-r005.png).
-- `PHOTO-19/speaker-card-r013/H042` Apart from the CFS mark and any separate summit title, all text on “Summit speaker card - Nils Haugen” (speaker-card-r013.png) is Inter Regular, Inter Medium or IBM Plex Mono.
-- `PHOTO-19/speaker-card-r013/H043` If a separate summit title appears on “Summit speaker card - Nils Haugen” (speaker-card-r013.png), it is Piazzolla Medium in its small-text design (axis 8: wider, lower contrast), not the default design.
+- `PHOTO-19/speaker-card-r013/H042` Apart from the CFS mark and any summit title, all text on “Summit speaker card - Nils Haugen” (speaker-card-r013.png) is Inter Regular, Inter Medium or IBM Plex Mono Regular.
+- `PHOTO-19/speaker-card-r013/H043` If a summit title appears on “Summit speaker card - Nils Haugen” (speaker-card-r013.png), it is set in Piazzolla Medium.
 - `PHOTO-19/speaker-card-r013/H044` The role line on “Summit speaker card - Nils Haugen” (speaker-card-r013.png) is set larger than the affiliation and the session.
 - `PHOTO-19/speaker-card-r013/H045` No line of role or running text on “Summit speaker card - Nils Haugen” (speaker-card-r013.png) runs longer than 65 characters.
 - `PHOTO-19/speaker-card-r013/H046` No type, panel or rule on “Summit speaker card - Nils Haugen” (speaker-card-r013.png) carries a drop shadow, glow, outline, gloss, metallic finish, gradient or busy texture.
 - `PHOTO-19/speaker-card-r013/H047` Apart from the sitter's ground, all type, grounds, panels, rules and icons on “Summit speaker card - Nils Haugen” (speaker-card-r013.png) use only #23303A, #2C4A3B, #D9DDDE, #F2EEE7, #B06B3E and #1A1F24.
 - `PHOTO-19/speaker-card-r013/H048` No scrim, tint or overlay of any colour, black or white included, is laid over the portrait on “Summit speaker card - Nils Haugen” (speaker-card-r013.png).
-- `PHOTO-19/speaker-card-r013/H049` Cascadia Slate #23303A and Warm Paper #F2EEE7 both appear outside the photograph on “Summit speaker card - Nils Haugen” (speaker-card-r013.png).
+- `PHOTO-19/speaker-card-r013/H049` Cascadia Slate #23303A appears outside the photograph on “Summit speaker card - Nils Haugen” (speaker-card-r013.png).
 - `PHOTO-19/speaker-card-r013/H050` Every flat ground and panel on “Summit speaker card - Nils Haugen” (speaker-card-r013.png) is Cascadia Slate #23303A or Warm Paper #F2EEE7, apart from the ground behind the sitter.
-- `PHOTO-19/speaker-card-r013/H051` The CFS mark on “Summit speaker card - Nils Haugen” (speaker-card-r013.png) is Fog Grey #D9DDDE on a Cascadia Slate #23303A ground.
+- `PHOTO-19/speaker-card-r013/H051` The CFS mark on “Summit speaker card - Nils Haugen” (speaker-card-r013.png) is Fog Grey #D9DDDE.
 - `PHOTO-19/speaker-card-r013/H052` On “Summit speaker card - Nils Haugen” (speaker-card-r013.png), all type on Warm Paper is Near Black #1A1F24, except the affiliation line, which may be Signal Copper #B06B3E.
 - `PHOTO-19/speaker-card-r013/H053` On “Summit speaker card - Nils Haugen” (speaker-card-r013.png), all type on Cascadia Slate is Warm Paper #F2EEE7 or Fog Grey #D9DDDE.
 - `PHOTO-19/speaker-card-r013/H054` On “Summit speaker card - Nils Haugen” (speaker-card-r013.png), Signal Copper #B06B3E appears only in the affiliation line or as thin rules.
@@ -713,16 +713,16 @@ Revised input pack. Previous execution results are historical, not current ratin
 - `PHOTO-19/speaker-card-r013/H056` On “Summit speaker card - Nils Haugen” (speaker-card-r013.png), Signal Copper and Evergreen together cover no more than about 5% of the area outside the photograph.
 - `PHOTO-19/speaker-card-r014/H040` No part of the original background of speaker_portrait_11.jpg remains behind the sitter on “Summit speaker card - Robin Tate” (speaker-card-r014.png).
 - `PHOTO-19/speaker-card-r014/H041` The ground behind the sitter on “Summit speaker card - Robin Tate” (speaker-card-r014.png) is the same tone as the sitter's ground on “Summit speaker card - Ines Moreau” (speaker-card-r005.png).
-- `PHOTO-19/speaker-card-r014/H042` Apart from the CFS mark and any separate summit title, all text on “Summit speaker card - Robin Tate” (speaker-card-r014.png) is Inter Regular, Inter Medium or IBM Plex Mono.
-- `PHOTO-19/speaker-card-r014/H043` If a separate summit title appears on “Summit speaker card - Robin Tate” (speaker-card-r014.png), it is Piazzolla Medium in its small-text design (axis 8: wider, lower contrast), not the default design.
+- `PHOTO-19/speaker-card-r014/H042` Apart from the CFS mark and any summit title, all text on “Summit speaker card - Robin Tate” (speaker-card-r014.png) is Inter Regular, Inter Medium or IBM Plex Mono Regular.
+- `PHOTO-19/speaker-card-r014/H043` If a summit title appears on “Summit speaker card - Robin Tate” (speaker-card-r014.png), it is set in Piazzolla Medium.
 - `PHOTO-19/speaker-card-r014/H044` The role line on “Summit speaker card - Robin Tate” (speaker-card-r014.png) is set larger than the affiliation and the session.
 - `PHOTO-19/speaker-card-r014/H045` No line of role or running text on “Summit speaker card - Robin Tate” (speaker-card-r014.png) runs longer than 65 characters.
 - `PHOTO-19/speaker-card-r014/H046` No type, panel or rule on “Summit speaker card - Robin Tate” (speaker-card-r014.png) carries a drop shadow, glow, outline, gloss, metallic finish, gradient or busy texture.
 - `PHOTO-19/speaker-card-r014/H047` Apart from the sitter's ground, all type, grounds, panels, rules and icons on “Summit speaker card - Robin Tate” (speaker-card-r014.png) use only #23303A, #2C4A3B, #D9DDDE, #F2EEE7, #B06B3E and #1A1F24.
 - `PHOTO-19/speaker-card-r014/H048` No scrim, tint or overlay of any colour, black or white included, is laid over the portrait on “Summit speaker card - Robin Tate” (speaker-card-r014.png).
-- `PHOTO-19/speaker-card-r014/H049` Cascadia Slate #23303A and Warm Paper #F2EEE7 both appear outside the photograph on “Summit speaker card - Robin Tate” (speaker-card-r014.png).
+- `PHOTO-19/speaker-card-r014/H049` Cascadia Slate #23303A appears outside the photograph on “Summit speaker card - Robin Tate” (speaker-card-r014.png).
 - `PHOTO-19/speaker-card-r014/H050` Every flat ground and panel on “Summit speaker card - Robin Tate” (speaker-card-r014.png) is Cascadia Slate #23303A or Warm Paper #F2EEE7, apart from the ground behind the sitter.
-- `PHOTO-19/speaker-card-r014/H051` The CFS mark on “Summit speaker card - Robin Tate” (speaker-card-r014.png) is Fog Grey #D9DDDE on a Cascadia Slate #23303A ground.
+- `PHOTO-19/speaker-card-r014/H051` The CFS mark on “Summit speaker card - Robin Tate” (speaker-card-r014.png) is Fog Grey #D9DDDE.
 - `PHOTO-19/speaker-card-r014/H052` On “Summit speaker card - Robin Tate” (speaker-card-r014.png), all type on Warm Paper is Near Black #1A1F24, except the affiliation line, which may be Signal Copper #B06B3E.
 - `PHOTO-19/speaker-card-r014/H053` On “Summit speaker card - Robin Tate” (speaker-card-r014.png), all type on Cascadia Slate is Warm Paper #F2EEE7 or Fog Grey #D9DDDE.
 - `PHOTO-19/speaker-card-r014/H054` On “Summit speaker card - Robin Tate” (speaker-card-r014.png), Signal Copper #B06B3E appears only in the affiliation line or as thin rules.
@@ -730,16 +730,16 @@ Revised input pack. Previous execution results are historical, not current ratin
 - `PHOTO-19/speaker-card-r014/H056` On “Summit speaker card - Robin Tate” (speaker-card-r014.png), Signal Copper and Evergreen together cover no more than about 5% of the area outside the photograph.
 - `PHOTO-19/speaker-card-r015/H040` No part of the original background of speaker_portrait_12.jpg remains behind the sitter on “Summit speaker card - Bernadette Cruz” (speaker-card-r015.png).
 - `PHOTO-19/speaker-card-r015/H041` The ground behind the sitter on “Summit speaker card - Bernadette Cruz” (speaker-card-r015.png) is the same tone as the sitter's ground on “Summit speaker card - Ines Moreau” (speaker-card-r005.png).
-- `PHOTO-19/speaker-card-r015/H042` Apart from the CFS mark and any separate summit title, all text on “Summit speaker card - Bernadette Cruz” (speaker-card-r015.png) is Inter Regular, Inter Medium or IBM Plex Mono.
-- `PHOTO-19/speaker-card-r015/H043` If a separate summit title appears on “Summit speaker card - Bernadette Cruz” (speaker-card-r015.png), it is Piazzolla Medium in its small-text design (axis 8: wider, lower contrast), not the default design.
+- `PHOTO-19/speaker-card-r015/H042` Apart from the CFS mark and any summit title, all text on “Summit speaker card - Bernadette Cruz” (speaker-card-r015.png) is Inter Regular, Inter Medium or IBM Plex Mono Regular.
+- `PHOTO-19/speaker-card-r015/H043` If a summit title appears on “Summit speaker card - Bernadette Cruz” (speaker-card-r015.png), it is set in Piazzolla Medium.
 - `PHOTO-19/speaker-card-r015/H044` The role line on “Summit speaker card - Bernadette Cruz” (speaker-card-r015.png) is set larger than the affiliation and the session.
 - `PHOTO-19/speaker-card-r015/H045` No line of role or running text on “Summit speaker card - Bernadette Cruz” (speaker-card-r015.png) runs longer than 65 characters.
 - `PHOTO-19/speaker-card-r015/H046` No type, panel or rule on “Summit speaker card - Bernadette Cruz” (speaker-card-r015.png) carries a drop shadow, glow, outline, gloss, metallic finish, gradient or busy texture.
 - `PHOTO-19/speaker-card-r015/H047` Apart from the sitter's ground, all type, grounds, panels, rules and icons on “Summit speaker card - Bernadette Cruz” (speaker-card-r015.png) use only #23303A, #2C4A3B, #D9DDDE, #F2EEE7, #B06B3E and #1A1F24.
 - `PHOTO-19/speaker-card-r015/H048` No scrim, tint or overlay of any colour, black or white included, is laid over the portrait on “Summit speaker card - Bernadette Cruz” (speaker-card-r015.png).
-- `PHOTO-19/speaker-card-r015/H049` Cascadia Slate #23303A and Warm Paper #F2EEE7 both appear outside the photograph on “Summit speaker card - Bernadette Cruz” (speaker-card-r015.png).
+- `PHOTO-19/speaker-card-r015/H049` Cascadia Slate #23303A appears outside the photograph on “Summit speaker card - Bernadette Cruz” (speaker-card-r015.png).
 - `PHOTO-19/speaker-card-r015/H050` Every flat ground and panel on “Summit speaker card - Bernadette Cruz” (speaker-card-r015.png) is Cascadia Slate #23303A or Warm Paper #F2EEE7, apart from the ground behind the sitter.
-- `PHOTO-19/speaker-card-r015/H051` The CFS mark on “Summit speaker card - Bernadette Cruz” (speaker-card-r015.png) is Fog Grey #D9DDDE on a Cascadia Slate #23303A ground.
+- `PHOTO-19/speaker-card-r015/H051` The CFS mark on “Summit speaker card - Bernadette Cruz” (speaker-card-r015.png) is Fog Grey #D9DDDE.
 - `PHOTO-19/speaker-card-r015/H052` On “Summit speaker card - Bernadette Cruz” (speaker-card-r015.png), all type on Warm Paper is Near Black #1A1F24, except the affiliation line, which may be Signal Copper #B06B3E.
 - `PHOTO-19/speaker-card-r015/H053` On “Summit speaker card - Bernadette Cruz” (speaker-card-r015.png), all type on Cascadia Slate is Warm Paper #F2EEE7 or Fog Grey #D9DDDE.
 - `PHOTO-19/speaker-card-r015/H054` On “Summit speaker card - Bernadette Cruz” (speaker-card-r015.png), Signal Copper #B06B3E appears only in the affiliation line or as thin rules.
@@ -747,16 +747,16 @@ Revised input pack. Previous execution results are historical, not current ratin
 - `PHOTO-19/speaker-card-r015/H056` On “Summit speaker card - Bernadette Cruz” (speaker-card-r015.png), Signal Copper and Evergreen together cover no more than about 5% of the area outside the photograph.
 - `PHOTO-19/speaker-card-r016/H040` No part of the original background of speaker_portrait_13.jpg remains behind the sitter on “Summit speaker card - Hugo Almeida” (speaker-card-r016.png).
 - `PHOTO-19/speaker-card-r016/H041` The ground behind the sitter on “Summit speaker card - Hugo Almeida” (speaker-card-r016.png) is the same tone as the sitter's ground on “Summit speaker card - Ines Moreau” (speaker-card-r005.png).
-- `PHOTO-19/speaker-card-r016/H042` Apart from the CFS mark and any separate summit title, all text on “Summit speaker card - Hugo Almeida” (speaker-card-r016.png) is Inter Regular, Inter Medium or IBM Plex Mono.
-- `PHOTO-19/speaker-card-r016/H043` If a separate summit title appears on “Summit speaker card - Hugo Almeida” (speaker-card-r016.png), it is Piazzolla Medium in its small-text design (axis 8: wider, lower contrast), not the default design.
+- `PHOTO-19/speaker-card-r016/H042` Apart from the CFS mark and any summit title, all text on “Summit speaker card - Hugo Almeida” (speaker-card-r016.png) is Inter Regular, Inter Medium or IBM Plex Mono Regular.
+- `PHOTO-19/speaker-card-r016/H043` If a summit title appears on “Summit speaker card - Hugo Almeida” (speaker-card-r016.png), it is set in Piazzolla Medium.
 - `PHOTO-19/speaker-card-r016/H044` The role line on “Summit speaker card - Hugo Almeida” (speaker-card-r016.png) is set larger than the affiliation and the session.
 - `PHOTO-19/speaker-card-r016/H045` No line of role or running text on “Summit speaker card - Hugo Almeida” (speaker-card-r016.png) runs longer than 65 characters.
 - `PHOTO-19/speaker-card-r016/H046` No type, panel or rule on “Summit speaker card - Hugo Almeida” (speaker-card-r016.png) carries a drop shadow, glow, outline, gloss, metallic finish, gradient or busy texture.
 - `PHOTO-19/speaker-card-r016/H047` Apart from the sitter's ground, all type, grounds, panels, rules and icons on “Summit speaker card - Hugo Almeida” (speaker-card-r016.png) use only #23303A, #2C4A3B, #D9DDDE, #F2EEE7, #B06B3E and #1A1F24.
 - `PHOTO-19/speaker-card-r016/H048` No scrim, tint or overlay of any colour, black or white included, is laid over the portrait on “Summit speaker card - Hugo Almeida” (speaker-card-r016.png).
-- `PHOTO-19/speaker-card-r016/H049` Cascadia Slate #23303A and Warm Paper #F2EEE7 both appear outside the photograph on “Summit speaker card - Hugo Almeida” (speaker-card-r016.png).
+- `PHOTO-19/speaker-card-r016/H049` Cascadia Slate #23303A appears outside the photograph on “Summit speaker card - Hugo Almeida” (speaker-card-r016.png).
 - `PHOTO-19/speaker-card-r016/H050` Every flat ground and panel on “Summit speaker card - Hugo Almeida” (speaker-card-r016.png) is Cascadia Slate #23303A or Warm Paper #F2EEE7, apart from the ground behind the sitter.
-- `PHOTO-19/speaker-card-r016/H051` The CFS mark on “Summit speaker card - Hugo Almeida” (speaker-card-r016.png) is Fog Grey #D9DDDE on a Cascadia Slate #23303A ground.
+- `PHOTO-19/speaker-card-r016/H051` The CFS mark on “Summit speaker card - Hugo Almeida” (speaker-card-r016.png) is Fog Grey #D9DDDE.
 - `PHOTO-19/speaker-card-r016/H052` On “Summit speaker card - Hugo Almeida” (speaker-card-r016.png), all type on Warm Paper is Near Black #1A1F24, except the affiliation line, which may be Signal Copper #B06B3E.
 - `PHOTO-19/speaker-card-r016/H053` On “Summit speaker card - Hugo Almeida” (speaker-card-r016.png), all type on Cascadia Slate is Warm Paper #F2EEE7 or Fog Grey #D9DDDE.
 - `PHOTO-19/speaker-card-r016/H054` On “Summit speaker card - Hugo Almeida” (speaker-card-r016.png), Signal Copper #B06B3E appears only in the affiliation line or as thin rules.
@@ -764,16 +764,16 @@ Revised input pack. Previous execution results are historical, not current ratin
 - `PHOTO-19/speaker-card-r016/H056` On “Summit speaker card - Hugo Almeida” (speaker-card-r016.png), Signal Copper and Evergreen together cover no more than about 5% of the area outside the photograph.
 - `PHOTO-19/speaker-card-r017/H040` No part of the original background of speaker_portrait_14.jpg remains behind the sitter on “Summit speaker card - Karin Voss” (speaker-card-r017.png).
 - `PHOTO-19/speaker-card-r017/H041` The ground behind the sitter on “Summit speaker card - Karin Voss” (speaker-card-r017.png) is the same tone as the sitter's ground on “Summit speaker card - Ines Moreau” (speaker-card-r005.png).
-- `PHOTO-19/speaker-card-r017/H042` Apart from the CFS mark and any separate summit title, all text on “Summit speaker card - Karin Voss” (speaker-card-r017.png) is Inter Regular, Inter Medium or IBM Plex Mono.
-- `PHOTO-19/speaker-card-r017/H043` If a separate summit title appears on “Summit speaker card - Karin Voss” (speaker-card-r017.png), it is Piazzolla Medium in its small-text design (axis 8: wider, lower contrast), not the default design.
+- `PHOTO-19/speaker-card-r017/H042` Apart from the CFS mark and any summit title, all text on “Summit speaker card - Karin Voss” (speaker-card-r017.png) is Inter Regular, Inter Medium or IBM Plex Mono Regular.
+- `PHOTO-19/speaker-card-r017/H043` If a summit title appears on “Summit speaker card - Karin Voss” (speaker-card-r017.png), it is set in Piazzolla Medium.
 - `PHOTO-19/speaker-card-r017/H044` The role line on “Summit speaker card - Karin Voss” (speaker-card-r017.png) is set larger than the affiliation and the session.
 - `PHOTO-19/speaker-card-r017/H045` No line of role or running text on “Summit speaker card - Karin Voss” (speaker-card-r017.png) runs longer than 65 characters.
 - `PHOTO-19/speaker-card-r017/H046` No type, panel or rule on “Summit speaker card - Karin Voss” (speaker-card-r017.png) carries a drop shadow, glow, outline, gloss, metallic finish, gradient or busy texture.
 - `PHOTO-19/speaker-card-r017/H047` Apart from the sitter's ground, all type, grounds, panels, rules and icons on “Summit speaker card - Karin Voss” (speaker-card-r017.png) use only #23303A, #2C4A3B, #D9DDDE, #F2EEE7, #B06B3E and #1A1F24.
 - `PHOTO-19/speaker-card-r017/H048` No scrim, tint or overlay of any colour, black or white included, is laid over the portrait on “Summit speaker card - Karin Voss” (speaker-card-r017.png).
-- `PHOTO-19/speaker-card-r017/H049` Cascadia Slate #23303A and Warm Paper #F2EEE7 both appear outside the photograph on “Summit speaker card - Karin Voss” (speaker-card-r017.png).
+- `PHOTO-19/speaker-card-r017/H049` Cascadia Slate #23303A appears outside the photograph on “Summit speaker card - Karin Voss” (speaker-card-r017.png).
 - `PHOTO-19/speaker-card-r017/H050` Every flat ground and panel on “Summit speaker card - Karin Voss” (speaker-card-r017.png) is Cascadia Slate #23303A or Warm Paper #F2EEE7, apart from the ground behind the sitter.
-- `PHOTO-19/speaker-card-r017/H051` The CFS mark on “Summit speaker card - Karin Voss” (speaker-card-r017.png) is Fog Grey #D9DDDE on a Cascadia Slate #23303A ground.
+- `PHOTO-19/speaker-card-r017/H051` The CFS mark on “Summit speaker card - Karin Voss” (speaker-card-r017.png) is Fog Grey #D9DDDE.
 - `PHOTO-19/speaker-card-r017/H052` On “Summit speaker card - Karin Voss” (speaker-card-r017.png), all type on Warm Paper is Near Black #1A1F24, except the affiliation line, which may be Signal Copper #B06B3E.
 - `PHOTO-19/speaker-card-r017/H053` On “Summit speaker card - Karin Voss” (speaker-card-r017.png), all type on Cascadia Slate is Warm Paper #F2EEE7 or Fog Grey #D9DDDE.
 - `PHOTO-19/speaker-card-r017/H054` On “Summit speaker card - Karin Voss” (speaker-card-r017.png), Signal Copper #B06B3E appears only in the affiliation line or as thin rules.
@@ -781,16 +781,16 @@ Revised input pack. Previous execution results are historical, not current ratin
 - `PHOTO-19/speaker-card-r017/H056` On “Summit speaker card - Karin Voss” (speaker-card-r017.png), Signal Copper and Evergreen together cover no more than about 5% of the area outside the photograph.
 - `PHOTO-19/speaker-card-r018/H040` No part of the original background of staff_portrait_01.jpg remains behind the sitter on “Summit host card - Laurel Beckett” (speaker-card-r018.png).
 - `PHOTO-19/speaker-card-r018/H041` The ground behind the sitter on “Summit host card - Laurel Beckett” (speaker-card-r018.png) is the same tone as the sitter's ground on “Summit speaker card - Ines Moreau” (speaker-card-r005.png).
-- `PHOTO-19/speaker-card-r018/H042` Apart from the CFS mark and any separate summit title, all text on “Summit host card - Laurel Beckett” (speaker-card-r018.png), the affiliation included, is Inter or IBM Plex Mono.
-- `PHOTO-19/speaker-card-r018/H043` If a separate summit title appears on “Summit host card - Laurel Beckett” (speaker-card-r018.png), it is Piazzolla Medium in its small-text design (axis 8: wider, lower contrast), not the default design.
+- `PHOTO-19/speaker-card-r018/H042` Apart from the CFS mark and any summit title, all text on “Summit host card - Laurel Beckett” (speaker-card-r018.png) is Inter Regular, Inter Medium or IBM Plex Mono Regular.
+- `PHOTO-19/speaker-card-r018/H043` Apart from the affiliation line “Cascadia Founders Summit”, if a summit title appears on “Summit host card - Laurel Beckett” (speaker-card-r018.png), it is set in Piazzolla Medium.
 - `PHOTO-19/speaker-card-r018/H044` The role line on “Summit host card - Laurel Beckett” (speaker-card-r018.png) is set larger than the affiliation and the session.
 - `PHOTO-19/speaker-card-r018/H045` No line of role or running text on “Summit host card - Laurel Beckett” (speaker-card-r018.png) runs longer than 65 characters.
 - `PHOTO-19/speaker-card-r018/H046` No type, panel or rule on “Summit host card - Laurel Beckett” (speaker-card-r018.png) carries a drop shadow, glow, outline, gloss, metallic finish, gradient or busy texture.
 - `PHOTO-19/speaker-card-r018/H047` Apart from the sitter's ground, all type, grounds, panels, rules and icons on “Summit host card - Laurel Beckett” (speaker-card-r018.png) use only #23303A, #2C4A3B, #D9DDDE, #F2EEE7, #B06B3E and #1A1F24.
 - `PHOTO-19/speaker-card-r018/H048` No scrim, tint or overlay of any colour, black or white included, is laid over the portrait on “Summit host card - Laurel Beckett” (speaker-card-r018.png).
-- `PHOTO-19/speaker-card-r018/H049` Cascadia Slate #23303A and Warm Paper #F2EEE7 both appear outside the photograph on “Summit host card - Laurel Beckett” (speaker-card-r018.png).
+- `PHOTO-19/speaker-card-r018/H049` Cascadia Slate #23303A appears outside the photograph on “Summit host card - Laurel Beckett” (speaker-card-r018.png).
 - `PHOTO-19/speaker-card-r018/H050` Every flat ground and panel on “Summit host card - Laurel Beckett” (speaker-card-r018.png) is Cascadia Slate #23303A or Warm Paper #F2EEE7, apart from the ground behind the sitter.
-- `PHOTO-19/speaker-card-r018/H051` The CFS mark on “Summit host card - Laurel Beckett” (speaker-card-r018.png) is Fog Grey #D9DDDE on a Cascadia Slate #23303A ground.
+- `PHOTO-19/speaker-card-r018/H051` The CFS mark on “Summit host card - Laurel Beckett” (speaker-card-r018.png) is Fog Grey #D9DDDE.
 - `PHOTO-19/speaker-card-r018/H052` On “Summit host card - Laurel Beckett” (speaker-card-r018.png), all type on Warm Paper is Near Black #1A1F24, except the affiliation line, which may be Signal Copper #B06B3E.
 - `PHOTO-19/speaker-card-r018/H053` On “Summit host card - Laurel Beckett” (speaker-card-r018.png), all type on Cascadia Slate is Warm Paper #F2EEE7 or Fog Grey #D9DDDE.
 - `PHOTO-19/speaker-card-r018/H054` On “Summit host card - Laurel Beckett” (speaker-card-r018.png), Signal Copper #B06B3E appears only in the affiliation line or as thin rules.
@@ -798,16 +798,16 @@ Revised input pack. Previous execution results are historical, not current ratin
 - `PHOTO-19/speaker-card-r018/H056` On “Summit host card - Laurel Beckett” (speaker-card-r018.png), Signal Copper and Evergreen together cover no more than about 5% of the area outside the photograph.
 - `PHOTO-19/speaker-card-r019/H040` No part of the original background of staff_portrait_02.jpg remains behind the sitter on “Summit host card - Owen Faraday” (speaker-card-r019.png).
 - `PHOTO-19/speaker-card-r019/H041` The ground behind the sitter on “Summit host card - Owen Faraday” (speaker-card-r019.png) is the same tone as the sitter's ground on “Summit speaker card - Ines Moreau” (speaker-card-r005.png).
-- `PHOTO-19/speaker-card-r019/H042` Apart from the CFS mark and any separate summit title, all text on “Summit host card - Owen Faraday” (speaker-card-r019.png), the affiliation included, is Inter or IBM Plex Mono.
-- `PHOTO-19/speaker-card-r019/H043` If a separate summit title appears on “Summit host card - Owen Faraday” (speaker-card-r019.png), it is Piazzolla Medium in its small-text design (axis 8: wider, lower contrast), not the default design.
+- `PHOTO-19/speaker-card-r019/H042` Apart from the CFS mark and any summit title, all text on “Summit host card - Owen Faraday” (speaker-card-r019.png) is Inter Regular, Inter Medium or IBM Plex Mono Regular.
+- `PHOTO-19/speaker-card-r019/H043` Apart from the affiliation line “Cascadia Founders Summit”, if a summit title appears on “Summit host card - Owen Faraday” (speaker-card-r019.png), it is set in Piazzolla Medium.
 - `PHOTO-19/speaker-card-r019/H044` The role line on “Summit host card - Owen Faraday” (speaker-card-r019.png) is set larger than the affiliation and the session.
 - `PHOTO-19/speaker-card-r019/H045` No line of role or running text on “Summit host card - Owen Faraday” (speaker-card-r019.png) runs longer than 65 characters.
 - `PHOTO-19/speaker-card-r019/H046` No type, panel or rule on “Summit host card - Owen Faraday” (speaker-card-r019.png) carries a drop shadow, glow, outline, gloss, metallic finish, gradient or busy texture.
 - `PHOTO-19/speaker-card-r019/H047` Apart from the sitter's ground, all type, grounds, panels, rules and icons on “Summit host card - Owen Faraday” (speaker-card-r019.png) use only #23303A, #2C4A3B, #D9DDDE, #F2EEE7, #B06B3E and #1A1F24.
 - `PHOTO-19/speaker-card-r019/H048` No scrim, tint or overlay of any colour, black or white included, is laid over the portrait on “Summit host card - Owen Faraday” (speaker-card-r019.png).
-- `PHOTO-19/speaker-card-r019/H049` Cascadia Slate #23303A and Warm Paper #F2EEE7 both appear outside the photograph on “Summit host card - Owen Faraday” (speaker-card-r019.png).
+- `PHOTO-19/speaker-card-r019/H049` Cascadia Slate #23303A appears outside the photograph on “Summit host card - Owen Faraday” (speaker-card-r019.png).
 - `PHOTO-19/speaker-card-r019/H050` Every flat ground and panel on “Summit host card - Owen Faraday” (speaker-card-r019.png) is Cascadia Slate #23303A or Warm Paper #F2EEE7, apart from the ground behind the sitter.
-- `PHOTO-19/speaker-card-r019/H051` The CFS mark on “Summit host card - Owen Faraday” (speaker-card-r019.png) is Fog Grey #D9DDDE on a Cascadia Slate #23303A ground.
+- `PHOTO-19/speaker-card-r019/H051` The CFS mark on “Summit host card - Owen Faraday” (speaker-card-r019.png) is Fog Grey #D9DDDE.
 - `PHOTO-19/speaker-card-r019/H052` On “Summit host card - Owen Faraday” (speaker-card-r019.png), all type on Warm Paper is Near Black #1A1F24, except the affiliation line, which may be Signal Copper #B06B3E.
 - `PHOTO-19/speaker-card-r019/H053` On “Summit host card - Owen Faraday” (speaker-card-r019.png), all type on Cascadia Slate is Warm Paper #F2EEE7 or Fog Grey #D9DDDE.
 - `PHOTO-19/speaker-card-r019/H054` On “Summit host card - Owen Faraday” (speaker-card-r019.png), Signal Copper #B06B3E appears only in the affiliation line or as thin rules.
@@ -815,16 +815,16 @@ Revised input pack. Previous execution results are historical, not current ratin
 - `PHOTO-19/speaker-card-r019/H056` On “Summit host card - Owen Faraday” (speaker-card-r019.png), Signal Copper and Evergreen together cover no more than about 5% of the area outside the photograph.
 - `PHOTO-19/speaker-card-r020/H040` No part of the original background of staff_portrait_03.jpg remains behind the sitter on “Summit host card - Mireille Dufort” (speaker-card-r020.png).
 - `PHOTO-19/speaker-card-r020/H041` The ground behind the sitter on “Summit host card - Mireille Dufort” (speaker-card-r020.png) is the same tone as the sitter's ground on “Summit speaker card - Ines Moreau” (speaker-card-r005.png).
-- `PHOTO-19/speaker-card-r020/H042` Apart from the CFS mark and any separate summit title, all text on “Summit host card - Mireille Dufort” (speaker-card-r020.png), the affiliation included, is Inter or IBM Plex Mono.
-- `PHOTO-19/speaker-card-r020/H043` If a separate summit title appears on “Summit host card - Mireille Dufort” (speaker-card-r020.png), it is Piazzolla Medium in its small-text design (axis 8: wider, lower contrast), not the default design.
+- `PHOTO-19/speaker-card-r020/H042` Apart from the CFS mark and any summit title, all text on “Summit host card - Mireille Dufort” (speaker-card-r020.png) is Inter Regular, Inter Medium or IBM Plex Mono Regular.
+- `PHOTO-19/speaker-card-r020/H043` Apart from the affiliation line “Cascadia Founders Summit”, if a summit title appears on “Summit host card - Mireille Dufort” (speaker-card-r020.png), it is set in Piazzolla Medium.
 - `PHOTO-19/speaker-card-r020/H044` The role line on “Summit host card - Mireille Dufort” (speaker-card-r020.png) is set larger than the affiliation and the session.
 - `PHOTO-19/speaker-card-r020/H045` No line of role or running text on “Summit host card - Mireille Dufort” (speaker-card-r020.png) runs longer than 65 characters.
 - `PHOTO-19/speaker-card-r020/H046` No type, panel or rule on “Summit host card - Mireille Dufort” (speaker-card-r020.png) carries a drop shadow, glow, outline, gloss, metallic finish, gradient or busy texture.
 - `PHOTO-19/speaker-card-r020/H047` Apart from the sitter's ground, all type, grounds, panels, rules and icons on “Summit host card - Mireille Dufort” (speaker-card-r020.png) use only #23303A, #2C4A3B, #D9DDDE, #F2EEE7, #B06B3E and #1A1F24.
 - `PHOTO-19/speaker-card-r020/H048` No scrim, tint or overlay of any colour, black or white included, is laid over the portrait on “Summit host card - Mireille Dufort” (speaker-card-r020.png).
-- `PHOTO-19/speaker-card-r020/H049` Cascadia Slate #23303A and Warm Paper #F2EEE7 both appear outside the photograph on “Summit host card - Mireille Dufort” (speaker-card-r020.png).
+- `PHOTO-19/speaker-card-r020/H049` Cascadia Slate #23303A appears outside the photograph on “Summit host card - Mireille Dufort” (speaker-card-r020.png).
 - `PHOTO-19/speaker-card-r020/H050` Every flat ground and panel on “Summit host card - Mireille Dufort” (speaker-card-r020.png) is Cascadia Slate #23303A or Warm Paper #F2EEE7, apart from the ground behind the sitter.
-- `PHOTO-19/speaker-card-r020/H051` The CFS mark on “Summit host card - Mireille Dufort” (speaker-card-r020.png) is Fog Grey #D9DDDE on a Cascadia Slate #23303A ground.
+- `PHOTO-19/speaker-card-r020/H051` The CFS mark on “Summit host card - Mireille Dufort” (speaker-card-r020.png) is Fog Grey #D9DDDE.
 - `PHOTO-19/speaker-card-r020/H052` On “Summit host card - Mireille Dufort” (speaker-card-r020.png), all type on Warm Paper is Near Black #1A1F24, except the affiliation line, which may be Signal Copper #B06B3E.
 - `PHOTO-19/speaker-card-r020/H053` On “Summit host card - Mireille Dufort” (speaker-card-r020.png), all type on Cascadia Slate is Warm Paper #F2EEE7 or Fog Grey #D9DDDE.
 - `PHOTO-19/speaker-card-r020/H054` On “Summit host card - Mireille Dufort” (speaker-card-r020.png), Signal Copper #B06B3E appears only in the affiliation line or as thin rules.
@@ -832,9 +832,9 @@ Revised input pack. Previous execution results are historical, not current ratin
 - `PHOTO-19/speaker-card-r020/H056` On “Summit host card - Mireille Dufort” (speaker-card-r020.png), Signal Copper and Evergreen together cover no more than about 5% of the area outside the photograph.
 - `PHOTO-19/speaker-card-r021/H053` No part of the original background of staff_portrait_04.jpg remains behind the sitter on “Summit host card - Jonah Pryce” (speaker-card-r021.png).
 - `PHOTO-19/speaker-card-r021/H054` The ground behind the sitter on “Summit host card - Jonah Pryce” (speaker-card-r021.png) is the same tone as the sitter's ground on “Summit speaker card - Ines Moreau” (speaker-card-r005.png).
-- `PHOTO-19/speaker-card-r021/H055` If a separate summit title appears on “Summit host card - Jonah Pryce” (speaker-card-r021.png), it is Piazzolla Medium in its small-text design (axis 8: wider, lower contrast), not the default design.
+- `PHOTO-19/speaker-card-r021/H055` Apart from the affiliation line “Cascadia Founders Summit”, if a summit title appears on “Summit host card - Jonah Pryce” (speaker-card-r021.png), it is set in Piazzolla Medium.
 - `PHOTO-19/speaker-card-r021/H056` The role line on “Summit host card - Jonah Pryce” (speaker-card-r021.png) is set larger than the affiliation and the session.
-- `PHOTO-19/speaker-card-r021/H057` The CFS mark on “Summit host card - Jonah Pryce” (speaker-card-r021.png) is Fog Grey #D9DDDE on a Cascadia Slate #23303A ground.
+- `PHOTO-19/speaker-card-r021/H057` The CFS mark on “Summit host card - Jonah Pryce” (speaker-card-r021.png) is Fog Grey #D9DDDE.
 - `PHOTO-19/speaker-card-r021/H058` On “Summit host card - Jonah Pryce” (speaker-card-r021.png), all type on Cascadia Slate is Warm Paper #F2EEE7 or Fog Grey #D9DDDE.
 - `PHOTO-19/speaker-card-r021/H059` On “Summit host card - Jonah Pryce” (speaker-card-r021.png), Evergreen #2C4A3B, if used, appears only as thin rules or dividers.
 - `PHOTO-19/speaker-card-r021/H060` On “Summit host card - Jonah Pryce” (speaker-card-r021.png), Signal Copper and Evergreen together cover no more than about 5% of the area outside the photograph.
@@ -842,7 +842,7 @@ Revised input pack. Previous execution results are historical, not current ratin
 - `PHOTO-19/summit-announcement/H055` “Summit announcement” (summit-announcement.png) invents no ticket offer: no discount, early-bird, group or bundle pass.
 - `PHOTO-19/summit-announcement/H056` If a CFS mark appears on “Summit announcement” (summit-announcement.png), it is the supplied cfs_mark_transparent.svg artwork, with its letters and proportions unchanged.
 - `PHOTO-19/summit-announcement/H057` If a CFS mark appears on “Summit announcement” (summit-announcement.png), it stays fully inside the image, nothing cut off at the edges.
-- `PHOTO-19/summit-announcement/H058` If the CFS mark appears on “Summit announcement” (summit-announcement.png), it is Fog Grey #D9DDDE on a Cascadia Slate #23303A ground.
+- `PHOTO-19/summit-announcement/H058` If the CFS mark appears on “Summit announcement” (summit-announcement.png), it is Fog Grey #D9DDDE.
 - `PHOTO-19/summit-announcement/H059` On “Summit announcement” (summit-announcement.png), all type on Cascadia Slate is Warm Paper #F2EEE7 or Fog Grey #D9DDDE.
 - `PHOTO-19/summit-announcement/H060` On “Summit announcement” (summit-announcement.png), Evergreen #2C4A3B, if used, appears only as thin rules or dividers.
 - `PHOTO-19/summit-announcement/H061` On “Summit announcement” (summit-announcement.png), Signal Copper and Evergreen together cover no more than about 5% of the area outside any photograph.
@@ -852,3 +852,119 @@ Revised input pack. Previous execution results are historical, not current ratin
 - `PHOTO-19/summit-announcement/H065` If speaker_portrait_02.jpg (Peter Vance) appears on “Summit announcement” (summit-announcement.png), its glossy plastic skin sheen is toned down.
 - `PHOTO-19/summit-announcement/H066` If speaker_portrait_08.jpg (Grant Mackey) appears on “Summit announcement” (summit-announcement.png), its glossy skin finish is toned down.
 - `PHOTO-19/summit-announcement/H067` If venue_render.jpg appears on “Summit announcement” (summit-announcement.png), it is not stretched or squashed out of its own proportions.
+- `PHOTO-19/speaker-card-r002/H062` If a summit title appears on “Summit speaker card - Marguerite Halloran” (speaker-card-r002.png), its letters have Piazzolla's small-text shapes (wider, sturdier, low thick-thin contrast), not the default display shapes.
+- `PHOTO-19/speaker-card-r002/H063` The sitter's outline against the ground on “Summit speaker card - Marguerite Halloran” (speaker-card-r002.png) shows no halo, fringe, jagged cut-out edge or other visible retouching trace.
+- `PHOTO-19/speaker-card-r002/H064` Compared with speaker_portrait_01.jpg, no skin, hair or clothing colour on “Summit speaker card - Marguerite Halloran” (speaker-card-r002.png) is shifted toward Signal Copper #B06B3E or Evergreen #2C4A3B.
+- `PHOTO-19/speaker-card-r002/H065` No warm or golden filter is laid over the portrait on “Summit speaker card - Marguerite Halloran” (speaker-card-r002.png).
+- `PHOTO-19/speaker-card-r002/H066` The CFS mark on “Summit speaker card - Marguerite Halloran” (speaker-card-r002.png) sits on a Cascadia Slate #23303A ground.
+- `PHOTO-19/speaker-card-r002/H067` Warm Paper #F2EEE7 appears outside the photograph on “Summit speaker card - Marguerite Halloran” (speaker-card-r002.png).
+- `PHOTO-19/speaker-card-r003/H059` If a summit title appears on “Summit speaker card - Peter Vance” (speaker-card-r003.png), its letters have Piazzolla's small-text shapes (wider, sturdier, low thick-thin contrast), not the default display shapes.
+- `PHOTO-19/speaker-card-r003/H060` The sitter's outline against the ground on “Summit speaker card - Peter Vance” (speaker-card-r003.png) shows no halo, fringe, jagged cut-out edge or other visible retouching trace.
+- `PHOTO-19/speaker-card-r003/H061` Compared with speaker_portrait_02.jpg, no skin, hair or clothing colour on “Summit speaker card - Peter Vance” (speaker-card-r003.png) is shifted toward Signal Copper #B06B3E or Evergreen #2C4A3B.
+- `PHOTO-19/speaker-card-r003/H062` No warm or golden filter is laid over the portrait on “Summit speaker card - Peter Vance” (speaker-card-r003.png).
+- `PHOTO-19/speaker-card-r003/H063` The CFS mark on “Summit speaker card - Peter Vance” (speaker-card-r003.png) sits on a Cascadia Slate #23303A ground.
+- `PHOTO-19/speaker-card-r003/H064` Warm Paper #F2EEE7 appears outside the photograph on “Summit speaker card - Peter Vance” (speaker-card-r003.png).
+- `PHOTO-19/speaker-card-r005/H056` If a summit title appears on “Summit speaker card - Ines Moreau” (speaker-card-r005.png), its letters have Piazzolla's small-text shapes (wider, sturdier, low thick-thin contrast), not the default display shapes.
+- `PHOTO-19/speaker-card-r005/H057` The sitter's outline against the ground on “Summit speaker card - Ines Moreau” (speaker-card-r005.png) shows no halo, fringe, jagged cut-out edge or other visible retouching trace.
+- `PHOTO-19/speaker-card-r005/H058` Compared with speaker_portrait_03.jpg, no skin, hair or clothing colour on “Summit speaker card - Ines Moreau” (speaker-card-r005.png) is shifted toward Signal Copper #B06B3E or Evergreen #2C4A3B.
+- `PHOTO-19/speaker-card-r005/H059` No warm or golden filter is laid over the portrait on “Summit speaker card - Ines Moreau” (speaker-card-r005.png).
+- `PHOTO-19/speaker-card-r005/H060` The CFS mark on “Summit speaker card - Ines Moreau” (speaker-card-r005.png) sits on a Cascadia Slate #23303A ground.
+- `PHOTO-19/speaker-card-r005/H061` Warm Paper #F2EEE7 appears outside the photograph on “Summit speaker card - Ines Moreau” (speaker-card-r005.png).
+- `PHOTO-19/speaker-card-r006/H057` If a summit title appears on “Summit speaker card - Anders Lindqvist” (speaker-card-r006.png), its letters have Piazzolla's small-text shapes (wider, sturdier, low thick-thin contrast), not the default display shapes.
+- `PHOTO-19/speaker-card-r006/H058` The sitter's outline against the ground on “Summit speaker card - Anders Lindqvist” (speaker-card-r006.png) shows no halo, fringe, jagged cut-out edge or other visible retouching trace.
+- `PHOTO-19/speaker-card-r006/H059` Compared with speaker_portrait_04.jpg, no skin, hair or clothing colour on “Summit speaker card - Anders Lindqvist” (speaker-card-r006.png) is shifted toward Signal Copper #B06B3E or Evergreen #2C4A3B.
+- `PHOTO-19/speaker-card-r006/H060` No warm or golden filter is laid over the portrait on “Summit speaker card - Anders Lindqvist” (speaker-card-r006.png).
+- `PHOTO-19/speaker-card-r006/H061` The CFS mark on “Summit speaker card - Anders Lindqvist” (speaker-card-r006.png) sits on a Cascadia Slate #23303A ground.
+- `PHOTO-19/speaker-card-r006/H062` Warm Paper #F2EEE7 appears outside the photograph on “Summit speaker card - Anders Lindqvist” (speaker-card-r006.png).
+- `PHOTO-19/speaker-card-r007/H057` If a summit title appears on “Summit speaker card - Colm Byrne” (speaker-card-r007.png), its letters have Piazzolla's small-text shapes (wider, sturdier, low thick-thin contrast), not the default display shapes.
+- `PHOTO-19/speaker-card-r007/H058` The sitter's outline against the ground on “Summit speaker card - Colm Byrne” (speaker-card-r007.png) shows no halo, fringe, jagged cut-out edge or other visible retouching trace.
+- `PHOTO-19/speaker-card-r007/H059` Compared with speaker_portrait_05.jpg, no skin, hair or clothing colour on “Summit speaker card - Colm Byrne” (speaker-card-r007.png) is shifted toward Signal Copper #B06B3E or Evergreen #2C4A3B.
+- `PHOTO-19/speaker-card-r007/H060` No warm or golden filter is laid over the portrait on “Summit speaker card - Colm Byrne” (speaker-card-r007.png).
+- `PHOTO-19/speaker-card-r007/H061` The CFS mark on “Summit speaker card - Colm Byrne” (speaker-card-r007.png) sits on a Cascadia Slate #23303A ground.
+- `PHOTO-19/speaker-card-r007/H062` Warm Paper #F2EEE7 appears outside the photograph on “Summit speaker card - Colm Byrne” (speaker-card-r007.png).
+- `PHOTO-19/speaker-card-r008/H057` If a summit title appears on “Summit speaker card - Dana Whitfield” (speaker-card-r008.png), its letters have Piazzolla's small-text shapes (wider, sturdier, low thick-thin contrast), not the default display shapes.
+- `PHOTO-19/speaker-card-r008/H058` The sitter's outline against the ground on “Summit speaker card - Dana Whitfield” (speaker-card-r008.png) shows no halo, fringe, jagged cut-out edge or other visible retouching trace.
+- `PHOTO-19/speaker-card-r008/H059` Compared with speaker_portrait_06.jpg, no skin, hair or clothing colour on “Summit speaker card - Dana Whitfield” (speaker-card-r008.png) is shifted toward Signal Copper #B06B3E or Evergreen #2C4A3B.
+- `PHOTO-19/speaker-card-r008/H060` No warm or golden filter is laid over the portrait on “Summit speaker card - Dana Whitfield” (speaker-card-r008.png).
+- `PHOTO-19/speaker-card-r008/H061` The CFS mark on “Summit speaker card - Dana Whitfield” (speaker-card-r008.png) sits on a Cascadia Slate #23303A ground.
+- `PHOTO-19/speaker-card-r008/H062` Warm Paper #F2EEE7 appears outside the photograph on “Summit speaker card - Dana Whitfield” (speaker-card-r008.png).
+- `PHOTO-19/speaker-card-r009/H057` If a summit title appears on “Summit speaker card - Estelle Rioux” (speaker-card-r009.png), its letters have Piazzolla's small-text shapes (wider, sturdier, low thick-thin contrast), not the default display shapes.
+- `PHOTO-19/speaker-card-r009/H058` The sitter's outline against the ground on “Summit speaker card - Estelle Rioux” (speaker-card-r009.png) shows no halo, fringe, jagged cut-out edge or other visible retouching trace.
+- `PHOTO-19/speaker-card-r009/H059` Compared with speaker_portrait_07.jpg, no skin, hair or clothing colour on “Summit speaker card - Estelle Rioux” (speaker-card-r009.png) is shifted toward Signal Copper #B06B3E or Evergreen #2C4A3B.
+- `PHOTO-19/speaker-card-r009/H060` No warm or golden filter is laid over the portrait on “Summit speaker card - Estelle Rioux” (speaker-card-r009.png).
+- `PHOTO-19/speaker-card-r009/H061` The CFS mark on “Summit speaker card - Estelle Rioux” (speaker-card-r009.png) sits on a Cascadia Slate #23303A ground.
+- `PHOTO-19/speaker-card-r009/H062` Warm Paper #F2EEE7 appears outside the photograph on “Summit speaker card - Estelle Rioux” (speaker-card-r009.png).
+- `PHOTO-19/speaker-card-r010/H059` If a summit title appears on “Summit speaker card - Grant Mackey” (speaker-card-r010.png), its letters have Piazzolla's small-text shapes (wider, sturdier, low thick-thin contrast), not the default display shapes.
+- `PHOTO-19/speaker-card-r010/H060` The sitter's outline against the ground on “Summit speaker card - Grant Mackey” (speaker-card-r010.png) shows no halo, fringe, jagged cut-out edge or other visible retouching trace.
+- `PHOTO-19/speaker-card-r010/H061` Compared with speaker_portrait_08.jpg, no skin, hair or clothing colour on “Summit speaker card - Grant Mackey” (speaker-card-r010.png) is shifted toward Signal Copper #B06B3E or Evergreen #2C4A3B.
+- `PHOTO-19/speaker-card-r010/H062` No warm or golden filter is laid over the portrait on “Summit speaker card - Grant Mackey” (speaker-card-r010.png).
+- `PHOTO-19/speaker-card-r010/H063` The CFS mark on “Summit speaker card - Grant Mackey” (speaker-card-r010.png) sits on a Cascadia Slate #23303A ground.
+- `PHOTO-19/speaker-card-r010/H064` Warm Paper #F2EEE7 appears outside the photograph on “Summit speaker card - Grant Mackey” (speaker-card-r010.png).
+- `PHOTO-19/speaker-card-r011/H057` If a summit title appears on “Summit speaker card - Sofia Bellini” (speaker-card-r011.png), its letters have Piazzolla's small-text shapes (wider, sturdier, low thick-thin contrast), not the default display shapes.
+- `PHOTO-19/speaker-card-r011/H058` The sitter's outline against the ground on “Summit speaker card - Sofia Bellini” (speaker-card-r011.png) shows no halo, fringe, jagged cut-out edge or other visible retouching trace.
+- `PHOTO-19/speaker-card-r011/H059` Compared with speaker_portrait_09.jpg, no skin, hair or clothing colour on “Summit speaker card - Sofia Bellini” (speaker-card-r011.png) is shifted toward Signal Copper #B06B3E or Evergreen #2C4A3B.
+- `PHOTO-19/speaker-card-r011/H060` No warm or golden filter is laid over the portrait on “Summit speaker card - Sofia Bellini” (speaker-card-r011.png).
+- `PHOTO-19/speaker-card-r011/H061` The CFS mark on “Summit speaker card - Sofia Bellini” (speaker-card-r011.png) sits on a Cascadia Slate #23303A ground.
+- `PHOTO-19/speaker-card-r011/H062` Warm Paper #F2EEE7 appears outside the photograph on “Summit speaker card - Sofia Bellini” (speaker-card-r011.png).
+- `PHOTO-19/speaker-card-r013/H057` If a summit title appears on “Summit speaker card - Nils Haugen” (speaker-card-r013.png), its letters have Piazzolla's small-text shapes (wider, sturdier, low thick-thin contrast), not the default display shapes.
+- `PHOTO-19/speaker-card-r013/H058` The sitter's outline against the ground on “Summit speaker card - Nils Haugen” (speaker-card-r013.png) shows no halo, fringe, jagged cut-out edge or other visible retouching trace.
+- `PHOTO-19/speaker-card-r013/H059` Compared with speaker_portrait_10.jpg, no skin, hair or clothing colour on “Summit speaker card - Nils Haugen” (speaker-card-r013.png) is shifted toward Signal Copper #B06B3E or Evergreen #2C4A3B.
+- `PHOTO-19/speaker-card-r013/H060` No warm or golden filter is laid over the portrait on “Summit speaker card - Nils Haugen” (speaker-card-r013.png).
+- `PHOTO-19/speaker-card-r013/H061` The CFS mark on “Summit speaker card - Nils Haugen” (speaker-card-r013.png) sits on a Cascadia Slate #23303A ground.
+- `PHOTO-19/speaker-card-r013/H062` Warm Paper #F2EEE7 appears outside the photograph on “Summit speaker card - Nils Haugen” (speaker-card-r013.png).
+- `PHOTO-19/speaker-card-r014/H057` If a summit title appears on “Summit speaker card - Robin Tate” (speaker-card-r014.png), its letters have Piazzolla's small-text shapes (wider, sturdier, low thick-thin contrast), not the default display shapes.
+- `PHOTO-19/speaker-card-r014/H058` The sitter's outline against the ground on “Summit speaker card - Robin Tate” (speaker-card-r014.png) shows no halo, fringe, jagged cut-out edge or other visible retouching trace.
+- `PHOTO-19/speaker-card-r014/H059` Compared with speaker_portrait_11.jpg, no skin, hair or clothing colour on “Summit speaker card - Robin Tate” (speaker-card-r014.png) is shifted toward Signal Copper #B06B3E or Evergreen #2C4A3B.
+- `PHOTO-19/speaker-card-r014/H060` No warm or golden filter is laid over the portrait on “Summit speaker card - Robin Tate” (speaker-card-r014.png).
+- `PHOTO-19/speaker-card-r014/H061` The CFS mark on “Summit speaker card - Robin Tate” (speaker-card-r014.png) sits on a Cascadia Slate #23303A ground.
+- `PHOTO-19/speaker-card-r014/H062` Warm Paper #F2EEE7 appears outside the photograph on “Summit speaker card - Robin Tate” (speaker-card-r014.png).
+- `PHOTO-19/speaker-card-r015/H057` If a summit title appears on “Summit speaker card - Bernadette Cruz” (speaker-card-r015.png), its letters have Piazzolla's small-text shapes (wider, sturdier, low thick-thin contrast), not the default display shapes.
+- `PHOTO-19/speaker-card-r015/H058` The sitter's outline against the ground on “Summit speaker card - Bernadette Cruz” (speaker-card-r015.png) shows no halo, fringe, jagged cut-out edge or other visible retouching trace.
+- `PHOTO-19/speaker-card-r015/H059` Compared with speaker_portrait_12.jpg, no skin, hair or clothing colour on “Summit speaker card - Bernadette Cruz” (speaker-card-r015.png) is shifted toward Signal Copper #B06B3E or Evergreen #2C4A3B.
+- `PHOTO-19/speaker-card-r015/H060` No warm or golden filter is laid over the portrait on “Summit speaker card - Bernadette Cruz” (speaker-card-r015.png).
+- `PHOTO-19/speaker-card-r015/H061` The CFS mark on “Summit speaker card - Bernadette Cruz” (speaker-card-r015.png) sits on a Cascadia Slate #23303A ground.
+- `PHOTO-19/speaker-card-r015/H062` Warm Paper #F2EEE7 appears outside the photograph on “Summit speaker card - Bernadette Cruz” (speaker-card-r015.png).
+- `PHOTO-19/speaker-card-r016/H057` If a summit title appears on “Summit speaker card - Hugo Almeida” (speaker-card-r016.png), its letters have Piazzolla's small-text shapes (wider, sturdier, low thick-thin contrast), not the default display shapes.
+- `PHOTO-19/speaker-card-r016/H058` The sitter's outline against the ground on “Summit speaker card - Hugo Almeida” (speaker-card-r016.png) shows no halo, fringe, jagged cut-out edge or other visible retouching trace.
+- `PHOTO-19/speaker-card-r016/H059` Compared with speaker_portrait_13.jpg, no skin, hair or clothing colour on “Summit speaker card - Hugo Almeida” (speaker-card-r016.png) is shifted toward Signal Copper #B06B3E or Evergreen #2C4A3B.
+- `PHOTO-19/speaker-card-r016/H060` No warm or golden filter is laid over the portrait on “Summit speaker card - Hugo Almeida” (speaker-card-r016.png).
+- `PHOTO-19/speaker-card-r016/H061` The CFS mark on “Summit speaker card - Hugo Almeida” (speaker-card-r016.png) sits on a Cascadia Slate #23303A ground.
+- `PHOTO-19/speaker-card-r016/H062` Warm Paper #F2EEE7 appears outside the photograph on “Summit speaker card - Hugo Almeida” (speaker-card-r016.png).
+- `PHOTO-19/speaker-card-r017/H057` If a summit title appears on “Summit speaker card - Karin Voss” (speaker-card-r017.png), its letters have Piazzolla's small-text shapes (wider, sturdier, low thick-thin contrast), not the default display shapes.
+- `PHOTO-19/speaker-card-r017/H058` The sitter's outline against the ground on “Summit speaker card - Karin Voss” (speaker-card-r017.png) shows no halo, fringe, jagged cut-out edge or other visible retouching trace.
+- `PHOTO-19/speaker-card-r017/H059` Compared with speaker_portrait_14.jpg, no skin, hair or clothing colour on “Summit speaker card - Karin Voss” (speaker-card-r017.png) is shifted toward Signal Copper #B06B3E or Evergreen #2C4A3B.
+- `PHOTO-19/speaker-card-r017/H060` No warm or golden filter is laid over the portrait on “Summit speaker card - Karin Voss” (speaker-card-r017.png).
+- `PHOTO-19/speaker-card-r017/H061` The CFS mark on “Summit speaker card - Karin Voss” (speaker-card-r017.png) sits on a Cascadia Slate #23303A ground.
+- `PHOTO-19/speaker-card-r017/H062` Warm Paper #F2EEE7 appears outside the photograph on “Summit speaker card - Karin Voss” (speaker-card-r017.png).
+- `PHOTO-19/speaker-card-r018/H057` Apart from the affiliation line “Cascadia Founders Summit”, if a summit title appears on “Summit host card - Laurel Beckett” (speaker-card-r018.png), its letters have Piazzolla's wide, sturdy, low-contrast small-text shapes, not the display shapes.
+- `PHOTO-19/speaker-card-r018/H058` The sitter's outline against the ground on “Summit host card - Laurel Beckett” (speaker-card-r018.png) shows no halo, fringe, jagged cut-out edge or other visible retouching trace.
+- `PHOTO-19/speaker-card-r018/H059` Compared with staff_portrait_01.jpg, no skin, hair or clothing colour on “Summit host card - Laurel Beckett” (speaker-card-r018.png) is shifted toward Signal Copper #B06B3E or Evergreen #2C4A3B.
+- `PHOTO-19/speaker-card-r018/H060` No warm or golden filter is laid over the portrait on “Summit host card - Laurel Beckett” (speaker-card-r018.png).
+- `PHOTO-19/speaker-card-r018/H061` The CFS mark on “Summit host card - Laurel Beckett” (speaker-card-r018.png) sits on a Cascadia Slate #23303A ground.
+- `PHOTO-19/speaker-card-r018/H062` Warm Paper #F2EEE7 appears outside the photograph on “Summit host card - Laurel Beckett” (speaker-card-r018.png).
+- `PHOTO-19/speaker-card-r019/H057` Apart from the affiliation line “Cascadia Founders Summit”, if a summit title appears on “Summit host card - Owen Faraday” (speaker-card-r019.png), its letters have Piazzolla's wide, sturdy, low-contrast small-text shapes, not the display shapes.
+- `PHOTO-19/speaker-card-r019/H058` The sitter's outline against the ground on “Summit host card - Owen Faraday” (speaker-card-r019.png) shows no halo, fringe, jagged cut-out edge or other visible retouching trace.
+- `PHOTO-19/speaker-card-r019/H059` Compared with staff_portrait_02.jpg, no skin, hair or clothing colour on “Summit host card - Owen Faraday” (speaker-card-r019.png) is shifted toward Signal Copper #B06B3E or Evergreen #2C4A3B.
+- `PHOTO-19/speaker-card-r019/H060` No warm or golden filter is laid over the portrait on “Summit host card - Owen Faraday” (speaker-card-r019.png).
+- `PHOTO-19/speaker-card-r019/H061` The CFS mark on “Summit host card - Owen Faraday” (speaker-card-r019.png) sits on a Cascadia Slate #23303A ground.
+- `PHOTO-19/speaker-card-r019/H062` Warm Paper #F2EEE7 appears outside the photograph on “Summit host card - Owen Faraday” (speaker-card-r019.png).
+- `PHOTO-19/speaker-card-r020/H057` Apart from the affiliation line “Cascadia Founders Summit”, if a summit title appears on “Summit host card - Mireille Dufort” (speaker-card-r020.png), its letters have Piazzolla's wide, sturdy, low-contrast small-text shapes, not the display shapes.
+- `PHOTO-19/speaker-card-r020/H058` The sitter's outline against the ground on “Summit host card - Mireille Dufort” (speaker-card-r020.png) shows no halo, fringe, jagged cut-out edge or other visible retouching trace.
+- `PHOTO-19/speaker-card-r020/H059` Compared with staff_portrait_03.jpg, no skin, hair or clothing colour on “Summit host card - Mireille Dufort” (speaker-card-r020.png) is shifted toward Signal Copper #B06B3E or Evergreen #2C4A3B.
+- `PHOTO-19/speaker-card-r020/H060` No warm or golden filter is laid over the portrait on “Summit host card - Mireille Dufort” (speaker-card-r020.png).
+- `PHOTO-19/speaker-card-r020/H061` The CFS mark on “Summit host card - Mireille Dufort” (speaker-card-r020.png) sits on a Cascadia Slate #23303A ground.
+- `PHOTO-19/speaker-card-r020/H062` Warm Paper #F2EEE7 appears outside the photograph on “Summit host card - Mireille Dufort” (speaker-card-r020.png).
+- `PHOTO-19/speaker-card-r021/H061` Apart from the affiliation line “Cascadia Founders Summit”, if a summit title appears on “Summit host card - Jonah Pryce” (speaker-card-r021.png), its letters have Piazzolla's wide, sturdy, low-contrast small-text shapes, not the display shapes.
+- `PHOTO-19/speaker-card-r021/H062` The sitter's outline against the ground on “Summit host card - Jonah Pryce” (speaker-card-r021.png) shows no halo, fringe, jagged cut-out edge or other visible retouching trace.
+- `PHOTO-19/speaker-card-r021/H063` Compared with staff_portrait_04.jpg, no skin, hair or clothing colour on “Summit host card - Jonah Pryce” (speaker-card-r021.png) is shifted toward Signal Copper #B06B3E or Evergreen #2C4A3B.
+- `PHOTO-19/speaker-card-r021/H064` No warm or golden filter is laid over the portrait on “Summit host card - Jonah Pryce” (speaker-card-r021.png).
+- `PHOTO-19/speaker-card-r021/H065` The CFS mark on “Summit host card - Jonah Pryce” (speaker-card-r021.png) sits on a Cascadia Slate #23303A ground.
+- `PHOTO-19/speaker-card-r021/H066` Warm Paper #F2EEE7 appears outside the photograph on “Summit host card - Jonah Pryce” (speaker-card-r021.png).
+- `PHOTO-19/summit-announcement/H068` “Summit announcement” (summit-announcement.png) gives no registration deadline.
+- `PHOTO-19/summit-announcement/H069` “Summit announcement” (summit-announcement.png) shows no price outside the brand identity's 600 to 1,200 dollar pass range.
+- `PHOTO-19/summit-announcement/H070` If a portrait appears on “Summit announcement” (summit-announcement.png), the sitter's outline against the ground shows no halo, fringe, jagged cut-out edge or other retouching trace.
+- `PHOTO-19/summit-announcement/H071` If a portrait appears on “Summit announcement” (summit-announcement.png), none of its skin, hair or clothing colours is shifted toward Signal Copper #B06B3E or Evergreen #2C4A3B, compared with its source photo.
+- `PHOTO-19/summit-announcement/H072` If a portrait appears on “Summit announcement” (summit-announcement.png), no warm or golden filter is laid over it.
+- `PHOTO-19/summit-announcement/H073` If venue_render.jpg appears on “Summit announcement” (summit-announcement.png), it shows no upscaling softness or pixelation.
+- `PHOTO-19/summit-announcement/H074` If the CFS mark appears on “Summit announcement” (summit-announcement.png), it sits on a Cascadia Slate #23303A ground.
+- `PHOTO-19/summit-announcement/H075` Warm Paper #F2EEE7 appears outside any photograph on “Summit announcement” (summit-announcement.png).

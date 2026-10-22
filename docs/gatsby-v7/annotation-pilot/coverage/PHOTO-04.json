@@ -310,36 +310,6 @@
       }
     },
     {
-      "rule_id": "B12",
-      "kind": "brand",
-      "rule": "Pool water keeps its true colour: the Casa Scogliera pool stays pale turquoise; Oliveto and Verranza pools stay deep blue.",
-      "source": "brand_identity.palette_rules.photography; owner_note.txt",
-      "cells": {
-        "booking-hero-oliveto": {
-          "checks": [
-            "PHOTO-04/booking-hero-oliveto/H012"
-          ]
-        },
-        "booking-hero-scogliera": {
-          "checks": [
-            "PHOTO-04/booking-hero-scogliera/H011"
-          ]
-        },
-        "booking-hero-verranza": {
-          "checks": [
-            "PHOTO-04/booking-hero-verranza/H010"
-          ]
-        },
-        "villa-collection": {
-          "checks": [
-            "PHOTO-04/villa-collection/H007",
-            "PHOTO-04/villa-collection/H015",
-            "PHOTO-04/villa-collection/H022"
-          ]
-        }
-      }
-    },
-    {
       "rule_id": "B13",
       "kind": "brand",
       "rule": "The monogram is Blue on Lime Wash, or its ink is recoloured Lime Wash on a Blue panel.",
@@ -480,36 +450,6 @@
       }
     },
     {
-      "rule_id": "B18",
-      "kind": "brand",
-      "rule": "Each house reads in the same neutral daylight: the Oliveto green cast and Verranza orange cast are corrected, Scogliera stays neutral.",
-      "source": "owner_note.txt; asset plan defect_engineered (casts)",
-      "cells": {
-        "booking-hero-oliveto": {
-          "checks": [
-            "PHOTO-04/booking-hero-oliveto/H005"
-          ]
-        },
-        "booking-hero-scogliera": {
-          "checks": [
-            "PHOTO-04/booking-hero-scogliera/H010"
-          ]
-        },
-        "booking-hero-verranza": {
-          "checks": [
-            "PHOTO-04/booking-hero-verranza/H009"
-          ]
-        },
-        "villa-collection": {
-          "checks": [
-            "PHOTO-04/villa-collection/H013",
-            "PHOTO-04/villa-collection/H020",
-            "PHOTO-04/villa-collection/H026"
-          ]
-        }
-      }
-    },
-    {
       "rule_id": "B19",
       "kind": "brand",
       "rule": "The three accents together cover no more than 5% of the designed, non-photographic area.",
@@ -566,128 +506,513 @@
       }
     },
     {
-      "rule_id": "T01",
-      "kind": "type",
-      "rule": "Display / H1 house name: Cormorant Garamond Light; largest text on a hero; 34 pt in villa-collection.pdf.",
-      "source": "brand_identity.type_system.scale step 01",
+      "rule_id": "B12",
+      "kind": "brand",
+      "rule": "The Casa Scogliera pool in scogliera_pool.jpg stays pale turquoise and is not pushed toward deep blue.",
+      "source": "brand_identity.palette_rules.photography",
+      "cells": {
+        "booking-hero-oliveto": {
+          "na": "This hero uses only Casa Oliveto frames (H001), so the Casa Scogliera pool cannot appear in it."
+        },
+        "booking-hero-scogliera": {
+          "checks": [
+            "PHOTO-04/booking-hero-scogliera/H011"
+          ]
+        },
+        "booking-hero-verranza": {
+          "na": "This hero uses only Casa Verranza frames (H001), so the Casa Scogliera pool cannot appear in it."
+        },
+        "villa-collection": {
+          "checks": [
+            "PHOTO-04/villa-collection/H007"
+          ]
+        }
+      }
+    },
+    {
+      "rule_id": "B21",
+      "kind": "brand",
+      "rule": "The Casa Oliveto and Casa Verranza pools keep the deep blue of oliveto_pool.jpg and verranza_pool.jpg.",
+      "source": "brand_identity.palette_rules.photography; owner_note.txt (no water a colour that water is not)",
       "cells": {
         "booking-hero-oliveto": {
           "checks": [
-            "PHOTO-04/booking-hero-oliveto/H006",
+            "PHOTO-04/booking-hero-oliveto/H012"
+          ]
+        },
+        "booking-hero-scogliera": {
+          "na": "This hero uses only Casa Scogliera frames (H001), so neither deep-blue pool can appear in it."
+        },
+        "booking-hero-verranza": {
+          "checks": [
+            "PHOTO-04/booking-hero-verranza/H010"
+          ]
+        },
+        "villa-collection": {
+          "checks": [
+            "PHOTO-04/villa-collection/H015",
+            "PHOTO-04/villa-collection/H022"
+          ]
+        }
+      }
+    },
+    {
+      "rule_id": "B18",
+      "kind": "brand",
+      "rule": "The green shade-sail cast on the Casa Oliveto frames is corrected to neutral daylight.",
+      "source": "owner_note.txt; asset plan defect_engineered (Oliveto green cast)",
+      "cells": {
+        "booking-hero-oliveto": {
+          "checks": [
+            "PHOTO-04/booking-hero-oliveto/H005"
+          ]
+        },
+        "booking-hero-scogliera": {
+          "na": "This hero uses only Casa Scogliera frames (H001), which carry no green cast."
+        },
+        "booking-hero-verranza": {
+          "na": "This hero uses only Casa Verranza frames (H001), which carry no green cast."
+        },
+        "villa-collection": {
+          "checks": [
+            "PHOTO-04/villa-collection/H020"
+          ]
+        }
+      }
+    },
+    {
+      "rule_id": "B22",
+      "kind": "brand",
+      "rule": "The orange afternoon cast on the Casa Verranza frames is corrected to neutral daylight.",
+      "source": "owner_note.txt (no orange skin); asset plan defect_engineered (Verranza orange cast)",
+      "cells": {
+        "booking-hero-oliveto": {
+          "na": "This hero uses only Casa Oliveto frames (H001), which carry no orange cast."
+        },
+        "booking-hero-scogliera": {
+          "na": "This hero uses only Casa Scogliera frames (H001), which carry no orange cast."
+        },
+        "booking-hero-verranza": {
+          "checks": [
+            "PHOTO-04/booking-hero-verranza/H009"
+          ]
+        },
+        "villa-collection": {
+          "checks": [
+            "PHOTO-04/villa-collection/H013"
+          ]
+        }
+      }
+    },
+    {
+      "rule_id": "B23",
+      "kind": "brand",
+      "rule": "The Casa Scogliera frames keep their neutral daylight, with no warm or green cast added.",
+      "source": "owner_note.txt (shot on different days must not show); asset plan defect_engineered (Scogliera neutral)",
+      "cells": {
+        "booking-hero-oliveto": {
+          "na": "This hero uses only Casa Oliveto frames (H001), so no Scogliera frame appears."
+        },
+        "booking-hero-scogliera": {
+          "checks": [
+            "PHOTO-04/booking-hero-scogliera/H010"
+          ]
+        },
+        "booking-hero-verranza": {
+          "na": "This hero uses only Casa Verranza frames (H001), so no Scogliera frame appears."
+        },
+        "villa-collection": {
+          "checks": [
+            "PHOTO-04/villa-collection/H026"
+          ]
+        }
+      }
+    },
+    {
+      "rule_id": "B24",
+      "kind": "brand",
+      "rule": "Ligurian Stone #C4B5A0 is used only for hairline rules and dividers, never a ground, panel or text.",
+      "source": "brand_identity.palette (Ligurian Stone usage)",
+      "cells": {
+        "booking-hero-oliveto": {
+          "checks": [
+            "PHOTO-04/booking-hero-oliveto/H067"
+          ]
+        },
+        "booking-hero-scogliera": {
+          "checks": [
+            "PHOTO-04/booking-hero-scogliera/H067"
+          ]
+        },
+        "booking-hero-verranza": {
+          "checks": [
+            "PHOTO-04/booking-hero-verranza/H067"
+          ]
+        },
+        "villa-collection": {
+          "checks": [
+            "PHOTO-04/villa-collection/H091"
+          ]
+        }
+      }
+    },
+    {
+      "rule_id": "T01F",
+      "kind": "type",
+      "rule": "House name (Display / H1): Cormorant Garamond Light.",
+      "source": "brand_identity.type_system.scale step 01; type_system.rules (Cormorant Garamond is Light only)",
+      "cells": {
+        "booking-hero-oliveto": {
+          "checks": [
             "PHOTO-04/booking-hero-oliveto/H018"
           ]
         },
         "booking-hero-scogliera": {
           "checks": [
-            "PHOTO-04/booking-hero-scogliera/H024",
             "PHOTO-04/booking-hero-scogliera/H018"
           ]
         },
         "booking-hero-verranza": {
           "checks": [
-            "PHOTO-04/booking-hero-verranza/H023",
             "PHOTO-04/booking-hero-verranza/H017"
           ]
         },
         "villa-collection": {
           "checks": [
             "PHOTO-04/villa-collection/H035",
-            "PHOTO-04/villa-collection/H042",
+            "PHOTO-04/villa-collection/A017",
+            "PHOTO-04/villa-collection/A018",
+            "PHOTO-04/villa-collection/A019"
+          ]
+        }
+      }
+    },
+    {
+      "rule_id": "T01S",
+      "kind": "type",
+      "rule": "House name size: 72 px on a booking hero; 34 pt in villa-collection.pdf.",
+      "source": "brand_identity.type_system.scale step 01 and note",
+      "cells": {
+        "booking-hero-oliveto": {
+          "not_verified": "Font size cannot be read from a delivered PNG (pixel cap height is not font size), so the 72 px house-name value stays a design target."
+        },
+        "booking-hero-scogliera": {
+          "not_verified": "Font size cannot be read from a delivered PNG (pixel cap height is not font size), so the 72 px house-name value stays a design target."
+        },
+        "booking-hero-verranza": {
+          "not_verified": "Font size cannot be read from a delivered PNG (pixel cap height is not font size), so the 72 px house-name value stays a design target."
+        },
+        "villa-collection": {
+          "checks": [
+            "PHOTO-04/villa-collection/A017",
+            "PHOTO-04/villa-collection/A018",
+            "PHOTO-04/villa-collection/A019"
+          ]
+        }
+      }
+    },
+    {
+      "rule_id": "T01L",
+      "kind": "type",
+      "rule": "House name leading: 78 pixels baseline to baseline on a booking hero, where the name wraps.",
+      "source": "brand_identity.type_system.scale step 01; measurement_notes (leading applies only to multiline text)",
+      "cells": {
+        "booking-hero-oliveto": {
+          "not_verified": "Exact leading cannot be measured reliably in a delivered PNG; the 78 pixel baseline-to-baseline value stays a design target."
+        },
+        "booking-hero-scogliera": {
+          "not_verified": "Exact leading cannot be measured reliably in a delivered PNG; the 78 pixel baseline-to-baseline value stays a design target."
+        },
+        "booking-hero-verranza": {
+          "not_verified": "Exact leading cannot be measured reliably in a delivered PNG; the 78 pixel baseline-to-baseline value stays a design target."
+        },
+        "villa-collection": {
+          "na": "The brochure states no house-name leading; the typography leaves unspecified print leading to the designer."
+        }
+      }
+    },
+    {
+      "rule_id": "T01T",
+      "kind": "type",
+      "rule": "House name tracking: -10 units on the heroes and in the brochure.",
+      "source": "brand_identity.type_system.scale step 01; type_system.rules (brochure keeps the same tracking)",
+      "cells": {
+        "booking-hero-oliveto": {
+          "not_verified": "Tracking in thousandths of an em cannot be measured in a delivered PNG; the -10 value stays a design target."
+        },
+        "booking-hero-scogliera": {
+          "not_verified": "Tracking in thousandths of an em cannot be measured in a delivered PNG; the -10 value stays a design target."
+        },
+        "booking-hero-verranza": {
+          "not_verified": "Tracking in thousandths of an em cannot be measured in a delivered PNG; the -10 value stays a design target."
+        },
+        "villa-collection": {
+          "not_verified": "The runner cannot yet measure tracking in Tf-sized PDFs (verify_outputs.py takes the em from the glyph matrix without the font size), so no tracking check is added; the value stays a design target."
+        }
+      }
+    },
+    {
+      "rule_id": "T01H",
+      "kind": "type",
+      "rule": "The house name leads the hierarchy: the largest text on a hero, larger than the rates in the brochure.",
+      "source": "brand_identity.type_system.scale steps 01 to 04 (relative hierarchy)",
+      "cells": {
+        "booking-hero-oliveto": {
+          "checks": [
+            "PHOTO-04/booking-hero-oliveto/H006"
+          ]
+        },
+        "booking-hero-scogliera": {
+          "checks": [
+            "PHOTO-04/booking-hero-scogliera/H024"
+          ]
+        },
+        "booking-hero-verranza": {
+          "checks": [
+            "PHOTO-04/booking-hero-verranza/H023"
+          ]
+        },
+        "villa-collection": {
+          "checks": [
             "PHOTO-04/villa-collection/H067"
           ]
         }
       }
     },
     {
-      "rule_id": "T02",
+      "rule_id": "T02F",
       "kind": "type",
-      "rule": "Subheading / H2 standfirst and secondary headings: Cormorant Garamond Light; in the brochure smaller than the 34 pt house names.",
+      "rule": "Subheading / H2 (hero standfirst, brochure secondary headings): Cormorant Garamond Light.",
       "source": "brand_identity.type_system.scale step 02",
       "cells": {
         "booking-hero-oliveto": {
           "checks": [
-            "PHOTO-04/booking-hero-oliveto/H018"
+            "PHOTO-04/booking-hero-oliveto/H064"
           ]
         },
         "booking-hero-scogliera": {
           "checks": [
-            "PHOTO-04/booking-hero-scogliera/H018"
+            "PHOTO-04/booking-hero-scogliera/H064"
           ]
         },
         "booking-hero-verranza": {
           "checks": [
-            "PHOTO-04/booking-hero-verranza/H017"
+            "PHOTO-04/booking-hero-verranza/H064"
           ]
         },
         "villa-collection": {
           "checks": [
-            "PHOTO-04/villa-collection/H035",
+            "PHOTO-04/villa-collection/H088"
+          ]
+        }
+      }
+    },
+    {
+      "rule_id": "T02S",
+      "kind": "type",
+      "rule": "Subheading size: 26 px for a hero standfirst; in the brochure, smaller than the 34 pt house names.",
+      "source": "brand_identity.type_system.scale step 02 and note",
+      "cells": {
+        "booking-hero-oliveto": {
+          "not_verified": "The standfirst is optional; where present, font size cannot be read from a delivered PNG (pixel cap height is not font size), so the 26 px value stays a design target."
+        },
+        "booking-hero-scogliera": {
+          "not_verified": "The standfirst is optional; where present, font size cannot be read from a delivered PNG (pixel cap height is not font size), so the 26 px value stays a design target."
+        },
+        "booking-hero-verranza": {
+          "not_verified": "The standfirst is optional; where present, font size cannot be read from a delivered PNG (pixel cap height is not font size), so the 26 px value stays a design target."
+        },
+        "villa-collection": {
+          "checks": [
             "PHOTO-04/villa-collection/H066"
           ]
         }
       }
     },
     {
-      "rule_id": "T03",
+      "rule_id": "T02L",
       "kind": "type",
-      "rule": "Body and booking-action text: Source Sans 3 Regular, at most 65 characters per line; brochure body 10 pt with 15 pt leading.",
-      "source": "brand_identity.type_system.scale step 03",
+      "rule": "Subheading leading: 30 pixels baseline to baseline for a wrapped hero standfirst.",
+      "source": "brand_identity.type_system.scale step 02",
+      "cells": {
+        "booking-hero-oliveto": {
+          "not_verified": "Exact leading cannot be measured reliably in a delivered PNG; the 30 pixel baseline-to-baseline value stays a design target."
+        },
+        "booking-hero-scogliera": {
+          "not_verified": "Exact leading cannot be measured reliably in a delivered PNG; the 30 pixel baseline-to-baseline value stays a design target."
+        },
+        "booking-hero-verranza": {
+          "not_verified": "Exact leading cannot be measured reliably in a delivered PNG; the 30 pixel baseline-to-baseline value stays a design target."
+        },
+        "villa-collection": {
+          "na": "The brochure note makes secondary-heading leading flexible, so no fixed value applies."
+        }
+      }
+    },
+    {
+      "rule_id": "T02T",
+      "kind": "type",
+      "rule": "Subheading tracking: -4 units on the heroes and in the brochure.",
+      "source": "brand_identity.type_system.scale step 02; type_system.rules (brochure keeps the same tracking)",
+      "cells": {
+        "booking-hero-oliveto": {
+          "not_verified": "Tracking in thousandths of an em cannot be measured in a delivered PNG; the -4 value stays a design target."
+        },
+        "booking-hero-scogliera": {
+          "not_verified": "Tracking in thousandths of an em cannot be measured in a delivered PNG; the -4 value stays a design target."
+        },
+        "booking-hero-verranza": {
+          "not_verified": "Tracking in thousandths of an em cannot be measured in a delivered PNG; the -4 value stays a design target."
+        },
+        "villa-collection": {
+          "not_verified": "No fixed secondary-heading text is known from the brief or supplied files, so code cannot find it, and -4 tracking cannot be judged by eye."
+        }
+      }
+    },
+    {
+      "rule_id": "T03F",
+      "kind": "type",
+      "rule": "Body and booking-action text: Source Sans 3 Regular.",
+      "source": "brand_identity.type_system.scale step 03; type_system.rules",
       "cells": {
         "booking-hero-oliveto": {
           "checks": [
-            "PHOTO-04/booking-hero-oliveto/H022",
             "PHOTO-04/booking-hero-oliveto/H019"
           ]
         },
         "booking-hero-scogliera": {
           "checks": [
-            "PHOTO-04/booking-hero-scogliera/H022",
             "PHOTO-04/booking-hero-scogliera/H019"
           ]
         },
         "booking-hero-verranza": {
           "checks": [
-            "PHOTO-04/booking-hero-verranza/H021",
             "PHOTO-04/booking-hero-verranza/H018"
           ]
         },
         "villa-collection": {
           "checks": [
-            "PHOTO-04/villa-collection/H039",
-            "PHOTO-04/villa-collection/H036",
-            "PHOTO-04/villa-collection/H047",
+            "PHOTO-04/villa-collection/H036"
+          ]
+        }
+      }
+    },
+    {
+      "rule_id": "T03S",
+      "kind": "type",
+      "rule": "Body size: 20 px on a booking hero; 10 pt in villa-collection.pdf.",
+      "source": "brand_identity.type_system.scale step 03 and note",
+      "cells": {
+        "booking-hero-oliveto": {
+          "not_verified": "Font size cannot be read from a delivered PNG (pixel cap height is not font size), so the 20 px body value stays a design target."
+        },
+        "booking-hero-scogliera": {
+          "not_verified": "Font size cannot be read from a delivered PNG (pixel cap height is not font size), so the 20 px body value stays a design target."
+        },
+        "booking-hero-verranza": {
+          "not_verified": "Font size cannot be read from a delivered PNG (pixel cap height is not font size), so the 20 px body value stays a design target."
+        },
+        "villa-collection": {
+          "checks": [
+            "PHOTO-04/villa-collection/H047"
+          ]
+        }
+      }
+    },
+    {
+      "rule_id": "T03L",
+      "kind": "type",
+      "rule": "Body leading: 30 pixels on a booking hero; 15 points in villa-collection.pdf, baseline to baseline.",
+      "source": "brand_identity.type_system.scale step 03 and note",
+      "cells": {
+        "booking-hero-oliveto": {
+          "not_verified": "Exact leading cannot be measured reliably in a delivered PNG; the 30 pixel baseline-to-baseline value stays a design target."
+        },
+        "booking-hero-scogliera": {
+          "not_verified": "Exact leading cannot be measured reliably in a delivered PNG; the 30 pixel baseline-to-baseline value stays a design target."
+        },
+        "booking-hero-verranza": {
+          "not_verified": "Exact leading cannot be measured reliably in a delivered PNG; the 30 pixel baseline-to-baseline value stays a design target."
+        },
+        "villa-collection": {
+          "checks": [
             "PHOTO-04/villa-collection/H048"
           ]
         }
       }
     },
     {
-      "rule_id": "T04",
+      "rule_id": "T03T",
       "kind": "type",
-      "rule": "Fine print, rates and captions: Source Sans 3 Regular; hero rates sit below body size; brochure rates 9 pt.",
-      "source": "brand_identity.type_system.scale step 04",
+      "rule": "Body tracking: 0 units on the heroes and in the brochure.",
+      "source": "brand_identity.type_system.scale step 03; type_system.rules (brochure keeps the same tracking)",
+      "cells": {
+        "booking-hero-oliveto": {
+          "not_verified": "Tracking in thousandths of an em cannot be measured in a delivered PNG; the 0 value stays a design target."
+        },
+        "booking-hero-scogliera": {
+          "not_verified": "Tracking in thousandths of an em cannot be measured in a delivered PNG; the 0 value stays a design target."
+        },
+        "booking-hero-verranza": {
+          "not_verified": "Tracking in thousandths of an em cannot be measured in a delivered PNG; the 0 value stays a design target."
+        },
+        "villa-collection": {
+          "not_verified": "No fixed body text is known from the brief or supplied files, so code cannot find it, and 0 tracking cannot be judged by eye."
+        }
+      }
+    },
+    {
+      "rule_id": "T03M",
+      "kind": "type",
+      "rule": "Body and booking-action text run at most 65 characters per line.",
+      "source": "brand_identity.type_system.scale step 03 note",
       "cells": {
         "booking-hero-oliveto": {
           "checks": [
-            "PHOTO-04/booking-hero-oliveto/H019",
-            "PHOTO-04/booking-hero-oliveto/H059"
+            "PHOTO-04/booking-hero-oliveto/H022"
           ]
         },
         "booking-hero-scogliera": {
           "checks": [
-            "PHOTO-04/booking-hero-scogliera/H019",
-            "PHOTO-04/booking-hero-scogliera/H059"
+            "PHOTO-04/booking-hero-scogliera/H022"
           ]
         },
         "booking-hero-verranza": {
           "checks": [
-            "PHOTO-04/booking-hero-verranza/H018",
-            "PHOTO-04/booking-hero-verranza/H059"
+            "PHOTO-04/booking-hero-verranza/H021"
           ]
         },
         "villa-collection": {
           "checks": [
-            "PHOTO-04/villa-collection/H036",
+            "PHOTO-04/villa-collection/H039"
+          ]
+        }
+      }
+    },
+    {
+      "rule_id": "T04F",
+      "kind": "type",
+      "rule": "Fine print (rates, captions): Source Sans 3 Regular.",
+      "source": "brand_identity.type_system.scale step 04; type_system.rules",
+      "cells": {
+        "booking-hero-oliveto": {
+          "checks": [
+            "PHOTO-04/booking-hero-oliveto/H065"
+          ]
+        },
+        "booking-hero-scogliera": {
+          "checks": [
+            "PHOTO-04/booking-hero-scogliera/H065"
+          ]
+        },
+        "booking-hero-verranza": {
+          "checks": [
+            "PHOTO-04/booking-hero-verranza/H065"
+          ]
+        },
+        "villa-collection": {
+          "checks": [
+            "PHOTO-04/villa-collection/H089",
             "PHOTO-04/villa-collection/A008",
             "PHOTO-04/villa-collection/A009",
             "PHOTO-04/villa-collection/A010",
@@ -698,6 +1023,102 @@
             "PHOTO-04/villa-collection/A015",
             "PHOTO-04/villa-collection/A016"
           ]
+        }
+      }
+    },
+    {
+      "rule_id": "T04S",
+      "kind": "type",
+      "rule": "Fine print size: 15 px for hero rates and captions; rates 9 pt in villa-collection.pdf.",
+      "source": "brand_identity.type_system.scale step 04 and note",
+      "cells": {
+        "booking-hero-oliveto": {
+          "not_verified": "Font size cannot be read from a delivered PNG (pixel cap height is not font size), so the 15 px fine-print value stays a design target."
+        },
+        "booking-hero-scogliera": {
+          "not_verified": "Font size cannot be read from a delivered PNG (pixel cap height is not font size), so the 15 px fine-print value stays a design target."
+        },
+        "booking-hero-verranza": {
+          "not_verified": "Font size cannot be read from a delivered PNG (pixel cap height is not font size), so the 15 px fine-print value stays a design target."
+        },
+        "villa-collection": {
+          "checks": [
+            "PHOTO-04/villa-collection/A008",
+            "PHOTO-04/villa-collection/A009",
+            "PHOTO-04/villa-collection/A010",
+            "PHOTO-04/villa-collection/A011",
+            "PHOTO-04/villa-collection/A012",
+            "PHOTO-04/villa-collection/A013",
+            "PHOTO-04/villa-collection/A014",
+            "PHOTO-04/villa-collection/A015",
+            "PHOTO-04/villa-collection/A016"
+          ]
+        }
+      }
+    },
+    {
+      "rule_id": "T04L",
+      "kind": "type",
+      "rule": "Fine print leading: 22 pixels baseline to baseline for wrapped hero fine print.",
+      "source": "brand_identity.type_system.scale step 04",
+      "cells": {
+        "booking-hero-oliveto": {
+          "not_verified": "Exact leading cannot be measured reliably in a delivered PNG; the 22 pixel baseline-to-baseline value stays a design target."
+        },
+        "booking-hero-scogliera": {
+          "not_verified": "Exact leading cannot be measured reliably in a delivered PNG; the 22 pixel baseline-to-baseline value stays a design target."
+        },
+        "booking-hero-verranza": {
+          "not_verified": "Exact leading cannot be measured reliably in a delivered PNG; the 22 pixel baseline-to-baseline value stays a design target."
+        },
+        "villa-collection": {
+          "na": "The brochure note makes rate and caption leading flexible, so no fixed value applies."
+        }
+      }
+    },
+    {
+      "rule_id": "T04T",
+      "kind": "type",
+      "rule": "Fine print tracking: +8 units for rates and captions on the heroes and in the brochure.",
+      "source": "brand_identity.type_system.scale step 04; type_system.rules (brochure keeps the same tracking)",
+      "cells": {
+        "booking-hero-oliveto": {
+          "not_verified": "Tracking in thousandths of an em cannot be measured in a delivered PNG; the +8 value stays a design target."
+        },
+        "booking-hero-scogliera": {
+          "not_verified": "Tracking in thousandths of an em cannot be measured in a delivered PNG; the +8 value stays a design target."
+        },
+        "booking-hero-verranza": {
+          "not_verified": "Tracking in thousandths of an em cannot be measured in a delivered PNG; the +8 value stays a design target."
+        },
+        "villa-collection": {
+          "not_verified": "The runner cannot yet measure tracking in Tf-sized PDFs (verify_outputs.py takes the em from the glyph matrix without the font size), so no tracking check is added; the value stays a design target."
+        }
+      }
+    },
+    {
+      "rule_id": "T04H",
+      "kind": "type",
+      "rule": "Hero rates (fine print) are set smaller than the body and booking-action text.",
+      "source": "brand_identity.type_system.scale steps 03 and 04 (relative hierarchy on the heroes)",
+      "cells": {
+        "booking-hero-oliveto": {
+          "checks": [
+            "PHOTO-04/booking-hero-oliveto/H059"
+          ]
+        },
+        "booking-hero-scogliera": {
+          "checks": [
+            "PHOTO-04/booking-hero-scogliera/H059"
+          ]
+        },
+        "booking-hero-verranza": {
+          "checks": [
+            "PHOTO-04/booking-hero-verranza/H059"
+          ]
+        },
+        "villa-collection": {
+          "na": "This rule compares hero fine print with hero body text; the brochure's 9 pt rates and 10 pt body are fixed exactly under T04S (A008 to A016) and T03S (H047)."
         }
       }
     },
@@ -724,15 +1145,17 @@
         },
         "villa-collection": {
           "checks": [
-            "PHOTO-04/villa-collection/H037"
+            "PHOTO-04/villa-collection/H037",
+            "PHOTO-04/villa-collection/H086",
+            "PHOTO-04/villa-collection/H087"
           ]
         }
       }
     },
     {
-      "rule_id": "T06",
+      "rule_id": "T06N",
       "kind": "type",
-      "rule": "Every numeral stays in Source Sans 3 Regular, never in the serif; stacked figures are tabular.",
+      "rule": "Every numeral is set in Source Sans 3 Regular, never in Cormorant Garamond, including in headings.",
       "source": "brand_identity.type_system.rules; signature_type_move",
       "cells": {
         "booking-hero-oliveto": {
@@ -752,7 +1175,84 @@
         },
         "villa-collection": {
           "checks": [
-            "PHOTO-04/villa-collection/H038",
+            "PHOTO-04/villa-collection/H038"
+          ]
+        }
+      }
+    },
+    {
+      "rule_id": "T06S",
+      "kind": "type",
+      "rule": "Numerals sit at the size of their surrounding text.",
+      "source": "brand_identity.type_system.scale step 04 note",
+      "cells": {
+        "booking-hero-oliveto": {
+          "checks": [
+            "PHOTO-04/booking-hero-oliveto/H069"
+          ]
+        },
+        "booking-hero-scogliera": {
+          "checks": [
+            "PHOTO-04/booking-hero-scogliera/H069"
+          ]
+        },
+        "booking-hero-verranza": {
+          "checks": [
+            "PHOTO-04/booking-hero-verranza/H069"
+          ]
+        },
+        "villa-collection": {
+          "checks": [
+            "PHOTO-04/villa-collection/H095"
+          ]
+        }
+      }
+    },
+    {
+      "rule_id": "T06L",
+      "kind": "type",
+      "rule": "Rates and captions use lining figures.",
+      "source": "brand_identity.type_system.scale step 04 note; type_system.rules (tabular lining figures)",
+      "cells": {
+        "booking-hero-oliveto": {
+          "checks": [
+            "PHOTO-04/booking-hero-oliveto/H066"
+          ]
+        },
+        "booking-hero-scogliera": {
+          "checks": [
+            "PHOTO-04/booking-hero-scogliera/H066"
+          ]
+        },
+        "booking-hero-verranza": {
+          "checks": [
+            "PHOTO-04/booking-hero-verranza/H066"
+          ]
+        },
+        "villa-collection": {
+          "checks": [
+            "PHOTO-04/villa-collection/H090"
+          ]
+        }
+      }
+    },
+    {
+      "rule_id": "T06T",
+      "kind": "type",
+      "rule": "Rates and captions use tabular figures (equal digit widths).",
+      "source": "brand_identity.type_system.scale step 04 note; type_system.rules (tabular lining figures)",
+      "cells": {
+        "booking-hero-oliveto": {
+          "not_verified": "A hero carries single rate lines with no column of figures, so equal digit widths cannot be seen."
+        },
+        "booking-hero-scogliera": {
+          "not_verified": "A hero carries single rate lines with no column of figures, so equal digit widths cannot be seen."
+        },
+        "booking-hero-verranza": {
+          "not_verified": "A hero carries single rate lines with no column of figures, so equal digit widths cannot be seen."
+        },
+        "villa-collection": {
+          "checks": [
             "PHOTO-04/villa-collection/H071"
           ]
         }
@@ -919,13 +1419,19 @@
       "source": "owner_note.txt; asset plan rates_2027.csv",
       "cells": {
         "booking-hero-oliveto": {
-          "na": "Each booking hero is commissioned for one named villa, and H001 confirms it uses that villa only."
+          "checks": [
+            "PHOTO-04/booking-hero-oliveto/H068"
+          ]
         },
         "booking-hero-scogliera": {
-          "na": "Each booking hero is commissioned for one named villa, and H001 confirms it uses that villa only."
+          "checks": [
+            "PHOTO-04/booking-hero-scogliera/H068"
+          ]
         },
         "booking-hero-verranza": {
-          "na": "Each booking hero is commissioned for one named villa, and H001 confirms it uses that villa only."
+          "checks": [
+            "PHOTO-04/booking-hero-verranza/H068"
+          ]
         },
         "villa-collection": {
           "checks": [
@@ -1102,7 +1608,8 @@
         },
         "villa-collection": {
           "checks": [
-            "PHOTO-04/villa-collection/H064"
+            "PHOTO-04/villa-collection/H064",
+            "PHOTO-04/villa-collection/H094"
           ]
         }
       }
@@ -1130,7 +1637,9 @@
         },
         "villa-collection": {
           "checks": [
-            "PHOTO-04/villa-collection/H001"
+            "PHOTO-04/villa-collection/H001",
+            "PHOTO-04/villa-collection/H092",
+            "PHOTO-04/villa-collection/H093"
           ]
         }
       }
@@ -1277,7 +1786,9 @@
             "PHOTO-04/villa-collection/H012",
             "PHOTO-04/villa-collection/H019",
             "PHOTO-04/villa-collection/H025",
-            "PHOTO-04/villa-collection/H065"
+            "PHOTO-04/villa-collection/H065",
+            "PHOTO-04/villa-collection/H092",
+            "PHOTO-04/villa-collection/H093"
           ]
         }
       }
@@ -1344,7 +1855,9 @@
         "villa-collection": {
           "checks": [
             "PHOTO-04/villa-collection/H063",
-            "PHOTO-04/villa-collection/H064"
+            "PHOTO-04/villa-collection/H064",
+            "PHOTO-04/villa-collection/A003",
+            "PHOTO-04/villa-collection/H094"
           ]
         }
       }

@@ -58,18 +58,21 @@ class TypographyTests(unittest.TestCase):
             self.assertIn("https://cdn.jsdelivr.net/npm/@iframe-resizer/child@5", page)
 
     def test_sheet_export_and_priorities(self):
+        # 2026-10-22: one row per deliverable carries every human check; task rows carry the input rubric only.
         rows = json.loads(SHEET_EXPORT.read_text())
-        self.assertEqual(len(rows), 14)
-        for tid, row in zip(TASK_IDS, rows[1:]):
+        header, body = rows[0], rows[1:]
+        kind = header.index("row_type")
+        task_rows = [r for r in body if r[kind] == "task_inputs"]
+        self.assertEqual(len(task_rows), len(TASK_IDS))
+        for tid, row in zip(TASK_IDS, task_rows):
             spec = json.loads((TASKS / tid / "TASK_SPEC.json").read_text())
             checks = json.loads((TASKS / tid / "VERIFIERS.json").read_text())
-            selected = platform_verifiers(checks, spec["deliverables"])
-            self.assertEqual(json.loads(row[2]), selected)
-            self.assertLess(len(row[2]), 49000)
+            self.assertEqual(json.loads(row[2]), [])
             self.assertEqual(row[13], len(checks))
-            for c in checks:
-                if c.get("platform_priority"):
-                    self.assertTrue(any(c["check"] in p["verifier_question"] for p in selected))
+            drows = [r for r in body if r[kind] == "deliverable_verifiers" and r[header.index("task")] == tid]
+            self.assertEqual(len(drows), len(spec["deliverables"]))
+            for r in drows:
+                self.assertLess(len(r[2]), 49000)
 
 
 if __name__ == "__main__":

@@ -19,6 +19,7 @@ Revised input pack. Previous execution results are historical, not current ratin
 - `PHOTO-26/wholesale-presentation/A006` “Interiors wholesale presentation” (wholesale-presentation.pdf) uses RGB colour only, with no CMYK colour and no CMYK output intent.
 - `PHOTO-26/wholesale-presentation/A007` “Interiors wholesale presentation” (wholesale-presentation.pdf) embeds every font it uses.
 - `PHOTO-26/wholesale-presentation/A008` “Interiors wholesale presentation” (wholesale-presentation.pdf) sets the brand name “THORNMERE HOME” on page 1 in Barlow Condensed Medium at 13 pt.
+- `PHOTO-26/wholesale-presentation/A009` “Interiors wholesale presentation” (wholesale-presentation.pdf) sets the brand name “THORNMERE HOME” on page 1 with +200 tracking in Barlow Condensed Medium.
 
 ## Human verifiers
 
@@ -27,13 +28,13 @@ Revised input pack. Previous execution results are historical, not current ratin
 - `PHOTO-26/wholesale-presentation/H002` Every dimension line on “Interiors wholesale presentation” (wholesale-presentation.pdf) matches its product's dimensions in thornmere_autumn_skus.csv, for example “H 70 x Dia 150 mm” for the Indigo Cereal Bowl.
 - `PHOTO-26/wholesale-presentation/H003` Every care line on “Interiors wholesale presentation” (wholesale-presentation.pdf) is its product's care_line text from thornmere_autumn_skus.csv word for word, neither shortened nor reworded.
 - `PHOTO-26/wholesale-presentation/H004` No price on “Interiors wholesale presentation” (wholesale-presentation.pdf) differs from the price column of thornmere_autumn_skus.csv for its product.
-- `PHOTO-26/wholesale-presentation/H006` Every product name and main heading on “Interiors wholesale presentation” (wholesale-presentation.pdf) is Barlow Condensed Medium capitals, never a serif, Inter or another weight.
+- `PHOTO-26/wholesale-presentation/H006` Every product name and main heading on “Interiors wholesale presentation” (wholesale-presentation.pdf) is set in Barlow Condensed Medium, never a serif, Inter or another weight.
 - `PHOTO-26/wholesale-presentation/H007` “Interiors wholesale presentation” (wholesale-presentation.pdf) carries a coloured band that is one solid block of Soft Clay #C9A98E or Indigo Dye #33455E.
 - `PHOTO-26/wholesale-presentation/H008` Every ceramic piece on “Interiors wholesale presentation” (wholesale-presentation.pdf) keeps its source-photo outline (autumn_shoot_01.jpg to autumn_shoot_11.jpg, autumn_shoot_13.jpg or autumn_shoot_14.jpg), with no handle, rim or foot redrawn or cut away.
 - `PHOTO-26/wholesale-presentation/H009` On “Interiors wholesale presentation” (wholesale-presentation.pdf), every jug or pitcher cut from autumn_shoot_03.jpg, autumn_shoot_06.jpg or autumn_shoot_08.jpg shows the colour behind it through its handle loop, not studio sweep.
 - `PHOTO-26/wholesale-presentation/H010` The largest text on page 1 of “Interiors wholesale presentation” (wholesale-presentation.pdf) is the brand name “Thornmere Home”.
 - `PHOTO-26/wholesale-presentation/H011` On “Interiors wholesale presentation” (wholesale-presentation.pdf) every product name is set larger than that product's price.
-- `PHOTO-26/wholesale-presentation/H012` Every product shown on “Interiors wholesale presentation” (wholesale-presentation.pdf) has its name, dimensions, materials, care line and price printed with it.
+- `PHOTO-26/wholesale-presentation/H012` Every product shown on “Interiors wholesale presentation” (wholesale-presentation.pdf) has its product name printed with it.
 - `PHOTO-26/wholesale-presentation/H013` Wherever autumn_shoot_04.jpg, autumn_shoot_07.jpg, autumn_shoot_10.jpg or autumn_shoot_13.jpg is used on “Interiors wholesale presentation” (wholesale-presentation.pdf), both pieces in that photograph appear whole; neither is dropped or cut away.
 - `PHOTO-26/wholesale-presentation/H014` Every materials line on “Interiors wholesale presentation” (wholesale-presentation.pdf) matches the materials column of thornmere_autumn_skus.csv for its product, for example “Handwoven wool” for the Indigo Wool Throw.
 - `PHOTO-26/wholesale-presentation/H015` No product name on “Interiors wholesale presentation” (wholesale-presentation.pdf) labels a different piece's photo, for example “Oatmeal Teapot” on autumn_shoot_06.jpg's charcoal jug or “Charcoal Mug” on autumn_shoot_01.jpg's oatmeal mug.
@@ -52,7 +53,7 @@ Revised input pack. Previous execution results are historical, not current ratin
 - `PHOTO-26/wholesale-presentation/H029` Every line of type on “Interiors wholesale presentation” (wholesale-presentation.pdf) uses only Barlow Condensed Medium, Source Serif 4 Regular or Inter Regular, never Georgia, Arial or another typeface.
 - `PHOTO-26/wholesale-presentation/H030` Type, grounds, tiles, panels, the band, rules and icons on “Interiors wholesale presentation” (wholesale-presentation.pdf) use only #E7DDCB, #33455E, #F6F1E8, #3B3733 and #C9A98E, never pure black or the near-black #211E1A.
 - `PHOTO-26/wholesale-presentation/H031` Photographs aside, the page ground of every page of “Interiors wholesale presentation” (wholesale-presentation.pdf) is Warm Paper Ground #F6F1E8.
-- `PHOTO-26/wholesale-presentation/H032` Every palette colour on “Interiors wholesale presentation” (wholesale-presentation.pdf) is solid at full opacity, with no tint, transparency, gradient, shadow or blend mode applied.
+- `PHOTO-26/wholesale-presentation/H032` Every palette-coloured tile, panel, band, rule and line of type on “Interiors wholesale presentation” (wholesale-presentation.pdf) is one flat, even colour, with no gradient, shadow or see-through area.
 - `PHOTO-26/wholesale-presentation/H033` No ground, tile, panel or band on “Interiors wholesale presentation” (wholesale-presentation.pdf) is Stoneware Charcoal #3B3733.
 - `PHOTO-26/wholesale-presentation/H034` Soft Clay #C9A98E type on “Interiors wholesale presentation” (wholesale-presentation.pdf) appears only in a running foot set on Warm Paper Ground #F6F1E8.
 - `PHOTO-26/wholesale-presentation/H035` No product photo on “Interiors wholesale presentation” (wholesale-presentation.pdf) is recoloured toward a palette hex or the band, tile or ground behind it; correcting the cast in textile_flatlay_02.jpg is allowed.
@@ -73,7 +74,7 @@ Revised input pack. Previous execution results are historical, not current ratin
 - `PHOTO-26/collection-spread/H017` Every oatmeal glaze, wool or stripe from autumn_shoot_01.jpg, autumn_shoot_03.jpg, autumn_shoot_07.jpg, autumn_shoot_09.jpg, autumn_shoot_12.jpg, autumn_shoot_13.jpg, textile_flatlay_01.jpg or textile_flatlay_05.jpg stays oatmeal on “Autumn interiors collection spread” (collection-spread.pdf), not pushed orange like thornmere_colour_note_phone.jpg.
 - `PHOTO-26/collection-spread/H018` On “Autumn interiors collection spread” (collection-spread.pdf), every soft clay glaze or cloth from autumn_shoot_05.jpg, autumn_shoot_11.jpg or textile_flatlay_03.jpg keeps its source photo's soft clay colour, not pushed orange like thornmere_colour_note_phone.jpg.
 - `PHOTO-26/collection-spread/H019` On “Autumn interiors collection spread” (collection-spread.pdf), every piece from autumn_shoot_04.jpg, autumn_shoot_06.jpg, autumn_shoot_10.jpg or textile_flatlay_04.jpg keeps its source photo's charcoal or natural stoneware colour, not pushed orange like thornmere_colour_note_phone.jpg.
-- `PHOTO-26/collection-spread/H020` Every product name, main heading and any brand name on “Autumn interiors collection spread” (collection-spread.pdf) is Barlow Condensed Medium capitals, never a serif, Inter or another weight.
+- `PHOTO-26/collection-spread/H020` Every product name, main heading and any brand name on “Autumn interiors collection spread” (collection-spread.pdf) is set in Barlow Condensed Medium, never a serif, Inter or another weight.
 - `PHOTO-26/collection-spread/H022` On any single-product page of “Autumn interiors collection spread” (collection-spread.pdf), at least 40 mm of bare paper lies directly below the product name heading.
 - `PHOTO-26/collection-spread/H023` Any body text on “Autumn interiors collection spread” (collection-spread.pdf) is set in Source Serif 4 Regular, not italic, bold or a sans.
 - `PHOTO-26/collection-spread/H024` No line of body text on “Autumn interiors collection spread” (collection-spread.pdf) runs longer than 65 characters.
@@ -82,24 +83,24 @@ Revised input pack. Previous execution results are historical, not current ratin
 - `PHOTO-26/collection-spread/H027` On “Autumn interiors collection spread” (collection-spread.pdf) every product name is set larger than that product's price, wherever both appear.
 - `PHOTO-26/collection-spread/H028` Type, grounds, tiles, panels, any band, rules and icons on “Autumn interiors collection spread” (collection-spread.pdf) use only #E7DDCB, #33455E, #F6F1E8, #3B3733 and #C9A98E, never pure black or the near-black #211E1A.
 - `PHOTO-26/collection-spread/H029` Photographs aside, the page ground of every page of “Autumn interiors collection spread” (collection-spread.pdf) is Warm Paper Ground #F6F1E8.
-- `PHOTO-26/collection-spread/H030` Every palette colour on “Autumn interiors collection spread” (collection-spread.pdf) is solid at full opacity, with no tint, transparency, gradient, shadow or blend mode applied.
+- `PHOTO-26/collection-spread/H030` Every palette-coloured tile, panel, band, rule and line of type on “Autumn interiors collection spread” (collection-spread.pdf) is one flat, even colour, with no gradient, shadow or see-through area.
 - `PHOTO-26/collection-spread/H031` No ground, tile, panel or band on “Autumn interiors collection spread” (collection-spread.pdf) is Stoneware Charcoal #3B3733.
 - `PHOTO-26/collection-spread/H032` Soft Clay #C9A98E type on “Autumn interiors collection spread” (collection-spread.pdf) appears only in a running foot set on Warm Paper Ground #F6F1E8.
 - `PHOTO-26/collection-spread/H033` No product photo on “Autumn interiors collection spread” (collection-spread.pdf) is recoloured toward a palette hex or the band, tile or ground behind it; correcting the cast in textile_flatlay_02.jpg is allowed.
-- `PHOTO-26/collection-spread/H035` Every product name and main heading on “Autumn interiors collection spread” (collection-spread.pdf) is set at 13 pt, as shown in the PDF's text properties.
+- `PHOTO-26/collection-spread/H035` Any product name or main heading on “Autumn interiors collection spread” (collection-spread.pdf) is 13 pt in the PDF's text properties.
 - `PHOTO-26/collection-spread/H037` Product names on “Autumn interiors collection spread” (collection-spread.pdf) have wide, open letter spacing, clearly looser than ordinary text.
-- `PHOTO-26/collection-spread/H038` Any subheading on “Autumn interiors collection spread” (collection-spread.pdf) is set in Barlow Condensed Medium capitals.
+- `PHOTO-26/collection-spread/H038` Any subheading on “Autumn interiors collection spread” (collection-spread.pdf) is set in Barlow Condensed Medium.
 - `PHOTO-26/collection-spread/H039` Any subheading on “Autumn interiors collection spread” (collection-spread.pdf) is set at 11 pt, as shown in the PDF's text properties.
 - `PHOTO-26/collection-spread/H041` Any subheading on “Autumn interiors collection spread” (collection-spread.pdf) has visibly open letter spacing.
 - `PHOTO-26/collection-spread/H043` Any body text on “Autumn interiors collection spread” (collection-spread.pdf) is set at 10 pt, as shown in the PDF's text properties.
-- `PHOTO-26/collection-spread/H047` Any price, dimension or care line on “Autumn interiors collection spread” (collection-spread.pdf) is set at 8.5 pt, as shown in the PDF's text properties.
-- `PHOTO-26/wholesale-presentation/H037` Every product name and main heading on “Interiors wholesale presentation” (wholesale-presentation.pdf) is set at 13 pt, as shown in the PDF's text properties.
+- `PHOTO-26/collection-spread/H047` Any price, dimension or care line on “Autumn interiors collection spread” (collection-spread.pdf) is 8.5 pt in the PDF's text properties.
+- `PHOTO-26/wholesale-presentation/H037` Every product name and main heading on “Interiors wholesale presentation” (wholesale-presentation.pdf) is 13 pt in the PDF's text properties.
 - `PHOTO-26/wholesale-presentation/H039` Product names on “Interiors wholesale presentation” (wholesale-presentation.pdf) have wide, open letter spacing, clearly looser than ordinary text.
-- `PHOTO-26/wholesale-presentation/H040` Any subheading on “Interiors wholesale presentation” (wholesale-presentation.pdf) is set in Barlow Condensed Medium capitals.
+- `PHOTO-26/wholesale-presentation/H040` Any subheading on “Interiors wholesale presentation” (wholesale-presentation.pdf) is set in Barlow Condensed Medium.
 - `PHOTO-26/wholesale-presentation/H041` Any subheading on “Interiors wholesale presentation” (wholesale-presentation.pdf) is set at 11 pt, as shown in the PDF's text properties.
 - `PHOTO-26/wholesale-presentation/H043` Any subheading on “Interiors wholesale presentation” (wholesale-presentation.pdf) has visibly open letter spacing.
 - `PHOTO-26/wholesale-presentation/H045` Any body text on “Interiors wholesale presentation” (wholesale-presentation.pdf) is set at 10 pt, as shown in the PDF's text properties.
-- `PHOTO-26/wholesale-presentation/H049` Every price, dimension or care line on “Interiors wholesale presentation” (wholesale-presentation.pdf) is set at 8.5 pt, as shown in the PDF's text properties.
+- `PHOTO-26/wholesale-presentation/H049` Every price, dimension and care line on “Interiors wholesale presentation” (wholesale-presentation.pdf) is 8.5 pt in the PDF's text properties.
 - `PHOTO-26/collection-spread/H050` Apart from a Soft Clay running foot, all type on Warm Paper Ground, Oatmeal Glaze or Soft Clay on “Autumn interiors collection spread” (collection-spread.pdf) is Stoneware Charcoal #3B3733.
 - `PHOTO-26/collection-spread/H051` Any type set on Indigo Dye #33455E on “Autumn interiors collection spread” (collection-spread.pdf) is Warm Paper Ground #F6F1E8.
 - `PHOTO-26/collection-spread/H052` Photographs aside, Warm Paper Ground #F6F1E8 covers more of every page of “Autumn interiors collection spread” (collection-spread.pdf) than all Oatmeal Glaze, Soft Clay and Indigo Dye areas combined.
@@ -113,9 +114,24 @@ Revised input pack. Previous execution results are historical, not current ratin
 - `PHOTO-26/wholesale-presentation/H056` No scrim, gradient or overlay of any colour, black and white included, is laid over a photograph on “Interiors wholesale presentation” (wholesale-presentation.pdf).
 - `PHOTO-26/wholesale-presentation/H057` On any page of “Interiors wholesale presentation” (wholesale-presentation.pdf) showing several products, each product name sits beside its own product.
 - `PHOTO-26/wholesale-presentation/H058` The coloured band on “Interiors wholesale presentation” (wholesale-presentation.pdf) is the same colour on every page that carries it.
-- `PHOTO-26/collection-spread/H056` If a Soft Clay running foot appears on “Autumn interiors collection spread” (collection-spread.pdf), it is small capitals with open letter spacing.
-- `PHOTO-26/collection-spread/H057` “Autumn interiors collection spread” (collection-spread.pdf) shows no crop marks, registration marks or bleed area beyond its 210 x 297 mm page.
+- `PHOTO-26/collection-spread/H056` If a Soft Clay running foot appears on “Autumn interiors collection spread” (collection-spread.pdf), it is set in capitals.
+- `PHOTO-26/collection-spread/H057` “Autumn interiors collection spread” (collection-spread.pdf) shows no crop marks or registration marks.
 - `PHOTO-26/collection-spread/H058` No product feature, material, use or care claim on “Autumn interiors collection spread” (collection-spread.pdf) goes beyond what thornmere_autumn_skus.csv or the brief states.
-- `PHOTO-26/wholesale-presentation/H059` If a Soft Clay running foot appears on “Interiors wholesale presentation” (wholesale-presentation.pdf), it is small capitals with open letter spacing.
-- `PHOTO-26/wholesale-presentation/H060` “Interiors wholesale presentation” (wholesale-presentation.pdf) shows no crop marks, registration marks or bleed area beyond its 338.667 x 190.5 mm page.
+- `PHOTO-26/wholesale-presentation/H059` If a Soft Clay running foot appears on “Interiors wholesale presentation” (wholesale-presentation.pdf), it is set in capitals.
+- `PHOTO-26/wholesale-presentation/H060` “Interiors wholesale presentation” (wholesale-presentation.pdf) shows no crop marks or registration marks.
 - `PHOTO-26/wholesale-presentation/H061` No product feature, material, use or care claim on “Interiors wholesale presentation” (wholesale-presentation.pdf) goes beyond what thornmere_autumn_skus.csv or the brief states.
+- `PHOTO-26/collection-spread/H059` The products on “Autumn interiors collection spread” (collection-spread.pdf) are arranged in coordinated groupings, with the pieces in each group placed and styled together.
+- `PHOTO-26/collection-spread/H060` No product name on “Autumn interiors collection spread” (collection-spread.pdf) is set larger than 16 pt in the PDF's text properties.
+- `PHOTO-26/wholesale-presentation/H062` No product name on “Interiors wholesale presentation” (wholesale-presentation.pdf) is set larger than 16 pt in the PDF's text properties.
+- `PHOTO-26/collection-spread/H061` Every page of “Autumn interiors collection spread” (collection-spread.pdf) reads 210 x 297 mm in Acrobat's Page Size, within 0.2 mm, with no bleed added around it.
+- `PHOTO-26/wholesale-presentation/H063` Every page of “Interiors wholesale presentation” (wholesale-presentation.pdf) reads 338.67 x 190.5 mm in Acrobat's Page Size, within 0.2 mm, with no bleed added around it.
+- `PHOTO-26/wholesale-presentation/H064` Every product shown on “Interiors wholesale presentation” (wholesale-presentation.pdf) has its dimensions printed with it.
+- `PHOTO-26/wholesale-presentation/H065` Every product shown on “Interiors wholesale presentation” (wholesale-presentation.pdf) has its materials line printed with it.
+- `PHOTO-26/wholesale-presentation/H066` Every product shown on “Interiors wholesale presentation” (wholesale-presentation.pdf) has its care line printed with it.
+- `PHOTO-26/wholesale-presentation/H067` Every product shown on “Interiors wholesale presentation” (wholesale-presentation.pdf) has its price printed with it.
+- `PHOTO-26/collection-spread/H062` Every product name and main heading on “Autumn interiors collection spread” (collection-spread.pdf) is set in capitals.
+- `PHOTO-26/collection-spread/H063` Any subheading on “Autumn interiors collection spread” (collection-spread.pdf) is set in capitals.
+- `PHOTO-26/wholesale-presentation/H068` Every product name and main heading on “Interiors wholesale presentation” (wholesale-presentation.pdf) is set in capitals.
+- `PHOTO-26/wholesale-presentation/H069` Any subheading on “Interiors wholesale presentation” (wholesale-presentation.pdf) is set in capitals.
+- `PHOTO-26/collection-spread/H064` If a Soft Clay running foot appears on “Autumn interiors collection spread” (collection-spread.pdf), its letter spacing is visibly open, clearly looser than ordinary text.
+- `PHOTO-26/wholesale-presentation/H070` If a Soft Clay running foot appears on “Interiors wholesale presentation” (wholesale-presentation.pdf), its letter spacing is visibly open, clearly looser than ordinary text.

@@ -25,7 +25,7 @@ const digest = bytes => crypto.createHash('sha256').update(bytes).digest('hex');
       try {
         const target = path.join(temp, 'asset');
         const args = ['--globoff', '--silent', '--show-error', '--fail', '--max-time', '30',
-          '-H', 'Origin: https://dhigdec.github.io', '-o', target,
+          '-H', 'Origin: https://deccanai-org.github.io', '-o', target,
           '-w', '{"status":%{http_code},"headers":%{header_json}}'];
         if (!refreshed) args.push('--head');
         args.push(asset.public_url);
@@ -33,7 +33,7 @@ const digest = bytes => crypto.createHash('sha256').update(bytes).digest('hex');
         const response = JSON.parse(stdout);
         assert.equal(response.status, 200, `HTTP ${response.status}`);
         const cors = response.headers['access-control-allow-origin']?.[0];
-        assert.ok(cors === '*' || cors === 'https://dhigdec.github.io', 'Missing browser CORS');
+        assert.ok(cors === '*' || cors === 'https://deccanai-org.github.io', 'Missing browser CORS');
         let sha256;
         if (refreshed) {
           const bytes = fs.readFileSync(target);
@@ -58,7 +58,7 @@ const digest = bytes => crypto.createHash('sha256').update(bytes).digest('hex');
     task_count: ids.length, asset_entries: results.length,
     public_access_verified: results.filter(r => r.status === 200).length,
     refreshed_assets_hash_verified: results.filter(r => r.refreshed && r.sha256).length,
-    browser_origin: 'https://dhigdec.github.io', failures: failures.length,
+    browser_origin: 'https://deccanai-org.github.io', failures: failures.length,
   };
   fs.writeFileSync(path.join(work, 'public-asset-verification.json'), JSON.stringify({...summary, results}, null, 2) + '\n');
   assert.equal(failures.length, 0, JSON.stringify(failures));

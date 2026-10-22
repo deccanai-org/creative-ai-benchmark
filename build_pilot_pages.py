@@ -7,7 +7,7 @@ from pathlib import Path
 ROOT = Path(".")
 OUT = ROOT / "docs" / "pilot"
 OUT.mkdir(parents=True, exist_ok=True)
-BASE = "https://dhigdec.github.io/creative-ai-benchmark/pilot"
+BASE = "https://deccanai-org.github.io/creative-ai-benchmark/pilot"
 
 CSS = """
 *{box-sizing:border-box} body{font:15px/1.6 -apple-system,Segoe UI,Inter,Helvetica,Arial,sans-serif;

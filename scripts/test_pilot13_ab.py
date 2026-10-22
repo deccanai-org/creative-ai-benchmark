@@ -42,14 +42,25 @@ class AbFixTests(unittest.TestCase):
             for c in spec['verifiers_human']:
                 self.assertNotRegex(c['check'], r'(?i)\bsRGB\b|colou?r profile|embedded font|output intent')
 
-    def test_annotation_sheet_has_no_auto_checks(self):
+    def test_annotation_sheet_carries_every_human_check_once(self):
         rows = json.loads(SHEET_EXPORT.read_text())
-        for tid, row in zip(TASK_IDS, rows[1:]):
+        header, body = rows[0], rows[1:]
+        kind, task_col = header.index('row_type'), header.index('task')
+        for tid in TASK_IDS:
             spec = json.loads((TASKS / tid / 'TASK_SPEC.json').read_text())
-            auto_texts = {c['check'] for c in spec['verifiers_auto']}
-            for item in json.loads(row[2]):
-                self.assertNotIn(re.sub(r'^\d+\. ', '', item['verifier_question']), auto_texts)
-            self.assertEqual(json.loads(row[2]), platform_verifiers(json.loads((TASKS / tid / 'VERIFIERS.json').read_text()), spec['deliverables']))
+            human = {c['check'] for c in spec['verifiers_human']}
+            auto = {c['check'] for c in spec['verifiers_auto']}
+            seen = []
+            for r in body:
+                if r[kind] == 'deliverable_verifiers' and r[task_col] == tid:
+                    for item in json.loads(r[2]):
+                        text = re.sub(r'^\d+\. (?:\[(?:Measure|Estimate): [^\]]*\] )?', '', item['verifier_question'])
+                        self.assertNotIn(text, auto)
+                        seen.append(text)
+            self.assertEqual(sorted(seen), sorted(c['check'] for c in spec['verifiers_human']))
+            for c in spec['verifiers_human']:
+                if c.get('method') in ('measure', 'estimate'):
+                    self.assertTrue(c.get('method_note'))
 
     def test_photo10_mark_rebuilt(self):
         spec = json.loads((TASKS / 'PHOTO-10' / 'TASK_SPEC.json').read_text())

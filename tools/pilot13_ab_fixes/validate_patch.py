@@ -21,6 +21,10 @@ CROSS = re.compile(r"\b(?:the\s+)?other\s+(?:\w+\s){0,3}?(?:speaker cards|cards|
 MACHINE = re.compile(r"\bsRGB\b|colou?r profile|\bICC\b|embedded font|unembedded|output intent", re.I)
 TYPE_MEASURE = re.compile(r"\bleading\b|\btracking\b|/1000|\bfont size\b|\b\d+(?:\.\d+)?\s?pt\b|\b(?:set at|set in \w+(?: \w+)? at|is|are|at)\s\d+(?:\.\d+)?\s?px\b|optical[- ]size", re.I)
 PX = re.compile(r"\b\d+(?:\.\d+)?\s?px\b", re.I)
+DATES = re.compile(r"\b\d{1,2}(?: and \d{1,2})? (?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Sept|Oct|Nov|Dec)[a-z]*\b|\b(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Sept|Oct|Nov|Dec)[a-z]* \d{1,2}\b|\b\d{4}-\d{2}-\d{2}\b")
+PRICES = re.compile(r"[$€£]\s?\d[\d,]*(?:\.\d+)?|\b\d[\d,]*(?:\.\d+)? ?(?:EUR|USD|GBP)\b")
+TIMES = re.compile(r"\b\d{1,2}(?::\d{2})?\s?(?:AM|PM|am|pm)\b")
+ESTIMATE = re.compile(r"\babout \d+(?:\.\d+)?\s?%|\b\d+(?:\.\d+)?\s?% of (?:the )?(?:area|designed)|no more than (?:about )?\d+\s?%", re.I)
 DASH = re.compile('[–—]')
 
 
@@ -66,11 +70,19 @@ def validate(tid, patch, coverage, spec0=None):
         if CROSS.search(text): errors.append(f'{cid}: compares with other outputs or judges delivery of several files: "{CROSS.search(text).group(0)}"')
         if MACHINE.search(text): errors.append(f'{cid}: machine fact asked of a human ("{MACHINE.search(text).group(0)}"); these are auto checks now')
         if re.search(r'\bCMYK\b', text): warnings.append(f'{cid}: mentions CMYK; confirm a person can judge it by eye')
+        method = c.get('method', 'look')
+        if method not in ('look', 'measure', 'estimate'): errors.append(f'{cid}: method must be look, measure or estimate')
+        if method != 'look' and not str(c.get('method_note', '')).strip(): errors.append(f'{cid}: method {method} needs a "how" note')
         if fmt in RASTER:
             stripped = re.sub(r'^Displayed \d+ px wide,?\s*', '', text)
-            m = TYPE_MEASURE.search(stripped)
-            if m: errors.append(f'{cid}: exact type measurement on a raster output ("{m.group(0)}"); use a visible relative check or drop it')
-            elif PX.search(stripped): warnings.append(f'{cid}: pixel value on a raster output ("{PX.search(stripped).group(0)}"); confirm it can be judged by eye')
+            m = TYPE_MEASURE.search(stripped) or PX.search(stripped)
+            if m and method != 'measure': errors.append(f'{cid}: needs measuring on a raster output ("{m.group(0)}"); label it method "measure" with how to measure, or rewrite it as a visual check')
+        if ESTIMATE.search(text) and method == 'look': errors.append(f'{cid}: area or share estimate ("{ESTIMATE.search(text).group(0)}"); label it method "estimate" or "measure"')
+        counted = text.replace(c.get('artifact_name', ''), '').replace(filename, '')
+        for label, rx in (('dates', DATES), ('prices', PRICES), ('times', TIMES)):
+            found = rx.findall(counted)
+            if len(found) >= 3 and not re.search(r'\b(?:order|sequence)\b', counted, re.I):
+                errors.append(f'{cid}: bundles {len(found)} {label} in one check; split it into one check per item')
         n = norm(text)
         if n in seen[c['output_id']]: errors.append(f'{cid}: duplicates {seen[c["output_id"]][n]}')
         seen[c['output_id']][n] = cid
@@ -119,8 +131,25 @@ def validate(tid, patch, coverage, spec0=None):
                         errors.append(f'COVERAGE {rid}/{oid}: {cid} does not exist after the patch')
                     elif live[cid]['output_id'] != oid:
                         errors.append(f'COVERAGE {rid}/{oid}: {cid} belongs to {live[cid]["output_id"]}')
+            elif 'not_verified' in cell:
+                if r.get('kind') not in ('type', 'brand'):
+                    errors.append(f'COVERAGE {rid}/{oid}: only type or brand rules may be marked not_verified; deliverable and brief requirements need checks')
+                if len(str(cell['not_verified']).split()) < 6:
+                    errors.append(f'COVERAGE {rid}/{oid}: not_verified needs a reason of at least six words')
             elif len(str(cell.get('na', '')).split()) < 6:
-                errors.append(f'COVERAGE {rid}/{oid}: needs checks or an "na" reason of at least six words')
+                errors.append(f'COVERAGE {rid}/{oid}: needs checks, an "na" reason or a "not_verified" reason of at least six words')
+    families = sorted({f['family'] for f in spec['brand_identity'].get('font_files', [])}, key=len, reverse=True)
+    for r in cov['rules']:
+        text = r.get('rule', '')
+        props = set()
+        if any(f.lower() in text.lower() for f in families): props.add('font')
+        if re.search(r'\b\d+(?:\.\d+)?\s?(?:pt|px)\b', text, re.I): props.add('size')
+        if re.search(r'\bleading\b|\b\d+(?:\.\d+)?\s?(?:pt|px)\s*/\s*\d', text, re.I): props.add('leading')
+        if re.search(r'\btracking\b|\bunits\b|letter-?spacing', text, re.I): props.add('tracking')
+        if r.get('kind') == 'type' and len(props) >= 2:
+            errors.append(f'COVERAGE {r.get("rule_id")}: type rule bundles {sorted(props)}; split it into one rule per property (font, size, leading, tracking)')
+        if r.get('kind') == 'brand' and (text.count(';') >= 1 or len(re.findall(r'[.!?](?:\s|$)', text)) >= 2):
+            warnings.append(f'COVERAGE {r.get("rule_id")}: brand rule has several clauses; split it if each clause is a separate requirement')
     bullets = {(oid, b) for oid, o in outputs.items() for b in o.get('commission', {}).get('content', [])}
     deliverable_rules = defaultdict(dict)
     for r in cov['rules']:
@@ -140,7 +169,8 @@ def validate(tid, patch, coverage, spec0=None):
     summary = {'human_before': len(spec0['verifiers_human']), 'human_after': len(spec['verifiers_human']),
                'auto_before': len(spec0['verifiers_auto']), 'auto_after': len(spec['verifiers_auto']),
                'rules': len(cov['rules']), 'cells': sum(len(r['cells']) for r in cov['rules']),
-               'na_cells': sum(1 for r in cov['rules'] for c in r['cells'].values() if 'na' in c)}
+               'na_cells': sum(1 for r in cov['rules'] for c in r['cells'].values() if 'na' in c),
+               'not_verified_cells': sum(1 for r in cov['rules'] for c in r['cells'].values() if 'not_verified' in c)}
     return errors, warnings, summary
 
 

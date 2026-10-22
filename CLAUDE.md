@@ -23,7 +23,13 @@ image ops, Express, InDesign data merge, Fonts, Stock, Acrobat, Premiere-style v
   validation, Phase 1 input-asset validation (8 dims incl. "decision quality"), Phase 2 golden trajectory by
   an expert, Phase 3 output scoring (K1 to K7). Humans judge; code checks only objective facts; no AI judge.
 
-## Update 2026-10-21 (read first)
+## Update 2026-10-22 (read first)
+
+- Repo is now **deccanai-org/creative-ai-benchmark**; site https://deccanai-org.github.io/creative-ai-benchmark/ (old dhigdec links 404).
+- Round 2 fixes (external review): full-coverage Sheet export (one row per deliverable, all human checks), honest coverage with
+  "not verified" cells, hardened auto ops + leading/tracking, Look/Measure/Estimate labels. See `context/PILOT13_AB_FIXES_2026-10-21.md` (Round 2).
+
+## Update 2026-10-21
 
 - **Pilot is 13 tasks** (original 10 + LAYOUT-12, VECTOR-04, MOTION-11), refreshed 2026-10-14 (purpose/placement/audience/
   export per deliverable, OFL fonts in assets, clean transparent logos, fixed vs open decisions, Part A questions reworded).
@@ -37,10 +43,10 @@ image ops, Express, InDesign data merge, Fonts, Stock, Acrobat, Premiere-style v
 
 ## Current state (2026-10-09)
 
-1. **Gatsby V7 is the current full corpus**: https://dhigdec.github.io/creative-ai-benchmark/gatsby-v7/
+1. **Gatsby V7 is the current full corpus**: https://deccanai-org.github.io/creative-ai-benchmark/gatsby-v7/
    (100 tasks, 1,436 exports, 44,527 checks = 11,217 auto + 33,310 human, per `docs/gatsby-v7/RELEASE_STATUS.json`).
 2. **A 10-task annotation pilot ran on V7**: PHOTO-04, 06, 08, 10, 19, 20, 24, 26, 28 and LAYOUT-15.
-   Pages: `https://dhigdec.github.io/creative-ai-benchmark/gatsby-v7/annotation-pilot/<ID>.html`.
+   Pages: `https://deccanai-org.github.io/creative-ai-benchmark/gatsby-v7/annotation-pilot/<ID>.html`.
    Why these 10, and what was rejected: `context/PILOT_10.md`.
 3. **In-house creative expert feedback arrived 2026-10-07.** My assessment and a 5-part fix plan are in
    `context/EXPERT_FEEDBACK_2026-10-07.md`. **Waiting on Dhiren for 3 decisions** (fonts: swap vs fallback;

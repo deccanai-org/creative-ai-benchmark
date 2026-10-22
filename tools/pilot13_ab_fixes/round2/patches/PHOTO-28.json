@@ -1,0 +1,1007 @@
+{
+ "task_id": "PHOTO-28",
+ "retire": [],
+ "modify": [
+  {
+   "check_id": "PHOTO-28/studio-launch/H031",
+   "check": "The studio wordmark's visible letterforms on “Studio launch-page composition” (studio-launch.png) are no more than 34 px tall.",
+   "method": "measure",
+   "how": "In an image editor at 100% zoom, measure in pixels from the highest to the lowest point of the wordmark's visible letters.",
+   "why": "Labelled as a measured check with how to measure; wording shortened, same 34 px limit."
+  },
+  {
+   "check_id": "PHOTO-28/class-feed/H032",
+   "check": "The studio wordmark's visible letterforms on “Class announcement” (class-feed.png) are no more than 34 px tall.",
+   "method": "measure",
+   "how": "In an image editor at 100% zoom, measure in pixels from the highest to the lowest point of the wordmark's visible letters.",
+   "why": "Labelled as a measured check with how to measure; wording shortened, same 34 px limit."
+  },
+  {
+   "check_id": "PHOTO-28/booking-story/H029",
+   "check": "The studio wordmark's visible letterforms on “Studio booking story” (booking-story.png) are no more than 34 px tall.",
+   "method": "measure",
+   "how": "In an image editor at 100% zoom, measure in pixels from the highest to the lowest point of the wordmark's visible letters.",
+   "why": "Labelled as a measured check with how to measure; wording shortened, same 34 px limit."
+  },
+  {
+   "check_id": "PHOTO-28/booking-story/H001",
+   "check": "The booking action on “Studio booking story” (booking-story.png) sits at least 250 px from the top, 320 px from the bottom and 60 px from each side.",
+   "method": "measure",
+   "how": "In an image editor, check every part of the booking action, button included, lies between x 60 and 1020 and y 250 and 1600.",
+   "why": "Safe-area margins need a ruler; labelled measure with how, same margins."
+  },
+  {
+   "check_id": "PHOTO-28/studio-launch/H042",
+   "method": "measure",
+   "how": "Find the longest line of body text and count its characters, spaces and punctuation included.",
+   "why": "A 65-character limit needs counting, not a glance; labelled measure with how."
+  },
+  {
+   "check_id": "PHOTO-28/class-feed/H042",
+   "method": "measure",
+   "how": "Find the longest line of body text and count its characters, spaces and punctuation included.",
+   "why": "A 65-character limit needs counting, not a glance; labelled measure with how."
+  },
+  {
+   "check_id": "PHOTO-28/booking-story/H040",
+   "method": "measure",
+   "how": "Find the longest line of body text and count its characters, spaces and punctuation included.",
+   "why": "A 65-character limit needs counting, not a glance; labelled measure with how."
+  },
+  {
+   "check_id": "PHOTO-28/studio-launch/H011",
+   "check": "Every price on “Studio launch-page composition” (studio-launch.png) is a supplied figure: a class price from roster_2027.csv, the 180 dollar intro pack or the 220 dollar membership.",
+   "reference_assets": [
+    "roster_2027.csv"
+   ],
+   "why": "One allowed-set rule; the class prices now point to roster_2027.csv instead of listing three figures. Each figure is checked per class elsewhere."
+  },
+  {
+   "check_id": "PHOTO-28/class-feed/H019",
+   "check": "Every price on “Class announcement” (class-feed.png) is a supplied figure: a class price from roster_2027.csv, the 180 dollar intro pack or the 220 dollar membership.",
+   "reference_assets": [
+    "roster_2027.csv"
+   ],
+   "why": "One allowed-set rule; the class prices now point to roster_2027.csv instead of listing three figures. Each figure is checked per class elsewhere."
+  },
+  {
+   "check_id": "PHOTO-28/booking-story/H010",
+   "check": "Every price on “Studio booking story” (booking-story.png) is a supplied figure: a class price from roster_2027.csv, the 180 dollar intro pack or the 220 dollar membership.",
+   "reference_assets": [
+    "roster_2027.csv"
+   ],
+   "why": "One allowed-set rule; the class prices now point to roster_2027.csv instead of listing three figures. Each figure is checked per class elsewhere."
+  },
+  {
+   "check_id": "PHOTO-28/studio-launch/H006",
+   "check": "“Studio launch-page composition” (studio-launch.png) lists exactly six classes, each once: Foundations, Flow, Core & Restore, Strength, Prenatal and Slow & Deep.",
+   "why": "Kept the class list; the six prices move to one check per class."
+  },
+  {
+   "check_id": "PHOTO-28/booking-story/H005",
+   "check": "Any price given for Foundations, Core & Restore or Slow & Deep on “Studio booking story” (booking-story.png) is $34, as roster_2027.csv gives for RF-FND, RF-COR and RF-SLW.",
+   "reference_assets": [
+    "roster_2027.csv",
+    "owner_note.txt"
+   ],
+   "why": "Split per price: was six prices in one check; this keeps the $34 classes."
+  },
+  {
+   "check_id": "PHOTO-28/class-feed/H011",
+   "check": "If the pictured instructor on “Class announcement” (class-feed.png) is Priya Anand, Lena Brandt or Nadia Haddad, the class price reads $34, as in roster_2027.csv.",
+   "reference_assets": [
+    "roster_2027.csv"
+   ],
+   "why": "Split per price: was six prices in one check; this keeps the $34 instructors."
+  },
+  {
+   "check_id": "PHOTO-28/studio-launch/H035",
+   "check": "All type, the wordmark and every ground, panel, button, rule and icon on “Studio launch-page composition” (studio-launch.png) are flat, solid colour, with no gradient, drop shadow or anything showing through.",
+   "why": "B07 covers every palette colour, so Oak rules and icons are now named too."
+  },
+  {
+   "check_id": "PHOTO-28/class-feed/H035",
+   "check": "All type, the wordmark and every ground, panel, button, rule and icon on “Class announcement” (class-feed.png) are flat, solid colour, with no gradient, drop shadow or anything showing through.",
+   "why": "B07 covers every palette colour, so Oak rules and icons are now named too."
+  },
+  {
+   "check_id": "PHOTO-28/booking-story/H032",
+   "check": "All type, the wordmark and every ground, panel, button, rule and icon on “Studio booking story” (booking-story.png) are flat, solid colour, with no gradient, drop shadow or anything showing through.",
+   "why": "B07 covers every palette colour, so Oak rules and icons are now named too."
+  },
+  {
+   "check_id": "PHOTO-28/studio-launch/H033",
+   "check": "Type, panel, rule, button and icon colours on “Studio launch-page composition” (studio-launch.png) are only Sage #9CA98F, Oak #C7A97A, Warm Off White #F4F0E8 or Soft Ink #33352E, anti-aliased edges aside.",
+   "method": "measure",
+   "how": "Eyedropper flat colour centres of type, panels, rules, buttons, icons; each must be within 5 per channel of (156,169,143), (199,169,122), (244,240,232) or (51,53,46).",
+   "why": "Exact hexes need an eyedropper; the wordmark is dropped because the supplied ink is exempt unless recoloured (palette_rules.opacity) and its colour is checked by the wordmark-solid check."
+  },
+  {
+   "check_id": "PHOTO-28/class-feed/H033",
+   "check": "Type, panel, rule, button and icon colours on “Class announcement” (class-feed.png) are only Sage #9CA98F, Oak #C7A97A, Warm Off White #F4F0E8 or Soft Ink #33352E, anti-aliased edges aside.",
+   "method": "measure",
+   "how": "Eyedropper flat colour centres of type, panels, rules, buttons, icons; each must be within 5 per channel of (156,169,143), (199,169,122), (244,240,232) or (51,53,46).",
+   "why": "Exact hexes need an eyedropper; the wordmark is dropped because the supplied ink is exempt unless recoloured (palette_rules.opacity) and its colour is checked by the wordmark-solid check."
+  },
+  {
+   "check_id": "PHOTO-28/booking-story/H030",
+   "check": "Type, panel, rule, button and icon colours on “Studio booking story” (booking-story.png) are only Sage #9CA98F, Oak #C7A97A, Warm Off White #F4F0E8 or Soft Ink #33352E, anti-aliased edges aside.",
+   "method": "measure",
+   "how": "Eyedropper flat colour centres of type, panels, rules, buttons, icons; each must be within 5 per channel of (156,169,143), (199,169,122), (244,240,232) or (51,53,46).",
+   "why": "Exact hexes need an eyedropper; the wordmark is dropped because the supplied ink is exempt unless recoloured (palette_rules.opacity) and its colour is checked by the wordmark-solid check."
+  },
+  {
+   "check_id": "PHOTO-28/studio-launch/H034",
+   "check": "Warm Off White #F4F0E8 appears in the designed parts of “Studio launch-page composition” (studio-launch.png).",
+   "method": "measure",
+   "how": "Eyedropper the main ground, a light panel or reversed type; at least one sample is within 5 of #F4F0E8 (244, 240, 232).",
+   "why": "Split: the two mandatory colours are separate facts; an exact hex needs an eyedropper."
+  },
+  {
+   "check_id": "PHOTO-28/class-feed/H034",
+   "check": "Warm Off White #F4F0E8 appears in the designed parts of “Class announcement” (class-feed.png).",
+   "method": "measure",
+   "how": "Eyedropper the main ground, a light panel or reversed type; at least one sample is within 5 of #F4F0E8 (244, 240, 232).",
+   "why": "Split: the two mandatory colours are separate facts; an exact hex needs an eyedropper."
+  },
+  {
+   "check_id": "PHOTO-28/booking-story/H031",
+   "check": "Warm Off White #F4F0E8 appears in the designed parts of “Studio booking story” (booking-story.png).",
+   "method": "measure",
+   "how": "Eyedropper the main ground, a light panel or reversed type; at least one sample is within 5 of #F4F0E8 (244, 240, 232).",
+   "why": "Split: the two mandatory colours are separate facts; an exact hex needs an eyedropper."
+  },
+  {
+   "check_id": "PHOTO-28/studio-launch/H071",
+   "check": "The studio wordmark on “Studio launch-page composition” (studio-launch.png) is not stretched or squashed: its visible letters are 3.1 to 3.45 times as wide as they are tall, as in verda_wordmark_transparent.png.",
+   "method": "measure",
+   "how": "Measure the width and height of the wordmark's visible letters in pixels; width divided by height must be 3.1 to 3.45 (source 1109 x 340).",
+   "reference_assets": [
+    "verda_wordmark_transparent.png"
+   ],
+   "why": "A slight squash of a 34 px wordmark cannot be seen by eye; the source letters measure 1109 x 340 px, ratio 3.26."
+  },
+  {
+   "check_id": "PHOTO-28/class-feed/H068",
+   "check": "The studio wordmark on “Class announcement” (class-feed.png) is not stretched or squashed: its visible letters are 3.1 to 3.45 times as wide as they are tall, as in verda_wordmark_transparent.png.",
+   "method": "measure",
+   "how": "Measure the width and height of the wordmark's visible letters in pixels; width divided by height must be 3.1 to 3.45 (source 1109 x 340).",
+   "reference_assets": [
+    "verda_wordmark_transparent.png"
+   ],
+   "why": "A slight squash of a 34 px wordmark cannot be seen by eye; the source letters measure 1109 x 340 px, ratio 3.26."
+  },
+  {
+   "check_id": "PHOTO-28/booking-story/H067",
+   "check": "The studio wordmark on “Studio booking story” (booking-story.png) is not stretched or squashed: its visible letters are 3.1 to 3.45 times as wide as they are tall, as in verda_wordmark_transparent.png.",
+   "method": "measure",
+   "how": "Measure the width and height of the wordmark's visible letters in pixels; width divided by height must be 3.1 to 3.45 (source 1109 x 340).",
+   "reference_assets": [
+    "verda_wordmark_transparent.png"
+   ],
+   "why": "A slight squash of a 34 px wordmark cannot be seen by eye; the source letters measure 1109 x 340 px, ratio 3.26."
+  },
+  {
+   "check_id": "PHOTO-28/studio-launch/H014",
+   "check": "If Priya Anand is named on “Studio launch-page composition” (studio-launch.png), any class beside that name is Foundations, as owner_note.txt gives.",
+   "reference_assets": [
+    "owner_note.txt"
+   ],
+   "why": "Split: six instructor-to-class pairs were one check; this keeps Priya Anand, the rest are added."
+  },
+  {
+   "check_id": "PHOTO-28/studio-launch/H024",
+   "check": "If verda_instructor_01.jpg appears on “Studio launch-page composition” (studio-launch.png), any name beside it is Priya Anand, per roster_2027.csv.",
+   "reference_assets": [
+    "roster_2027.csv",
+    "verda_instructor_01.jpg"
+   ],
+   "why": "Split: six portrait-to-name pairs were one check; this keeps verda_instructor_01.jpg, the rest are added."
+  },
+  {
+   "check_id": "PHOTO-28/booking-story/H013",
+   "check": "If Priya Anand is named on “Studio booking story” (booking-story.png), any class beside that name is Foundations, as owner_note.txt gives.",
+   "reference_assets": [
+    "owner_note.txt"
+   ],
+   "why": "Split: six instructor-to-class pairs were one check; this keeps Priya Anand, the rest are added."
+  },
+  {
+   "check_id": "PHOTO-28/booking-story/H023",
+   "check": "If verda_instructor_01.jpg appears on “Studio booking story” (booking-story.png), any name beside it is Priya Anand, per roster_2027.csv.",
+   "reference_assets": [
+    "roster_2027.csv",
+    "verda_instructor_01.jpg"
+   ],
+   "why": "Split: six portrait-to-name pairs were one check; this keeps verda_instructor_01.jpg, the rest are added."
+  },
+  {
+   "check_id": "PHOTO-28/studio-launch/H037",
+   "check": "On “Studio launch-page composition” (studio-launch.png), all type on Warm Off White #F4F0E8 is Soft Ink #33352E; only short labels, like the passcard_2025_print.pdf field labels, may be Sage.",
+   "why": "Wordmark removed: unrecoloured supplied ink (about #222724) is exempt and is checked by the wordmark-solid check; this kept a pass condition that failed a correct placement."
+  },
+  {
+   "check_id": "PHOTO-28/class-feed/H036",
+   "check": "On “Class announcement” (class-feed.png), all type on Warm Off White #F4F0E8 is Soft Ink #33352E; only short labels, like the passcard_2025_print.pdf field labels, may be Sage.",
+   "why": "Wordmark removed: unrecoloured supplied ink (about #222724) is exempt and is checked by the wordmark-solid check; this kept a pass condition that failed a correct placement."
+  },
+  {
+   "check_id": "PHOTO-28/booking-story/H034",
+   "check": "On “Studio booking story” (booking-story.png), all type on Warm Off White #F4F0E8 is Soft Ink #33352E; only short labels, like the passcard_2025_print.pdf field labels, may be Sage.",
+   "why": "Wordmark removed: unrecoloured supplied ink (about #222724) is exempt and is checked by the wordmark-solid check; this kept a pass condition that failed a correct placement."
+  },
+  {
+   "check_id": "PHOTO-28/studio-launch/H059",
+   "check": "Any type on a Sage #9CA98F ground or panel on “Studio launch-page composition” (studio-launch.png) is Soft Ink #33352E or Warm Off White #F4F0E8.",
+   "why": "Wordmark removed: its colour is checked by the wordmark-solid check, which accepts the unrecoloured supplied ink."
+  },
+  {
+   "check_id": "PHOTO-28/class-feed/H058",
+   "check": "Any type on a Sage #9CA98F ground or panel on “Class announcement” (class-feed.png) is Soft Ink #33352E or Warm Off White #F4F0E8.",
+   "why": "Wordmark removed: its colour is checked by the wordmark-solid check, which accepts the unrecoloured supplied ink."
+  },
+  {
+   "check_id": "PHOTO-28/booking-story/H056",
+   "check": "Any type on a Sage #9CA98F ground or panel on “Studio booking story” (booking-story.png) is Soft Ink #33352E or Warm Off White #F4F0E8.",
+   "why": "Wordmark removed: its colour is checked by the wordmark-solid check, which accepts the unrecoloured supplied ink."
+  },
+  {
+   "check_id": "PHOTO-28/class-feed/H001",
+   "check": "If the pictured instructor on “Class announcement” (class-feed.png) is Priya Anand, the class named is Foundations, as owner_note.txt gives.",
+   "reference_assets": [
+    "owner_note.txt",
+    "roster_2027.csv"
+   ],
+   "why": "Split: six instructor-to-class pairs were one check (33 words); this keeps Priya Anand, the rest are added."
+  },
+  {
+   "check_id": "PHOTO-28/class-feed/H002",
+   "check": "If verda_instructor_01.jpg is pictured on “Class announcement” (class-feed.png), the name given is Priya Anand, per roster_2027.csv.",
+   "reference_assets": [
+    "roster_2027.csv",
+    "verda_instructor_01.jpg"
+   ],
+   "why": "Split: six portrait-to-name pairs were one check; this keeps verda_instructor_01.jpg, the rest are added."
+  }
+ ],
+ "add": [
+  {
+   "key": "launch-price-foundations",
+   "output_id": "studio-launch",
+   "type": "human",
+   "k_id": "K1_Q1",
+   "check": "Foundations is priced $34 on “Studio launch-page composition” (studio-launch.png), as roster_2027.csv gives for RF-FND.",
+   "evidence_reference": "roster_2027.csv price column, read with owner_note.txt class names.",
+   "reference_assets": [
+    "roster_2027.csv",
+    "owner_note.txt"
+   ],
+   "why": "Split from H006, which bundled six prices.",
+   "method": "look"
+  },
+  {
+   "key": "launch-price-flow",
+   "output_id": "studio-launch",
+   "type": "human",
+   "k_id": "K1_Q1",
+   "check": "Flow is priced $36 on “Studio launch-page composition” (studio-launch.png), as roster_2027.csv gives for RF-FLW.",
+   "evidence_reference": "roster_2027.csv price column, read with owner_note.txt class names.",
+   "reference_assets": [
+    "roster_2027.csv",
+    "owner_note.txt"
+   ],
+   "why": "Split from H006, which bundled six prices.",
+   "method": "look"
+  },
+  {
+   "key": "launch-price-core-restore",
+   "output_id": "studio-launch",
+   "type": "human",
+   "k_id": "K1_Q1",
+   "check": "Core & Restore is priced $34 on “Studio launch-page composition” (studio-launch.png), as roster_2027.csv gives for RF-COR.",
+   "evidence_reference": "roster_2027.csv price column, read with owner_note.txt class names.",
+   "reference_assets": [
+    "roster_2027.csv",
+    "owner_note.txt"
+   ],
+   "why": "Split from H006, which bundled six prices.",
+   "method": "look"
+  },
+  {
+   "key": "launch-price-strength",
+   "output_id": "studio-launch",
+   "type": "human",
+   "k_id": "K1_Q1",
+   "check": "Strength is priced $38 on “Studio launch-page composition” (studio-launch.png), as roster_2027.csv gives for RF-ATH.",
+   "evidence_reference": "roster_2027.csv price column, read with owner_note.txt class names.",
+   "reference_assets": [
+    "roster_2027.csv",
+    "owner_note.txt"
+   ],
+   "why": "Split from H006, which bundled six prices.",
+   "method": "look"
+  },
+  {
+   "key": "launch-price-prenatal",
+   "output_id": "studio-launch",
+   "type": "human",
+   "k_id": "K1_Q1",
+   "check": "Prenatal is priced $36 on “Studio launch-page composition” (studio-launch.png), as roster_2027.csv gives for RF-PRE.",
+   "evidence_reference": "roster_2027.csv price column, read with owner_note.txt class names.",
+   "reference_assets": [
+    "roster_2027.csv",
+    "owner_note.txt"
+   ],
+   "why": "Split from H006, which bundled six prices.",
+   "method": "look"
+  },
+  {
+   "key": "launch-price-slow-deep",
+   "output_id": "studio-launch",
+   "type": "human",
+   "k_id": "K1_Q1",
+   "check": "Slow & Deep is priced $34 on “Studio launch-page composition” (studio-launch.png), as roster_2027.csv gives for RF-SLW.",
+   "evidence_reference": "roster_2027.csv price column, read with owner_note.txt class names.",
+   "reference_assets": [
+    "roster_2027.csv",
+    "owner_note.txt"
+   ],
+   "why": "Split from H006, which bundled six prices.",
+   "method": "look"
+  },
+  {
+   "key": "story-price-36",
+   "output_id": "booking-story",
+   "type": "human",
+   "k_id": "K1_Q1",
+   "check": "Any price given for Flow or Prenatal on “Studio booking story” (booking-story.png) is $36, as roster_2027.csv gives for RF-FLW and RF-PRE.",
+   "evidence_reference": "roster_2027.csv price column, read with owner_note.txt class names.",
+   "reference_assets": [
+    "roster_2027.csv",
+    "owner_note.txt"
+   ],
+   "why": "Split from H005, which bundled six prices.",
+   "method": "look"
+  },
+  {
+   "key": "story-price-38",
+   "output_id": "booking-story",
+   "type": "human",
+   "k_id": "K1_Q1",
+   "check": "Any price given for Strength on “Studio booking story” (booking-story.png) is $38, as roster_2027.csv gives for RF-ATH.",
+   "evidence_reference": "roster_2027.csv price column, read with owner_note.txt class names.",
+   "reference_assets": [
+    "roster_2027.csv",
+    "owner_note.txt"
+   ],
+   "why": "Split from H005, which bundled six prices.",
+   "method": "look"
+  },
+  {
+   "key": "feed-price-36",
+   "output_id": "class-feed",
+   "type": "human",
+   "k_id": "K1_Q1",
+   "check": "If the pictured instructor on “Class announcement” (class-feed.png) is Dana Osei or Yuki Sato, the class price reads $36, as in roster_2027.csv.",
+   "evidence_reference": "roster_2027.csv price column for the pictured instructor.",
+   "reference_assets": [
+    "roster_2027.csv"
+   ],
+   "why": "Split from H011, which bundled six prices.",
+   "method": "look"
+  },
+  {
+   "key": "feed-price-38",
+   "output_id": "class-feed",
+   "type": "human",
+   "k_id": "K1_Q1",
+   "check": "If the pictured instructor on “Class announcement” (class-feed.png) is Tomas Reyes, the class price reads $38, as in roster_2027.csv.",
+   "evidence_reference": "roster_2027.csv price column for the pictured instructor.",
+   "reference_assets": [
+    "roster_2027.csv"
+   ],
+   "why": "Split from H011, which bundled six prices.",
+   "method": "look"
+  },
+  {
+   "key": "feed-cutout-ground",
+   "output_id": "class-feed",
+   "type": "human",
+   "k_id": "K1_Q3",
+   "check": "The instructor cut-out on “Class announcement” (class-feed.png) sits on a solid Warm Off White #F4F0E8 or Sage #9CA98F ground.",
+   "evidence_reference": "Client brief and class-feed commission: place the cutout on solid Warm Off White or Sage.",
+   "why": "The commission names this ground; it was only implied by the general grounds check H005.",
+   "method": "look"
+  },
+  {
+   "key": "studio-launch-oak-share",
+   "output_id": "studio-launch",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "method": "estimate",
+   "how": "Estimate the share of the designed, non-photographic area drawn in Oak; answer No only if it is clearly over 5%.",
+   "check": "Oak #C7A97A covers no more than 5% of the designed, non-photographic area on “Studio launch-page composition” (studio-launch.png).",
+   "evidence_reference": "Brand identity, palette_rules.distribution: Oak no more than 5% of the designed, non-photographic area.",
+   "why": "The 5% Oak cap had no check; the hairline-only check does not test area."
+  },
+  {
+   "key": "studio-launch-wordmark-solid",
+   "output_id": "studio-launch",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "method": "measure",
+   "how": "In an image editor, eyedropper the middle of the d's thick upright stroke; each RGB value is within 4 of (34,39,36), (51,53,46) or (244,240,232).",
+   "check": "The d stem of the studio wordmark on “Studio launch-page composition” (studio-launch.png) samples as solid #222724 (the verda_wordmark_transparent.png ink as placed), Soft Ink #33352E or Warm Off White #F4F0E8.",
+   "evidence_reference": "Brand identity, palette_rules.opacity: passcard_2025_print.pdf sets its wordmark at 92%; on these exports the wordmark is solid. Supplied raster identity artwork is placed at 100% layer opacity; colour rules apply to any intentional recolouring. verda_wordmark_transparent.png letter ink (alpha 253) composites to about #222724 (34,39,36) on Warm Off White or Sage.",
+   "reference_assets": [
+    "passcard_2025_print.pdf",
+    "verda_wordmark_transparent.png"
+   ],
+   "why": "A 92% wordmark cannot be told from solid by eye; sampling the d stem against the supplied ink (or a recolour hex) at tolerance 4 passes a correct placement and fails a 92% blend on either ground."
+  },
+  {
+   "key": "class-feed-oak-share",
+   "output_id": "class-feed",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "method": "estimate",
+   "how": "Estimate the share of the designed, non-photographic area drawn in Oak; answer No only if it is clearly over 5%.",
+   "check": "Oak #C7A97A covers no more than 5% of the designed, non-photographic area on “Class announcement” (class-feed.png).",
+   "evidence_reference": "Brand identity, palette_rules.distribution: Oak no more than 5% of the designed, non-photographic area.",
+   "why": "The 5% Oak cap had no check; the hairline-only check does not test area."
+  },
+  {
+   "key": "class-feed-wordmark-solid",
+   "output_id": "class-feed",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "method": "measure",
+   "how": "In an image editor, eyedropper the middle of the d's thick upright stroke; each RGB value is within 4 of (34,39,36), (51,53,46) or (244,240,232).",
+   "check": "The d stem of the studio wordmark on “Class announcement” (class-feed.png) samples as solid #222724 (the verda_wordmark_transparent.png ink as placed), Soft Ink #33352E or Warm Off White #F4F0E8.",
+   "evidence_reference": "Brand identity, palette_rules.opacity: passcard_2025_print.pdf sets its wordmark at 92%; on these exports the wordmark is solid. Supplied raster identity artwork is placed at 100% layer opacity; colour rules apply to any intentional recolouring. verda_wordmark_transparent.png letter ink (alpha 253) composites to about #222724 (34,39,36) on Warm Off White or Sage.",
+   "reference_assets": [
+    "passcard_2025_print.pdf",
+    "verda_wordmark_transparent.png"
+   ],
+   "why": "A 92% wordmark cannot be told from solid by eye; sampling the d stem against the supplied ink (or a recolour hex) at tolerance 4 passes a correct placement and fails a 92% blend on either ground."
+  },
+  {
+   "key": "booking-story-oak-share",
+   "output_id": "booking-story",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "method": "estimate",
+   "how": "Estimate the share of the designed, non-photographic area drawn in Oak; answer No only if it is clearly over 5%.",
+   "check": "Oak #C7A97A covers no more than 5% of the designed, non-photographic area on “Studio booking story” (booking-story.png).",
+   "evidence_reference": "Brand identity, palette_rules.distribution: Oak no more than 5% of the designed, non-photographic area.",
+   "why": "The 5% Oak cap had no check; the hairline-only check does not test area."
+  },
+  {
+   "key": "booking-story-wordmark-solid",
+   "output_id": "booking-story",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "method": "measure",
+   "how": "In an image editor, eyedropper the middle of the d's thick upright stroke; each RGB value is within 4 of (34,39,36), (51,53,46) or (244,240,232).",
+   "check": "The d stem of the studio wordmark on “Studio booking story” (booking-story.png) samples as solid #222724 (the verda_wordmark_transparent.png ink as placed), Soft Ink #33352E or Warm Off White #F4F0E8.",
+   "evidence_reference": "Brand identity, palette_rules.opacity: passcard_2025_print.pdf sets its wordmark at 92%; on these exports the wordmark is solid. Supplied raster identity artwork is placed at 100% layer opacity; colour rules apply to any intentional recolouring. verda_wordmark_transparent.png letter ink (alpha 253) composites to about #222724 (34,39,36) on Warm Off White or Sage.",
+   "reference_assets": [
+    "passcard_2025_print.pdf",
+    "verda_wordmark_transparent.png"
+   ],
+   "why": "A 92% wordmark cannot be told from solid by eye; sampling the d stem against the supplied ink (or a recolour hex) at tolerance 4 passes a correct placement and fails a 92% blend on either ground."
+  },
+  {
+   "key": "launch-cutout-ground",
+   "output_id": "studio-launch",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "If an instructor cut-out appears on “Studio launch-page composition” (studio-launch.png), it sits on a solid Warm Off White #F4F0E8 or Sage #9CA98F ground, not on a photograph.",
+   "evidence_reference": "Brand identity, palette_rules.distribution: a cut-out portrait sits on one of the two (Warm Off White or Sage).",
+   "why": "B26 was only cited to the general grounds check, which does not test what sits behind a cut-out.",
+   "method": "look"
+  },
+  {
+   "key": "story-cutout-ground",
+   "output_id": "booking-story",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "If an instructor cut-out appears on “Studio booking story” (booking-story.png), it sits on a solid Warm Off White #F4F0E8 or Sage #9CA98F ground, not on a photograph.",
+   "evidence_reference": "Brand identity, palette_rules.distribution: a cut-out portrait sits on one of the two (Warm Off White or Sage).",
+   "why": "B26 was only cited to the general grounds check, which does not test what sits behind a cut-out.",
+   "method": "look"
+  },
+  {
+   "key": "studio-launch-soft-ink-present",
+   "output_id": "studio-launch",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "method": "measure",
+   "how": "Eyedropper the middle of thick dark type strokes, such as the headline; at least one sample is within 5 of #33352E (51, 53, 46).",
+   "check": "Soft Ink #33352E appears in the type on “Studio launch-page composition” (studio-launch.png).",
+   "evidence_reference": "Palette roles: Soft Ink is mandatory, for headlines, body text, prices, fine print on Warm Off White.",
+   "why": "Split from the check that bundled both mandatory colours."
+  },
+  {
+   "key": "class-feed-soft-ink-present",
+   "output_id": "class-feed",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "method": "measure",
+   "how": "Eyedropper the middle of thick dark type strokes, such as the headline; at least one sample is within 5 of #33352E (51, 53, 46).",
+   "check": "Soft Ink #33352E appears in the type on “Class announcement” (class-feed.png).",
+   "evidence_reference": "Palette roles: Soft Ink is mandatory, for headlines, body text, prices, fine print on Warm Off White.",
+   "why": "Split from the check that bundled both mandatory colours."
+  },
+  {
+   "key": "booking-story-soft-ink-present",
+   "output_id": "booking-story",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "method": "measure",
+   "how": "Eyedropper the middle of thick dark type strokes, such as the headline; at least one sample is within 5 of #33352E (51, 53, 46).",
+   "check": "Soft Ink #33352E appears in the type on “Studio booking story” (booking-story.png).",
+   "evidence_reference": "Palette roles: Soft Ink is mandatory, for headlines, body text, prices, fine print on Warm Off White.",
+   "why": "Split from the check that bundled both mandatory colours."
+  },
+  {
+   "key": "launch-class-dana",
+   "output_id": "studio-launch",
+   "type": "human",
+   "k_id": "K1_Q1",
+   "check": "If Dana Osei is named on “Studio launch-page composition” (studio-launch.png), any class beside that name is Flow, as owner_note.txt gives.",
+   "evidence_reference": "owner_note.txt: Dana Osei -- Flow. roster_2027.csv class_code agrees once the codes are mapped.",
+   "reference_assets": [
+    "owner_note.txt",
+    "roster_2027.csv"
+   ],
+   "why": "Split from H014, which bundled six instructor-to-class pairs.",
+   "method": "look"
+  },
+  {
+   "key": "launch-portrait-02",
+   "output_id": "studio-launch",
+   "type": "human",
+   "k_id": "K2_Q1",
+   "check": "If verda_instructor_02.jpg appears on “Studio launch-page composition” (studio-launch.png), any name beside it is Dana Osei, per roster_2027.csv.",
+   "evidence_reference": "roster_2027.csv, field portrait_file, pairs Dana Osei with verda_instructor_02 (listed as .png; the supplied portrait is the .jpg).",
+   "reference_assets": [
+    "roster_2027.csv",
+    "verda_instructor_02.jpg"
+   ],
+   "why": "Split from H024, which bundled six portrait-to-name pairs.",
+   "method": "look"
+  },
+  {
+   "key": "launch-class-lena",
+   "output_id": "studio-launch",
+   "type": "human",
+   "k_id": "K1_Q1",
+   "check": "If Lena Brandt is named on “Studio launch-page composition” (studio-launch.png), any class beside that name is Core & Restore, as owner_note.txt gives.",
+   "evidence_reference": "owner_note.txt: Lena Brandt -- Core & Restore. roster_2027.csv class_code agrees once the codes are mapped.",
+   "reference_assets": [
+    "owner_note.txt",
+    "roster_2027.csv"
+   ],
+   "why": "Split from H014, which bundled six instructor-to-class pairs.",
+   "method": "look"
+  },
+  {
+   "key": "launch-portrait-03",
+   "output_id": "studio-launch",
+   "type": "human",
+   "k_id": "K2_Q1",
+   "check": "If verda_instructor_03.jpg appears on “Studio launch-page composition” (studio-launch.png), any name beside it is Lena Brandt, per roster_2027.csv.",
+   "evidence_reference": "roster_2027.csv, field portrait_file, pairs Lena Brandt with verda_instructor_03 (listed as .png; the supplied portrait is the .jpg).",
+   "reference_assets": [
+    "roster_2027.csv",
+    "verda_instructor_03.jpg"
+   ],
+   "why": "Split from H024, which bundled six portrait-to-name pairs.",
+   "method": "look"
+  },
+  {
+   "key": "launch-class-tomas",
+   "output_id": "studio-launch",
+   "type": "human",
+   "k_id": "K1_Q1",
+   "check": "If Tomas Reyes is named on “Studio launch-page composition” (studio-launch.png), any class beside that name is Strength, as owner_note.txt gives.",
+   "evidence_reference": "owner_note.txt: Tomas Reyes -- Strength. roster_2027.csv class_code agrees once the codes are mapped.",
+   "reference_assets": [
+    "owner_note.txt",
+    "roster_2027.csv"
+   ],
+   "why": "Split from H014, which bundled six instructor-to-class pairs.",
+   "method": "look"
+  },
+  {
+   "key": "launch-portrait-04",
+   "output_id": "studio-launch",
+   "type": "human",
+   "k_id": "K2_Q1",
+   "check": "If verda_instructor_04.jpg appears on “Studio launch-page composition” (studio-launch.png), any name beside it is Tomas Reyes, per roster_2027.csv.",
+   "evidence_reference": "roster_2027.csv, field portrait_file, pairs Tomas Reyes with verda_instructor_04 (listed as .png; the supplied portrait is the .jpg).",
+   "reference_assets": [
+    "roster_2027.csv",
+    "verda_instructor_04.jpg"
+   ],
+   "why": "Split from H024, which bundled six portrait-to-name pairs.",
+   "method": "look"
+  },
+  {
+   "key": "launch-class-yuki",
+   "output_id": "studio-launch",
+   "type": "human",
+   "k_id": "K1_Q1",
+   "check": "If Yuki Sato is named on “Studio launch-page composition” (studio-launch.png), any class beside that name is Prenatal, as owner_note.txt gives.",
+   "evidence_reference": "owner_note.txt: Yuki Sato -- Prenatal. roster_2027.csv class_code agrees once the codes are mapped.",
+   "reference_assets": [
+    "owner_note.txt",
+    "roster_2027.csv"
+   ],
+   "why": "Split from H014, which bundled six instructor-to-class pairs.",
+   "method": "look"
+  },
+  {
+   "key": "launch-portrait-05",
+   "output_id": "studio-launch",
+   "type": "human",
+   "k_id": "K2_Q1",
+   "check": "If verda_instructor_05.jpg appears on “Studio launch-page composition” (studio-launch.png), any name beside it is Yuki Sato, per roster_2027.csv.",
+   "evidence_reference": "roster_2027.csv, field portrait_file, pairs Yuki Sato with verda_instructor_05 (listed as .png; the supplied portrait is the .jpg).",
+   "reference_assets": [
+    "roster_2027.csv",
+    "verda_instructor_05.jpg"
+   ],
+   "why": "Split from H024, which bundled six portrait-to-name pairs.",
+   "method": "look"
+  },
+  {
+   "key": "launch-class-nadia",
+   "output_id": "studio-launch",
+   "type": "human",
+   "k_id": "K1_Q1",
+   "check": "If Nadia Haddad is named on “Studio launch-page composition” (studio-launch.png), any class beside that name is Slow & Deep, as owner_note.txt gives.",
+   "evidence_reference": "owner_note.txt: Nadia Haddad -- Slow & Deep. roster_2027.csv class_code agrees once the codes are mapped.",
+   "reference_assets": [
+    "owner_note.txt",
+    "roster_2027.csv"
+   ],
+   "why": "Split from H014, which bundled six instructor-to-class pairs.",
+   "method": "look"
+  },
+  {
+   "key": "launch-portrait-06",
+   "output_id": "studio-launch",
+   "type": "human",
+   "k_id": "K2_Q1",
+   "check": "If verda_instructor_06.jpg appears on “Studio launch-page composition” (studio-launch.png), any name beside it is Nadia Haddad, per roster_2027.csv.",
+   "evidence_reference": "roster_2027.csv, field portrait_file, pairs Nadia Haddad with verda_instructor_06 (listed as .png; the supplied portrait is the .jpg).",
+   "reference_assets": [
+    "roster_2027.csv",
+    "verda_instructor_06.jpg"
+   ],
+   "why": "Split from H024, which bundled six portrait-to-name pairs.",
+   "method": "look"
+  },
+  {
+   "key": "story-class-dana",
+   "output_id": "booking-story",
+   "type": "human",
+   "k_id": "K1_Q1",
+   "check": "If Dana Osei is named on “Studio booking story” (booking-story.png), any class beside that name is Flow, as owner_note.txt gives.",
+   "evidence_reference": "owner_note.txt: Dana Osei -- Flow. roster_2027.csv class_code agrees once the codes are mapped.",
+   "reference_assets": [
+    "owner_note.txt",
+    "roster_2027.csv"
+   ],
+   "why": "Split from H013, which bundled six instructor-to-class pairs.",
+   "method": "look"
+  },
+  {
+   "key": "story-portrait-02",
+   "output_id": "booking-story",
+   "type": "human",
+   "k_id": "K2_Q1",
+   "check": "If verda_instructor_02.jpg appears on “Studio booking story” (booking-story.png), any name beside it is Dana Osei, per roster_2027.csv.",
+   "evidence_reference": "roster_2027.csv, field portrait_file, pairs Dana Osei with verda_instructor_02 (listed as .png; the supplied portrait is the .jpg).",
+   "reference_assets": [
+    "roster_2027.csv",
+    "verda_instructor_02.jpg"
+   ],
+   "why": "Split from H023, which bundled six portrait-to-name pairs.",
+   "method": "look"
+  },
+  {
+   "key": "story-class-lena",
+   "output_id": "booking-story",
+   "type": "human",
+   "k_id": "K1_Q1",
+   "check": "If Lena Brandt is named on “Studio booking story” (booking-story.png), any class beside that name is Core & Restore, as owner_note.txt gives.",
+   "evidence_reference": "owner_note.txt: Lena Brandt -- Core & Restore. roster_2027.csv class_code agrees once the codes are mapped.",
+   "reference_assets": [
+    "owner_note.txt",
+    "roster_2027.csv"
+   ],
+   "why": "Split from H013, which bundled six instructor-to-class pairs.",
+   "method": "look"
+  },
+  {
+   "key": "story-portrait-03",
+   "output_id": "booking-story",
+   "type": "human",
+   "k_id": "K2_Q1",
+   "check": "If verda_instructor_03.jpg appears on “Studio booking story” (booking-story.png), any name beside it is Lena Brandt, per roster_2027.csv.",
+   "evidence_reference": "roster_2027.csv, field portrait_file, pairs Lena Brandt with verda_instructor_03 (listed as .png; the supplied portrait is the .jpg).",
+   "reference_assets": [
+    "roster_2027.csv",
+    "verda_instructor_03.jpg"
+   ],
+   "why": "Split from H023, which bundled six portrait-to-name pairs.",
+   "method": "look"
+  },
+  {
+   "key": "story-class-tomas",
+   "output_id": "booking-story",
+   "type": "human",
+   "k_id": "K1_Q1",
+   "check": "If Tomas Reyes is named on “Studio booking story” (booking-story.png), any class beside that name is Strength, as owner_note.txt gives.",
+   "evidence_reference": "owner_note.txt: Tomas Reyes -- Strength. roster_2027.csv class_code agrees once the codes are mapped.",
+   "reference_assets": [
+    "owner_note.txt",
+    "roster_2027.csv"
+   ],
+   "why": "Split from H013, which bundled six instructor-to-class pairs.",
+   "method": "look"
+  },
+  {
+   "key": "story-portrait-04",
+   "output_id": "booking-story",
+   "type": "human",
+   "k_id": "K2_Q1",
+   "check": "If verda_instructor_04.jpg appears on “Studio booking story” (booking-story.png), any name beside it is Tomas Reyes, per roster_2027.csv.",
+   "evidence_reference": "roster_2027.csv, field portrait_file, pairs Tomas Reyes with verda_instructor_04 (listed as .png; the supplied portrait is the .jpg).",
+   "reference_assets": [
+    "roster_2027.csv",
+    "verda_instructor_04.jpg"
+   ],
+   "why": "Split from H023, which bundled six portrait-to-name pairs.",
+   "method": "look"
+  },
+  {
+   "key": "story-class-yuki",
+   "output_id": "booking-story",
+   "type": "human",
+   "k_id": "K1_Q1",
+   "check": "If Yuki Sato is named on “Studio booking story” (booking-story.png), any class beside that name is Prenatal, as owner_note.txt gives.",
+   "evidence_reference": "owner_note.txt: Yuki Sato -- Prenatal. roster_2027.csv class_code agrees once the codes are mapped.",
+   "reference_assets": [
+    "owner_note.txt",
+    "roster_2027.csv"
+   ],
+   "why": "Split from H013, which bundled six instructor-to-class pairs.",
+   "method": "look"
+  },
+  {
+   "key": "story-portrait-05",
+   "output_id": "booking-story",
+   "type": "human",
+   "k_id": "K2_Q1",
+   "check": "If verda_instructor_05.jpg appears on “Studio booking story” (booking-story.png), any name beside it is Yuki Sato, per roster_2027.csv.",
+   "evidence_reference": "roster_2027.csv, field portrait_file, pairs Yuki Sato with verda_instructor_05 (listed as .png; the supplied portrait is the .jpg).",
+   "reference_assets": [
+    "roster_2027.csv",
+    "verda_instructor_05.jpg"
+   ],
+   "why": "Split from H023, which bundled six portrait-to-name pairs.",
+   "method": "look"
+  },
+  {
+   "key": "story-class-nadia",
+   "output_id": "booking-story",
+   "type": "human",
+   "k_id": "K1_Q1",
+   "check": "If Nadia Haddad is named on “Studio booking story” (booking-story.png), any class beside that name is Slow & Deep, as owner_note.txt gives.",
+   "evidence_reference": "owner_note.txt: Nadia Haddad -- Slow & Deep. roster_2027.csv class_code agrees once the codes are mapped.",
+   "reference_assets": [
+    "owner_note.txt",
+    "roster_2027.csv"
+   ],
+   "why": "Split from H013, which bundled six instructor-to-class pairs.",
+   "method": "look"
+  },
+  {
+   "key": "story-portrait-06",
+   "output_id": "booking-story",
+   "type": "human",
+   "k_id": "K2_Q1",
+   "check": "If verda_instructor_06.jpg appears on “Studio booking story” (booking-story.png), any name beside it is Nadia Haddad, per roster_2027.csv.",
+   "evidence_reference": "roster_2027.csv, field portrait_file, pairs Nadia Haddad with verda_instructor_06 (listed as .png; the supplied portrait is the .jpg).",
+   "reference_assets": [
+    "roster_2027.csv",
+    "verda_instructor_06.jpg"
+   ],
+   "why": "Split from H023, which bundled six portrait-to-name pairs.",
+   "method": "look"
+  },
+  {
+   "key": "feed-class-dana",
+   "output_id": "class-feed",
+   "type": "human",
+   "k_id": "K1_Q1",
+   "check": "If the pictured instructor on “Class announcement” (class-feed.png) is Dana Osei, the class named is Flow, as owner_note.txt gives.",
+   "evidence_reference": "owner_note.txt: Dana Osei -- Flow. roster_2027.csv class_code agrees once the codes are mapped.",
+   "reference_assets": [
+    "owner_note.txt",
+    "roster_2027.csv"
+   ],
+   "why": "Split from class-feed H001, which bundled six instructor-to-class pairs.",
+   "method": "look"
+  },
+  {
+   "key": "feed-portrait-02",
+   "output_id": "class-feed",
+   "type": "human",
+   "k_id": "K2_Q1",
+   "check": "If verda_instructor_02.jpg is pictured on “Class announcement” (class-feed.png), the name given is Dana Osei, per roster_2027.csv.",
+   "evidence_reference": "roster_2027.csv, field portrait_file, pairs Dana Osei with verda_instructor_02 (listed as .png; the supplied portrait is the .jpg).",
+   "reference_assets": [
+    "roster_2027.csv",
+    "verda_instructor_02.jpg"
+   ],
+   "why": "Split from class-feed H002, which bundled six portrait-to-name pairs.",
+   "method": "look"
+  },
+  {
+   "key": "feed-class-lena",
+   "output_id": "class-feed",
+   "type": "human",
+   "k_id": "K1_Q1",
+   "check": "If the pictured instructor on “Class announcement” (class-feed.png) is Lena Brandt, the class named is Core & Restore, as owner_note.txt gives.",
+   "evidence_reference": "owner_note.txt: Lena Brandt -- Core & Restore. roster_2027.csv class_code agrees once the codes are mapped.",
+   "reference_assets": [
+    "owner_note.txt",
+    "roster_2027.csv"
+   ],
+   "why": "Split from class-feed H001, which bundled six instructor-to-class pairs.",
+   "method": "look"
+  },
+  {
+   "key": "feed-portrait-03",
+   "output_id": "class-feed",
+   "type": "human",
+   "k_id": "K2_Q1",
+   "check": "If verda_instructor_03.jpg is pictured on “Class announcement” (class-feed.png), the name given is Lena Brandt, per roster_2027.csv.",
+   "evidence_reference": "roster_2027.csv, field portrait_file, pairs Lena Brandt with verda_instructor_03 (listed as .png; the supplied portrait is the .jpg).",
+   "reference_assets": [
+    "roster_2027.csv",
+    "verda_instructor_03.jpg"
+   ],
+   "why": "Split from class-feed H002, which bundled six portrait-to-name pairs.",
+   "method": "look"
+  },
+  {
+   "key": "feed-class-tomas",
+   "output_id": "class-feed",
+   "type": "human",
+   "k_id": "K1_Q1",
+   "check": "If the pictured instructor on “Class announcement” (class-feed.png) is Tomas Reyes, the class named is Strength, as owner_note.txt gives.",
+   "evidence_reference": "owner_note.txt: Tomas Reyes -- Strength. roster_2027.csv class_code agrees once the codes are mapped.",
+   "reference_assets": [
+    "owner_note.txt",
+    "roster_2027.csv"
+   ],
+   "why": "Split from class-feed H001, which bundled six instructor-to-class pairs.",
+   "method": "look"
+  },
+  {
+   "key": "feed-portrait-04",
+   "output_id": "class-feed",
+   "type": "human",
+   "k_id": "K2_Q1",
+   "check": "If verda_instructor_04.jpg is pictured on “Class announcement” (class-feed.png), the name given is Tomas Reyes, per roster_2027.csv.",
+   "evidence_reference": "roster_2027.csv, field portrait_file, pairs Tomas Reyes with verda_instructor_04 (listed as .png; the supplied portrait is the .jpg).",
+   "reference_assets": [
+    "roster_2027.csv",
+    "verda_instructor_04.jpg"
+   ],
+   "why": "Split from class-feed H002, which bundled six portrait-to-name pairs.",
+   "method": "look"
+  },
+  {
+   "key": "feed-class-yuki",
+   "output_id": "class-feed",
+   "type": "human",
+   "k_id": "K1_Q1",
+   "check": "If the pictured instructor on “Class announcement” (class-feed.png) is Yuki Sato, the class named is Prenatal, as owner_note.txt gives.",
+   "evidence_reference": "owner_note.txt: Yuki Sato -- Prenatal. roster_2027.csv class_code agrees once the codes are mapped.",
+   "reference_assets": [
+    "owner_note.txt",
+    "roster_2027.csv"
+   ],
+   "why": "Split from class-feed H001, which bundled six instructor-to-class pairs.",
+   "method": "look"
+  },
+  {
+   "key": "feed-portrait-05",
+   "output_id": "class-feed",
+   "type": "human",
+   "k_id": "K2_Q1",
+   "check": "If verda_instructor_05.jpg is pictured on “Class announcement” (class-feed.png), the name given is Yuki Sato, per roster_2027.csv.",
+   "evidence_reference": "roster_2027.csv, field portrait_file, pairs Yuki Sato with verda_instructor_05 (listed as .png; the supplied portrait is the .jpg).",
+   "reference_assets": [
+    "roster_2027.csv",
+    "verda_instructor_05.jpg"
+   ],
+   "why": "Split from class-feed H002, which bundled six portrait-to-name pairs.",
+   "method": "look"
+  },
+  {
+   "key": "feed-class-nadia",
+   "output_id": "class-feed",
+   "type": "human",
+   "k_id": "K1_Q1",
+   "check": "If the pictured instructor on “Class announcement” (class-feed.png) is Nadia Haddad, the class named is Slow & Deep, as owner_note.txt gives.",
+   "evidence_reference": "owner_note.txt: Nadia Haddad -- Slow & Deep. roster_2027.csv class_code agrees once the codes are mapped.",
+   "reference_assets": [
+    "owner_note.txt",
+    "roster_2027.csv"
+   ],
+   "why": "Split from class-feed H001, which bundled six instructor-to-class pairs.",
+   "method": "look"
+  },
+  {
+   "key": "feed-portrait-06",
+   "output_id": "class-feed",
+   "type": "human",
+   "k_id": "K2_Q1",
+   "check": "If verda_instructor_06.jpg is pictured on “Class announcement” (class-feed.png), the name given is Nadia Haddad, per roster_2027.csv.",
+   "evidence_reference": "roster_2027.csv, field portrait_file, pairs Nadia Haddad with verda_instructor_06 (listed as .png; the supplied portrait is the .jpg).",
+   "reference_assets": [
+    "roster_2027.csv",
+    "verda_instructor_06.jpg"
+   ],
+   "why": "Split from class-feed H002, which bundled six portrait-to-name pairs.",
+   "method": "look"
+  },
+  {
+   "key": "launch-wordmark-spacing",
+   "output_id": "studio-launch",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "The gaps between the letters of the studio wordmark on “Studio launch-page composition” (studio-launch.png) match verda_wordmark_transparent.png, with no letters moved closer or further apart.",
+   "evidence_reference": "Brand identity, type_system.rules: do not change its letter spacing; signature_move: original letterforms, spacing and proportions.",
+   "reference_assets": [
+    "verda_wordmark_transparent.png"
+   ],
+   "why": "The letter-spacing clause had no check; the aspect-ratio window only catches large spacing changes.",
+   "method": "look"
+  },
+  {
+   "key": "feed-wordmark-spacing",
+   "output_id": "class-feed",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "The gaps between the letters of the studio wordmark on “Class announcement” (class-feed.png) match verda_wordmark_transparent.png, with no letters moved closer or further apart.",
+   "evidence_reference": "Brand identity, type_system.rules: do not change its letter spacing; signature_move: original letterforms, spacing and proportions.",
+   "reference_assets": [
+    "verda_wordmark_transparent.png"
+   ],
+   "why": "The letter-spacing clause had no check; the aspect-ratio window only catches large spacing changes.",
+   "method": "look"
+  },
+  {
+   "key": "story-wordmark-spacing",
+   "output_id": "booking-story",
+   "type": "human",
+   "k_id": "K2_Q3",
+   "check": "The gaps between the letters of the studio wordmark on “Studio booking story” (booking-story.png) match verda_wordmark_transparent.png, with no letters moved closer or further apart.",
+   "evidence_reference": "Brand identity, type_system.rules: do not change its letter spacing; signature_move: original letterforms, spacing and proportions.",
+   "reference_assets": [
+    "verda_wordmark_transparent.png"
+   ],
+   "why": "The letter-spacing clause had no check; the aspect-ratio window only catches large spacing changes.",
+   "method": "look"
+  }
+ ]
+}

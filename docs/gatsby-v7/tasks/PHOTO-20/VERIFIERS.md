@@ -191,11 +191,60 @@ Revised input pack. Previous execution results are historical, not current ratin
 - `PHOTO-20/talk-card-r009/A015` “Speaker talk card - Grain & Frame Forum - What a small studio can promise” (talk-card-r009.pdf) sets the date “2026-05-22” in Inter Regular at 9.5 pt.
 - `PHOTO-20/talk-card-r009/A016` “Speaker talk card - Grain & Frame Forum - What a small studio can promise” (talk-card-r009.pdf) sets the format “Keynote” in Inter Regular at 9.5 pt.
 - `PHOTO-20/speaker-onepager/A016` “Speaker booking one-pager” (speaker-onepager.pdf) sets the talk subject “on designing for real manufacturing” in Inter Regular at 9.5 pt.
+- `PHOTO-20/speaker-onepager/A017` “Speaker booking one-pager” (speaker-onepager.pdf) sets her name “Astrid Vellacourt” in Instrument Serif Regular with +30 tracking.
+- `PHOTO-20/talk-card-r002/A017` “Speaker talk card - Northlight Design Forum - Designing the thing before the deck” (talk-card-r002.pdf) sets her name “Astrid Vellacourt” in Instrument Serif Regular with +30 tracking.
+- `PHOTO-20/talk-card-r003/A017` “Speaker talk card - Made & Kept - Six people, one hand” (talk-card-r003.pdf) sets her name “Astrid Vellacourt” in Instrument Serif Regular with +30 tracking.
+- `PHOTO-20/talk-card-r004/A017` “Speaker talk card - Fjordworks Summit - On staying small on purpose” (talk-card-r004.pdf) sets her name “Astrid Vellacourt” in Instrument Serif Regular with +30 tracking.
+- `PHOTO-20/talk-card-r005/A017` “Speaker talk card - Fjordworks Summit - The room after the round” (talk-card-r005.pdf) sets her name “Astrid Vellacourt” in Instrument Serif Regular with +30 tracking.
+- `PHOTO-20/talk-card-r006/A017` “Speaker talk card - Halden Design Days - From sketch to tooling” (talk-card-r006.pdf) sets her name “Astrid Vellacourt” in Instrument Serif Regular with +30 tracking.
+- `PHOTO-20/talk-card-r007/A017` “Speaker talk card - The Bench Sessions - Designing for the next hands” (talk-card-r007.pdf) sets her name “Astrid Vellacourt” in Instrument Serif Regular with +30 tracking.
+- `PHOTO-20/talk-card-r008/A017` “Speaker talk card - Continuum Product Days - What survives contact with a factory” (talk-card-r008.pdf) sets her name “Astrid Vellacourt” in Instrument Serif Regular with +30 tracking.
+- `PHOTO-20/talk-card-r009/A017` “Speaker talk card - Grain & Frame Forum - What a small studio can promise” (talk-card-r009.pdf) sets her name “Astrid Vellacourt” in Instrument Serif Regular with +30 tracking.
+- `PHOTO-20/speaker-onepager/A018` “Speaker booking one-pager” (speaker-onepager.pdf) sets the talk title “Designing the thing before the deck” in Inter Medium with -5 tracking.
+- `PHOTO-20/speaker-onepager/A019` “Speaker booking one-pager” (speaker-onepager.pdf) sets the talk title “Six people, one hand” in Inter Medium with -5 tracking.
+- `PHOTO-20/speaker-onepager/A020` “Speaker booking one-pager” (speaker-onepager.pdf) sets the talk title “What survives contact with a factory” in Inter Medium with -5 tracking.
+- `PHOTO-20/speaker-onepager/A021` “Speaker booking one-pager” (speaker-onepager.pdf) sets the biography passage “She works on physical products from first sketch to production and is raising a seed round” in Inter Regular with 13 pt leading.
+- `PHOTO-20/speaker-onepager/A022` “Speaker booking one-pager” (speaker-onepager.pdf) sets the biography line “She works on physical products from first sketch to production” in Inter Regular with 0 tracking.
+- `PHOTO-20/speaker-onepager/A023` “Speaker booking one-pager” (speaker-onepager.pdf) sets the booking contact “Astrid Vellacourt - Vellacourt & Sund” in Inter Regular with 0 tracking.
+- `PHOTO-20/speaker-onepager/A024` “Speaker booking one-pager” (speaker-onepager.pdf) sets the talk subject “on building product before pitch” in Inter Regular with 0 tracking.
+- `PHOTO-20/speaker-onepager/A025` “Speaker booking one-pager” (speaker-onepager.pdf) sets the talk subject words “craft as it grows” in Inter Regular with 0 tracking.
+- `PHOTO-20/speaker-onepager/A026` “Speaker booking one-pager” (speaker-onepager.pdf) sets the talk subject “on designing for real manufacturing” in Inter Regular with 0 tracking.
+- `PHOTO-20/talk-card-r002/A018` “Speaker talk card - Northlight Design Forum - Designing the thing before the deck” (talk-card-r002.pdf) sets the talk title “Designing the thing before the deck” in Inter Medium with -5 tracking.
+- `PHOTO-20/talk-card-r002/A019` “Speaker talk card - Northlight Design Forum - Designing the thing before the deck” (talk-card-r002.pdf) sets the event name “Northlight Design Forum” in Inter Regular with +15 tracking.
+- `PHOTO-20/talk-card-r002/A020` “Speaker talk card - Northlight Design Forum - Designing the thing before the deck” (talk-card-r002.pdf) sets the date “14 Feb 2026” in Inter Regular with +15 tracking.
+- `PHOTO-20/talk-card-r002/A021` “Speaker talk card - Northlight Design Forum - Designing the thing before the deck” (talk-card-r002.pdf) sets the format “Keynote” in Inter Regular with +15 tracking.
+- `PHOTO-20/talk-card-r003/A018` “Speaker talk card - Made & Kept - Six people, one hand” (talk-card-r003.pdf) sets the talk title “Six people, one hand” in Inter Medium with -5 tracking.
+- `PHOTO-20/talk-card-r003/A019` “Speaker talk card - Made & Kept - Six people, one hand” (talk-card-r003.pdf) sets the event name “Made & Kept” in Inter Regular with +15 tracking.
+- `PHOTO-20/talk-card-r003/A020` “Speaker talk card - Made & Kept - Six people, one hand” (talk-card-r003.pdf) sets the date “2026-03-03” in Inter Regular with +15 tracking.
+- `PHOTO-20/talk-card-r003/A021` “Speaker talk card - Made & Kept - Six people, one hand” (talk-card-r003.pdf) sets the format “Keynote” in Inter Regular with +15 tracking.
+- `PHOTO-20/talk-card-r004/A018` “Speaker talk card - Fjordworks Summit - On staying small on purpose” (talk-card-r004.pdf) sets the talk title “On staying small on purpose” in Inter Medium with -5 tracking.
+- `PHOTO-20/talk-card-r004/A019` “Speaker talk card - Fjordworks Summit - On staying small on purpose” (talk-card-r004.pdf) sets the event name “Fjordworks Summit” in Inter Regular with +15 tracking.
+- `PHOTO-20/talk-card-r004/A020` “Speaker talk card - Fjordworks Summit - On staying small on purpose” (talk-card-r004.pdf) sets the date “21/03/26” in Inter Regular with +15 tracking.
+- `PHOTO-20/talk-card-r004/A021` “Speaker talk card - Fjordworks Summit - On staying small on purpose” (talk-card-r004.pdf) sets the format “Panel” in Inter Regular with +15 tracking.
+- `PHOTO-20/talk-card-r005/A018` “Speaker talk card - Fjordworks Summit - The room after the round” (talk-card-r005.pdf) sets the talk title “The room after the round” in Inter Medium with -5 tracking.
+- `PHOTO-20/talk-card-r005/A019` “Speaker talk card - Fjordworks Summit - The room after the round” (talk-card-r005.pdf) sets the event name “Fjordworks Summit” in Inter Regular with +15 tracking.
+- `PHOTO-20/talk-card-r005/A020` “Speaker talk card - Fjordworks Summit - The room after the round” (talk-card-r005.pdf) sets the date “21 March 2026” in Inter Regular with +15 tracking.
+- `PHOTO-20/talk-card-r005/A021` “Speaker talk card - Fjordworks Summit - The room after the round” (talk-card-r005.pdf) sets the format “Fireside” in Inter Regular with +15 tracking.
+- `PHOTO-20/talk-card-r006/A018` “Speaker talk card - Halden Design Days - From sketch to tooling” (talk-card-r006.pdf) sets the talk title “From sketch to tooling” in Inter Medium with -5 tracking.
+- `PHOTO-20/talk-card-r006/A019` “Speaker talk card - Halden Design Days - From sketch to tooling” (talk-card-r006.pdf) sets the event name “Halden Design Days” in Inter Regular with +15 tracking.
+- `PHOTO-20/talk-card-r006/A020` “Speaker talk card - Halden Design Days - From sketch to tooling” (talk-card-r006.pdf) sets the date “4 April 2026” in Inter Regular with +15 tracking.
+- `PHOTO-20/talk-card-r006/A021` “Speaker talk card - Halden Design Days - From sketch to tooling” (talk-card-r006.pdf) sets the format “Workshop” in Inter Regular with +15 tracking.
+- `PHOTO-20/talk-card-r007/A018` “Speaker talk card - The Bench Sessions - Designing for the next hands” (talk-card-r007.pdf) sets the talk title “Designing for the next hands” in Inter Medium with -5 tracking.
+- `PHOTO-20/talk-card-r007/A019` “Speaker talk card - The Bench Sessions - Designing for the next hands” (talk-card-r007.pdf) sets the event name “The Bench Sessions” in Inter Regular with +15 tracking.
+- `PHOTO-20/talk-card-r007/A020` “Speaker talk card - The Bench Sessions - Designing for the next hands” (talk-card-r007.pdf) sets the date “Apr 30” in Inter Regular with +15 tracking.
+- `PHOTO-20/talk-card-r007/A021` “Speaker talk card - The Bench Sessions - Designing for the next hands” (talk-card-r007.pdf) sets the format “Talk” in Inter Regular with +15 tracking.
+- `PHOTO-20/talk-card-r008/A018` “Speaker talk card - Continuum Product Days - What survives contact with a factory” (talk-card-r008.pdf) sets the talk title “What survives contact with a factory” in Inter Medium with -5 tracking.
+- `PHOTO-20/talk-card-r008/A019` “Speaker talk card - Continuum Product Days - What survives contact with a factory” (talk-card-r008.pdf) sets the event name “Continuum Product Days” in Inter Regular with +15 tracking.
+- `PHOTO-20/talk-card-r008/A020` “Speaker talk card - Continuum Product Days - What survives contact with a factory” (talk-card-r008.pdf) sets the date “May 9” in Inter Regular with +15 tracking.
+- `PHOTO-20/talk-card-r008/A021` “Speaker talk card - Continuum Product Days - What survives contact with a factory” (talk-card-r008.pdf) sets the format “Keynote” in Inter Regular with +15 tracking.
+- `PHOTO-20/talk-card-r009/A018` “Speaker talk card - Grain & Frame Forum - What a small studio can promise” (talk-card-r009.pdf) sets the talk title “What a small studio can promise” in Inter Medium with -5 tracking.
+- `PHOTO-20/talk-card-r009/A019` “Speaker talk card - Grain & Frame Forum - What a small studio can promise” (talk-card-r009.pdf) sets the event name “Grain & Frame Forum” in Inter Regular with +15 tracking.
+- `PHOTO-20/talk-card-r009/A020` “Speaker talk card - Grain & Frame Forum - What a small studio can promise” (talk-card-r009.pdf) sets the date “2026-05-22” in Inter Regular with +15 tracking.
+- `PHOTO-20/talk-card-r009/A021` “Speaker talk card - Grain & Frame Forum - What a small studio can promise” (talk-card-r009.pdf) sets the format “Keynote” in Inter Regular with +15 tracking.
 
 ## Human verifiers
 
 - `PHOTO-20/speaker-onepager/H001` The biography on “Speaker booking one-pager” (speaker-onepager.pdf) says she co-founded and runs Vellacourt & Sund, a six-person industrial design studio.
-- `PHOTO-20/speaker-onepager/H002` The talk offer on “Speaker booking one-pager” (speaker-onepager.pdf) gives all three talks in vellacourt_bio_copy.txt: “Designing the thing before the deck”, “Six people, one hand” and “What survives contact with a factory”.
 - `PHOTO-20/speaker-onepager/H003` At full export size, the booking contact on “Speaker booking one-pager” (speaker-onepager.pdf) is fully visible, with no letters cut off at an edge.
 - `PHOTO-20/event-announcement-r002/H001` The event name “Northlight Design Forum” on “Confirmed-talk speaker announcement - Northlight Design Forum - Designing the thing before the deck” (event-announcement-r002.png) is fully visible, not cropped at any edge.
 - `PHOTO-20/event-announcement-r002/H003` The speaker name “Astrid Vellacourt” appears on “Confirmed-talk speaker announcement - Northlight Design Forum - Designing the thing before the deck” (event-announcement-r002.png).
@@ -328,7 +377,7 @@ Revised input pack. Previous execution results are historical, not current ratin
 - `PHOTO-20/talk-card-r003/H002` The event name “Made & Kept” sits fully inside “Speaker talk card - Made & Kept - Six people, one hand” (talk-card-r003.pdf), with no letters cut off.
 - `PHOTO-20/talk-card-r003/H003` The speaker name “Astrid Vellacourt” appears on “Speaker talk card - Made & Kept - Six people, one hand” (talk-card-r003.pdf).
 - `PHOTO-20/talk-card-r003/H004` The AV monogram on “Speaker talk card - Made & Kept - Six people, one hand” (talk-card-r003.pdf) is narrower than her name “Astrid Vellacourt” set beneath it.
-- `PHOTO-20/talk-card-r003/H005` The talk title, event and date on “Speaker talk card - Made & Kept - Six people, one hand” (talk-card-r003.pdf) sit together in one text block below the portrait.
+- `PHOTO-20/talk-card-r003/H005` The talk title, event and date on “Speaker talk card - Made & Kept - Six people, one hand” (talk-card-r003.pdf) sit together in one text block.
 - `PHOTO-20/talk-card-r003/H006` Apart from the monogram and her name, the talk title is the largest text on “Speaker talk card - Made & Kept - Six people, one hand” (talk-card-r003.pdf).
 - `PHOTO-20/talk-card-r003/H007` Her name “Astrid Vellacourt” on “Speaker talk card - Made & Kept - Six people, one hand” (talk-card-r003.pdf) is set larger than the date “2026-03-03”.
 - `PHOTO-20/talk-card-r003/H008` No social handle, follower count or platform icon appears on “Speaker talk card - Made & Kept - Six people, one hand” (talk-card-r003.pdf).
@@ -362,7 +411,7 @@ Revised input pack. Previous execution results are historical, not current ratin
 - `PHOTO-20/talk-card-r004/H002` The event name “Fjordworks Summit” sits fully inside “Speaker talk card - Fjordworks Summit - On staying small on purpose” (talk-card-r004.pdf), with no letters cut off.
 - `PHOTO-20/talk-card-r004/H003` The speaker name “Astrid Vellacourt” appears on “Speaker talk card - Fjordworks Summit - On staying small on purpose” (talk-card-r004.pdf).
 - `PHOTO-20/talk-card-r004/H004` The AV monogram on “Speaker talk card - Fjordworks Summit - On staying small on purpose” (talk-card-r004.pdf) is narrower than her name “Astrid Vellacourt” set beneath it.
-- `PHOTO-20/talk-card-r004/H005` The talk title, event and date on “Speaker talk card - Fjordworks Summit - On staying small on purpose” (talk-card-r004.pdf) sit together in one text block below the portrait.
+- `PHOTO-20/talk-card-r004/H005` The talk title, event and date on “Speaker talk card - Fjordworks Summit - On staying small on purpose” (talk-card-r004.pdf) sit together in one text block.
 - `PHOTO-20/talk-card-r004/H006` Apart from the monogram and her name, the talk title is the largest text on “Speaker talk card - Fjordworks Summit - On staying small on purpose” (talk-card-r004.pdf).
 - `PHOTO-20/talk-card-r004/H007` Her name “Astrid Vellacourt” on “Speaker talk card - Fjordworks Summit - On staying small on purpose” (talk-card-r004.pdf) is set larger than the date “21/03/26”.
 - `PHOTO-20/talk-card-r004/H008` No social handle, follower count or platform icon appears on “Speaker talk card - Fjordworks Summit - On staying small on purpose” (talk-card-r004.pdf).
@@ -396,7 +445,7 @@ Revised input pack. Previous execution results are historical, not current ratin
 - `PHOTO-20/talk-card-r005/H002` The event name “Fjordworks Summit” sits fully inside “Speaker talk card - Fjordworks Summit - The room after the round” (talk-card-r005.pdf), with no letters cut off.
 - `PHOTO-20/talk-card-r005/H003` The speaker name “Astrid Vellacourt” appears on “Speaker talk card - Fjordworks Summit - The room after the round” (talk-card-r005.pdf).
 - `PHOTO-20/talk-card-r005/H004` The AV monogram on “Speaker talk card - Fjordworks Summit - The room after the round” (talk-card-r005.pdf) is narrower than her name “Astrid Vellacourt” set beneath it.
-- `PHOTO-20/talk-card-r005/H005` The talk title, event and date on “Speaker talk card - Fjordworks Summit - The room after the round” (talk-card-r005.pdf) sit together in one text block below the portrait.
+- `PHOTO-20/talk-card-r005/H005` The talk title, event and date on “Speaker talk card - Fjordworks Summit - The room after the round” (talk-card-r005.pdf) sit together in one text block.
 - `PHOTO-20/talk-card-r005/H006` Apart from the monogram and her name, the talk title is the largest text on “Speaker talk card - Fjordworks Summit - The room after the round” (talk-card-r005.pdf).
 - `PHOTO-20/talk-card-r005/H007` Her name “Astrid Vellacourt” on “Speaker talk card - Fjordworks Summit - The room after the round” (talk-card-r005.pdf) is set larger than the date “21 March 2026”.
 - `PHOTO-20/talk-card-r005/H008` No social handle, follower count or platform icon appears on “Speaker talk card - Fjordworks Summit - The room after the round” (talk-card-r005.pdf).
@@ -466,7 +515,7 @@ Revised input pack. Previous execution results are historical, not current ratin
 - `PHOTO-20/talk-card-r008/H002` The event name “Continuum Product Days” sits fully inside “Speaker talk card - Continuum Product Days - What survives contact with a factory” (talk-card-r008.pdf), with no letters cut off.
 - `PHOTO-20/talk-card-r008/H003` The speaker name “Astrid Vellacourt” appears on “Speaker talk card - Continuum Product Days - What survives contact with a factory” (talk-card-r008.pdf).
 - `PHOTO-20/talk-card-r008/H004` The AV monogram on “Speaker talk card - Continuum Product Days - What survives contact with a factory” (talk-card-r008.pdf) is narrower than her name “Astrid Vellacourt” set beneath it.
-- `PHOTO-20/talk-card-r008/H005` The talk title, event and date on “Speaker talk card - Continuum Product Days - What survives contact with a factory” (talk-card-r008.pdf) sit together in one text block below the portrait.
+- `PHOTO-20/talk-card-r008/H005` The talk title, event and date on “Speaker talk card - Continuum Product Days - What survives contact with a factory” (talk-card-r008.pdf) sit together in one text block.
 - `PHOTO-20/talk-card-r008/H006` Apart from the monogram and her name, the talk title is the largest text on “Speaker talk card - Continuum Product Days - What survives contact with a factory” (talk-card-r008.pdf).
 - `PHOTO-20/talk-card-r008/H007` Her name “Astrid Vellacourt” on “Speaker talk card - Continuum Product Days - What survives contact with a factory” (talk-card-r008.pdf) is set larger than the date “May 9”.
 - `PHOTO-20/talk-card-r008/H008` No social handle, follower count or platform icon appears on “Speaker talk card - Continuum Product Days - What survives contact with a factory” (talk-card-r008.pdf).
@@ -500,7 +549,7 @@ Revised input pack. Previous execution results are historical, not current ratin
 - `PHOTO-20/talk-card-r009/H002` The event name “Grain & Frame Forum” sits fully inside “Speaker talk card - Grain & Frame Forum - What a small studio can promise” (talk-card-r009.pdf), with no letters cut off.
 - `PHOTO-20/talk-card-r009/H003` The speaker name “Astrid Vellacourt” appears on “Speaker talk card - Grain & Frame Forum - What a small studio can promise” (talk-card-r009.pdf).
 - `PHOTO-20/talk-card-r009/H004` The AV monogram on “Speaker talk card - Grain & Frame Forum - What a small studio can promise” (talk-card-r009.pdf) is narrower than her name “Astrid Vellacourt” set beneath it.
-- `PHOTO-20/talk-card-r009/H005` The talk title, event and date on “Speaker talk card - Grain & Frame Forum - What a small studio can promise” (talk-card-r009.pdf) sit together in one text block below the portrait.
+- `PHOTO-20/talk-card-r009/H005` The talk title, event and date on “Speaker talk card - Grain & Frame Forum - What a small studio can promise” (talk-card-r009.pdf) sit together in one text block.
 - `PHOTO-20/talk-card-r009/H006` Apart from the monogram and her name, the talk title is the largest text on “Speaker talk card - Grain & Frame Forum - What a small studio can promise” (talk-card-r009.pdf).
 - `PHOTO-20/talk-card-r009/H007` Her name “Astrid Vellacourt” on “Speaker talk card - Grain & Frame Forum - What a small studio can promise” (talk-card-r009.pdf) is set larger than the date “2026-05-22”.
 - `PHOTO-20/talk-card-r009/H008` No social handle, follower count or platform icon appears on “Speaker talk card - Grain & Frame Forum - What a small studio can promise” (talk-card-r009.pdf).
@@ -567,7 +616,7 @@ Revised input pack. Previous execution results are historical, not current ratin
 - `PHOTO-20/event-announcement-r003/H037` On “Confirmed-talk speaker announcement - Made & Kept - Six people, one hand” (event-announcement-r003.png), Ochre #B98A4B appears only in the AV monogram, never in type, rules, grounds or panels.
 - `PHOTO-20/event-announcement-r003/H038` All type, grounds and panels on “Confirmed-talk speaker announcement - Made & Kept - Six people, one hand” (event-announcement-r003.png) are solid colour, with no transparency or gradient.
 - `PHOTO-20/event-announcement-r003/H039` No gold foil, metallic, gloss, bevel, glow or drop shadow appears on the monogram, type, rules or panels of “Confirmed-talk speaker announcement - Made & Kept - Six people, one hand” (event-announcement-r003.png).
-- `PHOTO-20/talk-card-r006/H003` The talk title, event and date on “Speaker talk card - Halden Design Days - From sketch to tooling” (talk-card-r006.pdf) sit together in one text block below the portrait.
+- `PHOTO-20/talk-card-r006/H003` The talk title, event and date on “Speaker talk card - Halden Design Days - From sketch to tooling” (talk-card-r006.pdf) sit together in one text block.
 - `PHOTO-20/talk-card-r006/H004` The event name, date and format on “Speaker talk card - Halden Design Days - From sketch to tooling” (talk-card-r006.pdf) are Inter Regular, not Helvetica Neue.
 - `PHOTO-20/talk-card-r006/H005` Apart from the monogram and her name, the talk title is the largest text on “Speaker talk card - Halden Design Days - From sketch to tooling” (talk-card-r006.pdf).
 - `PHOTO-20/talk-card-r006/H006` The speaker name “Astrid Vellacourt” appears on “Speaker talk card - Halden Design Days - From sketch to tooling” (talk-card-r006.pdf).
@@ -666,7 +715,7 @@ Revised input pack. Previous execution results are historical, not current ratin
 - `PHOTO-20/speaker-onepager/H008` No social handle, follower count or platform icon appears on “Speaker booking one-pager” (speaker-onepager.pdf).
 - `PHOTO-20/speaker-onepager/H009` The biography on “Speaker booking one-pager” (speaker-onepager.pdf) says she works on physical products from first sketch to production.
 - `PHOTO-20/speaker-onepager/H010` The biography on “Speaker booking one-pager” (speaker-onepager.pdf) adds no client, award, credential, figure or claim that vellacourt_bio_copy.txt does not give.
-- `PHOTO-20/speaker-onepager/H011` Each talk title on “Speaker booking one-pager” (speaker-onepager.pdf) is followed by its own one-line subject, word for word as in vellacourt_bio_copy.txt.
+- `PHOTO-20/speaker-onepager/H011` On “Speaker booking one-pager” (speaker-onepager.pdf), the talk “Designing the thing before the deck” is followed by its subject “on building product before pitch”, word for word.
 - `PHOTO-20/speaker-onepager/H012` The three talks on “Speaker booking one-pager” (speaker-onepager.pdf) are grouped in one talk-offer block.
 - `PHOTO-20/speaker-onepager/H013` The AV monogram on “Speaker booking one-pager” (speaker-onepager.pdf) is clean artwork, with no paper texture, raking-light shadow or wood grain.
 - `PHOTO-20/speaker-onepager/H014` The AV monogram on “Speaker booking one-pager” (speaker-onepager.pdf) is narrower than her name “Astrid Vellacourt” set beneath it.
@@ -693,7 +742,7 @@ Revised input pack. Previous execution results are historical, not current ratin
 - `PHOTO-20/speaker-onepager/H035` No gold foil, metallic, gloss, bevel, glow or drop shadow appears on the monogram, type, rules or panels of “Speaker booking one-pager” (speaker-onepager.pdf).
 - `PHOTO-20/talk-card-r002/H004` The AV monogram on “Speaker talk card - Northlight Design Forum - Designing the thing before the deck” (talk-card-r002.pdf) is narrower than her name “Astrid Vellacourt” set beneath it.
 - `PHOTO-20/talk-card-r002/H005` The speaker name “Astrid Vellacourt” appears on “Speaker talk card - Northlight Design Forum - Designing the thing before the deck” (talk-card-r002.pdf).
-- `PHOTO-20/talk-card-r002/H006` The talk title, event and date on “Speaker talk card - Northlight Design Forum - Designing the thing before the deck” (talk-card-r002.pdf) sit together in one text block below the portrait.
+- `PHOTO-20/talk-card-r002/H006` The talk title, event and date on “Speaker talk card - Northlight Design Forum - Designing the thing before the deck” (talk-card-r002.pdf) sit together in one text block.
 - `PHOTO-20/talk-card-r002/H007` Apart from the monogram and her name, the talk title is the largest text on “Speaker talk card - Northlight Design Forum - Designing the thing before the deck” (talk-card-r002.pdf).
 - `PHOTO-20/talk-card-r002/H008` Her name “Astrid Vellacourt” on “Speaker talk card - Northlight Design Forum - Designing the thing before the deck” (talk-card-r002.pdf) is set larger than the date “14 Feb 2026”.
 - `PHOTO-20/talk-card-r002/H009` No social handle, follower count or platform icon appears on “Speaker talk card - Northlight Design Forum - Designing the thing before the deck” (talk-card-r002.pdf).
@@ -824,3 +873,33 @@ Revised input pack. Previous execution results are historical, not current ratin
 - `PHOTO-20/talk-card-r009/H056` The portrait on “Speaker talk card - Grain & Frame Forum - What a small studio can promise” (talk-card-r009.pdf) keeps the warm colour balance of vellacourt_session_01.jpg, with no cooler, bluer or greyer cast.
 - `PHOTO-20/talk-card-r007/H055` If vellacourt_workshop_snap.jpg appears on “Speaker talk card - The Bench Sessions - Designing for the next hands” (talk-card-r007.pdf), it shows no blur, softness or blocky pixels from being enlarged, viewed at 100% zoom.
 - `PHOTO-20/speaker-onepager/H055` No image, panel or text covers any part of the talk offer on “Speaker booking one-pager” (speaker-onepager.pdf).
+- `PHOTO-20/event-announcement-r002/H059` The AV monogram on “Confirmed-talk speaker announcement - Northlight Design Forum - Designing the thing before the deck” (event-announcement-r002.png) is at least 69 px wide.
+- `PHOTO-20/event-announcement-r003/H059` The AV monogram on “Confirmed-talk speaker announcement - Made & Kept - Six people, one hand” (event-announcement-r003.png) is at least 69 px wide.
+- `PHOTO-20/event-announcement-r008/H059` The AV monogram on “Confirmed-talk speaker announcement - Continuum Product Days - What survives contact with a factory” (event-announcement-r008.png) is at least 69 px wide.
+- `PHOTO-20/event-banner-r002/H056` The AV monogram on “Confirmed-talk speaker banner - Northlight Design Forum - Designing the thing before the deck” (event-banner-r002.png) is at least 69 px wide.
+- `PHOTO-20/event-banner-r003/H056` The AV monogram on “Confirmed-talk speaker banner - Made & Kept - Six people, one hand” (event-banner-r003.png) is at least 69 px wide.
+- `PHOTO-20/event-banner-r008/H056` The AV monogram on “Confirmed-talk speaker banner - Continuum Product Days - What survives contact with a factory” (event-banner-r008.png) is at least 69 px wide.
+- `PHOTO-20/speaker-onepager/H056` If an event or date line sits on Warm Neutral or Bone on “Speaker booking one-pager” (speaker-onepager.pdf), it is Vellacourt Ink #262524 or Studio Slate #4C5560.
+- `PHOTO-20/event-announcement-r002/H060` Every name, claim, credential and contact detail on “Confirmed-talk speaker announcement - Northlight Design Forum - Designing the thing before the deck” (event-announcement-r002.png) comes from vellacourt_bio_copy.txt or vellacourt_talks.csv.
+- `PHOTO-20/event-announcement-r003/H060` Every name, claim, credential and contact detail on “Confirmed-talk speaker announcement - Made & Kept - Six people, one hand” (event-announcement-r003.png) comes from vellacourt_bio_copy.txt or vellacourt_talks.csv.
+- `PHOTO-20/event-announcement-r008/H060` Every name, claim, credential and contact detail on “Confirmed-talk speaker announcement - Continuum Product Days - What survives contact with a factory” (event-announcement-r008.png) comes from vellacourt_bio_copy.txt or vellacourt_talks.csv.
+- `PHOTO-20/event-banner-r002/H057` Every name, claim, credential and contact detail on “Confirmed-talk speaker banner - Northlight Design Forum - Designing the thing before the deck” (event-banner-r002.png) comes from vellacourt_bio_copy.txt or vellacourt_talks.csv.
+- `PHOTO-20/event-banner-r003/H057` Every name, claim, credential and contact detail on “Confirmed-talk speaker banner - Made & Kept - Six people, one hand” (event-banner-r003.png) comes from vellacourt_bio_copy.txt or vellacourt_talks.csv.
+- `PHOTO-20/event-banner-r008/H057` Every name, claim, credential and contact detail on “Confirmed-talk speaker banner - Continuum Product Days - What survives contact with a factory” (event-banner-r008.png) comes from vellacourt_bio_copy.txt or vellacourt_talks.csv.
+- `PHOTO-20/talk-card-r002/H057` Every name, claim, credential and contact detail on “Speaker talk card - Northlight Design Forum - Designing the thing before the deck” (talk-card-r002.pdf) comes from vellacourt_bio_copy.txt or vellacourt_talks.csv.
+- `PHOTO-20/talk-card-r003/H056` Every name, claim, credential and contact detail on “Speaker talk card - Made & Kept - Six people, one hand” (talk-card-r003.pdf) comes from vellacourt_bio_copy.txt or vellacourt_talks.csv.
+- `PHOTO-20/talk-card-r004/H056` Every name, claim, credential and contact detail on “Speaker talk card - Fjordworks Summit - On staying small on purpose” (talk-card-r004.pdf) comes from vellacourt_bio_copy.txt or vellacourt_talks.csv.
+- `PHOTO-20/talk-card-r005/H056` Every name, claim, credential and contact detail on “Speaker talk card - Fjordworks Summit - The room after the round” (talk-card-r005.pdf) comes from vellacourt_bio_copy.txt or vellacourt_talks.csv.
+- `PHOTO-20/talk-card-r006/H057` Every name, claim, credential and contact detail on “Speaker talk card - Halden Design Days - From sketch to tooling” (talk-card-r006.pdf) comes from vellacourt_bio_copy.txt or vellacourt_talks.csv.
+- `PHOTO-20/talk-card-r007/H056` Every name, claim, credential and contact detail on “Speaker talk card - The Bench Sessions - Designing for the next hands” (talk-card-r007.pdf) comes from vellacourt_bio_copy.txt or vellacourt_talks.csv.
+- `PHOTO-20/talk-card-r008/H056` Every name, claim, credential and contact detail on “Speaker talk card - Continuum Product Days - What survives contact with a factory” (talk-card-r008.pdf) comes from vellacourt_bio_copy.txt or vellacourt_talks.csv.
+- `PHOTO-20/talk-card-r009/H057` Every name, claim, credential and contact detail on “Speaker talk card - Grain & Frame Forum - What a small studio can promise” (talk-card-r009.pdf) comes from vellacourt_bio_copy.txt or vellacourt_talks.csv.
+- `PHOTO-20/speaker-onepager/H057` On “Speaker booking one-pager” (speaker-onepager.pdf), the talk “Six people, one hand” is followed by its subject “on keeping a small studio's craft as it grows”, word for word.
+- `PHOTO-20/speaker-onepager/H058` On “Speaker booking one-pager” (speaker-onepager.pdf), the talk “What survives contact with a factory” is followed by its subject “on designing for real manufacturing”, word for word.
+- `PHOTO-20/talk-card-r002/H058` The text block with the talk title, event and date on “Speaker talk card - Northlight Design Forum - Designing the thing before the deck” (talk-card-r002.pdf) sits below the portrait.
+- `PHOTO-20/talk-card-r003/H057` The text block with the talk title, event and date on “Speaker talk card - Made & Kept - Six people, one hand” (talk-card-r003.pdf) sits below the portrait.
+- `PHOTO-20/talk-card-r004/H057` The text block with the talk title, event and date on “Speaker talk card - Fjordworks Summit - On staying small on purpose” (talk-card-r004.pdf) sits below the portrait.
+- `PHOTO-20/talk-card-r005/H057` The text block with the talk title, event and date on “Speaker talk card - Fjordworks Summit - The room after the round” (talk-card-r005.pdf) sits below the portrait.
+- `PHOTO-20/talk-card-r006/H058` The text block with the talk title, event and date on “Speaker talk card - Halden Design Days - From sketch to tooling” (talk-card-r006.pdf) sits below the portrait.
+- `PHOTO-20/talk-card-r008/H057` The text block with the talk title, event and date on “Speaker talk card - Continuum Product Days - What survives contact with a factory” (talk-card-r008.pdf) sits below the portrait.
+- `PHOTO-20/talk-card-r009/H058` The text block with the talk title, event and date on “Speaker talk card - Grain & Frame Forum - What a small studio can promise” (talk-card-r009.pdf) sits below the portrait.
