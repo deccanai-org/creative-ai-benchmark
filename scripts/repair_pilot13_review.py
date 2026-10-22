@@ -22,9 +22,9 @@ def repair():
                 profile = next(a for a in spec['assets'] if a['filename'] == 'PSOcoated_v3.icc')
                 c['assertion']['profile_sha256'] = profile['sha256']
         for c in spec['verifiers_human']:
-            if not c.get('method'):
-                # Photo colour-fidelity comparisons are visual, not exact palette samples.
-                exact_colour = re.search(r'#[0-9A-Fa-f]{6}', c['check']) and 'shifted toward' not in c['check']
+            # Photo colour-fidelity comparisons are visual, not exact palette samples.
+            exact_colour = re.search(r'#[0-9A-Fa-f]{6}', c['check']) and 'shifted toward' not in c['check']
+            if not c.get('method') or (c['method'] == 'look' and exact_colour):
                 c['method'] = 'measure' if exact_colour else 'look'
                 c['method_note'] = COLOUR_NOTE if exact_colour else LOOK_NOTE
             if c['method'] == 'look' and not c.get('method_note'):

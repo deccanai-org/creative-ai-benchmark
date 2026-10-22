@@ -15,7 +15,7 @@ This supersedes the open issues and current-export references in the Round 2 rec
 ## Human checking guidance
 
 - All 6,177 human checks have `method` and `method_note`. The 513 omitted labels are repaired; exact palette-colour
-  checks among them are Measure, not Look. Totals: 5,136 Look, 938 Measure, 103 Estimate.
+  checks across all 13 tasks are Measure, not Look. Totals: 4,646 Look, 1,428 Measure, 103 Estimate.
 - Main V7 Human tab displays the method and instructions under the condition. Coverage checklists display both too.
   The Sheet questions show Look labels and explicit Measure/Estimate guidance. Auto checks remain separate.
 - Patch tooling initializes newly added human checks, and regressions require metadata on every canonical human check.

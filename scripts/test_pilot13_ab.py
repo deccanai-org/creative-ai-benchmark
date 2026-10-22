@@ -61,6 +61,8 @@ class AbFixTests(unittest.TestCase):
             for c in spec['verifiers_human']:
                 self.assertIn(c.get('method'), ('look', 'measure', 'estimate'), c['check_id'])
                 self.assertTrue(c.get('method_note'), c['check_id'])
+                if re.search(r'#[0-9A-Fa-f]{6}',c['check']) and 'shifted toward' not in c['check']:
+                    self.assertNotEqual(c['method'],'look',c['check_id'])
 
     def test_typography_prose_matches_current_scale(self):
         spec=json.loads((TASKS/'LAYOUT-12'/'TASK_SPEC.json').read_text())
