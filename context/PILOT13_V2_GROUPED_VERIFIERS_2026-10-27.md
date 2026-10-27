@@ -30,8 +30,14 @@ live Google Sheet are unchanged.
   always in the rule text, never hidden in a row.
 - If one varying value decides all the others (MOTION-11: text colour by ground colour), the rule is split so each
   part reads as a plain sentence.
-- Rules are ordered by scoring dimension. K2_Q3 brand-system rules are split by what they name: a palette colour or
-  hex, else a typeface or type setting, else other brand rules. Badges: Look / Measure, Critical, Only if present.
+- Verifier pages use the V7 Human verifiers layout: K1 · Instruction adherence, K2 · Asset utilization and fidelity,
+  K5 · Communication effectiveness, each K question with its label, question text and rules, or the V7 note when
+  automatic checks answer it (same AUTO2K mapping as the V7 page; the K catalog is read from `docs/gatsby-v7/index.html`).
+  Inside K2 Q3 · Brand-system compliance, rules are split by what they name: a palette colour or hex, else a typeface
+  or type setting, else other brand rules. Badges: K question, Look / Measure, Critical, Only if present.
+- Each verifier page opens with "How to read a rule": three steps and two worked examples from that task (a rule, one
+  of its rows, and the sentence they make).
+- PHOTO-28 and VECTOR-04 have no K5 Q1 (primary-message recovery) human check in their specs; the page says so, as V7 does.
 
 ## Numbers
 

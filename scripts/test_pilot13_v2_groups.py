@@ -5,13 +5,14 @@ Grouping must lose nothing: every human check appears in exactly one rule row, e
 method note word for word, and checks only share a rule when method, scoring dimension and answer match.
 """
 import csv
+import html
 import json
 import re
 import unittest
 from collections import Counter
 
-from build_v7_annotation_pilot import TASK_IDS, TASKS
-from build_v7_annotation_pilot_v2 import CONDITIONAL, OUT, build_rules, export_rule, fill
+from build_v7_annotation_pilot import ROOT, TASK_IDS, TASKS
+from build_v7_annotation_pilot_v2 import AUTO2K, CONDITIONAL, OUT, build_rules, export_rule, fill, k_catalog
 
 LOGIC = re.compile(r'(?i)\b(if|any|no|not|never|only|unless|except|without|all|every|each|none|neither|nor)\b')
 
@@ -91,6 +92,25 @@ class GroupedVerifierTests(unittest.TestCase):
                 self.assertEqual(set(listed), ids)
                 self.assertEqual(max(listed.values()), 1)
                 self.assertEqual(sum(1 for r in rules if r['task_id'] == tid), groups['rule_count'])
+
+    def test_pages_keep_the_v7_k_structure(self):
+        v7 = (ROOT / 'docs/gatsby-v7/index.html').read_text(encoding='utf-8')
+        mapping = re.search(r'const AUTO2K=(\{[^}]*\})', v7).group(1)
+        self.assertEqual(dict(re.findall(r"(\w+):'(K\d_Q\d)'", mapping)), AUTO2K)
+        catalog = k_catalog()
+        for tid in TASK_IDS:
+            _, groups = load(tid)
+            page = (OUT / f'{tid}-verifiers.html').read_text(encoding='utf-8')
+            with self.subTest(task=tid):
+                for cap in catalog:
+                    self.assertIn(f'<h2>{html.escape(cap["id"])} · {html.escape(cap["name"])}</h2>', page)
+                starts = {q['id']: page.index(f'<div class="kq" id="{q["id"]}">') for cap in catalog for q in cap['questions']}
+                ordered = sorted(starts.values())
+                for rule in groups['rules']:
+                    at = page.index(f'<article class="rule" id="{rule["rule_id"]}">')
+                    start = starts[rule['k_id']]
+                    end = min([v for v in ordered if v > start], default=len(page))
+                    self.assertTrue(start < at < end, f"{rule['rule_id']} is not under {rule['k_id']}")
 
     def test_no_long_dashes(self):
         # Brief pages reproduce v1, including excerpts of client-supplied files, so only generated pages are checked.

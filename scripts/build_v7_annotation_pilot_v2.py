@@ -38,6 +38,33 @@ TYPE_WORDS = re.compile(r'(?i)\b(?:set in|typefaces?|fonts?|tracking|leading|bas
                         r'\d+(?:\.\d+)?\s?(?:pt|px))\b')
 K_ORDER = ['K1_Q1', 'K1_Q2', 'K1_Q3', 'K1_Q5', 'K2_Q1', 'K2_Q2', 'K2_Q3', 'K2_Q4', 'K5_Q1', 'K5_Q2']
 BRAND_PARTS = {'colour': 'colour', 'type': 'typography', 'other': 'other brand rules'}
+# Which K question each automatic assertion answers: the AUTO2K map of the V7 page (docs/gatsby-v7/index.html).
+AUTO2K = {
+    'file_exists': 'K1_Q4', 'decodable': 'K1_Q2', 'width': 'K1_Q2', 'height': 'K1_Q2', 'long_edge': 'K1_Q2', 'pages': 'K1_Q2',
+    'trim_width_mm': 'K1_Q2', 'trim_height_mm': 'K1_Q2', 'duration_range': 'K1_Q2', 'video_codec': 'K1_Q2',
+    'pixel_format': 'K1_Q2', 'frame_rate': 'K1_Q2', 'pdf_text_contains': 'K1_Q1', 'pdf_page_matches_output': 'K1_Q1',
+    'no_raster_image': 'K1_Q3', 'closed_paths': 'K1_Q3', 'transparent_background': 'K1_Q3', 'audio_stream': 'K1_Q3',
+    'non_silent_audio': 'K1_Q3', 'moving_picture': 'K1_Q3', 'icc_profile': 'K1_Q2', 'pdf_fonts_embedded': 'K1_Q2',
+    'pdf_output_intent': 'K1_Q2', 'pdf_no_cmyk': 'K1_Q2', 'pdf_text_style': 'K2_Q3',
+}
+
+
+def k_catalog() -> list[dict]:
+    """K1, K2 and K5 with their questions, read from the V7 page so both sites use the same wording."""
+    page = (ROOT / 'docs/gatsby-v7/index.html').read_text(encoding='utf-8')
+    catalog, _ = json.JSONDecoder().raw_decode(page, page.index('"kCatalog":') + len('"kCatalog":'))
+    capabilities = {c['id']: c for c in catalog['capabilities']}
+    chosen = [capabilities[k] for k in ('K1', 'K2', 'K5')]
+    missing = set(K_ORDER) - {q['id'] for c in chosen for q in c['questions']}
+    if missing:
+        raise ValueError(f'K questions missing from the V7 catalog: {sorted(missing)}')
+    return chosen
+
+
+def k_short(k_id: str) -> str:
+    """K1_Q1 -> K1 Q1, as the V7 page writes it."""
+    head, *rest = k_id.split('_')
+    return f"{head} {'.'.join(rest)}" if rest else k_id
 
 
 def task_entities(spec: dict) -> list[str]:
@@ -276,7 +303,8 @@ def build_rules(spec: dict) -> list[dict]:
     rules.sort(key=lambda r: (section_key(r), r['_first']))
     for number, rule in enumerate(rules, 1):
         rule['rule_id'] = f'R{number:03d}'
-        rule['section'] = rule['k_label'] + (f": {BRAND_PARTS[rule['brand_part']]}" if rule['brand_part'] else '')
+        rule['section'] = (f"{k_short(rule['k_id'])} · {rule['k_label']}"
+                           + (f": {BRAND_PARTS[rule['brand_part']]}" if rule['brand_part'] else ''))
         del rule['_first']
     return rules
 
@@ -308,6 +336,50 @@ def template_html(segments: list[dict], labels: dict) -> str:
     return ''.join(out)
 
 
+def filled_html(segments: list[dict], row: dict) -> str:
+    """One row's sentence, with the parts that came from the row highlighted."""
+    out = []
+    for s in segments:
+        if 'text' in s:
+            out.append(esc(s['text']))
+        elif 'deliverable' in s:
+            out.append(f'<mark class="mk-d">{esc(row["deliverable_ref"])}</mark>')
+        else:
+            out.append(f'<mark class="mk-n">{esc(row["values"][str(s["slot"])])}</mark>')
+    return ''.join(out)
+
+
+def example_html(rules: list[dict], task_id: str, link: bool = False) -> str:
+    """A worked example from the task's own rules: the rule, one of its rows, and the sentence they make."""
+    with_values = [r for r in rules if len(r['rows']) > 1 and any('slot' in s for s in r['template'])]
+    plain = [r for r in rules if len(r['rows']) > 1 and not any('slot' in s for s in r['template'])]
+    parts = []
+    for rule, intro in ((with_values[0] if with_values else None, 'A rule with numbered boxes'),
+                        (plain[0] if plain else None, 'A rule without numbered boxes: each row is the same sentence about a different file')):
+        if not rule:
+            continue
+        row = rule['rows'][0]
+        values = ' · '.join(f'<span class="ph ph-n">{n}</span> {esc(v)}' for n, v in sorted(row['values'].items(), key=lambda kv: int(kv[0])))
+        name = row['deliverable'].rsplit(' - ', 1)[1] if ' - ' in row['deliverable'] else row['deliverable']
+        rid = f'<a href="{task_id}-verifiers.html#{rule["rule_id"]}">{rule["rule_id"]}</a>' if link else rule['rule_id']
+        parts.append(
+            f'<div class="example"><p class="ex-h">{esc(intro)} ({esc(task_id)} {rid}, first of its {len(rule["rows"])} rows)</p>'
+            f'<p><span>Rule</span><span>{template_html(rule["template"], rule["slot_labels"])}</span></p>'
+            f'<p><span>Row</span><span><strong>{esc(name)}</strong> <code>{esc(row["file"])}</code>'
+            f'{" · " + values if values else ""}</span></p>'
+            f'<p><span>Reads as</span><span>{filled_html(rule["template"], row)}</span></p>'
+            f'<p><span>Answer</span><span>Yes or No for this row. The next row is the same rule for the next file.</span></p></div>')
+    return ''.join(parts)
+
+
+HOW_TO_READ = (
+    '<ol><li><strong>Read the rule once.</strong> It is the same check for every row in its table.</li>'
+    '<li><strong>Each row is one original check on one deliverable.</strong> Read the rule with that row\'s file in place of '
+    '<span class="ph ph-d">deliverable</span>, and that row\'s values in place of the numbered boxes '
+    '<span class="ph ph-n">1</span> <span class="ph ph-n">2</span>.</li>'
+    '<li><strong>Answer Yes or No for each row</strong>, as before. Every row keeps its own check ID.</li></ol>')
+
+
 def reference_html(ref: dict) -> str:
     links = '<br>'.join(f'<a href="{esc(a["url"])}" target="_blank" rel="noopener">{esc(a["filename"])}</a>' for a in ref['assets'])
     if len(ref['assets']) > 2:
@@ -323,7 +395,22 @@ V2_CSS = """
 .tools{position:sticky;top:0;z-index:2;background:#fff;border-bottom:1px solid #dce3df;padding:10px 0;margin:18px 0 6px;display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center;font-size:13px}
 .tools label{display:flex;gap:6px;align-items:center}.tools select,.tools input[type=search]{font:inherit;padding:5px 8px;border:1px solid #c9d3cd;border-radius:5px;max-width:100%}
 .tools input[type=search]{width:min(260px,100%)}#shown{color:#5b6760}
-.ksec{border-top:1px solid #dce3df;margin-top:24px;padding-top:18px}.ksec h2{font-size:18px;margin-bottom:12px}.ksec h2 small{font-weight:400;color:#5b6760;font-size:13px}
+.kcap{margin:26px 0;border:1px solid #dce3df;border-radius:8px;padding:18px 20px}.kcap>h2{margin:0 0 4px;font-size:19px}
+.k-measures{color:#5b6760;font-size:13px;margin:0 0 10px}.k-coverage{color:#5b6760;font-size:13px;margin:6px 0 0}
+.kq{margin:16px 0;padding:12px 14px;border-left:3px solid #1e7059;background:#fafbfa;scroll-margin-top:96px}
+.kq h3{margin:0 0 2px;font-size:15px}.k-qtext{margin:0 0 10px;color:#333}
+.k-count{float:right;color:#5b6760;font-weight:400;font-size:12px}
+.objective{display:inline-block;margin-left:8px;padding:1px 8px;border-radius:10px;background:#f6b26b;color:#4a2c00;font-size:11px;font-weight:700;vertical-align:middle}
+.k-empty{color:#5b6760;font-style:italic;font-size:13px;margin:0}.k-auto{font-size:13px;color:#3f4b45;background:#eef4f0;border-radius:6px;padding:8px 10px}
+.kpart>h4{font-size:13.5px;margin:16px 0 8px;color:#3f4b45}
+.howto{border:1px solid #cfe0d6;background:#f6faf7;border-radius:8px;padding:14px 18px;margin:16px 0 8px;max-width:118ch}
+.howto>h2{font-size:17px;margin:0 0 8px}.howto ol{margin:0 0 6px;padding-left:20px}.howto li{margin:0 0 5px}
+.example{border-top:1px solid #dce3df;padding-top:10px;margin-top:10px;font-size:14px}
+.example p{margin:0 0 6px;display:grid;grid-template-columns:78px minmax(0,1fr);gap:10px}.example p.ex-h{display:block;font-weight:600;color:#3f4b45}
+.example p>span:first-child{font-weight:700;color:#5b6760;font-size:11.5px;text-transform:uppercase;padding-top:3px}
+.example code{font-size:12px;color:#5b6760}
+mark.mk-d{background:#e3efe8;color:#1d5a42;padding:0 2px;border-radius:3px}mark.mk-n{background:#fff0c7;color:#5f4300;padding:0 2px;border-radius:3px}
+.b-k{background:#e3efe8;color:#1d5a42;font-weight:600}
 .rule{border:1px solid #dce3df;border-radius:6px;padding:13px 15px 6px;margin:0 0 12px;background:#fff;scroll-margin-top:96px}
 .rule-head{display:flex;flex-wrap:wrap;gap:6px 8px;align-items:center;font-size:12px;margin-bottom:8px}
 .rid{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-weight:700;color:#202724}
@@ -343,7 +430,7 @@ V2_CSS = """
 body.show-full .full{display:block}
 .summary{border-collapse:collapse;font-size:14px;margin:8px 0 18px}.summary th,.summary td{padding:6px 12px;border-bottom:1px solid #e3e8e4;text-align:left}
 .summary td.n,.summary th.n{text-align:right;font-variant-numeric:tabular-nums}
-.page ul.rules-list li{margin:0 0 6px}
+.page ul.rules-list li{margin:0 0 6px}.scroll-x{overflow-x:auto}
 .tools label{min-width:0;max-width:100%}.tools select{min-width:0;max-width:min(440px,100%)}
 @media(max-width:720px){.rule{padding:12px 12px 4px}.rule-text{font-size:14.5px}
 .tools{position:static}.tools label{width:100%}.tools select,.tools input[type=search]{flex:1;min-width:0;width:auto;max-width:none}
@@ -372,7 +459,12 @@ FILTER_SCRIPT = """
       rule.hidden = !show;
       if (show) { rules++; rows += visible; }
     });
-    document.querySelectorAll('.ksec').forEach(sec => { sec.hidden = !sec.querySelector('.rule:not([hidden])'); });
+    const filtering = Boolean(output || text);
+    document.querySelectorAll('.kpart').forEach(part => { part.hidden = !part.querySelector('.rule:not([hidden])'); });
+    document.querySelectorAll('.kq').forEach(q => {
+      q.hidden = q.querySelector('.rule') ? !q.querySelector('.rule:not([hidden])') : filtering;
+    });
+    document.querySelectorAll('.kcap').forEach(cap => { cap.hidden = !cap.querySelector('.kq:not([hidden])'); });
     shown.textContent = `Showing ${rules} rules and ${rows} checks`;
   }
   pick.addEventListener('change', apply);
@@ -386,7 +478,8 @@ FILTER_SCRIPT = """
 
 def rule_html(rule: dict) -> str:
     labels = rule['slot_labels']
-    badges = [f'<span class="badge {"b-measure" if rule["method"] == "measure" else ""}">{esc(rule["method"].capitalize())}</span>']
+    badges = [f'<span class="badge b-k" title="{esc(rule["k_label"])}">{esc(k_short(rule["k_id"]))}</span>',
+              f'<span class="badge {"b-measure" if rule["method"] == "measure" else ""}">{esc(rule["method"].capitalize())}</span>']
     if rule['critical']:
         badges.append('<span class="badge b-crit">Critical</span>')
     if rule['conditional']:
@@ -434,19 +527,57 @@ def nav(task_id: str, here: str) -> str:
            f'<a href="../index.html#{task_id}/trajectory">Trajectory verifiers</a></p>'
 
 
-def write_verifier_page(task_id: str, spec: dict, rules: list[dict]) -> None:
-    checks = sum(len(r['rows']) for r in rules)
-    sections, current = [], None
+def k_sections(task_id: str, spec: dict, rules: list[dict], catalog: list[dict]) -> tuple[str, str]:
+    """The V7 Human verifiers layout: K1, K2, K5, each question with its rules, or a note when code answers it."""
+    by_question = defaultdict(list)
     for rule in rules:
-        if rule['section'] != current:
-            current = rule['section']
-            sections.append((current, []))
-        sections[-1][1].append(rule)
+        by_question[rule['k_id']].append(rule)
+    covered = auto_covered = total = 0
     blocks = []
-    for title, members in sections:
-        n = sum(len(r['rows']) for r in members)
-        blocks.append(f'<section class="ksec"><h2>{esc(title)} <small>{len(members)} rule{"s" if len(members) != 1 else ""} · '
-                      f'{n} check{"s" if n != 1 else ""}</small></h2>{"".join(rule_html(r) for r in members)}</section>')
+    for cap in catalog:
+        parts = [f'<section class="kcap"><h2>{esc(cap["id"])} · {esc(cap["name"])}</h2>'
+                 f'<p class="k-measures">{esc(cap["measures"])} <em>Scored by {esc(cap["scored_by"])}.</em></p>']
+        for q in cap['questions']:
+            total += 1
+            members = by_question.get(q['id'], [])
+            checks = sum(len(r['rows']) for r in members)
+            count = (f'{len(members)} rule{"s" if len(members) != 1 else ""} · {checks} check{"s" if checks != 1 else ""}'
+                     if members else '')
+            badge = '<span class="objective" title="Objective question">Objective</span>' if q.get('objective') else ''
+            parts.append(f'<div class="kq" id="{esc(q["id"])}"><h3>{esc(k_short(q["id"]))} · {esc(q["label"])}{badge}'
+                         f'<span class="k-count">{count}</span></h3><p class="k-qtext">{esc(q["question"])}</p>')
+            if members:
+                covered += 1
+                if q['id'] == 'K2_Q3':
+                    for part, title in BRAND_PARTS.items():
+                        chosen = [r for r in members if r['brand_part'] == part]
+                        if chosen:
+                            n = sum(len(r['rows']) for r in chosen)
+                            parts.append(f'<div class="kpart"><h4>Brand-system rules: {esc(title)} '
+                                         f'({len(chosen)} rule{"s" if len(chosen) != 1 else ""} · {n} check{"s" if n != 1 else ""})</h4>'
+                                         + ''.join(rule_html(r) for r in chosen) + '</div>')
+                else:
+                    parts.extend(rule_html(r) for r in members)
+            else:
+                auto = [c for c in spec['verifiers_auto'] if AUTO2K.get((c.get('assertion') or {}).get('op')) == q['id']]
+                if auto:
+                    auto_covered += 1
+                    parts.append(f'<div class="k-auto"><strong>Answered by automatic checks.</strong> {len(auto)} automatic '
+                                 f'check{"s" if len(auto) != 1 else ""} on this task answer this question, so annotators do not '
+                                 f'rate it here. They are listed on the <a href="../index.html#{task_id}/auto">Auto verifiers</a> tab.</div>')
+                else:
+                    parts.append('<p class="k-empty">No task-specific verifier for this question on this task.</p>')
+            parts.append('</div>')
+        parts.append('</section>')
+        blocks.append(''.join(parts))
+    coverage = (f'<p class="k-coverage">{covered + auto_covered} of {total} objective rubric questions are answered for this '
+                f'task: {covered} by task-specific human verifiers and {auto_covered} by the automatic layer.</p>')
+    return coverage, ''.join(blocks)
+
+
+def write_verifier_page(task_id: str, spec: dict, rules: list[dict], catalog: list[dict]) -> None:
+    checks = sum(len(r['rows']) for r in rules)
+    coverage, blocks = k_sections(task_id, spec, rules, catalog)
     options = ''.join(f'<option value="{esc(o["output_id"])}">{esc(o["name"])}</option>' for o in spec['deliverables'])
     page = f"""<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
@@ -455,17 +586,18 @@ def write_verifier_page(task_id: str, spec: dict, rules: list[dict]) -> None:
 {nav(task_id, f'{task_id}-verifiers.html')}
 <header><h1>{esc(spec["task_name"])}: human verifiers</h1></header>
 <div class="intro">
-<p><strong>{checks} checks in {len(rules)} rules.</strong> Each rule is written once. Its table has one row for every check it covers: answer each row Yes or No, as before.</p>
-<p><span class="ph ph-d">deliverable</span> stands for the file named in that row. A numbered box stands for the value in that row's column with the same number. Filled in, each row reads word for word as its original check, which keeps its ID and its own answer.</p>
-<p>Rules only group checks that match on wording, checking method, method instructions, scoring dimension and answer. <span class="badge b-cond">Only if present</span> rules apply only when the element appears; <span class="badge b-crit">Critical</span> rules are critical-failure checks.</p>
+<p><strong>{checks} human checks, written as {len(rules)} rules.</strong> The checks and their K questions are the same as on the V7 site; only the layout changed. Checks that say the same thing about different deliverables are written once, as a rule, with one row per check.</p>
 </div>
+<section class="howto" aria-labelledby="howto-title"><h2 id="howto-title">How to read a rule</h2>{HOW_TO_READ}{example_html(rules, task_id)}
+<p class="k-coverage"><span class="badge b-k">K1 Q1</span> is the K question a rule scores. <span class="badge b-cond">Only if present</span>: the rule applies only when that element appears. <span class="badge b-crit">Critical</span>: a critical-failure check. Look or Measure is the checking method, explained under each rule.</p></section>
+{coverage}
 <div class="tools" role="group" aria-label="Filter rules">
 <label>Deliverable <select id="deliverable"><option value="">All {len(spec["deliverables"])} deliverables</option>{options}</select></label>
 <label>Search <input id="query" type="search" placeholder="Words in a rule"></label>
-<label><input id="full" type="checkbox"> Show each row's full original wording</label>
+<label><input id="full" type="checkbox"> Show the full sentence in every row</label>
 <span id="shown" aria-live="polite"></span>
 </div>
-{"".join(blocks)}
+{blocks}
 </main>{FILTER_SCRIPT}<script src="https://cdn.jsdelivr.net/npm/@iframe-resizer/child@5"></script></body></html>
 """
     (OUT / f'{task_id}-verifiers.html').write_text(page, encoding='utf-8')
@@ -499,6 +631,7 @@ def export_rule(task_id: str, rule: dict) -> dict:
 
 
 def write_index(summary: list[tuple[str, dict, list[dict]]]) -> None:
+    example_task, _, example_rules = next(item for item in summary if item[0] == 'PHOTO-19')
     total_checks = sum(len(s['verifiers_human']) for _, s, _ in summary)
     total_rules = sum(len(r) for _, _, r in summary)
     rows = ''.join(
@@ -520,6 +653,10 @@ def write_index(summary: list[tuple[str, dict, list[dict]]]) -> None:
 <h1>Pilot task briefs, v2: grouped human verifiers</h1>
 <div class="intro">
 <p>The same 13 pilot tasks and the same {total_checks} human checks as <a href="../annotation-pilot/index.html">v1</a>. What changed is how the checks are shown: checks that say the same thing about different deliverables are written once, as a rule, with one row per check. {total_checks} checks now read as {total_rules} rules.</p>
+<p>Each task's verifier page keeps the V7 structure: K1 · Instruction adherence, K2 · Asset utilization and fidelity and K5 · Communication effectiveness, each question with its rules under it.</p>
+</div>
+<section class="howto" aria-labelledby="howto-title"><h2 id="howto-title">How to read a rule</h2>{HOW_TO_READ}{example_html(example_rules, example_task, link=True)}</section>
+<div class="intro">
 <p>Nothing was reworded, dropped or merged away:</p>
 <ul>
 <li>Every row keeps its original check ID and is answered Yes or No on its own, so scoring and coverage do not change.</li>
@@ -527,10 +664,10 @@ def write_index(summary: list[tuple[str, dict, list[dict]]]) -> None:
 <li>Filled in, every row reads word for word as its original check. A test confirms this for all {total_checks} checks and that each check appears exactly once.</li>
 <li>Checks share a rule only when they match on wording, checking method (Look or Measure), method instructions, scoring dimension and answer. So "must have" checks never merge with "if it appears" checks, critical-failure checks never merge with ordinary ones, and different measurements stay apart.</li>
 </ul>
-<p>Rules are listed by scoring dimension. Brand-system rules are split by what they name: a palette colour, a typeface or type setting, or neither. Auto checks are unchanged and still run by code. <a href="../annotation-pilot/measurement-guide.html">Measurement guide and scoring policy</a>.</p>
+<p>Under K2 Q3 · Brand-system compliance, rules are split by what they name: a palette colour, a typeface or type setting, or neither. Auto checks are unchanged and still run by code. <a href="../annotation-pilot/measurement-guide.html">Measurement guide and scoring policy</a>.</p>
 </div>
-<table class="summary"><thead><tr><th>Task</th><th>Name</th><th class="n">Deliverables</th><th class="n">Human checks</th><th class="n">Rules</th></tr></thead>
-<tbody>{rows}<tr><td><strong>Total</strong></td><td></td><td class="n">{sum(len(s["deliverables"]) for _, s, _ in summary)}</td><td class="n"><strong>{total_checks}</strong></td><td class="n"><strong>{total_rules}</strong></td></tr></tbody></table>
+<div class="scroll-x"><table class="summary"><thead><tr><th>Task</th><th>Name</th><th class="n">Deliverables</th><th class="n">Human checks</th><th class="n">Rules</th></tr></thead>
+<tbody>{rows}<tr><td><strong>Total</strong></td><td></td><td class="n">{sum(len(s["deliverables"]) for _, s, _ in summary)}</td><td class="n"><strong>{total_checks}</strong></td><td class="n"><strong>{total_rules}</strong></td></tr></tbody></table></div>
 <h2>Tasks</h2><ul class="rules-list">{items}</ul>
 <h2>Downloads</h2>
 <ul class="rules-list">
@@ -547,6 +684,7 @@ def main() -> None:
     (OUT / 'groups').mkdir(exist_ok=True)
     (OUT / 'export').mkdir(exist_ok=True)
     summary = []
+    catalog = k_catalog()
     rule_rows = [['task_id', 'rule_id', 'section', 'k_id', 'method', 'critical', 'only_if_present', 'scope', 'rule',
                   'method_note', 'check_count', 'deliverable_count', 'check_ids']]
     check_rows = [['task_id', 'rule_id', 'check_id', 'output_id', 'deliverable', 'file', 'values', 'check']]
@@ -564,7 +702,7 @@ def main() -> None:
         if set(kept) != set(bank) or max(kept.values()) != 1:
             raise ValueError(f'{task_id}: grouping lost or repeated a check')
         write_brief_page(task_id, spec, assets, outputs)
-        write_verifier_page(task_id, spec, rules)
+        write_verifier_page(task_id, spec, rules, catalog)
         payload = {'task_id': task_id, 'revision': REVISION, 'source': f'docs/gatsby-v7/tasks/{task_id}/TASK_SPEC.json verifiers_human',
                    'check_count': len(kept), 'rule_count': len(rules), 'rules': [export_rule(task_id, r) for r in rules]}
         (OUT / 'groups' / f'{task_id}.json').write_text(json.dumps(payload, ensure_ascii=False, indent=1) + '\n', encoding='utf-8')
