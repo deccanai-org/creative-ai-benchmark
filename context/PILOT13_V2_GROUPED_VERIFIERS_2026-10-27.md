@@ -38,6 +38,16 @@ live Google Sheet are unchanged.
 - Each verifier page opens with "How to read a rule": three steps and two worked examples from that task (a rule, one
   of its rows, and the sentence they make).
 - PHOTO-28 and VECTOR-04 have no K5 Q1 (primary-message recovery) human check in their specs; the page says so, as V7 does.
+- Row layout (after Dhiren's review of PHOTO-06): every row shows its full sentence ("Reads as", on by default), a
+  deliverable-type tag when a rule spans more than one deliverable group, and a **Source** column: a thumbnail of the
+  supplied image the deliverable is made from (or that the row names) plus the row's own reference note, which is where
+  catalogue captions such as "Ada with baby Ruth" live. Reference files and note sentences shared by every row are
+  shown once under the rule. Every value column has a name (source-record field, approved field, file kind, the noun
+  before it, or the value kind). Captions come only from the checks' own reference notes, never from raw data files,
+  which can hold planted traps (PHOTO-04's sheet says sleeps 9).
+- Thumbnails: `docs/gatsby-v7/annotation-pilot-v2/thumbs/<ID>/` (157 files, 1.5 MB, 192 px long edge, made with `sips`
+  from the local asset copies the v1 builder reads; only images a page shows). The repo ignores images, so they are
+  added with `git add -f`.
 
 ## Numbers
 
@@ -67,7 +77,9 @@ checks unique to one deliverable, or worded differently from their nearest sibli
 - Builder: `scripts/build_v7_annotation_pilot_v2.py` (reuses the v1 brief renderer; reads only task files).
 - Tests: `scripts/test_pilot13_v2_groups.py` (every check exactly once; every row rebuilds its check and method note
   exactly; one method, dimension and answer per rule; no logic words in values; published JSON equals a fresh build;
-  pages and CSVs list every check once; no em or en dashes in generated text).
+  pages and CSVs list every check once; each row's "Reads as" line equals its check; shared plus per-row references
+  equal each check's full reference; every value column has a name; thumbnails exist and are supplied assets; K layout
+  and AUTO2K match the V7 page; no em or en dashes in generated text).
 - Output: `docs/gatsby-v7/annotation-pilot-v2/`: `index.html`, `<ID>.html` (brief, same as v1, previews read from
   `../annotation-pilot/previews/`), `<ID>-verifiers.html` (grouped rules, deliverable filter, search, toggle for each
   row's full original wording), `groups/<ID>.json`, `export/grouped_human_rules.csv`,

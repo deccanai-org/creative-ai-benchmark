@@ -9,10 +9,12 @@ import html
 import json
 import re
 import unittest
+from pathlib import Path
 from collections import Counter
 
 from build_v7_annotation_pilot import ROOT, TASK_IDS, TASKS
-from build_v7_annotation_pilot_v2 import AUTO2K, CONDITIONAL, OUT, build_rules, export_rule, fill, k_catalog
+from build_v7_annotation_pilot_v2 import (AUTO2K, CONDITIONAL, OUT, Thumbnails, build_rules, export_rule, fill,
+                                         k_catalog, note_sentences, row_sources, split_reference)
 
 LOGIC = re.compile(r'(?i)\b(if|any|no|not|never|only|unless|except|without|all|every|each|none|neither|nor)\b')
 
@@ -111,6 +113,43 @@ class GroupedVerifierTests(unittest.TestCase):
                     start = starts[rule['k_id']]
                     end = min([v for v in ordered if v > start], default=len(page))
                     self.assertTrue(start < at < end, f"{rule['rule_id']} is not under {rule['k_id']}")
+
+    def test_every_row_shows_its_check_word_for_word(self):
+        for tid in TASK_IDS:
+            spec, _ = load(tid)
+            checks = {c['check_id']: c['check'] for c in spec['verifiers_human']}
+            page = (OUT / f'{tid}-verifiers.html').read_text(encoding='utf-8')
+            rows = re.findall(r'<tbody class="ck" data-output="[^"]*" data-row="([^"]+)">.*?<span class="reads-label">Reads as</span> '
+                              r'(.*?)</td></tr></tbody>', page, re.S)
+            with self.subTest(task=tid):
+                self.assertEqual(sorted(i for i, _ in rows), sorted(checks))
+                for check_id, shown in rows:
+                    self.assertEqual(html.unescape(re.sub(r'<[^>]+>', '', shown)), checks[check_id], check_id)
+
+    def test_references_and_sources_are_complete(self):
+        for tid in TASK_IDS:
+            spec, groups = load(tid)
+            manifest = {a['filename']: a for a in json.loads((TASKS / tid / 'ASSET_MANIFEST.json').read_text(encoding='utf-8'))}
+            ctx = {'assets': manifest, 'thumbs': Thumbnails(tid, manifest),
+                   'outputs': {o['output_id']: o for o in spec['deliverables']}}
+            for rule in groups['rules']:
+                shared_links, shared_notes, own = split_reference(rule['rows'])
+                rule_images, _, _, sources = row_sources(rule, ctx)
+                for row, (links, notes), (images, _, _) in zip(rule['rows'], own, sources):
+                    with self.subTest(task=tid, rule=rule['rule_id'], check=row['check_id']):
+                        full = {a['filename'] for a in row['reference']['assets']}
+                        self.assertEqual({a['filename'] for a in shared_links} | {a['filename'] for a in links}, full)
+                        self.assertEqual(set(shared_notes) | set(notes), set(note_sentences(row['reference']['note'])))
+                        source = ctx['outputs'][row['output_id']].get('source_image')
+                        if source and source in ctx['thumbs']:
+                            self.assertIn(source, images + rule_images)
+                for n, label in rule['slot_labels'].items():
+                    self.assertTrue(label, f"{tid} {rule['rule_id']} column {n} has no name")
+            page = (OUT / f'{tid}-verifiers.html').read_text(encoding='utf-8')
+            for src in set(re.findall(r'src="(thumbs/[^"]+)"', page)):
+                self.assertTrue((OUT / src).is_file(), src)
+                self.assertEqual(src.split('/')[1], tid)
+                self.assertIn(Path(src).name if Path(src).name in manifest else Path(src).name[:-4], manifest)
 
     def test_no_long_dashes(self):
         # Brief pages reproduce v1, including excerpts of client-supplied files, so only generated pages are checked.

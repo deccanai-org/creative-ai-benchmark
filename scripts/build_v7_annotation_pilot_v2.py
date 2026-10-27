@@ -13,11 +13,12 @@ from __future__ import annotations
 import csv
 import json
 import re
+import subprocess
 from collections import Counter, defaultdict
 from pathlib import Path
 
-from build_v7_annotation_pilot import (CSS, DOWNLOAD_SCRIPT, ROOT, TASK_IDS, TASKS, esc, font_css, render_assets,
-                                       render_brand, render_outputs)
+from build_v7_annotation_pilot import (CSS, DOWNLOAD_SCRIPT, REFRESH, ROOT, RUN_SOURCES, TASK_IDS, TASKS, esc,
+                                       font_css, render_assets, render_brand, render_outputs)
 
 OUT = ROOT / 'docs/gatsby-v7/annotation-pilot-v2'
 REVISION = 'pilot13_v2_grouping_2026_10_27'
@@ -37,6 +38,13 @@ TYPE_WORDS = re.compile(r'(?i)\b(?:set in|typefaces?|fonts?|tracking|leading|bas
                         r'small caps|caps|italic|lining|tabular|figures|numerals|line length|point size|'
                         r'\d+(?:\.\d+)?\s?(?:pt|px))\b')
 K_ORDER = ['K1_Q1', 'K1_Q2', 'K1_Q3', 'K1_Q5', 'K2_Q1', 'K2_Q2', 'K2_Q3', 'K2_Q4', 'K5_Q1', 'K5_Q2']
+IMAGE_EXT = ('.jpg', '.jpeg', '.png', '.webp', '.svg')
+SENTENCE = re.compile(r'(?<=[.!?])\s+(?=\S)')
+# A noun right before a value names its column ("row 2", "the word “MAP”").
+LABEL_NOUNS = {'row', 'rows', 'page', 'pages', 'caliber', 'stock', 'line', 'word', 'name', 'price', 'heading', 'capital',
+               'title', 'example', 'year', 'date', 'season', 'time', 'rate', 'tier', 'trim', 'mileage', 'style', 'frame',
+               'frames', 'letter', 'number'}
+KIND_LABELS = {'Q': 'text', 'HEX': 'colour', 'NUM': 'number', 'ENT': 'name', 'CAP': 'name', 'FILE': 'file'}
 BRAND_PARTS = {'colour': 'colour', 'type': 'typography', 'other': 'other brand rules'}
 # Which K question each automatic assertion answers: the AUTO2K map of the V7 page (docs/gatsby-v7/index.html).
 AUTO2K = {
@@ -182,8 +190,9 @@ def unquote(value: str) -> str:
     return value[1:-1] if value.startswith('“') and value.endswith('”') else value
 
 
-def slot_label(rows: list[dict], number: int, segments: list[dict], outputs: dict) -> str:
-    """A column name when the data says what the value is; otherwise just the number."""
+def slot_label(rows: list[dict], number: int, segments: list[dict], outputs: dict, kind: str, files: dict) -> str:
+    """A column name: the source-record field or approved field the value comes from, what kind of file it is,
+    the noun just before it in the rule, or else what kind of value it is."""
     key = str(number)
     record_keys = None
     for row in rows:
@@ -196,12 +205,19 @@ def slot_label(rows: list[dict], number: int, segments: list[dict], outputs: dic
               if row.get('expected_value') is not None and str(row['expected_value']) == unquote(row['values'][key])}
     if len(fields) == 1 and None not in fields and all(row.get('expected_field') for row in rows):
         return fields.pop().replace('_', ' ')
+    values = [unquote(row['values'][key]) for row in rows]
+    if kind == 'FILE':
+        if all(v in files['deliverables'] for v in values):
+            return 'deliverable file'
+        if all(v in files['assets'] for v in values):
+            return 'source image' if all(v.lower().endswith(IMAGE_EXT) for v in values) else 'source file'
     for i, segment in enumerate(segments):
         if segment.get('slot') == number and i and 'text' in segments[i - 1]:
             word = re.search(r'(\w+)\s$', segments[i - 1]['text'])
-            if word and word.group(1).lower() in ('row', 'rows', 'page', 'pages', 'caliber', 'stock'):
-                return word.group(1).lower()
-    return ''
+            if word and word.group(1).lower() in LABEL_NOUNS:
+                noun = word.group(1).lower()
+                return {'rows': 'row', 'pages': 'page', 'frames': 'frame'}.get(noun, noun)
+    return KIND_LABELS[kind]
 
 
 def references_view(check: dict) -> dict:
@@ -255,6 +271,9 @@ def scope_text(output_ids: set, spec: dict) -> str:
 def build_rules(spec: dict) -> list[dict]:
     pattern = task_pattern(task_entities(spec))
     outputs = {o['output_id']: o for o in spec['deliverables']}
+    task_id = spec['verifiers_human'][0]['task_id']
+    manifest = json.loads((TASKS / task_id / 'ASSET_MANIFEST.json').read_text(encoding='utf-8'))
+    files = {'assets': {a['filename'] for a in manifest}, 'deliverables': {Path(o['path']).name for o in spec['deliverables']}}
     order = {o['output_id']: i for i, o in enumerate(spec['deliverables'])}
     grouped: dict[tuple, list[dict]] = defaultdict(list)
     for position, check in enumerate(spec['verifiers_human']):
@@ -287,8 +306,11 @@ def build_rules(spec: dict) -> list[dict]:
                         fill(note_segments, row['values'], row['deliverable_ref']) != m['check']['method_note']:
                     raise ValueError(f"Rule does not rebuild {m['check']['check_id']}")
             first = part[0]['check']
-            labels = {str(n): slot_label(rows, n, segments if n in check_slots.values() else note_segments, outputs)
-                      for n in sorted([*check_slots.values(), *note_slots.values()])}
+            kinds = {n: part[0]['tokens'][p][0] for p, n in check_slots.items()}
+            kinds.update({n: part[0]['note'][p][0] for p, n in note_slots.items()})
+            labels = {str(n): slot_label(rows, n, segments if n in check_slots.values() else note_segments, outputs,
+                                         kinds[n], files)
+                      for n in sorted(kinds)}
             shared = all(r['reference'] == rows[0]['reference'] for r in rows)
             k_part = brand_part([r['check'] for r in rows], spec['brand_identity']) if first['k_id'] == 'K2_Q3' else ''
             rules.append({
@@ -374,10 +396,100 @@ def example_html(rules: list[dict], task_id: str, link: bool = False) -> str:
 
 HOW_TO_READ = (
     '<ol><li><strong>Read the rule once.</strong> It is the same check for every row in its table.</li>'
-    '<li><strong>Each row is one original check on one deliverable.</strong> Read the rule with that row\'s file in place of '
-    '<span class="ph ph-d">deliverable</span>, and that row\'s values in place of the numbered boxes '
-    '<span class="ph ph-n">1</span> <span class="ph ph-n">2</span>.</li>'
-    '<li><strong>Answer Yes or No for each row</strong>, as before. Every row keeps its own check ID.</li></ol>')
+    '<li><strong>Each row is one original check on one deliverable.</strong> Under each row, <em>Reads as</em> gives the rule '
+    'filled in for that row: the row\'s file in place of <span class="ph ph-d">deliverable</span>, and its values in place '
+    'of the numbered boxes <span class="ph ph-n">1</span> <span class="ph ph-n">2</span>.</li>'
+    '<li><strong>Compare the deliverable with its Source</strong>: the supplied image it is made from (click to open it '
+    'full size) and what the client\'s files say about it. Then <strong>answer Yes or No</strong> for that row, as before. '
+    'Every row keeps its own check ID.</li></ol>')
+
+THUMBS = OUT / 'thumbs'
+FILE_NAME = re.compile(rf'[\w-]+(?:\.[\w-]+)*\.{EXT}\b')
+
+
+def local_asset(task_id: str, name: str) -> Path | None:
+    """The local copy of a supplied asset, in the folders the v1 builder reads."""
+    for candidate in (REFRESH / 'upload' / task_id / name, REFRESH / 'sources' / task_id / name,
+                      RUN_SOURCES / task_id / 'source' / name):
+        if candidate.is_file():
+            return candidate
+    return None
+
+
+class Thumbnails:
+    """Small copies (192 px long edge) of supplied images, made the first time a page shows one, so rows never load
+    multi-megabyte originals. SVGs are small already and are linked directly."""
+
+    def __init__(self, task_id: str, assets: dict):
+        self.task_id, self.assets, self.made = task_id, assets, set()
+
+    def __contains__(self, name: str) -> bool:
+        suffix = Path(name).suffix.lower()
+        return name in self.assets and suffix in IMAGE_EXT and (suffix == '.svg' or local_asset(self.task_id, name) is not None)
+
+    def __getitem__(self, name: str) -> str:
+        suffix = Path(name).suffix.lower()
+        if suffix == '.svg':
+            return self.assets[name]['public_url']
+        source = local_asset(self.task_id, name)
+        target = THUMBS / self.task_id / (name if suffix in ('.jpg', '.jpeg', '.png') else name + '.jpg')
+        if not target.is_file() or target.stat().st_mtime < source.stat().st_mtime:
+            target.parent.mkdir(parents=True, exist_ok=True)
+            fmt = ['png'] if suffix == '.png' else ['jpeg', '--setProperty', 'formatOptions', '72']
+            subprocess.run(['sips', '-Z', '192', '--setProperty', 'format', *fmt, str(source), '--out', str(target)],
+                           check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+        self.made.add(target)
+        return f'thumbs/{self.task_id}/{target.name}'
+
+    def remove_unused(self) -> None:
+        for path in (THUMBS / self.task_id).glob('*'):
+            if path not in self.made:
+                path.unlink()
+
+
+def note_sentences(note: str) -> list[str]:
+    return [s for s in SENTENCE.split(note.strip()) if s] if note else []
+
+
+def split_reference(rows: list[dict]) -> tuple[list[dict], list[str], list[tuple[list[dict], list[str]]]]:
+    """Reference files and note sentences that every row shares (shown once, under the rule), and each row's own."""
+    notes = [note_sentences(r['reference']['note']) for r in rows]
+    links = [[a['filename'] for a in r['reference']['assets']] for r in rows]
+    shared_notes = [s for s in dict.fromkeys(notes[0]) if all(s in n for n in notes)]
+    shared_links = [f for f in dict.fromkeys(links[0]) if all(f in l for l in links)]
+    by_name = {a['filename']: a for r in rows for a in r['reference']['assets']}
+    own = [([by_name[f] for f in dict.fromkeys(l) if f not in shared_links], [s for s in n if s not in shared_notes])
+           for l, n in zip(links, notes)]
+    return [by_name[f] for f in shared_links], shared_notes, own
+
+
+def thumb_html(name: str, ctx: dict) -> str:
+    asset = ctx['assets'].get(name)
+    if not asset or name not in ctx['thumbs']:
+        return ''
+    return (f'<a class="thumb" href="{esc(asset["public_url"])}" target="_blank" rel="noopener">'
+            f'<img loading="lazy" src="{esc(ctx["thumbs"][name])}" alt="{esc(name)}"><span>{esc(name)}</span></a>')
+
+
+def links_html(assets: list[dict]) -> str:
+    return ' '.join(f'<a href="{esc(a["url"])}" target="_blank" rel="noopener">{esc(a["filename"])}</a>' for a in assets)
+
+
+def row_sources(rule: dict, ctx: dict) -> tuple[list[str], list[dict], list[str], list[tuple[list[str], list[dict], list[str]]]]:
+    """What a row is checked against. Images shared by every row (or named in the rule) go under the rule; each row
+    keeps its own source image (the supplied image its deliverable is made from), its own files and its own notes."""
+    shared_links, shared_notes, own = split_reference(rule['rows'])
+    text = ''.join(s.get('text', '') for s in rule['template'])
+    rule_images = [f for f in dict.fromkeys([*FILE_NAME.findall(text), *(a['filename'] for a in shared_links)])
+                   if f in ctx['thumbs']]
+    shared_other = [a for a in shared_links if a['filename'] not in ctx['thumbs']]
+    rows = []
+    for row, (links, notes) in zip(rule['rows'], own):
+        images = [ctx['outputs'][row['output_id']].get('source_image'), *(a['filename'] for a in links),
+                  *(unquote(v) for v in row['values'].values())]
+        images = [f for f in dict.fromkeys(images) if f and f in ctx['thumbs'] and f not in rule_images]
+        rows.append((images, [a for a in links if a['filename'] not in ctx['thumbs']], notes))
+    return rule_images, shared_other, shared_notes, rows
 
 
 def reference_html(ref: dict) -> str:
@@ -426,8 +538,16 @@ mark.mk-d{background:#e3efe8;color:#1d5a42;padding:0 2px;border-radius:3px}mark.
 .rows td{padding:6px 8px;border-bottom:1px solid #edf0ed;vertical-align:top;overflow-wrap:anywhere}
 .rows td.d{min-width:160px}.rows td.v{overflow-wrap:normal;word-break:normal;min-width:5ch}.rows td.d strong{font-weight:600}.rows td.d code{display:block;font-size:11.5px;color:#5b6760}
 .rows td.id{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:11.5px;color:#5b6760;white-space:nowrap}
-.rows td.ans{white-space:nowrap;color:#3f4b45}.rows td small{display:block;color:#5b6760;font-size:12px;margin-top:2px}.rows th .ph{margin-right:4px}.full{display:none;font-size:12px;color:#46534c;margin-top:4px}
-body.show-full .full{display:block}
+.rows td.ans{white-space:nowrap;color:#3f4b45}.rows td small{display:block;color:#5b6760;font-size:12px;margin-top:2px}.rows th .ph{margin-right:4px}
+.rows tbody.ck{border-bottom:1px solid #dce3df}.rows tbody.ck td{border-bottom:0}
+.rows tr.reads td{padding:0 8px 10px;font-size:13px;color:#33403a;line-height:1.5}
+.reads-label{font-weight:700;color:#5b6760;font-size:10.5px;text-transform:uppercase;margin-right:6px}
+body.hide-full tr.reads{display:none}
+.thumb{display:inline-flex;flex-direction:column;align-items:flex-start;margin:0 10px 4px 0;vertical-align:top;font-size:11px;color:#5b6760;text-decoration:none}
+.thumb img{display:block;height:64px;width:auto;max-width:112px;object-fit:cover;border-radius:3px;border:1px solid #dce3df;background:#f2f5f3}
+.thumb span{white-space:nowrap;margin-top:2px}.rule-ref .thumb{margin-top:4px}
+.rows td.src{min-width:170px}.rows td.src small{display:block;color:#33403a;font-size:12px;margin-top:2px}
+.dtype{display:block;width:max-content;max-width:100%;font-size:11px;background:#eef1ef;color:#4f5c56;border-radius:999px;padding:0 7px;margin:3px 0 1px}
 .summary{border-collapse:collapse;font-size:14px;margin:8px 0 18px}.summary th,.summary td{padding:6px 12px;border-bottom:1px solid #e3e8e4;text-align:left}
 .summary td.n,.summary th.n{text-align:right;font-variant-numeric:tabular-nums}
 .page ul.rules-list li{margin:0 0 6px}.scroll-x{overflow-x:auto}
@@ -435,7 +555,8 @@ body.show-full .full{display:block}
 @media(max-width:720px){.rule{padding:12px 12px 4px}.rule-text{font-size:14.5px}
 .tools{position:static}.tools label{width:100%}.tools select,.tools input[type=search]{flex:1;min-width:0;width:auto;max-width:none}
 .rows-wrap{overflow-x:visible}.rows thead{display:none}.rows,.rows tbody,.rows tr,.rows td{display:block;width:100%}
-.rows tr{border-bottom:1px solid #dce3df;padding:8px 0}.rows td{border:0;padding:2px 0;min-width:0}.rows td.d{min-width:0}
+.rows tbody.ck{padding:8px 0}.rows tr{border:0;padding:0}.rows td{border:0;padding:2px 0;min-width:0}.rows td.d,.rows td.src{min-width:0}
+.rows tr.reads td{padding:4px 0 0}
 .rows td[data-label]::before{content:attr(data-label) ": ";font-weight:600;color:#3f4b45}
 .rows td.id,.rows td.ans{display:inline-block;width:auto;margin-right:14px}}
 """
@@ -444,15 +565,15 @@ FILTER_SCRIPT = """
 <script>
 (() => {
   const pick = document.getElementById('deliverable'), query = document.getElementById('query'),
-        full = document.getElementById('full'), shown = document.getElementById('shown');
+        hide = document.getElementById('hide-full'), shown = document.getElementById('shown');
   function apply() {
     const output = pick.value, text = query.value.trim().toLowerCase();
     let rules = 0, rows = 0;
     document.querySelectorAll('.rule').forEach(rule => {
       let visible = 0;
-      rule.querySelectorAll('tbody tr').forEach(tr => {
-        const keep = !output || tr.dataset.output === output;
-        tr.hidden = !keep;
+      rule.querySelectorAll('tbody.ck').forEach(row => {
+        const keep = !output || row.dataset.output === output;
+        row.hidden = !keep;
         if (keep) visible++;
       });
       const show = visible > 0 && (!text || rule.textContent.toLowerCase().includes(text));
@@ -469,14 +590,14 @@ FILTER_SCRIPT = """
   }
   pick.addEventListener('change', apply);
   query.addEventListener('input', apply);
-  full.addEventListener('change', () => document.body.classList.toggle('show-full', full.checked));
+  hide.addEventListener('change', () => document.body.classList.toggle('hide-full', hide.checked));
   apply();
 })();
 </script>
 """
 
 
-def rule_html(rule: dict) -> str:
+def rule_html(rule: dict, ctx: dict) -> str:
     labels = rule['slot_labels']
     badges = [f'<span class="badge b-k" title="{esc(rule["k_label"])}">{esc(k_short(rule["k_id"]))}</span>',
               f'<span class="badge {"b-measure" if rule["method"] == "measure" else ""}">{esc(rule["method"].capitalize())}</span>']
@@ -489,35 +610,40 @@ def rule_html(rule: dict) -> str:
     badges.append(f'<span class="badge">{len(rows)} check{"s" if len(rows) != 1 else ""} · '
                   f'{outputs} deliverable{"s" if outputs != 1 else ""}</span>')
     numbers = sorted(labels, key=int)
-    column = lambda n: f'{n} {labels[n][:1].upper() + labels[n][1:]}'.strip()
-    head = ['Deliverable'] + [f'<span class="ph ph-n">{n}</span>{esc(labels[n][:1].upper() + labels[n][1:])}' for n in numbers]
-    if rule['shared_reference'] is None:
-        head.append('Reference')
-    head += ['Check', 'Answer']
+    title = lambda n: labels[n][:1].upper() + labels[n][1:]
+    rule_images, shared_other, shared_notes, sources = row_sources(rule, ctx)
+    with_source = any(images or other or notes for images, other, notes in sources)
+    several_kinds = len({ctx['groups'][r['output_id']] for r in rows}) > 1
+    head = (['Deliverable'] + (['Source'] if with_source else [])
+            + [f'<span class="ph ph-n">{n}</span>{esc(title(n))}' for n in numbers] + ['Check', 'Answer'])
     body = []
-    for r in rows:
+    for r, (images, other, notes) in zip(rows, sources):
         name = r['deliverable']
         short = name.rsplit(' - ', 1)[1] if ' - ' in name else name
-        cells = [f'<td class="d"><strong>{esc(short)}</strong><code>{esc(r["file"])}</code>'
-                 f'<div class="full">{esc(r["check"])}</div></td>']
-        cells += [f'<td class="v" data-label="{esc(column(n))}">{esc(r["values"][n])}</td>' for n in numbers]
-        if rule['shared_reference'] is None:
-            cells.append(f'<td data-label="Reference">{reference_html(r["reference"])}</td>')
+        kind = f'<span class="dtype">{esc(ctx["groups"][r["output_id"]])}</span>' if several_kinds else ''
+        cells = [f'<td class="d"><strong>{esc(short)}</strong>{kind}<code>{esc(r["file"])}</code></td>']
+        if with_source:
+            source = (''.join(thumb_html(f, ctx) for f in images[:3])
+                      + (f'<div>{links_html(other)}</div>' if other else '') + ''.join(f'<small>{esc(n)}</small>' for n in notes))
+            cells.append(f'<td class="src" data-label="Source">{source}</td>')
+        cells += [f'<td class="v" data-label="{esc(f"{n} {title(n)}")}">{esc(r["values"][n])}</td>' for n in numbers]
         cells.append(f'<td class="id" data-label="Check" data-check="{esc(r["check_id"])}" title="{esc(r["check_id"])}">'
                      f'{esc(r["check_id"].split("/")[-1])}</td>')
         cells.append('<td class="ans" data-label="Answer">Yes / No</td>')
-        body.append(f'<tr data-output="{esc(r["output_id"])}">{"".join(cells)}</tr>')
-    shared = rule['shared_reference']
-    ref = ''
-    if shared and (shared['assets'] or shared['note']):
-        ref = f'<div class="rule-ref"><strong>Reference:</strong> {reference_html(shared)}</div>'
+        reads = (f'<tr class="reads"><td colspan="{len(head)}"><span class="reads-label">Reads as</span> '
+                 f'{filled_html(rule["template"], r)}</td></tr>')
+        body.append(f'<tbody class="ck" data-output="{esc(r["output_id"])}" data-row="{esc(r["check_id"])}">'
+                    f'<tr>{"".join(cells)}</tr>{reads}</tbody>')
+    shared = (''.join(thumb_html(f, ctx) for f in rule_images) + (f'<div>{links_html(shared_other)}</div>' if shared_other else '')
+              + ''.join(f'<small>{esc(n)}</small>' for n in shared_notes))
+    ref = f'<div class="rule-ref"><strong>Reference for every row:</strong> {shared}</div>' if shared else ''
     return (f'<article class="rule" id="{rule["rule_id"]}"><div class="rule-head"><span class="rid">{rule["rule_id"]}</span>'
             f'{"".join(badges)}</div>'
             f'<p class="rule-text">{template_html(rule["template"], labels)}</p>'
             f'<p class="rule-note"><strong>{esc(rule["method"].capitalize())}:</strong> {template_html(rule["note_template"], labels)}</p>'
             f'{ref}<p class="rule-scope"><strong>Applies to:</strong> {esc(rule["scope"])}</p>'
             f'<div class="rows-wrap"><table class="rows"><thead><tr>{"".join(f"<th>{h}</th>" for h in head)}</tr></thead>'
-            f'<tbody>{"".join(body)}</tbody></table></div></article>')
+            f'{"".join(body)}</table></div></article>')
 
 
 def nav(task_id: str, here: str) -> str:
@@ -527,7 +653,7 @@ def nav(task_id: str, here: str) -> str:
            f'<a href="../index.html#{task_id}/trajectory">Trajectory verifiers</a></p>'
 
 
-def k_sections(task_id: str, spec: dict, rules: list[dict], catalog: list[dict]) -> tuple[str, str]:
+def k_sections(task_id: str, spec: dict, rules: list[dict], catalog: list[dict], ctx: dict) -> tuple[str, str]:
     """The V7 Human verifiers layout: K1, K2, K5, each question with its rules, or a note when code answers it."""
     by_question = defaultdict(list)
     for rule in rules:
@@ -555,9 +681,9 @@ def k_sections(task_id: str, spec: dict, rules: list[dict], catalog: list[dict])
                             n = sum(len(r['rows']) for r in chosen)
                             parts.append(f'<div class="kpart"><h4>Brand-system rules: {esc(title)} '
                                          f'({len(chosen)} rule{"s" if len(chosen) != 1 else ""} · {n} check{"s" if n != 1 else ""})</h4>'
-                                         + ''.join(rule_html(r) for r in chosen) + '</div>')
+                                         + ''.join(rule_html(r, ctx) for r in chosen) + '</div>')
                 else:
-                    parts.extend(rule_html(r) for r in members)
+                    parts.extend(rule_html(r, ctx) for r in members)
             else:
                 auto = [c for c in spec['verifiers_auto'] if AUTO2K.get((c.get('assertion') or {}).get('op')) == q['id']]
                 if auto:
@@ -575,9 +701,9 @@ def k_sections(task_id: str, spec: dict, rules: list[dict], catalog: list[dict])
     return coverage, ''.join(blocks)
 
 
-def write_verifier_page(task_id: str, spec: dict, rules: list[dict], catalog: list[dict]) -> None:
+def write_verifier_page(task_id: str, spec: dict, rules: list[dict], catalog: list[dict], ctx: dict) -> None:
     checks = sum(len(r['rows']) for r in rules)
-    coverage, blocks = k_sections(task_id, spec, rules, catalog)
+    coverage, blocks = k_sections(task_id, spec, rules, catalog, ctx)
     options = ''.join(f'<option value="{esc(o["output_id"])}">{esc(o["name"])}</option>' for o in spec['deliverables'])
     page = f"""<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
@@ -594,7 +720,7 @@ def write_verifier_page(task_id: str, spec: dict, rules: list[dict], catalog: li
 <div class="tools" role="group" aria-label="Filter rules">
 <label>Deliverable <select id="deliverable"><option value="">All {len(spec["deliverables"])} deliverables</option>{options}</select></label>
 <label>Search <input id="query" type="search" placeholder="Words in a rule"></label>
-<label><input id="full" type="checkbox"> Show the full sentence in every row</label>
+<label><input id="hide-full" type="checkbox"> Hide the full sentence under each row</label>
 <span id="shown" aria-live="polite"></span>
 </div>
 {blocks}
@@ -702,7 +828,12 @@ def main() -> None:
         if set(kept) != set(bank) or max(kept.values()) != 1:
             raise ValueError(f'{task_id}: grouping lost or repeated a check')
         write_brief_page(task_id, spec, assets, outputs)
-        write_verifier_page(task_id, spec, rules, catalog)
+        manifest = {a['filename']: a for a in assets}
+        ctx = {'assets': manifest, 'thumbs': Thumbnails(task_id, manifest),
+               'outputs': {o['output_id']: o for o in spec['deliverables']},
+               'groups': {o: g['name'] for g in spec['deliverable_groups'] for o in g['outputs']}}
+        write_verifier_page(task_id, spec, rules, catalog, ctx)
+        ctx['thumbs'].remove_unused()
         payload = {'task_id': task_id, 'revision': REVISION, 'source': f'docs/gatsby-v7/tasks/{task_id}/TASK_SPEC.json verifiers_human',
                    'check_count': len(kept), 'rule_count': len(rules), 'rules': [export_rule(task_id, r) for r in rules]}
         (OUT / 'groups' / f'{task_id}.json').write_text(json.dumps(payload, ensure_ascii=False, indent=1) + '\n', encoding='utf-8')

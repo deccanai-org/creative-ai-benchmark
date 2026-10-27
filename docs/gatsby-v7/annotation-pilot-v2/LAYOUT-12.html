@@ -77,8 +77,16 @@ mark.mk-d{background:#e3efe8;color:#1d5a42;padding:0 2px;border-radius:3px}mark.
 .rows td{padding:6px 8px;border-bottom:1px solid #edf0ed;vertical-align:top;overflow-wrap:anywhere}
 .rows td.d{min-width:160px}.rows td.v{overflow-wrap:normal;word-break:normal;min-width:5ch}.rows td.d strong{font-weight:600}.rows td.d code{display:block;font-size:11.5px;color:#5b6760}
 .rows td.id{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:11.5px;color:#5b6760;white-space:nowrap}
-.rows td.ans{white-space:nowrap;color:#3f4b45}.rows td small{display:block;color:#5b6760;font-size:12px;margin-top:2px}.rows th .ph{margin-right:4px}.full{display:none;font-size:12px;color:#46534c;margin-top:4px}
-body.show-full .full{display:block}
+.rows td.ans{white-space:nowrap;color:#3f4b45}.rows td small{display:block;color:#5b6760;font-size:12px;margin-top:2px}.rows th .ph{margin-right:4px}
+.rows tbody.ck{border-bottom:1px solid #dce3df}.rows tbody.ck td{border-bottom:0}
+.rows tr.reads td{padding:0 8px 10px;font-size:13px;color:#33403a;line-height:1.5}
+.reads-label{font-weight:700;color:#5b6760;font-size:10.5px;text-transform:uppercase;margin-right:6px}
+body.hide-full tr.reads{display:none}
+.thumb{display:inline-flex;flex-direction:column;align-items:flex-start;margin:0 10px 4px 0;vertical-align:top;font-size:11px;color:#5b6760;text-decoration:none}
+.thumb img{display:block;height:64px;width:auto;max-width:112px;object-fit:cover;border-radius:3px;border:1px solid #dce3df;background:#f2f5f3}
+.thumb span{white-space:nowrap;margin-top:2px}.rule-ref .thumb{margin-top:4px}
+.rows td.src{min-width:170px}.rows td.src small{display:block;color:#33403a;font-size:12px;margin-top:2px}
+.dtype{display:block;width:max-content;max-width:100%;font-size:11px;background:#eef1ef;color:#4f5c56;border-radius:999px;padding:0 7px;margin:3px 0 1px}
 .summary{border-collapse:collapse;font-size:14px;margin:8px 0 18px}.summary th,.summary td{padding:6px 12px;border-bottom:1px solid #e3e8e4;text-align:left}
 .summary td.n,.summary th.n{text-align:right;font-variant-numeric:tabular-nums}
 .page ul.rules-list li{margin:0 0 6px}.scroll-x{overflow-x:auto}
@@ -86,7 +94,8 @@ body.show-full .full{display:block}
 @media(max-width:720px){.rule{padding:12px 12px 4px}.rule-text{font-size:14.5px}
 .tools{position:static}.tools label{width:100%}.tools select,.tools input[type=search]{flex:1;min-width:0;width:auto;max-width:none}
 .rows-wrap{overflow-x:visible}.rows thead{display:none}.rows,.rows tbody,.rows tr,.rows td{display:block;width:100%}
-.rows tr{border-bottom:1px solid #dce3df;padding:8px 0}.rows td{border:0;padding:2px 0;min-width:0}.rows td.d{min-width:0}
+.rows tbody.ck{padding:8px 0}.rows tr{border:0;padding:0}.rows td{border:0;padding:2px 0;min-width:0}.rows td.d,.rows td.src{min-width:0}
+.rows tr.reads td{padding:4px 0 0}
 .rows td[data-label]::before{content:attr(data-label) ": ";font-weight:600;color:#3f4b45}
 .rows td.id,.rows td.ans{display:inline-block;width:auto;margin-right:14px}}
 
