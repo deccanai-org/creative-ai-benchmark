@@ -85,8 +85,10 @@
     "assets": [],
     "note": "Acceptance: the complete approved class offer is present as one unobscured content element. Its classes and prices are graded by the class-offer list check."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the names set with a price on their own row and checks the list, or that nothing else sits inside the block, for each of the 2 named texts; all must pass."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-28/studio-launch/H002",
@@ -397,8 +399,10 @@
     ],
     "note": "Brief, pinned: the pictured instructor's own class and its price. roster_2027.csv, field price, rows 2 to 7. passcard_2025_print.pdf shows last year's “$30 intro”."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Finds which supplied photo is shown, then checks the text for that person, for each of the 3 named texts; all must pass."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-28/class-feed/H011",
@@ -523,8 +527,10 @@
     ],
     "note": "roster_2027.csv, field price: $34, $36 and $38. Brand price positioning: \"Intro pack 180 dollars, membership 220 a month.\" passcard_2025_print.pdf shows last year's “$30 intro”."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Finds every price and checks each meets the rule."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-28/studio-launch/H011",
@@ -684,8 +690,10 @@
     ],
     "note": "roster_2027.csv, fields class_code and price, one price per class code. owner_note.txt maps each code to its class name."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads where each value stands and checks the value that belongs to this name (by its section, column or line) is the expected one."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-28/booking-story/H005",
@@ -750,8 +758,10 @@
     ],
     "note": "roster_2027.csv, field validity: through Dec 2027 on every row. passcard_2025_print.pdf, last year's pass, reads through Dec 2025."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the type by OCR or from the PDF, leaving out lettering inside the supplied photos, and looks for the wording."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-28/studio-launch/H012",
@@ -1003,8 +1013,10 @@
     ],
     "note": "roster_2027.csv, fields class_code and price, one price per class code. owner_note.txt maps each code to its class name."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the names set with a price on their own row and checks the list, or that nothing else sits inside the block."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-28/studio-launch/H006",
@@ -1115,8 +1127,10 @@
     "assets": [],
     "note": "Brief: place the cutout on solid Warm Off White or Sage. Commission: place the instructor cutout on solid Warm Off White or Sage."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Lays the supplied photo over the placed one and looks for its original backdrop left unchanged round the subject."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-28/class-feed/H063",
@@ -1163,8 +1177,10 @@
     "assets": [],
     "note": "Acceptance: the complete approved class offer is present as one unobscured content element."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the names set with a price on their own row and checks the list, or that nothing else sits inside the block."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-28/studio-launch/H070",
@@ -1220,8 +1236,10 @@
     ],
     "note": "roster_2027.csv price column, read with owner_note.txt class names."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the names set with a price on their own row and checks the list, or that nothing else sits inside the block."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-28/studio-launch/H072",
@@ -1286,8 +1304,10 @@
     ],
     "note": "roster_2027.csv price column, read with owner_note.txt class names."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the names set with a price on their own row and checks the list, or that nothing else sits inside the block."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-28/studio-launch/H073",
@@ -1352,8 +1372,10 @@
     ],
     "note": "roster_2027.csv price column, read with owner_note.txt class names."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the names set with a price on their own row and checks the list, or that nothing else sits inside the block."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-28/studio-launch/H074",
@@ -1418,8 +1440,10 @@
     ],
     "note": "roster_2027.csv price column, read with owner_note.txt class names."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the names set with a price on their own row and checks the list, or that nothing else sits inside the block."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-28/studio-launch/H075",
@@ -1484,8 +1508,10 @@
     ],
     "note": "roster_2027.csv price column, read with owner_note.txt class names."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the names set with a price on their own row and checks the list, or that nothing else sits inside the block."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-28/studio-launch/H076",
@@ -1550,8 +1576,10 @@
     ],
     "note": "roster_2027.csv price column, read with owner_note.txt class names."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the names set with a price on their own row and checks the list, or that nothing else sits inside the block."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-28/studio-launch/H077",
@@ -1748,8 +1776,10 @@
     ],
     "note": "roster_2027.csv price column for the pictured instructor."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Finds which supplied photo is shown, then checks the text for that person, for each of the 2 named texts; all must pass."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-28/class-feed/H069",
@@ -1806,8 +1836,10 @@
     ],
     "note": "roster_2027.csv price column for the pictured instructor."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Finds which supplied photo is shown, then checks the text for that person, for each of the 1 named texts; all must pass."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-28/class-feed/H070",
@@ -1958,8 +1990,10 @@
     ],
     "note": "owner_note.txt: Lena Brandt -- Core & Restore. roster_2027.csv class_code agrees once the codes are mapped."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads where each value stands and checks the value that belongs to this name (by its section, column or line) is the expected one."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-28/studio-launch/H084",
@@ -2462,8 +2496,10 @@
     ],
     "note": "owner_note.txt: \"Please put the class NAMES on the passes, the way clients see them, not the codes.\" It maps RF-FND, RF-FLW, RF-COR, RF-ATH, RF-PRE and RF-SLW to Foundations, Flow, Core & Restore, Strength, Prenatal and Slow & Deep. roster_2027.csv, field class_code, holds the codes."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the type by OCR or from the PDF, leaving out lettering inside the supplied photos, and looks for the wording."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-28/class-feed/H003",
@@ -2583,8 +2619,10 @@
     ],
     "note": "Production requirements: \"Do not invent claims, prices, dates, credentials or product features.\" roster_2027.csv has no time or day field, and owner_note.txt gives none."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the type by OCR or from the PDF, leaving out lettering inside the supplied photos, and looks for the wording."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-28/studio-launch/H010",
@@ -2754,8 +2792,10 @@
     ],
     "note": "owner_note.txt: \"No orange skin, no black rubber floor, nothing shouting.\""
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Finds each supplied photo on the file, runs the check on each, and checks no other photograph is present."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-28/studio-launch/H017",
@@ -2848,8 +2888,10 @@
     ],
     "note": "owner_note.txt: \"The room is oak and sage, soft light, one body at a time.\" Brand identity, about: \"One body, one room, generous air\"."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Finds each supplied photo on the file, runs the check on each, and checks no other photograph is present."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-28/studio-launch/H018",
@@ -2946,8 +2988,10 @@
     ],
     "note": "owner_note.txt: \"Please put the class NAMES on the passes, the way clients see them, not the codes.\" It maps RF-FND, RF-FLW, RF-COR, RF-ATH, RF-PRE and RF-SLW to Foundations, Flow, Core & Restore, Strength, Prenatal and Slow & Deep. roster_2027.csv, field class_code, holds the codes."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the type by OCR or from the PDF, leaving out lettering inside the supplied photos, and looks for the wording."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-28/booking-story/H006",
@@ -3098,8 +3142,10 @@
     ],
     "note": "owner_note.txt: \"No orange skin, no black rubber floor, nothing shouting.\""
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Finds each supplied photo on the file, runs the check on each, and checks no other photograph is present."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-28/studio-launch/H016",
@@ -3178,8 +3224,10 @@
     ],
     "note": "owner_note.txt: \"Please put the class NAMES on the passes, the way clients see them, not the codes.\" It maps RF-FND, RF-FLW, RF-COR, RF-ATH, RF-PRE and RF-SLW to Foundations, Flow, Core & Restore, Strength, Prenatal and Slow & Deep. roster_2027.csv, field class_code, holds the codes."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the type by OCR or from the PDF, leaving out lettering inside the supplied photos, and looks for the wording."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-28/studio-launch/H007",
@@ -3235,8 +3283,10 @@
     "assets": [],
     "note": "Client brief and class-feed commission: place the cutout on solid Warm Off White or Sage."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Finds the supplied photo's cut-out subject and reads the flat ground wrapped round it."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-28/class-feed/H071",
@@ -3293,8 +3343,10 @@
     ],
     "note": "owner_note.txt: \"Erin left us in the spring -- she is off the team now and should not have a pass.\" roster_2027.csv row 8 still lists Erin Coyle, RF-FND, erin@verdastudio.example, and passcard_2025_print.pdf also names her."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the type by OCR or from the PDF, leaving out lettering inside the supplied photos, and looks for the wording."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-28/studio-launch/H008",
@@ -3509,8 +3561,10 @@
     "2": "name"
    },
    "shared_reference": null,
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Finds the supplied photo, then reads the names standing beside it."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-28/class-feed/H002",
@@ -3723,8 +3777,10 @@
     ],
     "note": "Brief: the pictured instructor is identified accurately. roster_2027.csv, field portrait_file, pairs each current instructor with one portrait."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Searches the deliverable for the supplied file (feature matching, confirmed by correlation)."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-28/class-feed/H009",
@@ -4155,8 +4211,10 @@
     ],
     "note": "Brief, pinned: the launch page shows our own room from at least one of those two photographs. Brief: \"We need them prepared, not replaced by a fictional studio.\" Truth constraint: preserve identity and documentary truth."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Searches the deliverable for the supplied file (feature matching, confirmed by correlation)."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-28/studio-launch/H019",
@@ -4221,8 +4279,10 @@
     ],
     "note": "Brief, what stays fixed: use the actual supplied studio photographs; do not invent a different studio."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Finds each supplied photo on the file, runs the check on each, and checks no other photograph is present."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-28/studio-launch/H063",
@@ -4375,8 +4435,10 @@
     ],
     "note": "In verda_instructor_02.jpg a pale oat top meets a cream wall at the same luminance, so a cut-out can take the shoulder line with it."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Finds which supplied photo is shown, then checks the text for that person: hands the row to a person (used where code settles only the files without the element)."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-28/class-feed/H014",
@@ -4433,8 +4495,10 @@
     ],
     "note": "In verda_instructor_05.jpg a pale oat top meets a cream wall at the same luminance, so a cut-out can take the hair fringe with it."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Finds which supplied photo is shown, then checks the text for that person: hands the row to a person (used where code settles only the files without the element)."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-28/class-feed/H015",
@@ -4491,8 +4555,10 @@
     ],
     "note": "verda_instructor_04.jpg is 825 x 1100 px, the smallest supplied portrait, and nothing can enlarge it truthfully. Truth constraint: do not silently replace a weak supplied asset; use it honestly or reject it with a reason."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Lays the supplied photo over the placed one and compares them tile by tile: colour, detail and correlation."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-28/studio-launch/H025",
@@ -4711,8 +4777,10 @@
     ],
     "note": "verda_wordmark_transparent.png is a 600 x 600 px web export with an opaque white square baked behind the letters."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Finds the wordmark, splits its letters from the ground and measures their height, proportions, spacing, counters and edges."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-28/studio-launch/H028",
@@ -4809,8 +4877,10 @@
     ],
     "note": "verda_wordmark_transparent.png is a 600 x 600 px web export with a compression-artefact ring around every letter."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Finds the wordmark, splits its letters from the ground and measures their height, proportions, spacing, counters and edges."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-28/studio-launch/H029",
@@ -4919,8 +4989,10 @@
     ],
     "note": "Brand identity, palette_rules.distribution: a cut-out portrait sits on Warm Off White or Sage. Asset plan: verda_instructor_02.jpg and verda_instructor_05.jpg knockouts bite the shoulder line or hair fringe."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Finds each supplied photo on the file, runs the check on each, and checks no other photograph is present."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-28/studio-launch/H067",
@@ -4998,8 +5070,10 @@
     "assets": [],
     "note": "Brand identity, palette_rules.distribution: a cut-out portrait sits on one of the two solid grounds."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Finds each supplied photo on the file, runs the check on each, and checks no other photograph is present."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-28/studio-launch/H068",
@@ -5130,8 +5204,10 @@
     ],
     "note": "Brief and brand_assets_status: keep the supplied letterforms and scale proportionally."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Finds the wordmark, splits its letters from the ground and measures their height, proportions, spacing, counters and edges."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-28/studio-launch/H071",
@@ -5216,8 +5292,10 @@
    ],
    "slot_labels": {},
    "shared_reference": null,
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Finds every ground and panel (flat areas outside the photographs) and reads its colour."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-28/studio-launch/H036",
@@ -5305,8 +5383,10 @@
     "assets": [],
     "note": "Brand palette, four hexes. Palette rules, forbidden: no colour outside them for type, the wordmark, panels, rules, buttons or icons."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads every flat colour outside the photographs and checks each is a palette colour, the wordmark's own ink allowed in its box."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-28/studio-launch/H033",
@@ -5379,8 +5459,10 @@
     "assets": [],
     "note": "Palette roles: Warm Off White and Soft Ink are mandatory."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Looks for the colour as a flat area outside the photographs."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-28/studio-launch/H034",
@@ -5458,8 +5540,10 @@
     ],
     "note": "Palette rules, opacity: every palette colour solid at 100%; no tint, gradient, shadow or blend mode, and no scrim or overlay of any colour, black and white included, over a photograph. Type, the wordmark included, set beside or over a photograph sits on a solid Warm Off White or Sage panel, never directly on the photograph. passcard_2025_print.pdf sets its wordmark at 92%; on these exports it is solid."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Checks every flat designed colour is a palette colour, with no shaded area and no type over a photograph."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-28/studio-launch/H035",
@@ -5646,8 +5730,10 @@
     ],
     "note": "Palette rules, distribution: Oak is for hairline rules and dividers only, as the rule under the name on passcard_2025_print.pdf, no more than 5% of the designed, non-photographic area."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Finds every piece in the colour outside the photographs and checks each is a thin rule or sits in an allowed text line."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-28/studio-launch/H038",
@@ -5735,8 +5821,10 @@
     "assets": [],
     "note": "Brand identity, palette_rules.opacity: type, the wordmark included, set beside or over a photograph sits on a solid Warm Off White or Sage panel."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads each text line (OCR on images, live text on PDFs), the colour of its letters and of the ground behind it, and checks the pairing."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-28/studio-launch/H057",
@@ -5883,8 +5971,10 @@
     "assets": [],
     "note": "Brand identity, palette_rules.distribution: on Sage, all type and the wordmark are Soft Ink or Warm Off White."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads each text line (OCR on images, live text on PDFs), the colour of its letters and of the ground behind it, and checks the pairing."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-28/studio-launch/H059",
@@ -6067,8 +6157,10 @@
     "assets": [],
     "note": "Brand identity, palette_rules.distribution: Oak no more than 5% of the designed, non-photographic area."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Measures the share of the area outside the photographs in the named colours."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-28/studio-launch/H078",
@@ -6150,8 +6242,10 @@
     ],
     "note": "Brand identity, palette_rules: explicit original-ink exception for verda_wordmark_transparent.png."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads each text line (OCR on images, live text on PDFs), the colour of its letters and of the ground behind it, and checks the pairing, for each of the 2 named texts; all must pass."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-28/studio-launch/H079",
@@ -6251,8 +6345,10 @@
     "assets": [],
     "note": "Brand identity, palette_rules.distribution: a cut-out portrait sits on one of the two (Warm Off White or Sage)."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Finds each supplied photo on the file, runs the check on each, and checks no other photograph is present."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-28/studio-launch/H080",
@@ -6312,8 +6408,10 @@
     "assets": [],
     "note": "Palette roles: Soft Ink is mandatory, for headlines, body text, prices, fine print on Warm Off White."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the colour of each text line's letters and looks for one in the colour."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-28/studio-launch/H081",
@@ -6395,8 +6493,10 @@
     ],
     "note": "Brand identity, palette_rules: explicit original-ink exception for verda_wordmark_transparent.png."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads each text line (OCR on images, live text on PDFs), the colour of its letters and of the ground behind it, and checks the pairing, for each of the 2 named texts; all must pass."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-28/studio-launch/H093",
@@ -6496,8 +6596,10 @@
     "assets": [],
     "note": "Brand type system rule: The wordmark is never larger than 34 px on screen or 11 pt on the pass card."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Finds the wordmark, splits its letters from the ground and measures their height, proportions, spacing, counters and edges."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-28/studio-launch/H031",
@@ -6579,8 +6681,10 @@
     ],
     "note": "Type system step 02, Subheading / H2: Archivo Regular, 56 px on 68 px, the feed post and story headline."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads each named line by OCR, renders its own text in every brand font and weight and in common stand-in fonts, and compares the letter shapes and stroke thickness with the image; only a clear best match counts."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-28/class-feed/H038",
@@ -6960,8 +7064,10 @@
     "assets": [],
     "note": "Type system step 03, Body: measure held to a maximum of 65 characters."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads each line of text and counts its characters."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-28/studio-launch/H042",
@@ -7232,8 +7338,10 @@
     "assets": [],
     "note": "Brand identity, type scale 02: Subheading / H2 is Archivo Regular, also the secondary-heading style if needed on studio-launch.png."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads each named line by OCR, renders its own text in every brand font and weight and in common stand-in fonts, and compares the letter shapes and stroke thickness with the image; only a clear best match counts."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-28/studio-launch/H064",
@@ -7576,8 +7684,10 @@
     "assets": [],
     "note": "Type system signature move: \"It sits above step 01 as its own lock.\" Step 01 is the launch headline."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Finds the wordmark and the largest heading and compares their positions."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-28/studio-launch/H032",
@@ -7844,8 +7954,10 @@
     "assets": [],
     "note": "Brand identity, type_system.signature_move: place the wordmark above the headline, on one line, no more than 34 px tall. The type scale gives this file a headline (Subheading / H2)."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Finds the wordmark and the largest heading and compares their positions."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-28/class-feed/H065",
@@ -7905,8 +8017,10 @@
     "assets": [],
     "note": "Brand identity, voice: plain, warm and unhurried, confident without hype. owner_note.txt: nothing shouting."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the type by OCR or from the PDF, leaving out lettering inside the supplied photos, and looks for the wording."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-28/studio-launch/H069",
@@ -8184,8 +8298,10 @@
     ],
     "note": "In verda_wordmark_transparent.png the e, d and a have enclosed counters. Zoom to 200 percent where the wordmark is placed small."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Finds the wordmark, splits its letters from the ground and measures their height, proportions, spacing, counters and edges."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-28/studio-launch/H027",
@@ -8282,8 +8398,10 @@
     ],
     "note": "Brief: \"We need them prepared, not replaced by a fictional studio.\" Truth constraint: preserve identity and documentary truth."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Lays the supplied photo over the placed one and compares them tile by tile: colour, detail and correlation."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-28/studio-launch/H021",
@@ -8388,8 +8506,10 @@
     ],
     "note": "The front window in verda_studio_frame_01.jpg is clipped to featureless white, with no detail under it to recover. Truth constraint: preserve documentary truth."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Lays the supplied photo over the placed one and checks its blown-out area is cropped away or still plain."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-28/studio-launch/H022",
@@ -8506,8 +8626,10 @@
     ],
     "note": "Truth constraint: preserve identity; retouching may not change what the subject is. roster_2027.csv, field portrait_file, pairs each portrait with its instructor."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Finds each supplied photo on the file, runs the check on each, and checks no other photograph is present."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-28/studio-launch/H023",
@@ -8634,8 +8756,10 @@
     ],
     "note": "Brief: the two room photographs are dusky; please improve them rather than replacing them."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Lays the supplied photo over the placed one and compares them tile by tile: colour, detail and correlation."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-28/studio-launch/H062",

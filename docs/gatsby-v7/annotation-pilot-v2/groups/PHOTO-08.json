@@ -3068,8 +3068,10 @@
     "assets": [],
     "note": "Brief: the enquiry action, asking the buyer to enquire about this stock number at Meridian Motors in Portland, Maine, is readable. Inspect the delivered PNG at 100%, 1080 x 1350."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Checks each named text lies fully inside the page or image."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-08/vehicle-card-r002/H003",
@@ -3482,8 +3484,10 @@
     "assets": [],
     "note": "Brand type system rule: “Disclosure stays Source Sans 3 Regular, 20 px on screen and 9 pt on 13 pt in print, and is never dropped.” Step 04 sample: “Price excludes tax, title and registration. Portland, Maine.”"
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Runs the check and lets it decide only in the direction it is sure of; the other answer goes to a person."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-08/vehicle-card-r002/H018",
@@ -3658,8 +3662,10 @@
     "assets": [],
     "note": "Brand type system rule: “Disclosure stays Source Sans 3 Regular, 20 px on screen and 9 pt on 13 pt in print, and is never dropped.” Step 04 sample: “Price excludes tax, title and registration. Portland, Maine.”"
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-08/inventory-campaign/H067",
@@ -4277,8 +4283,10 @@
     "6": "source image"
    },
    "shared_reference": null,
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Searches the deliverable for the supplied file (feature matching, confirmed by correlation), then checks it keeps its own proportions."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-08/inventory-campaign/H006",
@@ -6333,8 +6341,10 @@
     ],
     "note": "Type system rule: “Place the supplied roundel artwork unchanged.” Brief: use the supplied transparent compass artwork; do not redesign it."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Searches the deliverable for the supplied file (feature matching, confirmed by correlation), then checks it keeps its own proportions."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-08/inventory-campaign/H100",
@@ -6803,8 +6813,10 @@
     ],
     "note": "Palette, Compass Teal usage: the 1 pt rule the price seats on, other hairline rules, and the compass needles of a certification seal. Never a ground or a type colour."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Finds every piece in the colour outside the photographs and checks it is a thin rule or sits inside a small label."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-08/vehicle-card-r002/H037",
@@ -7051,8 +7063,10 @@
     ],
     "note": "Palette rules, distribution: on Showroom White, prices are Meridian Navy #1F2A3A, as on meridian_window_card_autumn.pdf."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads each selected text line by OCR, then the colour of its letters and of the ground behind it."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-08/inventory-campaign/H082",
@@ -7370,8 +7384,10 @@
     ],
     "note": "Palette rules, distribution: prices, mileage and listing detail always sit on Showroom White, never on a Meridian Navy band."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads each selected text line by OCR, then the colour of its letters and of the ground behind it."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-08/vehicle-card-r002/H064",
@@ -7513,8 +7529,10 @@
     "assets": [],
     "note": "Palette rules, distribution: Meridian Navy never sits behind a vehicle."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Finds the supplied photo and reads the colour of the ground directly round it."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-08/vehicle-card-r002/H065",
@@ -7631,8 +7649,10 @@
     ],
     "note": "Palette rules, distribution: on Showroom White, mileage and listing detail are Graphite #2E3237, as meridian_window_card_autumn.pdf sets its body values."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads each selected text line by OCR, then the colour of its letters and of the ground behind it."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-08/vehicle-card-r002/H066",
@@ -7787,8 +7807,10 @@
     ],
     "note": "Palette rules, distribution: on Showroom White, headings, labels and the dealership name are Meridian Navy; on Meridian Navy, type is Showroom White."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads each selected text line by OCR, then the colour of its letters and of the ground behind it."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-08/vehicle-card-r002/H067",
@@ -7947,8 +7969,10 @@
     ],
     "note": "Palette rules, distribution: fine print is Graphite #2E3237 or, as the one small muted line, Steel Grey #9AA1A8."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads each selected text line by OCR, then the colour of its letters and of the ground behind it."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-08/vehicle-card-r002/H068",
@@ -8238,8 +8262,10 @@
     "assets": [],
     "note": "Palette rules, distribution: Compass Teal and Steel Grey are for rules, keylines, seal detail and one small muted line only, together no more than 5% of the designed, non-photographic area."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Measures the share of the area outside the photographs in the named colours."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-08/vehicle-card-r002/H070",
@@ -8535,8 +8561,10 @@
     ],
     "note": "Palette rules, distribution: on Meridian Navy, type is Showroom White, except small seal lettering, which may be Steel Grey as on the certification seal of meridian_window_card_autumn.pdf."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads each selected text line by OCR, then the colour of its letters and of the ground behind it."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-08/vehicle-card-r002/H072",
@@ -8701,8 +8729,10 @@
     ],
     "note": "Signature move and type rule: the price seats on a 1 pt Compass Teal rule across the full vehicle-card width, or across that vehicle's panel in the campaign. A 1 pt rule is a thin hairline at this size."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the text; where the named item appears, runs the check on it."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-08/inventory-campaign/H102",
@@ -8865,8 +8895,10 @@
     ],
     "note": "Palette rules, distribution: prices, mileage and listing detail always sit on Showroom White, never on a Meridian Navy band."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads each selected text line by OCR, then the colour of its letters and of the ground behind it."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-08/inventory-campaign/H118",
@@ -8971,8 +9003,10 @@
     ],
     "note": "Palette rules, distribution: on Showroom White, mileage and listing detail are Graphite #2E3237, as meridian_window_card_autumn.pdf sets its body values."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads each selected text line by OCR, then the colour of its letters and of the ground behind it."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-08/inventory-campaign/H120",
@@ -9087,8 +9121,10 @@
     ],
     "note": "Palette rules, distribution: on Showroom White, headings, labels and the dealership name are Meridian Navy; on Meridian Navy, type is Showroom White."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads each selected text line by OCR, then the colour of its letters and of the ground behind it."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-08/inventory-campaign/H122",
@@ -9145,8 +9181,10 @@
     ],
     "note": "Palette rules, distribution: fine print is Graphite #2E3237 or, as the one small muted line, Steel Grey #9AA1A8."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads each selected text line by OCR, then the colour of its letters and of the ground behind it."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-08/inventory-campaign/H123",
@@ -9198,8 +9236,10 @@
     "assets": [],
     "note": "Palette: Meridian Navy is the only colour allowed as a band, panel or seal ground; Graphite, Compass Teal and Steel Grey are never a ground."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Finds every ground, band, panel and button (flat areas outside the photographs) and reads its colour."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-08/vehicle-card-r002/H075",
@@ -9311,8 +9351,10 @@
     "assets": [],
     "note": "Palette: Meridian Navy is the only colour allowed as a band, panel or seal ground; Graphite, Compass Teal and Steel Grey are never a ground."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Finds every ground, band, panel and button (flat areas outside the photographs) and reads its colour."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-08/inventory-campaign/H125",
@@ -9359,8 +9401,10 @@
     "assets": [],
     "note": "Palette rules, distribution: on Showroom White, prices, headings, labels and the dealership name are Meridian Navy #1F2A3A."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads each selected text line by OCR, then the colour of its letters and of the ground behind it."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-08/vehicle-card-r002/H076",
@@ -11023,8 +11067,10 @@
     "assets": [],
     "note": "Type system step 03, Body note: “Mileage and listing detail, max 65 characters a line.”"
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Counts the characters of every line (PDF text, or OCR lines outside the photographs)."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-08/inventory-campaign/H075",
@@ -12784,8 +12830,10 @@
     "assets": [],
     "note": "Palette rules, opacity: every palette colour is used solid, at 100% opacity, with no tint, transparency, gradient, shadow or blend mode."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Runs the check and lets it decide only in the direction it is sure of; the other answer goes to a person."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-08/vehicle-card-r002/H034",
@@ -13311,8 +13359,10 @@
     "assets": [],
     "note": "Signature move and type rule: the price seats on a 1 pt Compass Teal rule across the full vehicle-card width, or across that vehicle's panel in the campaign. A 1 pt rule is a thin hairline at this size."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the text; where the named item appears, runs the check on it."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-08/inventory-campaign/H072",
@@ -13855,8 +13905,10 @@
     "assets": [],
     "note": "type_system.rules[3]: a 1 pt Compass Teal rule sits below the price; the type scale states that on a digital canvas 1 pt = 4/3 px."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the text; where the named item appears, runs the check on it."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-08/inventory-campaign/H126",
@@ -16096,8 +16148,10 @@
     ],
     "note": "brand_identity.creative_scope.fixed: keep each vehicle's paint, body geometry, visible condition and stock-record facts."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Searches the deliverable for the supplied file (feature matching, confirmed by correlation), then checks it keeps its own proportions."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-08/vehicle-card-r002/H079",
@@ -16212,8 +16266,10 @@
     ],
     "note": "brand_identity.creative_scope.fixed: keep each vehicle's paint, body geometry, visible condition and stock-record facts."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Searches the deliverable for the supplied file (feature matching, confirmed by correlation), then checks it keeps its own proportions."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-08/vehicle-card-r004/H077",
@@ -16270,8 +16326,10 @@
     ],
     "note": "brand_identity.creative_scope.fixed: keep each vehicle's paint, body geometry, visible condition and stock-record facts."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Searches the deliverable for the supplied file (feature matching, confirmed by correlation), then checks it keeps its own proportions."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-08/vehicle-card-r005/H078",
@@ -16622,8 +16680,10 @@
     ],
     "note": "Brief: “Make the dealership name clear and include the compass roundel.” Palette rules: Showroom White or Meridian Navy is the ground behind all type."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Checks each named text lies fully inside the page or image."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-08/inventory-campaign/H005",
@@ -16675,8 +16735,10 @@
     "assets": [],
     "note": "Type scale: fine print (step 04) is set smaller than body (step 03), so the disclosure reads as the smaller text."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Compares the sizes of every line of one kind with every line of the other."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-08/vehicle-card-r002/H058",
@@ -16923,8 +16985,10 @@
     "assets": [],
     "note": "Type scale: the price (step 01) is the ceiling of the scale and sits above the year, make and model heading (step 02)."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Compares the sizes of every line of one kind with every line of the other."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-08/inventory-campaign/H105",
@@ -16971,8 +17035,10 @@
     "assets": [],
     "note": "Type scale: fine print (step 04) is set smaller than body (step 03), so the disclosure reads as the smaller text. Captions (step 02) are larger still."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Compares the sizes of every line of one kind with every line of the other."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-08/inventory-campaign/H106",
@@ -17019,8 +17085,10 @@
     "assets": [],
     "note": "Type scale: fine print (step 04) is set smaller than body (step 03), so the disclosure reads as the smaller text."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Compares the sizes of every line of one kind with every line of the other."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-08/inventory-campaign/H107",
@@ -17067,8 +17135,10 @@
     "assets": [],
     "note": "Type scale: the year, make and model heading (step 02) is set larger than body (step 03) mileage and listing detail."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Compares the sizes of every line of one kind with every line of the other."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-08/inventory-campaign/H108",

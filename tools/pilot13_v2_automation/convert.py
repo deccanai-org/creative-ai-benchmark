@@ -16,6 +16,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import round2  # noqa: E402  (round 2: one handler per rule round 1 could not convert)
+import round3  # noqa: E402  (round 3: colour on images, defined roles, measurable judgement rules)
 TASKS = ROOT / 'docs/gatsby-v7/tasks'
 GROUPS = ROOT / 'docs/gatsby-v7/annotation-pilot-v2/groups'
 HERE = Path(__file__).resolve().parent
@@ -527,6 +528,7 @@ HOW = {
 
 
 HOW.update(round2.HOW)
+HOW.update(round3.HOW)
 
 
 def how(a) -> str:
@@ -562,7 +564,9 @@ def main():
     # --out <dir>: write moved/ and not_converted.json there instead of beside this script
     out_root = Path(sys.argv[sys.argv.index('--out') + 1]) if '--out' in sys.argv else HERE
     out_dir = out_root / 'moved'
-    plan = [p for p in json.loads(PLAN.read_text()) if p['status'] == 'auto']
+    # round 3 also converts rules first sorted as later (colour on images), needing a definition, or judgement,
+    # wherever a round-3 handler exists for them
+    plan = [p for p in json.loads(PLAN.read_text()) if p['status'] == 'auto' or (p['task'], p['rule']) in round3.R3]
     out_dir.mkdir(parents=True, exist_ok=True)
     summary, left = Counter(), defaultdict(list)
     for tid in TASK_IDS:
@@ -574,6 +578,8 @@ def main():
             rule = ctx.rules[p['rule']]
             if (tid, p['rule']) in round2.R2:
                 assertions = [round2.convert(tid, p['rule'], row, ctx) for row in rule['rows']]
+            elif (tid, p['rule']) in round3.R3:
+                assertions = [round3.convert(tid, p['rule'], row, ctx) for row in rule['rows']]
             else:
                 assertions = [convert(row, ctx) for row in rule['rows']]
             if not all(assertions):

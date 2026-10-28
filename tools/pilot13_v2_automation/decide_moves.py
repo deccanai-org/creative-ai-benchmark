@@ -7,8 +7,9 @@ row where the deliverable is right; known_true_fails lists every fail that was c
 Rules the code mostly sends back to a person stay with people for now: the automatic check exists, but on these
 outputs it would not save review time.
 
-Usage: python decide_moves.py <real results.json> <made good results.json> <made bad results.json> [<made bad2 results.json>]
-(bad2: the second broken set, with the round-2 defects of PLANTED2)
+Usage: python decide_moves.py <real results.json> <made good results.json> <made bad results.json> [<made bad2 results.json>
+       [<made bad3 results.json>]]
+(bad2 and bad3: the second and third broken sets, with the round-2 defects of PLANTED2 and the round-3 defects of PLANTED3)
 """
 from __future__ import annotations
 
@@ -43,6 +44,10 @@ KNOWN_TRUE_FAILS = {
     'PHOTO-26/wholesale-presentation/H049': 'prices are 17 pt and dimensions 11 pt, not 8.5 pt',
     'PHOTO-26/wholesale-presentation/H011': 'every price (17 pt) is set larger than its product name (13 pt)',
 }
+# round 3 (2026-10-28): the fails checked by hand, kept in a file of their own (check ID -> what is wrong)
+_R3_FAILS = HERE / 'known_true_fails_r3.json'
+if _R3_FAILS.is_file():
+    KNOWN_TRUE_FAILS.update(json.loads(_R3_FAILS.read_text()))
 # defects planted in the made "bad" files: (deliverable, rule) pairs where a fail is the expected answer
 PLANTED = {
     'LAYOUT-12': {('poster-direction-type-led', 'R003'), ('poster-direction-type-led', 'R004'),   # SAT 16 OCT for Koa
@@ -93,6 +98,102 @@ PLANTED2 = {
 }
 
 
+# round 3: defects planted in the made "bad3" files (one per file, from the generators' defects3 list): (deliverable, rule)
+# pairs; a planted defect may also break a round-1 or round-2 rule, listed with it
+PLANTED3 = {
+    'LAYOUT-12': {
+        ('poster-direction-graphic-led', 'R108'), ('poster-direction-graphic-led', 'R109'),   # both wordmarks sit straight on the Ash panel, with no Pitch ground under them
+        ('poster-direction-image-led', 'R166'), ('poster-direction-image-led', 'R148'),   # a Pitch scrim at 45% opacity is laid over the lower half of the photograph
+        ('poster-direction-type-led', 'R177'),   # Sable Quartet, Meridian Brass and Night Ferry are set at 48 pt like the remaining acts, no
+        ('promoter-deck', 'R114'),   # the identity page sets its body copy in three lines of 86 to 103 characters
+        ('release-post-r002', 'R082'),   # the act name SABLE QUARTET is set in Sodium, not Bone White
+        ('release-post-r003', 'R095'),   # the Meridian Brass wordmark is inked in Sodium, not Bone White
+        ('release-post-r004', 'R081'), ('release-post-r004', 'R104'),   # the archive photograph is left in full colour, not in the Pitch and Sodium pair of the oth
+        ('release-post-r005', 'R166'), ('release-post-r005', 'R084'),   # a Pitch gradient scrim (clear to 70%) darkens the lower half of the photograph
+        ('release-post-r006', 'R107'),   # the date line and act name sit on an Ash panel, not on Pitch
+        ('release-post-r007', 'R156'),   # the series title runs on one line, UMBRA / LOFT, not as a stack
+        ('release-post-r008', 'R102'),   # the date line is Bone White, not Sodium
+        ('release-post-r009', 'R079'), ('release-post-r009', 'R080'), ('release-post-r009', 'R093'),   # a Blood panel (about 12% of the designed area) sits behind the door and price lines
+        ('release-post-r010', 'R131'),   # the body line runs to 74 characters on one line
+    },
+    'VECTOR-04': {
+        ('gang-sheet', 'R080'),   # the Bag design 1 sticker is left in RGB; everything else is CMYK
+        ('new-sticker-companion-1', 'R089'),   # MERIDIAN & ASH is set flat on one straight baseline, not arched on the 40 degree curve
+        ('new-sticker-companion-2', 'R070'),   # the price lines are set in Brick Red on the Warm Cream tile
+        ('recovered-sticker-bag-design-1', 'R100'), ('recovered-sticker-bag-design-1', 'R045'), ('recovered-sticker-bag-design-1', 'R054'),   # a soft drop shadow (the moth again in Roast Brown at 40% opacity through a Gaussian blur f
+        ('recovered-sticker-bag-design-2', 'R071'), ('recovered-sticker-bag-design-2', 'R100'), ('recovered-sticker-bag-design-2', 'R079'),   # an Ink Black copy of the cone sits 0.2 mm behind it as a hard offset shadow, a main shape 
+        ('recovered-sticker-bag-design-3', 'R100'),   # the ridge line ink is set to the Multiply blend mode
+        ('recovered-sticker-window-mark', 'R051'),   # the hairline ring is filled in as a solid Warm Cream disc behind the roundel, with no open
+        ('sticker-cut-bag-design-1', 'R008'),   # the cut path is offset 2.5 mm with its corners left unrounded (inner corners sharp, outer 
+        ('sticker-cut-bag-design-2', 'R009'),   # a second closed path cuts round an island inside the artwork
+        ('sticker-cut-bag-design-3', 'R020'),   # the cut path's layer is named Layer 1, not CutContour
+        ('sticker-cut-companion-1', 'R021'), ('sticker-cut-companion-1', 'R009'),   # the sticker artwork is copied into the CutContour layer beside the cut path
+        ('sticker-cut-companion-2', 'R017'),   # the SVG declares no viewBox
+        ('sticker-cut-window-mark', 'R007'),   # the cut path is offset 1.5 mm from the artwork, not 2.5 mm
+        ('sticker-proof-bag-design-1', 'R018'), ('sticker-proof-bag-design-1', 'R057'), ('sticker-proof-bag-design-1', 'R001'),   # an opaque white rectangle fills the whole proof behind the sticker
+        ('sticker-proof-bag-design-2', 'R101'), ('sticker-proof-bag-design-2', 'R001'),   # a soft, semi-transparent drop shadow is painted under the sticker
+        ('sticker-proof-bag-design-3', 'R022'), ('sticker-proof-bag-design-3', 'R057'), ('sticker-proof-bag-design-3', 'R001'),   # the magenta cut line is drawn round the artwork
+        ('sticker-proof-companion-1', 'R097'), ('sticker-proof-companion-1', 'R001'),   # the wordmark is set at 13 pt, its capitals about 88 px tall
+        ('sticker-proof-companion-2', 'R074'), ('sticker-proof-companion-2', 'R062'), ('sticker-proof-companion-2', 'R001'),   # the price lines are set in Ink Black
+        ('sticker-proof-window-mark', 'R076'), ('sticker-proof-window-mark', 'R001'),   # the ash leaf is Kraft, not Warm Cream, so the proof no longer matches the SVG
+    },
+    'MOTION-11': {
+        ('channel-animation', 'R066'),   # STATIC and FOX carry no Jet Black outline on the end card
+        ('channel-teaser', 'R028'),   # capture 02's shot is played twice and capture 06's dropped
+        ('channel-teaser-vertical', 'R037'),   # the music is a synthesised loop, not staticfox_bed.wav
+        ('thumbnail-do-not-open-that-door', 'R048'),   # Scrap stands over half of capture 04's webcam window
+        ('thumbnail-everyone-off-the-platform', 'R078'), ('thumbnail-everyone-off-the-platform', 'R058'),   # a 45% Jet Black scrim darkens the capture below the title panel
+        ('thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi', 'R086'), ('thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi', 'R098'),   # the payoff word FIRE is set in Anton at the setup size, not in Archivo Black
+        ('thumbnail-kitchen-gone', 'R064'), ('thumbnail-kitchen-gone', 'R065'),   # the title panel is Acid Signal, not Static Purple
+        ('thumbnail-we-broke-the-map', 'R055'),   # the payoff word MAP has no Jet Black outline
+        ('thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas', 'R082'), ('thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas', 'R120'),   # the long title stack is set at 64 px, its setup capitals about 55 px tall
+    },
+}
+
+
+# round 3: rules a planted defect also breaks, found in the final run and confirmed against the rule's wording and the
+# generators (the correct file passes; the broken file differs only by its planted defect)
+ALSO_BROKEN = {
+    'made_bad': {'LAYOUT-12': {('release-post-r007', 'R145')},          # the &nbsp; shows lowercase "nbsp" in the door line
+                 'MOTION-11': {('channel-animation', 'R107')},          # STATIC FAX: FOX is not on the last row
+                 'VECTOR-04': {('gang-sheet', 'R063'),                  # the window mark's off-palette red, placed on the sheet
+                               ('sticker-proof-window-mark', 'R057')}},  # and shown on its proof
+    'made_bad2': {'LAYOUT-12': {('poster-direction-image-led', 'R116')},  # Coral Sound set as a headline in Sora ExtraBold
+                  'MOTION-11': {('channel-animation', 'R089'),          # STATIC shrunk to 64 px to put SUBSCRIBE above it
+                                ('channel-animation', 'R090')},         # SUBSCRIBE OR DAVE WINS set in Anton
+                  'VECTOR-04': {('sticker-proof-bag-design-1', 'R001'), ('sticker-proof-bag-design-2', 'R001'),
+                                ('sticker-proof-bag-design-3', 'R001'),  # proofs keep the original artwork (by design)
+                                ('sticker-cut-bag-design-1', 'R009'), ('sticker-cut-bag-design-2', 'R009'),
+                                ('sticker-cut-bag-design-3', 'R009'), ('sticker-cut-window-mark', 'R009')}},  # cut paths too
+    'made_bad3': {'VECTOR-04': {('sticker-proof-bag-design-2', 'R018')}},  # the painted shadow shows through the open space
+}
+
+# settings that are limits chosen in code (tolerances, thresholds, definitions), as opposed to values the rule states
+CHOSEN = {'tol', 'min_conf', 'min_cover', 'min_chars', 'max_de', 'max_scale', 'tol_pt', 'pass_em', 'fail_em', 'min_share',
+          'min_tiles', 'max_rows', 'max_words', 'max_other_words', 'min_words', 'min_ncc', 'thickness', 'min_gap', 'thin_px',
+          'small_px'}
+
+
+def limits(a, found) -> set:
+    """The limits a check decides by: its chosen settings and every pass_if / fail_if condition, as (name, cmp, value)."""
+    if isinstance(a, dict):
+        for k, v in a.items():
+            if k.startswith('_') or isinstance(v, bool):
+                continue
+            if k in CHOSEN and isinstance(v, (int, float)):
+                found.add((k, '=', v))
+            elif k in ('pass_if', 'fail_if') and isinstance(v, list):
+                for c in v:
+                    if isinstance(c, list) and len(c) == 3 and isinstance(c[2], (int, float)):
+                        found.add((f'{k[:-3]}:{c[0]}', c[1], c[2]))
+            else:
+                limits(v, found)
+    elif isinstance(a, list):
+        for v in a:
+            limits(v, found)
+    return found
+
+
 def is_planted(planted, task, output, rule, check_id) -> bool:
     entries = planted.get(task, set())
     return (output, rule) in entries or check_id in entries
@@ -132,13 +233,17 @@ def note(r) -> str:
 def main():
     real, good, bad = (json.loads(Path(p).read_text()) for p in sys.argv[1:4])
     bad2 = json.loads(Path(sys.argv[4]).read_text()) if len(sys.argv) > 4 else []
+    bad3 = json.loads(Path(sys.argv[5]).read_text()) if len(sys.argv) > 5 else []
     pilot = {r['check_id']: {'status': r['status'], 'note': note(r)} for r in real
              if r['task'] not in MADE_TASKS and r['status'] in ('pass', 'fail', 'person')}
     (HERE / 'pilot_results_2026-09-28.json').write_text(json.dumps(pilot, ensure_ascii=False, indent=1) + '\n')
     moved = {f.stem: json.loads(f.read_text())['moved'] for f in sorted((HERE / 'moved').glob('*.json'))}
-    stats = defaultdict(lambda: {'real': Counter(), 'made_good': Counter(), 'made_bad': Counter(), 'made_bad2': Counter(), 'wrong': []})
-    for name, results in (('real', real), ('made_good', good), ('made_bad', bad), ('made_bad2', bad2)):
-        planted = PLANTED2 if name == 'made_bad2' else PLANTED
+    stats = defaultdict(lambda: {'real': Counter(), 'made_good': Counter(), 'made_bad': Counter(), 'made_bad2': Counter(),
+                                 'made_bad3': Counter(), 'wrong': []})
+    for name, results in (('real', real), ('made_good', good), ('made_bad', bad), ('made_bad2', bad2), ('made_bad3', bad3)):
+        planted = {'made_bad2': PLANTED2, 'made_bad3': PLANTED3}.get(name, PLANTED)
+        also = ALSO_BROKEN.get(name, {})
+        planted = {t: planted.get(t, set()) | also.get(t, set()) for t in set(planted) | set(also)}
         for r in results:
             if name == 'real' and r['task'] in MADE_TASKS:
                 continue
@@ -147,7 +252,7 @@ def main():
             s[name][r['status']] += 1
             output = r['check_id'].split('/')[1]
             hit = is_planted(planted, r['task'], output, r['rule_id'], r['check_id'])
-            if name in ('made_bad', 'made_bad2') and r['status'] == 'pass' and hit:
+            if name in ('made_bad', 'made_bad2', 'made_bad3') and r['status'] == 'pass' and hit:
                 s['wrong'].append({'check': r['check_id'], 'run': name, 'why': 'passed a planted defect'})
             if r['status'] in ('error',):
                 s['wrong'].append({'check': r['check_id'], 'run': name, 'why': 'operation error'})
@@ -156,7 +261,7 @@ def main():
                     s['wrong'].append({'check': r['check_id'], 'run': name, 'why': 'fail not confirmed as a real defect'})
                 if name == 'made_good':
                     s['wrong'].append({'check': r['check_id'], 'run': name, 'why': 'fail on a correct made file'})
-                if name in ('made_bad', 'made_bad2') and not hit:
+                if name in ('made_bad', 'made_bad2', 'made_bad3') and not hit:
                     s['wrong'].append({'check': r['check_id'], 'run': name, 'why': 'fail where no defect was planted'})
     decisions = {}
     for tid, rows in moved.items():
@@ -179,7 +284,9 @@ def main():
                 verdict, why = 'moves', f'the code decided {decided} of {tested} test rows with no wrong answer'
             out[rid] = {'verdict': verdict, 'why': why, 'checks': [m['check_id'] for m in members], 'k_id': members[0]['k_id'],
                         'critical': members[0]['critical'], 'how': sorted({m['how'] for m in members}),
-                        'test': {k: dict(s[k]) for k in ('real', 'made_good', 'made_bad', 'made_bad2') if s[k]}, 'wrong': s['wrong']}
+                        'limits': sorted(set().union(*(limits(m['assertion'], set()) for m in members)), key=str),
+                        'test': {k: dict(s[k]) for k in ('real', 'made_good', 'made_bad', 'made_bad2', 'made_bad3') if s[k]},
+                        'wrong': s['wrong']}
         decisions[tid] = out
     (HERE / 'moved_rules.json').write_text(json.dumps(decisions, ensure_ascii=False, indent=1) + '\n')
     total = Counter()

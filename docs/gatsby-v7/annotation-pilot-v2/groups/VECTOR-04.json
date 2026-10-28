@@ -956,8 +956,10 @@
     ],
     "note": "Brief: this file contains one cutting contour. meridian_sheet_spec.txt: \"Supply the kiss-cut contour as ITS OWN separable object: one closed path per sticker on a dedicated cut layer named 'CutContour'.\""
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the cut-contour SVG's groups and paths."
+   ],
    "rows": [
     {
      "check_id": "VECTOR-04/sticker-cut-window-mark/H003",
@@ -1116,8 +1118,10 @@
     ],
     "note": "meridian_sheet_spec.txt: \"Safe margin from sheet edge: 10 mm. No artwork and no cut inside this margin.\""
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the cut paths on the sheet's cut layer and measures them."
+   ],
    "rows": [
     {
      "check_id": "VECTOR-04/gang-sheet/H001",
@@ -1174,8 +1178,10 @@
     ],
     "note": "meridian_sheet_spec.txt: \"Minimum gutter between adjacent cut contours: 6 mm.\""
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the cut paths on the sheet's cut layer and measures them."
+   ],
    "rows": [
     {
      "check_id": "VECTOR-04/gang-sheet/H002",
@@ -1232,8 +1238,10 @@
     ],
     "note": "meridian_sheet_spec.txt: \"Safe margin from sheet edge: 10 mm. No artwork and no cut inside this margin.\""
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the cut paths on the sheet's cut layer and measures them."
+   ],
    "rows": [
     {
      "check_id": "VECTOR-04/gang-sheet/H005",
@@ -1290,8 +1298,10 @@
     ],
     "note": "meridian_sheet_spec.txt: \"Single stickers reproduce at 55 mm on the long edge on the tent table.\""
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the cut paths on the sheet's cut layer and measures them."
+   ],
    "rows": [
     {
      "check_id": "VECTOR-04/gang-sheet/H013",
@@ -1574,8 +1584,10 @@
     "assets": [],
     "note": "Commission export settings: SVG with editable vector paths and an explicit viewBox."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the SVG's viewBox."
+   ],
    "rows": [
     {
      "check_id": "VECTOR-04/recovered-sticker-window-mark/H019",
@@ -2030,8 +2042,10 @@
     ],
     "note": "meridian_sheet_spec.txt: \"Supply the kiss-cut contour as ITS OWN separable object: one closed path per sticker on a dedicated cut layer named 'CutContour'.\""
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the cut-contour SVG's groups and paths."
+   ],
    "rows": [
     {
      "check_id": "VECTOR-04/sticker-cut-window-mark/H005",
@@ -2175,8 +2189,10 @@
     ],
     "note": "meridian_sheet_spec.txt: \"Supply the kiss-cut contour as ITS OWN separable object: one closed path per sticker on a dedicated cut layer named 'CutContour'.\" meridian_sheet_spec.txt: \"Do NOT draw the cut line into the picture.\""
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the cut-contour SVG's groups and paths."
+   ],
    "rows": [
     {
      "check_id": "VECTOR-04/sticker-cut-window-mark/H006",
@@ -2600,8 +2616,10 @@
     ],
     "note": "meridian_sheet_spec.txt: \"Supply the kiss-cut contour as ITS OWN separable object: one closed path per sticker on a dedicated cut layer named 'CutContour'.\""
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the cut paths on the sheet's cut layer and measures them."
+   ],
    "rows": [
     {
      "check_id": "VECTOR-04/gang-sheet/H003",
@@ -2658,8 +2676,10 @@
     ],
     "note": "meridian_sheet_spec.txt: \"Supply the kiss-cut contour as ITS OWN separable object: one closed path per sticker on a dedicated cut layer named 'CutContour'.\""
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the cut paths on the sheet's cut layer and measures them."
+   ],
    "rows": [
     {
      "check_id": "VECTOR-04/gang-sheet/H016",
@@ -2824,8 +2844,10 @@
     "assets": [],
     "note": "meridian_sheet_spec.txt: one closed path per sticker on a dedicated cut layer named 'CutContour'."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the cut paths on the sheet's cut layer and measures them."
+   ],
    "rows": [
     {
      "check_id": "VECTOR-04/gang-sheet/H024",
@@ -2938,8 +2960,10 @@
     "assets": [],
     "note": "Export settings: CutContour remains a separate named layer and spot colour; preserve named spot cut lines separately."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the PDF's colour operators and checks the cut paths use a spot colour named CutContour."
+   ],
    "rows": [
     {
      "check_id": "VECTOR-04/gang-sheet/H029",
@@ -3135,8 +3159,10 @@
     ],
     "note": "meridian_sheet_spec.txt: \"Supply the kiss-cut contour as ITS OWN separable object: one closed path per sticker on a dedicated cut layer named 'CutContour'.\""
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the cut paths on the sheet's cut layer and measures them."
+   ],
    "rows": [
     {
      "check_id": "VECTOR-04/gang-sheet/H006",
@@ -3334,8 +3360,10 @@
     ],
     "note": "Brief, pinned: the design preserves its photographed original, meridian_bag_moth.jpg for bag design 1."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Compares the drawing with each supplied photo by feature matching."
+   ],
    "rows": [
     {
      "check_id": "VECTOR-04/sticker-proof-bag-design-1/H003",
@@ -3389,8 +3417,10 @@
     ],
     "note": "Brief, pinned: the design preserves its photographed original, meridian_bag_pourover.jpg for bag design 2."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Compares the drawing with each supplied photo by feature matching."
+   ],
    "rows": [
     {
      "check_id": "VECTOR-04/sticker-proof-bag-design-2/H003",
@@ -4145,8 +4175,10 @@
     "assets": [],
     "note": "Production requirement: the imposed sheet carries the delivered masters; compare against recovered-sticker-window-mark.svg. Brand type system rule: Hand made, not franchise: the artwork is drawn once and reused, never redrawn slightly differently each batch."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Renders the delivered sticker, finds it on the sheet, and compares its proportions and colours."
+   ],
    "rows": [
     {
      "check_id": "VECTOR-04/gang-sheet/H007",
@@ -4205,8 +4237,10 @@
     "2": "deliverable file"
    },
    "shared_reference": null,
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Renders the delivered sticker, finds it on the sheet, and compares its proportions and colours."
+   ],
    "rows": [
     {
      "check_id": "VECTOR-04/gang-sheet/H008",
@@ -4864,8 +4898,10 @@
     "assets": [],
     "note": "Brand palette, six hexes. Palette rules, forbidden: no colour outside them for any artwork, type, backing shape, label or mark."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads every flat colour outside photographs, transparent parts and capture footage, and checks each is a palette colour."
+   ],
    "rows": [
     {
      "check_id": "VECTOR-04/sticker-proof-window-mark/H012",
@@ -4982,8 +5018,10 @@
     ],
     "note": "Palette rules, distribution: the moth keeps its Roast Brown ink. Supplied photo meridian_bag_moth.jpg shows it printed in roast brown."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Renders the artwork and finds the colour covering most of it, grounds left out."
+   ],
    "rows": [
     {
      "check_id": "VECTOR-04/sticker-proof-bag-design-1/H010",
@@ -5040,8 +5078,10 @@
     ],
     "note": "Palette rules, distribution: the pour-over cone keeps its Ash Green ink. Supplied photo meridian_bag_pourover.jpg shows it printed in ash green."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Renders the artwork and finds the colour covering most of it, grounds left out."
+   ],
    "rows": [
     {
      "check_id": "VECTOR-04/sticker-proof-bag-design-2/H010",
@@ -5098,8 +5138,10 @@
     ],
     "note": "Palette rules, distribution: the ridge line keeps its Brick Red ink. Supplied photo meridian_bag_ridgeline.jpg shows it printed in brick red."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Renders the artwork and finds the colour covering most of it, grounds left out."
+   ],
    "rows": [
     {
      "check_id": "VECTOR-04/sticker-proof-bag-design-3/H010",
@@ -5151,8 +5193,10 @@
     "assets": [],
     "note": "Palette rules, distribution: each companion takes its main ink from Roast Brown, Ash Green and Brick Red, the inks of the recovered designs."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Renders the artwork and finds the colour covering most of it, grounds left out."
+   ],
    "rows": [
     {
      "check_id": "VECTOR-04/sticker-proof-companion-1/H005",
@@ -5217,8 +5261,10 @@
     ],
     "note": "Palette rules, distribution: type on a light ground is Roast Brown, or Ash Green for a secondary line; type on Roast Brown or Ash Green is Warm Cream, as on meridian_shelfcard_2025.pdf."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads each text line by OCR, then the colour of its letters and of the ground round it."
+   ],
    "rows": [
     {
      "check_id": "VECTOR-04/sticker-proof-companion-1/H012",
@@ -5288,8 +5334,10 @@
     "assets": [],
     "note": "Brand palette, six hexes. Palette rules, forbidden: no colour outside them for any artwork, type, backing shape, label or mark. The cut paths on the CutContour layer are production lines and are exempt."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads every colour in the PDF, converts CMYK through the supplied output profile, and compares with the palette."
+   ],
    "rows": [
     {
      "check_id": "VECTOR-04/gang-sheet/H019",
@@ -5336,8 +5384,10 @@
     "assets": [],
     "note": "Palette rules, opacity: every palette colour solid at 100%; no tint, transparency, gradient, shadow or blend mode."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the PDF for transparency, gradients, soft masks, blend modes and duplicated shadow type."
+   ],
    "rows": [
     {
      "check_id": "VECTOR-04/gang-sheet/H020",
@@ -5702,8 +5752,10 @@
     ],
     "note": "Palette rules, distribution: type on a light ground is Roast Brown, or Ash Green for a secondary line; type on Roast Brown or Ash Green is Warm Cream, as on meridian_shelfcard_2025.pdf."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads each text line by OCR, then the colour of its letters and of the ground round it."
+   ],
    "rows": [
     {
      "check_id": "VECTOR-04/new-sticker-companion-1/H013",
@@ -6462,8 +6514,10 @@
     "assets": [],
     "note": "gang-sheet export_settings: CMYK artwork, convert palette colours from sRGB using PSO Coated v3; palette_rules.distribution."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the colour space of every path, image and shading in the PDF."
+   ],
    "rows": [
     {
      "check_id": "VECTOR-04/gang-sheet/H031",
@@ -6510,8 +6564,10 @@
     "assets": [],
     "note": "Brand identity, palette_rules.distribution: type on Roast Brown or Ash Green is Warm Cream."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads each text line by OCR, then the colour of its letters and of the ground round it."
+   ],
    "rows": [
     {
      "check_id": "VECTOR-04/new-sticker-companion-1/H032",
@@ -6571,8 +6627,10 @@
     "assets": [],
     "note": "Brand identity, palette_rules.distribution: type on Roast Brown or Ash Green is Warm Cream."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads each text line by OCR, then the colour of its letters and of the ground round it."
+   ],
    "rows": [
     {
      "check_id": "VECTOR-04/sticker-proof-companion-1/H024",
@@ -7072,8 +7130,10 @@
     "assets": [],
     "note": "Type system step 03: Libre Franklin Regular 400, tracking 0, max 65 characters, for every line of sticker copy."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the selected lines (live text where there is any) and counts their characters."
+   ],
    "rows": [
     {
      "check_id": "VECTOR-04/new-sticker-companion-1/H012",
@@ -7168,8 +7228,10 @@
     ],
     "note": "Type system step 04: fine print is Libre Franklin Bold, capitals only, Bold 700. Gang sheet capitals, die line notes and slug labels in the artwork margin. Libre Franklin Bold 700 only, never DM Serif Display. Brand type system rule: DM Serif Display Regular is display only; Libre Franklin Regular 400 sets sticker copy and Libre Franklin Bold 700 the gang sheet capitals."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the glyphs' advance widths from the PDF and compares them with the supplied font at every weight."
+   ],
    "rows": [
     {
      "check_id": "VECTOR-04/gang-sheet/H021",
@@ -7627,8 +7689,10 @@
     "assets": [],
     "note": "Brand identity, type_system.scale step 03: Libre Franklin Regular 7 pt on 10.5 pt leading; 1 pt is 1/72 inch."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the SVG's live text lines and measures the distance between their baselines."
+   ],
    "rows": [
     {
      "check_id": "VECTOR-04/new-sticker-companion-1/H027",
@@ -7688,8 +7752,10 @@
     "assets": [],
     "note": "Brand identity, type_system.scale step 02: DM Serif Display Regular 11 pt on 13 pt leading; 1 pt is 1/72 inch."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the SVG's live text lines and measures the distance between their baselines."
+   ],
    "rows": [
     {
      "check_id": "VECTOR-04/new-sticker-companion-1/H028",
@@ -7749,8 +7815,10 @@
     "assets": [],
     "note": "Brand identity, type_system.scale step 04: Libre Franklin Bold 6 pt on 8.5 pt leading; 1 pt is 1/72 inch."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the type lying outside the stickers' cut paths on the sheet."
+   ],
    "rows": [
     {
      "check_id": "VECTOR-04/gang-sheet/H030",
@@ -7797,8 +7865,10 @@
     "assets": [],
     "note": "Brand identity, type_system.scale step 01: DM Serif Display Regular 18 pt on 20 pt leading; 1 pt is 1/72 inch."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the SVG's live text lines and measures the distance between their baselines."
+   ],
    "rows": [
     {
      "check_id": "VECTOR-04/new-sticker-companion-1/H029",
@@ -8006,8 +8076,10 @@
     "assets": [],
     "note": "Brand identity, type_system.scale step 04: Libre Franklin Bold, capitals only, for gang sheet labels and die line notes."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the type lying outside the stickers' cut paths on the sheet."
+   ],
    "rows": [
     {
      "check_id": "VECTOR-04/gang-sheet/H032",
@@ -8364,8 +8436,10 @@
     "assets": [],
     "note": "Palette rules, photography: no photograph appears in any deliverable; the supplied photographs are tracing references only."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Looks for photograph-like texture in the image."
+   ],
    "rows": [
     {
      "check_id": "VECTOR-04/sticker-proof-companion-1/H020",
@@ -8473,8 +8547,10 @@
     "assets": [],
     "note": "Palette rules, photography: no photograph appears in any deliverable; the supplied photographs are tracing references only."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the sheet for placed pictures and fields of tiny specks."
+   ],
    "rows": [
     {
      "check_id": "VECTOR-04/gang-sheet/H028",

@@ -370,8 +370,10 @@
     ],
     "note": "compliance_note.txt: \"When we show what a premium buys, the figures must be true to the pricing desk's table.\" The brief commissions no premium on the card and countercard_2026_print.pdf prints none, so this applies only if one is shown."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads all text and checks none of the named words or patterns appears."
+   ],
    "rows": [
     {
      "check_id": "LAYOUT-15/producer-card-r002/H012",
@@ -740,8 +742,10 @@
    ],
    "slot_labels": {},
    "shared_reference": null,
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the text from the PDF, checks every line lies inside the trim, and reads its last words on the rendered page."
+   ],
    "rows": [
     {
      "check_id": "LAYOUT-15/producer-card-r002/H003",
@@ -1017,8 +1021,10 @@
     "assets": [],
     "note": "Brand identity, type_system.rules: do not scale pages when combining them; brief: 148 x 210 mm trim."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads every page's trim and compares each page with its own card."
+   ],
    "rows": [
     {
      "check_id": "LAYOUT-15/producer-card-combined/H004",
@@ -1784,8 +1790,10 @@
     ],
     "note": "compliance_note.txt: \"No superlatives, no urgency, no exclamation, no burst or starburst callouts, no implied guarantee of a return or of approval, no comparison that flatters us against a competitor.\" Type system rule: Nothing may read as an advertisement. No exclamation and no urgency at any step."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the PDF's text, shapes and pictures and checks they are only the supplied copy and files."
+   ],
    "rows": [
     {
      "check_id": "LAYOUT-15/producer-card-r002/H014",
@@ -2058,8 +2066,10 @@
     "1": "Photo File"
    },
    "shared_reference": null,
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Matches every placed picture in the PDF with the supplied files."
+   ],
    "rows": [
     {
      "check_id": "LAYOUT-15/producer-card-r002/H015",
@@ -2423,8 +2433,10 @@
    ],
    "slot_labels": {},
    "shared_reference": null,
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Runs each part; all must pass: Reads the PDF's text, shapes and pictures and checks they are only the supplied copy and files; Reads all text and checks none of the named words or patterns appears."
+   ],
    "rows": [
     {
      "check_id": "LAYOUT-15/producer-card-r002/H016",
@@ -2698,8 +2710,10 @@
     ],
     "note": "producer_roster_northern.csv row 15, field Photo File: nandakumar_headshot.jpg, not supplied. compliance_note.txt: \"We may NOT use a photograph of a policyholder, a client, or a real family, and we own none.\" compliance_note.txt: \"If a piece needs an opening image that is not one of our own people, it must be a clearly licensed stock or illustrative image and it must be honest about being that.\""
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the PDF's text, shapes and pictures and checks they are only the supplied copy and files."
+   ],
    "rows": [
     {
      "check_id": "LAYOUT-15/producer-card-r015/H008",
@@ -2760,8 +2774,10 @@
     ],
     "note": "compliance_note.txt, PHOTOGRAPHS: no policyholder, client or real family photograph; stock must be honest about being that."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Matches every placed picture in the PDF with the supplied files."
+   ],
    "rows": [
     {
      "check_id": "LAYOUT-15/producer-card-r015/H047",
@@ -2815,8 +2831,10 @@
     "1": "text"
    },
    "shared_reference": null,
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the text from the PDF, checks every line lies inside the trim, and reads its last words on the rendered page."
+   ],
    "rows": [
     {
      "check_id": "LAYOUT-15/producer-card-r005/H003",
@@ -2915,8 +2933,10 @@
     ],
     "note": "compliance_note.txt: \"Our three plans are not quoted the same way and must not be presented as one comparable set of numbers without a clear, plainly worded qualification that a family can read and understand.\" plan_rates_2027.csv plans: Heritage Whole Life, Evergreen Whole Life and Final Expense Direct; no column states a basis."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads all text and checks none of the named words or patterns appears."
+   ],
    "rows": [
     {
      "check_id": "LAYOUT-15/producer-card-r002/H004",
@@ -3426,8 +3446,10 @@
     ],
     "note": "producer_roster_northern.csv row 4, field Appointment Status: Resigned 11/2026. compliance_note.txt: \"If a producer's appointment has ended - resigned, terminated, lapsed - that producer must be removed before anything prints, regardless of what the licensing export still shows.\""
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Runs each part; all must pass: Searches the deliverable for the named supplied files; Reads all text and checks none of the named words or patterns appears."
+   ],
    "rows": [
     {
      "check_id": "LAYOUT-15/producer-card-combined/H002",
@@ -3492,8 +3514,10 @@
     ],
     "note": "Deliverable commission content: if the portrait is unavailable, leave the portrait area empty; do not use stock or generated identity imagery. producer_roster_northern.csv row 15 names nandakumar_headshot.jpg, which was never supplied."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the PDF's text, shapes and pictures and checks they are only the supplied copy and files."
+   ],
    "rows": [
     {
      "check_id": "LAYOUT-15/producer-card-r015/H046",
@@ -3971,8 +3995,10 @@
     "1": "Photo File"
    },
    "shared_reference": null,
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Finds the supplied picture and measures whether it was stretched."
+   ],
    "rows": [
     {
      "check_id": "LAYOUT-15/producer-card-r002/H006",
@@ -4577,8 +4603,10 @@
     ],
     "note": "producer_headshot_08.jpg shows a partner bank's PINEBROOK SAVINGS counter sign on the wall. Truth constraint: Do not silently replace a weak supplied asset. Use it honestly, reject it with a reason, or take only the brief's declared Stock or concept exception. Source of truth: Approved client notes and permissions govern factual corrections."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Finds the supplied photo and compares a marked part of it with the deliverable."
+   ],
    "rows": [
     {
      "check_id": "LAYOUT-15/producer-card-r009/H015",
@@ -4877,8 +4905,10 @@
    ],
    "slot_labels": {},
    "shared_reference": null,
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Finds the text and the full-width rules in the PDF and checks a rule sits on its baseline or directly above it."
+   ],
    "rows": [
     {
      "check_id": "LAYOUT-15/producer-card-r002/H019",
@@ -5133,8 +5163,10 @@
    ],
    "slot_labels": {},
    "shared_reference": null,
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Checks the PDF page is drawn as vectors (not mostly a placed picture), then reads its colours, rules or ground from the drawings."
+   ],
    "rows": [
     {
      "check_id": "LAYOUT-15/producer-card-r002/H022",
@@ -5334,8 +5366,10 @@
    ],
    "slot_labels": {},
    "shared_reference": null,
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Finds every flat area of one colour big enough to be a ground or panel (photographs and type left out) and reads its colour."
+   ],
    "rows": [
     {
      "check_id": "LAYOUT-15/producer-card-r002/H023",
@@ -5590,8 +5624,10 @@
    ],
    "slot_labels": {},
    "shared_reference": null,
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads every shape drawn in the colour from the PDF in drawing order and sorts it into rules, keylines, chart marks and areas."
+   ],
    "rows": [
     {
      "check_id": "LAYOUT-15/producer-card-r002/H008",
@@ -5836,8 +5872,10 @@
     "1": "Photo File"
    },
    "shared_reference": null,
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Compares the placed photo's colours with the supplied file."
+   ],
    "rows": [
     {
      "check_id": "LAYOUT-15/producer-card-r002/H025",
@@ -6116,8 +6154,10 @@
     ],
     "note": "Type system rule: The producer name sits directly on a 1 pt Heritage Green rule running the full card width, and the identical rule repeats above the disclosure, so every piece is bracketed top and bottom in green. Palette rules, distribution: Heritage Green is only the two 1 pt rules, as countercard_2026_print.pdf uses it for its two hairlines only. Palette rules, distribution: Mist Grey is only for thin dividers or a keyline. Palette rules, forbidden: the colour limits govern type, panels, rules, buttons or icons. Palette rules, photography: photographs keep their own natural colour."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads every shape drawn in the colour from the PDF in drawing order and sorts it into rules, keylines, chart marks and areas."
+   ],
    "rows": [
     {
      "check_id": "LAYOUT-15/producer-card-r015/H022",
@@ -6169,8 +6209,10 @@
     "assets": [],
     "note": "Palette rules, photography: photographs keep their own natural colour and skin tones and are never tinted, duotoned or recoloured toward the palette."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Matches every placed picture in the PDF with the supplied files."
+   ],
    "rows": [
     {
      "check_id": "LAYOUT-15/producer-card-r015/H024",
@@ -6217,8 +6259,10 @@
     "assets": [],
     "note": "Brand identity, signature_type_move: a full-width 1 pt Heritage Green rule below the producer name; a second identical rule above the disclosure."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Finds the text and the full-width rules in the PDF and checks a rule sits on its baseline or directly above it."
+   ],
    "rows": [
     {
      "check_id": "LAYOUT-15/producer-card-r002/H049",
@@ -6426,8 +6470,10 @@
     ],
     "note": "Brand identity, palette_rules.distribution and palette: the producer name and the Disclosure Text in Ink Navy."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the colour of every span of the named text from the PDF."
+   ],
    "rows": [
     {
      "check_id": "LAYOUT-15/producer-card-r002/H051",
@@ -6700,8 +6746,10 @@
     ],
     "note": "Brand identity, palette_rules.distribution and palette: the producer name and the Disclosure Text in Ink Navy."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the colour of every span of the named text from the PDF."
+   ],
    "rows": [
     {
      "check_id": "LAYOUT-15/producer-card-r002/H052",
@@ -6974,8 +7022,10 @@
     ],
     "note": "Brand identity, palette_rules.distribution and palette: the license line and office in Slate."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the colour of every span of the named text from the PDF."
+   ],
    "rows": [
     {
      "check_id": "LAYOUT-15/producer-card-r002/H053",
@@ -7243,8 +7293,10 @@
     "assets": [],
     "note": "Brand identity, palette_rules.distribution and palette: Mist Grey is only for thin dividers or a keyline."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads every shape drawn in the colour from the PDF in drawing order and sorts it into rules, keylines, chart marks and areas."
+   ],
    "rows": [
     {
      "check_id": "LAYOUT-15/producer-card-r002/H054",
@@ -7434,8 +7486,10 @@
     "assets": [],
     "note": "Brand identity, palette_rules.opacity: no scrim, gradient or overlay of any colour over a photograph."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the PDF in drawing order and checks nothing see-through or graded is drawn over a placed photograph."
+   ],
    "rows": [
     {
      "check_id": "LAYOUT-15/producer-card-r002/H055",
@@ -7638,8 +7692,10 @@
     "assets": [],
     "note": "Brand identity, signature_type_move: keep both rules in the same position across the producer run."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Checks the PDF page is drawn as vectors (not mostly a placed picture), then reads its colours, rules or ground from the drawings."
+   ],
    "rows": [
     {
      "check_id": "LAYOUT-15/producer-card-r003/H057",
@@ -7829,8 +7885,10 @@
     "assets": [],
     "note": "Brand identity, palette_rules.distribution and palette: Mist Grey is only for thin dividers or a keyline."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads every shape drawn in the colour from the PDF in drawing order and sorts it into rules, keylines, chart marks and areas."
+   ],
    "rows": [
     {
      "check_id": "LAYOUT-15/producer-card-r015/H054",
@@ -7877,8 +7935,10 @@
     "assets": [],
     "note": "Brand identity, signature type move and Heritage Green usage: the two 1 pt rules, each the full card width."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads every shape drawn in the colour from the PDF in drawing order and sorts it into rules, keylines, chart marks and areas."
+   ],
    "rows": [
     {
      "check_id": "LAYOUT-15/producer-card-r002/H057",
@@ -8081,8 +8141,10 @@
     "assets": [],
     "note": "Brand identity, palette_rules.distribution: Heritage Green and Mist Grey together cover no more than 5% of the designed, non-photographic area."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Renders the PDF, leaves out the placed pictures and measures the share of the rest in the named colours."
+   ],
    "rows": [
     {
      "check_id": "LAYOUT-15/producer-card-r002/H060",
@@ -8290,8 +8352,10 @@
     ],
     "note": "Brand identity, palette_rules.distribution: all type is Ink Navy or Slate, any premium in either; forbidden: no type in Heritage Green, Mist Grey or Document Paper."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the colour of every span of the named text from the PDF."
+   ],
    "rows": [
     {
      "check_id": "LAYOUT-15/producer-card-r002/H062",
@@ -8559,8 +8623,10 @@
     "assets": [],
     "note": "Brand identity, palette: Ink Navy and Slate are never a ground, panel or rule; Document Paper is never type or a rule."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads every shape drawn in the colour from the PDF in drawing order and sorts it into rules, keylines, chart marks and areas."
+   ],
    "rows": [
     {
      "check_id": "LAYOUT-15/producer-card-r002/H063",
@@ -8768,8 +8834,10 @@
     "1": "Producer Name"
    },
    "shared_reference": null,
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the glyphs' advance widths from the PDF and compares them with the supplied font at every weight."
+   ],
    "rows": [
     {
      "check_id": "LAYOUT-15/producer-card-r002/H017",
@@ -9208,8 +9276,10 @@
    ],
    "slot_labels": {},
    "shared_reference": null,
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the glyphs' advance widths from the PDF and compares them with the supplied font at every weight."
+   ],
    "rows": [
     {
      "check_id": "LAYOUT-15/producer-card-r002/H007",
@@ -9630,8 +9700,10 @@
     "1": "text"
    },
    "shared_reference": null,
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the glyphs' advance widths from the PDF and compares them with the supplied font at every weight."
+   ],
    "rows": [
     {
      "check_id": "LAYOUT-15/producer-card-r002/H020",
@@ -10102,8 +10174,10 @@
     ],
     "note": "Current brand typography; use the authored font settings for exact sizes, tracking and variable-font axes. A raster preview alone does not prove those settings. If evidence is unavailable, leave this check unassessed."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the glyphs' advance widths from the PDF and compares them with the supplied font at every weight."
+   ],
    "rows": [
     {
      "check_id": "LAYOUT-15/producer-card-r002/H034",
@@ -10475,8 +10549,10 @@
     "assets": [],
     "note": "Brand identity, palette_rules.forbidden: no premium picked out in any colour, bold or italic."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads all text and checks none of the named words or patterns appears."
+   ],
    "rows": [
     {
      "check_id": "LAYOUT-15/producer-card-r002/H050",
@@ -10676,8 +10752,10 @@
    ],
    "slot_labels": {},
    "shared_reference": null,
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the font sizes of the figures and of the letters round them from the PDF."
+   ],
    "rows": [
     {
      "check_id": "LAYOUT-15/producer-card-r002/H059",
@@ -10906,8 +10984,10 @@
     "assets": [],
     "note": "Brand identity, type system scale step 04 (Fine print): Source Serif 4, 6.5 pt with 9 pt leading. Every disclosure (175 or more characters) wraps."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the baselines of the text's lines from the PDF."
+   ],
    "rows": [
     {
      "check_id": "LAYOUT-15/producer-card-r002/H061",
@@ -11344,8 +11424,10 @@
    ],
    "slot_labels": {},
    "shared_reference": null,
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the PDF for transparency, gradients, soft masks, blend modes and duplicated shadow type."
+   ],
    "rows": [
     {
      "check_id": "LAYOUT-15/producer-card-r002/H024",
@@ -11548,8 +11630,10 @@
     "assets": [],
     "note": "Brand identity, type rules: producer name with -5 tracking; do not add positive tracking or expanded spacing."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Measures letter spacing from the PDF's glyph positions."
+   ],
    "rows": [
     {
      "check_id": "LAYOUT-15/producer-card-r002/H048",
@@ -11749,8 +11833,10 @@
     "assets": [],
     "note": "Brand identity, brand_assets_status: use the Aldervale Mutual name as text; creating a new logo is not included."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the PDF's text, shapes and pictures and checks they are only the supplied copy and files."
+   ],
    "rows": [
     {
      "check_id": "LAYOUT-15/producer-card-r002/H056",
@@ -11950,8 +12036,10 @@
    ],
    "slot_labels": {},
    "shared_reference": null,
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the text's font size in both PDFs."
+   ],
    "rows": [
     {
      "check_id": "LAYOUT-15/producer-card-r003/H062",
@@ -12151,8 +12239,10 @@
     "assets": [],
     "note": "Brand identity, type system scale step 02 (Secondary heading, not used in this run): do not add a district line or another secondary heading to these producer cards."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the PDF's text, shapes and pictures and checks they are only the supplied copy and files."
+   ],
    "rows": [
     {
      "check_id": "LAYOUT-15/producer-card-r002/H058",
@@ -12973,8 +13063,10 @@
     "assets": [],
     "note": "Type system step 04: the disclosure is fine print at 6.5 pt, the smallest step; body is 9 pt."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads every font size in the PDF."
+   ],
    "rows": [
     {
      "check_id": "LAYOUT-15/producer-card-r002/H011",

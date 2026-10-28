@@ -40,8 +40,10 @@
     ],
     "note": "vellacourt_bio_copy.txt: \"Astrid Vellacourt co-founded and runs Vellacourt & Sund, a six-person industrial design studio.\""
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the type by OCR or from the PDF, leaving out lettering inside the supplied photos, and looks for the wording."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-20/speaker-onepager/H001",
@@ -2027,8 +2029,10 @@
     ],
     "note": "vellacourt_bio_copy.txt: \"She works on physical products from first sketch to production and is raising a seed round to grow the studio's own product line.\""
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the type by OCR or from the PDF, leaving out lettering inside the supplied photos, and looks for the wording."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-20/speaker-onepager/H009",
@@ -2200,8 +2204,10 @@
     "assets": [],
     "note": "Acceptance, pinned: The complete approved talk offer, each talk in her bio and talk copy with its title and one-line subject, is present as one unobscured content element."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Finds the texts in the PDF and checks they form one block with nothing else inside it."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-20/speaker-onepager/H012",
@@ -2253,8 +2259,10 @@
     ],
     "note": "vellacourt_bio_copy.txt: \"She works on physical products from first sketch to production and is raising a seed round to grow the studio's own product line.\""
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the type by OCR or from the PDF, leaving out lettering inside the supplied photos, and looks for the wording."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-20/speaker-onepager/H053",
@@ -2308,8 +2316,10 @@
     ],
     "note": "vellacourt_speakercard_template.pdf: one real picture frame for the portrait; talk title, event and date in one threaded text frame."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the pictures placed in the PDF and identifies which supplied portraits they show."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-20/talk-card-r002/H056",
@@ -2474,8 +2484,10 @@
     ],
     "note": "Deliverable: include the talk titles with their one-line subjects from vellacourt_bio_copy.txt."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the PDF drawing order and checks nothing is drawn over the texts."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-20/speaker-onepager/H055",
@@ -2524,8 +2536,10 @@
    ],
    "slot_labels": {},
    "shared_reference": null,
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Finds the texts in the PDF and checks they form one block with nothing else inside it."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-20/talk-card-r002/H006",
@@ -3098,8 +3112,10 @@
     "1": "Portrait"
    },
    "shared_reference": null,
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Lays the supplied photo over the placed one and looks for its original backdrop left unchanged round the subject."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-20/event-announcement-r002/H017",
@@ -3450,8 +3466,10 @@
     ],
     "note": "vellacourt_placements.txt: \"The session was shot on grey paper and I do NOT want grey.\""
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Lays the supplied photo over the placed one and looks for its original backdrop left unchanged round the subject."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-20/speaker-onepager/H016",
@@ -3523,8 +3541,10 @@
     "1": "Talk Title"
    },
    "shared_reference": null,
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the type by OCR or from the PDF, leaving out lettering inside the supplied photos, and looks for the wording."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-20/event-announcement-r002/H007",
@@ -4452,8 +4472,10 @@
     ],
     "note": "Truth constraint: do not invent names, claims, credentials, contact details or records absent from the approved inputs."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads every line of type and checks its words come from the supplied copy."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-20/event-announcement-r002/H060",
@@ -5366,8 +5388,11 @@
    ],
    "slot_labels": {},
    "shared_reference": null,
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Lays the supplied photo over the placed one and compares them tile by tile: colour, detail and correlation.",
+    "Reads every picture placed in the PDF, identifies its supplied photo and compares the colours tile by tile."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-20/event-announcement-r002/H014",
@@ -6002,8 +6027,10 @@
     ],
     "note": "vellacourt_workshop_snap.jpg is 1300 x 975 px. Truth constraint: Do not silently replace a weak supplied asset. Use it honestly, reject it with a reason, or take only the brief's declared Stock or concept exception."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Lays the supplied photo over the placed one and compares them tile by tile: colour, detail and correlation."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-20/event-announcement-r002/H020",
@@ -6150,8 +6177,11 @@
     ],
     "note": "Brand assets status: The AV monogram exists only as a blind deboss pressed into an old studio card, with no file and the printer closed, surviving only as a photograph of the impression. In vellacourt_av_transparent.png the AV shows only as raking-light shadow in the paper relief."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Finds the mark by its colour, confirms its shape against the supplied artwork, and checks every pixel is that colour or its edge blend.",
+    "Reads the PDF paint: opacity, shading, patterns, soft masks and blend modes."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-20/speaker-onepager/H013",
@@ -6452,8 +6482,10 @@
    ],
    "slot_labels": {},
    "shared_reference": null,
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads every picture placed in the PDF, identifies its supplied photo and compares the colours tile by tile."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-20/speaker-onepager/H021",
@@ -6833,8 +6865,10 @@
     "assets": [],
     "note": "Type system rule: The monogram is blind on Bone or printed in Ochre, and nothing else. Palette rules, opacity: on screen the monogram is solid Ochre, never a simulated emboss or shadow."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Finds the mark by its colour, confirms its shape against the supplied artwork, and checks every pixel is that colour or its edge blend."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-20/event-announcement-r002/H028",
@@ -6946,8 +6980,10 @@
     "assets": [],
     "note": "Brand palette, six hexes. Palette rules, forbidden: no colour outside them for type, grounds, panels, rules, buttons or icons."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads every flat colour outside the photographs and checks each is a palette colour."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-20/event-announcement-r002/H033",
@@ -7059,8 +7095,10 @@
     "assets": [],
     "note": "Palette rules, distribution: grounds and panels are Warm Neutral, Bone, Deep Ground or Vellacourt Ink; Studio Slate and Ochre never are. Palette rules, forbidden: no pure white ground. Type system rule: Neither an over filtered influencer treatment nor a stiff corporate flash on white: understated is the point."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Finds every ground and panel (flat areas outside the photographs) and reads its colour."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-20/event-announcement-r002/H034",
@@ -7266,8 +7304,10 @@
     "assets": [],
     "note": "Palette rules, distribution: on Deep Ground or Vellacourt Ink, all type is Warm Neutral or Bone. Type system rule: The monogram is blind on Bone or printed in Ochre, and nothing else."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads each text line (OCR on images, live text on PDFs), the colour of its letters and of the ground behind it, and checks the pairing."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-20/event-announcement-r002/H036",
@@ -7379,8 +7419,10 @@
     "assets": [],
     "note": "Palette rules, distribution: Ochre is for the AV monogram alone. Type system rule: The monogram is blind on Bone or printed in Ochre, and nothing else."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Finds every use of the colour and checks it is only the mark."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-20/speaker-onepager/H033",
@@ -7609,8 +7651,11 @@
     "assets": [],
     "note": "Palette rules, opacity: every palette colour solid at 100%; no tint, gradient, shadow or blend mode, and no scrim or overlay of any colour, black and white included, over a photograph."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the PDF for any transparency or gradient shading.",
+    "Runs each part; all must pass: Tries each route; one must pass and none may fail; Checks every flat designed colour is a palette colour, with no shaded area and no type over a photograph."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-20/speaker-onepager/H034",
@@ -7844,8 +7889,10 @@
     ],
     "note": "Palette rules, distribution: on Warm Neutral or Bone, her name, talk titles and running text are Vellacourt Ink, as the talk title on vellacourt_speakercard_template.pdf. Palette rules, distribution: on light grounds the event and date line is Vellacourt Ink or Studio Slate; vellacourt_speakercard_template.pdf sets its event and date in Studio Slate."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads each text line (OCR on images, live text on PDFs), the colour of its letters and of the ground behind it, and checks the pairing."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-20/event-banner-r002/H033",
@@ -8761,8 +8808,10 @@
     "assets": [],
     "note": "Palette rules, distribution: grounds and panels are Warm Neutral, Bone, Deep Ground or Vellacourt Ink; Studio Slate and Ochre never are. Palette rules, forbidden: no pure white ground. Type system rule: Neither an over filtered influencer treatment nor a stiff corporate flash on white: understated is the point."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the page ground and the filled shapes drawn in the PDF: their colours, sizes and opacity."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-20/speaker-onepager/H031",
@@ -8814,8 +8863,10 @@
     ],
     "note": "Palette rules, distribution: on Warm Neutral or Bone, her name, talk titles and running text are Vellacourt Ink, as the talk title on vellacourt_speakercard_template.pdf. Palette rules, distribution: on Deep Ground or Vellacourt Ink, all type is Warm Neutral or Bone. Type system rule: The monogram is blind on Bone or printed in Ochre, and nothing else."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads each text line (OCR on images, live text on PDFs), the colour of its letters and of the ground behind it, and checks the pairing."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-20/speaker-onepager/H032",
@@ -8867,8 +8918,10 @@
     "assets": [],
     "note": "Palette rules, distribution: Grounds and panels are Warm Neutral, Bone, Deep Ground or Vellacourt Ink and nothing else; Studio Slate and Ochre are never a ground or panel. Forbidden: no pure white ground."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the page ground and the filled shapes drawn in the PDF: their colours, sizes and opacity."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-20/talk-card-r002/H053",
@@ -9006,8 +9059,10 @@
     "assets": [],
     "note": "Palette rules, distribution: On Warm Neutral or Bone, the event and date line is Vellacourt Ink or Studio Slate, as on vellacourt_speakercard_template.pdf."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads each text line (OCR on images, live text on PDFs), the colour of its letters and of the ground behind it, and checks the pairing."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-20/event-announcement-r002/H058",
@@ -9080,8 +9135,10 @@
     "assets": [],
     "note": "Palette rules, distribution: On Warm Neutral or Bone, the event and date line is Vellacourt Ink or Studio Slate, as on vellacourt_speakercard_template.pdf."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads each text line (OCR on images, live text on PDFs), the colour of its letters and of the ground behind it, and checks the pairing."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-20/event-banner-r002/H055",
@@ -9342,8 +9399,10 @@
    ],
    "slot_labels": {},
    "shared_reference": null,
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the font, size or letter case of the selected lines from the PDF."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-20/speaker-onepager/H005",
@@ -9736,8 +9795,10 @@
    ],
    "slot_labels": {},
    "shared_reference": null,
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the PDF fonts and flags any serif type other than the allowed lines."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-20/speaker-onepager/H027",
@@ -10439,8 +10500,10 @@
     "assets": [],
     "note": "Type system step 03: tracking 0 units, max 65 characters. Measure capped at 65 characters."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads each line of text and counts its characters."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-20/event-banner-r002/H030",
@@ -10526,8 +10589,10 @@
     ],
     "note": "Type system step 03: Body, bio and running text, Inter Regular 9.5 pt on 13 pt. Step 04: Fine print, event and date line, Inter Regular. Step 04 note: In print the same information sets at 9.5 pt on 13 pt with the body. vellacourt_speakercard_template.pdf sets its event and date in Helvetica Neue Medium and Helvetica Neue."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the font, size or letter case of the selected lines from the PDF."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-20/talk-card-r002/H027",
@@ -10769,8 +10834,10 @@
     "assets": [],
     "note": "Type system step 03: tracking 0 units, max 65 characters. Measure capped at 65 characters."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads each line of text and counts its characters."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-20/talk-card-r002/H028",
@@ -10917,8 +10984,10 @@
     ],
     "note": "Type system step 03: Body, bio and running text, Inter Regular 9.5 pt on 13 pt. Step 04: Fine print, event and date line, Inter Regular. Step 04 note: In print the same information sets at 9.5 pt on 13 pt with the body."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Sorts the PDF text into roles by size and reads the font, size, letter case and line spacing of the named role."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-20/speaker-onepager/H028",
@@ -10974,8 +11043,10 @@
     "assets": [],
     "note": "Type system step 03: tracking 0 units, max 65 characters. Measure capped at 65 characters."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads each line of text and counts its characters."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-20/speaker-onepager/H029",
@@ -11291,8 +11362,10 @@
     ],
     "note": "Current brand typography; use the authored font settings for exact sizes, tracking and variable-font axes. A raster preview alone does not prove those settings. If evidence is unavailable, leave this check unassessed."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads each text line (OCR on images, live text on PDFs), the colour of its letters and of the ground behind it, and checks the pairing."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-20/event-announcement-r002/H052",
@@ -11401,8 +11474,10 @@
     ],
     "note": "Current brand typography; use the authored font settings for exact sizes, tracking and variable-font axes. A raster preview alone does not prove those settings. If evidence is unavailable, leave this check unassessed."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the font, size or letter case of the selected lines from the PDF."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-20/event-banner-r002/H042",
@@ -11964,8 +12039,10 @@
     "assets": [],
     "note": "Brand identity, typography rules: the AV monogram is at least 69 px wide on a PNG."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Finds the monogram by its colour and measures its width, its place over the name and how often it appears."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-20/event-announcement-r002/H059",
@@ -12077,8 +12154,10 @@
     "assets": [],
     "note": "Brand values: Work that reads as a design studio founder at institutional level, with her own mark used quietly and her likeness kept honest. Type system rule: Her name always sits beneath the monogram at 34 pt, tracked 30 units, above the 9.5 pt body on 13 pt leading."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Finds the monogram by its colour and measures its width, its place over the name and how often it appears."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-20/speaker-onepager/H014",
@@ -12307,8 +12386,10 @@
     "assets": [],
     "note": "Type system rule: Her name always sits beneath the monogram at 34 pt, tracked 30 units, above the 9.5 pt body on 13 pt leading. Step 01: Instrument Serif Regular 34 pt on 38 pt, tracking +30 units; the point size is judged in print."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Finds the monogram by its colour and measures its width, its place over the name and how often it appears."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-20/speaker-onepager/H022",
@@ -12537,8 +12618,10 @@
     "assets": [],
     "note": "Type system rule: The AV monogram appears once per surface and never under 18 mm wide."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Finds the monogram by its colour and measures its width, its place over the name and how often it appears."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-20/speaker-onepager/H023",
@@ -13203,8 +13286,11 @@
     "assets": [],
     "note": "Palette rules, forbidden: no gold foil, metallic, gloss, bevel, glow or drop-shadow effect. Brand values: Work that reads as a design studio founder at institutional level, with her own mark used quietly and her likeness kept honest."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Checks every flat designed colour is a palette colour, with no shaded area and no type over a photograph.",
+    "Reads the PDF paint: opacity, shading, patterns, soft masks and blend modes."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-20/speaker-onepager/H035",
@@ -13700,8 +13786,10 @@
     "assets": [],
     "note": "Palette rules, opacity: no scrim, gradient or overlay of any colour, black and white included, is laid over a photograph."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the PDF's drawing order and checks nothing is drawn over a placed photo."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-20/speaker-onepager/H051",
@@ -13761,8 +13849,11 @@
     "assets": [],
     "note": "Palette rules, opacity: no scrim, gradient or overlay of any colour, black and white included, is laid over a photograph."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Either route can answer: compares the photo with the supplied file (images) or reads the shapes drawn over it (PDFs) for a scrim, gradient or tint; or: lays the supplied photo over the placed one and compares them tile by tile: colour, detail and correlation. One must pass and none may fail.",
+    "Reads the PDF's drawing order and checks nothing is drawn over a placed photo."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-20/event-announcement-r002/H056",
@@ -13970,8 +14061,11 @@
     "1": "Portrait"
    },
    "shared_reference": null,
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Lays the supplied photo over the placed one and compares them tile by tile: colour, detail and correlation.",
+    "Reads every picture placed in the PDF, identifies its supplied photo and compares the colours tile by tile."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-20/event-announcement-r002/H015",
@@ -14622,8 +14716,11 @@
     "1": "Portrait"
    },
    "shared_reference": null,
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Lays the supplied photo over the placed one and compares them tile by tile: colour, detail and correlation.",
+    "Reads every picture placed in the PDF, identifies its supplied photo and compares the colours tile by tile."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-20/event-announcement-r002/H019",
@@ -15267,8 +15364,10 @@
     "assets": [],
     "note": "Type system rule: Neither an over filtered influencer treatment nor a stiff corporate flash on white: understated is the point."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads every picture placed in the PDF, identifies its supplied photo and compares the colours tile by tile."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-20/talk-card-r007/H017",
@@ -15315,8 +15414,10 @@
     "assets": [],
     "note": "Truth constraint: Preserve identity, product geometry, material behavior, and documentary truth; retouching may improve presentation but may not change what the subject is."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads every picture placed in the PDF, identifies its supplied photo and compares the colours tile by tile."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-20/talk-card-r007/H018",
@@ -15544,8 +15645,10 @@
    ],
    "slot_labels": {},
    "shared_reference": null,
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads every picture placed in the PDF, identifies its supplied photo and compares the colours tile by tile."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-20/talk-card-r006/H056",
@@ -15628,8 +15731,11 @@
     "1": "Portrait"
    },
    "shared_reference": null,
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Lays the supplied photo over the placed one and compares them tile by tile: colour, detail and correlation.",
+    "Reads every picture placed in the PDF, identifies its supplied photo and compares the colours tile by tile."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-20/event-announcement-r002/H062",
@@ -15920,8 +16026,11 @@
    ],
    "slot_labels": {},
    "shared_reference": null,
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Lays the supplied photo over the placed one and compares them tile by tile: colour, detail and correlation.",
+    "Reads every picture placed in the PDF, identifies its supplied photo and compares the colours tile by tile."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-20/speaker-onepager/H061",
@@ -16199,8 +16308,11 @@
    ],
    "slot_labels": {},
    "shared_reference": null,
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Lays the supplied photo over the placed one and compares them tile by tile: colour, detail and correlation.",
+    "Reads every picture placed in the PDF, identifies its supplied photo and compares the colours tile by tile."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-20/speaker-onepager/H062",
@@ -16529,8 +16641,10 @@
     "assets": [],
     "note": "Type system rule: Neither an over filtered influencer treatment nor a stiff corporate flash on white: understated is the point."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads every picture placed in the PDF, identifies its supplied photo and compares the colours tile by tile."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-20/talk-card-r007/H058",
@@ -16577,8 +16691,10 @@
     "assets": [],
     "note": "Type system rule: Neither an over filtered influencer treatment nor a stiff corporate flash on white: understated is the point."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads every picture placed in the PDF, identifies its supplied photo and compares the colours tile by tile."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-20/talk-card-r007/H059",
@@ -16625,8 +16741,10 @@
     "assets": [],
     "note": "Type system rule: Neither an over filtered influencer treatment nor a stiff corporate flash on white: understated is the point."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads every picture placed in the PDF, identifies its supplied photo and compares the colours tile by tile."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-20/talk-card-r007/H060",

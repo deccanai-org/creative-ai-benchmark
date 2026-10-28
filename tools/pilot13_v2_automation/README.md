@@ -47,6 +47,40 @@ with people. Tests: the 2026-09-28 outputs (1,002 rows: 751 pass, 224 person, 27
 listed in `KNOWN_TRUE_FAILS`) and the made files (correct set: 374 pass, 9 person, 0 fail; both broken sets: every
 planted defect failed or sent to a person, none passed, and nothing else failed).
 
+## Round 3 (2026-10-28)
+
+Dhiren asked to build every check that can be automated, by any deterministic method. Round 3 takes the colour rules
+sampled on images (214 rules), the rules that needed a definition (100), and the measurable rules among the 837
+first sorted as judgement (re-sorted rule by rule; the rest stay with people). No AI vision model is used: PDF reading,
+OCR, image measurement and pixel comparison with the supplied files only.
+
+- Handlers: `round3.py` gathers one module per task family, each `R3 = {(task, rule): handler}` keyed by task and
+  rule so earlier conversions never change: `round3_photo_a.py` (PHOTO-04, 06, 08, 10), `round3_photo_b.py` (PHOTO-19,
+  20, 24, 26, 28), `round3_layout.py` (LAYOUT-15, LAYOUT-12, VECTOR-04, MOTION-11), `round3_fonts.py` (typefaces,
+  italics and letter spacing read from images, all tasks). `round3.py` refuses a rule converted by two modules.
+- Operations: `tools/auto_verifier/objective_ops_r3.py` (colour on images, PDF shapes, text roles) and its extensions
+  `ops_r3_photo_a.py`, `ops_r3_photo_b.py`, `ops_r3_layout.py`, `ops_r3_fonts.py`; the loader refuses an op name
+  defined twice (two modules once shared names, so one ran the other's code). Settings and meanings:
+  `tools/auto_verifier/OPS_REFERENCE.md`.
+- Typefaces on images: each OCR line's own words are drawn in every candidate font (the brand fonts plus open stand-ins
+  for common substitutes) and compared with its letters; margins were calibrated on 1,648 made lines (about 10,000
+  decisions, none wrong). A line not found never passes: a person confirms the absence.
+- Rules worded as how something looks are measured against limits (pass when clearly within, fail when clearly
+  outside, a person between); `decide_moves.py` records each rule's chosen limits and `automation.html` lists them.
+- Made files: a third broken set (`bad3`, one round-3 defect in each of 41 files, `PLANTED3`); `ALSO_BROKEN` lists the
+  rules a planted defect also breaks (checked against the rule's wording and the generators).
+- Runs went to a GCP VM (e2-standard-32; same paths, same pins, Tesseract 5.5.1 with the same model file): the round-1
+  and 2 answers on the 2026-09-28 outputs were identical to the published ones (1,002 of 1,002).
+
+Result: 577 round-3 rules (2,738 checks) moved; 259 (973 checks) have code but stay with people (a wrong answer in
+testing, or the code decided under half of the rows). New, more faithful made files changed 8 earlier verdicts: six
+rules (12 checks) went back to people because the correct MOTION-11 thumbnails stack their titles on two rows, which
+the round-2 frame checks cannot read, and LAYOUT-12 R101 and R111 (2 checks) moved. In all: 3,895 of the 6,312 checks
+(872 rules) run as code; 1,201 checks (313 rules) have code but stay with people; 1,216 checks are left with people.
+Tests: the 2026-09-28 outputs (3,989 rows: 2,671 pass, 1,115 person, 203 fail; every fail checked: 200 are confirmed
+defects, `KNOWN_TRUE_FAILS` and `known_true_fails_r3.json`, and the 3 others are wrong answers that keep their rules
+with people) and the made files (correct set 923 pass, 181 person, 3 fail, all three on one rule that stays).
+
 ## Outcomes and safety rules
 
 Every operation answers `pass`, `fail` or `person` (the code could not decide, so a person answers that row).
@@ -75,7 +109,9 @@ $PY -W ignore make_layout12_files.py <made> && $PY -W ignore make_vector_motion_
 $PY -W ignore run_checks.py --run <made>/good --tasks LAYOUT-12 VECTOR-04 MOTION-11 --out good.json
 $PY -W ignore run_checks.py --run <made>/bad --tasks LAYOUT-12 VECTOR-04 MOTION-11 --out bad.json
 $PY -W ignore run_checks.py --run <made>/bad2 --tasks LAYOUT-12 VECTOR-04 MOTION-11 --out bad2.json
-python3 decide_moves.py real.json good.json bad.json bad2.json
+$PY -W ignore run_checks.py --run <made>/bad3 --tasks LAYOUT-12 VECTOR-04 MOTION-11 --out bad3.json
+python3 decide_moves.py real.json good.json bad.json bad2.json bad3.json
+# round 3 ran on a VM, one job per delivered file: run_checks.py --tasks <ID> --shard K/N (N = the task's file count)
 python3 ../../scripts/build_v7_annotation_pilot_v2.py && $PY build_results_page.py
 ```
 

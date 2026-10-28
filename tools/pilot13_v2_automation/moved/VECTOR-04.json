@@ -2,6 +2,230 @@
  "task_id": "VECTOR-04",
  "moved": [
   {
+   "check_id": "VECTOR-04/sticker-proof-window-mark/H001",
+   "output_id": "sticker-proof-window-mark",
+   "rule_id": "R001",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "“Transparent sticker proof - Window mark” (sticker-proof-window-mark.png) shows the same artwork as recovered-sticker-window-mark.svg, unchanged in shape, proportion and colour.",
+   "assertion": {
+    "op": "v2_proof_vs_svg",
+    "deliverable": "deliverables/recovered-sticker-window-mark.svg",
+    "mode": "same"
+   },
+   "how": "Renders the delivered SVG at the proof's size and compares shape, proportion, colour and transparency."
+  },
+  {
+   "check_id": "VECTOR-04/sticker-proof-bag-design-1/H001",
+   "output_id": "sticker-proof-bag-design-1",
+   "rule_id": "R001",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "“Transparent sticker proof - Bag design 1” (sticker-proof-bag-design-1.png) shows the same artwork as recovered-sticker-bag-design-1.svg, unchanged in shape, proportion and colour.",
+   "assertion": {
+    "op": "v2_proof_vs_svg",
+    "deliverable": "deliverables/recovered-sticker-bag-design-1.svg",
+    "mode": "same"
+   },
+   "how": "Renders the delivered SVG at the proof's size and compares shape, proportion, colour and transparency."
+  },
+  {
+   "check_id": "VECTOR-04/sticker-proof-bag-design-2/H001",
+   "output_id": "sticker-proof-bag-design-2",
+   "rule_id": "R001",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "“Transparent sticker proof - Bag design 2” (sticker-proof-bag-design-2.png) shows the same artwork as recovered-sticker-bag-design-2.svg, unchanged in shape, proportion and colour.",
+   "assertion": {
+    "op": "v2_proof_vs_svg",
+    "deliverable": "deliverables/recovered-sticker-bag-design-2.svg",
+    "mode": "same"
+   },
+   "how": "Renders the delivered SVG at the proof's size and compares shape, proportion, colour and transparency."
+  },
+  {
+   "check_id": "VECTOR-04/sticker-proof-bag-design-3/H001",
+   "output_id": "sticker-proof-bag-design-3",
+   "rule_id": "R001",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "“Transparent sticker proof - Bag design 3” (sticker-proof-bag-design-3.png) shows the same artwork as recovered-sticker-bag-design-3.svg, unchanged in shape, proportion and colour.",
+   "assertion": {
+    "op": "v2_proof_vs_svg",
+    "deliverable": "deliverables/recovered-sticker-bag-design-3.svg",
+    "mode": "same"
+   },
+   "how": "Renders the delivered SVG at the proof's size and compares shape, proportion, colour and transparency."
+  },
+  {
+   "check_id": "VECTOR-04/sticker-proof-companion-1/H001",
+   "output_id": "sticker-proof-companion-1",
+   "rule_id": "R001",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "“Transparent sticker proof - Companion 1” (sticker-proof-companion-1.png) shows the same artwork as new-sticker-companion-1.svg, unchanged in shape, proportion and colour.",
+   "assertion": {
+    "op": "v2_proof_vs_svg",
+    "deliverable": "deliverables/new-sticker-companion-1.svg",
+    "mode": "same"
+   },
+   "how": "Renders the delivered SVG at the proof's size and compares shape, proportion, colour and transparency."
+  },
+  {
+   "check_id": "VECTOR-04/sticker-proof-companion-2/H001",
+   "output_id": "sticker-proof-companion-2",
+   "rule_id": "R001",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "“Transparent sticker proof - Companion 2” (sticker-proof-companion-2.png) shows the same artwork as new-sticker-companion-2.svg, unchanged in shape, proportion and colour.",
+   "assertion": {
+    "op": "v2_proof_vs_svg",
+    "deliverable": "deliverables/new-sticker-companion-2.svg",
+    "mode": "same"
+   },
+   "how": "Renders the delivered SVG at the proof's size and compares shape, proportion, colour and transparency."
+  },
+  {
+   "check_id": "VECTOR-04/sticker-cut-window-mark/H003",
+   "output_id": "sticker-cut-window-mark",
+   "rule_id": "R009",
+   "k_id": "K1_Q2",
+   "critical": false,
+   "check": "“Separate sticker cut contour - Window mark” (sticker-cut-window-mark.svg) contains exactly one cutting contour, a single closed path around recovered-sticker-window-mark.svg.",
+   "assertion": {
+    "op": "v2_svg_cut_file",
+    "mode": "one",
+    "deliverable": "deliverables/recovered-sticker-window-mark.svg"
+   },
+   "how": "Reads the cut-contour SVG's groups and paths."
+  },
+  {
+   "check_id": "VECTOR-04/sticker-cut-bag-design-1/H003",
+   "output_id": "sticker-cut-bag-design-1",
+   "rule_id": "R009",
+   "k_id": "K1_Q2",
+   "critical": false,
+   "check": "“Separate sticker cut contour - Bag design 1” (sticker-cut-bag-design-1.svg) contains exactly one cutting contour, a single closed path around recovered-sticker-bag-design-1.svg.",
+   "assertion": {
+    "op": "v2_svg_cut_file",
+    "mode": "one",
+    "deliverable": "deliverables/recovered-sticker-bag-design-1.svg"
+   },
+   "how": "Reads the cut-contour SVG's groups and paths."
+  },
+  {
+   "check_id": "VECTOR-04/sticker-cut-bag-design-2/H003",
+   "output_id": "sticker-cut-bag-design-2",
+   "rule_id": "R009",
+   "k_id": "K1_Q2",
+   "critical": false,
+   "check": "“Separate sticker cut contour - Bag design 2” (sticker-cut-bag-design-2.svg) contains exactly one cutting contour, a single closed path around recovered-sticker-bag-design-2.svg.",
+   "assertion": {
+    "op": "v2_svg_cut_file",
+    "mode": "one",
+    "deliverable": "deliverables/recovered-sticker-bag-design-2.svg"
+   },
+   "how": "Reads the cut-contour SVG's groups and paths."
+  },
+  {
+   "check_id": "VECTOR-04/sticker-cut-bag-design-3/H003",
+   "output_id": "sticker-cut-bag-design-3",
+   "rule_id": "R009",
+   "k_id": "K1_Q2",
+   "critical": false,
+   "check": "“Separate sticker cut contour - Bag design 3” (sticker-cut-bag-design-3.svg) contains exactly one cutting contour, a single closed path around recovered-sticker-bag-design-3.svg.",
+   "assertion": {
+    "op": "v2_svg_cut_file",
+    "mode": "one",
+    "deliverable": "deliverables/recovered-sticker-bag-design-3.svg"
+   },
+   "how": "Reads the cut-contour SVG's groups and paths."
+  },
+  {
+   "check_id": "VECTOR-04/sticker-cut-companion-1/H003",
+   "output_id": "sticker-cut-companion-1",
+   "rule_id": "R009",
+   "k_id": "K1_Q2",
+   "critical": false,
+   "check": "“Separate sticker cut contour - Companion 1” (sticker-cut-companion-1.svg) contains exactly one cutting contour, a single closed path around new-sticker-companion-1.svg.",
+   "assertion": {
+    "op": "v2_svg_cut_file",
+    "mode": "one",
+    "deliverable": "deliverables/new-sticker-companion-1.svg"
+   },
+   "how": "Reads the cut-contour SVG's groups and paths."
+  },
+  {
+   "check_id": "VECTOR-04/sticker-cut-companion-2/H003",
+   "output_id": "sticker-cut-companion-2",
+   "rule_id": "R009",
+   "k_id": "K1_Q2",
+   "critical": false,
+   "check": "“Separate sticker cut contour - Companion 2” (sticker-cut-companion-2.svg) contains exactly one cutting contour, a single closed path around new-sticker-companion-2.svg.",
+   "assertion": {
+    "op": "v2_svg_cut_file",
+    "mode": "one",
+    "deliverable": "deliverables/new-sticker-companion-2.svg"
+   },
+   "how": "Reads the cut-contour SVG's groups and paths."
+  },
+  {
+   "check_id": "VECTOR-04/gang-sheet/H001",
+   "output_id": "gang-sheet",
+   "rule_id": "R010",
+   "k_id": "K1_Q2",
+   "critical": false,
+   "check": "On “Sticker imposed production sheet” (gang-sheet.pdf), every cut path sits at least 10 mm in from the sheet edge.",
+   "assertion": {
+    "op": "v2_sheet_cuts",
+    "mode": "margin",
+    "min_mm": 10
+   },
+   "how": "Reads the cut paths on the sheet's cut layer and measures them."
+  },
+  {
+   "check_id": "VECTOR-04/gang-sheet/H002",
+   "output_id": "gang-sheet",
+   "rule_id": "R011",
+   "k_id": "K1_Q2",
+   "critical": false,
+   "check": "On “Sticker imposed production sheet” (gang-sheet.pdf), any two neighbouring cut paths are at least 6 mm apart.",
+   "assertion": {
+    "op": "v2_sheet_cuts",
+    "mode": "gutter",
+    "min_mm": 6
+   },
+   "how": "Reads the cut paths on the sheet's cut layer and measures them."
+  },
+  {
+   "check_id": "VECTOR-04/gang-sheet/H005",
+   "output_id": "gang-sheet",
+   "rule_id": "R012",
+   "k_id": "K1_Q2",
+   "critical": false,
+   "check": "On “Sticker imposed production sheet” (gang-sheet.pdf) no sticker artwork sits inside the 10 mm safe margin from the sheet edge.",
+   "assertion": {
+    "op": "v2_sheet_cuts",
+    "mode": "art_margin",
+    "min_mm": 10
+   },
+   "how": "Reads the cut paths on the sheet's cut layer and measures them."
+  },
+  {
+   "check_id": "VECTOR-04/gang-sheet/H013",
+   "output_id": "gang-sheet",
+   "rule_id": "R013",
+   "k_id": "K1_Q2",
+   "critical": false,
+   "check": "Every sticker's artwork on “Sticker imposed production sheet” (gang-sheet.pdf) measures 55 mm on its long edge.",
+   "assertion": {
+    "op": "v2_sheet_cuts",
+    "mode": "art_size",
+    "long_mm": 55
+   },
+   "how": "Reads the cut paths on the sheet's cut layer and measures them."
+  },
+  {
    "check_id": "VECTOR-04/recovered-sticker-window-mark/H018",
    "output_id": "recovered-sticker-window-mark",
    "rule_id": "R016",
@@ -86,6 +310,234 @@
    "how": "Reads the SVG's physical size and measures the drawn artwork."
   },
   {
+   "check_id": "VECTOR-04/recovered-sticker-window-mark/H019",
+   "output_id": "recovered-sticker-window-mark",
+   "rule_id": "R017",
+   "k_id": "K1_Q2",
+   "critical": false,
+   "check": "The SVG code of “Recovered sticker artwork - Window mark” (recovered-sticker-window-mark.svg) declares an explicit viewBox.",
+   "assertion": {
+    "op": "v2_svg_viewbox"
+   },
+   "how": "Reads the SVG's viewBox."
+  },
+  {
+   "check_id": "VECTOR-04/recovered-sticker-bag-design-1/H015",
+   "output_id": "recovered-sticker-bag-design-1",
+   "rule_id": "R017",
+   "k_id": "K1_Q2",
+   "critical": false,
+   "check": "The SVG code of “Recovered sticker artwork - Bag design 1” (recovered-sticker-bag-design-1.svg) declares an explicit viewBox.",
+   "assertion": {
+    "op": "v2_svg_viewbox"
+   },
+   "how": "Reads the SVG's viewBox."
+  },
+  {
+   "check_id": "VECTOR-04/recovered-sticker-bag-design-2/H015",
+   "output_id": "recovered-sticker-bag-design-2",
+   "rule_id": "R017",
+   "k_id": "K1_Q2",
+   "critical": false,
+   "check": "The SVG code of “Recovered sticker artwork - Bag design 2” (recovered-sticker-bag-design-2.svg) declares an explicit viewBox.",
+   "assertion": {
+    "op": "v2_svg_viewbox"
+   },
+   "how": "Reads the SVG's viewBox."
+  },
+  {
+   "check_id": "VECTOR-04/recovered-sticker-bag-design-3/H015",
+   "output_id": "recovered-sticker-bag-design-3",
+   "rule_id": "R017",
+   "k_id": "K1_Q2",
+   "critical": false,
+   "check": "The SVG code of “Recovered sticker artwork - Bag design 3” (recovered-sticker-bag-design-3.svg) declares an explicit viewBox.",
+   "assertion": {
+    "op": "v2_svg_viewbox"
+   },
+   "how": "Reads the SVG's viewBox."
+  },
+  {
+   "check_id": "VECTOR-04/new-sticker-companion-1/H025",
+   "output_id": "new-sticker-companion-1",
+   "rule_id": "R017",
+   "k_id": "K1_Q2",
+   "critical": false,
+   "check": "The SVG code of “Original companion sticker - Companion 1” (new-sticker-companion-1.svg) declares an explicit viewBox.",
+   "assertion": {
+    "op": "v2_svg_viewbox"
+   },
+   "how": "Reads the SVG's viewBox."
+  },
+  {
+   "check_id": "VECTOR-04/new-sticker-companion-2/H025",
+   "output_id": "new-sticker-companion-2",
+   "rule_id": "R017",
+   "k_id": "K1_Q2",
+   "critical": false,
+   "check": "The SVG code of “Original companion sticker - Companion 2” (new-sticker-companion-2.svg) declares an explicit viewBox.",
+   "assertion": {
+    "op": "v2_svg_viewbox"
+   },
+   "how": "Reads the SVG's viewBox."
+  },
+  {
+   "check_id": "VECTOR-04/sticker-cut-window-mark/H007",
+   "output_id": "sticker-cut-window-mark",
+   "rule_id": "R017",
+   "k_id": "K1_Q2",
+   "critical": false,
+   "check": "The SVG code of “Separate sticker cut contour - Window mark” (sticker-cut-window-mark.svg) declares an explicit viewBox.",
+   "assertion": {
+    "op": "v2_svg_viewbox"
+   },
+   "how": "Reads the SVG's viewBox."
+  },
+  {
+   "check_id": "VECTOR-04/sticker-cut-bag-design-1/H006",
+   "output_id": "sticker-cut-bag-design-1",
+   "rule_id": "R017",
+   "k_id": "K1_Q2",
+   "critical": false,
+   "check": "The SVG code of “Separate sticker cut contour - Bag design 1” (sticker-cut-bag-design-1.svg) declares an explicit viewBox.",
+   "assertion": {
+    "op": "v2_svg_viewbox"
+   },
+   "how": "Reads the SVG's viewBox."
+  },
+  {
+   "check_id": "VECTOR-04/sticker-cut-bag-design-2/H006",
+   "output_id": "sticker-cut-bag-design-2",
+   "rule_id": "R017",
+   "k_id": "K1_Q2",
+   "critical": false,
+   "check": "The SVG code of “Separate sticker cut contour - Bag design 2” (sticker-cut-bag-design-2.svg) declares an explicit viewBox.",
+   "assertion": {
+    "op": "v2_svg_viewbox"
+   },
+   "how": "Reads the SVG's viewBox."
+  },
+  {
+   "check_id": "VECTOR-04/sticker-cut-bag-design-3/H006",
+   "output_id": "sticker-cut-bag-design-3",
+   "rule_id": "R017",
+   "k_id": "K1_Q2",
+   "critical": false,
+   "check": "The SVG code of “Separate sticker cut contour - Bag design 3” (sticker-cut-bag-design-3.svg) declares an explicit viewBox.",
+   "assertion": {
+    "op": "v2_svg_viewbox"
+   },
+   "how": "Reads the SVG's viewBox."
+  },
+  {
+   "check_id": "VECTOR-04/sticker-cut-companion-1/H006",
+   "output_id": "sticker-cut-companion-1",
+   "rule_id": "R017",
+   "k_id": "K1_Q2",
+   "critical": false,
+   "check": "The SVG code of “Separate sticker cut contour - Companion 1” (sticker-cut-companion-1.svg) declares an explicit viewBox.",
+   "assertion": {
+    "op": "v2_svg_viewbox"
+   },
+   "how": "Reads the SVG's viewBox."
+  },
+  {
+   "check_id": "VECTOR-04/sticker-cut-companion-2/H006",
+   "output_id": "sticker-cut-companion-2",
+   "rule_id": "R017",
+   "k_id": "K1_Q2",
+   "critical": false,
+   "check": "The SVG code of “Separate sticker cut contour - Companion 2” (sticker-cut-companion-2.svg) declares an explicit viewBox.",
+   "assertion": {
+    "op": "v2_svg_viewbox"
+   },
+   "how": "Reads the SVG's viewBox."
+  },
+  {
+   "check_id": "VECTOR-04/sticker-proof-window-mark/H016",
+   "output_id": "sticker-proof-window-mark",
+   "rule_id": "R018",
+   "k_id": "K1_Q2",
+   "critical": false,
+   "check": "The open negative space inside the artwork on “Transparent sticker proof - Window mark” (sticker-proof-window-mark.png) is transparent, with no white or coloured fill or rectangle behind it.",
+   "assertion": {
+    "op": "v2_proof_vs_svg",
+    "deliverable": "deliverables/recovered-sticker-window-mark.svg",
+    "mode": "transparent"
+   },
+   "how": "Renders the delivered SVG at the proof's size and compares shape, proportion, colour and transparency."
+  },
+  {
+   "check_id": "VECTOR-04/sticker-proof-bag-design-1/H012",
+   "output_id": "sticker-proof-bag-design-1",
+   "rule_id": "R018",
+   "k_id": "K1_Q2",
+   "critical": false,
+   "check": "The open negative space inside the artwork on “Transparent sticker proof - Bag design 1” (sticker-proof-bag-design-1.png) is transparent, with no white or coloured fill or rectangle behind it.",
+   "assertion": {
+    "op": "v2_proof_vs_svg",
+    "deliverable": "deliverables/recovered-sticker-bag-design-1.svg",
+    "mode": "transparent"
+   },
+   "how": "Renders the delivered SVG at the proof's size and compares shape, proportion, colour and transparency."
+  },
+  {
+   "check_id": "VECTOR-04/sticker-proof-bag-design-2/H012",
+   "output_id": "sticker-proof-bag-design-2",
+   "rule_id": "R018",
+   "k_id": "K1_Q2",
+   "critical": false,
+   "check": "The open negative space inside the artwork on “Transparent sticker proof - Bag design 2” (sticker-proof-bag-design-2.png) is transparent, with no white or coloured fill or rectangle behind it.",
+   "assertion": {
+    "op": "v2_proof_vs_svg",
+    "deliverable": "deliverables/recovered-sticker-bag-design-2.svg",
+    "mode": "transparent"
+   },
+   "how": "Renders the delivered SVG at the proof's size and compares shape, proportion, colour and transparency."
+  },
+  {
+   "check_id": "VECTOR-04/sticker-proof-bag-design-3/H012",
+   "output_id": "sticker-proof-bag-design-3",
+   "rule_id": "R018",
+   "k_id": "K1_Q2",
+   "critical": false,
+   "check": "The open negative space inside the artwork on “Transparent sticker proof - Bag design 3” (sticker-proof-bag-design-3.png) is transparent, with no white or coloured fill or rectangle behind it.",
+   "assertion": {
+    "op": "v2_proof_vs_svg",
+    "deliverable": "deliverables/recovered-sticker-bag-design-3.svg",
+    "mode": "transparent"
+   },
+   "how": "Renders the delivered SVG at the proof's size and compares shape, proportion, colour and transparency."
+  },
+  {
+   "check_id": "VECTOR-04/sticker-proof-companion-1/H016",
+   "output_id": "sticker-proof-companion-1",
+   "rule_id": "R018",
+   "k_id": "K1_Q2",
+   "critical": false,
+   "check": "The open negative space inside the artwork on “Transparent sticker proof - Companion 1” (sticker-proof-companion-1.png) is transparent, with no white or coloured fill or rectangle behind it.",
+   "assertion": {
+    "op": "v2_proof_vs_svg",
+    "deliverable": "deliverables/new-sticker-companion-1.svg",
+    "mode": "transparent"
+   },
+   "how": "Renders the delivered SVG at the proof's size and compares shape, proportion, colour and transparency."
+  },
+  {
+   "check_id": "VECTOR-04/sticker-proof-companion-2/H016",
+   "output_id": "sticker-proof-companion-2",
+   "rule_id": "R018",
+   "k_id": "K1_Q2",
+   "critical": false,
+   "check": "The open negative space inside the artwork on “Transparent sticker proof - Companion 2” (sticker-proof-companion-2.png) is transparent, with no white or coloured fill or rectangle behind it.",
+   "assertion": {
+    "op": "v2_proof_vs_svg",
+    "deliverable": "deliverables/new-sticker-companion-2.svg",
+    "mode": "transparent"
+   },
+   "how": "Renders the delivered SVG at the proof's size and compares shape, proportion, colour and transparency."
+  },
+  {
    "check_id": "VECTOR-04/recovered-sticker-window-mark/H016",
    "output_id": "recovered-sticker-window-mark",
    "rule_id": "R019",
@@ -156,6 +608,215 @@
     "op": "v2_svg_no_cutline"
    },
    "how": "Reads the SVG's layers and strokes for a cut line drawn into the artwork."
+  },
+  {
+   "check_id": "VECTOR-04/sticker-cut-window-mark/H005",
+   "output_id": "sticker-cut-window-mark",
+   "rule_id": "R020",
+   "k_id": "K1_Q3",
+   "critical": false,
+   "check": "The cut path in “Separate sticker cut contour - Window mark” (sticker-cut-window-mark.svg) sits on a layer or group named exactly “CutContour”.",
+   "assertion": {
+    "op": "v2_svg_cut_file",
+    "mode": "name"
+   },
+   "how": "Reads the cut-contour SVG's groups and paths."
+  },
+  {
+   "check_id": "VECTOR-04/sticker-cut-bag-design-1/H004",
+   "output_id": "sticker-cut-bag-design-1",
+   "rule_id": "R020",
+   "k_id": "K1_Q3",
+   "critical": false,
+   "check": "The cut path in “Separate sticker cut contour - Bag design 1” (sticker-cut-bag-design-1.svg) sits on a layer or group named exactly “CutContour”.",
+   "assertion": {
+    "op": "v2_svg_cut_file",
+    "mode": "name"
+   },
+   "how": "Reads the cut-contour SVG's groups and paths."
+  },
+  {
+   "check_id": "VECTOR-04/sticker-cut-bag-design-2/H004",
+   "output_id": "sticker-cut-bag-design-2",
+   "rule_id": "R020",
+   "k_id": "K1_Q3",
+   "critical": false,
+   "check": "The cut path in “Separate sticker cut contour - Bag design 2” (sticker-cut-bag-design-2.svg) sits on a layer or group named exactly “CutContour”.",
+   "assertion": {
+    "op": "v2_svg_cut_file",
+    "mode": "name"
+   },
+   "how": "Reads the cut-contour SVG's groups and paths."
+  },
+  {
+   "check_id": "VECTOR-04/sticker-cut-bag-design-3/H004",
+   "output_id": "sticker-cut-bag-design-3",
+   "rule_id": "R020",
+   "k_id": "K1_Q3",
+   "critical": false,
+   "check": "The cut path in “Separate sticker cut contour - Bag design 3” (sticker-cut-bag-design-3.svg) sits on a layer or group named exactly “CutContour”.",
+   "assertion": {
+    "op": "v2_svg_cut_file",
+    "mode": "name"
+   },
+   "how": "Reads the cut-contour SVG's groups and paths."
+  },
+  {
+   "check_id": "VECTOR-04/sticker-cut-companion-1/H004",
+   "output_id": "sticker-cut-companion-1",
+   "rule_id": "R020",
+   "k_id": "K1_Q3",
+   "critical": false,
+   "check": "The cut path in “Separate sticker cut contour - Companion 1” (sticker-cut-companion-1.svg) sits on a layer or group named exactly “CutContour”.",
+   "assertion": {
+    "op": "v2_svg_cut_file",
+    "mode": "name"
+   },
+   "how": "Reads the cut-contour SVG's groups and paths."
+  },
+  {
+   "check_id": "VECTOR-04/sticker-cut-companion-2/H004",
+   "output_id": "sticker-cut-companion-2",
+   "rule_id": "R020",
+   "k_id": "K1_Q3",
+   "critical": false,
+   "check": "The cut path in “Separate sticker cut contour - Companion 2” (sticker-cut-companion-2.svg) sits on a layer or group named exactly “CutContour”.",
+   "assertion": {
+    "op": "v2_svg_cut_file",
+    "mode": "name"
+   },
+   "how": "Reads the cut-contour SVG's groups and paths."
+  },
+  {
+   "check_id": "VECTOR-04/sticker-cut-window-mark/H006",
+   "output_id": "sticker-cut-window-mark",
+   "rule_id": "R021",
+   "k_id": "K1_Q3",
+   "critical": false,
+   "check": "“Separate sticker cut contour - Window mark” (sticker-cut-window-mark.svg) holds the cut path only, with no sticker artwork, fill or type.",
+   "assertion": {
+    "op": "v2_svg_cut_file",
+    "mode": "only"
+   },
+   "how": "Reads the cut-contour SVG's groups and paths."
+  },
+  {
+   "check_id": "VECTOR-04/sticker-cut-bag-design-1/H005",
+   "output_id": "sticker-cut-bag-design-1",
+   "rule_id": "R021",
+   "k_id": "K1_Q3",
+   "critical": false,
+   "check": "“Separate sticker cut contour - Bag design 1” (sticker-cut-bag-design-1.svg) holds the cut path only, with no sticker artwork, fill or type.",
+   "assertion": {
+    "op": "v2_svg_cut_file",
+    "mode": "only"
+   },
+   "how": "Reads the cut-contour SVG's groups and paths."
+  },
+  {
+   "check_id": "VECTOR-04/sticker-cut-bag-design-2/H005",
+   "output_id": "sticker-cut-bag-design-2",
+   "rule_id": "R021",
+   "k_id": "K1_Q3",
+   "critical": false,
+   "check": "“Separate sticker cut contour - Bag design 2” (sticker-cut-bag-design-2.svg) holds the cut path only, with no sticker artwork, fill or type.",
+   "assertion": {
+    "op": "v2_svg_cut_file",
+    "mode": "only"
+   },
+   "how": "Reads the cut-contour SVG's groups and paths."
+  },
+  {
+   "check_id": "VECTOR-04/sticker-cut-bag-design-3/H005",
+   "output_id": "sticker-cut-bag-design-3",
+   "rule_id": "R021",
+   "k_id": "K1_Q3",
+   "critical": false,
+   "check": "“Separate sticker cut contour - Bag design 3” (sticker-cut-bag-design-3.svg) holds the cut path only, with no sticker artwork, fill or type.",
+   "assertion": {
+    "op": "v2_svg_cut_file",
+    "mode": "only"
+   },
+   "how": "Reads the cut-contour SVG's groups and paths."
+  },
+  {
+   "check_id": "VECTOR-04/sticker-cut-companion-1/H005",
+   "output_id": "sticker-cut-companion-1",
+   "rule_id": "R021",
+   "k_id": "K1_Q3",
+   "critical": false,
+   "check": "“Separate sticker cut contour - Companion 1” (sticker-cut-companion-1.svg) holds the cut path only, with no sticker artwork, fill or type.",
+   "assertion": {
+    "op": "v2_svg_cut_file",
+    "mode": "only"
+   },
+   "how": "Reads the cut-contour SVG's groups and paths."
+  },
+  {
+   "check_id": "VECTOR-04/sticker-cut-companion-2/H005",
+   "output_id": "sticker-cut-companion-2",
+   "rule_id": "R021",
+   "k_id": "K1_Q3",
+   "critical": false,
+   "check": "“Separate sticker cut contour - Companion 2” (sticker-cut-companion-2.svg) holds the cut path only, with no sticker artwork, fill or type.",
+   "assertion": {
+    "op": "v2_svg_cut_file",
+    "mode": "only"
+   },
+   "how": "Reads the cut-contour SVG's groups and paths."
+  },
+  {
+   "check_id": "VECTOR-04/gang-sheet/H003",
+   "output_id": "gang-sheet",
+   "rule_id": "R024",
+   "k_id": "K1_Q3",
+   "critical": false,
+   "check": "In “Sticker imposed production sheet” (gang-sheet.pdf) the CutContour layer can be selected on its own, separately from the sticker artwork.",
+   "assertion": {
+    "op": "v2_sheet_cuts",
+    "mode": "layer"
+   },
+   "how": "Reads the cut paths on the sheet's cut layer and measures them."
+  },
+  {
+   "check_id": "VECTOR-04/gang-sheet/H016",
+   "output_id": "gang-sheet",
+   "rule_id": "R025",
+   "k_id": "K1_Q3",
+   "critical": false,
+   "check": "On “Sticker imposed production sheet” (gang-sheet.pdf) each of the six placed stickers has exactly one closed cut path around it on the CutContour layer.",
+   "assertion": {
+    "op": "v2_sheet_cuts",
+    "mode": "count",
+    "count": 6
+   },
+   "how": "Reads the cut paths on the sheet's cut layer and measures them."
+  },
+  {
+   "check_id": "VECTOR-04/gang-sheet/H024",
+   "output_id": "gang-sheet",
+   "rule_id": "R028",
+   "k_id": "K1_Q3",
+   "critical": false,
+   "check": "The CutContour layer on “Sticker imposed production sheet” (gang-sheet.pdf) holds no paths other than the six sticker cut paths.",
+   "assertion": {
+    "op": "v2_sheet_cuts",
+    "mode": "count",
+    "count": 6
+   },
+   "how": "Reads the cut paths on the sheet's cut layer and measures them."
+  },
+  {
+   "check_id": "VECTOR-04/gang-sheet/H029",
+   "output_id": "gang-sheet",
+   "rule_id": "R030",
+   "k_id": "K1_Q3",
+   "critical": false,
+   "check": "The cut paths on “Sticker imposed production sheet” (gang-sheet.pdf) use a spot colour named CutContour.",
+   "assertion": {
+    "op": "v2_pdf_cut_spot"
+   },
+   "how": "Reads the PDF's colour operators and checks the cut paths use a spot colour named CutContour."
   },
   {
    "check_id": "VECTOR-04/new-sticker-companion-1/H017",
@@ -243,6 +904,19 @@
    "how": "Finds every price and checks each meets the rule."
   },
   {
+   "check_id": "VECTOR-04/gang-sheet/H006",
+   "output_id": "gang-sheet",
+   "rule_id": "R032",
+   "k_id": "K1_Q5",
+   "critical": true,
+   "check": "In “Sticker imposed production sheet” (gang-sheet.pdf) the cut layer is named exactly “CutContour”.",
+   "assertion": {
+    "op": "v2_sheet_cuts",
+    "mode": "name"
+   },
+   "how": "Reads the cut paths on the sheet's cut layer and measures them."
+  },
+  {
    "check_id": "VECTOR-04/recovered-sticker-bag-design-2/H003",
    "output_id": "recovered-sticker-bag-design-2",
    "rule_id": "R033",
@@ -283,6 +957,89 @@
     ]
    },
    "how": "Compares the drawing's silhouette with the printed motif of each supplied photo."
+  },
+  {
+   "check_id": "VECTOR-04/sticker-proof-bag-design-1/H003",
+   "output_id": "sticker-proof-bag-design-1",
+   "rule_id": "R035",
+   "k_id": "K2_Q1",
+   "critical": false,
+   "check": "“Transparent sticker proof - Bag design 1” (sticker-proof-bag-design-1.png) shows the moth from meridian_bag_moth.jpg.",
+   "assertion": {
+    "op": "v2_built_from_raster",
+    "photo": "meridian_bag_moth.jpg",
+    "others": [
+     "meridian_bag_pourover.jpg",
+     "meridian_bag_ridgeline.jpg"
+    ]
+   },
+   "how": "Compares the drawing with each supplied photo by feature matching."
+  },
+  {
+   "check_id": "VECTOR-04/sticker-proof-bag-design-2/H003",
+   "output_id": "sticker-proof-bag-design-2",
+   "rule_id": "R036",
+   "k_id": "K2_Q1",
+   "critical": false,
+   "check": "“Transparent sticker proof - Bag design 2” (sticker-proof-bag-design-2.png) shows the pour-over cone from meridian_bag_pourover.jpg.",
+   "assertion": {
+    "op": "v2_built_from_raster",
+    "photo": "meridian_bag_pourover.jpg",
+    "others": [
+     "meridian_bag_moth.jpg",
+     "meridian_bag_ridgeline.jpg"
+    ]
+   },
+   "how": "Compares the drawing with each supplied photo by feature matching."
+  },
+  {
+   "check_id": "VECTOR-04/sticker-proof-bag-design-3/H003",
+   "output_id": "sticker-proof-bag-design-3",
+   "rule_id": "R037",
+   "k_id": "K2_Q1",
+   "critical": false,
+   "check": "“Transparent sticker proof - Bag design 3” (sticker-proof-bag-design-3.png) shows the ridge line from meridian_bag_ridgeline.jpg.",
+   "assertion": {
+    "op": "v2_built_from_raster",
+    "photo": "meridian_bag_ridgeline.jpg",
+    "others": [
+     "meridian_bag_moth.jpg",
+     "meridian_bag_pourover.jpg"
+    ]
+   },
+   "how": "Compares the drawing with each supplied photo by feature matching."
+  },
+  {
+   "check_id": "VECTOR-04/sticker-proof-window-mark/H003",
+   "output_id": "sticker-proof-window-mark",
+   "rule_id": "R038",
+   "k_id": "K2_Q1",
+   "critical": false,
+   "check": "“Transparent sticker proof - Window mark” (sticker-proof-window-mark.png) shows the mark traced from meridian_window_mark.jpg, not the redrawn roundel on meridian_shelfcard_2025.pdf.",
+   "assertion": {
+    "op": "v2_built_from_raster",
+    "photo": "meridian_window_mark.jpg",
+    "others": [
+     "meridian_shelfcard_2025.pdf"
+    ]
+   },
+   "how": "Compares the drawing with each supplied photo by feature matching."
+  },
+  {
+   "check_id": "VECTOR-04/recovered-sticker-window-mark/H003",
+   "output_id": "recovered-sticker-window-mark",
+   "rule_id": "R039",
+   "k_id": "K2_Q1",
+   "critical": false,
+   "check": "“Recovered sticker artwork - Window mark” (recovered-sticker-window-mark.svg) is traced from meridian_window_mark.jpg, not from the redrawn roundel on meridian_shelfcard_2025.pdf.",
+   "assertion": {
+    "op": "v2_built_from_raster",
+    "photo": "meridian_window_mark.jpg",
+    "others": [
+     "meridian_shelfcard_2025.pdf"
+    ]
+   },
+   "how": "Compares the drawing with each supplied photo by feature matching."
   },
   {
    "check_id": "VECTOR-04/recovered-sticker-bag-design-1/H003",
@@ -330,6 +1087,132 @@
     "max_dots": 40
    },
    "how": "Counts tiny dot shapes in the SVG."
+  },
+  {
+   "check_id": "VECTOR-04/gang-sheet/H007",
+   "output_id": "gang-sheet",
+   "rule_id": "R047",
+   "k_id": "K2_Q2",
+   "critical": false,
+   "check": "The window mark sticker placed on “Sticker imposed production sheet” (gang-sheet.pdf) is the delivered recovered-sticker-window-mark.svg, with its proportions and colours unchanged.",
+   "assertion": {
+    "op": "v2_placed_master",
+    "deliverable": "deliverables/recovered-sticker-window-mark.svg",
+    "hexes": [
+     "#3E2A20",
+     "#C8A97E",
+     "#5B6B54",
+     "#F3E7D3",
+     "#A8442E",
+     "#201914"
+    ]
+   },
+   "how": "Renders the delivered sticker, finds it on the sheet, and compares its proportions and colours."
+  },
+  {
+   "check_id": "VECTOR-04/gang-sheet/H008",
+   "output_id": "gang-sheet",
+   "rule_id": "R048",
+   "k_id": "K2_Q2",
+   "critical": false,
+   "check": "The Bag design 1 sticker placed on “Sticker imposed production sheet” (gang-sheet.pdf) is the delivered recovered-sticker-bag-design-1.svg, with its proportions and colours unchanged.",
+   "assertion": {
+    "op": "v2_placed_master",
+    "deliverable": "deliverables/recovered-sticker-bag-design-1.svg",
+    "hexes": [
+     "#3E2A20",
+     "#C8A97E",
+     "#5B6B54",
+     "#F3E7D3",
+     "#A8442E",
+     "#201914"
+    ]
+   },
+   "how": "Renders the delivered sticker, finds it on the sheet, and compares its proportions and colours."
+  },
+  {
+   "check_id": "VECTOR-04/gang-sheet/H009",
+   "output_id": "gang-sheet",
+   "rule_id": "R048",
+   "k_id": "K2_Q2",
+   "critical": false,
+   "check": "The Bag design 2 sticker placed on “Sticker imposed production sheet” (gang-sheet.pdf) is the delivered recovered-sticker-bag-design-2.svg, with its proportions and colours unchanged.",
+   "assertion": {
+    "op": "v2_placed_master",
+    "deliverable": "deliverables/recovered-sticker-bag-design-2.svg",
+    "hexes": [
+     "#3E2A20",
+     "#C8A97E",
+     "#5B6B54",
+     "#F3E7D3",
+     "#A8442E",
+     "#201914"
+    ]
+   },
+   "how": "Renders the delivered sticker, finds it on the sheet, and compares its proportions and colours."
+  },
+  {
+   "check_id": "VECTOR-04/gang-sheet/H010",
+   "output_id": "gang-sheet",
+   "rule_id": "R048",
+   "k_id": "K2_Q2",
+   "critical": false,
+   "check": "The Bag design 3 sticker placed on “Sticker imposed production sheet” (gang-sheet.pdf) is the delivered recovered-sticker-bag-design-3.svg, with its proportions and colours unchanged.",
+   "assertion": {
+    "op": "v2_placed_master",
+    "deliverable": "deliverables/recovered-sticker-bag-design-3.svg",
+    "hexes": [
+     "#3E2A20",
+     "#C8A97E",
+     "#5B6B54",
+     "#F3E7D3",
+     "#A8442E",
+     "#201914"
+    ]
+   },
+   "how": "Renders the delivered sticker, finds it on the sheet, and compares its proportions and colours."
+  },
+  {
+   "check_id": "VECTOR-04/gang-sheet/H011",
+   "output_id": "gang-sheet",
+   "rule_id": "R049",
+   "k_id": "K2_Q2",
+   "critical": false,
+   "check": "The Companion 1 sticker placed on “Sticker imposed production sheet” (gang-sheet.pdf) is the delivered new-sticker-companion-1.svg, with its proportions and colours unchanged.",
+   "assertion": {
+    "op": "v2_placed_master",
+    "deliverable": "deliverables/new-sticker-companion-1.svg",
+    "hexes": [
+     "#3E2A20",
+     "#C8A97E",
+     "#5B6B54",
+     "#F3E7D3",
+     "#A8442E",
+     "#201914"
+    ]
+   },
+   "how": "Renders the delivered sticker, finds it on the sheet, and compares its proportions and colours."
+  },
+  {
+   "check_id": "VECTOR-04/gang-sheet/H012",
+   "output_id": "gang-sheet",
+   "rule_id": "R049",
+   "k_id": "K2_Q2",
+   "critical": false,
+   "check": "The Companion 2 sticker placed on “Sticker imposed production sheet” (gang-sheet.pdf) is the delivered new-sticker-companion-2.svg, with its proportions and colours unchanged.",
+   "assertion": {
+    "op": "v2_placed_master",
+    "deliverable": "deliverables/new-sticker-companion-2.svg",
+    "hexes": [
+     "#3E2A20",
+     "#C8A97E",
+     "#5B6B54",
+     "#F3E7D3",
+     "#A8442E",
+     "#201914"
+    ]
+   },
+   "how": "Renders the delivered sticker, finds it on the sheet, and compares its proportions and colours."
   },
   {
    "check_id": "VECTOR-04/recovered-sticker-window-mark/H012",
@@ -490,6 +1373,330 @@
    "how": "Renders the artwork and finds the colour covering most of it, grounds left out."
   },
   {
+   "check_id": "VECTOR-04/sticker-proof-window-mark/H012",
+   "output_id": "sticker-proof-window-mark",
+   "rule_id": "R057",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Apart from anti-aliased edges, every colour on “Transparent sticker proof - Window mark” (sticker-proof-window-mark.png) is one of the six palette hexes: #3E2A20, #C8A97E, #5B6B54, #F3E7D3, #A8442E or #201914.",
+   "assertion": {
+    "op": "v2_raster_palette",
+    "hexes": [
+     "#3E2A20",
+     "#C8A97E",
+     "#5B6B54",
+     "#F3E7D3",
+     "#A8442E",
+     "#201914"
+    ],
+    "transparent_only": true
+   },
+   "how": "Reads every flat colour outside photographs, transparent parts and capture footage, and checks each is a palette colour."
+  },
+  {
+   "check_id": "VECTOR-04/sticker-proof-bag-design-1/H008",
+   "output_id": "sticker-proof-bag-design-1",
+   "rule_id": "R057",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Apart from anti-aliased edges, every colour on “Transparent sticker proof - Bag design 1” (sticker-proof-bag-design-1.png) is one of the six palette hexes: #3E2A20, #C8A97E, #5B6B54, #F3E7D3, #A8442E or #201914.",
+   "assertion": {
+    "op": "v2_raster_palette",
+    "hexes": [
+     "#3E2A20",
+     "#C8A97E",
+     "#5B6B54",
+     "#F3E7D3",
+     "#A8442E",
+     "#201914"
+    ],
+    "transparent_only": true
+   },
+   "how": "Reads every flat colour outside photographs, transparent parts and capture footage, and checks each is a palette colour."
+  },
+  {
+   "check_id": "VECTOR-04/sticker-proof-bag-design-2/H008",
+   "output_id": "sticker-proof-bag-design-2",
+   "rule_id": "R057",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Apart from anti-aliased edges, every colour on “Transparent sticker proof - Bag design 2” (sticker-proof-bag-design-2.png) is one of the six palette hexes: #3E2A20, #C8A97E, #5B6B54, #F3E7D3, #A8442E or #201914.",
+   "assertion": {
+    "op": "v2_raster_palette",
+    "hexes": [
+     "#3E2A20",
+     "#C8A97E",
+     "#5B6B54",
+     "#F3E7D3",
+     "#A8442E",
+     "#201914"
+    ],
+    "transparent_only": true
+   },
+   "how": "Reads every flat colour outside photographs, transparent parts and capture footage, and checks each is a palette colour."
+  },
+  {
+   "check_id": "VECTOR-04/sticker-proof-bag-design-3/H008",
+   "output_id": "sticker-proof-bag-design-3",
+   "rule_id": "R057",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Apart from anti-aliased edges, every colour on “Transparent sticker proof - Bag design 3” (sticker-proof-bag-design-3.png) is one of the six palette hexes: #3E2A20, #C8A97E, #5B6B54, #F3E7D3, #A8442E or #201914.",
+   "assertion": {
+    "op": "v2_raster_palette",
+    "hexes": [
+     "#3E2A20",
+     "#C8A97E",
+     "#5B6B54",
+     "#F3E7D3",
+     "#A8442E",
+     "#201914"
+    ],
+    "transparent_only": true
+   },
+   "how": "Reads every flat colour outside photographs, transparent parts and capture footage, and checks each is a palette colour."
+  },
+  {
+   "check_id": "VECTOR-04/sticker-proof-companion-1/H003",
+   "output_id": "sticker-proof-companion-1",
+   "rule_id": "R057",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Apart from anti-aliased edges, every colour on “Transparent sticker proof - Companion 1” (sticker-proof-companion-1.png) is one of the six palette hexes: #3E2A20, #C8A97E, #5B6B54, #F3E7D3, #A8442E or #201914.",
+   "assertion": {
+    "op": "v2_raster_palette",
+    "hexes": [
+     "#3E2A20",
+     "#C8A97E",
+     "#5B6B54",
+     "#F3E7D3",
+     "#A8442E",
+     "#201914"
+    ],
+    "transparent_only": true
+   },
+   "how": "Reads every flat colour outside photographs, transparent parts and capture footage, and checks each is a palette colour."
+  },
+  {
+   "check_id": "VECTOR-04/sticker-proof-companion-2/H003",
+   "output_id": "sticker-proof-companion-2",
+   "rule_id": "R057",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Apart from anti-aliased edges, every colour on “Transparent sticker proof - Companion 2” (sticker-proof-companion-2.png) is one of the six palette hexes: #3E2A20, #C8A97E, #5B6B54, #F3E7D3, #A8442E or #201914.",
+   "assertion": {
+    "op": "v2_raster_palette",
+    "hexes": [
+     "#3E2A20",
+     "#C8A97E",
+     "#5B6B54",
+     "#F3E7D3",
+     "#A8442E",
+     "#201914"
+    ],
+    "transparent_only": true
+   },
+   "how": "Reads every flat colour outside photographs, transparent parts and capture footage, and checks each is a palette colour."
+  },
+  {
+   "check_id": "VECTOR-04/sticker-proof-bag-design-1/H010",
+   "output_id": "sticker-proof-bag-design-1",
+   "rule_id": "R058",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The main ink of the moth on “Transparent sticker proof - Bag design 1” (sticker-proof-bag-design-1.png) is solid Roast Brown #3E2A20, the ink printed on meridian_bag_moth.jpg.",
+   "assertion": {
+    "op": "v2_main_ink",
+    "hexes": [
+     "#3E2A20"
+    ],
+    "grounds": [
+     "#C8A97E",
+     "#F3E7D3"
+    ]
+   },
+   "how": "Renders the artwork and finds the colour covering most of it, grounds left out."
+  },
+  {
+   "check_id": "VECTOR-04/sticker-proof-bag-design-2/H010",
+   "output_id": "sticker-proof-bag-design-2",
+   "rule_id": "R059",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The main ink of the pour-over cone on “Transparent sticker proof - Bag design 2” (sticker-proof-bag-design-2.png) is solid Ash Green #5B6B54, the ink printed on meridian_bag_pourover.jpg.",
+   "assertion": {
+    "op": "v2_main_ink",
+    "hexes": [
+     "#5B6B54"
+    ],
+    "grounds": [
+     "#C8A97E",
+     "#F3E7D3"
+    ]
+   },
+   "how": "Renders the artwork and finds the colour covering most of it, grounds left out."
+  },
+  {
+   "check_id": "VECTOR-04/sticker-proof-bag-design-3/H010",
+   "output_id": "sticker-proof-bag-design-3",
+   "rule_id": "R060",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The main ink of the ridge line on “Transparent sticker proof - Bag design 3” (sticker-proof-bag-design-3.png) is solid Brick Red #A8442E, the ink printed on meridian_bag_ridgeline.jpg.",
+   "assertion": {
+    "op": "v2_main_ink",
+    "hexes": [
+     "#A8442E"
+    ],
+    "grounds": [
+     "#C8A97E",
+     "#F3E7D3"
+    ]
+   },
+   "how": "Renders the artwork and finds the colour covering most of it, grounds left out."
+  },
+  {
+   "check_id": "VECTOR-04/sticker-proof-companion-1/H005",
+   "output_id": "sticker-proof-companion-1",
+   "rule_id": "R061",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The main ink of the drawing on “Transparent sticker proof - Companion 1” (sticker-proof-companion-1.png) is Roast Brown #3E2A20, Ash Green #5B6B54 or Brick Red #A8442E.",
+   "assertion": {
+    "op": "v2_main_ink",
+    "hexes": [
+     "#3E2A20",
+     "#5B6B54",
+     "#A8442E"
+    ],
+    "grounds": [
+     "#C8A97E",
+     "#F3E7D3"
+    ]
+   },
+   "how": "Renders the artwork and finds the colour covering most of it, grounds left out."
+  },
+  {
+   "check_id": "VECTOR-04/sticker-proof-companion-2/H005",
+   "output_id": "sticker-proof-companion-2",
+   "rule_id": "R061",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The main ink of the drawing on “Transparent sticker proof - Companion 2” (sticker-proof-companion-2.png) is Roast Brown #3E2A20, Ash Green #5B6B54 or Brick Red #A8442E.",
+   "assertion": {
+    "op": "v2_main_ink",
+    "hexes": [
+     "#3E2A20",
+     "#5B6B54",
+     "#A8442E"
+    ],
+    "grounds": [
+     "#C8A97E",
+     "#F3E7D3"
+    ]
+   },
+   "how": "Renders the artwork and finds the colour covering most of it, grounds left out."
+  },
+  {
+   "check_id": "VECTOR-04/sticker-proof-companion-1/H012",
+   "output_id": "sticker-proof-companion-1",
+   "rule_id": "R062",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Any type on a light ground on “Transparent sticker proof - Companion 1” (sticker-proof-companion-1.png) is Roast Brown #3E2A20, or Ash Green #5B6B54 for a secondary line.",
+   "assertion": {
+    "op": "v2_raster_text_colour",
+    "all_text": true,
+    "grounds": [
+     "#F3E7D3",
+     "#C8A97E"
+    ],
+    "colors": [
+     "#3E2A20",
+     "#5B6B54"
+    ],
+    "primary": [
+     "#3E2A20"
+    ]
+   },
+   "how": "Reads each text line by OCR, then the colour of its letters and of the ground round it."
+  },
+  {
+   "check_id": "VECTOR-04/sticker-proof-companion-2/H012",
+   "output_id": "sticker-proof-companion-2",
+   "rule_id": "R062",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Any type on a light ground on “Transparent sticker proof - Companion 2” (sticker-proof-companion-2.png) is Roast Brown #3E2A20, or Ash Green #5B6B54 for a secondary line.",
+   "assertion": {
+    "op": "v2_raster_text_colour",
+    "all_text": true,
+    "grounds": [
+     "#F3E7D3",
+     "#C8A97E"
+    ],
+    "colors": [
+     "#3E2A20",
+     "#5B6B54"
+    ],
+    "primary": [
+     "#3E2A20"
+    ]
+   },
+   "how": "Reads each text line by OCR, then the colour of its letters and of the ground round it."
+  },
+  {
+   "check_id": "VECTOR-04/gang-sheet/H019",
+   "output_id": "gang-sheet",
+   "rule_id": "R063",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "With colour management on, every colour on “Sticker imposed production sheet” (gang-sheet.pdf) except the CutContour paths matches one of #3E2A20, #C8A97E, #5B6B54, #F3E7D3, #A8442E or #201914.",
+   "assertion": {
+    "op": "v2_pdf_managed_palette",
+    "hexes": [
+     "#3E2A20",
+     "#C8A97E",
+     "#5B6B54",
+     "#F3E7D3",
+     "#A8442E",
+     "#201914"
+    ],
+    "icc": "PSOcoated_v3.icc"
+   },
+   "how": "Reads every colour in the PDF, converts CMYK through the supplied output profile, and compares with the palette."
+  },
+  {
+   "check_id": "VECTOR-04/gang-sheet/H020",
+   "output_id": "gang-sheet",
+   "rule_id": "R064",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Every colour on “Sticker imposed production sheet” (gang-sheet.pdf) is solid at 100% opacity, with no tint, transparency, gradient, shadow or blend mode.",
+   "assertion": {
+    "op": "v2_pdf_solid_all"
+   },
+   "how": "Reads the PDF for transparency, gradients, soft masks, blend modes and duplicated shadow type."
+  },
+  {
+   "check_id": "VECTOR-04/gang-sheet/H023",
+   "output_id": "gang-sheet",
+   "rule_id": "R065",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Any label, slug or die line note on “Sticker imposed production sheet” (gang-sheet.pdf) is Roast Brown #3E2A20 or, for a secondary line, Ash Green #5B6B54.",
+   "assertion": {
+    "op": "v2_pdf_labels_colour",
+    "colors": [
+     "#3E2A20"
+    ],
+    "secondary": [
+     "#5B6B54"
+    ]
+   },
+   "how": "Reads the colour of the type lying outside the stickers' cut paths."
+  },
+  {
    "check_id": "VECTOR-04/recovered-sticker-bag-design-1/H010",
    "output_id": "recovered-sticker-bag-design-1",
    "rule_id": "R068",
@@ -549,6 +1756,144 @@
     ]
    },
    "how": "Renders the artwork and finds the colour covering most of it, grounds left out."
+  },
+  {
+   "check_id": "VECTOR-04/new-sticker-companion-1/H013",
+   "output_id": "new-sticker-companion-1",
+   "rule_id": "R070",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Any type on a light ground on “Original companion sticker - Companion 1” (new-sticker-companion-1.svg) is Roast Brown #3E2A20, or Ash Green #5B6B54 for a secondary line.",
+   "assertion": {
+    "op": "v2_raster_text_colour",
+    "all_text": true,
+    "grounds": [
+     "#F3E7D3",
+     "#C8A97E"
+    ],
+    "colors": [
+     "#3E2A20",
+     "#5B6B54"
+    ],
+    "primary": [
+     "#3E2A20"
+    ]
+   },
+   "how": "Reads each text line by OCR, then the colour of its letters and of the ground round it."
+  },
+  {
+   "check_id": "VECTOR-04/new-sticker-companion-2/H013",
+   "output_id": "new-sticker-companion-2",
+   "rule_id": "R070",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Any type on a light ground on “Original companion sticker - Companion 2” (new-sticker-companion-2.svg) is Roast Brown #3E2A20, or Ash Green #5B6B54 for a secondary line.",
+   "assertion": {
+    "op": "v2_raster_text_colour",
+    "all_text": true,
+    "grounds": [
+     "#F3E7D3",
+     "#C8A97E"
+    ],
+    "colors": [
+     "#3E2A20",
+     "#5B6B54"
+    ],
+    "primary": [
+     "#3E2A20"
+    ]
+   },
+   "how": "Reads each text line by OCR, then the colour of its letters and of the ground round it."
+  },
+  {
+   "check_id": "VECTOR-04/sticker-proof-window-mark/H017",
+   "output_id": "sticker-proof-window-mark",
+   "rule_id": "R074",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "If Ink Black #201914 appears on “Transparent sticker proof - Window mark” (sticker-proof-window-mark.png), it is only fine detail, never a main shape, backing shape, type or the wordmark.",
+   "assertion": {
+    "op": "v2_ink_detail",
+    "hexes": [
+     "#201914"
+    ]
+   },
+   "how": "Finds every piece in the colour on the proof and checks each is small detail, not a main shape, backing or type."
+  },
+  {
+   "check_id": "VECTOR-04/sticker-proof-bag-design-1/H013",
+   "output_id": "sticker-proof-bag-design-1",
+   "rule_id": "R074",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "If Ink Black #201914 appears on “Transparent sticker proof - Bag design 1” (sticker-proof-bag-design-1.png), it is only fine detail, never a main shape, backing shape, type or the wordmark.",
+   "assertion": {
+    "op": "v2_ink_detail",
+    "hexes": [
+     "#201914"
+    ]
+   },
+   "how": "Finds every piece in the colour on the proof and checks each is small detail, not a main shape, backing or type."
+  },
+  {
+   "check_id": "VECTOR-04/sticker-proof-bag-design-2/H013",
+   "output_id": "sticker-proof-bag-design-2",
+   "rule_id": "R074",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "If Ink Black #201914 appears on “Transparent sticker proof - Bag design 2” (sticker-proof-bag-design-2.png), it is only fine detail, never a main shape, backing shape, type or the wordmark.",
+   "assertion": {
+    "op": "v2_ink_detail",
+    "hexes": [
+     "#201914"
+    ]
+   },
+   "how": "Finds every piece in the colour on the proof and checks each is small detail, not a main shape, backing or type."
+  },
+  {
+   "check_id": "VECTOR-04/sticker-proof-bag-design-3/H013",
+   "output_id": "sticker-proof-bag-design-3",
+   "rule_id": "R074",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "If Ink Black #201914 appears on “Transparent sticker proof - Bag design 3” (sticker-proof-bag-design-3.png), it is only fine detail, never a main shape, backing shape, type or the wordmark.",
+   "assertion": {
+    "op": "v2_ink_detail",
+    "hexes": [
+     "#201914"
+    ]
+   },
+   "how": "Finds every piece in the colour on the proof and checks each is small detail, not a main shape, backing or type."
+  },
+  {
+   "check_id": "VECTOR-04/sticker-proof-companion-1/H017",
+   "output_id": "sticker-proof-companion-1",
+   "rule_id": "R074",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "If Ink Black #201914 appears on “Transparent sticker proof - Companion 1” (sticker-proof-companion-1.png), it is only fine detail, never a main shape, backing shape, type or the wordmark.",
+   "assertion": {
+    "op": "v2_ink_detail",
+    "hexes": [
+     "#201914"
+    ]
+   },
+   "how": "Finds every piece in the colour on the proof and checks each is small detail, not a main shape, backing or type."
+  },
+  {
+   "check_id": "VECTOR-04/sticker-proof-companion-2/H017",
+   "output_id": "sticker-proof-companion-2",
+   "rule_id": "R074",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "If Ink Black #201914 appears on “Transparent sticker proof - Companion 2” (sticker-proof-companion-2.png), it is only fine detail, never a main shape, backing shape, type or the wordmark.",
+   "assertion": {
+    "op": "v2_ink_detail",
+    "hexes": [
+     "#201914"
+    ]
+   },
+   "how": "Finds every piece in the colour on the proof and checks each is small detail, not a main shape, backing or type."
   },
   {
    "check_id": "VECTOR-04/recovered-sticker-window-mark/H023",
@@ -647,6 +1992,200 @@
    "how": "Renders the file without photos and measures the share of the named colours."
   },
   {
+   "check_id": "VECTOR-04/gang-sheet/H031",
+   "output_id": "gang-sheet",
+   "rule_id": "R080",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The sticker artwork on “Sticker imposed production sheet” (gang-sheet.pdf) uses only CMYK process colours plus the CutContour spot, with no RGB objects.",
+   "assertion": {
+    "op": "v2_pdf_process_only"
+   },
+   "how": "Reads the colour space of every path, image and shading in the PDF."
+  },
+  {
+   "check_id": "VECTOR-04/new-sticker-companion-1/H032",
+   "output_id": "new-sticker-companion-1",
+   "rule_id": "R081",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Any type set on a Roast Brown or Ash Green shape on “Original companion sticker - Companion 1” (new-sticker-companion-1.svg) is Warm Cream #F3E7D3.",
+   "assertion": {
+    "op": "v2_raster_text_colour",
+    "all_text": true,
+    "grounds": [
+     "#3E2A20",
+     "#5B6B54"
+    ],
+    "colors": [
+     "#F3E7D3"
+    ]
+   },
+   "how": "Reads each text line by OCR, then the colour of its letters and of the ground round it."
+  },
+  {
+   "check_id": "VECTOR-04/new-sticker-companion-2/H032",
+   "output_id": "new-sticker-companion-2",
+   "rule_id": "R081",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Any type set on a Roast Brown or Ash Green shape on “Original companion sticker - Companion 2” (new-sticker-companion-2.svg) is Warm Cream #F3E7D3.",
+   "assertion": {
+    "op": "v2_raster_text_colour",
+    "all_text": true,
+    "grounds": [
+     "#3E2A20",
+     "#5B6B54"
+    ],
+    "colors": [
+     "#F3E7D3"
+    ]
+   },
+   "how": "Reads each text line by OCR, then the colour of its letters and of the ground round it."
+  },
+  {
+   "check_id": "VECTOR-04/sticker-proof-companion-1/H024",
+   "output_id": "sticker-proof-companion-1",
+   "rule_id": "R082",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Any type set on a Roast Brown or Ash Green shape on “Transparent sticker proof - Companion 1” (sticker-proof-companion-1.png) is Warm Cream #F3E7D3.",
+   "assertion": {
+    "op": "v2_raster_text_colour",
+    "all_text": true,
+    "grounds": [
+     "#3E2A20",
+     "#5B6B54"
+    ],
+    "colors": [
+     "#F3E7D3"
+    ]
+   },
+   "how": "Reads each text line by OCR, then the colour of its letters and of the ground round it."
+  },
+  {
+   "check_id": "VECTOR-04/sticker-proof-companion-2/H024",
+   "output_id": "sticker-proof-companion-2",
+   "rule_id": "R082",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Any type set on a Roast Brown or Ash Green shape on “Transparent sticker proof - Companion 2” (sticker-proof-companion-2.png) is Warm Cream #F3E7D3.",
+   "assertion": {
+    "op": "v2_raster_text_colour",
+    "all_text": true,
+    "grounds": [
+     "#3E2A20",
+     "#5B6B54"
+    ],
+    "colors": [
+     "#F3E7D3"
+    ]
+   },
+   "how": "Reads each text line by OCR, then the colour of its letters and of the ground round it."
+  },
+  {
+   "check_id": "VECTOR-04/new-sticker-companion-1/H012",
+   "output_id": "new-sticker-companion-1",
+   "rule_id": "R087",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "No line of copy on “Original companion sticker - Companion 1” (new-sticker-companion-1.svg) runs longer than 65 characters.",
+   "assertion": {
+    "op": "v2_line_chars",
+    "max_chars": 65,
+    "scope": "all"
+   },
+   "how": "Reads the selected lines (live text where there is any) and counts their characters."
+  },
+  {
+   "check_id": "VECTOR-04/new-sticker-companion-2/H012",
+   "output_id": "new-sticker-companion-2",
+   "rule_id": "R087",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "No line of copy on “Original companion sticker - Companion 2” (new-sticker-companion-2.svg) runs longer than 65 characters.",
+   "assertion": {
+    "op": "v2_line_chars",
+    "max_chars": 65,
+    "scope": "all"
+   },
+   "how": "Reads the selected lines (live text where there is any) and counts their characters."
+  },
+  {
+   "check_id": "VECTOR-04/sticker-proof-companion-1/H011",
+   "output_id": "sticker-proof-companion-1",
+   "rule_id": "R087",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "No line of copy on “Transparent sticker proof - Companion 1” (sticker-proof-companion-1.png) runs longer than 65 characters.",
+   "assertion": {
+    "op": "v2_line_chars",
+    "max_chars": 65,
+    "scope": "all"
+   },
+   "how": "Reads the selected lines (live text where there is any) and counts their characters."
+  },
+  {
+   "check_id": "VECTOR-04/sticker-proof-companion-2/H011",
+   "output_id": "sticker-proof-companion-2",
+   "rule_id": "R087",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "No line of copy on “Transparent sticker proof - Companion 2” (sticker-proof-companion-2.png) runs longer than 65 characters.",
+   "assertion": {
+    "op": "v2_line_chars",
+    "max_chars": 65,
+    "scope": "all"
+   },
+   "how": "Reads the selected lines (live text where there is any) and counts their characters."
+  },
+  {
+   "check_id": "VECTOR-04/gang-sheet/H021",
+   "output_id": "gang-sheet",
+   "rule_id": "R088",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "If a label, slug or die line note appears on “Sticker imposed production sheet” (gang-sheet.pdf), it is set in Libre Franklin Bold 700.",
+   "assertion": {
+    "op": "v2_font_is",
+    "labels": true,
+    "optional": true,
+    "font": "fonts/LibreFranklin[wght].ttf",
+    "axes": {
+     "wght": 700
+    },
+    "family": "Libre Franklin",
+    "weight": "Bold"
+   },
+   "how": "Reads the glyphs' advance widths from the PDF and compares them with the supplied font at every weight."
+  },
+  {
+   "check_id": "VECTOR-04/new-sticker-companion-1/H009",
+   "output_id": "new-sticker-companion-1",
+   "rule_id": "R089",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Any MERIDIAN & ASH wordmark set in DM Serif Display Regular on “Original companion sticker - Companion 1” (new-sticker-companion-1.svg) arches on a curve that spans 40 degrees.",
+   "assertion": {
+    "op": "v2_svg_arch",
+    "text": "MERIDIAN"
+   },
+   "how": "Reads the SVG's live wordmark and checks whether it is set on a straight line."
+  },
+  {
+   "check_id": "VECTOR-04/new-sticker-companion-2/H009",
+   "output_id": "new-sticker-companion-2",
+   "rule_id": "R089",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Any MERIDIAN & ASH wordmark set in DM Serif Display Regular on “Original companion sticker - Companion 2” (new-sticker-companion-2.svg) arches on a curve that spans 40 degrees.",
+   "assertion": {
+    "op": "v2_svg_arch",
+    "text": "MERIDIAN"
+   },
+   "how": "Reads the SVG's live wordmark and checks whether it is set on a straight line."
+  },
+  {
    "check_id": "VECTOR-04/new-sticker-companion-1/H010",
    "output_id": "new-sticker-companion-1",
    "rule_id": "R090",
@@ -675,6 +2214,471 @@
     "ratio": 1.6
    },
    "how": "Reads the SVG's live text sizes for the glyph and the capitals beside it."
+  },
+  {
+   "check_id": "VECTOR-04/new-sticker-companion-1/H027",
+   "output_id": "new-sticker-companion-1",
+   "rule_id": "R093",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "If body copy on “Original companion sticker - Companion 1” (new-sticker-companion-1.svg) runs over two or more lines, its baselines are 10.5 pt (3.7 mm) apart.",
+   "assertion": {
+    "op": "v2_svg_leading",
+    "family": "libre\\s*franklin",
+    "size_pt": [
+     0,
+     999
+    ],
+    "leading_mm": 3.704
+   },
+   "how": "Reads the SVG's live text lines and measures the distance between their baselines."
+  },
+  {
+   "check_id": "VECTOR-04/new-sticker-companion-2/H027",
+   "output_id": "new-sticker-companion-2",
+   "rule_id": "R093",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "If body copy on “Original companion sticker - Companion 2” (new-sticker-companion-2.svg) runs over two or more lines, its baselines are 10.5 pt (3.7 mm) apart.",
+   "assertion": {
+    "op": "v2_svg_leading",
+    "family": "libre\\s*franklin",
+    "size_pt": [
+     0,
+     999
+    ],
+    "leading_mm": 3.704
+   },
+   "how": "Reads the SVG's live text lines and measures the distance between their baselines."
+  },
+  {
+   "check_id": "VECTOR-04/new-sticker-companion-1/H028",
+   "output_id": "new-sticker-companion-1",
+   "rule_id": "R094",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "If a flat title line on “Original companion sticker - Companion 1” (new-sticker-companion-1.svg) wraps to a second line, its baselines are 13 pt (4.6 mm) apart.",
+   "assertion": {
+    "op": "v2_svg_leading",
+    "family": "dm\\s*serif",
+    "size_pt": [
+     0,
+     14.5
+    ],
+    "leading_mm": 4.586
+   },
+   "how": "Reads the SVG's live text lines and measures the distance between their baselines."
+  },
+  {
+   "check_id": "VECTOR-04/new-sticker-companion-2/H028",
+   "output_id": "new-sticker-companion-2",
+   "rule_id": "R094",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "If a flat title line on “Original companion sticker - Companion 2” (new-sticker-companion-2.svg) wraps to a second line, its baselines are 13 pt (4.6 mm) apart.",
+   "assertion": {
+    "op": "v2_svg_leading",
+    "family": "dm\\s*serif",
+    "size_pt": [
+     0,
+     14.5
+    ],
+    "leading_mm": 4.586
+   },
+   "how": "Reads the SVG's live text lines and measures the distance between their baselines."
+  },
+  {
+   "check_id": "VECTOR-04/gang-sheet/H030",
+   "output_id": "gang-sheet",
+   "rule_id": "R095",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "If a label or die line note on “Sticker imposed production sheet” (gang-sheet.pdf) runs over two or more lines, its baselines are 8.5 pt (3.0 mm) apart.",
+   "assertion": {
+    "op": "v2_labels",
+    "mode": "leading",
+    "leading_pt": 8.5
+   },
+   "how": "Reads the type lying outside the stickers' cut paths on the sheet."
+  },
+  {
+   "check_id": "VECTOR-04/new-sticker-companion-1/H029",
+   "output_id": "new-sticker-companion-1",
+   "rule_id": "R096",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "If display lettering on “Original companion sticker - Companion 1” (new-sticker-companion-1.svg) runs to a second line, its baselines are 20 pt (7.1 mm) apart.",
+   "assertion": {
+    "op": "v2_svg_leading",
+    "family": "dm\\s*serif",
+    "size_pt": [
+     14.5,
+     999
+    ],
+    "leading_mm": 7.056
+   },
+   "how": "Reads the SVG's live text lines and measures the distance between their baselines."
+  },
+  {
+   "check_id": "VECTOR-04/new-sticker-companion-2/H029",
+   "output_id": "new-sticker-companion-2",
+   "rule_id": "R096",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "If display lettering on “Original companion sticker - Companion 2” (new-sticker-companion-2.svg) runs to a second line, its baselines are 20 pt (7.1 mm) apart.",
+   "assertion": {
+    "op": "v2_svg_leading",
+    "family": "dm\\s*serif",
+    "size_pt": [
+     14.5,
+     999
+    ],
+    "leading_mm": 7.056
+   },
+   "how": "Reads the SVG's live text lines and measures the distance between their baselines."
+  },
+  {
+   "check_id": "VECTOR-04/gang-sheet/H032",
+   "output_id": "gang-sheet",
+   "rule_id": "R099",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Every label, slug and die line note on “Sticker imposed production sheet” (gang-sheet.pdf) is set in capitals.",
+   "assertion": {
+    "op": "v2_labels",
+    "mode": "caps"
+   },
+   "how": "Reads the type lying outside the stickers' cut paths on the sheet."
+  },
+  {
+   "check_id": "VECTOR-04/recovered-sticker-window-mark/H013",
+   "output_id": "recovered-sticker-window-mark",
+   "rule_id": "R100",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Every fill and stroke in “Recovered sticker artwork - Window mark” (recovered-sticker-window-mark.svg) is solid at 100% opacity, with no tint, transparency, gradient, shadow or blend mode.",
+   "assertion": {
+    "op": "v2_svg_solid",
+    "hexes": [
+     "#3E2A20",
+     "#C8A97E",
+     "#5B6B54",
+     "#F3E7D3",
+     "#A8442E",
+     "#201914"
+    ]
+   },
+   "how": "Reads the SVG's styles and renders it to check every colour is solid and from the palette."
+  },
+  {
+   "check_id": "VECTOR-04/recovered-sticker-bag-design-1/H009",
+   "output_id": "recovered-sticker-bag-design-1",
+   "rule_id": "R100",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Every fill and stroke in “Recovered sticker artwork - Bag design 1” (recovered-sticker-bag-design-1.svg) is solid at 100% opacity, with no tint, transparency, gradient, shadow or blend mode.",
+   "assertion": {
+    "op": "v2_svg_solid",
+    "hexes": [
+     "#3E2A20",
+     "#C8A97E",
+     "#5B6B54",
+     "#F3E7D3",
+     "#A8442E",
+     "#201914"
+    ]
+   },
+   "how": "Reads the SVG's styles and renders it to check every colour is solid and from the palette."
+  },
+  {
+   "check_id": "VECTOR-04/recovered-sticker-bag-design-2/H009",
+   "output_id": "recovered-sticker-bag-design-2",
+   "rule_id": "R100",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Every fill and stroke in “Recovered sticker artwork - Bag design 2” (recovered-sticker-bag-design-2.svg) is solid at 100% opacity, with no tint, transparency, gradient, shadow or blend mode.",
+   "assertion": {
+    "op": "v2_svg_solid",
+    "hexes": [
+     "#3E2A20",
+     "#C8A97E",
+     "#5B6B54",
+     "#F3E7D3",
+     "#A8442E",
+     "#201914"
+    ]
+   },
+   "how": "Reads the SVG's styles and renders it to check every colour is solid and from the palette."
+  },
+  {
+   "check_id": "VECTOR-04/recovered-sticker-bag-design-3/H009",
+   "output_id": "recovered-sticker-bag-design-3",
+   "rule_id": "R100",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Every fill and stroke in “Recovered sticker artwork - Bag design 3” (recovered-sticker-bag-design-3.svg) is solid at 100% opacity, with no tint, transparency, gradient, shadow or blend mode.",
+   "assertion": {
+    "op": "v2_svg_solid",
+    "hexes": [
+     "#3E2A20",
+     "#C8A97E",
+     "#5B6B54",
+     "#F3E7D3",
+     "#A8442E",
+     "#201914"
+    ]
+   },
+   "how": "Reads the SVG's styles and renders it to check every colour is solid and from the palette."
+  },
+  {
+   "check_id": "VECTOR-04/new-sticker-companion-1/H005",
+   "output_id": "new-sticker-companion-1",
+   "rule_id": "R100",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Every fill and stroke in “Original companion sticker - Companion 1” (new-sticker-companion-1.svg) is solid at 100% opacity, with no tint, transparency, gradient, shadow or blend mode.",
+   "assertion": {
+    "op": "v2_svg_solid",
+    "hexes": [
+     "#3E2A20",
+     "#C8A97E",
+     "#5B6B54",
+     "#F3E7D3",
+     "#A8442E",
+     "#201914"
+    ]
+   },
+   "how": "Reads the SVG's styles and renders it to check every colour is solid and from the palette."
+  },
+  {
+   "check_id": "VECTOR-04/new-sticker-companion-2/H005",
+   "output_id": "new-sticker-companion-2",
+   "rule_id": "R100",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Every fill and stroke in “Original companion sticker - Companion 2” (new-sticker-companion-2.svg) is solid at 100% opacity, with no tint, transparency, gradient, shadow or blend mode.",
+   "assertion": {
+    "op": "v2_svg_solid",
+    "hexes": [
+     "#3E2A20",
+     "#C8A97E",
+     "#5B6B54",
+     "#F3E7D3",
+     "#A8442E",
+     "#201914"
+    ]
+   },
+   "how": "Reads the SVG's styles and renders it to check every colour is solid and from the palette."
+  },
+  {
+   "check_id": "VECTOR-04/sticker-proof-window-mark/H013",
+   "output_id": "sticker-proof-window-mark",
+   "rule_id": "R101",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Apart from anti-aliased edges, every inked area on “Transparent sticker proof - Window mark” (sticker-proof-window-mark.png) is flat and fully opaque, with no tint, gradient or shadow.",
+   "assertion": {
+    "op": "v2_all_of",
+    "checks": [
+     {
+      "op": "v2_soft_edges"
+     },
+     {
+      "op": "v2_raster_palette",
+      "hexes": [
+       "#3E2A20",
+       "#C8A97E",
+       "#5B6B54",
+       "#F3E7D3",
+       "#A8442E",
+       "#201914"
+      ],
+      "transparent_only": true
+     }
+    ]
+   },
+   "how": "Runs each part; all must pass: Reads every flat colour outside photographs, transparent parts and capture footage, and checks each is a palette colour; Measures how wide the colour transitions are and checks the artwork's transparency."
+  },
+  {
+   "check_id": "VECTOR-04/sticker-proof-bag-design-1/H009",
+   "output_id": "sticker-proof-bag-design-1",
+   "rule_id": "R101",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Apart from anti-aliased edges, every inked area on “Transparent sticker proof - Bag design 1” (sticker-proof-bag-design-1.png) is flat and fully opaque, with no tint, gradient or shadow.",
+   "assertion": {
+    "op": "v2_all_of",
+    "checks": [
+     {
+      "op": "v2_soft_edges"
+     },
+     {
+      "op": "v2_raster_palette",
+      "hexes": [
+       "#3E2A20",
+       "#C8A97E",
+       "#5B6B54",
+       "#F3E7D3",
+       "#A8442E",
+       "#201914"
+      ],
+      "transparent_only": true
+     }
+    ]
+   },
+   "how": "Runs each part; all must pass: Reads every flat colour outside photographs, transparent parts and capture footage, and checks each is a palette colour; Measures how wide the colour transitions are and checks the artwork's transparency."
+  },
+  {
+   "check_id": "VECTOR-04/sticker-proof-bag-design-2/H009",
+   "output_id": "sticker-proof-bag-design-2",
+   "rule_id": "R101",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Apart from anti-aliased edges, every inked area on “Transparent sticker proof - Bag design 2” (sticker-proof-bag-design-2.png) is flat and fully opaque, with no tint, gradient or shadow.",
+   "assertion": {
+    "op": "v2_all_of",
+    "checks": [
+     {
+      "op": "v2_soft_edges"
+     },
+     {
+      "op": "v2_raster_palette",
+      "hexes": [
+       "#3E2A20",
+       "#C8A97E",
+       "#5B6B54",
+       "#F3E7D3",
+       "#A8442E",
+       "#201914"
+      ],
+      "transparent_only": true
+     }
+    ]
+   },
+   "how": "Runs each part; all must pass: Reads every flat colour outside photographs, transparent parts and capture footage, and checks each is a palette colour; Measures how wide the colour transitions are and checks the artwork's transparency."
+  },
+  {
+   "check_id": "VECTOR-04/sticker-proof-bag-design-3/H009",
+   "output_id": "sticker-proof-bag-design-3",
+   "rule_id": "R101",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Apart from anti-aliased edges, every inked area on “Transparent sticker proof - Bag design 3” (sticker-proof-bag-design-3.png) is flat and fully opaque, with no tint, gradient or shadow.",
+   "assertion": {
+    "op": "v2_all_of",
+    "checks": [
+     {
+      "op": "v2_soft_edges"
+     },
+     {
+      "op": "v2_raster_palette",
+      "hexes": [
+       "#3E2A20",
+       "#C8A97E",
+       "#5B6B54",
+       "#F3E7D3",
+       "#A8442E",
+       "#201914"
+      ],
+      "transparent_only": true
+     }
+    ]
+   },
+   "how": "Runs each part; all must pass: Reads every flat colour outside photographs, transparent parts and capture footage, and checks each is a palette colour; Measures how wide the colour transitions are and checks the artwork's transparency."
+  },
+  {
+   "check_id": "VECTOR-04/sticker-proof-companion-1/H004",
+   "output_id": "sticker-proof-companion-1",
+   "rule_id": "R101",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Apart from anti-aliased edges, every inked area on “Transparent sticker proof - Companion 1” (sticker-proof-companion-1.png) is flat and fully opaque, with no tint, gradient or shadow.",
+   "assertion": {
+    "op": "v2_all_of",
+    "checks": [
+     {
+      "op": "v2_soft_edges"
+     },
+     {
+      "op": "v2_raster_palette",
+      "hexes": [
+       "#3E2A20",
+       "#C8A97E",
+       "#5B6B54",
+       "#F3E7D3",
+       "#A8442E",
+       "#201914"
+      ],
+      "transparent_only": true
+     }
+    ]
+   },
+   "how": "Runs each part; all must pass: Reads every flat colour outside photographs, transparent parts and capture footage, and checks each is a palette colour; Measures how wide the colour transitions are and checks the artwork's transparency."
+  },
+  {
+   "check_id": "VECTOR-04/sticker-proof-companion-2/H004",
+   "output_id": "sticker-proof-companion-2",
+   "rule_id": "R101",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Apart from anti-aliased edges, every inked area on “Transparent sticker proof - Companion 2” (sticker-proof-companion-2.png) is flat and fully opaque, with no tint, gradient or shadow.",
+   "assertion": {
+    "op": "v2_all_of",
+    "checks": [
+     {
+      "op": "v2_soft_edges"
+     },
+     {
+      "op": "v2_raster_palette",
+      "hexes": [
+       "#3E2A20",
+       "#C8A97E",
+       "#5B6B54",
+       "#F3E7D3",
+       "#A8442E",
+       "#201914"
+      ],
+      "transparent_only": true
+     }
+    ]
+   },
+   "how": "Runs each part; all must pass: Reads every flat colour outside photographs, transparent parts and capture footage, and checks each is a palette colour; Measures how wide the colour transitions are and checks the artwork's transparency."
+  },
+  {
+   "check_id": "VECTOR-04/sticker-proof-companion-1/H020",
+   "output_id": "sticker-proof-companion-1",
+   "rule_id": "R103",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "“Transparent sticker proof - Companion 1” (sticker-proof-companion-1.png) contains no photograph or photographic texture.",
+   "assertion": {
+    "op": "v2_no_photo_texture"
+   },
+   "how": "Looks for photograph-like texture in the image."
+  },
+  {
+   "check_id": "VECTOR-04/sticker-proof-companion-2/H020",
+   "output_id": "sticker-proof-companion-2",
+   "rule_id": "R103",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "“Transparent sticker proof - Companion 2” (sticker-proof-companion-2.png) contains no photograph or photographic texture.",
+   "assertion": {
+    "op": "v2_no_photo_texture"
+   },
+   "how": "Looks for photograph-like texture in the image."
+  },
+  {
+   "check_id": "VECTOR-04/gang-sheet/H028",
+   "output_id": "gang-sheet",
+   "rule_id": "R105",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "No photograph or photographic texture appears anywhere on “Sticker imposed production sheet” (gang-sheet.pdf).",
+   "assertion": {
+    "op": "v2_sheet_no_raster"
+   },
+   "how": "Reads the sheet for placed pictures and fields of tiny specks."
   }
  ]
 }

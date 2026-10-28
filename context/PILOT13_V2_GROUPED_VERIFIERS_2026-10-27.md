@@ -149,3 +149,34 @@ the new operations are in `tools/auto_verifier/objective_ops_r2.py` (fixtures: `
 - 14 problems found in round-2 testing were fixed before the final run (listed on `automation.html`), among them one wrong
   pass (a product page whose price sits in its own column).
 
+## Round 3: colour, definitions and measurable judgement rules (2026-10-28)
+
+Dhiren: "build the checks which can be automated, whatever they are, using whatever methods", then "can u do more?
+Also the color checks". Deterministic methods only (PDF reading, OCR, OpenCV, pixel comparison with the supplied
+files); no AI vision model. Five helpers built the rules by task family plus typefaces on images and the made files;
+heavy runs moved to a GCP VM after the laptop overloaded (same paths and pins; round-1 and 2 answers identical).
+
+| Where the 1,500 rules stand | Rules | Checks | Moved to code | Code built, stays | Left with people |
+|---|---:|---:|---:|---:|---:|
+| Code reads it directly (step 1 "auto") | 349 | 1,385 | 1,157 | 228 | 0 |
+| Colour on images | 214 | 1,319 | 1,107 | 164 | 48 |
+| Needed a definition (now defined in code) | 100 | 271 | 166 | 60 | 45 |
+| Judgement (measurable ones re-sorted in round 3) | 837 | 3,337 | 1,465 | 749 | 1,123 |
+| **Total** | **1,500** | **6,312** | **3,895** | **1,201** | **1,216** |
+
+- Round 3 moved 577 rules (2,738 checks); 259 rules (973 checks) stay. Eight earlier verdicts changed with the new,
+  more faithful made files: six rules (12 checks; MOTION-11 R001, R004, R018, R019, R117 and LAYOUT-12 R032) went back
+  to people, LAYOUT-12 R101 and R111 (2 checks) moved.
+- Tested on the 2026-09-28 outputs (3,989 rows: 2,671 pass, 1,115 person, 203 fail). 200 fails are confirmed real
+  defects (173 new in round 3, `tools/pilot13_v2_automation/known_true_fails_r3.json`: Georgia, Times, Helvetica,
+  Arial, Avenir Next and Menlo set in place of the brand fonts; supplied photos placed with their casts uncorrected or
+  their studio paper left behind the speaker; a sign painted out of a supplied photo; off-brand sizes and leading);
+  3 are wrong answers (PHOTO-08 R046, PHOTO-10 R052: photo pixels read as designed colour), so those rules stay.
+- Made files: correct set 923 pass, 181 person, 3 fail (MOTION-11 R057, stays); three broken sets with every planted
+  defect failed or sent to a person for every moved rule.
+- Open questions for Dhiren (on `automation.html`): letter case; the role definitions; the limits chosen in code;
+  whether image checks should send an absence to a person (typeface checks already do, after OCR skipped a small
+  numeral while reading the rest with full confidence).
+- Still not done (needs approval): step 7, moving these checks into TASK_SPEC.json, the V7 site, the Sheet and
+  `verify_outputs.py`.
+

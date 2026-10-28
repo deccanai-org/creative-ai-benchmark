@@ -18,6 +18,45 @@
    "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
   },
   {
+   "check_id": "PHOTO-28/studio-launch/H002",
+   "output_id": "studio-launch",
+   "rule_id": "R002",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "No photo, button, panel or other element covers any part of the class list on “Studio launch-page composition” (studio-launch.png).",
+   "assertion": {
+    "op": "v2_all_of",
+    "checks": [
+     {
+      "op": "v2_price_list_pb",
+      "names": [
+       "Foundations",
+       "Flow",
+       "Core & Restore",
+       "Strength",
+       "Prenatal",
+       "Slow & Deep"
+      ]
+     },
+     {
+      "op": "v2_price_list_pb",
+      "block": true,
+      "photos": [
+       "verda_studio_frame_01.jpg",
+       "verda_studio_frame_02.jpg",
+       "verda_instructor_01.jpg",
+       "verda_instructor_02.jpg",
+       "verda_instructor_03.jpg",
+       "verda_instructor_04.jpg",
+       "verda_instructor_05.jpg",
+       "verda_instructor_06.jpg"
+      ]
+     }
+    ]
+   },
+   "how": "Reads the names set with a price on their own row and checks the list, or that nothing else sits inside the block, for each of the 2 named texts; all must pass."
+  },
+  {
    "check_id": "PHOTO-28/class-feed/H001",
    "output_id": "class-feed",
    "rule_id": "R003",
@@ -249,6 +288,119 @@
    "how": "Finds which supplied photo is shown, then checks the text for that person: reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
   },
   {
+   "check_id": "PHOTO-28/class-feed/H011",
+   "output_id": "class-feed",
+   "rule_id": "R005",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "If the pictured instructor on “Class announcement” (class-feed.png) is Priya Anand, Lena Brandt or Nadia Haddad, the class price reads $34, as in roster_2027.csv.",
+   "assertion": {
+    "op": "v2_all_of",
+    "checks": [
+     {
+      "op": "v2_pictured",
+      "photos": {
+       "verda_instructor_01.jpg": "Priya Anand",
+       "verda_instructor_02.jpg": "Dana Osei",
+       "verda_instructor_03.jpg": "Lena Brandt",
+       "verda_instructor_04.jpg": "Tomas Reyes",
+       "verda_instructor_05.jpg": "Yuki Sato",
+       "verda_instructor_06.jpg": "Nadia Haddad"
+      },
+      "when": "Priya Anand",
+      "then": {
+       "op": "v2_text_pb",
+       "expected": [
+        {
+         "regex": "\\$\\s?34(?!\\d)"
+        }
+       ],
+       "forbidden": [
+        {
+         "regex": "\\$\\s?(?:36|38)(?!\\d)"
+        }
+       ],
+       "photos": [
+        "verda_instructor_01.jpg",
+        "verda_instructor_02.jpg",
+        "verda_instructor_03.jpg",
+        "verda_instructor_04.jpg",
+        "verda_instructor_05.jpg",
+        "verda_instructor_06.jpg"
+       ]
+      }
+     },
+     {
+      "op": "v2_pictured",
+      "photos": {
+       "verda_instructor_01.jpg": "Priya Anand",
+       "verda_instructor_02.jpg": "Dana Osei",
+       "verda_instructor_03.jpg": "Lena Brandt",
+       "verda_instructor_04.jpg": "Tomas Reyes",
+       "verda_instructor_05.jpg": "Yuki Sato",
+       "verda_instructor_06.jpg": "Nadia Haddad"
+      },
+      "when": "Lena Brandt",
+      "then": {
+       "op": "v2_text_pb",
+       "expected": [
+        {
+         "regex": "\\$\\s?34(?!\\d)"
+        }
+       ],
+       "forbidden": [
+        {
+         "regex": "\\$\\s?(?:36|38)(?!\\d)"
+        }
+       ],
+       "photos": [
+        "verda_instructor_01.jpg",
+        "verda_instructor_02.jpg",
+        "verda_instructor_03.jpg",
+        "verda_instructor_04.jpg",
+        "verda_instructor_05.jpg",
+        "verda_instructor_06.jpg"
+       ]
+      }
+     },
+     {
+      "op": "v2_pictured",
+      "photos": {
+       "verda_instructor_01.jpg": "Priya Anand",
+       "verda_instructor_02.jpg": "Dana Osei",
+       "verda_instructor_03.jpg": "Lena Brandt",
+       "verda_instructor_04.jpg": "Tomas Reyes",
+       "verda_instructor_05.jpg": "Yuki Sato",
+       "verda_instructor_06.jpg": "Nadia Haddad"
+      },
+      "when": "Nadia Haddad",
+      "then": {
+       "op": "v2_text_pb",
+       "expected": [
+        {
+         "regex": "\\$\\s?34(?!\\d)"
+        }
+       ],
+       "forbidden": [
+        {
+         "regex": "\\$\\s?(?:36|38)(?!\\d)"
+        }
+       ],
+       "photos": [
+        "verda_instructor_01.jpg",
+        "verda_instructor_02.jpg",
+        "verda_instructor_03.jpg",
+        "verda_instructor_04.jpg",
+        "verda_instructor_05.jpg",
+        "verda_instructor_06.jpg"
+       ]
+      }
+     }
+    ]
+   },
+   "how": "Finds which supplied photo is shown, then checks the text for that person, for each of the 3 named texts; all must pass."
+  },
+  {
    "check_id": "PHOTO-28/class-feed/H012",
    "output_id": "class-feed",
    "rule_id": "R006",
@@ -269,6 +421,66 @@
     ]
    },
    "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-28/studio-launch/H011",
+   "output_id": "studio-launch",
+   "rule_id": "R007",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "Every price on “Studio launch-page composition” (studio-launch.png) is a supplied figure: a class price from roster_2027.csv, the 180 dollar intro pack or the 220 dollar membership.",
+   "assertion": {
+    "op": "v2_prices",
+    "mode": "only",
+    "allowed": [
+     "$34",
+     "$36",
+     "$38",
+     "$180",
+     "$220"
+    ]
+   },
+   "how": "Finds every price and checks each meets the rule."
+  },
+  {
+   "check_id": "PHOTO-28/class-feed/H019",
+   "output_id": "class-feed",
+   "rule_id": "R007",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "Every price on “Class announcement” (class-feed.png) is a supplied figure: a class price from roster_2027.csv, the 180 dollar intro pack or the 220 dollar membership.",
+   "assertion": {
+    "op": "v2_prices",
+    "mode": "only",
+    "allowed": [
+     "$34",
+     "$36",
+     "$38",
+     "$180",
+     "$220"
+    ]
+   },
+   "how": "Finds every price and checks each meets the rule."
+  },
+  {
+   "check_id": "PHOTO-28/booking-story/H010",
+   "output_id": "booking-story",
+   "rule_id": "R007",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "Every price on “Studio booking story” (booking-story.png) is a supplied figure: a class price from roster_2027.csv, the 180 dollar intro pack or the 220 dollar membership.",
+   "assertion": {
+    "op": "v2_prices",
+    "mode": "only",
+    "allowed": [
+     "$34",
+     "$36",
+     "$38",
+     "$180",
+     "$220"
+    ]
+   },
+   "how": "Finds every price and checks each meets the rule."
   },
   {
    "check_id": "PHOTO-28/class-feed/H020",
@@ -325,6 +537,97 @@
     ]
    },
    "how": "Reads all text and checks none of the named words or patterns appears, for each of the 2 named texts; all must pass."
+  },
+  {
+   "check_id": "PHOTO-28/booking-story/H005",
+   "output_id": "booking-story",
+   "rule_id": "R009",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "Any price given for Foundations, Core & Restore or Slow & Deep on “Studio booking story” (booking-story.png) is $34, as roster_2027.csv gives for RF-FND, RF-COR and RF-SLW.",
+   "assertion": {
+    "op": "v2_paired",
+    "anchor": [
+     "Foundations",
+     "Core & Restore",
+     "Slow & Deep"
+    ],
+    "whole_line": false,
+    "kind": "[$€£]\\s?\\d",
+    "value": {
+     "regex": "\\$\\s?34(?![\\d])"
+    },
+    "where": "beside",
+    "empty_ok": true,
+    "optional": true
+   },
+   "how": "Reads where each value stands and checks the value that belongs to this name (by its section, column or line) is the expected one."
+  },
+  {
+   "check_id": "PHOTO-28/studio-launch/H012",
+   "output_id": "studio-launch",
+   "rule_id": "R010",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "Any validity given on “Studio launch-page composition” (studio-launch.png) reads through Dec 2027, as in roster_2027.csv, never last year's through Dec 2025.",
+   "assertion": {
+    "op": "v2_text_pb",
+    "if_any": "\\bvalid\\b|\\bthrough\\b|\\buntil\\b|\\bexpires?\\b",
+    "expected": [
+     {
+      "regex": "through\\s+Dec(?:ember)?\\.?\\s+2027"
+     }
+    ],
+    "forbidden": [
+     {
+      "regex": "\\b(?:through|until|thru|valid(?:\\s+\\w+){0,2})\\s+(?:[A-Za-z]{3,9}\\.?\\s+)?(?:\\d{1,2}\\s+)?20(?:1\\d|2[0-6])\\b"
+     }
+    ],
+    "photos": [
+     "verda_studio_frame_01.jpg",
+     "verda_studio_frame_02.jpg",
+     "verda_instructor_01.jpg",
+     "verda_instructor_02.jpg",
+     "verda_instructor_03.jpg",
+     "verda_instructor_04.jpg",
+     "verda_instructor_05.jpg",
+     "verda_instructor_06.jpg"
+    ]
+   },
+   "how": "Reads the type by OCR or from the PDF, leaving out lettering inside the supplied photos, and looks for the wording."
+  },
+  {
+   "check_id": "PHOTO-28/booking-story/H011",
+   "output_id": "booking-story",
+   "rule_id": "R010",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "Any validity given on “Studio booking story” (booking-story.png) reads through Dec 2027, as in roster_2027.csv, never last year's through Dec 2025.",
+   "assertion": {
+    "op": "v2_text_pb",
+    "if_any": "\\bvalid\\b|\\bthrough\\b|\\buntil\\b|\\bexpires?\\b",
+    "expected": [
+     {
+      "regex": "through\\s+Dec(?:ember)?\\.?\\s+2027"
+     }
+    ],
+    "forbidden": [
+     {
+      "regex": "\\b(?:through|until|thru|valid(?:\\s+\\w+){0,2})\\s+(?:[A-Za-z]{3,9}\\.?\\s+)?(?:\\d{1,2}\\s+)?20(?:1\\d|2[0-6])\\b"
+     }
+    ],
+    "photos": [
+     "verda_studio_frame_01.jpg",
+     "verda_studio_frame_02.jpg",
+     "verda_instructor_01.jpg",
+     "verda_instructor_02.jpg",
+     "verda_instructor_03.jpg",
+     "verda_instructor_04.jpg",
+     "verda_instructor_05.jpg",
+     "verda_instructor_06.jpg"
+    ]
+   },
+   "how": "Reads the type by OCR or from the PDF, leaving out lettering inside the supplied photos, and looks for the wording."
   },
   {
    "check_id": "PHOTO-28/studio-launch/H013",
@@ -413,6 +716,159 @@
    "how": "Reads where each value stands and checks the value that belongs to this name (by its section, column or line) is the expected one."
   },
   {
+   "check_id": "PHOTO-28/studio-launch/H006",
+   "output_id": "studio-launch",
+   "rule_id": "R013",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "“Studio launch-page composition” (studio-launch.png) lists exactly six classes, each once: Foundations, Flow, Core & Restore, Strength, Prenatal and Slow & Deep.",
+   "assertion": {
+    "op": "v2_price_list_pb",
+    "names": [
+     "Foundations",
+     "Flow",
+     "Core & Restore",
+     "Strength",
+     "Prenatal",
+     "Slow & Deep"
+    ]
+   },
+   "how": "Reads the names set with a price on their own row and checks the list, or that nothing else sits inside the block."
+  },
+  {
+   "check_id": "PHOTO-28/class-feed/H063",
+   "output_id": "class-feed",
+   "rule_id": "R015",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "No part of the source portrait's original wall or background shows behind the cut-out instructor on “Class announcement” (class-feed.png).",
+   "assertion": {
+    "op": "v2_bg_remnant_pb",
+    "photos": [
+     "verda_instructor_01.jpg",
+     "verda_instructor_02.jpg",
+     "verda_instructor_03.jpg",
+     "verda_instructor_04.jpg",
+     "verda_instructor_05.jpg",
+     "verda_instructor_06.jpg"
+    ]
+   },
+   "how": "Lays the supplied photo over the placed one and looks for its original backdrop left unchanged round the subject."
+  },
+  {
+   "check_id": "PHOTO-28/studio-launch/H070",
+   "output_id": "studio-launch",
+   "rule_id": "R016",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The six classes and their prices on “Studio launch-page composition” (studio-launch.png) sit together in one block, not split across separate parts of the page.",
+   "assertion": {
+    "op": "v2_price_list_pb",
+    "block": true,
+    "photos": [
+     "verda_studio_frame_01.jpg",
+     "verda_studio_frame_02.jpg",
+     "verda_instructor_01.jpg",
+     "verda_instructor_02.jpg",
+     "verda_instructor_03.jpg",
+     "verda_instructor_04.jpg",
+     "verda_instructor_05.jpg",
+     "verda_instructor_06.jpg"
+    ]
+   },
+   "how": "Reads the names set with a price on their own row and checks the list, or that nothing else sits inside the block."
+  },
+  {
+   "check_id": "PHOTO-28/studio-launch/H072",
+   "output_id": "studio-launch",
+   "rule_id": "R017",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "Foundations is priced $34 on “Studio launch-page composition” (studio-launch.png), as roster_2027.csv gives for RF-FND.",
+   "assertion": {
+    "op": "v2_price_list_pb",
+    "prices": {
+     "Foundations": "\\$\\s?34(?!\\d)"
+    }
+   },
+   "how": "Reads the names set with a price on their own row and checks the list, or that nothing else sits inside the block."
+  },
+  {
+   "check_id": "PHOTO-28/studio-launch/H073",
+   "output_id": "studio-launch",
+   "rule_id": "R018",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "Flow is priced $36 on “Studio launch-page composition” (studio-launch.png), as roster_2027.csv gives for RF-FLW.",
+   "assertion": {
+    "op": "v2_price_list_pb",
+    "prices": {
+     "Flow": "\\$\\s?36(?!\\d)"
+    }
+   },
+   "how": "Reads the names set with a price on their own row and checks the list, or that nothing else sits inside the block."
+  },
+  {
+   "check_id": "PHOTO-28/studio-launch/H074",
+   "output_id": "studio-launch",
+   "rule_id": "R019",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "Core & Restore is priced $34 on “Studio launch-page composition” (studio-launch.png), as roster_2027.csv gives for RF-COR.",
+   "assertion": {
+    "op": "v2_price_list_pb",
+    "prices": {
+     "Core & Restore": "\\$\\s?34(?!\\d)"
+    }
+   },
+   "how": "Reads the names set with a price on their own row and checks the list, or that nothing else sits inside the block."
+  },
+  {
+   "check_id": "PHOTO-28/studio-launch/H075",
+   "output_id": "studio-launch",
+   "rule_id": "R020",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "Strength is priced $38 on “Studio launch-page composition” (studio-launch.png), as roster_2027.csv gives for RF-ATH.",
+   "assertion": {
+    "op": "v2_price_list_pb",
+    "prices": {
+     "Strength": "\\$\\s?38(?!\\d)"
+    }
+   },
+   "how": "Reads the names set with a price on their own row and checks the list, or that nothing else sits inside the block."
+  },
+  {
+   "check_id": "PHOTO-28/studio-launch/H076",
+   "output_id": "studio-launch",
+   "rule_id": "R021",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "Prenatal is priced $36 on “Studio launch-page composition” (studio-launch.png), as roster_2027.csv gives for RF-PRE.",
+   "assertion": {
+    "op": "v2_price_list_pb",
+    "prices": {
+     "Prenatal": "\\$\\s?36(?!\\d)"
+    }
+   },
+   "how": "Reads the names set with a price on their own row and checks the list, or that nothing else sits inside the block."
+  },
+  {
+   "check_id": "PHOTO-28/studio-launch/H077",
+   "output_id": "studio-launch",
+   "rule_id": "R022",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "Slow & Deep is priced $34 on “Studio launch-page composition” (studio-launch.png), as roster_2027.csv gives for RF-SLW.",
+   "assertion": {
+    "op": "v2_price_list_pb",
+    "prices": {
+     "Slow & Deep": "\\$\\s?34(?!\\d)"
+    }
+   },
+   "how": "Reads the names set with a price on their own row and checks the list, or that nothing else sits inside the block."
+  },
+  {
    "check_id": "PHOTO-28/booking-story/H068",
    "output_id": "booking-story",
    "rule_id": "R023",
@@ -460,6 +916,133 @@
    "how": "Reads where each value stands and checks the value that belongs to this name (by its section, column or line) is the expected one."
   },
   {
+   "check_id": "PHOTO-28/class-feed/H069",
+   "output_id": "class-feed",
+   "rule_id": "R025",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "If the pictured instructor on “Class announcement” (class-feed.png) is Dana Osei or Yuki Sato, the class price reads $36, as in roster_2027.csv.",
+   "assertion": {
+    "op": "v2_all_of",
+    "checks": [
+     {
+      "op": "v2_pictured",
+      "photos": {
+       "verda_instructor_01.jpg": "Priya Anand",
+       "verda_instructor_02.jpg": "Dana Osei",
+       "verda_instructor_03.jpg": "Lena Brandt",
+       "verda_instructor_04.jpg": "Tomas Reyes",
+       "verda_instructor_05.jpg": "Yuki Sato",
+       "verda_instructor_06.jpg": "Nadia Haddad"
+      },
+      "when": "Dana Osei",
+      "then": {
+       "op": "v2_text_pb",
+       "expected": [
+        {
+         "regex": "\\$\\s?36(?!\\d)"
+        }
+       ],
+       "forbidden": [
+        {
+         "regex": "\\$\\s?(?:34|38)(?!\\d)"
+        }
+       ],
+       "photos": [
+        "verda_instructor_01.jpg",
+        "verda_instructor_02.jpg",
+        "verda_instructor_03.jpg",
+        "verda_instructor_04.jpg",
+        "verda_instructor_05.jpg",
+        "verda_instructor_06.jpg"
+       ]
+      }
+     },
+     {
+      "op": "v2_pictured",
+      "photos": {
+       "verda_instructor_01.jpg": "Priya Anand",
+       "verda_instructor_02.jpg": "Dana Osei",
+       "verda_instructor_03.jpg": "Lena Brandt",
+       "verda_instructor_04.jpg": "Tomas Reyes",
+       "verda_instructor_05.jpg": "Yuki Sato",
+       "verda_instructor_06.jpg": "Nadia Haddad"
+      },
+      "when": "Yuki Sato",
+      "then": {
+       "op": "v2_text_pb",
+       "expected": [
+        {
+         "regex": "\\$\\s?36(?!\\d)"
+        }
+       ],
+       "forbidden": [
+        {
+         "regex": "\\$\\s?(?:34|38)(?!\\d)"
+        }
+       ],
+       "photos": [
+        "verda_instructor_01.jpg",
+        "verda_instructor_02.jpg",
+        "verda_instructor_03.jpg",
+        "verda_instructor_04.jpg",
+        "verda_instructor_05.jpg",
+        "verda_instructor_06.jpg"
+       ]
+      }
+     }
+    ]
+   },
+   "how": "Finds which supplied photo is shown, then checks the text for that person, for each of the 2 named texts; all must pass."
+  },
+  {
+   "check_id": "PHOTO-28/class-feed/H070",
+   "output_id": "class-feed",
+   "rule_id": "R026",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "If the pictured instructor on “Class announcement” (class-feed.png) is Tomas Reyes, the class price reads $38, as in roster_2027.csv.",
+   "assertion": {
+    "op": "v2_all_of",
+    "checks": [
+     {
+      "op": "v2_pictured",
+      "photos": {
+       "verda_instructor_01.jpg": "Priya Anand",
+       "verda_instructor_02.jpg": "Dana Osei",
+       "verda_instructor_03.jpg": "Lena Brandt",
+       "verda_instructor_04.jpg": "Tomas Reyes",
+       "verda_instructor_05.jpg": "Yuki Sato",
+       "verda_instructor_06.jpg": "Nadia Haddad"
+      },
+      "when": "Tomas Reyes",
+      "then": {
+       "op": "v2_text_pb",
+       "expected": [
+        {
+         "regex": "\\$\\s?38(?!\\d)"
+        }
+       ],
+       "forbidden": [
+        {
+         "regex": "\\$\\s?(?:34|36)(?!\\d)"
+        }
+       ],
+       "photos": [
+        "verda_instructor_01.jpg",
+        "verda_instructor_02.jpg",
+        "verda_instructor_03.jpg",
+        "verda_instructor_04.jpg",
+        "verda_instructor_05.jpg",
+        "verda_instructor_06.jpg"
+       ]
+      }
+     }
+    ]
+   },
+   "how": "Finds which supplied photo is shown, then checks the text for that person, for each of the 1 named texts; all must pass."
+  },
+  {
    "check_id": "PHOTO-28/studio-launch/H082",
    "output_id": "studio-launch",
    "rule_id": "R027",
@@ -498,6 +1081,52 @@
     "kind": "\\b(?:Foundations|Flow|Core\\s+\\&\\s+Restore|Strength|Prenatal|Slow\\s+\\&\\s+Deep)\\b",
     "value": {
      "regex": "\\bFlow\\b"
+    },
+    "where": "beside",
+    "empty_ok": true,
+    "optional": true
+   },
+   "how": "Reads where each value stands and checks the value that belongs to this name (by its section, column or line) is the expected one."
+  },
+  {
+   "check_id": "PHOTO-28/studio-launch/H084",
+   "output_id": "studio-launch",
+   "rule_id": "R028",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "If Lena Brandt is named on “Studio launch-page composition” (studio-launch.png), any class beside that name is Core & Restore, as owner_note.txt gives.",
+   "assertion": {
+    "op": "v2_paired",
+    "anchor": [
+     "Lena Brandt"
+    ],
+    "whole_line": false,
+    "kind": "\\b(?:Foundations|Flow|Core\\s+\\&\\s+Restore|Strength|Prenatal|Slow\\s+\\&\\s+Deep)\\b",
+    "value": {
+     "regex": "\\bCore\\s+\\&\\s+Restore\\b"
+    },
+    "where": "beside",
+    "empty_ok": true,
+    "optional": true
+   },
+   "how": "Reads where each value stands and checks the value that belongs to this name (by its section, column or line) is the expected one."
+  },
+  {
+   "check_id": "PHOTO-28/booking-story/H076",
+   "output_id": "booking-story",
+   "rule_id": "R028",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "If Lena Brandt is named on “Studio booking story” (booking-story.png), any class beside that name is Core & Restore, as owner_note.txt gives.",
+   "assertion": {
+    "op": "v2_paired",
+    "anchor": [
+     "Lena Brandt"
+    ],
+    "whole_line": false,
+    "kind": "\\b(?:Foundations|Flow|Core\\s+\\&\\s+Restore|Strength|Prenatal|Slow\\s+\\&\\s+Deep)\\b",
+    "value": {
+     "regex": "\\bCore\\s+\\&\\s+Restore\\b"
     },
     "where": "beside",
     "empty_ok": true,
@@ -671,6 +1300,151 @@
    "how": "Checks each named text lies fully inside the page or image, for each of the 2 named texts; all must pass."
   },
   {
+   "check_id": "PHOTO-28/class-feed/H003",
+   "output_id": "class-feed",
+   "rule_id": "R035",
+   "k_id": "K1_Q3",
+   "critical": false,
+   "check": "The class on “Class announcement” (class-feed.png) is written with its client-facing name, for example “Core & Restore”, not an internal code such as “RF-COR”.",
+   "assertion": {
+    "op": "v2_text_pb",
+    "expected": [
+     [
+      "Foundations",
+      "Flow",
+      "Core & Restore",
+      "Strength",
+      "Prenatal",
+      "Slow & Deep"
+     ]
+    ],
+    "forbidden": [
+     {
+      "regex": "\\bRF-?\\s?[A-Z]{3}\\b"
+     }
+    ],
+    "photos": [
+     "verda_studio_frame_01.jpg",
+     "verda_studio_frame_02.jpg",
+     "verda_instructor_01.jpg",
+     "verda_instructor_02.jpg",
+     "verda_instructor_03.jpg",
+     "verda_instructor_04.jpg",
+     "verda_instructor_05.jpg",
+     "verda_instructor_06.jpg"
+    ]
+   },
+   "how": "Reads the type by OCR or from the PDF, leaving out lettering inside the supplied photos, and looks for the wording."
+  },
+  {
+   "check_id": "PHOTO-28/studio-launch/H010",
+   "output_id": "studio-launch",
+   "rule_id": "R037",
+   "k_id": "K1_Q3",
+   "critical": false,
+   "check": "“Studio launch-page composition” (studio-launch.png) gives no class day, time or timetable, since no supplied file states one.",
+   "assertion": {
+    "op": "v2_text_pb",
+    "photos": [
+     "verda_studio_frame_01.jpg",
+     "verda_studio_frame_02.jpg",
+     "verda_instructor_01.jpg",
+     "verda_instructor_02.jpg",
+     "verda_instructor_03.jpg",
+     "verda_instructor_04.jpg",
+     "verda_instructor_05.jpg",
+     "verda_instructor_06.jpg"
+    ],
+    "forbidden": [
+     {
+      "regex": "\\b(?:monday|tuesday|wednesday|thursday|friday|saturday|sunday)s?\\b|(?-i:\\b(?:MON|TUE|TUES|WED|THU|THUR|THURS|FRI|SAT|SUN)\\b)"
+     },
+     {
+      "regex": "(?<![$€£\\d.,])\\b\\d{1,2}[:.]\\d{2}\\s*(?:am|pm)?\\b|\\b\\d{1,2}\\s?(?:am|pm|a\\.m\\.|p\\.m\\.)(?![a-z])"
+     },
+     {
+      "regex": "\\btimetable\\b|\\bschedule\\b"
+     },
+     {
+      "regex": "(?<!\\d)\\d{1,2}(?:st|nd|rd|th)?\\s*\\b(?:jan(?:uary)?|feb(?:ruary)?|mar(?:ch)?|apr(?:il)?|may|june?|july?|aug(?:ust)?|sep(?:t(?:ember)?)?|oct(?:ober)?|nov(?:ember)?|dec(?:ember)?)\\b|\\b(?:jan(?:uary)?|feb(?:ruary)?|mar(?:ch)?|apr(?:il)?|may|june?|july?|aug(?:ust)?|sep(?:t(?:ember)?)?|oct(?:ober)?|nov(?:ember)?|dec(?:ember)?)\\b\\.?\\s*\\d{1,2}(?:st|nd|rd|th)?(?!\\d)"
+     }
+    ]
+   },
+   "how": "Reads the type by OCR or from the PDF, leaving out lettering inside the supplied photos, and looks for the wording."
+  },
+  {
+   "check_id": "PHOTO-28/class-feed/H018",
+   "output_id": "class-feed",
+   "rule_id": "R037",
+   "k_id": "K1_Q3",
+   "critical": false,
+   "check": "“Class announcement” (class-feed.png) gives no class day, time or timetable, since no supplied file states one.",
+   "assertion": {
+    "op": "v2_text_pb",
+    "photos": [
+     "verda_studio_frame_01.jpg",
+     "verda_studio_frame_02.jpg",
+     "verda_instructor_01.jpg",
+     "verda_instructor_02.jpg",
+     "verda_instructor_03.jpg",
+     "verda_instructor_04.jpg",
+     "verda_instructor_05.jpg",
+     "verda_instructor_06.jpg"
+    ],
+    "forbidden": [
+     {
+      "regex": "\\b(?:monday|tuesday|wednesday|thursday|friday|saturday|sunday)s?\\b|(?-i:\\b(?:MON|TUE|TUES|WED|THU|THUR|THURS|FRI|SAT|SUN)\\b)"
+     },
+     {
+      "regex": "(?<![$€£\\d.,])\\b\\d{1,2}[:.]\\d{2}\\s*(?:am|pm)?\\b|\\b\\d{1,2}\\s?(?:am|pm|a\\.m\\.|p\\.m\\.)(?![a-z])"
+     },
+     {
+      "regex": "\\btimetable\\b|\\bschedule\\b"
+     },
+     {
+      "regex": "(?<!\\d)\\d{1,2}(?:st|nd|rd|th)?\\s*\\b(?:jan(?:uary)?|feb(?:ruary)?|mar(?:ch)?|apr(?:il)?|may|june?|july?|aug(?:ust)?|sep(?:t(?:ember)?)?|oct(?:ober)?|nov(?:ember)?|dec(?:ember)?)\\b|\\b(?:jan(?:uary)?|feb(?:ruary)?|mar(?:ch)?|apr(?:il)?|may|june?|july?|aug(?:ust)?|sep(?:t(?:ember)?)?|oct(?:ober)?|nov(?:ember)?|dec(?:ember)?)\\b\\.?\\s*\\d{1,2}(?:st|nd|rd|th)?(?!\\d)"
+     }
+    ]
+   },
+   "how": "Reads the type by OCR or from the PDF, leaving out lettering inside the supplied photos, and looks for the wording."
+  },
+  {
+   "check_id": "PHOTO-28/booking-story/H009",
+   "output_id": "booking-story",
+   "rule_id": "R037",
+   "k_id": "K1_Q3",
+   "critical": false,
+   "check": "“Studio booking story” (booking-story.png) gives no class day, time or timetable, since no supplied file states one.",
+   "assertion": {
+    "op": "v2_text_pb",
+    "photos": [
+     "verda_studio_frame_01.jpg",
+     "verda_studio_frame_02.jpg",
+     "verda_instructor_01.jpg",
+     "verda_instructor_02.jpg",
+     "verda_instructor_03.jpg",
+     "verda_instructor_04.jpg",
+     "verda_instructor_05.jpg",
+     "verda_instructor_06.jpg"
+    ],
+    "forbidden": [
+     {
+      "regex": "\\b(?:monday|tuesday|wednesday|thursday|friday|saturday|sunday)s?\\b|(?-i:\\b(?:MON|TUE|TUES|WED|THU|THUR|THURS|FRI|SAT|SUN)\\b)"
+     },
+     {
+      "regex": "(?<![$€£\\d.,])\\b\\d{1,2}[:.]\\d{2}\\s*(?:am|pm)?\\b|\\b\\d{1,2}\\s?(?:am|pm|a\\.m\\.|p\\.m\\.)(?![a-z])"
+     },
+     {
+      "regex": "\\btimetable\\b|\\bschedule\\b"
+     },
+     {
+      "regex": "(?<!\\d)\\d{1,2}(?:st|nd|rd|th)?\\s*\\b(?:jan(?:uary)?|feb(?:ruary)?|mar(?:ch)?|apr(?:il)?|may|june?|july?|aug(?:ust)?|sep(?:t(?:ember)?)?|oct(?:ober)?|nov(?:ember)?|dec(?:ember)?)\\b|\\b(?:jan(?:uary)?|feb(?:ruary)?|mar(?:ch)?|apr(?:il)?|may|june?|july?|aug(?:ust)?|sep(?:t(?:ember)?)?|oct(?:ober)?|nov(?:ember)?|dec(?:ember)?)\\b\\.?\\s*\\d{1,2}(?:st|nd|rd|th)?(?!\\d)"
+     }
+    ]
+   },
+   "how": "Reads the type by OCR or from the PDF, leaving out lettering inside the supplied photos, and looks for the wording."
+  },
+  {
    "check_id": "PHOTO-28/class-feed/H021",
    "output_id": "class-feed",
    "rule_id": "R038",
@@ -689,6 +1463,171 @@
     ]
    },
    "how": "Reads all text and checks none of the named words or patterns appears."
+  },
+  {
+   "check_id": "PHOTO-28/studio-launch/H017",
+   "output_id": "studio-launch",
+   "rule_id": "R039",
+   "k_id": "K1_Q3",
+   "critical": false,
+   "check": "No photograph on “Studio launch-page composition” (studio-launch.png) shows a black rubber floor.",
+   "assertion": {
+    "op": "v2_each_photo_pb",
+    "photos": [
+     "verda_studio_frame_01.jpg",
+     "verda_studio_frame_02.jpg",
+     "verda_instructor_01.jpg",
+     "verda_instructor_02.jpg",
+     "verda_instructor_03.jpg",
+     "verda_instructor_04.jpg",
+     "verda_instructor_05.jpg",
+     "verda_instructor_06.jpg"
+    ],
+    "then": null
+   },
+   "how": "Finds each supplied photo on the file, runs the check on each, and checks no other photograph is present."
+  },
+  {
+   "check_id": "PHOTO-28/class-feed/H022",
+   "output_id": "class-feed",
+   "rule_id": "R039",
+   "k_id": "K1_Q3",
+   "critical": false,
+   "check": "No photograph on “Class announcement” (class-feed.png) shows a black rubber floor.",
+   "assertion": {
+    "op": "v2_each_photo_pb",
+    "photos": [
+     "verda_studio_frame_01.jpg",
+     "verda_studio_frame_02.jpg",
+     "verda_instructor_01.jpg",
+     "verda_instructor_02.jpg",
+     "verda_instructor_03.jpg",
+     "verda_instructor_04.jpg",
+     "verda_instructor_05.jpg",
+     "verda_instructor_06.jpg"
+    ],
+    "then": null
+   },
+   "how": "Finds each supplied photo on the file, runs the check on each, and checks no other photograph is present."
+  },
+  {
+   "check_id": "PHOTO-28/booking-story/H017",
+   "output_id": "booking-story",
+   "rule_id": "R039",
+   "k_id": "K1_Q3",
+   "critical": false,
+   "check": "No photograph on “Studio booking story” (booking-story.png) shows a black rubber floor.",
+   "assertion": {
+    "op": "v2_each_photo_pb",
+    "photos": [
+     "verda_studio_frame_01.jpg",
+     "verda_studio_frame_02.jpg",
+     "verda_instructor_01.jpg",
+     "verda_instructor_02.jpg",
+     "verda_instructor_03.jpg",
+     "verda_instructor_04.jpg",
+     "verda_instructor_05.jpg",
+     "verda_instructor_06.jpg"
+    ],
+    "then": null
+   },
+   "how": "Finds each supplied photo on the file, runs the check on each, and checks no other photograph is present."
+  },
+  {
+   "check_id": "PHOTO-28/studio-launch/H018",
+   "output_id": "studio-launch",
+   "rule_id": "R040",
+   "k_id": "K1_Q3",
+   "critical": false,
+   "check": "No photograph on “Studio launch-page composition” (studio-launch.png) shows a group class or more than one person exercising.",
+   "assertion": {
+    "op": "v2_each_photo_pb",
+    "photos": [
+     "verda_studio_frame_01.jpg",
+     "verda_studio_frame_02.jpg",
+     "verda_instructor_01.jpg",
+     "verda_instructor_02.jpg",
+     "verda_instructor_03.jpg",
+     "verda_instructor_04.jpg",
+     "verda_instructor_05.jpg",
+     "verda_instructor_06.jpg"
+    ],
+    "then": null
+   },
+   "how": "Finds each supplied photo on the file, runs the check on each, and checks no other photograph is present."
+  },
+  {
+   "check_id": "PHOTO-28/class-feed/H023",
+   "output_id": "class-feed",
+   "rule_id": "R040",
+   "k_id": "K1_Q3",
+   "critical": false,
+   "check": "No photograph on “Class announcement” (class-feed.png) shows a group class or more than one person exercising.",
+   "assertion": {
+    "op": "v2_each_photo_pb",
+    "photos": [
+     "verda_studio_frame_01.jpg",
+     "verda_studio_frame_02.jpg",
+     "verda_instructor_01.jpg",
+     "verda_instructor_02.jpg",
+     "verda_instructor_03.jpg",
+     "verda_instructor_04.jpg",
+     "verda_instructor_05.jpg",
+     "verda_instructor_06.jpg"
+    ],
+    "then": null
+   },
+   "how": "Finds each supplied photo on the file, runs the check on each, and checks no other photograph is present."
+  },
+  {
+   "check_id": "PHOTO-28/booking-story/H018",
+   "output_id": "booking-story",
+   "rule_id": "R040",
+   "k_id": "K1_Q3",
+   "critical": false,
+   "check": "No photograph on “Studio booking story” (booking-story.png) shows a group class or more than one person exercising.",
+   "assertion": {
+    "op": "v2_each_photo_pb",
+    "photos": [
+     "verda_studio_frame_01.jpg",
+     "verda_studio_frame_02.jpg",
+     "verda_instructor_01.jpg",
+     "verda_instructor_02.jpg",
+     "verda_instructor_03.jpg",
+     "verda_instructor_04.jpg",
+     "verda_instructor_05.jpg",
+     "verda_instructor_06.jpg"
+    ],
+    "then": null
+   },
+   "how": "Finds each supplied photo on the file, runs the check on each, and checks no other photograph is present."
+  },
+  {
+   "check_id": "PHOTO-28/booking-story/H006",
+   "output_id": "booking-story",
+   "rule_id": "R041",
+   "k_id": "K1_Q3",
+   "critical": false,
+   "check": "Any class named on “Studio booking story” (booking-story.png) is written with its client-facing name, such as “Core & Restore”, never an internal code such as “RF-COR”.",
+   "assertion": {
+    "op": "v2_text_pb",
+    "forbidden": [
+     {
+      "regex": "\\bRF-?\\s?[A-Z]{3}\\b"
+     }
+    ],
+    "photos": [
+     "verda_studio_frame_01.jpg",
+     "verda_studio_frame_02.jpg",
+     "verda_instructor_01.jpg",
+     "verda_instructor_02.jpg",
+     "verda_instructor_03.jpg",
+     "verda_instructor_04.jpg",
+     "verda_instructor_05.jpg",
+     "verda_instructor_06.jpg"
+    ]
+   },
+   "how": "Reads the type by OCR or from the PDF, leaving out lettering inside the supplied photos, and looks for the wording."
   },
   {
    "check_id": "PHOTO-28/studio-launch/H015",
@@ -729,6 +1668,333 @@
     ]
    },
    "how": "Reads all text and checks none of the named words or patterns appears."
+  },
+  {
+   "check_id": "PHOTO-28/studio-launch/H016",
+   "output_id": "studio-launch",
+   "rule_id": "R043",
+   "k_id": "K1_Q3",
+   "critical": false,
+   "check": "Any person pictured on “Studio launch-page composition” (studio-launch.png) has natural skin, with no orange cast.",
+   "assertion": {
+    "op": "v2_each_photo_pb",
+    "photos": [
+     "verda_studio_frame_01.jpg",
+     "verda_studio_frame_02.jpg"
+    ],
+    "then": null
+   },
+   "how": "Finds each supplied photo on the file, runs the check on each, and checks no other photograph is present."
+  },
+  {
+   "check_id": "PHOTO-28/booking-story/H016",
+   "output_id": "booking-story",
+   "rule_id": "R043",
+   "k_id": "K1_Q3",
+   "critical": false,
+   "check": "Any person pictured on “Studio booking story” (booking-story.png) has natural skin, with no orange cast.",
+   "assertion": {
+    "op": "v2_each_photo_pb",
+    "photos": [
+     "verda_studio_frame_01.jpg",
+     "verda_studio_frame_02.jpg"
+    ],
+    "then": null
+   },
+   "how": "Finds each supplied photo on the file, runs the check on each, and checks no other photograph is present."
+  },
+  {
+   "check_id": "PHOTO-28/studio-launch/H007",
+   "output_id": "studio-launch",
+   "rule_id": "R044",
+   "k_id": "K1_Q3",
+   "critical": false,
+   "check": "Every class in the class offer on “Studio launch-page composition” (studio-launch.png) is written with its client-facing name, such as “Core & Restore”, never an internal code such as “RF-COR”.",
+   "assertion": {
+    "op": "v2_text_pb",
+    "expected": [
+     "Foundations",
+     "Flow",
+     "Core & Restore",
+     "Strength",
+     "Prenatal",
+     "Slow & Deep"
+    ],
+    "forbidden": [
+     {
+      "regex": "\\bRF-?\\s?[A-Z]{3}\\b"
+     }
+    ],
+    "photos": [
+     "verda_studio_frame_01.jpg",
+     "verda_studio_frame_02.jpg",
+     "verda_instructor_01.jpg",
+     "verda_instructor_02.jpg",
+     "verda_instructor_03.jpg",
+     "verda_instructor_04.jpg",
+     "verda_instructor_05.jpg",
+     "verda_instructor_06.jpg"
+    ]
+   },
+   "how": "Reads the type by OCR or from the PDF, leaving out lettering inside the supplied photos, and looks for the wording."
+  },
+  {
+   "check_id": "PHOTO-28/class-feed/H071",
+   "output_id": "class-feed",
+   "rule_id": "R045",
+   "k_id": "K1_Q3",
+   "critical": false,
+   "check": "The instructor cut-out on “Class announcement” (class-feed.png) sits on a solid Warm Off White #F4F0E8 or Sage #9CA98F ground.",
+   "assertion": {
+    "op": "v2_sitter_ground_pb",
+    "photos": [
+     "verda_instructor_01.jpg",
+     "verda_instructor_02.jpg",
+     "verda_instructor_03.jpg",
+     "verda_instructor_04.jpg",
+     "verda_instructor_05.jpg",
+     "verda_instructor_06.jpg"
+    ],
+    "hexes": [
+     "#F4F0E8",
+     "#9CA98F"
+    ]
+   },
+   "how": "Finds the supplied photo's cut-out subject and reads the flat ground wrapped round it."
+  },
+  {
+   "check_id": "PHOTO-28/studio-launch/H008",
+   "output_id": "studio-launch",
+   "rule_id": "R046",
+   "k_id": "K1_Q5",
+   "critical": true,
+   "check": "“Studio launch-page composition” (studio-launch.png) does not name “Erin Coyle” or give erin@verdastudio.example; she has left the studio, and naming her makes it unusable.",
+   "assertion": {
+    "op": "v2_text_pb",
+    "forbidden": [
+     "Erin",
+     "Coyle",
+     "erin@verdastudio.example"
+    ],
+    "photos": [
+     "verda_studio_frame_01.jpg",
+     "verda_studio_frame_02.jpg",
+     "verda_instructor_01.jpg",
+     "verda_instructor_02.jpg",
+     "verda_instructor_03.jpg",
+     "verda_instructor_04.jpg",
+     "verda_instructor_05.jpg",
+     "verda_instructor_06.jpg"
+    ]
+   },
+   "how": "Reads the type by OCR or from the PDF, leaving out lettering inside the supplied photos, and looks for the wording."
+  },
+  {
+   "check_id": "PHOTO-28/class-feed/H004",
+   "output_id": "class-feed",
+   "rule_id": "R046",
+   "k_id": "K1_Q5",
+   "critical": true,
+   "check": "“Class announcement” (class-feed.png) does not name “Erin Coyle” or give erin@verdastudio.example; she has left the studio, and naming her makes it unusable.",
+   "assertion": {
+    "op": "v2_text_pb",
+    "forbidden": [
+     "Erin",
+     "Coyle",
+     "erin@verdastudio.example"
+    ],
+    "photos": [
+     "verda_studio_frame_01.jpg",
+     "verda_studio_frame_02.jpg",
+     "verda_instructor_01.jpg",
+     "verda_instructor_02.jpg",
+     "verda_instructor_03.jpg",
+     "verda_instructor_04.jpg",
+     "verda_instructor_05.jpg",
+     "verda_instructor_06.jpg"
+    ]
+   },
+   "how": "Reads the type by OCR or from the PDF, leaving out lettering inside the supplied photos, and looks for the wording."
+  },
+  {
+   "check_id": "PHOTO-28/booking-story/H007",
+   "output_id": "booking-story",
+   "rule_id": "R046",
+   "k_id": "K1_Q5",
+   "critical": true,
+   "check": "“Studio booking story” (booking-story.png) does not name “Erin Coyle” or give erin@verdastudio.example; she has left the studio, and naming her makes it unusable.",
+   "assertion": {
+    "op": "v2_text_pb",
+    "forbidden": [
+     "Erin",
+     "Coyle",
+     "erin@verdastudio.example"
+    ],
+    "photos": [
+     "verda_studio_frame_01.jpg",
+     "verda_studio_frame_02.jpg",
+     "verda_instructor_01.jpg",
+     "verda_instructor_02.jpg",
+     "verda_instructor_03.jpg",
+     "verda_instructor_04.jpg",
+     "verda_instructor_05.jpg",
+     "verda_instructor_06.jpg"
+    ]
+   },
+   "how": "Reads the type by OCR or from the PDF, leaving out lettering inside the supplied photos, and looks for the wording."
+  },
+  {
+   "check_id": "PHOTO-28/class-feed/H002",
+   "output_id": "class-feed",
+   "rule_id": "R048",
+   "k_id": "K2_Q1",
+   "critical": false,
+   "check": "If verda_instructor_01.jpg is pictured on “Class announcement” (class-feed.png), the name given is Priya Anand, per roster_2027.csv.",
+   "assertion": {
+    "op": "v2_names_by_photo",
+    "photo": "verda_instructor_01.jpg",
+    "names": [
+     "Priya Anand",
+     "Dana Osei",
+     "Lena Brandt",
+     "Tomas Reyes",
+     "Yuki Sato",
+     "Nadia Haddad"
+    ],
+    "expected": "Priya Anand"
+   },
+   "how": "Finds the supplied photo, then reads the names standing beside it."
+  },
+  {
+   "check_id": "PHOTO-28/class-feed/H076",
+   "output_id": "class-feed",
+   "rule_id": "R048",
+   "k_id": "K2_Q1",
+   "critical": false,
+   "check": "If verda_instructor_02.jpg is pictured on “Class announcement” (class-feed.png), the name given is Dana Osei, per roster_2027.csv.",
+   "assertion": {
+    "op": "v2_names_by_photo",
+    "photo": "verda_instructor_02.jpg",
+    "names": [
+     "Priya Anand",
+     "Dana Osei",
+     "Lena Brandt",
+     "Tomas Reyes",
+     "Yuki Sato",
+     "Nadia Haddad"
+    ],
+    "expected": "Dana Osei"
+   },
+   "how": "Finds the supplied photo, then reads the names standing beside it."
+  },
+  {
+   "check_id": "PHOTO-28/class-feed/H078",
+   "output_id": "class-feed",
+   "rule_id": "R048",
+   "k_id": "K2_Q1",
+   "critical": false,
+   "check": "If verda_instructor_03.jpg is pictured on “Class announcement” (class-feed.png), the name given is Lena Brandt, per roster_2027.csv.",
+   "assertion": {
+    "op": "v2_names_by_photo",
+    "photo": "verda_instructor_03.jpg",
+    "names": [
+     "Priya Anand",
+     "Dana Osei",
+     "Lena Brandt",
+     "Tomas Reyes",
+     "Yuki Sato",
+     "Nadia Haddad"
+    ],
+    "expected": "Lena Brandt"
+   },
+   "how": "Finds the supplied photo, then reads the names standing beside it."
+  },
+  {
+   "check_id": "PHOTO-28/class-feed/H080",
+   "output_id": "class-feed",
+   "rule_id": "R048",
+   "k_id": "K2_Q1",
+   "critical": false,
+   "check": "If verda_instructor_04.jpg is pictured on “Class announcement” (class-feed.png), the name given is Tomas Reyes, per roster_2027.csv.",
+   "assertion": {
+    "op": "v2_names_by_photo",
+    "photo": "verda_instructor_04.jpg",
+    "names": [
+     "Priya Anand",
+     "Dana Osei",
+     "Lena Brandt",
+     "Tomas Reyes",
+     "Yuki Sato",
+     "Nadia Haddad"
+    ],
+    "expected": "Tomas Reyes"
+   },
+   "how": "Finds the supplied photo, then reads the names standing beside it."
+  },
+  {
+   "check_id": "PHOTO-28/class-feed/H082",
+   "output_id": "class-feed",
+   "rule_id": "R048",
+   "k_id": "K2_Q1",
+   "critical": false,
+   "check": "If verda_instructor_05.jpg is pictured on “Class announcement” (class-feed.png), the name given is Yuki Sato, per roster_2027.csv.",
+   "assertion": {
+    "op": "v2_names_by_photo",
+    "photo": "verda_instructor_05.jpg",
+    "names": [
+     "Priya Anand",
+     "Dana Osei",
+     "Lena Brandt",
+     "Tomas Reyes",
+     "Yuki Sato",
+     "Nadia Haddad"
+    ],
+    "expected": "Yuki Sato"
+   },
+   "how": "Finds the supplied photo, then reads the names standing beside it."
+  },
+  {
+   "check_id": "PHOTO-28/class-feed/H084",
+   "output_id": "class-feed",
+   "rule_id": "R048",
+   "k_id": "K2_Q1",
+   "critical": false,
+   "check": "If verda_instructor_06.jpg is pictured on “Class announcement” (class-feed.png), the name given is Nadia Haddad, per roster_2027.csv.",
+   "assertion": {
+    "op": "v2_names_by_photo",
+    "photo": "verda_instructor_06.jpg",
+    "names": [
+     "Priya Anand",
+     "Dana Osei",
+     "Lena Brandt",
+     "Tomas Reyes",
+     "Yuki Sato",
+     "Nadia Haddad"
+    ],
+    "expected": "Nadia Haddad"
+   },
+   "how": "Finds the supplied photo, then reads the names standing beside it."
+  },
+  {
+   "check_id": "PHOTO-28/class-feed/H009",
+   "output_id": "class-feed",
+   "rule_id": "R049",
+   "k_id": "K2_Q1",
+   "critical": false,
+   "check": "The instructor on “Class announcement” (class-feed.png) is pictured from a supplied portrait (verda_instructor_01.jpg to verda_instructor_06.jpg), not a stock or generated person.",
+   "assertion": {
+    "op": "v2_contains_asset",
+    "assets": [
+     "verda_instructor_01.jpg",
+     "verda_instructor_02.jpg",
+     "verda_instructor_03.jpg",
+     "verda_instructor_04.jpg",
+     "verda_instructor_05.jpg",
+     "verda_instructor_06.jpg"
+    ],
+    "shape": false
+   },
+   "how": "Searches the deliverable for the supplied file (feature matching, confirmed by correlation)."
   },
   {
    "check_id": "PHOTO-28/studio-launch/H024",
@@ -995,6 +2261,236 @@
    "how": "Finds the supplied photo, then reads the names standing beside it."
   },
   {
+   "check_id": "PHOTO-28/studio-launch/H019",
+   "output_id": "studio-launch",
+   "rule_id": "R051",
+   "k_id": "K2_Q1",
+   "critical": false,
+   "check": "“Studio launch-page composition” (studio-launch.png) shows the studio's own room in at least one photograph built from verda_studio_frame_01.jpg or verda_studio_frame_02.jpg.",
+   "assertion": {
+    "op": "v2_contains_asset",
+    "assets": [
+     "verda_studio_frame_01.jpg",
+     "verda_studio_frame_02.jpg"
+    ],
+    "shape": false
+   },
+   "how": "Searches the deliverable for the supplied file (feature matching, confirmed by correlation)."
+  },
+  {
+   "check_id": "PHOTO-28/studio-launch/H063",
+   "output_id": "studio-launch",
+   "rule_id": "R052",
+   "k_id": "K2_Q1",
+   "critical": false,
+   "check": "Every studio interior shown on “Studio launch-page composition” (studio-launch.png) comes from verda_studio_frame_01.jpg or verda_studio_frame_02.jpg, not a stock or generated room.",
+   "assertion": {
+    "op": "v2_each_photo_pb",
+    "photos": [
+     "verda_studio_frame_01.jpg",
+     "verda_studio_frame_02.jpg",
+     "verda_instructor_01.jpg",
+     "verda_instructor_02.jpg",
+     "verda_instructor_03.jpg",
+     "verda_instructor_04.jpg",
+     "verda_instructor_05.jpg",
+     "verda_instructor_06.jpg"
+    ],
+    "then": null
+   },
+   "how": "Finds each supplied photo on the file, runs the check on each, and checks no other photograph is present."
+  },
+  {
+   "check_id": "PHOTO-28/class-feed/H062",
+   "output_id": "class-feed",
+   "rule_id": "R052",
+   "k_id": "K2_Q1",
+   "critical": false,
+   "check": "Every studio interior shown on “Class announcement” (class-feed.png) comes from verda_studio_frame_01.jpg or verda_studio_frame_02.jpg, not a stock or generated room.",
+   "assertion": {
+    "op": "v2_each_photo_pb",
+    "photos": [
+     "verda_studio_frame_01.jpg",
+     "verda_studio_frame_02.jpg",
+     "verda_instructor_01.jpg",
+     "verda_instructor_02.jpg",
+     "verda_instructor_03.jpg",
+     "verda_instructor_04.jpg",
+     "verda_instructor_05.jpg",
+     "verda_instructor_06.jpg"
+    ],
+    "then": null
+   },
+   "how": "Finds each supplied photo on the file, runs the check on each, and checks no other photograph is present."
+  },
+  {
+   "check_id": "PHOTO-28/booking-story/H060",
+   "output_id": "booking-story",
+   "rule_id": "R052",
+   "k_id": "K2_Q1",
+   "critical": false,
+   "check": "Every studio interior shown on “Studio booking story” (booking-story.png) comes from verda_studio_frame_01.jpg or verda_studio_frame_02.jpg, not a stock or generated room.",
+   "assertion": {
+    "op": "v2_each_photo_pb",
+    "photos": [
+     "verda_studio_frame_01.jpg",
+     "verda_studio_frame_02.jpg",
+     "verda_instructor_01.jpg",
+     "verda_instructor_02.jpg",
+     "verda_instructor_03.jpg",
+     "verda_instructor_04.jpg",
+     "verda_instructor_05.jpg",
+     "verda_instructor_06.jpg"
+    ],
+    "then": null
+   },
+   "how": "Finds each supplied photo on the file, runs the check on each, and checks no other photograph is present."
+  },
+  {
+   "check_id": "PHOTO-28/class-feed/H014",
+   "output_id": "class-feed",
+   "rule_id": "R054",
+   "k_id": "K2_Q2",
+   "critical": false,
+   "check": "If “Class announcement” (class-feed.png) pictures Dana Osei from verda_instructor_02.jpg, the cut-out keeps the full shoulder and upper-arm line, with no bite into the pale top.",
+   "assertion": {
+    "op": "v2_pictured",
+    "photos": {
+     "verda_instructor_01.jpg": "Priya Anand",
+     "verda_instructor_02.jpg": "Dana Osei",
+     "verda_instructor_03.jpg": "Lena Brandt",
+     "verda_instructor_04.jpg": "Tomas Reyes",
+     "verda_instructor_05.jpg": "Yuki Sato",
+     "verda_instructor_06.jpg": "Nadia Haddad"
+    },
+    "when": "Dana Osei",
+    "then": {
+     "op": "v2_ask_pb"
+    }
+   },
+   "how": "Finds which supplied photo is shown, then checks the text for that person: hands the row to a person (used where code settles only the files without the element)."
+  },
+  {
+   "check_id": "PHOTO-28/class-feed/H015",
+   "output_id": "class-feed",
+   "rule_id": "R055",
+   "k_id": "K2_Q2",
+   "critical": false,
+   "check": "If “Class announcement” (class-feed.png) pictures Yuki Sato from verda_instructor_05.jpg, the cut-out keeps the loose hair on both sides of the head, with neither side eaten away.",
+   "assertion": {
+    "op": "v2_pictured",
+    "photos": {
+     "verda_instructor_01.jpg": "Priya Anand",
+     "verda_instructor_02.jpg": "Dana Osei",
+     "verda_instructor_03.jpg": "Lena Brandt",
+     "verda_instructor_04.jpg": "Tomas Reyes",
+     "verda_instructor_05.jpg": "Yuki Sato",
+     "verda_instructor_06.jpg": "Nadia Haddad"
+    },
+    "when": "Yuki Sato",
+    "then": {
+     "op": "v2_ask_pb"
+    }
+   },
+   "how": "Finds which supplied photo is shown, then checks the text for that person: hands the row to a person (used where code settles only the files without the element)."
+  },
+  {
+   "check_id": "PHOTO-28/studio-launch/H025",
+   "output_id": "studio-launch",
+   "rule_id": "R056",
+   "k_id": "K2_Q2",
+   "critical": false,
+   "check": "If verda_instructor_04.jpg appears on “Studio launch-page composition” (studio-launch.png), it shows no pixelation, softness or generated detail from being enlarged.",
+   "assertion": {
+    "op": "v2_photo_compare_pb",
+    "pass_if": [
+     [
+      "scale",
+      "<=",
+      1.1
+     ]
+    ],
+    "fail_if": [],
+    "photo": "verda_instructor_04.jpg",
+    "region": "subject",
+    "absent": "pass",
+    "known": [
+     "verda_studio_frame_01.jpg",
+     "verda_studio_frame_02.jpg",
+     "verda_instructor_01.jpg",
+     "verda_instructor_02.jpg",
+     "verda_instructor_03.jpg",
+     "verda_instructor_05.jpg",
+     "verda_instructor_06.jpg"
+    ]
+   },
+   "how": "Lays the supplied photo over the placed one and compares them tile by tile: colour, detail and correlation."
+  },
+  {
+   "check_id": "PHOTO-28/class-feed/H027",
+   "output_id": "class-feed",
+   "rule_id": "R056",
+   "k_id": "K2_Q2",
+   "critical": false,
+   "check": "If verda_instructor_04.jpg appears on “Class announcement” (class-feed.png), it shows no pixelation, softness or generated detail from being enlarged.",
+   "assertion": {
+    "op": "v2_photo_compare_pb",
+    "pass_if": [
+     [
+      "scale",
+      "<=",
+      1.1
+     ]
+    ],
+    "fail_if": [],
+    "photo": "verda_instructor_04.jpg",
+    "region": "subject",
+    "absent": "pass",
+    "known": [
+     "verda_studio_frame_01.jpg",
+     "verda_studio_frame_02.jpg",
+     "verda_instructor_01.jpg",
+     "verda_instructor_02.jpg",
+     "verda_instructor_03.jpg",
+     "verda_instructor_05.jpg",
+     "verda_instructor_06.jpg"
+    ]
+   },
+   "how": "Lays the supplied photo over the placed one and compares them tile by tile: colour, detail and correlation."
+  },
+  {
+   "check_id": "PHOTO-28/booking-story/H024",
+   "output_id": "booking-story",
+   "rule_id": "R056",
+   "k_id": "K2_Q2",
+   "critical": false,
+   "check": "If verda_instructor_04.jpg appears on “Studio booking story” (booking-story.png), it shows no pixelation, softness or generated detail from being enlarged.",
+   "assertion": {
+    "op": "v2_photo_compare_pb",
+    "pass_if": [
+     [
+      "scale",
+      "<=",
+      1.1
+     ]
+    ],
+    "fail_if": [],
+    "photo": "verda_instructor_04.jpg",
+    "region": "subject",
+    "absent": "pass",
+    "known": [
+     "verda_studio_frame_01.jpg",
+     "verda_studio_frame_02.jpg",
+     "verda_instructor_01.jpg",
+     "verda_instructor_02.jpg",
+     "verda_instructor_03.jpg",
+     "verda_instructor_05.jpg",
+     "verda_instructor_06.jpg"
+    ]
+   },
+   "how": "Lays the supplied photo over the placed one and compares them tile by tile: colour, detail and correlation."
+  },
+  {
    "check_id": "PHOTO-28/studio-launch/H026",
    "output_id": "studio-launch",
    "rule_id": "R057",
@@ -1046,6 +2542,2494 @@
    "how": "Searches the deliverable for the supplied file (feature matching, confirmed by correlation), then checks it keeps its own proportions."
   },
   {
+   "check_id": "PHOTO-28/studio-launch/H028",
+   "output_id": "studio-launch",
+   "rule_id": "R058",
+   "k_id": "K2_Q2",
+   "critical": false,
+   "check": "No white square, box or halo shows around the studio wordmark on “Studio launch-page composition” (studio-launch.png); the ground meets the letters directly.",
+   "assertion": {
+    "op": "v2_wordmark_pb",
+    "whole": [
+     "Verda"
+    ],
+    "asset": "verda_wordmark_transparent.png",
+    "measure": "halo",
+    "photos": [
+     "verda_studio_frame_01.jpg",
+     "verda_studio_frame_02.jpg",
+     "verda_instructor_01.jpg",
+     "verda_instructor_02.jpg",
+     "verda_instructor_03.jpg",
+     "verda_instructor_04.jpg",
+     "verda_instructor_05.jpg",
+     "verda_instructor_06.jpg"
+    ]
+   },
+   "how": "Finds the wordmark, splits its letters from the ground and measures their height, proportions, spacing, counters and edges."
+  },
+  {
+   "check_id": "PHOTO-28/class-feed/H029",
+   "output_id": "class-feed",
+   "rule_id": "R058",
+   "k_id": "K2_Q2",
+   "critical": false,
+   "check": "No white square, box or halo shows around the studio wordmark on “Class announcement” (class-feed.png); the ground meets the letters directly.",
+   "assertion": {
+    "op": "v2_wordmark_pb",
+    "whole": [
+     "Verda"
+    ],
+    "asset": "verda_wordmark_transparent.png",
+    "measure": "halo",
+    "photos": [
+     "verda_studio_frame_01.jpg",
+     "verda_studio_frame_02.jpg",
+     "verda_instructor_01.jpg",
+     "verda_instructor_02.jpg",
+     "verda_instructor_03.jpg",
+     "verda_instructor_04.jpg",
+     "verda_instructor_05.jpg",
+     "verda_instructor_06.jpg"
+    ]
+   },
+   "how": "Finds the wordmark, splits its letters from the ground and measures their height, proportions, spacing, counters and edges."
+  },
+  {
+   "check_id": "PHOTO-28/booking-story/H026",
+   "output_id": "booking-story",
+   "rule_id": "R058",
+   "k_id": "K2_Q2",
+   "critical": false,
+   "check": "No white square, box or halo shows around the studio wordmark on “Studio booking story” (booking-story.png); the ground meets the letters directly.",
+   "assertion": {
+    "op": "v2_wordmark_pb",
+    "whole": [
+     "Verda"
+    ],
+    "asset": "verda_wordmark_transparent.png",
+    "measure": "halo",
+    "photos": [
+     "verda_studio_frame_01.jpg",
+     "verda_studio_frame_02.jpg",
+     "verda_instructor_01.jpg",
+     "verda_instructor_02.jpg",
+     "verda_instructor_03.jpg",
+     "verda_instructor_04.jpg",
+     "verda_instructor_05.jpg",
+     "verda_instructor_06.jpg"
+    ]
+   },
+   "how": "Finds the wordmark, splits its letters from the ground and measures their height, proportions, spacing, counters and edges."
+  },
+  {
+   "check_id": "PHOTO-28/studio-launch/H029",
+   "output_id": "studio-launch",
+   "rule_id": "R059",
+   "k_id": "K2_Q2",
+   "critical": false,
+   "check": "The studio wordmark on “Studio launch-page composition” (studio-launch.png) has clean letter edges, with no grey fringe or blocky compression ring; normal edge anti-aliasing is fine.",
+   "assertion": {
+    "op": "v2_wordmark_pb",
+    "whole": [
+     "Verda"
+    ],
+    "asset": "verda_wordmark_transparent.png",
+    "measure": "edges",
+    "photos": [
+     "verda_studio_frame_01.jpg",
+     "verda_studio_frame_02.jpg",
+     "verda_instructor_01.jpg",
+     "verda_instructor_02.jpg",
+     "verda_instructor_03.jpg",
+     "verda_instructor_04.jpg",
+     "verda_instructor_05.jpg",
+     "verda_instructor_06.jpg"
+    ]
+   },
+   "how": "Finds the wordmark, splits its letters from the ground and measures their height, proportions, spacing, counters and edges."
+  },
+  {
+   "check_id": "PHOTO-28/class-feed/H030",
+   "output_id": "class-feed",
+   "rule_id": "R059",
+   "k_id": "K2_Q2",
+   "critical": false,
+   "check": "The studio wordmark on “Class announcement” (class-feed.png) has clean letter edges, with no grey fringe or blocky compression ring; normal edge anti-aliasing is fine.",
+   "assertion": {
+    "op": "v2_wordmark_pb",
+    "whole": [
+     "Verda"
+    ],
+    "asset": "verda_wordmark_transparent.png",
+    "measure": "edges",
+    "photos": [
+     "verda_studio_frame_01.jpg",
+     "verda_studio_frame_02.jpg",
+     "verda_instructor_01.jpg",
+     "verda_instructor_02.jpg",
+     "verda_instructor_03.jpg",
+     "verda_instructor_04.jpg",
+     "verda_instructor_05.jpg",
+     "verda_instructor_06.jpg"
+    ]
+   },
+   "how": "Finds the wordmark, splits its letters from the ground and measures their height, proportions, spacing, counters and edges."
+  },
+  {
+   "check_id": "PHOTO-28/booking-story/H027",
+   "output_id": "booking-story",
+   "rule_id": "R059",
+   "k_id": "K2_Q2",
+   "critical": false,
+   "check": "The studio wordmark on “Studio booking story” (booking-story.png) has clean letter edges, with no grey fringe or blocky compression ring; normal edge anti-aliasing is fine.",
+   "assertion": {
+    "op": "v2_wordmark_pb",
+    "whole": [
+     "Verda"
+    ],
+    "asset": "verda_wordmark_transparent.png",
+    "measure": "edges",
+    "photos": [
+     "verda_studio_frame_01.jpg",
+     "verda_studio_frame_02.jpg",
+     "verda_instructor_01.jpg",
+     "verda_instructor_02.jpg",
+     "verda_instructor_03.jpg",
+     "verda_instructor_04.jpg",
+     "verda_instructor_05.jpg",
+     "verda_instructor_06.jpg"
+    ]
+   },
+   "how": "Finds the wordmark, splits its letters from the ground and measures their height, proportions, spacing, counters and edges."
+  },
+  {
+   "check_id": "PHOTO-28/studio-launch/H067",
+   "output_id": "studio-launch",
+   "rule_id": "R060",
+   "k_id": "K2_Q2",
+   "critical": false,
+   "check": "If an instructor cut-out appears on “Studio launch-page composition” (studio-launch.png), no part of the figure's hair, shoulders or arms is cut away along its edge.",
+   "assertion": {
+    "op": "v2_each_photo_pb",
+    "photos": [
+     "verda_studio_frame_01.jpg",
+     "verda_studio_frame_02.jpg"
+    ],
+    "then": null
+   },
+   "how": "Finds each supplied photo on the file, runs the check on each, and checks no other photograph is present."
+  },
+  {
+   "check_id": "PHOTO-28/booking-story/H064",
+   "output_id": "booking-story",
+   "rule_id": "R060",
+   "k_id": "K2_Q2",
+   "critical": false,
+   "check": "If an instructor cut-out appears on “Studio booking story” (booking-story.png), no part of the figure's hair, shoulders or arms is cut away along its edge.",
+   "assertion": {
+    "op": "v2_each_photo_pb",
+    "photos": [
+     "verda_studio_frame_01.jpg",
+     "verda_studio_frame_02.jpg"
+    ],
+    "then": null
+   },
+   "how": "Finds each supplied photo on the file, runs the check on each, and checks no other photograph is present."
+  },
+  {
+   "check_id": "PHOTO-28/studio-launch/H068",
+   "output_id": "studio-launch",
+   "rule_id": "R061",
+   "k_id": "K2_Q2",
+   "critical": false,
+   "check": "If an instructor cut-out appears on “Studio launch-page composition” (studio-launch.png), its edge shows no halo or fringe of the original wall.",
+   "assertion": {
+    "op": "v2_each_photo_pb",
+    "photos": [
+     "verda_studio_frame_01.jpg",
+     "verda_studio_frame_02.jpg"
+    ],
+    "then": null
+   },
+   "how": "Finds each supplied photo on the file, runs the check on each, and checks no other photograph is present."
+  },
+  {
+   "check_id": "PHOTO-28/booking-story/H065",
+   "output_id": "booking-story",
+   "rule_id": "R061",
+   "k_id": "K2_Q2",
+   "critical": false,
+   "check": "If an instructor cut-out appears on “Studio booking story” (booking-story.png), its edge shows no halo or fringe of the original wall.",
+   "assertion": {
+    "op": "v2_each_photo_pb",
+    "photos": [
+     "verda_studio_frame_01.jpg",
+     "verda_studio_frame_02.jpg"
+    ],
+    "then": null
+   },
+   "how": "Finds each supplied photo on the file, runs the check on each, and checks no other photograph is present."
+  },
+  {
+   "check_id": "PHOTO-28/studio-launch/H071",
+   "output_id": "studio-launch",
+   "rule_id": "R063",
+   "k_id": "K2_Q2",
+   "critical": false,
+   "check": "The studio wordmark on “Studio launch-page composition” (studio-launch.png) is not stretched or squashed: its visible letters are 3.1 to 3.45 times as wide as they are tall, as in verda_wordmark_transparent.png.",
+   "assertion": {
+    "op": "v2_wordmark_pb",
+    "whole": [
+     "Verda"
+    ],
+    "asset": "verda_wordmark_transparent.png",
+    "measure": "aspect",
+    "photos": [
+     "verda_studio_frame_01.jpg",
+     "verda_studio_frame_02.jpg",
+     "verda_instructor_01.jpg",
+     "verda_instructor_02.jpg",
+     "verda_instructor_03.jpg",
+     "verda_instructor_04.jpg",
+     "verda_instructor_05.jpg",
+     "verda_instructor_06.jpg"
+    ],
+    "range": [
+     3.1,
+     3.45
+    ]
+   },
+   "how": "Finds the wordmark, splits its letters from the ground and measures their height, proportions, spacing, counters and edges."
+  },
+  {
+   "check_id": "PHOTO-28/class-feed/H068",
+   "output_id": "class-feed",
+   "rule_id": "R063",
+   "k_id": "K2_Q2",
+   "critical": false,
+   "check": "The studio wordmark on “Class announcement” (class-feed.png) is not stretched or squashed: its visible letters are 3.1 to 3.45 times as wide as they are tall, as in verda_wordmark_transparent.png.",
+   "assertion": {
+    "op": "v2_wordmark_pb",
+    "whole": [
+     "Verda"
+    ],
+    "asset": "verda_wordmark_transparent.png",
+    "measure": "aspect",
+    "photos": [
+     "verda_studio_frame_01.jpg",
+     "verda_studio_frame_02.jpg",
+     "verda_instructor_01.jpg",
+     "verda_instructor_02.jpg",
+     "verda_instructor_03.jpg",
+     "verda_instructor_04.jpg",
+     "verda_instructor_05.jpg",
+     "verda_instructor_06.jpg"
+    ],
+    "range": [
+     3.1,
+     3.45
+    ]
+   },
+   "how": "Finds the wordmark, splits its letters from the ground and measures their height, proportions, spacing, counters and edges."
+  },
+  {
+   "check_id": "PHOTO-28/booking-story/H067",
+   "output_id": "booking-story",
+   "rule_id": "R063",
+   "k_id": "K2_Q2",
+   "critical": false,
+   "check": "The studio wordmark on “Studio booking story” (booking-story.png) is not stretched or squashed: its visible letters are 3.1 to 3.45 times as wide as they are tall, as in verda_wordmark_transparent.png.",
+   "assertion": {
+    "op": "v2_wordmark_pb",
+    "whole": [
+     "Verda"
+    ],
+    "asset": "verda_wordmark_transparent.png",
+    "measure": "aspect",
+    "photos": [
+     "verda_studio_frame_01.jpg",
+     "verda_studio_frame_02.jpg",
+     "verda_instructor_01.jpg",
+     "verda_instructor_02.jpg",
+     "verda_instructor_03.jpg",
+     "verda_instructor_04.jpg",
+     "verda_instructor_05.jpg",
+     "verda_instructor_06.jpg"
+    ],
+    "range": [
+     3.1,
+     3.45
+    ]
+   },
+   "how": "Finds the wordmark, splits its letters from the ground and measures their height, proportions, spacing, counters and edges."
+  },
+  {
+   "check_id": "PHOTO-28/studio-launch/H036",
+   "output_id": "studio-launch",
+   "rule_id": "R064",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Every ground, panel and button on “Studio launch-page composition” (studio-launch.png) is Warm Off White #F4F0E8 or Sage #9CA98F, never Soft Ink or Oak.",
+   "assertion": {
+    "op": "v2_ground_raster",
+    "hexes": [
+     "#F4F0E8",
+     "#9CA98F"
+    ],
+    "photos": [
+     "verda_studio_frame_01.jpg",
+     "verda_studio_frame_02.jpg",
+     "verda_instructor_01.jpg",
+     "verda_instructor_02.jpg",
+     "verda_instructor_03.jpg",
+     "verda_instructor_04.jpg",
+     "verda_instructor_05.jpg",
+     "verda_instructor_06.jpg"
+    ]
+   },
+   "how": "Finds every ground and panel (flat areas outside the photographs) and reads its colour."
+  },
+  {
+   "check_id": "PHOTO-28/class-feed/H005",
+   "output_id": "class-feed",
+   "rule_id": "R064",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Every ground, panel and button on “Class announcement” (class-feed.png) is Warm Off White #F4F0E8 or Sage #9CA98F, never Soft Ink or Oak.",
+   "assertion": {
+    "op": "v2_ground_raster",
+    "hexes": [
+     "#F4F0E8",
+     "#9CA98F"
+    ],
+    "photos": [
+     "verda_studio_frame_01.jpg",
+     "verda_studio_frame_02.jpg",
+     "verda_instructor_01.jpg",
+     "verda_instructor_02.jpg",
+     "verda_instructor_03.jpg",
+     "verda_instructor_04.jpg",
+     "verda_instructor_05.jpg",
+     "verda_instructor_06.jpg"
+    ]
+   },
+   "how": "Finds every ground and panel (flat areas outside the photographs) and reads its colour."
+  },
+  {
+   "check_id": "PHOTO-28/booking-story/H033",
+   "output_id": "booking-story",
+   "rule_id": "R064",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Every ground, panel and button on “Studio booking story” (booking-story.png) is Warm Off White #F4F0E8 or Sage #9CA98F, never Soft Ink or Oak.",
+   "assertion": {
+    "op": "v2_ground_raster",
+    "hexes": [
+     "#F4F0E8",
+     "#9CA98F"
+    ],
+    "photos": [
+     "verda_studio_frame_01.jpg",
+     "verda_studio_frame_02.jpg",
+     "verda_instructor_01.jpg",
+     "verda_instructor_02.jpg",
+     "verda_instructor_03.jpg",
+     "verda_instructor_04.jpg",
+     "verda_instructor_05.jpg",
+     "verda_instructor_06.jpg"
+    ]
+   },
+   "how": "Finds every ground and panel (flat areas outside the photographs) and reads its colour."
+  },
+  {
+   "check_id": "PHOTO-28/studio-launch/H033",
+   "output_id": "studio-launch",
+   "rule_id": "R065",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Type, panel, rule, button and icon colours on “Studio launch-page composition” (studio-launch.png) are only Sage #9CA98F, Oak #C7A97A, Warm Off White #F4F0E8 or Soft Ink #33352E, anti-aliased edges aside.",
+   "assertion": {
+    "op": "v2_palette_marks_pb",
+    "hexes": [
+     "#9CA98F",
+     "#C7A97A",
+     "#F4F0E8",
+     "#33352E"
+    ],
+    "marks": [
+     {
+      "asset": "verda_wordmark_transparent.png"
+     },
+     {
+      "whole": [
+       "Verda"
+      ]
+     }
+    ],
+    "mark_hexes": [
+     "#222724"
+    ],
+    "photos": [
+     "verda_studio_frame_01.jpg",
+     "verda_studio_frame_02.jpg",
+     "verda_instructor_01.jpg",
+     "verda_instructor_02.jpg",
+     "verda_instructor_03.jpg",
+     "verda_instructor_04.jpg",
+     "verda_instructor_05.jpg",
+     "verda_instructor_06.jpg"
+    ]
+   },
+   "how": "Reads every flat colour outside the photographs and checks each is a palette colour, the wordmark's own ink allowed in its box."
+  },
+  {
+   "check_id": "PHOTO-28/class-feed/H033",
+   "output_id": "class-feed",
+   "rule_id": "R065",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Type, panel, rule, button and icon colours on “Class announcement” (class-feed.png) are only Sage #9CA98F, Oak #C7A97A, Warm Off White #F4F0E8 or Soft Ink #33352E, anti-aliased edges aside.",
+   "assertion": {
+    "op": "v2_palette_marks_pb",
+    "hexes": [
+     "#9CA98F",
+     "#C7A97A",
+     "#F4F0E8",
+     "#33352E"
+    ],
+    "marks": [
+     {
+      "asset": "verda_wordmark_transparent.png"
+     },
+     {
+      "whole": [
+       "Verda"
+      ]
+     }
+    ],
+    "mark_hexes": [
+     "#222724"
+    ],
+    "photos": [
+     "verda_studio_frame_01.jpg",
+     "verda_studio_frame_02.jpg",
+     "verda_instructor_01.jpg",
+     "verda_instructor_02.jpg",
+     "verda_instructor_03.jpg",
+     "verda_instructor_04.jpg",
+     "verda_instructor_05.jpg",
+     "verda_instructor_06.jpg"
+    ]
+   },
+   "how": "Reads every flat colour outside the photographs and checks each is a palette colour, the wordmark's own ink allowed in its box."
+  },
+  {
+   "check_id": "PHOTO-28/booking-story/H030",
+   "output_id": "booking-story",
+   "rule_id": "R065",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Type, panel, rule, button and icon colours on “Studio booking story” (booking-story.png) are only Sage #9CA98F, Oak #C7A97A, Warm Off White #F4F0E8 or Soft Ink #33352E, anti-aliased edges aside.",
+   "assertion": {
+    "op": "v2_palette_marks_pb",
+    "hexes": [
+     "#9CA98F",
+     "#C7A97A",
+     "#F4F0E8",
+     "#33352E"
+    ],
+    "marks": [
+     {
+      "asset": "verda_wordmark_transparent.png"
+     },
+     {
+      "whole": [
+       "Verda"
+      ]
+     }
+    ],
+    "mark_hexes": [
+     "#222724"
+    ],
+    "photos": [
+     "verda_studio_frame_01.jpg",
+     "verda_studio_frame_02.jpg",
+     "verda_instructor_01.jpg",
+     "verda_instructor_02.jpg",
+     "verda_instructor_03.jpg",
+     "verda_instructor_04.jpg",
+     "verda_instructor_05.jpg",
+     "verda_instructor_06.jpg"
+    ]
+   },
+   "how": "Reads every flat colour outside the photographs and checks each is a palette colour, the wordmark's own ink allowed in its box."
+  },
+  {
+   "check_id": "PHOTO-28/studio-launch/H034",
+   "output_id": "studio-launch",
+   "rule_id": "R066",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Warm Off White #F4F0E8 appears in the designed parts of “Studio launch-page composition” (studio-launch.png).",
+   "assertion": {
+    "op": "v2_colour_present_raster",
+    "hexes": [
+     "#F4F0E8"
+    ],
+    "photos": [
+     "verda_studio_frame_01.jpg",
+     "verda_studio_frame_02.jpg",
+     "verda_instructor_01.jpg",
+     "verda_instructor_02.jpg",
+     "verda_instructor_03.jpg",
+     "verda_instructor_04.jpg",
+     "verda_instructor_05.jpg",
+     "verda_instructor_06.jpg"
+    ]
+   },
+   "how": "Looks for the colour as a flat area outside the photographs."
+  },
+  {
+   "check_id": "PHOTO-28/class-feed/H034",
+   "output_id": "class-feed",
+   "rule_id": "R066",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Warm Off White #F4F0E8 appears in the designed parts of “Class announcement” (class-feed.png).",
+   "assertion": {
+    "op": "v2_colour_present_raster",
+    "hexes": [
+     "#F4F0E8"
+    ],
+    "photos": [
+     "verda_studio_frame_01.jpg",
+     "verda_studio_frame_02.jpg",
+     "verda_instructor_01.jpg",
+     "verda_instructor_02.jpg",
+     "verda_instructor_03.jpg",
+     "verda_instructor_04.jpg",
+     "verda_instructor_05.jpg",
+     "verda_instructor_06.jpg"
+    ]
+   },
+   "how": "Looks for the colour as a flat area outside the photographs."
+  },
+  {
+   "check_id": "PHOTO-28/booking-story/H031",
+   "output_id": "booking-story",
+   "rule_id": "R066",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Warm Off White #F4F0E8 appears in the designed parts of “Studio booking story” (booking-story.png).",
+   "assertion": {
+    "op": "v2_colour_present_raster",
+    "hexes": [
+     "#F4F0E8"
+    ],
+    "photos": [
+     "verda_studio_frame_01.jpg",
+     "verda_studio_frame_02.jpg",
+     "verda_instructor_01.jpg",
+     "verda_instructor_02.jpg",
+     "verda_instructor_03.jpg",
+     "verda_instructor_04.jpg",
+     "verda_instructor_05.jpg",
+     "verda_instructor_06.jpg"
+    ]
+   },
+   "how": "Looks for the colour as a flat area outside the photographs."
+  },
+  {
+   "check_id": "PHOTO-28/studio-launch/H035",
+   "output_id": "studio-launch",
+   "rule_id": "R067",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "All type, the wordmark and every ground, panel, button, rule and icon on “Studio launch-page composition” (studio-launch.png) are flat, solid colour, with no gradient, drop shadow or anything showing through.",
+   "assertion": {
+    "op": "v2_solid_raster_pb",
+    "hexes": [
+     "#9CA98F",
+     "#C7A97A",
+     "#F4F0E8",
+     "#33352E",
+     "#222724"
+    ],
+    "photos": [
+     "verda_studio_frame_01.jpg",
+     "verda_studio_frame_02.jpg",
+     "verda_instructor_01.jpg",
+     "verda_instructor_02.jpg",
+     "verda_instructor_03.jpg",
+     "verda_instructor_04.jpg",
+     "verda_instructor_05.jpg",
+     "verda_instructor_06.jpg"
+    ]
+   },
+   "how": "Checks every flat designed colour is a palette colour, with no shaded area and no type over a photograph."
+  },
+  {
+   "check_id": "PHOTO-28/class-feed/H035",
+   "output_id": "class-feed",
+   "rule_id": "R067",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "All type, the wordmark and every ground, panel, button, rule and icon on “Class announcement” (class-feed.png) are flat, solid colour, with no gradient, drop shadow or anything showing through.",
+   "assertion": {
+    "op": "v2_solid_raster_pb",
+    "hexes": [
+     "#9CA98F",
+     "#C7A97A",
+     "#F4F0E8",
+     "#33352E",
+     "#222724"
+    ],
+    "photos": [
+     "verda_studio_frame_01.jpg",
+     "verda_studio_frame_02.jpg",
+     "verda_instructor_01.jpg",
+     "verda_instructor_02.jpg",
+     "verda_instructor_03.jpg",
+     "verda_instructor_04.jpg",
+     "verda_instructor_05.jpg",
+     "verda_instructor_06.jpg"
+    ]
+   },
+   "how": "Checks every flat designed colour is a palette colour, with no shaded area and no type over a photograph."
+  },
+  {
+   "check_id": "PHOTO-28/booking-story/H032",
+   "output_id": "booking-story",
+   "rule_id": "R067",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "All type, the wordmark and every ground, panel, button, rule and icon on “Studio booking story” (booking-story.png) are flat, solid colour, with no gradient, drop shadow or anything showing through.",
+   "assertion": {
+    "op": "v2_solid_raster_pb",
+    "hexes": [
+     "#9CA98F",
+     "#C7A97A",
+     "#F4F0E8",
+     "#33352E",
+     "#222724"
+    ],
+    "photos": [
+     "verda_studio_frame_01.jpg",
+     "verda_studio_frame_02.jpg",
+     "verda_instructor_01.jpg",
+     "verda_instructor_02.jpg",
+     "verda_instructor_03.jpg",
+     "verda_instructor_04.jpg",
+     "verda_instructor_05.jpg",
+     "verda_instructor_06.jpg"
+    ]
+   },
+   "how": "Checks every flat designed colour is a palette colour, with no shaded area and no type over a photograph."
+  },
+  {
+   "check_id": "PHOTO-28/studio-launch/H037",
+   "output_id": "studio-launch",
+   "rule_id": "R068",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "On “Studio launch-page composition” (studio-launch.png), all type on Warm Off White #F4F0E8 is Soft Ink #33352E; only short labels, like the passcard_2025_print.pdf field labels, may be Sage.",
+   "assertion": {
+    "op": "v2_type_ink_pb",
+    "grounds": [
+     "#F4F0E8"
+    ],
+    "colors": [
+     "#33352E"
+    ],
+    "allow": [
+     {
+      "roles": [
+       "label"
+      ],
+      "max_words": 3,
+      "colors": [
+       "#33352E",
+       "#9CA98F"
+      ]
+     },
+     {
+      "whole": [
+       "Verda"
+      ],
+      "colors": [
+       "#33352E",
+       "#222724"
+      ]
+     },
+     {
+      "roles": [
+       "other",
+       "fine"
+      ],
+      "max_words": 3,
+      "colors": [
+       "#9CA98F"
+      ],
+      "maybe": true
+     }
+    ],
+    "photos": [
+     "verda_studio_frame_01.jpg",
+     "verda_studio_frame_02.jpg",
+     "verda_instructor_01.jpg",
+     "verda_instructor_02.jpg",
+     "verda_instructor_03.jpg",
+     "verda_instructor_04.jpg",
+     "verda_instructor_05.jpg",
+     "verda_instructor_06.jpg"
+    ]
+   },
+   "how": "Reads each text line (OCR on images, live text on PDFs), the colour of its letters and of the ground behind it, and checks the pairing."
+  },
+  {
+   "check_id": "PHOTO-28/class-feed/H036",
+   "output_id": "class-feed",
+   "rule_id": "R068",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "On “Class announcement” (class-feed.png), all type on Warm Off White #F4F0E8 is Soft Ink #33352E; only short labels, like the passcard_2025_print.pdf field labels, may be Sage.",
+   "assertion": {
+    "op": "v2_type_ink_pb",
+    "grounds": [
+     "#F4F0E8"
+    ],
+    "colors": [
+     "#33352E"
+    ],
+    "allow": [
+     {
+      "roles": [
+       "label"
+      ],
+      "max_words": 3,
+      "colors": [
+       "#33352E",
+       "#9CA98F"
+      ]
+     },
+     {
+      "whole": [
+       "Verda"
+      ],
+      "colors": [
+       "#33352E",
+       "#222724"
+      ]
+     },
+     {
+      "roles": [
+       "other",
+       "fine"
+      ],
+      "max_words": 3,
+      "colors": [
+       "#9CA98F"
+      ],
+      "maybe": true
+     }
+    ],
+    "photos": [
+     "verda_studio_frame_01.jpg",
+     "verda_studio_frame_02.jpg",
+     "verda_instructor_01.jpg",
+     "verda_instructor_02.jpg",
+     "verda_instructor_03.jpg",
+     "verda_instructor_04.jpg",
+     "verda_instructor_05.jpg",
+     "verda_instructor_06.jpg"
+    ]
+   },
+   "how": "Reads each text line (OCR on images, live text on PDFs), the colour of its letters and of the ground behind it, and checks the pairing."
+  },
+  {
+   "check_id": "PHOTO-28/booking-story/H034",
+   "output_id": "booking-story",
+   "rule_id": "R068",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "On “Studio booking story” (booking-story.png), all type on Warm Off White #F4F0E8 is Soft Ink #33352E; only short labels, like the passcard_2025_print.pdf field labels, may be Sage.",
+   "assertion": {
+    "op": "v2_type_ink_pb",
+    "grounds": [
+     "#F4F0E8"
+    ],
+    "colors": [
+     "#33352E"
+    ],
+    "allow": [
+     {
+      "roles": [
+       "label"
+      ],
+      "max_words": 3,
+      "colors": [
+       "#33352E",
+       "#9CA98F"
+      ]
+     },
+     {
+      "whole": [
+       "Verda"
+      ],
+      "colors": [
+       "#33352E",
+       "#222724"
+      ]
+     },
+     {
+      "roles": [
+       "other",
+       "fine"
+      ],
+      "max_words": 3,
+      "colors": [
+       "#9CA98F"
+      ],
+      "maybe": true
+     }
+    ],
+    "photos": [
+     "verda_studio_frame_01.jpg",
+     "verda_studio_frame_02.jpg",
+     "verda_instructor_01.jpg",
+     "verda_instructor_02.jpg",
+     "verda_instructor_03.jpg",
+     "verda_instructor_04.jpg",
+     "verda_instructor_05.jpg",
+     "verda_instructor_06.jpg"
+    ]
+   },
+   "how": "Reads each text line (OCR on images, live text on PDFs), the colour of its letters and of the ground behind it, and checks the pairing."
+  },
+  {
+   "check_id": "PHOTO-28/studio-launch/H038",
+   "output_id": "studio-launch",
+   "rule_id": "R069",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Oak #C7A97A on “Studio launch-page composition” (studio-launch.png) appears only as thin hairline rules or dividers, never as a ground, panel, button, text or fill.",
+   "assertion": {
+    "op": "v2_colour_only_as_pb",
+    "hexes": [
+     "#C7A97A"
+    ],
+    "rules": "hairline",
+    "photos": [
+     "verda_studio_frame_01.jpg",
+     "verda_studio_frame_02.jpg",
+     "verda_instructor_01.jpg",
+     "verda_instructor_02.jpg",
+     "verda_instructor_03.jpg",
+     "verda_instructor_04.jpg",
+     "verda_instructor_05.jpg",
+     "verda_instructor_06.jpg"
+    ]
+   },
+   "how": "Finds every piece in the colour outside the photographs and checks each is a thin rule or sits in an allowed text line."
+  },
+  {
+   "check_id": "PHOTO-28/class-feed/H037",
+   "output_id": "class-feed",
+   "rule_id": "R069",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Oak #C7A97A on “Class announcement” (class-feed.png) appears only as thin hairline rules or dividers, never as a ground, panel, button, text or fill.",
+   "assertion": {
+    "op": "v2_colour_only_as_pb",
+    "hexes": [
+     "#C7A97A"
+    ],
+    "rules": "hairline",
+    "photos": [
+     "verda_studio_frame_01.jpg",
+     "verda_studio_frame_02.jpg",
+     "verda_instructor_01.jpg",
+     "verda_instructor_02.jpg",
+     "verda_instructor_03.jpg",
+     "verda_instructor_04.jpg",
+     "verda_instructor_05.jpg",
+     "verda_instructor_06.jpg"
+    ]
+   },
+   "how": "Finds every piece in the colour outside the photographs and checks each is a thin rule or sits in an allowed text line."
+  },
+  {
+   "check_id": "PHOTO-28/booking-story/H035",
+   "output_id": "booking-story",
+   "rule_id": "R069",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Oak #C7A97A on “Studio booking story” (booking-story.png) appears only as thin hairline rules or dividers, never as a ground, panel, button, text or fill.",
+   "assertion": {
+    "op": "v2_colour_only_as_pb",
+    "hexes": [
+     "#C7A97A"
+    ],
+    "rules": "hairline",
+    "photos": [
+     "verda_studio_frame_01.jpg",
+     "verda_studio_frame_02.jpg",
+     "verda_instructor_01.jpg",
+     "verda_instructor_02.jpg",
+     "verda_instructor_03.jpg",
+     "verda_instructor_04.jpg",
+     "verda_instructor_05.jpg",
+     "verda_instructor_06.jpg"
+    ]
+   },
+   "how": "Finds every piece in the colour outside the photographs and checks each is a thin rule or sits in an allowed text line."
+  },
+  {
+   "check_id": "PHOTO-28/studio-launch/H057",
+   "output_id": "studio-launch",
+   "rule_id": "R070",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "No type or wordmark on “Studio launch-page composition” (studio-launch.png) sits directly on a photograph; it sits on a solid Warm Off White or Sage panel.",
+   "assertion": {
+    "op": "v2_type_ink_pb",
+    "ground_must": [
+     "#F4F0E8",
+     "#9CA98F"
+    ],
+    "photos": [
+     "verda_studio_frame_01.jpg",
+     "verda_studio_frame_02.jpg",
+     "verda_instructor_01.jpg",
+     "verda_instructor_02.jpg",
+     "verda_instructor_03.jpg",
+     "verda_instructor_04.jpg",
+     "verda_instructor_05.jpg",
+     "verda_instructor_06.jpg"
+    ]
+   },
+   "how": "Reads each text line (OCR on images, live text on PDFs), the colour of its letters and of the ground behind it, and checks the pairing."
+  },
+  {
+   "check_id": "PHOTO-28/class-feed/H056",
+   "output_id": "class-feed",
+   "rule_id": "R070",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "No type or wordmark on “Class announcement” (class-feed.png) sits directly on a photograph; it sits on a solid Warm Off White or Sage panel.",
+   "assertion": {
+    "op": "v2_type_ink_pb",
+    "ground_must": [
+     "#F4F0E8",
+     "#9CA98F"
+    ],
+    "photos": [
+     "verda_studio_frame_01.jpg",
+     "verda_studio_frame_02.jpg",
+     "verda_instructor_01.jpg",
+     "verda_instructor_02.jpg",
+     "verda_instructor_03.jpg",
+     "verda_instructor_04.jpg",
+     "verda_instructor_05.jpg",
+     "verda_instructor_06.jpg"
+    ]
+   },
+   "how": "Reads each text line (OCR on images, live text on PDFs), the colour of its letters and of the ground behind it, and checks the pairing."
+  },
+  {
+   "check_id": "PHOTO-28/booking-story/H054",
+   "output_id": "booking-story",
+   "rule_id": "R070",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "No type or wordmark on “Studio booking story” (booking-story.png) sits directly on a photograph; it sits on a solid Warm Off White or Sage panel.",
+   "assertion": {
+    "op": "v2_type_ink_pb",
+    "ground_must": [
+     "#F4F0E8",
+     "#9CA98F"
+    ],
+    "photos": [
+     "verda_studio_frame_01.jpg",
+     "verda_studio_frame_02.jpg",
+     "verda_instructor_01.jpg",
+     "verda_instructor_02.jpg",
+     "verda_instructor_03.jpg",
+     "verda_instructor_04.jpg",
+     "verda_instructor_05.jpg",
+     "verda_instructor_06.jpg"
+    ]
+   },
+   "how": "Reads each text line (OCR on images, live text on PDFs), the colour of its letters and of the ground behind it, and checks the pairing."
+  },
+  {
+   "check_id": "PHOTO-28/studio-launch/H058",
+   "output_id": "studio-launch",
+   "rule_id": "R071",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "No scrim, gradient or overlay of any colour, black or white included, is laid over a photograph on “Studio launch-page composition” (studio-launch.png).",
+   "assertion": {
+    "op": "v2_each_photo_pb",
+    "photos": [
+     "verda_studio_frame_01.jpg",
+     "verda_studio_frame_02.jpg",
+     "verda_instructor_01.jpg",
+     "verda_instructor_02.jpg",
+     "verda_instructor_03.jpg",
+     "verda_instructor_04.jpg",
+     "verda_instructor_05.jpg",
+     "verda_instructor_06.jpg"
+    ],
+    "then": {
+     "op": "v2_any_of",
+     "checks": [
+      {
+       "op": "v2_no_overlay",
+       "photo": "{photo}"
+      },
+      {
+       "op": "v2_photo_compare_pb",
+       "photo": "{photo}",
+       "region": "own",
+       "min_tiles": 0,
+       "pass_if": [
+        [
+         "gain_min",
+         ">=",
+         0.92
+        ],
+        [
+         "drift",
+         "<=",
+         10
+        ]
+       ],
+       "fail_if": [
+        [
+         "gain_min",
+         "<=",
+         0.7
+        ],
+        [
+         "drift",
+         "<=",
+         12
+        ]
+       ]
+      }
+     ]
+    }
+   },
+   "how": "Finds each supplied photo on the file, runs the check on each, and checks no other photograph is present."
+  },
+  {
+   "check_id": "PHOTO-28/class-feed/H057",
+   "output_id": "class-feed",
+   "rule_id": "R071",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "No scrim, gradient or overlay of any colour, black or white included, is laid over a photograph on “Class announcement” (class-feed.png).",
+   "assertion": {
+    "op": "v2_each_photo_pb",
+    "photos": [
+     "verda_studio_frame_01.jpg",
+     "verda_studio_frame_02.jpg",
+     "verda_instructor_01.jpg",
+     "verda_instructor_02.jpg",
+     "verda_instructor_03.jpg",
+     "verda_instructor_04.jpg",
+     "verda_instructor_05.jpg",
+     "verda_instructor_06.jpg"
+    ],
+    "then": {
+     "op": "v2_any_of",
+     "checks": [
+      {
+       "op": "v2_no_overlay",
+       "photo": "{photo}"
+      },
+      {
+       "op": "v2_photo_compare_pb",
+       "photo": "{photo}",
+       "region": "own",
+       "min_tiles": 0,
+       "pass_if": [
+        [
+         "gain_min",
+         ">=",
+         0.92
+        ],
+        [
+         "drift",
+         "<=",
+         10
+        ]
+       ],
+       "fail_if": [
+        [
+         "gain_min",
+         "<=",
+         0.7
+        ],
+        [
+         "drift",
+         "<=",
+         12
+        ]
+       ]
+      }
+     ]
+    }
+   },
+   "how": "Finds each supplied photo on the file, runs the check on each, and checks no other photograph is present."
+  },
+  {
+   "check_id": "PHOTO-28/booking-story/H055",
+   "output_id": "booking-story",
+   "rule_id": "R071",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "No scrim, gradient or overlay of any colour, black or white included, is laid over a photograph on “Studio booking story” (booking-story.png).",
+   "assertion": {
+    "op": "v2_each_photo_pb",
+    "photos": [
+     "verda_studio_frame_01.jpg",
+     "verda_studio_frame_02.jpg",
+     "verda_instructor_01.jpg",
+     "verda_instructor_02.jpg",
+     "verda_instructor_03.jpg",
+     "verda_instructor_04.jpg",
+     "verda_instructor_05.jpg",
+     "verda_instructor_06.jpg"
+    ],
+    "then": {
+     "op": "v2_any_of",
+     "checks": [
+      {
+       "op": "v2_no_overlay",
+       "photo": "{photo}"
+      },
+      {
+       "op": "v2_photo_compare_pb",
+       "photo": "{photo}",
+       "region": "own",
+       "min_tiles": 0,
+       "pass_if": [
+        [
+         "gain_min",
+         ">=",
+         0.92
+        ],
+        [
+         "drift",
+         "<=",
+         10
+        ]
+       ],
+       "fail_if": [
+        [
+         "gain_min",
+         "<=",
+         0.7
+        ],
+        [
+         "drift",
+         "<=",
+         12
+        ]
+       ]
+      }
+     ]
+    }
+   },
+   "how": "Finds each supplied photo on the file, runs the check on each, and checks no other photograph is present."
+  },
+  {
+   "check_id": "PHOTO-28/studio-launch/H059",
+   "output_id": "studio-launch",
+   "rule_id": "R072",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Any type on a Sage #9CA98F ground or panel on “Studio launch-page composition” (studio-launch.png) is Soft Ink #33352E or Warm Off White #F4F0E8.",
+   "assertion": {
+    "op": "v2_type_ink_pb",
+    "grounds": [
+     "#9CA98F"
+    ],
+    "colors": [
+     "#33352E",
+     "#F4F0E8"
+    ],
+    "allow": [
+     {
+      "whole": [
+       "Verda"
+      ],
+      "colors": [
+       "#222724"
+      ]
+     }
+    ],
+    "photos": [
+     "verda_studio_frame_01.jpg",
+     "verda_studio_frame_02.jpg",
+     "verda_instructor_01.jpg",
+     "verda_instructor_02.jpg",
+     "verda_instructor_03.jpg",
+     "verda_instructor_04.jpg",
+     "verda_instructor_05.jpg",
+     "verda_instructor_06.jpg"
+    ]
+   },
+   "how": "Reads each text line (OCR on images, live text on PDFs), the colour of its letters and of the ground behind it, and checks the pairing."
+  },
+  {
+   "check_id": "PHOTO-28/class-feed/H058",
+   "output_id": "class-feed",
+   "rule_id": "R072",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Any type on a Sage #9CA98F ground or panel on “Class announcement” (class-feed.png) is Soft Ink #33352E or Warm Off White #F4F0E8.",
+   "assertion": {
+    "op": "v2_type_ink_pb",
+    "grounds": [
+     "#9CA98F"
+    ],
+    "colors": [
+     "#33352E",
+     "#F4F0E8"
+    ],
+    "allow": [
+     {
+      "whole": [
+       "Verda"
+      ],
+      "colors": [
+       "#222724"
+      ]
+     }
+    ],
+    "photos": [
+     "verda_studio_frame_01.jpg",
+     "verda_studio_frame_02.jpg",
+     "verda_instructor_01.jpg",
+     "verda_instructor_02.jpg",
+     "verda_instructor_03.jpg",
+     "verda_instructor_04.jpg",
+     "verda_instructor_05.jpg",
+     "verda_instructor_06.jpg"
+    ]
+   },
+   "how": "Reads each text line (OCR on images, live text on PDFs), the colour of its letters and of the ground behind it, and checks the pairing."
+  },
+  {
+   "check_id": "PHOTO-28/booking-story/H056",
+   "output_id": "booking-story",
+   "rule_id": "R072",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Any type on a Sage #9CA98F ground or panel on “Studio booking story” (booking-story.png) is Soft Ink #33352E or Warm Off White #F4F0E8.",
+   "assertion": {
+    "op": "v2_type_ink_pb",
+    "grounds": [
+     "#9CA98F"
+    ],
+    "colors": [
+     "#33352E",
+     "#F4F0E8"
+    ],
+    "allow": [
+     {
+      "whole": [
+       "Verda"
+      ],
+      "colors": [
+       "#222724"
+      ]
+     }
+    ],
+    "photos": [
+     "verda_studio_frame_01.jpg",
+     "verda_studio_frame_02.jpg",
+     "verda_instructor_01.jpg",
+     "verda_instructor_02.jpg",
+     "verda_instructor_03.jpg",
+     "verda_instructor_04.jpg",
+     "verda_instructor_05.jpg",
+     "verda_instructor_06.jpg"
+    ]
+   },
+   "how": "Reads each text line (OCR on images, live text on PDFs), the colour of its letters and of the ground behind it, and checks the pairing."
+  },
+  {
+   "check_id": "PHOTO-28/studio-launch/H078",
+   "output_id": "studio-launch",
+   "rule_id": "R074",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Oak #C7A97A covers no more than 5% of the designed, non-photographic area on “Studio launch-page composition” (studio-launch.png).",
+   "assertion": {
+    "op": "v2_area_share_raster",
+    "hexes": [
+     "#C7A97A"
+    ],
+    "max_pct": 5,
+    "photos": [
+     "verda_studio_frame_01.jpg",
+     "verda_studio_frame_02.jpg",
+     "verda_instructor_01.jpg",
+     "verda_instructor_02.jpg",
+     "verda_instructor_03.jpg",
+     "verda_instructor_04.jpg",
+     "verda_instructor_05.jpg",
+     "verda_instructor_06.jpg"
+    ]
+   },
+   "how": "Measures the share of the area outside the photographs in the named colours."
+  },
+  {
+   "check_id": "PHOTO-28/class-feed/H072",
+   "output_id": "class-feed",
+   "rule_id": "R074",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Oak #C7A97A covers no more than 5% of the designed, non-photographic area on “Class announcement” (class-feed.png).",
+   "assertion": {
+    "op": "v2_area_share_raster",
+    "hexes": [
+     "#C7A97A"
+    ],
+    "max_pct": 5,
+    "photos": [
+     "verda_studio_frame_01.jpg",
+     "verda_studio_frame_02.jpg",
+     "verda_instructor_01.jpg",
+     "verda_instructor_02.jpg",
+     "verda_instructor_03.jpg",
+     "verda_instructor_04.jpg",
+     "verda_instructor_05.jpg",
+     "verda_instructor_06.jpg"
+    ]
+   },
+   "how": "Measures the share of the area outside the photographs in the named colours."
+  },
+  {
+   "check_id": "PHOTO-28/booking-story/H070",
+   "output_id": "booking-story",
+   "rule_id": "R074",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Oak #C7A97A covers no more than 5% of the designed, non-photographic area on “Studio booking story” (booking-story.png).",
+   "assertion": {
+    "op": "v2_area_share_raster",
+    "hexes": [
+     "#C7A97A"
+    ],
+    "max_pct": 5,
+    "photos": [
+     "verda_studio_frame_01.jpg",
+     "verda_studio_frame_02.jpg",
+     "verda_instructor_01.jpg",
+     "verda_instructor_02.jpg",
+     "verda_instructor_03.jpg",
+     "verda_instructor_04.jpg",
+     "verda_instructor_05.jpg",
+     "verda_instructor_06.jpg"
+    ]
+   },
+   "how": "Measures the share of the area outside the photographs in the named colours."
+  },
+  {
+   "check_id": "PHOTO-28/studio-launch/H079",
+   "output_id": "studio-launch",
+   "rule_id": "R075",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "On Warm Off White in studio-launch.png, the wordmark ink is #222724 or Soft Ink #33352E.",
+   "assertion": {
+    "op": "v2_all_of",
+    "checks": [
+     {
+      "op": "v2_type_ink_pb",
+      "select": [
+       {
+        "whole": [
+         "Verda"
+        ]
+       }
+      ],
+      "colors": [
+       "#222724",
+       "#33352E"
+      ],
+      "grounds": [],
+      "optional": false,
+      "photos": [
+       "verda_studio_frame_01.jpg",
+       "verda_studio_frame_02.jpg",
+       "verda_instructor_01.jpg",
+       "verda_instructor_02.jpg",
+       "verda_instructor_03.jpg",
+       "verda_instructor_04.jpg",
+       "verda_instructor_05.jpg",
+       "verda_instructor_06.jpg"
+      ]
+     },
+     {
+      "op": "v2_type_ink_pb",
+      "select": [
+       {
+        "whole": [
+         "Verda"
+        ]
+       }
+      ],
+      "colors": [
+       "#222724",
+       "#33352E"
+      ],
+      "grounds": [
+       "#F4F0E8"
+      ],
+      "photos": [
+       "verda_studio_frame_01.jpg",
+       "verda_studio_frame_02.jpg",
+       "verda_instructor_01.jpg",
+       "verda_instructor_02.jpg",
+       "verda_instructor_03.jpg",
+       "verda_instructor_04.jpg",
+       "verda_instructor_05.jpg",
+       "verda_instructor_06.jpg"
+      ]
+     }
+    ]
+   },
+   "how": "Reads each text line (OCR on images, live text on PDFs), the colour of its letters and of the ground behind it, and checks the pairing, for each of the 2 named texts; all must pass."
+  },
+  {
+   "check_id": "PHOTO-28/class-feed/H073",
+   "output_id": "class-feed",
+   "rule_id": "R075",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "On Warm Off White in class-feed.png, the wordmark ink is #222724 or Soft Ink #33352E.",
+   "assertion": {
+    "op": "v2_all_of",
+    "checks": [
+     {
+      "op": "v2_type_ink_pb",
+      "select": [
+       {
+        "whole": [
+         "Verda"
+        ]
+       }
+      ],
+      "colors": [
+       "#222724",
+       "#33352E"
+      ],
+      "grounds": [],
+      "optional": false,
+      "photos": [
+       "verda_studio_frame_01.jpg",
+       "verda_studio_frame_02.jpg",
+       "verda_instructor_01.jpg",
+       "verda_instructor_02.jpg",
+       "verda_instructor_03.jpg",
+       "verda_instructor_04.jpg",
+       "verda_instructor_05.jpg",
+       "verda_instructor_06.jpg"
+      ]
+     },
+     {
+      "op": "v2_type_ink_pb",
+      "select": [
+       {
+        "whole": [
+         "Verda"
+        ]
+       }
+      ],
+      "colors": [
+       "#222724",
+       "#33352E"
+      ],
+      "grounds": [
+       "#F4F0E8"
+      ],
+      "photos": [
+       "verda_studio_frame_01.jpg",
+       "verda_studio_frame_02.jpg",
+       "verda_instructor_01.jpg",
+       "verda_instructor_02.jpg",
+       "verda_instructor_03.jpg",
+       "verda_instructor_04.jpg",
+       "verda_instructor_05.jpg",
+       "verda_instructor_06.jpg"
+      ]
+     }
+    ]
+   },
+   "how": "Reads each text line (OCR on images, live text on PDFs), the colour of its letters and of the ground behind it, and checks the pairing, for each of the 2 named texts; all must pass."
+  },
+  {
+   "check_id": "PHOTO-28/booking-story/H071",
+   "output_id": "booking-story",
+   "rule_id": "R075",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "On Warm Off White in booking-story.png, the wordmark ink is #222724 or Soft Ink #33352E.",
+   "assertion": {
+    "op": "v2_all_of",
+    "checks": [
+     {
+      "op": "v2_type_ink_pb",
+      "select": [
+       {
+        "whole": [
+         "Verda"
+        ]
+       }
+      ],
+      "colors": [
+       "#222724",
+       "#33352E"
+      ],
+      "grounds": [],
+      "optional": false,
+      "photos": [
+       "verda_studio_frame_01.jpg",
+       "verda_studio_frame_02.jpg",
+       "verda_instructor_01.jpg",
+       "verda_instructor_02.jpg",
+       "verda_instructor_03.jpg",
+       "verda_instructor_04.jpg",
+       "verda_instructor_05.jpg",
+       "verda_instructor_06.jpg"
+      ]
+     },
+     {
+      "op": "v2_type_ink_pb",
+      "select": [
+       {
+        "whole": [
+         "Verda"
+        ]
+       }
+      ],
+      "colors": [
+       "#222724",
+       "#33352E"
+      ],
+      "grounds": [
+       "#F4F0E8"
+      ],
+      "photos": [
+       "verda_studio_frame_01.jpg",
+       "verda_studio_frame_02.jpg",
+       "verda_instructor_01.jpg",
+       "verda_instructor_02.jpg",
+       "verda_instructor_03.jpg",
+       "verda_instructor_04.jpg",
+       "verda_instructor_05.jpg",
+       "verda_instructor_06.jpg"
+      ]
+     }
+    ]
+   },
+   "how": "Reads each text line (OCR on images, live text on PDFs), the colour of its letters and of the ground behind it, and checks the pairing, for each of the 2 named texts; all must pass."
+  },
+  {
+   "check_id": "PHOTO-28/studio-launch/H080",
+   "output_id": "studio-launch",
+   "rule_id": "R076",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "If an instructor cut-out appears on “Studio launch-page composition” (studio-launch.png), it sits on a solid Warm Off White #F4F0E8 or Sage #9CA98F ground, not on a photograph.",
+   "assertion": {
+    "op": "v2_each_photo_pb",
+    "photos": [
+     "verda_instructor_01.jpg",
+     "verda_instructor_02.jpg",
+     "verda_instructor_03.jpg",
+     "verda_instructor_04.jpg",
+     "verda_instructor_05.jpg",
+     "verda_instructor_06.jpg"
+    ],
+    "known": [
+     "verda_studio_frame_01.jpg",
+     "verda_studio_frame_02.jpg"
+    ],
+    "then": {
+     "op": "v2_sitter_ground_pb",
+     "photo": "{photo}",
+     "hexes": [
+      "#F4F0E8",
+      "#9CA98F"
+     ]
+    }
+   },
+   "how": "Finds each supplied photo on the file, runs the check on each, and checks no other photograph is present."
+  },
+  {
+   "check_id": "PHOTO-28/booking-story/H072",
+   "output_id": "booking-story",
+   "rule_id": "R076",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "If an instructor cut-out appears on “Studio booking story” (booking-story.png), it sits on a solid Warm Off White #F4F0E8 or Sage #9CA98F ground, not on a photograph.",
+   "assertion": {
+    "op": "v2_each_photo_pb",
+    "photos": [
+     "verda_instructor_01.jpg",
+     "verda_instructor_02.jpg",
+     "verda_instructor_03.jpg",
+     "verda_instructor_04.jpg",
+     "verda_instructor_05.jpg",
+     "verda_instructor_06.jpg"
+    ],
+    "known": [
+     "verda_studio_frame_01.jpg",
+     "verda_studio_frame_02.jpg"
+    ],
+    "then": {
+     "op": "v2_sitter_ground_pb",
+     "photo": "{photo}",
+     "hexes": [
+      "#F4F0E8",
+      "#9CA98F"
+     ]
+    }
+   },
+   "how": "Finds each supplied photo on the file, runs the check on each, and checks no other photograph is present."
+  },
+  {
+   "check_id": "PHOTO-28/studio-launch/H081",
+   "output_id": "studio-launch",
+   "rule_id": "R077",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Soft Ink #33352E appears in the type on “Studio launch-page composition” (studio-launch.png).",
+   "assertion": {
+    "op": "v2_type_has_colour_pb",
+    "hexes": [
+     "#33352E"
+    ],
+    "photos": [
+     "verda_studio_frame_01.jpg",
+     "verda_studio_frame_02.jpg",
+     "verda_instructor_01.jpg",
+     "verda_instructor_02.jpg",
+     "verda_instructor_03.jpg",
+     "verda_instructor_04.jpg",
+     "verda_instructor_05.jpg",
+     "verda_instructor_06.jpg"
+    ]
+   },
+   "how": "Reads the colour of each text line's letters and looks for one in the colour."
+  },
+  {
+   "check_id": "PHOTO-28/class-feed/H074",
+   "output_id": "class-feed",
+   "rule_id": "R077",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Soft Ink #33352E appears in the type on “Class announcement” (class-feed.png).",
+   "assertion": {
+    "op": "v2_type_has_colour_pb",
+    "hexes": [
+     "#33352E"
+    ],
+    "photos": [
+     "verda_studio_frame_01.jpg",
+     "verda_studio_frame_02.jpg",
+     "verda_instructor_01.jpg",
+     "verda_instructor_02.jpg",
+     "verda_instructor_03.jpg",
+     "verda_instructor_04.jpg",
+     "verda_instructor_05.jpg",
+     "verda_instructor_06.jpg"
+    ]
+   },
+   "how": "Reads the colour of each text line's letters and looks for one in the colour."
+  },
+  {
+   "check_id": "PHOTO-28/booking-story/H073",
+   "output_id": "booking-story",
+   "rule_id": "R077",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Soft Ink #33352E appears in the type on “Studio booking story” (booking-story.png).",
+   "assertion": {
+    "op": "v2_type_has_colour_pb",
+    "hexes": [
+     "#33352E"
+    ],
+    "photos": [
+     "verda_studio_frame_01.jpg",
+     "verda_studio_frame_02.jpg",
+     "verda_instructor_01.jpg",
+     "verda_instructor_02.jpg",
+     "verda_instructor_03.jpg",
+     "verda_instructor_04.jpg",
+     "verda_instructor_05.jpg",
+     "verda_instructor_06.jpg"
+    ]
+   },
+   "how": "Reads the colour of each text line's letters and looks for one in the colour."
+  },
+  {
+   "check_id": "PHOTO-28/studio-launch/H093",
+   "output_id": "studio-launch",
+   "rule_id": "R078",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "On Sage in studio-launch.png, the wordmark ink is #222724, Soft Ink #33352E or Warm Off White #F4F0E8.",
+   "assertion": {
+    "op": "v2_all_of",
+    "checks": [
+     {
+      "op": "v2_type_ink_pb",
+      "select": [
+       {
+        "whole": [
+         "Verda"
+        ]
+       }
+      ],
+      "colors": [
+       "#222724",
+       "#33352E",
+       "#F4F0E8"
+      ],
+      "grounds": [],
+      "optional": false,
+      "photos": [
+       "verda_studio_frame_01.jpg",
+       "verda_studio_frame_02.jpg",
+       "verda_instructor_01.jpg",
+       "verda_instructor_02.jpg",
+       "verda_instructor_03.jpg",
+       "verda_instructor_04.jpg",
+       "verda_instructor_05.jpg",
+       "verda_instructor_06.jpg"
+      ]
+     },
+     {
+      "op": "v2_type_ink_pb",
+      "select": [
+       {
+        "whole": [
+         "Verda"
+        ]
+       }
+      ],
+      "colors": [
+       "#222724",
+       "#33352E",
+       "#F4F0E8"
+      ],
+      "grounds": [
+       "#9CA98F"
+      ],
+      "photos": [
+       "verda_studio_frame_01.jpg",
+       "verda_studio_frame_02.jpg",
+       "verda_instructor_01.jpg",
+       "verda_instructor_02.jpg",
+       "verda_instructor_03.jpg",
+       "verda_instructor_04.jpg",
+       "verda_instructor_05.jpg",
+       "verda_instructor_06.jpg"
+      ]
+     }
+    ]
+   },
+   "how": "Reads each text line (OCR on images, live text on PDFs), the colour of its letters and of the ground behind it, and checks the pairing, for each of the 2 named texts; all must pass."
+  },
+  {
+   "check_id": "PHOTO-28/class-feed/H086",
+   "output_id": "class-feed",
+   "rule_id": "R078",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "On Sage in class-feed.png, the wordmark ink is #222724, Soft Ink #33352E or Warm Off White #F4F0E8.",
+   "assertion": {
+    "op": "v2_all_of",
+    "checks": [
+     {
+      "op": "v2_type_ink_pb",
+      "select": [
+       {
+        "whole": [
+         "Verda"
+        ]
+       }
+      ],
+      "colors": [
+       "#222724",
+       "#33352E",
+       "#F4F0E8"
+      ],
+      "grounds": [],
+      "optional": false,
+      "photos": [
+       "verda_studio_frame_01.jpg",
+       "verda_studio_frame_02.jpg",
+       "verda_instructor_01.jpg",
+       "verda_instructor_02.jpg",
+       "verda_instructor_03.jpg",
+       "verda_instructor_04.jpg",
+       "verda_instructor_05.jpg",
+       "verda_instructor_06.jpg"
+      ]
+     },
+     {
+      "op": "v2_type_ink_pb",
+      "select": [
+       {
+        "whole": [
+         "Verda"
+        ]
+       }
+      ],
+      "colors": [
+       "#222724",
+       "#33352E",
+       "#F4F0E8"
+      ],
+      "grounds": [
+       "#9CA98F"
+      ],
+      "photos": [
+       "verda_studio_frame_01.jpg",
+       "verda_studio_frame_02.jpg",
+       "verda_instructor_01.jpg",
+       "verda_instructor_02.jpg",
+       "verda_instructor_03.jpg",
+       "verda_instructor_04.jpg",
+       "verda_instructor_05.jpg",
+       "verda_instructor_06.jpg"
+      ]
+     }
+    ]
+   },
+   "how": "Reads each text line (OCR on images, live text on PDFs), the colour of its letters and of the ground behind it, and checks the pairing, for each of the 2 named texts; all must pass."
+  },
+  {
+   "check_id": "PHOTO-28/booking-story/H085",
+   "output_id": "booking-story",
+   "rule_id": "R078",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "On Sage in booking-story.png, the wordmark ink is #222724, Soft Ink #33352E or Warm Off White #F4F0E8.",
+   "assertion": {
+    "op": "v2_all_of",
+    "checks": [
+     {
+      "op": "v2_type_ink_pb",
+      "select": [
+       {
+        "whole": [
+         "Verda"
+        ]
+       }
+      ],
+      "colors": [
+       "#222724",
+       "#33352E",
+       "#F4F0E8"
+      ],
+      "grounds": [],
+      "optional": false,
+      "photos": [
+       "verda_studio_frame_01.jpg",
+       "verda_studio_frame_02.jpg",
+       "verda_instructor_01.jpg",
+       "verda_instructor_02.jpg",
+       "verda_instructor_03.jpg",
+       "verda_instructor_04.jpg",
+       "verda_instructor_05.jpg",
+       "verda_instructor_06.jpg"
+      ]
+     },
+     {
+      "op": "v2_type_ink_pb",
+      "select": [
+       {
+        "whole": [
+         "Verda"
+        ]
+       }
+      ],
+      "colors": [
+       "#222724",
+       "#33352E",
+       "#F4F0E8"
+      ],
+      "grounds": [
+       "#9CA98F"
+      ],
+      "photos": [
+       "verda_studio_frame_01.jpg",
+       "verda_studio_frame_02.jpg",
+       "verda_instructor_01.jpg",
+       "verda_instructor_02.jpg",
+       "verda_instructor_03.jpg",
+       "verda_instructor_04.jpg",
+       "verda_instructor_05.jpg",
+       "verda_instructor_06.jpg"
+      ]
+     }
+    ]
+   },
+   "how": "Reads each text line (OCR on images, live text on PDFs), the colour of its letters and of the ground behind it, and checks the pairing, for each of the 2 named texts; all must pass."
+  },
+  {
+   "check_id": "PHOTO-28/studio-launch/H031",
+   "output_id": "studio-launch",
+   "rule_id": "R079",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The studio wordmark's visible letterforms on “Studio launch-page composition” (studio-launch.png) are no more than 34 px tall.",
+   "assertion": {
+    "op": "v2_wordmark_pb",
+    "whole": [
+     "Verda"
+    ],
+    "asset": "verda_wordmark_transparent.png",
+    "measure": "height",
+    "photos": [
+     "verda_studio_frame_01.jpg",
+     "verda_studio_frame_02.jpg",
+     "verda_instructor_01.jpg",
+     "verda_instructor_02.jpg",
+     "verda_instructor_03.jpg",
+     "verda_instructor_04.jpg",
+     "verda_instructor_05.jpg",
+     "verda_instructor_06.jpg"
+    ],
+    "max_px": 34
+   },
+   "how": "Finds the wordmark, splits its letters from the ground and measures their height, proportions, spacing, counters and edges."
+  },
+  {
+   "check_id": "PHOTO-28/class-feed/H032",
+   "output_id": "class-feed",
+   "rule_id": "R079",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The studio wordmark's visible letterforms on “Class announcement” (class-feed.png) are no more than 34 px tall.",
+   "assertion": {
+    "op": "v2_wordmark_pb",
+    "whole": [
+     "Verda"
+    ],
+    "asset": "verda_wordmark_transparent.png",
+    "measure": "height",
+    "photos": [
+     "verda_studio_frame_01.jpg",
+     "verda_studio_frame_02.jpg",
+     "verda_instructor_01.jpg",
+     "verda_instructor_02.jpg",
+     "verda_instructor_03.jpg",
+     "verda_instructor_04.jpg",
+     "verda_instructor_05.jpg",
+     "verda_instructor_06.jpg"
+    ],
+    "max_px": 34
+   },
+   "how": "Finds the wordmark, splits its letters from the ground and measures their height, proportions, spacing, counters and edges."
+  },
+  {
+   "check_id": "PHOTO-28/booking-story/H029",
+   "output_id": "booking-story",
+   "rule_id": "R079",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The studio wordmark's visible letterforms on “Studio booking story” (booking-story.png) are no more than 34 px tall.",
+   "assertion": {
+    "op": "v2_wordmark_pb",
+    "whole": [
+     "Verda"
+    ],
+    "asset": "verda_wordmark_transparent.png",
+    "measure": "height",
+    "photos": [
+     "verda_studio_frame_01.jpg",
+     "verda_studio_frame_02.jpg",
+     "verda_instructor_01.jpg",
+     "verda_instructor_02.jpg",
+     "verda_instructor_03.jpg",
+     "verda_instructor_04.jpg",
+     "verda_instructor_05.jpg",
+     "verda_instructor_06.jpg"
+    ],
+    "max_px": 34
+   },
+   "how": "Finds the wordmark, splits its letters from the ground and measures their height, proportions, spacing, counters and edges."
+  },
+  {
+   "check_id": "PHOTO-28/class-feed/H038",
+   "output_id": "class-feed",
+   "rule_id": "R080",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The headline on “Class announcement” (class-feed.png) is set in Archivo Regular, not bold, condensed or a serif.",
+   "assertion": {
+    "op": "v2_typeface_raster",
+    "fonts": [
+     [
+      "Archivo",
+      [
+       "Regular"
+      ]
+     ]
+    ],
+    "roles": [
+     "main"
+    ],
+    "except_whole": [
+     "Verda"
+    ]
+   },
+   "how": "Reads each named line by OCR, renders its own text in every brand font and weight and in common stand-in fonts, and compares the letter shapes and stroke thickness with the image; only a clear best match counts."
+  },
+  {
+   "check_id": "PHOTO-28/booking-story/H036",
+   "output_id": "booking-story",
+   "rule_id": "R080",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The headline on “Studio booking story” (booking-story.png) is set in Archivo Regular, not bold, condensed or a serif.",
+   "assertion": {
+    "op": "v2_typeface_raster",
+    "fonts": [
+     [
+      "Archivo",
+      [
+       "Regular"
+      ]
+     ]
+    ],
+    "roles": [
+     "main"
+    ],
+    "except_whole": [
+     "Verda"
+    ]
+   },
+   "how": "Reads each named line by OCR, renders its own text in every brand font and weight and in common stand-in fonts, and compares the letter shapes and stroke thickness with the image; only a clear best match counts."
+  },
+  {
+   "check_id": "PHOTO-28/studio-launch/H039",
+   "output_id": "studio-launch",
+   "rule_id": "R081",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Any body text on “Studio launch-page composition” (studio-launch.png) is set in Inter Regular, not a serif and not a bolder weight.",
+   "assertion": {
+    "op": "v2_typeface_raster",
+    "fonts": [
+     [
+      "Inter",
+      [
+       "Regular"
+      ]
+     ]
+    ],
+    "roles": [
+     "body"
+    ],
+    "except_whole": [
+     "Verda"
+    ],
+    "optional": true
+   },
+   "how": "Reads each named line by OCR, renders its own text in every brand font and weight and in common stand-in fonts, and compares the letter shapes and stroke thickness with the image; only a clear best match counts."
+  },
+  {
+   "check_id": "PHOTO-28/class-feed/H039",
+   "output_id": "class-feed",
+   "rule_id": "R081",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Any body text on “Class announcement” (class-feed.png) is set in Inter Regular, not a serif and not a bolder weight.",
+   "assertion": {
+    "op": "v2_typeface_raster",
+    "fonts": [
+     [
+      "Inter",
+      [
+       "Regular"
+      ]
+     ]
+    ],
+    "roles": [
+     "body"
+    ],
+    "except_whole": [
+     "Verda"
+    ],
+    "optional": true
+   },
+   "how": "Reads each named line by OCR, renders its own text in every brand font and weight and in common stand-in fonts, and compares the letter shapes and stroke thickness with the image; only a clear best match counts."
+  },
+  {
+   "check_id": "PHOTO-28/booking-story/H037",
+   "output_id": "booking-story",
+   "rule_id": "R081",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Any body text on “Studio booking story” (booking-story.png) is set in Inter Regular, not a serif and not a bolder weight.",
+   "assertion": {
+    "op": "v2_typeface_raster",
+    "fonts": [
+     [
+      "Inter",
+      [
+       "Regular"
+      ]
+     ]
+    ],
+    "roles": [
+     "body"
+    ],
+    "except_whole": [
+     "Verda"
+    ],
+    "optional": true
+   },
+   "how": "Reads each named line by OCR, renders its own text in every brand font and weight and in common stand-in fonts, and compares the letter shapes and stroke thickness with the image; only a clear best match counts."
+  },
+  {
+   "check_id": "PHOTO-28/class-feed/H040",
+   "output_id": "class-feed",
+   "rule_id": "R082",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The class price, the validity and every other fine-print line on “Class announcement” (class-feed.png) are set in Inter Medium, not Regular.",
+   "assertion": {
+    "op": "v2_typeface_raster",
+    "fonts": [
+     [
+      "Inter",
+      [
+       "Medium"
+      ]
+     ]
+    ],
+    "patterns": [
+     "[$€£]\\s?\\d|\\b(?:EUR|USD|GBP)\\s?\\d|\\d\\s?(?:EUR|€)",
+     "\\bvalid\\b",
+     "\\bthrough\\b",
+     "\\buntil\\b",
+     "\\bexpires?\\b"
+    ],
+    "roles": [
+     "fine"
+    ],
+    "except_whole": [
+     "Verda"
+    ]
+   },
+   "how": "Reads each named line by OCR, renders its own text in every brand font and weight and in common stand-in fonts, and compares the letter shapes and stroke thickness with the image; only a clear best match counts."
+  },
+  {
+   "check_id": "PHOTO-28/studio-launch/H041",
+   "output_id": "studio-launch",
+   "rule_id": "R083",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Every line of designed type on “Studio launch-page composition” (studio-launch.png), labels and buttons included, is Archivo Regular, Inter Regular or Inter Medium; only the wordmark drawing differs.",
+   "assertion": {
+    "op": "v2_typeface_raster",
+    "fonts": [
+     [
+      "Archivo",
+      [
+       "Regular"
+      ]
+     ],
+     [
+      "Inter",
+      [
+       "Regular",
+       "Medium"
+      ]
+     ]
+    ],
+    "all_text": true,
+    "except_whole": [
+     "Verda"
+    ]
+   },
+   "how": "Reads each named line by OCR, renders its own text in every brand font and weight and in common stand-in fonts, and compares the letter shapes and stroke thickness with the image; only a clear best match counts."
+  },
+  {
+   "check_id": "PHOTO-28/class-feed/H041",
+   "output_id": "class-feed",
+   "rule_id": "R083",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Every line of designed type on “Class announcement” (class-feed.png), labels and buttons included, is Archivo Regular, Inter Regular or Inter Medium; only the wordmark drawing differs.",
+   "assertion": {
+    "op": "v2_typeface_raster",
+    "fonts": [
+     [
+      "Archivo",
+      [
+       "Regular"
+      ]
+     ],
+     [
+      "Inter",
+      [
+       "Regular",
+       "Medium"
+      ]
+     ]
+    ],
+    "all_text": true,
+    "except_whole": [
+     "Verda"
+    ]
+   },
+   "how": "Reads each named line by OCR, renders its own text in every brand font and weight and in common stand-in fonts, and compares the letter shapes and stroke thickness with the image; only a clear best match counts."
+  },
+  {
+   "check_id": "PHOTO-28/booking-story/H039",
+   "output_id": "booking-story",
+   "rule_id": "R083",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Every line of designed type on “Studio booking story” (booking-story.png), labels and buttons included, is Archivo Regular, Inter Regular or Inter Medium; only the wordmark drawing differs.",
+   "assertion": {
+    "op": "v2_typeface_raster",
+    "fonts": [
+     [
+      "Archivo",
+      [
+       "Regular"
+      ]
+     ],
+     [
+      "Inter",
+      [
+       "Regular",
+       "Medium"
+      ]
+     ]
+    ],
+    "all_text": true,
+    "except_whole": [
+     "Verda"
+    ]
+   },
+   "how": "Reads each named line by OCR, renders its own text in every brand font and weight and in common stand-in fonts, and compares the letter shapes and stroke thickness with the image; only a clear best match counts."
+  },
+  {
+   "check_id": "PHOTO-28/studio-launch/H042",
+   "output_id": "studio-launch",
+   "rule_id": "R084",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "No line of body text on “Studio launch-page composition” (studio-launch.png) runs longer than 65 characters.",
+   "assertion": {
+    "op": "v2_line_chars_pb",
+    "max_chars": 65,
+    "roles": [
+     "body"
+    ],
+    "photos": [
+     "verda_studio_frame_01.jpg",
+     "verda_studio_frame_02.jpg",
+     "verda_instructor_01.jpg",
+     "verda_instructor_02.jpg",
+     "verda_instructor_03.jpg",
+     "verda_instructor_04.jpg",
+     "verda_instructor_05.jpg",
+     "verda_instructor_06.jpg"
+    ]
+   },
+   "how": "Reads each line of text and counts its characters."
+  },
+  {
+   "check_id": "PHOTO-28/class-feed/H042",
+   "output_id": "class-feed",
+   "rule_id": "R084",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "No line of body text on “Class announcement” (class-feed.png) runs longer than 65 characters.",
+   "assertion": {
+    "op": "v2_line_chars_pb",
+    "max_chars": 65,
+    "roles": [
+     "body"
+    ],
+    "photos": [
+     "verda_studio_frame_01.jpg",
+     "verda_studio_frame_02.jpg",
+     "verda_instructor_01.jpg",
+     "verda_instructor_02.jpg",
+     "verda_instructor_03.jpg",
+     "verda_instructor_04.jpg",
+     "verda_instructor_05.jpg",
+     "verda_instructor_06.jpg"
+    ]
+   },
+   "how": "Reads each line of text and counts its characters."
+  },
+  {
+   "check_id": "PHOTO-28/booking-story/H040",
+   "output_id": "booking-story",
+   "rule_id": "R084",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "No line of body text on “Studio booking story” (booking-story.png) runs longer than 65 characters.",
+   "assertion": {
+    "op": "v2_line_chars_pb",
+    "max_chars": 65,
+    "roles": [
+     "body"
+    ],
+    "photos": [
+     "verda_studio_frame_01.jpg",
+     "verda_studio_frame_02.jpg",
+     "verda_instructor_01.jpg",
+     "verda_instructor_02.jpg",
+     "verda_instructor_03.jpg",
+     "verda_instructor_04.jpg",
+     "verda_instructor_05.jpg",
+     "verda_instructor_06.jpg"
+    ]
+   },
+   "how": "Reads each line of text and counts its characters."
+  },
+  {
+   "check_id": "PHOTO-28/booking-story/H038",
+   "output_id": "booking-story",
+   "rule_id": "R085",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Any price or fine-print line on “Studio booking story” (booking-story.png) is set in Inter Medium, not Regular.",
+   "assertion": {
+    "op": "v2_typeface_raster",
+    "fonts": [
+     [
+      "Inter",
+      [
+       "Medium"
+      ]
+     ]
+    ],
+    "optional": true,
+    "patterns": [
+     "[$€£]\\s?\\d|\\b(?:EUR|USD|GBP)\\s?\\d|\\d\\s?(?:EUR|€)",
+     "\\bvalid\\b",
+     "\\bthrough\\b",
+     "\\buntil\\b",
+     "\\bexpires?\\b"
+    ],
+    "roles": [
+     "fine"
+    ],
+    "except_whole": [
+     "Verda"
+    ]
+   },
+   "how": "Reads each named line by OCR, renders its own text in every brand font and weight and in common stand-in fonts, and compares the letter shapes and stroke thickness with the image; only a clear best match counts."
+  },
+  {
+   "check_id": "PHOTO-28/studio-launch/H004",
+   "output_id": "studio-launch",
+   "rule_id": "R086",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The launch headline on “Studio launch-page composition” (studio-launch.png) is set in Archivo Regular, not bold, condensed or a serif.",
+   "assertion": {
+    "op": "v2_typeface_raster",
+    "fonts": [
+     [
+      "Archivo",
+      [
+       "Regular"
+      ]
+     ]
+    ],
+    "roles": [
+     "main"
+    ],
+    "except_whole": [
+     "Verda"
+    ]
+   },
+   "how": "Reads each named line by OCR, renders its own text in every brand font and weight and in common stand-in fonts, and compares the letter shapes and stroke thickness with the image; only a clear best match counts."
+  },
+  {
+   "check_id": "PHOTO-28/studio-launch/H040",
+   "output_id": "studio-launch",
+   "rule_id": "R087",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Every class price and every other fine-print line on “Studio launch-page composition” (studio-launch.png) is set in Inter Medium, not Regular.",
+   "assertion": {
+    "op": "v2_typeface_raster",
+    "fonts": [
+     [
+      "Inter",
+      [
+       "Medium"
+      ]
+     ]
+    ],
+    "patterns": [
+     "[$€£]\\s?\\d|\\b(?:EUR|USD|GBP)\\s?\\d|\\d\\s?(?:EUR|€)",
+     "\\bvalid\\b",
+     "\\bthrough\\b",
+     "\\buntil\\b",
+     "\\bexpires?\\b"
+    ],
+    "roles": [
+     "fine"
+    ],
+    "except_whole": [
+     "Verda"
+    ]
+   },
+   "how": "Reads each named line by OCR, renders its own text in every brand font and weight and in common stand-in fonts, and compares the letter shapes and stroke thickness with the image; only a clear best match counts."
+  },
+  {
+   "check_id": "PHOTO-28/studio-launch/H064",
+   "output_id": "studio-launch",
+   "rule_id": "R088",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "If a secondary heading appears on “Studio launch-page composition” (studio-launch.png), it is set in Archivo Regular, not bold, condensed or a serif.",
+   "assertion": {
+    "op": "v2_typeface_raster",
+    "fonts": [
+     [
+      "Archivo",
+      [
+       "Regular"
+      ]
+     ]
+    ],
+    "roles": [
+     "secondary"
+    ],
+    "except_whole": [
+     "Verda"
+    ],
+    "optional": true
+   },
+   "how": "Reads each named line by OCR, renders its own text in every brand font and weight and in common stand-in fonts, and compares the letter shapes and stroke thickness with the image; only a clear best match counts."
+  },
+  {
    "check_id": "PHOTO-28/studio-launch/H030",
    "output_id": "studio-launch",
    "rule_id": "R090",
@@ -1086,6 +5070,647 @@
     "max_lines": 1
    },
    "how": "Counts the lines the named text runs over."
+  },
+  {
+   "check_id": "PHOTO-28/studio-launch/H032",
+   "output_id": "studio-launch",
+   "rule_id": "R092",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The studio wordmark on “Studio launch-page composition” (studio-launch.png) sits above the launch headline as its own lockup, separate from it.",
+   "assertion": {
+    "op": "v2_above_role_pb",
+    "asset": "verda_wordmark_transparent.png",
+    "whole": [
+     "Verda"
+    ],
+    "role": "main",
+    "min_gap": 0.5,
+    "photos": [
+     "verda_studio_frame_01.jpg",
+     "verda_studio_frame_02.jpg",
+     "verda_instructor_01.jpg",
+     "verda_instructor_02.jpg",
+     "verda_instructor_03.jpg",
+     "verda_instructor_04.jpg",
+     "verda_instructor_05.jpg",
+     "verda_instructor_06.jpg"
+    ]
+   },
+   "how": "Finds the wordmark and the largest heading and compares their positions."
+  },
+  {
+   "check_id": "PHOTO-28/class-feed/H065",
+   "output_id": "class-feed",
+   "rule_id": "R095",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The studio wordmark on “Class announcement” (class-feed.png) sits above the headline.",
+   "assertion": {
+    "op": "v2_above_role_pb",
+    "asset": "verda_wordmark_transparent.png",
+    "whole": [
+     "Verda"
+    ],
+    "role": "main",
+    "photos": [
+     "verda_studio_frame_01.jpg",
+     "verda_studio_frame_02.jpg",
+     "verda_instructor_01.jpg",
+     "verda_instructor_02.jpg",
+     "verda_instructor_03.jpg",
+     "verda_instructor_04.jpg",
+     "verda_instructor_05.jpg",
+     "verda_instructor_06.jpg"
+    ]
+   },
+   "how": "Finds the wordmark and the largest heading and compares their positions."
+  },
+  {
+   "check_id": "PHOTO-28/booking-story/H063",
+   "output_id": "booking-story",
+   "rule_id": "R095",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The studio wordmark on “Studio booking story” (booking-story.png) sits above the headline.",
+   "assertion": {
+    "op": "v2_above_role_pb",
+    "asset": "verda_wordmark_transparent.png",
+    "whole": [
+     "Verda"
+    ],
+    "role": "main",
+    "photos": [
+     "verda_studio_frame_01.jpg",
+     "verda_studio_frame_02.jpg",
+     "verda_instructor_01.jpg",
+     "verda_instructor_02.jpg",
+     "verda_instructor_03.jpg",
+     "verda_instructor_04.jpg",
+     "verda_instructor_05.jpg",
+     "verda_instructor_06.jpg"
+    ]
+   },
+   "how": "Finds the wordmark and the largest heading and compares their positions."
+  },
+  {
+   "check_id": "PHOTO-28/studio-launch/H069",
+   "output_id": "studio-launch",
+   "rule_id": "R096",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The copy on “Studio launch-page composition” (studio-launch.png) has no exclamation mark.",
+   "assertion": {
+    "op": "v2_text_pb",
+    "forbidden": [
+     "!"
+    ],
+    "photos": [
+     "verda_studio_frame_01.jpg",
+     "verda_studio_frame_02.jpg",
+     "verda_instructor_01.jpg",
+     "verda_instructor_02.jpg",
+     "verda_instructor_03.jpg",
+     "verda_instructor_04.jpg",
+     "verda_instructor_05.jpg",
+     "verda_instructor_06.jpg"
+    ]
+   },
+   "how": "Reads the type by OCR or from the PDF, leaving out lettering inside the supplied photos, and looks for the wording."
+  },
+  {
+   "check_id": "PHOTO-28/class-feed/H066",
+   "output_id": "class-feed",
+   "rule_id": "R096",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The copy on “Class announcement” (class-feed.png) has no exclamation mark.",
+   "assertion": {
+    "op": "v2_text_pb",
+    "forbidden": [
+     "!"
+    ],
+    "photos": [
+     "verda_studio_frame_01.jpg",
+     "verda_studio_frame_02.jpg",
+     "verda_instructor_01.jpg",
+     "verda_instructor_02.jpg",
+     "verda_instructor_03.jpg",
+     "verda_instructor_04.jpg",
+     "verda_instructor_05.jpg",
+     "verda_instructor_06.jpg"
+    ]
+   },
+   "how": "Reads the type by OCR or from the PDF, leaving out lettering inside the supplied photos, and looks for the wording."
+  },
+  {
+   "check_id": "PHOTO-28/booking-story/H066",
+   "output_id": "booking-story",
+   "rule_id": "R096",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The copy on “Studio booking story” (booking-story.png) has no exclamation mark.",
+   "assertion": {
+    "op": "v2_text_pb",
+    "forbidden": [
+     "!"
+    ],
+    "photos": [
+     "verda_studio_frame_01.jpg",
+     "verda_studio_frame_02.jpg",
+     "verda_instructor_01.jpg",
+     "verda_instructor_02.jpg",
+     "verda_instructor_03.jpg",
+     "verda_instructor_04.jpg",
+     "verda_instructor_05.jpg",
+     "verda_instructor_06.jpg"
+    ]
+   },
+   "how": "Reads the type by OCR or from the PDF, leaving out lettering inside the supplied photos, and looks for the wording."
+  },
+  {
+   "check_id": "PHOTO-28/studio-launch/H092",
+   "output_id": "studio-launch",
+   "rule_id": "R097",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The gaps between the letters of the studio wordmark on “Studio launch-page composition” (studio-launch.png) match verda_wordmark_transparent.png, with no letters moved closer or further apart.",
+   "assertion": {
+    "op": "v2_wordmark_pb",
+    "whole": [
+     "Verda"
+    ],
+    "asset": "verda_wordmark_transparent.png",
+    "measure": "spacing",
+    "photos": [
+     "verda_studio_frame_01.jpg",
+     "verda_studio_frame_02.jpg",
+     "verda_instructor_01.jpg",
+     "verda_instructor_02.jpg",
+     "verda_instructor_03.jpg",
+     "verda_instructor_04.jpg",
+     "verda_instructor_05.jpg",
+     "verda_instructor_06.jpg"
+    ]
+   },
+   "how": "Finds the wordmark, splits its letters from the ground and measures their height, proportions, spacing, counters and edges."
+  },
+  {
+   "check_id": "PHOTO-28/class-feed/H085",
+   "output_id": "class-feed",
+   "rule_id": "R097",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The gaps between the letters of the studio wordmark on “Class announcement” (class-feed.png) match verda_wordmark_transparent.png, with no letters moved closer or further apart.",
+   "assertion": {
+    "op": "v2_wordmark_pb",
+    "whole": [
+     "Verda"
+    ],
+    "asset": "verda_wordmark_transparent.png",
+    "measure": "spacing",
+    "photos": [
+     "verda_studio_frame_01.jpg",
+     "verda_studio_frame_02.jpg",
+     "verda_instructor_01.jpg",
+     "verda_instructor_02.jpg",
+     "verda_instructor_03.jpg",
+     "verda_instructor_04.jpg",
+     "verda_instructor_05.jpg",
+     "verda_instructor_06.jpg"
+    ]
+   },
+   "how": "Finds the wordmark, splits its letters from the ground and measures their height, proportions, spacing, counters and edges."
+  },
+  {
+   "check_id": "PHOTO-28/booking-story/H084",
+   "output_id": "booking-story",
+   "rule_id": "R097",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The gaps between the letters of the studio wordmark on “Studio booking story” (booking-story.png) match verda_wordmark_transparent.png, with no letters moved closer or further apart.",
+   "assertion": {
+    "op": "v2_wordmark_pb",
+    "whole": [
+     "Verda"
+    ],
+    "asset": "verda_wordmark_transparent.png",
+    "measure": "spacing",
+    "photos": [
+     "verda_studio_frame_01.jpg",
+     "verda_studio_frame_02.jpg",
+     "verda_instructor_01.jpg",
+     "verda_instructor_02.jpg",
+     "verda_instructor_03.jpg",
+     "verda_instructor_04.jpg",
+     "verda_instructor_05.jpg",
+     "verda_instructor_06.jpg"
+    ]
+   },
+   "how": "Finds the wordmark, splits its letters from the ground and measures their height, proportions, spacing, counters and edges."
+  },
+  {
+   "check_id": "PHOTO-28/studio-launch/H027",
+   "output_id": "studio-launch",
+   "rule_id": "R099",
+   "k_id": "K2_Q4",
+   "critical": false,
+   "check": "The studio wordmark on “Studio launch-page composition” (studio-launch.png) keeps the e, d and a counters of verda_wordmark_transparent.png open; none is filled in.",
+   "assertion": {
+    "op": "v2_wordmark_pb",
+    "whole": [
+     "Verda"
+    ],
+    "asset": "verda_wordmark_transparent.png",
+    "measure": "counters",
+    "photos": [
+     "verda_studio_frame_01.jpg",
+     "verda_studio_frame_02.jpg",
+     "verda_instructor_01.jpg",
+     "verda_instructor_02.jpg",
+     "verda_instructor_03.jpg",
+     "verda_instructor_04.jpg",
+     "verda_instructor_05.jpg",
+     "verda_instructor_06.jpg"
+    ]
+   },
+   "how": "Finds the wordmark, splits its letters from the ground and measures their height, proportions, spacing, counters and edges."
+  },
+  {
+   "check_id": "PHOTO-28/class-feed/H007",
+   "output_id": "class-feed",
+   "rule_id": "R099",
+   "k_id": "K2_Q4",
+   "critical": false,
+   "check": "The studio wordmark on “Class announcement” (class-feed.png) keeps the e, d and a counters of verda_wordmark_transparent.png open; none is filled in.",
+   "assertion": {
+    "op": "v2_wordmark_pb",
+    "whole": [
+     "Verda"
+    ],
+    "asset": "verda_wordmark_transparent.png",
+    "measure": "counters",
+    "photos": [
+     "verda_studio_frame_01.jpg",
+     "verda_studio_frame_02.jpg",
+     "verda_instructor_01.jpg",
+     "verda_instructor_02.jpg",
+     "verda_instructor_03.jpg",
+     "verda_instructor_04.jpg",
+     "verda_instructor_05.jpg",
+     "verda_instructor_06.jpg"
+    ]
+   },
+   "how": "Finds the wordmark, splits its letters from the ground and measures their height, proportions, spacing, counters and edges."
+  },
+  {
+   "check_id": "PHOTO-28/booking-story/H025",
+   "output_id": "booking-story",
+   "rule_id": "R099",
+   "k_id": "K2_Q4",
+   "critical": false,
+   "check": "The studio wordmark on “Studio booking story” (booking-story.png) keeps the e, d and a counters of verda_wordmark_transparent.png open; none is filled in.",
+   "assertion": {
+    "op": "v2_wordmark_pb",
+    "whole": [
+     "Verda"
+    ],
+    "asset": "verda_wordmark_transparent.png",
+    "measure": "counters",
+    "photos": [
+     "verda_studio_frame_01.jpg",
+     "verda_studio_frame_02.jpg",
+     "verda_instructor_01.jpg",
+     "verda_instructor_02.jpg",
+     "verda_instructor_03.jpg",
+     "verda_instructor_04.jpg",
+     "verda_instructor_05.jpg",
+     "verda_instructor_06.jpg"
+    ]
+   },
+   "how": "Finds the wordmark, splits its letters from the ground and measures their height, proportions, spacing, counters and edges."
+  },
+  {
+   "check_id": "PHOTO-28/studio-launch/H021",
+   "output_id": "studio-launch",
+   "rule_id": "R100",
+   "k_id": "K2_Q4",
+   "critical": false,
+   "check": "Wherever verda_studio_frame_01.jpg or verda_studio_frame_02.jpg appears on “Studio launch-page composition” (studio-launch.png), it keeps what the source frame shows of the room, with nothing generated, added or removed beyond a crop.",
+   "assertion": {
+    "op": "v2_photo_compare_pb",
+    "pass_if": [
+     [
+      "ncc_min",
+      ">=",
+      0.9
+     ]
+    ],
+    "fail_if": [],
+    "photos": [
+     "verda_studio_frame_01.jpg",
+     "verda_studio_frame_02.jpg"
+    ],
+    "region": "subject",
+    "absent": "pass",
+    "known": [
+     "verda_instructor_01.jpg",
+     "verda_instructor_02.jpg",
+     "verda_instructor_03.jpg",
+     "verda_instructor_04.jpg",
+     "verda_instructor_05.jpg",
+     "verda_instructor_06.jpg"
+    ]
+   },
+   "how": "Lays the supplied photo over the placed one and compares them tile by tile: colour, detail and correlation."
+  },
+  {
+   "check_id": "PHOTO-28/class-feed/H025",
+   "output_id": "class-feed",
+   "rule_id": "R100",
+   "k_id": "K2_Q4",
+   "critical": false,
+   "check": "Wherever verda_studio_frame_01.jpg or verda_studio_frame_02.jpg appears on “Class announcement” (class-feed.png), it keeps what the source frame shows of the room, with nothing generated, added or removed beyond a crop.",
+   "assertion": {
+    "op": "v2_photo_compare_pb",
+    "pass_if": [
+     [
+      "ncc_min",
+      ">=",
+      0.9
+     ]
+    ],
+    "fail_if": [],
+    "photos": [
+     "verda_studio_frame_01.jpg",
+     "verda_studio_frame_02.jpg"
+    ],
+    "region": "subject",
+    "absent": "pass",
+    "known": [
+     "verda_instructor_01.jpg",
+     "verda_instructor_02.jpg",
+     "verda_instructor_03.jpg",
+     "verda_instructor_04.jpg",
+     "verda_instructor_05.jpg",
+     "verda_instructor_06.jpg"
+    ]
+   },
+   "how": "Lays the supplied photo over the placed one and compares them tile by tile: colour, detail and correlation."
+  },
+  {
+   "check_id": "PHOTO-28/booking-story/H020",
+   "output_id": "booking-story",
+   "rule_id": "R100",
+   "k_id": "K2_Q4",
+   "critical": false,
+   "check": "Wherever verda_studio_frame_01.jpg or verda_studio_frame_02.jpg appears on “Studio booking story” (booking-story.png), it keeps what the source frame shows of the room, with nothing generated, added or removed beyond a crop.",
+   "assertion": {
+    "op": "v2_photo_compare_pb",
+    "pass_if": [
+     [
+      "ncc_min",
+      ">=",
+      0.9
+     ]
+    ],
+    "fail_if": [],
+    "photos": [
+     "verda_studio_frame_01.jpg",
+     "verda_studio_frame_02.jpg"
+    ],
+    "region": "subject",
+    "absent": "pass",
+    "known": [
+     "verda_instructor_01.jpg",
+     "verda_instructor_02.jpg",
+     "verda_instructor_03.jpg",
+     "verda_instructor_04.jpg",
+     "verda_instructor_05.jpg",
+     "verda_instructor_06.jpg"
+    ]
+   },
+   "how": "Lays the supplied photo over the placed one and compares them tile by tile: colour, detail and correlation."
+  },
+  {
+   "check_id": "PHOTO-28/studio-launch/H022",
+   "output_id": "studio-launch",
+   "rule_id": "R101",
+   "k_id": "K2_Q4",
+   "critical": false,
+   "check": "If verda_studio_frame_01.jpg is used on “Studio launch-page composition” (studio-launch.png), its blown-out front window shows no invented sky, street or scenery: it stays plain or is cropped out.",
+   "assertion": {
+    "op": "v2_window_flat_pb",
+    "photo": "verda_studio_frame_01.jpg",
+    "known": [
+     "verda_studio_frame_02.jpg",
+     "verda_instructor_01.jpg",
+     "verda_instructor_02.jpg",
+     "verda_instructor_03.jpg",
+     "verda_instructor_04.jpg",
+     "verda_instructor_05.jpg",
+     "verda_instructor_06.jpg"
+    ]
+   },
+   "how": "Lays the supplied photo over the placed one and checks its blown-out area is cropped away or still plain."
+  },
+  {
+   "check_id": "PHOTO-28/class-feed/H026",
+   "output_id": "class-feed",
+   "rule_id": "R101",
+   "k_id": "K2_Q4",
+   "critical": false,
+   "check": "If verda_studio_frame_01.jpg is used on “Class announcement” (class-feed.png), its blown-out front window shows no invented sky, street or scenery: it stays plain or is cropped out.",
+   "assertion": {
+    "op": "v2_window_flat_pb",
+    "photo": "verda_studio_frame_01.jpg",
+    "known": [
+     "verda_studio_frame_02.jpg",
+     "verda_instructor_01.jpg",
+     "verda_instructor_02.jpg",
+     "verda_instructor_03.jpg",
+     "verda_instructor_04.jpg",
+     "verda_instructor_05.jpg",
+     "verda_instructor_06.jpg"
+    ]
+   },
+   "how": "Lays the supplied photo over the placed one and checks its blown-out area is cropped away or still plain."
+  },
+  {
+   "check_id": "PHOTO-28/booking-story/H021",
+   "output_id": "booking-story",
+   "rule_id": "R101",
+   "k_id": "K2_Q4",
+   "critical": false,
+   "check": "If verda_studio_frame_01.jpg is used on “Studio booking story” (booking-story.png), its blown-out front window shows no invented sky, street or scenery: it stays plain or is cropped out.",
+   "assertion": {
+    "op": "v2_window_flat_pb",
+    "photo": "verda_studio_frame_01.jpg",
+    "known": [
+     "verda_studio_frame_02.jpg",
+     "verda_instructor_01.jpg",
+     "verda_instructor_02.jpg",
+     "verda_instructor_03.jpg",
+     "verda_instructor_04.jpg",
+     "verda_instructor_05.jpg",
+     "verda_instructor_06.jpg"
+    ]
+   },
+   "how": "Lays the supplied photo over the placed one and checks its blown-out area is cropped away or still plain."
+  },
+  {
+   "check_id": "PHOTO-28/studio-launch/H023",
+   "output_id": "studio-launch",
+   "rule_id": "R102",
+   "k_id": "K2_Q4",
+   "critical": false,
+   "check": "If a supplied instructor portrait (verda_instructor_01.jpg to verda_instructor_06.jpg) appears on “Studio launch-page composition” (studio-launch.png), the face keeps that portrait's features, with nothing reshaped or regenerated.",
+   "assertion": {
+    "op": "v2_each_photo_pb",
+    "photos": [
+     "verda_studio_frame_01.jpg",
+     "verda_studio_frame_02.jpg"
+    ],
+    "then": null
+   },
+   "how": "Finds each supplied photo on the file, runs the check on each, and checks no other photograph is present."
+  },
+  {
+   "check_id": "PHOTO-28/booking-story/H022",
+   "output_id": "booking-story",
+   "rule_id": "R102",
+   "k_id": "K2_Q4",
+   "critical": false,
+   "check": "If a supplied instructor portrait (verda_instructor_01.jpg to verda_instructor_06.jpg) appears on “Studio booking story” (booking-story.png), the face keeps that portrait's features, with nothing reshaped or regenerated.",
+   "assertion": {
+    "op": "v2_each_photo_pb",
+    "photos": [
+     "verda_studio_frame_01.jpg",
+     "verda_studio_frame_02.jpg"
+    ],
+    "then": null
+   },
+   "how": "Finds each supplied photo on the file, runs the check on each, and checks no other photograph is present."
+  },
+  {
+   "check_id": "PHOTO-28/studio-launch/H062",
+   "output_id": "studio-launch",
+   "rule_id": "R103",
+   "k_id": "K2_Q4",
+   "critical": false,
+   "check": "Wherever verda_studio_frame_01.jpg or verda_studio_frame_02.jpg appears on “Studio launch-page composition” (studio-launch.png), the room is visibly brighter than the dusky source frame, not left dark.",
+   "assertion": {
+    "op": "v2_photo_compare_pb",
+    "pass_if": [
+     [
+      "dL",
+      ">=",
+      5
+     ]
+    ],
+    "fail_if": [
+     [
+      "dL",
+      "<",
+      2
+     ]
+    ],
+    "photos": [
+     "verda_studio_frame_01.jpg",
+     "verda_studio_frame_02.jpg"
+    ],
+    "region": "own",
+    "absent": "pass",
+    "known": [
+     "verda_instructor_01.jpg",
+     "verda_instructor_02.jpg",
+     "verda_instructor_03.jpg",
+     "verda_instructor_04.jpg",
+     "verda_instructor_05.jpg",
+     "verda_instructor_06.jpg"
+    ]
+   },
+   "how": "Lays the supplied photo over the placed one and compares them tile by tile: colour, detail and correlation."
+  },
+  {
+   "check_id": "PHOTO-28/class-feed/H061",
+   "output_id": "class-feed",
+   "rule_id": "R103",
+   "k_id": "K2_Q4",
+   "critical": false,
+   "check": "Wherever verda_studio_frame_01.jpg or verda_studio_frame_02.jpg appears on “Class announcement” (class-feed.png), the room is visibly brighter than the dusky source frame, not left dark.",
+   "assertion": {
+    "op": "v2_photo_compare_pb",
+    "pass_if": [
+     [
+      "dL",
+      ">=",
+      5
+     ]
+    ],
+    "fail_if": [
+     [
+      "dL",
+      "<",
+      2
+     ]
+    ],
+    "photos": [
+     "verda_studio_frame_01.jpg",
+     "verda_studio_frame_02.jpg"
+    ],
+    "region": "own",
+    "absent": "pass",
+    "known": [
+     "verda_instructor_01.jpg",
+     "verda_instructor_02.jpg",
+     "verda_instructor_03.jpg",
+     "verda_instructor_04.jpg",
+     "verda_instructor_05.jpg",
+     "verda_instructor_06.jpg"
+    ]
+   },
+   "how": "Lays the supplied photo over the placed one and compares them tile by tile: colour, detail and correlation."
+  },
+  {
+   "check_id": "PHOTO-28/booking-story/H059",
+   "output_id": "booking-story",
+   "rule_id": "R103",
+   "k_id": "K2_Q4",
+   "critical": false,
+   "check": "Wherever verda_studio_frame_01.jpg or verda_studio_frame_02.jpg appears on “Studio booking story” (booking-story.png), the room is visibly brighter than the dusky source frame, not left dark.",
+   "assertion": {
+    "op": "v2_photo_compare_pb",
+    "pass_if": [
+     [
+      "dL",
+      ">=",
+      5
+     ]
+    ],
+    "fail_if": [
+     [
+      "dL",
+      "<",
+      2
+     ]
+    ],
+    "photos": [
+     "verda_studio_frame_01.jpg",
+     "verda_studio_frame_02.jpg"
+    ],
+    "region": "own",
+    "absent": "pass",
+    "known": [
+     "verda_instructor_01.jpg",
+     "verda_instructor_02.jpg",
+     "verda_instructor_03.jpg",
+     "verda_instructor_04.jpg",
+     "verda_instructor_05.jpg",
+     "verda_instructor_06.jpg"
+    ]
+   },
+   "how": "Lays the supplied photo over the placed one and compares them tile by tile: colour, detail and correlation."
   }
  ]
 }

@@ -40,10 +40,8 @@
     "1": "text"
    },
    "shared_reference": null,
-   "answered_by": "code",
-   "code_check": [
-    "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
-   ],
+   "answered_by": "person",
+   "code_check": [],
    "rows": [
     {
      "check_id": "MOTION-11/thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas/H003",
@@ -294,10 +292,8 @@
     ],
     "note": "staticfox_titles.txt: \"Members get the Sunday chaos stream and the bloopers nobody should see. Link in the description.\" The same file: \"this line HAS to be on the end card\"."
    },
-   "answered_by": "code",
-   "code_check": [
-    "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
-   ],
+   "answered_by": "person",
+   "code_check": [],
    "rows": [
     {
      "check_id": "MOTION-11/channel-animation/H002",
@@ -354,8 +350,10 @@
     ],
     "note": "staticfox_titles.txt: \"END CARD COPY:\" lists NEW ONE EVERY OTHER DAY, SUBSCRIBE OR DAVE WINS and @STATICFOX. Brief, pinned: Give the reveal some intent and land on a final frame we can actually use as an end card, with the members line on it complete and all three lines of the end card copy."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the end card (the last held frame) by OCR and looks for the line."
+   ],
    "rows": [
     {
      "check_id": "MOTION-11/channel-animation/H003",
@@ -449,8 +447,10 @@
     "assets": [],
     "note": "Brief, pinned: Give the reveal some intent and land on a final frame we can actually use as an end card, with the members line on it complete and all three lines of the end card copy. Group requirement: The final frame is a usable end card."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Compares the film's last frames at its own frame rate and measures how long it holds still."
+   ],
    "rows": [
     {
      "check_id": "MOTION-11/channel-animation/H005",
@@ -695,8 +695,10 @@
     ],
     "note": "Commission: animate the supplied mascot and channel typography, not a gameplay montage."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Searches the image, or every frame of the film, for the supplied file."
+   ],
    "rows": [
     {
      "check_id": "MOTION-11/channel-animation/H033",
@@ -753,8 +755,10 @@
     ],
     "note": "Required content: the handle @STATICFOX on the closing frame. staticfox_titles.txt END CARD COPY: @STATICFOX."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the end card (the last held frame) by OCR and looks for the line."
+   ],
    "rows": [
     {
      "check_id": "MOTION-11/channel-teaser-vertical/H037",
@@ -931,8 +935,10 @@
     ],
     "note": "Commission: hold a final end card containing all three END CARD COPY lines from staticfox_titles.txt."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the end card (the last held frame) by OCR and looks for the line."
+   ],
    "rows": [
     {
      "check_id": "MOTION-11/channel-animation/H038",
@@ -989,8 +995,10 @@
     ],
     "note": "Commission: hold a final end card containing all three END CARD COPY lines from staticfox_titles.txt."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the end card (the last held frame) by OCR and looks for the line."
+   ],
    "rows": [
     {
      "check_id": "MOTION-11/channel-animation/H039",
@@ -1113,10 +1121,8 @@
     ],
     "note": "Acceptance requirement: at 320 px display width, the title text has no clipped characters."
    },
-   "answered_by": "code",
-   "code_check": [
-    "Checks the named text is read in full inside the page or image (for a mark, its letters read as a line of their own)."
-   ],
+   "answered_by": "person",
+   "code_check": [],
    "rows": [
     {
      "check_id": "MOTION-11/thumbnail-we-broke-the-map/H032",
@@ -1235,10 +1241,8 @@
     ],
     "note": "Acceptance requirement: at 320 px display width, the title text has no clipped characters."
    },
-   "answered_by": "code",
-   "code_check": [
-    "Checks the named text is read in full inside the page or image (for a mark, its letters read as a line of their own)."
-   ],
+   "answered_by": "person",
+   "code_check": [],
    "rows": [
     {
      "check_id": "MOTION-11/thumbnail-everyone-off-the-platform/H001",
@@ -1308,8 +1312,10 @@
     "assets": [],
     "note": "Acceptance requirement: on the held title frame, the title text has no clipped characters. Inspect the delivered file at 100%."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the end card by OCR and checks no line touches the frame edge."
+   ],
    "rows": [
     {
      "check_id": "MOTION-11/channel-animation/H008",
@@ -1744,8 +1750,10 @@
     ],
     "note": "Brief, pinned: Cut it from at least four of the six captures, with the tagline and the upload line from the end card copy set on screen. Required content: shots from at least four of the six supplied captures."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Finds the footage in the film's frames and matches it to the supplied captures."
+   ],
    "rows": [
     {
      "check_id": "MOTION-11/channel-teaser/H002",
@@ -2352,8 +2360,10 @@
     ],
     "note": "Brief: Scrap comes off the supplied render, not redrawn, and not stretched. Brand: The mascot, Scrap the fox in a headset, was drawn two years ago and survives only as a flat shaded render on a dark panel, with no clean cutout."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Searches the image, or every frame of the film, for the supplied file."
+   ],
    "rows": [
     {
      "check_id": "MOTION-11/thumbnail-we-broke-the-map/H005",
@@ -2580,8 +2590,10 @@
     ],
     "note": "Brief: No invented footage, and no looping one capture to fill the length. The six supplied captures are staticfox_captures/staticfox_capture_01.mp4, staticfox_captures/staticfox_capture_02.mp4, staticfox_captures/staticfox_capture_03.mp4, staticfox_captures/staticfox_capture_04.mp4, staticfox_captures/staticfox_capture_05.mp4, staticfox_captures/staticfox_capture_06.mp4."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Finds the footage in the film's frames and matches it to the supplied captures."
+   ],
    "rows": [
     {
      "check_id": "MOTION-11/channel-teaser/H001",
@@ -2772,8 +2784,10 @@
     ],
     "note": "Brief: Scrap comes off the supplied render, not redrawn, and not stretched. Brand: The mascot, Scrap the fox in a headset, was drawn two years ago and survives only as a flat shaded render on a dark panel, with no clean cutout."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Searches the image, or every frame of the film, for the supplied file."
+   ],
    "rows": [
     {
      "check_id": "MOTION-11/channel-teaser/H012",
@@ -2988,8 +3002,10 @@
     ],
     "note": "Palette rules, photography: Capture frames keep their own corrected colour and are never recoloured or washed toward the palette; no capture is pushed toward Static Purple #7A2FF2 or any other palette hex. In staticfox_captures/staticfox_capture_06.mp4 the stone walls read brown."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Finds the capture frame the thumbnail is built on and compares the colours of the visible capture with it."
+   ],
    "rows": [
     {
      "check_id": "MOTION-11/thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi/H007",
@@ -3046,8 +3062,10 @@
     ],
     "note": "Brief: Scrap comes off the supplied render, not redrawn, and not stretched. Brand: The mascot, Scrap the fox in a headset, was drawn two years ago and survives only as a flat shaded render on a dark panel, with no clean cutout."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Finds the supplied picture and measures whether it was stretched."
+   ],
    "rows": [
     {
      "check_id": "MOTION-11/thumbnail-we-broke-the-map/H012",
@@ -3400,8 +3418,10 @@
     ],
     "note": "Palette rules, photography: Capture frames keep their own corrected colour and are never recoloured or washed toward the palette; no capture is pushed toward Static Purple #7A2FF2 or any other palette hex. In staticfox_captures/staticfox_capture_03.mp4 the kitchen walls read warm beige."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Finds the capture frame the thumbnail is built on and compares the colours of the visible capture with it."
+   ],
    "rows": [
     {
      "check_id": "MOTION-11/thumbnail-kitchen-gone/H001",
@@ -3458,8 +3478,10 @@
     ],
     "note": "Palette rules, photography: Capture frames keep their own corrected colour and are never recoloured or washed toward the palette; no capture is pushed toward Static Purple #7A2FF2 or any other palette hex. In staticfox_captures/staticfox_capture_05.mp4 the sky reads blue."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Finds the capture frame the thumbnail is built on and compares the colours of the visible capture with it."
+   ],
    "rows": [
     {
      "check_id": "MOTION-11/thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas/H001",
@@ -3516,8 +3538,10 @@
     ],
     "note": "Palette rules, photography: Capture frames keep their own corrected colour and are never recoloured or washed toward the palette; no capture is pushed toward Static Purple #7A2FF2 or any other palette hex. In staticfox_captures/staticfox_capture_01.mp4 the grass reads green."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Finds the capture frame the thumbnail is built on and compares the colours of the visible capture with it."
+   ],
    "rows": [
     {
      "check_id": "MOTION-11/thumbnail-we-broke-the-map/H001",
@@ -3690,8 +3714,10 @@
     ],
     "note": "Brief: Scrap comes off the supplied render, not redrawn, and not stretched. Brand: The mascot, Scrap the fox in a headset, was drawn two years ago and survives only as a flat shaded render on a dark panel, with no clean cutout."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Finds the supplied picture and measures whether it was stretched."
+   ],
    "rows": [
     {
      "check_id": "MOTION-11/channel-animation/H011",
@@ -4345,8 +4371,10 @@
     "assets": [],
     "note": "Brand type system rule: Every word in the title carries a hard black outline. Palette rules: the outline is Jet Black #101014; blur and translucency are banned, and a hard second stroke or offset shadow in a solid palette colour is allowed."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the title words by OCR and checks each letter's fill colour, or the outline colour round it."
+   ],
    "rows": [
     {
      "check_id": "MOTION-11/thumbnail-we-broke-the-map/H016",
@@ -4458,8 +4486,10 @@
     "assets": [],
     "note": "Palette rules, distribution: title words are filled Signal White, Acid Signal or Fox Orange, the colours that reach 4.5:1 against the Jet Black outline."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the title words by OCR and checks each letter's fill colour, or the outline colour round it."
+   ],
    "rows": [
     {
      "check_id": "MOTION-11/thumbnail-we-broke-the-map/H022",
@@ -4802,8 +4832,10 @@
     ],
     "note": "Palette rules: Fox Orange #FF5A1F is mandatory in the type, panels, shapes or background of every design, not only inside Scrap."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Looks for the colour as a flat area in the designed parts."
+   ],
    "rows": [
     {
      "check_id": "MOTION-11/thumbnail-we-broke-the-map/H025",
@@ -4958,8 +4990,10 @@
     ],
     "note": "Palette rules, distribution: Inter lines are Signal White, Acid Signal or Fox Orange on Jet Black; Signal White or Acid Signal on Static Purple; Jet Black or Static Purple on Signal White; Jet Black on Fox Orange, the pairs that reach 4.5:1."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads each text line by OCR, then the colour of its letters and of the ground round it."
+   ],
    "rows": [
     {
      "check_id": "MOTION-11/thumbnail-we-broke-the-map/H026",
@@ -5240,8 +5274,10 @@
     ],
     "note": "Palette rules, distribution: Inter lines are Signal White, Acid Signal or Fox Orange on Jet Black; Signal White or Acid Signal on Static Purple; Jet Black or Static Purple on Signal White; Jet Black on Fox Orange, the pairs that reach 4.5:1."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads each text line by OCR, then the colour of its letters and of the ground round it."
+   ],
    "rows": [
     {
      "check_id": "MOTION-11/thumbnail-we-broke-the-map/H027",
@@ -5522,8 +5558,10 @@
     ],
     "note": "Palette rules, distribution: Inter lines are Signal White, Acid Signal or Fox Orange on Jet Black; Signal White or Acid Signal on Static Purple; Jet Black or Static Purple on Signal White; Jet Black on Fox Orange, the pairs that reach 4.5:1."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads each text line by OCR, then the colour of its letters and of the ground round it."
+   ],
    "rows": [
     {
      "check_id": "MOTION-11/thumbnail-we-broke-the-map/H028",
@@ -5804,8 +5842,10 @@
     ],
     "note": "Palette rules, distribution: Inter lines are Signal White, Acid Signal or Fox Orange on Jet Black; Signal White or Acid Signal on Static Purple; Jet Black or Static Purple on Signal White; Jet Black on Fox Orange, the pairs that reach 4.5:1."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads each text line by OCR, then the colour of its letters and of the ground round it."
+   ],
    "rows": [
     {
      "check_id": "MOTION-11/thumbnail-we-broke-the-map/H029",
@@ -5995,8 +6035,10 @@
     "assets": [],
     "note": "Palette rules, distribution: Acid Signal is an accent, never a ground or panel."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Finds flat areas in the colour and checks none is a ground or a panel carrying text."
+   ],
    "rows": [
     {
      "check_id": "MOTION-11/thumbnail-we-broke-the-map/H030",
@@ -6108,8 +6150,10 @@
     "assets": [],
     "note": "Brand identity, palette_rules.distribution: Acid Signal is an accent; leaving title-word fills aside, it covers no more than 10% of the designed, non-footage area."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Measures the share of the designed area in the named colours."
+   ],
    "rows": [
     {
      "check_id": "MOTION-11/thumbnail-we-broke-the-map/H031",
@@ -6269,8 +6313,10 @@
     "assets": [],
     "note": "Palette rules, distribution: title words are filled Signal White, Acid Signal or Fox Orange, the colours that reach 4.5:1 against the Jet Black outline."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the title words by OCR and checks each letter's fill colour, or the outline colour round it."
+   ],
    "rows": [
     {
      "check_id": "MOTION-11/channel-animation/H023",
@@ -6317,8 +6363,10 @@
     "assets": [],
     "note": "Brand palette, five hexes. Palette rules, forbidden: no colour outside them for type, outlines, panels, shapes, icons or backgrounds. Palette rules, opacity: every palette colour solid at 100%, with no partial transparency, blur, gradient or blend mode, and no scrim or colour wash over a capture frame; a hard, unblurred offset shadow or second stroke is allowed. In the films, held frames and the final end card are judged, not elements while they move."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads every flat colour outside photographs, transparent parts and capture footage, and checks each is a palette colour."
+   ],
    "rows": [
     {
      "check_id": "MOTION-11/channel-animation/H024",
@@ -6370,8 +6418,10 @@
     ],
     "note": "Palette rules: Fox Orange #FF5A1F is mandatory in the type, panels, shapes or background of every design, not only inside Scrap."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Looks for the colour as a flat area in the designed parts."
+   ],
    "rows": [
     {
      "check_id": "MOTION-11/channel-animation/H026",
@@ -6436,8 +6486,10 @@
     ],
     "note": "Palette rules, distribution: Inter lines are Signal White, Acid Signal or Fox Orange on Jet Black; Signal White or Acid Signal on Static Purple; Jet Black or Static Purple on Signal White; Jet Black on Fox Orange, the pairs that reach 4.5:1."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads each text line by OCR, then the colour of its letters and of the ground round it."
+   ],
    "rows": [
     {
      "check_id": "MOTION-11/channel-animation/H030",
@@ -6549,8 +6601,10 @@
     "assets": [],
     "note": "Palette rules, distribution: Acid Signal is an accent, never a ground or panel."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Finds flat areas in the colour and checks none is a ground or a panel carrying text."
+   ],
    "rows": [
     {
      "check_id": "MOTION-11/channel-animation/H031",
@@ -6623,8 +6677,10 @@
     "assets": [],
     "note": "Palette rules, distribution: Acid Signal is an accent; leaving title-word fills aside, it covers no more than 10% of the designed, non-footage area."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Measures the share of the designed area in the named colours."
+   ],
    "rows": [
     {
      "check_id": "MOTION-11/channel-animation/H032",
@@ -6871,8 +6927,10 @@
     "assets": [],
     "note": "Brand identity, palette_rules.forbidden: no colour outside the five palette hexes for type, outlines, panels, shapes, icons or backgrounds."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads every flat colour outside photographs, transparent parts and capture footage, and checks each is a palette colour."
+   ],
    "rows": [
     {
      "check_id": "MOTION-11/channel-teaser/H026",
@@ -6937,8 +6995,10 @@
     ],
     "note": "Palette rules: Fox Orange #FF5A1F is mandatory in the type, panels, shapes or background of every design, not only inside Scrap."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Looks for the colour as a flat area in the designed parts."
+   ],
    "rows": [
     {
      "check_id": "MOTION-11/channel-teaser/H028",
@@ -7008,8 +7068,10 @@
     "assets": [],
     "note": "Brand identity, palette_rules.distribution: Acid Signal is an accent; leaving title-word fills aside, it covers no more than 10% of the designed, non-footage area."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Measures the share of the designed area in the named colours."
+   ],
    "rows": [
     {
      "check_id": "MOTION-11/channel-teaser/H034",
@@ -7069,8 +7131,10 @@
     "assets": [],
     "note": "Brand identity, palette_rules.opacity: no scrim or colour wash of any colour, black and white included, over a capture frame. A cut or plain fade between shots is a transition, not a tint."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Finds the capture frame the thumbnail is built on and compares the tones of the visible capture with it."
+   ],
    "rows": [
     {
      "check_id": "MOTION-11/thumbnail-we-broke-the-map/H037",
@@ -7264,8 +7328,10 @@
     ],
     "note": "Type system step 01: Anton Regular at 190 px, setup words only. Signature move: A width flip between two supplied faces."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads each named line by OCR, renders its own text in every brand font and weight and in common stand-in fonts, and compares the letter shapes and stroke thickness with the image; only a clear best match counts."
+   ],
    "rows": [
     {
      "check_id": "MOTION-11/thumbnail-we-broke-the-map/H006",
@@ -7672,8 +7738,10 @@
     ],
     "note": "Type scale step 01 note: the whole stack drops to 96 px on long copy rather than breaking the flip. In the supplied Anton-Regular.ttf cap height is 1760/2048 em, so 96 px setup capitals stand about 82 px tall (range 70 to 95 px). Planned trap: titles 5 and 6 run more than twice the length of the short ones."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the title words by OCR and measures the height of their letters' fill."
+   ],
    "rows": [
     {
      "check_id": "MOTION-11/thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas/H017",
@@ -8168,8 +8236,10 @@
     ],
     "note": "Type scale step 01: setup capitals in Anton Regular at 190 px, dropping to 96 px only on long copy. In the supplied Anton-Regular.ttf cap height is 1760/2048 em, so 190 px type gives capitals about 163 px tall (range 145 to 180 px); 96 px type gives about 82 px (range 70 to 95 px). Planned trap: short titles must not be underset to match the long ones."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the title words by OCR and measures the height of their letters' fill."
+   ],
    "rows": [
     {
      "check_id": "MOTION-11/thumbnail-we-broke-the-map/H018",
@@ -8308,8 +8378,10 @@
     ],
     "note": "Type scale: step 01 setup capitals in Anton at 190 px, step 02 payoff in Archivo Black at 150 px; on long copy the whole stack drops to 96 px. Anton capitals are 0.86 em tall and Archivo Black capitals 0.69 em, so the payoff capitals are always visibly shorter than the setup capitals."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the title words by OCR and compares the height of their letters' fill."
+   ],
    "rows": [
     {
      "check_id": "MOTION-11/thumbnail-we-broke-the-map/H019",
@@ -8622,8 +8694,10 @@
     "2": "name"
    },
    "shared_reference": null,
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads each named line by OCR, renders its own text in every brand font and weight and in common stand-in fonts, and compares the letter shapes and stroke thickness with the image; only a clear best match counts."
+   ],
    "rows": [
     {
      "check_id": "MOTION-11/channel-animation/H017",
@@ -8716,8 +8790,10 @@
     ],
     "note": "Type scale step 01: setup capitals in Anton Regular at 190 px, dropping to 96 px only on long copy. In the supplied Anton-Regular.ttf cap height is 1760/2048 em, so 190 px type gives capitals about 163 px tall (range 145 to 180 px); 96 px type gives about 82 px (range 70 to 95 px). Planned trap: short titles must not be underset to match the long ones."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the title words by OCR and measures the height of their letters' fill."
+   ],
    "rows": [
     {
      "check_id": "MOTION-11/channel-animation/H019",
@@ -8864,8 +8940,10 @@
     ],
     "note": "Type scale step 03 Body: Inter SemiBold 600, max 65 characters."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the selected lines (live text where there is any) and counts their characters."
+   ],
    "rows": [
     {
      "check_id": "MOTION-11/channel-animation/H022",
@@ -9807,8 +9885,10 @@
     "assets": [],
     "note": "Brand type system rule: Titles are capitals only. Steps 01 and 02 are capital stacks."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the named text and checks it is set in capitals."
+   ],
    "rows": [
     {
      "check_id": "MOTION-11/thumbnail-we-broke-the-map/H015",
@@ -9929,8 +10009,10 @@
     ],
     "note": "Type scale: step 01 setup capitals in Anton at 190 px, step 02 payoff in Archivo Black at 150 px; on long copy the whole stack drops to 96 px. Anton capitals are 0.86 em tall and Archivo Black capitals 0.69 em, so the payoff capitals are always visibly shorter than the setup capitals."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the title words by OCR and compares the height of their letters' fill."
+   ],
    "rows": [
     {
      "check_id": "MOTION-11/channel-animation/H020",
@@ -10112,8 +10194,10 @@
     ],
     "note": "Signature type move and step 02 note: the payoff word is set as the last row of the same capital stack, so the narrow Anton setup fattens hard on the last word."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the title rows by OCR and checks the last row."
+   ],
    "rows": [
     {
      "check_id": "MOTION-11/thumbnail-we-broke-the-map/H036",
@@ -10296,8 +10380,10 @@
     ],
     "note": "Brand identity, palette_rules.opacity: supplied raster identity artwork retains its edge anti-aliasing; place it at 100% layer opacity."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Finds the supplied cut-out and compares its own pixels with the file."
+   ],
    "rows": [
     {
      "check_id": "MOTION-11/thumbnail-we-broke-the-map/H038",
@@ -10448,8 +10534,10 @@
     ],
     "note": "Signature type move and step 02 note: the payoff word is set as the last row of the same capital stack, so the narrow Anton setup fattens hard on the last word."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the title rows by OCR and checks the last row."
+   ],
    "rows": [
     {
      "check_id": "MOTION-11/channel-animation/H036",
@@ -10510,8 +10598,10 @@
     ],
     "note": "Brand identity, palette_rules.opacity: supplied raster identity artwork retains its edge anti-aliasing; place it at 100% layer opacity."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Finds the supplied cut-out and compares its own pixels with the file."
+   ],
    "rows": [
     {
      "check_id": "MOTION-11/channel-animation/H037",
@@ -10656,8 +10746,10 @@
     ],
     "note": "Brand identity, palette_rules.opacity: supplied raster identity artwork retains its edge anti-aliasing; place it at 100% layer opacity."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Finds the supplied cut-out and compares its own pixels with the file."
+   ],
    "rows": [
     {
      "check_id": "MOTION-11/channel-teaser/H038",
@@ -10880,8 +10972,10 @@
     ],
     "note": "Palette rules, photography: Scrap keeps the orange fur and purple headset drawn in staticfox_scrap_transparent.png. staticfox_scrap_transparent.png shows Scrap with orange fur and a purple over-ear headset."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Finds the supplied cut-out and compares its own pixels with the file."
+   ],
    "rows": [
     {
      "check_id": "MOTION-11/thumbnail-we-broke-the-map/H014",
@@ -11122,8 +11216,10 @@
     ],
     "note": "Palette rules, photography: Scrap keeps the orange fur and purple headset drawn in staticfox_scrap_transparent.png. staticfox_scrap_transparent.png shows Scrap with orange fur and a purple over-ear headset."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Finds the supplied cut-out and compares its own pixels with the file."
+   ],
    "rows": [
     {
      "check_id": "MOTION-11/channel-animation/H014",
@@ -11216,8 +11312,10 @@
     ],
     "note": "Palette rules, photography: Scrap keeps the orange fur and purple headset drawn in staticfox_scrap_transparent.png. staticfox_scrap_transparent.png shows Scrap with orange fur and a purple over-ear headset."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Finds the supplied cut-out and compares its own pixels with the file."
+   ],
    "rows": [
     {
      "check_id": "MOTION-11/thumbnail-we-broke-the-map/H040",
@@ -11364,8 +11462,10 @@
     ],
     "note": "Palette rules, photography: Scrap keeps the orange fur and purple headset drawn in staticfox_scrap_transparent.png. staticfox_scrap_transparent.png shows Scrap with orange fur and a purple over-ear headset."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Finds the supplied cut-out and compares its own pixels with the file."
+   ],
    "rows": [
     {
      "check_id": "MOTION-11/channel-animation/H041",
@@ -11450,10 +11550,8 @@
    ],
    "slot_labels": {},
    "shared_reference": null,
-   "answered_by": "code",
-   "code_check": [
-    "Compares text sizes (font size in PDFs, letter height on images)."
-   ],
+   "answered_by": "person",
+   "code_check": [],
    "rows": [
     {
      "check_id": "MOTION-11/thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas/H008",
@@ -11700,8 +11798,10 @@
     ],
     "note": "Brief: the title still reads at 320 px wide in a feed. Group requirement: the title is readable at 320 px width."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Shrinks the image to the stated width and checks OCR still reads every word."
+   ],
    "rows": [
     {
      "check_id": "MOTION-11/thumbnail-we-broke-the-map/H033",

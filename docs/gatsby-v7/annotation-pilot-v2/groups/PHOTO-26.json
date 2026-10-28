@@ -52,8 +52,10 @@
     ],
     "note": "Brief: each featured object has its correct product name. Acceptance: the featured-object name block matches the approved product register exactly. Product names are set in Barlow Condensed Medium caps, so case is not compared. thornmere_autumn_skus.csv, product_name column, row 3."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the PDF text, ties each product name, care line and price to its product, and compares it with the product table."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-26/wholesale-presentation/H001",
@@ -134,8 +136,10 @@
     ],
     "note": "Brief, pinned: each featured object has its correct product name, with its dimensions, materials, care line and price from thornmere_autumn_skus.csv. thornmere_autumn_skus.csv, dimensions column, row 3."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the PDF text, ties each product name, care line and price to its product, and compares it with the product table."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-26/wholesale-presentation/H002",
@@ -306,8 +310,10 @@
     ],
     "note": "Brief, pinned: each featured object has its correct product name, with its dimensions, materials, care line and price from thornmere_autumn_skus.csv. thornmere_autumn_skus.csv, materials column, row 25."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the PDF text, ties each product name, care line and price to its product, and compares it with the product table."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-26/wholesale-presentation/H014",
@@ -583,8 +589,10 @@
     ],
     "note": "Brief: use the supplied factual records. Product names are set in Barlow Condensed Medium caps, so case is not compared. thornmere_autumn_skus.csv, product_name column, row 3."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the PDF text, ties each product name, care line and price to its product, and compares it with the product table."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-26/collection-spread/H005",
@@ -641,8 +649,10 @@
     ],
     "note": "Brief: use the supplied factual records. thornmere_autumn_skus.csv, dimensions column, row 3."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the PDF text, ties each product name, care line and price to its product, and compares it with the product table."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-26/collection-spread/H006",
@@ -699,8 +709,10 @@
     ],
     "note": "Brief: use the supplied factual records. thornmere_autumn_skus.csv, materials column, row 25."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the PDF text, ties each product name, care line and price to its product, and compares it with the product table."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-26/collection-spread/H007",
@@ -1029,8 +1041,10 @@
     "assets": [],
     "note": "Commission export_settings[0]: \"Digital PDF in sRGB with embedded fonts, searchable text where practical, no crop marks and no added bleed; retain the exact page size and page count.\""
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the PDF page boxes and drawn paths for crop and registration marks."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-26/collection-spread/H057",
@@ -1191,8 +1205,10 @@
     ],
     "note": "Brand type system rule: Care lines stay in the maker's own words, unreworded. thornmere_autumn_skus.csv, care_line column, from “Wipe clean.” (TH-006) to the two sentences of TH-031."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the PDF text, ties each product name, care line and price to its product, and compares it with the product table."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-26/wholesale-presentation/H003",
@@ -1261,8 +1277,10 @@
     ],
     "note": "Brand type system rule: Care lines stay in the maker's own words, unreworded. thornmere_autumn_skus.csv, care_line column, from “Wipe clean.” (TH-006) to the two sentences of TH-031."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the PDF text, ties each product name, care line and price to its product, and compares it with the product table."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-26/collection-spread/H008",
@@ -1387,8 +1405,10 @@
    ],
    "slot_labels": {},
    "shared_reference": null,
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the PDF text, ties each product name, care line and price to its product, and compares it with the product table."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-26/collection-spread/H009",
@@ -1499,8 +1519,10 @@
     ],
     "note": "thornmere_autumn_skus.csv, picture_filename column: Stoneware Tumbler autumn_shoot_10.jpg (row 9), Charcoal Vase autumn_shoot_04.jpg (row 15), Oatmeal Tumbler Set autumn_shoot_07.jpg (row 20); each frame shows two separate pieces with a band of pale sweep between them. Truth constraint: Do not silently replace a weak supplied asset. Use it honestly, reject it with a reason, or take only the brief's declared Stock or concept exception."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads every picture placed in the PDF, identifies its supplied photo and compares the colours tile by tile."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-26/wholesale-presentation/H013",
@@ -2036,8 +2058,10 @@
     ],
     "note": "Palette rules, distribution: the wholesale band is one solid block of Soft Clay or Indigo Dye, the same colour on every page that carries it. Brief: a coloured wholesale band."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the page ground and the filled shapes drawn in the PDF: their colours, sizes and opacity."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-26/wholesale-presentation/H007",
@@ -2260,8 +2284,10 @@
    ],
    "slot_labels": {},
    "shared_reference": null,
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the PDF paint: opacity, shading, patterns, soft masks and blend modes."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-26/collection-spread/H030",
@@ -2331,8 +2357,10 @@
    ],
    "slot_labels": {},
    "shared_reference": null,
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the page ground and the filled shapes drawn in the PDF: their colours, sizes and opacity."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-26/collection-spread/H031",
@@ -2411,8 +2439,10 @@
    ],
    "slot_labels": {},
    "shared_reference": null,
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Finds every piece in the colour outside the photographs and checks each is a thin rule or sits in an allowed text line."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-26/collection-spread/H032",
@@ -2758,8 +2788,10 @@
     "assets": [],
     "note": "Palette rules, opacity: \"no scrim, gradient or overlay of any colour, black and white included, is laid over a photograph.\""
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the PDF's drawing order and checks nothing is drawn over a placed photo."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-26/collection-spread/H054",
@@ -2819,8 +2851,10 @@
     "assets": [],
     "note": "Palette rules, distribution: \"one coloured band, a solid block of Soft Clay or Indigo Dye, the same colour on every page that carries it.\""
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the page ground and the filled shapes drawn in the PDF: their colours, sizes and opacity."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-26/wholesale-presentation/H058",
@@ -2872,8 +2906,10 @@
     ],
     "note": "Palette, Soft Clay usage: \"a small running foot in tracked capitals on Warm Paper Ground\"; palette rules, distribution: \"a small running foot in tracked capitals on Warm Paper Ground.\""
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Sorts the PDF text into roles by size and reads the font, size, letter case and line spacing of the named role."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-26/collection-spread/H056",
@@ -2943,8 +2979,10 @@
     "assets": [],
     "note": "Brand identity palette, Soft Clay usage: small running foot in tracked capitals."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Measures letter spacing from the PDF glyph positions and compares it with the commonest text."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-26/collection-spread/H064",
@@ -3021,8 +3059,10 @@
     ],
     "note": "Brand type system rule: The product name is always Barlow Condensed Medium caps tracked +200 thousandths open; the open tracking is not optional. Type system step 01: Display / H1 is Barlow Condensed Medium, Medium, all caps, tracked +200 thousandths; sample THORNMERE HOME. Type system step 02: Subheading / H2 is Barlow Condensed Medium caps, 11 pt on 13 pt, tracked +160 thousandths. thornmere_spring_catalog_press.pdf set the name in Georgia, which the autumn system replaces."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Sorts the PDF text into roles by size and reads the font, size, letter case and line spacing of the named role."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-26/wholesale-presentation/H006",
@@ -3099,8 +3139,10 @@
     ],
     "note": "Type system step 03: Body is Source Serif 4 Regular, 10 pt on 15 pt, tracking 0."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Sorts the PDF text into roles by size and reads the font, size, letter case and line spacing of the named role."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-26/collection-spread/H023",
@@ -3183,8 +3225,10 @@
    ],
    "slot_labels": {},
    "shared_reference": null,
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads each line of text and counts its characters."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-26/collection-spread/H024",
@@ -3388,8 +3432,10 @@
     ],
     "note": "Brand type system rule: every family in this scale is the brand's own: Barlow Condensed Medium, Source Serif 4 Regular, Inter Regular. thornmere_spring_catalog_press.pdf sets its caption in Georgia and Arial, which the autumn system replaces."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Sorts the PDF text into roles by size and reads the font, size, letter case and line spacing of the named role."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-26/collection-spread/H026",
@@ -3500,8 +3546,10 @@
     ],
     "note": "Brand type system rule: The product name is always Barlow Condensed Medium caps tracked +200 thousandths open; the open tracking is not optional. Type system step 01: Display / H1 is Barlow Condensed Medium, Medium, all caps, tracked +200 thousandths; sample THORNMERE HOME. Type system step 02: Subheading / H2 is Barlow Condensed Medium caps, 11 pt on 13 pt, tracked +160 thousandths. thornmere_spring_catalog_press.pdf set the name in Georgia, which the autumn system replaces."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Sorts the PDF text into roles by size and reads the font, size, letter case and line spacing of the named role."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-26/collection-spread/H020",
@@ -3652,8 +3700,10 @@
     ],
     "note": "Current brand typography; use the authored font settings for exact sizes, tracking and variable-font axes. A raster preview alone does not prove those settings. If evidence is unavailable, leave this check unassessed."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Sorts the PDF text into roles by size and reads the font, size, letter case and line spacing of the named role."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-26/collection-spread/H038",
@@ -3752,8 +3802,10 @@
     ],
     "note": "Current brand typography; use the authored font settings for exact sizes, tracking and variable-font axes. A raster preview alone does not prove those settings. If evidence is unavailable, leave this check unassessed."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Sorts the PDF text into roles by size and reads the font, size, letter case and line spacing of the named role."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-26/collection-spread/H039",
@@ -3852,8 +3904,10 @@
     ],
     "note": "Current brand typography; use the authored font settings for exact sizes, tracking and variable-font axes. A raster preview alone does not prove those settings. If evidence is unavailable, leave this check unassessed."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Sorts the PDF text into roles by size and reads the font, size, letter case and line spacing of the named role."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-26/collection-spread/H043",
@@ -4028,8 +4082,10 @@
     ],
     "note": "Current brand typography; use the authored font settings for exact sizes, tracking and variable-font axes. A raster preview alone does not prove those settings. If evidence is unavailable, leave this check unassessed."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Sorts the PDF text into roles by size and reads the font, size, letter case and line spacing of the named role."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-26/wholesale-presentation/H037",
@@ -4289,8 +4345,10 @@
     "assets": [],
     "note": "Brand identity type scale 02 Subheading / H2: Medium, all caps."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Sorts the PDF text into roles by size and reads the font, size, letter case and line spacing of the named role."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-26/collection-spread/H063",
@@ -4516,8 +4574,10 @@
     ],
     "note": "Current brand typography; use the authored font settings for exact sizes, tracking and variable-font axes. A raster preview alone does not prove those settings. If evidence is unavailable, leave this check unassessed."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Measures letter spacing from the PDF glyph positions and compares it with the commonest text."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-26/collection-spread/H037",
@@ -4764,8 +4824,10 @@
     "assets": [],
     "note": "Type scale step 01 note: \"On a page showing several products, keep each name beside its own product.\""
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the type by OCR or from the PDF, leaving out lettering inside the supplied photos, and looks for the wording."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-26/collection-spread/H055",
@@ -5033,8 +5095,10 @@
    ],
    "slot_labels": {},
    "shared_reference": null,
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads every picture placed in the PDF, identifies its supplied photo and compares the colours tile by tile."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-26/collection-spread/H013",
@@ -5553,8 +5617,10 @@
    ],
    "slot_labels": {},
    "shared_reference": null,
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads every picture placed in the PDF, identifies its supplied photo and compares the colours tile by tile."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-26/collection-spread/H018",
@@ -5769,8 +5835,10 @@
    ],
    "slot_labels": {},
    "shared_reference": null,
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads every picture placed in the PDF, identifies its supplied photo and compares the colours tile by tile."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-26/collection-spread/H065",

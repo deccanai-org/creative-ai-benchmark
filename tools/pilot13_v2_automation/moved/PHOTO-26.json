@@ -2,6 +2,1622 @@
  "task_id": "PHOTO-26",
  "moved": [
   {
+   "check_id": "PHOTO-26/wholesale-presentation/H001",
+   "output_id": "wholesale-presentation",
+   "rule_id": "R001",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "Every product name on “Interiors wholesale presentation” (wholesale-presentation.pdf) reads word for word as in the product_name column of thornmere_autumn_skus.csv, letter case aside, for example “Indigo Cereal Bowl”.",
+   "assertion": {
+    "op": "v2_product_text_pb",
+    "mode": "names",
+    "rows": [
+     {
+      "name": "Oatmeal Breakfast Mug",
+      "care": "Dishwasher safe.",
+      "price": "$45",
+      "dims": "H 95 x Dia 85 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Indigo Cereal Bowl",
+      "care": "Hand wash only.",
+      "price": "$52",
+      "dims": "H 70 x Dia 150 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Oatmeal Pitcher",
+      "care": "Hand wash to keep the glaze bright, and avoid sudden changes in temperature.",
+      "price": "$96",
+      "dims": "H 220 x Dia 120 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Soft Clay Dinner Plate",
+      "care": "Dishwasher and microwave safe.",
+      "price": "$58",
+      "dims": "Dia 270 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Charcoal Milk Jug",
+      "care": "Hand wash only.",
+      "price": "$74",
+      "dims": "H 180 x Dia 100 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Oatmeal Bud Vase",
+      "care": "Wipe clean.",
+      "price": "$110",
+      "dims": "H 240 x Dia 110 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Indigo Serving Bowl",
+      "care": "Hand wash with a soft cloth. Do not use abrasive scourers, which dull the glaze over time.",
+      "price": "$128",
+      "dims": "H 110 x Dia 280 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Stoneware Tumbler",
+      "care": "Dishwasher safe.",
+      "price": "$46",
+      "dims": "H 100 x Dia 75 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Soft Clay Soup Bowl",
+      "care": "Hand wash only.",
+      "price": "$56",
+      "dims": "H 80 x Dia 160 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Charcoal Side Plate",
+      "care": "Dishwasher safe.",
+      "price": "$48",
+      "dims": "Dia 210 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Oatmeal Teapot",
+      "care": "Hand wash only. Rinse and air-dry after each use to keep the inside from staining.",
+      "price": "$150",
+      "dims": "H 160 x W 220 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Indigo Mug",
+      "care": "Dishwasher safe.",
+      "price": "$45",
+      "dims": "H 95 x Dia 85 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Soft Clay Serving Platter",
+      "care": "Hand wash only.",
+      "price": "$132",
+      "dims": "L 340 x W 220 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Charcoal Vase",
+      "care": "Wipe clean with a damp cloth.",
+      "price": "$165",
+      "dims": "H 300 x Dia 130 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Oatmeal Pasta Bowl",
+      "care": "Dishwasher safe.",
+      "price": "$62",
+      "dims": "H 55 x Dia 230 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Indigo Pitcher",
+      "care": "Hand wash to protect the glaze.",
+      "price": "$98",
+      "dims": "H 220 x Dia 120 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Soft Clay Espresso Cup",
+      "care": "Dishwasher safe.",
+      "price": "$45",
+      "dims": "H 60 x Dia 60 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Charcoal Serving Bowl",
+      "care": "Hand wash with a soft cloth. Avoid soaking for long periods, which can mark the foot.",
+      "price": "$138",
+      "dims": "H 120 x Dia 300 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Oatmeal Tumbler Set",
+      "care": "Dishwasher safe.",
+      "price": "$88",
+      "dims": "H 100 x Dia 75 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Indigo Dinner Plate",
+      "care": "Dishwasher and microwave safe.",
+      "price": "$58",
+      "dims": "Dia 270 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Soft Clay Vase",
+      "care": "Wipe clean.",
+      "price": "$120",
+      "dims": "H 260 x Dia 120 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Charcoal Mug",
+      "care": "Dishwasher safe.",
+      "price": "$45",
+      "dims": "H 95 x Dia 85 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Oatmeal Wool Throw",
+      "care": "Dry clean only.",
+      "price": "$180",
+      "dims": "130 x 180 cm",
+      "materials": "Handwoven wool"
+     },
+     {
+      "name": "Indigo Wool Throw",
+      "care": "Dry clean only. This piece may shed a little when new; a gentle shake outdoors is all it needs.",
+      "price": "$180",
+      "dims": "130 x 180 cm",
+      "materials": "Handwoven wool"
+     },
+     {
+      "name": "Soft Clay Table Runner",
+      "care": "Machine wash cold on a gentle cycle and lay flat to dry. Warm iron on the reverse; do not bleach or tumble dry.",
+      "price": "$68",
+      "dims": "40 x 200 cm",
+      "materials": "Linen and cotton"
+     },
+     {
+      "name": "Charcoal Wool Throw",
+      "care": "Dry clean only.",
+      "price": "$175",
+      "dims": "130 x 180 cm",
+      "materials": "Handwoven wool"
+     },
+     {
+      "name": "Striped Table Runner",
+      "care": "Machine wash cold. Lay flat to dry.",
+      "price": "$72",
+      "dims": "40 x 200 cm",
+      "materials": "Linen and cotton"
+     },
+     {
+      "name": "Indigo Table Runner",
+      "care": "Machine wash cold on a gentle cycle and lay flat to dry.",
+      "price": "$66",
+      "dims": "40 x 200 cm",
+      "materials": "Linen and cotton"
+     },
+     {
+      "name": "Oatmeal Cushion Cover",
+      "care": "Dry clean only.",
+      "price": "$58",
+      "dims": "50 x 50 cm",
+      "materials": "Handwoven wool"
+     },
+     {
+      "name": "Indigo Cushion Cover",
+      "care": "Dry clean only.",
+      "price": "$58",
+      "dims": "50 x 50 cm",
+      "materials": "Handwoven wool"
+     },
+     {
+      "name": "Soft Clay Napkin Set",
+      "care": "Machine wash warm and tumble dry low. A hot iron brings back the crispness, and the linen softens with every wash.",
+      "price": "$54",
+      "dims": "45 x 45 cm",
+      "materials": "Linen"
+     },
+     {
+      "name": "Charcoal Placemat Set",
+      "care": "Machine wash cold and lay flat to dry.",
+      "price": "$60",
+      "dims": "33 x 45 cm",
+      "materials": "Linen and cotton"
+     }
+    ],
+    "require": true
+   },
+   "how": "Reads the PDF text, ties each product name, care line and price to its product, and compares it with the product table."
+  },
+  {
+   "check_id": "PHOTO-26/wholesale-presentation/H002",
+   "output_id": "wholesale-presentation",
+   "rule_id": "R002",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "Every dimension line on “Interiors wholesale presentation” (wholesale-presentation.pdf) matches its product's dimensions in thornmere_autumn_skus.csv, for example “H 70 x Dia 150 mm” for the Indigo Cereal Bowl.",
+   "assertion": {
+    "op": "v2_product_text_pb",
+    "mode": "dims",
+    "rows": [
+     {
+      "name": "Oatmeal Breakfast Mug",
+      "care": "Dishwasher safe.",
+      "price": "$45",
+      "dims": "H 95 x Dia 85 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Indigo Cereal Bowl",
+      "care": "Hand wash only.",
+      "price": "$52",
+      "dims": "H 70 x Dia 150 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Oatmeal Pitcher",
+      "care": "Hand wash to keep the glaze bright, and avoid sudden changes in temperature.",
+      "price": "$96",
+      "dims": "H 220 x Dia 120 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Soft Clay Dinner Plate",
+      "care": "Dishwasher and microwave safe.",
+      "price": "$58",
+      "dims": "Dia 270 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Charcoal Milk Jug",
+      "care": "Hand wash only.",
+      "price": "$74",
+      "dims": "H 180 x Dia 100 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Oatmeal Bud Vase",
+      "care": "Wipe clean.",
+      "price": "$110",
+      "dims": "H 240 x Dia 110 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Indigo Serving Bowl",
+      "care": "Hand wash with a soft cloth. Do not use abrasive scourers, which dull the glaze over time.",
+      "price": "$128",
+      "dims": "H 110 x Dia 280 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Stoneware Tumbler",
+      "care": "Dishwasher safe.",
+      "price": "$46",
+      "dims": "H 100 x Dia 75 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Soft Clay Soup Bowl",
+      "care": "Hand wash only.",
+      "price": "$56",
+      "dims": "H 80 x Dia 160 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Charcoal Side Plate",
+      "care": "Dishwasher safe.",
+      "price": "$48",
+      "dims": "Dia 210 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Oatmeal Teapot",
+      "care": "Hand wash only. Rinse and air-dry after each use to keep the inside from staining.",
+      "price": "$150",
+      "dims": "H 160 x W 220 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Indigo Mug",
+      "care": "Dishwasher safe.",
+      "price": "$45",
+      "dims": "H 95 x Dia 85 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Soft Clay Serving Platter",
+      "care": "Hand wash only.",
+      "price": "$132",
+      "dims": "L 340 x W 220 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Charcoal Vase",
+      "care": "Wipe clean with a damp cloth.",
+      "price": "$165",
+      "dims": "H 300 x Dia 130 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Oatmeal Pasta Bowl",
+      "care": "Dishwasher safe.",
+      "price": "$62",
+      "dims": "H 55 x Dia 230 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Indigo Pitcher",
+      "care": "Hand wash to protect the glaze.",
+      "price": "$98",
+      "dims": "H 220 x Dia 120 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Soft Clay Espresso Cup",
+      "care": "Dishwasher safe.",
+      "price": "$45",
+      "dims": "H 60 x Dia 60 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Charcoal Serving Bowl",
+      "care": "Hand wash with a soft cloth. Avoid soaking for long periods, which can mark the foot.",
+      "price": "$138",
+      "dims": "H 120 x Dia 300 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Oatmeal Tumbler Set",
+      "care": "Dishwasher safe.",
+      "price": "$88",
+      "dims": "H 100 x Dia 75 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Indigo Dinner Plate",
+      "care": "Dishwasher and microwave safe.",
+      "price": "$58",
+      "dims": "Dia 270 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Soft Clay Vase",
+      "care": "Wipe clean.",
+      "price": "$120",
+      "dims": "H 260 x Dia 120 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Charcoal Mug",
+      "care": "Dishwasher safe.",
+      "price": "$45",
+      "dims": "H 95 x Dia 85 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Oatmeal Wool Throw",
+      "care": "Dry clean only.",
+      "price": "$180",
+      "dims": "130 x 180 cm",
+      "materials": "Handwoven wool"
+     },
+     {
+      "name": "Indigo Wool Throw",
+      "care": "Dry clean only. This piece may shed a little when new; a gentle shake outdoors is all it needs.",
+      "price": "$180",
+      "dims": "130 x 180 cm",
+      "materials": "Handwoven wool"
+     },
+     {
+      "name": "Soft Clay Table Runner",
+      "care": "Machine wash cold on a gentle cycle and lay flat to dry. Warm iron on the reverse; do not bleach or tumble dry.",
+      "price": "$68",
+      "dims": "40 x 200 cm",
+      "materials": "Linen and cotton"
+     },
+     {
+      "name": "Charcoal Wool Throw",
+      "care": "Dry clean only.",
+      "price": "$175",
+      "dims": "130 x 180 cm",
+      "materials": "Handwoven wool"
+     },
+     {
+      "name": "Striped Table Runner",
+      "care": "Machine wash cold. Lay flat to dry.",
+      "price": "$72",
+      "dims": "40 x 200 cm",
+      "materials": "Linen and cotton"
+     },
+     {
+      "name": "Indigo Table Runner",
+      "care": "Machine wash cold on a gentle cycle and lay flat to dry.",
+      "price": "$66",
+      "dims": "40 x 200 cm",
+      "materials": "Linen and cotton"
+     },
+     {
+      "name": "Oatmeal Cushion Cover",
+      "care": "Dry clean only.",
+      "price": "$58",
+      "dims": "50 x 50 cm",
+      "materials": "Handwoven wool"
+     },
+     {
+      "name": "Indigo Cushion Cover",
+      "care": "Dry clean only.",
+      "price": "$58",
+      "dims": "50 x 50 cm",
+      "materials": "Handwoven wool"
+     },
+     {
+      "name": "Soft Clay Napkin Set",
+      "care": "Machine wash warm and tumble dry low. A hot iron brings back the crispness, and the linen softens with every wash.",
+      "price": "$54",
+      "dims": "45 x 45 cm",
+      "materials": "Linen"
+     },
+     {
+      "name": "Charcoal Placemat Set",
+      "care": "Machine wash cold and lay flat to dry.",
+      "price": "$60",
+      "dims": "33 x 45 cm",
+      "materials": "Linen and cotton"
+     }
+    ],
+    "require": true
+   },
+   "how": "Reads the PDF text, ties each product name, care line and price to its product, and compares it with the product table."
+  },
+  {
+   "check_id": "PHOTO-26/wholesale-presentation/H014",
+   "output_id": "wholesale-presentation",
+   "rule_id": "R004",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "Every materials line on “Interiors wholesale presentation” (wholesale-presentation.pdf) matches the materials column of thornmere_autumn_skus.csv for its product, for example “Handwoven wool” for the Indigo Wool Throw.",
+   "assertion": {
+    "op": "v2_product_text_pb",
+    "mode": "materials",
+    "rows": [
+     {
+      "name": "Oatmeal Breakfast Mug",
+      "care": "Dishwasher safe.",
+      "price": "$45",
+      "dims": "H 95 x Dia 85 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Indigo Cereal Bowl",
+      "care": "Hand wash only.",
+      "price": "$52",
+      "dims": "H 70 x Dia 150 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Oatmeal Pitcher",
+      "care": "Hand wash to keep the glaze bright, and avoid sudden changes in temperature.",
+      "price": "$96",
+      "dims": "H 220 x Dia 120 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Soft Clay Dinner Plate",
+      "care": "Dishwasher and microwave safe.",
+      "price": "$58",
+      "dims": "Dia 270 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Charcoal Milk Jug",
+      "care": "Hand wash only.",
+      "price": "$74",
+      "dims": "H 180 x Dia 100 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Oatmeal Bud Vase",
+      "care": "Wipe clean.",
+      "price": "$110",
+      "dims": "H 240 x Dia 110 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Indigo Serving Bowl",
+      "care": "Hand wash with a soft cloth. Do not use abrasive scourers, which dull the glaze over time.",
+      "price": "$128",
+      "dims": "H 110 x Dia 280 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Stoneware Tumbler",
+      "care": "Dishwasher safe.",
+      "price": "$46",
+      "dims": "H 100 x Dia 75 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Soft Clay Soup Bowl",
+      "care": "Hand wash only.",
+      "price": "$56",
+      "dims": "H 80 x Dia 160 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Charcoal Side Plate",
+      "care": "Dishwasher safe.",
+      "price": "$48",
+      "dims": "Dia 210 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Oatmeal Teapot",
+      "care": "Hand wash only. Rinse and air-dry after each use to keep the inside from staining.",
+      "price": "$150",
+      "dims": "H 160 x W 220 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Indigo Mug",
+      "care": "Dishwasher safe.",
+      "price": "$45",
+      "dims": "H 95 x Dia 85 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Soft Clay Serving Platter",
+      "care": "Hand wash only.",
+      "price": "$132",
+      "dims": "L 340 x W 220 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Charcoal Vase",
+      "care": "Wipe clean with a damp cloth.",
+      "price": "$165",
+      "dims": "H 300 x Dia 130 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Oatmeal Pasta Bowl",
+      "care": "Dishwasher safe.",
+      "price": "$62",
+      "dims": "H 55 x Dia 230 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Indigo Pitcher",
+      "care": "Hand wash to protect the glaze.",
+      "price": "$98",
+      "dims": "H 220 x Dia 120 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Soft Clay Espresso Cup",
+      "care": "Dishwasher safe.",
+      "price": "$45",
+      "dims": "H 60 x Dia 60 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Charcoal Serving Bowl",
+      "care": "Hand wash with a soft cloth. Avoid soaking for long periods, which can mark the foot.",
+      "price": "$138",
+      "dims": "H 120 x Dia 300 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Oatmeal Tumbler Set",
+      "care": "Dishwasher safe.",
+      "price": "$88",
+      "dims": "H 100 x Dia 75 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Indigo Dinner Plate",
+      "care": "Dishwasher and microwave safe.",
+      "price": "$58",
+      "dims": "Dia 270 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Soft Clay Vase",
+      "care": "Wipe clean.",
+      "price": "$120",
+      "dims": "H 260 x Dia 120 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Charcoal Mug",
+      "care": "Dishwasher safe.",
+      "price": "$45",
+      "dims": "H 95 x Dia 85 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Oatmeal Wool Throw",
+      "care": "Dry clean only.",
+      "price": "$180",
+      "dims": "130 x 180 cm",
+      "materials": "Handwoven wool"
+     },
+     {
+      "name": "Indigo Wool Throw",
+      "care": "Dry clean only. This piece may shed a little when new; a gentle shake outdoors is all it needs.",
+      "price": "$180",
+      "dims": "130 x 180 cm",
+      "materials": "Handwoven wool"
+     },
+     {
+      "name": "Soft Clay Table Runner",
+      "care": "Machine wash cold on a gentle cycle and lay flat to dry. Warm iron on the reverse; do not bleach or tumble dry.",
+      "price": "$68",
+      "dims": "40 x 200 cm",
+      "materials": "Linen and cotton"
+     },
+     {
+      "name": "Charcoal Wool Throw",
+      "care": "Dry clean only.",
+      "price": "$175",
+      "dims": "130 x 180 cm",
+      "materials": "Handwoven wool"
+     },
+     {
+      "name": "Striped Table Runner",
+      "care": "Machine wash cold. Lay flat to dry.",
+      "price": "$72",
+      "dims": "40 x 200 cm",
+      "materials": "Linen and cotton"
+     },
+     {
+      "name": "Indigo Table Runner",
+      "care": "Machine wash cold on a gentle cycle and lay flat to dry.",
+      "price": "$66",
+      "dims": "40 x 200 cm",
+      "materials": "Linen and cotton"
+     },
+     {
+      "name": "Oatmeal Cushion Cover",
+      "care": "Dry clean only.",
+      "price": "$58",
+      "dims": "50 x 50 cm",
+      "materials": "Handwoven wool"
+     },
+     {
+      "name": "Indigo Cushion Cover",
+      "care": "Dry clean only.",
+      "price": "$58",
+      "dims": "50 x 50 cm",
+      "materials": "Handwoven wool"
+     },
+     {
+      "name": "Soft Clay Napkin Set",
+      "care": "Machine wash warm and tumble dry low. A hot iron brings back the crispness, and the linen softens with every wash.",
+      "price": "$54",
+      "dims": "45 x 45 cm",
+      "materials": "Linen"
+     },
+     {
+      "name": "Charcoal Placemat Set",
+      "care": "Machine wash cold and lay flat to dry.",
+      "price": "$60",
+      "dims": "33 x 45 cm",
+      "materials": "Linen and cotton"
+     }
+    ],
+    "require": true
+   },
+   "how": "Reads the PDF text, ties each product name, care line and price to its product, and compares it with the product table."
+  },
+  {
+   "check_id": "PHOTO-26/collection-spread/H003",
+   "output_id": "collection-spread",
+   "rule_id": "R005",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "“Autumn interiors collection spread” (collection-spread.pdf) includes a piece from every one of the twenty product photographs, autumn_shoot_01.jpg to autumn_shoot_14.jpg and textile_flatlay_01.jpg to textile_flatlay_06.jpg.",
+   "assertion": {
+    "op": "v2_all_of",
+    "checks": [
+     {
+      "op": "v2_contains_asset",
+      "assets": [
+       "autumn_shoot_01.jpg"
+      ],
+      "shape": false
+     },
+     {
+      "op": "v2_contains_asset",
+      "assets": [
+       "autumn_shoot_02.jpg"
+      ],
+      "shape": false
+     },
+     {
+      "op": "v2_contains_asset",
+      "assets": [
+       "autumn_shoot_03.jpg"
+      ],
+      "shape": false
+     },
+     {
+      "op": "v2_contains_asset",
+      "assets": [
+       "autumn_shoot_04.jpg"
+      ],
+      "shape": false
+     },
+     {
+      "op": "v2_contains_asset",
+      "assets": [
+       "autumn_shoot_05.jpg"
+      ],
+      "shape": false
+     },
+     {
+      "op": "v2_contains_asset",
+      "assets": [
+       "autumn_shoot_06.jpg"
+      ],
+      "shape": false
+     },
+     {
+      "op": "v2_contains_asset",
+      "assets": [
+       "autumn_shoot_07.jpg"
+      ],
+      "shape": false
+     },
+     {
+      "op": "v2_contains_asset",
+      "assets": [
+       "autumn_shoot_08.jpg"
+      ],
+      "shape": false
+     },
+     {
+      "op": "v2_contains_asset",
+      "assets": [
+       "autumn_shoot_09.jpg"
+      ],
+      "shape": false
+     },
+     {
+      "op": "v2_contains_asset",
+      "assets": [
+       "autumn_shoot_10.jpg"
+      ],
+      "shape": false
+     },
+     {
+      "op": "v2_contains_asset",
+      "assets": [
+       "autumn_shoot_11.jpg"
+      ],
+      "shape": false
+     },
+     {
+      "op": "v2_contains_asset",
+      "assets": [
+       "autumn_shoot_12.jpg"
+      ],
+      "shape": false
+     },
+     {
+      "op": "v2_contains_asset",
+      "assets": [
+       "autumn_shoot_13.jpg"
+      ],
+      "shape": false
+     },
+     {
+      "op": "v2_contains_asset",
+      "assets": [
+       "autumn_shoot_14.jpg"
+      ],
+      "shape": false
+     },
+     {
+      "op": "v2_contains_asset",
+      "assets": [
+       "textile_flatlay_01.jpg"
+      ],
+      "shape": false
+     },
+     {
+      "op": "v2_contains_asset",
+      "assets": [
+       "textile_flatlay_02.jpg"
+      ],
+      "shape": false
+     },
+     {
+      "op": "v2_contains_asset",
+      "assets": [
+       "textile_flatlay_03.jpg"
+      ],
+      "shape": false
+     },
+     {
+      "op": "v2_contains_asset",
+      "assets": [
+       "textile_flatlay_04.jpg"
+      ],
+      "shape": false
+     },
+     {
+      "op": "v2_contains_asset",
+      "assets": [
+       "textile_flatlay_05.jpg"
+      ],
+      "shape": false
+     },
+     {
+      "op": "v2_contains_asset",
+      "assets": [
+       "textile_flatlay_06.jpg"
+      ],
+      "shape": false
+     }
+    ]
+   },
+   "how": "Searches the deliverable for the supplied file and checks its proportions, for each of the 20 named texts; all must pass."
+  },
+  {
+   "check_id": "PHOTO-26/collection-spread/H005",
+   "output_id": "collection-spread",
+   "rule_id": "R006",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "Any product name on “Autumn interiors collection spread” (collection-spread.pdf) reads word for word as in the product_name column of thornmere_autumn_skus.csv, letter case aside, for example “Indigo Cereal Bowl”.",
+   "assertion": {
+    "op": "v2_product_text_pb",
+    "mode": "names",
+    "rows": [
+     {
+      "name": "Oatmeal Breakfast Mug",
+      "care": "Dishwasher safe.",
+      "price": "$45",
+      "dims": "H 95 x Dia 85 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Indigo Cereal Bowl",
+      "care": "Hand wash only.",
+      "price": "$52",
+      "dims": "H 70 x Dia 150 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Oatmeal Pitcher",
+      "care": "Hand wash to keep the glaze bright, and avoid sudden changes in temperature.",
+      "price": "$96",
+      "dims": "H 220 x Dia 120 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Soft Clay Dinner Plate",
+      "care": "Dishwasher and microwave safe.",
+      "price": "$58",
+      "dims": "Dia 270 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Charcoal Milk Jug",
+      "care": "Hand wash only.",
+      "price": "$74",
+      "dims": "H 180 x Dia 100 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Oatmeal Bud Vase",
+      "care": "Wipe clean.",
+      "price": "$110",
+      "dims": "H 240 x Dia 110 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Indigo Serving Bowl",
+      "care": "Hand wash with a soft cloth. Do not use abrasive scourers, which dull the glaze over time.",
+      "price": "$128",
+      "dims": "H 110 x Dia 280 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Stoneware Tumbler",
+      "care": "Dishwasher safe.",
+      "price": "$46",
+      "dims": "H 100 x Dia 75 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Soft Clay Soup Bowl",
+      "care": "Hand wash only.",
+      "price": "$56",
+      "dims": "H 80 x Dia 160 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Charcoal Side Plate",
+      "care": "Dishwasher safe.",
+      "price": "$48",
+      "dims": "Dia 210 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Oatmeal Teapot",
+      "care": "Hand wash only. Rinse and air-dry after each use to keep the inside from staining.",
+      "price": "$150",
+      "dims": "H 160 x W 220 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Indigo Mug",
+      "care": "Dishwasher safe.",
+      "price": "$45",
+      "dims": "H 95 x Dia 85 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Soft Clay Serving Platter",
+      "care": "Hand wash only.",
+      "price": "$132",
+      "dims": "L 340 x W 220 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Charcoal Vase",
+      "care": "Wipe clean with a damp cloth.",
+      "price": "$165",
+      "dims": "H 300 x Dia 130 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Oatmeal Pasta Bowl",
+      "care": "Dishwasher safe.",
+      "price": "$62",
+      "dims": "H 55 x Dia 230 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Indigo Pitcher",
+      "care": "Hand wash to protect the glaze.",
+      "price": "$98",
+      "dims": "H 220 x Dia 120 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Soft Clay Espresso Cup",
+      "care": "Dishwasher safe.",
+      "price": "$45",
+      "dims": "H 60 x Dia 60 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Charcoal Serving Bowl",
+      "care": "Hand wash with a soft cloth. Avoid soaking for long periods, which can mark the foot.",
+      "price": "$138",
+      "dims": "H 120 x Dia 300 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Oatmeal Tumbler Set",
+      "care": "Dishwasher safe.",
+      "price": "$88",
+      "dims": "H 100 x Dia 75 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Indigo Dinner Plate",
+      "care": "Dishwasher and microwave safe.",
+      "price": "$58",
+      "dims": "Dia 270 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Soft Clay Vase",
+      "care": "Wipe clean.",
+      "price": "$120",
+      "dims": "H 260 x Dia 120 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Charcoal Mug",
+      "care": "Dishwasher safe.",
+      "price": "$45",
+      "dims": "H 95 x Dia 85 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Oatmeal Wool Throw",
+      "care": "Dry clean only.",
+      "price": "$180",
+      "dims": "130 x 180 cm",
+      "materials": "Handwoven wool"
+     },
+     {
+      "name": "Indigo Wool Throw",
+      "care": "Dry clean only. This piece may shed a little when new; a gentle shake outdoors is all it needs.",
+      "price": "$180",
+      "dims": "130 x 180 cm",
+      "materials": "Handwoven wool"
+     },
+     {
+      "name": "Soft Clay Table Runner",
+      "care": "Machine wash cold on a gentle cycle and lay flat to dry. Warm iron on the reverse; do not bleach or tumble dry.",
+      "price": "$68",
+      "dims": "40 x 200 cm",
+      "materials": "Linen and cotton"
+     },
+     {
+      "name": "Charcoal Wool Throw",
+      "care": "Dry clean only.",
+      "price": "$175",
+      "dims": "130 x 180 cm",
+      "materials": "Handwoven wool"
+     },
+     {
+      "name": "Striped Table Runner",
+      "care": "Machine wash cold. Lay flat to dry.",
+      "price": "$72",
+      "dims": "40 x 200 cm",
+      "materials": "Linen and cotton"
+     },
+     {
+      "name": "Indigo Table Runner",
+      "care": "Machine wash cold on a gentle cycle and lay flat to dry.",
+      "price": "$66",
+      "dims": "40 x 200 cm",
+      "materials": "Linen and cotton"
+     },
+     {
+      "name": "Oatmeal Cushion Cover",
+      "care": "Dry clean only.",
+      "price": "$58",
+      "dims": "50 x 50 cm",
+      "materials": "Handwoven wool"
+     },
+     {
+      "name": "Indigo Cushion Cover",
+      "care": "Dry clean only.",
+      "price": "$58",
+      "dims": "50 x 50 cm",
+      "materials": "Handwoven wool"
+     },
+     {
+      "name": "Soft Clay Napkin Set",
+      "care": "Machine wash warm and tumble dry low. A hot iron brings back the crispness, and the linen softens with every wash.",
+      "price": "$54",
+      "dims": "45 x 45 cm",
+      "materials": "Linen"
+     },
+     {
+      "name": "Charcoal Placemat Set",
+      "care": "Machine wash cold and lay flat to dry.",
+      "price": "$60",
+      "dims": "33 x 45 cm",
+      "materials": "Linen and cotton"
+     }
+    ],
+    "require": false
+   },
+   "how": "Reads the PDF text, ties each product name, care line and price to its product, and compares it with the product table."
+  },
+  {
+   "check_id": "PHOTO-26/collection-spread/H006",
+   "output_id": "collection-spread",
+   "rule_id": "R007",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "Any dimension line on “Autumn interiors collection spread” (collection-spread.pdf) matches its product's dimensions in thornmere_autumn_skus.csv, for example “H 70 x Dia 150 mm” for the Indigo Cereal Bowl.",
+   "assertion": {
+    "op": "v2_product_text_pb",
+    "mode": "dims",
+    "rows": [
+     {
+      "name": "Oatmeal Breakfast Mug",
+      "care": "Dishwasher safe.",
+      "price": "$45",
+      "dims": "H 95 x Dia 85 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Indigo Cereal Bowl",
+      "care": "Hand wash only.",
+      "price": "$52",
+      "dims": "H 70 x Dia 150 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Oatmeal Pitcher",
+      "care": "Hand wash to keep the glaze bright, and avoid sudden changes in temperature.",
+      "price": "$96",
+      "dims": "H 220 x Dia 120 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Soft Clay Dinner Plate",
+      "care": "Dishwasher and microwave safe.",
+      "price": "$58",
+      "dims": "Dia 270 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Charcoal Milk Jug",
+      "care": "Hand wash only.",
+      "price": "$74",
+      "dims": "H 180 x Dia 100 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Oatmeal Bud Vase",
+      "care": "Wipe clean.",
+      "price": "$110",
+      "dims": "H 240 x Dia 110 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Indigo Serving Bowl",
+      "care": "Hand wash with a soft cloth. Do not use abrasive scourers, which dull the glaze over time.",
+      "price": "$128",
+      "dims": "H 110 x Dia 280 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Stoneware Tumbler",
+      "care": "Dishwasher safe.",
+      "price": "$46",
+      "dims": "H 100 x Dia 75 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Soft Clay Soup Bowl",
+      "care": "Hand wash only.",
+      "price": "$56",
+      "dims": "H 80 x Dia 160 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Charcoal Side Plate",
+      "care": "Dishwasher safe.",
+      "price": "$48",
+      "dims": "Dia 210 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Oatmeal Teapot",
+      "care": "Hand wash only. Rinse and air-dry after each use to keep the inside from staining.",
+      "price": "$150",
+      "dims": "H 160 x W 220 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Indigo Mug",
+      "care": "Dishwasher safe.",
+      "price": "$45",
+      "dims": "H 95 x Dia 85 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Soft Clay Serving Platter",
+      "care": "Hand wash only.",
+      "price": "$132",
+      "dims": "L 340 x W 220 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Charcoal Vase",
+      "care": "Wipe clean with a damp cloth.",
+      "price": "$165",
+      "dims": "H 300 x Dia 130 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Oatmeal Pasta Bowl",
+      "care": "Dishwasher safe.",
+      "price": "$62",
+      "dims": "H 55 x Dia 230 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Indigo Pitcher",
+      "care": "Hand wash to protect the glaze.",
+      "price": "$98",
+      "dims": "H 220 x Dia 120 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Soft Clay Espresso Cup",
+      "care": "Dishwasher safe.",
+      "price": "$45",
+      "dims": "H 60 x Dia 60 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Charcoal Serving Bowl",
+      "care": "Hand wash with a soft cloth. Avoid soaking for long periods, which can mark the foot.",
+      "price": "$138",
+      "dims": "H 120 x Dia 300 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Oatmeal Tumbler Set",
+      "care": "Dishwasher safe.",
+      "price": "$88",
+      "dims": "H 100 x Dia 75 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Indigo Dinner Plate",
+      "care": "Dishwasher and microwave safe.",
+      "price": "$58",
+      "dims": "Dia 270 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Soft Clay Vase",
+      "care": "Wipe clean.",
+      "price": "$120",
+      "dims": "H 260 x Dia 120 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Charcoal Mug",
+      "care": "Dishwasher safe.",
+      "price": "$45",
+      "dims": "H 95 x Dia 85 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Oatmeal Wool Throw",
+      "care": "Dry clean only.",
+      "price": "$180",
+      "dims": "130 x 180 cm",
+      "materials": "Handwoven wool"
+     },
+     {
+      "name": "Indigo Wool Throw",
+      "care": "Dry clean only. This piece may shed a little when new; a gentle shake outdoors is all it needs.",
+      "price": "$180",
+      "dims": "130 x 180 cm",
+      "materials": "Handwoven wool"
+     },
+     {
+      "name": "Soft Clay Table Runner",
+      "care": "Machine wash cold on a gentle cycle and lay flat to dry. Warm iron on the reverse; do not bleach or tumble dry.",
+      "price": "$68",
+      "dims": "40 x 200 cm",
+      "materials": "Linen and cotton"
+     },
+     {
+      "name": "Charcoal Wool Throw",
+      "care": "Dry clean only.",
+      "price": "$175",
+      "dims": "130 x 180 cm",
+      "materials": "Handwoven wool"
+     },
+     {
+      "name": "Striped Table Runner",
+      "care": "Machine wash cold. Lay flat to dry.",
+      "price": "$72",
+      "dims": "40 x 200 cm",
+      "materials": "Linen and cotton"
+     },
+     {
+      "name": "Indigo Table Runner",
+      "care": "Machine wash cold on a gentle cycle and lay flat to dry.",
+      "price": "$66",
+      "dims": "40 x 200 cm",
+      "materials": "Linen and cotton"
+     },
+     {
+      "name": "Oatmeal Cushion Cover",
+      "care": "Dry clean only.",
+      "price": "$58",
+      "dims": "50 x 50 cm",
+      "materials": "Handwoven wool"
+     },
+     {
+      "name": "Indigo Cushion Cover",
+      "care": "Dry clean only.",
+      "price": "$58",
+      "dims": "50 x 50 cm",
+      "materials": "Handwoven wool"
+     },
+     {
+      "name": "Soft Clay Napkin Set",
+      "care": "Machine wash warm and tumble dry low. A hot iron brings back the crispness, and the linen softens with every wash.",
+      "price": "$54",
+      "dims": "45 x 45 cm",
+      "materials": "Linen"
+     },
+     {
+      "name": "Charcoal Placemat Set",
+      "care": "Machine wash cold and lay flat to dry.",
+      "price": "$60",
+      "dims": "33 x 45 cm",
+      "materials": "Linen and cotton"
+     }
+    ]
+   },
+   "how": "Reads the PDF text, ties each product name, care line and price to its product, and compares it with the product table."
+  },
+  {
+   "check_id": "PHOTO-26/collection-spread/H007",
+   "output_id": "collection-spread",
+   "rule_id": "R008",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "Any materials line on “Autumn interiors collection spread” (collection-spread.pdf) matches the materials column of thornmere_autumn_skus.csv for its product, for example “Handwoven wool” for the Indigo Wool Throw.",
+   "assertion": {
+    "op": "v2_product_text_pb",
+    "mode": "materials",
+    "rows": [
+     {
+      "name": "Oatmeal Breakfast Mug",
+      "care": "Dishwasher safe.",
+      "price": "$45",
+      "dims": "H 95 x Dia 85 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Indigo Cereal Bowl",
+      "care": "Hand wash only.",
+      "price": "$52",
+      "dims": "H 70 x Dia 150 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Oatmeal Pitcher",
+      "care": "Hand wash to keep the glaze bright, and avoid sudden changes in temperature.",
+      "price": "$96",
+      "dims": "H 220 x Dia 120 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Soft Clay Dinner Plate",
+      "care": "Dishwasher and microwave safe.",
+      "price": "$58",
+      "dims": "Dia 270 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Charcoal Milk Jug",
+      "care": "Hand wash only.",
+      "price": "$74",
+      "dims": "H 180 x Dia 100 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Oatmeal Bud Vase",
+      "care": "Wipe clean.",
+      "price": "$110",
+      "dims": "H 240 x Dia 110 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Indigo Serving Bowl",
+      "care": "Hand wash with a soft cloth. Do not use abrasive scourers, which dull the glaze over time.",
+      "price": "$128",
+      "dims": "H 110 x Dia 280 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Stoneware Tumbler",
+      "care": "Dishwasher safe.",
+      "price": "$46",
+      "dims": "H 100 x Dia 75 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Soft Clay Soup Bowl",
+      "care": "Hand wash only.",
+      "price": "$56",
+      "dims": "H 80 x Dia 160 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Charcoal Side Plate",
+      "care": "Dishwasher safe.",
+      "price": "$48",
+      "dims": "Dia 210 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Oatmeal Teapot",
+      "care": "Hand wash only. Rinse and air-dry after each use to keep the inside from staining.",
+      "price": "$150",
+      "dims": "H 160 x W 220 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Indigo Mug",
+      "care": "Dishwasher safe.",
+      "price": "$45",
+      "dims": "H 95 x Dia 85 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Soft Clay Serving Platter",
+      "care": "Hand wash only.",
+      "price": "$132",
+      "dims": "L 340 x W 220 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Charcoal Vase",
+      "care": "Wipe clean with a damp cloth.",
+      "price": "$165",
+      "dims": "H 300 x Dia 130 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Oatmeal Pasta Bowl",
+      "care": "Dishwasher safe.",
+      "price": "$62",
+      "dims": "H 55 x Dia 230 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Indigo Pitcher",
+      "care": "Hand wash to protect the glaze.",
+      "price": "$98",
+      "dims": "H 220 x Dia 120 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Soft Clay Espresso Cup",
+      "care": "Dishwasher safe.",
+      "price": "$45",
+      "dims": "H 60 x Dia 60 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Charcoal Serving Bowl",
+      "care": "Hand wash with a soft cloth. Avoid soaking for long periods, which can mark the foot.",
+      "price": "$138",
+      "dims": "H 120 x Dia 300 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Oatmeal Tumbler Set",
+      "care": "Dishwasher safe.",
+      "price": "$88",
+      "dims": "H 100 x Dia 75 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Indigo Dinner Plate",
+      "care": "Dishwasher and microwave safe.",
+      "price": "$58",
+      "dims": "Dia 270 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Soft Clay Vase",
+      "care": "Wipe clean.",
+      "price": "$120",
+      "dims": "H 260 x Dia 120 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Charcoal Mug",
+      "care": "Dishwasher safe.",
+      "price": "$45",
+      "dims": "H 95 x Dia 85 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Oatmeal Wool Throw",
+      "care": "Dry clean only.",
+      "price": "$180",
+      "dims": "130 x 180 cm",
+      "materials": "Handwoven wool"
+     },
+     {
+      "name": "Indigo Wool Throw",
+      "care": "Dry clean only. This piece may shed a little when new; a gentle shake outdoors is all it needs.",
+      "price": "$180",
+      "dims": "130 x 180 cm",
+      "materials": "Handwoven wool"
+     },
+     {
+      "name": "Soft Clay Table Runner",
+      "care": "Machine wash cold on a gentle cycle and lay flat to dry. Warm iron on the reverse; do not bleach or tumble dry.",
+      "price": "$68",
+      "dims": "40 x 200 cm",
+      "materials": "Linen and cotton"
+     },
+     {
+      "name": "Charcoal Wool Throw",
+      "care": "Dry clean only.",
+      "price": "$175",
+      "dims": "130 x 180 cm",
+      "materials": "Handwoven wool"
+     },
+     {
+      "name": "Striped Table Runner",
+      "care": "Machine wash cold. Lay flat to dry.",
+      "price": "$72",
+      "dims": "40 x 200 cm",
+      "materials": "Linen and cotton"
+     },
+     {
+      "name": "Indigo Table Runner",
+      "care": "Machine wash cold on a gentle cycle and lay flat to dry.",
+      "price": "$66",
+      "dims": "40 x 200 cm",
+      "materials": "Linen and cotton"
+     },
+     {
+      "name": "Oatmeal Cushion Cover",
+      "care": "Dry clean only.",
+      "price": "$58",
+      "dims": "50 x 50 cm",
+      "materials": "Handwoven wool"
+     },
+     {
+      "name": "Indigo Cushion Cover",
+      "care": "Dry clean only.",
+      "price": "$58",
+      "dims": "50 x 50 cm",
+      "materials": "Handwoven wool"
+     },
+     {
+      "name": "Soft Clay Napkin Set",
+      "care": "Machine wash warm and tumble dry low. A hot iron brings back the crispness, and the linen softens with every wash.",
+      "price": "$54",
+      "dims": "45 x 45 cm",
+      "materials": "Linen"
+     },
+     {
+      "name": "Charcoal Placemat Set",
+      "care": "Machine wash cold and lay flat to dry.",
+      "price": "$60",
+      "dims": "33 x 45 cm",
+      "materials": "Linen and cotton"
+     }
+    ]
+   },
+   "how": "Reads the PDF text, ties each product name, care line and price to its product, and compares it with the product table."
+  },
+  {
+   "check_id": "PHOTO-26/collection-spread/H057",
+   "output_id": "collection-spread",
+   "rule_id": "R014",
+   "k_id": "K1_Q2",
+   "critical": false,
+   "check": "“Autumn interiors collection spread” (collection-spread.pdf) shows no crop marks or registration marks.",
+   "assertion": {
+    "op": "v2_pdf_printer_marks_pb"
+   },
+   "how": "Reads the PDF page boxes and drawn paths for crop and registration marks."
+  },
+  {
+   "check_id": "PHOTO-26/wholesale-presentation/H060",
+   "output_id": "wholesale-presentation",
+   "rule_id": "R014",
+   "k_id": "K1_Q2",
+   "critical": false,
+   "check": "“Interiors wholesale presentation” (wholesale-presentation.pdf) shows no crop marks or registration marks.",
+   "assertion": {
+    "op": "v2_pdf_printer_marks_pb"
+   },
+   "how": "Reads the PDF page boxes and drawn paths for crop and registration marks."
+  },
+  {
    "check_id": "PHOTO-26/collection-spread/H061",
    "output_id": "collection-spread",
    "rule_id": "R015",
@@ -30,6 +1646,1380 @@
     "no_bleed": true
    },
    "how": "Reads every page's size from the PDF."
+  },
+  {
+   "check_id": "PHOTO-26/wholesale-presentation/H003",
+   "output_id": "wholesale-presentation",
+   "rule_id": "R016",
+   "k_id": "K1_Q3",
+   "critical": false,
+   "check": "Every care line on “Interiors wholesale presentation” (wholesale-presentation.pdf) is its product's care_line text from thornmere_autumn_skus.csv word for word, neither shortened nor reworded.",
+   "assertion": {
+    "op": "v2_product_text_pb",
+    "mode": "care",
+    "rows": [
+     {
+      "name": "Oatmeal Breakfast Mug",
+      "care": "Dishwasher safe.",
+      "price": "$45",
+      "dims": "H 95 x Dia 85 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Indigo Cereal Bowl",
+      "care": "Hand wash only.",
+      "price": "$52",
+      "dims": "H 70 x Dia 150 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Oatmeal Pitcher",
+      "care": "Hand wash to keep the glaze bright, and avoid sudden changes in temperature.",
+      "price": "$96",
+      "dims": "H 220 x Dia 120 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Soft Clay Dinner Plate",
+      "care": "Dishwasher and microwave safe.",
+      "price": "$58",
+      "dims": "Dia 270 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Charcoal Milk Jug",
+      "care": "Hand wash only.",
+      "price": "$74",
+      "dims": "H 180 x Dia 100 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Oatmeal Bud Vase",
+      "care": "Wipe clean.",
+      "price": "$110",
+      "dims": "H 240 x Dia 110 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Indigo Serving Bowl",
+      "care": "Hand wash with a soft cloth. Do not use abrasive scourers, which dull the glaze over time.",
+      "price": "$128",
+      "dims": "H 110 x Dia 280 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Stoneware Tumbler",
+      "care": "Dishwasher safe.",
+      "price": "$46",
+      "dims": "H 100 x Dia 75 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Soft Clay Soup Bowl",
+      "care": "Hand wash only.",
+      "price": "$56",
+      "dims": "H 80 x Dia 160 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Charcoal Side Plate",
+      "care": "Dishwasher safe.",
+      "price": "$48",
+      "dims": "Dia 210 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Oatmeal Teapot",
+      "care": "Hand wash only. Rinse and air-dry after each use to keep the inside from staining.",
+      "price": "$150",
+      "dims": "H 160 x W 220 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Indigo Mug",
+      "care": "Dishwasher safe.",
+      "price": "$45",
+      "dims": "H 95 x Dia 85 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Soft Clay Serving Platter",
+      "care": "Hand wash only.",
+      "price": "$132",
+      "dims": "L 340 x W 220 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Charcoal Vase",
+      "care": "Wipe clean with a damp cloth.",
+      "price": "$165",
+      "dims": "H 300 x Dia 130 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Oatmeal Pasta Bowl",
+      "care": "Dishwasher safe.",
+      "price": "$62",
+      "dims": "H 55 x Dia 230 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Indigo Pitcher",
+      "care": "Hand wash to protect the glaze.",
+      "price": "$98",
+      "dims": "H 220 x Dia 120 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Soft Clay Espresso Cup",
+      "care": "Dishwasher safe.",
+      "price": "$45",
+      "dims": "H 60 x Dia 60 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Charcoal Serving Bowl",
+      "care": "Hand wash with a soft cloth. Avoid soaking for long periods, which can mark the foot.",
+      "price": "$138",
+      "dims": "H 120 x Dia 300 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Oatmeal Tumbler Set",
+      "care": "Dishwasher safe.",
+      "price": "$88",
+      "dims": "H 100 x Dia 75 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Indigo Dinner Plate",
+      "care": "Dishwasher and microwave safe.",
+      "price": "$58",
+      "dims": "Dia 270 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Soft Clay Vase",
+      "care": "Wipe clean.",
+      "price": "$120",
+      "dims": "H 260 x Dia 120 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Charcoal Mug",
+      "care": "Dishwasher safe.",
+      "price": "$45",
+      "dims": "H 95 x Dia 85 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Oatmeal Wool Throw",
+      "care": "Dry clean only.",
+      "price": "$180",
+      "dims": "130 x 180 cm",
+      "materials": "Handwoven wool"
+     },
+     {
+      "name": "Indigo Wool Throw",
+      "care": "Dry clean only. This piece may shed a little when new; a gentle shake outdoors is all it needs.",
+      "price": "$180",
+      "dims": "130 x 180 cm",
+      "materials": "Handwoven wool"
+     },
+     {
+      "name": "Soft Clay Table Runner",
+      "care": "Machine wash cold on a gentle cycle and lay flat to dry. Warm iron on the reverse; do not bleach or tumble dry.",
+      "price": "$68",
+      "dims": "40 x 200 cm",
+      "materials": "Linen and cotton"
+     },
+     {
+      "name": "Charcoal Wool Throw",
+      "care": "Dry clean only.",
+      "price": "$175",
+      "dims": "130 x 180 cm",
+      "materials": "Handwoven wool"
+     },
+     {
+      "name": "Striped Table Runner",
+      "care": "Machine wash cold. Lay flat to dry.",
+      "price": "$72",
+      "dims": "40 x 200 cm",
+      "materials": "Linen and cotton"
+     },
+     {
+      "name": "Indigo Table Runner",
+      "care": "Machine wash cold on a gentle cycle and lay flat to dry.",
+      "price": "$66",
+      "dims": "40 x 200 cm",
+      "materials": "Linen and cotton"
+     },
+     {
+      "name": "Oatmeal Cushion Cover",
+      "care": "Dry clean only.",
+      "price": "$58",
+      "dims": "50 x 50 cm",
+      "materials": "Handwoven wool"
+     },
+     {
+      "name": "Indigo Cushion Cover",
+      "care": "Dry clean only.",
+      "price": "$58",
+      "dims": "50 x 50 cm",
+      "materials": "Handwoven wool"
+     },
+     {
+      "name": "Soft Clay Napkin Set",
+      "care": "Machine wash warm and tumble dry low. A hot iron brings back the crispness, and the linen softens with every wash.",
+      "price": "$54",
+      "dims": "45 x 45 cm",
+      "materials": "Linen"
+     },
+     {
+      "name": "Charcoal Placemat Set",
+      "care": "Machine wash cold and lay flat to dry.",
+      "price": "$60",
+      "dims": "33 x 45 cm",
+      "materials": "Linen and cotton"
+     }
+    ],
+    "require": true
+   },
+   "how": "Reads the PDF text, ties each product name, care line and price to its product, and compares it with the product table."
+  },
+  {
+   "check_id": "PHOTO-26/collection-spread/H008",
+   "output_id": "collection-spread",
+   "rule_id": "R017",
+   "k_id": "K1_Q3",
+   "critical": false,
+   "check": "Any care line on “Autumn interiors collection spread” (collection-spread.pdf) is its product's care_line text from thornmere_autumn_skus.csv word for word, neither shortened nor reworded.",
+   "assertion": {
+    "op": "v2_product_text_pb",
+    "mode": "care",
+    "rows": [
+     {
+      "name": "Oatmeal Breakfast Mug",
+      "care": "Dishwasher safe.",
+      "price": "$45",
+      "dims": "H 95 x Dia 85 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Indigo Cereal Bowl",
+      "care": "Hand wash only.",
+      "price": "$52",
+      "dims": "H 70 x Dia 150 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Oatmeal Pitcher",
+      "care": "Hand wash to keep the glaze bright, and avoid sudden changes in temperature.",
+      "price": "$96",
+      "dims": "H 220 x Dia 120 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Soft Clay Dinner Plate",
+      "care": "Dishwasher and microwave safe.",
+      "price": "$58",
+      "dims": "Dia 270 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Charcoal Milk Jug",
+      "care": "Hand wash only.",
+      "price": "$74",
+      "dims": "H 180 x Dia 100 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Oatmeal Bud Vase",
+      "care": "Wipe clean.",
+      "price": "$110",
+      "dims": "H 240 x Dia 110 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Indigo Serving Bowl",
+      "care": "Hand wash with a soft cloth. Do not use abrasive scourers, which dull the glaze over time.",
+      "price": "$128",
+      "dims": "H 110 x Dia 280 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Stoneware Tumbler",
+      "care": "Dishwasher safe.",
+      "price": "$46",
+      "dims": "H 100 x Dia 75 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Soft Clay Soup Bowl",
+      "care": "Hand wash only.",
+      "price": "$56",
+      "dims": "H 80 x Dia 160 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Charcoal Side Plate",
+      "care": "Dishwasher safe.",
+      "price": "$48",
+      "dims": "Dia 210 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Oatmeal Teapot",
+      "care": "Hand wash only. Rinse and air-dry after each use to keep the inside from staining.",
+      "price": "$150",
+      "dims": "H 160 x W 220 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Indigo Mug",
+      "care": "Dishwasher safe.",
+      "price": "$45",
+      "dims": "H 95 x Dia 85 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Soft Clay Serving Platter",
+      "care": "Hand wash only.",
+      "price": "$132",
+      "dims": "L 340 x W 220 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Charcoal Vase",
+      "care": "Wipe clean with a damp cloth.",
+      "price": "$165",
+      "dims": "H 300 x Dia 130 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Oatmeal Pasta Bowl",
+      "care": "Dishwasher safe.",
+      "price": "$62",
+      "dims": "H 55 x Dia 230 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Indigo Pitcher",
+      "care": "Hand wash to protect the glaze.",
+      "price": "$98",
+      "dims": "H 220 x Dia 120 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Soft Clay Espresso Cup",
+      "care": "Dishwasher safe.",
+      "price": "$45",
+      "dims": "H 60 x Dia 60 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Charcoal Serving Bowl",
+      "care": "Hand wash with a soft cloth. Avoid soaking for long periods, which can mark the foot.",
+      "price": "$138",
+      "dims": "H 120 x Dia 300 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Oatmeal Tumbler Set",
+      "care": "Dishwasher safe.",
+      "price": "$88",
+      "dims": "H 100 x Dia 75 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Indigo Dinner Plate",
+      "care": "Dishwasher and microwave safe.",
+      "price": "$58",
+      "dims": "Dia 270 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Soft Clay Vase",
+      "care": "Wipe clean.",
+      "price": "$120",
+      "dims": "H 260 x Dia 120 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Charcoal Mug",
+      "care": "Dishwasher safe.",
+      "price": "$45",
+      "dims": "H 95 x Dia 85 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Oatmeal Wool Throw",
+      "care": "Dry clean only.",
+      "price": "$180",
+      "dims": "130 x 180 cm",
+      "materials": "Handwoven wool"
+     },
+     {
+      "name": "Indigo Wool Throw",
+      "care": "Dry clean only. This piece may shed a little when new; a gentle shake outdoors is all it needs.",
+      "price": "$180",
+      "dims": "130 x 180 cm",
+      "materials": "Handwoven wool"
+     },
+     {
+      "name": "Soft Clay Table Runner",
+      "care": "Machine wash cold on a gentle cycle and lay flat to dry. Warm iron on the reverse; do not bleach or tumble dry.",
+      "price": "$68",
+      "dims": "40 x 200 cm",
+      "materials": "Linen and cotton"
+     },
+     {
+      "name": "Charcoal Wool Throw",
+      "care": "Dry clean only.",
+      "price": "$175",
+      "dims": "130 x 180 cm",
+      "materials": "Handwoven wool"
+     },
+     {
+      "name": "Striped Table Runner",
+      "care": "Machine wash cold. Lay flat to dry.",
+      "price": "$72",
+      "dims": "40 x 200 cm",
+      "materials": "Linen and cotton"
+     },
+     {
+      "name": "Indigo Table Runner",
+      "care": "Machine wash cold on a gentle cycle and lay flat to dry.",
+      "price": "$66",
+      "dims": "40 x 200 cm",
+      "materials": "Linen and cotton"
+     },
+     {
+      "name": "Oatmeal Cushion Cover",
+      "care": "Dry clean only.",
+      "price": "$58",
+      "dims": "50 x 50 cm",
+      "materials": "Handwoven wool"
+     },
+     {
+      "name": "Indigo Cushion Cover",
+      "care": "Dry clean only.",
+      "price": "$58",
+      "dims": "50 x 50 cm",
+      "materials": "Handwoven wool"
+     },
+     {
+      "name": "Soft Clay Napkin Set",
+      "care": "Machine wash warm and tumble dry low. A hot iron brings back the crispness, and the linen softens with every wash.",
+      "price": "$54",
+      "dims": "45 x 45 cm",
+      "materials": "Linen"
+     },
+     {
+      "name": "Charcoal Placemat Set",
+      "care": "Machine wash cold and lay flat to dry.",
+      "price": "$60",
+      "dims": "33 x 45 cm",
+      "materials": "Linen and cotton"
+     }
+    ],
+    "require": false
+   },
+   "how": "Reads the PDF text, ties each product name, care line and price to its product, and compares it with the product table."
+  },
+  {
+   "check_id": "PHOTO-26/collection-spread/H009",
+   "output_id": "collection-spread",
+   "rule_id": "R019",
+   "k_id": "K1_Q5",
+   "critical": true,
+   "check": "No price on “Autumn interiors collection spread” (collection-spread.pdf) differs from the price column of thornmere_autumn_skus.csv for its product.",
+   "assertion": {
+    "op": "v2_product_text_pb",
+    "mode": "price",
+    "rows": [
+     {
+      "name": "Oatmeal Breakfast Mug",
+      "care": "Dishwasher safe.",
+      "price": "$45",
+      "dims": "H 95 x Dia 85 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Indigo Cereal Bowl",
+      "care": "Hand wash only.",
+      "price": "$52",
+      "dims": "H 70 x Dia 150 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Oatmeal Pitcher",
+      "care": "Hand wash to keep the glaze bright, and avoid sudden changes in temperature.",
+      "price": "$96",
+      "dims": "H 220 x Dia 120 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Soft Clay Dinner Plate",
+      "care": "Dishwasher and microwave safe.",
+      "price": "$58",
+      "dims": "Dia 270 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Charcoal Milk Jug",
+      "care": "Hand wash only.",
+      "price": "$74",
+      "dims": "H 180 x Dia 100 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Oatmeal Bud Vase",
+      "care": "Wipe clean.",
+      "price": "$110",
+      "dims": "H 240 x Dia 110 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Indigo Serving Bowl",
+      "care": "Hand wash with a soft cloth. Do not use abrasive scourers, which dull the glaze over time.",
+      "price": "$128",
+      "dims": "H 110 x Dia 280 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Stoneware Tumbler",
+      "care": "Dishwasher safe.",
+      "price": "$46",
+      "dims": "H 100 x Dia 75 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Soft Clay Soup Bowl",
+      "care": "Hand wash only.",
+      "price": "$56",
+      "dims": "H 80 x Dia 160 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Charcoal Side Plate",
+      "care": "Dishwasher safe.",
+      "price": "$48",
+      "dims": "Dia 210 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Oatmeal Teapot",
+      "care": "Hand wash only. Rinse and air-dry after each use to keep the inside from staining.",
+      "price": "$150",
+      "dims": "H 160 x W 220 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Indigo Mug",
+      "care": "Dishwasher safe.",
+      "price": "$45",
+      "dims": "H 95 x Dia 85 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Soft Clay Serving Platter",
+      "care": "Hand wash only.",
+      "price": "$132",
+      "dims": "L 340 x W 220 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Charcoal Vase",
+      "care": "Wipe clean with a damp cloth.",
+      "price": "$165",
+      "dims": "H 300 x Dia 130 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Oatmeal Pasta Bowl",
+      "care": "Dishwasher safe.",
+      "price": "$62",
+      "dims": "H 55 x Dia 230 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Indigo Pitcher",
+      "care": "Hand wash to protect the glaze.",
+      "price": "$98",
+      "dims": "H 220 x Dia 120 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Soft Clay Espresso Cup",
+      "care": "Dishwasher safe.",
+      "price": "$45",
+      "dims": "H 60 x Dia 60 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Charcoal Serving Bowl",
+      "care": "Hand wash with a soft cloth. Avoid soaking for long periods, which can mark the foot.",
+      "price": "$138",
+      "dims": "H 120 x Dia 300 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Oatmeal Tumbler Set",
+      "care": "Dishwasher safe.",
+      "price": "$88",
+      "dims": "H 100 x Dia 75 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Indigo Dinner Plate",
+      "care": "Dishwasher and microwave safe.",
+      "price": "$58",
+      "dims": "Dia 270 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Soft Clay Vase",
+      "care": "Wipe clean.",
+      "price": "$120",
+      "dims": "H 260 x Dia 120 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Charcoal Mug",
+      "care": "Dishwasher safe.",
+      "price": "$45",
+      "dims": "H 95 x Dia 85 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Oatmeal Wool Throw",
+      "care": "Dry clean only.",
+      "price": "$180",
+      "dims": "130 x 180 cm",
+      "materials": "Handwoven wool"
+     },
+     {
+      "name": "Indigo Wool Throw",
+      "care": "Dry clean only. This piece may shed a little when new; a gentle shake outdoors is all it needs.",
+      "price": "$180",
+      "dims": "130 x 180 cm",
+      "materials": "Handwoven wool"
+     },
+     {
+      "name": "Soft Clay Table Runner",
+      "care": "Machine wash cold on a gentle cycle and lay flat to dry. Warm iron on the reverse; do not bleach or tumble dry.",
+      "price": "$68",
+      "dims": "40 x 200 cm",
+      "materials": "Linen and cotton"
+     },
+     {
+      "name": "Charcoal Wool Throw",
+      "care": "Dry clean only.",
+      "price": "$175",
+      "dims": "130 x 180 cm",
+      "materials": "Handwoven wool"
+     },
+     {
+      "name": "Striped Table Runner",
+      "care": "Machine wash cold. Lay flat to dry.",
+      "price": "$72",
+      "dims": "40 x 200 cm",
+      "materials": "Linen and cotton"
+     },
+     {
+      "name": "Indigo Table Runner",
+      "care": "Machine wash cold on a gentle cycle and lay flat to dry.",
+      "price": "$66",
+      "dims": "40 x 200 cm",
+      "materials": "Linen and cotton"
+     },
+     {
+      "name": "Oatmeal Cushion Cover",
+      "care": "Dry clean only.",
+      "price": "$58",
+      "dims": "50 x 50 cm",
+      "materials": "Handwoven wool"
+     },
+     {
+      "name": "Indigo Cushion Cover",
+      "care": "Dry clean only.",
+      "price": "$58",
+      "dims": "50 x 50 cm",
+      "materials": "Handwoven wool"
+     },
+     {
+      "name": "Soft Clay Napkin Set",
+      "care": "Machine wash warm and tumble dry low. A hot iron brings back the crispness, and the linen softens with every wash.",
+      "price": "$54",
+      "dims": "45 x 45 cm",
+      "materials": "Linen"
+     },
+     {
+      "name": "Charcoal Placemat Set",
+      "care": "Machine wash cold and lay flat to dry.",
+      "price": "$60",
+      "dims": "33 x 45 cm",
+      "materials": "Linen and cotton"
+     }
+    ],
+    "require": false
+   },
+   "how": "Reads the PDF text, ties each product name, care line and price to its product, and compares it with the product table."
+  },
+  {
+   "check_id": "PHOTO-26/wholesale-presentation/H004",
+   "output_id": "wholesale-presentation",
+   "rule_id": "R019",
+   "k_id": "K1_Q5",
+   "critical": true,
+   "check": "No price on “Interiors wholesale presentation” (wholesale-presentation.pdf) differs from the price column of thornmere_autumn_skus.csv for its product.",
+   "assertion": {
+    "op": "v2_product_text_pb",
+    "mode": "price",
+    "rows": [
+     {
+      "name": "Oatmeal Breakfast Mug",
+      "care": "Dishwasher safe.",
+      "price": "$45",
+      "dims": "H 95 x Dia 85 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Indigo Cereal Bowl",
+      "care": "Hand wash only.",
+      "price": "$52",
+      "dims": "H 70 x Dia 150 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Oatmeal Pitcher",
+      "care": "Hand wash to keep the glaze bright, and avoid sudden changes in temperature.",
+      "price": "$96",
+      "dims": "H 220 x Dia 120 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Soft Clay Dinner Plate",
+      "care": "Dishwasher and microwave safe.",
+      "price": "$58",
+      "dims": "Dia 270 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Charcoal Milk Jug",
+      "care": "Hand wash only.",
+      "price": "$74",
+      "dims": "H 180 x Dia 100 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Oatmeal Bud Vase",
+      "care": "Wipe clean.",
+      "price": "$110",
+      "dims": "H 240 x Dia 110 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Indigo Serving Bowl",
+      "care": "Hand wash with a soft cloth. Do not use abrasive scourers, which dull the glaze over time.",
+      "price": "$128",
+      "dims": "H 110 x Dia 280 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Stoneware Tumbler",
+      "care": "Dishwasher safe.",
+      "price": "$46",
+      "dims": "H 100 x Dia 75 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Soft Clay Soup Bowl",
+      "care": "Hand wash only.",
+      "price": "$56",
+      "dims": "H 80 x Dia 160 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Charcoal Side Plate",
+      "care": "Dishwasher safe.",
+      "price": "$48",
+      "dims": "Dia 210 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Oatmeal Teapot",
+      "care": "Hand wash only. Rinse and air-dry after each use to keep the inside from staining.",
+      "price": "$150",
+      "dims": "H 160 x W 220 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Indigo Mug",
+      "care": "Dishwasher safe.",
+      "price": "$45",
+      "dims": "H 95 x Dia 85 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Soft Clay Serving Platter",
+      "care": "Hand wash only.",
+      "price": "$132",
+      "dims": "L 340 x W 220 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Charcoal Vase",
+      "care": "Wipe clean with a damp cloth.",
+      "price": "$165",
+      "dims": "H 300 x Dia 130 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Oatmeal Pasta Bowl",
+      "care": "Dishwasher safe.",
+      "price": "$62",
+      "dims": "H 55 x Dia 230 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Indigo Pitcher",
+      "care": "Hand wash to protect the glaze.",
+      "price": "$98",
+      "dims": "H 220 x Dia 120 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Soft Clay Espresso Cup",
+      "care": "Dishwasher safe.",
+      "price": "$45",
+      "dims": "H 60 x Dia 60 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Charcoal Serving Bowl",
+      "care": "Hand wash with a soft cloth. Avoid soaking for long periods, which can mark the foot.",
+      "price": "$138",
+      "dims": "H 120 x Dia 300 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Oatmeal Tumbler Set",
+      "care": "Dishwasher safe.",
+      "price": "$88",
+      "dims": "H 100 x Dia 75 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Indigo Dinner Plate",
+      "care": "Dishwasher and microwave safe.",
+      "price": "$58",
+      "dims": "Dia 270 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Soft Clay Vase",
+      "care": "Wipe clean.",
+      "price": "$120",
+      "dims": "H 260 x Dia 120 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Charcoal Mug",
+      "care": "Dishwasher safe.",
+      "price": "$45",
+      "dims": "H 95 x Dia 85 mm",
+      "materials": "Glazed stoneware"
+     },
+     {
+      "name": "Oatmeal Wool Throw",
+      "care": "Dry clean only.",
+      "price": "$180",
+      "dims": "130 x 180 cm",
+      "materials": "Handwoven wool"
+     },
+     {
+      "name": "Indigo Wool Throw",
+      "care": "Dry clean only. This piece may shed a little when new; a gentle shake outdoors is all it needs.",
+      "price": "$180",
+      "dims": "130 x 180 cm",
+      "materials": "Handwoven wool"
+     },
+     {
+      "name": "Soft Clay Table Runner",
+      "care": "Machine wash cold on a gentle cycle and lay flat to dry. Warm iron on the reverse; do not bleach or tumble dry.",
+      "price": "$68",
+      "dims": "40 x 200 cm",
+      "materials": "Linen and cotton"
+     },
+     {
+      "name": "Charcoal Wool Throw",
+      "care": "Dry clean only.",
+      "price": "$175",
+      "dims": "130 x 180 cm",
+      "materials": "Handwoven wool"
+     },
+     {
+      "name": "Striped Table Runner",
+      "care": "Machine wash cold. Lay flat to dry.",
+      "price": "$72",
+      "dims": "40 x 200 cm",
+      "materials": "Linen and cotton"
+     },
+     {
+      "name": "Indigo Table Runner",
+      "care": "Machine wash cold on a gentle cycle and lay flat to dry.",
+      "price": "$66",
+      "dims": "40 x 200 cm",
+      "materials": "Linen and cotton"
+     },
+     {
+      "name": "Oatmeal Cushion Cover",
+      "care": "Dry clean only.",
+      "price": "$58",
+      "dims": "50 x 50 cm",
+      "materials": "Handwoven wool"
+     },
+     {
+      "name": "Indigo Cushion Cover",
+      "care": "Dry clean only.",
+      "price": "$58",
+      "dims": "50 x 50 cm",
+      "materials": "Handwoven wool"
+     },
+     {
+      "name": "Soft Clay Napkin Set",
+      "care": "Machine wash warm and tumble dry low. A hot iron brings back the crispness, and the linen softens with every wash.",
+      "price": "$54",
+      "dims": "45 x 45 cm",
+      "materials": "Linen"
+     },
+     {
+      "name": "Charcoal Placemat Set",
+      "care": "Machine wash cold and lay flat to dry.",
+      "price": "$60",
+      "dims": "33 x 45 cm",
+      "materials": "Linen and cotton"
+     }
+    ],
+    "require": false
+   },
+   "how": "Reads the PDF text, ties each product name, care line and price to its product, and compares it with the product table."
+  },
+  {
+   "check_id": "PHOTO-26/wholesale-presentation/H013",
+   "output_id": "wholesale-presentation",
+   "rule_id": "R020",
+   "k_id": "K1_Q5",
+   "critical": true,
+   "check": "Wherever autumn_shoot_04.jpg, autumn_shoot_07.jpg, autumn_shoot_10.jpg or autumn_shoot_13.jpg is used on “Interiors wholesale presentation” (wholesale-presentation.pdf), both pieces in that photograph appear whole; neither is dropped or cut away.",
+   "assertion": {
+    "op": "v2_pdf_photos_pb",
+    "photos": [
+     "autumn_shoot_01.jpg",
+     "autumn_shoot_02.jpg",
+     "autumn_shoot_03.jpg",
+     "autumn_shoot_04.jpg",
+     "autumn_shoot_05.jpg",
+     "autumn_shoot_06.jpg",
+     "autumn_shoot_07.jpg",
+     "autumn_shoot_08.jpg",
+     "autumn_shoot_09.jpg",
+     "autumn_shoot_10.jpg",
+     "autumn_shoot_11.jpg",
+     "autumn_shoot_12.jpg",
+     "autumn_shoot_13.jpg",
+     "autumn_shoot_14.jpg",
+     "textile_flatlay_01.jpg",
+     "textile_flatlay_02.jpg",
+     "textile_flatlay_03.jpg",
+     "textile_flatlay_04.jpg",
+     "textile_flatlay_05.jpg",
+     "textile_flatlay_06.jpg"
+    ],
+    "by_photo": {
+     "autumn_shoot_04.jpg": {
+      "pass_if": [
+       [
+        "frame_share",
+        ">=",
+        0.98
+       ],
+       [
+        "ncc_min",
+        ">=",
+        0.95
+       ]
+      ],
+      "region": "subject"
+     },
+     "autumn_shoot_07.jpg": {
+      "pass_if": [
+       [
+        "frame_share",
+        ">=",
+        0.98
+       ],
+       [
+        "ncc_min",
+        ">=",
+        0.95
+       ]
+      ],
+      "region": "subject"
+     },
+     "autumn_shoot_10.jpg": {
+      "pass_if": [
+       [
+        "frame_share",
+        ">=",
+        0.98
+       ],
+       [
+        "ncc_min",
+        ">=",
+        0.95
+       ]
+      ],
+      "region": "subject"
+     },
+     "autumn_shoot_13.jpg": {
+      "pass_if": [
+       [
+        "frame_share",
+        ">=",
+        0.98
+       ],
+       [
+        "ncc_min",
+        ">=",
+        0.95
+       ]
+      ],
+      "region": "subject"
+     }
+    }
+   },
+   "how": "Reads every picture placed in the PDF, identifies its supplied photo and compares the colours tile by tile."
+  },
+  {
+   "check_id": "PHOTO-26/collection-spread/H002",
+   "output_id": "collection-spread",
+   "rule_id": "R023",
+   "k_id": "K2_Q1",
+   "critical": false,
+   "check": "Every indigo-glazed or indigo-dyed piece pictured on “Autumn interiors collection spread” (collection-spread.pdf) is cut from autumn_shoot_02.jpg, autumn_shoot_08.jpg, autumn_shoot_14.jpg, textile_flatlay_02.jpg, textile_flatlay_05.jpg or textile_flatlay_06.jpg, never from thornmere_colour_note_phone.jpg.",
+   "assertion": {
+    "op": "v2_pdf_photos_pb",
+    "photos": [
+     "autumn_shoot_01.jpg",
+     "autumn_shoot_02.jpg",
+     "autumn_shoot_03.jpg",
+     "autumn_shoot_04.jpg",
+     "autumn_shoot_05.jpg",
+     "autumn_shoot_06.jpg",
+     "autumn_shoot_07.jpg",
+     "autumn_shoot_08.jpg",
+     "autumn_shoot_09.jpg",
+     "autumn_shoot_10.jpg",
+     "autumn_shoot_11.jpg",
+     "autumn_shoot_12.jpg",
+     "autumn_shoot_13.jpg",
+     "autumn_shoot_14.jpg",
+     "textile_flatlay_01.jpg",
+     "textile_flatlay_02.jpg",
+     "textile_flatlay_03.jpg",
+     "textile_flatlay_04.jpg",
+     "textile_flatlay_05.jpg",
+     "textile_flatlay_06.jpg"
+    ],
+    "forbid": [
+     "thornmere_colour_note_phone.jpg"
+    ],
+    "region": "shown",
+    "pass_if": [
+     [
+      "rgb_max",
+      "<=",
+      5
+     ]
+    ]
+   },
+   "how": "Reads every picture placed in the PDF, identifies its supplied photo and compares the colours tile by tile."
+  },
+  {
+   "check_id": "PHOTO-26/wholesale-presentation/H017",
+   "output_id": "wholesale-presentation",
+   "rule_id": "R023",
+   "k_id": "K2_Q1",
+   "critical": false,
+   "check": "Every indigo-glazed or indigo-dyed piece pictured on “Interiors wholesale presentation” (wholesale-presentation.pdf) is cut from autumn_shoot_02.jpg, autumn_shoot_08.jpg, autumn_shoot_14.jpg, textile_flatlay_02.jpg, textile_flatlay_05.jpg or textile_flatlay_06.jpg, never from thornmere_colour_note_phone.jpg.",
+   "assertion": {
+    "op": "v2_pdf_photos_pb",
+    "photos": [
+     "autumn_shoot_01.jpg",
+     "autumn_shoot_02.jpg",
+     "autumn_shoot_03.jpg",
+     "autumn_shoot_04.jpg",
+     "autumn_shoot_05.jpg",
+     "autumn_shoot_06.jpg",
+     "autumn_shoot_07.jpg",
+     "autumn_shoot_08.jpg",
+     "autumn_shoot_09.jpg",
+     "autumn_shoot_10.jpg",
+     "autumn_shoot_11.jpg",
+     "autumn_shoot_12.jpg",
+     "autumn_shoot_13.jpg",
+     "autumn_shoot_14.jpg",
+     "textile_flatlay_01.jpg",
+     "textile_flatlay_02.jpg",
+     "textile_flatlay_03.jpg",
+     "textile_flatlay_04.jpg",
+     "textile_flatlay_05.jpg",
+     "textile_flatlay_06.jpg"
+    ],
+    "forbid": [
+     "thornmere_colour_note_phone.jpg"
+    ],
+    "region": "shown",
+    "pass_if": [
+     [
+      "rgb_max",
+      "<=",
+      5
+     ]
+    ]
+   },
+   "how": "Reads every picture placed in the PDF, identifies its supplied photo and compares the colours tile by tile."
+  },
+  {
+   "check_id": "PHOTO-26/collection-spread/H001",
+   "output_id": "collection-spread",
+   "rule_id": "R024",
+   "k_id": "K2_Q2",
+   "critical": false,
+   "check": "Every textile on “Autumn interiors collection spread” (collection-spread.pdf) keeps the weave, stripes and fringe of its own source photo, autumn_shoot_12.jpg or textile_flatlay_01.jpg to textile_flatlay_06.jpg, with no pattern changed or replaced.",
+   "assertion": {
+    "op": "v2_pdf_photos_pb",
+    "photos": [
+     "autumn_shoot_01.jpg",
+     "autumn_shoot_02.jpg",
+     "autumn_shoot_03.jpg",
+     "autumn_shoot_04.jpg",
+     "autumn_shoot_05.jpg",
+     "autumn_shoot_06.jpg",
+     "autumn_shoot_07.jpg",
+     "autumn_shoot_08.jpg",
+     "autumn_shoot_09.jpg",
+     "autumn_shoot_10.jpg",
+     "autumn_shoot_11.jpg",
+     "autumn_shoot_12.jpg",
+     "autumn_shoot_13.jpg",
+     "autumn_shoot_14.jpg",
+     "textile_flatlay_01.jpg",
+     "textile_flatlay_02.jpg",
+     "textile_flatlay_03.jpg",
+     "textile_flatlay_04.jpg",
+     "textile_flatlay_05.jpg",
+     "textile_flatlay_06.jpg"
+    ],
+    "by_photo": {
+     "autumn_shoot_12.jpg": {
+      "pass_if": [
+       [
+        "ncc_min",
+        ">=",
+        0.95
+       ]
+      ],
+      "region": "subject"
+     },
+     "textile_flatlay_01.jpg": {
+      "pass_if": [
+       [
+        "ncc_min",
+        ">=",
+        0.95
+       ]
+      ],
+      "region": "subject"
+     },
+     "textile_flatlay_02.jpg": {
+      "pass_if": [
+       [
+        "ncc_min",
+        ">=",
+        0.95
+       ]
+      ],
+      "region": "subject"
+     },
+     "textile_flatlay_03.jpg": {
+      "pass_if": [
+       [
+        "ncc_min",
+        ">=",
+        0.95
+       ]
+      ],
+      "region": "subject"
+     },
+     "textile_flatlay_04.jpg": {
+      "pass_if": [
+       [
+        "ncc_min",
+        ">=",
+        0.95
+       ]
+      ],
+      "region": "subject"
+     },
+     "textile_flatlay_05.jpg": {
+      "pass_if": [
+       [
+        "ncc_min",
+        ">=",
+        0.95
+       ]
+      ],
+      "region": "subject"
+     },
+     "textile_flatlay_06.jpg": {
+      "pass_if": [
+       [
+        "ncc_min",
+        ">=",
+        0.95
+       ]
+      ],
+      "region": "subject"
+     }
+    }
+   },
+   "how": "Reads every picture placed in the PDF, identifies its supplied photo and compares the colours tile by tile."
+  },
+  {
+   "check_id": "PHOTO-26/wholesale-presentation/H016",
+   "output_id": "wholesale-presentation",
+   "rule_id": "R024",
+   "k_id": "K2_Q2",
+   "critical": false,
+   "check": "Every textile on “Interiors wholesale presentation” (wholesale-presentation.pdf) keeps the weave, stripes and fringe of its own source photo, autumn_shoot_12.jpg or textile_flatlay_01.jpg to textile_flatlay_06.jpg, with no pattern changed or replaced.",
+   "assertion": {
+    "op": "v2_pdf_photos_pb",
+    "photos": [
+     "autumn_shoot_01.jpg",
+     "autumn_shoot_02.jpg",
+     "autumn_shoot_03.jpg",
+     "autumn_shoot_04.jpg",
+     "autumn_shoot_05.jpg",
+     "autumn_shoot_06.jpg",
+     "autumn_shoot_07.jpg",
+     "autumn_shoot_08.jpg",
+     "autumn_shoot_09.jpg",
+     "autumn_shoot_10.jpg",
+     "autumn_shoot_11.jpg",
+     "autumn_shoot_12.jpg",
+     "autumn_shoot_13.jpg",
+     "autumn_shoot_14.jpg",
+     "textile_flatlay_01.jpg",
+     "textile_flatlay_02.jpg",
+     "textile_flatlay_03.jpg",
+     "textile_flatlay_04.jpg",
+     "textile_flatlay_05.jpg",
+     "textile_flatlay_06.jpg"
+    ],
+    "by_photo": {
+     "autumn_shoot_12.jpg": {
+      "pass_if": [
+       [
+        "ncc_min",
+        ">=",
+        0.95
+       ]
+      ],
+      "region": "subject"
+     },
+     "textile_flatlay_01.jpg": {
+      "pass_if": [
+       [
+        "ncc_min",
+        ">=",
+        0.95
+       ]
+      ],
+      "region": "subject"
+     },
+     "textile_flatlay_02.jpg": {
+      "pass_if": [
+       [
+        "ncc_min",
+        ">=",
+        0.95
+       ]
+      ],
+      "region": "subject"
+     },
+     "textile_flatlay_03.jpg": {
+      "pass_if": [
+       [
+        "ncc_min",
+        ">=",
+        0.95
+       ]
+      ],
+      "region": "subject"
+     },
+     "textile_flatlay_04.jpg": {
+      "pass_if": [
+       [
+        "ncc_min",
+        ">=",
+        0.95
+       ]
+      ],
+      "region": "subject"
+     },
+     "textile_flatlay_05.jpg": {
+      "pass_if": [
+       [
+        "ncc_min",
+        ">=",
+        0.95
+       ]
+      ],
+      "region": "subject"
+     },
+     "textile_flatlay_06.jpg": {
+      "pass_if": [
+       [
+        "ncc_min",
+        ">=",
+        0.95
+       ]
+      ],
+      "region": "subject"
+     }
+    }
+   },
+   "how": "Reads every picture placed in the PDF, identifies its supplied photo and compares the colours tile by tile."
+  },
+  {
+   "check_id": "PHOTO-26/wholesale-presentation/H007",
+   "output_id": "wholesale-presentation",
+   "rule_id": "R025",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "“Interiors wholesale presentation” (wholesale-presentation.pdf) carries a coloured band that is one solid block of Soft Clay #C9A98E or Indigo Dye #33455E.",
+   "assertion": {
+    "op": "v2_pdf_grounds_pb",
+    "band": [
+     "#C9A98E",
+     "#33455E"
+    ]
+   },
+   "how": "Reads the page ground and the filled shapes drawn in the PDF: their colours, sizes and opacity."
   },
   {
    "check_id": "PHOTO-26/wholesale-presentation/H030",
@@ -75,6 +3065,108 @@
     "hex": "#F6F1E8"
    },
    "how": "Renders each page without photos and finds the colour covering the most area."
+  },
+  {
+   "check_id": "PHOTO-26/collection-spread/H030",
+   "output_id": "collection-spread",
+   "rule_id": "R028",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Every palette-coloured tile, panel, band, rule and line of type on “Autumn interiors collection spread” (collection-spread.pdf) is one flat, even colour, with no gradient, shadow or see-through area.",
+   "assertion": {
+    "op": "v2_pdf_flat_paint_pb"
+   },
+   "how": "Reads the PDF paint: opacity, shading, patterns, soft masks and blend modes."
+  },
+  {
+   "check_id": "PHOTO-26/wholesale-presentation/H032",
+   "output_id": "wholesale-presentation",
+   "rule_id": "R028",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Every palette-coloured tile, panel, band, rule and line of type on “Interiors wholesale presentation” (wholesale-presentation.pdf) is one flat, even colour, with no gradient, shadow or see-through area.",
+   "assertion": {
+    "op": "v2_pdf_flat_paint_pb"
+   },
+   "how": "Reads the PDF paint: opacity, shading, patterns, soft masks and blend modes."
+  },
+  {
+   "check_id": "PHOTO-26/collection-spread/H031",
+   "output_id": "collection-spread",
+   "rule_id": "R029",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "No ground, tile, panel or band on “Autumn interiors collection spread” (collection-spread.pdf) is Stoneware Charcoal #3B3733.",
+   "assertion": {
+    "op": "v2_pdf_grounds_pb",
+    "not": [
+     "#3B3733"
+    ]
+   },
+   "how": "Reads the page ground and the filled shapes drawn in the PDF: their colours, sizes and opacity."
+  },
+  {
+   "check_id": "PHOTO-26/wholesale-presentation/H033",
+   "output_id": "wholesale-presentation",
+   "rule_id": "R029",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "No ground, tile, panel or band on “Interiors wholesale presentation” (wholesale-presentation.pdf) is Stoneware Charcoal #3B3733.",
+   "assertion": {
+    "op": "v2_pdf_grounds_pb",
+    "not": [
+     "#3B3733"
+    ]
+   },
+   "how": "Reads the page ground and the filled shapes drawn in the PDF: their colours, sizes and opacity."
+  },
+  {
+   "check_id": "PHOTO-26/collection-spread/H032",
+   "output_id": "collection-spread",
+   "rule_id": "R030",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Soft Clay #C9A98E type on “Autumn interiors collection spread” (collection-spread.pdf) appears only in a running foot set on Warm Paper Ground #F6F1E8.",
+   "assertion": {
+    "op": "v2_colour_only_as_pb",
+    "hexes": [
+     "#C9A98E"
+    ],
+    "type_only": true,
+    "allow": [
+     {
+      "footer": true
+     }
+    ],
+    "foot_grounds": [
+     "#F6F1E8"
+    ]
+   },
+   "how": "Finds every piece in the colour outside the photographs and checks each is a thin rule or sits in an allowed text line."
+  },
+  {
+   "check_id": "PHOTO-26/wholesale-presentation/H034",
+   "output_id": "wholesale-presentation",
+   "rule_id": "R030",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Soft Clay #C9A98E type on “Interiors wholesale presentation” (wholesale-presentation.pdf) appears only in a running foot set on Warm Paper Ground #F6F1E8.",
+   "assertion": {
+    "op": "v2_colour_only_as_pb",
+    "hexes": [
+     "#C9A98E"
+    ],
+    "type_only": true,
+    "allow": [
+     {
+      "footer": true
+     }
+    ],
+    "foot_grounds": [
+     "#F6F1E8"
+    ]
+   },
+   "how": "Finds every piece in the colour outside the photographs and checks each is a thin rule or sits in an allowed text line."
   },
   {
    "check_id": "PHOTO-26/collection-spread/H028",
@@ -222,6 +3314,236 @@
    "how": "Renders the file without photos and measures the share of the named colours."
   },
   {
+   "check_id": "PHOTO-26/collection-spread/H054",
+   "output_id": "collection-spread",
+   "rule_id": "R035",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "No scrim, gradient or overlay of any colour, black and white included, is laid over a photograph on “Autumn interiors collection spread” (collection-spread.pdf).",
+   "assertion": {
+    "op": "v2_pdf_overlay_pb"
+   },
+   "how": "Reads the PDF's drawing order and checks nothing is drawn over a placed photo."
+  },
+  {
+   "check_id": "PHOTO-26/wholesale-presentation/H056",
+   "output_id": "wholesale-presentation",
+   "rule_id": "R035",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "No scrim, gradient or overlay of any colour, black and white included, is laid over a photograph on “Interiors wholesale presentation” (wholesale-presentation.pdf).",
+   "assertion": {
+    "op": "v2_pdf_overlay_pb"
+   },
+   "how": "Reads the PDF's drawing order and checks nothing is drawn over a placed photo."
+  },
+  {
+   "check_id": "PHOTO-26/wholesale-presentation/H058",
+   "output_id": "wholesale-presentation",
+   "rule_id": "R036",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The coloured band on “Interiors wholesale presentation” (wholesale-presentation.pdf) is the same colour on every page that carries it.",
+   "assertion": {
+    "op": "v2_pdf_grounds_pb",
+    "band_same": true
+   },
+   "how": "Reads the page ground and the filled shapes drawn in the PDF: their colours, sizes and opacity."
+  },
+  {
+   "check_id": "PHOTO-26/collection-spread/H056",
+   "output_id": "collection-spread",
+   "rule_id": "R037",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "If a Soft Clay running foot appears on “Autumn interiors collection spread” (collection-spread.pdf), it is set in capitals.",
+   "assertion": {
+    "op": "v2_role_style_pb",
+    "select": [
+     {
+      "colour": "#C9A98E",
+      "foot": true
+     }
+    ],
+    "caps": true,
+    "optional": true
+   },
+   "how": "Sorts the PDF text into roles by size and reads the font, size, letter case and line spacing of the named role."
+  },
+  {
+   "check_id": "PHOTO-26/wholesale-presentation/H059",
+   "output_id": "wholesale-presentation",
+   "rule_id": "R037",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "If a Soft Clay running foot appears on “Interiors wholesale presentation” (wholesale-presentation.pdf), it is set in capitals.",
+   "assertion": {
+    "op": "v2_role_style_pb",
+    "select": [
+     {
+      "colour": "#C9A98E",
+      "foot": true
+     }
+    ],
+    "caps": true,
+    "optional": true
+   },
+   "how": "Sorts the PDF text into roles by size and reads the font, size, letter case and line spacing of the named role."
+  },
+  {
+   "check_id": "PHOTO-26/collection-spread/H064",
+   "output_id": "collection-spread",
+   "rule_id": "R038",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "If a Soft Clay running foot appears on “Autumn interiors collection spread” (collection-spread.pdf), its letter spacing is visibly open, clearly looser than ordinary text.",
+   "assertion": {
+    "op": "v2_pdf_tracking_pb",
+    "foot_colour": "#C9A98E"
+   },
+   "how": "Measures letter spacing from the PDF glyph positions and compares it with the commonest text."
+  },
+  {
+   "check_id": "PHOTO-26/wholesale-presentation/H070",
+   "output_id": "wholesale-presentation",
+   "rule_id": "R038",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "If a Soft Clay running foot appears on “Interiors wholesale presentation” (wholesale-presentation.pdf), its letter spacing is visibly open, clearly looser than ordinary text.",
+   "assertion": {
+    "op": "v2_pdf_tracking_pb",
+    "foot_colour": "#C9A98E"
+   },
+   "how": "Measures letter spacing from the PDF glyph positions and compares it with the commonest text."
+  },
+  {
+   "check_id": "PHOTO-26/wholesale-presentation/H006",
+   "output_id": "wholesale-presentation",
+   "rule_id": "R039",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Every product name and main heading on “Interiors wholesale presentation” (wholesale-presentation.pdf) is set in Barlow Condensed Medium, never a serif, Inter or another weight.",
+   "assertion": {
+    "op": "v2_role_style_pb",
+    "select": [
+     {
+      "products": [
+       "Oatmeal Breakfast Mug",
+       "Indigo Cereal Bowl",
+       "Oatmeal Pitcher",
+       "Soft Clay Dinner Plate",
+       "Charcoal Milk Jug",
+       "Oatmeal Bud Vase",
+       "Indigo Serving Bowl",
+       "Stoneware Tumbler",
+       "Soft Clay Soup Bowl",
+       "Charcoal Side Plate",
+       "Oatmeal Teapot",
+       "Indigo Mug",
+       "Soft Clay Serving Platter",
+       "Charcoal Vase",
+       "Oatmeal Pasta Bowl",
+       "Indigo Pitcher",
+       "Soft Clay Espresso Cup",
+       "Charcoal Serving Bowl",
+       "Oatmeal Tumbler Set",
+       "Indigo Dinner Plate",
+       "Soft Clay Vase",
+       "Charcoal Mug",
+       "Oatmeal Wool Throw",
+       "Indigo Wool Throw",
+       "Soft Clay Table Runner",
+       "Charcoal Wool Throw",
+       "Striped Table Runner",
+       "Indigo Table Runner",
+       "Oatmeal Cushion Cover",
+       "Indigo Cushion Cover",
+       "Soft Clay Napkin Set",
+       "Charcoal Placemat Set"
+      ]
+     },
+     "main",
+     "page_main",
+     {
+      "h1": [
+       "THORNMERE HOME"
+      ]
+     }
+    ],
+    "family": "Barlow Condensed",
+    "weight": "Medium"
+   },
+   "how": "Sorts the PDF text into roles by size and reads the font, size, letter case and line spacing of the named role."
+  },
+  {
+   "check_id": "PHOTO-26/collection-spread/H023",
+   "output_id": "collection-spread",
+   "rule_id": "R040",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Any body text on “Autumn interiors collection spread” (collection-spread.pdf) is set in Source Serif 4 Regular, not italic, bold or a sans.",
+   "assertion": {
+    "op": "v2_role_style_pb",
+    "select": [
+     "body"
+    ],
+    "family": "Source Serif 4",
+    "weight": "Regular",
+    "optional": true
+   },
+   "how": "Sorts the PDF text into roles by size and reads the font, size, letter case and line spacing of the named role."
+  },
+  {
+   "check_id": "PHOTO-26/wholesale-presentation/H026",
+   "output_id": "wholesale-presentation",
+   "rule_id": "R040",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Any body text on “Interiors wholesale presentation” (wholesale-presentation.pdf) is set in Source Serif 4 Regular, not italic, bold or a sans.",
+   "assertion": {
+    "op": "v2_role_style_pb",
+    "select": [
+     "body"
+    ],
+    "family": "Source Serif 4",
+    "weight": "Regular",
+    "optional": true
+   },
+   "how": "Sorts the PDF text into roles by size and reads the font, size, letter case and line spacing of the named role."
+  },
+  {
+   "check_id": "PHOTO-26/collection-spread/H024",
+   "output_id": "collection-spread",
+   "rule_id": "R041",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "No line of body text on “Autumn interiors collection spread” (collection-spread.pdf) runs longer than 65 characters.",
+   "assertion": {
+    "op": "v2_line_chars_pb",
+    "max_chars": 65,
+    "roles": [
+     "body"
+    ]
+   },
+   "how": "Reads each line of text and counts its characters."
+  },
+  {
+   "check_id": "PHOTO-26/wholesale-presentation/H027",
+   "output_id": "wholesale-presentation",
+   "rule_id": "R041",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "No line of body text on “Interiors wholesale presentation” (wholesale-presentation.pdf) runs longer than 65 characters.",
+   "assertion": {
+    "op": "v2_line_chars_pb",
+    "max_chars": 65,
+    "roles": [
+     "body"
+    ]
+   },
+   "how": "Reads each line of text and counts its characters."
+  },
+  {
    "check_id": "PHOTO-26/collection-spread/H025",
    "output_id": "collection-spread",
    "rule_id": "R042",
@@ -262,6 +3584,295 @@
    "how": "Reads the font, size or letter case of the selected lines from the PDF."
   },
   {
+   "check_id": "PHOTO-26/collection-spread/H026",
+   "output_id": "collection-spread",
+   "rule_id": "R043",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Every line of type on “Autumn interiors collection spread” (collection-spread.pdf) uses only Barlow Condensed Medium, Source Serif 4 Regular or Inter Regular, never Georgia, Arial or another typeface.",
+   "assertion": {
+    "op": "v2_role_style_pb",
+    "select": [
+     "largest",
+     {
+      "pattern": "."
+     }
+    ],
+    "allowed_fonts": [
+     [
+      "Barlow Condensed",
+      "Medium"
+     ],
+     [
+      "Source Serif 4",
+      "Regular"
+     ],
+     [
+      "Inter",
+      "Regular"
+     ]
+    ]
+   },
+   "how": "Sorts the PDF text into roles by size and reads the font, size, letter case and line spacing of the named role."
+  },
+  {
+   "check_id": "PHOTO-26/wholesale-presentation/H029",
+   "output_id": "wholesale-presentation",
+   "rule_id": "R043",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Every line of type on “Interiors wholesale presentation” (wholesale-presentation.pdf) uses only Barlow Condensed Medium, Source Serif 4 Regular or Inter Regular, never Georgia, Arial or another typeface.",
+   "assertion": {
+    "op": "v2_role_style_pb",
+    "select": [
+     "largest",
+     {
+      "pattern": "."
+     }
+    ],
+    "allowed_fonts": [
+     [
+      "Barlow Condensed",
+      "Medium"
+     ],
+     [
+      "Source Serif 4",
+      "Regular"
+     ],
+     [
+      "Inter",
+      "Regular"
+     ]
+    ]
+   },
+   "how": "Sorts the PDF text into roles by size and reads the font, size, letter case and line spacing of the named role."
+  },
+  {
+   "check_id": "PHOTO-26/collection-spread/H020",
+   "output_id": "collection-spread",
+   "rule_id": "R044",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Every product name, main heading and any brand name on “Autumn interiors collection spread” (collection-spread.pdf) is set in Barlow Condensed Medium, never a serif, Inter or another weight.",
+   "assertion": {
+    "op": "v2_role_style_pb",
+    "select": [
+     {
+      "products": [
+       "Oatmeal Breakfast Mug",
+       "Indigo Cereal Bowl",
+       "Oatmeal Pitcher",
+       "Soft Clay Dinner Plate",
+       "Charcoal Milk Jug",
+       "Oatmeal Bud Vase",
+       "Indigo Serving Bowl",
+       "Stoneware Tumbler",
+       "Soft Clay Soup Bowl",
+       "Charcoal Side Plate",
+       "Oatmeal Teapot",
+       "Indigo Mug",
+       "Soft Clay Serving Platter",
+       "Charcoal Vase",
+       "Oatmeal Pasta Bowl",
+       "Indigo Pitcher",
+       "Soft Clay Espresso Cup",
+       "Charcoal Serving Bowl",
+       "Oatmeal Tumbler Set",
+       "Indigo Dinner Plate",
+       "Soft Clay Vase",
+       "Charcoal Mug",
+       "Oatmeal Wool Throw",
+       "Indigo Wool Throw",
+       "Soft Clay Table Runner",
+       "Charcoal Wool Throw",
+       "Striped Table Runner",
+       "Indigo Table Runner",
+       "Oatmeal Cushion Cover",
+       "Indigo Cushion Cover",
+       "Soft Clay Napkin Set",
+       "Charcoal Placemat Set"
+      ]
+     },
+     "main",
+     "page_main",
+     {
+      "brand": "Thornmere"
+     },
+     {
+      "h1": [
+       "THORNMERE HOME"
+      ]
+     }
+    ],
+    "family": "Barlow Condensed",
+    "weight": "Medium"
+   },
+   "how": "Sorts the PDF text into roles by size and reads the font, size, letter case and line spacing of the named role."
+  },
+  {
+   "check_id": "PHOTO-26/collection-spread/H035",
+   "output_id": "collection-spread",
+   "rule_id": "R045",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Any product name or main heading on “Autumn interiors collection spread” (collection-spread.pdf) is 13 pt in the PDF's text properties.",
+   "assertion": {
+    "op": "v2_role_style_pb",
+    "select": [
+     {
+      "products": [
+       "Oatmeal Breakfast Mug",
+       "Indigo Cereal Bowl",
+       "Oatmeal Pitcher",
+       "Soft Clay Dinner Plate",
+       "Charcoal Milk Jug",
+       "Oatmeal Bud Vase",
+       "Indigo Serving Bowl",
+       "Stoneware Tumbler",
+       "Soft Clay Soup Bowl",
+       "Charcoal Side Plate",
+       "Oatmeal Teapot",
+       "Indigo Mug",
+       "Soft Clay Serving Platter",
+       "Charcoal Vase",
+       "Oatmeal Pasta Bowl",
+       "Indigo Pitcher",
+       "Soft Clay Espresso Cup",
+       "Charcoal Serving Bowl",
+       "Oatmeal Tumbler Set",
+       "Indigo Dinner Plate",
+       "Soft Clay Vase",
+       "Charcoal Mug",
+       "Oatmeal Wool Throw",
+       "Indigo Wool Throw",
+       "Soft Clay Table Runner",
+       "Charcoal Wool Throw",
+       "Striped Table Runner",
+       "Indigo Table Runner",
+       "Oatmeal Cushion Cover",
+       "Indigo Cushion Cover",
+       "Soft Clay Napkin Set",
+       "Charcoal Placemat Set"
+      ]
+     },
+     "main",
+     "page_main",
+     {
+      "h1": [
+       "THORNMERE HOME"
+      ]
+     }
+    ],
+    "size": 13,
+    "optional": true
+   },
+   "how": "Sorts the PDF text into roles by size and reads the font, size, letter case and line spacing of the named role."
+  },
+  {
+   "check_id": "PHOTO-26/collection-spread/H038",
+   "output_id": "collection-spread",
+   "rule_id": "R046",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Any subheading on “Autumn interiors collection spread” (collection-spread.pdf) is set in Barlow Condensed Medium.",
+   "assertion": {
+    "op": "v2_role_style_pb",
+    "select": [
+     "secondary"
+    ],
+    "family": "Barlow Condensed",
+    "weight": "Medium",
+    "optional": true
+   },
+   "how": "Sorts the PDF text into roles by size and reads the font, size, letter case and line spacing of the named role."
+  },
+  {
+   "check_id": "PHOTO-26/wholesale-presentation/H040",
+   "output_id": "wholesale-presentation",
+   "rule_id": "R046",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Any subheading on “Interiors wholesale presentation” (wholesale-presentation.pdf) is set in Barlow Condensed Medium.",
+   "assertion": {
+    "op": "v2_role_style_pb",
+    "select": [
+     "secondary"
+    ],
+    "family": "Barlow Condensed",
+    "weight": "Medium",
+    "optional": true
+   },
+   "how": "Sorts the PDF text into roles by size and reads the font, size, letter case and line spacing of the named role."
+  },
+  {
+   "check_id": "PHOTO-26/collection-spread/H039",
+   "output_id": "collection-spread",
+   "rule_id": "R047",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Any subheading on “Autumn interiors collection spread” (collection-spread.pdf) is set at 11 pt, as shown in the PDF's text properties.",
+   "assertion": {
+    "op": "v2_role_style_pb",
+    "select": [
+     "secondary"
+    ],
+    "size": 11,
+    "optional": true
+   },
+   "how": "Sorts the PDF text into roles by size and reads the font, size, letter case and line spacing of the named role."
+  },
+  {
+   "check_id": "PHOTO-26/wholesale-presentation/H041",
+   "output_id": "wholesale-presentation",
+   "rule_id": "R047",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Any subheading on “Interiors wholesale presentation” (wholesale-presentation.pdf) is set at 11 pt, as shown in the PDF's text properties.",
+   "assertion": {
+    "op": "v2_role_style_pb",
+    "select": [
+     "secondary"
+    ],
+    "size": 11,
+    "optional": true
+   },
+   "how": "Sorts the PDF text into roles by size and reads the font, size, letter case and line spacing of the named role."
+  },
+  {
+   "check_id": "PHOTO-26/collection-spread/H043",
+   "output_id": "collection-spread",
+   "rule_id": "R048",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Any body text on “Autumn interiors collection spread” (collection-spread.pdf) is set at 10 pt, as shown in the PDF's text properties.",
+   "assertion": {
+    "op": "v2_role_style_pb",
+    "select": [
+     "body"
+    ],
+    "size": 10,
+    "optional": true
+   },
+   "how": "Sorts the PDF text into roles by size and reads the font, size, letter case and line spacing of the named role."
+  },
+  {
+   "check_id": "PHOTO-26/wholesale-presentation/H045",
+   "output_id": "wholesale-presentation",
+   "rule_id": "R048",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Any body text on “Interiors wholesale presentation” (wholesale-presentation.pdf) is set at 10 pt, as shown in the PDF's text properties.",
+   "assertion": {
+    "op": "v2_role_style_pb",
+    "select": [
+     "body"
+    ],
+    "size": 10,
+    "optional": true
+   },
+   "how": "Sorts the PDF text into roles by size and reads the font, size, letter case and line spacing of the named role."
+  },
+  {
    "check_id": "PHOTO-26/collection-spread/H047",
    "output_id": "collection-spread",
    "rule_id": "R049",
@@ -279,6 +3890,64 @@
     "size": 8.5
    },
    "how": "Reads the font, size or letter case of the selected lines from the PDF."
+  },
+  {
+   "check_id": "PHOTO-26/wholesale-presentation/H037",
+   "output_id": "wholesale-presentation",
+   "rule_id": "R050",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Every product name and main heading on “Interiors wholesale presentation” (wholesale-presentation.pdf) is 13 pt in the PDF's text properties.",
+   "assertion": {
+    "op": "v2_role_style_pb",
+    "select": [
+     {
+      "products": [
+       "Oatmeal Breakfast Mug",
+       "Indigo Cereal Bowl",
+       "Oatmeal Pitcher",
+       "Soft Clay Dinner Plate",
+       "Charcoal Milk Jug",
+       "Oatmeal Bud Vase",
+       "Indigo Serving Bowl",
+       "Stoneware Tumbler",
+       "Soft Clay Soup Bowl",
+       "Charcoal Side Plate",
+       "Oatmeal Teapot",
+       "Indigo Mug",
+       "Soft Clay Serving Platter",
+       "Charcoal Vase",
+       "Oatmeal Pasta Bowl",
+       "Indigo Pitcher",
+       "Soft Clay Espresso Cup",
+       "Charcoal Serving Bowl",
+       "Oatmeal Tumbler Set",
+       "Indigo Dinner Plate",
+       "Soft Clay Vase",
+       "Charcoal Mug",
+       "Oatmeal Wool Throw",
+       "Indigo Wool Throw",
+       "Soft Clay Table Runner",
+       "Charcoal Wool Throw",
+       "Striped Table Runner",
+       "Indigo Table Runner",
+       "Oatmeal Cushion Cover",
+       "Indigo Cushion Cover",
+       "Soft Clay Napkin Set",
+       "Charcoal Placemat Set"
+      ]
+     },
+     "main",
+     "page_main",
+     {
+      "h1": [
+       "THORNMERE HOME"
+      ]
+     }
+    ],
+    "size": 13
+   },
+   "how": "Sorts the PDF text into roles by size and reads the font, size, letter case and line spacing of the named role."
   },
   {
    "check_id": "PHOTO-26/wholesale-presentation/H049",
@@ -396,6 +4065,156 @@
    "how": "Reads the font, size or letter case of the selected lines from the PDF."
   },
   {
+   "check_id": "PHOTO-26/collection-spread/H062",
+   "output_id": "collection-spread",
+   "rule_id": "R053",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Every product name and main heading on “Autumn interiors collection spread” (collection-spread.pdf) is set in capitals.",
+   "assertion": {
+    "op": "v2_role_style_pb",
+    "select": [
+     {
+      "products": [
+       "Oatmeal Breakfast Mug",
+       "Indigo Cereal Bowl",
+       "Oatmeal Pitcher",
+       "Soft Clay Dinner Plate",
+       "Charcoal Milk Jug",
+       "Oatmeal Bud Vase",
+       "Indigo Serving Bowl",
+       "Stoneware Tumbler",
+       "Soft Clay Soup Bowl",
+       "Charcoal Side Plate",
+       "Oatmeal Teapot",
+       "Indigo Mug",
+       "Soft Clay Serving Platter",
+       "Charcoal Vase",
+       "Oatmeal Pasta Bowl",
+       "Indigo Pitcher",
+       "Soft Clay Espresso Cup",
+       "Charcoal Serving Bowl",
+       "Oatmeal Tumbler Set",
+       "Indigo Dinner Plate",
+       "Soft Clay Vase",
+       "Charcoal Mug",
+       "Oatmeal Wool Throw",
+       "Indigo Wool Throw",
+       "Soft Clay Table Runner",
+       "Charcoal Wool Throw",
+       "Striped Table Runner",
+       "Indigo Table Runner",
+       "Oatmeal Cushion Cover",
+       "Indigo Cushion Cover",
+       "Soft Clay Napkin Set",
+       "Charcoal Placemat Set"
+      ]
+     },
+     "main",
+     "page_main",
+     {
+      "h1": [
+       "THORNMERE HOME"
+      ]
+     }
+    ],
+    "caps": true
+   },
+   "how": "Sorts the PDF text into roles by size and reads the font, size, letter case and line spacing of the named role."
+  },
+  {
+   "check_id": "PHOTO-26/wholesale-presentation/H068",
+   "output_id": "wholesale-presentation",
+   "rule_id": "R053",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Every product name and main heading on “Interiors wholesale presentation” (wholesale-presentation.pdf) is set in capitals.",
+   "assertion": {
+    "op": "v2_role_style_pb",
+    "select": [
+     {
+      "products": [
+       "Oatmeal Breakfast Mug",
+       "Indigo Cereal Bowl",
+       "Oatmeal Pitcher",
+       "Soft Clay Dinner Plate",
+       "Charcoal Milk Jug",
+       "Oatmeal Bud Vase",
+       "Indigo Serving Bowl",
+       "Stoneware Tumbler",
+       "Soft Clay Soup Bowl",
+       "Charcoal Side Plate",
+       "Oatmeal Teapot",
+       "Indigo Mug",
+       "Soft Clay Serving Platter",
+       "Charcoal Vase",
+       "Oatmeal Pasta Bowl",
+       "Indigo Pitcher",
+       "Soft Clay Espresso Cup",
+       "Charcoal Serving Bowl",
+       "Oatmeal Tumbler Set",
+       "Indigo Dinner Plate",
+       "Soft Clay Vase",
+       "Charcoal Mug",
+       "Oatmeal Wool Throw",
+       "Indigo Wool Throw",
+       "Soft Clay Table Runner",
+       "Charcoal Wool Throw",
+       "Striped Table Runner",
+       "Indigo Table Runner",
+       "Oatmeal Cushion Cover",
+       "Indigo Cushion Cover",
+       "Soft Clay Napkin Set",
+       "Charcoal Placemat Set"
+      ]
+     },
+     "main",
+     "page_main",
+     {
+      "h1": [
+       "THORNMERE HOME"
+      ]
+     }
+    ],
+    "caps": true
+   },
+   "how": "Sorts the PDF text into roles by size and reads the font, size, letter case and line spacing of the named role."
+  },
+  {
+   "check_id": "PHOTO-26/collection-spread/H063",
+   "output_id": "collection-spread",
+   "rule_id": "R054",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Any subheading on “Autumn interiors collection spread” (collection-spread.pdf) is set in capitals.",
+   "assertion": {
+    "op": "v2_role_style_pb",
+    "select": [
+     "secondary"
+    ],
+    "caps": true,
+    "optional": true
+   },
+   "how": "Sorts the PDF text into roles by size and reads the font, size, letter case and line spacing of the named role."
+  },
+  {
+   "check_id": "PHOTO-26/wholesale-presentation/H069",
+   "output_id": "wholesale-presentation",
+   "rule_id": "R054",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Any subheading on “Interiors wholesale presentation” (wholesale-presentation.pdf) is set in capitals.",
+   "assertion": {
+    "op": "v2_role_style_pb",
+    "select": [
+     "secondary"
+    ],
+    "caps": true,
+    "optional": true
+   },
+   "how": "Sorts the PDF text into roles by size and reads the font, size, letter case and line spacing of the named role."
+  },
+  {
    "check_id": "PHOTO-26/collection-spread/H022",
    "output_id": "collection-spread",
    "rule_id": "R055",
@@ -488,6 +4307,1861 @@
     "min_mm": 40
    },
    "how": "Measures the clear paper below the heading on each single-product page."
+  },
+  {
+   "check_id": "PHOTO-26/collection-spread/H033",
+   "output_id": "collection-spread",
+   "rule_id": "R056",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "No product photo on “Autumn interiors collection spread” (collection-spread.pdf) is recoloured toward a palette hex or the band, tile or ground behind it; correcting the cast in textile_flatlay_02.jpg is allowed.",
+   "assertion": {
+    "op": "v2_pdf_photos_pb",
+    "photos": [
+     "autumn_shoot_01.jpg",
+     "autumn_shoot_02.jpg",
+     "autumn_shoot_03.jpg",
+     "autumn_shoot_04.jpg",
+     "autumn_shoot_05.jpg",
+     "autumn_shoot_06.jpg",
+     "autumn_shoot_07.jpg",
+     "autumn_shoot_08.jpg",
+     "autumn_shoot_09.jpg",
+     "autumn_shoot_10.jpg",
+     "autumn_shoot_11.jpg",
+     "autumn_shoot_12.jpg",
+     "autumn_shoot_13.jpg",
+     "autumn_shoot_14.jpg",
+     "textile_flatlay_01.jpg",
+     "textile_flatlay_02.jpg",
+     "textile_flatlay_03.jpg",
+     "textile_flatlay_04.jpg",
+     "textile_flatlay_05.jpg",
+     "textile_flatlay_06.jpg"
+    ],
+    "region": "shown",
+    "pass_if": [
+     [
+      "rgb_max",
+      "<=",
+      5
+     ]
+    ]
+   },
+   "how": "Reads every picture placed in the PDF, identifies its supplied photo and compares the colours tile by tile."
+  },
+  {
+   "check_id": "PHOTO-26/wholesale-presentation/H035",
+   "output_id": "wholesale-presentation",
+   "rule_id": "R056",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "No product photo on “Interiors wholesale presentation” (wholesale-presentation.pdf) is recoloured toward a palette hex or the band, tile or ground behind it; correcting the cast in textile_flatlay_02.jpg is allowed.",
+   "assertion": {
+    "op": "v2_pdf_photos_pb",
+    "photos": [
+     "autumn_shoot_01.jpg",
+     "autumn_shoot_02.jpg",
+     "autumn_shoot_03.jpg",
+     "autumn_shoot_04.jpg",
+     "autumn_shoot_05.jpg",
+     "autumn_shoot_06.jpg",
+     "autumn_shoot_07.jpg",
+     "autumn_shoot_08.jpg",
+     "autumn_shoot_09.jpg",
+     "autumn_shoot_10.jpg",
+     "autumn_shoot_11.jpg",
+     "autumn_shoot_12.jpg",
+     "autumn_shoot_13.jpg",
+     "autumn_shoot_14.jpg",
+     "textile_flatlay_01.jpg",
+     "textile_flatlay_02.jpg",
+     "textile_flatlay_03.jpg",
+     "textile_flatlay_04.jpg",
+     "textile_flatlay_05.jpg",
+     "textile_flatlay_06.jpg"
+    ],
+    "region": "shown",
+    "pass_if": [
+     [
+      "rgb_max",
+      "<=",
+      5
+     ]
+    ]
+   },
+   "how": "Reads every picture placed in the PDF, identifies its supplied photo and compares the colours tile by tile."
+  },
+  {
+   "check_id": "PHOTO-26/collection-spread/H037",
+   "output_id": "collection-spread",
+   "rule_id": "R057",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Product names on “Autumn interiors collection spread” (collection-spread.pdf) have wide, open letter spacing, clearly looser than ordinary text.",
+   "assertion": {
+    "op": "v2_pdf_tracking_pb",
+    "names": [
+     "Oatmeal Breakfast Mug",
+     "Indigo Cereal Bowl",
+     "Oatmeal Pitcher",
+     "Soft Clay Dinner Plate",
+     "Charcoal Milk Jug",
+     "Oatmeal Bud Vase",
+     "Indigo Serving Bowl",
+     "Stoneware Tumbler",
+     "Soft Clay Soup Bowl",
+     "Charcoal Side Plate",
+     "Oatmeal Teapot",
+     "Indigo Mug",
+     "Soft Clay Serving Platter",
+     "Charcoal Vase",
+     "Oatmeal Pasta Bowl",
+     "Indigo Pitcher",
+     "Soft Clay Espresso Cup",
+     "Charcoal Serving Bowl",
+     "Oatmeal Tumbler Set",
+     "Indigo Dinner Plate",
+     "Soft Clay Vase",
+     "Charcoal Mug",
+     "Oatmeal Wool Throw",
+     "Indigo Wool Throw",
+     "Soft Clay Table Runner",
+     "Charcoal Wool Throw",
+     "Striped Table Runner",
+     "Indigo Table Runner",
+     "Oatmeal Cushion Cover",
+     "Indigo Cushion Cover",
+     "Soft Clay Napkin Set",
+     "Charcoal Placemat Set"
+    ]
+   },
+   "how": "Measures letter spacing from the PDF glyph positions and compares it with the commonest text."
+  },
+  {
+   "check_id": "PHOTO-26/wholesale-presentation/H039",
+   "output_id": "wholesale-presentation",
+   "rule_id": "R057",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Product names on “Interiors wholesale presentation” (wholesale-presentation.pdf) have wide, open letter spacing, clearly looser than ordinary text.",
+   "assertion": {
+    "op": "v2_pdf_tracking_pb",
+    "names": [
+     "Oatmeal Breakfast Mug",
+     "Indigo Cereal Bowl",
+     "Oatmeal Pitcher",
+     "Soft Clay Dinner Plate",
+     "Charcoal Milk Jug",
+     "Oatmeal Bud Vase",
+     "Indigo Serving Bowl",
+     "Stoneware Tumbler",
+     "Soft Clay Soup Bowl",
+     "Charcoal Side Plate",
+     "Oatmeal Teapot",
+     "Indigo Mug",
+     "Soft Clay Serving Platter",
+     "Charcoal Vase",
+     "Oatmeal Pasta Bowl",
+     "Indigo Pitcher",
+     "Soft Clay Espresso Cup",
+     "Charcoal Serving Bowl",
+     "Oatmeal Tumbler Set",
+     "Indigo Dinner Plate",
+     "Soft Clay Vase",
+     "Charcoal Mug",
+     "Oatmeal Wool Throw",
+     "Indigo Wool Throw",
+     "Soft Clay Table Runner",
+     "Charcoal Wool Throw",
+     "Striped Table Runner",
+     "Indigo Table Runner",
+     "Oatmeal Cushion Cover",
+     "Indigo Cushion Cover",
+     "Soft Clay Napkin Set",
+     "Charcoal Placemat Set"
+    ]
+   },
+   "how": "Measures letter spacing from the PDF glyph positions and compares it with the commonest text."
+  },
+  {
+   "check_id": "PHOTO-26/collection-spread/H053",
+   "output_id": "collection-spread",
+   "rule_id": "R059",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "No cut-out piece on “Autumn interiors collection spread” (collection-spread.pdf) has a drop shadow or glow added beneath it.",
+   "assertion": {
+    "op": "v2_pdf_photos_pb",
+    "photos": [
+     "autumn_shoot_01.jpg",
+     "autumn_shoot_02.jpg",
+     "autumn_shoot_03.jpg",
+     "autumn_shoot_04.jpg",
+     "autumn_shoot_05.jpg",
+     "autumn_shoot_06.jpg",
+     "autumn_shoot_07.jpg",
+     "autumn_shoot_08.jpg",
+     "autumn_shoot_09.jpg",
+     "autumn_shoot_10.jpg",
+     "autumn_shoot_11.jpg",
+     "autumn_shoot_12.jpg",
+     "autumn_shoot_13.jpg",
+     "autumn_shoot_14.jpg",
+     "textile_flatlay_01.jpg",
+     "textile_flatlay_02.jpg",
+     "textile_flatlay_03.jpg",
+     "textile_flatlay_04.jpg",
+     "textile_flatlay_05.jpg",
+     "textile_flatlay_06.jpg"
+    ],
+    "region": "shown",
+    "pass_if": [
+     [
+      "ncc_min",
+      ">=",
+      0.9
+     ],
+     [
+      "fills_image",
+      ">=",
+      0.98
+     ]
+    ]
+   },
+   "how": "Reads every picture placed in the PDF, identifies its supplied photo and compares the colours tile by tile."
+  },
+  {
+   "check_id": "PHOTO-26/wholesale-presentation/H055",
+   "output_id": "wholesale-presentation",
+   "rule_id": "R059",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "No cut-out piece on “Interiors wholesale presentation” (wholesale-presentation.pdf) has a drop shadow or glow added beneath it.",
+   "assertion": {
+    "op": "v2_pdf_photos_pb",
+    "photos": [
+     "autumn_shoot_01.jpg",
+     "autumn_shoot_02.jpg",
+     "autumn_shoot_03.jpg",
+     "autumn_shoot_04.jpg",
+     "autumn_shoot_05.jpg",
+     "autumn_shoot_06.jpg",
+     "autumn_shoot_07.jpg",
+     "autumn_shoot_08.jpg",
+     "autumn_shoot_09.jpg",
+     "autumn_shoot_10.jpg",
+     "autumn_shoot_11.jpg",
+     "autumn_shoot_12.jpg",
+     "autumn_shoot_13.jpg",
+     "autumn_shoot_14.jpg",
+     "textile_flatlay_01.jpg",
+     "textile_flatlay_02.jpg",
+     "textile_flatlay_03.jpg",
+     "textile_flatlay_04.jpg",
+     "textile_flatlay_05.jpg",
+     "textile_flatlay_06.jpg"
+    ],
+    "region": "shown",
+    "pass_if": [
+     [
+      "ncc_min",
+      ">=",
+      0.9
+     ],
+     [
+      "fills_image",
+      ">=",
+      0.98
+     ]
+    ]
+   },
+   "how": "Reads every picture placed in the PDF, identifies its supplied photo and compares the colours tile by tile."
+  },
+  {
+   "check_id": "PHOTO-26/collection-spread/H055",
+   "output_id": "collection-spread",
+   "rule_id": "R060",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "On any page of “Autumn interiors collection spread” (collection-spread.pdf) showing several products, each product name that appears sits beside its own product.",
+   "assertion": {
+    "op": "v2_text_pb",
+    "forbidden": [
+     "Oatmeal Breakfast Mug",
+     "Indigo Cereal Bowl",
+     "Oatmeal Pitcher",
+     "Soft Clay Dinner Plate",
+     "Charcoal Milk Jug",
+     "Oatmeal Bud Vase",
+     "Indigo Serving Bowl",
+     "Stoneware Tumbler",
+     "Soft Clay Soup Bowl",
+     "Charcoal Side Plate",
+     "Oatmeal Teapot",
+     "Indigo Mug",
+     "Soft Clay Serving Platter",
+     "Charcoal Vase",
+     "Oatmeal Pasta Bowl",
+     "Indigo Pitcher",
+     "Soft Clay Espresso Cup",
+     "Charcoal Serving Bowl",
+     "Oatmeal Tumbler Set",
+     "Indigo Dinner Plate",
+     "Soft Clay Vase",
+     "Charcoal Mug",
+     "Oatmeal Wool Throw",
+     "Indigo Wool Throw",
+     "Soft Clay Table Runner",
+     "Charcoal Wool Throw",
+     "Striped Table Runner",
+     "Indigo Table Runner",
+     "Oatmeal Cushion Cover",
+     "Indigo Cushion Cover",
+     "Soft Clay Napkin Set",
+     "Charcoal Placemat Set"
+    ],
+    "found": "person"
+   },
+   "how": "Reads the type by OCR or from the PDF, leaving out lettering inside the supplied photos, and looks for the wording."
+  },
+  {
+   "check_id": "PHOTO-26/collection-spread/H012",
+   "output_id": "collection-spread",
+   "rule_id": "R062",
+   "k_id": "K2_Q4",
+   "critical": false,
+   "check": "Every ceramic piece on “Autumn interiors collection spread” (collection-spread.pdf) keeps its source-photo outline (autumn_shoot_01.jpg to autumn_shoot_11.jpg, autumn_shoot_13.jpg or autumn_shoot_14.jpg), with no handle, rim or foot redrawn or cut away.",
+   "assertion": {
+    "op": "v2_pdf_photos_pb",
+    "photos": [
+     "autumn_shoot_01.jpg",
+     "autumn_shoot_02.jpg",
+     "autumn_shoot_03.jpg",
+     "autumn_shoot_04.jpg",
+     "autumn_shoot_05.jpg",
+     "autumn_shoot_06.jpg",
+     "autumn_shoot_07.jpg",
+     "autumn_shoot_08.jpg",
+     "autumn_shoot_09.jpg",
+     "autumn_shoot_10.jpg",
+     "autumn_shoot_11.jpg",
+     "autumn_shoot_12.jpg",
+     "autumn_shoot_13.jpg",
+     "autumn_shoot_14.jpg",
+     "textile_flatlay_01.jpg",
+     "textile_flatlay_02.jpg",
+     "textile_flatlay_03.jpg",
+     "textile_flatlay_04.jpg",
+     "textile_flatlay_05.jpg",
+     "textile_flatlay_06.jpg"
+    ],
+    "region": "subject",
+    "by_photo": {
+     "autumn_shoot_01.jpg": {
+      "pass_if": [
+       [
+        "frame_share",
+        ">=",
+        0.98
+       ],
+       [
+        "ncc_min",
+        ">=",
+        0.95
+       ]
+      ],
+      "region": "subject"
+     },
+     "autumn_shoot_02.jpg": {
+      "pass_if": [
+       [
+        "frame_share",
+        ">=",
+        0.98
+       ],
+       [
+        "ncc_min",
+        ">=",
+        0.95
+       ]
+      ],
+      "region": "subject"
+     },
+     "autumn_shoot_03.jpg": {
+      "pass_if": [
+       [
+        "frame_share",
+        ">=",
+        0.98
+       ],
+       [
+        "ncc_min",
+        ">=",
+        0.95
+       ]
+      ],
+      "region": "subject"
+     },
+     "autumn_shoot_04.jpg": {
+      "pass_if": [
+       [
+        "frame_share",
+        ">=",
+        0.98
+       ],
+       [
+        "ncc_min",
+        ">=",
+        0.95
+       ]
+      ],
+      "region": "subject"
+     },
+     "autumn_shoot_05.jpg": {
+      "pass_if": [
+       [
+        "frame_share",
+        ">=",
+        0.98
+       ],
+       [
+        "ncc_min",
+        ">=",
+        0.95
+       ]
+      ],
+      "region": "subject"
+     },
+     "autumn_shoot_06.jpg": {
+      "pass_if": [
+       [
+        "frame_share",
+        ">=",
+        0.98
+       ],
+       [
+        "ncc_min",
+        ">=",
+        0.95
+       ]
+      ],
+      "region": "subject"
+     },
+     "autumn_shoot_07.jpg": {
+      "pass_if": [
+       [
+        "frame_share",
+        ">=",
+        0.98
+       ],
+       [
+        "ncc_min",
+        ">=",
+        0.95
+       ]
+      ],
+      "region": "subject"
+     },
+     "autumn_shoot_08.jpg": {
+      "pass_if": [
+       [
+        "frame_share",
+        ">=",
+        0.98
+       ],
+       [
+        "ncc_min",
+        ">=",
+        0.95
+       ]
+      ],
+      "region": "subject"
+     },
+     "autumn_shoot_09.jpg": {
+      "pass_if": [
+       [
+        "frame_share",
+        ">=",
+        0.98
+       ],
+       [
+        "ncc_min",
+        ">=",
+        0.95
+       ]
+      ],
+      "region": "subject"
+     },
+     "autumn_shoot_10.jpg": {
+      "pass_if": [
+       [
+        "frame_share",
+        ">=",
+        0.98
+       ],
+       [
+        "ncc_min",
+        ">=",
+        0.95
+       ]
+      ],
+      "region": "subject"
+     },
+     "autumn_shoot_11.jpg": {
+      "pass_if": [
+       [
+        "frame_share",
+        ">=",
+        0.98
+       ],
+       [
+        "ncc_min",
+        ">=",
+        0.95
+       ]
+      ],
+      "region": "subject"
+     },
+     "autumn_shoot_13.jpg": {
+      "pass_if": [
+       [
+        "frame_share",
+        ">=",
+        0.98
+       ],
+       [
+        "ncc_min",
+        ">=",
+        0.95
+       ]
+      ],
+      "region": "subject"
+     },
+     "autumn_shoot_14.jpg": {
+      "pass_if": [
+       [
+        "frame_share",
+        ">=",
+        0.98
+       ],
+       [
+        "ncc_min",
+        ">=",
+        0.95
+       ]
+      ],
+      "region": "subject"
+     }
+    }
+   },
+   "how": "Reads every picture placed in the PDF, identifies its supplied photo and compares the colours tile by tile."
+  },
+  {
+   "check_id": "PHOTO-26/wholesale-presentation/H008",
+   "output_id": "wholesale-presentation",
+   "rule_id": "R062",
+   "k_id": "K2_Q4",
+   "critical": false,
+   "check": "Every ceramic piece on “Interiors wholesale presentation” (wholesale-presentation.pdf) keeps its source-photo outline (autumn_shoot_01.jpg to autumn_shoot_11.jpg, autumn_shoot_13.jpg or autumn_shoot_14.jpg), with no handle, rim or foot redrawn or cut away.",
+   "assertion": {
+    "op": "v2_pdf_photos_pb",
+    "photos": [
+     "autumn_shoot_01.jpg",
+     "autumn_shoot_02.jpg",
+     "autumn_shoot_03.jpg",
+     "autumn_shoot_04.jpg",
+     "autumn_shoot_05.jpg",
+     "autumn_shoot_06.jpg",
+     "autumn_shoot_07.jpg",
+     "autumn_shoot_08.jpg",
+     "autumn_shoot_09.jpg",
+     "autumn_shoot_10.jpg",
+     "autumn_shoot_11.jpg",
+     "autumn_shoot_12.jpg",
+     "autumn_shoot_13.jpg",
+     "autumn_shoot_14.jpg",
+     "textile_flatlay_01.jpg",
+     "textile_flatlay_02.jpg",
+     "textile_flatlay_03.jpg",
+     "textile_flatlay_04.jpg",
+     "textile_flatlay_05.jpg",
+     "textile_flatlay_06.jpg"
+    ],
+    "region": "subject",
+    "by_photo": {
+     "autumn_shoot_01.jpg": {
+      "pass_if": [
+       [
+        "frame_share",
+        ">=",
+        0.98
+       ],
+       [
+        "ncc_min",
+        ">=",
+        0.95
+       ]
+      ],
+      "region": "subject"
+     },
+     "autumn_shoot_02.jpg": {
+      "pass_if": [
+       [
+        "frame_share",
+        ">=",
+        0.98
+       ],
+       [
+        "ncc_min",
+        ">=",
+        0.95
+       ]
+      ],
+      "region": "subject"
+     },
+     "autumn_shoot_03.jpg": {
+      "pass_if": [
+       [
+        "frame_share",
+        ">=",
+        0.98
+       ],
+       [
+        "ncc_min",
+        ">=",
+        0.95
+       ]
+      ],
+      "region": "subject"
+     },
+     "autumn_shoot_04.jpg": {
+      "pass_if": [
+       [
+        "frame_share",
+        ">=",
+        0.98
+       ],
+       [
+        "ncc_min",
+        ">=",
+        0.95
+       ]
+      ],
+      "region": "subject"
+     },
+     "autumn_shoot_05.jpg": {
+      "pass_if": [
+       [
+        "frame_share",
+        ">=",
+        0.98
+       ],
+       [
+        "ncc_min",
+        ">=",
+        0.95
+       ]
+      ],
+      "region": "subject"
+     },
+     "autumn_shoot_06.jpg": {
+      "pass_if": [
+       [
+        "frame_share",
+        ">=",
+        0.98
+       ],
+       [
+        "ncc_min",
+        ">=",
+        0.95
+       ]
+      ],
+      "region": "subject"
+     },
+     "autumn_shoot_07.jpg": {
+      "pass_if": [
+       [
+        "frame_share",
+        ">=",
+        0.98
+       ],
+       [
+        "ncc_min",
+        ">=",
+        0.95
+       ]
+      ],
+      "region": "subject"
+     },
+     "autumn_shoot_08.jpg": {
+      "pass_if": [
+       [
+        "frame_share",
+        ">=",
+        0.98
+       ],
+       [
+        "ncc_min",
+        ">=",
+        0.95
+       ]
+      ],
+      "region": "subject"
+     },
+     "autumn_shoot_09.jpg": {
+      "pass_if": [
+       [
+        "frame_share",
+        ">=",
+        0.98
+       ],
+       [
+        "ncc_min",
+        ">=",
+        0.95
+       ]
+      ],
+      "region": "subject"
+     },
+     "autumn_shoot_10.jpg": {
+      "pass_if": [
+       [
+        "frame_share",
+        ">=",
+        0.98
+       ],
+       [
+        "ncc_min",
+        ">=",
+        0.95
+       ]
+      ],
+      "region": "subject"
+     },
+     "autumn_shoot_11.jpg": {
+      "pass_if": [
+       [
+        "frame_share",
+        ">=",
+        0.98
+       ],
+       [
+        "ncc_min",
+        ">=",
+        0.95
+       ]
+      ],
+      "region": "subject"
+     },
+     "autumn_shoot_13.jpg": {
+      "pass_if": [
+       [
+        "frame_share",
+        ">=",
+        0.98
+       ],
+       [
+        "ncc_min",
+        ">=",
+        0.95
+       ]
+      ],
+      "region": "subject"
+     },
+     "autumn_shoot_14.jpg": {
+      "pass_if": [
+       [
+        "frame_share",
+        ">=",
+        0.98
+       ],
+       [
+        "ncc_min",
+        ">=",
+        0.95
+       ]
+      ],
+      "region": "subject"
+     }
+    }
+   },
+   "how": "Reads every picture placed in the PDF, identifies its supplied photo and compares the colours tile by tile."
+  },
+  {
+   "check_id": "PHOTO-26/collection-spread/H013",
+   "output_id": "collection-spread",
+   "rule_id": "R063",
+   "k_id": "K2_Q4",
+   "critical": false,
+   "check": "On “Autumn interiors collection spread” (collection-spread.pdf), every jug or pitcher cut from autumn_shoot_03.jpg, autumn_shoot_06.jpg or autumn_shoot_08.jpg shows the colour behind it through its handle loop, not studio sweep.",
+   "assertion": {
+    "op": "v2_pdf_photos_pb",
+    "photos": [
+     "autumn_shoot_01.jpg",
+     "autumn_shoot_02.jpg",
+     "autumn_shoot_03.jpg",
+     "autumn_shoot_04.jpg",
+     "autumn_shoot_05.jpg",
+     "autumn_shoot_06.jpg",
+     "autumn_shoot_07.jpg",
+     "autumn_shoot_08.jpg",
+     "autumn_shoot_09.jpg",
+     "autumn_shoot_10.jpg",
+     "autumn_shoot_11.jpg",
+     "autumn_shoot_12.jpg",
+     "autumn_shoot_13.jpg",
+     "autumn_shoot_14.jpg",
+     "textile_flatlay_01.jpg",
+     "textile_flatlay_02.jpg",
+     "textile_flatlay_03.jpg",
+     "textile_flatlay_04.jpg",
+     "textile_flatlay_05.jpg",
+     "textile_flatlay_06.jpg"
+    ],
+    "by_photo": {
+     "autumn_shoot_03.jpg": {
+      "pass_if": [
+       [
+        "ncc_min",
+        ">=",
+        0.9
+       ],
+       [
+        "fills_image",
+        ">=",
+        0.98
+       ]
+      ],
+      "region": "shown"
+     },
+     "autumn_shoot_06.jpg": {
+      "pass_if": [
+       [
+        "ncc_min",
+        ">=",
+        0.9
+       ],
+       [
+        "fills_image",
+        ">=",
+        0.98
+       ]
+      ],
+      "region": "shown"
+     },
+     "autumn_shoot_08.jpg": {
+      "pass_if": [
+       [
+        "ncc_min",
+        ">=",
+        0.9
+       ],
+       [
+        "fills_image",
+        ">=",
+        0.98
+       ]
+      ],
+      "region": "shown"
+     }
+    }
+   },
+   "how": "Reads every picture placed in the PDF, identifies its supplied photo and compares the colours tile by tile."
+  },
+  {
+   "check_id": "PHOTO-26/wholesale-presentation/H009",
+   "output_id": "wholesale-presentation",
+   "rule_id": "R063",
+   "k_id": "K2_Q4",
+   "critical": false,
+   "check": "On “Interiors wholesale presentation” (wholesale-presentation.pdf), every jug or pitcher cut from autumn_shoot_03.jpg, autumn_shoot_06.jpg or autumn_shoot_08.jpg shows the colour behind it through its handle loop, not studio sweep.",
+   "assertion": {
+    "op": "v2_pdf_photos_pb",
+    "photos": [
+     "autumn_shoot_01.jpg",
+     "autumn_shoot_02.jpg",
+     "autumn_shoot_03.jpg",
+     "autumn_shoot_04.jpg",
+     "autumn_shoot_05.jpg",
+     "autumn_shoot_06.jpg",
+     "autumn_shoot_07.jpg",
+     "autumn_shoot_08.jpg",
+     "autumn_shoot_09.jpg",
+     "autumn_shoot_10.jpg",
+     "autumn_shoot_11.jpg",
+     "autumn_shoot_12.jpg",
+     "autumn_shoot_13.jpg",
+     "autumn_shoot_14.jpg",
+     "textile_flatlay_01.jpg",
+     "textile_flatlay_02.jpg",
+     "textile_flatlay_03.jpg",
+     "textile_flatlay_04.jpg",
+     "textile_flatlay_05.jpg",
+     "textile_flatlay_06.jpg"
+    ],
+    "by_photo": {
+     "autumn_shoot_03.jpg": {
+      "pass_if": [
+       [
+        "ncc_min",
+        ">=",
+        0.9
+       ],
+       [
+        "fills_image",
+        ">=",
+        0.98
+       ]
+      ],
+      "region": "shown"
+     },
+     "autumn_shoot_06.jpg": {
+      "pass_if": [
+       [
+        "ncc_min",
+        ">=",
+        0.9
+       ],
+       [
+        "fills_image",
+        ">=",
+        0.98
+       ]
+      ],
+      "region": "shown"
+     },
+     "autumn_shoot_08.jpg": {
+      "pass_if": [
+       [
+        "ncc_min",
+        ">=",
+        0.9
+       ],
+       [
+        "fills_image",
+        ">=",
+        0.98
+       ]
+      ],
+      "region": "shown"
+     }
+    }
+   },
+   "how": "Reads every picture placed in the PDF, identifies its supplied photo and compares the colours tile by tile."
+  },
+  {
+   "check_id": "PHOTO-26/collection-spread/H014",
+   "output_id": "collection-spread",
+   "rule_id": "R064",
+   "k_id": "K2_Q4",
+   "critical": false,
+   "check": "The cut-out mug handle opening in collection-spread.pdf shows the background behind the product, not the studio sweep from autumn_shoot_01.jpg.",
+   "assertion": {
+    "op": "v2_pdf_photos_pb",
+    "photos": [
+     "autumn_shoot_01.jpg",
+     "autumn_shoot_02.jpg",
+     "autumn_shoot_03.jpg",
+     "autumn_shoot_04.jpg",
+     "autumn_shoot_05.jpg",
+     "autumn_shoot_06.jpg",
+     "autumn_shoot_07.jpg",
+     "autumn_shoot_08.jpg",
+     "autumn_shoot_09.jpg",
+     "autumn_shoot_10.jpg",
+     "autumn_shoot_11.jpg",
+     "autumn_shoot_12.jpg",
+     "autumn_shoot_13.jpg",
+     "autumn_shoot_14.jpg",
+     "textile_flatlay_01.jpg",
+     "textile_flatlay_02.jpg",
+     "textile_flatlay_03.jpg",
+     "textile_flatlay_04.jpg",
+     "textile_flatlay_05.jpg",
+     "textile_flatlay_06.jpg"
+    ],
+    "by_photo": {
+     "autumn_shoot_01.jpg": {
+      "pass_if": [
+       [
+        "ncc_min",
+        ">=",
+        0.9
+       ],
+       [
+        "fills_image",
+        ">=",
+        0.98
+       ]
+      ],
+      "region": "shown"
+     }
+    }
+   },
+   "how": "Reads every picture placed in the PDF, identifies its supplied photo and compares the colours tile by tile."
+  },
+  {
+   "check_id": "PHOTO-26/wholesale-presentation/H018",
+   "output_id": "wholesale-presentation",
+   "rule_id": "R064",
+   "k_id": "K2_Q4",
+   "critical": false,
+   "check": "The cut-out mug handle opening in wholesale-presentation.pdf shows the background behind the product, not the studio sweep from autumn_shoot_01.jpg.",
+   "assertion": {
+    "op": "v2_pdf_photos_pb",
+    "photos": [
+     "autumn_shoot_01.jpg",
+     "autumn_shoot_02.jpg",
+     "autumn_shoot_03.jpg",
+     "autumn_shoot_04.jpg",
+     "autumn_shoot_05.jpg",
+     "autumn_shoot_06.jpg",
+     "autumn_shoot_07.jpg",
+     "autumn_shoot_08.jpg",
+     "autumn_shoot_09.jpg",
+     "autumn_shoot_10.jpg",
+     "autumn_shoot_11.jpg",
+     "autumn_shoot_12.jpg",
+     "autumn_shoot_13.jpg",
+     "autumn_shoot_14.jpg",
+     "textile_flatlay_01.jpg",
+     "textile_flatlay_02.jpg",
+     "textile_flatlay_03.jpg",
+     "textile_flatlay_04.jpg",
+     "textile_flatlay_05.jpg",
+     "textile_flatlay_06.jpg"
+    ],
+    "by_photo": {
+     "autumn_shoot_01.jpg": {
+      "pass_if": [
+       [
+        "ncc_min",
+        ">=",
+        0.9
+       ],
+       [
+        "fills_image",
+        ">=",
+        0.98
+       ]
+      ],
+      "region": "shown"
+     }
+    }
+   },
+   "how": "Reads every picture placed in the PDF, identifies its supplied photo and compares the colours tile by tile."
+  },
+  {
+   "check_id": "PHOTO-26/collection-spread/H016",
+   "output_id": "collection-spread",
+   "rule_id": "R066",
+   "k_id": "K2_Q4",
+   "critical": false,
+   "check": "The indigo-glazed and indigo-dyed pieces pictured on “Autumn interiors collection spread” (collection-spread.pdf) read the deep blue of autumn_shoot_02.jpg and textile_flatlay_06.jpg, not the muddy, warm indigo of thornmere_colour_note_phone.jpg.",
+   "assertion": {
+    "op": "v2_pdf_photos_pb",
+    "photos": [
+     "autumn_shoot_01.jpg",
+     "autumn_shoot_02.jpg",
+     "autumn_shoot_03.jpg",
+     "autumn_shoot_04.jpg",
+     "autumn_shoot_05.jpg",
+     "autumn_shoot_06.jpg",
+     "autumn_shoot_07.jpg",
+     "autumn_shoot_08.jpg",
+     "autumn_shoot_09.jpg",
+     "autumn_shoot_10.jpg",
+     "autumn_shoot_11.jpg",
+     "autumn_shoot_12.jpg",
+     "autumn_shoot_13.jpg",
+     "autumn_shoot_14.jpg",
+     "textile_flatlay_01.jpg",
+     "textile_flatlay_02.jpg",
+     "textile_flatlay_03.jpg",
+     "textile_flatlay_04.jpg",
+     "textile_flatlay_05.jpg",
+     "textile_flatlay_06.jpg"
+    ],
+    "by_photo": {
+     "autumn_shoot_02.jpg": {
+      "pass_if": [
+       [
+        "rgb_max",
+        "<=",
+        5
+       ]
+      ],
+      "region": "shown"
+     },
+     "autumn_shoot_08.jpg": {
+      "pass_if": [
+       [
+        "rgb_max",
+        "<=",
+        5
+       ]
+      ],
+      "region": "shown"
+     },
+     "autumn_shoot_14.jpg": {
+      "pass_if": [
+       [
+        "rgb_max",
+        "<=",
+        5
+       ]
+      ],
+      "region": "shown"
+     },
+     "textile_flatlay_02.jpg": {
+      "pass_if": [
+       [
+        "rgb_max",
+        "<=",
+        5
+       ]
+      ],
+      "region": "shown"
+     },
+     "textile_flatlay_05.jpg": {
+      "pass_if": [
+       [
+        "rgb_max",
+        "<=",
+        5
+       ]
+      ],
+      "region": "shown"
+     },
+     "textile_flatlay_06.jpg": {
+      "pass_if": [
+       [
+        "rgb_max",
+        "<=",
+        5
+       ]
+      ],
+      "region": "shown"
+     }
+    }
+   },
+   "how": "Reads every picture placed in the PDF, identifies its supplied photo and compares the colours tile by tile."
+  },
+  {
+   "check_id": "PHOTO-26/wholesale-presentation/H020",
+   "output_id": "wholesale-presentation",
+   "rule_id": "R066",
+   "k_id": "K2_Q4",
+   "critical": false,
+   "check": "The indigo-glazed and indigo-dyed pieces pictured on “Interiors wholesale presentation” (wholesale-presentation.pdf) read the deep blue of autumn_shoot_02.jpg and textile_flatlay_06.jpg, not the muddy, warm indigo of thornmere_colour_note_phone.jpg.",
+   "assertion": {
+    "op": "v2_pdf_photos_pb",
+    "photos": [
+     "autumn_shoot_01.jpg",
+     "autumn_shoot_02.jpg",
+     "autumn_shoot_03.jpg",
+     "autumn_shoot_04.jpg",
+     "autumn_shoot_05.jpg",
+     "autumn_shoot_06.jpg",
+     "autumn_shoot_07.jpg",
+     "autumn_shoot_08.jpg",
+     "autumn_shoot_09.jpg",
+     "autumn_shoot_10.jpg",
+     "autumn_shoot_11.jpg",
+     "autumn_shoot_12.jpg",
+     "autumn_shoot_13.jpg",
+     "autumn_shoot_14.jpg",
+     "textile_flatlay_01.jpg",
+     "textile_flatlay_02.jpg",
+     "textile_flatlay_03.jpg",
+     "textile_flatlay_04.jpg",
+     "textile_flatlay_05.jpg",
+     "textile_flatlay_06.jpg"
+    ],
+    "by_photo": {
+     "autumn_shoot_02.jpg": {
+      "pass_if": [
+       [
+        "rgb_max",
+        "<=",
+        5
+       ]
+      ],
+      "region": "shown"
+     },
+     "autumn_shoot_08.jpg": {
+      "pass_if": [
+       [
+        "rgb_max",
+        "<=",
+        5
+       ]
+      ],
+      "region": "shown"
+     },
+     "autumn_shoot_14.jpg": {
+      "pass_if": [
+       [
+        "rgb_max",
+        "<=",
+        5
+       ]
+      ],
+      "region": "shown"
+     },
+     "textile_flatlay_02.jpg": {
+      "pass_if": [
+       [
+        "rgb_max",
+        "<=",
+        5
+       ]
+      ],
+      "region": "shown"
+     },
+     "textile_flatlay_05.jpg": {
+      "pass_if": [
+       [
+        "rgb_max",
+        "<=",
+        5
+       ]
+      ],
+      "region": "shown"
+     },
+     "textile_flatlay_06.jpg": {
+      "pass_if": [
+       [
+        "rgb_max",
+        "<=",
+        5
+       ]
+      ],
+      "region": "shown"
+     }
+    }
+   },
+   "how": "Reads every picture placed in the PDF, identifies its supplied photo and compares the colours tile by tile."
+  },
+  {
+   "check_id": "PHOTO-26/collection-spread/H017",
+   "output_id": "collection-spread",
+   "rule_id": "R067",
+   "k_id": "K2_Q4",
+   "critical": false,
+   "check": "Every oatmeal glaze, wool or stripe from autumn_shoot_01.jpg, autumn_shoot_03.jpg, autumn_shoot_07.jpg, autumn_shoot_09.jpg, autumn_shoot_12.jpg, autumn_shoot_13.jpg, textile_flatlay_01.jpg or textile_flatlay_05.jpg stays oatmeal on “Autumn interiors collection spread” (collection-spread.pdf), not pushed orange like thornmere_colour_note_phone.jpg.",
+   "assertion": {
+    "op": "v2_pdf_photos_pb",
+    "photos": [
+     "autumn_shoot_01.jpg",
+     "autumn_shoot_02.jpg",
+     "autumn_shoot_03.jpg",
+     "autumn_shoot_04.jpg",
+     "autumn_shoot_05.jpg",
+     "autumn_shoot_06.jpg",
+     "autumn_shoot_07.jpg",
+     "autumn_shoot_08.jpg",
+     "autumn_shoot_09.jpg",
+     "autumn_shoot_10.jpg",
+     "autumn_shoot_11.jpg",
+     "autumn_shoot_12.jpg",
+     "autumn_shoot_13.jpg",
+     "autumn_shoot_14.jpg",
+     "textile_flatlay_01.jpg",
+     "textile_flatlay_02.jpg",
+     "textile_flatlay_03.jpg",
+     "textile_flatlay_04.jpg",
+     "textile_flatlay_05.jpg",
+     "textile_flatlay_06.jpg"
+    ],
+    "by_photo": {
+     "autumn_shoot_01.jpg": {
+      "pass_if": [
+       [
+        "rgb_max",
+        "<=",
+        5
+       ]
+      ],
+      "region": "shown"
+     },
+     "autumn_shoot_03.jpg": {
+      "pass_if": [
+       [
+        "rgb_max",
+        "<=",
+        5
+       ]
+      ],
+      "region": "shown"
+     },
+     "autumn_shoot_07.jpg": {
+      "pass_if": [
+       [
+        "rgb_max",
+        "<=",
+        5
+       ]
+      ],
+      "region": "shown"
+     },
+     "autumn_shoot_09.jpg": {
+      "pass_if": [
+       [
+        "rgb_max",
+        "<=",
+        5
+       ]
+      ],
+      "region": "shown"
+     },
+     "autumn_shoot_12.jpg": {
+      "pass_if": [
+       [
+        "rgb_max",
+        "<=",
+        5
+       ]
+      ],
+      "region": "shown"
+     },
+     "autumn_shoot_13.jpg": {
+      "pass_if": [
+       [
+        "rgb_max",
+        "<=",
+        5
+       ]
+      ],
+      "region": "shown"
+     },
+     "textile_flatlay_01.jpg": {
+      "pass_if": [
+       [
+        "rgb_max",
+        "<=",
+        5
+       ]
+      ],
+      "region": "shown"
+     },
+     "textile_flatlay_05.jpg": {
+      "pass_if": [
+       [
+        "rgb_max",
+        "<=",
+        5
+       ]
+      ],
+      "region": "shown"
+     }
+    }
+   },
+   "how": "Reads every picture placed in the PDF, identifies its supplied photo and compares the colours tile by tile."
+  },
+  {
+   "check_id": "PHOTO-26/wholesale-presentation/H021",
+   "output_id": "wholesale-presentation",
+   "rule_id": "R067",
+   "k_id": "K2_Q4",
+   "critical": false,
+   "check": "Every oatmeal glaze, wool or stripe from autumn_shoot_01.jpg, autumn_shoot_03.jpg, autumn_shoot_07.jpg, autumn_shoot_09.jpg, autumn_shoot_12.jpg, autumn_shoot_13.jpg, textile_flatlay_01.jpg or textile_flatlay_05.jpg stays oatmeal on “Interiors wholesale presentation” (wholesale-presentation.pdf), not pushed orange like thornmere_colour_note_phone.jpg.",
+   "assertion": {
+    "op": "v2_pdf_photos_pb",
+    "photos": [
+     "autumn_shoot_01.jpg",
+     "autumn_shoot_02.jpg",
+     "autumn_shoot_03.jpg",
+     "autumn_shoot_04.jpg",
+     "autumn_shoot_05.jpg",
+     "autumn_shoot_06.jpg",
+     "autumn_shoot_07.jpg",
+     "autumn_shoot_08.jpg",
+     "autumn_shoot_09.jpg",
+     "autumn_shoot_10.jpg",
+     "autumn_shoot_11.jpg",
+     "autumn_shoot_12.jpg",
+     "autumn_shoot_13.jpg",
+     "autumn_shoot_14.jpg",
+     "textile_flatlay_01.jpg",
+     "textile_flatlay_02.jpg",
+     "textile_flatlay_03.jpg",
+     "textile_flatlay_04.jpg",
+     "textile_flatlay_05.jpg",
+     "textile_flatlay_06.jpg"
+    ],
+    "by_photo": {
+     "autumn_shoot_01.jpg": {
+      "pass_if": [
+       [
+        "rgb_max",
+        "<=",
+        5
+       ]
+      ],
+      "region": "shown"
+     },
+     "autumn_shoot_03.jpg": {
+      "pass_if": [
+       [
+        "rgb_max",
+        "<=",
+        5
+       ]
+      ],
+      "region": "shown"
+     },
+     "autumn_shoot_07.jpg": {
+      "pass_if": [
+       [
+        "rgb_max",
+        "<=",
+        5
+       ]
+      ],
+      "region": "shown"
+     },
+     "autumn_shoot_09.jpg": {
+      "pass_if": [
+       [
+        "rgb_max",
+        "<=",
+        5
+       ]
+      ],
+      "region": "shown"
+     },
+     "autumn_shoot_12.jpg": {
+      "pass_if": [
+       [
+        "rgb_max",
+        "<=",
+        5
+       ]
+      ],
+      "region": "shown"
+     },
+     "autumn_shoot_13.jpg": {
+      "pass_if": [
+       [
+        "rgb_max",
+        "<=",
+        5
+       ]
+      ],
+      "region": "shown"
+     },
+     "textile_flatlay_01.jpg": {
+      "pass_if": [
+       [
+        "rgb_max",
+        "<=",
+        5
+       ]
+      ],
+      "region": "shown"
+     },
+     "textile_flatlay_05.jpg": {
+      "pass_if": [
+       [
+        "rgb_max",
+        "<=",
+        5
+       ]
+      ],
+      "region": "shown"
+     }
+    }
+   },
+   "how": "Reads every picture placed in the PDF, identifies its supplied photo and compares the colours tile by tile."
+  },
+  {
+   "check_id": "PHOTO-26/collection-spread/H018",
+   "output_id": "collection-spread",
+   "rule_id": "R068",
+   "k_id": "K2_Q4",
+   "critical": false,
+   "check": "On “Autumn interiors collection spread” (collection-spread.pdf), every soft clay glaze or cloth from autumn_shoot_05.jpg, autumn_shoot_11.jpg or textile_flatlay_03.jpg keeps its source photo's soft clay colour, not pushed orange like thornmere_colour_note_phone.jpg.",
+   "assertion": {
+    "op": "v2_pdf_photos_pb",
+    "photos": [
+     "autumn_shoot_01.jpg",
+     "autumn_shoot_02.jpg",
+     "autumn_shoot_03.jpg",
+     "autumn_shoot_04.jpg",
+     "autumn_shoot_05.jpg",
+     "autumn_shoot_06.jpg",
+     "autumn_shoot_07.jpg",
+     "autumn_shoot_08.jpg",
+     "autumn_shoot_09.jpg",
+     "autumn_shoot_10.jpg",
+     "autumn_shoot_11.jpg",
+     "autumn_shoot_12.jpg",
+     "autumn_shoot_13.jpg",
+     "autumn_shoot_14.jpg",
+     "textile_flatlay_01.jpg",
+     "textile_flatlay_02.jpg",
+     "textile_flatlay_03.jpg",
+     "textile_flatlay_04.jpg",
+     "textile_flatlay_05.jpg",
+     "textile_flatlay_06.jpg"
+    ],
+    "by_photo": {
+     "autumn_shoot_05.jpg": {
+      "pass_if": [
+       [
+        "rgb_max",
+        "<=",
+        5
+       ]
+      ],
+      "region": "shown"
+     },
+     "autumn_shoot_11.jpg": {
+      "pass_if": [
+       [
+        "rgb_max",
+        "<=",
+        5
+       ]
+      ],
+      "region": "shown"
+     },
+     "textile_flatlay_03.jpg": {
+      "pass_if": [
+       [
+        "rgb_max",
+        "<=",
+        5
+       ]
+      ],
+      "region": "shown"
+     }
+    }
+   },
+   "how": "Reads every picture placed in the PDF, identifies its supplied photo and compares the colours tile by tile."
+  },
+  {
+   "check_id": "PHOTO-26/wholesale-presentation/H022",
+   "output_id": "wholesale-presentation",
+   "rule_id": "R068",
+   "k_id": "K2_Q4",
+   "critical": false,
+   "check": "On “Interiors wholesale presentation” (wholesale-presentation.pdf), every soft clay glaze or cloth from autumn_shoot_05.jpg, autumn_shoot_11.jpg or textile_flatlay_03.jpg keeps its source photo's soft clay colour, not pushed orange like thornmere_colour_note_phone.jpg.",
+   "assertion": {
+    "op": "v2_pdf_photos_pb",
+    "photos": [
+     "autumn_shoot_01.jpg",
+     "autumn_shoot_02.jpg",
+     "autumn_shoot_03.jpg",
+     "autumn_shoot_04.jpg",
+     "autumn_shoot_05.jpg",
+     "autumn_shoot_06.jpg",
+     "autumn_shoot_07.jpg",
+     "autumn_shoot_08.jpg",
+     "autumn_shoot_09.jpg",
+     "autumn_shoot_10.jpg",
+     "autumn_shoot_11.jpg",
+     "autumn_shoot_12.jpg",
+     "autumn_shoot_13.jpg",
+     "autumn_shoot_14.jpg",
+     "textile_flatlay_01.jpg",
+     "textile_flatlay_02.jpg",
+     "textile_flatlay_03.jpg",
+     "textile_flatlay_04.jpg",
+     "textile_flatlay_05.jpg",
+     "textile_flatlay_06.jpg"
+    ],
+    "by_photo": {
+     "autumn_shoot_05.jpg": {
+      "pass_if": [
+       [
+        "rgb_max",
+        "<=",
+        5
+       ]
+      ],
+      "region": "shown"
+     },
+     "autumn_shoot_11.jpg": {
+      "pass_if": [
+       [
+        "rgb_max",
+        "<=",
+        5
+       ]
+      ],
+      "region": "shown"
+     },
+     "textile_flatlay_03.jpg": {
+      "pass_if": [
+       [
+        "rgb_max",
+        "<=",
+        5
+       ]
+      ],
+      "region": "shown"
+     }
+    }
+   },
+   "how": "Reads every picture placed in the PDF, identifies its supplied photo and compares the colours tile by tile."
+  },
+  {
+   "check_id": "PHOTO-26/collection-spread/H019",
+   "output_id": "collection-spread",
+   "rule_id": "R069",
+   "k_id": "K2_Q4",
+   "critical": false,
+   "check": "On “Autumn interiors collection spread” (collection-spread.pdf), every piece from autumn_shoot_04.jpg, autumn_shoot_06.jpg, autumn_shoot_10.jpg or textile_flatlay_04.jpg keeps its source photo's charcoal or natural stoneware colour, not pushed orange like thornmere_colour_note_phone.jpg.",
+   "assertion": {
+    "op": "v2_pdf_photos_pb",
+    "photos": [
+     "autumn_shoot_01.jpg",
+     "autumn_shoot_02.jpg",
+     "autumn_shoot_03.jpg",
+     "autumn_shoot_04.jpg",
+     "autumn_shoot_05.jpg",
+     "autumn_shoot_06.jpg",
+     "autumn_shoot_07.jpg",
+     "autumn_shoot_08.jpg",
+     "autumn_shoot_09.jpg",
+     "autumn_shoot_10.jpg",
+     "autumn_shoot_11.jpg",
+     "autumn_shoot_12.jpg",
+     "autumn_shoot_13.jpg",
+     "autumn_shoot_14.jpg",
+     "textile_flatlay_01.jpg",
+     "textile_flatlay_02.jpg",
+     "textile_flatlay_03.jpg",
+     "textile_flatlay_04.jpg",
+     "textile_flatlay_05.jpg",
+     "textile_flatlay_06.jpg"
+    ],
+    "by_photo": {
+     "autumn_shoot_04.jpg": {
+      "pass_if": [
+       [
+        "rgb_max",
+        "<=",
+        5
+       ]
+      ],
+      "region": "shown"
+     },
+     "autumn_shoot_06.jpg": {
+      "pass_if": [
+       [
+        "rgb_max",
+        "<=",
+        5
+       ]
+      ],
+      "region": "shown"
+     },
+     "autumn_shoot_10.jpg": {
+      "pass_if": [
+       [
+        "rgb_max",
+        "<=",
+        5
+       ]
+      ],
+      "region": "shown"
+     },
+     "textile_flatlay_04.jpg": {
+      "pass_if": [
+       [
+        "rgb_max",
+        "<=",
+        5
+       ]
+      ],
+      "region": "shown"
+     }
+    }
+   },
+   "how": "Reads every picture placed in the PDF, identifies its supplied photo and compares the colours tile by tile."
+  },
+  {
+   "check_id": "PHOTO-26/wholesale-presentation/H023",
+   "output_id": "wholesale-presentation",
+   "rule_id": "R069",
+   "k_id": "K2_Q4",
+   "critical": false,
+   "check": "On “Interiors wholesale presentation” (wholesale-presentation.pdf), every piece from autumn_shoot_04.jpg, autumn_shoot_06.jpg, autumn_shoot_10.jpg or textile_flatlay_04.jpg keeps its source photo's charcoal or natural stoneware colour, not pushed orange like thornmere_colour_note_phone.jpg.",
+   "assertion": {
+    "op": "v2_pdf_photos_pb",
+    "photos": [
+     "autumn_shoot_01.jpg",
+     "autumn_shoot_02.jpg",
+     "autumn_shoot_03.jpg",
+     "autumn_shoot_04.jpg",
+     "autumn_shoot_05.jpg",
+     "autumn_shoot_06.jpg",
+     "autumn_shoot_07.jpg",
+     "autumn_shoot_08.jpg",
+     "autumn_shoot_09.jpg",
+     "autumn_shoot_10.jpg",
+     "autumn_shoot_11.jpg",
+     "autumn_shoot_12.jpg",
+     "autumn_shoot_13.jpg",
+     "autumn_shoot_14.jpg",
+     "textile_flatlay_01.jpg",
+     "textile_flatlay_02.jpg",
+     "textile_flatlay_03.jpg",
+     "textile_flatlay_04.jpg",
+     "textile_flatlay_05.jpg",
+     "textile_flatlay_06.jpg"
+    ],
+    "by_photo": {
+     "autumn_shoot_04.jpg": {
+      "pass_if": [
+       [
+        "rgb_max",
+        "<=",
+        5
+       ]
+      ],
+      "region": "shown"
+     },
+     "autumn_shoot_06.jpg": {
+      "pass_if": [
+       [
+        "rgb_max",
+        "<=",
+        5
+       ]
+      ],
+      "region": "shown"
+     },
+     "autumn_shoot_10.jpg": {
+      "pass_if": [
+       [
+        "rgb_max",
+        "<=",
+        5
+       ]
+      ],
+      "region": "shown"
+     },
+     "textile_flatlay_04.jpg": {
+      "pass_if": [
+       [
+        "rgb_max",
+        "<=",
+        5
+       ]
+      ],
+      "region": "shown"
+     }
+    }
+   },
+   "how": "Reads every picture placed in the PDF, identifies its supplied photo and compares the colours tile by tile."
+  },
+  {
+   "check_id": "PHOTO-26/collection-spread/H065",
+   "output_id": "collection-spread",
+   "rule_id": "R070",
+   "k_id": "K2_Q4",
+   "critical": false,
+   "check": "The cut-out teapot handle opening in collection-spread.pdf shows the background behind the product, not the studio sweep from autumn_shoot_13.jpg.",
+   "assertion": {
+    "op": "v2_pdf_photos_pb",
+    "photos": [
+     "autumn_shoot_01.jpg",
+     "autumn_shoot_02.jpg",
+     "autumn_shoot_03.jpg",
+     "autumn_shoot_04.jpg",
+     "autumn_shoot_05.jpg",
+     "autumn_shoot_06.jpg",
+     "autumn_shoot_07.jpg",
+     "autumn_shoot_08.jpg",
+     "autumn_shoot_09.jpg",
+     "autumn_shoot_10.jpg",
+     "autumn_shoot_11.jpg",
+     "autumn_shoot_12.jpg",
+     "autumn_shoot_13.jpg",
+     "autumn_shoot_14.jpg",
+     "textile_flatlay_01.jpg",
+     "textile_flatlay_02.jpg",
+     "textile_flatlay_03.jpg",
+     "textile_flatlay_04.jpg",
+     "textile_flatlay_05.jpg",
+     "textile_flatlay_06.jpg"
+    ],
+    "by_photo": {
+     "autumn_shoot_13.jpg": {
+      "pass_if": [
+       [
+        "ncc_min",
+        ">=",
+        0.9
+       ],
+       [
+        "fills_image",
+        ">=",
+        0.98
+       ]
+      ],
+      "region": "shown"
+     }
+    }
+   },
+   "how": "Reads every picture placed in the PDF, identifies its supplied photo and compares the colours tile by tile."
+  },
+  {
+   "check_id": "PHOTO-26/wholesale-presentation/H071",
+   "output_id": "wholesale-presentation",
+   "rule_id": "R070",
+   "k_id": "K2_Q4",
+   "critical": false,
+   "check": "The cut-out teapot handle opening in wholesale-presentation.pdf shows the background behind the product, not the studio sweep from autumn_shoot_13.jpg.",
+   "assertion": {
+    "op": "v2_pdf_photos_pb",
+    "photos": [
+     "autumn_shoot_01.jpg",
+     "autumn_shoot_02.jpg",
+     "autumn_shoot_03.jpg",
+     "autumn_shoot_04.jpg",
+     "autumn_shoot_05.jpg",
+     "autumn_shoot_06.jpg",
+     "autumn_shoot_07.jpg",
+     "autumn_shoot_08.jpg",
+     "autumn_shoot_09.jpg",
+     "autumn_shoot_10.jpg",
+     "autumn_shoot_11.jpg",
+     "autumn_shoot_12.jpg",
+     "autumn_shoot_13.jpg",
+     "autumn_shoot_14.jpg",
+     "textile_flatlay_01.jpg",
+     "textile_flatlay_02.jpg",
+     "textile_flatlay_03.jpg",
+     "textile_flatlay_04.jpg",
+     "textile_flatlay_05.jpg",
+     "textile_flatlay_06.jpg"
+    ],
+    "by_photo": {
+     "autumn_shoot_13.jpg": {
+      "pass_if": [
+       [
+        "ncc_min",
+        ">=",
+        0.9
+       ],
+       [
+        "fills_image",
+        ">=",
+        0.98
+       ]
+      ],
+      "region": "shown"
+     }
+    }
+   },
+   "how": "Reads every picture placed in the PDF, identifies its supplied photo and compares the colours tile by tile."
   },
   {
    "check_id": "PHOTO-26/wholesale-presentation/H010",

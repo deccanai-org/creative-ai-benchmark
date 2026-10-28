@@ -1261,4 +1261,12 @@ def run(path: Path, assertion: dict):
 
 # round 2 (2026-10-28): layout, colour-behind-text, geometry and picture operations, in their own module
 from objective_ops_r2 import OPS_R2  # noqa: E402
+if [k for k in OPS_R2 if OPS.get(k, OPS_R2[k]) is not OPS_R2[k]]:
+    raise ValueError(f'round 2 redefines {[k for k in OPS_R2 if OPS.get(k, OPS_R2[k]) is not OPS_R2[k]]}')
 OPS.update(OPS_R2)
+
+# round 3 (2026-10-28): colour on images, PDF shapes and text roles
+from objective_ops_r3 import OPS_R3  # noqa: E402
+if [k for k in OPS_R3 if OPS.get(k, OPS_R3[k]) is not OPS_R3[k]]:   # some extensions also register here themselves
+    raise ValueError(f'round 3 redefines {[k for k in OPS_R3 if OPS.get(k, OPS_R3[k]) is not OPS_R3[k]]}')
+OPS.update(OPS_R3)

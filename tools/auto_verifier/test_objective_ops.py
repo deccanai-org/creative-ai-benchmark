@@ -18,7 +18,7 @@ from PIL import Image, ImageDraw, ImageFont
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import objective_ops as o  # noqa: E402
 
-FONT = next((p for p in ('/System/Library/Fonts/Supplemental/Arial.ttf', '/Library/Fonts/Arial.ttf',
+FONT = next((p for p in ('/System/Library/Fonts/Supplemental/Arial.ttf', '/Library/Fonts/Arial.ttf', '/usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf',
                          '/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf') if Path(p).is_file()), None)
 OCR_READY = bool(shutil.which('tesseract') and FONT)
 

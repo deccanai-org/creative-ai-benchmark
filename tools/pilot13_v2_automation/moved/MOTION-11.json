@@ -107,6 +107,31 @@
    "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
   },
   {
+   "check_id": "MOTION-11/channel-animation/H003",
+   "output_id": "channel-animation",
+   "rule_id": "R005",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The end card of “Animated channel title and end card” (channel-animation.mp4) carries “NEW ONE EVERY OTHER DAY” exactly as written in staticfox_titles.txt.",
+   "assertion": {
+    "op": "v2_frame_text",
+    "text": "NEW ONE EVERY OTHER DAY"
+   },
+   "how": "Reads the end card (the last held frame) by OCR and looks for the line."
+  },
+  {
+   "check_id": "MOTION-11/channel-animation/H005",
+   "output_id": "channel-animation",
+   "rule_id": "R007",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "“Animated channel title and end card” (channel-animation.mp4) ends on a held, still end card frame.",
+   "assertion": {
+    "op": "v2_end_hold"
+   },
+   "how": "Compares the film's last frames at its own frame rate and measures how long it holds still."
+  },
+  {
    "check_id": "MOTION-11/channel-teaser/H003",
    "output_id": "channel-teaser",
    "rule_id": "R008",
@@ -137,6 +162,32 @@
    "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
   },
   {
+   "check_id": "MOTION-11/channel-animation/H033",
+   "output_id": "channel-animation",
+   "rule_id": "R011",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "Scrap, the supplied fox mascot, appears in “Animated channel title and end card” (channel-animation.mp4).",
+   "assertion": {
+    "op": "v2_asset_found",
+    "asset": "staticfox_scrap_transparent.png"
+   },
+   "how": "Searches the image, or every frame of the film, for the supplied file."
+  },
+  {
+   "check_id": "MOTION-11/channel-teaser-vertical/H037",
+   "output_id": "channel-teaser-vertical",
+   "rule_id": "R012",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The closing end card of “Channel feed teaser upright cutdown” (channel-teaser-vertical.mp4) shows the handle “@STATICFOX” exactly as written.",
+   "assertion": {
+    "op": "v2_frame_text",
+    "text": "@STATICFOX"
+   },
+   "how": "Reads the end card (the last held frame) by OCR and looks for the line."
+  },
+  {
    "check_id": "MOTION-11/channel-teaser-vertical/H038",
    "output_id": "channel-teaser-vertical",
    "rule_id": "R013",
@@ -165,6 +216,32 @@
     ]
    },
    "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "MOTION-11/channel-animation/H038",
+   "output_id": "channel-animation",
+   "rule_id": "R015",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The end card of “Animated channel title and end card” (channel-animation.mp4) carries the line “SUBSCRIBE OR DAVE WINS” exactly as written in staticfox_titles.txt.",
+   "assertion": {
+    "op": "v2_frame_text",
+    "text": "SUBSCRIBE OR DAVE WINS"
+   },
+   "how": "Reads the end card (the last held frame) by OCR and looks for the line."
+  },
+  {
+   "check_id": "MOTION-11/channel-animation/H039",
+   "output_id": "channel-animation",
+   "rule_id": "R016",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The end card of “Animated channel title and end card” (channel-animation.mp4) carries the handle “@STATICFOX” exactly as written in staticfox_titles.txt.",
+   "assertion": {
+    "op": "v2_frame_text",
+    "text": "@STATICFOX"
+   },
+   "how": "Reads the end card (the last held frame) by OCR and looks for the line."
   },
   {
    "check_id": "MOTION-11/thumbnail-we-broke-the-map/H032",
@@ -255,6 +332,45 @@
     ]
    },
    "how": "Checks the named text is read in full inside the page or image (for a mark, its letters read as a line of their own)."
+  },
+  {
+   "check_id": "MOTION-11/channel-animation/H008",
+   "output_id": "channel-animation",
+   "rule_id": "R020",
+   "k_id": "K1_Q2",
+   "critical": false,
+   "check": "On the held end card of “Animated channel title and end card” (channel-animation.mp4), no letter of any line is cut off at the frame edge.",
+   "assertion": {
+    "op": "v2_frame_inside"
+   },
+   "how": "Reads the end card by OCR and checks no line touches the frame edge."
+  },
+  {
+   "check_id": "MOTION-11/channel-animation/H006",
+   "output_id": "channel-animation",
+   "rule_id": "R025",
+   "k_id": "K1_Q3",
+   "critical": false,
+   "check": "No gameplay footage from the supplied captures staticfox_capture_01.mp4 to staticfox_capture_06.mp4 appears in “Animated channel title and end card” (channel-animation.mp4).",
+   "assertion": {
+    "op": "v2_footage",
+    "mode": "none"
+   },
+   "how": "Finds the footage in the film's frames and matches it to the supplied captures."
+  },
+  {
+   "check_id": "MOTION-11/channel-teaser/H002",
+   "output_id": "channel-teaser",
+   "rule_id": "R027",
+   "k_id": "K1_Q3",
+   "critical": false,
+   "check": "“Channel feed teaser” (channel-teaser.mp4) uses shots from at least four different captures among staticfox_capture_01.mp4 to staticfox_capture_06.mp4.",
+   "assertion": {
+    "op": "v2_footage",
+    "mode": "min_captures",
+    "count": 4
+   },
+   "how": "Finds the footage in the film's frames and matches it to the supplied captures."
   },
   {
    "check_id": "MOTION-11/channel-animation/H001",
@@ -392,6 +508,84 @@
    "how": "Searches the thumbnail for frames of each capture video."
   },
   {
+   "check_id": "MOTION-11/thumbnail-we-broke-the-map/H005",
+   "output_id": "thumbnail-we-broke-the-map",
+   "rule_id": "R034",
+   "k_id": "K2_Q1",
+   "critical": false,
+   "check": "Scrap on “Channel thumbnail - WE BROKE THE MAP” (thumbnail-we-broke-the-map.png) uses staticfox_scrap_transparent.png, not a newly drawn or traced fox.",
+   "assertion": {
+    "op": "v2_asset_found",
+    "asset": "staticfox_scrap_transparent.png"
+   },
+   "how": "Searches the image, or every frame of the film, for the supplied file."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-everyone-off-the-platform/H011",
+   "output_id": "thumbnail-everyone-off-the-platform",
+   "rule_id": "R034",
+   "k_id": "K2_Q1",
+   "critical": false,
+   "check": "Scrap on “Channel thumbnail - EVERYONE OFF THE PLATFORM” (thumbnail-everyone-off-the-platform.png) uses staticfox_scrap_transparent.png, not a newly drawn or traced fox.",
+   "assertion": {
+    "op": "v2_asset_found",
+    "asset": "staticfox_scrap_transparent.png"
+   },
+   "how": "Searches the image, or every frame of the film, for the supplied file."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-kitchen-gone/H009",
+   "output_id": "thumbnail-kitchen-gone",
+   "rule_id": "R034",
+   "k_id": "K2_Q1",
+   "critical": false,
+   "check": "Scrap on “Channel thumbnail - KITCHEN. GONE.” (thumbnail-kitchen-gone.png) uses staticfox_scrap_transparent.png, not a newly drawn or traced fox.",
+   "assertion": {
+    "op": "v2_asset_found",
+    "asset": "staticfox_scrap_transparent.png"
+   },
+   "how": "Searches the image, or every frame of the film, for the supplied file."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-do-not-open-that-door/H010",
+   "output_id": "thumbnail-do-not-open-that-door",
+   "rule_id": "R034",
+   "k_id": "K2_Q1",
+   "critical": false,
+   "check": "Scrap on “Channel thumbnail - DO NOT OPEN THAT DOOR” (thumbnail-do-not-open-that-door.png) uses staticfox_scrap_transparent.png, not a newly drawn or traced fox.",
+   "assertion": {
+    "op": "v2_asset_found",
+    "asset": "staticfox_scrap_transparent.png"
+   },
+   "how": "Searches the image, or every frame of the film, for the supplied file."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas/H009",
+   "output_id": "thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas",
+   "rule_id": "R034",
+   "k_id": "K2_Q1",
+   "critical": false,
+   "check": "Scrap on “Channel thumbnail - WE SPENT SIX HOURS BUILDING A BRIDGE AND THEN DROVE STRAIGHT PAST IT” (thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas.png) uses staticfox_scrap_transparent.png, not a newly drawn or traced fox.",
+   "assertion": {
+    "op": "v2_asset_found",
+    "asset": "staticfox_scrap_transparent.png"
+   },
+   "how": "Searches the image, or every frame of the film, for the supplied file."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi/H010",
+   "output_id": "thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi",
+   "rule_id": "R034",
+   "k_id": "K2_Q1",
+   "critical": false,
+   "check": "Scrap on “Channel thumbnail - I GAVE MY TEAM ONE SIMPLE JOB AND THEY SET THE ENTIRE BASE ON FIRE” (thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi.png) uses staticfox_scrap_transparent.png, not a newly drawn or traced fox.",
+   "assertion": {
+    "op": "v2_asset_found",
+    "asset": "staticfox_scrap_transparent.png"
+   },
+   "how": "Searches the image, or every frame of the film, for the supplied file."
+  },
+  {
    "check_id": "MOTION-11/channel-animation/H010",
    "output_id": "channel-animation",
    "rule_id": "R035",
@@ -407,6 +601,4610 @@
     "optional": true
    },
    "how": "Searches the deliverable for the supplied file (feature matching, confirmed by correlation)."
+  },
+  {
+   "check_id": "MOTION-11/channel-teaser/H001",
+   "output_id": "channel-teaser",
+   "rule_id": "R036",
+   "k_id": "K2_Q1",
+   "critical": false,
+   "check": "Every shot in “Channel feed teaser” (channel-teaser.mp4) is cut from the supplied captures staticfox_capture_01.mp4 to staticfox_capture_06.mp4, with no invented footage.",
+   "assertion": {
+    "op": "v2_footage",
+    "mode": "only_captures"
+   },
+   "how": "Finds the footage in the film's frames and matches it to the supplied captures."
+  },
+  {
+   "check_id": "MOTION-11/channel-teaser-vertical/H002",
+   "output_id": "channel-teaser-vertical",
+   "rule_id": "R036",
+   "k_id": "K2_Q1",
+   "critical": false,
+   "check": "Every shot in “Channel feed teaser upright cutdown” (channel-teaser-vertical.mp4) is cut from the supplied captures staticfox_capture_01.mp4 to staticfox_capture_06.mp4, with no invented footage.",
+   "assertion": {
+    "op": "v2_footage",
+    "mode": "only_captures"
+   },
+   "how": "Finds the footage in the film's frames and matches it to the supplied captures."
+  },
+  {
+   "check_id": "MOTION-11/channel-teaser/H012",
+   "output_id": "channel-teaser",
+   "rule_id": "R038",
+   "k_id": "K2_Q1",
+   "critical": false,
+   "check": "Wherever Scrap appears in “Channel feed teaser” (channel-teaser.mp4), he uses staticfox_scrap_transparent.png, not newly drawn or traced.",
+   "assertion": {
+    "op": "v2_asset_found",
+    "asset": "staticfox_scrap_transparent.png"
+   },
+   "how": "Searches the image, or every frame of the film, for the supplied file."
+  },
+  {
+   "check_id": "MOTION-11/channel-teaser-vertical/H010",
+   "output_id": "channel-teaser-vertical",
+   "rule_id": "R038",
+   "k_id": "K2_Q1",
+   "critical": false,
+   "check": "Wherever Scrap appears in “Channel feed teaser upright cutdown” (channel-teaser-vertical.mp4), he uses staticfox_scrap_transparent.png, not newly drawn or traced.",
+   "assertion": {
+    "op": "v2_asset_found",
+    "asset": "staticfox_scrap_transparent.png"
+   },
+   "how": "Searches the image, or every frame of the film, for the supplied file."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-we-broke-the-map/H008",
+   "output_id": "thumbnail-we-broke-the-map",
+   "rule_id": "R039",
+   "k_id": "K2_Q2",
+   "critical": false,
+   "check": "The capture frame on “Channel thumbnail - WE BROKE THE MAP” (thumbnail-we-broke-the-map.png) is used as recorded, with nothing generated, extended or painted into it.",
+   "assertion": {
+    "op": "v2_capture_used",
+    "capture": "staticfox_captures/staticfox_capture_01.mp4"
+   },
+   "how": "Finds the capture frame the thumbnail is built on and compares the visible capture with it cell by cell."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-everyone-off-the-platform/H007",
+   "output_id": "thumbnail-everyone-off-the-platform",
+   "rule_id": "R039",
+   "k_id": "K2_Q2",
+   "critical": false,
+   "check": "The capture frame on “Channel thumbnail - EVERYONE OFF THE PLATFORM” (thumbnail-everyone-off-the-platform.png) is used as recorded, with nothing generated, extended or painted into it.",
+   "assertion": {
+    "op": "v2_capture_used",
+    "capture": "staticfox_captures/staticfox_capture_02.mp4"
+   },
+   "how": "Finds the capture frame the thumbnail is built on and compares the visible capture with it cell by cell."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-kitchen-gone/H005",
+   "output_id": "thumbnail-kitchen-gone",
+   "rule_id": "R039",
+   "k_id": "K2_Q2",
+   "critical": false,
+   "check": "The capture frame on “Channel thumbnail - KITCHEN. GONE.” (thumbnail-kitchen-gone.png) is used as recorded, with nothing generated, extended or painted into it.",
+   "assertion": {
+    "op": "v2_capture_used",
+    "capture": "staticfox_captures/staticfox_capture_03.mp4"
+   },
+   "how": "Finds the capture frame the thumbnail is built on and compares the visible capture with it cell by cell."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-do-not-open-that-door/H006",
+   "output_id": "thumbnail-do-not-open-that-door",
+   "rule_id": "R039",
+   "k_id": "K2_Q2",
+   "critical": false,
+   "check": "The capture frame on “Channel thumbnail - DO NOT OPEN THAT DOOR” (thumbnail-do-not-open-that-door.png) is used as recorded, with nothing generated, extended or painted into it.",
+   "assertion": {
+    "op": "v2_capture_used",
+    "capture": "staticfox_captures/staticfox_capture_04.mp4"
+   },
+   "how": "Finds the capture frame the thumbnail is built on and compares the visible capture with it cell by cell."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas/H005",
+   "output_id": "thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas",
+   "rule_id": "R039",
+   "k_id": "K2_Q2",
+   "critical": false,
+   "check": "The capture frame on “Channel thumbnail - WE SPENT SIX HOURS BUILDING A BRIDGE AND THEN DROVE STRAIGHT PAST IT” (thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas.png) is used as recorded, with nothing generated, extended or painted into it.",
+   "assertion": {
+    "op": "v2_capture_used",
+    "capture": "staticfox_captures/staticfox_capture_05.mp4"
+   },
+   "how": "Finds the capture frame the thumbnail is built on and compares the visible capture with it cell by cell."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi/H005",
+   "output_id": "thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi",
+   "rule_id": "R039",
+   "k_id": "K2_Q2",
+   "critical": false,
+   "check": "The capture frame on “Channel thumbnail - I GAVE MY TEAM ONE SIMPLE JOB AND THEY SET THE ENTIRE BASE ON FIRE” (thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi.png) is used as recorded, with nothing generated, extended or painted into it.",
+   "assertion": {
+    "op": "v2_capture_used",
+    "capture": "staticfox_captures/staticfox_capture_06.mp4"
+   },
+   "how": "Finds the capture frame the thumbnail is built on and compares the visible capture with it cell by cell."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi/H007",
+   "output_id": "thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi",
+   "rule_id": "R040",
+   "k_id": "K2_Q2",
+   "critical": false,
+   "check": "The capture frame on “Channel thumbnail - I GAVE MY TEAM ONE SIMPLE JOB AND THEY SET THE ENTIRE BASE ON FIRE” (thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi.png) is not recoloured toward the palette: its stone walls still read brown.",
+   "assertion": {
+    "op": "v2_capture_colour",
+    "capture": "staticfox_captures/staticfox_capture_06.mp4"
+   },
+   "how": "Finds the capture frame the thumbnail is built on and compares the colours of the visible capture with it."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-we-broke-the-map/H012",
+   "output_id": "thumbnail-we-broke-the-map",
+   "rule_id": "R041",
+   "k_id": "K2_Q2",
+   "critical": false,
+   "check": "Scrap on “Channel thumbnail - WE BROKE THE MAP” (thumbnail-we-broke-the-map.png) keeps his supplied proportions, not stretched or squashed.",
+   "assertion": {
+    "op": "v2_photo_proportions",
+    "asset": "staticfox_scrap_transparent.png"
+   },
+   "how": "Finds the supplied picture and measures whether it was stretched."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-everyone-off-the-platform/H003",
+   "output_id": "thumbnail-everyone-off-the-platform",
+   "rule_id": "R041",
+   "k_id": "K2_Q2",
+   "critical": false,
+   "check": "Scrap on “Channel thumbnail - EVERYONE OFF THE PLATFORM” (thumbnail-everyone-off-the-platform.png) keeps his supplied proportions, not stretched or squashed.",
+   "assertion": {
+    "op": "v2_photo_proportions",
+    "asset": "staticfox_scrap_transparent.png"
+   },
+   "how": "Finds the supplied picture and measures whether it was stretched."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-kitchen-gone/H010",
+   "output_id": "thumbnail-kitchen-gone",
+   "rule_id": "R041",
+   "k_id": "K2_Q2",
+   "critical": false,
+   "check": "Scrap on “Channel thumbnail - KITCHEN. GONE.” (thumbnail-kitchen-gone.png) keeps his supplied proportions, not stretched or squashed.",
+   "assertion": {
+    "op": "v2_photo_proportions",
+    "asset": "staticfox_scrap_transparent.png"
+   },
+   "how": "Finds the supplied picture and measures whether it was stretched."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-do-not-open-that-door/H011",
+   "output_id": "thumbnail-do-not-open-that-door",
+   "rule_id": "R041",
+   "k_id": "K2_Q2",
+   "critical": false,
+   "check": "Scrap on “Channel thumbnail - DO NOT OPEN THAT DOOR” (thumbnail-do-not-open-that-door.png) keeps his supplied proportions, not stretched or squashed.",
+   "assertion": {
+    "op": "v2_photo_proportions",
+    "asset": "staticfox_scrap_transparent.png"
+   },
+   "how": "Finds the supplied picture and measures whether it was stretched."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas/H010",
+   "output_id": "thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas",
+   "rule_id": "R041",
+   "k_id": "K2_Q2",
+   "critical": false,
+   "check": "Scrap on “Channel thumbnail - WE SPENT SIX HOURS BUILDING A BRIDGE AND THEN DROVE STRAIGHT PAST IT” (thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas.png) keeps his supplied proportions, not stretched or squashed.",
+   "assertion": {
+    "op": "v2_photo_proportions",
+    "asset": "staticfox_scrap_transparent.png"
+   },
+   "how": "Finds the supplied picture and measures whether it was stretched."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi/H011",
+   "output_id": "thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi",
+   "rule_id": "R041",
+   "k_id": "K2_Q2",
+   "critical": false,
+   "check": "Scrap on “Channel thumbnail - I GAVE MY TEAM ONE SIMPLE JOB AND THEY SET THE ENTIRE BASE ON FIRE” (thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi.png) keeps his supplied proportions, not stretched or squashed.",
+   "assertion": {
+    "op": "v2_photo_proportions",
+    "asset": "staticfox_scrap_transparent.png"
+   },
+   "how": "Finds the supplied picture and measures whether it was stretched."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-everyone-off-the-platform/H009",
+   "output_id": "thumbnail-everyone-off-the-platform",
+   "rule_id": "R043",
+   "k_id": "K2_Q2",
+   "critical": false,
+   "check": "The capture frame on “Channel thumbnail - EVERYONE OFF THE PLATFORM” (thumbnail-everyone-off-the-platform.png) is not recoloured toward the palette: its slime pool still reads hot pink.",
+   "assertion": {
+    "op": "v2_capture_colour",
+    "capture": "staticfox_captures/staticfox_capture_02.mp4"
+   },
+   "how": "Finds the capture frame the thumbnail is built on and compares the colours of the visible capture with it."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-kitchen-gone/H001",
+   "output_id": "thumbnail-kitchen-gone",
+   "rule_id": "R044",
+   "k_id": "K2_Q2",
+   "critical": false,
+   "check": "The capture frame on “Channel thumbnail - KITCHEN. GONE.” (thumbnail-kitchen-gone.png) is not recoloured toward the palette: its kitchen walls still read warm beige.",
+   "assertion": {
+    "op": "v2_capture_colour",
+    "capture": "staticfox_captures/staticfox_capture_03.mp4"
+   },
+   "how": "Finds the capture frame the thumbnail is built on and compares the colours of the visible capture with it."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas/H001",
+   "output_id": "thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas",
+   "rule_id": "R045",
+   "k_id": "K2_Q2",
+   "critical": false,
+   "check": "The capture frame on “Channel thumbnail - WE SPENT SIX HOURS BUILDING A BRIDGE AND THEN DROVE STRAIGHT PAST IT” (thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas.png) is not recoloured toward the palette: its sky still reads blue.",
+   "assertion": {
+    "op": "v2_capture_colour",
+    "capture": "staticfox_captures/staticfox_capture_05.mp4"
+   },
+   "how": "Finds the capture frame the thumbnail is built on and compares the colours of the visible capture with it."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-we-broke-the-map/H001",
+   "output_id": "thumbnail-we-broke-the-map",
+   "rule_id": "R046",
+   "k_id": "K2_Q2",
+   "critical": false,
+   "check": "The capture frame on “Channel thumbnail - WE BROKE THE MAP” (thumbnail-we-broke-the-map.png) is not recoloured toward the palette: its grass still reads green.",
+   "assertion": {
+    "op": "v2_capture_colour",
+    "capture": "staticfox_captures/staticfox_capture_01.mp4"
+   },
+   "how": "Finds the capture frame the thumbnail is built on and compares the colours of the visible capture with it."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-do-not-open-that-door/H001",
+   "output_id": "thumbnail-do-not-open-that-door",
+   "rule_id": "R047",
+   "k_id": "K2_Q2",
+   "critical": false,
+   "check": "The capture frame on “Channel thumbnail - DO NOT OPEN THAT DOOR” (thumbnail-do-not-open-that-door.png) is not recoloured toward the palette: its corridor tiles still read green.",
+   "assertion": {
+    "op": "v2_capture_colour",
+    "capture": "staticfox_captures/staticfox_capture_04.mp4"
+   },
+   "how": "Finds the capture frame the thumbnail is built on and compares the colours of the visible capture with it."
+  },
+  {
+   "check_id": "MOTION-11/channel-animation/H011",
+   "output_id": "channel-animation",
+   "rule_id": "R049",
+   "k_id": "K2_Q2",
+   "critical": false,
+   "check": "Wherever Scrap appears in “Animated channel title and end card” (channel-animation.mp4), he keeps his supplied proportions, not stretched or squashed.",
+   "assertion": {
+    "op": "v2_photo_proportions",
+    "asset": "staticfox_scrap_transparent.png"
+   },
+   "how": "Finds the supplied picture and measures whether it was stretched."
+  },
+  {
+   "check_id": "MOTION-11/channel-teaser/H013",
+   "output_id": "channel-teaser",
+   "rule_id": "R049",
+   "k_id": "K2_Q2",
+   "critical": false,
+   "check": "Wherever Scrap appears in “Channel feed teaser” (channel-teaser.mp4), he keeps his supplied proportions, not stretched or squashed.",
+   "assertion": {
+    "op": "v2_photo_proportions",
+    "asset": "staticfox_scrap_transparent.png"
+   },
+   "how": "Finds the supplied picture and measures whether it was stretched."
+  },
+  {
+   "check_id": "MOTION-11/channel-teaser-vertical/H011",
+   "output_id": "channel-teaser-vertical",
+   "rule_id": "R049",
+   "k_id": "K2_Q2",
+   "critical": false,
+   "check": "Wherever Scrap appears in “Channel feed teaser upright cutdown” (channel-teaser-vertical.mp4), he keeps his supplied proportions, not stretched or squashed.",
+   "assertion": {
+    "op": "v2_photo_proportions",
+    "asset": "staticfox_scrap_transparent.png"
+   },
+   "how": "Finds the supplied picture and measures whether it was stretched."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-we-broke-the-map/H016",
+   "output_id": "thumbnail-we-broke-the-map",
+   "rule_id": "R055",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Every word of the title on “Channel thumbnail - WE BROKE THE MAP” (thumbnail-we-broke-the-map.png) carries a hard, unblurred Jet Black #101014 outline.",
+   "assertion": {
+    "op": "v2_title_letters",
+    "title": "WE BROKE THE MAP",
+    "mode": "outline",
+    "fills": [
+     "#FFFFFF",
+     "#B6FF2E",
+     "#FF5A1F"
+    ],
+    "outline": "#101014"
+   },
+   "how": "Reads the title words by OCR and checks each letter's fill colour, or the outline colour round it."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-everyone-off-the-platform/H015",
+   "output_id": "thumbnail-everyone-off-the-platform",
+   "rule_id": "R055",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Every word of the title on “Channel thumbnail - EVERYONE OFF THE PLATFORM” (thumbnail-everyone-off-the-platform.png) carries a hard, unblurred Jet Black #101014 outline.",
+   "assertion": {
+    "op": "v2_title_letters",
+    "title": "EVERYONE OFF THE PLATFORM",
+    "mode": "outline",
+    "fills": [
+     "#FFFFFF",
+     "#B6FF2E",
+     "#FF5A1F"
+    ],
+    "outline": "#101014"
+   },
+   "how": "Reads the title words by OCR and checks each letter's fill colour, or the outline colour round it."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-kitchen-gone/H014",
+   "output_id": "thumbnail-kitchen-gone",
+   "rule_id": "R055",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Every word of the title on “Channel thumbnail - KITCHEN. GONE.” (thumbnail-kitchen-gone.png) carries a hard, unblurred Jet Black #101014 outline.",
+   "assertion": {
+    "op": "v2_title_letters",
+    "title": "KITCHEN. GONE.",
+    "mode": "outline",
+    "fills": [
+     "#FFFFFF",
+     "#B6FF2E",
+     "#FF5A1F"
+    ],
+    "outline": "#101014"
+   },
+   "how": "Reads the title words by OCR and checks each letter's fill colour, or the outline colour round it."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-do-not-open-that-door/H015",
+   "output_id": "thumbnail-do-not-open-that-door",
+   "rule_id": "R055",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Every word of the title on “Channel thumbnail - DO NOT OPEN THAT DOOR” (thumbnail-do-not-open-that-door.png) carries a hard, unblurred Jet Black #101014 outline.",
+   "assertion": {
+    "op": "v2_title_letters",
+    "title": "DO NOT OPEN THAT DOOR",
+    "mode": "outline",
+    "fills": [
+     "#FFFFFF",
+     "#B6FF2E",
+     "#FF5A1F"
+    ],
+    "outline": "#101014"
+   },
+   "how": "Reads the title words by OCR and checks each letter's fill colour, or the outline colour round it."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas/H014",
+   "output_id": "thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas",
+   "rule_id": "R055",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Every word of the title on “Channel thumbnail - WE SPENT SIX HOURS BUILDING A BRIDGE AND THEN DROVE STRAIGHT PAST IT” (thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas.png) carries a hard, unblurred Jet Black #101014 outline.",
+   "assertion": {
+    "op": "v2_title_letters",
+    "title": "WE SPENT SIX HOURS BUILDING A BRIDGE AND THEN DROVE STRAIGHT PAST IT",
+    "mode": "outline",
+    "fills": [
+     "#FFFFFF",
+     "#B6FF2E",
+     "#FF5A1F"
+    ],
+    "outline": "#101014"
+   },
+   "how": "Reads the title words by OCR and checks each letter's fill colour, or the outline colour round it."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi/H015",
+   "output_id": "thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi",
+   "rule_id": "R055",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Every word of the title on “Channel thumbnail - I GAVE MY TEAM ONE SIMPLE JOB AND THEY SET THE ENTIRE BASE ON FIRE” (thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi.png) carries a hard, unblurred Jet Black #101014 outline.",
+   "assertion": {
+    "op": "v2_title_letters",
+    "title": "I GAVE MY TEAM ONE SIMPLE JOB AND THEY SET THE ENTIRE BASE ON FIRE",
+    "mode": "outline",
+    "fills": [
+     "#FFFFFF",
+     "#B6FF2E",
+     "#FF5A1F"
+    ],
+    "outline": "#101014"
+   },
+   "how": "Reads the title words by OCR and checks each letter's fill colour, or the outline colour round it."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-we-broke-the-map/H022",
+   "output_id": "thumbnail-we-broke-the-map",
+   "rule_id": "R056",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Every title word on “Channel thumbnail - WE BROKE THE MAP” (thumbnail-we-broke-the-map.png) is filled Signal White, Acid Signal or Fox Orange, not left transparent.",
+   "assertion": {
+    "op": "v2_title_letters",
+    "title": "WE BROKE THE MAP",
+    "mode": "fill",
+    "fills": [
+     "#FFFFFF",
+     "#B6FF2E",
+     "#FF5A1F"
+    ],
+    "outline": "#101014"
+   },
+   "how": "Reads the title words by OCR and checks each letter's fill colour, or the outline colour round it."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-everyone-off-the-platform/H022",
+   "output_id": "thumbnail-everyone-off-the-platform",
+   "rule_id": "R056",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Every title word on “Channel thumbnail - EVERYONE OFF THE PLATFORM” (thumbnail-everyone-off-the-platform.png) is filled Signal White, Acid Signal or Fox Orange, not left transparent.",
+   "assertion": {
+    "op": "v2_title_letters",
+    "title": "EVERYONE OFF THE PLATFORM",
+    "mode": "fill",
+    "fills": [
+     "#FFFFFF",
+     "#B6FF2E",
+     "#FF5A1F"
+    ],
+    "outline": "#101014"
+   },
+   "how": "Reads the title words by OCR and checks each letter's fill colour, or the outline colour round it."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-kitchen-gone/H021",
+   "output_id": "thumbnail-kitchen-gone",
+   "rule_id": "R056",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Every title word on “Channel thumbnail - KITCHEN. GONE.” (thumbnail-kitchen-gone.png) is filled Signal White, Acid Signal or Fox Orange, not left transparent.",
+   "assertion": {
+    "op": "v2_title_letters",
+    "title": "KITCHEN. GONE.",
+    "mode": "fill",
+    "fills": [
+     "#FFFFFF",
+     "#B6FF2E",
+     "#FF5A1F"
+    ],
+    "outline": "#101014"
+   },
+   "how": "Reads the title words by OCR and checks each letter's fill colour, or the outline colour round it."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-do-not-open-that-door/H022",
+   "output_id": "thumbnail-do-not-open-that-door",
+   "rule_id": "R056",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Every title word on “Channel thumbnail - DO NOT OPEN THAT DOOR” (thumbnail-do-not-open-that-door.png) is filled Signal White, Acid Signal or Fox Orange, not left transparent.",
+   "assertion": {
+    "op": "v2_title_letters",
+    "title": "DO NOT OPEN THAT DOOR",
+    "mode": "fill",
+    "fills": [
+     "#FFFFFF",
+     "#B6FF2E",
+     "#FF5A1F"
+    ],
+    "outline": "#101014"
+   },
+   "how": "Reads the title words by OCR and checks each letter's fill colour, or the outline colour round it."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas/H020",
+   "output_id": "thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas",
+   "rule_id": "R056",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Every title word on “Channel thumbnail - WE SPENT SIX HOURS BUILDING A BRIDGE AND THEN DROVE STRAIGHT PAST IT” (thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas.png) is filled Signal White, Acid Signal or Fox Orange, not left transparent.",
+   "assertion": {
+    "op": "v2_title_letters",
+    "title": "WE SPENT SIX HOURS BUILDING A BRIDGE AND THEN DROVE STRAIGHT PAST IT",
+    "mode": "fill",
+    "fills": [
+     "#FFFFFF",
+     "#B6FF2E",
+     "#FF5A1F"
+    ],
+    "outline": "#101014"
+   },
+   "how": "Reads the title words by OCR and checks each letter's fill colour, or the outline colour round it."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi/H021",
+   "output_id": "thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi",
+   "rule_id": "R056",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Every title word on “Channel thumbnail - I GAVE MY TEAM ONE SIMPLE JOB AND THEY SET THE ENTIRE BASE ON FIRE” (thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi.png) is filled Signal White, Acid Signal or Fox Orange, not left transparent.",
+   "assertion": {
+    "op": "v2_title_letters",
+    "title": "I GAVE MY TEAM ONE SIMPLE JOB AND THEY SET THE ENTIRE BASE ON FIRE",
+    "mode": "fill",
+    "fills": [
+     "#FFFFFF",
+     "#B6FF2E",
+     "#FF5A1F"
+    ],
+    "outline": "#101014"
+   },
+   "how": "Reads the title words by OCR and checks each letter's fill colour, or the outline colour round it."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-we-broke-the-map/H023",
+   "output_id": "thumbnail-we-broke-the-map",
+   "rule_id": "R057",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The type, outline, panel, shape and icon colours on “Channel thumbnail - WE BROKE THE MAP” (thumbnail-we-broke-the-map.png) come only from #FF5A1F, #7A2FF2, #B6FF2E, #101014 and #FFFFFF.",
+   "assertion": {
+    "op": "v2_raster_palette",
+    "hexes": [
+     "#FF5A1F",
+     "#7A2FF2",
+     "#B6FF2E",
+     "#101014",
+     "#FFFFFF"
+    ],
+    "photos": [
+     "staticfox_scrap_transparent.png"
+    ],
+    "capture": "staticfox_captures/staticfox_capture_01.mp4"
+   },
+   "how": "Reads every flat colour outside photographs, transparent parts and capture footage, and checks each is a palette colour."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-everyone-off-the-platform/H023",
+   "output_id": "thumbnail-everyone-off-the-platform",
+   "rule_id": "R057",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The type, outline, panel, shape and icon colours on “Channel thumbnail - EVERYONE OFF THE PLATFORM” (thumbnail-everyone-off-the-platform.png) come only from #FF5A1F, #7A2FF2, #B6FF2E, #101014 and #FFFFFF.",
+   "assertion": {
+    "op": "v2_raster_palette",
+    "hexes": [
+     "#FF5A1F",
+     "#7A2FF2",
+     "#B6FF2E",
+     "#101014",
+     "#FFFFFF"
+    ],
+    "photos": [
+     "staticfox_scrap_transparent.png"
+    ],
+    "capture": "staticfox_captures/staticfox_capture_02.mp4"
+   },
+   "how": "Reads every flat colour outside photographs, transparent parts and capture footage, and checks each is a palette colour."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-kitchen-gone/H022",
+   "output_id": "thumbnail-kitchen-gone",
+   "rule_id": "R057",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The type, outline, panel, shape and icon colours on “Channel thumbnail - KITCHEN. GONE.” (thumbnail-kitchen-gone.png) come only from #FF5A1F, #7A2FF2, #B6FF2E, #101014 and #FFFFFF.",
+   "assertion": {
+    "op": "v2_raster_palette",
+    "hexes": [
+     "#FF5A1F",
+     "#7A2FF2",
+     "#B6FF2E",
+     "#101014",
+     "#FFFFFF"
+    ],
+    "photos": [
+     "staticfox_scrap_transparent.png"
+    ],
+    "capture": "staticfox_captures/staticfox_capture_03.mp4"
+   },
+   "how": "Reads every flat colour outside photographs, transparent parts and capture footage, and checks each is a palette colour."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-do-not-open-that-door/H023",
+   "output_id": "thumbnail-do-not-open-that-door",
+   "rule_id": "R057",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The type, outline, panel, shape and icon colours on “Channel thumbnail - DO NOT OPEN THAT DOOR” (thumbnail-do-not-open-that-door.png) come only from #FF5A1F, #7A2FF2, #B6FF2E, #101014 and #FFFFFF.",
+   "assertion": {
+    "op": "v2_raster_palette",
+    "hexes": [
+     "#FF5A1F",
+     "#7A2FF2",
+     "#B6FF2E",
+     "#101014",
+     "#FFFFFF"
+    ],
+    "photos": [
+     "staticfox_scrap_transparent.png"
+    ],
+    "capture": "staticfox_captures/staticfox_capture_04.mp4"
+   },
+   "how": "Reads every flat colour outside photographs, transparent parts and capture footage, and checks each is a palette colour."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas/H021",
+   "output_id": "thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas",
+   "rule_id": "R057",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The type, outline, panel, shape and icon colours on “Channel thumbnail - WE SPENT SIX HOURS BUILDING A BRIDGE AND THEN DROVE STRAIGHT PAST IT” (thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas.png) come only from #FF5A1F, #7A2FF2, #B6FF2E, #101014 and #FFFFFF.",
+   "assertion": {
+    "op": "v2_raster_palette",
+    "hexes": [
+     "#FF5A1F",
+     "#7A2FF2",
+     "#B6FF2E",
+     "#101014",
+     "#FFFFFF"
+    ],
+    "photos": [
+     "staticfox_scrap_transparent.png"
+    ],
+    "capture": "staticfox_captures/staticfox_capture_05.mp4"
+   },
+   "how": "Reads every flat colour outside photographs, transparent parts and capture footage, and checks each is a palette colour."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi/H022",
+   "output_id": "thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi",
+   "rule_id": "R057",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The type, outline, panel, shape and icon colours on “Channel thumbnail - I GAVE MY TEAM ONE SIMPLE JOB AND THEY SET THE ENTIRE BASE ON FIRE” (thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi.png) come only from #FF5A1F, #7A2FF2, #B6FF2E, #101014 and #FFFFFF.",
+   "assertion": {
+    "op": "v2_raster_palette",
+    "hexes": [
+     "#FF5A1F",
+     "#7A2FF2",
+     "#B6FF2E",
+     "#101014",
+     "#FFFFFF"
+    ],
+    "photos": [
+     "staticfox_scrap_transparent.png"
+    ],
+    "capture": "staticfox_captures/staticfox_capture_06.mp4"
+   },
+   "how": "Reads every flat colour outside photographs, transparent parts and capture footage, and checks each is a palette colour."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-we-broke-the-map/H025",
+   "output_id": "thumbnail-we-broke-the-map",
+   "rule_id": "R059",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Fox Orange #FF5A1F appears in the type, panels or shapes of “Channel thumbnail - WE BROKE THE MAP” (thumbnail-we-broke-the-map.png), not only in Scrap.",
+   "assertion": {
+    "op": "v2_raster_present",
+    "hexes": [
+     "#FF5A1F"
+    ],
+    "photos": [
+     "staticfox_scrap_transparent.png"
+    ],
+    "capture": "staticfox_captures/staticfox_capture_01.mp4"
+   },
+   "how": "Looks for the colour as a flat area in the designed parts."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-everyone-off-the-platform/H025",
+   "output_id": "thumbnail-everyone-off-the-platform",
+   "rule_id": "R059",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Fox Orange #FF5A1F appears in the type, panels or shapes of “Channel thumbnail - EVERYONE OFF THE PLATFORM” (thumbnail-everyone-off-the-platform.png), not only in Scrap.",
+   "assertion": {
+    "op": "v2_raster_present",
+    "hexes": [
+     "#FF5A1F"
+    ],
+    "photos": [
+     "staticfox_scrap_transparent.png"
+    ],
+    "capture": "staticfox_captures/staticfox_capture_02.mp4"
+   },
+   "how": "Looks for the colour as a flat area in the designed parts."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-kitchen-gone/H024",
+   "output_id": "thumbnail-kitchen-gone",
+   "rule_id": "R059",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Fox Orange #FF5A1F appears in the type, panels or shapes of “Channel thumbnail - KITCHEN. GONE.” (thumbnail-kitchen-gone.png), not only in Scrap.",
+   "assertion": {
+    "op": "v2_raster_present",
+    "hexes": [
+     "#FF5A1F"
+    ],
+    "photos": [
+     "staticfox_scrap_transparent.png"
+    ],
+    "capture": "staticfox_captures/staticfox_capture_03.mp4"
+   },
+   "how": "Looks for the colour as a flat area in the designed parts."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-do-not-open-that-door/H025",
+   "output_id": "thumbnail-do-not-open-that-door",
+   "rule_id": "R059",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Fox Orange #FF5A1F appears in the type, panels or shapes of “Channel thumbnail - DO NOT OPEN THAT DOOR” (thumbnail-do-not-open-that-door.png), not only in Scrap.",
+   "assertion": {
+    "op": "v2_raster_present",
+    "hexes": [
+     "#FF5A1F"
+    ],
+    "photos": [
+     "staticfox_scrap_transparent.png"
+    ],
+    "capture": "staticfox_captures/staticfox_capture_04.mp4"
+   },
+   "how": "Looks for the colour as a flat area in the designed parts."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas/H023",
+   "output_id": "thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas",
+   "rule_id": "R059",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Fox Orange #FF5A1F appears in the type, panels or shapes of “Channel thumbnail - WE SPENT SIX HOURS BUILDING A BRIDGE AND THEN DROVE STRAIGHT PAST IT” (thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas.png), not only in Scrap.",
+   "assertion": {
+    "op": "v2_raster_present",
+    "hexes": [
+     "#FF5A1F"
+    ],
+    "photos": [
+     "staticfox_scrap_transparent.png"
+    ],
+    "capture": "staticfox_captures/staticfox_capture_05.mp4"
+   },
+   "how": "Looks for the colour as a flat area in the designed parts."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi/H024",
+   "output_id": "thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi",
+   "rule_id": "R059",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Fox Orange #FF5A1F appears in the type, panels or shapes of “Channel thumbnail - I GAVE MY TEAM ONE SIMPLE JOB AND THEY SET THE ENTIRE BASE ON FIRE” (thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi.png), not only in Scrap.",
+   "assertion": {
+    "op": "v2_raster_present",
+    "hexes": [
+     "#FF5A1F"
+    ],
+    "photos": [
+     "staticfox_scrap_transparent.png"
+    ],
+    "capture": "staticfox_captures/staticfox_capture_06.mp4"
+   },
+   "how": "Looks for the colour as a flat area in the designed parts."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-we-broke-the-map/H026",
+   "output_id": "thumbnail-we-broke-the-map",
+   "rule_id": "R060",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Any Inter line on a Jet Black ground on “Channel thumbnail - WE BROKE THE MAP” (thumbnail-we-broke-the-map.png) is Signal White, Acid Signal or Fox Orange.",
+   "assertion": {
+    "op": "v2_raster_text_colour",
+    "all_text": true,
+    "except_words": [
+     "WE",
+     "BROKE",
+     "THE",
+     "MAP"
+    ],
+    "grounds": [
+     "#101014"
+    ],
+    "colors": [
+     "#FFFFFF",
+     "#B6FF2E",
+     "#FF5A1F"
+    ],
+    "fail_if": "[a-z]",
+    "photos": [
+     "staticfox_scrap_transparent.png"
+    ],
+    "capture": "staticfox_captures/staticfox_capture_01.mp4"
+   },
+   "how": "Reads each text line by OCR, then the colour of its letters and of the ground round it."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-everyone-off-the-platform/H026",
+   "output_id": "thumbnail-everyone-off-the-platform",
+   "rule_id": "R060",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Any Inter line on a Jet Black ground on “Channel thumbnail - EVERYONE OFF THE PLATFORM” (thumbnail-everyone-off-the-platform.png) is Signal White, Acid Signal or Fox Orange.",
+   "assertion": {
+    "op": "v2_raster_text_colour",
+    "all_text": true,
+    "except_words": [
+     "EVERYONE",
+     "OFF",
+     "THE",
+     "PLATFORM"
+    ],
+    "grounds": [
+     "#101014"
+    ],
+    "colors": [
+     "#FFFFFF",
+     "#B6FF2E",
+     "#FF5A1F"
+    ],
+    "fail_if": "[a-z]",
+    "photos": [
+     "staticfox_scrap_transparent.png"
+    ],
+    "capture": "staticfox_captures/staticfox_capture_02.mp4"
+   },
+   "how": "Reads each text line by OCR, then the colour of its letters and of the ground round it."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-kitchen-gone/H025",
+   "output_id": "thumbnail-kitchen-gone",
+   "rule_id": "R060",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Any Inter line on a Jet Black ground on “Channel thumbnail - KITCHEN. GONE.” (thumbnail-kitchen-gone.png) is Signal White, Acid Signal or Fox Orange.",
+   "assertion": {
+    "op": "v2_raster_text_colour",
+    "all_text": true,
+    "except_words": [
+     "KITCHEN.",
+     "GONE."
+    ],
+    "grounds": [
+     "#101014"
+    ],
+    "colors": [
+     "#FFFFFF",
+     "#B6FF2E",
+     "#FF5A1F"
+    ],
+    "fail_if": "[a-z]",
+    "photos": [
+     "staticfox_scrap_transparent.png"
+    ],
+    "capture": "staticfox_captures/staticfox_capture_03.mp4"
+   },
+   "how": "Reads each text line by OCR, then the colour of its letters and of the ground round it."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-do-not-open-that-door/H026",
+   "output_id": "thumbnail-do-not-open-that-door",
+   "rule_id": "R060",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Any Inter line on a Jet Black ground on “Channel thumbnail - DO NOT OPEN THAT DOOR” (thumbnail-do-not-open-that-door.png) is Signal White, Acid Signal or Fox Orange.",
+   "assertion": {
+    "op": "v2_raster_text_colour",
+    "all_text": true,
+    "except_words": [
+     "DO",
+     "NOT",
+     "OPEN",
+     "THAT",
+     "DOOR"
+    ],
+    "grounds": [
+     "#101014"
+    ],
+    "colors": [
+     "#FFFFFF",
+     "#B6FF2E",
+     "#FF5A1F"
+    ],
+    "fail_if": "[a-z]",
+    "photos": [
+     "staticfox_scrap_transparent.png"
+    ],
+    "capture": "staticfox_captures/staticfox_capture_04.mp4"
+   },
+   "how": "Reads each text line by OCR, then the colour of its letters and of the ground round it."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas/H024",
+   "output_id": "thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas",
+   "rule_id": "R060",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Any Inter line on a Jet Black ground on “Channel thumbnail - WE SPENT SIX HOURS BUILDING A BRIDGE AND THEN DROVE STRAIGHT PAST IT” (thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas.png) is Signal White, Acid Signal or Fox Orange.",
+   "assertion": {
+    "op": "v2_raster_text_colour",
+    "all_text": true,
+    "except_words": [
+     "WE",
+     "SPENT",
+     "SIX",
+     "HOURS",
+     "BUILDING",
+     "A",
+     "BRIDGE",
+     "AND",
+     "THEN",
+     "DROVE",
+     "STRAIGHT",
+     "PAST",
+     "IT"
+    ],
+    "grounds": [
+     "#101014"
+    ],
+    "colors": [
+     "#FFFFFF",
+     "#B6FF2E",
+     "#FF5A1F"
+    ],
+    "fail_if": "[a-z]",
+    "photos": [
+     "staticfox_scrap_transparent.png"
+    ],
+    "capture": "staticfox_captures/staticfox_capture_05.mp4"
+   },
+   "how": "Reads each text line by OCR, then the colour of its letters and of the ground round it."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi/H025",
+   "output_id": "thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi",
+   "rule_id": "R060",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Any Inter line on a Jet Black ground on “Channel thumbnail - I GAVE MY TEAM ONE SIMPLE JOB AND THEY SET THE ENTIRE BASE ON FIRE” (thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi.png) is Signal White, Acid Signal or Fox Orange.",
+   "assertion": {
+    "op": "v2_raster_text_colour",
+    "all_text": true,
+    "except_words": [
+     "I",
+     "GAVE",
+     "MY",
+     "TEAM",
+     "ONE",
+     "SIMPLE",
+     "JOB",
+     "AND",
+     "THEY",
+     "SET",
+     "THE",
+     "ENTIRE",
+     "BASE",
+     "ON",
+     "FIRE"
+    ],
+    "grounds": [
+     "#101014"
+    ],
+    "colors": [
+     "#FFFFFF",
+     "#B6FF2E",
+     "#FF5A1F"
+    ],
+    "fail_if": "[a-z]",
+    "photos": [
+     "staticfox_scrap_transparent.png"
+    ],
+    "capture": "staticfox_captures/staticfox_capture_06.mp4"
+   },
+   "how": "Reads each text line by OCR, then the colour of its letters and of the ground round it."
+  },
+  {
+   "check_id": "MOTION-11/channel-animation/H027",
+   "output_id": "channel-animation",
+   "rule_id": "R060",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Any Inter line on a Jet Black ground on “Animated channel title and end card” (channel-animation.mp4) is Signal White, Acid Signal or Fox Orange.",
+   "assertion": {
+    "op": "v2_raster_text_colour",
+    "all_text": true,
+    "except_words": [
+     "A",
+     "AND",
+     "BASE",
+     "BRIDGE",
+     "BROKE",
+     "BUILDING",
+     "DO",
+     "DOOR",
+     "DROVE",
+     "ENTIRE",
+     "EVERYONE",
+     "FIRE",
+     "FOX",
+     "GAVE",
+     "GONE.",
+     "HOURS",
+     "I",
+     "IT",
+     "JOB",
+     "KITCHEN.",
+     "MAP",
+     "MY",
+     "NOT",
+     "OFF",
+     "ON",
+     "ONE",
+     "OPEN",
+     "PAST",
+     "PLATFORM",
+     "SET",
+     "SIMPLE",
+     "SIX",
+     "SPENT",
+     "STATIC",
+     "STRAIGHT",
+     "TEAM",
+     "THAT",
+     "THE",
+     "THEN",
+     "THEY",
+     "WE"
+    ],
+    "grounds": [
+     "#101014"
+    ],
+    "colors": [
+     "#FFFFFF",
+     "#B6FF2E",
+     "#FF5A1F"
+    ],
+    "fail_if": "[a-z]",
+    "photos": [
+     "staticfox_scrap_transparent.png"
+    ]
+   },
+   "how": "Reads each text line by OCR, then the colour of its letters and of the ground round it."
+  },
+  {
+   "check_id": "MOTION-11/channel-teaser/H029",
+   "output_id": "channel-teaser",
+   "rule_id": "R060",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Any Inter line on a Jet Black ground on “Channel feed teaser” (channel-teaser.mp4) is Signal White, Acid Signal or Fox Orange.",
+   "assertion": {
+    "op": "v2_raster_text_colour",
+    "all_text": true,
+    "except_words": [
+     "A",
+     "AND",
+     "BASE",
+     "BRIDGE",
+     "BROKE",
+     "BUILDING",
+     "DO",
+     "DOOR",
+     "DROVE",
+     "ENTIRE",
+     "EVERYONE",
+     "FIRE",
+     "FOX",
+     "GAVE",
+     "GONE.",
+     "HOURS",
+     "I",
+     "IT",
+     "JOB",
+     "KITCHEN.",
+     "MAP",
+     "MY",
+     "NOT",
+     "OFF",
+     "ON",
+     "ONE",
+     "OPEN",
+     "PAST",
+     "PLATFORM",
+     "SET",
+     "SIMPLE",
+     "SIX",
+     "SPENT",
+     "STATIC",
+     "STRAIGHT",
+     "TEAM",
+     "THAT",
+     "THE",
+     "THEN",
+     "THEY",
+     "WE"
+    ],
+    "grounds": [
+     "#101014"
+    ],
+    "colors": [
+     "#FFFFFF",
+     "#B6FF2E",
+     "#FF5A1F"
+    ],
+    "fail_if": "[a-z]",
+    "photos": [
+     "staticfox_scrap_transparent.png"
+    ]
+   },
+   "how": "Reads each text line by OCR, then the colour of its letters and of the ground round it."
+  },
+  {
+   "check_id": "MOTION-11/channel-teaser-vertical/H027",
+   "output_id": "channel-teaser-vertical",
+   "rule_id": "R060",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Any Inter line on a Jet Black ground on “Channel feed teaser upright cutdown” (channel-teaser-vertical.mp4) is Signal White, Acid Signal or Fox Orange.",
+   "assertion": {
+    "op": "v2_raster_text_colour",
+    "all_text": true,
+    "except_words": [
+     "A",
+     "AND",
+     "BASE",
+     "BRIDGE",
+     "BROKE",
+     "BUILDING",
+     "DO",
+     "DOOR",
+     "DROVE",
+     "ENTIRE",
+     "EVERYONE",
+     "FIRE",
+     "FOX",
+     "GAVE",
+     "GONE.",
+     "HOURS",
+     "I",
+     "IT",
+     "JOB",
+     "KITCHEN.",
+     "MAP",
+     "MY",
+     "NOT",
+     "OFF",
+     "ON",
+     "ONE",
+     "OPEN",
+     "PAST",
+     "PLATFORM",
+     "SET",
+     "SIMPLE",
+     "SIX",
+     "SPENT",
+     "STATIC",
+     "STRAIGHT",
+     "TEAM",
+     "THAT",
+     "THE",
+     "THEN",
+     "THEY",
+     "WE"
+    ],
+    "grounds": [
+     "#101014"
+    ],
+    "colors": [
+     "#FFFFFF",
+     "#B6FF2E",
+     "#FF5A1F"
+    ],
+    "fail_if": "[a-z]",
+    "photos": [
+     "staticfox_scrap_transparent.png"
+    ]
+   },
+   "how": "Reads each text line by OCR, then the colour of its letters and of the ground round it."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-we-broke-the-map/H027",
+   "output_id": "thumbnail-we-broke-the-map",
+   "rule_id": "R061",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Any Inter line on a Static Purple ground on “Channel thumbnail - WE BROKE THE MAP” (thumbnail-we-broke-the-map.png) is Signal White or Acid Signal.",
+   "assertion": {
+    "op": "v2_raster_text_colour",
+    "all_text": true,
+    "except_words": [
+     "WE",
+     "BROKE",
+     "THE",
+     "MAP"
+    ],
+    "grounds": [
+     "#7A2FF2"
+    ],
+    "colors": [
+     "#FFFFFF",
+     "#B6FF2E"
+    ],
+    "fail_if": "[a-z]",
+    "photos": [
+     "staticfox_scrap_transparent.png"
+    ],
+    "capture": "staticfox_captures/staticfox_capture_01.mp4"
+   },
+   "how": "Reads each text line by OCR, then the colour of its letters and of the ground round it."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-everyone-off-the-platform/H027",
+   "output_id": "thumbnail-everyone-off-the-platform",
+   "rule_id": "R061",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Any Inter line on a Static Purple ground on “Channel thumbnail - EVERYONE OFF THE PLATFORM” (thumbnail-everyone-off-the-platform.png) is Signal White or Acid Signal.",
+   "assertion": {
+    "op": "v2_raster_text_colour",
+    "all_text": true,
+    "except_words": [
+     "EVERYONE",
+     "OFF",
+     "THE",
+     "PLATFORM"
+    ],
+    "grounds": [
+     "#7A2FF2"
+    ],
+    "colors": [
+     "#FFFFFF",
+     "#B6FF2E"
+    ],
+    "fail_if": "[a-z]",
+    "photos": [
+     "staticfox_scrap_transparent.png"
+    ],
+    "capture": "staticfox_captures/staticfox_capture_02.mp4"
+   },
+   "how": "Reads each text line by OCR, then the colour of its letters and of the ground round it."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-kitchen-gone/H026",
+   "output_id": "thumbnail-kitchen-gone",
+   "rule_id": "R061",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Any Inter line on a Static Purple ground on “Channel thumbnail - KITCHEN. GONE.” (thumbnail-kitchen-gone.png) is Signal White or Acid Signal.",
+   "assertion": {
+    "op": "v2_raster_text_colour",
+    "all_text": true,
+    "except_words": [
+     "KITCHEN.",
+     "GONE."
+    ],
+    "grounds": [
+     "#7A2FF2"
+    ],
+    "colors": [
+     "#FFFFFF",
+     "#B6FF2E"
+    ],
+    "fail_if": "[a-z]",
+    "photos": [
+     "staticfox_scrap_transparent.png"
+    ],
+    "capture": "staticfox_captures/staticfox_capture_03.mp4"
+   },
+   "how": "Reads each text line by OCR, then the colour of its letters and of the ground round it."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-do-not-open-that-door/H027",
+   "output_id": "thumbnail-do-not-open-that-door",
+   "rule_id": "R061",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Any Inter line on a Static Purple ground on “Channel thumbnail - DO NOT OPEN THAT DOOR” (thumbnail-do-not-open-that-door.png) is Signal White or Acid Signal.",
+   "assertion": {
+    "op": "v2_raster_text_colour",
+    "all_text": true,
+    "except_words": [
+     "DO",
+     "NOT",
+     "OPEN",
+     "THAT",
+     "DOOR"
+    ],
+    "grounds": [
+     "#7A2FF2"
+    ],
+    "colors": [
+     "#FFFFFF",
+     "#B6FF2E"
+    ],
+    "fail_if": "[a-z]",
+    "photos": [
+     "staticfox_scrap_transparent.png"
+    ],
+    "capture": "staticfox_captures/staticfox_capture_04.mp4"
+   },
+   "how": "Reads each text line by OCR, then the colour of its letters and of the ground round it."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas/H025",
+   "output_id": "thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas",
+   "rule_id": "R061",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Any Inter line on a Static Purple ground on “Channel thumbnail - WE SPENT SIX HOURS BUILDING A BRIDGE AND THEN DROVE STRAIGHT PAST IT” (thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas.png) is Signal White or Acid Signal.",
+   "assertion": {
+    "op": "v2_raster_text_colour",
+    "all_text": true,
+    "except_words": [
+     "WE",
+     "SPENT",
+     "SIX",
+     "HOURS",
+     "BUILDING",
+     "A",
+     "BRIDGE",
+     "AND",
+     "THEN",
+     "DROVE",
+     "STRAIGHT",
+     "PAST",
+     "IT"
+    ],
+    "grounds": [
+     "#7A2FF2"
+    ],
+    "colors": [
+     "#FFFFFF",
+     "#B6FF2E"
+    ],
+    "fail_if": "[a-z]",
+    "photos": [
+     "staticfox_scrap_transparent.png"
+    ],
+    "capture": "staticfox_captures/staticfox_capture_05.mp4"
+   },
+   "how": "Reads each text line by OCR, then the colour of its letters and of the ground round it."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi/H026",
+   "output_id": "thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi",
+   "rule_id": "R061",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Any Inter line on a Static Purple ground on “Channel thumbnail - I GAVE MY TEAM ONE SIMPLE JOB AND THEY SET THE ENTIRE BASE ON FIRE” (thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi.png) is Signal White or Acid Signal.",
+   "assertion": {
+    "op": "v2_raster_text_colour",
+    "all_text": true,
+    "except_words": [
+     "I",
+     "GAVE",
+     "MY",
+     "TEAM",
+     "ONE",
+     "SIMPLE",
+     "JOB",
+     "AND",
+     "THEY",
+     "SET",
+     "THE",
+     "ENTIRE",
+     "BASE",
+     "ON",
+     "FIRE"
+    ],
+    "grounds": [
+     "#7A2FF2"
+    ],
+    "colors": [
+     "#FFFFFF",
+     "#B6FF2E"
+    ],
+    "fail_if": "[a-z]",
+    "photos": [
+     "staticfox_scrap_transparent.png"
+    ],
+    "capture": "staticfox_captures/staticfox_capture_06.mp4"
+   },
+   "how": "Reads each text line by OCR, then the colour of its letters and of the ground round it."
+  },
+  {
+   "check_id": "MOTION-11/channel-animation/H028",
+   "output_id": "channel-animation",
+   "rule_id": "R061",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Any Inter line on a Static Purple ground on “Animated channel title and end card” (channel-animation.mp4) is Signal White or Acid Signal.",
+   "assertion": {
+    "op": "v2_raster_text_colour",
+    "all_text": true,
+    "except_words": [
+     "A",
+     "AND",
+     "BASE",
+     "BRIDGE",
+     "BROKE",
+     "BUILDING",
+     "DO",
+     "DOOR",
+     "DROVE",
+     "ENTIRE",
+     "EVERYONE",
+     "FIRE",
+     "FOX",
+     "GAVE",
+     "GONE.",
+     "HOURS",
+     "I",
+     "IT",
+     "JOB",
+     "KITCHEN.",
+     "MAP",
+     "MY",
+     "NOT",
+     "OFF",
+     "ON",
+     "ONE",
+     "OPEN",
+     "PAST",
+     "PLATFORM",
+     "SET",
+     "SIMPLE",
+     "SIX",
+     "SPENT",
+     "STATIC",
+     "STRAIGHT",
+     "TEAM",
+     "THAT",
+     "THE",
+     "THEN",
+     "THEY",
+     "WE"
+    ],
+    "grounds": [
+     "#7A2FF2"
+    ],
+    "colors": [
+     "#FFFFFF",
+     "#B6FF2E"
+    ],
+    "fail_if": "[a-z]",
+    "photos": [
+     "staticfox_scrap_transparent.png"
+    ]
+   },
+   "how": "Reads each text line by OCR, then the colour of its letters and of the ground round it."
+  },
+  {
+   "check_id": "MOTION-11/channel-teaser/H030",
+   "output_id": "channel-teaser",
+   "rule_id": "R061",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Any Inter line on a Static Purple ground on “Channel feed teaser” (channel-teaser.mp4) is Signal White or Acid Signal.",
+   "assertion": {
+    "op": "v2_raster_text_colour",
+    "all_text": true,
+    "except_words": [
+     "A",
+     "AND",
+     "BASE",
+     "BRIDGE",
+     "BROKE",
+     "BUILDING",
+     "DO",
+     "DOOR",
+     "DROVE",
+     "ENTIRE",
+     "EVERYONE",
+     "FIRE",
+     "FOX",
+     "GAVE",
+     "GONE.",
+     "HOURS",
+     "I",
+     "IT",
+     "JOB",
+     "KITCHEN.",
+     "MAP",
+     "MY",
+     "NOT",
+     "OFF",
+     "ON",
+     "ONE",
+     "OPEN",
+     "PAST",
+     "PLATFORM",
+     "SET",
+     "SIMPLE",
+     "SIX",
+     "SPENT",
+     "STATIC",
+     "STRAIGHT",
+     "TEAM",
+     "THAT",
+     "THE",
+     "THEN",
+     "THEY",
+     "WE"
+    ],
+    "grounds": [
+     "#7A2FF2"
+    ],
+    "colors": [
+     "#FFFFFF",
+     "#B6FF2E"
+    ],
+    "fail_if": "[a-z]",
+    "photos": [
+     "staticfox_scrap_transparent.png"
+    ]
+   },
+   "how": "Reads each text line by OCR, then the colour of its letters and of the ground round it."
+  },
+  {
+   "check_id": "MOTION-11/channel-teaser-vertical/H028",
+   "output_id": "channel-teaser-vertical",
+   "rule_id": "R061",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Any Inter line on a Static Purple ground on “Channel feed teaser upright cutdown” (channel-teaser-vertical.mp4) is Signal White or Acid Signal.",
+   "assertion": {
+    "op": "v2_raster_text_colour",
+    "all_text": true,
+    "except_words": [
+     "A",
+     "AND",
+     "BASE",
+     "BRIDGE",
+     "BROKE",
+     "BUILDING",
+     "DO",
+     "DOOR",
+     "DROVE",
+     "ENTIRE",
+     "EVERYONE",
+     "FIRE",
+     "FOX",
+     "GAVE",
+     "GONE.",
+     "HOURS",
+     "I",
+     "IT",
+     "JOB",
+     "KITCHEN.",
+     "MAP",
+     "MY",
+     "NOT",
+     "OFF",
+     "ON",
+     "ONE",
+     "OPEN",
+     "PAST",
+     "PLATFORM",
+     "SET",
+     "SIMPLE",
+     "SIX",
+     "SPENT",
+     "STATIC",
+     "STRAIGHT",
+     "TEAM",
+     "THAT",
+     "THE",
+     "THEN",
+     "THEY",
+     "WE"
+    ],
+    "grounds": [
+     "#7A2FF2"
+    ],
+    "colors": [
+     "#FFFFFF",
+     "#B6FF2E"
+    ],
+    "fail_if": "[a-z]",
+    "photos": [
+     "staticfox_scrap_transparent.png"
+    ]
+   },
+   "how": "Reads each text line by OCR, then the colour of its letters and of the ground round it."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-we-broke-the-map/H028",
+   "output_id": "thumbnail-we-broke-the-map",
+   "rule_id": "R062",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Any Inter line on a Signal White ground on “Channel thumbnail - WE BROKE THE MAP” (thumbnail-we-broke-the-map.png) is Jet Black or Static Purple.",
+   "assertion": {
+    "op": "v2_raster_text_colour",
+    "all_text": true,
+    "except_words": [
+     "WE",
+     "BROKE",
+     "THE",
+     "MAP"
+    ],
+    "grounds": [
+     "#FFFFFF"
+    ],
+    "colors": [
+     "#101014",
+     "#7A2FF2"
+    ],
+    "fail_if": "[a-z]",
+    "photos": [
+     "staticfox_scrap_transparent.png"
+    ],
+    "capture": "staticfox_captures/staticfox_capture_01.mp4"
+   },
+   "how": "Reads each text line by OCR, then the colour of its letters and of the ground round it."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-everyone-off-the-platform/H028",
+   "output_id": "thumbnail-everyone-off-the-platform",
+   "rule_id": "R062",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Any Inter line on a Signal White ground on “Channel thumbnail - EVERYONE OFF THE PLATFORM” (thumbnail-everyone-off-the-platform.png) is Jet Black or Static Purple.",
+   "assertion": {
+    "op": "v2_raster_text_colour",
+    "all_text": true,
+    "except_words": [
+     "EVERYONE",
+     "OFF",
+     "THE",
+     "PLATFORM"
+    ],
+    "grounds": [
+     "#FFFFFF"
+    ],
+    "colors": [
+     "#101014",
+     "#7A2FF2"
+    ],
+    "fail_if": "[a-z]",
+    "photos": [
+     "staticfox_scrap_transparent.png"
+    ],
+    "capture": "staticfox_captures/staticfox_capture_02.mp4"
+   },
+   "how": "Reads each text line by OCR, then the colour of its letters and of the ground round it."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-kitchen-gone/H027",
+   "output_id": "thumbnail-kitchen-gone",
+   "rule_id": "R062",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Any Inter line on a Signal White ground on “Channel thumbnail - KITCHEN. GONE.” (thumbnail-kitchen-gone.png) is Jet Black or Static Purple.",
+   "assertion": {
+    "op": "v2_raster_text_colour",
+    "all_text": true,
+    "except_words": [
+     "KITCHEN.",
+     "GONE."
+    ],
+    "grounds": [
+     "#FFFFFF"
+    ],
+    "colors": [
+     "#101014",
+     "#7A2FF2"
+    ],
+    "fail_if": "[a-z]",
+    "photos": [
+     "staticfox_scrap_transparent.png"
+    ],
+    "capture": "staticfox_captures/staticfox_capture_03.mp4"
+   },
+   "how": "Reads each text line by OCR, then the colour of its letters and of the ground round it."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-do-not-open-that-door/H028",
+   "output_id": "thumbnail-do-not-open-that-door",
+   "rule_id": "R062",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Any Inter line on a Signal White ground on “Channel thumbnail - DO NOT OPEN THAT DOOR” (thumbnail-do-not-open-that-door.png) is Jet Black or Static Purple.",
+   "assertion": {
+    "op": "v2_raster_text_colour",
+    "all_text": true,
+    "except_words": [
+     "DO",
+     "NOT",
+     "OPEN",
+     "THAT",
+     "DOOR"
+    ],
+    "grounds": [
+     "#FFFFFF"
+    ],
+    "colors": [
+     "#101014",
+     "#7A2FF2"
+    ],
+    "fail_if": "[a-z]",
+    "photos": [
+     "staticfox_scrap_transparent.png"
+    ],
+    "capture": "staticfox_captures/staticfox_capture_04.mp4"
+   },
+   "how": "Reads each text line by OCR, then the colour of its letters and of the ground round it."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas/H026",
+   "output_id": "thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas",
+   "rule_id": "R062",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Any Inter line on a Signal White ground on “Channel thumbnail - WE SPENT SIX HOURS BUILDING A BRIDGE AND THEN DROVE STRAIGHT PAST IT” (thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas.png) is Jet Black or Static Purple.",
+   "assertion": {
+    "op": "v2_raster_text_colour",
+    "all_text": true,
+    "except_words": [
+     "WE",
+     "SPENT",
+     "SIX",
+     "HOURS",
+     "BUILDING",
+     "A",
+     "BRIDGE",
+     "AND",
+     "THEN",
+     "DROVE",
+     "STRAIGHT",
+     "PAST",
+     "IT"
+    ],
+    "grounds": [
+     "#FFFFFF"
+    ],
+    "colors": [
+     "#101014",
+     "#7A2FF2"
+    ],
+    "fail_if": "[a-z]",
+    "photos": [
+     "staticfox_scrap_transparent.png"
+    ],
+    "capture": "staticfox_captures/staticfox_capture_05.mp4"
+   },
+   "how": "Reads each text line by OCR, then the colour of its letters and of the ground round it."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi/H027",
+   "output_id": "thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi",
+   "rule_id": "R062",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Any Inter line on a Signal White ground on “Channel thumbnail - I GAVE MY TEAM ONE SIMPLE JOB AND THEY SET THE ENTIRE BASE ON FIRE” (thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi.png) is Jet Black or Static Purple.",
+   "assertion": {
+    "op": "v2_raster_text_colour",
+    "all_text": true,
+    "except_words": [
+     "I",
+     "GAVE",
+     "MY",
+     "TEAM",
+     "ONE",
+     "SIMPLE",
+     "JOB",
+     "AND",
+     "THEY",
+     "SET",
+     "THE",
+     "ENTIRE",
+     "BASE",
+     "ON",
+     "FIRE"
+    ],
+    "grounds": [
+     "#FFFFFF"
+    ],
+    "colors": [
+     "#101014",
+     "#7A2FF2"
+    ],
+    "fail_if": "[a-z]",
+    "photos": [
+     "staticfox_scrap_transparent.png"
+    ],
+    "capture": "staticfox_captures/staticfox_capture_06.mp4"
+   },
+   "how": "Reads each text line by OCR, then the colour of its letters and of the ground round it."
+  },
+  {
+   "check_id": "MOTION-11/channel-animation/H029",
+   "output_id": "channel-animation",
+   "rule_id": "R062",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Any Inter line on a Signal White ground on “Animated channel title and end card” (channel-animation.mp4) is Jet Black or Static Purple.",
+   "assertion": {
+    "op": "v2_raster_text_colour",
+    "all_text": true,
+    "except_words": [
+     "A",
+     "AND",
+     "BASE",
+     "BRIDGE",
+     "BROKE",
+     "BUILDING",
+     "DO",
+     "DOOR",
+     "DROVE",
+     "ENTIRE",
+     "EVERYONE",
+     "FIRE",
+     "FOX",
+     "GAVE",
+     "GONE.",
+     "HOURS",
+     "I",
+     "IT",
+     "JOB",
+     "KITCHEN.",
+     "MAP",
+     "MY",
+     "NOT",
+     "OFF",
+     "ON",
+     "ONE",
+     "OPEN",
+     "PAST",
+     "PLATFORM",
+     "SET",
+     "SIMPLE",
+     "SIX",
+     "SPENT",
+     "STATIC",
+     "STRAIGHT",
+     "TEAM",
+     "THAT",
+     "THE",
+     "THEN",
+     "THEY",
+     "WE"
+    ],
+    "grounds": [
+     "#FFFFFF"
+    ],
+    "colors": [
+     "#101014",
+     "#7A2FF2"
+    ],
+    "fail_if": "[a-z]",
+    "photos": [
+     "staticfox_scrap_transparent.png"
+    ]
+   },
+   "how": "Reads each text line by OCR, then the colour of its letters and of the ground round it."
+  },
+  {
+   "check_id": "MOTION-11/channel-teaser/H031",
+   "output_id": "channel-teaser",
+   "rule_id": "R062",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Any Inter line on a Signal White ground on “Channel feed teaser” (channel-teaser.mp4) is Jet Black or Static Purple.",
+   "assertion": {
+    "op": "v2_raster_text_colour",
+    "all_text": true,
+    "except_words": [
+     "A",
+     "AND",
+     "BASE",
+     "BRIDGE",
+     "BROKE",
+     "BUILDING",
+     "DO",
+     "DOOR",
+     "DROVE",
+     "ENTIRE",
+     "EVERYONE",
+     "FIRE",
+     "FOX",
+     "GAVE",
+     "GONE.",
+     "HOURS",
+     "I",
+     "IT",
+     "JOB",
+     "KITCHEN.",
+     "MAP",
+     "MY",
+     "NOT",
+     "OFF",
+     "ON",
+     "ONE",
+     "OPEN",
+     "PAST",
+     "PLATFORM",
+     "SET",
+     "SIMPLE",
+     "SIX",
+     "SPENT",
+     "STATIC",
+     "STRAIGHT",
+     "TEAM",
+     "THAT",
+     "THE",
+     "THEN",
+     "THEY",
+     "WE"
+    ],
+    "grounds": [
+     "#FFFFFF"
+    ],
+    "colors": [
+     "#101014",
+     "#7A2FF2"
+    ],
+    "fail_if": "[a-z]",
+    "photos": [
+     "staticfox_scrap_transparent.png"
+    ]
+   },
+   "how": "Reads each text line by OCR, then the colour of its letters and of the ground round it."
+  },
+  {
+   "check_id": "MOTION-11/channel-teaser-vertical/H029",
+   "output_id": "channel-teaser-vertical",
+   "rule_id": "R062",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Any Inter line on a Signal White ground on “Channel feed teaser upright cutdown” (channel-teaser-vertical.mp4) is Jet Black or Static Purple.",
+   "assertion": {
+    "op": "v2_raster_text_colour",
+    "all_text": true,
+    "except_words": [
+     "A",
+     "AND",
+     "BASE",
+     "BRIDGE",
+     "BROKE",
+     "BUILDING",
+     "DO",
+     "DOOR",
+     "DROVE",
+     "ENTIRE",
+     "EVERYONE",
+     "FIRE",
+     "FOX",
+     "GAVE",
+     "GONE.",
+     "HOURS",
+     "I",
+     "IT",
+     "JOB",
+     "KITCHEN.",
+     "MAP",
+     "MY",
+     "NOT",
+     "OFF",
+     "ON",
+     "ONE",
+     "OPEN",
+     "PAST",
+     "PLATFORM",
+     "SET",
+     "SIMPLE",
+     "SIX",
+     "SPENT",
+     "STATIC",
+     "STRAIGHT",
+     "TEAM",
+     "THAT",
+     "THE",
+     "THEN",
+     "THEY",
+     "WE"
+    ],
+    "grounds": [
+     "#FFFFFF"
+    ],
+    "colors": [
+     "#101014",
+     "#7A2FF2"
+    ],
+    "fail_if": "[a-z]",
+    "photos": [
+     "staticfox_scrap_transparent.png"
+    ]
+   },
+   "how": "Reads each text line by OCR, then the colour of its letters and of the ground round it."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-we-broke-the-map/H029",
+   "output_id": "thumbnail-we-broke-the-map",
+   "rule_id": "R063",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Any Inter line on a Fox Orange ground on “Channel thumbnail - WE BROKE THE MAP” (thumbnail-we-broke-the-map.png) is Jet Black #101014.",
+   "assertion": {
+    "op": "v2_raster_text_colour",
+    "all_text": true,
+    "except_words": [
+     "WE",
+     "BROKE",
+     "THE",
+     "MAP"
+    ],
+    "grounds": [
+     "#FF5A1F"
+    ],
+    "colors": [
+     "#101014"
+    ],
+    "fail_if": "[a-z]",
+    "photos": [
+     "staticfox_scrap_transparent.png"
+    ],
+    "capture": "staticfox_captures/staticfox_capture_01.mp4"
+   },
+   "how": "Reads each text line by OCR, then the colour of its letters and of the ground round it."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-everyone-off-the-platform/H029",
+   "output_id": "thumbnail-everyone-off-the-platform",
+   "rule_id": "R063",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Any Inter line on a Fox Orange ground on “Channel thumbnail - EVERYONE OFF THE PLATFORM” (thumbnail-everyone-off-the-platform.png) is Jet Black #101014.",
+   "assertion": {
+    "op": "v2_raster_text_colour",
+    "all_text": true,
+    "except_words": [
+     "EVERYONE",
+     "OFF",
+     "THE",
+     "PLATFORM"
+    ],
+    "grounds": [
+     "#FF5A1F"
+    ],
+    "colors": [
+     "#101014"
+    ],
+    "fail_if": "[a-z]",
+    "photos": [
+     "staticfox_scrap_transparent.png"
+    ],
+    "capture": "staticfox_captures/staticfox_capture_02.mp4"
+   },
+   "how": "Reads each text line by OCR, then the colour of its letters and of the ground round it."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-kitchen-gone/H028",
+   "output_id": "thumbnail-kitchen-gone",
+   "rule_id": "R063",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Any Inter line on a Fox Orange ground on “Channel thumbnail - KITCHEN. GONE.” (thumbnail-kitchen-gone.png) is Jet Black #101014.",
+   "assertion": {
+    "op": "v2_raster_text_colour",
+    "all_text": true,
+    "except_words": [
+     "KITCHEN.",
+     "GONE."
+    ],
+    "grounds": [
+     "#FF5A1F"
+    ],
+    "colors": [
+     "#101014"
+    ],
+    "fail_if": "[a-z]",
+    "photos": [
+     "staticfox_scrap_transparent.png"
+    ],
+    "capture": "staticfox_captures/staticfox_capture_03.mp4"
+   },
+   "how": "Reads each text line by OCR, then the colour of its letters and of the ground round it."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-do-not-open-that-door/H029",
+   "output_id": "thumbnail-do-not-open-that-door",
+   "rule_id": "R063",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Any Inter line on a Fox Orange ground on “Channel thumbnail - DO NOT OPEN THAT DOOR” (thumbnail-do-not-open-that-door.png) is Jet Black #101014.",
+   "assertion": {
+    "op": "v2_raster_text_colour",
+    "all_text": true,
+    "except_words": [
+     "DO",
+     "NOT",
+     "OPEN",
+     "THAT",
+     "DOOR"
+    ],
+    "grounds": [
+     "#FF5A1F"
+    ],
+    "colors": [
+     "#101014"
+    ],
+    "fail_if": "[a-z]",
+    "photos": [
+     "staticfox_scrap_transparent.png"
+    ],
+    "capture": "staticfox_captures/staticfox_capture_04.mp4"
+   },
+   "how": "Reads each text line by OCR, then the colour of its letters and of the ground round it."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas/H027",
+   "output_id": "thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas",
+   "rule_id": "R063",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Any Inter line on a Fox Orange ground on “Channel thumbnail - WE SPENT SIX HOURS BUILDING A BRIDGE AND THEN DROVE STRAIGHT PAST IT” (thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas.png) is Jet Black #101014.",
+   "assertion": {
+    "op": "v2_raster_text_colour",
+    "all_text": true,
+    "except_words": [
+     "WE",
+     "SPENT",
+     "SIX",
+     "HOURS",
+     "BUILDING",
+     "A",
+     "BRIDGE",
+     "AND",
+     "THEN",
+     "DROVE",
+     "STRAIGHT",
+     "PAST",
+     "IT"
+    ],
+    "grounds": [
+     "#FF5A1F"
+    ],
+    "colors": [
+     "#101014"
+    ],
+    "fail_if": "[a-z]",
+    "photos": [
+     "staticfox_scrap_transparent.png"
+    ],
+    "capture": "staticfox_captures/staticfox_capture_05.mp4"
+   },
+   "how": "Reads each text line by OCR, then the colour of its letters and of the ground round it."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi/H028",
+   "output_id": "thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi",
+   "rule_id": "R063",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Any Inter line on a Fox Orange ground on “Channel thumbnail - I GAVE MY TEAM ONE SIMPLE JOB AND THEY SET THE ENTIRE BASE ON FIRE” (thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi.png) is Jet Black #101014.",
+   "assertion": {
+    "op": "v2_raster_text_colour",
+    "all_text": true,
+    "except_words": [
+     "I",
+     "GAVE",
+     "MY",
+     "TEAM",
+     "ONE",
+     "SIMPLE",
+     "JOB",
+     "AND",
+     "THEY",
+     "SET",
+     "THE",
+     "ENTIRE",
+     "BASE",
+     "ON",
+     "FIRE"
+    ],
+    "grounds": [
+     "#FF5A1F"
+    ],
+    "colors": [
+     "#101014"
+    ],
+    "fail_if": "[a-z]",
+    "photos": [
+     "staticfox_scrap_transparent.png"
+    ],
+    "capture": "staticfox_captures/staticfox_capture_06.mp4"
+   },
+   "how": "Reads each text line by OCR, then the colour of its letters and of the ground round it."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-we-broke-the-map/H030",
+   "output_id": "thumbnail-we-broke-the-map",
+   "rule_id": "R064",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Acid Signal #B6FF2E is never used as a ground or panel on “Channel thumbnail - WE BROKE THE MAP” (thumbnail-we-broke-the-map.png).",
+   "assertion": {
+    "op": "v2_no_panel",
+    "hexes": [
+     "#B6FF2E"
+    ],
+    "photos": [
+     "staticfox_scrap_transparent.png"
+    ],
+    "capture": "staticfox_captures/staticfox_capture_01.mp4"
+   },
+   "how": "Finds flat areas in the colour and checks none is a ground or a panel carrying text."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-everyone-off-the-platform/H030",
+   "output_id": "thumbnail-everyone-off-the-platform",
+   "rule_id": "R064",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Acid Signal #B6FF2E is never used as a ground or panel on “Channel thumbnail - EVERYONE OFF THE PLATFORM” (thumbnail-everyone-off-the-platform.png).",
+   "assertion": {
+    "op": "v2_no_panel",
+    "hexes": [
+     "#B6FF2E"
+    ],
+    "photos": [
+     "staticfox_scrap_transparent.png"
+    ],
+    "capture": "staticfox_captures/staticfox_capture_02.mp4"
+   },
+   "how": "Finds flat areas in the colour and checks none is a ground or a panel carrying text."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-kitchen-gone/H029",
+   "output_id": "thumbnail-kitchen-gone",
+   "rule_id": "R064",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Acid Signal #B6FF2E is never used as a ground or panel on “Channel thumbnail - KITCHEN. GONE.” (thumbnail-kitchen-gone.png).",
+   "assertion": {
+    "op": "v2_no_panel",
+    "hexes": [
+     "#B6FF2E"
+    ],
+    "photos": [
+     "staticfox_scrap_transparent.png"
+    ],
+    "capture": "staticfox_captures/staticfox_capture_03.mp4"
+   },
+   "how": "Finds flat areas in the colour and checks none is a ground or a panel carrying text."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-do-not-open-that-door/H030",
+   "output_id": "thumbnail-do-not-open-that-door",
+   "rule_id": "R064",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Acid Signal #B6FF2E is never used as a ground or panel on “Channel thumbnail - DO NOT OPEN THAT DOOR” (thumbnail-do-not-open-that-door.png).",
+   "assertion": {
+    "op": "v2_no_panel",
+    "hexes": [
+     "#B6FF2E"
+    ],
+    "photos": [
+     "staticfox_scrap_transparent.png"
+    ],
+    "capture": "staticfox_captures/staticfox_capture_04.mp4"
+   },
+   "how": "Finds flat areas in the colour and checks none is a ground or a panel carrying text."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas/H028",
+   "output_id": "thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas",
+   "rule_id": "R064",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Acid Signal #B6FF2E is never used as a ground or panel on “Channel thumbnail - WE SPENT SIX HOURS BUILDING A BRIDGE AND THEN DROVE STRAIGHT PAST IT” (thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas.png).",
+   "assertion": {
+    "op": "v2_no_panel",
+    "hexes": [
+     "#B6FF2E"
+    ],
+    "photos": [
+     "staticfox_scrap_transparent.png"
+    ],
+    "capture": "staticfox_captures/staticfox_capture_05.mp4"
+   },
+   "how": "Finds flat areas in the colour and checks none is a ground or a panel carrying text."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi/H029",
+   "output_id": "thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi",
+   "rule_id": "R064",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Acid Signal #B6FF2E is never used as a ground or panel on “Channel thumbnail - I GAVE MY TEAM ONE SIMPLE JOB AND THEY SET THE ENTIRE BASE ON FIRE” (thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi.png).",
+   "assertion": {
+    "op": "v2_no_panel",
+    "hexes": [
+     "#B6FF2E"
+    ],
+    "photos": [
+     "staticfox_scrap_transparent.png"
+    ],
+    "capture": "staticfox_captures/staticfox_capture_06.mp4"
+   },
+   "how": "Finds flat areas in the colour and checks none is a ground or a panel carrying text."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-we-broke-the-map/H031",
+   "output_id": "thumbnail-we-broke-the-map",
+   "rule_id": "R065",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Not counting title letters, Acid Signal #B6FF2E fills no more than a tenth of the graphics laid over the capture on “Channel thumbnail - WE BROKE THE MAP” (thumbnail-we-broke-the-map.png).",
+   "assertion": {
+    "op": "v2_raster_share",
+    "hexes": [
+     "#B6FF2E"
+    ],
+    "max_pct": 10,
+    "capture": "staticfox_captures/staticfox_capture_01.mp4"
+   },
+   "how": "Measures the share of the designed area in the named colours."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-everyone-off-the-platform/H031",
+   "output_id": "thumbnail-everyone-off-the-platform",
+   "rule_id": "R065",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Not counting title letters, Acid Signal #B6FF2E fills no more than a tenth of the graphics laid over the capture on “Channel thumbnail - EVERYONE OFF THE PLATFORM” (thumbnail-everyone-off-the-platform.png).",
+   "assertion": {
+    "op": "v2_raster_share",
+    "hexes": [
+     "#B6FF2E"
+    ],
+    "max_pct": 10,
+    "capture": "staticfox_captures/staticfox_capture_02.mp4"
+   },
+   "how": "Measures the share of the designed area in the named colours."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-kitchen-gone/H030",
+   "output_id": "thumbnail-kitchen-gone",
+   "rule_id": "R065",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Not counting title letters, Acid Signal #B6FF2E fills no more than a tenth of the graphics laid over the capture on “Channel thumbnail - KITCHEN. GONE.” (thumbnail-kitchen-gone.png).",
+   "assertion": {
+    "op": "v2_raster_share",
+    "hexes": [
+     "#B6FF2E"
+    ],
+    "max_pct": 10,
+    "capture": "staticfox_captures/staticfox_capture_03.mp4"
+   },
+   "how": "Measures the share of the designed area in the named colours."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-do-not-open-that-door/H031",
+   "output_id": "thumbnail-do-not-open-that-door",
+   "rule_id": "R065",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Not counting title letters, Acid Signal #B6FF2E fills no more than a tenth of the graphics laid over the capture on “Channel thumbnail - DO NOT OPEN THAT DOOR” (thumbnail-do-not-open-that-door.png).",
+   "assertion": {
+    "op": "v2_raster_share",
+    "hexes": [
+     "#B6FF2E"
+    ],
+    "max_pct": 10,
+    "capture": "staticfox_captures/staticfox_capture_04.mp4"
+   },
+   "how": "Measures the share of the designed area in the named colours."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas/H029",
+   "output_id": "thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas",
+   "rule_id": "R065",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Not counting title letters, Acid Signal #B6FF2E fills no more than a tenth of the graphics laid over the capture on “Channel thumbnail - WE SPENT SIX HOURS BUILDING A BRIDGE AND THEN DROVE STRAIGHT PAST IT” (thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas.png).",
+   "assertion": {
+    "op": "v2_raster_share",
+    "hexes": [
+     "#B6FF2E"
+    ],
+    "max_pct": 10,
+    "capture": "staticfox_captures/staticfox_capture_05.mp4"
+   },
+   "how": "Measures the share of the designed area in the named colours."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi/H030",
+   "output_id": "thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi",
+   "rule_id": "R065",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Not counting title letters, Acid Signal #B6FF2E fills no more than a tenth of the graphics laid over the capture on “Channel thumbnail - I GAVE MY TEAM ONE SIMPLE JOB AND THEY SET THE ENTIRE BASE ON FIRE” (thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi.png).",
+   "assertion": {
+    "op": "v2_raster_share",
+    "hexes": [
+     "#B6FF2E"
+    ],
+    "max_pct": 10,
+    "capture": "staticfox_captures/staticfox_capture_06.mp4"
+   },
+   "how": "Measures the share of the designed area in the named colours."
+  },
+  {
+   "check_id": "MOTION-11/channel-animation/H016",
+   "output_id": "channel-animation",
+   "rule_id": "R066",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "On the held end card of “Animated channel title and end card” (channel-animation.mp4), both words of “STATIC FOX” carry a hard, unblurred Jet Black #101014 outline.",
+   "assertion": {
+    "op": "v2_title_letters",
+    "title": "STATIC FOX",
+    "mode": "outline",
+    "fills": [
+     "#FFFFFF",
+     "#B6FF2E",
+     "#FF5A1F"
+    ],
+    "outline": "#101014"
+   },
+   "how": "Reads the title words by OCR and checks each letter's fill colour, or the outline colour round it."
+  },
+  {
+   "check_id": "MOTION-11/channel-animation/H023",
+   "output_id": "channel-animation",
+   "rule_id": "R067",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "On the held end card of “Animated channel title and end card” (channel-animation.mp4), both words of “STATIC FOX” are filled Signal White, Acid Signal or Fox Orange, never left transparent.",
+   "assertion": {
+    "op": "v2_title_letters",
+    "title": "STATIC FOX",
+    "mode": "fill",
+    "fills": [
+     "#FFFFFF",
+     "#B6FF2E",
+     "#FF5A1F"
+    ],
+    "outline": "#101014"
+   },
+   "how": "Reads the title words by OCR and checks each letter's fill colour, or the outline colour round it."
+  },
+  {
+   "check_id": "MOTION-11/channel-animation/H024",
+   "output_id": "channel-animation",
+   "rule_id": "R068",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "On every held frame of “Animated channel title and end card” (channel-animation.mp4), the type, outline, panel, shape and background colours come only from #FF5A1F, #7A2FF2, #B6FF2E, #101014 and #FFFFFF.",
+   "assertion": {
+    "op": "v2_raster_palette",
+    "hexes": [
+     "#FF5A1F",
+     "#7A2FF2",
+     "#B6FF2E",
+     "#101014",
+     "#FFFFFF"
+    ],
+    "photos": [
+     "staticfox_scrap_transparent.png"
+    ]
+   },
+   "how": "Reads every flat colour outside photographs, transparent parts and capture footage, and checks each is a palette colour."
+  },
+  {
+   "check_id": "MOTION-11/channel-animation/H026",
+   "output_id": "channel-animation",
+   "rule_id": "R069",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Fox Orange #FF5A1F appears in the type, panels, shapes or background of “Animated channel title and end card” (channel-animation.mp4), not only in Scrap.",
+   "assertion": {
+    "op": "v2_raster_present",
+    "hexes": [
+     "#FF5A1F"
+    ],
+    "photos": [
+     "staticfox_scrap_transparent.png"
+    ]
+   },
+   "how": "Looks for the colour as a flat area in the designed parts."
+  },
+  {
+   "check_id": "MOTION-11/channel-animation/H030",
+   "output_id": "channel-animation",
+   "rule_id": "R070",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Any Inter line on a Fox Orange ground on “Animated channel title and end card” (channel-animation.mp4) is Jet Black #101014.",
+   "assertion": {
+    "op": "v2_raster_text_colour",
+    "all_text": true,
+    "except_words": [
+     "A",
+     "AND",
+     "BASE",
+     "BRIDGE",
+     "BROKE",
+     "BUILDING",
+     "DO",
+     "DOOR",
+     "DROVE",
+     "ENTIRE",
+     "EVERYONE",
+     "FIRE",
+     "FOX",
+     "GAVE",
+     "GONE.",
+     "HOURS",
+     "I",
+     "IT",
+     "JOB",
+     "KITCHEN.",
+     "MAP",
+     "MY",
+     "NOT",
+     "OFF",
+     "ON",
+     "ONE",
+     "OPEN",
+     "PAST",
+     "PLATFORM",
+     "SET",
+     "SIMPLE",
+     "SIX",
+     "SPENT",
+     "STATIC",
+     "STRAIGHT",
+     "TEAM",
+     "THAT",
+     "THE",
+     "THEN",
+     "THEY",
+     "WE"
+    ],
+    "grounds": [
+     "#FF5A1F"
+    ],
+    "colors": [
+     "#101014"
+    ],
+    "fail_if": "[a-z]",
+    "photos": [
+     "staticfox_scrap_transparent.png"
+    ]
+   },
+   "how": "Reads each text line by OCR, then the colour of its letters and of the ground round it."
+  },
+  {
+   "check_id": "MOTION-11/channel-teaser/H032",
+   "output_id": "channel-teaser",
+   "rule_id": "R070",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Any Inter line on a Fox Orange ground on “Channel feed teaser” (channel-teaser.mp4) is Jet Black #101014.",
+   "assertion": {
+    "op": "v2_raster_text_colour",
+    "all_text": true,
+    "except_words": [
+     "A",
+     "AND",
+     "BASE",
+     "BRIDGE",
+     "BROKE",
+     "BUILDING",
+     "DO",
+     "DOOR",
+     "DROVE",
+     "ENTIRE",
+     "EVERYONE",
+     "FIRE",
+     "FOX",
+     "GAVE",
+     "GONE.",
+     "HOURS",
+     "I",
+     "IT",
+     "JOB",
+     "KITCHEN.",
+     "MAP",
+     "MY",
+     "NOT",
+     "OFF",
+     "ON",
+     "ONE",
+     "OPEN",
+     "PAST",
+     "PLATFORM",
+     "SET",
+     "SIMPLE",
+     "SIX",
+     "SPENT",
+     "STATIC",
+     "STRAIGHT",
+     "TEAM",
+     "THAT",
+     "THE",
+     "THEN",
+     "THEY",
+     "WE"
+    ],
+    "grounds": [
+     "#FF5A1F"
+    ],
+    "colors": [
+     "#101014"
+    ],
+    "fail_if": "[a-z]",
+    "photos": [
+     "staticfox_scrap_transparent.png"
+    ]
+   },
+   "how": "Reads each text line by OCR, then the colour of its letters and of the ground round it."
+  },
+  {
+   "check_id": "MOTION-11/channel-teaser-vertical/H030",
+   "output_id": "channel-teaser-vertical",
+   "rule_id": "R070",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Any Inter line on a Fox Orange ground on “Channel feed teaser upright cutdown” (channel-teaser-vertical.mp4) is Jet Black #101014.",
+   "assertion": {
+    "op": "v2_raster_text_colour",
+    "all_text": true,
+    "except_words": [
+     "A",
+     "AND",
+     "BASE",
+     "BRIDGE",
+     "BROKE",
+     "BUILDING",
+     "DO",
+     "DOOR",
+     "DROVE",
+     "ENTIRE",
+     "EVERYONE",
+     "FIRE",
+     "FOX",
+     "GAVE",
+     "GONE.",
+     "HOURS",
+     "I",
+     "IT",
+     "JOB",
+     "KITCHEN.",
+     "MAP",
+     "MY",
+     "NOT",
+     "OFF",
+     "ON",
+     "ONE",
+     "OPEN",
+     "PAST",
+     "PLATFORM",
+     "SET",
+     "SIMPLE",
+     "SIX",
+     "SPENT",
+     "STATIC",
+     "STRAIGHT",
+     "TEAM",
+     "THAT",
+     "THE",
+     "THEN",
+     "THEY",
+     "WE"
+    ],
+    "grounds": [
+     "#FF5A1F"
+    ],
+    "colors": [
+     "#101014"
+    ],
+    "fail_if": "[a-z]",
+    "photos": [
+     "staticfox_scrap_transparent.png"
+    ]
+   },
+   "how": "Reads each text line by OCR, then the colour of its letters and of the ground round it."
+  },
+  {
+   "check_id": "MOTION-11/channel-animation/H031",
+   "output_id": "channel-animation",
+   "rule_id": "R071",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Acid Signal #B6FF2E is never used as a ground or panel on “Animated channel title and end card” (channel-animation.mp4).",
+   "assertion": {
+    "op": "v2_no_panel",
+    "hexes": [
+     "#B6FF2E"
+    ],
+    "photos": [
+     "staticfox_scrap_transparent.png"
+    ]
+   },
+   "how": "Finds flat areas in the colour and checks none is a ground or a panel carrying text."
+  },
+  {
+   "check_id": "MOTION-11/channel-teaser/H033",
+   "output_id": "channel-teaser",
+   "rule_id": "R071",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Acid Signal #B6FF2E is never used as a ground or panel on “Channel feed teaser” (channel-teaser.mp4).",
+   "assertion": {
+    "op": "v2_no_panel",
+    "hexes": [
+     "#B6FF2E"
+    ],
+    "photos": [
+     "staticfox_scrap_transparent.png"
+    ]
+   },
+   "how": "Finds flat areas in the colour and checks none is a ground or a panel carrying text."
+  },
+  {
+   "check_id": "MOTION-11/channel-teaser-vertical/H031",
+   "output_id": "channel-teaser-vertical",
+   "rule_id": "R071",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Acid Signal #B6FF2E is never used as a ground or panel on “Channel feed teaser upright cutdown” (channel-teaser-vertical.mp4).",
+   "assertion": {
+    "op": "v2_no_panel",
+    "hexes": [
+     "#B6FF2E"
+    ],
+    "photos": [
+     "staticfox_scrap_transparent.png"
+    ]
+   },
+   "how": "Finds flat areas in the colour and checks none is a ground or a panel carrying text."
+  },
+  {
+   "check_id": "MOTION-11/channel-animation/H032",
+   "output_id": "channel-animation",
+   "rule_id": "R072",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "On every held frame of “Animated channel title and end card” (channel-animation.mp4), leaving title-word fills aside, Acid Signal #B6FF2E covers no more than 10% of the frame.",
+   "assertion": {
+    "op": "v2_raster_share",
+    "hexes": [
+     "#B6FF2E"
+    ],
+    "max_pct": 10,
+    "whole_frame": true,
+    "except_words": [
+     "STATIC",
+     "FOX"
+    ],
+    "photos": [
+     "staticfox_scrap_transparent.png"
+    ]
+   },
+   "how": "Measures the share of the designed area in the named colours."
+  },
+  {
+   "check_id": "MOTION-11/channel-teaser/H025",
+   "output_id": "channel-teaser",
+   "rule_id": "R074",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Every word set in Anton or Archivo Black in “Channel feed teaser” (channel-teaser.mp4) is filled Signal White, Acid Signal or Fox Orange when held still, not left transparent.",
+   "assertion": {
+    "op": "v2_raster_text_colour",
+    "all_text": true,
+    "colors": [
+     "#FFFFFF",
+     "#B6FF2E",
+     "#FF5A1F"
+    ],
+    "fail_if": "(?!)",
+    "need_confident": true,
+    "optional": false
+   },
+   "how": "Reads each text line by OCR, then the colour of its letters and of the ground round it."
+  },
+  {
+   "check_id": "MOTION-11/channel-teaser-vertical/H023",
+   "output_id": "channel-teaser-vertical",
+   "rule_id": "R074",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Every word set in Anton or Archivo Black in “Channel feed teaser upright cutdown” (channel-teaser-vertical.mp4) is filled Signal White, Acid Signal or Fox Orange when held still, not left transparent.",
+   "assertion": {
+    "op": "v2_raster_text_colour",
+    "all_text": true,
+    "colors": [
+     "#FFFFFF",
+     "#B6FF2E",
+     "#FF5A1F"
+    ],
+    "fail_if": "(?!)",
+    "need_confident": true,
+    "optional": false
+   },
+   "how": "Reads each text line by OCR, then the colour of its letters and of the ground round it."
+  },
+  {
+   "check_id": "MOTION-11/channel-teaser/H026",
+   "output_id": "channel-teaser",
+   "rule_id": "R075",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Type, outlines, panels, shapes and icons in “Channel feed teaser” (channel-teaser.mp4) use only #FF5A1F, #7A2FF2, #B6FF2E, #101014 and #FFFFFF.",
+   "assertion": {
+    "op": "v2_raster_palette",
+    "hexes": [
+     "#FF5A1F",
+     "#7A2FF2",
+     "#B6FF2E",
+     "#101014",
+     "#FFFFFF"
+    ],
+    "photos": [
+     "staticfox_scrap_transparent.png"
+    ]
+   },
+   "how": "Reads every flat colour outside photographs, transparent parts and capture footage, and checks each is a palette colour."
+  },
+  {
+   "check_id": "MOTION-11/channel-teaser-vertical/H024",
+   "output_id": "channel-teaser-vertical",
+   "rule_id": "R075",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Type, outlines, panels, shapes and icons in “Channel feed teaser upright cutdown” (channel-teaser-vertical.mp4) use only #FF5A1F, #7A2FF2, #B6FF2E, #101014 and #FFFFFF.",
+   "assertion": {
+    "op": "v2_raster_palette",
+    "hexes": [
+     "#FF5A1F",
+     "#7A2FF2",
+     "#B6FF2E",
+     "#101014",
+     "#FFFFFF"
+    ],
+    "photos": [
+     "staticfox_scrap_transparent.png"
+    ]
+   },
+   "how": "Reads every flat colour outside photographs, transparent parts and capture footage, and checks each is a palette colour."
+  },
+  {
+   "check_id": "MOTION-11/channel-teaser/H028",
+   "output_id": "channel-teaser",
+   "rule_id": "R076",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Fox Orange #FF5A1F appears in the type, panels or shapes of “Channel feed teaser” (channel-teaser.mp4), not only in Scrap.",
+   "assertion": {
+    "op": "v2_raster_present",
+    "hexes": [
+     "#FF5A1F"
+    ],
+    "photos": [
+     "staticfox_scrap_transparent.png"
+    ]
+   },
+   "how": "Looks for the colour as a flat area in the designed parts."
+  },
+  {
+   "check_id": "MOTION-11/channel-teaser-vertical/H026",
+   "output_id": "channel-teaser-vertical",
+   "rule_id": "R076",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Fox Orange #FF5A1F appears in the type, panels or shapes of “Channel feed teaser upright cutdown” (channel-teaser-vertical.mp4), not only in Scrap.",
+   "assertion": {
+    "op": "v2_raster_present",
+    "hexes": [
+     "#FF5A1F"
+    ],
+    "photos": [
+     "staticfox_scrap_transparent.png"
+    ]
+   },
+   "how": "Looks for the colour as a flat area in the designed parts."
+  },
+  {
+   "check_id": "MOTION-11/channel-teaser/H034",
+   "output_id": "channel-teaser",
+   "rule_id": "R077",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Wherever graphics are held still in “Channel feed teaser” (channel-teaser.mp4), Acid Signal #B6FF2E fills no more than a tenth of them, not counting title letters.",
+   "assertion": {
+    "op": "v2_raster_share",
+    "hexes": [
+     "#B6FF2E"
+    ],
+    "max_pct": 10,
+    "except_words": [
+     "A",
+     "AND",
+     "BASE",
+     "BRIDGE",
+     "BROKE",
+     "BUILDING",
+     "DO",
+     "DOOR",
+     "DROVE",
+     "ENTIRE",
+     "EVERYONE",
+     "FIRE",
+     "FOX",
+     "GAVE",
+     "GONE.",
+     "HOURS",
+     "I",
+     "IT",
+     "JOB",
+     "KITCHEN.",
+     "MAP",
+     "MY",
+     "NOT",
+     "OFF",
+     "ON",
+     "ONE",
+     "OPEN",
+     "PAST",
+     "PLATFORM",
+     "SET",
+     "SIMPLE",
+     "SIX",
+     "SPENT",
+     "STATIC",
+     "STRAIGHT",
+     "TEAM",
+     "THAT",
+     "THE",
+     "THEN",
+     "THEY",
+     "WE"
+    ],
+    "photos": [
+     "staticfox_scrap_transparent.png"
+    ]
+   },
+   "how": "Measures the share of the designed area in the named colours."
+  },
+  {
+   "check_id": "MOTION-11/channel-teaser-vertical/H032",
+   "output_id": "channel-teaser-vertical",
+   "rule_id": "R077",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Wherever graphics are held still in “Channel feed teaser upright cutdown” (channel-teaser-vertical.mp4), Acid Signal #B6FF2E fills no more than a tenth of them, not counting title letters.",
+   "assertion": {
+    "op": "v2_raster_share",
+    "hexes": [
+     "#B6FF2E"
+    ],
+    "max_pct": 10,
+    "except_words": [
+     "A",
+     "AND",
+     "BASE",
+     "BRIDGE",
+     "BROKE",
+     "BUILDING",
+     "DO",
+     "DOOR",
+     "DROVE",
+     "ENTIRE",
+     "EVERYONE",
+     "FIRE",
+     "FOX",
+     "GAVE",
+     "GONE.",
+     "HOURS",
+     "I",
+     "IT",
+     "JOB",
+     "KITCHEN.",
+     "MAP",
+     "MY",
+     "NOT",
+     "OFF",
+     "ON",
+     "ONE",
+     "OPEN",
+     "PAST",
+     "PLATFORM",
+     "SET",
+     "SIMPLE",
+     "SIX",
+     "SPENT",
+     "STATIC",
+     "STRAIGHT",
+     "TEAM",
+     "THAT",
+     "THE",
+     "THEN",
+     "THEY",
+     "WE"
+    ],
+    "photos": [
+     "staticfox_scrap_transparent.png"
+    ]
+   },
+   "how": "Measures the share of the designed area in the named colours."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-we-broke-the-map/H037",
+   "output_id": "thumbnail-we-broke-the-map",
+   "rule_id": "R078",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "No scrim or colour wash of any colour, black or white included, lies over the capture frame on “Channel thumbnail - WE BROKE THE MAP” (thumbnail-we-broke-the-map.png).",
+   "assertion": {
+    "op": "v2_capture_wash",
+    "capture": "staticfox_captures/staticfox_capture_01.mp4"
+   },
+   "how": "Finds the capture frame the thumbnail is built on and compares the tones of the visible capture with it."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-everyone-off-the-platform/H036",
+   "output_id": "thumbnail-everyone-off-the-platform",
+   "rule_id": "R078",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "No scrim or colour wash of any colour, black or white included, lies over the capture frame on “Channel thumbnail - EVERYONE OFF THE PLATFORM” (thumbnail-everyone-off-the-platform.png).",
+   "assertion": {
+    "op": "v2_capture_wash",
+    "capture": "staticfox_captures/staticfox_capture_02.mp4"
+   },
+   "how": "Finds the capture frame the thumbnail is built on and compares the tones of the visible capture with it."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-kitchen-gone/H036",
+   "output_id": "thumbnail-kitchen-gone",
+   "rule_id": "R078",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "No scrim or colour wash of any colour, black or white included, lies over the capture frame on “Channel thumbnail - KITCHEN. GONE.” (thumbnail-kitchen-gone.png).",
+   "assertion": {
+    "op": "v2_capture_wash",
+    "capture": "staticfox_captures/staticfox_capture_03.mp4"
+   },
+   "how": "Finds the capture frame the thumbnail is built on and compares the tones of the visible capture with it."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-do-not-open-that-door/H037",
+   "output_id": "thumbnail-do-not-open-that-door",
+   "rule_id": "R078",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "No scrim or colour wash of any colour, black or white included, lies over the capture frame on “Channel thumbnail - DO NOT OPEN THAT DOOR” (thumbnail-do-not-open-that-door.png).",
+   "assertion": {
+    "op": "v2_capture_wash",
+    "capture": "staticfox_captures/staticfox_capture_04.mp4"
+   },
+   "how": "Finds the capture frame the thumbnail is built on and compares the tones of the visible capture with it."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas/H035",
+   "output_id": "thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas",
+   "rule_id": "R078",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "No scrim or colour wash of any colour, black or white included, lies over the capture frame on “Channel thumbnail - WE SPENT SIX HOURS BUILDING A BRIDGE AND THEN DROVE STRAIGHT PAST IT” (thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas.png).",
+   "assertion": {
+    "op": "v2_capture_wash",
+    "capture": "staticfox_captures/staticfox_capture_05.mp4"
+   },
+   "how": "Finds the capture frame the thumbnail is built on and compares the tones of the visible capture with it."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi/H035",
+   "output_id": "thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi",
+   "rule_id": "R078",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "No scrim or colour wash of any colour, black or white included, lies over the capture frame on “Channel thumbnail - I GAVE MY TEAM ONE SIMPLE JOB AND THEY SET THE ENTIRE BASE ON FIRE” (thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi.png).",
+   "assertion": {
+    "op": "v2_capture_wash",
+    "capture": "staticfox_captures/staticfox_capture_06.mp4"
+   },
+   "how": "Finds the capture frame the thumbnail is built on and compares the tones of the visible capture with it."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-we-broke-the-map/H006",
+   "output_id": "thumbnail-we-broke-the-map",
+   "rule_id": "R080",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "On “Channel thumbnail - WE BROKE THE MAP” (thumbnail-we-broke-the-map.png), every title word before “MAP” is set in Anton Regular.",
+   "assertion": {
+    "op": "v2_typeface_raster",
+    "fonts": [
+     [
+      "Anton",
+      null
+     ]
+    ],
+    "part_of": [
+     "WE BROKE THE MAP"
+    ],
+    "words": {
+     "before": "MAP"
+    }
+   },
+   "how": "Reads each named line by OCR, renders its own text in every brand font and weight and in common stand-in fonts, and compares the letter shapes and stroke thickness with the image; only a clear best match counts."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-everyone-off-the-platform/H016",
+   "output_id": "thumbnail-everyone-off-the-platform",
+   "rule_id": "R080",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "On “Channel thumbnail - EVERYONE OFF THE PLATFORM” (thumbnail-everyone-off-the-platform.png), every title word before “PLATFORM” is set in Anton Regular.",
+   "assertion": {
+    "op": "v2_typeface_raster",
+    "fonts": [
+     [
+      "Anton",
+      null
+     ]
+    ],
+    "part_of": [
+     "EVERYONE OFF THE PLATFORM"
+    ],
+    "words": {
+     "before": "PLATFORM"
+    }
+   },
+   "how": "Reads each named line by OCR, renders its own text in every brand font and weight and in common stand-in fonts, and compares the letter shapes and stroke thickness with the image; only a clear best match counts."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-kitchen-gone/H015",
+   "output_id": "thumbnail-kitchen-gone",
+   "rule_id": "R080",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "On “Channel thumbnail - KITCHEN. GONE.” (thumbnail-kitchen-gone.png), every title word before “GONE.” is set in Anton Regular.",
+   "assertion": {
+    "op": "v2_typeface_raster",
+    "fonts": [
+     [
+      "Anton",
+      null
+     ]
+    ],
+    "part_of": [
+     "KITCHEN. GONE."
+    ],
+    "words": {
+     "before": "GONE."
+    }
+   },
+   "how": "Reads each named line by OCR, renders its own text in every brand font and weight and in common stand-in fonts, and compares the letter shapes and stroke thickness with the image; only a clear best match counts."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-do-not-open-that-door/H016",
+   "output_id": "thumbnail-do-not-open-that-door",
+   "rule_id": "R080",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "On “Channel thumbnail - DO NOT OPEN THAT DOOR” (thumbnail-do-not-open-that-door.png), every title word before “DOOR” is set in Anton Regular.",
+   "assertion": {
+    "op": "v2_typeface_raster",
+    "fonts": [
+     [
+      "Anton",
+      null
+     ]
+    ],
+    "part_of": [
+     "DO NOT OPEN THAT DOOR"
+    ],
+    "words": {
+     "before": "DOOR"
+    }
+   },
+   "how": "Reads each named line by OCR, renders its own text in every brand font and weight and in common stand-in fonts, and compares the letter shapes and stroke thickness with the image; only a clear best match counts."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas/H015",
+   "output_id": "thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas",
+   "rule_id": "R080",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "On “Channel thumbnail - WE SPENT SIX HOURS BUILDING A BRIDGE AND THEN DROVE STRAIGHT PAST IT” (thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas.png), every title word before “IT” is set in Anton Regular.",
+   "assertion": {
+    "op": "v2_typeface_raster",
+    "fonts": [
+     [
+      "Anton",
+      null
+     ]
+    ],
+    "part_of": [
+     "WE SPENT SIX HOURS BUILDING A BRIDGE AND THEN DROVE STRAIGHT PAST IT"
+    ],
+    "words": {
+     "before": "IT"
+    }
+   },
+   "how": "Reads each named line by OCR, renders its own text in every brand font and weight and in common stand-in fonts, and compares the letter shapes and stroke thickness with the image; only a clear best match counts."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi/H016",
+   "output_id": "thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi",
+   "rule_id": "R080",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "On “Channel thumbnail - I GAVE MY TEAM ONE SIMPLE JOB AND THEY SET THE ENTIRE BASE ON FIRE” (thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi.png), every title word before “FIRE” is set in Anton Regular.",
+   "assertion": {
+    "op": "v2_typeface_raster",
+    "fonts": [
+     [
+      "Anton",
+      null
+     ]
+    ],
+    "part_of": [
+     "I GAVE MY TEAM ONE SIMPLE JOB AND THEY SET THE ENTIRE BASE ON FIRE"
+    ],
+    "words": {
+     "before": "FIRE"
+    }
+   },
+   "how": "Reads each named line by OCR, renders its own text in every brand font and weight and in common stand-in fonts, and compares the letter shapes and stroke thickness with the image; only a clear best match counts."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-we-broke-the-map/H017",
+   "output_id": "thumbnail-we-broke-the-map",
+   "rule_id": "R081",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The final word “MAP” on “Channel thumbnail - WE BROKE THE MAP” (thumbnail-we-broke-the-map.png) is set in Archivo Black Regular.",
+   "assertion": {
+    "op": "v2_typeface_raster",
+    "fonts": [
+     [
+      "Archivo Black",
+      null
+     ]
+    ],
+    "part_of": [
+     "WE BROKE THE MAP"
+    ],
+    "words": {
+     "only": "MAP"
+    }
+   },
+   "how": "Reads each named line by OCR, renders its own text in every brand font and weight and in common stand-in fonts, and compares the letter shapes and stroke thickness with the image; only a clear best match counts."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-everyone-off-the-platform/H017",
+   "output_id": "thumbnail-everyone-off-the-platform",
+   "rule_id": "R081",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The final word “PLATFORM” on “Channel thumbnail - EVERYONE OFF THE PLATFORM” (thumbnail-everyone-off-the-platform.png) is set in Archivo Black Regular.",
+   "assertion": {
+    "op": "v2_typeface_raster",
+    "fonts": [
+     [
+      "Archivo Black",
+      null
+     ]
+    ],
+    "part_of": [
+     "EVERYONE OFF THE PLATFORM"
+    ],
+    "words": {
+     "only": "PLATFORM"
+    }
+   },
+   "how": "Reads each named line by OCR, renders its own text in every brand font and weight and in common stand-in fonts, and compares the letter shapes and stroke thickness with the image; only a clear best match counts."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-kitchen-gone/H016",
+   "output_id": "thumbnail-kitchen-gone",
+   "rule_id": "R081",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The final word “GONE.” on “Channel thumbnail - KITCHEN. GONE.” (thumbnail-kitchen-gone.png) is set in Archivo Black Regular.",
+   "assertion": {
+    "op": "v2_typeface_raster",
+    "fonts": [
+     [
+      "Archivo Black",
+      null
+     ]
+    ],
+    "part_of": [
+     "KITCHEN. GONE."
+    ],
+    "words": {
+     "only": "GONE."
+    }
+   },
+   "how": "Reads each named line by OCR, renders its own text in every brand font and weight and in common stand-in fonts, and compares the letter shapes and stroke thickness with the image; only a clear best match counts."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-do-not-open-that-door/H017",
+   "output_id": "thumbnail-do-not-open-that-door",
+   "rule_id": "R081",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The final word “DOOR” on “Channel thumbnail - DO NOT OPEN THAT DOOR” (thumbnail-do-not-open-that-door.png) is set in Archivo Black Regular.",
+   "assertion": {
+    "op": "v2_typeface_raster",
+    "fonts": [
+     [
+      "Archivo Black",
+      null
+     ]
+    ],
+    "part_of": [
+     "DO NOT OPEN THAT DOOR"
+    ],
+    "words": {
+     "only": "DOOR"
+    }
+   },
+   "how": "Reads each named line by OCR, renders its own text in every brand font and weight and in common stand-in fonts, and compares the letter shapes and stroke thickness with the image; only a clear best match counts."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas/H016",
+   "output_id": "thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas",
+   "rule_id": "R081",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The final word “IT” on “Channel thumbnail - WE SPENT SIX HOURS BUILDING A BRIDGE AND THEN DROVE STRAIGHT PAST IT” (thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas.png) is set in Archivo Black Regular.",
+   "assertion": {
+    "op": "v2_typeface_raster",
+    "fonts": [
+     [
+      "Archivo Black",
+      null
+     ]
+    ],
+    "part_of": [
+     "WE SPENT SIX HOURS BUILDING A BRIDGE AND THEN DROVE STRAIGHT PAST IT"
+    ],
+    "words": {
+     "only": "IT"
+    }
+   },
+   "how": "Reads each named line by OCR, renders its own text in every brand font and weight and in common stand-in fonts, and compares the letter shapes and stroke thickness with the image; only a clear best match counts."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi/H017",
+   "output_id": "thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi",
+   "rule_id": "R081",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The final word “FIRE” on “Channel thumbnail - I GAVE MY TEAM ONE SIMPLE JOB AND THEY SET THE ENTIRE BASE ON FIRE” (thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi.png) is set in Archivo Black Regular.",
+   "assertion": {
+    "op": "v2_typeface_raster",
+    "fonts": [
+     [
+      "Archivo Black",
+      null
+     ]
+    ],
+    "part_of": [
+     "I GAVE MY TEAM ONE SIMPLE JOB AND THEY SET THE ENTIRE BASE ON FIRE"
+    ],
+    "words": {
+     "only": "FIRE"
+    }
+   },
+   "how": "Reads each named line by OCR, renders its own text in every brand font and weight and in common stand-in fonts, and compares the letter shapes and stroke thickness with the image; only a clear best match counts."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas/H017",
+   "output_id": "thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas",
+   "rule_id": "R082",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Measured at full size, each Anton setup capital on “Channel thumbnail - WE SPENT SIX HOURS BUILDING A BRIDGE AND THEN DROVE STRAIGHT PAST IT” (thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas.png) stands roughly 70 to 95 px tall.",
+   "assertion": {
+    "op": "v2_cap_height",
+    "words": [
+     "WE",
+     "SPENT",
+     "SIX",
+     "HOURS",
+     "BUILDING",
+     "BRIDGE",
+     "AND",
+     "THEN",
+     "DROVE",
+     "STRAIGHT",
+     "PAST"
+    ],
+    "fills": [
+     "#FFFFFF",
+     "#B6FF2E",
+     "#FF5A1F"
+    ],
+    "min_px": 70,
+    "max_px": 95
+   },
+   "how": "Reads the title words by OCR and measures the height of their letters' fill."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi/H018",
+   "output_id": "thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi",
+   "rule_id": "R082",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Measured at full size, each Anton setup capital on “Channel thumbnail - I GAVE MY TEAM ONE SIMPLE JOB AND THEY SET THE ENTIRE BASE ON FIRE” (thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi.png) stands roughly 70 to 95 px tall.",
+   "assertion": {
+    "op": "v2_cap_height",
+    "words": [
+     "GAVE",
+     "MY",
+     "TEAM",
+     "ONE",
+     "SIMPLE",
+     "JOB",
+     "AND",
+     "THEY",
+     "SET",
+     "THE",
+     "ENTIRE",
+     "BASE",
+     "ON"
+    ],
+    "fills": [
+     "#FFFFFF",
+     "#B6FF2E",
+     "#FF5A1F"
+    ],
+    "min_px": 70,
+    "max_px": 95
+   },
+   "how": "Reads the title words by OCR and measures the height of their letters' fill."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-we-broke-the-map/H018",
+   "output_id": "thumbnail-we-broke-the-map",
+   "rule_id": "R085",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Measured at full size, each Anton setup capital on “Channel thumbnail - WE BROKE THE MAP” (thumbnail-we-broke-the-map.png) stands roughly 145 to 180 px tall.",
+   "assertion": {
+    "op": "v2_cap_height",
+    "words": [
+     "WE",
+     "BROKE",
+     "THE"
+    ],
+    "fills": [
+     "#FFFFFF",
+     "#B6FF2E",
+     "#FF5A1F"
+    ],
+    "min_px": 145,
+    "max_px": 180
+   },
+   "how": "Reads the title words by OCR and measures the height of their letters' fill."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-everyone-off-the-platform/H018",
+   "output_id": "thumbnail-everyone-off-the-platform",
+   "rule_id": "R085",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Measured at full size, each Anton setup capital on “Channel thumbnail - EVERYONE OFF THE PLATFORM” (thumbnail-everyone-off-the-platform.png) stands roughly 145 to 180 px tall.",
+   "assertion": {
+    "op": "v2_cap_height",
+    "words": [
+     "EVERYONE",
+     "OFF",
+     "THE"
+    ],
+    "fills": [
+     "#FFFFFF",
+     "#B6FF2E",
+     "#FF5A1F"
+    ],
+    "min_px": 145,
+    "max_px": 180
+   },
+   "how": "Reads the title words by OCR and measures the height of their letters' fill."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-kitchen-gone/H017",
+   "output_id": "thumbnail-kitchen-gone",
+   "rule_id": "R085",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Measured at full size, each Anton setup capital on “Channel thumbnail - KITCHEN. GONE.” (thumbnail-kitchen-gone.png) stands roughly 145 to 180 px tall.",
+   "assertion": {
+    "op": "v2_cap_height",
+    "words": [
+     "KITCHEN."
+    ],
+    "fills": [
+     "#FFFFFF",
+     "#B6FF2E",
+     "#FF5A1F"
+    ],
+    "min_px": 145,
+    "max_px": 180
+   },
+   "how": "Reads the title words by OCR and measures the height of their letters' fill."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-do-not-open-that-door/H018",
+   "output_id": "thumbnail-do-not-open-that-door",
+   "rule_id": "R085",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Measured at full size, each Anton setup capital on “Channel thumbnail - DO NOT OPEN THAT DOOR” (thumbnail-do-not-open-that-door.png) stands roughly 145 to 180 px tall.",
+   "assertion": {
+    "op": "v2_cap_height",
+    "words": [
+     "DO",
+     "NOT",
+     "OPEN",
+     "THAT"
+    ],
+    "fills": [
+     "#FFFFFF",
+     "#B6FF2E",
+     "#FF5A1F"
+    ],
+    "min_px": 145,
+    "max_px": 180
+   },
+   "how": "Reads the title words by OCR and measures the height of their letters' fill."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-we-broke-the-map/H019",
+   "output_id": "thumbnail-we-broke-the-map",
+   "rule_id": "R086",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The capitals of the final word “MAP” on “Channel thumbnail - WE BROKE THE MAP” (thumbnail-we-broke-the-map.png) are shorter than the Anton setup capitals above it.",
+   "assertion": {
+    "op": "v2_word_shorter",
+    "word": "MAP",
+    "upper": [
+     "WE",
+     "BROKE",
+     "THE"
+    ],
+    "fills": [
+     "#FFFFFF",
+     "#B6FF2E",
+     "#FF5A1F"
+    ]
+   },
+   "how": "Reads the title words by OCR and compares the height of their letters' fill."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-everyone-off-the-platform/H019",
+   "output_id": "thumbnail-everyone-off-the-platform",
+   "rule_id": "R086",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The capitals of the final word “PLATFORM” on “Channel thumbnail - EVERYONE OFF THE PLATFORM” (thumbnail-everyone-off-the-platform.png) are shorter than the Anton setup capitals above it.",
+   "assertion": {
+    "op": "v2_word_shorter",
+    "word": "PLATFORM",
+    "upper": [
+     "EVERYONE",
+     "OFF",
+     "THE"
+    ],
+    "fills": [
+     "#FFFFFF",
+     "#B6FF2E",
+     "#FF5A1F"
+    ]
+   },
+   "how": "Reads the title words by OCR and compares the height of their letters' fill."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-kitchen-gone/H018",
+   "output_id": "thumbnail-kitchen-gone",
+   "rule_id": "R086",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The capitals of the final word “GONE.” on “Channel thumbnail - KITCHEN. GONE.” (thumbnail-kitchen-gone.png) are shorter than the Anton setup capitals above it.",
+   "assertion": {
+    "op": "v2_word_shorter",
+    "word": "GONE.",
+    "upper": [
+     "KITCHEN."
+    ],
+    "fills": [
+     "#FFFFFF",
+     "#B6FF2E",
+     "#FF5A1F"
+    ]
+   },
+   "how": "Reads the title words by OCR and compares the height of their letters' fill."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-do-not-open-that-door/H019",
+   "output_id": "thumbnail-do-not-open-that-door",
+   "rule_id": "R086",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The capitals of the final word “DOOR” on “Channel thumbnail - DO NOT OPEN THAT DOOR” (thumbnail-do-not-open-that-door.png) are shorter than the Anton setup capitals above it.",
+   "assertion": {
+    "op": "v2_word_shorter",
+    "word": "DOOR",
+    "upper": [
+     "DO",
+     "NOT",
+     "OPEN",
+     "THAT"
+    ],
+    "fills": [
+     "#FFFFFF",
+     "#B6FF2E",
+     "#FF5A1F"
+    ]
+   },
+   "how": "Reads the title words by OCR and compares the height of their letters' fill."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas/H037",
+   "output_id": "thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas",
+   "rule_id": "R086",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The capitals of the final word “IT” on “Channel thumbnail - WE SPENT SIX HOURS BUILDING A BRIDGE AND THEN DROVE STRAIGHT PAST IT” (thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas.png) are shorter than the Anton setup capitals above it.",
+   "assertion": {
+    "op": "v2_word_shorter",
+    "word": "IT",
+    "upper": [
+     "WE",
+     "SPENT",
+     "SIX",
+     "HOURS",
+     "BUILDING",
+     "BRIDGE",
+     "AND",
+     "THEN",
+     "DROVE",
+     "STRAIGHT",
+     "PAST"
+    ],
+    "fills": [
+     "#FFFFFF",
+     "#B6FF2E",
+     "#FF5A1F"
+    ]
+   },
+   "how": "Reads the title words by OCR and compares the height of their letters' fill."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi/H037",
+   "output_id": "thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi",
+   "rule_id": "R086",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The capitals of the final word “FIRE” on “Channel thumbnail - I GAVE MY TEAM ONE SIMPLE JOB AND THEY SET THE ENTIRE BASE ON FIRE” (thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi.png) are shorter than the Anton setup capitals above it.",
+   "assertion": {
+    "op": "v2_word_shorter",
+    "word": "FIRE",
+    "upper": [
+     "GAVE",
+     "MY",
+     "TEAM",
+     "ONE",
+     "SIMPLE",
+     "JOB",
+     "AND",
+     "THEY",
+     "SET",
+     "THE",
+     "ENTIRE",
+     "BASE",
+     "ON"
+    ],
+    "fills": [
+     "#FFFFFF",
+     "#B6FF2E",
+     "#FF5A1F"
+    ]
+   },
+   "how": "Reads the title words by OCR and compares the height of their letters' fill."
+  },
+  {
+   "check_id": "MOTION-11/channel-animation/H015",
+   "output_id": "channel-animation",
+   "rule_id": "R087",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Every line set in Anton or Archivo Black in “Animated channel title and end card” (channel-animation.mp4) is in capitals.",
+   "assertion": {
+    "op": "v2_typeface_raster",
+    "forbid": [
+     "Anton",
+     "Archivo Black"
+    ],
+    "all_text": true,
+    "lowercase_only": true,
+    "optional": true
+   },
+   "how": "Reads each named line by OCR, renders its own text in every brand font and weight and in common stand-in fonts, and compares the letter shapes and stroke thickness with the image; only a clear best match counts."
+  },
+  {
+   "check_id": "MOTION-11/channel-teaser/H017",
+   "output_id": "channel-teaser",
+   "rule_id": "R087",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Every line set in Anton or Archivo Black in “Channel feed teaser” (channel-teaser.mp4) is in capitals.",
+   "assertion": {
+    "op": "v2_typeface_raster",
+    "forbid": [
+     "Anton",
+     "Archivo Black"
+    ],
+    "all_text": true,
+    "lowercase_only": true,
+    "optional": true
+   },
+   "how": "Reads each named line by OCR, renders its own text in every brand font and weight and in common stand-in fonts, and compares the letter shapes and stroke thickness with the image; only a clear best match counts."
+  },
+  {
+   "check_id": "MOTION-11/channel-teaser-vertical/H015",
+   "output_id": "channel-teaser-vertical",
+   "rule_id": "R087",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Every line set in Anton or Archivo Black in “Channel feed teaser upright cutdown” (channel-teaser-vertical.mp4) is in capitals.",
+   "assertion": {
+    "op": "v2_typeface_raster",
+    "forbid": [
+     "Anton",
+     "Archivo Black"
+    ],
+    "all_text": true,
+    "lowercase_only": true,
+    "optional": true
+   },
+   "how": "Reads each named line by OCR, renders its own text in every brand font and weight and in common stand-in fonts, and compares the letter shapes and stroke thickness with the image; only a clear best match counts."
+  },
+  {
+   "check_id": "MOTION-11/channel-animation/H017",
+   "output_id": "channel-animation",
+   "rule_id": "R088",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "“STATIC” in the channel name of “Animated channel title and end card” (channel-animation.mp4) is set in Anton Regular.",
+   "assertion": {
+    "op": "v2_typeface_raster",
+    "fonts": [
+     [
+      "Anton",
+      null
+     ]
+    ],
+    "whole": [
+     "STATIC"
+    ]
+   },
+   "how": "Reads each named line by OCR, renders its own text in every brand font and weight and in common stand-in fonts, and compares the letter shapes and stroke thickness with the image; only a clear best match counts."
+  },
+  {
+   "check_id": "MOTION-11/channel-animation/H018",
+   "output_id": "channel-animation",
+   "rule_id": "R088",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "“FOX” in the channel name of “Animated channel title and end card” (channel-animation.mp4) is set in Archivo Black Regular.",
+   "assertion": {
+    "op": "v2_typeface_raster",
+    "fonts": [
+     [
+      "Archivo Black",
+      null
+     ]
+    ],
+    "whole": [
+     "FOX"
+    ]
+   },
+   "how": "Reads each named line by OCR, renders its own text in every brand font and weight and in common stand-in fonts, and compares the letter shapes and stroke thickness with the image; only a clear best match counts."
+  },
+  {
+   "check_id": "MOTION-11/channel-animation/H019",
+   "output_id": "channel-animation",
+   "rule_id": "R089",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Measured on the held end card of “Animated channel title and end card” (channel-animation.mp4), the capitals of “STATIC” stand roughly 145 to 180 px tall.",
+   "assertion": {
+    "op": "v2_cap_height",
+    "words": [
+     "STATIC"
+    ],
+    "fills": [
+     "#FFFFFF",
+     "#B6FF2E",
+     "#FF5A1F"
+    ],
+    "min_px": 145,
+    "max_px": 180
+   },
+   "how": "Reads the title words by OCR and measures the height of their letters' fill."
+  },
+  {
+   "check_id": "MOTION-11/channel-animation/H021",
+   "output_id": "channel-animation",
+   "rule_id": "R090",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Every end card line in “Animated channel title and end card” (channel-animation.mp4) other than the channel name is set in Inter SemiBold 600.",
+   "assertion": {
+    "op": "v2_typeface_raster",
+    "fonts": [
+     [
+      "Inter",
+      [
+       "SemiBold"
+      ]
+     ]
+    ],
+    "all_text": true,
+    "frames": "last",
+    "except_whole": [
+     "STATIC",
+     "FOX",
+     "STATIC FOX"
+    ]
+   },
+   "how": "Reads each named line by OCR, renders its own text in every brand font and weight and in common stand-in fonts, and compares the letter shapes and stroke thickness with the image; only a clear best match counts."
+  },
+  {
+   "check_id": "MOTION-11/channel-animation/H022",
+   "output_id": "channel-animation",
+   "rule_id": "R091",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "No single row of Inter text on the end card of “Animated channel title and end card” (channel-animation.mp4) is longer than 65 characters; longer copy wraps onto more rows.",
+   "assertion": {
+    "op": "v2_line_chars",
+    "max_chars": 65,
+    "scope": "all"
+   },
+   "how": "Reads the selected lines (live text where there is any) and counts their characters."
+  },
+  {
+   "check_id": "MOTION-11/channel-teaser/H023",
+   "output_id": "channel-teaser",
+   "rule_id": "R096",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Every on-screen line in “Channel feed teaser” (channel-teaser.mp4) not set in Anton or Archivo Black is set in Inter SemiBold 600.",
+   "assertion": {
+    "op": "v2_typeface_raster",
+    "fonts": [
+     [
+      "Inter",
+      [
+       "SemiBold"
+      ]
+     ]
+    ],
+    "all_text": true,
+    "unless_families": [
+     "Anton",
+     "Archivo Black"
+    ]
+   },
+   "how": "Reads each named line by OCR, renders its own text in every brand font and weight and in common stand-in fonts, and compares the letter shapes and stroke thickness with the image; only a clear best match counts."
+  },
+  {
+   "check_id": "MOTION-11/channel-teaser-vertical/H021",
+   "output_id": "channel-teaser-vertical",
+   "rule_id": "R096",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Every on-screen line in “Channel feed teaser upright cutdown” (channel-teaser-vertical.mp4) not set in Anton or Archivo Black is set in Inter SemiBold 600.",
+   "assertion": {
+    "op": "v2_typeface_raster",
+    "fonts": [
+     [
+      "Inter",
+      [
+       "SemiBold"
+      ]
+     ]
+    ],
+    "all_text": true,
+    "unless_families": [
+     "Anton",
+     "Archivo Black"
+    ]
+   },
+   "how": "Reads each named line by OCR, renders its own text in every brand font and weight and in common stand-in fonts, and compares the letter shapes and stroke thickness with the image; only a clear best match counts."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-we-broke-the-map/H015",
+   "output_id": "thumbnail-we-broke-the-map",
+   "rule_id": "R101",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Every letter of the title on “Channel thumbnail - WE BROKE THE MAP” (thumbnail-we-broke-the-map.png) is a capital.",
+   "assertion": {
+    "op": "v2_caps",
+    "texts": [
+     "WE",
+     "BROKE",
+     "THE",
+     "MAP"
+    ]
+   },
+   "how": "Reads the named text and checks it is set in capitals."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-everyone-off-the-platform/H014",
+   "output_id": "thumbnail-everyone-off-the-platform",
+   "rule_id": "R101",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Every letter of the title on “Channel thumbnail - EVERYONE OFF THE PLATFORM” (thumbnail-everyone-off-the-platform.png) is a capital.",
+   "assertion": {
+    "op": "v2_caps",
+    "texts": [
+     "EVERYONE",
+     "OFF",
+     "THE",
+     "PLATFORM"
+    ]
+   },
+   "how": "Reads the named text and checks it is set in capitals."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-kitchen-gone/H013",
+   "output_id": "thumbnail-kitchen-gone",
+   "rule_id": "R101",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Every letter of the title on “Channel thumbnail - KITCHEN. GONE.” (thumbnail-kitchen-gone.png) is a capital.",
+   "assertion": {
+    "op": "v2_caps",
+    "texts": [
+     "KITCHEN.",
+     "GONE."
+    ]
+   },
+   "how": "Reads the named text and checks it is set in capitals."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-do-not-open-that-door/H014",
+   "output_id": "thumbnail-do-not-open-that-door",
+   "rule_id": "R101",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Every letter of the title on “Channel thumbnail - DO NOT OPEN THAT DOOR” (thumbnail-do-not-open-that-door.png) is a capital.",
+   "assertion": {
+    "op": "v2_caps",
+    "texts": [
+     "DO",
+     "NOT",
+     "OPEN",
+     "THAT",
+     "DOOR"
+    ]
+   },
+   "how": "Reads the named text and checks it is set in capitals."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas/H013",
+   "output_id": "thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas",
+   "rule_id": "R101",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Every letter of the title on “Channel thumbnail - WE SPENT SIX HOURS BUILDING A BRIDGE AND THEN DROVE STRAIGHT PAST IT” (thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas.png) is a capital.",
+   "assertion": {
+    "op": "v2_caps",
+    "texts": [
+     "WE",
+     "SPENT",
+     "SIX",
+     "HOURS",
+     "BUILDING",
+     "BRIDGE",
+     "AND",
+     "THEN",
+     "DROVE",
+     "STRAIGHT",
+     "PAST",
+     "IT"
+    ]
+   },
+   "how": "Reads the named text and checks it is set in capitals."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi/H014",
+   "output_id": "thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi",
+   "rule_id": "R101",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Every letter of the title on “Channel thumbnail - I GAVE MY TEAM ONE SIMPLE JOB AND THEY SET THE ENTIRE BASE ON FIRE” (thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi.png) is a capital.",
+   "assertion": {
+    "op": "v2_caps",
+    "texts": [
+     "GAVE",
+     "MY",
+     "TEAM",
+     "ONE",
+     "SIMPLE",
+     "JOB",
+     "AND",
+     "THEY",
+     "SET",
+     "THE",
+     "ENTIRE",
+     "BASE",
+     "ON",
+     "FIRE"
+    ]
+   },
+   "how": "Reads the named text and checks it is set in capitals."
+  },
+  {
+   "check_id": "MOTION-11/channel-animation/H020",
+   "output_id": "channel-animation",
+   "rule_id": "R102",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "On the held end card of “Animated channel title and end card” (channel-animation.mp4), the capitals of “FOX” are shorter than the capitals of “STATIC” above it.",
+   "assertion": {
+    "op": "v2_word_shorter",
+    "word": "FOX",
+    "upper": [
+     "STATIC"
+    ],
+    "fills": [
+     "#FFFFFF",
+     "#B6FF2E",
+     "#FF5A1F"
+    ]
+   },
+   "how": "Reads the title words by OCR and compares the height of their letters' fill."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-we-broke-the-map/H036",
+   "output_id": "thumbnail-we-broke-the-map",
+   "rule_id": "R105",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The final word “MAP” sits alone on the last row of the title stack on “Channel thumbnail - WE BROKE THE MAP” (thumbnail-we-broke-the-map.png).",
+   "assertion": {
+    "op": "v2_last_row",
+    "title": "WE BROKE THE MAP",
+    "word": "MAP"
+   },
+   "how": "Reads the title rows by OCR and checks the last row."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-everyone-off-the-platform/H035",
+   "output_id": "thumbnail-everyone-off-the-platform",
+   "rule_id": "R105",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The final word “PLATFORM” sits alone on the last row of the title stack on “Channel thumbnail - EVERYONE OFF THE PLATFORM” (thumbnail-everyone-off-the-platform.png).",
+   "assertion": {
+    "op": "v2_last_row",
+    "title": "EVERYONE OFF THE PLATFORM",
+    "word": "PLATFORM"
+   },
+   "how": "Reads the title rows by OCR and checks the last row."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-kitchen-gone/H035",
+   "output_id": "thumbnail-kitchen-gone",
+   "rule_id": "R105",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The final word “GONE.” sits alone on the last row of the title stack on “Channel thumbnail - KITCHEN. GONE.” (thumbnail-kitchen-gone.png).",
+   "assertion": {
+    "op": "v2_last_row",
+    "title": "KITCHEN. GONE.",
+    "word": "GONE."
+   },
+   "how": "Reads the title rows by OCR and checks the last row."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-do-not-open-that-door/H036",
+   "output_id": "thumbnail-do-not-open-that-door",
+   "rule_id": "R105",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The final word “DOOR” sits alone on the last row of the title stack on “Channel thumbnail - DO NOT OPEN THAT DOOR” (thumbnail-do-not-open-that-door.png).",
+   "assertion": {
+    "op": "v2_last_row",
+    "title": "DO NOT OPEN THAT DOOR",
+    "word": "DOOR"
+   },
+   "how": "Reads the title rows by OCR and checks the last row."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas/H034",
+   "output_id": "thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas",
+   "rule_id": "R105",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The final word “IT” sits alone on the last row of the title stack on “Channel thumbnail - WE SPENT SIX HOURS BUILDING A BRIDGE AND THEN DROVE STRAIGHT PAST IT” (thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas.png).",
+   "assertion": {
+    "op": "v2_last_row",
+    "title": "WE SPENT SIX HOURS BUILDING A BRIDGE AND THEN DROVE STRAIGHT PAST IT",
+    "word": "IT"
+   },
+   "how": "Reads the title rows by OCR and checks the last row."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi/H034",
+   "output_id": "thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi",
+   "rule_id": "R105",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The final word “FIRE” sits alone on the last row of the title stack on “Channel thumbnail - I GAVE MY TEAM ONE SIMPLE JOB AND THEY SET THE ENTIRE BASE ON FIRE” (thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi.png).",
+   "assertion": {
+    "op": "v2_last_row",
+    "title": "I GAVE MY TEAM ONE SIMPLE JOB AND THEY SET THE ENTIRE BASE ON FIRE",
+    "word": "FIRE"
+   },
+   "how": "Reads the title rows by OCR and checks the last row."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-we-broke-the-map/H038",
+   "output_id": "thumbnail-we-broke-the-map",
+   "rule_id": "R106",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Scrap on “Channel thumbnail - WE BROKE THE MAP” (thumbnail-we-broke-the-map.png) is fully opaque, with no capture frame showing through him.",
+   "assertion": {
+    "op": "v2_asset_pixels",
+    "asset": "staticfox_scrap_transparent.png",
+    "select": "all",
+    "tol": 5
+   },
+   "how": "Finds the supplied cut-out and compares its own pixels with the file."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-everyone-off-the-platform/H037",
+   "output_id": "thumbnail-everyone-off-the-platform",
+   "rule_id": "R106",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Scrap on “Channel thumbnail - EVERYONE OFF THE PLATFORM” (thumbnail-everyone-off-the-platform.png) is fully opaque, with no capture frame showing through him.",
+   "assertion": {
+    "op": "v2_asset_pixels",
+    "asset": "staticfox_scrap_transparent.png",
+    "select": "all",
+    "tol": 5
+   },
+   "how": "Finds the supplied cut-out and compares its own pixels with the file."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-kitchen-gone/H037",
+   "output_id": "thumbnail-kitchen-gone",
+   "rule_id": "R106",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Scrap on “Channel thumbnail - KITCHEN. GONE.” (thumbnail-kitchen-gone.png) is fully opaque, with no capture frame showing through him.",
+   "assertion": {
+    "op": "v2_asset_pixels",
+    "asset": "staticfox_scrap_transparent.png",
+    "select": "all",
+    "tol": 5
+   },
+   "how": "Finds the supplied cut-out and compares its own pixels with the file."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-do-not-open-that-door/H038",
+   "output_id": "thumbnail-do-not-open-that-door",
+   "rule_id": "R106",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Scrap on “Channel thumbnail - DO NOT OPEN THAT DOOR” (thumbnail-do-not-open-that-door.png) is fully opaque, with no capture frame showing through him.",
+   "assertion": {
+    "op": "v2_asset_pixels",
+    "asset": "staticfox_scrap_transparent.png",
+    "select": "all",
+    "tol": 5
+   },
+   "how": "Finds the supplied cut-out and compares its own pixels with the file."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas/H036",
+   "output_id": "thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas",
+   "rule_id": "R106",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Scrap on “Channel thumbnail - WE SPENT SIX HOURS BUILDING A BRIDGE AND THEN DROVE STRAIGHT PAST IT” (thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas.png) is fully opaque, with no capture frame showing through him.",
+   "assertion": {
+    "op": "v2_asset_pixels",
+    "asset": "staticfox_scrap_transparent.png",
+    "select": "all",
+    "tol": 5
+   },
+   "how": "Finds the supplied cut-out and compares its own pixels with the file."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi/H036",
+   "output_id": "thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi",
+   "rule_id": "R106",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Scrap on “Channel thumbnail - I GAVE MY TEAM ONE SIMPLE JOB AND THEY SET THE ENTIRE BASE ON FIRE” (thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi.png) is fully opaque, with no capture frame showing through him.",
+   "assertion": {
+    "op": "v2_asset_pixels",
+    "asset": "staticfox_scrap_transparent.png",
+    "select": "all",
+    "tol": 5
+   },
+   "how": "Finds the supplied cut-out and compares its own pixels with the file."
+  },
+  {
+   "check_id": "MOTION-11/channel-animation/H036",
+   "output_id": "channel-animation",
+   "rule_id": "R107",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "On the held end card of “Animated channel title and end card” (channel-animation.mp4), “FOX” sits alone on the last row of the “STATIC FOX” title stack.",
+   "assertion": {
+    "op": "v2_last_row",
+    "title": "STATIC FOX",
+    "word": "FOX"
+   },
+   "how": "Reads the title rows by OCR and checks the last row."
+  },
+  {
+   "check_id": "MOTION-11/channel-animation/H037",
+   "output_id": "channel-animation",
+   "rule_id": "R108",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Wherever Scrap is held still in “Animated channel title and end card” (channel-animation.mp4), he is fully opaque, with nothing showing through him.",
+   "assertion": {
+    "op": "v2_asset_pixels",
+    "asset": "staticfox_scrap_transparent.png",
+    "select": "all",
+    "tol": 8
+   },
+   "how": "Finds the supplied cut-out and compares its own pixels with the file."
+  },
+  {
+   "check_id": "MOTION-11/channel-teaser/H038",
+   "output_id": "channel-teaser",
+   "rule_id": "R110",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Wherever Scrap is held still in “Channel feed teaser” (channel-teaser.mp4), he is fully opaque, with no footage showing through him.",
+   "assertion": {
+    "op": "v2_asset_pixels",
+    "asset": "staticfox_scrap_transparent.png",
+    "select": "all",
+    "tol": 8
+   },
+   "how": "Finds the supplied cut-out and compares its own pixels with the file."
+  },
+  {
+   "check_id": "MOTION-11/channel-teaser-vertical/H036",
+   "output_id": "channel-teaser-vertical",
+   "rule_id": "R110",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Wherever Scrap is held still in “Channel feed teaser upright cutdown” (channel-teaser-vertical.mp4), he is fully opaque, with no footage showing through him.",
+   "assertion": {
+    "op": "v2_asset_pixels",
+    "asset": "staticfox_scrap_transparent.png",
+    "select": "all",
+    "tol": 8
+   },
+   "how": "Finds the supplied cut-out and compares its own pixels with the file."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-we-broke-the-map/H014",
+   "output_id": "thumbnail-we-broke-the-map",
+   "rule_id": "R112",
+   "k_id": "K2_Q4",
+   "critical": false,
+   "check": "Scrap on “Channel thumbnail - WE BROKE THE MAP” (thumbnail-we-broke-the-map.png) keeps the orange fur of the supplied cutout, not recoloured.",
+   "assertion": {
+    "op": "v2_asset_pixels",
+    "asset": "staticfox_scrap_transparent.png",
+    "select": "orange",
+    "tol": 8
+   },
+   "how": "Finds the supplied cut-out and compares its own pixels with the file."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-everyone-off-the-platform/H013",
+   "output_id": "thumbnail-everyone-off-the-platform",
+   "rule_id": "R112",
+   "k_id": "K2_Q4",
+   "critical": false,
+   "check": "Scrap on “Channel thumbnail - EVERYONE OFF THE PLATFORM” (thumbnail-everyone-off-the-platform.png) keeps the orange fur of the supplied cutout, not recoloured.",
+   "assertion": {
+    "op": "v2_asset_pixels",
+    "asset": "staticfox_scrap_transparent.png",
+    "select": "orange",
+    "tol": 8
+   },
+   "how": "Finds the supplied cut-out and compares its own pixels with the file."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-kitchen-gone/H012",
+   "output_id": "thumbnail-kitchen-gone",
+   "rule_id": "R112",
+   "k_id": "K2_Q4",
+   "critical": false,
+   "check": "Scrap on “Channel thumbnail - KITCHEN. GONE.” (thumbnail-kitchen-gone.png) keeps the orange fur of the supplied cutout, not recoloured.",
+   "assertion": {
+    "op": "v2_asset_pixels",
+    "asset": "staticfox_scrap_transparent.png",
+    "select": "orange",
+    "tol": 8
+   },
+   "how": "Finds the supplied cut-out and compares its own pixels with the file."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-do-not-open-that-door/H013",
+   "output_id": "thumbnail-do-not-open-that-door",
+   "rule_id": "R112",
+   "k_id": "K2_Q4",
+   "critical": false,
+   "check": "Scrap on “Channel thumbnail - DO NOT OPEN THAT DOOR” (thumbnail-do-not-open-that-door.png) keeps the orange fur of the supplied cutout, not recoloured.",
+   "assertion": {
+    "op": "v2_asset_pixels",
+    "asset": "staticfox_scrap_transparent.png",
+    "select": "orange",
+    "tol": 8
+   },
+   "how": "Finds the supplied cut-out and compares its own pixels with the file."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas/H012",
+   "output_id": "thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas",
+   "rule_id": "R112",
+   "k_id": "K2_Q4",
+   "critical": false,
+   "check": "Scrap on “Channel thumbnail - WE SPENT SIX HOURS BUILDING A BRIDGE AND THEN DROVE STRAIGHT PAST IT” (thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas.png) keeps the orange fur of the supplied cutout, not recoloured.",
+   "assertion": {
+    "op": "v2_asset_pixels",
+    "asset": "staticfox_scrap_transparent.png",
+    "select": "orange",
+    "tol": 8
+   },
+   "how": "Finds the supplied cut-out and compares its own pixels with the file."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi/H013",
+   "output_id": "thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi",
+   "rule_id": "R112",
+   "k_id": "K2_Q4",
+   "critical": false,
+   "check": "Scrap on “Channel thumbnail - I GAVE MY TEAM ONE SIMPLE JOB AND THEY SET THE ENTIRE BASE ON FIRE” (thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi.png) keeps the orange fur of the supplied cutout, not recoloured.",
+   "assertion": {
+    "op": "v2_asset_pixels",
+    "asset": "staticfox_scrap_transparent.png",
+    "select": "orange",
+    "tol": 8
+   },
+   "how": "Finds the supplied cut-out and compares its own pixels with the file."
+  },
+  {
+   "check_id": "MOTION-11/channel-animation/H014",
+   "output_id": "channel-animation",
+   "rule_id": "R114",
+   "k_id": "K2_Q4",
+   "critical": false,
+   "check": "Wherever Scrap appears in “Animated channel title and end card” (channel-animation.mp4), he keeps the orange fur of the supplied cutout, not recoloured.",
+   "assertion": {
+    "op": "v2_asset_pixels",
+    "asset": "staticfox_scrap_transparent.png",
+    "select": "orange",
+    "tol": 8
+   },
+   "how": "Finds the supplied cut-out and compares its own pixels with the file."
+  },
+  {
+   "check_id": "MOTION-11/channel-teaser/H016",
+   "output_id": "channel-teaser",
+   "rule_id": "R114",
+   "k_id": "K2_Q4",
+   "critical": false,
+   "check": "Wherever Scrap appears in “Channel feed teaser” (channel-teaser.mp4), he keeps the orange fur of the supplied cutout, not recoloured.",
+   "assertion": {
+    "op": "v2_asset_pixels",
+    "asset": "staticfox_scrap_transparent.png",
+    "select": "orange",
+    "tol": 8
+   },
+   "how": "Finds the supplied cut-out and compares its own pixels with the file."
+  },
+  {
+   "check_id": "MOTION-11/channel-teaser-vertical/H014",
+   "output_id": "channel-teaser-vertical",
+   "rule_id": "R114",
+   "k_id": "K2_Q4",
+   "critical": false,
+   "check": "Wherever Scrap appears in “Channel feed teaser upright cutdown” (channel-teaser-vertical.mp4), he keeps the orange fur of the supplied cutout, not recoloured.",
+   "assertion": {
+    "op": "v2_asset_pixels",
+    "asset": "staticfox_scrap_transparent.png",
+    "select": "orange",
+    "tol": 8
+   },
+   "how": "Finds the supplied cut-out and compares its own pixels with the file."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-we-broke-the-map/H040",
+   "output_id": "thumbnail-we-broke-the-map",
+   "rule_id": "R115",
+   "k_id": "K2_Q4",
+   "critical": false,
+   "check": "Scrap on “Channel thumbnail - WE BROKE THE MAP” (thumbnail-we-broke-the-map.png) keeps the purple headset of the supplied cutout, not recoloured.",
+   "assertion": {
+    "op": "v2_asset_pixels",
+    "asset": "staticfox_scrap_transparent.png",
+    "select": "purple",
+    "tol": 8
+   },
+   "how": "Finds the supplied cut-out and compares its own pixels with the file."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-everyone-off-the-platform/H039",
+   "output_id": "thumbnail-everyone-off-the-platform",
+   "rule_id": "R115",
+   "k_id": "K2_Q4",
+   "critical": false,
+   "check": "Scrap on “Channel thumbnail - EVERYONE OFF THE PLATFORM” (thumbnail-everyone-off-the-platform.png) keeps the purple headset of the supplied cutout, not recoloured.",
+   "assertion": {
+    "op": "v2_asset_pixels",
+    "asset": "staticfox_scrap_transparent.png",
+    "select": "purple",
+    "tol": 8
+   },
+   "how": "Finds the supplied cut-out and compares its own pixels with the file."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-kitchen-gone/H039",
+   "output_id": "thumbnail-kitchen-gone",
+   "rule_id": "R115",
+   "k_id": "K2_Q4",
+   "critical": false,
+   "check": "Scrap on “Channel thumbnail - KITCHEN. GONE.” (thumbnail-kitchen-gone.png) keeps the purple headset of the supplied cutout, not recoloured.",
+   "assertion": {
+    "op": "v2_asset_pixels",
+    "asset": "staticfox_scrap_transparent.png",
+    "select": "purple",
+    "tol": 8
+   },
+   "how": "Finds the supplied cut-out and compares its own pixels with the file."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-do-not-open-that-door/H040",
+   "output_id": "thumbnail-do-not-open-that-door",
+   "rule_id": "R115",
+   "k_id": "K2_Q4",
+   "critical": false,
+   "check": "Scrap on “Channel thumbnail - DO NOT OPEN THAT DOOR” (thumbnail-do-not-open-that-door.png) keeps the purple headset of the supplied cutout, not recoloured.",
+   "assertion": {
+    "op": "v2_asset_pixels",
+    "asset": "staticfox_scrap_transparent.png",
+    "select": "purple",
+    "tol": 8
+   },
+   "how": "Finds the supplied cut-out and compares its own pixels with the file."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas/H039",
+   "output_id": "thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas",
+   "rule_id": "R115",
+   "k_id": "K2_Q4",
+   "critical": false,
+   "check": "Scrap on “Channel thumbnail - WE SPENT SIX HOURS BUILDING A BRIDGE AND THEN DROVE STRAIGHT PAST IT” (thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas.png) keeps the purple headset of the supplied cutout, not recoloured.",
+   "assertion": {
+    "op": "v2_asset_pixels",
+    "asset": "staticfox_scrap_transparent.png",
+    "select": "purple",
+    "tol": 8
+   },
+   "how": "Finds the supplied cut-out and compares its own pixels with the file."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi/H039",
+   "output_id": "thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi",
+   "rule_id": "R115",
+   "k_id": "K2_Q4",
+   "critical": false,
+   "check": "Scrap on “Channel thumbnail - I GAVE MY TEAM ONE SIMPLE JOB AND THEY SET THE ENTIRE BASE ON FIRE” (thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi.png) keeps the purple headset of the supplied cutout, not recoloured.",
+   "assertion": {
+    "op": "v2_asset_pixels",
+    "asset": "staticfox_scrap_transparent.png",
+    "select": "purple",
+    "tol": 8
+   },
+   "how": "Finds the supplied cut-out and compares its own pixels with the file."
+  },
+  {
+   "check_id": "MOTION-11/channel-animation/H041",
+   "output_id": "channel-animation",
+   "rule_id": "R116",
+   "k_id": "K2_Q4",
+   "critical": false,
+   "check": "Wherever Scrap appears in “Animated channel title and end card” (channel-animation.mp4), he keeps the purple headset of the supplied cutout, not recoloured.",
+   "assertion": {
+    "op": "v2_asset_pixels",
+    "asset": "staticfox_scrap_transparent.png",
+    "select": "purple",
+    "tol": 8
+   },
+   "how": "Finds the supplied cut-out and compares its own pixels with the file."
+  },
+  {
+   "check_id": "MOTION-11/channel-teaser/H043",
+   "output_id": "channel-teaser",
+   "rule_id": "R116",
+   "k_id": "K2_Q4",
+   "critical": false,
+   "check": "Wherever Scrap appears in “Channel feed teaser” (channel-teaser.mp4), he keeps the purple headset of the supplied cutout, not recoloured.",
+   "assertion": {
+    "op": "v2_asset_pixels",
+    "asset": "staticfox_scrap_transparent.png",
+    "select": "purple",
+    "tol": 8
+   },
+   "how": "Finds the supplied cut-out and compares its own pixels with the file."
+  },
+  {
+   "check_id": "MOTION-11/channel-teaser-vertical/H050",
+   "output_id": "channel-teaser-vertical",
+   "rule_id": "R116",
+   "k_id": "K2_Q4",
+   "critical": false,
+   "check": "Wherever Scrap appears in “Channel feed teaser upright cutdown” (channel-teaser-vertical.mp4), he keeps the purple headset of the supplied cutout, not recoloured.",
+   "assertion": {
+    "op": "v2_asset_pixels",
+    "asset": "staticfox_scrap_transparent.png",
+    "select": "purple",
+    "tol": 8
+   },
+   "how": "Finds the supplied cut-out and compares its own pixels with the file."
   },
   {
    "check_id": "MOTION-11/thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas/H008",
@@ -498,6 +5296,216 @@
     "text": "STATIC FOX"
    },
    "how": "Reads the held last frame of the video and compares text sizes."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-we-broke-the-map/H033",
+   "output_id": "thumbnail-we-broke-the-map",
+   "rule_id": "R120",
+   "k_id": "K5_Q1",
+   "critical": false,
+   "check": "Displayed 320 px wide (one sixth of full size), every word of the title on “Channel thumbnail - WE BROKE THE MAP” (thumbnail-we-broke-the-map.png) can still be read.",
+   "assertion": {
+    "op": "v2_legible_at",
+    "text": "WE BROKE THE MAP",
+    "width": 320
+   },
+   "how": "Shrinks the image to the stated width and checks OCR still reads every word."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-everyone-off-the-platform/H032",
+   "output_id": "thumbnail-everyone-off-the-platform",
+   "rule_id": "R120",
+   "k_id": "K5_Q1",
+   "critical": false,
+   "check": "Displayed 320 px wide (one sixth of full size), every word of the title on “Channel thumbnail - EVERYONE OFF THE PLATFORM” (thumbnail-everyone-off-the-platform.png) can still be read.",
+   "assertion": {
+    "op": "v2_legible_at",
+    "text": "EVERYONE OFF THE PLATFORM",
+    "width": 320
+   },
+   "how": "Shrinks the image to the stated width and checks OCR still reads every word."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-kitchen-gone/H032",
+   "output_id": "thumbnail-kitchen-gone",
+   "rule_id": "R120",
+   "k_id": "K5_Q1",
+   "critical": false,
+   "check": "Displayed 320 px wide (one sixth of full size), every word of the title on “Channel thumbnail - KITCHEN. GONE.” (thumbnail-kitchen-gone.png) can still be read.",
+   "assertion": {
+    "op": "v2_legible_at",
+    "text": "KITCHEN. GONE.",
+    "width": 320
+   },
+   "how": "Shrinks the image to the stated width and checks OCR still reads every word."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-do-not-open-that-door/H033",
+   "output_id": "thumbnail-do-not-open-that-door",
+   "rule_id": "R120",
+   "k_id": "K5_Q1",
+   "critical": false,
+   "check": "Displayed 320 px wide (one sixth of full size), every word of the title on “Channel thumbnail - DO NOT OPEN THAT DOOR” (thumbnail-do-not-open-that-door.png) can still be read.",
+   "assertion": {
+    "op": "v2_legible_at",
+    "text": "DO NOT OPEN THAT DOOR",
+    "width": 320
+   },
+   "how": "Shrinks the image to the stated width and checks OCR still reads every word."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas/H031",
+   "output_id": "thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas",
+   "rule_id": "R120",
+   "k_id": "K5_Q1",
+   "critical": false,
+   "check": "Displayed 320 px wide (one sixth of full size), every word of the title on “Channel thumbnail - WE SPENT SIX HOURS BUILDING A BRIDGE AND THEN DROVE STRAIGHT PAST IT” (thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas.png) can still be read.",
+   "assertion": {
+    "op": "v2_legible_at",
+    "text": "WE SPENT SIX HOURS BUILDING A BRIDGE AND THEN DROVE STRAIGHT PAST IT",
+    "width": 320
+   },
+   "how": "Shrinks the image to the stated width and checks OCR still reads every word."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi/H031",
+   "output_id": "thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi",
+   "rule_id": "R120",
+   "k_id": "K5_Q1",
+   "critical": false,
+   "check": "Displayed 320 px wide (one sixth of full size), every word of the title on “Channel thumbnail - I GAVE MY TEAM ONE SIMPLE JOB AND THEY SET THE ENTIRE BASE ON FIRE” (thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi.png) can still be read.",
+   "assertion": {
+    "op": "v2_legible_at",
+    "text": "I GAVE MY TEAM ONE SIMPLE JOB AND THEY SET THE ENTIRE BASE ON FIRE",
+    "width": 320
+   },
+   "how": "Shrinks the image to the stated width and checks OCR still reads every word."
+  },
+  {
+   "check_id": "MOTION-11/channel-teaser/H042",
+   "output_id": "channel-teaser",
+   "rule_id": "R121",
+   "k_id": "K5_Q1",
+   "critical": false,
+   "check": "If a title stack appears in “Channel feed teaser” (channel-teaser.mp4), it is the largest text on that frame.",
+   "assertion": {
+    "op": "v2_title_largest",
+    "titles": [
+     "STATIC FOX",
+     "WE BROKE THE MAP",
+     "EVERYONE OFF THE PLATFORM",
+     "KITCHEN. GONE.",
+     "DO NOT OPEN THAT DOOR",
+     "WE SPENT SIX HOURS BUILDING A BRIDGE AND THEN DROVE STRAIGHT PAST IT",
+     "I GAVE MY TEAM ONE SIMPLE JOB AND THEY SET THE ENTIRE BASE ON FIRE"
+    ]
+   },
+   "how": "Reads each held frame by OCR and compares the title's letter height with every other line."
+  },
+  {
+   "check_id": "MOTION-11/channel-teaser-vertical/H049",
+   "output_id": "channel-teaser-vertical",
+   "rule_id": "R121",
+   "k_id": "K5_Q1",
+   "critical": false,
+   "check": "If a title stack appears in “Channel feed teaser upright cutdown” (channel-teaser-vertical.mp4), it is the largest text on that frame.",
+   "assertion": {
+    "op": "v2_title_largest",
+    "titles": [
+     "STATIC FOX",
+     "WE BROKE THE MAP",
+     "EVERYONE OFF THE PLATFORM",
+     "KITCHEN. GONE.",
+     "DO NOT OPEN THAT DOOR",
+     "WE SPENT SIX HOURS BUILDING A BRIDGE AND THEN DROVE STRAIGHT PAST IT",
+     "I GAVE MY TEAM ONE SIMPLE JOB AND THEY SET THE ENTIRE BASE ON FIRE"
+    ]
+   },
+   "how": "Reads each held frame by OCR and compares the title's letter height with every other line."
+  },
+  {
+   "check_id": "MOTION-11/channel-teaser-vertical/H040",
+   "output_id": "channel-teaser-vertical",
+   "rule_id": "R129",
+   "k_id": "K5_Q2",
+   "critical": false,
+   "check": "If capture 01 is used in “Channel feed teaser upright cutdown” (channel-teaser-vertical.mp4), its upright reframe keeps the crowd of blocky monsters at the low block walls in frame.",
+   "assertion": {
+    "op": "v2_footage",
+    "mode": "not_used",
+    "capture": 1
+   },
+   "how": "Finds the footage in the film's frames and matches it to the supplied captures."
+  },
+  {
+   "check_id": "MOTION-11/channel-teaser-vertical/H041",
+   "output_id": "channel-teaser-vertical",
+   "rule_id": "R130",
+   "k_id": "K5_Q2",
+   "critical": false,
+   "check": "If capture 02 is used in “Channel feed teaser upright cutdown” (channel-teaser-vertical.mp4), its upright reframe keeps the jellybean characters over the pool of hot-pink slime in frame.",
+   "assertion": {
+    "op": "v2_footage",
+    "mode": "not_used",
+    "capture": 2
+   },
+   "how": "Finds the footage in the film's frames and matches it to the supplied captures."
+  },
+  {
+   "check_id": "MOTION-11/channel-teaser-vertical/H042",
+   "output_id": "channel-teaser-vertical",
+   "rule_id": "R131",
+   "k_id": "K5_Q2",
+   "critical": false,
+   "check": "If capture 03 is used in “Channel feed teaser upright cutdown” (channel-teaser-vertical.mp4), its upright reframe keeps the flames climbing a stove in frame.",
+   "assertion": {
+    "op": "v2_footage",
+    "mode": "not_used",
+    "capture": 3
+   },
+   "how": "Finds the footage in the film's frames and matches it to the supplied captures."
+  },
+  {
+   "check_id": "MOTION-11/channel-teaser-vertical/H043",
+   "output_id": "channel-teaser-vertical",
+   "rule_id": "R132",
+   "k_id": "K5_Q2",
+   "critical": false,
+   "check": "If capture 04 is used in “Channel feed teaser upright cutdown” (channel-teaser-vertical.mp4), its upright reframe keeps the pale gaunt monster lunging out of a half-open doorway in frame.",
+   "assertion": {
+    "op": "v2_footage",
+    "mode": "not_used",
+    "capture": 4
+   },
+   "how": "Finds the footage in the film's frames and matches it to the supplied captures."
+  },
+  {
+   "check_id": "MOTION-11/channel-teaser-vertical/H044",
+   "output_id": "channel-teaser-vertical",
+   "rule_id": "R133",
+   "k_id": "K5_Q2",
+   "critical": false,
+   "check": "If capture 05 is used in “Channel feed teaser upright cutdown” (channel-teaser-vertical.mp4), its upright reframe keeps the boxy cartoon car and the ragdoll driver in frame.",
+   "assertion": {
+    "op": "v2_footage",
+    "mode": "not_used",
+    "capture": 5
+   },
+   "how": "Finds the footage in the film's frames and matches it to the supplied captures."
+  },
+  {
+   "check_id": "MOTION-11/channel-teaser-vertical/H045",
+   "output_id": "channel-teaser-vertical",
+   "rule_id": "R134",
+   "k_id": "K5_Q2",
+   "critical": false,
+   "check": "If capture 06 is used in “Channel feed teaser upright cutdown” (channel-teaser-vertical.mp4), its upright reframe keeps the base engulfed in flames in frame.",
+   "assertion": {
+    "op": "v2_footage",
+    "mode": "not_used",
+    "capture": 6
+   },
+   "how": "Finds the footage in the film's frames and matches it to the supplied captures."
   }
  ]
 }

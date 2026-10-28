@@ -4046,8 +4046,10 @@
     "assets": [],
     "note": "Brief: the promoter deck presents the three directions; output register names them Type-led, Image-led and Graphic-led"
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Looks for the words in the PDF's text and, failing that, by OCR of its pages."
+   ],
    "rows": [
     {
      "check_id": "LAYOUT-12/promoter-deck/H002",
@@ -5352,10 +5354,8 @@
     ],
     "note": "Post commission: add the supplied production wordmark for Sable Quartet or Meridian Brass; brief: with the act name, not in place of it."
    },
-   "answered_by": "code",
-   "code_check": [
-    "Finds the supplied wordmark, then checks the act name is also typeset beside it."
-   ],
+   "answered_by": "person",
+   "code_check": [],
    "rows": [
     {
      "check_id": "LAYOUT-12/release-post-r002/H049",
@@ -6065,8 +6065,10 @@
    ],
    "slot_labels": {},
    "shared_reference": null,
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Checks each named text lies fully inside the page or image."
+   ],
    "rows": [
     {
      "check_id": "LAYOUT-12/release-post-r002/H017",
@@ -6403,8 +6405,10 @@
    ],
    "slot_labels": {},
    "shared_reference": null,
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+   ],
    "rows": [
     {
      "check_id": "LAYOUT-12/poster-direction-type-led/H007",
@@ -6882,8 +6886,10 @@
     ],
     "note": "Truth constraint: Do not invent names, prices, claims, product features, locations, credentials, records, or documentary events that are absent from the approved inputs. The brand identity is an approved input: \"Founded 2021\", \"Tickets 18 to 32 dollars\"."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads every figure in the PDF and looks for it in the supplied source files."
+   ],
    "rows": [
     {
      "check_id": "LAYOUT-12/promoter-deck/H006",
@@ -7149,8 +7155,10 @@
     ],
     "note": "Deck commission: a truthful numerical scale."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Finds the chart's bars in the PDF and compares their heights with the values."
+   ],
    "rows": [
     {
      "check_id": "LAYOUT-12/promoter-deck/H048",
@@ -7679,8 +7687,10 @@
     ],
     "note": "Asset plan: umbra_wordmark_nightferry.jpg is mislabelled; the shirt carries the SABLE QUARTET mark, so no Night Ferry wordmark exists. umbra_billing_autumn.txt: \"Credit: 'NIGHT FERRY' (two words).\""
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Finds the supplied lettering and reads which act name stands nearest to it."
+   ],
    "rows": [
     {
      "check_id": "LAYOUT-12/poster-direction-type-led/H017",
@@ -8110,8 +8120,10 @@
     ],
     "note": "Asset plan: umbra_wordmark_nightferry.jpg is mislabelled; the shirt carries the SABLE QUARTET mark, so no Night Ferry wordmark exists. umbra_billing_autumn.txt: \"Credit: 'NIGHT FERRY' (two words).\""
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Finds the supplied lettering and reads which act name stands nearest to it."
+   ],
    "rows": [
     {
      "check_id": "LAYOUT-12/promoter-deck/H011",
@@ -8452,8 +8464,10 @@
    ],
    "slot_labels": {},
    "shared_reference": null,
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Matches each photograph with its supplied frame and checks nothing is extended, added or removed."
+   ],
    "rows": [
     {
      "check_id": "LAYOUT-12/poster-direction-image-led/H026",
@@ -9412,8 +9426,10 @@
     ],
     "note": "Asset plan: umbra_sable_wordmark_transparent.png carries disjoint lettering on cloth, and a one-call knockout keeps only two or three letters; the SABLE QUARTET print in umbra_wordmark_nightferry.jpg is also disjoint cloth lettering."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Finds the supplied wordmark and checks every letter keeps its ink."
+   ],
    "rows": [
     {
      "check_id": "LAYOUT-12/poster-direction-type-led/H022",
@@ -9548,8 +9564,10 @@
     ],
     "note": "SABLE QUARTET lettering is photographed twice: stencil letters printed on a tote in umbra_sable_wordmark_transparent.png, and on a shirt in umbra_wordmark_nightferry.jpg, which the asset plan says carries the SABLE QUARTET mark. umbra_billing_autumn.txt: \"as agreed with the acts; credit exactly as written\""
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Finds the supplied picture and measures whether it was stretched."
+   ],
    "rows": [
     {
      "check_id": "LAYOUT-12/poster-direction-type-led/H023",
@@ -9684,8 +9702,10 @@
    ],
    "slot_labels": {},
    "shared_reference": null,
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Finds the supplied picture and measures whether it was stretched."
+   ],
    "rows": [
     {
      "check_id": "LAYOUT-12/poster-direction-type-led/H025",
@@ -9952,8 +9972,10 @@
     ],
     "note": "Asset plan: umbra_sable_wordmark_transparent.png carries disjoint lettering on cloth, and a one-call knockout keeps only two or three letters; the SABLE QUARTET print in umbra_wordmark_nightferry.jpg is also disjoint cloth lettering."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Finds the supplied wordmark and checks every letter keeps its ink."
+   ],
    "rows": [
     {
      "check_id": "LAYOUT-12/promoter-deck/H015",
@@ -10021,8 +10043,10 @@
     "2": "source image"
    },
    "shared_reference": null,
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Finds the supplied picture and measures whether it was stretched."
+   ],
    "rows": [
     {
      "check_id": "LAYOUT-12/promoter-deck/H016",
@@ -10176,8 +10200,10 @@
     "assets": [],
     "note": "Brief: We want a strong two-colour and grain treatment that actually lives in the images, not a collection of unrelated pictures behind matching text. Palette rules, photography: rendered in two palette colours with visible grain, never in full colour."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Checks the photograph's pixels lie between two palette colours."
+   ],
    "rows": [
     {
      "check_id": "LAYOUT-12/poster-direction-type-led/H029",
@@ -10386,8 +10412,10 @@
    ],
    "slot_labels": {},
    "shared_reference": null,
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Finds every flat area of one colour big enough to be a ground or panel (photographs and type left out) and reads its colour."
+   ],
    "rows": [
     {
      "check_id": "LAYOUT-12/poster-direction-type-led/H041",
@@ -10619,8 +10647,11 @@
    ],
    "slot_labels": {},
    "shared_reference": null,
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Finds every piece in the colour outside photographs and checks it is a hairline or divider.",
+    "Reads every shape drawn in the colour from the PDF in drawing order and sorts it into rules, keylines, chart marks and areas."
+   ],
    "rows": [
     {
      "check_id": "LAYOUT-12/poster-direction-type-led/H043",
@@ -10807,8 +10838,10 @@
    ],
    "slot_labels": {},
    "shared_reference": null,
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Checks the photograph's pixels lie between two palette colours."
+   ],
    "rows": [
     {
      "check_id": "LAYOUT-12/poster-direction-image-led/H003",
@@ -10977,8 +11010,10 @@
     "1": "headline"
    },
    "shared_reference": null,
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads each text line by OCR, then the colour of its letters and of the ground round it."
+   ],
    "rows": [
     {
      "check_id": "LAYOUT-12/release-post-r002/H026",
@@ -11144,8 +11179,10 @@
    ],
    "slot_labels": {},
    "shared_reference": null,
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads every flat colour outside photographs, transparent parts and capture footage, and checks each is a palette colour."
+   ],
    "rows": [
     {
      "check_id": "LAYOUT-12/release-post-r002/H030",
@@ -11475,8 +11512,10 @@
     "assets": [],
     "note": "Brief: We want a strong two-colour and grain treatment that actually lives in the images, not a collection of unrelated pictures behind matching text. Palette rules, photography: rendered in two palette colours with visible grain, never in full colour."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Checks the photograph's pixels lie between two palette colours."
+   ],
    "rows": [
     {
      "check_id": "LAYOUT-12/promoter-deck/H021",
@@ -11628,8 +11667,10 @@
     ],
     "note": "Palette rules, distribution: grounds and panels are Pitch or Ash and nothing else; every act name is Bone White on Pitch with its date line above it in Sodium; every other line of type, titles, headings, support, door, set, body, billing, table and fine-print lines included, is Bone White, and the advance price may be Sodium, as on umbra_seasoncard_autumn.pdf (Pitch card ground, Ash picture panel). Pitch and Ash are never type."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Finds every flat area of one colour big enough to be a ground or panel (photographs and type left out) and reads its colour."
+   ],
    "rows": [
     {
      "check_id": "LAYOUT-12/promoter-deck/H033",
@@ -11739,8 +11780,10 @@
     "assets": [],
     "note": "Palette rules, distribution: Cold Signal and Blood are accents for hairline rules, dividers and chart marks only, together no more than 5% of the designed, non-photographic area, never type, a ground or a panel; any palette colour may be one of the two colours of a photograph's treatment."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads every shape drawn in the colour from the PDF in drawing order and sorts it into rules, keylines, chart marks and areas."
+   ],
    "rows": [
     {
      "check_id": "LAYOUT-12/promoter-deck/H035",
@@ -11939,8 +11982,11 @@
     "assets": [],
     "note": "Brand identity, palette_rules.distribution: Cold Signal and Blood together no more than 5% of the designed, non-photographic area."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Measures the share of the designed area in the named colours.",
+    "Renders the PDF, leaves out the placed pictures and measures the share of the rest in the named colours."
+   ],
    "rows": [
     {
      "check_id": "LAYOUT-12/poster-direction-type-led/H048",
@@ -12135,8 +12181,11 @@
     ],
     "note": "Brand identity, palette_rules.distribution. Brief: recolour their ink to Bone White for Pitch grounds."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Finds the mark, then reads the colour of its ink and of the ground round it.",
+    "Finds the supplied wordmark and reads its ink and the ground around it."
+   ],
    "rows": [
     {
      "check_id": "LAYOUT-12/poster-direction-type-led/H052",
@@ -12247,8 +12296,11 @@
     ],
     "note": "Brand identity, palette_rules.distribution. Brief: recolour their ink to Bone White for Pitch grounds."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Finds the mark, then reads the colour of its ink and of the ground round it.",
+    "Finds the supplied wordmark and reads its ink and the ground around it."
+   ],
    "rows": [
     {
      "check_id": "LAYOUT-12/poster-direction-type-led/H054",
@@ -12354,8 +12406,11 @@
     "assets": [],
     "note": "Brand identity, palette: Pitch is the main ground of every poster, post and deck page; palette_rules.distribution: Pitch is the main ground."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Checks the PDF page is drawn as vectors (not mostly a placed picture), then reads its colours, rules or ground from the drawings.",
+    "Finds every flat area of one colour big enough to be a ground or panel (photographs and type left out) and reads its colour."
+   ],
    "rows": [
     {
      "check_id": "LAYOUT-12/poster-direction-type-led/H059",
@@ -12754,8 +12809,10 @@
     ],
     "note": "Brand identity, palette_rules.distribution."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Finds the supplied wordmark and reads its ink and the ground around it."
+   ],
    "rows": [
     {
      "check_id": "LAYOUT-12/promoter-deck/H052",
@@ -12811,8 +12868,10 @@
     "assets": [],
     "note": "Brand identity, palette_rules.distribution. Palette: Sodium is mandatory for every date line."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads each text line by OCR, then the colour of its letters and of the ground round it."
+   ],
    "rows": [
     {
      "check_id": "LAYOUT-12/release-post-r002/H036",
@@ -13115,8 +13174,10 @@
     "assets": [],
     "note": "Brand identity, palette_rules.photography: the nine release posts share one pair; brief: choose the pair and explain the choice in the deck."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the two colours of the photograph on this image and on the reference image."
+   ],
    "rows": [
     {
      "check_id": "LAYOUT-12/release-post-r003/H030",
@@ -13388,8 +13449,10 @@
     "assets": [],
     "note": "Brand identity, palette_rules.distribution: Pitch is the main ground and always the ground under an act block; every act name is Bone White on Pitch."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads each text line by OCR, then the colour of its letters and of the ground round it."
+   ],
    "rows": [
     {
      "check_id": "LAYOUT-12/release-post-r002/H053",
@@ -13558,8 +13621,11 @@
     "assets": [],
     "note": "Brand identity, palette_rules.distribution: supplied production act wordmarks are recoloured to Bone White on Pitch."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Finds the supplied mark and reads the colour round it.",
+    "Finds the supplied wordmark and reads its ink and the ground around it."
+   ],
    "rows": [
     {
      "check_id": "LAYOUT-12/poster-direction-type-led/H081",
@@ -13645,8 +13711,11 @@
     "assets": [],
     "note": "Brand identity, palette_rules.distribution: supplied production act wordmarks are recoloured to Bone White on Pitch."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Finds the supplied mark and reads the colour round it.",
+    "Finds the supplied wordmark and reads its ink and the ground around it."
+   ],
    "rows": [
     {
      "check_id": "LAYOUT-12/poster-direction-type-led/H082",
@@ -13782,8 +13851,10 @@
     "assets": [],
     "note": "Brand identity, palette_rules.distribution: supplied production act wordmarks are recoloured to Bone White on Pitch."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Finds the supplied wordmark and reads its ink and the ground around it."
+   ],
    "rows": [
     {
      "check_id": "LAYOUT-12/promoter-deck/H061",
@@ -13880,8 +13951,10 @@
     "assets": [],
     "note": "Type system step 03: Archivo Narrow Regular, tracking 0, max 65 characters."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the selected lines (live text where there is any) and counts their characters."
+   ],
    "rows": [
     {
      "check_id": "LAYOUT-12/poster-direction-type-led/H038",
@@ -13954,8 +14027,10 @@
     "assets": [],
     "note": "Type system step 03: Archivo Narrow Regular, tracking 0, max 65 characters."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the selected lines (live text where there is any) and counts their characters."
+   ],
    "rows": [
     {
      "check_id": "LAYOUT-12/promoter-deck/H029",
@@ -14123,8 +14198,10 @@
     ],
     "note": "Current brief and supplied assets. Exact font settings require authored-source or embedded-font evidence; do not infer them from a raster preview."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Sorts the PDF text into roles by size and reads the font of the selected lines."
+   ],
    "rows": [
     {
      "check_id": "LAYOUT-12/poster-direction-type-led/R13-supporting-billing-family",
@@ -14413,8 +14490,10 @@
     ],
     "note": "Current brief and supplied assets. Exact font settings require authored-source or embedded-font evidence; do not infer them from a raster preview."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Sorts the PDF text into roles by size and reads the font of the selected lines."
+   ],
    "rows": [
     {
      "check_id": "LAYOUT-12/promoter-deck/R13-supporting-billing-family",
@@ -14555,8 +14634,10 @@
     ],
     "note": "Current brief and supplied assets. Exact font settings require authored-source or embedded-font evidence; do not infer them from a raster preview."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads each named line by OCR, renders its own text in every brand font and weight and in common stand-in fonts, and compares the letter shapes and stroke thickness with the image; only a clear best match counts."
+   ],
    "rows": [
     {
      "check_id": "LAYOUT-12/release-post-r002/R13-act-name-text-family",
@@ -16094,8 +16175,10 @@
     "assets": [],
     "note": "Brand identity, type_system scale and rules. Step 03, maximum 65 characters."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the selected lines (live text where there is any) and counts their characters."
+   ],
    "rows": [
     {
      "check_id": "LAYOUT-12/release-post-r002/H045",
@@ -16893,8 +16976,10 @@
     "assets": [],
     "note": "Brand identity, type_system.scale step 01: Sora ExtraBold, -10 units, all caps."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the named text and checks it is set in capitals."
+   ],
    "rows": [
     {
      "check_id": "LAYOUT-12/poster-direction-type-led/H087",
@@ -17292,8 +17377,10 @@
     "assets": [],
     "note": "Brand identity, type_system.scale step 01: Sora ExtraBold, -10 units, all caps."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the named text and checks it is set in capitals."
+   ],
    "rows": [
     {
      "check_id": "LAYOUT-12/release-post-r002/H055",
@@ -17462,8 +17549,10 @@
     "assets": [],
     "note": "Brand identity, type_system.scale step 04: fine print, +30 units, all caps; SemiBold is reserved for door-time information."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the named text and checks it is set in capitals."
+   ],
    "rows": [
     {
      "check_id": "LAYOUT-12/release-post-r002/H056",
@@ -17614,8 +17703,10 @@
     "assets": [],
     "note": "Brand identity, type_system.scale step 02: date line, Sora ExtraBold, +20 units, all caps."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the named text and checks it is set in capitals."
+   ],
    "rows": [
     {
      "check_id": "LAYOUT-12/release-post-r002/H057",
@@ -17933,8 +18024,10 @@
    ],
    "slot_labels": {},
    "shared_reference": null,
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Fits each line's letter spacing from its letter positions in its best-matching font and compares the two lines."
+   ],
    "rows": [
     {
      "check_id": "LAYOUT-12/release-post-r002/H027",
@@ -18887,8 +18980,10 @@
     "assets": [],
     "note": "Type scale: step 04 fine print +30 tracking against step 03 body at 0."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Measures letter spacing from the PDF's glyph positions and compares it with the body text."
+   ],
    "rows": [
     {
      "check_id": "LAYOUT-12/promoter-deck/H040",
@@ -19848,8 +19943,10 @@
     ],
     "note": "umbra_meridian_wordmark_transparent.png: MERIDIAN BRASS knitted into the jacquard weave of a charcoal sweater in ochre yarn. umbra_billing_autumn.txt: \"as agreed with the acts; credit exactly as written\""
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Searches for the supplied wordmark and, if absent, reads whether the name was set again in another font."
+   ],
    "rows": [
     {
      "check_id": "LAYOUT-12/poster-direction-type-led/H024",
@@ -20148,8 +20245,10 @@
     ],
     "note": "Asset plan: a hard follow spot drove the vocalist's face and white shirt in umbra_archive_night_02.jpg, and the soloist's face and instrument in umbra_archive_night_05.jpg, to pure clipped white; a highlight-recovery move changes nothing. Truth constraint: use a weak asset honestly or reject it with a reason."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Finds the supplied photo, maps its clipped white areas into the deliverable and checks they stay flat."
+   ],
    "rows": [
     {
      "check_id": "LAYOUT-12/poster-direction-type-led/H030",
@@ -20904,8 +21003,10 @@
     ],
     "note": "umbra_meridian_wordmark_transparent.png: MERIDIAN BRASS knitted into the jacquard weave of a charcoal sweater in ochre yarn. umbra_billing_autumn.txt: \"as agreed with the acts; credit exactly as written\""
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Searches for the supplied wordmark and, if absent, reads whether the name was set again in another font."
+   ],
    "rows": [
     {
      "check_id": "LAYOUT-12/promoter-deck/H017",
@@ -21076,8 +21177,10 @@
     ],
     "note": "Asset plan: a hard follow spot drove the vocalist's face and white shirt in umbra_archive_night_02.jpg, and the soloist's face and instrument in umbra_archive_night_05.jpg, to pure clipped white; a highlight-recovery move changes nothing. Truth constraint: use a weak asset honestly or reject it with a reason."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Finds the supplied photo, maps its clipped white areas into the deliverable and checks they stay flat."
+   ],
    "rows": [
     {
      "check_id": "LAYOUT-12/promoter-deck/H023",
@@ -21138,8 +21241,10 @@
     ],
     "note": "Current brief and supplied assets. Exact font settings require authored-source or embedded-font evidence; do not infer them from a raster preview."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Searches for the supplied wordmark and, if absent, reads whether the name was set again in another font."
+   ],
    "rows": [
     {
      "check_id": "LAYOUT-12/poster-direction-type-led/R13-logo-sable",
@@ -21526,8 +21631,10 @@
     ],
     "note": "umbra_billing_autumn.txt: \"Three headline nights carry recovered act wordmarks and get the A2 poster directions:\" and \"Remaining nights (billed with type only, no recovered wordmark):\""
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Compares the text sizes (font size in PDFs, letter height on images), for each of the 3 named texts; all must pass."
+   ],
    "rows": [
     {
      "check_id": "LAYOUT-12/poster-direction-type-led/H005",

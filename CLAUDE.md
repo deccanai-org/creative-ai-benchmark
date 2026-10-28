@@ -39,6 +39,11 @@ image ops, Express, InDesign data merge, Fonts, Stock, Acrobat, Premiere-style v
   one handler per rule in `tools/pilot13_v2_automation/round2.py`); 418 more moved, so 1,167 of the 6,312 checks
   (299 rules) are answered by code. 218 checks (50 rules) have code but stay with people. Round-1 conversions are
   unchanged; made-file generators now also write a second broken set (`bad2`).
+- **Round 3 (2026-10-28)**: colour on images, the rules that needed a definition, and the measurable rules re-sorted
+  out of judgement (no AI vision model; handlers `tools/pilot13_v2_automation/round3*.py`, ops
+  `tools/auto_verifier/objective_ops_r3.py` + `ops_r3_*.py`, reference `OPS_REFERENCE.md`). 3,895 of the 6,312
+  checks (872 rules) are now answered by code; 1,201 (313 rules) have code but stay with people; each moved rule lists
+  the limits it decides by on `automation.html`. Made files gained a third broken set (`bad3`). Heavy runs go to a VM.
 
 ## Update 2026-10-22
 

@@ -462,6 +462,126 @@
    "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
   },
   {
+   "check_id": "PHOTO-24/watch-feature-r002/H014",
+   "output_id": "watch-feature-r002",
+   "rule_id": "R007",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "Any regulator initials on “Watch product-page feature - LC-25-0101” (watch-feature-r002.png) read exactly “J.M.”, as in lunara_register.csv, row 2.",
+   "assertion": {
+    "op": "v2_text_pb",
+    "if_any": "\\b[A-Z]\\.\\s?[A-Z]\\.",
+    "expected": [
+     "J.M."
+    ],
+    "forbidden": [
+     {
+      "regex": "\\b(?!J\\.\\s?M\\.)[A-Z]\\.\\s?[A-Z]\\."
+     }
+    ],
+    "photos": [
+     "lunara_pdp_meridian.jpg"
+    ]
+   },
+   "how": "Reads the type by OCR or from the PDF, leaving out lettering inside the supplied photos, and looks for the wording."
+  },
+  {
+   "check_id": "PHOTO-24/watch-feature-r003/H009",
+   "output_id": "watch-feature-r003",
+   "rule_id": "R007",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "Any regulator initials on “Watch product-page feature - LC-25-0102” (watch-feature-r003.png) read exactly “J.M.”, as in lunara_register.csv, row 3.",
+   "assertion": {
+    "op": "v2_text_pb",
+    "if_any": "\\b[A-Z]\\.\\s?[A-Z]\\.",
+    "expected": [
+     "J.M."
+    ],
+    "forbidden": [
+     {
+      "regex": "\\b(?!J\\.\\s?M\\.)[A-Z]\\.\\s?[A-Z]\\."
+     }
+    ],
+    "photos": [
+     "lunara_pdp_selene.jpg"
+    ]
+   },
+   "how": "Reads the type by OCR or from the PDF, leaving out lettering inside the supplied photos, and looks for the wording."
+  },
+  {
+   "check_id": "PHOTO-24/watch-feature-r004/H010",
+   "output_id": "watch-feature-r004",
+   "rule_id": "R007",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "Any regulator initials on “Watch product-page feature - LC-25-0103” (watch-feature-r004.png) read exactly “J.M.”, as in lunara_register.csv, row 4.",
+   "assertion": {
+    "op": "v2_text_pb",
+    "if_any": "\\b[A-Z]\\.\\s?[A-Z]\\.",
+    "expected": [
+     "J.M."
+    ],
+    "forbidden": [
+     {
+      "regex": "\\b(?!J\\.\\s?M\\.)[A-Z]\\.\\s?[A-Z]\\."
+     }
+    ],
+    "photos": [
+     "lunara_pdp_ardent.jpg"
+    ]
+   },
+   "how": "Reads the type by OCR or from the PDF, leaving out lettering inside the supplied photos, and looks for the wording."
+  },
+  {
+   "check_id": "PHOTO-24/watch-feature-r005/H009",
+   "output_id": "watch-feature-r005",
+   "rule_id": "R007",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "Any regulator initials on “Watch product-page feature - LC-25-0104” (watch-feature-r005.png) read exactly “J.M.”, as in lunara_register.csv, row 5.",
+   "assertion": {
+    "op": "v2_text_pb",
+    "if_any": "\\b[A-Z]\\.\\s?[A-Z]\\.",
+    "expected": [
+     "J.M."
+    ],
+    "forbidden": [
+     {
+      "regex": "\\b(?!J\\.\\s?M\\.)[A-Z]\\.\\s?[A-Z]\\."
+     }
+    ],
+    "photos": [
+     "lunara_pdp_halcyon.jpg"
+    ]
+   },
+   "how": "Reads the type by OCR or from the PDF, leaving out lettering inside the supplied photos, and looks for the wording."
+  },
+  {
+   "check_id": "PHOTO-24/watch-feature-r006/H009",
+   "output_id": "watch-feature-r006",
+   "rule_id": "R007",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "Any regulator initials on “Watch product-page feature - LC-25-0105” (watch-feature-r006.png) read exactly “J.M.”, as in lunara_register.csv, row 6.",
+   "assertion": {
+    "op": "v2_text_pb",
+    "if_any": "\\b[A-Z]\\.\\s?[A-Z]\\.",
+    "expected": [
+     "J.M."
+    ],
+    "forbidden": [
+     {
+      "regex": "\\b(?!J\\.\\s?M\\.)[A-Z]\\.\\s?[A-Z]\\."
+     }
+    ],
+    "photos": [
+     "lunara_pdp_vesper.jpg"
+    ]
+   },
+   "how": "Reads the type by OCR or from the PDF, leaving out lettering inside the supplied photos, and looks for the wording."
+  },
+  {
    "check_id": "PHOTO-24/watch-feature-r003/H010",
    "output_id": "watch-feature-r003",
    "rule_id": "R008",
@@ -719,6 +839,136 @@
    "how": "Reads where each value stands and checks the value that belongs to this name (by its section, column or line) is the expected one."
   },
   {
+   "check_id": "PHOTO-24/dealer-launch/H007",
+   "output_id": "dealer-launch",
+   "rule_id": "R013",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "“Watch dealer launch sheet” (dealer-launch.pdf) gives Meridian dial finish Silver sunburst, as lunara_register.csv row 2 does.",
+   "assertion": {
+    "op": "v2_paired",
+    "anchor": [
+     "Meridian"
+    ],
+    "rivals": [
+     "Selene",
+     "Ardent",
+     "Halcyon",
+     "Vesper"
+    ],
+    "kind": "^\\s*(?:silver sunburst|grained cream|lacquered oxblood|silver|deep blue sunray)\\s*$",
+    "value": {
+     "regex": "^\\s*Silver\\ sunburst\\s*$"
+    },
+    "where": "section"
+   },
+   "how": "Reads where each value stands and checks the value that belongs to this name (by its section, column or line) is the expected one."
+  },
+  {
+   "check_id": "PHOTO-24/dealer-launch/H011",
+   "output_id": "dealer-launch",
+   "rule_id": "R013",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "“Watch dealer launch sheet” (dealer-launch.pdf) gives Selene dial finish Grained cream, as lunara_register.csv row 3 does.",
+   "assertion": {
+    "op": "v2_paired",
+    "anchor": [
+     "Selene"
+    ],
+    "rivals": [
+     "Meridian",
+     "Ardent",
+     "Halcyon",
+     "Vesper"
+    ],
+    "kind": "^\\s*(?:silver sunburst|grained cream|lacquered oxblood|silver|deep blue sunray)\\s*$",
+    "value": {
+     "regex": "^\\s*Grained\\ cream\\s*$"
+    },
+    "where": "section"
+   },
+   "how": "Reads where each value stands and checks the value that belongs to this name (by its section, column or line) is the expected one."
+  },
+  {
+   "check_id": "PHOTO-24/dealer-launch/H015",
+   "output_id": "dealer-launch",
+   "rule_id": "R013",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "“Watch dealer launch sheet” (dealer-launch.pdf) gives Ardent dial finish Lacquered oxblood, as lunara_register.csv row 4 does.",
+   "assertion": {
+    "op": "v2_paired",
+    "anchor": [
+     "Ardent"
+    ],
+    "rivals": [
+     "Meridian",
+     "Selene",
+     "Halcyon",
+     "Vesper"
+    ],
+    "kind": "^\\s*(?:silver sunburst|grained cream|lacquered oxblood|silver|deep blue sunray)\\s*$",
+    "value": {
+     "regex": "^\\s*Lacquered\\ oxblood\\s*$"
+    },
+    "where": "section"
+   },
+   "how": "Reads where each value stands and checks the value that belongs to this name (by its section, column or line) is the expected one."
+  },
+  {
+   "check_id": "PHOTO-24/dealer-launch/H019",
+   "output_id": "dealer-launch",
+   "rule_id": "R013",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "“Watch dealer launch sheet” (dealer-launch.pdf) gives Halcyon dial finish Silver, as lunara_register.csv row 5 does.",
+   "assertion": {
+    "op": "v2_paired",
+    "anchor": [
+     "Halcyon"
+    ],
+    "rivals": [
+     "Meridian",
+     "Selene",
+     "Ardent",
+     "Vesper"
+    ],
+    "kind": "^\\s*(?:silver sunburst|grained cream|lacquered oxblood|silver|deep blue sunray)\\s*$",
+    "value": {
+     "regex": "^\\s*Silver\\s*$"
+    },
+    "where": "section"
+   },
+   "how": "Reads where each value stands and checks the value that belongs to this name (by its section, column or line) is the expected one."
+  },
+  {
+   "check_id": "PHOTO-24/dealer-launch/H023",
+   "output_id": "dealer-launch",
+   "rule_id": "R013",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "“Watch dealer launch sheet” (dealer-launch.pdf) gives Vesper dial finish Deep blue sunray, as lunara_register.csv row 6 does.",
+   "assertion": {
+    "op": "v2_paired",
+    "anchor": [
+     "Vesper"
+    ],
+    "rivals": [
+     "Meridian",
+     "Selene",
+     "Ardent",
+     "Halcyon"
+    ],
+    "kind": "^\\s*(?:silver sunburst|grained cream|lacquered oxblood|silver|deep blue sunray)\\s*$",
+    "value": {
+     "regex": "^\\s*Deep\\ blue\\ sunray\\s*$"
+    },
+    "where": "section"
+   },
+   "how": "Reads where each value stands and checks the value that belongs to this name (by its section, column or line) is the expected one."
+  },
+  {
    "check_id": "PHOTO-24/dealer-launch/H033",
    "output_id": "dealer-launch",
    "rule_id": "R014",
@@ -916,6 +1166,426 @@
     "scope_line": "\\bLM-03\\b"
    },
    "how": "Reads the text; where a description of this kind appears, checks it carries the right terms and no contradicting ones."
+  },
+  {
+   "check_id": "PHOTO-24/watch-feature-r002/H006",
+   "output_id": "watch-feature-r002",
+   "rule_id": "R020",
+   "k_id": "K1_Q2",
+   "critical": false,
+   "check": "Every line of type on “Watch product-page feature - LC-25-0101” (watch-feature-r002.png), the reference name and specification lines included, is fully visible, with no words cut off.",
+   "assertion": {
+    "op": "v2_inside_all",
+    "texts": [
+     "Meridian",
+     "LM-01",
+     "Steel",
+     "Silver sunburst"
+    ]
+   },
+   "how": "Checks each named text lies fully inside the page or image."
+  },
+  {
+   "check_id": "PHOTO-24/watch-feature-r003/H014",
+   "output_id": "watch-feature-r003",
+   "rule_id": "R020",
+   "k_id": "K1_Q2",
+   "critical": false,
+   "check": "Every line of type on “Watch product-page feature - LC-25-0102” (watch-feature-r003.png), the reference name and specification lines included, is fully visible, with no words cut off.",
+   "assertion": {
+    "op": "v2_inside_all",
+    "texts": [
+     "Selene",
+     "LM-02",
+     "Steel",
+     "Grained cream"
+    ]
+   },
+   "how": "Checks each named text lies fully inside the page or image."
+  },
+  {
+   "check_id": "PHOTO-24/watch-feature-r004/H015",
+   "output_id": "watch-feature-r004",
+   "rule_id": "R020",
+   "k_id": "K1_Q2",
+   "critical": false,
+   "check": "Every line of type on “Watch product-page feature - LC-25-0103” (watch-feature-r004.png), the reference name and specification lines included, is fully visible, with no words cut off.",
+   "assertion": {
+    "op": "v2_inside_all",
+    "texts": [
+     "Ardent",
+     "LM-01",
+     "Steel",
+     "Lacquered oxblood"
+    ]
+   },
+   "how": "Checks each named text lies fully inside the page or image."
+  },
+  {
+   "check_id": "PHOTO-24/watch-feature-r005/H014",
+   "output_id": "watch-feature-r005",
+   "rule_id": "R020",
+   "k_id": "K1_Q2",
+   "critical": false,
+   "check": "Every line of type on “Watch product-page feature - LC-25-0104” (watch-feature-r005.png), the reference name and specification lines included, is fully visible, with no words cut off.",
+   "assertion": {
+    "op": "v2_inside_all",
+    "texts": [
+     "Halcyon",
+     "LM-03",
+     "Steel",
+     "Silver"
+    ]
+   },
+   "how": "Checks each named text lies fully inside the page or image."
+  },
+  {
+   "check_id": "PHOTO-24/watch-feature-r006/H014",
+   "output_id": "watch-feature-r006",
+   "rule_id": "R020",
+   "k_id": "K1_Q2",
+   "critical": false,
+   "check": "Every line of type on “Watch product-page feature - LC-25-0105” (watch-feature-r006.png), the reference name and specification lines included, is fully visible, with no words cut off.",
+   "assertion": {
+    "op": "v2_inside_all",
+    "texts": [
+     "Vesper",
+     "LM-02",
+     "Steel",
+     "Deep blue sunray"
+    ]
+   },
+   "how": "Checks each named text lies fully inside the page or image."
+  },
+  {
+   "check_id": "PHOTO-24/watch-feature-r002/H019",
+   "output_id": "watch-feature-r002",
+   "rule_id": "R021",
+   "k_id": "K1_Q2",
+   "critical": false,
+   "check": "The dial colour on “Watch product-page feature - LC-25-0101” (watch-feature-r002.png) matches the dial in lunara_pdp_meridian.jpg, with no tonal treatment applied.",
+   "assertion": {
+    "op": "v2_photo_compare_pb",
+    "pass_if": [
+     [
+      "rgb_max",
+      "<=",
+      5
+     ]
+    ],
+    "fail_if": [
+     [
+      "rgb_median",
+      ">",
+      10
+     ]
+    ],
+    "photo": "lunara_pdp_meridian.jpg",
+    "region": "shown"
+   },
+   "how": "Lays the supplied photo over the placed one and compares them tile by tile: colour, detail and correlation."
+  },
+  {
+   "check_id": "PHOTO-24/watch-feature-r003/H019",
+   "output_id": "watch-feature-r003",
+   "rule_id": "R021",
+   "k_id": "K1_Q2",
+   "critical": false,
+   "check": "The dial colour on “Watch product-page feature - LC-25-0102” (watch-feature-r003.png) matches the dial in lunara_pdp_selene.jpg, with no tonal treatment applied.",
+   "assertion": {
+    "op": "v2_photo_compare_pb",
+    "pass_if": [
+     [
+      "rgb_max",
+      "<=",
+      5
+     ]
+    ],
+    "fail_if": [
+     [
+      "rgb_median",
+      ">",
+      10
+     ]
+    ],
+    "photo": "lunara_pdp_selene.jpg",
+    "region": "shown"
+   },
+   "how": "Lays the supplied photo over the placed one and compares them tile by tile: colour, detail and correlation."
+  },
+  {
+   "check_id": "PHOTO-24/watch-feature-r004/H006",
+   "output_id": "watch-feature-r004",
+   "rule_id": "R021",
+   "k_id": "K1_Q2",
+   "critical": false,
+   "check": "The dial colour on “Watch product-page feature - LC-25-0103” (watch-feature-r004.png) matches the dial in lunara_pdp_ardent.jpg, with no tonal treatment applied.",
+   "assertion": {
+    "op": "v2_photo_compare_pb",
+    "pass_if": [
+     [
+      "rgb_max",
+      "<=",
+      5
+     ]
+    ],
+    "fail_if": [
+     [
+      "rgb_median",
+      ">",
+      10
+     ]
+    ],
+    "photo": "lunara_pdp_ardent.jpg",
+    "region": "shown"
+   },
+   "how": "Lays the supplied photo over the placed one and compares them tile by tile: colour, detail and correlation."
+  },
+  {
+   "check_id": "PHOTO-24/watch-feature-r005/H019",
+   "output_id": "watch-feature-r005",
+   "rule_id": "R021",
+   "k_id": "K1_Q2",
+   "critical": false,
+   "check": "The dial colour on “Watch product-page feature - LC-25-0104” (watch-feature-r005.png) matches the dial in lunara_pdp_halcyon.jpg, with no tonal treatment applied.",
+   "assertion": {
+    "op": "v2_photo_compare_pb",
+    "pass_if": [
+     [
+      "rgb_max",
+      "<=",
+      5
+     ]
+    ],
+    "fail_if": [
+     [
+      "rgb_median",
+      ">",
+      10
+     ]
+    ],
+    "photo": "lunara_pdp_halcyon.jpg",
+    "region": "shown"
+   },
+   "how": "Lays the supplied photo over the placed one and compares them tile by tile: colour, detail and correlation."
+  },
+  {
+   "check_id": "PHOTO-24/watch-feature-r006/H019",
+   "output_id": "watch-feature-r006",
+   "rule_id": "R022",
+   "k_id": "K1_Q2",
+   "critical": false,
+   "check": "The dial colour on “Watch product-page feature - LC-25-0105” (watch-feature-r006.png) matches the deep blue sunray dial in lunara_pdp_vesper.jpg, true to colour, with no tonal treatment applied.",
+   "assertion": {
+    "op": "v2_photo_compare_pb",
+    "pass_if": [
+     [
+      "rgb_max",
+      "<=",
+      5
+     ]
+    ],
+    "fail_if": [
+     [
+      "rgb_median",
+      ">",
+      10
+     ]
+    ],
+    "photo": "lunara_pdp_vesper.jpg",
+    "region": "shown"
+   },
+   "how": "Lays the supplied photo over the placed one and compares them tile by tile: colour, detail and correlation."
+  },
+  {
+   "check_id": "PHOTO-24/dealer-launch/H026",
+   "output_id": "dealer-launch",
+   "rule_id": "R023",
+   "k_id": "K1_Q2",
+   "critical": false,
+   "check": "No watch photograph on “Watch dealer launch sheet” (dealer-launch.pdf) carries the campaign's warm single-tone treatment.",
+   "assertion": {
+    "op": "v2_pdf_photos_pb",
+    "photos": [
+     "lunara_campaign_01.jpg",
+     "lunara_campaign_02.jpg",
+     "lunara_campaign_03.jpg",
+     "lunara_campaign_04.jpg",
+     "lunara_campaign_05.jpg",
+     "lunara_campaign_06.jpg",
+     "lunara_campaign_07.jpg",
+     "lunara_campaign_08.jpg",
+     "lunara_campaign_09.jpg",
+     "lunara_detail_caseback.jpg",
+     "lunara_detail_clasp.jpg",
+     "lunara_detail_crown.jpg",
+     "lunara_detail_handstack.jpg",
+     "lunara_detail_lug.jpg",
+     "lunara_detail_movement.jpg",
+     "lunara_pdp_ardent.jpg",
+     "lunara_pdp_halcyon.jpg",
+     "lunara_pdp_meridian.jpg",
+     "lunara_pdp_selene.jpg",
+     "lunara_pdp_vesper.jpg"
+    ],
+    "region": "shown",
+    "pass_if": [
+     [
+      "rgb_max",
+      "<=",
+      5
+     ]
+    ],
+    "fail_if": [
+     [
+      "warm_single",
+      ">=",
+      1
+     ],
+     [
+      "src_warm_single",
+      "<=",
+      0
+     ]
+    ]
+   },
+   "how": "Reads every picture placed in the PDF, identifies its supplied photo and compares the colours tile by tile."
+  },
+  {
+   "check_id": "PHOTO-24/dealer-launch/H027",
+   "output_id": "dealer-launch",
+   "rule_id": "R024",
+   "k_id": "K1_Q2",
+   "critical": false,
+   "check": "The Vesper dial on “Watch dealer launch sheet” (dealer-launch.pdf) reads deep blue as in lunara_pdp_vesper.jpg, true to colour, not warmed or toned.",
+   "assertion": {
+    "op": "v2_pdf_photos_pb",
+    "photos": [
+     "lunara_campaign_01.jpg",
+     "lunara_campaign_02.jpg",
+     "lunara_campaign_03.jpg",
+     "lunara_campaign_04.jpg",
+     "lunara_campaign_05.jpg",
+     "lunara_campaign_06.jpg",
+     "lunara_campaign_07.jpg",
+     "lunara_campaign_08.jpg",
+     "lunara_campaign_09.jpg",
+     "lunara_detail_caseback.jpg",
+     "lunara_detail_clasp.jpg",
+     "lunara_detail_crown.jpg",
+     "lunara_detail_handstack.jpg",
+     "lunara_detail_lug.jpg",
+     "lunara_detail_movement.jpg",
+     "lunara_pdp_ardent.jpg",
+     "lunara_pdp_halcyon.jpg",
+     "lunara_pdp_meridian.jpg",
+     "lunara_pdp_selene.jpg",
+     "lunara_pdp_vesper.jpg"
+    ],
+    "only": [
+     "lunara_pdp_vesper.jpg"
+    ],
+    "region": "shown",
+    "pass_if": [
+     [
+      "rgb_max",
+      "<=",
+      5
+     ]
+    ],
+    "fail_if": [
+     [
+      "rgb_median",
+      ">",
+      10
+     ]
+    ]
+   },
+   "how": "Reads every picture placed in the PDF, identifies its supplied photo and compares the colours tile by tile."
+  },
+  {
+   "check_id": "PHOTO-24/dealer-launch/H028",
+   "output_id": "dealer-launch",
+   "rule_id": "R025",
+   "k_id": "K1_Q2",
+   "critical": false,
+   "check": "Every line of type on “Watch dealer launch sheet” (dealer-launch.pdf), the main heading, any wordmark and the timing line included, is fully visible, with no words cut off or overset.",
+   "assertion": {
+    "op": "v2_inside_all",
+    "texts": [
+     "Timed by hand and signed. This piece was regulated to the result above and released by the named regulator."
+    ],
+    "patterns": [
+     "."
+    ]
+   },
+   "how": "Checks each named text lies fully inside the page or image."
+  },
+  {
+   "check_id": "PHOTO-24/watch-keyvisual/H052",
+   "output_id": "watch-keyvisual",
+   "rule_id": "R026",
+   "k_id": "K1_Q2",
+   "critical": false,
+   "check": "Every line of type on “Autumn watch key visual” (watch-keyvisual.png), the wordmark and reference name included, is fully visible, with no words cut off.",
+   "assertion": {
+    "op": "v2_inside_all",
+    "texts": [
+     "LUNARA",
+     "CHRONOMETRY",
+     "MERIDIAN"
+    ]
+   },
+   "how": "Checks each named text lies fully inside the page or image."
+  },
+  {
+   "check_id": "PHOTO-24/dealer-launch/H093",
+   "output_id": "dealer-launch",
+   "rule_id": "R027",
+   "k_id": "K1_Q2",
+   "critical": false,
+   "check": "No watch photograph on “Watch dealer launch sheet” (dealer-launch.pdf) carries the campaign's added film grain.",
+   "assertion": {
+    "op": "v2_pdf_photos_pb",
+    "photos": [
+     "lunara_campaign_01.jpg",
+     "lunara_campaign_02.jpg",
+     "lunara_campaign_03.jpg",
+     "lunara_campaign_04.jpg",
+     "lunara_campaign_05.jpg",
+     "lunara_campaign_06.jpg",
+     "lunara_campaign_07.jpg",
+     "lunara_campaign_08.jpg",
+     "lunara_campaign_09.jpg",
+     "lunara_detail_caseback.jpg",
+     "lunara_detail_clasp.jpg",
+     "lunara_detail_crown.jpg",
+     "lunara_detail_handstack.jpg",
+     "lunara_detail_lug.jpg",
+     "lunara_detail_movement.jpg",
+     "lunara_pdp_ardent.jpg",
+     "lunara_pdp_halcyon.jpg",
+     "lunara_pdp_meridian.jpg",
+     "lunara_pdp_selene.jpg",
+     "lunara_pdp_vesper.jpg"
+    ],
+    "region": "shown",
+    "pass_if": [
+     [
+      "noise_ratio",
+      "<=",
+      1.3
+     ]
+    ],
+    "fail_if": [
+     [
+      "noise_ratio",
+      ">=",
+      2
+     ]
+    ]
+   },
+   "how": "Reads every picture placed in the PDF, identifies its supplied photo and compares the colours tile by tile."
   },
   {
    "check_id": "PHOTO-24/watch-feature-r002/H017",
@@ -1141,6 +1811,104 @@
    "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
   },
   {
+   "check_id": "PHOTO-24/dealer-launch/H010",
+   "output_id": "dealer-launch",
+   "rule_id": "R037",
+   "k_id": "K1_Q5",
+   "critical": true,
+   "check": "On “Watch dealer launch sheet” (dealer-launch.pdf), Selene is given one caliber only, LM-02, as in lunara_register.csv row 3.",
+   "assertion": {
+    "op": "v2_all_of",
+    "checks": [
+     {
+      "op": "v2_paired",
+      "anchor": [
+       "Selene"
+      ],
+      "rivals": [
+       "Meridian",
+       "Ardent",
+       "Halcyon",
+       "Vesper"
+      ],
+      "kind": "\\bLM-\\d{2}\\b",
+      "value": {
+       "regex": "\\bLM-02\\b"
+      },
+      "where": "section"
+     },
+     {
+      "op": "v2_paired",
+      "anchor": [
+       "Selene"
+      ],
+      "rivals": [
+       "Meridian",
+       "Ardent",
+       "Halcyon",
+       "Vesper"
+      ],
+      "kind": "\\bLM-\\d{2}\\b",
+      "value": {
+       "regex": "\\bLM-02\\b"
+      },
+      "where": "section",
+      "empty_ok": true
+     }
+    ]
+   },
+   "how": "Reads where each value stands and checks the value that belongs to this name (by its section, column or line) is the expected one, for each of the 2 named texts; all must pass."
+  },
+  {
+   "check_id": "PHOTO-24/dealer-launch/H018",
+   "output_id": "dealer-launch",
+   "rule_id": "R037",
+   "k_id": "K1_Q5",
+   "critical": true,
+   "check": "On “Watch dealer launch sheet” (dealer-launch.pdf), Halcyon is given one caliber only, LM-03, as in lunara_register.csv row 5.",
+   "assertion": {
+    "op": "v2_all_of",
+    "checks": [
+     {
+      "op": "v2_paired",
+      "anchor": [
+       "Halcyon"
+      ],
+      "rivals": [
+       "Meridian",
+       "Selene",
+       "Ardent",
+       "Vesper"
+      ],
+      "kind": "\\bLM-\\d{2}\\b",
+      "value": {
+       "regex": "\\bLM-03\\b"
+      },
+      "where": "section"
+     },
+     {
+      "op": "v2_paired",
+      "anchor": [
+       "Halcyon"
+      ],
+      "rivals": [
+       "Meridian",
+       "Selene",
+       "Ardent",
+       "Vesper"
+      ],
+      "kind": "\\bLM-\\d{2}\\b",
+      "value": {
+       "regex": "\\bLM-03\\b"
+      },
+      "where": "section",
+      "empty_ok": true
+     }
+    ]
+   },
+   "how": "Reads where each value stands and checks the value that belongs to this name (by its section, column or line) is the expected one, for each of the 2 named texts; all must pass."
+  },
+  {
    "check_id": "PHOTO-24/watch-feature-r002/H007",
    "output_id": "watch-feature-r002",
    "rule_id": "R038",
@@ -1336,6 +2104,1254 @@
    "how": "Searches the deliverable for the supplied file (feature matching, confirmed by correlation)."
   },
   {
+   "check_id": "PHOTO-24/watch-feature-r002/H021",
+   "output_id": "watch-feature-r002",
+   "rule_id": "R041",
+   "k_id": "K2_Q2",
+   "critical": false,
+   "check": "If the watch on “Watch product-page feature - LC-25-0101” (watch-feature-r002.png) is cut out of lunara_pdp_meridian.jpg, no grey sweep remains in the enclosed gaps between its bracelet links.",
+   "assertion": {
+    "op": "v2_photo_compare_pb",
+    "pass_if": [
+     [
+      "rgb_max",
+      "<=",
+      8
+     ]
+    ],
+    "fail_if": [],
+    "photo": "lunara_pdp_meridian.jpg",
+    "region": "shown"
+   },
+   "how": "Lays the supplied photo over the placed one and compares them tile by tile: colour, detail and correlation."
+  },
+  {
+   "check_id": "PHOTO-24/watch-feature-r003/H021",
+   "output_id": "watch-feature-r003",
+   "rule_id": "R041",
+   "k_id": "K2_Q2",
+   "critical": false,
+   "check": "If the watch on “Watch product-page feature - LC-25-0102” (watch-feature-r003.png) is cut out of lunara_pdp_selene.jpg, no grey sweep remains in the enclosed gaps between its bracelet links.",
+   "assertion": {
+    "op": "v2_photo_compare_pb",
+    "pass_if": [
+     [
+      "rgb_max",
+      "<=",
+      8
+     ]
+    ],
+    "fail_if": [],
+    "photo": "lunara_pdp_selene.jpg",
+    "region": "shown"
+   },
+   "how": "Lays the supplied photo over the placed one and compares them tile by tile: colour, detail and correlation."
+  },
+  {
+   "check_id": "PHOTO-24/watch-feature-r005/H021",
+   "output_id": "watch-feature-r005",
+   "rule_id": "R041",
+   "k_id": "K2_Q2",
+   "critical": false,
+   "check": "If the watch on “Watch product-page feature - LC-25-0104” (watch-feature-r005.png) is cut out of lunara_pdp_halcyon.jpg, no grey sweep remains in the enclosed gaps between its bracelet links.",
+   "assertion": {
+    "op": "v2_photo_compare_pb",
+    "pass_if": [
+     [
+      "rgb_max",
+      "<=",
+      8
+     ]
+    ],
+    "fail_if": [],
+    "photo": "lunara_pdp_halcyon.jpg",
+    "region": "shown"
+   },
+   "how": "Lays the supplied photo over the placed one and compares them tile by tile: colour, detail and correlation."
+  },
+  {
+   "check_id": "PHOTO-24/watch-feature-r002/H022",
+   "output_id": "watch-feature-r002",
+   "rule_id": "R042",
+   "k_id": "K2_Q2",
+   "critical": false,
+   "check": "If the watch on “Watch product-page feature - LC-25-0101” (watch-feature-r002.png) is cut out, its mirror-polished case flank is kept whole, not cut away with the grey sweep.",
+   "assertion": {
+    "op": "v2_photo_compare_pb",
+    "pass_if": [
+     [
+      "rgb_max",
+      "<=",
+      8
+     ]
+    ],
+    "fail_if": [],
+    "photo": "lunara_pdp_meridian.jpg",
+    "region": "shown"
+   },
+   "how": "Lays the supplied photo over the placed one and compares them tile by tile: colour, detail and correlation."
+  },
+  {
+   "check_id": "PHOTO-24/dealer-launch/H029",
+   "output_id": "dealer-launch",
+   "rule_id": "R043",
+   "k_id": "K2_Q2",
+   "critical": false,
+   "check": "If the Meridian from lunara_pdp_meridian.jpg is cut out on “Watch dealer launch sheet” (dealer-launch.pdf), no grey sweep remains in the enclosed gaps between its bracelet links.",
+   "assertion": {
+    "op": "v2_pdf_photos_pb",
+    "photos": [
+     "lunara_campaign_01.jpg",
+     "lunara_campaign_02.jpg",
+     "lunara_campaign_03.jpg",
+     "lunara_campaign_04.jpg",
+     "lunara_campaign_05.jpg",
+     "lunara_campaign_06.jpg",
+     "lunara_campaign_07.jpg",
+     "lunara_campaign_08.jpg",
+     "lunara_campaign_09.jpg",
+     "lunara_detail_caseback.jpg",
+     "lunara_detail_clasp.jpg",
+     "lunara_detail_crown.jpg",
+     "lunara_detail_handstack.jpg",
+     "lunara_detail_lug.jpg",
+     "lunara_detail_movement.jpg",
+     "lunara_pdp_ardent.jpg",
+     "lunara_pdp_halcyon.jpg",
+     "lunara_pdp_meridian.jpg",
+     "lunara_pdp_selene.jpg",
+     "lunara_pdp_vesper.jpg"
+    ],
+    "region": "shown",
+    "only": [
+     "lunara_pdp_meridian.jpg"
+    ],
+    "pass_if": [
+     [
+      "rgb_max",
+      "<=",
+      8
+     ],
+     [
+      "fills_image",
+      ">=",
+      0.98
+     ]
+    ]
+   },
+   "how": "Reads every picture placed in the PDF, identifies its supplied photo and compares the colours tile by tile."
+  },
+  {
+   "check_id": "PHOTO-24/dealer-launch/H030",
+   "output_id": "dealer-launch",
+   "rule_id": "R043",
+   "k_id": "K2_Q2",
+   "critical": false,
+   "check": "If the Selene from lunara_pdp_selene.jpg is cut out on “Watch dealer launch sheet” (dealer-launch.pdf), no grey sweep remains in the enclosed gaps between its bracelet links.",
+   "assertion": {
+    "op": "v2_pdf_photos_pb",
+    "photos": [
+     "lunara_campaign_01.jpg",
+     "lunara_campaign_02.jpg",
+     "lunara_campaign_03.jpg",
+     "lunara_campaign_04.jpg",
+     "lunara_campaign_05.jpg",
+     "lunara_campaign_06.jpg",
+     "lunara_campaign_07.jpg",
+     "lunara_campaign_08.jpg",
+     "lunara_campaign_09.jpg",
+     "lunara_detail_caseback.jpg",
+     "lunara_detail_clasp.jpg",
+     "lunara_detail_crown.jpg",
+     "lunara_detail_handstack.jpg",
+     "lunara_detail_lug.jpg",
+     "lunara_detail_movement.jpg",
+     "lunara_pdp_ardent.jpg",
+     "lunara_pdp_halcyon.jpg",
+     "lunara_pdp_meridian.jpg",
+     "lunara_pdp_selene.jpg",
+     "lunara_pdp_vesper.jpg"
+    ],
+    "region": "shown",
+    "only": [
+     "lunara_pdp_selene.jpg"
+    ],
+    "pass_if": [
+     [
+      "rgb_max",
+      "<=",
+      8
+     ],
+     [
+      "fills_image",
+      ">=",
+      0.98
+     ]
+    ]
+   },
+   "how": "Reads every picture placed in the PDF, identifies its supplied photo and compares the colours tile by tile."
+  },
+  {
+   "check_id": "PHOTO-24/dealer-launch/H031",
+   "output_id": "dealer-launch",
+   "rule_id": "R043",
+   "k_id": "K2_Q2",
+   "critical": false,
+   "check": "If the Halcyon from lunara_pdp_halcyon.jpg is cut out on “Watch dealer launch sheet” (dealer-launch.pdf), no grey sweep remains in the enclosed gaps between its bracelet links.",
+   "assertion": {
+    "op": "v2_pdf_photos_pb",
+    "photos": [
+     "lunara_campaign_01.jpg",
+     "lunara_campaign_02.jpg",
+     "lunara_campaign_03.jpg",
+     "lunara_campaign_04.jpg",
+     "lunara_campaign_05.jpg",
+     "lunara_campaign_06.jpg",
+     "lunara_campaign_07.jpg",
+     "lunara_campaign_08.jpg",
+     "lunara_campaign_09.jpg",
+     "lunara_detail_caseback.jpg",
+     "lunara_detail_clasp.jpg",
+     "lunara_detail_crown.jpg",
+     "lunara_detail_handstack.jpg",
+     "lunara_detail_lug.jpg",
+     "lunara_detail_movement.jpg",
+     "lunara_pdp_ardent.jpg",
+     "lunara_pdp_halcyon.jpg",
+     "lunara_pdp_meridian.jpg",
+     "lunara_pdp_selene.jpg",
+     "lunara_pdp_vesper.jpg"
+    ],
+    "region": "shown",
+    "only": [
+     "lunara_pdp_halcyon.jpg"
+    ],
+    "pass_if": [
+     [
+      "rgb_max",
+      "<=",
+      8
+     ],
+     [
+      "fills_image",
+      ">=",
+      0.98
+     ]
+    ]
+   },
+   "how": "Reads every picture placed in the PDF, identifies its supplied photo and compares the colours tile by tile."
+  },
+  {
+   "check_id": "PHOTO-24/dealer-launch/H032",
+   "output_id": "dealer-launch",
+   "rule_id": "R044",
+   "k_id": "K2_Q2",
+   "critical": false,
+   "check": "If the Meridian from lunara_pdp_meridian.jpg is cut out on “Watch dealer launch sheet” (dealer-launch.pdf), its mirror-polished case flank is kept whole, not cut away with the grey sweep it reflects.",
+   "assertion": {
+    "op": "v2_pdf_photos_pb",
+    "photos": [
+     "lunara_campaign_01.jpg",
+     "lunara_campaign_02.jpg",
+     "lunara_campaign_03.jpg",
+     "lunara_campaign_04.jpg",
+     "lunara_campaign_05.jpg",
+     "lunara_campaign_06.jpg",
+     "lunara_campaign_07.jpg",
+     "lunara_campaign_08.jpg",
+     "lunara_campaign_09.jpg",
+     "lunara_detail_caseback.jpg",
+     "lunara_detail_clasp.jpg",
+     "lunara_detail_crown.jpg",
+     "lunara_detail_handstack.jpg",
+     "lunara_detail_lug.jpg",
+     "lunara_detail_movement.jpg",
+     "lunara_pdp_ardent.jpg",
+     "lunara_pdp_halcyon.jpg",
+     "lunara_pdp_meridian.jpg",
+     "lunara_pdp_selene.jpg",
+     "lunara_pdp_vesper.jpg"
+    ],
+    "region": "shown",
+    "only": [
+     "lunara_pdp_meridian.jpg"
+    ],
+    "pass_if": [
+     [
+      "rgb_max",
+      "<=",
+      8
+     ],
+     [
+      "fills_image",
+      ">=",
+      0.98
+     ]
+    ]
+   },
+   "how": "Reads every picture placed in the PDF, identifies its supplied photo and compares the colours tile by tile."
+  },
+  {
+   "check_id": "PHOTO-24/watch-keyvisual/H022",
+   "output_id": "watch-keyvisual",
+   "rule_id": "R046",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The type, panel, rule and icon colours on “Autumn watch key visual” (watch-keyvisual.png) come only from #191512, #EDE6D6, #9A9EA3, #9C7A3C and #5A2A28.",
+   "assertion": {
+    "op": "v2_palette_raster",
+    "hexes": [
+     "#191512",
+     "#EDE6D6",
+     "#9A9EA3",
+     "#9C7A3C",
+     "#5A2A28"
+    ],
+    "photos": [
+     "lunara_campaign_01.jpg",
+     "lunara_campaign_02.jpg",
+     "lunara_campaign_03.jpg",
+     "lunara_campaign_04.jpg",
+     "lunara_campaign_05.jpg",
+     "lunara_campaign_06.jpg",
+     "lunara_campaign_07.jpg",
+     "lunara_campaign_08.jpg",
+     "lunara_campaign_09.jpg",
+     "lunara_detail_caseback.jpg",
+     "lunara_detail_clasp.jpg",
+     "lunara_detail_crown.jpg",
+     "lunara_detail_handstack.jpg",
+     "lunara_detail_lug.jpg",
+     "lunara_detail_movement.jpg",
+     "lunara_pdp_ardent.jpg",
+     "lunara_pdp_halcyon.jpg",
+     "lunara_pdp_meridian.jpg",
+     "lunara_pdp_selene.jpg",
+     "lunara_pdp_vesper.jpg"
+    ]
+   },
+   "how": "Reads every flat colour outside the photographs and checks each is a palette colour."
+  },
+  {
+   "check_id": "PHOTO-24/watch-feature-r002/H029",
+   "output_id": "watch-feature-r002",
+   "rule_id": "R046",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The type, panel, rule and icon colours on “Watch product-page feature - LC-25-0101” (watch-feature-r002.png) come only from #191512, #EDE6D6, #9A9EA3, #9C7A3C and #5A2A28.",
+   "assertion": {
+    "op": "v2_palette_raster",
+    "hexes": [
+     "#191512",
+     "#EDE6D6",
+     "#9A9EA3",
+     "#9C7A3C",
+     "#5A2A28"
+    ],
+    "photos": [
+     "lunara_pdp_meridian.jpg"
+    ]
+   },
+   "how": "Reads every flat colour outside the photographs and checks each is a palette colour."
+  },
+  {
+   "check_id": "PHOTO-24/watch-feature-r003/H028",
+   "output_id": "watch-feature-r003",
+   "rule_id": "R046",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The type, panel, rule and icon colours on “Watch product-page feature - LC-25-0102” (watch-feature-r003.png) come only from #191512, #EDE6D6, #9A9EA3, #9C7A3C and #5A2A28.",
+   "assertion": {
+    "op": "v2_palette_raster",
+    "hexes": [
+     "#191512",
+     "#EDE6D6",
+     "#9A9EA3",
+     "#9C7A3C",
+     "#5A2A28"
+    ],
+    "photos": [
+     "lunara_pdp_selene.jpg"
+    ]
+   },
+   "how": "Reads every flat colour outside the photographs and checks each is a palette colour."
+  },
+  {
+   "check_id": "PHOTO-24/watch-feature-r004/H027",
+   "output_id": "watch-feature-r004",
+   "rule_id": "R046",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The type, panel, rule and icon colours on “Watch product-page feature - LC-25-0103” (watch-feature-r004.png) come only from #191512, #EDE6D6, #9A9EA3, #9C7A3C and #5A2A28.",
+   "assertion": {
+    "op": "v2_palette_raster",
+    "hexes": [
+     "#191512",
+     "#EDE6D6",
+     "#9A9EA3",
+     "#9C7A3C",
+     "#5A2A28"
+    ],
+    "photos": [
+     "lunara_pdp_ardent.jpg"
+    ]
+   },
+   "how": "Reads every flat colour outside the photographs and checks each is a palette colour."
+  },
+  {
+   "check_id": "PHOTO-24/watch-feature-r005/H028",
+   "output_id": "watch-feature-r005",
+   "rule_id": "R046",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The type, panel, rule and icon colours on “Watch product-page feature - LC-25-0104” (watch-feature-r005.png) come only from #191512, #EDE6D6, #9A9EA3, #9C7A3C and #5A2A28.",
+   "assertion": {
+    "op": "v2_palette_raster",
+    "hexes": [
+     "#191512",
+     "#EDE6D6",
+     "#9A9EA3",
+     "#9C7A3C",
+     "#5A2A28"
+    ],
+    "photos": [
+     "lunara_pdp_halcyon.jpg"
+    ]
+   },
+   "how": "Reads every flat colour outside the photographs and checks each is a palette colour."
+  },
+  {
+   "check_id": "PHOTO-24/watch-feature-r006/H027",
+   "output_id": "watch-feature-r006",
+   "rule_id": "R046",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The type, panel, rule and icon colours on “Watch product-page feature - LC-25-0105” (watch-feature-r006.png) come only from #191512, #EDE6D6, #9A9EA3, #9C7A3C and #5A2A28.",
+   "assertion": {
+    "op": "v2_palette_raster",
+    "hexes": [
+     "#191512",
+     "#EDE6D6",
+     "#9A9EA3",
+     "#9C7A3C",
+     "#5A2A28"
+    ],
+    "photos": [
+     "lunara_pdp_vesper.jpg"
+    ]
+   },
+   "how": "Reads every flat colour outside the photographs and checks each is a palette colour."
+  },
+  {
+   "check_id": "PHOTO-24/watch-feature-r002/H030",
+   "output_id": "watch-feature-r002",
+   "rule_id": "R047",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Every designed ground and panel on “Watch product-page feature - LC-25-0101” (watch-feature-r002.png) is Bone cream #EDE6D6, Warm near-black #191512 or Oxblood #5A2A28.",
+   "assertion": {
+    "op": "v2_ground_raster",
+    "hexes": [
+     "#EDE6D6",
+     "#191512",
+     "#5A2A28"
+    ],
+    "photos": [
+     "lunara_pdp_meridian.jpg"
+    ]
+   },
+   "how": "Finds every ground and panel (flat areas outside the photographs) and reads its colour."
+  },
+  {
+   "check_id": "PHOTO-24/watch-feature-r003/H029",
+   "output_id": "watch-feature-r003",
+   "rule_id": "R047",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Every designed ground and panel on “Watch product-page feature - LC-25-0102” (watch-feature-r003.png) is Bone cream #EDE6D6, Warm near-black #191512 or Oxblood #5A2A28.",
+   "assertion": {
+    "op": "v2_ground_raster",
+    "hexes": [
+     "#EDE6D6",
+     "#191512",
+     "#5A2A28"
+    ],
+    "photos": [
+     "lunara_pdp_selene.jpg"
+    ]
+   },
+   "how": "Finds every ground and panel (flat areas outside the photographs) and reads its colour."
+  },
+  {
+   "check_id": "PHOTO-24/watch-feature-r004/H028",
+   "output_id": "watch-feature-r004",
+   "rule_id": "R047",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Every designed ground and panel on “Watch product-page feature - LC-25-0103” (watch-feature-r004.png) is Bone cream #EDE6D6, Warm near-black #191512 or Oxblood #5A2A28.",
+   "assertion": {
+    "op": "v2_ground_raster",
+    "hexes": [
+     "#EDE6D6",
+     "#191512",
+     "#5A2A28"
+    ],
+    "photos": [
+     "lunara_pdp_ardent.jpg"
+    ]
+   },
+   "how": "Finds every ground and panel (flat areas outside the photographs) and reads its colour."
+  },
+  {
+   "check_id": "PHOTO-24/watch-feature-r005/H029",
+   "output_id": "watch-feature-r005",
+   "rule_id": "R047",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Every designed ground and panel on “Watch product-page feature - LC-25-0104” (watch-feature-r005.png) is Bone cream #EDE6D6, Warm near-black #191512 or Oxblood #5A2A28.",
+   "assertion": {
+    "op": "v2_ground_raster",
+    "hexes": [
+     "#EDE6D6",
+     "#191512",
+     "#5A2A28"
+    ],
+    "photos": [
+     "lunara_pdp_halcyon.jpg"
+    ]
+   },
+   "how": "Finds every ground and panel (flat areas outside the photographs) and reads its colour."
+  },
+  {
+   "check_id": "PHOTO-24/watch-feature-r006/H028",
+   "output_id": "watch-feature-r006",
+   "rule_id": "R047",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Every designed ground and panel on “Watch product-page feature - LC-25-0105” (watch-feature-r006.png) is Bone cream #EDE6D6, Warm near-black #191512 or Oxblood #5A2A28.",
+   "assertion": {
+    "op": "v2_ground_raster",
+    "hexes": [
+     "#EDE6D6",
+     "#191512",
+     "#5A2A28"
+    ],
+    "photos": [
+     "lunara_pdp_vesper.jpg"
+    ]
+   },
+   "how": "Finds every ground and panel (flat areas outside the photographs) and reads its colour."
+  },
+  {
+   "check_id": "PHOTO-24/dealer-launch/H005",
+   "output_id": "dealer-launch",
+   "rule_id": "R047",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Every designed ground and panel on “Watch dealer launch sheet” (dealer-launch.pdf) is Bone cream #EDE6D6, Warm near-black #191512 or Oxblood #5A2A28.",
+   "assertion": {
+    "op": "v2_pdf_grounds_pb",
+    "only": [
+     "#EDE6D6",
+     "#191512",
+     "#5A2A28"
+    ]
+   },
+   "how": "Reads the page ground and the filled shapes drawn in the PDF: their colours, sizes and opacity."
+  },
+  {
+   "check_id": "PHOTO-24/watch-keyvisual/H024",
+   "output_id": "watch-keyvisual",
+   "rule_id": "R048",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Type on Bone cream #EDE6D6 on “Autumn watch key visual” (watch-keyvisual.png) is Warm near-black #191512, except small captions, footers and labels, which may be Tempered steel or Oxblood.",
+   "assertion": {
+    "op": "v2_type_ink_pb",
+    "grounds": [
+     "#EDE6D6"
+    ],
+    "colors": [
+     "#191512"
+    ],
+    "allow": [
+     {
+      "roles": [
+       "fine"
+      ],
+      "colors": [
+       "#191512",
+       "#9A9EA3",
+       "#5A2A28"
+      ]
+     },
+     {
+      "footer": true,
+      "colors": [
+       "#191512",
+       "#9A9EA3",
+       "#5A2A28"
+      ]
+     },
+     {
+      "roles": [
+       "other"
+      ],
+      "colors": [
+       "#191512",
+       "#9A9EA3",
+       "#5A2A28"
+      ],
+      "maybe": true
+     }
+    ],
+    "photos": [
+     "lunara_campaign_01.jpg",
+     "lunara_campaign_02.jpg",
+     "lunara_campaign_03.jpg",
+     "lunara_campaign_04.jpg",
+     "lunara_campaign_05.jpg",
+     "lunara_campaign_06.jpg",
+     "lunara_campaign_07.jpg",
+     "lunara_campaign_08.jpg",
+     "lunara_campaign_09.jpg",
+     "lunara_detail_caseback.jpg",
+     "lunara_detail_clasp.jpg",
+     "lunara_detail_crown.jpg",
+     "lunara_detail_handstack.jpg",
+     "lunara_detail_lug.jpg",
+     "lunara_detail_movement.jpg",
+     "lunara_pdp_ardent.jpg",
+     "lunara_pdp_halcyon.jpg",
+     "lunara_pdp_meridian.jpg",
+     "lunara_pdp_selene.jpg",
+     "lunara_pdp_vesper.jpg"
+    ]
+   },
+   "how": "Reads each text line (OCR on images, live text on PDFs), the colour of its letters and of the ground behind it, and checks the pairing."
+  },
+  {
+   "check_id": "PHOTO-24/watch-feature-r002/H031",
+   "output_id": "watch-feature-r002",
+   "rule_id": "R048",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Type on Bone cream #EDE6D6 on “Watch product-page feature - LC-25-0101” (watch-feature-r002.png) is Warm near-black #191512, except small captions, footers and labels, which may be Tempered steel or Oxblood.",
+   "assertion": {
+    "op": "v2_type_ink_pb",
+    "grounds": [
+     "#EDE6D6"
+    ],
+    "colors": [
+     "#191512"
+    ],
+    "allow": [
+     {
+      "roles": [
+       "fine"
+      ],
+      "colors": [
+       "#191512",
+       "#9A9EA3",
+       "#5A2A28"
+      ]
+     },
+     {
+      "footer": true,
+      "colors": [
+       "#191512",
+       "#9A9EA3",
+       "#5A2A28"
+      ]
+     },
+     {
+      "roles": [
+       "other"
+      ],
+      "colors": [
+       "#191512",
+       "#9A9EA3",
+       "#5A2A28"
+      ],
+      "maybe": true
+     }
+    ],
+    "photos": [
+     "lunara_pdp_meridian.jpg"
+    ]
+   },
+   "how": "Reads each text line (OCR on images, live text on PDFs), the colour of its letters and of the ground behind it, and checks the pairing."
+  },
+  {
+   "check_id": "PHOTO-24/watch-feature-r003/H030",
+   "output_id": "watch-feature-r003",
+   "rule_id": "R048",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Type on Bone cream #EDE6D6 on “Watch product-page feature - LC-25-0102” (watch-feature-r003.png) is Warm near-black #191512, except small captions, footers and labels, which may be Tempered steel or Oxblood.",
+   "assertion": {
+    "op": "v2_type_ink_pb",
+    "grounds": [
+     "#EDE6D6"
+    ],
+    "colors": [
+     "#191512"
+    ],
+    "allow": [
+     {
+      "roles": [
+       "fine"
+      ],
+      "colors": [
+       "#191512",
+       "#9A9EA3",
+       "#5A2A28"
+      ]
+     },
+     {
+      "footer": true,
+      "colors": [
+       "#191512",
+       "#9A9EA3",
+       "#5A2A28"
+      ]
+     },
+     {
+      "roles": [
+       "other"
+      ],
+      "colors": [
+       "#191512",
+       "#9A9EA3",
+       "#5A2A28"
+      ],
+      "maybe": true
+     }
+    ],
+    "photos": [
+     "lunara_pdp_selene.jpg"
+    ]
+   },
+   "how": "Reads each text line (OCR on images, live text on PDFs), the colour of its letters and of the ground behind it, and checks the pairing."
+  },
+  {
+   "check_id": "PHOTO-24/watch-feature-r004/H029",
+   "output_id": "watch-feature-r004",
+   "rule_id": "R048",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Type on Bone cream #EDE6D6 on “Watch product-page feature - LC-25-0103” (watch-feature-r004.png) is Warm near-black #191512, except small captions, footers and labels, which may be Tempered steel or Oxblood.",
+   "assertion": {
+    "op": "v2_type_ink_pb",
+    "grounds": [
+     "#EDE6D6"
+    ],
+    "colors": [
+     "#191512"
+    ],
+    "allow": [
+     {
+      "roles": [
+       "fine"
+      ],
+      "colors": [
+       "#191512",
+       "#9A9EA3",
+       "#5A2A28"
+      ]
+     },
+     {
+      "footer": true,
+      "colors": [
+       "#191512",
+       "#9A9EA3",
+       "#5A2A28"
+      ]
+     },
+     {
+      "roles": [
+       "other"
+      ],
+      "colors": [
+       "#191512",
+       "#9A9EA3",
+       "#5A2A28"
+      ],
+      "maybe": true
+     }
+    ],
+    "photos": [
+     "lunara_pdp_ardent.jpg"
+    ]
+   },
+   "how": "Reads each text line (OCR on images, live text on PDFs), the colour of its letters and of the ground behind it, and checks the pairing."
+  },
+  {
+   "check_id": "PHOTO-24/watch-feature-r005/H030",
+   "output_id": "watch-feature-r005",
+   "rule_id": "R048",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Type on Bone cream #EDE6D6 on “Watch product-page feature - LC-25-0104” (watch-feature-r005.png) is Warm near-black #191512, except small captions, footers and labels, which may be Tempered steel or Oxblood.",
+   "assertion": {
+    "op": "v2_type_ink_pb",
+    "grounds": [
+     "#EDE6D6"
+    ],
+    "colors": [
+     "#191512"
+    ],
+    "allow": [
+     {
+      "roles": [
+       "fine"
+      ],
+      "colors": [
+       "#191512",
+       "#9A9EA3",
+       "#5A2A28"
+      ]
+     },
+     {
+      "footer": true,
+      "colors": [
+       "#191512",
+       "#9A9EA3",
+       "#5A2A28"
+      ]
+     },
+     {
+      "roles": [
+       "other"
+      ],
+      "colors": [
+       "#191512",
+       "#9A9EA3",
+       "#5A2A28"
+      ],
+      "maybe": true
+     }
+    ],
+    "photos": [
+     "lunara_pdp_halcyon.jpg"
+    ]
+   },
+   "how": "Reads each text line (OCR on images, live text on PDFs), the colour of its letters and of the ground behind it, and checks the pairing."
+  },
+  {
+   "check_id": "PHOTO-24/watch-feature-r006/H029",
+   "output_id": "watch-feature-r006",
+   "rule_id": "R048",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Type on Bone cream #EDE6D6 on “Watch product-page feature - LC-25-0105” (watch-feature-r006.png) is Warm near-black #191512, except small captions, footers and labels, which may be Tempered steel or Oxblood.",
+   "assertion": {
+    "op": "v2_type_ink_pb",
+    "grounds": [
+     "#EDE6D6"
+    ],
+    "colors": [
+     "#191512"
+    ],
+    "allow": [
+     {
+      "roles": [
+       "fine"
+      ],
+      "colors": [
+       "#191512",
+       "#9A9EA3",
+       "#5A2A28"
+      ]
+     },
+     {
+      "footer": true,
+      "colors": [
+       "#191512",
+       "#9A9EA3",
+       "#5A2A28"
+      ]
+     },
+     {
+      "roles": [
+       "other"
+      ],
+      "colors": [
+       "#191512",
+       "#9A9EA3",
+       "#5A2A28"
+      ],
+      "maybe": true
+     }
+    ],
+    "photos": [
+     "lunara_pdp_vesper.jpg"
+    ]
+   },
+   "how": "Reads each text line (OCR on images, live text on PDFs), the colour of its letters and of the ground behind it, and checks the pairing."
+  },
+  {
+   "check_id": "PHOTO-24/dealer-launch/H045",
+   "output_id": "dealer-launch",
+   "rule_id": "R048",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Type on Bone cream #EDE6D6 on “Watch dealer launch sheet” (dealer-launch.pdf) is Warm near-black #191512, except small captions, footers and labels, which may be Tempered steel or Oxblood.",
+   "assertion": {
+    "op": "v2_type_ink_pb",
+    "grounds": [
+     "#EDE6D6"
+    ],
+    "colors": [
+     "#191512"
+    ],
+    "allow": [
+     {
+      "roles": [
+       "fine"
+      ],
+      "colors": [
+       "#191512",
+       "#9A9EA3",
+       "#5A2A28"
+      ]
+     },
+     {
+      "footer": true,
+      "colors": [
+       "#191512",
+       "#9A9EA3",
+       "#5A2A28"
+      ]
+     },
+     {
+      "roles": [
+       "other"
+      ],
+      "colors": [
+       "#191512",
+       "#9A9EA3",
+       "#5A2A28"
+      ],
+      "maybe": true
+     }
+    ]
+   },
+   "how": "Reads each text line (OCR on images, live text on PDFs), the colour of its letters and of the ground behind it, and checks the pairing."
+  },
+  {
+   "check_id": "PHOTO-24/watch-keyvisual/H025",
+   "output_id": "watch-keyvisual",
+   "rule_id": "R049",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "On “Autumn watch key visual” (watch-keyvisual.png), Aged brass #9C7A3C appears only as hairline rules or dividers, never as type, a ground or a panel.",
+   "assertion": {
+    "op": "v2_colour_only_as_pb",
+    "hexes": [
+     "#9C7A3C"
+    ],
+    "rules": "hairline",
+    "photos": [
+     "lunara_campaign_01.jpg",
+     "lunara_campaign_02.jpg",
+     "lunara_campaign_03.jpg",
+     "lunara_campaign_04.jpg",
+     "lunara_campaign_05.jpg",
+     "lunara_campaign_06.jpg",
+     "lunara_campaign_07.jpg",
+     "lunara_campaign_08.jpg",
+     "lunara_campaign_09.jpg",
+     "lunara_detail_caseback.jpg",
+     "lunara_detail_clasp.jpg",
+     "lunara_detail_crown.jpg",
+     "lunara_detail_handstack.jpg",
+     "lunara_detail_lug.jpg",
+     "lunara_detail_movement.jpg",
+     "lunara_pdp_ardent.jpg",
+     "lunara_pdp_halcyon.jpg",
+     "lunara_pdp_meridian.jpg",
+     "lunara_pdp_selene.jpg",
+     "lunara_pdp_vesper.jpg"
+    ]
+   },
+   "how": "Finds every piece in the colour outside the photographs and checks each is a thin rule or sits in an allowed text line."
+  },
+  {
+   "check_id": "PHOTO-24/watch-feature-r002/H032",
+   "output_id": "watch-feature-r002",
+   "rule_id": "R049",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "On “Watch product-page feature - LC-25-0101” (watch-feature-r002.png), Aged brass #9C7A3C appears only as hairline rules or dividers, never as type, a ground or a panel.",
+   "assertion": {
+    "op": "v2_colour_only_as_pb",
+    "hexes": [
+     "#9C7A3C"
+    ],
+    "rules": "hairline",
+    "photos": [
+     "lunara_pdp_meridian.jpg"
+    ]
+   },
+   "how": "Finds every piece in the colour outside the photographs and checks each is a thin rule or sits in an allowed text line."
+  },
+  {
+   "check_id": "PHOTO-24/watch-feature-r003/H031",
+   "output_id": "watch-feature-r003",
+   "rule_id": "R049",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "On “Watch product-page feature - LC-25-0102” (watch-feature-r003.png), Aged brass #9C7A3C appears only as hairline rules or dividers, never as type, a ground or a panel.",
+   "assertion": {
+    "op": "v2_colour_only_as_pb",
+    "hexes": [
+     "#9C7A3C"
+    ],
+    "rules": "hairline",
+    "photos": [
+     "lunara_pdp_selene.jpg"
+    ]
+   },
+   "how": "Finds every piece in the colour outside the photographs and checks each is a thin rule or sits in an allowed text line."
+  },
+  {
+   "check_id": "PHOTO-24/watch-feature-r004/H030",
+   "output_id": "watch-feature-r004",
+   "rule_id": "R049",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "On “Watch product-page feature - LC-25-0103” (watch-feature-r004.png), Aged brass #9C7A3C appears only as hairline rules or dividers, never as type, a ground or a panel.",
+   "assertion": {
+    "op": "v2_colour_only_as_pb",
+    "hexes": [
+     "#9C7A3C"
+    ],
+    "rules": "hairline",
+    "photos": [
+     "lunara_pdp_ardent.jpg"
+    ]
+   },
+   "how": "Finds every piece in the colour outside the photographs and checks each is a thin rule or sits in an allowed text line."
+  },
+  {
+   "check_id": "PHOTO-24/watch-feature-r005/H031",
+   "output_id": "watch-feature-r005",
+   "rule_id": "R049",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "On “Watch product-page feature - LC-25-0104” (watch-feature-r005.png), Aged brass #9C7A3C appears only as hairline rules or dividers, never as type, a ground or a panel.",
+   "assertion": {
+    "op": "v2_colour_only_as_pb",
+    "hexes": [
+     "#9C7A3C"
+    ],
+    "rules": "hairline",
+    "photos": [
+     "lunara_pdp_halcyon.jpg"
+    ]
+   },
+   "how": "Finds every piece in the colour outside the photographs and checks each is a thin rule or sits in an allowed text line."
+  },
+  {
+   "check_id": "PHOTO-24/watch-feature-r006/H030",
+   "output_id": "watch-feature-r006",
+   "rule_id": "R049",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "On “Watch product-page feature - LC-25-0105” (watch-feature-r006.png), Aged brass #9C7A3C appears only as hairline rules or dividers, never as type, a ground or a panel.",
+   "assertion": {
+    "op": "v2_colour_only_as_pb",
+    "hexes": [
+     "#9C7A3C"
+    ],
+    "rules": "hairline",
+    "photos": [
+     "lunara_pdp_vesper.jpg"
+    ]
+   },
+   "how": "Finds every piece in the colour outside the photographs and checks each is a thin rule or sits in an allowed text line."
+  },
+  {
+   "check_id": "PHOTO-24/dealer-launch/H046",
+   "output_id": "dealer-launch",
+   "rule_id": "R049",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "On “Watch dealer launch sheet” (dealer-launch.pdf), Aged brass #9C7A3C appears only as hairline rules or dividers, never as type, a ground or a panel.",
+   "assertion": {
+    "op": "v2_colour_only_as_pb",
+    "hexes": [
+     "#9C7A3C"
+    ],
+    "rules": "hairline"
+   },
+   "how": "Finds every piece in the colour outside the photographs and checks each is a thin rule or sits in an allowed text line."
+  },
+  {
+   "check_id": "PHOTO-24/watch-keyvisual/H026",
+   "output_id": "watch-keyvisual",
+   "rule_id": "R050",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Every type, panel and rule colour on “Autumn watch key visual” (watch-keyvisual.png) is solid at full opacity, with no tint or transparency.",
+   "assertion": {
+    "op": "v2_solid_raster_pb",
+    "hexes": [
+     "#191512",
+     "#EDE6D6",
+     "#9A9EA3",
+     "#9C7A3C",
+     "#5A2A28"
+    ],
+    "photos": [
+     "lunara_campaign_01.jpg",
+     "lunara_campaign_02.jpg",
+     "lunara_campaign_03.jpg",
+     "lunara_campaign_04.jpg",
+     "lunara_campaign_05.jpg",
+     "lunara_campaign_06.jpg",
+     "lunara_campaign_07.jpg",
+     "lunara_campaign_08.jpg",
+     "lunara_campaign_09.jpg",
+     "lunara_detail_caseback.jpg",
+     "lunara_detail_clasp.jpg",
+     "lunara_detail_crown.jpg",
+     "lunara_detail_handstack.jpg",
+     "lunara_detail_lug.jpg",
+     "lunara_detail_movement.jpg",
+     "lunara_pdp_ardent.jpg",
+     "lunara_pdp_halcyon.jpg",
+     "lunara_pdp_meridian.jpg",
+     "lunara_pdp_selene.jpg",
+     "lunara_pdp_vesper.jpg"
+    ]
+   },
+   "how": "Checks every flat designed colour is a palette colour, with no shaded area and no type over a photograph."
+  },
+  {
+   "check_id": "PHOTO-24/watch-feature-r002/H033",
+   "output_id": "watch-feature-r002",
+   "rule_id": "R050",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Every type, panel and rule colour on “Watch product-page feature - LC-25-0101” (watch-feature-r002.png) is solid at full opacity, with no tint or transparency.",
+   "assertion": {
+    "op": "v2_solid_raster_pb",
+    "hexes": [
+     "#191512",
+     "#EDE6D6",
+     "#9A9EA3",
+     "#9C7A3C",
+     "#5A2A28"
+    ],
+    "photos": [
+     "lunara_pdp_meridian.jpg"
+    ]
+   },
+   "how": "Checks every flat designed colour is a palette colour, with no shaded area and no type over a photograph."
+  },
+  {
+   "check_id": "PHOTO-24/watch-feature-r003/H032",
+   "output_id": "watch-feature-r003",
+   "rule_id": "R050",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Every type, panel and rule colour on “Watch product-page feature - LC-25-0102” (watch-feature-r003.png) is solid at full opacity, with no tint or transparency.",
+   "assertion": {
+    "op": "v2_solid_raster_pb",
+    "hexes": [
+     "#191512",
+     "#EDE6D6",
+     "#9A9EA3",
+     "#9C7A3C",
+     "#5A2A28"
+    ],
+    "photos": [
+     "lunara_pdp_selene.jpg"
+    ]
+   },
+   "how": "Checks every flat designed colour is a palette colour, with no shaded area and no type over a photograph."
+  },
+  {
+   "check_id": "PHOTO-24/watch-feature-r004/H031",
+   "output_id": "watch-feature-r004",
+   "rule_id": "R050",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Every type, panel and rule colour on “Watch product-page feature - LC-25-0103” (watch-feature-r004.png) is solid at full opacity, with no tint or transparency.",
+   "assertion": {
+    "op": "v2_solid_raster_pb",
+    "hexes": [
+     "#191512",
+     "#EDE6D6",
+     "#9A9EA3",
+     "#9C7A3C",
+     "#5A2A28"
+    ],
+    "photos": [
+     "lunara_pdp_ardent.jpg"
+    ]
+   },
+   "how": "Checks every flat designed colour is a palette colour, with no shaded area and no type over a photograph."
+  },
+  {
+   "check_id": "PHOTO-24/watch-feature-r005/H032",
+   "output_id": "watch-feature-r005",
+   "rule_id": "R050",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Every type, panel and rule colour on “Watch product-page feature - LC-25-0104” (watch-feature-r005.png) is solid at full opacity, with no tint or transparency.",
+   "assertion": {
+    "op": "v2_solid_raster_pb",
+    "hexes": [
+     "#191512",
+     "#EDE6D6",
+     "#9A9EA3",
+     "#9C7A3C",
+     "#5A2A28"
+    ],
+    "photos": [
+     "lunara_pdp_halcyon.jpg"
+    ]
+   },
+   "how": "Checks every flat designed colour is a palette colour, with no shaded area and no type over a photograph."
+  },
+  {
+   "check_id": "PHOTO-24/watch-feature-r006/H031",
+   "output_id": "watch-feature-r006",
+   "rule_id": "R050",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Every type, panel and rule colour on “Watch product-page feature - LC-25-0105” (watch-feature-r006.png) is solid at full opacity, with no tint or transparency.",
+   "assertion": {
+    "op": "v2_solid_raster_pb",
+    "hexes": [
+     "#191512",
+     "#EDE6D6",
+     "#9A9EA3",
+     "#9C7A3C",
+     "#5A2A28"
+    ],
+    "photos": [
+     "lunara_pdp_vesper.jpg"
+    ]
+   },
+   "how": "Checks every flat designed colour is a palette colour, with no shaded area and no type over a photograph."
+  },
+  {
+   "check_id": "PHOTO-24/dealer-launch/H047",
+   "output_id": "dealer-launch",
+   "rule_id": "R050",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Every type, panel and rule colour on “Watch dealer launch sheet” (dealer-launch.pdf) is solid at full opacity, with no tint or transparency.",
+   "assertion": {
+    "op": "v2_solid_pdf"
+   },
+   "how": "Reads the PDF for any transparency or gradient shading."
+  },
+  {
    "check_id": "PHOTO-24/dealer-launch/H044",
    "output_id": "dealer-launch",
    "rule_id": "R051",
@@ -1353,6 +3369,903 @@
     ]
    },
    "how": "Reads every type, shape and line colour from the file (photos excluded)."
+  },
+  {
+   "check_id": "PHOTO-24/watch-keyvisual/H023",
+   "output_id": "watch-keyvisual",
+   "rule_id": "R052",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Any designed panel on “Autumn watch key visual” (watch-keyvisual.png) is Bone cream #EDE6D6, Warm near-black #191512 or Oxblood #5A2A28.",
+   "assertion": {
+    "op": "v2_ground_raster",
+    "hexes": [
+     "#EDE6D6",
+     "#191512",
+     "#5A2A28"
+    ],
+    "panels_only": true,
+    "photos": [
+     "lunara_campaign_01.jpg",
+     "lunara_campaign_02.jpg",
+     "lunara_campaign_03.jpg",
+     "lunara_campaign_04.jpg",
+     "lunara_campaign_05.jpg",
+     "lunara_campaign_06.jpg",
+     "lunara_campaign_07.jpg",
+     "lunara_campaign_08.jpg",
+     "lunara_campaign_09.jpg",
+     "lunara_detail_caseback.jpg",
+     "lunara_detail_clasp.jpg",
+     "lunara_detail_crown.jpg",
+     "lunara_detail_handstack.jpg",
+     "lunara_detail_lug.jpg",
+     "lunara_detail_movement.jpg",
+     "lunara_pdp_ardent.jpg",
+     "lunara_pdp_halcyon.jpg",
+     "lunara_pdp_meridian.jpg",
+     "lunara_pdp_selene.jpg",
+     "lunara_pdp_vesper.jpg"
+    ]
+   },
+   "how": "Finds every ground and panel (flat areas outside the photographs) and reads its colour."
+  },
+  {
+   "check_id": "PHOTO-24/watch-keyvisual/H047",
+   "output_id": "watch-keyvisual",
+   "rule_id": "R053",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Any type on a Warm near-black #191512 or Oxblood #5A2A28 panel on “Autumn watch key visual” (watch-keyvisual.png) is Bone cream #EDE6D6.",
+   "assertion": {
+    "op": "v2_type_ink_pb",
+    "grounds": [
+     "#191512",
+     "#5A2A28"
+    ],
+    "colors": [
+     "#EDE6D6"
+    ],
+    "photos": [
+     "lunara_campaign_01.jpg",
+     "lunara_campaign_02.jpg",
+     "lunara_campaign_03.jpg",
+     "lunara_campaign_04.jpg",
+     "lunara_campaign_05.jpg",
+     "lunara_campaign_06.jpg",
+     "lunara_campaign_07.jpg",
+     "lunara_campaign_08.jpg",
+     "lunara_campaign_09.jpg",
+     "lunara_detail_caseback.jpg",
+     "lunara_detail_clasp.jpg",
+     "lunara_detail_crown.jpg",
+     "lunara_detail_handstack.jpg",
+     "lunara_detail_lug.jpg",
+     "lunara_detail_movement.jpg",
+     "lunara_pdp_ardent.jpg",
+     "lunara_pdp_halcyon.jpg",
+     "lunara_pdp_meridian.jpg",
+     "lunara_pdp_selene.jpg",
+     "lunara_pdp_vesper.jpg"
+    ]
+   },
+   "how": "Reads each text line (OCR on images, live text on PDFs), the colour of its letters and of the ground behind it, and checks the pairing."
+  },
+  {
+   "check_id": "PHOTO-24/watch-feature-r002/H054",
+   "output_id": "watch-feature-r002",
+   "rule_id": "R053",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Any type on a Warm near-black #191512 or Oxblood #5A2A28 panel on “Watch product-page feature - LC-25-0101” (watch-feature-r002.png) is Bone cream #EDE6D6.",
+   "assertion": {
+    "op": "v2_type_ink_pb",
+    "grounds": [
+     "#191512",
+     "#5A2A28"
+    ],
+    "colors": [
+     "#EDE6D6"
+    ],
+    "photos": [
+     "lunara_pdp_meridian.jpg"
+    ]
+   },
+   "how": "Reads each text line (OCR on images, live text on PDFs), the colour of its letters and of the ground behind it, and checks the pairing."
+  },
+  {
+   "check_id": "PHOTO-24/watch-feature-r003/H053",
+   "output_id": "watch-feature-r003",
+   "rule_id": "R053",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Any type on a Warm near-black #191512 or Oxblood #5A2A28 panel on “Watch product-page feature - LC-25-0102” (watch-feature-r003.png) is Bone cream #EDE6D6.",
+   "assertion": {
+    "op": "v2_type_ink_pb",
+    "grounds": [
+     "#191512",
+     "#5A2A28"
+    ],
+    "colors": [
+     "#EDE6D6"
+    ],
+    "photos": [
+     "lunara_pdp_selene.jpg"
+    ]
+   },
+   "how": "Reads each text line (OCR on images, live text on PDFs), the colour of its letters and of the ground behind it, and checks the pairing."
+  },
+  {
+   "check_id": "PHOTO-24/watch-feature-r004/H052",
+   "output_id": "watch-feature-r004",
+   "rule_id": "R053",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Any type on a Warm near-black #191512 or Oxblood #5A2A28 panel on “Watch product-page feature - LC-25-0103” (watch-feature-r004.png) is Bone cream #EDE6D6.",
+   "assertion": {
+    "op": "v2_type_ink_pb",
+    "grounds": [
+     "#191512",
+     "#5A2A28"
+    ],
+    "colors": [
+     "#EDE6D6"
+    ],
+    "photos": [
+     "lunara_pdp_ardent.jpg"
+    ]
+   },
+   "how": "Reads each text line (OCR on images, live text on PDFs), the colour of its letters and of the ground behind it, and checks the pairing."
+  },
+  {
+   "check_id": "PHOTO-24/watch-feature-r005/H053",
+   "output_id": "watch-feature-r005",
+   "rule_id": "R053",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Any type on a Warm near-black #191512 or Oxblood #5A2A28 panel on “Watch product-page feature - LC-25-0104” (watch-feature-r005.png) is Bone cream #EDE6D6.",
+   "assertion": {
+    "op": "v2_type_ink_pb",
+    "grounds": [
+     "#191512",
+     "#5A2A28"
+    ],
+    "colors": [
+     "#EDE6D6"
+    ],
+    "photos": [
+     "lunara_pdp_halcyon.jpg"
+    ]
+   },
+   "how": "Reads each text line (OCR on images, live text on PDFs), the colour of its letters and of the ground behind it, and checks the pairing."
+  },
+  {
+   "check_id": "PHOTO-24/watch-feature-r006/H052",
+   "output_id": "watch-feature-r006",
+   "rule_id": "R053",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Any type on a Warm near-black #191512 or Oxblood #5A2A28 panel on “Watch product-page feature - LC-25-0105” (watch-feature-r006.png) is Bone cream #EDE6D6.",
+   "assertion": {
+    "op": "v2_type_ink_pb",
+    "grounds": [
+     "#191512",
+     "#5A2A28"
+    ],
+    "colors": [
+     "#EDE6D6"
+    ],
+    "photos": [
+     "lunara_pdp_vesper.jpg"
+    ]
+   },
+   "how": "Reads each text line (OCR on images, live text on PDFs), the colour of its letters and of the ground behind it, and checks the pairing."
+  },
+  {
+   "check_id": "PHOTO-24/dealer-launch/H066",
+   "output_id": "dealer-launch",
+   "rule_id": "R053",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Any type on a Warm near-black #191512 or Oxblood #5A2A28 panel on “Watch dealer launch sheet” (dealer-launch.pdf) is Bone cream #EDE6D6.",
+   "assertion": {
+    "op": "v2_type_ink_pb",
+    "grounds": [
+     "#191512",
+     "#5A2A28"
+    ],
+    "colors": [
+     "#EDE6D6"
+    ]
+   },
+   "how": "Reads each text line (OCR on images, live text on PDFs), the colour of its letters and of the ground behind it, and checks the pairing."
+  },
+  {
+   "check_id": "PHOTO-24/watch-keyvisual/H048",
+   "output_id": "watch-keyvisual",
+   "rule_id": "R054",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Any type set directly on the photograph on “Autumn watch key visual” (watch-keyvisual.png) is Bone cream #EDE6D6 or Warm near-black #191512.",
+   "assertion": {
+    "op": "v2_type_ink_pb",
+    "grounds": [
+     "photo"
+    ],
+    "colors": [
+     "#EDE6D6",
+     "#191512"
+    ],
+    "photos": [
+     "lunara_campaign_01.jpg",
+     "lunara_campaign_02.jpg",
+     "lunara_campaign_03.jpg",
+     "lunara_campaign_04.jpg",
+     "lunara_campaign_05.jpg",
+     "lunara_campaign_06.jpg",
+     "lunara_campaign_07.jpg",
+     "lunara_campaign_08.jpg",
+     "lunara_campaign_09.jpg",
+     "lunara_detail_caseback.jpg",
+     "lunara_detail_clasp.jpg",
+     "lunara_detail_crown.jpg",
+     "lunara_detail_handstack.jpg",
+     "lunara_detail_lug.jpg",
+     "lunara_detail_movement.jpg",
+     "lunara_pdp_ardent.jpg",
+     "lunara_pdp_halcyon.jpg",
+     "lunara_pdp_meridian.jpg",
+     "lunara_pdp_selene.jpg",
+     "lunara_pdp_vesper.jpg"
+    ]
+   },
+   "how": "Reads each text line (OCR on images, live text on PDFs), the colour of its letters and of the ground behind it, and checks the pairing."
+  },
+  {
+   "check_id": "PHOTO-24/watch-feature-r002/H055",
+   "output_id": "watch-feature-r002",
+   "rule_id": "R054",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Any type set directly on the photograph on “Watch product-page feature - LC-25-0101” (watch-feature-r002.png) is Bone cream #EDE6D6 or Warm near-black #191512.",
+   "assertion": {
+    "op": "v2_type_ink_pb",
+    "grounds": [
+     "photo"
+    ],
+    "colors": [
+     "#EDE6D6",
+     "#191512"
+    ],
+    "photos": [
+     "lunara_pdp_meridian.jpg"
+    ]
+   },
+   "how": "Reads each text line (OCR on images, live text on PDFs), the colour of its letters and of the ground behind it, and checks the pairing."
+  },
+  {
+   "check_id": "PHOTO-24/watch-feature-r003/H054",
+   "output_id": "watch-feature-r003",
+   "rule_id": "R054",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Any type set directly on the photograph on “Watch product-page feature - LC-25-0102” (watch-feature-r003.png) is Bone cream #EDE6D6 or Warm near-black #191512.",
+   "assertion": {
+    "op": "v2_type_ink_pb",
+    "grounds": [
+     "photo"
+    ],
+    "colors": [
+     "#EDE6D6",
+     "#191512"
+    ],
+    "photos": [
+     "lunara_pdp_selene.jpg"
+    ]
+   },
+   "how": "Reads each text line (OCR on images, live text on PDFs), the colour of its letters and of the ground behind it, and checks the pairing."
+  },
+  {
+   "check_id": "PHOTO-24/watch-feature-r004/H053",
+   "output_id": "watch-feature-r004",
+   "rule_id": "R054",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Any type set directly on the photograph on “Watch product-page feature - LC-25-0103” (watch-feature-r004.png) is Bone cream #EDE6D6 or Warm near-black #191512.",
+   "assertion": {
+    "op": "v2_type_ink_pb",
+    "grounds": [
+     "photo"
+    ],
+    "colors": [
+     "#EDE6D6",
+     "#191512"
+    ],
+    "photos": [
+     "lunara_pdp_ardent.jpg"
+    ]
+   },
+   "how": "Reads each text line (OCR on images, live text on PDFs), the colour of its letters and of the ground behind it, and checks the pairing."
+  },
+  {
+   "check_id": "PHOTO-24/watch-feature-r005/H054",
+   "output_id": "watch-feature-r005",
+   "rule_id": "R054",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Any type set directly on the photograph on “Watch product-page feature - LC-25-0104” (watch-feature-r005.png) is Bone cream #EDE6D6 or Warm near-black #191512.",
+   "assertion": {
+    "op": "v2_type_ink_pb",
+    "grounds": [
+     "photo"
+    ],
+    "colors": [
+     "#EDE6D6",
+     "#191512"
+    ],
+    "photos": [
+     "lunara_pdp_halcyon.jpg"
+    ]
+   },
+   "how": "Reads each text line (OCR on images, live text on PDFs), the colour of its letters and of the ground behind it, and checks the pairing."
+  },
+  {
+   "check_id": "PHOTO-24/watch-feature-r006/H053",
+   "output_id": "watch-feature-r006",
+   "rule_id": "R054",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Any type set directly on the photograph on “Watch product-page feature - LC-25-0105” (watch-feature-r006.png) is Bone cream #EDE6D6 or Warm near-black #191512.",
+   "assertion": {
+    "op": "v2_type_ink_pb",
+    "grounds": [
+     "photo"
+    ],
+    "colors": [
+     "#EDE6D6",
+     "#191512"
+    ],
+    "photos": [
+     "lunara_pdp_vesper.jpg"
+    ]
+   },
+   "how": "Reads each text line (OCR on images, live text on PDFs), the colour of its letters and of the ground behind it, and checks the pairing."
+  },
+  {
+   "check_id": "PHOTO-24/watch-keyvisual/H049",
+   "output_id": "watch-keyvisual",
+   "rule_id": "R055",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "On “Autumn watch key visual” (watch-keyvisual.png), Tempered steel #9A9EA3 appears only in small captions, footer lines, labels or dividers, never as body text, a ground or a panel.",
+   "assertion": {
+    "op": "v2_colour_only_as_pb",
+    "hexes": [
+     "#9A9EA3"
+    ],
+    "rules": "thin",
+    "allow": [
+     {
+      "roles": [
+       "fine"
+      ]
+     },
+     {
+      "footer": true
+     }
+    ],
+    "ambiguous": [
+     {
+      "roles": [
+       "other"
+      ]
+     }
+    ],
+    "photos": [
+     "lunara_campaign_01.jpg",
+     "lunara_campaign_02.jpg",
+     "lunara_campaign_03.jpg",
+     "lunara_campaign_04.jpg",
+     "lunara_campaign_05.jpg",
+     "lunara_campaign_06.jpg",
+     "lunara_campaign_07.jpg",
+     "lunara_campaign_08.jpg",
+     "lunara_campaign_09.jpg",
+     "lunara_detail_caseback.jpg",
+     "lunara_detail_clasp.jpg",
+     "lunara_detail_crown.jpg",
+     "lunara_detail_handstack.jpg",
+     "lunara_detail_lug.jpg",
+     "lunara_detail_movement.jpg",
+     "lunara_pdp_ardent.jpg",
+     "lunara_pdp_halcyon.jpg",
+     "lunara_pdp_meridian.jpg",
+     "lunara_pdp_selene.jpg",
+     "lunara_pdp_vesper.jpg"
+    ]
+   },
+   "how": "Finds every piece in the colour outside the photographs and checks each is a thin rule or sits in an allowed text line."
+  },
+  {
+   "check_id": "PHOTO-24/watch-feature-r002/H056",
+   "output_id": "watch-feature-r002",
+   "rule_id": "R055",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "On “Watch product-page feature - LC-25-0101” (watch-feature-r002.png), Tempered steel #9A9EA3 appears only in small captions, footer lines, labels or dividers, never as body text, a ground or a panel.",
+   "assertion": {
+    "op": "v2_colour_only_as_pb",
+    "hexes": [
+     "#9A9EA3"
+    ],
+    "rules": "thin",
+    "allow": [
+     {
+      "roles": [
+       "fine"
+      ]
+     },
+     {
+      "footer": true
+     }
+    ],
+    "ambiguous": [
+     {
+      "roles": [
+       "other"
+      ]
+     }
+    ],
+    "photos": [
+     "lunara_pdp_meridian.jpg"
+    ]
+   },
+   "how": "Finds every piece in the colour outside the photographs and checks each is a thin rule or sits in an allowed text line."
+  },
+  {
+   "check_id": "PHOTO-24/watch-feature-r003/H055",
+   "output_id": "watch-feature-r003",
+   "rule_id": "R055",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "On “Watch product-page feature - LC-25-0102” (watch-feature-r003.png), Tempered steel #9A9EA3 appears only in small captions, footer lines, labels or dividers, never as body text, a ground or a panel.",
+   "assertion": {
+    "op": "v2_colour_only_as_pb",
+    "hexes": [
+     "#9A9EA3"
+    ],
+    "rules": "thin",
+    "allow": [
+     {
+      "roles": [
+       "fine"
+      ]
+     },
+     {
+      "footer": true
+     }
+    ],
+    "ambiguous": [
+     {
+      "roles": [
+       "other"
+      ]
+     }
+    ],
+    "photos": [
+     "lunara_pdp_selene.jpg"
+    ]
+   },
+   "how": "Finds every piece in the colour outside the photographs and checks each is a thin rule or sits in an allowed text line."
+  },
+  {
+   "check_id": "PHOTO-24/watch-feature-r004/H054",
+   "output_id": "watch-feature-r004",
+   "rule_id": "R055",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "On “Watch product-page feature - LC-25-0103” (watch-feature-r004.png), Tempered steel #9A9EA3 appears only in small captions, footer lines, labels or dividers, never as body text, a ground or a panel.",
+   "assertion": {
+    "op": "v2_colour_only_as_pb",
+    "hexes": [
+     "#9A9EA3"
+    ],
+    "rules": "thin",
+    "allow": [
+     {
+      "roles": [
+       "fine"
+      ]
+     },
+     {
+      "footer": true
+     }
+    ],
+    "ambiguous": [
+     {
+      "roles": [
+       "other"
+      ]
+     }
+    ],
+    "photos": [
+     "lunara_pdp_ardent.jpg"
+    ]
+   },
+   "how": "Finds every piece in the colour outside the photographs and checks each is a thin rule or sits in an allowed text line."
+  },
+  {
+   "check_id": "PHOTO-24/watch-feature-r005/H055",
+   "output_id": "watch-feature-r005",
+   "rule_id": "R055",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "On “Watch product-page feature - LC-25-0104” (watch-feature-r005.png), Tempered steel #9A9EA3 appears only in small captions, footer lines, labels or dividers, never as body text, a ground or a panel.",
+   "assertion": {
+    "op": "v2_colour_only_as_pb",
+    "hexes": [
+     "#9A9EA3"
+    ],
+    "rules": "thin",
+    "allow": [
+     {
+      "roles": [
+       "fine"
+      ]
+     },
+     {
+      "footer": true
+     }
+    ],
+    "ambiguous": [
+     {
+      "roles": [
+       "other"
+      ]
+     }
+    ],
+    "photos": [
+     "lunara_pdp_halcyon.jpg"
+    ]
+   },
+   "how": "Finds every piece in the colour outside the photographs and checks each is a thin rule or sits in an allowed text line."
+  },
+  {
+   "check_id": "PHOTO-24/watch-feature-r006/H054",
+   "output_id": "watch-feature-r006",
+   "rule_id": "R055",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "On “Watch product-page feature - LC-25-0105” (watch-feature-r006.png), Tempered steel #9A9EA3 appears only in small captions, footer lines, labels or dividers, never as body text, a ground or a panel.",
+   "assertion": {
+    "op": "v2_colour_only_as_pb",
+    "hexes": [
+     "#9A9EA3"
+    ],
+    "rules": "thin",
+    "allow": [
+     {
+      "roles": [
+       "fine"
+      ]
+     },
+     {
+      "footer": true
+     }
+    ],
+    "ambiguous": [
+     {
+      "roles": [
+       "other"
+      ]
+     }
+    ],
+    "photos": [
+     "lunara_pdp_vesper.jpg"
+    ]
+   },
+   "how": "Finds every piece in the colour outside the photographs and checks each is a thin rule or sits in an allowed text line."
+  },
+  {
+   "check_id": "PHOTO-24/dealer-launch/H068",
+   "output_id": "dealer-launch",
+   "rule_id": "R055",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "On “Watch dealer launch sheet” (dealer-launch.pdf), Tempered steel #9A9EA3 appears only in small captions, footer lines, labels or dividers, never as body text, a ground or a panel.",
+   "assertion": {
+    "op": "v2_colour_only_as_pb",
+    "hexes": [
+     "#9A9EA3"
+    ],
+    "rules": "thin",
+    "allow": [
+     {
+      "roles": [
+       "fine"
+      ]
+     },
+     {
+      "footer": true
+     }
+    ],
+    "ambiguous": [
+     {
+      "roles": [
+       "other"
+      ]
+     }
+    ]
+   },
+   "how": "Finds every piece in the colour outside the photographs and checks each is a thin rule or sits in an allowed text line."
+  },
+  {
+   "check_id": "PHOTO-24/watch-feature-r002/H057",
+   "output_id": "watch-feature-r002",
+   "rule_id": "R056",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "No scrim, gradient or overlay of any colour, black or white included, is laid over the photograph on “Watch product-page feature - LC-25-0101” (watch-feature-r002.png).",
+   "assertion": {
+    "op": "v2_any_of",
+    "checks": [
+     {
+      "op": "v2_no_overlay",
+      "photo": "lunara_pdp_meridian.jpg"
+     },
+     {
+      "op": "v2_photo_compare_pb",
+      "photo": "lunara_pdp_meridian.jpg",
+      "region": "own",
+      "min_tiles": 0,
+      "pass_if": [
+       [
+        "gain_min",
+        ">=",
+        0.92
+       ],
+       [
+        "drift",
+        "<=",
+        10
+       ]
+      ],
+      "fail_if": [
+       [
+        "gain_min",
+        "<=",
+        0.7
+       ],
+       [
+        "drift",
+        "<=",
+        12
+       ]
+      ]
+     }
+    ]
+   },
+   "how": "Either route can answer: compares the photo with the supplied file (images) or reads the shapes drawn over it (PDFs) for a scrim, gradient or tint; or: lays the supplied photo over the placed one and compares them tile by tile: colour, detail and correlation. One must pass and none may fail."
+  },
+  {
+   "check_id": "PHOTO-24/watch-feature-r003/H056",
+   "output_id": "watch-feature-r003",
+   "rule_id": "R056",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "No scrim, gradient or overlay of any colour, black or white included, is laid over the photograph on “Watch product-page feature - LC-25-0102” (watch-feature-r003.png).",
+   "assertion": {
+    "op": "v2_any_of",
+    "checks": [
+     {
+      "op": "v2_no_overlay",
+      "photo": "lunara_pdp_selene.jpg"
+     },
+     {
+      "op": "v2_photo_compare_pb",
+      "photo": "lunara_pdp_selene.jpg",
+      "region": "own",
+      "min_tiles": 0,
+      "pass_if": [
+       [
+        "gain_min",
+        ">=",
+        0.92
+       ],
+       [
+        "drift",
+        "<=",
+        10
+       ]
+      ],
+      "fail_if": [
+       [
+        "gain_min",
+        "<=",
+        0.7
+       ],
+       [
+        "drift",
+        "<=",
+        12
+       ]
+      ]
+     }
+    ]
+   },
+   "how": "Either route can answer: compares the photo with the supplied file (images) or reads the shapes drawn over it (PDFs) for a scrim, gradient or tint; or: lays the supplied photo over the placed one and compares them tile by tile: colour, detail and correlation. One must pass and none may fail."
+  },
+  {
+   "check_id": "PHOTO-24/watch-feature-r004/H055",
+   "output_id": "watch-feature-r004",
+   "rule_id": "R056",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "No scrim, gradient or overlay of any colour, black or white included, is laid over the photograph on “Watch product-page feature - LC-25-0103” (watch-feature-r004.png).",
+   "assertion": {
+    "op": "v2_any_of",
+    "checks": [
+     {
+      "op": "v2_no_overlay",
+      "photo": "lunara_pdp_ardent.jpg"
+     },
+     {
+      "op": "v2_photo_compare_pb",
+      "photo": "lunara_pdp_ardent.jpg",
+      "region": "own",
+      "min_tiles": 0,
+      "pass_if": [
+       [
+        "gain_min",
+        ">=",
+        0.92
+       ],
+       [
+        "drift",
+        "<=",
+        10
+       ]
+      ],
+      "fail_if": [
+       [
+        "gain_min",
+        "<=",
+        0.7
+       ],
+       [
+        "drift",
+        "<=",
+        12
+       ]
+      ]
+     }
+    ]
+   },
+   "how": "Either route can answer: compares the photo with the supplied file (images) or reads the shapes drawn over it (PDFs) for a scrim, gradient or tint; or: lays the supplied photo over the placed one and compares them tile by tile: colour, detail and correlation. One must pass and none may fail."
+  },
+  {
+   "check_id": "PHOTO-24/watch-feature-r005/H056",
+   "output_id": "watch-feature-r005",
+   "rule_id": "R056",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "No scrim, gradient or overlay of any colour, black or white included, is laid over the photograph on “Watch product-page feature - LC-25-0104” (watch-feature-r005.png).",
+   "assertion": {
+    "op": "v2_any_of",
+    "checks": [
+     {
+      "op": "v2_no_overlay",
+      "photo": "lunara_pdp_halcyon.jpg"
+     },
+     {
+      "op": "v2_photo_compare_pb",
+      "photo": "lunara_pdp_halcyon.jpg",
+      "region": "own",
+      "min_tiles": 0,
+      "pass_if": [
+       [
+        "gain_min",
+        ">=",
+        0.92
+       ],
+       [
+        "drift",
+        "<=",
+        10
+       ]
+      ],
+      "fail_if": [
+       [
+        "gain_min",
+        "<=",
+        0.7
+       ],
+       [
+        "drift",
+        "<=",
+        12
+       ]
+      ]
+     }
+    ]
+   },
+   "how": "Either route can answer: compares the photo with the supplied file (images) or reads the shapes drawn over it (PDFs) for a scrim, gradient or tint; or: lays the supplied photo over the placed one and compares them tile by tile: colour, detail and correlation. One must pass and none may fail."
+  },
+  {
+   "check_id": "PHOTO-24/watch-feature-r006/H055",
+   "output_id": "watch-feature-r006",
+   "rule_id": "R056",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "No scrim, gradient or overlay of any colour, black or white included, is laid over the photograph on “Watch product-page feature - LC-25-0105” (watch-feature-r006.png).",
+   "assertion": {
+    "op": "v2_any_of",
+    "checks": [
+     {
+      "op": "v2_no_overlay",
+      "photo": "lunara_pdp_vesper.jpg"
+     },
+     {
+      "op": "v2_photo_compare_pb",
+      "photo": "lunara_pdp_vesper.jpg",
+      "region": "own",
+      "min_tiles": 0,
+      "pass_if": [
+       [
+        "gain_min",
+        ">=",
+        0.92
+       ],
+       [
+        "drift",
+        "<=",
+        10
+       ]
+      ],
+      "fail_if": [
+       [
+        "gain_min",
+        "<=",
+        0.7
+       ],
+       [
+        "drift",
+        "<=",
+        12
+       ]
+      ]
+     }
+    ]
+   },
+   "how": "Either route can answer: compares the photo with the supplied file (images) or reads the shapes drawn over it (PDFs) for a scrim, gradient or tint; or: lays the supplied photo over the placed one and compares them tile by tile: colour, detail and correlation. One must pass and none may fail."
+  },
+  {
+   "check_id": "PHOTO-24/watch-feature-r004/H056",
+   "output_id": "watch-feature-r004",
+   "rule_id": "R057",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The strap on “Watch product-page feature - LC-25-0103” (watch-feature-r004.png) matches the strap colour in lunara_pdp_ardent.jpg, with no recolouring.",
+   "assertion": {
+    "op": "v2_photo_compare_pb",
+    "pass_if": [
+     [
+      "rgb_max",
+      "<=",
+      5
+     ]
+    ],
+    "fail_if": [
+     [
+      "rgb_median",
+      ">",
+      10
+     ]
+    ],
+    "photo": "lunara_pdp_ardent.jpg",
+    "region": "shown"
+   },
+   "how": "Lays the supplied photo over the placed one and compares them tile by tile: colour, detail and correlation."
   },
   {
    "check_id": "PHOTO-24/dealer-launch/H067",
@@ -1375,6 +4288,826 @@
    "how": "Reads each line's colour from the PDF and the colour behind it from the rendered page, and checks the pairing."
   },
   {
+   "check_id": "PHOTO-24/dealer-launch/H069",
+   "output_id": "dealer-launch",
+   "rule_id": "R059",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "No scrim, gradient or overlay of any colour, black or white included, is laid over any photograph on “Watch dealer launch sheet” (dealer-launch.pdf).",
+   "assertion": {
+    "op": "v2_pdf_overlay_pb"
+   },
+   "how": "Reads the PDF's drawing order and checks nothing is drawn over a placed photo."
+  },
+  {
+   "check_id": "PHOTO-24/dealer-launch/H070",
+   "output_id": "dealer-launch",
+   "rule_id": "R060",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The Ardent dial on “Watch dealer launch sheet” (dealer-launch.pdf) matches its colour in lunara_pdp_ardent.jpg, with no recolouring.",
+   "assertion": {
+    "op": "v2_pdf_photos_pb",
+    "photos": [
+     "lunara_campaign_01.jpg",
+     "lunara_campaign_02.jpg",
+     "lunara_campaign_03.jpg",
+     "lunara_campaign_04.jpg",
+     "lunara_campaign_05.jpg",
+     "lunara_campaign_06.jpg",
+     "lunara_campaign_07.jpg",
+     "lunara_campaign_08.jpg",
+     "lunara_campaign_09.jpg",
+     "lunara_detail_caseback.jpg",
+     "lunara_detail_clasp.jpg",
+     "lunara_detail_crown.jpg",
+     "lunara_detail_handstack.jpg",
+     "lunara_detail_lug.jpg",
+     "lunara_detail_movement.jpg",
+     "lunara_pdp_ardent.jpg",
+     "lunara_pdp_halcyon.jpg",
+     "lunara_pdp_meridian.jpg",
+     "lunara_pdp_selene.jpg",
+     "lunara_pdp_vesper.jpg"
+    ],
+    "only": [
+     "lunara_pdp_ardent.jpg"
+    ],
+    "region": "shown",
+    "pass_if": [
+     [
+      "rgb_max",
+      "<=",
+      5
+     ]
+    ],
+    "fail_if": [
+     [
+      "rgb_median",
+      ">",
+      10
+     ]
+    ]
+   },
+   "how": "Reads every picture placed in the PDF, identifies its supplied photo and compares the colours tile by tile."
+  },
+  {
+   "check_id": "PHOTO-24/dealer-launch/H088",
+   "output_id": "dealer-launch",
+   "rule_id": "R061",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Each watch photograph on “Watch dealer launch sheet” (dealer-launch.pdf) keeps the colour of its supplied lunara_pdp frame, not recoloured toward cream, oxblood or another palette colour.",
+   "assertion": {
+    "op": "v2_pdf_photos_pb",
+    "photos": [
+     "lunara_campaign_01.jpg",
+     "lunara_campaign_02.jpg",
+     "lunara_campaign_03.jpg",
+     "lunara_campaign_04.jpg",
+     "lunara_campaign_05.jpg",
+     "lunara_campaign_06.jpg",
+     "lunara_campaign_07.jpg",
+     "lunara_campaign_08.jpg",
+     "lunara_campaign_09.jpg",
+     "lunara_detail_caseback.jpg",
+     "lunara_detail_clasp.jpg",
+     "lunara_detail_crown.jpg",
+     "lunara_detail_handstack.jpg",
+     "lunara_detail_lug.jpg",
+     "lunara_detail_movement.jpg",
+     "lunara_pdp_ardent.jpg",
+     "lunara_pdp_halcyon.jpg",
+     "lunara_pdp_meridian.jpg",
+     "lunara_pdp_selene.jpg",
+     "lunara_pdp_vesper.jpg"
+    ],
+    "only": null,
+    "region": "shown",
+    "pass_if": [
+     [
+      "rgb_max",
+      "<=",
+      5
+     ]
+    ],
+    "fail_if": [
+     [
+      "rgb_median",
+      ">",
+      10
+     ]
+    ]
+   },
+   "how": "Reads every picture placed in the PDF, identifies its supplied photo and compares the colours tile by tile."
+  },
+  {
+   "check_id": "PHOTO-24/watch-feature-r002/H063",
+   "output_id": "watch-feature-r002",
+   "rule_id": "R062",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The watch photograph on “Watch product-page feature - LC-25-0101” (watch-feature-r002.png) keeps the colour of lunara_pdp_meridian.jpg in case, bracelet and any sweep, not recoloured toward a palette colour.",
+   "assertion": {
+    "op": "v2_photo_compare_pb",
+    "pass_if": [
+     [
+      "rgb_max",
+      "<=",
+      5
+     ]
+    ],
+    "fail_if": [
+     [
+      "rgb_median",
+      ">",
+      10
+     ]
+    ],
+    "photo": "lunara_pdp_meridian.jpg",
+    "region": "shown"
+   },
+   "how": "Lays the supplied photo over the placed one and compares them tile by tile: colour, detail and correlation."
+  },
+  {
+   "check_id": "PHOTO-24/watch-feature-r003/H062",
+   "output_id": "watch-feature-r003",
+   "rule_id": "R062",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The watch photograph on “Watch product-page feature - LC-25-0102” (watch-feature-r003.png) keeps the colour of lunara_pdp_selene.jpg in case, bracelet and any sweep, not recoloured toward a palette colour.",
+   "assertion": {
+    "op": "v2_photo_compare_pb",
+    "pass_if": [
+     [
+      "rgb_max",
+      "<=",
+      5
+     ]
+    ],
+    "fail_if": [
+     [
+      "rgb_median",
+      ">",
+      10
+     ]
+    ],
+    "photo": "lunara_pdp_selene.jpg",
+    "region": "shown"
+   },
+   "how": "Lays the supplied photo over the placed one and compares them tile by tile: colour, detail and correlation."
+  },
+  {
+   "check_id": "PHOTO-24/watch-feature-r005/H062",
+   "output_id": "watch-feature-r005",
+   "rule_id": "R062",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The watch photograph on “Watch product-page feature - LC-25-0104” (watch-feature-r005.png) keeps the colour of lunara_pdp_halcyon.jpg in case, bracelet and any sweep, not recoloured toward a palette colour.",
+   "assertion": {
+    "op": "v2_photo_compare_pb",
+    "pass_if": [
+     [
+      "rgb_max",
+      "<=",
+      5
+     ]
+    ],
+    "fail_if": [
+     [
+      "rgb_median",
+      ">",
+      10
+     ]
+    ],
+    "photo": "lunara_pdp_halcyon.jpg",
+    "region": "shown"
+   },
+   "how": "Lays the supplied photo over the placed one and compares them tile by tile: colour, detail and correlation."
+  },
+  {
+   "check_id": "PHOTO-24/watch-feature-r004/H062",
+   "output_id": "watch-feature-r004",
+   "rule_id": "R063",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The watch photograph on “Watch product-page feature - LC-25-0103” (watch-feature-r004.png) keeps the colour of lunara_pdp_ardent.jpg in case, strap and any sweep, not recoloured toward a palette colour.",
+   "assertion": {
+    "op": "v2_photo_compare_pb",
+    "pass_if": [
+     [
+      "rgb_max",
+      "<=",
+      5
+     ]
+    ],
+    "fail_if": [
+     [
+      "rgb_median",
+      ">",
+      10
+     ]
+    ],
+    "photo": "lunara_pdp_ardent.jpg",
+    "region": "shown"
+   },
+   "how": "Lays the supplied photo over the placed one and compares them tile by tile: colour, detail and correlation."
+  },
+  {
+   "check_id": "PHOTO-24/watch-feature-r006/H061",
+   "output_id": "watch-feature-r006",
+   "rule_id": "R063",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The watch photograph on “Watch product-page feature - LC-25-0105” (watch-feature-r006.png) keeps the colour of lunara_pdp_vesper.jpg in case, strap and any sweep, not recoloured toward a palette colour.",
+   "assertion": {
+    "op": "v2_photo_compare_pb",
+    "pass_if": [
+     [
+      "rgb_max",
+      "<=",
+      5
+     ]
+    ],
+    "fail_if": [
+     [
+      "rgb_median",
+      ">",
+      10
+     ]
+    ],
+    "photo": "lunara_pdp_vesper.jpg",
+    "region": "shown"
+   },
+   "how": "Lays the supplied photo over the placed one and compares them tile by tile: colour, detail and correlation."
+  },
+  {
+   "check_id": "PHOTO-24/dealer-launch/H094",
+   "output_id": "dealer-launch",
+   "rule_id": "R064",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The Ardent strap on “Watch dealer launch sheet” (dealer-launch.pdf) matches its colour in lunara_pdp_ardent.jpg, with no recolouring.",
+   "assertion": {
+    "op": "v2_pdf_photos_pb",
+    "photos": [
+     "lunara_campaign_01.jpg",
+     "lunara_campaign_02.jpg",
+     "lunara_campaign_03.jpg",
+     "lunara_campaign_04.jpg",
+     "lunara_campaign_05.jpg",
+     "lunara_campaign_06.jpg",
+     "lunara_campaign_07.jpg",
+     "lunara_campaign_08.jpg",
+     "lunara_campaign_09.jpg",
+     "lunara_detail_caseback.jpg",
+     "lunara_detail_clasp.jpg",
+     "lunara_detail_crown.jpg",
+     "lunara_detail_handstack.jpg",
+     "lunara_detail_lug.jpg",
+     "lunara_detail_movement.jpg",
+     "lunara_pdp_ardent.jpg",
+     "lunara_pdp_halcyon.jpg",
+     "lunara_pdp_meridian.jpg",
+     "lunara_pdp_selene.jpg",
+     "lunara_pdp_vesper.jpg"
+    ],
+    "only": [
+     "lunara_pdp_ardent.jpg"
+    ],
+    "region": "shown",
+    "pass_if": [
+     [
+      "rgb_max",
+      "<=",
+      5
+     ]
+    ],
+    "fail_if": [
+     [
+      "rgb_median",
+      ">",
+      10
+     ]
+    ]
+   },
+   "how": "Reads every picture placed in the PDF, identifies its supplied photo and compares the colours tile by tile."
+  },
+  {
+   "check_id": "PHOTO-24/watch-keyvisual/H011",
+   "output_id": "watch-keyvisual",
+   "rule_id": "R065",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Any Cormorant Garamond headline, subhead or tagline on “Autumn watch key visual” (watch-keyvisual.png) is Medium weight, not italic or another weight.",
+   "assertion": {
+    "op": "v2_typeface_raster",
+    "fonts": [
+     [
+      "Cormorant Garamond",
+      [
+       "Medium"
+      ]
+     ]
+    ],
+    "all_text": true,
+    "except_whole": [
+     "Lunara",
+     "Chronometry",
+     "Lunara Chronometry"
+    ],
+    "except_roles": [
+     "body"
+    ],
+    "if_family": [
+     "Cormorant Garamond"
+    ],
+    "optional": true
+   },
+   "how": "Reads each named line by OCR, renders its own text in every brand font and weight and in common stand-in fonts, and compares the letter shapes and stroke thickness with the image; only a clear best match counts."
+  },
+  {
+   "check_id": "PHOTO-24/watch-feature-r002/H008",
+   "output_id": "watch-feature-r002",
+   "rule_id": "R065",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Any Cormorant Garamond headline, subhead or tagline on “Watch product-page feature - LC-25-0101” (watch-feature-r002.png) is Medium weight, not italic or another weight.",
+   "assertion": {
+    "op": "v2_typeface_raster",
+    "fonts": [
+     [
+      "Cormorant Garamond",
+      [
+       "Medium"
+      ]
+     ]
+    ],
+    "all_text": true,
+    "except_whole": [
+     "Lunara",
+     "Chronometry",
+     "Lunara Chronometry"
+    ],
+    "except_roles": [
+     "body"
+    ],
+    "if_family": [
+     "Cormorant Garamond"
+    ],
+    "optional": true
+   },
+   "how": "Reads each named line by OCR, renders its own text in every brand font and weight and in common stand-in fonts, and compares the letter shapes and stroke thickness with the image; only a clear best match counts."
+  },
+  {
+   "check_id": "PHOTO-24/watch-feature-r003/H016",
+   "output_id": "watch-feature-r003",
+   "rule_id": "R065",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Any Cormorant Garamond headline, subhead or tagline on “Watch product-page feature - LC-25-0102” (watch-feature-r003.png) is Medium weight, not italic or another weight.",
+   "assertion": {
+    "op": "v2_typeface_raster",
+    "fonts": [
+     [
+      "Cormorant Garamond",
+      [
+       "Medium"
+      ]
+     ]
+    ],
+    "all_text": true,
+    "except_whole": [
+     "Lunara",
+     "Chronometry",
+     "Lunara Chronometry"
+    ],
+    "except_roles": [
+     "body"
+    ],
+    "if_family": [
+     "Cormorant Garamond"
+    ],
+    "optional": true
+   },
+   "how": "Reads each named line by OCR, renders its own text in every brand font and weight and in common stand-in fonts, and compares the letter shapes and stroke thickness with the image; only a clear best match counts."
+  },
+  {
+   "check_id": "PHOTO-24/watch-feature-r004/H017",
+   "output_id": "watch-feature-r004",
+   "rule_id": "R065",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Any Cormorant Garamond headline, subhead or tagline on “Watch product-page feature - LC-25-0103” (watch-feature-r004.png) is Medium weight, not italic or another weight.",
+   "assertion": {
+    "op": "v2_typeface_raster",
+    "fonts": [
+     [
+      "Cormorant Garamond",
+      [
+       "Medium"
+      ]
+     ]
+    ],
+    "all_text": true,
+    "except_whole": [
+     "Lunara",
+     "Chronometry",
+     "Lunara Chronometry"
+    ],
+    "except_roles": [
+     "body"
+    ],
+    "if_family": [
+     "Cormorant Garamond"
+    ],
+    "optional": true
+   },
+   "how": "Reads each named line by OCR, renders its own text in every brand font and weight and in common stand-in fonts, and compares the letter shapes and stroke thickness with the image; only a clear best match counts."
+  },
+  {
+   "check_id": "PHOTO-24/watch-feature-r005/H016",
+   "output_id": "watch-feature-r005",
+   "rule_id": "R065",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Any Cormorant Garamond headline, subhead or tagline on “Watch product-page feature - LC-25-0104” (watch-feature-r005.png) is Medium weight, not italic or another weight.",
+   "assertion": {
+    "op": "v2_typeface_raster",
+    "fonts": [
+     [
+      "Cormorant Garamond",
+      [
+       "Medium"
+      ]
+     ]
+    ],
+    "all_text": true,
+    "except_whole": [
+     "Lunara",
+     "Chronometry",
+     "Lunara Chronometry"
+    ],
+    "except_roles": [
+     "body"
+    ],
+    "if_family": [
+     "Cormorant Garamond"
+    ],
+    "optional": true
+   },
+   "how": "Reads each named line by OCR, renders its own text in every brand font and weight and in common stand-in fonts, and compares the letter shapes and stroke thickness with the image; only a clear best match counts."
+  },
+  {
+   "check_id": "PHOTO-24/watch-feature-r006/H016",
+   "output_id": "watch-feature-r006",
+   "rule_id": "R065",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Any Cormorant Garamond headline, subhead or tagline on “Watch product-page feature - LC-25-0105” (watch-feature-r006.png) is Medium weight, not italic or another weight.",
+   "assertion": {
+    "op": "v2_typeface_raster",
+    "fonts": [
+     [
+      "Cormorant Garamond",
+      [
+       "Medium"
+      ]
+     ]
+    ],
+    "all_text": true,
+    "except_whole": [
+     "Lunara",
+     "Chronometry",
+     "Lunara Chronometry"
+    ],
+    "except_roles": [
+     "body"
+    ],
+    "if_family": [
+     "Cormorant Garamond"
+    ],
+    "optional": true
+   },
+   "how": "Reads each named line by OCR, renders its own text in every brand font and weight and in common stand-in fonts, and compares the letter shapes and stroke thickness with the image; only a clear best match counts."
+  },
+  {
+   "check_id": "PHOTO-24/watch-keyvisual/H012",
+   "output_id": "watch-keyvisual",
+   "rule_id": "R066",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "If the timing line appears on “Autumn watch key visual” (watch-keyvisual.png), it is set in Inter Regular, not italic.",
+   "assertion": {
+    "op": "v2_text_pb",
+    "forbidden": [
+     "Timed by hand and signed"
+    ],
+    "found": "person",
+    "photos": [
+     "lunara_campaign_01.jpg",
+     "lunara_campaign_02.jpg",
+     "lunara_campaign_03.jpg",
+     "lunara_campaign_04.jpg",
+     "lunara_campaign_05.jpg",
+     "lunara_campaign_06.jpg",
+     "lunara_campaign_07.jpg",
+     "lunara_campaign_08.jpg",
+     "lunara_campaign_09.jpg",
+     "lunara_detail_caseback.jpg",
+     "lunara_detail_clasp.jpg",
+     "lunara_detail_crown.jpg",
+     "lunara_detail_handstack.jpg",
+     "lunara_detail_lug.jpg",
+     "lunara_detail_movement.jpg",
+     "lunara_pdp_ardent.jpg",
+     "lunara_pdp_halcyon.jpg",
+     "lunara_pdp_meridian.jpg",
+     "lunara_pdp_selene.jpg",
+     "lunara_pdp_vesper.jpg"
+    ]
+   },
+   "how": "Reads the type by OCR or from the PDF, leaving out lettering inside the supplied photos, and looks for the wording."
+  },
+  {
+   "check_id": "PHOTO-24/watch-feature-r002/H009",
+   "output_id": "watch-feature-r002",
+   "rule_id": "R066",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "If the timing line appears on “Watch product-page feature - LC-25-0101” (watch-feature-r002.png), it is set in Inter Regular, not italic.",
+   "assertion": {
+    "op": "v2_text_pb",
+    "forbidden": [
+     "Timed by hand and signed"
+    ],
+    "found": "person",
+    "photos": [
+     "lunara_pdp_meridian.jpg"
+    ]
+   },
+   "how": "Reads the type by OCR or from the PDF, leaving out lettering inside the supplied photos, and looks for the wording."
+  },
+  {
+   "check_id": "PHOTO-24/watch-feature-r003/H017",
+   "output_id": "watch-feature-r003",
+   "rule_id": "R066",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "If the timing line appears on “Watch product-page feature - LC-25-0102” (watch-feature-r003.png), it is set in Inter Regular, not italic.",
+   "assertion": {
+    "op": "v2_text_pb",
+    "forbidden": [
+     "Timed by hand and signed"
+    ],
+    "found": "person",
+    "photos": [
+     "lunara_pdp_selene.jpg"
+    ]
+   },
+   "how": "Reads the type by OCR or from the PDF, leaving out lettering inside the supplied photos, and looks for the wording."
+  },
+  {
+   "check_id": "PHOTO-24/watch-feature-r004/H018",
+   "output_id": "watch-feature-r004",
+   "rule_id": "R066",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "If the timing line appears on “Watch product-page feature - LC-25-0103” (watch-feature-r004.png), it is set in Inter Regular, not italic.",
+   "assertion": {
+    "op": "v2_text_pb",
+    "forbidden": [
+     "Timed by hand and signed"
+    ],
+    "found": "person",
+    "photos": [
+     "lunara_pdp_ardent.jpg"
+    ]
+   },
+   "how": "Reads the type by OCR or from the PDF, leaving out lettering inside the supplied photos, and looks for the wording."
+  },
+  {
+   "check_id": "PHOTO-24/watch-feature-r005/H017",
+   "output_id": "watch-feature-r005",
+   "rule_id": "R066",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "If the timing line appears on “Watch product-page feature - LC-25-0104” (watch-feature-r005.png), it is set in Inter Regular, not italic.",
+   "assertion": {
+    "op": "v2_text_pb",
+    "forbidden": [
+     "Timed by hand and signed"
+    ],
+    "found": "person",
+    "photos": [
+     "lunara_pdp_halcyon.jpg"
+    ]
+   },
+   "how": "Reads the type by OCR or from the PDF, leaving out lettering inside the supplied photos, and looks for the wording."
+  },
+  {
+   "check_id": "PHOTO-24/watch-feature-r006/H017",
+   "output_id": "watch-feature-r006",
+   "rule_id": "R066",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "If the timing line appears on “Watch product-page feature - LC-25-0105” (watch-feature-r006.png), it is set in Inter Regular, not italic.",
+   "assertion": {
+    "op": "v2_text_pb",
+    "forbidden": [
+     "Timed by hand and signed"
+    ],
+    "found": "person",
+    "photos": [
+     "lunara_pdp_vesper.jpg"
+    ]
+   },
+   "how": "Reads the type by OCR or from the PDF, leaving out lettering inside the supplied photos, and looks for the wording."
+  },
+  {
+   "check_id": "PHOTO-24/watch-keyvisual/H020",
+   "output_id": "watch-keyvisual",
+   "rule_id": "R070",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "No line of body text on “Autumn watch key visual” (watch-keyvisual.png) runs longer than 65 characters.",
+   "assertion": {
+    "op": "v2_line_chars_pb",
+    "max_chars": 65,
+    "roles": [
+     "body"
+    ],
+    "photos": [
+     "lunara_campaign_01.jpg",
+     "lunara_campaign_02.jpg",
+     "lunara_campaign_03.jpg",
+     "lunara_campaign_04.jpg",
+     "lunara_campaign_05.jpg",
+     "lunara_campaign_06.jpg",
+     "lunara_campaign_07.jpg",
+     "lunara_campaign_08.jpg",
+     "lunara_campaign_09.jpg",
+     "lunara_detail_caseback.jpg",
+     "lunara_detail_clasp.jpg",
+     "lunara_detail_crown.jpg",
+     "lunara_detail_handstack.jpg",
+     "lunara_detail_lug.jpg",
+     "lunara_detail_movement.jpg",
+     "lunara_pdp_ardent.jpg",
+     "lunara_pdp_halcyon.jpg",
+     "lunara_pdp_meridian.jpg",
+     "lunara_pdp_selene.jpg",
+     "lunara_pdp_vesper.jpg"
+    ]
+   },
+   "how": "Reads each line of text and counts its characters."
+  },
+  {
+   "check_id": "PHOTO-24/watch-feature-r002/H026",
+   "output_id": "watch-feature-r002",
+   "rule_id": "R070",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "No line of body text on “Watch product-page feature - LC-25-0101” (watch-feature-r002.png) runs longer than 65 characters.",
+   "assertion": {
+    "op": "v2_line_chars_pb",
+    "max_chars": 65,
+    "roles": [
+     "body"
+    ],
+    "photos": [
+     "lunara_pdp_meridian.jpg"
+    ]
+   },
+   "how": "Reads each line of text and counts its characters."
+  },
+  {
+   "check_id": "PHOTO-24/watch-feature-r003/H025",
+   "output_id": "watch-feature-r003",
+   "rule_id": "R070",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "No line of body text on “Watch product-page feature - LC-25-0102” (watch-feature-r003.png) runs longer than 65 characters.",
+   "assertion": {
+    "op": "v2_line_chars_pb",
+    "max_chars": 65,
+    "roles": [
+     "body"
+    ],
+    "photos": [
+     "lunara_pdp_selene.jpg"
+    ]
+   },
+   "how": "Reads each line of text and counts its characters."
+  },
+  {
+   "check_id": "PHOTO-24/watch-feature-r004/H024",
+   "output_id": "watch-feature-r004",
+   "rule_id": "R070",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "No line of body text on “Watch product-page feature - LC-25-0103” (watch-feature-r004.png) runs longer than 65 characters.",
+   "assertion": {
+    "op": "v2_line_chars_pb",
+    "max_chars": 65,
+    "roles": [
+     "body"
+    ],
+    "photos": [
+     "lunara_pdp_ardent.jpg"
+    ]
+   },
+   "how": "Reads each line of text and counts its characters."
+  },
+  {
+   "check_id": "PHOTO-24/watch-feature-r005/H025",
+   "output_id": "watch-feature-r005",
+   "rule_id": "R070",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "No line of body text on “Watch product-page feature - LC-25-0104” (watch-feature-r005.png) runs longer than 65 characters.",
+   "assertion": {
+    "op": "v2_line_chars_pb",
+    "max_chars": 65,
+    "roles": [
+     "body"
+    ],
+    "photos": [
+     "lunara_pdp_halcyon.jpg"
+    ]
+   },
+   "how": "Reads each line of text and counts its characters."
+  },
+  {
+   "check_id": "PHOTO-24/watch-feature-r006/H024",
+   "output_id": "watch-feature-r006",
+   "rule_id": "R070",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "No line of body text on “Watch product-page feature - LC-25-0105” (watch-feature-r006.png) runs longer than 65 characters.",
+   "assertion": {
+    "op": "v2_line_chars_pb",
+    "max_chars": 65,
+    "roles": [
+     "body"
+    ],
+    "photos": [
+     "lunara_pdp_vesper.jpg"
+    ]
+   },
+   "how": "Reads each line of text and counts its characters."
+  },
+  {
+   "check_id": "PHOTO-24/dealer-launch/H042",
+   "output_id": "dealer-launch",
+   "rule_id": "R070",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "No line of body text on “Watch dealer launch sheet” (dealer-launch.pdf) runs longer than 65 characters.",
+   "assertion": {
+    "op": "v2_line_chars_pb",
+    "max_chars": 65,
+    "roles": [
+     "body"
+    ]
+   },
+   "how": "Reads each line of text and counts its characters."
+  },
+  {
+   "check_id": "PHOTO-24/dealer-launch/H036",
+   "output_id": "dealer-launch",
+   "rule_id": "R071",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Any Cormorant Garamond line on “Watch dealer launch sheet” (dealer-launch.pdf) other than the main heading, reference names and wordmark, such as a subhead, is Medium, not italic or another weight.",
+   "assertion": {
+    "op": "v2_role_style_pb",
+    "select": [
+     {
+      "family": "Cormorant Garamond"
+     }
+    ],
+    "optional": true,
+    "weight": "Medium",
+    "except": [
+     "main",
+     {
+      "whole": [
+       "Meridian",
+       "Selene",
+       "Ardent",
+       "Halcyon",
+       "Vesper",
+       "LUNARA",
+       "CHRONOMETRY",
+       "LUNARA CHRONOMETRY"
+      ]
+     }
+    ]
+   },
+   "how": "Sorts the PDF text into roles by size and reads the font, size, letter case and line spacing of the named role."
+  },
+  {
    "check_id": "PHOTO-24/dealer-launch/H037",
    "output_id": "dealer-launch",
    "rule_id": "R072",
@@ -1390,6 +5123,197 @@
     "weight": "Regular"
    },
    "how": "Reads the font, size or letter case of the selected lines from the PDF."
+  },
+  {
+   "check_id": "PHOTO-24/watch-keyvisual/H027",
+   "output_id": "watch-keyvisual",
+   "rule_id": "R073",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The wordmark on “Autumn watch key visual” (watch-keyvisual.png) is set in Cormorant Garamond Medium.",
+   "assertion": {
+    "op": "v2_typeface_raster",
+    "fonts": [
+     [
+      "Cormorant Garamond",
+      [
+       "Medium"
+      ]
+     ]
+    ],
+    "whole": [
+     "Lunara",
+     "Chronometry",
+     "Lunara Chronometry"
+    ]
+   },
+   "how": "Reads each named line by OCR, renders its own text in every brand font and weight and in common stand-in fonts, and compares the letter shapes and stroke thickness with the image; only a clear best match counts."
+  },
+  {
+   "check_id": "PHOTO-24/watch-keyvisual/H031",
+   "output_id": "watch-keyvisual",
+   "rule_id": "R074",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The reference name on “Autumn watch key visual” (watch-keyvisual.png) is set in Cormorant Garamond Medium.",
+   "assertion": {
+    "op": "v2_typeface_raster",
+    "fonts": [
+     [
+      "Cormorant Garamond",
+      [
+       "Medium"
+      ]
+     ]
+    ],
+    "whole": [
+     "Meridian",
+     "Selene",
+     "Ardent",
+     "Halcyon",
+     "Vesper"
+    ],
+    "largest_only": true
+   },
+   "how": "Reads each named line by OCR, renders its own text in every brand font and weight and in common stand-in fonts, and compares the letter shapes and stroke thickness with the image; only a clear best match counts."
+  },
+  {
+   "check_id": "PHOTO-24/watch-feature-r002/H038",
+   "output_id": "watch-feature-r002",
+   "rule_id": "R079",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The reference name “Meridian” on “Watch product-page feature - LC-25-0101” (watch-feature-r002.png) is set in Cormorant Garamond Medium.",
+   "assertion": {
+    "op": "v2_typeface_raster",
+    "fonts": [
+     [
+      "Cormorant Garamond",
+      [
+       "Medium"
+      ]
+     ]
+    ],
+    "whole": [
+     "Meridian"
+    ],
+    "largest_only": true
+   },
+   "how": "Reads each named line by OCR, renders its own text in every brand font and weight and in common stand-in fonts, and compares the letter shapes and stroke thickness with the image; only a clear best match counts."
+  },
+  {
+   "check_id": "PHOTO-24/watch-feature-r003/H037",
+   "output_id": "watch-feature-r003",
+   "rule_id": "R079",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The reference name “Selene” on “Watch product-page feature - LC-25-0102” (watch-feature-r003.png) is set in Cormorant Garamond Medium.",
+   "assertion": {
+    "op": "v2_typeface_raster",
+    "fonts": [
+     [
+      "Cormorant Garamond",
+      [
+       "Medium"
+      ]
+     ]
+    ],
+    "whole": [
+     "Selene"
+    ],
+    "largest_only": true
+   },
+   "how": "Reads each named line by OCR, renders its own text in every brand font and weight and in common stand-in fonts, and compares the letter shapes and stroke thickness with the image; only a clear best match counts."
+  },
+  {
+   "check_id": "PHOTO-24/watch-feature-r004/H036",
+   "output_id": "watch-feature-r004",
+   "rule_id": "R079",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The reference name “Ardent” on “Watch product-page feature - LC-25-0103” (watch-feature-r004.png) is set in Cormorant Garamond Medium.",
+   "assertion": {
+    "op": "v2_typeface_raster",
+    "fonts": [
+     [
+      "Cormorant Garamond",
+      [
+       "Medium"
+      ]
+     ]
+    ],
+    "whole": [
+     "Ardent"
+    ],
+    "largest_only": true
+   },
+   "how": "Reads each named line by OCR, renders its own text in every brand font and weight and in common stand-in fonts, and compares the letter shapes and stroke thickness with the image; only a clear best match counts."
+  },
+  {
+   "check_id": "PHOTO-24/watch-feature-r005/H037",
+   "output_id": "watch-feature-r005",
+   "rule_id": "R079",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The reference name “Halcyon” on “Watch product-page feature - LC-25-0104” (watch-feature-r005.png) is set in Cormorant Garamond Medium.",
+   "assertion": {
+    "op": "v2_typeface_raster",
+    "fonts": [
+     [
+      "Cormorant Garamond",
+      [
+       "Medium"
+      ]
+     ]
+    ],
+    "whole": [
+     "Halcyon"
+    ],
+    "largest_only": true
+   },
+   "how": "Reads each named line by OCR, renders its own text in every brand font and weight and in common stand-in fonts, and compares the letter shapes and stroke thickness with the image; only a clear best match counts."
+  },
+  {
+   "check_id": "PHOTO-24/watch-feature-r006/H036",
+   "output_id": "watch-feature-r006",
+   "rule_id": "R079",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The reference name “Vesper” on “Watch product-page feature - LC-25-0105” (watch-feature-r006.png) is set in Cormorant Garamond Medium.",
+   "assertion": {
+    "op": "v2_typeface_raster",
+    "fonts": [
+     [
+      "Cormorant Garamond",
+      [
+       "Medium"
+      ]
+     ]
+    ],
+    "whole": [
+     "Vesper"
+    ],
+    "largest_only": true
+   },
+   "how": "Reads each named line by OCR, renders its own text in every brand font and weight and in common stand-in fonts, and compares the letter shapes and stroke thickness with the image; only a clear best match counts."
+  },
+  {
+   "check_id": "PHOTO-24/dealer-launch/H048",
+   "output_id": "dealer-launch",
+   "rule_id": "R081",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "If a main heading appears on “Watch dealer launch sheet” (dealer-launch.pdf), it is set in Cormorant Garamond Medium, not the bold serif of lunara_certificate_2025.pdf.",
+   "assertion": {
+    "op": "v2_role_style_pb",
+    "select": [
+     "main"
+    ],
+    "family": "Cormorant Garamond",
+    "weight": "Medium",
+    "optional": true
+   },
+   "how": "Sorts the PDF text into roles by size and reads the font, size, letter case and line spacing of the named role."
   },
   {
    "check_id": "PHOTO-24/dealer-launch/H052",
@@ -1434,6 +5358,23 @@
    "how": "Reads the font, size or letter case of the selected lines from the PDF."
   },
   {
+   "check_id": "PHOTO-24/dealer-launch/H074",
+   "output_id": "dealer-launch",
+   "rule_id": "R086",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Any figure inside a heading on “Watch dealer launch sheet” (dealer-launch.pdf) is set at the same point size as the heading capitals around it.",
+   "assertion": {
+    "op": "v2_role_style_pb",
+    "select": [
+     "heading"
+    ],
+    "figures_same_size": true,
+    "optional": true
+   },
+   "how": "Sorts the PDF text into roles by size and reads the font, size, letter case and line spacing of the named role."
+  },
+  {
    "check_id": "PHOTO-24/dealer-launch/H076",
    "output_id": "dealer-launch",
    "rule_id": "R089",
@@ -1447,6 +5388,95 @@
     "caps": true
    },
    "how": "Reads the font, size or letter case of the selected lines from the PDF."
+  },
+  {
+   "check_id": "PHOTO-24/dealer-launch/H089",
+   "output_id": "dealer-launch",
+   "rule_id": "R090",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "If a main heading appears on “Watch dealer launch sheet” (dealer-launch.pdf), it is set at 28 pt.",
+   "assertion": {
+    "op": "v2_role_style_pb",
+    "select": [
+     "main"
+    ],
+    "size": 28,
+    "optional": true
+   },
+   "how": "Sorts the PDF text into roles by size and reads the font, size, letter case and line spacing of the named role."
+  },
+  {
+   "check_id": "PHOTO-24/dealer-launch/H090",
+   "output_id": "dealer-launch",
+   "rule_id": "R091",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "If the main heading on “Watch dealer launch sheet” (dealer-launch.pdf) runs over two lines, its baselines are 31 pt apart, within 0.5 pt.",
+   "assertion": {
+    "op": "v2_role_style_pb",
+    "select": [
+     "main"
+    ],
+    "leading": 31,
+    "only_multi": true
+   },
+   "how": "Sorts the PDF text into roles by size and reads the font, size, letter case and line spacing of the named role."
+  },
+  {
+   "check_id": "PHOTO-24/dealer-launch/H091",
+   "output_id": "dealer-launch",
+   "rule_id": "R092",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Every line of body, specification and fine-print text on “Watch dealer launch sheet” (dealer-launch.pdf) is set at 10 pt.",
+   "assertion": {
+    "op": "v2_role_style_pb",
+    "select": [
+     "prose",
+     "fine",
+     "?other"
+    ],
+    "size": 10,
+    "except": [
+     {
+      "whole": [
+       "LUNARA",
+       "CHRONOMETRY",
+       "LUNARA CHRONOMETRY"
+      ]
+     }
+    ]
+   },
+   "how": "Sorts the PDF text into roles by size and reads the font, size, letter case and line spacing of the named role."
+  },
+  {
+   "check_id": "PHOTO-24/dealer-launch/H092",
+   "output_id": "dealer-launch",
+   "rule_id": "R093",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Within each block of body, specification or fine-print text on “Watch dealer launch sheet” (dealer-launch.pdf), consecutive lines sit 14 pt apart baseline to baseline, within 0.5 pt.",
+   "assertion": {
+    "op": "v2_role_style_pb",
+    "select": [
+     "prose",
+     "fine",
+     "?other"
+    ],
+    "leading": 14,
+    "optional": true,
+    "except": [
+     {
+      "whole": [
+       "LUNARA",
+       "CHRONOMETRY",
+       "LUNARA CHRONOMETRY"
+      ]
+     }
+    ]
+   },
+   "how": "Sorts the PDF text into roles by size and reads the font, size, letter case and line spacing of the named role."
   },
   {
    "check_id": "PHOTO-24/watch-feature-r002/H027",
@@ -1543,6 +5573,740 @@
     "optional": true
    },
    "how": "Reads the text and checks how the two words of the wordmark are set: stacked, or on one line."
+  },
+  {
+   "check_id": "PHOTO-24/watch-keyvisual/H021",
+   "output_id": "watch-keyvisual",
+   "rule_id": "R095",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The copy on “Autumn watch key visual” (watch-keyvisual.png) makes no superlative or hype claim, such as luxury, iconic, ultimate or finest.",
+   "assertion": {
+    "op": "v2_text_pb",
+    "photos": [
+     "lunara_campaign_01.jpg",
+     "lunara_campaign_02.jpg",
+     "lunara_campaign_03.jpg",
+     "lunara_campaign_04.jpg",
+     "lunara_campaign_05.jpg",
+     "lunara_campaign_06.jpg",
+     "lunara_campaign_07.jpg",
+     "lunara_campaign_08.jpg",
+     "lunara_campaign_09.jpg",
+     "lunara_detail_caseback.jpg",
+     "lunara_detail_clasp.jpg",
+     "lunara_detail_crown.jpg",
+     "lunara_detail_handstack.jpg",
+     "lunara_detail_lug.jpg",
+     "lunara_detail_movement.jpg",
+     "lunara_pdp_ardent.jpg",
+     "lunara_pdp_halcyon.jpg",
+     "lunara_pdp_meridian.jpg",
+     "lunara_pdp_selene.jpg",
+     "lunara_pdp_vesper.jpg"
+    ],
+    "forbidden": [
+     {
+      "regex": "\\b(?:luxury|luxurious|iconic|ultimate|finest|best|perfect|perfection|exceptional|unrivall?ed|legendary|world-?class|unparalleled|exquisite|breathtaking|stunning|timeless masterpiece)\\b"
+     }
+    ]
+   },
+   "how": "Reads the type by OCR or from the PDF, leaving out lettering inside the supplied photos, and looks for the wording."
+  },
+  {
+   "check_id": "PHOTO-24/watch-feature-r002/H028",
+   "output_id": "watch-feature-r002",
+   "rule_id": "R095",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The copy on “Watch product-page feature - LC-25-0101” (watch-feature-r002.png) makes no superlative or hype claim, such as luxury, iconic, ultimate or finest.",
+   "assertion": {
+    "op": "v2_text_pb",
+    "photos": [
+     "lunara_pdp_meridian.jpg"
+    ],
+    "forbidden": [
+     {
+      "regex": "\\b(?:luxury|luxurious|iconic|ultimate|finest|best|perfect|perfection|exceptional|unrivall?ed|legendary|world-?class|unparalleled|exquisite|breathtaking|stunning|timeless masterpiece)\\b"
+     }
+    ]
+   },
+   "how": "Reads the type by OCR or from the PDF, leaving out lettering inside the supplied photos, and looks for the wording."
+  },
+  {
+   "check_id": "PHOTO-24/watch-feature-r003/H027",
+   "output_id": "watch-feature-r003",
+   "rule_id": "R095",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The copy on “Watch product-page feature - LC-25-0102” (watch-feature-r003.png) makes no superlative or hype claim, such as luxury, iconic, ultimate or finest.",
+   "assertion": {
+    "op": "v2_text_pb",
+    "photos": [
+     "lunara_pdp_selene.jpg"
+    ],
+    "forbidden": [
+     {
+      "regex": "\\b(?:luxury|luxurious|iconic|ultimate|finest|best|perfect|perfection|exceptional|unrivall?ed|legendary|world-?class|unparalleled|exquisite|breathtaking|stunning|timeless masterpiece)\\b"
+     }
+    ]
+   },
+   "how": "Reads the type by OCR or from the PDF, leaving out lettering inside the supplied photos, and looks for the wording."
+  },
+  {
+   "check_id": "PHOTO-24/watch-feature-r004/H026",
+   "output_id": "watch-feature-r004",
+   "rule_id": "R095",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The copy on “Watch product-page feature - LC-25-0103” (watch-feature-r004.png) makes no superlative or hype claim, such as luxury, iconic, ultimate or finest.",
+   "assertion": {
+    "op": "v2_text_pb",
+    "photos": [
+     "lunara_pdp_ardent.jpg"
+    ],
+    "forbidden": [
+     {
+      "regex": "\\b(?:luxury|luxurious|iconic|ultimate|finest|best|perfect|perfection|exceptional|unrivall?ed|legendary|world-?class|unparalleled|exquisite|breathtaking|stunning|timeless masterpiece)\\b"
+     }
+    ]
+   },
+   "how": "Reads the type by OCR or from the PDF, leaving out lettering inside the supplied photos, and looks for the wording."
+  },
+  {
+   "check_id": "PHOTO-24/watch-feature-r005/H027",
+   "output_id": "watch-feature-r005",
+   "rule_id": "R095",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The copy on “Watch product-page feature - LC-25-0104” (watch-feature-r005.png) makes no superlative or hype claim, such as luxury, iconic, ultimate or finest.",
+   "assertion": {
+    "op": "v2_text_pb",
+    "photos": [
+     "lunara_pdp_halcyon.jpg"
+    ],
+    "forbidden": [
+     {
+      "regex": "\\b(?:luxury|luxurious|iconic|ultimate|finest|best|perfect|perfection|exceptional|unrivall?ed|legendary|world-?class|unparalleled|exquisite|breathtaking|stunning|timeless masterpiece)\\b"
+     }
+    ]
+   },
+   "how": "Reads the type by OCR or from the PDF, leaving out lettering inside the supplied photos, and looks for the wording."
+  },
+  {
+   "check_id": "PHOTO-24/watch-feature-r006/H026",
+   "output_id": "watch-feature-r006",
+   "rule_id": "R095",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The copy on “Watch product-page feature - LC-25-0105” (watch-feature-r006.png) makes no superlative or hype claim, such as luxury, iconic, ultimate or finest.",
+   "assertion": {
+    "op": "v2_text_pb",
+    "photos": [
+     "lunara_pdp_vesper.jpg"
+    ],
+    "forbidden": [
+     {
+      "regex": "\\b(?:luxury|luxurious|iconic|ultimate|finest|best|perfect|perfection|exceptional|unrivall?ed|legendary|world-?class|unparalleled|exquisite|breathtaking|stunning|timeless masterpiece)\\b"
+     }
+    ]
+   },
+   "how": "Reads the type by OCR or from the PDF, leaving out lettering inside the supplied photos, and looks for the wording."
+  },
+  {
+   "check_id": "PHOTO-24/dealer-launch/H043",
+   "output_id": "dealer-launch",
+   "rule_id": "R095",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The copy on “Watch dealer launch sheet” (dealer-launch.pdf) makes no superlative or hype claim, such as luxury, iconic, ultimate or finest.",
+   "assertion": {
+    "op": "v2_text_pb",
+    "photos": [],
+    "forbidden": [
+     {
+      "regex": "\\b(?:luxury|luxurious|iconic|ultimate|finest|best|perfect|perfection|exceptional|unrivall?ed|legendary|world-?class|unparalleled|exquisite|breathtaking|stunning|timeless masterpiece)\\b"
+     }
+    ]
+   },
+   "how": "Reads the type by OCR or from the PDF, leaving out lettering inside the supplied photos, and looks for the wording."
+  },
+  {
+   "check_id": "PHOTO-24/watch-keyvisual/H007",
+   "output_id": "watch-keyvisual",
+   "rule_id": "R096",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The photograph on “Autumn watch key visual” (watch-keyvisual.png) has one warm single-tone grade, with no blue cast, applied evenly across the whole frame.",
+   "assertion": {
+    "op": "v2_photo_compare_pb",
+    "pass_if": [
+     [
+      "warm_single",
+      ">=",
+      1
+     ]
+    ],
+    "fail_if": [
+     [
+      "de_max",
+      "<=",
+      3
+     ]
+    ],
+    "photos": [
+     "lunara_campaign_01.jpg",
+     "lunara_campaign_02.jpg",
+     "lunara_campaign_03.jpg",
+     "lunara_campaign_04.jpg",
+     "lunara_campaign_05.jpg",
+     "lunara_campaign_06.jpg",
+     "lunara_campaign_07.jpg",
+     "lunara_campaign_08.jpg",
+     "lunara_campaign_09.jpg"
+    ],
+    "region": "shown"
+   },
+   "how": "Lays the supplied photo over the placed one and compares them tile by tile: colour, detail and correlation."
+  },
+  {
+   "check_id": "PHOTO-24/watch-keyvisual/H010",
+   "output_id": "watch-keyvisual",
+   "rule_id": "R097",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The wordmark on “Autumn watch key visual” (watch-keyvisual.png) is stacked as Lunara over Chronometry, never set on one line.",
+   "assertion": {
+    "op": "v2_stacked",
+    "top": "Lunara",
+    "bottom": "Chronometry",
+    "stack": true
+   },
+   "how": "Reads the text and checks how the two words of the wordmark are set: stacked, or on one line."
+  },
+  {
+   "check_id": "PHOTO-24/watch-keyvisual/H050",
+   "output_id": "watch-keyvisual",
+   "rule_id": "R098",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "No dark or light band, vignette, gradient or tinted box is laid over part of the photograph on “Autumn watch key visual” (watch-keyvisual.png).",
+   "assertion": {
+    "op": "v2_photo_compare_pb",
+    "pass_if": [
+     [
+      "drift",
+      "<=",
+      4
+     ]
+    ],
+    "fail_if": [
+     [
+      "drift",
+      ">=",
+      12
+     ]
+    ],
+    "photos": [
+     "lunara_campaign_01.jpg",
+     "lunara_campaign_02.jpg",
+     "lunara_campaign_03.jpg",
+     "lunara_campaign_04.jpg",
+     "lunara_campaign_05.jpg",
+     "lunara_campaign_06.jpg",
+     "lunara_campaign_07.jpg",
+     "lunara_campaign_08.jpg",
+     "lunara_campaign_09.jpg"
+    ],
+    "region": "shown",
+    "min_tiles": 0
+   },
+   "how": "Lays the supplied photo over the placed one and compares them tile by tile: colour, detail and correlation."
+  },
+  {
+   "check_id": "PHOTO-24/watch-keyvisual/H054",
+   "output_id": "watch-keyvisual",
+   "rule_id": "R100",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "No type, panel, rule or mark on “Autumn watch key visual” (watch-keyvisual.png) has a gradient, shadow, metallic, foil, glow or blend effect.",
+   "assertion": {
+    "op": "v2_solid_raster_pb",
+    "hexes": [
+     "#191512",
+     "#EDE6D6",
+     "#9A9EA3",
+     "#9C7A3C",
+     "#5A2A28"
+    ],
+    "photos": [
+     "lunara_campaign_01.jpg",
+     "lunara_campaign_02.jpg",
+     "lunara_campaign_03.jpg",
+     "lunara_campaign_04.jpg",
+     "lunara_campaign_05.jpg",
+     "lunara_campaign_06.jpg",
+     "lunara_campaign_07.jpg",
+     "lunara_campaign_08.jpg",
+     "lunara_campaign_09.jpg",
+     "lunara_detail_caseback.jpg",
+     "lunara_detail_clasp.jpg",
+     "lunara_detail_crown.jpg",
+     "lunara_detail_handstack.jpg",
+     "lunara_detail_lug.jpg",
+     "lunara_detail_movement.jpg",
+     "lunara_pdp_ardent.jpg",
+     "lunara_pdp_halcyon.jpg",
+     "lunara_pdp_meridian.jpg",
+     "lunara_pdp_selene.jpg",
+     "lunara_pdp_vesper.jpg"
+    ]
+   },
+   "how": "Checks every flat designed colour is a palette colour, with no shaded area and no type over a photograph."
+  },
+  {
+   "check_id": "PHOTO-24/watch-feature-r002/H059",
+   "output_id": "watch-feature-r002",
+   "rule_id": "R100",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "No type, panel, rule or mark on “Watch product-page feature - LC-25-0101” (watch-feature-r002.png) has a gradient, shadow, metallic, foil, glow or blend effect.",
+   "assertion": {
+    "op": "v2_solid_raster_pb",
+    "hexes": [
+     "#191512",
+     "#EDE6D6",
+     "#9A9EA3",
+     "#9C7A3C",
+     "#5A2A28"
+    ],
+    "photos": [
+     "lunara_pdp_meridian.jpg"
+    ]
+   },
+   "how": "Checks every flat designed colour is a palette colour, with no shaded area and no type over a photograph."
+  },
+  {
+   "check_id": "PHOTO-24/watch-feature-r003/H058",
+   "output_id": "watch-feature-r003",
+   "rule_id": "R100",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "No type, panel, rule or mark on “Watch product-page feature - LC-25-0102” (watch-feature-r003.png) has a gradient, shadow, metallic, foil, glow or blend effect.",
+   "assertion": {
+    "op": "v2_solid_raster_pb",
+    "hexes": [
+     "#191512",
+     "#EDE6D6",
+     "#9A9EA3",
+     "#9C7A3C",
+     "#5A2A28"
+    ],
+    "photos": [
+     "lunara_pdp_selene.jpg"
+    ]
+   },
+   "how": "Checks every flat designed colour is a palette colour, with no shaded area and no type over a photograph."
+  },
+  {
+   "check_id": "PHOTO-24/watch-feature-r004/H058",
+   "output_id": "watch-feature-r004",
+   "rule_id": "R100",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "No type, panel, rule or mark on “Watch product-page feature - LC-25-0103” (watch-feature-r004.png) has a gradient, shadow, metallic, foil, glow or blend effect.",
+   "assertion": {
+    "op": "v2_solid_raster_pb",
+    "hexes": [
+     "#191512",
+     "#EDE6D6",
+     "#9A9EA3",
+     "#9C7A3C",
+     "#5A2A28"
+    ],
+    "photos": [
+     "lunara_pdp_ardent.jpg"
+    ]
+   },
+   "how": "Checks every flat designed colour is a palette colour, with no shaded area and no type over a photograph."
+  },
+  {
+   "check_id": "PHOTO-24/watch-feature-r005/H058",
+   "output_id": "watch-feature-r005",
+   "rule_id": "R100",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "No type, panel, rule or mark on “Watch product-page feature - LC-25-0104” (watch-feature-r005.png) has a gradient, shadow, metallic, foil, glow or blend effect.",
+   "assertion": {
+    "op": "v2_solid_raster_pb",
+    "hexes": [
+     "#191512",
+     "#EDE6D6",
+     "#9A9EA3",
+     "#9C7A3C",
+     "#5A2A28"
+    ],
+    "photos": [
+     "lunara_pdp_halcyon.jpg"
+    ]
+   },
+   "how": "Checks every flat designed colour is a palette colour, with no shaded area and no type over a photograph."
+  },
+  {
+   "check_id": "PHOTO-24/watch-feature-r006/H057",
+   "output_id": "watch-feature-r006",
+   "rule_id": "R100",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "No type, panel, rule or mark on “Watch product-page feature - LC-25-0105” (watch-feature-r006.png) has a gradient, shadow, metallic, foil, glow or blend effect.",
+   "assertion": {
+    "op": "v2_solid_raster_pb",
+    "hexes": [
+     "#191512",
+     "#EDE6D6",
+     "#9A9EA3",
+     "#9C7A3C",
+     "#5A2A28"
+    ],
+    "photos": [
+     "lunara_pdp_vesper.jpg"
+    ]
+   },
+   "how": "Checks every flat designed colour is a palette colour, with no shaded area and no type over a photograph."
+  },
+  {
+   "check_id": "PHOTO-24/dealer-launch/H075",
+   "output_id": "dealer-launch",
+   "rule_id": "R100",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "No type, panel, rule or mark on “Watch dealer launch sheet” (dealer-launch.pdf) has a gradient, shadow, metallic, foil, glow or blend effect.",
+   "assertion": {
+    "op": "v2_pdf_flat_paint_pb"
+   },
+   "how": "Reads the PDF paint: opacity, shading, patterns, soft masks and blend modes."
+  },
+  {
+   "check_id": "PHOTO-24/watch-feature-r002/H001",
+   "output_id": "watch-feature-r002",
+   "rule_id": "R102",
+   "k_id": "K2_Q4",
+   "critical": false,
+   "check": "The watch on “Watch product-page feature - LC-25-0101” (watch-feature-r002.png) keeps the case proportions of lunara_pdp_meridian.jpg, not stretched, squashed or warped.",
+   "assertion": {
+    "op": "v2_photo_aspect_pb",
+    "photo": "lunara_pdp_meridian.jpg"
+   },
+   "how": "Finds the supplied photo and compares its horizontal and vertical scale and corner angles."
+  },
+  {
+   "check_id": "PHOTO-24/watch-feature-r003/H001",
+   "output_id": "watch-feature-r003",
+   "rule_id": "R102",
+   "k_id": "K2_Q4",
+   "critical": false,
+   "check": "The watch on “Watch product-page feature - LC-25-0102” (watch-feature-r003.png) keeps the case proportions of lunara_pdp_selene.jpg, not stretched, squashed or warped.",
+   "assertion": {
+    "op": "v2_photo_aspect_pb",
+    "photo": "lunara_pdp_selene.jpg"
+   },
+   "how": "Finds the supplied photo and compares its horizontal and vertical scale and corner angles."
+  },
+  {
+   "check_id": "PHOTO-24/watch-feature-r004/H001",
+   "output_id": "watch-feature-r004",
+   "rule_id": "R102",
+   "k_id": "K2_Q4",
+   "critical": false,
+   "check": "The watch on “Watch product-page feature - LC-25-0103” (watch-feature-r004.png) keeps the case proportions of lunara_pdp_ardent.jpg, not stretched, squashed or warped.",
+   "assertion": {
+    "op": "v2_photo_aspect_pb",
+    "photo": "lunara_pdp_ardent.jpg"
+   },
+   "how": "Finds the supplied photo and compares its horizontal and vertical scale and corner angles."
+  },
+  {
+   "check_id": "PHOTO-24/watch-feature-r005/H001",
+   "output_id": "watch-feature-r005",
+   "rule_id": "R102",
+   "k_id": "K2_Q4",
+   "critical": false,
+   "check": "The watch on “Watch product-page feature - LC-25-0104” (watch-feature-r005.png) keeps the case proportions of lunara_pdp_halcyon.jpg, not stretched, squashed or warped.",
+   "assertion": {
+    "op": "v2_photo_aspect_pb",
+    "photo": "lunara_pdp_halcyon.jpg"
+   },
+   "how": "Finds the supplied photo and compares its horizontal and vertical scale and corner angles."
+  },
+  {
+   "check_id": "PHOTO-24/watch-feature-r006/H001",
+   "output_id": "watch-feature-r006",
+   "rule_id": "R102",
+   "k_id": "K2_Q4",
+   "critical": false,
+   "check": "The watch on “Watch product-page feature - LC-25-0105” (watch-feature-r006.png) keeps the case proportions of lunara_pdp_vesper.jpg, not stretched, squashed or warped.",
+   "assertion": {
+    "op": "v2_photo_aspect_pb",
+    "photo": "lunara_pdp_vesper.jpg"
+   },
+   "how": "Finds the supplied photo and compares its horizontal and vertical scale and corner angles."
+  },
+  {
+   "check_id": "PHOTO-24/watch-feature-r002/H020",
+   "output_id": "watch-feature-r002",
+   "rule_id": "R103",
+   "k_id": "K2_Q4",
+   "critical": false,
+   "check": "The dial markings, hands, crown and bracelet on “Watch product-page feature - LC-25-0101” (watch-feature-r002.png) match lunara_pdp_meridian.jpg, with nothing generated, redrawn or removed.",
+   "assertion": {
+    "op": "v2_photo_compare_pb",
+    "pass_if": [
+     [
+      "ncc_min",
+      ">=",
+      0.95
+     ]
+    ],
+    "fail_if": [],
+    "photo": "lunara_pdp_meridian.jpg",
+    "region": "subject"
+   },
+   "how": "Lays the supplied photo over the placed one and compares them tile by tile: colour, detail and correlation."
+  },
+  {
+   "check_id": "PHOTO-24/watch-feature-r003/H020",
+   "output_id": "watch-feature-r003",
+   "rule_id": "R103",
+   "k_id": "K2_Q4",
+   "critical": false,
+   "check": "The dial markings, hands, crown and bracelet on “Watch product-page feature - LC-25-0102” (watch-feature-r003.png) match lunara_pdp_selene.jpg, with nothing generated, redrawn or removed.",
+   "assertion": {
+    "op": "v2_photo_compare_pb",
+    "pass_if": [
+     [
+      "ncc_min",
+      ">=",
+      0.95
+     ]
+    ],
+    "fail_if": [],
+    "photo": "lunara_pdp_selene.jpg",
+    "region": "subject"
+   },
+   "how": "Lays the supplied photo over the placed one and compares them tile by tile: colour, detail and correlation."
+  },
+  {
+   "check_id": "PHOTO-24/watch-feature-r005/H020",
+   "output_id": "watch-feature-r005",
+   "rule_id": "R103",
+   "k_id": "K2_Q4",
+   "critical": false,
+   "check": "The dial markings, hands, crown and bracelet on “Watch product-page feature - LC-25-0104” (watch-feature-r005.png) match lunara_pdp_halcyon.jpg, with nothing generated, redrawn or removed.",
+   "assertion": {
+    "op": "v2_photo_compare_pb",
+    "pass_if": [
+     [
+      "ncc_min",
+      ">=",
+      0.95
+     ]
+    ],
+    "fail_if": [],
+    "photo": "lunara_pdp_halcyon.jpg",
+    "region": "subject"
+   },
+   "how": "Lays the supplied photo over the placed one and compares them tile by tile: colour, detail and correlation."
+  },
+  {
+   "check_id": "PHOTO-24/watch-feature-r004/H020",
+   "output_id": "watch-feature-r004",
+   "rule_id": "R104",
+   "k_id": "K2_Q4",
+   "critical": false,
+   "check": "The dial markings, hands, crown and strap on “Watch product-page feature - LC-25-0103” (watch-feature-r004.png) match lunara_pdp_ardent.jpg, with nothing generated, redrawn or removed.",
+   "assertion": {
+    "op": "v2_photo_compare_pb",
+    "pass_if": [
+     [
+      "ncc_min",
+      ">=",
+      0.95
+     ]
+    ],
+    "fail_if": [],
+    "photo": "lunara_pdp_ardent.jpg",
+    "region": "subject"
+   },
+   "how": "Lays the supplied photo over the placed one and compares them tile by tile: colour, detail and correlation."
+  },
+  {
+   "check_id": "PHOTO-24/watch-feature-r006/H020",
+   "output_id": "watch-feature-r006",
+   "rule_id": "R104",
+   "k_id": "K2_Q4",
+   "critical": false,
+   "check": "The dial markings, hands, crown and strap on “Watch product-page feature - LC-25-0105” (watch-feature-r006.png) match lunara_pdp_vesper.jpg, with nothing generated, redrawn or removed.",
+   "assertion": {
+    "op": "v2_photo_compare_pb",
+    "pass_if": [
+     [
+      "ncc_min",
+      ">=",
+      0.95
+     ]
+    ],
+    "fail_if": [],
+    "photo": "lunara_pdp_vesper.jpg",
+    "region": "subject"
+   },
+   "how": "Lays the supplied photo over the placed one and compares them tile by tile: colour, detail and correlation."
+  },
+  {
+   "check_id": "PHOTO-24/watch-keyvisual/H009",
+   "output_id": "watch-keyvisual",
+   "rule_id": "R107",
+   "k_id": "K2_Q4",
+   "critical": false,
+   "check": "The watch on “Autumn watch key visual” (watch-keyvisual.png) keeps the case, dial markings, hands and strap or bracelet of its source campaign frame, with nothing generated or removed.",
+   "assertion": {
+    "op": "v2_photo_compare_pb",
+    "pass_if": [
+     [
+      "ncc_min",
+      ">=",
+      0.9
+     ]
+    ],
+    "fail_if": [],
+    "photos": [
+     "lunara_campaign_01.jpg",
+     "lunara_campaign_02.jpg",
+     "lunara_campaign_03.jpg",
+     "lunara_campaign_04.jpg",
+     "lunara_campaign_05.jpg",
+     "lunara_campaign_06.jpg",
+     "lunara_campaign_07.jpg",
+     "lunara_campaign_08.jpg",
+     "lunara_campaign_09.jpg"
+    ],
+    "region": "subject"
+   },
+   "how": "Lays the supplied photo over the placed one and compares them tile by tile: colour, detail and correlation."
+  },
+  {
+   "check_id": "PHOTO-24/watch-keyvisual/H057",
+   "output_id": "watch-keyvisual",
+   "rule_id": "R108",
+   "k_id": "K2_Q4",
+   "critical": false,
+   "check": "The watch on “Autumn watch key visual” (watch-keyvisual.png) keeps the case proportions of its source campaign frame, not stretched, squashed or warped.",
+   "assertion": {
+    "op": "v2_any_of",
+    "checks": [
+     {
+      "op": "v2_photo_aspect_pb",
+      "photo": "lunara_campaign_01.jpg"
+     },
+     {
+      "op": "v2_photo_aspect_pb",
+      "photo": "lunara_campaign_02.jpg"
+     },
+     {
+      "op": "v2_photo_aspect_pb",
+      "photo": "lunara_campaign_03.jpg"
+     },
+     {
+      "op": "v2_photo_aspect_pb",
+      "photo": "lunara_campaign_04.jpg"
+     },
+     {
+      "op": "v2_photo_aspect_pb",
+      "photo": "lunara_campaign_05.jpg"
+     },
+     {
+      "op": "v2_photo_aspect_pb",
+      "photo": "lunara_campaign_06.jpg"
+     },
+     {
+      "op": "v2_photo_aspect_pb",
+      "photo": "lunara_campaign_07.jpg"
+     },
+     {
+      "op": "v2_photo_aspect_pb",
+      "photo": "lunara_campaign_08.jpg"
+     },
+     {
+      "op": "v2_photo_aspect_pb",
+      "photo": "lunara_campaign_09.jpg"
+     }
+    ]
+   },
+   "how": "Either route can answer: finds the supplied photo and compares its horizontal and vertical scale and corner angles; or: finds the supplied photo and compares its horizontal and vertical scale and corner angles; or: finds the supplied photo and compares its horizontal and vertical scale and corner angles; or: finds the supplied photo and compares its horizontal and vertical scale and corner angles; or: finds the supplied photo and compares its horizontal and vertical scale and corner angles; or: finds the supplied photo and compares its horizontal and vertical scale and corner angles; or: finds the supplied photo and compares its horizontal and vertical scale and corner angles; or: finds the supplied photo and compares its horizontal and vertical scale and corner angles; or: finds the supplied photo and compares its horizontal and vertical scale and corner angles. One must pass and none may fail."
+  },
+  {
+   "check_id": "PHOTO-24/dealer-launch/H077",
+   "output_id": "dealer-launch",
+   "rule_id": "R109",
+   "k_id": "K2_Q4",
+   "critical": false,
+   "check": "The watch pictured as Meridian on “Watch dealer launch sheet” (dealer-launch.pdf) keeps the case proportions of lunara_pdp_meridian.jpg, not stretched, squashed or warped.",
+   "assertion": {
+    "op": "v2_photo_aspect_pb",
+    "photo": "lunara_pdp_meridian.jpg"
+   },
+   "how": "Finds the supplied photo and compares its horizontal and vertical scale and corner angles."
+  },
+  {
+   "check_id": "PHOTO-24/dealer-launch/H078",
+   "output_id": "dealer-launch",
+   "rule_id": "R109",
+   "k_id": "K2_Q4",
+   "critical": false,
+   "check": "The watch pictured as Selene on “Watch dealer launch sheet” (dealer-launch.pdf) keeps the case proportions of lunara_pdp_selene.jpg, not stretched, squashed or warped.",
+   "assertion": {
+    "op": "v2_photo_aspect_pb",
+    "photo": "lunara_pdp_selene.jpg"
+   },
+   "how": "Finds the supplied photo and compares its horizontal and vertical scale and corner angles."
+  },
+  {
+   "check_id": "PHOTO-24/dealer-launch/H079",
+   "output_id": "dealer-launch",
+   "rule_id": "R109",
+   "k_id": "K2_Q4",
+   "critical": false,
+   "check": "The watch pictured as Ardent on “Watch dealer launch sheet” (dealer-launch.pdf) keeps the case proportions of lunara_pdp_ardent.jpg, not stretched, squashed or warped.",
+   "assertion": {
+    "op": "v2_photo_aspect_pb",
+    "photo": "lunara_pdp_ardent.jpg"
+   },
+   "how": "Finds the supplied photo and compares its horizontal and vertical scale and corner angles."
+  },
+  {
+   "check_id": "PHOTO-24/dealer-launch/H080",
+   "output_id": "dealer-launch",
+   "rule_id": "R109",
+   "k_id": "K2_Q4",
+   "critical": false,
+   "check": "The watch pictured as Halcyon on “Watch dealer launch sheet” (dealer-launch.pdf) keeps the case proportions of lunara_pdp_halcyon.jpg, not stretched, squashed or warped.",
+   "assertion": {
+    "op": "v2_photo_aspect_pb",
+    "photo": "lunara_pdp_halcyon.jpg"
+   },
+   "how": "Finds the supplied photo and compares its horizontal and vertical scale and corner angles."
+  },
+  {
+   "check_id": "PHOTO-24/dealer-launch/H081",
+   "output_id": "dealer-launch",
+   "rule_id": "R109",
+   "k_id": "K2_Q4",
+   "critical": false,
+   "check": "The watch pictured as Vesper on “Watch dealer launch sheet” (dealer-launch.pdf) keeps the case proportions of lunara_pdp_vesper.jpg, not stretched, squashed or warped.",
+   "assertion": {
+    "op": "v2_photo_aspect_pb",
+    "photo": "lunara_pdp_vesper.jpg"
+   },
+   "how": "Finds the supplied photo and compares its horizontal and vertical scale and corner angles."
   },
   {
    "check_id": "PHOTO-24/watch-feature-r002/H010",

@@ -147,8 +147,10 @@
     "assets": [],
     "note": "Brief: the booking action is readable. Inspect the delivered PNG at 100%."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Checks each named text lies fully inside the page or image."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-04/booking-hero-oliveto/H003",
@@ -290,8 +292,10 @@
     ],
     "note": "rates_2027.csv, fields Season and Nightly Rate (EUR). owner_note.txt: S1, S2 and S3 are Spring, High Summer and Autumn."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads where each value stands and checks the value that belongs to this name (by its section, column or line) is the expected one, for each of the 9 named texts; all must pass."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-04/villa-collection/H002",
@@ -1611,8 +1615,10 @@
     "assets": [],
     "note": "Brief, pinned: the offer price is the lowest 2027 nightly rate, shown as a from price with its season named."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Runs the check and lets it decide only in the direction it is sure of; the other answer goes to a person."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-04/booking-hero-oliveto/H007",
@@ -2176,8 +2182,10 @@
     ],
     "note": "The Casa Verranza frames are verranza_pool.jpg, verranza_terrace.jpg, verranza_bedroom.jpg, verranza_living.jpg."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Matches every picture on the section's pages against the supplied photos of each section."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-04/villa-collection/H012",
@@ -2258,8 +2266,10 @@
     ],
     "note": "The Casa Oliveto frames are oliveto_pool.jpg, oliveto_terrace.jpg, oliveto_bedroom.jpg, oliveto_living.jpg."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Matches every picture on the section's pages against the supplied photos of each section."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-04/villa-collection/H019",
@@ -2340,8 +2350,10 @@
     ],
     "note": "The Casa Scogliera frames are scogliera_pool.jpg, scogliera_terrace.jpg, scogliera_bedroom.jpg, scogliera_living.jpg."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Matches every picture on the section's pages against the supplied photos of each section."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-04/villa-collection/H025",
@@ -2546,8 +2558,10 @@
     ],
     "note": "owner_note.txt: \"No water a colour that water is not.\" verranza_pool.jpg."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Finds the supplied photo in the deliverable, maps the placement back onto it and compares tiles, colour, tone or fine detail."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-04/villa-collection/H015",
@@ -2612,8 +2626,10 @@
     ],
     "note": "owner_note.txt: \"No water a colour that water is not.\" oliveto_pool.jpg."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Finds the supplied photo in the deliverable, maps the placement back onto it and compares tiles, colour, tone or fine detail."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-04/villa-collection/H022",
@@ -3055,8 +3071,10 @@
     "assets": [],
     "note": "Brand type system rule: No gold. Palette rules, forbidden: no metallic effect on any type, panel, rule, button or icon."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the designed colours and checks none is a gold or metallic yellow-brown."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-04/villa-collection/H008",
@@ -3261,8 +3279,10 @@
     "assets": [],
     "note": "Palette rules, opacity: every palette colour solid at 100%; no tint, gradient, shadow or blend mode, and no scrim or overlay of any colour, black and white included, over a photograph."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Runs each part; all must pass: Reads the shapes, pictures and graphics states drawn over each placed photograph for transparency, shading or blending; Reads the PDF for any transparency or gradient shading."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-04/villa-collection/H032",
@@ -3369,8 +3389,10 @@
     "assets": [],
     "note": "Palette rules, distribution: the accents are for hairline rules, dividers and small labels only."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads every shape and text span drawn in the colour from the PDF and checks each is a thin rule or a small label."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-04/villa-collection/H034",
@@ -3417,8 +3439,10 @@
     "assets": [],
     "note": "Brand palette, six hexes. Palette rules, forbidden: no colour outside them for type, panels, rules, buttons or icons."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads every flat colour outside the photographs, the margin left out, and checks each is a palette colour."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-04/booking-hero-oliveto/H004",
@@ -3491,8 +3515,10 @@
     "assets": [],
     "note": "Palette rules: Verranza Blue and Lime Wash are mandatory."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Looks for the colour as a flat area outside the photographs, for each of the 2 named texts; all must pass."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-04/booking-hero-oliveto/H013",
@@ -3639,8 +3665,10 @@
     "assets": [],
     "note": "Brand type system rule: No gold. Palette rules, forbidden: no metallic effect on any type, panel, rule, button or icon."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the designed colours and checks none is a gold or metallic yellow-brown."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-04/booking-hero-oliveto/H015",
@@ -3718,8 +3746,10 @@
     ],
     "note": "Palette rules, distribution: on Lime Wash, the house name, display lines and the booking-button label are Verranza Blue, and body text, rates and captions are Ink Charcoal, as on agentcard_2025_print.pdf. On Verranza Blue, all type is Lime Wash."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads each selected text line by OCR, then the colour of its letters and of the ground behind it."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-04/booking-hero-oliveto/H016",
@@ -3807,8 +3837,10 @@
     "assets": [],
     "note": "Palette rules, distribution: the accents are for hairline rules, dividers and small labels only."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Finds every piece in the colour outside the photographs and checks it is a thin rule or sits inside a small label."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-04/booking-hero-oliveto/H017",
@@ -3881,8 +3913,10 @@
     "assets": [],
     "note": "Brand identity, palette_rules.opacity: every palette colour solid at 100% opacity; no scrim, gradient or overlay over a photograph; supplied identity artwork at 100% layer opacity."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Compares the photo with the supplied file (images) or reads the shapes drawn over it (PDFs) for a scrim, gradient or tint."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-04/booking-hero-oliveto/H049",
@@ -3955,8 +3989,10 @@
     "assets": [],
     "note": "Brand identity, palette_rules.distribution: grounds and panels are Lime Wash or Verranza Blue; on Lime Wash the house name, display lines and booking-button label are Verranza Blue, body text, rates and captions Ink Charcoal; on Verranza Blue all type is Lime Wash."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Finds every ground, band, panel and button (flat areas outside the photographs) and reads its colour."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-04/booking-hero-oliveto/H050",
@@ -4271,8 +4307,10 @@
     "assets": [],
     "note": "Brand identity, palette_rules.opacity: every palette colour solid at 100% opacity; no scrim, gradient or overlay over a photograph; supplied identity artwork at 100% layer opacity."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the shapes, pictures and graphics states drawn over each placed photograph for transparency, shading or blending."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-04/villa-collection/H055",
@@ -4319,8 +4357,10 @@
     "assets": [],
     "note": "Brand identity, palette_rules.distribution: grounds and panels are Lime Wash or Verranza Blue; on Lime Wash the house name, display lines and booking-button label are Verranza Blue, body text, rates and captions Ink Charcoal; on Verranza Blue all type is Lime Wash."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads each page's ground from the rendered page and every opaque filled panel from the PDF, and checks their colours."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-04/villa-collection/H056",
@@ -4415,8 +4455,10 @@
     "assets": [],
     "note": "Brand identity, palette_rules.distribution: grounds and panels are Lime Wash or Verranza Blue; on Lime Wash the house name, display lines and booking-button label are Verranza Blue, body text, rates and captions Ink Charcoal; on Verranza Blue all type is Lime Wash."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Runs the check under a narrow and a broad reading of the definition and answers only when both agree."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-04/villa-collection/H058",
@@ -4463,8 +4505,11 @@
     "assets": [],
     "note": "Brand identity, palette_rules.distribution: the three accents are for hairline rules, dividers and small labels only, together no more than 5% of the designed, non-photographic area."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Measures the share of each page outside the placed pictures in the colours, page by page and over the whole file.",
+    "Measures the share of the area outside the photographs in the named colours."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-04/booking-hero-oliveto/H061",
@@ -4550,8 +4595,10 @@
     "assets": [],
     "note": "Brand identity, palette: Ligurian Stone, hairline rules and dividers only. Never a ground, panel or body text."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Finds every piece in the colour outside the photographs and checks it is a thin rule or sits inside a small label."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-04/booking-hero-oliveto/H067",
@@ -4624,8 +4671,10 @@
     "assets": [],
     "note": "Brand identity, palette: Ligurian Stone, hairline rules and dividers only. Never a ground, panel or body text."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads every shape and text span drawn in the colour from the PDF and checks each is a thin rule or a small label."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-04/villa-collection/H091",
@@ -4749,8 +4798,10 @@
     ],
     "note": "Type system steps 03 and 04: body, the booking line, rates and captions are Source Sans 3 Regular, the only sans weight in the scale. Brand type system rules: rates and captions are Source Sans 3 Regular only; every figure lives in Source Sans 3. Brochure body is 10 pt on 15 pt; brochure rates 9 pt."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Runs the check under a narrow and a broad reading of the definition and answers only when both agree."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-04/villa-collection/H036",
@@ -5056,8 +5107,10 @@
     ],
     "note": "Brand type system rule: no weight above Light in Cormorant Garamond. Steps 01 and 02 are Cormorant Garamond Light."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads each named line by OCR, renders its own text in every brand font and weight and in common stand-in fonts, and compares the letter shapes and stroke thickness with the image; only a clear best match counts."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-04/booking-hero-oliveto/H018",
@@ -5383,8 +5436,10 @@
     "assets": [],
     "note": "Type system step 03: body text held to a maximum of 65 characters."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Counts the characters of every line (PDF text, or OCR lines outside the photographs)."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-04/booking-hero-oliveto/H022",
@@ -5466,8 +5521,10 @@
     ],
     "note": "Current brand typography; use the authored font settings for exact sizes, tracking and variable-font axes. A raster preview alone does not prove those settings. If evidence is unavailable, leave this check unassessed."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Runs the check under a narrow and a broad reading of the definition and answers only when both agree."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-04/villa-collection/H047",
@@ -5532,8 +5589,10 @@
     ],
     "note": "Current brand typography; use the authored font settings for exact sizes, tracking and variable-font axes. A raster preview alone does not prove those settings. If evidence is unavailable, leave this check unassessed."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Runs the check under a narrow and a broad reading of the definition and answers only when both agree."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-04/villa-collection/H048",
@@ -5805,8 +5864,10 @@
     "assets": [],
     "note": "Brand identity, type scale step 02: Subheading / H2, Cormorant Garamond Light; brochure secondary headings."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Runs the check under a narrow and a broad reading of the definition and answers only when both agree."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-04/villa-collection/H088",
@@ -5853,8 +5914,10 @@
     "assets": [],
     "note": "Brand identity, type scale step 04: Fine print, Source Sans 3 Regular (rates and captions)."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Runs each part; all must pass: Reads the text lines, sorts them into body, headings and fine print by size, and checks the named role; Reads the font, size or letter case of the selected lines from the PDF."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-04/villa-collection/H089",
@@ -6209,8 +6272,10 @@
     "assets": [],
     "note": "Brand type system rule: name the stone, the water and the light, and never oversell. Brand voice: warm, plain and place-first; we never oversell."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the live text of the section's pages for the named words."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-04/villa-collection/H040",
@@ -6383,8 +6448,10 @@
     "assets": [],
     "note": "Brand type system rule: name the stone, the water and the light, and never oversell. Brand voice: warm, plain and place-first; we never oversell."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Runs the check and lets it decide only in the direction it is sure of; the other answer goes to a person."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-04/booking-hero-oliveto/H023",
@@ -6737,8 +6804,10 @@
     "assets": [],
     "note": "Brand voice: we name the stone, the water and the afternoon light, and we never oversell."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the live text of the section's pages for the named words."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-04/villa-collection/H072",
@@ -6883,8 +6952,10 @@
     "assets": [],
     "note": "Brand type system rule: name the stone, the water and the light, and never oversell. Brand voice: warm, plain and place-first; we never oversell."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the live text of the section's pages for the named words."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-04/villa-collection/H096",
@@ -6987,8 +7058,10 @@
     "assets": [],
     "note": "Brand type system rule: name the stone, the water and the light, and never oversell. Brand voice: warm, plain and place-first; we never oversell."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Runs the check and lets it decide only in the direction it is sure of; the other answer goes to a person."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-04/booking-hero-oliveto/H071",
@@ -7155,8 +7228,10 @@
     "assets": [],
     "note": "Brand voice: we name the stone, the water and the afternoon light, and we never oversell."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the live text of the section's pages for the named words."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-04/villa-collection/H098",
@@ -7251,8 +7326,10 @@
     "assets": [],
     "note": "Brand voice: we name the stone, the water and the afternoon light, and we never oversell."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the live text of the section's pages for the named words."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-04/villa-collection/H100",
@@ -7368,8 +7445,10 @@
     ],
     "note": "owner_note.txt: \"A guest choosing between our own three houses should not be able to tell they were shot on different days.\""
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Finds the supplied photo in the deliverable, maps the placement back onto it and compares tiles, colour, tone or fine detail."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-04/villa-collection/H013",
@@ -7548,8 +7627,10 @@
     ],
     "note": "owner_note.txt: \"A guest choosing between our own three houses should not be able to tell they were shot on different days.\""
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Finds the supplied photo in the deliverable, maps the placement back onto it and compares tiles, colour, tone or fine detail."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-04/villa-collection/H020",
@@ -8623,8 +8704,10 @@
     "assets": [],
     "note": "owner_note.txt, do-not-want list: nothing cooked; no fake evening glow, no orange skin, no crushed blacks. Brief: keep the real stone, limewash, water and coastal light."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Finds the supplied photo in the deliverable, maps the placement back onto it and compares tiles, colour, tone or fine detail."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-04/villa-collection/H061",
@@ -9023,8 +9106,10 @@
     "assets": [],
     "note": "Type system: rates are fine print (step 04, 15 px), below body and booking-action text (step 03, 20 px)."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Compares the sizes of every line of one kind with every line of the other."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-04/booking-hero-oliveto/H059",
@@ -9147,8 +9232,10 @@
     "assets": [],
     "note": "Type system step 02: in the brochure, keep secondary headings smaller than the 34 pt house names."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the PDF font sizes of the headings and of the named lines and compares them."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-04/villa-collection/H066",

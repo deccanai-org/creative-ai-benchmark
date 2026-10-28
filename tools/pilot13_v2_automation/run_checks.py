@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
 """Run the moved checks on a folder of delivered files (default: the 2026-09-28 pilot run) and write a report.
 
-Usage: python run_checks.py [--run <run root>] [--tasks PHOTO-19 ...] [--out results.json]
+Usage: python run_checks.py [--run <run root>] [--tasks PHOTO-19 ...] [--out results.json] [--shard K/N]
+(--shard K/N: only the checks on every N-th delivered file, starting at the K-th (0-based), so N processes can share
+one task; each file's checks stay in one process, so what one check reads from a file is reused by the next)
 Run with the benchmark_v4 venv (PyMuPDF, OpenCV) and Tesseract on PATH.
 """
 import argparse
@@ -31,7 +33,9 @@ def main():
     ap.add_argument('--run', type=Path, default=DEFAULT_RUN)
     ap.add_argument('--tasks', nargs='*')
     ap.add_argument('--out', type=Path, default=HERE / 'run_results.json')
+    ap.add_argument('--shard', default='0/1')
     args = ap.parse_args()
+    shard, shards = map(int, args.shard.split('/'))
     results, counts = [], Counter()
     for f in sorted((HERE / 'moved').glob('*.json')):
         tid = f.stem
@@ -40,6 +44,9 @@ def main():
         spec = json.loads((ROOT / 'docs/gatsby-v7/tasks' / tid / 'TASK_SPEC.json').read_text())
         outputs = {o['output_id']: o for o in spec['deliverables']}
         moved = json.loads(f.read_text())['moved']
+        files = sorted({m['output_id'] for m in moved})
+        mine = set(files[shard::shards])
+        moved = [m for m in moved if m['output_id'] in mine]
         started = time.time()
         for m in moved:
             file = args.run / tid / outputs[m['output_id']]['path']
