@@ -1,0 +1,2602 @@
+{
+ "task_id": "PHOTO-20",
+ "moved": [
+  {
+   "check_id": "PHOTO-20/event-announcement-r002/H001",
+   "output_id": "event-announcement-r002",
+   "rule_id": "R003",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The event name “Northlight Design Forum” on “Confirmed-talk speaker announcement - Northlight Design Forum - Designing the thing before the deck” (event-announcement-r002.png) is fully visible, not cropped at any edge.",
+   "assertion": {
+    "op": "v2_text_inside",
+    "texts": [
+     "Northlight Design Forum"
+    ]
+   },
+   "how": "Checks the named text is read in full inside the page or image (for a mark, its letters read as a line of their own)."
+  },
+  {
+   "check_id": "PHOTO-20/event-announcement-r003/H001",
+   "output_id": "event-announcement-r003",
+   "rule_id": "R003",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The event name “Made & Kept” on “Confirmed-talk speaker announcement - Made & Kept - Six people, one hand” (event-announcement-r003.png) is fully visible, not cropped at any edge.",
+   "assertion": {
+    "op": "v2_text_inside",
+    "texts": [
+     "Made & Kept"
+    ]
+   },
+   "how": "Checks the named text is read in full inside the page or image (for a mark, its letters read as a line of their own)."
+  },
+  {
+   "check_id": "PHOTO-20/event-announcement-r008/H001",
+   "output_id": "event-announcement-r008",
+   "rule_id": "R003",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The event name “Continuum Product Days” on “Confirmed-talk speaker announcement - Continuum Product Days - What survives contact with a factory” (event-announcement-r008.png) is fully visible, not cropped at any edge.",
+   "assertion": {
+    "op": "v2_text_inside",
+    "texts": [
+     "Continuum Product Days"
+    ]
+   },
+   "how": "Checks the named text is read in full inside the page or image (for a mark, its letters read as a line of their own)."
+  },
+  {
+   "check_id": "PHOTO-20/event-announcement-r002/H003",
+   "output_id": "event-announcement-r002",
+   "rule_id": "R004",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The speaker name “Astrid Vellacourt” appears on “Confirmed-talk speaker announcement - Northlight Design Forum - Designing the thing before the deck” (event-announcement-r002.png).",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "Astrid Vellacourt"
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-20/event-announcement-r003/H003",
+   "output_id": "event-announcement-r003",
+   "rule_id": "R004",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The speaker name “Astrid Vellacourt” appears on “Confirmed-talk speaker announcement - Made & Kept - Six people, one hand” (event-announcement-r003.png).",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "Astrid Vellacourt"
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-20/event-announcement-r008/H003",
+   "output_id": "event-announcement-r008",
+   "rule_id": "R004",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The speaker name “Astrid Vellacourt” appears on “Confirmed-talk speaker announcement - Continuum Product Days - What survives contact with a factory” (event-announcement-r008.png).",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "Astrid Vellacourt"
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-20/event-banner-r002/H007",
+   "output_id": "event-banner-r002",
+   "rule_id": "R004",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The speaker name “Astrid Vellacourt” appears on “Confirmed-talk speaker banner - Northlight Design Forum - Designing the thing before the deck” (event-banner-r002.png).",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "Astrid Vellacourt"
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-20/event-banner-r003/H008",
+   "output_id": "event-banner-r003",
+   "rule_id": "R004",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The speaker name “Astrid Vellacourt” appears on “Confirmed-talk speaker banner - Made & Kept - Six people, one hand” (event-banner-r003.png).",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "Astrid Vellacourt"
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-20/event-banner-r008/H008",
+   "output_id": "event-banner-r008",
+   "rule_id": "R004",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The speaker name “Astrid Vellacourt” appears on “Confirmed-talk speaker banner - Continuum Product Days - What survives contact with a factory” (event-banner-r008.png).",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "Astrid Vellacourt"
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-20/talk-card-r002/H005",
+   "output_id": "talk-card-r002",
+   "rule_id": "R004",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The speaker name “Astrid Vellacourt” appears on “Speaker talk card - Northlight Design Forum - Designing the thing before the deck” (talk-card-r002.pdf).",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "Astrid Vellacourt"
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-20/talk-card-r003/H003",
+   "output_id": "talk-card-r003",
+   "rule_id": "R004",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The speaker name “Astrid Vellacourt” appears on “Speaker talk card - Made & Kept - Six people, one hand” (talk-card-r003.pdf).",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "Astrid Vellacourt"
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-20/talk-card-r004/H003",
+   "output_id": "talk-card-r004",
+   "rule_id": "R004",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The speaker name “Astrid Vellacourt” appears on “Speaker talk card - Fjordworks Summit - On staying small on purpose” (talk-card-r004.pdf).",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "Astrid Vellacourt"
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-20/talk-card-r005/H003",
+   "output_id": "talk-card-r005",
+   "rule_id": "R004",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The speaker name “Astrid Vellacourt” appears on “Speaker talk card - Fjordworks Summit - The room after the round” (talk-card-r005.pdf).",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "Astrid Vellacourt"
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-20/talk-card-r006/H006",
+   "output_id": "talk-card-r006",
+   "rule_id": "R004",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The speaker name “Astrid Vellacourt” appears on “Speaker talk card - Halden Design Days - From sketch to tooling” (talk-card-r006.pdf).",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "Astrid Vellacourt"
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-20/talk-card-r007/H003",
+   "output_id": "talk-card-r007",
+   "rule_id": "R004",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The speaker name “Astrid Vellacourt” appears on “Speaker talk card - The Bench Sessions - Designing for the next hands” (talk-card-r007.pdf).",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "Astrid Vellacourt"
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-20/talk-card-r008/H003",
+   "output_id": "talk-card-r008",
+   "rule_id": "R004",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The speaker name “Astrid Vellacourt” appears on “Speaker talk card - Continuum Product Days - What survives contact with a factory” (talk-card-r008.pdf).",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "Astrid Vellacourt"
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-20/talk-card-r009/H003",
+   "output_id": "talk-card-r009",
+   "rule_id": "R004",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The speaker name “Astrid Vellacourt” appears on “Speaker talk card - Grain & Frame Forum - What a small studio can promise” (talk-card-r009.pdf).",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "Astrid Vellacourt"
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-20/event-announcement-r002/H004",
+   "output_id": "event-announcement-r002",
+   "rule_id": "R005",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The event name on “Confirmed-talk speaker announcement - Northlight Design Forum - Designing the thing before the deck” (event-announcement-r002.png) reads exactly “Northlight Design Forum”, as in vellacourt_talks.csv row 2.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "Northlight Design Forum"
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-20/event-banner-r002/H003",
+   "output_id": "event-banner-r002",
+   "rule_id": "R005",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The event name on “Confirmed-talk speaker banner - Northlight Design Forum - Designing the thing before the deck” (event-banner-r002.png) reads exactly “Northlight Design Forum”, as in vellacourt_talks.csv row 2.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "Northlight Design Forum"
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-20/event-announcement-r002/H005",
+   "output_id": "event-announcement-r002",
+   "rule_id": "R006",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The date on “Confirmed-talk speaker announcement - Northlight Design Forum - Designing the thing before the deck” (event-announcement-r002.png) reads exactly “14 Feb 2026”, as in vellacourt_talks.csv row 2.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "14 Feb 2026"
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-20/event-banner-r002/H004",
+   "output_id": "event-banner-r002",
+   "rule_id": "R006",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The date on “Confirmed-talk speaker banner - Northlight Design Forum - Designing the thing before the deck” (event-banner-r002.png) reads exactly “14 Feb 2026”, as in vellacourt_talks.csv row 2.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "14 Feb 2026"
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-20/event-announcement-r002/H006",
+   "output_id": "event-announcement-r002",
+   "rule_id": "R007",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The talk title on “Confirmed-talk speaker announcement - Northlight Design Forum - Designing the thing before the deck” (event-announcement-r002.png) reads exactly “Designing the thing before the deck”, as in vellacourt_talks.csv row 2.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "Designing the thing before the deck"
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-20/event-banner-r002/H005",
+   "output_id": "event-banner-r002",
+   "rule_id": "R007",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The talk title on “Confirmed-talk speaker banner - Northlight Design Forum - Designing the thing before the deck” (event-banner-r002.png) reads exactly “Designing the thing before the deck”, as in vellacourt_talks.csv row 2.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "Designing the thing before the deck"
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-20/event-announcement-r002/H008",
+   "output_id": "event-announcement-r002",
+   "rule_id": "R008",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The headline on “Confirmed-talk speaker announcement - Northlight Design Forum - Designing the thing before the deck” (event-announcement-r002.png) reads “I'll be speaking.”, as in her announcement wording.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "I'll be speaking."
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-20/event-announcement-r003/H009",
+   "output_id": "event-announcement-r003",
+   "rule_id": "R008",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The headline on “Confirmed-talk speaker announcement - Made & Kept - Six people, one hand” (event-announcement-r003.png) reads “I'll be speaking.”, as in her announcement wording.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "I'll be speaking."
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-20/event-announcement-r008/H008",
+   "output_id": "event-announcement-r008",
+   "rule_id": "R008",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The headline on “Confirmed-talk speaker announcement - Continuum Product Days - What survives contact with a factory” (event-announcement-r008.png) reads “I'll be speaking.”, as in her announcement wording.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "I'll be speaking."
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-20/event-announcement-r002/H009",
+   "output_id": "event-announcement-r002",
+   "rule_id": "R009",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The body line on “Confirmed-talk speaker announcement - Northlight Design Forum - Designing the thing before the deck” (event-announcement-r002.png) reads “I'm speaking at Northlight Design Forum on 14 Feb 2026. Designing the thing before the deck.”",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "I'm speaking at Northlight Design Forum on 14 Feb 2026. Designing the thing before the deck."
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-20/event-announcement-r003/H010",
+   "output_id": "event-announcement-r003",
+   "rule_id": "R009",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The body line on “Confirmed-talk speaker announcement - Made & Kept - Six people, one hand” (event-announcement-r003.png) reads “I'm speaking at Made & Kept on 2026-03-03. Six people, one hand.”",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "I'm speaking at Made & Kept on 2026-03-03. Six people, one hand."
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-20/event-announcement-r008/H009",
+   "output_id": "event-announcement-r008",
+   "rule_id": "R009",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The body line on “Confirmed-talk speaker announcement - Continuum Product Days - What survives contact with a factory” (event-announcement-r008.png) reads “I'm speaking at Continuum Product Days on May 9. What survives contact with a factory.”",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "I'm speaking at Continuum Product Days on May 9. What survives contact with a factory."
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-20/event-announcement-r002/H010",
+   "output_id": "event-announcement-r002",
+   "rule_id": "R010",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The sign-off on “Confirmed-talk speaker announcement - Northlight Design Forum - Designing the thing before the deck” (event-announcement-r002.png) reads “Astrid Vellacourt - Vellacourt & Sund.”",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "Astrid Vellacourt - Vellacourt & Sund."
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-20/event-announcement-r003/H011",
+   "output_id": "event-announcement-r003",
+   "rule_id": "R010",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The sign-off on “Confirmed-talk speaker announcement - Made & Kept - Six people, one hand” (event-announcement-r003.png) reads “Astrid Vellacourt - Vellacourt & Sund.”",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "Astrid Vellacourt - Vellacourt & Sund."
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-20/event-announcement-r008/H010",
+   "output_id": "event-announcement-r008",
+   "rule_id": "R010",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The sign-off on “Confirmed-talk speaker announcement - Continuum Product Days - What survives contact with a factory” (event-announcement-r008.png) reads “Astrid Vellacourt - Vellacourt & Sund.”",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "Astrid Vellacourt - Vellacourt & Sund."
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-20/event-announcement-r003/H004",
+   "output_id": "event-announcement-r003",
+   "rule_id": "R011",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The event name on “Confirmed-talk speaker announcement - Made & Kept - Six people, one hand” (event-announcement-r003.png) reads exactly “Made & Kept”, as in vellacourt_talks.csv row 3.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "Made & Kept"
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-20/event-banner-r003/H003",
+   "output_id": "event-banner-r003",
+   "rule_id": "R011",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The event name on “Confirmed-talk speaker banner - Made & Kept - Six people, one hand” (event-banner-r003.png) reads exactly “Made & Kept”, as in vellacourt_talks.csv row 3.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "Made & Kept"
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-20/event-announcement-r003/H005",
+   "output_id": "event-announcement-r003",
+   "rule_id": "R012",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The date on “Confirmed-talk speaker announcement - Made & Kept - Six people, one hand” (event-announcement-r003.png) reads exactly “2026-03-03”, as in vellacourt_talks.csv row 3.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "2026-03-03"
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-20/event-banner-r003/H004",
+   "output_id": "event-banner-r003",
+   "rule_id": "R012",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The date on “Confirmed-talk speaker banner - Made & Kept - Six people, one hand” (event-banner-r003.png) reads exactly “2026-03-03”, as in vellacourt_talks.csv row 3.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "2026-03-03"
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-20/event-announcement-r003/H006",
+   "output_id": "event-announcement-r003",
+   "rule_id": "R013",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The talk title on “Confirmed-talk speaker announcement - Made & Kept - Six people, one hand” (event-announcement-r003.png) reads exactly “Six people, one hand”, as in vellacourt_talks.csv row 3.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "Six people, one hand"
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-20/event-banner-r003/H005",
+   "output_id": "event-banner-r003",
+   "rule_id": "R013",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The talk title on “Confirmed-talk speaker banner - Made & Kept - Six people, one hand” (event-banner-r003.png) reads exactly “Six people, one hand”, as in vellacourt_talks.csv row 3.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "Six people, one hand"
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-20/event-announcement-r008/H004",
+   "output_id": "event-announcement-r008",
+   "rule_id": "R014",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The event name on “Confirmed-talk speaker announcement - Continuum Product Days - What survives contact with a factory” (event-announcement-r008.png) reads exactly “Continuum Product Days”, as in vellacourt_talks.csv row 8.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "Continuum Product Days"
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-20/event-banner-r008/H003",
+   "output_id": "event-banner-r008",
+   "rule_id": "R014",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The event name on “Confirmed-talk speaker banner - Continuum Product Days - What survives contact with a factory” (event-banner-r008.png) reads exactly “Continuum Product Days”, as in vellacourt_talks.csv row 8.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "Continuum Product Days"
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-20/event-announcement-r008/H005",
+   "output_id": "event-announcement-r008",
+   "rule_id": "R015",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The date on “Confirmed-talk speaker announcement - Continuum Product Days - What survives contact with a factory” (event-announcement-r008.png) reads exactly “May 9”, as in vellacourt_talks.csv row 8.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "May 9"
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-20/event-banner-r008/H004",
+   "output_id": "event-banner-r008",
+   "rule_id": "R015",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The date on “Confirmed-talk speaker banner - Continuum Product Days - What survives contact with a factory” (event-banner-r008.png) reads exactly “May 9”, as in vellacourt_talks.csv row 8.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "May 9"
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-20/event-announcement-r008/H006",
+   "output_id": "event-announcement-r008",
+   "rule_id": "R016",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The talk title on “Confirmed-talk speaker announcement - Continuum Product Days - What survives contact with a factory” (event-announcement-r008.png) reads exactly “What survives contact with a factory”, as in vellacourt_talks.csv row 8.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "What survives contact with a factory"
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-20/event-banner-r008/H005",
+   "output_id": "event-banner-r008",
+   "rule_id": "R016",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The talk title on “Confirmed-talk speaker banner - Continuum Product Days - What survives contact with a factory” (event-banner-r008.png) reads exactly “What survives contact with a factory”, as in vellacourt_talks.csv row 8.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "What survives contact with a factory"
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-20/event-banner-r002/H008",
+   "output_id": "event-banner-r002",
+   "rule_id": "R017",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "No letter of the talk title, event name or date is cut off at an edge of “Confirmed-talk speaker banner - Northlight Design Forum - Designing the thing before the deck” (event-banner-r002.png).",
+   "assertion": {
+    "op": "v2_text_inside",
+    "texts": [
+     "Designing the thing before the deck",
+     "Northlight Design Forum",
+     "14 Feb 2026"
+    ]
+   },
+   "how": "Checks the named text is read in full inside the page or image (for a mark, its letters read as a line of their own)."
+  },
+  {
+   "check_id": "PHOTO-20/event-banner-r003/H009",
+   "output_id": "event-banner-r003",
+   "rule_id": "R017",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "No letter of the talk title, event name or date is cut off at an edge of “Confirmed-talk speaker banner - Made & Kept - Six people, one hand” (event-banner-r003.png).",
+   "assertion": {
+    "op": "v2_text_inside",
+    "texts": [
+     "Six people, one hand",
+     "Made & Kept",
+     "2026-03-03"
+    ]
+   },
+   "how": "Checks the named text is read in full inside the page or image (for a mark, its letters read as a line of their own)."
+  },
+  {
+   "check_id": "PHOTO-20/event-banner-r008/H009",
+   "output_id": "event-banner-r008",
+   "rule_id": "R017",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "No letter of the talk title, event name or date is cut off at an edge of “Confirmed-talk speaker banner - Continuum Product Days - What survives contact with a factory” (event-banner-r008.png).",
+   "assertion": {
+    "op": "v2_text_inside",
+    "texts": [
+     "What survives contact with a factory",
+     "Continuum Product Days",
+     "May 9"
+    ]
+   },
+   "how": "Checks the named text is read in full inside the page or image (for a mark, its letters read as a line of their own)."
+  },
+  {
+   "check_id": "PHOTO-20/talk-card-r002/H001",
+   "output_id": "talk-card-r002",
+   "rule_id": "R018",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The talk title on “Speaker talk card - Northlight Design Forum - Designing the thing before the deck” (talk-card-r002.pdf) reads “Designing the thing before the deck”, as in vellacourt_talks.csv row 2.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "Designing the thing before the deck"
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-20/talk-card-r003/H001",
+   "output_id": "talk-card-r003",
+   "rule_id": "R018",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The talk title on “Speaker talk card - Made & Kept - Six people, one hand” (talk-card-r003.pdf) reads “Six people, one hand”, as in vellacourt_talks.csv row 3.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "Six people, one hand"
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-20/talk-card-r004/H001",
+   "output_id": "talk-card-r004",
+   "rule_id": "R018",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The talk title on “Speaker talk card - Fjordworks Summit - On staying small on purpose” (talk-card-r004.pdf) reads “On staying small on purpose”, as in vellacourt_talks.csv row 4.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "On staying small on purpose"
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-20/talk-card-r005/H001",
+   "output_id": "talk-card-r005",
+   "rule_id": "R018",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The talk title on “Speaker talk card - Fjordworks Summit - The room after the round” (talk-card-r005.pdf) reads “The room after the round”, as in vellacourt_talks.csv row 5.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "The room after the round"
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-20/talk-card-r006/H001",
+   "output_id": "talk-card-r006",
+   "rule_id": "R018",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The talk title on “Speaker talk card - Halden Design Days - From sketch to tooling” (talk-card-r006.pdf) reads “From sketch to tooling”, as in vellacourt_talks.csv row 6.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "From sketch to tooling"
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-20/talk-card-r007/H001",
+   "output_id": "talk-card-r007",
+   "rule_id": "R018",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The talk title on “Speaker talk card - The Bench Sessions - Designing for the next hands” (talk-card-r007.pdf) reads “Designing for the next hands”, as in vellacourt_talks.csv row 7.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "Designing for the next hands"
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-20/talk-card-r008/H001",
+   "output_id": "talk-card-r008",
+   "rule_id": "R018",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The talk title on “Speaker talk card - Continuum Product Days - What survives contact with a factory” (talk-card-r008.pdf) reads “What survives contact with a factory”, as in vellacourt_talks.csv row 8.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "What survives contact with a factory"
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-20/talk-card-r009/H001",
+   "output_id": "talk-card-r009",
+   "rule_id": "R018",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The talk title on “Speaker talk card - Grain & Frame Forum - What a small studio can promise” (talk-card-r009.pdf) reads “What a small studio can promise”, as in vellacourt_talks.csv row 9.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "What a small studio can promise"
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-20/talk-card-r002/H002",
+   "output_id": "talk-card-r002",
+   "rule_id": "R019",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The event name “Northlight Design Forum” sits fully inside “Speaker talk card - Northlight Design Forum - Designing the thing before the deck” (talk-card-r002.pdf), with no letters cut off.",
+   "assertion": {
+    "op": "v2_text_inside",
+    "texts": [
+     "Northlight Design Forum"
+    ]
+   },
+   "how": "Checks the named text is read in full inside the page or image (for a mark, its letters read as a line of their own)."
+  },
+  {
+   "check_id": "PHOTO-20/talk-card-r003/H002",
+   "output_id": "talk-card-r003",
+   "rule_id": "R019",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The event name “Made & Kept” sits fully inside “Speaker talk card - Made & Kept - Six people, one hand” (talk-card-r003.pdf), with no letters cut off.",
+   "assertion": {
+    "op": "v2_text_inside",
+    "texts": [
+     "Made & Kept"
+    ]
+   },
+   "how": "Checks the named text is read in full inside the page or image (for a mark, its letters read as a line of their own)."
+  },
+  {
+   "check_id": "PHOTO-20/talk-card-r004/H002",
+   "output_id": "talk-card-r004",
+   "rule_id": "R019",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The event name “Fjordworks Summit” sits fully inside “Speaker talk card - Fjordworks Summit - On staying small on purpose” (talk-card-r004.pdf), with no letters cut off.",
+   "assertion": {
+    "op": "v2_text_inside",
+    "texts": [
+     "Fjordworks Summit"
+    ]
+   },
+   "how": "Checks the named text is read in full inside the page or image (for a mark, its letters read as a line of their own)."
+  },
+  {
+   "check_id": "PHOTO-20/talk-card-r005/H002",
+   "output_id": "talk-card-r005",
+   "rule_id": "R019",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The event name “Fjordworks Summit” sits fully inside “Speaker talk card - Fjordworks Summit - The room after the round” (talk-card-r005.pdf), with no letters cut off.",
+   "assertion": {
+    "op": "v2_text_inside",
+    "texts": [
+     "Fjordworks Summit"
+    ]
+   },
+   "how": "Checks the named text is read in full inside the page or image (for a mark, its letters read as a line of their own)."
+  },
+  {
+   "check_id": "PHOTO-20/talk-card-r006/H002",
+   "output_id": "talk-card-r006",
+   "rule_id": "R019",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The event name “Halden Design Days” sits fully inside “Speaker talk card - Halden Design Days - From sketch to tooling” (talk-card-r006.pdf), with no letters cut off.",
+   "assertion": {
+    "op": "v2_text_inside",
+    "texts": [
+     "Halden Design Days"
+    ]
+   },
+   "how": "Checks the named text is read in full inside the page or image (for a mark, its letters read as a line of their own)."
+  },
+  {
+   "check_id": "PHOTO-20/talk-card-r007/H002",
+   "output_id": "talk-card-r007",
+   "rule_id": "R019",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The event name “The Bench Sessions” sits fully inside “Speaker talk card - The Bench Sessions - Designing for the next hands” (talk-card-r007.pdf), with no letters cut off.",
+   "assertion": {
+    "op": "v2_text_inside",
+    "texts": [
+     "The Bench Sessions"
+    ]
+   },
+   "how": "Checks the named text is read in full inside the page or image (for a mark, its letters read as a line of their own)."
+  },
+  {
+   "check_id": "PHOTO-20/talk-card-r008/H002",
+   "output_id": "talk-card-r008",
+   "rule_id": "R019",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The event name “Continuum Product Days” sits fully inside “Speaker talk card - Continuum Product Days - What survives contact with a factory” (talk-card-r008.pdf), with no letters cut off.",
+   "assertion": {
+    "op": "v2_text_inside",
+    "texts": [
+     "Continuum Product Days"
+    ]
+   },
+   "how": "Checks the named text is read in full inside the page or image (for a mark, its letters read as a line of their own)."
+  },
+  {
+   "check_id": "PHOTO-20/talk-card-r009/H002",
+   "output_id": "talk-card-r009",
+   "rule_id": "R019",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The event name “Grain & Frame Forum” sits fully inside “Speaker talk card - Grain & Frame Forum - What a small studio can promise” (talk-card-r009.pdf), with no letters cut off.",
+   "assertion": {
+    "op": "v2_text_inside",
+    "texts": [
+     "Grain & Frame Forum"
+    ]
+   },
+   "how": "Checks the named text is read in full inside the page or image (for a mark, its letters read as a line of their own)."
+  },
+  {
+   "check_id": "PHOTO-20/talk-card-r003/H009",
+   "output_id": "talk-card-r003",
+   "rule_id": "R032",
+   "k_id": "K1_Q5",
+   "critical": true,
+   "check": "No other talk's text, such as the template sample “Designing the thing before the deck” or “Northlight Design Forum”, appears on “Speaker talk card - Made & Kept - Six people, one hand” (talk-card-r003.pdf).",
+   "assertion": {
+    "op": "v2_text_absent",
+    "texts": [
+     "Designing for the next hands",
+     "Designing the thing before the deck",
+     "From sketch to tooling",
+     "On staying small on purpose",
+     "The room after the round",
+     "What a small studio can promise",
+     "What survives contact with a factory",
+     "Northlight Design Forum"
+    ]
+   },
+   "how": "Reads all text and checks none of the named words or patterns appears."
+  },
+  {
+   "check_id": "PHOTO-20/talk-card-r006/H010",
+   "output_id": "talk-card-r006",
+   "rule_id": "R032",
+   "k_id": "K1_Q5",
+   "critical": true,
+   "check": "No other talk's text, such as the template sample “Designing the thing before the deck” or “Northlight Design Forum”, appears on “Speaker talk card - Halden Design Days - From sketch to tooling” (talk-card-r006.pdf).",
+   "assertion": {
+    "op": "v2_text_absent",
+    "texts": [
+     "Designing for the next hands",
+     "Designing the thing before the deck",
+     "On staying small on purpose",
+     "Six people, one hand",
+     "The room after the round",
+     "What a small studio can promise",
+     "What survives contact with a factory",
+     "Northlight Design Forum"
+    ]
+   },
+   "how": "Reads all text and checks none of the named words or patterns appears."
+  },
+  {
+   "check_id": "PHOTO-20/talk-card-r007/H009",
+   "output_id": "talk-card-r007",
+   "rule_id": "R032",
+   "k_id": "K1_Q5",
+   "critical": true,
+   "check": "No other talk's text, such as the template sample “Designing the thing before the deck” or “Northlight Design Forum”, appears on “Speaker talk card - The Bench Sessions - Designing for the next hands” (talk-card-r007.pdf).",
+   "assertion": {
+    "op": "v2_text_absent",
+    "texts": [
+     "Designing the thing before the deck",
+     "From sketch to tooling",
+     "On staying small on purpose",
+     "Six people, one hand",
+     "The room after the round",
+     "What a small studio can promise",
+     "What survives contact with a factory",
+     "Northlight Design Forum"
+    ]
+   },
+   "how": "Reads all text and checks none of the named words or patterns appears."
+  },
+  {
+   "check_id": "PHOTO-20/talk-card-r008/H009",
+   "output_id": "talk-card-r008",
+   "rule_id": "R032",
+   "k_id": "K1_Q5",
+   "critical": true,
+   "check": "No other talk's text, such as the template sample “Designing the thing before the deck” or “Northlight Design Forum”, appears on “Speaker talk card - Continuum Product Days - What survives contact with a factory” (talk-card-r008.pdf).",
+   "assertion": {
+    "op": "v2_text_absent",
+    "texts": [
+     "Designing for the next hands",
+     "Designing the thing before the deck",
+     "From sketch to tooling",
+     "On staying small on purpose",
+     "Six people, one hand",
+     "The room after the round",
+     "What a small studio can promise",
+     "Northlight Design Forum"
+    ]
+   },
+   "how": "Reads all text and checks none of the named words or patterns appears."
+  },
+  {
+   "check_id": "PHOTO-20/talk-card-r009/H009",
+   "output_id": "talk-card-r009",
+   "rule_id": "R032",
+   "k_id": "K1_Q5",
+   "critical": true,
+   "check": "No other talk's text, such as the template sample “Designing the thing before the deck” or “Northlight Design Forum”, appears on “Speaker talk card - Grain & Frame Forum - What a small studio can promise” (talk-card-r009.pdf).",
+   "assertion": {
+    "op": "v2_text_absent",
+    "texts": [
+     "Designing for the next hands",
+     "Designing the thing before the deck",
+     "From sketch to tooling",
+     "On staying small on purpose",
+     "Six people, one hand",
+     "The room after the round",
+     "What survives contact with a factory",
+     "Northlight Design Forum"
+    ]
+   },
+   "how": "Reads all text and checks none of the named words or patterns appears."
+  },
+  {
+   "check_id": "PHOTO-20/talk-card-r004/H009",
+   "output_id": "talk-card-r004",
+   "rule_id": "R033",
+   "k_id": "K1_Q5",
+   "critical": true,
+   "check": "No other talk's text, such as “The room after the round” or the template sample “Designing the thing before the deck”, appears on “Speaker talk card - Fjordworks Summit - On staying small on purpose” (talk-card-r004.pdf).",
+   "assertion": {
+    "op": "v2_text_absent",
+    "texts": [
+     "Designing for the next hands",
+     "Designing the thing before the deck",
+     "From sketch to tooling",
+     "Six people, one hand",
+     "The room after the round",
+     "What a small studio can promise",
+     "What survives contact with a factory"
+    ]
+   },
+   "how": "Reads all text and checks none of the named words or patterns appears."
+  },
+  {
+   "check_id": "PHOTO-20/talk-card-r005/H009",
+   "output_id": "talk-card-r005",
+   "rule_id": "R033",
+   "k_id": "K1_Q5",
+   "critical": true,
+   "check": "No other talk's text, such as “On staying small on purpose” or the template sample “Designing the thing before the deck”, appears on “Speaker talk card - Fjordworks Summit - The room after the round” (talk-card-r005.pdf).",
+   "assertion": {
+    "op": "v2_text_absent",
+    "texts": [
+     "Designing for the next hands",
+     "Designing the thing before the deck",
+     "From sketch to tooling",
+     "On staying small on purpose",
+     "Six people, one hand",
+     "What a small studio can promise",
+     "What survives contact with a factory"
+    ]
+   },
+   "how": "Reads all text and checks none of the named words or patterns appears."
+  },
+  {
+   "check_id": "PHOTO-20/talk-card-r007/H013",
+   "output_id": "talk-card-r007",
+   "rule_id": "R034",
+   "k_id": "K1_Q5",
+   "critical": true,
+   "check": "Any portrait on “Speaker talk card - The Bench Sessions - Designing for the next hands” (talk-card-r007.pdf) is built from one of the nine supplied frames vellacourt_session_01.jpg to vellacourt_session_09.jpg, not a generated, composited or stock face.",
+   "assertion": {
+    "op": "v2_contains_asset",
+    "assets": [
+     "vellacourt_session_01.jpg",
+     "vellacourt_session_02.jpg",
+     "vellacourt_session_03.jpg",
+     "vellacourt_session_04.jpg",
+     "vellacourt_session_05.jpg",
+     "vellacourt_session_06.jpg",
+     "vellacourt_session_07.jpg",
+     "vellacourt_session_08.jpg",
+     "vellacourt_session_09.jpg"
+    ],
+    "shape": false,
+    "optional": true
+   },
+   "how": "Searches the deliverable for the supplied file (feature matching, confirmed by correlation)."
+  },
+  {
+   "check_id": "PHOTO-20/speaker-onepager/H004",
+   "output_id": "speaker-onepager",
+   "rule_id": "R037",
+   "k_id": "K1_Q5",
+   "critical": true,
+   "check": "The booking contact on “Speaker booking one-pager” (speaker-onepager.pdf) reads “Astrid Vellacourt - Vellacourt & Sund”, as in vellacourt_bio_copy.txt.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "Astrid Vellacourt - Vellacourt & Sund"
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-20/speaker-onepager/H052",
+   "output_id": "speaker-onepager",
+   "rule_id": "R039",
+   "k_id": "K1_Q5",
+   "critical": true,
+   "check": "The booking contact on “Speaker booking one-pager” (speaker-onepager.pdf) adds no email address, phone number or web address.",
+   "assertion": {
+    "op": "v2_text_absent",
+    "patterns": {
+     "web address": "\\b(?:https?://\\S+|www\\.\\S+|[a-z0-9-]+\\.(?:com|org|net|io|co|us|uk|ca|app|studio|example)(?:/\\S*)?)\\b",
+     "email": "\\b[\\w.+-]+@[\\w-]+\\.[\\w.]+\\b",
+     "phone number": "(?<![\\w$])\\+?\\(?\\d{3}\\)?[\\s.-]?\\d{3}[\\s.-]?\\d{4}\\b"
+    }
+   },
+   "how": "Reads all text and checks none of the named words or patterns appears."
+  },
+  {
+   "check_id": "PHOTO-20/talk-card-r002/H054",
+   "output_id": "talk-card-r002",
+   "rule_id": "R040",
+   "k_id": "K1_Q5",
+   "critical": true,
+   "check": "No text from another talk, such as “Six people, one hand” or “Made & Kept”, appears on “Speaker talk card - Northlight Design Forum - Designing the thing before the deck” (talk-card-r002.pdf).",
+   "assertion": {
+    "op": "v2_text_absent",
+    "texts": [
+     "Designing for the next hands",
+     "From sketch to tooling",
+     "On staying small on purpose",
+     "Six people, one hand",
+     "The room after the round",
+     "What a small studio can promise",
+     "What survives contact with a factory",
+     "Made & Kept"
+    ]
+   },
+   "how": "Reads all text and checks none of the named words or patterns appears."
+  },
+  {
+   "check_id": "PHOTO-20/event-announcement-r002/H013",
+   "output_id": "event-announcement-r002",
+   "rule_id": "R043",
+   "k_id": "K2_Q1",
+   "critical": false,
+   "check": "The portrait on “Confirmed-talk speaker announcement - Northlight Design Forum - Designing the thing before the deck” (event-announcement-r002.png) is built from vellacourt_session_02.jpg, the frame vellacourt_talks.csv row 2 assigns.",
+   "assertion": {
+    "op": "v2_contains_asset",
+    "assets": [
+     "vellacourt_session_02.jpg"
+    ],
+    "shape": false,
+    "optional": false
+   },
+   "how": "Searches the deliverable for the supplied file (feature matching, confirmed by correlation)."
+  },
+  {
+   "check_id": "PHOTO-20/event-announcement-r003/H013",
+   "output_id": "event-announcement-r003",
+   "rule_id": "R043",
+   "k_id": "K2_Q1",
+   "critical": false,
+   "check": "The portrait on “Confirmed-talk speaker announcement - Made & Kept - Six people, one hand” (event-announcement-r003.png) is built from vellacourt_session_05.jpg, the frame vellacourt_talks.csv row 3 assigns.",
+   "assertion": {
+    "op": "v2_contains_asset",
+    "assets": [
+     "vellacourt_session_05.jpg"
+    ],
+    "shape": false,
+    "optional": false
+   },
+   "how": "Searches the deliverable for the supplied file (feature matching, confirmed by correlation)."
+  },
+  {
+   "check_id": "PHOTO-20/event-announcement-r008/H013",
+   "output_id": "event-announcement-r008",
+   "rule_id": "R043",
+   "k_id": "K2_Q1",
+   "critical": false,
+   "check": "The portrait on “Confirmed-talk speaker announcement - Continuum Product Days - What survives contact with a factory” (event-announcement-r008.png) is built from vellacourt_session_01.jpg, the frame vellacourt_talks.csv row 8 assigns.",
+   "assertion": {
+    "op": "v2_contains_asset",
+    "assets": [
+     "vellacourt_session_01.jpg"
+    ],
+    "shape": false,
+    "optional": false
+   },
+   "how": "Searches the deliverable for the supplied file (feature matching, confirmed by correlation)."
+  },
+  {
+   "check_id": "PHOTO-20/event-banner-r002/H002",
+   "output_id": "event-banner-r002",
+   "rule_id": "R043",
+   "k_id": "K2_Q1",
+   "critical": false,
+   "check": "The portrait on “Confirmed-talk speaker banner - Northlight Design Forum - Designing the thing before the deck” (event-banner-r002.png) is built from vellacourt_session_02.jpg, the frame vellacourt_talks.csv row 2 assigns.",
+   "assertion": {
+    "op": "v2_contains_asset",
+    "assets": [
+     "vellacourt_session_02.jpg"
+    ],
+    "shape": false,
+    "optional": false
+   },
+   "how": "Searches the deliverable for the supplied file (feature matching, confirmed by correlation)."
+  },
+  {
+   "check_id": "PHOTO-20/event-banner-r003/H002",
+   "output_id": "event-banner-r003",
+   "rule_id": "R043",
+   "k_id": "K2_Q1",
+   "critical": false,
+   "check": "The portrait on “Confirmed-talk speaker banner - Made & Kept - Six people, one hand” (event-banner-r003.png) is built from vellacourt_session_05.jpg, the frame vellacourt_talks.csv row 3 assigns.",
+   "assertion": {
+    "op": "v2_contains_asset",
+    "assets": [
+     "vellacourt_session_05.jpg"
+    ],
+    "shape": false,
+    "optional": false
+   },
+   "how": "Searches the deliverable for the supplied file (feature matching, confirmed by correlation)."
+  },
+  {
+   "check_id": "PHOTO-20/event-banner-r008/H002",
+   "output_id": "event-banner-r008",
+   "rule_id": "R043",
+   "k_id": "K2_Q1",
+   "critical": false,
+   "check": "The portrait on “Confirmed-talk speaker banner - Continuum Product Days - What survives contact with a factory” (event-banner-r008.png) is built from vellacourt_session_01.jpg, the frame vellacourt_talks.csv row 8 assigns.",
+   "assertion": {
+    "op": "v2_contains_asset",
+    "assets": [
+     "vellacourt_session_01.jpg"
+    ],
+    "shape": false,
+    "optional": false
+   },
+   "how": "Searches the deliverable for the supplied file (feature matching, confirmed by correlation)."
+  },
+  {
+   "check_id": "PHOTO-20/talk-card-r002/H013",
+   "output_id": "talk-card-r002",
+   "rule_id": "R043",
+   "k_id": "K2_Q1",
+   "critical": false,
+   "check": "The portrait on “Speaker talk card - Northlight Design Forum - Designing the thing before the deck” (talk-card-r002.pdf) is built from vellacourt_session_02.jpg, the frame vellacourt_talks.csv row 2 assigns.",
+   "assertion": {
+    "op": "v2_contains_asset",
+    "assets": [
+     "vellacourt_session_02.jpg"
+    ],
+    "shape": false,
+    "optional": false
+   },
+   "how": "Searches the deliverable for the supplied file (feature matching, confirmed by correlation)."
+  },
+  {
+   "check_id": "PHOTO-20/talk-card-r003/H013",
+   "output_id": "talk-card-r003",
+   "rule_id": "R043",
+   "k_id": "K2_Q1",
+   "critical": false,
+   "check": "The portrait on “Speaker talk card - Made & Kept - Six people, one hand” (talk-card-r003.pdf) is built from vellacourt_session_05.jpg, the frame vellacourt_talks.csv row 3 assigns.",
+   "assertion": {
+    "op": "v2_contains_asset",
+    "assets": [
+     "vellacourt_session_05.jpg"
+    ],
+    "shape": false,
+    "optional": false
+   },
+   "how": "Searches the deliverable for the supplied file (feature matching, confirmed by correlation)."
+  },
+  {
+   "check_id": "PHOTO-20/talk-card-r004/H013",
+   "output_id": "talk-card-r004",
+   "rule_id": "R043",
+   "k_id": "K2_Q1",
+   "critical": false,
+   "check": "The portrait on “Speaker talk card - Fjordworks Summit - On staying small on purpose” (talk-card-r004.pdf) is built from vellacourt_session_04.jpg, the frame vellacourt_talks.csv row 4 assigns.",
+   "assertion": {
+    "op": "v2_contains_asset",
+    "assets": [
+     "vellacourt_session_04.jpg"
+    ],
+    "shape": false,
+    "optional": false
+   },
+   "how": "Searches the deliverable for the supplied file (feature matching, confirmed by correlation)."
+  },
+  {
+   "check_id": "PHOTO-20/talk-card-r005/H013",
+   "output_id": "talk-card-r005",
+   "rule_id": "R043",
+   "k_id": "K2_Q1",
+   "critical": false,
+   "check": "The portrait on “Speaker talk card - Fjordworks Summit - The room after the round” (talk-card-r005.pdf) is built from vellacourt_session_04.jpg, the frame vellacourt_talks.csv row 5 assigns.",
+   "assertion": {
+    "op": "v2_contains_asset",
+    "assets": [
+     "vellacourt_session_04.jpg"
+    ],
+    "shape": false,
+    "optional": false
+   },
+   "how": "Searches the deliverable for the supplied file (feature matching, confirmed by correlation)."
+  },
+  {
+   "check_id": "PHOTO-20/talk-card-r006/H014",
+   "output_id": "talk-card-r006",
+   "rule_id": "R043",
+   "k_id": "K2_Q1",
+   "critical": false,
+   "check": "The portrait on “Speaker talk card - Halden Design Days - From sketch to tooling” (talk-card-r006.pdf) is built from vellacourt_session_08.jpg, the frame vellacourt_talks.csv row 6 assigns.",
+   "assertion": {
+    "op": "v2_contains_asset",
+    "assets": [
+     "vellacourt_session_08.jpg"
+    ],
+    "shape": false,
+    "optional": false
+   },
+   "how": "Searches the deliverable for the supplied file (feature matching, confirmed by correlation)."
+  },
+  {
+   "check_id": "PHOTO-20/talk-card-r008/H013",
+   "output_id": "talk-card-r008",
+   "rule_id": "R043",
+   "k_id": "K2_Q1",
+   "critical": false,
+   "check": "The portrait on “Speaker talk card - Continuum Product Days - What survives contact with a factory” (talk-card-r008.pdf) is built from vellacourt_session_01.jpg, the frame vellacourt_talks.csv row 8 assigns.",
+   "assertion": {
+    "op": "v2_contains_asset",
+    "assets": [
+     "vellacourt_session_01.jpg"
+    ],
+    "shape": false,
+    "optional": false
+   },
+   "how": "Searches the deliverable for the supplied file (feature matching, confirmed by correlation)."
+  },
+  {
+   "check_id": "PHOTO-20/talk-card-r009/H013",
+   "output_id": "talk-card-r009",
+   "rule_id": "R043",
+   "k_id": "K2_Q1",
+   "critical": false,
+   "check": "The portrait on “Speaker talk card - Grain & Frame Forum - What a small studio can promise” (talk-card-r009.pdf) is built from vellacourt_session_09.jpg, the frame vellacourt_talks.csv row 9 assigns.",
+   "assertion": {
+    "op": "v2_contains_asset",
+    "assets": [
+     "vellacourt_session_09.jpg"
+    ],
+    "shape": false,
+    "optional": false
+   },
+   "how": "Searches the deliverable for the supplied file (feature matching, confirmed by correlation)."
+  },
+  {
+   "check_id": "PHOTO-20/speaker-onepager/H015",
+   "output_id": "speaker-onepager",
+   "rule_id": "R044",
+   "k_id": "K2_Q1",
+   "critical": false,
+   "check": "Any portrait on “Speaker booking one-pager” (speaker-onepager.pdf) is built from one of the nine supplied frames vellacourt_session_01.jpg to vellacourt_session_09.jpg, not a generated or stock face.",
+   "assertion": {
+    "op": "v2_contains_asset",
+    "assets": [
+     "vellacourt_session_01.jpg",
+     "vellacourt_session_02.jpg",
+     "vellacourt_session_03.jpg",
+     "vellacourt_session_04.jpg",
+     "vellacourt_session_05.jpg",
+     "vellacourt_session_06.jpg",
+     "vellacourt_session_07.jpg",
+     "vellacourt_session_08.jpg",
+     "vellacourt_session_09.jpg"
+    ],
+    "shape": false,
+    "optional": true
+   },
+   "how": "Searches the deliverable for the supplied file (feature matching, confirmed by correlation)."
+  },
+  {
+   "check_id": "PHOTO-20/speaker-onepager/H030",
+   "output_id": "speaker-onepager",
+   "rule_id": "R060",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Type, grounds, panels, rules and icons on “Speaker booking one-pager” (speaker-onepager.pdf) use only #262524, #E8E1D6, #4C5560, #B98A4B, #16171A and #F4EFE7.",
+   "assertion": {
+    "op": "v2_palette_only",
+    "hexes": [
+     "#262524",
+     "#E8E1D6",
+     "#4C5560",
+     "#B98A4B",
+     "#16171A",
+     "#F4EFE7"
+    ]
+   },
+   "how": "Reads every type, shape and line colour from the file (photos excluded)."
+  },
+  {
+   "check_id": "PHOTO-20/talk-card-r002/H029",
+   "output_id": "talk-card-r002",
+   "rule_id": "R060",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Type, grounds, panels, rules and icons on “Speaker talk card - Northlight Design Forum - Designing the thing before the deck” (talk-card-r002.pdf) use only #262524, #E8E1D6, #4C5560, #B98A4B, #16171A and #F4EFE7.",
+   "assertion": {
+    "op": "v2_palette_only",
+    "hexes": [
+     "#262524",
+     "#E8E1D6",
+     "#4C5560",
+     "#B98A4B",
+     "#16171A",
+     "#F4EFE7"
+    ]
+   },
+   "how": "Reads every type, shape and line colour from the file (photos excluded)."
+  },
+  {
+   "check_id": "PHOTO-20/talk-card-r003/H029",
+   "output_id": "talk-card-r003",
+   "rule_id": "R060",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Type, grounds, panels, rules and icons on “Speaker talk card - Made & Kept - Six people, one hand” (talk-card-r003.pdf) use only #262524, #E8E1D6, #4C5560, #B98A4B, #16171A and #F4EFE7.",
+   "assertion": {
+    "op": "v2_palette_only",
+    "hexes": [
+     "#262524",
+     "#E8E1D6",
+     "#4C5560",
+     "#B98A4B",
+     "#16171A",
+     "#F4EFE7"
+    ]
+   },
+   "how": "Reads every type, shape and line colour from the file (photos excluded)."
+  },
+  {
+   "check_id": "PHOTO-20/talk-card-r004/H029",
+   "output_id": "talk-card-r004",
+   "rule_id": "R060",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Type, grounds, panels, rules and icons on “Speaker talk card - Fjordworks Summit - On staying small on purpose” (talk-card-r004.pdf) use only #262524, #E8E1D6, #4C5560, #B98A4B, #16171A and #F4EFE7.",
+   "assertion": {
+    "op": "v2_palette_only",
+    "hexes": [
+     "#262524",
+     "#E8E1D6",
+     "#4C5560",
+     "#B98A4B",
+     "#16171A",
+     "#F4EFE7"
+    ]
+   },
+   "how": "Reads every type, shape and line colour from the file (photos excluded)."
+  },
+  {
+   "check_id": "PHOTO-20/talk-card-r005/H029",
+   "output_id": "talk-card-r005",
+   "rule_id": "R060",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Type, grounds, panels, rules and icons on “Speaker talk card - Fjordworks Summit - The room after the round” (talk-card-r005.pdf) use only #262524, #E8E1D6, #4C5560, #B98A4B, #16171A and #F4EFE7.",
+   "assertion": {
+    "op": "v2_palette_only",
+    "hexes": [
+     "#262524",
+     "#E8E1D6",
+     "#4C5560",
+     "#B98A4B",
+     "#16171A",
+     "#F4EFE7"
+    ]
+   },
+   "how": "Reads every type, shape and line colour from the file (photos excluded)."
+  },
+  {
+   "check_id": "PHOTO-20/talk-card-r006/H029",
+   "output_id": "talk-card-r006",
+   "rule_id": "R060",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Type, grounds, panels, rules and icons on “Speaker talk card - Halden Design Days - From sketch to tooling” (talk-card-r006.pdf) use only #262524, #E8E1D6, #4C5560, #B98A4B, #16171A and #F4EFE7.",
+   "assertion": {
+    "op": "v2_palette_only",
+    "hexes": [
+     "#262524",
+     "#E8E1D6",
+     "#4C5560",
+     "#B98A4B",
+     "#16171A",
+     "#F4EFE7"
+    ]
+   },
+   "how": "Reads every type, shape and line colour from the file (photos excluded)."
+  },
+  {
+   "check_id": "PHOTO-20/talk-card-r007/H029",
+   "output_id": "talk-card-r007",
+   "rule_id": "R060",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Type, grounds, panels, rules and icons on “Speaker talk card - The Bench Sessions - Designing for the next hands” (talk-card-r007.pdf) use only #262524, #E8E1D6, #4C5560, #B98A4B, #16171A and #F4EFE7.",
+   "assertion": {
+    "op": "v2_palette_only",
+    "hexes": [
+     "#262524",
+     "#E8E1D6",
+     "#4C5560",
+     "#B98A4B",
+     "#16171A",
+     "#F4EFE7"
+    ]
+   },
+   "how": "Reads every type, shape and line colour from the file (photos excluded)."
+  },
+  {
+   "check_id": "PHOTO-20/talk-card-r008/H029",
+   "output_id": "talk-card-r008",
+   "rule_id": "R060",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Type, grounds, panels, rules and icons on “Speaker talk card - Continuum Product Days - What survives contact with a factory” (talk-card-r008.pdf) use only #262524, #E8E1D6, #4C5560, #B98A4B, #16171A and #F4EFE7.",
+   "assertion": {
+    "op": "v2_palette_only",
+    "hexes": [
+     "#262524",
+     "#E8E1D6",
+     "#4C5560",
+     "#B98A4B",
+     "#16171A",
+     "#F4EFE7"
+    ]
+   },
+   "how": "Reads every type, shape and line colour from the file (photos excluded)."
+  },
+  {
+   "check_id": "PHOTO-20/talk-card-r009/H029",
+   "output_id": "talk-card-r009",
+   "rule_id": "R060",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Type, grounds, panels, rules and icons on “Speaker talk card - Grain & Frame Forum - What a small studio can promise” (talk-card-r009.pdf) use only #262524, #E8E1D6, #4C5560, #B98A4B, #16171A and #F4EFE7.",
+   "assertion": {
+    "op": "v2_palette_only",
+    "hexes": [
+     "#262524",
+     "#E8E1D6",
+     "#4C5560",
+     "#B98A4B",
+     "#16171A",
+     "#F4EFE7"
+    ]
+   },
+   "how": "Reads every type, shape and line colour from the file (photos excluded)."
+  },
+  {
+   "check_id": "PHOTO-20/talk-card-r002/H030",
+   "output_id": "talk-card-r002",
+   "rule_id": "R061",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "“Speaker talk card - Northlight Design Forum - Designing the thing before the deck” (talk-card-r002.pdf) keeps the Warm Neutral #E8E1D6 ground of vellacourt_speakercard_template.pdf.",
+   "assertion": {
+    "op": "v2_main_ground",
+    "hex": "#E8E1D6"
+   },
+   "how": "Renders each page without photos and finds the colour covering the most area."
+  },
+  {
+   "check_id": "PHOTO-20/talk-card-r003/H030",
+   "output_id": "talk-card-r003",
+   "rule_id": "R061",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "“Speaker talk card - Made & Kept - Six people, one hand” (talk-card-r003.pdf) keeps the Warm Neutral #E8E1D6 ground of vellacourt_speakercard_template.pdf.",
+   "assertion": {
+    "op": "v2_main_ground",
+    "hex": "#E8E1D6"
+   },
+   "how": "Renders each page without photos and finds the colour covering the most area."
+  },
+  {
+   "check_id": "PHOTO-20/talk-card-r004/H030",
+   "output_id": "talk-card-r004",
+   "rule_id": "R061",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "“Speaker talk card - Fjordworks Summit - On staying small on purpose” (talk-card-r004.pdf) keeps the Warm Neutral #E8E1D6 ground of vellacourt_speakercard_template.pdf.",
+   "assertion": {
+    "op": "v2_main_ground",
+    "hex": "#E8E1D6"
+   },
+   "how": "Renders each page without photos and finds the colour covering the most area."
+  },
+  {
+   "check_id": "PHOTO-20/talk-card-r005/H030",
+   "output_id": "talk-card-r005",
+   "rule_id": "R061",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "“Speaker talk card - Fjordworks Summit - The room after the round” (talk-card-r005.pdf) keeps the Warm Neutral #E8E1D6 ground of vellacourt_speakercard_template.pdf.",
+   "assertion": {
+    "op": "v2_main_ground",
+    "hex": "#E8E1D6"
+   },
+   "how": "Renders each page without photos and finds the colour covering the most area."
+  },
+  {
+   "check_id": "PHOTO-20/talk-card-r006/H030",
+   "output_id": "talk-card-r006",
+   "rule_id": "R061",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "“Speaker talk card - Halden Design Days - From sketch to tooling” (talk-card-r006.pdf) keeps the Warm Neutral #E8E1D6 ground of vellacourt_speakercard_template.pdf.",
+   "assertion": {
+    "op": "v2_main_ground",
+    "hex": "#E8E1D6"
+   },
+   "how": "Renders each page without photos and finds the colour covering the most area."
+  },
+  {
+   "check_id": "PHOTO-20/talk-card-r007/H030",
+   "output_id": "talk-card-r007",
+   "rule_id": "R061",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "“Speaker talk card - The Bench Sessions - Designing for the next hands” (talk-card-r007.pdf) keeps the Warm Neutral #E8E1D6 ground of vellacourt_speakercard_template.pdf.",
+   "assertion": {
+    "op": "v2_main_ground",
+    "hex": "#E8E1D6"
+   },
+   "how": "Renders each page without photos and finds the colour covering the most area."
+  },
+  {
+   "check_id": "PHOTO-20/talk-card-r008/H030",
+   "output_id": "talk-card-r008",
+   "rule_id": "R061",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "“Speaker talk card - Continuum Product Days - What survives contact with a factory” (talk-card-r008.pdf) keeps the Warm Neutral #E8E1D6 ground of vellacourt_speakercard_template.pdf.",
+   "assertion": {
+    "op": "v2_main_ground",
+    "hex": "#E8E1D6"
+   },
+   "how": "Renders each page without photos and finds the colour covering the most area."
+  },
+  {
+   "check_id": "PHOTO-20/talk-card-r009/H030",
+   "output_id": "talk-card-r009",
+   "rule_id": "R061",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "“Speaker talk card - Grain & Frame Forum - What a small studio can promise” (talk-card-r009.pdf) keeps the Warm Neutral #E8E1D6 ground of vellacourt_speakercard_template.pdf.",
+   "assertion": {
+    "op": "v2_main_ground",
+    "hex": "#E8E1D6"
+   },
+   "how": "Renders each page without photos and finds the colour covering the most area."
+  },
+  {
+   "check_id": "PHOTO-20/speaker-onepager/H040",
+   "output_id": "speaker-onepager",
+   "rule_id": "R081",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Each talk title on “Speaker booking one-pager” (speaker-onepager.pdf) is set in Inter Medium.",
+   "assertion": {
+    "op": "v2_pdf_text_style",
+    "texts": [
+     "Designing for the next hands",
+     "Designing the thing before the deck",
+     "From sketch to tooling",
+     "On staying small on purpose",
+     "Six people, one hand",
+     "The room after the round",
+     "What a small studio can promise",
+     "What survives contact with a factory"
+    ],
+    "optional": true,
+    "family": "Inter",
+    "weight": "Medium"
+   },
+   "how": "Reads the font, size, letter case or colour of the named text from the PDF."
+  },
+  {
+   "check_id": "PHOTO-20/speaker-onepager/H006",
+   "output_id": "speaker-onepager",
+   "rule_id": "R101",
+   "k_id": "K2_Q4",
+   "critical": false,
+   "check": "The AV monogram on “Speaker booking one-pager” (speaker-onepager.pdf) is the supplied mark from vellacourt_av_transparent.png, not a retyped or redrawn AV.",
+   "assertion": {
+    "op": "v2_contains_asset",
+    "assets": [
+     "vellacourt_av_transparent.png"
+    ],
+    "shape": true,
+    "optional": false
+   },
+   "how": "Searches the deliverable for the supplied file (feature matching, confirmed by correlation), then checks it keeps its own proportions."
+  },
+  {
+   "check_id": "PHOTO-20/event-announcement-r002/H021",
+   "output_id": "event-announcement-r002",
+   "rule_id": "R101",
+   "k_id": "K2_Q4",
+   "critical": false,
+   "check": "The AV monogram on “Confirmed-talk speaker announcement - Northlight Design Forum - Designing the thing before the deck” (event-announcement-r002.png) is the supplied mark from vellacourt_av_transparent.png, not a retyped or redrawn AV.",
+   "assertion": {
+    "op": "v2_contains_asset",
+    "assets": [
+     "vellacourt_av_transparent.png"
+    ],
+    "shape": true,
+    "optional": false
+   },
+   "how": "Searches the deliverable for the supplied file (feature matching, confirmed by correlation), then checks it keeps its own proportions."
+  },
+  {
+   "check_id": "PHOTO-20/event-announcement-r003/H021",
+   "output_id": "event-announcement-r003",
+   "rule_id": "R101",
+   "k_id": "K2_Q4",
+   "critical": false,
+   "check": "The AV monogram on “Confirmed-talk speaker announcement - Made & Kept - Six people, one hand” (event-announcement-r003.png) is the supplied mark from vellacourt_av_transparent.png, not a retyped or redrawn AV.",
+   "assertion": {
+    "op": "v2_contains_asset",
+    "assets": [
+     "vellacourt_av_transparent.png"
+    ],
+    "shape": true,
+    "optional": false
+   },
+   "how": "Searches the deliverable for the supplied file (feature matching, confirmed by correlation), then checks it keeps its own proportions."
+  },
+  {
+   "check_id": "PHOTO-20/event-announcement-r008/H021",
+   "output_id": "event-announcement-r008",
+   "rule_id": "R101",
+   "k_id": "K2_Q4",
+   "critical": false,
+   "check": "The AV monogram on “Confirmed-talk speaker announcement - Continuum Product Days - What survives contact with a factory” (event-announcement-r008.png) is the supplied mark from vellacourt_av_transparent.png, not a retyped or redrawn AV.",
+   "assertion": {
+    "op": "v2_contains_asset",
+    "assets": [
+     "vellacourt_av_transparent.png"
+    ],
+    "shape": true,
+    "optional": false
+   },
+   "how": "Searches the deliverable for the supplied file (feature matching, confirmed by correlation), then checks it keeps its own proportions."
+  },
+  {
+   "check_id": "PHOTO-20/event-banner-r002/H019",
+   "output_id": "event-banner-r002",
+   "rule_id": "R101",
+   "k_id": "K2_Q4",
+   "critical": false,
+   "check": "The AV monogram on “Confirmed-talk speaker banner - Northlight Design Forum - Designing the thing before the deck” (event-banner-r002.png) is the supplied mark from vellacourt_av_transparent.png, not a retyped or redrawn AV.",
+   "assertion": {
+    "op": "v2_contains_asset",
+    "assets": [
+     "vellacourt_av_transparent.png"
+    ],
+    "shape": true,
+    "optional": false
+   },
+   "how": "Searches the deliverable for the supplied file (feature matching, confirmed by correlation), then checks it keeps its own proportions."
+  },
+  {
+   "check_id": "PHOTO-20/event-banner-r003/H019",
+   "output_id": "event-banner-r003",
+   "rule_id": "R101",
+   "k_id": "K2_Q4",
+   "critical": false,
+   "check": "The AV monogram on “Confirmed-talk speaker banner - Made & Kept - Six people, one hand” (event-banner-r003.png) is the supplied mark from vellacourt_av_transparent.png, not a retyped or redrawn AV.",
+   "assertion": {
+    "op": "v2_contains_asset",
+    "assets": [
+     "vellacourt_av_transparent.png"
+    ],
+    "shape": true,
+    "optional": false
+   },
+   "how": "Searches the deliverable for the supplied file (feature matching, confirmed by correlation), then checks it keeps its own proportions."
+  },
+  {
+   "check_id": "PHOTO-20/event-banner-r008/H019",
+   "output_id": "event-banner-r008",
+   "rule_id": "R101",
+   "k_id": "K2_Q4",
+   "critical": false,
+   "check": "The AV monogram on “Confirmed-talk speaker banner - Continuum Product Days - What survives contact with a factory” (event-banner-r008.png) is the supplied mark from vellacourt_av_transparent.png, not a retyped or redrawn AV.",
+   "assertion": {
+    "op": "v2_contains_asset",
+    "assets": [
+     "vellacourt_av_transparent.png"
+    ],
+    "shape": true,
+    "optional": false
+   },
+   "how": "Searches the deliverable for the supplied file (feature matching, confirmed by correlation), then checks it keeps its own proportions."
+  },
+  {
+   "check_id": "PHOTO-20/talk-card-r002/H010",
+   "output_id": "talk-card-r002",
+   "rule_id": "R102",
+   "k_id": "K2_Q4",
+   "critical": false,
+   "check": "The AV monogram on “Speaker talk card - Northlight Design Forum - Designing the thing before the deck” (talk-card-r002.pdf) is the supplied mark from vellacourt_av_transparent.png, not the template's Georgia Bold “AV” or any retyped AV.",
+   "assertion": {
+    "op": "v2_contains_asset",
+    "assets": [
+     "vellacourt_av_transparent.png"
+    ],
+    "shape": true,
+    "optional": false
+   },
+   "how": "Searches the deliverable for the supplied file (feature matching, confirmed by correlation), then checks it keeps its own proportions."
+  },
+  {
+   "check_id": "PHOTO-20/talk-card-r003/H010",
+   "output_id": "talk-card-r003",
+   "rule_id": "R102",
+   "k_id": "K2_Q4",
+   "critical": false,
+   "check": "The AV monogram on “Speaker talk card - Made & Kept - Six people, one hand” (talk-card-r003.pdf) is the supplied mark from vellacourt_av_transparent.png, not the template's Georgia Bold “AV” or any retyped AV.",
+   "assertion": {
+    "op": "v2_contains_asset",
+    "assets": [
+     "vellacourt_av_transparent.png"
+    ],
+    "shape": true,
+    "optional": false
+   },
+   "how": "Searches the deliverable for the supplied file (feature matching, confirmed by correlation), then checks it keeps its own proportions."
+  },
+  {
+   "check_id": "PHOTO-20/talk-card-r004/H010",
+   "output_id": "talk-card-r004",
+   "rule_id": "R102",
+   "k_id": "K2_Q4",
+   "critical": false,
+   "check": "The AV monogram on “Speaker talk card - Fjordworks Summit - On staying small on purpose” (talk-card-r004.pdf) is the supplied mark from vellacourt_av_transparent.png, not the template's Georgia Bold “AV” or any retyped AV.",
+   "assertion": {
+    "op": "v2_contains_asset",
+    "assets": [
+     "vellacourt_av_transparent.png"
+    ],
+    "shape": true,
+    "optional": false
+   },
+   "how": "Searches the deliverable for the supplied file (feature matching, confirmed by correlation), then checks it keeps its own proportions."
+  },
+  {
+   "check_id": "PHOTO-20/talk-card-r005/H010",
+   "output_id": "talk-card-r005",
+   "rule_id": "R102",
+   "k_id": "K2_Q4",
+   "critical": false,
+   "check": "The AV monogram on “Speaker talk card - Fjordworks Summit - The room after the round” (talk-card-r005.pdf) is the supplied mark from vellacourt_av_transparent.png, not the template's Georgia Bold “AV” or any retyped AV.",
+   "assertion": {
+    "op": "v2_contains_asset",
+    "assets": [
+     "vellacourt_av_transparent.png"
+    ],
+    "shape": true,
+    "optional": false
+   },
+   "how": "Searches the deliverable for the supplied file (feature matching, confirmed by correlation), then checks it keeps its own proportions."
+  },
+  {
+   "check_id": "PHOTO-20/talk-card-r006/H011",
+   "output_id": "talk-card-r006",
+   "rule_id": "R102",
+   "k_id": "K2_Q4",
+   "critical": false,
+   "check": "The AV monogram on “Speaker talk card - Halden Design Days - From sketch to tooling” (talk-card-r006.pdf) is the supplied mark from vellacourt_av_transparent.png, not the template's Georgia Bold “AV” or any retyped AV.",
+   "assertion": {
+    "op": "v2_contains_asset",
+    "assets": [
+     "vellacourt_av_transparent.png"
+    ],
+    "shape": true,
+    "optional": false
+   },
+   "how": "Searches the deliverable for the supplied file (feature matching, confirmed by correlation), then checks it keeps its own proportions."
+  },
+  {
+   "check_id": "PHOTO-20/talk-card-r007/H010",
+   "output_id": "talk-card-r007",
+   "rule_id": "R102",
+   "k_id": "K2_Q4",
+   "critical": false,
+   "check": "The AV monogram on “Speaker talk card - The Bench Sessions - Designing for the next hands” (talk-card-r007.pdf) is the supplied mark from vellacourt_av_transparent.png, not the template's Georgia Bold “AV” or any retyped AV.",
+   "assertion": {
+    "op": "v2_contains_asset",
+    "assets": [
+     "vellacourt_av_transparent.png"
+    ],
+    "shape": true,
+    "optional": false
+   },
+   "how": "Searches the deliverable for the supplied file (feature matching, confirmed by correlation), then checks it keeps its own proportions."
+  },
+  {
+   "check_id": "PHOTO-20/talk-card-r008/H010",
+   "output_id": "talk-card-r008",
+   "rule_id": "R102",
+   "k_id": "K2_Q4",
+   "critical": false,
+   "check": "The AV monogram on “Speaker talk card - Continuum Product Days - What survives contact with a factory” (talk-card-r008.pdf) is the supplied mark from vellacourt_av_transparent.png, not the template's Georgia Bold “AV” or any retyped AV.",
+   "assertion": {
+    "op": "v2_contains_asset",
+    "assets": [
+     "vellacourt_av_transparent.png"
+    ],
+    "shape": true,
+    "optional": false
+   },
+   "how": "Searches the deliverable for the supplied file (feature matching, confirmed by correlation), then checks it keeps its own proportions."
+  },
+  {
+   "check_id": "PHOTO-20/talk-card-r009/H010",
+   "output_id": "talk-card-r009",
+   "rule_id": "R102",
+   "k_id": "K2_Q4",
+   "critical": false,
+   "check": "The AV monogram on “Speaker talk card - Grain & Frame Forum - What a small studio can promise” (talk-card-r009.pdf) is the supplied mark from vellacourt_av_transparent.png, not the template's Georgia Bold “AV” or any retyped AV.",
+   "assertion": {
+    "op": "v2_contains_asset",
+    "assets": [
+     "vellacourt_av_transparent.png"
+    ],
+    "shape": true,
+    "optional": false
+   },
+   "how": "Searches the deliverable for the supplied file (feature matching, confirmed by correlation), then checks it keeps its own proportions."
+  },
+  {
+   "check_id": "PHOTO-20/event-banner-r002/H010",
+   "output_id": "event-banner-r002",
+   "rule_id": "R116",
+   "k_id": "K5_Q1",
+   "critical": false,
+   "check": "Apart from the monogram, the talk title is the largest text on “Confirmed-talk speaker banner - Northlight Design Forum - Designing the thing before the deck” (event-banner-r002.png).",
+   "assertion": {
+    "op": "v2_largest_text",
+    "text": "Designing the thing before the deck"
+   },
+   "how": "Compares text sizes (font size in PDFs, letter height on images)."
+  },
+  {
+   "check_id": "PHOTO-20/event-banner-r003/H011",
+   "output_id": "event-banner-r003",
+   "rule_id": "R116",
+   "k_id": "K5_Q1",
+   "critical": false,
+   "check": "Apart from the monogram, the talk title is the largest text on “Confirmed-talk speaker banner - Made & Kept - Six people, one hand” (event-banner-r003.png).",
+   "assertion": {
+    "op": "v2_largest_text",
+    "text": "Six people, one hand"
+   },
+   "how": "Compares text sizes (font size in PDFs, letter height on images)."
+  },
+  {
+   "check_id": "PHOTO-20/event-banner-r008/H011",
+   "output_id": "event-banner-r008",
+   "rule_id": "R116",
+   "k_id": "K5_Q1",
+   "critical": false,
+   "check": "Apart from the monogram, the talk title is the largest text on “Confirmed-talk speaker banner - Continuum Product Days - What survives contact with a factory” (event-banner-r008.png).",
+   "assertion": {
+    "op": "v2_largest_text",
+    "text": "What survives contact with a factory"
+   },
+   "how": "Compares text sizes (font size in PDFs, letter height on images)."
+  },
+  {
+   "check_id": "PHOTO-20/talk-card-r002/H007",
+   "output_id": "talk-card-r002",
+   "rule_id": "R117",
+   "k_id": "K5_Q1",
+   "critical": false,
+   "check": "Apart from the monogram and her name, the talk title is the largest text on “Speaker talk card - Northlight Design Forum - Designing the thing before the deck” (talk-card-r002.pdf).",
+   "assertion": {
+    "op": "v2_largest_text",
+    "text": "Designing the thing before the deck",
+    "except": [
+     "Astrid Vellacourt"
+    ]
+   },
+   "how": "Compares text sizes (font size in PDFs, letter height on images)."
+  },
+  {
+   "check_id": "PHOTO-20/talk-card-r003/H006",
+   "output_id": "talk-card-r003",
+   "rule_id": "R117",
+   "k_id": "K5_Q1",
+   "critical": false,
+   "check": "Apart from the monogram and her name, the talk title is the largest text on “Speaker talk card - Made & Kept - Six people, one hand” (talk-card-r003.pdf).",
+   "assertion": {
+    "op": "v2_largest_text",
+    "text": "Six people, one hand",
+    "except": [
+     "Astrid Vellacourt"
+    ]
+   },
+   "how": "Compares text sizes (font size in PDFs, letter height on images)."
+  },
+  {
+   "check_id": "PHOTO-20/talk-card-r004/H006",
+   "output_id": "talk-card-r004",
+   "rule_id": "R117",
+   "k_id": "K5_Q1",
+   "critical": false,
+   "check": "Apart from the monogram and her name, the talk title is the largest text on “Speaker talk card - Fjordworks Summit - On staying small on purpose” (talk-card-r004.pdf).",
+   "assertion": {
+    "op": "v2_largest_text",
+    "text": "On staying small on purpose",
+    "except": [
+     "Astrid Vellacourt"
+    ]
+   },
+   "how": "Compares text sizes (font size in PDFs, letter height on images)."
+  },
+  {
+   "check_id": "PHOTO-20/talk-card-r005/H006",
+   "output_id": "talk-card-r005",
+   "rule_id": "R117",
+   "k_id": "K5_Q1",
+   "critical": false,
+   "check": "Apart from the monogram and her name, the talk title is the largest text on “Speaker talk card - Fjordworks Summit - The room after the round” (talk-card-r005.pdf).",
+   "assertion": {
+    "op": "v2_largest_text",
+    "text": "The room after the round",
+    "except": [
+     "Astrid Vellacourt"
+    ]
+   },
+   "how": "Compares text sizes (font size in PDFs, letter height on images)."
+  },
+  {
+   "check_id": "PHOTO-20/talk-card-r006/H005",
+   "output_id": "talk-card-r006",
+   "rule_id": "R117",
+   "k_id": "K5_Q1",
+   "critical": false,
+   "check": "Apart from the monogram and her name, the talk title is the largest text on “Speaker talk card - Halden Design Days - From sketch to tooling” (talk-card-r006.pdf).",
+   "assertion": {
+    "op": "v2_largest_text",
+    "text": "From sketch to tooling",
+    "except": [
+     "Astrid Vellacourt"
+    ]
+   },
+   "how": "Compares text sizes (font size in PDFs, letter height on images)."
+  },
+  {
+   "check_id": "PHOTO-20/talk-card-r007/H006",
+   "output_id": "talk-card-r007",
+   "rule_id": "R117",
+   "k_id": "K5_Q1",
+   "critical": false,
+   "check": "Apart from the monogram and her name, the talk title is the largest text on “Speaker talk card - The Bench Sessions - Designing for the next hands” (talk-card-r007.pdf).",
+   "assertion": {
+    "op": "v2_largest_text",
+    "text": "Designing for the next hands",
+    "except": [
+     "Astrid Vellacourt"
+    ]
+   },
+   "how": "Compares text sizes (font size in PDFs, letter height on images)."
+  },
+  {
+   "check_id": "PHOTO-20/talk-card-r008/H006",
+   "output_id": "talk-card-r008",
+   "rule_id": "R117",
+   "k_id": "K5_Q1",
+   "critical": false,
+   "check": "Apart from the monogram and her name, the talk title is the largest text on “Speaker talk card - Continuum Product Days - What survives contact with a factory” (talk-card-r008.pdf).",
+   "assertion": {
+    "op": "v2_largest_text",
+    "text": "What survives contact with a factory",
+    "except": [
+     "Astrid Vellacourt"
+    ]
+   },
+   "how": "Compares text sizes (font size in PDFs, letter height on images)."
+  },
+  {
+   "check_id": "PHOTO-20/talk-card-r009/H006",
+   "output_id": "talk-card-r009",
+   "rule_id": "R117",
+   "k_id": "K5_Q1",
+   "critical": false,
+   "check": "Apart from the monogram and her name, the talk title is the largest text on “Speaker talk card - Grain & Frame Forum - What a small studio can promise” (talk-card-r009.pdf).",
+   "assertion": {
+    "op": "v2_largest_text",
+    "text": "What a small studio can promise",
+    "except": [
+     "Astrid Vellacourt"
+    ]
+   },
+   "how": "Compares text sizes (font size in PDFs, letter height on images)."
+  },
+  {
+   "check_id": "PHOTO-20/speaker-onepager/H007",
+   "output_id": "speaker-onepager",
+   "rule_id": "R118",
+   "k_id": "K5_Q1",
+   "critical": false,
+   "check": "Apart from the AV monogram, the largest text on “Speaker booking one-pager” (speaker-onepager.pdf) is her name “Astrid Vellacourt”.",
+   "assertion": {
+    "op": "v2_largest_text",
+    "text": "Astrid Vellacourt"
+   },
+   "how": "Compares text sizes (font size in PDFs, letter height on images)."
+  },
+  {
+   "check_id": "PHOTO-20/event-announcement-r002/H011",
+   "output_id": "event-announcement-r002",
+   "rule_id": "R119",
+   "k_id": "K5_Q2",
+   "critical": false,
+   "check": "Her name “Astrid Vellacourt” on “Confirmed-talk speaker announcement - Northlight Design Forum - Designing the thing before the deck” (event-announcement-r002.png) is set larger than the date “14 Feb 2026”.",
+   "assertion": {
+    "op": "v2_relation",
+    "rel": "larger",
+    "a": "Astrid Vellacourt",
+    "b": [
+     "14 Feb 2026"
+    ]
+   },
+   "how": "Compares the named texts' size or position."
+  },
+  {
+   "check_id": "PHOTO-20/event-announcement-r003/H008",
+   "output_id": "event-announcement-r003",
+   "rule_id": "R119",
+   "k_id": "K5_Q2",
+   "critical": false,
+   "check": "Her name “Astrid Vellacourt” on “Confirmed-talk speaker announcement - Made & Kept - Six people, one hand” (event-announcement-r003.png) is set larger than the date “2026-03-03”.",
+   "assertion": {
+    "op": "v2_relation",
+    "rel": "larger",
+    "a": "Astrid Vellacourt",
+    "b": [
+     "2026-03-03"
+    ]
+   },
+   "how": "Compares the named texts' size or position."
+  },
+  {
+   "check_id": "PHOTO-20/event-announcement-r008/H011",
+   "output_id": "event-announcement-r008",
+   "rule_id": "R119",
+   "k_id": "K5_Q2",
+   "critical": false,
+   "check": "Her name “Astrid Vellacourt” on “Confirmed-talk speaker announcement - Continuum Product Days - What survives contact with a factory” (event-announcement-r008.png) is set larger than the date “May 9”.",
+   "assertion": {
+    "op": "v2_relation",
+    "rel": "larger",
+    "a": "Astrid Vellacourt",
+    "b": [
+     "May 9"
+    ]
+   },
+   "how": "Compares the named texts' size or position."
+  },
+  {
+   "check_id": "PHOTO-20/event-banner-r002/H009",
+   "output_id": "event-banner-r002",
+   "rule_id": "R119",
+   "k_id": "K5_Q2",
+   "critical": false,
+   "check": "Her name “Astrid Vellacourt” on “Confirmed-talk speaker banner - Northlight Design Forum - Designing the thing before the deck” (event-banner-r002.png) is set larger than the date “14 Feb 2026”.",
+   "assertion": {
+    "op": "v2_relation",
+    "rel": "larger",
+    "a": "Astrid Vellacourt",
+    "b": [
+     "14 Feb 2026"
+    ]
+   },
+   "how": "Compares the named texts' size or position."
+  },
+  {
+   "check_id": "PHOTO-20/event-banner-r003/H010",
+   "output_id": "event-banner-r003",
+   "rule_id": "R119",
+   "k_id": "K5_Q2",
+   "critical": false,
+   "check": "Her name “Astrid Vellacourt” on “Confirmed-talk speaker banner - Made & Kept - Six people, one hand” (event-banner-r003.png) is set larger than the date “2026-03-03”.",
+   "assertion": {
+    "op": "v2_relation",
+    "rel": "larger",
+    "a": "Astrid Vellacourt",
+    "b": [
+     "2026-03-03"
+    ]
+   },
+   "how": "Compares the named texts' size or position."
+  },
+  {
+   "check_id": "PHOTO-20/event-banner-r008/H010",
+   "output_id": "event-banner-r008",
+   "rule_id": "R119",
+   "k_id": "K5_Q2",
+   "critical": false,
+   "check": "Her name “Astrid Vellacourt” on “Confirmed-talk speaker banner - Continuum Product Days - What survives contact with a factory” (event-banner-r008.png) is set larger than the date “May 9”.",
+   "assertion": {
+    "op": "v2_relation",
+    "rel": "larger",
+    "a": "Astrid Vellacourt",
+    "b": [
+     "May 9"
+    ]
+   },
+   "how": "Compares the named texts' size or position."
+  },
+  {
+   "check_id": "PHOTO-20/talk-card-r002/H008",
+   "output_id": "talk-card-r002",
+   "rule_id": "R119",
+   "k_id": "K5_Q2",
+   "critical": false,
+   "check": "Her name “Astrid Vellacourt” on “Speaker talk card - Northlight Design Forum - Designing the thing before the deck” (talk-card-r002.pdf) is set larger than the date “14 Feb 2026”.",
+   "assertion": {
+    "op": "v2_relation",
+    "rel": "larger",
+    "a": "Astrid Vellacourt",
+    "b": [
+     "14 Feb 2026"
+    ]
+   },
+   "how": "Compares the named texts' size or position."
+  },
+  {
+   "check_id": "PHOTO-20/talk-card-r003/H007",
+   "output_id": "talk-card-r003",
+   "rule_id": "R119",
+   "k_id": "K5_Q2",
+   "critical": false,
+   "check": "Her name “Astrid Vellacourt” on “Speaker talk card - Made & Kept - Six people, one hand” (talk-card-r003.pdf) is set larger than the date “2026-03-03”.",
+   "assertion": {
+    "op": "v2_relation",
+    "rel": "larger",
+    "a": "Astrid Vellacourt",
+    "b": [
+     "2026-03-03"
+    ]
+   },
+   "how": "Compares the named texts' size or position."
+  },
+  {
+   "check_id": "PHOTO-20/talk-card-r004/H007",
+   "output_id": "talk-card-r004",
+   "rule_id": "R119",
+   "k_id": "K5_Q2",
+   "critical": false,
+   "check": "Her name “Astrid Vellacourt” on “Speaker talk card - Fjordworks Summit - On staying small on purpose” (talk-card-r004.pdf) is set larger than the date “21/03/26”.",
+   "assertion": {
+    "op": "v2_relation",
+    "rel": "larger",
+    "a": "Astrid Vellacourt",
+    "b": [
+     "21/03/26"
+    ]
+   },
+   "how": "Compares the named texts' size or position."
+  },
+  {
+   "check_id": "PHOTO-20/talk-card-r005/H007",
+   "output_id": "talk-card-r005",
+   "rule_id": "R119",
+   "k_id": "K5_Q2",
+   "critical": false,
+   "check": "Her name “Astrid Vellacourt” on “Speaker talk card - Fjordworks Summit - The room after the round” (talk-card-r005.pdf) is set larger than the date “21 March 2026”.",
+   "assertion": {
+    "op": "v2_relation",
+    "rel": "larger",
+    "a": "Astrid Vellacourt",
+    "b": [
+     "21 March 2026"
+    ]
+   },
+   "how": "Compares the named texts' size or position."
+  },
+  {
+   "check_id": "PHOTO-20/talk-card-r006/H008",
+   "output_id": "talk-card-r006",
+   "rule_id": "R119",
+   "k_id": "K5_Q2",
+   "critical": false,
+   "check": "Her name “Astrid Vellacourt” on “Speaker talk card - Halden Design Days - From sketch to tooling” (talk-card-r006.pdf) is set larger than the date “4 April 2026”.",
+   "assertion": {
+    "op": "v2_relation",
+    "rel": "larger",
+    "a": "Astrid Vellacourt",
+    "b": [
+     "4 April 2026"
+    ]
+   },
+   "how": "Compares the named texts' size or position."
+  },
+  {
+   "check_id": "PHOTO-20/talk-card-r007/H007",
+   "output_id": "talk-card-r007",
+   "rule_id": "R119",
+   "k_id": "K5_Q2",
+   "critical": false,
+   "check": "Her name “Astrid Vellacourt” on “Speaker talk card - The Bench Sessions - Designing for the next hands” (talk-card-r007.pdf) is set larger than the date “Apr 30”.",
+   "assertion": {
+    "op": "v2_relation",
+    "rel": "larger",
+    "a": "Astrid Vellacourt",
+    "b": [
+     "Apr 30"
+    ]
+   },
+   "how": "Compares the named texts' size or position."
+  },
+  {
+   "check_id": "PHOTO-20/talk-card-r008/H007",
+   "output_id": "talk-card-r008",
+   "rule_id": "R119",
+   "k_id": "K5_Q2",
+   "critical": false,
+   "check": "Her name “Astrid Vellacourt” on “Speaker talk card - Continuum Product Days - What survives contact with a factory” (talk-card-r008.pdf) is set larger than the date “May 9”.",
+   "assertion": {
+    "op": "v2_relation",
+    "rel": "larger",
+    "a": "Astrid Vellacourt",
+    "b": [
+     "May 9"
+    ]
+   },
+   "how": "Compares the named texts' size or position."
+  },
+  {
+   "check_id": "PHOTO-20/talk-card-r009/H007",
+   "output_id": "talk-card-r009",
+   "rule_id": "R119",
+   "k_id": "K5_Q2",
+   "critical": false,
+   "check": "Her name “Astrid Vellacourt” on “Speaker talk card - Grain & Frame Forum - What a small studio can promise” (talk-card-r009.pdf) is set larger than the date “2026-05-22”.",
+   "assertion": {
+    "op": "v2_relation",
+    "rel": "larger",
+    "a": "Astrid Vellacourt",
+    "b": [
+     "2026-05-22"
+    ]
+   },
+   "how": "Compares the named texts' size or position."
+  },
+  {
+   "check_id": "PHOTO-20/talk-card-r002/H052",
+   "output_id": "talk-card-r002",
+   "rule_id": "R120",
+   "k_id": "K5_Q2",
+   "critical": false,
+   "check": "The talk title on “Speaker talk card - Northlight Design Forum - Designing the thing before the deck” (talk-card-r002.pdf) is set smaller than her name “Astrid Vellacourt”.",
+   "assertion": {
+    "op": "v2_relation",
+    "rel": "smaller",
+    "a": "Designing the thing before the deck",
+    "b": [
+     "Astrid Vellacourt"
+    ]
+   },
+   "how": "Compares the named texts' size or position."
+  },
+  {
+   "check_id": "PHOTO-20/talk-card-r003/H052",
+   "output_id": "talk-card-r003",
+   "rule_id": "R120",
+   "k_id": "K5_Q2",
+   "critical": false,
+   "check": "The talk title on “Speaker talk card - Made & Kept - Six people, one hand” (talk-card-r003.pdf) is set smaller than her name “Astrid Vellacourt”.",
+   "assertion": {
+    "op": "v2_relation",
+    "rel": "smaller",
+    "a": "Six people, one hand",
+    "b": [
+     "Astrid Vellacourt"
+    ]
+   },
+   "how": "Compares the named texts' size or position."
+  },
+  {
+   "check_id": "PHOTO-20/talk-card-r004/H052",
+   "output_id": "talk-card-r004",
+   "rule_id": "R120",
+   "k_id": "K5_Q2",
+   "critical": false,
+   "check": "The talk title on “Speaker talk card - Fjordworks Summit - On staying small on purpose” (talk-card-r004.pdf) is set smaller than her name “Astrid Vellacourt”.",
+   "assertion": {
+    "op": "v2_relation",
+    "rel": "smaller",
+    "a": "On staying small on purpose",
+    "b": [
+     "Astrid Vellacourt"
+    ]
+   },
+   "how": "Compares the named texts' size or position."
+  },
+  {
+   "check_id": "PHOTO-20/talk-card-r005/H052",
+   "output_id": "talk-card-r005",
+   "rule_id": "R120",
+   "k_id": "K5_Q2",
+   "critical": false,
+   "check": "The talk title on “Speaker talk card - Fjordworks Summit - The room after the round” (talk-card-r005.pdf) is set smaller than her name “Astrid Vellacourt”.",
+   "assertion": {
+    "op": "v2_relation",
+    "rel": "smaller",
+    "a": "The room after the round",
+    "b": [
+     "Astrid Vellacourt"
+    ]
+   },
+   "how": "Compares the named texts' size or position."
+  },
+  {
+   "check_id": "PHOTO-20/talk-card-r006/H052",
+   "output_id": "talk-card-r006",
+   "rule_id": "R120",
+   "k_id": "K5_Q2",
+   "critical": false,
+   "check": "The talk title on “Speaker talk card - Halden Design Days - From sketch to tooling” (talk-card-r006.pdf) is set smaller than her name “Astrid Vellacourt”.",
+   "assertion": {
+    "op": "v2_relation",
+    "rel": "smaller",
+    "a": "From sketch to tooling",
+    "b": [
+     "Astrid Vellacourt"
+    ]
+   },
+   "how": "Compares the named texts' size or position."
+  },
+  {
+   "check_id": "PHOTO-20/talk-card-r007/H052",
+   "output_id": "talk-card-r007",
+   "rule_id": "R120",
+   "k_id": "K5_Q2",
+   "critical": false,
+   "check": "The talk title on “Speaker talk card - The Bench Sessions - Designing for the next hands” (talk-card-r007.pdf) is set smaller than her name “Astrid Vellacourt”.",
+   "assertion": {
+    "op": "v2_relation",
+    "rel": "smaller",
+    "a": "Designing for the next hands",
+    "b": [
+     "Astrid Vellacourt"
+    ]
+   },
+   "how": "Compares the named texts' size or position."
+  },
+  {
+   "check_id": "PHOTO-20/talk-card-r008/H052",
+   "output_id": "talk-card-r008",
+   "rule_id": "R120",
+   "k_id": "K5_Q2",
+   "critical": false,
+   "check": "The talk title on “Speaker talk card - Continuum Product Days - What survives contact with a factory” (talk-card-r008.pdf) is set smaller than her name “Astrid Vellacourt”.",
+   "assertion": {
+    "op": "v2_relation",
+    "rel": "smaller",
+    "a": "What survives contact with a factory",
+    "b": [
+     "Astrid Vellacourt"
+    ]
+   },
+   "how": "Compares the named texts' size or position."
+  },
+  {
+   "check_id": "PHOTO-20/talk-card-r009/H052",
+   "output_id": "talk-card-r009",
+   "rule_id": "R120",
+   "k_id": "K5_Q2",
+   "critical": false,
+   "check": "The talk title on “Speaker talk card - Grain & Frame Forum - What a small studio can promise” (talk-card-r009.pdf) is set smaller than her name “Astrid Vellacourt”.",
+   "assertion": {
+    "op": "v2_relation",
+    "rel": "smaller",
+    "a": "What a small studio can promise",
+    "b": [
+     "Astrid Vellacourt"
+    ]
+   },
+   "how": "Compares the named texts' size or position."
+  },
+  {
+   "check_id": "PHOTO-20/event-announcement-r002/H057",
+   "output_id": "event-announcement-r002",
+   "rule_id": "R121",
+   "k_id": "K5_Q2",
+   "critical": false,
+   "check": "The talk title on “Confirmed-talk speaker announcement - Northlight Design Forum - Designing the thing before the deck” (event-announcement-r002.png) is set larger than the date “14 Feb 2026”.",
+   "assertion": {
+    "op": "v2_relation",
+    "rel": "larger",
+    "a": "Designing the thing before the deck",
+    "b": [
+     "14 Feb 2026"
+    ]
+   },
+   "how": "Compares the named texts' size or position."
+  },
+  {
+   "check_id": "PHOTO-20/event-announcement-r003/H057",
+   "output_id": "event-announcement-r003",
+   "rule_id": "R121",
+   "k_id": "K5_Q2",
+   "critical": false,
+   "check": "The talk title on “Confirmed-talk speaker announcement - Made & Kept - Six people, one hand” (event-announcement-r003.png) is set larger than the date “2026-03-03”.",
+   "assertion": {
+    "op": "v2_relation",
+    "rel": "larger",
+    "a": "Six people, one hand",
+    "b": [
+     "2026-03-03"
+    ]
+   },
+   "how": "Compares the named texts' size or position."
+  },
+  {
+   "check_id": "PHOTO-20/event-announcement-r008/H057",
+   "output_id": "event-announcement-r008",
+   "rule_id": "R121",
+   "k_id": "K5_Q2",
+   "critical": false,
+   "check": "The talk title on “Confirmed-talk speaker announcement - Continuum Product Days - What survives contact with a factory” (event-announcement-r008.png) is set larger than the date “May 9”.",
+   "assertion": {
+    "op": "v2_relation",
+    "rel": "larger",
+    "a": "What survives contact with a factory",
+    "b": [
+     "May 9"
+    ]
+   },
+   "how": "Compares the named texts' size or position."
+  }
+ ]
+}

@@ -29,6 +29,12 @@ image ops, Express, InDesign data merge, Fonts, Stock, Acrobat, Premiere-style v
   1,500 rules with one row per original check (same ID, own answer; each row rebuilds its check word for word).
   Built by `scripts/build_v7_annotation_pilot_v2.py`, tested by `scripts/test_pilot13_v2_groups.py`; v1 and
   `TASK_SPEC.json` untouched. Record: `context/PILOT13_V2_GROUPED_VERIFIERS_2026-10-27.md`.
+- **Checks moved to code in v2**: 748 of those 6,312 checks (174 rules) are now answered by code (PDF text, OCR,
+  image matching), shown under their K question marked Code with the code's answer on the 2026-09-28 run; a row the
+  code cannot decide comes back to a person. Operations: `tools/auto_verifier/objective_ops.py` (tests:
+  `test_objective_ops.py`); convert, test and decide: `tools/pilot13_v2_automation/` (README). Results page:
+  `docs/gatsby-v7/annotation-pilot-v2/automation.html`. Not yet in TASK_SPEC.json, the V7 site, the Sheet or
+  `verify_outputs.py`: that step needs Dhiren's approval.
 
 ## Update 2026-10-22
 

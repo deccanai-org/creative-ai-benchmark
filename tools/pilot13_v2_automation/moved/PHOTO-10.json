@@ -1,0 +1,554 @@
+{
+ "task_id": "PHOTO-10",
+ "moved": [
+  {
+   "check_id": "PHOTO-10/style-pdp-northgrove-style-01-loopback-crew/H010",
+   "output_id": "style-pdp-northgrove-style-01-loopback-crew",
+   "rule_id": "R003",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The style name on “Apparel style product-page module - northgrove_style_01_loopback_crew” (style-pdp-northgrove-style-01-loopback-crew.png) contains “Loopback Crew”, the name northgrove_copy.txt gives this style.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "Loopback Crew"
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-10/style-pdp-northgrove-style-02-heavy-tee/H008",
+   "output_id": "style-pdp-northgrove-style-02-heavy-tee",
+   "rule_id": "R003",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The style name on “Apparel style product-page module - northgrove_style_02_heavy_tee” (style-pdp-northgrove-style-02-heavy-tee.png) contains “Heavyweight Tee”, the name northgrove_copy.txt gives this style.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "Heavyweight Tee"
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-10/style-pdp-northgrove-style-03-raglan/H006",
+   "output_id": "style-pdp-northgrove-style-03-raglan",
+   "rule_id": "R003",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The style name on “Apparel style product-page module - northgrove_style_03_raglan” (style-pdp-northgrove-style-03-raglan.png) contains “Raglan”, the name northgrove_copy.txt gives this style.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "Raglan"
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-10/style-pdp-northgrove-style-04-henley/H006",
+   "output_id": "style-pdp-northgrove-style-04-henley",
+   "rule_id": "R003",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The style name on “Apparel style product-page module - northgrove_style_04_henley” (style-pdp-northgrove-style-04-henley.png) contains “Henley”, the name northgrove_copy.txt gives this style.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "Henley"
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-10/style-pdp-northgrove-style-05-zip-hoodie/H006",
+   "output_id": "style-pdp-northgrove-style-05-zip-hoodie",
+   "rule_id": "R003",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The style name on “Apparel style product-page module - northgrove_style_05_zip_hoodie” (style-pdp-northgrove-style-05-zip-hoodie.png) contains “Hoodie”, the name northgrove_copy.txt gives this style.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "Hoodie"
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-10/style-pdp-northgrove-style-06-supporters-crew/H005",
+   "output_id": "style-pdp-northgrove-style-06-supporters-crew",
+   "rule_id": "R003",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The style name on “Apparel style product-page module - northgrove_style_06_supporters_crew” (style-pdp-northgrove-style-06-supporters-crew.png) contains “Supporters' Crew”, the name northgrove_copy.txt gives this style.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "Supporters' Crew"
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-10/style-pdp-northgrove-style-01-loopback-crew/H012",
+   "output_id": "style-pdp-northgrove-style-01-loopback-crew",
+   "rule_id": "R004",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "Any size run on “Apparel style product-page module - northgrove_style_01_loopback_crew” (style-pdp-northgrove-style-01-loopback-crew.png) reads “XS S M L XL XXL”, as in northgrove_copy.txt.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "XS S M L XL XXL"
+    ],
+    "if_any": "\\bXS\\b|\\bXXL\\b"
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-10/style-pdp-northgrove-style-02-heavy-tee/H010",
+   "output_id": "style-pdp-northgrove-style-02-heavy-tee",
+   "rule_id": "R004",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "Any size run on “Apparel style product-page module - northgrove_style_02_heavy_tee” (style-pdp-northgrove-style-02-heavy-tee.png) reads “XS S M L XL XXL”, as in northgrove_copy.txt.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "XS S M L XL XXL"
+    ],
+    "if_any": "\\bXS\\b|\\bXXL\\b"
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-10/style-pdp-northgrove-style-03-raglan/H008",
+   "output_id": "style-pdp-northgrove-style-03-raglan",
+   "rule_id": "R004",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "Any size run on “Apparel style product-page module - northgrove_style_03_raglan” (style-pdp-northgrove-style-03-raglan.png) reads “XS S M L XL XXL”, as in northgrove_copy.txt.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "XS S M L XL XXL"
+    ],
+    "if_any": "\\bXS\\b|\\bXXL\\b"
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-10/style-pdp-northgrove-style-04-henley/H008",
+   "output_id": "style-pdp-northgrove-style-04-henley",
+   "rule_id": "R004",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "Any size run on “Apparel style product-page module - northgrove_style_04_henley” (style-pdp-northgrove-style-04-henley.png) reads “XS S M L XL XXL”, as in northgrove_copy.txt.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "XS S M L XL XXL"
+    ],
+    "if_any": "\\bXS\\b|\\bXXL\\b"
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-10/style-pdp-northgrove-style-05-zip-hoodie/H008",
+   "output_id": "style-pdp-northgrove-style-05-zip-hoodie",
+   "rule_id": "R004",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "Any size run on “Apparel style product-page module - northgrove_style_05_zip_hoodie” (style-pdp-northgrove-style-05-zip-hoodie.png) reads “XS S M L XL XXL”, as in northgrove_copy.txt.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "XS S M L XL XXL"
+    ],
+    "if_any": "\\bXS\\b|\\bXXL\\b"
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-10/style-pdp-northgrove-style-06-supporters-crew/H007",
+   "output_id": "style-pdp-northgrove-style-06-supporters-crew",
+   "rule_id": "R004",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "Any size run on “Apparel style product-page module - northgrove_style_06_supporters_crew” (style-pdp-northgrove-style-06-supporters-crew.png) reads “XS S M L XL XXL”, as in northgrove_copy.txt.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "XS S M L XL XXL"
+    ],
+    "if_any": "\\bXS\\b|\\bXXL\\b"
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-10/capsule-carousel-p01/H014",
+   "output_id": "capsule-carousel-p01",
+   "rule_id": "R004",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "Any size run on “Capsule launch carousel - Page 1” (capsule-carousel-p01.png) reads “XS S M L XL XXL”, as in northgrove_copy.txt.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "XS S M L XL XXL"
+    ],
+    "if_any": "\\bXS\\b|\\bXXL\\b"
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-10/capsule-carousel-p02/H011",
+   "output_id": "capsule-carousel-p02",
+   "rule_id": "R004",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "Any size run on “Capsule launch carousel - Page 2” (capsule-carousel-p02.png) reads “XS S M L XL XXL”, as in northgrove_copy.txt.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "XS S M L XL XXL"
+    ],
+    "if_any": "\\bXS\\b|\\bXXL\\b"
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-10/capsule-carousel-p03/H011",
+   "output_id": "capsule-carousel-p03",
+   "rule_id": "R004",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "Any size run on “Capsule launch carousel - Page 3” (capsule-carousel-p03.png) reads “XS S M L XL XXL”, as in northgrove_copy.txt.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "XS S M L XL XXL"
+    ],
+    "if_any": "\\bXS\\b|\\bXXL\\b"
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-10/capsule-carousel-p04/H011",
+   "output_id": "capsule-carousel-p04",
+   "rule_id": "R004",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "Any size run on “Capsule launch carousel - Page 4” (capsule-carousel-p04.png) reads “XS S M L XL XXL”, as in northgrove_copy.txt.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "XS S M L XL XXL"
+    ],
+    "if_any": "\\bXS\\b|\\bXXL\\b"
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-10/capsule-carousel-p05/H011",
+   "output_id": "capsule-carousel-p05",
+   "rule_id": "R004",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "Any size run on “Capsule launch carousel - Page 5” (capsule-carousel-p05.png) reads “XS S M L XL XXL”, as in northgrove_copy.txt.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "XS S M L XL XXL"
+    ],
+    "if_any": "\\bXS\\b|\\bXXL\\b"
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-10/capsule-carousel-p06/H012",
+   "output_id": "capsule-carousel-p06",
+   "rule_id": "R004",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "Any size run on “Capsule launch carousel - Page 6” (capsule-carousel-p06.png) reads “XS S M L XL XXL”, as in northgrove_copy.txt.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "XS S M L XL XXL"
+    ],
+    "if_any": "\\bXS\\b|\\bXXL\\b"
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-10/capsule-carousel-p06/H001",
+   "output_id": "capsule-carousel-p06",
+   "rule_id": "R010",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The closing page “Capsule launch carousel - Page 6” (capsule-carousel-p06.png) contains “The capsule is live.”, the tall post line in northgrove_copy.txt, word for word.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "The capsule is live."
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-10/style-pdp-northgrove-style-03-raglan/H007",
+   "output_id": "style-pdp-northgrove-style-03-raglan",
+   "rule_id": "R012",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "Any fabric line on “Apparel style product-page module - northgrove_style_03_raglan” (style-pdp-northgrove-style-03-raglan.png) reads “80/20 loopback cotton, 340 gsm”, as northgrove_copy.txt gives for the Raglan.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "80/20 loopback cotton, 340 gsm"
+    ],
+    "if_any": "\\bgsm\\b|cotton|jersey"
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-10/style-pdp-northgrove-style-04-henley/H007",
+   "output_id": "style-pdp-northgrove-style-04-henley",
+   "rule_id": "R012",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "Any fabric line on “Apparel style product-page module - northgrove_style_04_henley” (style-pdp-northgrove-style-04-henley.png) reads “100% combed cotton jersey, 180 gsm”, as northgrove_copy.txt gives for the Henley.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "100% combed cotton jersey, 180 gsm"
+    ],
+    "if_any": "\\bgsm\\b|cotton|jersey"
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-10/style-pdp-northgrove-style-05-zip-hoodie/H007",
+   "output_id": "style-pdp-northgrove-style-05-zip-hoodie",
+   "rule_id": "R012",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "Any fabric line on “Apparel style product-page module - northgrove_style_05_zip_hoodie” (style-pdp-northgrove-style-05-zip-hoodie.png) reads “80/20 loopback cotton, 340 gsm”, as northgrove_copy.txt gives for the Hoodie.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "80/20 loopback cotton, 340 gsm"
+    ],
+    "if_any": "\\bgsm\\b|cotton|jersey"
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-10/style-pdp-northgrove-style-01-loopback-crew/H013",
+   "output_id": "style-pdp-northgrove-style-01-loopback-crew",
+   "rule_id": "R028",
+   "k_id": "K1_Q5",
+   "critical": true,
+   "check": "No price appears on “Apparel style product-page module - northgrove_style_01_loopback_crew” (style-pdp-northgrove-style-01-loopback-crew.png); none of the supplied files gives this style a price.",
+   "assertion": {
+    "op": "v2_prices",
+    "mode": "none"
+   },
+   "how": "Finds every price and checks each meets the rule."
+  },
+  {
+   "check_id": "PHOTO-10/style-pdp-northgrove-style-02-heavy-tee/H011",
+   "output_id": "style-pdp-northgrove-style-02-heavy-tee",
+   "rule_id": "R028",
+   "k_id": "K1_Q5",
+   "critical": true,
+   "check": "No price appears on “Apparel style product-page module - northgrove_style_02_heavy_tee” (style-pdp-northgrove-style-02-heavy-tee.png); none of the supplied files gives this style a price.",
+   "assertion": {
+    "op": "v2_prices",
+    "mode": "none"
+   },
+   "how": "Finds every price and checks each meets the rule."
+  },
+  {
+   "check_id": "PHOTO-10/style-pdp-northgrove-style-03-raglan/H009",
+   "output_id": "style-pdp-northgrove-style-03-raglan",
+   "rule_id": "R028",
+   "k_id": "K1_Q5",
+   "critical": true,
+   "check": "No price appears on “Apparel style product-page module - northgrove_style_03_raglan” (style-pdp-northgrove-style-03-raglan.png); none of the supplied files gives this style a price.",
+   "assertion": {
+    "op": "v2_prices",
+    "mode": "none"
+   },
+   "how": "Finds every price and checks each meets the rule."
+  },
+  {
+   "check_id": "PHOTO-10/style-pdp-northgrove-style-04-henley/H009",
+   "output_id": "style-pdp-northgrove-style-04-henley",
+   "rule_id": "R028",
+   "k_id": "K1_Q5",
+   "critical": true,
+   "check": "No price appears on “Apparel style product-page module - northgrove_style_04_henley” (style-pdp-northgrove-style-04-henley.png); none of the supplied files gives this style a price.",
+   "assertion": {
+    "op": "v2_prices",
+    "mode": "none"
+   },
+   "how": "Finds every price and checks each meets the rule."
+  },
+  {
+   "check_id": "PHOTO-10/style-pdp-northgrove-style-05-zip-hoodie/H009",
+   "output_id": "style-pdp-northgrove-style-05-zip-hoodie",
+   "rule_id": "R028",
+   "k_id": "K1_Q5",
+   "critical": true,
+   "check": "No price appears on “Apparel style product-page module - northgrove_style_05_zip_hoodie” (style-pdp-northgrove-style-05-zip-hoodie.png); none of the supplied files gives this style a price.",
+   "assertion": {
+    "op": "v2_prices",
+    "mode": "none"
+   },
+   "how": "Finds every price and checks each meets the rule."
+  },
+  {
+   "check_id": "PHOTO-10/style-pdp-northgrove-style-06-supporters-crew/H008",
+   "output_id": "style-pdp-northgrove-style-06-supporters-crew",
+   "rule_id": "R028",
+   "k_id": "K1_Q5",
+   "critical": true,
+   "check": "No price appears on “Apparel style product-page module - northgrove_style_06_supporters_crew” (style-pdp-northgrove-style-06-supporters-crew.png); none of the supplied files gives this style a price.",
+   "assertion": {
+    "op": "v2_prices",
+    "mode": "none"
+   },
+   "how": "Finds every price and checks each meets the rule."
+  },
+  {
+   "check_id": "PHOTO-10/capsule-carousel-p01/H006",
+   "output_id": "capsule-carousel-p01",
+   "rule_id": "R030",
+   "k_id": "K1_Q5",
+   "critical": true,
+   "check": "No price appears on “Capsule launch carousel - Page 1” (capsule-carousel-p01.png); none of the supplied files gives a price for any style.",
+   "assertion": {
+    "op": "v2_prices",
+    "mode": "none"
+   },
+   "how": "Finds every price and checks each meets the rule."
+  },
+  {
+   "check_id": "PHOTO-10/capsule-carousel-p02/H003",
+   "output_id": "capsule-carousel-p02",
+   "rule_id": "R030",
+   "k_id": "K1_Q5",
+   "critical": true,
+   "check": "No price appears on “Capsule launch carousel - Page 2” (capsule-carousel-p02.png); none of the supplied files gives a price for any style.",
+   "assertion": {
+    "op": "v2_prices",
+    "mode": "none"
+   },
+   "how": "Finds every price and checks each meets the rule."
+  },
+  {
+   "check_id": "PHOTO-10/capsule-carousel-p03/H003",
+   "output_id": "capsule-carousel-p03",
+   "rule_id": "R030",
+   "k_id": "K1_Q5",
+   "critical": true,
+   "check": "No price appears on “Capsule launch carousel - Page 3” (capsule-carousel-p03.png); none of the supplied files gives a price for any style.",
+   "assertion": {
+    "op": "v2_prices",
+    "mode": "none"
+   },
+   "how": "Finds every price and checks each meets the rule."
+  },
+  {
+   "check_id": "PHOTO-10/capsule-carousel-p04/H003",
+   "output_id": "capsule-carousel-p04",
+   "rule_id": "R030",
+   "k_id": "K1_Q5",
+   "critical": true,
+   "check": "No price appears on “Capsule launch carousel - Page 4” (capsule-carousel-p04.png); none of the supplied files gives a price for any style.",
+   "assertion": {
+    "op": "v2_prices",
+    "mode": "none"
+   },
+   "how": "Finds every price and checks each meets the rule."
+  },
+  {
+   "check_id": "PHOTO-10/capsule-carousel-p05/H003",
+   "output_id": "capsule-carousel-p05",
+   "rule_id": "R030",
+   "k_id": "K1_Q5",
+   "critical": true,
+   "check": "No price appears on “Capsule launch carousel - Page 5” (capsule-carousel-p05.png); none of the supplied files gives a price for any style.",
+   "assertion": {
+    "op": "v2_prices",
+    "mode": "none"
+   },
+   "how": "Finds every price and checks each meets the rule."
+  },
+  {
+   "check_id": "PHOTO-10/capsule-carousel-p06/H004",
+   "output_id": "capsule-carousel-p06",
+   "rule_id": "R030",
+   "k_id": "K1_Q5",
+   "critical": true,
+   "check": "No price appears on “Capsule launch carousel - Page 6” (capsule-carousel-p06.png); none of the supplied files gives a price for any style.",
+   "assertion": {
+    "op": "v2_prices",
+    "mode": "none"
+   },
+   "how": "Finds every price and checks each meets the rule."
+  },
+  {
+   "check_id": "PHOTO-10/style-pdp-northgrove-style-01-loopback-crew/H011",
+   "output_id": "style-pdp-northgrove-style-01-loopback-crew",
+   "rule_id": "R034",
+   "k_id": "K1_Q5",
+   "critical": true,
+   "check": "Any fabric line on “Apparel style product-page module - northgrove_style_01_loopback_crew” (style-pdp-northgrove-style-01-loopback-crew.png) reads “80/20 loopback cotton, 340 gsm”, as in northgrove_copy.txt.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "80/20 loopback cotton, 340 gsm"
+    ],
+    "if_any": "\\bgsm\\b|cotton|jersey"
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-10/style-pdp-northgrove-style-02-heavy-tee/H009",
+   "output_id": "style-pdp-northgrove-style-02-heavy-tee",
+   "rule_id": "R034",
+   "k_id": "K1_Q5",
+   "critical": true,
+   "check": "Any fabric line on “Apparel style product-page module - northgrove_style_02_heavy_tee” (style-pdp-northgrove-style-02-heavy-tee.png) reads “100% combed cotton jersey, 180 gsm”, as in northgrove_copy.txt.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "100% combed cotton jersey, 180 gsm"
+    ],
+    "if_any": "\\bgsm\\b|cotton|jersey"
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-10/capsule-carousel-p06/H002",
+   "output_id": "capsule-carousel-p06",
+   "rule_id": "R104",
+   "k_id": "K5_Q1",
+   "critical": false,
+   "check": "The largest text on “Capsule launch carousel - Page 6” (capsule-carousel-p06.png), other than any NORTHGROVE wordmark, is “The capsule is live.”, the tall post line from northgrove_copy.txt.",
+   "assertion": {
+    "op": "v2_largest_text",
+    "text": "The capsule is live.",
+    "except": [
+     "NORTHGROVE"
+    ]
+   },
+   "how": "Compares text sizes (font size in PDFs, letter height on images)."
+  }
+ ]
+}

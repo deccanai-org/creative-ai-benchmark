@@ -1,0 +1,310 @@
+{
+ "task_id": "MOTION-11",
+ "moved": [
+  {
+   "check_id": "MOTION-11/thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas/H003",
+   "output_id": "thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas",
+   "rule_id": "R001",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The title on “Channel thumbnail - WE SPENT SIX HOURS BUILDING A BRIDGE AND THEN DROVE STRAIGHT PAST IT” (thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas.png) reads exactly “WE SPENT SIX HOURS BUILDING A BRIDGE AND THEN DROVE STRAIGHT PAST IT”.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "WE SPENT SIX HOURS BUILDING A BRIDGE AND THEN DROVE STRAIGHT PAST IT"
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi/H003",
+   "output_id": "thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi",
+   "rule_id": "R001",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The title on “Channel thumbnail - I GAVE MY TEAM ONE SIMPLE JOB AND THEY SET THE ENTIRE BASE ON FIRE” (thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi.png) reads exactly “I GAVE MY TEAM ONE SIMPLE JOB AND THEY SET THE ENTIRE BASE ON FIRE”.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "I GAVE MY TEAM ONE SIMPLE JOB AND THEY SET THE ENTIRE BASE ON FIRE"
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-we-broke-the-map/H003",
+   "output_id": "thumbnail-we-broke-the-map",
+   "rule_id": "R002",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The title on “Channel thumbnail - WE BROKE THE MAP” (thumbnail-we-broke-the-map.png) reads exactly “WE BROKE THE MAP”, upload title 1 in staticfox_titles.txt.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "WE BROKE THE MAP"
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-everyone-off-the-platform/H005",
+   "output_id": "thumbnail-everyone-off-the-platform",
+   "rule_id": "R002",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The title on “Channel thumbnail - EVERYONE OFF THE PLATFORM” (thumbnail-everyone-off-the-platform.png) reads exactly “EVERYONE OFF THE PLATFORM”, upload title 2 in staticfox_titles.txt.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "EVERYONE OFF THE PLATFORM"
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-do-not-open-that-door/H004",
+   "output_id": "thumbnail-do-not-open-that-door",
+   "rule_id": "R002",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The title on “Channel thumbnail - DO NOT OPEN THAT DOOR” (thumbnail-do-not-open-that-door.png) reads exactly “DO NOT OPEN THAT DOOR”, upload title 4 in staticfox_titles.txt.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "DO NOT OPEN THAT DOOR"
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-kitchen-gone/H003",
+   "output_id": "thumbnail-kitchen-gone",
+   "rule_id": "R003",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The title on “Channel thumbnail - KITCHEN. GONE.” (thumbnail-kitchen-gone.png) reads exactly “KITCHEN. GONE.”, full stops included, upload title 3 in staticfox_titles.txt.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "KITCHEN. GONE."
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "MOTION-11/channel-animation/H002",
+   "output_id": "channel-animation",
+   "rule_id": "R004",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The end card of “Animated channel title and end card” (channel-animation.mp4) carries the members line word for word: “Members get the Sunday chaos stream and the bloopers nobody should see. Link in the description.”",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "Members get the Sunday chaos stream and the bloopers nobody should see. Link in the description."
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "MOTION-11/channel-teaser/H003",
+   "output_id": "channel-teaser",
+   "rule_id": "R008",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The tagline “Co op disasters and bad decisions.” appears on screen in “Channel feed teaser” (channel-teaser.mp4) exactly as written in staticfox_titles.txt, “Co op” unhyphenated.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "Co op disasters and bad decisions."
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "MOTION-11/channel-teaser/H004",
+   "output_id": "channel-teaser",
+   "rule_id": "R009",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The upload line “NEW ONE EVERY OTHER DAY” appears on screen in “Channel feed teaser” (channel-teaser.mp4) exactly as written in staticfox_titles.txt.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "NEW ONE EVERY OTHER DAY"
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "MOTION-11/channel-teaser-vertical/H038",
+   "output_id": "channel-teaser-vertical",
+   "rule_id": "R013",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The tagline “Co op disasters and bad decisions.” appears on screen in “Channel feed teaser upright cutdown” (channel-teaser-vertical.mp4) exactly as in staticfox_titles.txt.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "Co op disasters and bad decisions."
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "MOTION-11/channel-teaser-vertical/H039",
+   "output_id": "channel-teaser-vertical",
+   "rule_id": "R014",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The upload line “NEW ONE EVERY OTHER DAY” appears on screen in “Channel feed teaser upright cutdown” (channel-teaser-vertical.mp4) exactly as in staticfox_titles.txt.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "NEW ONE EVERY OTHER DAY"
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-everyone-off-the-platform/H001",
+   "output_id": "thumbnail-everyone-off-the-platform",
+   "rule_id": "R019",
+   "k_id": "K1_Q2",
+   "critical": false,
+   "check": "No letter of the title on “Channel thumbnail - EVERYONE OFF THE PLATFORM” (thumbnail-everyone-off-the-platform.png) is cut off at the frame edge.",
+   "assertion": {
+    "op": "v2_text_inside",
+    "texts": [
+     "EVERYONE OFF THE PLATFORM"
+    ]
+   },
+   "how": "Checks the named text is read in full inside the page or image (for a mark, its letters read as a line of their own)."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi/H001",
+   "output_id": "thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi",
+   "rule_id": "R019",
+   "k_id": "K1_Q2",
+   "critical": false,
+   "check": "No letter of the title on “Channel thumbnail - I GAVE MY TEAM ONE SIMPLE JOB AND THEY SET THE ENTIRE BASE ON FIRE” (thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi.png) is cut off at the frame edge.",
+   "assertion": {
+    "op": "v2_text_inside",
+    "texts": [
+     "I GAVE MY TEAM ONE SIMPLE JOB AND THEY SET THE ENTIRE BASE ON FIRE"
+    ]
+   },
+   "how": "Checks the named text is read in full inside the page or image (for a mark, its letters read as a line of their own)."
+  },
+  {
+   "check_id": "MOTION-11/channel-animation/H001",
+   "output_id": "channel-animation",
+   "rule_id": "R032",
+   "k_id": "K1_Q5",
+   "critical": true,
+   "check": "The channel name in “Animated channel title and end card” (channel-animation.mp4) reads exactly “STATIC FOX”; a wrong name is unusable.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "STATIC FOX"
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "MOTION-11/channel-animation/H010",
+   "output_id": "channel-animation",
+   "rule_id": "R035",
+   "k_id": "K2_Q1",
+   "critical": false,
+   "check": "Wherever Scrap appears in “Animated channel title and end card” (channel-animation.mp4), he is the supplied staticfox_scrap_transparent.png cutout, not a newly drawn or traced fox.",
+   "assertion": {
+    "op": "v2_contains_asset",
+    "assets": [
+     "staticfox_scrap_transparent.png"
+    ],
+    "shape": false,
+    "optional": true
+   },
+   "how": "Searches the deliverable for the supplied file (feature matching, confirmed by correlation)."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas/H008",
+   "output_id": "thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas",
+   "rule_id": "R117",
+   "k_id": "K5_Q1",
+   "critical": false,
+   "check": "The largest text on “Channel thumbnail - WE SPENT SIX HOURS BUILDING A BRIDGE AND THEN DROVE STRAIGHT PAST IT” (thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas.png) is the title.",
+   "assertion": {
+    "op": "v2_largest_text",
+    "text": "WE SPENT SIX HOURS BUILDING A BRIDGE AND THEN DROVE STRAIGHT PAST IT"
+   },
+   "how": "Compares text sizes (font size in PDFs, letter height on images)."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi/H009",
+   "output_id": "thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi",
+   "rule_id": "R117",
+   "k_id": "K5_Q1",
+   "critical": false,
+   "check": "The largest text on “Channel thumbnail - I GAVE MY TEAM ONE SIMPLE JOB AND THEY SET THE ENTIRE BASE ON FIRE” (thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi.png) is the title.",
+   "assertion": {
+    "op": "v2_largest_text",
+    "text": "I GAVE MY TEAM ONE SIMPLE JOB AND THEY SET THE ENTIRE BASE ON FIRE"
+   },
+   "how": "Compares text sizes (font size in PDFs, letter height on images)."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-we-broke-the-map/H011",
+   "output_id": "thumbnail-we-broke-the-map",
+   "rule_id": "R118",
+   "k_id": "K5_Q1",
+   "critical": false,
+   "check": "The largest text on “Channel thumbnail - WE BROKE THE MAP” (thumbnail-we-broke-the-map.png) is the title “WE BROKE THE MAP”.",
+   "assertion": {
+    "op": "v2_largest_text",
+    "text": "WE BROKE THE MAP"
+   },
+   "how": "Compares text sizes (font size in PDFs, letter height on images)."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-everyone-off-the-platform/H004",
+   "output_id": "thumbnail-everyone-off-the-platform",
+   "rule_id": "R118",
+   "k_id": "K5_Q1",
+   "critical": false,
+   "check": "The largest text on “Channel thumbnail - EVERYONE OFF THE PLATFORM” (thumbnail-everyone-off-the-platform.png) is the title “EVERYONE OFF THE PLATFORM”.",
+   "assertion": {
+    "op": "v2_largest_text",
+    "text": "EVERYONE OFF THE PLATFORM"
+   },
+   "how": "Compares text sizes (font size in PDFs, letter height on images)."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-kitchen-gone/H008",
+   "output_id": "thumbnail-kitchen-gone",
+   "rule_id": "R118",
+   "k_id": "K5_Q1",
+   "critical": false,
+   "check": "The largest text on “Channel thumbnail - KITCHEN. GONE.” (thumbnail-kitchen-gone.png) is the title “KITCHEN. GONE.”.",
+   "assertion": {
+    "op": "v2_largest_text",
+    "text": "KITCHEN. GONE."
+   },
+   "how": "Compares text sizes (font size in PDFs, letter height on images)."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-do-not-open-that-door/H009",
+   "output_id": "thumbnail-do-not-open-that-door",
+   "rule_id": "R118",
+   "k_id": "K5_Q1",
+   "critical": false,
+   "check": "The largest text on “Channel thumbnail - DO NOT OPEN THAT DOOR” (thumbnail-do-not-open-that-door.png) is the title “DO NOT OPEN THAT DOOR”.",
+   "assertion": {
+    "op": "v2_largest_text",
+    "text": "DO NOT OPEN THAT DOOR"
+   },
+   "how": "Compares text sizes (font size in PDFs, letter height on images)."
+  }
+ ]
+}

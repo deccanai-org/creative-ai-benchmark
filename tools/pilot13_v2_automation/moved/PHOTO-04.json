@@ -1,0 +1,588 @@
+{
+ "task_id": "PHOTO-04",
+ "moved": [
+  {
+   "check_id": "PHOTO-04/booking-hero-oliveto/H002",
+   "output_id": "booking-hero-oliveto",
+   "rule_id": "R001",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The offer price on “Villa booking hero - Oliveto” (booking-hero-oliveto.png) is 590, the lowest 2027 nightly rate for Casa Oliveto in rates_2027.csv.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     {
+      "regex": "(?<![\\d,.])590(?![\\d,.]|\\d)"
+     }
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-04/booking-hero-scogliera/H002",
+   "output_id": "booking-hero-scogliera",
+   "rule_id": "R001",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The offer price on “Villa booking hero - Scogliera” (booking-hero-scogliera.png) is 640, the lowest 2027 nightly rate for Casa Scogliera in rates_2027.csv.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     {
+      "regex": "(?<![\\d,.])640(?![\\d,.]|\\d)"
+     }
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-04/booking-hero-verranza/H002",
+   "output_id": "booking-hero-verranza",
+   "rule_id": "R001",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The offer price on “Villa booking hero - Verranza” (booking-hero-verranza.png) is 520, the lowest 2027 nightly rate for Casa Verranza in rates_2027.csv.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     {
+      "regex": "(?<![\\d,.])520(?![\\d,.]|\\d)"
+     }
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-04/villa-collection/H001",
+   "output_id": "villa-collection",
+   "rule_id": "R003",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "Casa Verranza is named in full in “Villa comparison brochure” (villa-collection.pdf), spelled as in owner_note.txt.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "Casa Verranza"
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-04/booking-hero-oliveto/H009",
+   "output_id": "booking-hero-oliveto",
+   "rule_id": "R008",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "If a sleeps figure appears on “Villa booking hero - Oliveto” (booking-hero-oliveto.png), it reads 8.",
+   "assertion": {
+    "op": "v2_text_present",
+    "line_has": "\\bsleeps?\\b",
+    "optional": true,
+    "expected": [
+     {
+      "regex": "\\b8\\b"
+     }
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-04/booking-hero-verranza/H007",
+   "output_id": "booking-hero-verranza",
+   "rule_id": "R008",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "If a sleeps figure appears on “Villa booking hero - Verranza” (booking-hero-verranza.png), it reads 6.",
+   "assertion": {
+    "op": "v2_text_present",
+    "line_has": "\\bsleeps?\\b",
+    "optional": true,
+    "expected": [
+     {
+      "regex": "\\b6\\b"
+     }
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-04/booking-hero-oliveto/H010",
+   "output_id": "booking-hero-oliveto",
+   "rule_id": "R009",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "If a minimum stay appears on “Villa booking hero - Oliveto” (booking-hero-oliveto.png), it reads 3 nights, the Casa Oliveto Spring minimum in rates_2027.csv.",
+   "assertion": {
+    "op": "v2_text_present",
+    "line_has": "minimum|min\\.? stay",
+    "optional": true,
+    "expected": [
+     {
+      "regex": "\\b3\\b"
+     }
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-04/booking-hero-scogliera/H008",
+   "output_id": "booking-hero-scogliera",
+   "rule_id": "R009",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "If a minimum stay appears on “Villa booking hero - Scogliera” (booking-hero-scogliera.png), it reads 4 nights, the Casa Scogliera Spring minimum in rates_2027.csv.",
+   "assertion": {
+    "op": "v2_text_present",
+    "line_has": "minimum|min\\.? stay",
+    "optional": true,
+    "expected": [
+     {
+      "regex": "\\b4\\b"
+     }
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-04/booking-hero-verranza/H008",
+   "output_id": "booking-hero-verranza",
+   "rule_id": "R009",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "If a minimum stay appears on “Villa booking hero - Verranza” (booking-hero-verranza.png), it reads 3 nights, the Casa Verranza Spring minimum in rates_2027.csv.",
+   "assertion": {
+    "op": "v2_text_present",
+    "line_has": "minimum|min\\.? stay",
+    "optional": true,
+    "expected": [
+     {
+      "regex": "\\b3\\b"
+     }
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-04/villa-collection/H063",
+   "output_id": "villa-collection",
+   "rule_id": "R010",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "“Villa comparison brochure” (villa-collection.pdf) carries the supplied gate monogram artwork, verranza_monogram_transparent.png, on at least one page, not a retyped or redrawn version.",
+   "assertion": {
+    "op": "v2_contains_asset",
+    "assets": [
+     "verranza_monogram_transparent.png"
+    ],
+    "shape": true,
+    "optional": false
+   },
+   "how": "Searches the deliverable for the supplied file (feature matching, confirmed by correlation), then checks it keeps its own proportions."
+  },
+  {
+   "check_id": "PHOTO-04/villa-collection/H092",
+   "output_id": "villa-collection",
+   "rule_id": "R012",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "Casa Oliveto is named in full in “Villa comparison brochure” (villa-collection.pdf), spelled as in owner_note.txt.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "Casa Oliveto"
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-04/villa-collection/H093",
+   "output_id": "villa-collection",
+   "rule_id": "R013",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "Casa Scogliera is named in full in “Villa comparison brochure” (villa-collection.pdf), spelled as in owner_note.txt.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "Casa Scogliera"
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-04/booking-hero-oliveto/H068",
+   "output_id": "booking-hero-oliveto",
+   "rule_id": "R014",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "No copy on “Villa booking hero - Oliveto” (booking-hero-oliveto.png) names or offers Casa Fienile.",
+   "assertion": {
+    "op": "v2_text_absent",
+    "texts": [
+     "Fienile"
+    ]
+   },
+   "how": "Reads all text and checks none of the named words or patterns appears."
+  },
+  {
+   "check_id": "PHOTO-04/booking-hero-scogliera/H068",
+   "output_id": "booking-hero-scogliera",
+   "rule_id": "R014",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "No copy on “Villa booking hero - Scogliera” (booking-hero-scogliera.png) names or offers Casa Fienile.",
+   "assertion": {
+    "op": "v2_text_absent",
+    "texts": [
+     "Fienile"
+    ]
+   },
+   "how": "Reads all text and checks none of the named words or patterns appears."
+  },
+  {
+   "check_id": "PHOTO-04/booking-hero-verranza/H068",
+   "output_id": "booking-hero-verranza",
+   "rule_id": "R014",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "No copy on “Villa booking hero - Verranza” (booking-hero-verranza.png) names or offers Casa Fienile.",
+   "assertion": {
+    "op": "v2_text_absent",
+    "texts": [
+     "Fienile"
+    ]
+   },
+   "how": "Reads all text and checks none of the named words or patterns appears."
+  },
+  {
+   "check_id": "PHOTO-04/villa-collection/H003",
+   "output_id": "villa-collection",
+   "rule_id": "R015",
+   "k_id": "K1_Q3",
+   "critical": false,
+   "check": "The season labels in “Villa comparison brochure” (villa-collection.pdf) read “Spring”, “High Summer” and “Autumn”, not the codes “S1”, “S2” and “S3”.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "Spring",
+     "High Summer",
+     "Autumn"
+    ],
+    "forbidden": [
+     {
+      "regex": "\\bS[123]\\b"
+     }
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-04/booking-hero-oliveto/H008",
+   "output_id": "booking-hero-oliveto",
+   "rule_id": "R017",
+   "k_id": "K1_Q3",
+   "critical": false,
+   "check": "The season on “Villa booking hero - Oliveto” (booking-hero-oliveto.png) is written “Spring”, not the code “S1”.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "Spring"
+    ],
+    "forbidden": [
+     {
+      "regex": "\\bS1\\b"
+     }
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-04/booking-hero-scogliera/H006",
+   "output_id": "booking-hero-scogliera",
+   "rule_id": "R017",
+   "k_id": "K1_Q3",
+   "critical": false,
+   "check": "The season on “Villa booking hero - Scogliera” (booking-hero-scogliera.png) is written “Spring”, not the code “S1”.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "Spring"
+    ],
+    "forbidden": [
+     {
+      "regex": "\\bS1\\b"
+     }
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-04/booking-hero-verranza/H006",
+   "output_id": "booking-hero-verranza",
+   "rule_id": "R017",
+   "k_id": "K1_Q3",
+   "critical": false,
+   "check": "The season on “Villa booking hero - Verranza” (booking-hero-verranza.png) is written “Spring”, not the code “S1”.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "Spring"
+    ],
+    "forbidden": [
+     {
+      "regex": "\\bS1\\b"
+     }
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-04/villa-collection/H004",
+   "output_id": "villa-collection",
+   "rule_id": "R018",
+   "k_id": "K1_Q5",
+   "critical": true,
+   "check": "“Villa comparison brochure” (villa-collection.pdf) contains no entry for the sold house “Casa Fienile”; offering it makes the brochure unusable.",
+   "assertion": {
+    "op": "v2_text_absent",
+    "texts": [
+     "Fienile"
+    ],
+    "found_is": "person"
+   },
+   "how": "Reads all text and checks none of the named words or patterns appears."
+  },
+  {
+   "check_id": "PHOTO-04/villa-collection/H005",
+   "output_id": "villa-collection",
+   "rule_id": "R019",
+   "k_id": "K1_Q5",
+   "critical": true,
+   "check": "The sleeps figure for Casa Scogliera in “Villa comparison brochure” (villa-collection.pdf) reads “10”, as the owner states, not the sheet's “9”.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     {
+      "regex": "\\bsleeps?\\W{0,3}10\\b"
+     }
+    ],
+    "forbidden": [
+     {
+      "regex": "\\bsleeps?\\W{0,3}9\\b"
+     }
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-04/booking-hero-scogliera/H007",
+   "output_id": "booking-hero-scogliera",
+   "rule_id": "R020",
+   "k_id": "K1_Q5",
+   "critical": true,
+   "check": "If a sleeps figure appears on “Villa booking hero - Scogliera” (booking-hero-scogliera.png), it reads 10, as the owner states, never the sheet's 9.",
+   "assertion": {
+    "op": "v2_text_present",
+    "line_has": "\\bsleeps?\\b",
+    "optional": true,
+    "expected": [
+     {
+      "regex": "\\b10\\b"
+     }
+    ],
+    "forbidden": [
+     {
+      "regex": "\\b9\\b"
+     }
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-04/booking-hero-oliveto/H001",
+   "output_id": "booking-hero-oliveto",
+   "rule_id": "R021",
+   "k_id": "K2_Q1",
+   "critical": false,
+   "check": "“Villa booking hero - Oliveto” (booking-hero-oliveto.png) is built from one of the Casa Oliveto frames: oliveto_pool.jpg, oliveto_terrace.jpg, oliveto_bedroom.jpg or oliveto_living.jpg.",
+   "assertion": {
+    "op": "v2_contains_asset",
+    "assets": [
+     "oliveto_pool.jpg",
+     "oliveto_terrace.jpg",
+     "oliveto_bedroom.jpg",
+     "oliveto_living.jpg"
+    ],
+    "shape": false,
+    "optional": false
+   },
+   "how": "Searches the deliverable for the supplied file (feature matching, confirmed by correlation)."
+  },
+  {
+   "check_id": "PHOTO-04/booking-hero-scogliera/H001",
+   "output_id": "booking-hero-scogliera",
+   "rule_id": "R021",
+   "k_id": "K2_Q1",
+   "critical": false,
+   "check": "“Villa booking hero - Scogliera” (booking-hero-scogliera.png) is built from one of the Casa Scogliera frames: scogliera_pool.jpg, scogliera_terrace.jpg, scogliera_bedroom.jpg or scogliera_living.jpg.",
+   "assertion": {
+    "op": "v2_contains_asset",
+    "assets": [
+     "scogliera_pool.jpg",
+     "scogliera_terrace.jpg",
+     "scogliera_bedroom.jpg",
+     "scogliera_living.jpg"
+    ],
+    "shape": false,
+    "optional": false
+   },
+   "how": "Searches the deliverable for the supplied file (feature matching, confirmed by correlation)."
+  },
+  {
+   "check_id": "PHOTO-04/booking-hero-verranza/H001",
+   "output_id": "booking-hero-verranza",
+   "rule_id": "R021",
+   "k_id": "K2_Q1",
+   "critical": false,
+   "check": "“Villa booking hero - Verranza” (booking-hero-verranza.png) is built from one of the Casa Verranza frames: verranza_pool.jpg, verranza_terrace.jpg, verranza_bedroom.jpg or verranza_living.jpg.",
+   "assertion": {
+    "op": "v2_contains_asset",
+    "assets": [
+     "verranza_pool.jpg",
+     "verranza_terrace.jpg",
+     "verranza_bedroom.jpg",
+     "verranza_living.jpg"
+    ],
+    "shape": false,
+    "optional": false
+   },
+   "how": "Searches the deliverable for the supplied file (feature matching, confirmed by correlation)."
+  },
+  {
+   "check_id": "PHOTO-04/booking-hero-oliveto/H063",
+   "output_id": "booking-hero-oliveto",
+   "rule_id": "R033",
+   "k_id": "K2_Q2",
+   "critical": false,
+   "check": "If the gate monogram appears on “Villa booking hero - Oliveto” (booking-hero-oliveto.png), it is the supplied verranza_monogram_transparent.png artwork, not a retyped or redrawn version.",
+   "assertion": {
+    "op": "v2_contains_asset",
+    "assets": [
+     "verranza_monogram_transparent.png"
+    ],
+    "shape": true,
+    "optional": true
+   },
+   "how": "Searches the deliverable for the supplied file (feature matching, confirmed by correlation), then checks it keeps its own proportions."
+  },
+  {
+   "check_id": "PHOTO-04/booking-hero-scogliera/H063",
+   "output_id": "booking-hero-scogliera",
+   "rule_id": "R033",
+   "k_id": "K2_Q2",
+   "critical": false,
+   "check": "If the gate monogram appears on “Villa booking hero - Scogliera” (booking-hero-scogliera.png), it is the supplied verranza_monogram_transparent.png artwork, not a retyped or redrawn version.",
+   "assertion": {
+    "op": "v2_contains_asset",
+    "assets": [
+     "verranza_monogram_transparent.png"
+    ],
+    "shape": true,
+    "optional": true
+   },
+   "how": "Searches the deliverable for the supplied file (feature matching, confirmed by correlation), then checks it keeps its own proportions."
+  },
+  {
+   "check_id": "PHOTO-04/booking-hero-verranza/H063",
+   "output_id": "booking-hero-verranza",
+   "rule_id": "R033",
+   "k_id": "K2_Q2",
+   "critical": false,
+   "check": "If the gate monogram appears on “Villa booking hero - Verranza” (booking-hero-verranza.png), it is the supplied verranza_monogram_transparent.png artwork, not a retyped or redrawn version.",
+   "assertion": {
+    "op": "v2_contains_asset",
+    "assets": [
+     "verranza_monogram_transparent.png"
+    ],
+    "shape": true,
+    "optional": true
+   },
+   "how": "Searches the deliverable for the supplied file (feature matching, confirmed by correlation), then checks it keeps its own proportions."
+  },
+  {
+   "check_id": "PHOTO-04/villa-collection/H030",
+   "output_id": "villa-collection",
+   "rule_id": "R036",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The type, panel, rule, button and icon colours in “Villa comparison brochure” (villa-collection.pdf) come only from #24425A, #EFE9DC, #C4B5A0, #6E7355, #4C7A8C and #2A2925.",
+   "assertion": {
+    "op": "v2_palette_only",
+    "hexes": [
+     "#24425A",
+     "#EFE9DC",
+     "#C4B5A0",
+     "#6E7355",
+     "#4C7A8C",
+     "#2A2925"
+    ]
+   },
+   "how": "Reads every type, shape and line colour from the file (photos excluded)."
+  },
+  {
+   "check_id": "PHOTO-04/villa-collection/H031",
+   "output_id": "villa-collection",
+   "rule_id": "R037",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Verranza Blue #24425A and Lime Wash #EFE9DC both appear in the type, grounds or panels of “Villa comparison brochure” (villa-collection.pdf), not only in the photographs.",
+   "assertion": {
+    "op": "v2_colours_present",
+    "hexes": [
+     "#24425A",
+     "#EFE9DC"
+    ]
+   },
+   "how": "Checks the named colours are used by type or shapes."
+  },
+  {
+   "check_id": "PHOTO-04/booking-hero-oliveto/H006",
+   "output_id": "booking-hero-oliveto",
+   "rule_id": "R115",
+   "k_id": "K5_Q1",
+   "critical": false,
+   "check": "The largest text on “Villa booking hero - Oliveto” (booking-hero-oliveto.png) is the house name “Casa Oliveto”.",
+   "assertion": {
+    "op": "v2_largest_text",
+    "text": "Casa Oliveto"
+   },
+   "how": "Compares text sizes (font size in PDFs, letter height on images)."
+  },
+  {
+   "check_id": "PHOTO-04/booking-hero-scogliera/H024",
+   "output_id": "booking-hero-scogliera",
+   "rule_id": "R115",
+   "k_id": "K5_Q1",
+   "critical": false,
+   "check": "The largest text on “Villa booking hero - Scogliera” (booking-hero-scogliera.png) is the house name “Casa Scogliera”.",
+   "assertion": {
+    "op": "v2_largest_text",
+    "text": "Casa Scogliera"
+   },
+   "how": "Compares text sizes (font size in PDFs, letter height on images)."
+  },
+  {
+   "check_id": "PHOTO-04/booking-hero-verranza/H023",
+   "output_id": "booking-hero-verranza",
+   "rule_id": "R115",
+   "k_id": "K5_Q1",
+   "critical": false,
+   "check": "The largest text on “Villa booking hero - Verranza” (booking-hero-verranza.png) is the house name “Casa Verranza”.",
+   "assertion": {
+    "op": "v2_largest_text",
+    "text": "Casa Verranza"
+   },
+   "how": "Compares text sizes (font size in PDFs, letter height on images)."
+  }
+ ]
+}

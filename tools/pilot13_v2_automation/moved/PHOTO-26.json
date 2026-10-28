@@ -1,0 +1,123 @@
+{
+ "task_id": "PHOTO-26",
+ "moved": [
+  {
+   "check_id": "PHOTO-26/wholesale-presentation/H030",
+   "output_id": "wholesale-presentation",
+   "rule_id": "R026",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Type, grounds, tiles, panels, the band, rules and icons on “Interiors wholesale presentation” (wholesale-presentation.pdf) use only #E7DDCB, #33455E, #F6F1E8, #3B3733 and #C9A98E, never pure black or the near-black #211E1A.",
+   "assertion": {
+    "op": "v2_palette_only",
+    "hexes": [
+     "#E7DDCB",
+     "#33455E",
+     "#F6F1E8",
+     "#3B3733",
+     "#C9A98E"
+    ]
+   },
+   "how": "Reads every type, shape and line colour from the file (photos excluded)."
+  },
+  {
+   "check_id": "PHOTO-26/collection-spread/H029",
+   "output_id": "collection-spread",
+   "rule_id": "R027",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Photographs aside, the page ground of every page of “Autumn interiors collection spread” (collection-spread.pdf) is Warm Paper Ground #F6F1E8.",
+   "assertion": {
+    "op": "v2_main_ground",
+    "hex": "#F6F1E8"
+   },
+   "how": "Renders each page without photos and finds the colour covering the most area."
+  },
+  {
+   "check_id": "PHOTO-26/wholesale-presentation/H031",
+   "output_id": "wholesale-presentation",
+   "rule_id": "R027",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Photographs aside, the page ground of every page of “Interiors wholesale presentation” (wholesale-presentation.pdf) is Warm Paper Ground #F6F1E8.",
+   "assertion": {
+    "op": "v2_main_ground",
+    "hex": "#F6F1E8"
+   },
+   "how": "Renders each page without photos and finds the colour covering the most area."
+  },
+  {
+   "check_id": "PHOTO-26/collection-spread/H028",
+   "output_id": "collection-spread",
+   "rule_id": "R031",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Type, grounds, tiles, panels, any band, rules and icons on “Autumn interiors collection spread” (collection-spread.pdf) use only #E7DDCB, #33455E, #F6F1E8, #3B3733 and #C9A98E, never pure black or the near-black #211E1A.",
+   "assertion": {
+    "op": "v2_palette_only",
+    "hexes": [
+     "#E7DDCB",
+     "#33455E",
+     "#F6F1E8",
+     "#3B3733",
+     "#C9A98E"
+    ]
+   },
+   "how": "Reads every type, shape and line colour from the file (photos excluded)."
+  },
+  {
+   "check_id": "PHOTO-26/collection-spread/H052",
+   "output_id": "collection-spread",
+   "rule_id": "R034",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Photographs aside, Warm Paper Ground #F6F1E8 covers more of every page of “Autumn interiors collection spread” (collection-spread.pdf) than all Oatmeal Glaze, Soft Clay and Indigo Dye areas combined.",
+   "assertion": {
+    "op": "v2_area_share",
+    "hexes": [
+     "#F6F1E8"
+    ],
+    "compare_hexes": [
+     "#E7DDCB",
+     "#C9A98E",
+     "#33455E"
+    ]
+   },
+   "how": "Renders the file without photos and measures the share of the named colours."
+  },
+  {
+   "check_id": "PHOTO-26/wholesale-presentation/H054",
+   "output_id": "wholesale-presentation",
+   "rule_id": "R034",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Photographs aside, Warm Paper Ground #F6F1E8 covers more of every page of “Interiors wholesale presentation” (wholesale-presentation.pdf) than all Oatmeal Glaze, Soft Clay and Indigo Dye areas combined.",
+   "assertion": {
+    "op": "v2_area_share",
+    "hexes": [
+     "#F6F1E8"
+    ],
+    "compare_hexes": [
+     "#E7DDCB",
+     "#C9A98E",
+     "#33455E"
+    ]
+   },
+   "how": "Renders the file without photos and measures the share of the named colours."
+  },
+  {
+   "check_id": "PHOTO-26/wholesale-presentation/H010",
+   "output_id": "wholesale-presentation",
+   "rule_id": "R071",
+   "k_id": "K5_Q1",
+   "critical": false,
+   "check": "The largest text on page 1 of “Interiors wholesale presentation” (wholesale-presentation.pdf) is the brand name “Thornmere Home”.",
+   "assertion": {
+    "op": "v2_largest_text",
+    "text": "Thornmere Home",
+    "page": 1
+   },
+   "how": "Compares text sizes (font size in PDFs, letter height on images)."
+  }
+ ]
+}

@@ -1,0 +1,154 @@
+{
+ "task_id": "PHOTO-28",
+ "moved": [
+  {
+   "check_id": "PHOTO-28/studio-launch/H001",
+   "output_id": "studio-launch",
+   "rule_id": "R001",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The studio location on “Studio launch-page composition” (studio-launch.png) reads “Calloway Row”, with no invented street number, city or postcode added.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "Calloway Row"
+    ],
+    "whole_line": true
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-28/class-feed/H012",
+   "output_id": "class-feed",
+   "rule_id": "R006",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The validity on “Class announcement” (class-feed.png) is through Dec 2027, as in roster_2027.csv, not last year's through Dec 2025.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     {
+      "regex": "\\bthrough\\s+DEC(?:EMBER)?\\.?\\s+2027\\b"
+     }
+    ],
+    "forbidden": [
+     {
+      "regex": "\\bthrough\\s+DEC(?:EMBER)?\\.?\\s+2025\\b"
+     }
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-28/class-feed/H021",
+   "output_id": "class-feed",
+   "rule_id": "R038",
+   "k_id": "K1_Q3",
+   "critical": false,
+   "check": "“Class announcement” (class-feed.png) invents no web address, phone number or social handle; any contact it gives is a supplied verdastudio.example address.",
+   "assertion": {
+    "op": "v2_text_absent",
+    "patterns": {
+     "web address": "\\b(?:https?://\\S+|www\\.\\S+|[a-z0-9-]+\\.(?:com|org|net|io|co|us|uk|ca|app|studio|example)(?:/\\S*)?)\\b",
+     "phone number": "(?<![\\w$])\\+?\\(?\\d{3}\\)?[\\s.-]?\\d{3}[\\s.-]?\\d{4}\\b",
+     "social handle": "(?<![\\w@])@[A-Za-z_][\\w.]{1,}"
+    },
+    "allow": [
+     "(?:[\\w.+-]+@)?(?:www\\.)?verdastudio\\.example(?:/\\S*)?"
+    ]
+   },
+   "how": "Reads all text and checks none of the named words or patterns appears."
+  },
+  {
+   "check_id": "PHOTO-28/studio-launch/H015",
+   "output_id": "studio-launch",
+   "rule_id": "R042",
+   "k_id": "K1_Q3",
+   "critical": false,
+   "check": "The booking action on “Studio launch-page composition” (studio-launch.png) invents no web address, phone number or social handle; any contact it gives is a supplied verdastudio.example address.",
+   "assertion": {
+    "op": "v2_text_absent",
+    "patterns": {
+     "web address": "\\b(?:https?://\\S+|www\\.\\S+|[a-z0-9-]+\\.(?:com|org|net|io|co|us|uk|ca|app|studio|example)(?:/\\S*)?)\\b",
+     "phone number": "(?<![\\w$])\\+?\\(?\\d{3}\\)?[\\s.-]?\\d{3}[\\s.-]?\\d{4}\\b",
+     "social handle": "(?<![\\w@])@[A-Za-z_][\\w.]{1,}"
+    },
+    "allow": [
+     "(?:[\\w.+-]+@)?(?:www\\.)?verdastudio\\.example(?:/\\S*)?"
+    ]
+   },
+   "how": "Reads all text and checks none of the named words or patterns appears."
+  },
+  {
+   "check_id": "PHOTO-28/booking-story/H015",
+   "output_id": "booking-story",
+   "rule_id": "R042",
+   "k_id": "K1_Q3",
+   "critical": false,
+   "check": "The booking action on “Studio booking story” (booking-story.png) invents no web address, phone number or social handle; any contact it gives is a supplied verdastudio.example address.",
+   "assertion": {
+    "op": "v2_text_absent",
+    "patterns": {
+     "web address": "\\b(?:https?://\\S+|www\\.\\S+|[a-z0-9-]+\\.(?:com|org|net|io|co|us|uk|ca|app|studio|example)(?:/\\S*)?)\\b",
+     "phone number": "(?<![\\w$])\\+?\\(?\\d{3}\\)?[\\s.-]?\\d{3}[\\s.-]?\\d{4}\\b",
+     "social handle": "(?<![\\w@])@[A-Za-z_][\\w.]{1,}"
+    },
+    "allow": [
+     "(?:[\\w.+-]+@)?(?:www\\.)?verdastudio\\.example(?:/\\S*)?"
+    ]
+   },
+   "how": "Reads all text and checks none of the named words or patterns appears."
+  },
+  {
+   "check_id": "PHOTO-28/studio-launch/H026",
+   "output_id": "studio-launch",
+   "rule_id": "R057",
+   "k_id": "K2_Q2",
+   "critical": false,
+   "check": "The studio wordmark on “Studio launch-page composition” (studio-launch.png) is the verda_wordmark_transparent.png drawing, not retyped in another font.",
+   "assertion": {
+    "op": "v2_contains_asset",
+    "assets": [
+     "verda_wordmark_transparent.png"
+    ],
+    "shape": true,
+    "optional": false
+   },
+   "how": "Searches the deliverable for the supplied file (feature matching, confirmed by correlation), then checks it keeps its own proportions."
+  },
+  {
+   "check_id": "PHOTO-28/class-feed/H028",
+   "output_id": "class-feed",
+   "rule_id": "R057",
+   "k_id": "K2_Q2",
+   "critical": false,
+   "check": "The studio wordmark on “Class announcement” (class-feed.png) is the verda_wordmark_transparent.png drawing, not retyped in another font.",
+   "assertion": {
+    "op": "v2_contains_asset",
+    "assets": [
+     "verda_wordmark_transparent.png"
+    ],
+    "shape": true,
+    "optional": false
+   },
+   "how": "Searches the deliverable for the supplied file (feature matching, confirmed by correlation), then checks it keeps its own proportions."
+  },
+  {
+   "check_id": "PHOTO-28/booking-story/H003",
+   "output_id": "booking-story",
+   "rule_id": "R057",
+   "k_id": "K2_Q2",
+   "critical": false,
+   "check": "The studio wordmark on “Studio booking story” (booking-story.png) is the verda_wordmark_transparent.png drawing, not retyped in another font.",
+   "assertion": {
+    "op": "v2_contains_asset",
+    "assets": [
+     "verda_wordmark_transparent.png"
+    ],
+    "shape": true,
+    "optional": false
+   },
+   "how": "Searches the deliverable for the supplied file (feature matching, confirmed by correlation), then checks it keeps its own proportions."
+  }
+ ]
+}

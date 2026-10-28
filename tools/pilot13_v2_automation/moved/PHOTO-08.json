@@ -1,0 +1,1485 @@
+{
+ "task_id": "PHOTO-08",
+ "moved": [
+  {
+   "check_id": "PHOTO-08/vehicle-card-r002/H004",
+   "output_id": "vehicle-card-r002",
+   "rule_id": "R001",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The stock number on “Vehicle sales card - M3082” (vehicle-card-r002.png) reads exactly “M3082”, as approved in meridian_intake_week.csv, row 2.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "M3082"
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-08/vehicle-card-r003/H004",
+   "output_id": "vehicle-card-r003",
+   "rule_id": "R001",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The stock number on “Vehicle sales card - M3091” (vehicle-card-r003.png) reads exactly “M3091”, as approved in meridian_intake_week.csv, row 3.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "M3091"
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-08/vehicle-card-r004/H004",
+   "output_id": "vehicle-card-r004",
+   "rule_id": "R001",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The stock number on “Vehicle sales card - M2417” (vehicle-card-r004.png) reads exactly “M2417”, as approved in meridian_intake_week.csv, row 4.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "M2417"
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-08/vehicle-card-r005/H004",
+   "output_id": "vehicle-card-r005",
+   "rule_id": "R001",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The stock number on “Vehicle sales card - M3105” (vehicle-card-r005.png) reads exactly “M3105”, as approved in meridian_intake_week.csv, row 5.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "M3105"
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-08/vehicle-card-r006/H004",
+   "output_id": "vehicle-card-r006",
+   "rule_id": "R001",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The stock number on “Vehicle sales card - M2471” (vehicle-card-r006.png) reads exactly “M2471”, as approved in meridian_intake_week.csv, row 6.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "M2471"
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-08/vehicle-card-r007/H004",
+   "output_id": "vehicle-card-r007",
+   "rule_id": "R001",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The stock number on “Vehicle sales card - M3119” (vehicle-card-r007.png) reads exactly “M3119”, as approved in meridian_intake_week.csv, row 7.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "M3119"
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-08/vehicle-card-r002/H005",
+   "output_id": "vehicle-card-r002",
+   "rule_id": "R002",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The year on “Vehicle sales card - M3082” (vehicle-card-r002.png) reads exactly “2019”, as approved in meridian_intake_week.csv, row 2.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "2019"
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-08/vehicle-card-r003/H005",
+   "output_id": "vehicle-card-r003",
+   "rule_id": "R002",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The year on “Vehicle sales card - M3091” (vehicle-card-r003.png) reads exactly “2018”, as approved in meridian_intake_week.csv, row 3.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "2018"
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-08/vehicle-card-r004/H005",
+   "output_id": "vehicle-card-r004",
+   "rule_id": "R002",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The year on “Vehicle sales card - M2417” (vehicle-card-r004.png) reads exactly “2017”, as approved in meridian_intake_week.csv, row 4.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "2017"
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-08/vehicle-card-r005/H005",
+   "output_id": "vehicle-card-r005",
+   "rule_id": "R002",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The year on “Vehicle sales card - M3105” (vehicle-card-r005.png) reads exactly “2020”, as approved in meridian_intake_week.csv, row 5.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "2020"
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-08/vehicle-card-r006/H005",
+   "output_id": "vehicle-card-r006",
+   "rule_id": "R002",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The year on “Vehicle sales card - M2471” (vehicle-card-r006.png) reads exactly “2017”, as approved in meridian_intake_week.csv, row 6.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "2017"
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-08/vehicle-card-r007/H005",
+   "output_id": "vehicle-card-r007",
+   "rule_id": "R002",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The year on “Vehicle sales card - M3119” (vehicle-card-r007.png) reads exactly “2019”, as approved in meridian_intake_week.csv, row 7.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "2019"
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-08/vehicle-card-r002/H006",
+   "output_id": "vehicle-card-r002",
+   "rule_id": "R003",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The make and model on “Vehicle sales card - M3082” (vehicle-card-r002.png) reads exactly “Norsted Alta”, as approved in meridian_intake_week.csv, row 2.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "Norsted Alta"
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-08/vehicle-card-r003/H006",
+   "output_id": "vehicle-card-r003",
+   "rule_id": "R003",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The make and model on “Vehicle sales card - M3091” (vehicle-card-r003.png) reads exactly “Ardmoor Ridge”, as approved in meridian_intake_week.csv, row 3.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "Ardmoor Ridge"
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-08/vehicle-card-r004/H006",
+   "output_id": "vehicle-card-r004",
+   "rule_id": "R003",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The make and model on “Vehicle sales card - M2417” (vehicle-card-r004.png) reads exactly “Calder Vireo”, as approved in meridian_intake_week.csv, row 4.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "Calder Vireo"
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-08/vehicle-card-r005/H006",
+   "output_id": "vehicle-card-r005",
+   "rule_id": "R003",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The make and model on “Vehicle sales card - M3105” (vehicle-card-r005.png) reads exactly “Brookmere Sable”, as approved in meridian_intake_week.csv, row 5.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "Brookmere Sable"
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-08/vehicle-card-r006/H006",
+   "output_id": "vehicle-card-r006",
+   "rule_id": "R003",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The make and model on “Vehicle sales card - M2471” (vehicle-card-r006.png) reads exactly “Calder Kestrel”, as approved in meridian_intake_week.csv, row 6.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "Calder Kestrel"
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-08/vehicle-card-r007/H006",
+   "output_id": "vehicle-card-r007",
+   "rule_id": "R003",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The make and model on “Vehicle sales card - M3119” (vehicle-card-r007.png) reads exactly “Norsted Fjord”, as approved in meridian_intake_week.csv, row 7.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "Norsted Fjord"
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-08/vehicle-card-r002/H007",
+   "output_id": "vehicle-card-r002",
+   "rule_id": "R004",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The trim on “Vehicle sales card - M3082” (vehicle-card-r002.png) reads exactly “SE AWD”, as approved in meridian_intake_week.csv, row 2.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "SE AWD"
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-08/vehicle-card-r003/H007",
+   "output_id": "vehicle-card-r003",
+   "rule_id": "R004",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The trim on “Vehicle sales card - M3091” (vehicle-card-r003.png) reads exactly “Premium AWD”, as approved in meridian_intake_week.csv, row 3.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "Premium AWD"
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-08/vehicle-card-r004/H007",
+   "output_id": "vehicle-card-r004",
+   "rule_id": "R004",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The trim on “Vehicle sales card - M2417” (vehicle-card-r004.png) reads exactly “SEL”, as approved in meridian_intake_week.csv, row 4.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "SEL"
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-08/vehicle-card-r005/H007",
+   "output_id": "vehicle-card-r005",
+   "rule_id": "R004",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The trim on “Vehicle sales card - M3105” (vehicle-card-r005.png) reads exactly “Touring”, as approved in meridian_intake_week.csv, row 5.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "Touring"
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-08/vehicle-card-r006/H007",
+   "output_id": "vehicle-card-r006",
+   "rule_id": "R004",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The trim on “Vehicle sales card - M2471” (vehicle-card-r006.png) reads exactly “SEL Technology Package AWD”, as approved in meridian_intake_week.csv, row 6.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "SEL Technology Package AWD"
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-08/vehicle-card-r007/H007",
+   "output_id": "vehicle-card-r007",
+   "rule_id": "R004",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The trim on “Vehicle sales card - M3119” (vehicle-card-r007.png) reads exactly “Adventure AWD”, as approved in meridian_intake_week.csv, row 7.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "Adventure AWD"
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-08/vehicle-card-r002/H008",
+   "output_id": "vehicle-card-r002",
+   "rule_id": "R005",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The mileage on “Vehicle sales card - M3082” (vehicle-card-r002.png) is 54,210, matching the mileage 54210 in meridian_intake_week.csv, row 2.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     {
+      "regex": "(?<![\\d,.])54,?210(?![\\d,.]|\\d)"
+     }
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-08/vehicle-card-r003/H008",
+   "output_id": "vehicle-card-r003",
+   "rule_id": "R005",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The mileage on “Vehicle sales card - M3091” (vehicle-card-r003.png) is 61,840, matching the mileage 61840 in meridian_intake_week.csv, row 3.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     {
+      "regex": "(?<![\\d,.])61,?840(?![\\d,.]|\\d)"
+     }
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-08/vehicle-card-r004/H008",
+   "output_id": "vehicle-card-r004",
+   "rule_id": "R005",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The mileage on “Vehicle sales card - M2417” (vehicle-card-r004.png) is 68,400, matching the mileage 68400 in meridian_intake_week.csv, row 4.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     {
+      "regex": "(?<![\\d,.])68,?400(?![\\d,.]|\\d)"
+     }
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-08/vehicle-card-r005/H008",
+   "output_id": "vehicle-card-r005",
+   "rule_id": "R005",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The mileage on “Vehicle sales card - M3105” (vehicle-card-r005.png) is 42,980, matching the mileage 42980 in meridian_intake_week.csv, row 5.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     {
+      "regex": "(?<![\\d,.])42,?980(?![\\d,.]|\\d)"
+     }
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-08/vehicle-card-r006/H008",
+   "output_id": "vehicle-card-r006",
+   "rule_id": "R005",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The mileage on “Vehicle sales card - M2471” (vehicle-card-r006.png) is 70,120, matching the mileage 70120 in meridian_intake_week.csv, row 6.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     {
+      "regex": "(?<![\\d,.])70,?120(?![\\d,.]|\\d)"
+     }
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-08/vehicle-card-r007/H008",
+   "output_id": "vehicle-card-r007",
+   "rule_id": "R005",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The mileage on “Vehicle sales card - M3119” (vehicle-card-r007.png) is 58,760, matching the mileage 58760 in meridian_intake_week.csv, row 7.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     {
+      "regex": "(?<![\\d,.])58,?760(?![\\d,.]|\\d)"
+     }
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-08/vehicle-card-r002/H009",
+   "output_id": "vehicle-card-r002",
+   "rule_id": "R006",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The asking price on “Vehicle sales card - M3082” (vehicle-card-r002.png) is $26,900, matching the asking_price 26900 in meridian_intake_week.csv, row 2.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     {
+      "regex": "\\$\\s?(?<![\\d,.])26,?900(?![\\d,.]|\\d)"
+     }
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-08/vehicle-card-r003/H009",
+   "output_id": "vehicle-card-r003",
+   "rule_id": "R006",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The asking price on “Vehicle sales card - M3091” (vehicle-card-r003.png) is $24,500, matching the asking_price 24500 in meridian_intake_week.csv, row 3.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     {
+      "regex": "\\$\\s?(?<![\\d,.])24,?500(?![\\d,.]|\\d)"
+     }
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-08/vehicle-card-r004/H009",
+   "output_id": "vehicle-card-r004",
+   "rule_id": "R006",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The asking price on “Vehicle sales card - M2417” (vehicle-card-r004.png) is $23,900, matching the asking_price 23900 in meridian_intake_week.csv, row 4.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     {
+      "regex": "\\$\\s?(?<![\\d,.])23,?900(?![\\d,.]|\\d)"
+     }
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-08/vehicle-card-r005/H009",
+   "output_id": "vehicle-card-r005",
+   "rule_id": "R006",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The asking price on “Vehicle sales card - M3105” (vehicle-card-r005.png) is $31,900, matching the asking_price 31900 in meridian_intake_week.csv, row 5.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     {
+      "regex": "\\$\\s?(?<![\\d,.])31,?900(?![\\d,.]|\\d)"
+     }
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-08/vehicle-card-r006/H009",
+   "output_id": "vehicle-card-r006",
+   "rule_id": "R006",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The asking price on “Vehicle sales card - M2471” (vehicle-card-r006.png) is $24,900, matching the asking_price 24900 in meridian_intake_week.csv, row 6.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     {
+      "regex": "\\$\\s?(?<![\\d,.])24,?900(?![\\d,.]|\\d)"
+     }
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-08/vehicle-card-r007/H009",
+   "output_id": "vehicle-card-r007",
+   "rule_id": "R006",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The asking price on “Vehicle sales card - M3119” (vehicle-card-r007.png) is $29,900, matching the asking_price 29900 in meridian_intake_week.csv, row 7.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     {
+      "regex": "\\$\\s?(?<![\\d,.])29,?900(?![\\d,.]|\\d)"
+     }
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-08/vehicle-card-r002/H014",
+   "output_id": "vehicle-card-r002",
+   "rule_id": "R007",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The certification line on “Vehicle sales card - M3082” (vehicle-card-r002.png) reads exactly “Meridian Certified”, not “Meridian Certified Plus”, as in meridian_intake_week.csv, row 2.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "Meridian Certified"
+    ],
+    "forbidden": [
+     "Meridian Certified Plus"
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-08/vehicle-card-r003/H011",
+   "output_id": "vehicle-card-r003",
+   "rule_id": "R007",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The certification line on “Vehicle sales card - M3091” (vehicle-card-r003.png) reads exactly “Meridian Certified”, not “Meridian Certified Plus”, as in meridian_intake_week.csv, row 3.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "Meridian Certified"
+    ],
+    "forbidden": [
+     "Meridian Certified Plus"
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-08/vehicle-card-r005/H010",
+   "output_id": "vehicle-card-r005",
+   "rule_id": "R007",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The certification line on “Vehicle sales card - M3105” (vehicle-card-r005.png) reads exactly “Meridian Certified Plus”, not “Meridian Certified”, as in meridian_intake_week.csv, row 5.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "Meridian Certified Plus"
+    ],
+    "forbidden": [
+     {
+      "text": "Meridian Certified",
+      "outside": [
+       "Meridian Certified Plus"
+      ]
+     }
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-08/vehicle-card-r006/H010",
+   "output_id": "vehicle-card-r006",
+   "rule_id": "R007",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The certification line on “Vehicle sales card - M2471” (vehicle-card-r006.png) reads exactly “Meridian Certified”, not “Meridian Certified Plus”, as in meridian_intake_week.csv, row 6.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "Meridian Certified"
+    ],
+    "forbidden": [
+     "Meridian Certified Plus"
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-08/vehicle-card-r007/H010",
+   "output_id": "vehicle-card-r007",
+   "rule_id": "R007",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The certification line on “Vehicle sales card - M3119” (vehicle-card-r007.png) reads exactly “Meridian Certified”, not “Meridian Certified Plus”, as in meridian_intake_week.csv, row 7.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "Meridian Certified"
+    ],
+    "forbidden": [
+     "Meridian Certified Plus"
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-08/inventory-campaign/H001",
+   "output_id": "inventory-campaign",
+   "rule_id": "R009",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The dealership name “Meridian Motors” appears on “Forecourt inventory campaign” (inventory-campaign.png).",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "Meridian Motors"
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-08/inventory-campaign/H008",
+   "output_id": "inventory-campaign",
+   "rule_id": "R011",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "Any price shown for the 2019 Norsted Alta on “Forecourt inventory campaign” (inventory-campaign.png) is $26,900, its asking_price in meridian_intake_week.csv, row 2.",
+   "assertion": {
+    "op": "v2_prices",
+    "mode": "only",
+    "allowed": [
+     "$26,900"
+    ]
+   },
+   "how": "Finds every price and checks each meets the rule."
+  },
+  {
+   "check_id": "PHOTO-08/inventory-campaign/H018",
+   "output_id": "inventory-campaign",
+   "rule_id": "R011",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "Any price shown for the 2018 Ardmoor Ridge on “Forecourt inventory campaign” (inventory-campaign.png) is $24,500, its asking_price in meridian_intake_week.csv, row 3.",
+   "assertion": {
+    "op": "v2_prices",
+    "mode": "only",
+    "allowed": [
+     "$24,500"
+    ]
+   },
+   "how": "Finds every price and checks each meets the rule."
+  },
+  {
+   "check_id": "PHOTO-08/inventory-campaign/H028",
+   "output_id": "inventory-campaign",
+   "rule_id": "R011",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "Any price shown for the 2017 Calder Vireo on “Forecourt inventory campaign” (inventory-campaign.png) is $23,900, its asking_price in meridian_intake_week.csv, row 4.",
+   "assertion": {
+    "op": "v2_prices",
+    "mode": "only",
+    "allowed": [
+     "$23,900"
+    ]
+   },
+   "how": "Finds every price and checks each meets the rule."
+  },
+  {
+   "check_id": "PHOTO-08/inventory-campaign/H037",
+   "output_id": "inventory-campaign",
+   "rule_id": "R011",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "Any price shown for the 2020 Brookmere Sable on “Forecourt inventory campaign” (inventory-campaign.png) is $31,900, its asking_price in meridian_intake_week.csv, row 5.",
+   "assertion": {
+    "op": "v2_prices",
+    "mode": "only",
+    "allowed": [
+     "$31,900"
+    ]
+   },
+   "how": "Finds every price and checks each meets the rule."
+  },
+  {
+   "check_id": "PHOTO-08/inventory-campaign/H047",
+   "output_id": "inventory-campaign",
+   "rule_id": "R011",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "Any price shown for the 2017 Calder Kestrel on “Forecourt inventory campaign” (inventory-campaign.png) is $24,900, its asking_price in meridian_intake_week.csv, row 6.",
+   "assertion": {
+    "op": "v2_prices",
+    "mode": "only",
+    "allowed": [
+     "$24,900"
+    ]
+   },
+   "how": "Finds every price and checks each meets the rule."
+  },
+  {
+   "check_id": "PHOTO-08/inventory-campaign/H057",
+   "output_id": "inventory-campaign",
+   "rule_id": "R011",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "Any price shown for the 2019 Norsted Fjord on “Forecourt inventory campaign” (inventory-campaign.png) is $29,900, its asking_price in meridian_intake_week.csv, row 7.",
+   "assertion": {
+    "op": "v2_prices",
+    "mode": "only",
+    "allowed": [
+     "$29,900"
+    ]
+   },
+   "how": "Finds every price and checks each meets the rule."
+  },
+  {
+   "check_id": "PHOTO-08/inventory-campaign/H010",
+   "output_id": "inventory-campaign",
+   "rule_id": "R013",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "Any mileage shown for the 2019 Norsted Alta on “Forecourt inventory campaign” (inventory-campaign.png) is 54,210, matching its mileage 54210 in meridian_intake_week.csv, row 2.",
+   "assertion": {
+    "op": "v2_text_absent",
+    "patterns": {
+     "other mileage": "\\b\\d{1,3},?\\d{3}\\s?(?:mi|miles)\\b"
+    },
+    "allow": [
+     "54,?210\\s?(?:mi|miles)"
+    ]
+   },
+   "how": "Reads all text and checks none of the named words or patterns appears."
+  },
+  {
+   "check_id": "PHOTO-08/inventory-campaign/H020",
+   "output_id": "inventory-campaign",
+   "rule_id": "R013",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "Any mileage shown for the 2018 Ardmoor Ridge on “Forecourt inventory campaign” (inventory-campaign.png) is 61,840, matching its mileage 61840 in meridian_intake_week.csv, row 3.",
+   "assertion": {
+    "op": "v2_text_absent",
+    "patterns": {
+     "other mileage": "\\b\\d{1,3},?\\d{3}\\s?(?:mi|miles)\\b"
+    },
+    "allow": [
+     "61,?840\\s?(?:mi|miles)"
+    ]
+   },
+   "how": "Reads all text and checks none of the named words or patterns appears."
+  },
+  {
+   "check_id": "PHOTO-08/inventory-campaign/H030",
+   "output_id": "inventory-campaign",
+   "rule_id": "R013",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "Any mileage shown for the 2017 Calder Vireo on “Forecourt inventory campaign” (inventory-campaign.png) is 68,400, matching its mileage 68400 in meridian_intake_week.csv, row 4.",
+   "assertion": {
+    "op": "v2_text_absent",
+    "patterns": {
+     "other mileage": "\\b\\d{1,3},?\\d{3}\\s?(?:mi|miles)\\b"
+    },
+    "allow": [
+     "68,?400\\s?(?:mi|miles)"
+    ]
+   },
+   "how": "Reads all text and checks none of the named words or patterns appears."
+  },
+  {
+   "check_id": "PHOTO-08/inventory-campaign/H039",
+   "output_id": "inventory-campaign",
+   "rule_id": "R013",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "Any mileage shown for the 2020 Brookmere Sable on “Forecourt inventory campaign” (inventory-campaign.png) is 42,980, matching its mileage 42980 in meridian_intake_week.csv, row 5.",
+   "assertion": {
+    "op": "v2_text_absent",
+    "patterns": {
+     "other mileage": "\\b\\d{1,3},?\\d{3}\\s?(?:mi|miles)\\b"
+    },
+    "allow": [
+     "42,?980\\s?(?:mi|miles)"
+    ]
+   },
+   "how": "Reads all text and checks none of the named words or patterns appears."
+  },
+  {
+   "check_id": "PHOTO-08/inventory-campaign/H049",
+   "output_id": "inventory-campaign",
+   "rule_id": "R013",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "Any mileage shown for the 2017 Calder Kestrel on “Forecourt inventory campaign” (inventory-campaign.png) is 70,120, matching its mileage 70120 in meridian_intake_week.csv, row 6.",
+   "assertion": {
+    "op": "v2_text_absent",
+    "patterns": {
+     "other mileage": "\\b\\d{1,3},?\\d{3}\\s?(?:mi|miles)\\b"
+    },
+    "allow": [
+     "70,?120\\s?(?:mi|miles)"
+    ]
+   },
+   "how": "Reads all text and checks none of the named words or patterns appears."
+  },
+  {
+   "check_id": "PHOTO-08/inventory-campaign/H059",
+   "output_id": "inventory-campaign",
+   "rule_id": "R013",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "Any mileage shown for the 2019 Norsted Fjord on “Forecourt inventory campaign” (inventory-campaign.png) is 58,760, matching its mileage 58760 in meridian_intake_week.csv, row 7.",
+   "assertion": {
+    "op": "v2_text_absent",
+    "patterns": {
+     "other mileage": "\\b\\d{1,3},?\\d{3}\\s?(?:mi|miles)\\b"
+    },
+    "allow": [
+     "58,?760\\s?(?:mi|miles)"
+    ]
+   },
+   "how": "Reads all text and checks none of the named words or patterns appears."
+  },
+  {
+   "check_id": "PHOTO-08/vehicle-card-r002/H016",
+   "output_id": "vehicle-card-r002",
+   "rule_id": "R020",
+   "k_id": "K1_Q3",
+   "critical": false,
+   "check": "“Vehicle sales card - M3082” (vehicle-card-r002.png) shows no phone number, email address or web address, since none is supplied in the task files.",
+   "assertion": {
+    "op": "v2_text_absent",
+    "patterns": {
+     "web address": "\\b(?:https?://\\S+|www\\.\\S+|[a-z0-9-]+\\.(?:com|org|net|io|co|us|uk|ca|app|studio|example)(?:/\\S*)?)\\b",
+     "email": "\\b[\\w.+-]+@[\\w-]+\\.[\\w.]+\\b",
+     "phone number": "(?<![\\w$])\\+?\\(?\\d{3}\\)?[\\s.-]?\\d{3}[\\s.-]?\\d{4}\\b"
+    }
+   },
+   "how": "Reads all text and checks none of the named words or patterns appears."
+  },
+  {
+   "check_id": "PHOTO-08/vehicle-card-r003/H014",
+   "output_id": "vehicle-card-r003",
+   "rule_id": "R020",
+   "k_id": "K1_Q3",
+   "critical": false,
+   "check": "“Vehicle sales card - M3091” (vehicle-card-r003.png) shows no phone number, email address or web address, since none is supplied in the task files.",
+   "assertion": {
+    "op": "v2_text_absent",
+    "patterns": {
+     "web address": "\\b(?:https?://\\S+|www\\.\\S+|[a-z0-9-]+\\.(?:com|org|net|io|co|us|uk|ca|app|studio|example)(?:/\\S*)?)\\b",
+     "email": "\\b[\\w.+-]+@[\\w-]+\\.[\\w.]+\\b",
+     "phone number": "(?<![\\w$])\\+?\\(?\\d{3}\\)?[\\s.-]?\\d{3}[\\s.-]?\\d{4}\\b"
+    }
+   },
+   "how": "Reads all text and checks none of the named words or patterns appears."
+  },
+  {
+   "check_id": "PHOTO-08/vehicle-card-r004/H013",
+   "output_id": "vehicle-card-r004",
+   "rule_id": "R020",
+   "k_id": "K1_Q3",
+   "critical": false,
+   "check": "“Vehicle sales card - M2417” (vehicle-card-r004.png) shows no phone number, email address or web address, since none is supplied in the task files.",
+   "assertion": {
+    "op": "v2_text_absent",
+    "patterns": {
+     "web address": "\\b(?:https?://\\S+|www\\.\\S+|[a-z0-9-]+\\.(?:com|org|net|io|co|us|uk|ca|app|studio|example)(?:/\\S*)?)\\b",
+     "email": "\\b[\\w.+-]+@[\\w-]+\\.[\\w.]+\\b",
+     "phone number": "(?<![\\w$])\\+?\\(?\\d{3}\\)?[\\s.-]?\\d{3}[\\s.-]?\\d{4}\\b"
+    }
+   },
+   "how": "Reads all text and checks none of the named words or patterns appears."
+  },
+  {
+   "check_id": "PHOTO-08/vehicle-card-r005/H013",
+   "output_id": "vehicle-card-r005",
+   "rule_id": "R020",
+   "k_id": "K1_Q3",
+   "critical": false,
+   "check": "“Vehicle sales card - M3105” (vehicle-card-r005.png) shows no phone number, email address or web address, since none is supplied in the task files.",
+   "assertion": {
+    "op": "v2_text_absent",
+    "patterns": {
+     "web address": "\\b(?:https?://\\S+|www\\.\\S+|[a-z0-9-]+\\.(?:com|org|net|io|co|us|uk|ca|app|studio|example)(?:/\\S*)?)\\b",
+     "email": "\\b[\\w.+-]+@[\\w-]+\\.[\\w.]+\\b",
+     "phone number": "(?<![\\w$])\\+?\\(?\\d{3}\\)?[\\s.-]?\\d{3}[\\s.-]?\\d{4}\\b"
+    }
+   },
+   "how": "Reads all text and checks none of the named words or patterns appears."
+  },
+  {
+   "check_id": "PHOTO-08/vehicle-card-r006/H013",
+   "output_id": "vehicle-card-r006",
+   "rule_id": "R020",
+   "k_id": "K1_Q3",
+   "critical": false,
+   "check": "“Vehicle sales card - M2471” (vehicle-card-r006.png) shows no phone number, email address or web address, since none is supplied in the task files.",
+   "assertion": {
+    "op": "v2_text_absent",
+    "patterns": {
+     "web address": "\\b(?:https?://\\S+|www\\.\\S+|[a-z0-9-]+\\.(?:com|org|net|io|co|us|uk|ca|app|studio|example)(?:/\\S*)?)\\b",
+     "email": "\\b[\\w.+-]+@[\\w-]+\\.[\\w.]+\\b",
+     "phone number": "(?<![\\w$])\\+?\\(?\\d{3}\\)?[\\s.-]?\\d{3}[\\s.-]?\\d{4}\\b"
+    }
+   },
+   "how": "Reads all text and checks none of the named words or patterns appears."
+  },
+  {
+   "check_id": "PHOTO-08/vehicle-card-r007/H013",
+   "output_id": "vehicle-card-r007",
+   "rule_id": "R020",
+   "k_id": "K1_Q3",
+   "critical": false,
+   "check": "“Vehicle sales card - M3119” (vehicle-card-r007.png) shows no phone number, email address or web address, since none is supplied in the task files.",
+   "assertion": {
+    "op": "v2_text_absent",
+    "patterns": {
+     "web address": "\\b(?:https?://\\S+|www\\.\\S+|[a-z0-9-]+\\.(?:com|org|net|io|co|us|uk|ca|app|studio|example)(?:/\\S*)?)\\b",
+     "email": "\\b[\\w.+-]+@[\\w-]+\\.[\\w.]+\\b",
+     "phone number": "(?<![\\w$])\\+?\\(?\\d{3}\\)?[\\s.-]?\\d{3}[\\s.-]?\\d{4}\\b"
+    }
+   },
+   "how": "Reads all text and checks none of the named words or patterns appears."
+  },
+  {
+   "check_id": "PHOTO-08/inventory-campaign/H066",
+   "output_id": "inventory-campaign",
+   "rule_id": "R020",
+   "k_id": "K1_Q3",
+   "critical": false,
+   "check": "“Forecourt inventory campaign” (inventory-campaign.png) shows no phone number, email address or web address, since none is supplied in the task files.",
+   "assertion": {
+    "op": "v2_text_absent",
+    "patterns": {
+     "web address": "\\b(?:https?://\\S+|www\\.\\S+|[a-z0-9-]+\\.(?:com|org|net|io|co|us|uk|ca|app|studio|example)(?:/\\S*)?)\\b",
+     "email": "\\b[\\w.+-]+@[\\w-]+\\.[\\w.]+\\b",
+     "phone number": "(?<![\\w$])\\+?\\(?\\d{3}\\)?[\\s.-]?\\d{3}[\\s.-]?\\d{4}\\b"
+    }
+   },
+   "how": "Reads all text and checks none of the named words or patterns appears."
+  },
+  {
+   "check_id": "PHOTO-08/vehicle-card-r002/H017",
+   "output_id": "vehicle-card-r002",
+   "rule_id": "R024",
+   "k_id": "K1_Q5",
+   "critical": true,
+   "check": "No last-season placeholder value from meridian_window_card_autumn.pdf (M2290, 2016 Calder Vireo, 71,300 mi, $22,900) appears on “Vehicle sales card - M3082” (vehicle-card-r002.png).",
+   "assertion": {
+    "op": "v2_text_absent",
+    "texts": [
+     "M2290",
+     "2016 Calder Vireo"
+    ],
+    "patterns": {
+     "71,300 mi": "(?<![\\d,.])71,?300(?![\\d,.]|\\d)",
+     "$22,900": "\\$\\s?(?<![\\d,.])22,?900(?![\\d,.]|\\d)"
+    }
+   },
+   "how": "Reads all text and checks none of the named words or patterns appears."
+  },
+  {
+   "check_id": "PHOTO-08/vehicle-card-r003/H015",
+   "output_id": "vehicle-card-r003",
+   "rule_id": "R024",
+   "k_id": "K1_Q5",
+   "critical": true,
+   "check": "No last-season placeholder value from meridian_window_card_autumn.pdf (M2290, 2016 Calder Vireo, 71,300 mi, $22,900) appears on “Vehicle sales card - M3091” (vehicle-card-r003.png).",
+   "assertion": {
+    "op": "v2_text_absent",
+    "texts": [
+     "M2290",
+     "2016 Calder Vireo"
+    ],
+    "patterns": {
+     "71,300 mi": "(?<![\\d,.])71,?300(?![\\d,.]|\\d)",
+     "$22,900": "\\$\\s?(?<![\\d,.])22,?900(?![\\d,.]|\\d)"
+    }
+   },
+   "how": "Reads all text and checks none of the named words or patterns appears."
+  },
+  {
+   "check_id": "PHOTO-08/vehicle-card-r004/H014",
+   "output_id": "vehicle-card-r004",
+   "rule_id": "R024",
+   "k_id": "K1_Q5",
+   "critical": true,
+   "check": "No last-season placeholder value from meridian_window_card_autumn.pdf (M2290, 2016 Calder Vireo, 71,300 mi, $22,900) appears on “Vehicle sales card - M2417” (vehicle-card-r004.png).",
+   "assertion": {
+    "op": "v2_text_absent",
+    "texts": [
+     "M2290",
+     "2016 Calder Vireo"
+    ],
+    "patterns": {
+     "71,300 mi": "(?<![\\d,.])71,?300(?![\\d,.]|\\d)",
+     "$22,900": "\\$\\s?(?<![\\d,.])22,?900(?![\\d,.]|\\d)"
+    }
+   },
+   "how": "Reads all text and checks none of the named words or patterns appears."
+  },
+  {
+   "check_id": "PHOTO-08/vehicle-card-r005/H014",
+   "output_id": "vehicle-card-r005",
+   "rule_id": "R024",
+   "k_id": "K1_Q5",
+   "critical": true,
+   "check": "No last-season placeholder value from meridian_window_card_autumn.pdf (M2290, 2016 Calder Vireo, 71,300 mi, $22,900) appears on “Vehicle sales card - M3105” (vehicle-card-r005.png).",
+   "assertion": {
+    "op": "v2_text_absent",
+    "texts": [
+     "M2290",
+     "2016 Calder Vireo"
+    ],
+    "patterns": {
+     "71,300 mi": "(?<![\\d,.])71,?300(?![\\d,.]|\\d)",
+     "$22,900": "\\$\\s?(?<![\\d,.])22,?900(?![\\d,.]|\\d)"
+    }
+   },
+   "how": "Reads all text and checks none of the named words or patterns appears."
+  },
+  {
+   "check_id": "PHOTO-08/vehicle-card-r006/H014",
+   "output_id": "vehicle-card-r006",
+   "rule_id": "R024",
+   "k_id": "K1_Q5",
+   "critical": true,
+   "check": "No last-season placeholder value from meridian_window_card_autumn.pdf (M2290, 2016 Calder Vireo, 71,300 mi, $22,900) appears on “Vehicle sales card - M2471” (vehicle-card-r006.png).",
+   "assertion": {
+    "op": "v2_text_absent",
+    "texts": [
+     "M2290",
+     "2016 Calder Vireo"
+    ],
+    "patterns": {
+     "71,300 mi": "(?<![\\d,.])71,?300(?![\\d,.]|\\d)",
+     "$22,900": "\\$\\s?(?<![\\d,.])22,?900(?![\\d,.]|\\d)"
+    }
+   },
+   "how": "Reads all text and checks none of the named words or patterns appears."
+  },
+  {
+   "check_id": "PHOTO-08/vehicle-card-r007/H014",
+   "output_id": "vehicle-card-r007",
+   "rule_id": "R024",
+   "k_id": "K1_Q5",
+   "critical": true,
+   "check": "No last-season placeholder value from meridian_window_card_autumn.pdf (M2290, 2016 Calder Vireo, 71,300 mi, $22,900) appears on “Vehicle sales card - M3119” (vehicle-card-r007.png).",
+   "assertion": {
+    "op": "v2_text_absent",
+    "texts": [
+     "M2290",
+     "2016 Calder Vireo"
+    ],
+    "patterns": {
+     "71,300 mi": "(?<![\\d,.])71,?300(?![\\d,.]|\\d)",
+     "$22,900": "\\$\\s?(?<![\\d,.])22,?900(?![\\d,.]|\\d)"
+    }
+   },
+   "how": "Reads all text and checks none of the named words or patterns appears."
+  },
+  {
+   "check_id": "PHOTO-08/inventory-campaign/H065",
+   "output_id": "inventory-campaign",
+   "rule_id": "R024",
+   "k_id": "K1_Q5",
+   "critical": true,
+   "check": "No last-season placeholder value from meridian_window_card_autumn.pdf (M2290, 2016 Calder Vireo, 71,300 mi, $22,900) appears on “Forecourt inventory campaign” (inventory-campaign.png).",
+   "assertion": {
+    "op": "v2_text_absent",
+    "texts": [
+     "M2290",
+     "2016 Calder Vireo"
+    ],
+    "patterns": {
+     "71,300 mi": "(?<![\\d,.])71,?300(?![\\d,.]|\\d)",
+     "$22,900": "\\$\\s?(?<![\\d,.])22,?900(?![\\d,.]|\\d)"
+    }
+   },
+   "how": "Reads all text and checks none of the named words or patterns appears."
+  },
+  {
+   "check_id": "PHOTO-08/vehicle-card-r004/H010",
+   "output_id": "vehicle-card-r004",
+   "rule_id": "R025",
+   "k_id": "K1_Q5",
+   "critical": true,
+   "check": "The certification line on “Vehicle sales card - M2417” (vehicle-card-r004.png) reads exactly “Meridian Certified Plus”, not “Meridian Certified”, as in meridian_intake_week.csv, row 4.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "Meridian Certified Plus"
+    ],
+    "forbidden": [
+     {
+      "text": "Meridian Certified",
+      "outside": [
+       "Meridian Certified Plus"
+      ]
+     }
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-08/vehicle-card-r002/H031",
+   "output_id": "vehicle-card-r002",
+   "rule_id": "R031",
+   "k_id": "K2_Q2",
+   "critical": false,
+   "check": "If a compass roundel appears on “Vehicle sales card - M3082” (vehicle-card-r002.png), it is meridian_roundel_transparent.svg, meridian_roundel_reversed.svg, meridian_roundel_transparent.png or meridian_roundel_reversed.png.",
+   "assertion": {
+    "op": "v2_contains_asset",
+    "assets": [
+     "meridian_roundel_transparent.svg",
+     "meridian_roundel_reversed.svg",
+     "meridian_roundel_transparent.png",
+     "meridian_roundel_reversed.png"
+    ],
+    "shape": false,
+    "optional": true
+   },
+   "how": "Searches the deliverable for the supplied file (feature matching, confirmed by correlation)."
+  },
+  {
+   "check_id": "PHOTO-08/vehicle-card-r003/H029",
+   "output_id": "vehicle-card-r003",
+   "rule_id": "R031",
+   "k_id": "K2_Q2",
+   "critical": false,
+   "check": "If a compass roundel appears on “Vehicle sales card - M3091” (vehicle-card-r003.png), it is meridian_roundel_transparent.svg, meridian_roundel_reversed.svg, meridian_roundel_transparent.png or meridian_roundel_reversed.png.",
+   "assertion": {
+    "op": "v2_contains_asset",
+    "assets": [
+     "meridian_roundel_transparent.svg",
+     "meridian_roundel_reversed.svg",
+     "meridian_roundel_transparent.png",
+     "meridian_roundel_reversed.png"
+    ],
+    "shape": false,
+    "optional": true
+   },
+   "how": "Searches the deliverable for the supplied file (feature matching, confirmed by correlation)."
+  },
+  {
+   "check_id": "PHOTO-08/vehicle-card-r004/H028",
+   "output_id": "vehicle-card-r004",
+   "rule_id": "R031",
+   "k_id": "K2_Q2",
+   "critical": false,
+   "check": "If a compass roundel appears on “Vehicle sales card - M2417” (vehicle-card-r004.png), it is meridian_roundel_transparent.svg, meridian_roundel_reversed.svg, meridian_roundel_transparent.png or meridian_roundel_reversed.png.",
+   "assertion": {
+    "op": "v2_contains_asset",
+    "assets": [
+     "meridian_roundel_transparent.svg",
+     "meridian_roundel_reversed.svg",
+     "meridian_roundel_transparent.png",
+     "meridian_roundel_reversed.png"
+    ],
+    "shape": false,
+    "optional": true
+   },
+   "how": "Searches the deliverable for the supplied file (feature matching, confirmed by correlation)."
+  },
+  {
+   "check_id": "PHOTO-08/vehicle-card-r005/H029",
+   "output_id": "vehicle-card-r005",
+   "rule_id": "R031",
+   "k_id": "K2_Q2",
+   "critical": false,
+   "check": "If a compass roundel appears on “Vehicle sales card - M3105” (vehicle-card-r005.png), it is meridian_roundel_transparent.svg, meridian_roundel_reversed.svg, meridian_roundel_transparent.png or meridian_roundel_reversed.png.",
+   "assertion": {
+    "op": "v2_contains_asset",
+    "assets": [
+     "meridian_roundel_transparent.svg",
+     "meridian_roundel_reversed.svg",
+     "meridian_roundel_transparent.png",
+     "meridian_roundel_reversed.png"
+    ],
+    "shape": false,
+    "optional": true
+   },
+   "how": "Searches the deliverable for the supplied file (feature matching, confirmed by correlation)."
+  },
+  {
+   "check_id": "PHOTO-08/vehicle-card-r006/H029",
+   "output_id": "vehicle-card-r006",
+   "rule_id": "R031",
+   "k_id": "K2_Q2",
+   "critical": false,
+   "check": "If a compass roundel appears on “Vehicle sales card - M2471” (vehicle-card-r006.png), it is meridian_roundel_transparent.svg, meridian_roundel_reversed.svg, meridian_roundel_transparent.png or meridian_roundel_reversed.png.",
+   "assertion": {
+    "op": "v2_contains_asset",
+    "assets": [
+     "meridian_roundel_transparent.svg",
+     "meridian_roundel_reversed.svg",
+     "meridian_roundel_transparent.png",
+     "meridian_roundel_reversed.png"
+    ],
+    "shape": false,
+    "optional": true
+   },
+   "how": "Searches the deliverable for the supplied file (feature matching, confirmed by correlation)."
+  },
+  {
+   "check_id": "PHOTO-08/vehicle-card-r007/H028",
+   "output_id": "vehicle-card-r007",
+   "rule_id": "R031",
+   "k_id": "K2_Q2",
+   "critical": false,
+   "check": "If a compass roundel appears on “Vehicle sales card - M3119” (vehicle-card-r007.png), it is meridian_roundel_transparent.svg, meridian_roundel_reversed.svg, meridian_roundel_transparent.png or meridian_roundel_reversed.png.",
+   "assertion": {
+    "op": "v2_contains_asset",
+    "assets": [
+     "meridian_roundel_transparent.svg",
+     "meridian_roundel_reversed.svg",
+     "meridian_roundel_transparent.png",
+     "meridian_roundel_reversed.png"
+    ],
+    "shape": false,
+    "optional": true
+   },
+   "how": "Searches the deliverable for the supplied file (feature matching, confirmed by correlation)."
+  },
+  {
+   "check_id": "PHOTO-08/inventory-campaign/H003",
+   "output_id": "inventory-campaign",
+   "rule_id": "R035",
+   "k_id": "K2_Q2",
+   "critical": false,
+   "check": "The compass roundel on “Forecourt inventory campaign” (inventory-campaign.png) is meridian_roundel_transparent.svg, meridian_roundel_reversed.svg, meridian_roundel_transparent.png or meridian_roundel_reversed.png.",
+   "assertion": {
+    "op": "v2_contains_asset",
+    "assets": [
+     "meridian_roundel_transparent.svg",
+     "meridian_roundel_reversed.svg",
+     "meridian_roundel_transparent.png",
+     "meridian_roundel_reversed.png"
+    ],
+    "shape": false,
+    "optional": false
+   },
+   "how": "Searches the deliverable for the supplied file (feature matching, confirmed by correlation)."
+  },
+  {
+   "check_id": "PHOTO-08/vehicle-card-r002/H060",
+   "output_id": "vehicle-card-r002",
+   "rule_id": "R043",
+   "k_id": "K2_Q2",
+   "critical": false,
+   "check": "If a compass roundel appears on “Vehicle sales card - M3082” (vehicle-card-r002.png), it is not stretched or squashed.",
+   "assertion": {
+    "op": "v2_contains_asset",
+    "assets": [
+     "meridian_roundel_transparent.svg"
+    ],
+    "shape": true,
+    "optional": true
+   },
+   "how": "Searches the deliverable for the supplied file (feature matching, confirmed by correlation), then checks it keeps its own proportions."
+  },
+  {
+   "check_id": "PHOTO-08/vehicle-card-r003/H059",
+   "output_id": "vehicle-card-r003",
+   "rule_id": "R043",
+   "k_id": "K2_Q2",
+   "critical": false,
+   "check": "If a compass roundel appears on “Vehicle sales card - M3091” (vehicle-card-r003.png), it is not stretched or squashed.",
+   "assertion": {
+    "op": "v2_contains_asset",
+    "assets": [
+     "meridian_roundel_transparent.svg"
+    ],
+    "shape": true,
+    "optional": true
+   },
+   "how": "Searches the deliverable for the supplied file (feature matching, confirmed by correlation), then checks it keeps its own proportions."
+  },
+  {
+   "check_id": "PHOTO-08/vehicle-card-r004/H058",
+   "output_id": "vehicle-card-r004",
+   "rule_id": "R043",
+   "k_id": "K2_Q2",
+   "critical": false,
+   "check": "If a compass roundel appears on “Vehicle sales card - M2417” (vehicle-card-r004.png), it is not stretched or squashed.",
+   "assertion": {
+    "op": "v2_contains_asset",
+    "assets": [
+     "meridian_roundel_transparent.svg"
+    ],
+    "shape": true,
+    "optional": true
+   },
+   "how": "Searches the deliverable for the supplied file (feature matching, confirmed by correlation), then checks it keeps its own proportions."
+  },
+  {
+   "check_id": "PHOTO-08/vehicle-card-r005/H059",
+   "output_id": "vehicle-card-r005",
+   "rule_id": "R043",
+   "k_id": "K2_Q2",
+   "critical": false,
+   "check": "If a compass roundel appears on “Vehicle sales card - M3105” (vehicle-card-r005.png), it is not stretched or squashed.",
+   "assertion": {
+    "op": "v2_contains_asset",
+    "assets": [
+     "meridian_roundel_transparent.svg"
+    ],
+    "shape": true,
+    "optional": true
+   },
+   "how": "Searches the deliverable for the supplied file (feature matching, confirmed by correlation), then checks it keeps its own proportions."
+  },
+  {
+   "check_id": "PHOTO-08/vehicle-card-r006/H059",
+   "output_id": "vehicle-card-r006",
+   "rule_id": "R043",
+   "k_id": "K2_Q2",
+   "critical": false,
+   "check": "If a compass roundel appears on “Vehicle sales card - M2471” (vehicle-card-r006.png), it is not stretched or squashed.",
+   "assertion": {
+    "op": "v2_contains_asset",
+    "assets": [
+     "meridian_roundel_transparent.svg"
+    ],
+    "shape": true,
+    "optional": true
+   },
+   "how": "Searches the deliverable for the supplied file (feature matching, confirmed by correlation), then checks it keeps its own proportions."
+  },
+  {
+   "check_id": "PHOTO-08/vehicle-card-r007/H058",
+   "output_id": "vehicle-card-r007",
+   "rule_id": "R043",
+   "k_id": "K2_Q2",
+   "critical": false,
+   "check": "If a compass roundel appears on “Vehicle sales card - M3119” (vehicle-card-r007.png), it is not stretched or squashed.",
+   "assertion": {
+    "op": "v2_contains_asset",
+    "assets": [
+     "meridian_roundel_transparent.svg"
+    ],
+    "shape": true,
+    "optional": true
+   },
+   "how": "Searches the deliverable for the supplied file (feature matching, confirmed by correlation), then checks it keeps its own proportions."
+  },
+  {
+   "check_id": "PHOTO-08/vehicle-card-r002/H013",
+   "output_id": "vehicle-card-r002",
+   "rule_id": "R155",
+   "k_id": "K5_Q1",
+   "critical": false,
+   "check": "The largest text on “Vehicle sales card - M3082” (vehicle-card-r002.png) is the asking price “$26,900”.",
+   "assertion": {
+    "op": "v2_largest_text",
+    "text": "$26,900"
+   },
+   "how": "Compares text sizes (font size in PDFs, letter height on images)."
+  },
+  {
+   "check_id": "PHOTO-08/vehicle-card-r003/H021",
+   "output_id": "vehicle-card-r003",
+   "rule_id": "R155",
+   "k_id": "K5_Q1",
+   "critical": false,
+   "check": "The largest text on “Vehicle sales card - M3091” (vehicle-card-r003.png) is the asking price “$24,500”.",
+   "assertion": {
+    "op": "v2_largest_text",
+    "text": "$24,500"
+   },
+   "how": "Compares text sizes (font size in PDFs, letter height on images)."
+  },
+  {
+   "check_id": "PHOTO-08/vehicle-card-r004/H019",
+   "output_id": "vehicle-card-r004",
+   "rule_id": "R155",
+   "k_id": "K5_Q1",
+   "critical": false,
+   "check": "The largest text on “Vehicle sales card - M2417” (vehicle-card-r004.png) is the asking price “$23,900”.",
+   "assertion": {
+    "op": "v2_largest_text",
+    "text": "$23,900"
+   },
+   "how": "Compares text sizes (font size in PDFs, letter height on images)."
+  },
+  {
+   "check_id": "PHOTO-08/vehicle-card-r005/H020",
+   "output_id": "vehicle-card-r005",
+   "rule_id": "R155",
+   "k_id": "K5_Q1",
+   "critical": false,
+   "check": "The largest text on “Vehicle sales card - M3105” (vehicle-card-r005.png) is the asking price “$31,900”.",
+   "assertion": {
+    "op": "v2_largest_text",
+    "text": "$31,900"
+   },
+   "how": "Compares text sizes (font size in PDFs, letter height on images)."
+  },
+  {
+   "check_id": "PHOTO-08/vehicle-card-r006/H020",
+   "output_id": "vehicle-card-r006",
+   "rule_id": "R155",
+   "k_id": "K5_Q1",
+   "critical": false,
+   "check": "The largest text on “Vehicle sales card - M2471” (vehicle-card-r006.png) is the asking price “$24,900”.",
+   "assertion": {
+    "op": "v2_largest_text",
+    "text": "$24,900"
+   },
+   "how": "Compares text sizes (font size in PDFs, letter height on images)."
+  },
+  {
+   "check_id": "PHOTO-08/vehicle-card-r007/H019",
+   "output_id": "vehicle-card-r007",
+   "rule_id": "R155",
+   "k_id": "K5_Q1",
+   "critical": false,
+   "check": "The largest text on “Vehicle sales card - M3119” (vehicle-card-r007.png) is the asking price “$29,900”.",
+   "assertion": {
+    "op": "v2_largest_text",
+    "text": "$29,900"
+   },
+   "how": "Compares text sizes (font size in PDFs, letter height on images)."
+  }
+ ]
+}

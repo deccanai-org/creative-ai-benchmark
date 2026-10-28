@@ -32,6 +32,8 @@
    ],
    "slot_labels": {},
    "shared_reference": null,
+   "answered_by": "person",
+   "code_check": [],
    "rows": [
     {
      "check_id": "PHOTO-19/speaker-card-r002/H002",
@@ -394,6 +396,10 @@
     ],
     "note": "Brief, pinned: each card carries the CFS mark as it appears on summit_badge_2025_PRINTER.pdf. Brand assets status: the badge artwork exists only as that press PDF. Acceptance: the summit identity remains inside the output boundaries."
    },
+   "answered_by": "code",
+   "code_check": [
+    "Either route can answer: searches the deliverable for the supplied file (feature matching, confirmed by correlation), then checks it lies fully inside the image; or: checks the named text is read in full inside the page or image (for a mark, its letters read as a line of their own). One must pass and none may fail."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-19/speaker-card-r002/H003",
@@ -763,6 +769,10 @@
     "2": "row"
    },
    "shared_reference": null,
+   "answered_by": "code",
+   "code_check": [
+    "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-19/speaker-card-r002/H004",
@@ -1222,6 +1232,10 @@
     "2": "row"
    },
    "shared_reference": null,
+   "answered_by": "code",
+   "code_check": [
+    "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-19/speaker-card-r002/H005",
@@ -1681,6 +1695,10 @@
     "2": "row"
    },
    "shared_reference": null,
+   "answered_by": "code",
+   "code_check": [
+    "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-19/speaker-card-r002/H006",
@@ -2140,6 +2158,8 @@
     "2": "row"
    },
    "shared_reference": null,
+   "answered_by": "person",
+   "code_check": [],
    "rows": [
     {
      "check_id": "PHOTO-19/speaker-card-r002/H007",
@@ -2592,6 +2612,10 @@
     ],
     "note": "programme_copy.txt: \"Footer: Cascadia Founders Summit - 12-13 March 2026 - Portland.\""
    },
+   "answered_by": "code",
+   "code_check": [
+    "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-19/summit-announcement/H001",
@@ -2648,6 +2672,10 @@
     ],
     "note": "programme_copy.txt: \"Dates: 12-13 March 2026, Portland, Oregon.\""
    },
+   "answered_by": "code",
+   "code_check": [
+    "Checks the named text is read in full inside the page or image (for a mark, its letters read as a line of their own)."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-19/summit-announcement/H002",
@@ -2699,6 +2727,8 @@
     "assets": [],
     "note": "Brief: the registration action is readable. Inspect the delivered PNG at 100%."
    },
+   "answered_by": "person",
+   "code_check": [],
    "rows": [
     {
      "check_id": "PHOTO-19/summit-announcement/H003",
@@ -2750,6 +2780,8 @@
     ],
     "note": "speakers.csv, fields Name and photo: the photo column names the one frame supplied for each person."
    },
+   "answered_by": "person",
+   "code_check": [],
    "rows": [
     {
      "check_id": "PHOTO-19/summit-announcement/H012",
@@ -2806,6 +2838,10 @@
     ],
     "note": "Acceptance requirements: the summit identity remains inside the output boundaries."
    },
+   "answered_by": "code",
+   "code_check": [
+    "Either route can answer: searches the deliverable for the supplied file (feature matching, confirmed by correlation), then checks it lies fully inside the image; or: checks the named text is read in full inside the page or image (for a mark, its letters read as a line of their own). One must pass and none may fail."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-19/summit-announcement/H057",
@@ -2859,6 +2895,10 @@
     ],
     "note": "Brief, pinned: the announcement is for the summit itself, not one speaker's confirmation. programme_copy.txt: \"ANNOUNCEMENT (posted when a speaker is confirmed), square canvas:\""
    },
+   "answered_by": "code",
+   "code_check": [
+    "Reads all text and checks none of the named words or patterns appears."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-19/summit-announcement/H008",
@@ -2915,6 +2955,10 @@
     ],
     "note": "programme_copy.txt: \"Dates: 12-13 March 2026, Portland, Oregon.\" Production requirement: Do not invent claims, prices, dates, credentials or product features."
    },
+   "answered_by": "code",
+   "code_check": [
+    "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-19/summit-announcement/H004",
@@ -2968,6 +3012,10 @@
     ],
     "note": "Brief, pinned: a short line inviting delegates to register, with no web address or deadline, and no price beyond the 600 to 1,200 dollar pass range in the brand identity. programme_copy.txt carries no registration wording and no price. Brand identity, price positioning: Delegate passes 600 to 1,200 dollars. Truth constraint: Do not invent names, prices, claims, product features, locations, credentials, records, or documentary events that are absent from the approved inputs."
    },
+   "answered_by": "code",
+   "code_check": [
+    "Reads all text and checks none of the named words or patterns appears."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-19/summit-announcement/H005",
@@ -3021,6 +3069,8 @@
     ],
     "note": "Brief: include a short, readable invitation to register."
    },
+   "answered_by": "person",
+   "code_check": [],
    "rows": [
     {
      "check_id": "PHOTO-19/summit-announcement/H054",
@@ -3069,6 +3119,8 @@
     "assets": [],
     "note": "Commission: Do not invent a registration URL, deadline or additional ticket offer."
    },
+   "answered_by": "person",
+   "code_check": [],
    "rows": [
     {
      "check_id": "PHOTO-19/summit-announcement/H055",
@@ -3112,6 +3164,8 @@
     "assets": [],
     "note": "Client brief: \"We have not supplied a registration address or deadline; please leave those out.\""
    },
+   "answered_by": "person",
+   "code_check": [],
    "rows": [
     {
      "check_id": "PHOTO-19/summit-announcement/H068",
@@ -3155,6 +3209,10 @@
     "assets": [],
     "note": "Client brief: \"Do not introduce a price beyond the 600 to 1,200 dollar pass range in the brand identity.\""
    },
+   "answered_by": "code",
+   "code_check": [
+    "Finds every price and checks each meets the rule."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-19/summit-announcement/H069",
@@ -3213,6 +3271,10 @@
     "2": "photo"
    },
    "shared_reference": null,
+   "answered_by": "code",
+   "code_check": [
+    "Searches the deliverable for the supplied file (feature matching, confirmed by correlation)."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-19/speaker-card-r002/H001",
@@ -3701,6 +3763,8 @@
     ],
     "note": "Truth constraint: Do not silently replace a weak supplied asset. speakers.csv, fields Name and photo: the photo column names the one frame supplied for each person."
    },
+   "answered_by": "person",
+   "code_check": [],
    "rows": [
     {
      "check_id": "PHOTO-19/summit-announcement/H009",
@@ -3757,6 +3821,8 @@
     ],
     "note": "Brief: Use cfs_mark_transparent.svg for the CFS mark. Commission: include the supplied CFS mark."
    },
+   "answered_by": "person",
+   "code_check": [],
    "rows": [
     {
      "check_id": "PHOTO-19/speaker-card-r002/H012",
@@ -4119,6 +4185,8 @@
     "1": "photo"
    },
    "shared_reference": null,
+   "answered_by": "person",
+   "code_check": [],
    "rows": [
     {
      "check_id": "PHOTO-19/speaker-card-r002/H014",
@@ -4589,6 +4657,8 @@
     ],
     "note": "Truth constraint: Preserve identity, product geometry, material behavior, and documentary truth; retouching may improve presentation but may not change what the subject is. speakers.csv, fields Name and photo: the photo column names the one frame supplied for each person."
    },
+   "answered_by": "person",
+   "code_check": [],
    "rows": [
     {
      "check_id": "PHOTO-19/summit-announcement/H010",
@@ -4645,6 +4715,10 @@
     ],
     "note": "Truth constraint: Do not silently replace a weak supplied asset. Use it honestly, reject it with a reason, or take only the brief's declared Stock or concept exception. Asset manifest: venue_render.jpg is 1400 x 933 pixels."
    },
+   "answered_by": "code",
+   "code_check": [
+    "Searches the deliverable for the supplied file (feature matching, confirmed by correlation), then checks it is shown no larger than its native size."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-19/summit-announcement/H018",
@@ -4701,6 +4775,8 @@
     ],
     "note": "Brief: Use cfs_mark_transparent.svg for the CFS mark."
    },
+   "answered_by": "person",
+   "code_check": [],
    "rows": [
     {
      "check_id": "PHOTO-19/summit-announcement/H056",
@@ -4757,6 +4833,10 @@
     ],
     "note": "Truth constraint: Do not silently replace a weak supplied asset; use it honestly. Asset manifest: venue_render.jpg is 1400 x 933 pixels."
    },
+   "answered_by": "code",
+   "code_check": [
+    "Searches the deliverable for the supplied file (feature matching, confirmed by correlation), then checks it keeps its own proportions."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-19/summit-announcement/H067",
@@ -4813,6 +4893,8 @@
     ],
     "note": "venue_render.jpg is supplied at only 1400 x 933 pixels (asset plan); truth_constraints forbid invented pixels."
    },
+   "answered_by": "person",
+   "code_check": [],
    "rows": [
     {
      "check_id": "PHOTO-19/summit-announcement/H073",
@@ -4861,6 +4943,8 @@
    ],
    "slot_labels": {},
    "shared_reference": null,
+   "answered_by": "person",
+   "code_check": [],
    "rows": [
     {
      "check_id": "PHOTO-19/speaker-card-r002/H016",
@@ -5287,6 +5371,8 @@
    ],
    "slot_labels": {},
    "shared_reference": null,
+   "answered_by": "person",
+   "code_check": [],
    "rows": [
     {
      "check_id": "PHOTO-19/speaker-card-r002/H027",
@@ -5641,6 +5727,8 @@
    ],
    "slot_labels": {},
    "shared_reference": null,
+   "answered_by": "person",
+   "code_check": [],
    "rows": [
     {
      "check_id": "PHOTO-19/speaker-card-r002/H028",
@@ -5905,6 +5993,8 @@
    ],
    "slot_labels": {},
    "shared_reference": null,
+   "answered_by": "person",
+   "code_check": [],
    "rows": [
     {
      "check_id": "PHOTO-19/speaker-card-r002/H029",
@@ -6259,6 +6349,8 @@
    ],
    "slot_labels": {},
    "shared_reference": null,
+   "answered_by": "person",
+   "code_check": [],
    "rows": [
     {
      "check_id": "PHOTO-19/speaker-card-r002/H030",
@@ -6613,6 +6705,8 @@
    ],
    "slot_labels": {},
    "shared_reference": null,
+   "answered_by": "person",
+   "code_check": [],
    "rows": [
     {
      "check_id": "PHOTO-19/speaker-card-r002/H031",
@@ -6967,6 +7061,8 @@
    ],
    "slot_labels": {},
    "shared_reference": null,
+   "answered_by": "person",
+   "code_check": [],
    "rows": [
     {
      "check_id": "PHOTO-19/speaker-card-r002/H032",
@@ -7239,6 +7335,8 @@
     ],
     "note": "Palette rules, photography and forbidden: the ground behind each sitter is a soft, even tone in the Fog Grey #D9DDDE to Warm Paper #F2EEE7 range (summit_brand_notes.txt)."
    },
+   "answered_by": "person",
+   "code_check": [],
    "rows": [
     {
      "check_id": "PHOTO-19/summit-announcement/H011",
@@ -7295,6 +7393,8 @@
     ],
     "note": "Brand palette: Cascadia Slate #23303A, Evergreen #2C4A3B, Fog Grey #D9DDDE, Warm Paper #F2EEE7, Signal Copper #B06B3E, Near Black #1A1F24. Palette rules, forbidden: no colour outside them for type, grounds, panels, rules, buttons or icons, apart from the ground behind a sitter. summit_brand_notes.txt: \"Use our Fog Grey (#D9DDDE) to Warm Paper (#F2EEE7) range for the portrait ground, soft and even, never a coloured or busy background.\""
    },
+   "answered_by": "person",
+   "code_check": [],
    "rows": [
     {
      "check_id": "PHOTO-19/summit-announcement/H024",
@@ -7346,6 +7446,8 @@
     "assets": [],
     "note": "Palette rules, opacity: every palette colour solid at 100%; no tint, gradient, shadow or blend mode, and no scrim or overlay of any colour, black and white included, over a photograph."
    },
+   "answered_by": "person",
+   "code_check": [],
    "rows": [
     {
      "check_id": "PHOTO-19/summit-announcement/H025",
@@ -7397,6 +7499,8 @@
     ],
     "note": "Palette rules: Cascadia Slate and Warm Paper are mandatory, the two grounds of summit_badge_2025_PRINTER.pdf."
    },
+   "answered_by": "person",
+   "code_check": [],
    "rows": [
     {
      "check_id": "PHOTO-19/summit-announcement/H026",
@@ -7453,6 +7557,8 @@
     ],
     "note": "Palette rules, distribution: grounds and panels are Warm Paper or Cascadia Slate and nothing else, as on summit_badge_2025_PRINTER.pdf. Palette rules, distribution: the CFS mark is Fog Grey on Cascadia Slate, as on summit_badge_2025_PRINTER.pdf."
    },
+   "answered_by": "person",
+   "code_check": [],
    "rows": [
     {
      "check_id": "PHOTO-19/summit-announcement/H027",
@@ -7509,6 +7615,8 @@
     ],
     "note": "Palette rules, distribution: on Warm Paper all type is Near Black, apart from an affiliation line in Signal Copper, as on summit_badge_2025_PRINTER.pdf. Palette rules, distribution: on Cascadia Slate all type is Warm Paper or Fog Grey, as the CFS mark on summit_badge_2025_PRINTER.pdf."
    },
+   "answered_by": "person",
+   "code_check": [],
    "rows": [
     {
      "check_id": "PHOTO-19/summit-announcement/H028",
@@ -7560,6 +7668,8 @@
     "assets": [],
     "note": "Palette rules, distribution: Signal Copper (affiliation line, thin rules) and Evergreen (thin rules and dividers only) are accents, never a ground, panel, name, role line or headline."
    },
+   "answered_by": "person",
+   "code_check": [],
    "rows": [
     {
      "check_id": "PHOTO-19/summit-announcement/H029",
@@ -7611,6 +7721,8 @@
     ],
     "note": "Palette rules, distribution: the CFS mark is Fog Grey on Cascadia Slate, as on the badge. Fog Grey usage: the CFS mark on Cascadia Slate."
    },
+   "answered_by": "person",
+   "code_check": [],
    "rows": [
     {
      "check_id": "PHOTO-19/speaker-card-r002/H058",
@@ -7973,6 +8085,8 @@
     ],
     "note": "Palette rules, distribution: on Warm Paper all type is Near Black apart from a Signal Copper affiliation line; on Cascadia Slate all type is Warm Paper or Fog Grey."
    },
+   "answered_by": "person",
+   "code_check": [],
    "rows": [
     {
      "check_id": "PHOTO-19/speaker-card-r002/H059",
@@ -8348,6 +8462,8 @@
     "assets": [],
     "note": "Palette: Evergreen, if used at all, only for thin rules and dividers; never a ground, panel or type colour."
    },
+   "answered_by": "person",
+   "code_check": [],
    "rows": [
     {
      "check_id": "PHOTO-19/speaker-card-r002/H060",
@@ -8628,6 +8744,8 @@
     "assets": [],
     "note": "Palette rules, distribution: Signal Copper and Evergreen together no more than 5% of the designed, non-photographic area."
    },
+   "answered_by": "person",
+   "code_check": [],
    "rows": [
     {
      "check_id": "PHOTO-19/speaker-card-r002/H061",
@@ -8900,6 +9018,8 @@
     ],
     "note": "Palette rules, distribution: the CFS mark is Fog Grey on Cascadia Slate, as on the badge. Fog Grey usage: the CFS mark on Cascadia Slate."
    },
+   "answered_by": "person",
+   "code_check": [],
    "rows": [
     {
      "check_id": "PHOTO-19/summit-announcement/H058",
@@ -8951,6 +9071,8 @@
     "assets": [],
     "note": "Palette rules, distribution: Signal Copper and Evergreen together no more than 5% of the designed, non-photographic area."
    },
+   "answered_by": "person",
+   "code_check": [],
    "rows": [
     {
      "check_id": "PHOTO-19/summit-announcement/H061",
@@ -9002,6 +9124,8 @@
     "1": "photo"
    },
    "shared_reference": null,
+   "answered_by": "person",
+   "code_check": [],
    "rows": [
     {
      "check_id": "PHOTO-19/speaker-card-r002/H064",
@@ -9395,6 +9519,8 @@
     "assets": [],
     "note": "Brand identity, palette_rules.distribution: the CFS mark is Fog Grey on Cascadia Slate."
    },
+   "answered_by": "person",
+   "code_check": [],
    "rows": [
     {
      "check_id": "PHOTO-19/speaker-card-r002/H066",
@@ -9662,6 +9788,8 @@
     "assets": [],
     "note": "Brand identity, palette: Cascadia Slate and Warm Paper are mandatory colours."
    },
+   "answered_by": "person",
+   "code_check": [],
    "rows": [
     {
      "check_id": "PHOTO-19/speaker-card-r002/H067",
@@ -9929,6 +10057,8 @@
     "assets": [],
     "note": "Brand identity, palette_rules.photography: portraits keep their subjects' own colouring and are never recoloured toward the palette."
    },
+   "answered_by": "person",
+   "code_check": [],
    "rows": [
     {
      "check_id": "PHOTO-19/summit-announcement/H071",
@@ -9975,6 +10105,8 @@
     "assets": [],
     "note": "Brand identity, palette_rules.distribution: the CFS mark is Fog Grey on Cascadia Slate."
    },
+   "answered_by": "person",
+   "code_check": [],
    "rows": [
     {
      "check_id": "PHOTO-19/summit-announcement/H074",
@@ -10021,6 +10153,8 @@
     "assets": [],
     "note": "Brand identity, palette: Cascadia Slate and Warm Paper are mandatory colours."
    },
+   "answered_by": "person",
+   "code_check": [],
    "rows": [
     {
      "check_id": "PHOTO-19/summit-announcement/H075",
@@ -10064,6 +10198,8 @@
    ],
    "slot_labels": {},
    "shared_reference": null,
+   "answered_by": "person",
+   "code_check": [],
    "rows": [
     {
      "check_id": "PHOTO-19/speaker-card-r002/H023",
@@ -10570,6 +10706,8 @@
    ],
    "slot_labels": {},
    "shared_reference": null,
+   "answered_by": "person",
+   "code_check": [],
    "rows": [
     {
      "check_id": "PHOTO-19/speaker-card-r002/H026",
@@ -10850,6 +10988,8 @@
     ],
     "note": "Type system step 01: Display / H1, summit title and announcement headline, Piazzolla Medium. Brand type system rule: Piazzolla appears in Medium only, the single weight the house uses."
    },
+   "answered_by": "person",
+   "code_check": [],
    "rows": [
     {
      "check_id": "PHOTO-19/summit-announcement/H006",
@@ -10926,6 +11066,8 @@
     ],
     "note": "Type system: text face Inter (Regular and Medium, with IBM Plex Mono Regular); Piazzolla is only the summit title and announcement headline (step 01). summit_badge_2025_PRINTER.pdf sets the CFS mark in the printer's HelveticaNeue-Bold, not an Adobe Fonts face."
    },
+   "answered_by": "person",
+   "code_check": [],
    "rows": [
     {
      "check_id": "PHOTO-19/summit-announcement/H019",
@@ -11002,6 +11144,8 @@
     ],
     "note": "Brand type system rule: Never set a speaker name in Piazzolla. Step 02: speaker name in Inter Medium."
    },
+   "answered_by": "person",
+   "code_check": [],
    "rows": [
     {
      "check_id": "PHOTO-19/summit-announcement/H020",
@@ -11066,6 +11210,8 @@
     ],
     "note": "Brand type system rule: Piazzolla always runs with its optical size axis pinned to 8, whatever the size on the page. Signature move: The pinned optical size. Every summit title and announcement headline is set in Piazzolla Medium with the optical size axis pinned to 8, so letterforms drawn for 8 pt appear at 96 px and the headline reads as printed rather than styled."
    },
+   "answered_by": "person",
+   "code_check": [],
    "rows": [
     {
      "check_id": "PHOTO-19/summit-announcement/H021",
@@ -11117,6 +11263,8 @@
     "assets": [],
     "note": "Type system step 03: tracking 0 units, max 65 characters."
    },
+   "answered_by": "person",
+   "code_check": [],
    "rows": [
     {
      "check_id": "PHOTO-19/summit-announcement/H023",
@@ -11184,6 +11332,8 @@
     ],
     "note": "Type system step 02 and rule: a speaker or host name is Inter Medium, never Piazzolla."
    },
+   "answered_by": "person",
+   "code_check": [],
    "rows": [
     {
      "check_id": "PHOTO-19/speaker-card-r002/H033",
@@ -11742,6 +11892,8 @@
     ],
     "note": "Type system step 03: role line and running text in Inter Regular."
    },
+   "answered_by": "person",
+   "code_check": [],
    "rows": [
     {
      "check_id": "PHOTO-19/speaker-card-r002/H037",
@@ -12300,6 +12452,8 @@
     ],
     "note": "Type system step 04 and rule: affiliations and session titles use Inter Regular."
    },
+   "answered_by": "person",
+   "code_check": [],
    "rows": [
     {
      "check_id": "PHOTO-19/speaker-card-r002/H041",
@@ -12746,6 +12900,8 @@
     ],
     "note": "Type system step 04 and rule: affiliations and session titles use Inter Regular."
    },
+   "answered_by": "person",
+   "code_check": [],
    "rows": [
     {
      "check_id": "PHOTO-19/speaker-card-r002/H045",
@@ -13296,6 +13452,8 @@
     ],
     "note": "Type system step 04 and rule: affiliations and session titles use Inter Regular."
    },
+   "answered_by": "person",
+   "code_check": [],
    "rows": [
     {
      "check_id": "PHOTO-19/speaker-card-r018/H027",
@@ -13446,6 +13604,8 @@
     ],
     "note": "Type system step 03: role line and running text in Inter Regular."
    },
+   "answered_by": "person",
+   "code_check": [],
    "rows": [
     {
      "check_id": "PHOTO-19/summit-announcement/H038",
@@ -13518,6 +13678,8 @@
     ],
     "note": "Type system step 04 and rule: affiliations and session titles use Inter Regular."
    },
+   "answered_by": "person",
+   "code_check": [],
    "rows": [
     {
      "check_id": "PHOTO-19/summit-announcement/H042",
@@ -13590,6 +13752,8 @@
     ],
     "note": "Type system step 04 and rule: affiliations and session titles use Inter Regular."
    },
+   "answered_by": "person",
+   "code_check": [],
    "rows": [
     {
      "check_id": "PHOTO-19/summit-announcement/H046",
@@ -13654,6 +13818,8 @@
     ],
     "note": "Type system step 01 and signature move: every summit title and announcement headline is Piazzolla Medium with the optical size axis pinned to 8."
    },
+   "answered_by": "person",
+   "code_check": [],
    "rows": [
     {
      "check_id": "PHOTO-19/speaker-card-r002/H056",
@@ -13944,6 +14110,8 @@
     ],
     "note": "Type system step 01 and signature move: every summit title and announcement headline is Piazzolla Medium with the optical size axis pinned to 8."
    },
+   "answered_by": "person",
+   "code_check": [],
    "rows": [
     {
      "check_id": "PHOTO-19/speaker-card-r018/H043",
@@ -14054,6 +14222,8 @@
     ],
     "note": "Brand identity, signature_type_move: every summit title and announcement headline is Piazzolla Medium with the optical size axis pinned to 8."
    },
+   "answered_by": "person",
+   "code_check": [],
    "rows": [
     {
      "check_id": "PHOTO-19/speaker-card-r002/H062",
@@ -14344,6 +14514,8 @@
     ],
     "note": "Brand identity, signature_type_move: every summit title and announcement headline is Piazzolla Medium with the optical size axis pinned to 8."
    },
+   "answered_by": "person",
+   "code_check": [],
    "rows": [
     {
      "check_id": "PHOTO-19/speaker-card-r018/H057",
@@ -14454,6 +14626,8 @@
     ],
     "note": "summit_brand_notes.txt: house ground soft and even, never a coloured or busy background. Palette rules, forbidden: no coloured or busy ground behind any sitter."
    },
+   "answered_by": "person",
+   "code_check": [],
    "rows": [
     {
      "check_id": "PHOTO-19/speaker-card-r002/H017",
@@ -14816,6 +14990,8 @@
     ],
     "note": "summit_brand_notes.txt: one scale of head in frame across all eighteen so the grid is even. speaker-card-r005.png is the single fixed reference."
    },
+   "answered_by": "person",
+   "code_check": [],
    "rows": [
     {
      "check_id": "PHOTO-19/speaker-card-r002/H018",
@@ -15160,6 +15336,8 @@
     ],
     "note": "Palette rules, photography: no flat, hard direct-flash look. summit_brand_notes.txt: not a free meetup (no flat hard direct flash)."
    },
+   "answered_by": "person",
+   "code_check": [],
    "rows": [
     {
      "check_id": "PHOTO-19/speaker-card-r002/H021",
@@ -15532,6 +15710,8 @@
    ],
    "slot_labels": {},
    "shared_reference": null,
+   "answered_by": "person",
+   "code_check": [],
    "rows": [
     {
      "check_id": "PHOTO-19/speaker-card-r002/H011",
@@ -15817,6 +15997,8 @@
     "1": "photo"
    },
    "shared_reference": null,
+   "answered_by": "person",
+   "code_check": [],
    "rows": [
     {
      "check_id": "PHOTO-19/speaker-card-r002/H054",
@@ -16210,6 +16392,8 @@
     "assets": [],
     "note": "Palette rules, photography: the ground is the same behind every sitter. summit_brand_notes.txt: everyone should sit on the SAME house ground. speaker-card-r005.png is the single fixed reference."
    },
+   "answered_by": "person",
+   "code_check": [],
    "rows": [
     {
      "check_id": "PHOTO-19/speaker-card-r002/H055",
@@ -16464,6 +16648,8 @@
     "assets": [],
     "note": "summit_brand_notes.txt: a quiet neutral house ground behind every sitter. Brief: a consistent background treatment."
    },
+   "answered_by": "person",
+   "code_check": [],
    "rows": [
     {
      "check_id": "PHOTO-19/summit-announcement/H062",
@@ -16510,6 +16696,8 @@
     "assets": [],
     "note": "summit_brand_notes.txt: house ground soft and even, never a coloured or busy background. Palette rules, forbidden: no coloured or busy ground behind any sitter."
    },
+   "answered_by": "person",
+   "code_check": [],
    "rows": [
     {
      "check_id": "PHOTO-19/summit-announcement/H063",
@@ -16556,6 +16744,8 @@
     "assets": [],
     "note": "Palette rules, photography: the ground is the same behind every sitter. summit_brand_notes.txt: everyone should sit on the SAME house ground. speaker-card-r005.png is the single fixed reference."
    },
+   "answered_by": "person",
+   "code_check": [],
    "rows": [
     {
      "check_id": "PHOTO-19/summit-announcement/H064",
@@ -16607,6 +16797,8 @@
     ],
     "note": "summit_brand_notes.txt: \"Natural skin, no glamour retouching, no visible retouching signature.\""
    },
+   "answered_by": "person",
+   "code_check": [],
    "rows": [
     {
      "check_id": "PHOTO-19/speaker-card-r002/H063",
@@ -16964,6 +17156,8 @@
     "assets": [],
     "note": "Brand identity, palette_rules.photography: mixed-light casts are brought to natural skin, with no glossy warm filter."
    },
+   "answered_by": "person",
+   "code_check": [],
    "rows": [
     {
      "check_id": "PHOTO-19/speaker-card-r002/H065",
@@ -17236,6 +17430,8 @@
     ],
     "note": "summit_brand_notes.txt: \"Natural skin, no glamour retouching, no visible retouching signature.\""
    },
+   "answered_by": "person",
+   "code_check": [],
    "rows": [
     {
      "check_id": "PHOTO-19/summit-announcement/H070",
@@ -17287,6 +17483,8 @@
     "assets": [],
     "note": "Brand identity, palette_rules.photography: mixed-light casts are brought to natural skin, with no glossy warm filter."
    },
+   "answered_by": "person",
+   "code_check": [],
    "rows": [
     {
      "check_id": "PHOTO-19/summit-announcement/H072",
@@ -17338,6 +17536,8 @@
     ],
     "note": "Palette rules, photography: no flat, hard direct-flash look. summit_brand_notes.txt: not a free meetup (no flat hard direct flash)."
    },
+   "answered_by": "person",
+   "code_check": [],
    "rows": [
     {
      "check_id": "PHOTO-19/speaker-card-r002/H068",
@@ -17718,6 +17918,8 @@
     "1": "photo"
    },
    "shared_reference": null,
+   "answered_by": "person",
+   "code_check": [],
    "rows": [
     {
      "check_id": "PHOTO-19/speaker-card-r002/H015",
@@ -18260,6 +18462,8 @@
     "1": "photo"
    },
    "shared_reference": null,
+   "answered_by": "person",
+   "code_check": [],
    "rows": [
     {
      "check_id": "PHOTO-19/speaker-card-r002/H019",
@@ -18682,6 +18886,8 @@
     "1": "photo"
    },
    "shared_reference": null,
+   "answered_by": "person",
+   "code_check": [],
    "rows": [
     {
      "check_id": "PHOTO-19/speaker-card-r002/H020",
@@ -18940,6 +19146,8 @@
     ],
     "note": "Brief: make them look like one event. summit_brand_notes.txt: \"Not a consumer conference (no glossy warm filter), not a free meetup (no flat hard direct flash).\" speaker_portrait_07.jpg was shot under warm soft lamplight."
    },
+   "answered_by": "person",
+   "code_check": [],
    "rows": [
     {
      "check_id": "PHOTO-19/speaker-card-r009/H017",
@@ -19000,6 +19208,8 @@
     "1": "photo"
    },
    "shared_reference": null,
+   "answered_by": "person",
+   "code_check": [],
    "rows": [
     {
      "check_id": "PHOTO-19/speaker-card-r003/H016",
@@ -19086,6 +19296,8 @@
     ],
     "note": "summit_brand_notes.txt: \"Natural skin, no glamour retouching, no visible retouching signature, and nobody made to look like a different person.\" speaker_portrait_08.jpg arrived heavily retouched by a PR agency."
    },
+   "answered_by": "person",
+   "code_check": [],
    "rows": [
     {
      "check_id": "PHOTO-19/speaker-card-r010/H017",
@@ -19146,6 +19358,8 @@
     ],
     "note": "Brief: make them look like one event. summit_brand_notes.txt: \"Not a consumer conference (no glossy warm filter), not a free meetup (no flat hard direct flash).\" speaker_portrait_08.jpg was shot under cool studio key light."
    },
+   "answered_by": "person",
+   "code_check": [],
    "rows": [
     {
      "check_id": "PHOTO-19/speaker-card-r010/H018",
@@ -19210,6 +19424,8 @@
     ],
     "note": "Brief: make them look like one event. summit_brand_notes.txt: \"Not a consumer conference (no glossy warm filter), not a free meetup (no flat hard direct flash).\" speaker_portrait_09.jpg was shot under mixed warm venue lighting."
    },
+   "answered_by": "person",
+   "code_check": [],
    "rows": [
     {
      "check_id": "PHOTO-19/speaker-card-r011/H017",
@@ -19274,6 +19490,8 @@
     ],
     "note": "Brief: make them look like one event. summit_brand_notes.txt: \"Not a consumer conference (no glossy warm filter), not a free meetup (no flat hard direct flash).\" speaker_portrait_11.jpg was shot under warm mixed light."
    },
+   "answered_by": "person",
+   "code_check": [],
    "rows": [
     {
      "check_id": "PHOTO-19/speaker-card-r014/H017",
@@ -19338,6 +19556,8 @@
     ],
     "note": "Brief: make them look like one event. summit_brand_notes.txt: \"Not a consumer conference (no glossy warm filter), not a free meetup (no flat hard direct flash).\" speaker_portrait_12.jpg was shot under cool open shade."
    },
+   "answered_by": "person",
+   "code_check": [],
    "rows": [
     {
      "check_id": "PHOTO-19/speaker-card-r015/H017",
@@ -19402,6 +19622,8 @@
     ],
     "note": "Brief: make them look like one event. summit_brand_notes.txt: \"Not a consumer conference (no glossy warm filter), not a free meetup (no flat hard direct flash).\" speaker_portrait_13.jpg was shot under warm office light."
    },
+   "answered_by": "person",
+   "code_check": [],
    "rows": [
     {
      "check_id": "PHOTO-19/speaker-card-r016/H017",
@@ -19466,6 +19688,8 @@
     ],
     "note": "Brief: make them look like one event. summit_brand_notes.txt: \"Not a consumer conference (no glossy warm filter), not a free meetup (no flat hard direct flash).\" staff_portrait_03.jpg was shot under flat fluorescent ceiling light giving a slightly green tinge."
    },
+   "answered_by": "person",
+   "code_check": [],
    "rows": [
     {
      "check_id": "PHOTO-19/speaker-card-r020/H017",
@@ -19530,6 +19754,8 @@
     ],
     "note": "summit_brand_notes.txt: \"Natural skin, no glamour retouching, no visible retouching signature, and nobody made to look like a different person.\" speakers.csv, fields Name and photo: the photo column names the one frame supplied for each person."
    },
+   "answered_by": "person",
+   "code_check": [],
    "rows": [
     {
      "check_id": "PHOTO-19/summit-announcement/H013",
@@ -19590,6 +19816,8 @@
     ],
     "note": "Brief: make them look like one event. summit_brand_notes.txt: \"Not a consumer conference (no glossy warm filter), not a free meetup (no flat hard direct flash).\""
    },
+   "answered_by": "person",
+   "code_check": [],
    "rows": [
     {
      "check_id": "PHOTO-19/summit-announcement/H014",
@@ -19646,6 +19874,8 @@
     ],
     "note": "summit_brand_notes.txt: \"Natural skin, no glamour retouching, no visible retouching signature, and nobody made to look like a different person.\" speaker_portrait_02.jpg arrived heavily retouched by a PR agency."
    },
+   "answered_by": "person",
+   "code_check": [],
    "rows": [
     {
      "check_id": "PHOTO-19/summit-announcement/H016",
@@ -19702,6 +19932,8 @@
     ],
     "note": "summit_brand_notes.txt: \"Natural skin, no glamour retouching, no visible retouching signature, and nobody made to look like a different person.\" speaker_portrait_08.jpg arrived heavily retouched by a PR agency."
    },
+   "answered_by": "person",
+   "code_check": [],
    "rows": [
     {
      "check_id": "PHOTO-19/summit-announcement/H017",
@@ -19762,6 +19994,8 @@
     ],
     "note": "Brief: make them look like one event. summit_brand_notes.txt: \"Not a consumer conference (no glossy warm filter), not a free meetup (no flat hard direct flash).\" speaker_portrait_04.jpg was shot under harsh overhead fluorescent (green-tinged mixed light)."
    },
+   "answered_by": "person",
+   "code_check": [],
    "rows": [
     {
      "check_id": "PHOTO-19/speaker-card-r006/H017",
@@ -19822,6 +20056,8 @@
     ],
     "note": "summit_brand_notes.txt: \"Natural skin, no glamour retouching, no visible retouching signature, and nobody made to look like a different person.\" speaker_portrait_02.jpg arrived heavily retouched by a PR agency."
    },
+   "answered_by": "person",
+   "code_check": [],
    "rows": [
     {
      "check_id": "PHOTO-19/speaker-card-r003/H017",
@@ -19882,6 +20118,8 @@
     ],
     "note": "Brief: make them look like one event. summit_brand_notes.txt: \"Not a consumer conference (no glossy warm filter), not a free meetup (no flat hard direct flash).\" speaker_portrait_02.jpg was shot under warm studio lighting."
    },
+   "answered_by": "person",
+   "code_check": [],
    "rows": [
     {
      "check_id": "PHOTO-19/speaker-card-r003/H018",
@@ -19942,6 +20180,8 @@
     ],
     "note": "Planned trap (speaker_portrait_02.jpg arrived heavily retouched); summit_brand_notes.txt: no visible retouching signature."
    },
+   "answered_by": "person",
+   "code_check": [],
    "rows": [
     {
      "check_id": "PHOTO-19/speaker-card-r003/H043",
@@ -19998,6 +20238,8 @@
     ],
     "note": "Planned trap (speaker_portrait_08.jpg arrived heavily retouched); summit_brand_notes.txt: no visible retouching signature."
    },
+   "answered_by": "person",
+   "code_check": [],
    "rows": [
     {
      "check_id": "PHOTO-19/speaker-card-r010/H043",
@@ -20054,6 +20296,8 @@
     ],
     "note": "Planned trap (speaker_portrait_02.jpg arrived heavily retouched); summit_brand_notes.txt: no visible retouching signature."
    },
+   "answered_by": "person",
+   "code_check": [],
    "rows": [
     {
      "check_id": "PHOTO-19/summit-announcement/H065",
@@ -20110,6 +20354,8 @@
     ],
     "note": "Planned trap (speaker_portrait_08.jpg arrived heavily retouched); summit_brand_notes.txt: no visible retouching signature."
    },
+   "answered_by": "person",
+   "code_check": [],
    "rows": [
     {
      "check_id": "PHOTO-19/summit-announcement/H066",
@@ -20166,6 +20412,10 @@
     "1": "Name"
    },
    "shared_reference": null,
+   "answered_by": "code",
+   "code_check": [
+    "Compares text sizes (font size in PDFs, letter height on images)."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-19/speaker-card-r002/H010",
@@ -20484,6 +20734,10 @@
     "1": "Name"
    },
    "shared_reference": null,
+   "answered_by": "code",
+   "code_check": [
+    "Compares text sizes (font size in PDFs, letter height on images)."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-19/speaker-card-r018/H010",
@@ -20597,6 +20851,10 @@
     "assets": [],
     "note": "Brief, pinned: “Cascadia Founders Summit” is the headline and the largest text. Type system step 01: summit title and announcement headline, Piazzolla Medium 96 px."
    },
+   "answered_by": "code",
+   "code_check": [
+    "Compares text sizes (font size in PDFs, letter height on images)."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-19/summit-announcement/H007",
@@ -20655,6 +20913,10 @@
     "2": "Role Line"
    },
    "shared_reference": null,
+   "answered_by": "code",
+   "code_check": [
+    "Compares the named texts' size or position."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-19/speaker-card-r002/H013",
@@ -21138,6 +21400,10 @@
     "assets": [],
     "note": "Type system: role line 30 px (step 03) above affiliation and session 26 px (step 04); brief: keep the role readable on a phone."
    },
+   "answered_by": "code",
+   "code_check": [
+    "Compares the named texts' size or position."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-19/speaker-card-r002/H057",

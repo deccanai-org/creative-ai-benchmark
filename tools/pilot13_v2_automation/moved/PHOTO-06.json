@@ -1,0 +1,303 @@
+{
+ "task_id": "PHOTO-06",
+ "moved": [
+  {
+   "check_id": "PHOTO-06/share-hollis-scan-01/H012",
+   "output_id": "share-hollis-scan-01",
+   "rule_id": "R006",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The caption on “Family archive share image - hollis_scan_01” (share-hollis-scan-01.jpg) gives the year 1912.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     {
+      "regex": "\\b1912\\b"
+     }
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-06/share-hollis-scan-02/H013",
+   "output_id": "share-hollis-scan-02",
+   "rule_id": "R006",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The caption on “Family archive share image - hollis_scan_02” (share-hollis-scan-02.jpg) gives the year 1931.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     {
+      "regex": "\\b1931\\b"
+     }
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-06/share-hollis-scan-04/H010",
+   "output_id": "share-hollis-scan-04",
+   "rule_id": "R006",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The caption on “Family archive share image - hollis_scan_04” (share-hollis-scan-04.jpg) gives the year 1948.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     {
+      "regex": "\\b1948\\b"
+     }
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-06/share-hollis-scan-06/H011",
+   "output_id": "share-hollis-scan-06",
+   "rule_id": "R006",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The caption on “Family archive share image - hollis_scan_06” (share-hollis-scan-06.jpg) gives the year 1967.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     {
+      "regex": "\\b1967\\b"
+     }
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-06/share-hollis-scan-08/H009",
+   "output_id": "share-hollis-scan-08",
+   "rule_id": "R006",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The caption on “Family archive share image - hollis_scan_08” (share-hollis-scan-08.jpg) gives the year 1969.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     {
+      "regex": "\\b1969\\b"
+     }
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-06/share-hollis-scan-09/H009",
+   "output_id": "share-hollis-scan-09",
+   "rule_id": "R006",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The caption on “Family archive share image - hollis_scan_09” (share-hollis-scan-09.jpg) gives the year 1974.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     {
+      "regex": "\\b1974\\b"
+     }
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-06/share-hollis-scan-01/H065",
+   "output_id": "share-hollis-scan-01",
+   "rule_id": "R015",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The caption on “Family archive share image - hollis_scan_01” (share-hollis-scan-01.jpg) names the place Brattleboro, with or without Vermont or VT.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "Brattleboro"
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-06/share-hollis-scan-02/H064",
+   "output_id": "share-hollis-scan-02",
+   "rule_id": "R015",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The caption on “Family archive share image - hollis_scan_02” (share-hollis-scan-02.jpg) names the place Brattleboro, with or without Vermont or VT.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "Brattleboro"
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-06/share-hollis-scan-03/H064",
+   "output_id": "share-hollis-scan-03",
+   "rule_id": "R015",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The caption on “Family archive share image - hollis_scan_03” (share-hollis-scan-03.jpg) names the place Newfane, with or without Vermont or VT.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "Newfane"
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-06/share-hollis-scan-04/H063",
+   "output_id": "share-hollis-scan-04",
+   "rule_id": "R015",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The caption on “Family archive share image - hollis_scan_04” (share-hollis-scan-04.jpg) names the place Brattleboro, with or without Vermont or VT.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "Brattleboro"
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-06/share-hollis-scan-05/H064",
+   "output_id": "share-hollis-scan-05",
+   "rule_id": "R015",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The caption on “Family archive share image - hollis_scan_05” (share-hollis-scan-05.jpg) names the place Putney, with or without Vermont or VT.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "Putney"
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-06/share-hollis-scan-06/H063",
+   "output_id": "share-hollis-scan-06",
+   "rule_id": "R015",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The caption on “Family archive share image - hollis_scan_06” (share-hollis-scan-06.jpg) names the place Brattleboro, with or without Vermont or VT.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "Brattleboro"
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-06/share-hollis-scan-07/H067",
+   "output_id": "share-hollis-scan-07",
+   "rule_id": "R015",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The caption on “Family archive share image - hollis_scan_07” (share-hollis-scan-07.jpg) names the place Brattleboro, with or without Vermont or VT.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "Brattleboro"
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-06/share-hollis-scan-08/H061",
+   "output_id": "share-hollis-scan-08",
+   "rule_id": "R015",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The caption on “Family archive share image - hollis_scan_08” (share-hollis-scan-08.jpg) names the place Brattleboro, with or without Vermont or VT.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "Brattleboro"
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-06/share-hollis-scan-09/H064",
+   "output_id": "share-hollis-scan-09",
+   "rule_id": "R015",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The caption on “Family archive share image - hollis_scan_09” (share-hollis-scan-09.jpg) names the place Brattleboro, with or without Vermont or VT.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "Brattleboro"
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-06/share-hollis-scan-03/H009",
+   "output_id": "share-hollis-scan-03",
+   "rule_id": "R028",
+   "k_id": "K1_Q5",
+   "critical": true,
+   "check": "The caption on “Family archive share image - hollis_scan_03” (share-hollis-scan-03.jpg) gives the year 1936, not the catalogue's 1938.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     {
+      "regex": "\\b1936\\b"
+     }
+    ],
+    "forbidden": [
+     {
+      "regex": "\\b1938\\b"
+     }
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-06/share-hollis-scan-07/H012",
+   "output_id": "share-hollis-scan-07",
+   "rule_id": "R030",
+   "k_id": "K1_Q5",
+   "critical": true,
+   "check": "The caption on “Family archive share image - hollis_scan_07” (share-hollis-scan-07.jpg) gives the year 1971.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     {
+      "regex": "\\b1971\\b"
+     }
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-06/share-hollis-scan-05/H009",
+   "output_id": "share-hollis-scan-05",
+   "rule_id": "R031",
+   "k_id": "K1_Q5",
+   "critical": true,
+   "check": "The caption on “Family archive share image - hollis_scan_05” (share-hollis-scan-05.jpg) gives the year 1955, not cousin Dale's 1956.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     {
+      "regex": "\\b1955\\b"
+     }
+    ],
+    "forbidden": [
+     {
+      "regex": "\\b1956\\b"
+     }
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  }
+ ]
+}

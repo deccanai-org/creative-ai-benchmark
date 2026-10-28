@@ -8,13 +8,14 @@ import csv
 import html
 import json
 import re
+import sys
 import unittest
 from pathlib import Path
 from collections import Counter
 
 from build_v7_annotation_pilot import ROOT, TASK_IDS, TASKS
-from build_v7_annotation_pilot_v2 import (AUTO2K, CONDITIONAL, OUT, Thumbnails, build_rules, export_rule, fill,
-                                         k_catalog, note_sentences, row_sources, split_reference)
+from build_v7_annotation_pilot_v2 import (AUTO2K, CONDITIONAL, OUT, Thumbnails, apply_moves, build_rules, export_rule, fill,
+                                         k_catalog, load_moves, note_sentences, row_sources, split_reference)
 
 LOGIC = re.compile(r'(?i)\b(if|any|no|not|never|only|unless|except|without|all|every|each|none|neither|nor)\b')
 
@@ -72,7 +73,8 @@ class GroupedVerifierTests(unittest.TestCase):
         for tid in TASK_IDS:
             spec, groups = load(tid)
             with self.subTest(task=tid):
-                self.assertEqual(json.loads(json.dumps([export_rule(tid, r) for r in build_rules(spec)])), groups['rules'])
+                rules = apply_moves(tid, build_rules(spec), load_moves())
+                self.assertEqual(json.loads(json.dumps([export_rule(tid, r) for r in rules])), groups['rules'])
 
     def test_pages_and_exports_list_every_check_once(self):
         with (OUT / 'export' / 'grouped_human_rule_rows.csv').open(encoding='utf-8') as f:
@@ -151,9 +153,45 @@ class GroupedVerifierTests(unittest.TestCase):
                 self.assertEqual(src.split('/')[1], tid)
                 self.assertIn(Path(src).name if Path(src).name in manifest else Path(src).name[:-4], manifest)
 
+    def test_moved_rules_match_the_automation_files(self):
+        # a rule answered by code is exactly a rule that moved; its checks are the converted ones, unchanged in ID,
+        # K question and critical flag, and each has an assertion the automatic layer can run
+        sys.path.insert(0, str(ROOT / 'tools/auto_verifier'))
+        import objective_ops
+        moves = load_moves()
+        for tid in TASK_IDS:
+            spec, groups = load(tid)
+            checks = {c['check_id']: c for c in spec['verifiers_human']}
+            converted = {m['check_id']: m for m in json.loads(
+                (ROOT / 'tools/pilot13_v2_automation/moved' / f'{tid}.json').read_text(encoding='utf-8'))['moved']}
+            moving = {rid for rid, v in (moves.get(tid) or {}).items() if v['verdict'] == 'moves'}
+            with self.subTest(task=tid):
+                coded = {r['rule_id'] for r in groups['rules'] if r['answered_by'] == 'code'}
+                self.assertEqual(coded, moving)
+                for rule in groups['rules']:
+                    if rule['answered_by'] != 'code':
+                        self.assertEqual(rule['code_check'], [])
+                        continue
+                    self.assertTrue(rule['code_check'])
+                    for row in rule['rows']:
+                        m = converted[row['check_id']]
+                        self.assertEqual(m['rule_id'], rule['rule_id'])
+                        self.assertEqual(m['k_id'], checks[row['check_id']]['k_id'])
+                        self.assertEqual(m['critical'], checks[row['check_id']]['k_id'] == 'K1_Q5')
+                        self.assertEqual(m['check'], checks[row['check_id']]['check'])
+                        ops = [m['assertion']] + m['assertion'].get('checks', [])
+                        for op in ops:
+                            self.assertIn(op['op'], objective_ops.OPS, row['check_id'])
+                page = (OUT / f'{tid}-verifiers.html').read_text(encoding='utf-8')
+                answers = dict(re.findall(r'data-check="([^"]+)"[^>]*>[^<]*</td><td class="ans( code[^"]*)?"', page))
+                for rule in groups['rules']:
+                    for row in rule['rows']:
+                        self.assertEqual(answers[row['check_id']].startswith(' code'), rule['answered_by'] == 'code', row['check_id'])
+
     def test_no_long_dashes(self):
         # Brief pages reproduce v1, including excerpts of client-supplied files, so only generated pages are checked.
-        for path in [*OUT.glob('*-verifiers.html'), OUT / 'index.html', *(OUT / 'export').glob('*.csv')]:
+        for path in [*OUT.glob('*-verifiers.html'), OUT / 'index.html', *(OUT / 'export').glob('*.csv'),
+                     *[OUT / n for n in ('automation.html', 'automation-plan.html') if (OUT / n).exists()]]:
             self.assertNotRegex(path.read_text(encoding='utf-8'), '[–—]', path.name)
 
 

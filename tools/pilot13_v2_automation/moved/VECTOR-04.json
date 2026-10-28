@@ -1,0 +1,306 @@
+{
+ "task_id": "VECTOR-04",
+ "moved": [
+  {
+   "check_id": "VECTOR-04/new-sticker-companion-1/H017",
+   "output_id": "new-sticker-companion-1",
+   "rule_id": "R031",
+   "k_id": "K1_Q5",
+   "critical": true,
+   "check": "Any price on “Original companion sticker - Companion 1” (new-sticker-companion-1.svg) is the $3 single or $9 four-pack from meridian_sheet_spec.txt, never a per-origin coffee price from meridian_origins.csv.",
+   "assertion": {
+    "op": "v2_prices",
+    "mode": "only",
+    "allowed": [
+     "$3",
+     "$9"
+    ]
+   },
+   "how": "Finds every price and checks each meets the rule."
+  },
+  {
+   "check_id": "VECTOR-04/new-sticker-companion-2/H017",
+   "output_id": "new-sticker-companion-2",
+   "rule_id": "R031",
+   "k_id": "K1_Q5",
+   "critical": true,
+   "check": "Any price on “Original companion sticker - Companion 2” (new-sticker-companion-2.svg) is the $3 single or $9 four-pack from meridian_sheet_spec.txt, never a per-origin coffee price from meridian_origins.csv.",
+   "assertion": {
+    "op": "v2_prices",
+    "mode": "only",
+    "allowed": [
+     "$3",
+     "$9"
+    ]
+   },
+   "how": "Finds every price and checks each meets the rule."
+  },
+  {
+   "check_id": "VECTOR-04/sticker-proof-companion-1/H015",
+   "output_id": "sticker-proof-companion-1",
+   "rule_id": "R031",
+   "k_id": "K1_Q5",
+   "critical": true,
+   "check": "Any price on “Transparent sticker proof - Companion 1” (sticker-proof-companion-1.png) is the $3 single or $9 four-pack from meridian_sheet_spec.txt, never a per-origin coffee price from meridian_origins.csv.",
+   "assertion": {
+    "op": "v2_prices",
+    "mode": "only",
+    "allowed": [
+     "$3",
+     "$9"
+    ]
+   },
+   "how": "Finds every price and checks each meets the rule."
+  },
+  {
+   "check_id": "VECTOR-04/sticker-proof-companion-2/H015",
+   "output_id": "sticker-proof-companion-2",
+   "rule_id": "R031",
+   "k_id": "K1_Q5",
+   "critical": true,
+   "check": "Any price on “Transparent sticker proof - Companion 2” (sticker-proof-companion-2.png) is the $3 single or $9 four-pack from meridian_sheet_spec.txt, never a per-origin coffee price from meridian_origins.csv.",
+   "assertion": {
+    "op": "v2_prices",
+    "mode": "only",
+    "allowed": [
+     "$3",
+     "$9"
+    ]
+   },
+   "how": "Finds every price and checks each meets the rule."
+  },
+  {
+   "check_id": "VECTOR-04/gang-sheet/H026",
+   "output_id": "gang-sheet",
+   "rule_id": "R031",
+   "k_id": "K1_Q5",
+   "critical": true,
+   "check": "Any price on “Sticker imposed production sheet” (gang-sheet.pdf) is the $3 single or $9 four-pack from meridian_sheet_spec.txt, never a per-origin coffee price from meridian_origins.csv.",
+   "assertion": {
+    "op": "v2_prices",
+    "mode": "only",
+    "allowed": [
+     "$3",
+     "$9"
+    ]
+   },
+   "how": "Finds every price and checks each meets the rule."
+  },
+  {
+   "check_id": "VECTOR-04/recovered-sticker-window-mark/H012",
+   "output_id": "recovered-sticker-window-mark",
+   "rule_id": "R054",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Every fill and stroke in “Recovered sticker artwork - Window mark” (recovered-sticker-window-mark.svg) is one of the six palette hexes: #3E2A20, #C8A97E, #5B6B54, #F3E7D3, #A8442E or #201914.",
+   "assertion": {
+    "op": "v2_palette_only",
+    "hexes": [
+     "#3E2A20",
+     "#C8A97E",
+     "#5B6B54",
+     "#F3E7D3",
+     "#A8442E",
+     "#201914"
+    ]
+   },
+   "how": "Reads every type, shape and line colour from the file (photos excluded)."
+  },
+  {
+   "check_id": "VECTOR-04/recovered-sticker-bag-design-1/H008",
+   "output_id": "recovered-sticker-bag-design-1",
+   "rule_id": "R054",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Every fill and stroke in “Recovered sticker artwork - Bag design 1” (recovered-sticker-bag-design-1.svg) is one of the six palette hexes: #3E2A20, #C8A97E, #5B6B54, #F3E7D3, #A8442E or #201914.",
+   "assertion": {
+    "op": "v2_palette_only",
+    "hexes": [
+     "#3E2A20",
+     "#C8A97E",
+     "#5B6B54",
+     "#F3E7D3",
+     "#A8442E",
+     "#201914"
+    ]
+   },
+   "how": "Reads every type, shape and line colour from the file (photos excluded)."
+  },
+  {
+   "check_id": "VECTOR-04/recovered-sticker-bag-design-2/H008",
+   "output_id": "recovered-sticker-bag-design-2",
+   "rule_id": "R054",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Every fill and stroke in “Recovered sticker artwork - Bag design 2” (recovered-sticker-bag-design-2.svg) is one of the six palette hexes: #3E2A20, #C8A97E, #5B6B54, #F3E7D3, #A8442E or #201914.",
+   "assertion": {
+    "op": "v2_palette_only",
+    "hexes": [
+     "#3E2A20",
+     "#C8A97E",
+     "#5B6B54",
+     "#F3E7D3",
+     "#A8442E",
+     "#201914"
+    ]
+   },
+   "how": "Reads every type, shape and line colour from the file (photos excluded)."
+  },
+  {
+   "check_id": "VECTOR-04/recovered-sticker-bag-design-3/H008",
+   "output_id": "recovered-sticker-bag-design-3",
+   "rule_id": "R054",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Every fill and stroke in “Recovered sticker artwork - Bag design 3” (recovered-sticker-bag-design-3.svg) is one of the six palette hexes: #3E2A20, #C8A97E, #5B6B54, #F3E7D3, #A8442E or #201914.",
+   "assertion": {
+    "op": "v2_palette_only",
+    "hexes": [
+     "#3E2A20",
+     "#C8A97E",
+     "#5B6B54",
+     "#F3E7D3",
+     "#A8442E",
+     "#201914"
+    ]
+   },
+   "how": "Reads every type, shape and line colour from the file (photos excluded)."
+  },
+  {
+   "check_id": "VECTOR-04/new-sticker-companion-1/H002",
+   "output_id": "new-sticker-companion-1",
+   "rule_id": "R054",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Every fill and stroke in “Original companion sticker - Companion 1” (new-sticker-companion-1.svg) is one of the six palette hexes: #3E2A20, #C8A97E, #5B6B54, #F3E7D3, #A8442E or #201914.",
+   "assertion": {
+    "op": "v2_palette_only",
+    "hexes": [
+     "#3E2A20",
+     "#C8A97E",
+     "#5B6B54",
+     "#F3E7D3",
+     "#A8442E",
+     "#201914"
+    ]
+   },
+   "how": "Reads every type, shape and line colour from the file (photos excluded)."
+  },
+  {
+   "check_id": "VECTOR-04/new-sticker-companion-2/H002",
+   "output_id": "new-sticker-companion-2",
+   "rule_id": "R054",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Every fill and stroke in “Original companion sticker - Companion 2” (new-sticker-companion-2.svg) is one of the six palette hexes: #3E2A20, #C8A97E, #5B6B54, #F3E7D3, #A8442E or #201914.",
+   "assertion": {
+    "op": "v2_palette_only",
+    "hexes": [
+     "#3E2A20",
+     "#C8A97E",
+     "#5B6B54",
+     "#F3E7D3",
+     "#A8442E",
+     "#201914"
+    ]
+   },
+   "how": "Reads every type, shape and line colour from the file (photos excluded)."
+  },
+  {
+   "check_id": "VECTOR-04/recovered-sticker-window-mark/H023",
+   "output_id": "recovered-sticker-window-mark",
+   "rule_id": "R079",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "If Ink Black #201914 appears on “Recovered sticker artwork - Window mark” (recovered-sticker-window-mark.svg), it covers no more than 5% of the sticker's inked area.",
+   "assertion": {
+    "op": "v2_area_share",
+    "hexes": [
+     "#201914"
+    ],
+    "max_pct": 5.0
+   },
+   "how": "Renders the file without photos and measures the share of the named colours."
+  },
+  {
+   "check_id": "VECTOR-04/recovered-sticker-bag-design-1/H016",
+   "output_id": "recovered-sticker-bag-design-1",
+   "rule_id": "R079",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "If Ink Black #201914 appears on “Recovered sticker artwork - Bag design 1” (recovered-sticker-bag-design-1.svg), it covers no more than 5% of the sticker's inked area.",
+   "assertion": {
+    "op": "v2_area_share",
+    "hexes": [
+     "#201914"
+    ],
+    "max_pct": 5.0
+   },
+   "how": "Renders the file without photos and measures the share of the named colours."
+  },
+  {
+   "check_id": "VECTOR-04/recovered-sticker-bag-design-2/H016",
+   "output_id": "recovered-sticker-bag-design-2",
+   "rule_id": "R079",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "If Ink Black #201914 appears on “Recovered sticker artwork - Bag design 2” (recovered-sticker-bag-design-2.svg), it covers no more than 5% of the sticker's inked area.",
+   "assertion": {
+    "op": "v2_area_share",
+    "hexes": [
+     "#201914"
+    ],
+    "max_pct": 5.0
+   },
+   "how": "Renders the file without photos and measures the share of the named colours."
+  },
+  {
+   "check_id": "VECTOR-04/recovered-sticker-bag-design-3/H016",
+   "output_id": "recovered-sticker-bag-design-3",
+   "rule_id": "R079",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "If Ink Black #201914 appears on “Recovered sticker artwork - Bag design 3” (recovered-sticker-bag-design-3.svg), it covers no more than 5% of the sticker's inked area.",
+   "assertion": {
+    "op": "v2_area_share",
+    "hexes": [
+     "#201914"
+    ],
+    "max_pct": 5.0
+   },
+   "how": "Renders the file without photos and measures the share of the named colours."
+  },
+  {
+   "check_id": "VECTOR-04/new-sticker-companion-1/H026",
+   "output_id": "new-sticker-companion-1",
+   "rule_id": "R079",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "If Ink Black #201914 appears on “Original companion sticker - Companion 1” (new-sticker-companion-1.svg), it covers no more than 5% of the sticker's inked area.",
+   "assertion": {
+    "op": "v2_area_share",
+    "hexes": [
+     "#201914"
+    ],
+    "max_pct": 5.0
+   },
+   "how": "Renders the file without photos and measures the share of the named colours."
+  },
+  {
+   "check_id": "VECTOR-04/new-sticker-companion-2/H026",
+   "output_id": "new-sticker-companion-2",
+   "rule_id": "R079",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "If Ink Black #201914 appears on “Original companion sticker - Companion 2” (new-sticker-companion-2.svg), it covers no more than 5% of the sticker's inked area.",
+   "assertion": {
+    "op": "v2_area_share",
+    "hexes": [
+     "#201914"
+    ],
+    "max_pct": 5.0
+   },
+   "how": "Renders the file without photos and measures the share of the named colours."
+  }
+ ]
+}

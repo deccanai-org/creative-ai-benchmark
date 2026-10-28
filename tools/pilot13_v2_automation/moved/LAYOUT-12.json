@@ -1,0 +1,3138 @@
+{
+ "task_id": "LAYOUT-12",
+ "moved": [
+  {
+   "check_id": "LAYOUT-12/poster-direction-type-led/H001",
+   "output_id": "poster-direction-type-led",
+   "rule_id": "R001",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "Acts on “After Dark poster direction - Type-led” (poster-direction-type-led.pdf) follow the umbra_billing_autumn.txt order: Sable Quartet, Meridian Brass, Night Ferry, The Blue Hour, Vespertine, The Eastons, Koa, Laurel and the Dive.",
+   "assertion": {
+    "op": "v2_order",
+    "texts": [
+     "Sable Quartet",
+     "Meridian Brass",
+     "Night Ferry",
+     "The Blue Hour",
+     "Vespertine",
+     "The Eastons",
+     "Koa",
+     "Laurel and the Dive"
+    ]
+   },
+   "how": "Checks the named texts appear in this order, top to bottom."
+  },
+  {
+   "check_id": "LAYOUT-12/poster-direction-image-led/H001",
+   "output_id": "poster-direction-image-led",
+   "rule_id": "R001",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "Acts on “After Dark poster direction - Image-led” (poster-direction-image-led.pdf) follow the umbra_billing_autumn.txt order: Sable Quartet, Meridian Brass, Night Ferry, The Blue Hour, Vespertine, The Eastons, Koa, Laurel and the Dive.",
+   "assertion": {
+    "op": "v2_order",
+    "texts": [
+     "Sable Quartet",
+     "Meridian Brass",
+     "Night Ferry",
+     "The Blue Hour",
+     "Vespertine",
+     "The Eastons",
+     "Koa",
+     "Laurel and the Dive"
+    ]
+   },
+   "how": "Checks the named texts appear in this order, top to bottom."
+  },
+  {
+   "check_id": "LAYOUT-12/poster-direction-graphic-led/H001",
+   "output_id": "poster-direction-graphic-led",
+   "rule_id": "R001",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "Acts on “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf) follow the umbra_billing_autumn.txt order: Sable Quartet, Meridian Brass, Night Ferry, The Blue Hour, Vespertine, The Eastons, Koa, Laurel and the Dive.",
+   "assertion": {
+    "op": "v2_order",
+    "texts": [
+     "Sable Quartet",
+     "Meridian Brass",
+     "Night Ferry",
+     "The Blue Hour",
+     "Vespertine",
+     "The Eastons",
+     "Koa",
+     "Laurel and the Dive"
+    ]
+   },
+   "how": "Checks the named texts appear in this order, top to bottom."
+  },
+  {
+   "check_id": "LAYOUT-12/poster-direction-type-led/H010",
+   "output_id": "poster-direction-type-led",
+   "rule_id": "R003",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "Any weekday shown with Koa's 16 Oct date on “After Dark poster direction - Type-led” (poster-direction-type-led.pdf) is Friday (FRI), not Saturday as umbra_billing_autumn.txt prints it.",
+   "assertion": {
+    "op": "v2_weekdays",
+    "year": 2026
+   },
+   "how": "Finds every weekday shown beside a date and checks it against the 2026 calendar."
+  },
+  {
+   "check_id": "LAYOUT-12/poster-direction-image-led/H008",
+   "output_id": "poster-direction-image-led",
+   "rule_id": "R003",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "Any weekday shown with Koa's 16 Oct date on “After Dark poster direction - Image-led” (poster-direction-image-led.pdf) is Friday (FRI), not Saturday as umbra_billing_autumn.txt prints it.",
+   "assertion": {
+    "op": "v2_weekdays",
+    "year": 2026
+   },
+   "how": "Finds every weekday shown beside a date and checks it against the 2026 calendar."
+  },
+  {
+   "check_id": "LAYOUT-12/poster-direction-graphic-led/H007",
+   "output_id": "poster-direction-graphic-led",
+   "rule_id": "R003",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "Any weekday shown with Koa's 16 Oct date on “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf) is Friday (FRI), not Saturday as umbra_billing_autumn.txt prints it.",
+   "assertion": {
+    "op": "v2_weekdays",
+    "year": 2026
+   },
+   "how": "Finds every weekday shown beside a date and checks it against the 2026 calendar."
+  },
+  {
+   "check_id": "LAYOUT-12/release-post-r009/H009",
+   "output_id": "release-post-r009",
+   "rule_id": "R003",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "Any weekday shown with Koa's 16 Oct date on “Night release post - 2026-10-16” (release-post-r009.png) is Friday (FRI), not Saturday as umbra_billing_autumn.txt prints it.",
+   "assertion": {
+    "op": "v2_weekdays",
+    "year": 2026
+   },
+   "how": "Finds every weekday shown beside a date and checks it against the 2026 calendar."
+  },
+  {
+   "check_id": "LAYOUT-12/poster-direction-type-led/H011",
+   "output_id": "poster-direction-type-led",
+   "rule_id": "R004",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "Apart from Koa's 16 Oct, checked separately, every weekday shown beside a date on “After Dark poster direction - Type-led” (poster-direction-type-led.pdf) is correct for 2026; for example, 25 Sep 2026 is a Friday.",
+   "assertion": {
+    "op": "v2_weekdays",
+    "year": 2026
+   },
+   "how": "Finds every weekday shown beside a date and checks it against the 2026 calendar."
+  },
+  {
+   "check_id": "LAYOUT-12/poster-direction-image-led/H009",
+   "output_id": "poster-direction-image-led",
+   "rule_id": "R004",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "Apart from Koa's 16 Oct, checked separately, every weekday shown beside a date on “After Dark poster direction - Image-led” (poster-direction-image-led.pdf) is correct for 2026; for example, 25 Sep 2026 is a Friday.",
+   "assertion": {
+    "op": "v2_weekdays",
+    "year": 2026
+   },
+   "how": "Finds every weekday shown beside a date and checks it against the 2026 calendar."
+  },
+  {
+   "check_id": "LAYOUT-12/poster-direction-graphic-led/H008",
+   "output_id": "poster-direction-graphic-led",
+   "rule_id": "R004",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "Apart from Koa's 16 Oct, checked separately, every weekday shown beside a date on “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf) is correct for 2026; for example, 25 Sep 2026 is a Friday.",
+   "assertion": {
+    "op": "v2_weekdays",
+    "year": 2026
+   },
+   "how": "Finds every weekday shown beside a date and checks it against the 2026 calendar."
+  },
+  {
+   "check_id": "LAYOUT-12/poster-direction-type-led/H015",
+   "output_id": "poster-direction-type-led",
+   "rule_id": "R006",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The licence line on “After Dark poster direction - Type-led” (poster-direction-type-led.pdf) reads exactly, in any letter case: “Umbra Loft, 14 Foundry Court (basement), Providence RI. Licensed under City of Providence Entertainment Licence PVD-2021-0846.”",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "Umbra Loft, 14 Foundry Court (basement), Providence RI. Licensed under City of Providence Entertainment Licence PVD-2021-0846."
+    ],
+    "any_case": true
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "LAYOUT-12/poster-direction-image-led/H014",
+   "output_id": "poster-direction-image-led",
+   "rule_id": "R006",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The licence line on “After Dark poster direction - Image-led” (poster-direction-image-led.pdf) reads exactly, in any letter case: “Umbra Loft, 14 Foundry Court (basement), Providence RI. Licensed under City of Providence Entertainment Licence PVD-2021-0846.”",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "Umbra Loft, 14 Foundry Court (basement), Providence RI. Licensed under City of Providence Entertainment Licence PVD-2021-0846."
+    ],
+    "any_case": true
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "LAYOUT-12/poster-direction-graphic-led/H013",
+   "output_id": "poster-direction-graphic-led",
+   "rule_id": "R006",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The licence line on “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf) reads exactly, in any letter case: “Umbra Loft, 14 Foundry Court (basement), Providence RI. Licensed under City of Providence Entertainment Licence PVD-2021-0846.”",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "Umbra Loft, 14 Foundry Court (basement), Providence RI. Licensed under City of Providence Entertainment Licence PVD-2021-0846."
+    ],
+    "any_case": true
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "LAYOUT-12/poster-direction-type-led/H016",
+   "output_id": "poster-direction-type-led",
+   "rule_id": "R007",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The accessibility line on “After Dark poster direction - Type-led” (poster-direction-type-led.pdf) reads exactly, in any letter case: “Step-free access to the main room is via the mill loading entrance on request; please contact the venue in advance.”",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "Step-free access to the main room is via the mill loading entrance on request; please contact the venue in advance."
+    ],
+    "any_case": true
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "LAYOUT-12/poster-direction-image-led/H015",
+   "output_id": "poster-direction-image-led",
+   "rule_id": "R007",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The accessibility line on “After Dark poster direction - Image-led” (poster-direction-image-led.pdf) reads exactly, in any letter case: “Step-free access to the main room is via the mill loading entrance on request; please contact the venue in advance.”",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "Step-free access to the main room is via the mill loading entrance on request; please contact the venue in advance."
+    ],
+    "any_case": true
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "LAYOUT-12/poster-direction-graphic-led/H014",
+   "output_id": "poster-direction-graphic-led",
+   "rule_id": "R007",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The accessibility line on “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf) reads exactly, in any letter case: “Step-free access to the main room is via the mill loading entrance on request; please contact the venue in advance.”",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "Step-free access to the main room is via the mill loading entrance on request; please contact the venue in advance."
+    ],
+    "any_case": true
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "LAYOUT-12/release-post-r002/H001",
+   "output_id": "release-post-r002",
+   "rule_id": "R009",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The date on “Night release post - 2026-09-25” (release-post-r002.png) is 25 Sep (2026-09-25, umbra_nights_autumn.csv row 2), in any clear form such as “25 SEP”.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     {
+      "regex": "(?<!\\d)25\\s*SEPT?(?:EMBER)?\\b|\\bSEPT?(?:EMBER)?\\.?\\s*25(?!\\d)"
+     }
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "LAYOUT-12/release-post-r003/H001",
+   "output_id": "release-post-r003",
+   "rule_id": "R009",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The date on “Night release post - 2026-09-26” (release-post-r003.png) is 26 Sep (2026-09-26, umbra_nights_autumn.csv row 3), in any clear form such as “26 SEP”.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     {
+      "regex": "(?<!\\d)26\\s*SEPT?(?:EMBER)?\\b|\\bSEPT?(?:EMBER)?\\.?\\s*26(?!\\d)"
+     }
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "LAYOUT-12/release-post-r004/H001",
+   "output_id": "release-post-r004",
+   "rule_id": "R009",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The date on “Night release post - 2026-10-02” (release-post-r004.png) is 2 Oct (2026-10-02, umbra_nights_autumn.csv row 4), in any clear form such as “2 OCT”.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     {
+      "regex": "(?<!\\d)2\\s*OCT(?:OBER)?\\b|\\bOCT(?:OBER)?\\.?\\s*2(?!\\d)"
+     }
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "LAYOUT-12/release-post-r007/H001",
+   "output_id": "release-post-r007",
+   "rule_id": "R009",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The date on “Night release post - 2026-10-09” (release-post-r007.png) is 9 Oct (2026-10-09, umbra_nights_autumn.csv row 7), in any clear form such as “9 OCT”.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     {
+      "regex": "(?<!\\d)9\\s*OCT(?:OBER)?\\b|\\bOCT(?:OBER)?\\.?\\s*9(?!\\d)"
+     }
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "LAYOUT-12/release-post-r008/H001",
+   "output_id": "release-post-r008",
+   "rule_id": "R009",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The date on “Night release post - 2026-10-10” (release-post-r008.png) is 10 Oct (2026-10-10, umbra_nights_autumn.csv row 8), in any clear form such as “10 OCT”.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     {
+      "regex": "(?<!\\d)10\\s*OCT(?:OBER)?\\b|\\bOCT(?:OBER)?\\.?\\s*10(?!\\d)"
+     }
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "LAYOUT-12/release-post-r009/H001",
+   "output_id": "release-post-r009",
+   "rule_id": "R009",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The date on “Night release post - 2026-10-16” (release-post-r009.png) is 16 Oct (2026-10-16, umbra_nights_autumn.csv row 9), in any clear form such as “16 OCT”.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     {
+      "regex": "(?<!\\d)16\\s*OCT(?:OBER)?\\b|\\bOCT(?:OBER)?\\.?\\s*16(?!\\d)"
+     }
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "LAYOUT-12/release-post-r010/H001",
+   "output_id": "release-post-r010",
+   "rule_id": "R009",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The date on “Night release post - 2026-10-17” (release-post-r010.png) is 17 Oct (2026-10-17, umbra_nights_autumn.csv row 10), in any clear form such as “17 OCT”.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     {
+      "regex": "(?<!\\d)17\\s*OCT(?:OBER)?\\b|\\bOCT(?:OBER)?\\.?\\s*17(?!\\d)"
+     }
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "LAYOUT-12/release-post-r002/H003",
+   "output_id": "release-post-r002",
+   "rule_id": "R010",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "Any year shown with the date on “Night release post - 2026-09-25” (release-post-r002.png) is 2026, as in umbra_nights_autumn.csv row 2.",
+   "assertion": {
+    "op": "v2_text_absent",
+    "patterns": {
+     "other year with a date": "\\b\\d{1,2}\\s*(?:JAN(?:UARY)?|FEB(?:RUARY)?|MAR(?:CH)?|APR(?:IL)?|MAY|JUNE?|JULY?|AUG(?:UST)?|SEPT?(?:EMBER)?|OCT(?:OBER)?|NOV(?:EMBER)?|DEC(?:EMBER)?)\\.?,?\\s+(?!2026\\b)(?:19|20)\\d\\d\\b"
+    }
+   },
+   "how": "Reads all text and checks none of the named words or patterns appears."
+  },
+  {
+   "check_id": "LAYOUT-12/release-post-r003/H003",
+   "output_id": "release-post-r003",
+   "rule_id": "R010",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "Any year shown with the date on “Night release post - 2026-09-26” (release-post-r003.png) is 2026, as in umbra_nights_autumn.csv row 3.",
+   "assertion": {
+    "op": "v2_text_absent",
+    "patterns": {
+     "other year with a date": "\\b\\d{1,2}\\s*(?:JAN(?:UARY)?|FEB(?:RUARY)?|MAR(?:CH)?|APR(?:IL)?|MAY|JUNE?|JULY?|AUG(?:UST)?|SEPT?(?:EMBER)?|OCT(?:OBER)?|NOV(?:EMBER)?|DEC(?:EMBER)?)\\.?,?\\s+(?!2026\\b)(?:19|20)\\d\\d\\b"
+    }
+   },
+   "how": "Reads all text and checks none of the named words or patterns appears."
+  },
+  {
+   "check_id": "LAYOUT-12/release-post-r004/H003",
+   "output_id": "release-post-r004",
+   "rule_id": "R010",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "Any year shown with the date on “Night release post - 2026-10-02” (release-post-r004.png) is 2026, as in umbra_nights_autumn.csv row 4.",
+   "assertion": {
+    "op": "v2_text_absent",
+    "patterns": {
+     "other year with a date": "\\b\\d{1,2}\\s*(?:JAN(?:UARY)?|FEB(?:RUARY)?|MAR(?:CH)?|APR(?:IL)?|MAY|JUNE?|JULY?|AUG(?:UST)?|SEPT?(?:EMBER)?|OCT(?:OBER)?|NOV(?:EMBER)?|DEC(?:EMBER)?)\\.?,?\\s+(?!2026\\b)(?:19|20)\\d\\d\\b"
+    }
+   },
+   "how": "Reads all text and checks none of the named words or patterns appears."
+  },
+  {
+   "check_id": "LAYOUT-12/release-post-r005/H003",
+   "output_id": "release-post-r005",
+   "rule_id": "R010",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "Any year shown with the date on “Night release post - 2026-10-03” (release-post-r005.png) is 2026, as in umbra_nights_autumn.csv row 5.",
+   "assertion": {
+    "op": "v2_text_absent",
+    "patterns": {
+     "other year with a date": "\\b\\d{1,2}\\s*(?:JAN(?:UARY)?|FEB(?:RUARY)?|MAR(?:CH)?|APR(?:IL)?|MAY|JUNE?|JULY?|AUG(?:UST)?|SEPT?(?:EMBER)?|OCT(?:OBER)?|NOV(?:EMBER)?|DEC(?:EMBER)?)\\.?,?\\s+(?!2026\\b)(?:19|20)\\d\\d\\b"
+    }
+   },
+   "how": "Reads all text and checks none of the named words or patterns appears."
+  },
+  {
+   "check_id": "LAYOUT-12/release-post-r006/H003",
+   "output_id": "release-post-r006",
+   "rule_id": "R010",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "Any year shown with the date on “Night release post - 2026-10-04” (release-post-r006.png) is 2026, as in umbra_nights_autumn.csv row 6.",
+   "assertion": {
+    "op": "v2_text_absent",
+    "patterns": {
+     "other year with a date": "\\b\\d{1,2}\\s*(?:JAN(?:UARY)?|FEB(?:RUARY)?|MAR(?:CH)?|APR(?:IL)?|MAY|JUNE?|JULY?|AUG(?:UST)?|SEPT?(?:EMBER)?|OCT(?:OBER)?|NOV(?:EMBER)?|DEC(?:EMBER)?)\\.?,?\\s+(?!2026\\b)(?:19|20)\\d\\d\\b"
+    }
+   },
+   "how": "Reads all text and checks none of the named words or patterns appears."
+  },
+  {
+   "check_id": "LAYOUT-12/release-post-r007/H003",
+   "output_id": "release-post-r007",
+   "rule_id": "R010",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "Any year shown with the date on “Night release post - 2026-10-09” (release-post-r007.png) is 2026, as in umbra_nights_autumn.csv row 7.",
+   "assertion": {
+    "op": "v2_text_absent",
+    "patterns": {
+     "other year with a date": "\\b\\d{1,2}\\s*(?:JAN(?:UARY)?|FEB(?:RUARY)?|MAR(?:CH)?|APR(?:IL)?|MAY|JUNE?|JULY?|AUG(?:UST)?|SEPT?(?:EMBER)?|OCT(?:OBER)?|NOV(?:EMBER)?|DEC(?:EMBER)?)\\.?,?\\s+(?!2026\\b)(?:19|20)\\d\\d\\b"
+    }
+   },
+   "how": "Reads all text and checks none of the named words or patterns appears."
+  },
+  {
+   "check_id": "LAYOUT-12/release-post-r008/H003",
+   "output_id": "release-post-r008",
+   "rule_id": "R010",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "Any year shown with the date on “Night release post - 2026-10-10” (release-post-r008.png) is 2026, as in umbra_nights_autumn.csv row 8.",
+   "assertion": {
+    "op": "v2_text_absent",
+    "patterns": {
+     "other year with a date": "\\b\\d{1,2}\\s*(?:JAN(?:UARY)?|FEB(?:RUARY)?|MAR(?:CH)?|APR(?:IL)?|MAY|JUNE?|JULY?|AUG(?:UST)?|SEPT?(?:EMBER)?|OCT(?:OBER)?|NOV(?:EMBER)?|DEC(?:EMBER)?)\\.?,?\\s+(?!2026\\b)(?:19|20)\\d\\d\\b"
+    }
+   },
+   "how": "Reads all text and checks none of the named words or patterns appears."
+  },
+  {
+   "check_id": "LAYOUT-12/release-post-r009/H003",
+   "output_id": "release-post-r009",
+   "rule_id": "R010",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "Any year shown with the date on “Night release post - 2026-10-16” (release-post-r009.png) is 2026, as in umbra_nights_autumn.csv row 9.",
+   "assertion": {
+    "op": "v2_text_absent",
+    "patterns": {
+     "other year with a date": "\\b\\d{1,2}\\s*(?:JAN(?:UARY)?|FEB(?:RUARY)?|MAR(?:CH)?|APR(?:IL)?|MAY|JUNE?|JULY?|AUG(?:UST)?|SEPT?(?:EMBER)?|OCT(?:OBER)?|NOV(?:EMBER)?|DEC(?:EMBER)?)\\.?,?\\s+(?!2026\\b)(?:19|20)\\d\\d\\b"
+    }
+   },
+   "how": "Reads all text and checks none of the named words or patterns appears."
+  },
+  {
+   "check_id": "LAYOUT-12/release-post-r010/H003",
+   "output_id": "release-post-r010",
+   "rule_id": "R010",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "Any year shown with the date on “Night release post - 2026-10-17” (release-post-r010.png) is 2026, as in umbra_nights_autumn.csv row 10.",
+   "assertion": {
+    "op": "v2_text_absent",
+    "patterns": {
+     "other year with a date": "\\b\\d{1,2}\\s*(?:JAN(?:UARY)?|FEB(?:RUARY)?|MAR(?:CH)?|APR(?:IL)?|MAY|JUNE?|JULY?|AUG(?:UST)?|SEPT?(?:EMBER)?|OCT(?:OBER)?|NOV(?:EMBER)?|DEC(?:EMBER)?)\\.?,?\\s+(?!2026\\b)(?:19|20)\\d\\d\\b"
+    }
+   },
+   "how": "Reads all text and checks none of the named words or patterns appears."
+  },
+  {
+   "check_id": "LAYOUT-12/release-post-r002/H005",
+   "output_id": "release-post-r002",
+   "rule_id": "R011",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The support line on “Night release post - 2026-09-25” (release-post-r002.png) reads “with Odette Lang”, spelled as in umbra_nights_autumn.csv row 2, in any letter case.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "with Odette Lang"
+    ],
+    "any_case": true
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "LAYOUT-12/release-post-r003/H005",
+   "output_id": "release-post-r003",
+   "rule_id": "R011",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The support line on “Night release post - 2026-09-26” (release-post-r003.png) reads “with The Tin Ravens”, spelled as in umbra_nights_autumn.csv row 3, in any letter case.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "with The Tin Ravens"
+    ],
+    "any_case": true
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "LAYOUT-12/release-post-r004/H005",
+   "output_id": "release-post-r004",
+   "rule_id": "R011",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The support line on “Night release post - 2026-10-02” (release-post-r004.png) reads “with Junior Vale”, spelled as in umbra_nights_autumn.csv row 4, in any letter case.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "with Junior Vale"
+    ],
+    "any_case": true
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "LAYOUT-12/release-post-r005/H005",
+   "output_id": "release-post-r005",
+   "rule_id": "R011",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The support line on “Night release post - 2026-10-03” (release-post-r005.png) reads “with Coral Sound”, spelled as in umbra_nights_autumn.csv row 5, in any letter case.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "with Coral Sound"
+    ],
+    "any_case": true
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "LAYOUT-12/release-post-r006/H005",
+   "output_id": "release-post-r006",
+   "rule_id": "R011",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The support line on “Night release post - 2026-10-04” (release-post-r006.png) reads “with Coral Sound”, spelled as in umbra_nights_autumn.csv row 6, in any letter case.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "with Coral Sound"
+    ],
+    "any_case": true
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "LAYOUT-12/release-post-r007/H005",
+   "output_id": "release-post-r007",
+   "rule_id": "R011",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The support line on “Night release post - 2026-10-09” (release-post-r007.png) reads “with Marlow Reyes”, spelled as in umbra_nights_autumn.csv row 7, in any letter case.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "with Marlow Reyes"
+    ],
+    "any_case": true
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "LAYOUT-12/release-post-r008/H005",
+   "output_id": "release-post-r008",
+   "rule_id": "R011",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The support line on “Night release post - 2026-10-10” (release-post-r008.png) reads “with Half Light”, spelled as in umbra_nights_autumn.csv row 8, in any letter case.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "with Half Light"
+    ],
+    "any_case": true
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "LAYOUT-12/release-post-r009/H005",
+   "output_id": "release-post-r009",
+   "rule_id": "R011",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The support line on “Night release post - 2026-10-16” (release-post-r009.png) reads “with The Undertow”, spelled as in umbra_nights_autumn.csv row 9, in any letter case.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "with The Undertow"
+    ],
+    "any_case": true
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "LAYOUT-12/release-post-r010/H005",
+   "output_id": "release-post-r010",
+   "rule_id": "R011",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The support line on “Night release post - 2026-10-17” (release-post-r010.png) reads “with Ferro”, spelled as in umbra_nights_autumn.csv row 10, in any letter case.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "with Ferro"
+    ],
+    "any_case": true
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "LAYOUT-12/release-post-r002/H006",
+   "output_id": "release-post-r002",
+   "rule_id": "R012",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The door time on “Night release post - 2026-09-25” (release-post-r002.png) is 8:00 PM (umbra_nights_autumn.csv row 2), in any clear form such as “DOORS 8” or “DOORS 8:00 PM”.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     {
+      "regex": "\\bDOORS?\\b\\W{0,3}(?:OPEN\\W+)?(?:AT\\W+)?8(?:[:.]00)?(?:\\s?PM)?\\b"
+     }
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "LAYOUT-12/release-post-r003/H006",
+   "output_id": "release-post-r003",
+   "rule_id": "R012",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The door time on “Night release post - 2026-09-26” (release-post-r003.png) is 8:30 PM (umbra_nights_autumn.csv row 3), in any clear form such as “DOORS 8:30” or “DOORS 8:30 PM”.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     {
+      "regex": "\\bDOORS?\\b\\W{0,3}(?:OPEN\\W+)?(?:AT\\W+)?8[:.]30(?:\\s?PM)?\\b"
+     }
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "LAYOUT-12/release-post-r004/H006",
+   "output_id": "release-post-r004",
+   "rule_id": "R012",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The door time on “Night release post - 2026-10-02” (release-post-r004.png) is 8:00 PM (umbra_nights_autumn.csv row 4), in any clear form such as “DOORS 8” or “DOORS 8:00 PM”.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     {
+      "regex": "\\bDOORS?\\b\\W{0,3}(?:OPEN\\W+)?(?:AT\\W+)?8(?:[:.]00)?(?:\\s?PM)?\\b"
+     }
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "LAYOUT-12/release-post-r005/H006",
+   "output_id": "release-post-r005",
+   "rule_id": "R012",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The door time on “Night release post - 2026-10-03” (release-post-r005.png) is 8:00 PM (umbra_nights_autumn.csv row 5), in any clear form such as “DOORS 8” or “DOORS 8:00 PM”.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     {
+      "regex": "\\bDOORS?\\b\\W{0,3}(?:OPEN\\W+)?(?:AT\\W+)?8(?:[:.]00)?(?:\\s?PM)?\\b"
+     }
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "LAYOUT-12/release-post-r006/H006",
+   "output_id": "release-post-r006",
+   "rule_id": "R012",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The door time on “Night release post - 2026-10-04” (release-post-r006.png) is 8:00 PM (umbra_nights_autumn.csv row 6), in any clear form such as “DOORS 8” or “DOORS 8:00 PM”.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     {
+      "regex": "\\bDOORS?\\b\\W{0,3}(?:OPEN\\W+)?(?:AT\\W+)?8(?:[:.]00)?(?:\\s?PM)?\\b"
+     }
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "LAYOUT-12/release-post-r008/H006",
+   "output_id": "release-post-r008",
+   "rule_id": "R012",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The door time on “Night release post - 2026-10-10” (release-post-r008.png) is 8:30 PM (umbra_nights_autumn.csv row 8), in any clear form such as “DOORS 8:30” or “DOORS 8:30 PM”.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     {
+      "regex": "\\bDOORS?\\b\\W{0,3}(?:OPEN\\W+)?(?:AT\\W+)?8[:.]30(?:\\s?PM)?\\b"
+     }
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "LAYOUT-12/release-post-r009/H006",
+   "output_id": "release-post-r009",
+   "rule_id": "R012",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The door time on “Night release post - 2026-10-16” (release-post-r009.png) is 8:00 PM (umbra_nights_autumn.csv row 9), in any clear form such as “DOORS 8” or “DOORS 8:00 PM”.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     {
+      "regex": "\\bDOORS?\\b\\W{0,3}(?:OPEN\\W+)?(?:AT\\W+)?8(?:[:.]00)?(?:\\s?PM)?\\b"
+     }
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "LAYOUT-12/release-post-r010/H006",
+   "output_id": "release-post-r010",
+   "rule_id": "R012",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The door time on “Night release post - 2026-10-17” (release-post-r010.png) is 8:30 PM (umbra_nights_autumn.csv row 10), in any clear form such as “DOORS 8:30” or “DOORS 8:30 PM”.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     {
+      "regex": "\\bDOORS?\\b\\W{0,3}(?:OPEN\\W+)?(?:AT\\W+)?8[:.]30(?:\\s?PM)?\\b"
+     }
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "LAYOUT-12/release-post-r002/H007",
+   "output_id": "release-post-r002",
+   "rule_id": "R013",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The set time on “Night release post - 2026-09-25” (release-post-r002.png) is 9:00 PM (umbra_nights_autumn.csv row 2), in any clear form such as “SETS 9:00 PM”.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     {
+      "regex": "\\bSETS?\\b\\W{0,3}(?:OPEN\\W+)?(?:AT\\W+)?9(?:[:.]00)?(?:\\s?PM)?\\b"
+     }
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "LAYOUT-12/release-post-r003/H007",
+   "output_id": "release-post-r003",
+   "rule_id": "R013",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The set time on “Night release post - 2026-09-26” (release-post-r003.png) is 9:15 PM (umbra_nights_autumn.csv row 3), in any clear form such as “SETS 9:15 PM”.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     {
+      "regex": "\\bSETS?\\b\\W{0,3}(?:OPEN\\W+)?(?:AT\\W+)?9[:.]15(?:\\s?PM)?\\b"
+     }
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "LAYOUT-12/release-post-r004/H007",
+   "output_id": "release-post-r004",
+   "rule_id": "R013",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The set time on “Night release post - 2026-10-02” (release-post-r004.png) is 9:00 PM (umbra_nights_autumn.csv row 4), in any clear form such as “SETS 9:00 PM”.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     {
+      "regex": "\\bSETS?\\b\\W{0,3}(?:OPEN\\W+)?(?:AT\\W+)?9(?:[:.]00)?(?:\\s?PM)?\\b"
+     }
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "LAYOUT-12/release-post-r005/H007",
+   "output_id": "release-post-r005",
+   "rule_id": "R013",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The set time on “Night release post - 2026-10-03” (release-post-r005.png) is 9:00 PM (umbra_nights_autumn.csv row 5), in any clear form such as “SETS 9:00 PM”.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     {
+      "regex": "\\bSETS?\\b\\W{0,3}(?:OPEN\\W+)?(?:AT\\W+)?9(?:[:.]00)?(?:\\s?PM)?\\b"
+     }
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "LAYOUT-12/release-post-r006/H007",
+   "output_id": "release-post-r006",
+   "rule_id": "R013",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The set time on “Night release post - 2026-10-04” (release-post-r006.png) is 9:00 PM (umbra_nights_autumn.csv row 6), in any clear form such as “SETS 9:00 PM”.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     {
+      "regex": "\\bSETS?\\b\\W{0,3}(?:OPEN\\W+)?(?:AT\\W+)?9(?:[:.]00)?(?:\\s?PM)?\\b"
+     }
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "LAYOUT-12/release-post-r007/H007",
+   "output_id": "release-post-r007",
+   "rule_id": "R013",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The set time on “Night release post - 2026-10-09” (release-post-r007.png) is 9:00 PM (umbra_nights_autumn.csv row 7), in any clear form such as “SETS 9:00 PM”.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     {
+      "regex": "\\bSETS?\\b\\W{0,3}(?:OPEN\\W+)?(?:AT\\W+)?9(?:[:.]00)?(?:\\s?PM)?\\b"
+     }
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "LAYOUT-12/release-post-r008/H007",
+   "output_id": "release-post-r008",
+   "rule_id": "R013",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The set time on “Night release post - 2026-10-10” (release-post-r008.png) is 9:30 PM (umbra_nights_autumn.csv row 8), in any clear form such as “SETS 9:30 PM”.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     {
+      "regex": "\\bSETS?\\b\\W{0,3}(?:OPEN\\W+)?(?:AT\\W+)?9[:.]30(?:\\s?PM)?\\b"
+     }
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "LAYOUT-12/release-post-r009/H007",
+   "output_id": "release-post-r009",
+   "rule_id": "R013",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The set time on “Night release post - 2026-10-16” (release-post-r009.png) is 9:00 PM (umbra_nights_autumn.csv row 9), in any clear form such as “SETS 9:00 PM”.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     {
+      "regex": "\\bSETS?\\b\\W{0,3}(?:OPEN\\W+)?(?:AT\\W+)?9(?:[:.]00)?(?:\\s?PM)?\\b"
+     }
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "LAYOUT-12/release-post-r010/H007",
+   "output_id": "release-post-r010",
+   "rule_id": "R013",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The set time on “Night release post - 2026-10-17” (release-post-r010.png) is 9:15 PM (umbra_nights_autumn.csv row 10), in any clear form such as “SETS 9:15 PM”.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     {
+      "regex": "\\bSETS?\\b\\W{0,3}(?:OPEN\\W+)?(?:AT\\W+)?9[:.]15(?:\\s?PM)?\\b"
+     }
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "LAYOUT-12/release-post-r002/H008",
+   "output_id": "release-post-r002",
+   "rule_id": "R014",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The advance price on “Night release post - 2026-09-25” (release-post-r002.png) reads “$28”, as in umbra_nights_autumn.csv row 2.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "$28"
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "LAYOUT-12/release-post-r003/H008",
+   "output_id": "release-post-r003",
+   "rule_id": "R014",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The advance price on “Night release post - 2026-09-26” (release-post-r003.png) reads “$32”, as in umbra_nights_autumn.csv row 3.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "$32"
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "LAYOUT-12/release-post-r004/H008",
+   "output_id": "release-post-r004",
+   "rule_id": "R014",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The advance price on “Night release post - 2026-10-02” (release-post-r004.png) reads “$26”, as in umbra_nights_autumn.csv row 4.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "$26"
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "LAYOUT-12/release-post-r005/H008",
+   "output_id": "release-post-r005",
+   "rule_id": "R014",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The advance price on “Night release post - 2026-10-03” (release-post-r005.png) reads “$24”, as in umbra_nights_autumn.csv row 5.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "$24"
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "LAYOUT-12/release-post-r006/H008",
+   "output_id": "release-post-r006",
+   "rule_id": "R014",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The advance price on “Night release post - 2026-10-04” (release-post-r006.png) reads “$24”, as in umbra_nights_autumn.csv row 6.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "$24"
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "LAYOUT-12/release-post-r007/H008",
+   "output_id": "release-post-r007",
+   "rule_id": "R014",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The advance price on “Night release post - 2026-10-09” (release-post-r007.png) reads “$22”, as in umbra_nights_autumn.csv row 7.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "$22"
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "LAYOUT-12/release-post-r008/H008",
+   "output_id": "release-post-r008",
+   "rule_id": "R014",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The advance price on “Night release post - 2026-10-10” (release-post-r008.png) reads “$28”, as in umbra_nights_autumn.csv row 8.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "$28"
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "LAYOUT-12/release-post-r009/H008",
+   "output_id": "release-post-r009",
+   "rule_id": "R014",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The advance price on “Night release post - 2026-10-16” (release-post-r009.png) reads “$24”, as in umbra_nights_autumn.csv row 9.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "$24"
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "LAYOUT-12/release-post-r010/H008",
+   "output_id": "release-post-r010",
+   "rule_id": "R014",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The advance price on “Night release post - 2026-10-17” (release-post-r010.png) reads “$26”, as in umbra_nights_autumn.csv row 10.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "$26"
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "LAYOUT-12/promoter-deck/H008",
+   "output_id": "promoter-deck",
+   "rule_id": "R021",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "Every act name in “Promoter pitch deck” (promoter-deck.pdf), support acts excepted, is spelled as credited in umbra_billing_autumn.txt.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "Sable Quartet",
+     "Meridian Brass",
+     "Night Ferry",
+     "The Blue Hour",
+     "Vespertine",
+     "The Eastons",
+     "Koa",
+     "Laurel and the Dive"
+    ],
+    "any_case": true
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "LAYOUT-12/promoter-deck/H009",
+   "output_id": "promoter-deck",
+   "rule_id": "R022",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "Any weekday shown with Koa's 16 Oct date in “Promoter pitch deck” (promoter-deck.pdf) is Friday (FRI), not Saturday as umbra_billing_autumn.txt prints it.",
+   "assertion": {
+    "op": "v2_weekdays",
+    "year": 2026
+   },
+   "how": "Finds every weekday shown beside a date and checks it against the 2026 calendar."
+  },
+  {
+   "check_id": "LAYOUT-12/promoter-deck/H010",
+   "output_id": "promoter-deck",
+   "rule_id": "R023",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "Apart from Koa's 16 Oct, checked separately, every weekday shown beside a date in “Promoter pitch deck” (promoter-deck.pdf) is correct for 2026; for example, 25 Sep 2026 is a Friday.",
+   "assertion": {
+    "op": "v2_weekdays",
+    "year": 2026
+   },
+   "how": "Finds every weekday shown beside a date and checks it against the 2026 calendar."
+  },
+  {
+   "check_id": "LAYOUT-12/release-post-r002/H048",
+   "output_id": "release-post-r002",
+   "rule_id": "R031",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The act name on “Night release post - 2026-09-25” (release-post-r002.png) is spelled “SABLE QUARTET”, as credited in umbra_billing_autumn.txt, in any letter case.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "SABLE QUARTET"
+    ],
+    "any_case": true
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "LAYOUT-12/release-post-r003/H043",
+   "output_id": "release-post-r003",
+   "rule_id": "R031",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The act name on “Night release post - 2026-09-26” (release-post-r003.png) is spelled “MERIDIAN BRASS”, as credited in umbra_billing_autumn.txt, in any letter case.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "MERIDIAN BRASS"
+    ],
+    "any_case": true
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "LAYOUT-12/release-post-r005/H045",
+   "output_id": "release-post-r005",
+   "rule_id": "R031",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The act name on “Night release post - 2026-10-03” (release-post-r005.png) is spelled “THE BLUE HOUR”, as credited in umbra_billing_autumn.txt, in any letter case.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "THE BLUE HOUR"
+    ],
+    "any_case": true
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "LAYOUT-12/release-post-r006/H045",
+   "output_id": "release-post-r006",
+   "rule_id": "R031",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The act name on “Night release post - 2026-10-04” (release-post-r006.png) is spelled “THE BLUE HOUR”, as credited in umbra_billing_autumn.txt, in any letter case.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "THE BLUE HOUR"
+    ],
+    "any_case": true
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "LAYOUT-12/release-post-r007/H045",
+   "output_id": "release-post-r007",
+   "rule_id": "R031",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The act name on “Night release post - 2026-10-09” (release-post-r007.png) is spelled “VESPERTINE”, as credited in umbra_billing_autumn.txt, in any letter case.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "VESPERTINE"
+    ],
+    "any_case": true
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "LAYOUT-12/release-post-r008/H040",
+   "output_id": "release-post-r008",
+   "rule_id": "R031",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The act name on “Night release post - 2026-10-10” (release-post-r008.png) is spelled “THE EASTONS”, as credited in umbra_billing_autumn.txt, in any letter case.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "THE EASTONS"
+    ],
+    "any_case": true
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "LAYOUT-12/release-post-r009/H040",
+   "output_id": "release-post-r009",
+   "rule_id": "R031",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The act name on “Night release post - 2026-10-16” (release-post-r009.png) is spelled “KOA”, as credited in umbra_billing_autumn.txt, in any letter case.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "KOA"
+    ],
+    "any_case": true
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "LAYOUT-12/release-post-r010/H045",
+   "output_id": "release-post-r010",
+   "rule_id": "R031",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The act name on “Night release post - 2026-10-17” (release-post-r010.png) is spelled “LAUREL AND THE DIVE”, as credited in umbra_billing_autumn.txt, in any letter case.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "LAUREL AND THE DIVE"
+    ],
+    "any_case": true
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "LAYOUT-12/release-post-r007/H046",
+   "output_id": "release-post-r007",
+   "rule_id": "R034",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The door time on “Night release post - 2026-10-09” (release-post-r007.png) is 8:00 PM (umbra_nights_autumn.csv row 7), in any clear form such as “DOORS 8”.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     {
+      "regex": "\\bDOORS?\\b\\W{0,3}(?:OPEN\\W+)?(?:AT\\W+)?8(?:[:.]00)?(?:\\s?PM)?\\b"
+     }
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "LAYOUT-12/poster-direction-type-led/H004",
+   "output_id": "poster-direction-type-led",
+   "rule_id": "R056",
+   "k_id": "K1_Q5",
+   "critical": true,
+   "check": "Every act name on “After Dark poster direction - Type-led” (poster-direction-type-led.pdf), support acts excepted, is spelled exactly as credited in umbra_billing_autumn.txt.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "Sable Quartet",
+     "Meridian Brass",
+     "Night Ferry",
+     "The Blue Hour",
+     "Vespertine",
+     "The Eastons",
+     "Koa",
+     "Laurel and the Dive"
+    ],
+    "any_case": true
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "LAYOUT-12/poster-direction-image-led/H004",
+   "output_id": "poster-direction-image-led",
+   "rule_id": "R056",
+   "k_id": "K1_Q5",
+   "critical": true,
+   "check": "Every act name on “After Dark poster direction - Image-led” (poster-direction-image-led.pdf), support acts excepted, is spelled exactly as credited in umbra_billing_autumn.txt.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "Sable Quartet",
+     "Meridian Brass",
+     "Night Ferry",
+     "The Blue Hour",
+     "Vespertine",
+     "The Eastons",
+     "Koa",
+     "Laurel and the Dive"
+    ],
+    "any_case": true
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "LAYOUT-12/poster-direction-graphic-led/H003",
+   "output_id": "poster-direction-graphic-led",
+   "rule_id": "R056",
+   "k_id": "K1_Q5",
+   "critical": true,
+   "check": "Every act name on “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf), support acts excepted, is spelled exactly as credited in umbra_billing_autumn.txt.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "Sable Quartet",
+     "Meridian Brass",
+     "Night Ferry",
+     "The Blue Hour",
+     "Vespertine",
+     "The Eastons",
+     "Koa",
+     "Laurel and the Dive"
+    ],
+    "any_case": true
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "LAYOUT-12/release-post-r007/H006",
+   "output_id": "release-post-r007",
+   "rule_id": "R060",
+   "k_id": "K1_Q5",
+   "critical": true,
+   "check": "The text “&nbsp;” does not appear anywhere on “Night release post - 2026-10-09” (release-post-r007.png).",
+   "assertion": {
+    "op": "v2_text_absent",
+    "texts": [
+     "&nbsp;"
+    ]
+   },
+   "how": "Reads all text and checks none of the named words or patterns appears."
+  },
+  {
+   "check_id": "LAYOUT-12/poster-direction-type-led/H060",
+   "output_id": "poster-direction-type-led",
+   "rule_id": "R067",
+   "k_id": "K2_Q1",
+   "critical": false,
+   "check": "No merchandise photo (umbra_wordmark_sable.jpg, umbra_wordmark_meridian.jpg or umbra_wordmark_nightferry.jpg) is placed as an image on “After Dark poster direction - Type-led” (poster-direction-type-led.pdf).",
+   "assertion": {
+    "op": "v2_lacks_asset",
+    "assets": [
+     "umbra_wordmark_sable.jpg",
+     "umbra_wordmark_meridian.jpg",
+     "umbra_wordmark_nightferry.jpg"
+    ]
+   },
+   "how": "Searches the deliverable for the named supplied files."
+  },
+  {
+   "check_id": "LAYOUT-12/poster-direction-image-led/H059",
+   "output_id": "poster-direction-image-led",
+   "rule_id": "R067",
+   "k_id": "K2_Q1",
+   "critical": false,
+   "check": "No merchandise photo (umbra_wordmark_sable.jpg, umbra_wordmark_meridian.jpg or umbra_wordmark_nightferry.jpg) is placed as an image on “After Dark poster direction - Image-led” (poster-direction-image-led.pdf).",
+   "assertion": {
+    "op": "v2_lacks_asset",
+    "assets": [
+     "umbra_wordmark_sable.jpg",
+     "umbra_wordmark_meridian.jpg",
+     "umbra_wordmark_nightferry.jpg"
+    ]
+   },
+   "how": "Searches the deliverable for the named supplied files."
+  },
+  {
+   "check_id": "LAYOUT-12/poster-direction-graphic-led/H059",
+   "output_id": "poster-direction-graphic-led",
+   "rule_id": "R067",
+   "k_id": "K2_Q1",
+   "critical": false,
+   "check": "No merchandise photo (umbra_wordmark_sable.jpg, umbra_wordmark_meridian.jpg or umbra_wordmark_nightferry.jpg) is placed as an image on “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf).",
+   "assertion": {
+    "op": "v2_lacks_asset",
+    "assets": [
+     "umbra_wordmark_sable.jpg",
+     "umbra_wordmark_meridian.jpg",
+     "umbra_wordmark_nightferry.jpg"
+    ]
+   },
+   "how": "Searches the deliverable for the named supplied files."
+  },
+  {
+   "check_id": "LAYOUT-12/release-post-r002/H046",
+   "output_id": "release-post-r002",
+   "rule_id": "R067",
+   "k_id": "K2_Q1",
+   "critical": false,
+   "check": "No merchandise photo (umbra_wordmark_sable.jpg, umbra_wordmark_meridian.jpg or umbra_wordmark_nightferry.jpg) is placed as an image on “Night release post - 2026-09-25” (release-post-r002.png).",
+   "assertion": {
+    "op": "v2_lacks_asset",
+    "assets": [
+     "umbra_wordmark_sable.jpg",
+     "umbra_wordmark_meridian.jpg",
+     "umbra_wordmark_nightferry.jpg"
+    ]
+   },
+   "how": "Searches the deliverable for the named supplied files."
+  },
+  {
+   "check_id": "LAYOUT-12/release-post-r003/H041",
+   "output_id": "release-post-r003",
+   "rule_id": "R067",
+   "k_id": "K2_Q1",
+   "critical": false,
+   "check": "No merchandise photo (umbra_wordmark_sable.jpg, umbra_wordmark_meridian.jpg or umbra_wordmark_nightferry.jpg) is placed as an image on “Night release post - 2026-09-26” (release-post-r003.png).",
+   "assertion": {
+    "op": "v2_lacks_asset",
+    "assets": [
+     "umbra_wordmark_sable.jpg",
+     "umbra_wordmark_meridian.jpg",
+     "umbra_wordmark_nightferry.jpg"
+    ]
+   },
+   "how": "Searches the deliverable for the named supplied files."
+  },
+  {
+   "check_id": "LAYOUT-12/release-post-r004/H044",
+   "output_id": "release-post-r004",
+   "rule_id": "R067",
+   "k_id": "K2_Q1",
+   "critical": false,
+   "check": "No merchandise photo (umbra_wordmark_sable.jpg, umbra_wordmark_meridian.jpg or umbra_wordmark_nightferry.jpg) is placed as an image on “Night release post - 2026-10-02” (release-post-r004.png).",
+   "assertion": {
+    "op": "v2_lacks_asset",
+    "assets": [
+     "umbra_wordmark_sable.jpg",
+     "umbra_wordmark_meridian.jpg",
+     "umbra_wordmark_nightferry.jpg"
+    ]
+   },
+   "how": "Searches the deliverable for the named supplied files."
+  },
+  {
+   "check_id": "LAYOUT-12/release-post-r005/H043",
+   "output_id": "release-post-r005",
+   "rule_id": "R067",
+   "k_id": "K2_Q1",
+   "critical": false,
+   "check": "No merchandise photo (umbra_wordmark_sable.jpg, umbra_wordmark_meridian.jpg or umbra_wordmark_nightferry.jpg) is placed as an image on “Night release post - 2026-10-03” (release-post-r005.png).",
+   "assertion": {
+    "op": "v2_lacks_asset",
+    "assets": [
+     "umbra_wordmark_sable.jpg",
+     "umbra_wordmark_meridian.jpg",
+     "umbra_wordmark_nightferry.jpg"
+    ]
+   },
+   "how": "Searches the deliverable for the named supplied files."
+  },
+  {
+   "check_id": "LAYOUT-12/release-post-r006/H043",
+   "output_id": "release-post-r006",
+   "rule_id": "R067",
+   "k_id": "K2_Q1",
+   "critical": false,
+   "check": "No merchandise photo (umbra_wordmark_sable.jpg, umbra_wordmark_meridian.jpg or umbra_wordmark_nightferry.jpg) is placed as an image on “Night release post - 2026-10-04” (release-post-r006.png).",
+   "assertion": {
+    "op": "v2_lacks_asset",
+    "assets": [
+     "umbra_wordmark_sable.jpg",
+     "umbra_wordmark_meridian.jpg",
+     "umbra_wordmark_nightferry.jpg"
+    ]
+   },
+   "how": "Searches the deliverable for the named supplied files."
+  },
+  {
+   "check_id": "LAYOUT-12/release-post-r007/H043",
+   "output_id": "release-post-r007",
+   "rule_id": "R067",
+   "k_id": "K2_Q1",
+   "critical": false,
+   "check": "No merchandise photo (umbra_wordmark_sable.jpg, umbra_wordmark_meridian.jpg or umbra_wordmark_nightferry.jpg) is placed as an image on “Night release post - 2026-10-09” (release-post-r007.png).",
+   "assertion": {
+    "op": "v2_lacks_asset",
+    "assets": [
+     "umbra_wordmark_sable.jpg",
+     "umbra_wordmark_meridian.jpg",
+     "umbra_wordmark_nightferry.jpg"
+    ]
+   },
+   "how": "Searches the deliverable for the named supplied files."
+  },
+  {
+   "check_id": "LAYOUT-12/release-post-r008/H038",
+   "output_id": "release-post-r008",
+   "rule_id": "R067",
+   "k_id": "K2_Q1",
+   "critical": false,
+   "check": "No merchandise photo (umbra_wordmark_sable.jpg, umbra_wordmark_meridian.jpg or umbra_wordmark_nightferry.jpg) is placed as an image on “Night release post - 2026-10-10” (release-post-r008.png).",
+   "assertion": {
+    "op": "v2_lacks_asset",
+    "assets": [
+     "umbra_wordmark_sable.jpg",
+     "umbra_wordmark_meridian.jpg",
+     "umbra_wordmark_nightferry.jpg"
+    ]
+   },
+   "how": "Searches the deliverable for the named supplied files."
+  },
+  {
+   "check_id": "LAYOUT-12/release-post-r009/H038",
+   "output_id": "release-post-r009",
+   "rule_id": "R067",
+   "k_id": "K2_Q1",
+   "critical": false,
+   "check": "No merchandise photo (umbra_wordmark_sable.jpg, umbra_wordmark_meridian.jpg or umbra_wordmark_nightferry.jpg) is placed as an image on “Night release post - 2026-10-16” (release-post-r009.png).",
+   "assertion": {
+    "op": "v2_lacks_asset",
+    "assets": [
+     "umbra_wordmark_sable.jpg",
+     "umbra_wordmark_meridian.jpg",
+     "umbra_wordmark_nightferry.jpg"
+    ]
+   },
+   "how": "Searches the deliverable for the named supplied files."
+  },
+  {
+   "check_id": "LAYOUT-12/release-post-r010/H043",
+   "output_id": "release-post-r010",
+   "rule_id": "R067",
+   "k_id": "K2_Q1",
+   "critical": false,
+   "check": "No merchandise photo (umbra_wordmark_sable.jpg, umbra_wordmark_meridian.jpg or umbra_wordmark_nightferry.jpg) is placed as an image on “Night release post - 2026-10-17” (release-post-r010.png).",
+   "assertion": {
+    "op": "v2_lacks_asset",
+    "assets": [
+     "umbra_wordmark_sable.jpg",
+     "umbra_wordmark_meridian.jpg",
+     "umbra_wordmark_nightferry.jpg"
+    ]
+   },
+   "how": "Searches the deliverable for the named supplied files."
+  },
+  {
+   "check_id": "LAYOUT-12/promoter-deck/H045",
+   "output_id": "promoter-deck",
+   "rule_id": "R068",
+   "k_id": "K2_Q1",
+   "critical": false,
+   "check": "No merchandise photo (umbra_wordmark_sable.jpg, umbra_wordmark_meridian.jpg or umbra_wordmark_nightferry.jpg) is placed as an image in “Promoter pitch deck” (promoter-deck.pdf).",
+   "assertion": {
+    "op": "v2_lacks_asset",
+    "assets": [
+     "umbra_wordmark_sable.jpg",
+     "umbra_wordmark_meridian.jpg",
+     "umbra_wordmark_nightferry.jpg"
+    ]
+   },
+   "how": "Searches the deliverable for the named supplied files."
+  },
+  {
+   "check_id": "LAYOUT-12/poster-direction-type-led/H039",
+   "output_id": "poster-direction-type-led",
+   "rule_id": "R078",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Apart from photographs, every type, ground, panel, rule and wordmark colour on “After Dark poster direction - Type-led” (poster-direction-type-led.pdf) is one of #0E0E10, #2A2A2E, #E4863B, #3F7C8C, #E9E4D8 or #8E2B24.",
+   "assertion": {
+    "op": "v2_palette_only",
+    "hexes": [
+     "#0E0E10",
+     "#2A2A2E",
+     "#E4863B",
+     "#3F7C8C",
+     "#E9E4D8",
+     "#8E2B24"
+    ]
+   },
+   "how": "Reads every type, shape and line colour from the file (photos excluded)."
+  },
+  {
+   "check_id": "LAYOUT-12/poster-direction-image-led/H038",
+   "output_id": "poster-direction-image-led",
+   "rule_id": "R078",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Apart from photographs, every type, ground, panel, rule and wordmark colour on “After Dark poster direction - Image-led” (poster-direction-image-led.pdf) is one of #0E0E10, #2A2A2E, #E4863B, #3F7C8C, #E9E4D8 or #8E2B24.",
+   "assertion": {
+    "op": "v2_palette_only",
+    "hexes": [
+     "#0E0E10",
+     "#2A2A2E",
+     "#E4863B",
+     "#3F7C8C",
+     "#E9E4D8",
+     "#8E2B24"
+    ]
+   },
+   "how": "Reads every type, shape and line colour from the file (photos excluded)."
+  },
+  {
+   "check_id": "LAYOUT-12/poster-direction-graphic-led/H038",
+   "output_id": "poster-direction-graphic-led",
+   "rule_id": "R078",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Apart from photographs, every type, ground, panel, rule and wordmark colour on “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf) is one of #0E0E10, #2A2A2E, #E4863B, #3F7C8C, #E9E4D8 or #8E2B24.",
+   "assertion": {
+    "op": "v2_palette_only",
+    "hexes": [
+     "#0E0E10",
+     "#2A2A2E",
+     "#E4863B",
+     "#3F7C8C",
+     "#E9E4D8",
+     "#8E2B24"
+    ]
+   },
+   "how": "Reads every type, shape and line colour from the file (photos excluded)."
+  },
+  {
+   "check_id": "LAYOUT-12/promoter-deck/H031",
+   "output_id": "promoter-deck",
+   "rule_id": "R087",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Apart from photographs and poster images, every type, ground, panel, rule, chart and wordmark colour in “Promoter pitch deck” (promoter-deck.pdf) is one of #0E0E10, #2A2A2E, #E4863B, #3F7C8C, #E9E4D8 or #8E2B24.",
+   "assertion": {
+    "op": "v2_palette_only",
+    "hexes": [
+     "#0E0E10",
+     "#2A2A2E",
+     "#E4863B",
+     "#3F7C8C",
+     "#E9E4D8",
+     "#8E2B24"
+    ]
+   },
+   "how": "Reads every type, shape and line colour from the file (photos excluded)."
+  },
+  {
+   "check_id": "LAYOUT-12/poster-direction-type-led/H044",
+   "output_id": "poster-direction-type-led",
+   "rule_id": "R091",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Every date line on “After Dark poster direction - Type-led” (poster-direction-type-led.pdf) is Sodium #E4863B.",
+   "assertion": {
+    "op": "v2_pdf_text_style",
+    "patterns": [
+     "(?<!\\d)25\\s*SEPT?(?:EMBER)?\\b|\\bSEPT?(?:EMBER)?\\.?\\s*25(?!\\d)",
+     "(?<!\\d)4\\s*OCT(?:OBER)?\\b|\\bOCT(?:OBER)?\\.?\\s*4(?!\\d)",
+     "(?<!\\d)26\\s*SEPT?(?:EMBER)?\\b|\\bSEPT?(?:EMBER)?\\.?\\s*26(?!\\d)",
+     "(?<!\\d)2\\s*OCT(?:OBER)?\\b|\\bOCT(?:OBER)?\\.?\\s*2(?!\\d)",
+     "(?<!\\d)9\\s*OCT(?:OBER)?\\b|\\bOCT(?:OBER)?\\.?\\s*9(?!\\d)",
+     "(?<!\\d)10\\s*OCT(?:OBER)?\\b|\\bOCT(?:OBER)?\\.?\\s*10(?!\\d)",
+     "(?<!\\d)16\\s*OCT(?:OBER)?\\b|\\bOCT(?:OBER)?\\.?\\s*16(?!\\d)",
+     "(?<!\\d)17\\s*OCT(?:OBER)?\\b|\\bOCT(?:OBER)?\\.?\\s*17(?!\\d)"
+    ],
+    "optional": false,
+    "colors": [
+     "#E4863B"
+    ]
+   },
+   "how": "Reads the font, size, letter case or colour of the named text from the PDF."
+  },
+  {
+   "check_id": "LAYOUT-12/poster-direction-image-led/H043",
+   "output_id": "poster-direction-image-led",
+   "rule_id": "R091",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Every date line on “After Dark poster direction - Image-led” (poster-direction-image-led.pdf) is Sodium #E4863B.",
+   "assertion": {
+    "op": "v2_pdf_text_style",
+    "patterns": [
+     "(?<!\\d)25\\s*SEPT?(?:EMBER)?\\b|\\bSEPT?(?:EMBER)?\\.?\\s*25(?!\\d)",
+     "(?<!\\d)4\\s*OCT(?:OBER)?\\b|\\bOCT(?:OBER)?\\.?\\s*4(?!\\d)",
+     "(?<!\\d)26\\s*SEPT?(?:EMBER)?\\b|\\bSEPT?(?:EMBER)?\\.?\\s*26(?!\\d)",
+     "(?<!\\d)2\\s*OCT(?:OBER)?\\b|\\bOCT(?:OBER)?\\.?\\s*2(?!\\d)",
+     "(?<!\\d)9\\s*OCT(?:OBER)?\\b|\\bOCT(?:OBER)?\\.?\\s*9(?!\\d)",
+     "(?<!\\d)10\\s*OCT(?:OBER)?\\b|\\bOCT(?:OBER)?\\.?\\s*10(?!\\d)",
+     "(?<!\\d)16\\s*OCT(?:OBER)?\\b|\\bOCT(?:OBER)?\\.?\\s*16(?!\\d)",
+     "(?<!\\d)17\\s*OCT(?:OBER)?\\b|\\bOCT(?:OBER)?\\.?\\s*17(?!\\d)"
+    ],
+    "optional": false,
+    "colors": [
+     "#E4863B"
+    ]
+   },
+   "how": "Reads the font, size, letter case or colour of the named text from the PDF."
+  },
+  {
+   "check_id": "LAYOUT-12/poster-direction-graphic-led/H043",
+   "output_id": "poster-direction-graphic-led",
+   "rule_id": "R091",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Every date line on “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf) is Sodium #E4863B.",
+   "assertion": {
+    "op": "v2_pdf_text_style",
+    "patterns": [
+     "(?<!\\d)25\\s*SEPT?(?:EMBER)?\\b|\\bSEPT?(?:EMBER)?\\.?\\s*25(?!\\d)",
+     "(?<!\\d)4\\s*OCT(?:OBER)?\\b|\\bOCT(?:OBER)?\\.?\\s*4(?!\\d)",
+     "(?<!\\d)26\\s*SEPT?(?:EMBER)?\\b|\\bSEPT?(?:EMBER)?\\.?\\s*26(?!\\d)",
+     "(?<!\\d)2\\s*OCT(?:OBER)?\\b|\\bOCT(?:OBER)?\\.?\\s*2(?!\\d)",
+     "(?<!\\d)9\\s*OCT(?:OBER)?\\b|\\bOCT(?:OBER)?\\.?\\s*9(?!\\d)",
+     "(?<!\\d)10\\s*OCT(?:OBER)?\\b|\\bOCT(?:OBER)?\\.?\\s*10(?!\\d)",
+     "(?<!\\d)16\\s*OCT(?:OBER)?\\b|\\bOCT(?:OBER)?\\.?\\s*16(?!\\d)",
+     "(?<!\\d)17\\s*OCT(?:OBER)?\\b|\\bOCT(?:OBER)?\\.?\\s*17(?!\\d)"
+    ],
+    "optional": false,
+    "colors": [
+     "#E4863B"
+    ]
+   },
+   "how": "Reads the font, size, letter case or colour of the named text from the PDF."
+  },
+  {
+   "check_id": "LAYOUT-12/poster-direction-type-led/H047",
+   "output_id": "poster-direction-type-led",
+   "rule_id": "R092",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Every title, support, door, set, body, billing and fine-print line on “After Dark poster direction - Type-led” (poster-direction-type-led.pdf) is Bone White #E9E4D8.",
+   "assertion": {
+    "op": "v2_pdf_text_style",
+    "all_text": true,
+    "except": [
+     "Sable Quartet",
+     "Meridian Brass",
+     "Night Ferry",
+     "The Blue Hour",
+     "Vespertine",
+     "The Eastons",
+     "Koa",
+     "Laurel and the Dive"
+    ],
+    "except_patterns": [
+     "(?<!\\d)25\\s*SEPT?(?:EMBER)?\\b|\\bSEPT?(?:EMBER)?\\.?\\s*25(?!\\d)",
+     "(?<!\\d)4\\s*OCT(?:OBER)?\\b|\\bOCT(?:OBER)?\\.?\\s*4(?!\\d)",
+     "(?<!\\d)26\\s*SEPT?(?:EMBER)?\\b|\\bSEPT?(?:EMBER)?\\.?\\s*26(?!\\d)",
+     "(?<!\\d)2\\s*OCT(?:OBER)?\\b|\\bOCT(?:OBER)?\\.?\\s*2(?!\\d)",
+     "(?<!\\d)9\\s*OCT(?:OBER)?\\b|\\bOCT(?:OBER)?\\.?\\s*9(?!\\d)",
+     "(?<!\\d)10\\s*OCT(?:OBER)?\\b|\\bOCT(?:OBER)?\\.?\\s*10(?!\\d)",
+     "(?<!\\d)16\\s*OCT(?:OBER)?\\b|\\bOCT(?:OBER)?\\.?\\s*16(?!\\d)",
+     "(?<!\\d)17\\s*OCT(?:OBER)?\\b|\\bOCT(?:OBER)?\\.?\\s*17(?!\\d)"
+    ],
+    "colors": [
+     "#E9E4D8"
+    ]
+   },
+   "how": "Reads the font, size, letter case or colour of the named text from the PDF."
+  },
+  {
+   "check_id": "LAYOUT-12/poster-direction-image-led/H046",
+   "output_id": "poster-direction-image-led",
+   "rule_id": "R092",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Every title, support, door, set, body, billing and fine-print line on “After Dark poster direction - Image-led” (poster-direction-image-led.pdf) is Bone White #E9E4D8.",
+   "assertion": {
+    "op": "v2_pdf_text_style",
+    "all_text": true,
+    "except": [
+     "Sable Quartet",
+     "Meridian Brass",
+     "Night Ferry",
+     "The Blue Hour",
+     "Vespertine",
+     "The Eastons",
+     "Koa",
+     "Laurel and the Dive"
+    ],
+    "except_patterns": [
+     "(?<!\\d)25\\s*SEPT?(?:EMBER)?\\b|\\bSEPT?(?:EMBER)?\\.?\\s*25(?!\\d)",
+     "(?<!\\d)4\\s*OCT(?:OBER)?\\b|\\bOCT(?:OBER)?\\.?\\s*4(?!\\d)",
+     "(?<!\\d)26\\s*SEPT?(?:EMBER)?\\b|\\bSEPT?(?:EMBER)?\\.?\\s*26(?!\\d)",
+     "(?<!\\d)2\\s*OCT(?:OBER)?\\b|\\bOCT(?:OBER)?\\.?\\s*2(?!\\d)",
+     "(?<!\\d)9\\s*OCT(?:OBER)?\\b|\\bOCT(?:OBER)?\\.?\\s*9(?!\\d)",
+     "(?<!\\d)10\\s*OCT(?:OBER)?\\b|\\bOCT(?:OBER)?\\.?\\s*10(?!\\d)",
+     "(?<!\\d)16\\s*OCT(?:OBER)?\\b|\\bOCT(?:OBER)?\\.?\\s*16(?!\\d)",
+     "(?<!\\d)17\\s*OCT(?:OBER)?\\b|\\bOCT(?:OBER)?\\.?\\s*17(?!\\d)"
+    ],
+    "colors": [
+     "#E9E4D8"
+    ]
+   },
+   "how": "Reads the font, size, letter case or colour of the named text from the PDF."
+  },
+  {
+   "check_id": "LAYOUT-12/poster-direction-graphic-led/H046",
+   "output_id": "poster-direction-graphic-led",
+   "rule_id": "R092",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Every title, support, door, set, body, billing and fine-print line on “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf) is Bone White #E9E4D8.",
+   "assertion": {
+    "op": "v2_pdf_text_style",
+    "all_text": true,
+    "except": [
+     "Sable Quartet",
+     "Meridian Brass",
+     "Night Ferry",
+     "The Blue Hour",
+     "Vespertine",
+     "The Eastons",
+     "Koa",
+     "Laurel and the Dive"
+    ],
+    "except_patterns": [
+     "(?<!\\d)25\\s*SEPT?(?:EMBER)?\\b|\\bSEPT?(?:EMBER)?\\.?\\s*25(?!\\d)",
+     "(?<!\\d)4\\s*OCT(?:OBER)?\\b|\\bOCT(?:OBER)?\\.?\\s*4(?!\\d)",
+     "(?<!\\d)26\\s*SEPT?(?:EMBER)?\\b|\\bSEPT?(?:EMBER)?\\.?\\s*26(?!\\d)",
+     "(?<!\\d)2\\s*OCT(?:OBER)?\\b|\\bOCT(?:OBER)?\\.?\\s*2(?!\\d)",
+     "(?<!\\d)9\\s*OCT(?:OBER)?\\b|\\bOCT(?:OBER)?\\.?\\s*9(?!\\d)",
+     "(?<!\\d)10\\s*OCT(?:OBER)?\\b|\\bOCT(?:OBER)?\\.?\\s*10(?!\\d)",
+     "(?<!\\d)16\\s*OCT(?:OBER)?\\b|\\bOCT(?:OBER)?\\.?\\s*16(?!\\d)",
+     "(?<!\\d)17\\s*OCT(?:OBER)?\\b|\\bOCT(?:OBER)?\\.?\\s*17(?!\\d)"
+    ],
+    "colors": [
+     "#E9E4D8"
+    ]
+   },
+   "how": "Reads the font, size, letter case or colour of the named text from the PDF."
+  },
+  {
+   "check_id": "LAYOUT-12/promoter-deck/H038",
+   "output_id": "promoter-deck",
+   "rule_id": "R097",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Any date line typeset in “Promoter pitch deck” (promoter-deck.pdf) outside the poster images is Sodium #E4863B.",
+   "assertion": {
+    "op": "v2_pdf_text_style",
+    "patterns": [
+     "(?<!\\d)25\\s*SEPT?(?:EMBER)?\\b|\\bSEPT?(?:EMBER)?\\.?\\s*25(?!\\d)",
+     "(?<!\\d)4\\s*OCT(?:OBER)?\\b|\\bOCT(?:OBER)?\\.?\\s*4(?!\\d)",
+     "(?<!\\d)26\\s*SEPT?(?:EMBER)?\\b|\\bSEPT?(?:EMBER)?\\.?\\s*26(?!\\d)",
+     "(?<!\\d)2\\s*OCT(?:OBER)?\\b|\\bOCT(?:OBER)?\\.?\\s*2(?!\\d)",
+     "(?<!\\d)9\\s*OCT(?:OBER)?\\b|\\bOCT(?:OBER)?\\.?\\s*9(?!\\d)",
+     "(?<!\\d)10\\s*OCT(?:OBER)?\\b|\\bOCT(?:OBER)?\\.?\\s*10(?!\\d)",
+     "(?<!\\d)16\\s*OCT(?:OBER)?\\b|\\bOCT(?:OBER)?\\.?\\s*16(?!\\d)",
+     "(?<!\\d)17\\s*OCT(?:OBER)?\\b|\\bOCT(?:OBER)?\\.?\\s*17(?!\\d)"
+    ],
+    "optional": true,
+    "colors": [
+     "#E4863B"
+    ]
+   },
+   "how": "Reads the font, size, letter case or colour of the named text from the PDF."
+  },
+  {
+   "check_id": "LAYOUT-12/promoter-deck/H041",
+   "output_id": "promoter-deck",
+   "rule_id": "R098",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Outside the poster images, every heading, support, billing, body, table, chart-label, door, set and fine-print line in “Promoter pitch deck” (promoter-deck.pdf) is Bone White #E9E4D8.",
+   "assertion": {
+    "op": "v2_pdf_text_style",
+    "all_text": true,
+    "except": [
+     "Sable Quartet",
+     "Meridian Brass",
+     "Night Ferry",
+     "The Blue Hour",
+     "Vespertine",
+     "The Eastons",
+     "Koa",
+     "Laurel and the Dive"
+    ],
+    "except_patterns": [
+     "(?<!\\d)25\\s*SEPT?(?:EMBER)?\\b|\\bSEPT?(?:EMBER)?\\.?\\s*25(?!\\d)",
+     "(?<!\\d)4\\s*OCT(?:OBER)?\\b|\\bOCT(?:OBER)?\\.?\\s*4(?!\\d)",
+     "(?<!\\d)26\\s*SEPT?(?:EMBER)?\\b|\\bSEPT?(?:EMBER)?\\.?\\s*26(?!\\d)",
+     "(?<!\\d)2\\s*OCT(?:OBER)?\\b|\\bOCT(?:OBER)?\\.?\\s*2(?!\\d)",
+     "(?<!\\d)9\\s*OCT(?:OBER)?\\b|\\bOCT(?:OBER)?\\.?\\s*9(?!\\d)",
+     "(?<!\\d)10\\s*OCT(?:OBER)?\\b|\\bOCT(?:OBER)?\\.?\\s*10(?!\\d)",
+     "(?<!\\d)16\\s*OCT(?:OBER)?\\b|\\bOCT(?:OBER)?\\.?\\s*16(?!\\d)",
+     "(?<!\\d)17\\s*OCT(?:OBER)?\\b|\\bOCT(?:OBER)?\\.?\\s*17(?!\\d)"
+    ],
+    "colors": [
+     "#E9E4D8"
+    ]
+   },
+   "how": "Reads the font, size, letter case or colour of the named text from the PDF."
+  },
+  {
+   "check_id": "LAYOUT-12/promoter-deck/H042",
+   "output_id": "promoter-deck",
+   "rule_id": "R099",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Outside the poster images, Cold Signal #3F7C8C and Blood #8E2B24 together cover no more than 5% of the non-photographic area of “Promoter pitch deck” (promoter-deck.pdf).",
+   "assertion": {
+    "op": "v2_area_share",
+    "hexes": [
+     "#3F7C8C",
+     "#8E2B24"
+    ],
+    "max_pct": 5.0
+   },
+   "how": "Renders the file without photos and measures the share of the named colours."
+  },
+  {
+   "check_id": "LAYOUT-12/promoter-deck/H044",
+   "output_id": "promoter-deck",
+   "rule_id": "R100",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Pitch #0E0E10 is the main ground of every page of “Promoter pitch deck” (promoter-deck.pdf).",
+   "assertion": {
+    "op": "v2_main_ground",
+    "hex": "#0E0E10"
+   },
+   "how": "Renders each page without photos and finds the colour covering the most area."
+  },
+  {
+   "check_id": "LAYOUT-12/poster-direction-type-led/R13-door-time-information-family",
+   "output_id": "poster-direction-type-led",
+   "rule_id": "R117",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "If a door time appears on “After Dark poster direction - Type-led” (poster-direction-type-led.pdf), it is set in Archivo Narrow SemiBold.",
+   "assertion": {
+    "op": "v2_pdf_text_style",
+    "patterns": [
+     "\\bDOORS?\\b"
+    ],
+    "optional": true,
+    "family": "Archivo Narrow",
+    "weight": "SemiBold"
+   },
+   "how": "Reads the font, size, letter case or colour of the named text from the PDF."
+  },
+  {
+   "check_id": "LAYOUT-12/poster-direction-image-led/R13-door-time-information-family",
+   "output_id": "poster-direction-image-led",
+   "rule_id": "R117",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "If a door time appears on “After Dark poster direction - Image-led” (poster-direction-image-led.pdf), it is set in Archivo Narrow SemiBold.",
+   "assertion": {
+    "op": "v2_pdf_text_style",
+    "patterns": [
+     "\\bDOORS?\\b"
+    ],
+    "optional": true,
+    "family": "Archivo Narrow",
+    "weight": "SemiBold"
+   },
+   "how": "Reads the font, size, letter case or colour of the named text from the PDF."
+  },
+  {
+   "check_id": "LAYOUT-12/poster-direction-graphic-led/R13-door-time-information-family",
+   "output_id": "poster-direction-graphic-led",
+   "rule_id": "R117",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "If a door time appears on “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf), it is set in Archivo Narrow SemiBold.",
+   "assertion": {
+    "op": "v2_pdf_text_style",
+    "patterns": [
+     "\\bDOORS?\\b"
+    ],
+    "optional": true,
+    "family": "Archivo Narrow",
+    "weight": "SemiBold"
+   },
+   "how": "Reads the font, size, letter case or colour of the named text from the PDF."
+  },
+  {
+   "check_id": "LAYOUT-12/promoter-deck/R13-act-name-text-family",
+   "output_id": "promoter-deck",
+   "rule_id": "R118",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Any act name typeset in “Promoter pitch deck” (promoter-deck.pdf) is set in Sora ExtraBold.",
+   "assertion": {
+    "op": "v2_pdf_text_style",
+    "texts": [
+     "Sable Quartet",
+     "Meridian Brass",
+     "Night Ferry",
+     "The Blue Hour",
+     "Vespertine",
+     "The Eastons",
+     "Koa",
+     "Laurel and the Dive"
+    ],
+    "optional": true,
+    "family": "Sora",
+    "weight": "ExtraBold"
+   },
+   "how": "Reads the font, size, letter case or colour of the named text from the PDF."
+  },
+  {
+   "check_id": "LAYOUT-12/promoter-deck/R13-door-time-information-family",
+   "output_id": "promoter-deck",
+   "rule_id": "R120",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "If a door time appears in “Promoter pitch deck” (promoter-deck.pdf), it is set in Archivo Narrow SemiBold.",
+   "assertion": {
+    "op": "v2_pdf_text_style",
+    "patterns": [
+     "\\bDOORS?\\b"
+    ],
+    "optional": true,
+    "family": "Archivo Narrow",
+    "weight": "SemiBold"
+   },
+   "how": "Reads the font, size, letter case or colour of the named text from the PDF."
+  },
+  {
+   "check_id": "LAYOUT-12/poster-direction-type-led/H055",
+   "output_id": "poster-direction-type-led",
+   "rule_id": "R124",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Every date line on “After Dark poster direction - Type-led” (poster-direction-type-led.pdf) is set in Sora ExtraBold.",
+   "assertion": {
+    "op": "v2_pdf_text_style",
+    "patterns": [
+     "(?<!\\d)25\\s*SEPT?(?:EMBER)?\\b|\\bSEPT?(?:EMBER)?\\.?\\s*25(?!\\d)",
+     "(?<!\\d)4\\s*OCT(?:OBER)?\\b|\\bOCT(?:OBER)?\\.?\\s*4(?!\\d)",
+     "(?<!\\d)26\\s*SEPT?(?:EMBER)?\\b|\\bSEPT?(?:EMBER)?\\.?\\s*26(?!\\d)",
+     "(?<!\\d)2\\s*OCT(?:OBER)?\\b|\\bOCT(?:OBER)?\\.?\\s*2(?!\\d)",
+     "(?<!\\d)9\\s*OCT(?:OBER)?\\b|\\bOCT(?:OBER)?\\.?\\s*9(?!\\d)",
+     "(?<!\\d)10\\s*OCT(?:OBER)?\\b|\\bOCT(?:OBER)?\\.?\\s*10(?!\\d)",
+     "(?<!\\d)16\\s*OCT(?:OBER)?\\b|\\bOCT(?:OBER)?\\.?\\s*16(?!\\d)",
+     "(?<!\\d)17\\s*OCT(?:OBER)?\\b|\\bOCT(?:OBER)?\\.?\\s*17(?!\\d)"
+    ],
+    "optional": false,
+    "family": "Sora",
+    "weight": "ExtraBold"
+   },
+   "how": "Reads the font, size, letter case or colour of the named text from the PDF."
+  },
+  {
+   "check_id": "LAYOUT-12/poster-direction-image-led/H054",
+   "output_id": "poster-direction-image-led",
+   "rule_id": "R124",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Every date line on “After Dark poster direction - Image-led” (poster-direction-image-led.pdf) is set in Sora ExtraBold.",
+   "assertion": {
+    "op": "v2_pdf_text_style",
+    "patterns": [
+     "(?<!\\d)25\\s*SEPT?(?:EMBER)?\\b|\\bSEPT?(?:EMBER)?\\.?\\s*25(?!\\d)",
+     "(?<!\\d)4\\s*OCT(?:OBER)?\\b|\\bOCT(?:OBER)?\\.?\\s*4(?!\\d)",
+     "(?<!\\d)26\\s*SEPT?(?:EMBER)?\\b|\\bSEPT?(?:EMBER)?\\.?\\s*26(?!\\d)",
+     "(?<!\\d)2\\s*OCT(?:OBER)?\\b|\\bOCT(?:OBER)?\\.?\\s*2(?!\\d)",
+     "(?<!\\d)9\\s*OCT(?:OBER)?\\b|\\bOCT(?:OBER)?\\.?\\s*9(?!\\d)",
+     "(?<!\\d)10\\s*OCT(?:OBER)?\\b|\\bOCT(?:OBER)?\\.?\\s*10(?!\\d)",
+     "(?<!\\d)16\\s*OCT(?:OBER)?\\b|\\bOCT(?:OBER)?\\.?\\s*16(?!\\d)",
+     "(?<!\\d)17\\s*OCT(?:OBER)?\\b|\\bOCT(?:OBER)?\\.?\\s*17(?!\\d)"
+    ],
+    "optional": false,
+    "family": "Sora",
+    "weight": "ExtraBold"
+   },
+   "how": "Reads the font, size, letter case or colour of the named text from the PDF."
+  },
+  {
+   "check_id": "LAYOUT-12/poster-direction-graphic-led/H054",
+   "output_id": "poster-direction-graphic-led",
+   "rule_id": "R124",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Every date line on “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf) is set in Sora ExtraBold.",
+   "assertion": {
+    "op": "v2_pdf_text_style",
+    "patterns": [
+     "(?<!\\d)25\\s*SEPT?(?:EMBER)?\\b|\\bSEPT?(?:EMBER)?\\.?\\s*25(?!\\d)",
+     "(?<!\\d)4\\s*OCT(?:OBER)?\\b|\\bOCT(?:OBER)?\\.?\\s*4(?!\\d)",
+     "(?<!\\d)26\\s*SEPT?(?:EMBER)?\\b|\\bSEPT?(?:EMBER)?\\.?\\s*26(?!\\d)",
+     "(?<!\\d)2\\s*OCT(?:OBER)?\\b|\\bOCT(?:OBER)?\\.?\\s*2(?!\\d)",
+     "(?<!\\d)9\\s*OCT(?:OBER)?\\b|\\bOCT(?:OBER)?\\.?\\s*9(?!\\d)",
+     "(?<!\\d)10\\s*OCT(?:OBER)?\\b|\\bOCT(?:OBER)?\\.?\\s*10(?!\\d)",
+     "(?<!\\d)16\\s*OCT(?:OBER)?\\b|\\bOCT(?:OBER)?\\.?\\s*16(?!\\d)",
+     "(?<!\\d)17\\s*OCT(?:OBER)?\\b|\\bOCT(?:OBER)?\\.?\\s*17(?!\\d)"
+    ],
+    "optional": false,
+    "family": "Sora",
+    "weight": "ExtraBold"
+   },
+   "how": "Reads the font, size, letter case or colour of the named text from the PDF."
+  },
+  {
+   "check_id": "LAYOUT-12/poster-direction-type-led/H061",
+   "output_id": "poster-direction-type-led",
+   "rule_id": "R125",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The licence line on “After Dark poster direction - Type-led” (poster-direction-type-led.pdf) is set in Archivo Narrow Regular.",
+   "assertion": {
+    "op": "v2_pdf_text_style",
+    "texts": [
+     "Umbra Loft, 14 Foundry Court (basement), Providence RI. Licensed under City of Providence Entertainment Licence PVD-2021-0846."
+    ],
+    "optional": false,
+    "family": "Archivo Narrow",
+    "weight": "Regular"
+   },
+   "how": "Reads the font, size, letter case or colour of the named text from the PDF."
+  },
+  {
+   "check_id": "LAYOUT-12/poster-direction-image-led/H060",
+   "output_id": "poster-direction-image-led",
+   "rule_id": "R125",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The licence line on “After Dark poster direction - Image-led” (poster-direction-image-led.pdf) is set in Archivo Narrow Regular.",
+   "assertion": {
+    "op": "v2_pdf_text_style",
+    "texts": [
+     "Umbra Loft, 14 Foundry Court (basement), Providence RI. Licensed under City of Providence Entertainment Licence PVD-2021-0846."
+    ],
+    "optional": false,
+    "family": "Archivo Narrow",
+    "weight": "Regular"
+   },
+   "how": "Reads the font, size, letter case or colour of the named text from the PDF."
+  },
+  {
+   "check_id": "LAYOUT-12/poster-direction-graphic-led/H060",
+   "output_id": "poster-direction-graphic-led",
+   "rule_id": "R125",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The licence line on “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf) is set in Archivo Narrow Regular.",
+   "assertion": {
+    "op": "v2_pdf_text_style",
+    "texts": [
+     "Umbra Loft, 14 Foundry Court (basement), Providence RI. Licensed under City of Providence Entertainment Licence PVD-2021-0846."
+    ],
+    "optional": false,
+    "family": "Archivo Narrow",
+    "weight": "Regular"
+   },
+   "how": "Reads the font, size, letter case or colour of the named text from the PDF."
+  },
+  {
+   "check_id": "LAYOUT-12/promoter-deck/H049",
+   "output_id": "promoter-deck",
+   "rule_id": "R126",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Any date line in “Promoter pitch deck” (promoter-deck.pdf) is set in Sora ExtraBold.",
+   "assertion": {
+    "op": "v2_pdf_text_style",
+    "patterns": [
+     "(?<!\\d)25\\s*SEPT?(?:EMBER)?\\b|\\bSEPT?(?:EMBER)?\\.?\\s*25(?!\\d)",
+     "(?<!\\d)4\\s*OCT(?:OBER)?\\b|\\bOCT(?:OBER)?\\.?\\s*4(?!\\d)",
+     "(?<!\\d)26\\s*SEPT?(?:EMBER)?\\b|\\bSEPT?(?:EMBER)?\\.?\\s*26(?!\\d)",
+     "(?<!\\d)2\\s*OCT(?:OBER)?\\b|\\bOCT(?:OBER)?\\.?\\s*2(?!\\d)",
+     "(?<!\\d)9\\s*OCT(?:OBER)?\\b|\\bOCT(?:OBER)?\\.?\\s*9(?!\\d)",
+     "(?<!\\d)10\\s*OCT(?:OBER)?\\b|\\bOCT(?:OBER)?\\.?\\s*10(?!\\d)",
+     "(?<!\\d)16\\s*OCT(?:OBER)?\\b|\\bOCT(?:OBER)?\\.?\\s*16(?!\\d)",
+     "(?<!\\d)17\\s*OCT(?:OBER)?\\b|\\bOCT(?:OBER)?\\.?\\s*17(?!\\d)"
+    ],
+    "optional": true,
+    "family": "Sora",
+    "weight": "ExtraBold"
+   },
+   "how": "Reads the font, size, letter case or colour of the named text from the PDF."
+  },
+  {
+   "check_id": "LAYOUT-12/promoter-deck/H050",
+   "output_id": "promoter-deck",
+   "rule_id": "R127",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "If a series title such as “UMBRA / LOFT” appears in “Promoter pitch deck” (promoter-deck.pdf), it is set in Sora ExtraBold.",
+   "assertion": {
+    "op": "v2_pdf_text_style",
+    "texts": [
+     "UMBRA / LOFT"
+    ],
+    "optional": true,
+    "family": "Sora",
+    "weight": "ExtraBold"
+   },
+   "how": "Reads the font, size, letter case or colour of the named text from the PDF."
+  },
+  {
+   "check_id": "LAYOUT-12/poster-direction-type-led/H077",
+   "output_id": "poster-direction-type-led",
+   "rule_id": "R132",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The licence line on “After Dark poster direction - Type-led” (poster-direction-type-led.pdf) is set in capitals.",
+   "assertion": {
+    "op": "v2_pdf_text_style",
+    "texts": [
+     "Umbra Loft, 14 Foundry Court (basement), Providence RI. Licensed under City of Providence Entertainment Licence PVD-2021-0846."
+    ],
+    "optional": false,
+    "caps": true
+   },
+   "how": "Reads the font, size, letter case or colour of the named text from the PDF."
+  },
+  {
+   "check_id": "LAYOUT-12/poster-direction-image-led/H076",
+   "output_id": "poster-direction-image-led",
+   "rule_id": "R132",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The licence line on “After Dark poster direction - Image-led” (poster-direction-image-led.pdf) is set in capitals.",
+   "assertion": {
+    "op": "v2_pdf_text_style",
+    "texts": [
+     "Umbra Loft, 14 Foundry Court (basement), Providence RI. Licensed under City of Providence Entertainment Licence PVD-2021-0846."
+    ],
+    "optional": false,
+    "caps": true
+   },
+   "how": "Reads the font, size, letter case or colour of the named text from the PDF."
+  },
+  {
+   "check_id": "LAYOUT-12/poster-direction-graphic-led/H076",
+   "output_id": "poster-direction-graphic-led",
+   "rule_id": "R132",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The licence line on “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf) is set in capitals.",
+   "assertion": {
+    "op": "v2_pdf_text_style",
+    "texts": [
+     "Umbra Loft, 14 Foundry Court (basement), Providence RI. Licensed under City of Providence Entertainment Licence PVD-2021-0846."
+    ],
+    "optional": false,
+    "caps": true
+   },
+   "how": "Reads the font, size, letter case or colour of the named text from the PDF."
+  },
+  {
+   "check_id": "LAYOUT-12/poster-direction-type-led/H078",
+   "output_id": "poster-direction-type-led",
+   "rule_id": "R133",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The accessibility line on “After Dark poster direction - Type-led” (poster-direction-type-led.pdf) is set in capitals.",
+   "assertion": {
+    "op": "v2_pdf_text_style",
+    "texts": [
+     "Step-free access to the main room is via the mill loading entrance on request; please contact the venue in advance."
+    ],
+    "optional": false,
+    "caps": true
+   },
+   "how": "Reads the font, size, letter case or colour of the named text from the PDF."
+  },
+  {
+   "check_id": "LAYOUT-12/poster-direction-image-led/H077",
+   "output_id": "poster-direction-image-led",
+   "rule_id": "R133",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The accessibility line on “After Dark poster direction - Image-led” (poster-direction-image-led.pdf) is set in capitals.",
+   "assertion": {
+    "op": "v2_pdf_text_style",
+    "texts": [
+     "Step-free access to the main room is via the mill loading entrance on request; please contact the venue in advance."
+    ],
+    "optional": false,
+    "caps": true
+   },
+   "how": "Reads the font, size, letter case or colour of the named text from the PDF."
+  },
+  {
+   "check_id": "LAYOUT-12/poster-direction-graphic-led/H077",
+   "output_id": "poster-direction-graphic-led",
+   "rule_id": "R133",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The accessibility line on “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf) is set in capitals.",
+   "assertion": {
+    "op": "v2_pdf_text_style",
+    "texts": [
+     "Step-free access to the main room is via the mill loading entrance on request; please contact the venue in advance."
+    ],
+    "optional": false,
+    "caps": true
+   },
+   "how": "Reads the font, size, letter case or colour of the named text from the PDF."
+  },
+  {
+   "check_id": "LAYOUT-12/poster-direction-type-led/H079",
+   "output_id": "poster-direction-type-led",
+   "rule_id": "R134",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The accessibility line on “After Dark poster direction - Type-led” (poster-direction-type-led.pdf) is set in Archivo Narrow Regular.",
+   "assertion": {
+    "op": "v2_pdf_text_style",
+    "texts": [
+     "Step-free access to the main room is via the mill loading entrance on request; please contact the venue in advance."
+    ],
+    "optional": false,
+    "family": "Archivo Narrow",
+    "weight": "Regular"
+   },
+   "how": "Reads the font, size, letter case or colour of the named text from the PDF."
+  },
+  {
+   "check_id": "LAYOUT-12/poster-direction-image-led/H078",
+   "output_id": "poster-direction-image-led",
+   "rule_id": "R134",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The accessibility line on “After Dark poster direction - Image-led” (poster-direction-image-led.pdf) is set in Archivo Narrow Regular.",
+   "assertion": {
+    "op": "v2_pdf_text_style",
+    "texts": [
+     "Step-free access to the main room is via the mill loading entrance on request; please contact the venue in advance."
+    ],
+    "optional": false,
+    "family": "Archivo Narrow",
+    "weight": "Regular"
+   },
+   "how": "Reads the font, size, letter case or colour of the named text from the PDF."
+  },
+  {
+   "check_id": "LAYOUT-12/poster-direction-graphic-led/H078",
+   "output_id": "poster-direction-graphic-led",
+   "rule_id": "R134",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The accessibility line on “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf) is set in Archivo Narrow Regular.",
+   "assertion": {
+    "op": "v2_pdf_text_style",
+    "texts": [
+     "Step-free access to the main room is via the mill loading entrance on request; please contact the venue in advance."
+    ],
+    "optional": false,
+    "family": "Archivo Narrow",
+    "weight": "Regular"
+   },
+   "how": "Reads the font, size, letter case or colour of the named text from the PDF."
+  },
+  {
+   "check_id": "LAYOUT-12/poster-direction-type-led/H084",
+   "output_id": "poster-direction-type-led",
+   "rule_id": "R136",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "If a door time appears on “After Dark poster direction - Type-led” (poster-direction-type-led.pdf), it is set in capitals.",
+   "assertion": {
+    "op": "v2_pdf_text_style",
+    "patterns": [
+     "\\bDOORS?\\b"
+    ],
+    "optional": true,
+    "caps": true
+   },
+   "how": "Reads the font, size, letter case or colour of the named text from the PDF."
+  },
+  {
+   "check_id": "LAYOUT-12/poster-direction-image-led/H083",
+   "output_id": "poster-direction-image-led",
+   "rule_id": "R136",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "If a door time appears on “After Dark poster direction - Image-led” (poster-direction-image-led.pdf), it is set in capitals.",
+   "assertion": {
+    "op": "v2_pdf_text_style",
+    "patterns": [
+     "\\bDOORS?\\b"
+    ],
+    "optional": true,
+    "caps": true
+   },
+   "how": "Reads the font, size, letter case or colour of the named text from the PDF."
+  },
+  {
+   "check_id": "LAYOUT-12/poster-direction-graphic-led/H083",
+   "output_id": "poster-direction-graphic-led",
+   "rule_id": "R136",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "If a door time appears on “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf), it is set in capitals.",
+   "assertion": {
+    "op": "v2_pdf_text_style",
+    "patterns": [
+     "\\bDOORS?\\b"
+    ],
+    "optional": true,
+    "caps": true
+   },
+   "how": "Reads the font, size, letter case or colour of the named text from the PDF."
+  },
+  {
+   "check_id": "LAYOUT-12/poster-direction-type-led/H085",
+   "output_id": "poster-direction-type-led",
+   "rule_id": "R137",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Every date line on “After Dark poster direction - Type-led” (poster-direction-type-led.pdf) is set in capitals.",
+   "assertion": {
+    "op": "v2_pdf_text_style",
+    "patterns": [
+     "(?<!\\d)25\\s*SEPT?(?:EMBER)?\\b|\\bSEPT?(?:EMBER)?\\.?\\s*25(?!\\d)",
+     "(?<!\\d)4\\s*OCT(?:OBER)?\\b|\\bOCT(?:OBER)?\\.?\\s*4(?!\\d)",
+     "(?<!\\d)26\\s*SEPT?(?:EMBER)?\\b|\\bSEPT?(?:EMBER)?\\.?\\s*26(?!\\d)",
+     "(?<!\\d)2\\s*OCT(?:OBER)?\\b|\\bOCT(?:OBER)?\\.?\\s*2(?!\\d)",
+     "(?<!\\d)9\\s*OCT(?:OBER)?\\b|\\bOCT(?:OBER)?\\.?\\s*9(?!\\d)",
+     "(?<!\\d)10\\s*OCT(?:OBER)?\\b|\\bOCT(?:OBER)?\\.?\\s*10(?!\\d)",
+     "(?<!\\d)16\\s*OCT(?:OBER)?\\b|\\bOCT(?:OBER)?\\.?\\s*16(?!\\d)",
+     "(?<!\\d)17\\s*OCT(?:OBER)?\\b|\\bOCT(?:OBER)?\\.?\\s*17(?!\\d)"
+    ],
+    "optional": false,
+    "caps": true
+   },
+   "how": "Reads the font, size, letter case or colour of the named text from the PDF."
+  },
+  {
+   "check_id": "LAYOUT-12/poster-direction-image-led/H084",
+   "output_id": "poster-direction-image-led",
+   "rule_id": "R137",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Every date line on “After Dark poster direction - Image-led” (poster-direction-image-led.pdf) is set in capitals.",
+   "assertion": {
+    "op": "v2_pdf_text_style",
+    "patterns": [
+     "(?<!\\d)25\\s*SEPT?(?:EMBER)?\\b|\\bSEPT?(?:EMBER)?\\.?\\s*25(?!\\d)",
+     "(?<!\\d)4\\s*OCT(?:OBER)?\\b|\\bOCT(?:OBER)?\\.?\\s*4(?!\\d)",
+     "(?<!\\d)26\\s*SEPT?(?:EMBER)?\\b|\\bSEPT?(?:EMBER)?\\.?\\s*26(?!\\d)",
+     "(?<!\\d)2\\s*OCT(?:OBER)?\\b|\\bOCT(?:OBER)?\\.?\\s*2(?!\\d)",
+     "(?<!\\d)9\\s*OCT(?:OBER)?\\b|\\bOCT(?:OBER)?\\.?\\s*9(?!\\d)",
+     "(?<!\\d)10\\s*OCT(?:OBER)?\\b|\\bOCT(?:OBER)?\\.?\\s*10(?!\\d)",
+     "(?<!\\d)16\\s*OCT(?:OBER)?\\b|\\bOCT(?:OBER)?\\.?\\s*16(?!\\d)",
+     "(?<!\\d)17\\s*OCT(?:OBER)?\\b|\\bOCT(?:OBER)?\\.?\\s*17(?!\\d)"
+    ],
+    "optional": false,
+    "caps": true
+   },
+   "how": "Reads the font, size, letter case or colour of the named text from the PDF."
+  },
+  {
+   "check_id": "LAYOUT-12/poster-direction-graphic-led/H084",
+   "output_id": "poster-direction-graphic-led",
+   "rule_id": "R137",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Every date line on “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf) is set in capitals.",
+   "assertion": {
+    "op": "v2_pdf_text_style",
+    "patterns": [
+     "(?<!\\d)25\\s*SEPT?(?:EMBER)?\\b|\\bSEPT?(?:EMBER)?\\.?\\s*25(?!\\d)",
+     "(?<!\\d)4\\s*OCT(?:OBER)?\\b|\\bOCT(?:OBER)?\\.?\\s*4(?!\\d)",
+     "(?<!\\d)26\\s*SEPT?(?:EMBER)?\\b|\\bSEPT?(?:EMBER)?\\.?\\s*26(?!\\d)",
+     "(?<!\\d)2\\s*OCT(?:OBER)?\\b|\\bOCT(?:OBER)?\\.?\\s*2(?!\\d)",
+     "(?<!\\d)9\\s*OCT(?:OBER)?\\b|\\bOCT(?:OBER)?\\.?\\s*9(?!\\d)",
+     "(?<!\\d)10\\s*OCT(?:OBER)?\\b|\\bOCT(?:OBER)?\\.?\\s*10(?!\\d)",
+     "(?<!\\d)16\\s*OCT(?:OBER)?\\b|\\bOCT(?:OBER)?\\.?\\s*16(?!\\d)",
+     "(?<!\\d)17\\s*OCT(?:OBER)?\\b|\\bOCT(?:OBER)?\\.?\\s*17(?!\\d)"
+    ],
+    "optional": false,
+    "caps": true
+   },
+   "how": "Reads the font, size, letter case or colour of the named text from the PDF."
+  },
+  {
+   "check_id": "LAYOUT-12/promoter-deck/H063",
+   "output_id": "promoter-deck",
+   "rule_id": "R140",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Any act name typeset in “Promoter pitch deck” (promoter-deck.pdf) is set in capitals.",
+   "assertion": {
+    "op": "v2_pdf_text_style",
+    "texts": [
+     "Sable Quartet",
+     "Meridian Brass",
+     "Night Ferry",
+     "The Blue Hour",
+     "Vespertine",
+     "The Eastons",
+     "Koa",
+     "Laurel and the Dive"
+    ],
+    "optional": true,
+    "caps": true
+   },
+   "how": "Reads the font, size, letter case or colour of the named text from the PDF."
+  },
+  {
+   "check_id": "LAYOUT-12/promoter-deck/H064",
+   "output_id": "promoter-deck",
+   "rule_id": "R141",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "If a door time appears in “Promoter pitch deck” (promoter-deck.pdf), it is set in capitals.",
+   "assertion": {
+    "op": "v2_pdf_text_style",
+    "patterns": [
+     "\\bDOORS?\\b"
+    ],
+    "optional": true,
+    "caps": true
+   },
+   "how": "Reads the font, size, letter case or colour of the named text from the PDF."
+  },
+  {
+   "check_id": "LAYOUT-12/promoter-deck/H065",
+   "output_id": "promoter-deck",
+   "rule_id": "R142",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Any date line in “Promoter pitch deck” (promoter-deck.pdf) is set in capitals.",
+   "assertion": {
+    "op": "v2_pdf_text_style",
+    "patterns": [
+     "(?<!\\d)25\\s*SEPT?(?:EMBER)?\\b|\\bSEPT?(?:EMBER)?\\.?\\s*25(?!\\d)",
+     "(?<!\\d)4\\s*OCT(?:OBER)?\\b|\\bOCT(?:OBER)?\\.?\\s*4(?!\\d)",
+     "(?<!\\d)26\\s*SEPT?(?:EMBER)?\\b|\\bSEPT?(?:EMBER)?\\.?\\s*26(?!\\d)",
+     "(?<!\\d)2\\s*OCT(?:OBER)?\\b|\\bOCT(?:OBER)?\\.?\\s*2(?!\\d)",
+     "(?<!\\d)9\\s*OCT(?:OBER)?\\b|\\bOCT(?:OBER)?\\.?\\s*9(?!\\d)",
+     "(?<!\\d)10\\s*OCT(?:OBER)?\\b|\\bOCT(?:OBER)?\\.?\\s*10(?!\\d)",
+     "(?<!\\d)16\\s*OCT(?:OBER)?\\b|\\bOCT(?:OBER)?\\.?\\s*16(?!\\d)",
+     "(?<!\\d)17\\s*OCT(?:OBER)?\\b|\\bOCT(?:OBER)?\\.?\\s*17(?!\\d)"
+    ],
+    "optional": true,
+    "caps": true
+   },
+   "how": "Reads the font, size, letter case or colour of the named text from the PDF."
+  },
+  {
+   "check_id": "LAYOUT-12/promoter-deck/H066",
+   "output_id": "promoter-deck",
+   "rule_id": "R143",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "If a series title appears in “Promoter pitch deck” (promoter-deck.pdf), it is set in capitals.",
+   "assertion": {
+    "op": "v2_pdf_text_style",
+    "texts": [
+     "UMBRA / LOFT"
+    ],
+    "optional": true,
+    "caps": true
+   },
+   "how": "Reads the font, size, letter case or colour of the named text from the PDF."
+  },
+  {
+   "check_id": "LAYOUT-12/poster-direction-type-led/R13-koa-line",
+   "output_id": "poster-direction-type-led",
+   "rule_id": "R151",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The act name KOA is set on one line on “After Dark poster direction - Type-led” (poster-direction-type-led.pdf).",
+   "assertion": {
+    "op": "v2_line_count",
+    "text": "KOA",
+    "max_lines": 1,
+    "optional": false
+   },
+   "how": "Counts the lines the named text runs over."
+  },
+  {
+   "check_id": "LAYOUT-12/poster-direction-image-led/R13-koa-line",
+   "output_id": "poster-direction-image-led",
+   "rule_id": "R151",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The act name KOA is set on one line on “After Dark poster direction - Image-led” (poster-direction-image-led.pdf).",
+   "assertion": {
+    "op": "v2_line_count",
+    "text": "KOA",
+    "max_lines": 1,
+    "optional": false
+   },
+   "how": "Counts the lines the named text runs over."
+  },
+  {
+   "check_id": "LAYOUT-12/poster-direction-graphic-led/R13-koa-line",
+   "output_id": "poster-direction-graphic-led",
+   "rule_id": "R151",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The act name KOA is set on one line on “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf).",
+   "assertion": {
+    "op": "v2_line_count",
+    "text": "KOA",
+    "max_lines": 1,
+    "optional": false
+   },
+   "how": "Counts the lines the named text runs over."
+  },
+  {
+   "check_id": "LAYOUT-12/release-post-r009/R13-koa-line",
+   "output_id": "release-post-r009",
+   "rule_id": "R151",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The act name KOA is set on one line on “Night release post - 2026-10-16” (release-post-r009.png).",
+   "assertion": {
+    "op": "v2_line_count",
+    "text": "KOA",
+    "max_lines": 1,
+    "optional": false
+   },
+   "how": "Counts the lines the named text runs over."
+  },
+  {
+   "check_id": "LAYOUT-12/promoter-deck/R13-koa-line",
+   "output_id": "promoter-deck",
+   "rule_id": "R152",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "If KOA is typeset in “Promoter pitch deck” (promoter-deck.pdf), it is set on one line.",
+   "assertion": {
+    "op": "v2_line_count",
+    "text": "KOA",
+    "max_lines": 1,
+    "optional": true
+   },
+   "how": "Counts the lines the named text runs over."
+  },
+  {
+   "check_id": "LAYOUT-12/poster-direction-type-led/H076",
+   "output_id": "poster-direction-type-led",
+   "rule_id": "R163",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Every act name on “After Dark poster direction - Type-led” (poster-direction-type-led.pdf) runs over one or two lines, never three or more.",
+   "assertion": {
+    "op": "v2_all_of",
+    "checks": [
+     {
+      "op": "v2_line_count",
+      "text": "Sable Quartet",
+      "max_lines": 2
+     },
+     {
+      "op": "v2_line_count",
+      "text": "Meridian Brass",
+      "max_lines": 2
+     },
+     {
+      "op": "v2_line_count",
+      "text": "Night Ferry",
+      "max_lines": 2
+     },
+     {
+      "op": "v2_line_count",
+      "text": "The Blue Hour",
+      "max_lines": 2
+     },
+     {
+      "op": "v2_line_count",
+      "text": "Vespertine",
+      "max_lines": 2
+     },
+     {
+      "op": "v2_line_count",
+      "text": "The Eastons",
+      "max_lines": 2
+     },
+     {
+      "op": "v2_line_count",
+      "text": "Koa",
+      "max_lines": 2
+     },
+     {
+      "op": "v2_line_count",
+      "text": "Laurel and the Dive",
+      "max_lines": 2
+     }
+    ]
+   },
+   "how": "Counts the lines the named text runs over, for each of the 8 named texts; all must pass."
+  },
+  {
+   "check_id": "LAYOUT-12/poster-direction-image-led/H075",
+   "output_id": "poster-direction-image-led",
+   "rule_id": "R163",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Every act name on “After Dark poster direction - Image-led” (poster-direction-image-led.pdf) runs over one or two lines, never three or more.",
+   "assertion": {
+    "op": "v2_all_of",
+    "checks": [
+     {
+      "op": "v2_line_count",
+      "text": "Sable Quartet",
+      "max_lines": 2
+     },
+     {
+      "op": "v2_line_count",
+      "text": "Meridian Brass",
+      "max_lines": 2
+     },
+     {
+      "op": "v2_line_count",
+      "text": "Night Ferry",
+      "max_lines": 2
+     },
+     {
+      "op": "v2_line_count",
+      "text": "The Blue Hour",
+      "max_lines": 2
+     },
+     {
+      "op": "v2_line_count",
+      "text": "Vespertine",
+      "max_lines": 2
+     },
+     {
+      "op": "v2_line_count",
+      "text": "The Eastons",
+      "max_lines": 2
+     },
+     {
+      "op": "v2_line_count",
+      "text": "Koa",
+      "max_lines": 2
+     },
+     {
+      "op": "v2_line_count",
+      "text": "Laurel and the Dive",
+      "max_lines": 2
+     }
+    ]
+   },
+   "how": "Counts the lines the named text runs over, for each of the 8 named texts; all must pass."
+  },
+  {
+   "check_id": "LAYOUT-12/poster-direction-graphic-led/H075",
+   "output_id": "poster-direction-graphic-led",
+   "rule_id": "R163",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Every act name on “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf) runs over one or two lines, never three or more.",
+   "assertion": {
+    "op": "v2_all_of",
+    "checks": [
+     {
+      "op": "v2_line_count",
+      "text": "Sable Quartet",
+      "max_lines": 2
+     },
+     {
+      "op": "v2_line_count",
+      "text": "Meridian Brass",
+      "max_lines": 2
+     },
+     {
+      "op": "v2_line_count",
+      "text": "Night Ferry",
+      "max_lines": 2
+     },
+     {
+      "op": "v2_line_count",
+      "text": "The Blue Hour",
+      "max_lines": 2
+     },
+     {
+      "op": "v2_line_count",
+      "text": "Vespertine",
+      "max_lines": 2
+     },
+     {
+      "op": "v2_line_count",
+      "text": "The Eastons",
+      "max_lines": 2
+     },
+     {
+      "op": "v2_line_count",
+      "text": "Koa",
+      "max_lines": 2
+     },
+     {
+      "op": "v2_line_count",
+      "text": "Laurel and the Dive",
+      "max_lines": 2
+     }
+    ]
+   },
+   "how": "Counts the lines the named text runs over, for each of the 8 named texts; all must pass."
+  },
+  {
+   "check_id": "LAYOUT-12/release-post-r002/H052",
+   "output_id": "release-post-r002",
+   "rule_id": "R165",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The act name “Sable Quartet” on “Night release post - 2026-09-25” (release-post-r002.png) runs over one or two lines, never three or more.",
+   "assertion": {
+    "op": "v2_line_count",
+    "text": "Sable Quartet",
+    "max_lines": 2
+   },
+   "how": "Counts the lines the named text runs over."
+  },
+  {
+   "check_id": "LAYOUT-12/release-post-r003/H047",
+   "output_id": "release-post-r003",
+   "rule_id": "R165",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The act name “Meridian Brass” on “Night release post - 2026-09-26” (release-post-r003.png) runs over one or two lines, never three or more.",
+   "assertion": {
+    "op": "v2_line_count",
+    "text": "Meridian Brass",
+    "max_lines": 2
+   },
+   "how": "Counts the lines the named text runs over."
+  },
+  {
+   "check_id": "LAYOUT-12/release-post-r004/H048",
+   "output_id": "release-post-r004",
+   "rule_id": "R165",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The act name “Night Ferry” on “Night release post - 2026-10-02” (release-post-r004.png) runs over one or two lines, never three or more.",
+   "assertion": {
+    "op": "v2_line_count",
+    "text": "Night Ferry",
+    "max_lines": 2
+   },
+   "how": "Counts the lines the named text runs over."
+  },
+  {
+   "check_id": "LAYOUT-12/release-post-r005/H048",
+   "output_id": "release-post-r005",
+   "rule_id": "R165",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The act name “The Blue Hour” on “Night release post - 2026-10-03” (release-post-r005.png) runs over one or two lines, never three or more.",
+   "assertion": {
+    "op": "v2_line_count",
+    "text": "The Blue Hour",
+    "max_lines": 2
+   },
+   "how": "Counts the lines the named text runs over."
+  },
+  {
+   "check_id": "LAYOUT-12/release-post-r006/H048",
+   "output_id": "release-post-r006",
+   "rule_id": "R165",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The act name “The Blue Hour” on “Night release post - 2026-10-04” (release-post-r006.png) runs over one or two lines, never three or more.",
+   "assertion": {
+    "op": "v2_line_count",
+    "text": "The Blue Hour",
+    "max_lines": 2
+   },
+   "how": "Counts the lines the named text runs over."
+  },
+  {
+   "check_id": "LAYOUT-12/release-post-r007/H049",
+   "output_id": "release-post-r007",
+   "rule_id": "R165",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The act name “Vespertine” on “Night release post - 2026-10-09” (release-post-r007.png) runs over one or two lines, never three or more.",
+   "assertion": {
+    "op": "v2_line_count",
+    "text": "Vespertine",
+    "max_lines": 2
+   },
+   "how": "Counts the lines the named text runs over."
+  },
+  {
+   "check_id": "LAYOUT-12/release-post-r008/H043",
+   "output_id": "release-post-r008",
+   "rule_id": "R165",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The act name “The Eastons” on “Night release post - 2026-10-10” (release-post-r008.png) runs over one or two lines, never three or more.",
+   "assertion": {
+    "op": "v2_line_count",
+    "text": "The Eastons",
+    "max_lines": 2
+   },
+   "how": "Counts the lines the named text runs over."
+  },
+  {
+   "check_id": "LAYOUT-12/release-post-r010/H048",
+   "output_id": "release-post-r010",
+   "rule_id": "R165",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The act name “Laurel and the Dive” on “Night release post - 2026-10-17” (release-post-r010.png) runs over one or two lines, never three or more.",
+   "assertion": {
+    "op": "v2_line_count",
+    "text": "Laurel and the Dive",
+    "max_lines": 2
+   },
+   "how": "Counts the lines the named text runs over."
+  },
+  {
+   "check_id": "LAYOUT-12/release-post-r002/H013",
+   "output_id": "release-post-r002",
+   "rule_id": "R175",
+   "k_id": "K5_Q1",
+   "critical": false,
+   "check": "Apart from the series title, the largest text on “Night release post - 2026-09-25” (release-post-r002.png) is the act name “Sable Quartet”.",
+   "assertion": {
+    "op": "v2_largest_text",
+    "text": "Sable Quartet",
+    "except": [
+     "UMBRA / LOFT"
+    ]
+   },
+   "how": "Compares text sizes (font size in PDFs, letter height on images)."
+  },
+  {
+   "check_id": "LAYOUT-12/release-post-r003/H012",
+   "output_id": "release-post-r003",
+   "rule_id": "R175",
+   "k_id": "K5_Q1",
+   "critical": false,
+   "check": "Apart from the series title, the largest text on “Night release post - 2026-09-26” (release-post-r003.png) is the act name “Meridian Brass”.",
+   "assertion": {
+    "op": "v2_largest_text",
+    "text": "Meridian Brass",
+    "except": [
+     "UMBRA / LOFT"
+    ]
+   },
+   "how": "Compares text sizes (font size in PDFs, letter height on images)."
+  },
+  {
+   "check_id": "LAYOUT-12/release-post-r004/H011",
+   "output_id": "release-post-r004",
+   "rule_id": "R175",
+   "k_id": "K5_Q1",
+   "critical": false,
+   "check": "Apart from the series title, the largest text on “Night release post - 2026-10-02” (release-post-r004.png) is the act name “Night Ferry”.",
+   "assertion": {
+    "op": "v2_largest_text",
+    "text": "Night Ferry",
+    "except": [
+     "UMBRA / LOFT"
+    ]
+   },
+   "how": "Compares text sizes (font size in PDFs, letter height on images)."
+  },
+  {
+   "check_id": "LAYOUT-12/release-post-r005/H011",
+   "output_id": "release-post-r005",
+   "rule_id": "R175",
+   "k_id": "K5_Q1",
+   "critical": false,
+   "check": "Apart from the series title, the largest text on “Night release post - 2026-10-03” (release-post-r005.png) is the act name “The Blue Hour”.",
+   "assertion": {
+    "op": "v2_largest_text",
+    "text": "The Blue Hour",
+    "except": [
+     "UMBRA / LOFT"
+    ]
+   },
+   "how": "Compares text sizes (font size in PDFs, letter height on images)."
+  },
+  {
+   "check_id": "LAYOUT-12/release-post-r006/H011",
+   "output_id": "release-post-r006",
+   "rule_id": "R175",
+   "k_id": "K5_Q1",
+   "critical": false,
+   "check": "Apart from the series title, the largest text on “Night release post - 2026-10-04” (release-post-r006.png) is the act name “The Blue Hour”.",
+   "assertion": {
+    "op": "v2_largest_text",
+    "text": "The Blue Hour",
+    "except": [
+     "UMBRA / LOFT"
+    ]
+   },
+   "how": "Compares text sizes (font size in PDFs, letter height on images)."
+  },
+  {
+   "check_id": "LAYOUT-12/release-post-r007/H011",
+   "output_id": "release-post-r007",
+   "rule_id": "R175",
+   "k_id": "K5_Q1",
+   "critical": false,
+   "check": "Apart from the series title, the largest text on “Night release post - 2026-10-09” (release-post-r007.png) is the act name “Vespertine”.",
+   "assertion": {
+    "op": "v2_largest_text",
+    "text": "Vespertine",
+    "except": [
+     "UMBRA / LOFT"
+    ]
+   },
+   "how": "Compares text sizes (font size in PDFs, letter height on images)."
+  },
+  {
+   "check_id": "LAYOUT-12/release-post-r008/H011",
+   "output_id": "release-post-r008",
+   "rule_id": "R175",
+   "k_id": "K5_Q1",
+   "critical": false,
+   "check": "Apart from the series title, the largest text on “Night release post - 2026-10-10” (release-post-r008.png) is the act name “The Eastons”.",
+   "assertion": {
+    "op": "v2_largest_text",
+    "text": "The Eastons",
+    "except": [
+     "UMBRA / LOFT"
+    ]
+   },
+   "how": "Compares text sizes (font size in PDFs, letter height on images)."
+  },
+  {
+   "check_id": "LAYOUT-12/release-post-r009/H011",
+   "output_id": "release-post-r009",
+   "rule_id": "R175",
+   "k_id": "K5_Q1",
+   "critical": false,
+   "check": "Apart from the series title, the largest text on “Night release post - 2026-10-16” (release-post-r009.png) is the act name “Koa”.",
+   "assertion": {
+    "op": "v2_largest_text",
+    "text": "Koa",
+    "except": [
+     "UMBRA / LOFT"
+    ]
+   },
+   "how": "Compares text sizes (font size in PDFs, letter height on images)."
+  },
+  {
+   "check_id": "LAYOUT-12/release-post-r010/H011",
+   "output_id": "release-post-r010",
+   "rule_id": "R175",
+   "k_id": "K5_Q1",
+   "critical": false,
+   "check": "Apart from the series title, the largest text on “Night release post - 2026-10-17” (release-post-r010.png) is the act name “Laurel and the Dive”.",
+   "assertion": {
+    "op": "v2_largest_text",
+    "text": "Laurel and the Dive",
+    "except": [
+     "UMBRA / LOFT"
+    ]
+   },
+   "how": "Compares text sizes (font size in PDFs, letter height on images)."
+  },
+  {
+   "check_id": "LAYOUT-12/poster-direction-type-led/H057",
+   "output_id": "poster-direction-type-led",
+   "rule_id": "R178",
+   "k_id": "K5_Q2",
+   "critical": false,
+   "check": "On “After Dark poster direction - Type-led” (poster-direction-type-led.pdf), every act name is set smaller than the series title.",
+   "assertion": {
+    "op": "v2_relation",
+    "rel": "smaller",
+    "a": [
+     "Sable Quartet",
+     "Meridian Brass",
+     "Night Ferry",
+     "The Blue Hour",
+     "Vespertine",
+     "The Eastons",
+     "Koa",
+     "Laurel and the Dive"
+    ],
+    "b": [
+     "UMBRA / LOFT"
+    ]
+   },
+   "how": "Compares the named texts' size or position."
+  },
+  {
+   "check_id": "LAYOUT-12/poster-direction-image-led/H056",
+   "output_id": "poster-direction-image-led",
+   "rule_id": "R178",
+   "k_id": "K5_Q2",
+   "critical": false,
+   "check": "On “After Dark poster direction - Image-led” (poster-direction-image-led.pdf), every act name is set smaller than the series title.",
+   "assertion": {
+    "op": "v2_relation",
+    "rel": "smaller",
+    "a": [
+     "Sable Quartet",
+     "Meridian Brass",
+     "Night Ferry",
+     "The Blue Hour",
+     "Vespertine",
+     "The Eastons",
+     "Koa",
+     "Laurel and the Dive"
+    ],
+    "b": [
+     "UMBRA / LOFT"
+    ]
+   },
+   "how": "Compares the named texts' size or position."
+  },
+  {
+   "check_id": "LAYOUT-12/poster-direction-graphic-led/H056",
+   "output_id": "poster-direction-graphic-led",
+   "rule_id": "R178",
+   "k_id": "K5_Q2",
+   "critical": false,
+   "check": "On “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf), every act name is set smaller than the series title.",
+   "assertion": {
+    "op": "v2_relation",
+    "rel": "smaller",
+    "a": [
+     "Sable Quartet",
+     "Meridian Brass",
+     "Night Ferry",
+     "The Blue Hour",
+     "Vespertine",
+     "The Eastons",
+     "Koa",
+     "Laurel and the Dive"
+    ],
+    "b": [
+     "UMBRA / LOFT"
+    ]
+   },
+   "how": "Compares the named texts' size or position."
+  }
+ ]
+}

@@ -96,3 +96,30 @@ After the existing pilot rebuild (`repair_pilot13_review.py`, `finalize_pilot13_
 - The platform / Sheet import still uses the v1 rows (one question per check per deliverable). A grouped import
   (rule shown once, every row passing by default, annotator ticks failures) needs Ops to agree the platform layout.
 - Timing trial: same annotators, same outputs, v1 versus v2, to measure minutes saved and agreement.
+
+## Checks moved to code (2026-10-27)
+
+Dhiren asked to move the deterministic, objective human checks to automatic checks. Only facts code reads exactly
+from the delivered file moved; nothing needing judgement did.
+
+| | Rules | Checks |
+|---|---:|---:|
+| Moved to code | 174 | 748 |
+| Converted, but staying with people for now (the code decided under half of the test rows) | 35 | 165 |
+| Automatable, not converted yet | 140 | 472 |
+| Needs a definition first (open questions) | 100 | 271 |
+| Colour sampled on a photo or render (later) | 214 | 1,319 |
+| Stays with people (judgement) | 837 | 3,337 |
+
+- Every automatic check answers pass, fail or person; a person answer sends that row back to an annotator. Nothing
+  passes on a failed read; OCR near misses and case-only differences go to a person.
+- Tested on the 102 deliverables of the 2026-09-28 run (705 rows: 541 pass, 162 person, 2 fail, both confirmed real
+  font defects: PHOTO-20 talk titles in Times-Roman, PHOTO-24 reference names in Georgia) and on made files for
+  LAYOUT-12, VECTOR-04 and MOTION-11 (correct set: 200 pass, 8 person, 0 fail; broken set: every planted defect failed
+  or sent to a person, none passed). Ten wrong answers found during testing were fixed before the final run; they are
+  listed on `automation.html`.
+- The v2 verifier pages keep every check: moved rules sit under their K question in an "Answered by code" block, each
+  row showing the code's answer on the 2026-09-28 run. `groups/<ID>.json` and both CSVs carry `answered_by`.
+- Open: letter case policy ("OPENING KEYNOTE" for "Opening Keynote"); the definition questions; converting the
+  remaining 472 automatable checks; step 7 (TASK_SPEC.json, V7 site, Sheet and `verify_outputs.py` dispatch of the
+  `v2_*` operations), only with approval.

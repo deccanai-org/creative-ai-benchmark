@@ -22,6 +22,9 @@ from build_v7_annotation_pilot import (CSS, DOWNLOAD_SCRIPT, REFRESH, ROOT, RUN_
 
 OUT = ROOT / 'docs/gatsby-v7/annotation-pilot-v2'
 REVISION = 'pilot13_v2_grouping_2026_10_27'
+MOVES = ROOT / 'tools/pilot13_v2_automation/moved_rules.json'    # rules now answered by code (decide_moves.py)
+PILOT_RUN = ROOT / 'tools/pilot13_v2_automation/pilot_results_2026-09-28.json'   # the code's answer per check on that run
+PILOT = json.loads(PILOT_RUN.read_text(encoding='utf-8')) if PILOT_RUN.exists() else {}
 EXT = r'(?:jpe?g|png|svg|pdf|mp4|mov|webm|csv|txt|icc|wav|mp3|m4a|ttf|otf|json|zip)'
 # Capitalised words that carry a check's logic. They always stay literal, so a rule can never hide
 # "If", "No" or "Only" inside a per-row value.
@@ -373,6 +376,7 @@ def filled_html(segments: list[dict], row: dict) -> str:
 
 def example_html(rules: list[dict], task_id: str, link: bool = False) -> str:
     """A worked example from the task's own rules: the rule, one of its rows, and the sentence they make."""
+    rules = [r for r in rules if r.get('answered_by') != 'code']       # the example is a rule people answer
     with_values = [r for r in rules if len(r['rows']) > 1 and any('slot' in s for s in r['template'])]
     plain = [r for r in rules if len(r['rows']) > 1 and not any('slot' in s for s in r['template'])]
     parts = []
@@ -515,6 +519,12 @@ V2_CSS = """
 .objective{display:inline-block;margin-left:8px;padding:1px 8px;border-radius:10px;background:#f6b26b;color:#4a2c00;font-size:11px;font-weight:700;vertical-align:middle}
 .k-empty{color:#5b6760;font-style:italic;font-size:13px;margin:0}.k-auto{font-size:13px;color:#3f4b45;background:#eef4f0;border-radius:6px;padding:8px 10px}
 .kpart>h4{font-size:13.5px;margin:16px 0 8px;color:#3f4b45}
+.k-code{margin:12px 0 4px;border:1px solid #cfe0d6;border-radius:6px;background:#f3f8f5}
+.k-code>summary{cursor:pointer;padding:8px 10px;font-size:13.5px;color:#24453a;font-weight:600}
+.k-code>summary span{font-weight:400;color:#3f4b45}.k-code>.rule{margin:8px 10px 10px;background:#fff}
+.rule-code{font-size:13px;color:#24453a;background:#eef4f0;border-radius:5px;padding:6px 9px;margin:6px 0}
+.b-code{background:#24453a;color:#fff}.ans.code{color:#24453a;font-weight:600}.ans.code small{display:block;font-weight:400;color:#5b6760}
+.ans.code.fail{color:#8a2a1c}.ans.code.person{color:#6b4a00}
 .howto{border:1px solid #cfe0d6;background:#f6faf7;border-radius:8px;padding:14px 18px;margin:16px 0 8px;max-width:118ch}
 .howto>h2{font-size:17px;margin:0 0 8px}.howto ol{margin:0 0 6px;padding-left:20px}.howto li{margin:0 0 5px}
 .example{border-top:1px solid #dce3df;padding-top:10px;margin-top:10px;font-size:14px}
@@ -597,9 +607,25 @@ FILTER_SCRIPT = """
 """
 
 
+def code_answer(check_id: str) -> str:
+    """The answer cell of a row the code answers: its result on the 2026-09-28 pilot run, or a Yes / No for a
+    person where the code could not decide. Tasks with no output on that run show only that code answers them."""
+    r = PILOT.get(check_id)
+    if not r:
+        return '<td class="ans code" data-label="Answer">Code<small>no output on the 2026-09-28 run</small></td>'
+    if r['status'] == 'person':
+        return (f'<td class="ans code person" data-label="Answer">Person: Yes / No<small>code could not decide: '
+                f'{esc(r["note"])}</small></td>')
+    if r['status'] == 'fail':
+        return f'<td class="ans code fail" data-label="Answer">Code: No<small>{esc(r["note"])}</small></td>'
+    return '<td class="ans code" data-label="Answer">Code: Yes</td>'
+
+
 def rule_html(rule: dict, ctx: dict) -> str:
     labels = rule['slot_labels']
+    by_code = rule.get('answered_by') == 'code'
     badges = [f'<span class="badge b-k" title="{esc(rule["k_label"])}">{esc(k_short(rule["k_id"]))}</span>',
+              '<span class="badge b-code">Code</span>' if by_code else
               f'<span class="badge {"b-measure" if rule["method"] == "measure" else ""}">{esc(rule["method"].capitalize())}</span>']
     if rule['critical']:
         badges.append('<span class="badge b-crit">Critical</span>')
@@ -615,7 +641,8 @@ def rule_html(rule: dict, ctx: dict) -> str:
     with_source = any(images or other or notes for images, other, notes in sources)
     several_kinds = len({ctx['groups'][r['output_id']] for r in rows}) > 1
     head = (['Deliverable'] + (['Source'] if with_source else [])
-            + [f'<span class="ph ph-n">{n}</span>{esc(title(n))}' for n in numbers] + ['Check', 'Answer'])
+            + [f'<span class="ph ph-n">{n}</span>{esc(title(n))}' for n in numbers]
+            + ['Check', 'Answer on the 2026-09-28 run' if by_code else 'Answer'])
     body = []
     for r, (images, other, notes) in zip(rows, sources):
         name = r['deliverable']
@@ -629,7 +656,7 @@ def rule_html(rule: dict, ctx: dict) -> str:
         cells += [f'<td class="v" data-label="{esc(f"{n} {title(n)}")}">{esc(r["values"][n])}</td>' for n in numbers]
         cells.append(f'<td class="id" data-label="Check" data-check="{esc(r["check_id"])}" title="{esc(r["check_id"])}">'
                      f'{esc(r["check_id"].split("/")[-1])}</td>')
-        cells.append('<td class="ans" data-label="Answer">Yes / No</td>')
+        cells.append(code_answer(r['check_id']) if by_code else '<td class="ans" data-label="Answer">Yes / No</td>')
         reads = (f'<tr class="reads"><td colspan="{len(head)}"><span class="reads-label">Reads as</span> '
                  f'{filled_html(rule["template"], r)}</td></tr>')
         body.append(f'<tbody class="ck" data-output="{esc(r["output_id"])}" data-row="{esc(r["check_id"])}">'
@@ -637,10 +664,13 @@ def rule_html(rule: dict, ctx: dict) -> str:
     shared = (''.join(thumb_html(f, ctx) for f in rule_images) + (f'<div>{links_html(shared_other)}</div>' if shared_other else '')
               + ''.join(f'<small>{esc(n)}</small>' for n in shared_notes))
     ref = f'<div class="rule-ref"><strong>Reference for every row:</strong> {shared}</div>' if shared else ''
+    how = (f'<p class="rule-code"><strong>How the code checks:</strong> {" ".join(esc(h) for h in rule["code_how"])} '
+           f'A row comes back to a person when the code cannot read or find what it needs.</p>') if by_code else ''
+    note_label = 'Person\'s method, if a row comes back' if by_code else rule['method'].capitalize()
     return (f'<article class="rule" id="{rule["rule_id"]}"><div class="rule-head"><span class="rid">{rule["rule_id"]}</span>'
             f'{"".join(badges)}</div>'
-            f'<p class="rule-text">{template_html(rule["template"], labels)}</p>'
-            f'<p class="rule-note"><strong>{esc(rule["method"].capitalize())}:</strong> {template_html(rule["note_template"], labels)}</p>'
+            f'<p class="rule-text">{template_html(rule["template"], labels)}</p>{how}'
+            f'<p class="rule-note"><strong>{esc(note_label)}:</strong> {template_html(rule["note_template"], labels)}</p>'
             f'{ref}<p class="rule-scope"><strong>Applies to:</strong> {esc(rule["scope"])}</p>'
             f'<div class="rows-wrap"><table class="rows"><thead><tr>{"".join(f"<th>{h}</th>" for h in head)}</tr></thead>'
             f'{"".join(body)}</table></div></article>')
@@ -660,15 +690,30 @@ def k_sections(task_id: str, spec: dict, rules: list[dict], catalog: list[dict],
         by_question[rule['k_id']].append(rule)
     covered = auto_covered = total = 0
     blocks = []
+
+    def code_block(chosen):
+        if not chosen:
+            return ''
+        n = sum(len(r['rows']) for r in chosen)
+        back = sum(1 for r in chosen for row in r['rows'] if (PILOT.get(row['check_id']) or {}).get('status') == 'person')
+        back_note = f'; on the 2026-09-28 run {back} of them came back to a person' if back else ''
+        return (f'<details class="k-code"><summary>Answered by code: {len(chosen)} rule{"s" if len(chosen) != 1 else ""} · '
+                f'{n} check{"s" if n != 1 else ""}{back_note} <span>(open to see each rule and its rows)</span></summary>'
+                + ''.join(rule_html(r, ctx) for r in chosen) + '</details>')
     for cap in catalog:
         parts = [f'<section class="kcap"><h2>{esc(cap["id"])} · {esc(cap["name"])}</h2>'
                  f'<p class="k-measures">{esc(cap["measures"])} <em>Scored by {esc(cap["scored_by"])}.</em></p>']
         for q in cap['questions']:
             total += 1
             members = by_question.get(q['id'], [])
-            checks = sum(len(r['rows']) for r in members)
-            count = (f'{len(members)} rule{"s" if len(members) != 1 else ""} · {checks} check{"s" if checks != 1 else ""}'
-                     if members else '')
+            people = [r for r in members if r.get('answered_by') != 'code']
+            coded = [r for r in members if r.get('answered_by') == 'code']
+            checks = sum(len(r['rows']) for r in people)
+            count = (f'{len(people)} rule{"s" if len(people) != 1 else ""} · {checks} check{"s" if checks != 1 else ""}'
+                     if people else '')
+            if coded:
+                n = sum(len(r['rows']) for r in coded)
+                count += f'{" · " if count else ""}code: {n} check{"s" if n != 1 else ""}'
             badge = '<span class="objective" title="Objective question">Objective</span>' if q.get('objective') else ''
             parts.append(f'<div class="kq" id="{esc(q["id"])}"><h3>{esc(k_short(q["id"]))} · {esc(q["label"])}{badge}'
                          f'<span class="k-count">{count}</span></h3><p class="k-qtext">{esc(q["question"])}</p>')
@@ -676,14 +721,17 @@ def k_sections(task_id: str, spec: dict, rules: list[dict], catalog: list[dict],
                 covered += 1
                 if q['id'] == 'K2_Q3':
                     for part, title in BRAND_PARTS.items():
-                        chosen = [r for r in members if r['brand_part'] == part]
-                        if chosen:
+                        chosen = [r for r in people if r['brand_part'] == part]
+                        by_code = [r for r in coded if r['brand_part'] == part]
+                        if chosen or by_code:
                             n = sum(len(r['rows']) for r in chosen)
-                            parts.append(f'<div class="kpart"><h4>Brand-system rules: {esc(title)} '
-                                         f'({len(chosen)} rule{"s" if len(chosen) != 1 else ""} · {n} check{"s" if n != 1 else ""})</h4>'
-                                         + ''.join(rule_html(r, ctx) for r in chosen) + '</div>')
+                            head = (f'{len(chosen)} rule{"s" if len(chosen) != 1 else ""} · {n} check{"s" if n != 1 else ""}'
+                                    if chosen else 'all answered by code')
+                            parts.append(f'<div class="kpart"><h4>Brand-system rules: {esc(title)} ({head})</h4>'
+                                         + ''.join(rule_html(r, ctx) for r in chosen) + code_block(by_code) + '</div>')
                 else:
-                    parts.extend(rule_html(r, ctx) for r in members)
+                    parts.extend(rule_html(r, ctx) for r in people)
+                    parts.append(code_block(coded))
             else:
                 auto = [c for c in spec['verifiers_auto'] if AUTO2K.get((c.get('assertion') or {}).get('op')) == q['id']]
                 if auto:
@@ -702,7 +750,13 @@ def k_sections(task_id: str, spec: dict, rules: list[dict], catalog: list[dict],
 
 
 def write_verifier_page(task_id: str, spec: dict, rules: list[dict], catalog: list[dict], ctx: dict) -> None:
-    checks = sum(len(r['rows']) for r in rules)
+    people = [r for r in rules if r.get('answered_by') != 'code']
+    coded = [r for r in rules if r.get('answered_by') == 'code']
+    checks = sum(len(r['rows']) for r in people)
+    code_checks = sum(len(r['rows']) for r in coded)
+    moved_note = (f' <strong>{code_checks} further checks ({len(coded)} rules) are now answered by code</strong>: they stay under '
+                  f'their K question, marked Code, with how the code checks them. A row comes back to a person only when the '
+                  f'code cannot read or find what the check needs.') if coded else ''
     coverage, blocks = k_sections(task_id, spec, rules, catalog, ctx)
     options = ''.join(f'<option value="{esc(o["output_id"])}">{esc(o["name"])}</option>' for o in spec['deliverables'])
     page = f"""<!doctype html>
@@ -712,7 +766,7 @@ def write_verifier_page(task_id: str, spec: dict, rules: list[dict], catalog: li
 {nav(task_id, f'{task_id}-verifiers.html')}
 <header><h1>{esc(spec["task_name"])}: human verifiers</h1></header>
 <div class="intro">
-<p><strong>{checks} human checks, written as {len(rules)} rules.</strong> The checks and their K questions are the same as on the V7 site; only the layout changed. Checks that say the same thing about different deliverables are written once, as a rule, with one row per check.</p>
+<p><strong>{checks} human checks, written as {len(people)} rules.</strong>{moved_note} The checks and their K questions are the same as on the V7 site; only the layout changed. Checks that say the same thing about different deliverables are written once, as a rule, with one row per check.</p>
 </div>
 <section class="howto" aria-labelledby="howto-title"><h2 id="howto-title">How to read a rule</h2>{HOW_TO_READ}{example_html(rules, task_id)}
 <p class="k-coverage"><span class="badge b-k">K1 Q1</span> is the K question a rule scores. <span class="badge b-cond">Only if present</span>: the rule applies only when that element appears. <span class="badge b-crit">Critical</span>: a critical-failure check. Look or Measure is the checking method, explained under each rule.</p></section>
@@ -748,11 +802,30 @@ def write_brief_page(task_id: str, spec: dict, assets: list[dict], outputs: list
     (OUT / f'{task_id}.html').write_text(page, encoding='utf-8')
 
 
+def apply_moves(task_id: str, rules: list[dict], moves: dict) -> list[dict]:
+    """Mark each rule as answered by code (it moved, see moved_rules.json) or by a person."""
+    for rule in rules:
+        move = (moves.get(task_id) or {}).get(rule['rule_id'])
+        ids = [r['check_id'] for r in rule['rows']]
+        if move and move['verdict'] == 'moves':
+            if sorted(move['checks']) != sorted(ids):
+                raise ValueError(f'{task_id} {rule["rule_id"]}: moved checks do not match the rule rows')
+            rule['answered_by'], rule['code_how'] = 'code', move['how']
+        else:
+            rule['answered_by'], rule['code_how'] = 'person', []
+    return rules
+
+
+def load_moves() -> dict:
+    return json.loads(MOVES.read_text(encoding='utf-8')) if MOVES.exists() else {}
+
+
 def export_rule(task_id: str, rule: dict) -> dict:
     return {'rule_id': rule['rule_id'], 'section': rule['section'], 'k_id': rule['k_id'], 'k_label': rule['k_label'],
             'method': rule['method'], 'critical': rule['critical'], 'only_if_present': rule['conditional'],
             'scope': rule['scope'], 'template': rule['template'], 'note_template': rule['note_template'],
             'slot_labels': rule['slot_labels'], 'shared_reference': rule['shared_reference'],
+            'answered_by': rule.get('answered_by', 'person'), 'code_check': rule.get('code_how', []),
             'rows': [{k: v for k, v in r.items() if v is not None or k == 'deliverable_ref'} for r in rule['rows']]}
 
 
@@ -760,13 +833,23 @@ def write_index(summary: list[tuple[str, dict, list[dict]]]) -> None:
     example_task, _, example_rules = next(item for item in summary if item[0] == 'PHOTO-19')
     total_checks = sum(len(s['verifiers_human']) for _, s, _ in summary)
     total_rules = sum(len(r) for _, _, r in summary)
+    by_code = lambda rules: [x for x in rules if x.get('answered_by') == 'code']
+    code_checks = {tid: sum(len(x['rows']) for x in by_code(r)) for tid, _, r in summary}
+    total_code = sum(code_checks.values())
     rows = ''.join(
         f'<tr><td><a href="{tid}-verifiers.html">{tid}</a></td><td>{esc(s["task_name"])}</td>'
-        f'<td class="n">{len(s["deliverables"])}</td><td class="n">{len(s["verifiers_human"])}</td><td class="n">{len(r)}</td></tr>'
+        f'<td class="n">{len(s["deliverables"])}</td><td class="n">{len(s["verifiers_human"]) - code_checks[tid]}</td>'
+        f'<td class="n">{code_checks[tid]}</td><td class="n">{len(r)}</td></tr>'
         for tid, s, r in summary)
+    moved = (f'<p><strong>Now answered by code: {total_code} of the {total_checks} checks.</strong> These are facts code reads exactly '
+             f'from the delivered file: text in a PDF, text read by OCR, a supplied photo or logo found in the file, colours and sizes. '
+             f'Each moved rule stays under its K question, marked Code, with how the code checks it. Nothing needing judgement moved, '
+             f'and the code never passes what it cannot read: such a row comes back to a person. '
+             f'<a href="automation.html">Which rules moved, how each is checked, and the test results</a>.</p>') if total_code else ''
     items = ''.join(
         f'<li><a href="{tid}.html">{tid} - {esc(s["task_name"])}</a><br><span class="vlinks">'
-        f'<a href="{tid}-verifiers.html">Human verifiers ({len(s["verifiers_human"])} checks in {len(r)} rules)</a> · '
+        f'<a href="{tid}-verifiers.html">Human verifiers ({len(s["verifiers_human"]) - code_checks[tid]} checks for people, '
+        f'{code_checks[tid]} by code, in {len(r)} rules)</a> · '
         f'<a href="../index.html#{tid}/human">Same checks, one per row (V7 site)</a> · '
         f'<a href="../index.html#{tid}/auto">Auto ({len(s["verifiers_auto"])})</a> · '
         f'<a href="../index.html#{tid}/trajectory">Trajectory</a> · '
@@ -779,6 +862,7 @@ def write_index(summary: list[tuple[str, dict, list[dict]]]) -> None:
 <h1>Pilot task briefs, v2: grouped human verifiers</h1>
 <div class="intro">
 <p>The same 13 pilot tasks and the same {total_checks} human checks as <a href="../annotation-pilot/index.html">v1</a>. What changed is how the checks are shown: checks that say the same thing about different deliverables are written once, as a rule, with one row per check. {total_checks} checks now read as {total_rules} rules.</p>
+{moved}
 <p>Each task's verifier page keeps the V7 structure: K1 · Instruction adherence, K2 · Asset utilization and fidelity and K5 · Communication effectiveness, each question with its rules under it.</p>
 </div>
 <section class="howto" aria-labelledby="howto-title"><h2 id="howto-title">How to read a rule</h2>{HOW_TO_READ}{example_html(example_rules, example_task, link=True)}</section>
@@ -792,8 +876,8 @@ def write_index(summary: list[tuple[str, dict, list[dict]]]) -> None:
 </ul>
 <p>Under K2 Q3 · Brand-system compliance, rules are split by what they name: a palette colour, a typeface or type setting, or neither. Auto checks are unchanged and still run by code. <a href="../annotation-pilot/measurement-guide.html">Measurement guide and scoring policy</a>.</p>
 </div>
-<div class="scroll-x"><table class="summary"><thead><tr><th>Task</th><th>Name</th><th class="n">Deliverables</th><th class="n">Human checks</th><th class="n">Rules</th></tr></thead>
-<tbody>{rows}<tr><td><strong>Total</strong></td><td></td><td class="n">{sum(len(s["deliverables"]) for _, s, _ in summary)}</td><td class="n"><strong>{total_checks}</strong></td><td class="n"><strong>{total_rules}</strong></td></tr></tbody></table></div>
+<div class="scroll-x"><table class="summary"><thead><tr><th>Task</th><th>Name</th><th class="n">Deliverables</th><th class="n">Checks for people</th><th class="n">Checks by code</th><th class="n">Rules</th></tr></thead>
+<tbody>{rows}<tr><td><strong>Total</strong></td><td></td><td class="n">{sum(len(s["deliverables"]) for _, s, _ in summary)}</td><td class="n"><strong>{total_checks - total_code}</strong></td><td class="n"><strong>{total_code}</strong></td><td class="n"><strong>{total_rules}</strong></td></tr></tbody></table></div>
 <h2>Tasks</h2><ul class="rules-list">{items}</ul>
 <h2>Downloads</h2>
 <ul class="rules-list">
@@ -812,8 +896,9 @@ def main() -> None:
     summary = []
     catalog = k_catalog()
     rule_rows = [['task_id', 'rule_id', 'section', 'k_id', 'method', 'critical', 'only_if_present', 'scope', 'rule',
-                  'method_note', 'check_count', 'deliverable_count', 'check_ids']]
-    check_rows = [['task_id', 'rule_id', 'check_id', 'output_id', 'deliverable', 'file', 'values', 'check']]
+                  'method_note', 'check_count', 'deliverable_count', 'check_ids', 'answered_by', 'code_check']]
+    check_rows = [['task_id', 'rule_id', 'check_id', 'output_id', 'deliverable', 'file', 'values', 'check', 'answered_by']]
+    moves = load_moves()
     for task_id in TASK_IDS:
         folder = TASKS / task_id
         spec = json.loads((folder / 'TASK_SPEC.json').read_text(encoding='utf-8'))
@@ -823,7 +908,7 @@ def main() -> None:
                 if v['type'] == 'human'}
         if bank != {c['check_id']: c['check'] for c in spec['verifiers_human']}:
             raise ValueError(f'VERIFIERS.json and TASK_SPEC.json disagree on human checks for {task_id}')
-        rules = build_rules(spec)
+        rules = apply_moves(task_id, build_rules(spec), moves)
         kept = Counter(r['check_id'] for rule in rules for r in rule['rows'])
         if set(kept) != set(bank) or max(kept.values()) != 1:
             raise ValueError(f'{task_id}: grouping lost or repeated a check')
@@ -843,11 +928,11 @@ def main() -> None:
                               'yes' if rule['critical'] else '', 'yes' if rule['conditional'] else '', rule['scope'],
                               template_text(rule['template'], labels), template_text(rule['note_template'], labels),
                               len(rule['rows']), len({r['output_id'] for r in rule['rows']}),
-                              ' '.join(r['check_id'] for r in rule['rows'])])
+                              ' '.join(r['check_id'] for r in rule['rows']), rule['answered_by'], ' '.join(rule['code_how'])])
             for r in rule['rows']:
                 values = '; '.join(f"{n}={v}" for n, v in sorted(r['values'].items(), key=lambda kv: int(kv[0])))
                 check_rows.append([task_id, rule['rule_id'], r['check_id'], r['output_id'], r['deliverable'], r['file'],
-                                   values, r['check']])
+                                   values, r['check'], rule['answered_by']])
         summary.append((task_id, spec, rules))
         singles = sum(1 for r in rules if len(r['rows']) == 1)
         print(f'{task_id}: {len(kept)} human checks -> {len(rules)} rules ({singles} single-check rules)')
