@@ -1113,8 +1113,10 @@
     ],
     "note": "Acceptance requirement: at 320 px display width, the title text has no clipped characters."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Checks the named text is read in full inside the page or image (for a mark, its letters read as a line of their own)."
+   ],
    "rows": [
     {
      "check_id": "MOTION-11/thumbnail-we-broke-the-map/H032",
@@ -2158,8 +2160,10 @@
     "2": "title"
    },
    "shared_reference": null,
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Searches the thumbnail for frames of each capture video."
+   ],
    "rows": [
     {
      "check_id": "MOTION-11/thumbnail-we-broke-the-map/H007",
@@ -11641,8 +11645,10 @@
     "assets": [],
     "note": "Type system: the title is the step 01 and 02 stack at 190 px and 150 px; body is 54 px. Required content, pinned: An authored reveal of the channel name STATIC FOX, set as a title stack, landing on a held end card."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the held last frame of the video and compares text sizes."
+   ],
    "rows": [
     {
      "check_id": "MOTION-11/channel-animation/H009",

@@ -60,7 +60,10 @@ def contains(haystack: str, needle: str, case: bool, spaced: bool = True) -> boo
     h, n = canon(haystack, case), canon(needle, case)
     if not n:
         return False
-    if re.search(r'(?<![\w])' + re.escape(n) + r'(?![\w])', h):
+    # a word boundary only where the needle starts or ends with a letter or digit: "&nbsp;" is found in "8:00&nbsp;PM"
+    lead = r'(?<![\w])' if re.match(r'\w', n) else ''
+    trail = r'(?![\w])' if re.search(r'\w$', n) else ''
+    if re.search(lead + re.escape(n) + trail, h):
         return True
     if not spaced:
         return False
@@ -1254,3 +1257,8 @@ OPS = {
 
 def run(path: Path, assertion: dict):
     return OPS[assertion['op']](Path(path), assertion)
+
+
+# round 2 (2026-10-28): layout, colour-behind-text, geometry and picture operations, in their own module
+from objective_ops_r2 import OPS_R2  # noqa: E402
+OPS.update(OPS_R2)

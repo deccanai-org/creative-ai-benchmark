@@ -20,6 +20,60 @@
     "made_bad": {
      "pass": 2,
      "fail": 1
+    },
+    "made_bad2": {
+     "pass": 3
+    }
+   },
+   "wrong": []
+  },
+  "R002": {
+   "verdict": "moves",
+   "why": "the code decided 27 of 27 test rows with no wrong answer",
+   "checks": [
+    "LAYOUT-12/poster-direction-type-led/H008",
+    "LAYOUT-12/poster-direction-type-led/H009",
+    "LAYOUT-12/poster-direction-type-led/H063",
+    "LAYOUT-12/poster-direction-type-led/H065",
+    "LAYOUT-12/poster-direction-type-led/H067",
+    "LAYOUT-12/poster-direction-type-led/H068",
+    "LAYOUT-12/poster-direction-type-led/H070",
+    "LAYOUT-12/poster-direction-type-led/H072",
+    "LAYOUT-12/poster-direction-type-led/H074",
+    "LAYOUT-12/poster-direction-image-led/H006",
+    "LAYOUT-12/poster-direction-image-led/H007",
+    "LAYOUT-12/poster-direction-image-led/H062",
+    "LAYOUT-12/poster-direction-image-led/H064",
+    "LAYOUT-12/poster-direction-image-led/H066",
+    "LAYOUT-12/poster-direction-image-led/H067",
+    "LAYOUT-12/poster-direction-image-led/H069",
+    "LAYOUT-12/poster-direction-image-led/H071",
+    "LAYOUT-12/poster-direction-image-led/H073",
+    "LAYOUT-12/poster-direction-graphic-led/H005",
+    "LAYOUT-12/poster-direction-graphic-led/H006",
+    "LAYOUT-12/poster-direction-graphic-led/H062",
+    "LAYOUT-12/poster-direction-graphic-led/H064",
+    "LAYOUT-12/poster-direction-graphic-led/H066",
+    "LAYOUT-12/poster-direction-graphic-led/H067",
+    "LAYOUT-12/poster-direction-graphic-led/H069",
+    "LAYOUT-12/poster-direction-graphic-led/H071",
+    "LAYOUT-12/poster-direction-graphic-led/H073"
+   ],
+   "k_id": "K1_Q1",
+   "critical": false,
+   "how": [
+    "Reads where each value stands and checks the value that belongs to this name (by its section, column or line) is the expected one."
+   ],
+   "test": {
+    "made_good": {
+     "pass": 27
+    },
+    "made_bad": {
+     "pass": 27
+    },
+    "made_bad2": {
+     "pass": 26,
+     "fail": 1
     }
    },
    "wrong": []
@@ -45,6 +99,9 @@
     "made_bad": {
      "fail": 2,
      "pass": 2
+    },
+    "made_bad2": {
+     "pass": 4
     }
    },
    "wrong": []
@@ -69,6 +126,57 @@
     "made_bad": {
      "fail": 1,
      "pass": 2
+    },
+    "made_bad2": {
+     "pass": 3
+    }
+   },
+   "wrong": []
+  },
+  "R005": {
+   "verdict": "moves",
+   "why": "the code decided 24 of 24 test rows with no wrong answer",
+   "checks": [
+    "LAYOUT-12/poster-direction-type-led/H012",
+    "LAYOUT-12/poster-direction-type-led/H013",
+    "LAYOUT-12/poster-direction-type-led/H064",
+    "LAYOUT-12/poster-direction-type-led/H066",
+    "LAYOUT-12/poster-direction-type-led/H069",
+    "LAYOUT-12/poster-direction-type-led/H071",
+    "LAYOUT-12/poster-direction-type-led/H073",
+    "LAYOUT-12/poster-direction-type-led/H075",
+    "LAYOUT-12/poster-direction-image-led/H010",
+    "LAYOUT-12/poster-direction-image-led/H011",
+    "LAYOUT-12/poster-direction-image-led/H063",
+    "LAYOUT-12/poster-direction-image-led/H065",
+    "LAYOUT-12/poster-direction-image-led/H068",
+    "LAYOUT-12/poster-direction-image-led/H070",
+    "LAYOUT-12/poster-direction-image-led/H072",
+    "LAYOUT-12/poster-direction-image-led/H074",
+    "LAYOUT-12/poster-direction-graphic-led/H009",
+    "LAYOUT-12/poster-direction-graphic-led/H010",
+    "LAYOUT-12/poster-direction-graphic-led/H063",
+    "LAYOUT-12/poster-direction-graphic-led/H065",
+    "LAYOUT-12/poster-direction-graphic-led/H068",
+    "LAYOUT-12/poster-direction-graphic-led/H070",
+    "LAYOUT-12/poster-direction-graphic-led/H072",
+    "LAYOUT-12/poster-direction-graphic-led/H074"
+   ],
+   "k_id": "K1_Q1",
+   "critical": false,
+   "how": [
+    "Reads where each value stands and checks the value that belongs to this name (by its section, column or line) is the expected one."
+   ],
+   "test": {
+    "made_good": {
+     "pass": 24
+    },
+    "made_bad": {
+     "pass": 24
+    },
+    "made_bad2": {
+     "pass": 23,
+     "fail": 1
     }
    },
    "wrong": []
@@ -91,6 +199,9 @@
      "pass": 3
     },
     "made_bad": {
+     "pass": 3
+    },
+    "made_bad2": {
      "pass": 3
     }
    },
@@ -115,6 +226,33 @@
     },
     "made_bad": {
      "pass": 3
+    },
+    "made_bad2": {
+     "pass": 3
+    }
+   },
+   "wrong": []
+  },
+  "R008": {
+   "verdict": "moves",
+   "why": "the code decided 1 of 1 test rows with no wrong answer",
+   "checks": [
+    "LAYOUT-12/promoter-deck/H001"
+   ],
+   "k_id": "K1_Q1",
+   "critical": false,
+   "how": [
+    "Checks every page of the PDF carries text, a picture or a shape."
+   ],
+   "test": {
+    "made_good": {
+     "pass": 1
+    },
+    "made_bad": {
+     "pass": 1
+    },
+    "made_bad2": {
+     "pass": 1
     }
    },
    "wrong": []
@@ -142,13 +280,16 @@
     },
     "made_bad": {
      "pass": 7
+    },
+    "made_bad2": {
+     "pass": 7
     }
    },
    "wrong": []
   },
   "R010": {
    "verdict": "moves",
-   "why": "the code decided 7 of 9 test rows with no wrong answer",
+   "why": "the code decided 9 of 9 test rows with no wrong answer",
    "checks": [
     "LAYOUT-12/release-post-r002/H003",
     "LAYOUT-12/release-post-r003/H003",
@@ -167,12 +308,14 @@
    ],
    "test": {
     "made_good": {
-     "person": 2,
-     "pass": 7
+     "pass": 9
     },
     "made_bad": {
-     "person": 2,
-     "pass": 7
+     "pass": 9
+    },
+    "made_bad2": {
+     "pass": 7,
+     "person": 2
     }
    },
    "wrong": []
@@ -202,6 +345,9 @@
     },
     "made_bad": {
      "pass": 9
+    },
+    "made_bad2": {
+     "pass": 9
     }
    },
    "wrong": []
@@ -229,6 +375,9 @@
      "pass": 8
     },
     "made_bad": {
+     "pass": 8
+    },
+    "made_bad2": {
      "pass": 8
     }
    },
@@ -259,6 +408,9 @@
     },
     "made_bad": {
      "pass": 9
+    },
+    "made_bad2": {
+     "pass": 9
     }
    },
    "wrong": []
@@ -287,8 +439,146 @@
      "pass": 9
     },
     "made_bad": {
-     "person": 1,
+     "fail": 1,
      "pass": 8
+    },
+    "made_bad2": {
+     "pass": 8,
+     "person": 1
+    }
+   },
+   "wrong": []
+  },
+  "R015": {
+   "verdict": "moves",
+   "why": "the code decided 8 of 8 test rows with no wrong answer",
+   "checks": [
+    "LAYOUT-12/release-post-r002/H016",
+    "LAYOUT-12/release-post-r003/H010",
+    "LAYOUT-12/release-post-r004/H009",
+    "LAYOUT-12/release-post-r005/H009",
+    "LAYOUT-12/release-post-r006/H009",
+    "LAYOUT-12/release-post-r007/H009",
+    "LAYOUT-12/release-post-r008/H009",
+    "LAYOUT-12/release-post-r010/H009"
+   ],
+   "k_id": "K1_Q1",
+   "critical": false,
+   "how": [
+    "Runs each part; all must pass: Reads all text and checks none of the named words or patterns appears; Finds every weekday shown beside a date and checks it against the 2026 calendar."
+   ],
+   "test": {
+    "made_good": {
+     "pass": 8
+    },
+    "made_bad": {
+     "pass": 8
+    },
+    "made_bad2": {
+     "pass": 4,
+     "fail": 3,
+     "person": 1
+    }
+   },
+   "wrong": []
+  },
+  "R017": {
+   "verdict": "moves",
+   "why": "the code decided 6 of 6 test rows with no wrong answer",
+   "checks": [
+    "LAYOUT-12/promoter-deck/H003",
+    "LAYOUT-12/promoter-deck/H053",
+    "LAYOUT-12/promoter-deck/H054",
+    "LAYOUT-12/promoter-deck/H055",
+    "LAYOUT-12/promoter-deck/H056",
+    "LAYOUT-12/promoter-deck/H057"
+   ],
+   "k_id": "K1_Q1",
+   "critical": false,
+   "how": [
+    "Reads where each value stands and checks the value that belongs to this name (by its section, column or line) is the expected one."
+   ],
+   "test": {
+    "made_good": {
+     "pass": 6
+    },
+    "made_bad": {
+     "pass": 6
+    },
+    "made_bad2": {
+     "pass": 6
+    }
+   },
+   "wrong": []
+  },
+  "R018": {
+   "verdict": "moves",
+   "why": "the code decided 1 of 1 test rows with no wrong answer",
+   "checks": [
+    "LAYOUT-12/promoter-deck/H004"
+   ],
+   "k_id": "K1_Q1",
+   "critical": false,
+   "how": [
+    "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+   ],
+   "test": {
+    "made_good": {
+     "pass": 1
+    },
+    "made_bad": {
+     "fail": 1
+    },
+    "made_bad2": {
+     "pass": 1
+    }
+   },
+   "wrong": []
+  },
+  "R019": {
+   "verdict": "moves",
+   "why": "the code decided 1 of 1 test rows with no wrong answer",
+   "checks": [
+    "LAYOUT-12/promoter-deck/H005"
+   ],
+   "k_id": "K1_Q1",
+   "critical": false,
+   "how": [
+    "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+   ],
+   "test": {
+    "made_good": {
+     "pass": 1
+    },
+    "made_bad": {
+     "pass": 1
+    },
+    "made_bad2": {
+     "pass": 1
+    }
+   },
+   "wrong": []
+  },
+  "R020": {
+   "verdict": "moves",
+   "why": "the code decided 1 of 1 test rows with no wrong answer",
+   "checks": [
+    "LAYOUT-12/promoter-deck/H007"
+   ],
+   "k_id": "K1_Q1",
+   "critical": false,
+   "how": [
+    "Renders the delivered poster and searches the deck for it."
+   ],
+   "test": {
+    "made_good": {
+     "pass": 1
+    },
+    "made_bad": {
+     "pass": 1
+    },
+    "made_bad2": {
+     "person": 1
     }
    },
    "wrong": []
@@ -309,6 +599,9 @@
      "pass": 1
     },
     "made_bad": {
+     "pass": 1
+    },
+    "made_bad2": {
      "pass": 1
     }
    },
@@ -331,6 +624,9 @@
     },
     "made_bad": {
      "pass": 1
+    },
+    "made_bad2": {
+     "pass": 1
     }
    },
    "wrong": []
@@ -352,6 +648,136 @@
     },
     "made_bad": {
      "pass": 1
+    },
+    "made_bad2": {
+     "pass": 1
+    }
+   },
+   "wrong": []
+  },
+  "R024": {
+   "verdict": "moves",
+   "why": "the code decided 3 of 3 test rows with no wrong answer",
+   "checks": [
+    "LAYOUT-12/poster-direction-type-led/H051",
+    "LAYOUT-12/poster-direction-image-led/H050",
+    "LAYOUT-12/poster-direction-graphic-led/H050"
+   ],
+   "k_id": "K1_Q1",
+   "critical": false,
+   "how": [
+    "Finds the supplied wordmark, then checks the act name is also typeset beside it."
+   ],
+   "test": {
+    "made_good": {
+     "pass": 3
+    },
+    "made_bad": {
+     "pass": 3
+    },
+    "made_bad2": {
+     "pass": 3
+    }
+   },
+   "wrong": []
+  },
+  "R025": {
+   "verdict": "moves",
+   "why": "the code decided 3 of 3 test rows with no wrong answer",
+   "checks": [
+    "LAYOUT-12/poster-direction-type-led/H053",
+    "LAYOUT-12/poster-direction-image-led/H052",
+    "LAYOUT-12/poster-direction-graphic-led/H052"
+   ],
+   "k_id": "K1_Q1",
+   "critical": false,
+   "how": [
+    "Finds the supplied wordmark, then checks the act name is also typeset beside it."
+   ],
+   "test": {
+    "made_good": {
+     "pass": 3
+    },
+    "made_bad": {
+     "pass": 3
+    },
+    "made_bad2": {
+     "pass": 3
+    }
+   },
+   "wrong": []
+  },
+  "R026": {
+   "verdict": "moves",
+   "why": "the code decided 3 of 3 test rows with no wrong answer",
+   "checks": [
+    "LAYOUT-12/poster-direction-type-led/H058",
+    "LAYOUT-12/poster-direction-image-led/H057",
+    "LAYOUT-12/poster-direction-graphic-led/H057"
+   ],
+   "k_id": "K1_Q1",
+   "critical": false,
+   "how": [
+    "Reads all text and checks none of the named words or patterns appears."
+   ],
+   "test": {
+    "made_good": {
+     "pass": 3
+    },
+    "made_bad": {
+     "pass": 3
+    },
+    "made_bad2": {
+     "pass": 2,
+     "fail": 1
+    }
+   },
+   "wrong": []
+  },
+  "R027": {
+   "verdict": "moves",
+   "why": "the code decided 1 of 1 test rows with no wrong answer",
+   "checks": [
+    "LAYOUT-12/promoter-deck/H036"
+   ],
+   "k_id": "K1_Q1",
+   "critical": false,
+   "how": [
+    "Renders the delivered poster and searches the deck for it."
+   ],
+   "test": {
+    "made_good": {
+     "pass": 1
+    },
+    "made_bad": {
+     "pass": 1
+    },
+    "made_bad2": {
+     "person": 1
+    }
+   },
+   "wrong": []
+  },
+  "R028": {
+   "verdict": "moves",
+   "why": "the code decided 1 of 1 test rows with no wrong answer",
+   "checks": [
+    "LAYOUT-12/promoter-deck/H037"
+   ],
+   "k_id": "K1_Q1",
+   "critical": false,
+   "how": [
+    "Renders the delivered poster and searches the deck for it."
+   ],
+   "test": {
+    "made_good": {
+     "pass": 1
+    },
+    "made_bad": {
+     "pass": 1
+    },
+    "made_bad2": {
+     "person": 1
     }
    },
    "wrong": []
@@ -380,6 +806,57 @@
     },
     "made_bad": {
      "pass": 8
+    },
+    "made_bad2": {
+     "pass": 8
+    }
+   },
+   "wrong": []
+  },
+  "R032": {
+   "verdict": "moves",
+   "why": "the code decided 1 of 1 test rows with no wrong answer",
+   "checks": [
+    "LAYOUT-12/release-post-r002/H049"
+   ],
+   "k_id": "K1_Q1",
+   "critical": false,
+   "how": [
+    "Finds the supplied wordmark, then checks the act name is also typeset beside it."
+   ],
+   "test": {
+    "made_good": {
+     "pass": 1
+    },
+    "made_bad": {
+     "pass": 1
+    },
+    "made_bad2": {
+     "fail": 1
+    }
+   },
+   "wrong": []
+  },
+  "R033": {
+   "verdict": "moves",
+   "why": "the code decided 1 of 1 test rows with no wrong answer",
+   "checks": [
+    "LAYOUT-12/release-post-r003/H044"
+   ],
+   "k_id": "K1_Q1",
+   "critical": false,
+   "how": [
+    "Finds the supplied wordmark, then checks the act name is also typeset beside it."
+   ],
+   "test": {
+    "made_good": {
+     "pass": 1
+    },
+    "made_bad": {
+     "pass": 1
+    },
+    "made_bad2": {
+     "person": 1
     }
    },
    "wrong": []
@@ -401,6 +878,118 @@
     },
     "made_bad": {
      "pass": 1
+    },
+    "made_bad2": {
+     "pass": 1
+    }
+   },
+   "wrong": []
+  },
+  "R036": {
+   "verdict": "moves",
+   "why": "the code decided 1 of 1 test rows with no wrong answer",
+   "checks": [
+    "LAYOUT-12/promoter-deck/H067"
+   ],
+   "k_id": "K1_Q1",
+   "critical": false,
+   "how": [
+    "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+   ],
+   "test": {
+    "made_good": {
+     "pass": 1
+    },
+    "made_bad": {
+     "pass": 1
+    },
+    "made_bad2": {
+     "pass": 1
+    }
+   },
+   "wrong": []
+  },
+  "R037": {
+   "verdict": "moves",
+   "why": "the code decided 1 of 1 test rows with no wrong answer",
+   "checks": [
+    "LAYOUT-12/promoter-deck/H068"
+   ],
+   "k_id": "K1_Q1",
+   "critical": false,
+   "how": [
+    "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+   ],
+   "test": {
+    "made_good": {
+     "pass": 1
+    },
+    "made_bad": {
+     "pass": 1
+    },
+    "made_bad2": {
+     "pass": 1
+    }
+   },
+   "wrong": []
+  },
+  "R038": {
+   "verdict": "moves",
+   "why": "the code decided 3 of 3 test rows with no wrong answer",
+   "checks": [
+    "LAYOUT-12/poster-direction-type-led/H002",
+    "LAYOUT-12/poster-direction-image-led/H002",
+    "LAYOUT-12/poster-direction-graphic-led/H002"
+   ],
+   "k_id": "K1_Q2",
+   "critical": false,
+   "how": [
+    "Checks each named text lies fully inside the page or image."
+   ],
+   "test": {
+    "made_good": {
+     "pass": 3
+    },
+    "made_bad": {
+     "pass": 3
+    },
+    "made_bad2": {
+     "pass": 3
+    }
+   },
+   "wrong": []
+  },
+  "R039": {
+   "verdict": "moves",
+   "why": "the code decided 9 of 9 test rows with no wrong answer",
+   "checks": [
+    "LAYOUT-12/release-post-r002/H002",
+    "LAYOUT-12/release-post-r003/H002",
+    "LAYOUT-12/release-post-r004/H002",
+    "LAYOUT-12/release-post-r005/H002",
+    "LAYOUT-12/release-post-r006/H002",
+    "LAYOUT-12/release-post-r007/H002",
+    "LAYOUT-12/release-post-r008/H002",
+    "LAYOUT-12/release-post-r009/H002",
+    "LAYOUT-12/release-post-r010/H002"
+   ],
+   "k_id": "K1_Q2",
+   "critical": false,
+   "how": [
+    "Checks the named text is read in full inside the page or image (for a mark, its letters read as a line of their own)."
+   ],
+   "test": {
+    "made_good": {
+     "pass": 9
+    },
+    "made_bad": {
+     "person": 1,
+     "pass": 8
+    },
+    "made_bad2": {
+     "pass": 7,
+     "fail": 1,
+     "person": 1
     }
    },
    "wrong": []
@@ -424,13 +1013,42 @@
     },
     "made_bad": {
      "pass": 3
+    },
+    "made_bad2": {
+     "pass": 3
+    }
+   },
+   "wrong": []
+  },
+  "R059": {
+   "verdict": "moves",
+   "why": "the code decided 2 of 2 test rows with no wrong answer",
+   "checks": [
+    "LAYOUT-12/release-post-r005/H001",
+    "LAYOUT-12/release-post-r006/H001"
+   ],
+   "k_id": "K1_Q5",
+   "critical": true,
+   "how": [
+    "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+   ],
+   "test": {
+    "made_good": {
+     "pass": 2
+    },
+    "made_bad": {
+     "pass": 2
+    },
+    "made_bad2": {
+     "fail": 1,
+     "pass": 1
     }
    },
    "wrong": []
   },
   "R060": {
-   "verdict": "stays",
-   "why": "the code decided only 0 of 1 test rows; the rest came back to a person",
+   "verdict": "moves",
+   "why": "the code decided 1 of 1 test rows with no wrong answer",
    "checks": [
     "LAYOUT-12/release-post-r007/H006"
    ],
@@ -441,9 +1059,12 @@
    ],
    "test": {
     "made_good": {
-     "person": 1
+     "pass": 1
     },
     "made_bad": {
+     "fail": 1
+    },
+    "made_bad2": {
      "person": 1
     }
    },
@@ -478,6 +1099,9 @@
     "made_bad": {
      "pass": 11,
      "fail": 1
+    },
+    "made_bad2": {
+     "pass": 12
     }
    },
    "wrong": []
@@ -499,6 +1123,35 @@
     },
     "made_bad": {
      "pass": 1
+    },
+    "made_bad2": {
+     "pass": 1
+    }
+   },
+   "wrong": []
+  },
+  "R077": {
+   "verdict": "moves",
+   "why": "the code decided 3 of 3 test rows with no wrong answer",
+   "checks": [
+    "LAYOUT-12/poster-direction-type-led/H036",
+    "LAYOUT-12/poster-direction-image-led/H035",
+    "LAYOUT-12/poster-direction-graphic-led/H035"
+   ],
+   "k_id": "K2_Q3",
+   "critical": false,
+   "how": [
+    "Reads the font, size, letter case or colour of the named text from the PDF."
+   ],
+   "test": {
+    "made_good": {
+     "pass": 3
+    },
+    "made_bad": {
+     "pass": 3
+    },
+    "made_bad2": {
+     "pass": 3
     }
    },
    "wrong": []
@@ -522,6 +1175,33 @@
     },
     "made_bad": {
      "pass": 3
+    },
+    "made_bad2": {
+     "pass": 3
+    }
+   },
+   "wrong": []
+  },
+  "R086": {
+   "verdict": "moves",
+   "why": "the code decided 1 of 1 test rows with no wrong answer",
+   "checks": [
+    "LAYOUT-12/promoter-deck/H027"
+   ],
+   "k_id": "K2_Q3",
+   "critical": false,
+   "how": [
+    "Reads the font, size, letter case or colour of the named text from the PDF."
+   ],
+   "test": {
+    "made_good": {
+     "pass": 1
+    },
+    "made_bad": {
+     "pass": 1
+    },
+    "made_bad2": {
+     "pass": 1
     }
    },
    "wrong": []
@@ -542,6 +1222,9 @@
      "pass": 1
     },
     "made_bad": {
+     "pass": 1
+    },
+    "made_bad2": {
      "pass": 1
     }
    },
@@ -566,6 +1249,9 @@
     },
     "made_bad": {
      "pass": 3
+    },
+    "made_bad2": {
+     "pass": 3
     }
    },
    "wrong": []
@@ -589,6 +1275,9 @@
     },
     "made_bad": {
      "pass": 3
+    },
+    "made_bad2": {
+     "pass": 3
     }
    },
    "wrong": []
@@ -609,6 +1298,9 @@
      "pass": 1
     },
     "made_bad": {
+     "pass": 1
+    },
+    "made_bad2": {
      "pass": 1
     }
    },
@@ -631,6 +1323,9 @@
     },
     "made_bad": {
      "pass": 1
+    },
+    "made_bad2": {
+     "pass": 1
     }
    },
    "wrong": []
@@ -651,6 +1346,9 @@
      "pass": 1
     },
     "made_bad": {
+     "pass": 1
+    },
+    "made_bad2": {
      "pass": 1
     }
    },
@@ -673,6 +1371,181 @@
     },
     "made_bad": {
      "pass": 1
+    },
+    "made_bad2": {
+     "pass": 1
+    }
+   },
+   "wrong": []
+  },
+  "R101": {
+   "verdict": "stays",
+   "why": "the code decided only 0 of 1 test rows; the rest came back to a person",
+   "checks": [
+    "LAYOUT-12/promoter-deck/H052"
+   ],
+   "k_id": "K2_Q3",
+   "critical": false,
+   "how": [
+    "Finds the supplied wordmark and reads its ink and the ground around it."
+   ],
+   "test": {
+    "made_good": {
+     "person": 1
+    },
+    "made_bad": {
+     "person": 1
+    },
+    "made_bad2": {
+     "person": 1
+    }
+   },
+   "wrong": []
+  },
+  "R105": {
+   "verdict": "moves",
+   "why": "the code decided 3 of 3 test rows with no wrong answer",
+   "checks": [
+    "LAYOUT-12/poster-direction-type-led/H080",
+    "LAYOUT-12/poster-direction-image-led/H079",
+    "LAYOUT-12/poster-direction-graphic-led/H079"
+   ],
+   "k_id": "K2_Q3",
+   "critical": false,
+   "how": [
+    "Reads each line's colour from the PDF and the colour behind it from the rendered page, and checks the pairing."
+   ],
+   "test": {
+    "made_good": {
+     "pass": 3
+    },
+    "made_bad": {
+     "pass": 3
+    },
+    "made_bad2": {
+     "pass": 3
+    }
+   },
+   "wrong": []
+  },
+  "R106": {
+   "verdict": "moves",
+   "why": "the code decided 1 of 1 test rows with no wrong answer",
+   "checks": [
+    "LAYOUT-12/promoter-deck/H059"
+   ],
+   "k_id": "K2_Q3",
+   "critical": false,
+   "how": [
+    "Reads each line's colour from the PDF and the colour behind it from the rendered page, and checks the pairing."
+   ],
+   "test": {
+    "made_good": {
+     "pass": 1
+    },
+    "made_bad": {
+     "pass": 1
+    },
+    "made_bad2": {
+     "pass": 1
+    }
+   },
+   "wrong": []
+  },
+  "R110": {
+   "verdict": "moves",
+   "why": "the code decided 1 of 1 test rows with no wrong answer",
+   "checks": [
+    "LAYOUT-12/promoter-deck/H060"
+   ],
+   "k_id": "K2_Q3",
+   "critical": false,
+   "how": [
+    "Finds the supplied wordmark and reads its ink and the ground around it."
+   ],
+   "test": {
+    "made_good": {
+     "pass": 1
+    },
+    "made_bad": {
+     "pass": 1
+    },
+    "made_bad2": {
+     "pass": 1
+    }
+   },
+   "wrong": []
+  },
+  "R111": {
+   "verdict": "stays",
+   "why": "the code decided only 0 of 1 test rows; the rest came back to a person",
+   "checks": [
+    "LAYOUT-12/promoter-deck/H061"
+   ],
+   "k_id": "K2_Q3",
+   "critical": false,
+   "how": [
+    "Finds the supplied wordmark and reads its ink and the ground around it."
+   ],
+   "test": {
+    "made_good": {
+     "person": 1
+    },
+    "made_bad": {
+     "person": 1
+    },
+    "made_bad2": {
+     "person": 1
+    }
+   },
+   "wrong": []
+  },
+  "R112": {
+   "verdict": "moves",
+   "why": "the code decided 1 of 1 test rows with no wrong answer",
+   "checks": [
+    "LAYOUT-12/promoter-deck/H062"
+   ],
+   "k_id": "K2_Q3",
+   "critical": false,
+   "how": [
+    "Finds the supplied wordmark and reads its ink and the ground around it."
+   ],
+   "test": {
+    "made_good": {
+     "pass": 1
+    },
+    "made_bad": {
+     "pass": 1
+    },
+    "made_bad2": {
+     "pass": 1
+    }
+   },
+   "wrong": []
+  },
+  "R115": {
+   "verdict": "moves",
+   "why": "the code decided 3 of 3 test rows with no wrong answer",
+   "checks": [
+    "LAYOUT-12/poster-direction-type-led/R13-act-name-text-family",
+    "LAYOUT-12/poster-direction-image-led/R13-act-name-text-family",
+    "LAYOUT-12/poster-direction-graphic-led/R13-act-name-text-family"
+   ],
+   "k_id": "K2_Q3",
+   "critical": false,
+   "how": [
+    "Reads the font, size, letter case or colour of the named text from the PDF."
+   ],
+   "test": {
+    "made_good": {
+     "pass": 3
+    },
+    "made_bad": {
+     "pass": 3
+    },
+    "made_bad2": {
+     "pass": 3
     }
    },
    "wrong": []
@@ -696,6 +1569,9 @@
     },
     "made_bad": {
      "pass": 3
+    },
+    "made_bad2": {
+     "pass": 3
     }
    },
    "wrong": []
@@ -717,6 +1593,9 @@
     },
     "made_bad": {
      "pass": 1
+    },
+    "made_bad2": {
+     "pass": 1
     }
    },
    "wrong": []
@@ -737,6 +1616,9 @@
      "pass": 1
     },
     "made_bad": {
+     "pass": 1
+    },
+    "made_bad2": {
      "pass": 1
     }
    },
@@ -761,6 +1643,9 @@
     },
     "made_bad": {
      "pass": 3
+    },
+    "made_bad2": {
+     "pass": 3
     }
    },
    "wrong": []
@@ -784,6 +1669,9 @@
     },
     "made_bad": {
      "pass": 3
+    },
+    "made_bad2": {
+     "pass": 3
     }
    },
    "wrong": []
@@ -805,6 +1693,9 @@
     },
     "made_bad": {
      "pass": 1
+    },
+    "made_bad2": {
+     "pass": 1
     }
    },
    "wrong": []
@@ -825,6 +1716,9 @@
      "pass": 1
     },
     "made_bad": {
+     "pass": 1
+    },
+    "made_bad2": {
      "pass": 1
     }
    },
@@ -850,6 +1744,9 @@
     "made_bad": {
      "pass": 2,
      "fail": 1
+    },
+    "made_bad2": {
+     "pass": 3
     }
    },
    "wrong": []
@@ -872,6 +1769,9 @@
      "pass": 3
     },
     "made_bad": {
+     "pass": 3
+    },
+    "made_bad2": {
      "pass": 3
     }
    },
@@ -896,6 +1796,35 @@
     },
     "made_bad": {
      "pass": 3
+    },
+    "made_bad2": {
+     "pass": 3
+    }
+   },
+   "wrong": []
+  },
+  "R135": {
+   "verdict": "moves",
+   "why": "the code decided 3 of 3 test rows with no wrong answer",
+   "checks": [
+    "LAYOUT-12/poster-direction-type-led/H083",
+    "LAYOUT-12/poster-direction-image-led/H082",
+    "LAYOUT-12/poster-direction-graphic-led/H082"
+   ],
+   "k_id": "K2_Q3",
+   "critical": false,
+   "how": [
+    "Reads the font, size, letter case or colour of the named text from the PDF."
+   ],
+   "test": {
+    "made_good": {
+     "pass": 3
+    },
+    "made_bad": {
+     "pass": 3
+    },
+    "made_bad2": {
+     "pass": 3
     }
    },
    "wrong": []
@@ -918,6 +1847,9 @@
      "pass": 3
     },
     "made_bad": {
+     "pass": 3
+    },
+    "made_bad2": {
      "pass": 3
     }
    },
@@ -942,6 +1874,9 @@
     },
     "made_bad": {
      "pass": 3
+    },
+    "made_bad2": {
+     "pass": 3
     }
    },
    "wrong": []
@@ -962,6 +1897,9 @@
      "pass": 1
     },
     "made_bad": {
+     "pass": 1
+    },
+    "made_bad2": {
      "pass": 1
     }
    },
@@ -984,6 +1922,9 @@
     },
     "made_bad": {
      "pass": 1
+    },
+    "made_bad2": {
+     "pass": 1
     }
    },
    "wrong": []
@@ -1005,6 +1946,9 @@
     },
     "made_bad": {
      "pass": 1
+    },
+    "made_bad2": {
+     "pass": 1
     }
    },
    "wrong": []
@@ -1025,6 +1969,60 @@
      "pass": 1
     },
     "made_bad": {
+     "pass": 1
+    },
+    "made_bad2": {
+     "pass": 1
+    }
+   },
+   "wrong": []
+  },
+  "R147": {
+   "verdict": "moves",
+   "why": "the code decided 3 of 3 test rows with no wrong answer",
+   "checks": [
+    "LAYOUT-12/poster-direction-type-led/H037",
+    "LAYOUT-12/poster-direction-image-led/H036",
+    "LAYOUT-12/poster-direction-graphic-led/H036"
+   ],
+   "k_id": "K2_Q3",
+   "critical": false,
+   "how": [
+    "Measures letter spacing from the PDF's glyph positions."
+   ],
+   "test": {
+    "made_good": {
+     "pass": 3
+    },
+    "made_bad": {
+     "pass": 3
+    },
+    "made_bad2": {
+     "pass": 2,
+     "fail": 1
+    }
+   },
+   "wrong": []
+  },
+  "R150": {
+   "verdict": "moves",
+   "why": "the code decided 1 of 1 test rows with no wrong answer",
+   "checks": [
+    "LAYOUT-12/promoter-deck/H028"
+   ],
+   "k_id": "K2_Q3",
+   "critical": false,
+   "how": [
+    "Measures letter spacing from the PDF's glyph positions."
+   ],
+   "test": {
+    "made_good": {
+     "pass": 1
+    },
+    "made_bad": {
+     "pass": 1
+    },
+    "made_bad2": {
      "pass": 1
     }
    },
@@ -1050,6 +2048,9 @@
     },
     "made_bad": {
      "pass": 4
+    },
+    "made_bad2": {
+     "pass": 4
     }
    },
    "wrong": []
@@ -1071,6 +2072,119 @@
     },
     "made_bad": {
      "pass": 1
+    },
+    "made_bad2": {
+     "pass": 1
+    }
+   },
+   "wrong": []
+  },
+  "R153": {
+   "verdict": "moves",
+   "why": "the code decided 3 of 3 test rows with no wrong answer",
+   "checks": [
+    "LAYOUT-12/poster-direction-type-led/H045",
+    "LAYOUT-12/poster-direction-image-led/H044",
+    "LAYOUT-12/poster-direction-graphic-led/H044"
+   ],
+   "k_id": "K2_Q3",
+   "critical": false,
+   "how": [
+    "Reads the text and checks the line directly above each name is the expected kind of line."
+   ],
+   "test": {
+    "made_good": {
+     "pass": 3
+    },
+    "made_bad": {
+     "pass": 3
+    },
+    "made_bad2": {
+     "pass": 3
+    }
+   },
+   "wrong": []
+  },
+  "R154": {
+   "verdict": "moves",
+   "why": "the code decided 3 of 3 test rows with no wrong answer",
+   "checks": [
+    "LAYOUT-12/poster-direction-type-led/H046",
+    "LAYOUT-12/poster-direction-image-led/H045",
+    "LAYOUT-12/poster-direction-graphic-led/H045"
+   ],
+   "k_id": "K2_Q3",
+   "critical": false,
+   "how": [
+    "Measures letter spacing from the PDF's glyph positions."
+   ],
+   "test": {
+    "made_good": {
+     "pass": 3
+    },
+    "made_bad": {
+     "pass": 3
+    },
+    "made_bad2": {
+     "pass": 3
+    }
+   },
+   "wrong": []
+  },
+  "R158": {
+   "verdict": "moves",
+   "why": "the code decided 1 of 1 test rows with no wrong answer",
+   "checks": [
+    "LAYOUT-12/promoter-deck/H039"
+   ],
+   "k_id": "K2_Q3",
+   "critical": false,
+   "how": [
+    "Reads the text and checks the line directly above each name is the expected kind of line."
+   ],
+   "test": {
+    "made_good": {
+     "pass": 1
+    },
+    "made_bad": {
+     "pass": 1
+    },
+    "made_bad2": {
+     "pass": 1
+    }
+   },
+   "wrong": []
+  },
+  "R161": {
+   "verdict": "moves",
+   "why": "the code decided 9 of 9 test rows with no wrong answer",
+   "checks": [
+    "LAYOUT-12/release-post-r002/H037",
+    "LAYOUT-12/release-post-r003/H032",
+    "LAYOUT-12/release-post-r004/H035",
+    "LAYOUT-12/release-post-r005/H034",
+    "LAYOUT-12/release-post-r006/H034",
+    "LAYOUT-12/release-post-r007/H034",
+    "LAYOUT-12/release-post-r008/H029",
+    "LAYOUT-12/release-post-r009/H029",
+    "LAYOUT-12/release-post-r010/H034"
+   ],
+   "k_id": "K2_Q3",
+   "critical": false,
+   "how": [
+    "Reads the text and checks the line directly above each name is the expected kind of line."
+   ],
+   "test": {
+    "made_good": {
+     "pass": 9
+    },
+    "made_bad": {
+     "pass": 9
+    },
+    "made_bad2": {
+     "person": 1,
+     "pass": 7,
+     "fail": 1
     }
    },
    "wrong": []
@@ -1094,6 +2208,33 @@
     },
     "made_bad": {
      "pass": 3
+    },
+    "made_bad2": {
+     "pass": 3
+    }
+   },
+   "wrong": []
+  },
+  "R164": {
+   "verdict": "moves",
+   "why": "the code decided 1 of 1 test rows with no wrong answer",
+   "checks": [
+    "LAYOUT-12/promoter-deck/H058"
+   ],
+   "k_id": "K2_Q3",
+   "critical": false,
+   "how": [
+    "Counts the lines the named text runs over, for each of the 8 named texts; all must pass."
+   ],
+   "test": {
+    "made_good": {
+     "pass": 1
+    },
+    "made_bad": {
+     "pass": 1
+    },
+    "made_bad2": {
+     "pass": 1
     }
    },
    "wrong": []
@@ -1121,6 +2262,9 @@
      "pass": 8
     },
     "made_bad": {
+     "pass": 8
+    },
+    "made_bad2": {
      "pass": 8
     }
    },
@@ -1151,6 +2295,37 @@
     },
     "made_bad": {
      "pass": 9
+    },
+    "made_bad2": {
+     "fail": 1,
+     "pass": 8
+    }
+   },
+   "wrong": []
+  },
+  "R176": {
+   "verdict": "moves",
+   "why": "the code decided 3 of 3 test rows with no wrong answer",
+   "checks": [
+    "LAYOUT-12/poster-direction-type-led/H014",
+    "LAYOUT-12/poster-direction-image-led/H012",
+    "LAYOUT-12/poster-direction-graphic-led/H011"
+   ],
+   "k_id": "K5_Q2",
+   "critical": false,
+   "how": [
+    "Compares the named texts' size or position, for each of the 8 named texts; all must pass."
+   ],
+   "test": {
+    "made_good": {
+     "pass": 3
+    },
+    "made_bad": {
+     "pass": 3
+    },
+    "made_bad2": {
+     "pass": 2,
+     "fail": 1
     }
    },
    "wrong": []
@@ -1173,6 +2348,9 @@
      "pass": 3
     },
     "made_bad": {
+     "pass": 3
+    },
+    "made_bad2": {
      "pass": 3
     }
    },
@@ -1335,6 +2513,25 @@
    },
    "wrong": []
   },
+  "R021": {
+   "verdict": "stays",
+   "why": "the code decided only 0 of 2 test rows; the rest came back to a person",
+   "checks": [
+    "LAYOUT-15/producer-card-r006/H015",
+    "LAYOUT-15/producer-card-r014/H015"
+   ],
+   "k_id": "K2_Q2",
+   "critical": false,
+   "how": [
+    "Finds the supplied photo in the placed picture and checks it is not enlarged or extended beyond the file."
+   ],
+   "test": {
+    "real": {
+     "person": 2
+    }
+   },
+   "wrong": []
+  },
   "R024": {
    "verdict": "moves",
    "why": "the code decided 12 of 12 test rows with no wrong answer",
@@ -1424,6 +2621,35 @@
    },
    "wrong": []
   },
+  "R058": {
+   "verdict": "moves",
+   "why": "the code decided 12 of 12 test rows with no wrong answer",
+   "checks": [
+    "LAYOUT-15/producer-card-r002/H009",
+    "LAYOUT-15/producer-card-r003/H014",
+    "LAYOUT-15/producer-card-r005/H014",
+    "LAYOUT-15/producer-card-r006/H014",
+    "LAYOUT-15/producer-card-r007/H014",
+    "LAYOUT-15/producer-card-r008/H014",
+    "LAYOUT-15/producer-card-r009/H014",
+    "LAYOUT-15/producer-card-r010/H014",
+    "LAYOUT-15/producer-card-r011/H014",
+    "LAYOUT-15/producer-card-r012/H014",
+    "LAYOUT-15/producer-card-r013/H014",
+    "LAYOUT-15/producer-card-r014/H014"
+   ],
+   "k_id": "K2_Q4",
+   "critical": false,
+   "how": [
+    "Finds the supplied photo and measures how closely the placed pixels match it."
+   ],
+   "test": {
+    "real": {
+     "pass": 12
+    }
+   },
+   "wrong": []
+  },
   "R059": {
    "verdict": "moves",
    "why": "the code decided 13 of 13 test rows with no wrong answer",
@@ -1476,6 +2702,10 @@
     "made_bad": {
      "pass": 1,
      "person": 1
+    },
+    "made_bad2": {
+     "pass": 1,
+     "person": 1
     }
    },
    "wrong": []
@@ -1498,9 +2728,12 @@
      "pass": 3
     },
     "made_bad": {
-     "person": 1,
-     "fail": 1,
+     "person": 2,
      "pass": 1
+    },
+    "made_bad2": {
+     "pass": 2,
+     "person": 1
     }
    },
    "wrong": []
@@ -1521,7 +2754,10 @@
      "pass": 1
     },
     "made_bad": {
-     "pass": 1
+     "person": 1
+    },
+    "made_bad2": {
+     "person": 1
     }
    },
    "wrong": []
@@ -1542,6 +2778,9 @@
      "pass": 1
     },
     "made_bad": {
+     "pass": 1
+    },
+    "made_bad2": {
      "pass": 1
     }
    },
@@ -1564,6 +2803,9 @@
     },
     "made_bad": {
      "pass": 1
+    },
+    "made_bad2": {
+     "pass": 1
     }
    },
    "wrong": []
@@ -1585,6 +2827,9 @@
     },
     "made_bad": {
      "person": 1
+    },
+    "made_bad2": {
+     "pass": 1
     }
    },
    "wrong": []
@@ -1605,6 +2850,9 @@
      "pass": 1
     },
     "made_bad": {
+     "pass": 1
+    },
+    "made_bad2": {
      "pass": 1
     }
    },
@@ -1627,6 +2875,39 @@
     },
     "made_bad": {
      "person": 1
+    },
+    "made_bad2": {
+     "pass": 1
+    }
+   },
+   "wrong": []
+  },
+  "R018": {
+   "verdict": "moves",
+   "why": "the code decided 3 of 4 test rows with no wrong answer",
+   "checks": [
+    "MOTION-11/thumbnail-we-broke-the-map/H032",
+    "MOTION-11/thumbnail-kitchen-gone/H031",
+    "MOTION-11/thumbnail-do-not-open-that-door/H032",
+    "MOTION-11/thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas/H030"
+   ],
+   "k_id": "K1_Q2",
+   "critical": false,
+   "how": [
+    "Checks the named text is read in full inside the page or image (for a mark, its letters read as a line of their own)."
+   ],
+   "test": {
+    "made_good": {
+     "pass": 3,
+     "person": 1
+    },
+    "made_bad": {
+     "person": 3,
+     "pass": 1
+    },
+    "made_bad2": {
+     "pass": 1,
+     "person": 3
     }
    },
    "wrong": []
@@ -1650,6 +2931,10 @@
     },
     "made_bad": {
      "person": 2
+    },
+    "made_bad2": {
+     "pass": 1,
+     "person": 1
     }
    },
    "wrong": []
@@ -1671,6 +2956,42 @@
     },
     "made_bad": {
      "person": 1
+    },
+    "made_bad2": {
+     "pass": 1
+    }
+   },
+   "wrong": []
+  },
+  "R033": {
+   "verdict": "moves",
+   "why": "the code decided 5 of 6 test rows with no wrong answer",
+   "checks": [
+    "MOTION-11/thumbnail-we-broke-the-map/H007",
+    "MOTION-11/thumbnail-everyone-off-the-platform/H006",
+    "MOTION-11/thumbnail-kitchen-gone/H004",
+    "MOTION-11/thumbnail-do-not-open-that-door/H005",
+    "MOTION-11/thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas/H004",
+    "MOTION-11/thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi/H004"
+   ],
+   "k_id": "K2_Q1",
+   "critical": false,
+   "how": [
+    "Searches the thumbnail for frames of each capture video."
+   ],
+   "test": {
+    "made_good": {
+     "person": 1,
+     "pass": 5
+    },
+    "made_bad": {
+     "person": 1,
+     "pass": 5
+    },
+    "made_bad2": {
+     "person": 1,
+     "pass": 3,
+     "fail": 2
     }
    },
    "wrong": []
@@ -1691,6 +3012,9 @@
      "pass": 1
     },
     "made_bad": {
+     "pass": 1
+    },
+    "made_bad2": {
      "pass": 1
     }
    },
@@ -1716,6 +3040,10 @@
     "made_bad": {
      "pass": 1,
      "person": 1
+    },
+    "made_bad2": {
+     "pass": 1,
+     "person": 1
     }
    },
    "wrong": []
@@ -1739,9 +3067,36 @@
      "pass": 4
     },
     "made_bad": {
-     "person": 2,
-     "fail": 1,
+     "person": 3,
      "pass": 1
+    },
+    "made_bad2": {
+     "pass": 2,
+     "person": 2
+    }
+   },
+   "wrong": []
+  },
+  "R119": {
+   "verdict": "moves",
+   "why": "the code decided 1 of 1 test rows with no wrong answer",
+   "checks": [
+    "MOTION-11/channel-animation/H009"
+   ],
+   "k_id": "K5_Q1",
+   "critical": false,
+   "how": [
+    "Reads the held last frame of the video and compares text sizes."
+   ],
+   "test": {
+    "made_good": {
+     "pass": 1
+    },
+    "made_bad": {
+     "person": 1
+    },
+    "made_bad2": {
+     "fail": 1
     }
    },
    "wrong": []
@@ -1782,6 +3137,77 @@
    "test": {
     "real": {
      "pass": 1
+    }
+   },
+   "wrong": []
+  },
+  "R005": {
+   "verdict": "moves",
+   "why": "the code decided 9 of 9 test rows with no wrong answer",
+   "checks": [
+    "PHOTO-04/villa-collection/H009",
+    "PHOTO-04/villa-collection/H016",
+    "PHOTO-04/villa-collection/H023",
+    "PHOTO-04/villa-collection/H074",
+    "PHOTO-04/villa-collection/H076",
+    "PHOTO-04/villa-collection/H078",
+    "PHOTO-04/villa-collection/H080",
+    "PHOTO-04/villa-collection/H082",
+    "PHOTO-04/villa-collection/H084"
+   ],
+   "k_id": "K1_Q1",
+   "critical": false,
+   "how": [
+    "Reads where each value stands and checks the value that belongs to this name (by its section, column or line) is the expected one."
+   ],
+   "test": {
+    "real": {
+     "pass": 9
+    }
+   },
+   "wrong": []
+  },
+  "R006": {
+   "verdict": "moves",
+   "why": "the code decided 9 of 9 test rows with no wrong answer",
+   "checks": [
+    "PHOTO-04/villa-collection/H010",
+    "PHOTO-04/villa-collection/H017",
+    "PHOTO-04/villa-collection/H024",
+    "PHOTO-04/villa-collection/H075",
+    "PHOTO-04/villa-collection/H077",
+    "PHOTO-04/villa-collection/H079",
+    "PHOTO-04/villa-collection/H081",
+    "PHOTO-04/villa-collection/H083",
+    "PHOTO-04/villa-collection/H085"
+   ],
+   "k_id": "K1_Q1",
+   "critical": false,
+   "how": [
+    "Reads where each value stands and checks the value that belongs to this name (by its section, column or line) is the expected one."
+   ],
+   "test": {
+    "real": {
+     "pass": 9
+    }
+   },
+   "wrong": []
+  },
+  "R007": {
+   "verdict": "moves",
+   "why": "the code decided 2 of 2 test rows with no wrong answer",
+   "checks": [
+    "PHOTO-04/villa-collection/H011",
+    "PHOTO-04/villa-collection/H018"
+   ],
+   "k_id": "K1_Q1",
+   "critical": false,
+   "how": [
+    "Reads where each value stands and checks the value that belongs to this name (by its section, column or line) is the expected one."
+   ],
+   "test": {
+    "real": {
+     "pass": 2
     }
    },
    "wrong": []
@@ -2069,6 +3495,152 @@
    },
    "wrong": []
   },
+  "R039": {
+   "verdict": "moves",
+   "why": "the code decided 1 of 1 test rows with no wrong answer",
+   "checks": [
+    "PHOTO-04/villa-collection/H033"
+   ],
+   "k_id": "K2_Q3",
+   "critical": false,
+   "how": [
+    "Reads each line's colour from the PDF and the colour behind it from the rendered page, and checks the pairing."
+   ],
+   "test": {
+    "real": {
+     "pass": 1
+    }
+   },
+   "wrong": []
+  },
+  "R059": {
+   "verdict": "moves",
+   "why": "the code decided 1 of 1 test rows with no wrong answer",
+   "checks": [
+    "PHOTO-04/villa-collection/H035"
+   ],
+   "k_id": "K2_Q3",
+   "critical": false,
+   "how": [
+    "Reads the font, size or letter case of the selected lines from the PDF."
+   ],
+   "test": {
+    "real": {
+     "fail": 1
+    }
+   },
+   "wrong": []
+  },
+  "R061": {
+   "verdict": "moves",
+   "why": "the code decided 3 of 3 test rows with no wrong answer",
+   "checks": [
+    "PHOTO-04/villa-collection/H037",
+    "PHOTO-04/villa-collection/H086",
+    "PHOTO-04/villa-collection/H087"
+   ],
+   "k_id": "K2_Q3",
+   "critical": false,
+   "how": [
+    "Reads the font sizes of the heading's letters from the PDF."
+   ],
+   "test": {
+    "real": {
+     "fail": 3
+    }
+   },
+   "wrong": []
+  },
+  "R062": {
+   "verdict": "moves",
+   "why": "the code decided 1 of 1 test rows with no wrong answer",
+   "checks": [
+    "PHOTO-04/villa-collection/H038"
+   ],
+   "k_id": "K2_Q3",
+   "critical": false,
+   "how": [
+    "Reads the figures' fonts, sizes and glyph shapes from the PDF."
+   ],
+   "test": {
+    "real": {
+     "pass": 1
+    }
+   },
+   "wrong": []
+  },
+  "R070": {
+   "verdict": "moves",
+   "why": "the code decided 1 of 1 test rows with no wrong answer",
+   "checks": [
+    "PHOTO-04/villa-collection/H071"
+   ],
+   "k_id": "K2_Q3",
+   "critical": false,
+   "how": [
+    "Reads the figures' fonts, sizes and glyph shapes from the PDF."
+   ],
+   "test": {
+    "real": {
+     "pass": 1
+    }
+   },
+   "wrong": []
+  },
+  "R076": {
+   "verdict": "moves",
+   "why": "the code decided 1 of 1 test rows with no wrong answer",
+   "checks": [
+    "PHOTO-04/villa-collection/H090"
+   ],
+   "k_id": "K2_Q3",
+   "critical": false,
+   "how": [
+    "Reads the figures' fonts, sizes and glyph shapes from the PDF."
+   ],
+   "test": {
+    "real": {
+     "pass": 1
+    }
+   },
+   "wrong": []
+  },
+  "R085": {
+   "verdict": "stays",
+   "why": "the code decided only 0 of 1 test rows; the rest came back to a person",
+   "checks": [
+    "PHOTO-04/villa-collection/H068"
+   ],
+   "k_id": "K2_Q3",
+   "critical": false,
+   "how": [
+    "Finds the supplied picture in the PDF and reads the transparency and blend mode it is drawn with."
+   ],
+   "test": {
+    "real": {
+     "person": 1
+    }
+   },
+   "wrong": []
+  },
+  "R088": {
+   "verdict": "moves",
+   "why": "the code decided 1 of 1 test rows with no wrong answer",
+   "checks": [
+    "PHOTO-04/villa-collection/H095"
+   ],
+   "k_id": "K2_Q3",
+   "critical": false,
+   "how": [
+    "Reads the figures' fonts, sizes and glyph shapes from the PDF."
+   ],
+   "test": {
+    "real": {
+     "pass": 1
+    }
+   },
+   "wrong": []
+  },
   "R115": {
    "verdict": "moves",
    "why": "the code decided 3 of 3 test rows with no wrong answer",
@@ -2085,6 +3657,98 @@
    "test": {
     "real": {
      "pass": 3
+    }
+   },
+   "wrong": []
+  },
+  "R116": {
+   "verdict": "moves",
+   "why": "the code decided 1 of 1 test rows with no wrong answer",
+   "checks": [
+    "PHOTO-04/villa-collection/H028"
+   ],
+   "k_id": "K5_Q2",
+   "critical": false,
+   "how": [
+    "Reads each house section of the PDF: positions, sizes, order and labels of its entries."
+   ],
+   "test": {
+    "real": {
+     "pass": 1
+    }
+   },
+   "wrong": []
+  },
+  "R117": {
+   "verdict": "moves",
+   "why": "the code decided 3 of 3 test rows with no wrong answer",
+   "checks": [
+    "PHOTO-04/booking-hero-oliveto/H024",
+    "PHOTO-04/booking-hero-scogliera/H004",
+    "PHOTO-04/booking-hero-verranza/H024"
+   ],
+   "k_id": "K5_Q2",
+   "critical": false,
+   "how": [
+    "Finds both elements (by their colour, the supplied file, the placed photo or the text) and compares their positions."
+   ],
+   "test": {
+    "real": {
+     "pass": 3
+    }
+   },
+   "wrong": []
+  },
+  "R119": {
+   "verdict": "moves",
+   "why": "the code decided 1 of 1 test rows with no wrong answer",
+   "checks": [
+    "PHOTO-04/villa-collection/H064"
+   ],
+   "k_id": "K5_Q2",
+   "critical": false,
+   "how": [
+    "Reads each house section of the PDF: positions, sizes, order and labels of its entries."
+   ],
+   "test": {
+    "real": {
+     "pass": 1
+    }
+   },
+   "wrong": []
+  },
+  "R121": {
+   "verdict": "moves",
+   "why": "the code decided 1 of 1 test rows with no wrong answer",
+   "checks": [
+    "PHOTO-04/villa-collection/H067"
+   ],
+   "k_id": "K5_Q2",
+   "critical": false,
+   "how": [
+    "Reads each house section of the PDF: positions, sizes, order and labels of its entries."
+   ],
+   "test": {
+    "real": {
+     "pass": 1
+    }
+   },
+   "wrong": []
+  },
+  "R122": {
+   "verdict": "moves",
+   "why": "the code decided 1 of 1 test rows with no wrong answer",
+   "checks": [
+    "PHOTO-04/villa-collection/H094"
+   ],
+   "k_id": "K5_Q2",
+   "critical": false,
+   "how": [
+    "Reads each house section of the PDF: positions, sizes, order and labels of its entries."
+   ],
+   "test": {
+    "real": {
+     "pass": 1
     }
    },
    "wrong": []
@@ -2140,6 +3804,59 @@
    },
    "wrong": []
   },
+  "R018": {
+   "verdict": "moves",
+   "why": "the code decided 10 of 10 test rows with no wrong answer",
+   "checks": [
+    "PHOTO-06/share-hollis-scan-03/H066",
+    "PHOTO-06/share-hollis-scan-03/H067",
+    "PHOTO-06/share-hollis-scan-04/H065",
+    "PHOTO-06/share-hollis-scan-04/H066",
+    "PHOTO-06/share-hollis-scan-05/H066",
+    "PHOTO-06/share-hollis-scan-05/H067",
+    "PHOTO-06/share-hollis-scan-05/H068",
+    "PHOTO-06/share-hollis-scan-05/H069",
+    "PHOTO-06/share-hollis-scan-08/H063",
+    "PHOTO-06/share-hollis-scan-08/H064"
+   ],
+   "k_id": "K1_Q1",
+   "critical": false,
+   "how": [
+    "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+   ],
+   "test": {
+    "real": {
+     "pass": 10
+    }
+   },
+   "wrong": []
+  },
+  "R027": {
+   "verdict": "stays",
+   "why": "the code decided only 0 of 9 test rows; the rest came back to a person",
+   "checks": [
+    "PHOTO-06/share-hollis-scan-01/H055",
+    "PHOTO-06/share-hollis-scan-02/H050",
+    "PHOTO-06/share-hollis-scan-03/H054",
+    "PHOTO-06/share-hollis-scan-04/H046",
+    "PHOTO-06/share-hollis-scan-05/H054",
+    "PHOTO-06/share-hollis-scan-06/H049",
+    "PHOTO-06/share-hollis-scan-07/H057",
+    "PHOTO-06/share-hollis-scan-08/H044",
+    "PHOTO-06/share-hollis-scan-09/H054"
+   ],
+   "k_id": "K1_Q3",
+   "critical": false,
+   "how": [
+    "Reads all text and checks none of the named words or patterns appears, for each of the 2 named texts; all must pass."
+   ],
+   "test": {
+    "real": {
+     "person": 9
+    }
+   },
+   "wrong": []
+  },
   "R028": {
    "verdict": "moves",
    "why": "the code decided 1 of 1 test rows with no wrong answer",
@@ -2190,6 +3907,33 @@
    "test": {
     "real": {
      "pass": 1
+    }
+   },
+   "wrong": []
+  },
+  "R082": {
+   "verdict": "moves",
+   "why": "the code decided 7 of 9 test rows with no wrong answer",
+   "checks": [
+    "PHOTO-06/share-hollis-scan-01/H023",
+    "PHOTO-06/share-hollis-scan-02/H003",
+    "PHOTO-06/share-hollis-scan-03/H021",
+    "PHOTO-06/share-hollis-scan-04/H056",
+    "PHOTO-06/share-hollis-scan-05/H021",
+    "PHOTO-06/share-hollis-scan-06/H013",
+    "PHOTO-06/share-hollis-scan-07/H024",
+    "PHOTO-06/share-hollis-scan-08/H054",
+    "PHOTO-06/share-hollis-scan-09/H021"
+   ],
+   "k_id": "K5_Q2",
+   "critical": false,
+   "how": [
+    "Compares the text sizes (font size in PDFs, letter height on images)."
+   ],
+   "test": {
+    "real": {
+     "pass": 7,
+     "person": 2
     }
    },
    "wrong": []
@@ -2358,6 +4102,30 @@
    },
    "wrong": []
   },
+  "R008": {
+   "verdict": "moves",
+   "why": "the code decided 4 of 6 test rows with no wrong answer",
+   "checks": [
+    "PHOTO-08/vehicle-card-r002/H015",
+    "PHOTO-08/vehicle-card-r003/H013",
+    "PHOTO-08/vehicle-card-r004/H012",
+    "PHOTO-08/vehicle-card-r005/H012",
+    "PHOTO-08/vehicle-card-r006/H012",
+    "PHOTO-08/vehicle-card-r007/H012"
+   ],
+   "k_id": "K1_Q1",
+   "critical": false,
+   "how": [
+    "Reads where each value stands and checks the value that belongs to this name (by its section, column or line) is the expected one."
+   ],
+   "test": {
+    "real": {
+     "pass": 4,
+     "person": 2
+    }
+   },
+   "wrong": []
+  },
   "R009": {
    "verdict": "stays",
    "why": "the code decided only 0 of 1 test rows; the rest came back to a person",
@@ -2418,6 +4186,53 @@
    "test": {
     "real": {
      "pass": 6
+    }
+   },
+   "wrong": []
+  },
+  "R016": {
+   "verdict": "moves",
+   "why": "the code decided 4 of 6 test rows with no wrong answer",
+   "checks": [
+    "PHOTO-08/vehicle-card-r002/H077",
+    "PHOTO-08/vehicle-card-r003/H076",
+    "PHOTO-08/vehicle-card-r004/H075",
+    "PHOTO-08/vehicle-card-r005/H076",
+    "PHOTO-08/vehicle-card-r006/H076",
+    "PHOTO-08/vehicle-card-r007/H076"
+   ],
+   "k_id": "K1_Q1",
+   "critical": false,
+   "how": [
+    "Reads where each value stands and checks the value that belongs to this name (by its section, column or line) is the expected one."
+   ],
+   "test": {
+    "real": {
+     "pass": 4,
+     "person": 2
+    }
+   },
+   "wrong": []
+  },
+  "R017": {
+   "verdict": "stays",
+   "why": "the code decided only 0 of 6 test rows; the rest came back to a person",
+   "checks": [
+    "PHOTO-08/vehicle-card-r002/H082",
+    "PHOTO-08/vehicle-card-r003/H081",
+    "PHOTO-08/vehicle-card-r004/H080",
+    "PHOTO-08/vehicle-card-r005/H081",
+    "PHOTO-08/vehicle-card-r006/H081",
+    "PHOTO-08/vehicle-card-r007/H081"
+   ],
+   "k_id": "K1_Q1",
+   "critical": false,
+   "how": [
+    "Reads where each value stands and checks the value that belongs to this name (by its section, column or line) is the expected one."
+   ],
+   "test": {
+    "real": {
+     "person": 6
     }
    },
    "wrong": []
@@ -2554,6 +4369,47 @@
    },
    "wrong": []
   },
+  "R075": {
+   "verdict": "stays",
+   "why": "the code decided only 0 of 6 test rows; the rest came back to a person",
+   "checks": [
+    "PHOTO-08/vehicle-card-r002/H081",
+    "PHOTO-08/vehicle-card-r003/H080",
+    "PHOTO-08/vehicle-card-r004/H079",
+    "PHOTO-08/vehicle-card-r005/H080",
+    "PHOTO-08/vehicle-card-r006/H080",
+    "PHOTO-08/vehicle-card-r007/H080"
+   ],
+   "k_id": "K2_Q3",
+   "critical": false,
+   "how": [
+    "Finds the mark, reads the ground around it, and checks its ink on that ground."
+   ],
+   "test": {
+    "real": {
+     "person": 6
+    }
+   },
+   "wrong": []
+  },
+  "R077": {
+   "verdict": "moves",
+   "why": "the code decided 1 of 1 test rows with no wrong answer",
+   "checks": [
+    "PHOTO-08/inventory-campaign/H129"
+   ],
+   "k_id": "K2_Q3",
+   "critical": false,
+   "how": [
+    "Finds the mark, reads the ground around it, and checks its ink on that ground."
+   ],
+   "test": {
+    "real": {
+     "pass": 1
+    }
+   },
+   "wrong": []
+  },
   "R155": {
    "verdict": "stays",
    "why": "the code decided only 1 of 6 test rows; the rest came back to a person",
@@ -2577,9 +4433,50 @@
     }
    },
    "wrong": []
+  },
+  "R158": {
+   "verdict": "moves",
+   "why": "the code decided 6 of 6 test rows with no wrong answer",
+   "checks": [
+    "PHOTO-08/vehicle-card-r002/H059",
+    "PHOTO-08/vehicle-card-r003/H058",
+    "PHOTO-08/vehicle-card-r004/H057",
+    "PHOTO-08/vehicle-card-r005/H058",
+    "PHOTO-08/vehicle-card-r006/H058",
+    "PHOTO-08/vehicle-card-r007/H057"
+   ],
+   "k_id": "K5_Q2",
+   "critical": false,
+   "how": [
+    "Compares the named texts' size or position."
+   ],
+   "test": {
+    "real": {
+     "pass": 6
+    }
+   },
+   "wrong": []
   }
  },
  "PHOTO-10": {
+  "R002": {
+   "verdict": "stays",
+   "why": "the code decided only 0 of 1 test rows; the rest came back to a person",
+   "checks": [
+    "PHOTO-10/style-pdp-northgrove-style-02-heavy-tee/H002"
+   ],
+   "k_id": "K1_Q1",
+   "critical": false,
+   "how": [
+    "Reads all text and checks none of the named words or patterns appears."
+   ],
+   "test": {
+    "real": {
+     "person": 1
+    }
+   },
+   "wrong": []
+  },
   "R003": {
    "verdict": "moves",
    "why": "the code decided 6 of 6 test rows with no wrong answer",
@@ -2633,6 +4530,30 @@
    },
    "wrong": []
   },
+  "R009": {
+   "verdict": "stays",
+   "why": "the code decided only 1 of 6 test rows; the rest came back to a person",
+   "checks": [
+    "PHOTO-10/capsule-carousel-p01/H011",
+    "PHOTO-10/capsule-carousel-p02/H008",
+    "PHOTO-10/capsule-carousel-p03/H008",
+    "PHOTO-10/capsule-carousel-p04/H008",
+    "PHOTO-10/capsule-carousel-p05/H008",
+    "PHOTO-10/capsule-carousel-p06/H009"
+   ],
+   "k_id": "K1_Q1",
+   "critical": false,
+   "how": [
+    "Reads the text and flags any name close to, but not exactly, the listed spelling."
+   ],
+   "test": {
+    "real": {
+     "person": 5,
+     "pass": 1
+    }
+   },
+   "wrong": []
+  },
   "R010": {
    "verdict": "stays",
    "why": "the code decided only 0 of 1 test rows; the rest came back to a person",
@@ -2667,6 +4588,51 @@
    "test": {
     "real": {
      "pass": 3
+    }
+   },
+   "wrong": []
+  },
+  "R015": {
+   "verdict": "stays",
+   "why": "the code decided only 1 of 6 test rows; the rest came back to a person",
+   "checks": [
+    "PHOTO-10/capsule-carousel-p01/H071",
+    "PHOTO-10/capsule-carousel-p02/H069",
+    "PHOTO-10/capsule-carousel-p03/H069",
+    "PHOTO-10/capsule-carousel-p04/H069",
+    "PHOTO-10/capsule-carousel-p05/H069",
+    "PHOTO-10/capsule-carousel-p06/H070"
+   ],
+   "k_id": "K1_Q1",
+   "critical": false,
+   "how": [
+    "Reads where each value stands and checks the value that belongs to this name (by its section, column or line) is the expected one."
+   ],
+   "test": {
+    "real": {
+     "person": 5,
+     "pass": 1
+    }
+   },
+   "wrong": []
+  },
+  "R027": {
+   "verdict": "stays",
+   "why": "the code decided only 0 of 4 test rows; the rest came back to a person",
+   "checks": [
+    "PHOTO-10/style-pdp-northgrove-style-03-raglan/H002",
+    "PHOTO-10/style-pdp-northgrove-style-04-henley/H002",
+    "PHOTO-10/style-pdp-northgrove-style-05-zip-hoodie/H002",
+    "PHOTO-10/style-pdp-northgrove-style-06-supporters-crew/H002"
+   ],
+   "k_id": "K1_Q5",
+   "critical": true,
+   "how": [
+    "Reads all text and checks none of the named words or patterns appears."
+   ],
+   "test": {
+    "real": {
+     "person": 4
     }
    },
    "wrong": []
@@ -2733,6 +4699,29 @@
    "test": {
     "real": {
      "pass": 2
+    }
+   },
+   "wrong": []
+  },
+  "R103": {
+   "verdict": "moves",
+   "why": "the code decided 6 of 6 test rows with no wrong answer",
+   "checks": [
+    "PHOTO-10/style-pdp-northgrove-style-01-loopback-crew/H035",
+    "PHOTO-10/style-pdp-northgrove-style-02-heavy-tee/H035",
+    "PHOTO-10/style-pdp-northgrove-style-03-raglan/H033",
+    "PHOTO-10/style-pdp-northgrove-style-04-henley/H033",
+    "PHOTO-10/style-pdp-northgrove-style-05-zip-hoodie/H033",
+    "PHOTO-10/style-pdp-northgrove-style-06-supporters-crew/H034"
+   ],
+   "k_id": "K5_Q1",
+   "critical": false,
+   "how": [
+    "Compares text sizes (font size in PDFs, letter height on images)."
+   ],
+   "test": {
+    "real": {
+     "pass": 6
     }
    },
    "wrong": []
@@ -3330,6 +5319,24 @@
   }
  },
  "PHOTO-20": {
+  "R002": {
+   "verdict": "moves",
+   "why": "the code decided 1 of 1 test rows with no wrong answer",
+   "checks": [
+    "PHOTO-20/speaker-onepager/H003"
+   ],
+   "k_id": "K1_Q1",
+   "critical": false,
+   "how": [
+    "Checks each named text lies fully inside the page or image."
+   ],
+   "test": {
+    "real": {
+     "pass": 1
+    }
+   },
+   "wrong": []
+  },
   "R003": {
    "verdict": "moves",
    "why": "the code decided 3 of 3 test rows with no wrong answer",
@@ -3683,6 +5690,50 @@
    },
    "wrong": []
   },
+  "R021": {
+   "verdict": "moves",
+   "why": "the code decided 3 of 3 test rows with no wrong answer",
+   "checks": [
+    "PHOTO-20/speaker-onepager/H011",
+    "PHOTO-20/speaker-onepager/H057",
+    "PHOTO-20/speaker-onepager/H058"
+   ],
+   "k_id": "K1_Q1",
+   "critical": false,
+   "how": [
+    "Reads the text and checks the second text comes directly after the first."
+   ],
+   "test": {
+    "real": {
+     "pass": 3
+    }
+   },
+   "wrong": []
+  },
+  "R027": {
+   "verdict": "moves",
+   "why": "the code decided 7 of 7 test rows with no wrong answer",
+   "checks": [
+    "PHOTO-20/talk-card-r002/H058",
+    "PHOTO-20/talk-card-r003/H057",
+    "PHOTO-20/talk-card-r004/H057",
+    "PHOTO-20/talk-card-r005/H057",
+    "PHOTO-20/talk-card-r006/H058",
+    "PHOTO-20/talk-card-r008/H057",
+    "PHOTO-20/talk-card-r009/H058"
+   ],
+   "k_id": "K1_Q2",
+   "critical": false,
+   "how": [
+    "Finds both elements (by their colour, the supplied file, the placed photo or the text) and compares their positions, for each of the 3 named texts; all must pass."
+   ],
+   "test": {
+    "real": {
+     "pass": 7
+    }
+   },
+   "wrong": []
+  },
   "R032": {
    "verdict": "moves",
    "why": "the code decided 5 of 5 test rows with no wrong answer",
@@ -3844,6 +5895,32 @@
    },
    "wrong": []
   },
+  "R059": {
+   "verdict": "moves",
+   "why": "the code decided 9 of 9 test rows with no wrong answer",
+   "checks": [
+    "PHOTO-20/speaker-onepager/H025",
+    "PHOTO-20/talk-card-r002/H024",
+    "PHOTO-20/talk-card-r003/H024",
+    "PHOTO-20/talk-card-r004/H024",
+    "PHOTO-20/talk-card-r005/H024",
+    "PHOTO-20/talk-card-r006/H025",
+    "PHOTO-20/talk-card-r007/H024",
+    "PHOTO-20/talk-card-r008/H024",
+    "PHOTO-20/talk-card-r009/H024"
+   ],
+   "k_id": "K2_Q3",
+   "critical": false,
+   "how": [
+    "Finds the shapes drawn in the mark's colour and measures them or checks they are drawn solid."
+   ],
+   "test": {
+    "real": {
+     "pass": 9
+    }
+   },
+   "wrong": []
+  },
   "R060": {
    "verdict": "moves",
    "why": "the code decided 9 of 9 test rows with no wrong answer",
@@ -3895,6 +5972,101 @@
    },
    "wrong": []
   },
+  "R062": {
+   "verdict": "moves",
+   "why": "the code decided 8 of 8 test rows with no wrong answer",
+   "checks": [
+    "PHOTO-20/talk-card-r002/H031",
+    "PHOTO-20/talk-card-r003/H031",
+    "PHOTO-20/talk-card-r004/H031",
+    "PHOTO-20/talk-card-r005/H031",
+    "PHOTO-20/talk-card-r006/H031",
+    "PHOTO-20/talk-card-r007/H031",
+    "PHOTO-20/talk-card-r008/H031",
+    "PHOTO-20/talk-card-r009/H031"
+   ],
+   "k_id": "K2_Q3",
+   "critical": false,
+   "how": [
+    "Reads each line's colour from the PDF and the colour behind it from the rendered page, and checks the pairing."
+   ],
+   "test": {
+    "real": {
+     "pass": 7,
+     "fail": 1
+    }
+   },
+   "wrong": []
+  },
+  "R063": {
+   "verdict": "moves",
+   "why": "the code decided 9 of 9 test rows with no wrong answer",
+   "checks": [
+    "PHOTO-20/speaker-onepager/H054",
+    "PHOTO-20/talk-card-r002/H032",
+    "PHOTO-20/talk-card-r003/H032",
+    "PHOTO-20/talk-card-r004/H032",
+    "PHOTO-20/talk-card-r005/H032",
+    "PHOTO-20/talk-card-r006/H032",
+    "PHOTO-20/talk-card-r007/H032",
+    "PHOTO-20/talk-card-r008/H032",
+    "PHOTO-20/talk-card-r009/H032"
+   ],
+   "k_id": "K2_Q3",
+   "critical": false,
+   "how": [
+    "Reads each line's colour from the PDF and the colour behind it from the rendered page, and checks the pairing."
+   ],
+   "test": {
+    "real": {
+     "pass": 9
+    }
+   },
+   "wrong": []
+  },
+  "R069": {
+   "verdict": "moves",
+   "why": "the code decided 8 of 8 test rows with no wrong answer",
+   "checks": [
+    "PHOTO-20/talk-card-r002/H055",
+    "PHOTO-20/talk-card-r003/H054",
+    "PHOTO-20/talk-card-r004/H054",
+    "PHOTO-20/talk-card-r005/H054",
+    "PHOTO-20/talk-card-r006/H054",
+    "PHOTO-20/talk-card-r007/H054",
+    "PHOTO-20/talk-card-r008/H054",
+    "PHOTO-20/talk-card-r009/H054"
+   ],
+   "k_id": "K2_Q3",
+   "critical": false,
+   "how": [
+    "Reads each line's colour from the PDF and the colour behind it from the rendered page, and checks the pairing."
+   ],
+   "test": {
+    "real": {
+     "pass": 8
+    }
+   },
+   "wrong": []
+  },
+  "R070": {
+   "verdict": "moves",
+   "why": "the code decided 1 of 1 test rows with no wrong answer",
+   "checks": [
+    "PHOTO-20/speaker-onepager/H056"
+   ],
+   "k_id": "K2_Q3",
+   "critical": false,
+   "how": [
+    "Reads each line's colour from the PDF and the colour behind it from the rendered page, and checks the pairing."
+   ],
+   "test": {
+    "real": {
+     "pass": 1
+    }
+   },
+   "wrong": []
+  },
   "R081": {
    "verdict": "moves",
    "why": "the code decided 1 of 1 test rows with no wrong answer",
@@ -3909,6 +6081,100 @@
    "test": {
     "real": {
      "fail": 1
+    }
+   },
+   "wrong": []
+  },
+  "R082": {
+   "verdict": "moves",
+   "why": "the code decided 1 of 1 test rows with no wrong answer",
+   "checks": [
+    "PHOTO-20/speaker-onepager/H046"
+   ],
+   "k_id": "K2_Q3",
+   "critical": false,
+   "how": [
+    "Reads the font, size or letter case of the selected lines from the PDF."
+   ],
+   "test": {
+    "real": {
+     "pass": 1
+    }
+   },
+   "wrong": []
+  },
+  "R092": {
+   "verdict": "moves",
+   "why": "the code decided 13 of 13 test rows with no wrong answer",
+   "checks": [
+    "PHOTO-20/event-announcement-r002/H029",
+    "PHOTO-20/event-announcement-r003/H029",
+    "PHOTO-20/event-announcement-r008/H029",
+    "PHOTO-20/event-banner-r002/H027",
+    "PHOTO-20/event-banner-r003/H027",
+    "PHOTO-20/event-banner-r008/H027",
+    "PHOTO-20/talk-card-r002/H025",
+    "PHOTO-20/talk-card-r003/H025",
+    "PHOTO-20/talk-card-r004/H025",
+    "PHOTO-20/talk-card-r005/H025",
+    "PHOTO-20/talk-card-r006/H026",
+    "PHOTO-20/talk-card-r008/H025",
+    "PHOTO-20/talk-card-r009/H025"
+   ],
+   "k_id": "K2_Q3",
+   "critical": false,
+   "how": [
+    "Finds both elements (by their colour, the supplied file, the placed photo or the text) and compares their positions."
+   ],
+   "test": {
+    "real": {
+     "pass": 13
+    }
+   },
+   "wrong": []
+  },
+  "R094": {
+   "verdict": "moves",
+   "why": "the code decided 2 of 2 test rows with no wrong answer",
+   "checks": [
+    "PHOTO-20/speaker-onepager/H026",
+    "PHOTO-20/talk-card-r007/H025"
+   ],
+   "k_id": "K2_Q3",
+   "critical": false,
+   "how": [
+    "Finds both elements (by their colour, the supplied file, the placed photo or the text) and compares their positions."
+   ],
+   "test": {
+    "real": {
+     "pass": 2
+    }
+   },
+   "wrong": []
+  },
+  "R095": {
+   "verdict": "moves",
+   "why": "the code decided 9 of 9 test rows with no wrong answer",
+   "checks": [
+    "PHOTO-20/speaker-onepager/H050",
+    "PHOTO-20/talk-card-r002/H050",
+    "PHOTO-20/talk-card-r003/H050",
+    "PHOTO-20/talk-card-r004/H050",
+    "PHOTO-20/talk-card-r005/H050",
+    "PHOTO-20/talk-card-r006/H050",
+    "PHOTO-20/talk-card-r007/H050",
+    "PHOTO-20/talk-card-r008/H050",
+    "PHOTO-20/talk-card-r009/H050"
+   ],
+   "k_id": "K2_Q3",
+   "critical": false,
+   "how": [
+    "Finds the shapes drawn in the mark's colour and measures them or checks they are drawn solid."
+   ],
+   "test": {
+    "real": {
+     "pass": 1,
+     "fail": 8
     }
    },
    "wrong": []
@@ -4236,6 +6502,44 @@
    },
    "wrong": []
   },
+  "R008": {
+   "verdict": "moves",
+   "why": "the code decided 1 of 2 test rows with no wrong answer",
+   "checks": [
+    "PHOTO-24/watch-feature-r003/H010",
+    "PHOTO-24/watch-feature-r006/H010"
+   ],
+   "k_id": "K1_Q1",
+   "critical": false,
+   "how": [
+    "Reads the text; where a description of this kind appears, checks it carries the right terms and no contradicting ones."
+   ],
+   "test": {
+    "real": {
+     "person": 1,
+     "pass": 1
+    }
+   },
+   "wrong": []
+  },
+  "R009": {
+   "verdict": "stays",
+   "why": "the code decided only 0 of 1 test rows; the rest came back to a person",
+   "checks": [
+    "PHOTO-24/watch-feature-r005/H010"
+   ],
+   "k_id": "K1_Q1",
+   "critical": false,
+   "how": [
+    "Reads the text; where a description of this kind appears, checks it carries the right terms and no contradicting ones."
+   ],
+   "test": {
+    "real": {
+     "person": 1
+    }
+   },
+   "wrong": []
+  },
   "R010": {
    "verdict": "stays",
    "why": "the code decided only 0 of 5 test rows; the rest came back to a person",
@@ -4258,6 +6562,99 @@
    },
    "wrong": []
   },
+  "R011": {
+   "verdict": "stays",
+   "why": "the code decided only 0 of 2 test rows; the rest came back to a person",
+   "checks": [
+    "PHOTO-24/watch-feature-r002/H015",
+    "PHOTO-24/watch-feature-r004/H011"
+   ],
+   "k_id": "K1_Q1",
+   "critical": false,
+   "how": [
+    "Reads the text; where a description of this kind appears, checks it carries the right terms and no contradicting ones."
+   ],
+   "test": {
+    "real": {
+     "person": 2
+    }
+   },
+   "wrong": []
+  },
+  "R012": {
+   "verdict": "moves",
+   "why": "the code decided 3 of 3 test rows with no wrong answer",
+   "checks": [
+    "PHOTO-24/dealer-launch/H006",
+    "PHOTO-24/dealer-launch/H014",
+    "PHOTO-24/dealer-launch/H022"
+   ],
+   "k_id": "K1_Q1",
+   "critical": false,
+   "how": [
+    "Reads where each value stands and checks the value that belongs to this name (by its section, column or line) is the expected one."
+   ],
+   "test": {
+    "real": {
+     "pass": 3
+    }
+   },
+   "wrong": []
+  },
+  "R014": {
+   "verdict": "moves",
+   "why": "the code decided 1 of 1 test rows with no wrong answer",
+   "checks": [
+    "PHOTO-24/dealer-launch/H033"
+   ],
+   "k_id": "K1_Q1",
+   "critical": false,
+   "how": [
+    "Reads the text; where a description of this kind appears, checks it carries the right terms and no contradicting ones."
+   ],
+   "test": {
+    "real": {
+     "pass": 1
+    }
+   },
+   "wrong": []
+  },
+  "R015": {
+   "verdict": "moves",
+   "why": "the code decided 1 of 1 test rows with no wrong answer",
+   "checks": [
+    "PHOTO-24/watch-keyvisual/H004"
+   ],
+   "k_id": "K1_Q1",
+   "critical": false,
+   "how": [
+    "Reads the text; where a description of this kind appears, checks it carries the right terms and no contradicting ones."
+   ],
+   "test": {
+    "real": {
+     "pass": 1
+    }
+   },
+   "wrong": []
+  },
+  "R016": {
+   "verdict": "stays",
+   "why": "the code decided only 0 of 1 test rows; the rest came back to a person",
+   "checks": [
+    "PHOTO-24/watch-keyvisual/H005"
+   ],
+   "k_id": "K1_Q1",
+   "critical": false,
+   "how": [
+    "Reads the text; where a description of this kind appears, checks it carries the right terms and no contradicting ones."
+   ],
+   "test": {
+    "real": {
+     "person": 1
+    }
+   },
+   "wrong": []
+  },
   "R017": {
    "verdict": "stays",
    "why": "the code decided only 0 of 1 test rows; the rest came back to a person",
@@ -4272,6 +6669,42 @@
    "test": {
     "real": {
      "person": 1
+    }
+   },
+   "wrong": []
+  },
+  "R018": {
+   "verdict": "moves",
+   "why": "the code decided 1 of 1 test rows with no wrong answer",
+   "checks": [
+    "PHOTO-24/dealer-launch/H086"
+   ],
+   "k_id": "K1_Q1",
+   "critical": false,
+   "how": [
+    "Reads the text; where a description of this kind appears, checks it carries the right terms and no contradicting ones."
+   ],
+   "test": {
+    "real": {
+     "pass": 1
+    }
+   },
+   "wrong": []
+  },
+  "R019": {
+   "verdict": "moves",
+   "why": "the code decided 1 of 1 test rows with no wrong answer",
+   "checks": [
+    "PHOTO-24/dealer-launch/H087"
+   ],
+   "k_id": "K1_Q1",
+   "critical": false,
+   "how": [
+    "Reads the text; where a description of this kind appears, checks it carries the right terms and no contradicting ones."
+   ],
+   "test": {
+    "real": {
+     "pass": 1
     }
    },
    "wrong": []
@@ -4294,6 +6727,30 @@
    "test": {
     "real": {
      "person": 4,
+     "pass": 1
+    }
+   },
+   "wrong": []
+  },
+  "R030": {
+   "verdict": "stays",
+   "why": "the code decided only 1 of 6 test rows; the rest came back to a person",
+   "checks": [
+    "PHOTO-24/watch-keyvisual/H016",
+    "PHOTO-24/watch-feature-r002/H018",
+    "PHOTO-24/watch-feature-r003/H013",
+    "PHOTO-24/watch-feature-r004/H014",
+    "PHOTO-24/watch-feature-r005/H013",
+    "PHOTO-24/watch-feature-r006/H013"
+   ],
+   "k_id": "K1_Q3",
+   "critical": false,
+   "how": [
+    "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+   ],
+   "test": {
+    "real": {
+     "person": 5,
      "pass": 1
     }
    },
@@ -4331,6 +6788,24 @@
    "test": {
     "real": {
      "person": 1
+    }
+   },
+   "wrong": []
+  },
+  "R036": {
+   "verdict": "moves",
+   "why": "the code decided 1 of 1 test rows with no wrong answer",
+   "checks": [
+    "PHOTO-24/dealer-launch/H002"
+   ],
+   "k_id": "K1_Q5",
+   "critical": true,
+   "how": [
+    "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+   ],
+   "test": {
+    "real": {
+     "pass": 1
     }
    },
    "wrong": []
@@ -4416,6 +6891,42 @@
    },
    "wrong": []
   },
+  "R058": {
+   "verdict": "moves",
+   "why": "the code decided 1 of 1 test rows with no wrong answer",
+   "checks": [
+    "PHOTO-24/dealer-launch/H067"
+   ],
+   "k_id": "K2_Q3",
+   "critical": false,
+   "how": [
+    "Reads each line's colour from the PDF and the colour behind it from the rendered page, and checks the pairing."
+   ],
+   "test": {
+    "real": {
+     "pass": 1
+    }
+   },
+   "wrong": []
+  },
+  "R072": {
+   "verdict": "moves",
+   "why": "the code decided 1 of 1 test rows with no wrong answer",
+   "checks": [
+    "PHOTO-24/dealer-launch/H037"
+   ],
+   "k_id": "K2_Q3",
+   "critical": false,
+   "how": [
+    "Reads the font, size or letter case of the selected lines from the PDF."
+   ],
+   "test": {
+    "real": {
+     "fail": 1
+    }
+   },
+   "wrong": []
+  },
   "R082": {
    "verdict": "moves",
    "why": "the code decided 1 of 1 test rows with no wrong answer",
@@ -4430,6 +6941,65 @@
    "test": {
     "real": {
      "fail": 1
+    }
+   },
+   "wrong": []
+  },
+  "R083": {
+   "verdict": "moves",
+   "why": "the code decided 1 of 1 test rows with no wrong answer",
+   "checks": [
+    "PHOTO-24/dealer-launch/H071"
+   ],
+   "k_id": "K2_Q3",
+   "critical": false,
+   "how": [
+    "Reads the font, size or letter case of the selected lines from the PDF."
+   ],
+   "test": {
+    "real": {
+     "fail": 1
+    }
+   },
+   "wrong": []
+  },
+  "R089": {
+   "verdict": "moves",
+   "why": "the code decided 1 of 1 test rows with no wrong answer",
+   "checks": [
+    "PHOTO-24/dealer-launch/H076"
+   ],
+   "k_id": "K2_Q3",
+   "critical": false,
+   "how": [
+    "Reads the font, size or letter case of the selected lines from the PDF."
+   ],
+   "test": {
+    "real": {
+     "pass": 1
+    }
+   },
+   "wrong": []
+  },
+  "R094": {
+   "verdict": "moves",
+   "why": "the code decided 6 of 6 test rows with no wrong answer",
+   "checks": [
+    "PHOTO-24/watch-feature-r002/H027",
+    "PHOTO-24/watch-feature-r003/H026",
+    "PHOTO-24/watch-feature-r004/H025",
+    "PHOTO-24/watch-feature-r005/H026",
+    "PHOTO-24/watch-feature-r006/H025",
+    "PHOTO-24/dealer-launch/H004"
+   ],
+   "k_id": "K2_Q3",
+   "critical": false,
+   "how": [
+    "Reads the text and checks how the two words of the wordmark are set: stacked, or on one line."
+   ],
+   "test": {
+    "real": {
+     "pass": 6
     }
    },
    "wrong": []
@@ -4455,9 +7025,104 @@
     }
    },
    "wrong": []
+  },
+  "R112": {
+   "verdict": "moves",
+   "why": "the code decided 1 of 1 test rows with no wrong answer",
+   "checks": [
+    "PHOTO-24/dealer-launch/H038"
+   ],
+   "k_id": "K5_Q2",
+   "critical": false,
+   "how": [
+    "Compares the named texts' size or position, for each of the 5 named texts; all must pass."
+   ],
+   "test": {
+    "real": {
+     "pass": 1
+    }
+   },
+   "wrong": []
+  },
+  "R113": {
+   "verdict": "moves",
+   "why": "the code decided 1 of 1 test rows with no wrong answer",
+   "checks": [
+    "PHOTO-24/watch-keyvisual/H013"
+   ],
+   "k_id": "K5_Q2",
+   "critical": false,
+   "how": [
+    "Compares the text sizes (font size in PDFs, letter height on images)."
+   ],
+   "test": {
+    "real": {
+     "fail": 1
+    }
+   },
+   "wrong": []
+  },
+  "R115": {
+   "verdict": "moves",
+   "why": "the code decided 1 of 1 test rows with no wrong answer",
+   "checks": [
+    "PHOTO-24/watch-keyvisual/H058"
+   ],
+   "k_id": "K5_Q2",
+   "critical": false,
+   "how": [
+    "Compares the text sizes (font size in PDFs, letter height on images)."
+   ],
+   "test": {
+    "real": {
+     "pass": 1
+    }
+   },
+   "wrong": []
+  },
+  "R116": {
+   "verdict": "moves",
+   "why": "the code decided 5 of 5 test rows with no wrong answer",
+   "checks": [
+    "PHOTO-24/watch-feature-r002/H062",
+    "PHOTO-24/watch-feature-r003/H061",
+    "PHOTO-24/watch-feature-r004/H061",
+    "PHOTO-24/watch-feature-r005/H061",
+    "PHOTO-24/watch-feature-r006/H060"
+   ],
+   "k_id": "K5_Q2",
+   "critical": false,
+   "how": [
+    "Compares the named texts' size or position."
+   ],
+   "test": {
+    "real": {
+     "fail": 5
+    }
+   },
+   "wrong": []
   }
  },
  "PHOTO-26": {
+  "R015": {
+   "verdict": "moves",
+   "why": "the code decided 2 of 2 test rows with no wrong answer",
+   "checks": [
+    "PHOTO-26/collection-spread/H061",
+    "PHOTO-26/wholesale-presentation/H063"
+   ],
+   "k_id": "K1_Q2",
+   "critical": false,
+   "how": [
+    "Reads every page's size from the PDF."
+   ],
+   "test": {
+    "real": {
+     "pass": 2
+    }
+   },
+   "wrong": []
+  },
   "R026": {
    "verdict": "moves",
    "why": "the code decided 1 of 1 test rows with no wrong answer",
@@ -4513,6 +7178,45 @@
    },
    "wrong": []
   },
+  "R032": {
+   "verdict": "moves",
+   "why": "the code decided 2 of 2 test rows with no wrong answer",
+   "checks": [
+    "PHOTO-26/collection-spread/H050",
+    "PHOTO-26/wholesale-presentation/H052"
+   ],
+   "k_id": "K2_Q3",
+   "critical": false,
+   "how": [
+    "Reads each line's colour from the PDF and the colour behind it from the rendered page, and checks the pairing."
+   ],
+   "test": {
+    "real": {
+     "pass": 1,
+     "fail": 1
+    }
+   },
+   "wrong": []
+  },
+  "R033": {
+   "verdict": "moves",
+   "why": "the code decided 2 of 2 test rows with no wrong answer",
+   "checks": [
+    "PHOTO-26/collection-spread/H051",
+    "PHOTO-26/wholesale-presentation/H053"
+   ],
+   "k_id": "K2_Q3",
+   "critical": false,
+   "how": [
+    "Reads each line's colour from the PDF and the colour behind it from the rendered page, and checks the pairing."
+   ],
+   "test": {
+    "real": {
+     "pass": 2
+    }
+   },
+   "wrong": []
+  },
   "R034": {
    "verdict": "moves",
    "why": "the code decided 2 of 2 test rows with no wrong answer",
@@ -4532,6 +7236,101 @@
    },
    "wrong": []
   },
+  "R042": {
+   "verdict": "moves",
+   "why": "the code decided 2 of 2 test rows with no wrong answer",
+   "checks": [
+    "PHOTO-26/collection-spread/H025",
+    "PHOTO-26/wholesale-presentation/H028"
+   ],
+   "k_id": "K2_Q3",
+   "critical": false,
+   "how": [
+    "Reads the font, size or letter case of the selected lines from the PDF."
+   ],
+   "test": {
+    "real": {
+     "pass": 1,
+     "fail": 1
+    }
+   },
+   "wrong": []
+  },
+  "R049": {
+   "verdict": "moves",
+   "why": "the code decided 1 of 1 test rows with no wrong answer",
+   "checks": [
+    "PHOTO-26/collection-spread/H047"
+   ],
+   "k_id": "K2_Q3",
+   "critical": false,
+   "how": [
+    "Reads the font, size or letter case of the selected lines from the PDF."
+   ],
+   "test": {
+    "real": {
+     "pass": 1
+    }
+   },
+   "wrong": []
+  },
+  "R051": {
+   "verdict": "moves",
+   "why": "the code decided 1 of 1 test rows with no wrong answer",
+   "checks": [
+    "PHOTO-26/wholesale-presentation/H049"
+   ],
+   "k_id": "K2_Q3",
+   "critical": false,
+   "how": [
+    "Reads the font, size or letter case of the selected lines from the PDF."
+   ],
+   "test": {
+    "real": {
+     "fail": 1
+    }
+   },
+   "wrong": []
+  },
+  "R052": {
+   "verdict": "moves",
+   "why": "the code decided 2 of 2 test rows with no wrong answer",
+   "checks": [
+    "PHOTO-26/collection-spread/H060",
+    "PHOTO-26/wholesale-presentation/H062"
+   ],
+   "k_id": "K2_Q3",
+   "critical": false,
+   "how": [
+    "Reads the font, size or letter case of the selected lines from the PDF."
+   ],
+   "test": {
+    "real": {
+     "pass": 2
+    }
+   },
+   "wrong": []
+  },
+  "R055": {
+   "verdict": "moves",
+   "why": "the code decided 1 of 2 test rows with no wrong answer",
+   "checks": [
+    "PHOTO-26/collection-spread/H022",
+    "PHOTO-26/wholesale-presentation/H025"
+   ],
+   "k_id": "K2_Q3",
+   "critical": false,
+   "how": [
+    "Measures the clear paper below the heading on each single-product page."
+   ],
+   "test": {
+    "real": {
+     "pass": 1,
+     "person": 1
+    }
+   },
+   "wrong": []
+  },
   "R071": {
    "verdict": "moves",
    "why": "the code decided 1 of 1 test rows with no wrong answer",
@@ -4542,6 +7341,42 @@
    "critical": false,
    "how": [
     "Compares text sizes (font size in PDFs, letter height on images)."
+   ],
+   "test": {
+    "real": {
+     "pass": 1
+    }
+   },
+   "wrong": []
+  },
+  "R072": {
+   "verdict": "moves",
+   "why": "the code decided 1 of 1 test rows with no wrong answer",
+   "checks": [
+    "PHOTO-26/wholesale-presentation/H011"
+   ],
+   "k_id": "K5_Q2",
+   "critical": false,
+   "how": [
+    "Pairs each name with its own value and compares their sizes."
+   ],
+   "test": {
+    "real": {
+     "fail": 1
+    }
+   },
+   "wrong": []
+  },
+  "R073": {
+   "verdict": "moves",
+   "why": "the code decided 1 of 1 test rows with no wrong answer",
+   "checks": [
+    "PHOTO-26/collection-spread/H027"
+   ],
+   "k_id": "K5_Q2",
+   "critical": false,
+   "how": [
+    "Pairs each name with its own value and compares their sizes."
    ],
    "test": {
     "real": {
@@ -4570,6 +7405,47 @@
    },
    "wrong": []
   },
+  "R003": {
+   "verdict": "moves",
+   "why": "the code decided 6 of 6 test rows with no wrong answer",
+   "checks": [
+    "PHOTO-28/class-feed/H001",
+    "PHOTO-28/class-feed/H075",
+    "PHOTO-28/class-feed/H077",
+    "PHOTO-28/class-feed/H079",
+    "PHOTO-28/class-feed/H081",
+    "PHOTO-28/class-feed/H083"
+   ],
+   "k_id": "K1_Q1",
+   "critical": false,
+   "how": [
+    "Finds which supplied photo is shown, then checks the text for that person: reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+   ],
+   "test": {
+    "real": {
+     "pass": 6
+    }
+   },
+   "wrong": []
+  },
+  "R004": {
+   "verdict": "moves",
+   "why": "the code decided 1 of 1 test rows with no wrong answer",
+   "checks": [
+    "PHOTO-28/class-feed/H010"
+   ],
+   "k_id": "K1_Q1",
+   "critical": false,
+   "how": [
+    "Finds which supplied photo is shown, then checks the text for that person: reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+   ],
+   "test": {
+    "real": {
+     "pass": 1
+    }
+   },
+   "wrong": []
+  },
   "R006": {
    "verdict": "moves",
    "why": "the code decided 1 of 1 test rows with no wrong answer",
@@ -4580,6 +7456,199 @@
    "critical": false,
    "how": [
     "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+   ],
+   "test": {
+    "real": {
+     "pass": 1
+    }
+   },
+   "wrong": []
+  },
+  "R008": {
+   "verdict": "moves",
+   "why": "the code decided 2 of 2 test rows with no wrong answer",
+   "checks": [
+    "PHOTO-28/class-feed/H020",
+    "PHOTO-28/booking-story/H014"
+   ],
+   "k_id": "K1_Q1",
+   "critical": false,
+   "how": [
+    "Reads all text and checks none of the named words or patterns appears, for each of the 2 named texts; all must pass."
+   ],
+   "test": {
+    "real": {
+     "pass": 2
+    }
+   },
+   "wrong": []
+  },
+  "R011": {
+   "verdict": "moves",
+   "why": "the code decided 1 of 2 test rows with no wrong answer",
+   "checks": [
+    "PHOTO-28/studio-launch/H013",
+    "PHOTO-28/booking-story/H012"
+   ],
+   "k_id": "K1_Q1",
+   "critical": false,
+   "how": [
+    "Reads the text and checks every name that appears is given in full."
+   ],
+   "test": {
+    "real": {
+     "person": 1,
+     "pass": 1
+    }
+   },
+   "wrong": []
+  },
+  "R012": {
+   "verdict": "moves",
+   "why": "the code decided 1 of 2 test rows with no wrong answer",
+   "checks": [
+    "PHOTO-28/studio-launch/H014",
+    "PHOTO-28/booking-story/H013"
+   ],
+   "k_id": "K1_Q1",
+   "critical": false,
+   "how": [
+    "Reads where each value stands and checks the value that belongs to this name (by its section, column or line) is the expected one."
+   ],
+   "test": {
+    "real": {
+     "person": 1,
+     "pass": 1
+    }
+   },
+   "wrong": []
+  },
+  "R023": {
+   "verdict": "moves",
+   "why": "the code decided 1 of 1 test rows with no wrong answer",
+   "checks": [
+    "PHOTO-28/booking-story/H068"
+   ],
+   "k_id": "K1_Q1",
+   "critical": false,
+   "how": [
+    "Reads where each value stands and checks the value that belongs to this name (by its section, column or line) is the expected one."
+   ],
+   "test": {
+    "real": {
+     "pass": 1
+    }
+   },
+   "wrong": []
+  },
+  "R024": {
+   "verdict": "moves",
+   "why": "the code decided 1 of 1 test rows with no wrong answer",
+   "checks": [
+    "PHOTO-28/booking-story/H069"
+   ],
+   "k_id": "K1_Q1",
+   "critical": false,
+   "how": [
+    "Reads where each value stands and checks the value that belongs to this name (by its section, column or line) is the expected one."
+   ],
+   "test": {
+    "real": {
+     "pass": 1
+    }
+   },
+   "wrong": []
+  },
+  "R027": {
+   "verdict": "moves",
+   "why": "the code decided 1 of 2 test rows with no wrong answer",
+   "checks": [
+    "PHOTO-28/studio-launch/H082",
+    "PHOTO-28/booking-story/H074"
+   ],
+   "k_id": "K1_Q1",
+   "critical": false,
+   "how": [
+    "Reads where each value stands and checks the value that belongs to this name (by its section, column or line) is the expected one."
+   ],
+   "test": {
+    "real": {
+     "person": 1,
+     "pass": 1
+    }
+   },
+   "wrong": []
+  },
+  "R029": {
+   "verdict": "moves",
+   "why": "the code decided 1 of 2 test rows with no wrong answer",
+   "checks": [
+    "PHOTO-28/studio-launch/H086",
+    "PHOTO-28/booking-story/H078"
+   ],
+   "k_id": "K1_Q1",
+   "critical": false,
+   "how": [
+    "Reads where each value stands and checks the value that belongs to this name (by its section, column or line) is the expected one."
+   ],
+   "test": {
+    "real": {
+     "person": 1,
+     "pass": 1
+    }
+   },
+   "wrong": []
+  },
+  "R030": {
+   "verdict": "moves",
+   "why": "the code decided 1 of 2 test rows with no wrong answer",
+   "checks": [
+    "PHOTO-28/studio-launch/H088",
+    "PHOTO-28/booking-story/H080"
+   ],
+   "k_id": "K1_Q1",
+   "critical": false,
+   "how": [
+    "Reads where each value stands and checks the value that belongs to this name (by its section, column or line) is the expected one."
+   ],
+   "test": {
+    "real": {
+     "person": 1,
+     "pass": 1
+    }
+   },
+   "wrong": []
+  },
+  "R031": {
+   "verdict": "moves",
+   "why": "the code decided 1 of 2 test rows with no wrong answer",
+   "checks": [
+    "PHOTO-28/studio-launch/H090",
+    "PHOTO-28/booking-story/H082"
+   ],
+   "k_id": "K1_Q1",
+   "critical": false,
+   "how": [
+    "Reads where each value stands and checks the value that belongs to this name (by its section, column or line) is the expected one."
+   ],
+   "test": {
+    "real": {
+     "person": 1,
+     "pass": 1
+    }
+   },
+   "wrong": []
+  },
+  "R034": {
+   "verdict": "moves",
+   "why": "the code decided 1 of 1 test rows with no wrong answer",
+   "checks": [
+    "PHOTO-28/booking-story/H002"
+   ],
+   "k_id": "K1_Q3",
+   "critical": false,
+   "how": [
+    "Checks each named text lies fully inside the page or image, for each of the 2 named texts; all must pass."
    ],
    "test": {
     "real": {
@@ -4626,6 +7695,35 @@
    },
    "wrong": []
   },
+  "R050": {
+   "verdict": "moves",
+   "why": "the code decided 12 of 12 test rows with no wrong answer",
+   "checks": [
+    "PHOTO-28/studio-launch/H024",
+    "PHOTO-28/studio-launch/H083",
+    "PHOTO-28/studio-launch/H085",
+    "PHOTO-28/studio-launch/H087",
+    "PHOTO-28/studio-launch/H089",
+    "PHOTO-28/studio-launch/H091",
+    "PHOTO-28/booking-story/H023",
+    "PHOTO-28/booking-story/H075",
+    "PHOTO-28/booking-story/H077",
+    "PHOTO-28/booking-story/H079",
+    "PHOTO-28/booking-story/H081",
+    "PHOTO-28/booking-story/H083"
+   ],
+   "k_id": "K2_Q1",
+   "critical": false,
+   "how": [
+    "Finds the supplied photo, then reads the names standing beside it."
+   ],
+   "test": {
+    "real": {
+     "pass": 12
+    }
+   },
+   "wrong": []
+  },
   "R057": {
    "verdict": "stays",
    "why": "the code decided only 0 of 3 test rows; the rest came back to a person",
@@ -4645,12 +7743,92 @@
     }
    },
    "wrong": []
+  },
+  "R090": {
+   "verdict": "moves",
+   "why": "the code decided 3 of 3 test rows with no wrong answer",
+   "checks": [
+    "PHOTO-28/studio-launch/H030",
+    "PHOTO-28/class-feed/H031",
+    "PHOTO-28/booking-story/H028"
+   ],
+   "k_id": "K2_Q3",
+   "critical": false,
+   "how": [
+    "Counts the lines the named text runs over."
+   ],
+   "test": {
+    "real": {
+     "pass": 3
+    }
+   },
+   "wrong": []
   }
  },
  "VECTOR-04": {
+  "R016": {
+   "verdict": "moves",
+   "why": "the code decided 6 of 6 test rows with no wrong answer",
+   "checks": [
+    "VECTOR-04/recovered-sticker-window-mark/H018",
+    "VECTOR-04/recovered-sticker-bag-design-1/H014",
+    "VECTOR-04/recovered-sticker-bag-design-2/H014",
+    "VECTOR-04/recovered-sticker-bag-design-3/H014",
+    "VECTOR-04/new-sticker-companion-1/H022",
+    "VECTOR-04/new-sticker-companion-2/H022"
+   ],
+   "k_id": "K1_Q2",
+   "critical": false,
+   "how": [
+    "Reads the SVG's physical size and measures the drawn artwork."
+   ],
+   "test": {
+    "made_good": {
+     "pass": 6
+    },
+    "made_bad": {
+     "pass": 6
+    },
+    "made_bad2": {
+     "fail": 1,
+     "pass": 5
+    }
+   },
+   "wrong": []
+  },
+  "R019": {
+   "verdict": "moves",
+   "why": "the code decided 6 of 6 test rows with no wrong answer",
+   "checks": [
+    "VECTOR-04/recovered-sticker-window-mark/H016",
+    "VECTOR-04/recovered-sticker-bag-design-1/H012",
+    "VECTOR-04/recovered-sticker-bag-design-2/H012",
+    "VECTOR-04/recovered-sticker-bag-design-3/H012",
+    "VECTOR-04/new-sticker-companion-1/H018",
+    "VECTOR-04/new-sticker-companion-2/H018"
+   ],
+   "k_id": "K1_Q3",
+   "critical": false,
+   "how": [
+    "Reads the SVG's layers and strokes for a cut line drawn into the artwork."
+   ],
+   "test": {
+    "made_good": {
+     "pass": 6
+    },
+    "made_bad": {
+     "pass": 6
+    },
+    "made_bad2": {
+     "pass": 5,
+     "fail": 1
+    }
+   },
+   "wrong": []
+  },
   "R031": {
    "verdict": "moves",
-   "why": "the code decided 3 of 5 test rows with no wrong answer",
+   "why": "the code decided 5 of 5 test rows with no wrong answer",
    "checks": [
     "VECTOR-04/new-sticker-companion-1/H017",
     "VECTOR-04/new-sticker-companion-2/H017",
@@ -4665,13 +7843,114 @@
    ],
    "test": {
     "made_good": {
-     "pass": 3,
-     "person": 2
+     "pass": 5
     },
     "made_bad": {
-     "fail": 2,
+     "fail": 3,
+     "pass": 2
+    },
+    "made_bad2": {
+     "pass": 5
+    }
+   },
+   "wrong": []
+  },
+  "R033": {
+   "verdict": "moves",
+   "why": "the code decided 1 of 1 test rows with no wrong answer",
+   "checks": [
+    "VECTOR-04/recovered-sticker-bag-design-2/H003"
+   ],
+   "k_id": "K2_Q1",
+   "critical": false,
+   "how": [
+    "Compares the drawing's silhouette with the printed motif of each supplied photo."
+   ],
+   "test": {
+    "made_good": {
+     "pass": 1
+    },
+    "made_bad": {
+     "pass": 1
+    },
+    "made_bad2": {
+     "fail": 1
+    }
+   },
+   "wrong": []
+  },
+  "R034": {
+   "verdict": "stays",
+   "why": "the code decided only 0 of 1 test rows; the rest came back to a person",
+   "checks": [
+    "VECTOR-04/recovered-sticker-bag-design-3/H003"
+   ],
+   "k_id": "K2_Q1",
+   "critical": false,
+   "how": [
+    "Compares the drawing's silhouette with the printed motif of each supplied photo."
+   ],
+   "test": {
+    "made_good": {
+     "person": 1
+    },
+    "made_bad": {
+     "person": 1
+    },
+    "made_bad2": {
+     "fail": 1
+    }
+   },
+   "wrong": []
+  },
+  "R040": {
+   "verdict": "moves",
+   "why": "the code decided 1 of 1 test rows with no wrong answer",
+   "checks": [
+    "VECTOR-04/recovered-sticker-bag-design-1/H003"
+   ],
+   "k_id": "K2_Q1",
+   "critical": false,
+   "how": [
+    "Compares the drawing's silhouette with the printed motif of each supplied photo."
+   ],
+   "test": {
+    "made_good": {
+     "pass": 1
+    },
+    "made_bad": {
+     "person": 1
+    },
+    "made_bad2": {
+     "person": 1
+    }
+   },
+   "wrong": []
+  },
+  "R043": {
+   "verdict": "moves",
+   "why": "the code decided 1 of 2 test rows with no wrong answer",
+   "checks": [
+    "VECTOR-04/recovered-sticker-bag-design-3/H004",
+    "VECTOR-04/sticker-proof-bag-design-3/H004"
+   ],
+   "k_id": "K2_Q2",
+   "critical": false,
+   "how": [
+    "Counts tiny dot shapes in the SVG."
+   ],
+   "test": {
+    "made_good": {
      "pass": 1,
-     "person": 2
+     "person": 1
+    },
+    "made_bad": {
+     "pass": 1,
+     "person": 1
+    },
+    "made_bad2": {
+     "pass": 1,
+     "person": 1
     }
    },
    "wrong": []
@@ -4699,6 +7978,106 @@
     "made_bad": {
      "fail": 1,
      "pass": 5
+    },
+    "made_bad2": {
+     "pass": 6
+    }
+   },
+   "wrong": []
+  },
+  "R055": {
+   "verdict": "moves",
+   "why": "the code decided 1 of 1 test rows with no wrong answer",
+   "checks": [
+    "VECTOR-04/recovered-sticker-bag-design-2/H010"
+   ],
+   "k_id": "K2_Q3",
+   "critical": false,
+   "how": [
+    "Renders the artwork and finds the colour covering most of it, grounds left out."
+   ],
+   "test": {
+    "made_good": {
+     "pass": 1
+    },
+    "made_bad": {
+     "pass": 1
+    },
+    "made_bad2": {
+     "fail": 1
+    }
+   },
+   "wrong": []
+  },
+  "R056": {
+   "verdict": "moves",
+   "why": "the code decided 1 of 1 test rows with no wrong answer",
+   "checks": [
+    "VECTOR-04/recovered-sticker-bag-design-3/H010"
+   ],
+   "k_id": "K2_Q3",
+   "critical": false,
+   "how": [
+    "Renders the artwork and finds the colour covering most of it, grounds left out."
+   ],
+   "test": {
+    "made_good": {
+     "pass": 1
+    },
+    "made_bad": {
+     "pass": 1
+    },
+    "made_bad2": {
+     "fail": 1
+    }
+   },
+   "wrong": []
+  },
+  "R068": {
+   "verdict": "moves",
+   "why": "the code decided 1 of 1 test rows with no wrong answer",
+   "checks": [
+    "VECTOR-04/recovered-sticker-bag-design-1/H010"
+   ],
+   "k_id": "K2_Q3",
+   "critical": false,
+   "how": [
+    "Renders the artwork and finds the colour covering most of it, grounds left out."
+   ],
+   "test": {
+    "made_good": {
+     "pass": 1
+    },
+    "made_bad": {
+     "pass": 1
+    },
+    "made_bad2": {
+     "fail": 1
+    }
+   },
+   "wrong": []
+  },
+  "R069": {
+   "verdict": "moves",
+   "why": "the code decided 2 of 2 test rows with no wrong answer",
+   "checks": [
+    "VECTOR-04/new-sticker-companion-1/H006",
+    "VECTOR-04/new-sticker-companion-2/H006"
+   ],
+   "k_id": "K2_Q3",
+   "critical": false,
+   "how": [
+    "Renders the artwork and finds the colour covering most of it, grounds left out."
+   ],
+   "test": {
+    "made_good": {
+     "pass": 2
+    },
+    "made_bad": {
+     "pass": 2
+    },
+    "made_bad2": {
+     "pass": 2
     }
    },
    "wrong": []
@@ -4726,6 +8105,35 @@
     "made_bad": {
      "pass": 5,
      "fail": 1
+    },
+    "made_bad2": {
+     "pass": 6
+    }
+   },
+   "wrong": []
+  },
+  "R090": {
+   "verdict": "moves",
+   "why": "the code decided 2 of 2 test rows with no wrong answer",
+   "checks": [
+    "VECTOR-04/new-sticker-companion-1/H010",
+    "VECTOR-04/new-sticker-companion-2/H010"
+   ],
+   "k_id": "K2_Q3",
+   "critical": false,
+   "how": [
+    "Reads the SVG's live text sizes for the glyph and the capitals beside it."
+   ],
+   "test": {
+    "made_good": {
+     "pass": 2
+    },
+    "made_bad": {
+     "pass": 2
+    },
+    "made_bad2": {
+     "fail": 1,
+     "pass": 1
     }
    },
    "wrong": []

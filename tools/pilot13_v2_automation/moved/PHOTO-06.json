@@ -239,6 +239,449 @@
    "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
   },
   {
+   "check_id": "PHOTO-06/share-hollis-scan-03/H066",
+   "output_id": "share-hollis-scan-03",
+   "rule_id": "R018",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The caption on “Family archive share image - hollis_scan_03” (share-hollis-scan-03.jpg) names Ada Hollis; a shared surname, as in “Ada and Walter Hollis”, counts.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     [
+      "Ada Hollis",
+      {
+       "regex": "\\bAda(?:,| and| &) [\\w ,&]*Hollis\\b"
+      }
+     ]
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-06/share-hollis-scan-03/H067",
+   "output_id": "share-hollis-scan-03",
+   "rule_id": "R018",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The caption on “Family archive share image - hollis_scan_03” (share-hollis-scan-03.jpg) names Walter Hollis; a shared surname, as in “Ada and Walter Hollis”, counts.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     [
+      "Walter Hollis",
+      {
+       "regex": "\\bWalter(?:,| and| &) [\\w ,&]*Hollis\\b"
+      }
+     ]
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-06/share-hollis-scan-04/H065",
+   "output_id": "share-hollis-scan-04",
+   "rule_id": "R018",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The caption on “Family archive share image - hollis_scan_04” (share-hollis-scan-04.jpg) names Ada Hollis; a shared surname, as in “Ada and Ruth Hollis”, counts.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     [
+      "Ada Hollis",
+      {
+       "regex": "\\bAda(?:,| and| &) [\\w ,&]*Hollis\\b"
+      }
+     ]
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-06/share-hollis-scan-04/H066",
+   "output_id": "share-hollis-scan-04",
+   "rule_id": "R018",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The caption on “Family archive share image - hollis_scan_04” (share-hollis-scan-04.jpg) names Ruth Hollis; a shared surname, as in “Ada and Ruth Hollis”, counts.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     [
+      "Ruth Hollis",
+      {
+       "regex": "\\bRuth(?:,| and| &) [\\w ,&]*Hollis\\b"
+      }
+     ]
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-06/share-hollis-scan-05/H066",
+   "output_id": "share-hollis-scan-05",
+   "rule_id": "R018",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The caption on “Family archive share image - hollis_scan_05” (share-hollis-scan-05.jpg) names Ada Hollis; a shared surname, as in “Ada, Ruth, Frank and Carol Hollis”, counts.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     [
+      "Ada Hollis",
+      {
+       "regex": "\\bAda(?:,| and| &) [\\w ,&]*Hollis\\b"
+      }
+     ]
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-06/share-hollis-scan-05/H067",
+   "output_id": "share-hollis-scan-05",
+   "rule_id": "R018",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The caption on “Family archive share image - hollis_scan_05” (share-hollis-scan-05.jpg) names Ruth Hollis; a shared surname, as in “Ada, Ruth, Frank and Carol Hollis”, counts.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     [
+      "Ruth Hollis",
+      {
+       "regex": "\\bRuth(?:,| and| &) [\\w ,&]*Hollis\\b"
+      }
+     ]
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-06/share-hollis-scan-05/H068",
+   "output_id": "share-hollis-scan-05",
+   "rule_id": "R018",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The caption on “Family archive share image - hollis_scan_05” (share-hollis-scan-05.jpg) names Frank Hollis; a shared surname, as in “Ada, Ruth, Frank and Carol Hollis”, counts.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     [
+      "Frank Hollis",
+      {
+       "regex": "\\bFrank(?:,| and| &) [\\w ,&]*Hollis\\b"
+      }
+     ]
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-06/share-hollis-scan-05/H069",
+   "output_id": "share-hollis-scan-05",
+   "rule_id": "R018",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The caption on “Family archive share image - hollis_scan_05” (share-hollis-scan-05.jpg) names Carol Hollis; a shared surname, as in “Ada, Ruth, Frank and Carol Hollis”, counts.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     [
+      "Carol Hollis",
+      {
+       "regex": "\\bCarol(?:,| and| &) [\\w ,&]*Hollis\\b"
+      }
+     ]
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-06/share-hollis-scan-08/H063",
+   "output_id": "share-hollis-scan-08",
+   "rule_id": "R018",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The caption on “Family archive share image - hollis_scan_08” (share-hollis-scan-08.jpg) names Ada Hollis; a shared surname, as in “Ada and Tom Hollis”, counts.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     [
+      "Ada Hollis",
+      {
+       "regex": "\\bAda(?:,| and| &) [\\w ,&]*Hollis\\b"
+      }
+     ]
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-06/share-hollis-scan-08/H064",
+   "output_id": "share-hollis-scan-08",
+   "rule_id": "R018",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The caption on “Family archive share image - hollis_scan_08” (share-hollis-scan-08.jpg) names Tom Hollis; a shared surname, as in “Ada and Tom Hollis”, counts.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     [
+      "Tom Hollis",
+      {
+       "regex": "\\bTom(?:,| and| &) [\\w ,&]*Hollis\\b"
+      }
+     ]
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-06/share-hollis-scan-01/H055",
+   "output_id": "share-hollis-scan-01",
+   "rule_id": "R027",
+   "k_id": "K1_Q3",
+   "critical": false,
+   "check": "No accession code appears on “Family archive share image - hollis_scan_01” (share-hollis-scan-01.jpg).",
+   "assertion": {
+    "op": "v2_all_of",
+    "checks": [
+     {
+      "op": "v2_text_absent",
+      "patterns": {
+       "accession code": "\\b(?:acc(?:ession)?\\.?\\s*(?:no\\.?|number|#)|accession|cat(?:alogue)?\\.?\\s*(?:no\\.?|#)|inv(?:entory)?\\.?\\s*no\\.?|object\\s+no\\.?)|\\b[A-Z]{2,5}[-./]\\d{2,4}(?:[-./]\\d{1,4})+\\b|\\b(?:18|19|20)\\d\\d\\.\\d{1,4}\\.\\d{1,4}\\b"
+      }
+     },
+     {
+      "op": "v2_text_absent",
+      "patterns": {
+       "plate or number label": "\\b(?:plate|no\\.)\\s*\\d+"
+      },
+      "found_is": "person"
+     }
+    ]
+   },
+   "how": "Reads all text and checks none of the named words or patterns appears, for each of the 2 named texts; all must pass."
+  },
+  {
+   "check_id": "PHOTO-06/share-hollis-scan-02/H050",
+   "output_id": "share-hollis-scan-02",
+   "rule_id": "R027",
+   "k_id": "K1_Q3",
+   "critical": false,
+   "check": "No accession code appears on “Family archive share image - hollis_scan_02” (share-hollis-scan-02.jpg).",
+   "assertion": {
+    "op": "v2_all_of",
+    "checks": [
+     {
+      "op": "v2_text_absent",
+      "patterns": {
+       "accession code": "\\b(?:acc(?:ession)?\\.?\\s*(?:no\\.?|number|#)|accession|cat(?:alogue)?\\.?\\s*(?:no\\.?|#)|inv(?:entory)?\\.?\\s*no\\.?|object\\s+no\\.?)|\\b[A-Z]{2,5}[-./]\\d{2,4}(?:[-./]\\d{1,4})+\\b|\\b(?:18|19|20)\\d\\d\\.\\d{1,4}\\.\\d{1,4}\\b"
+      }
+     },
+     {
+      "op": "v2_text_absent",
+      "patterns": {
+       "plate or number label": "\\b(?:plate|no\\.)\\s*\\d+"
+      },
+      "found_is": "person"
+     }
+    ]
+   },
+   "how": "Reads all text and checks none of the named words or patterns appears, for each of the 2 named texts; all must pass."
+  },
+  {
+   "check_id": "PHOTO-06/share-hollis-scan-03/H054",
+   "output_id": "share-hollis-scan-03",
+   "rule_id": "R027",
+   "k_id": "K1_Q3",
+   "critical": false,
+   "check": "No accession code appears on “Family archive share image - hollis_scan_03” (share-hollis-scan-03.jpg).",
+   "assertion": {
+    "op": "v2_all_of",
+    "checks": [
+     {
+      "op": "v2_text_absent",
+      "patterns": {
+       "accession code": "\\b(?:acc(?:ession)?\\.?\\s*(?:no\\.?|number|#)|accession|cat(?:alogue)?\\.?\\s*(?:no\\.?|#)|inv(?:entory)?\\.?\\s*no\\.?|object\\s+no\\.?)|\\b[A-Z]{2,5}[-./]\\d{2,4}(?:[-./]\\d{1,4})+\\b|\\b(?:18|19|20)\\d\\d\\.\\d{1,4}\\.\\d{1,4}\\b"
+      }
+     },
+     {
+      "op": "v2_text_absent",
+      "patterns": {
+       "plate or number label": "\\b(?:plate|no\\.)\\s*\\d+"
+      },
+      "found_is": "person"
+     }
+    ]
+   },
+   "how": "Reads all text and checks none of the named words or patterns appears, for each of the 2 named texts; all must pass."
+  },
+  {
+   "check_id": "PHOTO-06/share-hollis-scan-04/H046",
+   "output_id": "share-hollis-scan-04",
+   "rule_id": "R027",
+   "k_id": "K1_Q3",
+   "critical": false,
+   "check": "No accession code appears on “Family archive share image - hollis_scan_04” (share-hollis-scan-04.jpg).",
+   "assertion": {
+    "op": "v2_all_of",
+    "checks": [
+     {
+      "op": "v2_text_absent",
+      "patterns": {
+       "accession code": "\\b(?:acc(?:ession)?\\.?\\s*(?:no\\.?|number|#)|accession|cat(?:alogue)?\\.?\\s*(?:no\\.?|#)|inv(?:entory)?\\.?\\s*no\\.?|object\\s+no\\.?)|\\b[A-Z]{2,5}[-./]\\d{2,4}(?:[-./]\\d{1,4})+\\b|\\b(?:18|19|20)\\d\\d\\.\\d{1,4}\\.\\d{1,4}\\b"
+      }
+     },
+     {
+      "op": "v2_text_absent",
+      "patterns": {
+       "plate or number label": "\\b(?:plate|no\\.)\\s*\\d+"
+      },
+      "found_is": "person"
+     }
+    ]
+   },
+   "how": "Reads all text and checks none of the named words or patterns appears, for each of the 2 named texts; all must pass."
+  },
+  {
+   "check_id": "PHOTO-06/share-hollis-scan-05/H054",
+   "output_id": "share-hollis-scan-05",
+   "rule_id": "R027",
+   "k_id": "K1_Q3",
+   "critical": false,
+   "check": "No accession code appears on “Family archive share image - hollis_scan_05” (share-hollis-scan-05.jpg).",
+   "assertion": {
+    "op": "v2_all_of",
+    "checks": [
+     {
+      "op": "v2_text_absent",
+      "patterns": {
+       "accession code": "\\b(?:acc(?:ession)?\\.?\\s*(?:no\\.?|number|#)|accession|cat(?:alogue)?\\.?\\s*(?:no\\.?|#)|inv(?:entory)?\\.?\\s*no\\.?|object\\s+no\\.?)|\\b[A-Z]{2,5}[-./]\\d{2,4}(?:[-./]\\d{1,4})+\\b|\\b(?:18|19|20)\\d\\d\\.\\d{1,4}\\.\\d{1,4}\\b"
+      }
+     },
+     {
+      "op": "v2_text_absent",
+      "patterns": {
+       "plate or number label": "\\b(?:plate|no\\.)\\s*\\d+"
+      },
+      "found_is": "person"
+     }
+    ]
+   },
+   "how": "Reads all text and checks none of the named words or patterns appears, for each of the 2 named texts; all must pass."
+  },
+  {
+   "check_id": "PHOTO-06/share-hollis-scan-06/H049",
+   "output_id": "share-hollis-scan-06",
+   "rule_id": "R027",
+   "k_id": "K1_Q3",
+   "critical": false,
+   "check": "No accession code appears on “Family archive share image - hollis_scan_06” (share-hollis-scan-06.jpg).",
+   "assertion": {
+    "op": "v2_all_of",
+    "checks": [
+     {
+      "op": "v2_text_absent",
+      "patterns": {
+       "accession code": "\\b(?:acc(?:ession)?\\.?\\s*(?:no\\.?|number|#)|accession|cat(?:alogue)?\\.?\\s*(?:no\\.?|#)|inv(?:entory)?\\.?\\s*no\\.?|object\\s+no\\.?)|\\b[A-Z]{2,5}[-./]\\d{2,4}(?:[-./]\\d{1,4})+\\b|\\b(?:18|19|20)\\d\\d\\.\\d{1,4}\\.\\d{1,4}\\b"
+      }
+     },
+     {
+      "op": "v2_text_absent",
+      "patterns": {
+       "plate or number label": "\\b(?:plate|no\\.)\\s*\\d+"
+      },
+      "found_is": "person"
+     }
+    ]
+   },
+   "how": "Reads all text and checks none of the named words or patterns appears, for each of the 2 named texts; all must pass."
+  },
+  {
+   "check_id": "PHOTO-06/share-hollis-scan-07/H057",
+   "output_id": "share-hollis-scan-07",
+   "rule_id": "R027",
+   "k_id": "K1_Q3",
+   "critical": false,
+   "check": "No accession code appears on “Family archive share image - hollis_scan_07” (share-hollis-scan-07.jpg).",
+   "assertion": {
+    "op": "v2_all_of",
+    "checks": [
+     {
+      "op": "v2_text_absent",
+      "patterns": {
+       "accession code": "\\b(?:acc(?:ession)?\\.?\\s*(?:no\\.?|number|#)|accession|cat(?:alogue)?\\.?\\s*(?:no\\.?|#)|inv(?:entory)?\\.?\\s*no\\.?|object\\s+no\\.?)|\\b[A-Z]{2,5}[-./]\\d{2,4}(?:[-./]\\d{1,4})+\\b|\\b(?:18|19|20)\\d\\d\\.\\d{1,4}\\.\\d{1,4}\\b"
+      }
+     },
+     {
+      "op": "v2_text_absent",
+      "patterns": {
+       "plate or number label": "\\b(?:plate|no\\.)\\s*\\d+"
+      },
+      "found_is": "person"
+     }
+    ]
+   },
+   "how": "Reads all text and checks none of the named words or patterns appears, for each of the 2 named texts; all must pass."
+  },
+  {
+   "check_id": "PHOTO-06/share-hollis-scan-08/H044",
+   "output_id": "share-hollis-scan-08",
+   "rule_id": "R027",
+   "k_id": "K1_Q3",
+   "critical": false,
+   "check": "No accession code appears on “Family archive share image - hollis_scan_08” (share-hollis-scan-08.jpg).",
+   "assertion": {
+    "op": "v2_all_of",
+    "checks": [
+     {
+      "op": "v2_text_absent",
+      "patterns": {
+       "accession code": "\\b(?:acc(?:ession)?\\.?\\s*(?:no\\.?|number|#)|accession|cat(?:alogue)?\\.?\\s*(?:no\\.?|#)|inv(?:entory)?\\.?\\s*no\\.?|object\\s+no\\.?)|\\b[A-Z]{2,5}[-./]\\d{2,4}(?:[-./]\\d{1,4})+\\b|\\b(?:18|19|20)\\d\\d\\.\\d{1,4}\\.\\d{1,4}\\b"
+      }
+     },
+     {
+      "op": "v2_text_absent",
+      "patterns": {
+       "plate or number label": "\\b(?:plate|no\\.)\\s*\\d+"
+      },
+      "found_is": "person"
+     }
+    ]
+   },
+   "how": "Reads all text and checks none of the named words or patterns appears, for each of the 2 named texts; all must pass."
+  },
+  {
+   "check_id": "PHOTO-06/share-hollis-scan-09/H054",
+   "output_id": "share-hollis-scan-09",
+   "rule_id": "R027",
+   "k_id": "K1_Q3",
+   "critical": false,
+   "check": "No accession code appears on “Family archive share image - hollis_scan_09” (share-hollis-scan-09.jpg).",
+   "assertion": {
+    "op": "v2_all_of",
+    "checks": [
+     {
+      "op": "v2_text_absent",
+      "patterns": {
+       "accession code": "\\b(?:acc(?:ession)?\\.?\\s*(?:no\\.?|number|#)|accession|cat(?:alogue)?\\.?\\s*(?:no\\.?|#)|inv(?:entory)?\\.?\\s*no\\.?|object\\s+no\\.?)|\\b[A-Z]{2,5}[-./]\\d{2,4}(?:[-./]\\d{1,4})+\\b|\\b(?:18|19|20)\\d\\d\\.\\d{1,4}\\.\\d{1,4}\\b"
+      }
+     },
+     {
+      "op": "v2_text_absent",
+      "patterns": {
+       "plate or number label": "\\b(?:plate|no\\.)\\s*\\d+"
+      },
+      "found_is": "person"
+     }
+    ]
+   },
+   "how": "Reads all text and checks none of the named words or patterns appears, for each of the 2 named texts; all must pass."
+  },
+  {
    "check_id": "PHOTO-06/share-hollis-scan-03/H009",
    "output_id": "share-hollis-scan-03",
    "rule_id": "R028",
@@ -298,6 +741,186 @@
     ]
    },
    "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-06/share-hollis-scan-01/H023",
+   "output_id": "share-hollis-scan-01",
+   "rule_id": "R082",
+   "k_id": "K5_Q2",
+   "critical": false,
+   "check": "The sitter's name or title line on “Family archive share image - hollis_scan_01” (share-hollis-scan-01.jpg) is set larger than the place and date line.",
+   "assertion": {
+    "op": "v2_size_vs",
+    "rel": "larger",
+    "a": [
+     "Ada Hollis",
+     "Ada infant"
+    ],
+    "b": [
+     "Brattleboro"
+    ]
+   },
+   "how": "Compares the text sizes (font size in PDFs, letter height on images)."
+  },
+  {
+   "check_id": "PHOTO-06/share-hollis-scan-02/H003",
+   "output_id": "share-hollis-scan-02",
+   "rule_id": "R082",
+   "k_id": "K5_Q2",
+   "critical": false,
+   "check": "The sitter's name or title line on “Family archive share image - hollis_scan_02” (share-hollis-scan-02.jpg) is set larger than the place and date line.",
+   "assertion": {
+    "op": "v2_size_vs",
+    "rel": "larger",
+    "a": [
+     "Ada Hollis",
+     "Ada young woman"
+    ],
+    "b": [
+     "Brattleboro"
+    ]
+   },
+   "how": "Compares the text sizes (font size in PDFs, letter height on images)."
+  },
+  {
+   "check_id": "PHOTO-06/share-hollis-scan-03/H021",
+   "output_id": "share-hollis-scan-03",
+   "rule_id": "R082",
+   "k_id": "K5_Q2",
+   "critical": false,
+   "check": "The sitter's name or title line on “Family archive share image - hollis_scan_03” (share-hollis-scan-03.jpg) is set larger than the place and date line.",
+   "assertion": {
+    "op": "v2_size_vs",
+    "rel": "larger",
+    "a": [
+     "Ada Hollis",
+     "Ada and Walter wedding"
+    ],
+    "b": [
+     "Newfane"
+    ]
+   },
+   "how": "Compares the text sizes (font size in PDFs, letter height on images)."
+  },
+  {
+   "check_id": "PHOTO-06/share-hollis-scan-04/H056",
+   "output_id": "share-hollis-scan-04",
+   "rule_id": "R082",
+   "k_id": "K5_Q2",
+   "critical": false,
+   "check": "The sitter's name or title line on “Family archive share image - hollis_scan_04” (share-hollis-scan-04.jpg) is set larger than the place and date line.",
+   "assertion": {
+    "op": "v2_size_vs",
+    "rel": "larger",
+    "a": [
+     "Ada Hollis",
+     "Ada with baby Ruth"
+    ],
+    "b": [
+     "Brattleboro"
+    ]
+   },
+   "how": "Compares the text sizes (font size in PDFs, letter height on images)."
+  },
+  {
+   "check_id": "PHOTO-06/share-hollis-scan-05/H021",
+   "output_id": "share-hollis-scan-05",
+   "rule_id": "R082",
+   "k_id": "K5_Q2",
+   "critical": false,
+   "check": "The sitter's name or title line on “Family archive share image - hollis_scan_05” (share-hollis-scan-05.jpg) is set larger than the place and date line.",
+   "assertion": {
+    "op": "v2_size_vs",
+    "rel": "larger",
+    "a": [
+     "Ada Hollis",
+     "Ada and the children"
+    ],
+    "b": [
+     "Putney"
+    ]
+   },
+   "how": "Compares the text sizes (font size in PDFs, letter height on images)."
+  },
+  {
+   "check_id": "PHOTO-06/share-hollis-scan-06/H013",
+   "output_id": "share-hollis-scan-06",
+   "rule_id": "R082",
+   "k_id": "K5_Q2",
+   "critical": false,
+   "check": "The sitter's name or title line on “Family archive share image - hollis_scan_06” (share-hollis-scan-06.jpg) is set larger than the place and date line.",
+   "assertion": {
+    "op": "v2_size_vs",
+    "rel": "larger",
+    "a": [
+     "Ada Hollis",
+     "Nan in the garden"
+    ],
+    "b": [
+     "Brattleboro"
+    ]
+   },
+   "how": "Compares the text sizes (font size in PDFs, letter height on images)."
+  },
+  {
+   "check_id": "PHOTO-06/share-hollis-scan-07/H024",
+   "output_id": "share-hollis-scan-07",
+   "rule_id": "R082",
+   "k_id": "K5_Q2",
+   "critical": false,
+   "check": "The sitter's name or title line on “Family archive share image - hollis_scan_07” (share-hollis-scan-07.jpg) is set larger than the place and date line.",
+   "assertion": {
+    "op": "v2_size_vs",
+    "rel": "larger",
+    "a": [
+     "Ada Hollis",
+     "Nan at the stove"
+    ],
+    "b": [
+     "Brattleboro"
+    ]
+   },
+   "how": "Compares the text sizes (font size in PDFs, letter height on images)."
+  },
+  {
+   "check_id": "PHOTO-06/share-hollis-scan-08/H054",
+   "output_id": "share-hollis-scan-08",
+   "rule_id": "R082",
+   "k_id": "K5_Q2",
+   "critical": false,
+   "check": "The sitter's name or title line on “Family archive share image - hollis_scan_08” (share-hollis-scan-08.jpg) is set larger than the place and date line.",
+   "assertion": {
+    "op": "v2_size_vs",
+    "rel": "larger",
+    "a": [
+     "Ada Hollis",
+     "Ada with grandchild"
+    ],
+    "b": [
+     "Brattleboro"
+    ]
+   },
+   "how": "Compares the text sizes (font size in PDFs, letter height on images)."
+  },
+  {
+   "check_id": "PHOTO-06/share-hollis-scan-09/H021",
+   "output_id": "share-hollis-scan-09",
+   "rule_id": "R082",
+   "k_id": "K5_Q2",
+   "critical": false,
+   "check": "The sitter's name or title line on “Family archive share image - hollis_scan_09” (share-hollis-scan-09.jpg) is set larger than the place and date line.",
+   "assertion": {
+    "op": "v2_size_vs",
+    "rel": "larger",
+    "a": [
+     "Ada Hollis",
+     "Ada later years"
+    ],
+    "b": [
+     "Brattleboro"
+    ]
+   },
+   "how": "Compares the text sizes (font size in PDFs, letter height on images)."
   }
  ]
 }

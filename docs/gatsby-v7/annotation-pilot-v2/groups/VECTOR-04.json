@@ -1459,8 +1459,10 @@
     "assets": [],
     "note": "Brief: set every artwork SVG to 55 mm on its long edge. Commission: physical long edge of 55 mm. meridian_sheet_spec.txt: \"Single stickers reproduce at 55 mm on the long edge.\""
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the SVG's physical size and measures the drawn artwork."
+   ],
    "rows": [
     {
      "check_id": "VECTOR-04/recovered-sticker-window-mark/H018",
@@ -1878,8 +1880,10 @@
     ],
     "note": "meridian_sheet_spec.txt: \"Do NOT draw the cut line into the picture.\""
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the SVG's layers and strokes for a cut line drawn into the artwork."
+   ],
    "rows": [
     {
      "check_id": "VECTOR-04/recovered-sticker-window-mark/H016",
@@ -3194,8 +3198,10 @@
     ],
     "note": "Brief, pinned: bag design 2 is meridian_bag_pourover.jpg, number 2 of the three bag photographs in the asset manifest (VECTOR-04-IN-002)."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Compares the drawing's silhouette with the printed motif of each supplied photo."
+   ],
    "rows": [
     {
      "check_id": "VECTOR-04/recovered-sticker-bag-design-2/H003",
@@ -3627,8 +3633,10 @@
     ],
     "note": "Brief, pinned: bag design 1 is meridian_bag_moth.jpg, number 1 of the three bag photographs in the asset manifest (VECTOR-04-IN-001)."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Compares the drawing's silhouette with the printed motif of each supplied photo."
+   ],
    "rows": [
     {
      "check_id": "VECTOR-04/recovered-sticker-bag-design-1/H003",
@@ -3842,8 +3850,10 @@
     ],
     "note": "Supplied photo meridian_bag_ridgeline.jpg shows the ridge line printed as a halftone screen: a flat tone at a distance, a field of dots up close."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Counts tiny dot shapes in the SVG."
+   ],
    "rows": [
     {
      "check_id": "VECTOR-04/recovered-sticker-bag-design-3/H004",
@@ -4739,8 +4749,10 @@
     ],
     "note": "Palette rules, distribution: the pour-over cone keeps its Ash Green ink. Supplied photo meridian_bag_pourover.jpg shows it printed in ash green."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Renders the artwork and finds the colour covering most of it, grounds left out."
+   ],
    "rows": [
     {
      "check_id": "VECTOR-04/recovered-sticker-bag-design-2/H010",
@@ -4797,8 +4809,10 @@
     ],
     "note": "Palette rules, distribution: the ridge line keeps its Brick Red ink. Supplied photo meridian_bag_ridgeline.jpg shows it printed in brick red."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Renders the artwork and finds the colour covering most of it, grounds left out."
+   ],
    "rows": [
     {
      "check_id": "VECTOR-04/recovered-sticker-bag-design-3/H010",
@@ -5565,8 +5579,10 @@
     ],
     "note": "Palette rules, distribution: the moth keeps its Roast Brown ink. Supplied photo meridian_bag_moth.jpg shows it printed in roast brown."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Renders the artwork and finds the colour covering most of it, grounds left out."
+   ],
    "rows": [
     {
      "check_id": "VECTOR-04/recovered-sticker-bag-design-1/H010",
@@ -5618,8 +5634,10 @@
     "assets": [],
     "note": "Palette rules, distribution: each companion takes its main ink from Roast Brown, Ash Green and Brick Red, the inks of the recovered designs."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Renders the artwork and finds the colour covering most of it, grounds left out."
+   ],
    "rows": [
     {
      "check_id": "VECTOR-04/new-sticker-companion-1/H006",
@@ -7304,8 +7322,10 @@
     ],
     "note": "Brand type system rule: Never set the ampersand at cap height. It is always 1.6 times the cap height of MERIDIAN and ASH."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the SVG's live text sizes for the glyph and the capitals beside it."
+   ],
    "rows": [
     {
      "check_id": "VECTOR-04/new-sticker-companion-1/H010",

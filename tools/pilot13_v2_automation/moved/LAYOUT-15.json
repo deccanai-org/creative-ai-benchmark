@@ -860,6 +860,32 @@
    "how": "Searches the deliverable for the supplied file (feature matching, confirmed by correlation)."
   },
   {
+   "check_id": "LAYOUT-15/producer-card-r006/H015",
+   "output_id": "producer-card-r006",
+   "rule_id": "R021",
+   "k_id": "K2_Q2",
+   "critical": false,
+   "check": "The headshot on “District insurance counter card - Karen Marsh” (producer-card-r006.pdf) shows no hair, skin or fabric detail that is not in the small 720 x 960 px producer_headshot_05.jpg.",
+   "assertion": {
+    "op": "v2_no_added_detail",
+    "asset": "producer_headshot_05.jpg"
+   },
+   "how": "Finds the supplied photo in the placed picture and checks it is not enlarged or extended beyond the file."
+  },
+  {
+   "check_id": "LAYOUT-15/producer-card-r014/H015",
+   "output_id": "producer-card-r014",
+   "rule_id": "R021",
+   "k_id": "K2_Q2",
+   "critical": false,
+   "check": "The headshot on “District insurance counter card - Dana Whitfield” (producer-card-r014.pdf) shows no hair, skin or fabric detail that is not in the small 675 x 900 px producer_headshot_13.jpg.",
+   "assertion": {
+    "op": "v2_no_added_detail",
+    "asset": "producer_headshot_13.jpg"
+   },
+   "how": "Finds the supplied photo in the placed picture and checks it is not enlarged or extended beyond the file."
+  },
+  {
    "check_id": "LAYOUT-15/producer-card-r002/H047",
    "output_id": "producer-card-r002",
    "rule_id": "R024",
@@ -1455,6 +1481,174 @@
     "case_matters": true
    },
    "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "LAYOUT-15/producer-card-r002/H009",
+   "output_id": "producer-card-r002",
+   "rule_id": "R058",
+   "k_id": "K2_Q4",
+   "critical": false,
+   "check": "The person in the headshot on “District insurance counter card - Raymond Hollis” (producer-card-r002.pdf) is recognizably the same person as in producer_headshot_01.jpg, with the face unaltered.",
+   "assertion": {
+    "op": "v2_same_photo",
+    "asset": "producer_headshot_01.jpg",
+    "min_ncc": 0.9
+   },
+   "how": "Finds the supplied photo and measures how closely the placed pixels match it."
+  },
+  {
+   "check_id": "LAYOUT-15/producer-card-r003/H014",
+   "output_id": "producer-card-r003",
+   "rule_id": "R058",
+   "k_id": "K2_Q4",
+   "critical": false,
+   "check": "The person in the headshot on “District insurance counter card - Susan Grady” (producer-card-r003.pdf) is recognizably the same person as in producer_headshot_02.jpg, with the face unaltered.",
+   "assertion": {
+    "op": "v2_same_photo",
+    "asset": "producer_headshot_02.jpg",
+    "min_ncc": 0.9
+   },
+   "how": "Finds the supplied photo and measures how closely the placed pixels match it."
+  },
+  {
+   "check_id": "LAYOUT-15/producer-card-r005/H014",
+   "output_id": "producer-card-r005",
+   "rule_id": "R058",
+   "k_id": "K2_Q4",
+   "critical": false,
+   "check": "The person in the headshot on “District insurance counter card - Paul Devoe” (producer-card-r005.pdf) is recognizably the same person as in producer_headshot_04.jpg, with the face unaltered.",
+   "assertion": {
+    "op": "v2_same_photo",
+    "asset": "producer_headshot_04.jpg",
+    "min_ncc": 0.9
+   },
+   "how": "Finds the supplied photo and measures how closely the placed pixels match it."
+  },
+  {
+   "check_id": "LAYOUT-15/producer-card-r006/H014",
+   "output_id": "producer-card-r006",
+   "rule_id": "R058",
+   "k_id": "K2_Q4",
+   "critical": false,
+   "check": "The person in the headshot on “District insurance counter card - Karen Marsh” (producer-card-r006.pdf) is recognizably the same person as in producer_headshot_05.jpg, with the face unaltered.",
+   "assertion": {
+    "op": "v2_same_photo",
+    "asset": "producer_headshot_05.jpg",
+    "min_ncc": 0.9
+   },
+   "how": "Finds the supplied photo and measures how closely the placed pixels match it."
+  },
+  {
+   "check_id": "LAYOUT-15/producer-card-r007/H014",
+   "output_id": "producer-card-r007",
+   "rule_id": "R058",
+   "k_id": "K2_Q4",
+   "critical": false,
+   "check": "The person in the headshot on “District insurance counter card - Daniel Okafor” (producer-card-r007.pdf) is recognizably the same person as in producer_headshot_06.jpg, with the face unaltered.",
+   "assertion": {
+    "op": "v2_same_photo",
+    "asset": "producer_headshot_06.jpg",
+    "min_ncc": 0.9
+   },
+   "how": "Finds the supplied photo and measures how closely the placed pixels match it."
+  },
+  {
+   "check_id": "LAYOUT-15/producer-card-r008/H014",
+   "output_id": "producer-card-r008",
+   "rule_id": "R058",
+   "k_id": "K2_Q4",
+   "critical": false,
+   "check": "The person in the headshot on “District insurance counter card - Gina Bianchi” (producer-card-r008.pdf) is recognizably the same person as in producer_headshot_07.jpg, with the face unaltered.",
+   "assertion": {
+    "op": "v2_same_photo",
+    "asset": "producer_headshot_07.jpg",
+    "min_ncc": 0.9
+   },
+   "how": "Finds the supplied photo and measures how closely the placed pixels match it."
+  },
+  {
+   "check_id": "LAYOUT-15/producer-card-r009/H014",
+   "output_id": "producer-card-r009",
+   "rule_id": "R058",
+   "k_id": "K2_Q4",
+   "critical": false,
+   "check": "The person in the headshot on “District insurance counter card - Miguel Reyes” (producer-card-r009.pdf) is recognizably the same person as in producer_headshot_08.jpg, with the face unaltered.",
+   "assertion": {
+    "op": "v2_same_photo",
+    "asset": "producer_headshot_08.jpg",
+    "min_ncc": 0.9
+   },
+   "how": "Finds the supplied photo and measures how closely the placed pixels match it."
+  },
+  {
+   "check_id": "LAYOUT-15/producer-card-r010/H014",
+   "output_id": "producer-card-r010",
+   "rule_id": "R058",
+   "k_id": "K2_Q4",
+   "critical": false,
+   "check": "The person in the headshot on “District insurance counter card - Linh Tran” (producer-card-r010.pdf) is recognizably the same person as in producer_headshot_09.jpg, with the face unaltered.",
+   "assertion": {
+    "op": "v2_same_photo",
+    "asset": "producer_headshot_09.jpg",
+    "min_ncc": 0.9
+   },
+   "how": "Finds the supplied photo and measures how closely the placed pixels match it."
+  },
+  {
+   "check_id": "LAYOUT-15/producer-card-r011/H014",
+   "output_id": "producer-card-r011",
+   "rule_id": "R058",
+   "k_id": "K2_Q4",
+   "critical": false,
+   "check": "The person in the headshot on “District insurance counter card - Sean Donnelly” (producer-card-r011.pdf) is recognizably the same person as in producer_headshot_10.jpg, with the face unaltered.",
+   "assertion": {
+    "op": "v2_same_photo",
+    "asset": "producer_headshot_10.jpg",
+    "min_ncc": 0.9
+   },
+   "how": "Finds the supplied photo and measures how closely the placed pixels match it."
+  },
+  {
+   "check_id": "LAYOUT-15/producer-card-r012/H014",
+   "output_id": "producer-card-r012",
+   "rule_id": "R058",
+   "k_id": "K2_Q4",
+   "critical": false,
+   "check": "The person in the headshot on “District insurance counter card - Rosa Castellano” (producer-card-r012.pdf) is recognizably the same person as in producer_headshot_11.jpg, with the face unaltered.",
+   "assertion": {
+    "op": "v2_same_photo",
+    "asset": "producer_headshot_11.jpg",
+    "min_ncc": 0.9
+   },
+   "how": "Finds the supplied photo and measures how closely the placed pixels match it."
+  },
+  {
+   "check_id": "LAYOUT-15/producer-card-r013/H014",
+   "output_id": "producer-card-r013",
+   "rule_id": "R058",
+   "k_id": "K2_Q4",
+   "critical": false,
+   "check": "The person in the headshot on “District insurance counter card - Walter Pruitt” (producer-card-r013.pdf) is recognizably the same person as in producer_headshot_12.jpg, with the face unaltered.",
+   "assertion": {
+    "op": "v2_same_photo",
+    "asset": "producer_headshot_12.jpg",
+    "min_ncc": 0.9
+   },
+   "how": "Finds the supplied photo and measures how closely the placed pixels match it."
+  },
+  {
+   "check_id": "LAYOUT-15/producer-card-r014/H014",
+   "output_id": "producer-card-r014",
+   "rule_id": "R058",
+   "k_id": "K2_Q4",
+   "critical": false,
+   "check": "The person in the headshot on “District insurance counter card - Dana Whitfield” (producer-card-r014.pdf) is recognizably the same person as in producer_headshot_13.jpg, with the face unaltered.",
+   "assertion": {
+    "op": "v2_same_photo",
+    "asset": "producer_headshot_13.jpg",
+    "min_ncc": 0.9
+   },
+   "how": "Finds the supplied photo and measures how closely the placed pixels match it."
   },
   {
    "check_id": "LAYOUT-15/producer-card-r002/H010",

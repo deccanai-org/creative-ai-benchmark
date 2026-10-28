@@ -35,9 +35,37 @@ FOUND_IN_TESTING = [
     ('Very large display type was read only in part ("LOFT" for "UMBRA / LOFT").',
      'Images are read at three scales, and for each area the reading that recovers the most letters is kept.'),
     ('A check that the ridge line is drawn, "not from the halftone dots" of a photo, was turned into "the photo is present".',
-     'Rules about how a drawing was built stay with people. Every converted rule with "not", "no" or "never" was re-read.'),
+     'Every converted rule with "not", "no" or "never" was re-read. Round 2 checks such rules for what the file shows: tiny dot shapes are counted in the SVG, and a traced drawing is matched against each photo.'),
     ('An SVG colour set through a CSS class, a named colour or the default black fill was invisible to the code.',
      'SVG colours are checked twice: the declared fills and strokes, and every solid area of the rendered artwork.'),
+    ('A portrait cropped from the supplied photo was located by the whole photo\'s outline, which ran over the monogram above it.',
+     'A supplied photo is located by the part of it that actually shows, compared pixel by pixel.'),
+    ('Talk cards printing the date as "2026-03-03" were not found by a pattern for "3 Mar".',
+     'A date is matched in any clear form, including exactly as the source record writes it.'),
+    ('A cropped headshot was compared with the whole supplied photo, so correlation fell below 0.6 for an unaltered face.',
+     'Only the part of the photo inside the placed picture\'s frame is compared.'),
+    ('"PRIYA ANAND" in capitals was sent to a person for a check that the name is "spelled exactly".',
+     'Letter case is not spelling: spelling checks compare without case. Checks that a line "reads exactly" still send a case difference to a person.'),
+    ('On a product page with the price in a separate column, no product name was paired with its price, and the check passed.',
+     'A page showing one product pairs it with that page\'s prices, and a name with no value found now goes to a person, never a pass.'),
+    ('Dark type on a dark panel was read as part of the letters, so the panel colour was missed.',
+     'The colour behind type leaves out only pixels close to the type\'s own colour, so low-contrast type is still checked.'),
+    ('Clear paper below a heading was measured from the line box, about 1 mm short of the letters\' real bottom.',
+     'Depth is measured from the bottom of the heading\'s letters, and a reading within 1 mm of the limit goes to a person.'),
+    ('Tracked type extracts from PDFs with spaces between its letters ("F R I 2 5 S E P"), so dates and spacing went unread.',
+     'Patterns are also matched with spaces removed, and letter spacing is measured glyph to glyph.'),
+    ('A check that "&nbsp;" does not appear missed "8:00&nbsp;PM", because the text touched the figures.',
+     'A word boundary applies only where the searched text starts or ends with a letter or digit (fixed for round 1 too).'),
+    ('A deck showing earlier drafts of the posters passed the check that it shows the delivered designs.',
+     'A design shown in a deck must match the delivered file in every cell of a 4 x 4 grid; any difference goes to a person.'),
+    ('A cut line drawn inside the sticker artwork passed, because its path was named "cut-line".',
+     'Only a group, or an object standing directly in the document, named as the cut contour counts as the separate cut layer.'),
+    ('One-colour wordmarks were found but marked unclear: correlation has little to compare inside a solid shape.',
+     'An unclear feature match is confirmed by template matching at the place it points to before it counts.'),
+    ('Stickers traced from a bag photo were compared by outline with the whole bag, so every row went to a person.',
+     'The drawing is feature-matched against each bag photo; its own photo must match clearly more points than the others.'),
+    ('Thumbnails built on game footage with little texture were never matched to their capture.',
+     'Whole-frame correlation is used where feature matching finds nothing.'),
 ]
 
 
@@ -72,7 +100,7 @@ def main():
             rule = groups[tid][rid]
             t = v['test'].get('made_good') if tid in ('LAYOUT-12', 'VECTOR-04', 'MOTION-11') else v['test'].get('real')
             t = t or {}
-            bad = v['test'].get('made_bad')
+            bad = Counter(v['test'].get('made_bad') or {}) + Counter(v['test'].get('made_bad2') or {})
             result = f'pass {t.get("pass", 0)} · person {t.get("person", 0)} · fail {t.get("fail", 0)}'
             if bad:
                 result += f' (broken files: pass {bad.get("pass", 0)} · person {bad.get("person", 0)} · fail {bad.get("fail", 0)})'
@@ -108,11 +136,12 @@ def main():
 <tr><td>Stays with people (judgement)</td><td class="n">{plan_c["human"]}</td><td class="n">{plan_n["human"]}</td></tr>
 </tbody></table></div>
 <h2>Test results for the moved rules</h2>
-<p>The ten tasks with outputs were tested on the 102 deliverables of the 2026-09-28 run. LAYOUT-12, VECTOR-04 and MOTION-11 have no run output, so test files were made from each task's own data in two sets: a correct set, and a set with one planted defect per file (a wrong weekday, acts out of order, an off-palette colour hidden in CSS, a title cut off at the edge). Every planted defect was failed or sent to a person; none passed. Every fail on the real outputs was checked by hand.</p>
+<p>The ten tasks with outputs were tested on the 102 deliverables of the 2026-09-28 run. LAYOUT-12, VECTOR-04 and MOTION-11 have no run output, so test files were made from each task's own data in three sets: a correct set, and two sets with one planted defect per file (a wrong weekday, acts out of order, an off-palette colour hidden in CSS, a title cut off at the edge, an act billed with the wrong date, a sticker traced from the wrong bag photo, a thumbnail built on another video's frame). Every planted defect was failed or sent to a person; none passed, and no correct file failed. Every fail on the real outputs was checked by hand.</p>
 <div class="scroll-x"><table class="summary"><thead><tr><th>Task</th><th class="n">Rules moved</th><th class="n">Checks moved</th><th class="n">Pass</th><th class="n">Person</th><th class="n">Fail</th><th>Tested on</th><th class="n">Rules staying</th></tr></thead>
 <tbody>{"".join(task_rows)}<tr><td><strong>Total</strong></td><td class="n"><strong>{totals["moves"]}</strong></td><td class="n"><strong>{totals["move_checks"]}</strong></td><td class="n">{totals["passed"]}</td><td class="n">{totals["person"]}</td><td class="n">{totals["failed"]}</td><td></td><td class="n">{totals["stays"]}</td></tr></tbody></table></div>
+<p>Pass, Person and Fail count test rows: the 2026-09-28 outputs for the ten tasks with a run, the correct made files for LAYOUT-12, VECTOR-04 and MOTION-11.</p>
 <h2>What testing found, and what changed</h2>
-<p>Each of these gave a wrong answer on a test output before it was fixed; after the fix, all outputs were run again.</p>
+<p>Each of these gave a wrong answer, or no answer where the file allowed one, on a test output before it was fixed; after the fixes, all outputs were run again.</p>
 <ul class="rules-list">{found}</ul>
 <h2>Questions for Dhiren</h2>
 <ul class="rules-list">

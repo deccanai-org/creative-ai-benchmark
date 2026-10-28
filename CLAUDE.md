@@ -35,6 +35,10 @@ image ops, Express, InDesign data merge, Fonts, Stock, Acrobat, Premiere-style v
   `test_objective_ops.py`); convert, test and decide: `tools/pilot13_v2_automation/` (README). Results page:
   `docs/gatsby-v7/annotation-pilot-v2/automation.html`. Not yet in TASK_SPEC.json, the V7 site, the Sheet or
   `verify_outputs.py`: that step needs Dhiren's approval.
+- **Round 2 (2026-10-28)**: the other 472 automatable checks were built (`tools/auto_verifier/objective_ops_r2.py`,
+  one handler per rule in `tools/pilot13_v2_automation/round2.py`); 418 more moved, so 1,167 of the 6,312 checks
+  (299 rules) are answered by code. 218 checks (50 rules) have code but stay with people. Round-1 conversions are
+  unchanged; made-file generators now also write a second broken set (`bad2`).
 
 ## Update 2026-10-22
 

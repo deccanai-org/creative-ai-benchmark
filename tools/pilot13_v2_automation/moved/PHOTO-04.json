@@ -68,6 +68,672 @@
    "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
   },
   {
+   "check_id": "PHOTO-04/villa-collection/H009",
+   "output_id": "villa-collection",
+   "rule_id": "R005",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "“Villa comparison brochure” (villa-collection.pdf) gives Casa Verranza a Spring nightly rate of 520.",
+   "assertion": {
+    "op": "v2_paired",
+    "anchor": [
+     "Casa Verranza",
+     "Verranza"
+    ],
+    "rivals": [
+     "Casa Oliveto",
+     "Oliveto",
+     "Casa Scogliera",
+     "Scogliera"
+    ],
+    "label": [
+     "Spring"
+    ],
+    "label_rivals": [
+     "High Summer",
+     "Autumn"
+    ],
+    "kind": "(?:EUR|€)\\s?\\d|\\d\\s?(?:EUR|€)|/\\s*night",
+    "value": {
+     "regex": "(?<![\\d,.])520(?![\\d,.]|\\d)"
+    },
+    "where": "section"
+   },
+   "how": "Reads where each value stands and checks the value that belongs to this name (by its section, column or line) is the expected one."
+  },
+  {
+   "check_id": "PHOTO-04/villa-collection/H016",
+   "output_id": "villa-collection",
+   "rule_id": "R005",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "“Villa comparison brochure” (villa-collection.pdf) gives Casa Oliveto a Spring nightly rate of 590.",
+   "assertion": {
+    "op": "v2_paired",
+    "anchor": [
+     "Casa Oliveto",
+     "Oliveto"
+    ],
+    "rivals": [
+     "Casa Verranza",
+     "Verranza",
+     "Casa Scogliera",
+     "Scogliera"
+    ],
+    "label": [
+     "Spring"
+    ],
+    "label_rivals": [
+     "High Summer",
+     "Autumn"
+    ],
+    "kind": "(?:EUR|€)\\s?\\d|\\d\\s?(?:EUR|€)|/\\s*night",
+    "value": {
+     "regex": "(?<![\\d,.])590(?![\\d,.]|\\d)"
+    },
+    "where": "section"
+   },
+   "how": "Reads where each value stands and checks the value that belongs to this name (by its section, column or line) is the expected one."
+  },
+  {
+   "check_id": "PHOTO-04/villa-collection/H023",
+   "output_id": "villa-collection",
+   "rule_id": "R005",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "“Villa comparison brochure” (villa-collection.pdf) gives Casa Scogliera a Spring nightly rate of 640.",
+   "assertion": {
+    "op": "v2_paired",
+    "anchor": [
+     "Casa Scogliera",
+     "Scogliera"
+    ],
+    "rivals": [
+     "Casa Verranza",
+     "Verranza",
+     "Casa Oliveto",
+     "Oliveto"
+    ],
+    "label": [
+     "Spring"
+    ],
+    "label_rivals": [
+     "High Summer",
+     "Autumn"
+    ],
+    "kind": "(?:EUR|€)\\s?\\d|\\d\\s?(?:EUR|€)|/\\s*night",
+    "value": {
+     "regex": "(?<![\\d,.])640(?![\\d,.]|\\d)"
+    },
+    "where": "section"
+   },
+   "how": "Reads where each value stands and checks the value that belongs to this name (by its section, column or line) is the expected one."
+  },
+  {
+   "check_id": "PHOTO-04/villa-collection/H074",
+   "output_id": "villa-collection",
+   "rule_id": "R005",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "“Villa comparison brochure” (villa-collection.pdf) gives Casa Verranza a High Summer nightly rate of 680.",
+   "assertion": {
+    "op": "v2_paired",
+    "anchor": [
+     "Casa Verranza",
+     "Verranza"
+    ],
+    "rivals": [
+     "Casa Oliveto",
+     "Oliveto",
+     "Casa Scogliera",
+     "Scogliera"
+    ],
+    "label": [
+     "High Summer"
+    ],
+    "label_rivals": [
+     "Spring",
+     "Autumn"
+    ],
+    "kind": "(?:EUR|€)\\s?\\d|\\d\\s?(?:EUR|€)|/\\s*night",
+    "value": {
+     "regex": "(?<![\\d,.])680(?![\\d,.]|\\d)"
+    },
+    "where": "section"
+   },
+   "how": "Reads where each value stands and checks the value that belongs to this name (by its section, column or line) is the expected one."
+  },
+  {
+   "check_id": "PHOTO-04/villa-collection/H076",
+   "output_id": "villa-collection",
+   "rule_id": "R005",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "“Villa comparison brochure” (villa-collection.pdf) gives Casa Verranza an Autumn nightly rate of 560.",
+   "assertion": {
+    "op": "v2_paired",
+    "anchor": [
+     "Casa Verranza",
+     "Verranza"
+    ],
+    "rivals": [
+     "Casa Oliveto",
+     "Oliveto",
+     "Casa Scogliera",
+     "Scogliera"
+    ],
+    "label": [
+     "Autumn"
+    ],
+    "label_rivals": [
+     "Spring",
+     "High Summer"
+    ],
+    "kind": "(?:EUR|€)\\s?\\d|\\d\\s?(?:EUR|€)|/\\s*night",
+    "value": {
+     "regex": "(?<![\\d,.])560(?![\\d,.]|\\d)"
+    },
+    "where": "section"
+   },
+   "how": "Reads where each value stands and checks the value that belongs to this name (by its section, column or line) is the expected one."
+  },
+  {
+   "check_id": "PHOTO-04/villa-collection/H078",
+   "output_id": "villa-collection",
+   "rule_id": "R005",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "“Villa comparison brochure” (villa-collection.pdf) gives Casa Oliveto a High Summer nightly rate of 740.",
+   "assertion": {
+    "op": "v2_paired",
+    "anchor": [
+     "Casa Oliveto",
+     "Oliveto"
+    ],
+    "rivals": [
+     "Casa Verranza",
+     "Verranza",
+     "Casa Scogliera",
+     "Scogliera"
+    ],
+    "label": [
+     "High Summer"
+    ],
+    "label_rivals": [
+     "Spring",
+     "Autumn"
+    ],
+    "kind": "(?:EUR|€)\\s?\\d|\\d\\s?(?:EUR|€)|/\\s*night",
+    "value": {
+     "regex": "(?<![\\d,.])740(?![\\d,.]|\\d)"
+    },
+    "where": "section"
+   },
+   "how": "Reads where each value stands and checks the value that belongs to this name (by its section, column or line) is the expected one."
+  },
+  {
+   "check_id": "PHOTO-04/villa-collection/H080",
+   "output_id": "villa-collection",
+   "rule_id": "R005",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "“Villa comparison brochure” (villa-collection.pdf) gives Casa Oliveto an Autumn nightly rate of 620.",
+   "assertion": {
+    "op": "v2_paired",
+    "anchor": [
+     "Casa Oliveto",
+     "Oliveto"
+    ],
+    "rivals": [
+     "Casa Verranza",
+     "Verranza",
+     "Casa Scogliera",
+     "Scogliera"
+    ],
+    "label": [
+     "Autumn"
+    ],
+    "label_rivals": [
+     "Spring",
+     "High Summer"
+    ],
+    "kind": "(?:EUR|€)\\s?\\d|\\d\\s?(?:EUR|€)|/\\s*night",
+    "value": {
+     "regex": "(?<![\\d,.])620(?![\\d,.]|\\d)"
+    },
+    "where": "section"
+   },
+   "how": "Reads where each value stands and checks the value that belongs to this name (by its section, column or line) is the expected one."
+  },
+  {
+   "check_id": "PHOTO-04/villa-collection/H082",
+   "output_id": "villa-collection",
+   "rule_id": "R005",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "“Villa comparison brochure” (villa-collection.pdf) gives Casa Scogliera a High Summer nightly rate of 780.",
+   "assertion": {
+    "op": "v2_paired",
+    "anchor": [
+     "Casa Scogliera",
+     "Scogliera"
+    ],
+    "rivals": [
+     "Casa Verranza",
+     "Verranza",
+     "Casa Oliveto",
+     "Oliveto"
+    ],
+    "label": [
+     "High Summer"
+    ],
+    "label_rivals": [
+     "Spring",
+     "Autumn"
+    ],
+    "kind": "(?:EUR|€)\\s?\\d|\\d\\s?(?:EUR|€)|/\\s*night",
+    "value": {
+     "regex": "(?<![\\d,.])780(?![\\d,.]|\\d)"
+    },
+    "where": "section"
+   },
+   "how": "Reads where each value stands and checks the value that belongs to this name (by its section, column or line) is the expected one."
+  },
+  {
+   "check_id": "PHOTO-04/villa-collection/H084",
+   "output_id": "villa-collection",
+   "rule_id": "R005",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "“Villa comparison brochure” (villa-collection.pdf) gives Casa Scogliera an Autumn nightly rate of 690.",
+   "assertion": {
+    "op": "v2_paired",
+    "anchor": [
+     "Casa Scogliera",
+     "Scogliera"
+    ],
+    "rivals": [
+     "Casa Verranza",
+     "Verranza",
+     "Casa Oliveto",
+     "Oliveto"
+    ],
+    "label": [
+     "Autumn"
+    ],
+    "label_rivals": [
+     "Spring",
+     "High Summer"
+    ],
+    "kind": "(?:EUR|€)\\s?\\d|\\d\\s?(?:EUR|€)|/\\s*night",
+    "value": {
+     "regex": "(?<![\\d,.])690(?![\\d,.]|\\d)"
+    },
+    "where": "section"
+   },
+   "how": "Reads where each value stands and checks the value that belongs to this name (by its section, column or line) is the expected one."
+  },
+  {
+   "check_id": "PHOTO-04/villa-collection/H010",
+   "output_id": "villa-collection",
+   "rule_id": "R006",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "“Villa comparison brochure” (villa-collection.pdf) gives Casa Verranza a Spring minimum stay of 3 nights.",
+   "assertion": {
+    "op": "v2_paired",
+    "anchor": [
+     "Casa Verranza",
+     "Verranza"
+    ],
+    "rivals": [
+     "Casa Oliveto",
+     "Oliveto",
+     "Casa Scogliera",
+     "Scogliera"
+    ],
+    "label": [
+     "Spring"
+    ],
+    "label_rivals": [
+     "High Summer",
+     "Autumn"
+    ],
+    "kind": "\\bmin(?:imum|\\.)?\\b.*\\bnights?\\b",
+    "value": {
+     "regex": "\\b3\\s*nights?\\b"
+    },
+    "where": "section"
+   },
+   "how": "Reads where each value stands and checks the value that belongs to this name (by its section, column or line) is the expected one."
+  },
+  {
+   "check_id": "PHOTO-04/villa-collection/H017",
+   "output_id": "villa-collection",
+   "rule_id": "R006",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "“Villa comparison brochure” (villa-collection.pdf) gives Casa Oliveto a Spring minimum stay of 3 nights.",
+   "assertion": {
+    "op": "v2_paired",
+    "anchor": [
+     "Casa Oliveto",
+     "Oliveto"
+    ],
+    "rivals": [
+     "Casa Verranza",
+     "Verranza",
+     "Casa Scogliera",
+     "Scogliera"
+    ],
+    "label": [
+     "Spring"
+    ],
+    "label_rivals": [
+     "High Summer",
+     "Autumn"
+    ],
+    "kind": "\\bmin(?:imum|\\.)?\\b.*\\bnights?\\b",
+    "value": {
+     "regex": "\\b3\\s*nights?\\b"
+    },
+    "where": "section"
+   },
+   "how": "Reads where each value stands and checks the value that belongs to this name (by its section, column or line) is the expected one."
+  },
+  {
+   "check_id": "PHOTO-04/villa-collection/H024",
+   "output_id": "villa-collection",
+   "rule_id": "R006",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "“Villa comparison brochure” (villa-collection.pdf) gives Casa Scogliera a Spring minimum stay of 4 nights.",
+   "assertion": {
+    "op": "v2_paired",
+    "anchor": [
+     "Casa Scogliera",
+     "Scogliera"
+    ],
+    "rivals": [
+     "Casa Verranza",
+     "Verranza",
+     "Casa Oliveto",
+     "Oliveto"
+    ],
+    "label": [
+     "Spring"
+    ],
+    "label_rivals": [
+     "High Summer",
+     "Autumn"
+    ],
+    "kind": "\\bmin(?:imum|\\.)?\\b.*\\bnights?\\b",
+    "value": {
+     "regex": "\\b4\\s*nights?\\b"
+    },
+    "where": "section"
+   },
+   "how": "Reads where each value stands and checks the value that belongs to this name (by its section, column or line) is the expected one."
+  },
+  {
+   "check_id": "PHOTO-04/villa-collection/H075",
+   "output_id": "villa-collection",
+   "rule_id": "R006",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "“Villa comparison brochure” (villa-collection.pdf) gives Casa Verranza a High Summer minimum stay of 7 nights.",
+   "assertion": {
+    "op": "v2_paired",
+    "anchor": [
+     "Casa Verranza",
+     "Verranza"
+    ],
+    "rivals": [
+     "Casa Oliveto",
+     "Oliveto",
+     "Casa Scogliera",
+     "Scogliera"
+    ],
+    "label": [
+     "High Summer"
+    ],
+    "label_rivals": [
+     "Spring",
+     "Autumn"
+    ],
+    "kind": "\\bmin(?:imum|\\.)?\\b.*\\bnights?\\b",
+    "value": {
+     "regex": "\\b7\\s*nights?\\b"
+    },
+    "where": "section"
+   },
+   "how": "Reads where each value stands and checks the value that belongs to this name (by its section, column or line) is the expected one."
+  },
+  {
+   "check_id": "PHOTO-04/villa-collection/H077",
+   "output_id": "villa-collection",
+   "rule_id": "R006",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "“Villa comparison brochure” (villa-collection.pdf) gives Casa Verranza an Autumn minimum stay of 5 nights.",
+   "assertion": {
+    "op": "v2_paired",
+    "anchor": [
+     "Casa Verranza",
+     "Verranza"
+    ],
+    "rivals": [
+     "Casa Oliveto",
+     "Oliveto",
+     "Casa Scogliera",
+     "Scogliera"
+    ],
+    "label": [
+     "Autumn"
+    ],
+    "label_rivals": [
+     "Spring",
+     "High Summer"
+    ],
+    "kind": "\\bmin(?:imum|\\.)?\\b.*\\bnights?\\b",
+    "value": {
+     "regex": "\\b5\\s*nights?\\b"
+    },
+    "where": "section"
+   },
+   "how": "Reads where each value stands and checks the value that belongs to this name (by its section, column or line) is the expected one."
+  },
+  {
+   "check_id": "PHOTO-04/villa-collection/H079",
+   "output_id": "villa-collection",
+   "rule_id": "R006",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "“Villa comparison brochure” (villa-collection.pdf) gives Casa Oliveto a High Summer minimum stay of 7 nights.",
+   "assertion": {
+    "op": "v2_paired",
+    "anchor": [
+     "Casa Oliveto",
+     "Oliveto"
+    ],
+    "rivals": [
+     "Casa Verranza",
+     "Verranza",
+     "Casa Scogliera",
+     "Scogliera"
+    ],
+    "label": [
+     "High Summer"
+    ],
+    "label_rivals": [
+     "Spring",
+     "Autumn"
+    ],
+    "kind": "\\bmin(?:imum|\\.)?\\b.*\\bnights?\\b",
+    "value": {
+     "regex": "\\b7\\s*nights?\\b"
+    },
+    "where": "section"
+   },
+   "how": "Reads where each value stands and checks the value that belongs to this name (by its section, column or line) is the expected one."
+  },
+  {
+   "check_id": "PHOTO-04/villa-collection/H081",
+   "output_id": "villa-collection",
+   "rule_id": "R006",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "“Villa comparison brochure” (villa-collection.pdf) gives Casa Oliveto an Autumn minimum stay of 5 nights.",
+   "assertion": {
+    "op": "v2_paired",
+    "anchor": [
+     "Casa Oliveto",
+     "Oliveto"
+    ],
+    "rivals": [
+     "Casa Verranza",
+     "Verranza",
+     "Casa Scogliera",
+     "Scogliera"
+    ],
+    "label": [
+     "Autumn"
+    ],
+    "label_rivals": [
+     "Spring",
+     "High Summer"
+    ],
+    "kind": "\\bmin(?:imum|\\.)?\\b.*\\bnights?\\b",
+    "value": {
+     "regex": "\\b5\\s*nights?\\b"
+    },
+    "where": "section"
+   },
+   "how": "Reads where each value stands and checks the value that belongs to this name (by its section, column or line) is the expected one."
+  },
+  {
+   "check_id": "PHOTO-04/villa-collection/H083",
+   "output_id": "villa-collection",
+   "rule_id": "R006",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "“Villa comparison brochure” (villa-collection.pdf) gives Casa Scogliera a High Summer minimum stay of 7 nights.",
+   "assertion": {
+    "op": "v2_paired",
+    "anchor": [
+     "Casa Scogliera",
+     "Scogliera"
+    ],
+    "rivals": [
+     "Casa Verranza",
+     "Verranza",
+     "Casa Oliveto",
+     "Oliveto"
+    ],
+    "label": [
+     "High Summer"
+    ],
+    "label_rivals": [
+     "Spring",
+     "Autumn"
+    ],
+    "kind": "\\bmin(?:imum|\\.)?\\b.*\\bnights?\\b",
+    "value": {
+     "regex": "\\b7\\s*nights?\\b"
+    },
+    "where": "section"
+   },
+   "how": "Reads where each value stands and checks the value that belongs to this name (by its section, column or line) is the expected one."
+  },
+  {
+   "check_id": "PHOTO-04/villa-collection/H085",
+   "output_id": "villa-collection",
+   "rule_id": "R006",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "“Villa comparison brochure” (villa-collection.pdf) gives Casa Scogliera an Autumn minimum stay of 5 nights.",
+   "assertion": {
+    "op": "v2_paired",
+    "anchor": [
+     "Casa Scogliera",
+     "Scogliera"
+    ],
+    "rivals": [
+     "Casa Verranza",
+     "Verranza",
+     "Casa Oliveto",
+     "Oliveto"
+    ],
+    "label": [
+     "Autumn"
+    ],
+    "label_rivals": [
+     "Spring",
+     "High Summer"
+    ],
+    "kind": "\\bmin(?:imum|\\.)?\\b.*\\bnights?\\b",
+    "value": {
+     "regex": "\\b5\\s*nights?\\b"
+    },
+    "where": "section"
+   },
+   "how": "Reads where each value stands and checks the value that belongs to this name (by its section, column or line) is the expected one."
+  },
+  {
+   "check_id": "PHOTO-04/villa-collection/H011",
+   "output_id": "villa-collection",
+   "rule_id": "R007",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The sleeps figure for Casa Verranza in “Villa comparison brochure” (villa-collection.pdf) reads 6.",
+   "assertion": {
+    "op": "v2_paired",
+    "anchor": [
+     "Casa Verranza",
+     "Verranza"
+    ],
+    "rivals": [
+     "Casa Oliveto",
+     "Oliveto",
+     "Casa Scogliera",
+     "Scogliera"
+    ],
+    "kind": "\\bsleeps?\\b\\W*\\d",
+    "value": {
+     "regex": "\\bsleeps?\\W{0,3}6\\b"
+    },
+    "where": "section"
+   },
+   "how": "Reads where each value stands and checks the value that belongs to this name (by its section, column or line) is the expected one."
+  },
+  {
+   "check_id": "PHOTO-04/villa-collection/H018",
+   "output_id": "villa-collection",
+   "rule_id": "R007",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The sleeps figure for Casa Oliveto in “Villa comparison brochure” (villa-collection.pdf) reads 8.",
+   "assertion": {
+    "op": "v2_paired",
+    "anchor": [
+     "Casa Oliveto",
+     "Oliveto"
+    ],
+    "rivals": [
+     "Casa Verranza",
+     "Verranza",
+     "Casa Scogliera",
+     "Scogliera"
+    ],
+    "kind": "\\bsleeps?\\b\\W*\\d",
+    "value": {
+     "regex": "\\bsleeps?\\W{0,3}8\\b"
+    },
+    "where": "section"
+   },
+   "how": "Reads where each value stands and checks the value that belongs to this name (by its section, column or line) is the expected one."
+  },
+  {
    "check_id": "PHOTO-04/booking-hero-oliveto/H009",
    "output_id": "booking-hero-oliveto",
    "rule_id": "R008",
@@ -546,6 +1212,158 @@
    "how": "Checks the named colours are used by type or shapes."
   },
   {
+   "check_id": "PHOTO-04/villa-collection/H033",
+   "output_id": "villa-collection",
+   "rule_id": "R039",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "All type on Verranza Blue #24425A grounds and panels in “Villa comparison brochure” (villa-collection.pdf) is Lime Wash #EFE9DC.",
+   "assertion": {
+    "op": "v2_text_on_ground",
+    "all_text": true,
+    "grounds": [
+     "#24425A"
+    ],
+    "colors": [
+     "#EFE9DC"
+    ]
+   },
+   "how": "Reads each line's colour from the PDF and the colour behind it from the rendered page, and checks the pairing."
+  },
+  {
+   "check_id": "PHOTO-04/villa-collection/H035",
+   "output_id": "villa-collection",
+   "rule_id": "R059",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Every house name in “Villa comparison brochure” (villa-collection.pdf) is set in Cormorant Garamond Light, with no heavier weight, apart from any numerals.",
+   "assertion": {
+    "op": "v2_style_lines",
+    "whole_lines": [
+     "Casa Verranza",
+     "Casa Oliveto",
+     "Casa Scogliera",
+     "Verranza",
+     "Oliveto",
+     "Scogliera"
+    ],
+    "optional": false,
+    "family": "Cormorant Garamond",
+    "weight": "Light",
+    "except_digits": true
+   },
+   "how": "Reads the font, size or letter case of the selected lines from the PDF."
+  },
+  {
+   "check_id": "PHOTO-04/villa-collection/H037",
+   "output_id": "villa-collection",
+   "rule_id": "R061",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The house name heading “Casa Verranza” in “Villa comparison brochure” (villa-collection.pdf) opens with a “C” twice the cap height of the capital “V” of “Verranza”.",
+   "assertion": {
+    "op": "v2_initial_ratio",
+    "heading": "Casa Verranza",
+    "ratio": 2.0
+   },
+   "how": "Reads the font sizes of the heading's letters from the PDF."
+  },
+  {
+   "check_id": "PHOTO-04/villa-collection/H086",
+   "output_id": "villa-collection",
+   "rule_id": "R061",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The house name heading “Casa Oliveto” in “Villa comparison brochure” (villa-collection.pdf) opens with a “C” twice the cap height of the capital “O” of “Oliveto”.",
+   "assertion": {
+    "op": "v2_initial_ratio",
+    "heading": "Casa Oliveto",
+    "ratio": 2.0
+   },
+   "how": "Reads the font sizes of the heading's letters from the PDF."
+  },
+  {
+   "check_id": "PHOTO-04/villa-collection/H087",
+   "output_id": "villa-collection",
+   "rule_id": "R061",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The house name heading “Casa Scogliera” in “Villa comparison brochure” (villa-collection.pdf) opens with a “C” twice the cap height of the capital “S” of “Scogliera”.",
+   "assertion": {
+    "op": "v2_initial_ratio",
+    "heading": "Casa Scogliera",
+    "ratio": 2.0
+   },
+   "how": "Reads the font sizes of the heading's letters from the PDF."
+  },
+  {
+   "check_id": "PHOTO-04/villa-collection/H038",
+   "output_id": "villa-collection",
+   "rule_id": "R062",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "No numeral in “Villa comparison brochure” (villa-collection.pdf) is set in Cormorant Garamond, including numerals inside headings.",
+   "assertion": {
+    "op": "v2_figures",
+    "font_not": "Cormorant Garamond"
+   },
+   "how": "Reads the figures' fonts, sizes and glyph shapes from the PDF."
+  },
+  {
+   "check_id": "PHOTO-04/villa-collection/H071",
+   "output_id": "villa-collection",
+   "rule_id": "R070",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Where rates or figures are stacked in a column in “Villa comparison brochure” (villa-collection.pdf), their digits line up vertically (tabular figures).",
+   "assertion": {
+    "op": "v2_figures",
+    "tabular": true,
+    "lines_pattern": "(?:EUR|€)\\s?\\d|\\d\\s?(?:EUR|€)|/\\s*night|\\bnights?\\b|\\bsleeps?\\b"
+   },
+   "how": "Reads the figures' fonts, sizes and glyph shapes from the PDF."
+  },
+  {
+   "check_id": "PHOTO-04/villa-collection/H090",
+   "output_id": "villa-collection",
+   "rule_id": "R076",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The rate figures in “Villa comparison brochure” (villa-collection.pdf) are lining figures: all at capital height, none dropping below the baseline.",
+   "assertion": {
+    "op": "v2_figures",
+    "lining": true,
+    "lines_pattern": "(?:EUR|€)\\s?\\d|\\d\\s?(?:EUR|€)|/\\s*night"
+   },
+   "how": "Reads the figures' fonts, sizes and glyph shapes from the PDF."
+  },
+  {
+   "check_id": "PHOTO-04/villa-collection/H068",
+   "output_id": "villa-collection",
+   "rule_id": "R085",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The gate monogram in “Villa comparison brochure” (villa-collection.pdf) is placed at 100% opacity, with no transparency or blend mode.",
+   "assertion": {
+    "op": "v2_placed_opacity",
+    "asset": "verranza_monogram_transparent.png"
+   },
+   "how": "Finds the supplied picture in the PDF and reads the transparency and blend mode it is drawn with."
+  },
+  {
+   "check_id": "PHOTO-04/villa-collection/H095",
+   "output_id": "villa-collection",
+   "rule_id": "R088",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Every numeral inside a heading or text line in “Villa comparison brochure” (villa-collection.pdf) is the same size as the letters around it.",
+   "assertion": {
+    "op": "v2_figures",
+    "same_size": true
+   },
+   "how": "Reads the figures' fonts, sizes and glyph shapes from the PDF."
+  },
+  {
    "check_id": "PHOTO-04/booking-hero-oliveto/H006",
    "output_id": "booking-hero-oliveto",
    "rule_id": "R115",
@@ -583,6 +1401,171 @@
     "text": "Casa Verranza"
    },
    "how": "Compares text sizes (font size in PDFs, letter height on images)."
+  },
+  {
+   "check_id": "PHOTO-04/villa-collection/H028",
+   "output_id": "villa-collection",
+   "rule_id": "R116",
+   "k_id": "K5_Q2",
+   "critical": false,
+   "check": "In each house section of “Villa comparison brochure” (villa-collection.pdf), the house name sits above that house's rates.",
+   "assertion": {
+    "op": "v2_sections",
+    "names": [
+     "Casa Verranza",
+     "Casa Oliveto",
+     "Casa Scogliera"
+    ],
+    "kinds": {
+     "sleeps": "\\bsleeps?\\b",
+     "season": "^\\s*(?:spring|high summer|autumn)\\s*$",
+     "rate": "(?:EUR|€)\\s?\\d|\\d\\s?(?:EUR|€)|/\\s*night",
+     "min": "\\bmin(?:imum|\\.)?\\b"
+    },
+    "value_kinds": [
+     "rate"
+    ],
+    "above": true
+   },
+   "how": "Reads each house section of the PDF: positions, sizes, order and labels of its entries."
+  },
+  {
+   "check_id": "PHOTO-04/booking-hero-oliveto/H024",
+   "output_id": "booking-hero-oliveto",
+   "rule_id": "R117",
+   "k_id": "K5_Q2",
+   "critical": false,
+   "check": "On “Villa booking hero - Oliveto” (booking-hero-oliveto.png) the house name “Casa Oliveto” sits above the nightly rate.",
+   "assertion": {
+    "op": "v2_position",
+    "a": {
+     "text": "Casa Oliveto"
+    },
+    "b": {
+     "pattern": "(?:EUR|€)\\s?\\d|\\d\\s?(?:EUR|€)|/\\s*night|per night"
+    },
+    "rel": "above"
+   },
+   "how": "Finds both elements (by their colour, the supplied file, the placed photo or the text) and compares their positions."
+  },
+  {
+   "check_id": "PHOTO-04/booking-hero-scogliera/H004",
+   "output_id": "booking-hero-scogliera",
+   "rule_id": "R117",
+   "k_id": "K5_Q2",
+   "critical": false,
+   "check": "On “Villa booking hero - Scogliera” (booking-hero-scogliera.png) the house name “Casa Scogliera” sits above the nightly rate.",
+   "assertion": {
+    "op": "v2_position",
+    "a": {
+     "text": "Casa Scogliera"
+    },
+    "b": {
+     "pattern": "(?:EUR|€)\\s?\\d|\\d\\s?(?:EUR|€)|/\\s*night|per night"
+    },
+    "rel": "above"
+   },
+   "how": "Finds both elements (by their colour, the supplied file, the placed photo or the text) and compares their positions."
+  },
+  {
+   "check_id": "PHOTO-04/booking-hero-verranza/H024",
+   "output_id": "booking-hero-verranza",
+   "rule_id": "R117",
+   "k_id": "K5_Q2",
+   "critical": false,
+   "check": "On “Villa booking hero - Verranza” (booking-hero-verranza.png) the house name “Casa Verranza” sits above the nightly rate.",
+   "assertion": {
+    "op": "v2_position",
+    "a": {
+     "text": "Casa Verranza"
+    },
+    "b": {
+     "pattern": "(?:EUR|€)\\s?\\d|\\d\\s?(?:EUR|€)|/\\s*night|per night"
+    },
+    "rel": "above"
+   },
+   "how": "Finds both elements (by their colour, the supplied file, the placed photo or the text) and compares their positions."
+  },
+  {
+   "check_id": "PHOTO-04/villa-collection/H064",
+   "output_id": "villa-collection",
+   "rule_id": "R119",
+   "k_id": "K5_Q2",
+   "critical": false,
+   "check": "In “Villa comparison brochure” (villa-collection.pdf), sleeps, minimum stays and the three seasonal rates appear in the same order for all three houses.",
+   "assertion": {
+    "op": "v2_sections",
+    "names": [
+     "Casa Verranza",
+     "Casa Oliveto",
+     "Casa Scogliera"
+    ],
+    "kinds": {
+     "sleeps": "\\bsleeps?\\b",
+     "season": "^\\s*(?:spring|high summer|autumn)\\s*$",
+     "rate": "(?:EUR|€)\\s?\\d|\\d\\s?(?:EUR|€)|/\\s*night",
+     "min": "\\bmin(?:imum|\\.)?\\b"
+    },
+    "value_kinds": [
+     "rate"
+    ],
+    "same_order": true
+   },
+   "how": "Reads each house section of the PDF: positions, sizes, order and labels of its entries."
+  },
+  {
+   "check_id": "PHOTO-04/villa-collection/H067",
+   "output_id": "villa-collection",
+   "rule_id": "R121",
+   "k_id": "K5_Q2",
+   "critical": false,
+   "check": "In each house section of “Villa comparison brochure” (villa-collection.pdf), the house name is set larger than that house's rates.",
+   "assertion": {
+    "op": "v2_sections",
+    "names": [
+     "Casa Verranza",
+     "Casa Oliveto",
+     "Casa Scogliera"
+    ],
+    "kinds": {
+     "sleeps": "\\bsleeps?\\b",
+     "season": "^\\s*(?:spring|high summer|autumn)\\s*$",
+     "rate": "(?:EUR|€)\\s?\\d|\\d\\s?(?:EUR|€)|/\\s*night",
+     "min": "\\bmin(?:imum|\\.)?\\b"
+    },
+    "value_kinds": [
+     "rate"
+    ],
+    "larger": true
+   },
+   "how": "Reads each house section of the PDF: positions, sizes, order and labels of its entries."
+  },
+  {
+   "check_id": "PHOTO-04/villa-collection/H094",
+   "output_id": "villa-collection",
+   "rule_id": "R122",
+   "k_id": "K5_Q2",
+   "critical": false,
+   "check": "In “Villa comparison brochure” (villa-collection.pdf), the sleeps, minimum-stay and seasonal-rate entries carry the same labels for all three houses.",
+   "assertion": {
+    "op": "v2_sections",
+    "names": [
+     "Casa Verranza",
+     "Casa Oliveto",
+     "Casa Scogliera"
+    ],
+    "kinds": {
+     "sleeps": "\\bsleeps?\\b",
+     "season": "^\\s*(?:spring|high summer|autumn)\\s*$",
+     "rate": "(?:EUR|€)\\s?\\d|\\d\\s?(?:EUR|€)|/\\s*night",
+     "min": "\\bmin(?:imum|\\.)?\\b"
+    },
+    "value_kinds": [
+     "rate"
+    ],
+    "same_labels": true
+   },
+   "how": "Reads each house section of the PDF: positions, sizes, order and labels of its entries."
   }
  ]
 }

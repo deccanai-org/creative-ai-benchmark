@@ -2,6 +2,25 @@
  "task_id": "PHOTO-10",
  "moved": [
   {
+   "check_id": "PHOTO-10/style-pdp-northgrove-style-02-heavy-tee/H002",
+   "output_id": "style-pdp-northgrove-style-02-heavy-tee",
+   "rule_id": "R002",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "If a colourway is named on “Apparel style product-page module - northgrove_style_02_heavy_tee” (style-pdp-northgrove-style-02-heavy-tee.png), it reads exactly “Moss” or “Fern”.",
+   "assertion": {
+    "op": "v2_text_absent",
+    "texts": [
+     "Bark",
+     "Slate",
+     "Oat",
+     "Ink",
+     "Clay"
+    ]
+   },
+   "how": "Reads all text and checks none of the named words or patterns appears."
+  },
+  {
    "check_id": "PHOTO-10/style-pdp-northgrove-style-01-loopback-crew/H010",
    "output_id": "style-pdp-northgrove-style-01-loopback-crew",
    "rule_id": "R003",
@@ -284,6 +303,126 @@
    "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
   },
   {
+   "check_id": "PHOTO-10/capsule-carousel-p01/H011",
+   "output_id": "capsule-carousel-p01",
+   "rule_id": "R009",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "Any style name on “Capsule launch carousel - Page 1” (capsule-carousel-p01.png) is spelled as northgrove_copy.txt names it: Loopback Crew, Heavyweight Tee, Raglan, Henley, Hoodie or Supporters' Crew.",
+   "assertion": {
+    "op": "v2_spelled",
+    "names": [
+     "Loopback Crew",
+     "Heavyweight Tee",
+     "Raglan",
+     "Henley",
+     "Hoodie",
+     "Supporters' Crew"
+    ]
+   },
+   "how": "Reads the text and flags any name close to, but not exactly, the listed spelling."
+  },
+  {
+   "check_id": "PHOTO-10/capsule-carousel-p02/H008",
+   "output_id": "capsule-carousel-p02",
+   "rule_id": "R009",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "Any style name on “Capsule launch carousel - Page 2” (capsule-carousel-p02.png) is spelled as northgrove_copy.txt names it: Loopback Crew, Heavyweight Tee, Raglan, Henley, Hoodie or Supporters' Crew.",
+   "assertion": {
+    "op": "v2_spelled",
+    "names": [
+     "Loopback Crew",
+     "Heavyweight Tee",
+     "Raglan",
+     "Henley",
+     "Hoodie",
+     "Supporters' Crew"
+    ]
+   },
+   "how": "Reads the text and flags any name close to, but not exactly, the listed spelling."
+  },
+  {
+   "check_id": "PHOTO-10/capsule-carousel-p03/H008",
+   "output_id": "capsule-carousel-p03",
+   "rule_id": "R009",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "Any style name on “Capsule launch carousel - Page 3” (capsule-carousel-p03.png) is spelled as northgrove_copy.txt names it: Loopback Crew, Heavyweight Tee, Raglan, Henley, Hoodie or Supporters' Crew.",
+   "assertion": {
+    "op": "v2_spelled",
+    "names": [
+     "Loopback Crew",
+     "Heavyweight Tee",
+     "Raglan",
+     "Henley",
+     "Hoodie",
+     "Supporters' Crew"
+    ]
+   },
+   "how": "Reads the text and flags any name close to, but not exactly, the listed spelling."
+  },
+  {
+   "check_id": "PHOTO-10/capsule-carousel-p04/H008",
+   "output_id": "capsule-carousel-p04",
+   "rule_id": "R009",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "Any style name on “Capsule launch carousel - Page 4” (capsule-carousel-p04.png) is spelled as northgrove_copy.txt names it: Loopback Crew, Heavyweight Tee, Raglan, Henley, Hoodie or Supporters' Crew.",
+   "assertion": {
+    "op": "v2_spelled",
+    "names": [
+     "Loopback Crew",
+     "Heavyweight Tee",
+     "Raglan",
+     "Henley",
+     "Hoodie",
+     "Supporters' Crew"
+    ]
+   },
+   "how": "Reads the text and flags any name close to, but not exactly, the listed spelling."
+  },
+  {
+   "check_id": "PHOTO-10/capsule-carousel-p05/H008",
+   "output_id": "capsule-carousel-p05",
+   "rule_id": "R009",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "Any style name on “Capsule launch carousel - Page 5” (capsule-carousel-p05.png) is spelled as northgrove_copy.txt names it: Loopback Crew, Heavyweight Tee, Raglan, Henley, Hoodie or Supporters' Crew.",
+   "assertion": {
+    "op": "v2_spelled",
+    "names": [
+     "Loopback Crew",
+     "Heavyweight Tee",
+     "Raglan",
+     "Henley",
+     "Hoodie",
+     "Supporters' Crew"
+    ]
+   },
+   "how": "Reads the text and flags any name close to, but not exactly, the listed spelling."
+  },
+  {
+   "check_id": "PHOTO-10/capsule-carousel-p06/H009",
+   "output_id": "capsule-carousel-p06",
+   "rule_id": "R009",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "Any style name on “Capsule launch carousel - Page 6” (capsule-carousel-p06.png) is spelled as northgrove_copy.txt names it: Loopback Crew, Heavyweight Tee, Raglan, Henley, Hoodie or Supporters' Crew.",
+   "assertion": {
+    "op": "v2_spelled",
+    "names": [
+     "Loopback Crew",
+     "Heavyweight Tee",
+     "Raglan",
+     "Henley",
+     "Hoodie",
+     "Supporters' Crew"
+    ]
+   },
+   "how": "Reads the text and flags any name close to, but not exactly, the listed spelling."
+  },
+  {
    "check_id": "PHOTO-10/capsule-carousel-p06/H001",
    "output_id": "capsule-carousel-p06",
    "rule_id": "R010",
@@ -345,6 +484,228 @@
     "if_any": "\\bgsm\\b|cotton|jersey"
    },
    "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-10/capsule-carousel-p01/H071",
+   "output_id": "capsule-carousel-p01",
+   "rule_id": "R015",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "Any colourway name labelling the Heavyweight Tee on “Capsule launch carousel - Page 1” (capsule-carousel-p01.png) is Moss or Fern.",
+   "assertion": {
+    "op": "v2_paired",
+    "anchor": [
+     "Heavyweight Tee"
+    ],
+    "whole_line": false,
+    "kind": "\\b(?:Moss|Bark|Slate|Oat|Ink|Clay|Fern)\\b",
+    "value": {
+     "regex": "\\b(?:Moss|Fern)\\b"
+    },
+    "where": "beside",
+    "empty_ok": true,
+    "optional": true
+   },
+   "how": "Reads where each value stands and checks the value that belongs to this name (by its section, column or line) is the expected one."
+  },
+  {
+   "check_id": "PHOTO-10/capsule-carousel-p02/H069",
+   "output_id": "capsule-carousel-p02",
+   "rule_id": "R015",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "Any colourway name labelling the Heavyweight Tee on “Capsule launch carousel - Page 2” (capsule-carousel-p02.png) is Moss or Fern.",
+   "assertion": {
+    "op": "v2_paired",
+    "anchor": [
+     "Heavyweight Tee"
+    ],
+    "whole_line": false,
+    "kind": "\\b(?:Moss|Bark|Slate|Oat|Ink|Clay|Fern)\\b",
+    "value": {
+     "regex": "\\b(?:Moss|Fern)\\b"
+    },
+    "where": "beside",
+    "empty_ok": true,
+    "optional": true
+   },
+   "how": "Reads where each value stands and checks the value that belongs to this name (by its section, column or line) is the expected one."
+  },
+  {
+   "check_id": "PHOTO-10/capsule-carousel-p03/H069",
+   "output_id": "capsule-carousel-p03",
+   "rule_id": "R015",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "Any colourway name labelling the Heavyweight Tee on “Capsule launch carousel - Page 3” (capsule-carousel-p03.png) is Moss or Fern.",
+   "assertion": {
+    "op": "v2_paired",
+    "anchor": [
+     "Heavyweight Tee"
+    ],
+    "whole_line": false,
+    "kind": "\\b(?:Moss|Bark|Slate|Oat|Ink|Clay|Fern)\\b",
+    "value": {
+     "regex": "\\b(?:Moss|Fern)\\b"
+    },
+    "where": "beside",
+    "empty_ok": true,
+    "optional": true
+   },
+   "how": "Reads where each value stands and checks the value that belongs to this name (by its section, column or line) is the expected one."
+  },
+  {
+   "check_id": "PHOTO-10/capsule-carousel-p04/H069",
+   "output_id": "capsule-carousel-p04",
+   "rule_id": "R015",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "Any colourway name labelling the Heavyweight Tee on “Capsule launch carousel - Page 4” (capsule-carousel-p04.png) is Moss or Fern.",
+   "assertion": {
+    "op": "v2_paired",
+    "anchor": [
+     "Heavyweight Tee"
+    ],
+    "whole_line": false,
+    "kind": "\\b(?:Moss|Bark|Slate|Oat|Ink|Clay|Fern)\\b",
+    "value": {
+     "regex": "\\b(?:Moss|Fern)\\b"
+    },
+    "where": "beside",
+    "empty_ok": true,
+    "optional": true
+   },
+   "how": "Reads where each value stands and checks the value that belongs to this name (by its section, column or line) is the expected one."
+  },
+  {
+   "check_id": "PHOTO-10/capsule-carousel-p05/H069",
+   "output_id": "capsule-carousel-p05",
+   "rule_id": "R015",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "Any colourway name labelling the Heavyweight Tee on “Capsule launch carousel - Page 5” (capsule-carousel-p05.png) is Moss or Fern.",
+   "assertion": {
+    "op": "v2_paired",
+    "anchor": [
+     "Heavyweight Tee"
+    ],
+    "whole_line": false,
+    "kind": "\\b(?:Moss|Bark|Slate|Oat|Ink|Clay|Fern)\\b",
+    "value": {
+     "regex": "\\b(?:Moss|Fern)\\b"
+    },
+    "where": "beside",
+    "empty_ok": true,
+    "optional": true
+   },
+   "how": "Reads where each value stands and checks the value that belongs to this name (by its section, column or line) is the expected one."
+  },
+  {
+   "check_id": "PHOTO-10/capsule-carousel-p06/H070",
+   "output_id": "capsule-carousel-p06",
+   "rule_id": "R015",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "Any colourway name labelling the Heavyweight Tee on “Capsule launch carousel - Page 6” (capsule-carousel-p06.png) is Moss or Fern.",
+   "assertion": {
+    "op": "v2_paired",
+    "anchor": [
+     "Heavyweight Tee"
+    ],
+    "whole_line": false,
+    "kind": "\\b(?:Moss|Bark|Slate|Oat|Ink|Clay|Fern)\\b",
+    "value": {
+     "regex": "\\b(?:Moss|Fern)\\b"
+    },
+    "where": "beside",
+    "empty_ok": true,
+    "optional": true
+   },
+   "how": "Reads where each value stands and checks the value that belongs to this name (by its section, column or line) is the expected one."
+  },
+  {
+   "check_id": "PHOTO-10/style-pdp-northgrove-style-03-raglan/H002",
+   "output_id": "style-pdp-northgrove-style-03-raglan",
+   "rule_id": "R027",
+   "k_id": "K1_Q5",
+   "critical": true,
+   "check": "No colourway name from northgrove_colourways.csv appears on “Apparel style product-page module - northgrove_style_03_raglan” (style-pdp-northgrove-style-03-raglan.png); that sheet lists its colourways only against the Loopback Crew and Heavyweight Tee.",
+   "assertion": {
+    "op": "v2_text_absent",
+    "texts": [
+     "Moss",
+     "Bark",
+     "Slate",
+     "Oat",
+     "Ink",
+     "Clay",
+     "Fern"
+    ]
+   },
+   "how": "Reads all text and checks none of the named words or patterns appears."
+  },
+  {
+   "check_id": "PHOTO-10/style-pdp-northgrove-style-04-henley/H002",
+   "output_id": "style-pdp-northgrove-style-04-henley",
+   "rule_id": "R027",
+   "k_id": "K1_Q5",
+   "critical": true,
+   "check": "No colourway name from northgrove_colourways.csv appears on “Apparel style product-page module - northgrove_style_04_henley” (style-pdp-northgrove-style-04-henley.png); that sheet lists its colourways only against the Loopback Crew and Heavyweight Tee.",
+   "assertion": {
+    "op": "v2_text_absent",
+    "texts": [
+     "Moss",
+     "Bark",
+     "Slate",
+     "Oat",
+     "Ink",
+     "Clay",
+     "Fern"
+    ]
+   },
+   "how": "Reads all text and checks none of the named words or patterns appears."
+  },
+  {
+   "check_id": "PHOTO-10/style-pdp-northgrove-style-05-zip-hoodie/H002",
+   "output_id": "style-pdp-northgrove-style-05-zip-hoodie",
+   "rule_id": "R027",
+   "k_id": "K1_Q5",
+   "critical": true,
+   "check": "No colourway name from northgrove_colourways.csv appears on “Apparel style product-page module - northgrove_style_05_zip_hoodie” (style-pdp-northgrove-style-05-zip-hoodie.png); that sheet lists its colourways only against the Loopback Crew and Heavyweight Tee.",
+   "assertion": {
+    "op": "v2_text_absent",
+    "texts": [
+     "Moss",
+     "Bark",
+     "Slate",
+     "Oat",
+     "Ink",
+     "Clay",
+     "Fern"
+    ]
+   },
+   "how": "Reads all text and checks none of the named words or patterns appears."
+  },
+  {
+   "check_id": "PHOTO-10/style-pdp-northgrove-style-06-supporters-crew/H002",
+   "output_id": "style-pdp-northgrove-style-06-supporters-crew",
+   "rule_id": "R027",
+   "k_id": "K1_Q5",
+   "critical": true,
+   "check": "No colourway name from northgrove_colourways.csv appears on “Apparel style product-page module - northgrove_style_06_supporters_crew” (style-pdp-northgrove-style-06-supporters-crew.png); that sheet lists its colourways only against the Loopback Crew and Heavyweight Tee.",
+   "assertion": {
+    "op": "v2_text_absent",
+    "texts": [
+     "Moss",
+     "Bark",
+     "Slate",
+     "Oat",
+     "Ink",
+     "Clay",
+     "Fern"
+    ]
+   },
+   "how": "Reads all text and checks none of the named words or patterns appears."
   },
   {
    "check_id": "PHOTO-10/style-pdp-northgrove-style-01-loopback-crew/H013",
@@ -533,6 +894,102 @@
     "if_any": "\\bgsm\\b|cotton|jersey"
    },
    "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-10/style-pdp-northgrove-style-01-loopback-crew/H035",
+   "output_id": "style-pdp-northgrove-style-01-loopback-crew",
+   "rule_id": "R103",
+   "k_id": "K5_Q1",
+   "critical": false,
+   "check": "The largest text on “Apparel style product-page module - northgrove_style_01_loopback_crew” (style-pdp-northgrove-style-01-loopback-crew.png), other than any NORTHGROVE wordmark, is the style name.",
+   "assertion": {
+    "op": "v2_largest_text",
+    "text": "Loopback Crew",
+    "except": [
+     "NORTHGROVE"
+    ]
+   },
+   "how": "Compares text sizes (font size in PDFs, letter height on images)."
+  },
+  {
+   "check_id": "PHOTO-10/style-pdp-northgrove-style-02-heavy-tee/H035",
+   "output_id": "style-pdp-northgrove-style-02-heavy-tee",
+   "rule_id": "R103",
+   "k_id": "K5_Q1",
+   "critical": false,
+   "check": "The largest text on “Apparel style product-page module - northgrove_style_02_heavy_tee” (style-pdp-northgrove-style-02-heavy-tee.png), other than any NORTHGROVE wordmark, is the style name.",
+   "assertion": {
+    "op": "v2_largest_text",
+    "text": "Heavyweight Tee",
+    "except": [
+     "NORTHGROVE"
+    ]
+   },
+   "how": "Compares text sizes (font size in PDFs, letter height on images)."
+  },
+  {
+   "check_id": "PHOTO-10/style-pdp-northgrove-style-03-raglan/H033",
+   "output_id": "style-pdp-northgrove-style-03-raglan",
+   "rule_id": "R103",
+   "k_id": "K5_Q1",
+   "critical": false,
+   "check": "The largest text on “Apparel style product-page module - northgrove_style_03_raglan” (style-pdp-northgrove-style-03-raglan.png), other than any NORTHGROVE wordmark, is the style name.",
+   "assertion": {
+    "op": "v2_largest_text",
+    "text": "Raglan",
+    "except": [
+     "NORTHGROVE"
+    ]
+   },
+   "how": "Compares text sizes (font size in PDFs, letter height on images)."
+  },
+  {
+   "check_id": "PHOTO-10/style-pdp-northgrove-style-04-henley/H033",
+   "output_id": "style-pdp-northgrove-style-04-henley",
+   "rule_id": "R103",
+   "k_id": "K5_Q1",
+   "critical": false,
+   "check": "The largest text on “Apparel style product-page module - northgrove_style_04_henley” (style-pdp-northgrove-style-04-henley.png), other than any NORTHGROVE wordmark, is the style name.",
+   "assertion": {
+    "op": "v2_largest_text",
+    "text": "Henley",
+    "except": [
+     "NORTHGROVE"
+    ]
+   },
+   "how": "Compares text sizes (font size in PDFs, letter height on images)."
+  },
+  {
+   "check_id": "PHOTO-10/style-pdp-northgrove-style-05-zip-hoodie/H033",
+   "output_id": "style-pdp-northgrove-style-05-zip-hoodie",
+   "rule_id": "R103",
+   "k_id": "K5_Q1",
+   "critical": false,
+   "check": "The largest text on “Apparel style product-page module - northgrove_style_05_zip_hoodie” (style-pdp-northgrove-style-05-zip-hoodie.png), other than any NORTHGROVE wordmark, is the style name.",
+   "assertion": {
+    "op": "v2_largest_text",
+    "text": "Hoodie",
+    "except": [
+     "NORTHGROVE"
+    ]
+   },
+   "how": "Compares text sizes (font size in PDFs, letter height on images)."
+  },
+  {
+   "check_id": "PHOTO-10/style-pdp-northgrove-style-06-supporters-crew/H034",
+   "output_id": "style-pdp-northgrove-style-06-supporters-crew",
+   "rule_id": "R103",
+   "k_id": "K5_Q1",
+   "critical": false,
+   "check": "The largest text on “Apparel style product-page module - northgrove_style_06_supporters_crew” (style-pdp-northgrove-style-06-supporters-crew.png), other than any NORTHGROVE wordmark, is the style name.",
+   "assertion": {
+    "op": "v2_largest_text",
+    "text": "Supporters' Crew",
+    "except": [
+     "NORTHGROVE"
+    ]
+   },
+   "how": "Compares text sizes (font size in PDFs, letter height on images)."
   },
   {
    "check_id": "PHOTO-10/capsule-carousel-p06/H002",

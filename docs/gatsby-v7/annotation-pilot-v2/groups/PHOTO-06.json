@@ -2182,8 +2182,10 @@
     ],
     "note": "photo_catalogue.csv Names column for this photograph, as confirmed by family_notes.txt."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-06/share-hollis-scan-03/H066",
@@ -14283,8 +14285,10 @@
    ],
    "slot_labels": {},
    "shared_reference": null,
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Compares the text sizes (font size in PDFs, letter height on images)."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-06/share-hollis-scan-01/H023",

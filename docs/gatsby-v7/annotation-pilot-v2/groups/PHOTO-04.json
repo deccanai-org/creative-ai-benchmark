@@ -363,8 +363,10 @@
     "3": "number"
    },
    "shared_reference": null,
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads where each value stands and checks the value that belongs to this name (by its section, column or line) is the expected one."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-04/villa-collection/H009",
@@ -648,8 +650,10 @@
     "3": "number"
    },
    "shared_reference": null,
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads where each value stands and checks the value that belongs to this name (by its section, column or line) is the expected one."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-04/villa-collection/H010",
@@ -929,8 +933,10 @@
     "2": "number"
    },
    "shared_reference": null,
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads where each value stands and checks the value that belongs to this name (by its section, column or line) is the expected one."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-04/villa-collection/H011",
@@ -3308,8 +3314,10 @@
     ],
     "note": "Palette rules, distribution: on Lime Wash, the house name, display lines and the booking-button label are Verranza Blue, and body text, rates and captions are Ink Charcoal, as on agentcard_2025_print.pdf. On Verranza Blue, all type is Lime Wash."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads each line's colour from the PDF and the colour behind it from the rendered page, and checks the pairing."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-04/villa-collection/H033",
@@ -4673,8 +4681,10 @@
     ],
     "note": "Brand type system rule: no weight above Light in Cormorant Garamond. Steps 01 and 02 are Cormorant Garamond Light."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the font, size or letter case of the selected lines from the PDF."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-04/villa-collection/H035",
@@ -4822,8 +4832,10 @@
     "4": "capital"
    },
    "shared_reference": null,
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the font sizes of the heading's letters from the PDF."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-04/villa-collection/H037",
@@ -4920,8 +4932,10 @@
     ],
     "note": "Brand type system rule: no numeral is ever set in the serif; every figure lives in Source Sans 3, tabular lining."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the figures' fonts, sizes and glyph shapes from the PDF."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-04/villa-collection/H038",
@@ -5584,8 +5598,10 @@
     ],
     "note": "Type system rules: all numerals use Source Sans 3 Regular with tabular lining figures."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the figures' fonts, sizes and glyph shapes from the PDF."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-04/villa-collection/H071",
@@ -5959,8 +5975,10 @@
     "assets": [],
     "note": "Brand identity, type rules: all numerals use Source Sans 3 Regular with tabular lining figures."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the figures' fonts, sizes and glyph shapes from the PDF."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-04/villa-collection/H090",
@@ -6815,8 +6833,10 @@
     "assets": [],
     "note": "Brand identity, type scale step 04 note: numerals remain Source Sans 3 Regular at the size of their surrounding text."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the figures' fonts, sizes and glyph shapes from the PDF."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-04/villa-collection/H095",
@@ -8863,8 +8883,10 @@
     "assets": [],
     "note": "Type system: house name is step 01 at 72 px; rates are step 04 at 15 px."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads each house section of the PDF: positions, sizes, order and labels of its entries."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-04/villa-collection/H028",
@@ -8919,8 +8941,10 @@
     "assets": [],
     "note": "Type system: house name is step 01 at 72 px; rates are step 04 at 15 px."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Finds both elements (by their colour, the supplied file, the placed photo or the text) and compares their positions."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-04/booking-hero-oliveto/H024",
@@ -9073,8 +9097,10 @@
     "assets": [],
     "note": "Brief: make the differences between the houses easy to scan; commission: organise six pages so the three properties can be compared."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads each house section of the PDF: positions, sizes, order and labels of its entries."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-04/villa-collection/H064",
@@ -9169,8 +9195,10 @@
     "assets": [],
     "note": "Type system: house name 34 pt (step 01) in villa-collection.pdf; rates 9 pt (step 04)."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads each house section of the PDF: positions, sizes, order and labels of its entries."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-04/villa-collection/H067",
@@ -9217,8 +9245,10 @@
     "assets": [],
     "note": "Brief: make the differences between the houses easy to scan; commission: organise six pages so the three properties can be compared."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads each house section of the PDF: positions, sizes, order and labels of its entries."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-04/villa-collection/H094",

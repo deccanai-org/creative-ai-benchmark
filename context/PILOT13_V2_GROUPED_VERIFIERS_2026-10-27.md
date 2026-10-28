@@ -123,3 +123,29 @@ from the delivered file moved; nothing needing judgement did.
 - Open: letter case policy ("OPENING KEYNOTE" for "Opening Keynote"); the definition questions; converting the
   remaining 472 automatable checks; step 7 (TASK_SPEC.json, V7 site, Sheet and `verify_outputs.py` dispatch of the
   `v2_*` operations), only with approval.
+
+## Round 2: the remaining automatable checks (2026-10-28)
+
+Dhiren asked to build the remaining 472 automatable checks. Each of the 140 rules got its own handler
+(`tools/pilot13_v2_automation/round2.py`), keyed by task and rule so round-1 conversions stay byte for byte the same;
+the new operations are in `tools/auto_verifier/objective_ops_r2.py` (fixtures: `test_objective_ops_r2.py`).
+
+| | Rules | Checks |
+|---|---:|---:|
+| Moved to code (rounds 1 and 2) | 299 | 1,167 |
+| Converted, but staying with people (the code decided under half of the test rows) | 50 | 218 |
+| Needs a definition first (open questions) | 100 | 271 |
+| Colour sampled on a photo or render (later) | 214 | 1,319 |
+| Stays with people (judgement) | 837 | 3,337 |
+
+- Round 2 moved 124 rules (418 checks); 16 rules (54 checks) stay. LAYOUT-12 R060 moved too, after a matching fix
+  (a word boundary only where the searched text starts or ends with a letter or digit, so "8:00&nbsp;PM" is caught).
+- Tested on the 2026-09-28 outputs (1,002 rows: 751 pass, 224 person, 27 fail; all 27 fails confirmed real defects,
+  25 of them new: PHOTO-04 house names in Georgia and no oversized initial, PHOTO-20 monogram 17.1 mm wide and her name
+  in Studio Slate on talk card r007, PHOTO-24 timing line and wordmark fonts and a wordmark smaller than the reference
+  name on six images, PHOTO-26 price lines in Helvetica at 17 pt, larger than the product names, and SKU lines in
+  Soft Clay) and on made files for LAYOUT-12, VECTOR-04 and MOTION-11: a correct set (374 pass, 9 person, 0 fail) and
+  two broken sets (every planted defect failed or sent to a person; nothing else failed).
+- 14 problems found in round-2 testing were fixed before the final run (listed on `automation.html`), among them one wrong
+  pass (a product page whose price sits in its own column).
+

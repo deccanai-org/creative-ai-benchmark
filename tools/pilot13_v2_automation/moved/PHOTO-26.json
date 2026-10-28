@@ -2,6 +2,36 @@
  "task_id": "PHOTO-26",
  "moved": [
   {
+   "check_id": "PHOTO-26/collection-spread/H061",
+   "output_id": "collection-spread",
+   "rule_id": "R015",
+   "k_id": "K1_Q2",
+   "critical": false,
+   "check": "Every page of “Autumn interiors collection spread” (collection-spread.pdf) reads 210 x 297 mm in Acrobat's Page Size, within 0.2 mm, with no bleed added around it.",
+   "assertion": {
+    "op": "v2_page_size",
+    "width_mm": 210.0,
+    "height_mm": 297.0,
+    "no_bleed": true
+   },
+   "how": "Reads every page's size from the PDF."
+  },
+  {
+   "check_id": "PHOTO-26/wholesale-presentation/H063",
+   "output_id": "wholesale-presentation",
+   "rule_id": "R015",
+   "k_id": "K1_Q2",
+   "critical": false,
+   "check": "Every page of “Interiors wholesale presentation” (wholesale-presentation.pdf) reads 338.67 x 190.5 mm in Acrobat's Page Size, within 0.2 mm, with no bleed added around it.",
+   "assertion": {
+    "op": "v2_page_size",
+    "width_mm": 338.67,
+    "height_mm": 190.5,
+    "no_bleed": true
+   },
+   "how": "Reads every page's size from the PDF."
+  },
+  {
    "check_id": "PHOTO-26/wholesale-presentation/H030",
    "output_id": "wholesale-presentation",
    "rule_id": "R026",
@@ -66,6 +96,92 @@
    "how": "Reads every type, shape and line colour from the file (photos excluded)."
   },
   {
+   "check_id": "PHOTO-26/collection-spread/H050",
+   "output_id": "collection-spread",
+   "rule_id": "R032",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Apart from a Soft Clay running foot, all type on Warm Paper Ground, Oatmeal Glaze or Soft Clay on “Autumn interiors collection spread” (collection-spread.pdf) is Stoneware Charcoal #3B3733.",
+   "assertion": {
+    "op": "v2_text_on_ground",
+    "all_text": true,
+    "grounds": [
+     "#F6F1E8",
+     "#E7DDCB",
+     "#C9A98E"
+    ],
+    "colors": [
+     "#3B3733"
+    ],
+    "foot_ok": [
+     "#C9A98E"
+    ]
+   },
+   "how": "Reads each line's colour from the PDF and the colour behind it from the rendered page, and checks the pairing."
+  },
+  {
+   "check_id": "PHOTO-26/wholesale-presentation/H052",
+   "output_id": "wholesale-presentation",
+   "rule_id": "R032",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Apart from a Soft Clay running foot, all type on Warm Paper Ground, Oatmeal Glaze or Soft Clay on “Interiors wholesale presentation” (wholesale-presentation.pdf) is Stoneware Charcoal #3B3733.",
+   "assertion": {
+    "op": "v2_text_on_ground",
+    "all_text": true,
+    "grounds": [
+     "#F6F1E8",
+     "#E7DDCB",
+     "#C9A98E"
+    ],
+    "colors": [
+     "#3B3733"
+    ],
+    "foot_ok": [
+     "#C9A98E"
+    ]
+   },
+   "how": "Reads each line's colour from the PDF and the colour behind it from the rendered page, and checks the pairing."
+  },
+  {
+   "check_id": "PHOTO-26/collection-spread/H051",
+   "output_id": "collection-spread",
+   "rule_id": "R033",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Any type set on Indigo Dye #33455E on “Autumn interiors collection spread” (collection-spread.pdf) is Warm Paper Ground #F6F1E8.",
+   "assertion": {
+    "op": "v2_text_on_ground",
+    "all_text": true,
+    "grounds": [
+     "#33455E"
+    ],
+    "colors": [
+     "#F6F1E8"
+    ]
+   },
+   "how": "Reads each line's colour from the PDF and the colour behind it from the rendered page, and checks the pairing."
+  },
+  {
+   "check_id": "PHOTO-26/wholesale-presentation/H053",
+   "output_id": "wholesale-presentation",
+   "rule_id": "R033",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Any type set on Indigo Dye #33455E on “Interiors wholesale presentation” (wholesale-presentation.pdf) is Warm Paper Ground #F6F1E8.",
+   "assertion": {
+    "op": "v2_text_on_ground",
+    "all_text": true,
+    "grounds": [
+     "#33455E"
+    ],
+    "colors": [
+     "#F6F1E8"
+    ]
+   },
+   "how": "Reads each line's colour from the PDF and the colour behind it from the rendered page, and checks the pairing."
+  },
+  {
    "check_id": "PHOTO-26/collection-spread/H052",
    "output_id": "collection-spread",
    "rule_id": "R034",
@@ -106,6 +222,274 @@
    "how": "Renders the file without photos and measures the share of the named colours."
   },
   {
+   "check_id": "PHOTO-26/collection-spread/H025",
+   "output_id": "collection-spread",
+   "rule_id": "R042",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Every price, dimension and care line on “Autumn interiors collection spread” (collection-spread.pdf) is set in Inter Regular, not Source Serif 4 and not a bold weight.",
+   "assertion": {
+    "op": "v2_style_lines",
+    "patterns": [
+     "[$€£]\\s?\\d",
+     "\\d\\s?mm\\b|\\bdia\\s?\\d|\\d\\s?cm\\b",
+     "dishwasher|hand\\s?wash|microwave|wash\\b|oven|wipe|tumble|line dry|dry flat"
+    ],
+    "optional": true,
+    "family": "Inter",
+    "weight": "Regular"
+   },
+   "how": "Reads the font, size or letter case of the selected lines from the PDF."
+  },
+  {
+   "check_id": "PHOTO-26/wholesale-presentation/H028",
+   "output_id": "wholesale-presentation",
+   "rule_id": "R042",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Every price, dimension and care line on “Interiors wholesale presentation” (wholesale-presentation.pdf) is set in Inter Regular, not Source Serif 4 and not a bold weight.",
+   "assertion": {
+    "op": "v2_style_lines",
+    "patterns": [
+     "[$€£]\\s?\\d",
+     "\\d\\s?mm\\b|\\bdia\\s?\\d|\\d\\s?cm\\b",
+     "dishwasher|hand\\s?wash|microwave|wash\\b|oven|wipe|tumble|line dry|dry flat"
+    ],
+    "optional": true,
+    "family": "Inter",
+    "weight": "Regular"
+   },
+   "how": "Reads the font, size or letter case of the selected lines from the PDF."
+  },
+  {
+   "check_id": "PHOTO-26/collection-spread/H047",
+   "output_id": "collection-spread",
+   "rule_id": "R049",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Any price, dimension or care line on “Autumn interiors collection spread” (collection-spread.pdf) is 8.5 pt in the PDF's text properties.",
+   "assertion": {
+    "op": "v2_style_lines",
+    "patterns": [
+     "[$€£]\\s?\\d",
+     "\\d\\s?mm\\b|\\bdia\\s?\\d|\\d\\s?cm\\b",
+     "dishwasher|hand\\s?wash|microwave|wash\\b|oven|wipe|tumble|line dry|dry flat"
+    ],
+    "optional": true,
+    "size": 8.5
+   },
+   "how": "Reads the font, size or letter case of the selected lines from the PDF."
+  },
+  {
+   "check_id": "PHOTO-26/wholesale-presentation/H049",
+   "output_id": "wholesale-presentation",
+   "rule_id": "R051",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Every price, dimension and care line on “Interiors wholesale presentation” (wholesale-presentation.pdf) is 8.5 pt in the PDF's text properties.",
+   "assertion": {
+    "op": "v2_style_lines",
+    "patterns": [
+     "[$€£]\\s?\\d",
+     "\\d\\s?mm\\b|\\bdia\\s?\\d|\\d\\s?cm\\b",
+     "dishwasher|hand\\s?wash|microwave|wash\\b|oven|wipe|tumble|line dry|dry flat"
+    ],
+    "optional": true,
+    "size": 8.5
+   },
+   "how": "Reads the font, size or letter case of the selected lines from the PDF."
+  },
+  {
+   "check_id": "PHOTO-26/collection-spread/H060",
+   "output_id": "collection-spread",
+   "rule_id": "R052",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "No product name on “Autumn interiors collection spread” (collection-spread.pdf) is set larger than 16 pt in the PDF's text properties.",
+   "assertion": {
+    "op": "v2_style_lines",
+    "whole_lines": [
+     "Oatmeal Breakfast Mug",
+     "Indigo Cereal Bowl",
+     "Oatmeal Pitcher",
+     "Soft Clay Dinner Plate",
+     "Charcoal Milk Jug",
+     "Oatmeal Bud Vase",
+     "Indigo Serving Bowl",
+     "Stoneware Tumbler",
+     "Soft Clay Soup Bowl",
+     "Charcoal Side Plate",
+     "Oatmeal Teapot",
+     "Indigo Mug",
+     "Soft Clay Serving Platter",
+     "Charcoal Vase",
+     "Oatmeal Pasta Bowl",
+     "Indigo Pitcher",
+     "Soft Clay Espresso Cup",
+     "Charcoal Serving Bowl",
+     "Oatmeal Tumbler Set",
+     "Indigo Dinner Plate",
+     "Soft Clay Vase",
+     "Charcoal Mug",
+     "Oatmeal Wool Throw",
+     "Indigo Wool Throw",
+     "Soft Clay Table Runner",
+     "Charcoal Wool Throw",
+     "Striped Table Runner",
+     "Indigo Table Runner",
+     "Oatmeal Cushion Cover",
+     "Indigo Cushion Cover",
+     "Soft Clay Napkin Set",
+     "Charcoal Placemat Set"
+    ],
+    "optional": true,
+    "max_size": 16
+   },
+   "how": "Reads the font, size or letter case of the selected lines from the PDF."
+  },
+  {
+   "check_id": "PHOTO-26/wholesale-presentation/H062",
+   "output_id": "wholesale-presentation",
+   "rule_id": "R052",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "No product name on “Interiors wholesale presentation” (wholesale-presentation.pdf) is set larger than 16 pt in the PDF's text properties.",
+   "assertion": {
+    "op": "v2_style_lines",
+    "whole_lines": [
+     "Oatmeal Breakfast Mug",
+     "Indigo Cereal Bowl",
+     "Oatmeal Pitcher",
+     "Soft Clay Dinner Plate",
+     "Charcoal Milk Jug",
+     "Oatmeal Bud Vase",
+     "Indigo Serving Bowl",
+     "Stoneware Tumbler",
+     "Soft Clay Soup Bowl",
+     "Charcoal Side Plate",
+     "Oatmeal Teapot",
+     "Indigo Mug",
+     "Soft Clay Serving Platter",
+     "Charcoal Vase",
+     "Oatmeal Pasta Bowl",
+     "Indigo Pitcher",
+     "Soft Clay Espresso Cup",
+     "Charcoal Serving Bowl",
+     "Oatmeal Tumbler Set",
+     "Indigo Dinner Plate",
+     "Soft Clay Vase",
+     "Charcoal Mug",
+     "Oatmeal Wool Throw",
+     "Indigo Wool Throw",
+     "Soft Clay Table Runner",
+     "Charcoal Wool Throw",
+     "Striped Table Runner",
+     "Indigo Table Runner",
+     "Oatmeal Cushion Cover",
+     "Indigo Cushion Cover",
+     "Soft Clay Napkin Set",
+     "Charcoal Placemat Set"
+    ],
+    "optional": true,
+    "max_size": 16
+   },
+   "how": "Reads the font, size or letter case of the selected lines from the PDF."
+  },
+  {
+   "check_id": "PHOTO-26/collection-spread/H022",
+   "output_id": "collection-spread",
+   "rule_id": "R055",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "On any single-product page of “Autumn interiors collection spread” (collection-spread.pdf), at least 40 mm of bare paper lies directly below the product name heading.",
+   "assertion": {
+    "op": "v2_bare_below",
+    "names": [
+     "Oatmeal Breakfast Mug",
+     "Indigo Cereal Bowl",
+     "Oatmeal Pitcher",
+     "Soft Clay Dinner Plate",
+     "Charcoal Milk Jug",
+     "Oatmeal Bud Vase",
+     "Indigo Serving Bowl",
+     "Stoneware Tumbler",
+     "Soft Clay Soup Bowl",
+     "Charcoal Side Plate",
+     "Oatmeal Teapot",
+     "Indigo Mug",
+     "Soft Clay Serving Platter",
+     "Charcoal Vase",
+     "Oatmeal Pasta Bowl",
+     "Indigo Pitcher",
+     "Soft Clay Espresso Cup",
+     "Charcoal Serving Bowl",
+     "Oatmeal Tumbler Set",
+     "Indigo Dinner Plate",
+     "Soft Clay Vase",
+     "Charcoal Mug",
+     "Oatmeal Wool Throw",
+     "Indigo Wool Throw",
+     "Soft Clay Table Runner",
+     "Charcoal Wool Throw",
+     "Striped Table Runner",
+     "Indigo Table Runner",
+     "Oatmeal Cushion Cover",
+     "Indigo Cushion Cover",
+     "Soft Clay Napkin Set",
+     "Charcoal Placemat Set"
+    ],
+    "min_mm": 40
+   },
+   "how": "Measures the clear paper below the heading on each single-product page."
+  },
+  {
+   "check_id": "PHOTO-26/wholesale-presentation/H025",
+   "output_id": "wholesale-presentation",
+   "rule_id": "R055",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "On any single-product page of “Interiors wholesale presentation” (wholesale-presentation.pdf), at least 40 mm of bare paper lies directly below the product name heading.",
+   "assertion": {
+    "op": "v2_bare_below",
+    "names": [
+     "Oatmeal Breakfast Mug",
+     "Indigo Cereal Bowl",
+     "Oatmeal Pitcher",
+     "Soft Clay Dinner Plate",
+     "Charcoal Milk Jug",
+     "Oatmeal Bud Vase",
+     "Indigo Serving Bowl",
+     "Stoneware Tumbler",
+     "Soft Clay Soup Bowl",
+     "Charcoal Side Plate",
+     "Oatmeal Teapot",
+     "Indigo Mug",
+     "Soft Clay Serving Platter",
+     "Charcoal Vase",
+     "Oatmeal Pasta Bowl",
+     "Indigo Pitcher",
+     "Soft Clay Espresso Cup",
+     "Charcoal Serving Bowl",
+     "Oatmeal Tumbler Set",
+     "Indigo Dinner Plate",
+     "Soft Clay Vase",
+     "Charcoal Mug",
+     "Oatmeal Wool Throw",
+     "Indigo Wool Throw",
+     "Soft Clay Table Runner",
+     "Charcoal Wool Throw",
+     "Striped Table Runner",
+     "Indigo Table Runner",
+     "Oatmeal Cushion Cover",
+     "Indigo Cushion Cover",
+     "Soft Clay Napkin Set",
+     "Charcoal Placemat Set"
+    ],
+    "min_mm": 40
+   },
+   "how": "Measures the clear paper below the heading on each single-product page."
+  },
+  {
    "check_id": "PHOTO-26/wholesale-presentation/H010",
    "output_id": "wholesale-presentation",
    "rule_id": "R071",
@@ -118,6 +502,100 @@
     "page": 1
    },
    "how": "Compares text sizes (font size in PDFs, letter height on images)."
+  },
+  {
+   "check_id": "PHOTO-26/wholesale-presentation/H011",
+   "output_id": "wholesale-presentation",
+   "rule_id": "R072",
+   "k_id": "K5_Q2",
+   "critical": false,
+   "check": "On “Interiors wholesale presentation” (wholesale-presentation.pdf) every product name is set larger than that product's price.",
+   "assertion": {
+    "op": "v2_size_pairs",
+    "names": [
+     "Oatmeal Breakfast Mug",
+     "Indigo Cereal Bowl",
+     "Oatmeal Pitcher",
+     "Soft Clay Dinner Plate",
+     "Charcoal Milk Jug",
+     "Oatmeal Bud Vase",
+     "Indigo Serving Bowl",
+     "Stoneware Tumbler",
+     "Soft Clay Soup Bowl",
+     "Charcoal Side Plate",
+     "Oatmeal Teapot",
+     "Indigo Mug",
+     "Soft Clay Serving Platter",
+     "Charcoal Vase",
+     "Oatmeal Pasta Bowl",
+     "Indigo Pitcher",
+     "Soft Clay Espresso Cup",
+     "Charcoal Serving Bowl",
+     "Oatmeal Tumbler Set",
+     "Indigo Dinner Plate",
+     "Soft Clay Vase",
+     "Charcoal Mug",
+     "Oatmeal Wool Throw",
+     "Indigo Wool Throw",
+     "Soft Clay Table Runner",
+     "Charcoal Wool Throw",
+     "Striped Table Runner",
+     "Indigo Table Runner",
+     "Oatmeal Cushion Cover",
+     "Indigo Cushion Cover",
+     "Soft Clay Napkin Set",
+     "Charcoal Placemat Set"
+    ],
+    "kind": "[$€£]\\s?\\d"
+   },
+   "how": "Pairs each name with its own value and compares their sizes."
+  },
+  {
+   "check_id": "PHOTO-26/collection-spread/H027",
+   "output_id": "collection-spread",
+   "rule_id": "R073",
+   "k_id": "K5_Q2",
+   "critical": false,
+   "check": "On “Autumn interiors collection spread” (collection-spread.pdf) every product name is set larger than that product's price, wherever both appear.",
+   "assertion": {
+    "op": "v2_size_pairs",
+    "names": [
+     "Oatmeal Breakfast Mug",
+     "Indigo Cereal Bowl",
+     "Oatmeal Pitcher",
+     "Soft Clay Dinner Plate",
+     "Charcoal Milk Jug",
+     "Oatmeal Bud Vase",
+     "Indigo Serving Bowl",
+     "Stoneware Tumbler",
+     "Soft Clay Soup Bowl",
+     "Charcoal Side Plate",
+     "Oatmeal Teapot",
+     "Indigo Mug",
+     "Soft Clay Serving Platter",
+     "Charcoal Vase",
+     "Oatmeal Pasta Bowl",
+     "Indigo Pitcher",
+     "Soft Clay Espresso Cup",
+     "Charcoal Serving Bowl",
+     "Oatmeal Tumbler Set",
+     "Indigo Dinner Plate",
+     "Soft Clay Vase",
+     "Charcoal Mug",
+     "Oatmeal Wool Throw",
+     "Indigo Wool Throw",
+     "Soft Clay Table Runner",
+     "Charcoal Wool Throw",
+     "Striped Table Runner",
+     "Indigo Table Runner",
+     "Oatmeal Cushion Cover",
+     "Indigo Cushion Cover",
+     "Soft Clay Napkin Set",
+     "Charcoal Placemat Set"
+    ],
+    "kind": "[$€£]\\s?\\d"
+   },
+   "how": "Pairs each name with its own value and compares their sizes."
   }
  ]
 }

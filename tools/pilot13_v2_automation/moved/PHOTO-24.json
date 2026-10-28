@@ -462,6 +462,68 @@
    "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
   },
   {
+   "check_id": "PHOTO-24/watch-feature-r003/H010",
+   "output_id": "watch-feature-r003",
+   "rule_id": "R008",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "Any movement description on “Watch product-page feature - LC-25-0102” (watch-feature-r003.png) matches lunara_notes.txt for LM-02: automatic, 48h reserve.",
+   "assertion": {
+    "op": "v2_description",
+    "trigger": "hand-?\\s?wound|automatic|self-?winding|manual(?:ly)?[- ]wound|power reserve|\\breserve\\b|small[- ]seconds",
+    "required": [
+     "\\bautomatic\\b"
+    ],
+    "forbidden": [
+     "hand-?\\s?wound",
+     "manual(?:ly)?[- ]wound",
+     "\\b(?!48)\\d{2}\\s?-?\\s?h(?:ours?|rs?)?\\b"
+    ]
+   },
+   "how": "Reads the text; where a description of this kind appears, checks it carries the right terms and no contradicting ones."
+  },
+  {
+   "check_id": "PHOTO-24/watch-feature-r006/H010",
+   "output_id": "watch-feature-r006",
+   "rule_id": "R008",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "Any movement description on “Watch product-page feature - LC-25-0105” (watch-feature-r006.png) matches lunara_notes.txt for LM-02: automatic, 48h reserve.",
+   "assertion": {
+    "op": "v2_description",
+    "trigger": "hand-?\\s?wound|automatic|self-?winding|manual(?:ly)?[- ]wound|power reserve|\\breserve\\b|small[- ]seconds",
+    "required": [
+     "\\bautomatic\\b"
+    ],
+    "forbidden": [
+     "hand-?\\s?wound",
+     "manual(?:ly)?[- ]wound",
+     "\\b(?!48)\\d{2}\\s?-?\\s?h(?:ours?|rs?)?\\b"
+    ]
+   },
+   "how": "Reads the text; where a description of this kind appears, checks it carries the right terms and no contradicting ones."
+  },
+  {
+   "check_id": "PHOTO-24/watch-feature-r005/H010",
+   "output_id": "watch-feature-r005",
+   "rule_id": "R009",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "Any movement description on “Watch product-page feature - LC-25-0104” (watch-feature-r005.png) matches lunara_notes.txt for LM-03: hand-wound, small seconds.",
+   "assertion": {
+    "op": "v2_description",
+    "trigger": "hand-?\\s?wound|automatic|self-?winding|manual(?:ly)?[- ]wound|power reserve|\\breserve\\b|small[- ]seconds",
+    "required": [
+     "hand-?\\s?wound"
+    ],
+    "forbidden": [
+     "\\bautomatic\\b",
+     "self-?winding"
+    ]
+   },
+   "how": "Reads the text; where a description of this kind appears, checks it carries the right terms and no contradicting ones."
+  },
+  {
    "check_id": "PHOTO-24/dealer-launch/H001",
    "output_id": "dealer-launch",
    "rule_id": "R010",
@@ -537,6 +599,267 @@
    "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
   },
   {
+   "check_id": "PHOTO-24/watch-feature-r002/H015",
+   "output_id": "watch-feature-r002",
+   "rule_id": "R011",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "Any movement description on “Watch product-page feature - LC-25-0101” (watch-feature-r002.png) matches lunara_notes.txt for LM-01: hand-wound, 42h reserve.",
+   "assertion": {
+    "op": "v2_description",
+    "trigger": "hand-?\\s?wound|automatic|self-?winding|manual(?:ly)?[- ]wound|power reserve|\\breserve\\b|small[- ]seconds",
+    "required": [
+     "hand-?\\s?wound"
+    ],
+    "forbidden": [
+     "\\bautomatic\\b",
+     "self-?winding",
+     "\\b(?!42)\\d{2}\\s?-?\\s?h(?:ours?|rs?)?\\b"
+    ]
+   },
+   "how": "Reads the text; where a description of this kind appears, checks it carries the right terms and no contradicting ones."
+  },
+  {
+   "check_id": "PHOTO-24/watch-feature-r004/H011",
+   "output_id": "watch-feature-r004",
+   "rule_id": "R011",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "Any movement description on “Watch product-page feature - LC-25-0103” (watch-feature-r004.png) matches lunara_notes.txt for LM-01: hand-wound, 42h reserve.",
+   "assertion": {
+    "op": "v2_description",
+    "trigger": "hand-?\\s?wound|automatic|self-?winding|manual(?:ly)?[- ]wound|power reserve|\\breserve\\b|small[- ]seconds",
+    "required": [
+     "hand-?\\s?wound"
+    ],
+    "forbidden": [
+     "\\bautomatic\\b",
+     "self-?winding",
+     "\\b(?!42)\\d{2}\\s?-?\\s?h(?:ours?|rs?)?\\b"
+    ]
+   },
+   "how": "Reads the text; where a description of this kind appears, checks it carries the right terms and no contradicting ones."
+  },
+  {
+   "check_id": "PHOTO-24/dealer-launch/H006",
+   "output_id": "dealer-launch",
+   "rule_id": "R012",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "“Watch dealer launch sheet” (dealer-launch.pdf) gives Meridian caliber LM-01, as lunara_register.csv row 2 does.",
+   "assertion": {
+    "op": "v2_paired",
+    "anchor": [
+     "Meridian"
+    ],
+    "rivals": [
+     "Selene",
+     "Ardent",
+     "Halcyon",
+     "Vesper"
+    ],
+    "kind": "\\bLM-\\d{2}\\b",
+    "value": {
+     "regex": "\\bLM-01\\b"
+    },
+    "where": "below"
+   },
+   "how": "Reads where each value stands and checks the value that belongs to this name (by its section, column or line) is the expected one."
+  },
+  {
+   "check_id": "PHOTO-24/dealer-launch/H014",
+   "output_id": "dealer-launch",
+   "rule_id": "R012",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "“Watch dealer launch sheet” (dealer-launch.pdf) gives Ardent caliber LM-01, as lunara_register.csv row 4 does.",
+   "assertion": {
+    "op": "v2_paired",
+    "anchor": [
+     "Ardent"
+    ],
+    "rivals": [
+     "Meridian",
+     "Selene",
+     "Halcyon",
+     "Vesper"
+    ],
+    "kind": "\\bLM-\\d{2}\\b",
+    "value": {
+     "regex": "\\bLM-01\\b"
+    },
+    "where": "below"
+   },
+   "how": "Reads where each value stands and checks the value that belongs to this name (by its section, column or line) is the expected one."
+  },
+  {
+   "check_id": "PHOTO-24/dealer-launch/H022",
+   "output_id": "dealer-launch",
+   "rule_id": "R012",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "“Watch dealer launch sheet” (dealer-launch.pdf) gives Vesper caliber LM-02, as lunara_register.csv row 6 does.",
+   "assertion": {
+    "op": "v2_paired",
+    "anchor": [
+     "Vesper"
+    ],
+    "rivals": [
+     "Meridian",
+     "Selene",
+     "Ardent",
+     "Halcyon"
+    ],
+    "kind": "\\bLM-\\d{2}\\b",
+    "value": {
+     "regex": "\\bLM-02\\b"
+    },
+    "where": "below"
+   },
+   "how": "Reads where each value stands and checks the value that belongs to this name (by its section, column or line) is the expected one."
+  },
+  {
+   "check_id": "PHOTO-24/dealer-launch/H033",
+   "output_id": "dealer-launch",
+   "rule_id": "R014",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "Any description of caliber LM-01 on “Watch dealer launch sheet” (dealer-launch.pdf) matches lunara_notes.txt: hand-wound, 42h reserve.",
+   "assertion": {
+    "op": "v2_description",
+    "trigger": "hand-?\\s?wound|automatic|self-?winding|manual(?:ly)?[- ]wound|power reserve|\\breserve\\b|small[- ]seconds",
+    "required": [
+     "hand-?\\s?wound"
+    ],
+    "forbidden": [
+     "\\bautomatic\\b",
+     "self-?winding",
+     "\\b(?!42)\\d{2}\\s?-?\\s?h(?:ours?|rs?)?\\b"
+    ],
+    "scope_line": "\\bLM-01\\b"
+   },
+   "how": "Reads the text; where a description of this kind appears, checks it carries the right terms and no contradicting ones."
+  },
+  {
+   "check_id": "PHOTO-24/watch-keyvisual/H004",
+   "output_id": "watch-keyvisual",
+   "rule_id": "R015",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "Any caliber shown on “Autumn watch key visual” (watch-keyvisual.png) is the one its reference takes: Meridian LM-01, Selene LM-02, Ardent LM-01, Halcyon LM-03, Vesper LM-02.",
+   "assertion": {
+    "op": "v2_description",
+    "trigger": "\\bLM-0\\d\\b",
+    "scope_map": {
+     "Meridian": {
+      "required": [
+       "\\bLM-01\\b"
+      ],
+      "forbidden": [
+       "\\bLM-0(?!1)\\d\\b"
+      ]
+     },
+     "Selene": {
+      "required": [
+       "\\bLM-02\\b"
+      ],
+      "forbidden": [
+       "\\bLM-0(?!2)\\d\\b"
+      ]
+     },
+     "Ardent": {
+      "required": [
+       "\\bLM-01\\b"
+      ],
+      "forbidden": [
+       "\\bLM-0(?!1)\\d\\b"
+      ]
+     },
+     "Halcyon": {
+      "required": [
+       "\\bLM-03\\b"
+      ],
+      "forbidden": [
+       "\\bLM-0(?!3)\\d\\b"
+      ]
+     },
+     "Vesper": {
+      "required": [
+       "\\bLM-02\\b"
+      ],
+      "forbidden": [
+       "\\bLM-0(?!2)\\d\\b"
+      ]
+     }
+    }
+   },
+   "how": "Reads the text; where a description of this kind appears, checks it carries the right terms and no contradicting ones."
+  },
+  {
+   "check_id": "PHOTO-24/watch-keyvisual/H005",
+   "output_id": "watch-keyvisual",
+   "rule_id": "R016",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "Any movement description on “Autumn watch key visual” (watch-keyvisual.png) matches lunara_notes.txt for the reference shown: Meridian, Ardent hand-wound, 42h reserve; Selene, Vesper automatic, 48h reserve; Halcyon hand-wound, small seconds.",
+   "assertion": {
+    "op": "v2_description",
+    "trigger": "hand-?\\s?wound|automatic|self-?winding|manual(?:ly)?[- ]wound|power reserve|\\breserve\\b|small[- ]seconds",
+    "scope_map": {
+     "Meridian": {
+      "required": [
+       "hand-?\\s?wound"
+      ],
+      "forbidden": [
+       "\\bautomatic\\b",
+       "self-?winding",
+       "\\b(?!42)\\d{2}\\s?-?\\s?h(?:ours?|rs?)?\\b"
+      ]
+     },
+     "Selene": {
+      "required": [
+       "\\bautomatic\\b"
+      ],
+      "forbidden": [
+       "hand-?\\s?wound",
+       "manual(?:ly)?[- ]wound",
+       "\\b(?!48)\\d{2}\\s?-?\\s?h(?:ours?|rs?)?\\b"
+      ]
+     },
+     "Ardent": {
+      "required": [
+       "hand-?\\s?wound"
+      ],
+      "forbidden": [
+       "\\bautomatic\\b",
+       "self-?winding",
+       "\\b(?!42)\\d{2}\\s?-?\\s?h(?:ours?|rs?)?\\b"
+      ]
+     },
+     "Halcyon": {
+      "required": [
+       "hand-?\\s?wound"
+      ],
+      "forbidden": [
+       "\\bautomatic\\b",
+       "self-?winding"
+      ]
+     },
+     "Vesper": {
+      "required": [
+       "\\bautomatic\\b"
+      ],
+      "forbidden": [
+       "hand-?\\s?wound",
+       "manual(?:ly)?[- ]wound",
+       "\\b(?!48)\\d{2}\\s?-?\\s?h(?:ours?|rs?)?\\b"
+      ]
+     }
+    }
+   },
+   "how": "Reads the text; where a description of this kind appears, checks it carries the right terms and no contradicting ones."
+  },
+  {
    "check_id": "PHOTO-24/watch-keyvisual/H006",
    "output_id": "watch-keyvisual",
    "rule_id": "R017",
@@ -550,6 +873,49 @@
     ]
    },
    "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-24/dealer-launch/H086",
+   "output_id": "dealer-launch",
+   "rule_id": "R018",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "Any description of caliber LM-02 on “Watch dealer launch sheet” (dealer-launch.pdf) matches lunara_notes.txt: automatic, 48h reserve.",
+   "assertion": {
+    "op": "v2_description",
+    "trigger": "hand-?\\s?wound|automatic|self-?winding|manual(?:ly)?[- ]wound|power reserve|\\breserve\\b|small[- ]seconds",
+    "required": [
+     "\\bautomatic\\b"
+    ],
+    "forbidden": [
+     "hand-?\\s?wound",
+     "manual(?:ly)?[- ]wound",
+     "\\b(?!48)\\d{2}\\s?-?\\s?h(?:ours?|rs?)?\\b"
+    ],
+    "scope_line": "\\bLM-02\\b"
+   },
+   "how": "Reads the text; where a description of this kind appears, checks it carries the right terms and no contradicting ones."
+  },
+  {
+   "check_id": "PHOTO-24/dealer-launch/H087",
+   "output_id": "dealer-launch",
+   "rule_id": "R019",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "Any description of caliber LM-03 on “Watch dealer launch sheet” (dealer-launch.pdf) matches lunara_notes.txt: hand-wound, small seconds.",
+   "assertion": {
+    "op": "v2_description",
+    "trigger": "hand-?\\s?wound|automatic|self-?winding|manual(?:ly)?[- ]wound|power reserve|\\breserve\\b|small[- ]seconds",
+    "required": [
+     "hand-?\\s?wound"
+    ],
+    "forbidden": [
+     "\\bautomatic\\b",
+     "self-?winding"
+    ],
+    "scope_line": "\\bLM-03\\b"
+   },
+   "how": "Reads the text; where a description of this kind appears, checks it carries the right terms and no contradicting ones."
   },
   {
    "check_id": "PHOTO-24/watch-feature-r002/H017",
@@ -632,6 +998,102 @@
    "how": "Finds every price and checks each meets the rule."
   },
   {
+   "check_id": "PHOTO-24/watch-keyvisual/H016",
+   "output_id": "watch-keyvisual",
+   "rule_id": "R030",
+   "k_id": "K1_Q3",
+   "critical": false,
+   "check": "Any timing line on “Autumn watch key visual” (watch-keyvisual.png) matches the certificate wording in lunara_notes.txt word for word, with nothing reworded, shortened or added.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "Timed by hand and signed. This piece was regulated to the result above and released by the named regulator."
+    ],
+    "if_any": "timed by hand|regulated to the result|named regulator"
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-24/watch-feature-r002/H018",
+   "output_id": "watch-feature-r002",
+   "rule_id": "R030",
+   "k_id": "K1_Q3",
+   "critical": false,
+   "check": "Any timing line on “Watch product-page feature - LC-25-0101” (watch-feature-r002.png) matches the certificate wording in lunara_notes.txt word for word, with nothing reworded, shortened or added.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "Timed by hand and signed. This piece was regulated to the result above and released by the named regulator."
+    ],
+    "if_any": "timed by hand|regulated to the result|named regulator"
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-24/watch-feature-r003/H013",
+   "output_id": "watch-feature-r003",
+   "rule_id": "R030",
+   "k_id": "K1_Q3",
+   "critical": false,
+   "check": "Any timing line on “Watch product-page feature - LC-25-0102” (watch-feature-r003.png) matches the certificate wording in lunara_notes.txt word for word, with nothing reworded, shortened or added.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "Timed by hand and signed. This piece was regulated to the result above and released by the named regulator."
+    ],
+    "if_any": "timed by hand|regulated to the result|named regulator"
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-24/watch-feature-r004/H014",
+   "output_id": "watch-feature-r004",
+   "rule_id": "R030",
+   "k_id": "K1_Q3",
+   "critical": false,
+   "check": "Any timing line on “Watch product-page feature - LC-25-0103” (watch-feature-r004.png) matches the certificate wording in lunara_notes.txt word for word, with nothing reworded, shortened or added.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "Timed by hand and signed. This piece was regulated to the result above and released by the named regulator."
+    ],
+    "if_any": "timed by hand|regulated to the result|named regulator"
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-24/watch-feature-r005/H013",
+   "output_id": "watch-feature-r005",
+   "rule_id": "R030",
+   "k_id": "K1_Q3",
+   "critical": false,
+   "check": "Any timing line on “Watch product-page feature - LC-25-0104” (watch-feature-r005.png) matches the certificate wording in lunara_notes.txt word for word, with nothing reworded, shortened or added.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "Timed by hand and signed. This piece was regulated to the result above and released by the named regulator."
+    ],
+    "if_any": "timed by hand|regulated to the result|named regulator"
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-24/watch-feature-r006/H013",
+   "output_id": "watch-feature-r006",
+   "rule_id": "R030",
+   "k_id": "K1_Q3",
+   "critical": false,
+   "check": "Any timing line on “Watch product-page feature - LC-25-0105” (watch-feature-r006.png) matches the certificate wording in lunara_notes.txt word for word, with nothing reworded, shortened or added.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "Timed by hand and signed. This piece was regulated to the result above and released by the named regulator."
+    ],
+    "if_any": "timed by hand|regulated to the result|named regulator"
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
    "check_id": "PHOTO-24/dealer-launch/H035",
    "output_id": "dealer-launch",
    "rule_id": "R033",
@@ -662,6 +1124,21 @@
     ]
    },
    "how": "Finds every price and checks each meets the rule."
+  },
+  {
+   "check_id": "PHOTO-24/dealer-launch/H002",
+   "output_id": "dealer-launch",
+   "rule_id": "R036",
+   "k_id": "K1_Q5",
+   "critical": true,
+   "check": "The timing line on “Watch dealer launch sheet” (dealer-launch.pdf) is present and matches the certificate wording in lunara_notes.txt word for word, with nothing reworded or shortened.",
+   "assertion": {
+    "op": "v2_text_present",
+    "expected": [
+     "Timed by hand and signed. This piece was regulated to the result above and released by the named regulator."
+    ]
+   },
+   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
   },
   {
    "check_id": "PHOTO-24/watch-feature-r002/H007",
@@ -878,6 +1355,43 @@
    "how": "Reads every type, shape and line colour from the file (photos excluded)."
   },
   {
+   "check_id": "PHOTO-24/dealer-launch/H067",
+   "output_id": "dealer-launch",
+   "rule_id": "R058",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Any type set directly on any photograph on “Watch dealer launch sheet” (dealer-launch.pdf) is Bone cream #EDE6D6 or Warm near-black #191512.",
+   "assertion": {
+    "op": "v2_text_on_ground",
+    "all_text": true,
+    "grounds": [
+     "photo"
+    ],
+    "colors": [
+     "#EDE6D6",
+     "#191512"
+    ]
+   },
+   "how": "Reads each line's colour from the PDF and the colour behind it from the rendered page, and checks the pairing."
+  },
+  {
+   "check_id": "PHOTO-24/dealer-launch/H037",
+   "output_id": "dealer-launch",
+   "rule_id": "R072",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The timing line on “Watch dealer launch sheet” (dealer-launch.pdf) is set in Inter Regular, not italic.",
+   "assertion": {
+    "op": "v2_style_lines",
+    "texts": [
+     "Timed by hand and signed. This piece was regulated to the result above and released by the named regulator."
+    ],
+    "family": "Inter",
+    "weight": "Regular"
+   },
+   "how": "Reads the font, size or letter case of the selected lines from the PDF."
+  },
+  {
    "check_id": "PHOTO-24/dealer-launch/H052",
    "output_id": "dealer-launch",
    "rule_id": "R082",
@@ -898,6 +1412,137 @@
     "weight": "Medium"
    },
    "how": "Reads the font, size, letter case or colour of the named text from the PDF."
+  },
+  {
+   "check_id": "PHOTO-24/dealer-launch/H071",
+   "output_id": "dealer-launch",
+   "rule_id": "R083",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "If a wordmark appears on “Watch dealer launch sheet” (dealer-launch.pdf), it is set in Cormorant Garamond Medium, not the bold serif of lunara_certificate_2025.pdf.",
+   "assertion": {
+    "op": "v2_style_lines",
+    "whole_lines": [
+     "LUNARA",
+     "CHRONOMETRY",
+     "LUNARA CHRONOMETRY"
+    ],
+    "optional": true,
+    "family": "Cormorant Garamond",
+    "weight": "Medium"
+   },
+   "how": "Reads the font, size or letter case of the selected lines from the PDF."
+  },
+  {
+   "check_id": "PHOTO-24/dealer-launch/H076",
+   "output_id": "dealer-launch",
+   "rule_id": "R089",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Every line set in Cormorant Garamond on “Watch dealer launch sheet” (dealer-launch.pdf), the reference names and any main heading or wordmark included, is in capitals, with no lowercase letters.",
+   "assertion": {
+    "op": "v2_style_lines",
+    "font_family": "Cormorant Garamond",
+    "optional": true,
+    "caps": true
+   },
+   "how": "Reads the font, size or letter case of the selected lines from the PDF."
+  },
+  {
+   "check_id": "PHOTO-24/watch-feature-r002/H027",
+   "output_id": "watch-feature-r002",
+   "rule_id": "R094",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "If a wordmark appears on “Watch product-page feature - LC-25-0101” (watch-feature-r002.png), it is stacked as Lunara over Chronometry, never set on one line.",
+   "assertion": {
+    "op": "v2_stacked",
+    "top": "Lunara",
+    "bottom": "Chronometry",
+    "stack": true,
+    "optional": true
+   },
+   "how": "Reads the text and checks how the two words of the wordmark are set: stacked, or on one line."
+  },
+  {
+   "check_id": "PHOTO-24/watch-feature-r003/H026",
+   "output_id": "watch-feature-r003",
+   "rule_id": "R094",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "If a wordmark appears on “Watch product-page feature - LC-25-0102” (watch-feature-r003.png), it is stacked as Lunara over Chronometry, never set on one line.",
+   "assertion": {
+    "op": "v2_stacked",
+    "top": "Lunara",
+    "bottom": "Chronometry",
+    "stack": true,
+    "optional": true
+   },
+   "how": "Reads the text and checks how the two words of the wordmark are set: stacked, or on one line."
+  },
+  {
+   "check_id": "PHOTO-24/watch-feature-r004/H025",
+   "output_id": "watch-feature-r004",
+   "rule_id": "R094",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "If a wordmark appears on “Watch product-page feature - LC-25-0103” (watch-feature-r004.png), it is stacked as Lunara over Chronometry, never set on one line.",
+   "assertion": {
+    "op": "v2_stacked",
+    "top": "Lunara",
+    "bottom": "Chronometry",
+    "stack": true,
+    "optional": true
+   },
+   "how": "Reads the text and checks how the two words of the wordmark are set: stacked, or on one line."
+  },
+  {
+   "check_id": "PHOTO-24/watch-feature-r005/H026",
+   "output_id": "watch-feature-r005",
+   "rule_id": "R094",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "If a wordmark appears on “Watch product-page feature - LC-25-0104” (watch-feature-r005.png), it is stacked as Lunara over Chronometry, never set on one line.",
+   "assertion": {
+    "op": "v2_stacked",
+    "top": "Lunara",
+    "bottom": "Chronometry",
+    "stack": true,
+    "optional": true
+   },
+   "how": "Reads the text and checks how the two words of the wordmark are set: stacked, or on one line."
+  },
+  {
+   "check_id": "PHOTO-24/watch-feature-r006/H025",
+   "output_id": "watch-feature-r006",
+   "rule_id": "R094",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "If a wordmark appears on “Watch product-page feature - LC-25-0105” (watch-feature-r006.png), it is stacked as Lunara over Chronometry, never set on one line.",
+   "assertion": {
+    "op": "v2_stacked",
+    "top": "Lunara",
+    "bottom": "Chronometry",
+    "stack": true,
+    "optional": true
+   },
+   "how": "Reads the text and checks how the two words of the wordmark are set: stacked, or on one line."
+  },
+  {
+   "check_id": "PHOTO-24/dealer-launch/H004",
+   "output_id": "dealer-launch",
+   "rule_id": "R094",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "If a wordmark appears on “Watch dealer launch sheet” (dealer-launch.pdf), it is stacked as Lunara over Chronometry, never set on one line.",
+   "assertion": {
+    "op": "v2_stacked",
+    "top": "Lunara",
+    "bottom": "Chronometry",
+    "stack": true,
+    "optional": true
+   },
+   "how": "Reads the text and checks how the two words of the wordmark are set: stacked, or on one line."
   },
   {
    "check_id": "PHOTO-24/watch-feature-r002/H010",
@@ -986,6 +1631,215 @@
      "Steel",
      "Deep blue sunray"
     ]
+   },
+   "how": "Compares the named texts' size or position."
+  },
+  {
+   "check_id": "PHOTO-24/dealer-launch/H038",
+   "output_id": "dealer-launch",
+   "rule_id": "R112",
+   "k_id": "K5_Q2",
+   "critical": false,
+   "check": "In each reference entry on “Watch dealer launch sheet” (dealer-launch.pdf), the reference name is set larger than its specification text.",
+   "assertion": {
+    "op": "v2_all_of",
+    "checks": [
+     {
+      "op": "v2_relation",
+      "rel": "larger",
+      "a": "Meridian",
+      "b": [
+       "LC-25-0101",
+       "Silver sunburst"
+      ],
+      "optional": true
+     },
+     {
+      "op": "v2_relation",
+      "rel": "larger",
+      "a": "Selene",
+      "b": [
+       "LC-25-0102",
+       "Grained cream"
+      ],
+      "optional": true
+     },
+     {
+      "op": "v2_relation",
+      "rel": "larger",
+      "a": "Ardent",
+      "b": [
+       "LC-25-0103",
+       "Lacquered oxblood"
+      ],
+      "optional": true
+     },
+     {
+      "op": "v2_relation",
+      "rel": "larger",
+      "a": "Halcyon",
+      "b": [
+       "LC-25-0104",
+       "Silver"
+      ],
+      "optional": true
+     },
+     {
+      "op": "v2_relation",
+      "rel": "larger",
+      "a": "Vesper",
+      "b": [
+       "LC-25-0105",
+       "Deep blue sunray"
+      ],
+      "optional": true
+     }
+    ]
+   },
+   "how": "Compares the named texts' size or position, for each of the 5 named texts; all must pass."
+  },
+  {
+   "check_id": "PHOTO-24/watch-keyvisual/H013",
+   "output_id": "watch-keyvisual",
+   "rule_id": "R113",
+   "k_id": "K5_Q2",
+   "critical": false,
+   "check": "On “Autumn watch key visual” (watch-keyvisual.png) the stacked wordmark is set larger than the reference name.",
+   "assertion": {
+    "op": "v2_size_vs",
+    "rel": "larger",
+    "a": [
+     "Lunara",
+     "Chronometry"
+    ],
+    "b": [
+     "Meridian",
+     "Selene",
+     "Ardent",
+     "Halcyon",
+     "Vesper"
+    ]
+   },
+   "how": "Compares the text sizes (font size in PDFs, letter height on images)."
+  },
+  {
+   "check_id": "PHOTO-24/watch-keyvisual/H058",
+   "output_id": "watch-keyvisual",
+   "rule_id": "R115",
+   "k_id": "K5_Q2",
+   "critical": false,
+   "check": "If specification text appears on “Autumn watch key visual” (watch-keyvisual.png), the reference name is set larger than it.",
+   "assertion": {
+    "op": "v2_size_vs",
+    "rel": "larger",
+    "a": [
+     "Meridian",
+     "Selene",
+     "Ardent",
+     "Halcyon",
+     "Vesper"
+    ],
+    "b": [
+     "Deep blue sunray",
+     "Grained cream",
+     "Lacquered oxblood",
+     "Silver",
+     "Silver sunburst",
+     "Steel",
+     {
+      "regex": "\\bLM-0\\d\\b"
+     }
+    ]
+   },
+   "how": "Compares the text sizes (font size in PDFs, letter height on images)."
+  },
+  {
+   "check_id": "PHOTO-24/watch-feature-r002/H062",
+   "output_id": "watch-feature-r002",
+   "rule_id": "R116",
+   "k_id": "K5_Q2",
+   "critical": false,
+   "check": "If a wordmark appears on “Watch product-page feature - LC-25-0101” (watch-feature-r002.png), it is set larger than the reference name “Meridian”.",
+   "assertion": {
+    "op": "v2_relation",
+    "rel": "larger",
+    "a": "Lunara",
+    "b": [
+     "Meridian"
+    ],
+    "optional": true
+   },
+   "how": "Compares the named texts' size or position."
+  },
+  {
+   "check_id": "PHOTO-24/watch-feature-r003/H061",
+   "output_id": "watch-feature-r003",
+   "rule_id": "R116",
+   "k_id": "K5_Q2",
+   "critical": false,
+   "check": "If a wordmark appears on “Watch product-page feature - LC-25-0102” (watch-feature-r003.png), it is set larger than the reference name “Selene”.",
+   "assertion": {
+    "op": "v2_relation",
+    "rel": "larger",
+    "a": "Lunara",
+    "b": [
+     "Selene"
+    ],
+    "optional": true
+   },
+   "how": "Compares the named texts' size or position."
+  },
+  {
+   "check_id": "PHOTO-24/watch-feature-r004/H061",
+   "output_id": "watch-feature-r004",
+   "rule_id": "R116",
+   "k_id": "K5_Q2",
+   "critical": false,
+   "check": "If a wordmark appears on “Watch product-page feature - LC-25-0103” (watch-feature-r004.png), it is set larger than the reference name “Ardent”.",
+   "assertion": {
+    "op": "v2_relation",
+    "rel": "larger",
+    "a": "Lunara",
+    "b": [
+     "Ardent"
+    ],
+    "optional": true
+   },
+   "how": "Compares the named texts' size or position."
+  },
+  {
+   "check_id": "PHOTO-24/watch-feature-r005/H061",
+   "output_id": "watch-feature-r005",
+   "rule_id": "R116",
+   "k_id": "K5_Q2",
+   "critical": false,
+   "check": "If a wordmark appears on “Watch product-page feature - LC-25-0104” (watch-feature-r005.png), it is set larger than the reference name “Halcyon”.",
+   "assertion": {
+    "op": "v2_relation",
+    "rel": "larger",
+    "a": "Lunara",
+    "b": [
+     "Halcyon"
+    ],
+    "optional": true
+   },
+   "how": "Compares the named texts' size or position."
+  },
+  {
+   "check_id": "PHOTO-24/watch-feature-r006/H060",
+   "output_id": "watch-feature-r006",
+   "rule_id": "R116",
+   "k_id": "K5_Q2",
+   "critical": false,
+   "check": "If a wordmark appears on “Watch product-page feature - LC-25-0105” (watch-feature-r006.png), it is set larger than the reference name “Vesper”.",
+   "assertion": {
+    "op": "v2_relation",
+    "rel": "larger",
+    "a": "Lunara",
+    "b": [
+     "Vesper"
+    ],
+    "optional": true
    },
    "how": "Compares the named texts' size or position."
   }

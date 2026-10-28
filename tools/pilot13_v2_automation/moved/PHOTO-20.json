@@ -2,6 +2,22 @@
  "task_id": "PHOTO-20",
  "moved": [
   {
+   "check_id": "PHOTO-20/speaker-onepager/H003",
+   "output_id": "speaker-onepager",
+   "rule_id": "R002",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "At full export size, the booking contact on “Speaker booking one-pager” (speaker-onepager.pdf) is fully visible, with no letters cut off at an edge.",
+   "assertion": {
+    "op": "v2_inside_all",
+    "texts": [
+     "Astrid Vellacourt",
+     "Vellacourt & Sund"
+    ]
+   },
+   "how": "Checks each named text lies fully inside the page or image."
+  },
+  {
    "check_id": "PHOTO-20/event-announcement-r002/H001",
    "output_id": "event-announcement-r002",
    "rule_id": "R003",
@@ -953,6 +969,356 @@
    "how": "Checks the named text is read in full inside the page or image (for a mark, its letters read as a line of their own)."
   },
   {
+   "check_id": "PHOTO-20/speaker-onepager/H011",
+   "output_id": "speaker-onepager",
+   "rule_id": "R021",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "On “Speaker booking one-pager” (speaker-onepager.pdf), the talk “Designing the thing before the deck” is followed by its subject “on building product before pitch”, word for word.",
+   "assertion": {
+    "op": "v2_followed_by",
+    "a": "Designing the thing before the deck",
+    "b": "on building product before pitch"
+   },
+   "how": "Reads the text and checks the second text comes directly after the first."
+  },
+  {
+   "check_id": "PHOTO-20/speaker-onepager/H057",
+   "output_id": "speaker-onepager",
+   "rule_id": "R021",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "On “Speaker booking one-pager” (speaker-onepager.pdf), the talk “Six people, one hand” is followed by its subject “on keeping a small studio's craft as it grows”, word for word.",
+   "assertion": {
+    "op": "v2_followed_by",
+    "a": "Six people, one hand",
+    "b": "on keeping a small studio's craft as it grows"
+   },
+   "how": "Reads the text and checks the second text comes directly after the first."
+  },
+  {
+   "check_id": "PHOTO-20/speaker-onepager/H058",
+   "output_id": "speaker-onepager",
+   "rule_id": "R021",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "On “Speaker booking one-pager” (speaker-onepager.pdf), the talk “What survives contact with a factory” is followed by its subject “on designing for real manufacturing”, word for word.",
+   "assertion": {
+    "op": "v2_followed_by",
+    "a": "What survives contact with a factory",
+    "b": "on designing for real manufacturing"
+   },
+   "how": "Reads the text and checks the second text comes directly after the first."
+  },
+  {
+   "check_id": "PHOTO-20/talk-card-r002/H058",
+   "output_id": "talk-card-r002",
+   "rule_id": "R027",
+   "k_id": "K1_Q2",
+   "critical": false,
+   "check": "The text block with the talk title, event and date on “Speaker talk card - Northlight Design Forum - Designing the thing before the deck” (talk-card-r002.pdf) sits below the portrait.",
+   "assertion": {
+    "op": "v2_all_of",
+    "checks": [
+     {
+      "op": "v2_position",
+      "a": {
+       "text": "Designing the thing before the deck"
+      },
+      "b": {
+       "image": "largest"
+      },
+      "rel": "below"
+     },
+     {
+      "op": "v2_position",
+      "a": {
+       "text": "Northlight Design Forum"
+      },
+      "b": {
+       "image": "largest"
+      },
+      "rel": "below"
+     },
+     {
+      "op": "v2_position",
+      "a": {
+       "pattern": "(?<!\\d)14\\s*FEB(?:RUARY)?\\b|\\bFEB(?:RUARY)?\\.?\\s*14(?!\\d)"
+      },
+      "b": {
+       "image": "largest"
+      },
+      "rel": "below"
+     }
+    ]
+   },
+   "how": "Finds both elements (by their colour, the supplied file, the placed photo or the text) and compares their positions, for each of the 3 named texts; all must pass."
+  },
+  {
+   "check_id": "PHOTO-20/talk-card-r003/H057",
+   "output_id": "talk-card-r003",
+   "rule_id": "R027",
+   "k_id": "K1_Q2",
+   "critical": false,
+   "check": "The text block with the talk title, event and date on “Speaker talk card - Made & Kept - Six people, one hand” (talk-card-r003.pdf) sits below the portrait.",
+   "assertion": {
+    "op": "v2_all_of",
+    "checks": [
+     {
+      "op": "v2_position",
+      "a": {
+       "text": "Six people, one hand"
+      },
+      "b": {
+       "image": "largest"
+      },
+      "rel": "below"
+     },
+     {
+      "op": "v2_position",
+      "a": {
+       "text": "Made & Kept"
+      },
+      "b": {
+       "image": "largest"
+      },
+      "rel": "below"
+     },
+     {
+      "op": "v2_position",
+      "a": {
+       "pattern": "(?<!\\d)3\\s*MAR(?:CH)?\\b|\\bMAR(?:CH)?\\.?\\s*3(?!\\d)|2026\\-03\\-03"
+      },
+      "b": {
+       "image": "largest"
+      },
+      "rel": "below"
+     }
+    ]
+   },
+   "how": "Finds both elements (by their colour, the supplied file, the placed photo or the text) and compares their positions, for each of the 3 named texts; all must pass."
+  },
+  {
+   "check_id": "PHOTO-20/talk-card-r004/H057",
+   "output_id": "talk-card-r004",
+   "rule_id": "R027",
+   "k_id": "K1_Q2",
+   "critical": false,
+   "check": "The text block with the talk title, event and date on “Speaker talk card - Fjordworks Summit - On staying small on purpose” (talk-card-r004.pdf) sits below the portrait.",
+   "assertion": {
+    "op": "v2_all_of",
+    "checks": [
+     {
+      "op": "v2_position",
+      "a": {
+       "text": "On staying small on purpose"
+      },
+      "b": {
+       "image": "largest"
+      },
+      "rel": "below"
+     },
+     {
+      "op": "v2_position",
+      "a": {
+       "text": "Fjordworks Summit"
+      },
+      "b": {
+       "image": "largest"
+      },
+      "rel": "below"
+     },
+     {
+      "op": "v2_position",
+      "a": {
+       "pattern": "21/03/26"
+      },
+      "b": {
+       "image": "largest"
+      },
+      "rel": "below"
+     }
+    ]
+   },
+   "how": "Finds both elements (by their colour, the supplied file, the placed photo or the text) and compares their positions, for each of the 3 named texts; all must pass."
+  },
+  {
+   "check_id": "PHOTO-20/talk-card-r005/H057",
+   "output_id": "talk-card-r005",
+   "rule_id": "R027",
+   "k_id": "K1_Q2",
+   "critical": false,
+   "check": "The text block with the talk title, event and date on “Speaker talk card - Fjordworks Summit - The room after the round” (talk-card-r005.pdf) sits below the portrait.",
+   "assertion": {
+    "op": "v2_all_of",
+    "checks": [
+     {
+      "op": "v2_position",
+      "a": {
+       "text": "The room after the round"
+      },
+      "b": {
+       "image": "largest"
+      },
+      "rel": "below"
+     },
+     {
+      "op": "v2_position",
+      "a": {
+       "text": "Fjordworks Summit"
+      },
+      "b": {
+       "image": "largest"
+      },
+      "rel": "below"
+     },
+     {
+      "op": "v2_position",
+      "a": {
+       "pattern": "(?<!\\d)21\\s*MAR(?:CH)?\\b|\\bMAR(?:CH)?\\.?\\s*21(?!\\d)"
+      },
+      "b": {
+       "image": "largest"
+      },
+      "rel": "below"
+     }
+    ]
+   },
+   "how": "Finds both elements (by their colour, the supplied file, the placed photo or the text) and compares their positions, for each of the 3 named texts; all must pass."
+  },
+  {
+   "check_id": "PHOTO-20/talk-card-r006/H058",
+   "output_id": "talk-card-r006",
+   "rule_id": "R027",
+   "k_id": "K1_Q2",
+   "critical": false,
+   "check": "The text block with the talk title, event and date on “Speaker talk card - Halden Design Days - From sketch to tooling” (talk-card-r006.pdf) sits below the portrait.",
+   "assertion": {
+    "op": "v2_all_of",
+    "checks": [
+     {
+      "op": "v2_position",
+      "a": {
+       "text": "From sketch to tooling"
+      },
+      "b": {
+       "image": "largest"
+      },
+      "rel": "below"
+     },
+     {
+      "op": "v2_position",
+      "a": {
+       "text": "Halden Design Days"
+      },
+      "b": {
+       "image": "largest"
+      },
+      "rel": "below"
+     },
+     {
+      "op": "v2_position",
+      "a": {
+       "pattern": "(?<!\\d)4\\s*APR(?:IL)?\\b|\\bAPR(?:IL)?\\.?\\s*4(?!\\d)"
+      },
+      "b": {
+       "image": "largest"
+      },
+      "rel": "below"
+     }
+    ]
+   },
+   "how": "Finds both elements (by their colour, the supplied file, the placed photo or the text) and compares their positions, for each of the 3 named texts; all must pass."
+  },
+  {
+   "check_id": "PHOTO-20/talk-card-r008/H057",
+   "output_id": "talk-card-r008",
+   "rule_id": "R027",
+   "k_id": "K1_Q2",
+   "critical": false,
+   "check": "The text block with the talk title, event and date on “Speaker talk card - Continuum Product Days - What survives contact with a factory” (talk-card-r008.pdf) sits below the portrait.",
+   "assertion": {
+    "op": "v2_all_of",
+    "checks": [
+     {
+      "op": "v2_position",
+      "a": {
+       "text": "What survives contact with a factory"
+      },
+      "b": {
+       "image": "largest"
+      },
+      "rel": "below"
+     },
+     {
+      "op": "v2_position",
+      "a": {
+       "text": "Continuum Product Days"
+      },
+      "b": {
+       "image": "largest"
+      },
+      "rel": "below"
+     },
+     {
+      "op": "v2_position",
+      "a": {
+       "pattern": "May\\ 9"
+      },
+      "b": {
+       "image": "largest"
+      },
+      "rel": "below"
+     }
+    ]
+   },
+   "how": "Finds both elements (by their colour, the supplied file, the placed photo or the text) and compares their positions, for each of the 3 named texts; all must pass."
+  },
+  {
+   "check_id": "PHOTO-20/talk-card-r009/H058",
+   "output_id": "talk-card-r009",
+   "rule_id": "R027",
+   "k_id": "K1_Q2",
+   "critical": false,
+   "check": "The text block with the talk title, event and date on “Speaker talk card - Grain & Frame Forum - What a small studio can promise” (talk-card-r009.pdf) sits below the portrait.",
+   "assertion": {
+    "op": "v2_all_of",
+    "checks": [
+     {
+      "op": "v2_position",
+      "a": {
+       "text": "What a small studio can promise"
+      },
+      "b": {
+       "image": "largest"
+      },
+      "rel": "below"
+     },
+     {
+      "op": "v2_position",
+      "a": {
+       "text": "Grain & Frame Forum"
+      },
+      "b": {
+       "image": "largest"
+      },
+      "rel": "below"
+     },
+     {
+      "op": "v2_position",
+      "a": {
+       "pattern": "(?<!\\d)22\\s*MAY\\b|\\bMAY\\.?\\s*22(?!\\d)|2026\\-05\\-22"
+      },
+      "b": {
+       "image": "largest"
+      },
+      "rel": "below"
+     }
+    ]
+   },
+   "how": "Finds both elements (by their colour, the supplied file, the placed photo or the text) and compares their positions, for each of the 3 named texts; all must pass."
+  },
+  {
    "check_id": "PHOTO-20/talk-card-r003/H009",
    "output_id": "talk-card-r003",
    "rule_id": "R032",
@@ -1430,6 +1796,132 @@
    "how": "Searches the deliverable for the supplied file (feature matching, confirmed by correlation)."
   },
   {
+   "check_id": "PHOTO-20/speaker-onepager/H025",
+   "output_id": "speaker-onepager",
+   "rule_id": "R059",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The AV monogram on “Speaker booking one-pager” (speaker-onepager.pdf) is solid Ochre #B98A4B, not grey and not embossed.",
+   "assertion": {
+    "op": "v2_mark",
+    "colour": "#B98A4B",
+    "solid": true
+   },
+   "how": "Finds the shapes drawn in the mark's colour and measures them or checks they are drawn solid."
+  },
+  {
+   "check_id": "PHOTO-20/talk-card-r002/H024",
+   "output_id": "talk-card-r002",
+   "rule_id": "R059",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The AV monogram on “Speaker talk card - Northlight Design Forum - Designing the thing before the deck” (talk-card-r002.pdf) is solid Ochre #B98A4B, not grey and not embossed.",
+   "assertion": {
+    "op": "v2_mark",
+    "colour": "#B98A4B",
+    "solid": true
+   },
+   "how": "Finds the shapes drawn in the mark's colour and measures them or checks they are drawn solid."
+  },
+  {
+   "check_id": "PHOTO-20/talk-card-r003/H024",
+   "output_id": "talk-card-r003",
+   "rule_id": "R059",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The AV monogram on “Speaker talk card - Made & Kept - Six people, one hand” (talk-card-r003.pdf) is solid Ochre #B98A4B, not grey and not embossed.",
+   "assertion": {
+    "op": "v2_mark",
+    "colour": "#B98A4B",
+    "solid": true
+   },
+   "how": "Finds the shapes drawn in the mark's colour and measures them or checks they are drawn solid."
+  },
+  {
+   "check_id": "PHOTO-20/talk-card-r004/H024",
+   "output_id": "talk-card-r004",
+   "rule_id": "R059",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The AV monogram on “Speaker talk card - Fjordworks Summit - On staying small on purpose” (talk-card-r004.pdf) is solid Ochre #B98A4B, not grey and not embossed.",
+   "assertion": {
+    "op": "v2_mark",
+    "colour": "#B98A4B",
+    "solid": true
+   },
+   "how": "Finds the shapes drawn in the mark's colour and measures them or checks they are drawn solid."
+  },
+  {
+   "check_id": "PHOTO-20/talk-card-r005/H024",
+   "output_id": "talk-card-r005",
+   "rule_id": "R059",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The AV monogram on “Speaker talk card - Fjordworks Summit - The room after the round” (talk-card-r005.pdf) is solid Ochre #B98A4B, not grey and not embossed.",
+   "assertion": {
+    "op": "v2_mark",
+    "colour": "#B98A4B",
+    "solid": true
+   },
+   "how": "Finds the shapes drawn in the mark's colour and measures them or checks they are drawn solid."
+  },
+  {
+   "check_id": "PHOTO-20/talk-card-r006/H025",
+   "output_id": "talk-card-r006",
+   "rule_id": "R059",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The AV monogram on “Speaker talk card - Halden Design Days - From sketch to tooling” (talk-card-r006.pdf) is solid Ochre #B98A4B, not grey and not embossed.",
+   "assertion": {
+    "op": "v2_mark",
+    "colour": "#B98A4B",
+    "solid": true
+   },
+   "how": "Finds the shapes drawn in the mark's colour and measures them or checks they are drawn solid."
+  },
+  {
+   "check_id": "PHOTO-20/talk-card-r007/H024",
+   "output_id": "talk-card-r007",
+   "rule_id": "R059",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The AV monogram on “Speaker talk card - The Bench Sessions - Designing for the next hands” (talk-card-r007.pdf) is solid Ochre #B98A4B, not grey and not embossed.",
+   "assertion": {
+    "op": "v2_mark",
+    "colour": "#B98A4B",
+    "solid": true
+   },
+   "how": "Finds the shapes drawn in the mark's colour and measures them or checks they are drawn solid."
+  },
+  {
+   "check_id": "PHOTO-20/talk-card-r008/H024",
+   "output_id": "talk-card-r008",
+   "rule_id": "R059",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The AV monogram on “Speaker talk card - Continuum Product Days - What survives contact with a factory” (talk-card-r008.pdf) is solid Ochre #B98A4B, not grey and not embossed.",
+   "assertion": {
+    "op": "v2_mark",
+    "colour": "#B98A4B",
+    "solid": true
+   },
+   "how": "Finds the shapes drawn in the mark's colour and measures them or checks they are drawn solid."
+  },
+  {
+   "check_id": "PHOTO-20/talk-card-r009/H024",
+   "output_id": "talk-card-r009",
+   "rule_id": "R059",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The AV monogram on “Speaker talk card - Grain & Frame Forum - What a small studio can promise” (talk-card-r009.pdf) is solid Ochre #B98A4B, not grey and not embossed.",
+   "assertion": {
+    "op": "v2_mark",
+    "colour": "#B98A4B",
+    "solid": true
+   },
+   "how": "Finds the shapes drawn in the mark's colour and measures them or checks they are drawn solid."
+  },
+  {
    "check_id": "PHOTO-20/speaker-onepager/H030",
    "output_id": "speaker-onepager",
    "rule_id": "R060",
@@ -1714,6 +2206,635 @@
    "how": "Renders each page without photos and finds the colour covering the most area."
   },
   {
+   "check_id": "PHOTO-20/talk-card-r002/H031",
+   "output_id": "talk-card-r002",
+   "rule_id": "R062",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "On Warm Neutral or Bone, her name and the talk title on “Speaker talk card - Northlight Design Forum - Designing the thing before the deck” (talk-card-r002.pdf) are Vellacourt Ink #262524.",
+   "assertion": {
+    "op": "v2_text_on_ground",
+    "texts": [
+     "Astrid Vellacourt",
+     "Designing the thing before the deck"
+    ],
+    "optional": false,
+    "grounds": [
+     "#E8E1D6",
+     "#F4EFE7"
+    ],
+    "colors": [
+     "#262524"
+    ]
+   },
+   "how": "Reads each line's colour from the PDF and the colour behind it from the rendered page, and checks the pairing."
+  },
+  {
+   "check_id": "PHOTO-20/talk-card-r003/H031",
+   "output_id": "talk-card-r003",
+   "rule_id": "R062",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "On Warm Neutral or Bone, her name and the talk title on “Speaker talk card - Made & Kept - Six people, one hand” (talk-card-r003.pdf) are Vellacourt Ink #262524.",
+   "assertion": {
+    "op": "v2_text_on_ground",
+    "texts": [
+     "Astrid Vellacourt",
+     "Six people, one hand"
+    ],
+    "optional": false,
+    "grounds": [
+     "#E8E1D6",
+     "#F4EFE7"
+    ],
+    "colors": [
+     "#262524"
+    ]
+   },
+   "how": "Reads each line's colour from the PDF and the colour behind it from the rendered page, and checks the pairing."
+  },
+  {
+   "check_id": "PHOTO-20/talk-card-r004/H031",
+   "output_id": "talk-card-r004",
+   "rule_id": "R062",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "On Warm Neutral or Bone, her name and the talk title on “Speaker talk card - Fjordworks Summit - On staying small on purpose” (talk-card-r004.pdf) are Vellacourt Ink #262524.",
+   "assertion": {
+    "op": "v2_text_on_ground",
+    "texts": [
+     "Astrid Vellacourt",
+     "On staying small on purpose"
+    ],
+    "optional": false,
+    "grounds": [
+     "#E8E1D6",
+     "#F4EFE7"
+    ],
+    "colors": [
+     "#262524"
+    ]
+   },
+   "how": "Reads each line's colour from the PDF and the colour behind it from the rendered page, and checks the pairing."
+  },
+  {
+   "check_id": "PHOTO-20/talk-card-r005/H031",
+   "output_id": "talk-card-r005",
+   "rule_id": "R062",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "On Warm Neutral or Bone, her name and the talk title on “Speaker talk card - Fjordworks Summit - The room after the round” (talk-card-r005.pdf) are Vellacourt Ink #262524.",
+   "assertion": {
+    "op": "v2_text_on_ground",
+    "texts": [
+     "Astrid Vellacourt",
+     "The room after the round"
+    ],
+    "optional": false,
+    "grounds": [
+     "#E8E1D6",
+     "#F4EFE7"
+    ],
+    "colors": [
+     "#262524"
+    ]
+   },
+   "how": "Reads each line's colour from the PDF and the colour behind it from the rendered page, and checks the pairing."
+  },
+  {
+   "check_id": "PHOTO-20/talk-card-r006/H031",
+   "output_id": "talk-card-r006",
+   "rule_id": "R062",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "On Warm Neutral or Bone, her name and the talk title on “Speaker talk card - Halden Design Days - From sketch to tooling” (talk-card-r006.pdf) are Vellacourt Ink #262524.",
+   "assertion": {
+    "op": "v2_text_on_ground",
+    "texts": [
+     "Astrid Vellacourt",
+     "From sketch to tooling"
+    ],
+    "optional": false,
+    "grounds": [
+     "#E8E1D6",
+     "#F4EFE7"
+    ],
+    "colors": [
+     "#262524"
+    ]
+   },
+   "how": "Reads each line's colour from the PDF and the colour behind it from the rendered page, and checks the pairing."
+  },
+  {
+   "check_id": "PHOTO-20/talk-card-r007/H031",
+   "output_id": "talk-card-r007",
+   "rule_id": "R062",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "On Warm Neutral or Bone, her name and the talk title on “Speaker talk card - The Bench Sessions - Designing for the next hands” (talk-card-r007.pdf) are Vellacourt Ink #262524.",
+   "assertion": {
+    "op": "v2_text_on_ground",
+    "texts": [
+     "Astrid Vellacourt",
+     "Designing for the next hands"
+    ],
+    "optional": false,
+    "grounds": [
+     "#E8E1D6",
+     "#F4EFE7"
+    ],
+    "colors": [
+     "#262524"
+    ]
+   },
+   "how": "Reads each line's colour from the PDF and the colour behind it from the rendered page, and checks the pairing."
+  },
+  {
+   "check_id": "PHOTO-20/talk-card-r008/H031",
+   "output_id": "talk-card-r008",
+   "rule_id": "R062",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "On Warm Neutral or Bone, her name and the talk title on “Speaker talk card - Continuum Product Days - What survives contact with a factory” (talk-card-r008.pdf) are Vellacourt Ink #262524.",
+   "assertion": {
+    "op": "v2_text_on_ground",
+    "texts": [
+     "Astrid Vellacourt",
+     "What survives contact with a factory"
+    ],
+    "optional": false,
+    "grounds": [
+     "#E8E1D6",
+     "#F4EFE7"
+    ],
+    "colors": [
+     "#262524"
+    ]
+   },
+   "how": "Reads each line's colour from the PDF and the colour behind it from the rendered page, and checks the pairing."
+  },
+  {
+   "check_id": "PHOTO-20/talk-card-r009/H031",
+   "output_id": "talk-card-r009",
+   "rule_id": "R062",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "On Warm Neutral or Bone, her name and the talk title on “Speaker talk card - Grain & Frame Forum - What a small studio can promise” (talk-card-r009.pdf) are Vellacourt Ink #262524.",
+   "assertion": {
+    "op": "v2_text_on_ground",
+    "texts": [
+     "Astrid Vellacourt",
+     "What a small studio can promise"
+    ],
+    "optional": false,
+    "grounds": [
+     "#E8E1D6",
+     "#F4EFE7"
+    ],
+    "colors": [
+     "#262524"
+    ]
+   },
+   "how": "Reads each line's colour from the PDF and the colour behind it from the rendered page, and checks the pairing."
+  },
+  {
+   "check_id": "PHOTO-20/speaker-onepager/H054",
+   "output_id": "speaker-onepager",
+   "rule_id": "R063",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Apart from the Ochre monogram, type on Deep Ground or Vellacourt Ink on “Speaker booking one-pager” (speaker-onepager.pdf) is Warm Neutral #E8E1D6 or Bone #F4EFE7.",
+   "assertion": {
+    "op": "v2_text_on_ground",
+    "all_text": true,
+    "grounds": [
+     "#16171A",
+     "#262524"
+    ],
+    "colors": [
+     "#E8E1D6",
+     "#F4EFE7"
+    ]
+   },
+   "how": "Reads each line's colour from the PDF and the colour behind it from the rendered page, and checks the pairing."
+  },
+  {
+   "check_id": "PHOTO-20/talk-card-r002/H032",
+   "output_id": "talk-card-r002",
+   "rule_id": "R063",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Apart from the Ochre monogram, type on Deep Ground or Vellacourt Ink on “Speaker talk card - Northlight Design Forum - Designing the thing before the deck” (talk-card-r002.pdf) is Warm Neutral #E8E1D6 or Bone #F4EFE7.",
+   "assertion": {
+    "op": "v2_text_on_ground",
+    "all_text": true,
+    "grounds": [
+     "#16171A",
+     "#262524"
+    ],
+    "colors": [
+     "#E8E1D6",
+     "#F4EFE7"
+    ]
+   },
+   "how": "Reads each line's colour from the PDF and the colour behind it from the rendered page, and checks the pairing."
+  },
+  {
+   "check_id": "PHOTO-20/talk-card-r003/H032",
+   "output_id": "talk-card-r003",
+   "rule_id": "R063",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Apart from the Ochre monogram, type on Deep Ground or Vellacourt Ink on “Speaker talk card - Made & Kept - Six people, one hand” (talk-card-r003.pdf) is Warm Neutral #E8E1D6 or Bone #F4EFE7.",
+   "assertion": {
+    "op": "v2_text_on_ground",
+    "all_text": true,
+    "grounds": [
+     "#16171A",
+     "#262524"
+    ],
+    "colors": [
+     "#E8E1D6",
+     "#F4EFE7"
+    ]
+   },
+   "how": "Reads each line's colour from the PDF and the colour behind it from the rendered page, and checks the pairing."
+  },
+  {
+   "check_id": "PHOTO-20/talk-card-r004/H032",
+   "output_id": "talk-card-r004",
+   "rule_id": "R063",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Apart from the Ochre monogram, type on Deep Ground or Vellacourt Ink on “Speaker talk card - Fjordworks Summit - On staying small on purpose” (talk-card-r004.pdf) is Warm Neutral #E8E1D6 or Bone #F4EFE7.",
+   "assertion": {
+    "op": "v2_text_on_ground",
+    "all_text": true,
+    "grounds": [
+     "#16171A",
+     "#262524"
+    ],
+    "colors": [
+     "#E8E1D6",
+     "#F4EFE7"
+    ]
+   },
+   "how": "Reads each line's colour from the PDF and the colour behind it from the rendered page, and checks the pairing."
+  },
+  {
+   "check_id": "PHOTO-20/talk-card-r005/H032",
+   "output_id": "talk-card-r005",
+   "rule_id": "R063",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Apart from the Ochre monogram, type on Deep Ground or Vellacourt Ink on “Speaker talk card - Fjordworks Summit - The room after the round” (talk-card-r005.pdf) is Warm Neutral #E8E1D6 or Bone #F4EFE7.",
+   "assertion": {
+    "op": "v2_text_on_ground",
+    "all_text": true,
+    "grounds": [
+     "#16171A",
+     "#262524"
+    ],
+    "colors": [
+     "#E8E1D6",
+     "#F4EFE7"
+    ]
+   },
+   "how": "Reads each line's colour from the PDF and the colour behind it from the rendered page, and checks the pairing."
+  },
+  {
+   "check_id": "PHOTO-20/talk-card-r006/H032",
+   "output_id": "talk-card-r006",
+   "rule_id": "R063",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Apart from the Ochre monogram, type on Deep Ground or Vellacourt Ink on “Speaker talk card - Halden Design Days - From sketch to tooling” (talk-card-r006.pdf) is Warm Neutral #E8E1D6 or Bone #F4EFE7.",
+   "assertion": {
+    "op": "v2_text_on_ground",
+    "all_text": true,
+    "grounds": [
+     "#16171A",
+     "#262524"
+    ],
+    "colors": [
+     "#E8E1D6",
+     "#F4EFE7"
+    ]
+   },
+   "how": "Reads each line's colour from the PDF and the colour behind it from the rendered page, and checks the pairing."
+  },
+  {
+   "check_id": "PHOTO-20/talk-card-r007/H032",
+   "output_id": "talk-card-r007",
+   "rule_id": "R063",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Apart from the Ochre monogram, type on Deep Ground or Vellacourt Ink on “Speaker talk card - The Bench Sessions - Designing for the next hands” (talk-card-r007.pdf) is Warm Neutral #E8E1D6 or Bone #F4EFE7.",
+   "assertion": {
+    "op": "v2_text_on_ground",
+    "all_text": true,
+    "grounds": [
+     "#16171A",
+     "#262524"
+    ],
+    "colors": [
+     "#E8E1D6",
+     "#F4EFE7"
+    ]
+   },
+   "how": "Reads each line's colour from the PDF and the colour behind it from the rendered page, and checks the pairing."
+  },
+  {
+   "check_id": "PHOTO-20/talk-card-r008/H032",
+   "output_id": "talk-card-r008",
+   "rule_id": "R063",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Apart from the Ochre monogram, type on Deep Ground or Vellacourt Ink on “Speaker talk card - Continuum Product Days - What survives contact with a factory” (talk-card-r008.pdf) is Warm Neutral #E8E1D6 or Bone #F4EFE7.",
+   "assertion": {
+    "op": "v2_text_on_ground",
+    "all_text": true,
+    "grounds": [
+     "#16171A",
+     "#262524"
+    ],
+    "colors": [
+     "#E8E1D6",
+     "#F4EFE7"
+    ]
+   },
+   "how": "Reads each line's colour from the PDF and the colour behind it from the rendered page, and checks the pairing."
+  },
+  {
+   "check_id": "PHOTO-20/talk-card-r009/H032",
+   "output_id": "talk-card-r009",
+   "rule_id": "R063",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Apart from the Ochre monogram, type on Deep Ground or Vellacourt Ink on “Speaker talk card - Grain & Frame Forum - What a small studio can promise” (talk-card-r009.pdf) is Warm Neutral #E8E1D6 or Bone #F4EFE7.",
+   "assertion": {
+    "op": "v2_text_on_ground",
+    "all_text": true,
+    "grounds": [
+     "#16171A",
+     "#262524"
+    ],
+    "colors": [
+     "#E8E1D6",
+     "#F4EFE7"
+    ]
+   },
+   "how": "Reads each line's colour from the PDF and the colour behind it from the rendered page, and checks the pairing."
+  },
+  {
+   "check_id": "PHOTO-20/talk-card-r002/H055",
+   "output_id": "talk-card-r002",
+   "rule_id": "R069",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "On Warm Neutral or Bone, the event name and date on “Speaker talk card - Northlight Design Forum - Designing the thing before the deck” (talk-card-r002.pdf) are Vellacourt Ink #262524 or Studio Slate #4C5560.",
+   "assertion": {
+    "op": "v2_text_on_ground",
+    "texts": [
+     "Northlight Design Forum"
+    ],
+    "patterns": [
+     "(?<!\\d)14\\s*FEB(?:RUARY)?\\b|\\bFEB(?:RUARY)?\\.?\\s*14(?!\\d)"
+    ],
+    "grounds": [
+     "#E8E1D6",
+     "#F4EFE7"
+    ],
+    "colors": [
+     "#262524",
+     "#4C5560"
+    ],
+    "optional": false
+   },
+   "how": "Reads each line's colour from the PDF and the colour behind it from the rendered page, and checks the pairing."
+  },
+  {
+   "check_id": "PHOTO-20/talk-card-r003/H054",
+   "output_id": "talk-card-r003",
+   "rule_id": "R069",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "On Warm Neutral or Bone, the event name and date on “Speaker talk card - Made & Kept - Six people, one hand” (talk-card-r003.pdf) are Vellacourt Ink #262524 or Studio Slate #4C5560.",
+   "assertion": {
+    "op": "v2_text_on_ground",
+    "texts": [
+     "Made & Kept"
+    ],
+    "patterns": [
+     "(?<!\\d)3\\s*MAR(?:CH)?\\b|\\bMAR(?:CH)?\\.?\\s*3(?!\\d)|2026\\-03\\-03"
+    ],
+    "grounds": [
+     "#E8E1D6",
+     "#F4EFE7"
+    ],
+    "colors": [
+     "#262524",
+     "#4C5560"
+    ],
+    "optional": false
+   },
+   "how": "Reads each line's colour from the PDF and the colour behind it from the rendered page, and checks the pairing."
+  },
+  {
+   "check_id": "PHOTO-20/talk-card-r004/H054",
+   "output_id": "talk-card-r004",
+   "rule_id": "R069",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "On Warm Neutral or Bone, the event name and date on “Speaker talk card - Fjordworks Summit - On staying small on purpose” (talk-card-r004.pdf) are Vellacourt Ink #262524 or Studio Slate #4C5560.",
+   "assertion": {
+    "op": "v2_text_on_ground",
+    "texts": [
+     "Fjordworks Summit"
+    ],
+    "patterns": [
+     "21/03/26"
+    ],
+    "grounds": [
+     "#E8E1D6",
+     "#F4EFE7"
+    ],
+    "colors": [
+     "#262524",
+     "#4C5560"
+    ],
+    "optional": false
+   },
+   "how": "Reads each line's colour from the PDF and the colour behind it from the rendered page, and checks the pairing."
+  },
+  {
+   "check_id": "PHOTO-20/talk-card-r005/H054",
+   "output_id": "talk-card-r005",
+   "rule_id": "R069",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "On Warm Neutral or Bone, the event name and date on “Speaker talk card - Fjordworks Summit - The room after the round” (talk-card-r005.pdf) are Vellacourt Ink #262524 or Studio Slate #4C5560.",
+   "assertion": {
+    "op": "v2_text_on_ground",
+    "texts": [
+     "Fjordworks Summit"
+    ],
+    "patterns": [
+     "(?<!\\d)21\\s*MAR(?:CH)?\\b|\\bMAR(?:CH)?\\.?\\s*21(?!\\d)"
+    ],
+    "grounds": [
+     "#E8E1D6",
+     "#F4EFE7"
+    ],
+    "colors": [
+     "#262524",
+     "#4C5560"
+    ],
+    "optional": false
+   },
+   "how": "Reads each line's colour from the PDF and the colour behind it from the rendered page, and checks the pairing."
+  },
+  {
+   "check_id": "PHOTO-20/talk-card-r006/H054",
+   "output_id": "talk-card-r006",
+   "rule_id": "R069",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "On Warm Neutral or Bone, the event name and date on “Speaker talk card - Halden Design Days - From sketch to tooling” (talk-card-r006.pdf) are Vellacourt Ink #262524 or Studio Slate #4C5560.",
+   "assertion": {
+    "op": "v2_text_on_ground",
+    "texts": [
+     "Halden Design Days"
+    ],
+    "patterns": [
+     "(?<!\\d)4\\s*APR(?:IL)?\\b|\\bAPR(?:IL)?\\.?\\s*4(?!\\d)"
+    ],
+    "grounds": [
+     "#E8E1D6",
+     "#F4EFE7"
+    ],
+    "colors": [
+     "#262524",
+     "#4C5560"
+    ],
+    "optional": false
+   },
+   "how": "Reads each line's colour from the PDF and the colour behind it from the rendered page, and checks the pairing."
+  },
+  {
+   "check_id": "PHOTO-20/talk-card-r007/H054",
+   "output_id": "talk-card-r007",
+   "rule_id": "R069",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "On Warm Neutral or Bone, the event name and date on “Speaker talk card - The Bench Sessions - Designing for the next hands” (talk-card-r007.pdf) are Vellacourt Ink #262524 or Studio Slate #4C5560.",
+   "assertion": {
+    "op": "v2_text_on_ground",
+    "texts": [
+     "The Bench Sessions"
+    ],
+    "patterns": [
+     "Apr\\ 30"
+    ],
+    "grounds": [
+     "#E8E1D6",
+     "#F4EFE7"
+    ],
+    "colors": [
+     "#262524",
+     "#4C5560"
+    ],
+    "optional": false
+   },
+   "how": "Reads each line's colour from the PDF and the colour behind it from the rendered page, and checks the pairing."
+  },
+  {
+   "check_id": "PHOTO-20/talk-card-r008/H054",
+   "output_id": "talk-card-r008",
+   "rule_id": "R069",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "On Warm Neutral or Bone, the event name and date on “Speaker talk card - Continuum Product Days - What survives contact with a factory” (talk-card-r008.pdf) are Vellacourt Ink #262524 or Studio Slate #4C5560.",
+   "assertion": {
+    "op": "v2_text_on_ground",
+    "texts": [
+     "Continuum Product Days"
+    ],
+    "patterns": [
+     "May\\ 9"
+    ],
+    "grounds": [
+     "#E8E1D6",
+     "#F4EFE7"
+    ],
+    "colors": [
+     "#262524",
+     "#4C5560"
+    ],
+    "optional": false
+   },
+   "how": "Reads each line's colour from the PDF and the colour behind it from the rendered page, and checks the pairing."
+  },
+  {
+   "check_id": "PHOTO-20/talk-card-r009/H054",
+   "output_id": "talk-card-r009",
+   "rule_id": "R069",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "On Warm Neutral or Bone, the event name and date on “Speaker talk card - Grain & Frame Forum - What a small studio can promise” (talk-card-r009.pdf) are Vellacourt Ink #262524 or Studio Slate #4C5560.",
+   "assertion": {
+    "op": "v2_text_on_ground",
+    "texts": [
+     "Grain & Frame Forum"
+    ],
+    "patterns": [
+     "(?<!\\d)22\\s*MAY\\b|\\bMAY\\.?\\s*22(?!\\d)|2026\\-05\\-22"
+    ],
+    "grounds": [
+     "#E8E1D6",
+     "#F4EFE7"
+    ],
+    "colors": [
+     "#262524",
+     "#4C5560"
+    ],
+    "optional": false
+   },
+   "how": "Reads each line's colour from the PDF and the colour behind it from the rendered page, and checks the pairing."
+  },
+  {
+   "check_id": "PHOTO-20/speaker-onepager/H056",
+   "output_id": "speaker-onepager",
+   "rule_id": "R070",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "If an event or date line sits on Warm Neutral or Bone on “Speaker booking one-pager” (speaker-onepager.pdf), it is Vellacourt Ink #262524 or Studio Slate #4C5560.",
+   "assertion": {
+    "op": "v2_text_on_ground",
+    "texts": [
+     "Continuum Product Days",
+     "Fjordworks Summit",
+     "Grain & Frame Forum",
+     "Halden Design Days",
+     "Made & Kept",
+     "Northlight Design Forum",
+     "The Bench Sessions"
+    ],
+    "patterns": [
+     "(?<!\\d)\\d{1,2}\\s*(?:JAN|FEB|MAR|APR|MAY|JUN|JUL|AUG|SEP|OCT|NOV|DEC)[A-Z]*\\b|\\b(?:JAN|FEB|MAR|APR|MAY|JUN|JUL|AUG|SEP|OCT|NOV|DEC)[A-Z]*\\.?\\s*\\d{1,2}(?!\\d)|\\b20\\d\\d-\\d\\d-\\d\\d\\b"
+    ],
+    "grounds": [
+     "#E8E1D6",
+     "#F4EFE7"
+    ],
+    "colors": [
+     "#262524",
+     "#4C5560"
+    ]
+   },
+   "how": "Reads each line's colour from the PDF and the colour behind it from the rendered page, and checks the pairing."
+  },
+  {
    "check_id": "PHOTO-20/speaker-onepager/H040",
    "output_id": "speaker-onepager",
    "rule_id": "R081",
@@ -1737,6 +2858,446 @@
     "weight": "Medium"
    },
    "how": "Reads the font, size, letter case or colour of the named text from the PDF."
+  },
+  {
+   "check_id": "PHOTO-20/speaker-onepager/H046",
+   "output_id": "speaker-onepager",
+   "rule_id": "R082",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "If an event or date line appears on “Speaker booking one-pager” (speaker-onepager.pdf), it is set in Inter Regular.",
+   "assertion": {
+    "op": "v2_style_lines",
+    "texts": [
+     "Continuum Product Days",
+     "Fjordworks Summit",
+     "Grain & Frame Forum",
+     "Halden Design Days",
+     "Made & Kept",
+     "Northlight Design Forum",
+     "The Bench Sessions"
+    ],
+    "patterns": [
+     "(?<!\\d)\\d{1,2}\\s*(?:JAN|FEB|MAR|APR|MAY|JUN|JUL|AUG|SEP|OCT|NOV|DEC)[A-Z]*\\b|\\b(?:JAN|FEB|MAR|APR|MAY|JUN|JUL|AUG|SEP|OCT|NOV|DEC)[A-Z]*\\.?\\s*\\d{1,2}(?!\\d)|\\b20\\d\\d-\\d\\d-\\d\\d\\b"
+    ],
+    "optional": true,
+    "family": "Inter",
+    "weight": "Regular"
+   },
+   "how": "Reads the font, size or letter case of the selected lines from the PDF."
+  },
+  {
+   "check_id": "PHOTO-20/event-announcement-r002/H029",
+   "output_id": "event-announcement-r002",
+   "rule_id": "R092",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "On “Confirmed-talk speaker announcement - Northlight Design Forum - Designing the thing before the deck” (event-announcement-r002.png), the AV monogram sits above or left of the portrait, so it is read first.",
+   "assertion": {
+    "op": "v2_position",
+    "a": {
+     "colour": "#B98A4B"
+    },
+    "b": {
+     "asset": "vellacourt_session_02.jpg"
+    },
+    "rel": "above_or_left"
+   },
+   "how": "Finds both elements (by their colour, the supplied file, the placed photo or the text) and compares their positions."
+  },
+  {
+   "check_id": "PHOTO-20/event-announcement-r003/H029",
+   "output_id": "event-announcement-r003",
+   "rule_id": "R092",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "On “Confirmed-talk speaker announcement - Made & Kept - Six people, one hand” (event-announcement-r003.png), the AV monogram sits above or left of the portrait, so it is read first.",
+   "assertion": {
+    "op": "v2_position",
+    "a": {
+     "colour": "#B98A4B"
+    },
+    "b": {
+     "asset": "vellacourt_session_05.jpg"
+    },
+    "rel": "above_or_left"
+   },
+   "how": "Finds both elements (by their colour, the supplied file, the placed photo or the text) and compares their positions."
+  },
+  {
+   "check_id": "PHOTO-20/event-announcement-r008/H029",
+   "output_id": "event-announcement-r008",
+   "rule_id": "R092",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "On “Confirmed-talk speaker announcement - Continuum Product Days - What survives contact with a factory” (event-announcement-r008.png), the AV monogram sits above or left of the portrait, so it is read first.",
+   "assertion": {
+    "op": "v2_position",
+    "a": {
+     "colour": "#B98A4B"
+    },
+    "b": {
+     "asset": "vellacourt_session_01.jpg"
+    },
+    "rel": "above_or_left"
+   },
+   "how": "Finds both elements (by their colour, the supplied file, the placed photo or the text) and compares their positions."
+  },
+  {
+   "check_id": "PHOTO-20/event-banner-r002/H027",
+   "output_id": "event-banner-r002",
+   "rule_id": "R092",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "On “Confirmed-talk speaker banner - Northlight Design Forum - Designing the thing before the deck” (event-banner-r002.png), the AV monogram sits above or left of the portrait, so it is read first.",
+   "assertion": {
+    "op": "v2_position",
+    "a": {
+     "colour": "#B98A4B"
+    },
+    "b": {
+     "asset": "vellacourt_session_02.jpg"
+    },
+    "rel": "above_or_left"
+   },
+   "how": "Finds both elements (by their colour, the supplied file, the placed photo or the text) and compares their positions."
+  },
+  {
+   "check_id": "PHOTO-20/event-banner-r003/H027",
+   "output_id": "event-banner-r003",
+   "rule_id": "R092",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "On “Confirmed-talk speaker banner - Made & Kept - Six people, one hand” (event-banner-r003.png), the AV monogram sits above or left of the portrait, so it is read first.",
+   "assertion": {
+    "op": "v2_position",
+    "a": {
+     "colour": "#B98A4B"
+    },
+    "b": {
+     "asset": "vellacourt_session_05.jpg"
+    },
+    "rel": "above_or_left"
+   },
+   "how": "Finds both elements (by their colour, the supplied file, the placed photo or the text) and compares their positions."
+  },
+  {
+   "check_id": "PHOTO-20/event-banner-r008/H027",
+   "output_id": "event-banner-r008",
+   "rule_id": "R092",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "On “Confirmed-talk speaker banner - Continuum Product Days - What survives contact with a factory” (event-banner-r008.png), the AV monogram sits above or left of the portrait, so it is read first.",
+   "assertion": {
+    "op": "v2_position",
+    "a": {
+     "colour": "#B98A4B"
+    },
+    "b": {
+     "asset": "vellacourt_session_01.jpg"
+    },
+    "rel": "above_or_left"
+   },
+   "how": "Finds both elements (by their colour, the supplied file, the placed photo or the text) and compares their positions."
+  },
+  {
+   "check_id": "PHOTO-20/talk-card-r002/H025",
+   "output_id": "talk-card-r002",
+   "rule_id": "R092",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "On “Speaker talk card - Northlight Design Forum - Designing the thing before the deck” (talk-card-r002.pdf), the AV monogram sits above or left of the portrait, so it is read first.",
+   "assertion": {
+    "op": "v2_position",
+    "a": {
+     "colour": "#B98A4B"
+    },
+    "b": {
+     "image": "largest"
+    },
+    "rel": "above_or_left"
+   },
+   "how": "Finds both elements (by their colour, the supplied file, the placed photo or the text) and compares their positions."
+  },
+  {
+   "check_id": "PHOTO-20/talk-card-r003/H025",
+   "output_id": "talk-card-r003",
+   "rule_id": "R092",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "On “Speaker talk card - Made & Kept - Six people, one hand” (talk-card-r003.pdf), the AV monogram sits above or left of the portrait, so it is read first.",
+   "assertion": {
+    "op": "v2_position",
+    "a": {
+     "colour": "#B98A4B"
+    },
+    "b": {
+     "image": "largest"
+    },
+    "rel": "above_or_left"
+   },
+   "how": "Finds both elements (by their colour, the supplied file, the placed photo or the text) and compares their positions."
+  },
+  {
+   "check_id": "PHOTO-20/talk-card-r004/H025",
+   "output_id": "talk-card-r004",
+   "rule_id": "R092",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "On “Speaker talk card - Fjordworks Summit - On staying small on purpose” (talk-card-r004.pdf), the AV monogram sits above or left of the portrait, so it is read first.",
+   "assertion": {
+    "op": "v2_position",
+    "a": {
+     "colour": "#B98A4B"
+    },
+    "b": {
+     "image": "largest"
+    },
+    "rel": "above_or_left"
+   },
+   "how": "Finds both elements (by their colour, the supplied file, the placed photo or the text) and compares their positions."
+  },
+  {
+   "check_id": "PHOTO-20/talk-card-r005/H025",
+   "output_id": "talk-card-r005",
+   "rule_id": "R092",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "On “Speaker talk card - Fjordworks Summit - The room after the round” (talk-card-r005.pdf), the AV monogram sits above or left of the portrait, so it is read first.",
+   "assertion": {
+    "op": "v2_position",
+    "a": {
+     "colour": "#B98A4B"
+    },
+    "b": {
+     "image": "largest"
+    },
+    "rel": "above_or_left"
+   },
+   "how": "Finds both elements (by their colour, the supplied file, the placed photo or the text) and compares their positions."
+  },
+  {
+   "check_id": "PHOTO-20/talk-card-r006/H026",
+   "output_id": "talk-card-r006",
+   "rule_id": "R092",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "On “Speaker talk card - Halden Design Days - From sketch to tooling” (talk-card-r006.pdf), the AV monogram sits above or left of the portrait, so it is read first.",
+   "assertion": {
+    "op": "v2_position",
+    "a": {
+     "colour": "#B98A4B"
+    },
+    "b": {
+     "image": "largest"
+    },
+    "rel": "above_or_left"
+   },
+   "how": "Finds both elements (by their colour, the supplied file, the placed photo or the text) and compares their positions."
+  },
+  {
+   "check_id": "PHOTO-20/talk-card-r008/H025",
+   "output_id": "talk-card-r008",
+   "rule_id": "R092",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "On “Speaker talk card - Continuum Product Days - What survives contact with a factory” (talk-card-r008.pdf), the AV monogram sits above or left of the portrait, so it is read first.",
+   "assertion": {
+    "op": "v2_position",
+    "a": {
+     "colour": "#B98A4B"
+    },
+    "b": {
+     "image": "largest"
+    },
+    "rel": "above_or_left"
+   },
+   "how": "Finds both elements (by their colour, the supplied file, the placed photo or the text) and compares their positions."
+  },
+  {
+   "check_id": "PHOTO-20/talk-card-r009/H025",
+   "output_id": "talk-card-r009",
+   "rule_id": "R092",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "On “Speaker talk card - Grain & Frame Forum - What a small studio can promise” (talk-card-r009.pdf), the AV monogram sits above or left of the portrait, so it is read first.",
+   "assertion": {
+    "op": "v2_position",
+    "a": {
+     "colour": "#B98A4B"
+    },
+    "b": {
+     "image": "largest"
+    },
+    "rel": "above_or_left"
+   },
+   "how": "Finds both elements (by their colour, the supplied file, the placed photo or the text) and compares their positions."
+  },
+  {
+   "check_id": "PHOTO-20/speaker-onepager/H026",
+   "output_id": "speaker-onepager",
+   "rule_id": "R094",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "If “Speaker booking one-pager” (speaker-onepager.pdf) carries a portrait, the AV monogram sits above or left of it, so it is read first.",
+   "assertion": {
+    "op": "v2_position",
+    "a": {
+     "colour": "#B98A4B"
+    },
+    "b": {
+     "image": "largest"
+    },
+    "rel": "above_or_left",
+    "optional_b": true
+   },
+   "how": "Finds both elements (by their colour, the supplied file, the placed photo or the text) and compares their positions."
+  },
+  {
+   "check_id": "PHOTO-20/talk-card-r007/H025",
+   "output_id": "talk-card-r007",
+   "rule_id": "R094",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "If “Speaker talk card - The Bench Sessions - Designing for the next hands” (talk-card-r007.pdf) carries a portrait, the AV monogram sits above or left of it, so it is read first.",
+   "assertion": {
+    "op": "v2_position",
+    "a": {
+     "colour": "#B98A4B"
+    },
+    "b": {
+     "image": "largest"
+    },
+    "rel": "above_or_left",
+    "optional_b": true
+   },
+   "how": "Finds both elements (by their colour, the supplied file, the placed photo or the text) and compares their positions."
+  },
+  {
+   "check_id": "PHOTO-20/speaker-onepager/H050",
+   "output_id": "speaker-onepager",
+   "rule_id": "R095",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The AV monogram on “Speaker booking one-pager” (speaker-onepager.pdf) is at least 18 mm wide.",
+   "assertion": {
+    "op": "v2_mark",
+    "colour": "#B98A4B",
+    "min_mm": 18
+   },
+   "how": "Finds the shapes drawn in the mark's colour and measures them or checks they are drawn solid."
+  },
+  {
+   "check_id": "PHOTO-20/talk-card-r002/H050",
+   "output_id": "talk-card-r002",
+   "rule_id": "R095",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The AV monogram on “Speaker talk card - Northlight Design Forum - Designing the thing before the deck” (talk-card-r002.pdf) is at least 18 mm wide.",
+   "assertion": {
+    "op": "v2_mark",
+    "colour": "#B98A4B",
+    "min_mm": 18
+   },
+   "how": "Finds the shapes drawn in the mark's colour and measures them or checks they are drawn solid."
+  },
+  {
+   "check_id": "PHOTO-20/talk-card-r003/H050",
+   "output_id": "talk-card-r003",
+   "rule_id": "R095",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The AV monogram on “Speaker talk card - Made & Kept - Six people, one hand” (talk-card-r003.pdf) is at least 18 mm wide.",
+   "assertion": {
+    "op": "v2_mark",
+    "colour": "#B98A4B",
+    "min_mm": 18
+   },
+   "how": "Finds the shapes drawn in the mark's colour and measures them or checks they are drawn solid."
+  },
+  {
+   "check_id": "PHOTO-20/talk-card-r004/H050",
+   "output_id": "talk-card-r004",
+   "rule_id": "R095",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The AV monogram on “Speaker talk card - Fjordworks Summit - On staying small on purpose” (talk-card-r004.pdf) is at least 18 mm wide.",
+   "assertion": {
+    "op": "v2_mark",
+    "colour": "#B98A4B",
+    "min_mm": 18
+   },
+   "how": "Finds the shapes drawn in the mark's colour and measures them or checks they are drawn solid."
+  },
+  {
+   "check_id": "PHOTO-20/talk-card-r005/H050",
+   "output_id": "talk-card-r005",
+   "rule_id": "R095",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The AV monogram on “Speaker talk card - Fjordworks Summit - The room after the round” (talk-card-r005.pdf) is at least 18 mm wide.",
+   "assertion": {
+    "op": "v2_mark",
+    "colour": "#B98A4B",
+    "min_mm": 18
+   },
+   "how": "Finds the shapes drawn in the mark's colour and measures them or checks they are drawn solid."
+  },
+  {
+   "check_id": "PHOTO-20/talk-card-r006/H050",
+   "output_id": "talk-card-r006",
+   "rule_id": "R095",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The AV monogram on “Speaker talk card - Halden Design Days - From sketch to tooling” (talk-card-r006.pdf) is at least 18 mm wide.",
+   "assertion": {
+    "op": "v2_mark",
+    "colour": "#B98A4B",
+    "min_mm": 18
+   },
+   "how": "Finds the shapes drawn in the mark's colour and measures them or checks they are drawn solid."
+  },
+  {
+   "check_id": "PHOTO-20/talk-card-r007/H050",
+   "output_id": "talk-card-r007",
+   "rule_id": "R095",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The AV monogram on “Speaker talk card - The Bench Sessions - Designing for the next hands” (talk-card-r007.pdf) is at least 18 mm wide.",
+   "assertion": {
+    "op": "v2_mark",
+    "colour": "#B98A4B",
+    "min_mm": 18
+   },
+   "how": "Finds the shapes drawn in the mark's colour and measures them or checks they are drawn solid."
+  },
+  {
+   "check_id": "PHOTO-20/talk-card-r008/H050",
+   "output_id": "talk-card-r008",
+   "rule_id": "R095",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The AV monogram on “Speaker talk card - Continuum Product Days - What survives contact with a factory” (talk-card-r008.pdf) is at least 18 mm wide.",
+   "assertion": {
+    "op": "v2_mark",
+    "colour": "#B98A4B",
+    "min_mm": 18
+   },
+   "how": "Finds the shapes drawn in the mark's colour and measures them or checks they are drawn solid."
+  },
+  {
+   "check_id": "PHOTO-20/talk-card-r009/H050",
+   "output_id": "talk-card-r009",
+   "rule_id": "R095",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The AV monogram on “Speaker talk card - Grain & Frame Forum - What a small studio can promise” (talk-card-r009.pdf) is at least 18 mm wide.",
+   "assertion": {
+    "op": "v2_mark",
+    "colour": "#B98A4B",
+    "min_mm": 18
+   },
+   "how": "Finds the shapes drawn in the mark's colour and measures them or checks they are drawn solid."
   },
   {
    "check_id": "PHOTO-20/speaker-onepager/H006",

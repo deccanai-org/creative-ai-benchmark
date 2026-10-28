@@ -166,8 +166,10 @@
     "3": "name"
    },
    "shared_reference": null,
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads where each value stands and checks the value that belongs to this name (by its section, column or line) is the expected one."
+   ],
    "rows": [
     {
      "check_id": "LAYOUT-12/poster-direction-type-led/H008",
@@ -1197,8 +1199,10 @@
     "2": "name"
    },
    "shared_reference": null,
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads where each value stands and checks the value that belongs to this name (by its section, column or line) is the expected one."
+   ],
    "rows": [
     {
      "check_id": "LAYOUT-12/poster-direction-type-led/H012",
@@ -2021,8 +2025,10 @@
     "assets": [],
     "note": "Output register: promoter-deck.pdf, 6 pages. Open every page at full size."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Checks every page of the PDF carries text, a picture or a shape."
+   ],
    "rows": [
     {
      "check_id": "LAYOUT-12/promoter-deck/H001",
@@ -3774,8 +3780,10 @@
     "2": "name"
    },
    "shared_reference": null,
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Runs each part; all must pass: Reads all text and checks none of the named words or patterns appears; Finds every weekday shown beside a date and checks it against the 2026 calendar."
+   ],
    "rows": [
     {
      "check_id": "LAYOUT-12/release-post-r002/H016",
@@ -4098,8 +4106,10 @@
     "2": "number"
    },
    "shared_reference": null,
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads where each value stands and checks the value that belongs to this name (by its section, column or line) is the expected one."
+   ],
    "rows": [
     {
      "check_id": "LAYOUT-12/promoter-deck/H003",
@@ -4264,8 +4274,10 @@
     ],
     "note": "umbra_room_specs.txt: \"CAPACITY: 250 standing / 120 seated cabaret.\""
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+   ],
    "rows": [
     {
      "check_id": "LAYOUT-12/promoter-deck/H004",
@@ -4322,8 +4334,10 @@
     ],
     "note": "umbra_room_specs.txt: \"Season average: 183 of 250 (73 percent).\""
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+   ],
    "rows": [
     {
      "check_id": "LAYOUT-12/promoter-deck/H005",
@@ -4375,8 +4389,10 @@
     "assets": [],
     "note": "Brief: the three directions are meaningfully distinct. Output register: the three poster-direction PDFs."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Renders the delivered poster and searches the deck for it."
+   ],
    "rows": [
     {
      "check_id": "LAYOUT-12/promoter-deck/H007",
@@ -4648,8 +4664,10 @@
     ],
     "note": "Brief, deliverable 1 and poster commission: use the supplied wordmarks alongside their typeset names."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Finds the supplied wordmark, then checks the act name is also typeset beside it."
+   ],
    "rows": [
     {
      "check_id": "LAYOUT-12/poster-direction-type-led/H051",
@@ -4742,8 +4760,10 @@
     ],
     "note": "Brief, deliverable 1 and poster commission: use the supplied wordmarks alongside their typeset names."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Finds the supplied wordmark, then checks the act name is also typeset beside it."
+   ],
    "rows": [
     {
      "check_id": "LAYOUT-12/poster-direction-type-led/H053",
@@ -4836,8 +4856,10 @@
     ],
     "note": "umbra_billing_autumn.txt: support acts must always appear one size down from the headline, prefixed 'with'."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads all text and checks none of the named words or patterns appears."
+   ],
    "rows": [
     {
      "check_id": "LAYOUT-12/poster-direction-type-led/H058",
@@ -4925,8 +4947,10 @@
     "assets": [],
     "note": "Deck commission: present all three directions."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Renders the delivered poster and searches the deck for it."
+   ],
    "rows": [
     {
      "check_id": "LAYOUT-12/promoter-deck/H036",
@@ -4973,8 +4997,10 @@
     "assets": [],
     "note": "Deck commission: present all three directions."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Renders the delivered poster and searches the deck for it."
+   ],
    "rows": [
     {
      "check_id": "LAYOUT-12/promoter-deck/H037",
@@ -5326,8 +5352,10 @@
     ],
     "note": "Post commission: add the supplied production wordmark for Sable Quartet or Meridian Brass; brief: with the act name, not in place of it."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Finds the supplied wordmark, then checks the act name is also typeset beside it."
+   ],
    "rows": [
     {
      "check_id": "LAYOUT-12/release-post-r002/H049",
@@ -5384,8 +5412,10 @@
     ],
     "note": "Post commission: add the supplied production wordmark for Sable Quartet or Meridian Brass; brief: with the act name, not in place of it."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Finds the supplied wordmark, then checks the act name is also typeset beside it."
+   ],
    "rows": [
     {
      "check_id": "LAYOUT-12/release-post-r003/H044",
@@ -5651,8 +5681,10 @@
     ],
     "note": "umbra_room_specs.txt: \"CAPACITY: 250 standing / 120 seated cabaret.\""
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+   ],
    "rows": [
     {
      "check_id": "LAYOUT-12/promoter-deck/H067",
@@ -5709,8 +5741,10 @@
     ],
     "note": "umbra_room_specs.txt: \"Season average: 183 of 250 (73 percent).\""
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+   ],
    "rows": [
     {
      "check_id": "LAYOUT-12/promoter-deck/H068",
@@ -5762,8 +5796,10 @@
     "assets": [],
     "note": "Brief: the event information is readable. Output register: 420 x 594 mm. Inspect the delivered PDF at 100%."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Checks each named text lies fully inside the page or image."
+   ],
    "rows": [
     {
      "check_id": "LAYOUT-12/poster-direction-type-led/H002",
@@ -5833,8 +5869,10 @@
    ],
    "slot_labels": {},
    "shared_reference": null,
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Checks the named text is read in full inside the page or image (for a mark, its letters read as a line of their own)."
+   ],
    "rows": [
     {
      "check_id": "LAYOUT-12/release-post-r002/H002",
@@ -7902,8 +7940,10 @@
     "4": "text"
    },
    "shared_reference": null,
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+   ],
    "rows": [
     {
      "check_id": "LAYOUT-12/release-post-r005/H001",
@@ -8000,8 +8040,10 @@
     ],
     "note": "umbra_nights_autumn.csv row 7, field door: 8:00&nbsp;PM; every other row writes a plain space, as in 8:00 PM. Asset plan: this door time carries a literal string that renders literally instead of being interpreted. Type system step 04 sample: “DOORS 8 · CASH ON THE NIGHT”. Last season's umbra_seasoncard_autumn.pdf prints “DOORS 8:00 PM | SETS 9:00 PM”."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads all text and checks none of the named words or patterns appears."
+   ],
    "rows": [
     {
      "check_id": "LAYOUT-12/release-post-r007/H006",
@@ -10195,8 +10237,10 @@
     "assets": [],
     "note": "Type rule: The act block is Bone White on Pitch, with the date directly above it in Sodium. Step 02: The date line, set in Sodium and always sitting directly above the act block. One line only, so the 0.82 leading of step 01 does not apply."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the font, size, letter case or colour of the named text from the PDF."
+   ],
    "rows": [
     {
      "check_id": "LAYOUT-12/poster-direction-type-led/H036",
@@ -11479,8 +11523,10 @@
     "assets": [],
     "note": "Type rule: The act block is Bone White on Pitch, with the date directly above it in Sodium. Step 02: The date line, set in Sodium and always sitting directly above the act block. One line only, so the 0.82 leading of step 01 does not apply."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the font, size, letter case or colour of the named text from the PDF."
+   ],
    "rows": [
     {
      "check_id": "LAYOUT-12/promoter-deck/H027",
@@ -13208,8 +13254,10 @@
     "assets": [],
     "note": "Brand identity, palette_rules.distribution: Pitch is the main ground and always the ground under an act block; every act name is Bone White on Pitch."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads each line's colour from the PDF and the colour behind it from the rendered page, and checks the pairing."
+   ],
    "rows": [
     {
      "check_id": "LAYOUT-12/poster-direction-type-led/H080",
@@ -13282,8 +13330,10 @@
     "assets": [],
     "note": "Brand identity, palette_rules.distribution: Pitch is the main ground and always the ground under an act block; every act name is Bone White on Pitch."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads each line's colour from the PDF and the colour behind it from the rendered page, and checks the pairing."
+   ],
    "rows": [
     {
      "check_id": "LAYOUT-12/promoter-deck/H059",
@@ -13682,8 +13732,10 @@
     "assets": [],
     "note": "Brand identity, palette_rules.distribution: supplied production act wordmarks are recoloured to Bone White on Pitch."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Finds the supplied wordmark and reads its ink and the ground around it."
+   ],
    "rows": [
     {
      "check_id": "LAYOUT-12/promoter-deck/H060",
@@ -13778,8 +13830,10 @@
     "assets": [],
     "note": "Brand identity, palette_rules.distribution: supplied production act wordmarks are recoloured to Bone White on Pitch."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Finds the supplied wordmark and reads its ink and the ground around it."
+   ],
    "rows": [
     {
      "check_id": "LAYOUT-12/promoter-deck/H062",
@@ -13957,8 +14011,10 @@
     ],
     "note": "Current brief and supplied assets. Exact font settings require authored-source or embedded-font evidence; do not infer them from a raster preview."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the font, size, letter case or colour of the named text from the PDF."
+   ],
    "rows": [
     {
      "check_id": "LAYOUT-12/poster-direction-type-led/R13-act-name-text-family",
@@ -16418,8 +16474,10 @@
     "assets": [],
     "note": "Brand identity, type_system.scale step 01: Sora ExtraBold, -10 units, all caps."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the font, size, letter case or colour of the named text from the PDF."
+   ],
    "rows": [
     {
      "check_id": "LAYOUT-12/poster-direction-type-led/H083",
@@ -17708,8 +17766,10 @@
     "assets": [],
     "note": "Type system tracking: step 01, act names, -10 units; step 02, the date line, +20 units; step 03, billing and body, including the support line, 0; step 04, the door line, +30 units."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Measures letter spacing from the PDF's glyph positions."
+   ],
    "rows": [
     {
      "check_id": "LAYOUT-12/poster-direction-type-led/H037",
@@ -18025,8 +18085,10 @@
     "assets": [],
     "note": "Type system tracking: step 01, act names, -10 units; step 02, the date line, +20 units; step 03, billing and body, including the support line, 0; step 04, the door line, +30 units."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Measures letter spacing from the PDF's glyph positions."
+   ],
    "rows": [
     {
      "check_id": "LAYOUT-12/promoter-deck/H028",
@@ -18212,8 +18274,10 @@
     "assets": [],
     "note": "Brand identity, palette_rules.distribution. Type rule: the date sits directly above the act block."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the text and checks the line directly above each name is the expected kind of line."
+   ],
    "rows": [
     {
      "check_id": "LAYOUT-12/poster-direction-type-led/H045",
@@ -18286,8 +18350,10 @@
     "assets": [],
     "note": "Type scale: step 04 fine print +30 tracking against step 03 billing at 0."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Measures letter spacing from the PDF's glyph positions."
+   ],
    "rows": [
     {
      "check_id": "LAYOUT-12/poster-direction-type-led/H046",
@@ -18771,8 +18837,10 @@
     "assets": [],
     "note": "Brand identity, palette_rules.distribution. Type rule: the date sits directly above the act block."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the text and checks the line directly above each name is the expected kind of line."
+   ],
    "rows": [
     {
      "check_id": "LAYOUT-12/promoter-deck/H039",
@@ -18915,8 +18983,10 @@
     "assets": [],
     "note": "Brand identity, palette_rules.distribution. Type rule: the date sits directly above the act block."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the text and checks the line directly above each name is the expected kind of line."
+   ],
    "rows": [
     {
      "check_id": "LAYOUT-12/release-post-r002/H037",
@@ -19295,8 +19365,10 @@
     "assets": [],
     "note": "Brand identity, type_system.rules: act names use one or two lines as needed."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Counts the lines the named text runs over, for each of the 8 named texts; all must pass."
+   ],
    "rows": [
     {
      "check_id": "LAYOUT-12/promoter-deck/H058",
@@ -21358,8 +21430,10 @@
     ],
     "note": "umbra_billing_autumn.txt: \"Support acts must always appear one size down from the headline, prefixed 'with'.\""
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Compares the named texts' size or position, for each of the 8 named texts; all must pass."
+   ],
    "rows": [
     {
      "check_id": "LAYOUT-12/poster-direction-type-led/H014",

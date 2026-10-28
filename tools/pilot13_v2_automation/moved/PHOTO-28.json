@@ -18,6 +18,237 @@
    "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
   },
   {
+   "check_id": "PHOTO-28/class-feed/H001",
+   "output_id": "class-feed",
+   "rule_id": "R003",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "If the pictured instructor on “Class announcement” (class-feed.png) is Priya Anand, the class named is Foundations, as owner_note.txt gives.",
+   "assertion": {
+    "op": "v2_pictured",
+    "photos": {
+     "verda_instructor_01.jpg": "Priya Anand",
+     "verda_instructor_02.jpg": "Dana Osei",
+     "verda_instructor_03.jpg": "Lena Brandt",
+     "verda_instructor_04.jpg": "Tomas Reyes",
+     "verda_instructor_05.jpg": "Yuki Sato",
+     "verda_instructor_06.jpg": "Nadia Haddad"
+    },
+    "when": "Priya Anand",
+    "then": {
+     "op": "v2_text_present",
+     "expected": [
+      "Foundations"
+     ],
+     "forbidden": [
+      "Flow",
+      "Core & Restore",
+      "Strength",
+      "Prenatal",
+      "Slow & Deep"
+     ]
+    }
+   },
+   "how": "Finds which supplied photo is shown, then checks the text for that person: reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-28/class-feed/H075",
+   "output_id": "class-feed",
+   "rule_id": "R003",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "If the pictured instructor on “Class announcement” (class-feed.png) is Dana Osei, the class named is Flow, as owner_note.txt gives.",
+   "assertion": {
+    "op": "v2_pictured",
+    "photos": {
+     "verda_instructor_01.jpg": "Priya Anand",
+     "verda_instructor_02.jpg": "Dana Osei",
+     "verda_instructor_03.jpg": "Lena Brandt",
+     "verda_instructor_04.jpg": "Tomas Reyes",
+     "verda_instructor_05.jpg": "Yuki Sato",
+     "verda_instructor_06.jpg": "Nadia Haddad"
+    },
+    "when": "Dana Osei",
+    "then": {
+     "op": "v2_text_present",
+     "expected": [
+      "Flow"
+     ],
+     "forbidden": [
+      "Foundations",
+      "Core & Restore",
+      "Strength",
+      "Prenatal",
+      "Slow & Deep"
+     ]
+    }
+   },
+   "how": "Finds which supplied photo is shown, then checks the text for that person: reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-28/class-feed/H077",
+   "output_id": "class-feed",
+   "rule_id": "R003",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "If the pictured instructor on “Class announcement” (class-feed.png) is Lena Brandt, the class named is Core & Restore, as owner_note.txt gives.",
+   "assertion": {
+    "op": "v2_pictured",
+    "photos": {
+     "verda_instructor_01.jpg": "Priya Anand",
+     "verda_instructor_02.jpg": "Dana Osei",
+     "verda_instructor_03.jpg": "Lena Brandt",
+     "verda_instructor_04.jpg": "Tomas Reyes",
+     "verda_instructor_05.jpg": "Yuki Sato",
+     "verda_instructor_06.jpg": "Nadia Haddad"
+    },
+    "when": "Lena Brandt",
+    "then": {
+     "op": "v2_text_present",
+     "expected": [
+      "Core & Restore"
+     ],
+     "forbidden": [
+      "Foundations",
+      "Flow",
+      "Strength",
+      "Prenatal",
+      "Slow & Deep"
+     ]
+    }
+   },
+   "how": "Finds which supplied photo is shown, then checks the text for that person: reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-28/class-feed/H079",
+   "output_id": "class-feed",
+   "rule_id": "R003",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "If the pictured instructor on “Class announcement” (class-feed.png) is Tomas Reyes, the class named is Strength, as owner_note.txt gives.",
+   "assertion": {
+    "op": "v2_pictured",
+    "photos": {
+     "verda_instructor_01.jpg": "Priya Anand",
+     "verda_instructor_02.jpg": "Dana Osei",
+     "verda_instructor_03.jpg": "Lena Brandt",
+     "verda_instructor_04.jpg": "Tomas Reyes",
+     "verda_instructor_05.jpg": "Yuki Sato",
+     "verda_instructor_06.jpg": "Nadia Haddad"
+    },
+    "when": "Tomas Reyes",
+    "then": {
+     "op": "v2_text_present",
+     "expected": [
+      "Strength"
+     ],
+     "forbidden": [
+      "Foundations",
+      "Flow",
+      "Core & Restore",
+      "Prenatal",
+      "Slow & Deep"
+     ]
+    }
+   },
+   "how": "Finds which supplied photo is shown, then checks the text for that person: reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-28/class-feed/H081",
+   "output_id": "class-feed",
+   "rule_id": "R003",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "If the pictured instructor on “Class announcement” (class-feed.png) is Yuki Sato, the class named is Prenatal, as owner_note.txt gives.",
+   "assertion": {
+    "op": "v2_pictured",
+    "photos": {
+     "verda_instructor_01.jpg": "Priya Anand",
+     "verda_instructor_02.jpg": "Dana Osei",
+     "verda_instructor_03.jpg": "Lena Brandt",
+     "verda_instructor_04.jpg": "Tomas Reyes",
+     "verda_instructor_05.jpg": "Yuki Sato",
+     "verda_instructor_06.jpg": "Nadia Haddad"
+    },
+    "when": "Yuki Sato",
+    "then": {
+     "op": "v2_text_present",
+     "expected": [
+      "Prenatal"
+     ],
+     "forbidden": [
+      "Foundations",
+      "Flow",
+      "Core & Restore",
+      "Strength",
+      "Slow & Deep"
+     ]
+    }
+   },
+   "how": "Finds which supplied photo is shown, then checks the text for that person: reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-28/class-feed/H083",
+   "output_id": "class-feed",
+   "rule_id": "R003",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "If the pictured instructor on “Class announcement” (class-feed.png) is Nadia Haddad, the class named is Slow & Deep, as owner_note.txt gives.",
+   "assertion": {
+    "op": "v2_pictured",
+    "photos": {
+     "verda_instructor_01.jpg": "Priya Anand",
+     "verda_instructor_02.jpg": "Dana Osei",
+     "verda_instructor_03.jpg": "Lena Brandt",
+     "verda_instructor_04.jpg": "Tomas Reyes",
+     "verda_instructor_05.jpg": "Yuki Sato",
+     "verda_instructor_06.jpg": "Nadia Haddad"
+    },
+    "when": "Nadia Haddad",
+    "then": {
+     "op": "v2_text_present",
+     "expected": [
+      "Slow & Deep"
+     ],
+     "forbidden": [
+      "Foundations",
+      "Flow",
+      "Core & Restore",
+      "Strength",
+      "Prenatal"
+     ]
+    }
+   },
+   "how": "Finds which supplied photo is shown, then checks the text for that person: reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-28/class-feed/H010",
+   "output_id": "class-feed",
+   "rule_id": "R004",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The pictured instructor on “Class announcement” (class-feed.png) is named in full, first and last name, spelled exactly as in owner_note.txt.",
+   "assertion": {
+    "op": "v2_pictured",
+    "photos": {
+     "verda_instructor_01.jpg": "Priya Anand",
+     "verda_instructor_02.jpg": "Dana Osei",
+     "verda_instructor_03.jpg": "Lena Brandt",
+     "verda_instructor_04.jpg": "Tomas Reyes",
+     "verda_instructor_05.jpg": "Yuki Sato",
+     "verda_instructor_06.jpg": "Nadia Haddad"
+    },
+    "then": {
+     "op": "v2_text_present",
+     "expected": [
+      "{name}"
+     ],
+     "any_case": true
+    }
+   },
+   "how": "Finds which supplied photo is shown, then checks the text for that person: reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
    "check_id": "PHOTO-28/class-feed/H012",
    "output_id": "class-feed",
    "rule_id": "R006",
@@ -38,6 +269,406 @@
     ]
    },
    "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-28/class-feed/H020",
+   "output_id": "class-feed",
+   "rule_id": "R008",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "Any studio location given on “Class announcement” (class-feed.png) reads “Calloway Row”, with no invented street number, city or postcode added.",
+   "assertion": {
+    "op": "v2_all_of",
+    "checks": [
+     {
+      "op": "v2_text_absent",
+      "patterns": {
+       "street number": "\\b\\d+[A-Za-z]?\\s+Calloway\\s+Row",
+       "postcode": "\\b\\d{5}(?:-\\d{4})?\\b|\\b[A-Z]{1,2}\\d[A-Z\\d]?\\s*\\d[A-Z]{2}\\b"
+      }
+     },
+     {
+      "op": "v2_text_absent",
+      "patterns": {
+       "words after the street": "Calloway\\s+Row\\s*,\\s*[A-Za-z]+"
+      },
+      "found_is": "person"
+     }
+    ]
+   },
+   "how": "Reads all text and checks none of the named words or patterns appears, for each of the 2 named texts; all must pass."
+  },
+  {
+   "check_id": "PHOTO-28/booking-story/H014",
+   "output_id": "booking-story",
+   "rule_id": "R008",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "Any studio location given on “Studio booking story” (booking-story.png) reads “Calloway Row”, with no invented street number, city or postcode added.",
+   "assertion": {
+    "op": "v2_all_of",
+    "checks": [
+     {
+      "op": "v2_text_absent",
+      "patterns": {
+       "street number": "\\b\\d+[A-Za-z]?\\s+Calloway\\s+Row",
+       "postcode": "\\b\\d{5}(?:-\\d{4})?\\b|\\b[A-Z]{1,2}\\d[A-Z\\d]?\\s*\\d[A-Z]{2}\\b"
+      }
+     },
+     {
+      "op": "v2_text_absent",
+      "patterns": {
+       "words after the street": "Calloway\\s+Row\\s*,\\s*[A-Za-z]+"
+      },
+      "found_is": "person"
+     }
+    ]
+   },
+   "how": "Reads all text and checks none of the named words or patterns appears, for each of the 2 named texts; all must pass."
+  },
+  {
+   "check_id": "PHOTO-28/studio-launch/H013",
+   "output_id": "studio-launch",
+   "rule_id": "R011",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "Any instructor named on “Studio launch-page composition” (studio-launch.png) is named in full, first and last name, spelled exactly as in owner_note.txt.",
+   "assertion": {
+    "op": "v2_names_full",
+    "names": [
+     "Priya Anand",
+     "Dana Osei",
+     "Lena Brandt",
+     "Tomas Reyes",
+     "Yuki Sato",
+     "Nadia Haddad"
+    ]
+   },
+   "how": "Reads the text and checks every name that appears is given in full."
+  },
+  {
+   "check_id": "PHOTO-28/booking-story/H012",
+   "output_id": "booking-story",
+   "rule_id": "R011",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "Any instructor named on “Studio booking story” (booking-story.png) is named in full, first and last name, spelled exactly as in owner_note.txt.",
+   "assertion": {
+    "op": "v2_names_full",
+    "names": [
+     "Priya Anand",
+     "Dana Osei",
+     "Lena Brandt",
+     "Tomas Reyes",
+     "Yuki Sato",
+     "Nadia Haddad"
+    ]
+   },
+   "how": "Reads the text and checks every name that appears is given in full."
+  },
+  {
+   "check_id": "PHOTO-28/studio-launch/H014",
+   "output_id": "studio-launch",
+   "rule_id": "R012",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "If Priya Anand is named on “Studio launch-page composition” (studio-launch.png), any class beside that name is Foundations, as owner_note.txt gives.",
+   "assertion": {
+    "op": "v2_paired",
+    "anchor": [
+     "Priya Anand"
+    ],
+    "whole_line": false,
+    "kind": "\\b(?:Foundations|Flow|Core\\s+\\&\\s+Restore|Strength|Prenatal|Slow\\s+\\&\\s+Deep)\\b",
+    "value": {
+     "regex": "\\bFoundations\\b"
+    },
+    "where": "beside",
+    "empty_ok": true,
+    "optional": true
+   },
+   "how": "Reads where each value stands and checks the value that belongs to this name (by its section, column or line) is the expected one."
+  },
+  {
+   "check_id": "PHOTO-28/booking-story/H013",
+   "output_id": "booking-story",
+   "rule_id": "R012",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "If Priya Anand is named on “Studio booking story” (booking-story.png), any class beside that name is Foundations, as owner_note.txt gives.",
+   "assertion": {
+    "op": "v2_paired",
+    "anchor": [
+     "Priya Anand"
+    ],
+    "whole_line": false,
+    "kind": "\\b(?:Foundations|Flow|Core\\s+\\&\\s+Restore|Strength|Prenatal|Slow\\s+\\&\\s+Deep)\\b",
+    "value": {
+     "regex": "\\bFoundations\\b"
+    },
+    "where": "beside",
+    "empty_ok": true,
+    "optional": true
+   },
+   "how": "Reads where each value stands and checks the value that belongs to this name (by its section, column or line) is the expected one."
+  },
+  {
+   "check_id": "PHOTO-28/booking-story/H068",
+   "output_id": "booking-story",
+   "rule_id": "R023",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "Any price given for Flow or Prenatal on “Studio booking story” (booking-story.png) is $36, as roster_2027.csv gives for RF-FLW and RF-PRE.",
+   "assertion": {
+    "op": "v2_paired",
+    "anchor": [
+     "Flow",
+     "Prenatal"
+    ],
+    "whole_line": false,
+    "kind": "[$€£]\\s?\\d",
+    "value": {
+     "regex": "\\$\\s?36(?![\\d])"
+    },
+    "where": "beside",
+    "empty_ok": true,
+    "optional": true
+   },
+   "how": "Reads where each value stands and checks the value that belongs to this name (by its section, column or line) is the expected one."
+  },
+  {
+   "check_id": "PHOTO-28/booking-story/H069",
+   "output_id": "booking-story",
+   "rule_id": "R024",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "Any price given for Strength on “Studio booking story” (booking-story.png) is $38, as roster_2027.csv gives for RF-ATH.",
+   "assertion": {
+    "op": "v2_paired",
+    "anchor": [
+     "Strength"
+    ],
+    "whole_line": false,
+    "kind": "[$€£]\\s?\\d",
+    "value": {
+     "regex": "\\$\\s?38(?![\\d])"
+    },
+    "where": "beside",
+    "empty_ok": true,
+    "optional": true
+   },
+   "how": "Reads where each value stands and checks the value that belongs to this name (by its section, column or line) is the expected one."
+  },
+  {
+   "check_id": "PHOTO-28/studio-launch/H082",
+   "output_id": "studio-launch",
+   "rule_id": "R027",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "If Dana Osei is named on “Studio launch-page composition” (studio-launch.png), any class beside that name is Flow, as owner_note.txt gives.",
+   "assertion": {
+    "op": "v2_paired",
+    "anchor": [
+     "Dana Osei"
+    ],
+    "whole_line": false,
+    "kind": "\\b(?:Foundations|Flow|Core\\s+\\&\\s+Restore|Strength|Prenatal|Slow\\s+\\&\\s+Deep)\\b",
+    "value": {
+     "regex": "\\bFlow\\b"
+    },
+    "where": "beside",
+    "empty_ok": true,
+    "optional": true
+   },
+   "how": "Reads where each value stands and checks the value that belongs to this name (by its section, column or line) is the expected one."
+  },
+  {
+   "check_id": "PHOTO-28/booking-story/H074",
+   "output_id": "booking-story",
+   "rule_id": "R027",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "If Dana Osei is named on “Studio booking story” (booking-story.png), any class beside that name is Flow, as owner_note.txt gives.",
+   "assertion": {
+    "op": "v2_paired",
+    "anchor": [
+     "Dana Osei"
+    ],
+    "whole_line": false,
+    "kind": "\\b(?:Foundations|Flow|Core\\s+\\&\\s+Restore|Strength|Prenatal|Slow\\s+\\&\\s+Deep)\\b",
+    "value": {
+     "regex": "\\bFlow\\b"
+    },
+    "where": "beside",
+    "empty_ok": true,
+    "optional": true
+   },
+   "how": "Reads where each value stands and checks the value that belongs to this name (by its section, column or line) is the expected one."
+  },
+  {
+   "check_id": "PHOTO-28/studio-launch/H086",
+   "output_id": "studio-launch",
+   "rule_id": "R029",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "If Tomas Reyes is named on “Studio launch-page composition” (studio-launch.png), any class beside that name is Strength, as owner_note.txt gives.",
+   "assertion": {
+    "op": "v2_paired",
+    "anchor": [
+     "Tomas Reyes"
+    ],
+    "whole_line": false,
+    "kind": "\\b(?:Foundations|Flow|Core\\s+\\&\\s+Restore|Strength|Prenatal|Slow\\s+\\&\\s+Deep)\\b",
+    "value": {
+     "regex": "\\bStrength\\b"
+    },
+    "where": "beside",
+    "empty_ok": true,
+    "optional": true
+   },
+   "how": "Reads where each value stands and checks the value that belongs to this name (by its section, column or line) is the expected one."
+  },
+  {
+   "check_id": "PHOTO-28/booking-story/H078",
+   "output_id": "booking-story",
+   "rule_id": "R029",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "If Tomas Reyes is named on “Studio booking story” (booking-story.png), any class beside that name is Strength, as owner_note.txt gives.",
+   "assertion": {
+    "op": "v2_paired",
+    "anchor": [
+     "Tomas Reyes"
+    ],
+    "whole_line": false,
+    "kind": "\\b(?:Foundations|Flow|Core\\s+\\&\\s+Restore|Strength|Prenatal|Slow\\s+\\&\\s+Deep)\\b",
+    "value": {
+     "regex": "\\bStrength\\b"
+    },
+    "where": "beside",
+    "empty_ok": true,
+    "optional": true
+   },
+   "how": "Reads where each value stands and checks the value that belongs to this name (by its section, column or line) is the expected one."
+  },
+  {
+   "check_id": "PHOTO-28/studio-launch/H088",
+   "output_id": "studio-launch",
+   "rule_id": "R030",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "If Yuki Sato is named on “Studio launch-page composition” (studio-launch.png), any class beside that name is Prenatal, as owner_note.txt gives.",
+   "assertion": {
+    "op": "v2_paired",
+    "anchor": [
+     "Yuki Sato"
+    ],
+    "whole_line": false,
+    "kind": "\\b(?:Foundations|Flow|Core\\s+\\&\\s+Restore|Strength|Prenatal|Slow\\s+\\&\\s+Deep)\\b",
+    "value": {
+     "regex": "\\bPrenatal\\b"
+    },
+    "where": "beside",
+    "empty_ok": true,
+    "optional": true
+   },
+   "how": "Reads where each value stands and checks the value that belongs to this name (by its section, column or line) is the expected one."
+  },
+  {
+   "check_id": "PHOTO-28/booking-story/H080",
+   "output_id": "booking-story",
+   "rule_id": "R030",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "If Yuki Sato is named on “Studio booking story” (booking-story.png), any class beside that name is Prenatal, as owner_note.txt gives.",
+   "assertion": {
+    "op": "v2_paired",
+    "anchor": [
+     "Yuki Sato"
+    ],
+    "whole_line": false,
+    "kind": "\\b(?:Foundations|Flow|Core\\s+\\&\\s+Restore|Strength|Prenatal|Slow\\s+\\&\\s+Deep)\\b",
+    "value": {
+     "regex": "\\bPrenatal\\b"
+    },
+    "where": "beside",
+    "empty_ok": true,
+    "optional": true
+   },
+   "how": "Reads where each value stands and checks the value that belongs to this name (by its section, column or line) is the expected one."
+  },
+  {
+   "check_id": "PHOTO-28/studio-launch/H090",
+   "output_id": "studio-launch",
+   "rule_id": "R031",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "If Nadia Haddad is named on “Studio launch-page composition” (studio-launch.png), any class beside that name is Slow & Deep, as owner_note.txt gives.",
+   "assertion": {
+    "op": "v2_paired",
+    "anchor": [
+     "Nadia Haddad"
+    ],
+    "whole_line": false,
+    "kind": "\\b(?:Foundations|Flow|Core\\s+\\&\\s+Restore|Strength|Prenatal|Slow\\s+\\&\\s+Deep)\\b",
+    "value": {
+     "regex": "\\bSlow\\s+\\&\\s+Deep\\b"
+    },
+    "where": "beside",
+    "empty_ok": true,
+    "optional": true
+   },
+   "how": "Reads where each value stands and checks the value that belongs to this name (by its section, column or line) is the expected one."
+  },
+  {
+   "check_id": "PHOTO-28/booking-story/H082",
+   "output_id": "booking-story",
+   "rule_id": "R031",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "If Nadia Haddad is named on “Studio booking story” (booking-story.png), any class beside that name is Slow & Deep, as owner_note.txt gives.",
+   "assertion": {
+    "op": "v2_paired",
+    "anchor": [
+     "Nadia Haddad"
+    ],
+    "whole_line": false,
+    "kind": "\\b(?:Foundations|Flow|Core\\s+\\&\\s+Restore|Strength|Prenatal|Slow\\s+\\&\\s+Deep)\\b",
+    "value": {
+     "regex": "\\bSlow\\s+\\&\\s+Deep\\b"
+    },
+    "where": "beside",
+    "empty_ok": true,
+    "optional": true
+   },
+   "how": "Reads where each value stands and checks the value that belongs to this name (by its section, column or line) is the expected one."
+  },
+  {
+   "check_id": "PHOTO-28/booking-story/H002",
+   "output_id": "booking-story",
+   "rule_id": "R034",
+   "k_id": "K1_Q3",
+   "critical": false,
+   "check": "The studio wordmark and any “Verda Reformer Studio” text on “Studio booking story” (booking-story.png) are fully visible at 1080 x 1920, with no letters cut off at an edge.",
+   "assertion": {
+    "op": "v2_all_of",
+    "checks": [
+     {
+      "op": "v2_inside_all",
+      "texts": [
+       "Verda"
+      ]
+     },
+     {
+      "op": "v2_inside_all",
+      "texts": [
+       "Verda Reformer Studio"
+      ],
+      "optional": true
+     }
+    ]
+   },
+   "how": "Checks each named text lies fully inside the page or image, for each of the 2 named texts; all must pass."
   },
   {
    "check_id": "PHOTO-28/class-feed/H021",
@@ -100,6 +731,270 @@
    "how": "Reads all text and checks none of the named words or patterns appears."
   },
   {
+   "check_id": "PHOTO-28/studio-launch/H024",
+   "output_id": "studio-launch",
+   "rule_id": "R050",
+   "k_id": "K2_Q1",
+   "critical": false,
+   "check": "If verda_instructor_01.jpg appears on “Studio launch-page composition” (studio-launch.png), any name beside it is Priya Anand, per roster_2027.csv.",
+   "assertion": {
+    "op": "v2_names_by_photo",
+    "photo": "verda_instructor_01.jpg",
+    "names": [
+     "Priya Anand",
+     "Dana Osei",
+     "Lena Brandt",
+     "Tomas Reyes",
+     "Yuki Sato",
+     "Nadia Haddad"
+    ],
+    "expected": "Priya Anand"
+   },
+   "how": "Finds the supplied photo, then reads the names standing beside it."
+  },
+  {
+   "check_id": "PHOTO-28/studio-launch/H083",
+   "output_id": "studio-launch",
+   "rule_id": "R050",
+   "k_id": "K2_Q1",
+   "critical": false,
+   "check": "If verda_instructor_02.jpg appears on “Studio launch-page composition” (studio-launch.png), any name beside it is Dana Osei, per roster_2027.csv.",
+   "assertion": {
+    "op": "v2_names_by_photo",
+    "photo": "verda_instructor_02.jpg",
+    "names": [
+     "Priya Anand",
+     "Dana Osei",
+     "Lena Brandt",
+     "Tomas Reyes",
+     "Yuki Sato",
+     "Nadia Haddad"
+    ],
+    "expected": "Dana Osei"
+   },
+   "how": "Finds the supplied photo, then reads the names standing beside it."
+  },
+  {
+   "check_id": "PHOTO-28/studio-launch/H085",
+   "output_id": "studio-launch",
+   "rule_id": "R050",
+   "k_id": "K2_Q1",
+   "critical": false,
+   "check": "If verda_instructor_03.jpg appears on “Studio launch-page composition” (studio-launch.png), any name beside it is Lena Brandt, per roster_2027.csv.",
+   "assertion": {
+    "op": "v2_names_by_photo",
+    "photo": "verda_instructor_03.jpg",
+    "names": [
+     "Priya Anand",
+     "Dana Osei",
+     "Lena Brandt",
+     "Tomas Reyes",
+     "Yuki Sato",
+     "Nadia Haddad"
+    ],
+    "expected": "Lena Brandt"
+   },
+   "how": "Finds the supplied photo, then reads the names standing beside it."
+  },
+  {
+   "check_id": "PHOTO-28/studio-launch/H087",
+   "output_id": "studio-launch",
+   "rule_id": "R050",
+   "k_id": "K2_Q1",
+   "critical": false,
+   "check": "If verda_instructor_04.jpg appears on “Studio launch-page composition” (studio-launch.png), any name beside it is Tomas Reyes, per roster_2027.csv.",
+   "assertion": {
+    "op": "v2_names_by_photo",
+    "photo": "verda_instructor_04.jpg",
+    "names": [
+     "Priya Anand",
+     "Dana Osei",
+     "Lena Brandt",
+     "Tomas Reyes",
+     "Yuki Sato",
+     "Nadia Haddad"
+    ],
+    "expected": "Tomas Reyes"
+   },
+   "how": "Finds the supplied photo, then reads the names standing beside it."
+  },
+  {
+   "check_id": "PHOTO-28/studio-launch/H089",
+   "output_id": "studio-launch",
+   "rule_id": "R050",
+   "k_id": "K2_Q1",
+   "critical": false,
+   "check": "If verda_instructor_05.jpg appears on “Studio launch-page composition” (studio-launch.png), any name beside it is Yuki Sato, per roster_2027.csv.",
+   "assertion": {
+    "op": "v2_names_by_photo",
+    "photo": "verda_instructor_05.jpg",
+    "names": [
+     "Priya Anand",
+     "Dana Osei",
+     "Lena Brandt",
+     "Tomas Reyes",
+     "Yuki Sato",
+     "Nadia Haddad"
+    ],
+    "expected": "Yuki Sato"
+   },
+   "how": "Finds the supplied photo, then reads the names standing beside it."
+  },
+  {
+   "check_id": "PHOTO-28/studio-launch/H091",
+   "output_id": "studio-launch",
+   "rule_id": "R050",
+   "k_id": "K2_Q1",
+   "critical": false,
+   "check": "If verda_instructor_06.jpg appears on “Studio launch-page composition” (studio-launch.png), any name beside it is Nadia Haddad, per roster_2027.csv.",
+   "assertion": {
+    "op": "v2_names_by_photo",
+    "photo": "verda_instructor_06.jpg",
+    "names": [
+     "Priya Anand",
+     "Dana Osei",
+     "Lena Brandt",
+     "Tomas Reyes",
+     "Yuki Sato",
+     "Nadia Haddad"
+    ],
+    "expected": "Nadia Haddad"
+   },
+   "how": "Finds the supplied photo, then reads the names standing beside it."
+  },
+  {
+   "check_id": "PHOTO-28/booking-story/H023",
+   "output_id": "booking-story",
+   "rule_id": "R050",
+   "k_id": "K2_Q1",
+   "critical": false,
+   "check": "If verda_instructor_01.jpg appears on “Studio booking story” (booking-story.png), any name beside it is Priya Anand, per roster_2027.csv.",
+   "assertion": {
+    "op": "v2_names_by_photo",
+    "photo": "verda_instructor_01.jpg",
+    "names": [
+     "Priya Anand",
+     "Dana Osei",
+     "Lena Brandt",
+     "Tomas Reyes",
+     "Yuki Sato",
+     "Nadia Haddad"
+    ],
+    "expected": "Priya Anand"
+   },
+   "how": "Finds the supplied photo, then reads the names standing beside it."
+  },
+  {
+   "check_id": "PHOTO-28/booking-story/H075",
+   "output_id": "booking-story",
+   "rule_id": "R050",
+   "k_id": "K2_Q1",
+   "critical": false,
+   "check": "If verda_instructor_02.jpg appears on “Studio booking story” (booking-story.png), any name beside it is Dana Osei, per roster_2027.csv.",
+   "assertion": {
+    "op": "v2_names_by_photo",
+    "photo": "verda_instructor_02.jpg",
+    "names": [
+     "Priya Anand",
+     "Dana Osei",
+     "Lena Brandt",
+     "Tomas Reyes",
+     "Yuki Sato",
+     "Nadia Haddad"
+    ],
+    "expected": "Dana Osei"
+   },
+   "how": "Finds the supplied photo, then reads the names standing beside it."
+  },
+  {
+   "check_id": "PHOTO-28/booking-story/H077",
+   "output_id": "booking-story",
+   "rule_id": "R050",
+   "k_id": "K2_Q1",
+   "critical": false,
+   "check": "If verda_instructor_03.jpg appears on “Studio booking story” (booking-story.png), any name beside it is Lena Brandt, per roster_2027.csv.",
+   "assertion": {
+    "op": "v2_names_by_photo",
+    "photo": "verda_instructor_03.jpg",
+    "names": [
+     "Priya Anand",
+     "Dana Osei",
+     "Lena Brandt",
+     "Tomas Reyes",
+     "Yuki Sato",
+     "Nadia Haddad"
+    ],
+    "expected": "Lena Brandt"
+   },
+   "how": "Finds the supplied photo, then reads the names standing beside it."
+  },
+  {
+   "check_id": "PHOTO-28/booking-story/H079",
+   "output_id": "booking-story",
+   "rule_id": "R050",
+   "k_id": "K2_Q1",
+   "critical": false,
+   "check": "If verda_instructor_04.jpg appears on “Studio booking story” (booking-story.png), any name beside it is Tomas Reyes, per roster_2027.csv.",
+   "assertion": {
+    "op": "v2_names_by_photo",
+    "photo": "verda_instructor_04.jpg",
+    "names": [
+     "Priya Anand",
+     "Dana Osei",
+     "Lena Brandt",
+     "Tomas Reyes",
+     "Yuki Sato",
+     "Nadia Haddad"
+    ],
+    "expected": "Tomas Reyes"
+   },
+   "how": "Finds the supplied photo, then reads the names standing beside it."
+  },
+  {
+   "check_id": "PHOTO-28/booking-story/H081",
+   "output_id": "booking-story",
+   "rule_id": "R050",
+   "k_id": "K2_Q1",
+   "critical": false,
+   "check": "If verda_instructor_05.jpg appears on “Studio booking story” (booking-story.png), any name beside it is Yuki Sato, per roster_2027.csv.",
+   "assertion": {
+    "op": "v2_names_by_photo",
+    "photo": "verda_instructor_05.jpg",
+    "names": [
+     "Priya Anand",
+     "Dana Osei",
+     "Lena Brandt",
+     "Tomas Reyes",
+     "Yuki Sato",
+     "Nadia Haddad"
+    ],
+    "expected": "Yuki Sato"
+   },
+   "how": "Finds the supplied photo, then reads the names standing beside it."
+  },
+  {
+   "check_id": "PHOTO-28/booking-story/H083",
+   "output_id": "booking-story",
+   "rule_id": "R050",
+   "k_id": "K2_Q1",
+   "critical": false,
+   "check": "If verda_instructor_06.jpg appears on “Studio booking story” (booking-story.png), any name beside it is Nadia Haddad, per roster_2027.csv.",
+   "assertion": {
+    "op": "v2_names_by_photo",
+    "photo": "verda_instructor_06.jpg",
+    "names": [
+     "Priya Anand",
+     "Dana Osei",
+     "Lena Brandt",
+     "Tomas Reyes",
+     "Yuki Sato",
+     "Nadia Haddad"
+    ],
+    "expected": "Nadia Haddad"
+   },
+   "how": "Finds the supplied photo, then reads the names standing beside it."
+  },
+  {
    "check_id": "PHOTO-28/studio-launch/H026",
    "output_id": "studio-launch",
    "rule_id": "R057",
@@ -149,6 +1044,48 @@
     "optional": false
    },
    "how": "Searches the deliverable for the supplied file (feature matching, confirmed by correlation), then checks it keeps its own proportions."
+  },
+  {
+   "check_id": "PHOTO-28/studio-launch/H030",
+   "output_id": "studio-launch",
+   "rule_id": "R090",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The studio wordmark on “Studio launch-page composition” (studio-launch.png) sits on one line, never stacked onto two.",
+   "assertion": {
+    "op": "v2_line_count",
+    "text": "Verda",
+    "max_lines": 1
+   },
+   "how": "Counts the lines the named text runs over."
+  },
+  {
+   "check_id": "PHOTO-28/class-feed/H031",
+   "output_id": "class-feed",
+   "rule_id": "R090",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The studio wordmark on “Class announcement” (class-feed.png) sits on one line, never stacked onto two.",
+   "assertion": {
+    "op": "v2_line_count",
+    "text": "Verda",
+    "max_lines": 1
+   },
+   "how": "Counts the lines the named text runs over."
+  },
+  {
+   "check_id": "PHOTO-28/booking-story/H028",
+   "output_id": "booking-story",
+   "rule_id": "R090",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The studio wordmark on “Studio booking story” (booking-story.png) sits on one line, never stacked onto two.",
+   "assertion": {
+    "op": "v2_line_count",
+    "text": "Verda",
+    "max_lines": 1
+   },
+   "how": "Counts the lines the named text runs over."
   }
  ]
 }

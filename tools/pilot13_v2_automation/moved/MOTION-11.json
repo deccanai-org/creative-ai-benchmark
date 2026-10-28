@@ -167,6 +167,66 @@
    "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
   },
   {
+   "check_id": "MOTION-11/thumbnail-we-broke-the-map/H032",
+   "output_id": "thumbnail-we-broke-the-map",
+   "rule_id": "R018",
+   "k_id": "K1_Q2",
+   "critical": false,
+   "check": "No letter of the title on “Channel thumbnail - WE BROKE THE MAP” (thumbnail-we-broke-the-map.png) is cut off at the frame edge.",
+   "assertion": {
+    "op": "v2_text_inside",
+    "texts": [
+     "WE BROKE THE MAP"
+    ]
+   },
+   "how": "Checks the named text is read in full inside the page or image (for a mark, its letters read as a line of their own)."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-kitchen-gone/H031",
+   "output_id": "thumbnail-kitchen-gone",
+   "rule_id": "R018",
+   "k_id": "K1_Q2",
+   "critical": false,
+   "check": "No letter of the title on “Channel thumbnail - KITCHEN. GONE.” (thumbnail-kitchen-gone.png) is cut off at the frame edge.",
+   "assertion": {
+    "op": "v2_text_inside",
+    "texts": [
+     "KITCHEN. GONE."
+    ]
+   },
+   "how": "Checks the named text is read in full inside the page or image (for a mark, its letters read as a line of their own)."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-do-not-open-that-door/H032",
+   "output_id": "thumbnail-do-not-open-that-door",
+   "rule_id": "R018",
+   "k_id": "K1_Q2",
+   "critical": false,
+   "check": "No letter of the title on “Channel thumbnail - DO NOT OPEN THAT DOOR” (thumbnail-do-not-open-that-door.png) is cut off at the frame edge.",
+   "assertion": {
+    "op": "v2_text_inside",
+    "texts": [
+     "DO NOT OPEN THAT DOOR"
+    ]
+   },
+   "how": "Checks the named text is read in full inside the page or image (for a mark, its letters read as a line of their own)."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas/H030",
+   "output_id": "thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas",
+   "rule_id": "R018",
+   "k_id": "K1_Q2",
+   "critical": false,
+   "check": "No letter of the title on “Channel thumbnail - WE SPENT SIX HOURS BUILDING A BRIDGE AND THEN DROVE STRAIGHT PAST IT” (thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas.png) is cut off at the frame edge.",
+   "assertion": {
+    "op": "v2_text_inside",
+    "texts": [
+     "WE SPENT SIX HOURS BUILDING A BRIDGE AND THEN DROVE STRAIGHT PAST IT"
+    ]
+   },
+   "how": "Checks the named text is read in full inside the page or image (for a mark, its letters read as a line of their own)."
+  },
+  {
    "check_id": "MOTION-11/thumbnail-everyone-off-the-platform/H001",
    "output_id": "thumbnail-everyone-off-the-platform",
    "rule_id": "R019",
@@ -210,6 +270,126 @@
     ]
    },
    "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-we-broke-the-map/H007",
+   "output_id": "thumbnail-we-broke-the-map",
+   "rule_id": "R033",
+   "k_id": "K2_Q1",
+   "critical": false,
+   "check": "“Channel thumbnail - WE BROKE THE MAP” (thumbnail-we-broke-the-map.png) is built on a frame from staticfox_captures/staticfox_capture_01.mp4, the capture for upload title 1.",
+   "assertion": {
+    "op": "v2_from_capture",
+    "capture": "staticfox_captures/staticfox_capture_01.mp4",
+    "others": [
+     "staticfox_captures/staticfox_capture_02.mp4",
+     "staticfox_captures/staticfox_capture_03.mp4",
+     "staticfox_captures/staticfox_capture_04.mp4",
+     "staticfox_captures/staticfox_capture_05.mp4",
+     "staticfox_captures/staticfox_capture_06.mp4"
+    ]
+   },
+   "how": "Searches the thumbnail for frames of each capture video."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-everyone-off-the-platform/H006",
+   "output_id": "thumbnail-everyone-off-the-platform",
+   "rule_id": "R033",
+   "k_id": "K2_Q1",
+   "critical": false,
+   "check": "“Channel thumbnail - EVERYONE OFF THE PLATFORM” (thumbnail-everyone-off-the-platform.png) is built on a frame from staticfox_captures/staticfox_capture_02.mp4, the capture for upload title 2.",
+   "assertion": {
+    "op": "v2_from_capture",
+    "capture": "staticfox_captures/staticfox_capture_02.mp4",
+    "others": [
+     "staticfox_captures/staticfox_capture_01.mp4",
+     "staticfox_captures/staticfox_capture_03.mp4",
+     "staticfox_captures/staticfox_capture_04.mp4",
+     "staticfox_captures/staticfox_capture_05.mp4",
+     "staticfox_captures/staticfox_capture_06.mp4"
+    ]
+   },
+   "how": "Searches the thumbnail for frames of each capture video."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-kitchen-gone/H004",
+   "output_id": "thumbnail-kitchen-gone",
+   "rule_id": "R033",
+   "k_id": "K2_Q1",
+   "critical": false,
+   "check": "“Channel thumbnail - KITCHEN. GONE.” (thumbnail-kitchen-gone.png) is built on a frame from staticfox_captures/staticfox_capture_03.mp4, the capture for upload title 3.",
+   "assertion": {
+    "op": "v2_from_capture",
+    "capture": "staticfox_captures/staticfox_capture_03.mp4",
+    "others": [
+     "staticfox_captures/staticfox_capture_01.mp4",
+     "staticfox_captures/staticfox_capture_02.mp4",
+     "staticfox_captures/staticfox_capture_04.mp4",
+     "staticfox_captures/staticfox_capture_05.mp4",
+     "staticfox_captures/staticfox_capture_06.mp4"
+    ]
+   },
+   "how": "Searches the thumbnail for frames of each capture video."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-do-not-open-that-door/H005",
+   "output_id": "thumbnail-do-not-open-that-door",
+   "rule_id": "R033",
+   "k_id": "K2_Q1",
+   "critical": false,
+   "check": "“Channel thumbnail - DO NOT OPEN THAT DOOR” (thumbnail-do-not-open-that-door.png) is built on a frame from staticfox_captures/staticfox_capture_04.mp4, the capture for upload title 4.",
+   "assertion": {
+    "op": "v2_from_capture",
+    "capture": "staticfox_captures/staticfox_capture_04.mp4",
+    "others": [
+     "staticfox_captures/staticfox_capture_01.mp4",
+     "staticfox_captures/staticfox_capture_02.mp4",
+     "staticfox_captures/staticfox_capture_03.mp4",
+     "staticfox_captures/staticfox_capture_05.mp4",
+     "staticfox_captures/staticfox_capture_06.mp4"
+    ]
+   },
+   "how": "Searches the thumbnail for frames of each capture video."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas/H004",
+   "output_id": "thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas",
+   "rule_id": "R033",
+   "k_id": "K2_Q1",
+   "critical": false,
+   "check": "“Channel thumbnail - WE SPENT SIX HOURS BUILDING A BRIDGE AND THEN DROVE STRAIGHT PAST IT” (thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas.png) is built on a frame from staticfox_captures/staticfox_capture_05.mp4, the capture for upload title 5.",
+   "assertion": {
+    "op": "v2_from_capture",
+    "capture": "staticfox_captures/staticfox_capture_05.mp4",
+    "others": [
+     "staticfox_captures/staticfox_capture_01.mp4",
+     "staticfox_captures/staticfox_capture_02.mp4",
+     "staticfox_captures/staticfox_capture_03.mp4",
+     "staticfox_captures/staticfox_capture_04.mp4",
+     "staticfox_captures/staticfox_capture_06.mp4"
+    ]
+   },
+   "how": "Searches the thumbnail for frames of each capture video."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi/H004",
+   "output_id": "thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi",
+   "rule_id": "R033",
+   "k_id": "K2_Q1",
+   "critical": false,
+   "check": "“Channel thumbnail - I GAVE MY TEAM ONE SIMPLE JOB AND THEY SET THE ENTIRE BASE ON FIRE” (thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi.png) is built on a frame from staticfox_captures/staticfox_capture_06.mp4, the capture for upload title 6.",
+   "assertion": {
+    "op": "v2_from_capture",
+    "capture": "staticfox_captures/staticfox_capture_06.mp4",
+    "others": [
+     "staticfox_captures/staticfox_capture_01.mp4",
+     "staticfox_captures/staticfox_capture_02.mp4",
+     "staticfox_captures/staticfox_capture_03.mp4",
+     "staticfox_captures/staticfox_capture_04.mp4",
+     "staticfox_captures/staticfox_capture_05.mp4"
+    ]
+   },
+   "how": "Searches the thumbnail for frames of each capture video."
   },
   {
    "check_id": "MOTION-11/channel-animation/H010",
@@ -305,6 +485,19 @@
     "text": "DO NOT OPEN THAT DOOR"
    },
    "how": "Compares text sizes (font size in PDFs, letter height on images)."
+  },
+  {
+   "check_id": "MOTION-11/channel-animation/H009",
+   "output_id": "channel-animation",
+   "rule_id": "R119",
+   "k_id": "K5_Q1",
+   "critical": false,
+   "check": "On the held end card of “Animated channel title and end card” (channel-animation.mp4), the largest text is the channel name “STATIC FOX”.",
+   "assertion": {
+    "op": "v2_largest_last_frame",
+    "text": "STATIC FOX"
+   },
+   "how": "Reads the held last frame of the video and compares text sizes."
   }
  ]
 }

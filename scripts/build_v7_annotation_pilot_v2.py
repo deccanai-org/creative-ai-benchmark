@@ -523,8 +523,9 @@ V2_CSS = """
 .k-code>summary{cursor:pointer;padding:8px 10px;font-size:13.5px;color:#24453a;font-weight:600}
 .k-code>summary span{font-weight:400;color:#3f4b45}.k-code>.rule{margin:8px 10px 10px;background:#fff}
 .rule-code{font-size:13px;color:#24453a;background:#eef4f0;border-radius:5px;padding:6px 9px;margin:6px 0}
-.b-code{background:#24453a;color:#fff}.ans.code{color:#24453a;font-weight:600}.ans.code small{display:block;font-weight:400;color:#5b6760}
+.b-code{background:#24453a;color:#fff}.ans.code{color:#24453a;font-weight:600}.ans.code small{display:block;font-weight:400;color:#5b6760;white-space:normal;overflow-wrap:anywhere;max-width:44ch}
 .ans.code.fail{color:#8a2a1c}.ans.code.person{color:#6b4a00}
+.rule mark,.rule strong,.example{overflow-wrap:anywhere}
 .howto{border:1px solid #cfe0d6;background:#f6faf7;border-radius:8px;padding:14px 18px;margin:16px 0 8px;max-width:118ch}
 .howto>h2{font-size:17px;margin:0 0 8px}.howto ol{margin:0 0 6px;padding-left:20px}.howto li{margin:0 0 5px}
 .example{border-top:1px solid #dce3df;padding-top:10px;margin-top:10px;font-size:14px}

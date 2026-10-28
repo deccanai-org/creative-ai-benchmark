@@ -145,8 +145,10 @@
     "2": "name"
    },
    "shared_reference": null,
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Finds which supplied photo is shown, then checks the text for that person: reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-28/class-feed/H001",
@@ -335,8 +337,10 @@
     ],
     "note": "Brief, pinned: identified accurately, by the full name the roster gives for that portrait. owner_note.txt lists the six names the studio uses with clients."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Finds which supplied photo is shown, then checks the text for that person: reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-28/class-feed/H010",
@@ -608,8 +612,10 @@
     "assets": [],
     "note": "Brand identity, about: \"Marit and Dana have run a single studio for four years and are now opening a second on Calloway Row.\" No supplied file names a street number, city or postcode."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads all text and checks none of the named words or patterns appears, for each of the 2 named texts; all must pass."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-28/class-feed/H020",
@@ -832,8 +838,10 @@
     ],
     "note": "owner_note.txt: \"Our six instructors and what they teach (the names we actually use with clients):\" It lists six full names, spelled as in roster_2027.csv. Brief, pinned for the class announcement: identified by full name."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the text and checks every name that appears is given in full."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-28/studio-launch/H013",
@@ -916,8 +924,10 @@
     ],
     "note": "owner_note.txt: \"Our six instructors and what they teach (the names we actually use with clients):\" It lists each instructor with the class they teach; roster_2027.csv, field class_code, agrees once the codes are mapped."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads where each value stands and checks the value that belongs to this name (by its section, column or line) is the expected one."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-28/studio-launch/H014",
@@ -1606,8 +1616,10 @@
     ],
     "note": "roster_2027.csv price column, read with owner_note.txt class names."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads where each value stands and checks the value that belongs to this name (by its section, column or line) is the expected one."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-28/booking-story/H068",
@@ -1672,8 +1684,10 @@
     ],
     "note": "roster_2027.csv price column, read with owner_note.txt class names."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads where each value stands and checks the value that belongs to this name (by its section, column or line) is the expected one."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-28/booking-story/H069",
@@ -1854,8 +1868,10 @@
     ],
     "note": "owner_note.txt: Dana Osei -- Flow. roster_2027.csv class_code agrees once the codes are mapped."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads where each value stands and checks the value that belongs to this name (by its section, column or line) is the expected one."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-28/studio-launch/H082",
@@ -2030,8 +2046,10 @@
     ],
     "note": "owner_note.txt: Tomas Reyes -- Strength. roster_2027.csv class_code agrees once the codes are mapped."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads where each value stands and checks the value that belongs to this name (by its section, column or line) is the expected one."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-28/studio-launch/H086",
@@ -2118,8 +2136,10 @@
     ],
     "note": "owner_note.txt: Yuki Sato -- Prenatal. roster_2027.csv class_code agrees once the codes are mapped."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads where each value stands and checks the value that belongs to this name (by its section, column or line) is the expected one."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-28/studio-launch/H088",
@@ -2206,8 +2226,10 @@
     ],
     "note": "owner_note.txt: Nadia Haddad -- Slow & Deep. roster_2027.csv class_code agrees once the codes are mapped."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads where each value stands and checks the value that belongs to this name (by its section, column or line) is the expected one."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-28/studio-launch/H090",
@@ -2381,8 +2403,10 @@
     "assets": [],
     "note": "Brief: the studio identity is readable. Acceptance: at the delivered dimensions, the studio identity text has no clipped characters."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Checks each named text lies fully inside the page or image, for each of the 2 named texts; all must pass."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-28/booking-story/H002",
@@ -3788,8 +3812,10 @@
     "2": "name"
    },
    "shared_reference": null,
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Finds the supplied photo, then reads the names standing beside it."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-28/studio-launch/H024",
@@ -7380,8 +7406,10 @@
     "assets": [],
     "note": "Brand type system rule: Never stack the wordmark onto two lines."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Counts the lines the named text runs over."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-28/studio-launch/H030",

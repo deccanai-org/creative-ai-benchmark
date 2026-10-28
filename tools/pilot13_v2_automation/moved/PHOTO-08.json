@@ -661,6 +661,144 @@
    "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
   },
   {
+   "check_id": "PHOTO-08/vehicle-card-r002/H015",
+   "output_id": "vehicle-card-r002",
+   "rule_id": "R008",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The enquiry action on “Vehicle sales card - M3082” (vehicle-card-r002.png) names stock number “M3082”.",
+   "assertion": {
+    "op": "v2_paired",
+    "anchor": [
+     {
+      "regex": "\\b(?:enquir|inquir)\\w*"
+     }
+    ],
+    "whole_line": false,
+    "kind": "M3082",
+    "value": {
+     "regex": "M3082"
+    },
+    "where": "beside"
+   },
+   "how": "Reads where each value stands and checks the value that belongs to this name (by its section, column or line) is the expected one."
+  },
+  {
+   "check_id": "PHOTO-08/vehicle-card-r003/H013",
+   "output_id": "vehicle-card-r003",
+   "rule_id": "R008",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The enquiry action on “Vehicle sales card - M3091” (vehicle-card-r003.png) names stock number “M3091”.",
+   "assertion": {
+    "op": "v2_paired",
+    "anchor": [
+     {
+      "regex": "\\b(?:enquir|inquir)\\w*"
+     }
+    ],
+    "whole_line": false,
+    "kind": "M3091",
+    "value": {
+     "regex": "M3091"
+    },
+    "where": "beside"
+   },
+   "how": "Reads where each value stands and checks the value that belongs to this name (by its section, column or line) is the expected one."
+  },
+  {
+   "check_id": "PHOTO-08/vehicle-card-r004/H012",
+   "output_id": "vehicle-card-r004",
+   "rule_id": "R008",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The enquiry action on “Vehicle sales card - M2417” (vehicle-card-r004.png) names stock number “M2417”.",
+   "assertion": {
+    "op": "v2_paired",
+    "anchor": [
+     {
+      "regex": "\\b(?:enquir|inquir)\\w*"
+     }
+    ],
+    "whole_line": false,
+    "kind": "M2417",
+    "value": {
+     "regex": "M2417"
+    },
+    "where": "beside"
+   },
+   "how": "Reads where each value stands and checks the value that belongs to this name (by its section, column or line) is the expected one."
+  },
+  {
+   "check_id": "PHOTO-08/vehicle-card-r005/H012",
+   "output_id": "vehicle-card-r005",
+   "rule_id": "R008",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The enquiry action on “Vehicle sales card - M3105” (vehicle-card-r005.png) names stock number “M3105”.",
+   "assertion": {
+    "op": "v2_paired",
+    "anchor": [
+     {
+      "regex": "\\b(?:enquir|inquir)\\w*"
+     }
+    ],
+    "whole_line": false,
+    "kind": "M3105",
+    "value": {
+     "regex": "M3105"
+    },
+    "where": "beside"
+   },
+   "how": "Reads where each value stands and checks the value that belongs to this name (by its section, column or line) is the expected one."
+  },
+  {
+   "check_id": "PHOTO-08/vehicle-card-r006/H012",
+   "output_id": "vehicle-card-r006",
+   "rule_id": "R008",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The enquiry action on “Vehicle sales card - M2471” (vehicle-card-r006.png) names stock number “M2471”.",
+   "assertion": {
+    "op": "v2_paired",
+    "anchor": [
+     {
+      "regex": "\\b(?:enquir|inquir)\\w*"
+     }
+    ],
+    "whole_line": false,
+    "kind": "M2471",
+    "value": {
+     "regex": "M2471"
+    },
+    "where": "beside"
+   },
+   "how": "Reads where each value stands and checks the value that belongs to this name (by its section, column or line) is the expected one."
+  },
+  {
+   "check_id": "PHOTO-08/vehicle-card-r007/H012",
+   "output_id": "vehicle-card-r007",
+   "rule_id": "R008",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The enquiry action on “Vehicle sales card - M3119” (vehicle-card-r007.png) names stock number “M3119”.",
+   "assertion": {
+    "op": "v2_paired",
+    "anchor": [
+     {
+      "regex": "\\b(?:enquir|inquir)\\w*"
+     }
+    ],
+    "whole_line": false,
+    "kind": "M3119",
+    "value": {
+     "regex": "M3119"
+    },
+    "where": "beside"
+   },
+   "how": "Reads where each value stands and checks the value that belongs to this name (by its section, column or line) is the expected one."
+  },
+  {
    "check_id": "PHOTO-08/inventory-campaign/H001",
    "output_id": "inventory-campaign",
    "rule_id": "R009",
@@ -878,6 +1016,282 @@
     ]
    },
    "how": "Reads all text and checks none of the named words or patterns appears."
+  },
+  {
+   "check_id": "PHOTO-08/vehicle-card-r002/H077",
+   "output_id": "vehicle-card-r002",
+   "rule_id": "R016",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The enquiry action on “Vehicle sales card - M3082” (vehicle-card-r002.png) names Meridian Motors.",
+   "assertion": {
+    "op": "v2_paired",
+    "anchor": [
+     {
+      "regex": "\\b(?:enquir|inquir)\\w*"
+     }
+    ],
+    "whole_line": false,
+    "kind": "Meridian\\s+Motors",
+    "value": {
+     "regex": "Meridian\\s+Motors"
+    },
+    "where": "beside"
+   },
+   "how": "Reads where each value stands and checks the value that belongs to this name (by its section, column or line) is the expected one."
+  },
+  {
+   "check_id": "PHOTO-08/vehicle-card-r003/H076",
+   "output_id": "vehicle-card-r003",
+   "rule_id": "R016",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The enquiry action on “Vehicle sales card - M3091” (vehicle-card-r003.png) names Meridian Motors.",
+   "assertion": {
+    "op": "v2_paired",
+    "anchor": [
+     {
+      "regex": "\\b(?:enquir|inquir)\\w*"
+     }
+    ],
+    "whole_line": false,
+    "kind": "Meridian\\s+Motors",
+    "value": {
+     "regex": "Meridian\\s+Motors"
+    },
+    "where": "beside"
+   },
+   "how": "Reads where each value stands and checks the value that belongs to this name (by its section, column or line) is the expected one."
+  },
+  {
+   "check_id": "PHOTO-08/vehicle-card-r004/H075",
+   "output_id": "vehicle-card-r004",
+   "rule_id": "R016",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The enquiry action on “Vehicle sales card - M2417” (vehicle-card-r004.png) names Meridian Motors.",
+   "assertion": {
+    "op": "v2_paired",
+    "anchor": [
+     {
+      "regex": "\\b(?:enquir|inquir)\\w*"
+     }
+    ],
+    "whole_line": false,
+    "kind": "Meridian\\s+Motors",
+    "value": {
+     "regex": "Meridian\\s+Motors"
+    },
+    "where": "beside"
+   },
+   "how": "Reads where each value stands and checks the value that belongs to this name (by its section, column or line) is the expected one."
+  },
+  {
+   "check_id": "PHOTO-08/vehicle-card-r005/H076",
+   "output_id": "vehicle-card-r005",
+   "rule_id": "R016",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The enquiry action on “Vehicle sales card - M3105” (vehicle-card-r005.png) names Meridian Motors.",
+   "assertion": {
+    "op": "v2_paired",
+    "anchor": [
+     {
+      "regex": "\\b(?:enquir|inquir)\\w*"
+     }
+    ],
+    "whole_line": false,
+    "kind": "Meridian\\s+Motors",
+    "value": {
+     "regex": "Meridian\\s+Motors"
+    },
+    "where": "beside"
+   },
+   "how": "Reads where each value stands and checks the value that belongs to this name (by its section, column or line) is the expected one."
+  },
+  {
+   "check_id": "PHOTO-08/vehicle-card-r006/H076",
+   "output_id": "vehicle-card-r006",
+   "rule_id": "R016",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The enquiry action on “Vehicle sales card - M2471” (vehicle-card-r006.png) names Meridian Motors.",
+   "assertion": {
+    "op": "v2_paired",
+    "anchor": [
+     {
+      "regex": "\\b(?:enquir|inquir)\\w*"
+     }
+    ],
+    "whole_line": false,
+    "kind": "Meridian\\s+Motors",
+    "value": {
+     "regex": "Meridian\\s+Motors"
+    },
+    "where": "beside"
+   },
+   "how": "Reads where each value stands and checks the value that belongs to this name (by its section, column or line) is the expected one."
+  },
+  {
+   "check_id": "PHOTO-08/vehicle-card-r007/H076",
+   "output_id": "vehicle-card-r007",
+   "rule_id": "R016",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The enquiry action on “Vehicle sales card - M3119” (vehicle-card-r007.png) names Meridian Motors.",
+   "assertion": {
+    "op": "v2_paired",
+    "anchor": [
+     {
+      "regex": "\\b(?:enquir|inquir)\\w*"
+     }
+    ],
+    "whole_line": false,
+    "kind": "Meridian\\s+Motors",
+    "value": {
+     "regex": "Meridian\\s+Motors"
+    },
+    "where": "beside"
+   },
+   "how": "Reads where each value stands and checks the value that belongs to this name (by its section, column or line) is the expected one."
+  },
+  {
+   "check_id": "PHOTO-08/vehicle-card-r002/H082",
+   "output_id": "vehicle-card-r002",
+   "rule_id": "R017",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The enquiry action on “Vehicle sales card - M3082” (vehicle-card-r002.png) names Portland, Maine.",
+   "assertion": {
+    "op": "v2_paired",
+    "anchor": [
+     {
+      "regex": "\\b(?:enquir|inquir)\\w*"
+     }
+    ],
+    "whole_line": false,
+    "kind": "Portland,?\\s+Maine",
+    "value": {
+     "regex": "Portland,?\\s+Maine"
+    },
+    "where": "beside"
+   },
+   "how": "Reads where each value stands and checks the value that belongs to this name (by its section, column or line) is the expected one."
+  },
+  {
+   "check_id": "PHOTO-08/vehicle-card-r003/H081",
+   "output_id": "vehicle-card-r003",
+   "rule_id": "R017",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The enquiry action on “Vehicle sales card - M3091” (vehicle-card-r003.png) names Portland, Maine.",
+   "assertion": {
+    "op": "v2_paired",
+    "anchor": [
+     {
+      "regex": "\\b(?:enquir|inquir)\\w*"
+     }
+    ],
+    "whole_line": false,
+    "kind": "Portland,?\\s+Maine",
+    "value": {
+     "regex": "Portland,?\\s+Maine"
+    },
+    "where": "beside"
+   },
+   "how": "Reads where each value stands and checks the value that belongs to this name (by its section, column or line) is the expected one."
+  },
+  {
+   "check_id": "PHOTO-08/vehicle-card-r004/H080",
+   "output_id": "vehicle-card-r004",
+   "rule_id": "R017",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The enquiry action on “Vehicle sales card - M2417” (vehicle-card-r004.png) names Portland, Maine.",
+   "assertion": {
+    "op": "v2_paired",
+    "anchor": [
+     {
+      "regex": "\\b(?:enquir|inquir)\\w*"
+     }
+    ],
+    "whole_line": false,
+    "kind": "Portland,?\\s+Maine",
+    "value": {
+     "regex": "Portland,?\\s+Maine"
+    },
+    "where": "beside"
+   },
+   "how": "Reads where each value stands and checks the value that belongs to this name (by its section, column or line) is the expected one."
+  },
+  {
+   "check_id": "PHOTO-08/vehicle-card-r005/H081",
+   "output_id": "vehicle-card-r005",
+   "rule_id": "R017",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The enquiry action on “Vehicle sales card - M3105” (vehicle-card-r005.png) names Portland, Maine.",
+   "assertion": {
+    "op": "v2_paired",
+    "anchor": [
+     {
+      "regex": "\\b(?:enquir|inquir)\\w*"
+     }
+    ],
+    "whole_line": false,
+    "kind": "Portland,?\\s+Maine",
+    "value": {
+     "regex": "Portland,?\\s+Maine"
+    },
+    "where": "beside"
+   },
+   "how": "Reads where each value stands and checks the value that belongs to this name (by its section, column or line) is the expected one."
+  },
+  {
+   "check_id": "PHOTO-08/vehicle-card-r006/H081",
+   "output_id": "vehicle-card-r006",
+   "rule_id": "R017",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The enquiry action on “Vehicle sales card - M2471” (vehicle-card-r006.png) names Portland, Maine.",
+   "assertion": {
+    "op": "v2_paired",
+    "anchor": [
+     {
+      "regex": "\\b(?:enquir|inquir)\\w*"
+     }
+    ],
+    "whole_line": false,
+    "kind": "Portland,?\\s+Maine",
+    "value": {
+     "regex": "Portland,?\\s+Maine"
+    },
+    "where": "beside"
+   },
+   "how": "Reads where each value stands and checks the value that belongs to this name (by its section, column or line) is the expected one."
+  },
+  {
+   "check_id": "PHOTO-08/vehicle-card-r007/H081",
+   "output_id": "vehicle-card-r007",
+   "rule_id": "R017",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "The enquiry action on “Vehicle sales card - M3119” (vehicle-card-r007.png) names Portland, Maine.",
+   "assertion": {
+    "op": "v2_paired",
+    "anchor": [
+     {
+      "regex": "\\b(?:enquir|inquir)\\w*"
+     }
+    ],
+    "whole_line": false,
+    "kind": "Portland,?\\s+Maine",
+    "value": {
+     "regex": "Portland,?\\s+Maine"
+    },
+    "where": "beside"
+   },
+   "how": "Reads where each value stands and checks the value that belongs to this name (by its section, column or line) is the expected one."
   },
   {
    "check_id": "PHOTO-08/vehicle-card-r002/H016",
@@ -1404,6 +1818,104 @@
    "how": "Searches the deliverable for the supplied file (feature matching, confirmed by correlation), then checks it keeps its own proportions."
   },
   {
+   "check_id": "PHOTO-08/vehicle-card-r002/H081",
+   "output_id": "vehicle-card-r002",
+   "rule_id": "R075",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "If a compass roundel sits on Meridian Navy on “Vehicle sales card - M3082” (vehicle-card-r002.png), it is meridian_roundel_reversed.svg or meridian_roundel_reversed.png.",
+   "assertion": {
+    "op": "v2_ground_mark",
+    "asset": "meridian_roundel.png",
+    "ground": "#1F2A3A"
+   },
+   "how": "Finds the mark, reads the ground around it, and checks its ink on that ground."
+  },
+  {
+   "check_id": "PHOTO-08/vehicle-card-r003/H080",
+   "output_id": "vehicle-card-r003",
+   "rule_id": "R075",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "If a compass roundel sits on Meridian Navy on “Vehicle sales card - M3091” (vehicle-card-r003.png), it is meridian_roundel_reversed.svg or meridian_roundel_reversed.png.",
+   "assertion": {
+    "op": "v2_ground_mark",
+    "asset": "meridian_roundel.png",
+    "ground": "#1F2A3A"
+   },
+   "how": "Finds the mark, reads the ground around it, and checks its ink on that ground."
+  },
+  {
+   "check_id": "PHOTO-08/vehicle-card-r004/H079",
+   "output_id": "vehicle-card-r004",
+   "rule_id": "R075",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "If a compass roundel sits on Meridian Navy on “Vehicle sales card - M2417” (vehicle-card-r004.png), it is meridian_roundel_reversed.svg or meridian_roundel_reversed.png.",
+   "assertion": {
+    "op": "v2_ground_mark",
+    "asset": "meridian_roundel.png",
+    "ground": "#1F2A3A"
+   },
+   "how": "Finds the mark, reads the ground around it, and checks its ink on that ground."
+  },
+  {
+   "check_id": "PHOTO-08/vehicle-card-r005/H080",
+   "output_id": "vehicle-card-r005",
+   "rule_id": "R075",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "If a compass roundel sits on Meridian Navy on “Vehicle sales card - M3105” (vehicle-card-r005.png), it is meridian_roundel_reversed.svg or meridian_roundel_reversed.png.",
+   "assertion": {
+    "op": "v2_ground_mark",
+    "asset": "meridian_roundel.png",
+    "ground": "#1F2A3A"
+   },
+   "how": "Finds the mark, reads the ground around it, and checks its ink on that ground."
+  },
+  {
+   "check_id": "PHOTO-08/vehicle-card-r006/H080",
+   "output_id": "vehicle-card-r006",
+   "rule_id": "R075",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "If a compass roundel sits on Meridian Navy on “Vehicle sales card - M2471” (vehicle-card-r006.png), it is meridian_roundel_reversed.svg or meridian_roundel_reversed.png.",
+   "assertion": {
+    "op": "v2_ground_mark",
+    "asset": "meridian_roundel.png",
+    "ground": "#1F2A3A"
+   },
+   "how": "Finds the mark, reads the ground around it, and checks its ink on that ground."
+  },
+  {
+   "check_id": "PHOTO-08/vehicle-card-r007/H080",
+   "output_id": "vehicle-card-r007",
+   "rule_id": "R075",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "If a compass roundel sits on Meridian Navy on “Vehicle sales card - M3119” (vehicle-card-r007.png), it is meridian_roundel_reversed.svg or meridian_roundel_reversed.png.",
+   "assertion": {
+    "op": "v2_ground_mark",
+    "asset": "meridian_roundel.png",
+    "ground": "#1F2A3A"
+   },
+   "how": "Finds the mark, reads the ground around it, and checks its ink on that ground."
+  },
+  {
+   "check_id": "PHOTO-08/inventory-campaign/H129",
+   "output_id": "inventory-campaign",
+   "rule_id": "R077",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "If the compass roundel sits on Meridian Navy on “Forecourt inventory campaign” (inventory-campaign.png), it is meridian_roundel_reversed.svg or meridian_roundel_reversed.png.",
+   "assertion": {
+    "op": "v2_ground_mark",
+    "asset": "meridian_roundel.png",
+    "ground": "#1F2A3A"
+   },
+   "how": "Finds the mark, reads the ground around it, and checks its ink on that ground."
+  },
+  {
    "check_id": "PHOTO-08/vehicle-card-r002/H013",
    "output_id": "vehicle-card-r002",
    "rule_id": "R155",
@@ -1480,6 +1992,114 @@
     "text": "$29,900"
    },
    "how": "Compares text sizes (font size in PDFs, letter height on images)."
+  },
+  {
+   "check_id": "PHOTO-08/vehicle-card-r002/H059",
+   "output_id": "vehicle-card-r002",
+   "rule_id": "R158",
+   "k_id": "K5_Q2",
+   "critical": false,
+   "check": "The year, make and model line “2019 Norsted Alta” on “Vehicle sales card - M3082” (vehicle-card-r002.png) is larger than the mileage and listing detail text.",
+   "assertion": {
+    "op": "v2_relation",
+    "rel": "larger",
+    "a": "2019 Norsted Alta",
+    "b": [
+     "54,210",
+     "SE AWD"
+    ]
+   },
+   "how": "Compares the named texts' size or position."
+  },
+  {
+   "check_id": "PHOTO-08/vehicle-card-r003/H058",
+   "output_id": "vehicle-card-r003",
+   "rule_id": "R158",
+   "k_id": "K5_Q2",
+   "critical": false,
+   "check": "The year, make and model line “2018 Ardmoor Ridge” on “Vehicle sales card - M3091” (vehicle-card-r003.png) is larger than the mileage and listing detail text.",
+   "assertion": {
+    "op": "v2_relation",
+    "rel": "larger",
+    "a": "2018 Ardmoor Ridge",
+    "b": [
+     "61,840",
+     "Premium AWD"
+    ]
+   },
+   "how": "Compares the named texts' size or position."
+  },
+  {
+   "check_id": "PHOTO-08/vehicle-card-r004/H057",
+   "output_id": "vehicle-card-r004",
+   "rule_id": "R158",
+   "k_id": "K5_Q2",
+   "critical": false,
+   "check": "The year, make and model line “2017 Calder Vireo” on “Vehicle sales card - M2417” (vehicle-card-r004.png) is larger than the mileage and listing detail text.",
+   "assertion": {
+    "op": "v2_relation",
+    "rel": "larger",
+    "a": "2017 Calder Vireo",
+    "b": [
+     "68,400",
+     "SEL"
+    ]
+   },
+   "how": "Compares the named texts' size or position."
+  },
+  {
+   "check_id": "PHOTO-08/vehicle-card-r005/H058",
+   "output_id": "vehicle-card-r005",
+   "rule_id": "R158",
+   "k_id": "K5_Q2",
+   "critical": false,
+   "check": "The year, make and model line “2020 Brookmere Sable” on “Vehicle sales card - M3105” (vehicle-card-r005.png) is larger than the mileage and listing detail text.",
+   "assertion": {
+    "op": "v2_relation",
+    "rel": "larger",
+    "a": "2020 Brookmere Sable",
+    "b": [
+     "42,980",
+     "Touring"
+    ]
+   },
+   "how": "Compares the named texts' size or position."
+  },
+  {
+   "check_id": "PHOTO-08/vehicle-card-r006/H058",
+   "output_id": "vehicle-card-r006",
+   "rule_id": "R158",
+   "k_id": "K5_Q2",
+   "critical": false,
+   "check": "The year, make and model line “2017 Calder Kestrel” on “Vehicle sales card - M2471” (vehicle-card-r006.png) is larger than the mileage and listing detail text.",
+   "assertion": {
+    "op": "v2_relation",
+    "rel": "larger",
+    "a": "2017 Calder Kestrel",
+    "b": [
+     "70,120",
+     "SEL Technology Package AWD"
+    ]
+   },
+   "how": "Compares the named texts' size or position."
+  },
+  {
+   "check_id": "PHOTO-08/vehicle-card-r007/H057",
+   "output_id": "vehicle-card-r007",
+   "rule_id": "R158",
+   "k_id": "K5_Q2",
+   "critical": false,
+   "check": "The year, make and model line “2019 Norsted Fjord” on “Vehicle sales card - M3119” (vehicle-card-r007.png) is larger than the mileage and listing detail text.",
+   "assertion": {
+    "op": "v2_relation",
+    "rel": "larger",
+    "a": "2019 Norsted Fjord",
+    "b": [
+     "58,760",
+     "Adventure AWD"
+    ]
+   },
+   "how": "Compares the named texts' size or position."
   }
  ]
 }

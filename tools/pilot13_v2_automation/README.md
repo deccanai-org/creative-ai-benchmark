@@ -27,6 +27,26 @@ person. Converted checks keep their check IDs, K question and critical flag.
    dispatch the `v2_*` operations from `tools/auto_verifier/verify_outputs.py` (a person answer maps to
    `pending_expert_review`).
 
+## Round 2 (2026-10-28)
+
+Round 1 converted 913 of the 1,385 automatic checks. Round 2 builds the other 472 (140 rules), each with a handler of
+its own in `round2.py`, keyed by task and rule so round-1 conversions never change (`convert.py` reports any
+difference). Their operations are in `tools/auto_verifier/objective_ops_r2.py`, with fixtures in
+`tools/auto_verifier/test_objective_ops_r2.py`: which value belongs to which name (a rate to its house and season, a
+date to its act), the colour behind type, mark size and position against the photo, page and artwork size, letter
+spacing, figure style, which supplied photo is shown and which capture a thumbnail comes from. The made-file
+generators also write a second broken set (`bad2`, one round-2 defect per file, listed in `PLANTED2` of
+`decide_moves.py`). The same decision rule applies: a rule moves when testing gave no wrong answer and the code
+decided at least half of its rows.
+
+Result: 124 of the 140 rules (418 checks) moved; 16 rules (54 checks) stay with people because the code mostly
+answered "person" on the test files (OCR read too unclearly to rule text out, a mark absent so not provable, plate
+labels a person must judge as accession codes or not). One round-1 rule (LAYOUT-12 R060, "&nbsp;") also moved once a
+matching fix let it decide. In all: 1,167 checks (299 rules) run as code; 218 checks (50 rules) have code but stay
+with people. Tests: the 2026-09-28 outputs (1,002 rows: 751 pass, 224 person, 27 fail, every fail a confirmed defect
+listed in `KNOWN_TRUE_FAILS`) and the made files (correct set: 374 pass, 9 person, 0 fail; both broken sets: every
+planted defect failed or sent to a person, none passed, and nothing else failed).
+
 ## Outcomes and safety rules
 
 Every operation answers `pass`, `fail` or `person` (the code could not decide, so a person answers that row).
@@ -50,10 +70,12 @@ PY=~/Documents/ChatGPT/Adobe_Gpt/benchmark_v4/.venv/bin/python
 python3 convert.py
 $PY -W ignore ../auto_verifier/test_objective_ops.py
 $PY -W ignore run_checks.py --out real.json                         # 2026-09-28 outputs
+$PY -W ignore ../auto_verifier/test_objective_ops_r2.py
 $PY -W ignore make_layout12_files.py <made> && $PY -W ignore make_vector_motion_files.py <made>
 $PY -W ignore run_checks.py --run <made>/good --tasks LAYOUT-12 VECTOR-04 MOTION-11 --out good.json
 $PY -W ignore run_checks.py --run <made>/bad --tasks LAYOUT-12 VECTOR-04 MOTION-11 --out bad.json
-python3 decide_moves.py real.json good.json bad.json
+$PY -W ignore run_checks.py --run <made>/bad2 --tasks LAYOUT-12 VECTOR-04 MOTION-11 --out bad2.json
+python3 decide_moves.py real.json good.json bad.json bad2.json
 python3 ../../scripts/build_v7_annotation_pilot_v2.py && $PY build_results_page.py
 ```
 

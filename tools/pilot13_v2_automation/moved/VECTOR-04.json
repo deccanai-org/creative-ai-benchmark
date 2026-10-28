@@ -2,6 +2,162 @@
  "task_id": "VECTOR-04",
  "moved": [
   {
+   "check_id": "VECTOR-04/recovered-sticker-window-mark/H018",
+   "output_id": "recovered-sticker-window-mark",
+   "rule_id": "R016",
+   "k_id": "K1_Q2",
+   "critical": false,
+   "check": "The artwork in “Recovered sticker artwork - Window mark” (recovered-sticker-window-mark.svg) measures 55 mm on its long edge.",
+   "assertion": {
+    "op": "v2_svg_size",
+    "long_mm": 55,
+    "tol": 0.5
+   },
+   "how": "Reads the SVG's physical size and measures the drawn artwork."
+  },
+  {
+   "check_id": "VECTOR-04/recovered-sticker-bag-design-1/H014",
+   "output_id": "recovered-sticker-bag-design-1",
+   "rule_id": "R016",
+   "k_id": "K1_Q2",
+   "critical": false,
+   "check": "The artwork in “Recovered sticker artwork - Bag design 1” (recovered-sticker-bag-design-1.svg) measures 55 mm on its long edge.",
+   "assertion": {
+    "op": "v2_svg_size",
+    "long_mm": 55,
+    "tol": 0.5
+   },
+   "how": "Reads the SVG's physical size and measures the drawn artwork."
+  },
+  {
+   "check_id": "VECTOR-04/recovered-sticker-bag-design-2/H014",
+   "output_id": "recovered-sticker-bag-design-2",
+   "rule_id": "R016",
+   "k_id": "K1_Q2",
+   "critical": false,
+   "check": "The artwork in “Recovered sticker artwork - Bag design 2” (recovered-sticker-bag-design-2.svg) measures 55 mm on its long edge.",
+   "assertion": {
+    "op": "v2_svg_size",
+    "long_mm": 55,
+    "tol": 0.5
+   },
+   "how": "Reads the SVG's physical size and measures the drawn artwork."
+  },
+  {
+   "check_id": "VECTOR-04/recovered-sticker-bag-design-3/H014",
+   "output_id": "recovered-sticker-bag-design-3",
+   "rule_id": "R016",
+   "k_id": "K1_Q2",
+   "critical": false,
+   "check": "The artwork in “Recovered sticker artwork - Bag design 3” (recovered-sticker-bag-design-3.svg) measures 55 mm on its long edge.",
+   "assertion": {
+    "op": "v2_svg_size",
+    "long_mm": 55,
+    "tol": 0.5
+   },
+   "how": "Reads the SVG's physical size and measures the drawn artwork."
+  },
+  {
+   "check_id": "VECTOR-04/new-sticker-companion-1/H022",
+   "output_id": "new-sticker-companion-1",
+   "rule_id": "R016",
+   "k_id": "K1_Q2",
+   "critical": false,
+   "check": "The artwork in “Original companion sticker - Companion 1” (new-sticker-companion-1.svg) measures 55 mm on its long edge.",
+   "assertion": {
+    "op": "v2_svg_size",
+    "long_mm": 55,
+    "tol": 0.5
+   },
+   "how": "Reads the SVG's physical size and measures the drawn artwork."
+  },
+  {
+   "check_id": "VECTOR-04/new-sticker-companion-2/H022",
+   "output_id": "new-sticker-companion-2",
+   "rule_id": "R016",
+   "k_id": "K1_Q2",
+   "critical": false,
+   "check": "The artwork in “Original companion sticker - Companion 2” (new-sticker-companion-2.svg) measures 55 mm on its long edge.",
+   "assertion": {
+    "op": "v2_svg_size",
+    "long_mm": 55,
+    "tol": 0.5
+   },
+   "how": "Reads the SVG's physical size and measures the drawn artwork."
+  },
+  {
+   "check_id": "VECTOR-04/recovered-sticker-window-mark/H016",
+   "output_id": "recovered-sticker-window-mark",
+   "rule_id": "R019",
+   "k_id": "K1_Q3",
+   "critical": false,
+   "check": "“Recovered sticker artwork - Window mark” (recovered-sticker-window-mark.svg) has no cut line drawn into the artwork.",
+   "assertion": {
+    "op": "v2_svg_no_cutline"
+   },
+   "how": "Reads the SVG's layers and strokes for a cut line drawn into the artwork."
+  },
+  {
+   "check_id": "VECTOR-04/recovered-sticker-bag-design-1/H012",
+   "output_id": "recovered-sticker-bag-design-1",
+   "rule_id": "R019",
+   "k_id": "K1_Q3",
+   "critical": false,
+   "check": "“Recovered sticker artwork - Bag design 1” (recovered-sticker-bag-design-1.svg) has no cut line drawn into the artwork.",
+   "assertion": {
+    "op": "v2_svg_no_cutline"
+   },
+   "how": "Reads the SVG's layers and strokes for a cut line drawn into the artwork."
+  },
+  {
+   "check_id": "VECTOR-04/recovered-sticker-bag-design-2/H012",
+   "output_id": "recovered-sticker-bag-design-2",
+   "rule_id": "R019",
+   "k_id": "K1_Q3",
+   "critical": false,
+   "check": "“Recovered sticker artwork - Bag design 2” (recovered-sticker-bag-design-2.svg) has no cut line drawn into the artwork.",
+   "assertion": {
+    "op": "v2_svg_no_cutline"
+   },
+   "how": "Reads the SVG's layers and strokes for a cut line drawn into the artwork."
+  },
+  {
+   "check_id": "VECTOR-04/recovered-sticker-bag-design-3/H012",
+   "output_id": "recovered-sticker-bag-design-3",
+   "rule_id": "R019",
+   "k_id": "K1_Q3",
+   "critical": false,
+   "check": "“Recovered sticker artwork - Bag design 3” (recovered-sticker-bag-design-3.svg) has no cut line drawn into the artwork.",
+   "assertion": {
+    "op": "v2_svg_no_cutline"
+   },
+   "how": "Reads the SVG's layers and strokes for a cut line drawn into the artwork."
+  },
+  {
+   "check_id": "VECTOR-04/new-sticker-companion-1/H018",
+   "output_id": "new-sticker-companion-1",
+   "rule_id": "R019",
+   "k_id": "K1_Q3",
+   "critical": false,
+   "check": "“Original companion sticker - Companion 1” (new-sticker-companion-1.svg) has no cut line drawn into the artwork.",
+   "assertion": {
+    "op": "v2_svg_no_cutline"
+   },
+   "how": "Reads the SVG's layers and strokes for a cut line drawn into the artwork."
+  },
+  {
+   "check_id": "VECTOR-04/new-sticker-companion-2/H018",
+   "output_id": "new-sticker-companion-2",
+   "rule_id": "R019",
+   "k_id": "K1_Q3",
+   "critical": false,
+   "check": "“Original companion sticker - Companion 2” (new-sticker-companion-2.svg) has no cut line drawn into the artwork.",
+   "assertion": {
+    "op": "v2_svg_no_cutline"
+   },
+   "how": "Reads the SVG's layers and strokes for a cut line drawn into the artwork."
+  },
+  {
    "check_id": "VECTOR-04/new-sticker-companion-1/H017",
    "output_id": "new-sticker-companion-1",
    "rule_id": "R031",
@@ -85,6 +241,95 @@
     ]
    },
    "how": "Finds every price and checks each meets the rule."
+  },
+  {
+   "check_id": "VECTOR-04/recovered-sticker-bag-design-2/H003",
+   "output_id": "recovered-sticker-bag-design-2",
+   "rule_id": "R033",
+   "k_id": "K2_Q1",
+   "critical": false,
+   "check": "“Recovered sticker artwork - Bag design 2” (recovered-sticker-bag-design-2.svg) is built from meridian_bag_pourover.jpg, the pour-over cone, not from meridian_bag_moth.jpg or meridian_bag_ridgeline.jpg.",
+   "assertion": {
+    "op": "v2_built_from",
+    "photo": "meridian_bag_pourover.jpg",
+    "others": [
+     "meridian_bag_moth.jpg",
+     "meridian_bag_ridgeline.jpg"
+    ],
+    "grounds": [
+     "#C8A97E",
+     "#F3E7D3"
+    ]
+   },
+   "how": "Compares the drawing's silhouette with the printed motif of each supplied photo."
+  },
+  {
+   "check_id": "VECTOR-04/recovered-sticker-bag-design-3/H003",
+   "output_id": "recovered-sticker-bag-design-3",
+   "rule_id": "R034",
+   "k_id": "K2_Q1",
+   "critical": false,
+   "check": "“Recovered sticker artwork - Bag design 3” (recovered-sticker-bag-design-3.svg) is built from meridian_bag_ridgeline.jpg, the ridge line, not from meridian_bag_moth.jpg or meridian_bag_pourover.jpg.",
+   "assertion": {
+    "op": "v2_built_from",
+    "photo": "meridian_bag_ridgeline.jpg",
+    "others": [
+     "meridian_bag_moth.jpg",
+     "meridian_bag_pourover.jpg"
+    ],
+    "grounds": [
+     "#C8A97E",
+     "#F3E7D3"
+    ]
+   },
+   "how": "Compares the drawing's silhouette with the printed motif of each supplied photo."
+  },
+  {
+   "check_id": "VECTOR-04/recovered-sticker-bag-design-1/H003",
+   "output_id": "recovered-sticker-bag-design-1",
+   "rule_id": "R040",
+   "k_id": "K2_Q1",
+   "critical": false,
+   "check": "“Recovered sticker artwork - Bag design 1” (recovered-sticker-bag-design-1.svg) is built from meridian_bag_moth.jpg, the moth, not from meridian_bag_pourover.jpg or meridian_bag_ridgeline.jpg.",
+   "assertion": {
+    "op": "v2_built_from",
+    "photo": "meridian_bag_moth.jpg",
+    "others": [
+     "meridian_bag_pourover.jpg",
+     "meridian_bag_ridgeline.jpg"
+    ],
+    "grounds": [
+     "#C8A97E",
+     "#F3E7D3"
+    ]
+   },
+   "how": "Compares the drawing's silhouette with the printed motif of each supplied photo."
+  },
+  {
+   "check_id": "VECTOR-04/recovered-sticker-bag-design-3/H004",
+   "output_id": "recovered-sticker-bag-design-3",
+   "rule_id": "R043",
+   "k_id": "K2_Q2",
+   "critical": false,
+   "check": "The ridge line on “Recovered sticker artwork - Bag design 3” (recovered-sticker-bag-design-3.svg) is built from solid filled shapes and linework, not from the halftone dots printed on meridian_bag_ridgeline.jpg.",
+   "assertion": {
+    "op": "v2_no_halftone",
+    "max_dots": 40
+   },
+   "how": "Counts tiny dot shapes in the SVG."
+  },
+  {
+   "check_id": "VECTOR-04/sticker-proof-bag-design-3/H004",
+   "output_id": "sticker-proof-bag-design-3",
+   "rule_id": "R043",
+   "k_id": "K2_Q2",
+   "critical": false,
+   "check": "The ridge line on “Transparent sticker proof - Bag design 3” (sticker-proof-bag-design-3.png) is built from solid filled shapes and linework, not from the halftone dots printed on meridian_bag_ridgeline.jpg.",
+   "assertion": {
+    "op": "v2_no_halftone",
+    "max_dots": 40
+   },
+   "how": "Counts tiny dot shapes in the SVG."
   },
   {
    "check_id": "VECTOR-04/recovered-sticker-window-mark/H012",
@@ -207,6 +452,105 @@
    "how": "Reads every type, shape and line colour from the file (photos excluded)."
   },
   {
+   "check_id": "VECTOR-04/recovered-sticker-bag-design-2/H010",
+   "output_id": "recovered-sticker-bag-design-2",
+   "rule_id": "R055",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The main ink of the pour-over cone on “Recovered sticker artwork - Bag design 2” (recovered-sticker-bag-design-2.svg) is solid Ash Green #5B6B54, the ink printed on meridian_bag_pourover.jpg.",
+   "assertion": {
+    "op": "v2_main_ink",
+    "hexes": [
+     "#5B6B54"
+    ],
+    "grounds": [
+     "#C8A97E",
+     "#F3E7D3"
+    ]
+   },
+   "how": "Renders the artwork and finds the colour covering most of it, grounds left out."
+  },
+  {
+   "check_id": "VECTOR-04/recovered-sticker-bag-design-3/H010",
+   "output_id": "recovered-sticker-bag-design-3",
+   "rule_id": "R056",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The main ink of the ridge line on “Recovered sticker artwork - Bag design 3” (recovered-sticker-bag-design-3.svg) is solid Brick Red #A8442E, the ink printed on meridian_bag_ridgeline.jpg.",
+   "assertion": {
+    "op": "v2_main_ink",
+    "hexes": [
+     "#A8442E"
+    ],
+    "grounds": [
+     "#C8A97E",
+     "#F3E7D3"
+    ]
+   },
+   "how": "Renders the artwork and finds the colour covering most of it, grounds left out."
+  },
+  {
+   "check_id": "VECTOR-04/recovered-sticker-bag-design-1/H010",
+   "output_id": "recovered-sticker-bag-design-1",
+   "rule_id": "R068",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The main ink of the moth on “Recovered sticker artwork - Bag design 1” (recovered-sticker-bag-design-1.svg) is solid Roast Brown #3E2A20, the ink printed on meridian_bag_moth.jpg.",
+   "assertion": {
+    "op": "v2_main_ink",
+    "hexes": [
+     "#3E2A20"
+    ],
+    "grounds": [
+     "#C8A97E",
+     "#F3E7D3"
+    ]
+   },
+   "how": "Renders the artwork and finds the colour covering most of it, grounds left out."
+  },
+  {
+   "check_id": "VECTOR-04/new-sticker-companion-1/H006",
+   "output_id": "new-sticker-companion-1",
+   "rule_id": "R069",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The main ink of the drawing on “Original companion sticker - Companion 1” (new-sticker-companion-1.svg) is Roast Brown #3E2A20, Ash Green #5B6B54 or Brick Red #A8442E.",
+   "assertion": {
+    "op": "v2_main_ink",
+    "hexes": [
+     "#3E2A20",
+     "#5B6B54",
+     "#A8442E"
+    ],
+    "grounds": [
+     "#C8A97E",
+     "#F3E7D3"
+    ]
+   },
+   "how": "Renders the artwork and finds the colour covering most of it, grounds left out."
+  },
+  {
+   "check_id": "VECTOR-04/new-sticker-companion-2/H006",
+   "output_id": "new-sticker-companion-2",
+   "rule_id": "R069",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The main ink of the drawing on “Original companion sticker - Companion 2” (new-sticker-companion-2.svg) is Roast Brown #3E2A20, Ash Green #5B6B54 or Brick Red #A8442E.",
+   "assertion": {
+    "op": "v2_main_ink",
+    "hexes": [
+     "#3E2A20",
+     "#5B6B54",
+     "#A8442E"
+    ],
+    "grounds": [
+     "#C8A97E",
+     "#F3E7D3"
+    ]
+   },
+   "how": "Renders the artwork and finds the colour covering most of it, grounds left out."
+  },
+  {
    "check_id": "VECTOR-04/recovered-sticker-window-mark/H023",
    "output_id": "recovered-sticker-window-mark",
    "rule_id": "R079",
@@ -301,6 +645,36 @@
     "max_pct": 5.0
    },
    "how": "Renders the file without photos and measures the share of the named colours."
+  },
+  {
+   "check_id": "VECTOR-04/new-sticker-companion-1/H010",
+   "output_id": "new-sticker-companion-1",
+   "rule_id": "R090",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Any DM Serif Display ampersand on “Original companion sticker - Companion 1” (new-sticker-companion-1.svg) is 1.6 times the cap height of the capitals beside it, never at cap height.",
+   "assertion": {
+    "op": "v2_svg_glyph_ratio",
+    "glyph": "&",
+    "family": "DM Serif Display",
+    "ratio": 1.6
+   },
+   "how": "Reads the SVG's live text sizes for the glyph and the capitals beside it."
+  },
+  {
+   "check_id": "VECTOR-04/new-sticker-companion-2/H010",
+   "output_id": "new-sticker-companion-2",
+   "rule_id": "R090",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Any DM Serif Display ampersand on “Original companion sticker - Companion 2” (new-sticker-companion-2.svg) is 1.6 times the cap height of the capitals beside it, never at cap height.",
+   "assertion": {
+    "op": "v2_svg_glyph_ratio",
+    "glyph": "&",
+    "family": "DM Serif Display",
+    "ratio": 1.6
+   },
+   "how": "Reads the SVG's live text sizes for the glyph and the capitals beside it."
   }
  ]
 }

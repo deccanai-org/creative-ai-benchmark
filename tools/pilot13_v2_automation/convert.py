@@ -14,6 +14,8 @@ from collections import Counter, defaultdict
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import round2  # noqa: E402  (round 2: one handler per rule round 1 could not convert)
 TASKS = ROOT / 'docs/gatsby-v7/tasks'
 GROUPS = ROOT / 'docs/gatsby-v7/annotation-pilot-v2/groups'
 HERE = Path(__file__).resolve().parent
@@ -524,6 +526,9 @@ HOW = {
 }
 
 
+HOW.update(round2.HOW)
+
+
 def how(a) -> str:
     """How the code checks it, in plain words; a combined check names its parts."""
     if a['op'] == 'v2_contains_asset':
@@ -531,6 +536,8 @@ def how(a) -> str:
                                  ('is shown no larger than its native size', a.get('max_scale'))) if on]
         found = 'Searches the deliverable for the supplied file (feature matching, confirmed by correlation)'
         return found + (', then checks it ' + ' and '.join(tests) if tests else '') + '.'
+    if a['op'] == 'v2_pictured':
+        return HOW['v2_pictured'].rstrip('.') + ': ' + how(a['then'])[:1].lower() + how(a['then'])[1:]
     if a['op'] == 'v2_any_of':
         parts = [how(x).rstrip('.') for x in a['checks']]
         return 'Either route can answer: ' + '; or: '.join(p[:1].lower() + p[1:] for p in parts) + '. One must pass and none may fail.'
@@ -552,8 +559,11 @@ def convert(row, ctx):
 
 
 def main():
+    # --out <dir>: write moved/ and not_converted.json there instead of beside this script
+    out_root = Path(sys.argv[sys.argv.index('--out') + 1]) if '--out' in sys.argv else HERE
+    out_dir = out_root / 'moved'
     plan = [p for p in json.loads(PLAN.read_text()) if p['status'] == 'auto']
-    OUT.mkdir(exist_ok=True)
+    out_dir.mkdir(parents=True, exist_ok=True)
     summary, left = Counter(), defaultdict(list)
     for tid in TASK_IDS:
         spec = json.loads((TASKS / tid / 'TASK_SPEC.json').read_text())
@@ -562,7 +572,10 @@ def main():
         moved = []
         for p in (p for p in plan if p['task'] == tid):
             rule = ctx.rules[p['rule']]
-            assertions = [convert(row, ctx) for row in rule['rows']]
+            if (tid, p['rule']) in round2.R2:
+                assertions = [round2.convert(tid, p['rule'], row, ctx) for row in rule['rows']]
+            else:
+                assertions = [convert(row, ctx) for row in rule['rows']]
             if not all(assertions):
                 left[tid].append((p['rule'], len(rule['rows']), rule['rows'][0]['check'][:120]))
                 continue
@@ -571,13 +584,13 @@ def main():
                               'critical': rule['critical'], 'check': row['check'], 'assertion': a, 'how': how(a)})
             summary[(tid, 'rules')] += 1
             summary[(tid, 'checks')] += len(rule['rows'])
-        (OUT / f'{tid}.json').write_text(json.dumps({'task_id': tid, 'moved': moved}, ensure_ascii=False, indent=1) + '\n')
+        (out_dir / f'{tid}.json').write_text(json.dumps({'task_id': tid, 'moved': moved}, ensure_ascii=False, indent=1) + '\n')
     total_r = sum(v for (t, k), v in summary.items() if k == 'rules')
     total_c = sum(v for (t, k), v in summary.items() if k == 'checks')
     for tid in TASK_IDS:
         print(f"{tid:10s} converted {summary[(tid, 'rules')]:3d} rules / {summary[(tid, 'checks')]:4d} checks; not yet {len(left[tid])} rules")
     print(f'TOTAL converted {total_r} rules / {total_c} checks')
-    (HERE / 'not_converted.json').write_text(json.dumps(left, ensure_ascii=False, indent=1) + '\n')
+    (out_root / 'not_converted.json').write_text(json.dumps(left, ensure_ascii=False, indent=1) + '\n')
 
 
 if __name__ == '__main__':
