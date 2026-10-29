@@ -290,15 +290,10 @@ def write_index(summary: list[tuple[str, dict, list[dict]]]) -> None:
         f'{n(coded(r)):,} moved from human)</a> · '
         f'<a href="../index.html#{tid}/trajectory">Trajectory</a> · <a href="groups/{tid}.json">Rules as JSON</a></span></li>'
         for tid, s, r in summary)
-    share = tot['coded'] / tot['human'] * 100
     page = f"""<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Pilot task briefs v3</title><style>{CSS}{v2.V2_CSS}{V3_CSS}.vlinks{{font-size:14px;color:#5b6760}}.page li{{margin:0 0 12px}}</style></head><body>
 <main class="page">
 <h1>Pilot task briefs, v3: human checks now answered by code moved to Auto verifiers</h1>
-<div class="intro">
-<p>The same 13 pilot tasks, briefs and {tot["human"]:,} human checks as <a href="{V2_DIR}/index.html">v2</a> (grouped into rules) and <a href="../annotation-pilot/index.html">v1</a>. What changed: the {tot["coded"]:,} human checks ({share:.0f}%) that code now answers have moved from Human verifiers to each task's Auto verifiers page. <strong>People now answer {tot["people"]:,} human checks</strong>, in {tot["rules"]} rules.</p>
-<p>Each moved check keeps its check ID, K question and critical flag, so scoring and coverage do not change. On the Auto verifiers page every moved rule shows how the code checks it, the limits it decides by and its answer on the 2026-09-28 run; a row the code cannot decide comes back to a person. Every check answers pass, fail or person, the same file always gets the same answer, and no AI model is used. <a href="{V2_DIR}/automation.html">How each moved rule was tested</a>.</p>
-</div>
 <div class="scroll-x"><table class="summary"><thead><tr><th>Task</th><th>Name</th><th class="n">Deliverables</th><th class="n">Human checks (v2)</th><th class="n">For people now</th><th class="n">Rules for people</th><th class="n">Automatic checks</th><th class="n">Moved from human</th><th class="n">All by code</th></tr></thead>
 <tbody>{"".join(rows)}</tbody></table></div>
 <h2>How to read a rule</h2>{v2.HOW_TO_READ}
