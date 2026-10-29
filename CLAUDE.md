@@ -44,6 +44,10 @@ image ops, Express, InDesign data merge, Fonts, Stock, Acrobat, Premiere-style v
   `tools/auto_verifier/objective_ops_r3.py` + `ops_r3_*.py`, reference `OPS_REFERENCE.md`). 3,895 of the 6,312
   checks (872 rules) are now answered by code; 1,201 (313 rules) have code but stay with people; each moved rule lists
   the limits it decides by on `automation.html`. Made files gained a third broken set (`bad3`). Heavy runs go to a VM.
+- **annotation-pilot-v3 (2026-10-29)**: `docs/gatsby-v7/annotation-pilot-v3/`, built by `scripts/build_v7_annotation_pilot_v3.py`
+  on top of v2 (v1 and v2 untouched; v3 links v2's thumbnails). Human checks answered by code moved from Human verifiers
+  to a new per-task Auto verifiers page (`<ID>-auto.html`: the task's own automatic checks, then the moved rules with how
+  the code checks, limits and the 2026-09-28 answers). Rebuild after every decide_moves.py run.
 
 ## Update 2026-10-22
 
