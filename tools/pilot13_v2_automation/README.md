@@ -81,6 +81,24 @@ Tests: the 2026-09-28 outputs (3,989 rows: 2,671 pass, 1,115 person, 203 fail; e
 defects, `KNOWN_TRUE_FAILS` and `known_true_fails_r3.json`, and the 3 others are wrong answers that keep their rules
 with people) and the made files (correct set 923 pass, 181 person, 3 fail, all three on one rule that stays).
 
+## Round 4 (2026-10-29)
+
+Dhiren: "build the remaining code checks first" (a vision-model pass for the objective look-and-count checks may follow,
+only with his choice of model). Round 4 takes the remaining rules a deterministic measurement can decide: sticker and
+cut-file geometry (`round4_vector.py`), type measurements such as lining figures, dollar-sign size and rule thickness
+(`round4_type.py`), photographs against their supplied files and grain (`round4_photo.py`), and MOTION-11 video and audio
+(`round4_video.py`: a moving mascot, no repeated shots, music matched to the supplied track, captures not enlarged, stacked
+titles). `round4.py` gathers them; a round-4 handler replaces an earlier conversion of the same rule (convert.py lists the
+12 replacements). Ops: `tools/auto_verifier/objective_ops_r4.py` loads `ops_r4_*.py`. A fourth broken set (`bad4`, 37
+files, `defects4.json`, `PLANTED4`) tests them; every round-4 check was run twice and answered the same both times.
+
+Result: 54 round-4 rules (238 checks) moved, 7 stay; VECTOR-04 R074 moved once its planted shadow was recognised as a
+backing shape. In all: 4,143 of the 6,312 checks (928 rules) run as code; 1,143 checks (303 rules) have code but stay
+with people. Tests: the 2026-09-28 outputs (4,111 rows: 2,753 pass, 1,141 person, 217 fail; every fail on a moved rule is
+a confirmed defect, round 4's in `known_true_fails_r4.json`) and the made files (correct set: 997 pass, 175 person, 3
+fail, all on MOTION-11 R057, which stays). The photo-measurement rules on the PHOTO tasks only passed on the real outputs
+(none had those defects); their fail side is proven on the made LAYOUT-12 files.
+
 ## Outcomes and safety rules
 
 Every operation answers `pass`, `fail` or `person` (the code could not decide, so a person answers that row).
@@ -110,7 +128,7 @@ $PY -W ignore run_checks.py --run <made>/good --tasks LAYOUT-12 VECTOR-04 MOTION
 $PY -W ignore run_checks.py --run <made>/bad --tasks LAYOUT-12 VECTOR-04 MOTION-11 --out bad.json
 $PY -W ignore run_checks.py --run <made>/bad2 --tasks LAYOUT-12 VECTOR-04 MOTION-11 --out bad2.json
 $PY -W ignore run_checks.py --run <made>/bad3 --tasks LAYOUT-12 VECTOR-04 MOTION-11 --out bad3.json
-python3 decide_moves.py real.json good.json bad.json bad2.json bad3.json
+python3 decide_moves.py real.json good.json bad.json bad2.json bad3.json bad4.json
 # round 3 ran on a VM, one job per delivered file: run_checks.py --tasks <ID> --shard K/N (N = the task's file count)
 python3 ../../scripts/build_v7_annotation_pilot_v2.py && $PY build_results_page.py
 ```

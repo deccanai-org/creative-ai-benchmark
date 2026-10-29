@@ -8,8 +8,8 @@ Rules the code mostly sends back to a person stay with people for now: the autom
 outputs it would not save review time.
 
 Usage: python decide_moves.py <real results.json> <made good results.json> <made bad results.json> [<made bad2 results.json>
-       [<made bad3 results.json>]]
-(bad2 and bad3: the second and third broken sets, with the round-2 defects of PLANTED2 and the round-3 defects of PLANTED3)
+       [<made bad3 results.json> [<made bad4 results.json>]]]
+(bad2, bad3, bad4: the further broken sets, with the defects of PLANTED2, PLANTED3 and PLANTED4)
 """
 from __future__ import annotations
 
@@ -45,9 +45,9 @@ KNOWN_TRUE_FAILS = {
     'PHOTO-26/wholesale-presentation/H011': 'every price (17 pt) is set larger than its product name (13 pt)',
 }
 # round 3 (2026-10-28): the fails checked by hand, kept in a file of their own (check ID -> what is wrong)
-_R3_FAILS = HERE / 'known_true_fails_r3.json'
-if _R3_FAILS.is_file():
-    KNOWN_TRUE_FAILS.update(json.loads(_R3_FAILS.read_text()))
+for _name in ('known_true_fails_r3.json', 'known_true_fails_r4.json'):   # rounds 3 and 4, each in a file of its own
+    if (HERE / _name).is_file():
+        KNOWN_TRUE_FAILS.update(json.loads((HERE / _name).read_text()))
 # defects planted in the made "bad" files: (deliverable, rule) pairs where a fail is the expected answer
 PLANTED = {
     'LAYOUT-12': {('poster-direction-type-led', 'R003'), ('poster-direction-type-led', 'R004'),   # SAT 16 OCT for Koa
@@ -157,21 +157,28 @@ ALSO_BROKEN = {
     'made_bad': {'LAYOUT-12': {('release-post-r007', 'R145')},          # the &nbsp; shows lowercase "nbsp" in the door line
                  'MOTION-11': {('channel-animation', 'R107')},          # STATIC FAX: FOX is not on the last row
                  'VECTOR-04': {('gang-sheet', 'R063'),                  # the window mark's off-palette red, placed on the sheet
-                               ('sticker-proof-window-mark', 'R057')}},  # and shown on its proof
+                               ('sticker-proof-window-mark', 'R057'),   # and shown on its proof
+                               # "Ink Black over 5%" is drawn as a heavy Ink Black drop shadow behind the moth: a shadow and a
+                               # backing shape (round 4)
+                               ('recovered-sticker-bag-design-1', 'R100'), ('sticker-proof-bag-design-1', 'R101'),
+                               ('sticker-proof-bag-design-1', 'R074')}},
     'made_bad2': {'LAYOUT-12': {('poster-direction-image-led', 'R116')},  # Coral Sound set as a headline in Sora ExtraBold
                   'MOTION-11': {('channel-animation', 'R089'),          # STATIC shrunk to 64 px to put SUBSCRIBE above it
                                 ('channel-animation', 'R090')},         # SUBSCRIBE OR DAVE WINS set in Anton
                   'VECTOR-04': {('sticker-proof-bag-design-1', 'R001'), ('sticker-proof-bag-design-2', 'R001'),
                                 ('sticker-proof-bag-design-3', 'R001'),  # proofs keep the original artwork (by design)
                                 ('sticker-cut-bag-design-1', 'R009'), ('sticker-cut-bag-design-2', 'R009'),
-                                ('sticker-cut-bag-design-3', 'R009'), ('sticker-cut-window-mark', 'R009')}},  # cut paths too
+                                ('sticker-cut-bag-design-3', 'R009'), ('sticker-cut-window-mark', 'R009'),  # cut paths too
+                                ('sticker-cut-window-mark', 'R007'), ('sticker-cut-bag-design-1', 'R007'),  # (round 4)
+                                ('sticker-proof-companion-1', 'R001'),   # the SVG's badge arc changed, the proof did not
+                                ('new-sticker-companion-1', 'R086')}},   # ampersand at cap height sits on the baseline
     'made_bad3': {'VECTOR-04': {('sticker-proof-bag-design-2', 'R018')}},  # the painted shadow shows through the open space
 }
 
 # settings that are limits chosen in code (tolerances, thresholds, definitions), as opposed to values the rule states
 CHOSEN = {'tol', 'min_conf', 'min_cover', 'min_chars', 'max_de', 'max_scale', 'tol_pt', 'pass_em', 'fail_em', 'min_share',
           'min_tiles', 'max_rows', 'max_words', 'max_other_words', 'min_words', 'min_ncc', 'thickness', 'min_gap', 'thin_px',
-          'small_px'}
+          'small_px'} | {'fail_mm', 'px_mm', 'sigma_mm', 'turn_sigma_mm', 'turn_window_mm', 'max_turn_deg', 'max_shift_mm', 'min_iou', 'fail_iou', 'max_aspect', 'max_changed_share', 'max_opacity_share', 'max_share', 'cover', 'min_drop', 'max_iou', 'min_differ', 'tol_deg', 'fail_deg', 'pass_share', 'min_rise', 'ink_tol', 'ground_tol', 'fail_short', 'fail_drop', 'even_tol', 'min_run', 'rule_tol', 'max_gap', 'max_px', 'fail_px', 'pic_tol', 'aspect_tol', 'edge_tol', 'name_conf', 'pass_ratio', 'fail_ratio', 'photo_digit_max', 'ground_share', 'photo_area', 'ring_px', 'flat_ring', 'ink_min', 'min_px', 'flat_tol', 'max_text', 'max_rms', 'min_letters', 'touch_spread', 'frame_min', 'frame_fill', 'frame_top_max', 'min_shown', 'shadow_L', 'black_L', 'crushed_pass', 'crushed_fail', 'detail_pass', 'min_shadow_tiles', 'clip_level', 'clip_px', 'border_jump', 'border_min_L', 'edge_border_max', 'min_border_px', 'red_pass', 'red_fail', 'green_pass', 'green_fail', 'grain_pass', 'grain_fail', 'min_photo_share', 'block_colours', 'block_top', 'ink_cut', 'hole_min', 'hole_pass', 'hole_fail', 'aspect_pass', 'aspect_fail', 'fail_ncc', 'word_colour_tol', 'ink_std', 'win_s', 'quiet_db', 'pass_ncc', 'fail_share', 'match_tol', 'person_tol', 'min_change', 'span_ratio', 'move_px', 'grow', 'still_px', 'still_grow', 'still_levels', 'still_share', 'min_frames', 'pass_scale', 'fail_scale', 'min_inliers', 'pass_gain', 'max_offset', 'max_shift_share', 'fail_gain', 'fail_shift_share', 'fade_s', 'fail_hue_deg'}   # round 4
 
 
 def limits(a, found) -> set:
@@ -192,6 +199,16 @@ def limits(a, found) -> set:
         for v in a:
             limits(v, found)
     return found
+
+
+# round 4: defects planted in the made "bad4" files (one per file), read from the generators' defects4 lists when they
+# are written (tools/pilot13_v2_automation/defects4.json: {"TASK/deliverable": {"rules": [...], "defect": "..."}}); an
+# entry with "checks" plants only those rows (a rule with a row per capture, where one capture carries the defect)
+PLANTED4 = defaultdict(set)
+if (HERE / 'defects4.json').is_file():
+    for _key, _d in json.loads((HERE / 'defects4.json').read_text()).items():
+        _task, _out = _key.split('/')
+        PLANTED4[_task] |= set(_d['checks']) if _d.get('checks') else {(_out, _r) for _r in _d['rules']}
 
 
 def is_planted(planted, task, output, rule, check_id) -> bool:
@@ -234,14 +251,16 @@ def main():
     real, good, bad = (json.loads(Path(p).read_text()) for p in sys.argv[1:4])
     bad2 = json.loads(Path(sys.argv[4]).read_text()) if len(sys.argv) > 4 else []
     bad3 = json.loads(Path(sys.argv[5]).read_text()) if len(sys.argv) > 5 else []
+    bad4 = json.loads(Path(sys.argv[6]).read_text()) if len(sys.argv) > 6 else []
     pilot = {r['check_id']: {'status': r['status'], 'note': note(r)} for r in real
              if r['task'] not in MADE_TASKS and r['status'] in ('pass', 'fail', 'person')}
     (HERE / 'pilot_results_2026-09-28.json').write_text(json.dumps(pilot, ensure_ascii=False, indent=1) + '\n')
     moved = {f.stem: json.loads(f.read_text())['moved'] for f in sorted((HERE / 'moved').glob('*.json'))}
     stats = defaultdict(lambda: {'real': Counter(), 'made_good': Counter(), 'made_bad': Counter(), 'made_bad2': Counter(),
-                                 'made_bad3': Counter(), 'wrong': []})
-    for name, results in (('real', real), ('made_good', good), ('made_bad', bad), ('made_bad2', bad2), ('made_bad3', bad3)):
-        planted = {'made_bad2': PLANTED2, 'made_bad3': PLANTED3}.get(name, PLANTED)
+                                 'made_bad3': Counter(), 'made_bad4': Counter(), 'wrong': []})
+    for name, results in (('real', real), ('made_good', good), ('made_bad', bad), ('made_bad2', bad2), ('made_bad3', bad3),
+                          ('made_bad4', bad4)):
+        planted = {'made_bad2': PLANTED2, 'made_bad3': PLANTED3, 'made_bad4': PLANTED4}.get(name, PLANTED)
         also = ALSO_BROKEN.get(name, {})
         planted = {t: planted.get(t, set()) | also.get(t, set()) for t in set(planted) | set(also)}
         for r in results:
@@ -252,7 +271,7 @@ def main():
             s[name][r['status']] += 1
             output = r['check_id'].split('/')[1]
             hit = is_planted(planted, r['task'], output, r['rule_id'], r['check_id'])
-            if name in ('made_bad', 'made_bad2', 'made_bad3') and r['status'] == 'pass' and hit:
+            if name.startswith('made_bad') and r['status'] == 'pass' and hit:
                 s['wrong'].append({'check': r['check_id'], 'run': name, 'why': 'passed a planted defect'})
             if r['status'] in ('error',):
                 s['wrong'].append({'check': r['check_id'], 'run': name, 'why': 'operation error'})
@@ -261,7 +280,7 @@ def main():
                     s['wrong'].append({'check': r['check_id'], 'run': name, 'why': 'fail not confirmed as a real defect'})
                 if name == 'made_good':
                     s['wrong'].append({'check': r['check_id'], 'run': name, 'why': 'fail on a correct made file'})
-                if name in ('made_bad', 'made_bad2', 'made_bad3') and not hit:
+                if name.startswith('made_bad') and not hit:
                     s['wrong'].append({'check': r['check_id'], 'run': name, 'why': 'fail where no defect was planted'})
     decisions = {}
     for tid, rows in moved.items():
@@ -285,7 +304,7 @@ def main():
             out[rid] = {'verdict': verdict, 'why': why, 'checks': [m['check_id'] for m in members], 'k_id': members[0]['k_id'],
                         'critical': members[0]['critical'], 'how': sorted({m['how'] for m in members}),
                         'limits': sorted(set().union(*(limits(m['assertion'], set()) for m in members)), key=str),
-                        'test': {k: dict(s[k]) for k in ('real', 'made_good', 'made_bad', 'made_bad2', 'made_bad3') if s[k]},
+                        'test': {k: dict(s[k]) for k in ('real', 'made_good', 'made_bad', 'made_bad2', 'made_bad3', 'made_bad4') if s[k]},
                         'wrong': s['wrong']}
         decisions[tid] = out
     (HERE / 'moved_rules.json').write_text(json.dumps(decisions, ensure_ascii=False, indent=1) + '\n')

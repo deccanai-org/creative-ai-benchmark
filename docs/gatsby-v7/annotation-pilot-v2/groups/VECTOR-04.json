@@ -45,8 +45,10 @@
     ],
     "note": "meridian_sheet_spec.txt: \"Also supply each sticker as a transparent PNG at press scale for our RIP preview: genuine alpha, no white rectangle behind it.\""
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "The SVG is rendered at the proof size and compared region by region: the same outline and, in every flat area, the same colour."
+   ],
    "rows": [
     {
      "check_id": "VECTOR-04/sticker-proof-window-mark/H001",
@@ -309,8 +311,10 @@
     "assets": [],
     "note": "Client brief: four recovered designs plus two new designs make one six-sticker collection."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Both SVGs are rendered to the same size and compared: outline overlap and colour."
+   ],
    "rows": [
     {
      "check_id": "VECTOR-04/new-sticker-companion-2/H004",
@@ -643,8 +647,10 @@
     ],
     "note": "meridian_sheet_spec.txt: \"Contour offset: 2.5 mm outward from the artwork edge.\""
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "The cut path is read point by point and its distance to the artwork edge measured in millimetres; it must sit at the offset all the way round, never closer."
+   ],
    "rows": [
     {
      "check_id": "VECTOR-04/sticker-cut-window-mark/H001",
@@ -803,8 +809,10 @@
     ],
     "note": "meridian_sheet_spec.txt: \"Corners: minimum 3 mm radius so the blade can follow it.\""
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "The cut path is read from its geometry and the tightest bend along it measured as a radius in millimetres."
+   ],
    "rows": [
     {
      "check_id": "VECTOR-04/sticker-cut-window-mark/H002",
@@ -1358,8 +1366,10 @@
     ],
     "note": "meridian_sheet_spec.txt: \"Contour offset: 2.5 mm outward from the artwork edge.\""
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "The cut path is read point by point and its distance to the artwork edge measured in millimetres; it must sit at the offset all the way round, never closer."
+   ],
    "rows": [
     {
      "check_id": "VECTOR-04/gang-sheet/H014",
@@ -1777,8 +1787,10 @@
     "assets": [],
     "note": "Commission: genuine alpha transparency outside the artwork and inside uninked negative space. Palette rules, opacity: no white or coloured rectangle behind it. meridian_sheet_spec.txt: \"genuine alpha, no white rectangle behind it.\""
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Where the SVG has no ink, the proof must be transparent; filled areas are counted, thin lines are left to the cut line check."
+   ],
    "rows": [
     {
      "check_id": "VECTOR-04/sticker-proof-window-mark/H016",
@@ -2336,8 +2348,10 @@
     ],
     "note": "meridian_sheet_spec.txt: \"Do NOT draw the cut line into the picture.\""
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "The proof is searched for a thin line running round the artwork or thin ink in the cut-line magenta, and compared with its SVG."
+   ],
    "rows": [
     {
      "check_id": "VECTOR-04/sticker-proof-window-mark/H002",
@@ -2736,8 +2750,10 @@
     ],
     "note": "meridian_sheet_spec.txt: \"Do NOT draw the cut line into the picture.\""
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "The sheet's drawings inside each cut path are read for an unfilled stroke running round the sticker or a cut colour off the cut layer."
+   ],
    "rows": [
     {
      "check_id": "VECTOR-04/gang-sheet/H017",
@@ -5501,8 +5517,10 @@
     ],
     "note": "Palette rules, distribution: Roast Brown for the wordmark, Ash Green for the roundel and Warm Cream for the leaf and hairline ring in meridian_window_mark.jpg. Supplied photo meridian_window_mark.jpg shows the leaf and ring in a pale paint, clearly lighter than the Ash Green disc. The redrawn roundel on meridian_shelfcard_2025.pdf is a Roast Brown disc with an Ash Green leaf, not the painted original."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "The window mark's parts are found by their shape (the roundel an ellipse, the ring a thin ellipse round it, the leaf inside the roundel, the lettering outside the ring) and each part's fill read from the SVG, or from the proof where the part shows."
+   ],
    "rows": [
     {
      "check_id": "VECTOR-04/sticker-proof-window-mark/H014",
@@ -5567,8 +5585,10 @@
     ],
     "note": "Palette rules, distribution: Roast Brown for the wordmark, Ash Green for the roundel and Warm Cream for the leaf and hairline ring in meridian_window_mark.jpg. Supplied photo meridian_window_mark.jpg shows the leaf and ring in a pale paint, clearly lighter than the Ash Green disc. The redrawn roundel on meridian_shelfcard_2025.pdf is a Roast Brown disc with an Ash Green leaf, not the painted original."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "The window mark's parts are found by their shape (the roundel an ellipse, the ring a thin ellipse round it, the leaf inside the roundel, the lettering outside the ring) and each part's fill read from the SVG, or from the proof where the part shows."
+   ],
    "rows": [
     {
      "check_id": "VECTOR-04/recovered-sticker-window-mark/H014",
@@ -5943,8 +5963,10 @@
     ],
     "note": "Palette rules, distribution: Roast Brown for the wordmark, Ash Green for the roundel and Warm Cream for the leaf and hairline ring in meridian_window_mark.jpg."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "The window mark's parts are found by their shape (the roundel an ellipse, the ring a thin ellipse round it, the leaf inside the roundel, the lettering outside the ring) and each part's fill read from the SVG, or from the proof where the part shows."
+   ],
    "rows": [
     {
      "check_id": "VECTOR-04/recovered-sticker-window-mark/H020",
@@ -6001,8 +6023,10 @@
     ],
     "note": "Palette rules, distribution: Roast Brown for the wordmark, Ash Green for the roundel and Warm Cream for the leaf and hairline ring in meridian_window_mark.jpg."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "The window mark's parts are found by their shape (the roundel an ellipse, the ring a thin ellipse round it, the leaf inside the roundel, the lettering outside the ring) and each part's fill read from the SVG, or from the proof where the part shows."
+   ],
    "rows": [
     {
      "check_id": "VECTOR-04/recovered-sticker-window-mark/H021",
@@ -6054,8 +6078,10 @@
     "assets": [],
     "note": "Palette, Ink Black usage: fine detail inside a drawing only, no more than 5% of a sticker's inked area. Never the main ink, a backing shape, type or the wordmark."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Finds every piece in the colour on the proof and checks each is small detail, not a main shape, backing or type."
+   ],
    "rows": [
     {
      "check_id": "VECTOR-04/sticker-proof-window-mark/H017",
@@ -6172,8 +6198,10 @@
     ],
     "note": "Palette rules, distribution: Roast Brown for the wordmark, Ash Green for the roundel and Warm Cream for the leaf and hairline ring in meridian_window_mark.jpg."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "The window mark's parts are found by their shape (the roundel an ellipse, the ring a thin ellipse round it, the leaf inside the roundel, the lettering outside the ring) and each part's fill read from the SVG, or from the proof where the part shows."
+   ],
    "rows": [
     {
      "check_id": "VECTOR-04/sticker-proof-window-mark/H018",
@@ -6230,8 +6258,10 @@
     ],
     "note": "Palette rules, distribution: Roast Brown for the wordmark, Ash Green for the roundel and Warm Cream for the leaf and hairline ring in meridian_window_mark.jpg."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "The window mark's parts are found by their shape (the roundel an ellipse, the ring a thin ellipse round it, the leaf inside the roundel, the lettering outside the ring) and each part's fill read from the SVG, or from the proof where the part shows."
+   ],
    "rows": [
     {
      "check_id": "VECTOR-04/sticker-proof-window-mark/H019",
@@ -6288,8 +6318,10 @@
     ],
     "note": "Brand identity, palette_rules.distribution: Warm Cream for the leaf and hairline ring in meridian_window_mark.jpg."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "The window mark's parts are found by their shape (the roundel an ellipse, the ring a thin ellipse round it, the leaf inside the roundel, the lettering outside the ring) and each part's fill read from the SVG, or from the proof where the part shows."
+   ],
    "rows": [
     {
      "check_id": "VECTOR-04/recovered-sticker-window-mark/H022",
@@ -6346,8 +6378,10 @@
     ],
     "note": "Brand identity, palette_rules.distribution: Warm Cream for the leaf and hairline ring in meridian_window_mark.jpg."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "The window mark's parts are found by their shape (the roundel an ellipse, the ring a thin ellipse round it, the leaf inside the roundel, the lettering outside the ring) and each part's fill read from the SVG, or from the proof where the part shows."
+   ],
    "rows": [
     {
      "check_id": "VECTOR-04/sticker-proof-window-mark/H020",
@@ -7296,8 +7330,10 @@
     ],
     "note": "Brand type system rule: MERIDIAN and ASH always arch on a fixed 40 degree curve, at every size."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "The arc the wordmark runs on is read from the SVG and the letters' widths from its embedded font; the angle the inked letters span is measured in degrees."
+   ],
    "rows": [
     {
      "check_id": "VECTOR-04/new-sticker-companion-1/H009",
@@ -8126,8 +8162,10 @@
     "assets": [],
     "note": "Palette rules, opacity: every palette colour solid at 100%; no tint, transparency, gradient, shadow or blend mode."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "The SVG is read for opacity under 100%, gradients, filters, masks, blend modes, embedded pictures and shapes repeated at a small offset behind themselves (a hard shadow)."
+   ],
    "rows": [
     {
      "check_id": "VECTOR-04/recovered-sticker-window-mark/H013",
@@ -8239,8 +8277,10 @@
     "assets": [],
     "note": "Palette rules, opacity: every palette colour solid at 100%; no tint, transparency, gradient, shadow or blend mode. A proof is transparent only outside the artwork and in its open, uninked negative space; every inked area is fully opaque, and partial transparency occurs only as anti-aliasing along edges."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "The proof is searched for soft or see-through ink, and its SVG for hard shadows the proof shows."
+   ],
    "rows": [
     {
      "check_id": "VECTOR-04/sticker-proof-window-mark/H013",
@@ -9783,8 +9823,10 @@
     ],
     "note": "Brief, pinned: the window mark's painted lettering is traced as painted rather than reset in a typeface. Brief: the brand type system's arch, ampersand and DM Serif Display Regular rules govern newly set lettering only; the recovered window mark keeps its painted arc and ampersand exactly as painted. Supplied photo meridian_window_mark.jpg shows the MERIDIAN & ASH wordmark arched over the filled roundel."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "The lettering and the roundel are found by their shape and their positions compared: the lettering above the roundel, its letters rising to the middle."
+   ],
    "rows": [
     {
      "check_id": "VECTOR-04/recovered-sticker-window-mark/H005",

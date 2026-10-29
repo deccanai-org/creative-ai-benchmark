@@ -2383,6 +2383,23 @@
    "how": "Searches the deliverable for the supplied file (feature matching, confirmed by correlation)."
   },
   {
+   "check_id": "PHOTO-08/inventory-campaign/H044",
+   "output_id": "inventory-campaign",
+   "rule_id": "R038",
+   "k_id": "K2_Q2",
+   "critical": false,
+   "check": "The shadow side of the black Brookmere Sable on “Forecourt inventory campaign” (inventory-campaign.png) keeps its panel and wheel detail, not blocked up to solid black.",
+   "assertion": {
+    "op": "v2_shadow_detail_r4p",
+    "photos": [
+     "M3105_brookmere_sable_front34.jpg",
+     "M3105_brookmere_sable_side.jpg",
+     "M3105_brookmere_sable_rear34.jpg"
+    ]
+   },
+   "how": "Finds the supplied photo in the deliverable and checks its shadows keep their detail and are not turned to solid black."
+  },
+  {
    "check_id": "PHOTO-08/vehicle-card-r002/H060",
    "output_id": "vehicle-card-r002",
    "rule_id": "R043",
@@ -2509,7 +2526,7 @@
    "critical": false,
    "check": "Every solid colour on “Vehicle sales card - M3082” (vehicle-card-r002.png), outside the photograph and any roundel artwork, is a brand palette colour: #1F2A3A, #F6F7F8, #2E3237, #3C6E71 or #9AA1A8.",
    "assertion": {
-    "op": "v2_palette_raster_x",
+    "op": "v2_palette_frames_r4p",
     "hexes": [
      "#1F2A3A",
      "#F6F7F8",
@@ -2517,7 +2534,6 @@
      "#3C6E71",
      "#9AA1A8"
     ],
-    "photo_touch": true,
     "photos": [
      "M3082_norsted_alta_front34.jpg",
      "M3082_norsted_alta_rear34.jpg",
@@ -2527,7 +2543,7 @@
      "meridian_roundel_reversed.png"
     ]
    },
-   "how": "Reads every flat colour outside the photographs, the margin left out, and checks each is a palette colour."
+   "how": "Leaves out every placed photograph as a whole frame, then reads every flat colour left and checks each is a palette colour."
   },
   {
    "check_id": "PHOTO-08/vehicle-card-r003/H032",
@@ -2537,7 +2553,7 @@
    "critical": false,
    "check": "Every solid colour on “Vehicle sales card - M3091” (vehicle-card-r003.png), outside the photograph and any roundel artwork, is a brand palette colour: #1F2A3A, #F6F7F8, #2E3237, #3C6E71 or #9AA1A8.",
    "assertion": {
-    "op": "v2_palette_raster_x",
+    "op": "v2_palette_frames_r4p",
     "hexes": [
      "#1F2A3A",
      "#F6F7F8",
@@ -2545,7 +2561,6 @@
      "#3C6E71",
      "#9AA1A8"
     ],
-    "photo_touch": true,
     "photos": [
      "M3091_ardmoor_ridge_front34.jpg",
      "M3091_ardmoor_ridge_rear34.jpg",
@@ -2555,7 +2570,7 @@
      "meridian_roundel_reversed.png"
     ]
    },
-   "how": "Reads every flat colour outside the photographs, the margin left out, and checks each is a palette colour."
+   "how": "Leaves out every placed photograph as a whole frame, then reads every flat colour left and checks each is a palette colour."
   },
   {
    "check_id": "PHOTO-08/vehicle-card-r004/H031",
@@ -2565,7 +2580,7 @@
    "critical": false,
    "check": "Every solid colour on “Vehicle sales card - M2417” (vehicle-card-r004.png), outside the photograph and any roundel artwork, is a brand palette colour: #1F2A3A, #F6F7F8, #2E3237, #3C6E71 or #9AA1A8.",
    "assertion": {
-    "op": "v2_palette_raster_x",
+    "op": "v2_palette_frames_r4p",
     "hexes": [
      "#1F2A3A",
      "#F6F7F8",
@@ -2573,7 +2588,6 @@
      "#3C6E71",
      "#9AA1A8"
     ],
-    "photo_touch": true,
     "photos": [
      "M2417_calder_vireo_front34.jpg",
      "M2417_calder_vireo_rear34.jpg",
@@ -2583,7 +2597,7 @@
      "meridian_roundel_reversed.png"
     ]
    },
-   "how": "Reads every flat colour outside the photographs, the margin left out, and checks each is a palette colour."
+   "how": "Leaves out every placed photograph as a whole frame, then reads every flat colour left and checks each is a palette colour."
   },
   {
    "check_id": "PHOTO-08/vehicle-card-r005/H032",
@@ -2593,7 +2607,7 @@
    "critical": false,
    "check": "Every solid colour on “Vehicle sales card - M3105” (vehicle-card-r005.png), outside the photograph and any roundel artwork, is a brand palette colour: #1F2A3A, #F6F7F8, #2E3237, #3C6E71 or #9AA1A8.",
    "assertion": {
-    "op": "v2_palette_raster_x",
+    "op": "v2_palette_frames_r4p",
     "hexes": [
      "#1F2A3A",
      "#F6F7F8",
@@ -2601,7 +2615,6 @@
      "#3C6E71",
      "#9AA1A8"
     ],
-    "photo_touch": true,
     "photos": [
      "M3105_brookmere_sable_front34.jpg",
      "M3105_brookmere_sable_rear34.jpg",
@@ -2611,7 +2624,7 @@
      "meridian_roundel_reversed.png"
     ]
    },
-   "how": "Reads every flat colour outside the photographs, the margin left out, and checks each is a palette colour."
+   "how": "Leaves out every placed photograph as a whole frame, then reads every flat colour left and checks each is a palette colour."
   },
   {
    "check_id": "PHOTO-08/vehicle-card-r006/H032",
@@ -2621,7 +2634,7 @@
    "critical": false,
    "check": "Every solid colour on “Vehicle sales card - M2471” (vehicle-card-r006.png), outside the photograph and any roundel artwork, is a brand palette colour: #1F2A3A, #F6F7F8, #2E3237, #3C6E71 or #9AA1A8.",
    "assertion": {
-    "op": "v2_palette_raster_x",
+    "op": "v2_palette_frames_r4p",
     "hexes": [
      "#1F2A3A",
      "#F6F7F8",
@@ -2629,7 +2642,6 @@
      "#3C6E71",
      "#9AA1A8"
     ],
-    "photo_touch": true,
     "photos": [
      "M2471_calder_kestrel_front34.jpg",
      "M2471_calder_kestrel_rear34.jpg",
@@ -2639,7 +2651,7 @@
      "meridian_roundel_reversed.png"
     ]
    },
-   "how": "Reads every flat colour outside the photographs, the margin left out, and checks each is a palette colour."
+   "how": "Leaves out every placed photograph as a whole frame, then reads every flat colour left and checks each is a palette colour."
   },
   {
    "check_id": "PHOTO-08/vehicle-card-r007/H031",
@@ -2649,7 +2661,7 @@
    "critical": false,
    "check": "Every solid colour on “Vehicle sales card - M3119” (vehicle-card-r007.png), outside the photograph and any roundel artwork, is a brand palette colour: #1F2A3A, #F6F7F8, #2E3237, #3C6E71 or #9AA1A8.",
    "assertion": {
-    "op": "v2_palette_raster_x",
+    "op": "v2_palette_frames_r4p",
     "hexes": [
      "#1F2A3A",
      "#F6F7F8",
@@ -2657,7 +2669,6 @@
      "#3C6E71",
      "#9AA1A8"
     ],
-    "photo_touch": true,
     "photos": [
      "M3119_norsted_fjord_front34.jpg",
      "M3119_norsted_fjord_rear34.jpg",
@@ -2667,7 +2678,7 @@
      "meridian_roundel_reversed.png"
     ]
    },
-   "how": "Reads every flat colour outside the photographs, the margin left out, and checks each is a palette colour."
+   "how": "Leaves out every placed photograph as a whole frame, then reads every flat colour left and checks each is a palette colour."
   },
   {
    "check_id": "PHOTO-08/vehicle-card-r002/H036",
@@ -6999,6 +7010,258 @@
    "how": "Reads each named line by OCR, renders its own text in every brand font and weight and in common stand-in fonts, and compares the letter shapes and stroke thickness with the image; only a clear best match counts."
   },
   {
+   "check_id": "PHOTO-08/vehicle-card-r002/H054",
+   "output_id": "vehicle-card-r002",
+   "rule_id": "R091",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The price figures on “Vehicle sales card - M3082” (vehicle-card-r002.png) are lining figures of one height, with no figure dropping below the baseline.",
+   "assertion": {
+    "op": "v2_price_figures_r4t",
+    "price": "26900",
+    "test": "lining"
+   },
+   "how": "Finds the price by OCR, splits its figures and dollar sign into ink shapes and compares their heights, baselines and tops."
+  },
+  {
+   "check_id": "PHOTO-08/vehicle-card-r003/H053",
+   "output_id": "vehicle-card-r003",
+   "rule_id": "R091",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The price figures on “Vehicle sales card - M3091” (vehicle-card-r003.png) are lining figures of one height, with no figure dropping below the baseline.",
+   "assertion": {
+    "op": "v2_price_figures_r4t",
+    "price": "24500",
+    "test": "lining"
+   },
+   "how": "Finds the price by OCR, splits its figures and dollar sign into ink shapes and compares their heights, baselines and tops."
+  },
+  {
+   "check_id": "PHOTO-08/vehicle-card-r004/H052",
+   "output_id": "vehicle-card-r004",
+   "rule_id": "R091",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The price figures on “Vehicle sales card - M2417” (vehicle-card-r004.png) are lining figures of one height, with no figure dropping below the baseline.",
+   "assertion": {
+    "op": "v2_price_figures_r4t",
+    "price": "23900",
+    "test": "lining"
+   },
+   "how": "Finds the price by OCR, splits its figures and dollar sign into ink shapes and compares their heights, baselines and tops."
+  },
+  {
+   "check_id": "PHOTO-08/vehicle-card-r005/H053",
+   "output_id": "vehicle-card-r005",
+   "rule_id": "R091",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The price figures on “Vehicle sales card - M3105” (vehicle-card-r005.png) are lining figures of one height, with no figure dropping below the baseline.",
+   "assertion": {
+    "op": "v2_price_figures_r4t",
+    "price": "31900",
+    "test": "lining"
+   },
+   "how": "Finds the price by OCR, splits its figures and dollar sign into ink shapes and compares their heights, baselines and tops."
+  },
+  {
+   "check_id": "PHOTO-08/vehicle-card-r006/H053",
+   "output_id": "vehicle-card-r006",
+   "rule_id": "R091",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The price figures on “Vehicle sales card - M2471” (vehicle-card-r006.png) are lining figures of one height, with no figure dropping below the baseline.",
+   "assertion": {
+    "op": "v2_price_figures_r4t",
+    "price": "24900",
+    "test": "lining"
+   },
+   "how": "Finds the price by OCR, splits its figures and dollar sign into ink shapes and compares their heights, baselines and tops."
+  },
+  {
+   "check_id": "PHOTO-08/vehicle-card-r007/H052",
+   "output_id": "vehicle-card-r007",
+   "rule_id": "R091",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The price figures on “Vehicle sales card - M3119” (vehicle-card-r007.png) are lining figures of one height, with no figure dropping below the baseline.",
+   "assertion": {
+    "op": "v2_price_figures_r4t",
+    "price": "29900",
+    "test": "lining"
+   },
+   "how": "Finds the price by OCR, splits its figures and dollar sign into ink shapes and compares their heights, baselines and tops."
+  },
+  {
+   "check_id": "PHOTO-08/vehicle-card-r002/H056",
+   "output_id": "vehicle-card-r002",
+   "rule_id": "R092",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The dollar sign in the price on “Vehicle sales card - M3082” (vehicle-card-r002.png) is about three fifths of the figures' height.",
+   "assertion": {
+    "op": "v2_price_figures_r4t",
+    "price": "26900",
+    "test": "dollar_ratio"
+   },
+   "how": "Finds the price by OCR, splits its figures and dollar sign into ink shapes and compares their heights, baselines and tops."
+  },
+  {
+   "check_id": "PHOTO-08/vehicle-card-r003/H055",
+   "output_id": "vehicle-card-r003",
+   "rule_id": "R092",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The dollar sign in the price on “Vehicle sales card - M3091” (vehicle-card-r003.png) is about three fifths of the figures' height.",
+   "assertion": {
+    "op": "v2_price_figures_r4t",
+    "price": "24500",
+    "test": "dollar_ratio"
+   },
+   "how": "Finds the price by OCR, splits its figures and dollar sign into ink shapes and compares their heights, baselines and tops."
+  },
+  {
+   "check_id": "PHOTO-08/vehicle-card-r004/H054",
+   "output_id": "vehicle-card-r004",
+   "rule_id": "R092",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The dollar sign in the price on “Vehicle sales card - M2417” (vehicle-card-r004.png) is about three fifths of the figures' height.",
+   "assertion": {
+    "op": "v2_price_figures_r4t",
+    "price": "23900",
+    "test": "dollar_ratio"
+   },
+   "how": "Finds the price by OCR, splits its figures and dollar sign into ink shapes and compares their heights, baselines and tops."
+  },
+  {
+   "check_id": "PHOTO-08/vehicle-card-r005/H055",
+   "output_id": "vehicle-card-r005",
+   "rule_id": "R092",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The dollar sign in the price on “Vehicle sales card - M3105” (vehicle-card-r005.png) is about three fifths of the figures' height.",
+   "assertion": {
+    "op": "v2_price_figures_r4t",
+    "price": "31900",
+    "test": "dollar_ratio"
+   },
+   "how": "Finds the price by OCR, splits its figures and dollar sign into ink shapes and compares their heights, baselines and tops."
+  },
+  {
+   "check_id": "PHOTO-08/vehicle-card-r006/H055",
+   "output_id": "vehicle-card-r006",
+   "rule_id": "R092",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The dollar sign in the price on “Vehicle sales card - M2471” (vehicle-card-r006.png) is about three fifths of the figures' height.",
+   "assertion": {
+    "op": "v2_price_figures_r4t",
+    "price": "24900",
+    "test": "dollar_ratio"
+   },
+   "how": "Finds the price by OCR, splits its figures and dollar sign into ink shapes and compares their heights, baselines and tops."
+  },
+  {
+   "check_id": "PHOTO-08/vehicle-card-r007/H054",
+   "output_id": "vehicle-card-r007",
+   "rule_id": "R092",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The dollar sign in the price on “Vehicle sales card - M3119” (vehicle-card-r007.png) is about three fifths of the figures' height.",
+   "assertion": {
+    "op": "v2_price_figures_r4t",
+    "price": "29900",
+    "test": "dollar_ratio"
+   },
+   "how": "Finds the price by OCR, splits its figures and dollar sign into ink shapes and compares their heights, baselines and tops."
+  },
+  {
+   "check_id": "PHOTO-08/vehicle-card-r002/H057",
+   "output_id": "vehicle-card-r002",
+   "rule_id": "R093",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The top of the dollar sign in the price on “Vehicle sales card - M3082” (vehicle-card-r002.png) lines up with the tops of the figures.",
+   "assertion": {
+    "op": "v2_price_figures_r4t",
+    "price": "26900",
+    "test": "dollar_top"
+   },
+   "how": "Finds the price by OCR, splits its figures and dollar sign into ink shapes and compares their heights, baselines and tops."
+  },
+  {
+   "check_id": "PHOTO-08/vehicle-card-r003/H056",
+   "output_id": "vehicle-card-r003",
+   "rule_id": "R093",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The top of the dollar sign in the price on “Vehicle sales card - M3091” (vehicle-card-r003.png) lines up with the tops of the figures.",
+   "assertion": {
+    "op": "v2_price_figures_r4t",
+    "price": "24500",
+    "test": "dollar_top"
+   },
+   "how": "Finds the price by OCR, splits its figures and dollar sign into ink shapes and compares their heights, baselines and tops."
+  },
+  {
+   "check_id": "PHOTO-08/vehicle-card-r004/H055",
+   "output_id": "vehicle-card-r004",
+   "rule_id": "R093",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The top of the dollar sign in the price on “Vehicle sales card - M2417” (vehicle-card-r004.png) lines up with the tops of the figures.",
+   "assertion": {
+    "op": "v2_price_figures_r4t",
+    "price": "23900",
+    "test": "dollar_top"
+   },
+   "how": "Finds the price by OCR, splits its figures and dollar sign into ink shapes and compares their heights, baselines and tops."
+  },
+  {
+   "check_id": "PHOTO-08/vehicle-card-r005/H056",
+   "output_id": "vehicle-card-r005",
+   "rule_id": "R093",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The top of the dollar sign in the price on “Vehicle sales card - M3105” (vehicle-card-r005.png) lines up with the tops of the figures.",
+   "assertion": {
+    "op": "v2_price_figures_r4t",
+    "price": "31900",
+    "test": "dollar_top"
+   },
+   "how": "Finds the price by OCR, splits its figures and dollar sign into ink shapes and compares their heights, baselines and tops."
+  },
+  {
+   "check_id": "PHOTO-08/vehicle-card-r006/H056",
+   "output_id": "vehicle-card-r006",
+   "rule_id": "R093",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The top of the dollar sign in the price on “Vehicle sales card - M2471” (vehicle-card-r006.png) lines up with the tops of the figures.",
+   "assertion": {
+    "op": "v2_price_figures_r4t",
+    "price": "24900",
+    "test": "dollar_top"
+   },
+   "how": "Finds the price by OCR, splits its figures and dollar sign into ink shapes and compares their heights, baselines and tops."
+  },
+  {
+   "check_id": "PHOTO-08/vehicle-card-r007/H055",
+   "output_id": "vehicle-card-r007",
+   "rule_id": "R093",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The top of the dollar sign in the price on “Vehicle sales card - M3119” (vehicle-card-r007.png) lines up with the tops of the figures.",
+   "assertion": {
+    "op": "v2_price_figures_r4t",
+    "price": "29900",
+    "test": "dollar_top"
+   },
+   "how": "Finds the price by OCR, splits its figures and dollar sign into ink shapes and compares their heights, baselines and tops."
+  },
+  {
    "check_id": "PHOTO-08/vehicle-card-r005/H019",
    "output_id": "vehicle-card-r005",
    "rule_id": "R098",
@@ -7585,31 +7848,10 @@
    "critical": false,
    "check": "The rule under the price on “Vehicle sales card - M3082” (vehicle-card-r002.png) is no more than 2 pixels thick.",
    "assertion": {
-    "op": "v2_rule_colour_raster",
-    "below": "(?<![\\d,.])26,?\\s?900(?![\\d]|,\\d)",
-    "candidates": [
-     "#1F2A3A",
-     "#2E3237",
-     "#3C6E71",
-     "#9AA1A8"
-    ],
-    "colors": [
-     "#1F2A3A",
-     "#2E3237",
-     "#3C6E71",
-     "#9AA1A8"
-    ],
-    "max_rows": 2,
-    "photos": [
-     "M3082_norsted_alta_front34.jpg",
-     "M3082_norsted_alta_rear34.jpg",
-     "M3082_norsted_alta_side.jpg",
-     "meridian_roundel.png",
-     "meridian_roundel_transparent.png",
-     "meridian_roundel_reversed.png"
-    ]
+    "op": "v2_rule_under_r4t",
+    "price": "26900"
    },
-   "how": "Finds the thin horizontal rules and tells their colour by the direction it takes from the ground."
+   "how": "Finds the price by OCR and the first long run of ink under it, and counts the rows of that rule."
   },
   {
    "check_id": "PHOTO-08/vehicle-card-r003/H077",
@@ -7619,31 +7861,10 @@
    "critical": false,
    "check": "The rule under the price on “Vehicle sales card - M3091” (vehicle-card-r003.png) is no more than 2 pixels thick.",
    "assertion": {
-    "op": "v2_rule_colour_raster",
-    "below": "(?<![\\d,.])24,?\\s?500(?![\\d]|,\\d)",
-    "candidates": [
-     "#1F2A3A",
-     "#2E3237",
-     "#3C6E71",
-     "#9AA1A8"
-    ],
-    "colors": [
-     "#1F2A3A",
-     "#2E3237",
-     "#3C6E71",
-     "#9AA1A8"
-    ],
-    "max_rows": 2,
-    "photos": [
-     "M3091_ardmoor_ridge_front34.jpg",
-     "M3091_ardmoor_ridge_rear34.jpg",
-     "M3091_ardmoor_ridge_side.jpg",
-     "meridian_roundel.png",
-     "meridian_roundel_transparent.png",
-     "meridian_roundel_reversed.png"
-    ]
+    "op": "v2_rule_under_r4t",
+    "price": "24500"
    },
-   "how": "Finds the thin horizontal rules and tells their colour by the direction it takes from the ground."
+   "how": "Finds the price by OCR and the first long run of ink under it, and counts the rows of that rule."
   },
   {
    "check_id": "PHOTO-08/vehicle-card-r004/H076",
@@ -7653,31 +7874,10 @@
    "critical": false,
    "check": "The rule under the price on “Vehicle sales card - M2417” (vehicle-card-r004.png) is no more than 2 pixels thick.",
    "assertion": {
-    "op": "v2_rule_colour_raster",
-    "below": "(?<![\\d,.])23,?\\s?900(?![\\d]|,\\d)",
-    "candidates": [
-     "#1F2A3A",
-     "#2E3237",
-     "#3C6E71",
-     "#9AA1A8"
-    ],
-    "colors": [
-     "#1F2A3A",
-     "#2E3237",
-     "#3C6E71",
-     "#9AA1A8"
-    ],
-    "max_rows": 2,
-    "photos": [
-     "M2417_calder_vireo_front34.jpg",
-     "M2417_calder_vireo_rear34.jpg",
-     "M2417_calder_vireo_side.jpg",
-     "meridian_roundel.png",
-     "meridian_roundel_transparent.png",
-     "meridian_roundel_reversed.png"
-    ]
+    "op": "v2_rule_under_r4t",
+    "price": "23900"
    },
-   "how": "Finds the thin horizontal rules and tells their colour by the direction it takes from the ground."
+   "how": "Finds the price by OCR and the first long run of ink under it, and counts the rows of that rule."
   },
   {
    "check_id": "PHOTO-08/vehicle-card-r005/H077",
@@ -7687,31 +7887,10 @@
    "critical": false,
    "check": "The rule under the price on “Vehicle sales card - M3105” (vehicle-card-r005.png) is no more than 2 pixels thick.",
    "assertion": {
-    "op": "v2_rule_colour_raster",
-    "below": "(?<![\\d,.])31,?\\s?900(?![\\d]|,\\d)",
-    "candidates": [
-     "#1F2A3A",
-     "#2E3237",
-     "#3C6E71",
-     "#9AA1A8"
-    ],
-    "colors": [
-     "#1F2A3A",
-     "#2E3237",
-     "#3C6E71",
-     "#9AA1A8"
-    ],
-    "max_rows": 2,
-    "photos": [
-     "M3105_brookmere_sable_front34.jpg",
-     "M3105_brookmere_sable_rear34.jpg",
-     "M3105_brookmere_sable_side.jpg",
-     "meridian_roundel.png",
-     "meridian_roundel_transparent.png",
-     "meridian_roundel_reversed.png"
-    ]
+    "op": "v2_rule_under_r4t",
+    "price": "31900"
    },
-   "how": "Finds the thin horizontal rules and tells their colour by the direction it takes from the ground."
+   "how": "Finds the price by OCR and the first long run of ink under it, and counts the rows of that rule."
   },
   {
    "check_id": "PHOTO-08/vehicle-card-r006/H077",
@@ -7721,31 +7900,10 @@
    "critical": false,
    "check": "The rule under the price on “Vehicle sales card - M2471” (vehicle-card-r006.png) is no more than 2 pixels thick.",
    "assertion": {
-    "op": "v2_rule_colour_raster",
-    "below": "(?<![\\d,.])24,?\\s?900(?![\\d]|,\\d)",
-    "candidates": [
-     "#1F2A3A",
-     "#2E3237",
-     "#3C6E71",
-     "#9AA1A8"
-    ],
-    "colors": [
-     "#1F2A3A",
-     "#2E3237",
-     "#3C6E71",
-     "#9AA1A8"
-    ],
-    "max_rows": 2,
-    "photos": [
-     "M2471_calder_kestrel_front34.jpg",
-     "M2471_calder_kestrel_rear34.jpg",
-     "M2471_calder_kestrel_side.jpg",
-     "meridian_roundel.png",
-     "meridian_roundel_transparent.png",
-     "meridian_roundel_reversed.png"
-    ]
+    "op": "v2_rule_under_r4t",
+    "price": "24900"
    },
-   "how": "Finds the thin horizontal rules and tells their colour by the direction it takes from the ground."
+   "how": "Finds the price by OCR and the first long run of ink under it, and counts the rows of that rule."
   },
   {
    "check_id": "PHOTO-08/vehicle-card-r007/H077",
@@ -7755,31 +7913,10 @@
    "critical": false,
    "check": "The rule under the price on “Vehicle sales card - M3119” (vehicle-card-r007.png) is no more than 2 pixels thick.",
    "assertion": {
-    "op": "v2_rule_colour_raster",
-    "below": "(?<![\\d,.])29,?\\s?900(?![\\d]|,\\d)",
-    "candidates": [
-     "#1F2A3A",
-     "#2E3237",
-     "#3C6E71",
-     "#9AA1A8"
-    ],
-    "colors": [
-     "#1F2A3A",
-     "#2E3237",
-     "#3C6E71",
-     "#9AA1A8"
-    ],
-    "max_rows": 2,
-    "photos": [
-     "M3119_norsted_fjord_front34.jpg",
-     "M3119_norsted_fjord_rear34.jpg",
-     "M3119_norsted_fjord_side.jpg",
-     "meridian_roundel.png",
-     "meridian_roundel_transparent.png",
-     "meridian_roundel_reversed.png"
-    ]
+    "op": "v2_rule_under_r4t",
+    "price": "29900"
    },
-   "how": "Finds the thin horizontal rules and tells their colour by the direction it takes from the ground."
+   "how": "Finds the price by OCR and the first long run of ink under it, and counts the rows of that rule."
   },
   {
    "check_id": "PHOTO-08/inventory-campaign/H126",

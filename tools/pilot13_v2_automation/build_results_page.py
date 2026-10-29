@@ -76,7 +76,18 @@ FOUND_IN_TESTING = [
     ('The gap between two photographs was read as a drawn rule.',
      'No rule is read in a row taken up mostly by photographs.'),
     ('Tyres and warm grey studio backdrops inside photographs were read as off-palette designed colour.',
-     'An off-palette piece within 20 px of a photograph now goes to a person. Where only part of a photograph is masked (PHOTO-08 R046, PHOTO-10 R052) a wrong fail remains, so those two rules stay with people.'),
+     'An off-palette piece within 20 px of a photograph now goes to a person, and since round 4 a placed photograph is left out whole: a block where no single exact colour covers more than 5% is a photograph.'),
+    # round 4
+    ('The comma in a price was read as a figure, so the first figure was dropped.',
+     'Price pieces are matched one to one with the price as printed, and a comma must be clearly smaller than the figures.'),
+    ('One-pixel jogs in a cut path were read as sharp corners.',
+     'A corner is read on a lightly smoothed path; a reading near the limit goes to a person.'),
+    ('A sticker proof placed at 85% opacity passed as unchanged.',
+     'A proof is compared region by region, with opacity checked within 16 levels.'),
+    ('The no-shadow and opacity checks failed an opaque off-palette colour.',
+     'They now look only at opacity, gradients, filters, blend modes and offset copies; colour belongs to the palette checks.'),
+    ('A planted defect on one capture was counted against the rule for every capture of the film.',
+     'A planted defect names the one row it breaks where a rule has a row per capture.'),
     ('The ground behind a cut-out speaker was taken from the header band above her.',
      'The ground behind a sitter is the flat area running down both sides of the cut-out, not a band it only touches at the top.'),
     ('A dark jacket was read as leftover studio backdrop.',
@@ -105,6 +116,115 @@ LIMIT_WORDS = {
     'fills_image': 'share of the image filled', 'chroma_ratio': 'colourfulness against the source',
     'da': 'mean shift green to red', 'db': 'mean shift blue to yellow', 'dL': 'mean shift in lightness', 'scale': 'scale against the source',
     'noise_ratio': 'grain against the source', 'warm_single': 'single warm tone', 'src_warm_single': 'source in a single warm tone',
+    # round 4
+    'fail_mm': 'fails when off by (mm)',
+    'px_mm': 'measured at (px per mm)',
+    'sigma_mm': 'path smoothing before reading a curve (mm)',
+    'turn_sigma_mm': 'path smoothing before reading a turn (mm)',
+    'turn_window_mm': 'stretch of path a turn is read over (mm)',
+    'max_turn_deg': 'sharpest turn allowed (degrees)',
+    'max_shift_mm': 'largest offset for a copy to count as a shadow (mm)',
+    'min_iou': 'outline overlap needed to pass',
+    'fail_iou': 'outline overlap under which it fails',
+    'max_aspect': 'largest change in proportions',
+    'max_changed_share': 'largest share of ink allowed to change colour',
+    'max_opacity_share': 'largest share of ink allowed to change opacity',
+    'max_share': 'largest filled share of the open space',
+    'cover': 'share of the outline a line must run round',
+    'min_drop': 'ampersand drop as a share of its size',
+    'max_iou': 'outline overlap under which two drawings differ',
+    'min_differ': 'share of pixels that must differ',
+    'tol_deg': 'arch angle passes within (degrees)',
+    'fail_deg': 'arch angle fails when off by (degrees)',
+    'pass_share': 'share of a part at its colour needed to pass',
+    'min_rise': 'rise to the middle that makes an arch',
+    'ink_tol': 'grey-level difference that counts as ink',
+    'ground_tol': 'ground colour tolerance',
+    'fail_short': 'a figure shorter than this share of the tallest fails',
+    'fail_drop': 'a figure dropping this share below the baseline fails',
+    'even_tol': 'figures within this share count as one height',
+    'min_run': 'a rule runs at least this share of the width',
+    'rule_tol': 'grey-level difference that counts as rule ink',
+    'max_gap': 'how far below the price a rule is looked for (line heights)',
+    'max_px': 'thickest rule that passes (px)',
+    'fail_px': 'size that fails (px)',
+    'pic_tol': 'grey level at which a pale mount is part of the picture',
+    'aspect_tol': 'picture shape must match the supplied scan within',
+    'edge_tol': 'distance from the picture edge (px)',
+    'name_conf': 'OCR confidence needed for the name',
+    'pass_ratio': 'size ratio that passes',
+    'fail_ratio': 'size ratio at or under which it fails',
+    'photo_digit_max': 'tallest figure read inside a photograph (share of the image)',
+    'ground_share': 'share of the image a designed ground covers',
+    'photo_area': 'share of the image that makes a photograph',
+    'ring_px': 'ring of pixels round a word (px)',
+    'flat_ring': 'share of that ring that must be flat',
+    'ink_min': 'smallest colour difference that counts as ink',
+    'min_px': 'smallest piece measured (px)',
+    'flat_tol': 'colour tolerance for letter edges',
+    'max_text': 'pieces taller than this share of the image are not type',
+    'max_rms': 'largest average miss between letters and the fitted font (px)',
+    'min_letters': 'fewest letters before spacing is measured',
+    'touch_spread': 'how much readings may disagree where letters touch',
+    'frame_min': 'smallest photo frame (share of the image)',
+    'frame_fill': 'share of its box a photo fills',
+    'frame_top_max': 'largest share one exact colour takes in a photo',
+    'min_shown': 'share of the supplied file that must show',
+    'shadow_L': 'shadow is lightness up to',
+    'black_L': 'solid black is lightness up to',
+    'crushed_pass': 'share of shadow turned black that passes',
+    'crushed_fail': 'share of shadow turned black that fails',
+    'detail_pass': 'share of shadow contrast kept to pass',
+    'min_shadow_tiles': 'fewest shadow tiles compared',
+    'clip_level': 'clipped white is every channel at least',
+    'clip_px': 'smallest clipped piece (px)',
+    'border_jump': 'contrast rise that marks where the picture starts',
+    'border_min_L': 'the border is lightness at least',
+    'edge_border_max': 'widest border on a full-bleed print (share)',
+    'min_border_px': 'fewest border pixels read',
+    'red_pass': 'red cast that passes (a*)',
+    'red_fail': 'red cast that fails (a*)',
+    'green_pass': 'green cast that passes (a*)',
+    'green_fail': 'green cast that fails (a*)',
+    'grain_pass': 'grain level that passes',
+    'grain_fail': 'grain level that fails',
+    'min_photo_share': 'smallest photograph read (share of the page)',
+    'block_colours': 'colours a photo block holds at least',
+    'block_top': 'largest share one colour takes in a photo block',
+    'ink_cut': 'ink is this share of the contrast or more',
+    'hole_min': 'smallest counter read (px)',
+    'hole_pass': 'counter within this of the ground is open',
+    'hole_fail': 'counter this far from the ground is filled',
+    'aspect_pass': 'change in letter proportions that passes',
+    'aspect_fail': 'change in letter proportions that fails',
+    'fail_ncc': 'correlation limit for a fail',
+    'word_colour_tol': 'ink within this of the letters counts as the word',
+    'ink_std': 'colour spread of a one-ink mark up to',
+    'win_s': 'sound window compared (s)',
+    'quiet_db': 'sound quieter than this is ignored (dB)',
+    'pass_ncc': 'sound match needed to pass',
+    'fail_share': 'share of unmatched sound that fails',
+    'match_tol': 'frame difference counted as the same',
+    'person_tol': 'frame difference counted as nearly the same',
+    'min_change': 'change that counts as a moving run',
+    'span_ratio': 'match size against that change',
+    'move_px': 'movement that counts (px)',
+    'grow': 'size change that counts',
+    'still_px': 'movement allowed when held still (px)',
+    'still_grow': 'size change allowed when held still',
+    'still_levels': 'level change allowed when held still',
+    'still_share': 'share of frames that must be still',
+    'min_frames': 'frames needed for a capture to count',
+    'pass_scale': 'enlargement that passes',
+    'fail_scale': 'enlargement that fails',
+    'min_inliers': 'feature matches needed to find the capture',
+    'pass_gain': 'tone gain that passes as clean footage',
+    'max_offset': 'tone offset allowed',
+    'max_shift_share': 'share of pixels allowed to shift',
+    'fail_gain': 'tone gain that fails as a wash',
+    'fail_shift_share': 'share of shifted pixels that fails',
+    'fade_s': 'fade allowance at cuts (s)',
+    'fail_hue_deg': 'hue turn that fails as a recolour (degrees)',
 }
 
 
@@ -172,7 +292,7 @@ def main():
             rule = groups[tid][rid]
             t = v['test'].get('made_good') if tid in ('LAYOUT-12', 'VECTOR-04', 'MOTION-11') else v['test'].get('real')
             t = t or {}
-            bad = sum((Counter(v['test'].get(k) or {}) for k in ('made_bad', 'made_bad2', 'made_bad3')), Counter())
+            bad = sum((Counter(v['test'].get(k) or {}) for k in ('made_bad', 'made_bad2', 'made_bad3', 'made_bad4')), Counter())
             result = f'pass {t.get("pass", 0)} · person {t.get("person", 0)} · fail {t.get("fail", 0)}'
             if bad:
                 result += f' (broken files: pass {bad.get("pass", 0)} · person {bad.get("person", 0)} · fail {bad.get("fail", 0)})'
@@ -198,6 +318,7 @@ def main():
 <header><h1>Pilot-13 v2: human checks now answered by code</h1></header>
 <div class="intro">
 <p><strong>{totals["move_checks"]:,} checks ({totals["moves"]:,} rules) now run as code.</strong> Each is a measurement with a fixed rule, so the same file always gets the same answer. A PDF gives its text, fonts, sizes, colours and placed images directly. Images and video frames are read with OCR (Tesseract 5.5). Supplied photos and logos are found by feature matching and compared pixel by pixel (OpenCV 5.0). A typeface on an image is identified by drawing the line's own words in each candidate font and comparing the letter shapes. No AI vision model is used, and nothing that needs judgement moved.</p>
+<p>Round 4 (2026-10-29) added the remaining measurements: sticker and cut-file geometry (cut path offset, corner radius, arch angle), figures and signs (lining figures, dollar-sign size and alignment), rule thickness and positions, shadows, clipped whites, border casts and grain measured against the supplied photos, and video and audio (a moving mascot, no repeated shots, music taken from the supplied track, captures not enlarged). Every round-4 check was run twice and gave the same answer both times.</p>
 <p>Round 3 (2026-10-28) added colour on images, photographs compared with their supplied files, typefaces on images, and the rules that needed a definition. Where a rule is worded as how something looks ("the water reads pale turquoise as in the source", "not visibly letterspaced"), the code measures it against limits: clearly within passes, clearly outside fails, anything between goes to a person. Every moved rule below lists the limits it decides by.</p>
 <p>Every automatic check answers pass, fail or person. <strong>Person</strong> means the code could not decide, so that row goes back to a person. The code never passes what it cannot read. A near miss that could be a misreading (Lindqvist read as "Lindavist") goes to a person, not to a fail. A difference only in letter case goes to a person too. Each check keeps its ID, K question and critical flag, so scoring does not change.</p>
 </div>
@@ -208,7 +329,7 @@ def main():
 </tbody></table></div>
 <p>"Code built, stays with people" means the automatic check exists, but on the test files it gave a wrong answer or decided fewer than half of the rows, so a person keeps answering it for now.</p>
 <h2>Test results for the moved rules</h2>
-<p>The ten tasks with outputs were tested on the 102 deliverables of the 2026-09-28 run. LAYOUT-12, VECTOR-04 and MOTION-11 have no run output, so test files were made from each task's own data in four sets: a correct set, and three sets with one planted defect per file (a wrong weekday, acts out of order, an off-palette colour hidden in CSS, a title cut off at the edge, an act billed with the wrong date, a sticker traced from the wrong bag photo, a thumbnail built on another video's frame; in round 3 a scrim over the photograph, a wordmark inked in the wrong colour, a shadow behind a sticker, a title word with no outline, synthesised music in place of the supplied track). For every moved rule, each planted defect was failed or sent to a person, and no correct file failed. Every fail on the real outputs was checked by eye.</p>
+<p>The ten tasks with outputs were tested on the 102 deliverables of the 2026-09-28 run. LAYOUT-12, VECTOR-04 and MOTION-11 have no run output, so test files were made from each task's own data in five sets: a correct set, and four sets with one planted defect per file (a wrong weekday, acts out of order, an off-palette colour hidden in CSS, a title cut off at the edge, an act billed with the wrong date, a sticker traced from the wrong bag photo, a thumbnail built on another video's frame; in round 3 a scrim over the photograph, a wordmark inked in the wrong colour, a shadow behind a sticker, a title word with no outline, synthesised music in place of the supplied track; in round 4 a cut path off by a millimetre, a sharp corner, a mascot held still all film, a capture blown up into blocks, photo grain smoothed away). For every moved rule, each planted defect was failed or sent to a person, and no correct file failed. Every fail on the real outputs was checked by eye.</p>
 <div class="scroll-x"><table class="summary"><thead><tr><th>Task</th><th class="n">Rules moved</th><th class="n">Checks moved</th><th class="n">Pass</th><th class="n">Person</th><th class="n">Fail</th><th>Tested on</th><th class="n">Rules staying</th></tr></thead>
 <tbody>{"".join(task_rows)}<tr><td><strong>Total</strong></td><td class="n"><strong>{totals["moves"]:,}</strong></td><td class="n"><strong>{totals["move_checks"]:,}</strong></td><td class="n">{totals["passed"]:,}</td><td class="n">{totals["person"]:,}</td><td class="n">{totals["failed"]:,}</td><td></td><td class="n">{totals["stays"]:,}</td></tr></tbody></table></div>
 <p>Pass, Person and Fail count test rows: the 2026-09-28 outputs for the ten tasks with a run, the correct made files for LAYOUT-12, VECTOR-04 and MOTION-11.</p>

@@ -33,6 +33,9 @@ bad3: the good set with one round-3 defect in each file DEFECTS3 names, merged i
 LAYOUT-12 keys make_layout12_files.py writes). Derived files keep the good artwork, as in bad2, so a defect in a
 sticker SVG also shows where its proof (R001) or the sheet (R047 to R049) is compared with it.
 
+bad4 (round 4, MOTION-11 only): the good set with one round-4 defect in each file DEFECTS4_VIDEO names, written by
+python make_vector_motion_files.py --bad4 <out dir> (defects in <out>/defects4_video.json).
+
 Usage: python make_vector_motion_files.py <out dir>   (writes <out>/{good,bad,bad2,bad3}/<TASK>/deliverables/...)
 Run with the benchmark_v4 venv (PyMuPDF, cairosvg, OpenCV, fontTools) with ffmpeg on PATH.
 """
@@ -1096,6 +1099,11 @@ def thumbnail(title: str, capture: int, defect: str | None = None, size=(1920, 1
     acid_band, webcam_cut, small_stack, anton_payoff."""
     img = capture_frame(capture, size).copy()
     W, H = size
+    if defect == 'enlarged':   # round 4: the middle quarter of the capture frame blown up 2x, nearest neighbour (blocky)
+        img = img.crop((W // 4, H // 4, W // 4 + W // 2, H // 4 + H // 2)).resize(size, Image.NEAREST)
+    if defect == 'enlarged_soft':   # round 4: the capture frame blown up 1.5x, bilinear
+        w2, h2 = round(W / 1.5), round(H / 1.5)
+        img = img.crop(((W - w2) // 2, (H - h2) // 2, (W - w2) // 2 + w2, (H - h2) // 2 + h2)).resize(size, Image.BILINEAR)
     shown = 'WE BROKE THE MAPS' if defect == 'spelling' else title
     payoff_font = TITLE_FONT if defect == 'anton_payoff' else PAYOFF_FONT
     rows, payoff, setup_px, payoff_px = stack(shown, 64 if defect == 'small_stack' else 0, payoff_font)
@@ -1215,17 +1223,31 @@ def teaser_end(size, upload=UPLOAD) -> Image.Image:
     return img
 
 
-def teaser(path: Path, size, shots, upload=UPLOAD, synth=False):
+def teaser(path: Path, size, shots, upload=UPLOAD, synth=False, zoom=None, wash=None):
     """A teaser at FPS: the tagline card, shots cut from the captures at native size (letterboxed below native size
-    on an upright canvas), the held end card; the music bed under it all."""
+    on an upright canvas), the held end card; the music bed under it all. Round-4 defects: zoom {capture: factor}
+    blows that capture's shot up from its middle (nearest neighbour, blocky); wash {capture: (rgb, opacity)} lays a
+    flat colour over that capture's shot."""
     W, H = size
     wide = W > H
     open_n, end_n = (36, 108) if wide else (30, 66)
 
+    def treat(n, f):
+        if zoom and n in zoom:
+            k = zoom[n]
+            h0, w0 = f.shape[:2]
+            cw, ch = round(w0 / k), round(h0 / k)
+            x0, y0 = (w0 - cw) // 2, (h0 - ch) // 2
+            f = cv2.resize(f[y0:y0 + ch, x0:x0 + cw], (w0, h0), interpolation=cv2.INTER_NEAREST)
+        if wash and n in wash:
+            rgb, op = wash[n]
+            f = (f.astype(np.float32) * (1 - op) + np.array(rgb, np.float32) * op).round().astype(np.uint8)
+        return f
+
     def frames():
         yield from [np.asarray(tagline_card(size))] * open_n
         for n, first, count in shots:
-            for f in capture_clip(n, first, count):
+            for f in (treat(n, g) for g in capture_clip(n, first, count)):
                 if wide:
                     y = (f.shape[0] - H) // 2
                     yield f[y:y + H, :W]
@@ -1310,6 +1332,8 @@ def animation(path: Path, name: str, defect: str | None = None, size=(1920, 1080
             img.paste(crop, (px_, py_), crop)
         dx = round(900 * (1 - ease(t / 1.0)))
         dy = round(12 * math.sin(2 * math.pi * (t - 1.0) / 1.5)) if 1.0 <= t < 4.0 else 0
+        if defect == 'scrap_still':                # round 4: Scrap stands in place from the first frame, never moving
+            dx = dy = 0
         sc = scrap(scrap_px)
         img.paste(sc, (scrap_x + dx, H - round(scrap_px * 1237 / 1254) + dy), sc)
         return np.asarray(img)
@@ -1369,7 +1393,40 @@ def motion11_bad3(out: Path, good: Path):
     animation(d / 'channel-animation.mp4', 'STATIC FOX', 'no_outline')
 
 
+# round-4 defects planted in the bad4 set (MOTION-11, video helper): file -> (every rule it breaks, what is wrong)
+DEFECTS4_VIDEO = {
+    'MOTION-11/channel-animation': (['R017'], 'Scrap stands still in one place for the whole film: no slide in, no bob'),
+    'MOTION-11/channel-teaser': (
+        ['R054'], "capture 03's shot is the middle half of the capture blown up 2x with nearest neighbour (blocky)"),
+    'MOTION-11/channel-teaser-vertical': (
+        ['R079', 'R052'], "a 40% Static Purple wash lies over capture 05's shot"),
+    'MOTION-11/thumbnail-we-broke-the-map': (
+        ['R053'], 'the capture frame is the middle quarter of the frame blown up 2x with nearest neighbour (blocky)'),
+    'MOTION-11/thumbnail-kitchen-gone': (
+        ['R053'], 'the capture frame is blown up 1.5x (bilinear) from its middle'),
+}
+
+
+def motion11_bad4(out: Path, good: Path):
+    """The good MOTION-11 files with one round-4 defect in each file DEFECTS4_VIDEO names (others stay as good)."""
+    d = out / 'MOTION-11' / 'deliverables'
+    if not d.is_dir():
+        shutil.copytree(good / 'MOTION-11', out / 'MOTION-11')
+    animation(d / 'channel-animation.mp4', 'STATIC FOX', 'scrap_still')
+    teaser(d / 'channel-teaser.mp4', (1920, 1080), SHOTS, zoom={3: 2.0})
+    teaser(d / 'channel-teaser-vertical.mp4', (1080, 1920), UPRIGHT, wash={5: (PURPLE, 0.4)})
+    thumbnail('WE BROKE THE MAP', 1, 'enlarged').save(d / 'thumbnail-we-broke-the-map.png')
+    thumbnail('KITCHEN. GONE.', 3, 'enlarged_soft').save(d / 'thumbnail-kitchen-gone.png')
+    (out.parent / 'defects4_video.json').write_text(json.dumps(
+        {k: {'rules': rules, 'defect': why} for k, (rules, why) in DEFECTS4_VIDEO.items()}, indent=1) + '\n')
+
+
 def main():
+    if sys.argv[1] == '--bad4':   # python make_vector_motion_files.py --bad4 <out dir>: MOTION-11 bad4 files only
+        out = Path(sys.argv[2])
+        motion11_bad4(out / 'bad4', out / 'good')
+        print('made', out / 'bad4' / 'MOTION-11')
+        return
     out = Path(sys.argv[1])
     for kind in ('good', 'bad', 'bad2', 'bad3'):
         for tid in ('VECTOR-04', 'MOTION-11'):

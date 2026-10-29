@@ -17,6 +17,7 @@ ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import round2  # noqa: E402  (round 2: one handler per rule round 1 could not convert)
 import round3  # noqa: E402  (round 3: colour on images, defined roles, measurable judgement rules)
+import round4  # noqa: E402  (round 4: the remaining checks code can measure exactly)
 TASKS = ROOT / 'docs/gatsby-v7/tasks'
 GROUPS = ROOT / 'docs/gatsby-v7/annotation-pilot-v2/groups'
 HERE = Path(__file__).resolve().parent
@@ -529,6 +530,7 @@ HOW = {
 
 HOW.update(round2.HOW)
 HOW.update(round3.HOW)
+HOW.update(round4.HOW)
 
 
 def how(a) -> str:
@@ -566,7 +568,11 @@ def main():
     out_dir = out_root / 'moved'
     # round 3 also converts rules first sorted as later (colour on images), needing a definition, or judgement,
     # wherever a round-3 handler exists for them
-    plan = [p for p in json.loads(PLAN.read_text()) if p['status'] == 'auto' or (p['task'], p['rule']) in round3.R3]
+    plan = [p for p in json.loads(PLAN.read_text())
+            if p['status'] == 'auto' or (p['task'], p['rule']) in round3.R3 or (p['task'], p['rule']) in round4.R4]
+    # a round-4 handler replaces an earlier conversion of the same rule: list every replacement
+    for key in sorted(set(round4.R4) & (set(round2.R2) | set(round3.R3))):
+        print('round 4 replaces', 'round 2' if key in round2.R2 else 'round 3', 'for', *key)
     out_dir.mkdir(parents=True, exist_ok=True)
     summary, left = Counter(), defaultdict(list)
     for tid in TASK_IDS:
@@ -576,7 +582,9 @@ def main():
         moved = []
         for p in (p for p in plan if p['task'] == tid):
             rule = ctx.rules[p['rule']]
-            if (tid, p['rule']) in round2.R2:
+            if (tid, p['rule']) in round4.R4:
+                assertions = [round4.convert(tid, p['rule'], row, ctx) for row in rule['rows']]
+            elif (tid, p['rule']) in round2.R2:
                 assertions = [round2.convert(tid, p['rule'], row, ctx) for row in rule['rows']]
             elif (tid, p['rule']) in round3.R3:
                 assertions = [round3.convert(tid, p['rule'], row, ctx) for row in rule['rows']]

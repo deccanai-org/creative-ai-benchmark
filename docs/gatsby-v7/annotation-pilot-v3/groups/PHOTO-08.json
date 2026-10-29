@@ -4,8 +4,8 @@
  "source": "docs/gatsby-v7/tasks/PHOTO-08/TASK_SPEC.json verifiers_human",
  "check_count": 517,
  "rule_count": 162,
- "checks_for_people": 335,
- "checks_by_code": 182,
+ "checks_for_people": 310,
+ "checks_by_code": 207,
  "rules": [
   {
    "rule_id": "R001",
@@ -5493,8 +5493,10 @@
     ],
     "note": "The frames M3105_brookmere_sable_front34.jpg, M3105_brookmere_sable_side.jpg and M3105_brookmere_sable_rear34.jpg all hold the black body's shadow side in deep shadow."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Finds the supplied photo in the deliverable and checks its shadows keep their detail and are not turned to solid black."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-08/inventory-campaign/H044",
@@ -6427,8 +6429,10 @@
     ],
     "note": "Brand palette: Meridian Navy #1F2A3A, Showroom White #F6F7F8, Graphite #2E3237, Compass Teal #3C6E71, Steel Grey #9AA1A8. The supplied roundel artwork (meridian_roundel_transparent.svg, meridian_roundel_reversed.svg, meridian_roundel_transparent.png and meridian_roundel_reversed.png) keeps its own colours."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Leaves out every placed photograph as a whole frame, then reads every flat colour left and checks each is a palette colour."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-08/vehicle-card-r002/H012",
@@ -11698,8 +11702,10 @@
     ],
     "note": "Type system step 01 and rule: the price keeps Source Serif 4 Bold, -10 tracking and tabular lining figures."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Finds the price by OCR, splits its figures and dollar sign into ink shapes and compares their heights, baselines and tops."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-08/vehicle-card-r002/H054",
@@ -12050,8 +12056,10 @@
     ],
     "note": "Brand type system rule: “The dollar sign is 60% of the numerals' visible height and aligns with their tops.” Signature move: the dollar sign shrunk to sixty percent of numeral height and raised to the figure tops."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Finds the price by OCR, splits its figures and dollar sign into ink shapes and compares their heights, baselines and tops."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-08/vehicle-card-r002/H057",
@@ -13794,8 +13802,10 @@
     "assets": [],
     "note": "type_system.rules[3]: a 1 pt Compass Teal rule sits below the price; the type scale states that on a digital canvas 1 pt = 4/3 px."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Finds the price by OCR and the first long run of ink under it, and counts the rows of that rule."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-08/vehicle-card-r002/H078",

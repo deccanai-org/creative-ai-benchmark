@@ -2392,6 +2392,41 @@
    "how": "Reads every picture placed in the PDF, identifies its supplied photo and compares the colours tile by tile."
   },
   {
+   "check_id": "PHOTO-24/watch-keyvisual/H008",
+   "output_id": "watch-keyvisual",
+   "rule_id": "R045",
+   "k_id": "K2_Q2",
+   "critical": false,
+   "check": "No area of the dial on “Autumn watch key visual” (watch-keyvisual.png) is clipped to featureless white, hiding its markings or hands.",
+   "assertion": {
+    "op": "v2_clip_white_r4p",
+    "photos": [
+     "lunara_campaign_01.jpg",
+     "lunara_campaign_02.jpg",
+     "lunara_campaign_03.jpg",
+     "lunara_campaign_04.jpg",
+     "lunara_campaign_05.jpg",
+     "lunara_campaign_06.jpg",
+     "lunara_campaign_07.jpg",
+     "lunara_campaign_08.jpg",
+     "lunara_campaign_09.jpg",
+     "lunara_detail_caseback.jpg",
+     "lunara_detail_clasp.jpg",
+     "lunara_detail_crown.jpg",
+     "lunara_detail_handstack.jpg",
+     "lunara_detail_lug.jpg",
+     "lunara_detail_movement.jpg",
+     "lunara_pdp_ardent.jpg",
+     "lunara_pdp_halcyon.jpg",
+     "lunara_pdp_meridian.jpg",
+     "lunara_pdp_selene.jpg",
+     "lunara_pdp_vesper.jpg"
+    ],
+    "every": true
+   },
+   "how": "Finds the supplied photo in the deliverable and looks for areas clipped to flat white."
+  },
+  {
    "check_id": "PHOTO-24/watch-keyvisual/H022",
    "output_id": "watch-keyvisual",
    "rule_id": "R046",
@@ -4923,6 +4958,118 @@
     ]
    },
    "how": "Reads the type by OCR or from the PDF, leaving out lettering inside the supplied photos, and looks for the wording."
+  },
+  {
+   "check_id": "PHOTO-24/watch-keyvisual/H019",
+   "output_id": "watch-keyvisual",
+   "rule_id": "R069",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Every figure on “Autumn watch key visual” (watch-keyvisual.png) is a lining figure at full capital height, with no old-style figure dropping below the line.",
+   "assertion": {
+    "op": "v2_lining_r4t",
+    "pass_tol": 0.06,
+    "fail_short": 0.85,
+    "fail_drop": 0.12,
+    "photo_digit_max": 0.03
+   },
+   "how": "Measures every figure glyph (PDF: rendered glyph ink; images: ink pieces inside each word OCR reads) against the tallest capital or figure beside it and their common baseline."
+  },
+  {
+   "check_id": "PHOTO-24/watch-feature-r002/H025",
+   "output_id": "watch-feature-r002",
+   "rule_id": "R069",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Every figure on “Watch product-page feature - LC-25-0101” (watch-feature-r002.png) is a lining figure at full capital height, with no old-style figure dropping below the line.",
+   "assertion": {
+    "op": "v2_lining_r4t",
+    "pass_tol": 0.06,
+    "fail_short": 0.85,
+    "fail_drop": 0.12,
+    "photo_digit_max": 0.03
+   },
+   "how": "Measures every figure glyph (PDF: rendered glyph ink; images: ink pieces inside each word OCR reads) against the tallest capital or figure beside it and their common baseline."
+  },
+  {
+   "check_id": "PHOTO-24/watch-feature-r003/H024",
+   "output_id": "watch-feature-r003",
+   "rule_id": "R069",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Every figure on “Watch product-page feature - LC-25-0102” (watch-feature-r003.png) is a lining figure at full capital height, with no old-style figure dropping below the line.",
+   "assertion": {
+    "op": "v2_lining_r4t",
+    "pass_tol": 0.06,
+    "fail_short": 0.85,
+    "fail_drop": 0.12,
+    "photo_digit_max": 0.03
+   },
+   "how": "Measures every figure glyph (PDF: rendered glyph ink; images: ink pieces inside each word OCR reads) against the tallest capital or figure beside it and their common baseline."
+  },
+  {
+   "check_id": "PHOTO-24/watch-feature-r004/H023",
+   "output_id": "watch-feature-r004",
+   "rule_id": "R069",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Every figure on “Watch product-page feature - LC-25-0103” (watch-feature-r004.png) is a lining figure at full capital height, with no old-style figure dropping below the line.",
+   "assertion": {
+    "op": "v2_lining_r4t",
+    "pass_tol": 0.06,
+    "fail_short": 0.85,
+    "fail_drop": 0.12,
+    "photo_digit_max": 0.03
+   },
+   "how": "Measures every figure glyph (PDF: rendered glyph ink; images: ink pieces inside each word OCR reads) against the tallest capital or figure beside it and their common baseline."
+  },
+  {
+   "check_id": "PHOTO-24/watch-feature-r005/H024",
+   "output_id": "watch-feature-r005",
+   "rule_id": "R069",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Every figure on “Watch product-page feature - LC-25-0104” (watch-feature-r005.png) is a lining figure at full capital height, with no old-style figure dropping below the line.",
+   "assertion": {
+    "op": "v2_lining_r4t",
+    "pass_tol": 0.06,
+    "fail_short": 0.85,
+    "fail_drop": 0.12,
+    "photo_digit_max": 0.03
+   },
+   "how": "Measures every figure glyph (PDF: rendered glyph ink; images: ink pieces inside each word OCR reads) against the tallest capital or figure beside it and their common baseline."
+  },
+  {
+   "check_id": "PHOTO-24/watch-feature-r006/H023",
+   "output_id": "watch-feature-r006",
+   "rule_id": "R069",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Every figure on “Watch product-page feature - LC-25-0105” (watch-feature-r006.png) is a lining figure at full capital height, with no old-style figure dropping below the line.",
+   "assertion": {
+    "op": "v2_lining_r4t",
+    "pass_tol": 0.06,
+    "fail_short": 0.85,
+    "fail_drop": 0.12,
+    "photo_digit_max": 0.03
+   },
+   "how": "Measures every figure glyph (PDF: rendered glyph ink; images: ink pieces inside each word OCR reads) against the tallest capital or figure beside it and their common baseline."
+  },
+  {
+   "check_id": "PHOTO-24/dealer-launch/H041",
+   "output_id": "dealer-launch",
+   "rule_id": "R069",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Every figure on “Watch dealer launch sheet” (dealer-launch.pdf) is a lining figure at full capital height, with no old-style figure dropping below the line.",
+   "assertion": {
+    "op": "v2_lining_r4t",
+    "pass_tol": 0.06,
+    "fail_short": 0.85,
+    "fail_drop": 0.12,
+    "photo_digit_max": 0.03
+   },
+   "how": "Measures every figure glyph (PDF: rendered glyph ink; images: ink pieces inside each word OCR reads) against the tallest capital or figure beside it and their common baseline."
   },
   {
    "check_id": "PHOTO-24/watch-keyvisual/H020",

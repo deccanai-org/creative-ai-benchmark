@@ -180,3 +180,14 @@ heavy runs moved to a GCP VM after the laptop overloaded (same paths and pins; r
 - Still not done (needs approval): step 7, moving these checks into TASK_SPEC.json, the V7 site, the Sheet and
   `verify_outputs.py`.
 
+## Round 4 and annotation-pilot-v3 (2026-10-29)
+
+- annotation-pilot-v3 (`scripts/build_v7_annotation_pilot_v3.py`): per task, Human verifiers keeps only the rules people
+  answer; a new Auto verifiers page lists the task's automatic checks and every human check answered by code, with how it
+  is checked, its limits and its answer on the 2026-09-28 run. v1 untouched; v2 rebuilt from the same decisions.
+- Round 4 moved 54 rules (238 checks) and VECTOR-04 R074: 4,143 of 6,312 human checks by code (928 rules), 2,169 for
+  people, plus the 1,111 automatic checks: 5,254 of 7,423 checks answered by code.
+- Assessment of what is left: about 790 of the remaining checks are objective look-and-count questions a vision model
+  could answer (not started; needs Dhiren's choice of model); the rest are judgement or measurements neither code nor a
+  vision model can make reliably (typeface on small raster text, subtle edits, perceived colour casts).
+

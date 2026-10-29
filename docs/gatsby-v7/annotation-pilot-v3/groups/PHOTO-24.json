@@ -4,8 +4,8 @@
  "source": "docs/gatsby-v7/tasks/PHOTO-24/TASK_SPEC.json verifiers_human",
  "check_count": 355,
  "rule_count": 116,
- "checks_for_people": 149,
- "checks_by_code": 206,
+ "checks_for_people": 148,
+ "checks_by_code": 207,
  "rules": [
   {
    "rule_id": "R001",
@@ -4513,8 +4513,10 @@
     ],
     "note": "lunara_campaign_01.jpg, lunara_campaign_04.jpg, lunara_campaign_06.jpg and lunara_campaign_08.jpg each carry a fully clipped specular over the dial. Brief: the dial matches the approved description of the reference."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Finds the supplied photo in the deliverable and looks for areas clipped to flat white."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-24/watch-keyvisual/H008",

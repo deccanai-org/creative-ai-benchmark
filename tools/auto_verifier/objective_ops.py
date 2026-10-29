@@ -1270,3 +1270,9 @@ from objective_ops_r3 import OPS_R3  # noqa: E402
 if [k for k in OPS_R3 if OPS.get(k, OPS_R3[k]) is not OPS_R3[k]]:   # some extensions also register here themselves
     raise ValueError(f'round 3 redefines {[k for k in OPS_R3 if OPS.get(k, OPS_R3[k]) is not OPS_R3[k]]}')
 OPS.update(OPS_R3)
+
+# round 4 (2026-10-28): geometry, type measurements, photographs against their files, video and audio
+from objective_ops_r4 import OPS_R4  # noqa: E402
+if [k for k in OPS_R4 if OPS.get(k, OPS_R4[k]) is not OPS_R4[k]]:
+    raise ValueError(f'round 4 redefines {[k for k in OPS_R4 if OPS.get(k, OPS_R4[k]) is not OPS_R4[k]]}')
+OPS.update(OPS_R4)

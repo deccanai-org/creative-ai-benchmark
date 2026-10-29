@@ -9,12 +9,13 @@
    "critical": false,
    "check": "The title on “Channel thumbnail - WE SPENT SIX HOURS BUILDING A BRIDGE AND THEN DROVE STRAIGHT PAST IT” (thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas.png) reads exactly “WE SPENT SIX HOURS BUILDING A BRIDGE AND THEN DROVE STRAIGHT PAST IT”.",
    "assertion": {
-    "op": "v2_text_present",
-    "expected": [
-     "WE SPENT SIX HOURS BUILDING A BRIDGE AND THEN DROVE STRAIGHT PAST IT"
-    ]
+    "op": "title_stack_r4m",
+    "title": "WE SPENT SIX HOURS BUILDING A BRIDGE AND THEN DROVE STRAIGHT PAST IT",
+    "mode": "reads",
+    "max_rows": 6,
+    "min_conf": 60
    },
-   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+   "how": "Reads the image by OCR and finds the run of rows, top to bottom, that together read the title; then checks the reading, the rows' boxes against the image edges, or their letter height against every other line."
   },
   {
    "check_id": "MOTION-11/thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi/H003",
@@ -24,12 +25,13 @@
    "critical": false,
    "check": "The title on “Channel thumbnail - I GAVE MY TEAM ONE SIMPLE JOB AND THEY SET THE ENTIRE BASE ON FIRE” (thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi.png) reads exactly “I GAVE MY TEAM ONE SIMPLE JOB AND THEY SET THE ENTIRE BASE ON FIRE”.",
    "assertion": {
-    "op": "v2_text_present",
-    "expected": [
-     "I GAVE MY TEAM ONE SIMPLE JOB AND THEY SET THE ENTIRE BASE ON FIRE"
-    ]
+    "op": "title_stack_r4m",
+    "title": "I GAVE MY TEAM ONE SIMPLE JOB AND THEY SET THE ENTIRE BASE ON FIRE",
+    "mode": "reads",
+    "max_rows": 6,
+    "min_conf": 60
    },
-   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+   "how": "Reads the image by OCR and finds the run of rows, top to bottom, that together read the title; then checks the reading, the rows' boxes against the image edges, or their letter height against every other line."
   },
   {
    "check_id": "MOTION-11/thumbnail-we-broke-the-map/H003",
@@ -99,12 +101,12 @@
    "critical": false,
    "check": "The end card of “Animated channel title and end card” (channel-animation.mp4) carries the members line word for word: “Members get the Sunday chaos stream and the bloopers nobody should see. Link in the description.”",
    "assertion": {
-    "op": "v2_text_present",
-    "expected": [
-     "Members get the Sunday chaos stream and the bloopers nobody should see. Link in the description."
-    ]
+    "op": "end_card_line_r4m",
+    "min_conf": 60,
+    "max_rows": 6,
+    "text": "Members get the Sunday chaos stream and the bloopers nobody should see. Link in the description."
    },
-   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+   "how": "Reads the held end card by OCR and finds the rows that read the line; a final full stop lost in the reading is measured from the pixels after the last letter."
   },
   {
    "check_id": "MOTION-11/channel-animation/H003",
@@ -244,6 +246,25 @@
    "how": "Reads the end card (the last held frame) by OCR and looks for the line."
   },
   {
+   "check_id": "MOTION-11/channel-animation/H040",
+   "output_id": "channel-animation",
+   "rule_id": "R017",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "Scrap, the supplied fox mascot, moves or animates on screen at some point in “Animated channel title and end card” (channel-animation.mp4), not only held still.",
+   "assertion": {
+    "op": "scrap_moves_r4m",
+    "asset": "staticfox_scrap_transparent.png",
+    "move_px": 8,
+    "grow": 0.03,
+    "still_px": 2,
+    "still_grow": 0.01,
+    "still_share": 0.9,
+    "still_levels": 3
+   },
+   "how": "Finds the supplied mascot in the frames by feature matching and compares where he stands and how large he is from frame to frame."
+  },
+  {
    "check_id": "MOTION-11/thumbnail-we-broke-the-map/H032",
    "output_id": "thumbnail-we-broke-the-map",
    "rule_id": "R018",
@@ -251,12 +272,13 @@
    "critical": false,
    "check": "No letter of the title on “Channel thumbnail - WE BROKE THE MAP” (thumbnail-we-broke-the-map.png) is cut off at the frame edge.",
    "assertion": {
-    "op": "v2_text_inside",
-    "texts": [
-     "WE BROKE THE MAP"
-    ]
+    "op": "title_stack_r4m",
+    "title": "WE BROKE THE MAP",
+    "mode": "inside",
+    "max_rows": 6,
+    "min_conf": 60
    },
-   "how": "Checks the named text is read in full inside the page or image (for a mark, its letters read as a line of their own)."
+   "how": "Reads the image by OCR and finds the run of rows, top to bottom, that together read the title; then checks the reading, the rows' boxes against the image edges, or their letter height against every other line."
   },
   {
    "check_id": "MOTION-11/thumbnail-kitchen-gone/H031",
@@ -266,12 +288,13 @@
    "critical": false,
    "check": "No letter of the title on “Channel thumbnail - KITCHEN. GONE.” (thumbnail-kitchen-gone.png) is cut off at the frame edge.",
    "assertion": {
-    "op": "v2_text_inside",
-    "texts": [
-     "KITCHEN. GONE."
-    ]
+    "op": "title_stack_r4m",
+    "title": "KITCHEN. GONE.",
+    "mode": "inside",
+    "max_rows": 6,
+    "min_conf": 60
    },
-   "how": "Checks the named text is read in full inside the page or image (for a mark, its letters read as a line of their own)."
+   "how": "Reads the image by OCR and finds the run of rows, top to bottom, that together read the title; then checks the reading, the rows' boxes against the image edges, or their letter height against every other line."
   },
   {
    "check_id": "MOTION-11/thumbnail-do-not-open-that-door/H032",
@@ -281,12 +304,13 @@
    "critical": false,
    "check": "No letter of the title on “Channel thumbnail - DO NOT OPEN THAT DOOR” (thumbnail-do-not-open-that-door.png) is cut off at the frame edge.",
    "assertion": {
-    "op": "v2_text_inside",
-    "texts": [
-     "DO NOT OPEN THAT DOOR"
-    ]
+    "op": "title_stack_r4m",
+    "title": "DO NOT OPEN THAT DOOR",
+    "mode": "inside",
+    "max_rows": 6,
+    "min_conf": 60
    },
-   "how": "Checks the named text is read in full inside the page or image (for a mark, its letters read as a line of their own)."
+   "how": "Reads the image by OCR and finds the run of rows, top to bottom, that together read the title; then checks the reading, the rows' boxes against the image edges, or their letter height against every other line."
   },
   {
    "check_id": "MOTION-11/thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas/H030",
@@ -296,12 +320,13 @@
    "critical": false,
    "check": "No letter of the title on “Channel thumbnail - WE SPENT SIX HOURS BUILDING A BRIDGE AND THEN DROVE STRAIGHT PAST IT” (thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas.png) is cut off at the frame edge.",
    "assertion": {
-    "op": "v2_text_inside",
-    "texts": [
-     "WE SPENT SIX HOURS BUILDING A BRIDGE AND THEN DROVE STRAIGHT PAST IT"
-    ]
+    "op": "title_stack_r4m",
+    "title": "WE SPENT SIX HOURS BUILDING A BRIDGE AND THEN DROVE STRAIGHT PAST IT",
+    "mode": "inside",
+    "max_rows": 6,
+    "min_conf": 60
    },
-   "how": "Checks the named text is read in full inside the page or image (for a mark, its letters read as a line of their own)."
+   "how": "Reads the image by OCR and finds the run of rows, top to bottom, that together read the title; then checks the reading, the rows' boxes against the image edges, or their letter height against every other line."
   },
   {
    "check_id": "MOTION-11/thumbnail-everyone-off-the-platform/H001",
@@ -311,12 +336,13 @@
    "critical": false,
    "check": "No letter of the title on “Channel thumbnail - EVERYONE OFF THE PLATFORM” (thumbnail-everyone-off-the-platform.png) is cut off at the frame edge.",
    "assertion": {
-    "op": "v2_text_inside",
-    "texts": [
-     "EVERYONE OFF THE PLATFORM"
-    ]
+    "op": "title_stack_r4m",
+    "title": "EVERYONE OFF THE PLATFORM",
+    "mode": "inside",
+    "max_rows": 6,
+    "min_conf": 60
    },
-   "how": "Checks the named text is read in full inside the page or image (for a mark, its letters read as a line of their own)."
+   "how": "Reads the image by OCR and finds the run of rows, top to bottom, that together read the title; then checks the reading, the rows' boxes against the image edges, or their letter height against every other line."
   },
   {
    "check_id": "MOTION-11/thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi/H001",
@@ -326,12 +352,13 @@
    "critical": false,
    "check": "No letter of the title on “Channel thumbnail - I GAVE MY TEAM ONE SIMPLE JOB AND THEY SET THE ENTIRE BASE ON FIRE” (thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi.png) is cut off at the frame edge.",
    "assertion": {
-    "op": "v2_text_inside",
-    "texts": [
-     "I GAVE MY TEAM ONE SIMPLE JOB AND THEY SET THE ENTIRE BASE ON FIRE"
-    ]
+    "op": "title_stack_r4m",
+    "title": "I GAVE MY TEAM ONE SIMPLE JOB AND THEY SET THE ENTIRE BASE ON FIRE",
+    "mode": "inside",
+    "max_rows": 6,
+    "min_conf": 60
    },
-   "how": "Checks the named text is read in full inside the page or image (for a mark, its letters read as a line of their own)."
+   "how": "Reads the image by OCR and finds the run of rows, top to bottom, that together read the title; then checks the reading, the rows' boxes against the image edges, or their letter height against every other line."
   },
   {
    "check_id": "MOTION-11/channel-animation/H008",
@@ -371,6 +398,57 @@
     "count": 4
    },
    "how": "Finds the footage in the film's frames and matches it to the supplied captures."
+  },
+  {
+   "check_id": "MOTION-11/channel-teaser/H007",
+   "output_id": "channel-teaser",
+   "rule_id": "R028",
+   "k_id": "K1_Q3",
+   "critical": false,
+   "check": "No shot in “Channel feed teaser” (channel-teaser.mp4) is repeated or looped to fill its length.",
+   "assertion": {
+    "op": "no_repeat_r4m",
+    "min_gap": 12,
+    "min_run": 8,
+    "match_tol": 3.0,
+    "person_tol": 6.0,
+    "min_change": 4.0,
+    "span_ratio": 0.25
+   },
+   "how": "Compares every frame of the film with every frame half a second or more away and looks for a run of changing frames shown twice."
+  },
+  {
+   "check_id": "MOTION-11/channel-teaser-vertical/H005",
+   "output_id": "channel-teaser-vertical",
+   "rule_id": "R028",
+   "k_id": "K1_Q3",
+   "critical": false,
+   "check": "No shot in “Channel feed teaser upright cutdown” (channel-teaser-vertical.mp4) is repeated or looped to fill its length.",
+   "assertion": {
+    "op": "no_repeat_r4m",
+    "min_gap": 12,
+    "min_run": 8,
+    "match_tol": 3.0,
+    "person_tol": 6.0,
+    "min_change": 4.0,
+    "span_ratio": 0.25
+   },
+   "how": "Compares every frame of the film with every frame half a second or more away and looks for a run of changing frames shown twice."
+  },
+  {
+   "check_id": "MOTION-11/channel-teaser-vertical/H003",
+   "output_id": "channel-teaser-vertical",
+   "rule_id": "R030",
+   "k_id": "K1_Q3",
+   "critical": false,
+   "check": "“Channel feed teaser upright cutdown” (channel-teaser-vertical.mp4) uses shots from at least three captures, all of them also used in “Channel feed teaser” (channel-teaser.mp4).",
+   "assertion": {
+    "op": "shared_captures_r4m",
+    "deliverable": "deliverables/channel-teaser.mp4",
+    "count": 3,
+    "min_frames": 6
+   },
+   "how": "Matches every footage frame of both films to the supplied captures and compares the captures each film uses."
   },
   {
    "check_id": "MOTION-11/channel-animation/H001",
@@ -627,6 +705,42 @@
     "mode": "only_captures"
    },
    "how": "Finds the footage in the film's frames and matches it to the supplied captures."
+  },
+  {
+   "check_id": "MOTION-11/channel-teaser/H008",
+   "output_id": "channel-teaser",
+   "rule_id": "R037",
+   "k_id": "K2_Q1",
+   "critical": false,
+   "check": "The music on “Channel feed teaser” (channel-teaser.mp4) is taken from staticfox_bed.wav, with no other track.",
+   "assertion": {
+    "op": "music_from_bed_r4m",
+    "asset": "staticfox_bed.wav",
+    "win_s": 0.5,
+    "quiet_db": -45,
+    "pass_ncc": 0.9,
+    "fail_ncc": 0.5,
+    "fail_share": 0.25
+   },
+   "how": "Decodes the whole sound track and searches for every half second of it in the supplied music file by cross-correlation."
+  },
+  {
+   "check_id": "MOTION-11/channel-teaser-vertical/H006",
+   "output_id": "channel-teaser-vertical",
+   "rule_id": "R037",
+   "k_id": "K2_Q1",
+   "critical": false,
+   "check": "The music on “Channel feed teaser upright cutdown” (channel-teaser-vertical.mp4) is taken from staticfox_bed.wav, with no other track.",
+   "assertion": {
+    "op": "music_from_bed_r4m",
+    "asset": "staticfox_bed.wav",
+    "win_s": 0.5,
+    "quiet_db": -45,
+    "pass_ncc": 0.9,
+    "fail_ncc": 0.5,
+    "fail_share": 0.25
+   },
+   "how": "Decodes the whole sound track and searches for every half second of it in the supplied music file by cross-correlation."
   },
   {
    "check_id": "MOTION-11/channel-teaser/H012",
@@ -926,6 +1040,190 @@
     "asset": "staticfox_scrap_transparent.png"
    },
    "how": "Finds the supplied picture and measures whether it was stretched."
+  },
+  {
+   "check_id": "MOTION-11/channel-teaser/H011",
+   "output_id": "channel-teaser",
+   "rule_id": "R052",
+   "k_id": "K2_Q2",
+   "critical": false,
+   "check": "No shot in “Channel feed teaser” (channel-teaser.mp4) is recoloured toward the palette; each keeps the game colours of its source capture.",
+   "assertion": {
+    "op": "shot_colour_r4m",
+    "tol": 8,
+    "fail_hue_deg": 30,
+    "fade_s": 0.5
+   },
+   "how": "Aligns every footage frame with its source capture frame and compares their colours and hues."
+  },
+  {
+   "check_id": "MOTION-11/channel-teaser-vertical/H009",
+   "output_id": "channel-teaser-vertical",
+   "rule_id": "R052",
+   "k_id": "K2_Q2",
+   "critical": false,
+   "check": "No shot in “Channel feed teaser upright cutdown” (channel-teaser-vertical.mp4) is recoloured toward the palette; each keeps the game colours of its source capture.",
+   "assertion": {
+    "op": "shot_colour_r4m",
+    "tol": 8,
+    "fail_hue_deg": 30,
+    "fade_s": 0.5
+   },
+   "how": "Aligns every footage frame with its source capture frame and compares their colours and hues."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-we-broke-the-map/H035",
+   "output_id": "thumbnail-we-broke-the-map",
+   "rule_id": "R053",
+   "k_id": "K2_Q2",
+   "critical": false,
+   "check": "The capture frame on “Channel thumbnail - WE BROKE THE MAP” (thumbnail-we-broke-the-map.png) is not visibly pixelated or blocky at full size from being enlarged.",
+   "assertion": {
+    "op": "capture_scale_r4m",
+    "pass_scale": 1.05,
+    "fail_scale": 2.0,
+    "min_inliers": 30
+   },
+   "how": "Finds the capture frame behind each image or film frame by feature matching and measures its size against the recorded frame."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-everyone-off-the-platform/H034",
+   "output_id": "thumbnail-everyone-off-the-platform",
+   "rule_id": "R053",
+   "k_id": "K2_Q2",
+   "critical": false,
+   "check": "The capture frame on “Channel thumbnail - EVERYONE OFF THE PLATFORM” (thumbnail-everyone-off-the-platform.png) is not visibly pixelated or blocky at full size from being enlarged.",
+   "assertion": {
+    "op": "capture_scale_r4m",
+    "pass_scale": 1.05,
+    "fail_scale": 2.0,
+    "min_inliers": 30
+   },
+   "how": "Finds the capture frame behind each image or film frame by feature matching and measures its size against the recorded frame."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-kitchen-gone/H034",
+   "output_id": "thumbnail-kitchen-gone",
+   "rule_id": "R053",
+   "k_id": "K2_Q2",
+   "critical": false,
+   "check": "The capture frame on “Channel thumbnail - KITCHEN. GONE.” (thumbnail-kitchen-gone.png) is not visibly pixelated or blocky at full size from being enlarged.",
+   "assertion": {
+    "op": "capture_scale_r4m",
+    "pass_scale": 1.05,
+    "fail_scale": 2.0,
+    "min_inliers": 30
+   },
+   "how": "Finds the capture frame behind each image or film frame by feature matching and measures its size against the recorded frame."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-do-not-open-that-door/H035",
+   "output_id": "thumbnail-do-not-open-that-door",
+   "rule_id": "R053",
+   "k_id": "K2_Q2",
+   "critical": false,
+   "check": "The capture frame on “Channel thumbnail - DO NOT OPEN THAT DOOR” (thumbnail-do-not-open-that-door.png) is not visibly pixelated or blocky at full size from being enlarged.",
+   "assertion": {
+    "op": "capture_scale_r4m",
+    "pass_scale": 1.05,
+    "fail_scale": 2.0,
+    "min_inliers": 30
+   },
+   "how": "Finds the capture frame behind each image or film frame by feature matching and measures its size against the recorded frame."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas/H033",
+   "output_id": "thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas",
+   "rule_id": "R053",
+   "k_id": "K2_Q2",
+   "critical": false,
+   "check": "The capture frame on “Channel thumbnail - WE SPENT SIX HOURS BUILDING A BRIDGE AND THEN DROVE STRAIGHT PAST IT” (thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas.png) is not visibly pixelated or blocky at full size from being enlarged.",
+   "assertion": {
+    "op": "capture_scale_r4m",
+    "pass_scale": 1.05,
+    "fail_scale": 2.0,
+    "min_inliers": 30
+   },
+   "how": "Finds the capture frame behind each image or film frame by feature matching and measures its size against the recorded frame."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi/H033",
+   "output_id": "thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi",
+   "rule_id": "R053",
+   "k_id": "K2_Q2",
+   "critical": false,
+   "check": "The capture frame on “Channel thumbnail - I GAVE MY TEAM ONE SIMPLE JOB AND THEY SET THE ENTIRE BASE ON FIRE” (thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi.png) is not visibly pixelated or blocky at full size from being enlarged.",
+   "assertion": {
+    "op": "capture_scale_r4m",
+    "pass_scale": 1.05,
+    "fail_scale": 2.0,
+    "min_inliers": 30
+   },
+   "how": "Finds the capture frame behind each image or film frame by feature matching and measures its size against the recorded frame."
+  },
+  {
+   "check_id": "MOTION-11/channel-teaser/H039",
+   "output_id": "channel-teaser",
+   "rule_id": "R054",
+   "k_id": "K2_Q2",
+   "critical": false,
+   "check": "If capture 03 is used in “Channel feed teaser” (channel-teaser.mp4), its shots are not visibly pixelated or blocky at full size from being enlarged.",
+   "assertion": {
+    "op": "capture_scale_r4m",
+    "pass_scale": 1.05,
+    "fail_scale": 2.0,
+    "min_inliers": 30,
+    "capture": 3
+   },
+   "how": "Finds the capture frame behind each image or film frame by feature matching and measures its size against the recorded frame."
+  },
+  {
+   "check_id": "MOTION-11/channel-teaser/H040",
+   "output_id": "channel-teaser",
+   "rule_id": "R054",
+   "k_id": "K2_Q2",
+   "critical": false,
+   "check": "If capture 05 is used in “Channel feed teaser” (channel-teaser.mp4), its shots are not visibly pixelated or blocky at full size from being enlarged.",
+   "assertion": {
+    "op": "capture_scale_r4m",
+    "pass_scale": 1.05,
+    "fail_scale": 2.0,
+    "min_inliers": 30,
+    "capture": 5
+   },
+   "how": "Finds the capture frame behind each image or film frame by feature matching and measures its size against the recorded frame."
+  },
+  {
+   "check_id": "MOTION-11/channel-teaser-vertical/H046",
+   "output_id": "channel-teaser-vertical",
+   "rule_id": "R054",
+   "k_id": "K2_Q2",
+   "critical": false,
+   "check": "If capture 03 is used in “Channel feed teaser upright cutdown” (channel-teaser-vertical.mp4), its shots are not visibly pixelated or blocky at full size from being enlarged.",
+   "assertion": {
+    "op": "capture_scale_r4m",
+    "pass_scale": 1.05,
+    "fail_scale": 2.0,
+    "min_inliers": 30,
+    "capture": 3
+   },
+   "how": "Finds the capture frame behind each image or film frame by feature matching and measures its size against the recorded frame."
+  },
+  {
+   "check_id": "MOTION-11/channel-teaser-vertical/H047",
+   "output_id": "channel-teaser-vertical",
+   "rule_id": "R054",
+   "k_id": "K2_Q2",
+   "critical": false,
+   "check": "If capture 05 is used in “Channel feed teaser upright cutdown” (channel-teaser-vertical.mp4), its shots are not visibly pixelated or blocky at full size from being enlarged.",
+   "assertion": {
+    "op": "capture_scale_r4m",
+    "pass_scale": 1.05,
+    "fail_scale": 2.0,
+    "min_inliers": 30,
+    "capture": 5
+   },
+   "how": "Finds the capture frame behind each image or film frame by feature matching and measures its size against the recorded frame."
   },
   {
    "check_id": "MOTION-11/thumbnail-we-broke-the-map/H016",
@@ -3742,6 +4040,48 @@
    "how": "Finds the capture frame the thumbnail is built on and compares the tones of the visible capture with it."
   },
   {
+   "check_id": "MOTION-11/channel-teaser/H037",
+   "output_id": "channel-teaser",
+   "rule_id": "R079",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "No shot in “Channel feed teaser” (channel-teaser.mp4) carries a scrim or colour wash of any colour over the footage; plain fades between shots are allowed.",
+   "assertion": {
+    "op": "shot_wash_r4m",
+    "pass_gain": [
+     0.92,
+     1.1
+    ],
+    "max_offset": 16,
+    "max_shift_share": 0.03,
+    "fail_gain": 0.75,
+    "fail_shift_share": 0.2,
+    "fade_s": 0.5
+   },
+   "how": "Aligns every footage frame with its source capture frame and compares their tones channel by channel, allowing plain fades at the cuts."
+  },
+  {
+   "check_id": "MOTION-11/channel-teaser-vertical/H035",
+   "output_id": "channel-teaser-vertical",
+   "rule_id": "R079",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "No shot in “Channel feed teaser upright cutdown” (channel-teaser-vertical.mp4) carries a scrim or colour wash of any colour over the footage; plain fades between shots are allowed.",
+   "assertion": {
+    "op": "shot_wash_r4m",
+    "pass_gain": [
+     0.92,
+     1.1
+    ],
+    "max_offset": 16,
+    "max_shift_share": 0.03,
+    "fail_gain": 0.75,
+    "fail_shift_share": 0.2,
+    "fade_s": 0.5
+   },
+   "how": "Aligns every footage frame with its source capture frame and compares their tones channel by channel, allowing plain fades at the cuts."
+  },
+  {
    "check_id": "MOTION-11/thumbnail-we-broke-the-map/H006",
    "output_id": "thumbnail-we-broke-the-map",
    "rule_id": "R080",
@@ -5214,10 +5554,13 @@
    "critical": false,
    "check": "The largest text on “Channel thumbnail - WE SPENT SIX HOURS BUILDING A BRIDGE AND THEN DROVE STRAIGHT PAST IT” (thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas.png) is the title.",
    "assertion": {
-    "op": "v2_largest_text",
-    "text": "WE SPENT SIX HOURS BUILDING A BRIDGE AND THEN DROVE STRAIGHT PAST IT"
+    "op": "title_stack_r4m",
+    "title": "WE SPENT SIX HOURS BUILDING A BRIDGE AND THEN DROVE STRAIGHT PAST IT",
+    "mode": "largest",
+    "max_rows": 6,
+    "min_conf": 60
    },
-   "how": "Compares text sizes (font size in PDFs, letter height on images)."
+   "how": "Reads the image by OCR and finds the run of rows, top to bottom, that together read the title; then checks the reading, the rows' boxes against the image edges, or their letter height against every other line."
   },
   {
    "check_id": "MOTION-11/thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi/H009",
@@ -5227,10 +5570,13 @@
    "critical": false,
    "check": "The largest text on “Channel thumbnail - I GAVE MY TEAM ONE SIMPLE JOB AND THEY SET THE ENTIRE BASE ON FIRE” (thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi.png) is the title.",
    "assertion": {
-    "op": "v2_largest_text",
-    "text": "I GAVE MY TEAM ONE SIMPLE JOB AND THEY SET THE ENTIRE BASE ON FIRE"
+    "op": "title_stack_r4m",
+    "title": "I GAVE MY TEAM ONE SIMPLE JOB AND THEY SET THE ENTIRE BASE ON FIRE",
+    "mode": "largest",
+    "max_rows": 6,
+    "min_conf": 60
    },
-   "how": "Compares text sizes (font size in PDFs, letter height on images)."
+   "how": "Reads the image by OCR and finds the run of rows, top to bottom, that together read the title; then checks the reading, the rows' boxes against the image edges, or their letter height against every other line."
   },
   {
    "check_id": "MOTION-11/thumbnail-we-broke-the-map/H011",

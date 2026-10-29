@@ -3230,6 +3230,34 @@
    "how": "Finds the supplied photo in the deliverable, maps the placement back onto it and compares tiles, colour, tone or fine detail."
   },
   {
+   "check_id": "PHOTO-06/restoration-hollis-scan-06/H007",
+   "output_id": "restoration-hollis-scan-06",
+   "rule_id": "R037",
+   "k_id": "K2_Q2",
+   "critical": false,
+   "check": "The print's white border on “Archival restoration master - hollis_scan_06” (restoration-hollis-scan-06.png) shows no magenta or red cast.",
+   "assertion": {
+    "op": "v2_border_cast_r4p",
+    "photo": "hollis_scan_06.jpg",
+    "cast": "red"
+   },
+   "how": "Finds the supplied scan in the deliverable and reads the colour of the print's white border."
+  },
+  {
+   "check_id": "PHOTO-06/share-hollis-scan-06/H007",
+   "output_id": "share-hollis-scan-06",
+   "rule_id": "R037",
+   "k_id": "K2_Q2",
+   "critical": false,
+   "check": "The print's white border on “Family archive share image - hollis_scan_06” (share-hollis-scan-06.jpg) shows no magenta or red cast.",
+   "assertion": {
+    "op": "v2_border_cast_r4p",
+    "photo": "hollis_scan_06.jpg",
+    "cast": "red"
+   },
+   "how": "Finds the supplied scan in the deliverable and reads the colour of the print's white border."
+  },
+  {
    "check_id": "PHOTO-06/share-hollis-scan-01/H028",
    "output_id": "share-hollis-scan-01",
    "rule_id": "R038",
@@ -3354,6 +3382,34 @@
     "photo": "hollis_scan_09.jpg"
    },
    "how": "Finds the supplied photo in the deliverable, maps the placement back onto it and compares tiles, colour, tone or fine detail."
+  },
+  {
+   "check_id": "PHOTO-06/restoration-hollis-scan-07/H009",
+   "output_id": "restoration-hollis-scan-07",
+   "rule_id": "R039",
+   "k_id": "K2_Q2",
+   "critical": false,
+   "check": "The print's white border on “Archival restoration master - hollis_scan_07” (restoration-hollis-scan-07.png) shows no green or cyan cast.",
+   "assertion": {
+    "op": "v2_border_cast_r4p",
+    "photo": "hollis_scan_07.jpg",
+    "cast": "green"
+   },
+   "how": "Finds the supplied scan in the deliverable and reads the colour of the print's white border."
+  },
+  {
+   "check_id": "PHOTO-06/share-hollis-scan-07/H008",
+   "output_id": "share-hollis-scan-07",
+   "rule_id": "R039",
+   "k_id": "K2_Q2",
+   "critical": false,
+   "check": "The print's white border on “Family archive share image - hollis_scan_07” (share-hollis-scan-07.jpg) shows no green or cyan cast.",
+   "assertion": {
+    "op": "v2_border_cast_r4p",
+    "photo": "hollis_scan_07.jpg",
+    "cast": "green"
+   },
+   "how": "Finds the supplied scan in the deliverable and reads the colour of the print's white border."
   },
   {
    "check_id": "PHOTO-06/restoration-hollis-scan-02/H004",
@@ -7972,6 +8028,636 @@
    "how": "Finds the supplied photo in the deliverable, maps the placement back onto it and compares tiles, colour, tone or fine detail."
   },
   {
+   "check_id": "PHOTO-06/share-hollis-scan-01/H021",
+   "output_id": "share-hollis-scan-01",
+   "rule_id": "R072",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "If a plate numeral appears on “Family archive share image - hollis_scan_01” (share-hollis-scan-01.jpg), it sits in the left margin.",
+   "assertion": {
+    "op": "v2_caption_r4t",
+    "test": "numeral_margin",
+    "asset": "hollis_scan_01.jpg"
+   },
+   "how": "Finds the picture block, the rules and the first text line under it from ink, and measures the numeral, the name, the rule and the caption block against the picture."
+  },
+  {
+   "check_id": "PHOTO-06/share-hollis-scan-02/H054",
+   "output_id": "share-hollis-scan-02",
+   "rule_id": "R072",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "If a plate numeral appears on “Family archive share image - hollis_scan_02” (share-hollis-scan-02.jpg), it sits in the left margin.",
+   "assertion": {
+    "op": "v2_caption_r4t",
+    "test": "numeral_margin",
+    "asset": "hollis_scan_02.jpg"
+   },
+   "how": "Finds the picture block, the rules and the first text line under it from ink, and measures the numeral, the name, the rule and the caption block against the picture."
+  },
+  {
+   "check_id": "PHOTO-06/share-hollis-scan-03/H019",
+   "output_id": "share-hollis-scan-03",
+   "rule_id": "R072",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "If a plate numeral appears on “Family archive share image - hollis_scan_03” (share-hollis-scan-03.jpg), it sits in the left margin.",
+   "assertion": {
+    "op": "v2_caption_r4t",
+    "test": "numeral_margin",
+    "asset": "hollis_scan_03.jpg"
+   },
+   "how": "Finds the picture block, the rules and the first text line under it from ink, and measures the numeral, the name, the rule and the caption block against the picture."
+  },
+  {
+   "check_id": "PHOTO-06/share-hollis-scan-04/H050",
+   "output_id": "share-hollis-scan-04",
+   "rule_id": "R072",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "If a plate numeral appears on “Family archive share image - hollis_scan_04” (share-hollis-scan-04.jpg), it sits in the left margin.",
+   "assertion": {
+    "op": "v2_caption_r4t",
+    "test": "numeral_margin",
+    "asset": "hollis_scan_04.jpg"
+   },
+   "how": "Finds the picture block, the rules and the first text line under it from ink, and measures the numeral, the name, the rule and the caption block against the picture."
+  },
+  {
+   "check_id": "PHOTO-06/share-hollis-scan-05/H019",
+   "output_id": "share-hollis-scan-05",
+   "rule_id": "R072",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "If a plate numeral appears on “Family archive share image - hollis_scan_05” (share-hollis-scan-05.jpg), it sits in the left margin.",
+   "assertion": {
+    "op": "v2_caption_r4t",
+    "test": "numeral_margin",
+    "asset": "hollis_scan_05.jpg"
+   },
+   "how": "Finds the picture block, the rules and the first text line under it from ink, and measures the numeral, the name, the rule and the caption block against the picture."
+  },
+  {
+   "check_id": "PHOTO-06/share-hollis-scan-06/H053",
+   "output_id": "share-hollis-scan-06",
+   "rule_id": "R072",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "If a plate numeral appears on “Family archive share image - hollis_scan_06” (share-hollis-scan-06.jpg), it sits in the left margin.",
+   "assertion": {
+    "op": "v2_caption_r4t",
+    "test": "numeral_margin",
+    "asset": "hollis_scan_06.jpg"
+   },
+   "how": "Finds the picture block, the rules and the first text line under it from ink, and measures the numeral, the name, the rule and the caption block against the picture."
+  },
+  {
+   "check_id": "PHOTO-06/share-hollis-scan-07/H022",
+   "output_id": "share-hollis-scan-07",
+   "rule_id": "R072",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "If a plate numeral appears on “Family archive share image - hollis_scan_07” (share-hollis-scan-07.jpg), it sits in the left margin.",
+   "assertion": {
+    "op": "v2_caption_r4t",
+    "test": "numeral_margin",
+    "asset": "hollis_scan_07.jpg"
+   },
+   "how": "Finds the picture block, the rules and the first text line under it from ink, and measures the numeral, the name, the rule and the caption block against the picture."
+  },
+  {
+   "check_id": "PHOTO-06/share-hollis-scan-08/H048",
+   "output_id": "share-hollis-scan-08",
+   "rule_id": "R072",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "If a plate numeral appears on “Family archive share image - hollis_scan_08” (share-hollis-scan-08.jpg), it sits in the left margin.",
+   "assertion": {
+    "op": "v2_caption_r4t",
+    "test": "numeral_margin",
+    "asset": "hollis_scan_08.jpg"
+   },
+   "how": "Finds the picture block, the rules and the first text line under it from ink, and measures the numeral, the name, the rule and the caption block against the picture."
+  },
+  {
+   "check_id": "PHOTO-06/share-hollis-scan-09/H019",
+   "output_id": "share-hollis-scan-09",
+   "rule_id": "R072",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "If a plate numeral appears on “Family archive share image - hollis_scan_09” (share-hollis-scan-09.jpg), it sits in the left margin.",
+   "assertion": {
+    "op": "v2_caption_r4t",
+    "test": "numeral_margin",
+    "asset": "hollis_scan_09.jpg"
+   },
+   "how": "Finds the picture block, the rules and the first text line under it from ink, and measures the numeral, the name, the rule and the caption block against the picture."
+  },
+  {
+   "check_id": "PHOTO-06/share-hollis-scan-01/H022",
+   "output_id": "share-hollis-scan-01",
+   "rule_id": "R073",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "A single fine hairline rule sits beneath the sitter's name on “Family archive share image - hollis_scan_01” (share-hollis-scan-01.jpg), not a heavy bar or a double line.",
+   "assertion": {
+    "op": "v2_caption_r4t",
+    "test": "rule_single",
+    "asset": "hollis_scan_01.jpg"
+   },
+   "how": "Finds the picture block, the rules and the first text line under it from ink, and measures the numeral, the name, the rule and the caption block against the picture."
+  },
+  {
+   "check_id": "PHOTO-06/share-hollis-scan-02/H058",
+   "output_id": "share-hollis-scan-02",
+   "rule_id": "R073",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "A single fine hairline rule sits beneath the sitter's name on “Family archive share image - hollis_scan_02” (share-hollis-scan-02.jpg), not a heavy bar or a double line.",
+   "assertion": {
+    "op": "v2_caption_r4t",
+    "test": "rule_single",
+    "asset": "hollis_scan_02.jpg"
+   },
+   "how": "Finds the picture block, the rules and the first text line under it from ink, and measures the numeral, the name, the rule and the caption block against the picture."
+  },
+  {
+   "check_id": "PHOTO-06/share-hollis-scan-03/H020",
+   "output_id": "share-hollis-scan-03",
+   "rule_id": "R073",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "A single fine hairline rule sits beneath the sitter's name on “Family archive share image - hollis_scan_03” (share-hollis-scan-03.jpg), not a heavy bar or a double line.",
+   "assertion": {
+    "op": "v2_caption_r4t",
+    "test": "rule_single",
+    "asset": "hollis_scan_03.jpg"
+   },
+   "how": "Finds the picture block, the rules and the first text line under it from ink, and measures the numeral, the name, the rule and the caption block against the picture."
+  },
+  {
+   "check_id": "PHOTO-06/share-hollis-scan-04/H054",
+   "output_id": "share-hollis-scan-04",
+   "rule_id": "R073",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "A single fine hairline rule sits beneath the sitter's name on “Family archive share image - hollis_scan_04” (share-hollis-scan-04.jpg), not a heavy bar or a double line.",
+   "assertion": {
+    "op": "v2_caption_r4t",
+    "test": "rule_single",
+    "asset": "hollis_scan_04.jpg"
+   },
+   "how": "Finds the picture block, the rules and the first text line under it from ink, and measures the numeral, the name, the rule and the caption block against the picture."
+  },
+  {
+   "check_id": "PHOTO-06/share-hollis-scan-05/H020",
+   "output_id": "share-hollis-scan-05",
+   "rule_id": "R073",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "A single fine hairline rule sits beneath the sitter's name on “Family archive share image - hollis_scan_05” (share-hollis-scan-05.jpg), not a heavy bar or a double line.",
+   "assertion": {
+    "op": "v2_caption_r4t",
+    "test": "rule_single",
+    "asset": "hollis_scan_05.jpg"
+   },
+   "how": "Finds the picture block, the rules and the first text line under it from ink, and measures the numeral, the name, the rule and the caption block against the picture."
+  },
+  {
+   "check_id": "PHOTO-06/share-hollis-scan-06/H057",
+   "output_id": "share-hollis-scan-06",
+   "rule_id": "R073",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "A single fine hairline rule sits beneath the sitter's name on “Family archive share image - hollis_scan_06” (share-hollis-scan-06.jpg), not a heavy bar or a double line.",
+   "assertion": {
+    "op": "v2_caption_r4t",
+    "test": "rule_single",
+    "asset": "hollis_scan_06.jpg"
+   },
+   "how": "Finds the picture block, the rules and the first text line under it from ink, and measures the numeral, the name, the rule and the caption block against the picture."
+  },
+  {
+   "check_id": "PHOTO-06/share-hollis-scan-07/H023",
+   "output_id": "share-hollis-scan-07",
+   "rule_id": "R073",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "A single fine hairline rule sits beneath the sitter's name on “Family archive share image - hollis_scan_07” (share-hollis-scan-07.jpg), not a heavy bar or a double line.",
+   "assertion": {
+    "op": "v2_caption_r4t",
+    "test": "rule_single",
+    "asset": "hollis_scan_07.jpg"
+   },
+   "how": "Finds the picture block, the rules and the first text line under it from ink, and measures the numeral, the name, the rule and the caption block against the picture."
+  },
+  {
+   "check_id": "PHOTO-06/share-hollis-scan-08/H052",
+   "output_id": "share-hollis-scan-08",
+   "rule_id": "R073",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "A single fine hairline rule sits beneath the sitter's name on “Family archive share image - hollis_scan_08” (share-hollis-scan-08.jpg), not a heavy bar or a double line.",
+   "assertion": {
+    "op": "v2_caption_r4t",
+    "test": "rule_single",
+    "asset": "hollis_scan_08.jpg"
+   },
+   "how": "Finds the picture block, the rules and the first text line under it from ink, and measures the numeral, the name, the rule and the caption block against the picture."
+  },
+  {
+   "check_id": "PHOTO-06/share-hollis-scan-09/H020",
+   "output_id": "share-hollis-scan-09",
+   "rule_id": "R073",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "A single fine hairline rule sits beneath the sitter's name on “Family archive share image - hollis_scan_09” (share-hollis-scan-09.jpg), not a heavy bar or a double line.",
+   "assertion": {
+    "op": "v2_caption_r4t",
+    "test": "rule_single",
+    "asset": "hollis_scan_09.jpg"
+   },
+   "how": "Finds the picture block, the rules and the first text line under it from ink, and measures the numeral, the name, the rule and the caption block against the picture."
+  },
+  {
+   "check_id": "PHOTO-06/share-hollis-scan-01/H057",
+   "output_id": "share-hollis-scan-01",
+   "rule_id": "R074",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "If a plate numeral appears on “Family archive share image - hollis_scan_01” (share-hollis-scan-01.jpg), it is larger than the sitter's name.",
+   "assertion": {
+    "op": "v2_caption_r4t",
+    "test": "numeral_larger",
+    "asset": "hollis_scan_01.jpg"
+   },
+   "how": "Finds the picture block, the rules and the first text line under it from ink, and measures the numeral, the name, the rule and the caption block against the picture."
+  },
+  {
+   "check_id": "PHOTO-06/share-hollis-scan-02/H055",
+   "output_id": "share-hollis-scan-02",
+   "rule_id": "R074",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "If a plate numeral appears on “Family archive share image - hollis_scan_02” (share-hollis-scan-02.jpg), it is larger than the sitter's name.",
+   "assertion": {
+    "op": "v2_caption_r4t",
+    "test": "numeral_larger",
+    "asset": "hollis_scan_02.jpg"
+   },
+   "how": "Finds the picture block, the rules and the first text line under it from ink, and measures the numeral, the name, the rule and the caption block against the picture."
+  },
+  {
+   "check_id": "PHOTO-06/share-hollis-scan-03/H056",
+   "output_id": "share-hollis-scan-03",
+   "rule_id": "R074",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "If a plate numeral appears on “Family archive share image - hollis_scan_03” (share-hollis-scan-03.jpg), it is larger than the sitter's name.",
+   "assertion": {
+    "op": "v2_caption_r4t",
+    "test": "numeral_larger",
+    "asset": "hollis_scan_03.jpg"
+   },
+   "how": "Finds the picture block, the rules and the first text line under it from ink, and measures the numeral, the name, the rule and the caption block against the picture."
+  },
+  {
+   "check_id": "PHOTO-06/share-hollis-scan-04/H051",
+   "output_id": "share-hollis-scan-04",
+   "rule_id": "R074",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "If a plate numeral appears on “Family archive share image - hollis_scan_04” (share-hollis-scan-04.jpg), it is larger than the sitter's name.",
+   "assertion": {
+    "op": "v2_caption_r4t",
+    "test": "numeral_larger",
+    "asset": "hollis_scan_04.jpg"
+   },
+   "how": "Finds the picture block, the rules and the first text line under it from ink, and measures the numeral, the name, the rule and the caption block against the picture."
+  },
+  {
+   "check_id": "PHOTO-06/share-hollis-scan-05/H056",
+   "output_id": "share-hollis-scan-05",
+   "rule_id": "R074",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "If a plate numeral appears on “Family archive share image - hollis_scan_05” (share-hollis-scan-05.jpg), it is larger than the sitter's name.",
+   "assertion": {
+    "op": "v2_caption_r4t",
+    "test": "numeral_larger",
+    "asset": "hollis_scan_05.jpg"
+   },
+   "how": "Finds the picture block, the rules and the first text line under it from ink, and measures the numeral, the name, the rule and the caption block against the picture."
+  },
+  {
+   "check_id": "PHOTO-06/share-hollis-scan-06/H054",
+   "output_id": "share-hollis-scan-06",
+   "rule_id": "R074",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "If a plate numeral appears on “Family archive share image - hollis_scan_06” (share-hollis-scan-06.jpg), it is larger than the sitter's name.",
+   "assertion": {
+    "op": "v2_caption_r4t",
+    "test": "numeral_larger",
+    "asset": "hollis_scan_06.jpg"
+   },
+   "how": "Finds the picture block, the rules and the first text line under it from ink, and measures the numeral, the name, the rule and the caption block against the picture."
+  },
+  {
+   "check_id": "PHOTO-06/share-hollis-scan-07/H059",
+   "output_id": "share-hollis-scan-07",
+   "rule_id": "R074",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "If a plate numeral appears on “Family archive share image - hollis_scan_07” (share-hollis-scan-07.jpg), it is larger than the sitter's name.",
+   "assertion": {
+    "op": "v2_caption_r4t",
+    "test": "numeral_larger",
+    "asset": "hollis_scan_07.jpg"
+   },
+   "how": "Finds the picture block, the rules and the first text line under it from ink, and measures the numeral, the name, the rule and the caption block against the picture."
+  },
+  {
+   "check_id": "PHOTO-06/share-hollis-scan-08/H049",
+   "output_id": "share-hollis-scan-08",
+   "rule_id": "R074",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "If a plate numeral appears on “Family archive share image - hollis_scan_08” (share-hollis-scan-08.jpg), it is larger than the sitter's name.",
+   "assertion": {
+    "op": "v2_caption_r4t",
+    "test": "numeral_larger",
+    "asset": "hollis_scan_08.jpg"
+   },
+   "how": "Finds the picture block, the rules and the first text line under it from ink, and measures the numeral, the name, the rule and the caption block against the picture."
+  },
+  {
+   "check_id": "PHOTO-06/share-hollis-scan-09/H056",
+   "output_id": "share-hollis-scan-09",
+   "rule_id": "R074",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "If a plate numeral appears on “Family archive share image - hollis_scan_09” (share-hollis-scan-09.jpg), it is larger than the sitter's name.",
+   "assertion": {
+    "op": "v2_caption_r4t",
+    "test": "numeral_larger",
+    "asset": "hollis_scan_09.jpg"
+   },
+   "how": "Finds the picture block, the rules and the first text line under it from ink, and measures the numeral, the name, the rule and the caption block against the picture."
+  },
+  {
+   "check_id": "PHOTO-06/share-hollis-scan-01/H058",
+   "output_id": "share-hollis-scan-01",
+   "rule_id": "R075",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "If a plate numeral appears on “Family archive share image - hollis_scan_01” (share-hollis-scan-01.jpg), its top lines up with the top of the capital letters in the sitter's name.",
+   "assertion": {
+    "op": "v2_caption_r4t",
+    "test": "numeral_top",
+    "asset": "hollis_scan_01.jpg"
+   },
+   "how": "Finds the picture block, the rules and the first text line under it from ink, and measures the numeral, the name, the rule and the caption block against the picture."
+  },
+  {
+   "check_id": "PHOTO-06/share-hollis-scan-02/H056",
+   "output_id": "share-hollis-scan-02",
+   "rule_id": "R075",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "If a plate numeral appears on “Family archive share image - hollis_scan_02” (share-hollis-scan-02.jpg), its top lines up with the top of the capital letters in the sitter's name.",
+   "assertion": {
+    "op": "v2_caption_r4t",
+    "test": "numeral_top",
+    "asset": "hollis_scan_02.jpg"
+   },
+   "how": "Finds the picture block, the rules and the first text line under it from ink, and measures the numeral, the name, the rule and the caption block against the picture."
+  },
+  {
+   "check_id": "PHOTO-06/share-hollis-scan-03/H057",
+   "output_id": "share-hollis-scan-03",
+   "rule_id": "R075",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "If a plate numeral appears on “Family archive share image - hollis_scan_03” (share-hollis-scan-03.jpg), its top lines up with the top of the capital letters in the sitter's name.",
+   "assertion": {
+    "op": "v2_caption_r4t",
+    "test": "numeral_top",
+    "asset": "hollis_scan_03.jpg"
+   },
+   "how": "Finds the picture block, the rules and the first text line under it from ink, and measures the numeral, the name, the rule and the caption block against the picture."
+  },
+  {
+   "check_id": "PHOTO-06/share-hollis-scan-04/H052",
+   "output_id": "share-hollis-scan-04",
+   "rule_id": "R075",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "If a plate numeral appears on “Family archive share image - hollis_scan_04” (share-hollis-scan-04.jpg), its top lines up with the top of the capital letters in the sitter's name.",
+   "assertion": {
+    "op": "v2_caption_r4t",
+    "test": "numeral_top",
+    "asset": "hollis_scan_04.jpg"
+   },
+   "how": "Finds the picture block, the rules and the first text line under it from ink, and measures the numeral, the name, the rule and the caption block against the picture."
+  },
+  {
+   "check_id": "PHOTO-06/share-hollis-scan-05/H057",
+   "output_id": "share-hollis-scan-05",
+   "rule_id": "R075",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "If a plate numeral appears on “Family archive share image - hollis_scan_05” (share-hollis-scan-05.jpg), its top lines up with the top of the capital letters in the sitter's name.",
+   "assertion": {
+    "op": "v2_caption_r4t",
+    "test": "numeral_top",
+    "asset": "hollis_scan_05.jpg"
+   },
+   "how": "Finds the picture block, the rules and the first text line under it from ink, and measures the numeral, the name, the rule and the caption block against the picture."
+  },
+  {
+   "check_id": "PHOTO-06/share-hollis-scan-06/H055",
+   "output_id": "share-hollis-scan-06",
+   "rule_id": "R075",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "If a plate numeral appears on “Family archive share image - hollis_scan_06” (share-hollis-scan-06.jpg), its top lines up with the top of the capital letters in the sitter's name.",
+   "assertion": {
+    "op": "v2_caption_r4t",
+    "test": "numeral_top",
+    "asset": "hollis_scan_06.jpg"
+   },
+   "how": "Finds the picture block, the rules and the first text line under it from ink, and measures the numeral, the name, the rule and the caption block against the picture."
+  },
+  {
+   "check_id": "PHOTO-06/share-hollis-scan-07/H060",
+   "output_id": "share-hollis-scan-07",
+   "rule_id": "R075",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "If a plate numeral appears on “Family archive share image - hollis_scan_07” (share-hollis-scan-07.jpg), its top lines up with the top of the capital letters in the sitter's name.",
+   "assertion": {
+    "op": "v2_caption_r4t",
+    "test": "numeral_top",
+    "asset": "hollis_scan_07.jpg"
+   },
+   "how": "Finds the picture block, the rules and the first text line under it from ink, and measures the numeral, the name, the rule and the caption block against the picture."
+  },
+  {
+   "check_id": "PHOTO-06/share-hollis-scan-08/H050",
+   "output_id": "share-hollis-scan-08",
+   "rule_id": "R075",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "If a plate numeral appears on “Family archive share image - hollis_scan_08” (share-hollis-scan-08.jpg), its top lines up with the top of the capital letters in the sitter's name.",
+   "assertion": {
+    "op": "v2_caption_r4t",
+    "test": "numeral_top",
+    "asset": "hollis_scan_08.jpg"
+   },
+   "how": "Finds the picture block, the rules and the first text line under it from ink, and measures the numeral, the name, the rule and the caption block against the picture."
+  },
+  {
+   "check_id": "PHOTO-06/share-hollis-scan-09/H057",
+   "output_id": "share-hollis-scan-09",
+   "rule_id": "R075",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "If a plate numeral appears on “Family archive share image - hollis_scan_09” (share-hollis-scan-09.jpg), its top lines up with the top of the capital letters in the sitter's name.",
+   "assertion": {
+    "op": "v2_caption_r4t",
+    "test": "numeral_top",
+    "asset": "hollis_scan_09.jpg"
+   },
+   "how": "Finds the picture block, the rules and the first text line under it from ink, and measures the numeral, the name, the rule and the caption block against the picture."
+  },
+  {
+   "check_id": "PHOTO-06/share-hollis-scan-01/H060",
+   "output_id": "share-hollis-scan-01",
+   "rule_id": "R076",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The rule beneath the sitter's name on “Family archive share image - hollis_scan_01” (share-hollis-scan-01.jpg) starts and ends in line with the picture's left and right edges.",
+   "assertion": {
+    "op": "v2_caption_r4t",
+    "test": "rule_edges",
+    "asset": "hollis_scan_01.jpg"
+   },
+   "how": "Finds the picture block, the rules and the first text line under it from ink, and measures the numeral, the name, the rule and the caption block against the picture."
+  },
+  {
+   "check_id": "PHOTO-06/share-hollis-scan-02/H059",
+   "output_id": "share-hollis-scan-02",
+   "rule_id": "R076",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The rule beneath the sitter's name on “Family archive share image - hollis_scan_02” (share-hollis-scan-02.jpg) starts and ends in line with the picture's left and right edges.",
+   "assertion": {
+    "op": "v2_caption_r4t",
+    "test": "rule_edges",
+    "asset": "hollis_scan_02.jpg"
+   },
+   "how": "Finds the picture block, the rules and the first text line under it from ink, and measures the numeral, the name, the rule and the caption block against the picture."
+  },
+  {
+   "check_id": "PHOTO-06/share-hollis-scan-03/H059",
+   "output_id": "share-hollis-scan-03",
+   "rule_id": "R076",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The rule beneath the sitter's name on “Family archive share image - hollis_scan_03” (share-hollis-scan-03.jpg) starts and ends in line with the picture's left and right edges.",
+   "assertion": {
+    "op": "v2_caption_r4t",
+    "test": "rule_edges",
+    "asset": "hollis_scan_03.jpg"
+   },
+   "how": "Finds the picture block, the rules and the first text line under it from ink, and measures the numeral, the name, the rule and the caption block against the picture."
+  },
+  {
+   "check_id": "PHOTO-06/share-hollis-scan-04/H055",
+   "output_id": "share-hollis-scan-04",
+   "rule_id": "R076",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The rule beneath the sitter's name on “Family archive share image - hollis_scan_04” (share-hollis-scan-04.jpg) starts and ends in line with the picture's left and right edges.",
+   "assertion": {
+    "op": "v2_caption_r4t",
+    "test": "rule_edges",
+    "asset": "hollis_scan_04.jpg"
+   },
+   "how": "Finds the picture block, the rules and the first text line under it from ink, and measures the numeral, the name, the rule and the caption block against the picture."
+  },
+  {
+   "check_id": "PHOTO-06/share-hollis-scan-05/H059",
+   "output_id": "share-hollis-scan-05",
+   "rule_id": "R076",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The rule beneath the sitter's name on “Family archive share image - hollis_scan_05” (share-hollis-scan-05.jpg) starts and ends in line with the picture's left and right edges.",
+   "assertion": {
+    "op": "v2_caption_r4t",
+    "test": "rule_edges",
+    "asset": "hollis_scan_05.jpg"
+   },
+   "how": "Finds the picture block, the rules and the first text line under it from ink, and measures the numeral, the name, the rule and the caption block against the picture."
+  },
+  {
+   "check_id": "PHOTO-06/share-hollis-scan-06/H058",
+   "output_id": "share-hollis-scan-06",
+   "rule_id": "R076",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The rule beneath the sitter's name on “Family archive share image - hollis_scan_06” (share-hollis-scan-06.jpg) starts and ends in line with the picture's left and right edges.",
+   "assertion": {
+    "op": "v2_caption_r4t",
+    "test": "rule_edges",
+    "asset": "hollis_scan_06.jpg"
+   },
+   "how": "Finds the picture block, the rules and the first text line under it from ink, and measures the numeral, the name, the rule and the caption block against the picture."
+  },
+  {
+   "check_id": "PHOTO-06/share-hollis-scan-07/H062",
+   "output_id": "share-hollis-scan-07",
+   "rule_id": "R076",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The rule beneath the sitter's name on “Family archive share image - hollis_scan_07” (share-hollis-scan-07.jpg) starts and ends in line with the picture's left and right edges.",
+   "assertion": {
+    "op": "v2_caption_r4t",
+    "test": "rule_edges",
+    "asset": "hollis_scan_07.jpg"
+   },
+   "how": "Finds the picture block, the rules and the first text line under it from ink, and measures the numeral, the name, the rule and the caption block against the picture."
+  },
+  {
+   "check_id": "PHOTO-06/share-hollis-scan-08/H053",
+   "output_id": "share-hollis-scan-08",
+   "rule_id": "R076",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The rule beneath the sitter's name on “Family archive share image - hollis_scan_08” (share-hollis-scan-08.jpg) starts and ends in line with the picture's left and right edges.",
+   "assertion": {
+    "op": "v2_caption_r4t",
+    "test": "rule_edges",
+    "asset": "hollis_scan_08.jpg"
+   },
+   "how": "Finds the picture block, the rules and the first text line under it from ink, and measures the numeral, the name, the rule and the caption block against the picture."
+  },
+  {
+   "check_id": "PHOTO-06/share-hollis-scan-09/H059",
+   "output_id": "share-hollis-scan-09",
+   "rule_id": "R076",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The rule beneath the sitter's name on “Family archive share image - hollis_scan_09” (share-hollis-scan-09.jpg) starts and ends in line with the picture's left and right edges.",
+   "assertion": {
+    "op": "v2_caption_r4t",
+    "test": "rule_edges",
+    "asset": "hollis_scan_09.jpg"
+   },
+   "how": "Finds the picture block, the rules and the first text line under it from ink, and measures the numeral, the name, the rule and the caption block against the picture."
+  },
+  {
    "check_id": "PHOTO-06/restoration-hollis-scan-06/H018",
    "output_id": "restoration-hollis-scan-06",
    "rule_id": "R078",
@@ -8682,6 +9368,267 @@
     ]
    },
    "how": "Compares the text sizes (font size in PDFs, letter height on images)."
+  },
+  {
+   "check_id": "PHOTO-06/share-hollis-scan-01/H005",
+   "output_id": "share-hollis-scan-01",
+   "rule_id": "R083",
+   "k_id": "K5_Q2",
+   "critical": false,
+   "check": "The caption block on “Family archive share image - hollis_scan_01” (share-hollis-scan-01.jpg) covers a smaller area than the picture from hollis_scan_01.jpg.",
+   "assertion": {
+    "op": "v2_caption_r4t",
+    "test": "caption_area",
+    "asset": "hollis_scan_01.jpg"
+   },
+   "how": "Finds the picture block, the rules and the first text line under it from ink, and measures the numeral, the name, the rule and the caption block against the picture."
+  },
+  {
+   "check_id": "PHOTO-06/share-hollis-scan-02/H015",
+   "output_id": "share-hollis-scan-02",
+   "rule_id": "R083",
+   "k_id": "K5_Q2",
+   "critical": false,
+   "check": "The caption block on “Family archive share image - hollis_scan_02” (share-hollis-scan-02.jpg) covers a smaller area than the picture from hollis_scan_02.jpg.",
+   "assertion": {
+    "op": "v2_caption_r4t",
+    "test": "caption_area",
+    "asset": "hollis_scan_02.jpg"
+   },
+   "how": "Finds the picture block, the rules and the first text line under it from ink, and measures the numeral, the name, the rule and the caption block against the picture."
+  },
+  {
+   "check_id": "PHOTO-06/share-hollis-scan-03/H022",
+   "output_id": "share-hollis-scan-03",
+   "rule_id": "R083",
+   "k_id": "K5_Q2",
+   "critical": false,
+   "check": "The caption block on “Family archive share image - hollis_scan_03” (share-hollis-scan-03.jpg) covers a smaller area than the picture from hollis_scan_03.jpg.",
+   "assertion": {
+    "op": "v2_caption_r4t",
+    "test": "caption_area",
+    "asset": "hollis_scan_03.jpg"
+   },
+   "how": "Finds the picture block, the rules and the first text line under it from ink, and measures the numeral, the name, the rule and the caption block against the picture."
+  },
+  {
+   "check_id": "PHOTO-06/share-hollis-scan-04/H058",
+   "output_id": "share-hollis-scan-04",
+   "rule_id": "R083",
+   "k_id": "K5_Q2",
+   "critical": false,
+   "check": "The caption block on “Family archive share image - hollis_scan_04” (share-hollis-scan-04.jpg) covers a smaller area than the picture from hollis_scan_04.jpg.",
+   "assertion": {
+    "op": "v2_caption_r4t",
+    "test": "caption_area",
+    "asset": "hollis_scan_04.jpg"
+   },
+   "how": "Finds the picture block, the rules and the first text line under it from ink, and measures the numeral, the name, the rule and the caption block against the picture."
+  },
+  {
+   "check_id": "PHOTO-06/share-hollis-scan-05/H022",
+   "output_id": "share-hollis-scan-05",
+   "rule_id": "R083",
+   "k_id": "K5_Q2",
+   "critical": false,
+   "check": "The caption block on “Family archive share image - hollis_scan_05” (share-hollis-scan-05.jpg) covers a smaller area than the picture from hollis_scan_05.jpg.",
+   "assertion": {
+    "op": "v2_caption_r4t",
+    "test": "caption_area",
+    "asset": "hollis_scan_05.jpg"
+   },
+   "how": "Finds the picture block, the rules and the first text line under it from ink, and measures the numeral, the name, the rule and the caption block against the picture."
+  },
+  {
+   "check_id": "PHOTO-06/share-hollis-scan-06/H014",
+   "output_id": "share-hollis-scan-06",
+   "rule_id": "R083",
+   "k_id": "K5_Q2",
+   "critical": false,
+   "check": "The caption block on “Family archive share image - hollis_scan_06” (share-hollis-scan-06.jpg) covers a smaller area than the picture from hollis_scan_06.jpg.",
+   "assertion": {
+    "op": "v2_caption_r4t",
+    "test": "caption_area",
+    "asset": "hollis_scan_06.jpg"
+   },
+   "how": "Finds the picture block, the rules and the first text line under it from ink, and measures the numeral, the name, the rule and the caption block against the picture."
+  },
+  {
+   "check_id": "PHOTO-06/share-hollis-scan-07/H025",
+   "output_id": "share-hollis-scan-07",
+   "rule_id": "R083",
+   "k_id": "K5_Q2",
+   "critical": false,
+   "check": "The caption block on “Family archive share image - hollis_scan_07” (share-hollis-scan-07.jpg) covers a smaller area than the picture from hollis_scan_07.jpg.",
+   "assertion": {
+    "op": "v2_caption_r4t",
+    "test": "caption_area",
+    "asset": "hollis_scan_07.jpg"
+   },
+   "how": "Finds the picture block, the rules and the first text line under it from ink, and measures the numeral, the name, the rule and the caption block against the picture."
+  },
+  {
+   "check_id": "PHOTO-06/share-hollis-scan-08/H056",
+   "output_id": "share-hollis-scan-08",
+   "rule_id": "R083",
+   "k_id": "K5_Q2",
+   "critical": false,
+   "check": "The caption block on “Family archive share image - hollis_scan_08” (share-hollis-scan-08.jpg) covers a smaller area than the picture from hollis_scan_08.jpg.",
+   "assertion": {
+    "op": "v2_caption_r4t",
+    "test": "caption_area",
+    "asset": "hollis_scan_08.jpg"
+   },
+   "how": "Finds the picture block, the rules and the first text line under it from ink, and measures the numeral, the name, the rule and the caption block against the picture."
+  },
+  {
+   "check_id": "PHOTO-06/share-hollis-scan-09/H022",
+   "output_id": "share-hollis-scan-09",
+   "rule_id": "R083",
+   "k_id": "K5_Q2",
+   "critical": false,
+   "check": "The caption block on “Family archive share image - hollis_scan_09” (share-hollis-scan-09.jpg) covers a smaller area than the picture from hollis_scan_09.jpg.",
+   "assertion": {
+    "op": "v2_caption_r4t",
+    "test": "caption_area",
+    "asset": "hollis_scan_09.jpg"
+   },
+   "how": "Finds the picture block, the rules and the first text line under it from ink, and measures the numeral, the name, the rule and the caption block against the picture."
+  },
+  {
+   "check_id": "PHOTO-06/share-hollis-scan-01/H061",
+   "output_id": "share-hollis-scan-01",
+   "rule_id": "R084",
+   "k_id": "K5_Q2",
+   "critical": false,
+   "check": "The place and date line on “Family archive share image - hollis_scan_01” (share-hollis-scan-01.jpg) sits below the rule beneath the sitter's name.",
+   "assertion": {
+    "op": "v2_caption_r4t",
+    "test": "place_below",
+    "asset": "hollis_scan_01.jpg",
+    "place": "\\b(?:18|19|20)\\d\\d\\s*/\\s*[A-Z][a-z]+"
+   },
+   "how": "Finds the picture block, the rules and the first text line under it from ink, and measures the numeral, the name, the rule and the caption block against the picture."
+  },
+  {
+   "check_id": "PHOTO-06/share-hollis-scan-02/H060",
+   "output_id": "share-hollis-scan-02",
+   "rule_id": "R084",
+   "k_id": "K5_Q2",
+   "critical": false,
+   "check": "The place and date line on “Family archive share image - hollis_scan_02” (share-hollis-scan-02.jpg) sits below the rule beneath the sitter's name.",
+   "assertion": {
+    "op": "v2_caption_r4t",
+    "test": "place_below",
+    "asset": "hollis_scan_02.jpg",
+    "place": "\\b(?:18|19|20)\\d\\d\\s*/\\s*[A-Z][a-z]+"
+   },
+   "how": "Finds the picture block, the rules and the first text line under it from ink, and measures the numeral, the name, the rule and the caption block against the picture."
+  },
+  {
+   "check_id": "PHOTO-06/share-hollis-scan-03/H060",
+   "output_id": "share-hollis-scan-03",
+   "rule_id": "R084",
+   "k_id": "K5_Q2",
+   "critical": false,
+   "check": "The place and date line on “Family archive share image - hollis_scan_03” (share-hollis-scan-03.jpg) sits below the rule beneath the sitter's name.",
+   "assertion": {
+    "op": "v2_caption_r4t",
+    "test": "place_below",
+    "asset": "hollis_scan_03.jpg",
+    "place": "\\b(?:18|19|20)\\d\\d\\s*/\\s*[A-Z][a-z]+"
+   },
+   "how": "Finds the picture block, the rules and the first text line under it from ink, and measures the numeral, the name, the rule and the caption block against the picture."
+  },
+  {
+   "check_id": "PHOTO-06/share-hollis-scan-04/H057",
+   "output_id": "share-hollis-scan-04",
+   "rule_id": "R084",
+   "k_id": "K5_Q2",
+   "critical": false,
+   "check": "The place and date line on “Family archive share image - hollis_scan_04” (share-hollis-scan-04.jpg) sits below the rule beneath the sitter's name.",
+   "assertion": {
+    "op": "v2_caption_r4t",
+    "test": "place_below",
+    "asset": "hollis_scan_04.jpg",
+    "place": "\\b(?:18|19|20)\\d\\d\\s*/\\s*[A-Z][a-z]+"
+   },
+   "how": "Finds the picture block, the rules and the first text line under it from ink, and measures the numeral, the name, the rule and the caption block against the picture."
+  },
+  {
+   "check_id": "PHOTO-06/share-hollis-scan-05/H060",
+   "output_id": "share-hollis-scan-05",
+   "rule_id": "R084",
+   "k_id": "K5_Q2",
+   "critical": false,
+   "check": "The place and date line on “Family archive share image - hollis_scan_05” (share-hollis-scan-05.jpg) sits below the rule beneath the sitter's name.",
+   "assertion": {
+    "op": "v2_caption_r4t",
+    "test": "place_below",
+    "asset": "hollis_scan_05.jpg",
+    "place": "\\b(?:18|19|20)\\d\\d\\s*/\\s*[A-Z][a-z]+"
+   },
+   "how": "Finds the picture block, the rules and the first text line under it from ink, and measures the numeral, the name, the rule and the caption block against the picture."
+  },
+  {
+   "check_id": "PHOTO-06/share-hollis-scan-06/H059",
+   "output_id": "share-hollis-scan-06",
+   "rule_id": "R084",
+   "k_id": "K5_Q2",
+   "critical": false,
+   "check": "The place and date line on “Family archive share image - hollis_scan_06” (share-hollis-scan-06.jpg) sits below the rule beneath the sitter's name.",
+   "assertion": {
+    "op": "v2_caption_r4t",
+    "test": "place_below",
+    "asset": "hollis_scan_06.jpg",
+    "place": "\\b(?:18|19|20)\\d\\d\\s*/\\s*[A-Z][a-z]+"
+   },
+   "how": "Finds the picture block, the rules and the first text line under it from ink, and measures the numeral, the name, the rule and the caption block against the picture."
+  },
+  {
+   "check_id": "PHOTO-06/share-hollis-scan-07/H063",
+   "output_id": "share-hollis-scan-07",
+   "rule_id": "R084",
+   "k_id": "K5_Q2",
+   "critical": false,
+   "check": "The place and date line on “Family archive share image - hollis_scan_07” (share-hollis-scan-07.jpg) sits below the rule beneath the sitter's name.",
+   "assertion": {
+    "op": "v2_caption_r4t",
+    "test": "place_below",
+    "asset": "hollis_scan_07.jpg",
+    "place": "\\b(?:18|19|20)\\d\\d\\s*/\\s*[A-Z][a-z]+"
+   },
+   "how": "Finds the picture block, the rules and the first text line under it from ink, and measures the numeral, the name, the rule and the caption block against the picture."
+  },
+  {
+   "check_id": "PHOTO-06/share-hollis-scan-08/H055",
+   "output_id": "share-hollis-scan-08",
+   "rule_id": "R084",
+   "k_id": "K5_Q2",
+   "critical": false,
+   "check": "The place and date line on “Family archive share image - hollis_scan_08” (share-hollis-scan-08.jpg) sits below the rule beneath the sitter's name.",
+   "assertion": {
+    "op": "v2_caption_r4t",
+    "test": "place_below",
+    "asset": "hollis_scan_08.jpg",
+    "place": "\\b(?:18|19|20)\\d\\d\\s*/\\s*[A-Z][a-z]+"
+   },
+   "how": "Finds the picture block, the rules and the first text line under it from ink, and measures the numeral, the name, the rule and the caption block against the picture."
+  },
+  {
+   "check_id": "PHOTO-06/share-hollis-scan-09/H060",
+   "output_id": "share-hollis-scan-09",
+   "rule_id": "R084",
+   "k_id": "K5_Q2",
+   "critical": false,
+   "check": "The place and date line on “Family archive share image - hollis_scan_09” (share-hollis-scan-09.jpg) sits below the rule beneath the sitter's name.",
+   "assertion": {
+    "op": "v2_caption_r4t",
+    "test": "place_below",
+    "asset": "hollis_scan_09.jpg",
+    "place": "\\b(?:18|19|20)\\d\\d\\s*/\\s*[A-Z][a-z]+"
+   },
+   "how": "Finds the picture block, the rules and the first text line under it from ink, and measures the numeral, the name, the rule and the caption block against the picture."
   }
  ]
 }

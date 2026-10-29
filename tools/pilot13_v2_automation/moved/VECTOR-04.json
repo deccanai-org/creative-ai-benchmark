@@ -9,11 +9,17 @@
    "critical": false,
    "check": "“Transparent sticker proof - Window mark” (sticker-proof-window-mark.png) shows the same artwork as recovered-sticker-window-mark.svg, unchanged in shape, proportion and colour.",
    "assertion": {
-    "op": "v2_proof_vs_svg",
+    "op": "proof_same_r4v",
     "deliverable": "deliverables/recovered-sticker-window-mark.svg",
-    "mode": "same"
+    "min_iou": 0.97,
+    "fail_iou": 0.9,
+    "max_aspect": 0.02,
+    "min_px": 150,
+    "far": 30,
+    "max_changed_share": 0.001,
+    "max_opacity_share": 0.01
    },
-   "how": "Renders the delivered SVG at the proof's size and compares shape, proportion, colour and transparency."
+   "how": "The SVG is rendered at the proof size and compared region by region: the same outline and, in every flat area, the same colour."
   },
   {
    "check_id": "VECTOR-04/sticker-proof-bag-design-1/H001",
@@ -23,11 +29,17 @@
    "critical": false,
    "check": "“Transparent sticker proof - Bag design 1” (sticker-proof-bag-design-1.png) shows the same artwork as recovered-sticker-bag-design-1.svg, unchanged in shape, proportion and colour.",
    "assertion": {
-    "op": "v2_proof_vs_svg",
+    "op": "proof_same_r4v",
     "deliverable": "deliverables/recovered-sticker-bag-design-1.svg",
-    "mode": "same"
+    "min_iou": 0.97,
+    "fail_iou": 0.9,
+    "max_aspect": 0.02,
+    "min_px": 150,
+    "far": 30,
+    "max_changed_share": 0.001,
+    "max_opacity_share": 0.01
    },
-   "how": "Renders the delivered SVG at the proof's size and compares shape, proportion, colour and transparency."
+   "how": "The SVG is rendered at the proof size and compared region by region: the same outline and, in every flat area, the same colour."
   },
   {
    "check_id": "VECTOR-04/sticker-proof-bag-design-2/H001",
@@ -37,11 +49,17 @@
    "critical": false,
    "check": "“Transparent sticker proof - Bag design 2” (sticker-proof-bag-design-2.png) shows the same artwork as recovered-sticker-bag-design-2.svg, unchanged in shape, proportion and colour.",
    "assertion": {
-    "op": "v2_proof_vs_svg",
+    "op": "proof_same_r4v",
     "deliverable": "deliverables/recovered-sticker-bag-design-2.svg",
-    "mode": "same"
+    "min_iou": 0.97,
+    "fail_iou": 0.9,
+    "max_aspect": 0.02,
+    "min_px": 150,
+    "far": 30,
+    "max_changed_share": 0.001,
+    "max_opacity_share": 0.01
    },
-   "how": "Renders the delivered SVG at the proof's size and compares shape, proportion, colour and transparency."
+   "how": "The SVG is rendered at the proof size and compared region by region: the same outline and, in every flat area, the same colour."
   },
   {
    "check_id": "VECTOR-04/sticker-proof-bag-design-3/H001",
@@ -51,11 +69,17 @@
    "critical": false,
    "check": "“Transparent sticker proof - Bag design 3” (sticker-proof-bag-design-3.png) shows the same artwork as recovered-sticker-bag-design-3.svg, unchanged in shape, proportion and colour.",
    "assertion": {
-    "op": "v2_proof_vs_svg",
+    "op": "proof_same_r4v",
     "deliverable": "deliverables/recovered-sticker-bag-design-3.svg",
-    "mode": "same"
+    "min_iou": 0.97,
+    "fail_iou": 0.9,
+    "max_aspect": 0.02,
+    "min_px": 150,
+    "far": 30,
+    "max_changed_share": 0.001,
+    "max_opacity_share": 0.01
    },
-   "how": "Renders the delivered SVG at the proof's size and compares shape, proportion, colour and transparency."
+   "how": "The SVG is rendered at the proof size and compared region by region: the same outline and, in every flat area, the same colour."
   },
   {
    "check_id": "VECTOR-04/sticker-proof-companion-1/H001",
@@ -65,11 +89,17 @@
    "critical": false,
    "check": "“Transparent sticker proof - Companion 1” (sticker-proof-companion-1.png) shows the same artwork as new-sticker-companion-1.svg, unchanged in shape, proportion and colour.",
    "assertion": {
-    "op": "v2_proof_vs_svg",
+    "op": "proof_same_r4v",
     "deliverable": "deliverables/new-sticker-companion-1.svg",
-    "mode": "same"
+    "min_iou": 0.97,
+    "fail_iou": 0.9,
+    "max_aspect": 0.02,
+    "min_px": 150,
+    "far": 30,
+    "max_changed_share": 0.001,
+    "max_opacity_share": 0.01
    },
-   "how": "Renders the delivered SVG at the proof's size and compares shape, proportion, colour and transparency."
+   "how": "The SVG is rendered at the proof size and compared region by region: the same outline and, in every flat area, the same colour."
   },
   {
    "check_id": "VECTOR-04/sticker-proof-companion-2/H001",
@@ -79,11 +109,248 @@
    "critical": false,
    "check": "“Transparent sticker proof - Companion 2” (sticker-proof-companion-2.png) shows the same artwork as new-sticker-companion-2.svg, unchanged in shape, proportion and colour.",
    "assertion": {
-    "op": "v2_proof_vs_svg",
+    "op": "proof_same_r4v",
     "deliverable": "deliverables/new-sticker-companion-2.svg",
-    "mode": "same"
+    "min_iou": 0.97,
+    "fail_iou": 0.9,
+    "max_aspect": 0.02,
+    "min_px": 150,
+    "far": 30,
+    "max_changed_share": 0.001,
+    "max_opacity_share": 0.01
    },
-   "how": "Renders the delivered SVG at the proof's size and compares shape, proportion, colour and transparency."
+   "how": "The SVG is rendered at the proof size and compared region by region: the same outline and, in every flat area, the same colour."
+  },
+  {
+   "check_id": "VECTOR-04/new-sticker-companion-2/H004",
+   "output_id": "new-sticker-companion-2",
+   "rule_id": "R003",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "“Original companion sticker - Companion 2” (new-sticker-companion-2.svg) is a different drawing from new-sticker-companion-1.svg.",
+   "assertion": {
+    "op": "svg_other_drawing_r4v",
+    "deliverable": "deliverables/new-sticker-companion-1.svg",
+    "max_iou": 0.8,
+    "min_differ": 0.2
+   },
+   "how": "Both SVGs are rendered to the same size and compared: outline overlap and colour."
+  },
+  {
+   "check_id": "VECTOR-04/sticker-cut-window-mark/H001",
+   "output_id": "sticker-cut-window-mark",
+   "rule_id": "R007",
+   "k_id": "K1_Q2",
+   "critical": false,
+   "check": "The cut path in “Separate sticker cut contour - Window mark” (sticker-cut-window-mark.svg) sits 2.5 mm outside the edge of recovered-sticker-window-mark.svg all the way round.",
+   "assertion": {
+    "op": "cut_offset_r4v",
+    "deliverable": "deliverables/recovered-sticker-window-mark.svg",
+    "offset_mm": 2.5,
+    "tol": 0.15,
+    "fail_mm": 0.5,
+    "min_share": 0.9
+   },
+   "how": "The cut path is read point by point and its distance to the artwork edge measured in millimetres; it must sit at the offset all the way round, never closer."
+  },
+  {
+   "check_id": "VECTOR-04/sticker-cut-bag-design-1/H001",
+   "output_id": "sticker-cut-bag-design-1",
+   "rule_id": "R007",
+   "k_id": "K1_Q2",
+   "critical": false,
+   "check": "The cut path in “Separate sticker cut contour - Bag design 1” (sticker-cut-bag-design-1.svg) sits 2.5 mm outside the edge of recovered-sticker-bag-design-1.svg all the way round.",
+   "assertion": {
+    "op": "cut_offset_r4v",
+    "deliverable": "deliverables/recovered-sticker-bag-design-1.svg",
+    "offset_mm": 2.5,
+    "tol": 0.15,
+    "fail_mm": 0.5,
+    "min_share": 0.9
+   },
+   "how": "The cut path is read point by point and its distance to the artwork edge measured in millimetres; it must sit at the offset all the way round, never closer."
+  },
+  {
+   "check_id": "VECTOR-04/sticker-cut-bag-design-2/H001",
+   "output_id": "sticker-cut-bag-design-2",
+   "rule_id": "R007",
+   "k_id": "K1_Q2",
+   "critical": false,
+   "check": "The cut path in “Separate sticker cut contour - Bag design 2” (sticker-cut-bag-design-2.svg) sits 2.5 mm outside the edge of recovered-sticker-bag-design-2.svg all the way round.",
+   "assertion": {
+    "op": "cut_offset_r4v",
+    "deliverable": "deliverables/recovered-sticker-bag-design-2.svg",
+    "offset_mm": 2.5,
+    "tol": 0.15,
+    "fail_mm": 0.5,
+    "min_share": 0.9
+   },
+   "how": "The cut path is read point by point and its distance to the artwork edge measured in millimetres; it must sit at the offset all the way round, never closer."
+  },
+  {
+   "check_id": "VECTOR-04/sticker-cut-bag-design-3/H001",
+   "output_id": "sticker-cut-bag-design-3",
+   "rule_id": "R007",
+   "k_id": "K1_Q2",
+   "critical": false,
+   "check": "The cut path in “Separate sticker cut contour - Bag design 3” (sticker-cut-bag-design-3.svg) sits 2.5 mm outside the edge of recovered-sticker-bag-design-3.svg all the way round.",
+   "assertion": {
+    "op": "cut_offset_r4v",
+    "deliverable": "deliverables/recovered-sticker-bag-design-3.svg",
+    "offset_mm": 2.5,
+    "tol": 0.15,
+    "fail_mm": 0.5,
+    "min_share": 0.9
+   },
+   "how": "The cut path is read point by point and its distance to the artwork edge measured in millimetres; it must sit at the offset all the way round, never closer."
+  },
+  {
+   "check_id": "VECTOR-04/sticker-cut-companion-1/H001",
+   "output_id": "sticker-cut-companion-1",
+   "rule_id": "R007",
+   "k_id": "K1_Q2",
+   "critical": false,
+   "check": "The cut path in “Separate sticker cut contour - Companion 1” (sticker-cut-companion-1.svg) sits 2.5 mm outside the edge of new-sticker-companion-1.svg all the way round.",
+   "assertion": {
+    "op": "cut_offset_r4v",
+    "deliverable": "deliverables/new-sticker-companion-1.svg",
+    "offset_mm": 2.5,
+    "tol": 0.15,
+    "fail_mm": 0.5,
+    "min_share": 0.9
+   },
+   "how": "The cut path is read point by point and its distance to the artwork edge measured in millimetres; it must sit at the offset all the way round, never closer."
+  },
+  {
+   "check_id": "VECTOR-04/sticker-cut-companion-2/H001",
+   "output_id": "sticker-cut-companion-2",
+   "rule_id": "R007",
+   "k_id": "K1_Q2",
+   "critical": false,
+   "check": "The cut path in “Separate sticker cut contour - Companion 2” (sticker-cut-companion-2.svg) sits 2.5 mm outside the edge of new-sticker-companion-2.svg all the way round.",
+   "assertion": {
+    "op": "cut_offset_r4v",
+    "deliverable": "deliverables/new-sticker-companion-2.svg",
+    "offset_mm": 2.5,
+    "tol": 0.15,
+    "fail_mm": 0.5,
+    "min_share": 0.9
+   },
+   "how": "The cut path is read point by point and its distance to the artwork edge measured in millimetres; it must sit at the offset all the way round, never closer."
+  },
+  {
+   "check_id": "VECTOR-04/sticker-cut-window-mark/H002",
+   "output_id": "sticker-cut-window-mark",
+   "rule_id": "R008",
+   "k_id": "K1_Q2",
+   "critical": false,
+   "check": "Every corner of the cut path in “Separate sticker cut contour - Window mark” (sticker-cut-window-mark.svg) has a radius of at least 3 mm.",
+   "assertion": {
+    "op": "cut_corners_r4v",
+    "radius_mm": 3.0,
+    "tol": 0.15,
+    "fail_mm": 2.2,
+    "max_turn_deg": 25,
+    "sigma_mm": 0.5,
+    "turn_window_mm": 0.3,
+    "turn_sigma_mm": 0.1
+   },
+   "how": "The cut path is read from its geometry and the tightest bend along it measured as a radius in millimetres."
+  },
+  {
+   "check_id": "VECTOR-04/sticker-cut-bag-design-1/H002",
+   "output_id": "sticker-cut-bag-design-1",
+   "rule_id": "R008",
+   "k_id": "K1_Q2",
+   "critical": false,
+   "check": "Every corner of the cut path in “Separate sticker cut contour - Bag design 1” (sticker-cut-bag-design-1.svg) has a radius of at least 3 mm.",
+   "assertion": {
+    "op": "cut_corners_r4v",
+    "radius_mm": 3.0,
+    "tol": 0.15,
+    "fail_mm": 2.2,
+    "max_turn_deg": 25,
+    "sigma_mm": 0.5,
+    "turn_window_mm": 0.3,
+    "turn_sigma_mm": 0.1
+   },
+   "how": "The cut path is read from its geometry and the tightest bend along it measured as a radius in millimetres."
+  },
+  {
+   "check_id": "VECTOR-04/sticker-cut-bag-design-2/H002",
+   "output_id": "sticker-cut-bag-design-2",
+   "rule_id": "R008",
+   "k_id": "K1_Q2",
+   "critical": false,
+   "check": "Every corner of the cut path in “Separate sticker cut contour - Bag design 2” (sticker-cut-bag-design-2.svg) has a radius of at least 3 mm.",
+   "assertion": {
+    "op": "cut_corners_r4v",
+    "radius_mm": 3.0,
+    "tol": 0.15,
+    "fail_mm": 2.2,
+    "max_turn_deg": 25,
+    "sigma_mm": 0.5,
+    "turn_window_mm": 0.3,
+    "turn_sigma_mm": 0.1
+   },
+   "how": "The cut path is read from its geometry and the tightest bend along it measured as a radius in millimetres."
+  },
+  {
+   "check_id": "VECTOR-04/sticker-cut-bag-design-3/H002",
+   "output_id": "sticker-cut-bag-design-3",
+   "rule_id": "R008",
+   "k_id": "K1_Q2",
+   "critical": false,
+   "check": "Every corner of the cut path in “Separate sticker cut contour - Bag design 3” (sticker-cut-bag-design-3.svg) has a radius of at least 3 mm.",
+   "assertion": {
+    "op": "cut_corners_r4v",
+    "radius_mm": 3.0,
+    "tol": 0.15,
+    "fail_mm": 2.2,
+    "max_turn_deg": 25,
+    "sigma_mm": 0.5,
+    "turn_window_mm": 0.3,
+    "turn_sigma_mm": 0.1
+   },
+   "how": "The cut path is read from its geometry and the tightest bend along it measured as a radius in millimetres."
+  },
+  {
+   "check_id": "VECTOR-04/sticker-cut-companion-1/H002",
+   "output_id": "sticker-cut-companion-1",
+   "rule_id": "R008",
+   "k_id": "K1_Q2",
+   "critical": false,
+   "check": "Every corner of the cut path in “Separate sticker cut contour - Companion 1” (sticker-cut-companion-1.svg) has a radius of at least 3 mm.",
+   "assertion": {
+    "op": "cut_corners_r4v",
+    "radius_mm": 3.0,
+    "tol": 0.15,
+    "fail_mm": 2.2,
+    "max_turn_deg": 25,
+    "sigma_mm": 0.5,
+    "turn_window_mm": 0.3,
+    "turn_sigma_mm": 0.1
+   },
+   "how": "The cut path is read from its geometry and the tightest bend along it measured as a radius in millimetres."
+  },
+  {
+   "check_id": "VECTOR-04/sticker-cut-companion-2/H002",
+   "output_id": "sticker-cut-companion-2",
+   "rule_id": "R008",
+   "k_id": "K1_Q2",
+   "critical": false,
+   "check": "Every corner of the cut path in “Separate sticker cut contour - Companion 2” (sticker-cut-companion-2.svg) has a radius of at least 3 mm.",
+   "assertion": {
+    "op": "cut_corners_r4v",
+    "radius_mm": 3.0,
+    "tol": 0.15,
+    "fail_mm": 2.2,
+    "max_turn_deg": 25,
+    "sigma_mm": 0.5,
+    "turn_window_mm": 0.3,
+    "turn_sigma_mm": 0.1
+   },
+   "how": "The cut path is read from its geometry and the tightest bend along it measured as a radius in millimetres."
   },
   {
    "check_id": "VECTOR-04/sticker-cut-window-mark/H003",
@@ -224,6 +491,41 @@
     "long_mm": 55
    },
    "how": "Reads the cut paths on the sheet's cut layer and measures them."
+  },
+  {
+   "check_id": "VECTOR-04/gang-sheet/H014",
+   "output_id": "gang-sheet",
+   "rule_id": "R014",
+   "k_id": "K1_Q2",
+   "critical": false,
+   "check": "Every cut path on “Sticker imposed production sheet” (gang-sheet.pdf) sits 2.5 mm outside the edge of its sticker's artwork.",
+   "assertion": {
+    "op": "cut_offset_r4v",
+    "offset_mm": 2.5,
+    "tol": 0.15,
+    "fail_mm": 0.5,
+    "min_share": 0.9
+   },
+   "how": "The cut path is read point by point and its distance to the artwork edge measured in millimetres; it must sit at the offset all the way round, never closer."
+  },
+  {
+   "check_id": "VECTOR-04/gang-sheet/H015",
+   "output_id": "gang-sheet",
+   "rule_id": "R015",
+   "k_id": "K1_Q2",
+   "critical": false,
+   "check": "Every corner of every cut path on “Sticker imposed production sheet” (gang-sheet.pdf) has a radius of at least 3 mm.",
+   "assertion": {
+    "op": "cut_corners_r4v",
+    "radius_mm": 3.0,
+    "tol": 0.15,
+    "fail_mm": 2.2,
+    "max_turn_deg": 25,
+    "sigma_mm": 0.5,
+    "turn_window_mm": 0.3,
+    "turn_sigma_mm": 0.1
+   },
+   "how": "The cut path is read from its geometry and the tightest bend along it measured as a radius in millimetres."
   },
   {
    "check_id": "VECTOR-04/recovered-sticker-window-mark/H018",
@@ -461,11 +763,12 @@
    "critical": false,
    "check": "The open negative space inside the artwork on “Transparent sticker proof - Window mark” (sticker-proof-window-mark.png) is transparent, with no white or coloured fill or rectangle behind it.",
    "assertion": {
-    "op": "v2_proof_vs_svg",
+    "op": "proof_open_r4v",
     "deliverable": "deliverables/recovered-sticker-window-mark.svg",
-    "mode": "transparent"
+    "thin_px": 12,
+    "max_share": 0.02
    },
-   "how": "Renders the delivered SVG at the proof's size and compares shape, proportion, colour and transparency."
+   "how": "Where the SVG has no ink, the proof must be transparent; filled areas are counted, thin lines are left to the cut line check."
   },
   {
    "check_id": "VECTOR-04/sticker-proof-bag-design-1/H012",
@@ -475,11 +778,12 @@
    "critical": false,
    "check": "The open negative space inside the artwork on “Transparent sticker proof - Bag design 1” (sticker-proof-bag-design-1.png) is transparent, with no white or coloured fill or rectangle behind it.",
    "assertion": {
-    "op": "v2_proof_vs_svg",
+    "op": "proof_open_r4v",
     "deliverable": "deliverables/recovered-sticker-bag-design-1.svg",
-    "mode": "transparent"
+    "thin_px": 12,
+    "max_share": 0.02
    },
-   "how": "Renders the delivered SVG at the proof's size and compares shape, proportion, colour and transparency."
+   "how": "Where the SVG has no ink, the proof must be transparent; filled areas are counted, thin lines are left to the cut line check."
   },
   {
    "check_id": "VECTOR-04/sticker-proof-bag-design-2/H012",
@@ -489,11 +793,12 @@
    "critical": false,
    "check": "The open negative space inside the artwork on “Transparent sticker proof - Bag design 2” (sticker-proof-bag-design-2.png) is transparent, with no white or coloured fill or rectangle behind it.",
    "assertion": {
-    "op": "v2_proof_vs_svg",
+    "op": "proof_open_r4v",
     "deliverable": "deliverables/recovered-sticker-bag-design-2.svg",
-    "mode": "transparent"
+    "thin_px": 12,
+    "max_share": 0.02
    },
-   "how": "Renders the delivered SVG at the proof's size and compares shape, proportion, colour and transparency."
+   "how": "Where the SVG has no ink, the proof must be transparent; filled areas are counted, thin lines are left to the cut line check."
   },
   {
    "check_id": "VECTOR-04/sticker-proof-bag-design-3/H012",
@@ -503,11 +808,12 @@
    "critical": false,
    "check": "The open negative space inside the artwork on “Transparent sticker proof - Bag design 3” (sticker-proof-bag-design-3.png) is transparent, with no white or coloured fill or rectangle behind it.",
    "assertion": {
-    "op": "v2_proof_vs_svg",
+    "op": "proof_open_r4v",
     "deliverable": "deliverables/recovered-sticker-bag-design-3.svg",
-    "mode": "transparent"
+    "thin_px": 12,
+    "max_share": 0.02
    },
-   "how": "Renders the delivered SVG at the proof's size and compares shape, proportion, colour and transparency."
+   "how": "Where the SVG has no ink, the proof must be transparent; filled areas are counted, thin lines are left to the cut line check."
   },
   {
    "check_id": "VECTOR-04/sticker-proof-companion-1/H016",
@@ -517,11 +823,12 @@
    "critical": false,
    "check": "The open negative space inside the artwork on “Transparent sticker proof - Companion 1” (sticker-proof-companion-1.png) is transparent, with no white or coloured fill or rectangle behind it.",
    "assertion": {
-    "op": "v2_proof_vs_svg",
+    "op": "proof_open_r4v",
     "deliverable": "deliverables/new-sticker-companion-1.svg",
-    "mode": "transparent"
+    "thin_px": 12,
+    "max_share": 0.02
    },
-   "how": "Renders the delivered SVG at the proof's size and compares shape, proportion, colour and transparency."
+   "how": "Where the SVG has no ink, the proof must be transparent; filled areas are counted, thin lines are left to the cut line check."
   },
   {
    "check_id": "VECTOR-04/sticker-proof-companion-2/H016",
@@ -531,11 +838,12 @@
    "critical": false,
    "check": "The open negative space inside the artwork on “Transparent sticker proof - Companion 2” (sticker-proof-companion-2.png) is transparent, with no white or coloured fill or rectangle behind it.",
    "assertion": {
-    "op": "v2_proof_vs_svg",
+    "op": "proof_open_r4v",
     "deliverable": "deliverables/new-sticker-companion-2.svg",
-    "mode": "transparent"
+    "thin_px": 12,
+    "max_share": 0.02
    },
-   "how": "Renders the delivered SVG at the proof's size and compares shape, proportion, colour and transparency."
+   "how": "Where the SVG has no ink, the proof must be transparent; filled areas are counted, thin lines are left to the cut line check."
   },
   {
    "check_id": "VECTOR-04/recovered-sticker-window-mark/H016",
@@ -766,6 +1074,96 @@
    "how": "Reads the cut-contour SVG's groups and paths."
   },
   {
+   "check_id": "VECTOR-04/sticker-proof-window-mark/H002",
+   "output_id": "sticker-proof-window-mark",
+   "rule_id": "R022",
+   "k_id": "K1_Q3",
+   "critical": false,
+   "check": "“Transparent sticker proof - Window mark” (sticker-proof-window-mark.png) shows no cut line drawn into the artwork.",
+   "assertion": {
+    "op": "proof_no_cutline_r4v",
+    "deliverable": "deliverables/recovered-sticker-window-mark.svg",
+    "thin_px": 12,
+    "cover": 0.85
+   },
+   "how": "The proof is searched for a thin line running round the artwork or thin ink in the cut-line magenta, and compared with its SVG."
+  },
+  {
+   "check_id": "VECTOR-04/sticker-proof-bag-design-1/H002",
+   "output_id": "sticker-proof-bag-design-1",
+   "rule_id": "R022",
+   "k_id": "K1_Q3",
+   "critical": false,
+   "check": "“Transparent sticker proof - Bag design 1” (sticker-proof-bag-design-1.png) shows no cut line drawn into the artwork.",
+   "assertion": {
+    "op": "proof_no_cutline_r4v",
+    "deliverable": "deliverables/recovered-sticker-bag-design-1.svg",
+    "thin_px": 12,
+    "cover": 0.85
+   },
+   "how": "The proof is searched for a thin line running round the artwork or thin ink in the cut-line magenta, and compared with its SVG."
+  },
+  {
+   "check_id": "VECTOR-04/sticker-proof-bag-design-2/H002",
+   "output_id": "sticker-proof-bag-design-2",
+   "rule_id": "R022",
+   "k_id": "K1_Q3",
+   "critical": false,
+   "check": "“Transparent sticker proof - Bag design 2” (sticker-proof-bag-design-2.png) shows no cut line drawn into the artwork.",
+   "assertion": {
+    "op": "proof_no_cutline_r4v",
+    "deliverable": "deliverables/recovered-sticker-bag-design-2.svg",
+    "thin_px": 12,
+    "cover": 0.85
+   },
+   "how": "The proof is searched for a thin line running round the artwork or thin ink in the cut-line magenta, and compared with its SVG."
+  },
+  {
+   "check_id": "VECTOR-04/sticker-proof-bag-design-3/H002",
+   "output_id": "sticker-proof-bag-design-3",
+   "rule_id": "R022",
+   "k_id": "K1_Q3",
+   "critical": false,
+   "check": "“Transparent sticker proof - Bag design 3” (sticker-proof-bag-design-3.png) shows no cut line drawn into the artwork.",
+   "assertion": {
+    "op": "proof_no_cutline_r4v",
+    "deliverable": "deliverables/recovered-sticker-bag-design-3.svg",
+    "thin_px": 12,
+    "cover": 0.85
+   },
+   "how": "The proof is searched for a thin line running round the artwork or thin ink in the cut-line magenta, and compared with its SVG."
+  },
+  {
+   "check_id": "VECTOR-04/sticker-proof-companion-1/H002",
+   "output_id": "sticker-proof-companion-1",
+   "rule_id": "R022",
+   "k_id": "K1_Q3",
+   "critical": false,
+   "check": "“Transparent sticker proof - Companion 1” (sticker-proof-companion-1.png) shows no cut line drawn into the artwork.",
+   "assertion": {
+    "op": "proof_no_cutline_r4v",
+    "deliverable": "deliverables/new-sticker-companion-1.svg",
+    "thin_px": 12,
+    "cover": 0.85
+   },
+   "how": "The proof is searched for a thin line running round the artwork or thin ink in the cut-line magenta, and compared with its SVG."
+  },
+  {
+   "check_id": "VECTOR-04/sticker-proof-companion-2/H002",
+   "output_id": "sticker-proof-companion-2",
+   "rule_id": "R022",
+   "k_id": "K1_Q3",
+   "critical": false,
+   "check": "“Transparent sticker proof - Companion 2” (sticker-proof-companion-2.png) shows no cut line drawn into the artwork.",
+   "assertion": {
+    "op": "proof_no_cutline_r4v",
+    "deliverable": "deliverables/new-sticker-companion-2.svg",
+    "thin_px": 12,
+    "cover": 0.85
+   },
+   "how": "The proof is searched for a thin line running round the artwork or thin ink in the cut-line magenta, and compared with its SVG."
+  },
+  {
    "check_id": "VECTOR-04/gang-sheet/H003",
    "output_id": "gang-sheet",
    "rule_id": "R024",
@@ -791,6 +1189,19 @@
     "count": 6
    },
    "how": "Reads the cut paths on the sheet's cut layer and measures them."
+  },
+  {
+   "check_id": "VECTOR-04/gang-sheet/H017",
+   "output_id": "gang-sheet",
+   "rule_id": "R026",
+   "k_id": "K1_Q3",
+   "critical": false,
+   "check": "On “Sticker imposed production sheet” (gang-sheet.pdf) no cut line is drawn into the sticker artwork.",
+   "assertion": {
+    "op": "sheet_no_cutline_r4v",
+    "cover": 0.85
+   },
+   "how": "The sheet's drawings inside each cut path are read for an unfilled stroke running round the sticker or a cut colour off the cut layer."
   },
   {
    "check_id": "VECTOR-04/gang-sheet/H024",
@@ -1697,6 +2108,41 @@
    "how": "Reads the colour of the type lying outside the stickers' cut paths."
   },
   {
+   "check_id": "VECTOR-04/sticker-proof-window-mark/H014",
+   "output_id": "sticker-proof-window-mark",
+   "rule_id": "R066",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The MERIDIAN & ASH wordmark on “Transparent sticker proof - Window mark” (sticker-proof-window-mark.png) is solid Roast Brown #3E2A20.",
+   "assertion": {
+    "op": "window_part_r4v",
+    "deliverable": "deliverables/recovered-sticker-window-mark.svg",
+    "part": "wordmark",
+    "hex": "#3E2A20",
+    "tol": 5,
+    "pass_share": 0.95,
+    "far": 30
+   },
+   "how": "The window mark's parts are found by their shape (the roundel an ellipse, the ring a thin ellipse round it, the leaf inside the roundel, the lettering outside the ring) and each part's fill read from the SVG, or from the proof where the part shows."
+  },
+  {
+   "check_id": "VECTOR-04/recovered-sticker-window-mark/H014",
+   "output_id": "recovered-sticker-window-mark",
+   "rule_id": "R067",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The MERIDIAN & ASH wordmark on “Recovered sticker artwork - Window mark” (recovered-sticker-window-mark.svg) is solid Roast Brown #3E2A20.",
+   "assertion": {
+    "op": "window_part_r4v",
+    "part": "wordmark",
+    "hex": "#3E2A20",
+    "tol": 5,
+    "pass_share": 0.95,
+    "far": 30
+   },
+   "how": "The window mark's parts are found by their shape (the roundel an ellipse, the ring a thin ellipse round it, the leaf inside the roundel, the lettering outside the ring) and each part's fill read from the SVG, or from the proof where the part shows."
+  },
+  {
    "check_id": "VECTOR-04/recovered-sticker-bag-design-1/H010",
    "output_id": "recovered-sticker-bag-design-1",
    "rule_id": "R068",
@@ -1806,6 +2252,40 @@
    "how": "Reads each text line by OCR, then the colour of its letters and of the ground round it."
   },
   {
+   "check_id": "VECTOR-04/recovered-sticker-window-mark/H020",
+   "output_id": "recovered-sticker-window-mark",
+   "rule_id": "R072",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The filled roundel on “Recovered sticker artwork - Window mark” (recovered-sticker-window-mark.svg) is solid Ash Green #5B6B54.",
+   "assertion": {
+    "op": "window_part_r4v",
+    "part": "roundel",
+    "hex": "#5B6B54",
+    "tol": 5,
+    "pass_share": 0.95,
+    "far": 30
+   },
+   "how": "The window mark's parts are found by their shape (the roundel an ellipse, the ring a thin ellipse round it, the leaf inside the roundel, the lettering outside the ring) and each part's fill read from the SVG, or from the proof where the part shows."
+  },
+  {
+   "check_id": "VECTOR-04/recovered-sticker-window-mark/H021",
+   "output_id": "recovered-sticker-window-mark",
+   "rule_id": "R073",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The ash leaf on “Recovered sticker artwork - Window mark” (recovered-sticker-window-mark.svg) is solid Warm Cream #F3E7D3.",
+   "assertion": {
+    "op": "window_part_r4v",
+    "part": "leaf",
+    "hex": "#F3E7D3",
+    "tol": 5,
+    "pass_share": 0.95,
+    "far": 30
+   },
+   "how": "The window mark's parts are found by their shape (the roundel an ellipse, the ring a thin ellipse round it, the leaf inside the roundel, the lettering outside the ring) and each part's fill read from the SVG, or from the proof where the part shows."
+  },
+  {
    "check_id": "VECTOR-04/sticker-proof-window-mark/H017",
    "output_id": "sticker-proof-window-mark",
    "rule_id": "R074",
@@ -1894,6 +2374,77 @@
     ]
    },
    "how": "Finds every piece in the colour on the proof and checks each is small detail, not a main shape, backing or type."
+  },
+  {
+   "check_id": "VECTOR-04/sticker-proof-window-mark/H018",
+   "output_id": "sticker-proof-window-mark",
+   "rule_id": "R075",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The filled roundel on “Transparent sticker proof - Window mark” (sticker-proof-window-mark.png) is solid Ash Green #5B6B54.",
+   "assertion": {
+    "op": "window_part_r4v",
+    "deliverable": "deliverables/recovered-sticker-window-mark.svg",
+    "part": "roundel",
+    "hex": "#5B6B54",
+    "tol": 5,
+    "pass_share": 0.95,
+    "far": 30
+   },
+   "how": "The window mark's parts are found by their shape (the roundel an ellipse, the ring a thin ellipse round it, the leaf inside the roundel, the lettering outside the ring) and each part's fill read from the SVG, or from the proof where the part shows."
+  },
+  {
+   "check_id": "VECTOR-04/sticker-proof-window-mark/H019",
+   "output_id": "sticker-proof-window-mark",
+   "rule_id": "R076",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The ash leaf on “Transparent sticker proof - Window mark” (sticker-proof-window-mark.png) is solid Warm Cream #F3E7D3.",
+   "assertion": {
+    "op": "window_part_r4v",
+    "deliverable": "deliverables/recovered-sticker-window-mark.svg",
+    "part": "leaf",
+    "hex": "#F3E7D3",
+    "tol": 5,
+    "pass_share": 0.95,
+    "far": 30
+   },
+   "how": "The window mark's parts are found by their shape (the roundel an ellipse, the ring a thin ellipse round it, the leaf inside the roundel, the lettering outside the ring) and each part's fill read from the SVG, or from the proof where the part shows."
+  },
+  {
+   "check_id": "VECTOR-04/recovered-sticker-window-mark/H022",
+   "output_id": "recovered-sticker-window-mark",
+   "rule_id": "R077",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The fine hairline ring on “Recovered sticker artwork - Window mark” (recovered-sticker-window-mark.svg) is solid Warm Cream #F3E7D3.",
+   "assertion": {
+    "op": "window_part_r4v",
+    "part": "ring",
+    "hex": "#F3E7D3",
+    "tol": 5,
+    "pass_share": 0.95,
+    "far": 30
+   },
+   "how": "The window mark's parts are found by their shape (the roundel an ellipse, the ring a thin ellipse round it, the leaf inside the roundel, the lettering outside the ring) and each part's fill read from the SVG, or from the proof where the part shows."
+  },
+  {
+   "check_id": "VECTOR-04/sticker-proof-window-mark/H020",
+   "output_id": "sticker-proof-window-mark",
+   "rule_id": "R078",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The fine hairline ring on “Transparent sticker proof - Window mark” (sticker-proof-window-mark.png) is solid Warm Cream #F3E7D3.",
+   "assertion": {
+    "op": "window_part_r4v",
+    "deliverable": "deliverables/recovered-sticker-window-mark.svg",
+    "part": "ring",
+    "hex": "#F3E7D3",
+    "tol": 5,
+    "pass_share": 0.95,
+    "far": 30
+   },
+   "how": "The window mark's parts are found by their shape (the roundel an ellipse, the ring a thin ellipse round it, the leaf inside the roundel, the lettering outside the ring) and each part's fill read from the SVG, or from the proof where the part shows."
   },
   {
    "check_id": "VECTOR-04/recovered-sticker-window-mark/H023",
@@ -2167,10 +2718,12 @@
    "critical": false,
    "check": "Any MERIDIAN & ASH wordmark set in DM Serif Display Regular on “Original companion sticker - Companion 1” (new-sticker-companion-1.svg) arches on a curve that spans 40 degrees.",
    "assertion": {
-    "op": "v2_svg_arch",
-    "text": "MERIDIAN"
+    "op": "svg_arch_angle_r4v",
+    "deg": 40,
+    "tol_deg": 2,
+    "fail_deg": 5
    },
-   "how": "Reads the SVG's live wordmark and checks whether it is set on a straight line."
+   "how": "The arc the wordmark runs on is read from the SVG and the letters' widths from its embedded font; the angle the inked letters span is measured in degrees."
   },
   {
    "check_id": "VECTOR-04/new-sticker-companion-2/H009",
@@ -2180,10 +2733,12 @@
    "critical": false,
    "check": "Any MERIDIAN & ASH wordmark set in DM Serif Display Regular on “Original companion sticker - Companion 2” (new-sticker-companion-2.svg) arches on a curve that spans 40 degrees.",
    "assertion": {
-    "op": "v2_svg_arch",
-    "text": "MERIDIAN"
+    "op": "svg_arch_angle_r4v",
+    "deg": 40,
+    "tol_deg": 2,
+    "fail_deg": 5
    },
-   "how": "Reads the SVG's live wordmark and checks whether it is set on a straight line."
+   "how": "The arc the wordmark runs on is read from the SVG and the letters' widths from its embedded font; the angle the inked letters span is measured in degrees."
   },
   {
    "check_id": "VECTOR-04/new-sticker-companion-1/H010",
@@ -2358,17 +2913,10 @@
    "critical": false,
    "check": "Every fill and stroke in “Recovered sticker artwork - Window mark” (recovered-sticker-window-mark.svg) is solid at 100% opacity, with no tint, transparency, gradient, shadow or blend mode.",
    "assertion": {
-    "op": "v2_svg_solid",
-    "hexes": [
-     "#3E2A20",
-     "#C8A97E",
-     "#5B6B54",
-     "#F3E7D3",
-     "#A8442E",
-     "#201914"
-    ]
+    "op": "svg_solid_ink_r4v",
+    "max_shift_mm": 5
    },
-   "how": "Reads the SVG's styles and renders it to check every colour is solid and from the palette."
+   "how": "The SVG is read for opacity under 100%, gradients, filters, masks, blend modes, embedded pictures and shapes repeated at a small offset behind themselves (a hard shadow)."
   },
   {
    "check_id": "VECTOR-04/recovered-sticker-bag-design-1/H009",
@@ -2378,17 +2926,10 @@
    "critical": false,
    "check": "Every fill and stroke in “Recovered sticker artwork - Bag design 1” (recovered-sticker-bag-design-1.svg) is solid at 100% opacity, with no tint, transparency, gradient, shadow or blend mode.",
    "assertion": {
-    "op": "v2_svg_solid",
-    "hexes": [
-     "#3E2A20",
-     "#C8A97E",
-     "#5B6B54",
-     "#F3E7D3",
-     "#A8442E",
-     "#201914"
-    ]
+    "op": "svg_solid_ink_r4v",
+    "max_shift_mm": 5
    },
-   "how": "Reads the SVG's styles and renders it to check every colour is solid and from the palette."
+   "how": "The SVG is read for opacity under 100%, gradients, filters, masks, blend modes, embedded pictures and shapes repeated at a small offset behind themselves (a hard shadow)."
   },
   {
    "check_id": "VECTOR-04/recovered-sticker-bag-design-2/H009",
@@ -2398,17 +2939,10 @@
    "critical": false,
    "check": "Every fill and stroke in “Recovered sticker artwork - Bag design 2” (recovered-sticker-bag-design-2.svg) is solid at 100% opacity, with no tint, transparency, gradient, shadow or blend mode.",
    "assertion": {
-    "op": "v2_svg_solid",
-    "hexes": [
-     "#3E2A20",
-     "#C8A97E",
-     "#5B6B54",
-     "#F3E7D3",
-     "#A8442E",
-     "#201914"
-    ]
+    "op": "svg_solid_ink_r4v",
+    "max_shift_mm": 5
    },
-   "how": "Reads the SVG's styles and renders it to check every colour is solid and from the palette."
+   "how": "The SVG is read for opacity under 100%, gradients, filters, masks, blend modes, embedded pictures and shapes repeated at a small offset behind themselves (a hard shadow)."
   },
   {
    "check_id": "VECTOR-04/recovered-sticker-bag-design-3/H009",
@@ -2418,17 +2952,10 @@
    "critical": false,
    "check": "Every fill and stroke in “Recovered sticker artwork - Bag design 3” (recovered-sticker-bag-design-3.svg) is solid at 100% opacity, with no tint, transparency, gradient, shadow or blend mode.",
    "assertion": {
-    "op": "v2_svg_solid",
-    "hexes": [
-     "#3E2A20",
-     "#C8A97E",
-     "#5B6B54",
-     "#F3E7D3",
-     "#A8442E",
-     "#201914"
-    ]
+    "op": "svg_solid_ink_r4v",
+    "max_shift_mm": 5
    },
-   "how": "Reads the SVG's styles and renders it to check every colour is solid and from the palette."
+   "how": "The SVG is read for opacity under 100%, gradients, filters, masks, blend modes, embedded pictures and shapes repeated at a small offset behind themselves (a hard shadow)."
   },
   {
    "check_id": "VECTOR-04/new-sticker-companion-1/H005",
@@ -2438,17 +2965,10 @@
    "critical": false,
    "check": "Every fill and stroke in “Original companion sticker - Companion 1” (new-sticker-companion-1.svg) is solid at 100% opacity, with no tint, transparency, gradient, shadow or blend mode.",
    "assertion": {
-    "op": "v2_svg_solid",
-    "hexes": [
-     "#3E2A20",
-     "#C8A97E",
-     "#5B6B54",
-     "#F3E7D3",
-     "#A8442E",
-     "#201914"
-    ]
+    "op": "svg_solid_ink_r4v",
+    "max_shift_mm": 5
    },
-   "how": "Reads the SVG's styles and renders it to check every colour is solid and from the palette."
+   "how": "The SVG is read for opacity under 100%, gradients, filters, masks, blend modes, embedded pictures and shapes repeated at a small offset behind themselves (a hard shadow)."
   },
   {
    "check_id": "VECTOR-04/new-sticker-companion-2/H005",
@@ -2458,17 +2978,10 @@
    "critical": false,
    "check": "Every fill and stroke in “Original companion sticker - Companion 2” (new-sticker-companion-2.svg) is solid at 100% opacity, with no tint, transparency, gradient, shadow or blend mode.",
    "assertion": {
-    "op": "v2_svg_solid",
-    "hexes": [
-     "#3E2A20",
-     "#C8A97E",
-     "#5B6B54",
-     "#F3E7D3",
-     "#A8442E",
-     "#201914"
-    ]
+    "op": "svg_solid_ink_r4v",
+    "max_shift_mm": 5
    },
-   "how": "Reads the SVG's styles and renders it to check every colour is solid and from the palette."
+   "how": "The SVG is read for opacity under 100%, gradients, filters, masks, blend modes, embedded pictures and shapes repeated at a small offset behind themselves (a hard shadow)."
   },
   {
    "check_id": "VECTOR-04/sticker-proof-window-mark/H013",
@@ -2478,26 +2991,10 @@
    "critical": false,
    "check": "Apart from anti-aliased edges, every inked area on “Transparent sticker proof - Window mark” (sticker-proof-window-mark.png) is flat and fully opaque, with no tint, gradient or shadow.",
    "assertion": {
-    "op": "v2_all_of",
-    "checks": [
-     {
-      "op": "v2_soft_edges"
-     },
-     {
-      "op": "v2_raster_palette",
-      "hexes": [
-       "#3E2A20",
-       "#C8A97E",
-       "#5B6B54",
-       "#F3E7D3",
-       "#A8442E",
-       "#201914"
-      ],
-      "transparent_only": true
-     }
-    ]
+    "op": "proof_flat_r4v",
+    "deliverable": "deliverables/recovered-sticker-window-mark.svg"
    },
-   "how": "Runs each part; all must pass: Reads every flat colour outside photographs, transparent parts and capture footage, and checks each is a palette colour; Measures how wide the colour transitions are and checks the artwork's transparency."
+   "how": "The proof is searched for soft or see-through ink, and its SVG for hard shadows the proof shows."
   },
   {
    "check_id": "VECTOR-04/sticker-proof-bag-design-1/H009",
@@ -2507,26 +3004,10 @@
    "critical": false,
    "check": "Apart from anti-aliased edges, every inked area on “Transparent sticker proof - Bag design 1” (sticker-proof-bag-design-1.png) is flat and fully opaque, with no tint, gradient or shadow.",
    "assertion": {
-    "op": "v2_all_of",
-    "checks": [
-     {
-      "op": "v2_soft_edges"
-     },
-     {
-      "op": "v2_raster_palette",
-      "hexes": [
-       "#3E2A20",
-       "#C8A97E",
-       "#5B6B54",
-       "#F3E7D3",
-       "#A8442E",
-       "#201914"
-      ],
-      "transparent_only": true
-     }
-    ]
+    "op": "proof_flat_r4v",
+    "deliverable": "deliverables/recovered-sticker-bag-design-1.svg"
    },
-   "how": "Runs each part; all must pass: Reads every flat colour outside photographs, transparent parts and capture footage, and checks each is a palette colour; Measures how wide the colour transitions are and checks the artwork's transparency."
+   "how": "The proof is searched for soft or see-through ink, and its SVG for hard shadows the proof shows."
   },
   {
    "check_id": "VECTOR-04/sticker-proof-bag-design-2/H009",
@@ -2536,26 +3017,10 @@
    "critical": false,
    "check": "Apart from anti-aliased edges, every inked area on “Transparent sticker proof - Bag design 2” (sticker-proof-bag-design-2.png) is flat and fully opaque, with no tint, gradient or shadow.",
    "assertion": {
-    "op": "v2_all_of",
-    "checks": [
-     {
-      "op": "v2_soft_edges"
-     },
-     {
-      "op": "v2_raster_palette",
-      "hexes": [
-       "#3E2A20",
-       "#C8A97E",
-       "#5B6B54",
-       "#F3E7D3",
-       "#A8442E",
-       "#201914"
-      ],
-      "transparent_only": true
-     }
-    ]
+    "op": "proof_flat_r4v",
+    "deliverable": "deliverables/recovered-sticker-bag-design-2.svg"
    },
-   "how": "Runs each part; all must pass: Reads every flat colour outside photographs, transparent parts and capture footage, and checks each is a palette colour; Measures how wide the colour transitions are and checks the artwork's transparency."
+   "how": "The proof is searched for soft or see-through ink, and its SVG for hard shadows the proof shows."
   },
   {
    "check_id": "VECTOR-04/sticker-proof-bag-design-3/H009",
@@ -2565,26 +3030,10 @@
    "critical": false,
    "check": "Apart from anti-aliased edges, every inked area on “Transparent sticker proof - Bag design 3” (sticker-proof-bag-design-3.png) is flat and fully opaque, with no tint, gradient or shadow.",
    "assertion": {
-    "op": "v2_all_of",
-    "checks": [
-     {
-      "op": "v2_soft_edges"
-     },
-     {
-      "op": "v2_raster_palette",
-      "hexes": [
-       "#3E2A20",
-       "#C8A97E",
-       "#5B6B54",
-       "#F3E7D3",
-       "#A8442E",
-       "#201914"
-      ],
-      "transparent_only": true
-     }
-    ]
+    "op": "proof_flat_r4v",
+    "deliverable": "deliverables/recovered-sticker-bag-design-3.svg"
    },
-   "how": "Runs each part; all must pass: Reads every flat colour outside photographs, transparent parts and capture footage, and checks each is a palette colour; Measures how wide the colour transitions are and checks the artwork's transparency."
+   "how": "The proof is searched for soft or see-through ink, and its SVG for hard shadows the proof shows."
   },
   {
    "check_id": "VECTOR-04/sticker-proof-companion-1/H004",
@@ -2594,26 +3043,10 @@
    "critical": false,
    "check": "Apart from anti-aliased edges, every inked area on “Transparent sticker proof - Companion 1” (sticker-proof-companion-1.png) is flat and fully opaque, with no tint, gradient or shadow.",
    "assertion": {
-    "op": "v2_all_of",
-    "checks": [
-     {
-      "op": "v2_soft_edges"
-     },
-     {
-      "op": "v2_raster_palette",
-      "hexes": [
-       "#3E2A20",
-       "#C8A97E",
-       "#5B6B54",
-       "#F3E7D3",
-       "#A8442E",
-       "#201914"
-      ],
-      "transparent_only": true
-     }
-    ]
+    "op": "proof_flat_r4v",
+    "deliverable": "deliverables/new-sticker-companion-1.svg"
    },
-   "how": "Runs each part; all must pass: Reads every flat colour outside photographs, transparent parts and capture footage, and checks each is a palette colour; Measures how wide the colour transitions are and checks the artwork's transparency."
+   "how": "The proof is searched for soft or see-through ink, and its SVG for hard shadows the proof shows."
   },
   {
    "check_id": "VECTOR-04/sticker-proof-companion-2/H004",
@@ -2623,26 +3056,10 @@
    "critical": false,
    "check": "Apart from anti-aliased edges, every inked area on “Transparent sticker proof - Companion 2” (sticker-proof-companion-2.png) is flat and fully opaque, with no tint, gradient or shadow.",
    "assertion": {
-    "op": "v2_all_of",
-    "checks": [
-     {
-      "op": "v2_soft_edges"
-     },
-     {
-      "op": "v2_raster_palette",
-      "hexes": [
-       "#3E2A20",
-       "#C8A97E",
-       "#5B6B54",
-       "#F3E7D3",
-       "#A8442E",
-       "#201914"
-      ],
-      "transparent_only": true
-     }
-    ]
+    "op": "proof_flat_r4v",
+    "deliverable": "deliverables/new-sticker-companion-2.svg"
    },
-   "how": "Runs each part; all must pass: Reads every flat colour outside photographs, transparent parts and capture footage, and checks each is a palette colour; Measures how wide the colour transitions are and checks the artwork's transparency."
+   "how": "The proof is searched for soft or see-through ink, and its SVG for hard shadows the proof shows."
   },
   {
    "check_id": "VECTOR-04/sticker-proof-companion-1/H020",
@@ -2679,6 +3096,33 @@
     "op": "v2_sheet_no_raster"
    },
    "how": "Reads the sheet for placed pictures and fields of tiny specks."
+  },
+  {
+   "check_id": "VECTOR-04/recovered-sticker-window-mark/H005",
+   "output_id": "recovered-sticker-window-mark",
+   "rule_id": "R123",
+   "k_id": "K5_Q2",
+   "critical": false,
+   "check": "In “Recovered sticker artwork - Window mark” (recovered-sticker-window-mark.svg) the MERIDIAN & ASH wordmark arches above the filled roundel, as painted in meridian_window_mark.jpg, not below or beside it.",
+   "assertion": {
+    "op": "window_arch_r4v",
+    "min_rise": 0.02
+   },
+   "how": "The lettering and the roundel are found by their shape and their positions compared: the lettering above the roundel, its letters rising to the middle."
+  },
+  {
+   "check_id": "VECTOR-04/sticker-proof-window-mark/H011",
+   "output_id": "sticker-proof-window-mark",
+   "rule_id": "R123",
+   "k_id": "K5_Q2",
+   "critical": false,
+   "check": "In “Transparent sticker proof - Window mark” (sticker-proof-window-mark.png) the MERIDIAN & ASH wordmark arches above the filled roundel, as painted in meridian_window_mark.jpg, not below or beside it.",
+   "assertion": {
+    "op": "window_arch_r4v",
+    "min_rise": 0.02,
+    "deliverable": "deliverables/recovered-sticker-window-mark.svg"
+   },
+   "how": "The lettering and the roundel are found by their shape and their positions compared: the lettering above the roundel, its letters rising to the middle."
   }
  ]
 }

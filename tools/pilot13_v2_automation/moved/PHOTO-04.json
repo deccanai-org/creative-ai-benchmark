@@ -3736,6 +3736,63 @@
    "how": "Runs each part; all must pass: Reads the text lines, sorts them into body, headings and fine print by size, and checks the named role; Reads the font, size or letter case of the selected lines from the PDF."
   },
   {
+   "check_id": "PHOTO-04/booking-hero-oliveto/H066",
+   "output_id": "booking-hero-oliveto",
+   "rule_id": "R075",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The figures in the offer price on “Villa booking hero - Oliveto” (booking-hero-oliveto.png) are lining figures: all at capital height, none dropping below the baseline.",
+   "assertion": {
+    "op": "v2_pass_only_r4t",
+    "check": {
+     "op": "v2_lining_r4t",
+     "pass_tol": 0.06,
+     "fail_short": 0.85,
+     "fail_drop": 0.12,
+     "photo_digit_max": 0.03
+    }
+   },
+   "how": "Runs a wider check (every figure on the file) and passes only when it passes; anything else goes to a person."
+  },
+  {
+   "check_id": "PHOTO-04/booking-hero-scogliera/H066",
+   "output_id": "booking-hero-scogliera",
+   "rule_id": "R075",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The figures in the offer price on “Villa booking hero - Scogliera” (booking-hero-scogliera.png) are lining figures: all at capital height, none dropping below the baseline.",
+   "assertion": {
+    "op": "v2_pass_only_r4t",
+    "check": {
+     "op": "v2_lining_r4t",
+     "pass_tol": 0.06,
+     "fail_short": 0.85,
+     "fail_drop": 0.12,
+     "photo_digit_max": 0.03
+    }
+   },
+   "how": "Runs a wider check (every figure on the file) and passes only when it passes; anything else goes to a person."
+  },
+  {
+   "check_id": "PHOTO-04/booking-hero-verranza/H066",
+   "output_id": "booking-hero-verranza",
+   "rule_id": "R075",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The figures in the offer price on “Villa booking hero - Verranza” (booking-hero-verranza.png) are lining figures: all at capital height, none dropping below the baseline.",
+   "assertion": {
+    "op": "v2_pass_only_r4t",
+    "check": {
+     "op": "v2_lining_r4t",
+     "pass_tol": 0.06,
+     "fail_short": 0.85,
+     "fail_drop": 0.12,
+     "photo_digit_max": 0.03
+    }
+   },
+   "how": "Runs a wider check (every figure on the file) and passes only when it passes; anything else goes to a person."
+  },
+  {
    "check_id": "PHOTO-04/villa-collection/H090",
    "output_id": "villa-collection",
    "rule_id": "R076",
@@ -3835,6 +3892,51 @@
     "pattern": "\\b(?:stone|stones|wall|walls)\\b"
    },
    "how": "Reads the live text of the section's pages for the named words."
+  },
+  {
+   "check_id": "PHOTO-04/booking-hero-oliveto/H020",
+   "output_id": "booking-hero-oliveto",
+   "rule_id": "R080",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The opening “C” of “Casa Oliveto” on “Villa booking hero - Oliveto” (booking-hero-oliveto.png) stands twice as tall as the capital “O” of “Oliveto”.",
+   "assertion": {
+    "op": "v2_cap_ratio_r4t",
+    "line": "Casa Oliveto",
+    "word": 1,
+    "ratio": 2.0
+   },
+   "how": "Splits the line into letter shapes and divides the height of its opening letter by the height of the capital that starts the later word."
+  },
+  {
+   "check_id": "PHOTO-04/booking-hero-scogliera/H020",
+   "output_id": "booking-hero-scogliera",
+   "rule_id": "R080",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The opening “C” of “Casa Scogliera” on “Villa booking hero - Scogliera” (booking-hero-scogliera.png) stands twice as tall as the capital “S” of “Scogliera”.",
+   "assertion": {
+    "op": "v2_cap_ratio_r4t",
+    "line": "Casa Scogliera",
+    "word": 1,
+    "ratio": 2.0
+   },
+   "how": "Splits the line into letter shapes and divides the height of its opening letter by the height of the capital that starts the later word."
+  },
+  {
+   "check_id": "PHOTO-04/booking-hero-verranza/H019",
+   "output_id": "booking-hero-verranza",
+   "rule_id": "R080",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The opening “C” of “Casa Verranza” on “Villa booking hero - Verranza” (booking-hero-verranza.png) stands twice as tall as the capital “V” of “Verranza”.",
+   "assertion": {
+    "op": "v2_cap_ratio_r4t",
+    "line": "Casa Verranza",
+    "word": 1,
+    "ratio": 2.0
+   },
+   "how": "Splits the line into letter shapes and divides the height of its opening letter by the height of the capital that starts the later word."
   },
   {
    "check_id": "PHOTO-04/booking-hero-oliveto/H023",
@@ -4690,25 +4792,15 @@
    "critical": false,
    "check": "The shadows in the photograph on “Villa booking hero - Oliveto” (booking-hero-oliveto.png) keep visible detail, with no crushed blacks.",
    "assertion": {
-    "op": "v2_vs_source",
-    "every": true,
-    "test": "crush",
+    "op": "v2_shadow_detail_r4p",
     "photos": [
-     "verranza_pool.jpg",
-     "verranza_terrace.jpg",
-     "verranza_bedroom.jpg",
-     "verranza_living.jpg",
      "oliveto_pool.jpg",
      "oliveto_terrace.jpg",
      "oliveto_bedroom.jpg",
-     "oliveto_living.jpg",
-     "scogliera_pool.jpg",
-     "scogliera_terrace.jpg",
-     "scogliera_bedroom.jpg",
-     "scogliera_living.jpg"
+     "oliveto_living.jpg"
     ]
    },
-   "how": "Finds the supplied photo in the deliverable, maps the placement back onto it and compares tiles, colour, tone or fine detail."
+   "how": "Finds the supplied photo in the deliverable and checks its shadows keep their detail and are not turned to solid black."
   },
   {
    "check_id": "PHOTO-04/booking-hero-scogliera/H055",
@@ -4718,25 +4810,15 @@
    "critical": false,
    "check": "The shadows in the photograph on “Villa booking hero - Scogliera” (booking-hero-scogliera.png) keep visible detail, with no crushed blacks.",
    "assertion": {
-    "op": "v2_vs_source",
-    "every": true,
-    "test": "crush",
+    "op": "v2_shadow_detail_r4p",
     "photos": [
-     "verranza_pool.jpg",
-     "verranza_terrace.jpg",
-     "verranza_bedroom.jpg",
-     "verranza_living.jpg",
-     "oliveto_pool.jpg",
-     "oliveto_terrace.jpg",
-     "oliveto_bedroom.jpg",
-     "oliveto_living.jpg",
      "scogliera_pool.jpg",
      "scogliera_terrace.jpg",
      "scogliera_bedroom.jpg",
      "scogliera_living.jpg"
     ]
    },
-   "how": "Finds the supplied photo in the deliverable, maps the placement back onto it and compares tiles, colour, tone or fine detail."
+   "how": "Finds the supplied photo in the deliverable and checks its shadows keep their detail and are not turned to solid black."
   },
   {
    "check_id": "PHOTO-04/booking-hero-verranza/H055",
@@ -4746,25 +4828,15 @@
    "critical": false,
    "check": "The shadows in the photograph on “Villa booking hero - Verranza” (booking-hero-verranza.png) keep visible detail, with no crushed blacks.",
    "assertion": {
-    "op": "v2_vs_source",
-    "every": true,
-    "test": "crush",
+    "op": "v2_shadow_detail_r4p",
     "photos": [
      "verranza_pool.jpg",
      "verranza_terrace.jpg",
      "verranza_bedroom.jpg",
-     "verranza_living.jpg",
-     "oliveto_pool.jpg",
-     "oliveto_terrace.jpg",
-     "oliveto_bedroom.jpg",
-     "oliveto_living.jpg",
-     "scogliera_pool.jpg",
-     "scogliera_terrace.jpg",
-     "scogliera_bedroom.jpg",
-     "scogliera_living.jpg"
+     "verranza_living.jpg"
     ]
    },
-   "how": "Finds the supplied photo in the deliverable, maps the placement back onto it and compares tiles, colour, tone or fine detail."
+   "how": "Finds the supplied photo in the deliverable and checks its shadows keep their detail and are not turned to solid black."
   },
   {
    "check_id": "PHOTO-04/villa-collection/H059",

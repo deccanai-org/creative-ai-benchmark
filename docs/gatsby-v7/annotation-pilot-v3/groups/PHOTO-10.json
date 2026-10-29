@@ -4,8 +4,8 @@
  "source": "docs/gatsby-v7/tasks/PHOTO-10/TASK_SPEC.json verifiers_human",
  "check_count": 630,
  "rule_count": 107,
- "checks_for_people": 486,
- "checks_by_code": 144,
+ "checks_for_people": 452,
+ "checks_by_code": 178,
  "rules": [
   {
    "rule_id": "R001",
@@ -8001,8 +8001,10 @@
     "assets": [],
     "note": "Brand palette, six hexes. Palette rules, forbidden: no colour outside them for type, panels, rules, buttons, icons or the mark, pure white #FFFFFF and pure black #000000 included."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Leaves out every placed photograph as a whole frame, then reads every flat colour left and checks each is a palette colour."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-10/style-pdp-northgrove-style-01-loopback-crew/H020",
@@ -14877,8 +14879,10 @@
     ],
     "note": "Brief: Use northgrove_mark_transparent.svg or northgrove_mark_reversed.svg, or their matching transparent PNGs; use the supplied olive-leaf mark unchanged. Brand typography: place the supplied logo unchanged; do not retype NORTHGROVE, close up its letters or move its leaf. The four mark files were rebuilt 2026-10-21 with the olive leaf."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the wordmark by OCR and compares the shape and proportions of its letters with the supplied mark."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-10/style-pdp-northgrove-style-01-loopback-crew/H034",
@@ -16615,8 +16619,10 @@
     ],
     "note": "Brand identity: the mark needs recovering as real artwork before it can go on cards or launch pieces. northgrove_mark.png holds the olive leaf and the NORTHGROVE wordmark, whose letters carry enclosed counters, lifted off a lookbook page."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads the wordmark by OCR, finds the enclosed counters of its letters and checks each shows the ground round the mark."
+   ],
    "rows": [
     {
      "check_id": "PHOTO-10/style-pdp-northgrove-style-01-loopback-crew/H060",

@@ -297,7 +297,8 @@ def billing(p, x, y, nights, head, defect=None, gap=24):
             y += 22
             p.text(x, y, f'with {support}', 'ArchivoNarrowR', 14)
         y += 18
-        p.text(x, y, f'DOORS {door} / SETS {set_}', 'ArchivoNarrowSB', 12, track=FINE_TRACK)
+        # round 4 (bad4): the door lines set tighter than the untracked support acts
+        p.text(x, y, f'DOORS {door} / SETS {set_}', 'ArchivoNarrowSB', 12, track=-30 if defect == 'tight_doors' else FINE_TRACK)
         y += gap
     return boxes, y
 
@@ -401,7 +402,8 @@ def deck(path: Path, fonts, shown, marks, defect: str | None = None):
         y += 7 + CAP * 26
         p.text(x, y, act.upper(), 'SoraEB', 26, track=ACT_TRACK)
         p.text(x, y + 24, f'with {support}', 'ArchivoNarrowR', 18)
-        p.text(x, y + 42, f'DOORS {door} / SETS {set_}', 'ArchivoNarrowSB', 11, track=FINE_TRACK)
+        # round 4 (bad4): the door lines set tighter than the untracked body text
+        p.text(x, y + 42, f'DOORS {door} / SETS {set_}', 'ArchivoNarrowSB', 11, track=-30 if defect == 'tight_doors' else FINE_TRACK)
 
     p = Page(doc, fonts, DECK)
     p.text(60, 58, 'THREE DIRECTIONS', 'SoraEB', 28, track=ACT_TRACK)
@@ -497,7 +499,9 @@ def release_post(path: Path, fonts, act, date, support, door, set_, price, defec
         p.page.draw_rect(pymupdf.Rect(40, 960 + shift, 1040, 1080 + shift), color=None, fill=rgb(BLOOD))
     p.text(70, 938 + shift, f'with {support}', 'ArchivoNarrowR', 34)
     door_text = door.replace(' ', '&nbsp;') if defect == 'nbsp' else door
-    p.text(70, 1000 + shift, f'DOORS {door_text}, SETS {set_}', 'ArchivoNarrowSB', 34, track=FINE_TRACK)
+    # round 4 (bad4): 'door_track<n>' sets the door line at n thousandths of an em, no more open than the support line
+    door_track = int(defect[len('door_track'):]) if defect and defect.startswith('door_track') else FINE_TRACK
+    p.text(70, 1000 + shift, f'DOORS {door_text}, SETS {set_}', 'ArchivoNarrowSB', 34, track=door_track)
     advance = f'ADVANCE {"$99" if defect == "price" else price}'
     x, y = 70, 1054 + shift
     if defect == 'price_cut_right':   # the last figure half outside the frame

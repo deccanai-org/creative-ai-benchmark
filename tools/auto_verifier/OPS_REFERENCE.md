@@ -105,3 +105,15 @@ its limits and when it answers pass, fail or person. An op name may be defined o
 | ops_r3_layout.py | 77 | LAYOUT-15, LAYOUT-12, VECTOR-04, MOTION-11: typeface from glyph advance widths, PDF reading in drawing order, cut files and proofs, capture frames behind thumbnails, end cards |
 | ops_r3_fonts.py | 4 | typefaces, italics, horizontal scaling and letter spacing read from images (calibrated margins; a line not found never passes) |
 
+## Round 4 (2026-10-29)
+
+Loaded by `objective_ops_r4.py`; names end with the module's suffix. Every op's docstring states its settings, limits and
+pass, fail and person bands.
+
+| module | ops | covers |
+|---|---:|---|
+| ops_r4_vector.py | 14 | VECTOR-04: cut path offset and corner radius, cut lines in the art, arch angle, mark part colours, opacity and shadows, proof against the SVG (`_r4v`) |
+| ops_r4_type.py | 7 | lining figures, dollar-sign size and alignment, opening-capital ratio, plate numerals, rules under names and prices, door-line spacing (`_r4t`) |
+| ops_r4_photo.py | 8 | palette with whole photographs left out, shadows, clipped whites, border casts, grain, mark counters and lettering, knit texture (`_r4p`) |
+| ops_r4_video.py | 9 | moving mascot, repeated shots, captures used, music matched to the supplied track, enlargement, scrim and recolour, stacked titles (`_r4m`) |
+

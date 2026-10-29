@@ -4798,6 +4798,98 @@
    "how": "Finds the supplied picture and measures whether it was stretched."
   },
   {
+   "check_id": "LAYOUT-12/poster-direction-type-led/H026",
+   "output_id": "poster-direction-type-led",
+   "rule_id": "R072",
+   "k_id": "K2_Q2",
+   "critical": false,
+   "check": "No knit texture, like the sweater weave in umbra_wordmark_meridian.jpg, shows around or between the letters of the Meridian Brass wordmark on “After Dark poster direction - Type-led” (poster-direction-type-led.pdf).",
+   "assertion": {
+    "op": "v2_pdf_flat_marks_r4p",
+    "textured": [
+     "umbra_wordmark_meridian.jpg"
+    ],
+    "allowed": [
+     "umbra_archive_night_01.jpg",
+     "umbra_archive_night_02.jpg",
+     "umbra_archive_night_03.jpg",
+     "umbra_archive_night_04.jpg",
+     "umbra_archive_night_05.jpg",
+     "umbra_archive_night_06.jpg"
+    ]
+   },
+   "how": "Reads every picture placed in the PDF: each must be a one-ink transparent mark or an allowed photograph, never the textured photo."
+  },
+  {
+   "check_id": "LAYOUT-12/poster-direction-image-led/H025",
+   "output_id": "poster-direction-image-led",
+   "rule_id": "R072",
+   "k_id": "K2_Q2",
+   "critical": false,
+   "check": "No knit texture, like the sweater weave in umbra_wordmark_meridian.jpg, shows around or between the letters of the Meridian Brass wordmark on “After Dark poster direction - Image-led” (poster-direction-image-led.pdf).",
+   "assertion": {
+    "op": "v2_pdf_flat_marks_r4p",
+    "textured": [
+     "umbra_wordmark_meridian.jpg"
+    ],
+    "allowed": [
+     "umbra_archive_night_01.jpg",
+     "umbra_archive_night_02.jpg",
+     "umbra_archive_night_03.jpg",
+     "umbra_archive_night_04.jpg",
+     "umbra_archive_night_05.jpg",
+     "umbra_archive_night_06.jpg"
+    ]
+   },
+   "how": "Reads every picture placed in the PDF: each must be a one-ink transparent mark or an allowed photograph, never the textured photo."
+  },
+  {
+   "check_id": "LAYOUT-12/poster-direction-graphic-led/H024",
+   "output_id": "poster-direction-graphic-led",
+   "rule_id": "R072",
+   "k_id": "K2_Q2",
+   "critical": false,
+   "check": "No knit texture, like the sweater weave in umbra_wordmark_meridian.jpg, shows around or between the letters of the Meridian Brass wordmark on “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf).",
+   "assertion": {
+    "op": "v2_pdf_flat_marks_r4p",
+    "textured": [
+     "umbra_wordmark_meridian.jpg"
+    ],
+    "allowed": [
+     "umbra_archive_night_01.jpg",
+     "umbra_archive_night_02.jpg",
+     "umbra_archive_night_03.jpg",
+     "umbra_archive_night_04.jpg",
+     "umbra_archive_night_05.jpg",
+     "umbra_archive_night_06.jpg"
+    ]
+   },
+   "how": "Reads every picture placed in the PDF: each must be a one-ink transparent mark or an allowed photograph, never the textured photo."
+  },
+  {
+   "check_id": "LAYOUT-12/release-post-r003/H019",
+   "output_id": "release-post-r003",
+   "rule_id": "R072",
+   "k_id": "K2_Q2",
+   "critical": false,
+   "check": "No knit texture, like the sweater weave in umbra_wordmark_meridian.jpg, shows around or between the letters of the Meridian Brass wordmark on “Night release post - 2026-09-26” (release-post-r003.png).",
+   "assertion": {
+    "op": "v2_pdf_flat_marks_r4p",
+    "textured": [
+     "umbra_wordmark_meridian.jpg"
+    ],
+    "allowed": [
+     "umbra_archive_night_01.jpg",
+     "umbra_archive_night_02.jpg",
+     "umbra_archive_night_03.jpg",
+     "umbra_archive_night_04.jpg",
+     "umbra_archive_night_05.jpg",
+     "umbra_archive_night_06.jpg"
+    ]
+   },
+   "how": "Reads every picture placed in the PDF: each must be a one-ink transparent mark or an allowed photograph, never the textured photo."
+  },
+  {
    "check_id": "LAYOUT-12/promoter-deck/H015",
    "output_id": "promoter-deck",
    "rule_id": "R073",
@@ -12493,6 +12585,32 @@
    "how": "Measures letter spacing from the PDF's glyph positions."
   },
   {
+   "check_id": "LAYOUT-12/poster-direction-type-led/H049",
+   "output_id": "poster-direction-type-led",
+   "rule_id": "R155",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Any performance photograph on “After Dark poster direction - Type-led” (poster-direction-type-led.pdf) shows visible grain.",
+   "assertion": {
+    "op": "v2_grain_r4p",
+    "none_ok": true
+   },
+   "how": "Measures the fine grain in the smooth parts of every photograph, against the photograph's tonal range."
+  },
+  {
+   "check_id": "LAYOUT-12/poster-direction-graphic-led/H048",
+   "output_id": "poster-direction-graphic-led",
+   "rule_id": "R155",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Any performance photograph on “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf) shows visible grain.",
+   "assertion": {
+    "op": "v2_grain_r4p",
+    "none_ok": true
+   },
+   "how": "Measures the fine grain in the smooth parts of every photograph, against the photograph's tonal range."
+  },
+  {
    "check_id": "LAYOUT-12/poster-direction-type-led/H056",
    "output_id": "poster-direction-type-led",
    "rule_id": "R156",
@@ -12659,6 +12777,126 @@
     "bottom": "LOFT"
    },
    "how": "Reads the series title's lines and measures their spacing."
+  },
+  {
+   "check_id": "LAYOUT-12/poster-direction-image-led/H048",
+   "output_id": "poster-direction-image-led",
+   "rule_id": "R157",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The photograph on “After Dark poster direction - Image-led” (poster-direction-image-led.pdf) shows visible grain.",
+   "assertion": {
+    "op": "v2_grain_r4p"
+   },
+   "how": "Measures the fine grain in the smooth parts of every photograph, against the photograph's tonal range."
+  },
+  {
+   "check_id": "LAYOUT-12/release-post-r002/H035",
+   "output_id": "release-post-r002",
+   "rule_id": "R157",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The photograph on “Night release post - 2026-09-25” (release-post-r002.png) shows visible grain.",
+   "assertion": {
+    "op": "v2_grain_r4p"
+   },
+   "how": "Measures the fine grain in the smooth parts of every photograph, against the photograph's tonal range."
+  },
+  {
+   "check_id": "LAYOUT-12/release-post-r003/H029",
+   "output_id": "release-post-r003",
+   "rule_id": "R157",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The photograph on “Night release post - 2026-09-26” (release-post-r003.png) shows visible grain.",
+   "assertion": {
+    "op": "v2_grain_r4p"
+   },
+   "how": "Measures the fine grain in the smooth parts of every photograph, against the photograph's tonal range."
+  },
+  {
+   "check_id": "LAYOUT-12/release-post-r004/H032",
+   "output_id": "release-post-r004",
+   "rule_id": "R157",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The photograph on “Night release post - 2026-10-02” (release-post-r004.png) shows visible grain.",
+   "assertion": {
+    "op": "v2_grain_r4p"
+   },
+   "how": "Measures the fine grain in the smooth parts of every photograph, against the photograph's tonal range."
+  },
+  {
+   "check_id": "LAYOUT-12/release-post-r005/H031",
+   "output_id": "release-post-r005",
+   "rule_id": "R157",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The photograph on “Night release post - 2026-10-03” (release-post-r005.png) shows visible grain.",
+   "assertion": {
+    "op": "v2_grain_r4p"
+   },
+   "how": "Measures the fine grain in the smooth parts of every photograph, against the photograph's tonal range."
+  },
+  {
+   "check_id": "LAYOUT-12/release-post-r006/H031",
+   "output_id": "release-post-r006",
+   "rule_id": "R157",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The photograph on “Night release post - 2026-10-04” (release-post-r006.png) shows visible grain.",
+   "assertion": {
+    "op": "v2_grain_r4p"
+   },
+   "how": "Measures the fine grain in the smooth parts of every photograph, against the photograph's tonal range."
+  },
+  {
+   "check_id": "LAYOUT-12/release-post-r007/H031",
+   "output_id": "release-post-r007",
+   "rule_id": "R157",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The photograph on “Night release post - 2026-10-09” (release-post-r007.png) shows visible grain.",
+   "assertion": {
+    "op": "v2_grain_r4p"
+   },
+   "how": "Measures the fine grain in the smooth parts of every photograph, against the photograph's tonal range."
+  },
+  {
+   "check_id": "LAYOUT-12/release-post-r008/H026",
+   "output_id": "release-post-r008",
+   "rule_id": "R157",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The photograph on “Night release post - 2026-10-10” (release-post-r008.png) shows visible grain.",
+   "assertion": {
+    "op": "v2_grain_r4p"
+   },
+   "how": "Measures the fine grain in the smooth parts of every photograph, against the photograph's tonal range."
+  },
+  {
+   "check_id": "LAYOUT-12/release-post-r009/H026",
+   "output_id": "release-post-r009",
+   "rule_id": "R157",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The photograph on “Night release post - 2026-10-16” (release-post-r009.png) shows visible grain.",
+   "assertion": {
+    "op": "v2_grain_r4p"
+   },
+   "how": "Measures the fine grain in the smooth parts of every photograph, against the photograph's tonal range."
+  },
+  {
+   "check_id": "LAYOUT-12/release-post-r010/H031",
+   "output_id": "release-post-r010",
+   "rule_id": "R157",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The photograph on “Night release post - 2026-10-17” (release-post-r010.png) shows visible grain.",
+   "assertion": {
+    "op": "v2_grain_r4p"
+   },
+   "how": "Measures the fine grain in the smooth parts of every photograph, against the photograph's tonal range."
   },
   {
    "check_id": "LAYOUT-12/promoter-deck/H039",
@@ -12850,19 +13088,37 @@
    "critical": false,
    "check": "On “Night release post - 2026-09-25” (release-post-r002.png), the door line is letterspaced more open than the support line.",
    "assertion": {
-    "op": "v2_tracking_raster",
+    "op": "v2_track_vs_r4t",
     "a": {
-     "patterns": [
-      "\\bDOORS?\\b"
-     ]
+     "text": "DOORS 8:00 PM, SETS 9:00 PM"
     },
     "b": {
-     "whole": [
-      "with Odette Lang"
+     "text": "with Odette Lang"
+    },
+    "fonts_a": [
+     [
+      "Archivo Narrow",
+      [
+       400,
+       500,
+       600,
+       700
+      ]
      ]
-    }
+    ],
+    "fonts_b": [
+     [
+      "Archivo Narrow",
+      [
+       400,
+       500,
+       600,
+       700
+      ]
+     ]
+    ]
    },
-   "how": "Fits each line's letter spacing from its letter positions in its best-matching font and compares the two lines."
+   "how": "Finds both lines by OCR, takes each letter's ink centre and fits the letter positions to the font's own letter widths to read each line's letter spacing, then compares the two lines."
   },
   {
    "check_id": "LAYOUT-12/release-post-r003/H033",
@@ -12872,19 +13128,37 @@
    "critical": false,
    "check": "On “Night release post - 2026-09-26” (release-post-r003.png), the door line is letterspaced more open than the support line.",
    "assertion": {
-    "op": "v2_tracking_raster",
+    "op": "v2_track_vs_r4t",
     "a": {
-     "patterns": [
-      "\\bDOORS?\\b"
-     ]
+     "text": "DOORS 8:30 PM, SETS 9:15 PM"
     },
     "b": {
-     "whole": [
-      "with The Tin Ravens"
+     "text": "with The Tin Ravens"
+    },
+    "fonts_a": [
+     [
+      "Archivo Narrow",
+      [
+       400,
+       500,
+       600,
+       700
+      ]
      ]
-    }
+    ],
+    "fonts_b": [
+     [
+      "Archivo Narrow",
+      [
+       400,
+       500,
+       600,
+       700
+      ]
+     ]
+    ]
    },
-   "how": "Fits each line's letter spacing from its letter positions in its best-matching font and compares the two lines."
+   "how": "Finds both lines by OCR, takes each letter's ink centre and fits the letter positions to the font's own letter widths to read each line's letter spacing, then compares the two lines."
   },
   {
    "check_id": "LAYOUT-12/release-post-r004/H036",
@@ -12894,19 +13168,37 @@
    "critical": false,
    "check": "On “Night release post - 2026-10-02” (release-post-r004.png), the door line is letterspaced more open than the support line.",
    "assertion": {
-    "op": "v2_tracking_raster",
+    "op": "v2_track_vs_r4t",
     "a": {
-     "patterns": [
-      "\\bDOORS?\\b"
-     ]
+     "text": "DOORS 8:00 PM, SETS 9:00 PM"
     },
     "b": {
-     "whole": [
-      "with Junior Vale"
+     "text": "with Junior Vale"
+    },
+    "fonts_a": [
+     [
+      "Archivo Narrow",
+      [
+       400,
+       500,
+       600,
+       700
+      ]
      ]
-    }
+    ],
+    "fonts_b": [
+     [
+      "Archivo Narrow",
+      [
+       400,
+       500,
+       600,
+       700
+      ]
+     ]
+    ]
    },
-   "how": "Fits each line's letter spacing from its letter positions in its best-matching font and compares the two lines."
+   "how": "Finds both lines by OCR, takes each letter's ink centre and fits the letter positions to the font's own letter widths to read each line's letter spacing, then compares the two lines."
   },
   {
    "check_id": "LAYOUT-12/release-post-r005/H035",
@@ -12916,19 +13208,37 @@
    "critical": false,
    "check": "On “Night release post - 2026-10-03” (release-post-r005.png), the door line is letterspaced more open than the support line.",
    "assertion": {
-    "op": "v2_tracking_raster",
+    "op": "v2_track_vs_r4t",
     "a": {
-     "patterns": [
-      "\\bDOORS?\\b"
-     ]
+     "text": "DOORS 8:00 PM, SETS 9:00 PM"
     },
     "b": {
-     "whole": [
-      "with Coral Sound"
+     "text": "with Coral Sound"
+    },
+    "fonts_a": [
+     [
+      "Archivo Narrow",
+      [
+       400,
+       500,
+       600,
+       700
+      ]
      ]
-    }
+    ],
+    "fonts_b": [
+     [
+      "Archivo Narrow",
+      [
+       400,
+       500,
+       600,
+       700
+      ]
+     ]
+    ]
    },
-   "how": "Fits each line's letter spacing from its letter positions in its best-matching font and compares the two lines."
+   "how": "Finds both lines by OCR, takes each letter's ink centre and fits the letter positions to the font's own letter widths to read each line's letter spacing, then compares the two lines."
   },
   {
    "check_id": "LAYOUT-12/release-post-r006/H035",
@@ -12938,19 +13248,37 @@
    "critical": false,
    "check": "On “Night release post - 2026-10-04” (release-post-r006.png), the door line is letterspaced more open than the support line.",
    "assertion": {
-    "op": "v2_tracking_raster",
+    "op": "v2_track_vs_r4t",
     "a": {
-     "patterns": [
-      "\\bDOORS?\\b"
-     ]
+     "text": "DOORS 8:00 PM, SETS 9:00 PM"
     },
     "b": {
-     "whole": [
-      "with Coral Sound"
+     "text": "with Coral Sound"
+    },
+    "fonts_a": [
+     [
+      "Archivo Narrow",
+      [
+       400,
+       500,
+       600,
+       700
+      ]
      ]
-    }
+    ],
+    "fonts_b": [
+     [
+      "Archivo Narrow",
+      [
+       400,
+       500,
+       600,
+       700
+      ]
+     ]
+    ]
    },
-   "how": "Fits each line's letter spacing from its letter positions in its best-matching font and compares the two lines."
+   "how": "Finds both lines by OCR, takes each letter's ink centre and fits the letter positions to the font's own letter widths to read each line's letter spacing, then compares the two lines."
   },
   {
    "check_id": "LAYOUT-12/release-post-r007/H035",
@@ -12960,19 +13288,37 @@
    "critical": false,
    "check": "On “Night release post - 2026-10-09” (release-post-r007.png), the door line is letterspaced more open than the support line.",
    "assertion": {
-    "op": "v2_tracking_raster",
+    "op": "v2_track_vs_r4t",
     "a": {
-     "patterns": [
-      "\\bDOORS?\\b"
-     ]
+     "text": "DOORS 8:00 PM, SETS 9:00 PM"
     },
     "b": {
-     "whole": [
-      "with Marlow Reyes"
+     "text": "with Marlow Reyes"
+    },
+    "fonts_a": [
+     [
+      "Archivo Narrow",
+      [
+       400,
+       500,
+       600,
+       700
+      ]
      ]
-    }
+    ],
+    "fonts_b": [
+     [
+      "Archivo Narrow",
+      [
+       400,
+       500,
+       600,
+       700
+      ]
+     ]
+    ]
    },
-   "how": "Fits each line's letter spacing from its letter positions in its best-matching font and compares the two lines."
+   "how": "Finds both lines by OCR, takes each letter's ink centre and fits the letter positions to the font's own letter widths to read each line's letter spacing, then compares the two lines."
   },
   {
    "check_id": "LAYOUT-12/release-post-r008/H030",
@@ -12982,19 +13328,37 @@
    "critical": false,
    "check": "On “Night release post - 2026-10-10” (release-post-r008.png), the door line is letterspaced more open than the support line.",
    "assertion": {
-    "op": "v2_tracking_raster",
+    "op": "v2_track_vs_r4t",
     "a": {
-     "patterns": [
-      "\\bDOORS?\\b"
-     ]
+     "text": "DOORS 8:30 PM, SETS 9:30 PM"
     },
     "b": {
-     "whole": [
-      "with Half Light"
+     "text": "with Half Light"
+    },
+    "fonts_a": [
+     [
+      "Archivo Narrow",
+      [
+       400,
+       500,
+       600,
+       700
+      ]
      ]
-    }
+    ],
+    "fonts_b": [
+     [
+      "Archivo Narrow",
+      [
+       400,
+       500,
+       600,
+       700
+      ]
+     ]
+    ]
    },
-   "how": "Fits each line's letter spacing from its letter positions in its best-matching font and compares the two lines."
+   "how": "Finds both lines by OCR, takes each letter's ink centre and fits the letter positions to the font's own letter widths to read each line's letter spacing, then compares the two lines."
   },
   {
    "check_id": "LAYOUT-12/release-post-r009/H030",
@@ -13004,19 +13368,37 @@
    "critical": false,
    "check": "On “Night release post - 2026-10-16” (release-post-r009.png), the door line is letterspaced more open than the support line.",
    "assertion": {
-    "op": "v2_tracking_raster",
+    "op": "v2_track_vs_r4t",
     "a": {
-     "patterns": [
-      "\\bDOORS?\\b"
-     ]
+     "text": "DOORS 8:00 PM, SETS 9:00 PM"
     },
     "b": {
-     "whole": [
-      "with The Undertow"
+     "text": "with The Undertow"
+    },
+    "fonts_a": [
+     [
+      "Archivo Narrow",
+      [
+       400,
+       500,
+       600,
+       700
+      ]
      ]
-    }
+    ],
+    "fonts_b": [
+     [
+      "Archivo Narrow",
+      [
+       400,
+       500,
+       600,
+       700
+      ]
+     ]
+    ]
    },
-   "how": "Fits each line's letter spacing from its letter positions in its best-matching font and compares the two lines."
+   "how": "Finds both lines by OCR, takes each letter's ink centre and fits the letter positions to the font's own letter widths to read each line's letter spacing, then compares the two lines."
   },
   {
    "check_id": "LAYOUT-12/release-post-r010/H035",
@@ -13026,19 +13408,37 @@
    "critical": false,
    "check": "On “Night release post - 2026-10-17” (release-post-r010.png), the door line is letterspaced more open than the support line.",
    "assertion": {
-    "op": "v2_tracking_raster",
+    "op": "v2_track_vs_r4t",
     "a": {
-     "patterns": [
-      "\\bDOORS?\\b"
-     ]
+     "text": "DOORS 8:30 PM, SETS 9:15 PM"
     },
     "b": {
-     "whole": [
-      "with Ferro"
+     "text": "with Ferro"
+    },
+    "fonts_a": [
+     [
+      "Archivo Narrow",
+      [
+       400,
+       500,
+       600,
+       700
+      ]
      ]
-    }
+    ],
+    "fonts_b": [
+     [
+      "Archivo Narrow",
+      [
+       400,
+       500,
+       600,
+       700
+      ]
+     ]
+    ]
    },
-   "how": "Fits each line's letter spacing from its letter positions in its best-matching font and compares the two lines."
+   "how": "Finds both lines by OCR, takes each letter's ink centre and fits the letter positions to the font's own letter widths to read each line's letter spacing, then compares the two lines."
   },
   {
    "check_id": "LAYOUT-12/poster-direction-type-led/H076",

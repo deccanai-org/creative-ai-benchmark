@@ -48,6 +48,8 @@ image ops, Express, InDesign data merge, Fonts, Stock, Acrobat, Premiere-style v
   on top of v2 (v1 and v2 untouched; v3 links v2's thumbnails). Human checks answered by code moved from Human verifiers
   to a new per-task Auto verifiers page (`<ID>-auto.html`: the task's own automatic checks, then the moved rules with how
   the code checks, limits and the 2026-09-28 answers). Rebuild after every decide_moves.py run.
+- **Round 4 (2026-10-29)**: the remaining code-measurable checks (`round4_*.py`, `ops_r4_*.py`, bad4 made set):
+  4,143 of 6,312 human checks (928 rules) now answered by code; v3 shows 2,169 for people.
 
 ## Update 2026-10-22
 
