@@ -277,12 +277,10 @@ def write_index(summary: list[tuple[str, dict, list[dict]]]) -> None:
     for tid, s, r in summary:
         hp, hc, own = n(people(r)), n(coded(r)), len(s['verifiers_auto'])
         tot.update(deliv=len(s['deliverables']), human=len(s['verifiers_human']), people=hp, coded=hc, own=own, rules=len(people(r)))
-        rows.append(f'<tr><td><a href="{tid}-verifiers.html">{tid}</a></td><td>{esc(s["task_name"])}</td><td class="n">{len(s["deliverables"])}</td>'
-                    f'<td class="n">{len(s["verifiers_human"]):,}</td><td class="n">{hp:,}</td><td class="n">{len(people(r))}</td>'
-                    f'<td class="n">{own:,}</td><td class="n">{hc:,}</td><td class="n">{own + hc:,}</td></tr>')
-    rows.append(f'<tr><td><strong>Total</strong></td><td></td><td class="n">{tot["deliv"]}</td><td class="n">{tot["human"]:,}</td>'
-                f'<td class="n"><strong>{tot["people"]:,}</strong></td><td class="n">{tot["rules"]}</td><td class="n">{tot["own"]:,}</td>'
-                f'<td class="n">{tot["coded"]:,}</td><td class="n"><strong>{tot["own"] + tot["coded"]:,}</strong></td></tr>')
+        rows.append(f'<tr><td><a href="{tid}.html">{tid}</a></td><td>{esc(s["task_name"])}</td>'
+                    f'<td class="n"><a href="{tid}-verifiers.html">{hp:,}</a></td><td class="n"><a href="{tid}-auto.html">{own + hc:,}</a></td></tr>')
+    rows.append(f'<tr><td><strong>Total</strong></td><td></td><td class="n"><strong>{tot["people"]:,}</strong></td>'
+                f'<td class="n"><strong>{tot["own"] + tot["coded"]:,}</strong></td></tr>')
     items = ''.join(
         f'<li><a href="{tid}.html">{tid} - {esc(s["task_name"])}</a><br><span class="vlinks">'
         f'<a href="{tid}-verifiers.html">Human verifiers ({n(people(r)):,} checks in {len(people(r))} rules)</a> · '
@@ -294,7 +292,7 @@ def write_index(summary: list[tuple[str, dict, list[dict]]]) -> None:
 <title>Pilot task briefs v3</title><style>{CSS}{v2.V2_CSS}{V3_CSS}.vlinks{{font-size:14px;color:#5b6760}}.page li{{margin:0 0 12px}}</style></head><body>
 <main class="page">
 <h1>Pilot task briefs, v3: human checks now answered by code moved to Auto verifiers</h1>
-<div class="scroll-x"><table class="summary"><thead><tr><th>Task</th><th>Name</th><th class="n">Deliverables</th><th class="n">Human checks (v2)</th><th class="n">For people now</th><th class="n">Rules for people</th><th class="n">Automatic checks</th><th class="n">Moved from human</th><th class="n">All by code</th></tr></thead>
+<div class="scroll-x"><table class="summary"><thead><tr><th>Task</th><th>Name</th><th class="n">Human checks</th><th class="n">Auto checks</th></tr></thead>
 <tbody>{"".join(rows)}</tbody></table></div>
 <h2>How to read a rule</h2>{v2.HOW_TO_READ}
 <h2>Tasks</h2><ul class="rules-list">{items}</ul>
