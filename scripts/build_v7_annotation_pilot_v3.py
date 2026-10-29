@@ -283,9 +283,8 @@ def write_index(summary: list[tuple[str, dict, list[dict]]]) -> None:
                 f'<td class="n"><strong>{tot["own"] + tot["coded"]:,}</strong></td></tr>')
     items = ''.join(
         f'<li><a href="{tid}.html">{tid} - {esc(s["task_name"])}</a><br><span class="vlinks">'
-        f'<a href="{tid}-verifiers.html">Human verifiers ({n(people(r)):,} checks in {len(people(r))} rules)</a> · '
-        f'<a href="{tid}-auto.html">Auto verifiers ({len(s["verifiers_auto"]) + n(coded(r)):,} checks: {len(s["verifiers_auto"])} automatic, '
-        f'{n(coded(r)):,} moved from human)</a> · '
+        f'<a href="{tid}-verifiers.html">Human verifiers ({n(people(r)):,})</a> · '
+        f'<a href="{tid}-auto.html">Auto verifiers ({len(s["verifiers_auto"]) + n(coded(r)):,})</a> · '
         f'<a href="../index.html#{tid}/trajectory">Trajectory</a> · <a href="groups/{tid}.json">Rules as JSON</a></span></li>'
         for tid, s, r in summary)
     page = f"""<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
