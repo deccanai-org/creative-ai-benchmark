@@ -4,8 +4,8 @@
  "source": "docs/gatsby-v7/tasks/PHOTO-08/TASK_SPEC.json verifiers_human",
  "check_count": 517,
  "rule_count": 162,
- "checks_for_people": 310,
- "checks_by_code": 207,
+ "checks_for_people": 199,
+ "checks_by_code": 318,
  "rules": [
   {
    "rule_id": "R001",
@@ -53,6 +53,7 @@
    "code_check": [
     "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-08/vehicle-card-r002/H004",
@@ -240,6 +241,7 @@
    "code_check": [
     "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-08/vehicle-card-r002/H005",
@@ -427,6 +429,7 @@
    "code_check": [
     "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-08/vehicle-card-r002/H006",
@@ -614,6 +617,7 @@
    "code_check": [
     "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-08/vehicle-card-r002/H007",
@@ -808,6 +812,7 @@
    "code_check": [
     "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-08/vehicle-card-r002/H008",
@@ -1004,8 +1009,11 @@
     "3": "row"
    },
    "shared_reference": null,
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Asks the vision model to copy the asking price as printed; code checks it is the asking_price in meridian_intake_week.csv."
+   ],
+   "answered_with": "vision model",
    "rows": [
     {
      "check_id": "PHOTO-08/vehicle-card-r002/H009",
@@ -1206,6 +1214,7 @@
    "code_check": [
     "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-08/vehicle-card-r002/H014",
@@ -1358,6 +1367,7 @@
    "code_check": [
     "Reads where each value stands and checks the value that belongs to this name (by its section, column or line) is the expected one."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-08/vehicle-card-r002/H015",
@@ -1511,8 +1521,11 @@
     "assets": [],
     "note": "Brand identity: brand name Meridian Motors. Brief: the dealership name is clear."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Asks the vision model to copy every text on the file; code checks that Meridian Motors is among them."
+   ],
+   "answered_with": "vision model",
    "rows": [
     {
      "check_id": "PHOTO-08/inventory-campaign/H001",
@@ -1585,8 +1598,11 @@
     "4": "text"
    },
    "shared_reference": null,
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Gives the vision model the campaign and the supplied photos of one vehicle and asks it to copy the caption under that vehicle; code checks it is the year and make_model in meridian_intake_week.csv."
+   ],
+   "answered_with": "vision model",
    "rows": [
     {
      "check_id": "PHOTO-08/inventory-campaign/H007",
@@ -1860,6 +1876,7 @@
    "code_check": [
     "Finds every price and checks each meets the rule."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-08/inventory-campaign/H008",
@@ -2057,8 +2074,11 @@
     "4": "row"
    },
    "shared_reference": null,
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Asks the vision model to copy any stock number in the panel captioned with this vehicle; code checks it is the stock_no in meridian_intake_week.csv (none shown also passes)."
+   ],
+   "answered_with": "vision model",
    "rows": [
     {
      "check_id": "PHOTO-08/inventory-campaign/H009",
@@ -2267,6 +2287,7 @@
    "code_check": [
     "Reads all text and checks none of the named words or patterns appears."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-08/inventory-campaign/H010",
@@ -2470,8 +2491,11 @@
     "4": "row"
    },
    "shared_reference": null,
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Asks the vision model to copy any certification tier in the panel captioned with this vehicle; code checks it is the cert_tier in meridian_intake_week.csv (none shown also passes)."
+   ],
+   "answered_with": "vision model",
    "rows": [
     {
      "check_id": "PHOTO-08/inventory-campaign/H011",
@@ -2669,8 +2693,11 @@
     "4": "row"
    },
    "shared_reference": null,
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Asks the vision model to copy any trim in the panel captioned with this vehicle; code checks it is the trim in meridian_intake_week.csv (none shown also passes)."
+   ],
+   "answered_with": "vision model",
    "rows": [
     {
      "check_id": "PHOTO-08/inventory-campaign/H012",
@@ -2846,6 +2873,7 @@
    "code_check": [
     "Reads where each value stands and checks the value that belongs to this name (by its section, column or line) is the expected one."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-08/vehicle-card-r002/H077",
@@ -3074,6 +3102,7 @@
    "code_check": [
     "Checks each named text lies fully inside the page or image."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-08/vehicle-card-r002/H003",
@@ -3187,8 +3216,11 @@
     "1": "row"
    },
    "shared_reference": null,
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Asks the vision model to copy every line of text and, separately, to list any statement about condition, owners, history, inspection, warranty or features; passes only when every line is one of the row's values, the field labels, the brand and Portland, Maine or the price-terms note and no such statement is listed."
+   ],
+   "answered_with": "vision model",
    "rows": [
     {
      "check_id": "PHOTO-08/vehicle-card-r002/H010",
@@ -3363,8 +3395,11 @@
     "assets": [],
     "note": "Truth constraint: do not invent names, locations or records absent from the approved inputs. No supplied file gives a phone number, email or web address; the only location the brand gives is Portland, Maine."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Asks the vision model to list every phone number, email address and web address on the file; any found fails."
+   ],
+   "answered_with": "vision model",
    "rows": [
     {
      "check_id": "PHOTO-08/vehicle-card-r002/H016",
@@ -3490,6 +3525,7 @@
    "code_check": [
     "Runs the check and lets it decide only in the direction it is sure of; the other answer goes to a person."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-08/vehicle-card-r002/H018",
@@ -3668,6 +3704,7 @@
    "code_check": [
     "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-08/inventory-campaign/H067",
@@ -3723,8 +3760,11 @@
     ],
     "note": "meridian_window_card_autumn.pdf prints STOCK NO. M2290, YEAR & MODEL 2016 Calder Vireo, MILEAGE 71,300 mi and PRICE $22,900, last season's card; none of these values is in meridian_intake_week.csv."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Asks the vision model to copy every text on the file and, separately, every stock number, model, mileage and price; code fails any of last season's placeholder values (M2290, 2016 Calder Vireo, 71,300 mi, $22,900)."
+   ],
+   "answered_with": "vision model",
    "rows": [
     {
      "check_id": "PHOTO-08/vehicle-card-r002/H017",
@@ -3921,6 +3961,7 @@
    "code_check": [
     "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-08/vehicle-card-r004/H010",
@@ -3991,8 +4032,11 @@
     "3": "photo"
    },
    "shared_reference": null,
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Gives the vision model the card and all eighteen supplied vehicle photos by file name and asks which one the card's photo was taken from; code checks it is the photo in meridian_intake_week.csv."
+   ],
+   "answered_with": "vision model",
    "rows": [
     {
      "check_id": "PHOTO-08/vehicle-card-r002/H001",
@@ -4289,6 +4333,7 @@
    "code_check": [
     "Searches the deliverable for the supplied file (feature matching, confirmed by correlation), then checks it keeps its own proportions."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-08/inventory-campaign/H006",
@@ -4549,8 +4594,11 @@
     ],
     "note": "Commission: show exactly the six registered vehicles, one photograph per vehicle."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Asks the vision model whether the same vehicle is shown in more than one panel."
+   ],
+   "answered_with": "vision model",
    "rows": [
     {
      "check_id": "PHOTO-08/inventory-campaign/H124",
@@ -5265,6 +5313,7 @@
    "code_check": [
     "Searches the deliverable for the supplied file (feature matching, confirmed by correlation)."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-08/inventory-campaign/H003",
@@ -5497,6 +5546,7 @@
    "code_check": [
     "Finds the supplied photo in the deliverable and checks its shadows keep their detail and are not turned to solid black."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-08/inventory-campaign/H044",
@@ -6349,6 +6399,7 @@
    "code_check": [
     "Searches the deliverable for the supplied file (feature matching, confirmed by correlation), then checks it keeps its own proportions."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-08/inventory-campaign/H100",
@@ -6433,6 +6484,7 @@
    "code_check": [
     "Leaves out every placed photograph as a whole frame, then reads every flat colour left and checks each is a palette colour."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-08/vehicle-card-r002/H012",
@@ -6659,8 +6711,11 @@
     ],
     "note": "Palette rules, distribution: on Showroom White, prices are Meridian Navy #1F2A3A, as on meridian_window_card_autumn.pdf."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads each selected text line by OCR, then the colour of its letters and of the ground behind it."
+   ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-08/vehicle-card-r002/H036",
@@ -6823,6 +6878,7 @@
    "code_check": [
     "Finds every piece in the colour outside the photographs and checks it is a thin rule or sits inside a small label."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-08/vehicle-card-r002/H037",
@@ -7073,6 +7129,7 @@
    "code_check": [
     "Reads each selected text line by OCR, then the colour of its letters and of the ground behind it."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-08/inventory-campaign/H082",
@@ -7394,6 +7451,7 @@
    "code_check": [
     "Reads each selected text line by OCR, then the colour of its letters and of the ground behind it."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-08/vehicle-card-r002/H064",
@@ -7539,6 +7597,7 @@
    "code_check": [
     "Finds the supplied photo and reads the colour of the ground directly round it."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-08/vehicle-card-r002/H065",
@@ -7659,6 +7718,7 @@
    "code_check": [
     "Reads each selected text line by OCR, then the colour of its letters and of the ground behind it."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-08/vehicle-card-r002/H066",
@@ -7817,6 +7877,7 @@
    "code_check": [
     "Reads each selected text line by OCR, then the colour of its letters and of the ground behind it."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-08/vehicle-card-r002/H067",
@@ -7979,6 +8040,7 @@
    "code_check": [
     "Reads each selected text line by OCR, then the colour of its letters and of the ground behind it."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-08/vehicle-card-r002/H068",
@@ -8272,6 +8334,7 @@
    "code_check": [
     "Measures the share of the area outside the photographs in the named colours."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-08/vehicle-card-r002/H070",
@@ -8401,8 +8464,11 @@
     ],
     "note": "Palette rules, distribution: on Showroom White, prices, headings, labels and the dealership name are Meridian Navy #1F2A3A. Palette, Meridian Navy usage: labels and the dealership name, as meridian_window_card_autumn.pdf sets its labels and masthead."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads each selected text line by OCR and the colour of its letters; a line set exactly in another palette colour fails, anything unclear goes to a person."
+   ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-08/vehicle-card-r002/H071",
@@ -8571,6 +8637,7 @@
    "code_check": [
     "Reads each selected text line by OCR, then the colour of its letters and of the ground behind it."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-08/vehicle-card-r002/H072",
@@ -8739,6 +8806,7 @@
    "code_check": [
     "Reads the text; where the named item appears, runs the check on it."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-08/inventory-campaign/H102",
@@ -8905,6 +8973,7 @@
    "code_check": [
     "Reads each selected text line by OCR, then the colour of its letters and of the ground behind it."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-08/inventory-campaign/H118",
@@ -9013,6 +9082,7 @@
    "code_check": [
     "Reads each selected text line by OCR, then the colour of its letters and of the ground behind it."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-08/inventory-campaign/H120",
@@ -9131,6 +9201,7 @@
    "code_check": [
     "Reads each selected text line by OCR, then the colour of its letters and of the ground behind it."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-08/inventory-campaign/H122",
@@ -9191,6 +9262,7 @@
    "code_check": [
     "Reads each selected text line by OCR, then the colour of its letters and of the ground behind it."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-08/inventory-campaign/H123",
@@ -9246,6 +9318,7 @@
    "code_check": [
     "Finds every ground, band, panel and button (flat areas outside the photographs) and reads its colour."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-08/vehicle-card-r002/H075",
@@ -9361,6 +9434,7 @@
    "code_check": [
     "Finds every ground, band, panel and button (flat areas outside the photographs) and reads its colour."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-08/inventory-campaign/H125",
@@ -9411,6 +9485,7 @@
    "code_check": [
     "Reads each selected text line by OCR, then the colour of its letters and of the ground behind it."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-08/vehicle-card-r002/H076",
@@ -10025,6 +10100,7 @@
    "code_check": [
     "Finds the mark, reads the ground around it, and checks its ink on that ground."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-08/inventory-campaign/H129",
@@ -11077,6 +11153,7 @@
    "code_check": [
     "Counts the characters of every line (PDF text, or OCR lines outside the photographs)."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-08/inventory-campaign/H075",
@@ -11706,6 +11783,7 @@
    "code_check": [
     "Finds the price by OCR, splits its figures and dollar sign into ink shapes and compares their heights, baselines and tops."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-08/vehicle-card-r002/H054",
@@ -12060,6 +12138,7 @@
    "code_check": [
     "Finds the price by OCR, splits its figures and dollar sign into ink shapes and compares their heights, baselines and tops."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-08/vehicle-card-r002/H057",
@@ -12604,8 +12683,11 @@
     "assets": [],
     "note": "Signature move and type rule: the price seats on a 1 pt Compass Teal rule across the full vehicle-card width, or across that vehicle's panel in the campaign. A 1 pt rule is a thin hairline at this size."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Asks the vision model whether a thin horizontal rule sits directly under the asking price."
+   ],
+   "answered_with": "vision model",
    "rows": [
     {
      "check_id": "PHOTO-08/vehicle-card-r002/H025",
@@ -12714,8 +12796,11 @@
     "assets": [],
     "note": "Brand type system rule: “No starbursts and no price slash: those read as a buy here pay here lot.”"
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Asks the vision model whether the file contains a starburst graphic."
+   ],
+   "answered_with": "vision model",
    "rows": [
     {
      "check_id": "PHOTO-08/vehicle-card-r002/H030",
@@ -12844,6 +12929,7 @@
    "code_check": [
     "Runs the check and lets it decide only in the direction it is sure of; the other answer goes to a person."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-08/vehicle-card-r002/H034",
@@ -12968,8 +13054,11 @@
     "assets": [],
     "note": "Palette rules, distribution: Showroom White #F6F7F8 is the ground behind all type; Meridian Navy #1F2A3A is the only other ground, for a band, panel or seal carrying reversed type."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Asks the vision model whether any text is printed on top of the vehicle photograph."
+   ],
+   "answered_with": "vision model",
    "rows": [
     {
      "check_id": "PHOTO-08/vehicle-card-r002/H035",
@@ -13373,6 +13462,7 @@
    "code_check": [
     "Reads the text; where the named item appears, runs the check on it."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-08/inventory-campaign/H072",
@@ -13419,8 +13509,11 @@
     "assets": [],
     "note": "Palette rules, distribution: Showroom White #F6F7F8 is the ground behind all type; Meridian Navy #1F2A3A is the only other ground, for a band, panel or seal carrying reversed type."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Asks the vision model whether any text is printed on top of any vehicle photograph."
+   ],
+   "answered_with": "vision model",
    "rows": [
     {
      "check_id": "PHOTO-08/inventory-campaign/H081",
@@ -13641,8 +13734,11 @@
     "assets": [],
     "note": "Type system step 03, Body note: “Mileage and listing detail, max 65 characters a line. Plain information, stated once.” The brief requires the stock number in the enquiry line."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Asks the vision model to copy every line of text and, separately, every listing value once for each place it is printed; code fails any value (stock number, make and model, trim, price, mileage, certification) stated twice, leaving out the enquiry line."
+   ],
+   "answered_with": "vision model",
    "rows": [
     {
      "check_id": "PHOTO-08/vehicle-card-r002/H074",
@@ -13754,8 +13850,11 @@
     "assets": [],
     "note": "Type system step 03, Body note: “Mileage and listing detail, max 65 characters a line. Plain information, stated once.” The brief requires the stock number in the enquiry line."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Asks the vision model to copy every line of text and, separately, every listing value once for each place it is printed; code fails any vehicle's stock number, make and model, price or mileage stated twice."
+   ],
+   "answered_with": "vision model",
    "rows": [
     {
      "check_id": "PHOTO-08/inventory-campaign/H115",
@@ -13806,6 +13905,7 @@
    "code_check": [
     "Finds the price by OCR and the first long run of ink under it, and counts the rows of that rule."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-08/vehicle-card-r002/H078",
@@ -13921,6 +14021,7 @@
    "code_check": [
     "Reads the text; where the named item appears, runs the check on it."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-08/inventory-campaign/H126",
@@ -14125,8 +14226,11 @@
     "assets": [],
     "note": "Brand type system rule: “No starbursts and no price slash: those read as a buy here pay here lot.”"
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Asks the vision model whether any price is slashed or struck through."
+   ],
+   "answered_with": "vision model",
    "rows": [
     {
      "check_id": "PHOTO-08/vehicle-card-r002/H084",
@@ -16164,6 +16268,7 @@
    "code_check": [
     "Searches the deliverable for the supplied file (feature matching, confirmed by correlation), then checks it keeps its own proportions."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-08/vehicle-card-r002/H079",
@@ -16282,6 +16387,7 @@
    "code_check": [
     "Searches the deliverable for the supplied file (feature matching, confirmed by correlation), then checks it keeps its own proportions."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-08/vehicle-card-r004/H077",
@@ -16342,6 +16448,7 @@
    "code_check": [
     "Searches the deliverable for the supplied file (feature matching, confirmed by correlation), then checks it keeps its own proportions."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-08/vehicle-card-r005/H078",
@@ -16562,8 +16669,11 @@
     "1": "price"
    },
    "shared_reference": null,
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Asks the vision model to copy the text set in the largest letters; code checks it is the asking price."
+   ],
+   "answered_with": "vision model",
    "rows": [
     {
      "check_id": "PHOTO-08/vehicle-card-r002/H013",
@@ -16696,6 +16806,7 @@
    "code_check": [
     "Checks each named text lies fully inside the page or image."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-08/inventory-campaign/H005",
@@ -16751,6 +16862,7 @@
    "code_check": [
     "Compares the sizes of every line of one kind with every line of the other."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-08/vehicle-card-r002/H058",
@@ -16874,6 +16986,7 @@
    "code_check": [
     "Compares the named texts' size or position."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-08/vehicle-card-r002/H059",
@@ -17001,6 +17114,7 @@
    "code_check": [
     "Compares the sizes of every line of one kind with every line of the other."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-08/inventory-campaign/H105",
@@ -17051,6 +17165,7 @@
    "code_check": [
     "Compares the sizes of every line of one kind with every line of the other."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-08/inventory-campaign/H106",
@@ -17101,6 +17216,7 @@
    "code_check": [
     "Compares the sizes of every line of one kind with every line of the other."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-08/inventory-campaign/H107",
@@ -17151,6 +17267,7 @@
    "code_check": [
     "Compares the sizes of every line of one kind with every line of the other."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-08/inventory-campaign/H108",

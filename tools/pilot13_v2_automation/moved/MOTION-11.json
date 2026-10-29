@@ -9,13 +9,13 @@
    "critical": false,
    "check": "The title on “Channel thumbnail - WE SPENT SIX HOURS BUILDING A BRIDGE AND THEN DROVE STRAIGHT PAST IT” (thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas.png) reads exactly “WE SPENT SIX HOURS BUILDING A BRIDGE AND THEN DROVE STRAIGHT PAST IT”.",
    "assertion": {
-    "op": "title_stack_r4m",
-    "title": "WE SPENT SIX HOURS BUILDING A BRIDGE AND THEN DROVE STRAIGHT PAST IT",
-    "mode": "reads",
-    "max_rows": 6,
-    "min_conf": 60
+    "op": "vlm_join_r5vc",
+    "question": "Copy the title of this thumbnail: all the large lettering on the coloured band at the top, every row, in order from top to bottom. Copy it exactly as printed, letter for letter, keeping its spelling and punctuation; put each row in values as its own string, in order.",
+    "expected": "WE SPENT SIX HOURS BUILDING A BRIDGE AND THEN DROVE STRAIGHT PAST IT",
+    "case": "exact",
+    "how": "Asks the vision model to copy the title row by row exactly as printed; code joins the rows and compares them with the upload title letter for letter."
    },
-   "how": "Reads the image by OCR and finds the run of rows, top to bottom, that together read the title; then checks the reading, the rows' boxes against the image edges, or their letter height against every other line."
+   "how": "Asks the vision model to copy the title row by row exactly as printed; code joins the rows and compares them with the upload title letter for letter."
   },
   {
    "check_id": "MOTION-11/thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi/H003",
@@ -25,13 +25,13 @@
    "critical": false,
    "check": "The title on “Channel thumbnail - I GAVE MY TEAM ONE SIMPLE JOB AND THEY SET THE ENTIRE BASE ON FIRE” (thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi.png) reads exactly “I GAVE MY TEAM ONE SIMPLE JOB AND THEY SET THE ENTIRE BASE ON FIRE”.",
    "assertion": {
-    "op": "title_stack_r4m",
-    "title": "I GAVE MY TEAM ONE SIMPLE JOB AND THEY SET THE ENTIRE BASE ON FIRE",
-    "mode": "reads",
-    "max_rows": 6,
-    "min_conf": 60
+    "op": "vlm_join_r5vc",
+    "question": "Copy the title of this thumbnail: all the large lettering on the coloured band at the top, every row, in order from top to bottom. Copy it exactly as printed, letter for letter, keeping its spelling and punctuation; put each row in values as its own string, in order.",
+    "expected": "I GAVE MY TEAM ONE SIMPLE JOB AND THEY SET THE ENTIRE BASE ON FIRE",
+    "case": "exact",
+    "how": "Asks the vision model to copy the title row by row exactly as printed; code joins the rows and compares them with the upload title letter for letter."
    },
-   "how": "Reads the image by OCR and finds the run of rows, top to bottom, that together read the title; then checks the reading, the rows' boxes against the image edges, or their letter height against every other line."
+   "how": "Asks the vision model to copy the title row by row exactly as printed; code joins the rows and compares them with the upload title letter for letter."
   },
   {
    "check_id": "MOTION-11/thumbnail-we-broke-the-map/H003",
@@ -162,6 +162,54 @@
     ]
    },
    "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "MOTION-11/channel-teaser/H005",
+   "output_id": "channel-teaser",
+   "rule_id": "R010",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "“Channel feed teaser” (channel-teaser.mp4) closes on an end card frame.",
+   "assertion": {
+    "op": "vlm_frames_r5vc",
+    "then": "vlm_yesno_r5v",
+    "images": [
+     {
+      "src": "deliverable",
+      "from_end": [
+       0
+      ]
+     }
+    ],
+    "question": "This is the final frame of a video. Is it an end card: a designed closing card made of graphics and text (for example a channel name or handle, a subscribe line, an upload schedule line or a mascot on a plain ground), rather than gameplay or camera footage, a black or blank frame, or a frame caught in the middle of a transition? answer yes if it is an end card, no if it is not.",
+    "pass_on": "yes",
+    "how": "Shows the vision model the film's last frame and asks whether it is a designed end card rather than footage or a blank frame; both answers must agree."
+   },
+   "how": "Shows the vision model the film's last frame and asks whether it is a designed end card rather than footage or a blank frame; both answers must agree."
+  },
+  {
+   "check_id": "MOTION-11/channel-teaser-vertical/H004",
+   "output_id": "channel-teaser-vertical",
+   "rule_id": "R010",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "“Channel feed teaser upright cutdown” (channel-teaser-vertical.mp4) closes on an end card frame.",
+   "assertion": {
+    "op": "vlm_frames_r5vc",
+    "then": "vlm_yesno_r5v",
+    "images": [
+     {
+      "src": "deliverable",
+      "from_end": [
+       0
+      ]
+     }
+    ],
+    "question": "This is the final frame of a video. Is it an end card: a designed closing card made of graphics and text (for example a channel name or handle, a subscribe line, an upload schedule line or a mascot on a plain ground), rather than gameplay or camera footage, a black or blank frame, or a frame caught in the middle of a transition? answer yes if it is an end card, no if it is not.",
+    "pass_on": "yes",
+    "how": "Shows the vision model the film's last frame and asks whether it is a designed end card rather than footage or a blank frame; both answers must agree."
+   },
+   "how": "Shows the vision model the film's last frame and asks whether it is a designed end card rather than footage or a blank frame; both answers must agree."
   },
   {
    "check_id": "MOTION-11/channel-animation/H033",
@@ -373,6 +421,33 @@
    "how": "Reads the end card by OCR and checks no line touches the frame edge."
   },
   {
+   "check_id": "MOTION-11/channel-animation/H034",
+   "output_id": "channel-animation",
+   "rule_id": "R023",
+   "k_id": "K1_Q2",
+   "critical": false,
+   "check": "While “STATIC FOX” is held in “Animated channel title and end card” (channel-animation.mp4), every letter can be read, with nothing covering it.",
+   "assertion": {
+    "op": "vlm_frames_r5vc",
+    "then": "vlm_yesno_r5v",
+    "images": [
+     {
+      "src": "deliverable",
+      "from_end": [
+       2.0,
+       1.0,
+       0
+      ],
+      "max_side": 1600
+     }
+    ],
+    "question": "These are frames from the last two seconds of a video, where the channel name is held on screen. Look at the channel name lettering (the large title stack, such as STATIC FOX) in each frame. In any frame, is any letter of it covered by something placed over it (a character, a shape, a band or other text) or cut off by an edge of the frame? answer yes if so; answer no if every letter of it is fully visible in every frame.",
+    "pass_on": "no",
+    "how": "Shows the vision model frames from the held end card (the last two seconds) and asks whether any letter of the channel name is covered or cut off; both answers must agree."
+   },
+   "how": "Shows the vision model frames from the held end card (the last two seconds) and asks whether any letter of the channel name is covered or cut off; both answers must agree."
+  },
+  {
    "check_id": "MOTION-11/channel-animation/H006",
    "output_id": "channel-animation",
    "rule_id": "R025",
@@ -384,6 +459,29 @@
     "mode": "none"
    },
    "how": "Finds the footage in the film's frames and matches it to the supplied captures."
+  },
+  {
+   "check_id": "MOTION-11/channel-animation/H007",
+   "output_id": "channel-animation",
+   "rule_id": "R026",
+   "k_id": "K1_Q3",
+   "critical": false,
+   "check": "“Animated channel title and end card” (channel-animation.mp4) carries no subtitle or on-screen caption of speech.",
+   "assertion": {
+    "op": "vlm_frames_r5vc",
+    "then": "vlm_list_r5v",
+    "images": [
+     {
+      "src": "deliverable",
+      "every": 0.5,
+      "max_side": 1024
+     }
+    ],
+    "question": "These are frames taken every half second through a video, in order. List every subtitle or caption of speech in any frame: a line that writes out words someone says aloud (dialogue, narration or quoted speech, usually across the bottom of the frame). Do not list titles, the channel name or handle, slogans, calls to subscribe, upload schedule lines, member or link lines, or game interface text. Copy each one once. answer yes if there is at least one, no if there is none.",
+    "none_found": "pass",
+    "how": "Shows the vision model a frame every half second through the film and asks it to list any subtitle or caption of speech; it fails when both answers list one and passes when both find none."
+   },
+   "how": "Shows the vision model a frame every half second through the film and asks it to list any subtitle or caption of speech; it fails when both answers list one and passes when both find none."
   },
   {
    "check_id": "MOTION-11/channel-teaser/H002",
@@ -449,6 +547,96 @@
     "min_frames": 6
    },
    "how": "Matches every footage frame of both films to the supplied captures and compares the captures each film uses."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-we-broke-the-map/H039",
+   "output_id": "thumbnail-we-broke-the-map",
+   "rule_id": "R031",
+   "k_id": "K1_Q3",
+   "critical": false,
+   "check": "“Channel thumbnail - WE BROKE THE MAP” (thumbnail-we-broke-the-map.png) carries no speech bubble or quoted caption of speech.",
+   "assertion": {
+    "op": "vlm_list_r5v",
+    "question": "List every speech bubble or thought bubble on this image, and every caption that writes out words someone says: text in quotation marks, or a line given to a speaker (NAME: words). Copy the words of each. Do not list the title, the channel name, labels, numbers or other game or interface text. answer yes if there is at least one, no if there is none.",
+    "none_found": "pass",
+    "how": "Asks the vision model to list every speech bubble and every caption of spoken words; it fails when both answers list one and passes when both find none."
+   },
+   "how": "Asks the vision model to list every speech bubble and every caption of spoken words; it fails when both answers list one and passes when both find none."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-everyone-off-the-platform/H038",
+   "output_id": "thumbnail-everyone-off-the-platform",
+   "rule_id": "R031",
+   "k_id": "K1_Q3",
+   "critical": false,
+   "check": "“Channel thumbnail - EVERYONE OFF THE PLATFORM” (thumbnail-everyone-off-the-platform.png) carries no speech bubble or quoted caption of speech.",
+   "assertion": {
+    "op": "vlm_list_r5v",
+    "question": "List every speech bubble or thought bubble on this image, and every caption that writes out words someone says: text in quotation marks, or a line given to a speaker (NAME: words). Copy the words of each. Do not list the title, the channel name, labels, numbers or other game or interface text. answer yes if there is at least one, no if there is none.",
+    "none_found": "pass",
+    "how": "Asks the vision model to list every speech bubble and every caption of spoken words; it fails when both answers list one and passes when both find none."
+   },
+   "how": "Asks the vision model to list every speech bubble and every caption of spoken words; it fails when both answers list one and passes when both find none."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-kitchen-gone/H038",
+   "output_id": "thumbnail-kitchen-gone",
+   "rule_id": "R031",
+   "k_id": "K1_Q3",
+   "critical": false,
+   "check": "“Channel thumbnail - KITCHEN. GONE.” (thumbnail-kitchen-gone.png) carries no speech bubble or quoted caption of speech.",
+   "assertion": {
+    "op": "vlm_list_r5v",
+    "question": "List every speech bubble or thought bubble on this image, and every caption that writes out words someone says: text in quotation marks, or a line given to a speaker (NAME: words). Copy the words of each. Do not list the title, the channel name, labels, numbers or other game or interface text. answer yes if there is at least one, no if there is none.",
+    "none_found": "pass",
+    "how": "Asks the vision model to list every speech bubble and every caption of spoken words; it fails when both answers list one and passes when both find none."
+   },
+   "how": "Asks the vision model to list every speech bubble and every caption of spoken words; it fails when both answers list one and passes when both find none."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-do-not-open-that-door/H039",
+   "output_id": "thumbnail-do-not-open-that-door",
+   "rule_id": "R031",
+   "k_id": "K1_Q3",
+   "critical": false,
+   "check": "“Channel thumbnail - DO NOT OPEN THAT DOOR” (thumbnail-do-not-open-that-door.png) carries no speech bubble or quoted caption of speech.",
+   "assertion": {
+    "op": "vlm_list_r5v",
+    "question": "List every speech bubble or thought bubble on this image, and every caption that writes out words someone says: text in quotation marks, or a line given to a speaker (NAME: words). Copy the words of each. Do not list the title, the channel name, labels, numbers or other game or interface text. answer yes if there is at least one, no if there is none.",
+    "none_found": "pass",
+    "how": "Asks the vision model to list every speech bubble and every caption of spoken words; it fails when both answers list one and passes when both find none."
+   },
+   "how": "Asks the vision model to list every speech bubble and every caption of spoken words; it fails when both answers list one and passes when both find none."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas/H038",
+   "output_id": "thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas",
+   "rule_id": "R031",
+   "k_id": "K1_Q3",
+   "critical": false,
+   "check": "“Channel thumbnail - WE SPENT SIX HOURS BUILDING A BRIDGE AND THEN DROVE STRAIGHT PAST IT” (thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas.png) carries no speech bubble or quoted caption of speech.",
+   "assertion": {
+    "op": "vlm_list_r5v",
+    "question": "List every speech bubble or thought bubble on this image, and every caption that writes out words someone says: text in quotation marks, or a line given to a speaker (NAME: words). Copy the words of each. Do not list the title, the channel name, labels, numbers or other game or interface text. answer yes if there is at least one, no if there is none.",
+    "none_found": "pass",
+    "how": "Asks the vision model to list every speech bubble and every caption of spoken words; it fails when both answers list one and passes when both find none."
+   },
+   "how": "Asks the vision model to list every speech bubble and every caption of spoken words; it fails when both answers list one and passes when both find none."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi/H038",
+   "output_id": "thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi",
+   "rule_id": "R031",
+   "k_id": "K1_Q3",
+   "critical": false,
+   "check": "“Channel thumbnail - I GAVE MY TEAM ONE SIMPLE JOB AND THEY SET THE ENTIRE BASE ON FIRE” (thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi.png) carries no speech bubble or quoted caption of speech.",
+   "assertion": {
+    "op": "vlm_list_r5v",
+    "question": "List every speech bubble or thought bubble on this image, and every caption that writes out words someone says: text in quotation marks, or a line given to a speaker (NAME: words). Copy the words of each. Do not list the title, the channel name, labels, numbers or other game or interface text. answer yes if there is at least one, no if there is none.",
+    "none_found": "pass",
+    "how": "Asks the vision model to list every speech bubble and every caption of spoken words; it fails when both answers list one and passes when both find none."
+   },
+   "how": "Asks the vision model to list every speech bubble and every caption of spoken words; it fails when both answers list one and passes when both find none."
   },
   {
    "check_id": "MOTION-11/channel-animation/H001",
@@ -1001,6 +1189,21 @@
     "capture": "staticfox_captures/staticfox_capture_04.mp4"
    },
    "how": "Finds the capture frame the thumbnail is built on and compares the colours of the visible capture with it."
+  },
+  {
+   "check_id": "MOTION-11/thumbnail-do-not-open-that-door/H008",
+   "output_id": "thumbnail-do-not-open-that-door",
+   "rule_id": "R048",
+   "k_id": "K2_Q2",
+   "critical": false,
+   "check": "On “Channel thumbnail - DO NOT OPEN THAT DOOR” (thumbnail-do-not-open-that-door.png), the capture's webcam window is shown whole, fully covered, or cropped out, never partly cut.",
+   "assertion": {
+    "op": "vlm_yesno_r5v",
+    "question": "Look for a webcam window: a small inset picture of a real person (the player's camera), round or rectangular, usually near a corner. Is part of that webcam window missing, either covered by something drawn over it (a cartoon character, a text band, a shape) or running past an edge of the image so that part of its outline and picture is cut away? answer yes only if part of it is clearly missing. answer no if its whole outline is visible inside the image with nothing over it, or if there is no webcam window at all.",
+    "pass_on": "no",
+    "how": "Asks the vision model whether the webcam window is only partly visible, partly covered or partly cut off by an edge; both answers must agree."
+   },
+   "how": "Asks the vision model whether the webcam window is only partly visible, partly covered or partly cut off by an edge; both answers must agree."
   },
   {
    "check_id": "MOTION-11/channel-animation/H011",
@@ -5554,13 +5757,12 @@
    "critical": false,
    "check": "The largest text on “Channel thumbnail - WE SPENT SIX HOURS BUILDING A BRIDGE AND THEN DROVE STRAIGHT PAST IT” (thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas.png) is the title.",
    "assertion": {
-    "op": "title_stack_r4m",
-    "title": "WE SPENT SIX HOURS BUILDING A BRIDGE AND THEN DROVE STRAIGHT PAST IT",
-    "mode": "largest",
-    "max_rows": 6,
-    "min_conf": 60
+    "op": "vlm_part_r5vc",
+    "question": "Which text on this image is set in the largest letters (the tallest capital letters)? Copy that row of text exactly as printed into values. If several rows share the largest size, copy each of them.",
+    "expected": "WE SPENT SIX HOURS BUILDING A BRIDGE AND THEN DROVE STRAIGHT PAST IT",
+    "how": "Asks the vision model to copy the text set in the largest letters; code checks it is part of the upload title (a misspelt word still counts as the title's word: spelling is another check)."
    },
-   "how": "Reads the image by OCR and finds the run of rows, top to bottom, that together read the title; then checks the reading, the rows' boxes against the image edges, or their letter height against every other line."
+   "how": "Asks the vision model to copy the text set in the largest letters; code checks it is part of the upload title (a misspelt word still counts as the title's word: spelling is another check)."
   },
   {
    "check_id": "MOTION-11/thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi/H009",
@@ -5570,13 +5772,12 @@
    "critical": false,
    "check": "The largest text on “Channel thumbnail - I GAVE MY TEAM ONE SIMPLE JOB AND THEY SET THE ENTIRE BASE ON FIRE” (thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi.png) is the title.",
    "assertion": {
-    "op": "title_stack_r4m",
-    "title": "I GAVE MY TEAM ONE SIMPLE JOB AND THEY SET THE ENTIRE BASE ON FIRE",
-    "mode": "largest",
-    "max_rows": 6,
-    "min_conf": 60
+    "op": "vlm_part_r5vc",
+    "question": "Which text on this image is set in the largest letters (the tallest capital letters)? Copy that row of text exactly as printed into values. If several rows share the largest size, copy each of them.",
+    "expected": "I GAVE MY TEAM ONE SIMPLE JOB AND THEY SET THE ENTIRE BASE ON FIRE",
+    "how": "Asks the vision model to copy the text set in the largest letters; code checks it is part of the upload title (a misspelt word still counts as the title's word: spelling is another check)."
    },
-   "how": "Reads the image by OCR and finds the run of rows, top to bottom, that together read the title; then checks the reading, the rows' boxes against the image edges, or their letter height against every other line."
+   "how": "Asks the vision model to copy the text set in the largest letters; code checks it is part of the upload title (a misspelt word still counts as the title's word: spelling is another check)."
   },
   {
    "check_id": "MOTION-11/thumbnail-we-broke-the-map/H011",

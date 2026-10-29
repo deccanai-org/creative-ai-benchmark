@@ -99,6 +99,34 @@ a confirmed defect, round 4's in `known_true_fails_r4.json`) and the made files 
 fail, all on MOTION-11 R057, which stays). The photo-measurement rules on the PHOTO tasks only passed on the real outputs
 (none had those defects); their fail side is proven on the made LAYOUT-12 files.
 
+## Round 5 (2026-10-29)
+
+Dhiren: "try to do your best on round 5, dont over stretch. do which u are 100% confident about only here. Also, in
+parallel, do the VLM vision model checks as well for all the tasks wherever you can possibly", with an OpenRouter key and
+"if this works its enough" for Gemini 3.8 Flash. Two parts:
+
+- Close calls in code (`round5_code.py`, ops `ops_r5_code.py`, `_r5c`): rules whose code already decided some rows
+  without a wrong answer, now deciding the rest only where the reading is certain (10 rules, 68 checks; 16 left out:
+  typefaces on images, grain limits with no evidence, faces, line lengths).
+- Objective look, count and read checks by a vision model (`round5_vlm_a.py` PHOTO-08/10, `round5_vlm_b.py` the other
+  PHOTO tasks, `round5_vlm_c.py` LAYOUT-12, MOTION-11, VECTOR-04; ops `ops_r5_vlm.py` plus `ops_r5_vlm_{a,b,c}.py`):
+  Gemini 3.8 Flash through OpenRouter, pinned to Google Vertex, temperature 0, low reasoning, seeds 11 and 23. A check
+  passes or fails only when both answers agree; the question never contains the expected answer (code compares); an
+  absence passes only for rules proven on planted copies; every answer is saved in `vlm_answers/` (the 2,660 the final
+  run used) and replayed, so `VLM_OFFLINE=1` reproduces every result with no API key. The model answered 23 of 23
+  known-answer calibration questions right (planted misspellings copied as printed, an added phone number and web address
+  found, cut letters, people and shapes counted). Total spend $8.39.
+
+Tests: the 2026-09-28 outputs, the made sets plus a new `bad5` (28 files, `defects5.json`, `PLANTED5`), and 72 planted
+copies of real PHOTO deliverables in six folders, each with its own list (`decide_moves.py --planted res.json=list.json`,
+round-5 rules only; a planted copy keeps the real file's confirmed defects). Result: all 119 round-5 rules move (513
+checks: 68 by code, 445 by the vision model); bad5 showed 6 earlier rules over-reading an extra act name or a covered
+word (LAYOUT-12 R121 R153 R158 R161, MOTION-11 R082 R107), which go back to people (25 checks). In all: 4,631 of the
+6,312 checks (1,041 rules) answered automatically, 4,186 by code and 445 by the vision model; 1,681 left for people.
+Confirmed real fails of round 5 in `known_true_fails_r5.json` (11). Decision record per rule: `moved_rules.json`
+`method` ('code' or 'vision model'). Offline tests: `tools/auto_verifier/test_ops_r5_vlm.py` (decision rules, and no
+read or count question contains its expected answer).
+
 ## Outcomes and safety rules
 
 Every operation answers `pass`, `fail` or `person` (the code could not decide, so a person answers that row).

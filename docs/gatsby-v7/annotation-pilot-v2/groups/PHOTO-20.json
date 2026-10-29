@@ -44,6 +44,7 @@
    "code_check": [
     "Reads the type by OCR or from the PDF, leaving out lettering inside the supplied photos, and looks for the wording."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-20/speaker-onepager/H001",
@@ -99,6 +100,7 @@
    "code_check": [
     "Checks each named text lies fully inside the page or image."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-20/speaker-onepager/H003",
@@ -154,6 +156,7 @@
    "code_check": [
     "Checks the named text is read in full inside the page or image (for a mark, its letters read as a line of their own)."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-20/event-announcement-r002/H001",
@@ -248,6 +251,7 @@
    "code_check": [
     "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-20/event-announcement-r002/H003",
@@ -487,6 +491,7 @@
    "code_check": [
     "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-20/event-announcement-r002/H004",
@@ -569,6 +574,7 @@
    "code_check": [
     "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-20/event-announcement-r002/H005",
@@ -651,6 +657,7 @@
    "code_check": [
     "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-20/event-announcement-r002/H006",
@@ -733,6 +740,7 @@
    "code_check": [
     "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-20/event-announcement-r002/H008",
@@ -826,6 +834,7 @@
    "code_check": [
     "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-20/event-announcement-r002/H009",
@@ -940,6 +949,7 @@
    "code_check": [
     "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-20/event-announcement-r002/H010",
@@ -1036,6 +1046,7 @@
    "code_check": [
     "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-20/event-announcement-r003/H004",
@@ -1118,6 +1129,7 @@
    "code_check": [
     "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-20/event-announcement-r003/H005",
@@ -1200,6 +1212,7 @@
    "code_check": [
     "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-20/event-announcement-r003/H006",
@@ -1282,6 +1295,7 @@
    "code_check": [
     "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-20/event-announcement-r008/H004",
@@ -1364,6 +1378,7 @@
    "code_check": [
     "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-20/event-announcement-r008/H005",
@@ -1446,6 +1461,7 @@
    "code_check": [
     "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-20/event-announcement-r008/H006",
@@ -1516,8 +1532,11 @@
    ],
    "slot_labels": {},
    "shared_reference": null,
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Asks the vision model whether any letter of the talk title, event name or date is cut off at an edge; it passes when the model finds none."
+   ],
+   "answered_with": "vision model",
    "rows": [
     {
      "check_id": "PHOTO-20/event-banner-r002/H008",
@@ -1621,6 +1640,7 @@
    "code_check": [
     "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-20/talk-card-r002/H001",
@@ -1831,6 +1851,7 @@
    "code_check": [
     "Checks the named text is read in full inside the page or image (for a mark, its letters read as a line of their own)."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-20/talk-card-r002/H002",
@@ -2033,6 +2054,7 @@
    "code_check": [
     "Reads the type by OCR or from the PDF, leaving out lettering inside the supplied photos, and looks for the wording."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-20/speaker-onepager/H009",
@@ -2108,6 +2130,7 @@
    "code_check": [
     "Reads the text and checks the second text comes directly after the first."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-20/speaker-onepager/H011",
@@ -2208,6 +2231,7 @@
    "code_check": [
     "Finds the texts in the PDF and checks they form one block with nothing else inside it."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-20/speaker-onepager/H012",
@@ -2263,6 +2287,7 @@
    "code_check": [
     "Reads the type by OCR or from the PDF, leaving out lettering inside the supplied photos, and looks for the wording."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-20/speaker-onepager/H053",
@@ -2320,6 +2345,7 @@
    "code_check": [
     "Reads the pictures placed in the PDF and identifies which supplied portraits they show."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-20/talk-card-r002/H056",
@@ -2488,6 +2514,7 @@
    "code_check": [
     "Reads the PDF drawing order and checks nothing is drawn over the texts."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-20/speaker-onepager/H055",
@@ -2540,6 +2567,7 @@
    "code_check": [
     "Finds the texts in the PDF and checks they form one block with nothing else inside it."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-20/talk-card-r002/H006",
@@ -2718,6 +2746,7 @@
    "code_check": [
     "Finds both elements (by their colour, the supplied file, the placed photo or the text) and compares their positions, for each of the 3 named texts; all must pass."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-20/talk-card-r002/H058",
@@ -2877,8 +2906,11 @@
     "assets": [],
     "note": "Brand about: It has to read as a person who runs a company, composed and credible, never as an influencer or an account, because she is asking for money and for stage time. Brand voice: I want it to look like someone who runs a company, not someone who runs an account."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Asks the vision model to list any social handle, follower count or platform icon on the file; any item fails."
+   ],
+   "answered_with": "vision model",
    "rows": [
     {
      "check_id": "PHOTO-20/speaker-onepager/H008",
@@ -3116,6 +3148,7 @@
    "code_check": [
     "Lays the supplied photo over the placed one and looks for its original backdrop left unchanged round the subject."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-20/event-announcement-r002/H017",
@@ -3470,6 +3503,7 @@
    "code_check": [
     "Lays the supplied photo over the placed one and looks for its original backdrop left unchanged round the subject."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-20/speaker-onepager/H016",
@@ -3545,6 +3579,7 @@
    "code_check": [
     "Reads the type by OCR or from the PDF, leaving out lettering inside the supplied photos, and looks for the wording."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-20/event-announcement-r002/H007",
@@ -3723,6 +3758,7 @@
    "code_check": [
     "Reads all text and checks none of the named words or patterns appears."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-20/talk-card-r003/H009",
@@ -3875,6 +3911,7 @@
    "code_check": [
     "Reads all text and checks none of the named words or patterns appears."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-20/talk-card-r004/H009",
@@ -4234,6 +4271,7 @@
    "code_check": [
     "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-20/speaker-onepager/H004",
@@ -4290,8 +4328,11 @@
     ],
     "note": "Truth constraint: Do not invent names, prices, claims, product features, locations, credentials, records, or documentary events that are absent from the approved inputs. Brief: the biography preserves approved facts."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Asks the vision model to copy the biography sentence by sentence; code checks each is a sentence of vellacourt_bio_copy.txt word for word (a sentence with a figure the file does not give fails)."
+   ],
+   "answered_with": "vision model",
    "rows": [
     {
      "check_id": "PHOTO-20/speaker-onepager/H010",
@@ -4352,6 +4393,7 @@
    "code_check": [
     "Reads all text and checks none of the named words or patterns appears."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-20/speaker-onepager/H052",
@@ -4412,6 +4454,7 @@
    "code_check": [
     "Reads all text and checks none of the named words or patterns appears."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-20/talk-card-r002/H054",
@@ -4476,6 +4519,7 @@
    "code_check": [
     "Reads every line of type and checks its words come from the supplied copy."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-20/event-announcement-r002/H060",
@@ -4909,6 +4953,7 @@
    "code_check": [
     "Searches the deliverable for the supplied file (feature matching, confirmed by correlation)."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-20/event-announcement-r002/H013",
@@ -5308,6 +5353,7 @@
    "code_check": [
     "Searches the deliverable for the supplied file (feature matching, confirmed by correlation)."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-20/speaker-onepager/H015",
@@ -5393,6 +5439,7 @@
     "Lays the supplied photo over the placed one and compares them tile by tile: colour, detail and correlation.",
     "Reads every picture placed in the PDF, identifies its supplied photo and compares the colours tile by tile."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-20/event-announcement-r002/H014",
@@ -6031,6 +6078,7 @@
    "code_check": [
     "Lays the supplied photo over the placed one and compares them tile by tile: colour, detail and correlation."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-20/event-announcement-r002/H020",
@@ -6182,6 +6230,7 @@
     "Finds the mark by its colour, confirms its shape against the supplied artwork, and checks every pixel is that colour or its edge blend.",
     "Reads the PDF paint: opacity, shading, patterns, soft masks and blend modes."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-20/speaker-onepager/H013",
@@ -6486,6 +6535,7 @@
    "code_check": [
     "Reads every picture placed in the PDF, identifies its supplied photo and compares the colours tile by tile."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-20/speaker-onepager/H021",
@@ -6869,6 +6919,7 @@
    "code_check": [
     "Finds the mark by its colour, confirms its shape against the supplied artwork, and checks every pixel is that colour or its edge blend."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-20/event-announcement-r002/H028",
@@ -6984,6 +7035,7 @@
    "code_check": [
     "Reads every flat colour outside the photographs and checks each is a palette colour."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-20/event-announcement-r002/H033",
@@ -7099,6 +7151,7 @@
    "code_check": [
     "Finds every ground and panel (flat areas outside the photographs) and reads its colour."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-20/event-announcement-r002/H034",
@@ -7308,6 +7361,7 @@
    "code_check": [
     "Reads each text line (OCR on images, live text on PDFs), the colour of its letters and of the ground behind it, and checks the pairing."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-20/event-announcement-r002/H036",
@@ -7423,6 +7477,7 @@
    "code_check": [
     "Finds every use of the colour and checks it is only the mark."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-20/speaker-onepager/H033",
@@ -7656,6 +7711,7 @@
     "Reads the PDF for any transparency or gradient shading.",
     "Runs each part; all must pass: Tries each route; one must pass and none may fail; Checks every flat designed colour is a palette colour, with no shaded area and no type over a photograph."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-20/speaker-onepager/H034",
@@ -7893,6 +7949,7 @@
    "code_check": [
     "Reads each text line (OCR on images, live text on PDFs), the colour of its letters and of the ground behind it, and checks the pairing."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-20/event-banner-r002/H033",
@@ -7984,6 +8041,7 @@
    "code_check": [
     "Finds the shapes drawn in the mark's colour and measures them or checks they are drawn solid."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-20/speaker-onepager/H025",
@@ -8138,6 +8196,7 @@
    "code_check": [
     "Reads every type, shape and line colour from the file (photos excluded)."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-20/speaker-onepager/H030",
@@ -8294,6 +8353,7 @@
    "code_check": [
     "Renders each page without photos and finds the colour covering the most area."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-20/talk-card-r002/H030",
@@ -8480,6 +8540,7 @@
    "code_check": [
     "Reads each line's colour from the PDF and the colour behind it from the rendered page, and checks the pairing."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-20/talk-card-r002/H031",
@@ -8658,6 +8719,7 @@
    "code_check": [
     "Reads each line's colour from the PDF and the colour behind it from the rendered page, and checks the pairing."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-20/speaker-onepager/H054",
@@ -8812,6 +8874,7 @@
    "code_check": [
     "Reads the page ground and the filled shapes drawn in the PDF: their colours, sizes and opacity."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-20/speaker-onepager/H031",
@@ -8867,6 +8930,7 @@
    "code_check": [
     "Reads each text line (OCR on images, live text on PDFs), the colour of its letters and of the ground behind it, and checks the pairing."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-20/speaker-onepager/H032",
@@ -8922,6 +8986,7 @@
    "code_check": [
     "Reads the page ground and the filled shapes drawn in the PDF: their colours, sizes and opacity."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-20/talk-card-r002/H053",
@@ -9063,6 +9128,7 @@
    "code_check": [
     "Reads each text line (OCR on images, live text on PDFs), the colour of its letters and of the ground behind it, and checks the pairing."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-20/event-announcement-r002/H058",
@@ -9139,6 +9205,7 @@
    "code_check": [
     "Reads each text line (OCR on images, live text on PDFs), the colour of its letters and of the ground behind it, and checks the pairing."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-20/event-banner-r002/H055",
@@ -9215,6 +9282,7 @@
    "code_check": [
     "Reads each line's colour from the PDF and the colour behind it from the rendered page, and checks the pairing."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-20/talk-card-r002/H055",
@@ -9356,6 +9424,7 @@
    "code_check": [
     "Reads each line's colour from the PDF and the colour behind it from the rendered page, and checks the pairing."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-20/speaker-onepager/H056",
@@ -9403,6 +9472,7 @@
    "code_check": [
     "Reads the font, size or letter case of the selected lines from the PDF."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-20/speaker-onepager/H005",
@@ -9799,6 +9869,7 @@
    "code_check": [
     "Reads the PDF fonts and flags any serif type other than the allowed lines."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-20/speaker-onepager/H027",
@@ -10504,6 +10575,7 @@
    "code_check": [
     "Reads each line of text and counts its characters."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-20/event-banner-r002/H030",
@@ -10593,6 +10665,7 @@
    "code_check": [
     "Reads the font, size or letter case of the selected lines from the PDF."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-20/talk-card-r002/H027",
@@ -10838,6 +10911,7 @@
    "code_check": [
     "Reads each line of text and counts its characters."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-20/talk-card-r002/H028",
@@ -10988,6 +11062,7 @@
    "code_check": [
     "Sorts the PDF text into roles by size and reads the font, size, letter case and line spacing of the named role."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-20/speaker-onepager/H028",
@@ -11047,6 +11122,7 @@
    "code_check": [
     "Reads each line of text and counts its characters."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-20/speaker-onepager/H029",
@@ -11106,6 +11182,7 @@
    "code_check": [
     "Reads the font, size, letter case or colour of the named text from the PDF."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-20/speaker-onepager/H040",
@@ -11174,6 +11251,7 @@
    "code_check": [
     "Reads the font, size or letter case of the selected lines from the PDF."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-20/speaker-onepager/H046",
@@ -11366,6 +11444,7 @@
    "code_check": [
     "Reads each text line (OCR on images, live text on PDFs), the colour of its letters and of the ground behind it, and checks the pairing."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-20/event-announcement-r002/H052",
@@ -11478,6 +11557,7 @@
    "code_check": [
     "Reads the font, size or letter case of the selected lines from the PDF."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-20/event-banner-r002/H042",
@@ -12043,6 +12123,7 @@
    "code_check": [
     "Finds the monogram by its colour and measures its width, its place over the name and how often it appears."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-20/event-announcement-r002/H059",
@@ -12158,6 +12239,7 @@
    "code_check": [
     "Finds the monogram by its colour and measures its width, its place over the name and how often it appears."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-20/speaker-onepager/H014",
@@ -12390,6 +12472,7 @@
    "code_check": [
     "Finds the monogram by its colour and measures its width, its place over the name and how often it appears."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-20/speaker-onepager/H022",
@@ -12622,6 +12705,7 @@
    "code_check": [
     "Finds the monogram by its colour and measures its width, its place over the name and how often it appears."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-20/speaker-onepager/H023",
@@ -13084,6 +13168,7 @@
    "code_check": [
     "Finds both elements (by their colour, the supplied file, the placed photo or the text) and compares their positions."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-20/event-announcement-r002/H029",
@@ -13291,6 +13376,7 @@
     "Checks every flat designed colour is a palette colour, with no shaded area and no type over a photograph.",
     "Reads the PDF paint: opacity, shading, patterns, soft masks and blend modes."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-20/speaker-onepager/H035",
@@ -13523,6 +13609,7 @@
    "code_check": [
     "Finds both elements (by their colour, the supplied file, the placed photo or the text) and compares their positions."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-20/speaker-onepager/H026",
@@ -13591,6 +13678,7 @@
    "code_check": [
     "Finds the shapes drawn in the mark's colour and measures them or checks they are drawn solid."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-20/speaker-onepager/H050",
@@ -13790,6 +13878,7 @@
    "code_check": [
     "Reads the PDF's drawing order and checks nothing is drawn over a placed photo."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-20/speaker-onepager/H051",
@@ -13854,6 +13943,7 @@
     "Either route can answer: compares the photo with the supplied file (images) or reads the shapes drawn over it (PDFs) for a scrim, gradient or tint; or: lays the supplied photo over the placed one and compares them tile by tile: colour, detail and correlation. One must pass and none may fail.",
     "Reads the PDF's drawing order and checks nothing is drawn over a placed photo."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-20/event-announcement-r002/H056",
@@ -14066,6 +14156,7 @@
     "Lays the supplied photo over the placed one and compares them tile by tile: colour, detail and correlation.",
     "Reads every picture placed in the PDF, identifies its supplied photo and compares the colours tile by tile."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-20/event-announcement-r002/H015",
@@ -14721,6 +14812,7 @@
     "Lays the supplied photo over the placed one and compares them tile by tile: colour, detail and correlation.",
     "Reads every picture placed in the PDF, identifies its supplied photo and compares the colours tile by tile."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-20/event-announcement-r002/H019",
@@ -15368,6 +15460,7 @@
    "code_check": [
     "Reads every picture placed in the PDF, identifies its supplied photo and compares the colours tile by tile."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-20/talk-card-r007/H017",
@@ -15418,6 +15511,7 @@
    "code_check": [
     "Reads every picture placed in the PDF, identifies its supplied photo and compares the colours tile by tile."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-20/talk-card-r007/H018",
@@ -15649,6 +15743,7 @@
    "code_check": [
     "Reads every picture placed in the PDF, identifies its supplied photo and compares the colours tile by tile."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-20/talk-card-r006/H056",
@@ -15736,6 +15831,7 @@
     "Lays the supplied photo over the placed one and compares them tile by tile: colour, detail and correlation.",
     "Reads every picture placed in the PDF, identifies its supplied photo and compares the colours tile by tile."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-20/event-announcement-r002/H062",
@@ -16031,6 +16127,7 @@
     "Lays the supplied photo over the placed one and compares them tile by tile: colour, detail and correlation.",
     "Reads every picture placed in the PDF, identifies its supplied photo and compares the colours tile by tile."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-20/speaker-onepager/H061",
@@ -16313,6 +16410,7 @@
     "Lays the supplied photo over the placed one and compares them tile by tile: colour, detail and correlation.",
     "Reads every picture placed in the PDF, identifies its supplied photo and compares the colours tile by tile."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-20/speaker-onepager/H062",
@@ -16645,6 +16743,7 @@
    "code_check": [
     "Reads every picture placed in the PDF, identifies its supplied photo and compares the colours tile by tile."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-20/talk-card-r007/H058",
@@ -16695,6 +16794,7 @@
    "code_check": [
     "Reads every picture placed in the PDF, identifies its supplied photo and compares the colours tile by tile."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-20/talk-card-r007/H059",
@@ -16745,6 +16845,7 @@
    "code_check": [
     "Reads every picture placed in the PDF, identifies its supplied photo and compares the colours tile by tile."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-20/talk-card-r007/H060",
@@ -16792,6 +16893,7 @@
    "code_check": [
     "Compares text sizes (font size in PDFs, letter height on images)."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-20/event-banner-r002/H010",
@@ -16880,6 +16982,7 @@
    "code_check": [
     "Compares text sizes (font size in PDFs, letter height on images)."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-20/talk-card-r002/H007",
@@ -17061,6 +17164,7 @@
    "code_check": [
     "Compares text sizes (font size in PDFs, letter height on images)."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-20/speaker-onepager/H007",
@@ -17116,6 +17220,7 @@
    "code_check": [
     "Compares the named texts' size or position."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-20/event-announcement-r002/H011",
@@ -17433,6 +17538,7 @@
    "code_check": [
     "Compares the named texts' size or position."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-20/talk-card-r002/H052",

@@ -8,8 +8,12 @@ Rules the code mostly sends back to a person stay with people for now: the autom
 outputs it would not save review time.
 
 Usage: python decide_moves.py <real results.json> <made good results.json> <made bad results.json> [<made bad2 results.json>
-       [<made bad3 results.json> [<made bad4 results.json>]]]
-(bad2, bad3, bad4: the further broken sets, with the defects of PLANTED2, PLANTED3 and PLANTED4)
+       [<made bad3 results.json> [<made bad4 results.json>]]] [--bad5 <made bad5 results.json>]
+       [--planted <results.json>=<planted list.json> ...]
+(bad2, bad3, bad4, bad5: the further broken sets, with the defects of PLANTED2, PLANTED3, PLANTED4 and PLANTED5;
+--planted, repeatable: round 5's planted copies of real deliverables, one folder per helper, each with its own list
+{"TASK/deliverable": {"rules": [...], "defect": "...", optional "checks": [...]}}; they test the round-5 rules only,
+since earlier rounds never ran on them)
 """
 from __future__ import annotations
 
@@ -45,7 +49,7 @@ KNOWN_TRUE_FAILS = {
     'PHOTO-26/wholesale-presentation/H011': 'every price (17 pt) is set larger than its product name (13 pt)',
 }
 # round 3 (2026-10-28): the fails checked by hand, kept in a file of their own (check ID -> what is wrong)
-for _name in ('known_true_fails_r3.json', 'known_true_fails_r4.json'):   # rounds 3 and 4, each in a file of its own
+for _name in ('known_true_fails_r3.json', 'known_true_fails_r4.json', 'known_true_fails_r5.json'):   # rounds 3 to 5, a file each
     if (HERE / _name).is_file():
         KNOWN_TRUE_FAILS.update(json.loads((HERE / _name).read_text()))
 # defects planted in the made "bad" files: (deliverable, rule) pairs where a fail is the expected answer
@@ -171,8 +175,28 @@ ALSO_BROKEN = {
                                 ('sticker-cut-bag-design-3', 'R009'), ('sticker-cut-window-mark', 'R009'),  # cut paths too
                                 ('sticker-cut-window-mark', 'R007'), ('sticker-cut-bag-design-1', 'R007'),  # (round 4)
                                 ('sticker-proof-companion-1', 'R001'),   # the SVG's badge arc changed, the proof did not
-                                ('new-sticker-companion-1', 'R086')}},   # ampersand at cap height sits on the baseline
-    'made_bad3': {'VECTOR-04': {('sticker-proof-bag-design-2', 'R018')}},  # the painted shadow shows through the open space
+                                ('new-sticker-companion-1', 'R086'),     # ampersand at cap height sits on the baseline
+                                # round 5: a sticker traced from the wrong bag lacks the parts its own design names
+                                ('recovered-sticker-bag-design-1', 'R046'),   # ridge line traced: no moth antennae or eye spots
+                                ('recovered-sticker-bag-design-2', 'R042')}},  # moth traced: no cone, carafe or steam curl
+    'made_bad3': {'VECTOR-04': {('sticker-proof-bag-design-2', 'R018'),  # the painted shadow shows through the open space
+                                ('recovered-sticker-window-mark', 'R053')}},  # round 5: ring filled solid, so no thin ring shows
+    # round 5's bad5 (vision-model plants, defects5.json): earlier rules a plant breaks when the rule is read literally
+    'made_bad5': {'LAYOUT-12': {('poster-direction-image-led', 'R105'), ('poster-direction-image-led', 'R115'),
+                                ('poster-direction-image-led', 'R135'),  # caption "Pictured: Sable Quartet ..." on the
+                                ('promoter-deck', 'R106'), ('promoter-deck', 'R118'),  # photograph: an act name on a photo,
+                                ('promoter-deck', 'R140'),               # in Archivo Narrow and not in capitals
+                                ('promoter-deck', 'R126')},              # page 2 also gains a date line FRI 2 OCT in Archivo Narrow
+                  'MOTION-11': {('channel-teaser-vertical', 'R012')},    # cut before its end card: no handle shown
+                  'VECTOR-04': {('sticker-proof-window-mark', 'R001'), ('sticker-proof-bag-design-1', 'R001'),
+                                ('sticker-proof-bag-design-2', 'R001'), ('sticker-proof-bag-design-3', 'R001'),  # proofs changed
+                                ('sticker-cut-bag-design-1', 'R007'), ('sticker-cut-bag-design-2', 'R007'),
+                                ('sticker-cut-bag-design-3', 'R007'), ('sticker-cut-window-mark', 'R007'),  # artwork grown or
+                                ('recovered-sticker-bag-design-2', 'R016'), ('recovered-sticker-bag-design-2', 'R054'),  # cut
+                                ('sticker-proof-bag-design-2', 'R018'), ('sticker-proof-bag-design-3', 'R018'),  # photo behind
+                                ('sticker-proof-bag-design-3', 'R060'),  # the pour-over drawing in place of the ridge line
+                                ('sticker-proof-window-mark', 'R101'), ('sticker-proof-bag-design-1', 'R101'),
+                                ('sticker-proof-bag-design-2', 'R101')}},  # photographs on the proof: not flat ink
 }
 
 # settings that are limits chosen in code (tolerances, thresholds, definitions), as opposed to values the rule states
@@ -181,9 +205,24 @@ CHOSEN = {'tol', 'min_conf', 'min_cover', 'min_chars', 'max_de', 'max_scale', 't
           'small_px'} | {'fail_mm', 'px_mm', 'sigma_mm', 'turn_sigma_mm', 'turn_window_mm', 'max_turn_deg', 'max_shift_mm', 'min_iou', 'fail_iou', 'max_aspect', 'max_changed_share', 'max_opacity_share', 'max_share', 'cover', 'min_drop', 'max_iou', 'min_differ', 'tol_deg', 'fail_deg', 'pass_share', 'min_rise', 'ink_tol', 'ground_tol', 'fail_short', 'fail_drop', 'even_tol', 'min_run', 'rule_tol', 'max_gap', 'max_px', 'fail_px', 'pic_tol', 'aspect_tol', 'edge_tol', 'name_conf', 'pass_ratio', 'fail_ratio', 'photo_digit_max', 'ground_share', 'photo_area', 'ring_px', 'flat_ring', 'ink_min', 'min_px', 'flat_tol', 'max_text', 'max_rms', 'min_letters', 'touch_spread', 'frame_min', 'frame_fill', 'frame_top_max', 'min_shown', 'shadow_L', 'black_L', 'crushed_pass', 'crushed_fail', 'detail_pass', 'min_shadow_tiles', 'clip_level', 'clip_px', 'border_jump', 'border_min_L', 'edge_border_max', 'min_border_px', 'red_pass', 'red_fail', 'green_pass', 'green_fail', 'grain_pass', 'grain_fail', 'min_photo_share', 'block_colours', 'block_top', 'ink_cut', 'hole_min', 'hole_pass', 'hole_fail', 'aspect_pass', 'aspect_fail', 'fail_ncc', 'word_colour_tol', 'ink_std', 'win_s', 'quiet_db', 'pass_ncc', 'fail_share', 'match_tol', 'person_tol', 'min_change', 'span_ratio', 'move_px', 'grow', 'still_px', 'still_grow', 'still_levels', 'still_share', 'min_frames', 'pass_scale', 'fail_scale', 'min_inliers', 'pass_gain', 'max_offset', 'max_shift_share', 'fail_gain', 'fail_shift_share', 'fade_s', 'fail_hue_deg'}   # round 4
 
 
+CHOSEN |= {'pass_tol', 'inset', 'min_piece', 'fail_piece', 'edge_ncc', 'absent_tol', 'stack_overlap', 'small', 'other_tol',
+           'near'}   # round 5
+# round 5: limits some round-5 code operations apply by default, without the setting written into each check
+OP_DEFAULT_LIMITS = {
+    'v2_keyline_only_r5c': {'inset': 2, 'min_piece': 12, 'fail_piece': 30, 'edge_ncc': 0.5},
+    'v2_ground_absent_r5c': {'absent_tol': 12},
+    'v2_cap_ratio_r5c': {'stack_overlap': 0.5, 'pass_tol': 0.15},
+    'v2_small_labels_r5c': {'small': 0.025},
+    'v2_named_colour_r5c': {'other_tol': 3},
+}
+
+
 def limits(a, found) -> set:
     """The limits a check decides by: its chosen settings and every pass_if / fail_if condition, as (name, cmp, value)."""
     if isinstance(a, dict):
+        for k, v in OP_DEFAULT_LIMITS.get(a.get('op'), {}).items():
+            if k not in a:
+                found.add((k, '=', v))
         for k, v in a.items():
             if k.startswith('_') or isinstance(v, bool):
                 continue
@@ -211,6 +250,33 @@ if (HERE / 'defects4.json').is_file():
         PLANTED4[_task] |= set(_d['checks']) if _d.get('checks') else {(_out, _r) for _r in _d['rules']}
 
 
+# round 5: defects planted in the made "bad5" files (defects5.json) and in planted copies of real deliverables (one
+# list per helper, passed with --planted), both {"TASK/deliverable": {"rules": [...], "defect": "...", optional "checks"}}
+def _planted_from(name):
+    out = defaultdict(set)
+    path = Path(name) if Path(name).is_absolute() else HERE / name
+    if path.is_file():
+        for _key, _d in json.loads(path.read_text()).items():
+            _task, _out = _key.split('/')
+            out[_task] |= set(_d['checks']) if _d.get('checks') else {(_out, _r) for _r in _d['rules']}
+    return out
+
+
+PLANTED5 = _planted_from('defects5.json')
+
+
+def method_of(a) -> str:
+    """'vision model' when any part of a check asks the vision model (round 5), else 'code'."""
+    if isinstance(a, dict):
+        op = str(a.get('op', ''))
+        if op.startswith('vlm_') or op.endswith(('_r5v', '_r5va', '_r5vb', '_r5vc')):
+            return 'vision model'
+        return 'vision model' if any(method_of(v) == 'vision model' for v in a.values() if isinstance(v, (dict, list))) else 'code'
+    if isinstance(a, list):
+        return 'vision model' if any(method_of(v) == 'vision model' for v in a) else 'code'
+    return 'code'
+
+
 def is_planted(planted, task, output, rule, check_id) -> bool:
     entries = planted.get(task, set())
     return (output, rule) in entries or check_id in entries
@@ -223,6 +289,15 @@ def note(r) -> str:
         return str(ev.get('reason') or 'the code could not decide')
     if r['status'] != 'fail':
         return ''
+    if str(r.get('op', '')).startswith('vlm_'):   # round 5: the vision model's answer, as code compared it
+        for key, label in (('read', 'read'), ('not_allowed', 'read'), ('counted', 'counted'), ('found', 'found'),
+                           ('forbidden_found', 'found'), ('required_missing', 'not found')):
+            if key in ev:
+                value = ev[key]
+                value = '; '.join(map(str, value[:3])) if isinstance(value, list) else value
+                return f'{label}: {value}'[:160]
+        first = (ev.get('answers') or [{}])[0]
+        return ('vision model: ' + str(first.get('evidence') or first.get('answer') or 'see the check log'))[:160]
     for key, label in (('missing', 'not found'), ('forbidden_found', 'found'), ('found', 'found'), ('wrong', 'wrong weekday'),
                        ('not_allowed', 'price not allowed'), ('outside_palette', 'colour outside the palette'),
                        ('rendered_outside_palette', 'colour outside the palette'), ('not_matching', 'set differently'),
@@ -251,27 +326,50 @@ def main():
     real, good, bad = (json.loads(Path(p).read_text()) for p in sys.argv[1:4])
     bad2 = json.loads(Path(sys.argv[4]).read_text()) if len(sys.argv) > 4 else []
     bad3 = json.loads(Path(sys.argv[5]).read_text()) if len(sys.argv) > 5 else []
+    args = sys.argv[1:]
+    bad5, planted_sets = [], []
+    while '--bad5' in args:
+        i = args.index('--bad5')
+        bad5 = json.loads(Path(args[i + 1]).read_text())
+        del args[i:i + 2]
+    while '--planted' in args:
+        i = args.index('--planted')
+        res, lst = args[i + 1].split('=')
+        planted_sets.append((json.loads(Path(res).read_text()), _planted_from(lst)))
+        del args[i:i + 2]
+    sys.argv[1:] = args
     bad4 = json.loads(Path(sys.argv[6]).read_text()) if len(sys.argv) > 6 else []
     pilot = {r['check_id']: {'status': r['status'], 'note': note(r)} for r in real
              if r['task'] not in MADE_TASKS and r['status'] in ('pass', 'fail', 'person')}
     (HERE / 'pilot_results_2026-09-28.json').write_text(json.dumps(pilot, ensure_ascii=False, indent=1) + '\n')
     moved = {f.stem: json.loads(f.read_text())['moved'] for f in sorted((HERE / 'moved').glob('*.json'))}
     stats = defaultdict(lambda: {'real': Counter(), 'made_good': Counter(), 'made_bad': Counter(), 'made_bad2': Counter(),
-                                 'made_bad3': Counter(), 'made_bad4': Counter(), 'wrong': []})
-    for name, results in (('real', real), ('made_good', good), ('made_bad', bad), ('made_bad2', bad2), ('made_bad3', bad3),
-                          ('made_bad4', bad4)):
-        planted = {'made_bad2': PLANTED2, 'made_bad3': PLANTED3, 'made_bad4': PLANTED4}.get(name, PLANTED)
+                                 'made_bad3': Counter(), 'made_bad4': Counter(), 'made_bad5': Counter(), 'planted': Counter(),
+                                 'wrong': []})
+    sys.path.insert(0, str(HERE.parent / 'auto_verifier'))
+    import objective_ops  # noqa: F401  (loads every round's operations first, so round 5's modules can import them)
+    import round5
+    sets = [('real', real, None), ('made_good', good, None), ('made_bad', bad, None), ('made_bad2', bad2, None),
+            ('made_bad3', bad3, None), ('made_bad4', bad4, None), ('made_bad5', bad5, None)]
+    sets += [('planted', res, lst) for res, lst in planted_sets]
+    for name, results, own in sets:
+        planted = own if own is not None else {'made_bad2': PLANTED2, 'made_bad3': PLANTED3, 'made_bad4': PLANTED4,
+                                               'made_bad5': PLANTED5}.get(name, PLANTED)
         also = ALSO_BROKEN.get(name, {})
         planted = {t: planted.get(t, set()) | also.get(t, set()) for t in set(planted) | set(also)}
         for r in results:
             if name == 'real' and r['task'] in MADE_TASKS:
+                continue
+            if name == 'planted' and (r['task'], r['rule_id']) not in round5.R5:
                 continue
             key = (r['task'], r['rule_id'])
             s = stats[key]
             s[name][r['status']] += 1
             output = r['check_id'].split('/')[1]
             hit = is_planted(planted, r['task'], output, r['rule_id'], r['check_id'])
-            if name.startswith('made_bad') and r['status'] == 'pass' and hit:
+            # a planted copy is the real file plus one defect, so it keeps the real file's confirmed defects
+            carried = name == 'planted' and r['check_id'] in KNOWN_TRUE_FAILS
+            if (name.startswith('made_bad') or name == 'planted') and r['status'] == 'pass' and hit:
                 s['wrong'].append({'check': r['check_id'], 'run': name, 'why': 'passed a planted defect'})
             if r['status'] in ('error',):
                 s['wrong'].append({'check': r['check_id'], 'run': name, 'why': 'operation error'})
@@ -280,7 +378,7 @@ def main():
                     s['wrong'].append({'check': r['check_id'], 'run': name, 'why': 'fail not confirmed as a real defect'})
                 if name == 'made_good':
                     s['wrong'].append({'check': r['check_id'], 'run': name, 'why': 'fail on a correct made file'})
-                if name.startswith('made_bad') and not hit:
+                if (name.startswith('made_bad') or name == 'planted') and not hit and not carried:
                     s['wrong'].append({'check': r['check_id'], 'run': name, 'why': 'fail where no defect was planted'})
     decisions = {}
     for tid, rows in moved.items():
@@ -302,9 +400,11 @@ def main():
             else:
                 verdict, why = 'moves', f'the code decided {decided} of {tested} test rows with no wrong answer'
             out[rid] = {'verdict': verdict, 'why': why, 'checks': [m['check_id'] for m in members], 'k_id': members[0]['k_id'],
+                        'method': 'vision model' if any(method_of(m['assertion']) == 'vision model' for m in members) else 'code',
                         'critical': members[0]['critical'], 'how': sorted({m['how'] for m in members}),
                         'limits': sorted(set().union(*(limits(m['assertion'], set()) for m in members)), key=str),
-                        'test': {k: dict(s[k]) for k in ('real', 'made_good', 'made_bad', 'made_bad2', 'made_bad3', 'made_bad4') if s[k]},
+                        'test': {k: dict(s[k]) for k in ('real', 'made_good', 'made_bad', 'made_bad2', 'made_bad3', 'made_bad4',
+                                                         'made_bad5', 'planted') if s[k]},
                         'wrong': s['wrong']}
         decisions[tid] = out
     (HERE / 'moved_rules.json').write_text(json.dumps(decisions, ensure_ascii=False, indent=1) + '\n')

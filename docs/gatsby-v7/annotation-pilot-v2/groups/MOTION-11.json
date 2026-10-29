@@ -40,8 +40,11 @@
     "1": "text"
    },
    "shared_reference": null,
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Asks the vision model to copy the title row by row exactly as printed; code joins the rows and compares them with the upload title letter for letter."
+   ],
+   "answered_with": "vision model",
    "rows": [
     {
      "check_id": "MOTION-11/thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas/H003",
@@ -131,6 +134,7 @@
    "code_check": [
     "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "MOTION-11/thumbnail-we-broke-the-map/H003",
@@ -236,6 +240,7 @@
    "code_check": [
     "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "MOTION-11/thumbnail-kitchen-gone/H003",
@@ -296,6 +301,7 @@
    "code_check": [
     "Reads the held end card by OCR and finds the rows that read the line; a final full stop lost in the reading is measured from the pixels after the last letter."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "MOTION-11/channel-animation/H002",
@@ -356,6 +362,7 @@
    "code_check": [
     "Reads the end card (the last held frame) by OCR and looks for the line."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "MOTION-11/channel-animation/H003",
@@ -453,6 +460,7 @@
    "code_check": [
     "Compares the film's last frames at its own frame rate and measures how long it holds still."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "MOTION-11/channel-animation/H005",
@@ -508,6 +516,7 @@
    "code_check": [
     "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "MOTION-11/channel-teaser/H003",
@@ -568,6 +577,7 @@
    "code_check": [
     "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "MOTION-11/channel-teaser/H004",
@@ -621,8 +631,11 @@
     ],
     "note": "Group requirement for the animation group: the final frame is a usable end card."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Shows the vision model the film's last frame and asks whether it is a designed end card rather than footage or a blank frame; both answers must agree."
+   ],
+   "answered_with": "vision model",
    "rows": [
     {
      "check_id": "MOTION-11/channel-teaser/H005",
@@ -701,6 +714,7 @@
    "code_check": [
     "Searches the image, or every frame of the film, for the supplied file."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "MOTION-11/channel-animation/H033",
@@ -761,6 +775,7 @@
    "code_check": [
     "Reads the end card (the last held frame) by OCR and looks for the line."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "MOTION-11/channel-teaser-vertical/H037",
@@ -821,6 +836,7 @@
    "code_check": [
     "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "MOTION-11/channel-teaser-vertical/H038",
@@ -881,6 +897,7 @@
    "code_check": [
     "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "MOTION-11/channel-teaser-vertical/H039",
@@ -941,6 +958,7 @@
    "code_check": [
     "Reads the end card (the last held frame) by OCR and looks for the line."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "MOTION-11/channel-animation/H038",
@@ -1001,6 +1019,7 @@
    "code_check": [
     "Reads the end card (the last held frame) by OCR and looks for the line."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "MOTION-11/channel-animation/H039",
@@ -1061,6 +1080,7 @@
    "code_check": [
     "Finds the supplied mascot in the frames by feature matching and compares where he stands and how large he is from frame to frame."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "MOTION-11/channel-animation/H040",
@@ -1129,6 +1149,7 @@
    "code_check": [
     "Reads the image by OCR and finds the run of rows, top to bottom, that together read the title; then checks the reading, the rows' boxes against the image edges, or their letter height against every other line."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "MOTION-11/thumbnail-we-broke-the-map/H032",
@@ -1251,6 +1272,7 @@
    "code_check": [
     "Reads the image by OCR and finds the run of rows, top to bottom, that together read the title; then checks the reading, the rows' boxes against the image edges, or their letter height against every other line."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "MOTION-11/thumbnail-everyone-off-the-platform/H001",
@@ -1324,6 +1346,7 @@
    "code_check": [
     "Reads the end card by OCR and checks no line touches the frame edge."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "MOTION-11/channel-animation/H008",
@@ -1475,8 +1498,11 @@
     ],
     "note": "Deliverable group requirement (Animated channel title and end card): the title remains readable during its hold."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Shows the vision model frames from the held end card (the last two seconds) and asks whether any letter of the channel name is covered or cut off; both answers must agree."
+   ],
+   "answered_with": "vision model",
    "rows": [
     {
      "check_id": "MOTION-11/channel-animation/H034",
@@ -1688,8 +1714,11 @@
     "assets": [],
     "note": "Brief: Nobody talks in any of this, so do not put a voice or a caption of a voice on it."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Shows the vision model a frame every half second through the film and asks it to list any subtitle or caption of speech; it fails when both answers list one and passes when both find none."
+   ],
+   "answered_with": "vision model",
    "rows": [
     {
      "check_id": "MOTION-11/channel-animation/H007",
@@ -1762,6 +1791,7 @@
    "code_check": [
     "Finds the footage in the film's frames and matches it to the supplied captures."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "MOTION-11/channel-teaser/H002",
@@ -1837,6 +1867,7 @@
    "code_check": [
     "Compares every frame of the film with every frame half a second or more away and looks for a run of changing frames shown twice."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "MOTION-11/channel-teaser/H007",
@@ -1955,6 +1986,7 @@
    "code_check": [
     "Matches every footage frame of both films to the supplied captures and compares the captures each film uses."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "MOTION-11/channel-teaser-vertical/H003",
@@ -1998,8 +2030,11 @@
     "assets": [],
     "note": "Brief: Nobody talks in any of this, so do not put a voice or a caption of a voice on it."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Asks the vision model to list every speech bubble and every caption of spoken words; it fails when both answers list one and passes when both find none."
+   ],
+   "answered_with": "vision model",
    "rows": [
     {
      "check_id": "MOTION-11/thumbnail-we-broke-the-map/H039",
@@ -2120,6 +2155,7 @@
    "code_check": [
     "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "MOTION-11/channel-animation/H001",
@@ -2184,6 +2220,7 @@
    "code_check": [
     "Searches the thumbnail for frames of each capture video."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "MOTION-11/thumbnail-we-broke-the-map/H007",
@@ -2376,6 +2413,7 @@
    "code_check": [
     "Searches the image, or every frame of the film, for the supplied file."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "MOTION-11/thumbnail-we-broke-the-map/H005",
@@ -2526,6 +2564,7 @@
    "code_check": [
     "Searches the deliverable for the supplied file (feature matching, confirmed by correlation)."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "MOTION-11/channel-animation/H010",
@@ -2606,6 +2645,7 @@
    "code_check": [
     "Finds the footage in the film's frames and matches it to the supplied captures."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "MOTION-11/channel-teaser/H001",
@@ -2724,6 +2764,7 @@
    "code_check": [
     "Decodes the whole sound track and searches for every half second of it in the supplied music file by cross-correlation."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "MOTION-11/channel-teaser/H008",
@@ -2802,6 +2843,7 @@
    "code_check": [
     "Searches the image, or every frame of the film, for the supplied file."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "MOTION-11/channel-teaser/H012",
@@ -3020,6 +3062,7 @@
    "code_check": [
     "Finds the capture frame the thumbnail is built on and compares the colours of the visible capture with it."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "MOTION-11/thumbnail-i-gave-my-team-one-simple-job-and-they-set-the-entire-base-on-fi/H007",
@@ -3080,6 +3123,7 @@
    "code_check": [
     "Finds the supplied picture and measures whether it was stretched."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "MOTION-11/thumbnail-we-broke-the-map/H012",
@@ -3436,6 +3480,7 @@
    "code_check": [
     "Finds the capture frame the thumbnail is built on and compares the colours of the visible capture with it."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "MOTION-11/thumbnail-kitchen-gone/H001",
@@ -3496,6 +3541,7 @@
    "code_check": [
     "Finds the capture frame the thumbnail is built on and compares the colours of the visible capture with it."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "MOTION-11/thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas/H001",
@@ -3556,6 +3602,7 @@
    "code_check": [
     "Finds the capture frame the thumbnail is built on and compares the colours of the visible capture with it."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "MOTION-11/thumbnail-we-broke-the-map/H001",
@@ -3670,8 +3717,11 @@
     ],
     "note": "staticfox_captures/staticfox_capture_04.mp4 carries the creator's webcam window burned into its lower right, beside the pale gaunt monster lunging out of a half-open doorway. A window left whole, fully covered or cropped out is clean; a sliced or partly covered one is not."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Asks the vision model whether the webcam window is only partly visible, partly covered or partly cut off by an edge; both answers must agree."
+   ],
+   "answered_with": "vision model",
    "rows": [
     {
      "check_id": "MOTION-11/thumbnail-do-not-open-that-door/H008",
@@ -3732,6 +3782,7 @@
    "code_check": [
     "Finds the supplied picture and measures whether it was stretched."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "MOTION-11/channel-animation/H011",
@@ -4018,6 +4069,7 @@
    "code_check": [
     "Aligns every footage frame with its source capture frame and compares their colours and hues."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "MOTION-11/channel-teaser/H011",
@@ -4128,6 +4180,7 @@
    "code_check": [
     "Finds the capture frame behind each image or film frame by feature matching and measures its size against the recorded frame."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "MOTION-11/thumbnail-we-broke-the-map/H035",
@@ -4278,6 +4331,7 @@
    "code_check": [
     "Finds the capture frame behind each image or film frame by feature matching and measures its size against the recorded frame."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "MOTION-11/channel-teaser/H039",
@@ -4395,6 +4449,7 @@
    "code_check": [
     "Reads the title words by OCR and checks each letter's fill colour, or the outline colour round it."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "MOTION-11/thumbnail-we-broke-the-map/H016",
@@ -4510,6 +4565,7 @@
    "code_check": [
     "Reads the title words by OCR and checks each letter's fill colour, or the outline colour round it."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "MOTION-11/thumbnail-we-broke-the-map/H022",
@@ -4856,6 +4912,7 @@
    "code_check": [
     "Looks for the colour as a flat area in the designed parts."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "MOTION-11/thumbnail-we-broke-the-map/H025",
@@ -5014,6 +5071,7 @@
    "code_check": [
     "Reads each text line by OCR, then the colour of its letters and of the ground round it."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "MOTION-11/thumbnail-we-broke-the-map/H026",
@@ -5298,6 +5356,7 @@
    "code_check": [
     "Reads each text line by OCR, then the colour of its letters and of the ground round it."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "MOTION-11/thumbnail-we-broke-the-map/H027",
@@ -5582,6 +5641,7 @@
    "code_check": [
     "Reads each text line by OCR, then the colour of its letters and of the ground round it."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "MOTION-11/thumbnail-we-broke-the-map/H028",
@@ -5866,6 +5926,7 @@
    "code_check": [
     "Reads each text line by OCR, then the colour of its letters and of the ground round it."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "MOTION-11/thumbnail-we-broke-the-map/H029",
@@ -6059,6 +6120,7 @@
    "code_check": [
     "Finds flat areas in the colour and checks none is a ground or a panel carrying text."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "MOTION-11/thumbnail-we-broke-the-map/H030",
@@ -6174,6 +6236,7 @@
    "code_check": [
     "Measures the share of the designed area in the named colours."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "MOTION-11/thumbnail-we-broke-the-map/H031",
@@ -6337,6 +6400,7 @@
    "code_check": [
     "Reads the title words by OCR and checks each letter's fill colour, or the outline colour round it."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "MOTION-11/channel-animation/H023",
@@ -6387,6 +6451,7 @@
    "code_check": [
     "Reads every flat colour outside photographs, transparent parts and capture footage, and checks each is a palette colour."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "MOTION-11/channel-animation/H024",
@@ -6442,6 +6507,7 @@
    "code_check": [
     "Looks for the colour as a flat area in the designed parts."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "MOTION-11/channel-animation/H026",
@@ -6510,6 +6576,7 @@
    "code_check": [
     "Reads each text line by OCR, then the colour of its letters and of the ground round it."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "MOTION-11/channel-animation/H030",
@@ -6625,6 +6692,7 @@
    "code_check": [
     "Finds flat areas in the colour and checks none is a ground or a panel carrying text."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "MOTION-11/channel-animation/H031",
@@ -6701,6 +6769,7 @@
    "code_check": [
     "Measures the share of the designed area in the named colours."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "MOTION-11/channel-animation/H032",
@@ -6951,6 +7020,7 @@
    "code_check": [
     "Reads every flat colour outside photographs, transparent parts and capture footage, and checks each is a palette colour."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "MOTION-11/channel-teaser/H026",
@@ -7019,6 +7089,7 @@
    "code_check": [
     "Looks for the colour as a flat area in the designed parts."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "MOTION-11/channel-teaser/H028",
@@ -7092,6 +7163,7 @@
    "code_check": [
     "Measures the share of the designed area in the named colours."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "MOTION-11/channel-teaser/H034",
@@ -7155,6 +7227,7 @@
    "code_check": [
     "Finds the capture frame the thumbnail is built on and compares the tones of the visible capture with it."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "MOTION-11/thumbnail-we-broke-the-map/H037",
@@ -7270,6 +7343,7 @@
    "code_check": [
     "Aligns every footage frame with its source capture frame and compares their tones channel by channel, allowing plain fades at the cuts."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "MOTION-11/channel-teaser/H037",
@@ -7354,6 +7428,7 @@
    "code_check": [
     "Reads each named line by OCR, renders its own text in every brand font and weight and in common stand-in fonts, and compares the letter shapes and stroke thickness with the image; only a clear best match counts."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "MOTION-11/thumbnail-we-broke-the-map/H006",
@@ -7760,10 +7835,8 @@
     ],
     "note": "Type scale step 01 note: the whole stack drops to 96 px on long copy rather than breaking the flip. In the supplied Anton-Regular.ttf cap height is 1760/2048 em, so 96 px setup capitals stand about 82 px tall (range 70 to 95 px). Planned trap: titles 5 and 6 run more than twice the length of the short ones."
    },
-   "answered_by": "code",
-   "code_check": [
-    "Reads the title words by OCR and measures the height of their letters' fill."
-   ],
+   "answered_by": "person",
+   "code_check": [],
    "rows": [
     {
      "check_id": "MOTION-11/thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas/H017",
@@ -8262,6 +8335,7 @@
    "code_check": [
     "Reads the title words by OCR and measures the height of their letters' fill."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "MOTION-11/thumbnail-we-broke-the-map/H018",
@@ -8404,6 +8478,7 @@
    "code_check": [
     "Reads the title words by OCR and compares the height of their letters' fill."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "MOTION-11/thumbnail-we-broke-the-map/H019",
@@ -8720,6 +8795,7 @@
    "code_check": [
     "Reads each named line by OCR, renders its own text in every brand font and weight and in common stand-in fonts, and compares the letter shapes and stroke thickness with the image; only a clear best match counts."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "MOTION-11/channel-animation/H017",
@@ -8816,6 +8892,7 @@
    "code_check": [
     "Reads the title words by OCR and measures the height of their letters' fill."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "MOTION-11/channel-animation/H019",
@@ -8966,6 +9043,7 @@
    "code_check": [
     "Reads the selected lines (live text where there is any) and counts their characters."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "MOTION-11/channel-animation/H022",
@@ -9911,6 +9989,7 @@
    "code_check": [
     "Reads the named text and checks it is set in capitals."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "MOTION-11/thumbnail-we-broke-the-map/H015",
@@ -10035,6 +10114,7 @@
    "code_check": [
     "Reads the title words by OCR and compares the height of their letters' fill."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "MOTION-11/channel-animation/H020",
@@ -10220,6 +10300,7 @@
    "code_check": [
     "Reads the title rows by OCR and checks the last row."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "MOTION-11/thumbnail-we-broke-the-map/H036",
@@ -10406,6 +10487,7 @@
    "code_check": [
     "Finds the supplied cut-out and compares its own pixels with the file."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "MOTION-11/thumbnail-we-broke-the-map/H038",
@@ -10556,10 +10638,8 @@
     ],
     "note": "Signature type move and step 02 note: the payoff word is set as the last row of the same capital stack, so the narrow Anton setup fattens hard on the last word."
    },
-   "answered_by": "code",
-   "code_check": [
-    "Reads the title rows by OCR and checks the last row."
-   ],
+   "answered_by": "person",
+   "code_check": [],
    "rows": [
     {
      "check_id": "MOTION-11/channel-animation/H036",
@@ -10624,6 +10704,7 @@
    "code_check": [
     "Finds the supplied cut-out and compares its own pixels with the file."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "MOTION-11/channel-animation/H037",
@@ -10772,6 +10853,7 @@
    "code_check": [
     "Finds the supplied cut-out and compares its own pixels with the file."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "MOTION-11/channel-teaser/H038",
@@ -10998,6 +11080,7 @@
    "code_check": [
     "Finds the supplied cut-out and compares its own pixels with the file."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "MOTION-11/thumbnail-we-broke-the-map/H014",
@@ -11242,6 +11325,7 @@
    "code_check": [
     "Finds the supplied cut-out and compares its own pixels with the file."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "MOTION-11/channel-animation/H014",
@@ -11338,6 +11422,7 @@
    "code_check": [
     "Finds the supplied cut-out and compares its own pixels with the file."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "MOTION-11/thumbnail-we-broke-the-map/H040",
@@ -11488,6 +11573,7 @@
    "code_check": [
     "Finds the supplied cut-out and compares its own pixels with the file."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "MOTION-11/channel-animation/H041",
@@ -11572,8 +11658,11 @@
    ],
    "slot_labels": {},
    "shared_reference": null,
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Asks the vision model to copy the text set in the largest letters; code checks it is part of the upload title (a misspelt word still counts as the title's word: spelling is another check)."
+   ],
+   "answered_with": "vision model",
    "rows": [
     {
      "check_id": "MOTION-11/thumbnail-we-spent-six-hours-building-a-bridge-and-then-drove-straight-pas/H008",
@@ -11652,6 +11741,7 @@
    "code_check": [
     "Compares text sizes (font size in PDFs, letter height on images)."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "MOTION-11/thumbnail-we-broke-the-map/H011",
@@ -11769,6 +11859,7 @@
    "code_check": [
     "Reads the held last frame of the video and compares text sizes."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "MOTION-11/channel-animation/H009",
@@ -11824,6 +11915,7 @@
    "code_check": [
     "Shrinks the image to the stated width and checks OCR still reads every word."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "MOTION-11/thumbnail-we-broke-the-map/H033",

@@ -523,7 +523,7 @@ V2_CSS = """
 .k-code>summary{cursor:pointer;padding:8px 10px;font-size:13.5px;color:#24453a;font-weight:600}
 .k-code>summary span{font-weight:400;color:#3f4b45}.k-code>.rule{margin:8px 10px 10px;background:#fff}
 .rule-code{font-size:13px;color:#24453a;background:#eef4f0;border-radius:5px;padding:6px 9px;margin:6px 0}
-.b-code{background:#24453a;color:#fff}.ans.code{color:#24453a;font-weight:600}.ans.code small{display:block;font-weight:400;color:#5b6760;white-space:normal;overflow-wrap:anywhere;max-width:44ch}
+.b-code{background:#24453a;color:#fff}.badge.b-vlm{background:#e7eaf6;color:#2f3d70}.ans.code{color:#24453a;font-weight:600}.ans.code small{display:block;font-weight:400;color:#5b6760;white-space:normal;overflow-wrap:anywhere;max-width:44ch}
 .ans.code.fail{color:#8a2a1c}.ans.code.person{color:#6b4a00}
 .rule mark,.rule strong,.example{overflow-wrap:anywhere}
 .howto{border:1px solid #cfe0d6;background:#f6faf7;border-radius:8px;padding:14px 18px;margin:16px 0 8px;max-width:118ch}
@@ -608,25 +608,27 @@ FILTER_SCRIPT = """
 """
 
 
-def code_answer(check_id: str) -> str:
+def code_answer(check_id: str, who: str = 'Code') -> str:
     """The answer cell of a row the code answers: its result on the 2026-09-28 pilot run, or a Yes / No for a
-    person where the code could not decide. Tasks with no output on that run show only that code answers them."""
+    person where the code could not decide. Tasks with no output on that run show only that code answers them.
+    `who` names what answers the row: 'Code', or 'Vision model' for the round-5 vision-model rules."""
     r = PILOT.get(check_id)
     if not r:
-        return '<td class="ans code" data-label="Answer">Code<small>no output on the 2026-09-28 run</small></td>'
+        return f'<td class="ans code" data-label="Answer">{who}<small>no output on the 2026-09-28 run</small></td>'
     if r['status'] == 'person':
-        return (f'<td class="ans code person" data-label="Answer">Person: Yes / No<small>code could not decide: '
+        return (f'<td class="ans code person" data-label="Answer">Person: Yes / No<small>{who.lower()} could not decide: '
                 f'{esc(r["note"])}</small></td>')
     if r['status'] == 'fail':
-        return f'<td class="ans code fail" data-label="Answer">Code: No<small>{esc(r["note"])}</small></td>'
-    return '<td class="ans code" data-label="Answer">Code: Yes</td>'
+        return f'<td class="ans code fail" data-label="Answer">{who}: No<small>{esc(r["note"])}</small></td>'
+    return f'<td class="ans code" data-label="Answer">{who}: Yes</td>'
 
 
 def rule_html(rule: dict, ctx: dict) -> str:
     labels = rule['slot_labels']
     by_code = rule.get('answered_by') == 'code'
+    by_vlm = by_code and rule.get('code_method') == 'vision model'   # round 5: answered by the vision model
     badges = [f'<span class="badge b-k" title="{esc(rule["k_label"])}">{esc(k_short(rule["k_id"]))}</span>',
-              '<span class="badge b-code">Code</span>' if by_code else
+              '<span class="badge b-code b-vlm">Vision model</span>' if by_vlm else '<span class="badge b-code">Code</span>' if by_code else
               f'<span class="badge {"b-measure" if rule["method"] == "measure" else ""}">{esc(rule["method"].capitalize())}</span>']
     if rule['critical']:
         badges.append('<span class="badge b-crit">Critical</span>')
@@ -657,7 +659,8 @@ def rule_html(rule: dict, ctx: dict) -> str:
         cells += [f'<td class="v" data-label="{esc(f"{n} {title(n)}")}">{esc(r["values"][n])}</td>' for n in numbers]
         cells.append(f'<td class="id" data-label="Check" data-check="{esc(r["check_id"])}" title="{esc(r["check_id"])}">'
                      f'{esc(r["check_id"].split("/")[-1])}</td>')
-        cells.append(code_answer(r['check_id']) if by_code else '<td class="ans" data-label="Answer">Yes / No</td>')
+        cells.append(code_answer(r['check_id'], 'Vision model' if by_vlm else 'Code') if by_code
+                     else '<td class="ans" data-label="Answer">Yes / No</td>')
         reads = (f'<tr class="reads"><td colspan="{len(head)}"><span class="reads-label">Reads as</span> '
                  f'{filled_html(rule["template"], r)}</td></tr>')
         body.append(f'<tbody class="ck" data-output="{esc(r["output_id"])}" data-row="{esc(r["check_id"])}">'
@@ -665,7 +668,10 @@ def rule_html(rule: dict, ctx: dict) -> str:
     shared = (''.join(thumb_html(f, ctx) for f in rule_images) + (f'<div>{links_html(shared_other)}</div>' if shared_other else '')
               + ''.join(f'<small>{esc(n)}</small>' for n in shared_notes))
     ref = f'<div class="rule-ref"><strong>Reference for every row:</strong> {shared}</div>' if shared else ''
-    how = (f'<p class="rule-code"><strong>How the code checks:</strong> {" ".join(esc(h) for h in rule["code_how"])} '
+    how = (f'<p class="rule-code"><strong>How the vision model checks:</strong> {" ".join(esc(h) for h in rule["code_how"])} '
+           f'Each question is asked twice; a row comes back to a person when the two answers differ or the model cannot tell.</p>'
+           if by_vlm else
+           f'<p class="rule-code"><strong>How the code checks:</strong> {" ".join(esc(h) for h in rule["code_how"])} '
            f'A row comes back to a person when the code cannot read or find what it needs.</p>') if by_code else ''
     note_label = 'Person\'s method, if a row comes back' if by_code else rule['method'].capitalize()
     return (f'<article class="rule" id="{rule["rule_id"]}"><div class="rule-head"><span class="rid">{rule["rule_id"]}</span>'
@@ -812,8 +818,10 @@ def apply_moves(task_id: str, rules: list[dict], moves: dict) -> list[dict]:
             if sorted(move['checks']) != sorted(ids):
                 raise ValueError(f'{task_id} {rule["rule_id"]}: moved checks do not match the rule rows')
             rule['answered_by'], rule['code_how'] = 'code', move['how']
+            rule['code_method'] = move.get('method', 'code')   # 'code', or 'vision model' (round 5)
         else:
             rule['answered_by'], rule['code_how'] = 'person', []
+            rule.pop('code_method', None)
     return rules
 
 
@@ -827,6 +835,7 @@ def export_rule(task_id: str, rule: dict) -> dict:
             'scope': rule['scope'], 'template': rule['template'], 'note_template': rule['note_template'],
             'slot_labels': rule['slot_labels'], 'shared_reference': rule['shared_reference'],
             'answered_by': rule.get('answered_by', 'person'), 'code_check': rule.get('code_how', []),
+            **({'answered_with': rule['code_method']} if rule.get('answered_by') == 'code' else {}),
             'rows': [{k: v for k, v in r.items() if v is not None or k == 'deliverable_ref'} for r in rule['rows']]}
 
 

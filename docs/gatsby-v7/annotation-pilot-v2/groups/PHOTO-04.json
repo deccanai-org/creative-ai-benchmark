@@ -51,6 +51,7 @@
    "code_check": [
     "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-04/booking-hero-oliveto/H002",
@@ -151,6 +152,7 @@
    "code_check": [
     "Checks each named text lies fully inside the page or image."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-04/booking-hero-oliveto/H003",
@@ -232,6 +234,7 @@
    "code_check": [
     "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-04/villa-collection/H001",
@@ -296,6 +299,7 @@
    "code_check": [
     "Reads where each value stands and checks the value that belongs to this name (by its section, column or line) is the expected one, for each of the 9 named texts; all must pass."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-04/villa-collection/H002",
@@ -371,6 +375,7 @@
    "code_check": [
     "Reads where each value stands and checks the value that belongs to this name (by its section, column or line) is the expected one."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-04/villa-collection/H009",
@@ -658,6 +663,7 @@
    "code_check": [
     "Reads where each value stands and checks the value that belongs to this name (by its section, column or line) is the expected one."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-04/villa-collection/H010",
@@ -941,6 +947,7 @@
    "code_check": [
     "Reads where each value stands and checks the value that belongs to this name (by its section, column or line) is the expected one."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-04/villa-collection/H011",
@@ -1033,6 +1040,7 @@
    "code_check": [
     "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-04/booking-hero-oliveto/H009",
@@ -1126,8 +1134,12 @@
     "2": "name"
    },
    "shared_reference": null,
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Copies every text on the file with the vision model; code checks any minimum stay given is 3 nights.",
+    "Copies every text on the file with the vision model; code checks any minimum stay given is 4 nights."
+   ],
+   "answered_with": "vision model",
    "rows": [
     {
      "check_id": "PHOTO-04/booking-hero-oliveto/H010",
@@ -1336,6 +1348,7 @@
    "code_check": [
     "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-04/villa-collection/H092",
@@ -1396,6 +1409,7 @@
    "code_check": [
     "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-04/villa-collection/H093",
@@ -1452,8 +1466,11 @@
     ],
     "note": "owner_note.txt: we sold the fourth house, Casa Fienile; it must not go to agents."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Copies every text on the file with the vision model; code checks Casa Fienile is not named."
+   ],
+   "answered_with": "vision model",
    "rows": [
     {
      "check_id": "PHOTO-04/booking-hero-oliveto/H068",
@@ -1619,6 +1636,7 @@
    "code_check": [
     "Runs the check and lets it decide only in the direction it is sure of; the other answer goes to a person."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-04/booking-hero-oliveto/H007",
@@ -1797,8 +1815,11 @@
     ],
     "note": "owner_note.txt: \"We sold the fourth house, Casa Fienile, last year. It is not ours to let any more and must not go to agents.\" rates_2027.csv row 11 still lists it."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Shows the vision model every page and asks it to list each house name used as a section heading, photo label or rates table label; Casa Fienile among them fails."
+   ],
+   "answered_with": "vision model",
    "rows": [
     {
      "check_id": "PHOTO-04/villa-collection/H004",
@@ -1867,6 +1888,7 @@
    "code_check": [
     "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-04/villa-collection/H005",
@@ -1935,6 +1957,7 @@
    "code_check": [
     "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-04/booking-hero-scogliera/H007",
@@ -2024,6 +2047,7 @@
    "code_check": [
     "Searches the deliverable for the supplied file (feature matching, confirmed by correlation)."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-04/booking-hero-oliveto/H001",
@@ -2186,6 +2210,7 @@
    "code_check": [
     "Matches every picture on the section's pages against the supplied photos of each section."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-04/villa-collection/H012",
@@ -2270,6 +2295,7 @@
    "code_check": [
     "Matches every picture on the section's pages against the supplied photos of each section."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-04/villa-collection/H019",
@@ -2354,6 +2380,7 @@
    "code_check": [
     "Matches every picture on the section's pages against the supplied photos of each section."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-04/villa-collection/H025",
@@ -2562,6 +2589,7 @@
    "code_check": [
     "Finds the supplied photo in the deliverable, maps the placement back onto it and compares tiles, colour, tone or fine detail."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-04/villa-collection/H015",
@@ -2630,6 +2658,7 @@
    "code_check": [
     "Finds the supplied photo in the deliverable, maps the placement back onto it and compares tiles, colour, tone or fine detail."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-04/villa-collection/H022",
@@ -2888,8 +2917,11 @@
     ],
     "note": "Brief and brand_assets_status: use the supplied blue monogram on Lime Wash; recolouring its ink to Lime Wash for a Blue panel is permitted; preserve the silhouette and open spaces."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Asks the vision model whether the image carries a monogram and, if so, to list its parts; code checks the V, the C, the oval and the anchor are all there (no monogram passes)."
+   ],
+   "answered_with": "vision model",
    "rows": [
     {
      "check_id": "PHOTO-04/booking-hero-oliveto/H057",
@@ -3075,6 +3107,7 @@
    "code_check": [
     "Reads the designed colours and checks none is a gold or metallic yellow-brown."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-04/villa-collection/H008",
@@ -3183,6 +3216,7 @@
    "code_check": [
     "Reads every type, shape and line colour from the file (photos excluded)."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-04/villa-collection/H030",
@@ -3233,6 +3267,7 @@
    "code_check": [
     "Checks the named colours are used by type or shapes."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-04/villa-collection/H031",
@@ -3283,6 +3318,7 @@
    "code_check": [
     "Runs each part; all must pass: Reads the shapes, pictures and graphics states drawn over each placed photograph for transparency, shading or blending; Reads the PDF for any transparency or gradient shading."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-04/villa-collection/H032",
@@ -3338,6 +3374,7 @@
    "code_check": [
     "Reads each line's colour from the PDF and the colour behind it from the rendered page, and checks the pairing."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-04/villa-collection/H033",
@@ -3393,6 +3430,7 @@
    "code_check": [
     "Reads every shape and text span drawn in the colour from the PDF and checks each is a thin rule or a small label."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-04/villa-collection/H034",
@@ -3443,6 +3481,7 @@
    "code_check": [
     "Reads every flat colour outside the photographs, the margin left out, and checks each is a palette colour."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-04/booking-hero-oliveto/H004",
@@ -3519,6 +3558,7 @@
    "code_check": [
     "Looks for the colour as a flat area outside the photographs, for each of the 2 named texts; all must pass."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-04/booking-hero-oliveto/H013",
@@ -3669,6 +3709,7 @@
    "code_check": [
     "Reads the designed colours and checks none is a gold or metallic yellow-brown."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-04/booking-hero-oliveto/H015",
@@ -3750,6 +3791,7 @@
    "code_check": [
     "Reads each selected text line by OCR, then the colour of its letters and of the ground behind it."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-04/booking-hero-oliveto/H016",
@@ -3841,6 +3883,7 @@
    "code_check": [
     "Finds every piece in the colour outside the photographs and checks it is a thin rule or sits inside a small label."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-04/booking-hero-oliveto/H017",
@@ -3917,6 +3960,7 @@
    "code_check": [
     "Compares the photo with the supplied file (images) or reads the shapes drawn over it (PDFs) for a scrim, gradient or tint."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-04/booking-hero-oliveto/H049",
@@ -3993,6 +4037,7 @@
    "code_check": [
     "Finds every ground, band, panel and button (flat areas outside the photographs) and reads its colour."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-04/booking-hero-oliveto/H050",
@@ -4311,6 +4356,7 @@
    "code_check": [
     "Reads the shapes, pictures and graphics states drawn over each placed photograph for transparency, shading or blending."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-04/villa-collection/H055",
@@ -4361,6 +4407,7 @@
    "code_check": [
     "Reads each page's ground from the rendered page and every opaque filled panel from the PDF, and checks their colours."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-04/villa-collection/H056",
@@ -4459,6 +4506,7 @@
    "code_check": [
     "Runs the check under a narrow and a broad reading of the definition and answers only when both agree."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-04/villa-collection/H058",
@@ -4510,6 +4558,7 @@
     "Measures the share of each page outside the placed pictures in the colours, page by page and over the whole file.",
     "Measures the share of the area outside the photographs in the named colours."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-04/booking-hero-oliveto/H061",
@@ -4599,6 +4648,7 @@
    "code_check": [
     "Finds every piece in the colour outside the photographs and checks it is a thin rule or sits inside a small label."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-04/booking-hero-oliveto/H067",
@@ -4675,6 +4725,7 @@
    "code_check": [
     "Reads every shape and text span drawn in the colour from the PDF and checks each is a thin rule or a small label."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-04/villa-collection/H091",
@@ -4734,6 +4785,7 @@
    "code_check": [
     "Reads the font, size or letter case of the selected lines from the PDF."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-04/villa-collection/H035",
@@ -4802,6 +4854,7 @@
    "code_check": [
     "Runs the check under a narrow and a broad reading of the definition and answers only when both agree."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-04/villa-collection/H036",
@@ -4887,6 +4940,7 @@
    "code_check": [
     "Reads the font sizes of the heading's letters from the PDF."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-04/villa-collection/H037",
@@ -4987,6 +5041,7 @@
    "code_check": [
     "Reads the figures' fonts, sizes and glyph shapes from the PDF."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-04/villa-collection/H038",
@@ -5111,6 +5166,7 @@
    "code_check": [
     "Reads each named line by OCR, renders its own text in every brand font and weight and in common stand-in fonts, and compares the letter shapes and stroke thickness with the image; only a clear best match counts."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-04/booking-hero-oliveto/H018",
@@ -5440,6 +5496,7 @@
    "code_check": [
     "Counts the characters of every line (PDF text, or OCR lines outside the photographs)."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-04/booking-hero-oliveto/H022",
@@ -5525,6 +5582,7 @@
    "code_check": [
     "Runs the check under a narrow and a broad reading of the definition and answers only when both agree."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-04/villa-collection/H047",
@@ -5593,6 +5651,7 @@
    "code_check": [
     "Runs the check under a narrow and a broad reading of the definition and answers only when both agree."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-04/villa-collection/H048",
@@ -5661,6 +5720,7 @@
    "code_check": [
     "Reads the figures' fonts, sizes and glyph shapes from the PDF."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-04/villa-collection/H071",
@@ -5868,6 +5928,7 @@
    "code_check": [
     "Runs the check under a narrow and a broad reading of the definition and answers only when both agree."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-04/villa-collection/H088",
@@ -5918,6 +5979,7 @@
    "code_check": [
     "Runs each part; all must pass: Reads the text lines, sorts them into body, headings and fine print by size, and checks the named role; Reads the font, size or letter case of the selected lines from the PDF."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-04/villa-collection/H089",
@@ -5968,6 +6030,7 @@
    "code_check": [
     "Runs a wider check (every figure on the file) and passes only when it passes; anything else goes to a person."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-04/booking-hero-oliveto/H066",
@@ -6044,6 +6107,7 @@
    "code_check": [
     "Reads the figures' fonts, sizes and glyph shapes from the PDF."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-04/villa-collection/H090",
@@ -6278,6 +6342,7 @@
    "code_check": [
     "Reads the live text of the section's pages for the named words."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-04/villa-collection/H040",
@@ -6353,8 +6418,11 @@
     "assets": [],
     "note": "Brand type system rule: the oversized initial is the first letter of the house name, at twice the cap height of the rest of that word."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Splits the line into letter shapes, joining the dot of an i or j to its letter, and divides the height of its opening letter by the height of the capital that starts the later word."
+   ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-04/booking-hero-oliveto/H020",
@@ -6454,6 +6522,7 @@
    "code_check": [
     "Runs the check and lets it decide only in the direction it is sure of; the other answer goes to a person."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-04/booking-hero-oliveto/H023",
@@ -6810,6 +6879,7 @@
    "code_check": [
     "Reads the live text of the section's pages for the named words."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-04/villa-collection/H072",
@@ -6908,6 +6978,7 @@
    "code_check": [
     "Reads the figures' fonts, sizes and glyph shapes from the PDF."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-04/villa-collection/H095",
@@ -6958,6 +7029,7 @@
    "code_check": [
     "Reads the live text of the section's pages for the named words."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-04/villa-collection/H096",
@@ -7064,6 +7136,7 @@
    "code_check": [
     "Runs the check and lets it decide only in the direction it is sure of; the other answer goes to a person."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-04/booking-hero-oliveto/H071",
@@ -7234,6 +7307,7 @@
    "code_check": [
     "Reads the live text of the section's pages for the named words."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-04/villa-collection/H098",
@@ -7332,6 +7406,7 @@
    "code_check": [
     "Reads the live text of the section's pages for the named words."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-04/villa-collection/H100",
@@ -7451,6 +7526,7 @@
    "code_check": [
     "Finds the supplied photo in the deliverable, maps the placement back onto it and compares tiles, colour, tone or fine detail."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-04/villa-collection/H013",
@@ -7633,6 +7709,7 @@
    "code_check": [
     "Finds the supplied photo in the deliverable, maps the placement back onto it and compares tiles, colour, tone or fine detail."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-04/villa-collection/H020",
@@ -8540,6 +8617,7 @@
    "code_check": [
     "Finds the supplied photo in the deliverable and checks its shadows keep their detail and are not turned to solid black."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-04/booking-hero-oliveto/H055",
@@ -8712,6 +8790,7 @@
    "code_check": [
     "Finds the supplied photo in the deliverable, maps the placement back onto it and compares tiles, colour, tone or fine detail."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-04/villa-collection/H061",
@@ -8892,6 +8971,7 @@
    "code_check": [
     "Compares text sizes (font size in PDFs, letter height on images)."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-04/booking-hero-oliveto/H006",
@@ -8974,6 +9054,7 @@
    "code_check": [
     "Reads each house section of the PDF: positions, sizes, order and labels of its entries."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-04/villa-collection/H028",
@@ -9032,6 +9113,7 @@
    "code_check": [
     "Finds both elements (by their colour, the supplied file, the placed photo or the text) and compares their positions."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-04/booking-hero-oliveto/H024",
@@ -9114,6 +9196,7 @@
    "code_check": [
     "Compares the sizes of every line of one kind with every line of the other."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-04/booking-hero-oliveto/H059",
@@ -9190,6 +9273,7 @@
    "code_check": [
     "Reads each house section of the PDF: positions, sizes, order and labels of its entries."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-04/villa-collection/H064",
@@ -9240,6 +9324,7 @@
    "code_check": [
     "Reads the PDF font sizes of the headings and of the named lines and compares them."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-04/villa-collection/H066",
@@ -9290,6 +9375,7 @@
    "code_check": [
     "Reads each house section of the PDF: positions, sizes, order and labels of its entries."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-04/villa-collection/H067",
@@ -9340,6 +9426,7 @@
    "code_check": [
     "Reads each house section of the PDF: positions, sizes, order and labels of its entries."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-04/villa-collection/H094",

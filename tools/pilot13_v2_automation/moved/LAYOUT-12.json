@@ -3035,6 +3035,26 @@
    "how": "Renders the delivered poster and searches the deck for it."
   },
   {
+   "check_id": "LAYOUT-12/promoter-deck/H046",
+   "output_id": "promoter-deck",
+   "rule_id": "R029",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "“Promoter pitch deck” (promoter-deck.pdf) states which of the three poster directions is adapted for the nine release posts.",
+   "assertion": {
+    "op": "vlm_pages_r5vc",
+    "then": "vlm_yesno_r5v",
+    "page_spec": {
+     "dpi": 144,
+     "max_side": 2048
+    },
+    "question": "These images are the pages of a pitch deck for a poster series. Does any page say which one of the poster directions (for example type-led, image-led or graphic-led) the nine release posts adapt, follow or are based on? If so, copy that sentence into values. answer yes if a page says it, no if no page says which direction the release posts use.",
+    "pass_on": "yes",
+    "how": "Shows the vision model every page and asks whether a page says which poster direction the nine release posts adapt; both answers must agree."
+   },
+   "how": "Shows the vision model every page and asks whether a page says which poster direction the nine release posts adapt; both answers must agree."
+  },
+  {
    "check_id": "LAYOUT-12/release-post-r002/H048",
    "output_id": "release-post-r002",
    "rule_id": "R031",
@@ -3170,11 +3190,22 @@
    "critical": false,
    "check": "The Sable Quartet wordmark appears on “Night release post - 2026-09-25” (release-post-r002.png) alongside the typeset act name “Sable Quartet”, not in place of it.",
    "assertion": {
-    "op": "v2_mark_with_text",
-    "asset": "umbra_sable_wordmark_transparent.png",
-    "text": "Sable Quartet"
+    "op": "vlm_yesno_r5v",
+    "question": "Image 1 is the supplied logo lettering (wordmark) of the band Sable Quartet. Image 2 is a poster. Does image 2 show both of these: (a) that same wordmark (the same letter shapes as image 1, in any colour), and (b) separately from it, the name SABLE QUARTET set as plain typeset text in the poster's own type? answer yes only if both are on image 2; answer no if either is missing.",
+    "pass_on": "yes",
+    "images": [
+     {
+      "src": "asset:umbra_sable_wordmark_transparent.png",
+      "label": "Image 1: the supplied wordmark"
+     },
+     {
+      "src": "deliverable",
+      "label": "Image 2: the poster"
+     }
+    ],
+    "how": "Shows the vision model the supplied Sable Quartet wordmark and the post and asks whether the post shows both that wordmark and the name in plain type; both answers must agree."
    },
-   "how": "Finds the supplied wordmark, then checks the act name is also typeset beside it."
+   "how": "Shows the vision model the supplied Sable Quartet wordmark and the post and asks whether the post shows both that wordmark and the name in plain type; both answers must agree."
   },
   {
    "check_id": "LAYOUT-12/release-post-r003/H044",
@@ -3704,26 +3735,20 @@
    "critical": false,
    "check": "On “After Dark poster direction - Type-led” (poster-direction-type-led.pdf), The Blue Hour, Vespertine, The Eastons, Koa and Laurel and the Dive are billed in type only, with no wordmark.",
    "assertion": {
-    "op": "v2_artwork_only",
-    "texts": [
-     "The Blue Hour",
-     "Vespertine",
-     "The Eastons",
-     "Koa",
-     "Laurel and the Dive"
+    "op": "vlm_list_r5v",
+    "images": [
+     {
+      "src": "deliverable",
+      "page": 1,
+      "dpi": 144,
+      "max_side": 3072
+     }
     ],
-    "assets": [
-     "umbra_archive_night_01.jpg",
-     "umbra_archive_night_02.jpg",
-     "umbra_archive_night_03.jpg",
-     "umbra_archive_night_04.jpg",
-     "umbra_archive_night_05.jpg",
-     "umbra_archive_night_06.jpg",
-     "umbra_sable_wordmark_transparent.png",
-     "umbra_meridian_wordmark_transparent.png"
-    ]
+    "question": "This design bills these acts: The Blue Hour, Vespertine, The Eastons, Koa, and Laurel and the Dive. Is any of these five act names also, or instead, shown as a logo: lettering designed as a wordmark or badge (for example inside a ring or emblem, in a decorative, stencil, script or distressed style, or with a picture mark), rather than plain typeset text like the other names in the billing list? List each of the five acts that has such a logo. answer yes if at least one does, no if none does.",
+    "none_found": "pass",
+    "how": "Asks the vision model whether The Blue Hour, Vespertine, The Eastons, Koa or Laurel and the Dive is shown as a logo or wordmark rather than plain type; it fails when both answers name one and passes when both find none."
    },
-   "how": "Reads the PDF and checks the named texts are live type and the only pictures and shapes are supplied ones."
+   "how": "Asks the vision model whether The Blue Hour, Vespertine, The Eastons, Koa or Laurel and the Dive is shown as a logo or wordmark rather than plain type; it fails when both answers name one and passes when both find none."
   },
   {
    "check_id": "LAYOUT-12/poster-direction-image-led/H018",
@@ -3733,26 +3758,20 @@
    "critical": false,
    "check": "On “After Dark poster direction - Image-led” (poster-direction-image-led.pdf), The Blue Hour, Vespertine, The Eastons, Koa and Laurel and the Dive are billed in type only, with no wordmark.",
    "assertion": {
-    "op": "v2_artwork_only",
-    "texts": [
-     "The Blue Hour",
-     "Vespertine",
-     "The Eastons",
-     "Koa",
-     "Laurel and the Dive"
+    "op": "vlm_list_r5v",
+    "images": [
+     {
+      "src": "deliverable",
+      "page": 1,
+      "dpi": 144,
+      "max_side": 3072
+     }
     ],
-    "assets": [
-     "umbra_archive_night_01.jpg",
-     "umbra_archive_night_02.jpg",
-     "umbra_archive_night_03.jpg",
-     "umbra_archive_night_04.jpg",
-     "umbra_archive_night_05.jpg",
-     "umbra_archive_night_06.jpg",
-     "umbra_sable_wordmark_transparent.png",
-     "umbra_meridian_wordmark_transparent.png"
-    ]
+    "question": "This design bills these acts: The Blue Hour, Vespertine, The Eastons, Koa, and Laurel and the Dive. Is any of these five act names also, or instead, shown as a logo: lettering designed as a wordmark or badge (for example inside a ring or emblem, in a decorative, stencil, script or distressed style, or with a picture mark), rather than plain typeset text like the other names in the billing list? List each of the five acts that has such a logo. answer yes if at least one does, no if none does.",
+    "none_found": "pass",
+    "how": "Asks the vision model whether The Blue Hour, Vespertine, The Eastons, Koa or Laurel and the Dive is shown as a logo or wordmark rather than plain type; it fails when both answers name one and passes when both find none."
    },
-   "how": "Reads the PDF and checks the named texts are live type and the only pictures and shapes are supplied ones."
+   "how": "Asks the vision model whether The Blue Hour, Vespertine, The Eastons, Koa or Laurel and the Dive is shown as a logo or wordmark rather than plain type; it fails when both answers name one and passes when both find none."
   },
   {
    "check_id": "LAYOUT-12/poster-direction-graphic-led/H017",
@@ -3762,26 +3781,269 @@
    "critical": false,
    "check": "On “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf), The Blue Hour, Vespertine, The Eastons, Koa and Laurel and the Dive are billed in type only, with no wordmark.",
    "assertion": {
-    "op": "v2_artwork_only",
-    "texts": [
-     "The Blue Hour",
-     "Vespertine",
-     "The Eastons",
-     "Koa",
-     "Laurel and the Dive"
+    "op": "vlm_list_r5v",
+    "images": [
+     {
+      "src": "deliverable",
+      "page": 1,
+      "dpi": 144,
+      "max_side": 3072
+     }
     ],
-    "assets": [
-     "umbra_archive_night_01.jpg",
-     "umbra_archive_night_02.jpg",
-     "umbra_archive_night_03.jpg",
-     "umbra_archive_night_04.jpg",
-     "umbra_archive_night_05.jpg",
-     "umbra_archive_night_06.jpg",
-     "umbra_sable_wordmark_transparent.png",
-     "umbra_meridian_wordmark_transparent.png"
-    ]
+    "question": "This design bills these acts: The Blue Hour, Vespertine, The Eastons, Koa, and Laurel and the Dive. Is any of these five act names also, or instead, shown as a logo: lettering designed as a wordmark or badge (for example inside a ring or emblem, in a decorative, stencil, script or distressed style, or with a picture mark), rather than plain typeset text like the other names in the billing list? List each of the five acts that has such a logo. answer yes if at least one does, no if none does.",
+    "none_found": "pass",
+    "how": "Asks the vision model whether The Blue Hour, Vespertine, The Eastons, Koa or Laurel and the Dive is shown as a logo or wordmark rather than plain type; it fails when both answers name one and passes when both find none."
    },
-   "how": "Reads the PDF and checks the named texts are live type and the only pictures and shapes are supplied ones."
+   "how": "Asks the vision model whether The Blue Hour, Vespertine, The Eastons, Koa or Laurel and the Dive is shown as a logo or wordmark rather than plain type; it fails when both answers name one and passes when both find none."
+  },
+  {
+   "check_id": "LAYOUT-12/poster-direction-type-led/H006",
+   "output_id": "poster-direction-type-led",
+   "rule_id": "R046",
+   "k_id": "K1_Q3",
+   "critical": false,
+   "check": "“After Dark poster direction - Type-led” (poster-direction-type-led.pdf) shows no sponsor logo or corporate partner mark anywhere on the poster.",
+   "assertion": {
+    "op": "vlm_list_r5v",
+    "images": [
+     {
+      "src": "deliverable",
+      "page": 1,
+      "dpi": 144,
+      "max_side": 3072
+     }
+    ],
+    "question": "List every sponsor or partner credit on this design: any logo of a company, bank, brewery, drinks maker, shop, media outlet or other business, and any line such as presented by, sponsored by, supported by, in partnership with, in association with or powered by. Do not list the series or venue name (such as UMBRA / LOFT or Umbra Loft), act names, the logo lettering (wordmarks) of the acts, dates, times, prices, or the venue's address, licence and access lines. Copy each item's text, or describe it in a few words if it has no text. answer yes if there is at least one, no if there is none.",
+    "none_found": "pass",
+    "how": "Asks the vision model to list every sponsor logo or presented by, sponsored by or similar credit; it fails when both answers list one and passes when both find none."
+   },
+   "how": "Asks the vision model to list every sponsor logo or presented by, sponsored by or similar credit; it fails when both answers list one and passes when both find none."
+  },
+  {
+   "check_id": "LAYOUT-12/poster-direction-image-led/H030",
+   "output_id": "poster-direction-image-led",
+   "rule_id": "R046",
+   "k_id": "K1_Q3",
+   "critical": false,
+   "check": "“After Dark poster direction - Image-led” (poster-direction-image-led.pdf) shows no sponsor logo or corporate partner mark anywhere on the poster.",
+   "assertion": {
+    "op": "vlm_list_r5v",
+    "images": [
+     {
+      "src": "deliverable",
+      "page": 1,
+      "dpi": 144,
+      "max_side": 3072
+     }
+    ],
+    "question": "List every sponsor or partner credit on this design: any logo of a company, bank, brewery, drinks maker, shop, media outlet or other business, and any line such as presented by, sponsored by, supported by, in partnership with, in association with or powered by. Do not list the series or venue name (such as UMBRA / LOFT or Umbra Loft), act names, the logo lettering (wordmarks) of the acts, dates, times, prices, or the venue's address, licence and access lines. Copy each item's text, or describe it in a few words if it has no text. answer yes if there is at least one, no if there is none.",
+    "none_found": "pass",
+    "how": "Asks the vision model to list every sponsor logo or presented by, sponsored by or similar credit; it fails when both answers list one and passes when both find none."
+   },
+   "how": "Asks the vision model to list every sponsor logo or presented by, sponsored by or similar credit; it fails when both answers list one and passes when both find none."
+  },
+  {
+   "check_id": "LAYOUT-12/poster-direction-graphic-led/H030",
+   "output_id": "poster-direction-graphic-led",
+   "rule_id": "R046",
+   "k_id": "K1_Q3",
+   "critical": false,
+   "check": "“After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf) shows no sponsor logo or corporate partner mark anywhere on the poster.",
+   "assertion": {
+    "op": "vlm_list_r5v",
+    "images": [
+     {
+      "src": "deliverable",
+      "page": 1,
+      "dpi": 144,
+      "max_side": 3072
+     }
+    ],
+    "question": "List every sponsor or partner credit on this design: any logo of a company, bank, brewery, drinks maker, shop, media outlet or other business, and any line such as presented by, sponsored by, supported by, in partnership with, in association with or powered by. Do not list the series or venue name (such as UMBRA / LOFT or Umbra Loft), act names, the logo lettering (wordmarks) of the acts, dates, times, prices, or the venue's address, licence and access lines. Copy each item's text, or describe it in a few words if it has no text. answer yes if there is at least one, no if there is none.",
+    "none_found": "pass",
+    "how": "Asks the vision model to list every sponsor logo or presented by, sponsored by or similar credit; it fails when both answers list one and passes when both find none."
+   },
+   "how": "Asks the vision model to list every sponsor logo or presented by, sponsored by or similar credit; it fails when both answers list one and passes when both find none."
+  },
+  {
+   "check_id": "LAYOUT-12/release-post-r002/H029",
+   "output_id": "release-post-r002",
+   "rule_id": "R047",
+   "k_id": "K1_Q3",
+   "critical": false,
+   "check": "“Night release post - 2026-09-25” (release-post-r002.png) shows no sponsor logo or corporate partner mark anywhere.",
+   "assertion": {
+    "op": "vlm_list_r5v",
+    "images": [
+     {
+      "src": "deliverable"
+     }
+    ],
+    "question": "List every sponsor or partner credit on this design: any logo of a company, bank, brewery, drinks maker, shop, media outlet or other business, and any line such as presented by, sponsored by, supported by, in partnership with, in association with or powered by. Do not list the series or venue name (such as UMBRA / LOFT or Umbra Loft), act names, the logo lettering (wordmarks) of the acts, dates, times, prices, or the venue's address, licence and access lines. Copy each item's text, or describe it in a few words if it has no text. answer yes if there is at least one, no if there is none.",
+    "none_found": "pass",
+    "how": "Asks the vision model to list every sponsor logo or presented by, sponsored by or similar credit; it fails when both answers list one and passes when both find none."
+   },
+   "how": "Asks the vision model to list every sponsor logo or presented by, sponsored by or similar credit; it fails when both answers list one and passes when both find none."
+  },
+  {
+   "check_id": "LAYOUT-12/release-post-r003/H020",
+   "output_id": "release-post-r003",
+   "rule_id": "R047",
+   "k_id": "K1_Q3",
+   "critical": false,
+   "check": "“Night release post - 2026-09-26” (release-post-r003.png) shows no sponsor logo or corporate partner mark anywhere.",
+   "assertion": {
+    "op": "vlm_list_r5v",
+    "images": [
+     {
+      "src": "deliverable"
+     }
+    ],
+    "question": "List every sponsor or partner credit on this design: any logo of a company, bank, brewery, drinks maker, shop, media outlet or other business, and any line such as presented by, sponsored by, supported by, in partnership with, in association with or powered by. Do not list the series or venue name (such as UMBRA / LOFT or Umbra Loft), act names, the logo lettering (wordmarks) of the acts, dates, times, prices, or the venue's address, licence and access lines. Copy each item's text, or describe it in a few words if it has no text. answer yes if there is at least one, no if there is none.",
+    "none_found": "pass",
+    "how": "Asks the vision model to list every sponsor logo or presented by, sponsored by or similar credit; it fails when both answers list one and passes when both find none."
+   },
+   "how": "Asks the vision model to list every sponsor logo or presented by, sponsored by or similar credit; it fails when both answers list one and passes when both find none."
+  },
+  {
+   "check_id": "LAYOUT-12/release-post-r004/H025",
+   "output_id": "release-post-r004",
+   "rule_id": "R047",
+   "k_id": "K1_Q3",
+   "critical": false,
+   "check": "“Night release post - 2026-10-02” (release-post-r004.png) shows no sponsor logo or corporate partner mark anywhere.",
+   "assertion": {
+    "op": "vlm_list_r5v",
+    "images": [
+     {
+      "src": "deliverable"
+     }
+    ],
+    "question": "List every sponsor or partner credit on this design: any logo of a company, bank, brewery, drinks maker, shop, media outlet or other business, and any line such as presented by, sponsored by, supported by, in partnership with, in association with or powered by. Do not list the series or venue name (such as UMBRA / LOFT or Umbra Loft), act names, the logo lettering (wordmarks) of the acts, dates, times, prices, or the venue's address, licence and access lines. Copy each item's text, or describe it in a few words if it has no text. answer yes if there is at least one, no if there is none.",
+    "none_found": "pass",
+    "how": "Asks the vision model to list every sponsor logo or presented by, sponsored by or similar credit; it fails when both answers list one and passes when both find none."
+   },
+   "how": "Asks the vision model to list every sponsor logo or presented by, sponsored by or similar credit; it fails when both answers list one and passes when both find none."
+  },
+  {
+   "check_id": "LAYOUT-12/release-post-r005/H024",
+   "output_id": "release-post-r005",
+   "rule_id": "R047",
+   "k_id": "K1_Q3",
+   "critical": false,
+   "check": "“Night release post - 2026-10-03” (release-post-r005.png) shows no sponsor logo or corporate partner mark anywhere.",
+   "assertion": {
+    "op": "vlm_list_r5v",
+    "images": [
+     {
+      "src": "deliverable"
+     }
+    ],
+    "question": "List every sponsor or partner credit on this design: any logo of a company, bank, brewery, drinks maker, shop, media outlet or other business, and any line such as presented by, sponsored by, supported by, in partnership with, in association with or powered by. Do not list the series or venue name (such as UMBRA / LOFT or Umbra Loft), act names, the logo lettering (wordmarks) of the acts, dates, times, prices, or the venue's address, licence and access lines. Copy each item's text, or describe it in a few words if it has no text. answer yes if there is at least one, no if there is none.",
+    "none_found": "pass",
+    "how": "Asks the vision model to list every sponsor logo or presented by, sponsored by or similar credit; it fails when both answers list one and passes when both find none."
+   },
+   "how": "Asks the vision model to list every sponsor logo or presented by, sponsored by or similar credit; it fails when both answers list one and passes when both find none."
+  },
+  {
+   "check_id": "LAYOUT-12/release-post-r006/H024",
+   "output_id": "release-post-r006",
+   "rule_id": "R047",
+   "k_id": "K1_Q3",
+   "critical": false,
+   "check": "“Night release post - 2026-10-04” (release-post-r006.png) shows no sponsor logo or corporate partner mark anywhere.",
+   "assertion": {
+    "op": "vlm_list_r5v",
+    "images": [
+     {
+      "src": "deliverable"
+     }
+    ],
+    "question": "List every sponsor or partner credit on this design: any logo of a company, bank, brewery, drinks maker, shop, media outlet or other business, and any line such as presented by, sponsored by, supported by, in partnership with, in association with or powered by. Do not list the series or venue name (such as UMBRA / LOFT or Umbra Loft), act names, the logo lettering (wordmarks) of the acts, dates, times, prices, or the venue's address, licence and access lines. Copy each item's text, or describe it in a few words if it has no text. answer yes if there is at least one, no if there is none.",
+    "none_found": "pass",
+    "how": "Asks the vision model to list every sponsor logo or presented by, sponsored by or similar credit; it fails when both answers list one and passes when both find none."
+   },
+   "how": "Asks the vision model to list every sponsor logo or presented by, sponsored by or similar credit; it fails when both answers list one and passes when both find none."
+  },
+  {
+   "check_id": "LAYOUT-12/release-post-r007/H024",
+   "output_id": "release-post-r007",
+   "rule_id": "R047",
+   "k_id": "K1_Q3",
+   "critical": false,
+   "check": "“Night release post - 2026-10-09” (release-post-r007.png) shows no sponsor logo or corporate partner mark anywhere.",
+   "assertion": {
+    "op": "vlm_list_r5v",
+    "images": [
+     {
+      "src": "deliverable"
+     }
+    ],
+    "question": "List every sponsor or partner credit on this design: any logo of a company, bank, brewery, drinks maker, shop, media outlet or other business, and any line such as presented by, sponsored by, supported by, in partnership with, in association with or powered by. Do not list the series or venue name (such as UMBRA / LOFT or Umbra Loft), act names, the logo lettering (wordmarks) of the acts, dates, times, prices, or the venue's address, licence and access lines. Copy each item's text, or describe it in a few words if it has no text. answer yes if there is at least one, no if there is none.",
+    "none_found": "pass",
+    "how": "Asks the vision model to list every sponsor logo or presented by, sponsored by or similar credit; it fails when both answers list one and passes when both find none."
+   },
+   "how": "Asks the vision model to list every sponsor logo or presented by, sponsored by or similar credit; it fails when both answers list one and passes when both find none."
+  },
+  {
+   "check_id": "LAYOUT-12/release-post-r008/H017",
+   "output_id": "release-post-r008",
+   "rule_id": "R047",
+   "k_id": "K1_Q3",
+   "critical": false,
+   "check": "“Night release post - 2026-10-10” (release-post-r008.png) shows no sponsor logo or corporate partner mark anywhere.",
+   "assertion": {
+    "op": "vlm_list_r5v",
+    "images": [
+     {
+      "src": "deliverable"
+     }
+    ],
+    "question": "List every sponsor or partner credit on this design: any logo of a company, bank, brewery, drinks maker, shop, media outlet or other business, and any line such as presented by, sponsored by, supported by, in partnership with, in association with or powered by. Do not list the series or venue name (such as UMBRA / LOFT or Umbra Loft), act names, the logo lettering (wordmarks) of the acts, dates, times, prices, or the venue's address, licence and access lines. Copy each item's text, or describe it in a few words if it has no text. answer yes if there is at least one, no if there is none.",
+    "none_found": "pass",
+    "how": "Asks the vision model to list every sponsor logo or presented by, sponsored by or similar credit; it fails when both answers list one and passes when both find none."
+   },
+   "how": "Asks the vision model to list every sponsor logo or presented by, sponsored by or similar credit; it fails when both answers list one and passes when both find none."
+  },
+  {
+   "check_id": "LAYOUT-12/release-post-r009/H017",
+   "output_id": "release-post-r009",
+   "rule_id": "R047",
+   "k_id": "K1_Q3",
+   "critical": false,
+   "check": "“Night release post - 2026-10-16” (release-post-r009.png) shows no sponsor logo or corporate partner mark anywhere.",
+   "assertion": {
+    "op": "vlm_list_r5v",
+    "images": [
+     {
+      "src": "deliverable"
+     }
+    ],
+    "question": "List every sponsor or partner credit on this design: any logo of a company, bank, brewery, drinks maker, shop, media outlet or other business, and any line such as presented by, sponsored by, supported by, in partnership with, in association with or powered by. Do not list the series or venue name (such as UMBRA / LOFT or Umbra Loft), act names, the logo lettering (wordmarks) of the acts, dates, times, prices, or the venue's address, licence and access lines. Copy each item's text, or describe it in a few words if it has no text. answer yes if there is at least one, no if there is none.",
+    "none_found": "pass",
+    "how": "Asks the vision model to list every sponsor logo or presented by, sponsored by or similar credit; it fails when both answers list one and passes when both find none."
+   },
+   "how": "Asks the vision model to list every sponsor logo or presented by, sponsored by or similar credit; it fails when both answers list one and passes when both find none."
+  },
+  {
+   "check_id": "LAYOUT-12/release-post-r010/H024",
+   "output_id": "release-post-r010",
+   "rule_id": "R047",
+   "k_id": "K1_Q3",
+   "critical": false,
+   "check": "“Night release post - 2026-10-17” (release-post-r010.png) shows no sponsor logo or corporate partner mark anywhere.",
+   "assertion": {
+    "op": "vlm_list_r5v",
+    "images": [
+     {
+      "src": "deliverable"
+     }
+    ],
+    "question": "List every sponsor or partner credit on this design: any logo of a company, bank, brewery, drinks maker, shop, media outlet or other business, and any line such as presented by, sponsored by, supported by, in partnership with, in association with or powered by. Do not list the series or venue name (such as UMBRA / LOFT or Umbra Loft), act names, the logo lettering (wordmarks) of the acts, dates, times, prices, or the venue's address, licence and access lines. Copy each item's text, or describe it in a few words if it has no text. answer yes if there is at least one, no if there is none.",
+    "none_found": "pass",
+    "how": "Asks the vision model to list every sponsor logo or presented by, sponsored by or similar credit; it fails when both answers list one and passes when both find none."
+   },
+   "how": "Asks the vision model to list every sponsor logo or presented by, sponsored by or similar credit; it fails when both answers list one and passes when both find none."
   },
   {
    "check_id": "LAYOUT-12/promoter-deck/H006",
@@ -3807,6 +4069,169 @@
    "how": "Reads every figure in the PDF and looks for it in the supplied source files."
   },
   {
+   "check_id": "LAYOUT-12/promoter-deck/H013",
+   "output_id": "promoter-deck",
+   "rule_id": "R049",
+   "k_id": "K1_Q3",
+   "critical": false,
+   "check": "In “Promoter pitch deck” (promoter-deck.pdf), The Blue Hour, Vespertine, The Eastons, Koa and Laurel and the Dive are billed in type only, with no wordmark.",
+   "assertion": {
+    "op": "vlm_pages_r5vc",
+    "then": "vlm_list_r5v",
+    "page_spec": {
+     "dpi": 144,
+     "max_side": 2048
+    },
+    "question": "This design bills these acts: The Blue Hour, Vespertine, The Eastons, Koa, and Laurel and the Dive. Is any of these five act names also, or instead, shown as a logo: lettering designed as a wordmark or badge (for example inside a ring or emblem, in a decorative, stencil, script or distressed style, or with a picture mark), rather than plain typeset text like the other names in the billing list? List each of the five acts that has such a logo. answer yes if at least one does, no if none does.",
+    "none_found": "pass",
+    "how": "Asks the vision model whether The Blue Hour, Vespertine, The Eastons, Koa or Laurel and the Dive is shown as a logo or wordmark rather than plain type; it fails when both answers name one and passes when both find none. Every page is shown."
+   },
+   "how": "Asks the vision model whether The Blue Hour, Vespertine, The Eastons, Koa or Laurel and the Dive is shown as a logo or wordmark rather than plain type; it fails when both answers name one and passes when both find none. Every page is shown."
+  },
+  {
+   "check_id": "LAYOUT-12/promoter-deck/H030",
+   "output_id": "promoter-deck",
+   "rule_id": "R050",
+   "k_id": "K1_Q3",
+   "critical": false,
+   "check": "“Promoter pitch deck” (promoter-deck.pdf) shows no sponsor logo or corporate partner mark on any page.",
+   "assertion": {
+    "op": "vlm_pages_r5vc",
+    "then": "vlm_list_r5v",
+    "page_spec": {
+     "dpi": 144,
+     "max_side": 2048
+    },
+    "question": "List every sponsor or partner credit on this design: any logo of a company, bank, brewery, drinks maker, shop, media outlet or other business, and any line such as presented by, sponsored by, supported by, in partnership with, in association with or powered by. Do not list the series or venue name (such as UMBRA / LOFT or Umbra Loft), act names, the logo lettering (wordmarks) of the acts, dates, times, prices, or the venue's address, licence and access lines. Copy each item's text, or describe it in a few words if it has no text. answer yes if there is at least one, no if there is none.",
+    "none_found": "pass",
+    "how": "Asks the vision model to list every sponsor logo or presented by, sponsored by or similar credit; it fails when both answers list one and passes when both find none. Every page is shown."
+   },
+   "how": "Asks the vision model to list every sponsor logo or presented by, sponsored by or similar credit; it fails when both answers list one and passes when both find none. Every page is shown."
+  },
+  {
+   "check_id": "LAYOUT-12/poster-direction-type-led/H062",
+   "output_id": "poster-direction-type-led",
+   "rule_id": "R051",
+   "k_id": "K1_Q3",
+   "critical": false,
+   "check": "No caption or credit on “After Dark poster direction - Type-led” (poster-direction-type-led.pdf) identifies a pictured performer as one of the billed acts.",
+   "assertion": {
+    "question": "Look at every photograph on this design, including photographs inside any small pictures of posters shown on it. List every caption or credit that names who is shown in a photograph: for example Pictured: NAME, Photo: NAME, NAME on stage, NAME live, or a name set on or right against a photograph as its label. Do not list billing that is set apart from the photographs (act names listed with their dates, door times and prices), titles, or the venue name. Copy each caption exactly. answer yes if there is at least one, no if there is none.",
+    "names": [
+     "Coral Sound",
+     "Ferro",
+     "Half Light",
+     "Junior Vale",
+     "Koa",
+     "Laurel and the Dive",
+     "Marlow Reyes",
+     "Meridian Brass",
+     "Night Ferry",
+     "Odette Lang",
+     "Sable Quartet",
+     "The Blue Hour",
+     "The Eastons",
+     "The Tin Ravens",
+     "The Undertow",
+     "Vespertine"
+    ],
+    "none_found": "pass",
+    "how": "Asks the vision model to copy every caption or credit naming who is shown in a photograph; it fails when both answers copy one that names a billed act, and passes when both find none.",
+    "op": "vlm_names_r5vc",
+    "images": [
+     {
+      "src": "deliverable",
+      "page": 1,
+      "dpi": 144,
+      "max_side": 3072
+     }
+    ]
+   },
+   "how": "Asks the vision model to copy every caption or credit naming who is shown in a photograph; it fails when both answers copy one that names a billed act, and passes when both find none."
+  },
+  {
+   "check_id": "LAYOUT-12/poster-direction-image-led/H061",
+   "output_id": "poster-direction-image-led",
+   "rule_id": "R051",
+   "k_id": "K1_Q3",
+   "critical": false,
+   "check": "No caption or credit on “After Dark poster direction - Image-led” (poster-direction-image-led.pdf) identifies a pictured performer as one of the billed acts.",
+   "assertion": {
+    "question": "Look at every photograph on this design, including photographs inside any small pictures of posters shown on it. List every caption or credit that names who is shown in a photograph: for example Pictured: NAME, Photo: NAME, NAME on stage, NAME live, or a name set on or right against a photograph as its label. Do not list billing that is set apart from the photographs (act names listed with their dates, door times and prices), titles, or the venue name. Copy each caption exactly. answer yes if there is at least one, no if there is none.",
+    "names": [
+     "Coral Sound",
+     "Ferro",
+     "Half Light",
+     "Junior Vale",
+     "Koa",
+     "Laurel and the Dive",
+     "Marlow Reyes",
+     "Meridian Brass",
+     "Night Ferry",
+     "Odette Lang",
+     "Sable Quartet",
+     "The Blue Hour",
+     "The Eastons",
+     "The Tin Ravens",
+     "The Undertow",
+     "Vespertine"
+    ],
+    "none_found": "pass",
+    "how": "Asks the vision model to copy every caption or credit naming who is shown in a photograph; it fails when both answers copy one that names a billed act, and passes when both find none.",
+    "op": "vlm_names_r5vc",
+    "images": [
+     {
+      "src": "deliverable",
+      "page": 1,
+      "dpi": 144,
+      "max_side": 3072
+     }
+    ]
+   },
+   "how": "Asks the vision model to copy every caption or credit naming who is shown in a photograph; it fails when both answers copy one that names a billed act, and passes when both find none."
+  },
+  {
+   "check_id": "LAYOUT-12/poster-direction-graphic-led/H061",
+   "output_id": "poster-direction-graphic-led",
+   "rule_id": "R051",
+   "k_id": "K1_Q3",
+   "critical": false,
+   "check": "No caption or credit on “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf) identifies a pictured performer as one of the billed acts.",
+   "assertion": {
+    "question": "Look at every photograph on this design, including photographs inside any small pictures of posters shown on it. List every caption or credit that names who is shown in a photograph: for example Pictured: NAME, Photo: NAME, NAME on stage, NAME live, or a name set on or right against a photograph as its label. Do not list billing that is set apart from the photographs (act names listed with their dates, door times and prices), titles, or the venue name. Copy each caption exactly. answer yes if there is at least one, no if there is none.",
+    "names": [
+     "Coral Sound",
+     "Ferro",
+     "Half Light",
+     "Junior Vale",
+     "Koa",
+     "Laurel and the Dive",
+     "Marlow Reyes",
+     "Meridian Brass",
+     "Night Ferry",
+     "Odette Lang",
+     "Sable Quartet",
+     "The Blue Hour",
+     "The Eastons",
+     "The Tin Ravens",
+     "The Undertow",
+     "Vespertine"
+    ],
+    "none_found": "pass",
+    "how": "Asks the vision model to copy every caption or credit naming who is shown in a photograph; it fails when both answers copy one that names a billed act, and passes when both find none.",
+    "op": "vlm_names_r5vc",
+    "images": [
+     {
+      "src": "deliverable",
+      "page": 1,
+      "dpi": 144,
+      "max_side": 3072
+     }
+    ]
+   },
+   "how": "Asks the vision model to copy every caption or credit naming who is shown in a photograph; it fails when both answers copy one that names a billed act, and passes when both find none."
+  },
+  {
    "check_id": "LAYOUT-12/promoter-deck/H048",
    "output_id": "promoter-deck",
    "rule_id": "R052",
@@ -3825,6 +4250,476 @@
     ]
    },
    "how": "Finds the chart's bars in the PDF and compares their heights with the values."
+  },
+  {
+   "check_id": "LAYOUT-12/promoter-deck/H051",
+   "output_id": "promoter-deck",
+   "rule_id": "R053",
+   "k_id": "K1_Q3",
+   "critical": false,
+   "check": "No caption or credit in “Promoter pitch deck” (promoter-deck.pdf) identifies a pictured performer as one of the billed acts.",
+   "assertion": {
+    "question": "Look at every photograph on this design, including photographs inside any small pictures of posters shown on it. List every caption or credit that names who is shown in a photograph: for example Pictured: NAME, Photo: NAME, NAME on stage, NAME live, or a name set on or right against a photograph as its label. Do not list billing that is set apart from the photographs (act names listed with their dates, door times and prices), titles, or the venue name. Copy each caption exactly. answer yes if there is at least one, no if there is none.",
+    "names": [
+     "Coral Sound",
+     "Ferro",
+     "Half Light",
+     "Junior Vale",
+     "Koa",
+     "Laurel and the Dive",
+     "Marlow Reyes",
+     "Meridian Brass",
+     "Night Ferry",
+     "Odette Lang",
+     "Sable Quartet",
+     "The Blue Hour",
+     "The Eastons",
+     "The Tin Ravens",
+     "The Undertow",
+     "Vespertine"
+    ],
+    "none_found": "pass",
+    "how": "Asks the vision model to copy every caption or credit naming who is shown in a photograph; it fails when both answers copy one that names a billed act, and passes when both find none. Every page is shown.",
+    "op": "vlm_pages_r5vc",
+    "then": "vlm_names_r5vc",
+    "page_spec": {
+     "dpi": 144,
+     "max_side": 2048
+    }
+   },
+   "how": "Asks the vision model to copy every caption or credit naming who is shown in a photograph; it fails when both answers copy one that names a billed act, and passes when both find none. Every page is shown."
+  },
+  {
+   "check_id": "LAYOUT-12/release-post-r002/H047",
+   "output_id": "release-post-r002",
+   "rule_id": "R054",
+   "k_id": "K1_Q3",
+   "critical": false,
+   "check": "No caption or credit on “Night release post - 2026-09-25” (release-post-r002.png) identifies the pictured performer as Sable Quartet or any other billed act.",
+   "assertion": {
+    "question": "Look at every photograph on this design, including photographs inside any small pictures of posters shown on it. List every caption or credit that names who is shown in a photograph: for example Pictured: NAME, Photo: NAME, NAME on stage, NAME live, or a name set on or right against a photograph as its label. Do not list billing that is set apart from the photographs (act names listed with their dates, door times and prices), titles, or the venue name. Copy each caption exactly. answer yes if there is at least one, no if there is none.",
+    "names": [
+     "Coral Sound",
+     "Ferro",
+     "Half Light",
+     "Junior Vale",
+     "Koa",
+     "Laurel and the Dive",
+     "Marlow Reyes",
+     "Meridian Brass",
+     "Night Ferry",
+     "Odette Lang",
+     "Sable Quartet",
+     "The Blue Hour",
+     "The Eastons",
+     "The Tin Ravens",
+     "The Undertow",
+     "Vespertine"
+    ],
+    "none_found": "pass",
+    "how": "Asks the vision model to copy every caption or credit naming who is shown in a photograph; it fails when both answers copy one that names a billed act, and passes when both find none.",
+    "op": "vlm_names_r5vc",
+    "images": [
+     {
+      "src": "deliverable"
+     }
+    ]
+   },
+   "how": "Asks the vision model to copy every caption or credit naming who is shown in a photograph; it fails when both answers copy one that names a billed act, and passes when both find none."
+  },
+  {
+   "check_id": "LAYOUT-12/release-post-r003/H042",
+   "output_id": "release-post-r003",
+   "rule_id": "R054",
+   "k_id": "K1_Q3",
+   "critical": false,
+   "check": "No caption or credit on “Night release post - 2026-09-26” (release-post-r003.png) identifies the pictured performer as Meridian Brass or any other billed act.",
+   "assertion": {
+    "question": "Look at every photograph on this design, including photographs inside any small pictures of posters shown on it. List every caption or credit that names who is shown in a photograph: for example Pictured: NAME, Photo: NAME, NAME on stage, NAME live, or a name set on or right against a photograph as its label. Do not list billing that is set apart from the photographs (act names listed with their dates, door times and prices), titles, or the venue name. Copy each caption exactly. answer yes if there is at least one, no if there is none.",
+    "names": [
+     "Coral Sound",
+     "Ferro",
+     "Half Light",
+     "Junior Vale",
+     "Koa",
+     "Laurel and the Dive",
+     "Marlow Reyes",
+     "Meridian Brass",
+     "Night Ferry",
+     "Odette Lang",
+     "Sable Quartet",
+     "The Blue Hour",
+     "The Eastons",
+     "The Tin Ravens",
+     "The Undertow",
+     "Vespertine"
+    ],
+    "none_found": "pass",
+    "how": "Asks the vision model to copy every caption or credit naming who is shown in a photograph; it fails when both answers copy one that names a billed act, and passes when both find none.",
+    "op": "vlm_names_r5vc",
+    "images": [
+     {
+      "src": "deliverable"
+     }
+    ]
+   },
+   "how": "Asks the vision model to copy every caption or credit naming who is shown in a photograph; it fails when both answers copy one that names a billed act, and passes when both find none."
+  },
+  {
+   "check_id": "LAYOUT-12/release-post-r004/H045",
+   "output_id": "release-post-r004",
+   "rule_id": "R054",
+   "k_id": "K1_Q3",
+   "critical": false,
+   "check": "No caption or credit on “Night release post - 2026-10-02” (release-post-r004.png) identifies the pictured performer as Night Ferry or any other billed act.",
+   "assertion": {
+    "question": "Look at every photograph on this design, including photographs inside any small pictures of posters shown on it. List every caption or credit that names who is shown in a photograph: for example Pictured: NAME, Photo: NAME, NAME on stage, NAME live, or a name set on or right against a photograph as its label. Do not list billing that is set apart from the photographs (act names listed with their dates, door times and prices), titles, or the venue name. Copy each caption exactly. answer yes if there is at least one, no if there is none.",
+    "names": [
+     "Coral Sound",
+     "Ferro",
+     "Half Light",
+     "Junior Vale",
+     "Koa",
+     "Laurel and the Dive",
+     "Marlow Reyes",
+     "Meridian Brass",
+     "Night Ferry",
+     "Odette Lang",
+     "Sable Quartet",
+     "The Blue Hour",
+     "The Eastons",
+     "The Tin Ravens",
+     "The Undertow",
+     "Vespertine"
+    ],
+    "none_found": "pass",
+    "how": "Asks the vision model to copy every caption or credit naming who is shown in a photograph; it fails when both answers copy one that names a billed act, and passes when both find none.",
+    "op": "vlm_names_r5vc",
+    "images": [
+     {
+      "src": "deliverable"
+     }
+    ]
+   },
+   "how": "Asks the vision model to copy every caption or credit naming who is shown in a photograph; it fails when both answers copy one that names a billed act, and passes when both find none."
+  },
+  {
+   "check_id": "LAYOUT-12/release-post-r005/H044",
+   "output_id": "release-post-r005",
+   "rule_id": "R054",
+   "k_id": "K1_Q3",
+   "critical": false,
+   "check": "No caption or credit on “Night release post - 2026-10-03” (release-post-r005.png) identifies the pictured performer as The Blue Hour or any other billed act.",
+   "assertion": {
+    "question": "Look at every photograph on this design, including photographs inside any small pictures of posters shown on it. List every caption or credit that names who is shown in a photograph: for example Pictured: NAME, Photo: NAME, NAME on stage, NAME live, or a name set on or right against a photograph as its label. Do not list billing that is set apart from the photographs (act names listed with their dates, door times and prices), titles, or the venue name. Copy each caption exactly. answer yes if there is at least one, no if there is none.",
+    "names": [
+     "Coral Sound",
+     "Ferro",
+     "Half Light",
+     "Junior Vale",
+     "Koa",
+     "Laurel and the Dive",
+     "Marlow Reyes",
+     "Meridian Brass",
+     "Night Ferry",
+     "Odette Lang",
+     "Sable Quartet",
+     "The Blue Hour",
+     "The Eastons",
+     "The Tin Ravens",
+     "The Undertow",
+     "Vespertine"
+    ],
+    "none_found": "pass",
+    "how": "Asks the vision model to copy every caption or credit naming who is shown in a photograph; it fails when both answers copy one that names a billed act, and passes when both find none.",
+    "op": "vlm_names_r5vc",
+    "images": [
+     {
+      "src": "deliverable"
+     }
+    ]
+   },
+   "how": "Asks the vision model to copy every caption or credit naming who is shown in a photograph; it fails when both answers copy one that names a billed act, and passes when both find none."
+  },
+  {
+   "check_id": "LAYOUT-12/release-post-r006/H044",
+   "output_id": "release-post-r006",
+   "rule_id": "R054",
+   "k_id": "K1_Q3",
+   "critical": false,
+   "check": "No caption or credit on “Night release post - 2026-10-04” (release-post-r006.png) identifies the pictured performer as The Blue Hour or any other billed act.",
+   "assertion": {
+    "question": "Look at every photograph on this design, including photographs inside any small pictures of posters shown on it. List every caption or credit that names who is shown in a photograph: for example Pictured: NAME, Photo: NAME, NAME on stage, NAME live, or a name set on or right against a photograph as its label. Do not list billing that is set apart from the photographs (act names listed with their dates, door times and prices), titles, or the venue name. Copy each caption exactly. answer yes if there is at least one, no if there is none.",
+    "names": [
+     "Coral Sound",
+     "Ferro",
+     "Half Light",
+     "Junior Vale",
+     "Koa",
+     "Laurel and the Dive",
+     "Marlow Reyes",
+     "Meridian Brass",
+     "Night Ferry",
+     "Odette Lang",
+     "Sable Quartet",
+     "The Blue Hour",
+     "The Eastons",
+     "The Tin Ravens",
+     "The Undertow",
+     "Vespertine"
+    ],
+    "none_found": "pass",
+    "how": "Asks the vision model to copy every caption or credit naming who is shown in a photograph; it fails when both answers copy one that names a billed act, and passes when both find none.",
+    "op": "vlm_names_r5vc",
+    "images": [
+     {
+      "src": "deliverable"
+     }
+    ]
+   },
+   "how": "Asks the vision model to copy every caption or credit naming who is shown in a photograph; it fails when both answers copy one that names a billed act, and passes when both find none."
+  },
+  {
+   "check_id": "LAYOUT-12/release-post-r007/H044",
+   "output_id": "release-post-r007",
+   "rule_id": "R054",
+   "k_id": "K1_Q3",
+   "critical": false,
+   "check": "No caption or credit on “Night release post - 2026-10-09” (release-post-r007.png) identifies the pictured performer as Vespertine or any other billed act.",
+   "assertion": {
+    "question": "Look at every photograph on this design, including photographs inside any small pictures of posters shown on it. List every caption or credit that names who is shown in a photograph: for example Pictured: NAME, Photo: NAME, NAME on stage, NAME live, or a name set on or right against a photograph as its label. Do not list billing that is set apart from the photographs (act names listed with their dates, door times and prices), titles, or the venue name. Copy each caption exactly. answer yes if there is at least one, no if there is none.",
+    "names": [
+     "Coral Sound",
+     "Ferro",
+     "Half Light",
+     "Junior Vale",
+     "Koa",
+     "Laurel and the Dive",
+     "Marlow Reyes",
+     "Meridian Brass",
+     "Night Ferry",
+     "Odette Lang",
+     "Sable Quartet",
+     "The Blue Hour",
+     "The Eastons",
+     "The Tin Ravens",
+     "The Undertow",
+     "Vespertine"
+    ],
+    "none_found": "pass",
+    "how": "Asks the vision model to copy every caption or credit naming who is shown in a photograph; it fails when both answers copy one that names a billed act, and passes when both find none.",
+    "op": "vlm_names_r5vc",
+    "images": [
+     {
+      "src": "deliverable"
+     }
+    ]
+   },
+   "how": "Asks the vision model to copy every caption or credit naming who is shown in a photograph; it fails when both answers copy one that names a billed act, and passes when both find none."
+  },
+  {
+   "check_id": "LAYOUT-12/release-post-r008/H039",
+   "output_id": "release-post-r008",
+   "rule_id": "R054",
+   "k_id": "K1_Q3",
+   "critical": false,
+   "check": "No caption or credit on “Night release post - 2026-10-10” (release-post-r008.png) identifies the pictured performer as The Eastons or any other billed act.",
+   "assertion": {
+    "question": "Look at every photograph on this design, including photographs inside any small pictures of posters shown on it. List every caption or credit that names who is shown in a photograph: for example Pictured: NAME, Photo: NAME, NAME on stage, NAME live, or a name set on or right against a photograph as its label. Do not list billing that is set apart from the photographs (act names listed with their dates, door times and prices), titles, or the venue name. Copy each caption exactly. answer yes if there is at least one, no if there is none.",
+    "names": [
+     "Coral Sound",
+     "Ferro",
+     "Half Light",
+     "Junior Vale",
+     "Koa",
+     "Laurel and the Dive",
+     "Marlow Reyes",
+     "Meridian Brass",
+     "Night Ferry",
+     "Odette Lang",
+     "Sable Quartet",
+     "The Blue Hour",
+     "The Eastons",
+     "The Tin Ravens",
+     "The Undertow",
+     "Vespertine"
+    ],
+    "none_found": "pass",
+    "how": "Asks the vision model to copy every caption or credit naming who is shown in a photograph; it fails when both answers copy one that names a billed act, and passes when both find none.",
+    "op": "vlm_names_r5vc",
+    "images": [
+     {
+      "src": "deliverable"
+     }
+    ]
+   },
+   "how": "Asks the vision model to copy every caption or credit naming who is shown in a photograph; it fails when both answers copy one that names a billed act, and passes when both find none."
+  },
+  {
+   "check_id": "LAYOUT-12/release-post-r009/H039",
+   "output_id": "release-post-r009",
+   "rule_id": "R054",
+   "k_id": "K1_Q3",
+   "critical": false,
+   "check": "No caption or credit on “Night release post - 2026-10-16” (release-post-r009.png) identifies the pictured performer as Koa or any other billed act.",
+   "assertion": {
+    "question": "Look at every photograph on this design, including photographs inside any small pictures of posters shown on it. List every caption or credit that names who is shown in a photograph: for example Pictured: NAME, Photo: NAME, NAME on stage, NAME live, or a name set on or right against a photograph as its label. Do not list billing that is set apart from the photographs (act names listed with their dates, door times and prices), titles, or the venue name. Copy each caption exactly. answer yes if there is at least one, no if there is none.",
+    "names": [
+     "Coral Sound",
+     "Ferro",
+     "Half Light",
+     "Junior Vale",
+     "Koa",
+     "Laurel and the Dive",
+     "Marlow Reyes",
+     "Meridian Brass",
+     "Night Ferry",
+     "Odette Lang",
+     "Sable Quartet",
+     "The Blue Hour",
+     "The Eastons",
+     "The Tin Ravens",
+     "The Undertow",
+     "Vespertine"
+    ],
+    "none_found": "pass",
+    "how": "Asks the vision model to copy every caption or credit naming who is shown in a photograph; it fails when both answers copy one that names a billed act, and passes when both find none.",
+    "op": "vlm_names_r5vc",
+    "images": [
+     {
+      "src": "deliverable"
+     }
+    ]
+   },
+   "how": "Asks the vision model to copy every caption or credit naming who is shown in a photograph; it fails when both answers copy one that names a billed act, and passes when both find none."
+  },
+  {
+   "check_id": "LAYOUT-12/release-post-r010/H044",
+   "output_id": "release-post-r010",
+   "rule_id": "R054",
+   "k_id": "K1_Q3",
+   "critical": false,
+   "check": "No caption or credit on “Night release post - 2026-10-17” (release-post-r010.png) identifies the pictured performer as Laurel and the Dive or any other billed act.",
+   "assertion": {
+    "question": "Look at every photograph on this design, including photographs inside any small pictures of posters shown on it. List every caption or credit that names who is shown in a photograph: for example Pictured: NAME, Photo: NAME, NAME on stage, NAME live, or a name set on or right against a photograph as its label. Do not list billing that is set apart from the photographs (act names listed with their dates, door times and prices), titles, or the venue name. Copy each caption exactly. answer yes if there is at least one, no if there is none.",
+    "names": [
+     "Coral Sound",
+     "Ferro",
+     "Half Light",
+     "Junior Vale",
+     "Koa",
+     "Laurel and the Dive",
+     "Marlow Reyes",
+     "Meridian Brass",
+     "Night Ferry",
+     "Odette Lang",
+     "Sable Quartet",
+     "The Blue Hour",
+     "The Eastons",
+     "The Tin Ravens",
+     "The Undertow",
+     "Vespertine"
+    ],
+    "none_found": "pass",
+    "how": "Asks the vision model to copy every caption or credit naming who is shown in a photograph; it fails when both answers copy one that names a billed act, and passes when both find none.",
+    "op": "vlm_names_r5vc",
+    "images": [
+     {
+      "src": "deliverable"
+     }
+    ]
+   },
+   "how": "Asks the vision model to copy every caption or credit naming who is shown in a photograph; it fails when both answers copy one that names a billed act, and passes when both find none."
+  },
+  {
+   "check_id": "LAYOUT-12/release-post-r005/H046",
+   "output_id": "release-post-r005",
+   "rule_id": "R055",
+   "k_id": "K1_Q3",
+   "critical": false,
+   "check": "“The Blue Hour” is billed on “Night release post - 2026-10-03” (release-post-r005.png) in type only, with no wordmark or logo artwork.",
+   "assertion": {
+    "op": "vlm_list_r5v",
+    "question": "This post bills the act The Blue Hour. Is the name The Blue Hour shown anywhere on it as a logo: lettering designed as a wordmark or badge (for example inside a ring or emblem, in a decorative, stencil, script or distressed style, or with a picture mark), rather than plain typeset text? List each such logo of The Blue Hour. answer yes if there is one, no if there is none.",
+    "none_found": "pass",
+    "how": "Asks the vision model whether The Blue Hour is shown as a logo or wordmark rather than plain type; it fails when both answers find one and passes when both find none."
+   },
+   "how": "Asks the vision model whether The Blue Hour is shown as a logo or wordmark rather than plain type; it fails when both answers find one and passes when both find none."
+  },
+  {
+   "check_id": "LAYOUT-12/release-post-r006/H046",
+   "output_id": "release-post-r006",
+   "rule_id": "R055",
+   "k_id": "K1_Q3",
+   "critical": false,
+   "check": "“The Blue Hour” is billed on “Night release post - 2026-10-04” (release-post-r006.png) in type only, with no wordmark or logo artwork.",
+   "assertion": {
+    "op": "vlm_list_r5v",
+    "question": "This post bills the act The Blue Hour. Is the name The Blue Hour shown anywhere on it as a logo: lettering designed as a wordmark or badge (for example inside a ring or emblem, in a decorative, stencil, script or distressed style, or with a picture mark), rather than plain typeset text? List each such logo of The Blue Hour. answer yes if there is one, no if there is none.",
+    "none_found": "pass",
+    "how": "Asks the vision model whether The Blue Hour is shown as a logo or wordmark rather than plain type; it fails when both answers find one and passes when both find none."
+   },
+   "how": "Asks the vision model whether The Blue Hour is shown as a logo or wordmark rather than plain type; it fails when both answers find one and passes when both find none."
+  },
+  {
+   "check_id": "LAYOUT-12/release-post-r007/H047",
+   "output_id": "release-post-r007",
+   "rule_id": "R055",
+   "k_id": "K1_Q3",
+   "critical": false,
+   "check": "“Vespertine” is billed on “Night release post - 2026-10-09” (release-post-r007.png) in type only, with no wordmark or logo artwork.",
+   "assertion": {
+    "op": "vlm_list_r5v",
+    "question": "This post bills the act Vespertine. Is the name Vespertine shown anywhere on it as a logo: lettering designed as a wordmark or badge (for example inside a ring or emblem, in a decorative, stencil, script or distressed style, or with a picture mark), rather than plain typeset text? List each such logo of Vespertine. answer yes if there is one, no if there is none.",
+    "none_found": "pass",
+    "how": "Asks the vision model whether Vespertine is shown as a logo or wordmark rather than plain type; it fails when both answers find one and passes when both find none."
+   },
+   "how": "Asks the vision model whether Vespertine is shown as a logo or wordmark rather than plain type; it fails when both answers find one and passes when both find none."
+  },
+  {
+   "check_id": "LAYOUT-12/release-post-r008/H041",
+   "output_id": "release-post-r008",
+   "rule_id": "R055",
+   "k_id": "K1_Q3",
+   "critical": false,
+   "check": "“The Eastons” is billed on “Night release post - 2026-10-10” (release-post-r008.png) in type only, with no wordmark or logo artwork.",
+   "assertion": {
+    "op": "vlm_list_r5v",
+    "question": "This post bills the act The Eastons. Is the name The Eastons shown anywhere on it as a logo: lettering designed as a wordmark or badge (for example inside a ring or emblem, in a decorative, stencil, script or distressed style, or with a picture mark), rather than plain typeset text? List each such logo of The Eastons. answer yes if there is one, no if there is none.",
+    "none_found": "pass",
+    "how": "Asks the vision model whether The Eastons is shown as a logo or wordmark rather than plain type; it fails when both answers find one and passes when both find none."
+   },
+   "how": "Asks the vision model whether The Eastons is shown as a logo or wordmark rather than plain type; it fails when both answers find one and passes when both find none."
+  },
+  {
+   "check_id": "LAYOUT-12/release-post-r009/H041",
+   "output_id": "release-post-r009",
+   "rule_id": "R055",
+   "k_id": "K1_Q3",
+   "critical": false,
+   "check": "“Koa” is billed on “Night release post - 2026-10-16” (release-post-r009.png) in type only, with no wordmark or logo artwork.",
+   "assertion": {
+    "op": "vlm_list_r5v",
+    "question": "This post bills the act Koa. Is the name Koa shown anywhere on it as a logo: lettering designed as a wordmark or badge (for example inside a ring or emblem, in a decorative, stencil, script or distressed style, or with a picture mark), rather than plain typeset text? List each such logo of Koa. answer yes if there is one, no if there is none.",
+    "none_found": "pass",
+    "how": "Asks the vision model whether Koa is shown as a logo or wordmark rather than plain type; it fails when both answers find one and passes when both find none."
+   },
+   "how": "Asks the vision model whether Koa is shown as a logo or wordmark rather than plain type; it fails when both answers find one and passes when both find none."
+  },
+  {
+   "check_id": "LAYOUT-12/release-post-r010/H046",
+   "output_id": "release-post-r010",
+   "rule_id": "R055",
+   "k_id": "K1_Q3",
+   "critical": false,
+   "check": "“Laurel and the Dive” is billed on “Night release post - 2026-10-17” (release-post-r010.png) in type only, with no wordmark or logo artwork.",
+   "assertion": {
+    "op": "vlm_list_r5v",
+    "question": "This post bills the act Laurel and the Dive. Is the name Laurel and the Dive shown anywhere on it as a logo: lettering designed as a wordmark or badge (for example inside a ring or emblem, in a decorative, stencil, script or distressed style, or with a picture mark), rather than plain typeset text? List each such logo of Laurel and the Dive. answer yes if there is one, no if there is none.",
+    "none_found": "pass",
+    "how": "Asks the vision model whether Laurel and the Dive is shown as a logo or wordmark rather than plain type; it fails when both answers find one and passes when both find none."
+   },
+   "how": "Asks the vision model whether Laurel and the Dive is shown as a logo or wordmark rather than plain type; it fails when both answers find one and passes when both find none."
   },
   {
    "check_id": "LAYOUT-12/poster-direction-type-led/H004",
@@ -4013,6 +4908,95 @@
    "how": "Finds the supplied lettering and reads which act name stands nearest to it."
   },
   {
+   "check_id": "LAYOUT-12/poster-direction-type-led/H018",
+   "output_id": "poster-direction-type-led",
+   "rule_id": "R058",
+   "k_id": "K1_Q5",
+   "critical": true,
+   "check": "No wordmark, stencil or distressed lettering drawn, generated or otherwise made for Night Ferry appears on “After Dark poster direction - Type-led” (poster-direction-type-led.pdf).",
+   "assertion": {
+    "op": "vlm_list_r5v",
+    "images": [
+     {
+      "src": "deliverable",
+      "page": 1,
+      "dpi": 144,
+      "max_side": 3072
+     }
+    ],
+    "question": "Is the name NIGHT FERRY shown anywhere on this design as logo lettering: a wordmark or badge, stencil letters, distressed, worn, cracked or textured letters, hand-drawn, brush or decorative lettering, or a picture mark? Plain clean typeset text, like the act names in the billing list, does not count. List each such rendering of NIGHT FERRY. answer yes if there is at least one, no if there is none.",
+    "none_found": "pass",
+    "how": "Asks the vision model whether NIGHT FERRY is shown as logo, stencil, distressed or other designed lettering rather than plain type; it fails when both answers find one and passes when both find none."
+   },
+   "how": "Asks the vision model whether NIGHT FERRY is shown as logo, stencil, distressed or other designed lettering rather than plain type; it fails when both answers find one and passes when both find none."
+  },
+  {
+   "check_id": "LAYOUT-12/poster-direction-image-led/H017",
+   "output_id": "poster-direction-image-led",
+   "rule_id": "R058",
+   "k_id": "K1_Q5",
+   "critical": true,
+   "check": "No wordmark, stencil or distressed lettering drawn, generated or otherwise made for Night Ferry appears on “After Dark poster direction - Image-led” (poster-direction-image-led.pdf).",
+   "assertion": {
+    "op": "vlm_list_r5v",
+    "images": [
+     {
+      "src": "deliverable",
+      "page": 1,
+      "dpi": 144,
+      "max_side": 3072
+     }
+    ],
+    "question": "Is the name NIGHT FERRY shown anywhere on this design as logo lettering: a wordmark or badge, stencil letters, distressed, worn, cracked or textured letters, hand-drawn, brush or decorative lettering, or a picture mark? Plain clean typeset text, like the act names in the billing list, does not count. List each such rendering of NIGHT FERRY. answer yes if there is at least one, no if there is none.",
+    "none_found": "pass",
+    "how": "Asks the vision model whether NIGHT FERRY is shown as logo, stencil, distressed or other designed lettering rather than plain type; it fails when both answers find one and passes when both find none."
+   },
+   "how": "Asks the vision model whether NIGHT FERRY is shown as logo, stencil, distressed or other designed lettering rather than plain type; it fails when both answers find one and passes when both find none."
+  },
+  {
+   "check_id": "LAYOUT-12/poster-direction-graphic-led/H016",
+   "output_id": "poster-direction-graphic-led",
+   "rule_id": "R058",
+   "k_id": "K1_Q5",
+   "critical": true,
+   "check": "No wordmark, stencil or distressed lettering drawn, generated or otherwise made for Night Ferry appears on “After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf).",
+   "assertion": {
+    "op": "vlm_list_r5v",
+    "images": [
+     {
+      "src": "deliverable",
+      "page": 1,
+      "dpi": 144,
+      "max_side": 3072
+     }
+    ],
+    "question": "Is the name NIGHT FERRY shown anywhere on this design as logo lettering: a wordmark or badge, stencil letters, distressed, worn, cracked or textured letters, hand-drawn, brush or decorative lettering, or a picture mark? Plain clean typeset text, like the act names in the billing list, does not count. List each such rendering of NIGHT FERRY. answer yes if there is at least one, no if there is none.",
+    "none_found": "pass",
+    "how": "Asks the vision model whether NIGHT FERRY is shown as logo, stencil, distressed or other designed lettering rather than plain type; it fails when both answers find one and passes when both find none."
+   },
+   "how": "Asks the vision model whether NIGHT FERRY is shown as logo, stencil, distressed or other designed lettering rather than plain type; it fails when both answers find one and passes when both find none."
+  },
+  {
+   "check_id": "LAYOUT-12/release-post-r004/H018",
+   "output_id": "release-post-r004",
+   "rule_id": "R058",
+   "k_id": "K1_Q5",
+   "critical": true,
+   "check": "No wordmark, stencil or distressed lettering drawn, generated or otherwise made for Night Ferry appears on “Night release post - 2026-10-02” (release-post-r004.png).",
+   "assertion": {
+    "op": "vlm_list_r5v",
+    "images": [
+     {
+      "src": "deliverable"
+     }
+    ],
+    "question": "Is the name NIGHT FERRY shown anywhere on this design as logo lettering: a wordmark or badge, stencil letters, distressed, worn, cracked or textured letters, hand-drawn, brush or decorative lettering, or a picture mark? Plain clean typeset text, like the act names in the billing list, does not count. List each such rendering of NIGHT FERRY. answer yes if there is at least one, no if there is none.",
+    "none_found": "pass",
+    "how": "Asks the vision model whether NIGHT FERRY is shown as logo, stencil, distressed or other designed lettering rather than plain type; it fails when both answers find one and passes when both find none."
+   },
+   "how": "Asks the vision model whether NIGHT FERRY is shown as logo, stencil, distressed or other designed lettering rather than plain type; it fails when both answers find one and passes when both find none."
+  },
+  {
    "check_id": "LAYOUT-12/release-post-r005/H001",
    "output_id": "release-post-r005",
    "rule_id": "R059",
@@ -4098,6 +5082,26 @@
     "forbid": "Night Ferry"
    },
    "how": "Finds the supplied lettering and reads which act name stands nearest to it."
+  },
+  {
+   "check_id": "LAYOUT-12/promoter-deck/H012",
+   "output_id": "promoter-deck",
+   "rule_id": "R062",
+   "k_id": "K1_Q5",
+   "critical": true,
+   "check": "No wordmark, stencil or distressed lettering drawn, generated or otherwise made for Night Ferry appears in “Promoter pitch deck” (promoter-deck.pdf).",
+   "assertion": {
+    "op": "vlm_pages_r5vc",
+    "then": "vlm_list_r5v",
+    "page_spec": {
+     "dpi": 144,
+     "max_side": 2048
+    },
+    "question": "Is the name NIGHT FERRY shown anywhere on this design as logo lettering: a wordmark or badge, stencil letters, distressed, worn, cracked or textured letters, hand-drawn, brush or decorative lettering, or a picture mark? Plain clean typeset text, like the act names in the billing list, does not count. List each such rendering of NIGHT FERRY. answer yes if there is at least one, no if there is none.",
+    "none_found": "pass",
+    "how": "Asks the vision model whether NIGHT FERRY is shown as logo, stencil, distressed or other designed lettering rather than plain type; it fails when both answers find one and passes when both find none. Every page is shown."
+   },
+   "how": "Asks the vision model whether NIGHT FERRY is shown as logo, stencil, distressed or other designed lettering rather than plain type; it fails when both answers find one and passes when both find none. Every page is shown."
   },
   {
    "check_id": "LAYOUT-12/poster-direction-type-led/H027",
@@ -12618,11 +13622,23 @@
    "critical": false,
    "check": "“After Dark poster direction - Type-led” (poster-direction-type-led.pdf) carries a compact series-title stack, such as “UMBRA / LOFT”.",
    "assertion": {
-    "op": "v2_title_stack",
-    "top": "UMBRA",
-    "bottom": "LOFT"
+    "op": "vlm_count_r5v",
+    "images": [
+     {
+      "src": "deliverable",
+      "page": 1,
+      "dpi": 144,
+      "max_side": 3072
+     }
+    ],
+    "question": "Find the series title: the venue or series name set in large letters near the top of this design, above the dates and act names (a name like UMBRA / LOFT). Count the rows of letters it is set on: count 1 if it runs on a single line, 2 if it is stacked on two rows, and so on; count 0 if there is no such title. answer yes if you found the series title, no if there is none.",
+    "expected": [
+     2,
+     4
+    ],
+    "how": "Asks the vision model how many rows the series title is set on; two to four rows (a stack) pass, one row or none fails."
    },
-   "how": "Reads the series title's lines and measures their spacing."
+   "how": "Asks the vision model how many rows the series title is set on; two to four rows (a stack) pass, one row or none fails."
   },
   {
    "check_id": "LAYOUT-12/poster-direction-image-led/H055",
@@ -12632,11 +13648,23 @@
    "critical": false,
    "check": "“After Dark poster direction - Image-led” (poster-direction-image-led.pdf) carries a compact series-title stack, such as “UMBRA / LOFT”.",
    "assertion": {
-    "op": "v2_title_stack",
-    "top": "UMBRA",
-    "bottom": "LOFT"
+    "op": "vlm_count_r5v",
+    "images": [
+     {
+      "src": "deliverable",
+      "page": 1,
+      "dpi": 144,
+      "max_side": 3072
+     }
+    ],
+    "question": "Find the series title: the venue or series name set in large letters near the top of this design, above the dates and act names (a name like UMBRA / LOFT). Count the rows of letters it is set on: count 1 if it runs on a single line, 2 if it is stacked on two rows, and so on; count 0 if there is no such title. answer yes if you found the series title, no if there is none.",
+    "expected": [
+     2,
+     4
+    ],
+    "how": "Asks the vision model how many rows the series title is set on; two to four rows (a stack) pass, one row or none fails."
    },
-   "how": "Reads the series title's lines and measures their spacing."
+   "how": "Asks the vision model how many rows the series title is set on; two to four rows (a stack) pass, one row or none fails."
   },
   {
    "check_id": "LAYOUT-12/poster-direction-graphic-led/H055",
@@ -12646,11 +13674,23 @@
    "critical": false,
    "check": "“After Dark poster direction - Graphic-led” (poster-direction-graphic-led.pdf) carries a compact series-title stack, such as “UMBRA / LOFT”.",
    "assertion": {
-    "op": "v2_title_stack",
-    "top": "UMBRA",
-    "bottom": "LOFT"
+    "op": "vlm_count_r5v",
+    "images": [
+     {
+      "src": "deliverable",
+      "page": 1,
+      "dpi": 144,
+      "max_side": 3072
+     }
+    ],
+    "question": "Find the series title: the venue or series name set in large letters near the top of this design, above the dates and act names (a name like UMBRA / LOFT). Count the rows of letters it is set on: count 1 if it runs on a single line, 2 if it is stacked on two rows, and so on; count 0 if there is no such title. answer yes if you found the series title, no if there is none.",
+    "expected": [
+     2,
+     4
+    ],
+    "how": "Asks the vision model how many rows the series title is set on; two to four rows (a stack) pass, one row or none fails."
    },
-   "how": "Reads the series title's lines and measures their spacing."
+   "how": "Asks the vision model how many rows the series title is set on; two to four rows (a stack) pass, one row or none fails."
   },
   {
    "check_id": "LAYOUT-12/release-post-r002/H042",
@@ -12660,11 +13700,20 @@
    "critical": false,
    "check": "“Night release post - 2026-09-25” (release-post-r002.png) carries a compact series-title stack, such as “UMBRA / LOFT”.",
    "assertion": {
-    "op": "v2_title_stack",
-    "top": "UMBRA",
-    "bottom": "LOFT"
+    "op": "vlm_count_r5v",
+    "images": [
+     {
+      "src": "deliverable"
+     }
+    ],
+    "question": "Find the series title: the venue or series name set in large letters near the top of this design, above the dates and act names (a name like UMBRA / LOFT). Count the rows of letters it is set on: count 1 if it runs on a single line, 2 if it is stacked on two rows, and so on; count 0 if there is no such title. answer yes if you found the series title, no if there is none.",
+    "expected": [
+     2,
+     4
+    ],
+    "how": "Asks the vision model how many rows the series title is set on; two to four rows (a stack) pass, one row or none fails."
    },
-   "how": "Reads the series title's lines and measures their spacing."
+   "how": "Asks the vision model how many rows the series title is set on; two to four rows (a stack) pass, one row or none fails."
   },
   {
    "check_id": "LAYOUT-12/release-post-r003/H037",
@@ -12674,11 +13723,20 @@
    "critical": false,
    "check": "“Night release post - 2026-09-26” (release-post-r003.png) carries a compact series-title stack, such as “UMBRA / LOFT”.",
    "assertion": {
-    "op": "v2_title_stack",
-    "top": "UMBRA",
-    "bottom": "LOFT"
+    "op": "vlm_count_r5v",
+    "images": [
+     {
+      "src": "deliverable"
+     }
+    ],
+    "question": "Find the series title: the venue or series name set in large letters near the top of this design, above the dates and act names (a name like UMBRA / LOFT). Count the rows of letters it is set on: count 1 if it runs on a single line, 2 if it is stacked on two rows, and so on; count 0 if there is no such title. answer yes if you found the series title, no if there is none.",
+    "expected": [
+     2,
+     4
+    ],
+    "how": "Asks the vision model how many rows the series title is set on; two to four rows (a stack) pass, one row or none fails."
    },
-   "how": "Reads the series title's lines and measures their spacing."
+   "how": "Asks the vision model how many rows the series title is set on; two to four rows (a stack) pass, one row or none fails."
   },
   {
    "check_id": "LAYOUT-12/release-post-r004/H040",
@@ -12688,11 +13746,20 @@
    "critical": false,
    "check": "“Night release post - 2026-10-02” (release-post-r004.png) carries a compact series-title stack, such as “UMBRA / LOFT”.",
    "assertion": {
-    "op": "v2_title_stack",
-    "top": "UMBRA",
-    "bottom": "LOFT"
+    "op": "vlm_count_r5v",
+    "images": [
+     {
+      "src": "deliverable"
+     }
+    ],
+    "question": "Find the series title: the venue or series name set in large letters near the top of this design, above the dates and act names (a name like UMBRA / LOFT). Count the rows of letters it is set on: count 1 if it runs on a single line, 2 if it is stacked on two rows, and so on; count 0 if there is no such title. answer yes if you found the series title, no if there is none.",
+    "expected": [
+     2,
+     4
+    ],
+    "how": "Asks the vision model how many rows the series title is set on; two to four rows (a stack) pass, one row or none fails."
    },
-   "how": "Reads the series title's lines and measures their spacing."
+   "how": "Asks the vision model how many rows the series title is set on; two to four rows (a stack) pass, one row or none fails."
   },
   {
    "check_id": "LAYOUT-12/release-post-r005/H039",
@@ -12702,11 +13769,20 @@
    "critical": false,
    "check": "“Night release post - 2026-10-03” (release-post-r005.png) carries a compact series-title stack, such as “UMBRA / LOFT”.",
    "assertion": {
-    "op": "v2_title_stack",
-    "top": "UMBRA",
-    "bottom": "LOFT"
+    "op": "vlm_count_r5v",
+    "images": [
+     {
+      "src": "deliverable"
+     }
+    ],
+    "question": "Find the series title: the venue or series name set in large letters near the top of this design, above the dates and act names (a name like UMBRA / LOFT). Count the rows of letters it is set on: count 1 if it runs on a single line, 2 if it is stacked on two rows, and so on; count 0 if there is no such title. answer yes if you found the series title, no if there is none.",
+    "expected": [
+     2,
+     4
+    ],
+    "how": "Asks the vision model how many rows the series title is set on; two to four rows (a stack) pass, one row or none fails."
    },
-   "how": "Reads the series title's lines and measures their spacing."
+   "how": "Asks the vision model how many rows the series title is set on; two to four rows (a stack) pass, one row or none fails."
   },
   {
    "check_id": "LAYOUT-12/release-post-r006/H039",
@@ -12716,11 +13792,20 @@
    "critical": false,
    "check": "“Night release post - 2026-10-04” (release-post-r006.png) carries a compact series-title stack, such as “UMBRA / LOFT”.",
    "assertion": {
-    "op": "v2_title_stack",
-    "top": "UMBRA",
-    "bottom": "LOFT"
+    "op": "vlm_count_r5v",
+    "images": [
+     {
+      "src": "deliverable"
+     }
+    ],
+    "question": "Find the series title: the venue or series name set in large letters near the top of this design, above the dates and act names (a name like UMBRA / LOFT). Count the rows of letters it is set on: count 1 if it runs on a single line, 2 if it is stacked on two rows, and so on; count 0 if there is no such title. answer yes if you found the series title, no if there is none.",
+    "expected": [
+     2,
+     4
+    ],
+    "how": "Asks the vision model how many rows the series title is set on; two to four rows (a stack) pass, one row or none fails."
    },
-   "how": "Reads the series title's lines and measures their spacing."
+   "how": "Asks the vision model how many rows the series title is set on; two to four rows (a stack) pass, one row or none fails."
   },
   {
    "check_id": "LAYOUT-12/release-post-r007/H039",
@@ -12730,11 +13815,20 @@
    "critical": false,
    "check": "“Night release post - 2026-10-09” (release-post-r007.png) carries a compact series-title stack, such as “UMBRA / LOFT”.",
    "assertion": {
-    "op": "v2_title_stack",
-    "top": "UMBRA",
-    "bottom": "LOFT"
+    "op": "vlm_count_r5v",
+    "images": [
+     {
+      "src": "deliverable"
+     }
+    ],
+    "question": "Find the series title: the venue or series name set in large letters near the top of this design, above the dates and act names (a name like UMBRA / LOFT). Count the rows of letters it is set on: count 1 if it runs on a single line, 2 if it is stacked on two rows, and so on; count 0 if there is no such title. answer yes if you found the series title, no if there is none.",
+    "expected": [
+     2,
+     4
+    ],
+    "how": "Asks the vision model how many rows the series title is set on; two to four rows (a stack) pass, one row or none fails."
    },
-   "how": "Reads the series title's lines and measures their spacing."
+   "how": "Asks the vision model how many rows the series title is set on; two to four rows (a stack) pass, one row or none fails."
   },
   {
    "check_id": "LAYOUT-12/release-post-r008/H034",
@@ -12744,11 +13838,20 @@
    "critical": false,
    "check": "“Night release post - 2026-10-10” (release-post-r008.png) carries a compact series-title stack, such as “UMBRA / LOFT”.",
    "assertion": {
-    "op": "v2_title_stack",
-    "top": "UMBRA",
-    "bottom": "LOFT"
+    "op": "vlm_count_r5v",
+    "images": [
+     {
+      "src": "deliverable"
+     }
+    ],
+    "question": "Find the series title: the venue or series name set in large letters near the top of this design, above the dates and act names (a name like UMBRA / LOFT). Count the rows of letters it is set on: count 1 if it runs on a single line, 2 if it is stacked on two rows, and so on; count 0 if there is no such title. answer yes if you found the series title, no if there is none.",
+    "expected": [
+     2,
+     4
+    ],
+    "how": "Asks the vision model how many rows the series title is set on; two to four rows (a stack) pass, one row or none fails."
    },
-   "how": "Reads the series title's lines and measures their spacing."
+   "how": "Asks the vision model how many rows the series title is set on; two to four rows (a stack) pass, one row or none fails."
   },
   {
    "check_id": "LAYOUT-12/release-post-r009/H034",
@@ -12758,11 +13861,20 @@
    "critical": false,
    "check": "“Night release post - 2026-10-16” (release-post-r009.png) carries a compact series-title stack, such as “UMBRA / LOFT”.",
    "assertion": {
-    "op": "v2_title_stack",
-    "top": "UMBRA",
-    "bottom": "LOFT"
+    "op": "vlm_count_r5v",
+    "images": [
+     {
+      "src": "deliverable"
+     }
+    ],
+    "question": "Find the series title: the venue or series name set in large letters near the top of this design, above the dates and act names (a name like UMBRA / LOFT). Count the rows of letters it is set on: count 1 if it runs on a single line, 2 if it is stacked on two rows, and so on; count 0 if there is no such title. answer yes if you found the series title, no if there is none.",
+    "expected": [
+     2,
+     4
+    ],
+    "how": "Asks the vision model how many rows the series title is set on; two to four rows (a stack) pass, one row or none fails."
    },
-   "how": "Reads the series title's lines and measures their spacing."
+   "how": "Asks the vision model how many rows the series title is set on; two to four rows (a stack) pass, one row or none fails."
   },
   {
    "check_id": "LAYOUT-12/release-post-r010/H039",
@@ -12772,11 +13884,20 @@
    "critical": false,
    "check": "“Night release post - 2026-10-17” (release-post-r010.png) carries a compact series-title stack, such as “UMBRA / LOFT”.",
    "assertion": {
-    "op": "v2_title_stack",
-    "top": "UMBRA",
-    "bottom": "LOFT"
+    "op": "vlm_count_r5v",
+    "images": [
+     {
+      "src": "deliverable"
+     }
+    ],
+    "question": "Find the series title: the venue or series name set in large letters near the top of this design, above the dates and act names (a name like UMBRA / LOFT). Count the rows of letters it is set on: count 1 if it runs on a single line, 2 if it is stacked on two rows, and so on; count 0 if there is no such title. answer yes if you found the series title, no if there is none.",
+    "expected": [
+     2,
+     4
+    ],
+    "how": "Asks the vision model how many rows the series title is set on; two to four rows (a stack) pass, one row or none fails."
    },
-   "how": "Reads the series title's lines and measures their spacing."
+   "how": "Asks the vision model how many rows the series title is set on; two to four rows (a stack) pass, one row or none fails."
   },
   {
    "check_id": "LAYOUT-12/poster-direction-image-led/H048",

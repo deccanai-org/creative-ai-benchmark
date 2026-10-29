@@ -1356,18 +1356,38 @@
    "critical": false,
    "check": "“Recovered sticker artwork - Bag design 3” (recovered-sticker-bag-design-3.svg) is built from meridian_bag_ridgeline.jpg, the ridge line, not from meridian_bag_moth.jpg or meridian_bag_pourover.jpg.",
    "assertion": {
-    "op": "v2_built_from",
-    "photo": "meridian_bag_ridgeline.jpg",
-    "others": [
-     "meridian_bag_moth.jpg",
-     "meridian_bag_pourover.jpg"
+    "op": "vlm_read_r5v",
+    "question": "Photos A, B and C each show a coffee bag with a different drawing printed on it. The last image is a sticker. Which photo's printed drawing does the sticker reproduce? Put only that photo's letter (A, B or C) in values. answer cannot_tell if the sticker reproduces none of them.",
+    "expected": [
+     "B",
+     "Photo B"
     ],
-    "grounds": [
-     "#C8A97E",
-     "#F3E7D3"
-    ]
+    "case": "exact",
+    "images": [
+     {
+      "src": "asset:meridian_bag_moth.jpg",
+      "label": "Photo A",
+      "max_side": 1024
+     },
+     {
+      "src": "asset:meridian_bag_ridgeline.jpg",
+      "label": "Photo B",
+      "max_side": 1024
+     },
+     {
+      "src": "asset:meridian_bag_pourover.jpg",
+      "label": "Photo C",
+      "max_side": 1024
+     },
+     {
+      "src": "deliverable",
+      "label": "The sticker",
+      "svg_ground": "#FFFFFF"
+     }
+    ],
+    "how": "Shows the vision model the three bag photographs, labelled A to C, and the sticker, and asks which photograph's drawing the sticker reproduces; code checks the answer names meridian_bag_ridgeline.jpg."
    },
-   "how": "Compares the drawing's silhouette with the printed motif of each supplied photo."
+   "how": "Shows the vision model the three bag photographs, labelled A to C, and the sticker, and asks which photograph's drawing the sticker reproduces; code checks the answer names meridian_bag_ridgeline.jpg."
   },
   {
    "check_id": "VECTOR-04/sticker-proof-bag-design-1/H003",
@@ -1411,14 +1431,38 @@
    "critical": false,
    "check": "“Transparent sticker proof - Bag design 3” (sticker-proof-bag-design-3.png) shows the ridge line from meridian_bag_ridgeline.jpg.",
    "assertion": {
-    "op": "v2_built_from_raster",
-    "photo": "meridian_bag_ridgeline.jpg",
-    "others": [
-     "meridian_bag_moth.jpg",
-     "meridian_bag_pourover.jpg"
-    ]
+    "op": "vlm_read_r5v",
+    "question": "Photos A, B and C each show a coffee bag with a different drawing printed on it. The last image is a sticker. Which photo's printed drawing does the sticker reproduce? Put only that photo's letter (A, B or C) in values. answer cannot_tell if the sticker reproduces none of them.",
+    "expected": [
+     "B",
+     "Photo B"
+    ],
+    "case": "exact",
+    "images": [
+     {
+      "src": "asset:meridian_bag_moth.jpg",
+      "label": "Photo A",
+      "max_side": 1024
+     },
+     {
+      "src": "asset:meridian_bag_ridgeline.jpg",
+      "label": "Photo B",
+      "max_side": 1024
+     },
+     {
+      "src": "asset:meridian_bag_pourover.jpg",
+      "label": "Photo C",
+      "max_side": 1024
+     },
+     {
+      "src": "deliverable",
+      "label": "The sticker",
+      "ground": "#FFFFFF"
+     }
+    ],
+    "how": "Shows the vision model the three bag photographs, labelled A to C, and the sticker, and asks which photograph's drawing the sticker reproduces; code checks the answer names meridian_bag_ridgeline.jpg."
    },
-   "how": "Compares the drawing with each supplied photo by feature matching."
+   "how": "Shows the vision model the three bag photographs, labelled A to C, and the sticker, and asks which photograph's drawing the sticker reproduces; code checks the answer names meridian_bag_ridgeline.jpg."
   },
   {
    "check_id": "VECTOR-04/sticker-proof-window-mark/H003",
@@ -1474,6 +1518,72 @@
    "how": "Compares the drawing's silhouette with the printed motif of each supplied photo."
   },
   {
+   "check_id": "VECTOR-04/recovered-sticker-bag-design-2/H005",
+   "output_id": "recovered-sticker-bag-design-2",
+   "rule_id": "R042",
+   "k_id": "K2_Q2",
+   "critical": false,
+   "check": "“Recovered sticker artwork - Bag design 2” (recovered-sticker-bag-design-2.svg) keeps every part of the drawing printed on meridian_bag_pourover.jpg: the cone, the carafe beneath it and the rising steam curl.",
+   "assertion": {
+    "op": "vlm_list_r5v",
+    "question": "Image 1 shows a drawing printed on a coffee bag: a pour-over cone, the carafe beneath it and a rising steam curl. Image 2 is a sticker made from that drawing. Is any of these parts missing from image 2 or cut away in it: the cone, the carafe, the steam curl? List only missing parts from that list, by those names (one entry for each missing eye spot, wing or antenna). Small differences in the shape or detail of a part that is there, and differences of colour, line weight or drawing style, do not count. answer yes if any listed part is missing, no if all of them are there.",
+    "none_found": "pass",
+    "images": [
+     {
+      "src": "asset:meridian_bag_pourover.jpg",
+      "crop": [
+       0.36,
+       0.11,
+       0.63,
+       0.92
+      ],
+      "max_side": 1536,
+      "label": "Image 1: the drawing printed on the bag"
+     },
+     {
+      "src": "deliverable",
+      "label": "Image 2: the sticker",
+      "svg_ground": "#FFFFFF"
+     }
+    ],
+    "how": "Shows the vision model the drawing printed on meridian_bag_pourover.jpg and the sticker and asks it to list any part of the drawing missing from the sticker; it fails when both answers list one and passes when both find none."
+   },
+   "how": "Shows the vision model the drawing printed on meridian_bag_pourover.jpg and the sticker and asks it to list any part of the drawing missing from the sticker; it fails when both answers list one and passes when both find none."
+  },
+  {
+   "check_id": "VECTOR-04/sticker-proof-bag-design-2/H005",
+   "output_id": "sticker-proof-bag-design-2",
+   "rule_id": "R042",
+   "k_id": "K2_Q2",
+   "critical": false,
+   "check": "“Transparent sticker proof - Bag design 2” (sticker-proof-bag-design-2.png) keeps every part of the drawing printed on meridian_bag_pourover.jpg: the cone, the carafe beneath it and the rising steam curl.",
+   "assertion": {
+    "op": "vlm_list_r5v",
+    "question": "Image 1 shows a drawing printed on a coffee bag: a pour-over cone, the carafe beneath it and a rising steam curl. Image 2 is a sticker made from that drawing. Is any of these parts missing from image 2 or cut away in it: the cone, the carafe, the steam curl? List only missing parts from that list, by those names (one entry for each missing eye spot, wing or antenna). Small differences in the shape or detail of a part that is there, and differences of colour, line weight or drawing style, do not count. answer yes if any listed part is missing, no if all of them are there.",
+    "none_found": "pass",
+    "images": [
+     {
+      "src": "asset:meridian_bag_pourover.jpg",
+      "crop": [
+       0.36,
+       0.11,
+       0.63,
+       0.92
+      ],
+      "max_side": 1536,
+      "label": "Image 1: the drawing printed on the bag"
+     },
+     {
+      "src": "deliverable",
+      "label": "Image 2: the sticker",
+      "ground": "#FFFFFF"
+     }
+    ],
+    "how": "Shows the vision model the drawing printed on meridian_bag_pourover.jpg and the sticker and asks it to list any part of the drawing missing from the sticker; it fails when both answers list one and passes when both find none."
+   },
+   "how": "Shows the vision model the drawing printed on meridian_bag_pourover.jpg and the sticker and asks it to list any part of the drawing missing from the sticker; it fails when both answers list one and passes when both find none."
+  },
+  {
    "check_id": "VECTOR-04/recovered-sticker-bag-design-3/H004",
    "output_id": "recovered-sticker-bag-design-3",
    "rule_id": "R043",
@@ -1498,6 +1608,72 @@
     "max_dots": 40
    },
    "how": "Counts tiny dot shapes in the SVG."
+  },
+  {
+   "check_id": "VECTOR-04/recovered-sticker-bag-design-1/H005",
+   "output_id": "recovered-sticker-bag-design-1",
+   "rule_id": "R046",
+   "k_id": "K2_Q2",
+   "critical": false,
+   "check": "“Recovered sticker artwork - Bag design 1” (recovered-sticker-bag-design-1.svg) keeps every part of the drawing printed on meridian_bag_moth.jpg: its wings, eye spots, body and antennae.",
+   "assertion": {
+    "op": "vlm_list_r5v",
+    "question": "Image 1 shows a drawing printed on a coffee bag: a moth with four wings, four eye spots (one on each wing), a body and two antennae. Image 2 is a sticker made from that drawing. Is any of these parts missing from image 2 or cut away in it: a wing, an eye spot, the body, an antenna? List only missing parts from that list, by those names (one entry for each missing eye spot, wing or antenna). Small differences in the shape or detail of a part that is there, and differences of colour, line weight or drawing style, do not count. answer yes if any listed part is missing, no if all of them are there.",
+    "none_found": "pass",
+    "images": [
+     {
+      "src": "asset:meridian_bag_moth.jpg",
+      "crop": [
+       0.25,
+       0.26,
+       0.74,
+       0.71
+      ],
+      "max_side": 1536,
+      "label": "Image 1: the drawing printed on the bag"
+     },
+     {
+      "src": "deliverable",
+      "label": "Image 2: the sticker",
+      "svg_ground": "#FFFFFF"
+     }
+    ],
+    "how": "Shows the vision model the drawing printed on meridian_bag_moth.jpg and the sticker and asks it to list any part of the drawing missing from the sticker; it fails when both answers list one and passes when both find none."
+   },
+   "how": "Shows the vision model the drawing printed on meridian_bag_moth.jpg and the sticker and asks it to list any part of the drawing missing from the sticker; it fails when both answers list one and passes when both find none."
+  },
+  {
+   "check_id": "VECTOR-04/sticker-proof-bag-design-1/H005",
+   "output_id": "sticker-proof-bag-design-1",
+   "rule_id": "R046",
+   "k_id": "K2_Q2",
+   "critical": false,
+   "check": "“Transparent sticker proof - Bag design 1” (sticker-proof-bag-design-1.png) keeps every part of the drawing printed on meridian_bag_moth.jpg: its wings, eye spots, body and antennae.",
+   "assertion": {
+    "op": "vlm_list_r5v",
+    "question": "Image 1 shows a drawing printed on a coffee bag: a moth with four wings, four eye spots (one on each wing), a body and two antennae. Image 2 is a sticker made from that drawing. Is any of these parts missing from image 2 or cut away in it: a wing, an eye spot, the body, an antenna? List only missing parts from that list, by those names (one entry for each missing eye spot, wing or antenna). Small differences in the shape or detail of a part that is there, and differences of colour, line weight or drawing style, do not count. answer yes if any listed part is missing, no if all of them are there.",
+    "none_found": "pass",
+    "images": [
+     {
+      "src": "asset:meridian_bag_moth.jpg",
+      "crop": [
+       0.25,
+       0.26,
+       0.74,
+       0.71
+      ],
+      "max_side": 1536,
+      "label": "Image 1: the drawing printed on the bag"
+     },
+     {
+      "src": "deliverable",
+      "label": "Image 2: the sticker",
+      "ground": "#FFFFFF"
+     }
+    ],
+    "how": "Shows the vision model the drawing printed on meridian_bag_moth.jpg and the sticker and asks it to list any part of the drawing missing from the sticker; it fails when both answers list one and passes when both find none."
+   },
+   "how": "Shows the vision model the drawing printed on meridian_bag_moth.jpg and the sticker and asks it to list any part of the drawing missing from the sticker; it fails when both answers list one and passes when both find none."
   },
   {
    "check_id": "VECTOR-04/gang-sheet/H007",
@@ -1624,6 +1800,72 @@
     ]
    },
    "how": "Renders the delivered sticker, finds it on the sheet, and compares its proportions and colours."
+  },
+  {
+   "check_id": "VECTOR-04/sticker-proof-window-mark/H004",
+   "output_id": "sticker-proof-window-mark",
+   "rule_id": "R050",
+   "k_id": "K2_Q2",
+   "critical": false,
+   "check": "“Transparent sticker proof - Window mark” (sticker-proof-window-mark.png) shows all four painted parts from meridian_window_mark.jpg: the arched MERIDIAN & ASH wordmark, filled roundel, fine hairline ring and ash leaf.",
+   "assertion": {
+    "op": "vlm_list_r5v",
+    "question": "Image 1 is a photo of a sign painted on a cafe window. Image 2 is a sticker made from that sign. The painted sign has four parts: the arched lettering MERIDIAN & ASH, a filled round disc, a fine thin ring around the disc, and a leaf inside the disc. List each of these four parts that does not appear in image 2. answer yes if any of them is missing, no if all four appear.",
+    "none_found": "pass",
+    "images": [
+     {
+      "src": "asset:meridian_window_mark.jpg",
+      "crop": [
+       0.12,
+       0.1,
+       0.82,
+       0.8
+      ],
+      "max_side": 1536,
+      "label": "Image 1: the sign painted on the window"
+     },
+     {
+      "src": "deliverable",
+      "label": "Image 2: the sticker",
+      "ground": "#3A3A3A"
+     }
+    ],
+    "how": "Shows the vision model the painted window sign and the sticker and asks which of its four parts (arched lettering, filled roundel, hairline ring, leaf) the sticker lacks; it fails when both answers list one and passes when both find none."
+   },
+   "how": "Shows the vision model the painted window sign and the sticker and asks which of its four parts (arched lettering, filled roundel, hairline ring, leaf) the sticker lacks; it fails when both answers list one and passes when both find none."
+  },
+  {
+   "check_id": "VECTOR-04/recovered-sticker-window-mark/H006",
+   "output_id": "recovered-sticker-window-mark",
+   "rule_id": "R053",
+   "k_id": "K2_Q2",
+   "critical": false,
+   "check": "“Recovered sticker artwork - Window mark” (recovered-sticker-window-mark.svg) has all four painted parts from meridian_window_mark.jpg: the arched MERIDIAN & ASH wordmark, filled roundel, fine hairline ring and ash leaf.",
+   "assertion": {
+    "op": "vlm_list_r5v",
+    "question": "Image 1 is a photo of a sign painted on a cafe window. Image 2 is a sticker made from that sign. The painted sign has four parts: the arched lettering MERIDIAN & ASH, a filled round disc, a fine thin ring around the disc, and a leaf inside the disc. List each of these four parts that does not appear in image 2. answer yes if any of them is missing, no if all four appear.",
+    "none_found": "pass",
+    "images": [
+     {
+      "src": "asset:meridian_window_mark.jpg",
+      "crop": [
+       0.12,
+       0.1,
+       0.82,
+       0.8
+      ],
+      "max_side": 1536,
+      "label": "Image 1: the sign painted on the window"
+     },
+     {
+      "src": "deliverable",
+      "label": "Image 2: the sticker",
+      "svg_ground": "#3A3A3A"
+     }
+    ],
+    "how": "Shows the vision model the painted window sign and the sticker and asks which of its four parts (arched lettering, filled roundel, hairline ring, leaf) the sticker lacks; it fails when both answers list one and passes when both find none."
+   },
+   "how": "Shows the vision model the painted window sign and the sticker and asks which of its four parts (arched lettering, filled roundel, hairline ring, leaf) the sticker lacks; it fails when both answers list one and passes when both find none."
   },
   {
    "check_id": "VECTOR-04/recovered-sticker-window-mark/H012",
@@ -3096,6 +3338,195 @@
     "op": "v2_sheet_no_raster"
    },
    "how": "Reads the sheet for placed pictures and fields of tiny specks."
+  },
+  {
+   "check_id": "VECTOR-04/recovered-sticker-bag-design-3/H006",
+   "output_id": "recovered-sticker-bag-design-3",
+   "rule_id": "R113",
+   "k_id": "K2_Q4",
+   "critical": false,
+   "check": "“Recovered sticker artwork - Bag design 3” (recovered-sticker-bag-design-3.svg) carries only the printed drawing, with no kraft paper texture, bag outline, wood, plant or bowl traced from meridian_bag_ridgeline.jpg.",
+   "assertion": {
+    "op": "vlm_list_r5v",
+    "question": "Image 1 is a photograph of a coffee bag on a table, with a drawing printed on the bag. Image 2 is the delivered sticker file made from that printed drawing; everything visible in image 2 counts, including anything around or behind the sticker shape. Does image 2 show any of these things from the photograph: the bag's kraft paper texture, the outline or edges of the bag, the wooden table, the plant, or the bowl? A plain flat-coloured backing shape behind the art (the sticker's own die-cut base) does not count. List each of these things you find in image 2. answer yes if you find any, no if image 2 shows none of them.",
+    "none_found": "pass",
+    "images": [
+     {
+      "src": "asset:meridian_bag_ridgeline.jpg",
+      "max_side": 1024,
+      "label": "Image 1: the photograph"
+     },
+     {
+      "src": "deliverable",
+      "label": "Image 2: the sticker",
+      "svg_ground": "#FFFFFF"
+     }
+    ],
+    "how": "Shows the vision model meridian_bag_ridgeline.jpg and the whole sticker file and asks whether it shows any of the things the rule names from the photo (the bag's kraft paper texture, the outline or edges of the bag, the wooden table, the plant, or the bowl); it fails when both answers list one and passes when both find none."
+   },
+   "how": "Shows the vision model meridian_bag_ridgeline.jpg and the whole sticker file and asks whether it shows any of the things the rule names from the photo (the bag's kraft paper texture, the outline or edges of the bag, the wooden table, the plant, or the bowl); it fails when both answers list one and passes when both find none."
+  },
+  {
+   "check_id": "VECTOR-04/sticker-proof-bag-design-1/H006",
+   "output_id": "sticker-proof-bag-design-1",
+   "rule_id": "R114",
+   "k_id": "K2_Q4",
+   "critical": false,
+   "check": "“Transparent sticker proof - Bag design 1” (sticker-proof-bag-design-1.png) shows only the printed drawing, with no kraft paper texture, bag outline, wood, scoop or coffee beans from meridian_bag_moth.jpg.",
+   "assertion": {
+    "op": "vlm_list_r5v",
+    "question": "Image 1 is a photograph of a coffee bag on a table, with a drawing printed on the bag. Image 2 is the delivered sticker file made from that printed drawing; everything visible in image 2 counts, including anything around or behind the sticker shape. Does image 2 show any of these things from the photograph: the bag's kraft paper texture, the outline or edges of the bag, the wooden table, the coffee scoop, or coffee beans? A plain flat-coloured backing shape behind the art (the sticker's own die-cut base) does not count. List each of these things you find in image 2. answer yes if you find any, no if image 2 shows none of them.",
+    "none_found": "pass",
+    "images": [
+     {
+      "src": "asset:meridian_bag_moth.jpg",
+      "max_side": 1024,
+      "label": "Image 1: the photograph"
+     },
+     {
+      "src": "deliverable",
+      "label": "Image 2: the sticker",
+      "ground": "#FFFFFF"
+     }
+    ],
+    "how": "Shows the vision model meridian_bag_moth.jpg and the whole sticker file and asks whether it shows any of the things the rule names from the photo (the bag's kraft paper texture, the outline or edges of the bag, the wooden table, the coffee scoop, or coffee beans); it fails when both answers list one and passes when both find none."
+   },
+   "how": "Shows the vision model meridian_bag_moth.jpg and the whole sticker file and asks whether it shows any of the things the rule names from the photo (the bag's kraft paper texture, the outline or edges of the bag, the wooden table, the coffee scoop, or coffee beans); it fails when both answers list one and passes when both find none."
+  },
+  {
+   "check_id": "VECTOR-04/sticker-proof-bag-design-2/H006",
+   "output_id": "sticker-proof-bag-design-2",
+   "rule_id": "R116",
+   "k_id": "K2_Q4",
+   "critical": false,
+   "check": "“Transparent sticker proof - Bag design 2” (sticker-proof-bag-design-2.png) shows only the printed drawing, with no kraft paper texture, bag outline, gusset fold shadow or wood from meridian_bag_pourover.jpg.",
+   "assertion": {
+    "op": "vlm_list_r5v",
+    "question": "Image 1 is a photograph of a coffee bag on a table, with a drawing printed on the bag. Image 2 is the delivered sticker file made from that printed drawing; everything visible in image 2 counts, including anything around or behind the sticker shape. Does image 2 show any of these things from the photograph: the bag's kraft paper texture, the outline or edges of the bag, the shadow of the bag's side fold (gusset), or the wooden table? A plain flat-coloured backing shape behind the art (the sticker's own die-cut base) does not count. List each of these things you find in image 2. answer yes if you find any, no if image 2 shows none of them.",
+    "none_found": "pass",
+    "images": [
+     {
+      "src": "asset:meridian_bag_pourover.jpg",
+      "max_side": 1024,
+      "label": "Image 1: the photograph"
+     },
+     {
+      "src": "deliverable",
+      "label": "Image 2: the sticker",
+      "ground": "#FFFFFF"
+     }
+    ],
+    "how": "Shows the vision model meridian_bag_pourover.jpg and the whole sticker file and asks whether it shows any of the things the rule names from the photo (the bag's kraft paper texture, the outline or edges of the bag, the shadow of the bag's side fold (gusset), or the wooden table); it fails when both answers list one and passes when both find none."
+   },
+   "how": "Shows the vision model meridian_bag_pourover.jpg and the whole sticker file and asks whether it shows any of the things the rule names from the photo (the bag's kraft paper texture, the outline or edges of the bag, the shadow of the bag's side fold (gusset), or the wooden table); it fails when both answers list one and passes when both find none."
+  },
+  {
+   "check_id": "VECTOR-04/sticker-proof-bag-design-3/H006",
+   "output_id": "sticker-proof-bag-design-3",
+   "rule_id": "R117",
+   "k_id": "K2_Q4",
+   "critical": false,
+   "check": "“Transparent sticker proof - Bag design 3” (sticker-proof-bag-design-3.png) shows only the printed drawing, with no kraft paper texture, bag outline, wood, plant or bowl from meridian_bag_ridgeline.jpg.",
+   "assertion": {
+    "op": "vlm_list_r5v",
+    "question": "Image 1 is a photograph of a coffee bag on a table, with a drawing printed on the bag. Image 2 is the delivered sticker file made from that printed drawing; everything visible in image 2 counts, including anything around or behind the sticker shape. Does image 2 show any of these things from the photograph: the bag's kraft paper texture, the outline or edges of the bag, the wooden table, the plant, or the bowl? A plain flat-coloured backing shape behind the art (the sticker's own die-cut base) does not count. List each of these things you find in image 2. answer yes if you find any, no if image 2 shows none of them.",
+    "none_found": "pass",
+    "images": [
+     {
+      "src": "asset:meridian_bag_ridgeline.jpg",
+      "max_side": 1024,
+      "label": "Image 1: the photograph"
+     },
+     {
+      "src": "deliverable",
+      "label": "Image 2: the sticker",
+      "ground": "#FFFFFF"
+     }
+    ],
+    "how": "Shows the vision model meridian_bag_ridgeline.jpg and the whole sticker file and asks whether it shows any of the things the rule names from the photo (the bag's kraft paper texture, the outline or edges of the bag, the wooden table, the plant, or the bowl); it fails when both answers list one and passes when both find none."
+   },
+   "how": "Shows the vision model meridian_bag_ridgeline.jpg and the whole sticker file and asks whether it shows any of the things the rule names from the photo (the bag's kraft paper texture, the outline or edges of the bag, the wooden table, the plant, or the bowl); it fails when both answers list one and passes when both find none."
+  },
+  {
+   "check_id": "VECTOR-04/sticker-proof-window-mark/H007",
+   "output_id": "sticker-proof-window-mark",
+   "rule_id": "R118",
+   "k_id": "K2_Q4",
+   "critical": false,
+   "check": "“Transparent sticker proof - Window mark” (sticker-proof-window-mark.png) shows only the painted mark, with no glass pane, window frame, cafe interior or street scene from meridian_window_mark.jpg.",
+   "assertion": {
+    "op": "vlm_list_r5v",
+    "question": "Image 1 is a street photograph of a sign painted on a cafe window. Image 2 is the delivered sticker file made from the painted sign; everything visible in image 2 counts, including anything around or behind the sticker shape. Does image 2 show any of these things from the photograph: the glass pane or reflections in it, the window frame, the cafe interior, or the street scene? A plain flat-coloured backing shape behind the art (the sticker's own die-cut base) does not count. List each of these things you find in image 2. answer yes if you find any, no if image 2 shows none of them.",
+    "none_found": "pass",
+    "images": [
+     {
+      "src": "asset:meridian_window_mark.jpg",
+      "max_side": 1024,
+      "label": "Image 1: the photograph"
+     },
+     {
+      "src": "deliverable",
+      "label": "Image 2: the sticker",
+      "ground": "#FFFFFF"
+     }
+    ],
+    "how": "Shows the vision model meridian_window_mark.jpg and the whole sticker file and asks whether it shows any of the things the rule names from the photo (the glass pane or reflections in it, the window frame, the cafe interior, or the street scene); it fails when both answers list one and passes when both find none."
+   },
+   "how": "Shows the vision model meridian_window_mark.jpg and the whole sticker file and asks whether it shows any of the things the rule names from the photo (the glass pane or reflections in it, the window frame, the cafe interior, or the street scene); it fails when both answers list one and passes when both find none."
+  },
+  {
+   "check_id": "VECTOR-04/recovered-sticker-window-mark/H009",
+   "output_id": "recovered-sticker-window-mark",
+   "rule_id": "R120",
+   "k_id": "K2_Q4",
+   "critical": false,
+   "check": "“Recovered sticker artwork - Window mark” (recovered-sticker-window-mark.svg) carries only the painted mark, with no glass pane, window frame, cafe interior or street scene traced from meridian_window_mark.jpg.",
+   "assertion": {
+    "op": "vlm_list_r5v",
+    "question": "Image 1 is a street photograph of a sign painted on a cafe window. Image 2 is the delivered sticker file made from the painted sign; everything visible in image 2 counts, including anything around or behind the sticker shape. Does image 2 show any of these things from the photograph: the glass pane or reflections in it, the window frame, the cafe interior, or the street scene? A plain flat-coloured backing shape behind the art (the sticker's own die-cut base) does not count. List each of these things you find in image 2. answer yes if you find any, no if image 2 shows none of them.",
+    "none_found": "pass",
+    "images": [
+     {
+      "src": "asset:meridian_window_mark.jpg",
+      "max_side": 1024,
+      "label": "Image 1: the photograph"
+     },
+     {
+      "src": "deliverable",
+      "label": "Image 2: the sticker",
+      "svg_ground": "#FFFFFF"
+     }
+    ],
+    "how": "Shows the vision model meridian_window_mark.jpg and the whole sticker file and asks whether it shows any of the things the rule names from the photo (the glass pane or reflections in it, the window frame, the cafe interior, or the street scene); it fails when both answers list one and passes when both find none."
+   },
+   "how": "Shows the vision model meridian_window_mark.jpg and the whole sticker file and asks whether it shows any of the things the rule names from the photo (the glass pane or reflections in it, the window frame, the cafe interior, or the street scene); it fails when both answers list one and passes when both find none."
+  },
+  {
+   "check_id": "VECTOR-04/recovered-sticker-bag-design-1/H006",
+   "output_id": "recovered-sticker-bag-design-1",
+   "rule_id": "R121",
+   "k_id": "K2_Q4",
+   "critical": false,
+   "check": "“Recovered sticker artwork - Bag design 1” (recovered-sticker-bag-design-1.svg) carries only the printed drawing, with no kraft paper texture, bag outline, wood, scoop or coffee beans traced from meridian_bag_moth.jpg.",
+   "assertion": {
+    "op": "vlm_list_r5v",
+    "question": "Image 1 is a photograph of a coffee bag on a table, with a drawing printed on the bag. Image 2 is the delivered sticker file made from that printed drawing; everything visible in image 2 counts, including anything around or behind the sticker shape. Does image 2 show any of these things from the photograph: the bag's kraft paper texture, the outline or edges of the bag, the wooden table, the coffee scoop, or coffee beans? A plain flat-coloured backing shape behind the art (the sticker's own die-cut base) does not count. List each of these things you find in image 2. answer yes if you find any, no if image 2 shows none of them.",
+    "none_found": "pass",
+    "images": [
+     {
+      "src": "asset:meridian_bag_moth.jpg",
+      "max_side": 1024,
+      "label": "Image 1: the photograph"
+     },
+     {
+      "src": "deliverable",
+      "label": "Image 2: the sticker",
+      "svg_ground": "#FFFFFF"
+     }
+    ],
+    "how": "Shows the vision model meridian_bag_moth.jpg and the whole sticker file and asks whether it shows any of the things the rule names from the photo (the bag's kraft paper texture, the outline or edges of the bag, the wooden table, the coffee scoop, or coffee beans); it fails when both answers list one and passes when both find none."
+   },
+   "how": "Shows the vision model meridian_bag_moth.jpg and the whole sticker file and asks whether it shows any of the things the rule names from the photo (the bag's kraft paper texture, the outline or edges of the bag, the wooden table, the coffee scoop, or coffee beans); it fails when both answers list one and passes when both find none."
   },
   {
    "check_id": "VECTOR-04/recovered-sticker-window-mark/H005",

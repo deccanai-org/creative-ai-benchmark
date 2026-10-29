@@ -4,8 +4,8 @@
  "source": "docs/gatsby-v7/tasks/PHOTO-10/TASK_SPEC.json verifiers_human",
  "check_count": 630,
  "rule_count": 107,
- "checks_for_people": 452,
- "checks_by_code": 178,
+ "checks_for_people": 295,
+ "checks_by_code": 335,
  "rules": [
   {
    "rule_id": "R001",
@@ -50,8 +50,11 @@
     ],
     "note": "Brief, pinned: each garment keeps the colour it was photographed in, and any colourway name it carries is one northgrove_colourways.csv approves for that style and whose line in northgrove_copy.txt describes that colour. northgrove_colourways.csv: \"Loopback Crew; Heavyweight Tee\" is the carrier_styles value on every row. northgrove_copy.txt: \"an undyed-looking pale neutral.\" The garment in northgrove_style_01_loopback_crew.jpg reads about #C5C1BB at its centre. Brand identity typography example: Loopback Crew, Oat. Naming no colourway also passes. northgrove_colourways.csv approves it for this style and its northgrove_copy.txt line fits the colour in northgrove_style_01_loopback_crew.jpg."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Asks the vision model to copy every colourway name printed on the page; code checks any is Oat."
+   ],
+   "answered_with": "vision model",
    "rows": [
     {
      "check_id": "PHOTO-10/style-pdp-northgrove-style-01-loopback-crew/H002",
@@ -124,8 +127,11 @@
     ],
     "note": "Brief, pinned: each garment keeps the colour it was photographed in, and any colourway name it carries is one northgrove_colourways.csv approves for that style and whose line in northgrove_copy.txt describes that colour. northgrove_colourways.csv: \"Loopback Crew; Heavyweight Tee\" is the carrier_styles value on every row. northgrove_copy.txt: \"a soft grey-green, dyed in small lots.\" northgrove_copy.txt: \"a deeper forest green.\" The garment in northgrove_style_02_heavy_tee.jpg reads about #59573F at its centre. Neither line settles the olive tee more closely than the other, so either passes; naming no colourway also passes. northgrove_colourways.csv approves it for this style and its northgrove_copy.txt line fits the colour in northgrove_style_02_heavy_tee.jpg."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Asks the vision model to copy every colourway name printed on the page; code checks any is Moss or Fern."
+   ],
+   "answered_with": "vision model",
    "rows": [
     {
      "check_id": "PHOTO-10/style-pdp-northgrove-style-02-heavy-tee/H002",
@@ -194,6 +200,7 @@
    "code_check": [
     "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-10/style-pdp-northgrove-style-01-loopback-crew/H010",
@@ -376,8 +383,11 @@
     ],
     "note": "northgrove_copy.txt: \"SIZE RUN: XS S M L XL XXL.\""
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Asks the vision model to copy every text on the file and, separately, every size run; code checks that any size run reads XS S M L XL XXL."
+   ],
+   "answered_with": "vision model",
    "rows": [
     {
      "check_id": "PHOTO-10/style-pdp-northgrove-style-01-loopback-crew/H012",
@@ -845,8 +855,11 @@
     ],
     "note": "northgrove_colourways.csv, field colourway_name: Moss, Bark, Slate, Oat, Ink, Clay, Fern. Truth constraint: Do not invent names, prices, claims, product features, locations, credentials, records, or documentary events that are absent from the approved inputs. northgrove_copy.txt: \"COLOURWAY STORIES (one line each, for the product page and the tall post)\""
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Asks the vision model to copy every colourway name printed on the page, keeping any misspelling; code checks each is spelled as in northgrove_colourways.csv."
+   ],
+   "answered_with": "vision model",
    "rows": [
     {
      "check_id": "PHOTO-10/capsule-carousel-p01/H007",
@@ -1029,8 +1042,11 @@
     ],
     "note": "northgrove_copy.txt: \"COLOURWAY STORIES (one line each, for the product page and the tall post)\" northgrove_colourways.csv: \"Loopback Crew; Heavyweight Tee\" is the carrier_styles value on every row. northgrove_copy.txt: \"an undyed-looking pale neutral.\" northgrove_copy.txt: \"a soft grey-green, dyed in small lots.\" northgrove_copy.txt: \"a deeper forest green.\" The same answers as the product-page modules' H002 checks."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Gives the vision model the page and the supplied Loopback Crew photo and asks it to copy any colour name labelling that garment; code checks it is Oat."
+   ],
+   "answered_with": "vision model",
    "rows": [
     {
      "check_id": "PHOTO-10/capsule-carousel-p01/H009",
@@ -1249,8 +1265,11 @@
     ],
     "note": "northgrove_copy.txt: \"COLOURWAY STORIES (one line each, for the product page and the tall post)\""
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Asks the vision model to copy every colourway story printed on the page; code checks each is word for word a northgrove_copy.txt story line."
+   ],
+   "answered_with": "vision model",
    "rows": [
     {
      "check_id": "PHOTO-10/capsule-carousel-p01/H010",
@@ -1545,8 +1564,11 @@
     ],
     "note": "Brief, pinned: the approved shopping action is our tall post line. northgrove_copy.txt: \"Tall post: 'The capsule is live.'\""
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Asks the vision model to copy every text on the page; code joins the lines and checks they contain The capsule is live. word for word."
+   ],
+   "answered_with": "vision model",
    "rows": [
     {
      "check_id": "PHOTO-10/capsule-carousel-p06/H001",
@@ -1603,8 +1625,11 @@
     ],
     "note": "northgrove_copy.txt: \"COLOURWAY STORIES (one line each, for the product page and the tall post)\""
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Asks the vision model to copy every colourway story printed on the page; code checks each is word for word a northgrove_copy.txt story line."
+   ],
+   "answered_with": "vision model",
    "rows": [
     {
      "check_id": "PHOTO-10/style-pdp-northgrove-style-02-heavy-tee/H007",
@@ -1672,6 +1697,7 @@
    "code_check": [
     "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-10/style-pdp-northgrove-style-03-raglan/H007",
@@ -1773,8 +1799,11 @@
     ],
     "note": "northgrove_copy.txt: \"COLOURWAY STORIES (one line each, for the product page and the tall post)\""
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Asks the vision model to copy every colourway story printed on the page; code checks each is word for word a northgrove_copy.txt story line."
+   ],
+   "answered_with": "vision model",
    "rows": [
     {
      "check_id": "PHOTO-10/style-pdp-northgrove-style-01-loopback-crew/H009",
@@ -1914,8 +1943,11 @@
     ],
     "note": "northgrove_copy.txt: \"COLOURWAY STORIES (one line each, for the product page and the tall post)\" northgrove_colourways.csv: \"Loopback Crew; Heavyweight Tee\" is the carrier_styles value on every row. northgrove_copy.txt: \"an undyed-looking pale neutral.\" northgrove_copy.txt: \"a soft grey-green, dyed in small lots.\" northgrove_copy.txt: \"a deeper forest green.\" The same answers as the product-page modules' H002 checks."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Gives the vision model the page and the supplied Heavyweight Tee photo and asks it to copy any colour name labelling that garment; code checks it is Moss or Fern."
+   ],
+   "answered_with": "vision model",
    "rows": [
     {
      "check_id": "PHOTO-10/capsule-carousel-p01/H071",
@@ -2329,8 +2361,11 @@
     ],
     "note": "northgrove_colourways.csv: \"Loopback Crew; Heavyweight Tee\" is the carrier_styles value on every row, so no colourway is approved for the Raglan, Henley, Hoodie or Supporters' Crew. Truth constraint: Do not invent names, prices, claims, product features, locations, credentials, records, or documentary events that are absent from the approved inputs."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Asks the vision model to copy every colour name printed on the page; any found fails, since no colourway is approved for this style."
+   ],
+   "answered_with": "vision model",
    "rows": [
     {
      "check_id": "PHOTO-10/style-pdp-northgrove-style-03-raglan/H005",
@@ -2457,8 +2492,11 @@
     ],
     "note": "northgrove_copy.txt: \"Loopback Crew / Raglan / Hoodie: 80/20 loopback cotton, 340 gsm.\" northgrove_copy.txt: \"Heavyweight Tee / Henley: 100% combed cotton jersey, 180 gsm.\" Neither line names the Supporters' Crew. Production requirement: Do not invent claims, prices, dates, credentials or product features."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Asks the vision model to copy every text on the Supporters' Crew page and, separately, to list any fabric description; any fabric line found fails."
+   ],
+   "answered_with": "vision model",
    "rows": [
     {
      "check_id": "PHOTO-10/style-pdp-northgrove-style-06-supporters-crew/H006",
@@ -2519,8 +2557,11 @@
     ],
     "note": "Production requirement: Do not invent claims, prices, dates, credentials or product features. Truth constraint: Do not invent names, prices, claims, product features, locations, credentials, records, or documentary events that are absent from the approved inputs."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Asks the vision model to copy every line of text and, separately, to list any price; passes only when every line is one already traced to northgrove_copy.txt, northgrove_colourways.csv or Burlington, Vermont and no price is listed."
+   ],
+   "answered_with": "vision model",
    "rows": [
     {
      "check_id": "PHOTO-10/style-pdp-northgrove-style-01-loopback-crew/H014",
@@ -2688,8 +2729,11 @@
     "1": "source image"
    },
    "shared_reference": null,
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Asks the vision model whether the same garment is shown more than once in different colours."
+   ],
+   "answered_with": "vision model",
    "rows": [
     {
      "check_id": "PHOTO-10/style-pdp-northgrove-style-01-loopback-crew/H015",
@@ -2996,8 +3040,11 @@
     ],
     "note": "northgrove_copy.txt: \"Loopback Crew / Raglan / Hoodie: 80/20 loopback cotton, 340 gsm.\" northgrove_copy.txt: \"Heavyweight Tee / Henley: 100% combed cotton jersey, 180 gsm.\" Neither line names the Supporters' Crew. Production requirement: Do not invent claims, prices, dates, credentials or product features."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Gives the vision model the page and the supplied Supporters' Crew photo and asks it to list any fabric line given for that garment; any found fails."
+   ],
+   "answered_with": "vision model",
    "rows": [
     {
      "check_id": "PHOTO-10/capsule-carousel-p01/H013",
@@ -3136,8 +3183,11 @@
     "assets": [],
     "note": "Truth constraint: Color variants are approval concepts until physical samples are photographed and signed off. Brief: customers choose between colours and fabrics, so a polished set that changes either of those is not useful to us."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Asks the vision model whether the same garment is shown more than once in different colours."
+   ],
+   "answered_with": "vision model",
    "rows": [
     {
      "check_id": "PHOTO-10/capsule-carousel-p01/H017",
@@ -3255,8 +3305,11 @@
     ],
     "note": "northgrove_colourways.csv, field colourway_name: Moss, Bark, Slate, Oat, Ink, Clay, Fern. Truth constraint: Do not invent names, prices, claims, product features, locations, credentials, records, or documentary events that are absent from the approved inputs. northgrove_copy.txt: \"COLOURWAY STORIES (one line each, for the product page and the tall post)\""
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Asks the vision model to copy every colour name printed on the page; code checks each is the style's approved colourway name or a colour word of its northgrove_copy.txt story."
+   ],
+   "answered_with": "vision model",
    "rows": [
     {
      "check_id": "PHOTO-10/style-pdp-northgrove-style-01-loopback-crew/H008",
@@ -3340,8 +3393,11 @@
     ],
     "note": "Client brief and production requirements: colourway names only from northgrove_colourways.csv; stories only from northgrove_copy.txt."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Asks the vision model to copy every colour name printed on the page; code checks each is a northgrove_colourways.csv colourway or a colour word of its story."
+   ],
+   "answered_with": "vision model",
    "rows": [
     {
      "check_id": "PHOTO-10/capsule-carousel-p01/H076",
@@ -3504,8 +3560,11 @@
    ],
    "slot_labels": {},
    "shared_reference": null,
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Asks the vision model to copy every text on the file and, separately, to list any line naming a northgrove_colourways.csv colourway (Moss, Bark, Slate, Oat, Ink, Clay or Fern); any found fails."
+   ],
+   "answered_with": "vision model",
    "rows": [
     {
      "check_id": "PHOTO-10/style-pdp-northgrove-style-03-raglan/H002",
@@ -3640,8 +3699,11 @@
     ],
     "note": "Production requirement: Do not invent claims, prices, dates, credentials or product features. northgrove_copy.txt, northgrove_colourways.csv and northgrove_placements.txt carry no price. Brand type system rule: The price is always Libre Franklin Medium at 24 px, never the display face."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Asks the vision model to copy every text on the file and, separately, to list any price; any price found fails."
+   ],
+   "answered_with": "vision model",
    "rows": [
     {
      "check_id": "PHOTO-10/style-pdp-northgrove-style-01-loopback-crew/H013",
@@ -4004,8 +4066,11 @@
     ],
     "note": "Production requirement: Do not invent claims, prices, dates, credentials or product features. northgrove_copy.txt, northgrove_colourways.csv and northgrove_placements.txt carry no price. Brand type system rule: The price is always Libre Franklin Medium at 24 px, never the display face."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Asks the vision model to copy every text on the file and, separately, to list any price; any price found fails."
+   ],
+   "answered_with": "vision model",
    "rows": [
     {
      "check_id": "PHOTO-10/capsule-carousel-p01/H006",
@@ -4216,8 +4281,11 @@
     ],
     "note": "northgrove_colourways.csv: \"Loopback Crew; Heavyweight Tee\" is the carrier_styles value on every row, so no colourway is approved for the Raglan, Henley, Hoodie or Supporters' Crew. Truth constraint: Do not invent names, prices, claims, product features, locations, credentials, records, or documentary events that are absent from the approved inputs."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Gives the vision model the page and the supplied photos of the Raglan, Henley, Hoodie and Supporters' Crew and asks it to list any colour name labelling them; any found fails."
+   ],
+   "answered_with": "vision model",
    "rows": [
     {
      "check_id": "PHOTO-10/capsule-carousel-p01/H008",
@@ -4928,6 +4996,7 @@
    "code_check": [
     "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-10/style-pdp-northgrove-style-01-loopback-crew/H011",
@@ -5173,6 +5242,7 @@
    "code_check": [
     "Searches the deliverable for every supplied photo and checks only the expected one is found."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-10/style-pdp-northgrove-style-01-loopback-crew/H005",
@@ -7946,6 +8016,7 @@
    "code_check": [
     "Finds the largest flat area outside the photographs and reads its colour."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-10/style-pdp-northgrove-style-06-supporters-crew/H017",
@@ -8005,6 +8076,7 @@
    "code_check": [
     "Leaves out every placed photograph as a whole frame, then reads every flat colour left and checks each is a palette colour."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-10/style-pdp-northgrove-style-01-loopback-crew/H020",
@@ -8198,6 +8270,7 @@
    "code_check": [
     "Finds every piece in the colour outside the photographs and checks it is a thin rule or sits inside a small label."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-10/style-pdp-northgrove-style-01-loopback-crew/H022",
@@ -8408,6 +8481,7 @@
    "code_check": [
     "Reads the wordmark by OCR, then the colour of its letters and of the symbol beside it."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-10/style-pdp-northgrove-style-01-loopback-crew/H031",
@@ -8784,6 +8858,7 @@
    "code_check": [
     "Finds the largest flat area outside the photographs and reads its colour."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-10/capsule-carousel-p01/H026",
@@ -8962,6 +9037,7 @@
    "code_check": [
     "Finds the largest flat area outside the photographs and reads its colour."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-10/style-pdp-northgrove-style-01-loopback-crew/H019",
@@ -9191,6 +9267,7 @@
    "code_check": [
     "Reads each selected text line by OCR, then the colour of its letters and of the ground behind it."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-10/style-pdp-northgrove-style-01-loopback-crew/H050",
@@ -9293,6 +9370,7 @@
    "code_check": [
     "Runs the check for every supplied photo found in the deliverable."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-10/style-pdp-northgrove-style-01-loopback-crew/H051",
@@ -9486,6 +9564,7 @@
    "code_check": [
     "Reads each selected text line by OCR, then the colour of its letters and of the ground behind it."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-10/style-pdp-northgrove-style-06-supporters-crew/H049",
@@ -9614,6 +9693,7 @@
    "code_check": [
     "Measures the share of the area outside the photographs in the named colours."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-10/style-pdp-northgrove-style-01-loopback-crew/H054",
@@ -9903,8 +9983,11 @@
     "assets": [],
     "note": "Palette, Club Navy: \"Everything on it, type and the whole reversed mark, is Off White.\""
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Looks for the ground colour in every pixel of the image; with none there, no type sits on it; otherwise reads each text line on that ground and the colour of its letters."
+   ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-10/style-pdp-northgrove-style-06-supporters-crew/H054",
@@ -10164,6 +10247,7 @@
    "code_check": [
     "Reads the wordmark by OCR, then the colour of its letters and of the symbol beside it."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-10/style-pdp-northgrove-style-01-loopback-crew/H057",
@@ -10404,6 +10488,7 @@
    "code_check": [
     "Reads the wordmark by OCR, then the colour of its letters and of the symbol beside it."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-10/style-pdp-northgrove-style-06-supporters-crew/H058",
@@ -10612,6 +10697,7 @@
    "code_check": [
     "Reads the wordmark by OCR, then the colour of its letters and of the symbol beside it."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-10/capsule-carousel-p01/H074",
@@ -10667,6 +10753,7 @@
    "code_check": [
     "Looks for the colour as a flat area or as the ink of a text line outside the photographs."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-10/style-pdp-northgrove-style-01-loopback-crew/H058",
@@ -10778,6 +10865,7 @@
    "code_check": [
     "Finds every flat area in the colour and checks it sits by the named photograph or line."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-10/style-pdp-northgrove-style-06-supporters-crew/H060",
@@ -12331,8 +12419,11 @@
     "assets": [],
     "note": "Palette rules, forbidden: no gold, foil, metallic or gloss effect. Brand type system rule: Nothing may read as cheaper or as more luxury than the parcel actually is."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Asks the vision model whether any type, panel, rule, icon or logo has a gold, foil, metallic or gloss effect."
+   ],
+   "answered_with": "vision model",
    "rows": [
     {
      "check_id": "PHOTO-10/style-pdp-northgrove-style-01-loopback-crew/H023",
@@ -12522,8 +12613,11 @@
     "assets": [],
     "note": "Type system step 04: fine print is Libre Franklin Regular at 14 px, set proportionate under the 20 px body."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Runs the check under a narrow and a broad reading of the definition and answers only when both agree."
+   ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-10/style-pdp-northgrove-style-01-loopback-crew/H026",
@@ -12718,8 +12812,11 @@
     ],
     "note": "Brand type system rules: Nothing may read as cheaper or as more luxury than the parcel actually is. Name the cloth and the cut and leave the adjectives out. northgrove_copy.txt: \"COLOURWAY STORIES (one line each, for the product page and the tall post)\""
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Asks the vision model to copy every line of text and, separately, to list any luxury, bargain or superlative wording; passes only when every line is one already judged free of them and nothing but the approved brand line is listed."
+   ],
+   "answered_with": "vision model",
    "rows": [
     {
      "check_id": "PHOTO-10/style-pdp-northgrove-style-01-loopback-crew/H028",
@@ -13367,6 +13464,7 @@
    "code_check": [
     "Searches the deliverable for the supplied file (feature matching, confirmed by correlation), then checks it keeps its own proportions."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-10/style-pdp-northgrove-style-01-loopback-crew/H001",
@@ -13749,6 +13847,7 @@
    "code_check": [
     "Reads the wordmark by OCR, then the colour of its letters and of the symbol beside it."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-10/style-pdp-northgrove-style-01-loopback-crew/H029",
@@ -14641,8 +14740,11 @@
     ],
     "note": "Brand identity: the mark needs recovering as real artwork before it can go on cards or launch pieces. northgrove_mark.png holds the olive leaf and the NORTHGROVE wordmark, whose letters carry enclosed counters, lifted off a lookbook page."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Asks the vision model to copy the logo's lettering letter by letter; code checks it reads NORTHGROVE with all ten letters."
+   ],
+   "answered_with": "vision model",
    "rows": [
     {
      "check_id": "PHOTO-10/style-pdp-northgrove-style-01-loopback-crew/H033",
@@ -14883,6 +14985,7 @@
    "code_check": [
     "Reads the wordmark by OCR and compares the shape and proportions of its letters with the supplied mark."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-10/style-pdp-northgrove-style-01-loopback-crew/H034",
@@ -15875,6 +15978,7 @@
    "code_check": [
     "Finds the supplied photo in the deliverable, maps the placement back onto it and compares tiles, colour, tone or fine detail."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-10/style-pdp-northgrove-style-01-loopback-crew/H016",
@@ -16021,8 +16125,11 @@
     ],
     "note": "Brief: Use northgrove_mark_transparent.svg or northgrove_mark_reversed.svg, or their matching transparent PNGs; use the supplied olive-leaf mark unchanged. Brand typography: place the supplied logo unchanged; do not retype NORTHGROVE, close up its letters or move its leaf. The four mark files were rebuilt 2026-10-21 with the olive leaf."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Asks the vision model whether a leaf is printed beside the wordmark."
+   ],
+   "answered_with": "vision model",
    "rows": [
     {
      "check_id": "PHOTO-10/capsule-carousel-p01/H002",
@@ -16215,8 +16322,11 @@
     ],
     "note": "Brand identity: the mark needs recovering as real artwork before it can go on cards or launch pieces. northgrove_mark.png holds the olive leaf and the NORTHGROVE wordmark, whose letters carry enclosed counters, lifted off a lookbook page."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Asks the vision model to copy the logo's lettering letter by letter; code checks it reads NORTHGROVE with all ten letters."
+   ],
+   "answered_with": "vision model",
    "rows": [
     {
      "check_id": "PHOTO-10/capsule-carousel-p01/H040",
@@ -16623,6 +16733,7 @@
    "code_check": [
     "Reads the wordmark by OCR, finds the enclosed counters of its letters and checks each shows the ground round the mark."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-10/style-pdp-northgrove-style-01-loopback-crew/H060",
@@ -16916,6 +17027,7 @@
    "code_check": [
     "Compares text sizes (font size in PDFs, letter height on images)."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-10/style-pdp-northgrove-style-01-loopback-crew/H035",
@@ -17032,8 +17144,11 @@
     ],
     "note": "Brief, pinned: the closing page carries the approved shopping action. northgrove_copy.txt: \"Tall post: 'The capsule is live.'\" Type system step 01 note: Carousel headline. The wordmark sets here in the same face and the same closed tracking."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Asks the vision model to copy the text set in the largest letters, leaving out the wordmark; code checks it is The capsule is live."
+   ],
+   "answered_with": "vision model",
    "rows": [
     {
      "check_id": "PHOTO-10/capsule-carousel-p06/H002",

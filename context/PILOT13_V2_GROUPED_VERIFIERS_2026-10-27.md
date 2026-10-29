@@ -191,3 +191,22 @@ heavy runs moved to a GCP VM after the laptop overloaded (same paths and pins; r
   could answer (not started; needs Dhiren's choice of model); the rest are judgement or measurements neither code nor a
   vision model can make reliably (typeface on small raster text, subtle edits, perceived colour casts).
 
+## Round 5: close calls and the vision model (2026-10-29)
+
+- Dhiren asked for round 5 ("do which u are 100% confident about only") and, in parallel, a vision-model pass for the
+  objective look, count and read checks, with his OpenRouter key; Gemini 3.8 Flash was kept after it answered 23 of 23
+  known-answer questions right ("if this works its enough").
+- Code: 10 close-call rules (68 checks) now decide every row they can read with certainty.
+- Vision model: 109 rules (445 checks). Each question is asked twice (seeds 11 and 23, temperature 0, pinned to Google
+  Vertex) and both answers must agree; the model copies, counts or lists without seeing the expected answer and code
+  compares; an absence passes only for rules proven on planted copies; answers are saved and replayed (2,660 used,
+  `vlm_answers/`, no key inside). Spend $8.39.
+- Tests: real outputs; made sets plus bad5; 72 planted copies of real PHOTO deliverables. Every round-5 rule has zero
+  wrong answers; bad5 sent 6 earlier rules (25 checks) back to people because they over-read an extra act name or a
+  covered word.
+- Result: 4,631 of 6,312 human checks (1,041 rules) answered automatically (4,186 code, 445 vision model); 1,681 left for
+  people; with the 1,111 automatic checks, 5,742 of 7,423 checks are answered automatically.
+- Open for Dhiren: vision-model absence passes (proven on planted copies) or a person; letter-case policy (it kept several
+  vision rules with people, e.g. seasons printed as SPRING); PHOTO-19 R074 face model download; step 7 (TASK_SPEC, V7
+  site, Sheet, verify_outputs.py) only with approval.
+

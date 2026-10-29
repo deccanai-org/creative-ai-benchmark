@@ -736,6 +736,36 @@
    "how": "Reads the names set with a price on their own row and checks the list, or that nothing else sits inside the block."
   },
   {
+   "check_id": "PHOTO-28/studio-launch/H065",
+   "output_id": "studio-launch",
+   "rule_id": "R014",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "“Studio launch-page composition” (studio-launch.png) shows a booking action: a button or line telling the viewer how to book.",
+   "assertion": {
+    "op": "vlm_yesno_r5v",
+    "pass_on": "yes",
+    "question": "Does this image show a booking action: a button, or a line of text, that tells the viewer how to book (for example a \"Book a class\" button or a booking web address)? answer yes or no.",
+    "how": "Asks the vision model whether the image shows a booking button or a line telling the viewer how to book."
+   },
+   "how": "Asks the vision model whether the image shows a booking button or a line telling the viewer how to book."
+  },
+  {
+   "check_id": "PHOTO-28/booking-story/H061",
+   "output_id": "booking-story",
+   "rule_id": "R014",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "“Studio booking story” (booking-story.png) shows a booking action: a button or line telling the viewer how to book.",
+   "assertion": {
+    "op": "vlm_yesno_r5v",
+    "pass_on": "yes",
+    "question": "Does this image show a booking action: a button, or a line of text, that tells the viewer how to book (for example a \"Book a class\" button or a booking web address)? answer yes or no.",
+    "how": "Asks the vision model whether the image shows a booking button or a line telling the viewer how to book."
+   },
+   "how": "Asks the vision model whether the image shows a booking button or a line telling the viewer how to book."
+  },
+  {
    "check_id": "PHOTO-28/class-feed/H063",
    "output_id": "class-feed",
    "rule_id": "R015",
@@ -1271,6 +1301,21 @@
     "optional": true
    },
    "how": "Reads where each value stands and checks the value that belongs to this name (by its section, column or line) is the expected one."
+  },
+  {
+   "check_id": "PHOTO-28/studio-launch/H003",
+   "output_id": "studio-launch",
+   "rule_id": "R033",
+   "k_id": "K1_Q3",
+   "critical": false,
+   "check": "The booking action on “Studio launch-page composition” (studio-launch.png) stays fully inside the 1440 x 2400 image edges and does not run off any edge.",
+   "assertion": {
+    "op": "vlm_yesno_r5v",
+    "pass_on": "no",
+    "question": "Find the booking action on this image (the button or line of text that tells the viewer how to book). Does any part of it, its button shape or its text, run off an edge of the image, so that part of it is cut off? answer yes if part of it is cut off at an edge, no if it lies fully inside the image.",
+    "how": "Asks the vision model whether any part of the booking button or line is cut off at an image edge; it passes when the model finds none."
+   },
+   "how": "Asks the vision model whether any part of the booking button or line is cut off at an image edge; it passes when the model finds none."
   },
   {
    "check_id": "PHOTO-28/booking-story/H002",
@@ -1842,6 +1887,60 @@
     ]
    },
    "how": "Reads the type by OCR or from the PDF, leaving out lettering inside the supplied photos, and looks for the wording."
+  },
+  {
+   "check_id": "PHOTO-28/studio-launch/H009",
+   "output_id": "studio-launch",
+   "rule_id": "R047",
+   "k_id": "K1_Q5",
+   "critical": true,
+   "check": "“Studio launch-page composition” (studio-launch.png) states no opening date or month: September and October have both slipped, and no new date is fixed.",
+   "assertion": {
+    "op": "vlm_items_r5vb",
+    "none_found": "pass",
+    "bad_rx": [
+     "(?:open|launch|doors).*(?:\\b(?:jan|feb|mar|apr|may|jun|jul|aug|sep|sept|oct|nov|dec)\\b|\\b(?:january|february|march|april|june|july|august|september|october|november|december)\\b|\\b\\d{1,2}[/.]\\d{1,2}\\b|\\b20\\d\\d\\b|\\b\\d{1,2}(?:st|nd|rd|th)?\\s+(?:of\\s)?[a-z]{3,9}\\b)|(?:\\b(?:jan|feb|mar|apr|may|jun|jul|aug|sep|sept|oct|nov|dec)\\b|\\b(?:january|february|march|april|june|july|august|september|october|november|december)\\b|\\b\\d{1,2}[/.]\\d{1,2}\\b|\\b20\\d\\d\\b|\\b\\d{1,2}(?:st|nd|rd|th)?\\s+(?:of\\s)?[a-z]{3,9}\\b).*(?:open|launch)"
+    ],
+    "question": "Copy every piece of text on this image that states when the studio opens or launches: an opening or launch date, day, month, season or year. answer yes if there is any, no if there is none.",
+    "how": "Asks the vision model to copy any text stating when the studio opens; a copied opening date or month fails, anything else goes to a person."
+   },
+   "how": "Asks the vision model to copy any text stating when the studio opens; a copied opening date or month fails, anything else goes to a person."
+  },
+  {
+   "check_id": "PHOTO-28/class-feed/H017",
+   "output_id": "class-feed",
+   "rule_id": "R047",
+   "k_id": "K1_Q5",
+   "critical": true,
+   "check": "“Class announcement” (class-feed.png) states no opening date or month: September and October have both slipped, and no new date is fixed.",
+   "assertion": {
+    "op": "vlm_items_r5vb",
+    "none_found": "pass",
+    "bad_rx": [
+     "(?:open|launch|doors).*(?:\\b(?:jan|feb|mar|apr|may|jun|jul|aug|sep|sept|oct|nov|dec)\\b|\\b(?:january|february|march|april|june|july|august|september|october|november|december)\\b|\\b\\d{1,2}[/.]\\d{1,2}\\b|\\b20\\d\\d\\b|\\b\\d{1,2}(?:st|nd|rd|th)?\\s+(?:of\\s)?[a-z]{3,9}\\b)|(?:\\b(?:jan|feb|mar|apr|may|jun|jul|aug|sep|sept|oct|nov|dec)\\b|\\b(?:january|february|march|april|june|july|august|september|october|november|december)\\b|\\b\\d{1,2}[/.]\\d{1,2}\\b|\\b20\\d\\d\\b|\\b\\d{1,2}(?:st|nd|rd|th)?\\s+(?:of\\s)?[a-z]{3,9}\\b).*(?:open|launch)"
+    ],
+    "question": "Copy every piece of text on this image that states when the studio opens or launches: an opening or launch date, day, month, season or year. answer yes if there is any, no if there is none.",
+    "how": "Asks the vision model to copy any text stating when the studio opens; a copied opening date or month fails, anything else goes to a person."
+   },
+   "how": "Asks the vision model to copy any text stating when the studio opens; a copied opening date or month fails, anything else goes to a person."
+  },
+  {
+   "check_id": "PHOTO-28/booking-story/H008",
+   "output_id": "booking-story",
+   "rule_id": "R047",
+   "k_id": "K1_Q5",
+   "critical": true,
+   "check": "“Studio booking story” (booking-story.png) states no opening date or month: September and October have both slipped, and no new date is fixed.",
+   "assertion": {
+    "op": "vlm_items_r5vb",
+    "none_found": "pass",
+    "bad_rx": [
+     "(?:open|launch|doors).*(?:\\b(?:jan|feb|mar|apr|may|jun|jul|aug|sep|sept|oct|nov|dec)\\b|\\b(?:january|february|march|april|june|july|august|september|october|november|december)\\b|\\b\\d{1,2}[/.]\\d{1,2}\\b|\\b20\\d\\d\\b|\\b\\d{1,2}(?:st|nd|rd|th)?\\s+(?:of\\s)?[a-z]{3,9}\\b)|(?:\\b(?:jan|feb|mar|apr|may|jun|jul|aug|sep|sept|oct|nov|dec)\\b|\\b(?:january|february|march|april|june|july|august|september|october|november|december)\\b|\\b\\d{1,2}[/.]\\d{1,2}\\b|\\b20\\d\\d\\b|\\b\\d{1,2}(?:st|nd|rd|th)?\\s+(?:of\\s)?[a-z]{3,9}\\b).*(?:open|launch)"
+    ],
+    "question": "Copy every piece of text on this image that states when the studio opens or launches: an opening or launch date, day, month, season or year. answer yes if there is any, no if there is none.",
+    "how": "Asks the vision model to copy any text stating when the studio opens; a copied opening date or month fails, anything else goes to a person."
+   },
+   "how": "Asks the vision model to copy any text stating when the studio opens; a copied opening date or month fails, anything else goes to a person."
   },
   {
    "check_id": "PHOTO-28/class-feed/H002",
@@ -3235,57 +3334,69 @@
    "critical": false,
    "check": "On “Studio launch-page composition” (studio-launch.png), all type on Warm Off White #F4F0E8 is Soft Ink #33352E; only short labels, like the passcard_2025_print.pdf field labels, may be Sage.",
    "assertion": {
-    "op": "v2_type_ink_pb",
-    "grounds": [
-     "#F4F0E8"
+    "op": "v2_small_labels_r5c",
+    "check": {
+     "op": "v2_type_ink_pb",
+     "grounds": [
+      "#F4F0E8"
+     ],
+     "colors": [
+      "#33352E"
+     ],
+     "allow": [
+      {
+       "roles": [
+        "label"
+       ],
+       "max_words": 3,
+       "colors": [
+        "#33352E",
+        "#9CA98F"
+       ]
+      },
+      {
+       "whole": [
+        "Verda"
+       ],
+       "colors": [
+        "#33352E",
+        "#222724"
+       ]
+      },
+      {
+       "roles": [
+        "other",
+        "fine"
+       ],
+       "max_words": 3,
+       "colors": [
+        "#9CA98F"
+       ],
+       "maybe": true
+      }
+     ],
+     "photos": [
+      "verda_studio_frame_01.jpg",
+      "verda_studio_frame_02.jpg",
+      "verda_instructor_01.jpg",
+      "verda_instructor_02.jpg",
+      "verda_instructor_03.jpg",
+      "verda_instructor_04.jpg",
+      "verda_instructor_05.jpg",
+      "verda_instructor_06.jpg"
+     ]
+    },
+    "label_colors": [
+     "#33352E",
+     "#9CA98F"
     ],
-    "colors": [
-     "#33352E"
-    ],
-    "allow": [
-     {
-      "roles": [
-       "label"
-      ],
-      "max_words": 3,
-      "colors": [
-       "#33352E",
-       "#9CA98F"
-      ]
-     },
-     {
-      "whole": [
-       "Verda"
-      ],
-      "colors": [
-       "#33352E",
-       "#222724"
-      ]
-     },
-     {
-      "roles": [
-       "other",
-       "fine"
-      ],
-      "max_words": 3,
-      "colors": [
-       "#9CA98F"
-      ],
-      "maybe": true
-     }
-    ],
-    "photos": [
-     "verda_studio_frame_01.jpg",
-     "verda_studio_frame_02.jpg",
-     "verda_instructor_01.jpg",
-     "verda_instructor_02.jpg",
-     "verda_instructor_03.jpg",
-     "verda_instructor_04.jpg",
-     "verda_instructor_05.jpg",
-     "verda_instructor_06.jpg"
+    "max_words": 3,
+    "not_labels": [
+     "Verda",
+     "VERDA REFORMER STUDIO"
     ]
    },
-   "how": "Reads each text line (OCR on images, live text on PDFs), the colour of its letters and of the ground behind it, and checks the pairing."
+   "how": "Reads each text line and the colour of its letters and ground; a small line in capitals (a label) may use the label colours, and a label OCR missed is read again from a contrast-stretched copy."
   },
   {
    "check_id": "PHOTO-28/class-feed/H036",
@@ -3295,57 +3406,69 @@
    "critical": false,
    "check": "On “Class announcement” (class-feed.png), all type on Warm Off White #F4F0E8 is Soft Ink #33352E; only short labels, like the passcard_2025_print.pdf field labels, may be Sage.",
    "assertion": {
-    "op": "v2_type_ink_pb",
-    "grounds": [
-     "#F4F0E8"
+    "op": "v2_small_labels_r5c",
+    "check": {
+     "op": "v2_type_ink_pb",
+     "grounds": [
+      "#F4F0E8"
+     ],
+     "colors": [
+      "#33352E"
+     ],
+     "allow": [
+      {
+       "roles": [
+        "label"
+       ],
+       "max_words": 3,
+       "colors": [
+        "#33352E",
+        "#9CA98F"
+       ]
+      },
+      {
+       "whole": [
+        "Verda"
+       ],
+       "colors": [
+        "#33352E",
+        "#222724"
+       ]
+      },
+      {
+       "roles": [
+        "other",
+        "fine"
+       ],
+       "max_words": 3,
+       "colors": [
+        "#9CA98F"
+       ],
+       "maybe": true
+      }
+     ],
+     "photos": [
+      "verda_studio_frame_01.jpg",
+      "verda_studio_frame_02.jpg",
+      "verda_instructor_01.jpg",
+      "verda_instructor_02.jpg",
+      "verda_instructor_03.jpg",
+      "verda_instructor_04.jpg",
+      "verda_instructor_05.jpg",
+      "verda_instructor_06.jpg"
+     ]
+    },
+    "label_colors": [
+     "#33352E",
+     "#9CA98F"
     ],
-    "colors": [
-     "#33352E"
-    ],
-    "allow": [
-     {
-      "roles": [
-       "label"
-      ],
-      "max_words": 3,
-      "colors": [
-       "#33352E",
-       "#9CA98F"
-      ]
-     },
-     {
-      "whole": [
-       "Verda"
-      ],
-      "colors": [
-       "#33352E",
-       "#222724"
-      ]
-     },
-     {
-      "roles": [
-       "other",
-       "fine"
-      ],
-      "max_words": 3,
-      "colors": [
-       "#9CA98F"
-      ],
-      "maybe": true
-     }
-    ],
-    "photos": [
-     "verda_studio_frame_01.jpg",
-     "verda_studio_frame_02.jpg",
-     "verda_instructor_01.jpg",
-     "verda_instructor_02.jpg",
-     "verda_instructor_03.jpg",
-     "verda_instructor_04.jpg",
-     "verda_instructor_05.jpg",
-     "verda_instructor_06.jpg"
+    "max_words": 3,
+    "not_labels": [
+     "Verda",
+     "VERDA REFORMER STUDIO"
     ]
    },
-   "how": "Reads each text line (OCR on images, live text on PDFs), the colour of its letters and of the ground behind it, and checks the pairing."
+   "how": "Reads each text line and the colour of its letters and ground; a small line in capitals (a label) may use the label colours, and a label OCR missed is read again from a contrast-stretched copy."
   },
   {
    "check_id": "PHOTO-28/booking-story/H034",
@@ -3355,57 +3478,69 @@
    "critical": false,
    "check": "On “Studio booking story” (booking-story.png), all type on Warm Off White #F4F0E8 is Soft Ink #33352E; only short labels, like the passcard_2025_print.pdf field labels, may be Sage.",
    "assertion": {
-    "op": "v2_type_ink_pb",
-    "grounds": [
-     "#F4F0E8"
+    "op": "v2_small_labels_r5c",
+    "check": {
+     "op": "v2_type_ink_pb",
+     "grounds": [
+      "#F4F0E8"
+     ],
+     "colors": [
+      "#33352E"
+     ],
+     "allow": [
+      {
+       "roles": [
+        "label"
+       ],
+       "max_words": 3,
+       "colors": [
+        "#33352E",
+        "#9CA98F"
+       ]
+      },
+      {
+       "whole": [
+        "Verda"
+       ],
+       "colors": [
+        "#33352E",
+        "#222724"
+       ]
+      },
+      {
+       "roles": [
+        "other",
+        "fine"
+       ],
+       "max_words": 3,
+       "colors": [
+        "#9CA98F"
+       ],
+       "maybe": true
+      }
+     ],
+     "photos": [
+      "verda_studio_frame_01.jpg",
+      "verda_studio_frame_02.jpg",
+      "verda_instructor_01.jpg",
+      "verda_instructor_02.jpg",
+      "verda_instructor_03.jpg",
+      "verda_instructor_04.jpg",
+      "verda_instructor_05.jpg",
+      "verda_instructor_06.jpg"
+     ]
+    },
+    "label_colors": [
+     "#33352E",
+     "#9CA98F"
     ],
-    "colors": [
-     "#33352E"
-    ],
-    "allow": [
-     {
-      "roles": [
-       "label"
-      ],
-      "max_words": 3,
-      "colors": [
-       "#33352E",
-       "#9CA98F"
-      ]
-     },
-     {
-      "whole": [
-       "Verda"
-      ],
-      "colors": [
-       "#33352E",
-       "#222724"
-      ]
-     },
-     {
-      "roles": [
-       "other",
-       "fine"
-      ],
-      "max_words": 3,
-      "colors": [
-       "#9CA98F"
-      ],
-      "maybe": true
-     }
-    ],
-    "photos": [
-     "verda_studio_frame_01.jpg",
-     "verda_studio_frame_02.jpg",
-     "verda_instructor_01.jpg",
-     "verda_instructor_02.jpg",
-     "verda_instructor_03.jpg",
-     "verda_instructor_04.jpg",
-     "verda_instructor_05.jpg",
-     "verda_instructor_06.jpg"
+    "max_words": 3,
+    "not_labels": [
+     "Verda",
+     "VERDA REFORMER STUDIO"
     ]
    },
-   "how": "Reads each text line (OCR on images, live text on PDFs), the colour of its letters and of the ground behind it, and checks the pairing."
+   "how": "Reads each text line and the colour of its letters and ground; a small line in capitals (a label) may use the label colours, and a label OCR missed is read again from a contrast-stretched copy."
   },
   {
    "check_id": "PHOTO-28/studio-launch/H038",
@@ -5070,6 +5205,60 @@
     "max_lines": 1
    },
    "how": "Counts the lines the named text runs over."
+  },
+  {
+   "check_id": "PHOTO-28/studio-launch/H043",
+   "output_id": "studio-launch",
+   "rule_id": "R091",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The copy on “Studio launch-page composition” (studio-launch.png) has no discount or urgency wording, such as sale, % off, limited time or hurry.",
+   "assertion": {
+    "op": "vlm_items_r5vb",
+    "none_found": "pass",
+    "bad_rx": [
+     "\\bsale\\b|\\d\\s?%|percent|\\boff\\b|discount|limited[- ]time|limited offer|hurry|last chance|ends? (?:soon|today|tonight)|today only|only \\d+ (?:left|places|spots)|few (?:places|spots) left|don.?t miss|act now|while (?:stocks|spaces|places) last|save \\$|save \\d|save up to|\\bdeal\\b|promo|clearance"
+    ],
+    "question": "Copy every piece of discount or urgency wording on this image, such as sale, a percentage or an amount off, a discount, limited time, hurry, last chance, ends soon, today only or only a few places left. answer yes if there is any, no if there is none.",
+    "how": "Asks the vision model to copy any discount or urgency wording; plain discount or urgency words fail, other copied wording goes to a person."
+   },
+   "how": "Asks the vision model to copy any discount or urgency wording; plain discount or urgency words fail, other copied wording goes to a person."
+  },
+  {
+   "check_id": "PHOTO-28/class-feed/H043",
+   "output_id": "class-feed",
+   "rule_id": "R091",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The copy on “Class announcement” (class-feed.png) has no discount or urgency wording, such as sale, % off, limited time or hurry.",
+   "assertion": {
+    "op": "vlm_items_r5vb",
+    "none_found": "pass",
+    "bad_rx": [
+     "\\bsale\\b|\\d\\s?%|percent|\\boff\\b|discount|limited[- ]time|limited offer|hurry|last chance|ends? (?:soon|today|tonight)|today only|only \\d+ (?:left|places|spots)|few (?:places|spots) left|don.?t miss|act now|while (?:stocks|spaces|places) last|save \\$|save \\d|save up to|\\bdeal\\b|promo|clearance"
+    ],
+    "question": "Copy every piece of discount or urgency wording on this image, such as sale, a percentage or an amount off, a discount, limited time, hurry, last chance, ends soon, today only or only a few places left. answer yes if there is any, no if there is none.",
+    "how": "Asks the vision model to copy any discount or urgency wording; plain discount or urgency words fail, other copied wording goes to a person."
+   },
+   "how": "Asks the vision model to copy any discount or urgency wording; plain discount or urgency words fail, other copied wording goes to a person."
+  },
+  {
+   "check_id": "PHOTO-28/booking-story/H041",
+   "output_id": "booking-story",
+   "rule_id": "R091",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "The copy on “Studio booking story” (booking-story.png) has no discount or urgency wording, such as sale, % off, limited time or hurry.",
+   "assertion": {
+    "op": "vlm_items_r5vb",
+    "none_found": "pass",
+    "bad_rx": [
+     "\\bsale\\b|\\d\\s?%|percent|\\boff\\b|discount|limited[- ]time|limited offer|hurry|last chance|ends? (?:soon|today|tonight)|today only|only \\d+ (?:left|places|spots)|few (?:places|spots) left|don.?t miss|act now|while (?:stocks|spaces|places) last|save \\$|save \\d|save up to|\\bdeal\\b|promo|clearance"
+    ],
+    "question": "Copy every piece of discount or urgency wording on this image, such as sale, a percentage or an amount off, a discount, limited time, hurry, last chance, ends soon, today only or only a few places left. answer yes if there is any, no if there is none.",
+    "how": "Asks the vision model to copy any discount or urgency wording; plain discount or urgency words fail, other copied wording goes to a person."
+   },
+   "how": "Asks the vision model to copy any discount or urgency wording; plain discount or urgency words fail, other copied wording goes to a person."
   },
   {
    "check_id": "PHOTO-28/studio-launch/H032",

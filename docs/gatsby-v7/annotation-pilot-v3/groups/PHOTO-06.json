@@ -4,8 +4,8 @@
  "source": "docs/gatsby-v7/tasks/PHOTO-06/TASK_SPEC.json verifiers_human",
  "check_count": 595,
  "rule_count": 84,
- "checks_for_people": 244,
- "checks_by_code": 351,
+ "checks_for_people": 165,
+ "checks_by_code": 430,
  "rules": [
   {
    "rule_id": "R001",
@@ -47,6 +47,7 @@
    "code_check": [
     "Finds the supplied photo in the deliverable, maps the placement back onto it and compares tiles, colour, tone or fine detail."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-06/restoration-hollis-scan-04/H005",
@@ -126,8 +127,11 @@
     "1": "source image"
    },
    "shared_reference": null,
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Asks the vision model how many people the photograph shows; code checks it is one, as in the source scan."
+   ],
+   "answered_with": "vision model",
    "rows": [
     {
      "check_id": "PHOTO-06/restoration-hollis-scan-01/H007",
@@ -411,6 +415,7 @@
    "code_check": [
     "Finds the supplied photo in the deliverable, maps the placement back onto it and compares tiles, colour, tone or fine detail."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-06/restoration-hollis-scan-08/H005",
@@ -498,6 +503,7 @@
    "code_check": [
     "Finds the supplied photo in the deliverable, maps the placement back onto it and compares tiles, colour, tone or fine detail."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-06/restoration-hollis-scan-03/H004",
@@ -580,8 +586,13 @@
     "1": "name"
    },
    "shared_reference": null,
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Asks the vision model to list every person the caption names; code checks each is Ada Hollis or Ruth Hollis.",
+    "Asks the vision model to list every person the caption names; code checks each is Ada Hollis or Tom Hollis.",
+    "Asks the vision model to list every person the caption names; code checks each is Ada Hollis or Walter Hollis."
+   ],
+   "answered_with": "vision model",
    "rows": [
     {
      "check_id": "PHOTO-06/share-hollis-scan-03/H010",
@@ -684,6 +695,7 @@
    "code_check": [
     "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-06/share-hollis-scan-01/H012",
@@ -834,8 +846,11 @@
    ],
    "slot_labels": {},
    "shared_reference": null,
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Asks the vision model to list every person the caption names; code checks each is Ada Hollis."
+   ],
+   "answered_with": "vision model",
    "rows": [
     {
      "check_id": "PHOTO-06/share-hollis-scan-01/H013",
@@ -969,6 +984,7 @@
    "code_check": [
     "Finds the supplied photo in the deliverable, maps the placement back onto it and compares tiles, colour, tone or fine detail."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-06/restoration-hollis-scan-05/H004",
@@ -1051,8 +1067,11 @@
     ],
     "note": "photo_catalogue.csv row 6 (header is row 1): Caption Title Ada and the children, Names Ada, Ruth, Frank and Carol Hollis. Brand type system rule: Nothing in a caption is invented or tidied away: only what is actually in the photograph is stated."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Asks the vision model to list every person the caption names; code checks each is Ada Hollis, Ruth Hollis, Frank Hollis or Carol Hollis."
+   ],
+   "answered_with": "vision model",
    "rows": [
     {
      "check_id": "PHOTO-06/share-hollis-scan-05/H010",
@@ -1589,6 +1608,7 @@
    "code_check": [
     "Runs the check and lets it decide only in the direction it is sure of; the other answer goes to a person."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-06/share-hollis-scan-01/H064",
@@ -1805,6 +1825,7 @@
    "code_check": [
     "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-06/share-hollis-scan-01/H065",
@@ -2198,6 +2219,7 @@
    "code_check": [
     "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-06/share-hollis-scan-03/H066",
@@ -2707,6 +2729,7 @@
    "code_check": [
     "Finds the supplied photo in the deliverable, maps the placement back onto it and compares tiles, colour, tone or fine detail."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-06/restoration-hollis-scan-01/H008",
@@ -2946,6 +2969,7 @@
    "code_check": [
     "Compares the photo's colourfulness with the supplied file."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-06/restoration-hollis-scan-06/H006",
@@ -3168,6 +3192,7 @@
    "code_check": [
     "Finds the supplied photo in the deliverable, maps the placement back onto it and compares tiles, colour, tone or fine detail."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-06/restoration-hollis-scan-07/H004",
@@ -3251,6 +3276,7 @@
    "code_check": [
     "Finds the supplied photo in the deliverable, maps the placement back onto it and compares tiles, colour, tone or fine detail."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-06/share-hollis-scan-01/H001",
@@ -3473,6 +3499,7 @@
    "code_check": [
     "Finds the supplied photo in the deliverable, maps the placement back onto it and compares tiles, colour, tone or fine detail."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-06/share-hollis-scan-01/H007",
@@ -3691,8 +3718,11 @@
     "1": "source image"
    },
    "shared_reference": null,
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Asks the vision model whether any caption text lies on the picture rather than on the plain margin; it passes when the model finds none."
+   ],
+   "answered_with": "vision model",
    "rows": [
     {
      "check_id": "PHOTO-06/share-hollis-scan-01/H011",
@@ -3906,8 +3936,11 @@
     "assets": [],
     "note": "Brief, What stays fixed: restoration masters contain no added typography. Type system rule: add no text, plate numeral or rule to the nine restoration PNG masters."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Shows the vision model the source scan and the restored file and asks it to list any text, numeral or ruled line the restored file adds; any item fails."
+   ],
+   "answered_with": "vision model",
    "rows": [
     {
      "check_id": "PHOTO-06/restoration-hollis-scan-01/H015",
@@ -4313,6 +4346,7 @@
    "code_check": [
     "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-06/share-hollis-scan-03/H009",
@@ -4381,6 +4415,7 @@
    "code_check": [
     "Finds the supplied photo in the deliverable, maps the placement back onto it and compares tiles, colour, tone or fine detail."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-06/restoration-hollis-scan-07/H005",
@@ -4471,6 +4506,7 @@
    "code_check": [
     "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-06/share-hollis-scan-07/H012",
@@ -4539,6 +4575,7 @@
    "code_check": [
     "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-06/share-hollis-scan-05/H009",
@@ -4607,6 +4644,7 @@
    "code_check": [
     "Searches the deliverable for every supplied photo and checks only the expected one is found."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-06/restoration-hollis-scan-01/H006",
@@ -5843,8 +5881,11 @@
     "1": "source image"
    },
    "shared_reference": null,
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Shows the vision model the source scan and the file and asks whether the print keeps its deckled edge on all four sides; it passes when the model says yes."
+   ],
+   "answered_with": "vision model",
    "rows": [
     {
      "check_id": "PHOTO-06/restoration-hollis-scan-02/H011",
@@ -6035,6 +6076,7 @@
    "code_check": [
     "Finds the supplied scan in the deliverable and reads the colour of the print's white border."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-06/restoration-hollis-scan-06/H007",
@@ -6377,6 +6419,7 @@
    "code_check": [
     "Finds the supplied scan in the deliverable and reads the colour of the print's white border."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-06/restoration-hollis-scan-07/H009",
@@ -7115,6 +7158,7 @@
    "code_check": [
     "Compares the photo with the supplied file (images) or reads the shapes drawn over it (PDFs) for a scrim, gradient or tint."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-06/restoration-hollis-scan-01/H011",
@@ -7329,6 +7373,7 @@
    "code_check": [
     "Finds the supplied photo in the deliverable, maps the placement back onto it and compares tiles, colour, tone or fine detail."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-06/restoration-hollis-scan-01/H013",
@@ -7719,6 +7764,7 @@
    "code_check": [
     "Runs each part; all must pass: Runs the check and lets it decide only in the direction it is sure of; the other answer goes to a person; Finds the supplied photo in the deliverable, maps the placement back onto it and compares tiles, colour, tone or fine detail."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-06/share-hollis-scan-01/H016",
@@ -7915,6 +7961,7 @@
    "code_check": [
     "Finds the largest flat area outside the photographs and reads its colour."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-06/share-hollis-scan-01/H024",
@@ -8114,6 +8161,7 @@
    "code_check": [
     "Reads every flat colour outside the photographs, the margin left out, and checks each is a palette colour."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-06/share-hollis-scan-01/H025",
@@ -8265,6 +8313,7 @@
    "code_check": [
     "Reads each selected text line by OCR, then the colour of its letters and of the ground behind it."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-06/share-hollis-scan-01/H026",
@@ -8461,6 +8510,7 @@
    "code_check": [
     "Looks for the colour as a flat area or as the ink of a text line outside the photographs."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-06/share-hollis-scan-01/H027",
@@ -8665,6 +8715,7 @@
    "code_check": [
     "Compares the photo with the supplied file (images) or reads the shapes drawn over it (PDFs) for a scrim, gradient or tint."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-06/share-hollis-scan-01/H048",
@@ -8882,6 +8933,7 @@
    "code_check": [
     "Reads each selected text line by OCR, then the colour of its letters and of the ground behind it."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-06/share-hollis-scan-01/H049",
@@ -9041,6 +9093,7 @@
    "code_check": [
     "Reads each selected text line by OCR, then the colour of its letters and of the ground behind it."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-06/share-hollis-scan-01/H050",
@@ -9245,6 +9298,7 @@
    "code_check": [
     "Reads each selected text line by OCR, then the colour of its letters and of the ground behind it."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-06/share-hollis-scan-01/H051",
@@ -9440,8 +9494,11 @@
     "assets": [],
     "note": "Palette usage: Linen #D9D0C1, a hairline keyline around a photograph only; never a ground and never type."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Finds the supplied photo, then checks every piece of the colour outside it runs along its edge as a line no thicker than a hairline."
+   ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-06/share-hollis-scan-01/H052",
@@ -9596,6 +9653,7 @@
    "code_check": [
     "Measures the share of the area outside the photographs in the named colours."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-06/share-hollis-scan-01/H053",
@@ -9747,6 +9805,7 @@
    "code_check": [
     "Reads each named line by OCR and measures the slant of its vertical strokes (upright, or leaning like italics)."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-06/share-hollis-scan-01/H019",
@@ -9898,6 +9957,7 @@
    "code_check": [
     "Counts the characters of every line (PDF text, or OCR lines outside the photographs)."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-06/share-hollis-scan-01/H020",
@@ -10347,6 +10407,7 @@
    "code_check": [
     "Reads each named line by OCR, renders its own text in every brand font and weight and in common stand-in fonts, and compares the letter shapes and stroke thickness with the image; only a clear best match counts."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-06/share-hollis-scan-01/H033",
@@ -10631,6 +10692,7 @@
    "code_check": [
     "Reads each named line by OCR, renders its own text in every brand font and weight and in common stand-in fonts, and compares the letter shapes and stroke thickness with the image; only a clear best match counts."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-06/share-hollis-scan-01/H037",
@@ -11506,6 +11568,7 @@
    "code_check": [
     "Reads each named line by OCR and measures the slant of its vertical strokes (upright, or leaning like italics)."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-06/share-hollis-scan-01/H056",
@@ -11805,8 +11868,11 @@
    ],
    "slot_labels": {},
    "shared_reference": null,
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Shows the vision model the source scan and the restored file and asks it to list any frame, ornament, brand mark or drop shadow the restored file adds; any item fails."
+   ],
+   "answered_with": "vision model",
    "rows": [
     {
      "check_id": "PHOTO-06/restoration-hollis-scan-01/H012",
@@ -11969,8 +12035,11 @@
    ],
    "slot_labels": {},
    "shared_reference": null,
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Shows the vision model the source scan and the share image and asks it to list any ornament, decorative frame, script lettering, drop shadow, logo or monogram added; any item fails."
+   ],
+   "answered_with": "vision model",
    "rows": [
     {
      "check_id": "PHOTO-06/share-hollis-scan-01/H015",
@@ -12155,6 +12224,7 @@
    "code_check": [
     "Finds the supplied photo in the deliverable, maps the placement back onto it and compares tiles, colour, tone or fine detail."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-06/restoration-hollis-scan-01/H014",
@@ -12389,6 +12459,7 @@
    "code_check": [
     "Finds the picture block, the rules and the first text line under it from ink, and measures the numeral, the name, the rule and the caption block against the picture."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-06/share-hollis-scan-01/H021",
@@ -12605,6 +12676,7 @@
    "code_check": [
     "Finds the picture block, the rules and the first text line under it from ink, and measures the numeral, the name, the rule and the caption block against the picture."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-06/share-hollis-scan-01/H022",
@@ -12784,6 +12856,7 @@
    "code_check": [
     "Finds the picture block, the rules and the first text line under it from ink, and measures the numeral, the name, the rule and the caption block against the picture."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-06/share-hollis-scan-01/H057",
@@ -12938,6 +13011,7 @@
    "code_check": [
     "Finds the picture block, the rules and the first text line under it from ink, and measures the numeral, the name, the rule and the caption block against the picture."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-06/share-hollis-scan-01/H058",
@@ -13089,6 +13163,7 @@
    "code_check": [
     "Finds the picture block, the rules and the first text line under it from ink, and measures the numeral, the name, the rule and the caption block against the picture."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-06/share-hollis-scan-01/H060",
@@ -13929,8 +14004,11 @@
     "1": "source image"
    },
    "shared_reference": null,
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Shows the vision model the source scan and the restored file and asks whether any part of a person is missing, cut off or covered; it passes when the model finds none."
+   ],
+   "answered_with": "vision model",
    "rows": [
     {
      "check_id": "PHOTO-06/restoration-hollis-scan-01/H005",
@@ -14153,6 +14231,7 @@
    "code_check": [
     "Finds the supplied photo in the deliverable, maps the placement back onto it and compares tiles, colour, tone or fine detail."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-06/share-hollis-scan-01/H010",
@@ -14367,6 +14446,7 @@
    "code_check": [
     "Compares the text sizes (font size in PDFs, letter height on images)."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-06/share-hollis-scan-01/H023",
@@ -14526,6 +14606,7 @@
    "code_check": [
     "Finds the picture block, the rules and the first text line under it from ink, and measures the numeral, the name, the rule and the caption block against the picture."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-06/share-hollis-scan-01/H005",
@@ -14733,6 +14814,7 @@
    "code_check": [
     "Finds the picture block, the rules and the first text line under it from ink, and measures the numeral, the name, the rule and the caption block against the picture."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-06/share-hollis-scan-01/H061",

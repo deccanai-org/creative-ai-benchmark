@@ -701,14 +701,12 @@
    "critical": false,
    "check": "No letter of the talk title, event name or date is cut off at an edge of “Confirmed-talk speaker banner - Northlight Design Forum - Designing the thing before the deck” (event-banner-r002.png).",
    "assertion": {
-    "op": "v2_text_inside",
-    "texts": [
-     "Designing the thing before the deck",
-     "Northlight Design Forum",
-     "14 Feb 2026"
-    ]
+    "op": "vlm_yesno_r5v",
+    "pass_on": "no",
+    "question": "Look at the talk title, the event name and the date printed on this banner. Is any letter of them cut off by an edge of the image, so that part of the letter lies outside the image? answer yes if any letter is cut off, no if every letter is complete.",
+    "how": "Asks the vision model whether any letter of the talk title, event name or date is cut off at an edge; it passes when the model finds none."
    },
-   "how": "Checks the named text is read in full inside the page or image (for a mark, its letters read as a line of their own)."
+   "how": "Asks the vision model whether any letter of the talk title, event name or date is cut off at an edge; it passes when the model finds none."
   },
   {
    "check_id": "PHOTO-20/event-banner-r003/H009",
@@ -718,14 +716,12 @@
    "critical": false,
    "check": "No letter of the talk title, event name or date is cut off at an edge of “Confirmed-talk speaker banner - Made & Kept - Six people, one hand” (event-banner-r003.png).",
    "assertion": {
-    "op": "v2_text_inside",
-    "texts": [
-     "Six people, one hand",
-     "Made & Kept",
-     "2026-03-03"
-    ]
+    "op": "vlm_yesno_r5v",
+    "pass_on": "no",
+    "question": "Look at the talk title, the event name and the date printed on this banner. Is any letter of them cut off by an edge of the image, so that part of the letter lies outside the image? answer yes if any letter is cut off, no if every letter is complete.",
+    "how": "Asks the vision model whether any letter of the talk title, event name or date is cut off at an edge; it passes when the model finds none."
    },
-   "how": "Checks the named text is read in full inside the page or image (for a mark, its letters read as a line of their own)."
+   "how": "Asks the vision model whether any letter of the talk title, event name or date is cut off at an edge; it passes when the model finds none."
   },
   {
    "check_id": "PHOTO-20/event-banner-r008/H009",
@@ -735,14 +731,12 @@
    "critical": false,
    "check": "No letter of the talk title, event name or date is cut off at an edge of “Confirmed-talk speaker banner - Continuum Product Days - What survives contact with a factory” (event-banner-r008.png).",
    "assertion": {
-    "op": "v2_text_inside",
-    "texts": [
-     "What survives contact with a factory",
-     "Continuum Product Days",
-     "May 9"
-    ]
+    "op": "vlm_yesno_r5v",
+    "pass_on": "no",
+    "question": "Look at the talk title, the event name and the date printed on this banner. Is any letter of them cut off by an edge of the image, so that part of the letter lies outside the image? answer yes if any letter is cut off, no if every letter is complete.",
+    "how": "Asks the vision model whether any letter of the talk title, event name or date is cut off at an edge; it passes when the model finds none."
    },
-   "how": "Checks the named text is read in full inside the page or image (for a mark, its letters read as a line of their own)."
+   "how": "Asks the vision model whether any letter of the talk title, event name or date is cut off at an edge; it passes when the model finds none."
   },
   {
    "check_id": "PHOTO-20/talk-card-r002/H001",
@@ -1761,6 +1755,294 @@
    "how": "Finds both elements (by their colour, the supplied file, the placed photo or the text) and compares their positions, for each of the 3 named texts; all must pass."
   },
   {
+   "check_id": "PHOTO-20/speaker-onepager/H008",
+   "output_id": "speaker-onepager",
+   "rule_id": "R028",
+   "k_id": "K1_Q3",
+   "critical": false,
+   "check": "No social handle, follower count or platform icon appears on “Speaker booking one-pager” (speaker-onepager.pdf).",
+   "assertion": {
+    "op": "vlm_items_r5vb",
+    "none_found": "pass",
+    "question": "List every social media handle (such as @name), follower, subscriber or like count, and social platform icon or logo (for example Instagram, LinkedIn, X or Twitter, TikTok, Facebook or YouTube) visible anywhere on this image, each copied or named exactly. answer yes if there is at least one, no if there is none.",
+    "how": "Asks the vision model to list any social handle, follower count or platform icon on the file; any item fails.",
+    "images": [
+     {
+      "src": "deliverable",
+      "page": 1,
+      "dpi": 144
+     }
+    ]
+   },
+   "how": "Asks the vision model to list any social handle, follower count or platform icon on the file; any item fails."
+  },
+  {
+   "check_id": "PHOTO-20/event-announcement-r002/H012",
+   "output_id": "event-announcement-r002",
+   "rule_id": "R028",
+   "k_id": "K1_Q3",
+   "critical": false,
+   "check": "No social handle, follower count or platform icon appears on “Confirmed-talk speaker announcement - Northlight Design Forum - Designing the thing before the deck” (event-announcement-r002.png).",
+   "assertion": {
+    "op": "vlm_items_r5vb",
+    "none_found": "pass",
+    "question": "List every social media handle (such as @name), follower, subscriber or like count, and social platform icon or logo (for example Instagram, LinkedIn, X or Twitter, TikTok, Facebook or YouTube) visible anywhere on this image, each copied or named exactly. answer yes if there is at least one, no if there is none.",
+    "how": "Asks the vision model to list any social handle, follower count or platform icon on the file; any item fails."
+   },
+   "how": "Asks the vision model to list any social handle, follower count or platform icon on the file; any item fails."
+  },
+  {
+   "check_id": "PHOTO-20/event-announcement-r003/H012",
+   "output_id": "event-announcement-r003",
+   "rule_id": "R028",
+   "k_id": "K1_Q3",
+   "critical": false,
+   "check": "No social handle, follower count or platform icon appears on “Confirmed-talk speaker announcement - Made & Kept - Six people, one hand” (event-announcement-r003.png).",
+   "assertion": {
+    "op": "vlm_items_r5vb",
+    "none_found": "pass",
+    "question": "List every social media handle (such as @name), follower, subscriber or like count, and social platform icon or logo (for example Instagram, LinkedIn, X or Twitter, TikTok, Facebook or YouTube) visible anywhere on this image, each copied or named exactly. answer yes if there is at least one, no if there is none.",
+    "how": "Asks the vision model to list any social handle, follower count or platform icon on the file; any item fails."
+   },
+   "how": "Asks the vision model to list any social handle, follower count or platform icon on the file; any item fails."
+  },
+  {
+   "check_id": "PHOTO-20/event-announcement-r008/H012",
+   "output_id": "event-announcement-r008",
+   "rule_id": "R028",
+   "k_id": "K1_Q3",
+   "critical": false,
+   "check": "No social handle, follower count or platform icon appears on “Confirmed-talk speaker announcement - Continuum Product Days - What survives contact with a factory” (event-announcement-r008.png).",
+   "assertion": {
+    "op": "vlm_items_r5vb",
+    "none_found": "pass",
+    "question": "List every social media handle (such as @name), follower, subscriber or like count, and social platform icon or logo (for example Instagram, LinkedIn, X or Twitter, TikTok, Facebook or YouTube) visible anywhere on this image, each copied or named exactly. answer yes if there is at least one, no if there is none.",
+    "how": "Asks the vision model to list any social handle, follower count or platform icon on the file; any item fails."
+   },
+   "how": "Asks the vision model to list any social handle, follower count or platform icon on the file; any item fails."
+  },
+  {
+   "check_id": "PHOTO-20/event-banner-r002/H011",
+   "output_id": "event-banner-r002",
+   "rule_id": "R028",
+   "k_id": "K1_Q3",
+   "critical": false,
+   "check": "No social handle, follower count or platform icon appears on “Confirmed-talk speaker banner - Northlight Design Forum - Designing the thing before the deck” (event-banner-r002.png).",
+   "assertion": {
+    "op": "vlm_items_r5vb",
+    "none_found": "pass",
+    "question": "List every social media handle (such as @name), follower, subscriber or like count, and social platform icon or logo (for example Instagram, LinkedIn, X or Twitter, TikTok, Facebook or YouTube) visible anywhere on this image, each copied or named exactly. answer yes if there is at least one, no if there is none.",
+    "how": "Asks the vision model to list any social handle, follower count or platform icon on the file; any item fails."
+   },
+   "how": "Asks the vision model to list any social handle, follower count or platform icon on the file; any item fails."
+  },
+  {
+   "check_id": "PHOTO-20/event-banner-r003/H012",
+   "output_id": "event-banner-r003",
+   "rule_id": "R028",
+   "k_id": "K1_Q3",
+   "critical": false,
+   "check": "No social handle, follower count or platform icon appears on “Confirmed-talk speaker banner - Made & Kept - Six people, one hand” (event-banner-r003.png).",
+   "assertion": {
+    "op": "vlm_items_r5vb",
+    "none_found": "pass",
+    "question": "List every social media handle (such as @name), follower, subscriber or like count, and social platform icon or logo (for example Instagram, LinkedIn, X or Twitter, TikTok, Facebook or YouTube) visible anywhere on this image, each copied or named exactly. answer yes if there is at least one, no if there is none.",
+    "how": "Asks the vision model to list any social handle, follower count or platform icon on the file; any item fails."
+   },
+   "how": "Asks the vision model to list any social handle, follower count or platform icon on the file; any item fails."
+  },
+  {
+   "check_id": "PHOTO-20/event-banner-r008/H012",
+   "output_id": "event-banner-r008",
+   "rule_id": "R028",
+   "k_id": "K1_Q3",
+   "critical": false,
+   "check": "No social handle, follower count or platform icon appears on “Confirmed-talk speaker banner - Continuum Product Days - What survives contact with a factory” (event-banner-r008.png).",
+   "assertion": {
+    "op": "vlm_items_r5vb",
+    "none_found": "pass",
+    "question": "List every social media handle (such as @name), follower, subscriber or like count, and social platform icon or logo (for example Instagram, LinkedIn, X or Twitter, TikTok, Facebook or YouTube) visible anywhere on this image, each copied or named exactly. answer yes if there is at least one, no if there is none.",
+    "how": "Asks the vision model to list any social handle, follower count or platform icon on the file; any item fails."
+   },
+   "how": "Asks the vision model to list any social handle, follower count or platform icon on the file; any item fails."
+  },
+  {
+   "check_id": "PHOTO-20/talk-card-r002/H009",
+   "output_id": "talk-card-r002",
+   "rule_id": "R028",
+   "k_id": "K1_Q3",
+   "critical": false,
+   "check": "No social handle, follower count or platform icon appears on “Speaker talk card - Northlight Design Forum - Designing the thing before the deck” (talk-card-r002.pdf).",
+   "assertion": {
+    "op": "vlm_items_r5vb",
+    "none_found": "pass",
+    "question": "List every social media handle (such as @name), follower, subscriber or like count, and social platform icon or logo (for example Instagram, LinkedIn, X or Twitter, TikTok, Facebook or YouTube) visible anywhere on this image, each copied or named exactly. answer yes if there is at least one, no if there is none.",
+    "how": "Asks the vision model to list any social handle, follower count or platform icon on the file; any item fails.",
+    "images": [
+     {
+      "src": "deliverable",
+      "page": 1,
+      "dpi": 288
+     }
+    ]
+   },
+   "how": "Asks the vision model to list any social handle, follower count or platform icon on the file; any item fails."
+  },
+  {
+   "check_id": "PHOTO-20/talk-card-r003/H008",
+   "output_id": "talk-card-r003",
+   "rule_id": "R028",
+   "k_id": "K1_Q3",
+   "critical": false,
+   "check": "No social handle, follower count or platform icon appears on “Speaker talk card - Made & Kept - Six people, one hand” (talk-card-r003.pdf).",
+   "assertion": {
+    "op": "vlm_items_r5vb",
+    "none_found": "pass",
+    "question": "List every social media handle (such as @name), follower, subscriber or like count, and social platform icon or logo (for example Instagram, LinkedIn, X or Twitter, TikTok, Facebook or YouTube) visible anywhere on this image, each copied or named exactly. answer yes if there is at least one, no if there is none.",
+    "how": "Asks the vision model to list any social handle, follower count or platform icon on the file; any item fails.",
+    "images": [
+     {
+      "src": "deliverable",
+      "page": 1,
+      "dpi": 288
+     }
+    ]
+   },
+   "how": "Asks the vision model to list any social handle, follower count or platform icon on the file; any item fails."
+  },
+  {
+   "check_id": "PHOTO-20/talk-card-r004/H008",
+   "output_id": "talk-card-r004",
+   "rule_id": "R028",
+   "k_id": "K1_Q3",
+   "critical": false,
+   "check": "No social handle, follower count or platform icon appears on “Speaker talk card - Fjordworks Summit - On staying small on purpose” (talk-card-r004.pdf).",
+   "assertion": {
+    "op": "vlm_items_r5vb",
+    "none_found": "pass",
+    "question": "List every social media handle (such as @name), follower, subscriber or like count, and social platform icon or logo (for example Instagram, LinkedIn, X or Twitter, TikTok, Facebook or YouTube) visible anywhere on this image, each copied or named exactly. answer yes if there is at least one, no if there is none.",
+    "how": "Asks the vision model to list any social handle, follower count or platform icon on the file; any item fails.",
+    "images": [
+     {
+      "src": "deliverable",
+      "page": 1,
+      "dpi": 288
+     }
+    ]
+   },
+   "how": "Asks the vision model to list any social handle, follower count or platform icon on the file; any item fails."
+  },
+  {
+   "check_id": "PHOTO-20/talk-card-r005/H008",
+   "output_id": "talk-card-r005",
+   "rule_id": "R028",
+   "k_id": "K1_Q3",
+   "critical": false,
+   "check": "No social handle, follower count or platform icon appears on “Speaker talk card - Fjordworks Summit - The room after the round” (talk-card-r005.pdf).",
+   "assertion": {
+    "op": "vlm_items_r5vb",
+    "none_found": "pass",
+    "question": "List every social media handle (such as @name), follower, subscriber or like count, and social platform icon or logo (for example Instagram, LinkedIn, X or Twitter, TikTok, Facebook or YouTube) visible anywhere on this image, each copied or named exactly. answer yes if there is at least one, no if there is none.",
+    "how": "Asks the vision model to list any social handle, follower count or platform icon on the file; any item fails.",
+    "images": [
+     {
+      "src": "deliverable",
+      "page": 1,
+      "dpi": 288
+     }
+    ]
+   },
+   "how": "Asks the vision model to list any social handle, follower count or platform icon on the file; any item fails."
+  },
+  {
+   "check_id": "PHOTO-20/talk-card-r006/H009",
+   "output_id": "talk-card-r006",
+   "rule_id": "R028",
+   "k_id": "K1_Q3",
+   "critical": false,
+   "check": "No social handle, follower count or platform icon appears on “Speaker talk card - Halden Design Days - From sketch to tooling” (talk-card-r006.pdf).",
+   "assertion": {
+    "op": "vlm_items_r5vb",
+    "none_found": "pass",
+    "question": "List every social media handle (such as @name), follower, subscriber or like count, and social platform icon or logo (for example Instagram, LinkedIn, X or Twitter, TikTok, Facebook or YouTube) visible anywhere on this image, each copied or named exactly. answer yes if there is at least one, no if there is none.",
+    "how": "Asks the vision model to list any social handle, follower count or platform icon on the file; any item fails.",
+    "images": [
+     {
+      "src": "deliverable",
+      "page": 1,
+      "dpi": 288
+     }
+    ]
+   },
+   "how": "Asks the vision model to list any social handle, follower count or platform icon on the file; any item fails."
+  },
+  {
+   "check_id": "PHOTO-20/talk-card-r007/H008",
+   "output_id": "talk-card-r007",
+   "rule_id": "R028",
+   "k_id": "K1_Q3",
+   "critical": false,
+   "check": "No social handle, follower count or platform icon appears on “Speaker talk card - The Bench Sessions - Designing for the next hands” (talk-card-r007.pdf).",
+   "assertion": {
+    "op": "vlm_items_r5vb",
+    "none_found": "pass",
+    "question": "List every social media handle (such as @name), follower, subscriber or like count, and social platform icon or logo (for example Instagram, LinkedIn, X or Twitter, TikTok, Facebook or YouTube) visible anywhere on this image, each copied or named exactly. answer yes if there is at least one, no if there is none.",
+    "how": "Asks the vision model to list any social handle, follower count or platform icon on the file; any item fails.",
+    "images": [
+     {
+      "src": "deliverable",
+      "page": 1,
+      "dpi": 288
+     }
+    ]
+   },
+   "how": "Asks the vision model to list any social handle, follower count or platform icon on the file; any item fails."
+  },
+  {
+   "check_id": "PHOTO-20/talk-card-r008/H008",
+   "output_id": "talk-card-r008",
+   "rule_id": "R028",
+   "k_id": "K1_Q3",
+   "critical": false,
+   "check": "No social handle, follower count or platform icon appears on “Speaker talk card - Continuum Product Days - What survives contact with a factory” (talk-card-r008.pdf).",
+   "assertion": {
+    "op": "vlm_items_r5vb",
+    "none_found": "pass",
+    "question": "List every social media handle (such as @name), follower, subscriber or like count, and social platform icon or logo (for example Instagram, LinkedIn, X or Twitter, TikTok, Facebook or YouTube) visible anywhere on this image, each copied or named exactly. answer yes if there is at least one, no if there is none.",
+    "how": "Asks the vision model to list any social handle, follower count or platform icon on the file; any item fails.",
+    "images": [
+     {
+      "src": "deliverable",
+      "page": 1,
+      "dpi": 288
+     }
+    ]
+   },
+   "how": "Asks the vision model to list any social handle, follower count or platform icon on the file; any item fails."
+  },
+  {
+   "check_id": "PHOTO-20/talk-card-r009/H008",
+   "output_id": "talk-card-r009",
+   "rule_id": "R028",
+   "k_id": "K1_Q3",
+   "critical": false,
+   "check": "No social handle, follower count or platform icon appears on “Speaker talk card - Grain & Frame Forum - What a small studio can promise” (talk-card-r009.pdf).",
+   "assertion": {
+    "op": "vlm_items_r5vb",
+    "none_found": "pass",
+    "question": "List every social media handle (such as @name), follower, subscriber or like count, and social platform icon or logo (for example Instagram, LinkedIn, X or Twitter, TikTok, Facebook or YouTube) visible anywhere on this image, each copied or named exactly. answer yes if there is at least one, no if there is none.",
+    "how": "Asks the vision model to list any social handle, follower count or platform icon on the file; any item fails.",
+    "images": [
+     {
+      "src": "deliverable",
+      "page": 1,
+      "dpi": 288
+     }
+    ]
+   },
+   "how": "Asks the vision model to list any social handle, follower count or platform icon on the file; any item fails."
+  },
+  {
    "check_id": "PHOTO-20/event-announcement-r002/H017",
    "output_id": "event-announcement-r002",
    "rule_id": "R029",
@@ -2346,6 +2628,33 @@
     ]
    },
    "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+  },
+  {
+   "check_id": "PHOTO-20/speaker-onepager/H010",
+   "output_id": "speaker-onepager",
+   "rule_id": "R038",
+   "k_id": "K1_Q5",
+   "critical": true,
+   "check": "The biography on “Speaker booking one-pager” (speaker-onepager.pdf) adds no client, award, credential, figure or claim that vellacourt_bio_copy.txt does not give.",
+   "assertion": {
+    "op": "vlm_items_r5vb",
+    "ok": [
+     "Vellacourt & Sund is a six-person industrial design studio working on products people keep.",
+     "Astrid Vellacourt co-founded and runs Vellacourt & Sund, a six-person industrial design studio.",
+     "She works on physical products from first sketch to production and is raising a seed round to grow the studio's own product line.",
+     "Vellacourt & Sund is a six-person industrial design studio working on products people keep",
+     "Astrid Vellacourt co-founded and runs Vellacourt & Sund, a six-person industrial design studio",
+     "She works on physical products from first sketch to production and is raising a seed round to grow the studio's own product line"
+    ],
+    "bad_rx": [
+     "\\d"
+    ],
+    "near": 0.9,
+    "near_item": true,
+    "question": "Copy the biography text on this page sentence by sentence: the paragraph or paragraphs that describe the person and her studio, not the name heading, the role line, the talk titles and their descriptions or the footer. Give one sentence per entry, joining a sentence broken across lines, copied exactly as printed. answer yes if there is a biography, no if there is none.",
+    "how": "Asks the vision model to copy the biography sentence by sentence; code checks each is a sentence of vellacourt_bio_copy.txt word for word (a sentence with a figure the file does not give fails)."
+   },
+   "how": "Asks the vision model to copy the biography sentence by sentence; code checks each is a sentence of vellacourt_bio_copy.txt word for word (a sentence with a figure the file does not give fails)."
   },
   {
    "check_id": "PHOTO-20/speaker-onepager/H052",

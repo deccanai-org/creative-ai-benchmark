@@ -49,6 +49,7 @@
    "code_check": [
     "The SVG is rendered at the proof size and compared region by region: the same outline and, in every flat area, the same colour."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "VECTOR-04/sticker-proof-window-mark/H001",
@@ -315,6 +316,7 @@
    "code_check": [
     "Both SVGs are rendered to the same size and compared: outline overlap and colour."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "VECTOR-04/new-sticker-companion-2/H004",
@@ -651,6 +653,7 @@
    "code_check": [
     "The cut path is read point by point and its distance to the artwork edge measured in millimetres; it must sit at the offset all the way round, never closer."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "VECTOR-04/sticker-cut-window-mark/H001",
@@ -813,6 +816,7 @@
    "code_check": [
     "The cut path is read from its geometry and the tightest bend along it measured as a radius in millimetres."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "VECTOR-04/sticker-cut-window-mark/H002",
@@ -968,6 +972,7 @@
    "code_check": [
     "Reads the cut-contour SVG's groups and paths."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "VECTOR-04/sticker-cut-window-mark/H003",
@@ -1130,6 +1135,7 @@
    "code_check": [
     "Reads the cut paths on the sheet's cut layer and measures them."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "VECTOR-04/gang-sheet/H001",
@@ -1190,6 +1196,7 @@
    "code_check": [
     "Reads the cut paths on the sheet's cut layer and measures them."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "VECTOR-04/gang-sheet/H002",
@@ -1250,6 +1257,7 @@
    "code_check": [
     "Reads the cut paths on the sheet's cut layer and measures them."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "VECTOR-04/gang-sheet/H005",
@@ -1310,6 +1318,7 @@
    "code_check": [
     "Reads the cut paths on the sheet's cut layer and measures them."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "VECTOR-04/gang-sheet/H013",
@@ -1370,6 +1379,7 @@
    "code_check": [
     "The cut path is read point by point and its distance to the artwork edge measured in millimetres; it must sit at the offset all the way round, never closer."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "VECTOR-04/gang-sheet/H014",
@@ -1483,6 +1493,7 @@
    "code_check": [
     "Reads the SVG's physical size and measures the drawn artwork."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "VECTOR-04/recovered-sticker-window-mark/H018",
@@ -1598,6 +1609,7 @@
    "code_check": [
     "Reads the SVG's viewBox."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "VECTOR-04/recovered-sticker-window-mark/H019",
@@ -1791,6 +1803,7 @@
    "code_check": [
     "Where the SVG has no ink, the proof must be transparent; filled areas are counted, thin lines are left to the cut line check."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "VECTOR-04/sticker-proof-window-mark/H016",
@@ -1908,6 +1921,7 @@
    "code_check": [
     "Reads the SVG's layers and strokes for a cut line drawn into the artwork."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "VECTOR-04/recovered-sticker-window-mark/H016",
@@ -2058,6 +2072,7 @@
    "code_check": [
     "Reads the cut-contour SVG's groups and paths."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "VECTOR-04/sticker-cut-window-mark/H005",
@@ -2205,6 +2220,7 @@
    "code_check": [
     "Reads the cut-contour SVG's groups and paths."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "VECTOR-04/sticker-cut-window-mark/H006",
@@ -2352,6 +2368,7 @@
    "code_check": [
     "The proof is searched for a thin line running round the artwork or thin ink in the cut-line magenta, and compared with its SVG."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "VECTOR-04/sticker-proof-window-mark/H002",
@@ -2634,6 +2651,7 @@
    "code_check": [
     "Reads the cut paths on the sheet's cut layer and measures them."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "VECTOR-04/gang-sheet/H003",
@@ -2694,6 +2712,7 @@
    "code_check": [
     "Reads the cut paths on the sheet's cut layer and measures them."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "VECTOR-04/gang-sheet/H016",
@@ -2754,6 +2773,7 @@
    "code_check": [
     "The sheet's drawings inside each cut path are read for an unfilled stroke running round the sticker or a cut colour off the cut layer."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "VECTOR-04/gang-sheet/H017",
@@ -2864,6 +2884,7 @@
    "code_check": [
     "Reads the cut paths on the sheet's cut layer and measures them."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "VECTOR-04/gang-sheet/H024",
@@ -2980,6 +3001,7 @@
    "code_check": [
     "Reads the PDF's colour operators and checks the cut paths use a spot colour named CutContour."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "VECTOR-04/gang-sheet/H029",
@@ -3027,6 +3049,7 @@
    "code_check": [
     "Finds every price and checks each meets the rule."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "VECTOR-04/new-sticker-companion-1/H017",
@@ -3179,6 +3202,7 @@
    "code_check": [
     "Reads the cut paths on the sheet's cut layer and measures them."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "VECTOR-04/gang-sheet/H006",
@@ -3244,6 +3268,7 @@
    "code_check": [
     "Compares the drawing's silhouette with the printed motif of each supplied photo."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "VECTOR-04/recovered-sticker-bag-design-2/H003",
@@ -3313,8 +3338,11 @@
     ],
     "note": "Brief, pinned: bag design 3 is meridian_bag_ridgeline.jpg, number 3 of the three bag photographs in the asset manifest (VECTOR-04-IN-003)."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Shows the vision model the three bag photographs, labelled A to C, and the sticker, and asks which photograph's drawing the sticker reproduces; code checks the answer names meridian_bag_ridgeline.jpg."
+   ],
+   "answered_with": "vision model",
    "rows": [
     {
      "check_id": "VECTOR-04/recovered-sticker-bag-design-3/H003",
@@ -3380,6 +3408,7 @@
    "code_check": [
     "Compares the drawing with each supplied photo by feature matching."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "VECTOR-04/sticker-proof-bag-design-1/H003",
@@ -3437,6 +3466,7 @@
    "code_check": [
     "Compares the drawing with each supplied photo by feature matching."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "VECTOR-04/sticker-proof-bag-design-2/H003",
@@ -3490,8 +3520,11 @@
     ],
     "note": "Brief, pinned: the design preserves its photographed original, meridian_bag_ridgeline.jpg for bag design 3."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Shows the vision model the three bag photographs, labelled A to C, and the sticker, and asks which photograph's drawing the sticker reproduces; code checks the answer names meridian_bag_ridgeline.jpg."
+   ],
+   "answered_with": "vision model",
    "rows": [
     {
      "check_id": "VECTOR-04/sticker-proof-bag-design-3/H003",
@@ -3683,6 +3716,7 @@
    "code_check": [
     "Compares the drawing's silhouette with the printed motif of each supplied photo."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "VECTOR-04/recovered-sticker-bag-design-1/H003",
@@ -3820,8 +3854,11 @@
     ],
     "note": "Brief, pinned: the design preserves its photographed original, meridian_bag_pourover.jpg for bag design 2."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Shows the vision model the drawing printed on meridian_bag_pourover.jpg and the sticker and asks it to list any part of the drawing missing from the sticker; it fails when both answers list one and passes when both find none."
+   ],
+   "answered_with": "vision model",
    "rows": [
     {
      "check_id": "VECTOR-04/recovered-sticker-bag-design-2/H005",
@@ -3900,6 +3937,7 @@
    "code_check": [
     "Counts tiny dot shapes in the SVG."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "VECTOR-04/recovered-sticker-bag-design-3/H004",
@@ -4120,8 +4158,11 @@
     ],
     "note": "Brief, pinned: the design preserves its photographed original, meridian_bag_moth.jpg for bag design 1."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Shows the vision model the drawing printed on meridian_bag_moth.jpg and the sticker and asks it to list any part of the drawing missing from the sticker; it fails when both answers list one and passes when both find none."
+   ],
+   "answered_with": "vision model",
    "rows": [
     {
      "check_id": "VECTOR-04/recovered-sticker-bag-design-1/H005",
@@ -4195,6 +4236,7 @@
    "code_check": [
     "Renders the delivered sticker, finds it on the sheet, and compares its proportions and colours."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "VECTOR-04/gang-sheet/H007",
@@ -4257,6 +4299,7 @@
    "code_check": [
     "Renders the delivered sticker, finds it on the sheet, and compares its proportions and colours."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "VECTOR-04/gang-sheet/H008",
@@ -4419,8 +4462,11 @@
     ],
     "note": "Supplied photo meridian_window_mark.jpg shows a compound lockup: the arched wordmark over a filled roundel, a fine hairline ring and an ash leaf. Brand assets status: The window mark was hand painted on the shop glass in 2018 by a sign painter who never handed over a file."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Shows the vision model the painted window sign and the sticker and asks which of its four parts (arched lettering, filled roundel, hairline ring, leaf) the sticker lacks; it fails when both answers list one and passes when both find none."
+   ],
+   "answered_with": "vision model",
    "rows": [
     {
      "check_id": "VECTOR-04/sticker-proof-window-mark/H004",
@@ -4626,8 +4672,11 @@
     ],
     "note": "Supplied photo meridian_window_mark.jpg shows a compound lockup: the arched wordmark over a filled roundel, a fine hairline ring and an ash leaf. Brand assets status: The window mark was hand painted on the shop glass in 2018 by a sign painter who never handed over a file."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Shows the vision model the painted window sign and the sticker and asks which of its four parts (arched lettering, filled roundel, hairline ring, leaf) the sticker lacks; it fails when both answers list one and passes when both find none."
+   ],
+   "answered_with": "vision model",
    "rows": [
     {
      "check_id": "VECTOR-04/recovered-sticker-window-mark/H006",
@@ -4683,6 +4732,7 @@
    "code_check": [
     "Reads every type, shape and line colour from the file (photos excluded)."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "VECTOR-04/recovered-sticker-window-mark/H012",
@@ -4803,6 +4853,7 @@
    "code_check": [
     "Renders the artwork and finds the colour covering most of it, grounds left out."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "VECTOR-04/recovered-sticker-bag-design-2/H010",
@@ -4863,6 +4914,7 @@
    "code_check": [
     "Renders the artwork and finds the colour covering most of it, grounds left out."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "VECTOR-04/recovered-sticker-bag-design-3/H010",
@@ -4918,6 +4970,7 @@
    "code_check": [
     "Reads every flat colour outside photographs, transparent parts and capture footage, and checks each is a palette colour."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "VECTOR-04/sticker-proof-window-mark/H012",
@@ -5038,6 +5091,7 @@
    "code_check": [
     "Renders the artwork and finds the colour covering most of it, grounds left out."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "VECTOR-04/sticker-proof-bag-design-1/H010",
@@ -5098,6 +5152,7 @@
    "code_check": [
     "Renders the artwork and finds the colour covering most of it, grounds left out."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "VECTOR-04/sticker-proof-bag-design-2/H010",
@@ -5158,6 +5213,7 @@
    "code_check": [
     "Renders the artwork and finds the colour covering most of it, grounds left out."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "VECTOR-04/sticker-proof-bag-design-3/H010",
@@ -5213,6 +5269,7 @@
    "code_check": [
     "Renders the artwork and finds the colour covering most of it, grounds left out."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "VECTOR-04/sticker-proof-companion-1/H005",
@@ -5281,6 +5338,7 @@
    "code_check": [
     "Reads each text line by OCR, then the colour of its letters and of the ground round it."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "VECTOR-04/sticker-proof-companion-1/H012",
@@ -5354,6 +5412,7 @@
    "code_check": [
     "Reads every colour in the PDF, converts CMYK through the supplied output profile, and compares with the palette."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "VECTOR-04/gang-sheet/H019",
@@ -5404,6 +5463,7 @@
    "code_check": [
     "Reads the PDF for transparency, gradients, soft masks, blend modes and duplicated shadow type."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "VECTOR-04/gang-sheet/H020",
@@ -5521,6 +5581,7 @@
    "code_check": [
     "The window mark's parts are found by their shape (the roundel an ellipse, the ring a thin ellipse round it, the leaf inside the roundel, the lettering outside the ring) and each part's fill read from the SVG, or from the proof where the part shows."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "VECTOR-04/sticker-proof-window-mark/H014",
@@ -5589,6 +5650,7 @@
    "code_check": [
     "The window mark's parts are found by their shape (the roundel an ellipse, the ring a thin ellipse round it, the leaf inside the roundel, the lettering outside the ring) and each part's fill read from the SVG, or from the proof where the part shows."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "VECTOR-04/recovered-sticker-window-mark/H014",
@@ -5653,6 +5715,7 @@
    "code_check": [
     "Renders the artwork and finds the colour covering most of it, grounds left out."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "VECTOR-04/recovered-sticker-bag-design-1/H010",
@@ -5708,6 +5771,7 @@
    "code_check": [
     "Renders the artwork and finds the colour covering most of it, grounds left out."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "VECTOR-04/new-sticker-companion-1/H006",
@@ -5776,6 +5840,7 @@
    "code_check": [
     "Reads each text line by OCR, then the colour of its letters and of the ground round it."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "VECTOR-04/new-sticker-companion-1/H013",
@@ -5967,6 +6032,7 @@
    "code_check": [
     "The window mark's parts are found by their shape (the roundel an ellipse, the ring a thin ellipse round it, the leaf inside the roundel, the lettering outside the ring) and each part's fill read from the SVG, or from the proof where the part shows."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "VECTOR-04/recovered-sticker-window-mark/H020",
@@ -6027,6 +6093,7 @@
    "code_check": [
     "The window mark's parts are found by their shape (the roundel an ellipse, the ring a thin ellipse round it, the leaf inside the roundel, the lettering outside the ring) and each part's fill read from the SVG, or from the proof where the part shows."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "VECTOR-04/recovered-sticker-window-mark/H021",
@@ -6082,6 +6149,7 @@
    "code_check": [
     "Finds every piece in the colour on the proof and checks each is small detail, not a main shape, backing or type."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "VECTOR-04/sticker-proof-window-mark/H017",
@@ -6202,6 +6270,7 @@
    "code_check": [
     "The window mark's parts are found by their shape (the roundel an ellipse, the ring a thin ellipse round it, the leaf inside the roundel, the lettering outside the ring) and each part's fill read from the SVG, or from the proof where the part shows."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "VECTOR-04/sticker-proof-window-mark/H018",
@@ -6262,6 +6331,7 @@
    "code_check": [
     "The window mark's parts are found by their shape (the roundel an ellipse, the ring a thin ellipse round it, the leaf inside the roundel, the lettering outside the ring) and each part's fill read from the SVG, or from the proof where the part shows."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "VECTOR-04/sticker-proof-window-mark/H019",
@@ -6322,6 +6392,7 @@
    "code_check": [
     "The window mark's parts are found by their shape (the roundel an ellipse, the ring a thin ellipse round it, the leaf inside the roundel, the lettering outside the ring) and each part's fill read from the SVG, or from the proof where the part shows."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "VECTOR-04/recovered-sticker-window-mark/H022",
@@ -6382,6 +6453,7 @@
    "code_check": [
     "The window mark's parts are found by their shape (the roundel an ellipse, the ring a thin ellipse round it, the leaf inside the roundel, the lettering outside the ring) and each part's fill read from the SVG, or from the proof where the part shows."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "VECTOR-04/sticker-proof-window-mark/H020",
@@ -6437,6 +6509,7 @@
    "code_check": [
     "Renders the file without photos and measures the share of the named colours."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "VECTOR-04/recovered-sticker-window-mark/H023",
@@ -6552,6 +6625,7 @@
    "code_check": [
     "Reads the colour space of every path, image and shading in the PDF."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "VECTOR-04/gang-sheet/H031",
@@ -6602,6 +6676,7 @@
    "code_check": [
     "Reads each text line by OCR, then the colour of its letters and of the ground round it."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "VECTOR-04/new-sticker-companion-1/H032",
@@ -6665,6 +6740,7 @@
    "code_check": [
     "Reads each text line by OCR, then the colour of its letters and of the ground round it."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "VECTOR-04/sticker-proof-companion-1/H024",
@@ -7168,6 +7244,7 @@
    "code_check": [
     "Reads the selected lines (live text where there is any) and counts their characters."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "VECTOR-04/new-sticker-companion-1/H012",
@@ -7266,6 +7343,7 @@
    "code_check": [
     "Reads the glyphs' advance widths from the PDF and compares them with the supplied font at every weight."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "VECTOR-04/gang-sheet/H021",
@@ -7334,6 +7412,7 @@
    "code_check": [
     "The arc the wordmark runs on is read from the SVG and the letters' widths from its embedded font; the angle the inked letters span is measured in degrees."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "VECTOR-04/new-sticker-companion-1/H009",
@@ -7424,6 +7503,7 @@
    "code_check": [
     "Reads the SVG's live text sizes for the glyph and the capitals beside it."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "VECTOR-04/new-sticker-companion-1/H010",
@@ -7729,6 +7809,7 @@
    "code_check": [
     "Reads the SVG's live text lines and measures the distance between their baselines."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "VECTOR-04/new-sticker-companion-1/H027",
@@ -7792,6 +7873,7 @@
    "code_check": [
     "Reads the SVG's live text lines and measures the distance between their baselines."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "VECTOR-04/new-sticker-companion-1/H028",
@@ -7855,6 +7937,7 @@
    "code_check": [
     "Reads the type lying outside the stickers' cut paths on the sheet."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "VECTOR-04/gang-sheet/H030",
@@ -7905,6 +7988,7 @@
    "code_check": [
     "Reads the SVG's live text lines and measures the distance between their baselines."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "VECTOR-04/new-sticker-companion-1/H029",
@@ -8116,6 +8200,7 @@
    "code_check": [
     "Reads the type lying outside the stickers' cut paths on the sheet."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "VECTOR-04/gang-sheet/H032",
@@ -8166,6 +8251,7 @@
    "code_check": [
     "The SVG is read for opacity under 100%, gradients, filters, masks, blend modes, embedded pictures and shapes repeated at a small offset behind themselves (a hard shadow)."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "VECTOR-04/recovered-sticker-window-mark/H013",
@@ -8281,6 +8367,7 @@
    "code_check": [
     "The proof is searched for soft or see-through ink, and its SVG for hard shadows the proof shows."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "VECTOR-04/sticker-proof-window-mark/H013",
@@ -8480,6 +8567,7 @@
    "code_check": [
     "Looks for photograph-like texture in the image."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "VECTOR-04/sticker-proof-companion-1/H020",
@@ -8591,6 +8679,7 @@
    "code_check": [
     "Reads the sheet for placed pictures and fields of tiny specks."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "VECTOR-04/gang-sheet/H028",
@@ -9118,8 +9207,11 @@
     ],
     "note": "Brief, pinned: the design preserves its photographed original, meridian_bag_ridgeline.jpg for bag design 3. Palette rules, photography: no photograph appears in any deliverable; the supplied photographs are tracing references only."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Shows the vision model meridian_bag_ridgeline.jpg and the whole sticker file and asks whether it shows any of the things the rule names from the photo (the bag's kraft paper texture, the outline or edges of the bag, the wooden table, the plant, or the bowl); it fails when both answers list one and passes when both find none."
+   ],
+   "answered_with": "vision model",
    "rows": [
     {
      "check_id": "VECTOR-04/recovered-sticker-bag-design-3/H006",
@@ -9173,8 +9265,11 @@
     ],
     "note": "Brief, pinned: the design preserves its photographed original, meridian_bag_moth.jpg for bag design 1. Palette rules, photography: no photograph appears in any deliverable; the supplied photographs are tracing references only."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Shows the vision model meridian_bag_moth.jpg and the whole sticker file and asks whether it shows any of the things the rule names from the photo (the bag's kraft paper texture, the outline or edges of the bag, the wooden table, the coffee scoop, or coffee beans); it fails when both answers list one and passes when both find none."
+   ],
+   "answered_with": "vision model",
    "rows": [
     {
      "check_id": "VECTOR-04/sticker-proof-bag-design-1/H006",
@@ -9345,8 +9440,11 @@
     ],
     "note": "Brief, pinned: the design preserves its photographed original, meridian_bag_pourover.jpg for bag design 2. Palette rules, photography: no photograph appears in any deliverable; the supplied photographs are tracing references only."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Shows the vision model meridian_bag_pourover.jpg and the whole sticker file and asks whether it shows any of the things the rule names from the photo (the bag's kraft paper texture, the outline or edges of the bag, the shadow of the bag's side fold (gusset), or the wooden table); it fails when both answers list one and passes when both find none."
+   ],
+   "answered_with": "vision model",
    "rows": [
     {
      "check_id": "VECTOR-04/sticker-proof-bag-design-2/H006",
@@ -9400,8 +9498,11 @@
     ],
     "note": "Brief, pinned: the design preserves its photographed original, meridian_bag_ridgeline.jpg for bag design 3. Palette rules, photography: no photograph appears in any deliverable; the supplied photographs are tracing references only."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Shows the vision model meridian_bag_ridgeline.jpg and the whole sticker file and asks whether it shows any of the things the rule names from the photo (the bag's kraft paper texture, the outline or edges of the bag, the wooden table, the plant, or the bowl); it fails when both answers list one and passes when both find none."
+   ],
+   "answered_with": "vision model",
    "rows": [
     {
      "check_id": "VECTOR-04/sticker-proof-bag-design-3/H006",
@@ -9455,8 +9556,11 @@
     ],
     "note": "Supplied photo meridian_window_mark.jpg is a street snapshot through the shop window, with the cafe interior behind the glass and the street reflected in it. Palette rules, photography: no photograph appears in any deliverable; the supplied photographs are tracing references only."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Shows the vision model meridian_window_mark.jpg and the whole sticker file and asks whether it shows any of the things the rule names from the photo (the glass pane or reflections in it, the window frame, the cafe interior, or the street scene); it fails when both answers list one and passes when both find none."
+   ],
+   "answered_with": "vision model",
    "rows": [
     {
      "check_id": "VECTOR-04/sticker-proof-window-mark/H007",
@@ -9610,8 +9714,11 @@
     ],
     "note": "Supplied photo meridian_window_mark.jpg is a street snapshot through the shop window, with the cafe interior behind the glass and the street reflected in it. Palette rules, photography: no photograph appears in any deliverable; the supplied photographs are tracing references only."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Shows the vision model meridian_window_mark.jpg and the whole sticker file and asks whether it shows any of the things the rule names from the photo (the glass pane or reflections in it, the window frame, the cafe interior, or the street scene); it fails when both answers list one and passes when both find none."
+   ],
+   "answered_with": "vision model",
    "rows": [
     {
      "check_id": "VECTOR-04/recovered-sticker-window-mark/H009",
@@ -9665,8 +9772,11 @@
     ],
     "note": "Brief, pinned: the design preserves its photographed original, meridian_bag_moth.jpg for bag design 1. Palette rules, photography: no photograph appears in any deliverable; the supplied photographs are tracing references only."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Shows the vision model meridian_bag_moth.jpg and the whole sticker file and asks whether it shows any of the things the rule names from the photo (the bag's kraft paper texture, the outline or edges of the bag, the wooden table, the coffee scoop, or coffee beans); it fails when both answers list one and passes when both find none."
+   ],
+   "answered_with": "vision model",
    "rows": [
     {
      "check_id": "VECTOR-04/recovered-sticker-bag-design-1/H006",
@@ -9827,6 +9937,7 @@
    "code_check": [
     "The lettering and the roundel are found by their shape and their positions compared: the lettering above the roundel, its letters rising to the middle."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "VECTOR-04/recovered-sticker-window-mark/H005",

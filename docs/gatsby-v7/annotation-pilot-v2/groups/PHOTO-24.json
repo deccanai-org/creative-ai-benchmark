@@ -206,6 +206,7 @@
    "code_check": [
     "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-24/watch-feature-r002/H004",
@@ -365,6 +366,7 @@
    "code_check": [
     "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-24/watch-feature-r002/H005",
@@ -529,6 +531,7 @@
    "code_check": [
     "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-24/watch-feature-r002/H011",
@@ -683,6 +686,7 @@
    "code_check": [
     "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-24/watch-feature-r002/H012",
@@ -833,8 +837,15 @@
     "2": "row"
    },
    "shared_reference": null,
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Copies every text on the file with the vision model; code checks any timing result reads +1 s/day.",
+    "Copies every text on the file with the vision model; code checks any timing result reads +2 s/day.",
+    "Copies every text on the file with the vision model; code checks any timing result reads +3 s/day.",
+    "Copies every text on the file with the vision model; code checks any timing result reads -1 s/day.",
+    "Copies every text on the file with the vision model; code checks any timing result reads 0 s/day."
+   ],
+   "answered_with": "vision model",
    "rows": [
     {
      "check_id": "PHOTO-24/watch-feature-r002/H013",
@@ -982,6 +993,7 @@
    "code_check": [
     "Reads the type by OCR or from the PDF, leaving out lettering inside the supplied photos, and looks for the wording."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-24/watch-feature-r002/H014",
@@ -1124,6 +1136,7 @@
    "code_check": [
     "Reads the text; where a description of this kind appears, checks it carries the right terms and no contradicting ones."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-24/watch-feature-r003/H010",
@@ -1198,8 +1211,11 @@
     ],
     "note": "lunara_notes.txt: \"LM-03 - hand-wound, small seconds.\""
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Copies every text on the file with the vision model; code checks no movement wording contradicts lunara_notes.txt for LM-03 (winding, reserve hours, small seconds)."
+   ],
+   "answered_with": "vision model",
    "rows": [
     {
      "check_id": "PHOTO-24/watch-feature-r005/H010",
@@ -1397,8 +1413,11 @@
     ],
     "note": "lunara_notes.txt: \"LM-01 - hand-wound, 42h reserve.\""
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Copies every text on the file with the vision model; code checks no movement wording contradicts lunara_notes.txt for LM-01 (winding, reserve hours, small seconds)."
+   ],
+   "answered_with": "vision model",
    "rows": [
     {
      "check_id": "PHOTO-24/watch-feature-r002/H015",
@@ -1488,6 +1507,7 @@
    "code_check": [
     "Reads where each value stands and checks the value that belongs to this name (by its section, column or line) is the expected one."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-24/dealer-launch/H006",
@@ -1619,6 +1639,7 @@
    "code_check": [
     "Reads where each value stands and checks the value that belongs to this name (by its section, column or line) is the expected one."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-24/dealer-launch/H007",
@@ -1791,6 +1812,7 @@
    "code_check": [
     "Reads the text; where a description of this kind appears, checks it carries the right terms and no contradicting ones."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-24/dealer-launch/H033",
@@ -1855,6 +1877,7 @@
    "code_check": [
     "Reads the text; where a description of this kind appears, checks it carries the right terms and no contradicting ones."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-24/watch-keyvisual/H004",
@@ -1915,8 +1938,11 @@
     ],
     "note": "lunara_notes.txt: \"LM-01 - hand-wound, 42h reserve.\" \"LM-02 - automatic, 48h reserve.\" \"LM-03 - hand-wound, small seconds.\""
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Copies every text on the file with the vision model; code finds the one reference named and checks no movement wording contradicts lunara_notes.txt for its caliber."
+   ],
+   "answered_with": "vision model",
    "rows": [
     {
      "check_id": "PHOTO-24/watch-keyvisual/H005",
@@ -2032,6 +2058,7 @@
    "code_check": [
     "Reads the text; where a description of this kind appears, checks it carries the right terms and no contradicting ones."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-24/dealer-launch/H086",
@@ -2092,6 +2119,7 @@
    "code_check": [
     "Reads the text; where a description of this kind appears, checks it carries the right terms and no contradicting ones."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-24/dealer-launch/H087",
@@ -2144,6 +2172,7 @@
    "code_check": [
     "Checks each named text lies fully inside the page or image."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-24/watch-feature-r002/H006",
@@ -2276,6 +2305,7 @@
    "code_check": [
     "Lays the supplied photo over the placed one and compares them tile by tile: colour, detail and correlation."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-24/watch-feature-r002/H019",
@@ -2422,6 +2452,7 @@
    "code_check": [
     "Lays the supplied photo over the placed one and compares them tile by tile: colour, detail and correlation."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-24/watch-feature-r006/H019",
@@ -2552,6 +2583,7 @@
    "code_check": [
     "Reads every picture placed in the PDF, identifies its supplied photo and compares the colours tile by tile."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-24/dealer-launch/H027",
@@ -2611,6 +2643,7 @@
    "code_check": [
     "Checks each named text lies fully inside the page or image."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-24/dealer-launch/H028",
@@ -2661,6 +2694,7 @@
    "code_check": [
     "Checks each named text lies fully inside the page or image."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-24/watch-keyvisual/H052",
@@ -2932,8 +2966,11 @@
     ],
     "note": "lunara_notes.txt: \"$4,000-$12,000 a piece\" Production requirement: Use the supplied approved copy and factual records. Do not invent claims, prices, dates, credentials or product features."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Copies every text on the file with the vision model; code checks any price shown is the band $4,000-$12,000."
+   ],
+   "answered_with": "vision model",
    "rows": [
     {
      "check_id": "PHOTO-24/watch-feature-r002/H017",
@@ -3221,8 +3258,11 @@
     ],
     "note": "Record lunara_register.csv, rows 2 to 6, field reference; lunara_notes.txt, FIVE REFERENCES. Truth constraint: Do not invent names, prices, claims, product features, locations, credentials, records, or documentary events that are absent from the approved inputs."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Asks the vision model to list every watch reference named on both pages; code checks each is Meridian, Selene, Ardent, Halcyon or Vesper."
+   ],
+   "answered_with": "vision model",
    "rows": [
     {
      "check_id": "PHOTO-24/dealer-launch/H003",
@@ -3347,6 +3387,7 @@
    "code_check": [
     "Finds every price and checks each meets the rule."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-24/dealer-launch/H035",
@@ -3463,8 +3504,11 @@
     ],
     "note": "lunara_notes.txt: \"$4,000-$12,000 a piece\" Production requirement: Use the supplied approved copy and factual records. Do not invent claims, prices, dates, credentials or product features."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Copies every text on the file with the vision model; code checks any price shown is the band $4,000-$12,000."
+   ],
+   "answered_with": "vision model",
    "rows": [
     {
      "check_id": "PHOTO-24/watch-keyvisual/H015",
@@ -3525,6 +3569,7 @@
    "code_check": [
     "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-24/dealer-launch/H002",
@@ -3599,6 +3644,7 @@
    "code_check": [
     "Reads where each value stands and checks the value that belongs to this name (by its section, column or line) is the expected one, for each of the 2 named texts; all must pass."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-24/dealer-launch/H010",
@@ -3693,6 +3739,7 @@
    "code_check": [
     "Searches the deliverable for the supplied file (feature matching, confirmed by correlation)."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-24/watch-feature-r002/H007",
@@ -3862,6 +3909,7 @@
    "code_check": [
     "Searches the deliverable for the supplied file (feature matching, confirmed by correlation)."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-24/dealer-launch/H008",
@@ -4061,6 +4109,7 @@
    "code_check": [
     "Searches the deliverable for the supplied file (feature matching, confirmed by correlation)."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-24/watch-keyvisual/H002",
@@ -4153,6 +4202,7 @@
    "code_check": [
     "Lays the supplied photo over the placed one and compares them tile by tile: colour, detail and correlation."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-24/watch-feature-r002/H021",
@@ -4259,6 +4309,7 @@
    "code_check": [
     "Lays the supplied photo over the placed one and compares them tile by tile: colour, detail and correlation."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-24/watch-feature-r002/H022",
@@ -4330,6 +4381,7 @@
    "code_check": [
     "Reads every picture placed in the PDF, identifies its supplied photo and compares the colours tile by tile."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-24/dealer-launch/H029",
@@ -4439,6 +4491,7 @@
    "code_check": [
     "Reads every picture placed in the PDF, identifies its supplied photo and compares the colours tile by tile."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-24/dealer-launch/H032",
@@ -4515,6 +4568,7 @@
    "code_check": [
     "Finds the supplied photo in the deliverable and looks for areas clipped to flat white."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-24/watch-keyvisual/H008",
@@ -4582,6 +4636,7 @@
    "code_check": [
     "Reads every flat colour outside the photographs and checks each is a palette colour."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-24/watch-keyvisual/H022",
@@ -4707,6 +4762,7 @@
     "Finds every ground and panel (flat areas outside the photographs) and reads its colour.",
     "Reads the page ground and the filled shapes drawn in the PDF: their colours, sizes and opacity."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-24/watch-feature-r002/H030",
@@ -4877,8 +4933,11 @@
     ],
     "note": "Palette rules, distribution: on Bone cream, the wordmark, headings, body, specification, fine print and the timing line are Warm near-black, as on lunara_certificate_2025.pdf; small captions and footer lines may instead be Tempered steel, as that card's photo caption and footer are, and Oxblood may set a small label, as its certificate label is."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads each text line and the colour of its letters and ground; a small line in capitals (a label) may use the label colours, and a label OCR missed is read again from a contrast-stretched copy."
+   ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-24/watch-keyvisual/H024",
@@ -5047,6 +5106,7 @@
    "code_check": [
     "Finds every piece in the colour outside the photographs and checks each is a thin rule or sits in an allowed text line."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-24/watch-keyvisual/H025",
@@ -5208,6 +5268,7 @@
     "Checks every flat designed colour is a palette colour, with no shaded area and no type over a photograph.",
     "Reads the PDF for any transparency or gradient shading."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-24/watch-keyvisual/H026",
@@ -5336,6 +5397,7 @@
    "code_check": [
     "Reads every type, shape and line colour from the file (photos excluded)."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-24/dealer-launch/H044",
@@ -5395,6 +5457,7 @@
    "code_check": [
     "Finds every ground and panel (flat areas outside the photographs) and reads its colour."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-24/watch-keyvisual/H023",
@@ -5454,6 +5517,7 @@
    "code_check": [
     "Reads each text line (OCR on images, live text on PDFs), the colour of its letters and of the ground behind it, and checks the pairing."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-24/watch-keyvisual/H047",
@@ -5582,6 +5646,7 @@
    "code_check": [
     "Reads each text line (OCR on images, live text on PDFs), the colour of its letters and of the ground behind it, and checks the pairing."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-24/watch-keyvisual/H048",
@@ -5693,8 +5758,11 @@
     "assets": [],
     "note": "Brand identity, palette_rules.distribution."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads each text line and the colour of its letters and ground; a small line in capitals (a label) may use the label colours, and a label OCR missed is read again from a contrast-stretched copy."
+   ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-24/watch-keyvisual/H049",
@@ -5823,6 +5891,7 @@
    "code_check": [
     "Either route can answer: compares the photo with the supplied file (images) or reads the shapes drawn over it (PDFs) for a scrim, gradient or tint; or: lays the supplied photo over the placed one and compares them tile by tile: colour, detail and correlation. One must pass and none may fail."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-24/watch-feature-r002/H057",
@@ -5930,6 +5999,7 @@
    "code_check": [
     "Lays the supplied photo over the placed one and compares them tile by tile: colour, detail and correlation."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-24/watch-feature-r004/H056",
@@ -5985,6 +6055,7 @@
    "code_check": [
     "Reads each line's colour from the PDF and the colour behind it from the rendered page, and checks the pairing."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-24/dealer-launch/H067",
@@ -6035,6 +6106,7 @@
    "code_check": [
     "Reads the PDF's drawing order and checks nothing is drawn over a placed photo."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-24/dealer-launch/H069",
@@ -6090,6 +6162,7 @@
    "code_check": [
     "Reads every picture placed in the PDF, identifies its supplied photo and compares the colours tile by tile."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-24/dealer-launch/H070",
@@ -6240,6 +6313,7 @@
    "code_check": [
     "Lays the supplied photo over the placed one and compares them tile by tile: colour, detail and correlation."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-24/watch-feature-r002/H063",
@@ -6342,6 +6416,7 @@
    "code_check": [
     "Lays the supplied photo over the placed one and compares them tile by tile: colour, detail and correlation."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-24/watch-feature-r004/H062",
@@ -6424,6 +6499,7 @@
    "code_check": [
     "Reads every picture placed in the PDF, identifies its supplied photo and compares the colours tile by tile."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-24/dealer-launch/H094",
@@ -6652,6 +6728,7 @@
    "code_check": [
     "Reads the type by OCR or from the PDF, leaving out lettering inside the supplied photos, and looks for the wording."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-24/watch-keyvisual/H012",
@@ -7213,8 +7290,11 @@
     "assets": [],
     "note": "Brand type system rule: Figures always set tabular lining so columns of numbers align."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Measures every figure glyph against the tallest capital or figure beside it and their common baseline; a serial read faintly counts when it matches the record exactly, and marks matching the supplied photo are left out."
+   ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-24/watch-keyvisual/H019",
@@ -7343,6 +7423,7 @@
    "code_check": [
     "Reads each line of text and counts its characters."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-24/watch-keyvisual/H020",
@@ -7480,6 +7561,7 @@
    "code_check": [
     "Sorts the PDF text into roles by size and reads the font, size, letter case and line spacing of the named role."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-24/dealer-launch/H036",
@@ -7552,6 +7634,7 @@
    "code_check": [
     "Reads the font, size or letter case of the selected lines from the PDF."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-24/dealer-launch/H037",
@@ -8716,6 +8799,7 @@
    "code_check": [
     "Sorts the PDF text into roles by size and reads the font, size, letter case and line spacing of the named role."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-24/dealer-launch/H048",
@@ -8780,6 +8864,7 @@
    "code_check": [
     "Reads the font, size, letter case or colour of the named text from the PDF."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-24/dealer-launch/H052",
@@ -8844,6 +8929,7 @@
    "code_check": [
     "Reads the font, size or letter case of the selected lines from the PDF."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-24/dealer-launch/H071",
@@ -9148,6 +9234,7 @@
    "code_check": [
     "Sorts the PDF text into roles by size and reads the font, size, letter case and line spacing of the named role."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-24/dealer-launch/H074",
@@ -9346,6 +9433,7 @@
    "code_check": [
     "Reads the font, size or letter case of the selected lines from the PDF."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-24/dealer-launch/H076",
@@ -9396,6 +9484,7 @@
    "code_check": [
     "Sorts the PDF text into roles by size and reads the font, size, letter case and line spacing of the named role."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-24/dealer-launch/H089",
@@ -9446,6 +9535,7 @@
    "code_check": [
     "Sorts the PDF text into roles by size and reads the font, size, letter case and line spacing of the named role."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-24/dealer-launch/H090",
@@ -9496,6 +9586,7 @@
    "code_check": [
     "Sorts the PDF text into roles by size and reads the font, size, letter case and line spacing of the named role."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-24/dealer-launch/H091",
@@ -9546,6 +9637,7 @@
    "code_check": [
     "Sorts the PDF text into roles by size and reads the font, size, letter case and line spacing of the named role."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-24/dealer-launch/H092",
@@ -9593,6 +9685,7 @@
    "code_check": [
     "Reads the text and checks how the two words of the wordmark are set: stacked, or on one line."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-24/watch-feature-r002/H027",
@@ -9766,6 +9859,7 @@
    "code_check": [
     "Reads the type by OCR or from the PDF, leaving out lettering inside the supplied photos, and looks for the wording."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-24/watch-keyvisual/H021",
@@ -9961,6 +10055,7 @@
    "code_check": [
     "Reads the text and checks how the two words of the wordmark are set: stacked, or on one line."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-24/watch-keyvisual/H010",
@@ -10117,6 +10212,7 @@
     "Checks every flat designed colour is a palette colour, with no shaded area and no type over a photograph.",
     "Reads the PDF paint: opacity, shading, patterns, soft masks and blend modes."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-24/watch-keyvisual/H054",
@@ -10308,6 +10404,7 @@
    "code_check": [
     "Finds the supplied photo and compares its horizontal and vertical scale and corner angles."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-24/watch-feature-r002/H001",
@@ -10470,6 +10567,7 @@
    "code_check": [
     "Lays the supplied photo over the placed one and compares them tile by tile: colour, detail and correlation."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-24/watch-feature-r002/H020",
@@ -10572,6 +10670,7 @@
    "code_check": [
     "Lays the supplied photo over the placed one and compares them tile by tile: colour, detail and correlation."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-24/watch-feature-r004/H020",
@@ -10905,6 +11004,7 @@
    "code_check": [
     "Lays the supplied photo over the placed one and compares them tile by tile: colour, detail and correlation."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-24/watch-keyvisual/H009",
@@ -11029,6 +11129,7 @@
    "code_check": [
     "Either route can answer: finds the supplied photo and compares its horizontal and vertical scale and corner angles; or: finds the supplied photo and compares its horizontal and vertical scale and corner angles; or: finds the supplied photo and compares its horizontal and vertical scale and corner angles; or: finds the supplied photo and compares its horizontal and vertical scale and corner angles; or: finds the supplied photo and compares its horizontal and vertical scale and corner angles; or: finds the supplied photo and compares its horizontal and vertical scale and corner angles; or: finds the supplied photo and compares its horizontal and vertical scale and corner angles; or: finds the supplied photo and compares its horizontal and vertical scale and corner angles; or: finds the supplied photo and compares its horizontal and vertical scale and corner angles. One must pass and none may fail."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-24/watch-keyvisual/H057",
@@ -11128,6 +11229,7 @@
    "code_check": [
     "Finds the supplied photo and compares its horizontal and vertical scale and corner angles."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-24/dealer-launch/H077",
@@ -11323,6 +11425,7 @@
    "code_check": [
     "Compares the named texts' size or position."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-24/watch-feature-r002/H010",
@@ -11460,6 +11563,7 @@
    "code_check": [
     "Compares the named texts' size or position, for each of the 5 named texts; all must pass."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-24/dealer-launch/H038",
@@ -11510,6 +11614,7 @@
    "code_check": [
     "Compares the text sizes (font size in PDFs, letter height on images)."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-24/watch-keyvisual/H013",
@@ -11626,6 +11731,7 @@
    "code_check": [
     "Compares the text sizes (font size in PDFs, letter height on images)."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-24/watch-keyvisual/H058",
@@ -11684,6 +11790,7 @@
    "code_check": [
     "Compares the named texts' size or position."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-24/watch-feature-r002/H062",

@@ -50,6 +50,12 @@ image ops, Express, InDesign data merge, Fonts, Stock, Acrobat, Premiere-style v
   the code checks, limits and the 2026-09-28 answers). Rebuild after every decide_moves.py run.
 - **Round 4 (2026-10-29)**: the remaining code-measurable checks (`round4_*.py`, `ops_r4_*.py`, bad4 made set):
   4,143 of 6,312 human checks (928 rules) now answered by code; v3 shows 2,169 for people.
+- **Round 5 (2026-10-29)**: close calls in code (`round5_code.py`, `ops_r5_code.py`) and objective look, count and read
+  checks by a vision model (`round5_vlm_{a,b,c}.py`, `ops_r5_vlm*.py`: Gemini 3.8 Flash via OpenRouter, pinned Google
+  Vertex, temperature 0, two seeds must agree, blind reading, answers saved in `tools/pilot13_v2_automation/vlm_answers/`
+  and replayed; `VLM_OFFLINE=1` needs no key). 4,631 of 6,312 human checks (1,041 rules) answered automatically: 4,186 by
+  code, 445 by the vision model; v3 shows 1,681 for people. The OpenRouter key is NEVER in the repo (it lives in
+  `~/.config/pilot13/openrouter.env` or `OPENROUTER_API_KEY`); vision rules carry a "Vision model" badge.
 
 ## Update 2026-10-22
 

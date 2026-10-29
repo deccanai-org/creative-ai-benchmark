@@ -18,6 +18,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 import round2  # noqa: E402  (round 2: one handler per rule round 1 could not convert)
 import round3  # noqa: E402  (round 3: colour on images, defined roles, measurable judgement rules)
 import round4  # noqa: E402  (round 4: the remaining checks code can measure exactly)
+import round5  # noqa: E402  (round 5: close calls settled by code; vision-model checks)
 TASKS = ROOT / 'docs/gatsby-v7/tasks'
 GROUPS = ROOT / 'docs/gatsby-v7/annotation-pilot-v2/groups'
 HERE = Path(__file__).resolve().parent
@@ -531,10 +532,13 @@ HOW = {
 HOW.update(round2.HOW)
 HOW.update(round3.HOW)
 HOW.update(round4.HOW)
+HOW.update(round5.HOW)
 
 
 def how(a) -> str:
     """How the code checks it, in plain words; a combined check names its parts."""
+    if a.get('how'):   # round 5: a handler may give the rule its own sentence (vision-model questions differ per rule)
+        return a['how']
     if a['op'] == 'v2_contains_asset':
         tests = [t for t, on in (('keeps its own proportions', a.get('shape', True)), ('lies fully inside the image', a.get('inside')),
                                  ('is shown no larger than its native size', a.get('max_scale'))) if on]
@@ -569,10 +573,13 @@ def main():
     # round 3 also converts rules first sorted as later (colour on images), needing a definition, or judgement,
     # wherever a round-3 handler exists for them
     plan = [p for p in json.loads(PLAN.read_text())
-            if p['status'] == 'auto' or (p['task'], p['rule']) in round3.R3 or (p['task'], p['rule']) in round4.R4]
-    # a round-4 handler replaces an earlier conversion of the same rule: list every replacement
+            if p['status'] == 'auto' or (p['task'], p['rule']) in round3.R3 or (p['task'], p['rule']) in round4.R4
+            or (p['task'], p['rule']) in round5.R5]
+    # a round-4 or round-5 handler replaces an earlier conversion of the same rule: list every replacement
     for key in sorted(set(round4.R4) & (set(round2.R2) | set(round3.R3))):
         print('round 4 replaces', 'round 2' if key in round2.R2 else 'round 3', 'for', *key)
+    for key in sorted(set(round5.R5) & (set(round2.R2) | set(round3.R3) | set(round4.R4))):
+        print('round 5 replaces', 'round 4' if key in round4.R4 else 'round 2' if key in round2.R2 else 'round 3', 'for', *key)
     out_dir.mkdir(parents=True, exist_ok=True)
     summary, left = Counter(), defaultdict(list)
     for tid in TASK_IDS:
@@ -582,7 +589,9 @@ def main():
         moved = []
         for p in (p for p in plan if p['task'] == tid):
             rule = ctx.rules[p['rule']]
-            if (tid, p['rule']) in round4.R4:
+            if (tid, p['rule']) in round5.R5:
+                assertions = [round5.convert(tid, p['rule'], row, ctx) for row in rule['rows']]
+            elif (tid, p['rule']) in round4.R4:
                 assertions = [round4.convert(tid, p['rule'], row, ctx) for row in rule['rows']]
             elif (tid, p['rule']) in round2.R2:
                 assertions = [round2.convert(tid, p['rule'], row, ctx) for row in rule['rows']]

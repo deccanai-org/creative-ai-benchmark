@@ -78,9 +78,30 @@ def coded_rule_html(rule: dict, ctx: dict, limits: list) -> str:
     """v2's rendering of a rule answered by code, with the limits it decides by."""
     html = v2.rule_html(rule, ctx)
     if limits:
-        tail = 'A row comes back to a person when the code cannot read or find what it needs.</p>'
-        html = html.replace(tail, tail + f'<p class="rule-limits"><strong>Limits chosen in code:</strong> {esc(limit_text(limits))}.</p>', 1)
+        start = html.find('<p class="rule-code">')
+        end = html.find('</p>', start) + len('</p>')
+        if start < 0 or end < len('</p>'):
+            raise ValueError(f'{rule["rule_id"]}: no how paragraph to put the limits under')
+        html = html[:end] + f'<p class="rule-limits"><strong>Limits chosen in code:</strong> {esc(limit_text(limits))}.</p>' + html[end:]
     return html
+
+
+VLM_NAME = 'Gemini 3.8 Flash, temperature 0, on Google Vertex'
+
+
+def who(rule: dict) -> str:
+    """Who answers a rule: person, code or vision model (round 5)."""
+    return rule.get('code_method', 'code') if rule.get('answered_by') == 'code' else 'person'
+
+
+def by_vlm(rules: list[dict]) -> list[dict]:
+    """Rules answered by the vision model (round 5)."""
+    return [r for r in rules if r.get('answered_by') == 'code' and r.get('code_method') == 'vision model']
+
+
+def answered_how(rules: list[dict]) -> str:
+    """'by code' while no rule of the set uses the vision model, else 'automatically'."""
+    return 'automatically' if by_vlm(rules) else 'by code'
 
 
 def k_blocks(task_id: str, spec: dict, rules: list[dict], catalog: list[dict], ctx: dict, page: str, limits: dict) -> tuple[str, str]:
@@ -124,7 +145,7 @@ def k_blocks(task_id: str, spec: dict, rules: list[dict], catalog: list[dict], c
                     parts.extend(render(r) for r in here)
             if there and page == 'human':
                 parts.append(f'<p class="k-moved">{count(n_there, "further check")} for this question ({count(len(there), "rule")}) '
-                             f'{"are" if n_there != 1 else "is"} answered by code: see <a href="{task_id}-auto.html#{esc(q["id"])}">Auto verifiers</a>.</p>')
+                             f'{"are" if n_there != 1 else "is"} answered {answered_how(there)}: see <a href="{task_id}-auto.html#{esc(q["id"])}">Auto verifiers</a>.</p>')
             if not members and page == 'human':
                 auto = [c for c in spec['verifiers_auto'] if v2.AUTO2K.get((c.get('assertion') or {}).get('op')) == q['id']]
                 if auto:
@@ -141,7 +162,7 @@ def k_blocks(task_id: str, spec: dict, rules: list[dict], catalog: list[dict], c
     if page == 'human':
         coverage = (f'<p class="k-coverage">{answered["task"] + answered["other"] + answered["auto"]} of {total} objective rubric questions are '
                     f'answered for this task: {answered["task"]} with rules for people on this page, {answered["other"]} only by human checks '
-                    f'now answered by code, and {answered["auto"]} by the automatic layer.</p>')
+                    f'now answered {answered_how(rules)}, and {answered["auto"]} by the automatic layer.</p>')
     else:
         coverage = ''
     return coverage, ''.join(blocks)
@@ -160,7 +181,7 @@ def write_human_page(task_id: str, spec: dict, rules: list[dict], catalog: list[
     coded = [r for r in rules if r.get('answered_by') == 'code']
     checks, code_checks = sum(len(r['rows']) for r in people), sum(len(r['rows']) for r in coded)
     coverage, blocks = k_blocks(task_id, spec, rules, catalog, ctx, 'human', {})
-    moved = (f' The other {code_checks} human checks of this task ({count(len(coded), "rule")}) are now answered by code and are listed on '
+    moved = (f' The other {code_checks} human checks of this task ({count(len(coded), "rule")}) are now answered {answered_how(coded)} and are listed on '
              f'the <a href="{task_id}-auto.html">Auto verifiers</a> page; each K question below says how many of its checks moved.') if coded else ''
     options = ''.join(f'<option value="{esc(o["output_id"])}">{esc(o["name"])}</option>' for o in spec['deliverables'])
     page = f"""<!doctype html>
@@ -222,12 +243,31 @@ def write_auto_page(task_id: str, spec: dict, rules: list[dict], catalog: list[d
     _, blocks = k_blocks(task_id, spec, rules, catalog, ctx, 'auto', limits)
     own, n_own = own_auto_html(task_id, spec, results)
     back = sum(1 for r in coded for row in r['rows'] if (v2.PILOT.get(row['check_id']) or {}).get('status') == 'person')
+    vlm = by_vlm(coded)
+    vlm_checks = sum(len(r['rows']) for r in vlm)
     run_note = (f' On the 2026-09-28 run, {count(back, "row")} of the moved checks came back to a person because the code could not '
-                f'read or find what the check needs; a person answers those rows.') if back else ''
+                f'read or find what the check needs{" or the vision model could not answer the same twice" if vlm else ""}; '
+                f'a person answers those rows.') if back else ''
+    if vlm:
+        lead = (f'<p><strong>{count(n_own + code_checks, "check")} answered automatically:</strong> the task\'s {count(n_own, "automatic check")}, '
+                f'unchanged from the V7 site, and {count(code_checks, "human check")} now answered automatically: '
+                f'{count(code_checks - vlm_checks, "check")} by code and {count(vlm_checks, "check")} by a vision model. The code reads the delivered '
+                f'file directly (PDF and SVG text, fonts, sizes and colours), reads images and video frames by OCR, and measures pictures against '
+                f'the supplied files. The vision model ({VLM_NAME}) answers only objective questions about a file (copy this text exactly, count '
+                f'these, is this cut off); it never sees the expected answer, code compares what it reports with the rule, each question is asked '
+                f'twice with fixed settings and both answers must agree, and every answer is saved so a re-run gives the same result. Rules it '
+                f'answers carry the Vision model label. Every check answers pass, fail or person: person means it could not be decided, so a person '
+                f'answers that row.</p>')
+    else:
+        lead = (f'<p><strong>{count(n_own + code_checks, "check")} answered by code:</strong> the task\'s {count(n_own, "automatic check")}, '
+                f'unchanged from the V7 site, and {count(code_checks, "human check")} now answered by code. The code reads the delivered file '
+                f'directly (PDF and SVG text, fonts, sizes and colours), reads images and video frames by OCR, and measures pictures against the '
+                f'supplied files. Every check answers pass, fail or person: person means the code could not decide, so a person answers that row. '
+                f'No AI model is used.</p>')
     options = ''.join(f'<option value="{esc(o["output_id"])}">{esc(o["name"])}</option>' for o in spec['deliverables'])
-    moved_part = (f'<h2 class="part-head" id="moved">Human checks now answered by code ({count(code_checks, "check")}, {count(len(coded), "rule")})</h2>'
+    moved_part = (f'<h2 class="part-head" id="moved">Human checks now answered {answered_how(coded)} ({count(code_checks, "check")}, {count(len(coded), "rule")})</h2>'
                   f'<p class="auto-intro">These were human checks in v1 and v2. Each keeps its check ID, K question and critical flag, so scoring '
-                  f'does not change. Under each rule: how the code checks it, the limits it decides by, and its answer on every row.{run_note}</p>'
+                  f'does not change. Under each rule: {"how it is checked" if vlm else "how the code checks it"}, the limits it decides by, and its answer on every row.{run_note}</p>'
                   + blocks) if coded else '<p class="k-empty">No human check of this task is answered by code yet.</p>'
     page = f"""<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
@@ -236,7 +276,7 @@ def write_auto_page(task_id: str, spec: dict, rules: list[dict], catalog: list[d
 {nav(task_id, f'{task_id}-auto.html')}
 <header><h1>{esc(spec["task_name"])}: auto verifiers</h1></header>
 <div class="intro">
-<p><strong>{count(n_own + code_checks, "check")} answered by code:</strong> the task's {count(n_own, "automatic check")}, unchanged from the V7 site, and {count(code_checks, "human check")} now answered by code. The code reads the delivered file directly (PDF and SVG text, fonts, sizes and colours), reads images and video frames by OCR, and measures pictures against the supplied files. Every check answers pass, fail or person: person means the code could not decide, so a person answers that row. No AI model is used.</p>
+{lead}
 <p><a href="{task_id}-verifiers.html">Human verifiers</a> lists the checks people still answer. <a href="{V2_DIR}/automation.html">How every moved rule was tested</a>.</p>
 </div>
 {TOOLS.format(n=len(spec["deliverables"]), options=options)}
@@ -290,14 +330,14 @@ def write_index(summary: list[tuple[str, dict, list[dict]]]) -> None:
     page = f"""<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Pilot task briefs v3</title><style>{CSS}{v2.V2_CSS}{V3_CSS}.vlinks{{font-size:14px;color:#5b6760}}.page li{{margin:0 0 12px}}</style></head><body>
 <main class="page">
-<h1>Pilot task briefs, v3: human checks now answered by code moved to Auto verifiers</h1>
+<h1>Pilot task briefs, v3: human checks now answered {answered_how([x for _, _, r in summary for x in r])} moved to Auto verifiers</h1>
 <div class="scroll-x"><table class="summary"><thead><tr><th>Task</th><th>Name</th><th class="n">Human checks</th><th class="n">Auto checks</th></tr></thead>
 <tbody>{"".join(rows)}</tbody></table></div>
 <h2>How to read a rule</h2>{v2.HOW_TO_READ}
 <h2>Tasks</h2><ul class="rules-list">{items}</ul>
 <h2>Downloads</h2>
 <ul class="rules-list">
-<li><a href="export/grouped_human_rules.csv">grouped_human_rules.csv</a>: one row per rule, with who answers it (person or code), its scope and every check ID it covers.</li>
+<li><a href="export/grouped_human_rules.csv">grouped_human_rules.csv</a>: one row per rule, with who answers it ({"person, code or vision model" if by_vlm([x for _, _, r in summary for x in r]) else "person or code"}), its scope and every check ID it covers.</li>
 <li><a href="export/grouped_human_rule_rows.csv">grouped_human_rule_rows.csv</a>: one row per check, with its rule, its values, its original wording and who answers it.</li>
 </ul>
 </main></body></html>
@@ -342,11 +382,11 @@ def main() -> None:
             rule_rows.append([task_id, rule['rule_id'], rule['section'], rule['k_id'], rule['method'], 'yes' if rule['critical'] else '',
                               'yes' if rule['conditional'] else '', rule['scope'], v2.template_text(rule['template'], labels),
                               v2.template_text(rule['note_template'], labels), len(rule['rows']), len({r['output_id'] for r in rule['rows']}),
-                              ' '.join(r['check_id'] for r in rule['rows']), rule['answered_by'], ' '.join(rule['code_how'])])
+                              ' '.join(r['check_id'] for r in rule['rows']), who(rule), ' '.join(rule['code_how'])])
             for r in rule['rows']:
                 values = '; '.join(f'{k}={v}' for k, v in sorted(r['values'].items(), key=lambda kv: int(kv[0])))
                 check_rows.append([task_id, rule['rule_id'], r['check_id'], r['output_id'], r['deliverable'], r['file'], values,
-                                   r['check'], rule['answered_by']])
+                                   r['check'], who(rule)])
         summary.append((task_id, spec, rules))
         people = sum(len(r['rows']) for r in rules if r['answered_by'] != 'code')
         print(f'{task_id}: {len(ids)} human checks -> {people} for people, {len(ids) - people} by code; {len(spec["verifiers_auto"])} automatic')

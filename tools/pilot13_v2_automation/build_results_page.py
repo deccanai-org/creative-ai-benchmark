@@ -96,6 +96,26 @@ FOUND_IN_TESTING = [
      'A check about every photograph answers only when every photograph on the file is matched to a supplied one.'),
     ('OCR skipped a small plate numeral entirely while reading the other lines with full confidence.',
      'Typeface checks never pass because a line was not found; a person confirms the absence.'),
+    # round 5
+    ('Round 5 broken files added a caption or a made logo naming an act, and four earlier act-name checks failed them.',
+     'LAYOUT-12 R153, R158 and R161 read the extra name as an act name with no date line above it, and R121 read the act name '
+     'in the logo\'s lettering, although the typeset act name and its date line were right. These four rules go back to people.'),
+    ('A mascot covering FOX on the end card was read as FOX missing.',
+     'MOTION-11 R107 goes back to people: a covered word is not an absent word.'),
+    ('A planted caption was measured as a setup capital.',
+     'MOTION-11 R082 goes back to people: the caption is not the setup line.'),
+    ('The vision model read a brochure disclaimer as "not offered" and passed an added house row.',
+     'PHOTO-04 R018 now asks only for house names used as section headings, photo labels or rates-table rows.'),
+    ('One of the two answers to "copy every line" left out a planted price.',
+     'Every vision rule that passes because something is absent also asks a second, narrower question, and both must find nothing.'),
+    ('An open "list the missing parts" question listed tracing details on a correct proof.',
+     'Vision questions now name the parts the rule names, and ask about those only.'),
+    ('The vision model treated a street photo behind a sticker as outside the sticker.',
+     'The question now says that everything in the file counts, including what lies behind the sticker.'),
+    ('Both answers passed a car whose front was cut off by its frame.',
+     'PHOTO-08 R097 and R107 stay with people; so does every rule whose planted defect was missed even once.'),
+    ('The dot of an i was counted as a letter of its own, so the opening-capital ratio could not be read.',
+     'A dot stacked over its stem is joined to its letter (PHOTO-04 R080).'),
 ]
 
 
@@ -116,6 +136,15 @@ LIMIT_WORDS = {
     'fills_image': 'share of the image filled', 'chroma_ratio': 'colourfulness against the source',
     'da': 'mean shift green to red', 'db': 'mean shift blue to yellow', 'dL': 'mean shift in lightness', 'scale': 'scale against the source',
     'noise_ratio': 'grain against the source', 'warm_single': 'single warm tone', 'src_warm_single': 'source in a single warm tone',
+    # round 5
+    'pass_tol': 'passes within (share of the target)', 'inset': 'pixels just inside the photo edge left out (px)',
+    'min_piece': 'specks ignored below (px)', 'fail_piece': 'a stray piece fails from (px)',
+    'edge_ncc': 'the band along each photo edge correlates with the supplied scan at least',
+    'absent_tol': 'no pixel this close to the ground colour (RGB levels), so no type sits on it',
+    'stack_overlap': 'two pieces stacked one above the other are one letter when they overlap sideways by',
+    'small': 'a label is no taller than (share of the image height)',
+    'other_tol': 'ink this close to another palette colour is that colour (RGB levels)',
+    'near': 'a reading this similar to an allowed one, but not equal, goes to a person',
     # round 4
     'fail_mm': 'fails when off by (mm)',
     'px_mm': 'measured at (px per mm)',
@@ -277,6 +306,8 @@ def main():
         stays = {k: v for k, v in out.items() if v['verdict'] != 'moves'}
         mc = sum(len(v['checks']) for v in moves.values())
         sc = sum(len(v['checks']) for v in stays.values())
+        totals.update(vlm_moves=sum(1 for v in moves.values() if v.get('method') == 'vision model'),
+                      vlm_checks=sum(len(v['checks']) for v in moves.values() if v.get('method') == 'vision model'))
         test = Counter()
         for v in moves.values():
             t = v['test'].get('made_good') if tid in ('LAYOUT-12', 'VECTOR-04', 'MOTION-11') else v['test'].get('real')
@@ -292,44 +323,80 @@ def main():
             rule = groups[tid][rid]
             t = v['test'].get('made_good') if tid in ('LAYOUT-12', 'VECTOR-04', 'MOTION-11') else v['test'].get('real')
             t = t or {}
-            bad = sum((Counter(v['test'].get(k) or {}) for k in ('made_bad', 'made_bad2', 'made_bad3', 'made_bad4')), Counter())
+            bad = sum((Counter(v['test'].get(k) or {}) for k in ('made_bad', 'made_bad2', 'made_bad3', 'made_bad4', 'made_bad5',
+                                                                  'planted')), Counter())
             result = f'pass {t.get("pass", 0)} · person {t.get("person", 0)} · fail {t.get("fail", 0)}'
             if bad:
                 result += f' (broken files: pass {bad.get("pass", 0)} · person {bad.get("person", 0)} · fail {bad.get("fail", 0)})'
-            verdict = ('<span class="badge b-code">Moves to code</span>' if v['verdict'] == 'moves'
+            verdict = ('<span class="badge b-code b-vlm">Moves to the vision model</span>' if v['verdict'] == 'moves' and v.get('method') == 'vision model'
+                       else '<span class="badge b-code">Moves to code</span>' if v['verdict'] == 'moves'
                        else '<span class="badge">Stays with people</span>')
             crit = '<span class="badge b-crit">Critical</span>' if v['critical'] else ''
             items.append(f'<li><strong>{rid}</strong> <span class="badge b-k">{esc(k_short(v["k_id"]))}</span> {verdict} {crit}'
                          f'<br>{esc(template_text(rule["template"], rule["slot_labels"]))}'
-                         f'<br><small><strong>Code:</strong> {esc(" ".join(v["how"]))} <strong>Test:</strong> {esc(result)} '
+                         f'<br><small><strong>{"Vision model" if v.get("method") == "vision model" else "Code"}:</strong> {esc(" ".join(v["how"]))} <strong>Test:</strong> {esc(result)} '
                          f'({len(v["checks"])} check{"s" if len(v["checks"]) != 1 else ""}). {esc(v["why"][:1].upper() + v["why"][1:])}.'
                          + (f' <strong>Limits chosen in code:</strong> {esc(limit_text(v["limits"]))}.' if v.get('limits') else '')
                          + '</small></li>')
         sections.append(f'<details class="task" id="{tid}"><summary>{tid}: {len(moves)} rules · {mc} checks move; '
                         f'{len(stays)} rules stay</summary><ol class="rules-list">{"".join(items)}</ol></details>')
     found = ''.join(f'<li><strong>{esc(a)}</strong> {esc(b)}</li>' for a, b in FOUND_IN_TESTING)
+    vlm_c, vlm_r = totals['vlm_checks'], totals['vlm_moves']
+    code_c, code_r = totals['move_checks'] - vlm_c, totals['moves'] - vlm_r
+    measured = ('A PDF gives its text, fonts, sizes, colours and placed images directly. Images and video frames are read with OCR '
+                '(Tesseract 5.5). Supplied photos and logos are found by feature matching and compared pixel by pixel (OpenCV 5.0). A '
+                'typeface on an image is identified by drawing the line\'s own words in each candidate font and comparing the letter shapes.')
+    if vlm_c:
+        lead = (f'<p><strong>{totals["move_checks"]:,} checks ({totals["moves"]:,} rules) are now answered automatically: {code_c:,} '
+                f'checks ({code_r:,} rules) by code and {vlm_c:,} checks ({vlm_r:,} rules) by a vision model.</strong> A code check is a '
+                f'measurement with a fixed rule, so the same file always gets the same answer. {measured} The vision model answers only '
+                f'objective questions (round 5, below). Nothing that needs judgement moved.</p>')
+    else:
+        lead = (f'<p><strong>{totals["move_checks"]:,} checks ({totals["moves"]:,} rules) now run as code.</strong> Each is a measurement '
+                f'with a fixed rule, so the same file always gets the same answer. {measured} No AI vision model is used, and nothing that '
+                f'needs judgement moved.</p>')
+    sys.path.insert(0, str(HERE.parent / 'auto_verifier'))
+    import objective_ops  # noqa: F401  (loads every round's operations first, so round 5's modules can import them)
+    import round5   # round 5's rules, to describe the round
+    r5 = [(tid, rid, v) for tid, rules in decisions.items() for rid, v in rules.items() if (tid, rid) in round5.R5 and v['verdict'] == 'moves']
+    r5_code = [x for x in r5 if x[2].get('method') != 'vision model']
+    r5_vlm = [x for x in r5 if x[2].get('method') == 'vision model']
+    n5 = lambda xs: sum(len(x[2]['checks']) for x in xs)
+    round5 = (f'<p>Round 5 (2026-10-29) did two things. <strong>Close calls:</strong> {len(r5_code)} rules ({n5(r5_code):,} checks) whose '
+              f'code had already decided some rows without a wrong answer now decide the rest, changed only where the reading is certain. '
+              f'<strong>Vision model:</strong> {len(r5_vlm)} rules ({n5(r5_vlm):,} checks) that are objective but need eyes rather than a ruler '
+              f'(is this text printed exactly as written, how many people are shown, is a letter cut off at the edge) are answered by '
+              f'Gemini 3.8 Flash on Google Vertex at temperature 0. The model never sees the expected answer: it copies text exactly as printed, '
+              f'counts, or reports what it sees, and code compares that with the rule. Each question is asked twice with two fixed seeds, and a '
+              f'row passes or fails only when both answers agree; otherwise it goes to a person. Every answer is saved with the question and '
+              f'the fingerprint of the file, so a re-run gives the same result without asking again. The model was chosen on 23 known-answer '
+              f'questions and answered all of them right (planted misspellings copied as printed, not corrected; an added phone number and web '
+              f'address found; cut letters, people and shapes counted). Every vision rule was also tested on copies of real deliverables with '
+              f'one planted defect, or on the made files, and caught each defect; every fail on a real output was checked by eye.</p>'
+              if r5 else '')
     page = f"""<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Checks Moved to Code</title><style>{CSS}{V2_CSS}
+<title>{"Checks Answered Automatically" if vlm_c else "Checks Moved to Code"}</title><style>{CSS}{V2_CSS}
 .task{{border:1px solid #dce3df;border-radius:8px;margin:10px 0;padding:6px 12px}}.task>summary{{cursor:pointer;font-weight:600;padding:4px 0}}
 .task li{{margin:0 0 10px;overflow-wrap:anywhere}}.task small{{color:#3f4b45}}table.summary td,table.summary th{{padding:5px 8px}}</style></head><body>
 <main class="page">
 <p class="v2nav"><a href="index.html">All pilot tasks</a></p>
-<header><h1>Pilot-13 v2: human checks now answered by code</h1></header>
+<header><h1>Pilot-13 v2: human checks now answered by code{" or a vision model" if vlm_c else ""}</h1></header>
 <div class="intro">
-<p><strong>{totals["move_checks"]:,} checks ({totals["moves"]:,} rules) now run as code.</strong> Each is a measurement with a fixed rule, so the same file always gets the same answer. A PDF gives its text, fonts, sizes, colours and placed images directly. Images and video frames are read with OCR (Tesseract 5.5). Supplied photos and logos are found by feature matching and compared pixel by pixel (OpenCV 5.0). A typeface on an image is identified by drawing the line's own words in each candidate font and comparing the letter shapes. No AI vision model is used, and nothing that needs judgement moved.</p>
-<p>Round 4 (2026-10-29) added the remaining measurements: sticker and cut-file geometry (cut path offset, corner radius, arch angle), figures and signs (lining figures, dollar-sign size and alignment), rule thickness and positions, shadows, clipped whites, border casts and grain measured against the supplied photos, and video and audio (a moving mascot, no repeated shots, music taken from the supplied track, captures not enlarged). Every round-4 check was run twice and gave the same answer both times.</p>
+{lead}
+{round5}<p>Round 4 (2026-10-29) added the remaining measurements: sticker and cut-file geometry (cut path offset, corner radius, arch angle), figures and signs (lining figures, dollar-sign size and alignment), rule thickness and positions, shadows, clipped whites, border casts and grain measured against the supplied photos, and video and audio (a moving mascot, no repeated shots, music taken from the supplied track, captures not enlarged). Every round-4 check was run twice and gave the same answer both times.</p>
 <p>Round 3 (2026-10-28) added colour on images, photographs compared with their supplied files, typefaces on images, and the rules that needed a definition. Where a rule is worded as how something looks ("the water reads pale turquoise as in the source", "not visibly letterspaced"), the code measures it against limits: clearly within passes, clearly outside fails, anything between goes to a person. Every moved rule below lists the limits it decides by.</p>
 <p>Every automatic check answers pass, fail or person. <strong>Person</strong> means the code could not decide, so that row goes back to a person. The code never passes what it cannot read. A near miss that could be a misreading (Lindqvist read as "Lindavist") goes to a person, not to a fail. A difference only in letter case goes to a person too. Each check keeps its ID, K question and critical flag, so scoring does not change.</p>
 </div>
 <h2>Where the 1,500 rules stand</h2>
 <p>Each rule was first sorted by what answering it takes. The columns show where each group stands now.</p>
-<div class="scroll-x"><table class="summary"><thead><tr><th>First sorted as</th><th class="n">Rules</th><th class="n">Checks</th><th class="n">Moved to code</th><th class="n">Code built, stays with people</th><th class="n">Left with people</th></tr></thead><tbody>
+<div class="scroll-x"><table class="summary"><thead><tr><th>First sorted as</th><th class="n">Rules</th><th class="n">Checks</th><th class="n">{"Moved (code or vision model)" if vlm_c else "Moved to code"}</th><th class="n">Code built, stays with people</th><th class="n">Left with people</th></tr></thead><tbody>
 {group_rows}
 </tbody></table></div>
+{f'<p>Of the moved checks, {vlm_c:,} ({vlm_r:,} rules) are answered by the vision model and {code_c:,} by code.</p>' if vlm_c else ''}
 <p>"Code built, stays with people" means the automatic check exists, but on the test files it gave a wrong answer or decided fewer than half of the rows, so a person keeps answering it for now.</p>
 <h2>Test results for the moved rules</h2>
-<p>The ten tasks with outputs were tested on the 102 deliverables of the 2026-09-28 run. LAYOUT-12, VECTOR-04 and MOTION-11 have no run output, so test files were made from each task's own data in five sets: a correct set, and four sets with one planted defect per file (a wrong weekday, acts out of order, an off-palette colour hidden in CSS, a title cut off at the edge, an act billed with the wrong date, a sticker traced from the wrong bag photo, a thumbnail built on another video's frame; in round 3 a scrim over the photograph, a wordmark inked in the wrong colour, a shadow behind a sticker, a title word with no outline, synthesised music in place of the supplied track; in round 4 a cut path off by a millimetre, a sharp corner, a mascot held still all film, a capture blown up into blocks, photo grain smoothed away). For every moved rule, each planted defect was failed or sent to a person, and no correct file failed. Every fail on the real outputs was checked by eye.</p>
+<p>The ten tasks with outputs were tested on the 102 deliverables of the 2026-09-28 run. LAYOUT-12, VECTOR-04 and MOTION-11 have no run output, so test files were made from each task's own data in six sets: a correct set, and five sets with one planted defect per file (a wrong weekday, acts out of order, an off-palette colour hidden in CSS, a title cut off at the edge, an act billed with the wrong date, a sticker traced from the wrong bag photo, a thumbnail built on another video's frame; in round 3 a scrim over the photograph, a wordmark inked in the wrong colour, a shadow behind a sticker, a title word with no outline, synthesised music in place of the supplied track; in round 4 a cut path off by a millimetre, a sharp corner, a mascot held still all film, a capture blown up into blocks, photo grain smoothed away; in round 5 a caption naming a pictured act, a made act logo, a sponsor mark, a speech bubble, a misspelt title, a teaser cut before its end card, a sticker with a part cut away). Round 5 also planted one defect each in copies of real deliverables of the PHOTO tasks (72 copies: a misspelt name, a changed price or stay, an added phone number or web address, a letter cut at the edge, a second person, a recoloured line, an added panel), since those tasks have no made files. For every moved rule, each planted defect was failed or sent to a person, and no correct file failed. Every fail on the real outputs was checked by eye.</p>
 <div class="scroll-x"><table class="summary"><thead><tr><th>Task</th><th class="n">Rules moved</th><th class="n">Checks moved</th><th class="n">Pass</th><th class="n">Person</th><th class="n">Fail</th><th>Tested on</th><th class="n">Rules staying</th></tr></thead>
 <tbody>{"".join(task_rows)}<tr><td><strong>Total</strong></td><td class="n"><strong>{totals["moves"]:,}</strong></td><td class="n"><strong>{totals["move_checks"]:,}</strong></td><td class="n">{totals["passed"]:,}</td><td class="n">{totals["person"]:,}</td><td class="n">{totals["failed"]:,}</td><td></td><td class="n">{totals["stays"]:,}</td></tr></tbody></table></div>
 <p>Pass, Person and Fail count test rows: the 2026-09-28 outputs for the ten tasks with a run, the correct made files for LAYOUT-12, VECTOR-04 and MOTION-11.</p>
@@ -341,6 +408,7 @@ def main():
 <li><strong>Letter case.</strong> When a check says a line "reads exactly" a value and the design sets it in capitals ("OPENING KEYNOTE" for "Opening Keynote", "SPRING" for "Spring"), should that count as matching? Today those rows go to a person. If case should not matter, they would pass automatically.</li>
 <li><strong>Definitions chosen in code.</strong> Rules about "body text", "headings", "fine print" or "captions" now use one definition, read the same way on every file: running text is sentence-case lines not repeated with only figures changed; body text is the running lines at the size carrying the most characters; headings are set at 1.3 times that size or more (the main heading at the largest size); fine print is under 0.85 times it, captions in sentence case and labels in capitals. A panel is a filled area of 2% of the page or more; an overlay is anything semi-transparent or shaded drawn over a placed photo. Please say if any of these should read differently. Rules where only a circular definition was possible stay with people.</li>
 <li><strong>Limits chosen in code.</strong> Rules worded as how something looks are decided by the limits listed under each moved rule (for example letter spacing passes up to 0.002 em and fails from 0.025 em; a photograph passes as unchanged when every tile still correlates 0.95 or more with the supplied file). Please say if any limit should be tighter or looser.</li>
+{'<li><strong>Vision model and absence.</strong> Some vision-model rules pass when both answers find none of a forbidden thing (a phone number, a sponsor mark, a second person). Each of those rules was first shown to catch that thing on copies where it was planted at the size it would have on these files. Should such rows pass, as now, or go to a person?</li>' if vlm_c else ''}
 <li><strong>Text that is not there.</strong> An optional check ("if a price appears") passes on an image when OCR reads every line at 80% confidence or more and finds no such text. In round 3, OCR skipped a small plate numeral entirely while reading the rest with full confidence, so typeface checks now send an absence to a person. The other image checks still pass an absence, as published in rounds 1 and 2. Should they send it to a person too? That would be safer, and would lower the number of checks answered by code.</li>
 </ul>
 <h2>Every converted rule</h2>

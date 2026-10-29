@@ -471,14 +471,16 @@
    "critical": false,
    "check": "The asking price on “Vehicle sales card - M3082” (vehicle-card-r002.png) is $26,900, matching the asking_price 26900 in meridian_intake_week.csv, row 2.",
    "assertion": {
-    "op": "v2_text_present",
+    "op": "vlm_read_r5v",
+    "question": "This is a vehicle sales card. Copy the figure of the vehicle's asking price exactly as printed (its digits and commas), as one value, leaving out the currency sign. Copy only the asking price, not the mileage, stock number or any other figure.",
     "expected": [
-     {
-      "regex": "\\$\\s?(?<![\\d,.])26,?900(?![\\d,.]|\\d)"
-     }
-    ]
+     "26,900",
+     "$26,900",
+     "$ 26,900"
+    ],
+    "how": "Asks the vision model to copy the asking price as printed; code checks it is the asking_price in meridian_intake_week.csv."
    },
-   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+   "how": "Asks the vision model to copy the asking price as printed; code checks it is the asking_price in meridian_intake_week.csv."
   },
   {
    "check_id": "PHOTO-08/vehicle-card-r003/H009",
@@ -488,14 +490,16 @@
    "critical": false,
    "check": "The asking price on “Vehicle sales card - M3091” (vehicle-card-r003.png) is $24,500, matching the asking_price 24500 in meridian_intake_week.csv, row 3.",
    "assertion": {
-    "op": "v2_text_present",
+    "op": "vlm_read_r5v",
+    "question": "This is a vehicle sales card. Copy the figure of the vehicle's asking price exactly as printed (its digits and commas), as one value, leaving out the currency sign. Copy only the asking price, not the mileage, stock number or any other figure.",
     "expected": [
-     {
-      "regex": "\\$\\s?(?<![\\d,.])24,?500(?![\\d,.]|\\d)"
-     }
-    ]
+     "24,500",
+     "$24,500",
+     "$ 24,500"
+    ],
+    "how": "Asks the vision model to copy the asking price as printed; code checks it is the asking_price in meridian_intake_week.csv."
    },
-   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+   "how": "Asks the vision model to copy the asking price as printed; code checks it is the asking_price in meridian_intake_week.csv."
   },
   {
    "check_id": "PHOTO-08/vehicle-card-r004/H009",
@@ -505,14 +509,16 @@
    "critical": false,
    "check": "The asking price on “Vehicle sales card - M2417” (vehicle-card-r004.png) is $23,900, matching the asking_price 23900 in meridian_intake_week.csv, row 4.",
    "assertion": {
-    "op": "v2_text_present",
+    "op": "vlm_read_r5v",
+    "question": "This is a vehicle sales card. Copy the figure of the vehicle's asking price exactly as printed (its digits and commas), as one value, leaving out the currency sign. Copy only the asking price, not the mileage, stock number or any other figure.",
     "expected": [
-     {
-      "regex": "\\$\\s?(?<![\\d,.])23,?900(?![\\d,.]|\\d)"
-     }
-    ]
+     "23,900",
+     "$23,900",
+     "$ 23,900"
+    ],
+    "how": "Asks the vision model to copy the asking price as printed; code checks it is the asking_price in meridian_intake_week.csv."
    },
-   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+   "how": "Asks the vision model to copy the asking price as printed; code checks it is the asking_price in meridian_intake_week.csv."
   },
   {
    "check_id": "PHOTO-08/vehicle-card-r005/H009",
@@ -522,14 +528,16 @@
    "critical": false,
    "check": "The asking price on “Vehicle sales card - M3105” (vehicle-card-r005.png) is $31,900, matching the asking_price 31900 in meridian_intake_week.csv, row 5.",
    "assertion": {
-    "op": "v2_text_present",
+    "op": "vlm_read_r5v",
+    "question": "This is a vehicle sales card. Copy the figure of the vehicle's asking price exactly as printed (its digits and commas), as one value, leaving out the currency sign. Copy only the asking price, not the mileage, stock number or any other figure.",
     "expected": [
-     {
-      "regex": "\\$\\s?(?<![\\d,.])31,?900(?![\\d,.]|\\d)"
-     }
-    ]
+     "31,900",
+     "$31,900",
+     "$ 31,900"
+    ],
+    "how": "Asks the vision model to copy the asking price as printed; code checks it is the asking_price in meridian_intake_week.csv."
    },
-   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+   "how": "Asks the vision model to copy the asking price as printed; code checks it is the asking_price in meridian_intake_week.csv."
   },
   {
    "check_id": "PHOTO-08/vehicle-card-r006/H009",
@@ -539,14 +547,16 @@
    "critical": false,
    "check": "The asking price on “Vehicle sales card - M2471” (vehicle-card-r006.png) is $24,900, matching the asking_price 24900 in meridian_intake_week.csv, row 6.",
    "assertion": {
-    "op": "v2_text_present",
+    "op": "vlm_read_r5v",
+    "question": "This is a vehicle sales card. Copy the figure of the vehicle's asking price exactly as printed (its digits and commas), as one value, leaving out the currency sign. Copy only the asking price, not the mileage, stock number or any other figure.",
     "expected": [
-     {
-      "regex": "\\$\\s?(?<![\\d,.])24,?900(?![\\d,.]|\\d)"
-     }
-    ]
+     "24,900",
+     "$24,900",
+     "$ 24,900"
+    ],
+    "how": "Asks the vision model to copy the asking price as printed; code checks it is the asking_price in meridian_intake_week.csv."
    },
-   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+   "how": "Asks the vision model to copy the asking price as printed; code checks it is the asking_price in meridian_intake_week.csv."
   },
   {
    "check_id": "PHOTO-08/vehicle-card-r007/H009",
@@ -556,14 +566,16 @@
    "critical": false,
    "check": "The asking price on “Vehicle sales card - M3119” (vehicle-card-r007.png) is $29,900, matching the asking_price 29900 in meridian_intake_week.csv, row 7.",
    "assertion": {
-    "op": "v2_text_present",
+    "op": "vlm_read_r5v",
+    "question": "This is a vehicle sales card. Copy the figure of the vehicle's asking price exactly as printed (its digits and commas), as one value, leaving out the currency sign. Copy only the asking price, not the mileage, stock number or any other figure.",
     "expected": [
-     {
-      "regex": "\\$\\s?(?<![\\d,.])29,?900(?![\\d,.]|\\d)"
-     }
-    ]
+     "29,900",
+     "$29,900",
+     "$ 29,900"
+    ],
+    "how": "Asks the vision model to copy the asking price as printed; code checks it is the asking_price in meridian_intake_week.csv."
    },
-   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+   "how": "Asks the vision model to copy the asking price as printed; code checks it is the asking_price in meridian_intake_week.csv."
   },
   {
    "check_id": "PHOTO-08/vehicle-card-r002/H014",
@@ -806,12 +818,242 @@
    "critical": false,
    "check": "The dealership name “Meridian Motors” appears on “Forecourt inventory campaign” (inventory-campaign.png).",
    "assertion": {
-    "op": "v2_text_present",
-    "expected": [
+    "op": "vlm_text_r5v",
+    "require": [
      "Meridian Motors"
-    ]
+    ],
+    "case": "fold",
+    "how": "Asks the vision model to copy every text on the file; code checks that Meridian Motors is among them."
    },
-   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+   "how": "Asks the vision model to copy every text on the file; code checks that Meridian Motors is among them."
+  },
+  {
+   "check_id": "PHOTO-08/inventory-campaign/H007",
+   "output_id": "inventory-campaign",
+   "rule_id": "R010",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "On “Forecourt inventory campaign” (inventory-campaign.png), the car photographed in M3082_norsted_alta_front34.jpg, M3082_norsted_alta_side.jpg or M3082_norsted_alta_rear34.jpg is captioned “2019 Norsted Alta”.",
+   "assertion": {
+    "op": "vlm_read_r5v",
+    "images": [
+     {
+      "src": "deliverable",
+      "label": "Image 1:"
+     },
+     {
+      "src": "asset:M3082_norsted_alta_front34.jpg",
+      "label": "Image 2:",
+      "max_side": 768
+     },
+     {
+      "src": "asset:M3082_norsted_alta_side.jpg",
+      "label": "Image 3:",
+      "max_side": 768
+     },
+     {
+      "src": "asset:M3082_norsted_alta_rear34.jpg",
+      "label": "Image 4:",
+      "max_side": 768
+     }
+    ],
+    "expected": [
+     "2019 Norsted Alta"
+    ],
+    "question": "Image 1 is a vehicle inventory campaign showing several vehicles, each in its own panel with a caption under its photo. Images 2, 3 and 4 are reference photos of one vehicle from three angles. Find the vehicle in Image 1 that is this same vehicle (same body shape, details and colour). Copy the year and model name printed in the caption under that vehicle's photo, exactly as printed, without any trim, stock number or other text. If no vehicle in Image 1 is this vehicle, answer no with no values.",
+    "how": "Gives the vision model the campaign and the supplied photos of one vehicle and asks it to copy the caption under that vehicle; code checks it is the year and make_model in meridian_intake_week.csv."
+   },
+   "how": "Gives the vision model the campaign and the supplied photos of one vehicle and asks it to copy the caption under that vehicle; code checks it is the year and make_model in meridian_intake_week.csv."
+  },
+  {
+   "check_id": "PHOTO-08/inventory-campaign/H017",
+   "output_id": "inventory-campaign",
+   "rule_id": "R010",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "On “Forecourt inventory campaign” (inventory-campaign.png), the car photographed in M3091_ardmoor_ridge_front34.jpg, M3091_ardmoor_ridge_side.jpg or M3091_ardmoor_ridge_rear34.jpg is captioned “2018 Ardmoor Ridge”.",
+   "assertion": {
+    "op": "vlm_read_r5v",
+    "images": [
+     {
+      "src": "deliverable",
+      "label": "Image 1:"
+     },
+     {
+      "src": "asset:M3091_ardmoor_ridge_front34.jpg",
+      "label": "Image 2:",
+      "max_side": 768
+     },
+     {
+      "src": "asset:M3091_ardmoor_ridge_side.jpg",
+      "label": "Image 3:",
+      "max_side": 768
+     },
+     {
+      "src": "asset:M3091_ardmoor_ridge_rear34.jpg",
+      "label": "Image 4:",
+      "max_side": 768
+     }
+    ],
+    "expected": [
+     "2018 Ardmoor Ridge"
+    ],
+    "question": "Image 1 is a vehicle inventory campaign showing several vehicles, each in its own panel with a caption under its photo. Images 2, 3 and 4 are reference photos of one vehicle from three angles. Find the vehicle in Image 1 that is this same vehicle (same body shape, details and colour). Copy the year and model name printed in the caption under that vehicle's photo, exactly as printed, without any trim, stock number or other text. If no vehicle in Image 1 is this vehicle, answer no with no values.",
+    "how": "Gives the vision model the campaign and the supplied photos of one vehicle and asks it to copy the caption under that vehicle; code checks it is the year and make_model in meridian_intake_week.csv."
+   },
+   "how": "Gives the vision model the campaign and the supplied photos of one vehicle and asks it to copy the caption under that vehicle; code checks it is the year and make_model in meridian_intake_week.csv."
+  },
+  {
+   "check_id": "PHOTO-08/inventory-campaign/H027",
+   "output_id": "inventory-campaign",
+   "rule_id": "R010",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "On “Forecourt inventory campaign” (inventory-campaign.png), the car photographed in M2417_calder_vireo_front34.jpg, M2417_calder_vireo_side.jpg or M2417_calder_vireo_rear34.jpg is captioned “2017 Calder Vireo”.",
+   "assertion": {
+    "op": "vlm_read_r5v",
+    "images": [
+     {
+      "src": "deliverable",
+      "label": "Image 1:"
+     },
+     {
+      "src": "asset:M2417_calder_vireo_front34.jpg",
+      "label": "Image 2:",
+      "max_side": 768
+     },
+     {
+      "src": "asset:M2417_calder_vireo_side.jpg",
+      "label": "Image 3:",
+      "max_side": 768
+     },
+     {
+      "src": "asset:M2417_calder_vireo_rear34.jpg",
+      "label": "Image 4:",
+      "max_side": 768
+     }
+    ],
+    "expected": [
+     "2017 Calder Vireo"
+    ],
+    "question": "Image 1 is a vehicle inventory campaign showing several vehicles, each in its own panel with a caption under its photo. Images 2, 3 and 4 are reference photos of one vehicle from three angles. Find the vehicle in Image 1 that is this same vehicle (same body shape, details and colour). Copy the year and model name printed in the caption under that vehicle's photo, exactly as printed, without any trim, stock number or other text. If no vehicle in Image 1 is this vehicle, answer no with no values.",
+    "how": "Gives the vision model the campaign and the supplied photos of one vehicle and asks it to copy the caption under that vehicle; code checks it is the year and make_model in meridian_intake_week.csv."
+   },
+   "how": "Gives the vision model the campaign and the supplied photos of one vehicle and asks it to copy the caption under that vehicle; code checks it is the year and make_model in meridian_intake_week.csv."
+  },
+  {
+   "check_id": "PHOTO-08/inventory-campaign/H036",
+   "output_id": "inventory-campaign",
+   "rule_id": "R010",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "On “Forecourt inventory campaign” (inventory-campaign.png), the car photographed in M3105_brookmere_sable_front34.jpg, M3105_brookmere_sable_side.jpg or M3105_brookmere_sable_rear34.jpg is captioned “2020 Brookmere Sable”.",
+   "assertion": {
+    "op": "vlm_read_r5v",
+    "images": [
+     {
+      "src": "deliverable",
+      "label": "Image 1:"
+     },
+     {
+      "src": "asset:M3105_brookmere_sable_front34.jpg",
+      "label": "Image 2:",
+      "max_side": 768
+     },
+     {
+      "src": "asset:M3105_brookmere_sable_side.jpg",
+      "label": "Image 3:",
+      "max_side": 768
+     },
+     {
+      "src": "asset:M3105_brookmere_sable_rear34.jpg",
+      "label": "Image 4:",
+      "max_side": 768
+     }
+    ],
+    "expected": [
+     "2020 Brookmere Sable"
+    ],
+    "question": "Image 1 is a vehicle inventory campaign showing several vehicles, each in its own panel with a caption under its photo. Images 2, 3 and 4 are reference photos of one vehicle from three angles. Find the vehicle in Image 1 that is this same vehicle (same body shape, details and colour). Copy the year and model name printed in the caption under that vehicle's photo, exactly as printed, without any trim, stock number or other text. If no vehicle in Image 1 is this vehicle, answer no with no values.",
+    "how": "Gives the vision model the campaign and the supplied photos of one vehicle and asks it to copy the caption under that vehicle; code checks it is the year and make_model in meridian_intake_week.csv."
+   },
+   "how": "Gives the vision model the campaign and the supplied photos of one vehicle and asks it to copy the caption under that vehicle; code checks it is the year and make_model in meridian_intake_week.csv."
+  },
+  {
+   "check_id": "PHOTO-08/inventory-campaign/H046",
+   "output_id": "inventory-campaign",
+   "rule_id": "R010",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "On “Forecourt inventory campaign” (inventory-campaign.png), the car photographed in M2471_calder_kestrel_front34.jpg, M2471_calder_kestrel_side.jpg or M2471_calder_kestrel_rear34.jpg is captioned “2017 Calder Kestrel”.",
+   "assertion": {
+    "op": "vlm_read_r5v",
+    "images": [
+     {
+      "src": "deliverable",
+      "label": "Image 1:"
+     },
+     {
+      "src": "asset:M2471_calder_kestrel_front34.jpg",
+      "label": "Image 2:",
+      "max_side": 768
+     },
+     {
+      "src": "asset:M2471_calder_kestrel_side.jpg",
+      "label": "Image 3:",
+      "max_side": 768
+     },
+     {
+      "src": "asset:M2471_calder_kestrel_rear34.jpg",
+      "label": "Image 4:",
+      "max_side": 768
+     }
+    ],
+    "expected": [
+     "2017 Calder Kestrel"
+    ],
+    "question": "Image 1 is a vehicle inventory campaign showing several vehicles, each in its own panel with a caption under its photo. Images 2, 3 and 4 are reference photos of one vehicle from three angles. Find the vehicle in Image 1 that is this same vehicle (same body shape, details and colour). Copy the year and model name printed in the caption under that vehicle's photo, exactly as printed, without any trim, stock number or other text. If no vehicle in Image 1 is this vehicle, answer no with no values.",
+    "how": "Gives the vision model the campaign and the supplied photos of one vehicle and asks it to copy the caption under that vehicle; code checks it is the year and make_model in meridian_intake_week.csv."
+   },
+   "how": "Gives the vision model the campaign and the supplied photos of one vehicle and asks it to copy the caption under that vehicle; code checks it is the year and make_model in meridian_intake_week.csv."
+  },
+  {
+   "check_id": "PHOTO-08/inventory-campaign/H056",
+   "output_id": "inventory-campaign",
+   "rule_id": "R010",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "On “Forecourt inventory campaign” (inventory-campaign.png), the car photographed in M3119_norsted_fjord_front34.jpg, M3119_norsted_fjord_side.jpg or M3119_norsted_fjord_rear34.jpg is captioned “2019 Norsted Fjord”.",
+   "assertion": {
+    "op": "vlm_read_r5v",
+    "images": [
+     {
+      "src": "deliverable",
+      "label": "Image 1:"
+     },
+     {
+      "src": "asset:M3119_norsted_fjord_front34.jpg",
+      "label": "Image 2:",
+      "max_side": 768
+     },
+     {
+      "src": "asset:M3119_norsted_fjord_side.jpg",
+      "label": "Image 3:",
+      "max_side": 768
+     },
+     {
+      "src": "asset:M3119_norsted_fjord_rear34.jpg",
+      "label": "Image 4:",
+      "max_side": 768
+     }
+    ],
+    "expected": [
+     "2019 Norsted Fjord"
+    ],
+    "question": "Image 1 is a vehicle inventory campaign showing several vehicles, each in its own panel with a caption under its photo. Images 2, 3 and 4 are reference photos of one vehicle from three angles. Find the vehicle in Image 1 that is this same vehicle (same body shape, details and colour). Copy the year and model name printed in the caption under that vehicle's photo, exactly as printed, without any trim, stock number or other text. If no vehicle in Image 1 is this vehicle, answer no with no values.",
+    "how": "Gives the vision model the campaign and the supplied photos of one vehicle and asks it to copy the caption under that vehicle; code checks it is the year and make_model in meridian_intake_week.csv."
+   },
+   "how": "Gives the vision model the campaign and the supplied photos of one vehicle and asks it to copy the caption under that vehicle; code checks it is the year and make_model in meridian_intake_week.csv."
   },
   {
    "check_id": "PHOTO-08/inventory-campaign/H008",
@@ -908,6 +1150,144 @@
     ]
    },
    "how": "Finds every price and checks each meets the rule."
+  },
+  {
+   "check_id": "PHOTO-08/inventory-campaign/H009",
+   "output_id": "inventory-campaign",
+   "rule_id": "R012",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "Any stock number shown for the 2019 Norsted Alta on “Forecourt inventory campaign” (inventory-campaign.png) is M3082, its stock_no in meridian_intake_week.csv, row 2.",
+   "assertion": {
+    "op": "vlm_read_r5v",
+    "case": "fold",
+    "none_found": "pass",
+    "expected": [
+     "M3082",
+     "STOCK M3082",
+     "STOCK NO. M3082",
+     "STOCK NO M3082",
+     "STOCK #M3082"
+    ],
+    "question": "Image 1 shows several vehicles, each in its own panel with a caption under its photo. Find the panel whose caption names the 2019 Norsted Alta. Copy every stock number printed inside that panel, exactly as printed: only the number itself, without the word STOCK or any other label. Do not copy text from outside that panel, such as the page header or footer. If that panel shows none, answer no with no values.",
+    "how": "Asks the vision model to copy any stock number in the panel captioned with this vehicle; code checks it is the stock_no in meridian_intake_week.csv (none shown also passes)."
+   },
+   "how": "Asks the vision model to copy any stock number in the panel captioned with this vehicle; code checks it is the stock_no in meridian_intake_week.csv (none shown also passes)."
+  },
+  {
+   "check_id": "PHOTO-08/inventory-campaign/H019",
+   "output_id": "inventory-campaign",
+   "rule_id": "R012",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "Any stock number shown for the 2018 Ardmoor Ridge on “Forecourt inventory campaign” (inventory-campaign.png) is M3091, its stock_no in meridian_intake_week.csv, row 3.",
+   "assertion": {
+    "op": "vlm_read_r5v",
+    "case": "fold",
+    "none_found": "pass",
+    "expected": [
+     "M3091",
+     "STOCK M3091",
+     "STOCK NO. M3091",
+     "STOCK NO M3091",
+     "STOCK #M3091"
+    ],
+    "question": "Image 1 shows several vehicles, each in its own panel with a caption under its photo. Find the panel whose caption names the 2018 Ardmoor Ridge. Copy every stock number printed inside that panel, exactly as printed: only the number itself, without the word STOCK or any other label. Do not copy text from outside that panel, such as the page header or footer. If that panel shows none, answer no with no values.",
+    "how": "Asks the vision model to copy any stock number in the panel captioned with this vehicle; code checks it is the stock_no in meridian_intake_week.csv (none shown also passes)."
+   },
+   "how": "Asks the vision model to copy any stock number in the panel captioned with this vehicle; code checks it is the stock_no in meridian_intake_week.csv (none shown also passes)."
+  },
+  {
+   "check_id": "PHOTO-08/inventory-campaign/H029",
+   "output_id": "inventory-campaign",
+   "rule_id": "R012",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "Any stock number shown for the 2017 Calder Vireo on “Forecourt inventory campaign” (inventory-campaign.png) is M2417, its stock_no in meridian_intake_week.csv, row 4.",
+   "assertion": {
+    "op": "vlm_read_r5v",
+    "case": "fold",
+    "none_found": "pass",
+    "expected": [
+     "M2417",
+     "STOCK M2417",
+     "STOCK NO. M2417",
+     "STOCK NO M2417",
+     "STOCK #M2417"
+    ],
+    "question": "Image 1 shows several vehicles, each in its own panel with a caption under its photo. Find the panel whose caption names the 2017 Calder Vireo. Copy every stock number printed inside that panel, exactly as printed: only the number itself, without the word STOCK or any other label. Do not copy text from outside that panel, such as the page header or footer. If that panel shows none, answer no with no values.",
+    "how": "Asks the vision model to copy any stock number in the panel captioned with this vehicle; code checks it is the stock_no in meridian_intake_week.csv (none shown also passes)."
+   },
+   "how": "Asks the vision model to copy any stock number in the panel captioned with this vehicle; code checks it is the stock_no in meridian_intake_week.csv (none shown also passes)."
+  },
+  {
+   "check_id": "PHOTO-08/inventory-campaign/H038",
+   "output_id": "inventory-campaign",
+   "rule_id": "R012",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "Any stock number shown for the 2020 Brookmere Sable on “Forecourt inventory campaign” (inventory-campaign.png) is M3105, its stock_no in meridian_intake_week.csv, row 5.",
+   "assertion": {
+    "op": "vlm_read_r5v",
+    "case": "fold",
+    "none_found": "pass",
+    "expected": [
+     "M3105",
+     "STOCK M3105",
+     "STOCK NO. M3105",
+     "STOCK NO M3105",
+     "STOCK #M3105"
+    ],
+    "question": "Image 1 shows several vehicles, each in its own panel with a caption under its photo. Find the panel whose caption names the 2020 Brookmere Sable. Copy every stock number printed inside that panel, exactly as printed: only the number itself, without the word STOCK or any other label. Do not copy text from outside that panel, such as the page header or footer. If that panel shows none, answer no with no values.",
+    "how": "Asks the vision model to copy any stock number in the panel captioned with this vehicle; code checks it is the stock_no in meridian_intake_week.csv (none shown also passes)."
+   },
+   "how": "Asks the vision model to copy any stock number in the panel captioned with this vehicle; code checks it is the stock_no in meridian_intake_week.csv (none shown also passes)."
+  },
+  {
+   "check_id": "PHOTO-08/inventory-campaign/H048",
+   "output_id": "inventory-campaign",
+   "rule_id": "R012",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "Any stock number shown for the 2017 Calder Kestrel on “Forecourt inventory campaign” (inventory-campaign.png) is M2471, its stock_no in meridian_intake_week.csv, row 6.",
+   "assertion": {
+    "op": "vlm_read_r5v",
+    "case": "fold",
+    "none_found": "pass",
+    "expected": [
+     "M2471",
+     "STOCK M2471",
+     "STOCK NO. M2471",
+     "STOCK NO M2471",
+     "STOCK #M2471"
+    ],
+    "question": "Image 1 shows several vehicles, each in its own panel with a caption under its photo. Find the panel whose caption names the 2017 Calder Kestrel. Copy every stock number printed inside that panel, exactly as printed: only the number itself, without the word STOCK or any other label. Do not copy text from outside that panel, such as the page header or footer. If that panel shows none, answer no with no values.",
+    "how": "Asks the vision model to copy any stock number in the panel captioned with this vehicle; code checks it is the stock_no in meridian_intake_week.csv (none shown also passes)."
+   },
+   "how": "Asks the vision model to copy any stock number in the panel captioned with this vehicle; code checks it is the stock_no in meridian_intake_week.csv (none shown also passes)."
+  },
+  {
+   "check_id": "PHOTO-08/inventory-campaign/H058",
+   "output_id": "inventory-campaign",
+   "rule_id": "R012",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "Any stock number shown for the 2019 Norsted Fjord on “Forecourt inventory campaign” (inventory-campaign.png) is M3119, its stock_no in meridian_intake_week.csv, row 7.",
+   "assertion": {
+    "op": "vlm_read_r5v",
+    "case": "fold",
+    "none_found": "pass",
+    "expected": [
+     "M3119",
+     "STOCK M3119",
+     "STOCK NO. M3119",
+     "STOCK NO M3119",
+     "STOCK #M3119"
+    ],
+    "question": "Image 1 shows several vehicles, each in its own panel with a caption under its photo. Find the panel whose caption names the 2019 Norsted Fjord. Copy every stock number printed inside that panel, exactly as printed: only the number itself, without the word STOCK or any other label. Do not copy text from outside that panel, such as the page header or footer. If that panel shows none, answer no with no values.",
+    "how": "Asks the vision model to copy any stock number in the panel captioned with this vehicle; code checks it is the stock_no in meridian_intake_week.csv (none shown also passes)."
+   },
+   "how": "Asks the vision model to copy any stock number in the panel captioned with this vehicle; code checks it is the stock_no in meridian_intake_week.csv (none shown also passes)."
   },
   {
    "check_id": "PHOTO-08/inventory-campaign/H010",
@@ -1016,6 +1396,234 @@
     ]
    },
    "how": "Reads all text and checks none of the named words or patterns appears."
+  },
+  {
+   "check_id": "PHOTO-08/inventory-campaign/H011",
+   "output_id": "inventory-campaign",
+   "rule_id": "R014",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "Any certification tier shown for the 2019 Norsted Alta on “Forecourt inventory campaign” (inventory-campaign.png) is “Meridian Certified”, its cert_tier in meridian_intake_week.csv, row 2.",
+   "assertion": {
+    "op": "vlm_read_r5v",
+    "case": "fold",
+    "none_found": "pass",
+    "expected": [
+     "Meridian Certified"
+    ],
+    "question": "Image 1 shows several vehicles, each in its own panel with a caption under its photo. Find the panel whose caption names the 2019 Norsted Alta. Copy every certification tier printed inside that panel (a line naming the vehicle's certification level), exactly as printed. Do not copy text from outside that panel, such as the page header or footer. If that panel shows none, answer no with no values.",
+    "how": "Asks the vision model to copy any certification tier in the panel captioned with this vehicle; code checks it is the cert_tier in meridian_intake_week.csv (none shown also passes)."
+   },
+   "how": "Asks the vision model to copy any certification tier in the panel captioned with this vehicle; code checks it is the cert_tier in meridian_intake_week.csv (none shown also passes)."
+  },
+  {
+   "check_id": "PHOTO-08/inventory-campaign/H021",
+   "output_id": "inventory-campaign",
+   "rule_id": "R014",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "Any certification tier shown for the 2018 Ardmoor Ridge on “Forecourt inventory campaign” (inventory-campaign.png) is “Meridian Certified”, its cert_tier in meridian_intake_week.csv, row 3.",
+   "assertion": {
+    "op": "vlm_read_r5v",
+    "case": "fold",
+    "none_found": "pass",
+    "expected": [
+     "Meridian Certified"
+    ],
+    "question": "Image 1 shows several vehicles, each in its own panel with a caption under its photo. Find the panel whose caption names the 2018 Ardmoor Ridge. Copy every certification tier printed inside that panel (a line naming the vehicle's certification level), exactly as printed. Do not copy text from outside that panel, such as the page header or footer. If that panel shows none, answer no with no values.",
+    "how": "Asks the vision model to copy any certification tier in the panel captioned with this vehicle; code checks it is the cert_tier in meridian_intake_week.csv (none shown also passes)."
+   },
+   "how": "Asks the vision model to copy any certification tier in the panel captioned with this vehicle; code checks it is the cert_tier in meridian_intake_week.csv (none shown also passes)."
+  },
+  {
+   "check_id": "PHOTO-08/inventory-campaign/H031",
+   "output_id": "inventory-campaign",
+   "rule_id": "R014",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "Any certification tier shown for the 2017 Calder Vireo on “Forecourt inventory campaign” (inventory-campaign.png) is “Meridian Certified Plus”, its cert_tier in meridian_intake_week.csv, row 4.",
+   "assertion": {
+    "op": "vlm_read_r5v",
+    "case": "fold",
+    "none_found": "pass",
+    "expected": [
+     "Meridian Certified Plus"
+    ],
+    "question": "Image 1 shows several vehicles, each in its own panel with a caption under its photo. Find the panel whose caption names the 2017 Calder Vireo. Copy every certification tier printed inside that panel (a line naming the vehicle's certification level), exactly as printed. Do not copy text from outside that panel, such as the page header or footer. If that panel shows none, answer no with no values.",
+    "how": "Asks the vision model to copy any certification tier in the panel captioned with this vehicle; code checks it is the cert_tier in meridian_intake_week.csv (none shown also passes)."
+   },
+   "how": "Asks the vision model to copy any certification tier in the panel captioned with this vehicle; code checks it is the cert_tier in meridian_intake_week.csv (none shown also passes)."
+  },
+  {
+   "check_id": "PHOTO-08/inventory-campaign/H040",
+   "output_id": "inventory-campaign",
+   "rule_id": "R014",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "Any certification tier shown for the 2020 Brookmere Sable on “Forecourt inventory campaign” (inventory-campaign.png) is “Meridian Certified Plus”, its cert_tier in meridian_intake_week.csv, row 5.",
+   "assertion": {
+    "op": "vlm_read_r5v",
+    "case": "fold",
+    "none_found": "pass",
+    "expected": [
+     "Meridian Certified Plus"
+    ],
+    "question": "Image 1 shows several vehicles, each in its own panel with a caption under its photo. Find the panel whose caption names the 2020 Brookmere Sable. Copy every certification tier printed inside that panel (a line naming the vehicle's certification level), exactly as printed. Do not copy text from outside that panel, such as the page header or footer. If that panel shows none, answer no with no values.",
+    "how": "Asks the vision model to copy any certification tier in the panel captioned with this vehicle; code checks it is the cert_tier in meridian_intake_week.csv (none shown also passes)."
+   },
+   "how": "Asks the vision model to copy any certification tier in the panel captioned with this vehicle; code checks it is the cert_tier in meridian_intake_week.csv (none shown also passes)."
+  },
+  {
+   "check_id": "PHOTO-08/inventory-campaign/H050",
+   "output_id": "inventory-campaign",
+   "rule_id": "R014",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "Any certification tier shown for the 2017 Calder Kestrel on “Forecourt inventory campaign” (inventory-campaign.png) is “Meridian Certified”, its cert_tier in meridian_intake_week.csv, row 6.",
+   "assertion": {
+    "op": "vlm_read_r5v",
+    "case": "fold",
+    "none_found": "pass",
+    "expected": [
+     "Meridian Certified"
+    ],
+    "question": "Image 1 shows several vehicles, each in its own panel with a caption under its photo. Find the panel whose caption names the 2017 Calder Kestrel. Copy every certification tier printed inside that panel (a line naming the vehicle's certification level), exactly as printed. Do not copy text from outside that panel, such as the page header or footer. If that panel shows none, answer no with no values.",
+    "how": "Asks the vision model to copy any certification tier in the panel captioned with this vehicle; code checks it is the cert_tier in meridian_intake_week.csv (none shown also passes)."
+   },
+   "how": "Asks the vision model to copy any certification tier in the panel captioned with this vehicle; code checks it is the cert_tier in meridian_intake_week.csv (none shown also passes)."
+  },
+  {
+   "check_id": "PHOTO-08/inventory-campaign/H060",
+   "output_id": "inventory-campaign",
+   "rule_id": "R014",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "Any certification tier shown for the 2019 Norsted Fjord on “Forecourt inventory campaign” (inventory-campaign.png) is “Meridian Certified”, its cert_tier in meridian_intake_week.csv, row 7.",
+   "assertion": {
+    "op": "vlm_read_r5v",
+    "case": "fold",
+    "none_found": "pass",
+    "expected": [
+     "Meridian Certified"
+    ],
+    "question": "Image 1 shows several vehicles, each in its own panel with a caption under its photo. Find the panel whose caption names the 2019 Norsted Fjord. Copy every certification tier printed inside that panel (a line naming the vehicle's certification level), exactly as printed. Do not copy text from outside that panel, such as the page header or footer. If that panel shows none, answer no with no values.",
+    "how": "Asks the vision model to copy any certification tier in the panel captioned with this vehicle; code checks it is the cert_tier in meridian_intake_week.csv (none shown also passes)."
+   },
+   "how": "Asks the vision model to copy any certification tier in the panel captioned with this vehicle; code checks it is the cert_tier in meridian_intake_week.csv (none shown also passes)."
+  },
+  {
+   "check_id": "PHOTO-08/inventory-campaign/H012",
+   "output_id": "inventory-campaign",
+   "rule_id": "R015",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "Any trim shown for the 2019 Norsted Alta on “Forecourt inventory campaign” (inventory-campaign.png) is “SE AWD”, its trim in meridian_intake_week.csv, row 2.",
+   "assertion": {
+    "op": "vlm_read_r5v",
+    "case": "fold",
+    "none_found": "pass",
+    "expected": [
+     "SE AWD"
+    ],
+    "question": "Image 1 shows several vehicles, each in its own panel with a caption under its photo. Find the panel whose caption names the 2019 Norsted Alta. Copy the trim printed inside that panel (the trim or version name of the vehicle, such as a package, drivetrain or grade name printed with or near the model name), exactly as printed. Do not copy the year and model name themselves or the stock number. Do not copy text from outside that panel, such as the page header or footer. If that panel shows none, answer no with no values.",
+    "how": "Asks the vision model to copy any trim in the panel captioned with this vehicle; code checks it is the trim in meridian_intake_week.csv (none shown also passes)."
+   },
+   "how": "Asks the vision model to copy any trim in the panel captioned with this vehicle; code checks it is the trim in meridian_intake_week.csv (none shown also passes)."
+  },
+  {
+   "check_id": "PHOTO-08/inventory-campaign/H022",
+   "output_id": "inventory-campaign",
+   "rule_id": "R015",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "Any trim shown for the 2018 Ardmoor Ridge on “Forecourt inventory campaign” (inventory-campaign.png) is “Premium AWD”, its trim in meridian_intake_week.csv, row 3.",
+   "assertion": {
+    "op": "vlm_read_r5v",
+    "case": "fold",
+    "none_found": "pass",
+    "expected": [
+     "Premium AWD"
+    ],
+    "question": "Image 1 shows several vehicles, each in its own panel with a caption under its photo. Find the panel whose caption names the 2018 Ardmoor Ridge. Copy the trim printed inside that panel (the trim or version name of the vehicle, such as a package, drivetrain or grade name printed with or near the model name), exactly as printed. Do not copy the year and model name themselves or the stock number. Do not copy text from outside that panel, such as the page header or footer. If that panel shows none, answer no with no values.",
+    "how": "Asks the vision model to copy any trim in the panel captioned with this vehicle; code checks it is the trim in meridian_intake_week.csv (none shown also passes)."
+   },
+   "how": "Asks the vision model to copy any trim in the panel captioned with this vehicle; code checks it is the trim in meridian_intake_week.csv (none shown also passes)."
+  },
+  {
+   "check_id": "PHOTO-08/inventory-campaign/H032",
+   "output_id": "inventory-campaign",
+   "rule_id": "R015",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "Any trim shown for the 2017 Calder Vireo on “Forecourt inventory campaign” (inventory-campaign.png) is “SEL”, its trim in meridian_intake_week.csv, row 4.",
+   "assertion": {
+    "op": "vlm_read_r5v",
+    "case": "fold",
+    "none_found": "pass",
+    "expected": [
+     "SEL"
+    ],
+    "question": "Image 1 shows several vehicles, each in its own panel with a caption under its photo. Find the panel whose caption names the 2017 Calder Vireo. Copy the trim printed inside that panel (the trim or version name of the vehicle, such as a package, drivetrain or grade name printed with or near the model name), exactly as printed. Do not copy the year and model name themselves or the stock number. Do not copy text from outside that panel, such as the page header or footer. If that panel shows none, answer no with no values.",
+    "how": "Asks the vision model to copy any trim in the panel captioned with this vehicle; code checks it is the trim in meridian_intake_week.csv (none shown also passes)."
+   },
+   "how": "Asks the vision model to copy any trim in the panel captioned with this vehicle; code checks it is the trim in meridian_intake_week.csv (none shown also passes)."
+  },
+  {
+   "check_id": "PHOTO-08/inventory-campaign/H041",
+   "output_id": "inventory-campaign",
+   "rule_id": "R015",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "Any trim shown for the 2020 Brookmere Sable on “Forecourt inventory campaign” (inventory-campaign.png) is “Touring”, its trim in meridian_intake_week.csv, row 5.",
+   "assertion": {
+    "op": "vlm_read_r5v",
+    "case": "fold",
+    "none_found": "pass",
+    "expected": [
+     "Touring"
+    ],
+    "question": "Image 1 shows several vehicles, each in its own panel with a caption under its photo. Find the panel whose caption names the 2020 Brookmere Sable. Copy the trim printed inside that panel (the trim or version name of the vehicle, such as a package, drivetrain or grade name printed with or near the model name), exactly as printed. Do not copy the year and model name themselves or the stock number. Do not copy text from outside that panel, such as the page header or footer. If that panel shows none, answer no with no values.",
+    "how": "Asks the vision model to copy any trim in the panel captioned with this vehicle; code checks it is the trim in meridian_intake_week.csv (none shown also passes)."
+   },
+   "how": "Asks the vision model to copy any trim in the panel captioned with this vehicle; code checks it is the trim in meridian_intake_week.csv (none shown also passes)."
+  },
+  {
+   "check_id": "PHOTO-08/inventory-campaign/H051",
+   "output_id": "inventory-campaign",
+   "rule_id": "R015",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "Any trim shown for the 2017 Calder Kestrel on “Forecourt inventory campaign” (inventory-campaign.png) is “SEL Technology Package AWD”, its trim in meridian_intake_week.csv, row 6.",
+   "assertion": {
+    "op": "vlm_read_r5v",
+    "case": "fold",
+    "none_found": "pass",
+    "expected": [
+     "SEL Technology Package AWD"
+    ],
+    "question": "Image 1 shows several vehicles, each in its own panel with a caption under its photo. Find the panel whose caption names the 2017 Calder Kestrel. Copy the trim printed inside that panel (the trim or version name of the vehicle, such as a package, drivetrain or grade name printed with or near the model name), exactly as printed. Do not copy the year and model name themselves or the stock number. Do not copy text from outside that panel, such as the page header or footer. If that panel shows none, answer no with no values.",
+    "how": "Asks the vision model to copy any trim in the panel captioned with this vehicle; code checks it is the trim in meridian_intake_week.csv (none shown also passes)."
+   },
+   "how": "Asks the vision model to copy any trim in the panel captioned with this vehicle; code checks it is the trim in meridian_intake_week.csv (none shown also passes)."
+  },
+  {
+   "check_id": "PHOTO-08/inventory-campaign/H061",
+   "output_id": "inventory-campaign",
+   "rule_id": "R015",
+   "k_id": "K1_Q1",
+   "critical": false,
+   "check": "Any trim shown for the 2019 Norsted Fjord on “Forecourt inventory campaign” (inventory-campaign.png) is “Adventure AWD”, its trim in meridian_intake_week.csv, row 7.",
+   "assertion": {
+    "op": "vlm_read_r5v",
+    "case": "fold",
+    "none_found": "pass",
+    "expected": [
+     "Adventure AWD"
+    ],
+    "question": "Image 1 shows several vehicles, each in its own panel with a caption under its photo. Find the panel whose caption names the 2019 Norsted Fjord. Copy the trim printed inside that panel (the trim or version name of the vehicle, such as a package, drivetrain or grade name printed with or near the model name), exactly as printed. Do not copy the year and model name themselves or the stock number. Do not copy text from outside that panel, such as the page header or footer. If that panel shows none, answer no with no values.",
+    "how": "Asks the vision model to copy any trim in the panel captioned with this vehicle; code checks it is the trim in meridian_intake_week.csv (none shown also passes)."
+   },
+   "how": "Asks the vision model to copy any trim in the panel captioned with this vehicle; code checks it is the trim in meridian_intake_week.csv (none shown also passes)."
   },
   {
    "check_id": "PHOTO-08/vehicle-card-r002/H077",
@@ -1391,16 +1999,58 @@
    "critical": false,
    "check": "“Vehicle sales card - M3082” (vehicle-card-r002.png) carries no vehicle feature, condition or history claim beyond the values in meridian_intake_week.csv, row 2.",
    "assertion": {
-    "op": "v2_limit",
-    "pass_as": "person",
-    "check": {
-     "op": "v2_text_absent",
-     "patterns": {
-      "a claim beyond the record": "172[- ]?point|\\bwarrant\\w*|\\bone[- ]owner\\b|\\binspect\\w*|3,000[- ]?mi|accident[- ]free|clean title|service history"
+    "op": "v2_all_of",
+    "checks": [
+     {
+      "op": "vlm_lines_ok_r5va",
+      "question": "Copy every piece of text visible in the image, exactly as printed, one entry per line of text, in reading order (top to bottom, then left to right). Include headings, small print, labels, numbers, prices, lettering in logos and any text on photographs. answer yes if there is any text, no if there is none.",
+      "allow": [
+       "meridian motors",
+       "portland, maine",
+       "stock m3082",
+       "2019\\ norsted\\ alta",
+       "se\\ awd",
+       "\\$",
+       "26,900",
+       "\\$26,900",
+       "\\$\\ 26,900",
+       "mileage",
+       "54,210\\ miles",
+       "certification",
+       "meridian\\ certified",
+       "enquire about m3082",
+       "enquire about m3082 meridian motors",
+       "(portland, maine( ·)? )?price excludes tax, title and registration\\.?"
+      ],
+      "deny": [
+       "\\bone owner\\b",
+       "\\bowners?\\b",
+       "\\b172\\b",
+       "inspect",
+       "warrant",
+       "accident",
+       "service (history|record)",
+       "\\bclean\\b",
+       "\\bmint\\b",
+       "\\blike new\\b",
+       "\\bnew (tyres|tires|brakes)\\b",
+       "\\bfull history\\b",
+       "\\bcarfax\\b",
+       "\\bnon[- ]smok",
+       "\\bgarage[d]?\\b",
+       "\\blow (miles|mileage)\\b",
+       "\\bloaded\\b"
+      ]
+     },
+     {
+      "op": "vlm_list_r5v",
+      "question": "List every statement printed on this card about the vehicle's condition, number of owners, accident or service history, inspection, warranty or added features, other than its certification tier, trim and mileage, each copied exactly. answer yes if there is at least one, no if there is none.",
+      "none_found": "pass"
      }
-    }
+    ],
+    "how": "Asks the vision model to copy every line of text and, separately, to list any statement about condition, owners, history, inspection, warranty or features; passes only when every line is one of the row's values, the field labels, the brand and Portland, Maine or the price-terms note and no such statement is listed."
    },
-   "how": "Runs the check and lets it decide only in the direction it is sure of; the other answer goes to a person."
+   "how": "Asks the vision model to copy every line of text and, separately, to list any statement about condition, owners, history, inspection, warranty or features; passes only when every line is one of the row's values, the field labels, the brand and Portland, Maine or the price-terms note and no such statement is listed."
   },
   {
    "check_id": "PHOTO-08/vehicle-card-r003/H012",
@@ -1410,16 +2060,58 @@
    "critical": false,
    "check": "“Vehicle sales card - M3091” (vehicle-card-r003.png) carries no vehicle feature, condition or history claim beyond the values in meridian_intake_week.csv, row 3.",
    "assertion": {
-    "op": "v2_limit",
-    "pass_as": "person",
-    "check": {
-     "op": "v2_text_absent",
-     "patterns": {
-      "a claim beyond the record": "172[- ]?point|\\bwarrant\\w*|\\bone[- ]owner\\b|\\binspect\\w*|3,000[- ]?mi|accident[- ]free|clean title|service history"
+    "op": "v2_all_of",
+    "checks": [
+     {
+      "op": "vlm_lines_ok_r5va",
+      "question": "Copy every piece of text visible in the image, exactly as printed, one entry per line of text, in reading order (top to bottom, then left to right). Include headings, small print, labels, numbers, prices, lettering in logos and any text on photographs. answer yes if there is any text, no if there is none.",
+      "allow": [
+       "meridian motors",
+       "portland, maine",
+       "stock m3091",
+       "2018\\ ardmoor\\ ridge",
+       "premium\\ awd",
+       "\\$",
+       "24,500",
+       "\\$24,500",
+       "\\$\\ 24,500",
+       "mileage",
+       "61,840\\ miles",
+       "certification",
+       "meridian\\ certified",
+       "enquire about m3091",
+       "enquire about m3091 meridian motors",
+       "(portland, maine( ·)? )?price excludes tax, title and registration\\.?"
+      ],
+      "deny": [
+       "\\bone owner\\b",
+       "\\bowners?\\b",
+       "\\b172\\b",
+       "inspect",
+       "warrant",
+       "accident",
+       "service (history|record)",
+       "\\bclean\\b",
+       "\\bmint\\b",
+       "\\blike new\\b",
+       "\\bnew (tyres|tires|brakes)\\b",
+       "\\bfull history\\b",
+       "\\bcarfax\\b",
+       "\\bnon[- ]smok",
+       "\\bgarage[d]?\\b",
+       "\\blow (miles|mileage)\\b",
+       "\\bloaded\\b"
+      ]
+     },
+     {
+      "op": "vlm_list_r5v",
+      "question": "List every statement printed on this card about the vehicle's condition, number of owners, accident or service history, inspection, warranty or added features, other than its certification tier, trim and mileage, each copied exactly. answer yes if there is at least one, no if there is none.",
+      "none_found": "pass"
      }
-    }
+    ],
+    "how": "Asks the vision model to copy every line of text and, separately, to list any statement about condition, owners, history, inspection, warranty or features; passes only when every line is one of the row's values, the field labels, the brand and Portland, Maine or the price-terms note and no such statement is listed."
    },
-   "how": "Runs the check and lets it decide only in the direction it is sure of; the other answer goes to a person."
+   "how": "Asks the vision model to copy every line of text and, separately, to list any statement about condition, owners, history, inspection, warranty or features; passes only when every line is one of the row's values, the field labels, the brand and Portland, Maine or the price-terms note and no such statement is listed."
   },
   {
    "check_id": "PHOTO-08/vehicle-card-r004/H011",
@@ -1429,16 +2121,58 @@
    "critical": false,
    "check": "“Vehicle sales card - M2417” (vehicle-card-r004.png) carries no vehicle feature, condition or history claim beyond the values in meridian_intake_week.csv, row 4.",
    "assertion": {
-    "op": "v2_limit",
-    "pass_as": "person",
-    "check": {
-     "op": "v2_text_absent",
-     "patterns": {
-      "a claim beyond the record": "172[- ]?point|\\bwarrant\\w*|\\bone[- ]owner\\b|\\binspect\\w*|3,000[- ]?mi|accident[- ]free|clean title|service history"
+    "op": "v2_all_of",
+    "checks": [
+     {
+      "op": "vlm_lines_ok_r5va",
+      "question": "Copy every piece of text visible in the image, exactly as printed, one entry per line of text, in reading order (top to bottom, then left to right). Include headings, small print, labels, numbers, prices, lettering in logos and any text on photographs. answer yes if there is any text, no if there is none.",
+      "allow": [
+       "meridian motors",
+       "portland, maine",
+       "stock m2417",
+       "2017\\ calder\\ vireo",
+       "sel",
+       "\\$",
+       "23,900",
+       "\\$23,900",
+       "\\$\\ 23,900",
+       "mileage",
+       "68,400\\ miles",
+       "certification",
+       "meridian\\ certified\\ plus",
+       "enquire about m2417",
+       "enquire about m2417 meridian motors",
+       "(portland, maine( ·)? )?price excludes tax, title and registration\\.?"
+      ],
+      "deny": [
+       "\\bone owner\\b",
+       "\\bowners?\\b",
+       "\\b172\\b",
+       "inspect",
+       "warrant",
+       "accident",
+       "service (history|record)",
+       "\\bclean\\b",
+       "\\bmint\\b",
+       "\\blike new\\b",
+       "\\bnew (tyres|tires|brakes)\\b",
+       "\\bfull history\\b",
+       "\\bcarfax\\b",
+       "\\bnon[- ]smok",
+       "\\bgarage[d]?\\b",
+       "\\blow (miles|mileage)\\b",
+       "\\bloaded\\b"
+      ]
+     },
+     {
+      "op": "vlm_list_r5v",
+      "question": "List every statement printed on this card about the vehicle's condition, number of owners, accident or service history, inspection, warranty or added features, other than its certification tier, trim and mileage, each copied exactly. answer yes if there is at least one, no if there is none.",
+      "none_found": "pass"
      }
-    }
+    ],
+    "how": "Asks the vision model to copy every line of text and, separately, to list any statement about condition, owners, history, inspection, warranty or features; passes only when every line is one of the row's values, the field labels, the brand and Portland, Maine or the price-terms note and no such statement is listed."
    },
-   "how": "Runs the check and lets it decide only in the direction it is sure of; the other answer goes to a person."
+   "how": "Asks the vision model to copy every line of text and, separately, to list any statement about condition, owners, history, inspection, warranty or features; passes only when every line is one of the row's values, the field labels, the brand and Portland, Maine or the price-terms note and no such statement is listed."
   },
   {
    "check_id": "PHOTO-08/vehicle-card-r005/H011",
@@ -1448,16 +2182,58 @@
    "critical": false,
    "check": "“Vehicle sales card - M3105” (vehicle-card-r005.png) carries no vehicle feature, condition or history claim beyond the values in meridian_intake_week.csv, row 5.",
    "assertion": {
-    "op": "v2_limit",
-    "pass_as": "person",
-    "check": {
-     "op": "v2_text_absent",
-     "patterns": {
-      "a claim beyond the record": "172[- ]?point|\\bwarrant\\w*|\\bone[- ]owner\\b|\\binspect\\w*|3,000[- ]?mi|accident[- ]free|clean title|service history"
+    "op": "v2_all_of",
+    "checks": [
+     {
+      "op": "vlm_lines_ok_r5va",
+      "question": "Copy every piece of text visible in the image, exactly as printed, one entry per line of text, in reading order (top to bottom, then left to right). Include headings, small print, labels, numbers, prices, lettering in logos and any text on photographs. answer yes if there is any text, no if there is none.",
+      "allow": [
+       "meridian motors",
+       "portland, maine",
+       "stock m3105",
+       "2020\\ brookmere\\ sable",
+       "touring",
+       "\\$",
+       "31,900",
+       "\\$31,900",
+       "\\$\\ 31,900",
+       "mileage",
+       "42,980\\ miles",
+       "certification",
+       "meridian\\ certified\\ plus",
+       "enquire about m3105",
+       "enquire about m3105 meridian motors",
+       "(portland, maine( ·)? )?price excludes tax, title and registration\\.?"
+      ],
+      "deny": [
+       "\\bone owner\\b",
+       "\\bowners?\\b",
+       "\\b172\\b",
+       "inspect",
+       "warrant",
+       "accident",
+       "service (history|record)",
+       "\\bclean\\b",
+       "\\bmint\\b",
+       "\\blike new\\b",
+       "\\bnew (tyres|tires|brakes)\\b",
+       "\\bfull history\\b",
+       "\\bcarfax\\b",
+       "\\bnon[- ]smok",
+       "\\bgarage[d]?\\b",
+       "\\blow (miles|mileage)\\b",
+       "\\bloaded\\b"
+      ]
+     },
+     {
+      "op": "vlm_list_r5v",
+      "question": "List every statement printed on this card about the vehicle's condition, number of owners, accident or service history, inspection, warranty or added features, other than its certification tier, trim and mileage, each copied exactly. answer yes if there is at least one, no if there is none.",
+      "none_found": "pass"
      }
-    }
+    ],
+    "how": "Asks the vision model to copy every line of text and, separately, to list any statement about condition, owners, history, inspection, warranty or features; passes only when every line is one of the row's values, the field labels, the brand and Portland, Maine or the price-terms note and no such statement is listed."
    },
-   "how": "Runs the check and lets it decide only in the direction it is sure of; the other answer goes to a person."
+   "how": "Asks the vision model to copy every line of text and, separately, to list any statement about condition, owners, history, inspection, warranty or features; passes only when every line is one of the row's values, the field labels, the brand and Portland, Maine or the price-terms note and no such statement is listed."
   },
   {
    "check_id": "PHOTO-08/vehicle-card-r006/H011",
@@ -1467,16 +2243,58 @@
    "critical": false,
    "check": "“Vehicle sales card - M2471” (vehicle-card-r006.png) carries no vehicle feature, condition or history claim beyond the values in meridian_intake_week.csv, row 6.",
    "assertion": {
-    "op": "v2_limit",
-    "pass_as": "person",
-    "check": {
-     "op": "v2_text_absent",
-     "patterns": {
-      "a claim beyond the record": "172[- ]?point|\\bwarrant\\w*|\\bone[- ]owner\\b|\\binspect\\w*|3,000[- ]?mi|accident[- ]free|clean title|service history"
+    "op": "v2_all_of",
+    "checks": [
+     {
+      "op": "vlm_lines_ok_r5va",
+      "question": "Copy every piece of text visible in the image, exactly as printed, one entry per line of text, in reading order (top to bottom, then left to right). Include headings, small print, labels, numbers, prices, lettering in logos and any text on photographs. answer yes if there is any text, no if there is none.",
+      "allow": [
+       "meridian motors",
+       "portland, maine",
+       "stock m2471",
+       "2017\\ calder\\ kestrel",
+       "sel\\ technology\\ package\\ awd",
+       "\\$",
+       "24,900",
+       "\\$24,900",
+       "\\$\\ 24,900",
+       "mileage",
+       "70,120\\ miles",
+       "certification",
+       "meridian\\ certified",
+       "enquire about m2471",
+       "enquire about m2471 meridian motors",
+       "(portland, maine( ·)? )?price excludes tax, title and registration\\.?"
+      ],
+      "deny": [
+       "\\bone owner\\b",
+       "\\bowners?\\b",
+       "\\b172\\b",
+       "inspect",
+       "warrant",
+       "accident",
+       "service (history|record)",
+       "\\bclean\\b",
+       "\\bmint\\b",
+       "\\blike new\\b",
+       "\\bnew (tyres|tires|brakes)\\b",
+       "\\bfull history\\b",
+       "\\bcarfax\\b",
+       "\\bnon[- ]smok",
+       "\\bgarage[d]?\\b",
+       "\\blow (miles|mileage)\\b",
+       "\\bloaded\\b"
+      ]
+     },
+     {
+      "op": "vlm_list_r5v",
+      "question": "List every statement printed on this card about the vehicle's condition, number of owners, accident or service history, inspection, warranty or added features, other than its certification tier, trim and mileage, each copied exactly. answer yes if there is at least one, no if there is none.",
+      "none_found": "pass"
      }
-    }
+    ],
+    "how": "Asks the vision model to copy every line of text and, separately, to list any statement about condition, owners, history, inspection, warranty or features; passes only when every line is one of the row's values, the field labels, the brand and Portland, Maine or the price-terms note and no such statement is listed."
    },
-   "how": "Runs the check and lets it decide only in the direction it is sure of; the other answer goes to a person."
+   "how": "Asks the vision model to copy every line of text and, separately, to list any statement about condition, owners, history, inspection, warranty or features; passes only when every line is one of the row's values, the field labels, the brand and Portland, Maine or the price-terms note and no such statement is listed."
   },
   {
    "check_id": "PHOTO-08/vehicle-card-r007/H011",
@@ -1486,16 +2304,58 @@
    "critical": false,
    "check": "“Vehicle sales card - M3119” (vehicle-card-r007.png) carries no vehicle feature, condition or history claim beyond the values in meridian_intake_week.csv, row 7.",
    "assertion": {
-    "op": "v2_limit",
-    "pass_as": "person",
-    "check": {
-     "op": "v2_text_absent",
-     "patterns": {
-      "a claim beyond the record": "172[- ]?point|\\bwarrant\\w*|\\bone[- ]owner\\b|\\binspect\\w*|3,000[- ]?mi|accident[- ]free|clean title|service history"
+    "op": "v2_all_of",
+    "checks": [
+     {
+      "op": "vlm_lines_ok_r5va",
+      "question": "Copy every piece of text visible in the image, exactly as printed, one entry per line of text, in reading order (top to bottom, then left to right). Include headings, small print, labels, numbers, prices, lettering in logos and any text on photographs. answer yes if there is any text, no if there is none.",
+      "allow": [
+       "meridian motors",
+       "portland, maine",
+       "stock m3119",
+       "2019\\ norsted\\ fjord",
+       "adventure\\ awd",
+       "\\$",
+       "29,900",
+       "\\$29,900",
+       "\\$\\ 29,900",
+       "mileage",
+       "58,760\\ miles",
+       "certification",
+       "meridian\\ certified",
+       "enquire about m3119",
+       "enquire about m3119 meridian motors",
+       "(portland, maine( ·)? )?price excludes tax, title and registration\\.?"
+      ],
+      "deny": [
+       "\\bone owner\\b",
+       "\\bowners?\\b",
+       "\\b172\\b",
+       "inspect",
+       "warrant",
+       "accident",
+       "service (history|record)",
+       "\\bclean\\b",
+       "\\bmint\\b",
+       "\\blike new\\b",
+       "\\bnew (tyres|tires|brakes)\\b",
+       "\\bfull history\\b",
+       "\\bcarfax\\b",
+       "\\bnon[- ]smok",
+       "\\bgarage[d]?\\b",
+       "\\blow (miles|mileage)\\b",
+       "\\bloaded\\b"
+      ]
+     },
+     {
+      "op": "vlm_list_r5v",
+      "question": "List every statement printed on this card about the vehicle's condition, number of owners, accident or service history, inspection, warranty or added features, other than its certification tier, trim and mileage, each copied exactly. answer yes if there is at least one, no if there is none.",
+      "none_found": "pass"
      }
-    }
+    ],
+    "how": "Asks the vision model to copy every line of text and, separately, to list any statement about condition, owners, history, inspection, warranty or features; passes only when every line is one of the row's values, the field labels, the brand and Portland, Maine or the price-terms note and no such statement is listed."
    },
-   "how": "Runs the check and lets it decide only in the direction it is sure of; the other answer goes to a person."
+   "how": "Asks the vision model to copy every line of text and, separately, to list any statement about condition, owners, history, inspection, warranty or features; passes only when every line is one of the row's values, the field labels, the brand and Portland, Maine or the price-terms note and no such statement is listed."
   },
   {
    "check_id": "PHOTO-08/vehicle-card-r002/H016",
@@ -1505,14 +2365,12 @@
    "critical": false,
    "check": "“Vehicle sales card - M3082” (vehicle-card-r002.png) shows no phone number, email address or web address, since none is supplied in the task files.",
    "assertion": {
-    "op": "v2_text_absent",
-    "patterns": {
-     "web address": "\\b(?:https?://\\S+|www\\.\\S+|[a-z0-9-]+\\.(?:com|org|net|io|co|us|uk|ca|app|studio|example)(?:/\\S*)?)\\b",
-     "email": "\\b[\\w.+-]+@[\\w-]+\\.[\\w.]+\\b",
-     "phone number": "(?<![\\w$])\\+?\\(?\\d{3}\\)?[\\s.-]?\\d{3}[\\s.-]?\\d{4}\\b"
-    }
+    "op": "vlm_list_r5v",
+    "question": "List every web address, email address and phone number printed anywhere on the image, each copied exactly. answer yes if there is at least one, no if there is none.",
+    "none_found": "pass",
+    "how": "Asks the vision model to list every phone number, email address and web address on the file; any found fails."
    },
-   "how": "Reads all text and checks none of the named words or patterns appears."
+   "how": "Asks the vision model to list every phone number, email address and web address on the file; any found fails."
   },
   {
    "check_id": "PHOTO-08/vehicle-card-r003/H014",
@@ -1522,14 +2380,12 @@
    "critical": false,
    "check": "“Vehicle sales card - M3091” (vehicle-card-r003.png) shows no phone number, email address or web address, since none is supplied in the task files.",
    "assertion": {
-    "op": "v2_text_absent",
-    "patterns": {
-     "web address": "\\b(?:https?://\\S+|www\\.\\S+|[a-z0-9-]+\\.(?:com|org|net|io|co|us|uk|ca|app|studio|example)(?:/\\S*)?)\\b",
-     "email": "\\b[\\w.+-]+@[\\w-]+\\.[\\w.]+\\b",
-     "phone number": "(?<![\\w$])\\+?\\(?\\d{3}\\)?[\\s.-]?\\d{3}[\\s.-]?\\d{4}\\b"
-    }
+    "op": "vlm_list_r5v",
+    "question": "List every web address, email address and phone number printed anywhere on the image, each copied exactly. answer yes if there is at least one, no if there is none.",
+    "none_found": "pass",
+    "how": "Asks the vision model to list every phone number, email address and web address on the file; any found fails."
    },
-   "how": "Reads all text and checks none of the named words or patterns appears."
+   "how": "Asks the vision model to list every phone number, email address and web address on the file; any found fails."
   },
   {
    "check_id": "PHOTO-08/vehicle-card-r004/H013",
@@ -1539,14 +2395,12 @@
    "critical": false,
    "check": "“Vehicle sales card - M2417” (vehicle-card-r004.png) shows no phone number, email address or web address, since none is supplied in the task files.",
    "assertion": {
-    "op": "v2_text_absent",
-    "patterns": {
-     "web address": "\\b(?:https?://\\S+|www\\.\\S+|[a-z0-9-]+\\.(?:com|org|net|io|co|us|uk|ca|app|studio|example)(?:/\\S*)?)\\b",
-     "email": "\\b[\\w.+-]+@[\\w-]+\\.[\\w.]+\\b",
-     "phone number": "(?<![\\w$])\\+?\\(?\\d{3}\\)?[\\s.-]?\\d{3}[\\s.-]?\\d{4}\\b"
-    }
+    "op": "vlm_list_r5v",
+    "question": "List every web address, email address and phone number printed anywhere on the image, each copied exactly. answer yes if there is at least one, no if there is none.",
+    "none_found": "pass",
+    "how": "Asks the vision model to list every phone number, email address and web address on the file; any found fails."
    },
-   "how": "Reads all text and checks none of the named words or patterns appears."
+   "how": "Asks the vision model to list every phone number, email address and web address on the file; any found fails."
   },
   {
    "check_id": "PHOTO-08/vehicle-card-r005/H013",
@@ -1556,14 +2410,12 @@
    "critical": false,
    "check": "“Vehicle sales card - M3105” (vehicle-card-r005.png) shows no phone number, email address or web address, since none is supplied in the task files.",
    "assertion": {
-    "op": "v2_text_absent",
-    "patterns": {
-     "web address": "\\b(?:https?://\\S+|www\\.\\S+|[a-z0-9-]+\\.(?:com|org|net|io|co|us|uk|ca|app|studio|example)(?:/\\S*)?)\\b",
-     "email": "\\b[\\w.+-]+@[\\w-]+\\.[\\w.]+\\b",
-     "phone number": "(?<![\\w$])\\+?\\(?\\d{3}\\)?[\\s.-]?\\d{3}[\\s.-]?\\d{4}\\b"
-    }
+    "op": "vlm_list_r5v",
+    "question": "List every web address, email address and phone number printed anywhere on the image, each copied exactly. answer yes if there is at least one, no if there is none.",
+    "none_found": "pass",
+    "how": "Asks the vision model to list every phone number, email address and web address on the file; any found fails."
    },
-   "how": "Reads all text and checks none of the named words or patterns appears."
+   "how": "Asks the vision model to list every phone number, email address and web address on the file; any found fails."
   },
   {
    "check_id": "PHOTO-08/vehicle-card-r006/H013",
@@ -1573,14 +2425,12 @@
    "critical": false,
    "check": "“Vehicle sales card - M2471” (vehicle-card-r006.png) shows no phone number, email address or web address, since none is supplied in the task files.",
    "assertion": {
-    "op": "v2_text_absent",
-    "patterns": {
-     "web address": "\\b(?:https?://\\S+|www\\.\\S+|[a-z0-9-]+\\.(?:com|org|net|io|co|us|uk|ca|app|studio|example)(?:/\\S*)?)\\b",
-     "email": "\\b[\\w.+-]+@[\\w-]+\\.[\\w.]+\\b",
-     "phone number": "(?<![\\w$])\\+?\\(?\\d{3}\\)?[\\s.-]?\\d{3}[\\s.-]?\\d{4}\\b"
-    }
+    "op": "vlm_list_r5v",
+    "question": "List every web address, email address and phone number printed anywhere on the image, each copied exactly. answer yes if there is at least one, no if there is none.",
+    "none_found": "pass",
+    "how": "Asks the vision model to list every phone number, email address and web address on the file; any found fails."
    },
-   "how": "Reads all text and checks none of the named words or patterns appears."
+   "how": "Asks the vision model to list every phone number, email address and web address on the file; any found fails."
   },
   {
    "check_id": "PHOTO-08/vehicle-card-r007/H013",
@@ -1590,14 +2440,12 @@
    "critical": false,
    "check": "“Vehicle sales card - M3119” (vehicle-card-r007.png) shows no phone number, email address or web address, since none is supplied in the task files.",
    "assertion": {
-    "op": "v2_text_absent",
-    "patterns": {
-     "web address": "\\b(?:https?://\\S+|www\\.\\S+|[a-z0-9-]+\\.(?:com|org|net|io|co|us|uk|ca|app|studio|example)(?:/\\S*)?)\\b",
-     "email": "\\b[\\w.+-]+@[\\w-]+\\.[\\w.]+\\b",
-     "phone number": "(?<![\\w$])\\+?\\(?\\d{3}\\)?[\\s.-]?\\d{3}[\\s.-]?\\d{4}\\b"
-    }
+    "op": "vlm_list_r5v",
+    "question": "List every web address, email address and phone number printed anywhere on the image, each copied exactly. answer yes if there is at least one, no if there is none.",
+    "none_found": "pass",
+    "how": "Asks the vision model to list every phone number, email address and web address on the file; any found fails."
    },
-   "how": "Reads all text and checks none of the named words or patterns appears."
+   "how": "Asks the vision model to list every phone number, email address and web address on the file; any found fails."
   },
   {
    "check_id": "PHOTO-08/inventory-campaign/H066",
@@ -1607,14 +2455,12 @@
    "critical": false,
    "check": "“Forecourt inventory campaign” (inventory-campaign.png) shows no phone number, email address or web address, since none is supplied in the task files.",
    "assertion": {
-    "op": "v2_text_absent",
-    "patterns": {
-     "web address": "\\b(?:https?://\\S+|www\\.\\S+|[a-z0-9-]+\\.(?:com|org|net|io|co|us|uk|ca|app|studio|example)(?:/\\S*)?)\\b",
-     "email": "\\b[\\w.+-]+@[\\w-]+\\.[\\w.]+\\b",
-     "phone number": "(?<![\\w$])\\+?\\(?\\d{3}\\)?[\\s.-]?\\d{3}[\\s.-]?\\d{4}\\b"
-    }
+    "op": "vlm_list_r5v",
+    "question": "List every web address, email address and phone number printed anywhere on the image, each copied exactly. answer yes if there is at least one, no if there is none.",
+    "none_found": "pass",
+    "how": "Asks the vision model to list every phone number, email address and web address on the file; any found fails."
    },
-   "how": "Reads all text and checks none of the named words or patterns appears."
+   "how": "Asks the vision model to list every phone number, email address and web address on the file; any found fails."
   },
   {
    "check_id": "PHOTO-08/vehicle-card-r002/H018",
@@ -1787,17 +2633,40 @@
    "critical": true,
    "check": "No last-season placeholder value from meridian_window_card_autumn.pdf (M2290, 2016 Calder Vireo, 71,300 mi, $22,900) appears on “Vehicle sales card - M3082” (vehicle-card-r002.png).",
    "assertion": {
-    "op": "v2_text_absent",
-    "texts": [
-     "M2290",
-     "2016 Calder Vireo"
+    "op": "v2_all_of",
+    "checks": [
+     {
+      "op": "vlm_text_r5v",
+      "forbid": [
+       "M2290",
+       "2016 Calder Vireo",
+       "71,300",
+       "71300",
+       "22,900",
+       "22900"
+      ],
+      "none_found": "pass"
+     },
+     {
+      "op": "vlm_text_r5v",
+      "question": "Copy every stock number, model year with its model name, mileage and price printed anywhere on the image, exactly as printed, one entry each. answer yes if there is any, no if there is none.",
+      "forbid": [
+       "M2290",
+       "2016 Calder Vireo",
+       "71,300",
+       "71300",
+       "22,900",
+       "22900"
+      ],
+      "none_found": "pass",
+      "params": {
+       "max_tokens": 6000
+      }
+     }
     ],
-    "patterns": {
-     "71,300 mi": "(?<![\\d,.])71,?300(?![\\d,.]|\\d)",
-     "$22,900": "\\$\\s?(?<![\\d,.])22,?900(?![\\d,.]|\\d)"
-    }
+    "how": "Asks the vision model to copy every text on the file and, separately, every stock number, model, mileage and price; code fails any of last season's placeholder values (M2290, 2016 Calder Vireo, 71,300 mi, $22,900)."
    },
-   "how": "Reads all text and checks none of the named words or patterns appears."
+   "how": "Asks the vision model to copy every text on the file and, separately, every stock number, model, mileage and price; code fails any of last season's placeholder values (M2290, 2016 Calder Vireo, 71,300 mi, $22,900)."
   },
   {
    "check_id": "PHOTO-08/vehicle-card-r003/H015",
@@ -1807,17 +2676,40 @@
    "critical": true,
    "check": "No last-season placeholder value from meridian_window_card_autumn.pdf (M2290, 2016 Calder Vireo, 71,300 mi, $22,900) appears on “Vehicle sales card - M3091” (vehicle-card-r003.png).",
    "assertion": {
-    "op": "v2_text_absent",
-    "texts": [
-     "M2290",
-     "2016 Calder Vireo"
+    "op": "v2_all_of",
+    "checks": [
+     {
+      "op": "vlm_text_r5v",
+      "forbid": [
+       "M2290",
+       "2016 Calder Vireo",
+       "71,300",
+       "71300",
+       "22,900",
+       "22900"
+      ],
+      "none_found": "pass"
+     },
+     {
+      "op": "vlm_text_r5v",
+      "question": "Copy every stock number, model year with its model name, mileage and price printed anywhere on the image, exactly as printed, one entry each. answer yes if there is any, no if there is none.",
+      "forbid": [
+       "M2290",
+       "2016 Calder Vireo",
+       "71,300",
+       "71300",
+       "22,900",
+       "22900"
+      ],
+      "none_found": "pass",
+      "params": {
+       "max_tokens": 6000
+      }
+     }
     ],
-    "patterns": {
-     "71,300 mi": "(?<![\\d,.])71,?300(?![\\d,.]|\\d)",
-     "$22,900": "\\$\\s?(?<![\\d,.])22,?900(?![\\d,.]|\\d)"
-    }
+    "how": "Asks the vision model to copy every text on the file and, separately, every stock number, model, mileage and price; code fails any of last season's placeholder values (M2290, 2016 Calder Vireo, 71,300 mi, $22,900)."
    },
-   "how": "Reads all text and checks none of the named words or patterns appears."
+   "how": "Asks the vision model to copy every text on the file and, separately, every stock number, model, mileage and price; code fails any of last season's placeholder values (M2290, 2016 Calder Vireo, 71,300 mi, $22,900)."
   },
   {
    "check_id": "PHOTO-08/vehicle-card-r004/H014",
@@ -1827,17 +2719,40 @@
    "critical": true,
    "check": "No last-season placeholder value from meridian_window_card_autumn.pdf (M2290, 2016 Calder Vireo, 71,300 mi, $22,900) appears on “Vehicle sales card - M2417” (vehicle-card-r004.png).",
    "assertion": {
-    "op": "v2_text_absent",
-    "texts": [
-     "M2290",
-     "2016 Calder Vireo"
+    "op": "v2_all_of",
+    "checks": [
+     {
+      "op": "vlm_text_r5v",
+      "forbid": [
+       "M2290",
+       "2016 Calder Vireo",
+       "71,300",
+       "71300",
+       "22,900",
+       "22900"
+      ],
+      "none_found": "pass"
+     },
+     {
+      "op": "vlm_text_r5v",
+      "question": "Copy every stock number, model year with its model name, mileage and price printed anywhere on the image, exactly as printed, one entry each. answer yes if there is any, no if there is none.",
+      "forbid": [
+       "M2290",
+       "2016 Calder Vireo",
+       "71,300",
+       "71300",
+       "22,900",
+       "22900"
+      ],
+      "none_found": "pass",
+      "params": {
+       "max_tokens": 6000
+      }
+     }
     ],
-    "patterns": {
-     "71,300 mi": "(?<![\\d,.])71,?300(?![\\d,.]|\\d)",
-     "$22,900": "\\$\\s?(?<![\\d,.])22,?900(?![\\d,.]|\\d)"
-    }
+    "how": "Asks the vision model to copy every text on the file and, separately, every stock number, model, mileage and price; code fails any of last season's placeholder values (M2290, 2016 Calder Vireo, 71,300 mi, $22,900)."
    },
-   "how": "Reads all text and checks none of the named words or patterns appears."
+   "how": "Asks the vision model to copy every text on the file and, separately, every stock number, model, mileage and price; code fails any of last season's placeholder values (M2290, 2016 Calder Vireo, 71,300 mi, $22,900)."
   },
   {
    "check_id": "PHOTO-08/vehicle-card-r005/H014",
@@ -1847,17 +2762,40 @@
    "critical": true,
    "check": "No last-season placeholder value from meridian_window_card_autumn.pdf (M2290, 2016 Calder Vireo, 71,300 mi, $22,900) appears on “Vehicle sales card - M3105” (vehicle-card-r005.png).",
    "assertion": {
-    "op": "v2_text_absent",
-    "texts": [
-     "M2290",
-     "2016 Calder Vireo"
+    "op": "v2_all_of",
+    "checks": [
+     {
+      "op": "vlm_text_r5v",
+      "forbid": [
+       "M2290",
+       "2016 Calder Vireo",
+       "71,300",
+       "71300",
+       "22,900",
+       "22900"
+      ],
+      "none_found": "pass"
+     },
+     {
+      "op": "vlm_text_r5v",
+      "question": "Copy every stock number, model year with its model name, mileage and price printed anywhere on the image, exactly as printed, one entry each. answer yes if there is any, no if there is none.",
+      "forbid": [
+       "M2290",
+       "2016 Calder Vireo",
+       "71,300",
+       "71300",
+       "22,900",
+       "22900"
+      ],
+      "none_found": "pass",
+      "params": {
+       "max_tokens": 6000
+      }
+     }
     ],
-    "patterns": {
-     "71,300 mi": "(?<![\\d,.])71,?300(?![\\d,.]|\\d)",
-     "$22,900": "\\$\\s?(?<![\\d,.])22,?900(?![\\d,.]|\\d)"
-    }
+    "how": "Asks the vision model to copy every text on the file and, separately, every stock number, model, mileage and price; code fails any of last season's placeholder values (M2290, 2016 Calder Vireo, 71,300 mi, $22,900)."
    },
-   "how": "Reads all text and checks none of the named words or patterns appears."
+   "how": "Asks the vision model to copy every text on the file and, separately, every stock number, model, mileage and price; code fails any of last season's placeholder values (M2290, 2016 Calder Vireo, 71,300 mi, $22,900)."
   },
   {
    "check_id": "PHOTO-08/vehicle-card-r006/H014",
@@ -1867,17 +2805,40 @@
    "critical": true,
    "check": "No last-season placeholder value from meridian_window_card_autumn.pdf (M2290, 2016 Calder Vireo, 71,300 mi, $22,900) appears on “Vehicle sales card - M2471” (vehicle-card-r006.png).",
    "assertion": {
-    "op": "v2_text_absent",
-    "texts": [
-     "M2290",
-     "2016 Calder Vireo"
+    "op": "v2_all_of",
+    "checks": [
+     {
+      "op": "vlm_text_r5v",
+      "forbid": [
+       "M2290",
+       "2016 Calder Vireo",
+       "71,300",
+       "71300",
+       "22,900",
+       "22900"
+      ],
+      "none_found": "pass"
+     },
+     {
+      "op": "vlm_text_r5v",
+      "question": "Copy every stock number, model year with its model name, mileage and price printed anywhere on the image, exactly as printed, one entry each. answer yes if there is any, no if there is none.",
+      "forbid": [
+       "M2290",
+       "2016 Calder Vireo",
+       "71,300",
+       "71300",
+       "22,900",
+       "22900"
+      ],
+      "none_found": "pass",
+      "params": {
+       "max_tokens": 6000
+      }
+     }
     ],
-    "patterns": {
-     "71,300 mi": "(?<![\\d,.])71,?300(?![\\d,.]|\\d)",
-     "$22,900": "\\$\\s?(?<![\\d,.])22,?900(?![\\d,.]|\\d)"
-    }
+    "how": "Asks the vision model to copy every text on the file and, separately, every stock number, model, mileage and price; code fails any of last season's placeholder values (M2290, 2016 Calder Vireo, 71,300 mi, $22,900)."
    },
-   "how": "Reads all text and checks none of the named words or patterns appears."
+   "how": "Asks the vision model to copy every text on the file and, separately, every stock number, model, mileage and price; code fails any of last season's placeholder values (M2290, 2016 Calder Vireo, 71,300 mi, $22,900)."
   },
   {
    "check_id": "PHOTO-08/vehicle-card-r007/H014",
@@ -1887,17 +2848,40 @@
    "critical": true,
    "check": "No last-season placeholder value from meridian_window_card_autumn.pdf (M2290, 2016 Calder Vireo, 71,300 mi, $22,900) appears on “Vehicle sales card - M3119” (vehicle-card-r007.png).",
    "assertion": {
-    "op": "v2_text_absent",
-    "texts": [
-     "M2290",
-     "2016 Calder Vireo"
+    "op": "v2_all_of",
+    "checks": [
+     {
+      "op": "vlm_text_r5v",
+      "forbid": [
+       "M2290",
+       "2016 Calder Vireo",
+       "71,300",
+       "71300",
+       "22,900",
+       "22900"
+      ],
+      "none_found": "pass"
+     },
+     {
+      "op": "vlm_text_r5v",
+      "question": "Copy every stock number, model year with its model name, mileage and price printed anywhere on the image, exactly as printed, one entry each. answer yes if there is any, no if there is none.",
+      "forbid": [
+       "M2290",
+       "2016 Calder Vireo",
+       "71,300",
+       "71300",
+       "22,900",
+       "22900"
+      ],
+      "none_found": "pass",
+      "params": {
+       "max_tokens": 6000
+      }
+     }
     ],
-    "patterns": {
-     "71,300 mi": "(?<![\\d,.])71,?300(?![\\d,.]|\\d)",
-     "$22,900": "\\$\\s?(?<![\\d,.])22,?900(?![\\d,.]|\\d)"
-    }
+    "how": "Asks the vision model to copy every text on the file and, separately, every stock number, model, mileage and price; code fails any of last season's placeholder values (M2290, 2016 Calder Vireo, 71,300 mi, $22,900)."
    },
-   "how": "Reads all text and checks none of the named words or patterns appears."
+   "how": "Asks the vision model to copy every text on the file and, separately, every stock number, model, mileage and price; code fails any of last season's placeholder values (M2290, 2016 Calder Vireo, 71,300 mi, $22,900)."
   },
   {
    "check_id": "PHOTO-08/inventory-campaign/H065",
@@ -1907,17 +2891,40 @@
    "critical": true,
    "check": "No last-season placeholder value from meridian_window_card_autumn.pdf (M2290, 2016 Calder Vireo, 71,300 mi, $22,900) appears on “Forecourt inventory campaign” (inventory-campaign.png).",
    "assertion": {
-    "op": "v2_text_absent",
-    "texts": [
-     "M2290",
-     "2016 Calder Vireo"
+    "op": "v2_all_of",
+    "checks": [
+     {
+      "op": "vlm_text_r5v",
+      "forbid": [
+       "M2290",
+       "2016 Calder Vireo",
+       "71,300",
+       "71300",
+       "22,900",
+       "22900"
+      ],
+      "none_found": "pass"
+     },
+     {
+      "op": "vlm_text_r5v",
+      "question": "Copy every stock number, model year with its model name, mileage and price printed anywhere on the image, exactly as printed, one entry each. answer yes if there is any, no if there is none.",
+      "forbid": [
+       "M2290",
+       "2016 Calder Vireo",
+       "71,300",
+       "71300",
+       "22,900",
+       "22900"
+      ],
+      "none_found": "pass",
+      "params": {
+       "max_tokens": 6000
+      }
+     }
     ],
-    "patterns": {
-     "71,300 mi": "(?<![\\d,.])71,?300(?![\\d,.]|\\d)",
-     "$22,900": "\\$\\s?(?<![\\d,.])22,?900(?![\\d,.]|\\d)"
-    }
+    "how": "Asks the vision model to copy every text on the file and, separately, every stock number, model, mileage and price; code fails any of last season's placeholder values (M2290, 2016 Calder Vireo, 71,300 mi, $22,900)."
    },
-   "how": "Reads all text and checks none of the named words or patterns appears."
+   "how": "Asks the vision model to copy every text on the file and, separately, every stock number, model, mileage and price; code fails any of last season's placeholder values (M2290, 2016 Calder Vireo, 71,300 mi, $22,900)."
   },
   {
    "check_id": "PHOTO-08/vehicle-card-r004/H010",
@@ -1950,30 +2957,110 @@
    "critical": false,
    "check": "The photo on “Vehicle sales card - M3082” (vehicle-card-r002.png) shows stock “M3082” (Norsted Alta), taken from the supplied photo M3082_norsted_alta_front34.jpg.",
    "assertion": {
-    "op": "v2_made_from",
-    "photos": [
-     "M3082_norsted_alta_front34.jpg",
-     "M3082_norsted_alta_rear34.jpg",
-     "M3082_norsted_alta_side.jpg",
-     "M3091_ardmoor_ridge_front34.jpg",
-     "M3091_ardmoor_ridge_rear34.jpg",
-     "M3091_ardmoor_ridge_side.jpg",
-     "M2417_calder_vireo_front34.jpg",
-     "M2417_calder_vireo_rear34.jpg",
-     "M2417_calder_vireo_side.jpg",
-     "M3105_brookmere_sable_front34.jpg",
-     "M3105_brookmere_sable_rear34.jpg",
-     "M3105_brookmere_sable_side.jpg",
-     "M2471_calder_kestrel_front34.jpg",
-     "M2471_calder_kestrel_rear34.jpg",
-     "M2471_calder_kestrel_side.jpg",
-     "M3119_norsted_fjord_front34.jpg",
-     "M3119_norsted_fjord_rear34.jpg",
-     "M3119_norsted_fjord_side.jpg"
+    "op": "vlm_read_r5v",
+    "images": [
+     {
+      "src": "deliverable",
+      "label": "Image 1, the vehicle sales card:"
+     },
+     {
+      "src": "asset:M3082_norsted_alta_front34.jpg",
+      "label": "Reference photo M3082_norsted_alta_front34.jpg:",
+      "max_side": 640
+     },
+     {
+      "src": "asset:M3082_norsted_alta_side.jpg",
+      "label": "Reference photo M3082_norsted_alta_side.jpg:",
+      "max_side": 640
+     },
+     {
+      "src": "asset:M3082_norsted_alta_rear34.jpg",
+      "label": "Reference photo M3082_norsted_alta_rear34.jpg:",
+      "max_side": 640
+     },
+     {
+      "src": "asset:M3091_ardmoor_ridge_front34.jpg",
+      "label": "Reference photo M3091_ardmoor_ridge_front34.jpg:",
+      "max_side": 640
+     },
+     {
+      "src": "asset:M3091_ardmoor_ridge_side.jpg",
+      "label": "Reference photo M3091_ardmoor_ridge_side.jpg:",
+      "max_side": 640
+     },
+     {
+      "src": "asset:M3091_ardmoor_ridge_rear34.jpg",
+      "label": "Reference photo M3091_ardmoor_ridge_rear34.jpg:",
+      "max_side": 640
+     },
+     {
+      "src": "asset:M2417_calder_vireo_front34.jpg",
+      "label": "Reference photo M2417_calder_vireo_front34.jpg:",
+      "max_side": 640
+     },
+     {
+      "src": "asset:M2417_calder_vireo_side.jpg",
+      "label": "Reference photo M2417_calder_vireo_side.jpg:",
+      "max_side": 640
+     },
+     {
+      "src": "asset:M2417_calder_vireo_rear34.jpg",
+      "label": "Reference photo M2417_calder_vireo_rear34.jpg:",
+      "max_side": 640
+     },
+     {
+      "src": "asset:M3105_brookmere_sable_front34.jpg",
+      "label": "Reference photo M3105_brookmere_sable_front34.jpg:",
+      "max_side": 640
+     },
+     {
+      "src": "asset:M3105_brookmere_sable_side.jpg",
+      "label": "Reference photo M3105_brookmere_sable_side.jpg:",
+      "max_side": 640
+     },
+     {
+      "src": "asset:M3105_brookmere_sable_rear34.jpg",
+      "label": "Reference photo M3105_brookmere_sable_rear34.jpg:",
+      "max_side": 640
+     },
+     {
+      "src": "asset:M2471_calder_kestrel_front34.jpg",
+      "label": "Reference photo M2471_calder_kestrel_front34.jpg:",
+      "max_side": 640
+     },
+     {
+      "src": "asset:M2471_calder_kestrel_side.jpg",
+      "label": "Reference photo M2471_calder_kestrel_side.jpg:",
+      "max_side": 640
+     },
+     {
+      "src": "asset:M2471_calder_kestrel_rear34.jpg",
+      "label": "Reference photo M2471_calder_kestrel_rear34.jpg:",
+      "max_side": 640
+     },
+     {
+      "src": "asset:M3119_norsted_fjord_front34.jpg",
+      "label": "Reference photo M3119_norsted_fjord_front34.jpg:",
+      "max_side": 640
+     },
+     {
+      "src": "asset:M3119_norsted_fjord_side.jpg",
+      "label": "Reference photo M3119_norsted_fjord_side.jpg:",
+      "max_side": 640
+     },
+     {
+      "src": "asset:M3119_norsted_fjord_rear34.jpg",
+      "label": "Reference photo M3119_norsted_fjord_rear34.jpg:",
+      "max_side": 640
+     }
     ],
-    "expected": "M3082_norsted_alta_front34.jpg"
+    "expected": [
+     "M3082_norsted_alta_front34.jpg"
+    ],
+    "question": "Image 1 is a vehicle sales card with one vehicle photo. The images after it are reference photos, each preceded by its file name. Which reference photo was used for the vehicle photo on the card: the same vehicle, seen from the same angle? Copy that reference photo's file name exactly as given. If none of them matches, answer no with no values.",
+    "how": "Gives the vision model the card and all eighteen supplied vehicle photos by file name and asks which one the card's photo was taken from; code checks it is the photo in meridian_intake_week.csv."
    },
-   "how": "Searches the deliverable for every supplied photo and checks only the expected one is found."
+   "how": "Gives the vision model the card and all eighteen supplied vehicle photos by file name and asks which one the card's photo was taken from; code checks it is the photo in meridian_intake_week.csv."
   },
   {
    "check_id": "PHOTO-08/vehicle-card-r003/H001",
@@ -1983,30 +3070,110 @@
    "critical": false,
    "check": "The photo on “Vehicle sales card - M3091” (vehicle-card-r003.png) shows stock “M3091” (Ardmoor Ridge), taken from the supplied photo M3091_ardmoor_ridge_front34.jpg.",
    "assertion": {
-    "op": "v2_made_from",
-    "photos": [
-     "M3082_norsted_alta_front34.jpg",
-     "M3082_norsted_alta_rear34.jpg",
-     "M3082_norsted_alta_side.jpg",
-     "M3091_ardmoor_ridge_front34.jpg",
-     "M3091_ardmoor_ridge_rear34.jpg",
-     "M3091_ardmoor_ridge_side.jpg",
-     "M2417_calder_vireo_front34.jpg",
-     "M2417_calder_vireo_rear34.jpg",
-     "M2417_calder_vireo_side.jpg",
-     "M3105_brookmere_sable_front34.jpg",
-     "M3105_brookmere_sable_rear34.jpg",
-     "M3105_brookmere_sable_side.jpg",
-     "M2471_calder_kestrel_front34.jpg",
-     "M2471_calder_kestrel_rear34.jpg",
-     "M2471_calder_kestrel_side.jpg",
-     "M3119_norsted_fjord_front34.jpg",
-     "M3119_norsted_fjord_rear34.jpg",
-     "M3119_norsted_fjord_side.jpg"
+    "op": "vlm_read_r5v",
+    "images": [
+     {
+      "src": "deliverable",
+      "label": "Image 1, the vehicle sales card:"
+     },
+     {
+      "src": "asset:M3082_norsted_alta_front34.jpg",
+      "label": "Reference photo M3082_norsted_alta_front34.jpg:",
+      "max_side": 640
+     },
+     {
+      "src": "asset:M3082_norsted_alta_side.jpg",
+      "label": "Reference photo M3082_norsted_alta_side.jpg:",
+      "max_side": 640
+     },
+     {
+      "src": "asset:M3082_norsted_alta_rear34.jpg",
+      "label": "Reference photo M3082_norsted_alta_rear34.jpg:",
+      "max_side": 640
+     },
+     {
+      "src": "asset:M3091_ardmoor_ridge_front34.jpg",
+      "label": "Reference photo M3091_ardmoor_ridge_front34.jpg:",
+      "max_side": 640
+     },
+     {
+      "src": "asset:M3091_ardmoor_ridge_side.jpg",
+      "label": "Reference photo M3091_ardmoor_ridge_side.jpg:",
+      "max_side": 640
+     },
+     {
+      "src": "asset:M3091_ardmoor_ridge_rear34.jpg",
+      "label": "Reference photo M3091_ardmoor_ridge_rear34.jpg:",
+      "max_side": 640
+     },
+     {
+      "src": "asset:M2417_calder_vireo_front34.jpg",
+      "label": "Reference photo M2417_calder_vireo_front34.jpg:",
+      "max_side": 640
+     },
+     {
+      "src": "asset:M2417_calder_vireo_side.jpg",
+      "label": "Reference photo M2417_calder_vireo_side.jpg:",
+      "max_side": 640
+     },
+     {
+      "src": "asset:M2417_calder_vireo_rear34.jpg",
+      "label": "Reference photo M2417_calder_vireo_rear34.jpg:",
+      "max_side": 640
+     },
+     {
+      "src": "asset:M3105_brookmere_sable_front34.jpg",
+      "label": "Reference photo M3105_brookmere_sable_front34.jpg:",
+      "max_side": 640
+     },
+     {
+      "src": "asset:M3105_brookmere_sable_side.jpg",
+      "label": "Reference photo M3105_brookmere_sable_side.jpg:",
+      "max_side": 640
+     },
+     {
+      "src": "asset:M3105_brookmere_sable_rear34.jpg",
+      "label": "Reference photo M3105_brookmere_sable_rear34.jpg:",
+      "max_side": 640
+     },
+     {
+      "src": "asset:M2471_calder_kestrel_front34.jpg",
+      "label": "Reference photo M2471_calder_kestrel_front34.jpg:",
+      "max_side": 640
+     },
+     {
+      "src": "asset:M2471_calder_kestrel_side.jpg",
+      "label": "Reference photo M2471_calder_kestrel_side.jpg:",
+      "max_side": 640
+     },
+     {
+      "src": "asset:M2471_calder_kestrel_rear34.jpg",
+      "label": "Reference photo M2471_calder_kestrel_rear34.jpg:",
+      "max_side": 640
+     },
+     {
+      "src": "asset:M3119_norsted_fjord_front34.jpg",
+      "label": "Reference photo M3119_norsted_fjord_front34.jpg:",
+      "max_side": 640
+     },
+     {
+      "src": "asset:M3119_norsted_fjord_side.jpg",
+      "label": "Reference photo M3119_norsted_fjord_side.jpg:",
+      "max_side": 640
+     },
+     {
+      "src": "asset:M3119_norsted_fjord_rear34.jpg",
+      "label": "Reference photo M3119_norsted_fjord_rear34.jpg:",
+      "max_side": 640
+     }
     ],
-    "expected": "M3091_ardmoor_ridge_front34.jpg"
+    "expected": [
+     "M3091_ardmoor_ridge_front34.jpg"
+    ],
+    "question": "Image 1 is a vehicle sales card with one vehicle photo. The images after it are reference photos, each preceded by its file name. Which reference photo was used for the vehicle photo on the card: the same vehicle, seen from the same angle? Copy that reference photo's file name exactly as given. If none of them matches, answer no with no values.",
+    "how": "Gives the vision model the card and all eighteen supplied vehicle photos by file name and asks which one the card's photo was taken from; code checks it is the photo in meridian_intake_week.csv."
    },
-   "how": "Searches the deliverable for every supplied photo and checks only the expected one is found."
+   "how": "Gives the vision model the card and all eighteen supplied vehicle photos by file name and asks which one the card's photo was taken from; code checks it is the photo in meridian_intake_week.csv."
   },
   {
    "check_id": "PHOTO-08/vehicle-card-r004/H001",
@@ -2016,30 +3183,110 @@
    "critical": false,
    "check": "The photo on “Vehicle sales card - M2417” (vehicle-card-r004.png) shows stock “M2417” (Calder Vireo), taken from the supplied photo M2417_calder_vireo_front34.jpg.",
    "assertion": {
-    "op": "v2_made_from",
-    "photos": [
-     "M3082_norsted_alta_front34.jpg",
-     "M3082_norsted_alta_rear34.jpg",
-     "M3082_norsted_alta_side.jpg",
-     "M3091_ardmoor_ridge_front34.jpg",
-     "M3091_ardmoor_ridge_rear34.jpg",
-     "M3091_ardmoor_ridge_side.jpg",
-     "M2417_calder_vireo_front34.jpg",
-     "M2417_calder_vireo_rear34.jpg",
-     "M2417_calder_vireo_side.jpg",
-     "M3105_brookmere_sable_front34.jpg",
-     "M3105_brookmere_sable_rear34.jpg",
-     "M3105_brookmere_sable_side.jpg",
-     "M2471_calder_kestrel_front34.jpg",
-     "M2471_calder_kestrel_rear34.jpg",
-     "M2471_calder_kestrel_side.jpg",
-     "M3119_norsted_fjord_front34.jpg",
-     "M3119_norsted_fjord_rear34.jpg",
-     "M3119_norsted_fjord_side.jpg"
+    "op": "vlm_read_r5v",
+    "images": [
+     {
+      "src": "deliverable",
+      "label": "Image 1, the vehicle sales card:"
+     },
+     {
+      "src": "asset:M3082_norsted_alta_front34.jpg",
+      "label": "Reference photo M3082_norsted_alta_front34.jpg:",
+      "max_side": 640
+     },
+     {
+      "src": "asset:M3082_norsted_alta_side.jpg",
+      "label": "Reference photo M3082_norsted_alta_side.jpg:",
+      "max_side": 640
+     },
+     {
+      "src": "asset:M3082_norsted_alta_rear34.jpg",
+      "label": "Reference photo M3082_norsted_alta_rear34.jpg:",
+      "max_side": 640
+     },
+     {
+      "src": "asset:M3091_ardmoor_ridge_front34.jpg",
+      "label": "Reference photo M3091_ardmoor_ridge_front34.jpg:",
+      "max_side": 640
+     },
+     {
+      "src": "asset:M3091_ardmoor_ridge_side.jpg",
+      "label": "Reference photo M3091_ardmoor_ridge_side.jpg:",
+      "max_side": 640
+     },
+     {
+      "src": "asset:M3091_ardmoor_ridge_rear34.jpg",
+      "label": "Reference photo M3091_ardmoor_ridge_rear34.jpg:",
+      "max_side": 640
+     },
+     {
+      "src": "asset:M2417_calder_vireo_front34.jpg",
+      "label": "Reference photo M2417_calder_vireo_front34.jpg:",
+      "max_side": 640
+     },
+     {
+      "src": "asset:M2417_calder_vireo_side.jpg",
+      "label": "Reference photo M2417_calder_vireo_side.jpg:",
+      "max_side": 640
+     },
+     {
+      "src": "asset:M2417_calder_vireo_rear34.jpg",
+      "label": "Reference photo M2417_calder_vireo_rear34.jpg:",
+      "max_side": 640
+     },
+     {
+      "src": "asset:M3105_brookmere_sable_front34.jpg",
+      "label": "Reference photo M3105_brookmere_sable_front34.jpg:",
+      "max_side": 640
+     },
+     {
+      "src": "asset:M3105_brookmere_sable_side.jpg",
+      "label": "Reference photo M3105_brookmere_sable_side.jpg:",
+      "max_side": 640
+     },
+     {
+      "src": "asset:M3105_brookmere_sable_rear34.jpg",
+      "label": "Reference photo M3105_brookmere_sable_rear34.jpg:",
+      "max_side": 640
+     },
+     {
+      "src": "asset:M2471_calder_kestrel_front34.jpg",
+      "label": "Reference photo M2471_calder_kestrel_front34.jpg:",
+      "max_side": 640
+     },
+     {
+      "src": "asset:M2471_calder_kestrel_side.jpg",
+      "label": "Reference photo M2471_calder_kestrel_side.jpg:",
+      "max_side": 640
+     },
+     {
+      "src": "asset:M2471_calder_kestrel_rear34.jpg",
+      "label": "Reference photo M2471_calder_kestrel_rear34.jpg:",
+      "max_side": 640
+     },
+     {
+      "src": "asset:M3119_norsted_fjord_front34.jpg",
+      "label": "Reference photo M3119_norsted_fjord_front34.jpg:",
+      "max_side": 640
+     },
+     {
+      "src": "asset:M3119_norsted_fjord_side.jpg",
+      "label": "Reference photo M3119_norsted_fjord_side.jpg:",
+      "max_side": 640
+     },
+     {
+      "src": "asset:M3119_norsted_fjord_rear34.jpg",
+      "label": "Reference photo M3119_norsted_fjord_rear34.jpg:",
+      "max_side": 640
+     }
     ],
-    "expected": "M2417_calder_vireo_front34.jpg"
+    "expected": [
+     "M2417_calder_vireo_front34.jpg"
+    ],
+    "question": "Image 1 is a vehicle sales card with one vehicle photo. The images after it are reference photos, each preceded by its file name. Which reference photo was used for the vehicle photo on the card: the same vehicle, seen from the same angle? Copy that reference photo's file name exactly as given. If none of them matches, answer no with no values.",
+    "how": "Gives the vision model the card and all eighteen supplied vehicle photos by file name and asks which one the card's photo was taken from; code checks it is the photo in meridian_intake_week.csv."
    },
-   "how": "Searches the deliverable for every supplied photo and checks only the expected one is found."
+   "how": "Gives the vision model the card and all eighteen supplied vehicle photos by file name and asks which one the card's photo was taken from; code checks it is the photo in meridian_intake_week.csv."
   },
   {
    "check_id": "PHOTO-08/vehicle-card-r005/H001",
@@ -2049,30 +3296,110 @@
    "critical": false,
    "check": "The photo on “Vehicle sales card - M3105” (vehicle-card-r005.png) shows stock “M3105” (Brookmere Sable), taken from the supplied photo M3105_brookmere_sable_front34.jpg.",
    "assertion": {
-    "op": "v2_made_from",
-    "photos": [
-     "M3082_norsted_alta_front34.jpg",
-     "M3082_norsted_alta_rear34.jpg",
-     "M3082_norsted_alta_side.jpg",
-     "M3091_ardmoor_ridge_front34.jpg",
-     "M3091_ardmoor_ridge_rear34.jpg",
-     "M3091_ardmoor_ridge_side.jpg",
-     "M2417_calder_vireo_front34.jpg",
-     "M2417_calder_vireo_rear34.jpg",
-     "M2417_calder_vireo_side.jpg",
-     "M3105_brookmere_sable_front34.jpg",
-     "M3105_brookmere_sable_rear34.jpg",
-     "M3105_brookmere_sable_side.jpg",
-     "M2471_calder_kestrel_front34.jpg",
-     "M2471_calder_kestrel_rear34.jpg",
-     "M2471_calder_kestrel_side.jpg",
-     "M3119_norsted_fjord_front34.jpg",
-     "M3119_norsted_fjord_rear34.jpg",
-     "M3119_norsted_fjord_side.jpg"
+    "op": "vlm_read_r5v",
+    "images": [
+     {
+      "src": "deliverable",
+      "label": "Image 1, the vehicle sales card:"
+     },
+     {
+      "src": "asset:M3082_norsted_alta_front34.jpg",
+      "label": "Reference photo M3082_norsted_alta_front34.jpg:",
+      "max_side": 640
+     },
+     {
+      "src": "asset:M3082_norsted_alta_side.jpg",
+      "label": "Reference photo M3082_norsted_alta_side.jpg:",
+      "max_side": 640
+     },
+     {
+      "src": "asset:M3082_norsted_alta_rear34.jpg",
+      "label": "Reference photo M3082_norsted_alta_rear34.jpg:",
+      "max_side": 640
+     },
+     {
+      "src": "asset:M3091_ardmoor_ridge_front34.jpg",
+      "label": "Reference photo M3091_ardmoor_ridge_front34.jpg:",
+      "max_side": 640
+     },
+     {
+      "src": "asset:M3091_ardmoor_ridge_side.jpg",
+      "label": "Reference photo M3091_ardmoor_ridge_side.jpg:",
+      "max_side": 640
+     },
+     {
+      "src": "asset:M3091_ardmoor_ridge_rear34.jpg",
+      "label": "Reference photo M3091_ardmoor_ridge_rear34.jpg:",
+      "max_side": 640
+     },
+     {
+      "src": "asset:M2417_calder_vireo_front34.jpg",
+      "label": "Reference photo M2417_calder_vireo_front34.jpg:",
+      "max_side": 640
+     },
+     {
+      "src": "asset:M2417_calder_vireo_side.jpg",
+      "label": "Reference photo M2417_calder_vireo_side.jpg:",
+      "max_side": 640
+     },
+     {
+      "src": "asset:M2417_calder_vireo_rear34.jpg",
+      "label": "Reference photo M2417_calder_vireo_rear34.jpg:",
+      "max_side": 640
+     },
+     {
+      "src": "asset:M3105_brookmere_sable_front34.jpg",
+      "label": "Reference photo M3105_brookmere_sable_front34.jpg:",
+      "max_side": 640
+     },
+     {
+      "src": "asset:M3105_brookmere_sable_side.jpg",
+      "label": "Reference photo M3105_brookmere_sable_side.jpg:",
+      "max_side": 640
+     },
+     {
+      "src": "asset:M3105_brookmere_sable_rear34.jpg",
+      "label": "Reference photo M3105_brookmere_sable_rear34.jpg:",
+      "max_side": 640
+     },
+     {
+      "src": "asset:M2471_calder_kestrel_front34.jpg",
+      "label": "Reference photo M2471_calder_kestrel_front34.jpg:",
+      "max_side": 640
+     },
+     {
+      "src": "asset:M2471_calder_kestrel_side.jpg",
+      "label": "Reference photo M2471_calder_kestrel_side.jpg:",
+      "max_side": 640
+     },
+     {
+      "src": "asset:M2471_calder_kestrel_rear34.jpg",
+      "label": "Reference photo M2471_calder_kestrel_rear34.jpg:",
+      "max_side": 640
+     },
+     {
+      "src": "asset:M3119_norsted_fjord_front34.jpg",
+      "label": "Reference photo M3119_norsted_fjord_front34.jpg:",
+      "max_side": 640
+     },
+     {
+      "src": "asset:M3119_norsted_fjord_side.jpg",
+      "label": "Reference photo M3119_norsted_fjord_side.jpg:",
+      "max_side": 640
+     },
+     {
+      "src": "asset:M3119_norsted_fjord_rear34.jpg",
+      "label": "Reference photo M3119_norsted_fjord_rear34.jpg:",
+      "max_side": 640
+     }
     ],
-    "expected": "M3105_brookmere_sable_front34.jpg"
+    "expected": [
+     "M3105_brookmere_sable_front34.jpg"
+    ],
+    "question": "Image 1 is a vehicle sales card with one vehicle photo. The images after it are reference photos, each preceded by its file name. Which reference photo was used for the vehicle photo on the card: the same vehicle, seen from the same angle? Copy that reference photo's file name exactly as given. If none of them matches, answer no with no values.",
+    "how": "Gives the vision model the card and all eighteen supplied vehicle photos by file name and asks which one the card's photo was taken from; code checks it is the photo in meridian_intake_week.csv."
    },
-   "how": "Searches the deliverable for every supplied photo and checks only the expected one is found."
+   "how": "Gives the vision model the card and all eighteen supplied vehicle photos by file name and asks which one the card's photo was taken from; code checks it is the photo in meridian_intake_week.csv."
   },
   {
    "check_id": "PHOTO-08/vehicle-card-r006/H001",
@@ -2082,30 +3409,110 @@
    "critical": false,
    "check": "The photo on “Vehicle sales card - M2471” (vehicle-card-r006.png) shows stock “M2471” (Calder Kestrel), taken from the supplied photo M2471_calder_kestrel_front34.jpg.",
    "assertion": {
-    "op": "v2_made_from",
-    "photos": [
-     "M3082_norsted_alta_front34.jpg",
-     "M3082_norsted_alta_rear34.jpg",
-     "M3082_norsted_alta_side.jpg",
-     "M3091_ardmoor_ridge_front34.jpg",
-     "M3091_ardmoor_ridge_rear34.jpg",
-     "M3091_ardmoor_ridge_side.jpg",
-     "M2417_calder_vireo_front34.jpg",
-     "M2417_calder_vireo_rear34.jpg",
-     "M2417_calder_vireo_side.jpg",
-     "M3105_brookmere_sable_front34.jpg",
-     "M3105_brookmere_sable_rear34.jpg",
-     "M3105_brookmere_sable_side.jpg",
-     "M2471_calder_kestrel_front34.jpg",
-     "M2471_calder_kestrel_rear34.jpg",
-     "M2471_calder_kestrel_side.jpg",
-     "M3119_norsted_fjord_front34.jpg",
-     "M3119_norsted_fjord_rear34.jpg",
-     "M3119_norsted_fjord_side.jpg"
+    "op": "vlm_read_r5v",
+    "images": [
+     {
+      "src": "deliverable",
+      "label": "Image 1, the vehicle sales card:"
+     },
+     {
+      "src": "asset:M3082_norsted_alta_front34.jpg",
+      "label": "Reference photo M3082_norsted_alta_front34.jpg:",
+      "max_side": 640
+     },
+     {
+      "src": "asset:M3082_norsted_alta_side.jpg",
+      "label": "Reference photo M3082_norsted_alta_side.jpg:",
+      "max_side": 640
+     },
+     {
+      "src": "asset:M3082_norsted_alta_rear34.jpg",
+      "label": "Reference photo M3082_norsted_alta_rear34.jpg:",
+      "max_side": 640
+     },
+     {
+      "src": "asset:M3091_ardmoor_ridge_front34.jpg",
+      "label": "Reference photo M3091_ardmoor_ridge_front34.jpg:",
+      "max_side": 640
+     },
+     {
+      "src": "asset:M3091_ardmoor_ridge_side.jpg",
+      "label": "Reference photo M3091_ardmoor_ridge_side.jpg:",
+      "max_side": 640
+     },
+     {
+      "src": "asset:M3091_ardmoor_ridge_rear34.jpg",
+      "label": "Reference photo M3091_ardmoor_ridge_rear34.jpg:",
+      "max_side": 640
+     },
+     {
+      "src": "asset:M2417_calder_vireo_front34.jpg",
+      "label": "Reference photo M2417_calder_vireo_front34.jpg:",
+      "max_side": 640
+     },
+     {
+      "src": "asset:M2417_calder_vireo_side.jpg",
+      "label": "Reference photo M2417_calder_vireo_side.jpg:",
+      "max_side": 640
+     },
+     {
+      "src": "asset:M2417_calder_vireo_rear34.jpg",
+      "label": "Reference photo M2417_calder_vireo_rear34.jpg:",
+      "max_side": 640
+     },
+     {
+      "src": "asset:M3105_brookmere_sable_front34.jpg",
+      "label": "Reference photo M3105_brookmere_sable_front34.jpg:",
+      "max_side": 640
+     },
+     {
+      "src": "asset:M3105_brookmere_sable_side.jpg",
+      "label": "Reference photo M3105_brookmere_sable_side.jpg:",
+      "max_side": 640
+     },
+     {
+      "src": "asset:M3105_brookmere_sable_rear34.jpg",
+      "label": "Reference photo M3105_brookmere_sable_rear34.jpg:",
+      "max_side": 640
+     },
+     {
+      "src": "asset:M2471_calder_kestrel_front34.jpg",
+      "label": "Reference photo M2471_calder_kestrel_front34.jpg:",
+      "max_side": 640
+     },
+     {
+      "src": "asset:M2471_calder_kestrel_side.jpg",
+      "label": "Reference photo M2471_calder_kestrel_side.jpg:",
+      "max_side": 640
+     },
+     {
+      "src": "asset:M2471_calder_kestrel_rear34.jpg",
+      "label": "Reference photo M2471_calder_kestrel_rear34.jpg:",
+      "max_side": 640
+     },
+     {
+      "src": "asset:M3119_norsted_fjord_front34.jpg",
+      "label": "Reference photo M3119_norsted_fjord_front34.jpg:",
+      "max_side": 640
+     },
+     {
+      "src": "asset:M3119_norsted_fjord_side.jpg",
+      "label": "Reference photo M3119_norsted_fjord_side.jpg:",
+      "max_side": 640
+     },
+     {
+      "src": "asset:M3119_norsted_fjord_rear34.jpg",
+      "label": "Reference photo M3119_norsted_fjord_rear34.jpg:",
+      "max_side": 640
+     }
     ],
-    "expected": "M2471_calder_kestrel_front34.jpg"
+    "expected": [
+     "M2471_calder_kestrel_front34.jpg"
+    ],
+    "question": "Image 1 is a vehicle sales card with one vehicle photo. The images after it are reference photos, each preceded by its file name. Which reference photo was used for the vehicle photo on the card: the same vehicle, seen from the same angle? Copy that reference photo's file name exactly as given. If none of them matches, answer no with no values.",
+    "how": "Gives the vision model the card and all eighteen supplied vehicle photos by file name and asks which one the card's photo was taken from; code checks it is the photo in meridian_intake_week.csv."
    },
-   "how": "Searches the deliverable for every supplied photo and checks only the expected one is found."
+   "how": "Gives the vision model the card and all eighteen supplied vehicle photos by file name and asks which one the card's photo was taken from; code checks it is the photo in meridian_intake_week.csv."
   },
   {
    "check_id": "PHOTO-08/vehicle-card-r007/H001",
@@ -2115,30 +3522,110 @@
    "critical": false,
    "check": "The photo on “Vehicle sales card - M3119” (vehicle-card-r007.png) shows stock “M3119” (Norsted Fjord), taken from the supplied photo M3119_norsted_fjord_front34.jpg.",
    "assertion": {
-    "op": "v2_made_from",
-    "photos": [
-     "M3082_norsted_alta_front34.jpg",
-     "M3082_norsted_alta_rear34.jpg",
-     "M3082_norsted_alta_side.jpg",
-     "M3091_ardmoor_ridge_front34.jpg",
-     "M3091_ardmoor_ridge_rear34.jpg",
-     "M3091_ardmoor_ridge_side.jpg",
-     "M2417_calder_vireo_front34.jpg",
-     "M2417_calder_vireo_rear34.jpg",
-     "M2417_calder_vireo_side.jpg",
-     "M3105_brookmere_sable_front34.jpg",
-     "M3105_brookmere_sable_rear34.jpg",
-     "M3105_brookmere_sable_side.jpg",
-     "M2471_calder_kestrel_front34.jpg",
-     "M2471_calder_kestrel_rear34.jpg",
-     "M2471_calder_kestrel_side.jpg",
-     "M3119_norsted_fjord_front34.jpg",
-     "M3119_norsted_fjord_rear34.jpg",
-     "M3119_norsted_fjord_side.jpg"
+    "op": "vlm_read_r5v",
+    "images": [
+     {
+      "src": "deliverable",
+      "label": "Image 1, the vehicle sales card:"
+     },
+     {
+      "src": "asset:M3082_norsted_alta_front34.jpg",
+      "label": "Reference photo M3082_norsted_alta_front34.jpg:",
+      "max_side": 640
+     },
+     {
+      "src": "asset:M3082_norsted_alta_side.jpg",
+      "label": "Reference photo M3082_norsted_alta_side.jpg:",
+      "max_side": 640
+     },
+     {
+      "src": "asset:M3082_norsted_alta_rear34.jpg",
+      "label": "Reference photo M3082_norsted_alta_rear34.jpg:",
+      "max_side": 640
+     },
+     {
+      "src": "asset:M3091_ardmoor_ridge_front34.jpg",
+      "label": "Reference photo M3091_ardmoor_ridge_front34.jpg:",
+      "max_side": 640
+     },
+     {
+      "src": "asset:M3091_ardmoor_ridge_side.jpg",
+      "label": "Reference photo M3091_ardmoor_ridge_side.jpg:",
+      "max_side": 640
+     },
+     {
+      "src": "asset:M3091_ardmoor_ridge_rear34.jpg",
+      "label": "Reference photo M3091_ardmoor_ridge_rear34.jpg:",
+      "max_side": 640
+     },
+     {
+      "src": "asset:M2417_calder_vireo_front34.jpg",
+      "label": "Reference photo M2417_calder_vireo_front34.jpg:",
+      "max_side": 640
+     },
+     {
+      "src": "asset:M2417_calder_vireo_side.jpg",
+      "label": "Reference photo M2417_calder_vireo_side.jpg:",
+      "max_side": 640
+     },
+     {
+      "src": "asset:M2417_calder_vireo_rear34.jpg",
+      "label": "Reference photo M2417_calder_vireo_rear34.jpg:",
+      "max_side": 640
+     },
+     {
+      "src": "asset:M3105_brookmere_sable_front34.jpg",
+      "label": "Reference photo M3105_brookmere_sable_front34.jpg:",
+      "max_side": 640
+     },
+     {
+      "src": "asset:M3105_brookmere_sable_side.jpg",
+      "label": "Reference photo M3105_brookmere_sable_side.jpg:",
+      "max_side": 640
+     },
+     {
+      "src": "asset:M3105_brookmere_sable_rear34.jpg",
+      "label": "Reference photo M3105_brookmere_sable_rear34.jpg:",
+      "max_side": 640
+     },
+     {
+      "src": "asset:M2471_calder_kestrel_front34.jpg",
+      "label": "Reference photo M2471_calder_kestrel_front34.jpg:",
+      "max_side": 640
+     },
+     {
+      "src": "asset:M2471_calder_kestrel_side.jpg",
+      "label": "Reference photo M2471_calder_kestrel_side.jpg:",
+      "max_side": 640
+     },
+     {
+      "src": "asset:M2471_calder_kestrel_rear34.jpg",
+      "label": "Reference photo M2471_calder_kestrel_rear34.jpg:",
+      "max_side": 640
+     },
+     {
+      "src": "asset:M3119_norsted_fjord_front34.jpg",
+      "label": "Reference photo M3119_norsted_fjord_front34.jpg:",
+      "max_side": 640
+     },
+     {
+      "src": "asset:M3119_norsted_fjord_side.jpg",
+      "label": "Reference photo M3119_norsted_fjord_side.jpg:",
+      "max_side": 640
+     },
+     {
+      "src": "asset:M3119_norsted_fjord_rear34.jpg",
+      "label": "Reference photo M3119_norsted_fjord_rear34.jpg:",
+      "max_side": 640
+     }
     ],
-    "expected": "M3119_norsted_fjord_front34.jpg"
+    "expected": [
+     "M3119_norsted_fjord_front34.jpg"
+    ],
+    "question": "Image 1 is a vehicle sales card with one vehicle photo. The images after it are reference photos, each preceded by its file name. Which reference photo was used for the vehicle photo on the card: the same vehicle, seen from the same angle? Copy that reference photo's file name exactly as given. If none of them matches, answer no with no values.",
+    "how": "Gives the vision model the card and all eighteen supplied vehicle photos by file name and asks which one the card's photo was taken from; code checks it is the photo in meridian_intake_week.csv."
    },
-   "how": "Searches the deliverable for every supplied photo and checks only the expected one is found."
+   "how": "Gives the vision model the card and all eighteen supplied vehicle photos by file name and asks which one the card's photo was taken from; code checks it is the photo in meridian_intake_week.csv."
   },
   {
    "check_id": "PHOTO-08/inventory-campaign/H006",
@@ -2241,6 +3728,21 @@
     ]
    },
    "how": "Searches the deliverable for the supplied file (feature matching, confirmed by correlation), then checks it keeps its own proportions."
+  },
+  {
+   "check_id": "PHOTO-08/inventory-campaign/H124",
+   "output_id": "inventory-campaign",
+   "rule_id": "R029",
+   "k_id": "K2_Q1",
+   "critical": false,
+   "check": "Each of the six vehicles appears in exactly one photograph on “Forecourt inventory campaign” (inventory-campaign.png); no vehicle is shown twice.",
+   "assertion": {
+    "op": "vlm_yesno_r5v",
+    "question": "This image shows several vehicle photos, each in its own panel. Is the same vehicle (the same model in the same colour) shown in more than one panel? answer yes or no.",
+    "pass_on": "no",
+    "how": "Asks the vision model whether the same vehicle is shown in more than one panel."
+   },
+   "how": "Asks the vision model whether the same vehicle is shown in more than one panel."
   },
   {
    "check_id": "PHOTO-08/vehicle-card-r002/H031",
@@ -2703,7 +4205,8 @@
      "meridian_roundel.png",
      "meridian_roundel_transparent.png",
      "meridian_roundel_reversed.png"
-    ]
+    ],
+    "min_conf": 60
    },
    "how": "Reads each selected text line by OCR, then the colour of its letters and of the ground behind it."
   },
@@ -2730,7 +4233,8 @@
      "meridian_roundel.png",
      "meridian_roundel_transparent.png",
      "meridian_roundel_reversed.png"
-    ]
+    ],
+    "min_conf": 60
    },
    "how": "Reads each selected text line by OCR, then the colour of its letters and of the ground behind it."
   },
@@ -2757,7 +4261,8 @@
      "meridian_roundel.png",
      "meridian_roundel_transparent.png",
      "meridian_roundel_reversed.png"
-    ]
+    ],
+    "min_conf": 60
    },
    "how": "Reads each selected text line by OCR, then the colour of its letters and of the ground behind it."
   },
@@ -2784,7 +4289,8 @@
      "meridian_roundel.png",
      "meridian_roundel_transparent.png",
      "meridian_roundel_reversed.png"
-    ]
+    ],
+    "min_conf": 60
    },
    "how": "Reads each selected text line by OCR, then the colour of its letters and of the ground behind it."
   },
@@ -2811,7 +4317,8 @@
      "meridian_roundel.png",
      "meridian_roundel_transparent.png",
      "meridian_roundel_reversed.png"
-    ]
+    ],
+    "min_conf": 60
    },
    "how": "Reads each selected text line by OCR, then the colour of its letters and of the ground behind it."
   },
@@ -2838,7 +4345,8 @@
      "meridian_roundel.png",
      "meridian_roundel_transparent.png",
      "meridian_roundel_reversed.png"
-    ]
+    ],
+    "min_conf": 60
    },
    "how": "Reads each selected text line by OCR, then the colour of its letters and of the ground behind it."
   },
@@ -4594,28 +6102,39 @@
    "critical": false,
    "check": "Any field label, such as stock or mileage, set on Showroom White on “Vehicle sales card - M3082” (vehicle-card-r002.png) is Meridian Navy #1F2A3A.",
    "assertion": {
-    "op": "v2_line_colour_raster",
-    "patterns": [
-     "(?-i:^\\W*(?:STOCK|MILEAGE|CERTIFICATION|PRICE|TRIM|YEAR|VIN|ODOMETER)\\b)"
-    ],
-    "grounds": [
-     "#F6F7F8"
-    ],
+    "op": "v2_named_colour_r5c",
+    "check": {
+     "op": "v2_line_colour_raster",
+     "patterns": [
+      "(?-i:^\\W*(?:STOCK|MILEAGE|CERTIFICATION|PRICE|TRIM|YEAR|VIN|ODOMETER)\\b)"
+     ],
+     "grounds": [
+      "#F6F7F8"
+     ],
+     "colors": [
+      "#1F2A3A"
+     ],
+     "optional": true,
+     "split_gaps": true,
+     "photos": [
+      "M3082_norsted_alta_front34.jpg",
+      "M3082_norsted_alta_rear34.jpg",
+      "M3082_norsted_alta_side.jpg",
+      "meridian_roundel.png",
+      "meridian_roundel_transparent.png",
+      "meridian_roundel_reversed.png"
+     ]
+    },
     "colors": [
      "#1F2A3A"
     ],
-    "optional": true,
-    "split_gaps": true,
-    "photos": [
-     "M3082_norsted_alta_front34.jpg",
-     "M3082_norsted_alta_rear34.jpg",
-     "M3082_norsted_alta_side.jpg",
-     "meridian_roundel.png",
-     "meridian_roundel_transparent.png",
-     "meridian_roundel_reversed.png"
+    "others": [
+     "#2E3237",
+     "#3C6E71",
+     "#9AA1A8"
     ]
    },
-   "how": "Reads each selected text line by OCR, then the colour of its letters and of the ground behind it."
+   "how": "Reads each selected text line by OCR and the colour of its letters; a line set exactly in another palette colour fails, anything unclear goes to a person."
   },
   {
    "check_id": "PHOTO-08/vehicle-card-r003/H070",
@@ -4625,28 +6144,39 @@
    "critical": false,
    "check": "Any field label, such as stock or mileage, set on Showroom White on “Vehicle sales card - M3091” (vehicle-card-r003.png) is Meridian Navy #1F2A3A.",
    "assertion": {
-    "op": "v2_line_colour_raster",
-    "patterns": [
-     "(?-i:^\\W*(?:STOCK|MILEAGE|CERTIFICATION|PRICE|TRIM|YEAR|VIN|ODOMETER)\\b)"
-    ],
-    "grounds": [
-     "#F6F7F8"
-    ],
+    "op": "v2_named_colour_r5c",
+    "check": {
+     "op": "v2_line_colour_raster",
+     "patterns": [
+      "(?-i:^\\W*(?:STOCK|MILEAGE|CERTIFICATION|PRICE|TRIM|YEAR|VIN|ODOMETER)\\b)"
+     ],
+     "grounds": [
+      "#F6F7F8"
+     ],
+     "colors": [
+      "#1F2A3A"
+     ],
+     "optional": true,
+     "split_gaps": true,
+     "photos": [
+      "M3091_ardmoor_ridge_front34.jpg",
+      "M3091_ardmoor_ridge_rear34.jpg",
+      "M3091_ardmoor_ridge_side.jpg",
+      "meridian_roundel.png",
+      "meridian_roundel_transparent.png",
+      "meridian_roundel_reversed.png"
+     ]
+    },
     "colors": [
      "#1F2A3A"
     ],
-    "optional": true,
-    "split_gaps": true,
-    "photos": [
-     "M3091_ardmoor_ridge_front34.jpg",
-     "M3091_ardmoor_ridge_rear34.jpg",
-     "M3091_ardmoor_ridge_side.jpg",
-     "meridian_roundel.png",
-     "meridian_roundel_transparent.png",
-     "meridian_roundel_reversed.png"
+    "others": [
+     "#2E3237",
+     "#3C6E71",
+     "#9AA1A8"
     ]
    },
-   "how": "Reads each selected text line by OCR, then the colour of its letters and of the ground behind it."
+   "how": "Reads each selected text line by OCR and the colour of its letters; a line set exactly in another palette colour fails, anything unclear goes to a person."
   },
   {
    "check_id": "PHOTO-08/vehicle-card-r004/H069",
@@ -4656,28 +6186,39 @@
    "critical": false,
    "check": "Any field label, such as stock or mileage, set on Showroom White on “Vehicle sales card - M2417” (vehicle-card-r004.png) is Meridian Navy #1F2A3A.",
    "assertion": {
-    "op": "v2_line_colour_raster",
-    "patterns": [
-     "(?-i:^\\W*(?:STOCK|MILEAGE|CERTIFICATION|PRICE|TRIM|YEAR|VIN|ODOMETER)\\b)"
-    ],
-    "grounds": [
-     "#F6F7F8"
-    ],
+    "op": "v2_named_colour_r5c",
+    "check": {
+     "op": "v2_line_colour_raster",
+     "patterns": [
+      "(?-i:^\\W*(?:STOCK|MILEAGE|CERTIFICATION|PRICE|TRIM|YEAR|VIN|ODOMETER)\\b)"
+     ],
+     "grounds": [
+      "#F6F7F8"
+     ],
+     "colors": [
+      "#1F2A3A"
+     ],
+     "optional": true,
+     "split_gaps": true,
+     "photos": [
+      "M2417_calder_vireo_front34.jpg",
+      "M2417_calder_vireo_rear34.jpg",
+      "M2417_calder_vireo_side.jpg",
+      "meridian_roundel.png",
+      "meridian_roundel_transparent.png",
+      "meridian_roundel_reversed.png"
+     ]
+    },
     "colors": [
      "#1F2A3A"
     ],
-    "optional": true,
-    "split_gaps": true,
-    "photos": [
-     "M2417_calder_vireo_front34.jpg",
-     "M2417_calder_vireo_rear34.jpg",
-     "M2417_calder_vireo_side.jpg",
-     "meridian_roundel.png",
-     "meridian_roundel_transparent.png",
-     "meridian_roundel_reversed.png"
+    "others": [
+     "#2E3237",
+     "#3C6E71",
+     "#9AA1A8"
     ]
    },
-   "how": "Reads each selected text line by OCR, then the colour of its letters and of the ground behind it."
+   "how": "Reads each selected text line by OCR and the colour of its letters; a line set exactly in another palette colour fails, anything unclear goes to a person."
   },
   {
    "check_id": "PHOTO-08/vehicle-card-r005/H070",
@@ -4687,28 +6228,39 @@
    "critical": false,
    "check": "Any field label, such as stock or mileage, set on Showroom White on “Vehicle sales card - M3105” (vehicle-card-r005.png) is Meridian Navy #1F2A3A.",
    "assertion": {
-    "op": "v2_line_colour_raster",
-    "patterns": [
-     "(?-i:^\\W*(?:STOCK|MILEAGE|CERTIFICATION|PRICE|TRIM|YEAR|VIN|ODOMETER)\\b)"
-    ],
-    "grounds": [
-     "#F6F7F8"
-    ],
+    "op": "v2_named_colour_r5c",
+    "check": {
+     "op": "v2_line_colour_raster",
+     "patterns": [
+      "(?-i:^\\W*(?:STOCK|MILEAGE|CERTIFICATION|PRICE|TRIM|YEAR|VIN|ODOMETER)\\b)"
+     ],
+     "grounds": [
+      "#F6F7F8"
+     ],
+     "colors": [
+      "#1F2A3A"
+     ],
+     "optional": true,
+     "split_gaps": true,
+     "photos": [
+      "M3105_brookmere_sable_front34.jpg",
+      "M3105_brookmere_sable_rear34.jpg",
+      "M3105_brookmere_sable_side.jpg",
+      "meridian_roundel.png",
+      "meridian_roundel_transparent.png",
+      "meridian_roundel_reversed.png"
+     ]
+    },
     "colors": [
      "#1F2A3A"
     ],
-    "optional": true,
-    "split_gaps": true,
-    "photos": [
-     "M3105_brookmere_sable_front34.jpg",
-     "M3105_brookmere_sable_rear34.jpg",
-     "M3105_brookmere_sable_side.jpg",
-     "meridian_roundel.png",
-     "meridian_roundel_transparent.png",
-     "meridian_roundel_reversed.png"
+    "others": [
+     "#2E3237",
+     "#3C6E71",
+     "#9AA1A8"
     ]
    },
-   "how": "Reads each selected text line by OCR, then the colour of its letters and of the ground behind it."
+   "how": "Reads each selected text line by OCR and the colour of its letters; a line set exactly in another palette colour fails, anything unclear goes to a person."
   },
   {
    "check_id": "PHOTO-08/vehicle-card-r006/H070",
@@ -4718,28 +6270,39 @@
    "critical": false,
    "check": "Any field label, such as stock or mileage, set on Showroom White on “Vehicle sales card - M2471” (vehicle-card-r006.png) is Meridian Navy #1F2A3A.",
    "assertion": {
-    "op": "v2_line_colour_raster",
-    "patterns": [
-     "(?-i:^\\W*(?:STOCK|MILEAGE|CERTIFICATION|PRICE|TRIM|YEAR|VIN|ODOMETER)\\b)"
-    ],
-    "grounds": [
-     "#F6F7F8"
-    ],
+    "op": "v2_named_colour_r5c",
+    "check": {
+     "op": "v2_line_colour_raster",
+     "patterns": [
+      "(?-i:^\\W*(?:STOCK|MILEAGE|CERTIFICATION|PRICE|TRIM|YEAR|VIN|ODOMETER)\\b)"
+     ],
+     "grounds": [
+      "#F6F7F8"
+     ],
+     "colors": [
+      "#1F2A3A"
+     ],
+     "optional": true,
+     "split_gaps": true,
+     "photos": [
+      "M2471_calder_kestrel_front34.jpg",
+      "M2471_calder_kestrel_rear34.jpg",
+      "M2471_calder_kestrel_side.jpg",
+      "meridian_roundel.png",
+      "meridian_roundel_transparent.png",
+      "meridian_roundel_reversed.png"
+     ]
+    },
     "colors": [
      "#1F2A3A"
     ],
-    "optional": true,
-    "split_gaps": true,
-    "photos": [
-     "M2471_calder_kestrel_front34.jpg",
-     "M2471_calder_kestrel_rear34.jpg",
-     "M2471_calder_kestrel_side.jpg",
-     "meridian_roundel.png",
-     "meridian_roundel_transparent.png",
-     "meridian_roundel_reversed.png"
+    "others": [
+     "#2E3237",
+     "#3C6E71",
+     "#9AA1A8"
     ]
    },
-   "how": "Reads each selected text line by OCR, then the colour of its letters and of the ground behind it."
+   "how": "Reads each selected text line by OCR and the colour of its letters; a line set exactly in another palette colour fails, anything unclear goes to a person."
   },
   {
    "check_id": "PHOTO-08/vehicle-card-r007/H069",
@@ -4749,28 +6312,39 @@
    "critical": false,
    "check": "Any field label, such as stock or mileage, set on Showroom White on “Vehicle sales card - M3119” (vehicle-card-r007.png) is Meridian Navy #1F2A3A.",
    "assertion": {
-    "op": "v2_line_colour_raster",
-    "patterns": [
-     "(?-i:^\\W*(?:STOCK|MILEAGE|CERTIFICATION|PRICE|TRIM|YEAR|VIN|ODOMETER)\\b)"
-    ],
-    "grounds": [
-     "#F6F7F8"
-    ],
+    "op": "v2_named_colour_r5c",
+    "check": {
+     "op": "v2_line_colour_raster",
+     "patterns": [
+      "(?-i:^\\W*(?:STOCK|MILEAGE|CERTIFICATION|PRICE|TRIM|YEAR|VIN|ODOMETER)\\b)"
+     ],
+     "grounds": [
+      "#F6F7F8"
+     ],
+     "colors": [
+      "#1F2A3A"
+     ],
+     "optional": true,
+     "split_gaps": true,
+     "photos": [
+      "M3119_norsted_fjord_front34.jpg",
+      "M3119_norsted_fjord_rear34.jpg",
+      "M3119_norsted_fjord_side.jpg",
+      "meridian_roundel.png",
+      "meridian_roundel_transparent.png",
+      "meridian_roundel_reversed.png"
+     ]
+    },
     "colors": [
      "#1F2A3A"
     ],
-    "optional": true,
-    "split_gaps": true,
-    "photos": [
-     "M3119_norsted_fjord_front34.jpg",
-     "M3119_norsted_fjord_rear34.jpg",
-     "M3119_norsted_fjord_side.jpg",
-     "meridian_roundel.png",
-     "meridian_roundel_transparent.png",
-     "meridian_roundel_reversed.png"
+    "others": [
+     "#2E3237",
+     "#3C6E71",
+     "#9AA1A8"
     ]
    },
-   "how": "Reads each selected text line by OCR, then the colour of its letters and of the ground behind it."
+   "how": "Reads each selected text line by OCR and the colour of its letters; a line set exactly in another palette colour fails, anything unclear goes to a person."
   },
   {
    "check_id": "PHOTO-08/inventory-campaign/H112",
@@ -4780,43 +6354,54 @@
    "critical": false,
    "check": "Any field label, such as stock or mileage, set on Showroom White on “Forecourt inventory campaign” (inventory-campaign.png) is Meridian Navy #1F2A3A.",
    "assertion": {
-    "op": "v2_line_colour_raster",
-    "patterns": [
-     "(?-i:^\\W*(?:STOCK|MILEAGE|CERTIFICATION|PRICE|TRIM|YEAR|VIN|ODOMETER)\\b)"
-    ],
-    "grounds": [
-     "#F6F7F8"
-    ],
+    "op": "v2_named_colour_r5c",
+    "check": {
+     "op": "v2_line_colour_raster",
+     "patterns": [
+      "(?-i:^\\W*(?:STOCK|MILEAGE|CERTIFICATION|PRICE|TRIM|YEAR|VIN|ODOMETER)\\b)"
+     ],
+     "grounds": [
+      "#F6F7F8"
+     ],
+     "colors": [
+      "#1F2A3A"
+     ],
+     "optional": true,
+     "split_gaps": true,
+     "photos": [
+      "M3082_norsted_alta_front34.jpg",
+      "M3082_norsted_alta_rear34.jpg",
+      "M3082_norsted_alta_side.jpg",
+      "M3091_ardmoor_ridge_front34.jpg",
+      "M3091_ardmoor_ridge_rear34.jpg",
+      "M3091_ardmoor_ridge_side.jpg",
+      "M2417_calder_vireo_front34.jpg",
+      "M2417_calder_vireo_rear34.jpg",
+      "M2417_calder_vireo_side.jpg",
+      "M3105_brookmere_sable_front34.jpg",
+      "M3105_brookmere_sable_rear34.jpg",
+      "M3105_brookmere_sable_side.jpg",
+      "M2471_calder_kestrel_front34.jpg",
+      "M2471_calder_kestrel_rear34.jpg",
+      "M2471_calder_kestrel_side.jpg",
+      "M3119_norsted_fjord_front34.jpg",
+      "M3119_norsted_fjord_rear34.jpg",
+      "M3119_norsted_fjord_side.jpg",
+      "meridian_roundel.png",
+      "meridian_roundel_transparent.png",
+      "meridian_roundel_reversed.png"
+     ]
+    },
     "colors": [
      "#1F2A3A"
     ],
-    "optional": true,
-    "split_gaps": true,
-    "photos": [
-     "M3082_norsted_alta_front34.jpg",
-     "M3082_norsted_alta_rear34.jpg",
-     "M3082_norsted_alta_side.jpg",
-     "M3091_ardmoor_ridge_front34.jpg",
-     "M3091_ardmoor_ridge_rear34.jpg",
-     "M3091_ardmoor_ridge_side.jpg",
-     "M2417_calder_vireo_front34.jpg",
-     "M2417_calder_vireo_rear34.jpg",
-     "M2417_calder_vireo_side.jpg",
-     "M3105_brookmere_sable_front34.jpg",
-     "M3105_brookmere_sable_rear34.jpg",
-     "M3105_brookmere_sable_side.jpg",
-     "M2471_calder_kestrel_front34.jpg",
-     "M2471_calder_kestrel_rear34.jpg",
-     "M2471_calder_kestrel_side.jpg",
-     "M3119_norsted_fjord_front34.jpg",
-     "M3119_norsted_fjord_rear34.jpg",
-     "M3119_norsted_fjord_side.jpg",
-     "meridian_roundel.png",
-     "meridian_roundel_transparent.png",
-     "meridian_roundel_reversed.png"
+    "others": [
+     "#2E3237",
+     "#3C6E71",
+     "#9AA1A8"
     ]
    },
-   "how": "Reads each selected text line by OCR, then the colour of its letters and of the ground behind it."
+   "how": "Reads each selected text line by OCR and the colour of its letters; a line set exactly in another palette colour fails, anything unclear goes to a person."
   },
   {
    "check_id": "PHOTO-08/vehicle-card-r002/H072",
@@ -7285,30 +8870,12 @@
    "critical": false,
    "check": "A thin rule sits directly under the price on “Vehicle sales card - M3082” (vehicle-card-r002.png).",
    "assertion": {
-    "op": "v2_rule_colour_raster",
-    "below": "(?<![\\d,.])26,?\\s?900(?![\\d]|,\\d)",
-    "candidates": [
-     "#1F2A3A",
-     "#2E3237",
-     "#3C6E71",
-     "#9AA1A8"
-    ],
-    "colors": [
-     "#1F2A3A",
-     "#2E3237",
-     "#3C6E71",
-     "#9AA1A8"
-    ],
-    "photos": [
-     "M3082_norsted_alta_front34.jpg",
-     "M3082_norsted_alta_rear34.jpg",
-     "M3082_norsted_alta_side.jpg",
-     "meridian_roundel.png",
-     "meridian_roundel_transparent.png",
-     "meridian_roundel_reversed.png"
-    ]
+    "op": "vlm_yesno_r5v",
+    "question": "Look at the large asking price on this card. Directly below the price, before the next line of text, is there a thin horizontal line (a rule) running under it? answer yes or no.",
+    "pass_on": "yes",
+    "how": "Asks the vision model whether a thin horizontal rule sits directly under the asking price."
    },
-   "how": "Finds the thin horizontal rules and tells their colour by the direction it takes from the ground."
+   "how": "Asks the vision model whether a thin horizontal rule sits directly under the asking price."
   },
   {
    "check_id": "PHOTO-08/vehicle-card-r003/H023",
@@ -7318,30 +8885,12 @@
    "critical": false,
    "check": "A thin rule sits directly under the price on “Vehicle sales card - M3091” (vehicle-card-r003.png).",
    "assertion": {
-    "op": "v2_rule_colour_raster",
-    "below": "(?<![\\d,.])24,?\\s?500(?![\\d]|,\\d)",
-    "candidates": [
-     "#1F2A3A",
-     "#2E3237",
-     "#3C6E71",
-     "#9AA1A8"
-    ],
-    "colors": [
-     "#1F2A3A",
-     "#2E3237",
-     "#3C6E71",
-     "#9AA1A8"
-    ],
-    "photos": [
-     "M3091_ardmoor_ridge_front34.jpg",
-     "M3091_ardmoor_ridge_rear34.jpg",
-     "M3091_ardmoor_ridge_side.jpg",
-     "meridian_roundel.png",
-     "meridian_roundel_transparent.png",
-     "meridian_roundel_reversed.png"
-    ]
+    "op": "vlm_yesno_r5v",
+    "question": "Look at the large asking price on this card. Directly below the price, before the next line of text, is there a thin horizontal line (a rule) running under it? answer yes or no.",
+    "pass_on": "yes",
+    "how": "Asks the vision model whether a thin horizontal rule sits directly under the asking price."
    },
-   "how": "Finds the thin horizontal rules and tells their colour by the direction it takes from the ground."
+   "how": "Asks the vision model whether a thin horizontal rule sits directly under the asking price."
   },
   {
    "check_id": "PHOTO-08/vehicle-card-r004/H022",
@@ -7351,30 +8900,12 @@
    "critical": false,
    "check": "A thin rule sits directly under the price on “Vehicle sales card - M2417” (vehicle-card-r004.png).",
    "assertion": {
-    "op": "v2_rule_colour_raster",
-    "below": "(?<![\\d,.])23,?\\s?900(?![\\d]|,\\d)",
-    "candidates": [
-     "#1F2A3A",
-     "#2E3237",
-     "#3C6E71",
-     "#9AA1A8"
-    ],
-    "colors": [
-     "#1F2A3A",
-     "#2E3237",
-     "#3C6E71",
-     "#9AA1A8"
-    ],
-    "photos": [
-     "M2417_calder_vireo_front34.jpg",
-     "M2417_calder_vireo_rear34.jpg",
-     "M2417_calder_vireo_side.jpg",
-     "meridian_roundel.png",
-     "meridian_roundel_transparent.png",
-     "meridian_roundel_reversed.png"
-    ]
+    "op": "vlm_yesno_r5v",
+    "question": "Look at the large asking price on this card. Directly below the price, before the next line of text, is there a thin horizontal line (a rule) running under it? answer yes or no.",
+    "pass_on": "yes",
+    "how": "Asks the vision model whether a thin horizontal rule sits directly under the asking price."
    },
-   "how": "Finds the thin horizontal rules and tells their colour by the direction it takes from the ground."
+   "how": "Asks the vision model whether a thin horizontal rule sits directly under the asking price."
   },
   {
    "check_id": "PHOTO-08/vehicle-card-r005/H023",
@@ -7384,30 +8915,12 @@
    "critical": false,
    "check": "A thin rule sits directly under the price on “Vehicle sales card - M3105” (vehicle-card-r005.png).",
    "assertion": {
-    "op": "v2_rule_colour_raster",
-    "below": "(?<![\\d,.])31,?\\s?900(?![\\d]|,\\d)",
-    "candidates": [
-     "#1F2A3A",
-     "#2E3237",
-     "#3C6E71",
-     "#9AA1A8"
-    ],
-    "colors": [
-     "#1F2A3A",
-     "#2E3237",
-     "#3C6E71",
-     "#9AA1A8"
-    ],
-    "photos": [
-     "M3105_brookmere_sable_front34.jpg",
-     "M3105_brookmere_sable_rear34.jpg",
-     "M3105_brookmere_sable_side.jpg",
-     "meridian_roundel.png",
-     "meridian_roundel_transparent.png",
-     "meridian_roundel_reversed.png"
-    ]
+    "op": "vlm_yesno_r5v",
+    "question": "Look at the large asking price on this card. Directly below the price, before the next line of text, is there a thin horizontal line (a rule) running under it? answer yes or no.",
+    "pass_on": "yes",
+    "how": "Asks the vision model whether a thin horizontal rule sits directly under the asking price."
    },
-   "how": "Finds the thin horizontal rules and tells their colour by the direction it takes from the ground."
+   "how": "Asks the vision model whether a thin horizontal rule sits directly under the asking price."
   },
   {
    "check_id": "PHOTO-08/vehicle-card-r006/H023",
@@ -7417,30 +8930,12 @@
    "critical": false,
    "check": "A thin rule sits directly under the price on “Vehicle sales card - M2471” (vehicle-card-r006.png).",
    "assertion": {
-    "op": "v2_rule_colour_raster",
-    "below": "(?<![\\d,.])24,?\\s?900(?![\\d]|,\\d)",
-    "candidates": [
-     "#1F2A3A",
-     "#2E3237",
-     "#3C6E71",
-     "#9AA1A8"
-    ],
-    "colors": [
-     "#1F2A3A",
-     "#2E3237",
-     "#3C6E71",
-     "#9AA1A8"
-    ],
-    "photos": [
-     "M2471_calder_kestrel_front34.jpg",
-     "M2471_calder_kestrel_rear34.jpg",
-     "M2471_calder_kestrel_side.jpg",
-     "meridian_roundel.png",
-     "meridian_roundel_transparent.png",
-     "meridian_roundel_reversed.png"
-    ]
+    "op": "vlm_yesno_r5v",
+    "question": "Look at the large asking price on this card. Directly below the price, before the next line of text, is there a thin horizontal line (a rule) running under it? answer yes or no.",
+    "pass_on": "yes",
+    "how": "Asks the vision model whether a thin horizontal rule sits directly under the asking price."
    },
-   "how": "Finds the thin horizontal rules and tells their colour by the direction it takes from the ground."
+   "how": "Asks the vision model whether a thin horizontal rule sits directly under the asking price."
   },
   {
    "check_id": "PHOTO-08/vehicle-card-r007/H022",
@@ -7450,30 +8945,117 @@
    "critical": false,
    "check": "A thin rule sits directly under the price on “Vehicle sales card - M3119” (vehicle-card-r007.png).",
    "assertion": {
-    "op": "v2_rule_colour_raster",
-    "below": "(?<![\\d,.])29,?\\s?900(?![\\d]|,\\d)",
-    "candidates": [
-     "#1F2A3A",
-     "#2E3237",
-     "#3C6E71",
-     "#9AA1A8"
-    ],
-    "colors": [
-     "#1F2A3A",
-     "#2E3237",
-     "#3C6E71",
-     "#9AA1A8"
-    ],
-    "photos": [
-     "M3119_norsted_fjord_front34.jpg",
-     "M3119_norsted_fjord_rear34.jpg",
-     "M3119_norsted_fjord_side.jpg",
-     "meridian_roundel.png",
-     "meridian_roundel_transparent.png",
-     "meridian_roundel_reversed.png"
-    ]
+    "op": "vlm_yesno_r5v",
+    "question": "Look at the large asking price on this card. Directly below the price, before the next line of text, is there a thin horizontal line (a rule) running under it? answer yes or no.",
+    "pass_on": "yes",
+    "how": "Asks the vision model whether a thin horizontal rule sits directly under the asking price."
    },
-   "how": "Finds the thin horizontal rules and tells their colour by the direction it takes from the ground."
+   "how": "Asks the vision model whether a thin horizontal rule sits directly under the asking price."
+  },
+  {
+   "check_id": "PHOTO-08/vehicle-card-r002/H030",
+   "output_id": "vehicle-card-r002",
+   "rule_id": "R100",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "vehicle-card-r002.png contains no starburst graphic.",
+   "assertion": {
+    "op": "vlm_yesno_r5v",
+    "question": "Does this image contain a starburst graphic: a star or burst shape with many spiky points, of the kind used as a sale or offer badge? answer yes or no.",
+    "pass_on": "no",
+    "how": "Asks the vision model whether the file contains a starburst graphic."
+   },
+   "how": "Asks the vision model whether the file contains a starburst graphic."
+  },
+  {
+   "check_id": "PHOTO-08/vehicle-card-r003/H028",
+   "output_id": "vehicle-card-r003",
+   "rule_id": "R100",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "vehicle-card-r003.png contains no starburst graphic.",
+   "assertion": {
+    "op": "vlm_yesno_r5v",
+    "question": "Does this image contain a starburst graphic: a star or burst shape with many spiky points, of the kind used as a sale or offer badge? answer yes or no.",
+    "pass_on": "no",
+    "how": "Asks the vision model whether the file contains a starburst graphic."
+   },
+   "how": "Asks the vision model whether the file contains a starburst graphic."
+  },
+  {
+   "check_id": "PHOTO-08/vehicle-card-r004/H027",
+   "output_id": "vehicle-card-r004",
+   "rule_id": "R100",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "vehicle-card-r004.png contains no starburst graphic.",
+   "assertion": {
+    "op": "vlm_yesno_r5v",
+    "question": "Does this image contain a starburst graphic: a star or burst shape with many spiky points, of the kind used as a sale or offer badge? answer yes or no.",
+    "pass_on": "no",
+    "how": "Asks the vision model whether the file contains a starburst graphic."
+   },
+   "how": "Asks the vision model whether the file contains a starburst graphic."
+  },
+  {
+   "check_id": "PHOTO-08/vehicle-card-r005/H028",
+   "output_id": "vehicle-card-r005",
+   "rule_id": "R100",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "vehicle-card-r005.png contains no starburst graphic.",
+   "assertion": {
+    "op": "vlm_yesno_r5v",
+    "question": "Does this image contain a starburst graphic: a star or burst shape with many spiky points, of the kind used as a sale or offer badge? answer yes or no.",
+    "pass_on": "no",
+    "how": "Asks the vision model whether the file contains a starburst graphic."
+   },
+   "how": "Asks the vision model whether the file contains a starburst graphic."
+  },
+  {
+   "check_id": "PHOTO-08/vehicle-card-r006/H028",
+   "output_id": "vehicle-card-r006",
+   "rule_id": "R100",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "vehicle-card-r006.png contains no starburst graphic.",
+   "assertion": {
+    "op": "vlm_yesno_r5v",
+    "question": "Does this image contain a starburst graphic: a star or burst shape with many spiky points, of the kind used as a sale or offer badge? answer yes or no.",
+    "pass_on": "no",
+    "how": "Asks the vision model whether the file contains a starburst graphic."
+   },
+   "how": "Asks the vision model whether the file contains a starburst graphic."
+  },
+  {
+   "check_id": "PHOTO-08/vehicle-card-r007/H027",
+   "output_id": "vehicle-card-r007",
+   "rule_id": "R100",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "vehicle-card-r007.png contains no starburst graphic.",
+   "assertion": {
+    "op": "vlm_yesno_r5v",
+    "question": "Does this image contain a starburst graphic: a star or burst shape with many spiky points, of the kind used as a sale or offer badge? answer yes or no.",
+    "pass_on": "no",
+    "how": "Asks the vision model whether the file contains a starburst graphic."
+   },
+   "how": "Asks the vision model whether the file contains a starburst graphic."
+  },
+  {
+   "check_id": "PHOTO-08/inventory-campaign/H077",
+   "output_id": "inventory-campaign",
+   "rule_id": "R100",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "inventory-campaign.png contains no starburst graphic.",
+   "assertion": {
+    "op": "vlm_yesno_r5v",
+    "question": "Does this image contain a starburst graphic: a star or burst shape with many spiky points, of the kind used as a sale or offer badge? answer yes or no.",
+    "pass_on": "no",
+    "how": "Asks the vision model whether the file contains a starburst graphic."
+   },
+   "how": "Asks the vision model whether the file contains a starburst graphic."
   },
   {
    "check_id": "PHOTO-08/vehicle-card-r002/H034",
@@ -7694,6 +9276,96 @@
    "how": "Runs the check and lets it decide only in the direction it is sure of; the other answer goes to a person."
   },
   {
+   "check_id": "PHOTO-08/vehicle-card-r002/H035",
+   "output_id": "vehicle-card-r002",
+   "rule_id": "R102",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "No type on “Vehicle sales card - M3082” (vehicle-card-r002.png) is set directly over the photograph.",
+   "assertion": {
+    "op": "vlm_yesno_r5v",
+    "question": "Is any text (letters or numbers) printed on top of the vehicle photograph, inside its photo frame? Text outside the photo frame does not count, and neither do badges or plates that are part of the vehicle itself. answer yes or no.",
+    "pass_on": "no",
+    "how": "Asks the vision model whether any text is printed on top of the vehicle photograph."
+   },
+   "how": "Asks the vision model whether any text is printed on top of the vehicle photograph."
+  },
+  {
+   "check_id": "PHOTO-08/vehicle-card-r003/H034",
+   "output_id": "vehicle-card-r003",
+   "rule_id": "R102",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "No type on “Vehicle sales card - M3091” (vehicle-card-r003.png) is set directly over the photograph.",
+   "assertion": {
+    "op": "vlm_yesno_r5v",
+    "question": "Is any text (letters or numbers) printed on top of the vehicle photograph, inside its photo frame? Text outside the photo frame does not count, and neither do badges or plates that are part of the vehicle itself. answer yes or no.",
+    "pass_on": "no",
+    "how": "Asks the vision model whether any text is printed on top of the vehicle photograph."
+   },
+   "how": "Asks the vision model whether any text is printed on top of the vehicle photograph."
+  },
+  {
+   "check_id": "PHOTO-08/vehicle-card-r004/H033",
+   "output_id": "vehicle-card-r004",
+   "rule_id": "R102",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "No type on “Vehicle sales card - M2417” (vehicle-card-r004.png) is set directly over the photograph.",
+   "assertion": {
+    "op": "vlm_yesno_r5v",
+    "question": "Is any text (letters or numbers) printed on top of the vehicle photograph, inside its photo frame? Text outside the photo frame does not count, and neither do badges or plates that are part of the vehicle itself. answer yes or no.",
+    "pass_on": "no",
+    "how": "Asks the vision model whether any text is printed on top of the vehicle photograph."
+   },
+   "how": "Asks the vision model whether any text is printed on top of the vehicle photograph."
+  },
+  {
+   "check_id": "PHOTO-08/vehicle-card-r005/H034",
+   "output_id": "vehicle-card-r005",
+   "rule_id": "R102",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "No type on “Vehicle sales card - M3105” (vehicle-card-r005.png) is set directly over the photograph.",
+   "assertion": {
+    "op": "vlm_yesno_r5v",
+    "question": "Is any text (letters or numbers) printed on top of the vehicle photograph, inside its photo frame? Text outside the photo frame does not count, and neither do badges or plates that are part of the vehicle itself. answer yes or no.",
+    "pass_on": "no",
+    "how": "Asks the vision model whether any text is printed on top of the vehicle photograph."
+   },
+   "how": "Asks the vision model whether any text is printed on top of the vehicle photograph."
+  },
+  {
+   "check_id": "PHOTO-08/vehicle-card-r006/H034",
+   "output_id": "vehicle-card-r006",
+   "rule_id": "R102",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "No type on “Vehicle sales card - M2471” (vehicle-card-r006.png) is set directly over the photograph.",
+   "assertion": {
+    "op": "vlm_yesno_r5v",
+    "question": "Is any text (letters or numbers) printed on top of the vehicle photograph, inside its photo frame? Text outside the photo frame does not count, and neither do badges or plates that are part of the vehicle itself. answer yes or no.",
+    "pass_on": "no",
+    "how": "Asks the vision model whether any text is printed on top of the vehicle photograph."
+   },
+   "how": "Asks the vision model whether any text is printed on top of the vehicle photograph."
+  },
+  {
+   "check_id": "PHOTO-08/vehicle-card-r007/H033",
+   "output_id": "vehicle-card-r007",
+   "rule_id": "R102",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "No type on “Vehicle sales card - M3119” (vehicle-card-r007.png) is set directly over the photograph.",
+   "assertion": {
+    "op": "vlm_yesno_r5v",
+    "question": "Is any text (letters or numbers) printed on top of the vehicle photograph, inside its photo frame? Text outside the photo frame does not count, and neither do badges or plates that are part of the vehicle itself. answer yes or no.",
+    "pass_on": "no",
+    "how": "Asks the vision model whether any text is printed on top of the vehicle photograph."
+   },
+   "how": "Asks the vision model whether any text is printed on top of the vehicle photograph."
+  },
+  {
    "check_id": "PHOTO-08/vehicle-card-r007/H018",
    "output_id": "vehicle-card-r007",
    "rule_id": "R103",
@@ -7825,6 +9497,21 @@
    "how": "Reads the text; where the named item appears, runs the check on it."
   },
   {
+   "check_id": "PHOTO-08/inventory-campaign/H081",
+   "output_id": "inventory-campaign",
+   "rule_id": "R110",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "No type on “Forecourt inventory campaign” (inventory-campaign.png) is set directly over a photograph.",
+   "assertion": {
+    "op": "vlm_yesno_r5v",
+    "question": "This image shows several vehicle photos, each in a panel above its caption. Is any text (letters or numbers) printed on top of any of the vehicle photographs, inside the picture area above a caption? Captions, the header and the footer do not count, and neither do badges or plates that are part of a vehicle itself. answer yes or no.",
+    "pass_on": "no",
+    "how": "Asks the vision model whether any text is printed on top of any vehicle photograph."
+   },
+   "how": "Asks the vision model whether any text is printed on top of any vehicle photograph."
+  },
+  {
    "check_id": "PHOTO-08/vehicle-card-r003/H020",
    "output_id": "vehicle-card-r003",
    "rule_id": "R111",
@@ -7839,6 +9526,350 @@
     ]
    },
    "how": "Finds the supplied photo in the deliverable, maps the placement back onto it and compares tiles, colour, tone or fine detail."
+  },
+  {
+   "check_id": "PHOTO-08/vehicle-card-r002/H074",
+   "output_id": "vehicle-card-r002",
+   "rule_id": "R113",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Apart from the stock number in the enquiry line, no listing value on “Vehicle sales card - M3082” (vehicle-card-r002.png) is stated twice.",
+   "assertion": {
+    "op": "v2_all_of",
+    "checks": [
+     {
+      "op": "vlm_once_r5va",
+      "question": "Copy every piece of text visible in the image, exactly as printed, one entry per line of text, in reading order (top to bottom, then left to right). Include headings, small print, labels, numbers, prices, lettering in logos and any text on photographs. answer yes if there is any text, no if there is none.",
+      "values": [
+       "\\bm3082\\b",
+       "norsted\\ alta",
+       "\\bse\\ awd\\b",
+       "26,900",
+       "54,210",
+       "meridian\\ certified(?! plus)"
+      ],
+      "exempt": "^enquire"
+     },
+     {
+      "op": "vlm_once_r5va",
+      "question": "Copy every listing value printed on this card: the stock number, the year and model, the trim, the price, the mileage and the certification tier, exactly as printed, one entry for each place it is printed (a value printed twice is copied twice). Do not copy anything from the enquiry band. answer yes if there is any, no if there is none.",
+      "values": [
+       "\\bm3082\\b",
+       "norsted\\ alta",
+       "\\bse\\ awd\\b",
+       "26,900",
+       "54,210",
+       "meridian\\ certified(?! plus)"
+      ],
+      "exempt": "^enquire",
+      "params": {
+       "max_tokens": 6000
+      }
+     }
+    ],
+    "how": "Asks the vision model to copy every line of text and, separately, every listing value once for each place it is printed; code fails any value (stock number, make and model, trim, price, mileage, certification) stated twice, leaving out the enquiry line."
+   },
+   "how": "Asks the vision model to copy every line of text and, separately, every listing value once for each place it is printed; code fails any value (stock number, make and model, trim, price, mileage, certification) stated twice, leaving out the enquiry line."
+  },
+  {
+   "check_id": "PHOTO-08/vehicle-card-r003/H073",
+   "output_id": "vehicle-card-r003",
+   "rule_id": "R113",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Apart from the stock number in the enquiry line, no listing value on “Vehicle sales card - M3091” (vehicle-card-r003.png) is stated twice.",
+   "assertion": {
+    "op": "v2_all_of",
+    "checks": [
+     {
+      "op": "vlm_once_r5va",
+      "question": "Copy every piece of text visible in the image, exactly as printed, one entry per line of text, in reading order (top to bottom, then left to right). Include headings, small print, labels, numbers, prices, lettering in logos and any text on photographs. answer yes if there is any text, no if there is none.",
+      "values": [
+       "\\bm3091\\b",
+       "ardmoor\\ ridge",
+       "\\bpremium\\ awd\\b",
+       "24,500",
+       "61,840",
+       "meridian\\ certified(?! plus)"
+      ],
+      "exempt": "^enquire"
+     },
+     {
+      "op": "vlm_once_r5va",
+      "question": "Copy every listing value printed on this card: the stock number, the year and model, the trim, the price, the mileage and the certification tier, exactly as printed, one entry for each place it is printed (a value printed twice is copied twice). Do not copy anything from the enquiry band. answer yes if there is any, no if there is none.",
+      "values": [
+       "\\bm3091\\b",
+       "ardmoor\\ ridge",
+       "\\bpremium\\ awd\\b",
+       "24,500",
+       "61,840",
+       "meridian\\ certified(?! plus)"
+      ],
+      "exempt": "^enquire",
+      "params": {
+       "max_tokens": 6000
+      }
+     }
+    ],
+    "how": "Asks the vision model to copy every line of text and, separately, every listing value once for each place it is printed; code fails any value (stock number, make and model, trim, price, mileage, certification) stated twice, leaving out the enquiry line."
+   },
+   "how": "Asks the vision model to copy every line of text and, separately, every listing value once for each place it is printed; code fails any value (stock number, make and model, trim, price, mileage, certification) stated twice, leaving out the enquiry line."
+  },
+  {
+   "check_id": "PHOTO-08/vehicle-card-r004/H072",
+   "output_id": "vehicle-card-r004",
+   "rule_id": "R113",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Apart from the stock number in the enquiry line, no listing value on “Vehicle sales card - M2417” (vehicle-card-r004.png) is stated twice.",
+   "assertion": {
+    "op": "v2_all_of",
+    "checks": [
+     {
+      "op": "vlm_once_r5va",
+      "question": "Copy every piece of text visible in the image, exactly as printed, one entry per line of text, in reading order (top to bottom, then left to right). Include headings, small print, labels, numbers, prices, lettering in logos and any text on photographs. answer yes if there is any text, no if there is none.",
+      "values": [
+       "\\bm2417\\b",
+       "calder\\ vireo",
+       "(?<![\\w ])sel(?![\\w])",
+       "23,900",
+       "68,400",
+       "meridian\\ certified\\ plus"
+      ],
+      "exempt": "^enquire"
+     },
+     {
+      "op": "vlm_once_r5va",
+      "question": "Copy every listing value printed on this card: the stock number, the year and model, the trim, the price, the mileage and the certification tier, exactly as printed, one entry for each place it is printed (a value printed twice is copied twice). Do not copy anything from the enquiry band. answer yes if there is any, no if there is none.",
+      "values": [
+       "\\bm2417\\b",
+       "calder\\ vireo",
+       "(?<![\\w ])sel(?![\\w])",
+       "23,900",
+       "68,400",
+       "meridian\\ certified\\ plus"
+      ],
+      "exempt": "^enquire",
+      "params": {
+       "max_tokens": 6000
+      }
+     }
+    ],
+    "how": "Asks the vision model to copy every line of text and, separately, every listing value once for each place it is printed; code fails any value (stock number, make and model, trim, price, mileage, certification) stated twice, leaving out the enquiry line."
+   },
+   "how": "Asks the vision model to copy every line of text and, separately, every listing value once for each place it is printed; code fails any value (stock number, make and model, trim, price, mileage, certification) stated twice, leaving out the enquiry line."
+  },
+  {
+   "check_id": "PHOTO-08/vehicle-card-r005/H073",
+   "output_id": "vehicle-card-r005",
+   "rule_id": "R113",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Apart from the stock number in the enquiry line, no listing value on “Vehicle sales card - M3105” (vehicle-card-r005.png) is stated twice.",
+   "assertion": {
+    "op": "v2_all_of",
+    "checks": [
+     {
+      "op": "vlm_once_r5va",
+      "question": "Copy every piece of text visible in the image, exactly as printed, one entry per line of text, in reading order (top to bottom, then left to right). Include headings, small print, labels, numbers, prices, lettering in logos and any text on photographs. answer yes if there is any text, no if there is none.",
+      "values": [
+       "\\bm3105\\b",
+       "brookmere\\ sable",
+       "\\btouring\\b",
+       "31,900",
+       "42,980",
+       "meridian\\ certified\\ plus"
+      ],
+      "exempt": "^enquire"
+     },
+     {
+      "op": "vlm_once_r5va",
+      "question": "Copy every listing value printed on this card: the stock number, the year and model, the trim, the price, the mileage and the certification tier, exactly as printed, one entry for each place it is printed (a value printed twice is copied twice). Do not copy anything from the enquiry band. answer yes if there is any, no if there is none.",
+      "values": [
+       "\\bm3105\\b",
+       "brookmere\\ sable",
+       "\\btouring\\b",
+       "31,900",
+       "42,980",
+       "meridian\\ certified\\ plus"
+      ],
+      "exempt": "^enquire",
+      "params": {
+       "max_tokens": 6000
+      }
+     }
+    ],
+    "how": "Asks the vision model to copy every line of text and, separately, every listing value once for each place it is printed; code fails any value (stock number, make and model, trim, price, mileage, certification) stated twice, leaving out the enquiry line."
+   },
+   "how": "Asks the vision model to copy every line of text and, separately, every listing value once for each place it is printed; code fails any value (stock number, make and model, trim, price, mileage, certification) stated twice, leaving out the enquiry line."
+  },
+  {
+   "check_id": "PHOTO-08/vehicle-card-r006/H073",
+   "output_id": "vehicle-card-r006",
+   "rule_id": "R113",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Apart from the stock number in the enquiry line, no listing value on “Vehicle sales card - M2471” (vehicle-card-r006.png) is stated twice.",
+   "assertion": {
+    "op": "v2_all_of",
+    "checks": [
+     {
+      "op": "vlm_once_r5va",
+      "question": "Copy every piece of text visible in the image, exactly as printed, one entry per line of text, in reading order (top to bottom, then left to right). Include headings, small print, labels, numbers, prices, lettering in logos and any text on photographs. answer yes if there is any text, no if there is none.",
+      "values": [
+       "\\bm2471\\b",
+       "calder\\ kestrel",
+       "\\bsel\\ technology\\ package\\ awd\\b",
+       "24,900",
+       "70,120",
+       "meridian\\ certified(?! plus)"
+      ],
+      "exempt": "^enquire"
+     },
+     {
+      "op": "vlm_once_r5va",
+      "question": "Copy every listing value printed on this card: the stock number, the year and model, the trim, the price, the mileage and the certification tier, exactly as printed, one entry for each place it is printed (a value printed twice is copied twice). Do not copy anything from the enquiry band. answer yes if there is any, no if there is none.",
+      "values": [
+       "\\bm2471\\b",
+       "calder\\ kestrel",
+       "\\bsel\\ technology\\ package\\ awd\\b",
+       "24,900",
+       "70,120",
+       "meridian\\ certified(?! plus)"
+      ],
+      "exempt": "^enquire",
+      "params": {
+       "max_tokens": 6000
+      }
+     }
+    ],
+    "how": "Asks the vision model to copy every line of text and, separately, every listing value once for each place it is printed; code fails any value (stock number, make and model, trim, price, mileage, certification) stated twice, leaving out the enquiry line."
+   },
+   "how": "Asks the vision model to copy every line of text and, separately, every listing value once for each place it is printed; code fails any value (stock number, make and model, trim, price, mileage, certification) stated twice, leaving out the enquiry line."
+  },
+  {
+   "check_id": "PHOTO-08/vehicle-card-r007/H072",
+   "output_id": "vehicle-card-r007",
+   "rule_id": "R113",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "Apart from the stock number in the enquiry line, no listing value on “Vehicle sales card - M3119” (vehicle-card-r007.png) is stated twice.",
+   "assertion": {
+    "op": "v2_all_of",
+    "checks": [
+     {
+      "op": "vlm_once_r5va",
+      "question": "Copy every piece of text visible in the image, exactly as printed, one entry per line of text, in reading order (top to bottom, then left to right). Include headings, small print, labels, numbers, prices, lettering in logos and any text on photographs. answer yes if there is any text, no if there is none.",
+      "values": [
+       "\\bm3119\\b",
+       "norsted\\ fjord",
+       "\\badventure\\ awd\\b",
+       "29,900",
+       "58,760",
+       "meridian\\ certified(?! plus)"
+      ],
+      "exempt": "^enquire"
+     },
+     {
+      "op": "vlm_once_r5va",
+      "question": "Copy every listing value printed on this card: the stock number, the year and model, the trim, the price, the mileage and the certification tier, exactly as printed, one entry for each place it is printed (a value printed twice is copied twice). Do not copy anything from the enquiry band. answer yes if there is any, no if there is none.",
+      "values": [
+       "\\bm3119\\b",
+       "norsted\\ fjord",
+       "\\badventure\\ awd\\b",
+       "29,900",
+       "58,760",
+       "meridian\\ certified(?! plus)"
+      ],
+      "exempt": "^enquire",
+      "params": {
+       "max_tokens": 6000
+      }
+     }
+    ],
+    "how": "Asks the vision model to copy every line of text and, separately, every listing value once for each place it is printed; code fails any value (stock number, make and model, trim, price, mileage, certification) stated twice, leaving out the enquiry line."
+   },
+   "how": "Asks the vision model to copy every line of text and, separately, every listing value once for each place it is printed; code fails any value (stock number, make and model, trim, price, mileage, certification) stated twice, leaving out the enquiry line."
+  },
+  {
+   "check_id": "PHOTO-08/inventory-campaign/H115",
+   "output_id": "inventory-campaign",
+   "rule_id": "R114",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "No listing value for any one vehicle on “Forecourt inventory campaign” (inventory-campaign.png), such as its price, mileage or trim, is stated twice.",
+   "assertion": {
+    "op": "v2_all_of",
+    "checks": [
+     {
+      "op": "vlm_once_r5va",
+      "question": "Copy every piece of text visible in the image, exactly as printed, one entry per line of text, in reading order (top to bottom, then left to right). Include headings, small print, labels, numbers, prices, lettering in logos and any text on photographs. answer yes if there is any text, no if there is none.",
+      "values": [
+       "\\bm3082\\b",
+       "norsted\\ alta",
+       "26,900",
+       "54,210",
+       "\\bm3091\\b",
+       "ardmoor\\ ridge",
+       "24,500",
+       "61,840",
+       "\\bm2417\\b",
+       "calder\\ vireo",
+       "23,900",
+       "68,400",
+       "\\bm3105\\b",
+       "brookmere\\ sable",
+       "31,900",
+       "42,980",
+       "\\bm2471\\b",
+       "calder\\ kestrel",
+       "24,900",
+       "70,120",
+       "\\bm3119\\b",
+       "norsted\\ fjord",
+       "29,900",
+       "58,760"
+      ],
+      "exempt": "^enquire"
+     },
+     {
+      "op": "vlm_once_r5va",
+      "question": "Copy every listing value printed on this image for every vehicle: its stock number, year and model, trim, price, mileage and certification tier, exactly as printed, one entry for each place it is printed (a value printed twice is copied twice). answer yes if there is any, no if there is none.",
+      "values": [
+       "\\bm3082\\b",
+       "norsted\\ alta",
+       "26,900",
+       "54,210",
+       "\\bm3091\\b",
+       "ardmoor\\ ridge",
+       "24,500",
+       "61,840",
+       "\\bm2417\\b",
+       "calder\\ vireo",
+       "23,900",
+       "68,400",
+       "\\bm3105\\b",
+       "brookmere\\ sable",
+       "31,900",
+       "42,980",
+       "\\bm2471\\b",
+       "calder\\ kestrel",
+       "24,900",
+       "70,120",
+       "\\bm3119\\b",
+       "norsted\\ fjord",
+       "29,900",
+       "58,760"
+      ],
+      "exempt": "^enquire",
+      "params": {
+       "max_tokens": 6000
+      }
+     }
+    ],
+    "how": "Asks the vision model to copy every line of text and, separately, every listing value once for each place it is printed; code fails any vehicle's stock number, make and model, price or mileage stated twice."
+   },
+   "how": "Asks the vision model to copy every line of text and, separately, every listing value once for each place it is printed; code fails any vehicle's stock number, make and model, price or mileage stated twice."
   },
   {
    "check_id": "PHOTO-08/vehicle-card-r002/H078",
@@ -8174,6 +10205,111 @@
     ]
    },
    "how": "Finds the thin horizontal rules and tells their colour by the direction it takes from the ground."
+  },
+  {
+   "check_id": "PHOTO-08/vehicle-card-r002/H084",
+   "output_id": "vehicle-card-r002",
+   "rule_id": "R119",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "vehicle-card-r002.png contains no slashed or struck-through price.",
+   "assertion": {
+    "op": "vlm_yesno_r5v",
+    "question": "Is any price on this image shown slashed or struck through (a price with a line drawn through it or across it)? answer yes or no.",
+    "pass_on": "no",
+    "how": "Asks the vision model whether any price is slashed or struck through."
+   },
+   "how": "Asks the vision model whether any price is slashed or struck through."
+  },
+  {
+   "check_id": "PHOTO-08/vehicle-card-r003/H083",
+   "output_id": "vehicle-card-r003",
+   "rule_id": "R119",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "vehicle-card-r003.png contains no slashed or struck-through price.",
+   "assertion": {
+    "op": "vlm_yesno_r5v",
+    "question": "Is any price on this image shown slashed or struck through (a price with a line drawn through it or across it)? answer yes or no.",
+    "pass_on": "no",
+    "how": "Asks the vision model whether any price is slashed or struck through."
+   },
+   "how": "Asks the vision model whether any price is slashed or struck through."
+  },
+  {
+   "check_id": "PHOTO-08/vehicle-card-r004/H082",
+   "output_id": "vehicle-card-r004",
+   "rule_id": "R119",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "vehicle-card-r004.png contains no slashed or struck-through price.",
+   "assertion": {
+    "op": "vlm_yesno_r5v",
+    "question": "Is any price on this image shown slashed or struck through (a price with a line drawn through it or across it)? answer yes or no.",
+    "pass_on": "no",
+    "how": "Asks the vision model whether any price is slashed or struck through."
+   },
+   "how": "Asks the vision model whether any price is slashed or struck through."
+  },
+  {
+   "check_id": "PHOTO-08/vehicle-card-r005/H083",
+   "output_id": "vehicle-card-r005",
+   "rule_id": "R119",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "vehicle-card-r005.png contains no slashed or struck-through price.",
+   "assertion": {
+    "op": "vlm_yesno_r5v",
+    "question": "Is any price on this image shown slashed or struck through (a price with a line drawn through it or across it)? answer yes or no.",
+    "pass_on": "no",
+    "how": "Asks the vision model whether any price is slashed or struck through."
+   },
+   "how": "Asks the vision model whether any price is slashed or struck through."
+  },
+  {
+   "check_id": "PHOTO-08/vehicle-card-r006/H083",
+   "output_id": "vehicle-card-r006",
+   "rule_id": "R119",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "vehicle-card-r006.png contains no slashed or struck-through price.",
+   "assertion": {
+    "op": "vlm_yesno_r5v",
+    "question": "Is any price on this image shown slashed or struck through (a price with a line drawn through it or across it)? answer yes or no.",
+    "pass_on": "no",
+    "how": "Asks the vision model whether any price is slashed or struck through."
+   },
+   "how": "Asks the vision model whether any price is slashed or struck through."
+  },
+  {
+   "check_id": "PHOTO-08/vehicle-card-r007/H083",
+   "output_id": "vehicle-card-r007",
+   "rule_id": "R119",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "vehicle-card-r007.png contains no slashed or struck-through price.",
+   "assertion": {
+    "op": "vlm_yesno_r5v",
+    "question": "Is any price on this image shown slashed or struck through (a price with a line drawn through it or across it)? answer yes or no.",
+    "pass_on": "no",
+    "how": "Asks the vision model whether any price is slashed or struck through."
+   },
+   "how": "Asks the vision model whether any price is slashed or struck through."
+  },
+  {
+   "check_id": "PHOTO-08/inventory-campaign/H131",
+   "output_id": "inventory-campaign",
+   "rule_id": "R119",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "inventory-campaign.png contains no slashed or struck-through price.",
+   "assertion": {
+    "op": "vlm_yesno_r5v",
+    "question": "Is any price on this image shown slashed or struck through (a price with a line drawn through it or across it)? answer yes or no.",
+    "pass_on": "no",
+    "how": "Asks the vision model whether any price is slashed or struck through."
+   },
+   "how": "Asks the vision model whether any price is slashed or struck through."
   },
   {
    "check_id": "PHOTO-08/vehicle-card-r002/H002",
@@ -8887,10 +11023,16 @@
    "critical": false,
    "check": "The largest text on “Vehicle sales card - M3082” (vehicle-card-r002.png) is the asking price “$26,900”.",
    "assertion": {
-    "op": "v2_largest_text",
-    "text": "$26,900"
+    "op": "vlm_read_r5v",
+    "question": "Which text on this card is printed in the largest letters (the tallest characters)? Copy that text exactly as printed, as one value, leaving out any currency sign.",
+    "expected": [
+     "26,900",
+     "$26,900",
+     "$ 26,900"
+    ],
+    "how": "Asks the vision model to copy the text set in the largest letters; code checks it is the asking price."
    },
-   "how": "Compares text sizes (font size in PDFs, letter height on images)."
+   "how": "Asks the vision model to copy the text set in the largest letters; code checks it is the asking price."
   },
   {
    "check_id": "PHOTO-08/vehicle-card-r003/H021",
@@ -8900,10 +11042,16 @@
    "critical": false,
    "check": "The largest text on “Vehicle sales card - M3091” (vehicle-card-r003.png) is the asking price “$24,500”.",
    "assertion": {
-    "op": "v2_largest_text",
-    "text": "$24,500"
+    "op": "vlm_read_r5v",
+    "question": "Which text on this card is printed in the largest letters (the tallest characters)? Copy that text exactly as printed, as one value, leaving out any currency sign.",
+    "expected": [
+     "24,500",
+     "$24,500",
+     "$ 24,500"
+    ],
+    "how": "Asks the vision model to copy the text set in the largest letters; code checks it is the asking price."
    },
-   "how": "Compares text sizes (font size in PDFs, letter height on images)."
+   "how": "Asks the vision model to copy the text set in the largest letters; code checks it is the asking price."
   },
   {
    "check_id": "PHOTO-08/vehicle-card-r004/H019",
@@ -8913,10 +11061,16 @@
    "critical": false,
    "check": "The largest text on “Vehicle sales card - M2417” (vehicle-card-r004.png) is the asking price “$23,900”.",
    "assertion": {
-    "op": "v2_largest_text",
-    "text": "$23,900"
+    "op": "vlm_read_r5v",
+    "question": "Which text on this card is printed in the largest letters (the tallest characters)? Copy that text exactly as printed, as one value, leaving out any currency sign.",
+    "expected": [
+     "23,900",
+     "$23,900",
+     "$ 23,900"
+    ],
+    "how": "Asks the vision model to copy the text set in the largest letters; code checks it is the asking price."
    },
-   "how": "Compares text sizes (font size in PDFs, letter height on images)."
+   "how": "Asks the vision model to copy the text set in the largest letters; code checks it is the asking price."
   },
   {
    "check_id": "PHOTO-08/vehicle-card-r005/H020",
@@ -8926,10 +11080,16 @@
    "critical": false,
    "check": "The largest text on “Vehicle sales card - M3105” (vehicle-card-r005.png) is the asking price “$31,900”.",
    "assertion": {
-    "op": "v2_largest_text",
-    "text": "$31,900"
+    "op": "vlm_read_r5v",
+    "question": "Which text on this card is printed in the largest letters (the tallest characters)? Copy that text exactly as printed, as one value, leaving out any currency sign.",
+    "expected": [
+     "31,900",
+     "$31,900",
+     "$ 31,900"
+    ],
+    "how": "Asks the vision model to copy the text set in the largest letters; code checks it is the asking price."
    },
-   "how": "Compares text sizes (font size in PDFs, letter height on images)."
+   "how": "Asks the vision model to copy the text set in the largest letters; code checks it is the asking price."
   },
   {
    "check_id": "PHOTO-08/vehicle-card-r006/H020",
@@ -8939,10 +11099,16 @@
    "critical": false,
    "check": "The largest text on “Vehicle sales card - M2471” (vehicle-card-r006.png) is the asking price “$24,900”.",
    "assertion": {
-    "op": "v2_largest_text",
-    "text": "$24,900"
+    "op": "vlm_read_r5v",
+    "question": "Which text on this card is printed in the largest letters (the tallest characters)? Copy that text exactly as printed, as one value, leaving out any currency sign.",
+    "expected": [
+     "24,900",
+     "$24,900",
+     "$ 24,900"
+    ],
+    "how": "Asks the vision model to copy the text set in the largest letters; code checks it is the asking price."
    },
-   "how": "Compares text sizes (font size in PDFs, letter height on images)."
+   "how": "Asks the vision model to copy the text set in the largest letters; code checks it is the asking price."
   },
   {
    "check_id": "PHOTO-08/vehicle-card-r007/H019",
@@ -8952,10 +11118,16 @@
    "critical": false,
    "check": "The largest text on “Vehicle sales card - M3119” (vehicle-card-r007.png) is the asking price “$29,900”.",
    "assertion": {
-    "op": "v2_largest_text",
-    "text": "$29,900"
+    "op": "vlm_read_r5v",
+    "question": "Which text on this card is printed in the largest letters (the tallest characters)? Copy that text exactly as printed, as one value, leaving out any currency sign.",
+    "expected": [
+     "29,900",
+     "$29,900",
+     "$ 29,900"
+    ],
+    "how": "Asks the vision model to copy the text set in the largest letters; code checks it is the asking price."
    },
-   "how": "Compares text sizes (font size in PDFs, letter height on images)."
+   "how": "Asks the vision model to copy the text set in the largest letters; code checks it is the asking price."
   },
   {
    "check_id": "PHOTO-08/inventory-campaign/H005",

@@ -117,3 +117,21 @@ pass, fail and person bands.
 | ops_r4_photo.py | 8 | palette with whole photographs left out, shadows, clipped whites, border casts, grain, mark counters and lettering, knit texture (`_r4p`) |
 | ops_r4_video.py | 9 | moving mascot, repeated shots, captures used, music matched to the supplied track, enlargement, scrim and recolour, stacked titles (`_r4m`) |
 
+
+## Round 5 (2026-10-29)
+
+Loaded by `objective_ops_r5.py`; names end with the module's suffix. `ops_r5_code.py` settles close calls in code (same
+rules as rounds 1 to 4). The `ops_r5_vlm*.py` modules answer objective look, count and read checks with a vision model
+(Gemini 3.8 Flash through OpenRouter, pinned to Google Vertex, temperature 0, low reasoning): each question is asked twice
+with seeds 11 and 23 and a check passes or fails only when every answer agrees; the model never sees the expected answer
+(it copies, counts or lists, and code compares); every answer is saved with its question and the SHA-256 of each file and
+replayed (`vlm_answers/` beside the rules; `VLM_OFFLINE=1` replays without any API call; a missing answer goes to a person).
+The API key is read from `OPENROUTER_API_KEY` or `~/.config/pilot13/openrouter.env` and is never stored in the repo.
+
+| module | ops | covers |
+|---|---:|---|
+| ops_r5_code.py | 7 | Linen keyline only round the photo, ground colour absent, opening-capital ratio with dotted letters, small labels, named label colours, lining figures beside photo detail, fine print size (`_r5c`) |
+| ops_r5_vlm.py | 5 | shared vision ops: yes/no, copy text, count, list, copy every text once per file (`_r5v`) |
+| ops_r5_vlm_a.py | 3 | PHOTO-08/10 line checks on the shared transcription: joined wording, lines traced to the supplied files, a value stated once (`_r5va`) |
+| ops_r5_vlm_b.py | 2 | PHOTO-04/06/20/24/28: transcription read with patterns, and listed items sorted by allowed and breach patterns (`_r5vb`) |
+| ops_r5_vlm_c.py | 5 | LAYOUT-12, MOTION-11, VECTOR-04: questions over film frames or every PDF page, joined or partial text, named acts (`_r5vc`) |

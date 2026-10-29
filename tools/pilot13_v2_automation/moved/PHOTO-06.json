@@ -37,11 +37,12 @@
    "critical": false,
    "check": "“Archival restoration master - hollis_scan_01” (restoration-hollis-scan-01.png) shows Ada Hollis alone, as in hollis_scan_01.jpg, with no person added or removed.",
    "assertion": {
-    "op": "v2_vs_source",
-    "test": "whole",
-    "photo": "hollis_scan_01.jpg"
+    "op": "vlm_count_r5v",
+    "expected": 1,
+    "question": "How many people are shown in the photograph on this image? Count every person whose face or body is visible, including babies, children and anyone partly visible or in the background. Do not count people in pictures hanging on a wall, statues or reflections. Give the number in count.",
+    "how": "Asks the vision model how many people the photograph shows; code checks it is one, as in the source scan."
    },
-   "how": "Finds the supplied photo in the deliverable, maps the placement back onto it and compares tiles, colour, tone or fine detail."
+   "how": "Asks the vision model how many people the photograph shows; code checks it is one, as in the source scan."
   },
   {
    "check_id": "PHOTO-06/restoration-hollis-scan-02/H007",
@@ -51,11 +52,12 @@
    "critical": false,
    "check": "“Archival restoration master - hollis_scan_02” (restoration-hollis-scan-02.png) shows Ada Hollis alone, as in hollis_scan_02.jpg, with no person added or removed.",
    "assertion": {
-    "op": "v2_vs_source",
-    "test": "whole",
-    "photo": "hollis_scan_02.jpg"
+    "op": "vlm_count_r5v",
+    "expected": 1,
+    "question": "How many people are shown in the photograph on this image? Count every person whose face or body is visible, including babies, children and anyone partly visible or in the background. Do not count people in pictures hanging on a wall, statues or reflections. Give the number in count.",
+    "how": "Asks the vision model how many people the photograph shows; code checks it is one, as in the source scan."
    },
-   "how": "Finds the supplied photo in the deliverable, maps the placement back onto it and compares tiles, colour, tone or fine detail."
+   "how": "Asks the vision model how many people the photograph shows; code checks it is one, as in the source scan."
   },
   {
    "check_id": "PHOTO-06/restoration-hollis-scan-06/H005",
@@ -65,11 +67,12 @@
    "critical": false,
    "check": "“Archival restoration master - hollis_scan_06” (restoration-hollis-scan-06.png) shows Ada Hollis alone, as in hollis_scan_06.jpg, with no person added or removed.",
    "assertion": {
-    "op": "v2_vs_source",
-    "test": "whole",
-    "photo": "hollis_scan_06.jpg"
+    "op": "vlm_count_r5v",
+    "expected": 1,
+    "question": "How many people are shown in the photograph on this image? Count every person whose face or body is visible, including babies, children and anyone partly visible or in the background. Do not count people in pictures hanging on a wall, statues or reflections. Give the number in count.",
+    "how": "Asks the vision model how many people the photograph shows; code checks it is one, as in the source scan."
    },
-   "how": "Finds the supplied photo in the deliverable, maps the placement back onto it and compares tiles, colour, tone or fine detail."
+   "how": "Asks the vision model how many people the photograph shows; code checks it is one, as in the source scan."
   },
   {
    "check_id": "PHOTO-06/restoration-hollis-scan-07/H007",
@@ -79,11 +82,12 @@
    "critical": false,
    "check": "“Archival restoration master - hollis_scan_07” (restoration-hollis-scan-07.png) shows Ada Hollis alone, as in hollis_scan_07.jpg, with no person added or removed.",
    "assertion": {
-    "op": "v2_vs_source",
-    "test": "whole",
-    "photo": "hollis_scan_07.jpg"
+    "op": "vlm_count_r5v",
+    "expected": 1,
+    "question": "How many people are shown in the photograph on this image? Count every person whose face or body is visible, including babies, children and anyone partly visible or in the background. Do not count people in pictures hanging on a wall, statues or reflections. Give the number in count.",
+    "how": "Asks the vision model how many people the photograph shows; code checks it is one, as in the source scan."
    },
-   "how": "Finds the supplied photo in the deliverable, maps the placement back onto it and compares tiles, colour, tone or fine detail."
+   "how": "Asks the vision model how many people the photograph shows; code checks it is one, as in the source scan."
   },
   {
    "check_id": "PHOTO-06/restoration-hollis-scan-09/H005",
@@ -93,11 +97,12 @@
    "critical": false,
    "check": "“Archival restoration master - hollis_scan_09” (restoration-hollis-scan-09.png) shows Ada Hollis alone, as in hollis_scan_09.jpg, with no person added or removed.",
    "assertion": {
-    "op": "v2_vs_source",
-    "test": "whole",
-    "photo": "hollis_scan_09.jpg"
+    "op": "vlm_count_r5v",
+    "expected": 1,
+    "question": "How many people are shown in the photograph on this image? Count every person whose face or body is visible, including babies, children and anyone partly visible or in the background. Do not count people in pictures hanging on a wall, statues or reflections. Give the number in count.",
+    "how": "Asks the vision model how many people the photograph shows; code checks it is one, as in the source scan."
    },
-   "how": "Finds the supplied photo in the deliverable, maps the placement back onto it and compares tiles, colour, tone or fine detail."
+   "how": "Asks the vision model how many people the photograph shows; code checks it is one, as in the source scan."
   },
   {
    "check_id": "PHOTO-06/share-hollis-scan-01/H009",
@@ -107,11 +112,12 @@
    "critical": false,
    "check": "“Family archive share image - hollis_scan_01” (share-hollis-scan-01.jpg) shows Ada Hollis alone, as in hollis_scan_01.jpg, with no person added or removed.",
    "assertion": {
-    "op": "v2_vs_source",
-    "test": "whole",
-    "photo": "hollis_scan_01.jpg"
+    "op": "vlm_count_r5v",
+    "expected": 1,
+    "question": "How many people are shown in the photograph on this image? Count every person whose face or body is visible, including babies, children and anyone partly visible or in the background. Do not count people in pictures hanging on a wall, statues or reflections. Give the number in count.",
+    "how": "Asks the vision model how many people the photograph shows; code checks it is one, as in the source scan."
    },
-   "how": "Finds the supplied photo in the deliverable, maps the placement back onto it and compares tiles, colour, tone or fine detail."
+   "how": "Asks the vision model how many people the photograph shows; code checks it is one, as in the source scan."
   },
   {
    "check_id": "PHOTO-06/share-hollis-scan-02/H007",
@@ -121,11 +127,12 @@
    "critical": false,
    "check": "“Family archive share image - hollis_scan_02” (share-hollis-scan-02.jpg) shows Ada Hollis alone, as in hollis_scan_02.jpg, with no person added or removed.",
    "assertion": {
-    "op": "v2_vs_source",
-    "test": "whole",
-    "photo": "hollis_scan_02.jpg"
+    "op": "vlm_count_r5v",
+    "expected": 1,
+    "question": "How many people are shown in the photograph on this image? Count every person whose face or body is visible, including babies, children and anyone partly visible or in the background. Do not count people in pictures hanging on a wall, statues or reflections. Give the number in count.",
+    "how": "Asks the vision model how many people the photograph shows; code checks it is one, as in the source scan."
    },
-   "how": "Finds the supplied photo in the deliverable, maps the placement back onto it and compares tiles, colour, tone or fine detail."
+   "how": "Asks the vision model how many people the photograph shows; code checks it is one, as in the source scan."
   },
   {
    "check_id": "PHOTO-06/share-hollis-scan-06/H005",
@@ -135,11 +142,12 @@
    "critical": false,
    "check": "“Family archive share image - hollis_scan_06” (share-hollis-scan-06.jpg) shows Ada Hollis alone, as in hollis_scan_06.jpg, with no person added or removed.",
    "assertion": {
-    "op": "v2_vs_source",
-    "test": "whole",
-    "photo": "hollis_scan_06.jpg"
+    "op": "vlm_count_r5v",
+    "expected": 1,
+    "question": "How many people are shown in the photograph on this image? Count every person whose face or body is visible, including babies, children and anyone partly visible or in the background. Do not count people in pictures hanging on a wall, statues or reflections. Give the number in count.",
+    "how": "Asks the vision model how many people the photograph shows; code checks it is one, as in the source scan."
    },
-   "how": "Finds the supplied photo in the deliverable, maps the placement back onto it and compares tiles, colour, tone or fine detail."
+   "how": "Asks the vision model how many people the photograph shows; code checks it is one, as in the source scan."
   },
   {
    "check_id": "PHOTO-06/share-hollis-scan-07/H006",
@@ -149,11 +157,12 @@
    "critical": false,
    "check": "“Family archive share image - hollis_scan_07” (share-hollis-scan-07.jpg) shows Ada Hollis alone, as in hollis_scan_07.jpg, with no person added or removed.",
    "assertion": {
-    "op": "v2_vs_source",
-    "test": "whole",
-    "photo": "hollis_scan_07.jpg"
+    "op": "vlm_count_r5v",
+    "expected": 1,
+    "question": "How many people are shown in the photograph on this image? Count every person whose face or body is visible, including babies, children and anyone partly visible or in the background. Do not count people in pictures hanging on a wall, statues or reflections. Give the number in count.",
+    "how": "Asks the vision model how many people the photograph shows; code checks it is one, as in the source scan."
    },
-   "how": "Finds the supplied photo in the deliverable, maps the placement back onto it and compares tiles, colour, tone or fine detail."
+   "how": "Asks the vision model how many people the photograph shows; code checks it is one, as in the source scan."
   },
   {
    "check_id": "PHOTO-06/share-hollis-scan-09/H005",
@@ -163,11 +172,12 @@
    "critical": false,
    "check": "“Family archive share image - hollis_scan_09” (share-hollis-scan-09.jpg) shows Ada Hollis alone, as in hollis_scan_09.jpg, with no person added or removed.",
    "assertion": {
-    "op": "v2_vs_source",
-    "test": "whole",
-    "photo": "hollis_scan_09.jpg"
+    "op": "vlm_count_r5v",
+    "expected": 1,
+    "question": "How many people are shown in the photograph on this image? Count every person whose face or body is visible, including babies, children and anyone partly visible or in the background. Do not count people in pictures hanging on a wall, statues or reflections. Give the number in count.",
+    "how": "Asks the vision model how many people the photograph shows; code checks it is one, as in the source scan."
    },
-   "how": "Finds the supplied photo in the deliverable, maps the placement back onto it and compares tiles, colour, tone or fine detail."
+   "how": "Asks the vision model how many people the photograph shows; code checks it is one, as in the source scan."
   },
   {
    "check_id": "PHOTO-06/restoration-hollis-scan-08/H005",
@@ -233,16 +243,20 @@
    "critical": false,
    "check": "The caption on “Family archive share image - hollis_scan_03” (share-hollis-scan-03.jpg) names no one other than Ada Hollis and Walter Hollis.",
    "assertion": {
-    "op": "v2_limit",
-    "pass_as": "person",
-    "check": {
-     "op": "v2_text_absent",
-     "patterns": {
-      "another person named": "\\b(?:Ruth|Frank|Carol|Tom|Dale)\\b"
-     }
-    }
+    "op": "vlm_items_r5vb",
+    "question": "List every person named in the caption text on this image (the text set beside or below the photograph). Copy each name exactly as printed, one entry per person, and list a person printed twice only once. When several first names share one surname (for example \"Ann, Bob and Cy Lee\"), give each person with the surname, as \"Ann Lee\", \"Bob Lee\" and \"Cy Lee\". Do not list place names or the archive or collection name. answer yes if any person is named, no if none.",
+    "ok": [
+     "Ada",
+     "Ada Hollis",
+     "Hollis",
+     "Nan",
+     "Walter",
+     "Walter Hollis"
+    ],
+    "near": 0.8,
+    "how": "Asks the vision model to list every person the caption names; code checks each is Ada Hollis or Walter Hollis."
    },
-   "how": "Runs the check and lets it decide only in the direction it is sure of; the other answer goes to a person."
+   "how": "Asks the vision model to list every person the caption names; code checks each is Ada Hollis or Walter Hollis."
   },
   {
    "check_id": "PHOTO-06/share-hollis-scan-04/H011",
@@ -252,16 +266,20 @@
    "critical": false,
    "check": "The caption on “Family archive share image - hollis_scan_04” (share-hollis-scan-04.jpg) names no one other than Ada Hollis and Ruth Hollis.",
    "assertion": {
-    "op": "v2_limit",
-    "pass_as": "person",
-    "check": {
-     "op": "v2_text_absent",
-     "patterns": {
-      "another person named": "\\b(?:Walter|Frank|Carol|Tom|Dale)\\b"
-     }
-    }
+    "op": "vlm_items_r5vb",
+    "question": "List every person named in the caption text on this image (the text set beside or below the photograph). Copy each name exactly as printed, one entry per person, and list a person printed twice only once. When several first names share one surname (for example \"Ann, Bob and Cy Lee\"), give each person with the surname, as \"Ann Lee\", \"Bob Lee\" and \"Cy Lee\". Do not list place names or the archive or collection name. answer yes if any person is named, no if none.",
+    "ok": [
+     "Ada",
+     "Ada Hollis",
+     "Hollis",
+     "Nan",
+     "Ruth",
+     "Ruth Hollis"
+    ],
+    "near": 0.8,
+    "how": "Asks the vision model to list every person the caption names; code checks each is Ada Hollis or Ruth Hollis."
    },
-   "how": "Runs the check and lets it decide only in the direction it is sure of; the other answer goes to a person."
+   "how": "Asks the vision model to list every person the caption names; code checks each is Ada Hollis or Ruth Hollis."
   },
   {
    "check_id": "PHOTO-06/share-hollis-scan-08/H010",
@@ -271,16 +289,20 @@
    "critical": false,
    "check": "The caption on “Family archive share image - hollis_scan_08” (share-hollis-scan-08.jpg) names no one other than Ada Hollis and Tom Hollis.",
    "assertion": {
-    "op": "v2_limit",
-    "pass_as": "person",
-    "check": {
-     "op": "v2_text_absent",
-     "patterns": {
-      "another person named": "\\b(?:Ruth|Walter|Frank|Carol|Dale)\\b"
-     }
-    }
+    "op": "vlm_items_r5vb",
+    "question": "List every person named in the caption text on this image (the text set beside or below the photograph). Copy each name exactly as printed, one entry per person, and list a person printed twice only once. When several first names share one surname (for example \"Ann, Bob and Cy Lee\"), give each person with the surname, as \"Ann Lee\", \"Bob Lee\" and \"Cy Lee\". Do not list place names or the archive or collection name. answer yes if any person is named, no if none.",
+    "ok": [
+     "Ada",
+     "Ada Hollis",
+     "Hollis",
+     "Nan",
+     "Tom",
+     "Tom Hollis"
+    ],
+    "near": 0.8,
+    "how": "Asks the vision model to list every person the caption names; code checks each is Ada Hollis or Tom Hollis."
    },
-   "how": "Runs the check and lets it decide only in the direction it is sure of; the other answer goes to a person."
+   "how": "Asks the vision model to list every person the caption names; code checks each is Ada Hollis or Tom Hollis."
   },
   {
    "check_id": "PHOTO-06/share-hollis-scan-01/H012",
@@ -392,16 +414,18 @@
    "critical": false,
    "check": "The caption on “Family archive share image - hollis_scan_01” (share-hollis-scan-01.jpg) names Ada Hollis and no one else.",
    "assertion": {
-    "op": "v2_limit",
-    "pass_as": "person",
-    "check": {
-     "op": "v2_text_absent",
-     "patterns": {
-      "another person named": "\\b(?:Ruth|Walter|Frank|Carol|Tom|Dale)\\b"
-     }
-    }
+    "op": "vlm_items_r5vb",
+    "question": "List every person named in the caption text on this image (the text set beside or below the photograph). Copy each name exactly as printed, one entry per person, and list a person printed twice only once. When several first names share one surname (for example \"Ann, Bob and Cy Lee\"), give each person with the surname, as \"Ann Lee\", \"Bob Lee\" and \"Cy Lee\". Do not list place names or the archive or collection name. answer yes if any person is named, no if none.",
+    "ok": [
+     "Ada",
+     "Ada Hollis",
+     "Hollis",
+     "Nan"
+    ],
+    "near": 0.8,
+    "how": "Asks the vision model to list every person the caption names; code checks each is Ada Hollis."
    },
-   "how": "Runs the check and lets it decide only in the direction it is sure of; the other answer goes to a person."
+   "how": "Asks the vision model to list every person the caption names; code checks each is Ada Hollis."
   },
   {
    "check_id": "PHOTO-06/share-hollis-scan-02/H014",
@@ -411,16 +435,18 @@
    "critical": false,
    "check": "The caption on “Family archive share image - hollis_scan_02” (share-hollis-scan-02.jpg) names Ada Hollis and no one else.",
    "assertion": {
-    "op": "v2_limit",
-    "pass_as": "person",
-    "check": {
-     "op": "v2_text_absent",
-     "patterns": {
-      "another person named": "\\b(?:Ruth|Walter|Frank|Carol|Tom|Dale)\\b"
-     }
-    }
+    "op": "vlm_items_r5vb",
+    "question": "List every person named in the caption text on this image (the text set beside or below the photograph). Copy each name exactly as printed, one entry per person, and list a person printed twice only once. When several first names share one surname (for example \"Ann, Bob and Cy Lee\"), give each person with the surname, as \"Ann Lee\", \"Bob Lee\" and \"Cy Lee\". Do not list place names or the archive or collection name. answer yes if any person is named, no if none.",
+    "ok": [
+     "Ada",
+     "Ada Hollis",
+     "Hollis",
+     "Nan"
+    ],
+    "near": 0.8,
+    "how": "Asks the vision model to list every person the caption names; code checks each is Ada Hollis."
    },
-   "how": "Runs the check and lets it decide only in the direction it is sure of; the other answer goes to a person."
+   "how": "Asks the vision model to list every person the caption names; code checks each is Ada Hollis."
   },
   {
    "check_id": "PHOTO-06/share-hollis-scan-06/H012",
@@ -430,16 +456,18 @@
    "critical": false,
    "check": "The caption on “Family archive share image - hollis_scan_06” (share-hollis-scan-06.jpg) names Ada Hollis and no one else.",
    "assertion": {
-    "op": "v2_limit",
-    "pass_as": "person",
-    "check": {
-     "op": "v2_text_absent",
-     "patterns": {
-      "another person named": "\\b(?:Ruth|Walter|Frank|Carol|Tom|Dale)\\b"
-     }
-    }
+    "op": "vlm_items_r5vb",
+    "question": "List every person named in the caption text on this image (the text set beside or below the photograph). Copy each name exactly as printed, one entry per person, and list a person printed twice only once. When several first names share one surname (for example \"Ann, Bob and Cy Lee\"), give each person with the surname, as \"Ann Lee\", \"Bob Lee\" and \"Cy Lee\". Do not list place names or the archive or collection name. answer yes if any person is named, no if none.",
+    "ok": [
+     "Ada",
+     "Ada Hollis",
+     "Hollis",
+     "Nan"
+    ],
+    "near": 0.8,
+    "how": "Asks the vision model to list every person the caption names; code checks each is Ada Hollis."
    },
-   "how": "Runs the check and lets it decide only in the direction it is sure of; the other answer goes to a person."
+   "how": "Asks the vision model to list every person the caption names; code checks each is Ada Hollis."
   },
   {
    "check_id": "PHOTO-06/share-hollis-scan-07/H013",
@@ -449,16 +477,18 @@
    "critical": false,
    "check": "The caption on “Family archive share image - hollis_scan_07” (share-hollis-scan-07.jpg) names Ada Hollis and no one else.",
    "assertion": {
-    "op": "v2_limit",
-    "pass_as": "person",
-    "check": {
-     "op": "v2_text_absent",
-     "patterns": {
-      "another person named": "\\b(?:Ruth|Walter|Frank|Carol|Tom|Dale)\\b"
-     }
-    }
+    "op": "vlm_items_r5vb",
+    "question": "List every person named in the caption text on this image (the text set beside or below the photograph). Copy each name exactly as printed, one entry per person, and list a person printed twice only once. When several first names share one surname (for example \"Ann, Bob and Cy Lee\"), give each person with the surname, as \"Ann Lee\", \"Bob Lee\" and \"Cy Lee\". Do not list place names or the archive or collection name. answer yes if any person is named, no if none.",
+    "ok": [
+     "Ada",
+     "Ada Hollis",
+     "Hollis",
+     "Nan"
+    ],
+    "near": 0.8,
+    "how": "Asks the vision model to list every person the caption names; code checks each is Ada Hollis."
    },
-   "how": "Runs the check and lets it decide only in the direction it is sure of; the other answer goes to a person."
+   "how": "Asks the vision model to list every person the caption names; code checks each is Ada Hollis."
   },
   {
    "check_id": "PHOTO-06/share-hollis-scan-09/H010",
@@ -468,16 +498,18 @@
    "critical": false,
    "check": "The caption on “Family archive share image - hollis_scan_09” (share-hollis-scan-09.jpg) names Ada Hollis and no one else.",
    "assertion": {
-    "op": "v2_limit",
-    "pass_as": "person",
-    "check": {
-     "op": "v2_text_absent",
-     "patterns": {
-      "another person named": "\\b(?:Ruth|Walter|Frank|Carol|Tom|Dale)\\b"
-     }
-    }
+    "op": "vlm_items_r5vb",
+    "question": "List every person named in the caption text on this image (the text set beside or below the photograph). Copy each name exactly as printed, one entry per person, and list a person printed twice only once. When several first names share one surname (for example \"Ann, Bob and Cy Lee\"), give each person with the surname, as \"Ann Lee\", \"Bob Lee\" and \"Cy Lee\". Do not list place names or the archive or collection name. answer yes if any person is named, no if none.",
+    "ok": [
+     "Ada",
+     "Ada Hollis",
+     "Hollis",
+     "Nan"
+    ],
+    "near": 0.8,
+    "how": "Asks the vision model to list every person the caption names; code checks each is Ada Hollis."
    },
-   "how": "Runs the check and lets it decide only in the direction it is sure of; the other answer goes to a person."
+   "how": "Asks the vision model to list every person the caption names; code checks each is Ada Hollis."
   },
   {
    "check_id": "PHOTO-06/restoration-hollis-scan-05/H004",
@@ -515,16 +547,24 @@
    "critical": false,
    "check": "The caption on “Family archive share image - hollis_scan_05” (share-hollis-scan-05.jpg) names no one other than Ada, Ruth, Frank and Carol Hollis.",
    "assertion": {
-    "op": "v2_limit",
-    "pass_as": "person",
-    "check": {
-     "op": "v2_text_absent",
-     "patterns": {
-      "another person named": "\\b(?:Walter|Tom|Dale)\\b"
-     }
-    }
+    "op": "vlm_items_r5vb",
+    "question": "List every person named in the caption text on this image (the text set beside or below the photograph). Copy each name exactly as printed, one entry per person, and list a person printed twice only once. When several first names share one surname (for example \"Ann, Bob and Cy Lee\"), give each person with the surname, as \"Ann Lee\", \"Bob Lee\" and \"Cy Lee\". Do not list place names or the archive or collection name. answer yes if any person is named, no if none.",
+    "ok": [
+     "Ada",
+     "Ada Hollis",
+     "Carol",
+     "Carol Hollis",
+     "Frank",
+     "Frank Hollis",
+     "Hollis",
+     "Nan",
+     "Ruth",
+     "Ruth Hollis"
+    ],
+    "near": 0.8,
+    "how": "Asks the vision model to list every person the caption names; code checks each is Ada Hollis, Ruth Hollis, Frank Hollis or Carol Hollis."
    },
-   "how": "Runs the check and lets it decide only in the direction it is sure of; the other answer goes to a person."
+   "how": "Asks the vision model to list every person the caption names; code checks each is Ada Hollis, Ruth Hollis, Frank Hollis or Carol Hollis."
   },
   {
    "check_id": "PHOTO-06/restoration-hollis-scan-01/H016",
@@ -1935,6 +1975,141 @@
    "how": "Finds the supplied photo in the deliverable, maps the placement back onto it and compares tiles, colour, tone or fine detail."
   },
   {
+   "check_id": "PHOTO-06/share-hollis-scan-01/H011",
+   "output_id": "share-hollis-scan-01",
+   "rule_id": "R025",
+   "k_id": "K1_Q3",
+   "critical": false,
+   "check": "The caption on “Family archive share image - hollis_scan_01” (share-hollis-scan-01.jpg) sits on a margin outside the print from hollis_scan_01.jpg and covers no part of the picture.",
+   "assertion": {
+    "op": "vlm_yesno_r5v",
+    "pass_on": "no",
+    "question": "This image is a share card: a scanned photograph (with any album page, mount or scanner background around the print) placed on a plain margin, with caption text. Does any caption text or other added text lie on top of the photograph or the area around the print that came with the scan, instead of on the plain margin? answer yes if any text overlaps that picture area, no if all text sits on the plain margin outside it.",
+    "how": "Asks the vision model whether any caption text lies on the picture rather than on the plain margin; it passes when the model finds none."
+   },
+   "how": "Asks the vision model whether any caption text lies on the picture rather than on the plain margin; it passes when the model finds none."
+  },
+  {
+   "check_id": "PHOTO-06/share-hollis-scan-02/H012",
+   "output_id": "share-hollis-scan-02",
+   "rule_id": "R025",
+   "k_id": "K1_Q3",
+   "critical": false,
+   "check": "The caption on “Family archive share image - hollis_scan_02” (share-hollis-scan-02.jpg) sits on a margin outside the print from hollis_scan_02.jpg and covers no part of the picture.",
+   "assertion": {
+    "op": "vlm_yesno_r5v",
+    "pass_on": "no",
+    "question": "This image is a share card: a scanned photograph (with any album page, mount or scanner background around the print) placed on a plain margin, with caption text. Does any caption text or other added text lie on top of the photograph or the area around the print that came with the scan, instead of on the plain margin? answer yes if any text overlaps that picture area, no if all text sits on the plain margin outside it.",
+    "how": "Asks the vision model whether any caption text lies on the picture rather than on the plain margin; it passes when the model finds none."
+   },
+   "how": "Asks the vision model whether any caption text lies on the picture rather than on the plain margin; it passes when the model finds none."
+  },
+  {
+   "check_id": "PHOTO-06/share-hollis-scan-03/H008",
+   "output_id": "share-hollis-scan-03",
+   "rule_id": "R025",
+   "k_id": "K1_Q3",
+   "critical": false,
+   "check": "The caption on “Family archive share image - hollis_scan_03” (share-hollis-scan-03.jpg) sits on a margin outside the print from hollis_scan_03.jpg and covers no part of the picture.",
+   "assertion": {
+    "op": "vlm_yesno_r5v",
+    "pass_on": "no",
+    "question": "This image is a share card: a scanned photograph (with any album page, mount or scanner background around the print) placed on a plain margin, with caption text. Does any caption text or other added text lie on top of the photograph or the area around the print that came with the scan, instead of on the plain margin? answer yes if any text overlaps that picture area, no if all text sits on the plain margin outside it.",
+    "how": "Asks the vision model whether any caption text lies on the picture rather than on the plain margin; it passes when the model finds none."
+   },
+   "how": "Asks the vision model whether any caption text lies on the picture rather than on the plain margin; it passes when the model finds none."
+  },
+  {
+   "check_id": "PHOTO-06/share-hollis-scan-04/H009",
+   "output_id": "share-hollis-scan-04",
+   "rule_id": "R025",
+   "k_id": "K1_Q3",
+   "critical": false,
+   "check": "The caption on “Family archive share image - hollis_scan_04” (share-hollis-scan-04.jpg) sits on a margin outside the print from hollis_scan_04.jpg and covers no part of the picture.",
+   "assertion": {
+    "op": "vlm_yesno_r5v",
+    "pass_on": "no",
+    "question": "This image is a share card: a scanned photograph (with any album page, mount or scanner background around the print) placed on a plain margin, with caption text. Does any caption text or other added text lie on top of the photograph or the area around the print that came with the scan, instead of on the plain margin? answer yes if any text overlaps that picture area, no if all text sits on the plain margin outside it.",
+    "how": "Asks the vision model whether any caption text lies on the picture rather than on the plain margin; it passes when the model finds none."
+   },
+   "how": "Asks the vision model whether any caption text lies on the picture rather than on the plain margin; it passes when the model finds none."
+  },
+  {
+   "check_id": "PHOTO-06/share-hollis-scan-05/H008",
+   "output_id": "share-hollis-scan-05",
+   "rule_id": "R025",
+   "k_id": "K1_Q3",
+   "critical": false,
+   "check": "The caption on “Family archive share image - hollis_scan_05” (share-hollis-scan-05.jpg) sits on a margin outside the print from hollis_scan_05.jpg and covers no part of the picture.",
+   "assertion": {
+    "op": "vlm_yesno_r5v",
+    "pass_on": "no",
+    "question": "This image is a share card: a scanned photograph (with any album page, mount or scanner background around the print) placed on a plain margin, with caption text. Does any caption text or other added text lie on top of the photograph or the area around the print that came with the scan, instead of on the plain margin? answer yes if any text overlaps that picture area, no if all text sits on the plain margin outside it.",
+    "how": "Asks the vision model whether any caption text lies on the picture rather than on the plain margin; it passes when the model finds none."
+   },
+   "how": "Asks the vision model whether any caption text lies on the picture rather than on the plain margin; it passes when the model finds none."
+  },
+  {
+   "check_id": "PHOTO-06/share-hollis-scan-06/H010",
+   "output_id": "share-hollis-scan-06",
+   "rule_id": "R025",
+   "k_id": "K1_Q3",
+   "critical": false,
+   "check": "The caption on “Family archive share image - hollis_scan_06” (share-hollis-scan-06.jpg) sits on a margin outside the print from hollis_scan_06.jpg and covers no part of the picture.",
+   "assertion": {
+    "op": "vlm_yesno_r5v",
+    "pass_on": "no",
+    "question": "This image is a share card: a scanned photograph (with any album page, mount or scanner background around the print) placed on a plain margin, with caption text. Does any caption text or other added text lie on top of the photograph or the area around the print that came with the scan, instead of on the plain margin? answer yes if any text overlaps that picture area, no if all text sits on the plain margin outside it.",
+    "how": "Asks the vision model whether any caption text lies on the picture rather than on the plain margin; it passes when the model finds none."
+   },
+   "how": "Asks the vision model whether any caption text lies on the picture rather than on the plain margin; it passes when the model finds none."
+  },
+  {
+   "check_id": "PHOTO-06/share-hollis-scan-07/H011",
+   "output_id": "share-hollis-scan-07",
+   "rule_id": "R025",
+   "k_id": "K1_Q3",
+   "critical": false,
+   "check": "The caption on “Family archive share image - hollis_scan_07” (share-hollis-scan-07.jpg) sits on a margin outside the print from hollis_scan_07.jpg and covers no part of the picture.",
+   "assertion": {
+    "op": "vlm_yesno_r5v",
+    "pass_on": "no",
+    "question": "This image is a share card: a scanned photograph (with any album page, mount or scanner background around the print) placed on a plain margin, with caption text. Does any caption text or other added text lie on top of the photograph or the area around the print that came with the scan, instead of on the plain margin? answer yes if any text overlaps that picture area, no if all text sits on the plain margin outside it.",
+    "how": "Asks the vision model whether any caption text lies on the picture rather than on the plain margin; it passes when the model finds none."
+   },
+   "how": "Asks the vision model whether any caption text lies on the picture rather than on the plain margin; it passes when the model finds none."
+  },
+  {
+   "check_id": "PHOTO-06/share-hollis-scan-08/H008",
+   "output_id": "share-hollis-scan-08",
+   "rule_id": "R025",
+   "k_id": "K1_Q3",
+   "critical": false,
+   "check": "The caption on “Family archive share image - hollis_scan_08” (share-hollis-scan-08.jpg) sits on a margin outside the print from hollis_scan_08.jpg and covers no part of the picture.",
+   "assertion": {
+    "op": "vlm_yesno_r5v",
+    "pass_on": "no",
+    "question": "This image is a share card: a scanned photograph (with any album page, mount or scanner background around the print) placed on a plain margin, with caption text. Does any caption text or other added text lie on top of the photograph or the area around the print that came with the scan, instead of on the plain margin? answer yes if any text overlaps that picture area, no if all text sits on the plain margin outside it.",
+    "how": "Asks the vision model whether any caption text lies on the picture rather than on the plain margin; it passes when the model finds none."
+   },
+   "how": "Asks the vision model whether any caption text lies on the picture rather than on the plain margin; it passes when the model finds none."
+  },
+  {
+   "check_id": "PHOTO-06/share-hollis-scan-09/H008",
+   "output_id": "share-hollis-scan-09",
+   "rule_id": "R025",
+   "k_id": "K1_Q3",
+   "critical": false,
+   "check": "The caption on “Family archive share image - hollis_scan_09” (share-hollis-scan-09.jpg) sits on a margin outside the print from hollis_scan_09.jpg and covers no part of the picture.",
+   "assertion": {
+    "op": "vlm_yesno_r5v",
+    "pass_on": "no",
+    "question": "This image is a share card: a scanned photograph (with any album page, mount or scanner background around the print) placed on a plain margin, with caption text. Does any caption text or other added text lie on top of the photograph or the area around the print that came with the scan, instead of on the plain margin? answer yes if any text overlaps that picture area, no if all text sits on the plain margin outside it.",
+    "how": "Asks the vision model whether any caption text lies on the picture rather than on the plain margin; it passes when the model finds none."
+   },
+   "how": "Asks the vision model whether any caption text lies on the picture rather than on the plain margin; it passes when the model finds none."
+  },
+  {
    "check_id": "PHOTO-06/restoration-hollis-scan-01/H015",
    "output_id": "restoration-hollis-scan-01",
    "rule_id": "R026",
@@ -1942,11 +2117,22 @@
    "critical": false,
    "check": "No caption, text, plate numeral or rule is added to “Archival restoration master - hollis_scan_01” (restoration-hollis-scan-01.png).",
    "assertion": {
-    "op": "v2_vs_source",
-    "test": "tiles",
-    "photo": "hollis_scan_01.jpg"
+    "op": "vlm_items_r5vb",
+    "images": [
+     {
+      "src": "asset:hollis_scan_01.jpg",
+      "label": "Image 1: the original scan."
+     },
+     {
+      "src": "deliverable",
+      "label": "Image 2: the restored file."
+     }
+    ],
+    "none_found": "pass",
+    "question": "Image 1 is the original scan of an old photograph. Image 2 is the restored file made from it. List every caption, word, letter, number or drawn straight line (a rule) that appears on Image 2 but not on Image 1. The edges of the print, the album page or mount, photo corners and the scanner background are not drawn lines. answer yes if there is at least one, no if there is none.",
+    "how": "Shows the vision model the source scan and the restored file and asks it to list any text, numeral or ruled line the restored file adds; any item fails."
    },
-   "how": "Finds the supplied photo in the deliverable, maps the placement back onto it and compares tiles, colour, tone or fine detail."
+   "how": "Shows the vision model the source scan and the restored file and asks it to list any text, numeral or ruled line the restored file adds; any item fails."
   },
   {
    "check_id": "PHOTO-06/restoration-hollis-scan-02/H016",
@@ -1956,11 +2142,22 @@
    "critical": false,
    "check": "No caption, text, plate numeral or rule is added to “Archival restoration master - hollis_scan_02” (restoration-hollis-scan-02.png).",
    "assertion": {
-    "op": "v2_vs_source",
-    "test": "tiles",
-    "photo": "hollis_scan_02.jpg"
+    "op": "vlm_items_r5vb",
+    "images": [
+     {
+      "src": "asset:hollis_scan_02.jpg",
+      "label": "Image 1: the original scan."
+     },
+     {
+      "src": "deliverable",
+      "label": "Image 2: the restored file."
+     }
+    ],
+    "none_found": "pass",
+    "question": "Image 1 is the original scan of an old photograph. Image 2 is the restored file made from it. List every caption, word, letter, number or drawn straight line (a rule) that appears on Image 2 but not on Image 1. The edges of the print, the album page or mount, photo corners and the scanner background are not drawn lines. answer yes if there is at least one, no if there is none.",
+    "how": "Shows the vision model the source scan and the restored file and asks it to list any text, numeral or ruled line the restored file adds; any item fails."
    },
-   "how": "Finds the supplied photo in the deliverable, maps the placement back onto it and compares tiles, colour, tone or fine detail."
+   "how": "Shows the vision model the source scan and the restored file and asks it to list any text, numeral or ruled line the restored file adds; any item fails."
   },
   {
    "check_id": "PHOTO-06/restoration-hollis-scan-03/H014",
@@ -1970,11 +2167,22 @@
    "critical": false,
    "check": "No caption, text, plate numeral or rule is added to “Archival restoration master - hollis_scan_03” (restoration-hollis-scan-03.png).",
    "assertion": {
-    "op": "v2_vs_source",
-    "test": "tiles",
-    "photo": "hollis_scan_03.jpg"
+    "op": "vlm_items_r5vb",
+    "images": [
+     {
+      "src": "asset:hollis_scan_03.jpg",
+      "label": "Image 1: the original scan."
+     },
+     {
+      "src": "deliverable",
+      "label": "Image 2: the restored file."
+     }
+    ],
+    "none_found": "pass",
+    "question": "Image 1 is the original scan of an old photograph. Image 2 is the restored file made from it. List every caption, word, letter, number or drawn straight line (a rule) that appears on Image 2 but not on Image 1. The edges of the print, the album page or mount, photo corners and the scanner background are not drawn lines. answer yes if there is at least one, no if there is none.",
+    "how": "Shows the vision model the source scan and the restored file and asks it to list any text, numeral or ruled line the restored file adds; any item fails."
    },
-   "how": "Finds the supplied photo in the deliverable, maps the placement back onto it and compares tiles, colour, tone or fine detail."
+   "how": "Shows the vision model the source scan and the restored file and asks it to list any text, numeral or ruled line the restored file adds; any item fails."
   },
   {
    "check_id": "PHOTO-06/restoration-hollis-scan-04/H015",
@@ -1984,11 +2192,22 @@
    "critical": false,
    "check": "No caption, text, plate numeral or rule is added to “Archival restoration master - hollis_scan_04” (restoration-hollis-scan-04.png).",
    "assertion": {
-    "op": "v2_vs_source",
-    "test": "tiles",
-    "photo": "hollis_scan_04.jpg"
+    "op": "vlm_items_r5vb",
+    "images": [
+     {
+      "src": "asset:hollis_scan_04.jpg",
+      "label": "Image 1: the original scan."
+     },
+     {
+      "src": "deliverable",
+      "label": "Image 2: the restored file."
+     }
+    ],
+    "none_found": "pass",
+    "question": "Image 1 is the original scan of an old photograph. Image 2 is the restored file made from it. List every caption, word, letter, number or drawn straight line (a rule) that appears on Image 2 but not on Image 1. The edges of the print, the album page or mount, photo corners and the scanner background are not drawn lines. answer yes if there is at least one, no if there is none.",
+    "how": "Shows the vision model the source scan and the restored file and asks it to list any text, numeral or ruled line the restored file adds; any item fails."
    },
-   "how": "Finds the supplied photo in the deliverable, maps the placement back onto it and compares tiles, colour, tone or fine detail."
+   "how": "Shows the vision model the source scan and the restored file and asks it to list any text, numeral or ruled line the restored file adds; any item fails."
   },
   {
    "check_id": "PHOTO-06/restoration-hollis-scan-05/H014",
@@ -1998,11 +2217,22 @@
    "critical": false,
    "check": "No caption, text, plate numeral or rule is added to “Archival restoration master - hollis_scan_05” (restoration-hollis-scan-05.png).",
    "assertion": {
-    "op": "v2_vs_source",
-    "test": "tiles",
-    "photo": "hollis_scan_05.jpg"
+    "op": "vlm_items_r5vb",
+    "images": [
+     {
+      "src": "asset:hollis_scan_05.jpg",
+      "label": "Image 1: the original scan."
+     },
+     {
+      "src": "deliverable",
+      "label": "Image 2: the restored file."
+     }
+    ],
+    "none_found": "pass",
+    "question": "Image 1 is the original scan of an old photograph. Image 2 is the restored file made from it. List every caption, word, letter, number or drawn straight line (a rule) that appears on Image 2 but not on Image 1. The edges of the print, the album page or mount, photo corners and the scanner background are not drawn lines. answer yes if there is at least one, no if there is none.",
+    "how": "Shows the vision model the source scan and the restored file and asks it to list any text, numeral or ruled line the restored file adds; any item fails."
    },
-   "how": "Finds the supplied photo in the deliverable, maps the placement back onto it and compares tiles, colour, tone or fine detail."
+   "how": "Shows the vision model the source scan and the restored file and asks it to list any text, numeral or ruled line the restored file adds; any item fails."
   },
   {
    "check_id": "PHOTO-06/restoration-hollis-scan-06/H015",
@@ -2012,11 +2242,22 @@
    "critical": false,
    "check": "No caption, text, plate numeral or rule is added to “Archival restoration master - hollis_scan_06” (restoration-hollis-scan-06.png).",
    "assertion": {
-    "op": "v2_vs_source",
-    "test": "tiles",
-    "photo": "hollis_scan_06.jpg"
+    "op": "vlm_items_r5vb",
+    "images": [
+     {
+      "src": "asset:hollis_scan_06.jpg",
+      "label": "Image 1: the original scan."
+     },
+     {
+      "src": "deliverable",
+      "label": "Image 2: the restored file."
+     }
+    ],
+    "none_found": "pass",
+    "question": "Image 1 is the original scan of an old photograph. Image 2 is the restored file made from it. List every caption, word, letter, number or drawn straight line (a rule) that appears on Image 2 but not on Image 1. The edges of the print, the album page or mount, photo corners and the scanner background are not drawn lines. answer yes if there is at least one, no if there is none.",
+    "how": "Shows the vision model the source scan and the restored file and asks it to list any text, numeral or ruled line the restored file adds; any item fails."
    },
-   "how": "Finds the supplied photo in the deliverable, maps the placement back onto it and compares tiles, colour, tone or fine detail."
+   "how": "Shows the vision model the source scan and the restored file and asks it to list any text, numeral or ruled line the restored file adds; any item fails."
   },
   {
    "check_id": "PHOTO-06/restoration-hollis-scan-07/H017",
@@ -2026,11 +2267,22 @@
    "critical": false,
    "check": "No caption, text, plate numeral or rule is added to “Archival restoration master - hollis_scan_07” (restoration-hollis-scan-07.png).",
    "assertion": {
-    "op": "v2_vs_source",
-    "test": "tiles",
-    "photo": "hollis_scan_07.jpg"
+    "op": "vlm_items_r5vb",
+    "images": [
+     {
+      "src": "asset:hollis_scan_07.jpg",
+      "label": "Image 1: the original scan."
+     },
+     {
+      "src": "deliverable",
+      "label": "Image 2: the restored file."
+     }
+    ],
+    "none_found": "pass",
+    "question": "Image 1 is the original scan of an old photograph. Image 2 is the restored file made from it. List every caption, word, letter, number or drawn straight line (a rule) that appears on Image 2 but not on Image 1. The edges of the print, the album page or mount, photo corners and the scanner background are not drawn lines. answer yes if there is at least one, no if there is none.",
+    "how": "Shows the vision model the source scan and the restored file and asks it to list any text, numeral or ruled line the restored file adds; any item fails."
    },
-   "how": "Finds the supplied photo in the deliverable, maps the placement back onto it and compares tiles, colour, tone or fine detail."
+   "how": "Shows the vision model the source scan and the restored file and asks it to list any text, numeral or ruled line the restored file adds; any item fails."
   },
   {
    "check_id": "PHOTO-06/restoration-hollis-scan-08/H013",
@@ -2040,11 +2292,22 @@
    "critical": false,
    "check": "No caption, text, plate numeral or rule is added to “Archival restoration master - hollis_scan_08” (restoration-hollis-scan-08.png).",
    "assertion": {
-    "op": "v2_vs_source",
-    "test": "tiles",
-    "photo": "hollis_scan_08.jpg"
+    "op": "vlm_items_r5vb",
+    "images": [
+     {
+      "src": "asset:hollis_scan_08.jpg",
+      "label": "Image 1: the original scan."
+     },
+     {
+      "src": "deliverable",
+      "label": "Image 2: the restored file."
+     }
+    ],
+    "none_found": "pass",
+    "question": "Image 1 is the original scan of an old photograph. Image 2 is the restored file made from it. List every caption, word, letter, number or drawn straight line (a rule) that appears on Image 2 but not on Image 1. The edges of the print, the album page or mount, photo corners and the scanner background are not drawn lines. answer yes if there is at least one, no if there is none.",
+    "how": "Shows the vision model the source scan and the restored file and asks it to list any text, numeral or ruled line the restored file adds; any item fails."
    },
-   "how": "Finds the supplied photo in the deliverable, maps the placement back onto it and compares tiles, colour, tone or fine detail."
+   "how": "Shows the vision model the source scan and the restored file and asks it to list any text, numeral or ruled line the restored file adds; any item fails."
   },
   {
    "check_id": "PHOTO-06/restoration-hollis-scan-09/H014",
@@ -2054,11 +2317,22 @@
    "critical": false,
    "check": "No caption, text, plate numeral or rule is added to “Archival restoration master - hollis_scan_09” (restoration-hollis-scan-09.png).",
    "assertion": {
-    "op": "v2_vs_source",
-    "test": "tiles",
-    "photo": "hollis_scan_09.jpg"
+    "op": "vlm_items_r5vb",
+    "images": [
+     {
+      "src": "asset:hollis_scan_09.jpg",
+      "label": "Image 1: the original scan."
+     },
+     {
+      "src": "deliverable",
+      "label": "Image 2: the restored file."
+     }
+    ],
+    "none_found": "pass",
+    "question": "Image 1 is the original scan of an old photograph. Image 2 is the restored file made from it. List every caption, word, letter, number or drawn straight line (a rule) that appears on Image 2 but not on Image 1. The edges of the print, the album page or mount, photo corners and the scanner background are not drawn lines. answer yes if there is at least one, no if there is none.",
+    "how": "Shows the vision model the source scan and the restored file and asks it to list any text, numeral or ruled line the restored file adds; any item fails."
    },
-   "how": "Finds the supplied photo in the deliverable, maps the placement back onto it and compares tiles, colour, tone or fine detail."
+   "how": "Shows the vision model the source scan and the restored file and asks it to list any text, numeral or ruled line the restored file adds; any item fails."
   },
   {
    "check_id": "PHOTO-06/share-hollis-scan-01/H055",
@@ -3228,6 +3502,156 @@
     "full": true
    },
    "how": "Finds the supplied photo in the deliverable, maps the placement back onto it and compares tiles, colour, tone or fine detail."
+  },
+  {
+   "check_id": "PHOTO-06/restoration-hollis-scan-02/H011",
+   "output_id": "restoration-hollis-scan-02",
+   "rule_id": "R036",
+   "k_id": "K2_Q2",
+   "critical": false,
+   "check": "The deckled edge of the print in hollis_scan_02.jpg is kept whole on “Archival restoration master - hollis_scan_02” (restoration-hollis-scan-02.png), not trimmed or cut straight; levelling the print is allowed.",
+   "assertion": {
+    "op": "vlm_yesno_r5v",
+    "images": [
+     {
+      "src": "asset:hollis_scan_02.jpg",
+      "label": "Image 1: the original scan."
+     },
+     {
+      "src": "deliverable",
+      "label": "Image 2: the restored file."
+     }
+    ],
+    "pass_on": "yes",
+    "question": "Image 1 is the original scan of an old photograph. Image 2 is the restored file made from it. The print in Image 1 has a deckled edge: a wavy, scalloped border along its sides. Look at the print in Image 2. Is its deckled edge kept along all four sides, with no side trimmed off or cut straight (turning or levelling the print is fine)? answer yes if the deckled edge is kept on all four sides, no if any side is trimmed or cut straight.",
+    "how": "Shows the vision model the source scan and the file and asks whether the print keeps its deckled edge on all four sides; it passes when the model says yes."
+   },
+   "how": "Shows the vision model the source scan and the file and asks whether the print keeps its deckled edge on all four sides; it passes when the model says yes."
+  },
+  {
+   "check_id": "PHOTO-06/restoration-hollis-scan-04/H009",
+   "output_id": "restoration-hollis-scan-04",
+   "rule_id": "R036",
+   "k_id": "K2_Q2",
+   "critical": false,
+   "check": "The deckled edge of the print in hollis_scan_04.jpg is kept whole on “Archival restoration master - hollis_scan_04” (restoration-hollis-scan-04.png), not trimmed or cut straight; levelling the print is allowed.",
+   "assertion": {
+    "op": "vlm_yesno_r5v",
+    "images": [
+     {
+      "src": "asset:hollis_scan_04.jpg",
+      "label": "Image 1: the original scan."
+     },
+     {
+      "src": "deliverable",
+      "label": "Image 2: the restored file."
+     }
+    ],
+    "pass_on": "yes",
+    "question": "Image 1 is the original scan of an old photograph. Image 2 is the restored file made from it. The print in Image 1 has a deckled edge: a wavy, scalloped border along its sides. Look at the print in Image 2. Is its deckled edge kept along all four sides, with no side trimmed off or cut straight (turning or levelling the print is fine)? answer yes if the deckled edge is kept on all four sides, no if any side is trimmed or cut straight.",
+    "how": "Shows the vision model the source scan and the file and asks whether the print keeps its deckled edge on all four sides; it passes when the model says yes."
+   },
+   "how": "Shows the vision model the source scan and the file and asks whether the print keeps its deckled edge on all four sides; it passes when the model says yes."
+  },
+  {
+   "check_id": "PHOTO-06/restoration-hollis-scan-06/H010",
+   "output_id": "restoration-hollis-scan-06",
+   "rule_id": "R036",
+   "k_id": "K2_Q2",
+   "critical": false,
+   "check": "The deckled edge of the print in hollis_scan_06.jpg is kept whole on “Archival restoration master - hollis_scan_06” (restoration-hollis-scan-06.png), not trimmed or cut straight; levelling the print is allowed.",
+   "assertion": {
+    "op": "vlm_yesno_r5v",
+    "images": [
+     {
+      "src": "asset:hollis_scan_06.jpg",
+      "label": "Image 1: the original scan."
+     },
+     {
+      "src": "deliverable",
+      "label": "Image 2: the restored file."
+     }
+    ],
+    "pass_on": "yes",
+    "question": "Image 1 is the original scan of an old photograph. Image 2 is the restored file made from it. The print in Image 1 has a deckled edge: a wavy, scalloped border along its sides. Look at the print in Image 2. Is its deckled edge kept along all four sides, with no side trimmed off or cut straight (turning or levelling the print is fine)? answer yes if the deckled edge is kept on all four sides, no if any side is trimmed or cut straight.",
+    "how": "Shows the vision model the source scan and the file and asks whether the print keeps its deckled edge on all four sides; it passes when the model says yes."
+   },
+   "how": "Shows the vision model the source scan and the file and asks whether the print keeps its deckled edge on all four sides; it passes when the model says yes."
+  },
+  {
+   "check_id": "PHOTO-06/share-hollis-scan-02/H009",
+   "output_id": "share-hollis-scan-02",
+   "rule_id": "R036",
+   "k_id": "K2_Q2",
+   "critical": false,
+   "check": "The deckled edge of the print in hollis_scan_02.jpg is kept whole on “Family archive share image - hollis_scan_02” (share-hollis-scan-02.jpg), not trimmed or cut straight; levelling the print is allowed.",
+   "assertion": {
+    "op": "vlm_yesno_r5v",
+    "images": [
+     {
+      "src": "asset:hollis_scan_02.jpg",
+      "label": "Image 1: the original scan."
+     },
+     {
+      "src": "deliverable",
+      "label": "Image 2: the share card."
+     }
+    ],
+    "pass_on": "yes",
+    "question": "Image 1 is the original scan of an old photograph. Image 2 is the share card made from it. The print in Image 1 has a deckled edge: a wavy, scalloped border along its sides. Look at the print in Image 2. Is its deckled edge kept along all four sides, with no side trimmed off or cut straight (turning or levelling the print is fine)? answer yes if the deckled edge is kept on all four sides, no if any side is trimmed or cut straight.",
+    "how": "Shows the vision model the source scan and the file and asks whether the print keeps its deckled edge on all four sides; it passes when the model says yes."
+   },
+   "how": "Shows the vision model the source scan and the file and asks whether the print keeps its deckled edge on all four sides; it passes when the model says yes."
+  },
+  {
+   "check_id": "PHOTO-06/share-hollis-scan-04/H007",
+   "output_id": "share-hollis-scan-04",
+   "rule_id": "R036",
+   "k_id": "K2_Q2",
+   "critical": false,
+   "check": "The deckled edge of the print in hollis_scan_04.jpg is kept whole on “Family archive share image - hollis_scan_04” (share-hollis-scan-04.jpg), not trimmed or cut straight; levelling the print is allowed.",
+   "assertion": {
+    "op": "vlm_yesno_r5v",
+    "images": [
+     {
+      "src": "asset:hollis_scan_04.jpg",
+      "label": "Image 1: the original scan."
+     },
+     {
+      "src": "deliverable",
+      "label": "Image 2: the share card."
+     }
+    ],
+    "pass_on": "yes",
+    "question": "Image 1 is the original scan of an old photograph. Image 2 is the share card made from it. The print in Image 1 has a deckled edge: a wavy, scalloped border along its sides. Look at the print in Image 2. Is its deckled edge kept along all four sides, with no side trimmed off or cut straight (turning or levelling the print is fine)? answer yes if the deckled edge is kept on all four sides, no if any side is trimmed or cut straight.",
+    "how": "Shows the vision model the source scan and the file and asks whether the print keeps its deckled edge on all four sides; it passes when the model says yes."
+   },
+   "how": "Shows the vision model the source scan and the file and asks whether the print keeps its deckled edge on all four sides; it passes when the model says yes."
+  },
+  {
+   "check_id": "PHOTO-06/share-hollis-scan-06/H008",
+   "output_id": "share-hollis-scan-06",
+   "rule_id": "R036",
+   "k_id": "K2_Q2",
+   "critical": false,
+   "check": "The deckled edge of the print in hollis_scan_06.jpg is kept whole on “Family archive share image - hollis_scan_06” (share-hollis-scan-06.jpg), not trimmed or cut straight; levelling the print is allowed.",
+   "assertion": {
+    "op": "vlm_yesno_r5v",
+    "images": [
+     {
+      "src": "asset:hollis_scan_06.jpg",
+      "label": "Image 1: the original scan."
+     },
+     {
+      "src": "deliverable",
+      "label": "Image 2: the share card."
+     }
+    ],
+    "pass_on": "yes",
+    "question": "Image 1 is the original scan of an old photograph. Image 2 is the share card made from it. The print in Image 1 has a deckled edge: a wavy, scalloped border along its sides. Look at the print in Image 2. Is its deckled edge kept along all four sides, with no side trimmed off or cut straight (turning or levelling the print is fine)? answer yes if the deckled edge is kept on all four sides, no if any side is trimmed or cut straight.",
+    "how": "Shows the vision model the source scan and the file and asks whether the print keeps its deckled edge on all four sides; it passes when the model says yes."
+   },
+   "how": "Shows the vision model the source scan and the file and asks whether the print keeps its deckled edge on all four sides; it passes when the model says yes."
   },
   {
    "check_id": "PHOTO-06/restoration-hollis-scan-06/H007",
@@ -5717,19 +6141,13 @@
    "critical": false,
    "check": "If Linen #D9D0C1 appears on “Family archive share image - hollis_scan_01” (share-hollis-scan-01.jpg), it is used only for a hairline keyline around the photograph.",
    "assertion": {
-    "op": "v2_colour_roles_raster",
+    "op": "v2_keyline_only_r5c",
     "hexes": [
      "#D9D0C1"
     ],
-    "allowed": [
-     "thin"
-    ],
-    "thin_near_photo": true,
-    "photos": [
-     "hollis_scan_01.jpg"
-    ]
+    "photo": "hollis_scan_01.jpg"
    },
-   "how": "Finds every piece in the colour outside the photographs and checks it is a thin rule or sits inside a small label."
+   "how": "Finds the supplied photo, then checks every piece of the colour outside it runs along its edge as a line no thicker than a hairline."
   },
   {
    "check_id": "PHOTO-06/share-hollis-scan-02/H047",
@@ -5739,19 +6157,13 @@
    "critical": false,
    "check": "If Linen #D9D0C1 appears on “Family archive share image - hollis_scan_02” (share-hollis-scan-02.jpg), it is used only for a hairline keyline around the photograph.",
    "assertion": {
-    "op": "v2_colour_roles_raster",
+    "op": "v2_keyline_only_r5c",
     "hexes": [
      "#D9D0C1"
     ],
-    "allowed": [
-     "thin"
-    ],
-    "thin_near_photo": true,
-    "photos": [
-     "hollis_scan_02.jpg"
-    ]
+    "photo": "hollis_scan_02.jpg"
    },
-   "how": "Finds every piece in the colour outside the photographs and checks it is a thin rule or sits inside a small label."
+   "how": "Finds the supplied photo, then checks every piece of the colour outside it runs along its edge as a line no thicker than a hairline."
   },
   {
    "check_id": "PHOTO-06/share-hollis-scan-03/H051",
@@ -5761,19 +6173,13 @@
    "critical": false,
    "check": "If Linen #D9D0C1 appears on “Family archive share image - hollis_scan_03” (share-hollis-scan-03.jpg), it is used only for a hairline keyline around the photograph.",
    "assertion": {
-    "op": "v2_colour_roles_raster",
+    "op": "v2_keyline_only_r5c",
     "hexes": [
      "#D9D0C1"
     ],
-    "allowed": [
-     "thin"
-    ],
-    "thin_near_photo": true,
-    "photos": [
-     "hollis_scan_03.jpg"
-    ]
+    "photo": "hollis_scan_03.jpg"
    },
-   "how": "Finds every piece in the colour outside the photographs and checks it is a thin rule or sits inside a small label."
+   "how": "Finds the supplied photo, then checks every piece of the colour outside it runs along its edge as a line no thicker than a hairline."
   },
   {
    "check_id": "PHOTO-06/share-hollis-scan-04/H043",
@@ -5783,19 +6189,13 @@
    "critical": false,
    "check": "If Linen #D9D0C1 appears on “Family archive share image - hollis_scan_04” (share-hollis-scan-04.jpg), it is used only for a hairline keyline around the photograph.",
    "assertion": {
-    "op": "v2_colour_roles_raster",
+    "op": "v2_keyline_only_r5c",
     "hexes": [
      "#D9D0C1"
     ],
-    "allowed": [
-     "thin"
-    ],
-    "thin_near_photo": true,
-    "photos": [
-     "hollis_scan_04.jpg"
-    ]
+    "photo": "hollis_scan_04.jpg"
    },
-   "how": "Finds every piece in the colour outside the photographs and checks it is a thin rule or sits inside a small label."
+   "how": "Finds the supplied photo, then checks every piece of the colour outside it runs along its edge as a line no thicker than a hairline."
   },
   {
    "check_id": "PHOTO-06/share-hollis-scan-05/H051",
@@ -5805,19 +6205,13 @@
    "critical": false,
    "check": "If Linen #D9D0C1 appears on “Family archive share image - hollis_scan_05” (share-hollis-scan-05.jpg), it is used only for a hairline keyline around the photograph.",
    "assertion": {
-    "op": "v2_colour_roles_raster",
+    "op": "v2_keyline_only_r5c",
     "hexes": [
      "#D9D0C1"
     ],
-    "allowed": [
-     "thin"
-    ],
-    "thin_near_photo": true,
-    "photos": [
-     "hollis_scan_05.jpg"
-    ]
+    "photo": "hollis_scan_05.jpg"
    },
-   "how": "Finds every piece in the colour outside the photographs and checks it is a thin rule or sits inside a small label."
+   "how": "Finds the supplied photo, then checks every piece of the colour outside it runs along its edge as a line no thicker than a hairline."
   },
   {
    "check_id": "PHOTO-06/share-hollis-scan-06/H046",
@@ -5827,19 +6221,13 @@
    "critical": false,
    "check": "If Linen #D9D0C1 appears on “Family archive share image - hollis_scan_06” (share-hollis-scan-06.jpg), it is used only for a hairline keyline around the photograph.",
    "assertion": {
-    "op": "v2_colour_roles_raster",
+    "op": "v2_keyline_only_r5c",
     "hexes": [
      "#D9D0C1"
     ],
-    "allowed": [
-     "thin"
-    ],
-    "thin_near_photo": true,
-    "photos": [
-     "hollis_scan_06.jpg"
-    ]
+    "photo": "hollis_scan_06.jpg"
    },
-   "how": "Finds every piece in the colour outside the photographs and checks it is a thin rule or sits inside a small label."
+   "how": "Finds the supplied photo, then checks every piece of the colour outside it runs along its edge as a line no thicker than a hairline."
   },
   {
    "check_id": "PHOTO-06/share-hollis-scan-07/H054",
@@ -5849,19 +6237,13 @@
    "critical": false,
    "check": "If Linen #D9D0C1 appears on “Family archive share image - hollis_scan_07” (share-hollis-scan-07.jpg), it is used only for a hairline keyline around the photograph.",
    "assertion": {
-    "op": "v2_colour_roles_raster",
+    "op": "v2_keyline_only_r5c",
     "hexes": [
      "#D9D0C1"
     ],
-    "allowed": [
-     "thin"
-    ],
-    "thin_near_photo": true,
-    "photos": [
-     "hollis_scan_07.jpg"
-    ]
+    "photo": "hollis_scan_07.jpg"
    },
-   "how": "Finds every piece in the colour outside the photographs and checks it is a thin rule or sits inside a small label."
+   "how": "Finds the supplied photo, then checks every piece of the colour outside it runs along its edge as a line no thicker than a hairline."
   },
   {
    "check_id": "PHOTO-06/share-hollis-scan-08/H041",
@@ -5871,19 +6253,13 @@
    "critical": false,
    "check": "If Linen #D9D0C1 appears on “Family archive share image - hollis_scan_08” (share-hollis-scan-08.jpg), it is used only for a hairline keyline around the photograph.",
    "assertion": {
-    "op": "v2_colour_roles_raster",
+    "op": "v2_keyline_only_r5c",
     "hexes": [
      "#D9D0C1"
     ],
-    "allowed": [
-     "thin"
-    ],
-    "thin_near_photo": true,
-    "photos": [
-     "hollis_scan_08.jpg"
-    ]
+    "photo": "hollis_scan_08.jpg"
    },
-   "how": "Finds every piece in the colour outside the photographs and checks it is a thin rule or sits inside a small label."
+   "how": "Finds the supplied photo, then checks every piece of the colour outside it runs along its edge as a line no thicker than a hairline."
   },
   {
    "check_id": "PHOTO-06/share-hollis-scan-09/H051",
@@ -5893,19 +6269,13 @@
    "critical": false,
    "check": "If Linen #D9D0C1 appears on “Family archive share image - hollis_scan_09” (share-hollis-scan-09.jpg), it is used only for a hairline keyline around the photograph.",
    "assertion": {
-    "op": "v2_colour_roles_raster",
+    "op": "v2_keyline_only_r5c",
     "hexes": [
      "#D9D0C1"
     ],
-    "allowed": [
-     "thin"
-    ],
-    "thin_near_photo": true,
-    "photos": [
-     "hollis_scan_09.jpg"
-    ]
+    "photo": "hollis_scan_09.jpg"
    },
-   "how": "Finds every piece in the colour outside the photographs and checks it is a thin rule or sits inside a small label."
+   "how": "Finds the supplied photo, then checks every piece of the colour outside it runs along its edge as a line no thicker than a hairline."
   },
   {
    "check_id": "PHOTO-06/share-hollis-scan-01/H053",
@@ -7769,11 +8139,22 @@
    "critical": false,
    "check": "No frame, ornament, brand mark or drop shadow is added to “Archival restoration master - hollis_scan_01” (restoration-hollis-scan-01.png).",
    "assertion": {
-    "op": "v2_vs_source",
-    "test": "tiles",
-    "photo": "hollis_scan_01.jpg"
+    "op": "vlm_items_r5vb",
+    "images": [
+     {
+      "src": "asset:hollis_scan_01.jpg",
+      "label": "Image 1: the original scan."
+     },
+     {
+      "src": "deliverable",
+      "label": "Image 2: the restored file."
+     }
+    ],
+    "none_found": "pass",
+    "question": "Image 1 is the original scan of an old photograph. Image 2 is the restored file made from it. List every frame or border, ornament, logo or brand mark, and drop shadow that Image 2 has but Image 1 does not. The print's own edges, its album page or mount, photo corners and the scanner background, as seen in Image 1, are not added. Text and single plain straight lines are checked separately: do not list them. answer yes if there is at least one, no if there is none.",
+    "how": "Shows the vision model the source scan and the restored file and asks it to list any frame, ornament, brand mark or drop shadow the restored file adds; any item fails."
    },
-   "how": "Finds the supplied photo in the deliverable, maps the placement back onto it and compares tiles, colour, tone or fine detail."
+   "how": "Shows the vision model the source scan and the restored file and asks it to list any frame, ornament, brand mark or drop shadow the restored file adds; any item fails."
   },
   {
    "check_id": "PHOTO-06/restoration-hollis-scan-02/H013",
@@ -7783,11 +8164,22 @@
    "critical": false,
    "check": "No frame, ornament, brand mark or drop shadow is added to “Archival restoration master - hollis_scan_02” (restoration-hollis-scan-02.png).",
    "assertion": {
-    "op": "v2_vs_source",
-    "test": "tiles",
-    "photo": "hollis_scan_02.jpg"
+    "op": "vlm_items_r5vb",
+    "images": [
+     {
+      "src": "asset:hollis_scan_02.jpg",
+      "label": "Image 1: the original scan."
+     },
+     {
+      "src": "deliverable",
+      "label": "Image 2: the restored file."
+     }
+    ],
+    "none_found": "pass",
+    "question": "Image 1 is the original scan of an old photograph. Image 2 is the restored file made from it. List every frame or border, ornament, logo or brand mark, and drop shadow that Image 2 has but Image 1 does not. The print's own edges, its album page or mount, photo corners and the scanner background, as seen in Image 1, are not added. Text and single plain straight lines are checked separately: do not list them. answer yes if there is at least one, no if there is none.",
+    "how": "Shows the vision model the source scan and the restored file and asks it to list any frame, ornament, brand mark or drop shadow the restored file adds; any item fails."
    },
-   "how": "Finds the supplied photo in the deliverable, maps the placement back onto it and compares tiles, colour, tone or fine detail."
+   "how": "Shows the vision model the source scan and the restored file and asks it to list any frame, ornament, brand mark or drop shadow the restored file adds; any item fails."
   },
   {
    "check_id": "PHOTO-06/restoration-hollis-scan-03/H011",
@@ -7797,11 +8189,22 @@
    "critical": false,
    "check": "No frame, ornament, brand mark or drop shadow is added to “Archival restoration master - hollis_scan_03” (restoration-hollis-scan-03.png).",
    "assertion": {
-    "op": "v2_vs_source",
-    "test": "tiles",
-    "photo": "hollis_scan_03.jpg"
+    "op": "vlm_items_r5vb",
+    "images": [
+     {
+      "src": "asset:hollis_scan_03.jpg",
+      "label": "Image 1: the original scan."
+     },
+     {
+      "src": "deliverable",
+      "label": "Image 2: the restored file."
+     }
+    ],
+    "none_found": "pass",
+    "question": "Image 1 is the original scan of an old photograph. Image 2 is the restored file made from it. List every frame or border, ornament, logo or brand mark, and drop shadow that Image 2 has but Image 1 does not. The print's own edges, its album page or mount, photo corners and the scanner background, as seen in Image 1, are not added. Text and single plain straight lines are checked separately: do not list them. answer yes if there is at least one, no if there is none.",
+    "how": "Shows the vision model the source scan and the restored file and asks it to list any frame, ornament, brand mark or drop shadow the restored file adds; any item fails."
    },
-   "how": "Finds the supplied photo in the deliverable, maps the placement back onto it and compares tiles, colour, tone or fine detail."
+   "how": "Shows the vision model the source scan and the restored file and asks it to list any frame, ornament, brand mark or drop shadow the restored file adds; any item fails."
   },
   {
    "check_id": "PHOTO-06/restoration-hollis-scan-04/H012",
@@ -7811,11 +8214,22 @@
    "critical": false,
    "check": "No frame, ornament, brand mark or drop shadow is added to “Archival restoration master - hollis_scan_04” (restoration-hollis-scan-04.png).",
    "assertion": {
-    "op": "v2_vs_source",
-    "test": "tiles",
-    "photo": "hollis_scan_04.jpg"
+    "op": "vlm_items_r5vb",
+    "images": [
+     {
+      "src": "asset:hollis_scan_04.jpg",
+      "label": "Image 1: the original scan."
+     },
+     {
+      "src": "deliverable",
+      "label": "Image 2: the restored file."
+     }
+    ],
+    "none_found": "pass",
+    "question": "Image 1 is the original scan of an old photograph. Image 2 is the restored file made from it. List every frame or border, ornament, logo or brand mark, and drop shadow that Image 2 has but Image 1 does not. The print's own edges, its album page or mount, photo corners and the scanner background, as seen in Image 1, are not added. Text and single plain straight lines are checked separately: do not list them. answer yes if there is at least one, no if there is none.",
+    "how": "Shows the vision model the source scan and the restored file and asks it to list any frame, ornament, brand mark or drop shadow the restored file adds; any item fails."
    },
-   "how": "Finds the supplied photo in the deliverable, maps the placement back onto it and compares tiles, colour, tone or fine detail."
+   "how": "Shows the vision model the source scan and the restored file and asks it to list any frame, ornament, brand mark or drop shadow the restored file adds; any item fails."
   },
   {
    "check_id": "PHOTO-06/restoration-hollis-scan-05/H011",
@@ -7825,11 +8239,22 @@
    "critical": false,
    "check": "No frame, ornament, brand mark or drop shadow is added to “Archival restoration master - hollis_scan_05” (restoration-hollis-scan-05.png).",
    "assertion": {
-    "op": "v2_vs_source",
-    "test": "tiles",
-    "photo": "hollis_scan_05.jpg"
+    "op": "vlm_items_r5vb",
+    "images": [
+     {
+      "src": "asset:hollis_scan_05.jpg",
+      "label": "Image 1: the original scan."
+     },
+     {
+      "src": "deliverable",
+      "label": "Image 2: the restored file."
+     }
+    ],
+    "none_found": "pass",
+    "question": "Image 1 is the original scan of an old photograph. Image 2 is the restored file made from it. List every frame or border, ornament, logo or brand mark, and drop shadow that Image 2 has but Image 1 does not. The print's own edges, its album page or mount, photo corners and the scanner background, as seen in Image 1, are not added. Text and single plain straight lines are checked separately: do not list them. answer yes if there is at least one, no if there is none.",
+    "how": "Shows the vision model the source scan and the restored file and asks it to list any frame, ornament, brand mark or drop shadow the restored file adds; any item fails."
    },
-   "how": "Finds the supplied photo in the deliverable, maps the placement back onto it and compares tiles, colour, tone or fine detail."
+   "how": "Shows the vision model the source scan and the restored file and asks it to list any frame, ornament, brand mark or drop shadow the restored file adds; any item fails."
   },
   {
    "check_id": "PHOTO-06/restoration-hollis-scan-06/H013",
@@ -7839,11 +8264,22 @@
    "critical": false,
    "check": "No frame, ornament, brand mark or drop shadow is added to “Archival restoration master - hollis_scan_06” (restoration-hollis-scan-06.png).",
    "assertion": {
-    "op": "v2_vs_source",
-    "test": "tiles",
-    "photo": "hollis_scan_06.jpg"
+    "op": "vlm_items_r5vb",
+    "images": [
+     {
+      "src": "asset:hollis_scan_06.jpg",
+      "label": "Image 1: the original scan."
+     },
+     {
+      "src": "deliverable",
+      "label": "Image 2: the restored file."
+     }
+    ],
+    "none_found": "pass",
+    "question": "Image 1 is the original scan of an old photograph. Image 2 is the restored file made from it. List every frame or border, ornament, logo or brand mark, and drop shadow that Image 2 has but Image 1 does not. The print's own edges, its album page or mount, photo corners and the scanner background, as seen in Image 1, are not added. Text and single plain straight lines are checked separately: do not list them. answer yes if there is at least one, no if there is none.",
+    "how": "Shows the vision model the source scan and the restored file and asks it to list any frame, ornament, brand mark or drop shadow the restored file adds; any item fails."
    },
-   "how": "Finds the supplied photo in the deliverable, maps the placement back onto it and compares tiles, colour, tone or fine detail."
+   "how": "Shows the vision model the source scan and the restored file and asks it to list any frame, ornament, brand mark or drop shadow the restored file adds; any item fails."
   },
   {
    "check_id": "PHOTO-06/restoration-hollis-scan-07/H014",
@@ -7853,11 +8289,22 @@
    "critical": false,
    "check": "No frame, ornament, brand mark or drop shadow is added to “Archival restoration master - hollis_scan_07” (restoration-hollis-scan-07.png).",
    "assertion": {
-    "op": "v2_vs_source",
-    "test": "tiles",
-    "photo": "hollis_scan_07.jpg"
+    "op": "vlm_items_r5vb",
+    "images": [
+     {
+      "src": "asset:hollis_scan_07.jpg",
+      "label": "Image 1: the original scan."
+     },
+     {
+      "src": "deliverable",
+      "label": "Image 2: the restored file."
+     }
+    ],
+    "none_found": "pass",
+    "question": "Image 1 is the original scan of an old photograph. Image 2 is the restored file made from it. List every frame or border, ornament, logo or brand mark, and drop shadow that Image 2 has but Image 1 does not. The print's own edges, its album page or mount, photo corners and the scanner background, as seen in Image 1, are not added. Text and single plain straight lines are checked separately: do not list them. answer yes if there is at least one, no if there is none.",
+    "how": "Shows the vision model the source scan and the restored file and asks it to list any frame, ornament, brand mark or drop shadow the restored file adds; any item fails."
    },
-   "how": "Finds the supplied photo in the deliverable, maps the placement back onto it and compares tiles, colour, tone or fine detail."
+   "how": "Shows the vision model the source scan and the restored file and asks it to list any frame, ornament, brand mark or drop shadow the restored file adds; any item fails."
   },
   {
    "check_id": "PHOTO-06/restoration-hollis-scan-08/H011",
@@ -7867,11 +8314,22 @@
    "critical": false,
    "check": "No frame, ornament, brand mark or drop shadow is added to “Archival restoration master - hollis_scan_08” (restoration-hollis-scan-08.png).",
    "assertion": {
-    "op": "v2_vs_source",
-    "test": "tiles",
-    "photo": "hollis_scan_08.jpg"
+    "op": "vlm_items_r5vb",
+    "images": [
+     {
+      "src": "asset:hollis_scan_08.jpg",
+      "label": "Image 1: the original scan."
+     },
+     {
+      "src": "deliverable",
+      "label": "Image 2: the restored file."
+     }
+    ],
+    "none_found": "pass",
+    "question": "Image 1 is the original scan of an old photograph. Image 2 is the restored file made from it. List every frame or border, ornament, logo or brand mark, and drop shadow that Image 2 has but Image 1 does not. The print's own edges, its album page or mount, photo corners and the scanner background, as seen in Image 1, are not added. Text and single plain straight lines are checked separately: do not list them. answer yes if there is at least one, no if there is none.",
+    "how": "Shows the vision model the source scan and the restored file and asks it to list any frame, ornament, brand mark or drop shadow the restored file adds; any item fails."
    },
-   "how": "Finds the supplied photo in the deliverable, maps the placement back onto it and compares tiles, colour, tone or fine detail."
+   "how": "Shows the vision model the source scan and the restored file and asks it to list any frame, ornament, brand mark or drop shadow the restored file adds; any item fails."
   },
   {
    "check_id": "PHOTO-06/restoration-hollis-scan-09/H011",
@@ -7881,11 +8339,247 @@
    "critical": false,
    "check": "No frame, ornament, brand mark or drop shadow is added to “Archival restoration master - hollis_scan_09” (restoration-hollis-scan-09.png).",
    "assertion": {
-    "op": "v2_vs_source",
-    "test": "tiles",
-    "photo": "hollis_scan_09.jpg"
+    "op": "vlm_items_r5vb",
+    "images": [
+     {
+      "src": "asset:hollis_scan_09.jpg",
+      "label": "Image 1: the original scan."
+     },
+     {
+      "src": "deliverable",
+      "label": "Image 2: the restored file."
+     }
+    ],
+    "none_found": "pass",
+    "question": "Image 1 is the original scan of an old photograph. Image 2 is the restored file made from it. List every frame or border, ornament, logo or brand mark, and drop shadow that Image 2 has but Image 1 does not. The print's own edges, its album page or mount, photo corners and the scanner background, as seen in Image 1, are not added. Text and single plain straight lines are checked separately: do not list them. answer yes if there is at least one, no if there is none.",
+    "how": "Shows the vision model the source scan and the restored file and asks it to list any frame, ornament, brand mark or drop shadow the restored file adds; any item fails."
    },
-   "how": "Finds the supplied photo in the deliverable, maps the placement back onto it and compares tiles, colour, tone or fine detail."
+   "how": "Shows the vision model the source scan and the restored file and asks it to list any frame, ornament, brand mark or drop shadow the restored file adds; any item fails."
+  },
+  {
+   "check_id": "PHOTO-06/share-hollis-scan-01/H015",
+   "output_id": "share-hollis-scan-01",
+   "rule_id": "R070",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "No ornament, decorative frame, script lettering, drop shadow, logo or monogram is added to “Family archive share image - hollis_scan_01” (share-hollis-scan-01.jpg).",
+   "assertion": {
+    "op": "vlm_items_r5vb",
+    "images": [
+     {
+      "src": "asset:hollis_scan_01.jpg",
+      "label": "Image 1: the original scan."
+     },
+     {
+      "src": "deliverable",
+      "label": "Image 2: the share card."
+     }
+    ],
+    "none_found": "pass",
+    "question": "Image 1 is the original scan of an old photograph. Image 2 is the share card made from it. Image 2 shows the photograph on a plain margin with plain caption text. List every ornament, decorative frame or border, script (handwriting-style) lettering, drop shadow, logo or monogram on Image 2 that is not part of the photograph as seen in Image 1. Plain printed caption text, plain thin straight lines and the plain margin do not count. answer yes if there is at least one, no if there is none.",
+    "how": "Shows the vision model the source scan and the share image and asks it to list any ornament, decorative frame, script lettering, drop shadow, logo or monogram added; any item fails."
+   },
+   "how": "Shows the vision model the source scan and the share image and asks it to list any ornament, decorative frame, script lettering, drop shadow, logo or monogram added; any item fails."
+  },
+  {
+   "check_id": "PHOTO-06/share-hollis-scan-02/H038",
+   "output_id": "share-hollis-scan-02",
+   "rule_id": "R070",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "No ornament, decorative frame, script lettering, drop shadow, logo or monogram is added to “Family archive share image - hollis_scan_02” (share-hollis-scan-02.jpg).",
+   "assertion": {
+    "op": "vlm_items_r5vb",
+    "images": [
+     {
+      "src": "asset:hollis_scan_02.jpg",
+      "label": "Image 1: the original scan."
+     },
+     {
+      "src": "deliverable",
+      "label": "Image 2: the share card."
+     }
+    ],
+    "none_found": "pass",
+    "question": "Image 1 is the original scan of an old photograph. Image 2 is the share card made from it. Image 2 shows the photograph on a plain margin with plain caption text. List every ornament, decorative frame or border, script (handwriting-style) lettering, drop shadow, logo or monogram on Image 2 that is not part of the photograph as seen in Image 1. Plain printed caption text, plain thin straight lines and the plain margin do not count. answer yes if there is at least one, no if there is none.",
+    "how": "Shows the vision model the source scan and the share image and asks it to list any ornament, decorative frame, script lettering, drop shadow, logo or monogram added; any item fails."
+   },
+   "how": "Shows the vision model the source scan and the share image and asks it to list any ornament, decorative frame, script lettering, drop shadow, logo or monogram added; any item fails."
+  },
+  {
+   "check_id": "PHOTO-06/share-hollis-scan-03/H012",
+   "output_id": "share-hollis-scan-03",
+   "rule_id": "R070",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "No ornament, decorative frame, script lettering, drop shadow, logo or monogram is added to “Family archive share image - hollis_scan_03” (share-hollis-scan-03.jpg).",
+   "assertion": {
+    "op": "vlm_items_r5vb",
+    "images": [
+     {
+      "src": "asset:hollis_scan_03.jpg",
+      "label": "Image 1: the original scan."
+     },
+     {
+      "src": "deliverable",
+      "label": "Image 2: the share card."
+     }
+    ],
+    "none_found": "pass",
+    "question": "Image 1 is the original scan of an old photograph. Image 2 is the share card made from it. Image 2 shows the photograph on a plain margin with plain caption text. List every ornament, decorative frame or border, script (handwriting-style) lettering, drop shadow, logo or monogram on Image 2 that is not part of the photograph as seen in Image 1. Plain printed caption text, plain thin straight lines and the plain margin do not count. answer yes if there is at least one, no if there is none.",
+    "how": "Shows the vision model the source scan and the share image and asks it to list any ornament, decorative frame, script lettering, drop shadow, logo or monogram added; any item fails."
+   },
+   "how": "Shows the vision model the source scan and the share image and asks it to list any ornament, decorative frame, script lettering, drop shadow, logo or monogram added; any item fails."
+  },
+  {
+   "check_id": "PHOTO-06/share-hollis-scan-04/H033",
+   "output_id": "share-hollis-scan-04",
+   "rule_id": "R070",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "No ornament, decorative frame, script lettering, drop shadow, logo or monogram is added to “Family archive share image - hollis_scan_04” (share-hollis-scan-04.jpg).",
+   "assertion": {
+    "op": "vlm_items_r5vb",
+    "images": [
+     {
+      "src": "asset:hollis_scan_04.jpg",
+      "label": "Image 1: the original scan."
+     },
+     {
+      "src": "deliverable",
+      "label": "Image 2: the share card."
+     }
+    ],
+    "none_found": "pass",
+    "question": "Image 1 is the original scan of an old photograph. Image 2 is the share card made from it. Image 2 shows the photograph on a plain margin with plain caption text. List every ornament, decorative frame or border, script (handwriting-style) lettering, drop shadow, logo or monogram on Image 2 that is not part of the photograph as seen in Image 1. Plain printed caption text, plain thin straight lines and the plain margin do not count. answer yes if there is at least one, no if there is none.",
+    "how": "Shows the vision model the source scan and the share image and asks it to list any ornament, decorative frame, script lettering, drop shadow, logo or monogram added; any item fails."
+   },
+   "how": "Shows the vision model the source scan and the share image and asks it to list any ornament, decorative frame, script lettering, drop shadow, logo or monogram added; any item fails."
+  },
+  {
+   "check_id": "PHOTO-06/share-hollis-scan-05/H012",
+   "output_id": "share-hollis-scan-05",
+   "rule_id": "R070",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "No ornament, decorative frame, script lettering, drop shadow, logo or monogram is added to “Family archive share image - hollis_scan_05” (share-hollis-scan-05.jpg).",
+   "assertion": {
+    "op": "vlm_items_r5vb",
+    "images": [
+     {
+      "src": "asset:hollis_scan_05.jpg",
+      "label": "Image 1: the original scan."
+     },
+     {
+      "src": "deliverable",
+      "label": "Image 2: the share card."
+     }
+    ],
+    "none_found": "pass",
+    "question": "Image 1 is the original scan of an old photograph. Image 2 is the share card made from it. Image 2 shows the photograph on a plain margin with plain caption text. List every ornament, decorative frame or border, script (handwriting-style) lettering, drop shadow, logo or monogram on Image 2 that is not part of the photograph as seen in Image 1. Plain printed caption text, plain thin straight lines and the plain margin do not count. answer yes if there is at least one, no if there is none.",
+    "how": "Shows the vision model the source scan and the share image and asks it to list any ornament, decorative frame, script lettering, drop shadow, logo or monogram added; any item fails."
+   },
+   "how": "Shows the vision model the source scan and the share image and asks it to list any ornament, decorative frame, script lettering, drop shadow, logo or monogram added; any item fails."
+  },
+  {
+   "check_id": "PHOTO-06/share-hollis-scan-06/H037",
+   "output_id": "share-hollis-scan-06",
+   "rule_id": "R070",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "No ornament, decorative frame, script lettering, drop shadow, logo or monogram is added to “Family archive share image - hollis_scan_06” (share-hollis-scan-06.jpg).",
+   "assertion": {
+    "op": "vlm_items_r5vb",
+    "images": [
+     {
+      "src": "asset:hollis_scan_06.jpg",
+      "label": "Image 1: the original scan."
+     },
+     {
+      "src": "deliverable",
+      "label": "Image 2: the share card."
+     }
+    ],
+    "none_found": "pass",
+    "question": "Image 1 is the original scan of an old photograph. Image 2 is the share card made from it. Image 2 shows the photograph on a plain margin with plain caption text. List every ornament, decorative frame or border, script (handwriting-style) lettering, drop shadow, logo or monogram on Image 2 that is not part of the photograph as seen in Image 1. Plain printed caption text, plain thin straight lines and the plain margin do not count. answer yes if there is at least one, no if there is none.",
+    "how": "Shows the vision model the source scan and the share image and asks it to list any ornament, decorative frame, script lettering, drop shadow, logo or monogram added; any item fails."
+   },
+   "how": "Shows the vision model the source scan and the share image and asks it to list any ornament, decorative frame, script lettering, drop shadow, logo or monogram added; any item fails."
+  },
+  {
+   "check_id": "PHOTO-06/share-hollis-scan-07/H015",
+   "output_id": "share-hollis-scan-07",
+   "rule_id": "R070",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "No ornament, decorative frame, script lettering, drop shadow, logo or monogram is added to “Family archive share image - hollis_scan_07” (share-hollis-scan-07.jpg).",
+   "assertion": {
+    "op": "vlm_items_r5vb",
+    "images": [
+     {
+      "src": "asset:hollis_scan_07.jpg",
+      "label": "Image 1: the original scan."
+     },
+     {
+      "src": "deliverable",
+      "label": "Image 2: the share card."
+     }
+    ],
+    "none_found": "pass",
+    "question": "Image 1 is the original scan of an old photograph. Image 2 is the share card made from it. Image 2 shows the photograph on a plain margin with plain caption text. List every ornament, decorative frame or border, script (handwriting-style) lettering, drop shadow, logo or monogram on Image 2 that is not part of the photograph as seen in Image 1. Plain printed caption text, plain thin straight lines and the plain margin do not count. answer yes if there is at least one, no if there is none.",
+    "how": "Shows the vision model the source scan and the share image and asks it to list any ornament, decorative frame, script lettering, drop shadow, logo or monogram added; any item fails."
+   },
+   "how": "Shows the vision model the source scan and the share image and asks it to list any ornament, decorative frame, script lettering, drop shadow, logo or monogram added; any item fails."
+  },
+  {
+   "check_id": "PHOTO-06/share-hollis-scan-08/H032",
+   "output_id": "share-hollis-scan-08",
+   "rule_id": "R070",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "No ornament, decorative frame, script lettering, drop shadow, logo or monogram is added to “Family archive share image - hollis_scan_08” (share-hollis-scan-08.jpg).",
+   "assertion": {
+    "op": "vlm_items_r5vb",
+    "images": [
+     {
+      "src": "asset:hollis_scan_08.jpg",
+      "label": "Image 1: the original scan."
+     },
+     {
+      "src": "deliverable",
+      "label": "Image 2: the share card."
+     }
+    ],
+    "none_found": "pass",
+    "question": "Image 1 is the original scan of an old photograph. Image 2 is the share card made from it. Image 2 shows the photograph on a plain margin with plain caption text. List every ornament, decorative frame or border, script (handwriting-style) lettering, drop shadow, logo or monogram on Image 2 that is not part of the photograph as seen in Image 1. Plain printed caption text, plain thin straight lines and the plain margin do not count. answer yes if there is at least one, no if there is none.",
+    "how": "Shows the vision model the source scan and the share image and asks it to list any ornament, decorative frame, script lettering, drop shadow, logo or monogram added; any item fails."
+   },
+   "how": "Shows the vision model the source scan and the share image and asks it to list any ornament, decorative frame, script lettering, drop shadow, logo or monogram added; any item fails."
+  },
+  {
+   "check_id": "PHOTO-06/share-hollis-scan-09/H012",
+   "output_id": "share-hollis-scan-09",
+   "rule_id": "R070",
+   "k_id": "K2_Q3",
+   "critical": false,
+   "check": "No ornament, decorative frame, script lettering, drop shadow, logo or monogram is added to “Family archive share image - hollis_scan_09” (share-hollis-scan-09.jpg).",
+   "assertion": {
+    "op": "vlm_items_r5vb",
+    "images": [
+     {
+      "src": "asset:hollis_scan_09.jpg",
+      "label": "Image 1: the original scan."
+     },
+     {
+      "src": "deliverable",
+      "label": "Image 2: the share card."
+     }
+    ],
+    "none_found": "pass",
+    "question": "Image 1 is the original scan of an old photograph. Image 2 is the share card made from it. Image 2 shows the photograph on a plain margin with plain caption text. List every ornament, decorative frame or border, script (handwriting-style) lettering, drop shadow, logo or monogram on Image 2 that is not part of the photograph as seen in Image 1. Plain printed caption text, plain thin straight lines and the plain margin do not count. answer yes if there is at least one, no if there is none.",
+    "how": "Shows the vision model the source scan and the share image and asks it to list any ornament, decorative frame, script lettering, drop shadow, logo or monogram added; any item fails."
+   },
+   "how": "Shows the vision model the source scan and the share image and asks it to list any ornament, decorative frame, script lettering, drop shadow, logo or monogram added; any item fails."
   },
   {
    "check_id": "PHOTO-06/restoration-hollis-scan-01/H014",
@@ -8945,11 +9639,22 @@
    "critical": false,
    "check": "No part of any person visible in hollis_scan_01.jpg is cropped away or hidden on “Archival restoration master - hollis_scan_01” (restoration-hollis-scan-01.png).",
    "assertion": {
-    "op": "v2_vs_source",
-    "test": "whole",
-    "photo": "hollis_scan_01.jpg"
+    "op": "vlm_yesno_r5v",
+    "images": [
+     {
+      "src": "asset:hollis_scan_01.jpg",
+      "label": "Image 1: the original scan."
+     },
+     {
+      "src": "deliverable",
+      "label": "Image 2: the restored file."
+     }
+    ],
+    "pass_on": "no",
+    "question": "Image 1 is the original scan of an old photograph. Image 2 is the restored file made from it. Compare the people in the two images. Is any part of any person visible in Image 1 (head, hair, face, hands, arms, legs, feet or clothing) missing from Image 2, cut off by its edge or covered by something? answer yes if any part is missing, cut off or covered, no if every person is shown as fully as in Image 1.",
+    "how": "Shows the vision model the source scan and the restored file and asks whether any part of a person is missing, cut off or covered; it passes when the model finds none."
    },
-   "how": "Finds the supplied photo in the deliverable, maps the placement back onto it and compares tiles, colour, tone or fine detail."
+   "how": "Shows the vision model the source scan and the restored file and asks whether any part of a person is missing, cut off or covered; it passes when the model finds none."
   },
   {
    "check_id": "PHOTO-06/restoration-hollis-scan-02/H005",
@@ -8959,11 +9664,22 @@
    "critical": false,
    "check": "No part of any person visible in hollis_scan_02.jpg is cropped away or hidden on “Archival restoration master - hollis_scan_02” (restoration-hollis-scan-02.png).",
    "assertion": {
-    "op": "v2_vs_source",
-    "test": "whole",
-    "photo": "hollis_scan_02.jpg"
+    "op": "vlm_yesno_r5v",
+    "images": [
+     {
+      "src": "asset:hollis_scan_02.jpg",
+      "label": "Image 1: the original scan."
+     },
+     {
+      "src": "deliverable",
+      "label": "Image 2: the restored file."
+     }
+    ],
+    "pass_on": "no",
+    "question": "Image 1 is the original scan of an old photograph. Image 2 is the restored file made from it. Compare the people in the two images. Is any part of any person visible in Image 1 (head, hair, face, hands, arms, legs, feet or clothing) missing from Image 2, cut off by its edge or covered by something? answer yes if any part is missing, cut off or covered, no if every person is shown as fully as in Image 1.",
+    "how": "Shows the vision model the source scan and the restored file and asks whether any part of a person is missing, cut off or covered; it passes when the model finds none."
    },
-   "how": "Finds the supplied photo in the deliverable, maps the placement back onto it and compares tiles, colour, tone or fine detail."
+   "how": "Shows the vision model the source scan and the restored file and asks whether any part of a person is missing, cut off or covered; it passes when the model finds none."
   },
   {
    "check_id": "PHOTO-06/restoration-hollis-scan-03/H009",
@@ -8973,11 +9689,22 @@
    "critical": false,
    "check": "No part of any person visible in hollis_scan_03.jpg is cropped away or hidden on “Archival restoration master - hollis_scan_03” (restoration-hollis-scan-03.png).",
    "assertion": {
-    "op": "v2_vs_source",
-    "test": "whole",
-    "photo": "hollis_scan_03.jpg"
+    "op": "vlm_yesno_r5v",
+    "images": [
+     {
+      "src": "asset:hollis_scan_03.jpg",
+      "label": "Image 1: the original scan."
+     },
+     {
+      "src": "deliverable",
+      "label": "Image 2: the restored file."
+     }
+    ],
+    "pass_on": "no",
+    "question": "Image 1 is the original scan of an old photograph. Image 2 is the restored file made from it. Compare the people in the two images. Is any part of any person visible in Image 1 (head, hair, face, hands, arms, legs, feet or clothing) missing from Image 2, cut off by its edge or covered by something? answer yes if any part is missing, cut off or covered, no if every person is shown as fully as in Image 1.",
+    "how": "Shows the vision model the source scan and the restored file and asks whether any part of a person is missing, cut off or covered; it passes when the model finds none."
    },
-   "how": "Finds the supplied photo in the deliverable, maps the placement back onto it and compares tiles, colour, tone or fine detail."
+   "how": "Shows the vision model the source scan and the restored file and asks whether any part of a person is missing, cut off or covered; it passes when the model finds none."
   },
   {
    "check_id": "PHOTO-06/restoration-hollis-scan-04/H010",
@@ -8987,11 +9714,22 @@
    "critical": false,
    "check": "No part of any person visible in hollis_scan_04.jpg is cropped away or hidden on “Archival restoration master - hollis_scan_04” (restoration-hollis-scan-04.png).",
    "assertion": {
-    "op": "v2_vs_source",
-    "test": "whole",
-    "photo": "hollis_scan_04.jpg"
+    "op": "vlm_yesno_r5v",
+    "images": [
+     {
+      "src": "asset:hollis_scan_04.jpg",
+      "label": "Image 1: the original scan."
+     },
+     {
+      "src": "deliverable",
+      "label": "Image 2: the restored file."
+     }
+    ],
+    "pass_on": "no",
+    "question": "Image 1 is the original scan of an old photograph. Image 2 is the restored file made from it. Compare the people in the two images. Is any part of any person visible in Image 1 (head, hair, face, hands, arms, legs, feet or clothing) missing from Image 2, cut off by its edge or covered by something? answer yes if any part is missing, cut off or covered, no if every person is shown as fully as in Image 1.",
+    "how": "Shows the vision model the source scan and the restored file and asks whether any part of a person is missing, cut off or covered; it passes when the model finds none."
    },
-   "how": "Finds the supplied photo in the deliverable, maps the placement back onto it and compares tiles, colour, tone or fine detail."
+   "how": "Shows the vision model the source scan and the restored file and asks whether any part of a person is missing, cut off or covered; it passes when the model finds none."
   },
   {
    "check_id": "PHOTO-06/restoration-hollis-scan-05/H009",
@@ -9001,11 +9739,22 @@
    "critical": false,
    "check": "No part of any person visible in hollis_scan_05.jpg is cropped away or hidden on “Archival restoration master - hollis_scan_05” (restoration-hollis-scan-05.png).",
    "assertion": {
-    "op": "v2_vs_source",
-    "test": "whole",
-    "photo": "hollis_scan_05.jpg"
+    "op": "vlm_yesno_r5v",
+    "images": [
+     {
+      "src": "asset:hollis_scan_05.jpg",
+      "label": "Image 1: the original scan."
+     },
+     {
+      "src": "deliverable",
+      "label": "Image 2: the restored file."
+     }
+    ],
+    "pass_on": "no",
+    "question": "Image 1 is the original scan of an old photograph. Image 2 is the restored file made from it. Compare the people in the two images. Is any part of any person visible in Image 1 (head, hair, face, hands, arms, legs, feet or clothing) missing from Image 2, cut off by its edge or covered by something? answer yes if any part is missing, cut off or covered, no if every person is shown as fully as in Image 1.",
+    "how": "Shows the vision model the source scan and the restored file and asks whether any part of a person is missing, cut off or covered; it passes when the model finds none."
    },
-   "how": "Finds the supplied photo in the deliverable, maps the placement back onto it and compares tiles, colour, tone or fine detail."
+   "how": "Shows the vision model the source scan and the restored file and asks whether any part of a person is missing, cut off or covered; it passes when the model finds none."
   },
   {
    "check_id": "PHOTO-06/restoration-hollis-scan-06/H011",
@@ -9015,11 +9764,22 @@
    "critical": false,
    "check": "No part of any person visible in hollis_scan_06.jpg is cropped away or hidden on “Archival restoration master - hollis_scan_06” (restoration-hollis-scan-06.png).",
    "assertion": {
-    "op": "v2_vs_source",
-    "test": "whole",
-    "photo": "hollis_scan_06.jpg"
+    "op": "vlm_yesno_r5v",
+    "images": [
+     {
+      "src": "asset:hollis_scan_06.jpg",
+      "label": "Image 1: the original scan."
+     },
+     {
+      "src": "deliverable",
+      "label": "Image 2: the restored file."
+     }
+    ],
+    "pass_on": "no",
+    "question": "Image 1 is the original scan of an old photograph. Image 2 is the restored file made from it. Compare the people in the two images. Is any part of any person visible in Image 1 (head, hair, face, hands, arms, legs, feet or clothing) missing from Image 2, cut off by its edge or covered by something? answer yes if any part is missing, cut off or covered, no if every person is shown as fully as in Image 1.",
+    "how": "Shows the vision model the source scan and the restored file and asks whether any part of a person is missing, cut off or covered; it passes when the model finds none."
    },
-   "how": "Finds the supplied photo in the deliverable, maps the placement back onto it and compares tiles, colour, tone or fine detail."
+   "how": "Shows the vision model the source scan and the restored file and asks whether any part of a person is missing, cut off or covered; it passes when the model finds none."
   },
   {
    "check_id": "PHOTO-06/restoration-hollis-scan-07/H012",
@@ -9029,11 +9789,22 @@
    "critical": false,
    "check": "No part of any person visible in hollis_scan_07.jpg is cropped away or hidden on “Archival restoration master - hollis_scan_07” (restoration-hollis-scan-07.png).",
    "assertion": {
-    "op": "v2_vs_source",
-    "test": "whole",
-    "photo": "hollis_scan_07.jpg"
+    "op": "vlm_yesno_r5v",
+    "images": [
+     {
+      "src": "asset:hollis_scan_07.jpg",
+      "label": "Image 1: the original scan."
+     },
+     {
+      "src": "deliverable",
+      "label": "Image 2: the restored file."
+     }
+    ],
+    "pass_on": "no",
+    "question": "Image 1 is the original scan of an old photograph. Image 2 is the restored file made from it. Compare the people in the two images. Is any part of any person visible in Image 1 (head, hair, face, hands, arms, legs, feet or clothing) missing from Image 2, cut off by its edge or covered by something? answer yes if any part is missing, cut off or covered, no if every person is shown as fully as in Image 1.",
+    "how": "Shows the vision model the source scan and the restored file and asks whether any part of a person is missing, cut off or covered; it passes when the model finds none."
    },
-   "how": "Finds the supplied photo in the deliverable, maps the placement back onto it and compares tiles, colour, tone or fine detail."
+   "how": "Shows the vision model the source scan and the restored file and asks whether any part of a person is missing, cut off or covered; it passes when the model finds none."
   },
   {
    "check_id": "PHOTO-06/restoration-hollis-scan-08/H009",
@@ -9043,11 +9814,22 @@
    "critical": false,
    "check": "No part of any person visible in hollis_scan_08.jpg is cropped away or hidden on “Archival restoration master - hollis_scan_08” (restoration-hollis-scan-08.png).",
    "assertion": {
-    "op": "v2_vs_source",
-    "test": "whole",
-    "photo": "hollis_scan_08.jpg"
+    "op": "vlm_yesno_r5v",
+    "images": [
+     {
+      "src": "asset:hollis_scan_08.jpg",
+      "label": "Image 1: the original scan."
+     },
+     {
+      "src": "deliverable",
+      "label": "Image 2: the restored file."
+     }
+    ],
+    "pass_on": "no",
+    "question": "Image 1 is the original scan of an old photograph. Image 2 is the restored file made from it. Compare the people in the two images. Is any part of any person visible in Image 1 (head, hair, face, hands, arms, legs, feet or clothing) missing from Image 2, cut off by its edge or covered by something? answer yes if any part is missing, cut off or covered, no if every person is shown as fully as in Image 1.",
+    "how": "Shows the vision model the source scan and the restored file and asks whether any part of a person is missing, cut off or covered; it passes when the model finds none."
    },
-   "how": "Finds the supplied photo in the deliverable, maps the placement back onto it and compares tiles, colour, tone or fine detail."
+   "how": "Shows the vision model the source scan and the restored file and asks whether any part of a person is missing, cut off or covered; it passes when the model finds none."
   },
   {
    "check_id": "PHOTO-06/restoration-hollis-scan-09/H009",
@@ -9057,11 +9839,22 @@
    "critical": false,
    "check": "No part of any person visible in hollis_scan_09.jpg is cropped away or hidden on “Archival restoration master - hollis_scan_09” (restoration-hollis-scan-09.png).",
    "assertion": {
-    "op": "v2_vs_source",
-    "test": "whole",
-    "photo": "hollis_scan_09.jpg"
+    "op": "vlm_yesno_r5v",
+    "images": [
+     {
+      "src": "asset:hollis_scan_09.jpg",
+      "label": "Image 1: the original scan."
+     },
+     {
+      "src": "deliverable",
+      "label": "Image 2: the restored file."
+     }
+    ],
+    "pass_on": "no",
+    "question": "Image 1 is the original scan of an old photograph. Image 2 is the restored file made from it. Compare the people in the two images. Is any part of any person visible in Image 1 (head, hair, face, hands, arms, legs, feet or clothing) missing from Image 2, cut off by its edge or covered by something? answer yes if any part is missing, cut off or covered, no if every person is shown as fully as in Image 1.",
+    "how": "Shows the vision model the source scan and the restored file and asks whether any part of a person is missing, cut off or covered; it passes when the model finds none."
    },
-   "how": "Finds the supplied photo in the deliverable, maps the placement back onto it and compares tiles, colour, tone or fine detail."
+   "how": "Shows the vision model the source scan and the restored file and asks whether any part of a person is missing, cut off or covered; it passes when the model finds none."
   },
   {
    "check_id": "PHOTO-06/share-hollis-scan-01/H010",

@@ -389,13 +389,20 @@
    "critical": false,
    "check": "Any timing result on “Watch product-page feature - LC-25-0101” (watch-feature-r002.png) reads exactly “+2 s/day”, as in lunara_register.csv, row 2.",
    "assertion": {
-    "op": "v2_text_present",
-    "expected": [
-     "+2 s/day"
+    "op": "vlm_text_rx_r5vb",
+    "none_found": "pass",
+    "values_rx": {
+     "rx": "([+\\-±]?\\s?\\d+(?:[.,]\\d+)?\\s?(?:s|sec|secs|seconds?)\\s?(?:/|per|a)\\s?(?:day|d)\\b)",
+     "allowed": [
+      "+2 s/day"
+     ]
+    },
+    "person_rx": [
+     "[+\\-±]\\s?\\d+(?:[.,]\\d+)?\\s?(?:s|sec|secs|seconds?)\\b"
     ],
-    "if_any": "[+-]\\d+\\s?s/day"
+    "how": "Copies every text on the file with the vision model; code checks any timing result reads +2 s/day."
    },
-   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+   "how": "Copies every text on the file with the vision model; code checks any timing result reads +2 s/day."
   },
   {
    "check_id": "PHOTO-24/watch-feature-r003/H008",
@@ -405,13 +412,20 @@
    "critical": false,
    "check": "Any timing result on “Watch product-page feature - LC-25-0102” (watch-feature-r003.png) reads exactly “-1 s/day”, as in lunara_register.csv, row 3.",
    "assertion": {
-    "op": "v2_text_present",
-    "expected": [
-     "-1 s/day"
+    "op": "vlm_text_rx_r5vb",
+    "none_found": "pass",
+    "values_rx": {
+     "rx": "([+\\-±]?\\s?\\d+(?:[.,]\\d+)?\\s?(?:s|sec|secs|seconds?)\\s?(?:/|per|a)\\s?(?:day|d)\\b)",
+     "allowed": [
+      "-1 s/day"
+     ]
+    },
+    "person_rx": [
+     "[+\\-±]\\s?\\d+(?:[.,]\\d+)?\\s?(?:s|sec|secs|seconds?)\\b"
     ],
-    "if_any": "[+-]\\d+\\s?s/day"
+    "how": "Copies every text on the file with the vision model; code checks any timing result reads -1 s/day."
    },
-   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+   "how": "Copies every text on the file with the vision model; code checks any timing result reads -1 s/day."
   },
   {
    "check_id": "PHOTO-24/watch-feature-r004/H009",
@@ -421,13 +435,20 @@
    "critical": false,
    "check": "Any timing result on “Watch product-page feature - LC-25-0103” (watch-feature-r004.png) reads exactly “+3 s/day”, as in lunara_register.csv, row 4.",
    "assertion": {
-    "op": "v2_text_present",
-    "expected": [
-     "+3 s/day"
+    "op": "vlm_text_rx_r5vb",
+    "none_found": "pass",
+    "values_rx": {
+     "rx": "([+\\-±]?\\s?\\d+(?:[.,]\\d+)?\\s?(?:s|sec|secs|seconds?)\\s?(?:/|per|a)\\s?(?:day|d)\\b)",
+     "allowed": [
+      "+3 s/day"
+     ]
+    },
+    "person_rx": [
+     "[+\\-±]\\s?\\d+(?:[.,]\\d+)?\\s?(?:s|sec|secs|seconds?)\\b"
     ],
-    "if_any": "[+-]\\d+\\s?s/day"
+    "how": "Copies every text on the file with the vision model; code checks any timing result reads +3 s/day."
    },
-   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+   "how": "Copies every text on the file with the vision model; code checks any timing result reads +3 s/day."
   },
   {
    "check_id": "PHOTO-24/watch-feature-r005/H008",
@@ -437,13 +458,20 @@
    "critical": false,
    "check": "Any timing result on “Watch product-page feature - LC-25-0104” (watch-feature-r005.png) reads exactly “0 s/day”, as in lunara_register.csv, row 5.",
    "assertion": {
-    "op": "v2_text_present",
-    "expected": [
-     "0 s/day"
+    "op": "vlm_text_rx_r5vb",
+    "none_found": "pass",
+    "values_rx": {
+     "rx": "([+\\-±]?\\s?\\d+(?:[.,]\\d+)?\\s?(?:s|sec|secs|seconds?)\\s?(?:/|per|a)\\s?(?:day|d)\\b)",
+     "allowed": [
+      "0 s/day"
+     ]
+    },
+    "person_rx": [
+     "[+\\-±]\\s?\\d+(?:[.,]\\d+)?\\s?(?:s|sec|secs|seconds?)\\b"
     ],
-    "if_any": "[+-]\\d+\\s?s/day"
+    "how": "Copies every text on the file with the vision model; code checks any timing result reads 0 s/day."
    },
-   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+   "how": "Copies every text on the file with the vision model; code checks any timing result reads 0 s/day."
   },
   {
    "check_id": "PHOTO-24/watch-feature-r006/H008",
@@ -453,13 +481,20 @@
    "critical": false,
    "check": "Any timing result on “Watch product-page feature - LC-25-0105” (watch-feature-r006.png) reads exactly “+1 s/day”, as in lunara_register.csv, row 6.",
    "assertion": {
-    "op": "v2_text_present",
-    "expected": [
-     "+1 s/day"
+    "op": "vlm_text_rx_r5vb",
+    "none_found": "pass",
+    "values_rx": {
+     "rx": "([+\\-±]?\\s?\\d+(?:[.,]\\d+)?\\s?(?:s|sec|secs|seconds?)\\s?(?:/|per|a)\\s?(?:day|d)\\b)",
+     "allowed": [
+      "+1 s/day"
+     ]
+    },
+    "person_rx": [
+     "[+\\-±]\\s?\\d+(?:[.,]\\d+)?\\s?(?:s|sec|secs|seconds?)\\b"
     ],
-    "if_any": "[+-]\\d+\\s?s/day"
+    "how": "Copies every text on the file with the vision model; code checks any timing result reads +1 s/day."
    },
-   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+   "how": "Copies every text on the file with the vision model; code checks any timing result reads +1 s/day."
   },
   {
    "check_id": "PHOTO-24/watch-feature-r002/H014",
@@ -631,17 +666,18 @@
    "critical": false,
    "check": "Any movement description on “Watch product-page feature - LC-25-0104” (watch-feature-r005.png) matches lunara_notes.txt for LM-03: hand-wound, small seconds.",
    "assertion": {
-    "op": "v2_description",
-    "trigger": "hand-?\\s?wound|automatic|self-?winding|manual(?:ly)?[- ]wound|power reserve|\\breserve\\b|small[- ]seconds",
-    "required": [
-     "hand-?\\s?wound"
+    "op": "vlm_text_rx_r5vb",
+    "forbid_rx": [
+     "\\bautomatic\\b|self[- ]?winding|auto[- ]?wind",
+     "\\b\\d{2,3}\\s?-?\\s?(?:h|hrs?|hours?)\\b(?:\\s|-)*(?:of\\s)?(?:power\\s)?reserve|reserve\\W{0,3}(?:of\\s)?\\d{2,3}"
     ],
-    "forbidden": [
-     "\\bautomatic\\b",
-     "self-?winding"
-    ]
+    "person_rx": [
+     "\\b\\d{2,3}\\s?-?\\s?(?:h|hrs?|hours?)\\b"
+    ],
+    "none_found": "pass",
+    "how": "Copies every text on the file with the vision model; code checks no movement wording contradicts lunara_notes.txt for LM-03 (winding, reserve hours, small seconds)."
    },
-   "how": "Reads the text; where a description of this kind appears, checks it carries the right terms and no contradicting ones."
+   "how": "Copies every text on the file with the vision model; code checks no movement wording contradicts lunara_notes.txt for LM-03 (winding, reserve hours, small seconds)."
   },
   {
    "check_id": "PHOTO-24/dealer-launch/H001",
@@ -726,18 +762,19 @@
    "critical": false,
    "check": "Any movement description on “Watch product-page feature - LC-25-0101” (watch-feature-r002.png) matches lunara_notes.txt for LM-01: hand-wound, 42h reserve.",
    "assertion": {
-    "op": "v2_description",
-    "trigger": "hand-?\\s?wound|automatic|self-?winding|manual(?:ly)?[- ]wound|power reserve|\\breserve\\b|small[- ]seconds",
-    "required": [
-     "hand-?\\s?wound"
+    "op": "vlm_text_rx_r5vb",
+    "forbid_rx": [
+     "\\bautomatic\\b|self[- ]?winding|auto[- ]?wind",
+     "small[- ]?seconds",
+     "\\b(?!42(?!\\d))\\d{2,3}\\s?-?\\s?(?:h|hrs?|hours?)\\b(?:\\s|-)*(?:of\\s)?(?:power\\s)?reserve|reserve\\W{0,3}(?:of\\s)?(?!42(?!\\d))\\d{2,3}"
     ],
-    "forbidden": [
-     "\\bautomatic\\b",
-     "self-?winding",
-     "\\b(?!42)\\d{2}\\s?-?\\s?h(?:ours?|rs?)?\\b"
-    ]
+    "person_rx": [
+     "\\b(?!42(?!\\d))\\d{2,3}\\s?-?\\s?(?:h|hrs?|hours?)\\b"
+    ],
+    "none_found": "pass",
+    "how": "Copies every text on the file with the vision model; code checks no movement wording contradicts lunara_notes.txt for LM-01 (winding, reserve hours, small seconds)."
    },
-   "how": "Reads the text; where a description of this kind appears, checks it carries the right terms and no contradicting ones."
+   "how": "Copies every text on the file with the vision model; code checks no movement wording contradicts lunara_notes.txt for LM-01 (winding, reserve hours, small seconds)."
   },
   {
    "check_id": "PHOTO-24/watch-feature-r004/H011",
@@ -747,18 +784,19 @@
    "critical": false,
    "check": "Any movement description on “Watch product-page feature - LC-25-0103” (watch-feature-r004.png) matches lunara_notes.txt for LM-01: hand-wound, 42h reserve.",
    "assertion": {
-    "op": "v2_description",
-    "trigger": "hand-?\\s?wound|automatic|self-?winding|manual(?:ly)?[- ]wound|power reserve|\\breserve\\b|small[- ]seconds",
-    "required": [
-     "hand-?\\s?wound"
+    "op": "vlm_text_rx_r5vb",
+    "forbid_rx": [
+     "\\bautomatic\\b|self[- ]?winding|auto[- ]?wind",
+     "small[- ]?seconds",
+     "\\b(?!42(?!\\d))\\d{2,3}\\s?-?\\s?(?:h|hrs?|hours?)\\b(?:\\s|-)*(?:of\\s)?(?:power\\s)?reserve|reserve\\W{0,3}(?:of\\s)?(?!42(?!\\d))\\d{2,3}"
     ],
-    "forbidden": [
-     "\\bautomatic\\b",
-     "self-?winding",
-     "\\b(?!42)\\d{2}\\s?-?\\s?h(?:ours?|rs?)?\\b"
-    ]
+    "person_rx": [
+     "\\b(?!42(?!\\d))\\d{2,3}\\s?-?\\s?(?:h|hrs?|hours?)\\b"
+    ],
+    "none_found": "pass",
+    "how": "Copies every text on the file with the vision model; code checks no movement wording contradicts lunara_notes.txt for LM-01 (winding, reserve hours, small seconds)."
    },
-   "how": "Reads the text; where a description of this kind appears, checks it carries the right terms and no contradicting ones."
+   "how": "Copies every text on the file with the vision model; code checks no movement wording contradicts lunara_notes.txt for LM-01 (winding, reserve hours, small seconds)."
   },
   {
    "check_id": "PHOTO-24/dealer-launch/H006",
@@ -1053,61 +1091,40 @@
    "critical": false,
    "check": "Any movement description on “Autumn watch key visual” (watch-keyvisual.png) matches lunara_notes.txt for the reference shown: Meridian, Ardent hand-wound, 42h reserve; Selene, Vesper automatic, 48h reserve; Halcyon hand-wound, small seconds.",
    "assertion": {
-    "op": "v2_description",
-    "trigger": "hand-?\\s?wound|automatic|self-?winding|manual(?:ly)?[- ]wound|power reserve|\\breserve\\b|small[- ]seconds",
-    "scope_map": {
-     "Meridian": {
-      "required": [
-       "hand-?\\s?wound"
-      ],
-      "forbidden": [
-       "\\bautomatic\\b",
-       "self-?winding",
-       "\\b(?!42)\\d{2}\\s?-?\\s?h(?:ours?|rs?)?\\b"
-      ]
-     },
-     "Selene": {
-      "required": [
-       "\\bautomatic\\b"
-      ],
-      "forbidden": [
-       "hand-?\\s?wound",
-       "manual(?:ly)?[- ]wound",
-       "\\b(?!48)\\d{2}\\s?-?\\s?h(?:ours?|rs?)?\\b"
-      ]
-     },
-     "Ardent": {
-      "required": [
-       "hand-?\\s?wound"
-      ],
-      "forbidden": [
-       "\\bautomatic\\b",
-       "self-?winding",
-       "\\b(?!42)\\d{2}\\s?-?\\s?h(?:ours?|rs?)?\\b"
-      ]
-     },
-     "Halcyon": {
-      "required": [
-       "hand-?\\s?wound"
-      ],
-      "forbidden": [
-       "\\bautomatic\\b",
-       "self-?winding"
-      ]
-     },
-     "Vesper": {
-      "required": [
-       "\\bautomatic\\b"
-      ],
-      "forbidden": [
-       "hand-?\\s?wound",
-       "manual(?:ly)?[- ]wound",
-       "\\b(?!48)\\d{2}\\s?-?\\s?h(?:ours?|rs?)?\\b"
-      ]
-     }
-    }
+    "op": "vlm_text_rx_r5vb",
+    "none_found": "pass",
+    "by_name": {
+     "Meridian": [
+      "\\bautomatic\\b|self[- ]?winding|auto[- ]?wind",
+      "small[- ]?seconds",
+      "\\b(?!42(?!\\d))\\d{2,3}\\s?-?\\s?(?:h|hrs?|hours?)\\b(?:\\s|-)*(?:of\\s)?(?:power\\s)?reserve|reserve\\W{0,3}(?:of\\s)?(?!42(?!\\d))\\d{2,3}"
+     ],
+     "Ardent": [
+      "\\bautomatic\\b|self[- ]?winding|auto[- ]?wind",
+      "small[- ]?seconds",
+      "\\b(?!42(?!\\d))\\d{2,3}\\s?-?\\s?(?:h|hrs?|hours?)\\b(?:\\s|-)*(?:of\\s)?(?:power\\s)?reserve|reserve\\W{0,3}(?:of\\s)?(?!42(?!\\d))\\d{2,3}"
+     ],
+     "Selene": [
+      "hand[- ]?wound|hand[- ]?winding|manual(?:ly)?[- ]?(?:wound|winding)",
+      "small[- ]?seconds",
+      "\\b(?!48(?!\\d))\\d{2,3}\\s?-?\\s?(?:h|hrs?|hours?)\\b(?:\\s|-)*(?:of\\s)?(?:power\\s)?reserve|reserve\\W{0,3}(?:of\\s)?(?!48(?!\\d))\\d{2,3}"
+     ],
+     "Vesper": [
+      "hand[- ]?wound|hand[- ]?winding|manual(?:ly)?[- ]?(?:wound|winding)",
+      "small[- ]?seconds",
+      "\\b(?!48(?!\\d))\\d{2,3}\\s?-?\\s?(?:h|hrs?|hours?)\\b(?:\\s|-)*(?:of\\s)?(?:power\\s)?reserve|reserve\\W{0,3}(?:of\\s)?(?!48(?!\\d))\\d{2,3}"
+     ],
+     "Halcyon": [
+      "\\bautomatic\\b|self[- ]?winding|auto[- ]?wind",
+      "\\b\\d{2,3}\\s?-?\\s?(?:h|hrs?|hours?)\\b(?:\\s|-)*(?:of\\s)?(?:power\\s)?reserve|reserve\\W{0,3}(?:of\\s)?\\d{2,3}"
+     ]
+    },
+    "person_rx": [
+     "\\b\\d{2,3}\\s?-?\\s?(?:h|hrs?|hours?)\\b(?!\\W{0,3}(?:of\\s)?(?:power\\s)?reserve)"
+    ],
+    "how": "Copies every text on the file with the vision model; code finds the one reference named and checks no movement wording contradicts lunara_notes.txt for its caliber."
    },
-   "how": "Reads the text; where a description of this kind appears, checks it carries the right terms and no contradicting ones."
+   "how": "Copies every text on the file with the vision model; code finds the one reference named and checks no movement wording contradicts lunara_notes.txt for its caliber."
   },
   {
    "check_id": "PHOTO-24/watch-keyvisual/H006",
@@ -1595,13 +1612,24 @@
    "critical": false,
    "check": "“Watch product-page feature - LC-25-0101” (watch-feature-r002.png) gives no price for Meridian alone; any price shown is the band $4,000-$12,000 a piece from lunara_notes.txt.",
    "assertion": {
-    "op": "v2_prices",
-    "mode": "only",
-    "allowed": [
-     "$4,000-$12,000"
-    ]
+    "op": "vlm_text_rx_r5vb",
+    "none_found": "pass",
+    "values_rx": {
+     "rx": "((?:[$€£]|\\busd\\s?|\\beur\\s?|\\bgbp\\s?)\\d[\\d,.]*(?:\\s?(?:-|to)\\s?(?:[$€£]|usd\\s?|eur\\s?|gbp\\s?)?\\d[\\d,.]*)?)",
+     "allowed": [
+      "$4,000-$12,000",
+      "$4,000 - $12,000",
+      "$4,000 to $12,000",
+      "$4,000-12,000"
+     ]
+    },
+    "person_rx": [
+     "\\b\\d[\\d,.]*\\s?(?:usd|eur|gbp|dollars?|euros?|pounds?)\\b",
+     "\\bprice\\b"
+    ],
+    "how": "Copies every text on the file with the vision model; code checks any price shown is the band $4,000-$12,000."
    },
-   "how": "Finds every price and checks each meets the rule."
+   "how": "Copies every text on the file with the vision model; code checks any price shown is the band $4,000-$12,000."
   },
   {
    "check_id": "PHOTO-24/watch-feature-r003/H012",
@@ -1611,13 +1639,24 @@
    "critical": false,
    "check": "“Watch product-page feature - LC-25-0102” (watch-feature-r003.png) gives no price for Selene alone; any price shown is the band $4,000-$12,000 a piece from lunara_notes.txt.",
    "assertion": {
-    "op": "v2_prices",
-    "mode": "only",
-    "allowed": [
-     "$4,000-$12,000"
-    ]
+    "op": "vlm_text_rx_r5vb",
+    "none_found": "pass",
+    "values_rx": {
+     "rx": "((?:[$€£]|\\busd\\s?|\\beur\\s?|\\bgbp\\s?)\\d[\\d,.]*(?:\\s?(?:-|to)\\s?(?:[$€£]|usd\\s?|eur\\s?|gbp\\s?)?\\d[\\d,.]*)?)",
+     "allowed": [
+      "$4,000-$12,000",
+      "$4,000 - $12,000",
+      "$4,000 to $12,000",
+      "$4,000-12,000"
+     ]
+    },
+    "person_rx": [
+     "\\b\\d[\\d,.]*\\s?(?:usd|eur|gbp|dollars?|euros?|pounds?)\\b",
+     "\\bprice\\b"
+    ],
+    "how": "Copies every text on the file with the vision model; code checks any price shown is the band $4,000-$12,000."
    },
-   "how": "Finds every price and checks each meets the rule."
+   "how": "Copies every text on the file with the vision model; code checks any price shown is the band $4,000-$12,000."
   },
   {
    "check_id": "PHOTO-24/watch-feature-r004/H013",
@@ -1627,13 +1666,24 @@
    "critical": false,
    "check": "“Watch product-page feature - LC-25-0103” (watch-feature-r004.png) gives no price for Ardent alone; any price shown is the band $4,000-$12,000 a piece from lunara_notes.txt.",
    "assertion": {
-    "op": "v2_prices",
-    "mode": "only",
-    "allowed": [
-     "$4,000-$12,000"
-    ]
+    "op": "vlm_text_rx_r5vb",
+    "none_found": "pass",
+    "values_rx": {
+     "rx": "((?:[$€£]|\\busd\\s?|\\beur\\s?|\\bgbp\\s?)\\d[\\d,.]*(?:\\s?(?:-|to)\\s?(?:[$€£]|usd\\s?|eur\\s?|gbp\\s?)?\\d[\\d,.]*)?)",
+     "allowed": [
+      "$4,000-$12,000",
+      "$4,000 - $12,000",
+      "$4,000 to $12,000",
+      "$4,000-12,000"
+     ]
+    },
+    "person_rx": [
+     "\\b\\d[\\d,.]*\\s?(?:usd|eur|gbp|dollars?|euros?|pounds?)\\b",
+     "\\bprice\\b"
+    ],
+    "how": "Copies every text on the file with the vision model; code checks any price shown is the band $4,000-$12,000."
    },
-   "how": "Finds every price and checks each meets the rule."
+   "how": "Copies every text on the file with the vision model; code checks any price shown is the band $4,000-$12,000."
   },
   {
    "check_id": "PHOTO-24/watch-feature-r005/H012",
@@ -1643,13 +1693,24 @@
    "critical": false,
    "check": "“Watch product-page feature - LC-25-0104” (watch-feature-r005.png) gives no price for Halcyon alone; any price shown is the band $4,000-$12,000 a piece from lunara_notes.txt.",
    "assertion": {
-    "op": "v2_prices",
-    "mode": "only",
-    "allowed": [
-     "$4,000-$12,000"
-    ]
+    "op": "vlm_text_rx_r5vb",
+    "none_found": "pass",
+    "values_rx": {
+     "rx": "((?:[$€£]|\\busd\\s?|\\beur\\s?|\\bgbp\\s?)\\d[\\d,.]*(?:\\s?(?:-|to)\\s?(?:[$€£]|usd\\s?|eur\\s?|gbp\\s?)?\\d[\\d,.]*)?)",
+     "allowed": [
+      "$4,000-$12,000",
+      "$4,000 - $12,000",
+      "$4,000 to $12,000",
+      "$4,000-12,000"
+     ]
+    },
+    "person_rx": [
+     "\\b\\d[\\d,.]*\\s?(?:usd|eur|gbp|dollars?|euros?|pounds?)\\b",
+     "\\bprice\\b"
+    ],
+    "how": "Copies every text on the file with the vision model; code checks any price shown is the band $4,000-$12,000."
    },
-   "how": "Finds every price and checks each meets the rule."
+   "how": "Copies every text on the file with the vision model; code checks any price shown is the band $4,000-$12,000."
   },
   {
    "check_id": "PHOTO-24/watch-feature-r006/H012",
@@ -1659,13 +1720,24 @@
    "critical": false,
    "check": "“Watch product-page feature - LC-25-0105” (watch-feature-r006.png) gives no price for Vesper alone; any price shown is the band $4,000-$12,000 a piece from lunara_notes.txt.",
    "assertion": {
-    "op": "v2_prices",
-    "mode": "only",
-    "allowed": [
-     "$4,000-$12,000"
-    ]
+    "op": "vlm_text_rx_r5vb",
+    "none_found": "pass",
+    "values_rx": {
+     "rx": "((?:[$€£]|\\busd\\s?|\\beur\\s?|\\bgbp\\s?)\\d[\\d,.]*(?:\\s?(?:-|to)\\s?(?:[$€£]|usd\\s?|eur\\s?|gbp\\s?)?\\d[\\d,.]*)?)",
+     "allowed": [
+      "$4,000-$12,000",
+      "$4,000 - $12,000",
+      "$4,000 to $12,000",
+      "$4,000-12,000"
+     ]
+    },
+    "person_rx": [
+     "\\b\\d[\\d,.]*\\s?(?:usd|eur|gbp|dollars?|euros?|pounds?)\\b",
+     "\\bprice\\b"
+    ],
+    "how": "Copies every text on the file with the vision model; code checks any price shown is the band $4,000-$12,000."
    },
-   "how": "Finds every price and checks each meets the rule."
+   "how": "Copies every text on the file with the vision model; code checks any price shown is the band $4,000-$12,000."
   },
   {
    "check_id": "PHOTO-24/watch-keyvisual/H016",
@@ -1764,6 +1836,41 @@
    "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
   },
   {
+   "check_id": "PHOTO-24/dealer-launch/H003",
+   "output_id": "dealer-launch",
+   "rule_id": "R031",
+   "k_id": "K1_Q3",
+   "critical": false,
+   "check": "“Watch dealer launch sheet” (dealer-launch.pdf) lists no reference other than the five in lunara_register.csv: Meridian, Selene, Ardent, Halcyon and Vesper.",
+   "assertion": {
+    "op": "vlm_items_r5vb",
+    "images": [
+     {
+      "src": "deliverable",
+      "page": 1
+     },
+     {
+      "src": "deliverable",
+      "page": 2
+     }
+    ],
+    "ok": [
+     "Meridian",
+     "Ardent",
+     "Selene",
+     "Vesper",
+     "Halcyon"
+    ],
+    "ok_rx": [
+     "^(?:lunara|chronometry|lunara chronometry)$"
+    ],
+    "near": 0.8,
+    "question": "These two images are the pages of a watch dealer launch sheet. List every watch reference (model) name printed on the pages, each once, copied exactly as printed. Do not list the brand name, caliber codes (such as LM-01), serial numbers, case metals or dial finishes. answer yes if there is at least one, no if there is none.",
+    "how": "Asks the vision model to list every watch reference named on both pages; code checks each is Meridian, Selene, Ardent, Halcyon or Vesper."
+   },
+   "how": "Asks the vision model to list every watch reference named on both pages; code checks each is Meridian, Selene, Ardent, Halcyon or Vesper."
+  },
+  {
    "check_id": "PHOTO-24/dealer-launch/H035",
    "output_id": "dealer-launch",
    "rule_id": "R033",
@@ -1787,13 +1894,24 @@
    "critical": false,
    "check": "“Autumn watch key visual” (watch-keyvisual.png) gives no price for a single reference; any price shown is the band $4,000-$12,000 a piece from lunara_notes.txt.",
    "assertion": {
-    "op": "v2_prices",
-    "mode": "only",
-    "allowed": [
-     "$4,000-$12,000"
-    ]
+    "op": "vlm_text_rx_r5vb",
+    "none_found": "pass",
+    "values_rx": {
+     "rx": "((?:[$€£]|\\busd\\s?|\\beur\\s?|\\bgbp\\s?)\\d[\\d,.]*(?:\\s?(?:-|to)\\s?(?:[$€£]|usd\\s?|eur\\s?|gbp\\s?)?\\d[\\d,.]*)?)",
+     "allowed": [
+      "$4,000-$12,000",
+      "$4,000 - $12,000",
+      "$4,000 to $12,000",
+      "$4,000-12,000"
+     ]
+    },
+    "person_rx": [
+     "\\b\\d[\\d,.]*\\s?(?:usd|eur|gbp|dollars?|euros?|pounds?)\\b",
+     "\\bprice\\b"
+    ],
+    "how": "Copies every text on the file with the vision model; code checks any price shown is the band $4,000-$12,000."
    },
-   "how": "Finds every price and checks each meets the rule."
+   "how": "Copies every text on the file with the vision model; code checks any price shown is the band $4,000-$12,000."
   },
   {
    "check_id": "PHOTO-24/dealer-launch/H002",
@@ -2702,68 +2820,87 @@
    "critical": false,
    "check": "Type on Bone cream #EDE6D6 on “Autumn watch key visual” (watch-keyvisual.png) is Warm near-black #191512, except small captions, footers and labels, which may be Tempered steel or Oxblood.",
    "assertion": {
-    "op": "v2_type_ink_pb",
-    "grounds": [
-     "#EDE6D6"
+    "op": "v2_small_labels_r5c",
+    "check": {
+     "op": "v2_type_ink_pb",
+     "grounds": [
+      "#EDE6D6"
+     ],
+     "colors": [
+      "#191512"
+     ],
+     "allow": [
+      {
+       "roles": [
+        "fine"
+       ],
+       "colors": [
+        "#191512",
+        "#9A9EA3",
+        "#5A2A28"
+       ]
+      },
+      {
+       "footer": true,
+       "colors": [
+        "#191512",
+        "#9A9EA3",
+        "#5A2A28"
+       ]
+      },
+      {
+       "roles": [
+        "other"
+       ],
+       "colors": [
+        "#191512",
+        "#9A9EA3",
+        "#5A2A28"
+       ],
+       "maybe": true
+      }
+     ],
+     "photos": [
+      "lunara_campaign_01.jpg",
+      "lunara_campaign_02.jpg",
+      "lunara_campaign_03.jpg",
+      "lunara_campaign_04.jpg",
+      "lunara_campaign_05.jpg",
+      "lunara_campaign_06.jpg",
+      "lunara_campaign_07.jpg",
+      "lunara_campaign_08.jpg",
+      "lunara_campaign_09.jpg",
+      "lunara_detail_caseback.jpg",
+      "lunara_detail_clasp.jpg",
+      "lunara_detail_crown.jpg",
+      "lunara_detail_handstack.jpg",
+      "lunara_detail_lug.jpg",
+      "lunara_detail_movement.jpg",
+      "lunara_pdp_ardent.jpg",
+      "lunara_pdp_halcyon.jpg",
+      "lunara_pdp_meridian.jpg",
+      "lunara_pdp_selene.jpg",
+      "lunara_pdp_vesper.jpg"
+     ]
+    },
+    "extra_ocr": true,
+    "not_labels": [
+     "LUNARA",
+     "CHRONOMETRY",
+     "LUNARA CHRONOMETRY",
+     "Meridian",
+     "Selene",
+     "Ardent",
+     "Halcyon",
+     "Vesper"
     ],
-    "colors": [
-     "#191512"
-    ],
-    "allow": [
-     {
-      "roles": [
-       "fine"
-      ],
-      "colors": [
-       "#191512",
-       "#9A9EA3",
-       "#5A2A28"
-      ]
-     },
-     {
-      "footer": true,
-      "colors": [
-       "#191512",
-       "#9A9EA3",
-       "#5A2A28"
-      ]
-     },
-     {
-      "roles": [
-       "other"
-      ],
-      "colors": [
-       "#191512",
-       "#9A9EA3",
-       "#5A2A28"
-      ],
-      "maybe": true
-     }
-    ],
-    "photos": [
-     "lunara_campaign_01.jpg",
-     "lunara_campaign_02.jpg",
-     "lunara_campaign_03.jpg",
-     "lunara_campaign_04.jpg",
-     "lunara_campaign_05.jpg",
-     "lunara_campaign_06.jpg",
-     "lunara_campaign_07.jpg",
-     "lunara_campaign_08.jpg",
-     "lunara_campaign_09.jpg",
-     "lunara_detail_caseback.jpg",
-     "lunara_detail_clasp.jpg",
-     "lunara_detail_crown.jpg",
-     "lunara_detail_handstack.jpg",
-     "lunara_detail_lug.jpg",
-     "lunara_detail_movement.jpg",
-     "lunara_pdp_ardent.jpg",
-     "lunara_pdp_halcyon.jpg",
-     "lunara_pdp_meridian.jpg",
-     "lunara_pdp_selene.jpg",
-     "lunara_pdp_vesper.jpg"
+    "label_colors": [
+     "#191512",
+     "#9A9EA3",
+     "#5A2A28"
     ]
    },
-   "how": "Reads each text line (OCR on images, live text on PDFs), the colour of its letters and of the ground behind it, and checks the pairing."
+   "how": "Reads each text line and the colour of its letters and ground; a small line in capitals (a label) may use the label colours, and a label OCR missed is read again from a contrast-stretched copy."
   },
   {
    "check_id": "PHOTO-24/watch-feature-r002/H031",
@@ -2773,49 +2910,68 @@
    "critical": false,
    "check": "Type on Bone cream #EDE6D6 on “Watch product-page feature - LC-25-0101” (watch-feature-r002.png) is Warm near-black #191512, except small captions, footers and labels, which may be Tempered steel or Oxblood.",
    "assertion": {
-    "op": "v2_type_ink_pb",
-    "grounds": [
-     "#EDE6D6"
+    "op": "v2_small_labels_r5c",
+    "check": {
+     "op": "v2_type_ink_pb",
+     "grounds": [
+      "#EDE6D6"
+     ],
+     "colors": [
+      "#191512"
+     ],
+     "allow": [
+      {
+       "roles": [
+        "fine"
+       ],
+       "colors": [
+        "#191512",
+        "#9A9EA3",
+        "#5A2A28"
+       ]
+      },
+      {
+       "footer": true,
+       "colors": [
+        "#191512",
+        "#9A9EA3",
+        "#5A2A28"
+       ]
+      },
+      {
+       "roles": [
+        "other"
+       ],
+       "colors": [
+        "#191512",
+        "#9A9EA3",
+        "#5A2A28"
+       ],
+       "maybe": true
+      }
+     ],
+     "photos": [
+      "lunara_pdp_meridian.jpg"
+     ]
+    },
+    "extra_ocr": true,
+    "not_labels": [
+     "LUNARA",
+     "CHRONOMETRY",
+     "LUNARA CHRONOMETRY",
+     "Meridian",
+     "Selene",
+     "Ardent",
+     "Halcyon",
+     "Vesper"
     ],
-    "colors": [
-     "#191512"
-    ],
-    "allow": [
-     {
-      "roles": [
-       "fine"
-      ],
-      "colors": [
-       "#191512",
-       "#9A9EA3",
-       "#5A2A28"
-      ]
-     },
-     {
-      "footer": true,
-      "colors": [
-       "#191512",
-       "#9A9EA3",
-       "#5A2A28"
-      ]
-     },
-     {
-      "roles": [
-       "other"
-      ],
-      "colors": [
-       "#191512",
-       "#9A9EA3",
-       "#5A2A28"
-      ],
-      "maybe": true
-     }
-    ],
-    "photos": [
-     "lunara_pdp_meridian.jpg"
+    "label_colors": [
+     "#191512",
+     "#9A9EA3",
+     "#5A2A28"
     ]
    },
-   "how": "Reads each text line (OCR on images, live text on PDFs), the colour of its letters and of the ground behind it, and checks the pairing."
+   "how": "Reads each text line and the colour of its letters and ground; a small line in capitals (a label) may use the label colours, and a label OCR missed is read again from a contrast-stretched copy."
   },
   {
    "check_id": "PHOTO-24/watch-feature-r003/H030",
@@ -2825,49 +2981,68 @@
    "critical": false,
    "check": "Type on Bone cream #EDE6D6 on “Watch product-page feature - LC-25-0102” (watch-feature-r003.png) is Warm near-black #191512, except small captions, footers and labels, which may be Tempered steel or Oxblood.",
    "assertion": {
-    "op": "v2_type_ink_pb",
-    "grounds": [
-     "#EDE6D6"
+    "op": "v2_small_labels_r5c",
+    "check": {
+     "op": "v2_type_ink_pb",
+     "grounds": [
+      "#EDE6D6"
+     ],
+     "colors": [
+      "#191512"
+     ],
+     "allow": [
+      {
+       "roles": [
+        "fine"
+       ],
+       "colors": [
+        "#191512",
+        "#9A9EA3",
+        "#5A2A28"
+       ]
+      },
+      {
+       "footer": true,
+       "colors": [
+        "#191512",
+        "#9A9EA3",
+        "#5A2A28"
+       ]
+      },
+      {
+       "roles": [
+        "other"
+       ],
+       "colors": [
+        "#191512",
+        "#9A9EA3",
+        "#5A2A28"
+       ],
+       "maybe": true
+      }
+     ],
+     "photos": [
+      "lunara_pdp_selene.jpg"
+     ]
+    },
+    "extra_ocr": true,
+    "not_labels": [
+     "LUNARA",
+     "CHRONOMETRY",
+     "LUNARA CHRONOMETRY",
+     "Meridian",
+     "Selene",
+     "Ardent",
+     "Halcyon",
+     "Vesper"
     ],
-    "colors": [
-     "#191512"
-    ],
-    "allow": [
-     {
-      "roles": [
-       "fine"
-      ],
-      "colors": [
-       "#191512",
-       "#9A9EA3",
-       "#5A2A28"
-      ]
-     },
-     {
-      "footer": true,
-      "colors": [
-       "#191512",
-       "#9A9EA3",
-       "#5A2A28"
-      ]
-     },
-     {
-      "roles": [
-       "other"
-      ],
-      "colors": [
-       "#191512",
-       "#9A9EA3",
-       "#5A2A28"
-      ],
-      "maybe": true
-     }
-    ],
-    "photos": [
-     "lunara_pdp_selene.jpg"
+    "label_colors": [
+     "#191512",
+     "#9A9EA3",
+     "#5A2A28"
     ]
    },
-   "how": "Reads each text line (OCR on images, live text on PDFs), the colour of its letters and of the ground behind it, and checks the pairing."
+   "how": "Reads each text line and the colour of its letters and ground; a small line in capitals (a label) may use the label colours, and a label OCR missed is read again from a contrast-stretched copy."
   },
   {
    "check_id": "PHOTO-24/watch-feature-r004/H029",
@@ -2877,49 +3052,68 @@
    "critical": false,
    "check": "Type on Bone cream #EDE6D6 on “Watch product-page feature - LC-25-0103” (watch-feature-r004.png) is Warm near-black #191512, except small captions, footers and labels, which may be Tempered steel or Oxblood.",
    "assertion": {
-    "op": "v2_type_ink_pb",
-    "grounds": [
-     "#EDE6D6"
+    "op": "v2_small_labels_r5c",
+    "check": {
+     "op": "v2_type_ink_pb",
+     "grounds": [
+      "#EDE6D6"
+     ],
+     "colors": [
+      "#191512"
+     ],
+     "allow": [
+      {
+       "roles": [
+        "fine"
+       ],
+       "colors": [
+        "#191512",
+        "#9A9EA3",
+        "#5A2A28"
+       ]
+      },
+      {
+       "footer": true,
+       "colors": [
+        "#191512",
+        "#9A9EA3",
+        "#5A2A28"
+       ]
+      },
+      {
+       "roles": [
+        "other"
+       ],
+       "colors": [
+        "#191512",
+        "#9A9EA3",
+        "#5A2A28"
+       ],
+       "maybe": true
+      }
+     ],
+     "photos": [
+      "lunara_pdp_ardent.jpg"
+     ]
+    },
+    "extra_ocr": true,
+    "not_labels": [
+     "LUNARA",
+     "CHRONOMETRY",
+     "LUNARA CHRONOMETRY",
+     "Meridian",
+     "Selene",
+     "Ardent",
+     "Halcyon",
+     "Vesper"
     ],
-    "colors": [
-     "#191512"
-    ],
-    "allow": [
-     {
-      "roles": [
-       "fine"
-      ],
-      "colors": [
-       "#191512",
-       "#9A9EA3",
-       "#5A2A28"
-      ]
-     },
-     {
-      "footer": true,
-      "colors": [
-       "#191512",
-       "#9A9EA3",
-       "#5A2A28"
-      ]
-     },
-     {
-      "roles": [
-       "other"
-      ],
-      "colors": [
-       "#191512",
-       "#9A9EA3",
-       "#5A2A28"
-      ],
-      "maybe": true
-     }
-    ],
-    "photos": [
-     "lunara_pdp_ardent.jpg"
+    "label_colors": [
+     "#191512",
+     "#9A9EA3",
+     "#5A2A28"
     ]
    },
-   "how": "Reads each text line (OCR on images, live text on PDFs), the colour of its letters and of the ground behind it, and checks the pairing."
+   "how": "Reads each text line and the colour of its letters and ground; a small line in capitals (a label) may use the label colours, and a label OCR missed is read again from a contrast-stretched copy."
   },
   {
    "check_id": "PHOTO-24/watch-feature-r005/H030",
@@ -2929,49 +3123,68 @@
    "critical": false,
    "check": "Type on Bone cream #EDE6D6 on “Watch product-page feature - LC-25-0104” (watch-feature-r005.png) is Warm near-black #191512, except small captions, footers and labels, which may be Tempered steel or Oxblood.",
    "assertion": {
-    "op": "v2_type_ink_pb",
-    "grounds": [
-     "#EDE6D6"
+    "op": "v2_small_labels_r5c",
+    "check": {
+     "op": "v2_type_ink_pb",
+     "grounds": [
+      "#EDE6D6"
+     ],
+     "colors": [
+      "#191512"
+     ],
+     "allow": [
+      {
+       "roles": [
+        "fine"
+       ],
+       "colors": [
+        "#191512",
+        "#9A9EA3",
+        "#5A2A28"
+       ]
+      },
+      {
+       "footer": true,
+       "colors": [
+        "#191512",
+        "#9A9EA3",
+        "#5A2A28"
+       ]
+      },
+      {
+       "roles": [
+        "other"
+       ],
+       "colors": [
+        "#191512",
+        "#9A9EA3",
+        "#5A2A28"
+       ],
+       "maybe": true
+      }
+     ],
+     "photos": [
+      "lunara_pdp_halcyon.jpg"
+     ]
+    },
+    "extra_ocr": true,
+    "not_labels": [
+     "LUNARA",
+     "CHRONOMETRY",
+     "LUNARA CHRONOMETRY",
+     "Meridian",
+     "Selene",
+     "Ardent",
+     "Halcyon",
+     "Vesper"
     ],
-    "colors": [
-     "#191512"
-    ],
-    "allow": [
-     {
-      "roles": [
-       "fine"
-      ],
-      "colors": [
-       "#191512",
-       "#9A9EA3",
-       "#5A2A28"
-      ]
-     },
-     {
-      "footer": true,
-      "colors": [
-       "#191512",
-       "#9A9EA3",
-       "#5A2A28"
-      ]
-     },
-     {
-      "roles": [
-       "other"
-      ],
-      "colors": [
-       "#191512",
-       "#9A9EA3",
-       "#5A2A28"
-      ],
-      "maybe": true
-     }
-    ],
-    "photos": [
-     "lunara_pdp_halcyon.jpg"
+    "label_colors": [
+     "#191512",
+     "#9A9EA3",
+     "#5A2A28"
     ]
    },
-   "how": "Reads each text line (OCR on images, live text on PDFs), the colour of its letters and of the ground behind it, and checks the pairing."
+   "how": "Reads each text line and the colour of its letters and ground; a small line in capitals (a label) may use the label colours, and a label OCR missed is read again from a contrast-stretched copy."
   },
   {
    "check_id": "PHOTO-24/watch-feature-r006/H029",
@@ -2981,49 +3194,68 @@
    "critical": false,
    "check": "Type on Bone cream #EDE6D6 on “Watch product-page feature - LC-25-0105” (watch-feature-r006.png) is Warm near-black #191512, except small captions, footers and labels, which may be Tempered steel or Oxblood.",
    "assertion": {
-    "op": "v2_type_ink_pb",
-    "grounds": [
-     "#EDE6D6"
+    "op": "v2_small_labels_r5c",
+    "check": {
+     "op": "v2_type_ink_pb",
+     "grounds": [
+      "#EDE6D6"
+     ],
+     "colors": [
+      "#191512"
+     ],
+     "allow": [
+      {
+       "roles": [
+        "fine"
+       ],
+       "colors": [
+        "#191512",
+        "#9A9EA3",
+        "#5A2A28"
+       ]
+      },
+      {
+       "footer": true,
+       "colors": [
+        "#191512",
+        "#9A9EA3",
+        "#5A2A28"
+       ]
+      },
+      {
+       "roles": [
+        "other"
+       ],
+       "colors": [
+        "#191512",
+        "#9A9EA3",
+        "#5A2A28"
+       ],
+       "maybe": true
+      }
+     ],
+     "photos": [
+      "lunara_pdp_vesper.jpg"
+     ]
+    },
+    "extra_ocr": true,
+    "not_labels": [
+     "LUNARA",
+     "CHRONOMETRY",
+     "LUNARA CHRONOMETRY",
+     "Meridian",
+     "Selene",
+     "Ardent",
+     "Halcyon",
+     "Vesper"
     ],
-    "colors": [
-     "#191512"
-    ],
-    "allow": [
-     {
-      "roles": [
-       "fine"
-      ],
-      "colors": [
-       "#191512",
-       "#9A9EA3",
-       "#5A2A28"
-      ]
-     },
-     {
-      "footer": true,
-      "colors": [
-       "#191512",
-       "#9A9EA3",
-       "#5A2A28"
-      ]
-     },
-     {
-      "roles": [
-       "other"
-      ],
-      "colors": [
-       "#191512",
-       "#9A9EA3",
-       "#5A2A28"
-      ],
-      "maybe": true
-     }
-    ],
-    "photos": [
-     "lunara_pdp_vesper.jpg"
+    "label_colors": [
+     "#191512",
+     "#9A9EA3",
+     "#5A2A28"
     ]
    },
-   "how": "Reads each text line (OCR on images, live text on PDFs), the colour of its letters and of the ground behind it, and checks the pairing."
+   "how": "Reads each text line and the colour of its letters and ground; a small line in capitals (a label) may use the label colours, and a label OCR missed is read again from a contrast-stretched copy."
   },
   {
    "check_id": "PHOTO-24/dealer-launch/H045",
@@ -3033,46 +3265,65 @@
    "critical": false,
    "check": "Type on Bone cream #EDE6D6 on “Watch dealer launch sheet” (dealer-launch.pdf) is Warm near-black #191512, except small captions, footers and labels, which may be Tempered steel or Oxblood.",
    "assertion": {
-    "op": "v2_type_ink_pb",
-    "grounds": [
-     "#EDE6D6"
+    "op": "v2_small_labels_r5c",
+    "check": {
+     "op": "v2_type_ink_pb",
+     "grounds": [
+      "#EDE6D6"
+     ],
+     "colors": [
+      "#191512"
+     ],
+     "allow": [
+      {
+       "roles": [
+        "fine"
+       ],
+       "colors": [
+        "#191512",
+        "#9A9EA3",
+        "#5A2A28"
+       ]
+      },
+      {
+       "footer": true,
+       "colors": [
+        "#191512",
+        "#9A9EA3",
+        "#5A2A28"
+       ]
+      },
+      {
+       "roles": [
+        "other"
+       ],
+       "colors": [
+        "#191512",
+        "#9A9EA3",
+        "#5A2A28"
+       ],
+       "maybe": true
+      }
+     ]
+    },
+    "extra_ocr": true,
+    "not_labels": [
+     "LUNARA",
+     "CHRONOMETRY",
+     "LUNARA CHRONOMETRY",
+     "Meridian",
+     "Selene",
+     "Ardent",
+     "Halcyon",
+     "Vesper"
     ],
-    "colors": [
-     "#191512"
-    ],
-    "allow": [
-     {
-      "roles": [
-       "fine"
-      ],
-      "colors": [
-       "#191512",
-       "#9A9EA3",
-       "#5A2A28"
-      ]
-     },
-     {
-      "footer": true,
-      "colors": [
-       "#191512",
-       "#9A9EA3",
-       "#5A2A28"
-      ]
-     },
-     {
-      "roles": [
-       "other"
-      ],
-      "colors": [
-       "#191512",
-       "#9A9EA3",
-       "#5A2A28"
-      ],
-      "maybe": true
-     }
+    "label_colors": [
+     "#191512",
+     "#9A9EA3",
+     "#5A2A28"
     ]
    },
-   "how": "Reads each text line (OCR on images, live text on PDFs), the colour of its letters and of the ground behind it, and checks the pairing."
+   "how": "Reads each text line and the colour of its letters and ground; a small line in capitals (a label) may use the label colours, and a label OCR missed is read again from a contrast-stretched copy."
   },
   {
    "check_id": "PHOTO-24/watch-keyvisual/H025",
@@ -3774,52 +4025,66 @@
    "critical": false,
    "check": "On “Autumn watch key visual” (watch-keyvisual.png), Tempered steel #9A9EA3 appears only in small captions, footer lines, labels or dividers, never as body text, a ground or a panel.",
    "assertion": {
-    "op": "v2_colour_only_as_pb",
-    "hexes": [
-     "#9A9EA3"
-    ],
-    "rules": "thin",
-    "allow": [
-     {
-      "roles": [
-       "fine"
-      ]
-     },
-     {
-      "footer": true
-     }
-    ],
-    "ambiguous": [
-     {
-      "roles": [
-       "other"
-      ]
-     }
-    ],
-    "photos": [
-     "lunara_campaign_01.jpg",
-     "lunara_campaign_02.jpg",
-     "lunara_campaign_03.jpg",
-     "lunara_campaign_04.jpg",
-     "lunara_campaign_05.jpg",
-     "lunara_campaign_06.jpg",
-     "lunara_campaign_07.jpg",
-     "lunara_campaign_08.jpg",
-     "lunara_campaign_09.jpg",
-     "lunara_detail_caseback.jpg",
-     "lunara_detail_clasp.jpg",
-     "lunara_detail_crown.jpg",
-     "lunara_detail_handstack.jpg",
-     "lunara_detail_lug.jpg",
-     "lunara_detail_movement.jpg",
-     "lunara_pdp_ardent.jpg",
-     "lunara_pdp_halcyon.jpg",
-     "lunara_pdp_meridian.jpg",
-     "lunara_pdp_selene.jpg",
-     "lunara_pdp_vesper.jpg"
+    "op": "v2_small_labels_r5c",
+    "check": {
+     "op": "v2_colour_only_as_pb",
+     "hexes": [
+      "#9A9EA3"
+     ],
+     "rules": "thin",
+     "allow": [
+      {
+       "roles": [
+        "fine"
+       ]
+      },
+      {
+       "footer": true
+      }
+     ],
+     "ambiguous": [
+      {
+       "roles": [
+        "other"
+       ]
+      }
+     ],
+     "photos": [
+      "lunara_campaign_01.jpg",
+      "lunara_campaign_02.jpg",
+      "lunara_campaign_03.jpg",
+      "lunara_campaign_04.jpg",
+      "lunara_campaign_05.jpg",
+      "lunara_campaign_06.jpg",
+      "lunara_campaign_07.jpg",
+      "lunara_campaign_08.jpg",
+      "lunara_campaign_09.jpg",
+      "lunara_detail_caseback.jpg",
+      "lunara_detail_clasp.jpg",
+      "lunara_detail_crown.jpg",
+      "lunara_detail_handstack.jpg",
+      "lunara_detail_lug.jpg",
+      "lunara_detail_movement.jpg",
+      "lunara_pdp_ardent.jpg",
+      "lunara_pdp_halcyon.jpg",
+      "lunara_pdp_meridian.jpg",
+      "lunara_pdp_selene.jpg",
+      "lunara_pdp_vesper.jpg"
+     ]
+    },
+    "extra_ocr": true,
+    "not_labels": [
+     "LUNARA",
+     "CHRONOMETRY",
+     "LUNARA CHRONOMETRY",
+     "Meridian",
+     "Selene",
+     "Ardent",
+     "Halcyon",
+     "Vesper"
     ]
    },
-   "how": "Finds every piece in the colour outside the photographs and checks each is a thin rule or sits in an allowed text line."
+   "how": "Reads each text line and the colour of its letters and ground; a small line in capitals (a label) may use the label colours, and a label OCR missed is read again from a contrast-stretched copy."
   },
   {
    "check_id": "PHOTO-24/watch-feature-r002/H056",
@@ -3829,33 +4094,47 @@
    "critical": false,
    "check": "On “Watch product-page feature - LC-25-0101” (watch-feature-r002.png), Tempered steel #9A9EA3 appears only in small captions, footer lines, labels or dividers, never as body text, a ground or a panel.",
    "assertion": {
-    "op": "v2_colour_only_as_pb",
-    "hexes": [
-     "#9A9EA3"
-    ],
-    "rules": "thin",
-    "allow": [
-     {
-      "roles": [
-       "fine"
-      ]
-     },
-     {
-      "footer": true
-     }
-    ],
-    "ambiguous": [
-     {
-      "roles": [
-       "other"
-      ]
-     }
-    ],
-    "photos": [
-     "lunara_pdp_meridian.jpg"
+    "op": "v2_small_labels_r5c",
+    "check": {
+     "op": "v2_colour_only_as_pb",
+     "hexes": [
+      "#9A9EA3"
+     ],
+     "rules": "thin",
+     "allow": [
+      {
+       "roles": [
+        "fine"
+       ]
+      },
+      {
+       "footer": true
+      }
+     ],
+     "ambiguous": [
+      {
+       "roles": [
+        "other"
+       ]
+      }
+     ],
+     "photos": [
+      "lunara_pdp_meridian.jpg"
+     ]
+    },
+    "extra_ocr": true,
+    "not_labels": [
+     "LUNARA",
+     "CHRONOMETRY",
+     "LUNARA CHRONOMETRY",
+     "Meridian",
+     "Selene",
+     "Ardent",
+     "Halcyon",
+     "Vesper"
     ]
    },
-   "how": "Finds every piece in the colour outside the photographs and checks each is a thin rule or sits in an allowed text line."
+   "how": "Reads each text line and the colour of its letters and ground; a small line in capitals (a label) may use the label colours, and a label OCR missed is read again from a contrast-stretched copy."
   },
   {
    "check_id": "PHOTO-24/watch-feature-r003/H055",
@@ -3865,33 +4144,47 @@
    "critical": false,
    "check": "On “Watch product-page feature - LC-25-0102” (watch-feature-r003.png), Tempered steel #9A9EA3 appears only in small captions, footer lines, labels or dividers, never as body text, a ground or a panel.",
    "assertion": {
-    "op": "v2_colour_only_as_pb",
-    "hexes": [
-     "#9A9EA3"
-    ],
-    "rules": "thin",
-    "allow": [
-     {
-      "roles": [
-       "fine"
-      ]
-     },
-     {
-      "footer": true
-     }
-    ],
-    "ambiguous": [
-     {
-      "roles": [
-       "other"
-      ]
-     }
-    ],
-    "photos": [
-     "lunara_pdp_selene.jpg"
+    "op": "v2_small_labels_r5c",
+    "check": {
+     "op": "v2_colour_only_as_pb",
+     "hexes": [
+      "#9A9EA3"
+     ],
+     "rules": "thin",
+     "allow": [
+      {
+       "roles": [
+        "fine"
+       ]
+      },
+      {
+       "footer": true
+      }
+     ],
+     "ambiguous": [
+      {
+       "roles": [
+        "other"
+       ]
+      }
+     ],
+     "photos": [
+      "lunara_pdp_selene.jpg"
+     ]
+    },
+    "extra_ocr": true,
+    "not_labels": [
+     "LUNARA",
+     "CHRONOMETRY",
+     "LUNARA CHRONOMETRY",
+     "Meridian",
+     "Selene",
+     "Ardent",
+     "Halcyon",
+     "Vesper"
     ]
    },
-   "how": "Finds every piece in the colour outside the photographs and checks each is a thin rule or sits in an allowed text line."
+   "how": "Reads each text line and the colour of its letters and ground; a small line in capitals (a label) may use the label colours, and a label OCR missed is read again from a contrast-stretched copy."
   },
   {
    "check_id": "PHOTO-24/watch-feature-r004/H054",
@@ -3901,33 +4194,47 @@
    "critical": false,
    "check": "On “Watch product-page feature - LC-25-0103” (watch-feature-r004.png), Tempered steel #9A9EA3 appears only in small captions, footer lines, labels or dividers, never as body text, a ground or a panel.",
    "assertion": {
-    "op": "v2_colour_only_as_pb",
-    "hexes": [
-     "#9A9EA3"
-    ],
-    "rules": "thin",
-    "allow": [
-     {
-      "roles": [
-       "fine"
-      ]
-     },
-     {
-      "footer": true
-     }
-    ],
-    "ambiguous": [
-     {
-      "roles": [
-       "other"
-      ]
-     }
-    ],
-    "photos": [
-     "lunara_pdp_ardent.jpg"
+    "op": "v2_small_labels_r5c",
+    "check": {
+     "op": "v2_colour_only_as_pb",
+     "hexes": [
+      "#9A9EA3"
+     ],
+     "rules": "thin",
+     "allow": [
+      {
+       "roles": [
+        "fine"
+       ]
+      },
+      {
+       "footer": true
+      }
+     ],
+     "ambiguous": [
+      {
+       "roles": [
+        "other"
+       ]
+      }
+     ],
+     "photos": [
+      "lunara_pdp_ardent.jpg"
+     ]
+    },
+    "extra_ocr": true,
+    "not_labels": [
+     "LUNARA",
+     "CHRONOMETRY",
+     "LUNARA CHRONOMETRY",
+     "Meridian",
+     "Selene",
+     "Ardent",
+     "Halcyon",
+     "Vesper"
     ]
    },
-   "how": "Finds every piece in the colour outside the photographs and checks each is a thin rule or sits in an allowed text line."
+   "how": "Reads each text line and the colour of its letters and ground; a small line in capitals (a label) may use the label colours, and a label OCR missed is read again from a contrast-stretched copy."
   },
   {
    "check_id": "PHOTO-24/watch-feature-r005/H055",
@@ -3937,33 +4244,47 @@
    "critical": false,
    "check": "On “Watch product-page feature - LC-25-0104” (watch-feature-r005.png), Tempered steel #9A9EA3 appears only in small captions, footer lines, labels or dividers, never as body text, a ground or a panel.",
    "assertion": {
-    "op": "v2_colour_only_as_pb",
-    "hexes": [
-     "#9A9EA3"
-    ],
-    "rules": "thin",
-    "allow": [
-     {
-      "roles": [
-       "fine"
-      ]
-     },
-     {
-      "footer": true
-     }
-    ],
-    "ambiguous": [
-     {
-      "roles": [
-       "other"
-      ]
-     }
-    ],
-    "photos": [
-     "lunara_pdp_halcyon.jpg"
+    "op": "v2_small_labels_r5c",
+    "check": {
+     "op": "v2_colour_only_as_pb",
+     "hexes": [
+      "#9A9EA3"
+     ],
+     "rules": "thin",
+     "allow": [
+      {
+       "roles": [
+        "fine"
+       ]
+      },
+      {
+       "footer": true
+      }
+     ],
+     "ambiguous": [
+      {
+       "roles": [
+        "other"
+       ]
+      }
+     ],
+     "photos": [
+      "lunara_pdp_halcyon.jpg"
+     ]
+    },
+    "extra_ocr": true,
+    "not_labels": [
+     "LUNARA",
+     "CHRONOMETRY",
+     "LUNARA CHRONOMETRY",
+     "Meridian",
+     "Selene",
+     "Ardent",
+     "Halcyon",
+     "Vesper"
     ]
    },
-   "how": "Finds every piece in the colour outside the photographs and checks each is a thin rule or sits in an allowed text line."
+   "how": "Reads each text line and the colour of its letters and ground; a small line in capitals (a label) may use the label colours, and a label OCR missed is read again from a contrast-stretched copy."
   },
   {
    "check_id": "PHOTO-24/watch-feature-r006/H054",
@@ -3973,33 +4294,47 @@
    "critical": false,
    "check": "On “Watch product-page feature - LC-25-0105” (watch-feature-r006.png), Tempered steel #9A9EA3 appears only in small captions, footer lines, labels or dividers, never as body text, a ground or a panel.",
    "assertion": {
-    "op": "v2_colour_only_as_pb",
-    "hexes": [
-     "#9A9EA3"
-    ],
-    "rules": "thin",
-    "allow": [
-     {
-      "roles": [
-       "fine"
-      ]
-     },
-     {
-      "footer": true
-     }
-    ],
-    "ambiguous": [
-     {
-      "roles": [
-       "other"
-      ]
-     }
-    ],
-    "photos": [
-     "lunara_pdp_vesper.jpg"
+    "op": "v2_small_labels_r5c",
+    "check": {
+     "op": "v2_colour_only_as_pb",
+     "hexes": [
+      "#9A9EA3"
+     ],
+     "rules": "thin",
+     "allow": [
+      {
+       "roles": [
+        "fine"
+       ]
+      },
+      {
+       "footer": true
+      }
+     ],
+     "ambiguous": [
+      {
+       "roles": [
+        "other"
+       ]
+      }
+     ],
+     "photos": [
+      "lunara_pdp_vesper.jpg"
+     ]
+    },
+    "extra_ocr": true,
+    "not_labels": [
+     "LUNARA",
+     "CHRONOMETRY",
+     "LUNARA CHRONOMETRY",
+     "Meridian",
+     "Selene",
+     "Ardent",
+     "Halcyon",
+     "Vesper"
     ]
    },
-   "how": "Finds every piece in the colour outside the photographs and checks each is a thin rule or sits in an allowed text line."
+   "how": "Reads each text line and the colour of its letters and ground; a small line in capitals (a label) may use the label colours, and a label OCR missed is read again from a contrast-stretched copy."
   },
   {
    "check_id": "PHOTO-24/dealer-launch/H068",
@@ -4009,30 +4344,44 @@
    "critical": false,
    "check": "On “Watch dealer launch sheet” (dealer-launch.pdf), Tempered steel #9A9EA3 appears only in small captions, footer lines, labels or dividers, never as body text, a ground or a panel.",
    "assertion": {
-    "op": "v2_colour_only_as_pb",
-    "hexes": [
-     "#9A9EA3"
-    ],
-    "rules": "thin",
-    "allow": [
-     {
-      "roles": [
-       "fine"
-      ]
-     },
-     {
-      "footer": true
-     }
-    ],
-    "ambiguous": [
-     {
-      "roles": [
-       "other"
-      ]
-     }
+    "op": "v2_small_labels_r5c",
+    "check": {
+     "op": "v2_colour_only_as_pb",
+     "hexes": [
+      "#9A9EA3"
+     ],
+     "rules": "thin",
+     "allow": [
+      {
+       "roles": [
+        "fine"
+       ]
+      },
+      {
+       "footer": true
+      }
+     ],
+     "ambiguous": [
+      {
+       "roles": [
+        "other"
+       ]
+      }
+     ]
+    },
+    "extra_ocr": true,
+    "not_labels": [
+     "LUNARA",
+     "CHRONOMETRY",
+     "LUNARA CHRONOMETRY",
+     "Meridian",
+     "Selene",
+     "Ardent",
+     "Halcyon",
+     "Vesper"
     ]
    },
-   "how": "Finds every piece in the colour outside the photographs and checks each is a thin rule or sits in an allowed text line."
+   "how": "Reads each text line and the colour of its letters and ground; a small line in capitals (a label) may use the label colours, and a label OCR missed is read again from a contrast-stretched copy."
   },
   {
    "check_id": "PHOTO-24/watch-feature-r002/H057",
@@ -4967,13 +5316,36 @@
    "critical": false,
    "check": "Every figure on “Autumn watch key visual” (watch-keyvisual.png) is a lining figure at full capital height, with no old-style figure dropping below the line.",
    "assertion": {
-    "op": "v2_lining_r4t",
+    "op": "v2_lining_r5c",
     "pass_tol": 0.06,
     "fail_short": 0.85,
     "fail_drop": 0.12,
-    "photo_digit_max": 0.03
+    "photo_digit_max": 0.03,
+    "known": [],
+    "photos": [
+     "lunara_campaign_01.jpg",
+     "lunara_campaign_02.jpg",
+     "lunara_campaign_03.jpg",
+     "lunara_campaign_04.jpg",
+     "lunara_campaign_05.jpg",
+     "lunara_campaign_06.jpg",
+     "lunara_campaign_07.jpg",
+     "lunara_campaign_08.jpg",
+     "lunara_campaign_09.jpg",
+     "lunara_detail_caseback.jpg",
+     "lunara_detail_clasp.jpg",
+     "lunara_detail_crown.jpg",
+     "lunara_detail_handstack.jpg",
+     "lunara_detail_lug.jpg",
+     "lunara_detail_movement.jpg",
+     "lunara_pdp_ardent.jpg",
+     "lunara_pdp_halcyon.jpg",
+     "lunara_pdp_meridian.jpg",
+     "lunara_pdp_selene.jpg",
+     "lunara_pdp_vesper.jpg"
+    ]
    },
-   "how": "Measures every figure glyph (PDF: rendered glyph ink; images: ink pieces inside each word OCR reads) against the tallest capital or figure beside it and their common baseline."
+   "how": "Measures every figure glyph against the tallest capital or figure beside it and their common baseline; a serial read faintly counts when it matches the record exactly, and marks matching the supplied photo are left out."
   },
   {
    "check_id": "PHOTO-24/watch-feature-r002/H025",
@@ -4983,13 +5355,20 @@
    "critical": false,
    "check": "Every figure on “Watch product-page feature - LC-25-0101” (watch-feature-r002.png) is a lining figure at full capital height, with no old-style figure dropping below the line.",
    "assertion": {
-    "op": "v2_lining_r4t",
+    "op": "v2_lining_r5c",
     "pass_tol": 0.06,
     "fail_short": 0.85,
     "fail_drop": 0.12,
-    "photo_digit_max": 0.03
+    "photo_digit_max": 0.03,
+    "known": [
+     "LC-25-0101",
+     "LM-01"
+    ],
+    "photos": [
+     "lunara_pdp_meridian.jpg"
+    ]
    },
-   "how": "Measures every figure glyph (PDF: rendered glyph ink; images: ink pieces inside each word OCR reads) against the tallest capital or figure beside it and their common baseline."
+   "how": "Measures every figure glyph against the tallest capital or figure beside it and their common baseline; a serial read faintly counts when it matches the record exactly, and marks matching the supplied photo are left out."
   },
   {
    "check_id": "PHOTO-24/watch-feature-r003/H024",
@@ -4999,13 +5378,20 @@
    "critical": false,
    "check": "Every figure on “Watch product-page feature - LC-25-0102” (watch-feature-r003.png) is a lining figure at full capital height, with no old-style figure dropping below the line.",
    "assertion": {
-    "op": "v2_lining_r4t",
+    "op": "v2_lining_r5c",
     "pass_tol": 0.06,
     "fail_short": 0.85,
     "fail_drop": 0.12,
-    "photo_digit_max": 0.03
+    "photo_digit_max": 0.03,
+    "known": [
+     "LC-25-0102",
+     "LM-02"
+    ],
+    "photos": [
+     "lunara_pdp_selene.jpg"
+    ]
    },
-   "how": "Measures every figure glyph (PDF: rendered glyph ink; images: ink pieces inside each word OCR reads) against the tallest capital or figure beside it and their common baseline."
+   "how": "Measures every figure glyph against the tallest capital or figure beside it and their common baseline; a serial read faintly counts when it matches the record exactly, and marks matching the supplied photo are left out."
   },
   {
    "check_id": "PHOTO-24/watch-feature-r004/H023",
@@ -5015,13 +5401,20 @@
    "critical": false,
    "check": "Every figure on “Watch product-page feature - LC-25-0103” (watch-feature-r004.png) is a lining figure at full capital height, with no old-style figure dropping below the line.",
    "assertion": {
-    "op": "v2_lining_r4t",
+    "op": "v2_lining_r5c",
     "pass_tol": 0.06,
     "fail_short": 0.85,
     "fail_drop": 0.12,
-    "photo_digit_max": 0.03
+    "photo_digit_max": 0.03,
+    "known": [
+     "LC-25-0103",
+     "LM-01"
+    ],
+    "photos": [
+     "lunara_pdp_ardent.jpg"
+    ]
    },
-   "how": "Measures every figure glyph (PDF: rendered glyph ink; images: ink pieces inside each word OCR reads) against the tallest capital or figure beside it and their common baseline."
+   "how": "Measures every figure glyph against the tallest capital or figure beside it and their common baseline; a serial read faintly counts when it matches the record exactly, and marks matching the supplied photo are left out."
   },
   {
    "check_id": "PHOTO-24/watch-feature-r005/H024",
@@ -5031,13 +5424,20 @@
    "critical": false,
    "check": "Every figure on “Watch product-page feature - LC-25-0104” (watch-feature-r005.png) is a lining figure at full capital height, with no old-style figure dropping below the line.",
    "assertion": {
-    "op": "v2_lining_r4t",
+    "op": "v2_lining_r5c",
     "pass_tol": 0.06,
     "fail_short": 0.85,
     "fail_drop": 0.12,
-    "photo_digit_max": 0.03
+    "photo_digit_max": 0.03,
+    "known": [
+     "LC-25-0104",
+     "LM-03"
+    ],
+    "photos": [
+     "lunara_pdp_halcyon.jpg"
+    ]
    },
-   "how": "Measures every figure glyph (PDF: rendered glyph ink; images: ink pieces inside each word OCR reads) against the tallest capital or figure beside it and their common baseline."
+   "how": "Measures every figure glyph against the tallest capital or figure beside it and their common baseline; a serial read faintly counts when it matches the record exactly, and marks matching the supplied photo are left out."
   },
   {
    "check_id": "PHOTO-24/watch-feature-r006/H023",
@@ -5047,13 +5447,20 @@
    "critical": false,
    "check": "Every figure on “Watch product-page feature - LC-25-0105” (watch-feature-r006.png) is a lining figure at full capital height, with no old-style figure dropping below the line.",
    "assertion": {
-    "op": "v2_lining_r4t",
+    "op": "v2_lining_r5c",
     "pass_tol": 0.06,
     "fail_short": 0.85,
     "fail_drop": 0.12,
-    "photo_digit_max": 0.03
+    "photo_digit_max": 0.03,
+    "known": [
+     "LC-25-0105",
+     "LM-02"
+    ],
+    "photos": [
+     "lunara_pdp_vesper.jpg"
+    ]
    },
-   "how": "Measures every figure glyph (PDF: rendered glyph ink; images: ink pieces inside each word OCR reads) against the tallest capital or figure beside it and their common baseline."
+   "how": "Measures every figure glyph against the tallest capital or figure beside it and their common baseline; a serial read faintly counts when it matches the record exactly, and marks matching the supplied photo are left out."
   },
   {
    "check_id": "PHOTO-24/dealer-launch/H041",
@@ -5063,13 +5470,14 @@
    "critical": false,
    "check": "Every figure on “Watch dealer launch sheet” (dealer-launch.pdf) is a lining figure at full capital height, with no old-style figure dropping below the line.",
    "assertion": {
-    "op": "v2_lining_r4t",
+    "op": "v2_lining_r5c",
     "pass_tol": 0.06,
     "fail_short": 0.85,
     "fail_drop": 0.12,
-    "photo_digit_max": 0.03
+    "photo_digit_max": 0.03,
+    "known": []
    },
-   "how": "Measures every figure glyph (PDF: rendered glyph ink; images: ink pieces inside each word OCR reads) against the tallest capital or figure beside it and their common baseline."
+   "how": "Measures every figure glyph against the tallest capital or figure beside it and their common baseline; a serial read faintly counts when it matches the record exactly, and marks matching the supplied photo are left out."
   },
   {
    "check_id": "PHOTO-24/watch-keyvisual/H020",

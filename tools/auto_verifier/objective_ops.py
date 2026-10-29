@@ -1276,3 +1276,9 @@ from objective_ops_r4 import OPS_R4  # noqa: E402
 if [k for k in OPS_R4 if OPS.get(k, OPS_R4[k]) is not OPS_R4[k]]:
     raise ValueError(f'round 4 redefines {[k for k in OPS_R4 if OPS.get(k, OPS_R4[k]) is not OPS_R4[k]]}')
 OPS.update(OPS_R4)
+
+# round 5 (2026-10-29): close calls settled by code, and objective look, count and read checks by a vision model
+from objective_ops_r5 import OPS_R5  # noqa: E402
+if [k for k in OPS_R5 if OPS.get(k, OPS_R5[k]) is not OPS_R5[k]]:
+    raise ValueError(f'round 5 redefines {[k for k in OPS_R5 if OPS.get(k, OPS_R5[k]) is not OPS_R5[k]]}')
+OPS.update(OPS_R5)

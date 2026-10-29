@@ -39,6 +39,7 @@
    "code_check": [
     "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-28/studio-launch/H001",
@@ -89,6 +90,7 @@
    "code_check": [
     "Reads the names set with a price on their own row and checks the list, or that nothing else sits inside the block, for each of the 2 named texts; all must pass."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-28/studio-launch/H002",
@@ -151,6 +153,7 @@
    "code_check": [
     "Finds which supplied photo is shown, then checks the text for that person: reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-28/class-feed/H001",
@@ -343,6 +346,7 @@
    "code_check": [
     "Finds which supplied photo is shown, then checks the text for that person: reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-28/class-feed/H010",
@@ -403,6 +407,7 @@
    "code_check": [
     "Finds which supplied photo is shown, then checks the text for that person, for each of the 3 named texts; all must pass."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-28/class-feed/H011",
@@ -467,6 +472,7 @@
    "code_check": [
     "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-28/class-feed/H012",
@@ -531,6 +537,7 @@
    "code_check": [
     "Finds every price and checks each meets the rule."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-28/studio-launch/H011",
@@ -622,6 +629,7 @@
    "code_check": [
     "Reads all text and checks none of the named words or patterns appears, for each of the 2 named texts; all must pass."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-28/class-feed/H020",
@@ -694,6 +702,7 @@
    "code_check": [
     "Reads where each value stands and checks the value that belongs to this name (by its section, column or line) is the expected one."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-28/booking-story/H005",
@@ -762,6 +771,7 @@
    "code_check": [
     "Reads the type by OCR or from the PDF, leaving out lettering inside the supplied photos, and looks for the wording."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-28/studio-launch/H012",
@@ -852,6 +862,7 @@
    "code_check": [
     "Reads the text and checks every name that appears is given in full."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-28/studio-launch/H013",
@@ -938,6 +949,7 @@
    "code_check": [
     "Reads where each value stands and checks the value that belongs to this name (by its section, column or line) is the expected one."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-28/studio-launch/H014",
@@ -1017,6 +1029,7 @@
    "code_check": [
     "Reads the names set with a price on their own row and checks the list, or that nothing else sits inside the block."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-28/studio-launch/H006",
@@ -1066,8 +1079,11 @@
    ],
    "slot_labels": {},
    "shared_reference": null,
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Asks the vision model whether the image shows a booking button or a line telling the viewer how to book."
+   ],
+   "answered_with": "vision model",
    "rows": [
     {
      "check_id": "PHOTO-28/studio-launch/H065",
@@ -1131,6 +1147,7 @@
    "code_check": [
     "Lays the supplied photo over the placed one and looks for its original backdrop left unchanged round the subject."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-28/class-feed/H063",
@@ -1181,6 +1198,7 @@
    "code_check": [
     "Reads the names set with a price on their own row and checks the list, or that nothing else sits inside the block."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-28/studio-launch/H070",
@@ -1240,6 +1258,7 @@
    "code_check": [
     "Reads the names set with a price on their own row and checks the list, or that nothing else sits inside the block."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-28/studio-launch/H072",
@@ -1308,6 +1327,7 @@
    "code_check": [
     "Reads the names set with a price on their own row and checks the list, or that nothing else sits inside the block."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-28/studio-launch/H073",
@@ -1376,6 +1396,7 @@
    "code_check": [
     "Reads the names set with a price on their own row and checks the list, or that nothing else sits inside the block."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-28/studio-launch/H074",
@@ -1444,6 +1465,7 @@
    "code_check": [
     "Reads the names set with a price on their own row and checks the list, or that nothing else sits inside the block."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-28/studio-launch/H075",
@@ -1512,6 +1534,7 @@
    "code_check": [
     "Reads the names set with a price on their own row and checks the list, or that nothing else sits inside the block."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-28/studio-launch/H076",
@@ -1580,6 +1603,7 @@
    "code_check": [
     "Reads the names set with a price on their own row and checks the list, or that nothing else sits inside the block."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-28/studio-launch/H077",
@@ -1648,6 +1672,7 @@
    "code_check": [
     "Reads where each value stands and checks the value that belongs to this name (by its section, column or line) is the expected one."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-28/booking-story/H068",
@@ -1716,6 +1741,7 @@
    "code_check": [
     "Reads where each value stands and checks the value that belongs to this name (by its section, column or line) is the expected one."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-28/booking-story/H069",
@@ -1780,6 +1806,7 @@
    "code_check": [
     "Finds which supplied photo is shown, then checks the text for that person, for each of the 2 named texts; all must pass."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-28/class-feed/H069",
@@ -1840,6 +1867,7 @@
    "code_check": [
     "Finds which supplied photo is shown, then checks the text for that person, for each of the 1 named texts; all must pass."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-28/class-feed/H070",
@@ -1904,6 +1932,7 @@
    "code_check": [
     "Reads where each value stands and checks the value that belongs to this name (by its section, column or line) is the expected one."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-28/studio-launch/H082",
@@ -1994,6 +2023,7 @@
    "code_check": [
     "Reads where each value stands and checks the value that belongs to this name (by its section, column or line) is the expected one."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-28/studio-launch/H084",
@@ -2084,6 +2114,7 @@
    "code_check": [
     "Reads where each value stands and checks the value that belongs to this name (by its section, column or line) is the expected one."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-28/studio-launch/H086",
@@ -2174,6 +2205,7 @@
    "code_check": [
     "Reads where each value stands and checks the value that belongs to this name (by its section, column or line) is the expected one."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-28/studio-launch/H088",
@@ -2264,6 +2296,7 @@
    "code_check": [
     "Reads where each value stands and checks the value that belongs to this name (by its section, column or line) is the expected one."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-28/studio-launch/H090",
@@ -2389,8 +2422,11 @@
     "assets": [],
     "note": "Brief: the booking action is visible. Acceptance: it remains inside the output boundaries."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Asks the vision model whether any part of the booking button or line is cut off at an image edge; it passes when the model finds none."
+   ],
+   "answered_with": "vision model",
    "rows": [
     {
      "check_id": "PHOTO-28/studio-launch/H003",
@@ -2441,6 +2477,7 @@
    "code_check": [
     "Checks each named text lies fully inside the page or image, for each of the 2 named texts; all must pass."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-28/booking-story/H002",
@@ -2500,6 +2537,7 @@
    "code_check": [
     "Reads the type by OCR or from the PDF, leaving out lettering inside the supplied photos, and looks for the wording."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-28/class-feed/H003",
@@ -2623,6 +2661,7 @@
    "code_check": [
     "Reads the type by OCR or from the PDF, leaving out lettering inside the supplied photos, and looks for the wording."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-28/studio-launch/H010",
@@ -2732,6 +2771,7 @@
    "code_check": [
     "Reads all text and checks none of the named words or patterns appears."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-28/class-feed/H021",
@@ -2796,6 +2836,7 @@
    "code_check": [
     "Finds each supplied photo on the file, runs the check on each, and checks no other photograph is present."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-28/studio-launch/H017",
@@ -2892,6 +2933,7 @@
    "code_check": [
     "Finds each supplied photo on the file, runs the check on each, and checks no other photograph is present."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-28/studio-launch/H018",
@@ -2992,6 +3034,7 @@
    "code_check": [
     "Reads the type by OCR or from the PDF, leaving out lettering inside the supplied photos, and looks for the wording."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-28/booking-story/H006",
@@ -3060,6 +3103,7 @@
    "code_check": [
     "Reads all text and checks none of the named words or patterns appears."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-28/studio-launch/H015",
@@ -3146,6 +3190,7 @@
    "code_check": [
     "Finds each supplied photo on the file, runs the check on each, and checks no other photograph is present."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-28/studio-launch/H016",
@@ -3228,6 +3273,7 @@
    "code_check": [
     "Reads the type by OCR or from the PDF, leaving out lettering inside the supplied photos, and looks for the wording."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-28/studio-launch/H007",
@@ -3287,6 +3333,7 @@
    "code_check": [
     "Finds the supplied photo's cut-out subject and reads the flat ground wrapped round it."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-28/class-feed/H071",
@@ -3347,6 +3394,7 @@
    "code_check": [
     "Reads the type by OCR or from the PDF, leaving out lettering inside the supplied photos, and looks for the wording."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-28/studio-launch/H008",
@@ -3460,8 +3508,11 @@
     ],
     "note": "owner_note.txt: \"we were meant to open in September, then it slipped to October, and now it is eleven weeks out.\" Production requirements: \"Do not invent claims, prices, dates, credentials or product features.\""
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Asks the vision model to copy any text stating when the studio opens; a copied opening date or month fails, anything else goes to a person."
+   ],
+   "answered_with": "vision model",
    "rows": [
     {
      "check_id": "PHOTO-28/studio-launch/H009",
@@ -3565,6 +3616,7 @@
    "code_check": [
     "Finds the supplied photo, then reads the names standing beside it."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-28/class-feed/H002",
@@ -3781,6 +3833,7 @@
    "code_check": [
     "Searches the deliverable for the supplied file (feature matching, confirmed by correlation)."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-28/class-feed/H009",
@@ -3872,6 +3925,7 @@
    "code_check": [
     "Finds the supplied photo, then reads the names standing beside it."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-28/studio-launch/H024",
@@ -4215,6 +4269,7 @@
    "code_check": [
     "Searches the deliverable for the supplied file (feature matching, confirmed by correlation)."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-28/studio-launch/H019",
@@ -4283,6 +4338,7 @@
    "code_check": [
     "Finds each supplied photo on the file, runs the check on each, and checks no other photograph is present."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-28/studio-launch/H063",
@@ -4439,6 +4495,7 @@
    "code_check": [
     "Finds which supplied photo is shown, then checks the text for that person: hands the row to a person (used where code settles only the files without the element)."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-28/class-feed/H014",
@@ -4499,6 +4556,7 @@
    "code_check": [
     "Finds which supplied photo is shown, then checks the text for that person: hands the row to a person (used where code settles only the files without the element)."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-28/class-feed/H015",
@@ -4559,6 +4617,7 @@
    "code_check": [
     "Lays the supplied photo over the placed one and compares them tile by tile: colour, detail and correlation."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-28/studio-launch/H025",
@@ -4781,6 +4840,7 @@
    "code_check": [
     "Finds the wordmark, splits its letters from the ground and measures their height, proportions, spacing, counters and edges."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-28/studio-launch/H028",
@@ -4881,6 +4941,7 @@
    "code_check": [
     "Finds the wordmark, splits its letters from the ground and measures their height, proportions, spacing, counters and edges."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-28/studio-launch/H029",
@@ -4993,6 +5054,7 @@
    "code_check": [
     "Finds each supplied photo on the file, runs the check on each, and checks no other photograph is present."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-28/studio-launch/H067",
@@ -5074,6 +5136,7 @@
    "code_check": [
     "Finds each supplied photo on the file, runs the check on each, and checks no other photograph is present."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-28/studio-launch/H068",
@@ -5208,6 +5271,7 @@
    "code_check": [
     "Finds the wordmark, splits its letters from the ground and measures their height, proportions, spacing, counters and edges."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-28/studio-launch/H071",
@@ -5296,6 +5360,7 @@
    "code_check": [
     "Finds every ground and panel (flat areas outside the photographs) and reads its colour."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-28/studio-launch/H036",
@@ -5387,6 +5452,7 @@
    "code_check": [
     "Reads every flat colour outside the photographs and checks each is a palette colour, the wordmark's own ink allowed in its box."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-28/studio-launch/H033",
@@ -5463,6 +5529,7 @@
    "code_check": [
     "Looks for the colour as a flat area outside the photographs."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-28/studio-launch/H034",
@@ -5544,6 +5611,7 @@
    "code_check": [
     "Checks every flat designed colour is a palette colour, with no shaded area and no type over a photograph."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-28/studio-launch/H035",
@@ -5636,8 +5704,11 @@
     ],
     "note": "Palette rules, distribution: On Warm Off White, headlines, body text, prices, fine print and the wordmark are Soft Ink, and only small labels may be Sage, as on passcard_2025_print.pdf. On Sage, all type and the wordmark are Soft Ink or Warm Off White."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Reads each text line and the colour of its letters and ground; a small line in capitals (a label) may use the label colours, and a label OCR missed is read again from a contrast-stretched copy."
+   ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-28/studio-launch/H037",
@@ -5734,6 +5805,7 @@
    "code_check": [
     "Finds every piece in the colour outside the photographs and checks each is a thin rule or sits in an allowed text line."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-28/studio-launch/H038",
@@ -5825,6 +5897,7 @@
    "code_check": [
     "Reads each text line (OCR on images, live text on PDFs), the colour of its letters and of the ground behind it, and checks the pairing."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-28/studio-launch/H057",
@@ -5975,6 +6048,7 @@
    "code_check": [
     "Reads each text line (OCR on images, live text on PDFs), the colour of its letters and of the ground behind it, and checks the pairing."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-28/studio-launch/H059",
@@ -6161,6 +6235,7 @@
    "code_check": [
     "Measures the share of the area outside the photographs in the named colours."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-28/studio-launch/H078",
@@ -6246,6 +6321,7 @@
    "code_check": [
     "Reads each text line (OCR on images, live text on PDFs), the colour of its letters and of the ground behind it, and checks the pairing, for each of the 2 named texts; all must pass."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-28/studio-launch/H079",
@@ -6349,6 +6425,7 @@
    "code_check": [
     "Finds each supplied photo on the file, runs the check on each, and checks no other photograph is present."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-28/studio-launch/H080",
@@ -6412,6 +6489,7 @@
    "code_check": [
     "Reads the colour of each text line's letters and looks for one in the colour."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-28/studio-launch/H081",
@@ -6497,6 +6575,7 @@
    "code_check": [
     "Reads each text line (OCR on images, live text on PDFs), the colour of its letters and of the ground behind it, and checks the pairing, for each of the 2 named texts; all must pass."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-28/studio-launch/H093",
@@ -6600,6 +6679,7 @@
    "code_check": [
     "Finds the wordmark, splits its letters from the ground and measures their height, proportions, spacing, counters and edges."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-28/studio-launch/H031",
@@ -6685,6 +6765,7 @@
    "code_check": [
     "Reads each named line by OCR, renders its own text in every brand font and weight and in common stand-in fonts, and compares the letter shapes and stroke thickness with the image; only a clear best match counts."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-28/class-feed/H038",
@@ -7068,6 +7149,7 @@
    "code_check": [
     "Reads each line of text and counts its characters."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-28/studio-launch/H042",
@@ -7342,6 +7424,7 @@
    "code_check": [
     "Reads each named line by OCR, renders its own text in every brand font and weight and in common stand-in fonts, and compares the letter shapes and stroke thickness with the image; only a clear best match counts."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-28/studio-launch/H064",
@@ -7518,6 +7601,7 @@
    "code_check": [
     "Counts the lines the named text runs over."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-28/studio-launch/H030",
@@ -7595,8 +7679,11 @@
     ],
     "note": "owner_note.txt: \"No orange skin, no black rubber floor, nothing shouting.\" Brand price positioning: \"never pretension and never a discount\". Brand voice: \"Confident without hype\"."
    },
-   "answered_by": "person",
-   "code_check": [],
+   "answered_by": "code",
+   "code_check": [
+    "Asks the vision model to copy any discount or urgency wording; plain discount or urgency words fail, other copied wording goes to a person."
+   ],
+   "answered_with": "vision model",
    "rows": [
     {
      "check_id": "PHOTO-28/studio-launch/H043",
@@ -7688,6 +7775,7 @@
    "code_check": [
     "Finds the wordmark and the largest heading and compares their positions."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-28/studio-launch/H032",
@@ -7958,6 +8046,7 @@
    "code_check": [
     "Finds the wordmark and the largest heading and compares their positions."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-28/class-feed/H065",
@@ -8021,6 +8110,7 @@
    "code_check": [
     "Reads the type by OCR or from the PDF, leaving out lettering inside the supplied photos, and looks for the wording."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-28/studio-launch/H069",
@@ -8302,6 +8392,7 @@
    "code_check": [
     "Finds the wordmark, splits its letters from the ground and measures their height, proportions, spacing, counters and edges."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-28/studio-launch/H027",
@@ -8402,6 +8493,7 @@
    "code_check": [
     "Lays the supplied photo over the placed one and compares them tile by tile: colour, detail and correlation."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-28/studio-launch/H021",
@@ -8510,6 +8602,7 @@
    "code_check": [
     "Lays the supplied photo over the placed one and checks its blown-out area is cropped away or still plain."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-28/studio-launch/H022",
@@ -8630,6 +8723,7 @@
    "code_check": [
     "Finds each supplied photo on the file, runs the check on each, and checks no other photograph is present."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-28/studio-launch/H023",
@@ -8760,6 +8854,7 @@
    "code_check": [
     "Lays the supplied photo over the placed one and compares them tile by tile: colour, detail and correlation."
    ],
+   "answered_with": "code",
    "rows": [
     {
      "check_id": "PHOTO-28/studio-launch/H062",

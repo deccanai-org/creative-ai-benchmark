@@ -1063,16 +1063,21 @@
    "critical": false,
    "check": "If a minimum stay appears on “Villa booking hero - Oliveto” (booking-hero-oliveto.png), it reads 3 nights, the Casa Oliveto Spring minimum in rates_2027.csv.",
    "assertion": {
-    "op": "v2_text_present",
-    "line_has": "minimum|min\\.? stay",
-    "optional": true,
-    "expected": [
-     {
-      "regex": "\\b3\\b"
-     }
-    ]
+    "op": "vlm_text_rx_r5vb",
+    "none_found": "pass",
+    "values_rx": {
+     "rx": "\\bmin(?:imum|\\.)?\\s*(?:stay)?\\s*(?:of|is|:)?\\s*(\\d+)\\s*-?\\s*nights?\\b|\\b(\\d+)\\s*-?\\s*nights?\\s*min(?:imum|\\.)?\\b",
+     "allowed": [
+      "3"
+     ]
+    },
+    "person_rx": [
+     "\\b\\d+\\s*-?\\s*nights?\\b",
+     "\\bminimum\\b|\\bmin\\."
+    ],
+    "how": "Copies every text on the file with the vision model; code checks any minimum stay given is 3 nights."
    },
-   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+   "how": "Copies every text on the file with the vision model; code checks any minimum stay given is 3 nights."
   },
   {
    "check_id": "PHOTO-04/booking-hero-scogliera/H008",
@@ -1082,16 +1087,21 @@
    "critical": false,
    "check": "If a minimum stay appears on “Villa booking hero - Scogliera” (booking-hero-scogliera.png), it reads 4 nights, the Casa Scogliera Spring minimum in rates_2027.csv.",
    "assertion": {
-    "op": "v2_text_present",
-    "line_has": "minimum|min\\.? stay",
-    "optional": true,
-    "expected": [
-     {
-      "regex": "\\b4\\b"
-     }
-    ]
+    "op": "vlm_text_rx_r5vb",
+    "none_found": "pass",
+    "values_rx": {
+     "rx": "\\bmin(?:imum|\\.)?\\s*(?:stay)?\\s*(?:of|is|:)?\\s*(\\d+)\\s*-?\\s*nights?\\b|\\b(\\d+)\\s*-?\\s*nights?\\s*min(?:imum|\\.)?\\b",
+     "allowed": [
+      "4"
+     ]
+    },
+    "person_rx": [
+     "\\b\\d+\\s*-?\\s*nights?\\b",
+     "\\bminimum\\b|\\bmin\\."
+    ],
+    "how": "Copies every text on the file with the vision model; code checks any minimum stay given is 4 nights."
    },
-   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+   "how": "Copies every text on the file with the vision model; code checks any minimum stay given is 4 nights."
   },
   {
    "check_id": "PHOTO-04/booking-hero-verranza/H008",
@@ -1101,16 +1111,21 @@
    "critical": false,
    "check": "If a minimum stay appears on “Villa booking hero - Verranza” (booking-hero-verranza.png), it reads 3 nights, the Casa Verranza Spring minimum in rates_2027.csv.",
    "assertion": {
-    "op": "v2_text_present",
-    "line_has": "minimum|min\\.? stay",
-    "optional": true,
-    "expected": [
-     {
-      "regex": "\\b3\\b"
-     }
-    ]
+    "op": "vlm_text_rx_r5vb",
+    "none_found": "pass",
+    "values_rx": {
+     "rx": "\\bmin(?:imum|\\.)?\\s*(?:stay)?\\s*(?:of|is|:)?\\s*(\\d+)\\s*-?\\s*nights?\\b|\\b(\\d+)\\s*-?\\s*nights?\\s*min(?:imum|\\.)?\\b",
+     "allowed": [
+      "3"
+     ]
+    },
+    "person_rx": [
+     "\\b\\d+\\s*-?\\s*nights?\\b",
+     "\\bminimum\\b|\\bmin\\."
+    ],
+    "how": "Copies every text on the file with the vision model; code checks any minimum stay given is 3 nights."
    },
-   "how": "Reads the text (live PDF text, or OCR on images and video frames) and checks the expected wording is there."
+   "how": "Copies every text on the file with the vision model; code checks any minimum stay given is 3 nights."
   },
   {
    "check_id": "PHOTO-04/villa-collection/H063",
@@ -1167,12 +1182,14 @@
    "critical": false,
    "check": "No copy on “Villa booking hero - Oliveto” (booking-hero-oliveto.png) names or offers Casa Fienile.",
    "assertion": {
-    "op": "v2_text_absent",
-    "texts": [
-     "Fienile"
-    ]
+    "op": "vlm_text_rx_r5vb",
+    "none_found": "pass",
+    "forbid_rx": [
+     "fienile"
+    ],
+    "how": "Copies every text on the file with the vision model; code checks Casa Fienile is not named."
    },
-   "how": "Reads all text and checks none of the named words or patterns appears."
+   "how": "Copies every text on the file with the vision model; code checks Casa Fienile is not named."
   },
   {
    "check_id": "PHOTO-04/booking-hero-scogliera/H068",
@@ -1182,12 +1199,14 @@
    "critical": false,
    "check": "No copy on “Villa booking hero - Scogliera” (booking-hero-scogliera.png) names or offers Casa Fienile.",
    "assertion": {
-    "op": "v2_text_absent",
-    "texts": [
-     "Fienile"
-    ]
+    "op": "vlm_text_rx_r5vb",
+    "none_found": "pass",
+    "forbid_rx": [
+     "fienile"
+    ],
+    "how": "Copies every text on the file with the vision model; code checks Casa Fienile is not named."
    },
-   "how": "Reads all text and checks none of the named words or patterns appears."
+   "how": "Copies every text on the file with the vision model; code checks Casa Fienile is not named."
   },
   {
    "check_id": "PHOTO-04/booking-hero-verranza/H068",
@@ -1197,12 +1216,14 @@
    "critical": false,
    "check": "No copy on “Villa booking hero - Verranza” (booking-hero-verranza.png) names or offers Casa Fienile.",
    "assertion": {
-    "op": "v2_text_absent",
-    "texts": [
-     "Fienile"
-    ]
+    "op": "vlm_text_rx_r5vb",
+    "none_found": "pass",
+    "forbid_rx": [
+     "fienile"
+    ],
+    "how": "Copies every text on the file with the vision model; code checks Casa Fienile is not named."
    },
-   "how": "Reads all text and checks none of the named words or patterns appears."
+   "how": "Copies every text on the file with the vision model; code checks Casa Fienile is not named."
   },
   {
    "check_id": "PHOTO-04/villa-collection/H003",
@@ -1357,13 +1378,49 @@
    "critical": true,
    "check": "“Villa comparison brochure” (villa-collection.pdf) contains no entry for the sold house “Casa Fienile”; offering it makes the brochure unusable.",
    "assertion": {
-    "op": "v2_text_absent",
-    "texts": [
-     "Fienile"
+    "op": "vlm_items_r5vb",
+    "images": [
+     {
+      "src": "deliverable",
+      "page": 1,
+      "dpi": 100
+     },
+     {
+      "src": "deliverable",
+      "page": 2,
+      "dpi": 100
+     },
+     {
+      "src": "deliverable",
+      "page": 3,
+      "dpi": 100
+     },
+     {
+      "src": "deliverable",
+      "page": 4,
+      "dpi": 100
+     },
+     {
+      "src": "deliverable",
+      "page": 5,
+      "dpi": 100
+     },
+     {
+      "src": "deliverable",
+      "page": 6,
+      "dpi": 100
+     }
     ],
-    "found_is": "person"
+    "ok_rx": [
+     "verranza|oliveto|scogliera"
+    ],
+    "bad_rx": [
+     "fienile"
+    ],
+    "question": "These images are the pages of a villa brochure, in order. List every house name that appears as the heading of a section or page, as the label of a photograph, or as the label of a row or column in a table of rates, prices, sleeps figures or minimum stays. Copy each house name as printed, once each. Do not list a name that appears only inside a sentence of running text. answer yes if there is at least one, no if there is none.",
+    "how": "Shows the vision model every page and asks it to list each house name used as a section heading, photo label or rates table label; Casa Fienile among them fails."
    },
-   "how": "Reads all text and checks none of the named words or patterns appears."
+   "how": "Shows the vision model every page and asks it to list each house name used as a section heading, photo label or rates table label; Casa Fienile among them fails."
   },
   {
    "check_id": "PHOTO-04/villa-collection/H005",
@@ -1691,11 +1748,18 @@
    "critical": false,
    "check": "If the gate monogram appears on “Villa booking hero - Oliveto” (booking-hero-oliveto.png), it keeps every part of verranza_monogram_transparent.png: the interlocked “V” and “C”, the oval rule and the small anchor.",
    "assertion": {
-    "op": "v2_same_photo",
-    "asset": "verranza_monogram_transparent.png",
-    "min_ncc": 0.93
+    "op": "vlm_items_r5vb",
+    "none_found": "pass",
+    "need_rx": [
+     "\\bv\\b",
+     "\\bc\\b",
+     "oval|ellips|ring|border",
+     "anchor"
+    ],
+    "question": "Is there a monogram anywhere on this image: a mark made of interlocked letters, often set inside an outline? If there is none, answer no and list nothing. If there is one, answer yes and list every part of it you can clearly see, as separate short items: each letter, each line or shape round the letters, and each small symbol or picture inside it.",
+    "how": "Asks the vision model whether the image carries a monogram and, if so, to list its parts; code checks the V, the C, the oval and the anchor are all there (no monogram passes)."
    },
-   "how": "Finds the supplied photo and measures how closely the placed pixels match it."
+   "how": "Asks the vision model whether the image carries a monogram and, if so, to list its parts; code checks the V, the C, the oval and the anchor are all there (no monogram passes)."
   },
   {
    "check_id": "PHOTO-04/booking-hero-scogliera/H057",
@@ -1705,11 +1769,18 @@
    "critical": false,
    "check": "If the gate monogram appears on “Villa booking hero - Scogliera” (booking-hero-scogliera.png), it keeps every part of verranza_monogram_transparent.png: the interlocked “V” and “C”, the oval rule and the small anchor.",
    "assertion": {
-    "op": "v2_same_photo",
-    "asset": "verranza_monogram_transparent.png",
-    "min_ncc": 0.93
+    "op": "vlm_items_r5vb",
+    "none_found": "pass",
+    "need_rx": [
+     "\\bv\\b",
+     "\\bc\\b",
+     "oval|ellips|ring|border",
+     "anchor"
+    ],
+    "question": "Is there a monogram anywhere on this image: a mark made of interlocked letters, often set inside an outline? If there is none, answer no and list nothing. If there is one, answer yes and list every part of it you can clearly see, as separate short items: each letter, each line or shape round the letters, and each small symbol or picture inside it.",
+    "how": "Asks the vision model whether the image carries a monogram and, if so, to list its parts; code checks the V, the C, the oval and the anchor are all there (no monogram passes)."
    },
-   "how": "Finds the supplied photo and measures how closely the placed pixels match it."
+   "how": "Asks the vision model whether the image carries a monogram and, if so, to list its parts; code checks the V, the C, the oval and the anchor are all there (no monogram passes)."
   },
   {
    "check_id": "PHOTO-04/booking-hero-verranza/H057",
@@ -1719,11 +1790,18 @@
    "critical": false,
    "check": "If the gate monogram appears on “Villa booking hero - Verranza” (booking-hero-verranza.png), it keeps every part of verranza_monogram_transparent.png: the interlocked “V” and “C”, the oval rule and the small anchor.",
    "assertion": {
-    "op": "v2_same_photo",
-    "asset": "verranza_monogram_transparent.png",
-    "min_ncc": 0.93
+    "op": "vlm_items_r5vb",
+    "none_found": "pass",
+    "need_rx": [
+     "\\bv\\b",
+     "\\bc\\b",
+     "oval|ellips|ring|border",
+     "anchor"
+    ],
+    "question": "Is there a monogram anywhere on this image: a mark made of interlocked letters, often set inside an outline? If there is none, answer no and list nothing. If there is one, answer yes and list every part of it you can clearly see, as separate short items: each letter, each line or shape round the letters, and each small symbol or picture inside it.",
+    "how": "Asks the vision model whether the image carries a monogram and, if so, to list its parts; code checks the V, the C, the oval and the anchor are all there (no monogram passes)."
    },
-   "how": "Finds the supplied photo and measures how closely the placed pixels match it."
+   "how": "Asks the vision model whether the image carries a monogram and, if so, to list its parts; code checks the V, the C, the oval and the anchor are all there (no monogram passes)."
   },
   {
    "check_id": "PHOTO-04/booking-hero-oliveto/H063",
@@ -3901,12 +3979,12 @@
    "critical": false,
    "check": "The opening “C” of “Casa Oliveto” on “Villa booking hero - Oliveto” (booking-hero-oliveto.png) stands twice as tall as the capital “O” of “Oliveto”.",
    "assertion": {
-    "op": "v2_cap_ratio_r4t",
+    "op": "v2_cap_ratio_r5c",
     "line": "Casa Oliveto",
     "word": 1,
     "ratio": 2.0
    },
-   "how": "Splits the line into letter shapes and divides the height of its opening letter by the height of the capital that starts the later word."
+   "how": "Splits the line into letter shapes, joining the dot of an i or j to its letter, and divides the height of its opening letter by the height of the capital that starts the later word."
   },
   {
    "check_id": "PHOTO-04/booking-hero-scogliera/H020",
@@ -3916,12 +3994,12 @@
    "critical": false,
    "check": "The opening “C” of “Casa Scogliera” on “Villa booking hero - Scogliera” (booking-hero-scogliera.png) stands twice as tall as the capital “S” of “Scogliera”.",
    "assertion": {
-    "op": "v2_cap_ratio_r4t",
+    "op": "v2_cap_ratio_r5c",
     "line": "Casa Scogliera",
     "word": 1,
     "ratio": 2.0
    },
-   "how": "Splits the line into letter shapes and divides the height of its opening letter by the height of the capital that starts the later word."
+   "how": "Splits the line into letter shapes, joining the dot of an i or j to its letter, and divides the height of its opening letter by the height of the capital that starts the later word."
   },
   {
    "check_id": "PHOTO-04/booking-hero-verranza/H019",
@@ -3931,12 +4009,12 @@
    "critical": false,
    "check": "The opening “C” of “Casa Verranza” on “Villa booking hero - Verranza” (booking-hero-verranza.png) stands twice as tall as the capital “V” of “Verranza”.",
    "assertion": {
-    "op": "v2_cap_ratio_r4t",
+    "op": "v2_cap_ratio_r5c",
     "line": "Casa Verranza",
     "word": 1,
     "ratio": 2.0
    },
-   "how": "Splits the line into letter shapes and divides the height of its opening letter by the height of the capital that starts the later word."
+   "how": "Splits the line into letter shapes, joining the dot of an i or j to its letter, and divides the height of its opening letter by the height of the capital that starts the later word."
   },
   {
    "check_id": "PHOTO-04/booking-hero-oliveto/H023",
