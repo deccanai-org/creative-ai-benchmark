@@ -289,15 +289,26 @@ def note(r) -> str:
         return str(ev.get('reason') or 'the code could not decide')
     if r['status'] != 'fail':
         return ''
-    if str(r.get('op', '')).startswith('vlm_'):   # round 5: the vision model's answer, as code compared it
-        for key, label in (('read', 'read'), ('not_allowed', 'read'), ('counted', 'counted'), ('found', 'found'),
+    # round 5: the vision model's answer, as code compared it (also when a combined check wraps the vision checks)
+    if str(r.get('op', '')).startswith('vlm_') or 'answers' in ev:
+        first = (ev.get('answers') or [{}])[0]
+        printed = {' '.join(str(s).split()).casefold(): str(s) for s in (first.get('lines') or first.get('values') or [])}
+        for key, label in (('read', 'read'), ('not_allowed', 'printed as'), ('counted', 'counted'), ('found', 'found'),
                            ('forbidden_found', 'found'), ('required_missing', 'not found')):
             if key in ev:
                 value = ev[key]
+                if key == 'not_allowed':   # code compared normalised text; show the line as the model copied it
+                    value = [printed.get(' '.join(str(v).split()).casefold(), v) for v in value]
                 value = '; '.join(map(str, value[:3])) if isinstance(value, list) else value
                 return f'{label}: {value}'[:160]
-        first = (ev.get('answers') or [{}])[0]
         return ('vision model: ' + str(first.get('evidence') or first.get('answer') or 'see the check log'))[:160]
+    if 'not_allowed' in ev:   # the price check and the round-3 colour and placement checks all report 'not_allowed'
+        label = 'price not allowed' if 'prices' in ev else 'found where the rule does not allow it'
+        value = ev['not_allowed']
+        if isinstance(value, list):
+            value = '; '.join(f"{v['span']} (page {v['page']})" if isinstance(v, dict) and 'span' in v and 'page' in v
+                              else ' '.join(map(str, v)) if isinstance(v, list) else str(v) for v in value[:3])
+        return f'{label}: {value}'[:160]
     for key, label in (('missing', 'not found'), ('forbidden_found', 'found'), ('found', 'found'), ('wrong', 'wrong weekday'),
                        ('not_allowed', 'price not allowed'), ('outside_palette', 'colour outside the palette'),
                        ('rendered_outside_palette', 'colour outside the palette'), ('not_matching', 'set differently'),
